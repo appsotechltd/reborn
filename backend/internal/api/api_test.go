@@ -238,6 +238,9 @@ func TestPublicBrowsing(t *testing.T) {
 		t.Fatal("search topic filter ignored")
 	}
 	h.do("GET", "/v1/search?q=", "", nil, 400)
+	if n := len(list(h.do("GET", "/v1/search?topic=health", "", nil, 200), "cards")); n != 3 {
+		t.Fatalf("topic-only search = %d cards", n)
+	}
 
 	d1 := h.do("GET", "/v1/daily", "", nil, 200)
 	d2 := h.do("GET", "/v1/daily", "", nil, 200)

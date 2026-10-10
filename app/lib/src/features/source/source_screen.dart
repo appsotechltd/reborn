@@ -1,0 +1,117 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../api/models.dart';
+import '../../data/providers.dart';
+import '../../widgets/common.dart';
+
+const _licenceNames = {
+  'public-domain': 'Public domain',
+  'us-gov-public-domain': 'US Government work (public domain)',
+  'cc-by-4.0': 'CC BY 4.0',
+  'cc-by-3.0': 'CC BY 3.0',
+  'cc-by-sa-4.0': 'CC BY-SA 4.0',
+  'cc0-1.0': 'CC0 1.0',
+  'ogl-3.0': 'Open Government Licence v3.0',
+  'original-summary': 'Summarised in our own words — read the original',
+};
+
+class SourceScreen extends ConsumerWidget {
+  const SourceScreen({super.key, required this.sourceId});
+  final String sourceId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final detail = ref.watch(sourceProvider(sourceId));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Source')),
+      body: detail.when(
+        loading: () => const LoadingView(),
+        error: (e, _) => ErrorView(
+          error: e,
+          onRetry: () => ref.invalidate(sourceProvider(sourceId)),
+        ),
+        data: (f) => ListView(
+          children: [
+            ReadingWidth(
+              child: _SourceHeader(
+                source: f.value.source,
+                count: f.value.cards.length,
+              ),
+            ),
+            for (final c in f.value.cards)
+              ReadingWidth(child: CardTile(card: c)),
+            const SizedBox(height: 24),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SourceHeader extends StatelessWidget {
+  const _SourceHeader({required this.source, required this.count});
+  final Source source;
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 8, 20, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            source.kind.toUpperCase(),
+            style: theme.textTheme.labelSmall?.copyWith(letterSpacing: 1.2),
+          ),
+          const SizedBox(height: 4),
+          Text(source.title, style: theme.textTheme.headlineMedium),
+          const SizedBox(height: 4),
+          Text(source.authors.join(', '), style: theme.textTheme.titleMedium),
+          const SizedBox(height: 16),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Licence', style: theme.textTheme.labelLarge),
+                  const SizedBox(height: 4),
+                  Text(_licenceNames[source.licence] ?? source.licence),
+                  const SizedBox(height: 8),
+                  Text(source.attribution, style: theme.textTheme.bodySmall),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    children: [
+                      if (source.url.isNotEmpty)
+                        FilledButton.tonalIcon(
+                          onPressed: () => openExternal(context, source.url),
+                          icon: const Icon(Icons.open_in_new, size: 18),
+                          label: const Text('Open source'),
+                        ),
+                      if (source.licenceUrl != null &&
+                          source.licenceUrl!.isNotEmpty)
+                        TextButton(
+                          onPressed: () =>
+                              openExternal(context, source.licenceUrl!),
+                          child: const Text('Licence terms'),
+                        ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '$count ${count == 1 ? 'idea' : 'ideas'} from this source',
+            style: theme.textTheme.titleMedium,
+          ),
+        ],
+      ),
+    );
+  }
+}

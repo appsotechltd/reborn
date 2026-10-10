@@ -143,13 +143,23 @@ func (s *Server) source(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) search(w http.ResponseWriter, r *http.Request) {
 	q := strings.TrimSpace(r.URL.Query().Get("q"))
-	if q == "" || len(q) > 200 {
-		writeError(w, http.StatusBadRequest, "bad_request", "q must be 1-200 characters")
-		return
-	}
 	topic := r.URL.Query().Get("topic")
 	if topic != "" && !content.IsTopic(topic) {
 		writeError(w, http.StatusBadRequest, "bad_request", "unknown topic")
+		return
+	}
+	if (q == "" && topic == "") || len(q) > 200 {
+		writeError(w, http.StatusBadRequest, "bad_request", "q must be 1-200 characters, or give a topic")
+		return
+	}
+	if q == "" {
+		// Topic only: browse the topic.
+		cards, err := s.Store.Feed(r.Context(), store.FeedParams{UserID: userID(r), Topics: []string{topic}, Day: s.today(), Limit: intParam(r, "limit", 20, 1, 50)})
+		if err != nil {
+			s.fail(w, r, err, "search")
+			return
+		}
+		writeJSON(w, http.StatusOK, map[string]any{"cards": cards})
 		return
 	}
 	p := store.SearchParams{Query: q, Topic: topic, Limit: intParam(r, "limit", 20, 1, 50)}

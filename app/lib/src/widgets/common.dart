@@ -1,0 +1,313 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../api/api_client.dart';
+import '../api/models.dart';
+import '../data/providers.dart';
+import '../theme.dart';
+
+/// Centers [child] and limits it to a comfortable reading width.
+class ReadingWidth extends StatelessWidget {
+  const ReadingWidth({
+    super.key,
+    required this.child,
+    this.maxWidth = kReadingWidth,
+  });
+  final Widget child;
+  final double maxWidth;
+
+  @override
+  Widget build(BuildContext context) => Align(
+    alignment: Alignment.topCenter,
+    child: ConstrainedBox(
+      constraints: BoxConstraints(maxWidth: maxWidth),
+      child: child,
+    ),
+  );
+}
+
+String errorMessage(Object error) {
+  if (error is ApiException) {
+    if (error.isNetwork) {
+      return "You're offline and this isn't saved on this device yet.";
+    }
+    return error.message;
+  }
+  return 'Something went wrong.';
+}
+
+class ErrorView extends StatelessWidget {
+  const ErrorView({super.key, required this.error, this.onRetry});
+  final Object error;
+  final VoidCallback? onRetry;
+
+  @override
+  Widget build(BuildContext context) {
+    final offline = error is ApiException && (error as ApiException).isNetwork;
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              offline ? Icons.cloud_off_outlined : Icons.error_outline,
+              size: 40,
+              color: Theme.of(context).colorScheme.outline,
+            ),
+            const SizedBox(height: 12),
+            Text(errorMessage(error), textAlign: TextAlign.center),
+            if (onRetry != null) ...[
+              const SizedBox(height: 12),
+              OutlinedButton(
+                onPressed: onRetry,
+                child: const Text('Try again'),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class LoadingView extends StatelessWidget {
+  const LoadingView({super.key});
+  @override
+  Widget build(BuildContext context) =>
+      const Center(child: CircularProgressIndicator());
+}
+
+/// Shown in place of a signed-in-only screen.
+class SignInPrompt extends StatelessWidget {
+  const SignInPrompt({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.message,
+  });
+  final IconData icon;
+  final String title;
+  final String message;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Center(
+      child: ReadingWidth(
+        maxWidth: 420,
+        child: Padding(
+          padding: const EdgeInsets.all(32),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, size: 48, color: theme.colorScheme.primary),
+              const SizedBox(height: 16),
+              Text(
+                title,
+                style: theme.textTheme.titleLarge,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 8),
+              Text(message, textAlign: TextAlign.center),
+              const SizedBox(height: 20),
+              FilledButton(
+                onPressed: () => context.push('/signin'),
+                child: const Text('Sign in'),
+              ),
+              TextButton(
+                onPressed: () => context.push('/register'),
+                child: const Text('Create an account'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Returns true if signed in; otherwise offers sign-in and returns false.
+Future<bool> requireSignIn(
+  BuildContext context,
+  WidgetRef ref,
+  String reason,
+) async {
+  if (ref.read(sessionProvider).signedIn) return true;
+  final go = await showDialog<bool>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      title: const Text('Sign in to continue'),
+      content: Text(reason),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(ctx, false),
+          child: const Text('Not now'),
+        ),
+        FilledButton(
+          onPressed: () => Navigator.pop(ctx, true),
+          child: const Text('Sign in'),
+        ),
+      ],
+    ),
+  );
+  if (go == true && context.mounted) context.push('/signin');
+  return false;
+}
+
+/// A small banner shown while serving cached content.
+class OfflineBanner extends StatelessWidget {
+  const OfflineBanner({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Material(
+      color: scheme.tertiaryContainer,
+      child: SafeArea(
+        bottom: false,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.cloud_off,
+                size: 16,
+                color: scheme.onTertiaryContainer,
+              ),
+              const SizedBox(width: 8),
+              Flexible(
+                child: Text(
+                  'Offline — showing saved ideas',
+                  style: TextStyle(
+                    color: scheme.onTertiaryContainer,
+                    fontSize: 13,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+Future<void> openExternal(BuildContext context, String url) async {
+  final uri = Uri.tryParse(url);
+  final ok =
+      uri != null && await launchUrl(uri, mode: LaunchMode.externalApplication);
+  if (!ok && context.mounted) {
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text('Could not open $url')));
+  }
+}
+
+/// Compact list entry for a card; opens the card screen.
+class CardTile extends ConsumerWidget {
+  const CardTile({super.key, required this.card, this.trailing});
+  final IdeaCard card;
+  final Widget? trailing;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final names = ref.watch(topicNamesProvider);
+    final theme = Theme.of(context);
+    return ListTile(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      title: Text(card.title, style: theme.textTheme.titleMedium),
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: 4),
+        child: Text(
+          '${names[card.topic] ?? card.topic} · ${card.source.title}',
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
+      trailing: trailing,
+      onTap: () =>
+          context.push('/cards/${Uri.encodeComponent(card.id)}', extra: card),
+    );
+  }
+}
+
+/// Profile / overflow menu shown in every tab's app bar.
+class ProfileMenuButton extends ConsumerWidget {
+  const ProfileMenuButton({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final session = ref.watch(sessionProvider);
+    return PopupMenuButton<String>(
+      tooltip: 'Profile and more',
+      icon: CircleAvatar(
+        radius: 15,
+        child: session.signedIn
+            ? Text(
+                _initial(
+                  session.user?.displayName ?? session.user?.email ?? '?',
+                ),
+              )
+            : const Icon(Icons.person_outline, size: 18),
+      ),
+      onSelected: (v) async {
+        if (v == 'signout') {
+          await ref.read(sessionProvider.notifier).signOut();
+          return;
+        }
+        if (context.mounted) context.push(v);
+      },
+      itemBuilder: (context) => [
+        if (session.signedIn)
+          const PopupMenuItem(
+            value: '/profile',
+            child: _MenuRow(Icons.person_outline, 'Profile'),
+          )
+        else
+          const PopupMenuItem(
+            value: '/signin',
+            child: _MenuRow(Icons.login, 'Sign in'),
+          ),
+        const PopupMenuItem(
+          value: '/topics',
+          child: _MenuRow(Icons.tune, 'Your topics'),
+        ),
+        const PopupMenuItem(
+          value: '/contribute',
+          child: _MenuRow(Icons.edit_note, 'Contribute an idea'),
+        ),
+        if (session.signedIn)
+          const PopupMenuItem(
+            value: '/contributions',
+            child: _MenuRow(Icons.inbox_outlined, 'My contributions'),
+          ),
+        if (session.isModerator)
+          const PopupMenuItem(
+            value: '/moderation',
+            child: _MenuRow(Icons.gavel_outlined, 'Moderation'),
+          ),
+        if (session.signedIn)
+          const PopupMenuItem(
+            value: 'signout',
+            child: _MenuRow(Icons.logout, 'Sign out'),
+          ),
+      ],
+    );
+  }
+
+  static String _initial(String s) =>
+      s.isEmpty ? '?' : s.characters.first.toUpperCase();
+}
+
+class _MenuRow extends StatelessWidget {
+  const _MenuRow(this.icon, this.label);
+  final IconData icon;
+  final String label;
+  @override
+  Widget build(BuildContext context) => Row(
+    children: [Icon(icon, size: 20), const SizedBox(width: 12), Text(label)],
+  );
+}

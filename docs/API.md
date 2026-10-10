@@ -86,7 +86,7 @@ Clients must always show `credit`, and `disclaimer` when present.
 | `GET /v1/sources` | none | `?topic=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards |
 | `GET /v1/sources/{id}` | none | | `{"source":Source,"cards":[Card]}`. `Source` has the fields in content/SCHEMA.md |
 | `GET /v1/sitemap` | none | | `{"cards":[{"id","updated_at"}],"sources":[{"id","updated_at"}],"topics":["business",...]}` for building sitemaps |
-| `GET /v1/search` | none | `?q=sleep&topic=health&limit=20` | `{"cards":[Card]}` |
+| `GET /v1/search` | optional | `?q=sleep&topic=health&limit=20` | `{"cards":[Card]}`. `q` may be omitted when `topic` is given, to browse the topic |
 | `POST /v1/auth/register` | none | `{"email","password","display_name"}` (password ≥ 8) | `{"token","user":User}` |
 | `POST /v1/auth/login` | none | `{"email","password"}` | `{"token","user":User}` |
 | `GET /v1/me` | required | | `User` |
