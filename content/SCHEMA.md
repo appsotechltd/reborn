@@ -92,6 +92,9 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `money` | Money |
 | `relationships` | Relationships |
 | `mindfulness` | Mindfulness & Philosophy |
+| `faith-wisdom` | Faith & Wisdom |
+| `leadership` | Leadership |
+| `parenting` | Parenting & Family |
 
 ## Example
 

@@ -162,7 +162,7 @@ void main() {
       server.online = false;
       final t = await repo.topics();
       expect(t.offline, isTrue);
-      expect(t.value, hasLength(9));
+      expect(t.value, hasLength(12));
     },
   );
 }
