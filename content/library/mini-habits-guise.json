@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "mini-habits-guise",
+    "title": "Mini Habits",
+    "authors": [
+      "Stephen Guise"
+    ],
+    "kind": "book",
+    "url": "https://minihabits.com/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Mini Habits by Stephen Guise (2013). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Selective Entertainment LLC",
+    "year": 2013,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "mini-habits-guise--01",
+      "topic": "personal-development",
+      "tags": [
+        "mini-habits",
+        "starting",
+        "small-steps"
+      ],
+      "title": "Make the daily goal so small it feels almost silly",
+      "body": "Guise's core idea is to set a daily habit so small that you can't reasonably fail: one push-up, one paragraph written, one page read. He came to it after struggling with ambitious fitness plans and trying a single push-up instead, which often led to more.\n\nThe tiny target removes the dread of starting. On busy or low days you still meet it, so the habit survives. Over time, the repetition builds the routine that big, intimidating goals often never get the chance to.",
+      "apply_it": "Pick a habit you keep failing at and set a daily minimum so small you would feel silly skipping it.",
+      "quiz": {
+        "question": "Why does Guise make daily habit goals so small?",
+        "options": [
+          "Small goals are the only ones worth having",
+          "So you can meet them every day, even on bad days, and the habit takes root",
+          "Because big goals are unethical",
+          "To avoid ever doing more"
+        ],
+        "answer": 1,
+        "explanation": "A target you can't fail keeps the habit alive while the routine forms."
+      }
+    },
+    {
+      "id": "mini-habits-guise--02",
+      "topic": "psychology",
+      "tags": [
+        "willpower",
+        "motivation",
+        "consistency"
+      ],
+      "title": "Lean on a little willpower, not on motivation",
+      "body": "Guise argues that motivation is unreliable: it rises and falls with mood, sleep and stress, so plans built on it collapse on bad days. Willpower can be relied on in small doses, and forcing yourself to do something tiny costs very little of it.\n\nThat's why mini habits pair well with willpower. You don't need to feel like doing it; you only need a small push to begin. Waiting to feel inspired before working out or writing often means waiting forever.",
+      "apply_it": "Next time you think 'I don't feel like it', do the tiny version anyway and notice how much effort it actually took.",
+      "quiz": {
+        "question": "Why does Guise prefer willpower over motivation for building habits?",
+        "options": [
+          "Motivation is fickle, while a small push of willpower is dependable",
+          "Willpower is unlimited",
+          "Motivation is always harmful",
+          "He thinks habits shouldn't involve any effort"
+        ],
+        "answer": 0,
+        "explanation": "Feelings fluctuate; a tiny demand on willpower can be met almost every day."
+      }
+    },
+    {
+      "id": "mini-habits-guise--03",
+      "topic": "productivity",
+      "tags": [
+        "bonus-reps",
+        "momentum",
+        "expectations"
+      ],
+      "title": "Do extra when you can, but keep the requirement tiny",
+      "body": "Once you start, you will often keep going: one page becomes ten. Guise encourages this extra effort but warns against quietly raising the official target because of it.\n\nThe minimum is what protects you on bad days. If you start expecting ten pages, the habit becomes intimidating again and the old resistance returns. Think of everything beyond the minimum as a bonus, welcome but never required. Low expectations combined with frequent overachievement feel good and keep you coming back.",
+      "apply_it": "Write down your mini habit's minimum and treat anything extra today as a bonus, not the new standard.",
+      "quiz": {
+        "question": "What does Guise say you should do after you regularly exceed your mini habit?",
+        "options": [
+          "Raise the minimum immediately",
+          "Stop once you hit the minimum",
+          "Keep the official requirement small and treat extra work as a bonus",
+          "Switch to a different habit"
+        ],
+        "answer": 2,
+        "explanation": "Raising the bar brings back resistance; the small minimum keeps the habit safe."
+      }
+    },
+    {
+      "id": "mini-habits-guise--04",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "multiple-habits",
+        "planning"
+      ],
+      "title": "Build only a few habits at a time",
+      "body": "Even tiny habits add up when you stack too many. Guise recommends working on only a handful at once, so you can reliably meet all of them every day.\n\nIt's tempting, especially at New Year or after reading a self-help book, to overhaul your whole life at once. But a long list of new routines spreads your attention thin, and missing several in a day feels like failure. A short list you complete daily builds confidence and leaves room to add more once the first ones become automatic.",
+      "apply_it": "Look at the habits you're trying to build and cut the list down to the two or three that matter most.",
+      "quiz": {
+        "question": "What does Guise recommend about the number of habits to work on?",
+        "options": [
+          "As many as possible, since each one is tiny",
+          "Only one per year",
+          "Just a few at a time, so you can meet all of them daily",
+          "None until you feel motivated"
+        ],
+        "answer": 2,
+        "explanation": "A short list you finish every day beats a long list you keep missing."
+      }
+    },
+    {
+      "id": "mini-habits-guise--05",
+      "topic": "personal-development",
+      "tags": [
+        "tracking",
+        "accountability",
+        "progress"
+      ],
+      "title": "Check off each day so your progress is visible",
+      "body": "Guise suggests tracking mini habits in a simple, visible way, such as marking a calendar or ticking a list each day you hit the minimum. The record keeps you honest and makes the habit harder to forget.\n\nSeeing a growing row of completed days also builds quiet satisfaction and helps you notice when the behaviour is becoming automatic, which is when you might consider adding another small habit. A paper calendar, a note on your phone or a habit app all work; the point is that the tracking takes seconds.",
+      "apply_it": "Set up a simple tracker today, a paper calendar or phone note, and mark it as soon as you complete your mini habit.",
+      "quiz": {
+        "question": "What role does daily tracking play in Guise's method?",
+        "options": [
+          "It replaces the need for doing the habit",
+          "It keeps you accountable and shows when a habit is becoming automatic",
+          "It is only useful for big goals",
+          "It should be done once a month"
+        ],
+        "answer": 1,
+        "explanation": "A quick daily check-off keeps you on track and reveals your progress."
+      }
+    }
+  ]
+}

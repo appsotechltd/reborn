@@ -1,0 +1,159 @@
+{
+  "source": {
+    "id": "eat-that-frog-tracy",
+    "title": "Eat That Frog!",
+    "authors": [
+      "Brian Tracy"
+    ],
+    "kind": "book",
+    "url": "https://www.briantracy.com/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Eat That Frog! by Brian Tracy (2001). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Berrett-Koehler",
+    "year": 2001,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "eat-that-frog-tracy--01",
+      "topic": "productivity",
+      "tags": [
+        "prioritisation",
+        "procrastination",
+        "mornings"
+      ],
+      "title": "Do your hardest, most important task first",
+      "body": "Tracy's central image is the \"frog\": the big, unpleasant task you are most likely to put off, yet the one that would make the biggest difference if done. His advice is to tackle it first, before easier work fills the day.\n\nGetting it done early removes the background dread, and the momentum carries into everything else. If you have two frogs, start with the uglier one. Clearing email or small chores first feels productive, but it usually just delays the work that actually matters.",
+      "apply_it": "Tonight, choose tomorrow's frog: the one task that matters most. Start it first thing, before checking messages.",
+      "quiz": {
+        "question": "In Tracy's metaphor, what is your 'frog'?",
+        "options": [
+          "Your easiest task",
+          "Your most important task, often the one you're avoiding",
+          "A break between tasks",
+          "Your email inbox"
+        ],
+        "answer": 1,
+        "explanation": "The frog is the important, unpleasant task you are most tempted to put off."
+      }
+    },
+    {
+      "id": "eat-that-frog-tracy--02",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "to-do-list",
+        "organisation"
+      ],
+      "title": "Plan your day on paper before it starts",
+      "body": "Tracy insists that working from a written list, made in advance, is one of the simplest ways to get more done. Ideally you draw it up the evening before, so you start the day knowing what to do.\n\nHe argues that a few minutes of planning saves far more time in execution, because you stop bouncing between tasks and deciding what to do next. Writing things down also clears your head. Add new tasks to the list as they come up rather than reacting to them straight away.",
+      "apply_it": "Before you finish work today, write tomorrow's task list and put your single most important task at the top.",
+      "quiz": {
+        "question": "When does Tracy suggest making your daily task list?",
+        "options": [
+          "In the middle of the day",
+          "Only on Mondays",
+          "Ideally the evening before",
+          "Never; keep it in your head"
+        ],
+        "answer": 2,
+        "explanation": "Planning in advance means you begin the day already knowing what to tackle."
+      }
+    },
+    {
+      "id": "eat-that-frog-tracy--03",
+      "topic": "productivity",
+      "tags": [
+        "pareto",
+        "80-20",
+        "prioritisation"
+      ],
+      "title": "A few of your tasks produce most of your results",
+      "body": "Tracy applies the 80/20 principle to work: a small share of your activities tends to account for most of the value you create. On a list of ten tasks, one or two may be worth more than all the rest combined.\n\nThe trap is that people busy themselves with the many low-value items because they are quick and easy. Before starting, ask which items on your list will really move things forward, and put your best time and energy there.",
+      "apply_it": "Look at your current to-do list and circle the one or two items that would create the most value. Do those first.",
+      "quiz": {
+        "question": "What does the 80/20 rule suggest about your task list?",
+        "options": [
+          "Every task is equally important",
+          "A small number of tasks deliver most of the value",
+          "You should do the quickest tasks first",
+          "80% of tasks should be delegated"
+        ],
+        "answer": 1,
+        "explanation": "A minority of activities typically drives the majority of results."
+      }
+    },
+    {
+      "id": "eat-that-frog-tracy--04",
+      "topic": "productivity",
+      "tags": [
+        "prioritisation",
+        "abcde",
+        "delegation"
+      ],
+      "title": "Rank tasks by consequence, from must-do to cut entirely",
+      "body": "Tracy suggests grading every item on your list by what happens if you do or don't do it. Tasks with serious consequences come first; things that would be nice but matter little come later; some can be handed to someone else; and some can simply be dropped.\n\nThis \"ABCDE\" style of ranking forces honest choices. You only move to a lower-grade task when the higher ones are done. Thinking about consequences, including long-term ones, is what separates real priorities from busywork.",
+      "apply_it": "Label each task on today's list with A to E by consequence. Delegate the Ds, delete the Es, and start with your top A.",
+      "quiz": {
+        "question": "In Tracy's ranking method, what decides a task's priority?",
+        "options": [
+          "How long it will take",
+          "How much you enjoy it",
+          "Who asked for it most recently",
+          "The consequences of doing or not doing it"
+        ],
+        "answer": 3,
+        "explanation": "Tasks with the biggest consequences come first; low-consequence ones are delegated or dropped."
+      }
+    },
+    {
+      "id": "eat-that-frog-tracy--05",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "saying-no",
+        "focus"
+      ],
+      "title": "Choose deliberately what you will not do",
+      "body": "Everyone procrastinates on something, Tracy notes, because there is always more to do than time allows. The question is whether you put off the right things.\n\nHe calls this creative procrastination: consciously deciding to delay or abandon low-value tasks so you have time for high-value ones. That might mean saying no to requests, dropping a habitual activity, or leaving minor tasks undone. Starting something new means stopping something else, so make those trade-offs on purpose rather than by default.",
+      "apply_it": "List three low-value activities that take up your time each week. Choose one to stop or postpone indefinitely.",
+      "quiz": {
+        "question": "What does Tracy mean by 'creative procrastination'?",
+        "options": [
+          "Deliberately putting off low-value tasks to make room for important ones",
+          "Waiting for inspiration before working",
+          "Delaying hard tasks until the deadline",
+          "Doing creative hobbies instead of work"
+        ],
+        "answer": 0,
+        "explanation": "Since you can't do everything, you consciously postpone the things that matter least."
+      }
+    },
+    {
+      "id": "eat-that-frog-tracy--06",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "deep-work",
+        "single-tasking"
+      ],
+      "title": "Once you start an important task, stay with it until it's done",
+      "body": "Tracy argues that starting and stopping a task repeatedly wastes huge amounts of time, because each restart means getting back up to speed. His advice is to single-handle it: once you begin, keep going without switching until it is finished.\n\nSustained focus also builds momentum and the satisfaction of completion, which makes the next big task easier to start. In a world of notifications and open tabs, this means deliberately protecting a block of time with distractions switched off.",
+      "apply_it": "Block 60-90 minutes for your most important task. Turn off notifications and don't switch tasks until it's done or the block ends.",
+      "quiz": {
+        "question": "Why does Tracy advise staying with one task until it's complete?",
+        "options": [
+          "Because breaks are unhealthy",
+          "Because switching back and forth wastes time getting back up to speed",
+          "Because other tasks don't matter",
+          "Because managers prefer it"
+        ],
+        "answer": 1,
+        "explanation": "Each restart costs time and focus; finishing in one go is far more efficient."
+      }
+    }
+  ]
+}

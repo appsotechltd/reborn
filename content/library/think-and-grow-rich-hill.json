@@ -1,0 +1,159 @@
+{
+  "source": {
+    "id": "think-and-grow-rich-hill",
+    "title": "Think and Grow Rich",
+    "authors": [
+      "Napoleon Hill"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Think_and_Grow_Rich",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Think and Grow Rich by Napoleon Hill (1937). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "The Ralston Society",
+    "year": 1937,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. Cards cover only the book's practical ideas (definite goals, planning, persistence, the mastermind group, decisiveness, specialised knowledge); its claims about autosuggestion and thoughts attracting wealth are not presented."
+  },
+  "cards": [
+    {
+      "id": "think-and-grow-rich-hill--01",
+      "topic": "personal-development",
+      "tags": [
+        "goals",
+        "clarity",
+        "focus"
+      ],
+      "title": "Vague hopes go nowhere; a definite, written goal gives you direction",
+      "body": "Hill's starting point is that most people never decide exactly what they want. They hope for \"more\" without saying how much, by when, or what they will give in return.\n\nHe urges you to name a specific aim, set a date for it, decide what you will offer to earn it and write it all down. The value is practical: a clear target tells you which opportunities matter, which to ignore and how to judge your progress. A goal you can state in one sentence is far easier to act on than a wish.",
+      "apply_it": "Write one goal as a single sentence with a specific amount or outcome, a deadline, and what you will do or give to reach it.",
+      "quiz": {
+        "question": "What does Hill say most people lack?",
+        "options": [
+          "Talent",
+          "A definite, specific aim",
+          "Luck",
+          "Free time"
+        ],
+        "answer": 1,
+        "explanation": "Without a clearly stated aim, effort has no direction and progress cannot be judged."
+      }
+    },
+    {
+      "id": "think-and-grow-rich-hill--02",
+      "topic": "money",
+      "tags": [
+        "planning",
+        "failure",
+        "resilience"
+      ],
+      "title": "When a plan fails, treat it as a flawed plan, not a final defeat",
+      "body": "Hill argues that a goal needs a practical plan behind it, and that first plans are often weak. When one does not work, he says, the sensible response is to replace it with a better plan, not to abandon the goal.\n\nHe treats setbacks as temporary rather than as proof you were wrong to try. Many people quit at the first failure, so simply revising and trying again puts you ahead. In modern terms it is iteration: test, learn what went wrong, adjust and go again.",
+      "apply_it": "Think of a goal you dropped after a setback. Write down why the plan failed and one changed approach you could try instead.",
+      "quiz": {
+        "question": "How does Hill suggest you respond when a plan fails?",
+        "options": [
+          "Give up on the goal",
+          "Wait for better luck",
+          "Repeat the same plan harder",
+          "Replace it with a new, better plan while keeping the goal"
+        ],
+        "answer": 3,
+        "explanation": "Hill saw failure as temporary defeat of a plan, not of the goal itself."
+      }
+    },
+    {
+      "id": "think-and-grow-rich-hill--03",
+      "topic": "personal-development",
+      "tags": [
+        "persistence",
+        "grit",
+        "habits"
+      ],
+      "title": "Persistence is what separates people who reach goals from those who don't",
+      "body": "Hill gives a great deal of weight to sheer persistence. In his view, most people have the ability to achieve more, but they drift away when progress is slow or criticism arrives.\n\nHe treats persistence as something you can build: a clear goal you care about, a concrete plan, friends who encourage you and the habit of acting every day all make it easier to keep going. Willpower alone fades; structure and support help it last. Persistence is not stubbornness about methods, though. It is staying with the aim while changing tactics.",
+      "apply_it": "Pick one goal and commit to a small action toward it every day this week, even on days you feel unmotivated.",
+      "quiz": {
+        "question": "According to Hill, what helps build persistence?",
+        "options": [
+          "Keeping your goal secret from everyone",
+          "A clear goal, a plan, supportive people and daily action",
+          "Relying only on willpower",
+          "Avoiding all plans so you stay flexible"
+        ],
+        "answer": 1,
+        "explanation": "He saw persistence as supported by structure and people, not just raw willpower."
+      }
+    },
+    {
+      "id": "think-and-grow-rich-hill--04",
+      "topic": "business",
+      "tags": [
+        "mastermind",
+        "networking",
+        "collaboration"
+      ],
+      "title": "Build a small group of people who help each other toward their goals",
+      "body": "Hill's best-known practical idea is the \"mastermind\": two or more people who meet regularly and work together in a spirit of harmony toward a shared aim, or to help each member with theirs.\n\nNo one has all the knowledge, skill or contacts they need. A trusted group pools experience, spots blind spots, offers accountability and keeps morale up. The key ingredients are commitment and goodwill; a group full of rivalry or cynicism does more harm than good. Today this looks like peer advisory groups, accountability partners or a small circle of founders.",
+      "apply_it": "Name two or three people with goals similar to yours and invite them to a monthly call to share progress and problems.",
+      "quiz": {
+        "question": "What is a 'mastermind' in Hill's sense?",
+        "options": [
+          "A single genius mentor",
+          "An online course",
+          "A group working together in harmony toward goals",
+          "A memory technique"
+        ],
+        "answer": 2,
+        "explanation": "Hill described it as people cooperating harmoniously and pooling knowledge and effort."
+      }
+    },
+    {
+      "id": "think-and-grow-rich-hill--05",
+      "topic": "productivity",
+      "tags": [
+        "decision-making",
+        "procrastination",
+        "confidence"
+      ],
+      "title": "Make decisions promptly and change them only for good reason",
+      "body": "Hill observed that successful people tended to reach decisions quickly and stick with them, while those who struggled were slow to decide and quick to reverse course. He saw indecision as a close relative of procrastination.\n\nHe also warned against letting other people's opinions decide for you. Gather useful facts, then trust your own judgment. The modern lesson is that delay is itself a choice with costs: most decisions are reversible, and acting on a reasonable choice usually beats waiting for certainty that never comes.",
+      "apply_it": "Pick one decision you've been putting off. Set a deadline of 24 hours, gather the key facts, and decide.",
+      "quiz": {
+        "question": "What pattern did Hill associate with failure?",
+        "options": [
+          "Deciding slowly and changing decisions often",
+          "Deciding quickly and sticking with it",
+          "Asking experts for facts",
+          "Writing goals down"
+        ],
+        "answer": 0,
+        "explanation": "He linked slow, easily reversed decisions to failure and prompt, firm ones to success."
+      }
+    },
+    {
+      "id": "think-and-grow-rich-hill--06",
+      "topic": "productivity",
+      "tags": [
+        "knowledge",
+        "learning",
+        "expertise"
+      ],
+      "title": "General knowledge doesn't pay; organised, specialised knowledge used toward a goal does",
+      "body": "Hill argues that knowing lots of facts is not enough to earn well. What counts is specialised knowledge, organised into a plan and applied toward a definite end.\n\nYou don't need to hold it all yourself. He points out that you can draw on experts, advisers and your mastermind group, and that adults can keep learning through courses and study long after school. The useful question is not \"how much do I know?\" but \"what specific knowledge does my goal require, and where can I get it?\"",
+      "apply_it": "For your main goal, list the specific knowledge it requires. Mark which you have, and name a person or course for one gap.",
+      "quiz": {
+        "question": "What kind of knowledge does Hill say leads to results?",
+        "options": [
+          "Broad general knowledge",
+          "Specialised knowledge organised and applied toward a goal",
+          "Knowledge from school only",
+          "Knowledge you keep entirely to yourself"
+        ],
+        "answer": 1,
+        "explanation": "Knowledge pays only when it is specific, organised into a plan and put to use."
+      }
+    }
+  ]
+}

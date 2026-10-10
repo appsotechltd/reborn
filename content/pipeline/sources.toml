@@ -7,6 +7,7 @@
 #   gutenberg:      gutenberg_id, optional mirror (GITenberg path), optional start / end markers
 #   openstax:       repo, collection, optional chapters
 #   web:            url (a page read by hand; cards from it carry no quotes)
+#   summary:        url (a copyrighted work: cards are our own summary, licence original-summary, no quotes)
 #
 # [[candidate]] entries are sources we track but don't use yet (see content/SOURCES.md);
 # `python -m reborn_content licences` re-checks their upstream licences.
@@ -197,6 +198,45 @@ id = "nhs-breathing-exercises-for-stress"
 adapter = "web"
 url = "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
 licence = "ogl-3.0"
+
+# ---------------------------------------------------------------- Summaries of copyrighted books
+# Our own words, credited and linked, no quotes (licence = "original-summary"). See SOURCES.md.
+
+[[source]]
+id = "richest-man-in-babylon-clason"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/The_Richest_Man_in_Babylon_(book)"
+licence = "original-summary"
+
+[[source]]
+id = "think-and-grow-rich-hill"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Think_and_Grow_Rich"
+licence = "original-summary"
+
+[[source]]
+id = "eat-that-frog-tracy"
+adapter = "summary"
+url = "https://www.briantracy.com/"
+licence = "original-summary"
+
+[[source]]
+id = "48-laws-of-power-greene"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/The_48_Laws_of_Power"
+licence = "original-summary"
+
+[[source]]
+id = "atomic-habits-clear"
+adapter = "summary"
+url = "https://jamesclear.com/atomic-habits"
+licence = "original-summary"
+
+[[source]]
+id = "mini-habits-guise"
+adapter = "summary"
+url = "https://minihabits.com/"
+licence = "original-summary"
 
 # ---------------------------------------------------------------- Candidates (not used yet)
 # OpenStax: the plan assumed CC BY 4.0, but the current GitHub sources of these books say

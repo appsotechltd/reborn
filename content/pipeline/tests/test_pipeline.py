@@ -244,6 +244,13 @@ class SchemaTest(unittest.TestCase):
 class RepositoryTest(unittest.TestCase):
     """The committed registry and library are consistent."""
 
+    def test_summary_sources_use_original_summary(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "sources.toml"
+            path.write_text('[[source]]\nid = "x"\nadapter = "summary"\nurl = "https://e.com"\nlicence = "public-domain"\n')
+            with self.assertRaises(registry.RegistryError):
+                registry.load(path)
+
     def test_registry_loads(self):
         sources, candidates = registry.load(REGISTRY_PATH)
         self.assertTrue(sources)
