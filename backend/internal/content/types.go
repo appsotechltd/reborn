@@ -65,6 +65,7 @@ var Topics = []Topic{
 	{"productivity", "Productivity & Career"},
 	{"money", "Money"},
 	{"relationships", "Relationships"},
+	{"dating-marriage", "Dating & Marriage"},
 	{"mindfulness", "Mindfulness & Philosophy"},
 	{"faith-wisdom", "Faith & Wisdom"},
 	{"leadership", "Leadership"},

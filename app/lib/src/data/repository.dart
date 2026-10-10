@@ -11,7 +11,7 @@ class Fetched<T> {
   final bool offline;
 }
 
-/// The seventeen topics from content/SCHEMA.md, used when /v1/topics is
+/// The eighteen topics from content/SCHEMA.md, used when /v1/topics is
 /// unreachable and nothing is cached yet.
 const kDefaultTopics = <Topic>[
   Topic(slug: 'business', name: 'Business'),
@@ -22,6 +22,7 @@ const kDefaultTopics = <Topic>[
   Topic(slug: 'productivity', name: 'Productivity & Career'),
   Topic(slug: 'money', name: 'Money'),
   Topic(slug: 'relationships', name: 'Relationships'),
+  Topic(slug: 'dating-marriage', name: 'Dating & Marriage'),
   Topic(slug: 'mindfulness', name: 'Mindfulness & Philosophy'),
   Topic(slug: 'faith-wisdom', name: 'Faith & Wisdom'),
   Topic(slug: 'leadership', name: 'Leadership'),
