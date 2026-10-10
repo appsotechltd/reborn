@@ -4,10 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
-import 'card_view.dart';
+import '../post/post_view.dart';
 
-/// Shows one card. When [initial] is given (navigated from a list) it is shown
-/// right away; otherwise the card is fetched (or read from the offline cache).
+/// Shows one card as a post (reactions, favourite, comments, share, gift).
+/// When [initial] is given (navigated from a list) the card is shown right
+/// away while the post's stats load; otherwise the post is fetched (offline,
+/// the cached post or card is shown).
 class CardScreen extends ConsumerStatefulWidget {
   const CardScreen({super.key, required this.cardId, this.initial});
   final String cardId;
@@ -18,6 +20,8 @@ class CardScreen extends ConsumerStatefulWidget {
 }
 
 class _CardScreenState extends ConsumerState<CardScreen> {
+  bool _recorded = false;
+
   @override
   void initState() {
     super.initState();
@@ -28,6 +32,8 @@ class _CardScreenState extends ConsumerState<CardScreen> {
   }
 
   void _opened(IdeaCard card) {
+    if (_recorded) return;
+    _recorded = true;
     final repo = ref.read(repositoryProvider);
     repo.rememberCard(card);
     if (ref.read(sessionProvider).signedIn) repo.recordView(card.id);
@@ -36,24 +42,23 @@ class _CardScreenState extends ConsumerState<CardScreen> {
   @override
   Widget build(BuildContext context) {
     final initial = widget.initial;
+    final post = ref.watch(postProvider(widget.cardId));
+    ref.listen(postProvider(widget.cardId), (_, next) {
+      final v = next.value;
+      if (v != null && !v.offline) _opened(v.value.card);
+    });
     Widget body;
     if (initial != null) {
-      body = _scroll(initial);
+      body = _scroll(post.value?.value ?? Post.fromCard(initial));
     } else {
-      ref.listen(cardProvider(widget.cardId), (_, next) {
-        final v = next.value;
-        if (v != null && !v.offline) _opened(v.value);
-      });
-      body = ref
-          .watch(cardProvider(widget.cardId))
-          .when(
-            loading: () => const LoadingView(),
-            error: (e, _) => ErrorView(
-              error: e,
-              onRetry: () => ref.invalidate(cardProvider(widget.cardId)),
-            ),
-            data: (f) => _scroll(f.value),
-          );
+      body = post.when(
+        loading: () => const LoadingView(),
+        error: (e, _) => ErrorView(
+          error: e,
+          onRetry: () => ref.invalidate(postProvider(widget.cardId)),
+        ),
+        data: (f) => _scroll(f.value),
+      );
     }
     return Scaffold(
       appBar: AppBar(title: const Text('Idea')),
@@ -61,7 +66,7 @@ class _CardScreenState extends ConsumerState<CardScreen> {
     );
   }
 
-  Widget _scroll(IdeaCard card) => SingleChildScrollView(
-    child: ReadingWidth(child: IdeaCardView(card: card)),
+  Widget _scroll(Post post) => SingleChildScrollView(
+    child: ReadingWidth(child: PostView(post: post)),
   );
 }

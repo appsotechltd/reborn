@@ -55,3 +55,54 @@ IdeaCard healthCard() => sampleCard({
   'locator': null,
   'credit': 'Source: NHS, Sleep and tiredness, Open Government Licence v3.0',
 });
+
+/// A Post JSON (docs/API.md) wrapping [card].
+Map<String, dynamic> postJson(
+  Map<String, dynamic> card, {
+  Map<String, int> reactions = const {},
+  int comments = 0,
+  int favorites = 0,
+  int shares = 0,
+  int gifts = 0,
+  Map<String, dynamic>? viewer,
+  Map<String, dynamic>? reason,
+}) => {
+  'id': card['id'],
+  'published_at': '2026-10-10T09:00:00Z',
+  'card': card,
+  'stats': {
+    'reactions': reactions,
+    'comments': comments,
+    'favorites': favorites,
+    'shares': shares,
+    'gifts': gifts,
+  },
+  'viewer': ?viewer,
+  'reason': ?reason,
+};
+
+Post samplePost({
+  Map<String, dynamic> card = const {},
+  Map<String, int> reactions = const {},
+  int comments = 0,
+  int favorites = 0,
+  int shares = 0,
+  Map<String, dynamic>? viewer,
+  Map<String, dynamic>? reason,
+}) => Post.fromJson(
+  postJson(
+    cardJsonWith(card),
+    reactions: reactions,
+    comments: comments,
+    favorites: favorites,
+    shares: shares,
+    viewer: viewer,
+    reason: reason,
+  ),
+);
+
+const signedInPrefs = <String, Object>{
+  'onboarding.done': true,
+  'auth.token': 'tok',
+  'auth.user': '{"id":"u1","email":"a@b.com","handle":"ada","display_name":"Ada","bio":"","role":"member","topics":[]}',
+};

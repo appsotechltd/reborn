@@ -123,6 +123,12 @@ class SessionController extends Notifier<Session> {
     }
   }
 
+  /// DELETE /v1/me, then signs out on this device.
+  Future<void> deleteAccount() async {
+    await ref.read(repositoryProvider).deleteMe();
+    await signOut();
+  }
+
   Future<void> signOut() async {
     if (!state.signedIn) return;
     await _prefs.remove(tokenKey);
@@ -217,9 +223,11 @@ final cardProvider = FutureProvider.autoDispose
     );
 
 final sourceProvider = FutureProvider.autoDispose
-    .family<Fetched<SourceDetail>, String>(
-      (ref, id) => ref.watch(repositoryProvider).source(id),
-    );
+    .family<Fetched<SourceDetail>, String>((ref, id) {
+      // Re-fetch on sign-in/out: `follow` is personal.
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref.watch(repositoryProvider).source(id);
+    });
 
 final stashesProvider = FutureProvider.autoDispose<Fetched<List<Stash>>>((ref) {
   ref.watch(sessionProvider.select((s) => s.token));
@@ -242,4 +250,40 @@ final myContributionsProvider = FutureProvider.autoDispose<List<Contribution>>(
 
 final moderationQueueProvider = FutureProvider.autoDispose<List<Contribution>>(
   (ref) => ref.watch(repositoryProvider).moderationQueue(),
+);
+
+// ---------------------------------------------------------------------------
+// Social read-side providers
+
+final postProvider = FutureProvider.autoDispose.family<Fetched<Post>, String>((
+  ref,
+  id,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).post(id);
+});
+
+final profileProvider = FutureProvider.autoDispose.family<Profile, String>((
+  ref,
+  handle,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).profile(handle);
+});
+
+final authorProvider = FutureProvider.autoDispose.family<AuthorPage, String>((
+  ref,
+  name,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).author(name);
+});
+
+final followingProvider = FutureProvider.autoDispose<List<FollowItem>>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).following();
+});
+
+final giftTiersProvider = FutureProvider.autoDispose<GiftTiers>(
+  (ref) => ref.watch(repositoryProvider).giftTiers(),
 );

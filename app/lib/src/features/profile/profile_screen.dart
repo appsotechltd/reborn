@@ -79,7 +79,12 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 ListTile(
                   leading: const Icon(Icons.badge_outlined),
                   title: Text(user?.displayName ?? ''),
-                  subtitle: Text(user?.email ?? ''),
+                  subtitle: Text(
+                    [
+                      if (user?.handle.isNotEmpty ?? false) '@${user!.handle}',
+                      user?.email ?? '',
+                    ].join(' · '),
+                  ),
                   trailing: IconButton(
                     tooltip: 'Edit name',
                     icon: const Icon(Icons.edit_outlined),
@@ -91,6 +96,24 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     leading: Icon(Icons.verified_outlined),
                     title: Text('Moderator'),
                   ),
+                if (user?.handle.isNotEmpty ?? false)
+                  ListTile(
+                    leading: const Icon(Icons.public),
+                    title: const Text('Your public profile'),
+                    onTap: () => context.push(
+                      '/users/${Uri.encodeComponent(user!.handle)}',
+                    ),
+                  ),
+                ListTile(
+                  leading: const Icon(Icons.favorite_border),
+                  title: const Text('Favourites'),
+                  onTap: () => context.push('/favorites'),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.people_outline),
+                  title: const Text('Following'),
+                  onTap: () => context.push('/following'),
+                ),
                 ListTile(
                   leading: const Icon(Icons.tune),
                   title: const Text('Your topics'),
@@ -118,6 +141,12 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     onTap: () => context.push('/moderation'),
                   ),
                 const Divider(),
+                ListTile(
+                  leading: const Icon(Icons.settings_outlined),
+                  title: const Text('Settings'),
+                  subtitle: const Text('Handle, bio, delete account'),
+                  onTap: () => context.push('/settings'),
+                ),
                 ListTile(
                   leading: const Icon(Icons.logout),
                   title: const Text('Sign out'),

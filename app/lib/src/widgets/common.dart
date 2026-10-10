@@ -157,6 +157,38 @@ Future<bool> requireSignIn(
   return false;
 }
 
+/// For social actions (react, favourite, comment, gift, follow): returns
+/// true when signed in, otherwise goes to the sign-in screen.
+bool ensureSignedIn(BuildContext context, WidgetRef ref) {
+  if (ref.read(sessionProvider).signedIn) return true;
+  context.push('/signin');
+  return false;
+}
+
+/// 0, 12, 999, 1.2k, 12k, 1.2M.
+String compactCount(int n) {
+  if (n < 1000) return '$n';
+  String f(double v) {
+    final s = v < 10 ? v.toStringAsFixed(1) : v.toStringAsFixed(0);
+    return s.endsWith('.0') ? s.substring(0, s.length - 2) : s;
+  }
+
+  if (n < 1000000) return '${f(n / 1000)}k';
+  return '${f(n / 1000000)}M';
+}
+
+/// "just now", "5m", "3h", "2d", or a date for older times.
+String timeAgo(DateTime? t, {DateTime? now}) {
+  if (t == null) return '';
+  final d = (now ?? DateTime.now()).difference(t);
+  if (d.inMinutes < 1) return 'just now';
+  if (d.inHours < 1) return '${d.inMinutes}m';
+  if (d.inDays < 1) return '${d.inHours}h';
+  if (d.inDays < 7) return '${d.inDays}d';
+  final l = t.toLocal();
+  return '${l.year}-${l.month.toString().padLeft(2, '0')}-${l.day.toString().padLeft(2, '0')}';
+}
+
 /// A small banner shown while serving cached content.
 class OfflineBanner extends StatelessWidget {
   const OfflineBanner({super.key});
@@ -271,6 +303,16 @@ class ProfileMenuButton extends ConsumerWidget {
             value: '/signin',
             child: _MenuRow(Icons.login, 'Sign in'),
           ),
+        if (session.signedIn) ...[
+          const PopupMenuItem(
+            value: '/favorites',
+            child: _MenuRow(Icons.favorite_border, 'Favourites'),
+          ),
+          const PopupMenuItem(
+            value: '/following',
+            child: _MenuRow(Icons.people_outline, 'Following'),
+          ),
+        ],
         const PopupMenuItem(
           value: '/topics',
           child: _MenuRow(Icons.tune, 'Your topics'),
@@ -288,6 +330,11 @@ class ProfileMenuButton extends ConsumerWidget {
           const PopupMenuItem(
             value: '/moderation',
             child: _MenuRow(Icons.gavel_outlined, 'Moderation'),
+          ),
+        if (session.signedIn)
+          const PopupMenuItem(
+            value: '/settings',
+            child: _MenuRow(Icons.settings_outlined, 'Settings'),
           ),
         if (session.signedIn)
           const PopupMenuItem(

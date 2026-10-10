@@ -142,6 +142,17 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       },
                       onFieldSubmitted: (_) => _submit(),
                     ),
+                    if (!register)
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: () => context.push(
+                            '/forgot',
+                            extra: _email.text.trim(),
+                          ),
+                          child: const Text('Forgot password?'),
+                        ),
+                      ),
                     if (_error != null) ...[
                       const SizedBox(height: 12),
                       Text(

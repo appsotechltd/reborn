@@ -1,7 +1,9 @@
 # Reborn app (Flutter: Android and iOS)
 
-The Reborn client: one-minute idea cards from books, with a daily idea, search,
-stashes, spaced review and quizzes, an "Ask" agent, and community contributions.
+The Reborn client: one-minute idea cards from books, with a timeline, a daily
+idea, search, stashes, spaced review and quizzes, an "Ask" agent, community
+contributions, and a social layer (reactions, favourites, comments, shares,
+gifts and follows).
 It talks to the backend described in [`../docs/API.md`](../docs/API.md).
 
 The web app is built separately in Next.js. This project keeps its `web/`
@@ -12,7 +14,8 @@ during development.
 ## Run
 
 The API base URL comes from `--dart-define=API_BASE_URL=...` and defaults to
-`http://localhost:8080`.
+`http://localhost:8080`. The website's base URL (used for shared links) comes
+from `--dart-define=WEB_BASE_URL=...` and defaults to `https://reborn.app`.
 
 ```sh
 cd app
@@ -61,8 +64,16 @@ lib/
       speaker.dart             flutter_tts wrapper for the Listen button
     widgets/common.dart        shared widgets (sign-in prompt, errors, card tile, menu)
     features/
-      onboarding/  home/  daily/  card/  source/  search/  stashes/
-      review/  ask/  contribute/  moderation/  auth/  profile/  shell/
+      onboarding/  home/ (swipe feed)  daily/  card/  source/  search/
+      stashes/  review/  ask/  contribute/  moderation/  auth/  profile/
+      shell/
+      timeline/    home tab: timeline, seen tracking, "caught up" line
+      post/        PostView (reactions, favourite, comments, share, gift),
+                   optimistic post store, native share
+      comments/    comments screen with one level of replies
+      social/      profiles by handle, authors, following, favourites
+      settings/    handle, bio, delete account
+      gifts/       gift sheet, in-app purchase store and server hand-off
 test/                          model, client, cache, Ask and widget tests
 ```
 
@@ -74,14 +85,44 @@ test/                          model, client, cache, Ask and widget tests
 - **Topics** chosen during onboarding are saved locally. When the user is signed
   in they are also saved with `PATCH /v1/me`. Local topics are pushed to a new
   account on sign-in if the account has none.
-- **Feed**: vertically paged cards, loaded with `next_cursor`. Overscrolling a
-  long card turns the page. Views are recorded with `POST /v1/cards/{id}/view`
-  when signed in.
+- **Timeline** (Home tab): `GET /v1/timeline` with infinite scroll and pull to
+  refresh, plus topic chips. Each post shows why it is there ("From
+  Meditations", "Because you follow Marcus Aurelius", "Bob favourited this", or
+  the topic). Signed in, a post counts as seen once at least half of it (or
+  the whole viewport, for posts taller than the screen) has been visible for a
+  second; ids are batched to `POST /v1/seen`. "You're all caught up" marks where
+  unseen posts end. Signed out, a sign-up card sits at the top.
+- **Swipe feed** (`/feed`, from the timeline's app bar): vertically paged cards
+  from `GET /v1/feed`. Views are recorded with `POST /v1/cards/{id}/view`.
+- **Posts**: every card is a post. The card screen and the timeline share
+  `PostView`: five reactions with counts (one per person, tap again to clear),
+  favourite, comments, share and gift, all updated optimistically and rolled
+  back on failure. Signed out, reacting, favouriting, gifting, commenting and
+  following go to sign in; reading comments and sharing work signed out.
+- **Share** opens the platform share sheet (share_plus) with the title and the
+  canonical link `WEB_BASE_URL/ideas/{id}`, and counts it with channel
+  `native` (`copy_link` if the sheet is unavailable and the link is copied).
+- **Gifts** support Reborn. The sheet lists `GET /v1/gifts/tiers`; purchases are
+  consumable in-app products (`reborn.gift.spark|lamp|sun`) through the
+  official `in_app_purchase` plugin. iOS uses StoreKit 2 (the plugin default)
+  and sends the transaction JWS (`verificationData.serverVerificationData`) to
+  `POST /v1/posts/{id}/gifts/apple`; Android sends the product id and purchase
+  token to `.../gifts/google`. The purchase is finished/consumed only after the
+  server accepts it; otherwise it stays with the store and is retried for the
+  same post when the store re-delivers it (listened for from app start). When
+  the platform's provider is off, the store is unavailable, or on web, the
+  tiers show with "Gifts are coming soon". The products must exist in App
+  Store Connect / the Play Console and the app needs the In-App Purchase
+  capability before release.
+- **Follow** books (source screen), authors (tap an author name) and people
+  (profile by handle). The profile menu has Favourites, Following and Settings
+  (handle, bio, and in-app account deletion with `DELETE /v1/me`).
+- **Forgot password?** on sign in calls `POST /v1/auth/forgot`; the emailed
+  link opens the website's reset page.
 - **Card**: the `credit` line is always shown and opens the source page. The
   `disclaimer` is always shown when present. A `health` card with no text gets
-  the default notice. Listen reads the title, body and "Apply it". Share copies
-  a plain-text version that keeps the credit.
-- **Offline**: feed pages, the daily idea, topics, sources, stashes (with all
+  the default notice. Listen reads the title, body and "Apply it".
+- **Offline**: timeline and feed pages, posts, the daily idea, topics, sources, stashes (with all
   their cards, prefetched whenever the stash list loads) and every opened card
   are cached as JSON. When a request fails because the network is unreachable,
   the app serves the cache and shows a small "Offline" banner.

@@ -169,8 +169,118 @@ class RebornRepository {
 
   Future<User> me() => _run(api.me);
 
-  Future<User> updateMe({String? displayName, List<String>? topics}) =>
-      _run(() => api.updateMe(displayName: displayName, topics: topics));
+  Future<User> updateMe({
+    String? displayName,
+    String? handle,
+    String? bio,
+    List<String>? topics,
+  }) => _run(
+    () => api.updateMe(
+      displayName: displayName,
+      handle: handle,
+      bio: bio,
+      topics: topics,
+    ),
+  );
+
+  Future<void> deleteMe() => _run(api.deleteMe);
+
+  Future<void> forgotPassword(String email) =>
+      _run(() => api.forgotPassword(email));
+
+  // ---- Social ----
+
+  Future<Fetched<PostPage>> timeline({
+    List<String>? topics,
+    String? cursor,
+  }) async {
+    final r = await _cached<PostPage>(
+      OfflineCache.timelineKey(topics, cursor),
+      () => api.timeline(topics: topics, cursor: cursor),
+      (v) => v.toJson(),
+      (j) => PostPage.fromJson(j as Map<String, dynamic>),
+    );
+    if (!r.offline) await cache.putCards(r.value.posts.map((p) => p.card));
+    return r;
+  }
+
+  /// Best effort: losing a "seen" mark only means seeing a post again.
+  Future<void> markSeen(List<String> postIds) async {
+    if (postIds.isEmpty) return;
+    try {
+      await _run(() => api.markSeen(postIds));
+    } on ApiException {
+      // Ignore.
+    }
+  }
+
+  /// A post; offline, the cached post or else the cached card without stats.
+  Future<Fetched<Post>> post(String id) async {
+    try {
+      return await _cached<Post>(
+        OfflineCache.postKey(id),
+        () => api.post(id),
+        (v) => v.toJson(),
+        (j) => Post.fromJson(j as Map<String, dynamic>),
+      );
+    } on ApiException catch (e) {
+      final card = e.isNetwork ? cache.getCard(id) : null;
+      if (card == null) rethrow;
+      return Fetched(Post.fromCard(card), offline: true);
+    }
+  }
+
+  Future<void> setFavorite(String postId, bool on) =>
+      _run(() => api.setFavorite(postId, on));
+
+  Future<void> setReaction(String postId, Reaction? kind) =>
+      _run(() => api.setReaction(postId, kind));
+
+  /// Counts a share; never fails the share itself.
+  Future<void> recordShare(String postId, String channel) async {
+    try {
+      await _run(() => api.share(postId, channel));
+    } on ApiException {
+      // Best effort.
+    }
+  }
+
+  Future<CommentPage> comments(String postId, {String? cursor}) =>
+      _run(() => api.comments(postId, cursor: cursor));
+
+  Future<Comment> addComment(String postId, String body, {String? parentId}) =>
+      _run(() => api.addComment(postId, body, parentId: parentId));
+
+  Future<void> deleteComment(String id) => _run(() => api.deleteComment(id));
+
+  Future<void> reportComment(String id, {String? reason}) =>
+      _run(() => api.reportComment(id, reason: reason));
+
+  Future<PostPage> myFavorites({String? cursor}) =>
+      _run(() => api.myFavorites(cursor: cursor));
+
+  Future<List<FollowItem>> following() => _run(api.following);
+
+  Future<FollowState> setFollow(FollowKind kind, String target, bool on) =>
+      _run(() => api.setFollow(kind, target, on));
+
+  Future<Profile> profile(String handle) => _run(() => api.profile(handle));
+
+  Future<PostPage> userFavorites(String handle, {String? cursor}) =>
+      _run(() => api.userFavorites(handle, cursor: cursor));
+
+  Future<AuthorPage> author(String name) => _run(() => api.author(name));
+
+  Future<GiftTiers> giftTiers() => _run(api.giftTiers);
+
+  Future<Gift> giftApple(String postId, String signedTransaction) =>
+      _run(() => api.giftApple(postId, signedTransaction));
+
+  Future<Gift> giftGoogle(
+    String postId,
+    String productId,
+    String purchaseToken,
+  ) => _run(() => api.giftGoogle(postId, productId, purchaseToken));
 
   // ---- Stashes ----
 

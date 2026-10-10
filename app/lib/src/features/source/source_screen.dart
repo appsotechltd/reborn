@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../social/follow_button.dart';
 
 const _licenceNames = {
   'public-domain': 'Public domain',
@@ -37,6 +39,7 @@ class SourceScreen extends ConsumerWidget {
               child: _SourceHeader(
                 source: f.value.source,
                 count: f.value.cards.length,
+                follow: f.value.follow,
               ),
             ),
             for (final c in f.value.cards)
@@ -50,9 +53,14 @@ class SourceScreen extends ConsumerWidget {
 }
 
 class _SourceHeader extends StatelessWidget {
-  const _SourceHeader({required this.source, required this.count});
+  const _SourceHeader({
+    required this.source,
+    required this.count,
+    required this.follow,
+  });
   final Source source;
   final int count;
+  final FollowState follow;
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +77,33 @@ class _SourceHeader extends StatelessWidget {
           const SizedBox(height: 4),
           Text(source.title, style: theme.textTheme.headlineMedium),
           const SizedBox(height: 4),
-          Text(source.authors.join(', '), style: theme.textTheme.titleMedium),
+          Wrap(
+            spacing: 4,
+            children: [
+              for (final a in source.authors)
+                InkWell(
+                  key: ValueKey('source-author-$a'),
+                  borderRadius: BorderRadius.circular(6),
+                  onTap: () =>
+                      context.push('/authors/${Uri.encodeComponent(a)}'),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 2),
+                    child: Text(
+                      a,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        color: theme.colorScheme.primary,
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          FollowButton(
+            kind: FollowKind.source,
+            target: source.id,
+            initial: follow,
+          ),
           const SizedBox(height: 16),
           Card(
             child: Padding(
