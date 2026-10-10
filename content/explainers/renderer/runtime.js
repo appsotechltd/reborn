@@ -38,6 +38,7 @@
       return { s, node, impl, ctx, state };
     });
     await document.fonts.ready;
+    await R.bg.ready; // images for the photo look
     window.__seek(0);
     return true;
   };

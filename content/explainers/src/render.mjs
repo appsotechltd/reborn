@@ -5,7 +5,8 @@
 //   node src/render.mjs aesops-fables--07       render one card
 //   node src/render.mjs --stills                write a few PNG frames per card instead (fast preview)
 //   node src/render.mjs --voice none            force a silent render even if a voice key is set
-//   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora)
+//   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora, swarm, depth)
+//   node src/render.mjs --sample samples/seneca-photo.json   render a style sample to out/samples/
 //
 // Env: ELEVENLABS_API_KEY (+ optional ELEVENLABS_VOICE_ID, ELEVENLABS_MODEL) adds narration.
 //      CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
@@ -18,6 +19,7 @@ import { chromium } from "playwright-core";
 import { ROOT, loadCard, listScripts } from "./library.mjs";
 import { narrator, narrate } from "./narration.mjs";
 import { buildTimeline, toVtt } from "./timeline.mjs";
+import { resolveImages } from "./images.mjs";
 
 const SCRIPTS = path.join(ROOT, "scripts");
 const OUT = path.join(ROOT, "out");
@@ -30,6 +32,7 @@ function args() {
     if (a[i] === "--voice") opt.voice = a[++i];
     else if (a[i] === "--stills") opt.stills = true;
     else if (a[i] === "--theme") opt.theme = a[++i];
+    else if (a[i] === "--sample") opt.sample = a[++i];
     else opt.ids.push(a[i]);
   }
   return opt;
@@ -92,6 +95,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   const cardId = opt.label || card.id;
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
+  await resolveImages(scenes, opt.imageProvider !== undefined ? { provider: opt.imageProvider } : {});
   const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null, captionStyle: opt.captionStyle || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
@@ -164,8 +168,23 @@ export function launchBrowser() {
   return chromium.launch({ executablePath: chromiumPath() });
 }
 
+/** Renders a style sample (samples/*.json) to out/samples/, leaving the card's own video alone. */
+async function renderSample(file, opt) {
+  const script = JSON.parse(await readFile(file, "utf8"));
+  const card = await loadCard(script.card_id);
+  const browser = await launchBrowser();
+  try {
+    await renderScenes(browser, card, script.scenes, { ...opt, label: path.basename(file, ".json"),
+      base: path.join(OUT, "samples", path.basename(file, ".json")), fps: script.fps, theme: opt.theme || script.theme,
+      captionStyle: script.captionStyle, captionMax: script.captionMax, score: script.score });
+  } finally {
+    await browser.close();
+  }
+}
+
 async function main() {
   const opt = args();
+  if (opt.sample) return renderSample(opt.sample, opt);
   const ids = opt.ids.length ? opt.ids : await listScripts(SCRIPTS);
   const manifestFile = path.join(OUT, "manifest.json");
   const manifest = existsSync(manifestFile) ? JSON.parse(await readFile(manifestFile, "utf8")) : { version: 1, explainers: {} };

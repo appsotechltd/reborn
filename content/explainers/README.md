@@ -92,6 +92,25 @@ the video renders silent with captions. Audio is cached in `.cache/audio` by tex
 so re-renders only voice changed lines. Another provider plugs in through `src/narration.mjs`
 (`synthesize(text) -> mp3 bytes`).
 
+## Looks
+
+`--theme` (or `"theme"` in a script) renders in a dark look instead of the default paper style:
+`voltage`, `ember` and `aurora` paint animated backgrounds and draw figures as glowing line art;
+`swarm` and `depth` gather 2D or 3D particles into a shape per shot (`params.shape` /
+`params.object`); `photo` moves slowly through cinematic stills (`params.image`). A scene can change
+shot on a word of its narration with `params.beats: [{ "word": "drifting", "image": {...} }]`.
+
+`"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
+under the voice. `"captionStyle": "cinema"` with `"captionMax": 4` shows short, word-by-word captions.
+
+Photo images come from Google Imagen through the Gemini API (`GEMINI_API_KEY`, optional
+`IMAGEN_MODEL`) and are cached in `.cache/images` by prompt, so each is paid for once (about $0.02 an
+image on Imagen 4 Fast; check Google's pricing first). Style samples render to `out/samples/`:
+
+```sh
+GEMINI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json
+```
+
 ## Realistic films
 
 1. **Plan.** `ANTHROPIC_API_KEY=... npm run film:plan -- <card-id>` asks Claude for a

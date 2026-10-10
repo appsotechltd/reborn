@@ -239,6 +239,7 @@
     register(name, factory) { painters[name] = factory; R.bg.themes = Object.keys(painters); },
     setup(canvas, theme, sceneStarts, scale, tl) {
       draw = null;
+      R.bg.ready = Promise.resolve();
       canvas.hidden = !painters[theme];
       if (!painters[theme]) return;
       canvas.width = W * scale; canvas.height = H * scale;
@@ -246,6 +247,7 @@
       g.setTransform(scale, 0, 0, scale, 0, 0);
       cuts = sceneStarts;
       draw = painters[theme](tl);
+      R.bg.ready = draw.ready || Promise.resolve();
     },
     draw(t) {
       if (!draw) return;
