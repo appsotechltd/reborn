@@ -6,16 +6,20 @@
 //	reborn seed [dir]             validate and import library files, then embed
 //	reborn embed                  embed cards that lack vectors (needs VOYAGE_API_KEY)
 //	reborn make-moderator <email> give a user the moderator role
+//	reborn media-upload <dir> [prefix]
+//	                              copy media files to R2 (or MEDIA_DIR), skipping unchanged ones
 package main
 
 import (
 	"context"
+	"crypto/x509"
 	"errors"
 	"fmt"
 	"log/slog"
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
@@ -28,13 +32,17 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/db"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
 	"github.com/appsotechltd/reborn/backend/internal/explainers"
+	"github.com/appsotechltd/reborn/backend/internal/mail"
+	"github.com/appsotechltd/reborn/backend/internal/objstore"
+	"github.com/appsotechltd/reborn/backend/internal/payments"
+	"github.com/appsotechltd/reborn/backend/internal/push"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
 func main() {
 	slog.SetDefault(slog.New(slog.NewTextHandler(os.Stderr, nil)))
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "usage: reborn serve|migrate|validate|seed|embed|make-moderator")
+		fmt.Fprintln(os.Stderr, "usage: reborn serve|migrate|validate|seed|embed|make-moderator|media-upload")
 		os.Exit(2)
 	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
@@ -50,6 +58,9 @@ func run(ctx context.Context, cfg config.Config, cmd string, args []string) erro
 	if cmd == "validate" {
 		_, err := loadLibrary(dirArg(cfg, args))
 		return err
+	}
+	if cmd == "media-upload" {
+		return mediaUpload(ctx, cfg, args)
 	}
 	pool, err := db.Open(ctx, cfg.DatabaseURL)
 	if err != nil {
@@ -149,12 +160,13 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	if cfg.JWTSecret == "dev-only-change-me" {
 		slog.Warn("JWT_SECRET is the development default; set it in production")
 	}
-	set, err := explainers.Load(cfg.ExplainerDir, cfg.MediaBaseURL)
+	media := mediaStore(cfg)
+	set, err := explainers.Load(ctx, cfg.ExplainerDir, media)
 	if err != nil {
 		return fmt.Errorf("load explainers: %w", err)
 	}
 	store.SetExplainers(set)
-	slog.Info("explainer videos", "cards", len(set), "dir", cfg.ExplainerDir)
+	slog.Info("explainer videos", "cards", len(set), "manifest", cfg.ExplainerDir)
 	srv := &api.Server{
 		Store:       st,
 		Cache:       c,
@@ -162,15 +174,24 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		Embedder:    e,
 		AgentHourly: cfg.AgentHourly,
 		CORSOrigins: cfg.CORSOrigins,
+		WebBaseURL:  strings.TrimRight(cfg.WebBaseURL, "/"),
+		Media:       media,
 	}
-	if cfg.MediaBaseURL == "" {
-		srv.ExplainerDir = cfg.ExplainerDir
+	if srv.Mailer, err = mail.FromURL(cfg.SMTPURL, cfg.MailFrom); err != nil {
+		return err
+	}
+	if cfg.SMTPURL == "" {
+		slog.Warn("SMTP_URL is not set; password reset emails are written to the log")
+	}
+	if err := setupPayments(cfg, srv); err != nil {
+		return err
 	}
 	if cfg.AnthropicAPIKey != "" {
 		srv.Agent = agent.New(cfg.AnthropicAPIKey, cfg.AgentModel, st, e)
 	} else {
 		slog.Warn("ANTHROPIC_API_KEY is not set; the AI guide is disabled")
 	}
+	go srv.RunDailyPushes(ctx, 5*time.Minute)
 	hs := &http.Server{Addr: cfg.Addr, Handler: srv.Handler(), ReadHeaderTimeout: 10 * time.Second}
 	errc := make(chan error, 1)
 	go func() {
@@ -185,4 +206,88 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		defer cancel()
 		return hs.Shutdown(shutdown)
 	}
+}
+
+// setupPayments turns on each payment provider, and push, whose keys are configured.
+func setupPayments(cfg config.Config, srv *api.Server) error {
+	if cfg.StripeSecretKey != "" && cfg.StripeWebhookSecret != "" {
+		srv.Stripe = &payments.Stripe{SecretKey: cfg.StripeSecretKey, WebhookSecret: cfg.StripeWebhookSecret}
+		srv.StripePrices = map[string]string{}
+		if cfg.StripePriceMonthly != "" {
+			srv.StripePrices["monthly"] = cfg.StripePriceMonthly
+		}
+		if cfg.StripePriceYearly != "" {
+			srv.StripePrices["yearly"] = cfg.StripePriceYearly
+		}
+	}
+	srv.GoogleRTDNToken = cfg.GoogleRTDNToken
+	if cfg.AppleBundleID != "" && cfg.AppleRootCAFile != "" {
+		raw, err := os.ReadFile(cfg.AppleRootCAFile)
+		if err != nil {
+			return fmt.Errorf("APPLE_ROOT_CA_FILE: %w", err)
+		}
+		pool := x509.NewCertPool()
+		if !pool.AppendCertsFromPEM(raw) {
+			cert, err := x509.ParseCertificate(raw)
+			if err != nil {
+				return fmt.Errorf("APPLE_ROOT_CA_FILE: not a PEM or DER certificate")
+			}
+			pool.AddCert(cert)
+		}
+		srv.Apple = &payments.Apple{BundleID: cfg.AppleBundleID, Roots: pool}
+	}
+	if cfg.GooglePackageName != "" && cfg.GoogleServiceFile != "" {
+		key, err := os.ReadFile(cfg.GoogleServiceFile)
+		if err != nil {
+			return fmt.Errorf("GOOGLE_PLAY_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+		srv.Google = &payments.Google{PackageName: cfg.GooglePackageName, ServiceAccount: key}
+	}
+	if cfg.FirebaseServiceFile != "" {
+		key, err := os.ReadFile(cfg.FirebaseServiceFile)
+		if err != nil {
+			return fmt.Errorf("FIREBASE_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+		if srv.Push, err = push.NewFCM(key); err != nil {
+			return fmt.Errorf("FIREBASE_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+	}
+	slog.Info("payment and push providers", "stripe", srv.Stripe != nil, "apple", srv.Apple != nil, "google", srv.Google != nil, "push", srv.Push != nil)
+	return nil
+}
+
+// mediaStore is R2 when its keys are set, else the local MEDIA_DIR served at /media.
+func mediaStore(cfg config.Config) objstore.Store {
+	if cfg.R2Enabled() {
+		if cfg.MediaBaseURL == "" {
+			slog.Warn("MEDIA_BASE_URL is not set; media links will not resolve until the bucket has a public URL")
+		}
+		slog.Info("media storage", "backend", "r2", "bucket", cfg.R2Bucket, "public_url", cfg.MediaBaseURL)
+		return objstore.NewR2(cfg.R2AccountID, cfg.R2Bucket, cfg.R2AccessKey, cfg.R2SecretKey, cfg.MediaBaseURL)
+	}
+	base := cfg.MediaBaseURL
+	if base == "" {
+		// Apps need absolute links; in development the API serves the files itself.
+		host := cfg.Addr
+		if strings.HasPrefix(host, ":") {
+			host = "localhost" + host
+		}
+		base = "http://" + host + "/media"
+	}
+	slog.Warn("R2 is not configured; media files are kept on local disk (development only)", "dir", cfg.MediaDir)
+	return &objstore.Local{Dir: cfg.MediaDir, BaseURL: base}
+}
+
+func mediaUpload(ctx context.Context, cfg config.Config, args []string) error {
+	if len(args) < 1 || len(args) > 2 {
+		return errors.New("usage: reborn media-upload <dir> [prefix]")
+	}
+	prefix := ""
+	if len(args) == 2 {
+		prefix = args[1]
+	}
+	st := mediaStore(cfg)
+	res, err := objstore.UploadDir(ctx, st, args[0], prefix, func(key string) { slog.Info("uploaded", "key", key, "url", st.URL(key)) })
+	slog.Info("media upload", "uploaded", res.Uploaded, "unchanged", res.Unchanged, "skipped", res.Skipped)
+	return err
 }

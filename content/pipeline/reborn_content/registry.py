@@ -5,7 +5,7 @@ from __future__ import annotations
 import tomllib
 from pathlib import Path
 
-ADAPTERS = {"standardebooks", "gutenberg", "openstax", "web"}
+ADAPTERS = {"standardebooks", "gutenberg", "openstax", "web", "summary"}
 
 
 class RegistryError(ValueError):
@@ -36,11 +36,14 @@ def _check(e: dict, seen: dict) -> None:
         raise RegistryError(f"{sid}: adapter must be one of {sorted(ADAPTERS)}")
     if "licence" not in e:
         raise RegistryError(f"{sid}: missing licence")
+    if (e["adapter"] == "summary") != (e["licence"] == "original-summary"):
+        raise RegistryError(f"{sid}: summary sources, and only they, use the original-summary licence")
     required = {
         "standardebooks": ["repo"],
         "gutenberg": ["gutenberg_id"],
         "openstax": ["repo", "collection"],
         "web": ["url"],
+        "summary": ["url"],
     }[e["adapter"]]
     for k in required:
         if k not in e:

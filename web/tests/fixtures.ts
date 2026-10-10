@@ -1,4 +1,4 @@
-import type { Card } from "@/lib/types";
+import type { Card, Post } from "@/lib/types";
 
 // Made-up ids: tests must not depend on real library content.
 export function makeCard(overrides: Partial<Card> = {}): Card {
@@ -25,6 +25,17 @@ export function makeCard(overrides: Partial<Card> = {}): Card {
       attribution: "Ada Example, An Example Book, public domain",
     },
     credit: "Source: Ada Example, An Example Book, public domain",
+    ...overrides,
+  };
+}
+
+export function makePost(overrides: Partial<Post> = {}): Post {
+  const card = overrides.card ?? makeCard();
+  return {
+    id: card.id,
+    published_at: "2026-10-10T09:00:00Z",
+    card,
+    stats: { reactions: { love: 2 }, comments: 3, favorites: 5, shares: 0, gifts: 0 },
     ...overrides,
   };
 }

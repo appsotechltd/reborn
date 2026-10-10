@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { licenceName, paragraphs, topicName } from "@/lib/content";
+import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
 import { ExplainerVideo } from "./ExplainerVideo";
 
@@ -12,13 +13,31 @@ interface CardViewProps {
   actions?: ReactNode;
   /** Content rendered after Apply it and before the credit (e.g. the quiz). */
   children?: ReactNode;
+  /** Link the title (used when the card is shown in a list such as the timeline). */
+  titleHref?: string;
+}
+
+/** Author names, each linked to its author page. */
+export function AuthorLinks({ authors, className = "link" }: { authors: string[]; className?: string }) {
+  return (
+    <>
+      {authors.map((name, i) => (
+        <span key={name}>
+          {i > 0 ? (i === authors.length - 1 ? " and " : ", ") : null}
+          <Link href={authorHref(name)} className={className}>
+            {name}
+          </Link>
+        </span>
+      ))}
+    </>
+  );
 }
 
 /**
  * The idea card. Always renders the credit line (linked to the source page,
  * the original and its licence) and, when present, the health disclaimer.
  */
-export function CardView({ card, headingLevel = "h1", actions, children }: CardViewProps) {
+export function CardView({ card, headingLevel = "h1", actions, children, titleHref }: CardViewProps) {
   const Heading = headingLevel;
   const Sub = headingLevel === "h1" ? "h2" : "h3";
   return (
@@ -32,13 +51,25 @@ export function CardView({ card, headingLevel = "h1", actions, children }: CardV
         id={`card-${card.id}-title`}
         className="mt-2 font-serif text-3xl font-semibold leading-tight tracking-tight text-balance sm:text-4xl"
       >
-        {card.title}
+        {titleHref ? (
+          <Link href={titleHref} className="hover:underline">
+            {card.title}
+          </Link>
+        ) : (
+          card.title
+        )}
       </Heading>
       <p className="mt-2 text-sm text-muted">
         From{" "}
         <Link href={`/sources/${card.source.id}`} className="link">
           {card.source.title}
         </Link>
+        {card.source.authors.length ? (
+          <>
+            {" "}
+            by <AuthorLinks authors={card.source.authors} />
+          </>
+        ) : null}
         {card.locator ? <span> · {card.locator}</span> : null}
       </p>
 

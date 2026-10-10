@@ -1,26 +1,28 @@
 // Package explainers attaches rendered explainer videos to cards.
 //
 // The renderer in content/explainers writes the videos, posters and captions to
-// one folder along with manifest.json, keyed by card id. The API reads that
-// manifest at startup, adds an "explainer" object to every card that has one,
-// and serves the files under /media/explainers/ (or points at MEDIA_BASE_URL,
-// e.g. a CDN holding a copy of the folder).
+// one folder along with manifest.json, keyed by card id. The files are uploaded to
+// the media store under explainers/ (`reborn media-upload <folder> explainers`):
+// R2 in production, MEDIA_DIR locally, which the API serves under /media/.
+// The API reads the manifest at startup and adds an "explainer" object, with the
+// media store's URLs, to every card that has one.
 package explainers
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"io/fs"
-	"net/http"
 	"os"
 	"path"
 	"path/filepath"
-	"strings"
+
+	"github.com/appsotechltd/reborn/backend/internal/objstore"
 )
 
-// Route is where the API serves the explainer files.
-const Route = "/media/explainers/"
+// Prefix is where explainer files live in the media store.
+const Prefix = "explainers/"
 
 // Explainer is the video attached to a card, as returned by the API.
 type Explainer struct {
@@ -52,11 +54,12 @@ type manifest struct {
 }
 
 // Load reads dir/manifest.json. A missing folder or manifest is not an error:
-// cards simply have no explainer. URLs are baseURL + "/explainers/" + file name; an empty
-// baseURL gives paths under Route, which clients resolve against the API URL.
-func Load(dir, baseURL string) (Set, error) {
+// cards simply have no explainer. Links point at media's copy of each file under
+// Prefix. On local disk a card whose video was never uploaded is left out, so the
+// apps never get a broken link; R2 is not checked at startup.
+func Load(ctx context.Context, dir string, media objstore.Store) (Set, error) {
 	set := Set{}
-	if dir == "" {
+	if dir == "" || media == nil {
 		return set, nil
 	}
 	raw, err := os.ReadFile(filepath.Join(dir, "manifest.json"))
@@ -70,23 +73,21 @@ func Load(dir, baseURL string) (Set, error) {
 	if err := json.Unmarshal(raw, &m); err != nil {
 		return nil, fmt.Errorf("explainer manifest: %w", err)
 	}
-	// On a CDN (R2), files live under explainers/ in the bucket, matching `reborn media-upload out explainers`.
-	base := strings.TrimSuffix(Route, "/")
-	if baseURL != "" {
-		base = strings.TrimSuffix(baseURL, "/") + "/explainers"
-	}
 	url := func(name string) string {
 		if name == "" {
 			return ""
 		}
-		return base + "/" + path.Base(name)
+		return media.URL(Prefix + path.Base(name))
 	}
+	_, local := media.(*objstore.Local)
 	for id, e := range m.Explainers {
 		if e.Video == "" {
 			continue
 		}
-		if _, err := os.Stat(filepath.Join(dir, path.Base(e.Video))); err != nil && baseURL == "" {
-			continue // listed but not rendered here: don't advertise a broken link
+		if local {
+			if ok, _, err := media.Stat(ctx, Prefix+path.Base(e.Video)); err != nil || !ok {
+				continue
+			}
 		}
 		kind := e.Kind
 		if kind == "" {
@@ -96,23 +97,4 @@ func Load(dir, baseURL string) (Set, error) {
 			DurationS: e.Duration, Width: e.Width, Height: e.Height, Narrated: e.Narrated}
 	}
 	return set, nil
-}
-
-// allowed lists the file types the media route serves; everything else is 404.
-var allowed = map[string]string{".mp4": "video/mp4", ".jpg": "image/jpeg", ".vtt": "text/vtt; charset=utf-8"}
-
-// Handler serves the explainer files from dir, with range requests for seeking.
-func Handler(dir string) http.Handler {
-	files := http.FileServer(http.Dir(dir))
-	return http.StripPrefix(strings.TrimSuffix(Route, "/"), http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		name := path.Clean(r.URL.Path)
-		ct, ok := allowed[path.Ext(name)]
-		if !ok || strings.Count(name, "/") != 1 {
-			http.NotFound(w, r)
-			return
-		}
-		w.Header().Set("Content-Type", ct)
-		w.Header().Set("Cache-Control", "public, max-age=86400")
-		files.ServeHTTP(w, r)
-	}))
 }

@@ -221,18 +221,14 @@ func (s *Store) DailyCard(ctx context.Context, userID string, topics []string, d
 	return cards[0], nil
 }
 
-// RecordView marks a card as read by the user.
-func (s *Store) RecordView(ctx context.Context, userID, cardID string) error {
-	tag, err := s.DB.Exec(ctx, `INSERT INTO card_views (user_id, card_id)
+// RecordView marks a card as read by the user and reports whether it was new to them.
+func (s *Store) RecordView(ctx context.Context, userID, cardID string) (bool, error) {
+	var isNew bool
+	err := s.DB.QueryRow(ctx, `INSERT INTO card_views (user_id, card_id)
 		SELECT $1, id FROM cards WHERE id = $2 AND status = 'published'
-		ON CONFLICT (user_id, card_id) DO UPDATE SET viewed_at = now()`, userID, cardID)
-	if err != nil {
-		return err
-	}
-	if tag.RowsAffected() == 0 {
-		return ErrNotFound
-	}
-	return nil
+		ON CONFLICT (user_id, card_id) DO UPDATE SET viewed_at = card_views.viewed_at
+		RETURNING (xmax = 0)`, userID, cardID).Scan(&isNew)
+	return isNew, notFound(err)
 }
 
 // HashCard fingerprints a card's content so re-seeding can tell what changed.

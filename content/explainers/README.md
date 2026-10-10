@@ -131,7 +131,8 @@ footage, so review plans before rendering.
 ## Serving
 
 The API reads `out/manifest.json` at startup (`EXPLAINER_DIR`, default
-`../content/explainers/out`) and serves the files at `/media/explainers/`. To serve them from
-the media bucket (Cloudflare R2) instead, upload `out/` to `explainers/` in the bucket
-(`reborn media-upload content/explainers/out explainers`) and set `MEDIA_BASE_URL` to the bucket's public
-URL. Rendered files are not committed to git; render them or fetch them from the bucket.
+`../content/explainers/out`) and links each card to its files in the media store under
+`explainers/`. Upload them with `reborn media-upload content/explainers/out explainers`: that
+puts them in Cloudflare R2 when the `R2_*` keys are set, or in the local `MEDIA_DIR` (served by
+the API at `/media/`) in development. Locally, a card whose video has not been uploaded gets no
+explainer. Rendered files are not committed to git; render them or fetch them from the bucket.

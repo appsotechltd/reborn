@@ -1,0 +1,182 @@
+{
+  "source": {
+    "id": "atomic-habits-clear",
+    "title": "Atomic Habits",
+    "authors": [
+      "James Clear"
+    ],
+    "kind": "book",
+    "url": "https://jamesclear.com/atomic-habits",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Atomic Habits by James Clear (2018). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Avery",
+    "year": 2018,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "atomic-habits-clear--01",
+      "topic": "personal-development",
+      "tags": [
+        "compounding",
+        "patience",
+        "small-wins"
+      ],
+      "title": "Tiny improvements compound, but the payoff shows up late",
+      "body": "Clear's starting point is that getting about 1% better at something each day adds up dramatically over a year, just as small daily slips quietly add up the other way. The catch is timing: early on, the results are almost invisible, so people often quit just before the effort starts to pay off.\n\nHe compares this to ice that doesn't melt until the temperature crosses a threshold, even though earlier warming was doing the work. If you feel stuck, the effort may simply not have surfaced yet.",
+      "apply_it": "Pick one skill and note a tiny improvement you could make today. Write the date so you can look back in three months.",
+      "quiz": {
+        "question": "Why do people often give up on good habits too early, according to Clear?",
+        "options": [
+          "The habits are too small to matter",
+          "Early progress is real but mostly invisible, so it feels like nothing is happening",
+          "They improve too quickly",
+          "Compounding only works for money"
+        ],
+        "answer": 1,
+        "explanation": "Results lag behind effort; the gains build up before they become visible."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--02",
+      "topic": "productivity",
+      "tags": [
+        "systems",
+        "goals",
+        "process"
+      ],
+      "title": "Goals set the direction; systems actually get you there",
+      "body": "Clear argues that goals alone don't explain success, because winners and losers often share the same goals. What differs is the system: the daily routines and processes that produce results.\n\nFocusing only on a goal can also leave you either feeling behind until you reach it, or drifting once you have. Improving the system, such as how you write each morning, keeps progress going regardless. For a work target or a fitness aim, ask what repeatable process would make the result likely, then put your attention there.",
+      "apply_it": "Take one current goal and write the daily or weekly routine that would make it happen almost automatically.",
+      "quiz": {
+        "question": "What is Clear's main point about goals and systems?",
+        "options": [
+          "Goals are pointless and should be dropped",
+          "Systems only matter for businesses",
+          "Everyone has goals; the routines behind them make the difference",
+          "Bigger goals always produce better results"
+        ],
+        "answer": 2,
+        "explanation": "Shared goals don't separate success from failure; the process you follow each day does."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--03",
+      "topic": "psychology",
+      "tags": [
+        "identity",
+        "self-image",
+        "motivation"
+      ],
+      "title": "Change who you believe you are, not just what you want",
+      "body": "A central idea in the book is building habits around identity rather than outcomes. Instead of 'I want to run a marathon', the focus becomes 'I'm the kind of person who runs'.\n\nEach time you act in line with that identity, you add a small piece of evidence for it, and the habit starts to feel like part of you rather than a chore. It works in reverse too: 'I'm just not organised' can quietly excuse disorganised behaviour. Ask what kind of person you want to be, then prove it to yourself in small ways.",
+      "apply_it": "Finish this sentence: 'I am the type of person who...'. Then do one small action today that fits it.",
+      "quiz": {
+        "question": "In Clear's approach, what does each small habit you complete do?",
+        "options": [
+          "Acts as a vote for the kind of person you are becoming",
+          "Guarantees a specific outcome",
+          "Uses up your willpower for the day",
+          "Proves your goal was too small"
+        ],
+        "answer": 0,
+        "explanation": "Repeated actions build evidence for an identity, which makes the habit stick."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--04",
+      "topic": "productivity",
+      "tags": [
+        "habit-stacking",
+        "implementation-intentions",
+        "routines"
+      ],
+      "title": "Give every new habit a time, a place, and an existing anchor",
+      "body": "Vague intentions like 'I'll exercise more' rarely happen. Clear recommends stating exactly when and where you'll act, so the decision is made in advance.\n\nAn easy way to do that is to attach the new habit to something you already do reliably: after I pour my morning coffee, I'll write my three priorities; after I sit down on the train, I'll read for ten minutes. The existing routine becomes the trigger, so you don't have to remember or rely on motivation.",
+      "apply_it": "Write one line: 'After I [current habit], I will [new habit].' Try it tomorrow.",
+      "quiz": {
+        "question": "Which plan best fits Clear's advice?",
+        "options": [
+          "I'll read more this year",
+          "I'll meditate when I feel like it",
+          "I'll be healthier soon",
+          "After I brush my teeth at night, I'll read two pages"
+        ],
+        "answer": 3,
+        "explanation": "Linking a new habit to a specific, existing cue makes it far more likely to happen."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--05",
+      "topic": "psychology",
+      "tags": [
+        "environment",
+        "cues",
+        "temptation"
+      ],
+      "title": "Design your surroundings so the good choice is the obvious one",
+      "body": "Clear stresses that environment often shapes behaviour more than willpower. We tend to do what is in front of us: fruit on the counter gets eaten, a guitar on a stand gets played.\n\nSo make cues for good habits visible and easy to reach, and hide or add friction to the cues for bad ones. Put your phone in another room while working, keep snacks out of sight, leave your running shoes by the door. Rather than resisting temptation all day, you simply meet it less often.",
+      "apply_it": "Move one object today: bring a good-habit cue into view, or put a bad-habit cue out of sight.",
+      "quiz": {
+        "question": "What does Clear suggest is often more effective than relying on willpower?",
+        "options": [
+          "Setting stricter rules for yourself",
+          "Changing your environment so cues for good habits are visible and bad ones are hidden",
+          "Waiting for motivation",
+          "Punishing yourself for slips"
+        ],
+        "answer": 1,
+        "explanation": "Shaping what you see and reach for reduces how often you need to resist."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--06",
+      "topic": "productivity",
+      "tags": [
+        "two-minute-rule",
+        "starting",
+        "procrastination"
+      ],
+      "title": "Shrink a new habit until it takes two minutes",
+      "body": "Clear's two-minute rule says a new habit should begin as something you can do in about two minutes. 'Read before bed' becomes 'read one page'; 'do yoga' becomes 'unroll the mat'.\n\nThe aim isn't to stop there forever. It is to master showing up, because a habit has to exist before it can be improved. Once starting is automatic, you can extend it. Most resistance lives at the very beginning, so making the start almost effortless removes the biggest barrier.",
+      "apply_it": "Choose a habit you keep postponing and write the two-minute version of it. Do just that today.",
+      "quiz": {
+        "question": "What is the purpose of the two-minute rule?",
+        "options": [
+          "To limit habits to two minutes permanently",
+          "To prove that small efforts don't matter",
+          "To make starting so easy that showing up becomes automatic",
+          "To replace long-term goals"
+        ],
+        "answer": 2,
+        "explanation": "You first master showing up; scaling up comes after the habit exists."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--07",
+      "topic": "personal-development",
+      "tags": [
+        "consistency",
+        "setbacks",
+        "recovery"
+      ],
+      "title": "Missing once is normal; don't let it become twice",
+      "body": "Everyone slips. Clear's advice is not to aim for a perfect streak but to recover quickly: missing a day is an accident, while missing repeatedly is the start of a new, unwanted pattern.\n\nThis takes the pressure off perfection. If a busy week wrecks your workout, a lighter session the next day still counts, because it keeps the identity and rhythm alive. The danger isn't one bad day; it's the all-or-nothing thinking that turns one bad day into a lost month.",
+      "apply_it": "If you missed a habit recently, do a small version of it today, even if it's only a few minutes.",
+      "quiz": {
+        "question": "What does Clear suggest after you miss a habit once?",
+        "options": [
+          "Get back to it quickly so one miss doesn't turn into a pattern",
+          "Start over from scratch next month",
+          "Double the effort to make up for it",
+          "Accept that the habit has failed"
+        ],
+        "answer": 0,
+        "explanation": "One miss is an accident; the goal is to stop it becoming two."
+      }
+    }
+  ]
+}

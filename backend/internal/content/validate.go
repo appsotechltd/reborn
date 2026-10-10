@@ -42,6 +42,13 @@ func (p Problem) String() string {
 	return fmt.Sprintf("%s: %s: %s", level, loc, p.Message)
 }
 
+// Each source should have MinCardsPerSource to MaxCardsPerSource cards.
+// Fewer is a warning (a short source may not have 30 ideas); more is an error.
+const (
+	MinCardsPerSource = 30
+	MaxCardsPerSource = 50
+)
+
 // WordCount counts whitespace-separated words.
 func WordCount(s string) int { return len(strings.Fields(s)) }
 
@@ -163,8 +170,10 @@ func ValidateFile(name string, f File) []Problem {
 	}
 	if len(f.Cards) == 0 {
 		ps = append(ps, Problem{File: name, Field: "cards", Message: "needs at least one card"})
-	} else if len(f.Cards) < 3 || len(f.Cards) > 10 {
-		ps = append(ps, Problem{File: name, Field: "cards", Message: fmt.Sprintf("has %d cards; 3-10 is recommended", len(f.Cards)), Warning: true})
+	} else if len(f.Cards) > MaxCardsPerSource {
+		ps = append(ps, Problem{File: name, Field: "cards", Message: fmt.Sprintf("has %d cards; the most a source may have is %d", len(f.Cards), MaxCardsPerSource)})
+	} else if len(f.Cards) < MinCardsPerSource {
+		ps = append(ps, Problem{File: name, Field: "cards", Message: fmt.Sprintf("has %d cards; aim for at least %d", len(f.Cards), MinCardsPerSource), Warning: true})
 	}
 	seen := map[string]bool{}
 	for _, c := range f.Cards {
