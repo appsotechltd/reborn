@@ -102,6 +102,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /v1/circles", s.circles)
 	mux.HandleFunc("POST /v1/circles", s.authed(s.createCircle))
 	mux.HandleFunc("GET /v1/circles/{id}", s.circle)
+	mux.HandleFunc("GET /v1/circles/{id}/members", s.circleMembers)
 	mux.HandleFunc("POST /v1/circles/{id}/join", s.authed(s.joinCircle))
 	mux.HandleFunc("POST /v1/circles/{id}/leave", s.authed(s.leaveCircle))
 	mux.HandleFunc("GET /v1/circles/{id}/messages", s.authed(s.circleMessages))

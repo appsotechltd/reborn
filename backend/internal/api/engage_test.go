@@ -286,6 +286,9 @@ func TestDiscoverStashesAndCircles(t *testing.T) {
 	if j := h.do("POST", "/v1/circles/"+id+"/join", bob, nil, 200); j["members"].(float64) != 2 || j["role"] != "member" {
 		t.Fatalf("joined = %v", j)
 	}
+	if ms := list(h.do("GET", "/v1/circles/"+id+"/members", "", nil, 200), "members"); len(ms) != 2 || ms[0].(map[string]any)["role"] != "owner" || ms[1].(map[string]any)["display_name"] != "Bob" {
+		t.Fatalf("members = %v", ms)
+	}
 	m := h.do("POST", "/v1/circles/"+id+"/messages", bob, map[string]any{"body": "Book II hit hard", "post_id": "meditations-marcus-aurelius--01"}, 201)
 	h.do("POST", "/v1/circles/"+id+"/messages", bob, map[string]any{"body": "x", "post_id": "nhs-sleep-tips--01"}, 404) // another book's idea
 	h.do("POST", "/v1/circles/"+id+"/messages", ada, map[string]any{"body": "Same"}, 201)

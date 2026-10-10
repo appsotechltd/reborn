@@ -223,3 +223,30 @@ func (s *Store) DeleteCircleMessage(ctx context.Context, userID, circleID, msgID
 	}
 	return nil
 }
+
+// CircleMember is someone in a circle.
+type CircleMember struct {
+	Profile
+	Role     string    `json:"role"`
+	JoinedAt time.Time `json:"joined_at"`
+}
+
+// CircleMembers lists a circle's members, owner first, leaving out people the
+// viewer blocked or muted and people who blocked them.
+func (s *Store) CircleMembers(ctx context.Context, viewerID, id string) ([]CircleMember, error) {
+	if _, err := s.GetCircle(ctx, viewerID, id); err != nil {
+		return nil, err
+	}
+	rows, err := s.DB.Query(ctx, `SELECT u.id::text, u.handle, u.display_name, m.role, m.joined_at
+		FROM circle_members m JOIN users u ON u.id = m.user_id
+		WHERE m.circle_id::text = $1 AND NOT `+hiddenFor("m.user_id", "NULLIF($2, '')")+`
+		ORDER BY m.role = 'owner' DESC, m.joined_at`, id, viewerID)
+	if err != nil {
+		return nil, err
+	}
+	return pgx.CollectRows(rows, func(row pgx.CollectableRow) (CircleMember, error) {
+		var m CircleMember
+		err := row.Scan(&m.ID, &m.Handle, &m.DisplayName, &m.Role, &m.JoinedAt)
+		return m, err
+	})
+}
