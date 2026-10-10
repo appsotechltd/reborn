@@ -11,7 +11,7 @@ class Fetched<T> {
   final bool offline;
 }
 
-/// The twelve topics from content/SCHEMA.md, used when /v1/topics is
+/// The seventeen topics from content/SCHEMA.md, used when /v1/topics is
 /// unreachable and nothing is cached yet.
 const kDefaultTopics = <Topic>[
   Topic(slug: 'business', name: 'Business'),
@@ -26,6 +26,11 @@ const kDefaultTopics = <Topic>[
   Topic(slug: 'faith-wisdom', name: 'Faith & Wisdom'),
   Topic(slug: 'leadership', name: 'Leadership'),
   Topic(slug: 'parenting', name: 'Parenting & Family'),
+  Topic(slug: 'communication', name: 'Communication & Influence'),
+  Topic(slug: 'creativity', name: 'Creativity'),
+  Topic(slug: 'learning', name: 'Learning & Thinking'),
+  Topic(slug: 'lives-history', name: 'Lives & History'),
+  Topic(slug: 'entrepreneurship', name: 'Entrepreneurship'),
 ];
 
 /// Wraps [ApiClient] with the offline cache: reads go to the network first;
