@@ -37,12 +37,17 @@ QUIZ_FIELDS = {"question", "options", "answer", "explanation"}
 class Report:
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    # Advisory only: printed, but never fail --strict (e.g. a short source below the 30-card target)
+    notes: list[str] = field(default_factory=list)
 
     def error(self, where: str, msg: str) -> None:
         self.errors.append(f"{where}: {msg}")
 
     def warn(self, where: str, msg: str) -> None:
         self.warnings.append(f"{where}: {msg}")
+
+    def note(self, where: str, msg: str) -> None:
+        self.notes.append(f"{where}: {msg}")
 
 
 def _str(r: Report, where: str, obj: dict, key: str, max_len: int, required: bool = True) -> str | None:
@@ -198,8 +203,11 @@ def validate_file(r: Report, path: Path, seen_ids: dict[str, str], registry: dic
     if not isinstance(cards, list) or not cards:
         r.error(where, "cards must be a non-empty list")
         return doc
-    if not 3 <= len(cards) <= 10:
-        r.warn(where, f"{len(cards)} cards; aim for 3-10 per source")
+    # Same rule as the Go validator: more than 50 is rejected, fewer than 30 is flagged but allowed
+    if len(cards) > 50:
+        r.error(where, f"{len(cards)} cards; a source can have at most 50")
+    elif len(cards) < 30:
+        r.note(where, f"{len(cards)} cards; aim for 30-50 per source")
     for i, card in enumerate(cards):
         cw = f"{where} card {card.get('id', i) if isinstance(card, dict) else i}"
         validate_card(r, cw, card, src)
