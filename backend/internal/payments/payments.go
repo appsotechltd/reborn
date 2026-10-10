@@ -42,3 +42,39 @@ func TierByProduct(id string) (Tier, bool) {
 
 // ErrInvalid means a payment proof failed verification.
 var ErrInvalid = errors.New("payment could not be verified")
+
+// Plan is a premium subscription plan.
+type Plan struct {
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	AmountCents int    `json:"amount_cents"`
+	Currency    string `json:"currency"`
+	Interval    string `json:"interval"`
+	ProductID   string `json:"product_id"` // App Store and Play subscription product id
+}
+
+// Plans are the premium plans.
+var Plans = []Plan{
+	{ID: "monthly", Name: "Premium monthly", AmountCents: 499, Currency: "usd", Interval: "month", ProductID: "reborn.premium.monthly"},
+	{ID: "yearly", Name: "Premium yearly", AmountCents: 3999, Currency: "usd", Interval: "year", ProductID: "reborn.premium.yearly"},
+}
+
+// PlanByID finds a plan by id.
+func PlanByID(id string) (Plan, bool) {
+	for _, p := range Plans {
+		if p.ID == id {
+			return p, true
+		}
+	}
+	return Plan{}, false
+}
+
+// PlanByProduct finds a plan by store product id.
+func PlanByProduct(id string) (Plan, bool) {
+	for _, p := range Plans {
+		if p.ProductID == id {
+			return p, true
+		}
+	}
+	return Plan{}, false
+}

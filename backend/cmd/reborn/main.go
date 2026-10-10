@@ -31,6 +31,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/embed"
 	"github.com/appsotechltd/reborn/backend/internal/mail"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
+	"github.com/appsotechltd/reborn/backend/internal/push"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -175,6 +176,7 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	} else {
 		slog.Warn("ANTHROPIC_API_KEY is not set; the AI guide is disabled")
 	}
+	go srv.RunDailyPushes(ctx, 5*time.Minute)
 	hs := &http.Server{Addr: cfg.Addr, Handler: srv.Handler(), ReadHeaderTimeout: 10 * time.Second}
 	errc := make(chan error, 1)
 	go func() {
@@ -191,11 +193,19 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	}
 }
 
-// setupPayments turns on each gift provider whose keys are configured.
+// setupPayments turns on each payment provider, and push, whose keys are configured.
 func setupPayments(cfg config.Config, srv *api.Server) error {
 	if cfg.StripeSecretKey != "" && cfg.StripeWebhookSecret != "" {
 		srv.Stripe = &payments.Stripe{SecretKey: cfg.StripeSecretKey, WebhookSecret: cfg.StripeWebhookSecret}
+		srv.StripePrices = map[string]string{}
+		if cfg.StripePriceMonthly != "" {
+			srv.StripePrices["monthly"] = cfg.StripePriceMonthly
+		}
+		if cfg.StripePriceYearly != "" {
+			srv.StripePrices["yearly"] = cfg.StripePriceYearly
+		}
 	}
+	srv.GoogleRTDNToken = cfg.GoogleRTDNToken
 	if cfg.AppleBundleID != "" && cfg.AppleRootCAFile != "" {
 		raw, err := os.ReadFile(cfg.AppleRootCAFile)
 		if err != nil {
@@ -218,6 +228,15 @@ func setupPayments(cfg config.Config, srv *api.Server) error {
 		}
 		srv.Google = &payments.Google{PackageName: cfg.GooglePackageName, ServiceAccount: key}
 	}
-	slog.Info("gift providers", "stripe", srv.Stripe != nil, "apple", srv.Apple != nil, "google", srv.Google != nil)
+	if cfg.FirebaseServiceFile != "" {
+		key, err := os.ReadFile(cfg.FirebaseServiceFile)
+		if err != nil {
+			return fmt.Errorf("FIREBASE_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+		if srv.Push, err = push.NewFCM(key); err != nil {
+			return fmt.Errorf("FIREBASE_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+	}
+	slog.Info("payment and push providers", "stripe", srv.Stripe != nil, "apple", srv.Apple != nil, "google", srv.Google != nil, "push", srv.Push != nil)
 	return nil
 }

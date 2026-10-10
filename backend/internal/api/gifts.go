@@ -95,11 +95,22 @@ func (s *Server) stripeWebhook(w http.ResponseWriter, r *http.Request) {
 	obj := ev.Data.Object
 	switch ev.Type {
 	case "checkout.session.completed", "checkout.session.async_payment_succeeded":
+		if obj.Mode == "subscription" && obj.Metadata["user_id"] != "" && obj.Customer != "" {
+			if err := s.Store.SetStripeCustomer(r.Context(), obj.Metadata["user_id"], obj.Customer); err != nil {
+				s.fail(w, r, err, "user")
+				return
+			}
+		}
 		if obj.PaymentStatus == "paid" && obj.Metadata["gift_id"] != "" {
 			if err := s.Store.MarkGiftPaid(r.Context(), obj.Metadata["gift_id"], "stripe", obj.ID, s.Now()); err != nil {
 				s.fail(w, r, err, "gift")
 				return
 			}
+		}
+	case "customer.subscription.created", "customer.subscription.updated", "customer.subscription.deleted":
+		if err := s.stripeSubscriptionEvent(r, obj); err != nil {
+			s.fail(w, r, err, "subscription")
+			return
 		}
 	}
 	w.WriteHeader(http.StatusNoContent)

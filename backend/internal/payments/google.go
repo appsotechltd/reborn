@@ -7,10 +7,10 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"strings"
+	"sync"
 	"time"
 
-	"github.com/golang-jwt/jwt/v5"
+	"github.com/appsotechltd/reborn/backend/internal/googleauth"
 )
 
 // Google verifies Play in-app purchases with the Android Publisher API,
@@ -21,6 +21,10 @@ type Google struct {
 	BaseURL        string // defaults to https://androidpublisher.googleapis.com
 	HTTP           *http.Client
 	Now            func() time.Time
+
+	once  sync.Once
+	sa    *googleauth.ServiceAccount
+	saErr error
 }
 
 // GooglePurchase is the part of a product purchase the API uses.
@@ -76,50 +80,77 @@ func (g *Google) client() *http.Client {
 }
 
 func (g *Google) accessToken(ctx context.Context) (string, error) {
-	var sa struct {
-		ClientEmail string `json:"client_email"`
-		PrivateKey  string `json:"private_key"`
-		TokenURI    string `json:"token_uri"`
+	g.once.Do(func() {
+		g.sa, g.saErr = googleauth.Parse(g.ServiceAccount, "https://www.googleapis.com/auth/androidpublisher")
+		if g.sa != nil {
+			g.sa.HTTP, g.sa.Now = g.HTTP, g.Now
+		}
+	})
+	if g.saErr != nil {
+		return "", g.saErr
 	}
-	if err := json.Unmarshal(g.ServiceAccount, &sa); err != nil {
-		return "", fmt.Errorf("google service account: %w", err)
-	}
-	key, err := jwt.ParseRSAPrivateKeyFromPEM([]byte(sa.PrivateKey))
+	return g.sa.Token(ctx)
+}
+
+// GoogleSubscription is the part of a subscription purchase the API uses.
+type GoogleSubscription struct {
+	ProductID string
+	State     string // SUBSCRIPTION_STATE_ACTIVE, _CANCELED, _IN_GRACE_PERIOD, _ON_HOLD, _PAUSED, _EXPIRED
+	Expires   time.Time
+	AccountID string // obfuscatedExternalAccountId, which the app sets to the user's id
+}
+
+// VerifySubscription reads a subscription purchase token's current state.
+func (g *Google) VerifySubscription(ctx context.Context, token string) (GoogleSubscription, error) {
+	var sub GoogleSubscription
+	access, err := g.accessToken(ctx)
 	if err != nil {
-		return "", fmt.Errorf("google service account key: %w", err)
+		return sub, err
 	}
-	now := time.Now
-	if g.Now != nil {
-		now = g.Now
+	base := g.BaseURL
+	if base == "" {
+		base = "https://androidpublisher.googleapis.com"
 	}
-	t := now()
-	assertion, err := jwt.NewWithClaims(jwt.SigningMethodRS256, jwt.MapClaims{
-		"iss": sa.ClientEmail, "scope": "https://www.googleapis.com/auth/androidpublisher",
-		"aud": sa.TokenURI, "iat": t.Unix(), "exp": t.Add(time.Hour).Unix(),
-	}).SignedString(key)
+	u := fmt.Sprintf("%s/androidpublisher/v3/applications/%s/purchases/subscriptionsv2/tokens/%s",
+		base, url.PathEscape(g.PackageName), url.PathEscape(token))
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, u, nil)
 	if err != nil {
-		return "", err
+		return sub, err
 	}
-	form := url.Values{"grant_type": {"urn:ietf:params:oauth:grant-type:jwt-bearer"}, "assertion": {assertion}}
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, sa.TokenURI, strings.NewReader(form.Encode()))
-	if err != nil {
-		return "", err
-	}
-	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	req.Header.Set("Authorization", "Bearer "+access)
 	resp, err := g.client().Do(req)
 	if err != nil {
-		return "", err
+		return sub, err
 	}
 	defer resp.Body.Close()
 	body, _ := io.ReadAll(io.LimitReader(resp.Body, 1<<20))
+	if resp.StatusCode == http.StatusNotFound || resp.StatusCode == http.StatusBadRequest {
+		return sub, ErrInvalid
+	}
 	if resp.StatusCode != http.StatusOK {
-		return "", fmt.Errorf("google token: %s: %s", resp.Status, body)
+		return sub, fmt.Errorf("google play: %s: %s", resp.Status, body)
 	}
 	var out struct {
-		AccessToken string `json:"access_token"`
+		SubscriptionState string `json:"subscriptionState"`
+		LineItems         []struct {
+			ProductID  string    `json:"productId"`
+			ExpiryTime time.Time `json:"expiryTime"`
+		} `json:"lineItems"`
+		ExternalAccountIdentifiers struct {
+			ObfuscatedExternalAccountID string `json:"obfuscatedExternalAccountId"`
+		} `json:"externalAccountIdentifiers"`
 	}
-	if err := json.Unmarshal(body, &out); err != nil || out.AccessToken == "" {
-		return "", fmt.Errorf("google token: no access token")
+	if err := json.Unmarshal(body, &out); err != nil {
+		return sub, err
 	}
-	return out.AccessToken, nil
+	if len(out.LineItems) == 0 {
+		return sub, ErrInvalid
+	}
+	sub.State, sub.AccountID = out.SubscriptionState, out.ExternalAccountIdentifiers.ObfuscatedExternalAccountID
+	for _, li := range out.LineItems {
+		if li.ExpiryTime.After(sub.Expires) {
+			sub.Expires, sub.ProductID = li.ExpiryTime, li.ProductID
+		}
+	}
+	return sub, nil
 }

@@ -16,6 +16,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/embed"
 	"github.com/appsotechltd/reborn/backend/internal/mail"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
+	"github.com/appsotechltd/reborn/backend/internal/push"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -40,6 +41,10 @@ type Server struct {
 	Stripe     *payments.Stripe
 	Apple      *payments.Apple
 	Google     *payments.Google
+
+	StripePrices    map[string]string // premium plan id -> Stripe price id
+	GoogleRTDNToken string            // shared secret in the Play notifications push URL
+	Push            push.Sender       // nil disables push notifications
 }
 
 // Handler returns the routed, middleware-wrapped handler.
@@ -70,6 +75,39 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("DELETE /v1/me", s.authed(s.deleteMe))
 	mux.HandleFunc("GET /v1/me/favorites", s.authed(s.myFavorites))
 	mux.HandleFunc("GET /v1/me/following", s.authed(s.myFollowing))
+	mux.HandleFunc("GET /v1/me/streak", s.authed(s.streak))
+	mux.HandleFunc("GET /v1/me/referrals", s.authed(s.referrals))
+	mux.HandleFunc("GET /v1/me/blocks", s.authed(s.myBlocks))
+	mux.HandleFunc("PUT /v1/blocks/{userId}", s.authed(s.setBlock))
+	mux.HandleFunc("DELETE /v1/blocks/{userId}", s.authed(s.clearBlock))
+
+	mux.HandleFunc("GET /v1/notifications", s.authed(s.notifications))
+	mux.HandleFunc("POST /v1/notifications/read", s.authed(s.readNotifications))
+	mux.HandleFunc("POST /v1/devices", s.authed(s.registerDevice))
+	mux.HandleFunc("DELETE /v1/devices/{token}", s.authed(s.removeDevice))
+
+	mux.HandleFunc("GET /v1/trending", s.trending)
+	mux.HandleFunc("GET /v1/discover", s.discover)
+	mux.HandleFunc("GET /v1/public/stashes/{id}", s.publicStash)
+	mux.HandleFunc("GET /v1/users/{handle}/stashes", s.profileStashes)
+
+	mux.HandleFunc("GET /v1/circles", s.circles)
+	mux.HandleFunc("POST /v1/circles", s.authed(s.createCircle))
+	mux.HandleFunc("GET /v1/circles/{id}", s.circle)
+	mux.HandleFunc("POST /v1/circles/{id}/join", s.authed(s.joinCircle))
+	mux.HandleFunc("POST /v1/circles/{id}/leave", s.authed(s.leaveCircle))
+	mux.HandleFunc("GET /v1/circles/{id}/messages", s.authed(s.circleMessages))
+	mux.HandleFunc("POST /v1/circles/{id}/messages", s.authed(s.addCircleMessage))
+	mux.HandleFunc("DELETE /v1/circles/{id}/messages/{msgId}", s.authed(s.deleteCircleMessage))
+
+	mux.HandleFunc("GET /v1/premium", s.premium)
+	mux.HandleFunc("POST /v1/premium/checkout", s.authed(s.premiumCheckout))
+	mux.HandleFunc("POST /v1/premium/portal", s.authed(s.premiumPortal))
+	mux.HandleFunc("POST /v1/premium/apple", s.authed(s.premiumApple))
+	mux.HandleFunc("POST /v1/premium/google", s.authed(s.premiumGoogle))
+	mux.HandleFunc("POST /v1/webhooks/apple", s.appleWebhook)
+	mux.HandleFunc("POST /v1/webhooks/google", s.googleWebhook)
+	mux.HandleFunc("GET /v1/admin/stats", s.moderator(s.adminStats))
 
 	mux.HandleFunc("GET /v1/timeline", s.timeline)
 	mux.HandleFunc("POST /v1/seen", s.authed(s.markSeen))

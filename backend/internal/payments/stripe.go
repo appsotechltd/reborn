@@ -51,50 +51,126 @@ func (s *Stripe) CreateCheckout(ctx context.Context, in CheckoutRequest) (id, ch
 	if in.Email != "" {
 		form.Set("customer_email", in.Email)
 	}
+	var out struct {
+		ID  string `json:"id"`
+		URL string `json:"url"`
+	}
+	if err := s.post(ctx, "/v1/checkout/sessions", form, "gift-"+in.GiftID, &out); err != nil {
+		return "", "", err
+	}
+	return out.ID, out.URL, nil
+}
+
+// Event is the part of a Stripe webhook event the API uses. The object is a
+// Checkout Session or a Subscription, depending on the type.
+type Event struct {
+	Type string `json:"type"`
+	Data struct {
+		Object EventObject `json:"object"`
+	} `json:"data"`
+}
+
+// EventObject holds the fields of a Checkout Session or Subscription the API reads.
+type EventObject struct {
+	ID                string            `json:"id"`
+	Mode              string            `json:"mode"`
+	PaymentStatus     string            `json:"payment_status"`
+	Customer          string            `json:"customer"`
+	ClientReferenceID string            `json:"client_reference_id"`
+	Metadata          map[string]string `json:"metadata"`
+	Status            string            `json:"status"`
+	CurrentPeriodEnd  int64             `json:"current_period_end"`
+	EndedAt           int64             `json:"ended_at"`
+	Items             struct {
+		Data []struct {
+			CurrentPeriodEnd int64 `json:"current_period_end"`
+		} `json:"data"`
+	} `json:"items"`
+}
+
+// PeriodEnd is when a subscription's paid period ends. Newer API versions put
+// it on the subscription items.
+func (o EventObject) PeriodEnd() time.Time {
+	end := o.CurrentPeriodEnd
+	for _, it := range o.Items.Data {
+		end = max(end, it.CurrentPeriodEnd)
+	}
+	return time.Unix(end, 0)
+}
+
+// SubscriptionCheckout describes a premium subscription purchase.
+type SubscriptionCheckout struct {
+	UserID     string
+	Email      string
+	Customer   string // reuse an existing Stripe customer when known
+	PriceID    string
+	Plan       string
+	SuccessURL string
+	CancelURL  string
+}
+
+// CreateSubscriptionCheckout starts a Checkout Session for a subscription.
+func (s *Stripe) CreateSubscriptionCheckout(ctx context.Context, in SubscriptionCheckout) (string, error) {
+	form := url.Values{
+		"mode":                                 {"subscription"},
+		"success_url":                          {in.SuccessURL},
+		"cancel_url":                           {in.CancelURL},
+		"client_reference_id":                  {in.UserID},
+		"metadata[user_id]":                    {in.UserID},
+		"subscription_data[metadata][user_id]": {in.UserID},
+		"subscription_data[metadata][plan]":    {in.Plan},
+		"line_items[0][price]":                 {in.PriceID},
+		"line_items[0][quantity]":              {"1"},
+	}
+	if in.Customer != "" {
+		form.Set("customer", in.Customer)
+	} else if in.Email != "" {
+		form.Set("customer_email", in.Email)
+	}
+	var out struct {
+		URL string `json:"url"`
+	}
+	err := s.post(ctx, "/v1/checkout/sessions", form, "", &out)
+	return out.URL, err
+}
+
+// CreatePortal opens the billing portal, where a customer cancels or changes a subscription.
+func (s *Stripe) CreatePortal(ctx context.Context, customer, returnURL string) (string, error) {
+	var out struct {
+		URL string `json:"url"`
+	}
+	err := s.post(ctx, "/v1/billing_portal/sessions", url.Values{"customer": {customer}, "return_url": {returnURL}}, "", &out)
+	return out.URL, err
+}
+
+func (s *Stripe) post(ctx context.Context, path string, form url.Values, idempotencyKey string, out any) error {
 	base := s.BaseURL
 	if base == "" {
 		base = "https://api.stripe.com"
 	}
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, base+"/v1/checkout/sessions", strings.NewReader(form.Encode()))
+	req, err := http.NewRequestWithContext(ctx, http.MethodPost, base+path, strings.NewReader(form.Encode()))
 	if err != nil {
-		return "", "", err
+		return err
 	}
 	req.SetBasicAuth(s.SecretKey, "")
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Idempotency-Key", "gift-"+in.GiftID)
+	if idempotencyKey != "" {
+		req.Header.Set("Idempotency-Key", idempotencyKey)
+	}
 	client := s.HTTP
 	if client == nil {
 		client = &http.Client{Timeout: 20 * time.Second}
 	}
 	resp, err := client.Do(req)
 	if err != nil {
-		return "", "", err
+		return err
 	}
 	defer resp.Body.Close()
 	body, _ := io.ReadAll(io.LimitReader(resp.Body, 1<<20))
 	if resp.StatusCode != http.StatusOK {
-		return "", "", fmt.Errorf("stripe: %s: %s", resp.Status, body)
+		return fmt.Errorf("stripe %s: %s: %s", path, resp.Status, body)
 	}
-	var out struct {
-		ID  string `json:"id"`
-		URL string `json:"url"`
-	}
-	if err := json.Unmarshal(body, &out); err != nil {
-		return "", "", err
-	}
-	return out.ID, out.URL, nil
-}
-
-// Event is the part of a Stripe webhook event the API uses.
-type Event struct {
-	Type string `json:"type"`
-	Data struct {
-		Object struct {
-			ID            string            `json:"id"`
-			PaymentStatus string            `json:"payment_status"`
-			Metadata      map[string]string `json:"metadata"`
-		} `json:"object"`
-	} `json:"data"`
+	return json.Unmarshal(body, out)
 }
 
 // webhookTolerance is how old a signed webhook may be.

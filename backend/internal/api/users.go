@@ -8,6 +8,7 @@ import (
 	"log/slog"
 	"net/http"
 	"net/mail"
+	"slices"
 	"strings"
 	"time"
 	"unicode/utf8"
@@ -18,9 +19,11 @@ import (
 )
 
 type credentials struct {
-	Email       string `json:"email"`
-	Password    string `json:"password"`
-	DisplayName string `json:"display_name"`
+	Email        string `json:"email"`
+	Password     string `json:"password"`
+	DisplayName  string `json:"display_name"`
+	ReferralCode string `json:"referral_code"`
+	Timezone     string `json:"timezone"`
 }
 
 func (s *Server) register(w http.ResponseWriter, r *http.Request) {
@@ -49,7 +52,16 @@ func (s *Server) register(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, r, err, "user")
 		return
 	}
-	u, err := s.Store.CreateUser(r.Context(), in.Email, hash, name)
+	referrer := ""
+	if in.ReferralCode != "" {
+		if referrer, err = s.Store.UserIDByReferralCode(r.Context(), in.ReferralCode); err == store.ErrNotFound {
+			referrer = "" // a stale code shouldn't stop anyone signing up
+		} else if err != nil {
+			s.fail(w, r, err, "user")
+			return
+		}
+	}
+	u, err := s.Store.CreateUser(r.Context(), in.Email, hash, name, referrer)
 	if err == store.ErrConflict {
 		writeError(w, http.StatusConflict, "email_taken", "an account with that email already exists")
 		return
@@ -57,6 +69,14 @@ func (s *Server) register(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		s.fail(w, r, err, "user")
 		return
+	}
+	if in.Timezone != "" {
+		if _, terr := time.LoadLocation(in.Timezone); terr == nil {
+			tz := in.Timezone
+			if u2, uerr := s.Store.UpdateUser(r.Context(), u.ID, store.UserUpdate{Timezone: &tz}); uerr == nil {
+				u = u2
+			}
+		}
 	}
 	s.issue(w, r, http.StatusCreated, u)
 }
@@ -102,10 +122,13 @@ func (s *Server) me(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) updateMe(w http.ResponseWriter, r *http.Request) {
 	var in struct {
-		DisplayName *string   `json:"display_name"`
-		Handle      *string   `json:"handle"`
-		Bio         *string   `json:"bio"`
-		Topics      *[]string `json:"topics"`
+		DisplayName *string         `json:"display_name"`
+		Handle      *string         `json:"handle"`
+		Bio         *string         `json:"bio"`
+		Topics      *[]string       `json:"topics"`
+		Timezone    *string         `json:"timezone"`
+		DailyGoal   *int            `json:"daily_goal"`
+		Notify      map[string]bool `json:"notify"`
 	}
 	if !decode(w, r, &in) {
 		return
@@ -145,6 +168,27 @@ func (s *Server) updateMe(w http.ResponseWriter, r *http.Request) {
 			up.Topics = append(up.Topics, t)
 		}
 	}
+	if in.Timezone != nil {
+		if _, err := time.LoadLocation(*in.Timezone); err != nil || *in.Timezone == "" || *in.Timezone == "Local" {
+			writeError(w, http.StatusBadRequest, "bad_request", "timezone must be an IANA name like Europe/London")
+			return
+		}
+		up.Timezone = in.Timezone
+	}
+	if in.DailyGoal != nil {
+		if *in.DailyGoal < 1 || *in.DailyGoal > 50 {
+			writeError(w, http.StatusBadRequest, "bad_request", "daily_goal must be 1-50")
+			return
+		}
+		up.DailyGoal = in.DailyGoal
+	}
+	for k := range in.Notify {
+		if !slices.Contains(store.NotifyKinds, k) {
+			writeError(w, http.StatusBadRequest, "bad_request", "unknown notification setting "+k)
+			return
+		}
+	}
+	up.Notify = in.Notify
 	u, err := s.Store.UpdateUser(r.Context(), userID(r), up)
 	if err == store.ErrHandleTaken {
 		writeError(w, http.StatusConflict, "handle_taken", "that handle is taken")

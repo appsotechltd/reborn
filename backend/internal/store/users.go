@@ -16,21 +16,47 @@ import (
 
 // User is the API shape of an account.
 type User struct {
-	ID          string   `json:"id"`
-	Email       string   `json:"email"`
-	Handle      string   `json:"handle"`
-	DisplayName string   `json:"display_name"`
-	Bio         string   `json:"bio"`
-	Role        string   `json:"role"`
-	Topics      []string `json:"topics"`
+	ID           string          `json:"id"`
+	Email        string          `json:"email"`
+	Handle       string          `json:"handle"`
+	DisplayName  string          `json:"display_name"`
+	Bio          string          `json:"bio"`
+	Role         string          `json:"role"`
+	Topics       []string        `json:"topics"`
+	Timezone     string          `json:"timezone"`
+	DailyGoal    int             `json:"daily_goal"`
+	Notify       map[string]bool `json:"notify"`
+	ReferralCode string          `json:"referral_code"`
+	Premium      bool            `json:"premium"`
+	PremiumUntil *time.Time      `json:"premium_until"`
 }
 
-const userCols = `id::text, email, handle, display_name, bio, role, topics`
+// NotifyKinds are the notification settings a user can switch off.
+var NotifyKinds = []string{"daily", "replies", "follows", "circles"}
+
+// premiumUntil is the latest end of a subscription or free grant.
+const premiumUntil = `(SELECT max(e) FROM (
+		SELECT expires_at AS e FROM subscriptions WHERE user_id = users.id AND status <> 'revoked'
+		UNION ALL SELECT expires_at FROM premium_grants WHERE user_id = users.id) AS p)`
+
+const userCols = `id::text, email, handle, display_name, bio, role, topics, timezone, daily_goal, notify, referral_code, ` +
+	premiumUntil + `, coalesce(` + premiumUntil + ` > now(), false)`
 
 func scanUser(row pgx.Row, extra ...any) (User, error) {
 	var u User
-	err := row.Scan(append([]any{&u.ID, &u.Email, &u.Handle, &u.DisplayName, &u.Bio, &u.Role, &u.Topics}, extra...)...)
+	err := row.Scan(append([]any{&u.ID, &u.Email, &u.Handle, &u.DisplayName, &u.Bio, &u.Role, &u.Topics,
+		&u.Timezone, &u.DailyGoal, &u.Notify, &u.ReferralCode, &u.PremiumUntil, &u.Premium}, extra...)...)
 	return u, err
+}
+
+func newReferralCode() string {
+	const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+	b := make([]byte, 8)
+	for i := range b {
+		n, _ := rand.Int(rand.Reader, big.NewInt(int64(len(alphabet))))
+		b[i] = alphabet[n.Int64()]
+	}
+	return string(b)
 }
 
 // HandleRE is what a handle may look like.
@@ -71,17 +97,22 @@ func isUnique(err error, constraint string) bool {
 }
 
 // CreateUser inserts a user with a handle derived from their name; ErrConflict
-// means the email is taken.
-func (s *Store) CreateUser(ctx context.Context, email, hash, name string) (User, error) {
+// means the email is taken. referrerID may be "".
+func (s *Store) CreateUser(ctx context.Context, email, hash, name, referrerID string) (User, error) {
+	var ref any
+	if referrerID != "" {
+		ref = referrerID
+	}
 	base := baseHandle(name)
 	for attempt := range 8 {
 		handle := base
 		if attempt > 0 {
 			handle = base + randomSuffix()
 		}
-		u, err := scanUser(s.DB.QueryRow(ctx, `INSERT INTO users (email, password_hash, display_name, handle) VALUES ($1, $2, $3, $4)
-			RETURNING `+userCols, strings.ToLower(strings.TrimSpace(email)), hash, name, handle))
-		if isUnique(err, "users_handle_idx") {
+		u, err := scanUser(s.DB.QueryRow(ctx, `INSERT INTO users (email, password_hash, display_name, handle, referral_code, referred_by)
+			VALUES ($1, $2, $3, $4, $5, $6) RETURNING `+userCols,
+			strings.ToLower(strings.TrimSpace(email)), hash, name, handle, newReferralCode(), ref))
+		if isUnique(err, "users_handle_idx") || isUnique(err, "users_referral_code_idx") {
 			continue
 		}
 		if isUnique(err, "") {
@@ -90,6 +121,13 @@ func (s *Store) CreateUser(ctx context.Context, email, hash, name string) (User,
 		return u, err
 	}
 	return User{}, ErrConflict
+}
+
+// UserIDByReferralCode finds the user a referral code belongs to.
+func (s *Store) UserIDByReferralCode(ctx context.Context, code string) (string, error) {
+	var id string
+	err := s.DB.QueryRow(ctx, `SELECT id::text FROM users WHERE referral_code = upper($1)`, strings.TrimSpace(code)).Scan(&id)
+	return id, notFound(err)
 }
 
 // UserByEmail returns a user and their password hash.
@@ -112,13 +150,21 @@ type UserUpdate struct {
 	Handle      *string
 	Bio         *string
 	Topics      []string
+	Timezone    *string
+	DailyGoal   *int
+	Notify      map[string]bool // merged into the current settings
 }
 
 // UpdateUser changes profile fields. ErrHandleTaken means the handle is in use.
 func (s *Store) UpdateUser(ctx context.Context, id string, in UserUpdate) (User, error) {
+	notify := in.Notify
+	if notify == nil {
+		notify = map[string]bool{}
+	}
 	u, err := scanUser(s.DB.QueryRow(ctx, `UPDATE users SET display_name = coalesce($2, display_name),
-		topics = coalesce($3, topics), handle = coalesce($4, handle), bio = coalesce($5, bio)
-		WHERE id = $1 RETURNING `+userCols, id, in.DisplayName, in.Topics, in.Handle, in.Bio))
+		topics = coalesce($3, topics), handle = coalesce($4, handle), bio = coalesce($5, bio),
+		timezone = coalesce($6, timezone), daily_goal = coalesce($7, daily_goal), notify = notify || $8::jsonb
+		WHERE id = $1 RETURNING `+userCols, id, in.DisplayName, in.Topics, in.Handle, in.Bio, in.Timezone, in.DailyGoal, notify))
 	if isUnique(err, "users_handle_idx") {
 		return u, ErrHandleTaken
 	}

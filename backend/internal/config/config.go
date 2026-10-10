@@ -30,6 +30,10 @@ type Config struct {
 	AppleRootCAFile     string // Apple Root CA - G3, DER or PEM
 	GooglePackageName   string
 	GoogleServiceFile   string // Play Console service account JSON key
+	GoogleRTDNToken     string // secret in the Play notifications push URL
+	StripePriceMonthly  string
+	StripePriceYearly   string
+	FirebaseServiceFile string // service account key for push notifications
 }
 
 // Load reads the environment, applying development defaults.
@@ -57,6 +61,10 @@ func Load() Config {
 		AppleRootCAFile:     os.Getenv("APPLE_ROOT_CA_FILE"),
 		GooglePackageName:   os.Getenv("GOOGLE_PLAY_PACKAGE"),
 		GoogleServiceFile:   os.Getenv("GOOGLE_PLAY_SERVICE_ACCOUNT_FILE"),
+		GoogleRTDNToken:     os.Getenv("GOOGLE_RTDN_TOKEN"),
+		StripePriceMonthly:  os.Getenv("STRIPE_PRICE_MONTHLY"),
+		StripePriceYearly:   os.Getenv("STRIPE_PRICE_YEARLY"),
+		FirebaseServiceFile: os.Getenv("FIREBASE_SERVICE_ACCOUNT_FILE"),
 	}
 }
 

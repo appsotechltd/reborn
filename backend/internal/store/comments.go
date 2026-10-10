@@ -2,6 +2,7 @@ package store
 
 import (
 	"context"
+	"errors"
 	"time"
 
 	"github.com/jackc/pgx/v5"
@@ -28,31 +29,44 @@ func scanComment(r pgx.CollectableRow) (Comment, error) {
 	return c, err
 }
 
-// Comments lists a post's visible comments, oldest first.
-func (s *Store) Comments(ctx context.Context, cardID string, offset, limit int) ([]Comment, error) {
+// Comments lists a post's visible comments, oldest first, leaving out people
+// the viewer blocked or muted and people who blocked the viewer.
+func (s *Store) Comments(ctx context.Context, cardID, viewerID string, offset, limit int) ([]Comment, error) {
 	if err := s.postExists(ctx, cardID); err != nil {
 		return nil, err
 	}
 	rows, err := s.DB.Query(ctx, `SELECT `+commentCols+` FROM comments cm JOIN users u ON u.id = cm.user_id
-		WHERE cm.card_id = $1 AND cm.status = 'visible' ORDER BY cm.created_at, cm.id OFFSET $2 LIMIT $3`, cardID, offset, limit)
+		WHERE cm.card_id = $1 AND cm.status = 'visible' AND ($4::text IS NULL OR NOT `+hiddenFor("cm.user_id", "$4")+`)
+		ORDER BY cm.created_at, cm.id OFFSET $2 LIMIT $3`, cardID, offset, limit, nullable(viewerID))
 	if err != nil {
 		return nil, err
 	}
 	return pgx.CollectRows(rows, scanComment)
 }
 
+// ErrBlocked means the other person blocked the user.
+var ErrBlocked = errors.New("blocked")
+
 // AddComment adds a comment. A reply to a reply is attached to the top-level
-// comment, so threads stay one level deep.
-func (s *Store) AddComment(ctx context.Context, userID, cardID string, parentID *string, body string) (Comment, error) {
+// comment, so threads stay one level deep. It also returns the author of the
+// comment replied to ("" for a top-level comment).
+func (s *Store) AddComment(ctx context.Context, userID, cardID string, parentID *string, body string) (Comment, string, error) {
 	if err := s.postExists(ctx, cardID); err != nil {
-		return Comment{}, err
+		return Comment{}, "", err
 	}
+	var repliedTo string
 	if parentID != nil {
 		var root string
-		err := s.DB.QueryRow(ctx, `SELECT coalesce(parent_id, id)::text FROM comments
-			WHERE id::text = $1 AND card_id = $2 AND status = 'visible'`, *parentID, cardID).Scan(&root)
+		err := s.DB.QueryRow(ctx, `SELECT coalesce(parent_id, id)::text, user_id::text FROM comments
+			WHERE id::text = $1 AND card_id = $2 AND status = 'visible'`, *parentID, cardID).Scan(&root, &repliedTo)
 		if err != nil {
-			return Comment{}, notFound(err)
+			return Comment{}, "", notFound(err)
+		}
+		if blocked, err := s.isBlockedBy(ctx, repliedTo, userID); err != nil || blocked {
+			if err == nil {
+				err = ErrBlocked
+			}
+			return Comment{}, "", err
 		}
 		parentID = &root
 	}
@@ -60,9 +74,10 @@ func (s *Store) AddComment(ctx context.Context, userID, cardID string, parentID 
 			INSERT INTO comments (card_id, user_id, parent_id, body) VALUES ($1, $2, $3::uuid, $4) RETURNING *
 		) SELECT `+commentCols+` FROM cm JOIN users u ON u.id = cm.user_id`, cardID, userID, parentID, body)
 	if err != nil {
-		return Comment{}, err
+		return Comment{}, "", err
 	}
-	return pgx.CollectExactlyOneRow(rows, scanComment)
+	c, err := pgx.CollectExactlyOneRow(rows, scanComment)
+	return c, repliedTo, err
 }
 
 // DeleteComment removes a comment written by the user, or any comment when moderator is set.

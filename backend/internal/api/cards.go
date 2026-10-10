@@ -125,9 +125,13 @@ func (s *Server) cardsByIDs(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) view(w http.ResponseWriter, r *http.Request) {
-	if err := s.Store.RecordView(r.Context(), userID(r), r.PathValue("id")); err != nil {
+	isNew, err := s.Store.RecordView(r.Context(), userID(r), r.PathValue("id"))
+	if err != nil {
 		s.fail(w, r, err, "card")
 		return
+	}
+	if isNew {
+		s.recordActivity(r.Context(), userID(r), 1)
 	}
 	w.WriteHeader(http.StatusNoContent)
 }

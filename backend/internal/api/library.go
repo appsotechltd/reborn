@@ -29,6 +29,7 @@ func (s *Server) listStashes(w http.ResponseWriter, r *http.Request) {
 type stashInput struct {
 	Name        *string `json:"name"`
 	Description *string `json:"description"`
+	IsPublic    *bool   `json:"is_public"`
 }
 
 func (in *stashInput) clean(requireName bool) string {
@@ -61,6 +62,9 @@ func (s *Server) createStash(w http.ResponseWriter, r *http.Request) {
 		desc = *in.Description
 	}
 	st, err := s.Store.CreateStash(r.Context(), userID(r), *in.Name, desc)
+	if err == nil && in.IsPublic != nil && *in.IsPublic {
+		st, err = s.Store.UpdateStash(r.Context(), userID(r), st.ID, nil, nil, in.IsPublic)
+	}
 	if err != nil {
 		s.fail(w, r, err, "stash")
 		return
@@ -91,7 +95,7 @@ func (s *Server) updateStash(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "bad_request", msg)
 		return
 	}
-	st, err := s.Store.UpdateStash(r.Context(), userID(r), r.PathValue("id"), in.Name, in.Description)
+	st, err := s.Store.UpdateStash(r.Context(), userID(r), r.PathValue("id"), in.Name, in.Description, in.IsPublic)
 	if err != nil {
 		s.fail(w, r, err, "stash")
 		return
@@ -270,7 +274,11 @@ func (s *Server) chat(w http.ResponseWriter, r *http.Request) {
 	if !decode(w, r, &in) {
 		return
 	}
-	if !s.Cache.Allow(r.Context(), "agent:"+userID(r)+":"+s.Now().UTC().Format("2006010215"), s.AgentHourly, time.Hour) {
+	limit := s.AgentHourly
+	if u, err := s.Store.UserByID(r.Context(), userID(r)); err == nil && u.Premium {
+		limit *= premiumAgentFactor
+	}
+	if !s.Cache.Allow(r.Context(), "agent:"+userID(r)+":"+s.Now().UTC().Format("2006010215"), limit, time.Hour) {
 		writeError(w, http.StatusTooManyRequests, "rate_limited", "you've reached this hour's question limit")
 		return
 	}

@@ -40,6 +40,12 @@ func (s *Store) SetFollow(ctx context.Context, userID, kind, target string, on b
 		if target == userID {
 			return ErrConflict
 		}
+		if blocked, err := s.isBlockedBy(ctx, target, userID); err != nil || blocked {
+			if err == nil {
+				err = ErrBlocked
+			}
+			return err
+		}
 		q = `SELECT EXISTS (SELECT 1 FROM users WHERE id::text = $1)`
 	case "source":
 		q = `SELECT EXISTS (SELECT 1 FROM sources WHERE id = $1)`
@@ -123,7 +129,8 @@ func (s *Store) ProfileByHandle(ctx context.Context, handle, viewerID string) (U
 			(SELECT count(*) FROM favorites WHERE user_id = u.id),
 			EXISTS (SELECT 1 FROM follows WHERE follower_id = $2::uuid AND kind = 'user' AND target = u.id::text),
 			(u.id = $2::uuid) IS TRUE
-		FROM users u WHERE lower(u.handle) = lower($1)`, handle, vid).
+		FROM users u WHERE lower(u.handle) = lower($1)
+		AND NOT EXISTS (SELECT 1 FROM blocks WHERE user_id = u.id AND blocked_id = $2::uuid AND kind = 'block')`, handle, vid).
 		Scan(&p.ID, &p.Handle, &p.DisplayName, &p.Bio, &p.Followers, &p.Following, &p.Favorites, &p.IsFollowing, &p.IsMe)
 	return p, notFound(err)
 }

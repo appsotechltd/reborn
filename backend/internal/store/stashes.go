@@ -3,6 +3,7 @@ package store
 import (
 	"context"
 	"errors"
+	"strings"
 	"time"
 
 	"github.com/appsotechltd/reborn/backend/internal/srs"
@@ -16,14 +17,16 @@ type Stash struct {
 	Name        string    `json:"name"`
 	Description string    `json:"description"`
 	CardCount   int       `json:"card_count"`
+	IsPublic    bool      `json:"is_public"`
 	CreatedAt   time.Time `json:"created_at"`
 }
 
-const stashSelect = `SELECT s.id::text, s.name, s.description, (SELECT count(*) FROM stash_cards sc WHERE sc.stash_id = s.id), s.created_at FROM stashes s `
+const stashSelect = `SELECT s.id::text, s.name, s.description, (SELECT count(*) FROM stash_cards sc WHERE sc.stash_id = s.id),
+	s.is_public, s.created_at FROM stashes s `
 
-func scanStash(row pgx.Row) (Stash, error) {
+func scanStash(row pgx.Row, extra ...any) (Stash, error) {
 	var st Stash
-	err := row.Scan(&st.ID, &st.Name, &st.Description, &st.CardCount, &st.CreatedAt)
+	err := row.Scan(append([]any{&st.ID, &st.Name, &st.Description, &st.CardCount, &st.IsPublic, &st.CreatedAt}, extra...)...)
 	return st, err
 }
 
@@ -69,10 +72,10 @@ func (s *Store) GetStash(ctx context.Context, userID, id string) (Stash, error) 
 	return st, notFound(err)
 }
 
-// UpdateStash renames or re-describes a stash.
-func (s *Store) UpdateStash(ctx context.Context, userID, id string, name, desc *string) (Stash, error) {
-	tag, err := s.DB.Exec(ctx, `UPDATE stashes SET name = coalesce($3, name), description = coalesce($4, description)
-		WHERE id::text = $1 AND user_id = $2`, id, userID, name, desc)
+// UpdateStash renames, re-describes, or publishes/unpublishes a stash.
+func (s *Store) UpdateStash(ctx context.Context, userID, id string, name, desc *string, public *bool) (Stash, error) {
+	tag, err := s.DB.Exec(ctx, `UPDATE stashes SET name = coalesce($3, name), description = coalesce($4, description),
+		is_public = coalesce($5, is_public) WHERE id::text = $1 AND user_id = $2`, id, userID, name, desc, public)
 	if err != nil {
 		return Stash{}, conflictOr(err)
 	}
@@ -139,4 +142,37 @@ func (s *Store) RemoveFromStash(ctx context.Context, userID, stashID, cardID str
 		return ErrNotFound
 	}
 	return nil
+}
+
+// PublicStash is a stash anyone can view, with its owner.
+type PublicStash struct {
+	Stash
+	Owner Profile `json:"owner"`
+}
+
+// GetPublicStash returns a public stash and its cards.
+func (s *Store) GetPublicStash(ctx context.Context, id string) (PublicStash, []Card, error) {
+	var ps PublicStash
+	q := strings.Replace(stashSelect, " FROM stashes s ", ", u.id::text, u.handle, u.display_name FROM stashes s JOIN users u ON u.id = s.user_id ", 1)
+	st, err := scanStash(s.DB.QueryRow(ctx, q+`WHERE s.id::text = $1 AND s.is_public`, id), &ps.Owner.ID, &ps.Owner.Handle, &ps.Owner.DisplayName)
+	if err != nil {
+		return ps, nil, notFound(err)
+	}
+	ps.Stash = st
+	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`JOIN stash_cards sc ON sc.card_id = c.id
+		WHERE sc.stash_id::text = $1 AND c.status = 'published' ORDER BY sc.added_at DESC`, id)
+	if err != nil {
+		return ps, nil, err
+	}
+	cards, err := collectCards(rows)
+	return ps, cards, err
+}
+
+// PublicStashes lists a user's public stashes, newest first.
+func (s *Store) PublicStashes(ctx context.Context, ownerID string) ([]Stash, error) {
+	rows, err := s.DB.Query(ctx, stashSelect+`WHERE s.user_id::text = $1 AND s.is_public ORDER BY s.created_at DESC`, ownerID)
+	if err != nil {
+		return nil, err
+	}
+	return pgx.CollectRows(rows, func(r pgx.CollectableRow) (Stash, error) { return scanStash(r) })
 }

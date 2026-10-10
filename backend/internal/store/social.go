@@ -103,6 +103,7 @@ func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) 
 		), ffav AS (
 			SELECT DISTINCT ON (fv.card_id) fv.card_id, u.display_name
 			FROM favorites fv JOIN fu ON fu.id = fv.user_id JOIN users u ON u.id = fv.user_id
+			WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE user_id = $1::uuid AND blocked_id = fv.user_id)
 			ORDER BY fv.card_id, fv.created_at DESC
 		), unfiltered AS (
 			SELECT cardinality($2::text[]) = 0 AND NOT EXISTS (SELECT 1 FROM f) AS yes
@@ -297,12 +298,13 @@ func (s *Store) fillPosts(ctx context.Context, posts []Post, viewerID string) er
 	return rows.Err()
 }
 
-// MarkSeen records that the user saw these posts; unknown ids are ignored.
-func (s *Store) MarkSeen(ctx context.Context, userID string, ids []string, now time.Time) error {
-	_, err := s.DB.Exec(ctx, `INSERT INTO card_views (user_id, card_id, viewed_at)
+// MarkSeen records that the user saw these posts and returns how many were
+// new to them; unknown ids are ignored.
+func (s *Store) MarkSeen(ctx context.Context, userID string, ids []string, now time.Time) (int, error) {
+	tag, err := s.DB.Exec(ctx, `INSERT INTO card_views (user_id, card_id, viewed_at)
 		SELECT $1, id, $3 FROM cards WHERE id = ANY($2) AND status = 'published'
 		ON CONFLICT (user_id, card_id) DO NOTHING`, userID, ids, now)
-	return err
+	return int(tag.RowsAffected()), err
 }
 
 // postExists returns ErrNotFound unless the card is published.

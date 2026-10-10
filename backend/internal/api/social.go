@@ -1,6 +1,7 @@
 package api
 
 import (
+	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -68,10 +69,12 @@ func (s *Server) markSeen(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "bad_request", "post_ids must list 1-100 posts")
 		return
 	}
-	if err := s.Store.MarkSeen(r.Context(), userID(r), in.PostIDs, s.Now()); err != nil {
+	n, err := s.Store.MarkSeen(r.Context(), userID(r), in.PostIDs, s.Now())
+	if err != nil {
 		s.fail(w, r, err, "posts")
 		return
 	}
+	s.recordActivity(r.Context(), userID(r), n)
 	w.WriteHeader(http.StatusNoContent)
 }
 
@@ -189,7 +192,7 @@ func (s *Server) comments(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		return
 	}
-	list, err := s.Store.Comments(r.Context(), r.PathValue("id"), offset, limit)
+	list, err := s.Store.Comments(r.Context(), r.PathValue("id"), userID(r), offset, limit)
 	if err != nil {
 		s.fail(w, r, err, "post")
 		return
@@ -214,10 +217,19 @@ func (s *Server) addComment(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusTooManyRequests, "rate_limited", "too many comments, try again later")
 		return
 	}
-	c, err := s.Store.AddComment(r.Context(), userID(r), r.PathValue("id"), in.ParentID, body)
+	c, repliedTo, err := s.Store.AddComment(r.Context(), userID(r), r.PathValue("id"), in.ParentID, body)
+	if errors.Is(err, store.ErrBlocked) {
+		writeError(w, http.StatusForbidden, "blocked", "you can't reply to this person")
+		return
+	}
 	if err != nil {
 		s.fail(w, r, err, "post or parent comment")
 		return
+	}
+	if repliedTo != "" && repliedTo != c.Author.ID {
+		text := c.Author.DisplayName + " replied to your comment: " + truncateRunes(c.Body, 80)
+		s.notify(store.NewNotification{UserID: repliedTo, Kind: "reply", ActorID: c.Author.ID, PostID: c.PostID, CommentID: c.ID, Text: text},
+			"replies", map[string]string{"post_id": c.PostID, "comment_id": c.ID})
 	}
 	writeJSON(w, http.StatusCreated, c)
 }
@@ -290,9 +302,19 @@ func (s *Server) setFollow(on bool) http.HandlerFunc {
 			writeError(w, http.StatusBadRequest, "bad_request", "you can't follow yourself")
 			return
 		}
+		if err == store.ErrBlocked {
+			writeError(w, http.StatusNotFound, "not_found", "user not found")
+			return
+		}
 		if err != nil {
 			s.fail(w, r, err, kind)
 			return
+		}
+		if on && kind == "user" {
+			if me, err := s.Store.UserByID(r.Context(), userID(r)); err == nil {
+				s.notify(store.NewNotification{UserID: target, Kind: "follow", ActorID: me.ID, Text: me.DisplayName + " started following you"},
+					"follows", map[string]string{"handle": me.Handle})
+			}
 		}
 		st, err := s.Store.FollowStateOf(r.Context(), kind, target, userID(r))
 		if err != nil {
