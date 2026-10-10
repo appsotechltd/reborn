@@ -1,0 +1,165 @@
+{
+  "source": {
+    "id": "medlineplus-healthy-sleep",
+    "title": "Healthy Sleep",
+    "authors": [
+      "MedlinePlus, National Library of Medicine"
+    ],
+    "kind": "guide",
+    "url": "https://medlineplus.gov/healthysleep.html",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://medlineplus.gov/about/using/usingcontent/",
+    "attribution": "Source: MedlinePlus, National Library of Medicine (public domain)",
+    "publisher": "MedlinePlus, National Library of Medicine",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "MedlinePlus lists health topic page summaries as public domain; A.D.A.M. encyclopedia content and images are not, and none were used. Cards are written in our own words."
+  },
+  "cards": [
+    {
+      "id": "medlineplus-healthy-sleep--01",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "memory",
+        "recovery"
+      ],
+      "title": "Sleep is when your body and brain do their maintenance work",
+      "body": "Sleep is not switched-off time. Overnight your brain cycles through lighter and deeper stages plus dreaming (REM) sleep, and each stage has a job: storing memories, resting the heart and blood vessels, releasing growth hormone for tissue repair, balancing hunger hormones and supporting the immune system.\n\nThat is why cutting sleep to fit in more work or one more episode tends to backfire. You lose the stages that make the next day's thinking, mood and appetite work properly.",
+      "apply_it": "Tonight, decide on a lights-out time that allows a full night, and set a phone reminder 30 minutes before it.",
+      "quiz": {
+        "question": "Why does cutting sleep short affect more than just how tired you feel?",
+        "options": [
+          "Each sleep stage does different repair and memory work",
+          "Only dreaming sleep matters, and it comes first",
+          "Sleep just lowers your heart rate",
+          "Short sleep only affects energy, not mood or appetite"
+        ],
+        "answer": 0,
+        "explanation": "Sleep cycles through several stages, and memory, hormone balance, repair and immunity all depend on getting enough of them."
+      },
+      "health": true
+    },
+    {
+      "id": "medlineplus-healthy-sleep--02",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "adults",
+        "teens"
+      ],
+      "title": "Most adults need 7 to 9 hours, and that does not shrink with age",
+      "body": "General guidance is 7 to 9 hours a night for adults, 8 to 10 for teenagers, and more for younger children. Needs vary from person to person, but a common myth is that older adults simply need less. The evidence does not support that: older people often sleep less and wake more easily, but their need stays about the same.\n\nTeens face their own mismatch. Puberty shifts the body clock later, so a teenager who cannot fall asleep early is often not being lazy or difficult.",
+      "apply_it": "Count back from your usual alarm time by eight hours. Is that when you are actually asleep most nights?",
+      "quiz": {
+        "question": "Which statement about adult sleep needs is supported by current guidance?",
+        "options": [
+          "Adults need about 5 hours once they reach 60",
+          "Adults need 10 to 12 hours",
+          "Sleep need doubles after 50",
+          "Adults generally need 7 to 9 hours, and the need does not drop with age"
+        ],
+        "answer": 3,
+        "explanation": "Guidance for adults is 7 to 9 hours. Older adults often get less sleep, but there is no evidence they need less."
+      },
+      "health": true
+    },
+    {
+      "id": "medlineplus-healthy-sleep--03",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "self-check",
+        "daytime-tiredness"
+      ],
+      "title": "Three quick questions reveal whether you are short on sleep",
+      "body": "You do not need a tracker to know if your sleep is falling short. Ask yourself: Is it a struggle to get up in the morning? Is it hard to focus during the day? Do I nod off during the day, for example in meetings, on the sofa or on public transport?\n\nA yes to any of these suggests your sleep routine could use attention. Quality counts as well as hours: frequent waking can cut into the deeper stages even if you spend long enough in bed.",
+      "apply_it": "Answer the three questions honestly for the past week. If any answer is yes, pick one sleep habit to change this week.",
+      "quiz": {
+        "question": "Which sign suggests you may not be getting enough good sleep?",
+        "options": [
+          "You fall asleep within 20 minutes",
+          "You dream sometimes",
+          "You often doze off during the day",
+          "You wake once to use the bathroom"
+        ],
+        "answer": 2,
+        "explanation": "Dozing off in the day, struggling to wake up or trouble focusing are signs your sleep needs attention."
+      },
+      "health": true
+    },
+    {
+      "id": "medlineplus-healthy-sleep--04",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "safety",
+        "alcohol"
+      ],
+      "title": "Being short on sleep makes mistakes, accidents and alcohol riskier",
+      "body": "Missing sleep slows reaction time, weakens memory and makes people more likely to take risks, which raises the chance of mistakes at work and accidents on the road. It also makes alcohol hit harder: a tired person who drinks is more impaired than a rested person who drinks the same amount.\n\nOver the long term, regular short sleep is linked with higher risk of high blood pressure, heart disease, type 2 diabetes, obesity, depression and anxiety.",
+      "apply_it": "If you have slept badly, skip the drink tonight and avoid driving long distances when you feel drowsy.",
+      "quiz": {
+        "question": "How does poor sleep change the effect of alcohol?",
+        "options": [
+          "It cancels alcohol's effects",
+          "A tired person is more impaired by the same amount of alcohol",
+          "It has no link to alcohol",
+          "It makes alcohol leave the body faster"
+        ],
+        "answer": 1,
+        "explanation": "Tiredness adds to alcohol's effects, so the same drink impairs a sleep-deprived person more."
+      },
+      "health": true
+    },
+    {
+      "id": "medlineplus-healthy-sleep--05",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "habits",
+        "screens",
+        "caffeine"
+      ],
+      "title": "A steady schedule and a calm bedroom do most of the work for better sleep",
+      "body": "The habits with the best track record are simple: go to bed and get up at the same times every day, get daylight during the day, and keep the bedroom cool, dark and quiet. Cut back on caffeine in the afternoon and evening, avoid nicotine, and skip alcohol, large meals and naps after about 3 p.m.\n\nPhones and TVs in the bedroom work against all of this. A wind-down routine, such as a bath, a book or calm music, gives your body a clear signal that the day is over.",
+      "apply_it": "Choose one change for this week: a fixed wake-up time, no caffeine after lunch, or the phone charging outside the bedroom.",
+      "quiz": {
+        "question": "Which habit is recommended for better sleep?",
+        "options": [
+          "Keeping the same bed and wake times every day",
+          "Napping late in the afternoon",
+          "A large meal just before bed",
+          "Using your phone in bed to relax"
+        ],
+        "answer": 0,
+        "explanation": "A consistent schedule helps your body clock. Late naps, heavy late meals and screens in bed tend to disrupt sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "medlineplus-healthy-sleep--06",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "insomnia",
+        "when-to-get-help"
+      ],
+      "title": "Can't fall asleep after 20 minutes? Get up, and see a doctor if it keeps happening",
+      "body": "Lying in bed wide awake and frustrated can teach your brain that bed is a place for worrying. If you have not fallen asleep after about 20 minutes, get up and do something quiet and relaxing in dim light, then go back when you feel sleepy.\n\nIf trouble sleeping goes on night after night, or a partner notices loud snoring or pauses in your breathing, talk to a doctor. Conditions such as insomnia and sleep apnea are common and can be assessed and treated.",
+      "apply_it": "Put a book and a soft lamp somewhere other than your bed, ready for a night when sleep will not come.",
+      "quiz": {
+        "question": "What should you do if ongoing trouble sleeping lasts for weeks?",
+        "options": [
+          "Ignore it; it always passes",
+          "Stay in bed longer each morning",
+          "Drink alcohol to help you drift off",
+          "Talk to a doctor, as it may be a treatable sleep disorder"
+        ],
+        "answer": 3,
+        "explanation": "Persistent sleep problems can be a sign of conditions like insomnia or sleep apnea, which a health professional can assess."
+      },
+      "health": true
+    }
+  ]
+}

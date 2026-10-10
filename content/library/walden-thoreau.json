@@ -1,0 +1,195 @@
+{
+  "source": {
+    "id": "walden-thoreau",
+    "title": "Walden",
+    "authors": [
+      "Henry David Thoreau"
+    ],
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/henry-david-thoreau/walden",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Henry David Thoreau, Walden, Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 1854,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "walden-thoreau--01",
+      "topic": "money",
+      "tags": [
+        "true-cost",
+        "spending",
+        "time"
+      ],
+      "title": "Price things in hours of your life, not just dollars",
+      "body": "Thoreau proposed a different way to count cost: how much of your life you must trade to get something. A house that takes fifteen years of wages is not just expensive, it is fifteen years.\n\nThis lens is easy to use today. Divide a price by what you actually take home per hour after tax and commuting. A new phone might be forty hours of work; a bigger car payment might be a year of Saturdays. Some things are still worth it, but seeing the trade in hours makes it a real choice instead of a reflex.",
+      "quote": "the cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run.",
+      "locator": "Economy ¶49",
+      "apply_it": "Work out your real hourly take-home pay. Convert your next planned purchase into hours and ask if it is worth that much of your life.",
+      "quiz": {
+        "question": "How does Thoreau define the cost of a thing?",
+        "options": [
+          "Its price compared with similar items",
+          "What it would sell for later",
+          "The amount of life you exchange for it",
+          "The labour of the person who made it"
+        ],
+        "answer": 2,
+        "explanation": "Thoreau measured cost in life: the time and work you must give up to pay for something."
+      }
+    },
+    {
+      "id": "walden-thoreau--02",
+      "topic": "productivity",
+      "tags": [
+        "simplicity",
+        "focus",
+        "overwhelm"
+      ],
+      "title": "Keep your commitments few enough to count on one hand",
+      "body": "Thoreau complained that life gets frittered away by detail. His remedy was blunt: cut the number of things you are juggling until you could keep track of them on your thumbnail.\n\nModern overload looks like forty open tabs, six group chats and a to-do list nobody could finish. Most of it is small and optional, but together it drains attention from what matters. Pruning commitments, accounts, apps and recurring meetings is often more productive than any new system for managing them.",
+      "quote": "Our life is frittered away by detail.",
+      "locator": "Where I Lived, and What I Lived For ¶20",
+      "apply_it": "List everything you are currently committed to. Circle the three that matter most and pick one item to drop or pause this week.",
+      "quiz": {
+        "question": "What was Thoreau's main remedy for a life 'frittered away by detail'?",
+        "options": [
+          "Work longer hours",
+          "Simplify and reduce the number of affairs",
+          "Hire help for small tasks",
+          "Keep a more detailed diary"
+        ],
+        "answer": 1,
+        "explanation": "'Simplicity, simplicity, simplicity!' He urged reducing affairs to a few rather than managing hundreds."
+      }
+    },
+    {
+      "id": "walden-thoreau--03",
+      "topic": "money",
+      "tags": [
+        "wealth",
+        "contentment",
+        "minimalism"
+      ],
+      "title": "Real wealth includes all the things you can happily do without",
+      "body": "Thoreau once mentally 'bought' farms around Concord, enjoyed the views, then walked away without the deed or the mortgage. His idea of richness was not how much you own but how many things you can afford to leave alone.\n\nEach item you don't need is money you don't spend, space you don't fill and worry you don't carry. Someone who is content without the upgrade, the extra subscription or the status purchase is freer than someone who earns more but needs everything.",
+      "quote": "a man is rich in proportion to the number of things which he can afford to let alone.",
+      "locator": "Where I Lived, and What I Lived For ¶1",
+      "apply_it": "Name three things you have been tempted to buy lately. Decide which you can happily let alone, and notice the relief.",
+      "quiz": {
+        "question": "By Thoreau's measure, what makes someone rich?",
+        "options": [
+          "The number of things they can afford to let alone",
+          "Earning more than their neighbours",
+          "Owning land and property",
+          "Having many fine possessions"
+        ],
+        "answer": 0,
+        "explanation": "For Thoreau, freedom from needing things was a form of wealth."
+      }
+    },
+    {
+      "id": "walden-thoreau--04",
+      "topic": "personal-development",
+      "tags": [
+        "starting",
+        "gear",
+        "change"
+      ],
+      "title": "Start the project with what you have instead of buying new gear first",
+      "body": "Thoreau warned against any venture that requires new clothes rather than a new person wearing them. The real change has to happen in you; the equipment is secondary.\n\nIt is a common trap: buying running shoes before running, a fancy notebook before writing, software before the business has a single customer. Shopping feels like progress but often replaces it. Begin with what you already own, and upgrade only once the habit is real and the old tools are actually holding you back.",
+      "quote": "I say, beware of all enterprises that require new clothes, and not rather a new wearer of clothes.",
+      "locator": "Economy ¶40",
+      "apply_it": "Pick a goal you have been 'getting ready' for. Do the first session today using only what you already have.",
+      "quiz": {
+        "question": "What did Thoreau mean by 'beware of all enterprises that require new clothes'?",
+        "options": [
+          "Dress well to succeed",
+          "Buy quality clothes that last",
+          "Never start a business",
+          "The person must change, not just the equipment"
+        ],
+        "answer": 3,
+        "explanation": "Real change comes from becoming a new 'wearer'; new gear can be a substitute for actually starting."
+      }
+    },
+    {
+      "id": "walden-thoreau--05",
+      "topic": "mindfulness",
+      "tags": [
+        "attention",
+        "distraction",
+        "calm"
+      ],
+      "title": "Don't let every small interruption knock your day off its track",
+      "body": "Thoreau imagined living one day as steadily as nature does, not derailed by every nutshell and mosquito wing that lands on the rails. Let visitors come and go, let bells ring, and keep going with your intention for the day.\n\nToday the nutshells are notifications, pings and minor dramas. Each is small, but reacting to all of them hands your day to whoever interrupts last. Deciding in the morning what the day is for, and treating most interruptions as background noise, keeps you on your own track.",
+      "quote": "Let us spend one day as deliberately as Nature, and not be thrown off the track by every nutshell and mosquito’s wing that falls on the rails.",
+      "locator": "Where I Lived, and What I Lived For ¶25",
+      "apply_it": "Write the one thing today is for. Silence non-urgent notifications for the next two hours while you work on it.",
+      "quiz": {
+        "question": "What do the 'nutshell and mosquito's wing' represent in Thoreau's image?",
+        "options": [
+          "Serious emergencies",
+          "Natural beauty worth stopping for",
+          "Small disturbances that derail a day",
+          "Household chores"
+        ],
+        "answer": 2,
+        "explanation": "They are trivial interruptions. Thoreau urged staying on track rather than reacting to each one."
+      }
+    },
+    {
+      "id": "walden-thoreau--06",
+      "topic": "personal-development",
+      "tags": [
+        "individuality",
+        "pace",
+        "comparison"
+      ],
+      "title": "You don't have to move at the same pace as everyone else",
+      "body": "Thoreau asked why we rush so desperately to succeed. If someone falls out of step with his peers, maybe he is following a different beat. Let him keep to his own music, however slow or distant it seems.\n\nSocial media makes everyone's timeline visible: who got promoted, married, bought a house. Comparing your pace to theirs can push you into choices that don't fit you. An oak does not grow on an apple tree's schedule. Ask what rhythm suits your life and values, not the average.",
+      "quote": "If a man does not keep pace with his companions, perhaps it is because he hears a different drummer. Let him step to the music which he hears, however measured or far away.",
+      "locator": "Conclusion ¶15",
+      "apply_it": "Name one milestone you feel 'behind' on. Ask whether you actually want it, or only want it because peers have it.",
+      "quiz": {
+        "question": "What does Thoreau suggest when someone doesn't keep pace with their companions?",
+        "options": [
+          "They should try harder to catch up",
+          "They may be following a different drummer, and that's fine",
+          "They have failed",
+          "They should find new companions"
+        ],
+        "answer": 1,
+        "explanation": "He defends following your own rhythm rather than forcing yourself into others' pace."
+      }
+    },
+    {
+      "id": "walden-thoreau--07",
+      "topic": "productivity",
+      "tags": [
+        "goals",
+        "dreams",
+        "execution"
+      ],
+      "title": "Big dreams are fine; your job is to build the foundations under them",
+      "body": "Thoreau did not tell people to stop dreaming. He said castles in the air are exactly where they belong, and the work is to put foundations beneath them.\n\nAmbitious goals give direction, but they stay fantasies until they meet daily routines, budgets and first drafts. A dream of writing a book needs a writing slot on the calendar; a dream of a career change needs one course, one conversation, one application. Keep the vision high and make the next step small and concrete.",
+      "quote": "If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.",
+      "locator": "Conclusion ¶10",
+      "apply_it": "Write down one big dream. Under it, list the smallest concrete step you could take this week, and schedule it.",
+      "quiz": {
+        "question": "According to Thoreau, what should you do with 'castles in the air'?",
+        "options": [
+          "Put foundations under them",
+          "Keep them secret",
+          "Abandon them as unrealistic",
+          "Wait for the right moment"
+        ],
+        "answer": 0,
+        "explanation": "Dreams are where they should be; the task is to support them with practical groundwork."
+      }
+    }
+  ]
+}

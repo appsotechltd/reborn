@@ -1,0 +1,193 @@
+{
+  "source": {
+    "id": "art-of-war-sun-tzu",
+    "title": "The Art of War",
+    "authors": [
+      "Sun Tzu"
+    ],
+    "translator": "Lionel Giles",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/sun-tzu/the-art-of-war/lionel-giles",
+    "attribution": "Sun Tzu, The Art of War (trans. Lionel Giles), Standard Ebooks, public domain",
+    "year": -500,
+    "publisher": "Standard Ebooks",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "art-of-war-sun-tzu--01",
+      "topic": "productivity",
+      "tags": [
+        "preparation",
+        "planning",
+        "strategy"
+      ],
+      "title": "Most contests are decided by the preparation done beforehand",
+      "body": "Sun Tzu noticed that winners do most of their winning before anything starts. They compare strengths, study the ground and think through what could go wrong, while losers count on improvising once things are underway.\n\nThe same applies to a pitch, a salary conversation or a product launch. The decisive work happens in the quiet hours before: researching the other side, rehearsing likely objections, checking the numbers. Walk in prepared and the meeting confirms work you have already done instead of becoming a gamble.",
+      "quote": "Now the general who wins a battle makes many calculations in his temple ere the battle is fought. The general who loses a battle makes but few calculations beforehand.",
+      "locator": "I. Laying Plans ¶31",
+      "apply_it": "Before your next important meeting, write down the three objections you most expect and a short answer to each.",
+      "quiz": {
+        "question": "According to Sun Tzu, what separates winning generals from losing ones?",
+        "options": [
+          "Bigger armies and better weapons",
+          "Many calculations made before the battle",
+          "Bold improvisation once fighting starts",
+          "Attacking first, whatever the odds"
+        ],
+        "answer": 1,
+        "explanation": "Sun Tzu tied victory to the amount of thinking done before the battle, not to improvising during it."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--02",
+      "topic": "business",
+      "tags": [
+        "negotiation",
+        "conflict",
+        "win-win"
+      ],
+      "title": "The best victory is the one that needs no fight",
+      "body": "Sun Tzu ranked winning without battle above winning every battle. Even a fight you win costs time, money, energy and goodwill, and it leaves an opponent who may come back for revenge.\n\nIn business and at work this means looking for outcomes the other side can accept. A negotiation that leaves your counterpart humiliated often produces a deal they resent and quietly undermine. Settling a dispute with a smart offer, a better alternative or a shared interest avoids the costs of open conflict and keeps the relationship usable next time.",
+      "quote": "Hence to fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy’s resistance without fighting.",
+      "locator": "III. Attack by Stratagem ¶2",
+      "apply_it": "Pick one disagreement you are in. What could you offer that gives the other side something they want while you still get what you need?",
+      "quiz": {
+        "question": "Why did Sun Tzu rank winning without fighting above winning every battle?",
+        "options": [
+          "Because even won battles carry heavy costs",
+          "Because fighting is always morally wrong",
+          "Because fighting is too slow to be useful"
+        ],
+        "answer": 0,
+        "explanation": "Open conflict drains resources and goodwill even for the winner, so the cheapest victory is the best one."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--03",
+      "topic": "business",
+      "tags": [
+        "competition",
+        "self-awareness",
+        "research"
+      ],
+      "title": "Know the other side and know yourself, or expect mixed results",
+      "body": "Sun Tzu's most quoted line has two halves, and most people remember only one. Studying a competitor, a client or a hiring manager is not enough; you also need an honest view of your own strengths, gaps and limits.\n\nKnow only yourself and you will win some and lose some without knowing why. Know neither and you are guessing. Before a job interview, a sales call or a market entry, research the other side carefully, then just as carefully list where you are strong and where you are exposed.",
+      "quote": "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat.",
+      "locator": "III. Attack by Stratagem ¶24",
+      "apply_it": "Before your next big conversation, write two lists: what the other side most wants, and your own two biggest weak spots in this situation.",
+      "quiz": {
+        "question": "What happens, according to Sun Tzu, if you know yourself but not the enemy?",
+        "options": [
+          "You win some and suffer defeats too",
+          "You win every battle",
+          "You lose every battle",
+          "You should avoid fighting entirely"
+        ],
+        "answer": 0,
+        "explanation": "Self-knowledge alone gives mixed results; you need to understand the other side as well."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--04",
+      "topic": "productivity",
+      "tags": [
+        "career",
+        "risk",
+        "resilience"
+      ],
+      "title": "Make yourself hard to beat first, then wait for openings",
+      "body": "Sun Tzu split success into two parts. Not losing is in your own hands; the chance to win usually comes from outside, often from someone else's mistake. So good generals secured their position first and then watched for the opening.\n\nIn a career this means building what you control: savings to cover a few months, skills that stay in demand, a solid reputation and a network. None of that guarantees a big break, but it keeps a setback from sinking you and lets you move quickly when a good opportunity appears.",
+      "quote": "To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself.",
+      "locator": "IV. Tactical Dispositions ¶2",
+      "apply_it": "Name one thing you can do this week that makes you harder to knock over, such as adding to savings, updating your CV or sharpening a key skill.",
+      "quiz": {
+        "question": "Which part of victory did Sun Tzu say lies in our own hands?",
+        "options": [
+          "Creating the opportunity to win",
+          "Securing ourselves against defeat",
+          "Controlling what the enemy does"
+        ],
+        "answer": 1,
+        "explanation": "Protecting yourself from defeat is within your control; the opening to win is usually offered by the other side."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--05",
+      "topic": "business",
+      "tags": [
+        "conflict",
+        "projects",
+        "costs"
+      ],
+      "title": "Long, drawn-out conflicts drain everyone involved",
+      "body": "Sun Tzu warned that no state has ever gained from a long war. Supplies run down, morale sags, and even the eventual winner is weaker than before.\n\nModern versions are everywhere: a lawsuit that drags on for years, a price war with a rival, a cold feud with a colleague, a failing project nobody will stop. Each month quietly eats money, attention and energy. When you enter a conflict, decide in advance what a good result looks like and when you will settle, change course or walk away.",
+      "quote": "There is no instance of a country having benefited from prolonged warfare.",
+      "locator": "II. Waging War ¶6",
+      "apply_it": "Think of a dispute or project that has dragged on. Set a date by which you will either resolve it or step away.",
+      "quiz": {
+        "question": "What was Sun Tzu's view of prolonged warfare?",
+        "options": [
+          "It wears down the enemy and so pays off",
+          "It is fine if the cause is just",
+          "No country has ever benefited from it",
+          "It is the surest path to victory"
+        ],
+        "answer": 2,
+        "explanation": "Long conflicts drain resources on all sides, so even the winner comes out weaker."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--06",
+      "topic": "productivity",
+      "tags": [
+        "anger",
+        "decisions",
+        "self-control"
+      ],
+      "title": "Never make a big move just because you are angry",
+      "body": "Sun Tzu told rulers and generals never to start a fight out of irritation or wounded pride. Anger fades and moods recover, he noted, but a ruined position cannot be undone.\n\nThe same trap shows up in the furious reply to a client, the resignation sent after one bad meeting, or the public post written in a temper. The feeling is temporary; the consequences may not be. Act only when there is a real gain to be had, and give strong emotions time to cool before you commit to anything you cannot take back.",
+      "quote": "No ruler should put troops into the field merely to gratify his own spleen; no general should fight a battle simply out of pique.",
+      "locator": "XII. The Attack by Fire ¶18",
+      "apply_it": "Next time you feel the urge to send an angry message, save it as a draft and reread it tomorrow before deciding.",
+      "quiz": {
+        "question": "Why did Sun Tzu warn against fighting out of anger?",
+        "options": [
+          "Anger makes soldiers fight harder",
+          "Anger is a sign of weak leadership only",
+          "Anger passes, but the damage from a rash battle may be permanent"
+        ],
+        "answer": 2,
+        "explanation": "Moods change and recover, but a destroyed position or relationship may never come back."
+      }
+    },
+    {
+      "id": "art-of-war-sun-tzu--07",
+      "topic": "business",
+      "tags": [
+        "strategy",
+        "adaptability",
+        "innovation"
+      ],
+      "title": "Don't repeat last year's winning move by default",
+      "body": "Sun Tzu compared good strategy to water, which takes whatever shape the ground gives it and flows around high points toward low ones. A tactic that won once should not become a habit, because the next situation will be different.\n\nCompanies fall into this when they keep reusing the campaign, product or pricing that worked years ago. People do it when they handle every manager or negotiation the same way. Look at the conditions in front of you, avoid where the other side is strongest, and aim your effort where they are thin.",
+      "quote": "Do not repeat the tactics which have gained you one victory, but let your methods be regulated by the infinite variety of circumstances.",
+      "locator": "VI. Weak Points and Strong ¶28",
+      "apply_it": "Pick one routine approach at work. Ask: would I still choose this method if I were starting fresh today?",
+      "quiz": {
+        "question": "What image did Sun Tzu use for adapting tactics to circumstances?",
+        "options": [
+          "A mountain",
+          "Water",
+          "Fire",
+          "A fortress"
+        ],
+        "answer": 1,
+        "explanation": "Water changes shape to fit the ground, just as tactics should fit each new situation."
+      }
+    }
+  ]
+}

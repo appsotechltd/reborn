@@ -1,0 +1,172 @@
+{
+  "source": {
+    "id": "enchiridion-epictetus",
+    "title": "The Enchiridion",
+    "authors": [
+      "Epictetus"
+    ],
+    "translator": "George Long",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/epictetus/short-works/george-long",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Epictetus, The Enchiridion (trans. George Long), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 135,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "The Enchiridion (Manual) as published in Epictetus, Short Works (trans. George Long), Standard Ebooks. Compiled by Arrian from Epictetus's teaching, c. 135 CE."
+  },
+  "cards": [
+    {
+      "id": "enchiridion-epictetus--01",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "control",
+        "acceptance"
+      ],
+      "title": "Sort everything into what is up to you and what is not",
+      "body": "Epictetus opens his manual with a split. Your opinions, intentions, desires and choices are yours to direct. Your body, possessions, reputation and job title can be influenced but never fully controlled.\n\nMost stress comes from treating the second group as if it belonged in the first: needing the promotion, the praise, the perfect outcome. Put your effort where your control is real, such as preparation, honesty and how you respond, and hold everything else more loosely.",
+      "quote": "Of things some are in our power, and others are not.",
+      "apply_it": "Take one worry and split it into two columns: what I control and what I don't. Act on one item from the first column today.",
+      "locator": "The Enchiridion, I ¶1",
+      "quiz": {
+        "question": "Which of these did Epictetus place among the things in our power?",
+        "options": [
+          "Reputation",
+          "Our own opinions and desires",
+          "Property",
+          "Our body"
+        ],
+        "answer": 1,
+        "explanation": "He listed opinion, impulse, desire and aversion as ours; body, property and reputation are not fully in our power."
+      }
+    },
+    {
+      "id": "enchiridion-epictetus--02",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "criticism",
+        "humour"
+      ],
+      "title": "When told someone criticised you, answer with humour, not a defence",
+      "body": "Hearing that someone spoke badly of you tempts you to build a case: explain, correct, retaliate. Epictetus suggests a lighter move. Reply that they clearly don't know you well, or they would have mentioned your other faults too.\n\nThe joke does real work. It shows you aren't rattled, it quietly admits you are imperfect, and it stops gossip from turning into a feud. Most secondhand criticism loses its power when you refuse to treat it as an emergency.",
+      "quote": "If a man has reported to you, that a certain person speaks ill of you, do not make any defence (answer) to what has been told you: but reply, The man did not know the rest of my faults, for he would not have mentioned these only.",
+      "apply_it": "Next time you hear secondhand criticism, skip the rebuttal. Try a light, self-aware response, or simply say \"Maybe so\" and move on.",
+      "locator": "The Enchiridion, XXXIII ¶8",
+      "quiz": {
+        "question": "How did Epictetus suggest responding when told someone spoke ill of you?",
+        "options": [
+          "Demand an apology",
+          "Spread a rumour about them",
+          "Say they did not know your other faults",
+          "Prepare a detailed defence"
+        ],
+        "answer": 2,
+        "explanation": "His good-humoured reply defuses the remark without a defence."
+      }
+    },
+    {
+      "id": "enchiridion-epictetus--03",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "family",
+        "perspective"
+      ],
+      "title": "Every situation has two handles: pick it up by the one you can carry",
+      "body": "Epictetus says each thing can be grasped by two handles. Seize your brother's unfair behaviour by the handle \"he wronged me\" and it can't be borne. Seize it by \"he is my brother, we grew up together\" and suddenly you can carry it.\n\nThis isn't excusing bad behaviour. It's choosing which true fact to hold first. With a partner, parent or teammate who lets you down, starting from the relationship rather than the grievance makes a fair, steady response possible.",
+      "quote": "Everything has two handles, the one by which it may be borne, the other by which it may not.",
+      "apply_it": "Think of someone who frustrated you recently. Write one true thing about your bond with them, and start your next conversation from there.",
+      "locator": "The Enchiridion, XLIII ¶1",
+      "quiz": {
+        "question": "In the \"two handles\" image, what should you grab when your brother acts unjustly?",
+        "options": [
+          "The fact that he is your brother",
+          "The injustice he committed",
+          "The chance to punish him",
+          "Nothing; drop the matter"
+        ],
+        "answer": 0,
+        "explanation": "Holding the situation by the bond you share makes it bearable."
+      }
+    },
+    {
+      "id": "enchiridion-epictetus--04",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "impulse-control",
+        "habits"
+      ],
+      "title": "When a temptation appears, make it wait and picture the after",
+      "body": "When a pleasure pulls at you, Epictetus advises a pause. Let it wait. Then imagine two scenes: enjoying it, and the moment afterwards when you might regret it. Set beside those the satisfaction of having said no.\n\nThis is a practical brake for late-night snacking, impulse buys or the endless scroll. The delay weakens the urge, and picturing the after-feeling gives your judgement a vote. Sometimes you'll still choose yes, but deliberately rather than by default.",
+      "quote": "guard yourself against being carried away by it; but let the thing wait for you, and allow yourself a certain delay on your own part.",
+      "apply_it": "The next time an impulse hits today, wait ten minutes and picture how you'll feel an hour after giving in. Then decide.",
+      "locator": "The Enchiridion, XXXIV ¶1",
+      "quiz": {
+        "question": "What first step did Epictetus recommend when a pleasure tempts you?",
+        "options": [
+          "Give in quickly to get it over with",
+          "Ask a friend for permission",
+          "Punish yourself for wanting it",
+          "Let it wait and allow yourself a delay"
+        ],
+        "answer": 3,
+        "explanation": "Delay gives reason time to weigh the pleasure against its aftermath."
+      }
+    },
+    {
+      "id": "enchiridion-epictetus--05",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "judgement",
+        "observation"
+      ],
+      "title": "Describe what people do before you judge whether it is wrong",
+      "body": "If someone drinks a lot, Epictetus says, call it drinking a lot, not drinking badly. You don't yet know their reasons, so the label \"badly\" is a guess wearing the costume of a fact.\n\nSeparating observation from evaluation is a small habit with big effects. \"She left the meeting early\" invites curiosity; \"she's so rude\" shuts it down. Describing first keeps you accurate, fairer to others and less likely to stir up anger over a story you invented.",
+      "quote": "Does a man drink much wine? do not say that he does this badly, but say that he drinks much. For before you shall have determined the opinion, how do you know whether he is acting wrong?",
+      "apply_it": "Catch one judgement you make about someone today and restate it as a plain description of what they did.",
+      "locator": "The Enchiridion, XLV ¶1",
+      "quiz": {
+        "question": "Why did Epictetus advise saying a man \"drinks much\" rather than \"drinks badly\"?",
+        "options": [
+          "Because you do not yet know whether he is acting wrongly",
+          "Because drinking is always fine",
+          "Because it sounds more polite",
+          "Because judging is forbidden"
+        ],
+        "answer": 0,
+        "explanation": "Until you know his reasons, a judgement goes beyond what you have actually observed."
+      }
+    },
+    {
+      "id": "enchiridion-epictetus--06",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "procrastination",
+        "self-improvement"
+      ],
+      "title": "Stop scheduling your self-improvement for a future date",
+      "body": "Epictetus scolds the student who keeps setting dates for when he'll finally take himself seriously: next week, after this project, once things calm down. You're an adult already, he says. Waiting for the right teacher or moment is just another delay.\n\nThe promise to start later feels like progress but changes nothing. Improvement only happens in the present day's choices. Pick one standard you already believe in and begin living by it now, imperfectly.",
+      "quote": "How long will you then still defer thinking yourself worthy of the best things, and in no matter transgressing the distinctive reason? … You are no longer a youth, but already a full-grown man.",
+      "apply_it": "Name one change you keep postponing to \"someday\". Do the smallest version of it before tonight.",
+      "locator": "The Enchiridion, LI ¶1",
+      "quiz": {
+        "question": "What was Epictetus criticising in this passage?",
+        "options": [
+          "Working too hard",
+          "Studying philosophy at all",
+          "Endlessly postponing self-improvement",
+          "Listening to teachers"
+        ],
+        "answer": 2,
+        "explanation": "He challenges the habit of setting day after day for when you will attend to yourself."
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "source": {
+    "id": "science-of-getting-rich-wattles",
+    "title": "The Science of Getting Rich",
+    "authors": [
+      "Wallace D. Wattles"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/59844",
+    "attribution": "Wallace D. Wattles, The Science of Getting Rich, Project Gutenberg, public domain",
+    "year": 1910,
+    "notes": "Cards use only the book's practical advice (gratitude, focused daily effort, giving value). Its claims that thought alone creates wealth are not presented.",
+    "publisher": "Project Gutenberg",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "science-of-getting-rich-wattles--01",
+      "topic": "personal-development",
+      "tags": [
+        "gratitude",
+        "mindset",
+        "contentment"
+      ],
+      "title": "Gratitude keeps you from sliding into constant dissatisfaction",
+      "body": "Wattles saw gratitude as a guard against a habit that quietly drains people: dwelling on everything that is wrong, lacking or unfair. A mind fixed on complaints starts to see little else, and that makes it harder to spot opportunities or act well.\n\nGratitude does not mean ignoring problems. It means noticing what is working, who has helped you and what you already have, so that you approach your goals from steadiness rather than resentment. A short daily habit of naming a few good things is enough to shift the tone of a day.",
+      "quote": "Without gratitude you cannot long keep from dissatisfied thought regarding things as they are.",
+      "locator": "Chapter VII. Gratitude ¶16",
+      "apply_it": "Tonight, write down three specific things that went well today and who or what helped make them happen.",
+      "quiz": {
+        "question": "What did Wattles say gratitude protects you from?",
+        "options": [
+          "Hard work",
+          "Taking any risks",
+          "Settling into dissatisfied thought about how things are",
+          "Making plans"
+        ],
+        "answer": 2,
+        "explanation": "Without gratitude, he argued, the mind drifts into dwelling on what is wrong and lacking."
+      }
+    },
+    {
+      "id": "science-of-getting-rich-wattles--02",
+      "topic": "money",
+      "tags": [
+        "career",
+        "promotion",
+        "work-ethic"
+      ],
+      "title": "To move up, first more than fill your current role",
+      "body": "Wattles argued that you advance by becoming bigger than your present position, and you cannot be bigger than a job you are only half doing. People who leave parts of their current work undone rarely get trusted with more.\n\nFor a raise or promotion, this is practical advice. Do every part of your present role well, then go a little beyond it: solve a problem nobody assigned, help a teammate, improve a process. That surplus is what managers and clients notice when they choose who gets more responsibility and pay.",
+      "quote": "You can advance only by being larger than your present place; and no man is larger than his present place who leaves undone any of the work pertaining to that place.",
+      "locator": "Chapter XII. Efficient Action ¶2",
+      "apply_it": "List the parts of your job you tend to neglect. Finish one of them this week, then add one small piece of value nobody asked for.",
+      "quiz": {
+        "question": "According to Wattles, who is not 'larger than his present place'?",
+        "options": [
+          "Someone who asks for a raise",
+          "Someone who leaves undone any of the work of that place",
+          "Someone who works long hours",
+          "Someone who changes jobs often"
+        ],
+        "answer": 1,
+        "explanation": "You cannot outgrow a role while parts of it are still undone."
+      }
+    },
+    {
+      "id": "science-of-getting-rich-wattles--03",
+      "topic": "personal-development",
+      "tags": [
+        "daily-habits",
+        "consistency",
+        "balance"
+      ],
+      "title": "Do each day's work fully, and only that day's",
+      "body": "Wattles treated each day as either a success or a failure on its own terms. If something could be done today and you skip it, that small gap can matter more than you expect. So he urged doing everything that can be done each day.\n\nHe added an important limit: this is not a call to overwork, rush, or cram a week's work into one day. The point is steady, complete days rather than heroic sprints. A finished, sustainable day repeated many times beats bursts of effort followed by collapse.",
+      "quote": "Do, every day, all that you can do that day, and do each act in an efficient manner.",
+      "locator": "Chapter XII. Efficient Action ¶29",
+      "apply_it": "Write down what a complete, realistic day looks like for you tomorrow, then stop when it is done instead of piling on more.",
+      "quiz": {
+        "question": "What limit did Wattles put on doing everything you can each day?",
+        "options": [
+          "Only work on weekdays",
+          "Do not overwork or try to do tomorrow's work today",
+          "Do only what you enjoy",
+          "Never plan ahead"
+        ],
+        "answer": 1,
+        "explanation": "He warned against rushing or doing a week's work in a day; the aim is full, efficient days."
+      }
+    },
+    {
+      "id": "science-of-getting-rich-wattles--04",
+      "topic": "personal-development",
+      "tags": [
+        "efficiency",
+        "focus",
+        "quality"
+      ],
+      "title": "Count the actions that work, not the busy ones",
+      "body": "Wattles pointed out that doing many things badly gets you nowhere. Each act is either effective or not, and a pile of half-hearted, scattered actions adds up to failure no matter how busy it feels.\n\nModern work makes this easy to forget: dozens of messages, meetings and tabs can fill a day while little moves forward. Doing fewer things, and giving each your full attention so it actually lands, usually produces more than frantic multitasking. Judge your day by what it achieved, not by how full it was.",
+      "quote": "The cause of failure is doing too many things in an inefficient manner, and not doing enough things in an efficient manner.",
+      "locator": "Chapter XII. Efficient Action ¶20",
+      "apply_it": "At the end of today, list what you finished well rather than everything you touched. What would you drop tomorrow to make that list longer?",
+      "quiz": {
+        "question": "What did Wattles name as the cause of failure?",
+        "options": [
+          "Doing too many things inefficiently and too few efficiently",
+          "Not working enough hours",
+          "Lack of talent",
+          "Bad luck"
+        ],
+        "answer": 0,
+        "explanation": "It is the quality of each action, not the sheer number, that decides the result."
+      }
+    },
+    {
+      "id": "science-of-getting-rich-wattles--05",
+      "topic": "money",
+      "tags": [
+        "value",
+        "business",
+        "fairness"
+      ],
+      "title": "Give people more value than the price you charge",
+      "body": "Wattles separated cash value, what someone pays, from use value, what they actually get out of it. A book may cost little in paper and ink, but if its ideas help the reader earn far more, the reader was not short-changed.\n\nHis rule was to make every deal give the other person more use value than the cash you take. For a freelancer, shop or employee, that means aiming for customers who feel they got a bargain. It is fair, and it is also what brings people back and makes them recommend you.",
+      "quote": "Give every man more in use value than you take from him in cash value; then you are adding to the life of the world by every business transaction.",
+      "locator": "Chapter VI. How Riches Come to You ¶6",
+      "apply_it": "Pick one product, service or task you deliver. What small addition would make the person receiving it feel they got more than they paid for?",
+      "quiz": {
+        "question": "What did Wattles mean by giving more 'use value' than 'cash value'?",
+        "options": [
+          "Charging as little as possible",
+          "Giving things away for free",
+          "Raising prices to show quality",
+          "Making sure people get more benefit than the money they pay"
+        ],
+        "answer": 3,
+        "explanation": "Use value is the benefit received; he wanted it to exceed the cash paid in every transaction."
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "source": {
+    "id": "cdc-benefits-of-physical-activity",
+    "title": "Benefits of Physical Activity",
+    "authors": [
+      "Centers for Disease Control and Prevention"
+    ],
+    "kind": "guide",
+    "url": "https://www.cdc.gov/physical-activity-basics/benefits/index.html",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.cdc.gov/other/agencymaterials.html",
+    "attribution": "Source: Centers for Disease Control and Prevention (public domain). Available free at cdc.gov. Use does not imply endorsement by CDC, HHS or the U.S. Government.",
+    "publisher": "Centers for Disease Control and Prevention",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "CDC 'Use of Agency Materials' states most CDC website information is public domain (exceptions: contractor/third-party material, which this page text is not marked as). CDC asks for credit, a no-endorsement statement, a note that the material is free on its site, and no substantive changes to reproduced material; our cards are original summaries rather than reproductions, so we credit CDC, carry the disclaimer, and link back. No CDC logos or images used."
+  },
+  "cards": [
+    {
+      "id": "cdc-benefits-of-physical-activity--01",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "mood",
+        "brain"
+      ],
+      "title": "One session of exercise can lift your mood the same day",
+      "body": "You do not have to wait months to feel the benefit of moving. A single bout of moderate or vigorous activity can ease short-term anxiety in adults and sharpen thinking in children, and regular activity tends to improve sleep.\n\nOver the years, staying active helps keep thinking, learning and judgement sharp, and it is linked with a lower risk of depression and anxiety. A brisk walk before a stressful meeting is a practical use of this.",
+      "apply_it": "Before your next stressful task, take a 10-minute brisk walk and notice how you feel afterwards.",
+      "quiz": {
+        "question": "When do some of the brain benefits of physical activity start?",
+        "options": [
+          "Only after a year of training",
+          "Right after a session of moderate to vigorous activity",
+          "Only in childhood",
+          "Never; activity only affects muscles"
+        ],
+        "answer": 1,
+        "explanation": "Some benefits, such as reduced short-term anxiety, can appear right after a single session."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-benefits-of-physical-activity--02",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "heart-health",
+        "guidelines"
+      ],
+      "title": "150 minutes a week is the target, but any amount beats none",
+      "body": "The common benchmark for adults is about 150 minutes a week of moderate activity, like brisk walking, dancing or yard work. That works out to around 22 minutes a day, or 30 minutes on five days. Reaching it lowers the risk of heart disease and stroke and helps blood pressure and cholesterol.\n\nYou do not have to hit the target to benefit. Gains in areas like type 2 diabetes risk start below 150 minutes, and sitting less while adding any activity helps.",
+      "apply_it": "Add up your active minutes from the past week. If you are under 150, add one 15-minute walk to tomorrow.",
+      "quiz": {
+        "question": "Roughly how much daily activity adds up to 150 minutes a week?",
+        "options": [
+          "About 22 minutes",
+          "About 5 minutes",
+          "About 60 minutes",
+          "About 2 hours"
+        ],
+        "answer": 0,
+        "explanation": "150 minutes spread over seven days is about 22 minutes a day."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-benefits-of-physical-activity--03",
+      "topic": "health",
+      "tags": [
+        "steps",
+        "walking",
+        "longevity"
+      ],
+      "title": "More daily steps lower early death risk, up to a point",
+      "body": "Walking more is linked with a lower risk of dying early from any cause. The benefit does keep rising, but it levels off: around 8,000 to 10,000 steps a day for adults under 60, and about 6,000 to 8,000 for those 60 and over.\n\nSmall changes add up. It has been estimated that if US adults aged 40 and over added just 10 more minutes of moderate activity a day, around 110,000 deaths a year could be prevented.",
+      "apply_it": "Check your average daily steps for the last week, then aim for 1,000 more each day this week.",
+      "quiz": {
+        "question": "For adults under 60, around what daily step count does the benefit for early death risk level off?",
+        "options": [
+          "2,000 to 3,000",
+          "20,000 to 25,000",
+          "There is no level-off point",
+          "8,000 to 10,000"
+        ],
+        "answer": 3,
+        "explanation": "For under-60s the benefit levels off at about 8,000 to 10,000 steps; for 60 and over, about 6,000 to 8,000."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-benefits-of-physical-activity--04",
+      "topic": "health",
+      "tags": [
+        "strength-training",
+        "ageing",
+        "falls"
+      ],
+      "title": "Strength and balance work keeps everyday life easy as you age",
+      "body": "Muscles and bones weaken with age unless you use them. Muscle-strengthening activity, like lifting weights or using resistance bands, helps protect bones, joints and muscles, and gradually adding weight or repetitions brings extra benefit at any age.\n\nActive middle-aged and older adults are less likely to struggle with daily tasks like climbing stairs or carrying shopping, and have a lower risk of hip fracture. Combining aerobic, strength and balance activities works best for older adults.",
+      "apply_it": "Try a simple strength move today, such as standing up from a chair and sitting down slowly ten times.",
+      "quiz": {
+        "question": "Which mix of activity benefits older adults most for daily function and fall prevention?",
+        "options": [
+          "Aerobic activity only",
+          "Stretching only",
+          "Aerobic, muscle-strengthening and balance activities together",
+          "Rest and avoiding stairs"
+        ],
+        "answer": 2,
+        "explanation": "A combination of aerobic, strength and balance work gives older adults the most benefit."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-benefits-of-physical-activity--05",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "chronic-conditions",
+        "disease-prevention"
+      ],
+      "title": "Activity lowers disease risk and helps manage long-term conditions",
+      "body": "Regular activity is linked with a lower risk of several common cancers, type 2 diabetes and heart disease, and with fewer serious outcomes from infections such as flu and pneumonia. For people already living with a condition it still helps: it can reduce arthritis pain, help control blood sugar in type 2 diabetes and support independence for people with disabilities.\n\nModerate activity such as brisk walking is safe for most people. If you have a health condition, ask a doctor what level of activity suits you.",
+      "apply_it": "If you have a long-term condition, ask your doctor or nurse at your next visit which activities are right for you.",
+      "quiz": {
+        "question": "What does regular physical activity do for people with arthritis?",
+        "options": [
+          "Makes joint pain worse",
+          "Can reduce pain and improve function and mood",
+          "Has no effect",
+          "Replaces all other care"
+        ],
+        "answer": 1,
+        "explanation": "Activity can reduce arthritis pain and improve function, mood and quality of life."
+      },
+      "health": true
+    }
+  ]
+}

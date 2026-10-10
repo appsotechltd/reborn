@@ -1,0 +1,172 @@
+{
+  "source": {
+    "id": "self-help-samuel-smiles",
+    "title": "Self-Help",
+    "authors": [
+      "Samuel Smiles"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/935",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Samuel Smiles, Self-Help, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1859,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "self-help-samuel-smiles--01",
+      "topic": "personal-development",
+      "tags": [
+        "self-reliance",
+        "effort",
+        "growth"
+      ],
+      "title": "Help from within builds you up; too much outside help weakens",
+      "body": "Smiles opens with the old saying that heaven helps those who help themselves. His point is that real growth comes from your own effort. Outside help has its place, but when everything is done for us, we lose the push to do things ourselves and can end up less capable.\n\nYou can see this in parents who solve every problem for their children, or managers who redo their team's work. Support is most useful when it builds someone's ability rather than replacing it. For yourself, treat tutorials, coaches and clever tools as aids, while making sure you still do the hard part.",
+      "quote": "Help from without is often enfeebling in its effects, but help from within invariably invigorates.",
+      "locator": "Chapter I. Self-help—national and Individual ¶3",
+      "apply_it": "Pick one thing you usually get someone else, or an app, to do for you. Do it yourself this week, even if badly at first.",
+      "quiz": {
+        "question": "What does Smiles say about help from outside?",
+        "options": [
+          "It is always harmful",
+          "It can weaken us, while effort from within strengthens us",
+          "It is the main source of growth",
+          "It should always be refused"
+        ],
+        "answer": 1,
+        "explanation": "He calls outside help 'often enfeebling' because it can remove the need to grow, while self-help invigorates."
+      }
+    },
+    {
+      "id": "self-help-samuel-smiles--02",
+      "topic": "productivity",
+      "tags": [
+        "time",
+        "learning",
+        "small-steps"
+      ],
+      "title": "Odd moments can add up to a real education",
+      "body": "Smiles collects people who learned big things in scraps of time: a doctor who translated a Latin poem while riding between patients, a man who learned Greek walking to and from work, and a blacksmith who mastered many languages in his 'odd moments'. He reckoned an hour a day taken from trivial pursuits could carry an ordinary person a long way towards mastering a subject.\n\nModern life is full of such fragments: queues, commutes, the minutes before a meeting. Most go to the phone by default. Keeping a language app, an audiobook or a notebook ready turns them into progress.",
+      "quote": "With perseverance, the very odds and ends of time may be worked up into results of the greatest value.",
+      "locator": "Chapter V. Helps and Opportunities—scientific Pursuits ¶23",
+      "apply_it": "Choose one subject you'd like to learn. Put a way to study it on your phone's home screen and use it in your next three spare moments.",
+      "quiz": {
+        "question": "What could an hour a day of focused study achieve, according to Smiles?",
+        "options": [
+          "Carry an ordinary person far towards mastering a science",
+          "Very little",
+          "Help only with hobbies",
+          "Replace a full-time job"
+        ],
+        "answer": 0,
+        "explanation": "He argued that an hour a day withdrawn from frivolous pursuits could take a person of ordinary ability far towards mastering a science."
+      }
+    },
+    {
+      "id": "self-help-samuel-smiles--03",
+      "topic": "money",
+      "tags": [
+        "debt",
+        "borrowing",
+        "budgeting",
+        "honesty"
+      ],
+      "title": "Live within your means, because one debt leads to the next",
+      "body": "Smiles calls living within your means a matter of honesty: spend beyond your income and you're living on someone else's money. He warns that the first borrowing is the easiest to avoid. Once it's done, the second comes more easily, then the excuses to creditors begin, and soon the borrower is tangled up.\n\nHe cites the painter Haydon, who dated his decline to the day he first borrowed. Today 'buy now, pay later' and credit cards make that first step on everyday purchases almost frictionless. The protective habit is the same: if you can't pay for a treat without borrowing, wait until you can.",
+      "quote": "The first step in debt is like the first step in falsehood; almost involving the necessity of proceeding in the same course, debt following debt, as lie follows lie.",
+      "locator": "Chapter X. Money—its Use and Abuse ¶19",
+      "apply_it": "List anything you're paying off over time. For your next nice-to-have, save first and buy only when you can pay in full.",
+      "quiz": {
+        "question": "Why does Smiles warn especially about the first debt?",
+        "options": [
+          "It has the highest interest",
+          "It is against the law",
+          "It only affects the rich",
+          "It makes the next debt easier and can start a chain"
+        ],
+        "answer": 3,
+        "explanation": "Like a first lie, a first debt tends to pull you into more: 'debt following debt, as lie follows lie'."
+      }
+    },
+    {
+      "id": "self-help-samuel-smiles--04",
+      "topic": "personal-development",
+      "tags": [
+        "failure",
+        "learning",
+        "resilience",
+        "experimentation"
+      ],
+      "title": "Failures teach more than successes do",
+      "body": "Smiles argues that we learn far more from failure than from success, because finding out what won't work is often how we discover what will. He quotes the engineer James Watt wishing for a 'book of blots', a history of failures, and the chemist Humphry Davy saying his most important discoveries came from things that went wrong.\n\nThe same holds in a startup, a lab or a kitchen. Teams that review mistakes openly improve faster than those that hide them. Keeping your own record of what didn't work, and why, turns setbacks into useful data instead of shame.",
+      "quote": "We learn wisdom from failure much more than from success. … probably he who never made a mistake never made a discovery.",
+      "locator": "Chapter XI. Self-culture—facilities and Difficulties ¶44",
+      "apply_it": "Start a 'book of blots': write down one recent thing that didn't work, why you think it failed, and what you'd try next.",
+      "quiz": {
+        "question": "What did the engineer James Watt say his field most needed?",
+        "options": [
+          "More funding",
+          "Better tools",
+          "A history of failures",
+          "Faster workers"
+        ],
+        "answer": 2,
+        "explanation": "Watt wanted 'a book of blots', a record of failures, because mistakes reveal what works."
+      }
+    },
+    {
+      "id": "self-help-samuel-smiles--05",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "single-tasking",
+        "method"
+      ],
+      "title": "The shortest way to do many things is one thing at a time",
+      "body": "Smiles quotes the clergyman Richard Cecil, famous for getting through huge amounts of work, whose rule was to do only one thing at once. The Dutch statesman De Witt said the same: when he had dispatches to write, he thought of nothing else until they were finished.\n\nCecil compared method to packing a box: a good packer fits in half as much again as a bad one. Juggling tabs, messages and half-done tasks feels busy but leaks time with every switch. Finishing one thing before starting the next is often the quickest way through a long list.",
+      "quote": "The shortest way to do many things is to do only one thing at once",
+      "locator": "Chapter IX. Men of Business ¶22",
+      "apply_it": "Pick your most important task. Close every other tab and app, and work on it alone until it's done or 45 minutes have passed.",
+      "quiz": {
+        "question": "How did Cecil describe the value of method?",
+        "options": [
+          "Like a clock ticking",
+          "Like packing a box: a good packer fits in much more",
+          "Like running a race",
+          "Like planting seeds"
+        ],
+        "answer": 1,
+        "explanation": "'Method is like packing things in a box; a good packer will get in half as much again as a bad one.'"
+      }
+    },
+    {
+      "id": "self-help-samuel-smiles--06",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "promptness",
+        "work-habits"
+      ],
+      "title": "Do what's due right away, and relax after, not before",
+      "body": "Walter Scott, advising a young man starting a new job, warned him against dawdling. His rule was to do at once whatever needs doing and to take recreation after the work, never before it. He compared business to a marching regiment: if the front stalls, the rear piles up in confusion. Tasks you don't deal with promptly stack up behind you until everything presses at once.\n\nThat's the familiar inbox that grows while you 'just check' something else first. Clearing small tasks the moment they arrive, and saving the break as a reward, keeps the queue moving.",
+      "quote": "Do instantly whatever is to be done, and take the hours of recreation after business, never before it.",
+      "locator": "Chapter IX. Men of Business ¶25",
+      "apply_it": "Today, handle any task under two minutes as soon as it arrives, and save your break until after the next piece of real work.",
+      "quiz": {
+        "question": "What did Scott advise about recreation?",
+        "options": [
+          "Take it after business, never before",
+          "Take it first to recharge",
+          "Avoid it entirely",
+          "Take it only at weekends"
+        ],
+        "answer": 0,
+        "explanation": "Doing the work first stops tasks piling up behind you, like the rear of a regiment when the front stalls."
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "source": {
+    "id": "art-of-money-getting-barnum",
+    "title": "The Art of Money Getting",
+    "authors": [
+      "P. T. Barnum"
+    ],
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/p-t-barnum/the-art-of-money-getting",
+    "attribution": "P. T. Barnum, The Art of Money Getting, Standard Ebooks, public domain",
+    "year": 1880,
+    "publisher": "Standard Ebooks",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "art-of-money-getting-barnum--01",
+      "topic": "money",
+      "tags": [
+        "debt",
+        "spending",
+        "credit"
+      ],
+      "title": "Avoid debt for things you will use up",
+      "body": "Barnum warned young people against borrowing for food, clothes and other things that are gone long before the bill is. Paying off such debt means working for something you no longer have, which he called working for a dead horse. He made an exception for credit used to buy something that earns its own repayment.\n\nBuy-now-pay-later, store cards and credit card balances are the modern form. They make spending feel painless today and turn future paychecks into payments for past purchases.",
+      "quote": "Grunting and groaning and working for what he has eaten up or worn out, and now when he is called upon to pay up, he has nothing to show for his money; this is properly termed “working for a dead horse.”",
+      "locator": "Avoid Debt ¶1",
+      "apply_it": "Check your current balances. Is any of it for something you have already eaten, worn out or forgotten? Make a plan to clear that first.",
+      "quiz": {
+        "question": "What kind of borrowing did Barnum see as acceptable?",
+        "options": [
+          "Borrowing for new clothes",
+          "Borrowing for meals out",
+          "Credit used to buy something that will turn a profit",
+          "Any borrowing under sixty days"
+        ],
+        "answer": 2,
+        "explanation": "He excepted credit used to buy something that helps repay itself, like a merchant's stock or a farmer's manure."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--02",
+      "topic": "money",
+      "tags": [
+        "co-signing",
+        "lending",
+        "family"
+      ],
+      "title": "Never guarantee a loan you could not afford to lose",
+      "body": "Barnum's rule was blunt: do not co-sign or guarantee anyone's debt, even a parent's or sibling's, for more than you could lose without caring, unless you hold solid security. He had watched easy guarantees lead borrowers into risky side ventures and drag their friends down with them.\n\nCo-signing a car loan, a lease or a business credit line is the modern version. If the borrower fails, the debt becomes yours. Helping family is generous; just treat any guarantee as money you may actually have to pay.",
+      "quote": "I hold that no man ought ever to endorse a note or become security, for any man, be it his father or brother, to a greater extent than he can afford to lose and care nothing about, without taking good security.",
+      "locator": "Don’t Endorse Without Security ¶1",
+      "apply_it": "Before agreeing to guarantee anything, ask yourself: if I had to pay this in full tomorrow, would I be fine?",
+      "quiz": {
+        "question": "What was Barnum's limit on co-signing for someone without security?",
+        "options": [
+          "Only for family members",
+          "Never more than you can afford to lose and not care about",
+          "Up to half your fortune",
+          "Any amount if the person seems wealthy"
+        ],
+        "answer": 1,
+        "explanation": "He allowed it only up to an amount you could lose without it mattering, unless you took good security."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--03",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "speculation",
+        "risk"
+      ],
+      "title": "Don't bet your savings on things you don't understand",
+      "body": "Barnum saw many successful people go broke the same way. Having done well in their own line of work, they were flattered into a 'sure thing' outside it, put in more and more money as the venture demanded, and lost everything.\n\nThe pattern repeats with hot tips, hyped coins and a friend's can't-miss startup. Success in one field does not make you an expert in another. If you want to try something unfamiliar, keep the amount small enough that losing it would not hurt your life.",
+      "quote": "let the sums thus invested be moderate in amount, and never let a man foolishly jeopardize a fortune that he has earned in a legitimate way, by investing it in things in which he has had no experience.",
+      "locator": "Beware of “Outside Operations” ¶4",
+      "apply_it": "List your investments. For each one, could you explain in two sentences how it makes money? Reduce anything you can't.",
+      "quiz": {
+        "question": "What was Barnum's advice about investing outside your own field?",
+        "options": [
+          "Avoid it completely, always",
+          "Keep the amounts moderate and never risk your hard-earned fortune",
+          "Go all in when friends say you are lucky",
+          "Only invest in newspapers"
+        ],
+        "answer": 1,
+        "explanation": "He allowed modest bets on promising ventures but warned against risking a fortune on things you have no experience in."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--04",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "systems",
+        "time-management"
+      ],
+      "title": "Do one thing at a time and finish it",
+      "body": "Barnum believed that working by a simple system, with a time and place for things, prompt follow-through and punctual appointments, gets twice as much done with half the stress. The person who half-does one task, jumps to another and half-does that never knows when the day's work is finished.\n\nHe also warned against overdoing it: a system so elaborate that it becomes red tape is no better. The aim is finished work and free time, not perfect filing.",
+      "quote": "By introducing system into all your transactions, doing one thing at a time, always meeting appointments with punctuality, you find leisure for pastime and recreation",
+      "locator": "Be Systematic ¶1",
+      "apply_it": "Pick the one task that matters most today. Close other tabs and notifications and work on it until it is done.",
+      "quiz": {
+        "question": "What did Barnum say a good system gives you besides more output?",
+        "options": [
+          "Leisure for pastime and recreation",
+          "A larger office",
+          "More meetings",
+          "Fewer customers"
+        ],
+        "answer": 0,
+        "explanation": "Doing one thing at a time and being punctual frees up time for rest and recreation."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--05",
+      "topic": "productivity",
+      "tags": [
+        "excellence",
+        "career",
+        "mastery"
+      ],
+      "title": "The top of any field is never crowded",
+      "body": "Barnum argued that no trade is overcrowded at the top. The best carpenter, doctor or merchant in town is always in demand. Most people, he said, chase quick money and do their work superficially, which leaves room for anyone who does it thoroughly and honestly.\n\nIn a crowded job market, being merely adequate means competing with everyone. Becoming clearly excellent at one thing, and reliable with it, puts you in a much smaller group that clients and employers actively seek out.",
+      "quote": "No profession, trade, or calling, is overcrowded in the upper story.",
+      "locator": "Don’t Get Above Your Business ¶18",
+      "apply_it": "Name one skill central to your work. What is one deliberate step you can take this month to get noticeably better at it?",
+      "quiz": {
+        "question": "Why did Barnum think the best people in any trade always have enough work?",
+        "options": [
+          "Because they charge the least",
+          "Because they advertise the most",
+          "Because they work in big cities",
+          "Because the top of every field has room and is sought out"
+        ],
+        "answer": 3,
+        "explanation": "Few people work thoroughly, so whoever excels in their line is always in demand."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--06",
+      "topic": "business",
+      "tags": [
+        "marketing",
+        "advertising",
+        "persistence"
+      ],
+      "title": "Market a genuinely good product, and keep at it",
+      "body": "Barnum, a master showman, insisted on two rules. First, only promote something that truly delivers; a poor product can sell once, but buyers will denounce you and not return. Second, do not give up after a few attempts. People need to see a message many times before they notice, read and finally act on it.\n\nThis still applies to posts, emails and ads. One launch announcement is rarely enough. Steady, honest visibility for a product people are glad they bought is what builds lasting trade.",
+      "quote": "So a man who advertises at all must keep it up until the public know who and what he is, and what his business is, or else the money invested in advertising is lost.",
+      "locator": "Advertise Your Business ¶7",
+      "apply_it": "If you are promoting something, plan five honest, useful touchpoints over the next month instead of one big announcement.",
+      "quiz": {
+        "question": "Which pair of rules did Barnum give for advertising?",
+        "options": [
+          "Be loud and advertise once",
+          "Advertise anything that sells",
+          "Rely only on word of mouth",
+          "Promote only genuine goods and keep advertising until people know you"
+        ],
+        "answer": 3,
+        "explanation": "A spurious article fails in the end, and a few insertions are wasted; you need a good product and persistence."
+      }
+    },
+    {
+      "id": "art-of-money-getting-barnum--07",
+      "topic": "business",
+      "tags": [
+        "customer-service",
+        "kindness",
+        "reputation"
+      ],
+      "title": "Courtesy is the best capital a business can invest",
+      "body": "Barnum said fine shops and flashy ads are wasted if customers are treated rudely. People return to businesses that treat them well and give fair value, and they abandon those that squeeze every deal as if they will never meet again.\n\nIn an age of online reviews, that is truer than ever. A patient support reply, a fair refund or a friendly word costs little and builds loyalty, while one dismissive interaction can travel far. Treat every customer as someone you hope to see again.",
+      "quote": "Politeness and civility are the best capital ever invested in business.",
+      "locator": "Be Polite and Kind to Your Customers ¶1",
+      "apply_it": "In your next interaction with a customer, client or colleague, add one small act of courtesy you would normally skip.",
+      "quiz": {
+        "question": "What happens, in Barnum's view, to those who drive sharp bargains as if they will never see customers again?",
+        "options": [
+          "They grow rich quickly",
+          "They win loyal fans",
+          "They never see those customers again",
+          "They avoid all complaints"
+        ],
+        "answer": 2,
+        "explanation": "Customers treated that way do not come back, which is exactly what the sharp dealer assumed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "source": {
+    "id": "aesops-fables",
+    "title": "Aesop’s Fables",
+    "authors": [
+      "Aesop"
+    ],
+    "translator": "V. S. Vernon Jones",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/aesop/fables/v-s-vernon-jones",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Aesop, Fables (trans. V. S. Vernon Jones), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": -560,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "aesops-fables--01",
+      "topic": "money",
+      "tags": [
+        "greed",
+        "patience",
+        "compounding"
+      ],
+      "title": "Don't destroy a steady source of income chasing a quick fortune",
+      "body": "In the fable, a couple own a goose that lays one golden egg a day. Impatient to be rich, they cut it open to get all the gold at once, find nothing inside, and lose the daily egg too.\n\nThe modern geese are steady salaries, dividend-paying investments, loyal customers and your own health. Cashing them out early, overworking until you burn out, or squeezing clients for one big sale can kill the thing that kept paying. Protect reliable sources and let them keep producing.",
+      "quote": "Much wants more and loses all.",
+      "locator": "The Goose That Laid the Golden Eggs ¶2",
+      "apply_it": "List your 'golden geese': income, health, key relationships. Pick one and name a shortcut you'll avoid that could harm it.",
+      "quiz": {
+        "question": "What did the couple lose by killing the goose?",
+        "options": [
+          "Nothing, they became rich",
+          "Both the hoped-for fortune and the daily golden egg",
+          "Only the goose's feathers",
+          "Their house"
+        ],
+        "answer": 1,
+        "explanation": "Chasing all the wealth at once, they lost both the imagined fortune and the steady income."
+      }
+    },
+    {
+      "id": "aesops-fables--02",
+      "topic": "money",
+      "tags": [
+        "planning",
+        "overconfidence",
+        "budgeting"
+      ],
+      "title": "Don't spend money you haven't received yet",
+      "body": "A milkmaid walking home plans everything the milk will buy: butter, eggs, chickens, a new dress, admiring suitors. Lost in the daydream, she tosses her head and the pail falls, and every plan spills with it.\n\nThe modern version is spending an expected bonus, a pending sale or a tax refund before it lands, or building a budget on best-case income. Plans are fine; commitments based on money not yet in hand are risky. Wait until it arrives, then decide.",
+      "quote": "Do not count your chickens before they are hatched.",
+      "locator": "The Milkmaid and Her Pail ¶2",
+      "apply_it": "Check whether any current plan or purchase assumes money you haven't received yet. Delay it until the money arrives.",
+      "quiz": {
+        "question": "What was the milkmaid's mistake?",
+        "options": [
+          "She planned on gains not yet secured and lost focus on the present",
+          "She sold her milk too cheaply",
+          "She refused help",
+          "She went to the wrong market"
+        ],
+        "answer": 0,
+        "explanation": "Counting on future gains made her careless with what she actually had."
+      }
+    },
+    {
+      "id": "aesops-fables--03",
+      "topic": "business",
+      "tags": [
+        "execution",
+        "ideas",
+        "ownership"
+      ],
+      "title": "A plan is only as good as the person who will actually carry it out",
+      "body": "The mice agree a brilliant plan: put a bell on the cat so they'll hear it coming. Everyone applauds until an old mouse asks who will bell the cat. Nobody volunteers.\n\nTeams fall into this all the time. Meetings produce clever strategies with no owner, no budget and no realistic path to doing the risky part. Before celebrating an idea, ask who will do it, how, and by when. Ideas are cheap; the hard, dangerous step is where the value is.",
+      "quote": "I agree with you all that the plan before us is an admirable one: but may I ask who is going to bell the cat?",
+      "locator": "The Mice in Council ¶1",
+      "apply_it": "For one plan your team agreed recently, write who owns it, the first step and a date. If nobody does, raise it.",
+      "quiz": {
+        "question": "What did the old mouse point out?",
+        "options": [
+          "The bell was too expensive",
+          "They should move house",
+          "The cat was friendly",
+          "Nobody had said who would actually bell the cat"
+        ],
+        "answer": 3,
+        "explanation": "A plan without someone able and willing to carry it out is worthless."
+      }
+    },
+    {
+      "id": "aesops-fables--04",
+      "topic": "business",
+      "tags": [
+        "teamwork",
+        "unity",
+        "conflict"
+      ],
+      "title": "A team that pulls together is far harder to break",
+      "body": "A father, tired of his quarrelling sons, asks each to break a bundle of sticks. None can. Then he hands them the sticks one at a time, and they snap easily. United, he tells them, they are strong; divided, they are easy prey.\n\nThe same holds for teams, families and partnerships. Internal squabbles waste energy that could face real challenges, from competitors to a tough market. Disagreements are normal, but settling them and presenting a united front makes a group far more resilient.",
+      "quote": "Union is strength.",
+      "locator": "Father and Sons ¶2",
+      "apply_it": "Think of one ongoing friction in your team or family. Take one step to resolve it this week, such as a direct, calm conversation.",
+      "quiz": {
+        "question": "What did the bundle of sticks demonstrate?",
+        "options": [
+          "Sticks are fragile",
+          "The father was stronger than his sons",
+          "Together the sons were strong; separately they were weak",
+          "Wood should be stored in bundles"
+        ],
+        "answer": 2,
+        "explanation": "Bound together, the sticks resisted; one by one, they broke easily, just like a divided family."
+      }
+    },
+    {
+      "id": "aesops-fables--05",
+      "topic": "relationships",
+      "tags": [
+        "persuasion",
+        "influence",
+        "kindness"
+      ],
+      "title": "Warmth persuades people better than pressure does",
+      "body": "The North Wind and the Sun compete to make a traveller take off his cloak. The harder the wind blows, the tighter he holds it. The Sun simply shines warmly, and soon he removes it himself.\n\nPushing people often makes them dig in, whether it's a colleague, a teenager or a customer. Shouting, nagging and threats trigger resistance. Making the alternative appealing, listening and creating a comfortable setting tend to get far better results. Ask yourself whether you're blowing harder or shining warmer.",
+      "quote": "Persuasion is better than force.",
+      "locator": "The North Wind and the Sun ¶2",
+      "apply_it": "Next time you want someone to change something, replace one demand with a genuine question or an offer of help.",
+      "quiz": {
+        "question": "Why did the Sun succeed where the North Wind failed?",
+        "options": [
+          "It was stronger",
+          "Gentle warmth led the traveller to choose to remove his cloak",
+          "It tricked the traveller",
+          "The wind gave up early"
+        ],
+        "answer": 1,
+        "explanation": "Force made the traveller resist; warmth made him act willingly."
+      }
+    },
+    {
+      "id": "aesops-fables--06",
+      "topic": "relationships",
+      "tags": [
+        "trust",
+        "credibility",
+        "honesty"
+      ],
+      "title": "Every false alarm spends trust you may badly need later",
+      "body": "A shepherd boy cries 'Wolf!' for fun, and the villagers come running for nothing, again and again. When a wolf really arrives, nobody believes him, and the flock is lost.\n\nCredibility works like a savings account. Exaggerated excuses, fake urgency at work, or crying crisis over small things all draw it down. When you truly need people to act, the account is empty. Being reliable and measured in what you say keeps your word worth something.",
+      "quote": "You cannot believe a liar even when he tells the truth.",
+      "locator": "The Shepherd’s Boy and the Wolf ¶2",
+      "apply_it": "Notice one place where you tend to exaggerate urgency, such as 'ASAP' emails. Use a calmer, accurate signal this week.",
+      "quiz": {
+        "question": "Why did no one come when the wolf really appeared?",
+        "options": [
+          "The boy's earlier false alarms had destroyed his credibility",
+          "They were asleep",
+          "The wolf was too fast",
+          "They didn't hear him"
+        ],
+        "answer": 0,
+        "explanation": "Repeated lies meant the truth was ignored when it mattered."
+      }
+    },
+    {
+      "id": "aesops-fables--07",
+      "topic": "personal-development",
+      "tags": [
+        "consistency",
+        "persistence",
+        "overconfidence"
+      ],
+      "title": "Steady daily effort beats bursts of talent followed by coasting",
+      "body": "The hare, sure of his speed, takes a nap mid-race. The tortoise keeps plodding and wins. Talent and speed lose to consistency when the talented one stops showing up.\n\nThis plays out in learning a language, saving money, training for fitness or building a business. Steady small steps compound, while intense sprints followed by long breaks tend to stall. You don't need to be the fastest; you need to keep going. And if you are the hare, don't let a head start make you complacent.",
+      "quote": "Slow and steady wins the race.",
+      "locator": "The Hare and the Tortoise ¶2",
+      "apply_it": "Pick one goal and set a small daily minimum you can keep even on bad days, such as ten minutes. Start today.",
+      "quiz": {
+        "question": "Why did the hare lose the race?",
+        "options": [
+          "He was slower",
+          "The fox cheated",
+          "The course was unfair",
+          "He grew complacent and stopped while the tortoise kept going"
+        ],
+        "answer": 3,
+        "explanation": "Overconfident, the hare rested; the tortoise's steady progress won."
+      }
+    },
+    {
+      "id": "aesops-fables--08",
+      "topic": "personal-development",
+      "tags": [
+        "people-pleasing",
+        "decisions",
+        "criticism"
+      ],
+      "title": "Trying to please everyone usually ends up pleasing no one",
+      "body": "A miller and his son take their donkey to market. Each passer-by criticises how they do it, so they keep switching, until they end up carrying the donkey on a pole. People laugh, the donkey panics and drowns, and they lose everything.\n\nWhen every opinion counts, decisions become absurd. Feedback is useful, but it has to be filtered through your own goals. Decide what you're trying to achieve, listen to people who share that aim, and accept that some will always disapprove.",
+      "quote": "convinced that in trying to please all he had pleased none, and had lost his Ass into the bargain.",
+      "locator": "The Miller, His Son, and Their Ass ¶1",
+      "apply_it": "For one decision you're stuck on, write your actual goal at the top. Cross out any advice that doesn't serve it.",
+      "quiz": {
+        "question": "What lesson did the miller learn?",
+        "options": [
+          "Donkeys should be carried",
+          "Strangers give the best advice",
+          "In trying to please everyone he pleased no one",
+          "Never go to market"
+        ],
+        "answer": 2,
+        "explanation": "Changing course for every critic led to an absurd result and the loss of the donkey."
+      }
+    }
+  ]
+}
