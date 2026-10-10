@@ -8,5 +8,6 @@ cd "$(dirname "$0")/.."
 dir=.cache/chatterbox
 mkdir -p "$dir"
 python3 -m venv "$dir/venv"
-"$dir/venv/bin/pip" install --quiet "chatterbox-tts==0.1.7"
+# setuptools 81+ drops pkg_resources, which the Perth watermarker still imports.
+"$dir/venv/bin/pip" install --quiet "setuptools<81" "chatterbox-tts==0.1.7"
 echo "Chatterbox ready in $dir (models download on first use)"
