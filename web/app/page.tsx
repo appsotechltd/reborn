@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CardList } from "@/components/CardPreview";
 import { JsonLd } from "@/components/JsonLd";
+import { Timeline } from "@/components/Timeline";
 import { Unavailable } from "@/components/Unavailable";
-import { excerpt, TOPICS } from "@/lib/content";
+import { TOPICS } from "@/lib/content";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
-import { getDaily, getFeed, getTopics, loadOr } from "@/lib/server-api";
-import type { Card, Topic } from "@/lib/types";
+import { getTimeline, getTopics, loadOr } from "@/lib/server-api";
+import type { PostsResponse, Topic } from "@/lib/types";
 
 export const revalidate = 600;
 
@@ -23,20 +23,19 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
+  // The anonymous first page is rendered on the server so crawlers and
+  // signed-out visitors get real content; signed-in readers then get their own.
   const { data, ok } = await loadOr(
     async () => {
-      const [daily, topics, feed] = await Promise.all([getDaily(), getTopics(), getFeed({ limit: 6 })]);
-      return { daily, topics, feed };
+      const [timeline, topics] = await Promise.all([getTimeline(10), getTopics()]);
+      return { timeline, topics };
     },
-    null as null | { daily: { date: string; card: Card }; topics: Topic[]; feed: { cards: Card[] } },
+    null as null | { timeline: PostsResponse; topics: Topic[] },
   );
-
   const topics: Topic[] = data?.topics ?? TOPICS.map((t) => ({ ...t, card_count: 0 }));
-  const daily = data?.daily;
-  const latest = (data?.feed.cards ?? []).filter((c) => c.id !== daily?.card.id);
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-10">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -51,75 +50,31 @@ export default async function HomePage() {
         }}
       />
       <section aria-labelledby="hero-title" className="mx-auto max-w-read text-center">
-        <h1 id="hero-title" className="font-serif text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+        <h1 id="hero-title" className="font-serif text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
           Big ideas, one minute at a time.
         </h1>
-        <p className="mt-4 text-lg text-muted text-pretty">
-          Reborn turns ideas from great books and open sources into short idea cards you can read, apply and
-          remember. Every card credits where it came from.
+        <p className="mt-3 text-muted text-pretty">
+          Short idea cards from great books and open sources, each credited to where it came from.
         </p>
       </section>
 
-      {!ok ? <Unavailable what="today's idea" /> : null}
-
-      {daily ? (
-        <section aria-labelledby="daily-title" className="mx-auto max-w-read">
-          <p className="eyebrow">
-            Today&apos;s idea · <time dateTime={daily.date}>{daily.date}</time>
-          </p>
-          <div className="panel mt-3 p-6 sm:p-8">
-            <h2 id="daily-title" className="font-serif text-2xl font-semibold leading-snug sm:text-3xl">
-              <Link href={`/ideas/${daily.card.id}`} className="hover:underline">
-                {daily.card.title}
-              </Link>
-            </h2>
-            <p className="prose-reborn mt-3 text-muted">{excerpt(daily.card.body, 220)}</p>
-            <p className="mt-4 text-sm text-muted">{daily.card.credit}</p>
-            <Link href={`/ideas/${daily.card.id}`} className="btn btn-primary mt-5">
-              Read the idea <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </section>
-      ) : null}
-
-      <section aria-labelledby="topics-title">
-        <h2 id="topics-title" className="font-serif text-2xl font-semibold">
-          Explore by topic
-        </h2>
-        <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <nav aria-label="Topics" className="mx-auto max-w-3xl">
+        <ul className="flex flex-wrap justify-center gap-2">
           {topics.map((t) => (
             <li key={t.slug}>
-              <Link
-                href={`/topics/${t.slug}`}
-                className="panel flex h-full flex-col justify-between p-4 transition-colors hover:border-accent"
-              >
-                <span className="font-semibold">{t.name}</span>
-                {ok ? (
-                  <span className="mt-1 text-sm text-muted">
-                    {t.card_count === 0 ? "Coming soon" : `${t.card_count} ${t.card_count === 1 ? "idea" : "ideas"}`}
-                  </span>
-                ) : null}
+              <Link href={`/topics/${t.slug}`} className="chip min-h-8 hover:text-fg">
+                {t.name}
               </Link>
             </li>
           ))}
         </ul>
-      </section>
+      </nav>
 
-      {latest.length ? (
-        <section aria-labelledby="latest-title">
-          <div className="flex items-baseline justify-between gap-4">
-            <h2 id="latest-title" className="font-serif text-2xl font-semibold">
-              More ideas
-            </h2>
-            <Link href="/sources" className="link text-sm">
-              Browse all sources
-            </Link>
-          </div>
-          <div className="mt-4">
-            <CardList cards={latest} />
-          </div>
-        </section>
-      ) : null}
+      {ok && data ? (
+        <Timeline initialPosts={data.timeline.posts} initialCursor={data.timeline.next_cursor} />
+      ) : (
+        <Unavailable what="the timeline" />
+      )}
     </div>
   );
 }

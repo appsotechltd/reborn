@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useCallback, type ReactNode } from "react";
 import { useAuth } from "@/lib/auth";
 
 export function SignInPrompt({ message }: { message?: string }) {
@@ -49,4 +49,13 @@ export function ErrorNote({ error }: { error: string | null }) {
       {error}
     </p>
   );
+}
+
+/** Returns a function that sends a signed-out visitor to sign in, then back to this page. */
+export function useSignInRedirect() {
+  const router = useRouter();
+  const pathname = usePathname();
+  return useCallback(() => {
+    router.push(`/signin?next=${encodeURIComponent(pathname || "/")}`);
+  }, [router, pathname]);
 }
