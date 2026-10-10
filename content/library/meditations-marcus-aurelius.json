@@ -1,0 +1,221 @@
+{
+  "source": {
+    "id": "meditations-marcus-aurelius",
+    "title": "Meditations",
+    "authors": [
+      "Marcus Aurelius"
+    ],
+    "translator": "George Long",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Marcus Aurelius, Meditations (trans. George Long), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 180,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "meditations-marcus-aurelius--01",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "difficult-people",
+        "morning-routine"
+      ],
+      "title": "Rehearse the difficult people you will meet before the day begins",
+      "body": "Marcus started his mornings by expecting friction: someone would be pushy, ungrateful or dishonest. This was not gloom. It was preparation. When rudeness has been forecast, it lands as weather rather than as a personal attack, and you keep your footing.\n\nHe also reminded himself why people behave badly: mostly they don't see clearly what is good. That framing turns a colleague's snippy email or a stranger's road rage into something to handle, not something to carry around all afternoon.",
+      "quote": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial.",
+      "apply_it": "Before you open messages today, picture one person likely to irritate you and decide on the calm reply you'll give.",
+      "locator": "Book II ¶1",
+      "quiz": {
+        "question": "What was the purpose of Marcus expecting difficult people each morning?",
+        "options": [
+          "So rudeness would not catch him off guard",
+          "To avoid meeting anyone difficult",
+          "To find reasons to cut people off",
+          "To prove he was superior to others"
+        ],
+        "answer": 0,
+        "explanation": "Anticipating friction let him meet it calmly instead of being ambushed by it."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--02",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "judgement",
+        "reframing"
+      ],
+      "title": "The pain comes from your judgement of the event, not the event",
+      "body": "When something outside you hurts, Marcus suggests looking for the verdict you have attached to it. A cancelled plan, a critical comment or a slow reply is just a fact. The sting comes from the story: this is unfair, this means I'm failing, this ruins everything.\n\nThat is good news, because the story is the part you can edit. You can't always change what happened, but you can question the interpretation, and often the distress shrinks the moment you do.",
+      "quote": "If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgement about it. And it is in thy power to wipe out this judgement now.",
+      "apply_it": "Name one thing bothering you today. Write the bare fact in one line, then the story you added. Which part is actually hurting?",
+      "locator": "Book VIII ¶49",
+      "quiz": {
+        "question": "According to Marcus, where does the disturbance from an external event come from?",
+        "options": [
+          "The event itself",
+          "Other people's reactions",
+          "Bad luck",
+          "Your own judgement about it"
+        ],
+        "answer": 3,
+        "explanation": "He argues the event is neutral; your judgement about it causes the pain, and that judgement is in your power."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--03",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "essentialism",
+        "focus"
+      ],
+      "title": "Ask \"Is this necessary?\" to cut actions and thoughts",
+      "body": "Most of what we say and do in a day isn't needed. Marcus noticed that stripping out the unnecessary gives you two rewards at once: more free time and less agitation.\n\nHe pushes the idea further than tidying a to-do list. Unnecessary thoughts breed unnecessary actions, so the filter should run on your attention too: the extra tab, the reply-all, the replayed argument. Asking the question in the moment works better than a big declutter once a year.",
+      "quote": "For the greatest part of what we say and do being unnecessary, if a man takes this away, he will have more leisure and less uneasiness. Accordingly on every occasion a man should ask himself, Is this one of the unnecessary things?",
+      "apply_it": "Three times today, just before you start something, ask: is this necessary? Drop or postpone one thing that isn't.",
+      "locator": "Book IV ¶26",
+      "quiz": {
+        "question": "What two benefits did Marcus link to removing unnecessary acts?",
+        "options": [
+          "Fame and wealth",
+          "More leisure and less uneasiness",
+          "More friends and more influence",
+          "Better health and longer life"
+        ],
+        "answer": 1,
+        "explanation": "Doing fewer, necessary things leaves more free time and less inner unrest."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--04",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "obstacles",
+        "resilience"
+      ],
+      "title": "Treat every obstacle as material you can work with",
+      "body": "Marcus compared the mind to nature, which absorbs whatever blocks it and turns it into part of itself. A setback doesn't have to be a wall; it can be raw material.\n\nA rejected proposal becomes feedback for the next draft. A delayed train becomes reading time. A tough conversation becomes practice in patience. This isn't pretending the problem is good. It's asking what the obstacle makes possible that wasn't possible before, and using that instead of only resisting.",
+      "quote": "so also the rational animal is able to make every hindrance its own material, and to use it for such purposes as it may have designed.",
+      "apply_it": "Pick today's most annoying obstacle and finish this sentence: \"This gives me a chance to practise…\"",
+      "locator": "Book VIII ¶37",
+      "quiz": {
+        "question": "How did Marcus suggest a reasoning person should treat hindrances?",
+        "options": [
+          "Avoid them at all costs",
+          "Make them material for their own purposes",
+          "Blame others for them",
+          "Wait until they disappear"
+        ],
+        "answer": 1,
+        "explanation": "He wrote that the rational mind can make every hindrance its own material."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--05",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "comparison",
+        "focus"
+      ],
+      "title": "Stop checking what others are doing and run your own line",
+      "body": "Marcus saw how much trouble comes from watching your neighbour: what they said, what they're doing, what they might think of you. Every glance sideways costs attention and invites envy or resentment.\n\nToday the neighbour lives in your phone. Scrolling through other people's wins, opinions and dramas feels like staying informed but mostly drains focus. Marcus's alternative is simple: look at your own work and ask whether it is fair and well done. That is the only lane you actually steer.",
+      "quote": "How much trouble he avoids who does not look to see what his neighbour says or does or thinks, but only to what he does himself, that it may be just and pure",
+      "apply_it": "Choose one hour today with no checking of feeds or other people's updates. Spend it on a single task that is yours.",
+      "locator": "Book IV ¶19",
+      "quiz": {
+        "question": "What does Marcus say a person avoids by not watching what their neighbour does?",
+        "options": [
+          "Responsibility",
+          "All friendships",
+          "A great deal of trouble",
+          "Hard work"
+        ],
+        "answer": 2,
+        "explanation": "Focusing on your own conduct rather than others' saves much needless trouble."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--06",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "calm",
+        "inner-retreat"
+      ],
+      "title": "You can take a break inside your own mind, anywhere",
+      "body": "People dream of escaping to the beach or a cabin to find peace. Marcus thought that was the ordinary way of looking at it. The quiet you are after is available whenever you turn inward, if you keep a few steadying thoughts ready.\n\nA holiday is pleasant, but it can't be your only route to calm. A minute of slow breathing at your desk, recalling what matters, can reset you between meetings. The retreat travels with you.",
+      "quote": "it is in thy power whenever thou shalt choose to retire into thyself. For nowhere either with more quiet or more freedom from trouble does a man retire than into his own soul",
+      "apply_it": "Write down two short thoughts that steady you. Next time you feel frazzled, close your eyes for sixty seconds and return to them.",
+      "locator": "Book IV ¶3",
+      "quiz": {
+        "question": "Where did Marcus say a person can find the most quiet retreat?",
+        "options": [
+          "In his own soul",
+          "In the mountains",
+          "At the seashore",
+          "In a country house"
+        ],
+        "answer": 0,
+        "explanation": "He argued no retreat is quieter or freer than turning inward."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--07",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "revenge",
+        "self-control"
+      ],
+      "title": "The best response to someone who wronged you is not to copy them",
+      "body": "When someone treats you badly, the urge is to hit back in kind: a cutting reply for a cutting remark, a cold shoulder for a cold shoulder. Marcus's answer is short. The best revenge is refusing to become like the person who did it.\n\nThis isn't passivity. You can still set limits or speak up. But you choose your conduct by your own standards, not theirs, so their bad behaviour doesn't get to rewrite who you are.",
+      "quote": "The best way of avenging thyself is not to become like the wrong doer.",
+      "apply_it": "Think of a recent slight. Draft the reply you would send if you were acting at your best, not mirroring them.",
+      "locator": "Book VI ¶6",
+      "quiz": {
+        "question": "What did Marcus call the best way of avenging yourself?",
+        "options": [
+          "Getting even quickly",
+          "Telling everyone what happened",
+          "Cutting the person off forever",
+          "Not becoming like the wrongdoer"
+        ],
+        "answer": 3,
+        "explanation": "Refusing to imitate the wrongdoer keeps your own character intact."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--08",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "patience",
+        "teaching"
+      ],
+      "title": "With people who frustrate you: teach them, or bear with them",
+      "body": "Marcus believed people exist for one another, so dismissing someone was not an option he allowed himself. When others get things wrong, he saw only two good moves: help them see better, or put up with them patiently.\n\nThis gives you a quick decision rule for friction at home or work. If explaining could help and they're open to it, explain kindly. If not, let it go without stewing. Sulking, mocking or giving up on them is not on the list.",
+      "quote": "Men exist for the sake of one another. Teach them then or bear with them.",
+      "apply_it": "Think of someone who frustrates you. Decide: is this a moment to explain something, or a moment to simply be patient?",
+      "locator": "Book VIII ¶62",
+      "quiz": {
+        "question": "What two options did Marcus give for dealing with people who err?",
+        "options": [
+          "Teach them or bear with them",
+          "Ignore them or avoid them",
+          "Correct them publicly or punish them",
+          "Argue with them or leave"
+        ],
+        "answer": 0,
+        "explanation": "Because people exist for each other, he advised either instructing them or tolerating them."
+      }
+    }
+  ]
+}

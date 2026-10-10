@@ -1,0 +1,146 @@
+{
+  "source": {
+    "id": "friendship-emerson",
+    "title": "Friendship",
+    "authors": [
+      "Ralph Waldo Emerson"
+    ],
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/ralph-waldo-emerson/essays",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Ralph Waldo Emerson, Friendship, Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 1841,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Single essay taken from the Standard Ebooks edition of Emerson's Essays."
+  },
+  "cards": [
+    {
+      "id": "friendship-emerson--01",
+      "topic": "relationships",
+      "tags": [
+        "honesty",
+        "trust",
+        "friendship"
+      ],
+      "title": "A real friend is someone you can think out loud with",
+      "body": "Emerson named truth as one of the two pillars of friendship. With most people we wrap our thoughts in politeness, small talk and second-guessing. With a real friend we can drop all that and simply say what we think, half-formed ideas included.\n\nThat freedom is rare and valuable. It is where you test a risky decision, admit a fear or work out what you actually believe. If you have even one such person, protect that relationship; if you don't, try being that kind of listener first.",
+      "quote": "A friend is a person with whom I may be sincere. Before him I may think aloud.",
+      "locator": "Friendship ¶15",
+      "apply_it": "Share one half-formed idea or worry with a close friend this week, without polishing it first.",
+      "quiz": {
+        "question": "What does Emerson say you can do in front of a true friend?",
+        "options": [
+          "Borrow money freely",
+          "Avoid all disagreement",
+          "Think aloud and be sincere",
+          "Talk only about pleasant things"
+        ],
+        "answer": 2,
+        "explanation": "Truth is a core element of friendship: a friend is someone with whom you can be fully sincere."
+      }
+    },
+    {
+      "id": "friendship-emerson--02",
+      "topic": "relationships",
+      "tags": [
+        "honesty",
+        "feedback",
+        "disagreement"
+      ],
+      "title": "A good friend pushes back instead of just agreeing",
+      "body": "Emerson disliked friendships where one person simply echoes the other. He would rather a friend be a nettle in his side than a mirror that agrees with everything. Real support includes honest resistance.\n\nIt is pleasant to be surrounded by people who validate every plan, but they can't save you from your blind spots. The friend who asks 'are you sure?' about the impulsive purchase, the angry email or the risky move is often doing you the bigger favour. Try to be that friend, kindly.",
+      "quote": "Better be a nettle in the side of your friend than his echo.",
+      "locator": "Friendship ¶19",
+      "apply_it": "Think of a friend's plan you have doubts about. Find a kind way to share one honest question about it.",
+      "quiz": {
+        "question": "What does Emerson prefer a friend to be rather than an echo?",
+        "options": [
+          "A silent supporter",
+          "A nettle in your side",
+          "A business partner",
+          "A distant admirer"
+        ],
+        "answer": 1,
+        "explanation": "He valued honest friction over mere agreement: 'Better be a nettle in the side of your friend than his echo.'"
+      }
+    },
+    {
+      "id": "friendship-emerson--03",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "loneliness",
+        "initiative"
+      ],
+      "title": "The surest way to have a friend is to be one",
+      "body": "Emerson put it in one short line: the only way to have a friend is to be one. No clever introductions, social tricks or networking will create a deep friendship on their own.\n\nMany people wait for others to reach out, then feel lonely when they don't. Friendship grows from showing up: remembering the job interview, sending the check-in text, listening without checking your phone. Be the friend you hope to have, and you become the kind of person others want to be close to.",
+      "quote": "The only reward of virtue is virtue; the only way to have a friend is to be one.",
+      "locator": "Friendship ¶23",
+      "apply_it": "Message one friend today about something specific happening in their life, with no request attached.",
+      "quiz": {
+        "question": "According to Emerson, what is the only way to have a friend?",
+        "options": [
+          "Be one yourself",
+          "Join many social groups",
+          "Wait to be approached",
+          "Be useful to powerful people"
+        ],
+        "answer": 0,
+        "explanation": "Friendship comes from being a good friend, not from arrangements or introductions."
+      }
+    },
+    {
+      "id": "friendship-emerson--04",
+      "topic": "relationships",
+      "tags": [
+        "conversation",
+        "one-on-one",
+        "connection"
+      ],
+      "title": "The deepest conversations happen between two people, not three",
+      "body": "Emerson noticed that a dinner of three or more becomes a different event from talking with one person. Groups are pleasant, but everyone adjusts to the room and the talk stays general. When two are left alone, they can speak more honestly and go deeper.\n\nIf group hangouts leave you feeling you never really caught up with anyone, this may be why. Make room for one-on-one time: a walk, a coffee, a call. That is where the searching, personal kind of conversation tends to happen.",
+      "quote": "Two may talk and one may hear, but three cannot take part in a conversation of the most sincere and searching sort.",
+      "locator": "Friendship ¶17",
+      "apply_it": "Instead of your next group meetup, invite one friend for a walk or coffee, just the two of you.",
+      "quiz": {
+        "question": "Why did Emerson favour one-to-one conversation for friendship?",
+        "options": [
+          "It is cheaper",
+          "It takes less time",
+          "He disliked people",
+          "Groups make honest, searching talk harder"
+        ],
+        "answer": 3,
+        "explanation": "With three or more, talk becomes social and general; deep, sincere exchange happens best between two."
+      }
+    },
+    {
+      "id": "friendship-emerson--05",
+      "topic": "relationships",
+      "tags": [
+        "patience",
+        "trust",
+        "friendship"
+      ],
+      "title": "Deep friendships ripen slowly, so don't rush them",
+      "body": "Emerson warned that we often try to grab the sweetness of a new friendship too fast, and then it collapses into disappointment. Friendship, he said, is the slowest fruit in the garden and needs many seasons to ripen.\n\nWe expect instant closeness: oversharing early, intense texting, then drifting when reality sets in. Lasting bonds grow through repeated, ordinary contact over years. Be patient with new connections, keep showing up, and let trust build at its own pace rather than forcing it.",
+      "quote": "We snatch at the slowest fruit in the whole garden of God, which many summers and many winters must ripen.",
+      "locator": "Friendship ¶10",
+      "apply_it": "Pick one newer friendship and plan a small, regular touchpoint, like a monthly call, instead of one big intense meetup.",
+      "quiz": {
+        "question": "What did Emerson compare friendship to?",
+        "options": [
+          "A fast-growing weed",
+          "A business contract",
+          "The slowest fruit in the garden",
+          "A summer storm"
+        ],
+        "answer": 2,
+        "explanation": "He saw friendship as slow fruit that needs many seasons; rushing it leads to disappointment."
+      }
+    }
+  ]
+}

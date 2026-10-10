@@ -1,0 +1,147 @@
+{
+  "source": {
+    "id": "the-prince-machiavelli",
+    "title": "The Prince",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "translator": "W. K. Marriott",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/niccolo-machiavelli/the-prince/w-k-marriott",
+    "attribution": "Niccolò Machiavelli, The Prince (trans. W. K. Marriott), Standard Ebooks, public domain",
+    "year": 1532,
+    "notes": "Cards draw only on the book's advice about advisers, preparation, change and learning; its endorsements of cruelty and deceit are deliberately left out.",
+    "publisher": "Standard Ebooks",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "the-prince-machiavelli--01",
+      "topic": "business",
+      "tags": [
+        "leadership",
+        "hiring",
+        "teams"
+      ],
+      "title": "People judge a leader by the team they choose",
+      "body": "Machiavelli said the first thing people notice about a ruler is the people around him. Capable, loyal staff signal good judgment; weak or self-serving ones reveal a poor eye for character.\n\nThis holds for any manager or founder. Your hires and closest collaborators are a public record of your judgment, and they shape what gets done when you are not in the room. Hiring carefully, recognising real ability and treating good people well enough that they stay is not a side task of leadership; it is much of the job.",
+      "quote": "And the first opinion which one forms of a prince, and of his understanding, is by observing the men he has around him; and when they are capable and faithful he may always be considered wise",
+      "locator": "XXII. Concerning the Secretaries of Princes ¶1",
+      "apply_it": "Look at the people you rely on most at work. What does that group say about your judgment, and is there one gap you should fill?",
+      "quiz": {
+        "question": "According to Machiavelli, how do people first judge a ruler's understanding?",
+        "options": [
+          "By his speeches",
+          "By the people he keeps around him",
+          "By the size of his army",
+          "By his family name"
+        ],
+        "answer": 1,
+        "explanation": "Capable, faithful advisers show that the ruler knows how to recognise ability and keep it."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--02",
+      "topic": "business",
+      "tags": [
+        "feedback",
+        "leadership",
+        "decision-making"
+      ],
+      "title": "Make it safe for people to tell you the truth",
+      "body": "Machiavelli saw flattery as one of the biggest dangers to anyone in charge. Leaders like hearing that their plans are good, and staff quickly learn to say so. The only real defence is to show that honest answers will never be punished.\n\nHe also advised asking good advisers about everything, listening patiently, and then making your own decision. In a modern team that means inviting critique before a launch, thanking the person who points out the flaw, and still owning the final call rather than drifting with whoever spoke last.",
+      "quote": "there is no other way of guarding oneself from flatterers except letting men understand that to tell you the truth does not offend you",
+      "locator": "XXIII. How Flatterers Should Be Avoided ¶1",
+      "apply_it": "In your next meeting, ask directly: what is the weakest part of this plan? Then thank whoever answers honestly.",
+      "quiz": {
+        "question": "What did Machiavelli see as the only real guard against flatterers?",
+        "options": [
+          "Letting people know the truth does not offend you",
+          "Hiring fewer advisers",
+          "Ignoring all advice",
+          "Making decisions in secret"
+        ],
+        "answer": 0,
+        "explanation": "If people know honesty is safe, they stop telling you only what you want to hear."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--03",
+      "topic": "business",
+      "tags": [
+        "change-management",
+        "innovation",
+        "leadership"
+      ],
+      "title": "Expect resistance when you introduce something new",
+      "body": "Machiavelli called leading change one of the hardest and riskiest things to attempt. Those who did well under the old way will oppose you openly, while those who might gain from the new way support you only half-heartedly, because they have not yet seen it work.\n\nAnyone rolling out a new process, tool or strategy meets this pattern. Plan for it: explain the reasons, show early wins quickly, and address what people stand to lose. Treat lukewarm support as normal rather than a sign the idea is wrong.",
+      "quote": "there is nothing more difficult to take in hand, more perilous to conduct, or more uncertain in its success, than to take the lead in the introduction of a new order of things",
+      "locator": "VI. Concerning New Principalities Which Are… ¶5",
+      "apply_it": "For a change you want to make, list who loses something under it and one thing you can do to address their concern.",
+      "quiz": {
+        "question": "Why, according to Machiavelli, do new ways of doing things get only lukewarm support?",
+        "options": [
+          "People do not believe in new things until they have long experience of them",
+          "New ideas are usually bad",
+          "Leaders rarely explain them",
+          "Supporters are always paid by rivals"
+        ],
+        "answer": 0,
+        "explanation": "Potential winners hesitate because they have not yet seen the new order work, while those who did well under the old one resist."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--04",
+      "topic": "business",
+      "tags": [
+        "resilience",
+        "risk",
+        "planning"
+      ],
+      "title": "Build the flood barriers while the weather is calm",
+      "body": "Machiavelli compared luck to a river that floods and sweeps everything away. You cannot stop the flood, but in calm weather you can build banks and channels so that when it comes the damage is limited. Fortune, he wrote, hits hardest where nobody prepared.\n\nFor a business or a household, the calm stretch is when to build an emergency fund, back up data, diversify clients and write the contingency plan. Waiting until the crisis arrives means making every decision in a panic.",
+      "quote": "So it happens with fortune, who shows her power where valour has not prepared to resist her, and thither she turns her forces where she knows that barriers and defences have not been raised to constrain her.",
+      "locator": "XXV. What Fortune Can Effect in Human… ¶2",
+      "apply_it": "While things are calm, pick one risk you face and take one step to soften it, such as a backup, a buffer or a second option.",
+      "quiz": {
+        "question": "In Machiavelli's river image, when should defences be built?",
+        "options": [
+          "During the flood",
+          "Only after the first disaster",
+          "Never; floods cannot be resisted",
+          "When the weather is fair"
+        ],
+        "answer": 3,
+        "explanation": "Defences have to be raised in calm times so the next flood does less damage."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--05",
+      "topic": "business",
+      "tags": [
+        "role-models",
+        "ambition",
+        "learning"
+      ],
+      "title": "Study the best in your field and aim a little higher than you need",
+      "body": "Machiavelli advised learning from the most outstanding people who came before you. Even if you never match them, some of their quality rubs off. He compared this to skilled archers who aim above a distant target, knowing the arrow will drop.\n\nToday that might mean reading how great founders, managers or craftspeople actually worked, and setting goals slightly beyond what feels comfortable. Aiming high, while being honest about your current range, tends to land you further than aiming only at what you are sure you can reach.",
+      "quote": "A wise man ought always to follow the paths beaten by great men, and to imitate those who have been supreme, so that if his ability does not equal theirs, at least it will savour of it.",
+      "locator": "VI. Concerning New Principalities Which Are… ¶1",
+      "apply_it": "Choose one person who is excellent at what you do. Find one specific habit of theirs and try it this week.",
+      "quiz": {
+        "question": "Why did Machiavelli's clever archers aim higher than the mark?",
+        "options": [
+          "To impress onlookers",
+          "Because the target was moving",
+          "So the arrow, falling short of the high aim, would still hit the target",
+          "To test a new bow"
+        ],
+        "answer": 2,
+        "explanation": "Knowing their limits, they aimed high so that their shot would still reach the mark."
+      }
+    }
+  ]
+}

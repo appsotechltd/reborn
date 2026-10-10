@@ -1,0 +1,146 @@
+{
+  "source": {
+    "id": "as-a-man-thinketh-james-allen",
+    "title": "As a Man Thinketh",
+    "authors": [
+      "James Allen"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/4507",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "James Allen, As a Man Thinketh, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1903,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "as-a-man-thinketh-james-allen--01",
+      "topic": "psychology",
+      "tags": [
+        "thoughts",
+        "mindset",
+        "mental-habits"
+      ],
+      "title": "Your mind grows something either way, so choose what you plant",
+      "body": "Allen compares the mind to a garden. Tend it and it yields what you want; neglect it and it still produces something, only weeds. Thoughts we repeat without noticing, such as harsh self-talk, worry loops or resentment, take root as easily as useful ones.\n\nThe practical point is that mental habits are cultivated, not fixed. You can notice a recurring unhelpful thought, question it, and deliberately rehearse a more useful one. With endless feeds competing for attention, it also means watching what you let in, because whatever you take in over and over becomes the soil your thinking grows from.",
+      "quote": "MAN'S mind may be likened to a garden, which may be intelligently cultivated or allowed to run wild",
+      "locator": "Effect of Thought on Circumstances ¶1",
+      "apply_it": "Notice one thought you repeat often today. Write it down, ask whether it helps you, and write a more useful version beside it.",
+      "quiz": {
+        "question": "In Allen's garden image, what happens to a neglected mind?",
+        "options": [
+          "It stays empty",
+          "It fills with useless 'weeds'",
+          "It becomes calm",
+          "It stops working"
+        ],
+        "answer": 1,
+        "explanation": "A garden left alone still grows, but it grows weeds. Allen says the same happens to thoughts we don't tend."
+      }
+    },
+    {
+      "id": "as-a-man-thinketh-james-allen--02",
+      "topic": "personal-development",
+      "tags": [
+        "change",
+        "responsibility",
+        "self-improvement"
+      ],
+      "title": "Wanting better circumstances isn't enough; you have to change too",
+      "body": "Allen observed that many people are eager for better circumstances but reluctant to change themselves, so they stay stuck. His examples include a worker who wants higher pay while doing as little as possible, and an employer who wants profits while cheating his staff.\n\nLife isn't always fair, and plenty of hardship has nothing to do with anyone's choices. But in the part you do control, results tend to follow habits. If you want a promotion, better fitness or calmer relationships, the most reliable lever is usually a change in your own daily behaviour, not waiting for the world to rearrange itself.",
+      "quote": "Men are anxious to improve their circumstances, but are unwilling to improve themselves; they therefore remain bound.",
+      "locator": "Effect of Thought on Circumstances ¶15",
+      "apply_it": "Pick one thing you wish were different in your life. Write down one habit of yours that feeds it and one small change you'll make this week.",
+      "quiz": {
+        "question": "What does Allen say keeps many people stuck?",
+        "options": [
+          "Bad luck",
+          "They set their goals too high",
+          "They want better circumstances but won't improve themselves",
+          "They work too hard"
+        ],
+        "answer": 2,
+        "explanation": "Allen's point is that the lever within reach is your own behaviour; wishing for outside change while keeping the same habits leaves people 'bound'."
+      }
+    },
+    {
+      "id": "as-a-man-thinketh-james-allen--03",
+      "topic": "personal-development",
+      "tags": [
+        "purpose",
+        "focus",
+        "goals"
+      ],
+      "title": "Without a clear aim, small worries rush in to fill the space",
+      "body": "Allen argues that people without a central purpose drift, and a drifting mind is easy prey for petty worries, fears and self-pity. His fix is to choose a worthwhile aim and make it the focus of your thinking.\n\nIf you can't yet see a big purpose, he suggests a humbler start: do the task in front of you as well as you possibly can, however small it seems. That builds the focus and resolve you'll need for bigger goals later. It's a good answer to the 'I don't know what my passion is' trap: build focus through the work you already have, and direction often follows.",
+      "quote": "They who have no central purpose in their life fall an easy prey to petty worries, fears, troubles, and self-pityings",
+      "locator": "Thought and Purpose ¶2",
+      "apply_it": "Write down the one thing you're working towards this month. If you can't name it, pick today's most ordinary task and do it as well as you can.",
+      "quiz": {
+        "question": "What does Allen suggest if you can't yet see a big purpose?",
+        "options": [
+          "Do the duties in front of you as well as possible",
+          "Wait until inspiration strikes",
+          "Try lots of different hobbies",
+          "Let other people choose for you"
+        ],
+        "answer": 0,
+        "explanation": "Doing small tasks faithfully gathers your focus and builds the resolve that larger purposes need."
+      }
+    },
+    {
+      "id": "as-a-man-thinketh-james-allen--04",
+      "topic": "psychology",
+      "tags": [
+        "mental-strength",
+        "practice",
+        "growth-mindset"
+      ],
+      "title": "Mental strength is built like muscle, through steady practice",
+      "body": "Allen compares a weak mind to a weak body. Nobody expects to get strong after one day at the gym; they train carefully and patiently. In the same way, someone prone to doubt, distraction or giving up can strengthen their thinking by practising better mental habits again and again.\n\nThis fits what we know about skills: focus, calm and confidence grow with deliberate repetition, not good intentions alone. Starting out weak isn't a verdict on you. It's simply your starting weight, and each small rep, like sticking with a hard task five minutes longer, adds up.",
+      "quote": "As the physically weak man can make himself strong by careful and patient training, so the man of weak thoughts can make them strong by exercising himself in right thinking.",
+      "locator": "Thought and Purpose ¶6",
+      "apply_it": "Choose one small mental rep for today, such as working five minutes past the urge to quit or reframing one gloomy thought.",
+      "quiz": {
+        "question": "What comparison does Allen use for strengthening the mind?",
+        "options": [
+          "Sharpening a knife",
+          "Learning a language",
+          "Climbing a ladder",
+          "Patient physical training of a weak body"
+        ],
+        "answer": 3,
+        "explanation": "Just as careful, patient training strengthens a weak body, practising right thinking strengthens a weak mind."
+      }
+    },
+    {
+      "id": "as-a-man-thinketh-james-allen--05",
+      "topic": "psychology",
+      "tags": [
+        "calm",
+        "self-control",
+        "equanimity",
+        "trust"
+      ],
+      "title": "Calm people earn more trust, at home and at work",
+      "body": "Allen calls calmness one of the jewels of wisdom, the fruit of long practice in self-control. Someone who can govern their own reactions finds it easier to adapt to others, and others come to rely on them.\n\nHe makes a practical point too: even a shopkeeper does better as they grow more even-tempered, because people prefer dealing with someone steady. Think of the colleague who doesn't panic in a crisis or the friend who doesn't explode mid-argument. Their composure is a form of influence. Building it starts in small moments, like pausing before you answer an irritating email.",
+      "quote": "Even the ordinary trader will find his business prosperity increase as he develops a greater self-control and equanimity, for people will always prefer to deal with a man whose demeanour is strongly equable.",
+      "locator": "Serenity ¶3",
+      "apply_it": "The next time something irritates you today, take three slow breaths before responding, and notice how the other person reacts.",
+      "quiz": {
+        "question": "Why, according to Allen, does calmness help even a trader's business?",
+        "options": [
+          "Calm people work longer hours",
+          "People prefer to deal with someone even-tempered",
+          "Calm traders charge less",
+          "It makes them look wealthy"
+        ],
+        "answer": 1,
+        "explanation": "People trust and return to someone steady, so self-control pays off in work as well as in relationships."
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "source": {
+    "id": "art-of-public-speaking-carnegie",
+    "title": "The Art of Public Speaking",
+    "authors": [
+      "J. Berg Esenwein",
+      "Dale Carnagey (Dale Carnegie)"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/16317",
+    "attribution": "J. Berg Esenwein and Dale Carnagey (Dale Carnegie), The Art of Public Speaking, Project Gutenberg, public domain",
+    "year": 1915,
+    "notes": "Dale Carnegie published this under the original spelling of his name, Dale Carnagey.",
+    "publisher": "Project Gutenberg",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "art-of-public-speaking-carnegie--01",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "stage-fright",
+        "practice"
+      ],
+      "title": "You lose stage fright by speaking often, not by reading about it",
+      "body": "The authors compared nervous speakers to a horse that shies at trains. You don't cure the horse by keeping it far from the tracks; you let it see trains until they become ordinary. Likewise, no book can remove the fear of an audience. Only repeated speaking does.\n\nSo look for low-stakes chances: speak up in team meetings, give a toast, present a short update, join a speaking club. Each time makes the next one less frightening, and the skill compounds faster than you might expect.",
+      "quote": "Apply horse-sense to ridding yourself of self-consciousness and fear: face an audience as frequently as you can, and you will soon stop shying. You can never attain freedom from stage-fright by reading a treatise.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶6",
+      "apply_it": "Find one small chance this week to speak in front of others, even for a minute, and take it.",
+      "quiz": {
+        "question": "What did the authors say is the cure for stage fright?",
+        "options": [
+          "Reading more about speaking",
+          "Avoiding audiences until you feel ready",
+          "Facing an audience as often as you can",
+          "Memorising every word"
+        ],
+        "answer": 2,
+        "explanation": "Like a horse that gets used to trains, you lose the fear through repeated exposure."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--02",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "confidence",
+        "focus"
+      ],
+      "title": "Think of yourself as the messenger, not the exhibit",
+      "body": "Much nervousness comes from focusing on yourself: how you look, whether you sound clever, what people think of you. The authors argued that in a talk the message matters more than the speaker, and filling your mind with it leaves little room for self-consciousness.\n\nBefore a presentation or interview, shift your attention to what the audience needs to understand or decide. If a building were on fire you would shout directions without worrying about your voice. Caring about the message has a similar effect.",
+      "quote": "To hold any other view is to regard yourself as an exhibit instead of as a messenger with a message worth delivering.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶14",
+      "apply_it": "Before your next talk or meeting, write one sentence: what do I most want these people to take away?",
+      "quiz": {
+        "question": "According to the authors, what drives out self-consciousness while speaking?",
+        "options": [
+          "Focusing on how you look",
+          "Filling your mind with your message",
+          "Avoiding eye contact",
+          "Speaking very quickly"
+        ],
+        "answer": 1,
+        "explanation": "When the subject fills your mind, there is little room left for worries about yourself."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--03",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "preparation",
+        "presentations"
+      ],
+      "title": "Script your opening and know your subject cold",
+      "body": "Confidence needs something to rest on. The authors said that walking in unprepared should make you nervous, because you would be wasting the audience's time. Know your subject better than your listeners do, know roughly how you will present it, and write out your first few sentences completely.\n\nThe opening is where nerves peak and words desert people. A well-rehearsed first thirty seconds gets you moving, and solid knowledge behind it means a tough question will not throw you.",
+      "quote": "Know what you are going to talk about, and, in general, how you are going to say it. Have the first few sentences worked out completely so that you may not be troubled in the beginning to find words.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶19",
+      "apply_it": "For your next presentation, write out and rehearse your first three sentences word for word.",
+      "quiz": {
+        "question": "Which part of a talk did the authors suggest working out completely?",
+        "options": [
+          "The closing joke",
+          "The first few sentences",
+          "Every word of the whole speech",
+          "The answers to all possible questions"
+        ],
+        "answer": 1,
+        "explanation": "Having the opening ready means you won't struggle to find words at the start, when nerves are highest."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--04",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "delivery",
+        "engagement"
+      ],
+      "title": "Vary your voice, pace and emphasis to avoid monotony",
+      "body": "The authors called monotony the most common failing of speakers. It is not only a flat tone but the same volume, speed and emphasis throughout, so nothing stands out and listeners drift off.\n\nVariety is what holds attention. Slow down for the key point, speed up through background, change volume, and stress the words that carry meaning. On a video call, where attention is already fragile, this matters even more. Record yourself once and listen: most people are surprised how even they sound.",
+      "quote": "The monotonous speaker not only drones along in the same volume and pitch of tone but uses always the same emphasis, the same speed, the same thoughts--or dispenses with thought altogether.",
+      "locator": "Chapter II. The Sin of Monotony ¶4",
+      "apply_it": "Record two minutes of yourself explaining something, play it back, and note where a change of pace or emphasis would help.",
+      "quiz": {
+        "question": "Which of these is part of monotony as the authors described it?",
+        "options": [
+          "Using the same speed and emphasis all the way through",
+          "Pausing before key words",
+          "Changing volume for important points",
+          "Telling stories"
+        ],
+        "answer": 0,
+        "explanation": "Monotony means sameness in volume, pitch, emphasis and speed, so nothing stands out."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--05",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "pausing",
+        "emphasis"
+      ],
+      "title": "Use a deliberate pause before or after your key point",
+      "body": "The authors distinguished between stumbling, filling gaps with 'uh' and 'er', and pausing on purpose. A planned pause before an important phrase builds anticipation; a pause after it gives the idea time to sink in.\n\nMany speakers rush because silence feels awkward, but to the audience a short pause sounds confident. In a meeting or pitch, state your main point, then stop for a beat before moving on. Just don't overuse it: a dramatic pause on a trivial point sounds silly.",
+      "quote": "one of the most important means of developing power in public speaking is to pause either before or after, or both before and after, an important word or phrase.",
+      "locator": "Chapter VI. Pause and Power ¶7",
+      "apply_it": "In your next conversation where you make an important point, stop for two seconds right after saying it.",
+      "quiz": {
+        "question": "How did the authors distinguish a real pause from stumbling?",
+        "options": [
+          "A real pause is longer",
+          "A real pause only comes at the end",
+          "There is no difference",
+          "A real pause is deliberate silence, not filler sounds"
+        ],
+        "answer": 3,
+        "explanation": "Filling gaps with 'uh' is stumbling; a pause is silence used on purpose for effect."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--06",
+      "topic": "productivity",
+      "tags": [
+        "public-speaking",
+        "knowledge",
+        "expertise"
+      ],
+      "title": "Know far more than you plan to say",
+      "body": "The authors compared a speaker's knowledge to a fuel tank or an artesian well. If you know only exactly enough for your talk, any surprise question or lost thread leaves you empty. If you know much more, ideas flow easily and you carry a calm, assured manner.\n\nThat reserve comes from steady reading, observation and thinking about your field, not last-minute cramming. In meetings and interviews, the person with depth behind their few sentences is the one people trust.",
+      "quote": "It is not enough to have merely enough; you must have more than enough. … To be away from home with only the exact return fare leaves a great deal to circumstances!",
+      "locator": "Chapter XVII. Thought and Reserve Power ¶12",
+      "apply_it": "For your next talk or meeting, prepare answers to two questions you hope nobody asks.",
+      "quiz": {
+        "question": "What did the authors mean by 'reserve power'?",
+        "options": [
+          "Saving your best point for the end",
+          "Speaking quietly to save your voice",
+          "Avoiding hard topics",
+          "Having more knowledge than the talk itself needs"
+        ],
+        "answer": 3,
+        "explanation": "Reserve power is depth of knowledge and thought beyond what you plan to say."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--07",
+      "topic": "business",
+      "tags": [
+        "public-speaking",
+        "audience",
+        "presentations"
+      ],
+      "title": "Study the occasion before you plan the talk",
+      "body": "For any special-occasion speech, the authors' first rule was to learn the setting: the purpose of the event, who will be there, how many, who else is speaking and on what, and exactly how long you have. Many prominent speakers, they noted, lost face by not bothering to check.\n\nThe same applies to a conference talk, a wedding toast or a client presentation. A good speech for the wrong room still fails. They added a final tip worth keeping: people who give short speeches get invited back.",
+      "quote": "The first essential of good occasional speaking is to study the occasion. Precisely what is the object of the meeting? … Precisely how long am I to speak?",
+      "locator": "Chapter XXX. After-dinner and Other Occasional Speaking ¶6",
+      "apply_it": "Before your next presentation, ask the organiser who the audience is, what they need, and exactly how much time you have.",
+      "quiz": {
+        "question": "What did the authors call the first essential of good occasional speaking?",
+        "options": [
+          "A strong joke",
+          "A long introduction",
+          "Studying the occasion",
+          "Memorising the speech"
+        ],
+        "answer": 2,
+        "explanation": "Fitting the speech to the event, audience and time limit comes before anything else."
+      }
+    }
+  ]
+}

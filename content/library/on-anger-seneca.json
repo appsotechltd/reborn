@@ -1,0 +1,172 @@
+{
+  "source": {
+    "id": "on-anger-seneca",
+    "title": "On Anger",
+    "authors": [
+      "Seneca"
+    ],
+    "translator": "Aubrey Stewart",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/seneca/dialogues/aubrey-stewart",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Seneca, On Anger (trans. Aubrey Stewart), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 45,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Taken from Seneca, Dialogues (trans. Aubrey Stewart), Standard Ebooks."
+  },
+  "cards": [
+    {
+      "id": "on-anger-seneca--01",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "anger",
+        "pause"
+      ],
+      "title": "Delay is the strongest cure for anger",
+      "body": "Seneca's top remedy is not suppressing anger but postponing it. Ask your anger for time, not to forgive the offence, but to judge it properly. The first surge is fierce; given a pause, it often fades by itself.\n\nThis is the logic behind sleeping on an angry email or stepping out before replying in an argument. You lose nothing by waiting. If the complaint is valid, it will still be valid in an hour, and you'll express it better.",
+      "quote": "The greatest remedy for anger is delay: beg anger to grant you this at the first, not in order that it may pardon the offence, but that it may form a right judgment about it",
+      "apply_it": "Set a personal rule for today: no reply to anything that angers you for at least an hour. Draft it if you must, but don't send.",
+      "locator": "On Anger, Book II, XXIX ¶1",
+      "quiz": {
+        "question": "Why did Seneca recommend delaying anger?",
+        "options": [
+          "To plan a better revenge",
+          "Because anger is always justified later",
+          "To make the other person wait",
+          "So you can form a right judgement about the offence"
+        ],
+        "answer": 3,
+        "explanation": "Delay lets the first fierce impulse pass so judgement can take over."
+      }
+    },
+    {
+      "id": "on-anger-seneca--02",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "suspicion",
+        "trust"
+      ],
+      "title": "Suspicion always finds evidence, so choose a kinder reading",
+      "body": "Seneca lists small slights we take personally: someone greeted us coldly, cut short our story, didn't invite us. Suspicion will never run short of proof, he warns. Look for an insult and you will find one.\n\nWhat helps is straightforwardness and a generous interpretation. A colleague's short reply may mean they're swamped; a friend's silence may mean they're struggling. Believe the worst only when it's unmistakable, and notice how often your suspicions turn out wrong.",
+      "quote": "Suspicion will never lack grounds: what we want is straightforwardness, and a kindly interpretation of things.",
+      "apply_it": "When someone's behaviour bothers you today, list two innocent explanations before settling on the unkind one.",
+      "locator": "On Anger, Book II, XXIV ¶1",
+      "quiz": {
+        "question": "What did Seneca recommend instead of suspicion?",
+        "options": [
+          "Straightforwardness and a kindly interpretation",
+          "Constant vigilance",
+          "Testing people's loyalty",
+          "Keeping your distance from everyone"
+        ],
+        "answer": 0,
+        "explanation": "Because suspicion always finds grounds, he urged a kind reading of others' actions."
+      }
+    },
+    {
+      "id": "on-anger-seneca--03",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "empathy",
+        "perspective-taking"
+      ],
+      "title": "Before blaming someone, ask whether you have done the same thing",
+      "body": "Seneca noticed that we judge the act and ignore the person behind it. Rarely do we ask: have I ever done this? Was it on purpose or an accident? Were they under pressure, mistaken, or trying to help someone else?\n\nAsking those questions turns a flash of anger into understanding. The late colleague, the forgetful partner, the driver who cut you off: you have probably been each of them at some point. Putting yourself in their place makes fairness much easier.",
+      "quote": "No one says to himself, “I myself have done or might have done this very thing which I am angry with another for doing.” No one considers the intention of the doer, but merely the thing done",
+      "apply_it": "Next time someone annoys you, quietly ask yourself: when did I last do something similar, and why?",
+      "locator": "On Anger, Book III, XII ¶1",
+      "quiz": {
+        "question": "What question did Seneca say we rarely ask ourselves when angry with others?",
+        "options": [
+          "\"How can I get even?\"",
+          "\"Who else saw this happen?\"",
+          "\"Have I myself done or might I do this same thing?\"",
+          "\"Will they apologise?\""
+        ],
+        "answer": 2,
+        "explanation": "Recognising our own similar faults, and the doer's intention, softens anger."
+      }
+    },
+    {
+      "id": "on-anger-seneca--04",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "anger",
+        "perspective"
+      ],
+      "title": "Most of what makes us furious is trivial",
+      "body": "Seneca catalogues the triggers of anger: a careless word, a slow servant, a disrespectful gesture, a remark taken the wrong way. Look closely, he says, and they are the sort of things children squabble over. What fuels our rage is giving huge value to small matters.\n\nThe parking spot, the reply-all, the dishes left in the sink. Asking \"Will this matter in a week?\" often deflates the anger on the spot and frees energy for things that do matter.",
+      "quote": "the things which cause us such great heat are trifles, the sort of things that children fight and squabble over: there is nothing serious, nothing important in all that we do with such gloomy faces. It is, I repeat, the setting a great value on trifles that is the cause of your anger and madness.",
+      "apply_it": "The next time you feel irritated today, ask: will this matter in a week? If not, let it pass.",
+      "locator": "On Anger, Book III, XXXIV ¶1",
+      "quiz": {
+        "question": "According to Seneca, what lies behind most of our anger?",
+        "options": [
+          "Setting a great value on trifles",
+          "Real injustice",
+          "Bad luck",
+          "Other people's cruelty"
+        ],
+        "answer": 0,
+        "explanation": "He wrote that putting high value on trifles is the cause of anger."
+      }
+    },
+    {
+      "id": "on-anger-seneca--05",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "reflection",
+        "evening-review"
+      ],
+      "title": "End each day with a short, honest review of yourself",
+      "body": "Seneca admired the philosopher Sextius, who asked himself every night: what bad habit did I cure today? What fault did I resist? How am I better? Seneca believed anger softens when it knows it will be called up for review each evening.\n\nIt's a gentle form of accountability, not self-punishment. A few minutes of reflection turns vague intentions into feedback, and he noted that sleep after such a review is especially peaceful.",
+      "quote": "It was the custom of Sextius when the day was over, and he had betaken himself to rest, to inquire of his spirit: “What bad habit of yours have you cured today? what vice have you checked? in what respect are you better?”",
+      "apply_it": "Tonight before sleep, answer Sextius's three questions in a sentence each. Repeat for a week.",
+      "locator": "On Anger, Book III, XXXVI ¶1",
+      "quiz": {
+        "question": "Why did Seneca think a nightly self-examination helps with anger?",
+        "options": [
+          "It lets you plan revenge",
+          "It helps you forget what happened",
+          "It proves you were right",
+          "Anger softens when it knows it will be reviewed daily"
+        ],
+        "answer": 3,
+        "explanation": "Knowing it must face daily review makes anger more restrained."
+      }
+    },
+    {
+      "id": "on-anger-seneca--06",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "kindness",
+        "mortality"
+      ],
+      "title": "Life is short: spend it practising kindness, not feuding",
+      "body": "Seneca closes his long study of anger with a reminder of mortality. The breath we hold dear will soon leave us. While we're still among people, he says, let's be humane and not a source of fear or harm to anyone.\n\nGrudges and long fights assume we have endless time to waste. We don't. Remembering that every relationship is temporary makes it easier to let small wrongs go and to choose warmth with the people around us now.",
+      "quote": "This breath that we hold so dear will soon leave us: in the meantime, while we draw it, while we live among human beings, let us practise humanity: let us not be a terror or a danger to anyone.",
+      "apply_it": "Think of a grudge you're holding. Ask whether it's worth keeping given how short time is, and take one step to ease it.",
+      "locator": "On Anger, Book III, XLIII ¶1",
+      "quiz": {
+        "question": "What did Seneca urge us to practise while we live among others?",
+        "options": [
+          "Caution",
+          "Humanity",
+          "Ambition",
+          "Silence"
+        ],
+        "answer": 1,
+        "explanation": "Because life is brief, he urged us to practise humanity and harm no one."
+      }
+    }
+  ]
+}

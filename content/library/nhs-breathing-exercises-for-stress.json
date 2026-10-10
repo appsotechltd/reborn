@@ -1,0 +1,92 @@
+{
+  "source": {
+    "id": "nhs-breathing-exercises-for-stress",
+    "title": "Breathing exercises for stress",
+    "authors": [
+      "NHS"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Adapted from the NHS website page at https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/. NHS terms 3.6b: adapted content uses the standard OGL attribution, must not imply NHS endorsement, and must not be sold as a separately charged item (3.10)."
+  },
+  "cards": [
+    {
+      "id": "nhs-breathing-exercises-for-stress--01",
+      "topic": "mindfulness",
+      "tags": [
+        "breathing",
+        "stress",
+        "relaxation"
+      ],
+      "title": "Get comfortable first: your position sets up calm breathing",
+      "body": "A calming breathing exercise works best when your body is not fighting you. You can do it standing, sitting or lying down. Loosen anything tight around your waist or chest. If sitting, use a chair that supports your back and rest your arms. If lying down, let your arms rest a little away from your sides, palms up. Either way, keep your feet roughly hip-width apart and flat on the floor if you are sitting or standing.",
+      "apply_it": "Find one spot at home or work where you could sit comfortably for five minutes, and try the setup there today.",
+      "quiz": {
+        "question": "Which position is suitable for this calming breathing exercise?",
+        "options": [
+          "Standing, sitting or lying down, as long as you are comfortable",
+          "Only lying down",
+          "Only standing",
+          "Only crossed-legged on the floor"
+        ],
+        "answer": 0,
+        "explanation": "Any position works if you are comfortable and your clothing is loose."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-breathing-exercises-for-stress--02",
+      "topic": "mindfulness",
+      "tags": [
+        "breathing",
+        "stress",
+        "anxiety"
+      ],
+      "title": "Slow belly breathing to a count of five can calm stress and panic",
+      "body": "Let each breath go deep into your belly, as far as feels comfortable, without forcing it. Breathe in through your nose and out through your mouth. Breathe in gently and evenly, counting slowly from one to five if that helps, then let the breath out gently for another slow count of five. You may not reach five at first, and that is fine.\n\nKeep going for at least five minutes. It can help with feelings of stress, anxiety or panic and can be done almost anywhere.",
+      "apply_it": "Set a five-minute timer now and try the slow in-for-five, out-for-five breathing.",
+      "quiz": {
+        "question": "How long does the guidance suggest continuing the breathing exercise?",
+        "options": [
+          "About 10 seconds",
+          "Exactly one breath",
+          "One hour",
+          "At least 5 minutes"
+        ],
+        "answer": 3,
+        "explanation": "The exercise is repeated for at least five minutes, breathing in and out gently to a slow count."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-breathing-exercises-for-stress--03",
+      "topic": "health",
+      "tags": [
+        "breathing",
+        "habits",
+        "when-to-get-help"
+      ],
+      "title": "Breathing exercises work best as a daily habit, not only in a crisis",
+      "body": "A calming breath is easiest to reach for under pressure if it is already familiar. Practising for a few minutes every day, for example after waking, on a lunch break or before bed, builds the habit so it comes more naturally when stress spikes.\n\nBreathing exercises are a self-help tool, not a cure. If stress, anxiety or panic attacks keep coming back or get in the way of daily life, talk to a GP or doctor, who can suggest further support.",
+      "apply_it": "Attach five minutes of slow breathing to something you already do daily, like your morning coffee, and do it for a week.",
+      "quiz": {
+        "question": "When does the calming breathing exercise give the most benefit?",
+        "options": [
+          "Only when you are already panicking",
+          "Once a year",
+          "When practised regularly as part of a daily routine",
+          "Only lying down at night"
+        ],
+        "answer": 2,
+        "explanation": "Regular daily practice makes the technique more effective and easier to use when stress hits."
+      },
+      "health": true
+    }
+  ]
+}

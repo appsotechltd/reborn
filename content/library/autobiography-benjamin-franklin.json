@@ -1,0 +1,200 @@
+{
+  "source": {
+    "id": "autobiography-benjamin-franklin",
+    "title": "The Autobiography of Benjamin Franklin",
+    "authors": [
+      "Benjamin Franklin"
+    ],
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/benjamin-franklin/the-autobiography-of-benjamin-franklin",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Benjamin Franklin, The Autobiography of Benjamin Franklin, Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 1791,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "autobiography-benjamin-franklin--01",
+      "topic": "personal-development",
+      "tags": [
+        "habits",
+        "self-improvement",
+        "focus",
+        "tracking"
+      ],
+      "title": "Work on one habit at a time, not all thirteen at once",
+      "body": "Franklin drew up a list of thirteen virtues he wanted to build, from temperance to humility, then found that chasing them all at once just scattered his attention. So he gave each virtue a full week of focus and let the others take their chances. Every evening he put a small black dot in a notebook grid for each slip, aiming to keep that week's line clean. Thirteen weeks made a cycle, and he could run four cycles a year.\n\nThe same logic suits habit change today: pick one behaviour, track it daily in a simple grid or app, and add the next only once the first feels automatic.",
+      "quote": "like him who, having a garden to weed, does not attempt to eradicate all the bad herbs at once, which would exceed his reach and his strength, but works on one of the beds at a time",
+      "locator": "IX. Plan for Attaining Moral Perfection ¶34",
+      "apply_it": "Choose one habit to focus on this week. Draw seven boxes on a card and add a dot each evening you slip.",
+      "quiz": {
+        "question": "Why did Franklin give each virtue its own week?",
+        "options": [
+          "He believed some virtues mattered more than others",
+          "Working on everything at once spread his attention too thin",
+          "His notebook only had room for one virtue a week",
+          "A friend told him to"
+        ],
+        "answer": 1,
+        "explanation": "Like weeding one garden bed at a time, focusing on a single virtue let him see real progress instead of being overwhelmed."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--02",
+      "topic": "productivity",
+      "tags": [
+        "routines",
+        "planning",
+        "reflection",
+        "mornings"
+      ],
+      "title": "Open the day with one question and close it with another",
+      "body": "Franklin's daily plan was simple: rise early, plan the day, work, break at noon to read or check his accounts, work again, then spend the evening tidying up, with music or conversation. What made it stick were two bookend questions. Each morning he asked what good he would do that day and set a resolution; each night he asked what good he had actually done and reviewed the day.\n\nThat turns a schedule into a feedback loop. A two-minute intention in the morning and a short review at night, before you reach for your phone, show you the gap between what you meant to do and what really happened.",
+      "quote": "Question. What good shall I do this day?",
+      "locator": "IX. Plan for Attaining Moral Perfection ¶47",
+      "apply_it": "Tonight, write one line answering: what good did I do today? Tomorrow morning, write one line for: what good will I do today?",
+      "quiz": {
+        "question": "Which question did Franklin ask himself every evening?",
+        "options": [
+          "How much money did I make today?",
+          "Who did I meet today?",
+          "What will I eat tomorrow?",
+          "What good have I done today?"
+        ],
+        "answer": 3,
+        "explanation": "His evening question, 'What good have I done today?', paired with the morning one, 'What good shall I do this day?', and ended with a review of the day."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--03",
+      "topic": "money",
+      "tags": [
+        "frugality",
+        "spending",
+        "saving"
+      ],
+      "title": "Spend only on what does real good for you or others",
+      "body": "Franklin's rule for frugality was short: make no expense unless it does some good, to others or to yourself; in other words, waste nothing. As a young printer still in debt, he and his wife kept a plain table and cheap furniture, and he later credited frugality and hard work for his early financial ease.\n\nHe also liked the proverb that an empty sack can't stand upright: someone always short of money finds it harder to act freely and honestly. Frugality here isn't stinginess. It's a filter that asks whether each purchase actually does good, which makes the forgotten subscriptions and impulse buys easy to cut.",
+      "quote": "Make no expense but to do good to others or yourself; i.e., waste nothing.",
+      "locator": "IX. Plan for Attaining Moral Perfection ¶13",
+      "apply_it": "Look over your last ten purchases. Mark the ones that did real good for you or someone else, and cancel or skip one that didn't.",
+      "quiz": {
+        "question": "How did Franklin define frugality?",
+        "options": [
+          "Never spend money on yourself",
+          "Save half of everything you earn",
+          "Spend only on what does good for others or yourself",
+          "Always buy the cheapest option"
+        ],
+        "answer": 2,
+        "explanation": "His precept was 'Make no expense but to do good to others or yourself; i.e., waste nothing.' Spending on yourself was fine if it did real good."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--04",
+      "topic": "relationships",
+      "tags": [
+        "persuasion",
+        "conversation",
+        "humility",
+        "communication"
+      ],
+      "title": "Swap 'certainly' for 'it seems to me' and people listen more",
+      "body": "After a friend told him he came across as proud and overbearing in arguments, Franklin changed how he talked. He dropped words that signalled a fixed opinion, like 'certainly' and 'undoubtedly', and used softer openers such as 'I imagine' or 'it appears to me at present'. When someone said something he thought was wrong, he resisted pouncing. He first noted where their view might hold, then explained why this case seemed different.\n\nConversations became friendlier, his ideas met less resistance, and being wrong cost him less embarrassment. In a meeting or a heated group chat, tentative phrasing lets people change their minds without losing face.",
+      "quote": "The modest way in which I proposed my opinions procured them a readier reception and less contradiction; I had less mortification when I was found to be in the wrong",
+      "locator": "IX. Plan for Attaining Moral Perfection ¶66",
+      "apply_it": "In your next disagreement, start with where the other person might be right, then say 'in this case it seems to me…' before giving your view.",
+      "quiz": {
+        "question": "What did Franklin find when he stopped speaking dogmatically?",
+        "options": [
+          "His ideas were accepted more readily",
+          "People stopped taking him seriously",
+          "He lost most of his arguments",
+          "He had to talk for longer"
+        ],
+        "answer": 0,
+        "explanation": "Modest phrasing got his opinions 'a readier reception and less contradiction', and made it easier to admit when he was wrong."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--05",
+      "topic": "personal-development",
+      "tags": [
+        "learning",
+        "community",
+        "peer-groups",
+        "discussion"
+      ],
+      "title": "Build a small circle that meets to sharpen each other's thinking",
+      "body": "In his early twenties Franklin gathered his most curious friends, mostly tradesmen, into a club called the Junto that met every Friday evening. Each member brought questions to discuss, and every three months wrote and read out an essay. Arguing to win was against the rules: the aim was to find the truth, and blunt contradiction was even fined.\n\nThe group later pooled its books into a shared library and tested ideas that grew into real public projects. A modern version is easy: a few friends, a regular slot, a question each, and an agreement to stay curious rather than competitive. Over the years, a group like that can teach you more than many courses.",
+      "quote": "Our debates were to be under the direction of a president, and to be conducted in the sincere spirit of inquiry after truth, without fondness for dispute, or desire of victory",
+      "locator": "VII. Beginning Business in Philadelphia ¶20",
+      "apply_it": "Invite two or three people you learn from to a monthly coffee or call. Ask each to bring one question worth discussing.",
+      "quiz": {
+        "question": "What was the main rule for debates in Franklin's Junto?",
+        "options": [
+          "The best speaker won a prize",
+          "Seek the truth rather than victory in argument",
+          "Only the president could speak",
+          "Members had to agree with each other"
+        ],
+        "answer": 1,
+        "explanation": "Debates were to be held 'in the sincere spirit of inquiry after truth, without fondness for dispute, or desire of victory'."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--06",
+      "topic": "relationships",
+      "tags": [
+        "persuasion",
+        "favours",
+        "rivals",
+        "influence"
+      ],
+      "title": "To win over a rival, ask them for a small favour",
+      "body": "A new member of the Pennsylvania assembly had spoken out against Franklin. Rather than flatter him or fight back, Franklin learned the man owned a rare book and wrote asking to borrow it. The book arrived, Franklin returned it a week later with a warm note of thanks, and the next time they met the man spoke to him kindly. They stayed friends for life.\n\nFranklin explained it with an old maxim: someone who has done you a kindness is readier to do another than someone you have helped. A genuine, small request invites people to see themselves as on your side. It works with a cool colleague too, if the ask is sincere and easy.",
+      "quote": "He that has once done you a kindness will be more ready to do you another, than he whom you yourself have obliged.",
+      "locator": "X. Poor Richard’s Almanac and Other… ¶17",
+      "apply_it": "Think of someone who is cool towards you. Ask them for a small, genuine favour, such as their advice or a recommendation, and thank them properly.",
+      "quiz": {
+        "question": "How did Franklin win over a hostile fellow legislator?",
+        "options": [
+          "He praised him in public",
+          "He did him a large favour",
+          "He asked to borrow a rare book from him",
+          "He avoided him until he calmed down"
+        ],
+        "answer": 2,
+        "explanation": "Lending the book made the man more inclined to help Franklin again: someone who has done you a kindness is readier to do another."
+      }
+    },
+    {
+      "id": "autobiography-benjamin-franklin--07",
+      "topic": "personal-development",
+      "tags": [
+        "perfectionism",
+        "progress",
+        "self-improvement"
+      ],
+      "title": "Chasing an ideal you'll never reach can still make you better",
+      "body": "Franklin admitted he never achieved the moral perfection he set out to reach. Order defeated him in particular: business kept breaking his schedule, and his papers stayed messy into old age. Yet he concluded that the attempt had made him a better and happier man.\n\nHe compared it to copying a model of perfect handwriting. You never match the engraved original, but your own hand improves along the way. That's a useful answer to all-or-nothing thinking. Falling short of your ideal isn't failure if trying is moving you forward; giving up because you can't be flawless is.",
+      "quote": "though I never arrived at the perfection I had been so ambitious of obtaining, but fell far short of it, yet I was, by the endeavour, a better and a happier man than I otherwise should have been if I had not attempted it",
+      "locator": "IX. Plan for Attaining Moral Perfection ¶60",
+      "apply_it": "Name one goal you've been tempted to drop because you keep falling short. Write down one way you're already better for trying.",
+      "quiz": {
+        "question": "What image did Franklin use to show the value of aiming for perfection?",
+        "options": [
+          "Copying a model of perfect handwriting",
+          "A ship steering by the stars",
+          "Climbing a mountain",
+          "Building a house brick by brick"
+        ],
+        "answer": 0,
+        "explanation": "People who copy engraved handwriting never match it, but their own writing improves through the effort."
+      }
+    }
+  ]
+}

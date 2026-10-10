@@ -1,0 +1,53 @@
+name: content
+
+on:
+  pull_request:
+    paths:
+      - "content/**"
+      - ".github/workflows/content.yml"
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - ".github/workflows/content.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: content/pipeline
+
+jobs:
+  validate:
+    name: Validate library
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema==4.23.0
+      - name: Unit tests
+        run: python -m unittest -v
+      - name: Validate cards
+        run: python -m reborn_content validate --strict
+
+  verify-quotes:
+    name: Verify quotes against sources
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: content/.cache
+          key: content-http-${{ hashFiles('content/pipeline/sources.toml') }}
+          restore-keys: content-http-
+      - name: Fetch sources
+        run: python -m reborn_content fetch
+      - name: Verify every quote appears verbatim
+        run: python -m reborn_content verify --strict

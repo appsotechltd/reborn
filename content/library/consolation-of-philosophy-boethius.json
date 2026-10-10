@@ -1,0 +1,146 @@
+{
+  "source": {
+    "id": "consolation-of-philosophy-boethius",
+    "title": "The Consolation of Philosophy",
+    "authors": [
+      "Boethius"
+    ],
+    "translator": "H. R. James",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/boethius/the-consolation-of-philosophy/h-r-james",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Boethius, The Consolation of Philosophy (trans. H. R. James), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 524,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "consolation-of-philosophy-boethius--01",
+      "topic": "mindfulness",
+      "tags": [
+        "fortune",
+        "change",
+        "acceptance"
+      ],
+      "title": "If you agree to ride luck up, you also agree to ride it down",
+      "body": "Boethius wrote this book in prison, after falling from the top of Roman public life. Philosophy, appearing to him as a woman, points out that luck never promised to stay. Its whole nature is to turn. Demanding that it stop once you are on top is like asking a wheel not to spin.\n\nThe same applies to a hot job market, a booming portfolio or a viral post. Enjoy the upswing, but treat it as on loan. People who expect the turn handle it with far less bitterness than those who took good times as a permanent right.",
+      "quote": "Mount up, if thou wilt, but only on condition that thou wilt not think it a hardship to come down when the rules of my game require it.",
+      "locator": "Book II, II ¶1",
+      "apply_it": "Name one good thing in your life that depends on luck. Write one sentence on how you would cope if it changed next year.",
+      "quiz": {
+        "question": "What is Philosophy's point about Fortune's wheel?",
+        "options": [
+          "Hard work can keep the wheel from turning",
+          "Only bad people fall from the top",
+          "Turning is its nature, so expect the way down too",
+          "The wheel always returns you to the top"
+        ],
+        "answer": 2,
+        "explanation": "Fortune's whole character is change. Accepting the rise means accepting the possibility of the fall."
+      }
+    },
+    {
+      "id": "consolation-of-philosophy-boethius--02",
+      "topic": "mindfulness",
+      "tags": [
+        "perspective",
+        "contentment",
+        "gratitude"
+      ],
+      "title": "Much of how bad things feel comes from how you frame them",
+      "body": "Philosophy reminds Boethius that the place he calls exile is simply home to the people who live there. Everyone's life has some flaw: money without status, status without money, a good marriage but no children. What makes a situation wretched is largely the story we tell about it.\n\nThis is not denying real hardship. It is noticing how often comparison and expectation turn an ordinary setback into misery. A smaller flat, a slower career year or a cancelled trip can feel like disaster or like a detour, depending on the frame you choose.",
+      "quote": "So true is it that nothing is wretched, but thinking makes it so, and conversely every lot is happy if borne with equanimity.",
+      "locator": "Book II, IV ¶4",
+      "apply_it": "Pick one thing that annoyed you this week. Describe it in one neutral sentence, without adjectives, and notice whether it shrinks.",
+      "quiz": {
+        "question": "According to Philosophy, what largely decides whether a situation is wretched?",
+        "options": [
+          "How much money is involved",
+          "How we think about and bear it",
+          "What other people say about it",
+          "Whether it happened by chance"
+        ],
+        "answer": 1,
+        "explanation": "The same circumstance is someone else's ordinary life. Our judgement and composure shape how miserable it feels."
+      }
+    },
+    {
+      "id": "consolation-of-philosophy-boethius--03",
+      "topic": "personal-development",
+      "tags": [
+        "happiness",
+        "self-mastery",
+        "inner-life"
+      ],
+      "title": "Build your happiness on what cannot be taken from you",
+      "body": "Philosophy asks Boethius a simple question: is anything more precious to you than yourself? If happiness rests on wealth, status or approval, it can be removed at any time, so it always comes with a background fear of losing it.\n\nWhat stays with you is your character, your judgement and your self-command. Investing there is the one bet no market crash, layoff or breakup can wipe out. It also makes you calmer about the outside things, because they stop carrying the full weight of your wellbeing.",
+      "quote": "Why, then, ye children of mortality, seek ye from without that happiness whose seat is only within us?",
+      "locator": "Book II, IV ¶5",
+      "apply_it": "List three things your good mood depended on this week. Mark which could be taken away tomorrow, and add one habit that builds something that can't.",
+      "quiz": {
+        "question": "Why does Philosophy say happiness can't rest on Fortune's gifts?",
+        "options": [
+          "They can be taken away, so they bring fear of loss",
+          "They are too hard to earn",
+          "They are always given to bad people",
+          "They are boring once you have them"
+        ],
+        "answer": 0,
+        "explanation": "Anything that can be lost brings worry about losing it. Self-mastery is the good that Fortune cannot remove."
+      }
+    },
+    {
+      "id": "consolation-of-philosophy-boethius--04",
+      "topic": "mindfulness",
+      "tags": [
+        "minimalism",
+        "possessions",
+        "enough"
+      ],
+      "title": "The more you own, the more you need to protect it",
+      "body": "Boethius is reminded that piling up possessions was supposed to banish need, yet it does the opposite. Each new thing brings upkeep, insurance, storage, security and worry. Those who own most often feel the most wanting.\n\nNature asks for surprisingly little. If you measure 'enough' by real needs rather than display, your wants shrink fast. Modern versions are everywhere: the second car that needs parking, the gadget that needs a case, a subscription and updates. Before buying, ask what the thing will demand of you, not only what it gives.",
+      "quote": "it is a true saying that they want most who possess most, and, conversely, they want very little who measure their abundance by nature’s requirements, not by the superfluity of vain display.",
+      "locator": "Book II, V ¶4",
+      "apply_it": "Before your next non-essential purchase, list what it will need from you: space, money, time, maintenance. Decide only after reading the list.",
+      "quiz": {
+        "question": "What paradox about wealth does Philosophy point out?",
+        "options": [
+          "Rich people work less",
+          "Owning little makes you unhappy",
+          "Wealth always brings lasting security",
+          "Those who possess most often want most"
+        ],
+        "answer": 3,
+        "explanation": "More possessions bring more needs: protection, upkeep and worry. Measuring by real needs keeps wants small."
+      }
+    },
+    {
+      "id": "consolation-of-philosophy-boethius--05",
+      "topic": "personal-development",
+      "tags": [
+        "adversity",
+        "friendship",
+        "resilience"
+      ],
+      "title": "Hard times show you who your real friends are",
+      "body": "Philosophy makes a surprising claim: bad luck can be more useful than good luck. Good times flatter and mislead, and they bring a crowd of people who are there for the success. When things go wrong, that crowd leaves and the people who stay are revealed.\n\nThat knowledge is worth a great deal. After a job loss, an illness or a public failure, notice who calls, who helps and who quietly disappears. Adversity also teaches caution and clear sight that easy times never do, so a setback can leave you wiser, not just poorer.",
+      "quote": "The one deceives, the other teaches; the one enchains the minds of those who enjoy her favour by the semblance of delusive good, the other delivers them by the knowledge of the frail nature of happiness.",
+      "locator": "Book II, VIII ¶1",
+      "apply_it": "Think of the last hard stretch you went through. Message one person who showed up for you then and thank them.",
+      "quiz": {
+        "question": "Why does Philosophy say ill fortune can be more useful than good?",
+        "options": [
+          "It makes you rich in the end",
+          "It punishes your enemies",
+          "It teaches and shows who your true friends are",
+          "It never lasts long"
+        ],
+        "answer": 2,
+        "explanation": "Good fortune flatters and hides false friends; bad fortune is honest, teaches, and reveals who truly cares."
+      }
+    }
+  ]
+}

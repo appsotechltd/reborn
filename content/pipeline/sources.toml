@@ -1,0 +1,267 @@
+# Source registry: how each content/library/<id>.json source is fetched, and the licence we expect
+# upstream. `python -m reborn_content fetch` re-reads the licence from the upstream files and refuses
+# to continue if it isn't the one recorded here (or is non-commercial).
+#
+# adapter = "standardebooks" | "gutenberg" | "openstax" | "web"
+#   standardebooks: repo, optional files (XHTML names, default all bodymatter)
+#   gutenberg:      gutenberg_id, optional mirror (GITenberg path), optional start / end markers
+#   openstax:       repo, collection, optional chapters
+#   web:            url (a page read by hand; cards from it carry no quotes)
+#
+# [[candidate]] entries are sources we track but don't use yet (see content/SOURCES.md);
+# `python -m reborn_content licences` re-checks their upstream licences.
+
+# ---------------------------------------------------------------- Stoics and philosophy
+
+[[source]]
+id = "meditations-marcus-aurelius"
+adapter = "standardebooks"
+repo = "marcus-aurelius_meditations_george-long"
+licence = "public-domain"
+
+[[source]]
+id = "enchiridion-epictetus"
+adapter = "standardebooks"
+repo = "epictetus_short-works_george-long"
+files = ["the-enchiridion.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "discourses-epictetus"
+adapter = "standardebooks"
+repo = "epictetus_discourses_george-long"
+licence = "public-domain"
+
+[[source]]
+id = "on-the-shortness-of-life-seneca"
+adapter = "standardebooks"
+repo = "seneca_dialogues_aubrey-stewart"
+files = ["on-the-shortness-of-life.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "on-anger-seneca"
+adapter = "standardebooks"
+repo = "seneca_dialogues_aubrey-stewart"
+files = ["on-anger.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "on-peace-of-mind-seneca"
+adapter = "standardebooks"
+repo = "seneca_dialogues_aubrey-stewart"
+files = ["on-peace-of-mind.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "consolation-of-philosophy-boethius"
+adapter = "standardebooks"
+repo = "boethius_the-consolation-of-philosophy_h-r-james"
+licence = "public-domain"
+
+[[source]]
+id = "walden-thoreau"
+adapter = "standardebooks"
+repo = "henry-david-thoreau_walden"
+licence = "public-domain"
+
+[[source]]
+id = "self-reliance-emerson"
+adapter = "standardebooks"
+repo = "ralph-waldo-emerson_essays"
+files = ["self-reliance.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "friendship-emerson"
+adapter = "standardebooks"
+repo = "ralph-waldo-emerson_essays"
+files = ["friendship.xhtml"]
+licence = "public-domain"
+
+[[source]]
+id = "the-prophet-kahlil-gibran"
+adapter = "standardebooks"
+repo = "kahlil-gibran_the-prophet"
+licence = "public-domain"
+
+# ---------------------------------------------------------------- Business, money, work
+
+[[source]]
+id = "art-of-war-sun-tzu"
+adapter = "standardebooks"
+repo = "sun-tzu_the-art-of-war_lionel-giles"
+licence = "public-domain"
+
+[[source]]
+id = "the-prince-machiavelli"
+adapter = "standardebooks"
+repo = "niccolo-machiavelli_the-prince_w-k-marriott"
+licence = "public-domain"
+
+[[source]]
+id = "art-of-money-getting-barnum"
+adapter = "standardebooks"
+repo = "p-t-barnum_the-art-of-money-getting"
+licence = "public-domain"
+
+[[source]]
+id = "science-of-getting-rich-wattles"
+adapter = "gutenberg"
+gutenberg_id = 59844
+mirror = "The-Science-of-Getting-Rich_59844/master/59844-0.txt"
+licence = "public-domain"
+
+[[source]]
+id = "art-of-public-speaking-carnegie"
+adapter = "gutenberg"
+gutenberg_id = 16317
+mirror = "The-Art-of-Public-Speaking_16317/master/16317.txt"
+licence = "public-domain"
+
+# ---------------------------------------------------------------- Personal development
+
+[[source]]
+id = "autobiography-benjamin-franklin"
+adapter = "standardebooks"
+repo = "benjamin-franklin_the-autobiography-of-benjamin-franklin"
+licence = "public-domain"
+
+[[source]]
+id = "as-a-man-thinketh-james-allen"
+adapter = "gutenberg"
+gutenberg_id = 4507
+mirror = "As-a-Man-Thinketh_4507/master/4507.txt"
+licence = "public-domain"
+
+[[source]]
+id = "how-to-live-on-24-hours-a-day-bennett"
+adapter = "gutenberg"
+gutenberg_id = 2274
+mirror = "How-to-Live-on-24-Hours-a-Day_2274/master/2274.txt"
+licence = "public-domain"
+
+[[source]]
+id = "self-help-samuel-smiles"
+adapter = "gutenberg"
+gutenberg_id = 935
+mirror = "Self-Help-with-Illustrations-of-Conduct-and-Perseverance_935/master/935-0.txt"
+licence = "public-domain"
+
+[[source]]
+id = "up-from-slavery-booker-t-washington"
+adapter = "standardebooks"
+repo = "booker-t-washington_up-from-slavery"
+licence = "public-domain"
+
+[[source]]
+id = "interesting-narrative-olaudah-equiano"
+adapter = "standardebooks"
+repo = "olaudah-equiano_the-interesting-narrative-of-the-life-of-olaudah-equiano"
+licence = "public-domain"
+
+[[source]]
+id = "aesops-fables"
+adapter = "standardebooks"
+repo = "aesop_fables_v-s-vernon-jones"
+licence = "public-domain"
+
+# ---------------------------------------------------------------- Health (read by hand)
+
+[[source]]
+id = "medlineplus-healthy-sleep"
+adapter = "web"
+url = "https://medlineplus.gov/healthysleep.html"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "nimh-so-stressed-out"
+adapter = "web"
+url = "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "cdc-benefits-of-physical-activity"
+adapter = "web"
+url = "https://www.cdc.gov/physical-activity-basics/benefits/index.html"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "nhs-five-steps-to-mental-wellbeing"
+adapter = "web"
+url = "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/"
+licence = "ogl-3.0"
+
+[[source]]
+id = "nhs-breathing-exercises-for-stress"
+adapter = "web"
+url = "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
+licence = "ogl-3.0"
+
+# ---------------------------------------------------------------- Candidates (not used yet)
+# OpenStax: the plan assumed CC BY 4.0, but the current GitHub sources of these books say
+# CC BY-NC-SA 4.0 (checked 2026-10-10), so they are excluded. Kept here so `licences` can
+# re-check them.
+
+[[candidate]]
+id = "openstax-psychology-2e"
+adapter = "openstax"
+repo = "osbooks-psychology"
+collection = "psychology-2e"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-introduction-business-2e"
+adapter = "openstax"
+repo = "osbooks-introduction-business"
+collection = "introduction-business-2e"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-principles-management"
+adapter = "openstax"
+repo = "osbooks-principles-of-management"
+collection = "principles-management"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-organizational-behavior"
+adapter = "openstax"
+repo = "osbooks-principles-of-management"
+collection = "organizational-behavior"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-entrepreneurship"
+adapter = "openstax"
+repo = "osbooks-entrepreneurship"
+collection = "entrepreneurship"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-principles-finance-2e"
+adapter = "openstax"
+repo = "osbooks-principles-finance"
+collection = "principles-finance-2e"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-lifespan-development"
+adapter = "openstax"
+repo = "osbooks-lifespan-development"
+collection = "lifespan-development"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-college-success-2e"
+adapter = "openstax"
+repo = "osbooks-college-success"
+collection = "college-success-2e"
+licence = "cc-by-4.0"
+
+[[candidate]]
+id = "openstax-life-liberty-pursuit-happiness"
+adapter = "openstax"
+repo = "osbooks-life-liberty-and-pursuit-happiness"
+collection = "life-liberty-and-pursuit-happiness"
+licence = "cc-by-4.0"

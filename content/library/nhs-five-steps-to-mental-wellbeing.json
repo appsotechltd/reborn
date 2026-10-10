@@ -1,0 +1,140 @@
+{
+  "source": {
+    "id": "nhs-five-steps-to-mental-wellbeing",
+    "title": "5 steps to mental wellbeing",
+    "authors": [
+      "NHS"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Adapted from the NHS website page at https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/. NHS terms 3.6b: adapted content uses the standard OGL attribution, must not imply NHS endorsement, and must not be sold as a separately charged item (3.10)."
+  },
+  "cards": [
+    {
+      "id": "nhs-five-steps-to-mental-wellbeing--01",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "wellbeing",
+        "connection",
+        "relationships"
+      ],
+      "title": "Real connection with people protects your mental wellbeing",
+      "body": "Good relationships give you a sense of belonging and worth, people to share good moments with, and support that runs both ways when things get hard. They need regular time: a shared meal, a catch-up with a friend you have drifted from, lunch with a colleague.\n\nTexts and social media help with keeping in touch, especially with people far away, but they work best alongside time together rather than instead of it. A video call or switching off the TV to talk counts.",
+      "apply_it": "Pick one person you have only been texting lately and arrange a call, a walk or a meal with them this week.",
+      "quiz": {
+        "question": "What does the guidance advise about technology and relationships?",
+        "options": [
+          "Use only texts to save time",
+          "Don't rely only on texts and social media to maintain relationships",
+          "Avoid video calls",
+          "Technology has no place in relationships"
+        ],
+        "answer": 1,
+        "explanation": "Technology can help, but relying on it alone misses the benefits of spending time together."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-five-steps-to-mental-wellbeing--02",
+      "topic": "health",
+      "tags": [
+        "wellbeing",
+        "exercise",
+        "mood"
+      ],
+      "title": "Movement you enjoy beats hours in a gym you dread",
+      "body": "Being active helps the mind as well as the body. It can raise self-esteem, give you goals to work towards and trigger changes in the brain that lift mood. Aerobic activity like running or cycling builds fitness, while strength and flexibility work help balance and can ease joint pain.\n\nThe key is not to think you need long gym sessions. Choose something you actually like, such as dancing, swimming or walking with a friend, and fit it into your normal week so it lasts.",
+      "apply_it": "Write down one activity you enjoyed as a child or teen and find a way to do a version of it this week.",
+      "quiz": {
+        "question": "What is the advice about choosing physical activity for wellbeing?",
+        "options": [
+          "Pick activities you enjoy and build them into your routine",
+          "You must spend hours at the gym",
+          "Only running counts",
+          "Exercise does not affect mood"
+        ],
+        "answer": 0,
+        "explanation": "Enjoyable activities you can keep doing matter more than long, intense gym sessions."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-five-steps-to-mental-wellbeing--03",
+      "topic": "personal-development",
+      "tags": [
+        "wellbeing",
+        "learning",
+        "confidence"
+      ],
+      "title": "Learning something new builds confidence, no exams needed",
+      "body": "Learning gives you a sense of purpose, boosts self-esteem and can bring you into contact with new people. It does not have to be formal. Cooking a new dish, taking on a stretch task at work like mentoring or presenting, a DIY project from a video tutorial, a language class or a hobby like painting all count.\n\nIf qualifications and exams do not appeal, skip them. The point is the satisfaction of getting better at something you care about, not a certificate.",
+      "apply_it": "Choose one small skill to practise for 15 minutes this week, like a recipe, a phrase in another language or a sketch.",
+      "quiz": {
+        "question": "According to the guidance, what should you avoid when learning for wellbeing?",
+        "options": [
+          "Learning anything practical",
+          "Learning with other people",
+          "Trying new recipes",
+          "Feeling you must take qualifications or exams if they don't interest you"
+        ],
+        "answer": 3,
+        "explanation": "Learning helps wellbeing whether or not it leads to a qualification, so choose what you enjoy."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-five-steps-to-mental-wellbeing--04",
+      "topic": "relationships",
+      "tags": [
+        "wellbeing",
+        "kindness",
+        "giving"
+      ],
+      "title": "Small acts of kindness are good for the giver too",
+      "body": "Giving to others can create positive feelings, a sense of purpose and self-worth, and closer ties with people. It does not need to be grand. Thank someone for something they did. Ask a friend or colleague how they are, then really listen to the answer. Offer a hand with a project or keep someone lonely company.\n\nFor something bigger, volunteering at a school, hospital, care home or community group combines giving with connection and often with learning too.",
+      "apply_it": "Today, thank someone specifically for something they did, saying exactly what it was and why it mattered.",
+      "quiz": {
+        "question": "Which of these is an example of 'giving' in the five steps?",
+        "options": [
+          "Buying yourself a treat",
+          "Working through lunch",
+          "Asking how someone is and listening properly to the answer",
+          "Avoiding colleagues"
+        ],
+        "answer": 2,
+        "explanation": "Listening properly, thanking people, helping out and volunteering are all ways of giving that also support your own wellbeing."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-five-steps-to-mental-wellbeing--05",
+      "topic": "mindfulness",
+      "tags": [
+        "wellbeing",
+        "mindfulness",
+        "attention"
+      ],
+      "title": "Paying attention to the present moment improves wellbeing",
+      "body": "A lot of life is spent on autopilot, replaying the past or rehearsing the future. Paying closer attention to the present, including your thoughts, feelings, body and surroundings, is known as mindfulness, and it can help you enjoy life more and understand yourself better.\n\nIt also changes how you meet challenges. Noticing that a thought is just a thought, or that your shoulders have crept up, gives you a moment to choose a response instead of reacting automatically.\n\nIf low mood or worry persists, talk to a GP.",
+      "apply_it": "During one routine task today, like brushing your teeth or making coffee, notice three things you can see, hear or feel.",
+      "quiz": {
+        "question": "What does mindfulness ask you to pay attention to?",
+        "options": [
+          "Only your plans for tomorrow",
+          "Your thoughts, feelings, body and surroundings in the present moment",
+          "Mistakes from the past",
+          "Other people's opinions of you"
+        ],
+        "answer": 1,
+        "explanation": "Mindfulness means noticing the present moment, inside and around you, which can improve wellbeing."
+      },
+      "health": true
+    }
+  ]
+}

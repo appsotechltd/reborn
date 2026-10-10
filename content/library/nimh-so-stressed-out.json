@@ -1,0 +1,138 @@
+{
+  "source": {
+    "id": "nimh-so-stressed-out",
+    "title": "I'm So Stressed Out! Fact Sheet",
+    "authors": [
+      "National Institute of Mental Health"
+    ],
+    "kind": "guide",
+    "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.nimh.nih.gov/site-info/policies",
+    "attribution": "Source: National Institute of Mental Health (public domain)",
+    "publisher": "National Institute of Mental Health",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "The fact sheet and NIMH copyright policy state the text is public domain and may be reused or edited if not made misleading; images may not be reused (none used). NIMH asks to be cited as the source."
+  },
+  "cards": [
+    {
+      "id": "nimh-so-stressed-out--01",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "anxiety"
+      ],
+      "title": "Stress responds to a situation; anxiety can linger after it has passed",
+      "body": "Stress is your body and mind reacting to something outside you: a deadline, an illness, a move, a hard conversation. It usually eases once the situation is dealt with. Anxiety is more internal. It is a lasting sense of dread or unease that can stick around even when there is no clear threat.\n\nThe two share many signs, such as worry, tension, headaches and poor sleep. Telling them apart helps you see whether the fix is solving the problem in front of you or looking after the worry itself.",
+      "apply_it": "Think of something weighing on you now. Is there a specific cause that will end, or is the worry there regardless?",
+      "quiz": {
+        "question": "What is a key difference between stress and anxiety?",
+        "options": [
+          "Stress is always harmful; anxiety is always helpful",
+          "Stress usually fades when its cause is resolved; anxiety can persist without a clear threat",
+          "They are completely unrelated",
+          "Anxiety only causes physical symptoms"
+        ],
+        "answer": 1,
+        "explanation": "Stress is typically a response to an external cause and eases when it is resolved, while anxiety can continue without an immediate threat."
+      },
+      "health": true
+    },
+    {
+      "id": "nimh-so-stressed-out--02",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "motivation"
+      ],
+      "title": "Not all stress is bad: some of it gets you moving",
+      "body": "Stress can help as well as harm. A bit of pressure before an exam or a launch can sharpen focus and push you to finish. The same response becomes a problem when it does not switch off: lost sleep, constant tension and a body that stays on alert.\n\nStressors can be one-off, short-term or ongoing. Noticing which kind you are facing helps: a short burst before a deadline is normal, while months of strain need a plan rather than more willpower.",
+      "apply_it": "List your current stressors and mark each one as short-term or ongoing. Pick one ongoing item to plan around this week.",
+      "quiz": {
+        "question": "According to the fact sheet, which is an example of stress that can be positive?",
+        "options": [
+          "Feeling motivated to meet a deadline",
+          "Losing sleep for weeks",
+          "Constant body aches",
+          "Avoiding friends"
+        ],
+        "answer": 0,
+        "explanation": "Stress can motivate you, for example to meet a deadline. It becomes harmful when it drags on or disrupts sleep and health."
+      },
+      "health": true
+    },
+    {
+      "id": "nimh-so-stressed-out--03",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "self-awareness",
+        "journaling"
+      ],
+      "title": "Map your stress triggers like an experiment",
+      "body": "Coping well starts with knowing what sets your stress off and what actually brings it down, and that takes some trial and error. A short journal is a simple tool: note what happened, how you felt in your body and mind, and what you did next.\n\nAfter a couple of weeks, patterns tend to show up, such as the same meeting, late-night scrolling or skipped meals. You can also start catching unhelpful thoughts, like assuming the worst, and checking whether they hold up.",
+      "apply_it": "Tonight, write three lines: one thing that stressed you today, how it felt, and one thing that helped even a little.",
+      "quiz": {
+        "question": "Why does the fact sheet suggest keeping a journal?",
+        "options": [
+          "To prove that you are fine",
+          "To replace sleep",
+          "To avoid talking to anyone",
+          "To spot your stress triggers and what helps, through trial and error"
+        ],
+        "answer": 3,
+        "explanation": "Tracking what triggers stress and what eases it helps you find coping strategies that work for you."
+      },
+      "health": true
+    },
+    {
+      "id": "nimh-so-stressed-out--04",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "habits",
+        "coping"
+      ],
+      "title": "The basics of looking after yourself are also stress tools",
+      "body": "Some of the most reliable ways to cope with stress are ordinary habits: moving your body regularly, eating regular healthy meals, keeping a steady sleep routine and not overdoing caffeine from coffee or fizzy drinks. Relaxation practices such as slow breathing, visualisation or mindfulness, many available through apps, add another layer.\n\nPeople matter too. Reaching out to friends or family who help you cope in healthy ways spreads the load, while isolating tends to make stress feel bigger.",
+      "apply_it": "Message one person who usually leaves you feeling steadier and suggest a call or walk this week.",
+      "quiz": {
+        "question": "Which of these is recommended for coping with stress?",
+        "options": [
+          "Adding extra coffee to get through the day",
+          "Skipping meals to save time",
+          "A consistent sleep routine and regular exercise",
+          "Keeping problems to yourself"
+        ],
+        "answer": 2,
+        "explanation": "Regular exercise, healthy meals, enough sleep, less caffeine and supportive people all help manage stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nimh-so-stressed-out--05",
+      "topic": "health",
+      "tags": [
+        "anxiety",
+        "when-to-get-help",
+        "mental-health"
+      ],
+      "title": "When stress takes over daily life, it is time to talk to a professional",
+      "body": "Stress may be turning into something more if it gets in the way of everyday life, makes you avoid things you used to do, or seems to be there all the time. Long-lasting anxiety can affect sleep, digestion, the heart and the immune system, and it raises the risk of anxiety disorders and depression.\n\nIf you are struggling to cope or symptoms will not go away, talk to a doctor or mental health professional. Anxiety is treatable. In the US, anyone in crisis or thinking of self-harm can call or text 988.",
+      "apply_it": "If stress has been constant for weeks, book an appointment with your doctor or a counsellor this week.",
+      "quiz": {
+        "question": "Which sign suggests stress may be becoming an anxiety problem worth getting help for?",
+        "options": [
+          "It appears before one big event and then fades",
+          "It interferes with daily life and seems always present",
+          "It helps you meet a deadline",
+          "It lasts one afternoon"
+        ],
+        "answer": 1,
+        "explanation": "Stress that disrupts daily life, causes avoidance or never lets up is a signal to seek professional support."
+      },
+      "health": true
+    }
+  ]
+}

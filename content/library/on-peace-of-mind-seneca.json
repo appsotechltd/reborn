@@ -1,0 +1,147 @@
+{
+  "source": {
+    "id": "on-peace-of-mind-seneca",
+    "title": "On Peace of Mind",
+    "authors": [
+      "Seneca"
+    ],
+    "translator": "Aubrey Stewart",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/seneca/dialogues/aubrey-stewart",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Seneca, On Peace of Mind (trans. Aubrey Stewart), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 60,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Taken from Seneca, Dialogues (trans. Aubrey Stewart), Standard Ebooks. Original date approximate."
+  },
+  "cards": [
+    {
+      "id": "on-peace-of-mind-seneca--01",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "restlessness",
+        "travel"
+      ],
+      "title": "Changing places won't help if you bring the problem with you",
+      "body": "Seneca describes people who keep moving, from city to country, trip to trip, chasing relief from restlessness. It never works, because they pack themselves along. The trouble isn't in the place but in the person.\n\nA new job, city or holiday can be good, but it won't fix a habit of discontent. If the same irritation follows you everywhere, the work is inward: noticing what you're actually running from and dealing with that directly.",
+      "quote": "what we suffer from is not the fault of the places but of ourselves",
+      "apply_it": "Think of a change you're craving. Ask: what feeling do I hope it will remove? Write one way to address that feeling where you are.",
+      "locator": "On Peace of Mind, II. (Seneca) ¶3",
+      "quiz": {
+        "question": "Why, according to Seneca, does constant travel fail to bring peace?",
+        "options": [
+          "The fault lies in ourselves, not in places",
+          "Travel is too expensive",
+          "Every place is equally bad",
+          "People are unfriendly abroad"
+        ],
+        "answer": 0,
+        "explanation": "We take ourselves along, so a change of scene cannot cure an inner problem."
+      }
+    },
+    {
+      "id": "on-peace-of-mind-seneca--02",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "self-knowledge",
+        "commitments"
+      ],
+      "title": "Size up yourself and the task before taking it on",
+      "body": "Seneca advises a frank estimate of your strengths before you commit, because most of us think we can do more than we can. Then weigh the task: the bearer should be stronger than the load. Beware of jobs that keep spawning more work, and prefer things you can finish or walk away from.\n\nThat's sound advice for saying yes at work or volunteering. A project that quietly doubles in scope can crush someone who agreed in a burst of optimism.",
+      "quote": "It is above all things necessary to form a true estimate of oneself, because as a rule we think that we can do more than we are able … for the bearer ought always to be more powerful than his load",
+      "apply_it": "Before your next yes, write down how long it will really take and whether you could stop if it grows. Then decide.",
+      "locator": "On Peace of Mind, VI ¶2",
+      "quiz": {
+        "question": "What rule of thumb did Seneca give about taking on tasks?",
+        "options": [
+          "Always take on more than you can handle",
+          "Never refuse a request",
+          "Let others decide your workload",
+          "The bearer ought to be stronger than the load"
+        ],
+        "answer": 3,
+        "explanation": "Compare your strength to the task; loads too heavy for the bearer crush him."
+      }
+    },
+    {
+      "id": "on-peace-of-mind-seneca--03",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "expectations",
+        "disappointment"
+      ],
+      "title": "Add a quiet \"unless something prevents it\" to your plans",
+      "body": "Seneca suggests planning with a reserve clause: I'll sail, unless something stops me; this deal will succeed, unless something goes wrong. The wise person isn't spared setbacks, but they're never blindsided, because they expected some resistance from the start.\n\nIt's not pessimism. You still commit fully. You just don't promise yourself the outcome, so a delay or a no stings less and you can adapt faster.",
+      "quote": "I will set sail unless anything happens to prevent me, I shall be praetor, if nothing hinders me, my financial operations will succeed, unless anything goes wrong with them.",
+      "apply_it": "For one plan today, say or write it with the clause: \"…unless something prevents it.\" Notice how it changes your feelings about the outcome.",
+      "locator": "On Peace of Mind, XIII ¶1",
+      "quiz": {
+        "question": "What is the point of Seneca's \"unless something prevents me\" clause?",
+        "options": [
+          "To lessen the pain of disappointment by expecting possible obstacles",
+          "To give yourself an excuse to quit",
+          "To avoid making any plans",
+          "To make others responsible"
+        ],
+        "answer": 0,
+        "explanation": "Expecting resistance means setbacks hurt less when they come."
+      }
+    },
+    {
+      "id": "on-peace-of-mind-seneca--04",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "humour",
+        "perspective"
+      ],
+      "title": "Meet the world's follies with a laugh rather than tears",
+      "body": "When human foolishness and wrongdoing get you down, Seneca suggests copying Democritus, who laughed, rather than Heraclitus, who wept. Taking a wider view lets you bear things more lightly.\n\nHe adds that the laugher actually has more hope: mocking a mistake assumes it can be fixed, while weeping gives up. When the news or office politics feel overwhelming, a little wry humour can keep you engaged without sinking into despair.",
+      "quote": "we should imitate Democritus rather than Heraclitus … We must take a higher view of all things, and bear with them more easily: it better becomes a man to scoff at life than to lament over it.",
+      "apply_it": "Next time the news or a situation gets you down, look for the absurd side of it and share a gentle laugh with someone.",
+      "locator": "On Peace of Mind, XV ¶1",
+      "quiz": {
+        "question": "Whose attitude did Seneca recommend imitating?",
+        "options": [
+          "Heraclitus, who wept",
+          "Both equally",
+          "Democritus, who laughed",
+          "Neither; stay indifferent"
+        ],
+        "answer": 2,
+        "explanation": "He preferred Democritus's laughter, which keeps hope that things can improve."
+      }
+    },
+    {
+      "id": "on-peace-of-mind-seneca--05",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "authenticity",
+        "honesty"
+      ],
+      "title": "Wearing a mask all the time is exhausting",
+      "body": "Seneca warns that hiding your real self and living for appearances is a constant source of strain. You end up watching yourself, afraid of being caught out, and you can't relax if you assume everyone is weighing your worth.\n\nHonest simplicity has its risks, as some people may look down on it, but Seneca thought those risks were lighter than permanent pretence. Being open doesn't mean oversharing; it means not living a curated performance.",
+      "quote": "life is neither happy nor safe when one always has to wear a mask",
+      "apply_it": "Notice one place today where you're performing rather than being honest. Try a small, genuine response there instead.",
+      "locator": "On Peace of Mind, XVII ¶1",
+      "quiz": {
+        "question": "What did Seneca say about always wearing a mask?",
+        "options": [
+          "Life is neither happy nor safe that way",
+          "It keeps you safe",
+          "It is necessary for success",
+          "Everyone should do it"
+        ],
+        "answer": 0,
+        "explanation": "Constant self-watching and fear of exposure make such a life neither happy nor safe."
+      }
+    }
+  ]
+}

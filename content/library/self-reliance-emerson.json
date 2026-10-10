@@ -1,0 +1,171 @@
+{
+  "source": {
+    "id": "self-reliance-emerson",
+    "title": "Self-Reliance",
+    "authors": [
+      "Ralph Waldo Emerson"
+    ],
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/ralph-waldo-emerson/essays",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Ralph Waldo Emerson, Self-Reliance, Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 1841,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Single essay taken from the Standard Ebooks edition of Emerson's Essays."
+  },
+  "cards": [
+    {
+      "id": "self-reliance-emerson--01",
+      "topic": "personal-development",
+      "tags": [
+        "confidence",
+        "ideas",
+        "intuition"
+      ],
+      "title": "Take your own ideas seriously before someone else says them",
+      "body": "Emerson noticed a familiar sting: you read a brilliant book or hear a colleague's idea and realise you had thought the same thing but dismissed it, simply because it was yours.\n\nWe tend to discount our own observations and defer to experts, crowds or louder voices. The cost is that good ideas die unspoken. Treat your private insights as data worth testing. Write them down, raise them in the meeting, sketch the plan. Some will be wrong, but you will stop watching others get credit for thoughts you already had.",
+      "quote": "In every work of genius we recognize our own rejected thoughts; they come back to us with a certain alienated majesty.",
+      "locator": "Self-Reliance ¶1",
+      "apply_it": "Next time you have an idea in a meeting or conversation, say it out loud within a minute instead of waiting to see if someone else does.",
+      "quiz": {
+        "question": "What does Emerson say we find in works of genius?",
+        "options": [
+          "Ideas we could never have had",
+          "Our own rejected thoughts",
+          "Proof that experts know best",
+          "Mistakes we should avoid"
+        ],
+        "answer": 1,
+        "explanation": "We often recognise our own dismissed ideas in great work, which is a reason to trust them sooner."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--02",
+      "topic": "psychology",
+      "tags": [
+        "effort",
+        "satisfaction",
+        "work"
+      ],
+      "title": "Only full effort gives you peace afterwards",
+      "body": "Emerson observed that a person feels light and glad after putting their whole heart into a piece of work and doing their best. Work done half-heartedly, by contrast, leaves an unsettled feeling that doesn't go away.\n\nThis matches a common experience: the report you rushed nags at you, while the one you finished properly lets you switch off. Wholehearted effort is not only better for results; it is also how you get to stop thinking about a task once it is done.",
+      "quote": "A man is relieved and gay when he has put his heart into his work and done his best; but what he has said or done otherwise shall give him no peace.",
+      "locator": "Self-Reliance ¶2",
+      "apply_it": "Choose one task today and give it full attention until it is done. Notice how you feel afterwards compared with a rushed task.",
+      "quiz": {
+        "question": "According to Emerson, what happens after half-hearted work?",
+        "options": [
+          "It gives you no peace",
+          "You feel relieved it's over",
+          "Nobody notices the difference",
+          "You save energy for later"
+        ],
+        "answer": 0,
+        "explanation": "Emerson says doing your best brings relief, while work done otherwise keeps nagging at you."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--03",
+      "topic": "psychology",
+      "tags": [
+        "independence",
+        "social-pressure",
+        "integrity"
+      ],
+      "title": "Stay yourself in a crowd, not only when you're alone",
+      "body": "Emerson's rule was simple and hard: what you must do is your business, not what people think. He added that it is easy to follow the crowd when among others, and easy to follow yourself when alone. The real test is keeping your own judgement calmly while surrounded by opinion.\n\nThat is the meeting where everyone nods along, the group chat with a pile-on, or the family dinner where your choice is questioned. Independence doesn't require rudeness; Emerson's ideal kept 'perfect sweetness' while holding firm.",
+      "quote": "It is easy in the world to live after the world’s opinion; it is easy in solitude to live after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.",
+      "locator": "Self-Reliance ¶9",
+      "apply_it": "Recall a recent moment you went along with a group against your judgement. Script one polite sentence you could use next time to hold your view.",
+      "quiz": {
+        "question": "What does Emerson see as the real test of independence?",
+        "options": [
+          "Living alone away from society",
+          "Arguing loudly with the crowd",
+          "Ignoring all advice",
+          "Keeping your own judgement kindly while among others"
+        ],
+        "answer": 3,
+        "explanation": "It's easy alone or by following the crowd; greatness is keeping your independence, with sweetness, in company."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--04",
+      "topic": "psychology",
+      "tags": [
+        "changing-your-mind",
+        "consistency",
+        "growth"
+      ],
+      "title": "You're allowed to change your mind when you learn more",
+      "body": "Emerson attacked 'a foolish consistency': sticking to what you said yesterday just because you said it. People fear looking inconsistent, so they defend old positions long after they have stopped believing them.\n\nPsychologists call a version of this commitment bias, and it shows up in sunk-cost projects, stubborn arguments and old opinions posted online. Emerson's alternative is to say what you think now, plainly, and say tomorrow's view plainly too, even if it contradicts today. Updating your view is a sign of thinking, not weakness.",
+      "quote": "A foolish consistency is the hobgoblin of little minds, adored by little statesmen and philosophers and divines.",
+      "locator": "Self-Reliance ¶14",
+      "apply_it": "Name one opinion you hold mainly because you've said it before. Ask: if I heard this today for the first time, would I agree?",
+      "quiz": {
+        "question": "What kind of consistency does Emerson criticise?",
+        "options": [
+          "Consistency in daily habits",
+          "Keeping promises",
+          "A foolish consistency that blocks honest change of mind",
+          "Consistent quality at work"
+        ],
+        "answer": 2,
+        "explanation": "He targets rigidly sticking to past statements; honest thinking may contradict yesterday's view."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--05",
+      "topic": "psychology",
+      "tags": [
+        "escapism",
+        "travel",
+        "self-awareness"
+      ],
+      "title": "A change of scenery won't change what you bring with you",
+      "body": "Emerson describes dreaming that in Naples or Rome he will lose his sadness, then waking up there next to the same sad self he tried to leave behind.\n\nTravel can be wonderful, but as an escape from inner trouble it tends to disappoint. The same applies to a new city, a new job or a new relationship chosen mainly to run from something. Whatever stress, habits or worries you carry will unpack with you. Face the issue at home first, and travel becomes a joy rather than a hoped-for cure.",
+      "quote": "I pack my trunk, embrace my friends, embark on the sea and at last wake up in Naples, and there beside me is the stern fact, the sad self, unrelenting, identical, that I fled from.",
+      "locator": "Self-Reliance ¶42",
+      "apply_it": "If you are planning a big change, ask: what am I hoping to leave behind? Write one step to address that where you are now.",
+      "quiz": {
+        "question": "What did Emerson find when he woke up in Naples?",
+        "options": [
+          "Instant happiness",
+          "The same sad self he had fled",
+          "A new circle of friends",
+          "That travel cures sadness"
+        ],
+        "answer": 1,
+        "explanation": "Running to a new place didn't help; his troubles travelled with him."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--06",
+      "topic": "psychology",
+      "tags": [
+        "regret",
+        "action",
+        "discontent"
+      ],
+      "title": "Turn regret into action, or let it go and get back to work",
+      "body": "Emerson called regrets a kind of false prayer. His test: feel sorry about a misfortune if that helps the person suffering; otherwise, return to your own work, and the repair has already started.\n\nRumination feels like caring but often changes nothing. Replaying a mistake, doom-scrolling bad news or sitting in someone's sadness with them can keep everyone stuck. The useful questions are: is there something I can do, and if so, what? If not, the best response is usually to do your own task well.",
+      "quote": "Regret calamities if you can thereby help the sufferer; if not, attend your own work and already the evil begins to be repaired.",
+      "locator": "Self-Reliance ¶38",
+      "apply_it": "Write down one regret on your mind. Next to it, write one helpful action, or the words 'let go' if there is none.",
+      "quiz": {
+        "question": "When does Emerson say regret is worth it?",
+        "options": [
+          "When it can help the person suffering",
+          "Always, it shows you care",
+          "Only for big mistakes",
+          "Never under any circumstances"
+        ],
+        "answer": 0,
+        "explanation": "Regret is useful only when it helps; otherwise, returning to your work starts the repair."
+      }
+    }
+  ]
+}

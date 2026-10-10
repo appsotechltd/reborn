@@ -1,0 +1,172 @@
+{
+  "source": {
+    "id": "discourses-epictetus",
+    "title": "Discourses",
+    "authors": [
+      "Epictetus"
+    ],
+    "translator": "George Long",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/epictetus/discourses/george-long",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Epictetus, Discourses (trans. George Long), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": 108,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Recorded by Arrian from Epictetus's lectures, c. 108 CE."
+  },
+  "cards": [
+    {
+      "id": "discourses-epictetus--01",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "patience",
+        "growth"
+      ],
+      "title": "Nothing worthwhile ripens overnight, so give it a season",
+      "body": "A man asked Epictetus how to stay steady while his brother refused to reconcile. Epictetus answered that nothing great appears suddenly. A fig tree has to flower, fruit and ripen; you can't demand figs this hour.\n\nWe expect instant results from new habits, therapy, careers and relationships, then quit when week two looks like week one. Character and calm grow on a slower clock. Measure progress in seasons, keep tending, and let the fruit arrive when it's ready.",
+      "quote": "Nothing great, said Epictetus, is produced suddenly, since not even the grape or the fig is. If you say to me now that you want a fig, I will answer to you that it requires time: let it flower first, then put forth fruit, and then ripen.",
+      "apply_it": "Choose one goal you feel impatient about. Write what \"flowering\" (an early sign of progress) would look like this month.",
+      "locator": "Book I, XV. What Philosophy Promises ¶3",
+      "quiz": {
+        "question": "What did Epictetus use to illustrate that great things take time?",
+        "options": [
+          "A river cutting stone",
+          "A fig tree flowering and ripening",
+          "A soldier training for war",
+          "A ship crossing the sea"
+        ],
+        "answer": 1,
+        "explanation": "He said even a fig needs to flower, fruit and ripen; a person's growth is no quicker."
+      }
+    },
+    {
+      "id": "discourses-epictetus--02",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "habits",
+        "practice"
+      ],
+      "title": "Every skill grows by doing it and fades when you stop",
+      "body": "Epictetus put it bluntly: you become a walker by walking, a runner by running. Want to be a reader? Read. A writer? Write. Skip it for a month and you'll feel the loss, like legs weak after days in bed.\n\nThe principle covers more than skills. Patience, honesty and calm are also habits strengthened by repetition. That makes every ordinary day a training session, and it means small, frequent practice beats rare bursts of effort.",
+      "quote": "Every habit and faculty is maintained and increased by the corresponding actions: the habit of walking by walking, the habit of running by running. If you would be a good reader, read; if a writer, write.",
+      "apply_it": "Pick one skill you want. Do ten minutes of it today, and mark it on a calendar so you can see the chain grow.",
+      "locator": "Book II, XVIII. How We Should Struggle Against… ¶1",
+      "quiz": {
+        "question": "According to Epictetus, how is a habit maintained and increased?",
+        "options": [
+          "By reading about it",
+          "By the corresponding actions",
+          "By natural talent alone",
+          "By resting between attempts"
+        ],
+        "answer": 1,
+        "explanation": "Each faculty grows through the actions that exercise it: reading by reading, writing by writing."
+      }
+    },
+    {
+      "id": "discourses-epictetus--03",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "anger",
+        "habit-tracking"
+      ],
+      "title": "Starve your temper and count the days you didn't lose it",
+      "body": "Epictetus treated anger as a habit that grows when fed. His remedy: stop adding fuel and start counting the days you stay calm. Angry daily at first, then every other day, then every third. Reach thirty calm days and celebrate.\n\nIt's an ancient habit tracker. Counting turns a vague wish to be calmer into visible progress, and a lapse becomes a reset rather than proof you can't change. The same approach works for snapping at family or venting online.",
+      "quote": "If then you wish not to be of an angry temper, do not feed the habit: throw nothing on it which will increase it: at first keep quiet, and count the days on which you have not been angry.",
+      "apply_it": "Start a simple tally today: one mark for each day you don't lose your temper. Review it at the end of the week.",
+      "locator": "Book II, XVIII. How We Should Struggle Against… ¶3",
+      "quiz": {
+        "question": "What practical method did Epictetus suggest for overcoming an angry temper?",
+        "options": [
+          "Express anger fully to release it",
+          "Avoid all people",
+          "Count the days on which you have not been angry",
+          "Punish yourself after every outburst"
+        ],
+        "answer": 2,
+        "explanation": "By not feeding the habit and counting calm days, the habit weakens and then disappears."
+      }
+    },
+    {
+      "id": "discourses-epictetus--04",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "effort",
+        "detachment"
+      ],
+      "title": "Play the game with full skill, but care less about the ball",
+      "body": "Epictetus pointed to ball players. Good players don't fuss over whether the ball itself is good or bad; they care about throwing and catching well. Socrates, on trial for his life, still \"played\" skilfully with what he was handed.\n\nApply full effort to whatever life passes you: a hard project, a diagnosis, a tough market. But don't stake your peace on the ball, the outcome you can't control. Care about the quality of your play.",
+      "quote": "So we should do: we must employ all the care of the players, but show the same indifference about the ball.",
+      "apply_it": "For one task today, write down what \"playing well\" means regardless of the outcome, and judge yourself only on that.",
+      "locator": "Book II, V. How Magnanimity Is Consistent with Care ¶4",
+      "quiz": {
+        "question": "What lesson did Epictetus draw from skilled ball players?",
+        "options": [
+          "Take great care in play, but be indifferent to the ball",
+          "Winning is all that matters",
+          "Avoid games entirely",
+          "Let others throw for you"
+        ],
+        "answer": 0,
+        "explanation": "Put full care into how you act while staying unattached to outcomes outside your control."
+      }
+    },
+    {
+      "id": "discourses-epictetus--05",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "learning",
+        "humility"
+      ],
+      "title": "You can't learn what you think you already know",
+      "body": "Epictetus said the first task of anyone who wants to grow is to drop the conceit of already knowing. A mind convinced it has the answers has no room left for new ones.\n\nThis is why experts plateau and arguments go nowhere. Approaching a topic, a feedback session or a disagreement as a beginner opens the door to actually learning. Saying \"I might be wrong about this\" isn't weakness; it's the entry fee for improvement.",
+      "quote": "What is the first business of him who philosophizes? To throw away self-conceit (οἴησις). For it is impossible for a man to begin to learn that which he thinks that he knows.",
+      "apply_it": "In your next conversation or meeting, ask one genuine question about a topic you think you already understand.",
+      "locator": "Book II, XVII. How We Must Adapt Preconceptions to… ¶1",
+      "quiz": {
+        "question": "What did Epictetus call the first business of someone who wants to learn wisdom?",
+        "options": [
+          "Reading every book",
+          "Finding a famous teacher",
+          "Winning debates",
+          "Throwing away self-conceit"
+        ],
+        "answer": 3,
+        "explanation": "He said it is impossible to begin learning what you think you already know."
+      }
+    },
+    {
+      "id": "discourses-epictetus--06",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "resilience",
+        "practice"
+      ],
+      "title": "Train your composure on small annoyances before the big tests",
+      "body": "Epictetus advised practising on little things first and working up to greater ones. A headache, an earache, someone slow to bring what you asked for: these are the training weights. You may still wince, but don't add an inner wail of \"alas\" on top.\n\nWe hope to stay calm in a crisis, yet we rehearse panic over a slow app or a queue. Every minor irritation is a free rep. Handle the small stuff gracefully and you build the strength the hard days will need.",
+      "quote": "Therefore we ought to exercise ourselves in small things, and beginning with them to proceed to the greater.",
+      "apply_it": "Choose today's smallest annoyance, like a delay or a glitch, and treat it as deliberate practice: notice the urge to complain and let it pass.",
+      "locator": "Book I, XVIII. That We Ought Not to Be Angry with the… ¶3",
+      "quiz": {
+        "question": "Where did Epictetus say we should begin our training in self-mastery?",
+        "options": [
+          "With small things, then proceed to greater",
+          "With the greatest trials",
+          "Only when a crisis arrives",
+          "By avoiding all discomfort"
+        ],
+        "answer": 0,
+        "explanation": "He advised practising on minor troubles first, then moving to bigger ones."
+      }
+    }
+  ]
+}
