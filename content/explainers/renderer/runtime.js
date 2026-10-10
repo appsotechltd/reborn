@@ -16,6 +16,8 @@
   window.__setup = async function (tl) {
     timeline = tl;
     const card = tl.card;
+    if (tl.theme) document.body.dataset.theme = tl.theme; else delete document.body.dataset.theme;
+    R.bg.setup(el("bgcanvas"), tl.theme, tl.scenes.slice(1).map((s) => s.start), tl.scale || 2, tl);
     el("topic").textContent = card.topicName;
     el("health").hidden = !card.health;
     el("footer").innerHTML =
@@ -41,6 +43,7 @@
 
   window.__seek = function (t) {
     if (!timeline) return;
+    R.bg.draw(t);
     for (const m of mounted) {
       const local = t - m.s.start;
       const d = m.s.duration;

@@ -450,6 +450,108 @@
     },
   };
 
+
+
+  // ---------- shape: the background forms an object (swarm, depth); a headline sits under it ----------
+  R.scenes.shape = {
+    setup(node, { card, params }) {
+      const headline = params.headline === "title" ? card.title : params.headline || "";
+      const sub = params.sub === "source" ? `From <i class="serif">${R.esc(card.sourceTitle)}</i> · ${R.esc(card.authors.join(", "))}` : R.esc(params.sub || "");
+      node.innerHTML = `
+        <div class="center" style="top:${params.top ?? 560}px;gap:10px">
+          ${params.eyebrow ? `<div class="eyebrow">${R.esc(params.eyebrow)}</div>` : ""}
+          ${headline ? `<div class="serif hl" style="font-size:${params.size || (headline.length > 50 ? 26 : 32)}px;line-height:1.18;font-weight:700">${R.words(headline)}</div>` : ""}
+          ${sub ? `<div class="sub" style="font-size:15px;color:var(--muted)">${sub}</div>` : ""}
+        </div>`;
+      return { eyebrow: node.querySelector(".eyebrow"), words: [...node.querySelectorAll(".hl .word")], sub: node.querySelector(".sub") };
+    },
+    update(node, t, { params }, s) {
+      const at = params.at ?? 1.2; // let the shape form first
+      if (s.eyebrow) fadeIn(s.eyebrow, t, at - 0.4, at + 0.2);
+      reveal(s.words, t, at, 0.06, 0.5, 12);
+      if (s.sub) fadeIn(s.sub, t, at + 0.4 + s.words.length * 0.06, at + 1.0 + s.words.length * 0.06);
+    },
+  };
+
+  // ---------- core: abstract energy core that leaks sparks (or channels them into beams) ----------
+  R.scenes.core = {
+    setup(node, { params }) {
+      const leak = (params.mode || "leak") === "leak";
+      const labels = params.labels || [];
+      const rnd = R.rng(leak ? 41 : 43);
+      const N = 120;
+      const parts = Array.from({ length: N }, () => ({ a: rnd() * Math.PI * 2, v: 90 + rnd() * 170, r: 1 + rnd() * 2.6, off: rnd() }));
+      const angles = leak ? labels.map((_, i) => -Math.PI / 2 + (i + 0.5) * (Math.PI * 2 / labels.length) + 0.35) : labels.map((_, i) => Math.PI / 2 + (i - (labels.length - 1) / 2) * 0.75);
+      node.innerHTML = svgBand(`
+        <defs>
+          <filter id="cg${leak ? "l" : "a"}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <radialGradient id="cc${leak ? "l" : "a"}"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient>
+        </defs>
+        <g filter="url(#cg${leak ? "l" : "a"})">
+          <circle class="halo" cx="270" cy="290" r="150" fill="url(#cc${leak ? "l" : "a"})" opacity=".35"/>
+          <circle class="ring" cx="270" cy="290" r="96" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 10"/>
+          <circle class="ring2" cx="270" cy="290" r="122" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 14" opacity=".6"/>
+          <circle class="orb" cx="270" cy="290" r="64" fill="url(#cc${leak ? "l" : "a"})"/>
+          <g class="beams">${leak ? "" : angles.map(() => `<path fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>`).join("")}</g>
+          <g class="parts">${parts.map((p) => `<circle r="${p.r.toFixed(1)}" fill="var(--accent)"/>`).join("")}</g>
+        </g>
+        ${labels.map((l) => `<text class="lbl" text-anchor="middle" font-size="19" font-weight="700" letter-spacing="1.5" fill="var(--ink)" style="text-transform:uppercase;text-shadow:0 0 14px var(--glow)" opacity="0">${R.esc(l)}</text>`).join("")}
+      `);
+      node.querySelector("svg").classList.add("raw"); // drawn in light already; skip the line-art treatment
+      return { leak, parts, angles, el: (q) => node.querySelector(q), partEls: [...node.querySelectorAll(".parts circle")],
+        beams: [...node.querySelectorAll(".beams path")], lbls: [...node.querySelectorAll(".lbl")] };
+    },
+    update(node, t, { duration }, s) {
+      const p = R.seg(t, 0.3, duration - 0.3);
+      const pulse = 1 + 0.05 * Math.sin(t * 5);
+      const orbR = s.leak ? R.lerp(70, 34, R.easeOut(p)) : R.lerp(40, 78, R.easeOut(p));
+      s.el(".orb").setAttribute("r", (orbR * pulse).toFixed(1));
+      s.el(".halo").setAttribute("r", (orbR * 2.4).toFixed(1));
+      s.el(".ring").setAttribute("transform", `rotate(${(t * 22).toFixed(1)} 270 290)`);
+      s.el(".ring2").setAttribute("transform", `rotate(${(-t * 14).toFixed(1)} 270 290)`);
+      const L = 1.6;
+      const on = R.seg(t, 0.4, 1.0);
+      s.partEls.forEach((c, i) => {
+        const pr = s.parts[i];
+        const k = t / L + pr.off;
+        const age = (k % 1);
+        const cycle = Math.floor(k);
+        let x, y, a;
+        if (s.leak) {
+          const ang = pr.a + Math.sin(cycle * 12.9898 + i) * 0.5; // a new heading every life
+          const r = orbR * 0.8 + age * pr.v * L;
+          x = 270 + Math.cos(ang) * r; y = 290 + Math.sin(ang) * r;
+          a = (1 - age) * on;
+        } else {
+          // Sparks are drawn in from outside and fly out along the beams.
+          const j = i % Math.max(1, s.angles.length);
+          const ang = s.angles[j] + Math.sin(i * 7.1) * 0.06;
+          const r = orbR * 0.9 + age * 260;
+          x = 270 + Math.cos(ang) * r; y = 290 + Math.sin(ang) * r;
+          a = Math.sin(age * Math.PI) * R.seg(t, 1.2 + j * 0.6, 1.8 + j * 0.6);
+        }
+        c.setAttribute("cx", x.toFixed(1)); c.setAttribute("cy", y.toFixed(1)); c.setAttribute("opacity", a.toFixed(2));
+      });
+      s.beams.forEach((b, j) => {
+        const g = R.easeOut(R.seg(t, 1.0 + j * 0.6, 1.7 + j * 0.6));
+        const ang = s.angles[j];
+        const r1 = orbR + 4, r2 = orbR + 4 + g * 200;
+        b.setAttribute("d", `M${(270 + Math.cos(ang) * r1).toFixed(1)},${(290 + Math.sin(ang) * r1).toFixed(1)} L${(270 + Math.cos(ang) * r2).toFixed(1)},${(290 + Math.sin(ang) * r2).toFixed(1)}`);
+        b.setAttribute("opacity", (g * (0.7 + 0.3 * Math.sin(t * 9 + j))).toFixed(2));
+      });
+      s.lbls.forEach((l, j) => {
+        const start = (s.leak ? 1.4 : 1.4) + j * 0.6;
+        const a = R.easeOut(R.seg(t, start, start + 0.6));
+        const drift = s.leak ? Math.max(0, t - start) * 9 : 0;
+        const r = (s.leak ? 175 : 238) + drift;
+        const ang = s.angles[j];
+        l.setAttribute("x", (270 + Math.cos(ang) * r).toFixed(1));
+        l.setAttribute("y", (296 + Math.sin(ang) * r).toFixed(1));
+        l.setAttribute("opacity", (a * (s.leak ? 1 - 0.55 * R.seg(t, start + 1.5, duration) : 1)).toFixed(2));
+      });
+    },
+  };
+
   // ---------- hours: a day of waking hours, most leaking away ----------
   R.scenes.hours = {
     setup(node, { params }) {

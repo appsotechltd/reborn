@@ -5,6 +5,7 @@
 //   node src/render.mjs aesops-fables--07       render one card
 //   node src/render.mjs --stills                write a few PNG frames per card instead (fast preview)
 //   node src/render.mjs --voice none            force a silent render even if a voice key is set
+//   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora)
 //
 // Env: ELEVENLABS_API_KEY (+ optional ELEVENLABS_VOICE_ID, ELEVENLABS_MODEL) adds narration.
 //      CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
@@ -28,6 +29,7 @@ function args() {
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--voice") opt.voice = a[++i];
     else if (a[i] === "--stills") opt.stills = true;
+    else if (a[i] === "--theme") opt.theme = a[++i];
     else opt.ids.push(a[i]);
   }
   return opt;
@@ -54,7 +56,7 @@ async function mixNarration(timeline, audio, file) {
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
-  const entry = await renderScenes(browser, card, script.scenes, { ...opt, label: cardId, base: path.join(OUT, card.id), fps: script.fps });
+  const entry = await renderScenes(browser, card, script.scenes, { ...opt, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme });
   return entry && { ...entry, script: `scripts/${cardId}.json` };
 }
 
@@ -66,7 +68,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   const cardId = opt.label || card.id;
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
-  const timeline = buildTimeline({ card, scenes, audio, fps: opt.fps || 30 });
+  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30 }), theme: opt.theme || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
   page.on("pageerror", (e) => console.error(`[${cardId}] page error:`, e.message));

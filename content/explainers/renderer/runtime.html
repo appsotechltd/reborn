@@ -49,6 +49,34 @@
   #footer b { color: var(--ink); font-weight: 600; }
   #progress { position: absolute; left: 0; bottom: 0; height: 4px; background: var(--accent); }
 
+
+  /* Dark abstract themes (timeline.theme). Colours come through the same variables,
+     and the animated background is drawn on #bgcanvas by backgrounds.js. */
+  body[data-theme] { --muted: rgba(240, 236, 255, 0.62); --ink: #f6f3ff; --apply: rgba(255, 255, 255, 0.05);
+    --apply-fg: var(--ink); --apply-border: var(--accent); --warn: rgba(255, 196, 77, 0.12); --warn-border: rgba(255, 196, 77, 0.55); --warn-fg: #ffd98a; }
+  body[data-theme="voltage"] { --paper: #03040b; --accent: #6fe9ff; --accent-soft: rgba(111, 233, 255, 0.35); --glow: rgba(111, 233, 255, 0.55); --serif: "Reborn Sans", system-ui, sans-serif; }
+  body[data-theme="ember"] { --paper: #090403; --ink: #fbf1e4; --muted: rgba(251, 241, 228, 0.62); --accent: #f5b54a; --accent-soft: rgba(245, 181, 74, 0.35); --glow: rgba(255, 140, 50, 0.55); }
+  body[data-theme="aurora"] { --paper: #04021a; --accent: #ff6ab8; --accent-soft: rgba(80, 235, 205, 0.4); --glow: rgba(255, 106, 184, 0.5); }
+  body[data-theme="swarm"] { --paper: #010108; --accent: #a9c8ff; --accent-soft: rgba(169, 200, 255, 0.35); --glow: rgba(140, 170, 255, 0.55); --serif: "Reborn Sans", system-ui, sans-serif; }
+  body[data-theme="depth"] { --paper: #020208; --accent: #ffcf8a; --accent-soft: rgba(110, 150, 255, 0.4); --glow: rgba(255, 190, 110, 0.45); }
+  body[data-theme] #stage { background: var(--paper); }
+  body[data-theme] .blob { display: none; }
+  body[data-theme] .serif, body[data-theme] h1, body[data-theme] blockquote { text-shadow: 0 0 28px var(--glow), 0 2px 12px rgba(0, 0, 0, 0.8); }
+  body[data-theme="voltage"] h1, body[data-theme="voltage"] .line { font-weight: 800 !important; letter-spacing: -0.025em; }
+  body[data-theme="voltage"] blockquote { font-style: normal !important; font-weight: 600; }
+  body[data-theme="aurora"] h1, body[data-theme="aurora"] .line { font-weight: 400 !important; }
+  body[data-theme] #wordmark { color: var(--accent); text-shadow: 0 0 14px var(--glow); }
+  body[data-theme] #caption { background: rgba(3, 3, 12, 0.66); border: 1px solid var(--accent-soft); box-shadow: 0 0 30px -8px var(--glow); color: #fff; }
+  body[data-theme] #footer b { color: var(--ink); }
+  body[data-theme] #progress { box-shadow: 0 0 12px var(--glow); }
+  body[data-theme] .box { box-shadow: 0 0 50px -14px var(--glow) !important; border: 1px solid var(--accent-soft); }
+  /* Figures and objects in a dark theme become glowing line art in the theme's accent. */
+  body[data-theme] .scene svg:not(.raw) { filter: drop-shadow(0 0 3px var(--glow)) drop-shadow(0 0 10px var(--glow)); }
+  body[data-theme] .scene svg:not(.raw) :is(rect, circle, ellipse, path, line, polygon, polyline) { fill: transparent !important; stroke: var(--accent) !important; stroke-width: 1.6px; }
+  body[data-theme] .scene svg:not(.raw) [fill="transparent"] { stroke: none !important; }
+  body[data-theme] .scene svg:not(.raw) text { fill: var(--ink) !important; stroke: none !important; }
+  #bgcanvas { position: absolute; inset: 0; width: 540px; height: 960px; }
+
   /* scene helpers */
   .center { position: absolute; left: 36px; right: 36px; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
@@ -58,7 +86,7 @@
 </head>
 <body>
 <div id="stage">
-  <div class="layer" id="bg"></div>
+  <div class="layer" id="bg"><canvas id="bgcanvas" hidden></canvas></div>
   <div class="layer" id="scenes"></div>
   <div id="header"><div id="wordmark">Reborn</div><div id="topic"></div></div>
   <div id="health" hidden>General information, not medical advice.</div>
@@ -67,6 +95,9 @@
   <div id="progress"></div>
 </div>
 <script src="scenes.js"></script>
+<script src="backgrounds.js"></script>
+<script src="particles.js"></script>
+<script src="depth.js"></script>
 <script src="runtime.js"></script>
 </body>
 </html>
