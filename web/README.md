@@ -76,6 +76,26 @@ The API must be running (by default at `http://localhost:8080`, see the reposito
   `frame-ancestors 'self'`, see `next.config.ts`). `/oembed?url=…&format=json` is an oEmbed
   provider, advertised on idea pages, which also get a generated Open Graph image.
 
+- **Engagement**: a header bell polls the unread count (`GET /v1/notifications?limit=1`, every
+  minute and on focus); `/notifications` marks items read on open or all at once and links each
+  to its comment (`/ideas/[id]#comment-…`), post, circle or profile. Signed-in readers see a
+  streak widget above the timeline (`GET /v1/me/streak`). Settings holds the daily goal,
+  timezone (defaults to the browser's), push toggles and the "Blocked & muted" list; a "⋯"
+  menu on profiles and comment authors mutes or blocks. Sign-up sends the browser's
+  `timezone` and any `referral_code` (from `/register?ref=`, or remembered by
+  `/join?ref=CODE` in `localStorage` under `reborn.referral`). Web push is not implemented.
+- **Discover and circles**: `/discover` (server-rendered) has trending posts with a topic
+  filter, new posts, popular books and authors, and circles. `/circles` lists yours and
+  browses by book; source pages have a Circles section with a create form; `/circles/[id]`
+  shows the thread to members, polling every 10 seconds while the tab is visible, with ideas
+  from the book attachable to messages. Public stashes appear on profiles and at `/s/[id]`
+  (server-rendered with Open Graph tags, revalidated every minute).
+- **Premium, referrals, dashboard**: `/premium` shows plans and status, starts Stripe
+  Checkout, thanks on `?welcome=1`, opens the billing portal, and says "coming soon" when
+  `providers.stripe` is false. `/invite` has the invite link and counts. `/admin`
+  (moderators) shows stat tiles, a 30-day inline-SVG chart, retention, engagement, revenue,
+  top posts and links to the moderation queues.
+
 Caching uses Next's classic ISR model rather than Cache Components, so the first visit to a
 card that wasn't prebuilt waits for the real content (good for crawlers and link previews)
 instead of streaming a fallback shell.
@@ -94,9 +114,11 @@ app/                 routes (public pages are server components; signed-in pages
   ideas/[id]/        idea card page (JSON-LD Article, quiz, listen, stash, post actions, comments,
                      opengraph-image / twitter-image)
   embed/ideas/[id]/, oembed/   embeddable card and oEmbed endpoint
-  sources/, sources/[id]/, authors/[name]/, topics/[slug]/, search/, u/[handle]/
-  signin/, register/, forgot-password/, reset-password/, stashes/, stashes/[id]/, review/, quiz/,
-  ask/, contribute/, moderation/, settings/, favorites/, following/
+  sources/, sources/[id]/, authors/[name]/, topics/[slug]/, search/, u/[handle]/, discover/,
+  s/[id]/ (public stash), circles/, circles/[id]/
+  signin/, register/, join/, forgot-password/, reset-password/, stashes/, stashes/[id]/, review/,
+  quiz/, ask/, contribute/, moderation/, settings/, favorites/, following/, notifications/,
+  premium/, invite/, admin/
   sitemap.ts, robots.ts, layout.tsx, not-found.tsx, error.tsx
 components/          CardView, PostCard, PostActions, Timeline, Comments, ShareMenu, GiftButton, FollowButton, …
 lib/                 api client, server data loaders, auth context, types, helpers

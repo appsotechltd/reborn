@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AccountMenu } from "./AccountMenu";
 import { NavLinks } from "./NavLinks";
+import { NotificationBell } from "./NotificationBell";
 
 export function SiteHeader() {
   return (
@@ -12,7 +13,8 @@ export function SiteHeader() {
         <nav aria-label="Main" className="order-3 w-full min-w-0 sm:order-none sm:w-auto sm:flex-1">
           <NavLinks />
         </nav>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-1">
+          <NotificationBell />
           <AccountMenu />
         </div>
       </div>
@@ -33,6 +35,9 @@ export function SiteFooter() {
           <Link href="/search" className="hover:underline">Search</Link>
           <Link href="/contribute" className="hover:underline">Contribute an idea</Link>
           <Link href="/ask" className="hover:underline">Ask the guide</Link>
+          <Link href="/discover" className="hover:underline">Discover</Link>
+          <Link href="/circles" className="hover:underline">Book circles</Link>
+          <Link href="/premium" className="hover:underline">Premium</Link>
         </p>
       </div>
     </footer>

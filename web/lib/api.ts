@@ -1,4 +1,15 @@
 import type {
+  AdminStats,
+  BlockedUser,
+  BlockKind,
+  Circle,
+  CircleMessage,
+  DiscoverResponse,
+  NotificationsResponse,
+  PremiumStatus,
+  PublicStash,
+  Referrals,
+  Streak,
   AuthorPage,
   AuthResponse,
   Card,
@@ -28,6 +39,7 @@ import type {
   Stash,
   Topic,
   User,
+  NotifyKind,
 } from "./types";
 
 /**
@@ -176,7 +188,13 @@ export function createApiClient(
       req<{ cards: Card[] }>("/v1/search", { query: q }),
 
     // Auth & account
-    register: (body: { email: string; password: string; display_name: string }) =>
+    register: (body: {
+      email: string;
+      password: string;
+      display_name: string;
+      referral_code?: string;
+      timezone?: string;
+    }) =>
       req<AuthResponse>("/v1/auth/register", { method: "POST", body, token: null }),
     login: (body: { email: string; password: string }) =>
       req<AuthResponse>("/v1/auth/login", { method: "POST", body, token: null }),
@@ -185,17 +203,25 @@ export function createApiClient(
     resetPassword: (body: { token: string; password: string }) =>
       req<AuthResponse>("/v1/auth/reset", { method: "POST", body, token: null }),
     me: () => req<User>("/v1/me"),
-    updateMe: (body: { display_name?: string; handle?: string; bio?: string; topics?: string[] }) =>
+    updateMe: (body: {
+      display_name?: string;
+      handle?: string;
+      bio?: string;
+      topics?: string[];
+      timezone?: string;
+      daily_goal?: number;
+      notify?: Partial<Record<NotifyKind, boolean>>;
+    }) =>
       req<User>("/v1/me", { method: "PATCH", body }),
     deleteMe: () => req<void>("/v1/me", { method: "DELETE" }),
     recordView: (cardId: string) => req<void>(`/v1/cards/${enc(cardId)}/view`, { method: "POST" }),
 
     // Stashes
     stashes: () => req<{ stashes: Stash[] }>("/v1/stashes"),
-    createStash: (body: { name: string; description?: string }) =>
+    createStash: (body: { name: string; description?: string; is_public?: boolean }) =>
       req<Stash>("/v1/stashes", { method: "POST", body }),
     stash: (id: string) => req<{ stash: Stash; cards: Card[] }>(`/v1/stashes/${enc(id)}`),
-    updateStash: (id: string, body: { name?: string; description?: string }) =>
+    updateStash: (id: string, body: { name?: string; description?: string; is_public?: boolean }) =>
       req<Stash>(`/v1/stashes/${enc(id)}`, { method: "PATCH", body }),
     deleteStash: (id: string) => req<void>(`/v1/stashes/${enc(id)}`, { method: "DELETE" }),
     addToStash: (id: string, cardId: string) =>
@@ -269,6 +295,56 @@ export function createApiClient(
     reportedComments: () => req<{ comments: ReportedComment[] }>("/v1/moderation/comments"),
     hideComment: (id: string) => req<void>(`/v1/moderation/comments/${enc(id)}/hide`, { method: "POST" }),
     restoreComment: (id: string) => req<void>(`/v1/moderation/comments/${enc(id)}/restore`, { method: "POST" }),
+
+    // Notifications, streaks, referrals
+    notifications: (limit = 50) => req<NotificationsResponse>("/v1/notifications", { query: { limit } }),
+    /** Marks the given notifications read, or all of them when ids is omitted. */
+    readNotifications: (ids?: string[]) =>
+      req<void>("/v1/notifications/read", { method: "POST", body: ids ? { ids } : undefined }),
+    registerDevice: (token: string) =>
+      req<void>("/v1/devices", { method: "POST", body: { platform: "web", token } }),
+    removeDevice: (token: string) => req<void>(`/v1/devices/${enc(token)}`, { method: "DELETE" }),
+    streak: () => req<Streak>("/v1/me/streak"),
+    referrals: () => req<Referrals>("/v1/me/referrals"),
+
+    // Blocking
+    blocks: () => req<{ blocks: BlockedUser[] }>("/v1/me/blocks"),
+    setBlock: (userId: string, kind: BlockKind | null) =>
+      kind
+        ? req<void>(`/v1/blocks/${enc(userId)}`, { method: "PUT", body: { kind } })
+        : req<void>(`/v1/blocks/${enc(userId)}`, { method: "DELETE" }),
+
+    // Discover & public stashes
+    trending: (q: { topic?: string; days?: number; limit?: number } = {}) =>
+      req<{ posts: Post[] }>("/v1/trending", { query: q }),
+    discover: () => req<DiscoverResponse>("/v1/discover"),
+    userStashes: (handle: string) => req<{ stashes: Stash[] }>(`/v1/users/${enc(handle)}/stashes`),
+    publicStash: (id: string) => req<{ stash: PublicStash; cards: Card[] }>(`/v1/public/stashes/${enc(id)}`),
+
+    // Book circles
+    circles: (q: { source?: string; mine?: boolean; limit?: number } = {}) =>
+      req<{ circles: Circle[] }>("/v1/circles", {
+        query: { source: q.source, mine: q.mine ? 1 : undefined, limit: q.limit },
+      }),
+    createCircle: (body: { source_id: string; name: string; description?: string }) =>
+      req<Circle>("/v1/circles", { method: "POST", body }),
+    circle: (id: string) => req<Circle>(`/v1/circles/${enc(id)}`),
+    joinCircle: (id: string) => req<Circle>(`/v1/circles/${enc(id)}/join`, { method: "POST" }),
+    leaveCircle: (id: string) => req<void>(`/v1/circles/${enc(id)}/leave`, { method: "POST" }),
+    circleMessages: (id: string, q: { before?: string; limit?: number } = {}) =>
+      req<{ messages: CircleMessage[] }>(`/v1/circles/${enc(id)}/messages`, { query: q }),
+    postCircleMessage: (id: string, body: { body: string; post_id?: string }) =>
+      req<CircleMessage>(`/v1/circles/${enc(id)}/messages`, { method: "POST", body }),
+    deleteCircleMessage: (id: string, msgId: string) =>
+      req<void>(`/v1/circles/${enc(id)}/messages/${enc(msgId)}`, { method: "DELETE" }),
+
+    // Premium
+    premium: () => req<PremiumStatus>("/v1/premium"),
+    premiumCheckout: (plan: string) => req<{ url: string }>("/v1/premium/checkout", { method: "POST", body: { plan } }),
+    premiumPortal: () => req<{ url: string }>("/v1/premium/portal", { method: "POST" }),
+
+    // Moderator dashboard
+    adminStats: () => req<AdminStats>("/v1/admin/stats"),
 
     // AI guide
     chat: (messages: ChatMessage[]) =>
