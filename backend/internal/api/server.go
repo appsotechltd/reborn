@@ -15,6 +15,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/cache"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
 	"github.com/appsotechltd/reborn/backend/internal/mail"
+	"github.com/appsotechltd/reborn/backend/internal/objstore"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
 	"github.com/appsotechltd/reborn/backend/internal/push"
 	"github.com/appsotechltd/reborn/backend/internal/store"
@@ -45,6 +46,10 @@ type Server struct {
 	StripePrices    map[string]string // premium plan id -> Stripe price id
 	GoogleRTDNToken string            // shared secret in the Play notifications push URL
 	Push            push.Sender       // nil disables push notifications
+
+	// Media stores videos, images and other files: R2 in production, a local
+	// folder in development, which the API then serves under /media/.
+	Media objstore.Store
 }
 
 // Handler returns the routed, middleware-wrapped handler.
@@ -54,6 +59,9 @@ func (s *Server) Handler() http.Handler {
 	}
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /healthz", s.health)
+	if local, ok := s.Media.(*objstore.Local); ok {
+		mux.Handle("GET /media/", local.Handler("/media/"))
+	}
 
 	mux.HandleFunc("GET /v1/topics", s.topics)
 	mux.HandleFunc("GET /v1/feed", s.feed)

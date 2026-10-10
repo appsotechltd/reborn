@@ -6,6 +6,8 @@
 //	reborn seed [dir]             validate and import library files, then embed
 //	reborn embed                  embed cards that lack vectors (needs VOYAGE_API_KEY)
 //	reborn make-moderator <email> give a user the moderator role
+//	reborn media-upload <dir> [prefix]
+//	                              copy media files to R2 (or MEDIA_DIR), skipping unchanged ones
 package main
 
 import (
@@ -30,6 +32,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/db"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
 	"github.com/appsotechltd/reborn/backend/internal/mail"
+	"github.com/appsotechltd/reborn/backend/internal/objstore"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
 	"github.com/appsotechltd/reborn/backend/internal/push"
 	"github.com/appsotechltd/reborn/backend/internal/store"
@@ -38,7 +41,7 @@ import (
 func main() {
 	slog.SetDefault(slog.New(slog.NewTextHandler(os.Stderr, nil)))
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "usage: reborn serve|migrate|validate|seed|embed|make-moderator")
+		fmt.Fprintln(os.Stderr, "usage: reborn serve|migrate|validate|seed|embed|make-moderator|media-upload")
 		os.Exit(2)
 	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
@@ -54,6 +57,9 @@ func run(ctx context.Context, cfg config.Config, cmd string, args []string) erro
 	if cmd == "validate" {
 		_, err := loadLibrary(dirArg(cfg, args))
 		return err
+	}
+	if cmd == "media-upload" {
+		return mediaUpload(ctx, cfg, args)
 	}
 	pool, err := db.Open(ctx, cfg.DatabaseURL)
 	if err != nil {
@@ -161,6 +167,7 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		AgentHourly: cfg.AgentHourly,
 		CORSOrigins: cfg.CORSOrigins,
 		WebBaseURL:  strings.TrimRight(cfg.WebBaseURL, "/"),
+		Media:       mediaStore(cfg),
 	}
 	if srv.Mailer, err = mail.FromURL(cfg.SMTPURL, cfg.MailFrom); err != nil {
 		return err
@@ -239,4 +246,40 @@ func setupPayments(cfg config.Config, srv *api.Server) error {
 	}
 	slog.Info("payment and push providers", "stripe", srv.Stripe != nil, "apple", srv.Apple != nil, "google", srv.Google != nil, "push", srv.Push != nil)
 	return nil
+}
+
+// mediaStore is R2 when its keys are set, else the local MEDIA_DIR served at /media.
+func mediaStore(cfg config.Config) objstore.Store {
+	if cfg.R2Enabled() {
+		if cfg.MediaBaseURL == "" {
+			slog.Warn("MEDIA_BASE_URL is not set; media links will not resolve until the bucket has a public URL")
+		}
+		slog.Info("media storage", "backend", "r2", "bucket", cfg.R2Bucket, "public_url", cfg.MediaBaseURL)
+		return objstore.NewR2(cfg.R2AccountID, cfg.R2Bucket, cfg.R2AccessKey, cfg.R2SecretKey, cfg.MediaBaseURL)
+	}
+	base := cfg.MediaBaseURL
+	if base == "" {
+		// Apps need absolute links; in development the API serves the files itself.
+		host := cfg.Addr
+		if strings.HasPrefix(host, ":") {
+			host = "localhost" + host
+		}
+		base = "http://" + host + "/media"
+	}
+	slog.Warn("R2 is not configured; media files are kept on local disk (development only)", "dir", cfg.MediaDir)
+	return &objstore.Local{Dir: cfg.MediaDir, BaseURL: base}
+}
+
+func mediaUpload(ctx context.Context, cfg config.Config, args []string) error {
+	if len(args) < 1 || len(args) > 2 {
+		return errors.New("usage: reborn media-upload <dir> [prefix]")
+	}
+	prefix := ""
+	if len(args) == 2 {
+		prefix = args[1]
+	}
+	st := mediaStore(cfg)
+	res, err := objstore.UploadDir(ctx, st, args[0], prefix, func(key string) { slog.Info("uploaded", "key", key, "url", st.URL(key)) })
+	slog.Info("media upload", "uploaded", res.Uploaded, "unchanged", res.Unchanged, "skipped", res.Skipped)
+	return err
 }

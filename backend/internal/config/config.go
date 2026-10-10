@@ -34,6 +34,19 @@ type Config struct {
 	StripePriceMonthly  string
 	StripePriceYearly   string
 	FirebaseServiceFile string // service account key for push notifications
+
+	// Media files live in Cloudflare R2 when the R2 keys are set, else on local disk.
+	R2AccountID  string
+	R2AccessKey  string
+	R2SecretKey  string
+	R2Bucket     string
+	MediaBaseURL string // public URL of the bucket (custom domain or r2.dev); "/media" locally
+	MediaDir     string // local fallback folder for development
+}
+
+// R2Enabled reports whether every R2 setting is present.
+func (c Config) R2Enabled() bool {
+	return c.R2AccountID != "" && c.R2AccessKey != "" && c.R2SecretKey != "" && c.R2Bucket != ""
 }
 
 // Load reads the environment, applying development defaults.
@@ -65,6 +78,13 @@ func Load() Config {
 		StripePriceMonthly:  os.Getenv("STRIPE_PRICE_MONTHLY"),
 		StripePriceYearly:   os.Getenv("STRIPE_PRICE_YEARLY"),
 		FirebaseServiceFile: os.Getenv("FIREBASE_SERVICE_ACCOUNT_FILE"),
+
+		R2AccountID:  os.Getenv("R2_ACCOUNT_ID"),
+		R2AccessKey:  os.Getenv("R2_ACCESS_KEY_ID"),
+		R2SecretKey:  os.Getenv("R2_SECRET_ACCESS_KEY"),
+		R2Bucket:     os.Getenv("R2_BUCKET"),
+		MediaBaseURL: os.Getenv("MEDIA_BASE_URL"),
+		MediaDir:     env("MEDIA_DIR", "media"),
 	}
 }
 

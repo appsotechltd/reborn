@@ -195,6 +195,15 @@ The agent answers only from the card library and cites cards inline as `[card-id
 `agent_unavailable` when the server has no Anthropic API key, and `429` when the user's
 hourly limit is hit.
 
+## Media
+
+Videos, images, captions and other files are stored in Cloudflare R2 and fetched straight
+from the bucket's public URL (`MEDIA_BASE_URL`), so every media URL the API returns is
+absolute and points at R2 or its CDN domain. Upload files with
+`reborn media-upload <dir> [prefix]`. In development, without R2 settings, files are kept
+in `MEDIA_DIR` and served by the API at `GET /media/{key}` (media types only, with range
+requests for video seeking).
+
 ## Gift configuration
 
 Gifts are product ids `reborn.gift.spark` ($1.99), `reborn.gift.lamp` ($4.99) and
