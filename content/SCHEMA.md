@@ -85,6 +85,7 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 |---|---|
 | `business` | Business |
 | `psychology` | Psychology |
+| `mental-strength` | Mental Strength & Resilience |
 | `health` | Health & Wellness |
 | `emotional-intelligence` | Emotional Intelligence |
 | `personal-development` | Personal Development |
@@ -102,7 +103,7 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `lives-history` | Lives & History |
 | `entrepreneurship` | Entrepreneurship |
 
-`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting.
+`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing.
 
 ## Example
 

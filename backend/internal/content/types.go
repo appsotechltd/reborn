@@ -59,6 +59,7 @@ type Topic struct {
 var Topics = []Topic{
 	{"business", "Business"},
 	{"psychology", "Psychology"},
+	{"mental-strength", "Mental Strength & Resilience"},
 	{"health", "Health & Wellness"},
 	{"emotional-intelligence", "Emotional Intelligence"},
 	{"personal-development", "Personal Development"},

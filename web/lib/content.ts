@@ -4,6 +4,7 @@ import type { Card, Licence, SourceKind, Topic } from "./types";
 export const TOPICS: { slug: string; name: string }[] = [
   { slug: "business", name: "Business" },
   { slug: "psychology", name: "Psychology" },
+  { slug: "mental-strength", name: "Mental Strength & Resilience" },
   { slug: "health", name: "Health & Wellness" },
   { slug: "emotional-intelligence", name: "Emotional Intelligence" },
   { slug: "personal-development", name: "Personal Development" },
