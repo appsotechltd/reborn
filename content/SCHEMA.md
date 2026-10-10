@@ -31,7 +31,7 @@ A source should have 3–10 cards (the validator warns outside that range and re
 | `url` | string (https URL) | yes | Where a reader can find the source |
 | `licence` | enum | yes | See licences below |
 | `licence_url` | string (URL) | yes | The licence page or the source's own licence/terms page |
-| `attribution` | string | yes | The exact credit line shown on every card, e.g. `OpenStax, Psychology 2e, CC BY 4.0` |
+| `attribution` | string | yes | The exact credit line shown on every card, e.g. `NHS, How to fall asleep faster and sleep better, Open Government Licence v3.0` |
 | `publisher` | string | no | e.g. `Project Gutenberg`, `OpenStax`, `NHS` |
 | `year` | integer | no | Original publication year (negative for BCE) |
 | `language` | string | no | BCP-47, default `en` |
@@ -45,7 +45,7 @@ A source should have 3–10 cards (the validator warns outside that range and re
 |---|---|---|
 | `public-domain` | Public-domain work (Gutenberg, Standard Ebooks, pre-1929 etc.) | yes |
 | `us-gov-public-domain` | US federal government work (NIH, CDC, MedlinePlus pages that are PD) | yes |
-| `cc-by-4.0` | Creative Commons Attribution 4.0 (OpenStax, many PLOS/PMC articles) | yes |
+| `cc-by-4.0` | Creative Commons Attribution 4.0 (many OpenStax books and PLOS/PMC articles; check each, some OpenStax titles are CC BY-NC-SA) | yes |
 | `cc-by-3.0` | Creative Commons Attribution 3.0 | yes |
 | `cc-by-sa-4.0` | Creative Commons Attribution-ShareAlike 4.0 (Wikipedia). Cards adapted from it are shared under CC BY-SA too | yes |
 | `cc0-1.0` | CC0 public-domain dedication | yes |

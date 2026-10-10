@@ -208,8 +208,8 @@ func TestPublicBrowsing(t *testing.T) {
 	}
 	h.do("GET", "/v1/cards/nope--01", "", nil, 404)
 
-	got := ids(list(h.do("GET", "/v1/cards?ids=psychology-2e-openstax--02,nhs-sleep-tips--03", "", nil, 200), "cards"))
-	if strings.Join(got, ",") != "psychology-2e-openstax--02,nhs-sleep-tips--03" {
+	got := ids(list(h.do("GET", "/v1/cards?ids=fixture-psychology-notes--02,nhs-sleep-tips--03", "", nil, 200), "cards"))
+	if strings.Join(got, ",") != "fixture-psychology-notes--02,nhs-sleep-tips--03" {
 		t.Fatalf("cards by ids = %v", got)
 	}
 
