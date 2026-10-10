@@ -83,8 +83,14 @@ func setup(t *testing.T) *harness {
 		t.Fatal(err)
 	}
 	lib, ps, err := content.LoadDir(filepath.Join("..", "..", "testdata", "library"))
-	if err != nil || len(ps) > 0 {
-		t.Fatalf("fixtures: %v %v", err, ps)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Fixtures are small on purpose, so the card-count warning is expected.
+	for _, p := range ps {
+		if !p.Warning {
+			t.Fatalf("fixtures: %v", ps)
+		}
 	}
 	res, err := st.Seed(ctx, lib)
 	if err != nil {
