@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "mindset-dweck",
+    "title": "Mindset",
+    "authors": [
+      "Carol S. Dweck"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Mindset_(book)",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Mindset by Carol S. Dweck (2006). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Random House",
+    "year": 2006,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "mindset-dweck--01",
+      "topic": "psychology",
+      "tags": [
+        "growth-mindset",
+        "beliefs",
+        "learning"
+      ],
+      "title": "What you believe about ability shapes how you approach challenges",
+      "body": "Dweck contrasts two beliefs. In a fixed mindset, talent and intelligence are set amounts, so every test is a verdict on who you are. In a growth mindset, abilities can be developed through effort, good strategies and help from others, so a test is a chance to learn.\n\nShe argues these beliefs affect whether people seek challenges or avoid them. Most of us hold a mix, and it can shift by area: you might feel you can improve at work but believe you're simply 'not a maths person'.",
+      "apply_it": "Name one area where you think 'I'm just not good at this'. Rephrase it as 'I'm not good at this yet' and pick one thing to practise.",
+      "quiz": {
+        "question": "In a growth mindset, how are abilities seen?",
+        "options": [
+          "As fixed at birth",
+          "As something that can be developed",
+          "As irrelevant to success",
+          "As purely down to luck"
+        ],
+        "answer": 1,
+        "explanation": "A growth mindset treats ability as something that can grow with effort, strategy and support."
+      }
+    },
+    {
+      "id": "mindset-dweck--02",
+      "topic": "personal-development",
+      "tags": [
+        "praise",
+        "parenting",
+        "teaching"
+      ],
+      "title": "Praise the process, not the person's talent",
+      "body": "Dweck's research suggests that how we praise matters. Calling someone 'so clever' can quietly teach them that ability is fixed, which can make them wary of hard tasks that might prove otherwise. Praising the effort, the strategy they used or how they kept going points attention at things they can control and repeat.\n\nThis isn't about praising effort that didn't work. It's about linking progress to what the person did, so they know what to try next time.",
+      "apply_it": "Next time you compliment someone's work, mention a specific choice they made, such as how they planned it or what they tried after getting stuck.",
+      "quiz": {
+        "question": "Which kind of praise does Dweck recommend?",
+        "options": [
+          "\"You're a natural\"",
+          "\"You're smarter than everyone\"",
+          "No praise at all",
+          "Specific praise for the approach and persistence"
+        ],
+        "answer": 3,
+        "explanation": "Praising process links success to things people can repeat and improve."
+      }
+    },
+    {
+      "id": "mindset-dweck--03",
+      "topic": "personal-development",
+      "tags": [
+        "failure",
+        "resilience",
+        "feedback"
+      ],
+      "title": "A setback is information, not a label",
+      "body": "In a fixed mindset, failing can feel like proof that you lack ability, so people may hide mistakes, blame others or give up. Dweck describes how people with more of a growth mindset tend to treat setbacks as useful feedback: what went wrong, and what should I change?\n\nThe disappointment is still real. The difference is what happens next. Separating 'I failed at this' from 'I am a failure' keeps the door open to trying again with a better plan.",
+      "apply_it": "Think of a recent setback. Write one sentence on what it taught you and one change you'll make next time.",
+      "quiz": {
+        "question": "How does a growth mindset tend to treat failure?",
+        "options": [
+          "As feedback to learn from",
+          "As proof of low ability",
+          "As something to hide",
+          "As someone else's fault"
+        ],
+        "answer": 0,
+        "explanation": "Treating setbacks as information makes it easier to adjust and keep going."
+      }
+    },
+    {
+      "id": "mindset-dweck--04",
+      "topic": "personal-development",
+      "tags": [
+        "effort",
+        "mastery",
+        "practice"
+      ],
+      "title": "Effort is how ability grows, not a sign that you lack it",
+      "body": "A fixed mindset holds that if you were really good at something, it would come easily, so needing to work hard feels embarrassing. Dweck argues the opposite: effort is what builds skill, and even people we call gifted typically put in a great deal of practice.\n\nThat doesn't mean grinding blindly. Effort works best alongside new strategies and asking for help when you're stuck, rather than just repeating the same approach.",
+      "apply_it": "Choose a skill you find hard. Schedule a short practice session this week and try one new method or ask one person for a tip.",
+      "quiz": {
+        "question": "What does Dweck say about needing to work hard at something?",
+        "options": [
+          "It shows you lack talent",
+          "It means you should quit",
+          "It's how ability is built, especially with good strategies",
+          "It only matters for children"
+        ],
+        "answer": 2,
+        "explanation": "Effort paired with good strategies and help is the route to improvement."
+      }
+    },
+    {
+      "id": "mindset-dweck--05",
+      "topic": "relationships",
+      "tags": [
+        "relationships",
+        "conflict",
+        "growth-mindset"
+      ],
+      "title": "Good relationships are built, not just found",
+      "body": "Dweck applies mindsets to relationships too. A fixed view says that if two people are right for each other, things should be easy, so any conflict feels like a sign of a bad match, and problems get blamed on a partner's fixed flaws.\n\nA growth view expects friction and sees it as something two people can work on together through honest talk and changed habits. Partners, friends and colleagues can all learn to communicate and understand each other better.",
+      "apply_it": "Think of a recurring disagreement with someone close. Instead of blaming their character, suggest one small change you could both try.",
+      "quiz": {
+        "question": "With a fixed mindset about relationships, how might conflict be seen?",
+        "options": [
+          "As a normal thing to work through",
+          "As a sign the relationship is wrong or the partner is flawed",
+          "As a chance to learn",
+          "As unimportant"
+        ],
+        "answer": 1,
+        "explanation": "A fixed view treats problems as evidence of a bad match rather than something to work on."
+      }
+    }
+  ]
+}

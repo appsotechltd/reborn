@@ -1,0 +1,139 @@
+{
+  "source": {
+    "id": "crucial-conversations",
+    "title": "Crucial Conversations",
+    "authors": [
+      "Kerry Patterson",
+      "Joseph Grenny",
+      "Ron McMillan",
+      "Al Switzler"
+    ],
+    "kind": "book",
+    "url": "https://cruciallearning.com/crucial-conversations-book/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Crucial Conversations by Kerry Patterson, Joseph Grenny, Ron McMillan and Al Switzler (2002). Not affiliated with or endorsed by the authors or publisher.",
+    "publisher": "McGraw-Hill",
+    "year": 2002,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "crucial-conversations--01",
+      "topic": "relationships",
+      "tags": [
+        "communication",
+        "conflict",
+        "dialogue"
+      ],
+      "title": "Spot the conversations that matter most",
+      "body": "The authors describe a crucial conversation as one where a lot is at stake, people disagree and feelings run high. These are exactly the moments when we tend to handle things worst: we avoid them, or we handle them badly.\n\nTheir goal is honest dialogue, where everyone adds what they know and think to a shared understanding. The more complete that shared picture, the better the decision, and the more people commit to it. Recognising you're in one of these moments is the first step to handling it well.",
+      "apply_it": "Think of a conversation you've been putting off. Note what is at stake, where you disagree and how strong feelings are.",
+      "quiz": {
+        "question": "Which three features mark a 'crucial conversation'?",
+        "options": [
+          "Long meetings, many people and formal agendas",
+          "Strangers, small talk and short time",
+          "High stakes, differing opinions and strong emotions",
+          "Written messages, deadlines and managers"
+        ],
+        "answer": 2,
+        "explanation": "The authors define it by stakes, disagreement and emotion together."
+      }
+    },
+    {
+      "id": "crucial-conversations--02",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "motives",
+        "self-awareness",
+        "goals"
+      ],
+      "title": "Ask what you really want before you speak",
+      "body": "When a talk heats up, our goals quietly shift from solving the problem to winning, being right or punishing the other person. The book suggests stopping to ask what you actually want for yourself, for the other person and for the relationship.\n\nIt also warns against the false choice between being honest and keeping the peace. Usually there's a way to say the difficult thing and still treat the person well. Looking for that option keeps you focused on outcomes rather than on scoring points.",
+      "apply_it": "Before your next tense conversation, write one sentence each: what I want for me, for them, for us.",
+      "quiz": {
+        "question": "What does the book recommend when you notice your goal has turned into 'winning'?",
+        "options": [
+          "Ask what you really want for yourself, the other person and the relationship",
+          "Keep pushing until you win",
+          "Leave the conversation",
+          "Agree with whatever they say"
+        ],
+        "answer": 0,
+        "explanation": "Revisiting your real goals pulls you out of win-or-lose thinking."
+      }
+    },
+    {
+      "id": "crucial-conversations--03",
+      "topic": "relationships",
+      "tags": [
+        "safety",
+        "respect",
+        "dialogue"
+      ],
+      "title": "When people go quiet or attack, make it safe again",
+      "body": "The authors observe that when people feel unsafe in a conversation, they move either toward silence, such as withdrawing, hinting or sugar-coating, or toward aggression, such as labelling, overstating or controlling. Both are signals, not the real issue.\n\nThe fix is to restore safety: show that you share a common purpose and that you respect the other person. If they've misread your intent, clarify what you don't mean and what you do. Once people feel safe, they can talk about almost anything.",
+      "apply_it": "In your next disagreement, watch for withdrawal or sharpness. If you see it, say what goal you both share before going on.",
+      "quiz": {
+        "question": "According to the book, what should you do when someone becomes silent or aggressive?",
+        "options": [
+          "Argue the facts harder",
+          "Change the subject permanently",
+          "Match their tone",
+          "Restore their sense of safety through shared purpose and respect"
+        ],
+        "answer": 3,
+        "explanation": "Silence and aggression signal lost safety; rebuild it, then return to the content."
+      }
+    },
+    {
+      "id": "crucial-conversations--04",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "emotions",
+        "stories",
+        "self-control"
+      ],
+      "title": "Your feelings come from the story you tell, not just the facts",
+      "body": "A key idea in the book is that between seeing something and feeling something, we tell ourselves a quick story about why it happened. A colleague is late and we decide they don't care. The anger comes from that story, not from the lateness itself.\n\nBy separating what you actually observed from the meaning you added, you can question whether the story is fair. Asking why a reasonable person might act this way often cools emotions and opens a more useful conversation.",
+      "apply_it": "Next time you feel a flash of anger, write the plain facts on one line and your interpretation on another.",
+      "quiz": {
+        "question": "Where do strong emotions often come from, according to the authors?",
+        "options": [
+          "Genetics alone",
+          "The story we tell ourselves about what happened",
+          "Other people's tone of voice",
+          "Lack of sleep"
+        ],
+        "answer": 1,
+        "explanation": "We interpret events quickly, and those interpretations drive our feelings."
+      }
+    },
+    {
+      "id": "crucial-conversations--05",
+      "topic": "business",
+      "tags": [
+        "decisions",
+        "accountability",
+        "follow-up"
+      ],
+      "title": "End with who does what, by when",
+      "body": "Good dialogue can still go nowhere if people leave with different ideas of what was agreed. The book stresses closing a crucial conversation with clarity: how the decision will be made, who will do each task, by when, and how you'll check back.\n\nThis is especially useful at work, where vague agreements quietly fall apart. Writing down the commitments and following up turns an honest discussion into real change.",
+      "apply_it": "After your next important meeting, send a short note listing each action, its owner and its deadline.",
+      "quiz": {
+        "question": "What does the book suggest you settle at the end of a crucial conversation?",
+        "options": [
+          "Who was right",
+          "A date for the next argument",
+          "Who does what, by when, and how you'll follow up",
+          "Nothing; good talks resolve themselves"
+        ],
+        "answer": 2,
+        "explanation": "Clear commitments and follow-up turn dialogue into action."
+      }
+    }
+  ]
+}

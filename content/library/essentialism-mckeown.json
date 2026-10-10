@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "essentialism-mckeown",
+    "title": "Essentialism",
+    "authors": [
+      "Greg McKeown"
+    ],
+    "kind": "book",
+    "url": "https://gregmckeown.com/books/essentialism/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Essentialism by Greg McKeown (2014). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Crown Business",
+    "year": 2014,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "essentialism-mckeown--01",
+      "topic": "personal-development",
+      "tags": [
+        "priorities",
+        "focus",
+        "less-but-better"
+      ],
+      "title": "Do fewer things, but do them much better",
+      "body": "McKeown's core idea is that trying to do everything spreads your effort so thin that nothing gets real progress. Essentialism is the deliberate habit of figuring out what truly matters and putting your energy there, while letting the rest go.\n\nHe warns that if you don't choose your priorities, other people will choose them for you, filling your days with their requests. Being selective is not laziness; it is how you make a meaningful contribution instead of a scattered one.",
+      "apply_it": "Write down the three things that matter most to you this month. Cross off one commitment that doesn't serve any of them.",
+      "quiz": {
+        "question": "What is the core idea of essentialism?",
+        "options": [
+          "Choose what matters most and pursue it deliberately",
+          "Do as much as possible",
+          "Avoid all hard work",
+          "Say yes to every opportunity"
+        ],
+        "answer": 0,
+        "explanation": "It is the disciplined pursuit of fewer, more important things."
+      }
+    },
+    {
+      "id": "essentialism-mckeown--02",
+      "topic": "productivity",
+      "tags": [
+        "trade-offs",
+        "decisions",
+        "choices"
+      ],
+      "title": "Every yes carries a trade-off, so choose it on purpose",
+      "body": "McKeown argues that trade-offs are unavoidable. Time and energy are limited, so agreeing to one thing always means giving up another. Many people pretend otherwise and try to have it all, which leads to overcommitment and mediocre results.\n\nInstead of asking how to fit everything in, ask which option you most want and what you are willing to give up for it. Facing the trade-off openly turns a stressful juggling act into a clear decision.",
+      "apply_it": "For your next request, ask yourself: if I say yes to this, what am I saying no to?",
+      "quiz": {
+        "question": "How does McKeown suggest handling trade-offs?",
+        "options": [
+          "Avoid them by working harder",
+          "Pretend they don't exist",
+          "Let others decide",
+          "Accept them and choose deliberately what to give up"
+        ],
+        "answer": 3,
+        "explanation": "Trade-offs are a fact of life, so the essentialist makes them consciously."
+      }
+    },
+    {
+      "id": "essentialism-mckeown--03",
+      "topic": "productivity",
+      "tags": [
+        "decisions",
+        "criteria",
+        "opportunities"
+      ],
+      "title": "If it isn't a clear yes, treat it as a no",
+      "body": "When evaluating an opportunity, McKeown suggests setting a high bar. Pick the single most important criterion and score the option against it. If it doesn't score strongly, perhaps around 90 out of 100, decline it.\n\nThe reasoning is that lukewarm options quietly fill your calendar and crowd out the rare opportunities that really matter. Being extremely selective feels uncomfortable at first, but it keeps room open for the things you would be genuinely excited about.",
+      "apply_it": "Rate a current invitation or project from 0 to 100 on your top criterion. If it scores below 90, plan how to decline.",
+      "quiz": {
+        "question": "What does McKeown suggest doing with an opportunity that is merely 'fine'?",
+        "options": [
+          "Accept it to be safe",
+          "Delegate it automatically",
+          "Decline it unless it's a clear yes",
+          "Postpone it indefinitely"
+        ],
+        "answer": 2,
+        "explanation": "A strict threshold keeps space for the opportunities that truly matter."
+      }
+    },
+    {
+      "id": "essentialism-mckeown--04",
+      "topic": "relationships",
+      "tags": [
+        "saying-no",
+        "boundaries",
+        "communication"
+      ],
+      "title": "Say no kindly by separating the decision from the person",
+      "body": "Many people say yes because refusing feels rude. McKeown points out that declining a request is not the same as rejecting the person who asked. You can respect the relationship and still turn down the task.\n\nHe suggests practical ways to do it well: a warm but clear refusal, a pause before answering, offering something smaller you can do, or pointing to someone better placed to help. People often respect a graceful no more than a grudging yes that you later fail to deliver.",
+      "apply_it": "Draft a short, friendly template for saying no that you can reuse, and use it the next time you need it.",
+      "quiz": {
+        "question": "What is McKeown's key insight about saying no?",
+        "options": [
+          "Always explain at length",
+          "Refusing a request is not rejecting the person",
+          "Never say no to your boss",
+          "Say no only by email"
+        ],
+        "answer": 1,
+        "explanation": "Separating the decision from the relationship makes it easier to decline gracefully."
+      }
+    },
+    {
+      "id": "essentialism-mckeown--05",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "buffers",
+        "estimates"
+      ],
+      "title": "Build in a buffer because things take longer than planned",
+      "body": "McKeown notes that people routinely underestimate how long tasks will take. Plans built with no slack collapse at the first delay, forcing rushed work and stress.\n\nHis remedy is to add extra time to estimates, often around half again as much, and to prepare for likely setbacks in advance. A buffer is not wasted time; it is what lets you deliver calmly on what matters instead of constantly firefighting.",
+      "apply_it": "Take your next deadline estimate and add 50% to it before you commit to anyone.",
+      "quiz": {
+        "question": "Why does McKeown recommend adding buffers?",
+        "options": [
+          "Because we tend to underestimate how long things take",
+          "To work less",
+          "To impress clients",
+          "Because deadlines don't matter"
+        ],
+        "answer": 0,
+        "explanation": "Estimates tend to be too optimistic, so slack protects your important work."
+      }
+    }
+  ]
+}

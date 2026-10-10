@@ -1,0 +1,182 @@
+{
+  "source": {
+    "id": "7-habits-covey",
+    "title": "The 7 Habits of Highly Effective People",
+    "authors": [
+      "Stephen R. Covey"
+    ],
+    "kind": "book",
+    "url": "https://www.franklincovey.com/books/the-7-habits-of-highly-effective-people/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of The 7 Habits of Highly Effective People by Stephen R. Covey (1989). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Free Press",
+    "year": 1989,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "7-habits-covey--01",
+      "topic": "personal-development",
+      "tags": [
+        "proactivity",
+        "responsibility",
+        "control"
+      ],
+      "title": "Habit 1: Be proactive and focus on what you can influence",
+      "body": "Covey's first habit is about taking responsibility for your responses. Things happen to you, but there is a gap between what happens and how you react, and in that gap you can choose.\n\nHe contrasts the many things we worry about with the narrower set we can actually affect. Reactive people pour energy into complaints about the economy, the boss or the weather. Proactive people put their energy into what they can change, and their influence tends to grow as a result.",
+      "apply_it": "List three worries. Next to each, write one small thing within your control, and do one of them today.",
+      "quiz": {
+        "question": "What does being proactive mean in Covey's sense?",
+        "options": [
+          "Working faster than others",
+          "Planning everything in advance",
+          "Taking responsibility for your choices and focusing on what you can influence",
+          "Avoiding problems"
+        ],
+        "answer": 2,
+        "explanation": "Proactive people choose their response and invest energy where they have influence."
+      }
+    },
+    {
+      "id": "7-habits-covey--02",
+      "topic": "personal-development",
+      "tags": [
+        "purpose",
+        "values",
+        "mission"
+      ],
+      "title": "Habit 2: Begin with the end in mind",
+      "body": "Covey asks you to picture how you would want to be remembered by family, friends and colleagues at the end of your life. The answer reveals what you truly value.\n\nFrom there, he suggests writing a personal mission statement: a short description of who you want to be and what you want to contribute. It becomes a reference point for daily decisions, so you don't spend years working hard towards goals you later realise you never cared about.",
+      "apply_it": "Write three sentences describing what you'd want people close to you to say about you in 20 years.",
+      "quiz": {
+        "question": "What is the purpose of 'beginning with the end in mind'?",
+        "options": [
+          "To set strict deadlines",
+          "To clarify your values so daily choices serve them",
+          "To plan your retirement finances",
+          "To predict the future"
+        ],
+        "answer": 1,
+        "explanation": "Picturing the end clarifies what matters, guiding day-to-day decisions."
+      }
+    },
+    {
+      "id": "7-habits-covey--03",
+      "topic": "productivity",
+      "tags": [
+        "prioritisation",
+        "time-management",
+        "urgency"
+      ],
+      "title": "Habit 3: Put first things first by protecting important, non-urgent work",
+      "body": "Covey sorts activities by two questions: is it urgent, and is it important? Most people spend their days on urgent items, important or not, such as crises and interruptions.\n\nHe argues the biggest gains come from the important but not urgent category: planning, relationships, learning, exercise and prevention. These rarely shout for attention, so they get pushed aside. Effective people schedule them deliberately, which over time also reduces the crises.",
+      "apply_it": "Block one hour this week for something important but not urgent, like planning or a conversation you keep postponing.",
+      "quiz": {
+        "question": "Which category of activity does Covey say deserves more attention?",
+        "options": [
+          "Important but not urgent",
+          "Urgent and important",
+          "Urgent but not important",
+          "Neither urgent nor important"
+        ],
+        "answer": 0,
+        "explanation": "Important but not urgent activities drive long-term effectiveness yet are easy to neglect."
+      }
+    },
+    {
+      "id": "7-habits-covey--04",
+      "topic": "relationships",
+      "tags": [
+        "negotiation",
+        "collaboration",
+        "abundance"
+      ],
+      "title": "Habit 4: Look for outcomes where both sides win",
+      "body": "Covey encourages approaching deals and disagreements looking for solutions that benefit everyone, rather than assuming one side must lose. This rests on what he calls an abundance mentality: the belief that there is enough success to go around.\n\nIf no mutually good outcome can be found, he suggests it is often better to agree not to make a deal than to force one where someone loses. In long-term relationships, a win at the other person's expense usually costs more later.",
+      "apply_it": "In your next negotiation, ask the other side what a good outcome looks like for them before stating your terms.",
+      "quiz": {
+        "question": "What mindset underpins Covey's win-win habit?",
+        "options": [
+          "Scarcity: there's only so much to go around",
+          "Competition always produces the best result",
+          "Compromise means both lose",
+          "Abundance: there's enough success for everyone"
+        ],
+        "answer": 3,
+        "explanation": "An abundance mentality makes it possible to look for solutions where both sides benefit."
+      }
+    },
+    {
+      "id": "7-habits-covey--05",
+      "topic": "relationships",
+      "tags": [
+        "listening",
+        "empathy",
+        "communication"
+      ],
+      "title": "Habit 5: Understand the other person before trying to be understood",
+      "body": "Covey observes that most people listen with the intent to reply, already preparing their answer or advice. As a result, they often misdiagnose the problem.\n\nHe recommends empathic listening: trying to grasp the other person's feelings and point of view from their side, and reflecting it back until they feel understood. Only then present your own view. People are far more open to your ideas once they feel heard, whether at home, at work or with customers.",
+      "apply_it": "In your next disagreement, summarise the other person's view back to them and check you got it right before making your point.",
+      "quiz": {
+        "question": "What does Covey say most people do when listening?",
+        "options": [
+          "Listen to understand",
+          "Take detailed notes",
+          "Listen with the intent to reply",
+          "Stay silent"
+        ],
+        "answer": 2,
+        "explanation": "Most people are busy preparing their answer instead of truly understanding."
+      }
+    },
+    {
+      "id": "7-habits-covey--06",
+      "topic": "business",
+      "tags": [
+        "teamwork",
+        "creativity",
+        "differences"
+      ],
+      "title": "Habit 6: Use differences to find a better third option",
+      "body": "Covey describes synergy as the result when people combine their different strengths and perspectives to create something better than either could alone.\n\nInstead of treating disagreement as a fight to win or a compromise to settle, he suggests valuing differences and searching together for a third alternative that neither side had considered. It depends on trust and real listening, but teams that do this often find more creative solutions than any one member would.",
+      "apply_it": "In your next disagreement, ask: is there an option neither of us has suggested yet? Brainstorm three before choosing.",
+      "quiz": {
+        "question": "What is synergy in Covey's sense?",
+        "options": [
+          "Splitting the difference",
+          "Combining different perspectives to create a better solution",
+          "Following the leader",
+          "Avoiding conflict"
+        ],
+        "answer": 1,
+        "explanation": "Synergy comes from valuing differences and building something better together."
+      }
+    },
+    {
+      "id": "7-habits-covey--07",
+      "topic": "personal-development",
+      "tags": [
+        "renewal",
+        "self-care",
+        "balance"
+      ],
+      "title": "Habit 7: Keep renewing yourself so you stay effective",
+      "body": "Covey illustrates this habit with someone who keeps sawing with a blunt blade because they are too busy to stop and sharpen it. The effort feels productive but gets harder over time.\n\nHe suggests regularly renewing four dimensions of yourself: your body, your mind, your relationships and emotions, and your sense of meaning or values. Exercise, reading, time with people you care about and quiet reflection are not luxuries; they keep the other habits sustainable.",
+      "apply_it": "Schedule one small renewal activity for each of the four areas this week: body, mind, relationships and meaning.",
+      "quiz": {
+        "question": "What does 'sharpening the saw' represent?",
+        "options": [
+          "Regularly renewing yourself across several areas of life",
+          "Working longer hours",
+          "Buying better tools",
+          "Competing with colleagues"
+        ],
+        "answer": 0,
+        "explanation": "Taking time to renew body, mind, heart and spirit keeps you effective over the long run."
+      }
+    }
+  ]
+}

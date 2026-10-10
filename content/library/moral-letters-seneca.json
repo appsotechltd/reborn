@@ -1,0 +1,189 @@
+{
+  "source": {
+    "id": "moral-letters-seneca",
+    "title": "Moral Letters to Lucilius",
+    "authors": [
+      "Seneca"
+    ],
+    "translator": "Richard M. Gummere",
+    "kind": "book",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Seneca, Moral Letters to Lucilius (trans. Richard M. Gummere), via Wikisource, public domain",
+    "publisher": "Wikisource",
+    "year": 65,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Gummere's Loeb translation (1917-1925); public domain (translator died 1920). Read via Wikisource; cards are in our own words without quotes because the pipeline cannot fetch and verify Wikisource text yet."
+  },
+  "cards": [
+    {
+      "id": "moral-letters-seneca--01",
+      "topic": "productivity",
+      "tags": [
+        "reading",
+        "focus",
+        "learning",
+        "depth"
+      ],
+      "title": "Go deep with a few good books instead of skimming dozens",
+      "body": "Seneca warned his friend Lucilius against restless reading: dipping into one author after another without staying long with any. A person who is everywhere, he said, is nowhere. Food that passes straight through doesn't nourish, and a plant that is constantly moved never takes root.\n\nThe modern version is the endless feed of articles, threads and summaries. It feels like learning, but little sticks. Seneca's fix was simple: choose a few trusted sources, return to them, and each day pick out one idea to really digest and carry with you.",
+      "apply_it": "Before you open another article today, choose one idea from something you've already read and write down how you'll use it.",
+      "quiz": {
+        "question": "Why did Seneca warn against hopping between many authors?",
+        "options": [
+          "Most books in his time were inaccurate",
+          "Reading was considered a waste of time",
+          "Ideas never take root when you keep moving on",
+          "It was too expensive to buy many books"
+        ],
+        "answer": 2,
+        "explanation": "Like a plant that is often moved, scattered reading never takes root; depth with a few sources does."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--02",
+      "topic": "money",
+      "tags": [
+        "wealth",
+        "contentment",
+        "desire",
+        "enough"
+      ],
+      "title": "Poverty is wanting more, not having little",
+      "body": "Closing a letter on reading, Seneca passed on a line he admired: the poor person isn't the one with too little, but the one who keeps craving more. If your wants grow every time your income does, you will always feel short, however much you earn.\n\nThis is a useful check on lifestyle creep. A raise that brings a bigger rent, a newer phone and pricier habits can leave you feeling just as stretched as before. Deciding what 'enough' looks like for you, and noticing when you quietly raise the bar, does more for peace of mind than chasing the next figure.",
+      "apply_it": "Write down what 'enough' looks like for one area of your spending, such as housing, gadgets or eating out. Notice whether you've been moving that line.",
+      "quiz": {
+        "question": "By Seneca's definition, who is truly poor?",
+        "options": [
+          "The person who keeps craving more",
+          "Anyone below an average income",
+          "Someone without property",
+          "A person who gives money away"
+        ],
+        "answer": 0,
+        "explanation": "Seneca locates poverty in endless wanting rather than in how much you have."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--03",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "trust",
+        "judgment"
+      ],
+      "title": "Take your time choosing friends, then trust them fully",
+      "body": "Seneca noticed how loosely people use the word 'friend' for anyone they happen to know. His advice was to reverse the usual pattern. Most of us trust quickly and then hold back once we're close. Instead, think carefully about whether someone deserves your friendship, and once you've decided, open up and treat them as you would yourself.\n\nThat way trust rests on judgment rather than convenience. It also avoids two common errors: trusting everyone, which leaves you exposed, and trusting no one, which leaves you alone.",
+      "apply_it": "Think of one person you've already judged worthy of trust. Is there something you've been holding back that you could share with them?",
+      "quiz": {
+        "question": "What order did Seneca recommend for friendship?",
+        "options": [
+          "Trust at once, then test the person over time",
+          "Never fully trust anyone",
+          "Trust only family members",
+          "Judge carefully first, then trust wholeheartedly"
+        ],
+        "answer": 3,
+        "explanation": "He advised judging before admitting someone as a friend, then trusting them fully afterwards."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--04",
+      "topic": "relationships",
+      "tags": [
+        "influence",
+        "social-circle",
+        "habits",
+        "teaching"
+      ],
+      "title": "The people around you shape you, so choose company that lifts you",
+      "body": "Seneca admitted that he came home from crowds and spectacles a worse person: a little greedier, more ambitious, harsher. Moods and habits rub off on us, especially when we are surrounded by many people at once. One bad influence can undo a lot of good intentions.\n\nHis advice was to spend time with people who make you better, and with people you can help improve. The exchange works both ways, because explaining something to someone else deepens your own understanding. Today the 'crowd' might be a group chat or a feed as much as a room.",
+      "apply_it": "List the three people, groups or feeds you spend the most time with. Which one leaves you better off, and which could you see less of?",
+      "quiz": {
+        "question": "Besides people who improve you, whom did Seneca suggest spending time with?",
+        "options": [
+          "Anyone with influence",
+          "People you can help improve",
+          "Large audiences, to build resilience",
+          "No one, as solitude is always best"
+        ],
+        "answer": 1,
+        "explanation": "Seneca saw a two-way exchange: we learn while we teach, so helping others grow also helps us."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--05",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "fear",
+        "anxiety",
+        "worry",
+        "perspective"
+      ],
+      "title": "We suffer more from what we imagine than from what actually happens",
+      "body": "Seneca told Lucilius that many of our troubles exist mostly in our heads. We exaggerate some fears, invent others, and get ahead of ourselves about problems that haven't arrived. Many never do.\n\nHis method was to question the fear. Is this harm actually happening, or am I predicting it? How sure am I? Even if it does come, will it be as bad as I picture? The same mind that builds the worry can test it. Asking these questions before a performance review or a hard conversation often shrinks a looming disaster to its real size.",
+      "apply_it": "Write down one thing you're worried about. Next to it, note: is it happening now, how likely is it, and what would you actually do if it did?",
+      "quiz": {
+        "question": "What did Seneca suggest doing with a fear about the future?",
+        "options": [
+          "Distract yourself until it passes",
+          "Assume the worst so you're never surprised",
+          "Examine whether it is real, certain and as bad as imagined",
+          "Ask others to make the decision for you"
+        ],
+        "answer": 2,
+        "explanation": "He advised testing a fear against the evidence, since many feared events are exaggerated or never come."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--06",
+      "topic": "money",
+      "tags": [
+        "simple-living",
+        "resilience",
+        "frugality",
+        "practice"
+      ],
+      "title": "Rehearse living on less so losing comfort stops scaring you",
+      "body": "In a festive December, Seneca proposed an odd exercise: set aside a few days to live on the plainest food and simplest clothes, and ask, 'Is this what I was afraid of?' Soldiers drill in peacetime so that battle doesn't catch them unready; we can practise hardship while life is good.\n\nThe point isn't self-punishment. A short, voluntary stretch of simple living shows how little you truly need. That makes a job loss or a lean month less frightening, and lets you enjoy comfort without clinging to it.",
+      "apply_it": "Plan one low-spend day this week: simple meals at home, no paid entertainment. Afterwards, ask whether it was as hard as you expected.",
+      "quiz": {
+        "question": "Why did Seneca recommend a few days of deliberately simple living?",
+        "options": [
+          "To prepare for hardship while times are good, so it loses its power to frighten",
+          "To save as much money as possible",
+          "To impress others with self-discipline",
+          "Because comfort is always wrong"
+        ],
+        "answer": 0,
+        "explanation": "Like soldiers drilling in peacetime, practising with less makes real loss less frightening."
+      }
+    },
+    {
+      "id": "moral-letters-seneca--07",
+      "topic": "mindfulness",
+      "tags": [
+        "calm",
+        "noise",
+        "inner-peace",
+        "attention"
+      ],
+      "title": "Real quiet is a calm mind, not a silent room",
+      "body": "Seneca once wrote from lodgings above a noisy public bathhouse, with grunting weightlifters, shouting vendors and splashing swimmers. He argued that outside noise matters less than we think. What really stops us from settling is the commotion inside: restless desires, worries and unfinished business. A silent room is little use if your mind is in uproar.\n\nThis doesn't mean you shouldn't look for a quiet place. But if you can't focus anywhere, the fix may be less about noise-cancelling headphones and more about noticing what is churning in your own head.",
+      "apply_it": "Next time a noise distracts you, pause and ask: is it the sound, or something on my mind? Jot down what's actually bothering you.",
+      "quiz": {
+        "question": "According to Seneca, what most disturbs our peace?",
+        "options": [
+          "Loud neighbours and city noise",
+          "Inner turmoil such as restless desires and worries",
+          "Lack of sleep",
+          "Too much time alone"
+        ],
+        "answer": 1,
+        "explanation": "He argued that a mind in uproar can't rest even in silence, while a settled mind copes with noise."
+      }
+    }
+  ]
+}

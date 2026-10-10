@@ -1,0 +1,182 @@
+{
+  "source": {
+    "id": "how-to-win-friends-carnegie",
+    "title": "How to Win Friends and Influence People",
+    "authors": [
+      "Dale Carnegie"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of How to Win Friends and Influence People by Dale Carnegie (1936). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Simon & Schuster",
+    "year": 1936,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary; contains no text from the book. In copyright in the US until 2032 (1936, renewed); public domain since 2026 in life+70 countries (Carnegie died 1955). Summarised so cards are safe everywhere."
+  },
+  "cards": [
+    {
+      "id": "how-to-win-friends-carnegie--01",
+      "topic": "relationships",
+      "tags": [
+        "criticism",
+        "defensiveness",
+        "feedback"
+      ],
+      "title": "Criticism usually backfires because people defend themselves",
+      "body": "Carnegie noticed that almost nobody sees themselves as the villain. Even people who have done real harm tend to have a story that justifies what they did. So when you criticise someone, they rarely reflect; they dig in, feel hurt, and may resent you for years.\n\nHis advice is to hold back the urge to blame and instead try to understand why the person acted as they did. Today that applies to code reviews, family arguments and comment sections alike: a sharp put-down feels good for a moment but almost never changes behaviour.",
+      "apply_it": "Next time you feel the urge to criticise someone, pause and write down one reason their choice might have made sense to them.",
+      "quiz": {
+        "question": "Why does Carnegie think criticism rarely changes people?",
+        "options": [
+          "People don't hear it",
+          "It is usually wrong",
+          "People forget it quickly",
+          "It makes them defensive and they justify themselves"
+        ],
+        "answer": 3,
+        "explanation": "Most people see their own actions as justified, so criticism triggers self-defence rather than reflection."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--02",
+      "topic": "relationships",
+      "tags": [
+        "appreciation",
+        "recognition",
+        "motivation"
+      ],
+      "title": "People hunger to feel valued, so give real appreciation",
+      "body": "A central idea in the book is that a deep human need is to feel important and noticed. Carnegie argues that sincere appreciation is one of the most powerful things you can offer, and one of the rarest.\n\nHe draws a sharp line between this and flattery. Flattery is cheap, vague and self-serving, and people can smell it. Genuine appreciation is specific and honest: you name something the person actually did well. In a workplace where most feedback points out problems, a precise thank-you stands out and builds lasting goodwill.",
+      "apply_it": "Send one message today thanking someone for a specific thing they did, saying exactly what it was and why it helped.",
+      "quiz": {
+        "question": "How does Carnegie distinguish appreciation from flattery?",
+        "options": [
+          "Flattery is more effective at work",
+          "There is no real difference",
+          "Appreciation is sincere and specific; flattery is insincere",
+          "Appreciation should only come from managers"
+        ],
+        "answer": 2,
+        "explanation": "He saw honest, specific appreciation as valuable and flattery as hollow and easily detected."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--03",
+      "topic": "business",
+      "tags": [
+        "persuasion",
+        "empathy",
+        "perspective"
+      ],
+      "title": "To persuade someone, start with what they want",
+      "body": "Carnegie points out that people are mostly interested in their own goals, not yours. When you go fishing, you bait the hook with what the fish likes, not with what you like to eat.\n\nThe same applies to persuasion. Instead of explaining why you want something, show how it helps the other person get what they care about. A manager asking for overtime, a parent asking a teenager to tidy up or a founder pitching investors will get further by framing the request around the other side's interests.",
+      "apply_it": "Before your next request, write one sentence describing what the other person gains from saying yes, and lead with it.",
+      "quiz": {
+        "question": "What is Carnegie's starting point for influencing someone?",
+        "options": [
+          "Explain your own needs clearly",
+          "Talk about what the other person wants",
+          "Repeat your request until they agree",
+          "Offer a reward up front"
+        ],
+        "answer": 1,
+        "explanation": "People respond to their own interests, so frame requests around what they care about."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--04",
+      "topic": "relationships",
+      "tags": [
+        "names",
+        "memory",
+        "first-impressions"
+      ],
+      "title": "Remembering someone's name is a small act of respect",
+      "body": "Carnegie stresses how much people care about their own names. Using someone's name correctly tells them they registered with you; forgetting or misspelling it quietly signals that they didn't.\n\nHe describes successful people who made a deliberate effort to remember the names of those they met. It is a skill, not a talent: repeat the name when you hear it, use it in conversation and connect it to something memorable. In a world of video calls and big teams, getting names right is an easy way to make people feel seen.",
+      "apply_it": "In your next introduction, repeat the person's name back once and use it again before you part. Jot it down afterwards.",
+      "quiz": {
+        "question": "According to Carnegie, why does remembering names matter?",
+        "options": [
+          "It shows people they matter to you",
+          "It helps you win arguments",
+          "It is required by etiquette",
+          "It makes you seem clever"
+        ],
+        "answer": 0,
+        "explanation": "A person's own name matters a lot to them, so using it signals respect and attention."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--05",
+      "topic": "relationships",
+      "tags": [
+        "listening",
+        "curiosity",
+        "conversation"
+      ],
+      "title": "Be curious about others and let them do the talking",
+      "body": "Carnegie's view is that showing real interest in other people builds friendships far faster than working to make them interested in you.\n\nA big part of this is listening. Ask questions people enjoy answering, encourage them to talk about their work and passions, and resist steering everything back to yourself. People often leave such conversations thinking you were great company, even if you said very little. The key word is genuine: curiosity that is faked to get something tends to show.",
+      "apply_it": "In your next conversation, ask two follow-up questions about something the other person cares about before sharing your own view.",
+      "quiz": {
+        "question": "What does Carnegie suggest is the quickest way to make friends?",
+        "options": [
+          "Tell impressive stories",
+          "Agree with everything they say",
+          "Give gifts",
+          "Show genuine interest in other people and listen"
+        ],
+        "answer": 3,
+        "explanation": "Real interest in others, shown by listening and asking questions, builds connection faster than trying to impress."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--06",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "arguments",
+        "conflict",
+        "humility"
+      ],
+      "title": "Nobody really wins an argument, so avoid them and admit mistakes fast",
+      "body": "Carnegie's view is that arguments are almost unwinnable. Even if you prove your point, the other person feels beaten and believes their view more firmly than before. You have won the debate and lost the relationship.\n\nHe recommends respecting the other person's opinion, avoiding blunt statements that they are wrong, and, when you are the one in error, owning it quickly and openly. Admitting a mistake before anyone has to point it out disarms people and often makes them more generous. It is a useful antidote to online pile-ons and heated meetings.",
+      "apply_it": "The next time you realise you got something wrong, say so first and plainly, before anyone else raises it.",
+      "quiz": {
+        "question": "Why does Carnegie say you can't win an argument?",
+        "options": [
+          "Facts never matter",
+          "Arguments are always too long",
+          "The loser usually resents it and holds their view more strongly",
+          "Someone else always interrupts"
+        ],
+        "answer": 2,
+        "explanation": "Beating someone in an argument tends to harden their position and damage the relationship."
+      }
+    },
+    {
+      "id": "how-to-win-friends-carnegie--07",
+      "topic": "business",
+      "tags": [
+        "leadership",
+        "feedback",
+        "face-saving"
+      ],
+      "title": "Correct people gently and let them keep their dignity",
+      "body": "When someone needs to change, Carnegie suggests a softer route than direct reproach. Begin with honest praise, point to the problem indirectly, and mention mistakes you have made yourself so the other person doesn't feel singled out.\n\nAbove all, let them save face. Humiliating someone, even when you are right, can leave a lasting wound and kill their motivation. Asking questions instead of giving orders, and making the fix seem easy to achieve, helps people improve while keeping their self-respect intact.",
+      "apply_it": "Before giving feedback, start with one sincere positive and share a time you made a similar mistake.",
+      "quiz": {
+        "question": "What does Carnegie recommend when you need to correct someone?",
+        "options": [
+          "Be blunt so the message is clear",
+          "Let them save face and point to mistakes indirectly",
+          "Correct them in front of others",
+          "Wait for them to notice on their own"
+        ],
+        "answer": 1,
+        "explanation": "Preserving dignity and approaching mistakes indirectly makes people more willing to change."
+      }
+    }
+  ]
+}

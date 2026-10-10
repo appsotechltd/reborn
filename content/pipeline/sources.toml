@@ -167,6 +167,19 @@ adapter = "standardebooks"
 repo = "aesop_fables_v-s-vernon-jones"
 licence = "public-domain"
 
+[[source]]
+id = "pushing-to-the-front-marden"
+adapter = "gutenberg"
+gutenberg_id = 21291
+mirror = "Pushing-to-the-Front_21291/master/21291-8.txt"
+licence = "public-domain"
+
+[[source]]
+id = "moral-letters-seneca"
+adapter = "web"
+url = "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius"
+licence = "public-domain"
+
 # ---------------------------------------------------------------- Health (read by hand)
 
 [[source]]
@@ -236,6 +249,102 @@ licence = "original-summary"
 id = "mini-habits-guise"
 adapter = "summary"
 url = "https://minihabits.com/"
+licence = "original-summary"
+
+[[source]]
+id = "how-to-win-friends-carnegie"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People"
+licence = "original-summary"
+
+[[source]]
+id = "deep-work-newport"
+adapter = "summary"
+url = "https://calnewport.com/writing/"
+licence = "original-summary"
+
+[[source]]
+id = "essentialism-mckeown"
+adapter = "summary"
+url = "https://gregmckeown.com/books/essentialism/"
+licence = "original-summary"
+
+[[source]]
+id = "7-habits-covey"
+adapter = "summary"
+url = "https://www.franklincovey.com/books/the-7-habits-of-highly-effective-people/"
+licence = "original-summary"
+
+[[source]]
+id = "thinking-fast-and-slow-kahneman"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow"
+licence = "original-summary"
+
+[[source]]
+id = "mindset-dweck"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Mindset_(book)"
+licence = "original-summary"
+
+[[source]]
+id = "mans-search-for-meaning-frankl"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning"
+licence = "original-summary"
+
+[[source]]
+id = "emotional-intelligence-goleman"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Emotional_Intelligence_(book)"
+licence = "original-summary"
+
+[[source]]
+id = "why-we-sleep-walker"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Why_We_Sleep"
+licence = "original-summary"
+
+[[source]]
+id = "psychology-of-money-housel"
+adapter = "summary"
+url = "https://www.harriman-house.com/psychologyofmoney"
+licence = "original-summary"
+
+[[source]]
+id = "rich-dad-poor-dad-kiyosaki"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad"
+licence = "original-summary"
+
+[[source]]
+id = "crucial-conversations"
+adapter = "summary"
+url = "https://cruciallearning.com/crucial-conversations-book/"
+licence = "original-summary"
+
+[[source]]
+id = "five-love-languages-chapman"
+adapter = "summary"
+url = "https://5lovelanguages.com/"
+licence = "original-summary"
+
+[[source]]
+id = "education-of-a-british-protected-child-achebe"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/90898/the-education-of-a-british-protected-child-by-chinua-achebe/"
+licence = "original-summary"
+
+[[source]]
+id = "africapitalism-elumelu"
+adapter = "summary"
+url = "https://www.tonyelumelufoundation.org/"
+licence = "original-summary"
+
+[[source]]
+id = "strive-masiyiwa-mentoring-posts"
+adapter = "summary"
+url = "https://www.facebook.com/StriveMasiyiwa"
 licence = "original-summary"
 
 # ---------------------------------------------------------------- Candidates (not used yet)

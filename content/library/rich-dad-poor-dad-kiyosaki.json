@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "rich-dad-poor-dad-kiyosaki",
+    "title": "Rich Dad Poor Dad",
+    "authors": [
+      "Robert T. Kiyosaki"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Rich Dad Poor Dad by Robert T. Kiyosaki (1997). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Warner Books",
+    "year": 1997,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. Cards cover the book's widely accepted ideas only; its riskier advice (heavy leverage, downplaying formal education) is deliberately left out."
+  },
+  "cards": [
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--01",
+      "topic": "money",
+      "tags": [
+        "assets",
+        "liabilities",
+        "cash-flow"
+      ],
+      "title": "Know the difference between an asset and a liability",
+      "body": "Kiyosaki's central idea is a simple test: does this thing put money into your pocket, or take money out? Investments that pay you, such as a business, shares that pay dividends or a rental that earns more than it costs, work for you. Things that need regular payments, like a car loan or costly subscriptions, drain you.\n\nMany people buy liabilities believing they are assets. Using the cash-flow test before a big purchase helps you see whether you are building wealth or just adding monthly bills.",
+      "apply_it": "Look at your three largest monthly payments. For each, write whether it brings money in or only takes money out.",
+      "quiz": {
+        "question": "What simple test does Kiyosaki use to separate assets from liabilities?",
+        "options": [
+          "Whether it is expensive",
+          "Whether friends admire it",
+          "Whether it puts money in your pocket or takes it out",
+          "Whether it is physical"
+        ],
+        "answer": 2,
+        "explanation": "In his framing, an asset produces cash flow for you; a liability costs you money over time."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--02",
+      "topic": "money",
+      "tags": [
+        "financial-literacy",
+        "budgeting",
+        "learning"
+      ],
+      "title": "Financial literacy matters more than income",
+      "body": "The book argues that a high salary is no protection if you don't understand money. People with good incomes can still struggle because spending rises with pay and they never learn to read the basic numbers of their own lives.\n\nKiyosaki urges readers to understand what comes in, what goes out and what they actually own versus owe, much like a simple personal set of accounts. Today that can be as easy as a budgeting app and a quarterly net-worth check, but the habit of looking is what counts.",
+      "apply_it": "Make a one-page list of what you own and what you owe, and work out the difference. Repeat it in three months.",
+      "quiz": {
+        "question": "Why does Kiyosaki say a high income alone isn't enough?",
+        "options": [
+          "Without understanding money, spending tends to rise with income",
+          "Taxes always take it all",
+          "High earners can't save",
+          "Salaries are always too low"
+        ],
+        "answer": 0,
+        "explanation": "Without financial understanding, extra income often disappears into extra spending."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--03",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "discipline",
+        "habits"
+      ],
+      "title": "Pay yourself first",
+      "body": "Kiyosaki encourages putting money toward savings and investments before paying everything else, rather than saving whatever happens to be left at the end of the month. Usually nothing is left.\n\nThe idea is about priorities: your future self is treated as a bill that must be paid. Modern tools make this easier than ever, because a standing order on payday moves the money before you can spend it. Start with an amount you can sustain, even if it feels small, and raise it as your income grows.",
+      "apply_it": "Set a standing order for the day after payday that moves a fixed amount into savings or investments.",
+      "quiz": {
+        "question": "What does 'pay yourself first' mean?",
+        "options": [
+          "Buy yourself a treat each payday",
+          "Pay off all debts before saving anything",
+          "Ask for a pay rise",
+          "Set money aside for savings and investing before other spending"
+        ],
+        "answer": 3,
+        "explanation": "Saving comes off the top, so it actually happens instead of depending on leftovers."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--04",
+      "topic": "productivity",
+      "tags": [
+        "career",
+        "skills",
+        "learning"
+      ],
+      "title": "Early in your career, choose jobs for what they teach",
+      "body": "One of the book's more practical messages is that when you're starting out, the skills a job gives you can be worth more than the pay. Kiyosaki describes learning sales, communication and how businesses run as investments that keep paying back for decades.\n\nThis doesn't mean accepting unfair pay. It means weighing learning alongside salary: a role that teaches you to sell, manage people or understand finance can widen your options far more than a slightly better-paid job that teaches little.",
+      "apply_it": "Name one skill, such as selling, negotiating or reading accounts, that would most widen your options, and find one way to practise it this month.",
+      "quiz": {
+        "question": "What does the book suggest young workers weigh alongside salary?",
+        "options": [
+          "Job titles",
+          "The skills and knowledge the job will teach",
+          "Office location",
+          "How many holidays they get"
+        ],
+        "answer": 1,
+        "explanation": "Broad, transferable skills learned early can be worth more over a lifetime than a small pay difference."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--05",
+      "topic": "money",
+      "tags": [
+        "side-income",
+        "assets",
+        "long-term"
+      ],
+      "title": "Build your own asset column while you keep your job",
+      "body": "Kiyosaki advises readers to 'mind their own business', meaning the collection of assets they own, not their employer's business. You can keep working a regular job while steadily buying or building things that produce income, so your security doesn't depend entirely on one pay packet.\n\nIn practice this is gradual and doesn't require big bets: regular investing, a small side project or new skills that can earn money. The aim is that, over time, your assets cover more of your living costs.",
+      "apply_it": "Pick one income-producing asset you could start or add to this year, and write the first small step.",
+      "quiz": {
+        "question": "In the book, what does 'minding your own business' refer to?",
+        "options": [
+          "Ignoring other people's opinions",
+          "Starting a company immediately",
+          "Growing the assets you personally own while you work",
+          "Avoiding all investing"
+        ],
+        "answer": 2,
+        "explanation": "It means steadily building your own asset column alongside your job, not instead of it."
+      }
+    }
+  ]
+}

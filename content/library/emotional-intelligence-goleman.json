@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "emotional-intelligence-goleman",
+    "title": "Emotional Intelligence",
+    "authors": [
+      "Daniel Goleman"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Emotional_Intelligence_(book)",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Emotional Intelligence by Daniel Goleman (1995). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Bantam Books",
+    "year": 1995,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "emotional-intelligence-goleman--01",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "amygdala",
+        "anger",
+        "self-control"
+      ],
+      "title": "Strong emotions can take over before your thinking catches up",
+      "body": "Goleman popularised the idea of an 'emotional hijacking'. The amygdala, a part of the brain involved in detecting threats, can trigger a powerful reaction before the more reflective parts of the brain have weighed in. That's how people snap, say something they regret, and only later wonder why.\n\nThe point is not that emotions are bad, but that the first surge is fast. Recognising the signs, like a racing heart or a flash of heat, gives you a chance to pause before acting.",
+      "apply_it": "Learn your own early warning signs of anger or panic. When you notice one, take a few slow breaths before you speak or type.",
+      "quiz": {
+        "question": "What does Goleman mean by an emotional hijacking?",
+        "options": [
+          "Someone manipulating your feelings",
+          "A fast emotional reaction that outruns careful thought",
+          "Hiding your emotions completely",
+          "Losing all emotions"
+        ],
+        "answer": 1,
+        "explanation": "A strong emotional response can kick in before reflective thinking has a chance to respond."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--02",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-awareness",
+        "emotions",
+        "journaling"
+      ],
+      "title": "Naming what you feel is the first step to managing it",
+      "body": "Goleman treats self-awareness as the foundation of emotional intelligence: noticing a feeling as it happens and being able to put a name to it. People who are hazy about their own emotions are more likely to be swept along by them, or to make choices without realising what's driving them.\n\nPutting a specific word on a feeling, such as 'disappointed' rather than just 'bad', creates a little distance and makes it easier to decide what to do.",
+      "apply_it": "Three times today, stop and name what you're feeling in one precise word. Note what triggered it.",
+      "quiz": {
+        "question": "Why does Goleman see self-awareness as so important?",
+        "options": [
+          "It lets you avoid all emotions",
+          "It replaces the need for empathy",
+          "You can't manage a feeling you haven't recognised",
+          "It makes you more competitive"
+        ],
+        "answer": 2,
+        "explanation": "Recognising emotions as they arise is the base for handling them well."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--03",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anger",
+        "calm",
+        "rumination"
+      ],
+      "title": "Venting anger tends to feed it, while cooling off calms it",
+      "body": "A popular belief says letting anger out clears it. Goleman reviews research suggesting that venting often keeps anger going, because replaying the grievance stokes it further. What tends to help more is cooling down: stepping away, doing something distracting or physical, and questioning the angry story you're telling yourself.\n\nThe same applies to worry. Going over and over a fear rarely solves it. Turning it into a concrete problem you can act on is more useful.",
+      "apply_it": "Next time you're angry, take a 20-minute break from the situation before responding, and ask whether there's another way to read what happened.",
+      "quiz": {
+        "question": "What does Goleman suggest about venting anger?",
+        "options": [
+          "It reliably gets rid of anger",
+          "It is the only healthy option",
+          "It doesn't matter either way",
+          "It often prolongs anger; cooling down works better"
+        ],
+        "answer": 3,
+        "explanation": "Rehearsing a grievance tends to fuel anger rather than release it."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--04",
+      "topic": "relationships",
+      "tags": [
+        "empathy",
+        "listening",
+        "nonverbal"
+      ],
+      "title": "Empathy starts with reading the signals people don't put into words",
+      "body": "Goleman describes empathy as tuning in to what others feel, and much of that comes through tone of voice, facial expression and body language rather than words. People who pick up on these cues tend to respond in ways that make others feel understood.\n\nEmpathy also depends on self-awareness: it's easier to recognise feelings in others when you can recognise them in yourself. And it requires attention, which is hard to give while you're busy planning your reply.",
+      "apply_it": "In your next conversation, notice the other person's tone and expression, then reflect back what you think they feel: 'Sounds like that was frustrating.'",
+      "quiz": {
+        "question": "According to Goleman, where do many emotional signals come from?",
+        "options": [
+          "Tone, facial expression and body language",
+          "Only the exact words used",
+          "Written messages",
+          "Formal job titles"
+        ],
+        "answer": 0,
+        "explanation": "Much emotional information is carried non-verbally, so empathy depends on noticing it."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--05",
+      "topic": "relationships",
+      "tags": [
+        "conflict",
+        "communication",
+        "couples"
+      ],
+      "title": "Complain about the behaviour, don't attack the person",
+      "body": "Drawing on research on couples by John Gottman and others, Goleman explains that how a grievance is raised matters a lot. A complaint focuses on a specific action and how it affected you. Criticism turns it into an attack on someone's character, using words like 'you always' or 'you never', and tends to trigger defensiveness or contempt.\n\nWhen a conflict gets heated, people can feel flooded and stop listening. Taking a break to calm down helps both sides return to the actual issue.",
+      "apply_it": "Next time something bothers you, use this pattern: 'When X happened, I felt Y. Could we try Z?' Avoid 'always' and 'never'.",
+      "quiz": {
+        "question": "What separates a complaint from criticism?",
+        "options": [
+          "A complaint is louder",
+          "A complaint addresses a specific action; criticism attacks the person's character",
+          "Criticism is always more polite",
+          "There is no difference"
+        ],
+        "answer": 1,
+        "explanation": "Focusing on the behaviour and its effect keeps the conversation solvable."
+      }
+    }
+  ]
+}

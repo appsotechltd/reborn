@@ -55,6 +55,7 @@ Status key: **in use** (cards in `library/`), **next** (usable, not ingested yet
 | [MedlinePlus](https://medlineplus.gov) (US National Library of Medicine) | Plain-language health topic pages (sleep, stress, exercise, nutrition) | Public domain for NLM-written pages; credit "Source: MedlinePlus, National Library of Medicine". Checked ([using content](https://medlineplus.gov/about/using/usingcontent/)) | `web`: read by hand, cards in our own words, no quotes | Health |
 | [NIMH](https://www.nimh.nih.gov) | Mental-health fact sheets (stress, anxiety, depression) | Public domain US government work, to check per page | `web` | Health |
 | [CDC](https://www.cdc.gov) | Physical activity, sleep, nutrition guidance | Mostly public domain; some images and partner content are not. To check per page | `web` | Health |
+| [Wikisource](https://en.wikisource.org) | Seneca's *Moral Letters to Lucilius* (Gummere's 1917–25 Loeb translation; translator died 1920) | Public domain | `web`: read by hand, no quotes until a Wikisource adapter exists | Mindfulness, money, relationships |
 | [NHS](https://www.nhs.uk) | Mental wellbeing guides, breathing exercises, healthy living | OGL v3.0 plus the nhs.uk terms above. Checked ([terms](https://www.nhs.uk/our-policies/terms-and-conditions/)) | `web` | Health, mindfulness |
 
 ## Next: usable, not ingested yet
@@ -112,7 +113,13 @@ the source, credit the author, link back, and carry no quotes. Good candidates f
   Tony Elumelu Foundation and Africa-focused business writing.
 
 **In use:** The Richest Man in Babylon (Clason), Think and Grow Rich (Hill), Eat That Frog! (Tracy),
-The 48 Laws of Power (Greene), Atomic Habits (Clear) and Mini Habits (Guise). They are registered in
+The 48 Laws of Power (Greene), Atomic Habits (Clear), Mini Habits (Guise), How to Win Friends and
+Influence People (Carnegie), Deep Work, Essentialism, The 7 Habits of Highly Effective People,
+Thinking, Fast and Slow, Mindset, Man's Search for Meaning, Emotional Intelligence, Why We Sleep,
+The Psychology of Money, Rich Dad Poor Dad, Crucial Conversations, The 5 Love Languages, Chinua
+Achebe's The Education of a British-Protected Child, Tony Elumelu's Africapitalism and Strive
+Masiyiwa's mentoring posts. *How to Win Friends* (1936, renewed) is in copyright in the US until
+2032 but public domain since 2026 in life+70 countries (Carnegie died 1955). They are registered in
 `sources.toml` with `adapter = "summary"`. *The Richest Man in Babylon* (1926) has been public
 domain in the US since 2022, but Clason died in 1957, so it is in copyright until the end of 2027 in
 life+70 countries (UK, EU, Nigeria). *Think and Grow Rich* (1937) is sometimes called public domain

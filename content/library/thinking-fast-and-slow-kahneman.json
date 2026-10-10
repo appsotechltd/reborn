@@ -1,0 +1,182 @@
+{
+  "source": {
+    "id": "thinking-fast-and-slow-kahneman",
+    "title": "Thinking, Fast and Slow",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Thinking, Fast and Slow by Daniel Kahneman (2011). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Farrar, Straus and Giroux",
+    "year": 2011,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "thinking-fast-and-slow-kahneman--01",
+      "topic": "psychology",
+      "tags": [
+        "thinking",
+        "decision-making",
+        "bias"
+      ],
+      "title": "Your mind runs on two speeds: a quick autopilot and a slow, effortful checker",
+      "body": "Kahneman describes thinking as two characters. System 1 is fast and automatic: it reads faces, finishes familiar phrases and produces gut feelings without being asked. System 2 is slow and deliberate: it does long sums, weighs options and follows rules, but it tires easily and would rather go along with whatever System 1 suggests.\n\nMost of the time this works well. The trouble comes when a quick impression feels like a careful conclusion. Knowing which system is talking helps you decide when to slow down and check.",
+      "apply_it": "Before your next important yes or no, pause and ask: is this a gut feeling or something I actually worked through? If it's the gut, spend two minutes checking it.",
+      "quiz": {
+        "question": "In Kahneman's model, what is System 2 like?",
+        "options": [
+          "Fast, automatic and effortless",
+          "Slow, effortful and easily tired",
+          "Purely emotional",
+          "Only active during sleep"
+        ],
+        "answer": 1,
+        "explanation": "System 2 does deliberate reasoning, but it takes effort and often defers to System 1's quick answers."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--02",
+      "topic": "psychology",
+      "tags": [
+        "anchoring",
+        "negotiation",
+        "bias"
+      ],
+      "title": "The first number you hear quietly drags your estimate toward it",
+      "body": "Anchoring is the tendency for an initial number to pull later judgements towards it, even when that number is obviously irrelevant. Kahneman shows that people asked to think about an arbitrary figure first then give estimates that lean in its direction.\n\nThis matters in everyday life: a high asking price, a 'was' price on a sale tag or the first offer in a salary talk all set an anchor. Adjusting away from it feels like enough, but people usually stop adjusting too soon.",
+      "apply_it": "Before you see a price or an offer, write down your own number based on your research. Use it as your reference instead of theirs.",
+      "quiz": {
+        "question": "What does anchoring describe?",
+        "options": [
+          "Remembering only the last thing you heard",
+          "Avoiding numbers when deciding",
+          "Estimates being pulled toward an initial number, even an irrelevant one",
+          "Always rounding numbers down"
+        ],
+        "answer": 2,
+        "explanation": "An early figure acts as a reference point, and people tend to adjust away from it too little."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--03",
+      "topic": "psychology",
+      "tags": [
+        "availability",
+        "risk",
+        "media"
+      ],
+      "title": "What comes to mind easily feels more common than it is",
+      "body": "Kahneman explains that we often judge how frequent or likely something is by how easily examples spring to mind. That shortcut, the availability heuristic, is usually decent, but vivid, recent or heavily reported events are easier to recall than dull, common ones.\n\nSo a dramatic news story can make a rare danger feel close, while everyday risks fade into the background. The ease of remembering gets mistaken for evidence about how often something happens.",
+      "apply_it": "Next time a news story makes you worried, look up how often that event actually happens before changing your plans.",
+      "quiz": {
+        "question": "Why might a rare but dramatic event seem more likely than it is?",
+        "options": [
+          "Vivid examples are easy to recall, and ease of recall feels like frequency",
+          "Rare events are actually common",
+          "People are bad at all maths",
+          "System 2 always exaggerates risk"
+        ],
+        "answer": 0,
+        "explanation": "The availability heuristic treats how easily something comes to mind as a guide to how often it happens."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--04",
+      "topic": "psychology",
+      "tags": [
+        "loss-aversion",
+        "money",
+        "decision-making"
+      ],
+      "title": "Losing hurts more than winning the same amount feels good",
+      "body": "One of Kahneman's best-known findings, developed with Amos Tversky, is loss aversion: a loss stings more than an equal gain pleases. That asymmetry makes many people turn down bets that are actually in their favour, cling to things simply because they own them, and keep a failing plan going to avoid admitting the loss.\n\nThe same choice can also feel different depending on whether it is framed as something gained or something given up, even when the outcome is identical.",
+      "apply_it": "Take one decision you're stuck on and rewrite it twice: once as what you gain, once as what you lose. Does your answer change? Choose on the facts, not the framing.",
+      "quiz": {
+        "question": "What is loss aversion?",
+        "options": [
+          "Preferring gains to be delivered slowly",
+          "Forgetting past losses quickly",
+          "Feeling indifferent to money",
+          "Feeling a loss more strongly than a gain of the same size"
+        ],
+        "answer": 3,
+        "explanation": "Losses loom larger than equivalent gains, which shapes many choices about risk and change."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--05",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "projects",
+        "estimation"
+      ],
+      "title": "Plans run late because we picture the best case: check the outside view",
+      "body": "The planning fallacy is our habit of forecasting projects as if everything will go smoothly. We imagine the steps we know about and overlook the delays, interruptions and surprises that almost always turn up.\n\nKahneman's remedy is to take the 'outside view': instead of reasoning only from the details of your own plan, ask how long similar projects usually took for other people or for you in the past. Start from that base rate, then adjust for what is genuinely different this time.",
+      "apply_it": "For your next project, find out how long the last two or three similar ones actually took. Use that as your starting estimate.",
+      "quiz": {
+        "question": "What does taking the 'outside view' mean?",
+        "options": [
+          "Asking an outsider to do the work",
+          "Starting from how similar projects actually turned out",
+          "Planning only for the best case",
+          "Ignoring past experience"
+        ],
+        "answer": 1,
+        "explanation": "Base rates from comparable cases correct the optimism built into an inside-view plan."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--06",
+      "topic": "psychology",
+      "tags": [
+        "wysiati",
+        "overconfidence",
+        "evidence"
+      ],
+      "title": "We build confident stories from whatever is in front of us",
+      "body": "Kahneman coined a clumsy acronym, WYSIATI, for 'what you see is all there is'. The fast mind makes the most coherent story it can from the information at hand and rarely asks what is missing. A neat story feels convincing, so confidence comes from coherence rather than from how complete or reliable the evidence is.\n\nThat is why a one-sided account can persuade us, and why first impressions of people and situations stick so firmly.",
+      "apply_it": "When you feel sure about something, ask: what would I need to know that I don't know yet? Look for one piece of missing information.",
+      "quiz": {
+        "question": "According to the WYSIATI idea, where does our confidence mostly come from?",
+        "options": [
+          "The amount of evidence we have",
+          "Expert advice",
+          "How coherent the story feels",
+          "Careful statistical checks"
+        ],
+        "answer": 2,
+        "explanation": "A tidy story feels convincing even when it rests on thin or one-sided information."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--07",
+      "topic": "psychology",
+      "tags": [
+        "happiness",
+        "memory",
+        "experiences"
+      ],
+      "title": "The self that lives an experience and the self that remembers it don't agree",
+      "body": "Kahneman distinguishes the experiencing self, which lives moment by moment, from the remembering self, which keeps score and makes future choices. The remembering self doesn't add up the whole experience. It leans heavily on the most intense moment and on how things ended, and largely ignores how long it lasted.\n\nSo a holiday with a bad last day can be remembered as worse than it was, and an unpleasant experience that tapers off gently can be remembered as more bearable.",
+      "apply_it": "When planning an evening, trip or meeting, give extra thought to the ending. Finish on something good.",
+      "quiz": {
+        "question": "Which features does the remembering self weigh most heavily?",
+        "options": [
+          "The peak moment and the ending",
+          "The total length of the experience",
+          "The very first minute",
+          "The average of every moment"
+        ],
+        "answer": 0,
+        "explanation": "Memories are shaped mostly by the most intense point and the end, not by duration."
+      }
+    }
+  ]
+}
