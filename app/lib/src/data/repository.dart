@@ -11,7 +11,7 @@ class Fetched<T> {
   final bool offline;
 }
 
-/// The seventeen topics from content/SCHEMA.md, used when /v1/topics is
+/// The eighteen topics from content/SCHEMA.md, used when /v1/topics is
 /// unreachable and nothing is cached yet.
 const kDefaultTopics = <Topic>[
   Topic(slug: 'business', name: 'Business'),
@@ -22,6 +22,7 @@ const kDefaultTopics = <Topic>[
   Topic(slug: 'productivity', name: 'Productivity & Career'),
   Topic(slug: 'money', name: 'Money'),
   Topic(slug: 'relationships', name: 'Relationships'),
+  Topic(slug: 'dating-marriage', name: 'Dating & Marriage'),
   Topic(slug: 'mindfulness', name: 'Mindfulness & Philosophy'),
   Topic(slug: 'faith-wisdom', name: 'Faith & Wisdom'),
   Topic(slug: 'leadership', name: 'Leadership'),
@@ -172,8 +173,21 @@ class RebornRepository {
   Future<AuthResult> login(String email, String password) =>
       _run(() => api.login(email, password));
 
-  Future<AuthResult> register(String email, String password, String name) =>
-      _run(() => api.register(email, password, name));
+  Future<AuthResult> register(
+    String email,
+    String password,
+    String name, {
+    String? timezone,
+    String? referralCode,
+  }) => _run(
+    () => api.register(
+      email,
+      password,
+      name,
+      timezone: timezone,
+      referralCode: referralCode,
+    ),
+  );
 
   Future<User> me() => _run(api.me);
 
@@ -182,12 +196,18 @@ class RebornRepository {
     String? handle,
     String? bio,
     List<String>? topics,
+    String? timezone,
+    int? dailyGoal,
+    Map<String, bool>? notify,
   }) => _run(
     () => api.updateMe(
       displayName: displayName,
       handle: handle,
       bio: bio,
       topics: topics,
+      timezone: timezone,
+      dailyGoal: dailyGoal,
+      notify: notify,
     ),
   );
 
@@ -335,6 +355,9 @@ class RebornRepository {
   Future<Stash> renameStash(String id, String name, {String? description}) =>
       _run(() => api.updateStash(id, name: name, description: description));
 
+  Future<Stash> setStashPublic(String id, bool isPublic) =>
+      _run(() => api.updateStash(id, isPublic: isPublic));
+
   Future<void> deleteStash(String id) async {
     await _run(() => api.deleteStash(id));
     await cache.remove(OfflineCache.stashKey(id));
@@ -380,4 +403,83 @@ class RebornRepository {
 
   Future<ChatReply> chat(List<ChatMessage> messages) =>
       _run(() => api.chat(messages));
+
+  // ---- Notifications, streaks, referrals ----
+
+  Future<NotificationsPage> notifications() => _run(api.notifications);
+
+  Future<void> markNotificationsRead([List<String>? ids]) =>
+      _run(() => api.markNotificationsRead(ids));
+
+  Future<void> registerDevice(String platform, String token) =>
+      _run(() => api.registerDevice(platform, token));
+
+  Future<void> unregisterDevice(String token) =>
+      _run(() => api.unregisterDevice(token));
+
+  Future<Streak> streak() => _run(api.streak);
+
+  Future<Referrals> referrals() => _run(api.referrals);
+
+  // ---- Blocking ----
+
+  Future<List<BlockedUser>> blocks() => _run(api.blocks);
+
+  Future<void> setBlock(String userId, String? kind) =>
+      _run(() => api.setBlock(userId, kind));
+
+  // ---- Discover ----
+
+  Future<DiscoverPage> discover() => _run(api.discover);
+
+  Future<List<Post>> trending({String? topic}) =>
+      _run(() => api.trending(topic: topic));
+
+  Future<List<Stash>> userStashes(String handle) =>
+      _run(() => api.userStashes(handle));
+
+  Future<PublicStash> publicStash(String id) => _run(() => api.publicStash(id));
+
+  // ---- Circles ----
+
+  Future<List<Circle>> circles({String? source, bool mine = false}) =>
+      _run(() => api.circles(source: source, mine: mine));
+
+  Future<Circle> createCircle(
+    String sourceId,
+    String name, {
+    String? description,
+  }) => _run(() => api.createCircle(sourceId, name, description: description));
+
+  Future<Circle> circle(String id) => _run(() => api.circle(id));
+
+  Future<Circle> joinCircle(String id) => _run(() => api.joinCircle(id));
+
+  Future<void> leaveCircle(String id) => _run(() => api.leaveCircle(id));
+
+  Future<List<CircleMessage>> circleMessages(String id, {DateTime? before}) =>
+      _run(() => api.circleMessages(id, before: before));
+
+  Future<CircleMessage> postCircleMessage(
+    String id,
+    String body, {
+    String? postId,
+  }) => _run(() => api.postCircleMessage(id, body, postId: postId));
+
+  Future<void> deleteCircleMessage(String circleId, String messageId) =>
+      _run(() => api.deleteCircleMessage(circleId, messageId));
+
+  // ---- Premium ----
+
+  Future<PremiumStatus> premium() => _run(api.premium);
+
+  Future<PremiumStatus> premiumApple(String signedTransaction) =>
+      _run(() => api.premiumApple(signedTransaction));
+
+  Future<PremiumStatus> premiumGoogle(String productId, String purchaseToken) =>
+      _run(() => api.premiumGoogle(productId, purchaseToken));
+
+  // ---- Moderator dashboard ----
+
+  Future<AdminStats> adminStats() => _run(api.adminStats);
 }

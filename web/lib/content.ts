@@ -10,6 +10,7 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "productivity", name: "Productivity & Career" },
   { slug: "money", name: "Money" },
   { slug: "relationships", name: "Relationships" },
+  { slug: "dating-marriage", name: "Dating & Marriage" },
   { slug: "mindfulness", name: "Mindfulness & Philosophy" },
   { slug: "faith-wisdom", name: "Faith & Wisdom" },
   { slug: "leadership", name: "Leadership" },
