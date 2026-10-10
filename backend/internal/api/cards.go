@@ -165,3 +165,44 @@ func (s *Server) search(w http.ResponseWriter, r *http.Request) {
 	}
 	writeJSON(w, http.StatusOK, map[string]any{"cards": cards})
 }
+
+func (s *Server) sources(w http.ResponseWriter, r *http.Request) {
+	topic := r.URL.Query().Get("topic")
+	if topic != "" && !content.IsTopic(topic) {
+		writeError(w, http.StatusBadRequest, "bad_request", "unknown topic")
+		return
+	}
+	limit := intParam(r, "limit", 50, 1, 200)
+	offset := 0
+	if c := r.URL.Query().Get("cursor"); c != "" {
+		var err error
+		if offset, err = strconv.Atoi(c); err != nil || offset < 0 {
+			writeError(w, http.StatusBadRequest, "bad_request", "invalid cursor")
+			return
+		}
+	}
+	list, err := s.Store.Sources(r.Context(), topic, offset, limit)
+	if err != nil {
+		s.fail(w, r, err, "sources")
+		return
+	}
+	var next *string
+	if len(list) == limit {
+		n := strconv.Itoa(offset + limit)
+		next = &n
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"sources": list, "next_cursor": next})
+}
+
+func (s *Server) sitemap(w http.ResponseWriter, r *http.Request) {
+	cards, sources, err := s.Store.Sitemap(r.Context())
+	if err != nil {
+		s.fail(w, r, err, "sitemap")
+		return
+	}
+	topics := make([]string, len(content.Topics))
+	for i, t := range content.Topics {
+		topics[i] = t.Slug
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"cards": cards, "sources": sources, "topics": topics})
+}

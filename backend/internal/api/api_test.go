@@ -218,6 +218,18 @@ func TestPublicBrowsing(t *testing.T) {
 		t.Fatalf("source page = %v", src)
 	}
 
+	srcs := list(h.do("GET", "/v1/sources?topic=health", "", nil, 200), "sources")
+	if len(srcs) != 1 || srcs[0].(map[string]any)["id"] != "nhs-sleep-tips" || srcs[0].(map[string]any)["card_count"].(float64) != 3 {
+		t.Fatalf("sources = %v", srcs)
+	}
+	if n := len(list(h.do("GET", "/v1/sources", "", nil, 200), "sources")); n != 3 {
+		t.Fatalf("all sources = %d", n)
+	}
+	sm := h.do("GET", "/v1/sitemap", "", nil, 200)
+	if len(list(sm, "cards")) != 9 || len(list(sm, "sources")) != 3 || len(list(sm, "topics")) != 9 {
+		t.Fatalf("sitemap = %v", sm)
+	}
+
 	found := ids(list(h.do("GET", "/v1/search?q="+url.QueryEscape("how do I sleep better"), "", nil, 200), "cards"))
 	if len(found) == 0 || !strings.HasPrefix(found[0], "nhs-sleep-tips") {
 		t.Fatalf("search = %v", found)

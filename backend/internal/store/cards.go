@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/jackc/pgx/v5"
@@ -327,4 +328,73 @@ func (s *Store) Seed(ctx context.Context, lib content.Library) (SeedResult, erro
 // embedText is what gets embedded for a card.
 func embedText(title, body, applyIt string, tags []string, sourceTitle string) string {
 	return strings.Join([]string{title, body, "Apply it: " + applyIt, "Tags: " + strings.Join(tags, ", "), "Source: " + sourceTitle}, "\n")
+}
+
+// SourceSummary is a source in a listing.
+type SourceSummary struct {
+	ID          string    `json:"id"`
+	Title       string    `json:"title"`
+	Authors     []string  `json:"authors"`
+	Kind        string    `json:"kind"`
+	Licence     string    `json:"licence"`
+	Attribution string    `json:"attribution"`
+	Topics      []string  `json:"topics"`
+	CardCount   int       `json:"card_count"`
+	UpdatedAt   time.Time `json:"updated_at"`
+}
+
+// Sources lists sources with published cards, optionally only those with cards
+// in topic, ordered by title.
+func (s *Store) Sources(ctx context.Context, topic string, offset, limit int) ([]SourceSummary, error) {
+	rows, err := s.DB.Query(ctx, `SELECT s.id, s.title, s.authors, s.kind, s.licence, s.attribution,
+			array_agg(DISTINCT c.topic ORDER BY c.topic), count(c.id), greatest(s.updated_at, max(c.updated_at))
+		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		GROUP BY s.id
+		HAVING $1 = '' OR bool_or(c.topic = $1)
+		ORDER BY lower(s.title), s.id OFFSET $2 LIMIT $3`, topic, offset, limit)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	out := []SourceSummary{}
+	for rows.Next() {
+		var x SourceSummary
+		if err := rows.Scan(&x.ID, &x.Title, &x.Authors, &x.Kind, &x.Licence, &x.Attribution, &x.Topics, &x.CardCount, &x.UpdatedAt); err != nil {
+			return nil, err
+		}
+		out = append(out, x)
+	}
+	return out, rows.Err()
+}
+
+// SitemapEntry is one indexable page.
+type SitemapEntry struct {
+	ID        string    `json:"id"`
+	UpdatedAt time.Time `json:"updated_at"`
+}
+
+// Sitemap lists every published card and every source that has one.
+func (s *Store) Sitemap(ctx context.Context) (cards, sources []SitemapEntry, err error) {
+	scan := func(q string) ([]SitemapEntry, error) {
+		rows, err := s.DB.Query(ctx, q)
+		if err != nil {
+			return nil, err
+		}
+		defer rows.Close()
+		out := []SitemapEntry{}
+		for rows.Next() {
+			var e SitemapEntry
+			if err := rows.Scan(&e.ID, &e.UpdatedAt); err != nil {
+				return nil, err
+			}
+			out = append(out, e)
+		}
+		return out, rows.Err()
+	}
+	if cards, err = scan(`SELECT id, updated_at FROM cards WHERE status = 'published' ORDER BY id`); err != nil {
+		return nil, nil, err
+	}
+	sources, err = scan(`SELECT s.id, greatest(s.updated_at, max(c.updated_at)) FROM sources s
+		JOIN cards c ON c.source_id = s.id AND c.status = 'published' GROUP BY s.id ORDER BY s.id`)
+	return cards, sources, err
 }
