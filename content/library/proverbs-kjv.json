@@ -1,0 +1,281 @@
+{
+  "source": {
+    "id": "proverbs-kjv",
+    "title": "The Book of Proverbs (King James Version)",
+    "authors": [
+      "Traditionally attributed to Solomon and other sages"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/8020",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "The Bible, King James Version, Book 20: Proverbs, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1611,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "King James Version (1611) text from Gutenberg #8020. Public domain in the US and most countries. In the UK the KJV is still under Crown letters patent, which covers printing the Bible text; short quotations are generally accepted. Locators are chapter:verse."
+  },
+  "cards": [
+    {
+      "id": "proverbs-kjv--01",
+      "topic": "productivity",
+      "tags": [
+        "diligence",
+        "self-motivation",
+        "planning",
+        "habits"
+      ],
+      "title": "Learn from the ant: work steadily without waiting to be told",
+      "body": "The ant has no boss standing over it, yet it gathers food in summer for the months ahead. Proverbs holds it up to the sluggard as a teacher.\n\nThe lesson has two parts. First, self-direction: the best workers don't need supervision to start. Second, timing: the ant works when the season allows, storing up before it is needed rather than scrambling once it is too late. Good habits look the same today. You build savings, skills and relationships in the easy season, not in the crisis.",
+      "quote": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+      "locator": "Proverbs 6:6",
+      "apply_it": "List one thing you would do this week if nobody were checking. Do it first, before anything assigned to you.",
+      "quiz": {
+        "question": "What makes the ant a model worker in Proverbs?",
+        "options": [
+          "It prepares in summer with no overseer",
+          "It works hard only when watched",
+          "It works alone and never rests",
+          "It takes food from others"
+        ],
+        "answer": 0,
+        "explanation": "Proverbs 6:7-8 stresses that the ant has no guide or ruler, yet stores food in summer for later."
+      }
+    },
+    {
+      "id": "proverbs-kjv--02",
+      "topic": "business",
+      "tags": [
+        "excellence",
+        "skill",
+        "career",
+        "craft"
+      ],
+      "title": "Become excellent at your work and doors open",
+      "body": "Proverbs asks: have you seen someone skilled and diligent in their work? They will stand before kings, not obscure people.\n\nThe promise isn't luck or connections. It is that real competence, built patiently, eventually gets noticed by people with influence. Skill is portable and hard to fake. A carpenter, a coder or a nurse who is truly excellent becomes the person others seek out. If you want better opportunities, the most dependable route is to become very good at something useful.",
+      "quote": "Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men.",
+      "locator": "Proverbs 22:29",
+      "apply_it": "Pick one skill central to your work. Find out what an expert does that you don't, and practise that for 20 minutes today.",
+      "quiz": {
+        "question": "What does Proverbs 22:29 say diligence in your work leads to?",
+        "options": [
+          "Being left alone",
+          "Standing before kings",
+          "Quick riches",
+          "Fewer responsibilities"
+        ],
+        "answer": 1,
+        "explanation": "Skilled, diligent work earns a place among people of influence."
+      }
+    },
+    {
+      "id": "proverbs-kjv--03",
+      "topic": "business",
+      "tags": [
+        "advice",
+        "decisions",
+        "planning",
+        "mentors"
+      ],
+      "title": "Plans fail for lack of counsel: test them on others first",
+      "body": "Proverbs returns to this idea more than once. Without advice, plans fall apart; with many advisers, they succeed.\n\nWe are often blind to the weak points in our own ideas because we love them. Taking a plan to several people with different experience, such as a customer, an accountant or someone who has tried it before, shows the problems while they are still cheap to fix. Seeking counsel is not weakness; it is how careful builders work. The final decision is still yours, but it is better informed.",
+      "quote": "Without counsel purposes are disappointed: but in the multitude of counsellors they are established.",
+      "locator": "Proverbs 15:22",
+      "apply_it": "Before your next big decision, ask three people with different viewpoints: \"What would make this fail?\"",
+      "quiz": {
+        "question": "What does Proverbs 15:22 say makes plans succeed?",
+        "options": [
+          "Keeping them secret",
+          "Acting quickly",
+          "Many advisers",
+          "Working alone"
+        ],
+        "answer": 2,
+        "explanation": "Plans are established \"in the multitude of counsellors\"."
+      }
+    },
+    {
+      "id": "proverbs-kjv--04",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "patience",
+        "wealth",
+        "compounding"
+      ],
+      "title": "Money gathered little by little lasts; quick money vanishes",
+      "body": "Proverbs contrasts two kinds of wealth. Money gained quickly or dishonestly dwindles away. Money gathered steadily by labour grows.\n\nThis is the oldest form of the compounding idea. Small, regular amounts saved or invested over years build real security, while windfalls and get-rich-quick schemes often disappear as fast as they came. The habit of gathering matters more than the size of any single gain, because it also builds the discipline to keep what you have.",
+      "quote": "Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.",
+      "locator": "Proverbs 13:11",
+      "apply_it": "Set up an automatic transfer of a small, fixed amount into savings on every payday.",
+      "quiz": {
+        "question": "Which wealth grows, according to Proverbs 13:11?",
+        "options": [
+          "Wealth gained quickly",
+          "Wealth borrowed",
+          "Wealth inherited",
+          "Wealth gathered by labour"
+        ],
+        "answer": 3,
+        "explanation": "Wealth gathered steadily by labour increases, while quick or empty gains dwindle."
+      }
+    },
+    {
+      "id": "proverbs-kjv--05",
+      "topic": "money",
+      "tags": [
+        "debt",
+        "freedom",
+        "borrowing",
+        "independence"
+      ],
+      "title": "The borrower is servant to the lender",
+      "body": "Proverbs states it bluntly: the borrower becomes the servant of the lender. Debt is not just a number. It gives someone else a claim on your future time and choices.\n\nSome borrowing, such as a modest loan for a productive asset, can make sense. But every repayment is income already spent, and that limits what you can say yes or no to. People with little debt can change jobs, take risks and weather bad months. People with heavy debt often can't. Reducing what you owe is a way of buying back freedom.",
+      "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+      "locator": "Proverbs 22:7",
+      "apply_it": "List every debt you have with its interest rate. Put any extra money this month towards the most expensive one.",
+      "quiz": {
+        "question": "Why does Proverbs call the borrower a servant?",
+        "options": [
+          "Debt gives the lender a claim on your future",
+          "Lenders are always unkind",
+          "Borrowing is illegal",
+          "Servants earn more"
+        ],
+        "answer": 0,
+        "explanation": "Owing money ties your future income and choices to the lender."
+      }
+    },
+    {
+      "id": "proverbs-kjv--06",
+      "topic": "relationships",
+      "tags": [
+        "conflict",
+        "communication",
+        "anger",
+        "words"
+      ],
+      "title": "A gentle answer turns away anger",
+      "body": "A gentle reply calms anger, while harsh words inflame it. When someone comes at you hot, your reply decides whether the fire grows or dies down.\n\nA gentle answer is not weakness or agreement. It is choosing a calm tone so the real issue can be discussed. Harsh words feel satisfying for a moment but usually make the other person defend themselves, and the argument becomes about the argument. Lowering your voice, slowing down and acknowledging their point often takes the heat out in seconds.",
+      "quote": "A soft answer turneth away wrath: but grievous words stir up anger.",
+      "locator": "Proverbs 15:1",
+      "apply_it": "In your next tense conversation, make your first sentence a calm acknowledgement, such as \"I can see this really matters to you.\"",
+      "quiz": {
+        "question": "According to Proverbs 15:1, what stirs up anger?",
+        "options": [
+          "A soft answer",
+          "Grievous (harsh) words",
+          "Silence",
+          "Asking questions"
+        ],
+        "answer": 1,
+        "explanation": "Harsh words stir up anger, while a gentle answer turns it away."
+      }
+    },
+    {
+      "id": "proverbs-kjv--07",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "growth",
+        "feedback",
+        "community"
+      ],
+      "title": "As iron sharpens iron, good friends sharpen each other",
+      "body": "Proverbs compares friendship to two pieces of iron rubbed together: each makes the other sharper.\n\nThe best friendships aren't only comfortable. They include honest feedback, shared ambition and a little friction. Elsewhere Proverbs adds that those who walk with the wise become wise. The people you spend time with shape your standards, habits and thinking. It is worth choosing companions who challenge you to grow, and being that kind of friend in return.",
+      "quote": "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",
+      "locator": "Proverbs 27:17",
+      "apply_it": "Ask one trusted friend: \"What's one thing I could do better?\" Listen without defending yourself.",
+      "quiz": {
+        "question": "What does \"iron sharpeneth iron\" say about good friendship?",
+        "options": [
+          "Friends should never disagree",
+          "Friends should compete to win",
+          "Friends improve each other",
+          "Friendship is dangerous"
+        ],
+        "answer": 2,
+        "explanation": "Like iron on iron, good friends make each other better."
+      }
+    },
+    {
+      "id": "proverbs-kjv--08",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anger",
+        "self-control",
+        "patience",
+        "strength"
+      ],
+      "title": "Ruling your own temper is greater than taking a city",
+      "body": "Proverbs ranks self-control above military conquest. Someone who is slow to anger is better than a mighty warrior, and someone who rules their own spirit is better than one who captures a city.\n\nIt flips our usual idea of strength. Conquering outward things is visible and celebrated, but mastering your reactions is harder and more valuable. Another proverb pictures the person without self-control as a city with broken walls, open to any attack. Pausing before reacting is a skill that protects your relationships, reputation and decisions.",
+      "quote": "He that is slow to anger is better than the mighty; and he that ruleth his spirit than he that taketh a city.",
+      "locator": "Proverbs 16:32",
+      "apply_it": "When you feel anger rising today, take three slow breaths before you say or type anything.",
+      "quiz": {
+        "question": "What does Proverbs 16:32 rank above taking a city?",
+        "options": [
+          "Building a house",
+          "Winning an argument",
+          "Earning great riches",
+          "Ruling your own spirit"
+        ],
+        "answer": 3,
+        "explanation": "Mastering your own spirit is called greater than conquering a city."
+      }
+    },
+    {
+      "id": "proverbs-kjv--09",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "listening",
+        "speech",
+        "restraint",
+        "wisdom"
+      ],
+      "title": "Listen fully before you answer",
+      "body": "Proverbs calls it foolish and shameful to answer before you have heard someone out. It warns against the habit of replying before you understand.\n\nWe often start forming our answer while the other person is still talking. We miss what they really mean, solve the wrong problem, or say something we regret. Proverbs adds that even a fool seems wise when silent, and that the hasty speaker is worse off than a fool. Listening to the end, and asking a question before giving an opinion, makes you both wiser and better trusted.",
+      "quote": "He that answereth a matter before he heareth it, it is folly and shame unto him.",
+      "locator": "Proverbs 18:13",
+      "apply_it": "In your next conversation, ask one clarifying question before giving any advice or opinion.",
+      "quiz": {
+        "question": "What does Proverbs 18:13 call answering before hearing?",
+        "options": [
+          "Folly and shame",
+          "Efficient",
+          "Confident leadership",
+          "Good manners"
+        ],
+        "answer": 0,
+        "explanation": "Answering before hearing a matter fully is called folly and shame."
+      }
+    },
+    {
+      "id": "proverbs-kjv--10",
+      "topic": "personal-development",
+      "tags": [
+        "wisdom",
+        "learning",
+        "priorities",
+        "understanding"
+      ],
+      "title": "Wisdom is the main thing; whatever else you get, get understanding",
+      "body": "Proverbs makes wisdom the first priority: whatever else you gain, gain understanding.\n\nMoney, status and skills all depend on judgement to be used well. Without it, people waste opportunities, trust the wrong people, or win one thing and lose another. Wisdom grows by seeking out good teachers, learning from mistakes, and listening more than you speak. In Proverbs, getting wisdom is not just reading. It means humbly taking correction and changing how you live.",
+      "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+      "locator": "Proverbs 4:7",
+      "apply_it": "Choose one source of wisdom, such as a mentor, a book or an elder. Spend 15 minutes with it this week and write down one lesson to apply.",
+      "quiz": {
+        "question": "What does Proverbs 4:7 call the principal (main) thing?",
+        "options": [
+          "Wealth",
+          "Wisdom",
+          "Strength",
+          "Reputation"
+        ],
+        "answer": 1,
+        "explanation": "Wisdom is named the principal thing, worth getting above all else."
+      }
+    }
+  ]
+}

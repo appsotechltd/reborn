@@ -414,3 +414,12 @@ adapter = "openstax"
 repo = "osbooks-life-liberty-and-pursuit-happiness"
 collection = "life-liberty-and-pursuit-happiness"
 licence = "cc-by-4.0"
+
+[[source]]
+id = "proverbs-kjv"
+adapter = "gutenberg"
+gutenberg_id = 8020
+mirror = "The-Bible-King-James-Version-Book-20-Proverbs_8020/master/8020.txt"
+verses = "Proverbs"
+licence = "public-domain"
+# KJV: public domain in the US and most countries; in the UK it remains under Crown letters patent.

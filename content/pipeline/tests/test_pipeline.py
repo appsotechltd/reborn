@@ -88,6 +88,21 @@ class GutenbergTest(unittest.TestCase):
         with self.assertRaises(LicenceError):
             gutenberg.parse_text((FIX / "gutenberg_copyrighted.txt").read_text(), "x")
 
+    def test_bible_verses_and_old_small_print_licence(self):
+        text = (
+            "Project Gutenberg EBook The Bible, King James, Book 20: Proverbs\n\n"
+            "*** START OF THE PROJECT GUTENBERG EBOOK, THE BIBLE, KING JAMES, BOOK 20 ***\n\n"
+            "Book 20        Proverbs\n\n"
+            "20:006:006 Go to the ant, thou sluggard; consider her ways, and be wise:\n\n"
+            "20:006:007 Which having no guide, overseer,\n           or ruler,\n\n"
+            "*** END OF THE PROJECT GUTENBERG EBOOK, THE BIBLE, KING JAMES, BOOK 20 ***\n\n"
+            "***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***\n"
+        )
+        licence, _, passages = gutenberg.parse_text(text, "p", verses="Proverbs")
+        self.assertEqual(licence, "public-domain")
+        self.assertEqual([p.locator for p in passages], ["Proverbs 6:6", "Proverbs 6:7"])
+        self.assertEqual(passages[1].text, "Which having no guide, overseer, or ruler,")
+
     def test_title_case_keeps_roman_numerals(self):
         self.assertEqual(gutenberg.title_case("CHAPTER IX. THE USE OF THE WILL"), "Chapter IX. The Use of the Will")
 
