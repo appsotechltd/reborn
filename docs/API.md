@@ -47,7 +47,9 @@ Clients must always show `credit`, and `disclaimer` when present.
 ### User
 
 ```json
-{ "id": "uuid", "email": "a@b.com", "handle": "ada", "display_name": "Ada", "bio": "", "role": "member", "topics": ["psychology"] }
+{ "id": "uuid", "email": "a@b.com", "handle": "ada", "display_name": "Ada", "bio": "", "role": "member", "topics": ["psychology"],
+  "timezone": "Europe/London", "daily_goal": 3, "notify": { "daily": true, "replies": true, "follows": true, "circles": true },
+  "referral_code": "7F3A9C21", "premium": false, "premium_until": null }
 ```
 
 `role` is `member` or `moderator`.
@@ -137,10 +139,10 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/sources/{id}` | optional | | `{"source":Source,"cards":[Card],"follow":{"followers","is_following"}}`. `Source` has the fields in content/SCHEMA.md |
 | `GET /v1/sitemap` | none | | `{"cards":[{"id","updated_at"}],"sources":[{"id","updated_at"}],"topics":["business",...]}` for building sitemaps |
 | `GET /v1/search` | optional | `?q=sleep&topic=health&limit=20` | `{"cards":[Card]}`. `q` may be omitted when `topic` is given, to browse the topic |
-| `POST /v1/auth/register` | none | `{"email","password","display_name"}` (password ≥ 8) | `{"token","user":User}` |
+| `POST /v1/auth/register` | none | `{"email","password","display_name","timezone"?,"referral_code"?}` (password ≥ 8; `timezone` is an IANA name) | `{"token","user":User}` |
 | `POST /v1/auth/login` | none | `{"email","password"}` | `{"token","user":User}` |
 | `GET /v1/me` | required | | `User` |
-| `PATCH /v1/me` | required | `{"display_name"?, "handle"?, "bio"? (≤300), "topics"?}` | `User`. `409 handle_taken` |
+| `PATCH /v1/me` | required | `{"display_name"?, "handle"?, "bio"? (≤300), "topics"?, "timezone"?, "daily_goal"? (1-50), "notify"?}` | `User`. `409 handle_taken` |
 | `DELETE /v1/me` | required | | `204`. Deletes the account and everything it owns |
 | `POST /v1/auth/forgot` | none | `{"email"}` | `202` whether or not the account exists. Emails a link to `WEB_BASE_URL/reset-password?token=…` that works once, for 1 hour |
 | `POST /v1/auth/reset` | none | `{"token","password"}` | `{"token","user":User}` (signs in). `400 invalid_token` when used or expired |
@@ -174,9 +176,9 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `POST /v1/moderation/comments/{id}/hide` | moderator | | `204`. Clears its reports |
 | `POST /v1/moderation/comments/{id}/restore` | moderator | | `204`. Clears its reports |
 | `GET /v1/stashes` | required | | `{"stashes":[Stash]}` |
-| `POST /v1/stashes` | required | `{"name","description"?}` | `Stash` (201) |
+| `POST /v1/stashes` | required | `{"name","description"?,"is_public"?}` | `Stash` (201) |
 | `GET /v1/stashes/{id}` | required | | `{"stash":Stash,"cards":[Card]}` |
-| `PATCH /v1/stashes/{id}` | required | `{"name"?,"description"?}` | `Stash` |
+| `PATCH /v1/stashes/{id}` | required | `{"name"?,"description"?,"is_public"?}` | `Stash`. Public stashes show on the owner's profile |
 | `DELETE /v1/stashes/{id}` | required | | `204` |
 | `PUT /v1/stashes/{id}/cards/{cardId}` | required | | `204`. Also adds the card to review |
 | `DELETE /v1/stashes/{id}/cards/{cardId}` | required | | `204` |
@@ -189,6 +191,83 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `POST /v1/moderation/{id}/approve` | moderator | `{"note"?}` | `Contribution` |
 | `POST /v1/moderation/{id}/reject` | moderator | `{"note"}` | `Contribution` |
 | `POST /v1/agent/chat` | required | `{"messages":[{"role":"user"|"assistant","content":"..."}]}` (last is `user`) | `{"reply":"...","citations":[Card]}` |
+
+### Notifications, streaks and referrals
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/notifications` | required | `?limit=50` | `{"notifications":[Notification],"unread":n}`, newest first |
+| `POST /v1/notifications/read` | required | `{"ids":[...]}` or no body | `204`. No ids marks everything read |
+| `POST /v1/devices` | required | `{"platform":"ios"|"android"|"web","token"}` (FCM token) | `204`. Push goes to every device of the user |
+| `DELETE /v1/devices/{token}` | required | | `204`. Call on sign-out |
+| `GET /v1/me/streak` | required | | `{"current","longest","goal","today","goal_met","last_days":[{"day","ideas"}]}` in the user's timezone |
+| `GET /v1/me/referrals` | required | | `{"code","link","invited","rewarded","reward_days"}`. `link` is `WEB_BASE_URL/join?ref=CODE` |
+
+`Notification` is `{"id","kind","text","actor":Profile|null,"post_id","comment_id","circle_id","read_at","created_at"}`;
+`kind` is `daily`, `reply`, `follow`, `circle` or `reward`. Push messages carry the same ids in their data.
+`notify` on the user turns each kind of push on or off. The daily push goes once a day after 8am local time.
+A referral rewards both people with `reward_days` of premium once the new user reads their first idea.
+
+### Blocking
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/me/blocks` | required | | `{"blocks":[Profile + {"kind"}]}` |
+| `PUT /v1/blocks/{userId}` | required | `{"kind":"block"|"mute"}` | `204`. Block hides both ways and removes follows; mute only hides them from you |
+| `DELETE /v1/blocks/{userId}` | required | | `204` |
+
+Blocked and muted people's comments, circle messages and notifications are hidden.
+
+### Discover
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/trending` | optional | `?topic=&days=7&limit=20` | `{"posts":[Post]}` ranked by reactions, comments, favourites, shares and gifts in the window |
+| `GET /v1/discover` | optional | | `{"trending":[Post],"new":[Post],"books":[Source + {"followers"}],"authors":[{"name","followers","sources"}],"circles":[Circle]}` |
+| `GET /v1/users/{handle}/stashes` | optional | | `{"stashes":[Stash]}`, public ones only |
+| `GET /v1/public/stashes/{id}` | optional | | `{"stash":Stash + {"owner":Profile},"cards":[Card]}`. `404` unless public |
+
+### Book circles
+
+A circle is a discussion group for one book (source), up to 50 members.
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/circles` | optional | `?source=&mine=1&limit=30` | `{"circles":[Circle]}`. `mine` needs sign-in |
+| `POST /v1/circles` | required | `{"source_id","name"(1-80),"description"?(≤500)}` | `Circle` (201). You become the owner |
+| `GET /v1/circles/{id}` | optional | | `Circle` |
+| `POST /v1/circles/{id}/join` | required | | `Circle`. `409 circle_full` |
+| `POST /v1/circles/{id}/leave` | required | | `204`. The oldest member takes over from a leaving owner; an empty circle is deleted |
+| `GET /v1/circles/{id}/messages` | member | `?before=<RFC 3339>&limit=50` | `{"messages":[CircleMessage]}`, oldest first |
+| `POST /v1/circles/{id}/messages` | member | `{"body"(1-2000),"post_id"?}` | `CircleMessage` (201). Notifies the other members |
+| `DELETE /v1/circles/{id}/messages/{msgId}` | required | | `204`. The author, the circle owner or a moderator |
+
+`Circle` is `{"id","name","description","source":{"id","title"},"owner":Profile|null,"members","is_member","role","created_at"}`.
+`CircleMessage` is `{"id","circle_id","body","post_id","author":Profile,"created_at"}`.
+
+### Premium
+
+Plans are `monthly` ($4.99, product `reborn.premium.monthly`) and `yearly` ($39.99,
+`reborn.premium.yearly`), auto-renewing subscriptions in one App Store subscription group and
+one Play subscription. Premium raises the AI guide's hourly limit tenfold.
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/premium` | optional | | `{"plans":[...],"providers":{"stripe","apple","google"},"premium","premium_until","subscription":{"provider","plan","status","expires_at"}|null}` |
+| `POST /v1/premium/checkout` | required | `{"plan"}` | `{"url"}` (201): Stripe Checkout, returning to `WEB_BASE_URL/premium?welcome=1` |
+| `POST /v1/premium/portal` | required | | `{"url"}` (201): Stripe's billing portal. `404` without a web subscription |
+| `POST /v1/premium/apple` | required | `{"signed_transaction"}` | Premium status as `GET /v1/premium`. Set `appAccountToken` to the user id when buying. `409 subscription_taken` if another account owns it |
+| `POST /v1/premium/google` | required | `{"product_id","purchase_token"}` | Same. Set `obfuscatedExternalAccountId` to the user id when buying |
+| `POST /v1/webhooks/apple` | Apple signature | App Store Server Notifications V2 | `200`. Renewals, expiries and refunds |
+| `POST /v1/webhooks/google` | `?token=GOOGLE_RTDN_TOKEN` | Pub/Sub push of Play real-time developer notifications | `204` |
+
+The Stripe webhook also handles `customer.subscription.created`, `.updated` and `.deleted`.
+
+### Moderator dashboard
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/admin/stats` | moderator | | `{"users":{"total","new_7d","new_30d","dau","wau","mau","premium"},"retention":{"cohort","d1","d7"},"engagement":{"ideas_read_7d","reactions_7d","comments_7d","favorites_7d","shares_7d"},"revenue":{"gifts_30d":[{"provider","currency","amount_cents","count"}],"subscriptions":[{"provider","count"}]},"moderation":{"pending_contributions","reported_comments"},"content":{"posts","sources"},"daily":[{"day","signups","active"}],"top_posts":[...]}` |
 
 The agent answers only from the card library and cites cards inline as `[card-id]`;
 `citations` holds the full cards it cited, in order of first mention. It returns `503`
@@ -216,6 +295,11 @@ and the Play Console. Each provider turns on when its settings are present:
   https://www.apple.com/certificateauthority/AppleRootCA-G3.cer.
 - Google: `GOOGLE_PLAY_PACKAGE`, and `GOOGLE_PLAY_SERVICE_ACCOUNT_FILE` with a service
   account key that has access to the app in the Play Console.
+
+Premium uses the same settings, plus `STRIPE_PRICE_MONTHLY` and `STRIPE_PRICE_YEARLY` (Stripe
+price ids), an App Store Server Notifications V2 URL at `/v1/webhooks/apple`, and a Play
+real-time developer notifications push subscription at `/v1/webhooks/google?token=…` with
+`GOOGLE_RTDN_TOKEN`. Push notifications need `FIREBASE_SERVICE_ACCOUNT_FILE`.
 
 Password reset emails use `SMTP_URL` (`smtp://user:pass@host:587`) and `MAIL_FROM`;
 without `SMTP_URL` they are written to the server log. Links point at `WEB_BASE_URL`.
