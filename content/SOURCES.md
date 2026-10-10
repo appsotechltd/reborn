@@ -118,14 +118,19 @@ The 48 Laws of Power (Greene), Atomic Habits (Clear), Mini Habits (Guise), How t
 Influence People (Carnegie), Deep Work, Essentialism, The 7 Habits of Highly Effective People,
 Thinking, Fast and Slow, Mindset, Man's Search for Meaning, Emotional Intelligence, Why We Sleep,
 The Psychology of Money, Rich Dad Poor Dad, Crucial Conversations, The 5 Love Languages, Chinua
-Achebe's The Education of a British-Protected Child, Tony Elumelu's Africapitalism and Strive
-Masiyiwa's mentoring posts. *How to Win Friends* (1936, renewed) is in copyright in the US until
+Achebe's The Education of a British-Protected Child, Tony Elumelu's Africapitalism, Strive
+Masiyiwa's mentoring posts and talks, and Anaïs Nin's Diary, In Favor of the Sensitive Man and The
+Novel of the Future (her erotica is excluded). *How to Win Friends* (1936, renewed) is in copyright in the US until
 2032 but public domain since 2026 in life+70 countries (Carnegie died 1955). They are registered in
 `sources.toml` with `adapter = "summary"`. *The Richest Man in Babylon* (1926) has been public
 domain in the US since 2022, but Clason died in 1957, so it is in copyright until the end of 2027 in
 life+70 countries (UK, EU, Nigeria). *Think and Grow Rich* (1937) is sometimes called public domain
 in the US for lack of a renewal; that is unconfirmed, and Hill died in 1970. Both are summaries for
 now so the cards are safe in every country.
+
+With 30 cards for each summarised book (Moses' decision, 2026-10-10), cards stick to the book's
+key ideas in our own words and never walk through it chapter by chapter. Thin books stop at the
+honest number of distinct ideas rather than padding.
 
 The pipeline has no adapter for these on purpose: nothing is fetched or stored. Cards are written
 by hand and the validator rejects any `quote` on them.

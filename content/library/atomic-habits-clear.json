@@ -177,6 +177,535 @@
         "answer": 0,
         "explanation": "One miss is an accident; the goal is to stop it becoming two."
       }
+    },
+    {
+      "id": "atomic-habits-clear--08",
+      "topic": "psychology",
+      "tags": [
+        "habit-loop",
+        "cues",
+        "rewards"
+      ],
+      "title": "Every habit runs on a loop: cue, craving, response, reward",
+      "body": "Clear breaks every habit into four stages. A cue catches your attention, a craving gives you a reason to act, the response is the behaviour itself, and the reward satisfies the craving and teaches your brain to repeat the loop next time.\n\nSeeing habits this way turns a vague struggle into something you can work on. If a habit isn't sticking, one of the four stages is weak: the cue is easy to miss, the craving is faint, the action is too hard, or the payoff is missing. If a bad habit won't go away, you can attack any of the same four links.",
+      "apply_it": "Pick one habit you have now and name its cue, craving, response and reward. Which link looks easiest to change?",
+      "quiz": {
+        "question": "What are the four stages of a habit in Clear's model?",
+        "options": [
+          "Plan, start, finish, review",
+          "Trigger, action, guilt, repeat",
+          "Goal, effort, result, rest",
+          "Cue, craving, response, reward"
+        ],
+        "answer": 3,
+        "explanation": "Clear's habit loop runs from cue to craving to response to reward, then repeats."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--09",
+      "topic": "personal-development",
+      "tags": [
+        "four-laws",
+        "behaviour-change",
+        "framework"
+      ],
+      "title": "To build a habit make it obvious, attractive, easy and satisfying",
+      "body": "Clear turns the habit loop into four practical laws. To build a good habit, make the cue obvious, make the habit attractive, make the action easy and make the result satisfying.\n\nTo break a bad habit, flip each law: make the cue invisible, make the habit unattractive, make the action difficult and make the result unsatisfying. The value of this framework is that it gives you four separate levers to pull instead of relying on willpower alone. When a change isn't working, he suggests asking which of the four laws you have neglected.",
+      "apply_it": "Choose one habit you want to build and write one tweak for each law: obvious, attractive, easy, satisfying.",
+      "quiz": {
+        "question": "How does Clear suggest breaking a bad habit?",
+        "options": [
+          "Make it invisible, unattractive, difficult and unsatisfying",
+          "Rely on stronger willpower",
+          "Replace it with three new habits at once",
+          "Wait until motivation arrives"
+        ],
+        "answer": 0,
+        "explanation": "Breaking a habit uses the inversion of the four laws for building one."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--10",
+      "topic": "psychology",
+      "tags": [
+        "awareness",
+        "habits-scorecard",
+        "self-reflection"
+      ],
+      "title": "List your daily habits to see which ones actually help you",
+      "body": "Many habits run so automatically that we stop noticing them. Clear suggests a simple exercise he calls the Habits Scorecard: write down your daily actions in order, from waking up to going to bed, then mark each one as helpful, harmful or neutral.\n\nThe judgement isn't about being good or bad, but about whether the habit moves you towards the person you want to be. Awareness comes before change: you can't fix a pattern you haven't noticed. He also mentions saying an action out loud, like a train worker pointing and calling, to make an automatic behaviour conscious.",
+      "apply_it": "Tonight, list your habits from this morning onwards and mark each with +, - or =.",
+      "quiz": {
+        "question": "What is the main purpose of the Habits Scorecard?",
+        "options": [
+          "To punish yourself for bad habits",
+          "To compare yourself with others",
+          "To notice automatic habits and judge whether they help you",
+          "To count calories"
+        ],
+        "answer": 2,
+        "explanation": "Writing out your routine makes unconscious habits visible so you can decide what to change."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--11",
+      "topic": "psychology",
+      "tags": [
+        "self-control",
+        "temptation",
+        "environment"
+      ],
+      "title": "Disciplined people avoid temptation more than they resist it",
+      "body": "Clear points to research suggesting that people who seem to have great self-control are often simply facing fewer temptations. They arrange their lives so that they rarely need heroic willpower.\n\nResisting a cue you see every day is exhausting and tends to fail eventually. It is easier to cut the cue out: keep sweets out of the house, leave your phone in another room while you work, log out of shopping apps. Instead of trying to be stronger in the moment, reduce how often the moment happens.",
+      "apply_it": "Name one temptation that wins most days. Remove or hide the cue for it today.",
+      "quiz": {
+        "question": "According to Clear, what is a common trait of people with good self-control?",
+        "options": [
+          "They are born with more willpower",
+          "They spend less time in tempting situations",
+          "They never enjoy treats",
+          "They use punishments for slips"
+        ],
+        "answer": 1,
+        "explanation": "Self-controlled people tend to structure their lives so temptation rarely comes up."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--12",
+      "topic": "productivity",
+      "tags": [
+        "environment",
+        "context",
+        "focus"
+      ],
+      "title": "Give each space one main purpose, so it cues one kind of behaviour",
+      "body": "Clear notes that our habits get tied to places. A bed used for scrolling, working and eating stops signalling sleep; a desk where you play games is harder to focus at.\n\nHis suggestion is one space, one use. If you can, keep a particular chair for reading, a corner for work, and the bedroom for sleep. In a small home, you can still mark zones or times. He also notes that a new environment, such as a different room or café, can make it easier to start a new habit because old cues are not there to pull you back.",
+      "apply_it": "Choose one spot at home and assign it a single purpose, such as reading. Use it only for that this week.",
+      "quiz": {
+        "question": "What does Clear mean by 'one space, one use'?",
+        "options": [
+          "Never leave your home office",
+          "Link each space with a single activity so it cues that habit",
+          "Clean one room per day",
+          "Work only in public spaces"
+        ],
+        "answer": 1,
+        "explanation": "When a space is linked to one activity, being there naturally prompts that habit."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--13",
+      "topic": "productivity",
+      "tags": [
+        "temptation-bundling",
+        "motivation",
+        "rewards"
+      ],
+      "title": "Pair a habit you need with something you already enjoy",
+      "body": "Clear describes temptation bundling: linking an action you need to do with one you want to do. For example, you only listen to your favourite podcast while walking, or only watch a favourite series while on the exercise bike.\n\nThe enjoyable activity makes the useful one more attractive, so you look forward to it instead of dreading it. He suggests combining this with habit stacking: after a current habit, do the habit you need, then do the thing you want. Over time the useful habit borrows some of the pleasure of the treat.",
+      "apply_it": "Pick one chore you avoid and one small pleasure. Make a rule that you only get the pleasure while doing the chore.",
+      "quiz": {
+        "question": "What is temptation bundling?",
+        "options": [
+          "Giving in to temptation as a reward for a whole week",
+          "Doing several chores at once",
+          "Avoiding all pleasures until a goal is reached",
+          "Linking an action you need to do with one you enjoy"
+        ],
+        "answer": 3,
+        "explanation": "Bundling ties something you want to something you need, making the useful habit more attractive."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--14",
+      "topic": "relationships",
+      "tags": [
+        "social-norms",
+        "community",
+        "belonging"
+      ],
+      "title": "Join a group where your desired habit is already normal",
+      "body": "Clear argues that we copy the habits of the people around us, especially those close to us, the many (the wider group), and the powerful (people we admire). Wanting to belong is a strong pull.\n\nSo one of the most effective ways to build a habit is to join a culture where it is the ordinary thing to do: a running club, a savings group, a study circle, a church or community group with good habits. When the group's normal matches your goal, the habit no longer feels like a lonely effort; it feels like fitting in.",
+      "apply_it": "Find one group, online or in person, where the habit you want is normal. Join or attend once this month.",
+      "quiz": {
+        "question": "Why does Clear recommend joining a group where your habit is normal?",
+        "options": [
+          "We naturally copy the people we want to belong with",
+          "Groups give out prizes",
+          "Habits only work in teams",
+          "It removes the need for any effort"
+        ],
+        "answer": 0,
+        "explanation": "Our desire to fit in makes the group's habits feel attractive and normal."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--15",
+      "topic": "psychology",
+      "tags": [
+        "reframing",
+        "mindset",
+        "motivation"
+      ],
+      "title": "Say 'I get to' instead of 'I have to'",
+      "body": "Clear suggests that a small change in how you describe a habit can change how it feels. Swap 'I have to go to work' for 'I get to go to work', and the same task looks like an opportunity rather than a burden.\n\nHe gives other reframes: exercise as building strength rather than a chore, saving money as building freedom later. He also suggests a short motivation ritual, such as a song or a breathing routine you always do before something hard, so that the ritual starts to bring on the right mood. The facts stay the same; the meaning you attach to them shifts.",
+      "apply_it": "Pick one task you dread and write a sentence starting with 'I get to...' that describes the benefit.",
+      "quiz": {
+        "question": "What is the point of switching 'have to' to 'get to'?",
+        "options": [
+          "To avoid responsibilities",
+          "To impress other people",
+          "To reframe a burden as an opportunity so the habit feels more attractive",
+          "To make tasks shorter"
+        ],
+        "answer": 2,
+        "explanation": "The words you use shape how you feel, which affects whether you keep up the habit."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--16",
+      "topic": "psychology",
+      "tags": [
+        "anticipation",
+        "dopamine",
+        "craving"
+      ],
+      "title": "Anticipation drives behaviour more than the reward itself",
+      "body": "Clear draws on brain research showing that dopamine rises when we expect a reward, not only when we get it. Wanting is what pushes us to act, which is why the build-up to a treat can feel more exciting than the treat itself.\n\nThis helps explain why some bad habits are so gripping: phones and junk food are designed to keep us anticipating. It also suggests a way to help good habits: give yourself something to look forward to around them, so the craving works in your favour instead of against you.",
+      "apply_it": "Think of a habit you want to build. What could you add to it that you would genuinely look forward to?",
+      "quiz": {
+        "question": "According to Clear, when does dopamine play a key role in habits?",
+        "options": [
+          "Only after a reward is received",
+          "It plays no role at all",
+          "Only during sleep",
+          "In the anticipation of a reward, which motivates action"
+        ],
+        "answer": 3,
+        "explanation": "Expecting a reward is what motivates us to act; the wanting drives the behaviour."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--17",
+      "topic": "productivity",
+      "tags": [
+        "action",
+        "planning",
+        "procrastination"
+      ],
+      "title": "Planning feels like progress, but only action produces results",
+      "body": "Clear distinguishes being in motion from taking action. Motion is planning, researching and preparing: reading ten articles about a diet, drafting a business idea, comparing gym programmes. Action is the behaviour that delivers an outcome: eating the meal, contacting the customer, doing the workout.\n\nMotion is useful, but it is also a comfortable way to delay, because it feels productive without the risk of failure. If you have been preparing for a long time, ask whether you are avoiding the real thing. Practice, not planning, is what builds a habit.",
+      "apply_it": "Look at a goal you've been 'preparing' for. What is one real action you can take today instead of more research?",
+      "quiz": {
+        "question": "How does Clear distinguish motion from action?",
+        "options": [
+          "Motion is planning and preparing; action produces a real result",
+          "Motion is exercise, action is rest",
+          "They are the same thing",
+          "Action is always risky and should be avoided"
+        ],
+        "answer": 0,
+        "explanation": "Motion feels productive but delays results; action is doing the thing itself."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--18",
+      "topic": "personal-development",
+      "tags": [
+        "repetition",
+        "automaticity",
+        "practice"
+      ],
+      "title": "Habits form through repetitions, not through days on a calendar",
+      "body": "People often ask how long it takes to build a habit. Clear's answer is that the better question is how many times you have done it. A habit becomes automatic through practice; the number of days only matters because of the repetitions inside them.\n\nThis takes the focus off waiting for a magic number and puts it on getting reps in. Doing a short version often beats doing a long version rarely, because each repetition strengthens the pattern. Frequency matters more than intensity when you are starting out.",
+      "apply_it": "Count how many times you have done a new habit so far. Aim to raise that count this week, even with short sessions.",
+      "quiz": {
+        "question": "What does Clear say matters most for a habit to become automatic?",
+        "options": [
+          "The number of days since you started",
+          "How motivated you feel",
+          "How many times you've repeated it",
+          "How long each session lasts"
+        ],
+        "answer": 2,
+        "explanation": "Repetitions, not time passing, are what make a behaviour automatic."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--19",
+      "topic": "productivity",
+      "tags": [
+        "friction",
+        "environment",
+        "ease"
+      ],
+      "title": "Reduce friction for good habits and add it to bad ones",
+      "body": "Clear argues that people naturally take the path that needs the least effort. So instead of pushing harder, make good habits easier to start: lay out your gym clothes the night before, keep a fruit bowl on the table, put the book on your pillow.\n\nHe calls this priming the environment. The same logic works in reverse: add steps between you and a bad habit, such as unplugging the TV after each use or deleting an app so you have to log in again. Small changes in effort can decide which way a busy, tired day goes.",
+      "apply_it": "Prepare one thing tonight that makes tomorrow's good habit easier to start, and add one step of friction to a bad habit.",
+      "quiz": {
+        "question": "What does Clear mean by priming your environment?",
+        "options": [
+          "Painting your walls bright colours",
+          "Setting things up in advance so the good habit is easy to start",
+          "Removing all furniture",
+          "Rewarding yourself before doing the habit"
+        ],
+        "answer": 1,
+        "explanation": "Preparing your space ahead of time cuts the effort needed to begin."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--20",
+      "topic": "productivity",
+      "tags": [
+        "commitment-device",
+        "bad-habits",
+        "planning"
+      ],
+      "title": "Lock in good choices ahead of time with a commitment device",
+      "body": "Clear recommends commitment devices: choices you make now that control your behaviour later. Examples include buying food in single portions, setting a plug timer that cuts off the internet at night, or asking a friend to change your social media password for the week.\n\nThe idea is to use the moment when your intentions are good to make the bad habit hard or impossible when your resolve is weak. It shifts the battle away from tired evenings and moves it to a calm moment when you are thinking clearly.",
+      "apply_it": "Think of the time of day you most often slip. What could you set up now that would block the slip later?",
+      "quiz": {
+        "question": "What is a commitment device?",
+        "options": [
+          "A tool to track calories",
+          "A choice made now that restricts your options later",
+          "A promise you make to yourself in your head",
+          "A reward for finishing a habit"
+        ],
+        "answer": 1,
+        "explanation": "You decide in a clear-headed moment and make the bad option hard when willpower is low."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--21",
+      "topic": "money",
+      "tags": [
+        "automation",
+        "one-time-decisions",
+        "systems"
+      ],
+      "title": "Make one-time choices that keep paying off for years",
+      "body": "Some decisions only need to be made once but shape behaviour for a long time. Clear gives examples such as setting up an automatic transfer into savings, unsubscribing from marketing emails, buying a water filter, or moving the TV out of the bedroom.\n\nEach one removes a repeated decision from your future. Instead of relying on yourself to choose well every day, you let a single setup do the work. When you can't make a habit easy, see if you can automate it or make it the default so good behaviour happens without effort.",
+      "apply_it": "List three one-time actions that would make a good habit automatic, such as a standing savings transfer. Do one this week.",
+      "quiz": {
+        "question": "Why does Clear value one-time actions like automatic savings transfers?",
+        "options": [
+          "They feel exciting",
+          "They replace the need for any goals",
+          "They are required by banks",
+          "One decision keeps producing good behaviour without daily willpower"
+        ],
+        "answer": 3,
+        "explanation": "A single setup removes many future decisions, so the good habit runs by default."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--22",
+      "topic": "psychology",
+      "tags": [
+        "rewards",
+        "immediate-gratification",
+        "satisfaction"
+      ],
+      "title": "Give good habits an immediate reward, because the brain values now",
+      "body": "Clear's cardinal rule of behaviour change is that what is rewarded gets repeated, and what is punished gets avoided. The problem is timing: many good habits pay off later, while bad ones feel good now. Our brains, shaped for a world of immediate returns, give more weight to the present.\n\nSo add a small, immediate payoff to habits whose real benefits are delayed. Clear gives an example of moving money into a savings account labelled for something enjoyable every time you skip a purchase. Make sure the reward fits the identity you want, not one that undoes the habit.",
+      "apply_it": "Choose a habit with a slow payoff. Add a small reward you can give yourself straight after doing it.",
+      "quiz": {
+        "question": "Why do good habits often lose out to bad ones, according to Clear?",
+        "options": [
+          "Good habits pay off later, while bad habits reward us right away",
+          "Good habits are boring",
+          "People are lazy",
+          "Bad habits are easier to track"
+        ],
+        "answer": 0,
+        "explanation": "The brain favours immediate rewards, so delayed benefits need a short-term boost."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--23",
+      "topic": "personal-development",
+      "tags": [
+        "tracking",
+        "measurement",
+        "goodharts-law"
+      ],
+      "title": "Measure your habits, but don't let the number become the goal",
+      "body": "Clear is a fan of habit tracking because a visible record is satisfying and keeps you honest. But he also warns about a trap: when a measure becomes the target, it can push you towards the wrong behaviour.\n\nSomeone tracking only weight might crash diet; someone counting work hours might sit at a desk doing little. He suggests remembering that a number is just one piece of feedback, and adding other signs of progress, such as how your clothes fit or the quality of your work. Track to stay consistent, not to chase a figure at any cost.",
+      "apply_it": "Look at a number you track. Write one other sign of progress you'll pay attention to alongside it.",
+      "quiz": {
+        "question": "What does Clear warn about when tracking habits?",
+        "options": [
+          "Never track anything",
+          "Only track with an app",
+          "When a measure becomes the target, it can lead you astray",
+          "Tracking should be hidden from friends"
+        ],
+        "answer": 2,
+        "explanation": "Measurement helps, but chasing the number itself can distort your behaviour."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--24",
+      "topic": "relationships",
+      "tags": [
+        "accountability",
+        "habit-contract",
+        "commitment"
+      ],
+      "title": "Use an accountability partner to make skipping costly",
+      "body": "Clear suggests making bad habits unsatisfying by adding an immediate cost, and one way is accountability. Knowing someone is watching makes it uncomfortable to skip, because we care what others think of us.\n\nHe describes a habit contract: a written agreement stating what you will do, what happens if you don't, and who will hold you to it. Even a simple version, like texting a friend after each workout or agreeing to pay a small forfeit if you miss, adds a social cost that helps on days when your own commitment wobbles.",
+      "apply_it": "Ask one person to be your accountability partner for a habit. Agree how you'll report in and what happens if you miss.",
+      "quiz": {
+        "question": "What is the purpose of a habit contract?",
+        "options": [
+          "To legally punish yourself",
+          "To prove you are disciplined to strangers",
+          "To replace the habit entirely",
+          "To add a clear, social cost to breaking your habit"
+        ],
+        "answer": 3,
+        "explanation": "Making a commitment to others adds an immediate cost that makes skipping less appealing."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--25",
+      "topic": "personal-development",
+      "tags": [
+        "motivation",
+        "challenge",
+        "flow"
+      ],
+      "title": "Work at the edge of your ability to stay motivated",
+      "body": "Clear describes the Goldilocks Rule: we feel most motivated when a task is just right in difficulty, not so easy it is boring, not so hard it is crushing. Tasks right at the edge of our current ability keep us engaged.\n\nOnce a habit is established, you can use this to keep it interesting by raising the challenge a little at a time. If you are bored, step it up; if you keep failing, scale it back. Matching difficulty to skill is what keeps people playing a game for hours, and the same applies to work and learning.",
+      "apply_it": "Rate a current habit as too easy, too hard or just right. Adjust its difficulty slightly to land in the middle.",
+      "quiz": {
+        "question": "What does the Goldilocks Rule say about motivation?",
+        "options": [
+          "We are most motivated by tasks just at the edge of our ability",
+          "We are most motivated by easy tasks",
+          "We are most motivated by the hardest tasks",
+          "Difficulty does not affect motivation"
+        ],
+        "answer": 0,
+        "explanation": "Tasks of manageable difficulty keep us engaged, avoiding both boredom and overwhelm."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--26",
+      "topic": "personal-development",
+      "tags": [
+        "consistency",
+        "boredom",
+        "mastery"
+      ],
+      "title": "Keep showing up even when the habit gets boring",
+      "body": "Clear argues that the biggest threat to success is often not failure but boredom. As a habit becomes routine, it loses its novelty, and people start looking for something new and exciting.\n\nWhat separates professionals from amateurs, he says, is that professionals stick to the schedule even when they don't feel like it. They may not enjoy every session, but they find a way to do the work. Accepting that much of improvement is repetitive, and continuing anyway, is how lasting results are built.",
+      "apply_it": "Next time a habit feels boring, do a minimal version anyway and note that boredom is part of the process.",
+      "quiz": {
+        "question": "What does Clear identify as a major threat to sticking with good habits?",
+        "options": [
+          "Too much success",
+          "Having too much free time",
+          "Boredom once the novelty wears off",
+          "Tracking progress"
+        ],
+        "answer": 2,
+        "explanation": "As habits become routine they feel dull, and many people quit for something new."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--27",
+      "topic": "personal-development",
+      "tags": [
+        "deliberate-practice",
+        "reflection",
+        "review"
+      ],
+      "title": "Combine habits with regular review to keep improving",
+      "body": "Habits let you do things without thinking, Clear notes, but that same automatic mode can make you stop paying attention to small errors. Mastery comes from habits plus deliberate practice: once a skill is automatic, you work on the next piece.\n\nHe recommends regular reflection to catch drift. He describes his own yearly review, looking at what went well and what didn't, and a check on whether he is living by his values. Even a short monthly check helps you notice when a habit has stalled or no longer serves you.",
+      "apply_it": "Set a monthly reminder to ask: what went well, what didn't, and what will I adjust next month?",
+      "quiz": {
+        "question": "Why does Clear recommend reflection and review?",
+        "options": [
+          "Because habits always get worse",
+          "Because automatic habits can hide small mistakes and stalled progress",
+          "Because reviews replace habits",
+          "Because it is required for tracking apps"
+        ],
+        "answer": 1,
+        "explanation": "Automatic behaviour can stop improving; regular review keeps you learning and adjusting."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--28",
+      "topic": "personal-development",
+      "tags": [
+        "strengths",
+        "personality",
+        "career"
+      ],
+      "title": "Choose habits and arenas that suit your natural strengths",
+      "body": "Clear acknowledges that people differ in body, personality and interests, and that these differences affect which habits come easily. Rather than seeing this as a limit, he suggests choosing the right field: pick games where the odds are in your favour.\n\nAsk what feels like fun to you but work to others, what makes you lose track of time, and where you get better results than most people around you. If you can't easily be the best in an established area, combine skills to create a niche. Natural strengths don't replace effort, but they tell you where effort pays off most.",
+      "apply_it": "Write down one activity that feels easy to you but hard for others. How could you build a habit around it?",
+      "quiz": {
+        "question": "What does Clear suggest about natural differences between people?",
+        "options": [
+          "They make habits pointless",
+          "They help you choose areas where your effort pays off most",
+          "They decide destiny, so effort doesn't matter",
+          "Everyone should do the same habits"
+        ],
+        "answer": 1,
+        "explanation": "Differences don't set your fate, but they point to areas where you have an edge."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--29",
+      "topic": "psychology",
+      "tags": [
+        "identity",
+        "flexibility",
+        "change"
+      ],
+      "title": "Don't let one role become your whole identity",
+      "body": "Identity can power habits, but Clear also warns about its downside. The more tightly you define yourself by a single role, such as 'I'm an athlete' or 'I'm the smart one', the more threatened you feel when that role changes through injury, retirement or failure.\n\nHe suggests describing yourself in terms of the qualities behind the role. Instead of 'I'm a soldier', think 'I'm disciplined and dependable in a team'. That kind of identity can move with you into new situations. Hold your identity in a way that lets you grow rather than one you have to defend.",
+      "apply_it": "Write a role you strongly identify with. Then rewrite it as a quality that could carry into any job or stage of life.",
+      "quiz": {
+        "question": "What risk does Clear see in tying your identity to one role?",
+        "options": [
+          "It makes you too flexible",
+          "There is no risk",
+          "It makes habits easier",
+          "You struggle to adapt when that role changes or ends"
+        ],
+        "answer": 3,
+        "explanation": "A narrow identity can crack when circumstances change; a quality-based one adapts."
+      }
+    },
+    {
+      "id": "atomic-habits-clear--30",
+      "topic": "productivity",
+      "tags": [
+        "decisions",
+        "choices",
+        "small-moments"
+      ],
+      "title": "Watch for small moments that set the course for the next hours",
+      "body": "Clear points out that certain small choices act like forks in the road. Whether you put on your running shoes or sit on the sofa after work, whether you open your laptop or your phone first, can decide how the next few hours unfold.\n\nHe calls these decisive moments. Because each one shapes so much of what follows, it's worth identifying yours and making the good path easy at those points. The day is not won by heroic effort but by getting a few of these pivots right.",
+      "apply_it": "Identify one decisive moment in your day, such as arriving home. Plan the first action you'll take at that moment.",
+      "quiz": {
+        "question": "What does Clear mean by 'decisive moments'?",
+        "options": [
+          "Small choices that steer what you do for the next stretch of time",
+          "Major life decisions like marriage",
+          "Moments when you feel very motivated",
+          "Deadlines set by your boss"
+        ],
+        "answer": 0,
+        "explanation": "Small forks in the day shape what follows, so they deserve deliberate attention."
+      }
     }
   ]
 }

@@ -347,6 +347,24 @@ adapter = "summary"
 url = "https://www.facebook.com/StriveMasiyiwa"
 licence = "original-summary"
 
+[[source]]
+id = "diary-of-anais-nin"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/The_Diary_of_Ana%C3%AFs_Nin"
+licence = "original-summary"
+
+[[source]]
+id = "in-favor-of-the-sensitive-man-nin"
+adapter = "summary"
+url = "https://openlibrary.org/books/OL22992601M/In_favor_of_the_sensitive_man_and_other_essays"
+licence = "original-summary"
+
+[[source]]
+id = "novel-of-the-future-nin"
+adapter = "summary"
+url = "https://www.ohioswallow.com/9780804011501/the-novel-of-the-future/"
+licence = "original-summary"
+
 # ---------------------------------------------------------------- Candidates (not used yet)
 # OpenStax: the plan assumed CC BY 4.0, but the current GitHub sources of these books say
 # CC BY-NC-SA 4.0 (checked 2026-10-10), so they are excluded. Kept here so `licences` can

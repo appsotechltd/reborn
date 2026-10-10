@@ -131,6 +131,584 @@
         "answer": 1,
         "explanation": "Focusing on the behaviour and its effect keeps the conversation solvable."
       }
+    },
+    {
+      "id": "emotional-intelligence-goleman--06",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "emotional-intelligence",
+        "self-awareness",
+        "empathy"
+      ],
+      "title": "Emotional intelligence is a set of five learnable skills",
+      "body": "Goleman builds on a model by the psychologists Peter Salovey and John Mayer, who described emotional intelligence as a group of abilities. He summarises them in five areas: knowing your own emotions, managing them, motivating yourself, recognising emotions in others, and handling relationships.\n\nThe useful part of this map is that each area is a skill, not a fixed personality type. Someone can be good at reading others but poor at calming themselves, or the reverse. Seeing the parts separately helps you work out which one to practise next.",
+      "apply_it": "Rate yourself from 1 to 5 on each of the five areas. Pick the lowest and choose one small way to practise it this week.",
+      "quiz": {
+        "question": "Which of these is one of the five areas of emotional intelligence Goleman describes?",
+        "options": [
+          "Memorising facts quickly",
+          "Physical fitness",
+          "Motivating yourself",
+          "Mathematical reasoning"
+        ],
+        "answer": 2,
+        "explanation": "The five areas are self-awareness, managing emotions, self-motivation, empathy and handling relationships."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--07",
+      "topic": "psychology",
+      "tags": [
+        "iq",
+        "success",
+        "emotional-intelligence"
+      ],
+      "title": "IQ isn't the whole story, but emotional skills aren't the whole story either",
+      "body": "Goleman starts from a puzzle: people with high IQs don't always do well in life, and people with modest IQs sometimes do very well. He argues that IQ explains only part of the difference, and that much of the rest comes from other factors, from family background and luck to emotional and social skills.\n\nThe book is sometimes summed up as 'EQ matters more than IQ', but that's an overstatement. Researchers still debate how to measure emotional intelligence and how much it predicts. A fair reading is that thinking ability and emotional skills both matter, and the emotional ones are easier to improve than many people assume.",
+      "apply_it": "Think of someone you admire at work or in your community. Which of their strengths are about intellect, and which are about handling people and feelings?",
+      "quiz": {
+        "question": "What is a fair reading of Goleman's argument about IQ?",
+        "options": [
+          "IQ explains only part of success; emotional skills are among other factors that matter",
+          "IQ doesn't matter at all",
+          "Emotional intelligence has been proven to matter more than IQ",
+          "Success depends only on luck"
+        ],
+        "answer": 0,
+        "explanation": "Goleman argues IQ leaves much unexplained; the popular 'EQ beats IQ' slogan goes further than the evidence."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--08",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "mood",
+        "creativity",
+        "problem-solving"
+      ],
+      "title": "A good mood helps you think more flexibly",
+      "body": "Goleman describes research, including work by the psychologist Alice Isen, showing that people in a positive mood tend to think more flexibly and find more creative solutions to problems. Feeling good widens the options people consider, while anxiety and gloom narrow thinking.\n\nThis doesn't mean forcing cheerfulness. It suggests that managing your mood is part of thinking well. Before a hard problem or a tense meeting, it can help to do something that genuinely lifts you a little, such as a short walk, a laugh with a colleague or remembering a recent success.",
+      "apply_it": "Before tackling a tricky problem today, spend two minutes on something that lifts your mood, then start.",
+      "quiz": {
+        "question": "What does the research Goleman describes suggest about positive moods?",
+        "options": [
+          "They make people careless and lazy",
+          "They tend to help flexible, creative thinking",
+          "They have no effect on thinking",
+          "They only help with physical tasks"
+        ],
+        "answer": 1,
+        "explanation": "Good moods broaden the options people consider when solving problems."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--09",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "sadness",
+        "low-mood",
+        "coping"
+      ],
+      "title": "Brooding deepens a low mood; doing something small and active helps lift it",
+      "body": "Goleman reviews research, including Dianne Tice's studies of how people try to lift their moods. Going over and over what's wrong, alone, tends to keep sadness going. Some approaches tend to work better: physical activity, achieving a small, easy win, doing something kind for someone else, and looking at the situation from a different, more hopeful angle.\n\nThis is about everyday sadness, not clinical depression. Persistent low mood, or feeling unable to cope, is a reason to reach out to someone you trust or a health professional.",
+      "apply_it": "Next time you're feeling down, try one active step: a brisk walk, finishing a small task, or helping someone with something.",
+      "quiz": {
+        "question": "Which approach tends to keep sadness going, according to the research Goleman describes?",
+        "options": [
+          "Taking a brisk walk",
+          "Helping someone else",
+          "Achieving a small, easy success",
+          "Brooding over what's wrong, alone"
+        ],
+        "answer": 3,
+        "explanation": "Rumination feeds a low mood, while activity, small wins and helping others tend to lift it."
+      },
+      "health": true
+    },
+    {
+      "id": "emotional-intelligence-goleman--10",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-control",
+        "delayed-gratification",
+        "children"
+      ],
+      "title": "Learning to wait for a bigger reward is a skill, but the marshmallow test was overstated",
+      "body": "Goleman highlights Walter Mischel's 'marshmallow test', in which four-year-olds could eat one treat now or get two if they waited. He reports that children who waited tended to do better years later, and presents impulse control as a 'master aptitude'.\n\nLater research suggests caution. A larger study in 2018 found the link much weaker once children's family background and early abilities were taken into account. Being able to delay gratification is still useful, but it isn't a fixed trait that seals a child's future. Mischel's own work showed that strategies like distracting yourself make waiting easier.",
+      "apply_it": "When you're tempted by something now that undermines a bigger goal, use a distraction strategy: move it out of sight, or do something else for ten minutes.",
+      "quiz": {
+        "question": "What did later research find about the marshmallow test?",
+        "options": [
+          "The link to later success was much weaker once background was considered",
+          "It perfectly predicts adult success",
+          "Children cannot learn to wait",
+          "Waiting makes children less successful"
+        ],
+        "answer": 0,
+        "explanation": "A larger 2018 study found much weaker effects after accounting for family background and early ability."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--11",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anxiety",
+        "performance",
+        "stress"
+      ],
+      "title": "Some nerves sharpen performance; too much anxiety crowds out thinking",
+      "body": "Goleman explains that anxiety interferes with thinking because worry takes up the mental space we need for the task at hand. A student consumed by fear of failing has less attention left for the exam itself.\n\nBut no arousal at all isn't ideal either. He describes the familiar pattern in which performance improves with a moderate level of tension, then falls away when stress becomes overwhelming. The aim isn't to eliminate nerves, but to keep them at a level that keeps you alert rather than flooding you.",
+      "apply_it": "Before your next stressful task, take three slow breaths and name one step you'll take first. Bring the nerves down to 'alert', not 'flooded'.",
+      "quiz": {
+        "question": "How does Goleman describe the link between anxiety and performance?",
+        "options": [
+          "Any anxiety improves performance",
+          "Anxiety has no effect on thinking",
+          "Moderate tension can help, but too much anxiety crowds out thinking",
+          "Only zero stress allows good performance"
+        ],
+        "answer": 2,
+        "explanation": "Performance tends to peak at moderate arousal and falls when anxiety takes over."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--12",
+      "topic": "personal-development",
+      "tags": [
+        "hope",
+        "goals",
+        "motivation"
+      ],
+      "title": "Hope is a skill: set goals and find more than one way to reach them",
+      "body": "Goleman draws on the psychologist C. R. Snyder's research on hope. In Snyder's sense, hope isn't just wishing. It means believing you have both the will and the ways to reach your goals. People high in hope tend to motivate themselves, find alternative routes when one is blocked, and break big tasks into smaller, manageable pieces.\n\nGoleman notes that hope helps people avoid sinking into anxiety or defeat when things get hard. Because it rests on practical habits, it can be strengthened.",
+      "apply_it": "Pick one goal. Write two different routes to reach it, so you have a plan B if the first one gets blocked.",
+      "quiz": {
+        "question": "What does hope mean in Snyder's research as Goleman describes it?",
+        "options": [
+          "Wishing for good luck",
+          "Believing you have the will and the ways to reach your goals",
+          "Expecting others to solve problems for you",
+          "Avoiding difficult goals"
+        ],
+        "answer": 1,
+        "explanation": "Hope combines motivation with practical routes to the goal."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--13",
+      "topic": "personal-development",
+      "tags": [
+        "optimism",
+        "setbacks",
+        "explanatory-style"
+      ],
+      "title": "Explain setbacks as specific and fixable, not permanent and personal",
+      "body": "Goleman describes Martin Seligman's work on optimism. What matters is how people explain their failures. Optimists tend to see a setback as caused by something specific that can be changed: 'I didn't prepare well for that one.' Pessimists tend to see it as permanent and all-pervasive: 'I'm hopeless at this.'\n\nSeligman found that optimistic insurance salespeople sold more and were less likely to quit than pessimistic ones, since they kept going after rejection. Goleman stresses that this kind of optimism is realistic, not denial.",
+      "apply_it": "After your next setback, write one sentence explaining it as specific and changeable: 'This time, X went wrong; next time I'll try Y.'",
+      "quiz": {
+        "question": "How do optimists tend to explain failures in Seligman's research?",
+        "options": [
+          "As proof of permanent personal flaws",
+          "As entirely someone else's fault every time",
+          "As events that can never be understood",
+          "As caused by something specific that can be changed"
+        ],
+        "answer": 3,
+        "explanation": "Seeing setbacks as specific and fixable keeps people trying."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--14",
+      "topic": "productivity",
+      "tags": [
+        "flow",
+        "focus",
+        "challenge"
+      ],
+      "title": "You do your best work when a task's challenge matches your skill",
+      "body": "Goleman describes 'flow', the state studied by Mihaly Csikszentmihalyi, in which people become so absorbed in an activity that they lose track of time and worry fades. Flow is emotional intelligence at its best, he suggests: emotions are focused and aligned with the task.\n\nFlow tends to happen when a task stretches you a little beyond your current skill: too easy and you get bored, too hard and you get anxious. Goleman suggests schools and workplaces could use this, helping people find work that matches their abilities and gradually raising the challenge.",
+      "apply_it": "Notice the last time you lost track of time while working. What made it absorbing? Look for one way to make today's main task a bit more challenging or a bit easier.",
+      "quiz": {
+        "question": "When does flow tend to happen, according to Goleman?",
+        "options": [
+          "When a task stretches your skills slightly",
+          "When a task is extremely easy",
+          "When you're very anxious",
+          "When you're multitasking"
+        ],
+        "answer": 0,
+        "explanation": "Flow sits between boredom and anxiety, where challenge just exceeds current skill."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--15",
+      "topic": "relationships",
+      "tags": [
+        "emotional-contagion",
+        "mood",
+        "leadership"
+      ],
+      "title": "Moods are contagious, so the feeling you bring spreads to others",
+      "body": "Goleman explains that emotions pass between people, often without anyone noticing. In conversation we unconsciously mirror each other's expressions, gestures and tone, and with them, feelings. A tense person can make a room tense; a calm, warm one can settle it.\n\nUsually the more expressive or powerful person sets the emotional tone, which is why leaders, parents and hosts have outsized influence on the mood of a group. Being aware of this gives you a choice: you can be the one who spreads panic or irritation, or the one who steadies things.",
+      "apply_it": "Before your next meeting or family meal, check your own mood. Decide what feeling you want to bring into the room.",
+      "quiz": {
+        "question": "According to Goleman, who usually sets the emotional tone in an interaction?",
+        "options": [
+          "The quietest person",
+          "Whoever arrived last",
+          "The more expressive or powerful person",
+          "Nobody; moods don't spread"
+        ],
+        "answer": 2,
+        "explanation": "Emotions pass between people, and the more expressive or powerful person usually leads."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--16",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "display-rules",
+        "culture",
+        "expression"
+      ],
+      "title": "Every family and culture has unspoken rules about showing feelings",
+      "body": "Goleman draws on the work of Paul Ekman, who studied 'display rules': the social norms about which feelings it's acceptable to show, when and to whom. We learn them early. People may play down their emotions in front of elders or bosses, exaggerate them to make a point, or show one feeling in place of another, such as smiling when hurt.\n\nKnowing the display rules of a setting is part of social skill. Recognising your own rules also helps: some people were taught that anger or sadness should never show, and may need permission to admit those feelings, at least to themselves.",
+      "apply_it": "Think about what you learned growing up about showing anger, sadness or fear. Which rule still helps you, and which might be holding you back?",
+      "quiz": {
+        "question": "What are 'display rules'?",
+        "options": [
+          "Rules for arranging a shop window",
+          "Social norms about which feelings to show, when and to whom",
+          "Laws about public behaviour",
+          "Instructions for reading body language"
+        ],
+        "answer": 1,
+        "explanation": "Display rules are the learned norms that shape how we express emotion."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--17",
+      "topic": "relationships",
+      "tags": [
+        "groups",
+        "belonging",
+        "social-skills"
+      ],
+      "title": "To join a group, first tune in to what it's already doing",
+      "body": "Goleman describes research on how children try to join others at play. Children who are rejected often barge in, change the subject or try to take control straight away. Those who are welcomed tend to watch first, get a feel for what the group is doing, and then join in on the group's terms before offering their own ideas.\n\nThe lesson works for adults too, whether you're joining a new team, a conversation at an event or a family gathering. Paying attention to the group's rhythm before trying to steer it signals respect and makes acceptance much more likely.",
+      "apply_it": "Next time you join a new group or conversation, listen for a few minutes first. Join in on their topic before raising your own.",
+      "quiz": {
+        "question": "How do well-accepted children tend to join a group at play?",
+        "options": [
+          "They take charge immediately",
+          "They change the game to suit themselves",
+          "They wait for an adult to introduce them",
+          "They watch first, then join in on the group's terms"
+        ],
+        "answer": 3,
+        "explanation": "Tuning in before acting shows respect and earns acceptance."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--18",
+      "topic": "psychology",
+      "tags": [
+        "decision-making",
+        "emotions",
+        "intuition"
+      ],
+      "title": "Feelings aren't the enemy of good decisions; they're part of making them",
+      "body": "Goleman describes the neurologist Antonio Damasio's patients who had damage to brain circuits linking emotion and reasoning. Their intelligence seemed intact, yet they made poor decisions in everyday life and could deliberate endlessly over simple choices, such as when to book an appointment.\n\nDamasio concluded that feelings help us weigh options by marking some as good or bad, based on past experience. Goleman's point is that the aim isn't to remove emotion from decisions but to be aware of it. Gut feelings can carry useful information, as long as you notice them and question them.",
+      "apply_it": "For a decision you're facing, write down how each option makes you feel. Ask what experience might be behind that feeling.",
+      "quiz": {
+        "question": "What did Damasio's patients show about emotion and decisions?",
+        "options": [
+          "Without links to emotion, people struggled to make everyday decisions",
+          "Emotion always leads to bad decisions",
+          "Intelligence alone is enough for good decisions",
+          "Emotional people can't reason"
+        ],
+        "answer": 0,
+        "explanation": "Losing emotional input left them able to reason but unable to decide well."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--19",
+      "topic": "relationships",
+      "tags": [
+        "contempt",
+        "couples",
+        "conflict"
+      ],
+      "title": "Contempt, defensiveness and shutting down poison relationships",
+      "body": "Drawing on John Gottman's research with couples, Goleman describes a pattern that predicts serious trouble. It starts with harsh criticism, and can escalate to contempt: mockery, insults, sneering or eye-rolling that say 'I'm better than you'. Contempt is especially damaging. The other person then becomes defensive, and eventually one partner stonewalls, shutting down and withdrawing completely.\n\nEach step makes repair harder. Noticing these habits in yourself, especially the small signs of contempt, is a first step to stopping them before they become the normal way you argue.",
+      "apply_it": "In your next disagreement, watch for one sign of contempt in yourself, such as sarcasm or an eye-roll. Replace it with a plain statement of what you need.",
+      "quiz": {
+        "question": "Which behaviour does Goleman, drawing on Gottman, describe as especially damaging?",
+        "options": [
+          "Making a specific complaint",
+          "Taking a short break to calm down",
+          "Contempt, such as mockery and sneering",
+          "Asking a question"
+        ],
+        "answer": 2,
+        "explanation": "Contempt signals disgust and superiority, which deeply wounds a relationship."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--20",
+      "topic": "relationships",
+      "tags": [
+        "listening",
+        "validation",
+        "conflict"
+      ],
+      "title": "In an argument, show you've heard the other side before defending yours",
+      "body": "Goleman suggests that couples, and anyone in conflict, argue better when they listen without getting defensive. Instead of preparing a rebuttal, try to hear the feeling behind the complaint, and reflect it back: 'You felt let down when I didn't call.'\n\nThis isn't the same as agreeing. It shows the other person they've been understood, which often lowers the temperature enough to talk about solutions. Goleman notes that even small signs of acknowledgement, such as taking responsibility for part of the problem, can turn a fight into a conversation.",
+      "apply_it": "In your next disagreement, before giving your side, repeat back what you heard the other person feel and why. Ask if you got it right.",
+      "quiz": {
+        "question": "What does Goleman suggest doing in an argument before defending your own view?",
+        "options": [
+          "Prepare your strongest counter-argument",
+          "Reflect back the other person's feelings to show you understood",
+          "List their past mistakes",
+          "Leave without saying anything"
+        ],
+        "answer": 1,
+        "explanation": "Showing understanding calms things down so the real problem can be discussed."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--21",
+      "topic": "business",
+      "tags": [
+        "feedback",
+        "management",
+        "criticism"
+      ],
+      "title": "Give criticism that is specific, timely and points to a solution",
+      "body": "Goleman calls it 'artful critique'. Many managers either avoid giving feedback until frustration explodes, or deliver it as a vague attack on someone's character. Both damage motivation.\n\nDrawing on the psychologist Harry Levinson, he suggests a better approach: be specific about what happened and why it matters; offer ideas for fixing it; give the feedback in person and privately where possible; and stay alert to how the other person is feeling. Good feedback is about the work and the future, not about blame.",
+      "apply_it": "Next time you need to correct someone, prepare three things: the specific issue, its effect, and one suggestion for doing it differently.",
+      "quiz": {
+        "question": "Which is part of the 'artful critique' Goleman describes?",
+        "options": [
+          "Saving up complaints and raising them all at once",
+          "Commenting on the person's character",
+          "Giving feedback by public announcement",
+          "Being specific and offering a way to fix the problem"
+        ],
+        "answer": 3,
+        "explanation": "Specific, solution-focused, private feedback helps people improve without feeling attacked."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--22",
+      "topic": "business",
+      "tags": [
+        "teams",
+        "collaboration",
+        "harmony"
+      ],
+      "title": "A team's results depend on how well members work together, not just their talent",
+      "body": "Goleman describes research by Wendy Williams and Robert Sternberg on 'group IQ'. When groups worked on tasks together, the key to how well they did wasn't simply the average ability of members. Social harmony mattered a lot: groups that got along and drew everyone in did better.\n\nA single member who dominated, was overly eager to impress or didn't participate could pull a group's performance down. For anyone building a team, this suggests paying attention to how people interact, not just recruiting the brightest individuals.",
+      "apply_it": "In your next group task, invite the quietest person to share their view, and notice whether anyone is dominating the discussion.",
+      "quiz": {
+        "question": "What did the 'group IQ' research Goleman describes find?",
+        "options": [
+          "Only members' average IQ mattered",
+          "Social harmony strongly affected how well groups performed",
+          "Groups always do worse than individuals",
+          "The most talkative member always helped"
+        ],
+        "answer": 1,
+        "explanation": "How members worked together mattered, not just their individual talent."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--23",
+      "topic": "business",
+      "tags": [
+        "networking",
+        "relationships",
+        "careers"
+      ],
+      "title": "Build your network before you need it",
+      "body": "Goleman describes a study by Robert Kelley and Janet Caplan of engineers at Bell Labs. The star performers weren't simply those with the highest IQs. One key difference was that stars had built good relationships with a network of colleagues before they needed help. When a problem came up, they got quick answers.\n\nOthers only reached out once they were stuck, and often waited a long time for a reply from people they barely knew. The lesson applies to any career: helpful relationships are easier to call on when they've been built over time, through trust and generosity.",
+      "apply_it": "This week, check in with one colleague or contact you haven't spoken to in a while, with no request attached.",
+      "quiz": {
+        "question": "What set the star engineers at Bell Labs apart, according to Goleman?",
+        "options": [
+          "They had built networks of colleagues before they needed help",
+          "They had much higher IQs",
+          "They worked entirely alone",
+          "They only contacted people in emergencies"
+        ],
+        "answer": 0,
+        "explanation": "Stars cultivated relationships in advance, so help came quickly when needed."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--24",
+      "topic": "business",
+      "tags": [
+        "prejudice",
+        "workplace",
+        "leadership"
+      ],
+      "title": "You may not erase prejudice quickly, but you can stop it shaping behaviour",
+      "body": "Goleman discusses prejudice at work. He notes research suggesting that biases learned early are hard to unlearn, but people's actions are strongly shaped by the norms around them. When leaders and colleagues make clear that slurs, demeaning jokes and unfair treatment are not acceptable, such behaviour drops.\n\nHe argues that speaking up matters: staying silent when someone makes a demeaning remark signals that it's acceptable. A workplace that values people from different backgrounds also benefits from the range of views they bring.",
+      "apply_it": "Decide in advance what you'll say if someone makes a demeaning joke near you, such as 'That's not funny to me', so you're ready to speak up.",
+      "quiz": {
+        "question": "What does Goleman suggest about reducing prejudiced behaviour at work?",
+        "options": [
+          "It can be removed with one training session",
+          "Silence is the best response to slurs",
+          "Clear norms and people speaking up reduce it",
+          "It only matters for senior leaders"
+        ],
+        "answer": 2,
+        "explanation": "Even when old biases persist, clear norms and challenge from others reduce prejudiced actions."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--25",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "social-support",
+        "wellbeing"
+      ],
+      "title": "Emotional wellbeing and close support are part of looking after your health",
+      "body": "Goleman reviews research from the early 1990s suggesting links between emotions and physical health. Long-term stress, hostility and depression were associated with poorer health outcomes, while strong relationships and emotional support appeared protective. Isolation, by contrast, was itself linked to higher health risks.\n\nHe argues that caring for people's emotions, including patients in hospital, is part of good care, not an extra. Some of this research was early and has been refined since, but the general message holds: managing stress and staying connected support wellbeing. It's general information, not a substitute for medical advice.",
+      "apply_it": "Think of one person you've lost touch with who matters to you. Call or message them this week.",
+      "quiz": {
+        "question": "What did the research Goleman reviews suggest about social support?",
+        "options": [
+          "Relationships have no link to health",
+          "Isolation is better for health",
+          "Only physical factors affect health",
+          "Strong relationships appeared protective for health"
+        ],
+        "answer": 3,
+        "explanation": "Emotional support was associated with better health, and isolation with higher risks."
+      },
+      "health": true
+    },
+    {
+      "id": "emotional-intelligence-goleman--26",
+      "topic": "relationships",
+      "tags": [
+        "parenting",
+        "emotion-coaching",
+        "children"
+      ],
+      "title": "Treat a child's upset as a chance to teach about feelings",
+      "body": "Goleman describes John Gottman's research on 'emotion coaching'. Some parents ignore children's feelings, some are too permissive, and some are dismissive or harsh. Emotion-coaching parents take a different approach: they notice a child's upset, help the child name the feeling, accept it, and then help them find ways to deal with it.\n\nIn Gottman's studies, children of emotion-coaching parents tended to calm themselves more easily and get on better with other children. The emotion isn't the problem to be stopped; it's a moment to teach.",
+      "apply_it": "Next time a child (or anyone) is upset, try: 'You seem really frustrated. What happened?' before offering a solution.",
+      "quiz": {
+        "question": "What do emotion-coaching parents do when a child is upset?",
+        "options": [
+          "Help the child name and accept the feeling, then find ways to handle it",
+          "Tell the child to stop crying",
+          "Ignore the feeling until it passes",
+          "Give the child whatever they want"
+        ],
+        "answer": 0,
+        "explanation": "Emotion coaching treats feelings as a teaching moment, not something to suppress."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--27",
+      "topic": "personal-development",
+      "tags": [
+        "temperament",
+        "shyness",
+        "change"
+      ],
+      "title": "Your inborn temperament is a starting point, not your destiny",
+      "body": "Goleman describes Jerome Kagan's research on timid children. Some children are born more easily alarmed by new people and situations. Yet many of them became less fearful as they grew up. One factor Kagan observed was how parents responded: those who gently but firmly encouraged their children to face small challenges, rather than shielding them from every discomfort, tended to help them grow bolder.\n\nGoleman's message is that experience can reshape emotional habits. Temperament sets tendencies, but practice and support can change how we respond.",
+      "apply_it": "Think of a situation that makes you nervous. Plan one small, manageable step towards it this week, and notice how it feels afterwards.",
+      "quiz": {
+        "question": "What helped timid children become bolder in Kagan's research?",
+        "options": [
+          "Being protected from every new situation",
+          "Parents gently encouraging them to face small challenges",
+          "Being forced into frightening situations suddenly",
+          "Nothing; temperament never changes"
+        ],
+        "answer": 1,
+        "explanation": "Gentle encouragement to face manageable challenges helped many shy children grow less fearful."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--28",
+      "topic": "health",
+      "tags": [
+        "trauma",
+        "recovery",
+        "support"
+      ],
+      "title": "The brain can relearn after trauma, especially with support",
+      "body": "Goleman discusses how frightening experiences can leave a lasting mark on the brain's alarm system, so that reminders set off fear long after the danger has passed. He emphasises that recovery is possible: the emotional brain can relearn.\n\nDrawing on the psychiatrist Judith Herman, he outlines a general path to healing: first regaining a sense of safety, then retelling and making sense of what happened and grieving what was lost, and finally rebuilding normal life. This is often done with trained professionals. If you're struggling after trauma, reaching out for support is a strong step, not a weakness.",
+      "apply_it": "If past trauma still affects you, take one step towards support, such as talking to someone you trust or finding a counselling service.",
+      "quiz": {
+        "question": "What is usually the first step in the healing path Goleman describes?",
+        "options": [
+          "Forgetting the event completely",
+          "Avoiding all reminders forever",
+          "Regaining a sense of safety",
+          "Returning to normal life immediately"
+        ],
+        "answer": 2,
+        "explanation": "Recovery generally starts with safety, then making sense of the event, then rebuilding life."
+      },
+      "health": true
+    },
+    {
+      "id": "emotional-intelligence-goleman--29",
+      "topic": "personal-development",
+      "tags": [
+        "education",
+        "emotional-literacy",
+        "schools"
+      ],
+      "title": "Emotional skills can be taught, at school and at home",
+      "body": "In the final part of the book, Goleman argues that emotional and social skills should be taught as deliberately as reading and maths. He describes school programmes, such as a 'Self Science' class, where children learn to name feelings, manage impulses, resolve conflicts and understand others.\n\nHe reports that such programmes were linked with improvements in behaviour and in how students got along, and later research on social and emotional learning has generally supported benefits, though results vary by programme. The broader point: these skills aren't simply inborn; they can be practised.",
+      "apply_it": "Pick one emotional skill, such as naming feelings or calming down, and teach it to a child or practise it with a friend this week.",
+      "quiz": {
+        "question": "What does Goleman argue about emotional skills in education?",
+        "options": [
+          "They are fixed at birth",
+          "They only matter outside school",
+          "They should be left to chance",
+          "They can and should be taught deliberately"
+        ],
+        "answer": 3,
+        "explanation": "Goleman calls for teaching emotional literacy as part of education."
+      }
+    },
+    {
+      "id": "emotional-intelligence-goleman--30",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-control",
+        "problem-solving",
+        "children"
+      ],
+      "title": "When upset, use a stoplight: stop, think, then act",
+      "body": "Goleman describes a simple tool used in a social development programme in schools: a stoplight. At red, stop, calm down and think before you act. At yellow, say what the problem is and how you feel, set a positive goal, think of several possible solutions and their consequences. At green, go ahead and try the best plan.\n\nIt was designed for children, but it works for adults in a heated moment too. The steps slow down the emotional rush and give the thinking part of the brain time to join in.",
+      "apply_it": "Write 'Red: stop. Yellow: think. Green: go.' on a note and keep it where you might need it, such as your phone or desk.",
+      "quiz": {
+        "question": "What happens at the 'yellow' stage of the stoplight tool?",
+        "options": [
+          "Say the problem, set a goal and think of possible solutions",
+          "Act on your first impulse",
+          "Walk away for good",
+          "Do nothing until someone else decides"
+        ],
+        "answer": 0,
+        "explanation": "Yellow is for naming the problem and feelings, and weighing solutions before acting."
+      }
     }
   ]
 }

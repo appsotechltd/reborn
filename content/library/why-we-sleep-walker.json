@@ -136,6 +136,606 @@
         "explanation": "Sleep supports both taking in new information and consolidating it."
       },
       "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--06",
+      "topic": "health",
+      "tags": [
+        "sleep-pressure",
+        "circadian-rhythm",
+        "adenosine"
+      ],
+      "title": "Two forces decide when you feel sleepy",
+      "body": "Walker explains that two systems work together to time your sleep. One is your internal 24-hour clock, which raises and lowers alertness across the day. The other is sleep pressure: a chemical called adenosine builds up in the brain the longer you stay awake, making you steadily drowsier until sleep clears it away.\n\nWhen the two line up, falling asleep is easy. When they clash, for example after a long late nap or a night flight, you can feel wired at bedtime or groggy at noon. Knowing both helps explain why timing matters as much as total hours.",
+      "apply_it": "Notice when you feel sleepiest today, and ask whether it's your body clock, a long stretch awake, or both.",
+      "quiz": {
+        "question": "According to Walker, what builds up in the brain the longer you stay awake?",
+        "options": [
+          "Melatonin, released by bright daylight",
+          "Caffeine, produced naturally by the body",
+          "Adenosine, which creates sleep pressure",
+          "Adrenaline, which calms the mind"
+        ],
+        "answer": 2,
+        "explanation": "Adenosine accumulates during waking hours and creates the pressure to sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--07",
+      "topic": "health",
+      "tags": [
+        "chronotype",
+        "body-clock",
+        "night-owls"
+      ],
+      "title": "Night owls and morning larks are partly built in",
+      "body": "Walker describes chronotypes: some people's body clocks run early and others run late, and genes play a substantial part in which you are. A night owl forced into a very early schedule isn't lazy; they are being asked to perform near their biological low point.\n\nWhere you have some flexibility, put demanding work in your sharper hours, and be slower to judge a family member or colleague whose rhythm differs from yours. Owls still benefit from consistent timing and morning light, but they can't simply choose to become larks.",
+      "apply_it": "Decide whether you lean lark or owl, and move one demanding task to the time of day you usually feel sharpest.",
+      "quiz": {
+        "question": "How does Walker describe being a night owl?",
+        "options": [
+          "A sign of laziness or poor discipline",
+          "A habit anyone can drop in a day",
+          "Something that only affects children",
+          "Largely a biological trait influenced by genes"
+        ],
+        "answer": 3,
+        "explanation": "Chronotype is substantially inherited, so owls aren't simply lazy."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--08",
+      "topic": "health",
+      "tags": [
+        "teenagers",
+        "parenting",
+        "school"
+      ],
+      "title": "Teenagers' body clocks really do run later",
+      "body": "Walker explains that during adolescence the body clock shifts later, so many teenagers genuinely don't feel sleepy until late and struggle to wake early. Very early starts can leave them chronically short of sleep. He supports later school start times, a position also taken by major paediatric organisations.\n\nFor parents, this reframes the 'lazy teenager'. Protecting a teen's sleep, with regular times, fewer late-night screens and realistic mornings, may do more for their mood, learning and safety than nagging does.",
+      "apply_it": "If you live with a teenager, agree together on one change, such as phones charging outside the bedroom, that would protect their sleep.",
+      "quiz": {
+        "question": "Why do many teenagers struggle with early mornings, according to Walker?",
+        "options": [
+          "Their body clock shifts later during adolescence",
+          "They need less sleep than adults",
+          "They are simply lazy",
+          "Morning light keeps them awake"
+        ],
+        "answer": 0,
+        "explanation": "The adolescent body clock runs later, so early starts clash with their biology."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--09",
+      "topic": "health",
+      "tags": [
+        "rem-sleep",
+        "sleep-cycles",
+        "alarm"
+      ],
+      "title": "Cutting sleep short at the end costs you the most dreaming sleep",
+      "body": "Sleep moves through cycles of roughly 90 minutes, alternating between non-REM sleep and REM, or dreaming, sleep. Walker explains that the mix changes across the night: deep non-REM sleep dominates the early cycles, while REM sleep is concentrated in the last hours before morning.\n\nSo if you usually need eight hours but set an alarm two hours early, you don't lose sleep evenly; you lose a disproportionate share of your REM sleep. Both stages do important work, which is why Walker cares about the full night, not just most of it.",
+      "apply_it": "Look at your wake-up time. If you routinely cut the night short, try moving bedtime earlier rather than squeezing the morning.",
+      "quiz": {
+        "question": "Which sleep stage is concentrated in the final hours before waking?",
+        "options": [
+          "Deep non-REM sleep",
+          "REM (dreaming) sleep",
+          "Light dozing only",
+          "No particular stage"
+        ],
+        "answer": 1,
+        "explanation": "REM dominates the later cycles, so an early alarm cuts into it heavily."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--10",
+      "topic": "health",
+      "tags": [
+        "learning",
+        "study",
+        "all-nighters"
+      ],
+      "title": "Sleep before learning, not just after it",
+      "body": "Walker argues that sleep doesn't only lock in memories afterwards; it also prepares the brain to take in new information. He describes studies in which sleep-deprived people formed new memories noticeably less well than rested people did. In his view, the all-nighter before an exam undermines the very learning it is meant to cram in.\n\nStudents and professionals can treat a full night's sleep as part of their preparation, not a break from it. Spreading study across several days, with sleep in between, usually works better than one long late session.",
+      "apply_it": "Before your next exam or big presentation, plan your preparation so you can still get a full night's sleep the night before.",
+      "quiz": {
+        "question": "What does Walker say about staying up all night to study?",
+        "options": [
+          "It is the best way to remember facts",
+          "It only affects physical skills",
+          "It weakens the brain's ability to take in new memories",
+          "It has no effect if you drink coffee"
+        ],
+        "answer": 2,
+        "explanation": "Sleep loss impairs the brain's capacity to form new memories."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--11",
+      "topic": "health",
+      "tags": [
+        "skills",
+        "practice",
+        "motor-learning"
+      ],
+      "title": "Practise, then sleep, to sharpen a physical skill",
+      "body": "Walker describes research in which people learning a motor task, such as typing a finger sequence, performed better after a night's sleep than after the same amount of time spent awake. Sleep appears to help refine and automate skills the body has practised.\n\nMusicians, athletes and anyone learning a craft can use this. Practice still does the heavy lifting, but a good night afterwards seems to help the skill settle in. Cutting sleep to squeeze in extra practice may cost more than it gains.",
+      "apply_it": "When you're learning a physical skill, plan practice on days when you can protect the following night's sleep.",
+      "quiz": {
+        "question": "What happened in the motor-skill studies Walker describes?",
+        "options": [
+          "Performance only improved after coffee",
+          "Sleep made no difference at all",
+          "Skills were forgotten after sleep",
+          "Performance improved after sleep, compared with the same time awake"
+        ],
+        "answer": 3,
+        "explanation": "Sleep after practice was linked to better performance than an equal time awake."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--12",
+      "topic": "health",
+      "tags": [
+        "creativity",
+        "problem-solving",
+        "rem-sleep"
+      ],
+      "title": "Sleep on a hard problem",
+      "body": "Walker describes REM sleep as a time when the brain links ideas that don't seem connected while we're awake. He cites experiments in which people were more likely to spot a hidden shortcut or solve puzzles after sleep, and argues that dreaming supports creative problem-solving.\n\nThe old advice to 'sleep on it' has some support. When a decision or creative problem is stuck, a night's rest may bring a fresh angle, which is often more useful than pushing on late into the night with a tired mind.",
+      "apply_it": "Write down a problem you're stuck on before bed tonight, then look at it fresh tomorrow morning before checking your phone.",
+      "quiz": {
+        "question": "What does Walker suggest REM sleep helps with?",
+        "options": [
+          "Connecting distant ideas, which aids creative problem-solving",
+          "Burning fat",
+          "Growing taller",
+          "Erasing all memories of the day"
+        ],
+        "answer": 0,
+        "explanation": "He presents REM sleep as a time when the brain makes unusual connections."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--13",
+      "topic": "health",
+      "tags": [
+        "dreams",
+        "emotions",
+        "rem-sleep"
+      ],
+      "title": "Dreaming may help take the sting out of painful memories",
+      "body": "One of Walker's more striking ideas is that REM sleep acts like a kind of overnight therapy: the brain revisits emotional experiences in a calmer chemical state, which may soften their painful edge while keeping the lesson. He links this to research on nightmares in post-traumatic stress.\n\nThis is an interesting theory that is still being studied, not settled fact. The practical point is more modest: upsets often feel more manageable after a good night's sleep, so emotional decisions made at 2am deserve a second look in daylight.",
+      "apply_it": "Next time something upsets you late in the evening, write it down and agree with yourself to decide what to do after you've slept.",
+      "quiz": {
+        "question": "How should Walker's idea of dreaming as 'overnight therapy' be treated?",
+        "options": [
+          "As proven medical fact",
+          "As an interesting theory that is still being researched",
+          "As a reason to skip therapy",
+          "As a claim that dreams predict the future"
+        ],
+        "answer": 1,
+        "explanation": "The idea is intriguing but not settled science."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--14",
+      "topic": "health",
+      "tags": [
+        "emotions",
+        "irritability",
+        "self-awareness"
+      ],
+      "title": "A tired brain overreacts emotionally",
+      "body": "Walker describes brain-scan research from his lab in which sleep-deprived people showed a much stronger response in the amygdala, a region involved in emotional reactions, along with a weaker link to the frontal areas that help keep those reactions in check.\n\nIn daily life this fits a familiar pattern: after a short night we snap more easily, take things personally and swing between moods. Recognising that tiredness is amplifying your feelings lets you pause before a harsh reply or a big decision.",
+      "apply_it": "After a poor night, warn yourself in advance that you'll be more reactive, and postpone a difficult conversation if you can.",
+      "quiz": {
+        "question": "According to Walker, what happens to emotional reactions after sleep loss?",
+        "options": [
+          "They disappear completely",
+          "They become calmer and wiser",
+          "They get stronger and harder to regulate",
+          "They are unaffected"
+        ],
+        "answer": 2,
+        "explanation": "Sleep deprivation amplified the brain's emotional response and weakened control."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--15",
+      "topic": "health",
+      "tags": [
+        "performance",
+        "self-awareness",
+        "short-sleep"
+      ],
+      "title": "When you're short of sleep, you can't judge how impaired you are",
+      "body": "Walker cites research in which people limited to about six hours a night for two weeks steadily declined on attention tests, yet rated themselves as only a little sleepy. Their performance slipped much further than they realised.\n\nThis is the hidden danger of chronic short sleep: you get used to feeling tired and assume you're fine. If others notice more mistakes, or you need caffeine just to function, those are better signals than your own sense of how you're doing.",
+      "apply_it": "For one week, note mistakes and lapses alongside how many hours you slept, and see whether a pattern appears.",
+      "quiz": {
+        "question": "What did the six-hours-a-night studies Walker cites find?",
+        "options": [
+          "Six hours was enough for everyone",
+          "Performance improved over time",
+          "People felt far worse than they performed",
+          "People underestimated how much their performance had declined"
+        ],
+        "answer": 3,
+        "explanation": "Performance dropped steadily while people felt only mildly sleepy."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--16",
+      "topic": "health",
+      "tags": [
+        "driving",
+        "safety",
+        "microsleep"
+      ],
+      "title": "Never drive when you're drowsy",
+      "body": "Walker stresses that tired drivers can slip into microsleeps: brief lapses of a few seconds in which the brain disengages, often without the driver noticing. At road speed, a few seconds is enough to drift across a lane.\n\nOpening a window or turning up the radio doesn't reliably fix it. If you're struggling to keep your eyes open, the safe options are to stop somewhere safe, take a short nap or hand over the wheel. The same caution applies to operating machinery at work.",
+      "apply_it": "Make a rule now: if you yawn repeatedly or drift in your lane, you pull over at the next safe place.",
+      "quiz": {
+        "question": "What are microsleeps?",
+        "options": [
+          "Brief lapses of a few seconds in which the brain disengages",
+          "Short naps taken on purpose",
+          "Dreams you remember clearly",
+          "A type of deep sleep at night"
+        ],
+        "answer": 0,
+        "explanation": "Microsleeps are short, often unnoticed lapses that are dangerous at the wheel."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--17",
+      "topic": "health",
+      "tags": [
+        "appetite",
+        "diet",
+        "cravings"
+      ],
+      "title": "Short sleep can push you to eat more",
+      "body": "Walker describes studies suggesting that when people are short of sleep, the hormones that govern hunger and fullness shift: the signal that you've had enough tends to fall and hunger signals rise. In lab studies, sleep-restricted volunteers also ate more and reached for sugary, high-calorie snacks.\n\nMuch of this research uses small lab studies, so how big the effect is in everyday life is debated. Still, if you raid the snack cupboard after a late night, tiredness may be part of the reason, and better sleep is a sensible support for healthier eating.",
+      "apply_it": "Next time you crave sugary snacks, ask yourself how you slept last night before blaming your willpower.",
+      "quiz": {
+        "question": "What do the studies Walker describes suggest happens to appetite with short sleep?",
+        "options": [
+          "Appetite disappears completely",
+          "Hunger signals tend to rise and fullness signals fall",
+          "Only cravings for vegetables increase",
+          "Nothing changes"
+        ],
+        "answer": 1,
+        "explanation": "Short sleep was linked to hormonal shifts that increase hunger, though effect sizes are debated."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--18",
+      "topic": "health",
+      "tags": [
+        "immunity",
+        "vaccines",
+        "illness"
+      ],
+      "title": "Sleep supports your body's defences",
+      "body": "Walker describes research linking sleep and the immune system, including studies in which people who slept less around the time of a vaccination produced a weaker antibody response, and studies in which short sleepers were more likely to catch a cold after exposure to a virus.\n\nSome of his broader claims about sleep and disease go further than the evidence supports, but the basic link is well established: sleep is part of how the body maintains its defences. Prioritising rest when you feel run down is a sensible, low-risk habit.",
+      "apply_it": "When you feel run down, treat an early night as part of looking after yourself rather than as a luxury.",
+      "quiz": {
+        "question": "Which finding about sleep and immunity does Walker describe?",
+        "options": [
+          "Sleep has no link to immunity",
+          "Less sleep makes vaccines work better",
+          "Short sleep around a vaccination was linked to a weaker antibody response",
+          "Only children's immunity depends on sleep"
+        ],
+        "answer": 2,
+        "explanation": "Studies tied shorter sleep to weaker vaccine responses and more colds."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--19",
+      "topic": "health",
+      "tags": [
+        "sleep-debt",
+        "weekends",
+        "consistency"
+      ],
+      "title": "You can't stockpile sleep or fully repay it at the weekend",
+      "body": "Walker argues that sleep doesn't work like a bank account. You can't store it up in advance before a busy week, and sleeping in at the weekend doesn't fully make up for several short nights; the brain doesn't get back everything it missed.\n\nThat's why he puts the emphasis on enough sleep, regularly, rather than cycles of running short and catching up. An occasional late night won't ruin you, but a routine of short weeknights and long Saturday lie-ins is a poor substitute for steady rest.",
+      "apply_it": "Instead of planning a weekend lie-in, try going to bed 30 minutes earlier on three weeknights.",
+      "quiz": {
+        "question": "What does Walker say about 'catching up' on sleep?",
+        "options": [
+          "A long weekend lie-in fully resets you",
+          "You can store sleep for busy weeks",
+          "Missing sleep has no lasting effect",
+          "Sleep can't be stockpiled, and catch-up doesn't fully repay a deficit"
+        ],
+        "answer": 3,
+        "explanation": "He stresses regular sufficient sleep over cycles of deprivation and recovery."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--20",
+      "topic": "health",
+      "tags": [
+        "naps",
+        "afternoon",
+        "insomnia"
+      ],
+      "title": "If you nap, keep it early and short",
+      "body": "Many people feel a natural dip in alertness in the early afternoon, and Walker notes that a short nap can restore alertness. But a nap also releases some of the sleep pressure you need to fall asleep at night.\n\nHis advice is to avoid napping late in the afternoon, roughly after 3pm, and if you struggle to sleep at night, to drop naps altogether. A brief rest after lunch suits some people; a long nap at 5pm often means lying awake at midnight.",
+      "apply_it": "If you nap, set an alarm so it stays short and finish before mid-afternoon. If nights are hard, try a week with no naps.",
+      "quiz": {
+        "question": "Why does Walker warn against late-afternoon naps?",
+        "options": [
+          "They release sleep pressure you need to fall asleep at night",
+          "They make you need more coffee",
+          "Naps are always harmful",
+          "They reset your body clock to morning"
+        ],
+        "answer": 0,
+        "explanation": "Late naps relieve the sleep pressure that helps you fall asleep at bedtime."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--21",
+      "topic": "health",
+      "tags": [
+        "bedtime-routine",
+        "relaxation",
+        "warm-bath"
+      ],
+      "title": "Wind down before bed, and try a warm bath",
+      "body": "Walker recommends an unhurried wind-down before bed, such as reading or gentle music, rather than work or stressful conversations right up to lights-out. One tip he highlights is a warm bath in the evening. It seems backwards, but the bath draws heat to the skin, and your core body temperature then drops afterwards, which is one of the signals that helps bring on sleep.\n\nA regular routine also tells your brain that the day is ending. It doesn't need to be elaborate; it just needs to be consistent.",
+      "apply_it": "Choose two calming activities for the half hour before bed and do them in the same order each night this week.",
+      "quiz": {
+        "question": "Why can a warm bath before bed help sleep, according to Walker?",
+        "options": [
+          "It raises your temperature all night",
+          "Core body temperature drops afterwards, which helps signal sleep",
+          "It replaces the need for a dark room",
+          "It contains melatonin"
+        ],
+        "answer": 1,
+        "explanation": "The drop in core temperature after the bath is a cue for sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--22",
+      "topic": "health",
+      "tags": [
+        "meals",
+        "evening",
+        "digestion"
+      ],
+      "title": "Avoid heavy meals and lots of drinks late at night",
+      "body": "Among Walker's practical habits is avoiding large meals and big drinks late in the evening. A heavy meal close to bedtime can cause indigestion that disturbs sleep, and drinking a lot late can wake you to use the bathroom.\n\nThis isn't about strict rules, just giving your body time to digest before you lie down. Eating dinner a little earlier and keeping late snacks light is an easy adjustment for many people.",
+      "apply_it": "Try finishing your evening meal a couple of hours before bed for one week and notice any difference in your nights.",
+      "quiz": {
+        "question": "Why does Walker advise against large meals and drinks late at night?",
+        "options": [
+          "Food at night has no effect on sleep",
+          "Eating late guarantees deeper sleep",
+          "Indigestion and bathroom trips can disturb sleep",
+          "Drinking water at night is dangerous"
+        ],
+        "answer": 2,
+        "explanation": "Heavy late meals and lots of fluid can interrupt the night."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--23",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "timing",
+        "activity"
+      ],
+      "title": "Exercise helps sleep, but not right before bed",
+      "body": "Walker encourages regular exercise, around 30 minutes on most days, as a support for good sleep. But he suggests not exercising in the two to three hours before bedtime, since it can leave some people too alert to settle.\n\nThe relationship runs both ways: good sleep also improves your energy and motivation to move. If evenings are your only free time, gentler activity such as a walk or stretching may suit better than an intense workout.",
+      "apply_it": "Schedule your next workout earlier in the day, or swap a late intense session for an evening walk.",
+      "quiz": {
+        "question": "What does Walker advise about exercise timing?",
+        "options": [
+          "Exercise only at midnight",
+          "Avoid all exercise to sleep better",
+          "Exercise right before bed to tire yourself out",
+          "Exercise regularly, but not in the two to three hours before bed"
+        ],
+        "answer": 3,
+        "explanation": "Regular activity helps, but hard exercise close to bedtime can keep you alert."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--24",
+      "topic": "health",
+      "tags": [
+        "nicotine",
+        "medicines",
+        "stimulants"
+      ],
+      "title": "Watch out for nicotine and medicines that disturb sleep",
+      "body": "Walker's sleep tips include avoiding nicotine, a stimulant that can leave smokers sleeping lightly and waking early as cravings return. He also notes that some commonly used medicines, including certain heart, blood-pressure and asthma drugs, and some cough, cold and allergy remedies, can disrupt sleep.\n\nDon't stop a prescribed medicine on your own. If you suspect one is affecting your sleep, ask your doctor or pharmacist whether the timing or type could be adjusted.",
+      "apply_it": "Check the labels of anything you take in the evening, and ask a pharmacist if you're unsure whether it could affect sleep.",
+      "quiz": {
+        "question": "What should you do if you think a prescribed medicine is disturbing your sleep?",
+        "options": [
+          "Ask your doctor or pharmacist about adjusting it",
+          "Stop taking it immediately",
+          "Double the dose to sleep it off",
+          "Ignore it; medicines never affect sleep"
+        ],
+        "answer": 0,
+        "explanation": "Some medicines affect sleep, but changes should be made with professional advice."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--25",
+      "topic": "health",
+      "tags": [
+        "melatonin",
+        "supplements",
+        "jet-lag"
+      ],
+      "title": "Melatonin tells your body it's night; it doesn't create sleep",
+      "body": "Walker explains that melatonin works more like a starting signal than the engine of sleep: it tells the body that night has arrived, while other processes actually generate sleep. That's one reason he is cautious about melatonin supplements for everyday sleeplessness, though they can help reset the body clock, for example with jet lag.\n\nFor most people, a more reliable way to support natural melatonin is managing light: dimmer evenings and brighter mornings. Talk to a doctor or pharmacist before using sleep supplements.",
+      "apply_it": "Before reaching for a sleep supplement, try two weeks of dimmer evenings and daylight soon after waking.",
+      "quiz": {
+        "question": "How does Walker describe melatonin's role?",
+        "options": [
+          "The chemical that produces deep sleep on its own",
+          "A timing signal that night has arrived, not the generator of sleep",
+          "A stimulant that keeps you awake",
+          "A hormone released by caffeine"
+        ],
+        "answer": 1,
+        "explanation": "Melatonin signals timing; other processes produce sleep itself."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--26",
+      "topic": "health",
+      "tags": [
+        "insomnia",
+        "cbt-i",
+        "sleeping-pills"
+      ],
+      "title": "For long-term insomnia, ask about therapy before pills",
+      "body": "Walker argues that common sleeping pills tend to sedate rather than produce natural, restorative sleep. He points instead to cognitive behavioural therapy for insomnia (CBT-I), a structured programme that changes habits and thoughts around sleep, as the better approach for chronic insomnia. Major medical guidelines also recommend CBT-I as the first treatment to try.\n\nIf you've struggled with sleep for weeks or months, it's worth asking a doctor about CBT-I. Never stop prescribed medication without medical advice.",
+      "apply_it": "If poor sleep has lasted more than a few weeks, book a conversation with a doctor and ask specifically about CBT-I.",
+      "quiz": {
+        "question": "What approach does Walker favour for chronic insomnia?",
+        "options": [
+          "Stronger sleeping pills",
+          "Drinking alcohol before bed",
+          "Cognitive behavioural therapy for insomnia (CBT-I)",
+          "Sleeping only at weekends"
+        ],
+        "answer": 2,
+        "explanation": "CBT-I is recommended as the first-line treatment for chronic insomnia."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--27",
+      "topic": "health",
+      "tags": [
+        "evolution",
+        "biology",
+        "mindset"
+      ],
+      "title": "Every animal studied sleeps, which shows how essential it is",
+      "body": "Walker opens with an evolutionary argument. Sleep appears in every animal species that has been carefully studied, even though sleeping leaves an animal unable to find food, find a mate or watch for predators. If sleep served no vital purpose, he reasons, evolution would likely have got rid of it.\n\nSome creatures have even evolved unusual ways to keep sleeping, such as dolphins resting one half of the brain at a time. The takeaway is a shift in mindset: sleep isn't wasted time to be minimised but a basic biological need.",
+      "apply_it": "Notice one way you treat sleep as optional, and ask what would change if you saw it as being as essential as food.",
+      "quiz": {
+        "question": "What is Walker's evolutionary argument about sleep?",
+        "options": [
+          "Only humans need to sleep",
+          "Sleep evolved to waste time",
+          "Animals that sleep less live longer",
+          "Sleep persists across species despite its risks, so it must be vital"
+        ],
+        "answer": 3,
+        "explanation": "Sleep survived evolution despite its dangers, suggesting it serves essential functions."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--28",
+      "topic": "productivity",
+      "tags": [
+        "work-culture",
+        "leadership",
+        "rest"
+      ],
+      "title": "Don't wear sleeplessness as a badge of honour",
+      "body": "Walker criticises workplaces and cultures that praise people for working through the night or getting by on little sleep. He cites research suggesting that sleep-deprived employees are less productive and creative, and even more likely to behave unethically, and that tired leaders are rated as less inspiring by their teams.\n\nFor managers and anyone building a career, protecting rest is part of doing good work, not a sign of weakness. All-night pushes often cost more in mistakes than they gain in hours.",
+      "apply_it": "If you lead others, stop sending late-night messages that imply people should be working; schedule them for the morning.",
+      "quiz": {
+        "question": "What does the research Walker cites suggest about sleep-deprived workers?",
+        "options": [
+          "They tend to be less productive and creative, and more prone to unethical choices",
+          "They are more productive than rested workers",
+          "Sleep has no effect on work",
+          "They become more inspiring leaders"
+        ],
+        "answer": 0,
+        "explanation": "Tiredness was linked to worse performance, ethics and leadership ratings."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--29",
+      "topic": "health",
+      "tags": [
+        "mental-health",
+        "mood",
+        "wellbeing"
+      ],
+      "title": "Sleep and mental health affect each other",
+      "body": "Walker highlights that disrupted sleep is common across many mental health conditions, from depression and anxiety to bipolar disorder, and argues that the relationship runs both ways: poor sleep can worsen mood and mental health, and mental health problems can disturb sleep.\n\nSome of his wider claims are debated, but this two-way link is widely accepted. Looking after sleep is one supportive step for mental wellbeing, alongside, not instead of, professional help. If low mood and poor sleep persist, speak to a doctor.",
+      "apply_it": "Track your mood and your sleep for two weeks; if both are persistently poor, share the record with a doctor.",
+      "quiz": {
+        "question": "How does Walker describe the link between sleep and mental health?",
+        "options": [
+          "Sleep has nothing to do with mood",
+          "It runs both ways: each can worsen the other",
+          "Only mental health affects sleep, not the reverse",
+          "Better sleep replaces professional treatment"
+        ],
+        "answer": 1,
+        "explanation": "Poor sleep and mental health problems tend to feed into each other."
+      },
+      "health": true
+    },
+    {
+      "id": "why-we-sleep-walker--30",
+      "topic": "health",
+      "tags": [
+        "heart-health",
+        "blood-pressure",
+        "evidence"
+      ],
+      "title": "Treat steady sleep as part of a heart-healthy life, without panicking",
+      "body": "Walker connects chronic short sleep with higher blood pressure and heart problems. Much of that evidence is observational, so cause and effect are hard to untangle, and critics, including the writer Alexey Guzey, have argued that the book overstates several of its health risks.\n\nEven so, mainstream health bodies now count sufficient, regular sleep as part of a heart-healthy lifestyle, alongside activity, diet and not smoking. The sensible takeaway isn't fear over one bad night, but treating consistent sleep as a long-term habit, like exercise.",
+      "apply_it": "Add sleep to your health goals this year, with a specific target such as a fixed bedtime on weeknights.",
+      "quiz": {
+        "question": "What caution applies to Walker's claims about sleep and heart disease?",
+        "options": [
+          "They are all proven by large trials",
+          "Sleep has no link to health",
+          "Much of the evidence is observational, and critics say some risks are overstated",
+          "One bad night causes heart disease"
+        ],
+        "answer": 2,
+        "explanation": "The link is plausible and widely accepted, but the book's specific risks have been challenged."
+      },
+      "health": true
     }
   ]
 }

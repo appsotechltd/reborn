@@ -134,6 +134,512 @@
         "answer": 2,
         "explanation": "Clear commitments and follow-up turn dialogue into action."
       }
+    },
+    {
+      "id": "crucial-conversations--06",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "awareness",
+        "warning-signs",
+        "dialogue"
+      ],
+      "title": "Notice the moment a conversation turns crucial",
+      "body": "The authors point out that we often miss the moment a normal chat becomes high stakes, because we're absorbed in the topic. They suggest watching for signals: your body tensing, your stomach tightening, emotions like fear or anger rising, or people starting to go quiet or push hard.\n\nTheir advice is to pay attention to two things at once: what is being discussed, and how people are reacting while it is discussed. Catching the shift early gives you a chance to slow down and steer back to real dialogue before damage is done.",
+      "apply_it": "In your next tense meeting, check yourself once halfway through: what is my body doing, and how are others behaving?",
+      "quiz": {
+        "question": "What two things do the authors suggest watching at the same time?",
+        "options": [
+          "The clock and the agenda",
+          "Who is senior and who is junior",
+          "Your notes and your phone",
+          "The content of the talk and how people are reacting"
+        ],
+        "answer": 3,
+        "explanation": "Watching both content and conditions helps you spot trouble early."
+      }
+    },
+    {
+      "id": "crucial-conversations--07",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-awareness",
+        "stress",
+        "habits"
+      ],
+      "title": "Know your own default under stress: silence or attack",
+      "body": "The book encourages readers to learn their personal 'style under stress'. Some of us tend toward silence when things get tense: we hold back, hint, change the subject or agree just to escape. Others tend toward 'violence' in the verbal sense: we push, label, raise our voice or try to control the outcome. Many people do both, depending on the setting.\n\nKnowing your pattern helps you catch it. If you know you go quiet with your boss but get sharp with your family, you can watch for those exact moments and choose a better response.",
+      "apply_it": "Think of your last two tense conversations, one at work and one at home. Did you go quiet, push hard, or both?",
+      "quiz": {
+        "question": "What is the purpose of learning your 'style under stress'?",
+        "options": [
+          "To prove you're better than others",
+          "So you can catch your usual pattern and choose a better response",
+          "To decide who to avoid",
+          "To find out who is to blame"
+        ],
+        "answer": 1,
+        "explanation": "Knowing your default helps you notice and change it in the moment."
+      }
+    },
+    {
+      "id": "crucial-conversations--08",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "responsibility",
+        "self-control",
+        "change"
+      ],
+      "title": "Work on yourself first, then on the relationship",
+      "body": "The authors note that when a conversation goes wrong, we usually think the other person needs to change. Their advice reverses this: start with yourself. You are the one person whose behaviour you can directly control.\n\nThis isn't about taking all the blame. It's about asking how your own words, tone and motives are contributing, because that is where you have real power. Skilled communicators, the book observes, tend to believe the best way to improve a difficult talk is to improve their own part in it.",
+      "apply_it": "Before your next difficult conversation, write down one thing you will do differently, regardless of how the other person acts.",
+      "quiz": {
+        "question": "Where do the authors suggest starting when you want a conversation to go better?",
+        "options": [
+          "With yourself, since you control your own behaviour",
+          "With the other person's faults",
+          "With the rules of the organisation",
+          "With whoever has more power"
+        ],
+        "answer": 0,
+        "explanation": "You can directly change only your own part."
+      }
+    },
+    {
+      "id": "crucial-conversations--09",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "respect",
+        "humility",
+        "empathy"
+      ],
+      "title": "When respect is hard, remember your own flaws",
+      "body": "The book stresses that people can sense disrespect quickly, and once they do, the conversation becomes about defending their dignity. But what if you genuinely struggle to respect someone because of what they've done?\n\nThe authors suggest looking for common ground in your shared humanity. Recall your own weaknesses and mistakes; you, too, have let people down. That doesn't excuse their behaviour, but it softens the contempt that would otherwise leak into your tone and make dialogue impossible.",
+      "apply_it": "Think of someone you find hard to respect. Name one mistake of your own that is similar in spirit to theirs.",
+      "quiz": {
+        "question": "What do the authors suggest when you find it hard to respect someone?",
+        "options": [
+          "Hide your feelings behind politeness",
+          "Avoid the person forever",
+          "Tell them plainly that they've lost your respect",
+          "Remember your own weaknesses and shared humanity"
+        ],
+        "answer": 3,
+        "explanation": "Recognising our own flaws reduces contempt, which others can always sense."
+      }
+    },
+    {
+      "id": "crucial-conversations--10",
+      "topic": "relationships",
+      "tags": [
+        "apology",
+        "respect",
+        "trust"
+      ],
+      "title": "If you've crossed a line, apologise sincerely first",
+      "body": "The authors note that sometimes safety breaks down because you really did something disrespectful: you missed a commitment, embarrassed someone or snapped. In that case, explaining or defending won't help.\n\nTheir advice is to offer a sincere apology for your part. It must be genuine: you're acknowledging the harm, not using a tactic. Once the other person sees that you recognise what went wrong, they often relax enough to return to the real issue. Skipping the apology usually keeps the conversation stuck on the injury.",
+      "apply_it": "Is there a recent moment where you let someone down? Send them a short, honest apology without adding 'but'.",
+      "quiz": {
+        "question": "According to the book, when does a sincere apology help most?",
+        "options": [
+          "When you've genuinely shown disrespect or caused a problem",
+          "Whenever the other person is upset, even if you've done nothing",
+          "Only after you've won the argument",
+          "Never; apologies show weakness"
+        ],
+        "answer": 0,
+        "explanation": "An apology restores respect when you actually crossed a line."
+      }
+    },
+    {
+      "id": "crucial-conversations--11",
+      "topic": "business",
+      "tags": [
+        "mutual-purpose",
+        "negotiation",
+        "problem-solving"
+      ],
+      "title": "When goals clash, look for the purpose behind each position",
+      "body": "Sometimes both sides really do want different things. The book offers a four-step way to rebuild a shared goal, often remembered as CRIB. First, commit openly to finding a solution you can both accept. Second, recognise the purpose behind each person's demand: why they want it. Third, invent a bigger shared goal if your purposes differ. Fourth, brainstorm new strategies that serve everyone.\n\nThe key is separating what people ask for from why they ask for it. Two people fighting over the same week of leave may both simply need rest, and there may be several ways to give them that.",
+      "apply_it": "In a current disagreement, write the other person's demand, then ask yourself: what do they really want it for?",
+      "quiz": {
+        "question": "In the CRIB approach, what does 'recognise the purpose' mean?",
+        "options": [
+          "Admit you were wrong",
+          "Identify why each person wants what they're asking for",
+          "Decide whose purpose is more important",
+          "Recognise who holds the most power"
+        ],
+        "answer": 1,
+        "explanation": "Separating the demand from its purpose opens up new solutions."
+      }
+    },
+    {
+      "id": "crucial-conversations--12",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stories",
+        "blame",
+        "self-justification"
+      ],
+      "title": "Watch for victim, villain and helpless stories",
+      "body": "The authors describe three 'clever stories' we tell to excuse our own bad behaviour. In a victim story, we are innocent and suffering. In a villain story, the other person is bad or stupid. In a helpless story, we had no choice but to react as we did.\n\nThese stories feel true and justify silence or attack. But they usually leave things out, especially our own role and the other person's decent motives. Learning to spot them is the first step to replacing them with a more honest account.",
+      "apply_it": "Recall a recent conflict. Which story did you tell yourself: victim, villain or helpless?",
+      "quiz": {
+        "question": "Which of these is NOT one of the three 'clever stories'?",
+        "options": [
+          "Victim story",
+          "Villain story",
+          "Hero story",
+          "Helpless story"
+        ],
+        "answer": 2,
+        "explanation": "The book names victim, villain and helpless stories."
+      }
+    },
+    {
+      "id": "crucial-conversations--13",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stories",
+        "responsibility",
+        "reflection"
+      ],
+      "title": "Ask what you're pretending not to notice about your own part",
+      "body": "To counter clever stories, the book suggests 'telling the rest of the story' with a few questions. Am I ignoring my own contribution to the problem? Why would a reasonable, decent person act as this person did? What do I really want, and what would I do right now if I truly wanted it?\n\nThese questions turn a victim into an actor, a villain into a human being and a helpless person into someone with options. They rarely mean the other person did nothing wrong; they mean you see the situation fully before you speak.",
+      "apply_it": "Pick one conflict and answer: 'What role did I play in this?' Write one honest sentence.",
+      "quiz": {
+        "question": "What is the goal of 'telling the rest of the story'?",
+        "options": [
+          "To prove the other person was wrong",
+          "To see the full picture, including your own role and options",
+          "To make yourself feel guilty",
+          "To avoid ever having the conversation"
+        ],
+        "answer": 1,
+        "explanation": "The questions bring your own role and choices back into view."
+      }
+    },
+    {
+      "id": "crucial-conversations--14",
+      "topic": "relationships",
+      "tags": [
+        "facts",
+        "persuasion",
+        "feedback"
+      ],
+      "title": "Start with facts, not conclusions",
+      "body": "When you have to raise something difficult, the authors recommend opening with the facts: specific, observable things that happened. 'You were 20 minutes late three times this week' is harder to argue with than 'You don't care about this job'.\n\nFacts are the least controversial and least insulting part of your message, so they lay a safe foundation. Leading with your conclusion or judgment invites the other person to defend themselves before they even understand the issue. Once the facts are on the table, you can share what you think they mean.",
+      "apply_it": "Before raising a concern, write down only what you saw or heard, with no judgments, and open with that.",
+      "quiz": {
+        "question": "Why do the authors recommend starting with facts?",
+        "options": [
+          "They're the least controversial and least insulting starting point",
+          "Facts prove you're right and end the discussion",
+          "Conclusions are always wrong",
+          "It makes the conversation shorter"
+        ],
+        "answer": 0,
+        "explanation": "Facts create a safe base before you share your interpretation."
+      }
+    },
+    {
+      "id": "crucial-conversations--15",
+      "topic": "relationships",
+      "tags": [
+        "tentative",
+        "confidence",
+        "feedback"
+      ],
+      "title": "Share your view tentatively, but don't hide it",
+      "body": "After the facts, the book suggests telling your story: what you're starting to conclude. The key is to share it as an opinion, not as fact. Phrases like 'I'm starting to wonder if…' or 'It seems to me…' signal that you're open to being wrong.\n\nThe authors warn about the opposite error too: being so soft that your message disappears. Tentative doesn't mean timid. You still say the hard thing clearly; you just leave room for the other person to correct you.",
+      "apply_it": "Practise rephrasing one judgment, such as 'You're ignoring me', into 'I'm starting to feel like…' and say it aloud.",
+      "quiz": {
+        "question": "What does the book warn about when talking tentatively?",
+        "options": [
+          "Using any facts at all",
+          "Asking for the other person's view",
+          "Being so tentative that the message gets lost",
+          "Sharing feelings at work"
+        ],
+        "answer": 2,
+        "explanation": "Tentative means open-minded, not so vague the point vanishes."
+      }
+    },
+    {
+      "id": "crucial-conversations--16",
+      "topic": "relationships",
+      "tags": [
+        "openness",
+        "disagreement",
+        "dialogue"
+      ],
+      "title": "Actively invite people to disagree with you",
+      "body": "The authors suggest that after sharing your view, you should do more than tolerate pushback: invite it. Ask directly whether anyone sees it differently, and mean it. If you sense people are holding back, you can even argue the opposite side yourself to make disagreement feel safe.\n\nThis matters most when you have power or strong opinions, because others may stay quiet to avoid trouble. Hearing objections early is far better than discovering, after a decision, that people never agreed and won't follow through.",
+      "apply_it": "In your next meeting, after sharing an opinion, ask: 'What am I missing? Does anyone see this differently?' Then wait.",
+      "quiz": {
+        "question": "What can you do if people seem reluctant to disagree, according to the book?",
+        "options": [
+          "End the meeting early",
+          "Assume silence means agreement",
+          "Repeat your view more firmly",
+          "Argue the opposite side yourself to make disagreement safe"
+        ],
+        "answer": 3,
+        "explanation": "Playing devil's advocate signals that disagreement is welcome."
+      }
+    },
+    {
+      "id": "crucial-conversations--17",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "conviction",
+        "self-control",
+        "persuasion"
+      ],
+      "title": "The more sure you feel, the more carefully you should speak",
+      "body": "The book notes a trap: when we feel strongly about something, we tend to push harder. We talk over people, exaggerate, and assume anyone who disagrees is foolish. The stronger our conviction, the less persuasive we often become.\n\nThe authors suggest treating that rush of certainty as a warning sign. When you notice yourself pushing, slow down, return to the facts and invite others' views. Strong beliefs are fine; forcing them on people usually turns potential allies into opponents.",
+      "apply_it": "Next time you catch yourself thinking 'they just don't get it', pause and ask the other person to explain their view first.",
+      "quiz": {
+        "question": "What does the book suggest you do when you notice yourself pushing your view hard?",
+        "options": [
+          "Push harder before you lose the point",
+          "Treat it as a warning sign and slow down",
+          "Give up your opinion entirely",
+          "Bring in more people to support you"
+        ],
+        "answer": 1,
+        "explanation": "Strong feelings often make us less persuasive, so they're a signal to slow down."
+      }
+    },
+    {
+      "id": "crucial-conversations--18",
+      "topic": "relationships",
+      "tags": [
+        "listening",
+        "questions",
+        "curiosity"
+      ],
+      "title": "Ask sincerely when someone goes quiet or gets angry",
+      "body": "When others go silent or become aggressive, the authors suggest the simplest tool first: ask. Show genuine curiosity about what they think and why. 'What's your view on this?' or 'I'd really like to hear your side' can open the door.\n\nThe book is clear that understanding someone's view is not the same as agreeing with it. You can listen fully and still disagree later. What matters in the moment is that their reasons come into the open, because hidden reasons can't be addressed.",
+      "apply_it": "With someone who has seemed upset lately, ask one open, sincere question about how they see things, and only listen.",
+      "quiz": {
+        "question": "According to the book, does trying to understand someone's view mean you agree with it?",
+        "options": [
+          "Yes, listening is a form of agreement",
+          "Only if they are your manager",
+          "No, you can understand fully and still disagree",
+          "Only if you stay silent afterwards"
+        ],
+        "answer": 2,
+        "explanation": "Understanding and agreeing are separate steps."
+      }
+    },
+    {
+      "id": "crucial-conversations--19",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "mirroring",
+        "emotions",
+        "listening"
+      ],
+      "title": "Gently name the feeling you see but they don't say",
+      "body": "Sometimes people's words and their tone don't match: they say 'I'm fine' while their face says otherwise. The book calls the next tool mirroring: calmly describing what you notice, for example 'You say it's okay, but you sound upset.'\n\nThe aim is to show respect and invite them to share what's really going on. Your tone has to stay calm and caring, or it will feel like an accusation. Done well, it tells the other person it's safe to be honest.",
+      "apply_it": "The next time someone's words and tone don't match, calmly describe what you notice and ask if you've read it right.",
+      "quiz": {
+        "question": "What is 'mirroring' in the book's listening tools?",
+        "options": [
+          "Copying the other person's posture to influence them",
+          "Repeating your own argument back to yourself",
+          "Agreeing with everything they say",
+          "Calmly describing the emotions you observe in someone"
+        ],
+        "answer": 3,
+        "explanation": "Mirroring names visible emotions to invite honesty."
+      }
+    },
+    {
+      "id": "crucial-conversations--20",
+      "topic": "relationships",
+      "tags": [
+        "paraphrasing",
+        "listening",
+        "understanding"
+      ],
+      "title": "Restate what you heard in your own words",
+      "body": "Once someone begins to explain their view, the authors suggest paraphrasing: summarising their story briefly in your own words. 'So you feel the new schedule was decided without asking you, and that it's unfair. Is that right?'\n\nParaphrasing proves you were listening, catches misunderstandings early and helps the other person feel safe to go deeper. The book cautions against twisting their words or adding your judgment; the aim is accuracy, not scoring points.",
+      "apply_it": "In your next important conversation, before answering, say: 'Let me check I've got this right…' and summarise what you heard.",
+      "quiz": {
+        "question": "What is the main purpose of paraphrasing someone's story?",
+        "options": [
+          "To show you understood and to check for misunderstandings",
+          "To slip in your own criticism",
+          "To end the conversation faster",
+          "To prove they contradicted themselves"
+        ],
+        "answer": 0,
+        "explanation": "Accurate paraphrasing builds understanding and safety."
+      }
+    },
+    {
+      "id": "crucial-conversations--21",
+      "topic": "relationships",
+      "tags": [
+        "listening",
+        "questions",
+        "empathy"
+      ],
+      "title": "If they're still stuck, offer your best guess",
+      "body": "When someone still won't open up after you've asked, mirrored and paraphrased, the authors suggest 'priming': offering your best guess about what they might be thinking or feeling. 'Are you worried this change means your role is at risk?'\n\nIt's like priming a pump: you put in a little to get the flow started. The book reserves this for when other tools haven't worked, and it must be a sincere guess, not a trap. Even a wrong guess often prompts the person to correct you and explain.",
+      "apply_it": "Think of someone who won't say what's bothering them. Plan a gentle, honest guess you could offer.",
+      "quiz": {
+        "question": "When does the book suggest using 'priming'?",
+        "options": [
+          "As your opening line in every conversation",
+          "Only in writing",
+          "When you want to change the subject",
+          "When asking and listening haven't got the person talking"
+        ],
+        "answer": 3,
+        "explanation": "Priming is for when other listening tools haven't opened things up."
+      }
+    },
+    {
+      "id": "crucial-conversations--22",
+      "topic": "relationships",
+      "tags": [
+        "disagreement",
+        "common-ground",
+        "debate"
+      ],
+      "title": "Agree where you can, build on gaps, then compare differences",
+      "body": "The book points out that many arguments are mostly agreement. People argue fiercely over a small slice of facts while agreeing on most of the rest. Its approach, often remembered as ABC: Agree where you agree; Build when the other person is right but has left something out ('Yes, and also…'); and Compare when you truly differ, explaining your view without calling theirs wrong.\n\nThis keeps small differences from becoming big fights and shows the other person you've heard them.",
+      "apply_it": "In your next disagreement, say out loud one point where you agree before raising where you differ.",
+      "quiz": {
+        "question": "In the ABC approach, what does 'Build' mean?",
+        "options": [
+          "Build a stronger case for your own view",
+          "Add what's missing when the other person is right but incomplete",
+          "Build pressure until they agree",
+          "Build a list of their mistakes"
+        ],
+        "answer": 1,
+        "explanation": "Building adds to partly correct views instead of attacking them."
+      }
+    },
+    {
+      "id": "crucial-conversations--23",
+      "topic": "business",
+      "tags": [
+        "decision-making",
+        "teams",
+        "clarity"
+      ],
+      "title": "Agree on how the decision will be made",
+      "body": "The authors warn that dialogue is not the same as decision. Talking openly fills the pool of meaning, but then someone must decide, and people need to know how. The book describes four methods: command, where the decision is made by someone else and handed to you; consult, where a leader gathers input and then decides; vote; and consensus, where everyone must agree.\n\nEach fits different situations. Consensus can be slow and should be kept for high-stakes, complex issues. Confusion over the method causes resentment, so be explicit.",
+      "apply_it": "For your next group decision, say clearly at the start which method you're using: command, consult, vote or consensus.",
+      "quiz": {
+        "question": "Which decision method does the book suggest using sparingly because it can be slow?",
+        "options": [
+          "Consensus",
+          "Command",
+          "Consult",
+          "Vote"
+        ],
+        "answer": 0,
+        "explanation": "Consensus fits high-stakes, complex issues but takes time."
+      }
+    },
+    {
+      "id": "crucial-conversations--24",
+      "topic": "business",
+      "tags": [
+        "decision-making",
+        "stakeholders",
+        "teams"
+      ],
+      "title": "Ask who cares, who knows and who must agree",
+      "body": "When choosing how to decide, the book offers a few questions about who needs to be involved. Who cares about the outcome? Who has relevant knowledge or expertise? Whose agreement is needed for it to work? And how many people is it really worth involving?\n\nIncluding too few people breeds resentment and missed information; including too many wastes time. Thinking these questions through before a decision avoids the common complaint: 'Why wasn't I asked?'",
+      "apply_it": "For a decision you're facing, list who cares, who knows and who must agree. Who have you left out?",
+      "quiz": {
+        "question": "Which of these is NOT one of the book's questions for deciding who to involve?",
+        "options": [
+          "Who cares about the outcome?",
+          "Who knows something relevant?",
+          "Who is the most senior person available?",
+          "Whose agreement is needed?"
+        ],
+        "answer": 2,
+        "explanation": "The questions focus on interest, knowledge and necessary agreement."
+      }
+    },
+    {
+      "id": "crucial-conversations--25",
+      "topic": "relationships",
+      "tags": [
+        "topics",
+        "patterns",
+        "problem-solving"
+      ],
+      "title": "Raise the real issue: content, pattern or relationship",
+      "body": "The third edition adds advice on choosing what to talk about. The authors suggest unbundling a problem into three layers: content (this one incident), pattern (it keeps happening) and relationship (how it's affecting trust between you).\n\nIf you keep discussing single incidents when the true issue is a pattern, the same conversation will repeat. Pick the layer that matters most, put it into a clear sentence and keep to it, setting side issues aside for later.",
+      "apply_it": "Think of a problem that keeps coming back. Is it really about one incident, a pattern or trust? Write the real topic in one sentence.",
+      "quiz": {
+        "question": "Why might the same conversation keep repeating, according to this idea?",
+        "options": [
+          "You keep discussing single incidents when the real issue is a pattern",
+          "You talk about it too often",
+          "The other person forgets",
+          "You aren't using written agreements"
+        ],
+        "answer": 0,
+        "explanation": "Addressing the wrong layer leaves the real problem untouched."
+      }
+    },
+    {
+      "id": "crucial-conversations--26",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "feedback",
+        "self-worth",
+        "resilience"
+      ],
+      "title": "Don't let someone else's criticism write your worth",
+      "body": "The third edition includes a chapter on receiving hard feedback, under the idea of retaking your pen. The authors suggest that when we're criticised, we often hand the other person the pen and let them write the story of who we are.\n\nTheir point is that your worth is not up for debate in a feedback conversation. Feedback can be useful information about your actions without being a verdict on you as a person. Holding on to that makes it easier to listen without collapsing or striking back.",
+      "apply_it": "Next time you get criticism, quietly tell yourself: 'This is information about what I did, not a verdict on who I am.'",
+      "quiz": {
+        "question": "What does 'retaking your pen' refer to?",
+        "options": [
+          "Writing a reply to criticism immediately",
+          "Refusing to let others' feedback define your worth",
+          "Keeping notes in every meeting",
+          "Signing a formal agreement"
+        ],
+        "answer": 1,
+        "explanation": "Feedback can inform you without defining you."
+      }
+    },
+    {
+      "id": "crucial-conversations--27",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "feedback",
+        "listening",
+        "self-control"
+      ],
+      "title": "When feedback stings: calm down, ask, pause, then respond",
+      "body": "The book offers a sequence for hearing tough feedback. First, collect yourself: breathe and notice your emotions. Second, seek to understand: ask for specific examples rather than defending yourself. Third, take time to recover if you need it, since you don't have to respond right away. Finally, engage: decide what is useful, then return and say what you accept and what you'll do.\n\nThis turns a painful moment into a chance to learn, without either crumbling or counter-attacking.",
+      "apply_it": "The next time you receive criticism, ask for one specific example before responding to anything.",
+      "quiz": {
+        "question": "Which step does the book suggest when receiving hard feedback?",
+        "options": [
+          "Defend yourself immediately before it spreads",
+          "Agree with everything to end it quickly",
+          "Ask for specific examples to understand it",
+          "Point out the other person's faults too"
+        ],
+        "answer": 2,
+        "explanation": "Asking for examples helps you understand before reacting."
+      }
     }
   ]
 }
