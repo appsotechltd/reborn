@@ -2,3 +2,6 @@ node_modules/
 .cache/
 out/*.narration.m4a
 out/samples/
+out/*.mp4
+out/*.jpg
+out/*.vtt

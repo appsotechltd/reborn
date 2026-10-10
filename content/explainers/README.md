@@ -7,7 +7,7 @@ play it above the card text.
 Two kinds:
 
 - **Animated explainers** (`kind: "animated"`), rendered here from original illustrated scenes.
-  Five are rendered in `out/`.
+  Five are rendered (`out/manifest.json` lists them; the files live in the media bucket, not git).
 - **Realistic films** (`kind: "film"`), shot by a text-to-video model from a reviewed plan.
   The pipeline is ready but unused until a Veo or Runway key is set.
 
@@ -132,4 +132,6 @@ footage, so review plans before rendering.
 
 The API reads `out/manifest.json` at startup (`EXPLAINER_DIR`, default
 `../content/explainers/out`) and serves the files at `/media/explainers/`. To serve them from
-a CDN instead, copy `out/` there and set `MEDIA_BASE_URL`.
+the media bucket (Cloudflare R2) instead, upload `out/` to `explainers/` in the bucket
+(`reborn media-upload content/explainers/out explainers`) and set `MEDIA_BASE_URL` to the bucket's public
+URL. Rendered files are not committed to git; render them or fetch them from the bucket.

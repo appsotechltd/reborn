@@ -41,11 +41,11 @@ func TestLoad(t *testing.T) {
 		t.Fatalf("unexpected explainer %+v", e)
 	}
 
-	cdn, err := Load(dir, "https://cdn.example.com/explainers/")
+	cdn, err := Load(dir, "https://media.example.com/")
 	if err != nil {
 		t.Fatal(err)
 	}
-	if got := cdn["missing--01"].VideoURL; got != "https://cdn.example.com/explainers/missing--01.mp4" {
+	if got := cdn["missing--01"].VideoURL; got != "https://media.example.com/explainers/missing--01.mp4" {
 		t.Fatalf("with a media base URL every listed video is advertised, got %q", got)
 	}
 

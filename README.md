@@ -67,7 +67,7 @@ Or run the whole backend in Docker: `docker compose up --build`, then
 | `VOYAGE_MODEL` | `voyage-3.5` | Embedding model (1024 dimensions) |
 | `CONTENT_DIR` | `../content/library` | Default folder for `seed` and `validate` |
 | `EXPLAINER_DIR` | `../content/explainers/out` | Rendered explainer videos and their `manifest.json`; served at `/media/explainers/` |
-| `MEDIA_BASE_URL` | (empty) | Set when the explainer files live on a CDN; card `explainer` URLs then point there |
+| `MEDIA_BASE_URL` | (empty) | Public URL of the media bucket (Cloudflare R2); explainer URLs become `MEDIA_BASE_URL/explainers/<file>` |
 | `CORS_ORIGINS` | `*` | Comma-separated origins allowed to call the API from a browser |
 
 ### Backend commands

@@ -52,7 +52,7 @@ type manifest struct {
 }
 
 // Load reads dir/manifest.json. A missing folder or manifest is not an error:
-// cards simply have no explainer. URLs are baseURL + file name; an empty
+// cards simply have no explainer. URLs are baseURL + "/explainers/" + file name; an empty
 // baseURL gives paths under Route, which clients resolve against the API URL.
 func Load(dir, baseURL string) (Set, error) {
 	set := Set{}
@@ -70,9 +70,10 @@ func Load(dir, baseURL string) (Set, error) {
 	if err := json.Unmarshal(raw, &m); err != nil {
 		return nil, fmt.Errorf("explainer manifest: %w", err)
 	}
-	base := strings.TrimSuffix(baseURL, "/")
-	if base == "" {
-		base = strings.TrimSuffix(Route, "/")
+	// On a CDN (R2), files live under explainers/ in the bucket, matching `reborn media-upload out explainers`.
+	base := strings.TrimSuffix(Route, "/")
+	if baseURL != "" {
+		base = strings.TrimSuffix(baseURL, "/") + "/explainers"
 	}
 	url := func(name string) string {
 		if name == "" {

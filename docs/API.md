@@ -57,7 +57,7 @@ Cards with a rendered explainer video also carry `explainer` (absent otherwise):
 ```
 
 URLs starting with `/` are relative to the API base URL (the API serves them under
-`GET /media/explainers/{file}`, with range requests); with `MEDIA_BASE_URL` set they are absolute.
+`GET /media/explainers/{file}`, with range requests); with `MEDIA_BASE_URL` set they are absolute (`MEDIA_BASE_URL/explainers/<file>`).
 Videos burn in their captions, credit and (for health cards) the health note, so they can play muted.
 The web player loads them with `crossorigin="anonymous"` (needed for the captions track), so the
 web origin must be in `CORS_ORIGINS`, as it already is for API calls.
