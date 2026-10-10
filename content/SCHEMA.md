@@ -95,6 +95,11 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `faith-wisdom` | Faith & Wisdom |
 | `leadership` | Leadership |
 | `parenting` | Parenting & Family |
+| `communication` | Communication & Influence |
+| `creativity` | Creativity |
+| `learning` | Learning & Thinking |
+| `lives-history` | Lives & History |
+| `entrepreneurship` | Entrepreneurship |
 
 ## Example
 

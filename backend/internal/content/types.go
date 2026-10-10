@@ -69,6 +69,11 @@ var Topics = []Topic{
 	{"faith-wisdom", "Faith & Wisdom"},
 	{"leadership", "Leadership"},
 	{"parenting", "Parenting & Family"},
+	{"communication", "Communication & Influence"},
+	{"creativity", "Creativity"},
+	{"learning", "Learning & Thinking"},
+	{"lives-history", "Lives & History"},
+	{"entrepreneurship", "Entrepreneurship"},
 }
 
 // Kinds lists the allowed source kinds.
