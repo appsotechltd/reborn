@@ -1,0 +1,53 @@
+# Local development stack: Postgres (with pgvector), Redis and the API.
+#   docker compose up -d db redis       # just the databases
+#   docker compose up --build           # everything, API on http://localhost:8080
+#   docker compose run --rm seed        # import content/library
+#   docker compose run --rm seed seed /testdata/library   # import the small dev fixtures
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: reborn
+      POSTGRES_PASSWORD: reborn
+      POSTGRES_DB: reborn
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U reborn"]
+      interval: 2s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      retries: 30
+
+  api:
+    build: ./backend
+    environment: &api-env
+      DATABASE_URL: postgres://reborn:reborn@db:5432/reborn?sslmode=disable
+      REDIS_URL: redis://redis:6379/0
+      JWT_SECRET: ${JWT_SECRET:-dev-only-change-me}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      VOYAGE_API_KEY: ${VOYAGE_API_KEY:-}
+      CONTENT_DIR: /content/library
+    ports: ["8080:8080"]
+    volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro"]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  seed:
+    build: ./backend
+    profiles: [tools]
+    environment: *api-env
+    volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro"]
+    command: ["seed"]
+    depends_on:
+      db: { condition: service_healthy }
+
+volumes:
+  pgdata:

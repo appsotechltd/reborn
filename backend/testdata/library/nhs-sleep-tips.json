@@ -1,0 +1,49 @@
+{
+  "source": {
+    "id": "nhs-sleep-tips",
+    "title": "How to fall asleep faster and sleep better",
+    "authors": ["NHS"],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "NHS, How to fall asleep faster and sleep better, Open Government Licence v3.0",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "nhs-sleep-tips--01",
+      "topic": "health",
+      "tags": ["sleep", "routine"],
+      "title": "Keep the same wake-up time, even at weekends",
+      "body": "Going to bed and getting up at roughly the same times every day helps set your body clock. Lie-ins at the weekend can feel restoring, but a big shift in wake-up time makes Monday night's sleep harder.\n\nA steady schedule is one of the simplest, most reliable ways to improve sleep over a few weeks.",
+      "apply_it": "Choose one wake-up time and keep it for the next seven days, weekend included.",
+      "health": true,
+      "quiz": {
+        "question": "What helps set your body clock?",
+        "options": ["Long weekend lie-ins", "Regular sleep and wake times", "Sleeping only when tired"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "nhs-sleep-tips--02",
+      "topic": "health",
+      "tags": ["sleep", "screens", "wind-down"],
+      "title": "Give yourself a screen-free wind-down",
+      "body": "Phones, tablets and laptops keep the mind active, and checking messages late at night can make it harder to switch off. A short wind-down routine with dim light and calm activities, like reading or a warm bath, signals to your body that sleep is coming.\n\nWriting tomorrow's to-do list before bed can also stop worries from circling.",
+      "apply_it": "Tonight, put your phone away 30 minutes before bed and write tomorrow's to-do list instead.",
+      "health": true
+    },
+    {
+      "id": "nhs-sleep-tips--03",
+      "topic": "health",
+      "tags": ["sleep", "caffeine"],
+      "title": "Cut caffeine in the afternoon",
+      "body": "Caffeine can stay in your system for hours, so an afternoon coffee, tea, cola or energy drink can still be affecting you at bedtime. Many people sleep better when they stop caffeine by early afternoon.\n\nAlcohol may make you feel sleepy, but it tends to disrupt sleep later in the night.",
+      "apply_it": "Make your last caffeinated drink before 2pm for a week and notice any change in your sleep.",
+      "health": true
+    }
+  ]
+}
