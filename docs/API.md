@@ -44,6 +44,25 @@ Errors always look like:
 `quote`, `locator`, `quiz` may be absent/null. `disclaimer` is a string when `health` is true.
 Clients must always show `credit`, and `disclaimer` when present.
 
+Cards with a rendered explainer video also carry `explainer` (absent otherwise):
+
+```json
+"explainer": {
+  "kind": "animated",
+  "video_url": "/media/explainers/aesops-fables--07.mp4",
+  "poster_url": "/media/explainers/aesops-fables--07.jpg",
+  "captions_url": "/media/explainers/aesops-fables--07.vtt",
+  "duration_s": 52.3, "width": 720, "height": 1280, "narrated": false
+}
+```
+
+URLs starting with `/` are relative to the API base URL (the API serves them under
+`GET /media/explainers/{file}`, with range requests); with `MEDIA_BASE_URL` set they are absolute.
+Videos burn in their captions, credit and (for health cards) the health note, so they can play muted.
+The web player loads them with `crossorigin="anonymous"` (needed for the captions track), so the
+web origin must be in `CORS_ORIGINS`, as it already is for API calls.
+`kind` is `animated` today and `film` for realistic films later. See `content/explainers/README.md`.
+
 ### User
 
 ```json

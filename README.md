@@ -11,6 +11,7 @@ relationships.
 | [`web/`](web) | Next.js web app; public pages for every idea, source and topic are server-rendered for search engines and link previews |
 | [`backend/`](backend) | Go API server (Postgres + pgvector, Redis), content importer, AI guide |
 | [`content/`](content) | The card library: one JSON file per source, plus the [schema](content/SCHEMA.md) |
+| [`content/explainers/`](content/explainers) | Animated explainer videos for cards, their renderer, and the realistic-film pipeline |
 | [`docs/API.md`](docs/API.md) | The HTTP API the app talks to |
 
 ## Features
@@ -22,6 +23,8 @@ relationships.
   embeddings are configured.
 - **Stashes**: personal collections. Stashing a card enrols it in **spaced-repetition review**,
   and **quizzes** test what you've read.
+- **Explainer videos**: short animated films that dramatise a card, with captions and the source
+  credit on screen, played on the card in the web and mobile apps.
 - **Audio mode** (on-device text-to-speech) and **offline reading** of stashed and recent cards.
 - **Contributions** from readers, written in their own words and published only after a
   moderator approves them.
@@ -63,6 +66,8 @@ Or run the whole backend in Docker: `docker compose up --build`, then
 | `VOYAGE_API_KEY` | unset | Enables semantic search embeddings (Voyage AI) |
 | `VOYAGE_MODEL` | `voyage-3.5` | Embedding model (1024 dimensions) |
 | `CONTENT_DIR` | `../content/library` | Default folder for `seed` and `validate` |
+| `EXPLAINER_DIR` | `../content/explainers/out` | Rendered explainer videos and their `manifest.json`; served at `/media/explainers/` |
+| `MEDIA_BASE_URL` | (empty) | Set when the explainer files live on a CDN; card `explainer` URLs then point there |
 | `CORS_ORIGINS` | `*` | Comma-separated origins allowed to call the API from a browser |
 
 ### Backend commands

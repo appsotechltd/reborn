@@ -1,0 +1,14 @@
+{
+  "card_id": "nhs-breathing-exercises-for-stress--02",
+  "scenes": [
+    { "type": "title", "narration": "Slow belly breathing to a count of five can calm stress and panic. Let's try it together." },
+    { "type": "statement", "params": { "lines": ["Breathe deep into your belly.", "Don't force it."], "emphasis": [0] },
+      "narration": "Let each breath go deep into your belly, as far as feels comfortable, without forcing it." },
+    { "type": "breathe", "params": { "in": 5, "out": 5, "cycles": 2, "lead": 1.2 },
+      "narration": "Breathe in gently through your nose, counting slowly to five. Then let it out gently through your mouth, for another count of five.", "min_seconds": 22 },
+    { "type": "statement", "params": { "lines": ["Can't reach five yet?", "That's fine.", "Keep going for five minutes."], "emphasis": [2] },
+      "narration": "You may not reach five at first, and that's fine. Keep going for at least five minutes. You can do it almost anywhere." },
+    { "type": "apply", "narration": "Set a five minute timer now, and try the slow in for five, out for five breathing." },
+    { "type": "end", "narration": "This is general information, not medical advice.", "min_seconds": 5 }
+  ]
+}

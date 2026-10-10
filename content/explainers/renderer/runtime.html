@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reborn explainer</title>
+<style>
+  @font-face { font-family: "Reborn Serif"; src: url("fonts/SourceSerif4-Variable.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: block; }
+  @font-face { font-family: "Reborn Serif"; src: url("fonts/SourceSerif4-Italic-Variable.woff2") format("woff2"); font-weight: 200 900; font-style: italic; font-display: block; }
+  @font-face { font-family: "Reborn Sans"; src: url("fonts/Inter-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+
+  :root {
+    --paper: #f6efe6;
+    --paper-2: #efe4d6;
+    --ink: #2a211b;
+    --muted: #7a6a5d;
+    --accent: #8f3b1b;
+    --accent-soft: #f2d9c8;
+    --apply: #eef4ea;
+    --apply-border: #6d8f5a;
+    --apply-fg: #2d4421;
+    --warn: #fff4d6;
+    --warn-border: #d9b44a;
+    --warn-fg: #5c4708;
+    --serif: "Reborn Serif", Georgia, serif;
+    --sans: "Reborn Sans", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 540px; height: 960px; overflow: hidden; background: var(--paper); }
+  body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  #stage { position: relative; width: 540px; height: 960px; overflow: hidden;
+    background: radial-gradient(120% 70% at 50% 0%, #fbf6ef 0%, var(--paper) 55%, var(--paper-2) 100%); }
+  .layer { position: absolute; inset: 0; }
+  .scene { position: absolute; inset: 0; will-change: opacity; }
+  svg { display: block; overflow: visible; }
+  svg text { font-family: var(--sans); }
+
+  #header { position: absolute; left: 28px; right: 28px; top: 26px; display: flex; justify-content: space-between; align-items: center; }
+  #wordmark { font-family: var(--serif); font-weight: 700; font-size: 20px; letter-spacing: 0.02em; color: var(--accent); }
+  #topic { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  #health { position: absolute; left: 28px; right: 28px; top: 62px; padding: 6px 10px; border-radius: 8px;
+    background: var(--warn); border: 1px solid var(--warn-border); color: var(--warn-fg); font-size: 11.5px; font-weight: 600; text-align: center; }
+
+  #captions { position: absolute; left: 28px; right: 28px; top: 724px; height: 132px; display: flex; align-items: center; justify-content: center; }
+  #caption { max-width: 100%; padding: 12px 18px; border-radius: 14px; background: rgba(42, 33, 27, 0.86); color: #fffaf3;
+    font-size: 21px; line-height: 1.32; font-weight: 600; text-align: center; text-wrap: balance; }
+  #caption:empty { display: none; }
+
+  #footer { position: absolute; left: 28px; right: 28px; bottom: 26px; font-size: 11px; line-height: 1.4; color: var(--muted); text-align: center; }
+  #footer b { color: var(--ink); font-weight: 600; }
+  #progress { position: absolute; left: 0; bottom: 0; height: 4px; background: var(--accent); }
+
+  /* scene helpers */
+  .center { position: absolute; left: 36px; right: 36px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+  .serif { font-family: var(--serif); }
+  .word { display: inline-block; will-change: transform, opacity; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="layer" id="bg"></div>
+  <div class="layer" id="scenes"></div>
+  <div id="header"><div id="wordmark">Reborn</div><div id="topic"></div></div>
+  <div id="health" hidden>General information, not medical advice.</div>
+  <div id="captions"><div id="caption"></div></div>
+  <div id="footer"></div>
+  <div id="progress"></div>
+</div>
+<script src="scenes.js"></script>
+<script src="runtime.js"></script>
+</body>
+</html>

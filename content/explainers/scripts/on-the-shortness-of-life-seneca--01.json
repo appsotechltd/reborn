@@ -1,0 +1,17 @@
+{
+  "card_id": "on-the-shortness-of-life-seneca--01",
+  "scenes": [
+    { "type": "title", "narration": "Life isn't too short. We spend too much of it carelessly." },
+    { "type": "statement", "params": { "lines": ["“Life is so short.”", "We make it short."], "strike": 0, "emphasis": [1], "strikeAt": 2.2 },
+      "narration": "Seneca rejects the common complaint that life is cruelly brief. We're given enough time to do important things, if we arrange it well." },
+    { "type": "hourglass", "params": { "mode": "leak", "labels": ["distraction", "indulgence", "drifting", "autopilot"] },
+      "narration": "The real problem is leakage: hours drained by distraction, indulgence, and drifting without purpose.", "min_seconds": 7 },
+    { "type": "quote", "narration": "We do not have a very short time, but we lose a great deal of it. Life is long enough for the most important things." },
+    { "type": "hours", "params": { "title": "One day of waking hours", "kept": { "1": "deep work", "6": "people", "12": "health" }, "summary": "3 hours chosen. 13 leaked." },
+      "narration": "The point stings because it puts the issue back in our hands. A year can feel like nothing when it's spent on autopilot.", "min_seconds": 7 },
+    { "type": "hourglass", "params": { "mode": "aim", "labels": ["your craft", "your people", "your health"] },
+      "narration": "Or it can feel rich, when it's aimed at a few things that matter.", "min_seconds": 6 },
+    { "type": "apply", "narration": "Look at yesterday honestly. Estimate how many hours went to things you'd choose again, and how many simply leaked away." },
+    { "type": "end", "narration": "", "min_seconds": 4 }
+  ]
+}

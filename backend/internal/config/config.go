@@ -19,6 +19,8 @@ type Config struct {
 	VoyageAPIKey    string
 	VoyageModel     string
 	CORSOrigins     string
+	ExplainerDir    string
+	MediaBaseURL    string
 }
 
 // Load reads the environment, applying development defaults.
@@ -35,6 +37,8 @@ func Load() Config {
 		VoyageAPIKey:    os.Getenv("VOYAGE_API_KEY"),
 		VoyageModel:     env("VOYAGE_MODEL", "voyage-3.5"),
 		CORSOrigins:     env("CORS_ORIGINS", "*"),
+		ExplainerDir:    env("EXPLAINER_DIR", "../content/explainers/out"),
+		MediaBaseURL:    os.Getenv("MEDIA_BASE_URL"),
 	}
 }
 

@@ -11,6 +11,14 @@ const String apiBaseUrl = String.fromEnvironment(
   defaultValue: 'http://localhost:8080',
 );
 
+/// Resolves a media URL from the API (explainer videos and posters): absolute
+/// URLs are kept, paths are resolved against [base].
+String resolveMediaUrl(String url, [String base = apiBaseUrl]) {
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  final b = base.endsWith('/') ? base.substring(0, base.length - 1) : base;
+  return '$b${url.startsWith('/') ? '' : '/'}$url';
+}
+
 /// An error returned by the API (`{"error":{"code","message"}}`) or a
 /// transport failure ([isNetwork] true, [statusCode] 0).
 class ApiException implements Exception {

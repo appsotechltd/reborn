@@ -1,0 +1,19 @@
+{
+  "card_id": "autobiography-benjamin-franklin--01",
+  "scenes": [
+    { "type": "title", "narration": "Work on one habit at a time, not all thirteen at once." },
+    { "type": "grid", "params": { "mode": "scatter", "title": "Thirteen virtues at once", "density": 0.5,
+        "rows": ["Temperance", "Silence", "Order", "Resolution", "Frugality", "Industry", "Sincerity", "Justice", "Moderation", "Cleanliness", "Tranquillity", "Chastity", "Humility"] },
+      "narration": "Benjamin Franklin drew up a list of thirteen virtues he wanted to build. Chasing them all at once just scattered his attention.", "min_seconds": 7 },
+    { "type": "grid", "params": { "mode": "focus", "weeks": 2,
+        "rows": ["Temperance", "Silence", "Order", "Resolution", "Frugality", "Industry", "Sincerity", "Justice", "Moderation", "Cleanliness", "Tranquillity", "Chastity", "Humility"] },
+      "narration": "So he gave each virtue a full week of focus, and let the others take their chances. Every evening, a small black dot for each slip, aiming to keep that week's line clean.", "min_seconds": 13 },
+    { "type": "statement", "params": { "kicker": "The rhythm", "lines": ["13 weeks make a cycle.", "4 cycles make a year."], "emphasis": [1] },
+      "narration": "Thirteen weeks made a cycle, and he could run four cycles a year." },
+    { "type": "quote", "narration": "Like weeding a garden, he worked on one of the beds at a time, not all the bad herbs at once." },
+    { "type": "statement", "params": { "lines": ["Pick one behaviour.", "Track it daily.", "Add the next when it's automatic."], "emphasis": [2], "size": 31 },
+      "narration": "The same logic suits habit change today. Pick one behaviour, track it daily, and add the next only once the first feels automatic." },
+    { "type": "apply", "narration": "Choose one habit to focus on this week. Draw seven boxes on a card, and add a dot each evening you slip." },
+    { "type": "end", "narration": "", "min_seconds": 4 }
+  ]
+}

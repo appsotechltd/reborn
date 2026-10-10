@@ -1,11 +1,51 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reborn/src/api/api_client.dart';
 import 'package:reborn/src/api/models.dart';
 
 import 'fixtures.dart';
 
 void main() {
+  group('Explainer', () {
+    test('parses, round-trips and is absent by default', () {
+      expect(sampleCard().explainer, isNull);
+      final card = sampleCard({
+        'explainer': {
+          'kind': 'animated',
+          'video_url': '/media/explainers/x--01.mp4',
+          'poster_url': '/media/explainers/x--01.jpg',
+          'duration_s': 52,
+          'width': 720,
+          'height': 1280,
+          'narrated': true,
+        },
+      });
+      final e = card.explainer!;
+      expect(e.videoUrl, '/media/explainers/x--01.mp4');
+      expect(e.durationS, 52.0);
+      expect(e.aspectRatio, closeTo(0.5625, 1e-9));
+      expect(e.narrated, isTrue);
+      final again = IdeaCard.fromJson(card.toJson()).explainer!;
+      expect(again.posterUrl, e.posterUrl);
+      expect(sampleCard().toJson().containsKey('explainer'), isFalse);
+    });
+
+    test('media URLs resolve against the API base unless absolute', () {
+      expect(
+        resolveMediaUrl('/media/explainers/a.mp4', 'https://api.example.org/'),
+        'https://api.example.org/media/explainers/a.mp4',
+      );
+      expect(
+        resolveMediaUrl(
+          'https://cdn.example.org/a.mp4',
+          'https://api.example.org',
+        ),
+        'https://cdn.example.org/a.mp4',
+      );
+    });
+  });
+
   group('IdeaCard.fromJson (API.md example)', () {
     final card = IdeaCard.fromJson(cardJson());
 

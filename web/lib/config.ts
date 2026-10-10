@@ -15,6 +15,11 @@ export function browserApiUrl(): string {
   return trimSlash(process.env.NEXT_PUBLIC_API_URL || DEFAULT_API);
 }
 
+/** Resolves a media URL from the API (explainer videos) against the public API base. */
+export function mediaUrl(url: string): string {
+  return /^https?:\/\//.test(url) ? url : `${browserApiUrl()}${url.startsWith("/") ? "" : "/"}${url}`;
+}
+
 /** Public URL of this site, for canonical links, Open Graph, sitemap and robots. */
 export function siteUrl(): string {
   return trimSlash(process.env.SITE_URL || DEFAULT_SITE);

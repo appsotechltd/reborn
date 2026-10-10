@@ -1,0 +1,29 @@
+{
+  "card_id": "aesops-fables--07",
+  "logline": "A real hare and tortoise replay Aesop's race in a meadow, then a modern learner shows the same steady habit.",
+  "style": "Naturalistic wildlife cinematography, golden-hour English meadow, warm amber and sage palette, shallow depth of field, 35mm film grain, gentle contrast",
+  "negative_prompt": "text, captions, logos, watermarks, cartoon, anthropomorphic clothing, talking animals, distorted anatomy, extra limbs, flicker",
+  "shots": [
+    { "id": "s01", "seconds": 6, "framing": "wide establishing shot", "camera": "slow push-in",
+      "prompt": "A wild brown hare sits alert at the edge of a dirt path through a golden-hour meadow of tall grass and wildflowers. A few metres behind it, a small olive-green tortoise with a domed patterned shell walks slowly onto the path. Warm low sun, long shadows.",
+      "narration": "A hare, sure of his speed, agreed to race a tortoise." },
+    { "id": "s02", "seconds": 6, "framing": "low tracking shot at ground level", "camera": "fast lateral tracking",
+      "prompt": "A wild brown hare sprints down a dusty dirt path through a golden-hour meadow, ears back, legs fully extended, small puffs of dust kicking up behind it. The background grass blurs with speed.",
+      "narration": "He shot ahead, so far the tortoise was out of sight." },
+    { "id": "s03", "seconds": 6, "framing": "medium shot", "camera": "static, slight drift",
+      "prompt": "A wild brown hare settles into the dappled shade under a large old oak tree beside a dirt path in a golden-hour meadow, lies down in the grass and slowly closes its eyes. Leaves flutter gently.",
+      "narration": "Sure of winning, he lay down for a nap." },
+    { "id": "s04", "seconds": 7, "framing": "macro close-up at ground level", "camera": "slow tracking alongside",
+      "prompt": "Close-up of a small olive-green tortoise with a domed patterned shell walking steadily along a dusty dirt path, each foot placed deliberately, golden-hour sunlight on its shell, grass blades in the foreground.",
+      "narration": "The tortoise just kept plodding, step after step." },
+    { "id": "s05", "seconds": 7, "framing": "wide shot", "camera": "slow crane up",
+      "prompt": "A small olive-green tortoise walks past a brown hare asleep in the shade under an old oak tree beside a dirt path in a meadow, late golden light turning orange. The tortoise continues up the path toward a distant gap in a hedgerow.",
+      "narration": "By the time the hare woke up, it was far too late." },
+    { "id": "s06", "seconds": 7, "framing": "medium close-up", "camera": "slow push-in",
+      "prompt": "At dawn, a woman in her thirties in a knit jumper sits at a small wooden kitchen table by a window, practising with handwritten flashcards beside a steaming mug and a small kitchen timer. Soft blue morning light, calm and focused, warm amber and sage tones.",
+      "narration": "Talent stalls when it stops showing up. Small daily steps keep adding up." },
+    { "id": "s07", "seconds": 5, "framing": "wide shot", "camera": "static",
+      "prompt": "A small olive-green tortoise rests at the top of a gentle grassy rise in a meadow at sunset, silhouetted against an orange sky, wildflowers swaying.",
+      "narration": "" }
+  ]
+}

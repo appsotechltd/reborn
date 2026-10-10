@@ -39,6 +39,19 @@ export interface CardSource {
   attribution: string;
 }
 
+/** An explainer video rendered for a card (see content/explainers). */
+export interface Explainer {
+  kind: "animated" | "film" | string;
+  /** Absolute, or a path relative to the API base URL. */
+  video_url: string;
+  poster_url: string;
+  captions_url?: string | null;
+  duration_s: number;
+  width: number;
+  height: number;
+  narrated: boolean;
+}
+
 export interface Card {
   id: string;
   title: string;
@@ -53,6 +66,7 @@ export interface Card {
   quiz?: Quiz | null;
   source: CardSource;
   credit: string;
+  explainer?: Explainer | null;
 }
 
 /** Full source (GET /v1/sources/{id}), fields from content/SCHEMA.md. */

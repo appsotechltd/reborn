@@ -14,6 +14,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/auth"
 	"github.com/appsotechltd/reborn/backend/internal/cache"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
+	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -31,7 +32,9 @@ type Server struct {
 	Embedder    embed.Embedder // nil when no embedding key is configured
 	AgentHourly int
 	CORSOrigins string
-	Now         func() time.Time
+	// ExplainerDir holds rendered explainer videos served under /media/explainers/; empty disables the route.
+	ExplainerDir string
+	Now          func() time.Time
 }
 
 // Handler returns the routed, middleware-wrapped handler.
@@ -41,6 +44,9 @@ func (s *Server) Handler() http.Handler {
 	}
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /healthz", s.health)
+	if s.ExplainerDir != "" {
+		mux.Handle("GET "+explainers.Route, explainers.Handler(s.ExplainerDir))
+	}
 
 	mux.HandleFunc("GET /v1/topics", s.topics)
 	mux.HandleFunc("GET /v1/feed", s.feed)

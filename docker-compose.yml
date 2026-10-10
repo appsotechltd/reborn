@@ -34,6 +34,7 @@ services:
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       VOYAGE_API_KEY: ${VOYAGE_API_KEY:-}
       CONTENT_DIR: /content/library
+      EXPLAINER_DIR: /content/explainers/out
     ports: ["8080:8080"]
     volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro"]
     depends_on:

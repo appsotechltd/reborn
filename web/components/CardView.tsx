@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { licenceName, paragraphs, topicName } from "@/lib/content";
 import type { Card } from "@/lib/types";
+import { ExplainerVideo } from "./ExplainerVideo";
 
 interface CardViewProps {
   card: Card;
@@ -53,6 +54,8 @@ export function CardView({ card, headingLevel = "h1", actions, children }: CardV
           {card.disclaimer}
         </p>
       ) : null}
+
+      {card.explainer ? <ExplainerVideo card={card} /> : null}
 
       <div className="prose-reborn mt-6">
         {paragraphs(card.body).map((p, i) => (

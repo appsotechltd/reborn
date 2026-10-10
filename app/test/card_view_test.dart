@@ -6,6 +6,7 @@ import 'package:reborn/src/api/models.dart';
 import 'package:reborn/src/data/providers.dart';
 import 'package:reborn/src/data/speaker.dart';
 import 'package:reborn/src/features/card/card_view.dart';
+import 'package:reborn/src/features/card/explainer_player.dart';
 import 'package:reborn/src/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -104,6 +105,40 @@ void main() {
     await tester.tap(find.text('Stop'));
     await tester.pump();
     expect(find.text('Listen'), findsOneWidget);
+  });
+
+  testWidgets('cards with an explainer show its poster and play button', (
+    tester,
+  ) async {
+    final card = sampleCard({
+      'explainer': {
+        'kind': 'animated',
+        'video_url': '/media/explainers/meditations-marcus-aurelius--01.mp4',
+        'poster_url': '/media/explainers/meditations-marcus-aurelius--01.jpg',
+        'captions_url': '/media/explainers/meditations-marcus-aurelius--01.vtt',
+        'duration_s': 48.6,
+        'width': 720,
+        'height': 1280,
+        'narrated': false,
+      },
+    });
+    await pumpCard(tester, card);
+    expect(find.byType(ExplainerPlayer), findsOneWidget);
+    expect(
+      find.bySemanticsLabel('Play animated explainer: ${card.title}'),
+      findsOneWidget,
+    );
+    expect(
+      find.text('Animated explainer · 49 s · captions on screen'),
+      findsOneWidget,
+    );
+    // The credit stays on the card even with a video.
+    expect(find.text(card.credit), findsOneWidget);
+  });
+
+  testWidgets('cards without an explainer show no player', (tester) async {
+    await pumpCard(tester, sampleCard());
+    expect(find.byType(ExplainerPlayer), findsNothing);
   });
 
   testWidgets('share text always includes the credit', (tester) async {
