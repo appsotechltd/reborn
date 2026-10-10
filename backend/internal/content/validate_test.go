@@ -1,6 +1,7 @@
 package content
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
@@ -35,7 +36,7 @@ func messages(ps []Problem) string {
 }
 
 func TestValidFile(t *testing.T) {
-	if ps := ValidateFile("test-source.json", validFile()); len(ps) != 0 {
+	if ps := ValidateFile("test-source.json", validFile()); hasError(ps) {
 		t.Fatalf("unexpected problems:\n%s", messages(ps))
 	}
 }
@@ -78,6 +79,19 @@ func TestCardCountIsWarning(t *testing.T) {
 	ps := ValidateFile("test-source.json", f)
 	if len(ps) != 1 || !ps[0].Warning {
 		t.Fatalf("want one warning, got:\n%s", messages(ps))
+	}
+}
+
+func TestTooManyCardsIsError(t *testing.T) {
+	f := validFile()
+	for i := len(f.Cards); i <= MaxCardsPerSource; i++ {
+		c := f.Cards[0]
+		c.ID = fmt.Sprintf("test-source--%02d", i+1)
+		f.Cards = append(f.Cards, c)
+	}
+	ps := ValidateFile("test-source.json", f)
+	if !hasError(ps) || !strings.Contains(messages(ps), "the most a source may have is 50") {
+		t.Fatalf("want an error for %d cards, got:\n%s", len(f.Cards), messages(ps))
 	}
 }
 

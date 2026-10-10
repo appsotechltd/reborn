@@ -18,7 +18,7 @@ One file per source: `content/library/<source-id>.json`.
 }
 ```
 
-A source should have 3–10 cards (the validator warns outside that range and rejects 0).
+Each source should have at least 30 cards, and up to 50 when the source has enough ideas. The validator warns below 30 (so a short source still loads) and rejects 0 or more than 50.
 
 ## Source
 
@@ -141,3 +141,4 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 - `health` is `true` whenever `topic` is `health`.
 - `quiz.answer` is a valid index into `quiz.options`.
 - Body length 25–160 words.
+- 1–50 cards per source; fewer than 30 is a warning.
