@@ -19,6 +19,17 @@ type Config struct {
 	VoyageAPIKey    string
 	VoyageModel     string
 	CORSOrigins     string
+
+	WebBaseURL string // where reset links and gift return pages point
+	SMTPURL    string
+	MailFrom   string
+
+	StripeSecretKey     string
+	StripeWebhookSecret string
+	AppleBundleID       string
+	AppleRootCAFile     string // Apple Root CA - G3, DER or PEM
+	GooglePackageName   string
+	GoogleServiceFile   string // Play Console service account JSON key
 }
 
 // Load reads the environment, applying development defaults.
@@ -35,6 +46,17 @@ func Load() Config {
 		VoyageAPIKey:    os.Getenv("VOYAGE_API_KEY"),
 		VoyageModel:     env("VOYAGE_MODEL", "voyage-3.5"),
 		CORSOrigins:     env("CORS_ORIGINS", "*"),
+
+		WebBaseURL: env("WEB_BASE_URL", "http://localhost:3000"),
+		SMTPURL:    os.Getenv("SMTP_URL"),
+		MailFrom:   env("MAIL_FROM", "Reborn <no-reply@reborn.app>"),
+
+		StripeSecretKey:     os.Getenv("STRIPE_SECRET_KEY"),
+		StripeWebhookSecret: os.Getenv("STRIPE_WEBHOOK_SECRET"),
+		AppleBundleID:       os.Getenv("APPLE_BUNDLE_ID"),
+		AppleRootCAFile:     os.Getenv("APPLE_ROOT_CA_FILE"),
+		GooglePackageName:   os.Getenv("GOOGLE_PLAY_PACKAGE"),
+		GoogleServiceFile:   os.Getenv("GOOGLE_PLAY_SERVICE_ACCOUNT_FILE"),
 	}
 }
 

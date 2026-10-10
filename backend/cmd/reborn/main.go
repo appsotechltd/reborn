@@ -10,12 +10,14 @@ package main
 
 import (
 	"context"
+	"crypto/x509"
 	"errors"
 	"fmt"
 	"log/slog"
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
@@ -27,6 +29,8 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/db"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
+	"github.com/appsotechltd/reborn/backend/internal/mail"
+	"github.com/appsotechltd/reborn/backend/internal/payments"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -155,6 +159,16 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		Embedder:    e,
 		AgentHourly: cfg.AgentHourly,
 		CORSOrigins: cfg.CORSOrigins,
+		WebBaseURL:  strings.TrimRight(cfg.WebBaseURL, "/"),
+	}
+	if srv.Mailer, err = mail.FromURL(cfg.SMTPURL, cfg.MailFrom); err != nil {
+		return err
+	}
+	if cfg.SMTPURL == "" {
+		slog.Warn("SMTP_URL is not set; password reset emails are written to the log")
+	}
+	if err := setupPayments(cfg, srv); err != nil {
+		return err
 	}
 	if cfg.AnthropicAPIKey != "" {
 		srv.Agent = agent.New(cfg.AnthropicAPIKey, cfg.AgentModel, st, e)
@@ -175,4 +189,35 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		defer cancel()
 		return hs.Shutdown(shutdown)
 	}
+}
+
+// setupPayments turns on each gift provider whose keys are configured.
+func setupPayments(cfg config.Config, srv *api.Server) error {
+	if cfg.StripeSecretKey != "" && cfg.StripeWebhookSecret != "" {
+		srv.Stripe = &payments.Stripe{SecretKey: cfg.StripeSecretKey, WebhookSecret: cfg.StripeWebhookSecret}
+	}
+	if cfg.AppleBundleID != "" && cfg.AppleRootCAFile != "" {
+		raw, err := os.ReadFile(cfg.AppleRootCAFile)
+		if err != nil {
+			return fmt.Errorf("APPLE_ROOT_CA_FILE: %w", err)
+		}
+		pool := x509.NewCertPool()
+		if !pool.AppendCertsFromPEM(raw) {
+			cert, err := x509.ParseCertificate(raw)
+			if err != nil {
+				return fmt.Errorf("APPLE_ROOT_CA_FILE: not a PEM or DER certificate")
+			}
+			pool.AddCert(cert)
+		}
+		srv.Apple = &payments.Apple{BundleID: cfg.AppleBundleID, Roots: pool}
+	}
+	if cfg.GooglePackageName != "" && cfg.GoogleServiceFile != "" {
+		key, err := os.ReadFile(cfg.GoogleServiceFile)
+		if err != nil {
+			return fmt.Errorf("GOOGLE_PLAY_SERVICE_ACCOUNT_FILE: %w", err)
+		}
+		srv.Google = &payments.Google{PackageName: cfg.GooglePackageName, ServiceAccount: key}
+	}
+	slog.Info("gift providers", "stripe", srv.Stripe != nil, "apple", srv.Apple != nil, "google", srv.Google != nil)
+	return nil
 }

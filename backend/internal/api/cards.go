@@ -138,7 +138,12 @@ func (s *Server) source(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, r, err, "source")
 		return
 	}
-	writeJSON(w, http.StatusOK, map[string]any{"source": src, "cards": cards})
+	follow, err := s.Store.FollowStateOf(r.Context(), "source", src.ID, userID(r))
+	if err != nil {
+		s.fail(w, r, err, "source")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"source": src, "cards": cards, "follow": follow})
 }
 
 func (s *Server) search(w http.ResponseWriter, r *http.Request) {
