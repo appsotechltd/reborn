@@ -1,0 +1,160 @@
+{
+  "source": {
+    "id": "48-laws-of-power-greene",
+    "title": "The 48 Laws of Power",
+    "authors": [
+      "Robert Greene"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/The_48_Laws_of_Power",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of The 48 Laws of Power by Robert Greene (1998). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Viking",
+    "year": 1998,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "48-laws-of-power-greene--01",
+      "topic": "business",
+      "tags": [
+        "communication",
+        "restraint",
+        "meetings"
+      ],
+      "title": "Say less, and your words carry more weight",
+      "body": "Greene notes that people who talk a lot tend to reveal too much, commit to things they regret and seem less sure of themselves. Those who speak briefly come across as more considered, and they leave fewer openings for misunderstanding.\n\nYou don't need any trickery to use this. In a negotiation, a review or a tense email thread, a short, clear answer is usually kinder and safer than a long one. Rambling often comes from nerves, not from having more to say.",
+      "apply_it": "In your next meeting, make your point in two sentences, then stop and let the silence do some work.",
+      "quiz": {
+        "question": "Why does Greene suggest saying less than you feel you need to?",
+        "options": [
+          "Silence makes others uncomfortable, which you can exploit",
+          "Talking too much tends to reveal more than you intended and weakens your position",
+          "People never remember what you say anyway",
+          "Short answers are always more polite"
+        ],
+        "answer": 1,
+        "explanation": "Over-talking leaks information and commitments. Brevity keeps you clear and considered."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--02",
+      "topic": "business",
+      "tags": [
+        "reputation",
+        "trust",
+        "career"
+      ],
+      "title": "Your reputation works for you long before you arrive",
+      "body": "In Greene's view, reputation is one of the most valuable things you own. A good name opens doors and gets you the benefit of the doubt; once it is damaged, it is slow and hard to repair.\n\nThe honest version of this is simple: keep promises, own mistakes quickly and be consistent, so that what people hear about you matches what they find. Today, with reviews, references and search results following everyone, your track record often reaches people before you do.",
+      "apply_it": "Think of one small promise you have made this week and make sure you keep it, or say clearly that you can't.",
+      "quiz": {
+        "question": "According to the book, why is reputation worth guarding carefully?",
+        "options": [
+          "It is easy to rebuild whenever you need to",
+          "It only matters to celebrities",
+          "It shapes how people treat you, and it is hard to restore once damaged",
+          "It matters less than raw ability"
+        ],
+        "answer": 2,
+        "explanation": "A good name earns trust in advance; a damaged one is slow to repair."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--03",
+      "topic": "business",
+      "tags": [
+        "planning",
+        "strategy",
+        "decision-making"
+      ],
+      "title": "Plan all the way to the end, not just the next step",
+      "body": "Greene points out that many people start a project full of energy but only think about the first few moves. When things go wrong halfway through, they improvise and get swept along by events.\n\nThinking through the whole path, including how it ends, what could go wrong and when you would stop, lets you make calmer choices at each stage. This applies to launching a product, changing jobs or starting a renovation: picture the finish line and the likely obstacles before you begin.",
+      "apply_it": "Before starting your next project, write down what 'done' looks like and the two most likely ways it could go off track.",
+      "quiz": {
+        "question": "What mistake does Greene warn against when starting something new?",
+        "options": [
+          "Planning too far ahead",
+          "Focusing only on the opening moves and improvising the rest",
+          "Asking others for advice",
+          "Setting a clear end point"
+        ],
+        "answer": 1,
+        "explanation": "Without a picture of the ending, people react to events rather than steering them."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--04",
+      "topic": "relationships",
+      "tags": [
+        "persuasion",
+        "conflict",
+        "influence"
+      ],
+      "title": "Show people, rather than winning the argument",
+      "body": "Greene observes that winning an argument often loses the person. Even if you are right, pushing someone into a corner can leave them resentful and no more convinced than before.\n\nDemonstrating your point tends to work better: build the prototype, run the small test, share the results, or simply model the behaviour you want. People find it easier to accept something they have seen with their own eyes than something they were argued into, and they keep their dignity in the process.",
+      "apply_it": "Next time you are tempted to debate a point at work or home, offer a small trial or example instead of more arguments.",
+      "quiz": {
+        "question": "Why might winning an argument backfire, according to the book?",
+        "options": [
+          "The other person may give in outwardly but stay resentful and unconvinced",
+          "Arguments always take too long",
+          "Being right never matters",
+          "It makes you look too confident"
+        ],
+        "answer": 0,
+        "explanation": "Forcing agreement can cost goodwill; a demonstration lets people convince themselves."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--05",
+      "topic": "relationships",
+      "tags": [
+        "isolation",
+        "connection",
+        "networks"
+      ],
+      "title": "Shutting yourself off feels safe but leaves you exposed",
+      "body": "When under pressure, it is tempting to withdraw and rely only on yourself. Greene argues that isolation is actually risky: you stop hearing useful information, lose touch with what people think, and have no allies when you need them.\n\nThe healthy takeaway is to stay connected, especially when things are hard. Keep talking to colleagues, friends and mentors. Remote work and busy lives make it easy to drift into a bubble without noticing, so staying in contact often takes deliberate effort.",
+      "apply_it": "Message one person you have lost touch with this month and ask how they are doing.",
+      "quiz": {
+        "question": "What does Greene say happens when you isolate yourself to stay safe?",
+        "options": [
+          "You become more powerful and focused",
+          "Nothing changes",
+          "You lose information and support, which makes you more vulnerable",
+          "People respect you more"
+        ],
+        "answer": 2,
+        "explanation": "Withdrawal cuts you off from news, feedback and allies, the very things that protect you."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--06",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "manipulation",
+        "choices",
+        "negotiation",
+        "awareness"
+      ],
+      "title": "Spot the false choice: who decided which options you get?",
+      "body": "One tactic Greene describes is controlling the options: offering someone a choice in which every option suits the person offering it. The chooser feels free, yet the outcome was decided in advance.\n\nKnowing this helps you notice it. A salesperson asking 'the standard plan or the premium one?' or a manager asking 'can you finish it Friday or Monday?' may be framing things this way. When the choices feel oddly narrow, ask what has been left off the list, including the option to say no or suggest something else.",
+      "apply_it": "When you are next offered two options, pause and name at least one alternative that wasn't on the table.",
+      "quiz": {
+        "question": "What is the 'control the options' tactic Greene describes?",
+        "options": [
+          "Giving someone unlimited choices to confuse them",
+          "Refusing to offer any choice",
+          "Letting the other person set the agenda",
+          "Offering choices that all lead to the outcome the offerer wants"
+        ],
+        "answer": 3,
+        "explanation": "The chooser feels free, but every option has been pre-selected. Asking what's missing breaks the frame."
+      }
+    }
+  ]
+}

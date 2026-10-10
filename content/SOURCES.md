@@ -111,6 +111,14 @@ the source, credit the author, link back, and carry no quotes. Good candidates f
 - African voices: Chimamanda Ngozi Adichie's talks, Chinua Achebe, Wangari Maathai's *Unbowed*,
   Tony Elumelu Foundation and Africa-focused business writing.
 
+**In use:** The Richest Man in Babylon (Clason), Think and Grow Rich (Hill), Eat That Frog! (Tracy),
+The 48 Laws of Power (Greene), Atomic Habits (Clear) and Mini Habits (Guise). They are registered in
+`sources.toml` with `adapter = "summary"`. *The Richest Man in Babylon* (1926) has been public
+domain in the US since 2022, but Clason died in 1957, so it is in copyright until the end of 2027 in
+life+70 countries (UK, EU, Nigeria). *Think and Grow Rich* (1937) is sometimes called public domain
+in the US for lack of a renewal; that is unconfirmed, and Hill died in 1970. Both are summaries for
+now so the cards are safe in every country.
+
 The pipeline has no adapter for these on purpose: nothing is fetched or stored. Cards are written
 by hand and the validator rejects any `quote` on them.
 
