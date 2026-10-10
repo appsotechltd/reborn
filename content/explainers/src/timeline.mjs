@@ -31,7 +31,7 @@ export function phrases(text, max = 9) {
  * scenes: [{ type, narration, params, min_seconds }]
  * audio:  per scene { seconds } | null (null = estimate from word count)
  */
-export function buildTimeline({ card, scenes, audio, fps = 30 }) {
+export function buildTimeline({ card, scenes, audio, fps = 30, captionMax = 9 }) {
   let t = 0;
   const laid = scenes.map((s, i) => {
     const words = wordCount(s.narration);
@@ -43,14 +43,25 @@ export function buildTimeline({ card, scenes, audio, fps = 30 }) {
     const captions = [];
     if (words) {
       let c = start + LEAD_IN;
-      for (const p of phrases(s.narration)) {
+      for (const p of phrases(s.narration, captionMax)) {
         const len = (wordCount(p) / words) * speech;
         captions.push({ start: round(c), end: round(c + len), text: p });
         c += len;
       }
     }
+    // Beats change the picture partway through a scene, on a given word of the narration.
+    const spoken = (s.narration || "").split(/\s+/).filter(Boolean).map((w) => w.toLowerCase().replace(/[^a-z0-9']/g, ""));
+    const beats = (s.params?.beats || []).map((b) => {
+      let at = b.at ?? 0;
+      if (b.word) {
+        const w = spoken.indexOf(b.word.toLowerCase());
+        if (w < 0) throw new Error(`beat word "${b.word}" is not in the narration of scene ${i} (${s.type})`);
+        at = LEAD_IN + (w / Math.max(1, words)) * speech;
+      }
+      return { ...b, start: round(start + at) };
+    });
     return { type: s.type, cut: Boolean(s.cut), params: s.params || {}, narration: s.narration || "", start: round(start), duration: round(duration),
-      speechStart: round(start + LEAD_IN), captions };
+      speechStart: round(start + LEAD_IN), captions, beats };
   });
   return { fps, width: 540, height: 960, scale: 2, card, scenes: laid, duration: round(t) };
 }

@@ -9,7 +9,7 @@
 //
 // Env: ELEVENLABS_API_KEY (+ optional ELEVENLABS_VOICE_ID, ELEVENLABS_MODEL) adds narration.
 //      CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
-import { readFile, writeFile, mkdir, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { spawn } from "node:child_process";
 import path from "node:path";
@@ -53,6 +53,30 @@ async function mixNarration(timeline, audio, file) {
   await ffmpeg([...inputs, "-filter_complex", [...chains, mix].join(";"), "-map", "[out]", "-c:a", "aac", "-b:a", "128k", file]).done;
 }
 
+/** Composes music and sound effects for the edit (tools/score.py) and mixes them under the voice, ducking for speech. */
+async function addScore(timeline, voiceFile, outFile, base) {
+  const plan = {
+    duration: timeline.duration,
+    scenes: timeline.scenes.map((s) => ({ start: s.start, duration: s.duration, lift: Boolean(s.params.lift) })),
+    beats: timeline.scenes.flatMap((s) => (s.beats || []).map((b) => ({ at: b.start }))),
+    seed: 1,
+  };
+  await writeFile(`${base}.score.json`, JSON.stringify(plan));
+  await new Promise((res, rej) => {
+    const p = spawn(process.env.PYTHON || "python3", [path.join(ROOT, "tools", "score.py"), `${base}.score.json`, `${base}.score.wav`], { stdio: "inherit" });
+    p.on("close", (code) => (code === 0 ? res() : rej(new Error(`score.py exited ${code}`))));
+  });
+  const tmp = `${base}.mix.m4a`;
+  const graph = voiceFile
+    ? `[0:a]aformat=channel_layouts=stereo,asplit=2[v][key];[1:a]volume=0.5[m];[m][key]sidechaincompress=threshold=0.04:ratio=5:attack=30:release=500[duck];[v][duck]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1:LRA=11,aresample=44100,apad,atrim=0:${timeline.duration}[out]`
+    : `[0:a]loudnorm=I=-16:TP=-1:LRA=11,aresample=44100,apad,atrim=0:${timeline.duration}[out]`;
+  const inputs = voiceFile ? ["-i", voiceFile, "-i", `${base}.score.wav`] : ["-i", `${base}.score.wav`];
+  await ffmpeg([...inputs, "-filter_complex", graph, "-map", "[out]", "-c:a", "aac", "-b:a", "160k", tmp]).done;
+  await rename(tmp, outFile);
+  await rm(`${base}.score.json`, { force: true });
+  await rm(`${base}.score.wav`, { force: true });
+}
+
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
@@ -68,7 +92,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   const cardId = opt.label || card.id;
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
-  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30 }), theme: opt.theme || null };
+  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null, captionStyle: opt.captionStyle || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
   page.on("pageerror", (e) => console.error(`[${cardId}] page error:`, e.message));
@@ -95,11 +119,13 @@ export async function renderScenes(browser, card, scenes, opt) {
   await mkdir(path.dirname(base), { recursive: true });
   const narrationFile = `${base}.narration.m4a`;
   if (provider) await mixNarration(timeline, audio, narrationFile);
+  if (opt.score) await addScore(timeline, provider ? narrationFile : null, narrationFile, base);
+  const hasAudio = Boolean(provider || opt.score);
 
   const frames = Math.ceil(timeline.duration * timeline.fps);
   const enc = ffmpeg([
     "-f", "image2pipe", "-framerate", String(timeline.fps), "-c:v", "mjpeg", "-i", "-",
-    ...(provider ? ["-i", narrationFile, "-map", "0:v", "-map", "1:a", "-c:a", "copy"] : []),
+    ...(hasAudio ? ["-i", narrationFile, "-map", "0:v", "-map", "1:a", "-c:a", "copy"] : []),
     "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-pix_fmt", "yuv420p", "-profile:v", "high",
     "-vf", "scale=720:1280:flags=lanczos", "-movflags", "+faststart", "-t", String(timeline.duration), `${base}.mp4`,
   ], true);
@@ -112,7 +138,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   }
   enc.stdin.end();
   await enc.done;
-  if (provider) await rm(narrationFile, { force: true });
+  if (hasAudio) await rm(narrationFile, { force: true });
 
   // Poster: the title scene once the title has landed.
   await page.evaluate((x) => window.__seek(x), Math.min(timeline.scenes[0].duration - 0.6, 3.2));

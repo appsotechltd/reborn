@@ -71,26 +71,47 @@
     const P = Array.from({ length: N }, () => ({ ph: rnd() * TAU, f: 0.5 + rnd() * 1.5, r: 0.7 + rnd() * rnd() * 1.6,
       delay: rnd() * 0.5, esc: rnd(), ex: rnd() * 2 - 1, ez: rnd() * 2 - 1,
       gr: 80 + rnd() * 380, ga: rnd() * TAU, gy: (rnd() - 0.5) * 120 * rnd() }));
-    let objs = null;
+    let shots = null;
     const galaxy = (p, t) => { const a = p.ga + t * (40 / p.gr); return [Math.cos(a) * p.gr, p.gy, Math.sin(a) * p.gr]; };
     const NEAR = [255, 214, 150], FAR = [70, 120, 255];
 
     return function draw(g, t, energy) {
-      if (!objs) objs = tl.scenes.map((s, i) => (s.params.object ? object(s.params.object, 700 + i) : null));
+      if (!shots) {
+        // A shot per scene, plus one per beat: the object re-forms on a word of the narration.
+        shots = [];
+        tl.scenes.forEach((s) => {
+          shots.push({ start: s.start, object: s.params.object, leak: s.params.leak, zoom: s.params.zoom });
+          for (const b of s.beats || []) shots.push({ start: b.start, object: b.object, leak: b.leak, zoom: b.zoom });
+        });
+        shots.forEach((sh, i) => { sh.end = shots[i + 1] ? shots[i + 1].start : tl.duration; sh.pts = sh.object ? object(sh.object, 700 + i) : null; });
+      }
       let k = 0;
-      while (k < tl.scenes.length - 1 && t >= tl.scenes[k + 1].start) k++;
-      const sc = tl.scenes[k];
+      while (k < shots.length - 1 && t >= shots[k + 1].start) k++;
+      const sc = shots[k];
+      sc.duration = sc.end - sc.start;
 
       const bg = g.createLinearGradient(0, 0, 0, H);
       bg.addColorStop(0, "#020208"); bg.addColorStop(0.45, "#07081a"); bg.addColorStop(1, "#010104");
       g.fillStyle = bg; g.fillRect(0, 0, W, H);
+      // Nebula clouds: slow, colourful depth behind everything.
+      g.globalCompositeOperation = "lighter";
+      for (const [x, y, r, c, sp] of [[0.2, 0.25, 360, [20, 70, 120], 0.07], [0.85, 0.5, 400, [90, 40, 20], 0.05], [0.4, 0.8, 380, [40, 20, 90], 0.06], [0.7, 0.15, 260, [10, 90, 100], 0.08]]) {
+        const gx = W * x + Math.sin(t * sp + r) * 50, gy = H * y + Math.cos(t * sp * 1.3 + r) * 40;
+        const gr = g.createRadialGradient(gx, gy, 0, gx, gy, r);
+        gr.addColorStop(0, `rgba(${c[0]},${c[1]},${c[2]},${(0.32 + 0.15 * energy).toFixed(3)})`); gr.addColorStop(1, "rgba(0,0,0,0)");
+        g.fillStyle = gr; g.fillRect(gx - r, gy - r, r * 2, r * 2);
+      }
+      g.globalCompositeOperation = "source-over";
+      // Slow camera push-in through each shot (or pull-out when a shot asks for it).
+      const push = R.ease(R.seg(t - sc.start, 0, sc.duration));
+      const zoom = sc.zoom === "out" ? R.lerp(1.25, 0.95, push) : R.lerp(0.95, 1.18, push);
 
       const yaw = t * 0.45, pitch = 0.32 + Math.sin(t * 0.23) * 0.12;
       const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
       const project = (x, y, z) => {
         const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
         const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
-        const s = FOCAL / (DIST + z2);
+        const s = (FOCAL * zoom) / (DIST + z2);
         return [CX + x1 * s, CY + y2 * s, z2, s];
       };
 
@@ -107,10 +128,10 @@
       for (let i = 0; i < N; i++) {
         const p = P[i];
         const at = (j) => {
-          if (!objs[j]) return galaxy(p, t);
-          if (tl.scenes[j].params.object.kind !== "text") return objs[j][i];
+          if (!shots[j].pts) return galaxy(p, t);
+          if (shots[j].object.kind !== "text") return shots[j].pts[i];
           // Words stay readable: cancel the camera's spin and just sway a little.
-          const [ox, oy, oz] = objs[j][i], r = yaw + Math.sin(t * 0.6) * 0.4;
+          const [ox, oy, oz] = shots[j].pts[i], r = yaw + Math.sin(t * 0.6) * 0.25;
           return [ox * Math.cos(r) + oz * Math.sin(r), oy, -ox * Math.sin(r) + oz * Math.cos(r)];
         };
         const m = R.ease(R.seg(t - sc.start, p.delay, p.delay + MORPH));
@@ -120,13 +141,13 @@
         let x = R.lerp(A[0], B[0], m) * bulge, y = R.lerp(A[1], B[1], m) * bulge, z = R.lerp(A[2], B[2], m) * bulge;
         x += Math.sin(t * p.f + p.ph) * 1.5; y += Math.cos(t * p.f * 1.3 + p.ph) * 1.5;
         let a = 1;
-        const leak = sc.params.leak || 0;
-        if (objs[k] && p.esc < leak) {
+        const leak = sc.leak || 0;
+        if (sc.pts && p.esc < leak) {
           const te = sc.start + 1.8 + (p.esc / leak) * (sc.duration - 2.6);
           const e = Math.max(0, t - te);
           if (e > 0) { x += p.ex * e * 60; z += p.ez * e * 60; y += e * e * 40; a = Math.max(0, 1 - e / 2.8); }
         }
-        if (!objs[k]) a *= 0.5;
+        if (!sc.pts) a *= 0.5;
         const [sx, sy2, z2, s] = project(x, y, z);
         const near = R.clamp(0.5 - z2 / 420); // 1 = close to the camera
         const c = [0, 1, 2].map((j) => Math.round(R.lerp(FAR[j], NEAR[j], near)));
@@ -139,6 +160,15 @@
         g.beginPath(); g.arc(sx, sy2, r * 0.75, 0, TAU); g.fill();
       }
       g.globalCompositeOperation = "source-over";
+      // Film finish: vignette and a fresh grain pattern every frame.
+      const v = g.createRadialGradient(CX, H * 0.42, H * 0.22, CX, H * 0.42, H * 0.78);
+      v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,0.7)");
+      g.fillStyle = v; g.fillRect(0, 0, W, H);
+      const gr = R.rng(Math.floor(t * 30) + 1);
+      for (let n = 0; n < 1400; n++) {
+        g.fillStyle = gr() < 0.5 ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.09)";
+        g.fillRect(gr() * W, gr() * H, 1.2, 1.2);
+      }
     };
   }
 
