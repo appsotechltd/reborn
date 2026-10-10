@@ -1,0 +1,56 @@
+import { render, screen, within } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { CardView } from "@/components/CardView";
+import { makeCard } from "./fixtures";
+
+describe("<CardView>", () => {
+  it("always shows the credit line with links to the source page, original and licence", () => {
+    const card = makeCard();
+    render(<CardView card={card} />);
+    const credit = screen.getByTestId("card-credit");
+    const creditLink = within(credit).getByRole("link", { name: card.credit });
+    expect(creditLink.getAttribute("href")).toBe("/sources/example-book");
+    expect(within(credit).getByRole("link", { name: /original source/i }).getAttribute("href")).toBe(
+      "https://example.org/book",
+    );
+    const licence = within(credit).getByRole("link", { name: "Public domain" });
+    expect(licence.getAttribute("href")).toBe("https://example.org/licence");
+    expect(licence.getAttribute("rel")).toContain("license");
+  });
+
+  it("shows the health disclaimer when present", () => {
+    const disclaimer = "This is general information, not medical advice.";
+    render(<CardView card={makeCard({ health: true, topic: "health", disclaimer })} />);
+    const note = screen.getByRole("note", { name: /health disclaimer/i });
+    expect(note.textContent).toContain(disclaimer);
+    expect(screen.getByTestId("card-credit")).toBeTruthy();
+  });
+
+  it("shows no disclaimer when there is none", () => {
+    render(<CardView card={makeCard()} />);
+    expect(screen.queryByRole("note")).toBeNull();
+  });
+
+  it("keeps credit and disclaimer even with extra children and actions", () => {
+    render(
+      <CardView
+        card={makeCard({ health: true, disclaimer: "Not medical advice.", credit: "Source: Someone, Something, CC BY 4.0" })}
+        headingLevel="h2"
+        actions={<button type="button">Listen</button>}
+      >
+        <p>Quiz goes here</p>
+      </CardView>,
+    );
+    expect(screen.getByText("Source: Someone, Something, CC BY 4.0")).toBeTruthy();
+    expect(screen.getByRole("note").textContent).toContain("Not medical advice.");
+    expect(screen.getByRole("heading", { level: 2, name: "Small steps beat big plans" })).toBeTruthy();
+  });
+
+  it("renders body paragraphs, the quote and Apply it", () => {
+    render(<CardView card={makeCard({ quote: "A short quote." })} />);
+    expect(screen.getByText("A first paragraph about taking small steps.")).toBeTruthy();
+    expect(screen.getByText("A second paragraph about keeping going.")).toBeTruthy();
+    expect(screen.getByText("“A short quote.”")).toBeTruthy();
+    expect(screen.getByRole("region", { name: "Apply it" }).textContent).toContain("Pick one tiny step");
+  });
+});

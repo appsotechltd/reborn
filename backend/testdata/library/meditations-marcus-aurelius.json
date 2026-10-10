@@ -1,0 +1,64 @@
+{
+  "source": {
+    "id": "meditations-marcus-aurelius",
+    "title": "Meditations",
+    "authors": ["Marcus Aurelius"],
+    "translator": "George Long",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/2680",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Marcus Aurelius, Meditations (trans. George Long), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 180,
+    "language": "en",
+    "retrieved_at": "2026-10-10"
+  },
+  "cards": [
+    {
+      "id": "meditations-marcus-aurelius--01",
+      "topic": "mindfulness",
+      "tags": ["stoicism", "difficult-people"],
+      "title": "Expect difficult people before the day starts",
+      "body": "Each morning, Marcus reminded himself that he would meet people who are rude, ungrateful or dishonest. He wasn't being cynical. Naming it in advance took the surprise out of it, so he could respond calmly instead of reacting.\n\nThey act that way, he reasoned, because they don't know better, and being angry with them only harms you.",
+      "quote": "Begin the morning by saying to thyself, I shall meet with the busy-body, the ungrateful, arrogant, deceitful, envious, unsocial.",
+      "apply_it": "Before your next meeting, name one way it could go badly and decide now how you will respond.",
+      "locator": "Book II, 1",
+      "quiz": {
+        "question": "Why did Marcus expect to meet difficult people each morning?",
+        "options": ["To avoid them", "So their behaviour wouldn't catch him off guard", "To judge them"],
+        "answer": 1,
+        "explanation": "Anticipating it let him respond calmly rather than react."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--02",
+      "topic": "mindfulness",
+      "tags": ["stoicism", "control"],
+      "title": "Your judgement, not the event, is what hurts",
+      "body": "Marcus noticed that most of his distress came from the story he told about an event, not the event itself. Take away the opinion \"I have been harmed\" and the feeling of harm goes with it.\n\nThis doesn't mean pretending nothing happened. It means separating what occurred from the meaning you add, and choosing that meaning more carefully.",
+      "quote": "Take away thy opinion, and then there is taken away the complaint, I have been harmed.",
+      "apply_it": "Write down something that upset you today, then rewrite it as a plain fact with no judgement words.",
+      "locator": "Book IV, 7",
+      "quiz": {
+        "question": "According to Marcus, where does most distress come from?",
+        "options": ["Other people's actions", "Our opinion about what happened", "Bad luck"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--03",
+      "topic": "personal-development",
+      "tags": ["stoicism", "motivation"],
+      "title": "Get out of bed for the work only you can do",
+      "body": "On mornings when he wanted to stay under the blankets, Marcus asked himself what he was made for. Comfort, he decided, was not the point; doing the work of a human being was.\n\nReframing the day as a chance to do useful work, rather than a list of chores, made getting up a choice instead of a struggle.",
+      "apply_it": "Tonight, write one sentence about the most useful thing you will do tomorrow, and read it when you wake.",
+      "locator": "Book V, 1",
+      "quiz": {
+        "question": "What question helped Marcus get up in the morning?",
+        "options": ["What am I made for?", "What will I eat?", "Who will I see?"],
+        "answer": 0
+      }
+    }
+  ]
+}

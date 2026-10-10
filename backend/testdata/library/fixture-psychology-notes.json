@@ -1,0 +1,79 @@
+{
+  "source": {
+    "id": "fixture-psychology-notes",
+    "title": "Psychology notes (test fixture)",
+    "authors": [
+      "Reborn test fixtures"
+    ],
+    "kind": "article",
+    "url": "https://example.com/reborn-fixture-psychology",
+    "licence": "original-summary",
+    "licence_url": "https://example.com/reborn-fixture-psychology",
+    "attribution": "Reborn test fixture, not a real source",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Test data only. Never seed this into production."
+  },
+  "cards": [
+    {
+      "id": "fixture-psychology-notes--01",
+      "topic": "psychology",
+      "tags": [
+        "memory",
+        "learning"
+      ],
+      "title": "Spread your study out to remember more",
+      "body": "Cramming feels productive, but information studied in one long session fades quickly. Spreading the same amount of practice over several shorter sessions, with gaps in between, leads to much better long-term memory. This is called the spacing effect.\n\nEach time you return to the material after a break, you have to work a little to recall it, and that effort strengthens the memory.",
+      "apply_it": "Split your next study or learning goal into three 20-minute sessions on different days instead of one hour today.",
+      "quiz": {
+        "question": "What is the spacing effect?",
+        "options": [
+          "Cramming improves memory",
+          "Spreading practice over time improves memory",
+          "Studying in silence improves memory"
+        ],
+        "answer": 1
+      }
+    },
+    {
+      "id": "fixture-psychology-notes--02",
+      "topic": "psychology",
+      "tags": [
+        "bias",
+        "decision-making"
+      ],
+      "title": "We look for evidence we already agree with",
+      "body": "Confirmation bias is our tendency to notice, search for and remember information that supports what we already believe, while overlooking evidence against it. It affects everyone, including experts, and it can make us confident in ideas that are wrong.\n\nThe fix is not more intelligence but a habit: deliberately looking for the strongest case against your own view.",
+      "apply_it": "Pick one belief you hold firmly and spend five minutes finding the best argument against it.",
+      "quiz": {
+        "question": "What does confirmation bias make us do?",
+        "options": [
+          "Seek evidence that supports our beliefs",
+          "Change our minds easily",
+          "Forget what we believe"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "id": "fixture-psychology-notes--03",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stress",
+        "coping"
+      ],
+      "title": "How you appraise stress shapes how it feels",
+      "body": "Two people can face the same deadline and feel very differently about it. Psychologists describe a two-step appraisal: first we judge whether something is a threat, then whether we have the resources to cope.\n\nWhen we see a demand as a challenge we can handle, stress tends to energise us. When we see it as a threat beyond our resources, it drains us.",
+      "apply_it": "For one stressor this week, list three resources you have to handle it: people, skills or time.",
+      "quiz": {
+        "question": "In the two-step appraisal, what is the second question?",
+        "options": [
+          "Is it fair?",
+          "Do I have the resources to cope?",
+          "Who caused it?"
+        ],
+        "answer": 1
+      }
+    }
+  ]
+}
