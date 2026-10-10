@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useState } from "react";
 import { ContributionStatus } from "@/components/ContributionStatus";
 import { ErrorNote, Loading, RequireAuth } from "@/components/SignInPrompt";
@@ -8,7 +9,8 @@ import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { formatAuthors, paragraphs, topicName } from "@/lib/content";
 import { useLoad } from "@/lib/use-load";
-import type { Contribution } from "@/lib/types";
+import { timeAgo } from "@/lib/social";
+import type { Contribution, ReportedComment } from "@/lib/types";
 
 export function ModerationView() {
   return (
@@ -36,7 +38,94 @@ function ModeratorOnly() {
       </div>
     );
   }
-  return <Queue />;
+  return (
+    <>
+      <Queue />
+      <ReportedComments />
+    </>
+  );
+}
+
+function ReportedComments() {
+  const { api, token } = useAuth();
+  const loader = useCallback(() => api.reportedComments().then((r) => r.comments), [api, token]); // eslint-disable-line react-hooks/exhaustive-deps
+  const { data, error, loading, setData } = useLoad(loader);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [actionError, setActionError] = useState<string | null>(null);
+  const [decided, setDecided] = useState<Record<string, "hidden" | "restored">>({});
+
+  async function decide(c: ReportedComment, hide: boolean) {
+    setBusy(c.id);
+    setActionError(null);
+    try {
+      await (hide ? api.hideComment(c.id) : api.restoreComment(c.id));
+      setDecided((d) => ({ ...d, [c.id]: hide ? "hidden" : "restored" }));
+      setData((prev) => (prev ?? []).map((p) => (p.id === c.id ? { ...p, status: hide ? "hidden" : "visible" } : p)));
+    } catch (err) {
+      setActionError(isApiError(err) ? err.message : "Couldn't save the decision.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  return (
+    <section aria-labelledby="reported-title" className="mt-16">
+      <h2 id="reported-title" className="font-serif text-2xl font-semibold">Reported comments</h2>
+      <p className="mt-1 text-sm text-muted">
+        Three reports hide a comment until you decide. Hiding or restoring clears its reports.
+      </p>
+      <div className="mt-4">
+        {loading ? (
+          <Loading label="Loading reported comments…" />
+        ) : error ? (
+          <ErrorNote error={error} />
+        ) : !data?.length ? (
+          <p className="panel p-6 text-center text-muted">No reported comments.</p>
+        ) : (
+          <ul className="grid gap-4">
+            {data.map((c) => (
+              <li key={c.id} className="panel p-5">
+                <p className="flex flex-wrap items-center gap-2 text-sm">
+                  <Link href={`/u/${c.author.handle}`} className="font-semibold hover:underline">{c.author.display_name}</Link>
+                  <span className="text-muted">@{c.author.handle} · {timeAgo(c.created_at)} · on</span>
+                  <Link href={`/ideas/${c.post_id}#comments`} className="link">{c.post_id}</Link>
+                </p>
+                <p className="mt-2 whitespace-pre-line break-words">{c.body}</p>
+                <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+                  <span className={`inline-flex rounded-full border px-2.5 py-0.5 text-xs font-semibold ${c.status === "hidden" ? "border-bad text-bad" : "border-line text-muted"}`}>
+                    {c.status === "hidden" ? "Hidden" : "Visible"}
+                  </span>
+                  <span className="text-muted">
+                    {c.reports} {c.reports === 1 ? "report" : "reports"}
+                  </span>
+                </p>
+                {c.reasons?.length ? (
+                  <ul className="mt-2 list-disc pl-5 text-sm text-muted">
+                    {c.reasons.map((r, i) => <li key={i}>{r}</li>)}
+                  </ul>
+                ) : null}
+                {decided[c.id] ? (
+                  <p role="status" className="mt-3 text-sm font-semibold text-ok">
+                    {decided[c.id] === "hidden" ? "Hidden" : "Restored"} ✓
+                  </p>
+                ) : (
+                  <div className="mt-3 flex gap-2">
+                    <button type="button" className="btn btn-small btn-primary" disabled={busy !== null} onClick={() => decide(c, true)}>
+                      Hide
+                    </button>
+                    <button type="button" className="btn btn-small" disabled={busy !== null} onClick={() => decide(c, false)}>
+                      Restore
+                    </button>
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+        <ErrorNote error={actionError} />
+      </div>
+    </section>
+  );
 }
 
 function Queue() {

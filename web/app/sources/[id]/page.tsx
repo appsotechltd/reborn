@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CardList } from "@/components/CardPreview";
+import { AuthorLinks } from "@/components/CardView";
+import { SourceFollowButton } from "@/components/FollowButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, formatYear, licenceName } from "@/lib/content";
@@ -40,7 +42,7 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
   const { data, ok } = await loadOr(() => getSource(id), null);
   if (!ok) return <Unavailable what="this source" />;
   if (!data) notFound();
-  const { source, cards } = data;
+  const { source, cards, follow } = data;
   const isBook = source.kind === "book" || source.kind === "textbook";
 
   return (
@@ -62,7 +64,12 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
       <header className="mx-auto max-w-read">
         <p className="eyebrow capitalize">{source.kind}</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-balance">{source.title}</h1>
-        <p className="mt-2 text-lg text-muted">by {formatAuthors(source.authors)}</p>
+        <p className="mt-2 text-lg text-muted">
+          by <AuthorLinks authors={source.authors} />
+        </p>
+        <div className="mt-4">
+          <SourceFollowButton id={source.id} title={source.title} initial={follow} />
+        </div>
 
         <dl className="panel mt-6 grid gap-x-6 gap-y-3 p-5 text-[0.9375rem] sm:grid-cols-[auto_1fr]">
           {source.translator ? (

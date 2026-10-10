@@ -8,6 +8,8 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	slog.SetDefault(slog.New(slog.NewTextHandler(io.Discard, nil)))
+	if os.Getenv("TEST_LOG") == "" {
+		slog.SetDefault(slog.New(slog.NewTextHandler(io.Discard, nil)))
+	}
 	os.Exit(m.Run())
 }

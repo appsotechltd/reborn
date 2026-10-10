@@ -64,6 +64,9 @@ Or run the whole backend in Docker: `docker compose up --build`, then
 | `VOYAGE_MODEL` | `voyage-3.5` | Embedding model (1024 dimensions) |
 | `CONTENT_DIR` | `../content/library` | Default folder for `seed` and `validate` |
 | `CORS_ORIGINS` | `*` | Comma-separated origins allowed to call the API from a browser |
+| `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET` | unset | Cloudflare R2 bucket for every media file (videos, images, captions, documents). Required in production |
+| `MEDIA_BASE_URL` | `http://localhost:8080/media` without R2 | Public URL of the R2 bucket (a custom domain or the `r2.dev` URL); media links are built from it |
+| `MEDIA_DIR` | `media` | Development only: without R2, files are kept here and the API serves them at `/media/` |
 
 ### Backend commands
 
@@ -73,7 +76,15 @@ go run ./cmd/reborn seed [dir]              # validate, import and embed
 go run ./cmd/reborn embed                   # embed cards missing vectors
 go run ./cmd/reborn make-moderator a@b.com  # let a user moderate contributions
 go run ./cmd/reborn serve                   # migrate and serve
+go run ./cmd/reborn media-upload <dir> [prefix]  # copy media files to R2, skipping unchanged ones
 ```
+
+All media lives in Cloudflare R2. Create a bucket, give it a public URL (Settings, then
+Custom Domains or the r2.dev subdomain), create an R2 API token with Object Read & Write on
+that bucket, and set the four `R2_*` variables plus `MEDIA_BASE_URL`. For example,
+`reborn media-upload ../content/explainers/out explainers` uploads the explainer videos to
+`explainers/…` in the bucket. Without R2 settings the server and `media-upload` use the
+local `MEDIA_DIR` instead, which is only meant for development.
 
 Tests: `go test ./...` runs unit tests; set `TEST_DATABASE_URL` (a Postgres user that can
 create databases) and optionally `TEST_REDIS_URL` to run the API integration tests too.
