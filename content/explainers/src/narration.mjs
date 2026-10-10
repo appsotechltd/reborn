@@ -3,6 +3,7 @@
 // A provider is { name, voice, synthesize(text, { previousText, nextText }) -> Buffer (mp3) }.
 // Two are built in:
 // - kokoro: Kokoro-82M, a free open-weights voice (Apache-2.0) that runs locally.
+// - chatterbox: Chatterbox (MIT), more expressive, with an emotion dial and voice cloning; slower.
 //   Install it with tools/setup-kokoro.sh. This is the default when it is installed.
 // - elevenlabs: paid, used instead when ELEVENLABS_API_KEY is set.
 // With neither, the video renders silent with burned-in captions, and timings
@@ -81,6 +82,42 @@ export function kokoro({
   };
 }
 
+export const CHATTERBOX_DIR = process.env.CHATTERBOX_DIR || path.join(ROOT, ".cache", "chatterbox");
+
+/** Chatterbox (Resemble AI, MIT): more expressive than Kokoro, slower on a CPU. */
+export function chatterbox({
+  dir = CHATTERBOX_DIR,
+  exaggeration = Number(process.env.CHATTERBOX_EXAGGERATION || 0.6),
+  cfg = Number(process.env.CHATTERBOX_CFG || 0.35),
+  reference = process.env.CHATTERBOX_REFERENCE || "",
+} = {}) {
+  const python = path.join(dir, "venv", "bin", "python");
+  if (!existsSync(python)) return null;
+  const script = path.join(ROOT, "tools", "chatterbox_tts.py");
+  return {
+    name: "chatterbox",
+    voice: `chatterbox/${path.basename(reference) || "default"}@${exaggeration}/${cfg}`,
+    async synthesize(text) {
+      const tmp = await mkdtemp(path.join(tmpdir(), "chatterbox-"));
+      try {
+        const wav = path.join(tmp, "line.wav");
+        await new Promise((resolve, reject) => {
+          const p = spawn(python, [script, String(exaggeration), String(cfg), reference], { stdio: ["pipe", "ignore", "pipe"] });
+          let err = "";
+          p.stderr.on("data", (d) => (err += d));
+          p.on("close", (code) => (code === 0 ? resolve() : reject(new Error(`chatterbox exited ${code}: ${err.slice(-400)}`))));
+          p.stdin.end(JSON.stringify({ text, out: wav }) + "\n");
+        });
+        const mp3 = path.join(tmp, "line.mp3");
+        await run("ffmpeg", ["-v", "error", "-y", "-i", wav, "-c:a", "libmp3lame", "-b:a", "128k", mp3]);
+        return await readFile(mp3);
+      } finally {
+        await rm(tmp, { recursive: true, force: true });
+      }
+    },
+  };
+}
+
 /**
  * Picks the provider from --voice / NARRATION_PROVIDER; null means silent.
  * "auto" (the default) uses ElevenLabs when its key is set, else Kokoro when installed.
@@ -93,8 +130,13 @@ export function narrator(name = process.env.NARRATION_PROVIDER || "auto") {
     if (!k) throw new Error(`Kokoro is not installed in ${KOKORO_DIR}: run tools/setup-kokoro.sh`);
     return k;
   }
+  if (name === "chatterbox") {
+    const c = chatterbox();
+    if (!c) throw new Error(`Chatterbox is not installed in ${CHATTERBOX_DIR}: run tools/setup-chatterbox.sh`);
+    return c;
+  }
   if (name === "auto") return elevenLabs() ?? kokoro();
-  throw new Error(`unknown narration provider "${name}" (known: auto, kokoro, elevenlabs, none)`);
+  throw new Error(`unknown narration provider "${name}" (known: auto, kokoro, chatterbox, elevenlabs, none)`);
 }
 
 export async function audioSeconds(file) {
