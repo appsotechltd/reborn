@@ -73,12 +73,24 @@ The page is a pure function of time (`window.__seek(t)`), so renders are repeata
 
 ### Narration
 
-Videos render silent with burned-in captions until a voice key is set. With
-`ELEVENLABS_API_KEY` (optional `ELEVENLABS_VOICE_ID`, `ELEVENLABS_MODEL`), each scene's line is
-voiced, scene timing follows the real audio, and captions stay burned in so videos still
-work muted. Audio is cached in `.cache/audio` by text and voice, so re-renders only pay for
-changed lines. `--voice none` forces a silent render. Another provider plugs in by adding it
-to `src/narration.mjs` (`synthesize(text) -> mp3 bytes`).
+Videos are narrated by **Kokoro-82M**, a free open-weights voice (Apache-2.0 licence, fine for
+commercial use) that runs locally on the CPU. Install it once:
+
+```sh
+tools/setup-kokoro.sh          # Python venv + model files (about 350 MB) in .cache/kokoro
+npm run render                 # narrates automatically when Kokoro is installed
+```
+
+The default voice is `af_heart`, Kokoro's best-rated voice. Change it with `KOKORO_VOICE`
+(British options: `bf_emma`, `bm_george`, `bm_fable`) and the pace with `KOKORO_SPEED`
+(default 0.95). Scene timing follows the real audio, and captions stay burned in so videos
+still work muted.
+
+With `ELEVENLABS_API_KEY` set (optional `ELEVENLABS_VOICE_ID`, `ELEVENLABS_MODEL`), ElevenLabs
+is used instead. `--voice kokoro|elevenlabs|none` picks one explicitly; with neither installed
+the video renders silent with captions. Audio is cached in `.cache/audio` by text and voice,
+so re-renders only voice changed lines. Another provider plugs in through `src/narration.mjs`
+(`synthesize(text) -> mp3 bytes`).
 
 ## Realistic films
 

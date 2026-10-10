@@ -157,7 +157,7 @@ async function renderFilm(cardId, opt) {
   const maps = ["-map", "[v]"];
   if (delays.length) {
     delays.forEach((d, i) => filters.push(`[${n + i}:a]adelay=${d.ms}:all=1[a${i}]`));
-    filters.push(`${delays.map((_, i) => `[a${i}]`).join("")}amix=inputs=${delays.length}:normalize=0,apad,atrim=0:${total}[aout]`);
+    filters.push(`${delays.map((_, i) => `[a${i}]`).join("")}amix=inputs=${delays.length}:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,apad,atrim=0:${total}[aout]`);
     maps.push("-map", "[aout]", "-c:a", "aac", "-b:a", "128k");
   }
   const base = path.join(OUT, `${cardId}.film`);

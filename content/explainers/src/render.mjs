@@ -47,7 +47,7 @@ async function mixNarration(timeline, audio, file) {
   const clips = timeline.scenes.map((s, i) => ({ s, a: audio[i] })).filter((x) => x.a);
   const inputs = clips.flatMap((c) => ["-i", c.a.file]);
   const chains = clips.map((c, i) => `[${i}:a]adelay=${Math.round(c.s.speechStart * 1000)}:all=1[a${i}]`);
-  const mix = `${clips.map((_, i) => `[a${i}]`).join("")}amix=inputs=${clips.length}:normalize=0,apad,atrim=0:${timeline.duration}[out]`;
+  const mix = `${clips.map((_, i) => `[a${i}]`).join("")}amix=inputs=${clips.length}:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,apad,atrim=0:${timeline.duration}[out]`;
   await ffmpeg([...inputs, "-filter_complex", [...chains, mix].join(";"), "-map", "[out]", "-c:a", "aac", "-b:a", "128k", file]).done;
 }
 

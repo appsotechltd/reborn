@@ -1,13 +1,18 @@
 // Narration: turns each scene's voice-over line into audio.
 //
 // A provider is { name, voice, synthesize(text, { previousText, nextText }) -> Buffer (mp3) }.
-// ElevenLabs is the default; with no key the video renders silent with burned-in
-// captions, and timings come from reading speed instead of the audio.
+// Two are built in:
+// - kokoro: Kokoro-82M, a free open-weights voice (Apache-2.0) that runs locally.
+//   Install it with tools/setup-kokoro.sh. This is the default when it is installed.
+// - elevenlabs: paid, used instead when ELEVENLABS_API_KEY is set.
+// With neither, the video renders silent with burned-in captions, and timings
+// come from reading speed instead of the audio.
 import { createHash } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { execFile } from "node:child_process";
+import { execFile, spawn } from "node:child_process";
 import { promisify } from "node:util";
 import { ROOT } from "./library.mjs";
 
@@ -40,11 +45,56 @@ export function elevenLabs({
   };
 }
 
-/** Picks the provider from --voice / NARRATION_PROVIDER; null means silent. */
-export function narrator(name = process.env.NARRATION_PROVIDER || "elevenlabs") {
+export const KOKORO_DIR = process.env.KOKORO_DIR || path.join(ROOT, ".cache", "kokoro");
+
+export function kokoro({
+  dir = KOKORO_DIR,
+  voice = process.env.KOKORO_VOICE || "af_heart", // the highest-rated Kokoro voice; British options: bf_emma, bm_george
+  speed = Number(process.env.KOKORO_SPEED || 0.95),
+} = {}) {
+  const python = path.join(dir, "venv", "bin", "python");
+  const model = path.join(dir, "kokoro-v1.0.onnx");
+  const voices = path.join(dir, "voices-v1.0.bin");
+  if (![python, model, voices].every(existsSync)) return null;
+  const script = path.join(ROOT, "tools", "kokoro_tts.py");
+  return {
+    name: "kokoro",
+    voice: `kokoro-82m/${voice}@${speed}`,
+    async synthesize(text) {
+      const tmp = await mkdtemp(path.join(tmpdir(), "kokoro-"));
+      try {
+        const wav = path.join(tmp, "line.wav");
+        await new Promise((resolve, reject) => {
+          const p = spawn(python, [script, model, voices, voice, String(speed)], { stdio: ["pipe", "ignore", "pipe"] });
+          let err = "";
+          p.stderr.on("data", (d) => (err += d));
+          p.on("close", (code) => (code === 0 ? resolve() : reject(new Error(`kokoro exited ${code}: ${err.slice(-400)}`))));
+          p.stdin.end(JSON.stringify({ text, out: wav }) + "\n");
+        });
+        const mp3 = path.join(tmp, "line.mp3");
+        await run("ffmpeg", ["-v", "error", "-y", "-i", wav, "-c:a", "libmp3lame", "-b:a", "128k", mp3]);
+        return await readFile(mp3);
+      } finally {
+        await rm(tmp, { recursive: true, force: true });
+      }
+    },
+  };
+}
+
+/**
+ * Picks the provider from --voice / NARRATION_PROVIDER; null means silent.
+ * "auto" (the default) uses ElevenLabs when its key is set, else Kokoro when installed.
+ */
+export function narrator(name = process.env.NARRATION_PROVIDER || "auto") {
   if (name === "none") return null;
   if (name === "elevenlabs") return elevenLabs();
-  throw new Error(`unknown narration provider "${name}" (known: elevenlabs, none)`);
+  if (name === "kokoro") {
+    const k = kokoro();
+    if (!k) throw new Error(`Kokoro is not installed in ${KOKORO_DIR}: run tools/setup-kokoro.sh`);
+    return k;
+  }
+  if (name === "auto") return elevenLabs() ?? kokoro();
+  throw new Error(`unknown narration provider "${name}" (known: auto, kokoro, elevenlabs, none)`);
 }
 
 export async function audioSeconds(file) {
