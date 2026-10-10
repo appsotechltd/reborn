@@ -66,6 +66,9 @@ var Topics = []Topic{
 	{"money", "Money"},
 	{"relationships", "Relationships"},
 	{"mindfulness", "Mindfulness & Philosophy"},
+	{"faith-wisdom", "Faith & Wisdom"},
+	{"leadership", "Leadership"},
+	{"parenting", "Parenting & Family"},
 }
 
 // Kinds lists the allowed source kinds.

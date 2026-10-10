@@ -11,6 +11,9 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "money", name: "Money" },
   { slug: "relationships", name: "Relationships" },
   { slug: "mindfulness", name: "Mindfulness & Philosophy" },
+  { slug: "faith-wisdom", name: "Faith & Wisdom" },
+  { slug: "leadership", name: "Leadership" },
+  { slug: "parenting", name: "Parenting & Family" },
 ];
 
 export function topicName(slug: string, topics?: Pick<Topic, "slug" | "name">[]): string {
