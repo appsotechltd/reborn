@@ -1,6 +1,6 @@
 # Local development stack: Postgres (with pgvector), Redis and the API.
 #   docker compose up -d db redis       # just the databases
-#   docker compose up --build           # everything, API on http://localhost:8080
+#   docker compose up --build           # everything: web on http://localhost:3000, API on :8080
 #   docker compose run --rm seed        # import content/library
 #   docker compose run --rm seed seed /testdata/library   # import the small dev fixtures
 services:
@@ -39,6 +39,18 @@ services:
     depends_on:
       db: { condition: service_healthy }
       redis: { condition: service_healthy }
+
+  web:
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8080
+    environment:
+      API_URL: http://api:8080
+      NEXT_PUBLIC_API_URL: http://localhost:8080
+      SITE_URL: http://localhost:3000
+    ports: ["3000:3000"]
+    depends_on: [api]
 
   seed:
     build: ./backend

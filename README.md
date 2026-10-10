@@ -7,7 +7,8 @@ relationships.
 
 | Folder | What's in it |
 |---|---|
-| [`app/`](app) | Flutter + Riverpod client for Android, iOS and the web |
+| [`app/`](app) | Flutter + Riverpod mobile app for Android and iOS |
+| [`web/`](web) | Next.js web app; public pages for every idea, source and topic are server-rendered for search engines and link previews |
 | [`backend/`](backend) | Go API server (Postgres + pgvector, Redis), content importer, AI guide |
 | [`content/`](content) | The card library: one JSON file per source, plus the [schema](content/SCHEMA.md) |
 | [`docs/API.md`](docs/API.md) | The HTTP API the app talks to |
@@ -39,11 +40,11 @@ go run ./cmd/reborn seed ../content/library        # import the library (or test
 ANTHROPIC_API_KEY=sk-ant-... go run ./cmd/reborn serve   # API on :8080
 ```
 
-In another terminal:
+In other terminals:
 
 ```sh
-cd app
-flutter run -d chrome --dart-define=API_BASE_URL=http://localhost:8080
+cd web && npm install && npm run dev               # web app on http://localhost:3000
+cd app && flutter run                              # mobile app (emulator: API_BASE_URL=http://10.0.2.2:8080)
 ```
 
 Or run the whole backend in Docker: `docker compose up --build`, then
