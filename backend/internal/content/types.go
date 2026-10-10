@@ -76,6 +76,10 @@ var Topics = []Topic{
 	{"learning", "Learning & Thinking"},
 	{"lives-history", "Lives & History"},
 	{"entrepreneurship", "Entrepreneurship"},
+	{"heartbreak-healing", "Heartbreak & Healing"},
+	{"grief-loss", "Grief & Loss"},
+	{"study-smarter", "Study Smarter"},
+	{"skills-mastery", "Skills & Mastery"},
 }
 
 // Kinds lists the allowed source kinds.
@@ -92,6 +96,12 @@ var Licences = map[string]bool{
 	"ogl-3.0":              true,
 	"original-summary":     false,
 }
+
+// SupportTopics are about painful experiences; their cards carry SupportNote.
+var SupportTopics = map[string]bool{"heartbreak-healing": true, "grief-loss": true}
+
+// SupportNote is shown on every card in a support topic, in place of the health disclaimer.
+const SupportNote = "If you're finding things hard, you don't have to go through it alone. Talk to someone you trust, or reach out to a counsellor, your doctor or a local support line."
 
 // HealthDisclaimer is shown on every card flagged as health.
 const HealthDisclaimer = "This is general information, not medical advice. Talk to a qualified health professional about your own situation."

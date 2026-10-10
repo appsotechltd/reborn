@@ -3,6 +3,7 @@ import type {
   BlockedUser,
   BlockKind,
   Circle,
+  CircleMember,
   CircleMessage,
   DiscoverResponse,
   NotificationsResponse,
@@ -331,6 +332,7 @@ export function createApiClient(
     circle: (id: string) => req<Circle>(`/v1/circles/${enc(id)}`),
     joinCircle: (id: string) => req<Circle>(`/v1/circles/${enc(id)}/join`, { method: "POST" }),
     leaveCircle: (id: string) => req<void>(`/v1/circles/${enc(id)}/leave`, { method: "POST" }),
+    circleMembers: (id: string) => req<{ members: CircleMember[] }>(`/v1/circles/${enc(id)}/members`),
     circleMessages: (id: string, q: { before?: string; limit?: number } = {}) =>
       req<{ messages: CircleMessage[] }>(`/v1/circles/${enc(id)}/messages`, { query: q }),
     postCircleMessage: (id: string, body: { body: string; post_id?: string }) =>

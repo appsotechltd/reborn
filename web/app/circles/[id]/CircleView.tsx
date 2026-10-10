@@ -9,6 +9,7 @@ import { useAuth } from "@/lib/auth";
 import { formatDate } from "@/lib/engage";
 import { useLoad } from "@/lib/use-load";
 import type { Circle } from "@/lib/types";
+import { CircleMembers } from "./CircleMembers";
 import { CircleThread } from "./CircleThread";
 
 export function CircleView({ id }: { id: string }) {
@@ -20,6 +21,7 @@ export function CircleView({ id }: { id: string }) {
   const [busy, setBusy] = useState(false);
   const [actionError, setActionError] = useState<string | null>(null);
   const [confirmLeave, setConfirmLeave] = useState(false);
+  const [membersVersion, setMembersVersion] = useState(0);
 
   if (!ready || loading) return <Loading />;
   if (status === 404) {
@@ -42,6 +44,7 @@ export function CircleView({ id }: { id: string }) {
     try {
       const c = await api.joinCircle(id);
       setData(() => c);
+      setMembersVersion((v) => v + 1);
     } catch (err) {
       setActionError(
         isApiError(err) && err.code === "circle_full"
@@ -66,6 +69,7 @@ export function CircleView({ id }: { id: string }) {
       }
       setData((c) => ({ ...(c as Circle), is_member: false, role: null, members: Math.max(0, (c as Circle).members - 1) }));
       setConfirmLeave(false);
+      setMembersVersion((v) => v + 1);
     } catch (err) {
       setActionError(isApiError(err) ? err.message : "Couldn't leave the circle.");
     } finally {
@@ -131,6 +135,8 @@ export function CircleView({ id }: { id: string }) {
         </div>
         <ErrorNote error={actionError} />
       </header>
+
+      <CircleMembers circleId={circle.id} version={membersVersion} />
 
       <section aria-labelledby="thread-title" className="mt-10">
         <h2 id="thread-title" className="font-serif text-2xl font-semibold">

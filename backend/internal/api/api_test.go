@@ -170,7 +170,7 @@ func TestPublicBrowsing(t *testing.T) {
 	h.do("GET", "/healthz", "", nil, 200)
 
 	topics := list(h.do("GET", "/v1/topics", "", nil, 200), "topics")
-	if len(topics) != 19 {
+	if len(topics) != 23 {
 		t.Fatalf("topics = %v", topics)
 	}
 	counts := map[string]float64{}
@@ -232,7 +232,7 @@ func TestPublicBrowsing(t *testing.T) {
 		t.Fatalf("all sources = %d", n)
 	}
 	sm := h.do("GET", "/v1/sitemap", "", nil, 200)
-	if len(list(sm, "cards")) != 9 || len(list(sm, "sources")) != 3 || len(list(sm, "topics")) != 19 {
+	if len(list(sm, "cards")) != 9 || len(list(sm, "sources")) != 3 || len(list(sm, "topics")) != 23 {
 		t.Fatalf("sitemap = %v", sm)
 	}
 

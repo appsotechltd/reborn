@@ -384,6 +384,11 @@ export interface Circle {
   created_at: string;
 }
 
+export interface CircleMember extends PublicUser {
+  role: "owner" | "member" | string;
+  joined_at: string;
+}
+
 export interface CircleMessage {
   id: string;
   circle_id: string;
