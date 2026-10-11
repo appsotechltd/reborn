@@ -67,14 +67,3 @@ export function buildTimeline({ card, scenes, audio, fps = 30, captionMax = 9 })
 }
 
 const round = (v) => Math.round(v * 1000) / 1000;
-
-const vttTime = (s) => {
-  const ms = Math.round(s * 1000);
-  const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000), sec = Math.floor((ms % 60000) / 1000);
-  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}.${String(ms % 1000).padStart(3, "0")}`;
-};
-
-export function toVtt(timeline) {
-  const cues = timeline.scenes.flatMap((s) => s.captions);
-  return "WEBVTT\n\n" + cues.map((c, i) => `${i + 1}\n${vttTime(c.start)} --> ${vttTime(c.end)}\n${c.text}\n`).join("\n");
-}
