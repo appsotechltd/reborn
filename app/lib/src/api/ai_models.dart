@@ -89,7 +89,7 @@ class AIRate {
   String get label => switch (kind) {
     'text' => 'Each reply',
     'chart' => 'A chart or graph',
-    'voice' => 'Voice',
+    'voice' => 'Voice messages you send',
     'sketch' => 'A sketch',
     'illustration' => 'An illustration',
     'picture' => 'A photo-like picture',
@@ -97,7 +97,7 @@ class AIRate {
   };
 
   String get cost => kind == 'voice'
-      ? '${unitsLabel(units)} per 30 spoken words'
+      ? '${unitsLabel(units)} per 30 words'
       : unitsLabel(units);
 }
 

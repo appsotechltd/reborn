@@ -28,7 +28,7 @@ export function allowanceShare(w: AIWallet): number {
 const RATE_LABELS: Record<string, string> = {
   text: "Each reply",
   chart: "A chart or graph",
-  voice: "Voice",
+  voice: "Voice messages you send",
   sketch: "A sketch",
   illustration: "An illustration",
   picture: "A photo-like picture",
@@ -39,7 +39,7 @@ export function rateLabel(r: AIRate): string {
 }
 
 export function rateText(r: AIRate): string {
-  return r.kind === "voice" ? `${units(r.units)} per 30 spoken words` : units(r.units);
+  return r.kind === "voice" ? `${units(r.units)} per 30 words` : units(r.units);
 }
 
 export function packPrice(p: UnitPack): string {

@@ -291,8 +291,9 @@ with charts, sketches, illustrations and pictures. It runs on OpenAI (`OPENAI_AP
 returns `503 ai_unavailable` without one. Premium includes `AI_MONTHLY_UNITS` (250) AI
 units a month, refilled on the 1st (UTC); top-up units never expire and are spent after the
 allowance. Rates (`rates` in `GET /v1/ai`): 1 unit per reply, +1 for a chart, +2 sketch, +4
-illustration, +12 picture, and 1 per started 30 spoken words to hear a voice message or read a
-reply aloud. Prices and costs are explained in [AI_UNITS.md](AI_UNITS.md). Non-premium users get
+illustration, +12 picture, and 1 per started 30 words to hear a voice message. Reading a reply
+aloud is free: Reborn's own Kokoro service (`KOKORO_URL`, voice `KOKORO_VOICE`, default
+`af_heart`) speaks it, with OpenAI as the fallback when Kokoro is down. Prices and costs are explained in [AI_UNITS.md](AI_UNITS.md). Non-premium users get
 `403 premium_required`; an empty wallet gets `402 out_of_units` with `{"error","wallet"}`.
 
 Wallet: `{"monthly_units","allowance_used","allowance_left","topup_units","remaining","resets_at"}`.
@@ -306,7 +307,7 @@ the apps draw charts themselves. Replies cite cards inline as `[card-id]`, like 
 | `GET /v1/ai` | optional | | `{"available","premium","wallet"|null,"rates":[{"kind","units","per"}],"packs":[{"id","name","units","amount_cents","currency","product_id"}],"providers":{"stripe","apple","google"}}` |
 | `POST /v1/ai/chat` | premium | `{"conversation_id"?,"message"}` | `{"conversation","user_message","message","wallet"}`. Omit `conversation_id` to start a chat |
 | `POST /v1/ai/voice` | premium | multipart: `audio` (m4a, mp3, mp4, wav, webm or ogg, up to 10 MB), `conversation_id`? | Same, plus `"transcript"`. `422 no_speech` when nothing was heard |
-| `POST /v1/ai/messages/{id}/speech` | premium | | `{"url","units","wallet"}`: MP3 of a reply read aloud. Hearing it again is free |
+| `POST /v1/ai/messages/{id}/speech` | premium | | `{"url","units":0,"wallet"}`: MP3 of a reply read aloud (free; made once, then reused) |
 | `GET /v1/ai/conversations` | required | | `{"conversations":[{"id","title","created_at","updated_at"}]}` |
 | `GET /v1/ai/conversations/{id}` | required | | `{"conversation","messages":[...]}` |
 | `DELETE /v1/ai/conversations/{id}` | required | | `204` |
@@ -320,7 +321,7 @@ Packs are consumable in-app products `reborn.ai.units250` ($2.99), `reborn.ai.un
 ($5.99) and `reborn.ai.units1300` ($11.99). Each store transaction is credited once. Members
 may send `AI_HOURLY_LIMIT` (60) messages an hour. Models are set by `OPENAI_CHAT_MODEL`
 (`gpt-5.4-mini`), `OPENAI_REASONING_EFFORT` (`low`, or `none` for a non-reasoning model)
-and `OPENAI_TTS_VOICE` (`marin`); pictures and speech are saved in media storage under `ai/`.
+and `OPENAI_TTS_VOICE` (`marin`, only used when Kokoro is down); pictures and speech are saved in media storage under `ai/`.
 
 ### Moderator dashboard
 

@@ -61,12 +61,17 @@ var DefaultModels = Models{
 
 // Assistant is Reborn AI.
 type Assistant struct {
-	AI       *OpenAI
-	Lib      Library
-	Embedder embed.Embedder // optional; keyword search works without it
-	Media    objstore.Store // where pictures and speech are saved
-	Models   Models
-	Now      func() time.Time
+	AI *OpenAI
+	// Kokoro, when set, reads replies aloud for free with Reborn's own Kokoro
+	// speech service (services/kokoro), which speaks OpenAI's speech API. OpenAI
+	// stays the fallback when it is down.
+	Kokoro      *OpenAI
+	KokoroVoice string // an approved Kokoro voice; default af_heart
+	Lib         Library
+	Embedder    embed.Embedder // optional; keyword search works without it
+	Media       objstore.Store // where pictures and speech are saved
+	Models      Models
+	Now         func() time.Time
 }
 
 // Turn is one earlier message in a chat.
@@ -537,10 +542,24 @@ func (a *Assistant) Speak(ctx context.Context, key, text string) (url string, ma
 	if ok, _, err := a.Media.Stat(ctx, key); err == nil && ok {
 		return a.Media.URL(key), false, nil
 	}
-	audio, err := a.AI.Speak(ctx, SpeechRequest{Model: a.Models.Speech, Voice: a.Models.Voice, Input: truncate(text, 4000),
-		Instructions: "Speak warmly and calmly, like a thoughtful friend, at an easy pace."})
-	if err != nil {
-		return "", false, err
+	text = truncate(text, 4000)
+	var audio []byte
+	if a.Kokoro != nil {
+		voice := a.KokoroVoice
+		if voice == "" {
+			voice = "af_heart"
+		}
+		audio, err = a.Kokoro.Speak(ctx, SpeechRequest{Model: "kokoro", Voice: voice, Input: text})
+		if err != nil {
+			slog.Warn("kokoro speech failed; using OpenAI", "err", err)
+		}
+	}
+	if a.Kokoro == nil || err != nil {
+		audio, err = a.AI.Speak(ctx, SpeechRequest{Model: a.Models.Speech, Voice: a.Models.Voice, Input: text,
+			Instructions: "Speak warmly and calmly, like a thoughtful friend, at an easy pace."})
+		if err != nil {
+			return "", false, err
+		}
 	}
 	if err := a.Media.Put(ctx, key, "audio/mpeg", bytes.NewReader(audio), int64(len(audio))); err != nil {
 		return "", false, err

@@ -43,7 +43,8 @@ One AI unit covers about $0.005 of OpenAI cost.
 |---|---|
 | Each reply | 1 |
 | Chart or graph in a reply | 1 more |
-| Voice | 1 per started 30 spoken words, both ways (about 5 a minute). A 20-word voice question is 1 unit to hear; hearing a 100-word reply read aloud is 4. Replaying a reply already read aloud is free. |
+| Voice messages you send | 1 per started 30 words (about 5 a minute). A 20-word voice question is 1 unit to hear. |
+| Listening to a reply | Free. Our own Kokoro voice (Heart) reads it, so it costs us only server time; OpenAI reads it only if Kokoro is down. |
 | Sketch in a reply | 2 more |
 | Illustration in a reply | 4 more |
 | Picture in a reply | 12 more |
@@ -79,8 +80,8 @@ Apple and Google take 15% instead of 30% for small businesses (under $1M a year)
 
 Claude prices (Anthropic, 2026-10): Haiku 5.5 $0.10 / $0.50, Sonnet 5.5 $2 / $10, Opus 5.5 $4 / $20 per 1M tokens. Claude Haiku 5.5 costs the same as OpenAI's cheapest `gpt-6-luna`, and Sonnet 5.5 the same as `gpt-6-sol`. The free AI guide already runs on Claude Opus 5.5, which costs about three times more per message than `gpt-5.4-mini`. Images and voice need OpenAI either way. The build uses OpenAI for everything in Reborn AI, as asked, with the text model set by `OPENAI_CHAT_MODEL` so it can be switched without code changes.
 
-## 7. Ways to cut cost later
+## 7. Ways to cut cost
 
-- Speak replies with the free Kokoro voices the explainers already use, instead of OpenAI text to speech. That cuts voice to about $0.007 a minute.
-- Reuse saved pictures when two people ask for the same thing (same rule as the explainer images).
+- Done: replies are read aloud by our own Kokoro service (`services/kokoro`, voice Heart), so listening is free for members and costs us only server time. OpenAI's voice is the fallback when Kokoro is down. Voice messages members send still cost 1 unit per 30 words, because transcription stays on OpenAI.
+- Done: pictures are saved by model, size and prompt, so the same picture is never paid for twice, whoever asks.
 - OpenAI's Batch API halves text prices, but it is too slow for chat.

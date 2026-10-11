@@ -201,6 +201,12 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 			models.Effort = ""
 		}
 		srv.AI = &rebornai.Assistant{AI: &rebornai.OpenAI{APIKey: cfg.OpenAIAPIKey}, Lib: st, Embedder: e, Media: media, Models: models}
+		if cfg.KokoroURL != "" {
+			srv.AI.Kokoro = &rebornai.OpenAI{BaseURL: cfg.KokoroURL, HTTP: &http.Client{Timeout: 2 * time.Minute}}
+			srv.AI.KokoroVoice = cfg.KokoroVoice
+		} else {
+			slog.Warn("KOKORO_URL is not set; Reborn AI reads replies aloud with OpenAI")
+		}
 	} else {
 		slog.Warn("OPENAI_API_KEY is not set; Reborn AI is disabled")
 	}

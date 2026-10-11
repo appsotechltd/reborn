@@ -40,12 +40,25 @@ services:
       R2_BUCKET: ${R2_BUCKET:-}
       MEDIA_BASE_URL: ${MEDIA_BASE_URL:-}
       MEDIA_DIR: /media
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      KOKORO_URL: http://kokoro:8880
+      KOKORO_VOICE: ${KOKORO_VOICE:-af_heart}
       EXPLAINER_DIR: /content/explainers/out
     ports: ["8080:8080"]
     volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro", "media:/media"]
     depends_on:
       db: { condition: service_healthy }
       redis: { condition: service_healthy }
+
+  # Free voice for Reborn AI's spoken replies (Kokoro-82M on the CPU, about 1.5 GB RAM).
+  kokoro:
+    build: ./services/kokoro
+    environment:
+      KOKORO_VOICE: ${KOKORO_VOICE:-af_heart}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8880/health')"]
+      interval: 10s
+      retries: 30
 
   web:
     build:

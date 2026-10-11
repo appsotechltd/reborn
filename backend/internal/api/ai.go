@@ -292,43 +292,20 @@ func (s *Server) aiSpeech(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "bad_request", "only Reborn AI's replies can be read aloud")
 		return
 	}
-	text := rebornai.Spoken(m.Content)
-	units := max(1, rebornai.VoiceUnits(text))
-	key := "ai/speech/" + m.ID + ".mp3"
+	// Listening is free: replies are read by our own Kokoro voice, and the
+	// audio is saved so it is only ever made once.
 	monthly := s.aiMonthly(u)
 	wallet, err := s.Store.AIWalletOf(ctx, u.ID, monthly, s.Now())
 	if err != nil {
 		s.fail(w, r, err, "wallet")
 		return
 	}
-	if ok, _, err := s.Media.Stat(ctx, key); err == nil && ok {
-		writeJSON(w, http.StatusOK, map[string]any{"url": s.Media.URL(key), "units": 0, "wallet": wallet})
-		return
-	}
-	if wallet.Remaining < units {
-		s.outOfUnits(w, wallet)
-		return
-	}
-	url, made, err := s.AI.Speak(ctx, key, text)
+	url, _, err := s.AI.Speak(ctx, "ai/speech/"+m.ID+".mp3", rebornai.Spoken(m.Content))
 	if err != nil {
 		s.aiFailed(w, r, err)
 		return
 	}
-	charged := 0
-	if made {
-		ctx = context.WithoutCancel(ctx)
-		var sp store.AISpend
-		if sp, wallet, err = s.Store.SpendAIUnits(ctx, u.ID, rebornai.KindVoice, units, &m.ID, monthly, s.Now()); err != nil {
-			s.fail(w, r, err, "wallet")
-			return
-		}
-		charged = sp.Units
-		if err := s.Store.AddAIMessageUnits(ctx, m.ID, sp.Units); err != nil {
-			s.fail(w, r, err, "message")
-			return
-		}
-	}
-	writeJSON(w, http.StatusOK, map[string]any{"url": url, "units": charged, "wallet": wallet})
+	writeJSON(w, http.StatusOK, map[string]any{"url": url, "units": 0, "wallet": wallet})
 }
 
 func (s *Server) aiConversations(w http.ResponseWriter, r *http.Request) {

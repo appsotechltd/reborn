@@ -161,7 +161,7 @@ class _Rates extends StatelessWidget {
           ),
         const SizedBox(height: 4),
         Text(
-          'Charts and pictures cost on top of the reply they come with. Replaying audio is free.',
+          'Charts and pictures cost on top of the reply they come with. Listening to replies is free.',
           style: theme.textTheme.bodySmall?.copyWith(
             color: Candlelight.of(context).muted,
           ),

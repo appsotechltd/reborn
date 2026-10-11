@@ -32,7 +32,7 @@ type Rate struct {
 var Rates = []Rate{
 	{KindText, 1, "reply"},
 	{KindChart, 1, "chart or graph"},
-	{KindVoice, 1, "30 spoken words (about 12 seconds)"},
+	{KindVoice, 1, "30 words of a voice message you send (about 12 seconds); listening to replies is free"},
 	{KindSketch, 2, "sketch"},
 	{KindIllustration, 4, "illustration"},
 	{KindPicture, 12, "picture"},
@@ -52,7 +52,7 @@ func UnitsFor(kind string) int {
 // speak about 150 words a minute, so a minute of speech is 5 units.
 const wordsPerVoiceUnit = 30
 
-// VoiceUnits is what speaking or hearing text costs: one unit per started 30 words.
+// VoiceUnits is what a voice message costs to hear: one unit per started 30 words.
 func VoiceUnits(text string) int {
 	n := len(strings.Fields(text))
 	if n == 0 {

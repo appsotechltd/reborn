@@ -20,6 +20,8 @@ type Config struct {
 	AIChatModel     string
 	AIEffort        string // reasoning effort for AIChatModel; "none" for a non-reasoning model
 	AIVoice         string
+	KokoroURL       string // Reborn's Kokoro speech service; when set, replies are read aloud with it for free
+	KokoroVoice     string
 	AIMonthlyUnits  int
 	AIHourly        int
 	VoyageAPIKey    string
@@ -71,6 +73,8 @@ func Load() Config {
 		AIChatModel:     env("OPENAI_CHAT_MODEL", "gpt-5.4-mini"),
 		AIEffort:        env("OPENAI_REASONING_EFFORT", "low"),
 		AIVoice:         env("OPENAI_TTS_VOICE", "marin"),
+		KokoroURL:       os.Getenv("KOKORO_URL"),
+		KokoroVoice:     env("KOKORO_VOICE", "af_heart"),
 		AIMonthlyUnits:  envInt("AI_MONTHLY_UNITS", 250),
 		AIHourly:        envInt("AI_HOURLY_LIMIT", 60),
 		VoyageAPIKey:    os.Getenv("VOYAGE_API_KEY"),

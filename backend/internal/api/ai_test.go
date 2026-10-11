@@ -157,6 +157,7 @@ func TestRebornAI(t *testing.T) {
 	out := chat(ada, map[string]any{"message": "How can I sleep better?"}, 200)
 	msg := out["message"].(map[string]any)
 	convID := out["conversation"].(map[string]any)["id"].(string)
+	firstReply := msg["id"].(string)
 	if msg["units"] != 1.0 || wallet(out)["remaining"] != 19.0 || len(list(msg, "citations")) != 1 ||
 		!strings.Contains(msg["content"].(string), "steady wake time") {
 		t.Fatalf("chat = %v", out)
@@ -198,15 +199,33 @@ func TestRebornAI(t *testing.T) {
 		msg["voice"] != true || wallet(out)["remaining"] != 1.0 {
 		t.Fatalf("voice = %v", out)
 	}
-	// Reading the reply aloud costs a unit per 30 words, once.
+	// Reading a reply aloud is free, with our Kokoro voice, and made once.
+	var kokoroVoices []string
+	kokoro := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		var in struct{ Model, Voice, Input string }
+		_ = json.NewDecoder(r.Body).Decode(&in)
+		kokoroVoices = append(kokoroVoices, in.Voice)
+		w.Header().Set("Content-Type", "audio/mpeg")
+		fmt.Fprint(w, "kokoro-mp3")
+	}))
+	defer kokoro.Close()
+	h.api.AI.Kokoro = &rebornai.OpenAI{BaseURL: kokoro.URL}
 	path := "/v1/ai/messages/" + msg["id"].(string) + "/speech"
 	sp := h.do("POST", path, ada, nil, 200)
-	if sp["units"] != 1.0 || wallet(sp)["remaining"] != 0.0 || !strings.HasSuffix(sp["url"].(string), ".mp3") {
-		t.Fatalf("speech = %v", sp)
+	if sp["units"] != 0.0 || wallet(sp)["remaining"] != 1.0 || !strings.HasSuffix(sp["url"].(string), ".mp3") ||
+		f.speeches != 0 || len(kokoroVoices) != 1 || kokoroVoices[0] != "af_heart" {
+		t.Fatalf("speech = %v, kokoro %v", sp, kokoroVoices)
 	}
-	if sp = h.do("POST", path, ada, nil, 200); sp["units"] != 0.0 || f.speeches != 1 {
+	if sp = h.do("POST", path, ada, nil, 200); sp["units"] != 0.0 || len(kokoroVoices) != 1 {
 		t.Fatalf("speech again = %v", sp)
 	}
+	// With Kokoro down, OpenAI reads it instead, still free.
+	kokoro.Close()
+	sp = h.do("POST", "/v1/ai/messages/"+firstReply+"/speech", ada, nil, 200)
+	if sp["units"] != 0.0 || wallet(sp)["remaining"] != 1.0 || f.speeches != 1 {
+		t.Fatalf("speech fallback = %v", sp)
+	}
+	chat(ada, map[string]any{"conversation_id": convID, "message": "Thanks"}, 200) // the last unit
 
 	// Out of units.
 	if out = chat(ada, map[string]any{"message": "hi"}, 402); wallet(out)["remaining"] != 0.0 {
@@ -268,7 +287,7 @@ func TestRebornAI(t *testing.T) {
 		t.Fatalf("conversations = %v", convs)
 	}
 	got := h.do("GET", "/v1/ai/conversations/"+convID, ada, nil, 200)
-	if n := len(list(got, "messages")); n != 10 {
+	if n := len(list(got, "messages")); n != 12 {
 		t.Fatalf("messages = %d", n)
 	}
 	bob, _ := h.registerAs("bob@example.com", "Bob")
