@@ -88,7 +88,7 @@ export function CircleView({ id }: { id: string }) {
       </p>
       <header className="mt-4">
         <p className="eyebrow">
-          <Link href={`/sources/${circle.source.id}`} className="hover:text-accent hover:underline">
+          <Link href={`/sources/${circle.source.id}`} className="hover:text-accent-text hover:underline">
             {circle.source.title}
           </Link>
         </p>

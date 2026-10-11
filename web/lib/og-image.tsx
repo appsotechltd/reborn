@@ -12,6 +12,7 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
   const text = card ? excerpt(card.body, 190) : SITE_TAGLINE;
   const credit = card?.credit ?? "";
 
+  // Candlelight dark palette (design/candlelight.md); OG images are fixed images, not themed.
   return new ImageResponse(
     (
       <div
@@ -22,15 +23,16 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "64px 72px",
-          background: "#faf8f4",
-          color: "#1f1c18",
-          borderTop: "16px solid #8f3b1b",
+          background: "#14110e",
+          color: "#f2e8d8",
+          borderTop: "16px solid #e9a23b",
           fontFamily: "serif",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: 30, fontWeight: 700, color: "#8f3b1b", letterSpacing: 1 }}>
-            {SITE_NAME}.
+          <div style={{ display: "flex", fontSize: 30, fontWeight: 700, letterSpacing: 1 }}>
+            {SITE_NAME}
+            <span style={{ color: "#e9a23b" }}>.</span>
           </div>
           <div
             style={{
@@ -43,15 +45,15 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
           >
             {title}
           </div>
-          <div style={{ display: "flex", marginTop: 28, fontSize: 30, lineHeight: 1.4, color: "#5c564d" }}>{text}</div>
+          <div style={{ display: "flex", marginTop: 28, fontSize: 30, lineHeight: 1.4, color: "#d9cdba" }}>{text}</div>
         </div>
         <div
           style={{
             display: "flex",
-            borderTop: "2px solid #e2dcd1",
+            borderTop: "2px solid #3a3027",
             paddingTop: 20,
             fontSize: 22,
-            color: "#5c564d",
+            color: "#a89a86",
           }}
         >
           {credit ? excerpt(credit, 120) : "Big ideas from great books, one minute at a time."}

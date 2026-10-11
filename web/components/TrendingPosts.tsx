@@ -34,14 +34,18 @@ export function TrendingPosts({ initial }: { initial: Post[] }) {
   const posts = lists[topic];
   return (
     <>
-      <div role="group" aria-label="Filter by topic" className="flex flex-wrap gap-2">
+      <div
+        role="group"
+        aria-label="Filter by topic"
+        className="flex flex-wrap gap-2 max-md:-mx-4 max-md:flex-nowrap max-md:overflow-x-auto max-md:px-4 max-md:pb-1 max-md:[scrollbar-width:none]"
+      >
         {[{ slug: "", name: "All topics" }, ...TOPICS].map((t) => (
           <button
             key={t.slug}
             type="button"
             aria-pressed={topic === t.slug}
             onClick={() => choose(t.slug)}
-            className={`chip min-h-8 ${topic === t.slug ? "bg-accent-soft font-semibold text-fg" : "hover:text-fg"}`}
+            className={`chip min-h-8 shrink-0 pointer-coarse:min-h-11 ${topic === t.slug ? "chip-on" : "hover:text-fg"}`}
           >
             {t.name}
           </button>

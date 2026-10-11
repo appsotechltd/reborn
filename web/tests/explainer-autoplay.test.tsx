@@ -1,0 +1,148 @@
+import { act, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { CardView } from "@/components/CardView";
+import { AUTOPLAY_RATIO, resetPlayback } from "@/components/ExplainerVideo";
+import { installFakeIO, setVisible, stubMatchMedia } from "./fake-io";
+import { makeCard } from "./fixtures";
+
+const explainer = {
+  kind: "animated",
+  video_url: "/media/explainers/example-book--01.mp4",
+  poster_url: "/media/explainers/example-book--01.jpg",
+  captions_url: "/media/explainers/example-book--01.vtt",
+  duration_s: 52.4,
+  width: 720,
+  height: 1280,
+  narrated: false,
+};
+
+const card = (n: number) => makeCard({ id: `example-book--0${n}`, title: `Idea ${n}`, explainer });
+
+// jsdom has no media playback: track paused state ourselves and let tests decide whether play() is allowed.
+let refuse: (v: HTMLMediaElement) => boolean = () => false;
+const paused = new WeakMap<HTMLMediaElement, boolean>();
+const play = vi.fn(function (this: HTMLMediaElement) {
+  if (refuse(this)) return Promise.reject(new DOMException("autoplay refused", "NotAllowedError"));
+  paused.set(this, false);
+  this.dispatchEvent(new Event("play"));
+  return Promise.resolve();
+});
+const pause = vi.fn(function (this: HTMLMediaElement) {
+  if (paused.get(this) === false) {
+    paused.set(this, true);
+    this.dispatchEvent(new Event("pause"));
+  }
+});
+
+const flush = () => act(async () => {});
+
+describe("feed video autoplay", () => {
+  beforeEach(() => {
+    installFakeIO();
+    stubMatchMedia({});
+    resetPlayback();
+    refuse = () => false;
+    play.mockClear();
+    pause.mockClear();
+    vi.spyOn(HTMLMediaElement.prototype, "play").mockImplementation(play);
+    vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(pause);
+    vi.spyOn(HTMLMediaElement.prototype, "paused", "get").mockImplementation(function (this: HTMLMediaElement) {
+      return paused.get(this) ?? true;
+    });
+  });
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.unstubAllGlobals();
+  });
+
+  const videoOf = (n: number) => screen.getByLabelText(`Animated explainer: Idea ${n}`) as HTMLVideoElement;
+
+  it("plays muted once 60% is on screen and pauses when it scrolls away", async () => {
+    render(<CardView card={card(1)} feed />);
+    const v = videoOf(1);
+    setVisible(v, AUTOPLAY_RATIO - 0.1);
+    expect(play).not.toHaveBeenCalled();
+
+    await act(async () => setVisible(v, AUTOPLAY_RATIO));
+    expect(play).toHaveBeenCalledTimes(1);
+    expect(v.muted).toBe(true);
+    expect(screen.getByRole("button", { name: "Unmute video" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Pause video" })).toBeTruthy();
+    // No captions on screen: the track exists but is never turned on.
+    expect(v.querySelector("track")?.hasAttribute("default")).toBe(false);
+
+    await act(async () => setVisible(v, 0.2));
+    expect(pause).toHaveBeenCalledTimes(1);
+    expect(v.paused).toBe(true);
+  });
+
+  it("toggles the sound from the button and by tapping the video", async () => {
+    render(<CardView card={card(1)} feed />);
+    const v = videoOf(1);
+    await act(async () => setVisible(v, 1));
+    fireEvent.click(screen.getByRole("button", { name: "Unmute video" }));
+    expect(v.muted).toBe(false);
+    expect(screen.getByRole("button", { name: "Mute video" })).toBeTruthy();
+    fireEvent.click(v);
+    expect(v.muted).toBe(true);
+    expect(screen.getByRole("button", { name: "Unmute video" })).toBeTruthy();
+  });
+
+  it("plays only one video at a time", async () => {
+    render(
+      <>
+        <CardView card={card(1)} feed />
+        <CardView card={card(2)} feed />
+      </>,
+    );
+    const a = videoOf(1);
+    const b = videoOf(2);
+    await act(async () => setVisible(a, 1));
+    expect(a.paused).toBe(false);
+    await act(async () => setVisible(b, 0.8));
+    expect(b.paused).toBe(false);
+    expect(a.paused).toBe(true);
+  });
+
+  it("keeps the Play button when autoplay is refused, and plays with sound on tap", async () => {
+    refuse = (v) => v.muted; // refuses muted autoplay; a tap (user gesture) is allowed
+    render(<CardView card={card(1)} feed />);
+    const v = videoOf(1);
+    await act(async () => setVisible(v, 1));
+    await flush();
+    expect(v.paused).toBe(true);
+    const fallback = screen.getByRole("button", { name: /play\s*the animated explainer/i });
+    refuse = () => false;
+    await act(async () => fireEvent.click(fallback));
+    expect(v.paused).toBe(false);
+    expect(v.muted).toBe(false);
+    expect(screen.queryByRole("button", { name: /play\s*the animated explainer/i })).toBeNull();
+  });
+
+  it("does not restart a video the reader paused until it has left the screen", async () => {
+    render(<CardView card={card(1)} feed />);
+    const v = videoOf(1);
+    await act(async () => setVisible(v, 1));
+    fireEvent.click(screen.getByRole("button", { name: "Pause video" }));
+    expect(v.paused).toBe(true);
+    await act(async () => setVisible(v, 0.9));
+    expect(v.paused).toBe(true);
+    await act(async () => setVisible(v, 0));
+    await act(async () => setVisible(v, 1));
+    expect(v.paused).toBe(false);
+  });
+
+  it("does not autoplay when the reader prefers reduced motion", async () => {
+    stubMatchMedia({ "prefers-reduced-motion": true });
+    render(<CardView card={card(1)} feed />);
+    await act(async () => setVisible(videoOf(1), 1));
+    expect(play).not.toHaveBeenCalled();
+    expect(screen.getByRole("button", { name: /play\s*the animated explainer/i })).toBeTruthy();
+  });
+
+  it("never autoplays on a card's own page", async () => {
+    render(<CardView card={card(1)} />);
+    await act(async () => setVisible(videoOf(1), 1));
+    expect(play).not.toHaveBeenCalled();
+  });
+});

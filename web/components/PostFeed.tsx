@@ -23,6 +23,7 @@ export function PostFeed({
   const { data, error, loading, setData } = useLoad(first);
   const [more, setMore] = useState<{ loading: boolean; error: string | null }>({ loading: false, error: null });
 
+  // Endless: the sentinel keeps asking while there is a next page; a failed page offers a retry.
   const loadMore = useCallback(async () => {
     if (!data?.next_cursor || more.loading) return;
     setMore({ loading: true, error: null });
@@ -54,8 +55,9 @@ export function PostFeed({
           </li>
         ))}
       </ul>
-      <ErrorNote error={more.error} />
-      {data.next_cursor ? <LoadMoreSentinel onVisible={loadMore} loading={more.loading} /> : null}
+      {data.next_cursor ? (
+        <LoadMoreSentinel onVisible={loadMore} loading={more.loading} error={more.error} />
+      ) : null}
     </>
   );
 }

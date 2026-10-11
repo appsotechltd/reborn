@@ -53,7 +53,7 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
   return (
     <>
       <button type="button" className="btn btn-small btn-ghost" aria-haspopup="dialog" onClick={show}>
-        <span aria-hidden="true">🎁</span> Gift
+        <span aria-hidden="true">🎁</span> <span data-action-label>Gift</span>
         {!user ? <span className="sr-only"> (sign in to send a gift)</span> : null}
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>

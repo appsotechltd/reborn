@@ -17,10 +17,14 @@ interface PostActionsProps {
   refresh?: boolean;
   /** Where the comment count links to. */
   commentsHref?: string;
+  /** Spacing above the actions (default `mt-6`). */
+  className?: string;
+  /** Icon-only buttons on one row below md (the phone feed), labels kept for screen readers. */
+  compact?: boolean;
 }
 
 /** Reactions, favourite, comments, share, embed and gift for one post, with optimistic updates. */
-export function PostActions({ post: initial, refresh = false, commentsHref }: PostActionsProps) {
+export function PostActions({ post: initial, refresh = false, commentsHref, className = "mt-6", compact = false }: PostActionsProps) {
   const { ready, token, user, api } = useAuth();
   const toSignIn = useSignInRedirect();
   const [post, setPost] = useState<Post>(initial);
@@ -74,12 +78,14 @@ export function PostActions({ post: initial, refresh = false, commentsHref }: Po
   const comments = post.stats.comments;
 
   return (
-    <div className="mx-auto mt-6 w-full max-w-read" data-testid="post-actions">
-      <div className="flex flex-wrap items-center gap-1 border-t border-line pt-3">
+    <div className={`mx-auto w-full max-w-read ${className}`} data-testid="post-actions">
+      <div
+        className={`flex flex-wrap items-center gap-1 border-t border-line pt-3 ${compact ? "actions-compact max-md:justify-between max-md:gap-0 max-md:pt-1" : ""}`}
+      >
         <ReactionControl post={post} signedIn={!!user} onReact={react} />
         <button
           type="button"
-          className={`btn btn-small btn-ghost ${favorited ? "text-accent" : ""}`}
+          className={`btn btn-small btn-ghost ${favorited ? "text-react" : ""}`}
           aria-pressed={favorited}
           onClick={favorite}
         >
@@ -148,13 +154,13 @@ function ReactionControl({
     <div ref={wrap} className="relative">
       <button
         type="button"
-        className={`btn btn-small btn-ghost ${current ? "text-accent" : ""}`}
+        className={`btn btn-small btn-ghost ${current ? "text-react" : ""}`}
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((o) => !o)}
       >
         <span aria-hidden="true">{current ? current.emoji : top.length ? top.map((r) => r.emoji).join("") : "👍"}</span>
-        <span>{current ? current.label : "React"}</span>
+        <span data-action-label>{current ? current.label : "React"}</span>
         {total ? (
           <>
             <span aria-hidden="true" className="text-muted">

@@ -49,11 +49,12 @@ export function AccountMenu() {
       <summary className="btn btn-small list-none [&::-webkit-details-marker]:hidden">
         <span
           aria-hidden="true"
-          className="grid size-6 place-items-center rounded-full bg-accent text-xs font-bold text-accent-fg"
+          className="grid size-6 place-items-center rounded-full bg-oxblood text-xs font-bold text-oxblood-fg"
         >
           {(user.display_name || user.email).slice(0, 1).toUpperCase()}
         </span>
-        <span className="max-w-32 truncate">{user.display_name || user.email}</span>
+        <span className="hidden max-w-32 truncate lg:inline">{user.display_name || user.email}</span>
+        <span className="sr-only lg:hidden">{user.display_name || user.email}</span>
         <span className="sr-only">: account menu</span>
       </summary>
       <div className="absolute right-0 z-20 mt-2 w-56 rounded-xl border border-line bg-surface p-1 shadow-lg">
@@ -72,7 +73,7 @@ export function AccountMenu() {
               <Link
                 href={it.href}
                 onClick={close}
-                className="block rounded-lg px-3 py-2 hover:bg-surface-2"
+                className="flex min-h-11 items-center rounded-lg px-3 py-2 hover:bg-surface-2"
                 aria-current={pathname === it.href ? "page" : undefined}
               >
                 {it.label}
@@ -82,7 +83,7 @@ export function AccountMenu() {
           <li>
             <button
               type="button"
-              className="block w-full rounded-lg px-3 py-2 text-left hover:bg-surface-2"
+              className="flex min-h-11 w-full items-center rounded-lg px-3 py-2 text-left hover:bg-surface-2"
               onClick={() => {
                 close();
                 signOut();

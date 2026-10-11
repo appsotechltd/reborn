@@ -35,7 +35,7 @@ export default async function HomePage() {
   const topics: Topic[] = data?.topics ?? TOPICS.map((t) => ({ ...t, card_count: 0 }));
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 max-md:-mt-4 max-md:space-y-4">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -49,20 +49,21 @@ export default async function HomePage() {
           },
         }}
       />
-      <section aria-labelledby="hero-title" className="mx-auto max-w-read text-center">
-        <h1 id="hero-title" className="font-serif text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+      <section aria-labelledby="hero-title" className="mx-auto max-w-read text-center max-md:snap-start">
+        <h1 id="hero-title" className="font-serif text-2xl font-semibold tracking-tight text-balance sm:text-4xl">
           Big ideas, one minute at a time.
         </h1>
-        <p className="mt-3 text-muted text-pretty">
+        <p className="mt-2 text-muted text-pretty sm:mt-3">
           Short idea cards from great books and open sources, each credited to where it came from.
         </p>
       </section>
 
-      <nav aria-label="Topics" className="mx-auto max-w-3xl">
-        <ul className="flex flex-wrap justify-center gap-2">
+      {/* On phones the topics are one row that scrolls sideways, so the feed starts sooner. */}
+      <nav aria-label="Topics" className="mx-auto max-w-3xl max-md:-mx-4">
+        <ul className="flex flex-wrap justify-center gap-2 max-md:flex-nowrap max-md:justify-start max-md:overflow-x-auto max-md:px-4 max-md:pb-1 max-md:[scrollbar-width:none]">
           {topics.map((t) => (
-            <li key={t.slug}>
-              <Link href={`/topics/${t.slug}`} className="chip min-h-8 hover:text-fg">
+            <li key={t.slug} className="shrink-0">
+              <Link href={`/topics/${t.slug}`} className="chip min-h-8 hover:text-fg pointer-coarse:min-h-11">
                 {t.name}
               </Link>
             </li>

@@ -78,7 +78,7 @@ export function BlockMenu({
     <div ref={wrap} className="relative inline-block">
       <button
         type="button"
-        className="rounded-full px-2 text-muted hover:bg-surface-2 hover:text-fg"
+        className="inline-flex items-center justify-center rounded-full px-2 text-muted hover:bg-surface-2 hover:text-fg pointer-coarse:-my-2.5 pointer-coarse:min-h-11 pointer-coarse:min-w-11"
         aria-haspopup="menu"
         aria-expanded={open}
         onClick={toggleOpen}

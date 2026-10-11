@@ -252,7 +252,7 @@ export function Composer({
           <label htmlFor="circle-attach" className="sr-only">
             Attach an idea from this book
           </label>
-          <select id="circle-attach" className="field min-h-10 py-1 text-sm" value={postId} onChange={(e) => setPostId(e.target.value)}>
+          <select id="circle-attach" className="field min-h-10 py-1 text-sm pointer-coarse:min-h-11" value={postId} onChange={(e) => setPostId(e.target.value)}>
             <option value="">Attach an idea (optional)</option>
             {cards.map((c) => (
               <option key={c.id} value={c.id}>

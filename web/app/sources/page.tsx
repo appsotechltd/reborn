@@ -35,7 +35,7 @@ export default async function SourcesPage() {
           {sources.map((s) => (
             <li key={s.id} className="py-5">
               <h2 className="font-serif text-xl font-semibold">
-                <Link href={`/sources/${s.id}`} className="hover:underline">
+                <Link href={`/sources/${s.id}`} className="inline-flex items-center hover:underline pointer-coarse:min-h-11">
                   {s.title}
                 </Link>
               </h2>
@@ -47,7 +47,7 @@ export default async function SourcesPage() {
                   {s.card_count} {s.card_count === 1 ? "idea" : "ideas"}
                 </span>
                 {s.topics.map((t) => (
-                  <Link key={t} href={`/topics/${t}`} className="chip hover:text-fg">
+                  <Link key={t} href={`/topics/${t}`} className="chip hover:text-fg pointer-coarse:min-h-11">
                     {topicName(t)}
                   </Link>
                 ))}

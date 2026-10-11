@@ -32,7 +32,7 @@ export function EmbedButton({ postId, title }: { postId: string; title: string }
   return (
     <>
       <button type="button" className="btn btn-small btn-ghost" aria-haspopup="dialog" onClick={() => setOpen(true)}>
-        <span aria-hidden="true">&lt;/&gt;</span> Embed
+        <span aria-hidden="true">&lt;/&gt;</span> <span data-action-label>Embed</span>
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>
         <h2 id={titleId} className="font-serif text-xl font-semibold">

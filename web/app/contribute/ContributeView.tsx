@@ -147,7 +147,7 @@ function ContributeForm({ onSubmitted }: { onSubmitted: () => void }) {
         </div>
         <div>
           <label htmlFor="body" className="label">Explain it in your own words</label>
-          <textarea id="body" className="field min-h-48 resize-y font-serif text-lg leading-relaxed" required maxLength={1200}
+          <textarea id="body" className="field min-h-48 resize-y text-lg leading-relaxed" required maxLength={1200}
             value={body} onChange={(e) => setBody(e.target.value)} aria-describedby="body-count body-hint" />
           <WordCounter text={body} id="body-count" />
           <p id="body-hint" className="hint">Plain text. Leave a blank line between paragraphs. No long quotes.</p>
