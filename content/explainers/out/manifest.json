@@ -4,33 +4,33 @@
     "aesops-fables--07": {
       "video": "aesops-fables--07.mp4",
       "poster": "aesops-fables--07.jpg",
-      "duration_s": 65.2,
+      "duration_s": 63.3,
       "width": 720,
       "height": 1280,
       "narrated": true,
-      "voice": "kokoro-82m/af_heart@0.95",
+      "voice": "kokoro-82m/bf_emma@0.95",
       "kind": "animated",
       "script": "scripts/aesops-fables--07.json"
     },
     "autobiography-benjamin-franklin--01": {
       "video": "autobiography-benjamin-franklin--01.mp4",
       "poster": "autobiography-benjamin-franklin--01.jpg",
-      "duration_s": 60.1,
+      "duration_s": 64.6,
       "width": 720,
       "height": 1280,
       "narrated": true,
-      "voice": "kokoro-82m/af_heart@0.95",
+      "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
       "script": "scripts/autobiography-benjamin-franklin--01.json"
     },
     "enchiridion-epictetus--01": {
       "video": "enchiridion-epictetus--01.mp4",
       "poster": "enchiridion-epictetus--01.jpg",
-      "duration_s": 53.4,
+      "duration_s": 58.1,
       "width": 720,
       "height": 1280,
       "narrated": true,
-      "voice": "kokoro-82m/af_heart@0.95",
+      "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
       "script": "scripts/enchiridion-epictetus--01.json"
     },
@@ -48,11 +48,11 @@
     "on-the-shortness-of-life-seneca--01": {
       "video": "on-the-shortness-of-life-seneca--01.mp4",
       "poster": "on-the-shortness-of-life-seneca--01.jpg",
-      "duration_s": 56.2,
+      "duration_s": 60.2,
       "width": 720,
       "height": 1280,
       "narrated": true,
-      "voice": "kokoro-82m/af_heart@0.95",
+      "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
       "script": "scripts/on-the-shortness-of-life-seneca--01.json"
     }
