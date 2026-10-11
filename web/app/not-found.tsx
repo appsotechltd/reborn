@@ -7,7 +7,7 @@ export default function NotFound() {
       <h1 className="mt-2 font-serif text-3xl font-semibold">We couldn&apos;t find that page</h1>
       <p className="mt-3 text-muted">The idea or source may have moved. Try searching the library instead.</p>
       <div className="mt-6 flex flex-wrap justify-center gap-3">
-        <Link href="/" className="btn btn-primary">Today&apos;s idea</Link>
+        <Link href="/" className="btn btn-primary">Home</Link>
         <Link href="/search" className="btn">Search</Link>
       </div>
     </div>

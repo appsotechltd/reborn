@@ -2,8 +2,13 @@ import { connection } from "next/server";
 import { apiRequest, isApiError, type RequestOptions } from "./api";
 import { REVALIDATE_SECONDS, serverApiUrl } from "./config";
 import type {
+  AuthorPage,
   Card,
   FeedResponse,
+  FollowState,
+  Post,
+  PostsResponse,
+  Profile,
   Source,
   SourceSummary,
   SitemapResponse,
@@ -33,7 +38,12 @@ async function orNull<T>(p: Promise<T>): Promise<T | null> {
 
 export const getCard = (id: string) => orNull(get<Card>(`/v1/cards/${encodeURIComponent(id)}`));
 export const getSource = (id: string) =>
-  orNull(get<{ source: Source; cards: Card[] }>(`/v1/sources/${encodeURIComponent(id)}`));
+  orNull(get<{ source: Source; cards: Card[]; follow?: FollowState }>(`/v1/sources/${encodeURIComponent(id)}`));
+export const getPost = (id: string) => orNull(get<Post>(`/v1/posts/${encodeURIComponent(id)}`));
+/** The anonymous timeline (everything, newest first), as seen by signed-out visitors and crawlers. */
+export const getTimeline = (limit = 10) => get<PostsResponse>("/v1/timeline", { limit });
+export const getAuthor = (name: string) => orNull(get<AuthorPage>(`/v1/authors/${encodeURIComponent(name)}`));
+export const getProfile = (handle: string) => orNull(get<Profile>(`/v1/users/${encodeURIComponent(handle)}`));
 export const getTopics = () => get<{ topics: Topic[] }>("/v1/topics").then((r) => r.topics);
 export const getDaily = () => get<{ date: string; card: Card }>("/v1/daily");
 export const getFeed = (q: { topics?: string; cursor?: string; limit?: number } = {}) =>

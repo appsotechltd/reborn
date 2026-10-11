@@ -64,6 +64,18 @@ The API must be running (by default at `http://localhost:8080`, see the reposito
   `components/CitedText.tsx`). `503 agent_unavailable` (no Anthropic key on the server, the
   default locally) and `429` show friendly states and keep the question for a retry.
 
+- **The social layer**: every published card is a post. The home page is the timeline
+  (`GET /v1/timeline`): the anonymous first page is server-rendered, then signed-in readers
+  get their own, with infinite scroll, a "why you're seeing this" line, posts marked seen
+  after about a second at least half on screen (batched to `POST /v1/seen`) and a "You're
+  all caught up" divider. `components/PostActions.tsx` holds reactions, favourite, comment
+  count, share, embed and gift, all optimistic; signed-out taps go to sign in.
+- **Sharing and embeds**: share links point at the canonical `/ideas/[id]` page.
+  `/embed/ideas/[id]` renders the card without site chrome and is the only path that may be
+  framed (`frame-ancestors *`; everything else sends `X-Frame-Options: SAMEORIGIN` and
+  `frame-ancestors 'self'`, see `next.config.ts`). `/oembed?url=…&format=json` is an oEmbed
+  provider, advertised on idea pages, which also get a generated Open Graph image.
+
 Caching uses Next's classic ISR model rather than Cache Components, so the first visit to a
 card that wasn't prebuilt waits for the real content (good for crawlers and link previews)
 instead of streaming a fallback shell.
@@ -78,11 +90,15 @@ and its licence, and the health `disclaimer` whenever the API sends one. Keep it
 
 ```
 app/                 routes (public pages are server components; signed-in pages render a client view)
-  ideas/[id]/        idea card page (JSON-LD Article, quiz, listen, stash, related cards)
-  sources/, sources/[id]/, topics/[slug]/, search/
-  signin/, register/, stashes/, stashes/[id]/, review/, quiz/, ask/, contribute/, moderation/, settings/
+  page.tsx           home timeline
+  ideas/[id]/        idea card page (JSON-LD Article, quiz, listen, stash, post actions, comments,
+                     opengraph-image / twitter-image)
+  embed/ideas/[id]/, oembed/   embeddable card and oEmbed endpoint
+  sources/, sources/[id]/, authors/[name]/, topics/[slug]/, search/, u/[handle]/
+  signin/, register/, forgot-password/, reset-password/, stashes/, stashes/[id]/, review/, quiz/,
+  ask/, contribute/, moderation/, settings/, favorites/, following/
   sitemap.ts, robots.ts, layout.tsx, not-found.tsx, error.tsx
-components/          CardView, CardPreview, Quiz, ListenButton, StashButton, CitedText, WordCounter, …
+components/          CardView, PostCard, PostActions, Timeline, Comments, ShareMenu, GiftButton, FollowButton, …
 lib/                 api client, server data loaders, auth context, types, helpers
 tests/               Vitest tests
 ```

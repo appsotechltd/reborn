@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { SiteChrome } from "@/components/SiteChrome";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { AuthProvider } from "@/lib/auth";
+import { SiteUrlProvider } from "@/lib/site-url";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
 import "./globals.css";
 
@@ -25,19 +27,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className="flex min-h-dvh flex-col antialiased">
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-surface focus:px-4 focus:py-2"
-        >
-          Skip to content
-        </a>
-        <AuthProvider>
-          <SiteHeader />
-          <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:py-12">
-            {children}
-          </main>
-          <SiteFooter />
-        </AuthProvider>
+        <SiteUrlProvider url={siteUrl()}>
+          <AuthProvider>
+            <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>
+              {children}
+            </SiteChrome>
+          </AuthProvider>
+        </SiteUrlProvider>
       </body>
     </html>
   );

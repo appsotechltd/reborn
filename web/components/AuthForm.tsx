@@ -103,7 +103,13 @@ export function AuthForm({ mode, next }: { mode: "signin" | "register"; next: st
             <p id="password-hint" className="hint">
               At least 8 characters.
             </p>
-          ) : null}
+          ) : (
+            <p className="mt-2 text-right text-sm">
+              <Link href="/forgot-password" className="link">
+                Forgot password?
+              </Link>
+            </p>
+          )}
         </div>
         {error ? (
           <p role="alert" className="rounded-lg border border-bad px-3 py-2 text-sm text-bad">

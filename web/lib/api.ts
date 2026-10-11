@@ -1,6 +1,20 @@
 import type {
+  AuthorPage,
   AuthResponse,
   Card,
+  Comment,
+  FollowingItem,
+  FollowKind,
+  FollowState,
+  Gift,
+  GiftTiersResponse,
+  Post,
+  PostsResponse,
+  Profile,
+  PublicUser,
+  ReactionKind,
+  ReportedComment,
+  ShareChannel,
   ChatMessage,
   ChatResponse,
   Contribution,
@@ -156,7 +170,8 @@ export function createApiClient(
     cards: (ids: string[]) => req<{ cards: Card[] }>("/v1/cards", { query: { ids: ids.join(",") } }),
     sources: (q: { topic?: string; cursor?: string | null; limit?: number } = {}) =>
       req<{ sources: SourceSummary[]; next_cursor: string | null }>("/v1/sources", { query: q }),
-    source: (id: string) => req<{ source: Source; cards: Card[] }>(`/v1/sources/${enc(id)}`),
+    source: (id: string) =>
+      req<{ source: Source; cards: Card[]; follow?: FollowState }>(`/v1/sources/${enc(id)}`),
     search: (q: { q: string; topic?: string; limit?: number }) =>
       req<{ cards: Card[] }>("/v1/search", { query: q }),
 
@@ -165,9 +180,14 @@ export function createApiClient(
       req<AuthResponse>("/v1/auth/register", { method: "POST", body, token: null }),
     login: (body: { email: string; password: string }) =>
       req<AuthResponse>("/v1/auth/login", { method: "POST", body, token: null }),
+    forgotPassword: (email: string) =>
+      req<void>("/v1/auth/forgot", { method: "POST", body: { email }, token: null }),
+    resetPassword: (body: { token: string; password: string }) =>
+      req<AuthResponse>("/v1/auth/reset", { method: "POST", body, token: null }),
     me: () => req<User>("/v1/me"),
-    updateMe: (body: { display_name?: string; topics?: string[] }) =>
+    updateMe: (body: { display_name?: string; handle?: string; bio?: string; topics?: string[] }) =>
       req<User>("/v1/me", { method: "PATCH", body }),
+    deleteMe: () => req<void>("/v1/me", { method: "DELETE" }),
     recordView: (cardId: string) => req<void>(`/v1/cards/${enc(cardId)}/view`, { method: "POST" }),
 
     // Stashes
@@ -202,6 +222,53 @@ export function createApiClient(
       }),
     reject: (id: string, note: string) =>
       req<Contribution>(`/v1/moderation/${enc(id)}/reject`, { method: "POST", body: { note } }),
+
+    // Timeline & posts
+    timeline: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
+      req<PostsResponse>("/v1/timeline", { query: q, token: auth ? getToken() : null }),
+    markSeen: (postIds: string[]) => req<void>("/v1/seen", { method: "POST", body: { post_ids: postIds } }),
+    post: (id: string) => req<Post>(`/v1/posts/${enc(id)}`),
+    setFavorite: (id: string, on: boolean) =>
+      req<void>(`/v1/posts/${enc(id)}/favorite`, { method: on ? "PUT" : "DELETE" }),
+    setReaction: (id: string, kind: ReactionKind | null) =>
+      kind
+        ? req<void>(`/v1/posts/${enc(id)}/reaction`, { method: "PUT", body: { kind } })
+        : req<void>(`/v1/posts/${enc(id)}/reaction`, { method: "DELETE" }),
+    share: (id: string, channel: ShareChannel) =>
+      req<void>(`/v1/posts/${enc(id)}/share`, { method: "POST", body: { channel } }),
+
+    // Comments
+    comments: (postId: string, q: { cursor?: string | null; limit?: number } = {}) =>
+      req<{ comments: Comment[]; next_cursor: string | null }>(`/v1/posts/${enc(postId)}/comments`, { query: q }),
+    addComment: (postId: string, body: { body: string; parent_id?: string | null }) =>
+      req<Comment>(`/v1/posts/${enc(postId)}/comments`, { method: "POST", body }),
+    deleteComment: (id: string) => req<void>(`/v1/comments/${enc(id)}`, { method: "DELETE" }),
+    reportComment: (id: string, reason?: string) =>
+      req<void>(`/v1/comments/${enc(id)}/report`, { method: "POST", body: reason ? { reason } : {} }),
+
+    // People, follows, favourites
+    myFavorites: (q: { cursor?: string | null; limit?: number } = {}) =>
+      req<PostsResponse>("/v1/me/favorites", { query: q }),
+    following: () => req<{ following: FollowingItem[] }>("/v1/me/following"),
+    setFollow: (kind: FollowKind, target: string, on: boolean) =>
+      req<FollowState>(`/v1/follows/${kind}/${enc(target)}`, { method: on ? "PUT" : "DELETE" }),
+    profile: (handle: string) => req<Profile>(`/v1/users/${enc(handle)}`),
+    userFavorites: (handle: string, q: { cursor?: string | null; limit?: number } = {}) =>
+      req<PostsResponse>(`/v1/users/${enc(handle)}/favorites`, { query: q }),
+    userFollowers: (handle: string, q: { cursor?: string | null; limit?: number } = {}) =>
+      req<{ users: PublicUser[]; next_cursor: string | null }>(`/v1/users/${enc(handle)}/followers`, { query: q }),
+    author: (name: string) => req<AuthorPage>(`/v1/authors/${enc(name)}`),
+
+    // Gifts
+    giftTiers: () => req<GiftTiersResponse>("/v1/gifts/tiers"),
+    giftCheckout: (postId: string, tier: string) =>
+      req<{ gift_id: string; url: string }>(`/v1/posts/${enc(postId)}/gifts/checkout`, { method: "POST", body: { tier } }),
+    gift: (id: string) => req<Gift>(`/v1/gifts/${enc(id)}`),
+
+    // Comment moderation
+    reportedComments: () => req<{ comments: ReportedComment[] }>("/v1/moderation/comments"),
+    hideComment: (id: string) => req<void>(`/v1/moderation/comments/${enc(id)}/hide`, { method: "POST" }),
+    restoreComment: (id: string) => req<void>(`/v1/moderation/comments/${enc(id)}/restore`, { method: "POST" }),
 
     // AI guide
     chat: (messages: ChatMessage[]) =>
