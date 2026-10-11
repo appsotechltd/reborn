@@ -7,9 +7,10 @@ import { PostActions } from "./PostActions";
 /**
  * A post in a list (timeline, favourites, profiles): the card with credit and licence, plus its actions.
  *
- * With `snap`, below the md breakpoint the post fills its slide in the full-screen feed: the card
- * scrolls inside the slide when it is long, and the actions stay pinned at the bottom so react,
- * favourite, comments and share are always in reach.
+ * With `snap`, below the md breakpoint the post fits its slide in the full-screen feed with no
+ * scrolling inside it (a swipe always moves to the next post): a preview of the card with
+ * "Read more" opening the card's page, and the actions pinned at the bottom so react, favourite,
+ * comments and share are always in reach. From md up it is the full card, as in other lists.
  */
 export function PostCard({
   post,
@@ -31,16 +32,12 @@ export function PostCard({
       data-post-id={post.id}
       className={`panel px-5 py-6 sm:px-8 sm:py-8 ${snap ? "max-md:flex max-md:h-full max-md:flex-col max-md:px-4 max-md:pb-2 max-md:pt-4" : ""}`}
     >
-      <div
-        data-slide-scroll={snap ? "" : undefined}
-        className={
-          snap
-            ? "max-md:-mx-1 max-md:min-h-0 max-md:flex-1 max-md:overflow-y-auto max-md:px-1 max-md:pb-6 max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-1.5rem),transparent)]"
-            : undefined
-        }
-      >
+      <div className={snap ? "max-md:flex max-md:min-h-0 max-md:flex-1 max-md:flex-col max-md:overflow-clip max-md:pb-3 max-md:[overflow-clip-margin:0.5rem]" : undefined}>
         {reason ? (
-          <p className="mx-auto mb-3 max-w-read text-sm text-muted" data-testid="post-reason">
+          <p
+            className={`mx-auto mb-3 max-w-read text-sm text-muted ${snap ? "max-md:mb-2 max-md:w-full max-md:truncate" : ""}`}
+            data-testid="post-reason"
+          >
             {reason}
           </p>
         ) : null}

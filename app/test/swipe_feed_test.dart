@@ -7,8 +7,7 @@ import 'package:video_player/video_player.dart';
 import 'fake_server.dart';
 import 'fixtures.dart';
 
-/// A phone: below the swipe-feed breakpoint. Tall enough that the short
-/// test posts fit their page without scrolling inside it.
+/// A phone: below the swipe-feed breakpoint.
 const phone = Size(400, 1400);
 
 Map<String, dynamic> post(
@@ -140,7 +139,7 @@ void main() {
     expect(find.text('Idea p2'), findsOneWidget);
   });
 
-  testWidgets('a long post scrolls inside its page, then hands off', (
+  testWidgets('a long post is cut to fit its page, with Read more', (
     tester,
   ) async {
     final long = List.filled(30, 'A long paragraph of the idea.').join('\n\n');
@@ -152,30 +151,81 @@ void main() {
     await pumpApp(tester, server, size: phone);
     await swipeUp(tester);
     expect(find.text('Idea p2'), findsOneWidget);
+    final p2 = find.byKey(const ValueKey('page-p2'));
 
-    // The action bar stays on screen while the post scrolls.
-    final favourite = find.byKey(const ValueKey('post-favorite'));
-    expect(favourite, findsOneWidget);
+    // Nothing scrolls inside the page: the body is cut to whole lines.
+    expect(
+      find.descendant(of: p2, matching: find.byType(Scrollable)),
+      findsNothing,
+    );
+    final body = tester.widget<Text>(
+      find.descendant(
+        of: p2,
+        matching: find.byKey(const ValueKey('preview-body')),
+      ),
+    );
+    expect(body.maxLines, lessThan(59)); // 30 paragraphs and the gaps
+    expect(body.overflow, TextOverflow.ellipsis);
+    expect(tester.takeException(), isNull); // no overflow
+
+    // Read more, named for the post, above the pinned action bar.
+    final readMore = find.descendant(
+      of: p2,
+      matching: find.byKey(const ValueKey('read-more')),
+    );
+    expect(readMore, findsOneWidget);
+    expect(find.bySemanticsLabel('Read more: Idea p2'), findsOneWidget);
+    final favourite = find.descendant(
+      of: p2,
+      matching: find.byKey(const ValueKey('post-favorite')),
+    );
+    expect(
+      tester.getRect(readMore).bottom,
+      lessThanOrEqualTo(tester.getRect(favourite).top),
+    );
     expect(tester.getRect(favourite).bottom, lessThanOrEqualTo(phone.height));
 
-    // The first drag scrolls the post, not the feed.
-    await tester.drag(feed, const Offset(0, -500));
-    await tester.pumpAndSettle();
-    expect(find.text('Idea p3'), findsNothing);
-    // The title scrolled away above the page.
-    expect(
-      tester.getRect(find.text('Idea p2')).bottom,
-      lessThan(tester.getRect(feed).top),
-    );
-    expect(favourite, findsOneWidget);
-
-    // Keep going: past the end of the post, the feed turns one page.
-    for (var i = 0; i < 12 && find.text('Idea p3').evaluate().isEmpty; i++) {
-      await tester.drag(feed, const Offset(0, -500));
-      await tester.pumpAndSettle();
-    }
+    // One swipe moves one post, not through the long body.
+    await swipeUp(tester);
     expect(find.text('Idea p3'), findsOneWidget);
     expect(find.bySemanticsLabel(RegExp(r'^Post 3 of 3')), findsOneWidget);
+  });
+
+  testWidgets('Read more opens the full card and records a read', (
+    tester,
+  ) async {
+    final long = List.filled(30, 'A long paragraph of the idea.').join('\n\n');
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([
+          post('p1', seen: false, body: long),
+          post('p2', seen: false),
+          post('p3', seen: false),
+        ]),
+      )
+      ..on('POST /v1/seen', (_) => const Reply.empty())
+      ..on('GET /v1/posts/p1', (_) => post('p1', body: long))
+      ..on('POST /v1/cards/p1/view', (_) => const Reply.empty());
+    await pumpApp(tester, server, prefs: signedInPrefs, size: phone);
+    expect(find.text('APPLY IT'), findsNothing); // not in the preview
+
+    await tester.tap(find.byKey(const ValueKey('read-more')));
+    await tester.pumpAndSettle();
+    expect(find.text('Idea'), findsOneWidget); // the card screen's title
+    expect(find.text('APPLY IT'), findsOneWidget);
+    expect(find.byKey(const ValueKey('card-credit')), findsOneWidget);
+    expect(server.called('POST /v1/cards/p1/view'), hasLength(1));
+
+    // Back on the feed, on the same post, and a swipe still moves one.
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+    expect(find.text('Idea p1'), findsOneWidget);
+    await swipeUp(tester);
+    expect(find.text('Idea p2'), findsOneWidget);
+    expect(find.text('Idea p3'), findsNothing);
+    expect(find.bySemanticsLabel(RegExp(r'^Post 2 of 3')), findsOneWidget);
+    await tester.pump(const Duration(seconds: 2)); // let the seen call land
   });
 
   testWidgets('preloads near the end and keeps going into older posts', (
