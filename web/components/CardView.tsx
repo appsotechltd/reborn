@@ -109,7 +109,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
           }`}
         >
           {/* Clamp an inner span: clamping the padded box lets a third line show in its padding. */}
-          <span className={preview ? "max-md:line-clamp-2" : undefined}>
+          <span className={preview ? "max-md:line-clamp-2" : undefined} data-fit-shrink={preview ? "" : undefined}>
             <strong className="font-semibold">{SUPPORT_TOPICS.has(card.topic) ? "Support note: " : "Health note: "}</strong>
             {card.disclaimer}
           </span>

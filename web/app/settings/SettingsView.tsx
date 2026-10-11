@@ -203,7 +203,13 @@ function SettingsForm({ user }: { user: User }) {
       </fieldset>
       <fieldset>
         <legend className="label">Your topics</legend>
-        <p className="hint mb-3 mt-0">Your feed favours these. Leave them all off to see everything.</p>
+        <p className="hint mb-3 mt-0">
+          Your feed favours these. Leave them all off to see everything, or{" "}
+          <Link href="/welcome?edit=1&next=%2Fsettings" className="link">
+            open the topic picker
+          </Link>
+          .
+        </p>
         <div className="grid gap-2 sm:grid-cols-2">
           {TOPICS.map((t) => (
             <label

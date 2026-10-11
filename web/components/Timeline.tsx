@@ -7,6 +7,7 @@ import { useAuth } from "@/lib/auth";
 import { useSeenTracker } from "@/lib/use-seen";
 import { useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
 import type { Post, Topic } from "@/lib/types";
+import { ChipRow } from "./ChipRow";
 import { DailyBanner } from "./DailyBanner";
 import { Icon } from "./Icon";
 import { LoadMoreSentinel } from "./LoadMoreSentinel";
@@ -146,9 +147,9 @@ export function Timeline({
         <>
           {lead}
           <p className="panel p-6 text-center text-muted">
-            No ideas here yet. Pick some topics in{" "}
-            <Link href="/settings" className="link">
-              Settings
+            No ideas here yet.{" "}
+            <Link href="/welcome?edit=1" className="link">
+              Pick some topics
             </Link>{" "}
             or{" "}
             <Link href="/sources" className="link">
@@ -205,11 +206,11 @@ function TopicChips({
   onSelect: (slug: string) => void;
 }) {
   return (
-    <div
+    <ChipRow
       data-feed-chips
-      role="group"
-      aria-label="Filter the timeline by topic"
-      className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 flex gap-2 overflow-x-auto bg-bg px-3 [scrollbar-width:none] md:hidden"
+      label="Filter the timeline by topic"
+      className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 bg-bg md:hidden"
+      scrollClassName="flex gap-2 overflow-x-auto px-3 [scrollbar-width:none]"
     >
       {[{ slug: "", name: "For you" }, ...topics].map((t) => {
         const on = selected === t.slug;
@@ -229,7 +230,7 @@ function TopicChips({
           </button>
         );
       })}
-    </div>
+    </ChipRow>
   );
 }
 
@@ -255,7 +256,7 @@ function FeedEnd() {
         <Link href="/discover" className="btn">
           Discover more ideas
         </Link>
-        <Link href="/settings" className="btn">
+        <Link href="/welcome?edit=1" className="btn">
           Follow more topics
         </Link>
       </div>

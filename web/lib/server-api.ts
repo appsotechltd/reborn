@@ -2,6 +2,7 @@ import { connection } from "next/server";
 import { apiRequest, isApiError, type RequestOptions } from "./api";
 import { REVALIDATE_SECONDS, serverApiUrl } from "./config";
 import type {
+  Circle,
   DiscoverResponse,
   PublicStash,
   AuthorPage,
@@ -49,6 +50,8 @@ export const getDiscover = () => get<DiscoverResponse>("/v1/discover");
 export const getPublicStash = (id: string) =>
   orNull(get<{ stash: PublicStash; cards: Card[] }>(`/v1/public/stashes/${encodeURIComponent(id)}`));
 export const getProfile = (handle: string) => orNull(get<Profile>(`/v1/users/${encodeURIComponent(handle)}`));
+/** Whether a book circle exists (circles are public; membership is checked by the page in the browser). */
+export const getCircle = (id: string) => orNull(get<Circle>(`/v1/circles/${encodeURIComponent(id)}`));
 export const getTopics = () => get<{ topics: Topic[] }>("/v1/topics").then((r) => r.topics);
 export const getDaily = () => get<{ date: string; card: Card }>("/v1/daily");
 export const getFeed = (q: { topics?: string; cursor?: string; limit?: number } = {}) =>

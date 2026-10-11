@@ -199,8 +199,16 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  [data-card-body]:has([data-clamped], [data-fits]) {
+  /* Not even one whole line fits: show none rather than a line cut through. */
+  [data-fit-lines][data-empty] {
+    display: none;
+  }
+  [data-card-body]:has([data-clamped], [data-fits], [data-empty]) {
     mask-image: none;
+  }
+  /* The note gives up its second line first so the body keeps at least two (see FitBody). */
+  [data-fit-shrink][data-shrunk] {
+    -webkit-line-clamp: 1;
   }
 }
 

@@ -71,8 +71,10 @@ describe("phone feed", () => {
       </AuthProvider>,
     );
     const chips = screen.getByRole("group", { name: "Filter the timeline by topic" });
-    expect(chips.className).toContain("md:hidden");
-    expect(chips.className).toContain("sticky");
+    // The sticky box wraps the scrolling row (and its edge fades).
+    expect(chips.parentElement!.className).toContain("md:hidden");
+    expect(chips.parentElement!.className).toContain("sticky");
+    expect(chips.parentElement!.hasAttribute("data-feed-chips")).toBe(true);
     const forYou = within(chips).getByRole("button", { name: "For you" });
     expect(forYou.getAttribute("aria-pressed")).toBe("true");
     fireEvent.click(within(chips).getByRole("button", { name: "Health" }));

@@ -30,6 +30,13 @@ export const TOPICS: { slug: string; name: string }[] = [
 /** Topics whose cards carry the server's support note instead of the health disclaimer. */
 export const SUPPORT_TOPICS = new Set(["heartbreak-healing", "grief-loss"]);
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** Whether an id is a UUID (stash and circle ids are). */
+export function isUuid(id: string): boolean {
+  return UUID_RE.test(id);
+}
+
 export function topicName(slug: string, topics?: Pick<Topic, "slug" | "name">[]): string {
   const list = topics && topics.length ? topics : TOPICS;
   return list.find((t) => t.slug === slug)?.name ?? slug.replace(/-/g, " ");

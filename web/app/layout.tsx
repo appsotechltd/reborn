@@ -3,6 +3,7 @@ import { Figtree, Fraunces } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { AuthProvider } from "@/lib/auth";
+import { ThemeSync } from "@/components/ThemeSync";
 import { SiteUrlProvider } from "@/lib/site-url";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
 import { themeScript } from "@/lib/theme";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="flex min-h-dvh flex-col antialiased">
+        <ThemeSync />
         <SiteUrlProvider url={siteUrl()}>
           <AuthProvider>
             <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>

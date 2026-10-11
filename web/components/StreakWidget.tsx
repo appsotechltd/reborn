@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback } from "react";
 import { useAuth } from "@/lib/auth";
-import { weekday } from "@/lib/engage";
+import { streakTodayText, weekday } from "@/lib/engage";
 import { useLoad } from "@/lib/use-load";
 import type { Streak } from "@/lib/types";
 import { Icon } from "./Icon";
@@ -42,10 +42,7 @@ function PhoneStreakCard({ streak }: { streak: Streak }) {
         <p aria-hidden="true" className="text-sm font-semibold">
           {days}
         </p>
-        <p className="mt-0.5 text-[0.8125rem] text-muted">
-          {streak.goal_met ? "Goal met: " : ""}
-          {streak.today} of {streak.goal} ideas today
-        </p>
+        <p className="mt-0.5 text-[0.8125rem] text-muted">{streakTodayText(streak)}</p>
         <div
           role="progressbar"
           aria-label="Today's goal"
@@ -92,9 +89,7 @@ function WideStreakCard({ streak }: { streak: Streak }) {
         </span>
       </p>
       <div className="min-w-40 flex-1">
-        <p className="text-sm">
-          <strong>{streak.today}</strong> of {goal} ideas today{streak.goal_met ? " · goal met ✓" : ""}
-        </p>
+        <p className="text-sm">{streakTodayText(streak)}</p>
         <div
           role="progressbar"
           aria-label="Today's goal"

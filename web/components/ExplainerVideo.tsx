@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
 import type { Card } from "@/lib/types";
 
+/** After the reader presses play, how long to wait for playback before offering the fallback. */
+export const PLAY_TIMEOUT_MS = 10_000;
+
 /** How much of a feed video must be on screen before it starts playing by itself. */
 export const AUTOPLAY_RATIO = 0.6;
 
@@ -37,6 +40,11 @@ function tryPlay(v: HTMLVideoElement): Promise<void> {
   }
 }
 
+/** play() rejects with NotSupportedError when no source can be played (bad file, codec, 404). */
+function isUnplayable(err: unknown): boolean {
+  return err instanceof DOMException ? err.name === "NotSupportedError" : (err as { name?: string })?.name === "NotSupportedError";
+}
+
 /**
  * The card's animated explainer. The credit, licence and any health note are
  * burned into the video itself, and the card's own credit stays on the page.
@@ -47,13 +55,21 @@ function tryPlay(v: HTMLVideoElement): Promise<void> {
  * refuses autoplay, or the reader prefers reduced motion, the Play button stays.
  *
  * Films stay dark in both modes: until it plays, the poster carries a bottom
- * fade with an amber kicker, the title in white Fraunces and a duration pill.
+ * fade with an amber kicker, the title in white Fraunces, and the Play button with a
+ * duration pill beside it (kept off the poster's own text, which sits at the top).
+ *
+ * When the video can't play (the file fails to load or decode, or nothing has played
+ * PLAY_TIMEOUT_MS after the reader pressed play), it says so over the poster, with
+ * "Try again" and a link that opens the file on its own.
  */
 export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: boolean }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [started, setStarted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
+  const [failed, setFailed] = useState(false);
+  // Set while waiting for playback to begin after a press on Play or Try again.
+  const [waiting, setWaiting] = useState(0);
   // The reader paused it: don't restart it until it scrolls away and back.
   const userPaused = useRef(false);
   const e = card.explainer;
@@ -68,7 +84,8 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
         if (entry.isIntersecting && entry.intersectionRatio >= AUTOPLAY_RATIO) {
           if (!v.paused || userPaused.current) return;
           v.muted = !soundOn;
-          tryPlay(v).catch(() => {
+          tryPlay(v).catch((err) => {
+            if (isUnplayable(err)) return setFailed(true);
             if (v.muted) return; // refused even muted: the Play button stays
             v.muted = true;
             tryPlay(v).catch(() => {});
@@ -87,7 +104,18 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     };
   }, [feed]);
 
+  // Nothing played a while after the reader asked for it: offer the fallback.
+  useEffect(() => {
+    if (!waiting) return;
+    const t = window.setTimeout(() => {
+      const v = videoRef.current;
+      if (v && v.paused && v.readyState < 3) setFailed(true);
+    }, PLAY_TIMEOUT_MS);
+    return () => window.clearTimeout(t);
+  }, [waiting]);
+
   if (!e) return null;
+  const videoSrc = mediaUrl(e.video_url);
   const seconds = Math.round(e.duration_s);
   const kind = e.kind === "film" ? "Short film" : "Animated explainer";
   const duration = seconds < 60 ? `${seconds} s` : `${Math.round(seconds / 6) / 10} min`;
@@ -105,8 +133,19 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     } else {
       v.focus();
     }
+    setWaiting((n) => n + 1);
     // It can still be refused; on a card page the native controls remain.
-    tryPlay(v).catch(() => {});
+    tryPlay(v).catch((err) => {
+      if (isUnplayable(err)) setFailed(true);
+    });
+  }
+
+  function retry() {
+    const v = videoRef.current;
+    setFailed(false);
+    if (!v) return;
+    v.load(); // forget the failed attempt and fetch the file again
+    play();
   }
 
   function togglePlay() {
@@ -163,13 +202,18 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
             setStarted(true);
             setIsPlaying(true);
           }}
+          onPlaying={() => {
+            setFailed(false);
+            setWaiting(0);
+          }}
+          onError={() => setFailed(true)}
           onPause={() => setIsPlaying(false)}
           onVolumeChange={(ev) => setMuted(ev.currentTarget.muted)}
         >
-          <source src={mediaUrl(e.video_url)} type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" onError={() => setFailed(true)} />
           {e.captions_url ? <track kind="captions" srcLang="en" label="English" src={mediaUrl(e.captions_url)} /> : null}
         </video>
-        {feed && started ? (
+        {feed && started && !failed ? (
           <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between p-2">
             <button
               type="button"
@@ -198,28 +242,57 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
             </button>
           </div>
         ) : null}
-        {started ? null : (
+        {failed ? (
+          <div
+            role="alert"
+            className="absolute inset-0 flex flex-col justify-end bg-[linear-gradient(180deg,rgba(20,17,14,0.35)_0%,rgba(20,17,14,0.94)_55%)] p-5 text-left"
+          >
+            <p className="font-serif text-xl font-semibold leading-snug text-film-fg">This video can&apos;t play here</p>
+            <p className="mt-1 text-sm text-film-fg/80">
+              Your browser couldn&apos;t load it. Try again, open the video on its own, or read the card below.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={retry}
+                className="inline-flex min-h-11 items-center rounded-full bg-accent px-4 text-sm font-semibold text-accent-fg hover:brightness-105"
+              >
+                Try again
+              </button>
+              <a
+                href={videoSrc}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex min-h-11 items-center rounded-full border border-film-fg/40 px-4 text-sm font-semibold text-film-fg hover:bg-film-fg/10"
+              >
+                Open the video
+              </a>
+            </div>
+          </div>
+        ) : started ? null : (
           <button
             type="button"
             onClick={play}
             className="group absolute inset-0 flex w-full flex-col justify-end bg-[linear-gradient(180deg,rgba(20,17,14,0)_45%,rgba(20,17,14,0.92)_75%)] p-5 text-left focus-visible:outline-offset-[-4px]"
           >
-            <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-film/80 px-2.5 py-1 text-xs font-semibold text-film-fg">
-              <span aria-hidden="true" className="size-2 rounded-full bg-accent" />
-              {duration}
-            </span>
             <span className="text-[0.6875rem] font-bold uppercase tracking-[0.12em] text-accent">
               {kind}
             </span>
             <span aria-hidden="true" className="mt-1 font-serif text-xl font-semibold leading-snug text-film-fg text-balance">
               {card.title}
             </span>
-            <span className="mt-3 inline-flex min-h-11 w-fit items-center gap-2 rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-accent-fg group-hover:brightness-105">
-              <svg aria-hidden="true" viewBox="0 0 12 12" className="size-3 fill-current">
-                <path d="M3 1.5v9l7.5-4.5z" />
-              </svg>
-              Play
-              <span className="sr-only"> the {kind.toLowerCase()}</span>
+            <span className="mt-3 flex items-center justify-between gap-3">
+              <span className="inline-flex min-h-11 w-fit items-center gap-2 rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-accent-fg group-hover:brightness-105">
+                <svg aria-hidden="true" viewBox="0 0 12 12" className="size-3 fill-current">
+                  <path d="M3 1.5v9l7.5-4.5z" />
+                </svg>
+                Play
+                <span className="sr-only"> the {kind.toLowerCase()}</span>
+              </span>
+              <span data-testid="explainer-duration" className="inline-flex items-center gap-1.5 rounded-full bg-film/80 px-2.5 py-1 text-xs font-semibold text-film-fg">
+                <span aria-hidden="true" className="size-2 rounded-full bg-accent" />
+                {duration}
+              </span>
             </span>
           </button>
         )}

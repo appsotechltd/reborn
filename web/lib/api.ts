@@ -103,6 +103,11 @@ export interface RequestOptions {
   token?: string | null;
   query?: Record<string, string | number | undefined | null>;
   signal?: AbortSignal;
+  /**
+   * Let the request outlive the page (fetch keepalive), for small fire-and-forget writes
+   * sent as the reader leaves: "seen" batches flushed on pagehide, a card view.
+   */
+  keepalive?: boolean;
   /** Next.js fetch extensions (server-side caching). */
   next?: { revalidate?: number | false; tags?: string[] };
   cache?: RequestCache;
@@ -140,6 +145,7 @@ export async function apiRequest<T>(
     body: opts.body !== undefined ? JSON.stringify(opts.body) : undefined,
     signal: opts.signal,
   };
+  if (opts.keepalive) init.keepalive = true;
   if (opts.cache) init.cache = opts.cache;
   if (opts.next) init.next = opts.next;
 
@@ -153,9 +159,10 @@ export async function apiRequest<T>(
   }
 
   if (!res.ok) throw await errorFromResponse(res);
-  if (res.status === 204) return undefined as T;
+  // Read the body even when it's empty (204): a response left unread is cancelled by the
+  // browser, and DevTools and test tools then report a request that succeeded as "aborted".
   const text = await res.text();
-  if (!text) return undefined as T;
+  if (res.status === 204 || !text) return undefined as T;
   try {
     return JSON.parse(text) as T;
   } catch {
@@ -215,7 +222,7 @@ export function createApiClient(
     }) =>
       req<User>("/v1/me", { method: "PATCH", body }),
     deleteMe: () => req<void>("/v1/me", { method: "DELETE" }),
-    recordView: (cardId: string) => req<void>(`/v1/cards/${enc(cardId)}/view`, { method: "POST" }),
+    recordView: (cardId: string) => req<void>(`/v1/cards/${enc(cardId)}/view`, { method: "POST", keepalive: true }),
 
     // Stashes
     stashes: () => req<{ stashes: Stash[] }>("/v1/stashes"),
@@ -253,7 +260,8 @@ export function createApiClient(
     // Timeline & posts
     timeline: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
       req<PostsResponse>("/v1/timeline", { query: q, token: auth ? getToken() : null }),
-    markSeen: (postIds: string[]) => req<void>("/v1/seen", { method: "POST", body: { post_ids: postIds } }),
+    markSeen: (postIds: string[]) =>
+      req<void>("/v1/seen", { method: "POST", body: { post_ids: postIds }, keepalive: true }),
     post: (id: string) => req<Post>(`/v1/posts/${enc(id)}`),
     setFavorite: (id: string, on: boolean) =>
       req<void>(`/v1/posts/${enc(id)}/favorite`, { method: on ? "PUT" : "DELETE" }),

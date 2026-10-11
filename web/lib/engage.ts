@@ -88,6 +88,17 @@ export function timezones(): string[] {
   return [];
 }
 
+/**
+ * Today's progress line on the streak card. Before the goal: "2 of 3 ideas today".
+ * Once it is met, the count can pass the goal, so it no longer reads "of":
+ * "Goal met · 21 ideas today (goal 3)".
+ */
+export function streakTodayText(s: { today: number; goal: number; goal_met?: boolean }): string {
+  const ideas = (n: number) => `${n} ${n === 1 ? "idea" : "ideas"}`;
+  if (s.goal_met || s.today >= s.goal) return `Goal met · ${ideas(s.today)} today (goal ${s.goal})`;
+  return `${s.today} of ${ideas(s.goal)} today`;
+}
+
 /** Short weekday for a YYYY-MM-DD day, without timezone surprises. */
 export function weekday(day: string): string {
   const [y, m, d] = day.split("-").map(Number);

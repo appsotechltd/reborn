@@ -72,7 +72,13 @@ export function GiftButton({ postId, title, count = 0 }: { postId: string; title
             Loading…
           </p>
         ) : null}
-        {tiers ? (
+        {tiers && !enabled ? (
+          // Payments aren't set up: no prices to pick from, just the notice.
+          <p role="status" className="mt-4 rounded-lg border border-line bg-surface-2 px-3 py-2 text-sm">
+            Gifts are coming soon.
+          </p>
+        ) : null}
+        {tiers && enabled ? (
           <>
             <ul className="mt-4 grid gap-2 sm:grid-cols-3">
               {tiers.tiers.map((t) => (
@@ -80,7 +86,7 @@ export function GiftButton({ postId, title, count = 0 }: { postId: string; title
                   <button
                     type="button"
                     className="btn w-full flex-col gap-0 py-3"
-                    disabled={!enabled || busy !== null}
+                    disabled={busy !== null}
                     onClick={() => checkout(t.id)}
                   >
                     <span className="font-semibold">{t.name}</span>
@@ -91,13 +97,7 @@ export function GiftButton({ postId, title, count = 0 }: { postId: string; title
                 </li>
               ))}
             </ul>
-            {!enabled ? (
-              <p role="status" className="mt-3 rounded-lg border border-line bg-surface-2 px-3 py-2 text-sm">
-                Gifts are coming soon.
-              </p>
-            ) : (
-              <p className="hint mt-3">You&apos;ll pay securely with Stripe and come straight back here.</p>
-            )}
+            <p className="hint mt-3">You&apos;ll pay securely with Stripe and come straight back here.</p>
           </>
         ) : null}
         {error ? (

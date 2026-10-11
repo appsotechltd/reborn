@@ -9,6 +9,11 @@ import { browserTimezone, clearReferral, isReferralCode, readReferral } from "@/
 
 const noopSubscribe = () => () => {};
 
+/** The topic picker a new account sees straight after sign-up, then on to `next`. */
+export function welcomeHref(next: string): string {
+  return next && next !== "/" ? `/welcome?next=${encodeURIComponent(next)}` : "/welcome";
+}
+
 export function AuthForm({ mode, next, referral }: { mode: "signin" | "register"; next: string; referral?: string }) {
   const { api, signIn } = useAuth();
   const router = useRouter();
@@ -43,7 +48,8 @@ export function AuthForm({ mode, next, referral }: { mode: "signin" | "register"
         : await api.login({ email: email.trim(), password });
       if (register) clearReferral();
       signIn(res.token, res.user);
-      router.push(next);
+      // A new account picks its topics first (as in the app), then goes where it was headed.
+      router.push(register ? welcomeHref(next) : next);
     } catch (err) {
       setError(
         isApiError(err)
