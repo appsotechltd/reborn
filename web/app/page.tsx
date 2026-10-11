@@ -35,7 +35,7 @@ export default async function HomePage() {
   const topics: Topic[] = data?.topics ?? TOPICS.map((t) => ({ ...t, card_count: 0 }));
 
   return (
-    <div className="space-y-10 max-md:-mt-4 max-md:space-y-4">
+    <div className="space-y-10 max-md:-mt-4 max-md:space-y-0">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -49,7 +49,8 @@ export default async function HomePage() {
           },
         }}
       />
-      <section aria-labelledby="hero-title" className="mx-auto max-w-read text-center max-md:snap-start">
+      {/* On phones the feed starts straight under the header, as in the app; the heading stays for screen readers. */}
+      <section aria-labelledby="hero-title" className="mx-auto max-w-read text-center max-md:sr-only">
         <h1 id="hero-title" className="font-serif text-2xl font-semibold tracking-tight text-balance sm:text-4xl">
           Big ideas, one minute at a time.
         </h1>
@@ -58,9 +59,9 @@ export default async function HomePage() {
         </p>
       </section>
 
-      {/* On phones the topics are one row that scrolls sideways, so the feed starts sooner. */}
-      <nav aria-label="Topics" className="mx-auto max-w-3xl max-md:-mx-4">
-        <ul className="flex flex-wrap justify-center gap-2 max-md:flex-nowrap max-md:justify-start max-md:overflow-x-auto max-md:px-4 max-md:pb-1 max-md:[scrollbar-width:none]">
+      {/* On phones the timeline's own topic chips filter the feed in place instead, as in the app. */}
+      <nav aria-label="Topics" className="mx-auto max-w-3xl max-md:hidden">
+        <ul className="flex flex-wrap justify-center gap-2">
           {topics.map((t) => (
             <li key={t.slug} className="shrink-0">
               <Link href={`/topics/${t.slug}`} className="chip min-h-8 hover:text-fg pointer-coarse:min-h-11">
@@ -72,7 +73,7 @@ export default async function HomePage() {
       </nav>
 
       {ok && data ? (
-        <Timeline initialPosts={data.timeline.posts} initialCursor={data.timeline.next_cursor} />
+        <Timeline initialPosts={data.timeline.posts} initialCursor={data.timeline.next_cursor} topics={topics} />
       ) : (
         <Unavailable what="the timeline" />
       )}

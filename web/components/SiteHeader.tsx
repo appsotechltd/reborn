@@ -3,18 +3,27 @@ import { AccountMenu } from "./AccountMenu";
 import { NavLinks } from "./NavLinks";
 import { NotificationBell } from "./NotificationBell";
 
+/**
+ * The site header. From md up: the wordmark, the link strip, the bell and the account menu.
+ * On phones it is the wordmark, the bell and the avatar, as in the app; the main links are in the
+ * bottom tab bar (easier to reach with a thumb), and the rest are in the avatar menu. The browser's
+ * own back button does the app bar's back arrow's job.
+ */
 export function SiteHeader() {
   return (
-    <header data-site-header className="border-b border-line bg-nav/95 backdrop-blur supports-[backdrop-filter]:bg-nav/80 sticky top-0 z-10">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-4 gap-y-0.5 px-4 py-1.5 md:flex-nowrap md:py-2">
+    <header
+      data-site-header
+      className="sticky top-0 z-10 border-b border-line bg-nav/95 backdrop-blur supports-[backdrop-filter]:bg-nav/80 max-md:border-transparent max-md:bg-bg max-md:backdrop-blur-none max-md:supports-[backdrop-filter]:bg-bg"
+    >
+      <div className="mx-auto flex max-w-5xl items-center gap-x-4 px-4 py-1.5 max-md:gap-x-1 max-md:pl-2 max-md:pr-2 md:py-2">
         <Link
           href="/"
-          className="inline-flex min-h-11 items-center font-serif text-2xl font-semibold tracking-tight"
+          className="inline-flex min-h-11 items-center px-2 font-serif text-2xl font-semibold tracking-tight md:px-0"
           aria-label="Reborn, home"
         >
           Reborn<span className="text-accent-text">.</span>
         </Link>
-        <nav aria-label="Main" className="order-3 -mx-1 w-full min-w-0 md:order-none md:mx-0 md:w-auto md:flex-1">
+        <nav aria-label="Main" className="min-w-0 flex-1 max-md:hidden">
           <NavLinks />
         </nav>
         <div className="ml-auto flex items-center gap-1">

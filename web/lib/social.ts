@@ -2,10 +2,10 @@ import type { Post, PostReason, ReactionKind, ShareChannel } from "./types";
 
 export const REACTIONS: { kind: ReactionKind; emoji: string; label: string }[] = [
   { kind: "like", emoji: "👍", label: "Like" },
-  { kind: "love", emoji: "😍", label: "Love" },
+  { kind: "love", emoji: "❤️", label: "Love" },
   { kind: "insightful", emoji: "💡", label: "Insightful" },
   { kind: "inspiring", emoji: "✨", label: "Inspiring" },
-  { kind: "helpful", emoji: "🙌", label: "Helpful" },
+  { kind: "helpful", emoji: "🙏", label: "Helpful" },
 ];
 
 export function reactionInfo(kind: ReactionKind) {

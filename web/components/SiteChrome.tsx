@@ -2,9 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { TabBar } from "./TabBar";
 
 /**
- * Wraps pages in the site header and footer, except embeds (/embed/*), which
+ * Wraps pages in the site header and footer (and, on phones, the app's bottom tab bar), except embeds (/embed/*), which
  * render bare so they fit inside an iframe on someone else's site.
  */
 export function SiteChrome({ header, footer, children }: { header: ReactNode; footer: ReactNode; children: ReactNode }) {
@@ -25,10 +26,11 @@ export function SiteChrome({ header, footer, children }: { header: ReactNode; fo
         Skip to content
       </a>
       {header}
-      <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:py-12">
+      <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 max-md:pt-4 sm:py-12">
         {children}
       </main>
       {footer}
+      <TabBar />
     </>
   );
 }

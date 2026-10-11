@@ -34,6 +34,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
+  // Lets the phone tab bar pad itself clear of the home indicator (env(safe-area-inset-bottom)).
+  viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#faf8f4" },
     { media: "(prefers-color-scheme: dark)", color: "#14110e" },

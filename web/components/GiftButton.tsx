@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
-import { formatMoney } from "@/lib/social";
+import { formatCount, formatMoney } from "@/lib/social";
 import type { GiftTiersResponse } from "@/lib/types";
+import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 import { useSignInRedirect } from "./SignInPrompt";
 
 /** Gift dialog: pick a tier and pay with Stripe Checkout. Gifts support Reborn. */
-export function GiftButton({ postId, title }: { postId: string; title: string }) {
+export function GiftButton({ postId, title, count = 0 }: { postId: string; title: string; count?: number }) {
   const { user, api } = useAuth();
   const toSignIn = useSignInRedirect();
   const [open, setOpen] = useState(false);
@@ -52,8 +53,10 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
 
   return (
     <>
-      <button type="button" className="btn btn-small btn-ghost" aria-haspopup="dialog" onClick={show}>
-        <span aria-hidden="true">🎁</span> <span data-action-label>Gift</span>
+      <button type="button" className="btn btn-small btn-ghost gap-1.5 px-2.5 text-accent-text" aria-haspopup="dialog" onClick={show}>
+        <Icon name="gift" />
+        Gift
+        {count > 0 ? <span> · {formatCount(count)}</span> : null}
         {!user ? <span className="sr-only"> (sign in to send a gift)</span> : null}
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>

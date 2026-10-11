@@ -45,9 +45,17 @@ function isTyping(el: EventTarget | null): boolean {
   return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || !!el.closest("[role=dialog],dialog,[role=menu]");
 }
 
+/** The sticky bars above the feed: the site header and, on phones, the feed's topic chips. */
+const STICKY = ["[data-site-header]", "[data-feed-chips]"];
+
+/** How much of the top of the screen the sticky bars cover: where a slide's top lines up. */
 export function headerHeight(): number {
-  const header = document.querySelector<HTMLElement>("[data-site-header]");
-  return header ? header.getBoundingClientRect().height : 0;
+  let h = 0;
+  for (const sel of STICKY) {
+    const el = document.querySelector<HTMLElement>(sel);
+    if (el) h += el.getBoundingClientRect().height;
+  }
+  return h;
 }
 
 function reducedMotion(): boolean {
@@ -55,22 +63,34 @@ function reducedMotion(): boolean {
 }
 
 /**
- * Keeps `--header-h` on <html> equal to the sticky header's height, so each slide can be
- * exactly one screen below it (`--slide-h`) and snapping lines slides up under it.
+ * Keeps `--header-h` on <html> equal to the height of the sticky bars above the feed (the
+ * header plus, on phones, the topic chips), so each slide can be exactly the screen below
+ * them (`--slide-h`) and snapping lines slides up under them. `--site-header-h` is the
+ * header alone, where the chips stick.
  */
 export function useHeaderHeightVar() {
   useEffect(() => {
     const header = document.querySelector<HTMLElement>("[data-site-header]");
     if (!header) return;
     const root = document.documentElement;
-    const set = () => root.style.setProperty("--header-h", `${Math.round(header.getBoundingClientRect().height)}px`);
+    const set = () => {
+      root.style.setProperty("--site-header-h", `${Math.round(header.getBoundingClientRect().height)}px`);
+      root.style.setProperty("--header-h", `${Math.round(headerHeight())}px`);
+    };
+    const clear = () => {
+      root.style.removeProperty("--header-h");
+      root.style.removeProperty("--site-header-h");
+    };
     set();
-    if (typeof ResizeObserver === "undefined") return () => root.style.removeProperty("--header-h");
+    if (typeof ResizeObserver === "undefined") return clear;
     const ro = new ResizeObserver(set);
-    ro.observe(header);
+    for (const sel of STICKY) {
+      const el = document.querySelector<HTMLElement>(sel);
+      if (el) ro.observe(el);
+    }
     return () => {
       ro.disconnect();
-      root.style.removeProperty("--header-h");
+      clear();
     };
   }, []);
 }

@@ -2,13 +2,25 @@
 
 import { useState } from "react";
 import { useAuth, useHydrated } from "@/lib/auth";
-import { ideaPath, shareTargets } from "@/lib/social";
+import { formatCount, ideaPath, shareTargets } from "@/lib/social";
 import { useSiteUrl } from "@/lib/site-url";
 import type { ShareChannel } from "@/lib/types";
+import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 
 /** Share a post: network links, Copy link and (when the browser has it) the system share sheet. */
-export function ShareMenu({ postId, title, onShared }: { postId: string; title: string; onShared?: () => void }) {
+export function ShareMenu({
+  postId,
+  title,
+  count,
+  onShared,
+}: {
+  postId: string;
+  title: string;
+  /** Times shared, shown next to the icon. */
+  count?: number;
+  onShared?: () => void;
+}) {
   const { api } = useAuth();
   const site = useSiteUrl();
   const hydrated = useHydrated();
@@ -50,8 +62,20 @@ export function ShareMenu({ postId, title, onShared }: { postId: string; title: 
 
   return (
     <>
-      <button type="button" className="btn btn-small btn-ghost" aria-haspopup="dialog" onClick={() => setOpen(true)}>
-        <span aria-hidden="true">↗</span> <span data-action-label>Share</span>
+      <button
+        type="button"
+        className="btn btn-small btn-ghost gap-1.5 px-2.5 text-muted hover:text-fg"
+        aria-haspopup="dialog"
+        onClick={() => setOpen(true)}
+      >
+        <Icon name="share" />
+        <span className="sr-only">Share</span>
+        {count !== undefined ? (
+          <>
+            <span aria-hidden="true">{formatCount(count)}</span>
+            <span className="sr-only">, shared {count} {count === 1 ? "time" : "times"}</span>
+          </>
+        ) : null}
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>
         <h2 id={titleId} className="font-serif text-xl font-semibold">

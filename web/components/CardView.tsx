@@ -4,6 +4,8 @@ import { licenceName, paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/conten
 import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
 import { ExplainerVideo } from "./ExplainerVideo";
+import { FitBody } from "./FitBody";
+import { Icon } from "./Icon";
 
 interface CardViewProps {
   card: Card;
@@ -18,7 +20,7 @@ interface CardViewProps {
   /**
    * In the home feed: the explainer plays by itself (muted) while it is on screen, and below md
    * (the full-screen phone feed, with `titleHref`) the card becomes a preview that fits its slide:
-   * topic, title, source and as much of the body as fits (faded at the cut), then "Read more".
+   * topic, title, source and as much of the body as fits (whole lines, ending in "…"), then "Read more".
    */
   feed?: boolean;
 }
@@ -57,7 +59,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       aria-labelledby={`card-${card.id}-title`}
       data-card-preview={preview ? "" : undefined}
     >
-      <p className="eyebrow">
+      <p className={`eyebrow ${preview ? "max-md:order-first max-md:text-[0.6875rem]" : ""}`}>
         <Link href={`/topics/${card.topic}`} className="hover:text-accent-text hover:underline">
           {topicName(card.topic)}
         </Link>
@@ -65,7 +67,9 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       <Heading
         id={`card-${card.id}-title`}
         className={`mt-2 font-serif font-semibold leading-tight tracking-tight text-balance ${
-          preview ? `text-2xl md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}` : "text-3xl sm:text-4xl"
+          preview
+            ? `text-2xl max-md:text-[1.375rem] max-md:leading-[1.22] md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}`
+            : "text-3xl sm:text-4xl"
         }`}
       >
         {titleHref ? (
@@ -76,18 +80,22 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
           card.title
         )}
       </Heading>
-      <p className="mt-2 text-sm text-muted">
-        From{" "}
-        <Link href={`/sources/${card.source.id}`} className="link">
+      {/* Source and authors in amber, as in the app: "Meditations · Marcus Aurelius". */}
+      <p className={`mt-2 text-sm text-muted ${preview ? "max-md:text-[0.8125rem]" : ""}`} data-testid="card-byline">
+        <span className="sr-only">From </span>
+        <Link href={`/sources/${card.source.id}`} className="font-semibold text-accent-text hover:underline">
           {card.source.title}
         </Link>
-        {card.source.authors.length ? (
-          <>
-            {" "}
-            by <AuthorLinks authors={card.source.authors} />
-          </>
-        ) : null}
-        {card.locator ? <span> · {card.locator}</span> : null}
+        {card.source.authors.map((name, i) => (
+          <span key={name}>
+            <span aria-hidden="true"> · </span>
+            {i === 0 ? <span className="sr-only"> by </span> : <span className="sr-only">, </span>}
+            <Link href={authorHref(name)} className="font-semibold text-accent-text hover:underline">
+              {name}
+            </Link>
+          </span>
+        ))}
+        {card.locator ? <span className={preview ? "max-md:hidden" : undefined}> · {card.locator}</span> : null}
       </p>
 
       {actions ? <div className="mt-4 flex flex-wrap gap-2">{actions}</div> : null}
@@ -97,7 +105,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
           role="note"
           aria-label={SUPPORT_TOPICS.has(card.topic) ? "Support note" : "Health disclaimer"}
           className={`mt-6 rounded-inset border border-warn-border bg-warn px-4 py-3 text-sm text-warn-fg ${
-            preview ? "max-md:mt-3 max-md:py-2 max-md:text-xs" : ""
+            preview ? "max-md:order-1 max-md:mt-3 max-md:py-2 max-md:text-xs" : ""
           }`}
         >
           {/* Clamp an inner span: clamping the padded box lets a third line show in its padding. */}
@@ -110,26 +118,29 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
 
       {card.explainer ? <ExplainerVideo card={card} feed={feed} /> : null}
 
-      <div
-        data-card-body
-        className={`prose-reborn mt-6 ${
-          preview
-            ? video
-              ? "max-md:hidden"
-              : // As much as fits above "Read more", clipped (not scrollable) and faded at the cut.
-                "max-md:mt-4 max-md:min-h-0 max-md:flex-1 max-md:overflow-clip max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-3.5rem),transparent)]"
-            : ""
-        }`}
-      >
-        {paragraphs(card.body).map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
-      </div>
+      {preview && !video ? (
+        // As much as fits above "Read more", clipped (never scrolled): whole lines ending in "…"
+        // once measured, faded at the cut until then.
+        <FitBody
+          className="prose-reborn mt-6 max-md:mt-3 max-md:min-h-0 max-md:flex-1 max-md:overflow-clip max-md:text-[1.0625rem] max-md:leading-[1.6] max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-3.5rem),transparent)]"
+        >
+          {paragraphs(card.body).map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </FitBody>
+      ) : (
+        <div data-card-body className={`prose-reborn mt-6 ${preview && video ? "max-md:hidden" : ""}`}>
+          {paragraphs(card.body).map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+      )}
 
       {preview && (!video || card.body.trim()) ? (
         // Always shown in the preview (it never has Apply it or the full credit), only on phones.
-        <p className="mt-3 shrink-0 md:hidden">
-          <Link href={preview} className="btn btn-small" data-read-more>
+        <p className="mt-3 shrink-0 max-md:order-2 md:hidden">
+          <Link href={preview} className="btn btn-small btn-primary gap-2 pl-3.5" data-read-more>
+            <Icon name="arrowForward" className="size-[1.125rem]" />
             Read more<span className="sr-only">: {card.title}</span>
           </Link>
         </p>

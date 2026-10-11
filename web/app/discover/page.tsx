@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CircleList } from "@/components/CircleList";
+import { Icon } from "@/components/Icon";
 import { PostPreviewList } from "@/components/PostPreview";
 import { TrendingPosts } from "@/components/TrendingPosts";
 import { Unavailable } from "@/components/Unavailable";
@@ -23,10 +24,18 @@ export const metadata: Metadata = {
 export default async function DiscoverPage() {
   const { data, ok } = await loadOr(getDiscover, null);
   return (
-    <div className="space-y-14">
+    <div className="space-y-14 max-md:space-y-10">
       <header className="mx-auto max-w-read text-center">
-        <h1 className="font-serif text-4xl font-semibold tracking-tight">Discover</h1>
-        <p className="mt-3 text-lg text-muted">What readers are loving this week, and where to start next.</p>
+        <h1 className="font-serif text-4xl font-semibold tracking-tight max-md:text-3xl">Discover</h1>
+        <p className="mt-3 text-lg text-muted max-md:text-base">What readers are loving this week, and where to start next.</p>
+        {/* Phones have no Search link in the header, so Discover leads with it, as in the app. */}
+        <Link
+          href="/search"
+          className="mt-5 flex min-h-12 items-center gap-3 rounded-full border border-line bg-surface-2 px-4 text-left text-muted hover:text-fg md:hidden"
+        >
+          <Icon name="search" className="size-6" />
+          Search ideas
+        </Link>
       </header>
       {!ok || !data ? (
         <Unavailable what="Discover" />

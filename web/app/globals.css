@@ -169,38 +169,38 @@ a {
 }
 
 /*
- * The phone feed (below md): the home timeline snaps one post per screen.
- * --header-h is kept equal to the sticky header's height by the timeline;
- * each slide is exactly one screen below it.
+ * Phones (below md) get the app's layout: a bottom tab bar (fixed, clear of the home
+ * indicator) and, on the home timeline, a full-screen feed that snaps one post per screen.
+ * --header-h is kept equal to the sticky header (plus the feed's topic chips) by the
+ * timeline; each slide is exactly the screen between that and the tab bar.
  */
 :root {
-  --slide-h: calc(100dvh - var(--header-h, 6.25rem));
+  --tabbar-h: 0px;
+  --slide-h: calc(100dvh - var(--header-h, 6.25rem) - var(--tabbar-h));
 }
 @media (width < 48rem) {
+  :root:has([data-tab-bar]) {
+    --tabbar-h: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  }
+  body:has([data-tab-bar]) {
+    padding-bottom: var(--tabbar-h);
+  }
   html:has([data-snap-feed]) {
     scroll-snap-type: y mandatory;
     scroll-padding-top: var(--header-h, 6.25rem);
+    scroll-padding-bottom: var(--tabbar-h);
   }
   html:has([data-snap-feed]) [data-site-footer] {
     scroll-snap-align: end;
   }
-}
-
-/* The phone feed's action bar: icon-only buttons (labels stay for screen readers) on one row. */
-@media (width < 48rem) {
-  .actions-compact .btn-small {
-    padding-inline: 0.625rem;
-  }
-  .actions-compact [data-action-label] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+  /* The feed preview's body, cut to the whole lines that fit and ending in "…" (see FitBody). */
+  [data-fit-lines][data-clamped] {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border: 0;
+  }
+  [data-card-body]:has([data-clamped], [data-fits]) {
+    mask-image: none;
   }
 }
 
