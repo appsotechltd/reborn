@@ -42,6 +42,7 @@ type Config struct {
 	R2Bucket     string
 	MediaBaseURL string // public URL of the bucket (custom domain or r2.dev); "/media" locally
 	MediaDir     string // local fallback folder for development
+	ExplainerDir string // folder holding the explainers' manifest.json
 }
 
 // R2Enabled reports whether every R2 setting is present.
@@ -85,6 +86,7 @@ func Load() Config {
 		R2Bucket:     os.Getenv("R2_BUCKET"),
 		MediaBaseURL: os.Getenv("MEDIA_BASE_URL"),
 		MediaDir:     env("MEDIA_DIR", "media"),
+		ExplainerDir: env("EXPLAINER_DIR", "../content/explainers/out"),
 	}
 }
 

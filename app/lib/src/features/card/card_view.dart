@@ -7,6 +7,7 @@ import '../../data/providers.dart';
 import '../../data/speaker.dart';
 import '../post/share.dart';
 import '../stashes/stash_picker.dart';
+import 'explainer_player.dart';
 
 const kHealthDisclaimerFallback =
     'This is general information, not medical advice.';
@@ -73,6 +74,10 @@ class IdeaCardView extends ConsumerWidget {
           const SizedBox(height: 14),
           Text(card.title, style: theme.textTheme.headlineSmall),
           const SizedBox(height: 14),
+          if (card.explainer != null) ...[
+            ExplainerPlayer(explainer: card.explainer!, title: card.title),
+            const SizedBox(height: 16),
+          ],
           for (final p in paragraphs)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),

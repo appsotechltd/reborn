@@ -78,6 +78,56 @@ class Source {
   };
 }
 
+/// An explainer video rendered for a card (see content/explainers).
+class Explainer {
+  const Explainer({
+    required this.kind,
+    required this.videoUrl,
+    required this.posterUrl,
+    this.captionsUrl,
+    this.durationS = 0,
+    this.width = 720,
+    this.height = 1280,
+    this.narrated = false,
+  });
+
+  /// `animated` today, `film` for realistic films later.
+  final String kind;
+
+  /// Absolute, or a path relative to the API base URL.
+  final String videoUrl;
+  final String posterUrl;
+  final String? captionsUrl;
+  final double durationS;
+  final int width;
+  final int height;
+  final bool narrated;
+
+  double get aspectRatio => height == 0 ? 9 / 16 : width / height;
+
+  factory Explainer.fromJson(Map<String, dynamic> json) => Explainer(
+    kind: json['kind'] as String? ?? 'animated',
+    videoUrl: json['video_url'] as String? ?? '',
+    posterUrl: json['poster_url'] as String? ?? '',
+    captionsUrl: json['captions_url'] as String?,
+    durationS: (json['duration_s'] as num?)?.toDouble() ?? 0,
+    width: (json['width'] as num?)?.toInt() ?? 720,
+    height: (json['height'] as num?)?.toInt() ?? 1280,
+    narrated: json['narrated'] as bool? ?? false,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'kind': kind,
+    'video_url': videoUrl,
+    'poster_url': posterUrl,
+    'captions_url': captionsUrl,
+    'duration_s': durationS,
+    'width': width,
+    'height': height,
+    'narrated': narrated,
+  };
+}
+
 /// An idea card. Named `IdeaCard` to avoid clashing with Material's `Card`.
 class IdeaCard {
   const IdeaCard({
@@ -94,6 +144,7 @@ class IdeaCard {
     this.quiz,
     required this.source,
     required this.credit,
+    this.explainer,
   });
 
   final String id;
@@ -109,6 +160,9 @@ class IdeaCard {
   final Quiz? quiz;
   final Source source;
   final String credit;
+
+  /// The card's explainer video, when one is rendered.
+  final Explainer? explainer;
 
   factory IdeaCard.fromJson(Map<String, dynamic> json) => IdeaCard(
     id: json['id'] as String,
@@ -128,6 +182,9 @@ class IdeaCard {
       (json['source'] as Map<String, dynamic>?) ?? const {},
     ),
     credit: json['credit'] as String? ?? '',
+    explainer: json['explainer'] is Map<String, dynamic>
+        ? Explainer.fromJson(json['explainer'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -144,6 +201,7 @@ class IdeaCard {
     'quiz': quiz?.toJson(),
     'source': source.toJson(),
     'credit': credit,
+    if (explainer != null) 'explainer': explainer!.toJson(),
   };
 
   /// Text read aloud by the Listen button.

@@ -1,0 +1,19 @@
+{
+  "name": "reborn-explainers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Renders animated explainer videos (and, later, realistic films) for Reborn idea cards",
+  "scripts": {
+    "render": "node src/render.mjs",
+    "stills": "node src/render.mjs --stills --voice none",
+    "film:plan": "node film/plan.mjs",
+    "film:render": "node film/render.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "zod": "^4.6.5",
+    "playwright-core": "^1.56.1"
+  }
+}

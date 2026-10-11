@@ -40,6 +40,7 @@ services:
       R2_BUCKET: ${R2_BUCKET:-}
       MEDIA_BASE_URL: ${MEDIA_BASE_URL:-}
       MEDIA_DIR: /media
+      EXPLAINER_DIR: /content/explainers/out
     ports: ["8080:8080"]
     volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro", "media:/media"]
     depends_on:

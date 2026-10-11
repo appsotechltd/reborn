@@ -11,6 +11,14 @@ const String apiBaseUrl = String.fromEnvironment(
   defaultValue: 'http://localhost:8080',
 );
 
+/// Resolves a media URL from the API (explainer videos and posters): absolute
+/// URLs are kept, paths are resolved against [base].
+String resolveMediaUrl(String url, [String base = apiBaseUrl]) {
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  final b = base.endsWith('/') ? base.substring(0, base.length - 1) : base;
+  return '$b${url.startsWith('/') ? '' : '/'}$url';
+}
+
 /// Base URL of the Reborn website, from `--dart-define=WEB_BASE_URL=...`.
 /// Shared links and password reset pages live here.
 const String webBaseUrl = String.fromEnvironment(

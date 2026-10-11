@@ -7,9 +7,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"strings"
+	"sync/atomic"
 	"time"
 
 	"github.com/appsotechltd/reborn/backend/internal/content"
+	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/jackc/pgx/v5"
 )
 
@@ -40,6 +42,22 @@ type Card struct {
 	Quiz       *content.Quiz `json:"quiz,omitempty"`
 	Source     SourceRef     `json:"source"`
 	Credit     string        `json:"credit"`
+	// Explainer is the card's animated explainer video, when one is rendered.
+	Explainer *explainers.Explainer `json:"explainer,omitempty"`
+}
+
+var explainerSet atomic.Pointer[explainers.Set]
+
+// SetExplainers sets the explainer videos attached to cards as they are read.
+func SetExplainers(set explainers.Set) { explainerSet.Store(&set) }
+
+func explainerFor(id string) *explainers.Explainer {
+	if set := explainerSet.Load(); set != nil {
+		if e, ok := (*set)[id]; ok {
+			return &e
+		}
+	}
+	return nil
 }
 
 // cardCols selects a card joined with its source; scanCard reads it.
@@ -68,6 +86,7 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 		c.Disclaimer = &d
 	}
 	c.Credit = "Source: " + c.Source.Attribution
+	c.Explainer = explainerFor(c.ID)
 	return c, nil
 }
 

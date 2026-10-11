@@ -1,0 +1,153 @@
+{
+  "card_id": "aesops-fables--07",
+  "scenes": [
+    {
+      "type": "title",
+      "narration": "Steady daily effort beats bursts of talent followed by coasting. Here's the oldest proof we have."
+    },
+    {
+      "type": "race",
+      "params": {
+        "label": "On your marks",
+        "hare": {
+          "from": 0.04,
+          "to": 0.04,
+          "state": "idle"
+        },
+        "tortoise": {
+          "from": 0.04,
+          "to": 0.04
+        }
+      },
+      "narration": "The hare was sure of his speed. The tortoise challenged him to a race anyway."
+    },
+    {
+      "type": "race",
+      "params": {
+        "hare": {
+          "from": 0.04,
+          "to": 0.58,
+          "state": "run"
+        },
+        "tortoise": {
+          "from": 0.04,
+          "to": 0.12
+        }
+      },
+      "narration": "The hare shot ahead, so far that the tortoise was barely moving behind him.",
+      "cut": true
+    },
+    {
+      "type": "race",
+      "params": {
+        "hare": {
+          "from": 0.58,
+          "to": 0.58,
+          "state": "sleep"
+        },
+        "tortoise": {
+          "from": 0.12,
+          "to": 0.42
+        }
+      },
+      "narration": "Sure of winning, he lay down under a tree for a nap. The tortoise just kept plodding.",
+      "cut": true
+    },
+    {
+      "type": "race",
+      "params": {
+        "hare": {
+          "from": 0.58,
+          "to": 0.86,
+          "state": "wake",
+          "wakeAt": 0.62
+        },
+        "tortoise": {
+          "from": 0.42,
+          "to": 0.97
+        },
+        "cheer": true
+      },
+      "narration": "By the time the hare woke up and raced for the line, the tortoise was already crossing it.",
+      "min_seconds": 7,
+      "cut": true
+    },
+    {
+      "type": "quote",
+      "narration": "Slow and steady wins the race."
+    },
+    {
+      "type": "compound",
+      "params": {
+        "title": "Two ways to chase a goal",
+        "days": 14,
+        "series": [
+          {
+            "label": "Bursts, then coasting",
+            "color": "#b0784e",
+            "values": [
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "label": "A little every day",
+            "color": "#4f7a3a",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "narration": "It plays out in languages, savings, fitness and business. Intense sprints followed by long breaks stall, while small daily steps keep adding up.",
+      "min_seconds": 8
+    },
+    {
+      "type": "statement",
+      "params": {
+        "lines": [
+          "You don't need to be the fastest.",
+          "You need to keep going."
+        ],
+        "emphasis": [
+          1
+        ]
+      },
+      "narration": "You don't need to be the fastest. You need to keep going. And if you're the hare, don't let a head start make you complacent."
+    },
+    {
+      "type": "apply",
+      "narration": "Pick one goal and set a small daily minimum you can keep even on bad days, like ten minutes. Start today."
+    },
+    {
+      "type": "end",
+      "narration": "",
+      "min_seconds": 4
+    }
+  ]
+}

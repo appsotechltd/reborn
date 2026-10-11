@@ -1,0 +1,26 @@
+{
+  "card_id": "nhs-breathing-exercises-for-stress--02",
+  "logline": "Two ordinary people use slow belly breathing to settle after a stressful moment, at home and on a lunch break.",
+  "style": "Quiet contemporary drama, natural window light, soft sage and warm neutral palette, 50mm lens, shallow depth of field, gentle handheld stillness, no clinical settings",
+  "negative_prompt": "text, captions, logos, watermarks, hospitals, doctors, medical equipment, pills, distress, crying, distorted hands, flicker",
+  "shots": [
+    { "id": "s01", "seconds": 6, "framing": "medium shot", "camera": "static",
+      "prompt": "A woman in her forties in a cardigan sits on a sofa in a softly lit living room in the early evening, laptop just closed beside her, shoulders slightly raised and tense, looking out of the window.",
+      "narration": "When stress builds, your breath can help you settle." },
+    { "id": "s02", "seconds": 7, "framing": "medium shot", "camera": "slow push-in",
+      "prompt": "The same woman in her forties in a cardigan sits back on the sofa, feet flat on the floor, rests one hand gently on her belly and lets her shoulders drop. Soft evening window light, calm living room.",
+      "narration": "Get comfortable, and let each breath go deep into your belly." },
+    { "id": "s03", "seconds": 8, "framing": "close-up", "camera": "static",
+      "prompt": "Close-up of a woman's hand resting on her belly over a soft cardigan, rising slowly and evenly as she breathes in, warm window light falling across the fabric.",
+      "narration": "Breathe in gently through your nose, counting slowly to five." },
+    { "id": "s04", "seconds": 8, "framing": "close-up on face", "camera": "very slow push-in",
+      "prompt": "Close-up of the woman in her forties with her eyes closed, face relaxing as she breathes out slowly through softly parted lips, soft evening light, peaceful expression.",
+      "narration": "Then let it out gently through your mouth, for another count of five." },
+    { "id": "s05", "seconds": 7, "framing": "wide shot", "camera": "static",
+      "prompt": "A man in his thirties in a work shirt sits on a park bench at lunchtime under a tree, eyes closed, hands resting in his lap, breathing slowly while people pass in the soft-focus background. Dappled sunlight.",
+      "narration": "Keep going for at least five minutes. You can do it almost anywhere." },
+    { "id": "s06", "seconds": 5, "framing": "wide shot", "camera": "static",
+      "prompt": "A calm living room at dusk, a sofa with a folded blanket, soft lamp light and a window showing a pale evening sky.",
+      "narration": "" }
+  ]
+}

@@ -31,6 +31,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/db"
 	"github.com/appsotechltd/reborn/backend/internal/embed"
+	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/appsotechltd/reborn/backend/internal/mail"
 	"github.com/appsotechltd/reborn/backend/internal/objstore"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
@@ -159,6 +160,13 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	if cfg.JWTSecret == "dev-only-change-me" {
 		slog.Warn("JWT_SECRET is the development default; set it in production")
 	}
+	media := mediaStore(cfg)
+	set, err := explainers.Load(ctx, cfg.ExplainerDir, media)
+	if err != nil {
+		return fmt.Errorf("load explainers: %w", err)
+	}
+	store.SetExplainers(set)
+	slog.Info("explainer videos", "cards", len(set), "manifest", cfg.ExplainerDir)
 	srv := &api.Server{
 		Store:       st,
 		Cache:       c,
@@ -167,7 +175,7 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		AgentHourly: cfg.AgentHourly,
 		CORSOrigins: cfg.CORSOrigins,
 		WebBaseURL:  strings.TrimRight(cfg.WebBaseURL, "/"),
-		Media:       mediaStore(cfg),
+		Media:       media,
 	}
 	if srv.Mailer, err = mail.FromURL(cfg.SMTPURL, cfg.MailFrom); err != nil {
 		return err
