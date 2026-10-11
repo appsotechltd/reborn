@@ -275,16 +275,17 @@ class ProfileMenuButton extends ConsumerWidget {
     final session = ref.watch(sessionProvider);
     return PopupMenuButton<String>(
       tooltip: 'Profile and more',
-      icon: CircleAvatar(
-        radius: 15,
-        child: session.signedIn
-            ? Text(
-                _initial(
-                  session.user?.displayName ?? session.user?.email ?? '?',
-                ),
-              )
-            : const Icon(Icons.person_outline, size: 18),
-      ),
+      icon: session.signedIn
+          ? PersonAvatar(
+              name: session.user?.displayName ?? session.user?.email ?? '?',
+              radius: 15,
+            )
+          : CircleAvatar(
+              radius: 15,
+              backgroundColor: Candlelight.of(context).inset,
+              foregroundColor: Theme.of(context).colorScheme.onSurfaceVariant,
+              child: const Icon(Icons.person_outline, size: 18),
+            ),
       onSelected: (v) async {
         if (v == 'signout') {
           await ref.read(sessionProvider.notifier).signOut();
@@ -348,11 +349,10 @@ class ProfileMenuButton extends ConsumerWidget {
             value: '/admin',
             child: _MenuRow(Icons.insights_outlined, 'Dashboard'),
           ),
-        if (session.signedIn)
-          const PopupMenuItem(
-            value: '/settings',
-            child: _MenuRow(Icons.settings_outlined, 'Settings'),
-          ),
+        const PopupMenuItem(
+          value: '/settings',
+          child: _MenuRow(Icons.settings_outlined, 'Settings'),
+        ),
         if (session.signedIn)
           const PopupMenuItem(
             value: 'signout',
@@ -361,9 +361,6 @@ class ProfileMenuButton extends ConsumerWidget {
       ],
     );
   }
-
-  static String _initial(String s) =>
-      s.isEmpty ? '?' : s.characters.first.toUpperCase();
 }
 
 class _MenuRow extends StatelessWidget {

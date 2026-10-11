@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 
 /// Sign in ([register] false) or create an account ([register] true).
@@ -86,11 +87,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text(
-                      'Reborn',
-                      style: theme.textTheme.headlineMedium,
-                      textAlign: TextAlign.center,
-                    ),
+                    const Center(child: Wordmark(size: 34)),
                     const SizedBox(height: 4),
                     Text(
                       register

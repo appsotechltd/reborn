@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -10,6 +12,7 @@ import 'src/features/premium/premium_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  _registerFontLicenses();
   final prefs = await SharedPreferences.getInstance();
   final container = ProviderContainer(
     // Errors are shown with a "Try again" button instead of silent retries.
@@ -30,4 +33,17 @@ Future<void> main() async {
   runApp(
     UncontrolledProviderScope(container: container, child: const RebornApp()),
   );
+}
+
+/// The bundled fonts are under the SIL Open Font License; list them on the
+/// licences page.
+void _registerFontLicenses() {
+  LicenseRegistry.addLicense(() async* {
+    for (final (family, file) in const [
+      ('Fraunces', 'assets/fonts/Fraunces-OFL.txt'),
+      ('Figtree', 'assets/fonts/Figtree-OFL.txt'),
+    ]) {
+      yield LicenseEntryWithLineBreaks([family], await rootBundle.loadString(file));
+    }
+  });
 }

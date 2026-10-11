@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
 import '../gifts/gift_sheet.dart';
@@ -167,8 +168,6 @@ class PostActionBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
     final store = ref.read(postStoreProvider.notifier);
     final stats = post.stats;
     return Padding(
@@ -204,7 +203,7 @@ class PostActionBar extends ConsumerWidget {
                     ? 'Remove from favourites'
                     : 'Add to favourites',
                 icon: post.favorited ? Icons.favorite : Icons.favorite_border,
-                color: post.favorited ? scheme.error : null,
+                color: post.favorited ? Candlelight.of(context).react : null,
                 count: stats.favorites,
                 onPressed: () {
                   if (!ensureSignedIn(context, ref)) return;
@@ -268,6 +267,7 @@ class _ReactionChip extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
+    final react = Candlelight.of(context).react;
     return Semantics(
       button: true,
       selected: selected,
@@ -277,10 +277,12 @@ class _ReactionChip extends StatelessWidget {
         message: reaction.label,
         child: Material(
           key: ValueKey('reaction-${reaction.name}'),
-          color: selected ? scheme.primaryContainer : Colors.transparent,
+          color: selected
+              ? react.withValues(alpha: 0.12)
+              : Colors.transparent,
           shape: StadiumBorder(
             side: BorderSide(
-              color: selected ? scheme.primary : scheme.outlineVariant,
+              color: selected ? react : scheme.outlineVariant,
             ),
           ),
           child: InkWell(
@@ -296,9 +298,7 @@ class _ReactionChip extends StatelessWidget {
                   Text(
                     compactCount(count),
                     style: theme.textTheme.labelMedium?.copyWith(
-                      color: selected
-                          ? scheme.onPrimaryContainer
-                          : scheme.onSurfaceVariant,
+                      color: selected ? react : scheme.onSurfaceVariant,
                       fontWeight: selected ? FontWeight.w700 : null,
                     ),
                   ),

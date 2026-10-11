@@ -16,7 +16,7 @@ class RebornApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,
-      themeMode: ThemeMode.system,
+      themeMode: ref.watch(themeModeProvider),
       routerConfig: ref.watch(routerProvider),
       builder: (context, child) =>
           _OfflineFrame(child: child ?? const SizedBox()),

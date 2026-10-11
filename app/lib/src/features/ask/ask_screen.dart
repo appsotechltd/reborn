@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import 'ask_controller.dart';
 import 'citations.dart';
@@ -146,6 +147,7 @@ class _AskScreenState extends ConsumerState<AskScreen> {
                               ),
                               const SizedBox(width: 8),
                               IconButton.filled(
+                                style: amberIconButtonStyle,
                                 tooltip: 'Send',
                                 onPressed: state.sending ? null : _send,
                                 icon: const Icon(Icons.arrow_upward),

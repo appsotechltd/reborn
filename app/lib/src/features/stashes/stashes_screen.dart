@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 
 /// Asks for a stash name (create or rename). Returns null if cancelled.
@@ -121,8 +122,10 @@ class _StashTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return ListTile(
-      leading: const CircleAvatar(
-        child: Icon(Icons.bookmarks_outlined, size: 20),
+      leading: CircleAvatar(
+        backgroundColor: Candlelight.of(context).inset,
+        foregroundColor: Candlelight.of(context).amberText,
+        child: const Icon(Icons.bookmarks_outlined, size: 20),
       ),
       title: Text(stash.name),
       subtitle: Text(

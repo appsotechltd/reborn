@@ -1,3 +1,4 @@
+import '../../theme.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -116,7 +117,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     });
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Reborn'),
+        title: const Wordmark(),
         actions: [
           IconButton(
             tooltip: 'Swipe through ideas',

@@ -7,6 +7,7 @@ import '../../data/providers.dart';
 import '../../data/speaker.dart';
 import '../post/share.dart';
 import '../stashes/stash_picker.dart';
+import '../../theme.dart';
 import 'explainer_player.dart';
 
 const kHealthDisclaimerFallback =
@@ -40,7 +41,6 @@ class IdeaCardView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
     final topicName = ref.watch(topicNamesProvider)[card.topic] ?? card.topic;
     final paragraphs = card.body
         .split(RegExp(r'\n\s*\n'))
@@ -54,29 +54,22 @@ class IdeaCardView extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Wrap(
-            spacing: 8,
-            runSpacing: 4,
+            spacing: 10,
+            runSpacing: 6,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              if (label != null)
-                _Pill(
-                  text: label!,
-                  color: scheme.primary,
-                  onColor: scheme.onPrimary,
-                ),
-              _Pill(
-                text: topicName,
-                color: scheme.secondaryContainer,
-                onColor: scheme.onSecondaryContainer,
-              ),
+              if (label != null) _Pill(text: label!),
+              CategoryTag(topicName),
             ],
           ),
-          const SizedBox(height: 14),
-          Text(card.title, style: theme.textTheme.headlineSmall),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
+          // A video post carries its title on the film itself.
           if (card.explainer != null) ...[
             ExplainerPlayer(explainer: card.explainer!, title: card.title),
             const SizedBox(height: 16),
+          ] else ...[
+            Text(card.title, style: theme.textTheme.headlineSmall),
+            const SizedBox(height: 12),
           ],
           for (final p in paragraphs)
             Padding(
@@ -103,25 +96,26 @@ class IdeaCardView extends ConsumerWidget {
   }
 }
 
+/// Amber pill for a badge such as "Today's idea".
 class _Pill extends StatelessWidget {
-  const _Pill({required this.text, required this.color, required this.onColor});
+  const _Pill({required this.text});
   final String text;
-  final Color color;
-  final Color onColor;
 
   @override
-  Widget build(BuildContext context) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-    decoration: BoxDecoration(
-      color: color,
-      borderRadius: BorderRadius.circular(20),
-    ),
-    child: Text(
-      text,
-      style: Theme.of(context).textTheme.labelMedium
-          ?.copyWith(color: onColor, fontWeight: FontWeight.w600),
-    ),
-  );
+  Widget build(BuildContext context) {
+    final c = Candlelight.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+      decoration: ShapeDecoration(color: c.amber, shape: const StadiumBorder()),
+      child: Text(
+        text,
+        style: Theme.of(context).textTheme.labelMedium?.copyWith(
+          color: c.onAmber,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
 }
 
 class _QuoteBlock extends StatelessWidget {
@@ -132,24 +126,25 @@ class _QuoteBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
+    final c = Candlelight.of(context);
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
-      padding: const EdgeInsets.fromLTRB(16, 10, 12, 10),
+      padding: const EdgeInsets.fromLTRB(16, 4, 12, 4),
       decoration: BoxDecoration(
-        border: Border(left: BorderSide(color: scheme.primary, width: 3)),
+        border: Border(left: BorderSide(color: c.oxblood, width: 2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             '“${quote.trim()}”',
-            style: theme.textTheme.titleMedium?.copyWith(
+            style: TextStyle(
+              fontFamily: kDisplayFont,
+              fontWeight: FontWeight.w600,
               fontStyle: FontStyle.italic,
-              fontFamily: 'serif',
-              fontFamilyFallback: const ['Georgia', 'Times New Roman'],
-              height: 1.5,
-              color: scheme.onSurfaceVariant,
+              fontSize: 18,
+              height: 1.45,
+              color: c.ink2,
             ),
           ),
           if (locator != null) ...[
@@ -169,35 +164,24 @@ class _ApplyIt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
+    final c = Candlelight.of(context);
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
       decoration: BoxDecoration(
-        color: scheme.primaryContainer,
-        borderRadius: BorderRadius.circular(16),
+        color: c.inset,
+        borderRadius: BorderRadius.circular(CandlelightTokens.radiusInset),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Icon(Icons.bolt, size: 20, color: scheme.onPrimaryContainer),
-              const SizedBox(width: 6),
-              Text(
-                'Apply it',
-                style: theme.textTheme.labelLarge?.copyWith(
-                  color: scheme.onPrimaryContainer,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
+          const CategoryTag('Apply it'),
+          const SizedBox(height: 4),
           Text(
             text,
             style: theme.textTheme.bodyLarge?.copyWith(
-              color: scheme.onPrimaryContainer,
-              fontSize: 17,
+              color: theme.colorScheme.onSurface,
+              fontSize: 16,
+              height: 1.5,
             ),
           ),
         ],
@@ -213,12 +197,15 @@ class _Disclaimer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final c = Candlelight.of(context);
+    // Health/support note: ink-on-inset with a hairline, readable in both modes.
     return Container(
       key: const ValueKey('card-disclaimer'),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(12),
+        color: c.inset,
+        borderRadius: BorderRadius.circular(CandlelightTokens.radiusInset),
+        border: Border.all(color: c.line),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -226,14 +213,16 @@ class _Disclaimer extends StatelessWidget {
           Icon(
             Icons.health_and_safety_outlined,
             size: 18,
-            color: scheme.onSurfaceVariant,
+            color: c.amberText,
           ),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
               text,
-              style: Theme.of(context).textTheme.bodySmall
-                  ?.copyWith(color: scheme.onSurfaceVariant),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: scheme.onSurface,
+                height: 1.45,
+              ),
             ),
           ),
         ],
