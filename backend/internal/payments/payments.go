@@ -78,3 +78,41 @@ func PlanByProduct(id string) (Plan, bool) {
 	}
 	return Plan{}, false
 }
+
+// UnitPack is a pay-as-you-go top-up of Reborn AI units. Mobile product ids
+// are consumable in-app products, the same on both stores.
+type UnitPack struct {
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	Units       int    `json:"units"`
+	AmountCents int    `json:"amount_cents"`
+	Currency    string `json:"currency"`
+	ProductID   string `json:"product_id"`
+}
+
+// UnitPacks are the top-up packs, smallest first.
+var UnitPacks = []UnitPack{
+	{ID: "units_250", Name: "250 AI units", Units: 250, AmountCents: 299, Currency: "usd", ProductID: "reborn.ai.units250"},
+	{ID: "units_600", Name: "600 AI units", Units: 600, AmountCents: 599, Currency: "usd", ProductID: "reborn.ai.units600"},
+	{ID: "units_1300", Name: "1,300 AI units", Units: 1300, AmountCents: 1199, Currency: "usd", ProductID: "reborn.ai.units1300"},
+}
+
+// PackByID finds a top-up pack by id.
+func PackByID(id string) (UnitPack, bool) {
+	for _, p := range UnitPacks {
+		if p.ID == id {
+			return p, true
+		}
+	}
+	return UnitPack{}, false
+}
+
+// PackByProduct finds a top-up pack by store product id.
+func PackByProduct(id string) (UnitPack, bool) {
+	for _, p := range UnitPacks {
+		if p.ProductID == id {
+			return p, true
+		}
+	}
+	return UnitPack{}, false
+}

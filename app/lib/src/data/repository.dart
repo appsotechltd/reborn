@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import '../api/api_client.dart';
+import '../api/ai_models.dart';
 import '../api/models.dart';
 import 'offline_cache.dart';
 
@@ -504,4 +505,35 @@ class RebornRepository {
   // ---- Moderator dashboard ----
 
   Future<AdminStats> adminStats() => _run(api.adminStats);
+
+  // ---- Reborn AI ----
+
+  Future<AIStatus> aiStatus() => _run(api.aiStatus);
+
+  Future<AITurn> aiChat(String message, {String? conversationId}) =>
+      _run(() => api.aiChat(message, conversationId: conversationId));
+
+  Future<AITurn> aiVoice(
+    List<int> audio,
+    String filename, {
+    String? conversationId,
+  }) =>
+      _run(() => api.aiVoice(audio, filename, conversationId: conversationId));
+
+  Future<AISpeech> aiSpeech(String messageId) =>
+      _run(() => api.aiSpeech(messageId));
+
+  Future<List<AIConversation>> aiConversations() => _run(api.aiConversations);
+
+  Future<List<AIMessage>> aiConversation(String id) =>
+      _run(() => api.aiConversation(id));
+
+  Future<void> deleteAIConversation(String id) =>
+      _run(() => api.deleteAIConversation(id));
+
+  Future<AITopUp> topUpApple(String signedTransaction) =>
+      _run(() => api.topUpApple(signedTransaction));
+
+  Future<AITopUp> topUpGoogle(String productId, String purchaseToken) =>
+      _run(() => api.topUpGoogle(productId, purchaseToken));
 }

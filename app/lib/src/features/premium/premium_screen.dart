@@ -11,6 +11,10 @@ import '../gifts/gift_store.dart';
 import 'premium_service.dart';
 
 const kPremiumBenefits = [
+  (
+    Icons.auto_awesome_outlined,
+    'Reborn AI: chat by text or voice, with charts and pictures, 250 units a month',
+  ),
   (Icons.forum_outlined, 'Ask the AI guide ten times as much every hour'),
   (
     Icons.volunteer_activism_outlined,

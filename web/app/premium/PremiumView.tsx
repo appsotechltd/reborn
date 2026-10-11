@@ -10,6 +10,7 @@ import { planPrice, premiumSummary } from "@/lib/engage";
 import { useLoad } from "@/lib/use-load";
 
 const PERKS = [
+  { title: "Reborn AI", text: "250 AI units a month to talk or type with Reborn AI, with charts and pictures. Top up any time." },
   { title: "10x the AI guide", text: "Ask the guide ten times as many questions every hour." },
   { title: "Support the library", text: "Help keep every idea card free to read, credited and checked." },
   { title: "Same account everywhere", text: "Premium follows you to the Reborn apps on iPhone and Android." },
@@ -97,7 +98,7 @@ export function PremiumView({ welcome = false }: { welcome?: boolean }) {
         </div>
       ) : null}
 
-      <ul className="mt-10 grid gap-4 sm:grid-cols-3">
+      <ul className="mt-10 grid gap-4 sm:grid-cols-2">
         {PERKS.map((p) => (
           <li key={p.title} className="panel p-5">
             <h2 className="font-semibold">{p.title}</h2>

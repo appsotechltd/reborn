@@ -299,6 +299,45 @@ one Play subscription. Premium raises the AI guide's hourly limit tenfold.
 
 The Stripe webhook also handles `customer.subscription.created`, `.updated` and `.deleted`.
 
+### Reborn AI
+
+Reborn AI is the premium assistant: chat by text or voice, grounded in the card library,
+with charts, sketches, illustrations and pictures. It runs on OpenAI (`OPENAI_API_KEY`) and
+returns `503 ai_unavailable` without one. Premium includes `AI_MONTHLY_UNITS` (250) AI
+units a month, refilled on the 1st (UTC); top-up units never expire and are spent after the
+allowance. Rates (`rates` in `GET /v1/ai`): 1 unit per reply, +1 for a chart, +2 sketch, +4
+illustration, +12 picture, and 1 per started 30 words to hear a voice message. Reading a reply
+aloud is free: Reborn's own Kokoro service (`KOKORO_URL`, voice `KOKORO_VOICE`, default
+`af_heart`) speaks it, with OpenAI as the fallback when Kokoro is down. Prices and costs are explained in [AI_UNITS.md](AI_UNITS.md). Non-premium users get
+`403 premium_required`; an empty wallet gets `402 out_of_units` with `{"error","wallet"}`.
+
+Wallet: `{"monthly_units","allowance_used","allowance_left","topup_units","remaining","resets_at"}`.
+Message: `{"id","role":"user"|"assistant","content","voice","citations":[Card],"attachments":[...],"units","created_at"}`.
+An attachment is `{"type":"image","style":"sketch"|"illustration"|"picture","url","alt","width","height"}`
+or `{"type":"chart","alt","chart":{"kind":"bar"|"line"|"pie","title","unit","labels":[...],"series":[{"name","values":[...]}]}}`;
+the apps draw charts themselves. Replies cite cards inline as `[card-id]`, like the guide.
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/ai` | optional | | `{"available","premium","wallet"|null,"rates":[{"kind","units","per"}],"packs":[{"id","name","units","amount_cents","currency","product_id"}],"providers":{"stripe","apple","google"}}` |
+| `POST /v1/ai/chat` | premium | `{"conversation_id"?,"message"}` | `{"conversation","user_message","message","wallet"}`. Omit `conversation_id` to start a chat |
+| `POST /v1/ai/voice` | premium | multipart: `audio` (m4a, mp3, mp4, wav, webm or ogg, up to 10 MB), `conversation_id`? | Same, plus `"transcript"`. `422 no_speech` when nothing was heard |
+| `POST /v1/ai/messages/{id}/speech` | premium | | `{"url","units":0,"wallet"}`: MP3 of a reply read aloud (free; made once, then reused) |
+| `GET /v1/ai/conversations` | required | | `{"conversations":[{"id","title","created_at","updated_at"}]}` |
+| `GET /v1/ai/conversations/{id}` | required | | `{"conversation","messages":[...]}` |
+| `DELETE /v1/ai/conversations/{id}` | required | | `204` |
+| `GET /v1/ai/usage` | required | | `{"wallet","usage":[{"kind","units","created_at"}]}` |
+| `POST /v1/ai/topups/checkout` | premium | `{"pack"}` | `{"topup_id","url"}` (201): Stripe Checkout, returning to `WEB_BASE_URL/ai?topup={id}` |
+| `GET /v1/ai/topups/{id}` | required | | `{"id","pack","units","amount_cents","currency","provider","status","created_at","paid_at"}` |
+| `POST /v1/ai/topups/apple` | premium | `{"signed_transaction"}` | The top-up (201). Set `appAccountToken` to the user id when buying |
+| `POST /v1/ai/topups/google` | premium | `{"product_id","purchase_token"}` | The top-up (201). Consume the purchase in the app afterwards |
+
+Packs are consumable in-app products `reborn.ai.units250` ($2.99), `reborn.ai.units600`
+($5.99) and `reborn.ai.units1300` ($11.99). Each store transaction is credited once. Members
+may send `AI_HOURLY_LIMIT` (60) messages an hour. Models are set by `OPENAI_CHAT_MODEL`
+(`gpt-5.4-mini`), `OPENAI_REASONING_EFFORT` (`low`, or `none` for a non-reasoning model)
+and `OPENAI_TTS_VOICE` (`marin`, only used when Kokoro is down); pictures and speech are saved in media storage under `ai/`.
+
 ### Moderator dashboard
 
 | Method & path | Auth | Body / query | Response |

@@ -107,6 +107,12 @@ func (s *Server) stripeWebhook(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 		}
+		if obj.PaymentStatus == "paid" && obj.Metadata["topup_id"] != "" {
+			if err := s.Store.MarkTopUpPaid(r.Context(), obj.Metadata["topup_id"], "stripe", obj.ID, s.Now()); err != nil {
+				s.fail(w, r, err, "top-up")
+				return
+			}
+		}
 	case "customer.subscription.created", "customer.subscription.updated", "customer.subscription.deleted":
 		if err := s.stripeSubscriptionEvent(r, obj); err != nil {
 			s.fail(w, r, err, "subscription")

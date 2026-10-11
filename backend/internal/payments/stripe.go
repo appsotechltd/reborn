@@ -61,6 +61,42 @@ func (s *Stripe) CreateCheckout(ctx context.Context, in CheckoutRequest) (id, ch
 	return out.ID, out.URL, nil
 }
 
+// TopUpCheckout describes one purchase of a Reborn AI unit pack.
+type TopUpCheckout struct {
+	TopUpID    string
+	Pack       UnitPack
+	Email      string
+	SuccessURL string
+	CancelURL  string
+}
+
+// CreateTopUpCheckout starts a one-off Checkout Session for a unit pack and
+// returns its id and URL. The webhook credits the units once it is paid.
+func (s *Stripe) CreateTopUpCheckout(ctx context.Context, in TopUpCheckout) (id, checkoutURL string, err error) {
+	form := url.Values{
+		"mode":                                   {"payment"},
+		"success_url":                            {in.SuccessURL},
+		"cancel_url":                             {in.CancelURL},
+		"client_reference_id":                    {in.TopUpID},
+		"metadata[topup_id]":                     {in.TopUpID},
+		"line_items[0][quantity]":                {"1"},
+		"line_items[0][price_data][currency]":    {in.Pack.Currency},
+		"line_items[0][price_data][unit_amount]": {strconv.Itoa(in.Pack.AmountCents)},
+		"line_items[0][price_data][product_data][name]": {"Reborn AI: " + in.Pack.Name},
+	}
+	if in.Email != "" {
+		form.Set("customer_email", in.Email)
+	}
+	var out struct {
+		ID  string `json:"id"`
+		URL string `json:"url"`
+	}
+	if err := s.post(ctx, "/v1/checkout/sessions", form, "topup-"+in.TopUpID, &out); err != nil {
+		return "", "", err
+	}
+	return out.ID, out.URL, nil
+}
+
 // Event is the part of a Stripe webhook event the API uses. The object is a
 // Checkout Session or a Subscription, depending on the type.
 type Event struct {
