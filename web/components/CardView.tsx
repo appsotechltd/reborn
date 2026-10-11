@@ -77,10 +77,10 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       {card.disclaimer ? (
         <p
           role="note"
-          aria-label="Health disclaimer"
+          aria-label={card.health ? "Health disclaimer" : "Support note"}
           className="mt-6 rounded-lg border border-warn-border bg-warn px-4 py-3 text-sm text-warn-fg"
         >
-          <strong className="font-semibold">Health note: </strong>
+          <strong className="font-semibold">{card.health ? "Health note: " : "Support note: "}</strong>
           {card.disclaimer}
         </p>
       ) : null}
