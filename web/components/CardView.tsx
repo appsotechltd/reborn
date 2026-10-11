@@ -68,7 +68,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         id={`card-${card.id}-title`}
         className={`mt-2 font-serif font-semibold leading-tight tracking-tight text-balance ${
           preview
-            ? `text-2xl max-md:text-[1.375rem] max-md:leading-[1.22] md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}`
+            ? `text-2xl max-md:shrink-0 max-md:text-[1.375rem] max-md:leading-[1.22] md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}`
             : "text-3xl sm:text-4xl"
         }`}
       >
@@ -81,7 +81,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         )}
       </Heading>
       {/* Source and authors in amber, as in the app: "Meditations · Marcus Aurelius". */}
-      <p className={`mt-2 text-sm text-muted ${preview ? "max-md:text-[0.8125rem]" : ""}`} data-testid="card-byline">
+      <p className={`mt-2 text-sm text-muted ${preview ? "max-md:shrink-0 max-md:text-[0.8125rem]" : ""}`} data-testid="card-byline">
         <span className="sr-only">From </span>
         <Link href={`/sources/${card.source.id}`} className="font-semibold text-accent-text hover:underline">
           {card.source.title}

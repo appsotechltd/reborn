@@ -12,7 +12,7 @@ import { Quiz } from "@/components/Quiz";
 import { StashButton } from "@/components/StashButton";
 import { Unavailable } from "@/components/Unavailable";
 import { ViewTracker } from "@/components/ViewTracker";
-import { excerpt, speechText, topicName } from "@/lib/content";
+import { excerpt, topicName } from "@/lib/content";
 import { SITE_NAME, siteUrl } from "@/lib/config";
 import { authorHref } from "@/lib/social";
 import { getCard, getPost, getSitemap, getSource, loadOr } from "@/lib/server-api";
@@ -117,7 +117,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ id: strin
         card={card}
         actions={
           <>
-            <ListenButton text={speechText(card)} />
+            <ListenButton card={card} />
             <StashButton cardId={card.id} cardTitle={card.title} />
           </>
         }

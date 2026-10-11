@@ -176,19 +176,31 @@ a {
  */
 :root {
   --tabbar-h: 0px;
-  --slide-h: calc(100dvh - var(--header-h, 6.25rem) - var(--tabbar-h));
+  /* Listen mode's mini-player, docked above the tab bar (at the bottom from md up) while a session is on. */
+  --listen-h: 0px;
+  --slide-h: calc(100dvh - var(--header-h, 6.25rem) - var(--tabbar-h) - var(--listen-h));
+}
+:root:has([data-listen-bar]) {
+  --listen-h: 4rem;
+}
+body:has([data-listen-bar]) {
+  padding-bottom: calc(var(--tabbar-h) + var(--listen-h));
 }
 @media (width < 48rem) {
   :root:has([data-tab-bar]) {
     --tabbar-h: calc(4.25rem + env(safe-area-inset-bottom, 0px));
   }
   body:has([data-tab-bar]) {
-    padding-bottom: var(--tabbar-h);
+    padding-bottom: calc(var(--tabbar-h) + var(--listen-h));
   }
   html:has([data-snap-feed]) {
     scroll-snap-type: y mandatory;
     scroll-padding-top: var(--header-h, 6.25rem);
-    scroll-padding-bottom: var(--tabbar-h);
+    scroll-padding-bottom: calc(var(--tabbar-h) + var(--listen-h));
+  }
+  /* The mini-player takes 4rem from the first slide; drop the sign-up prompt so the post still fits. */
+  html:has([data-listen-bar]) [data-join-prompt] {
+    display: none;
   }
   html:has([data-snap-feed]) [data-site-footer] {
     scroll-snap-align: end;

@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { useSeenTracker } from "@/lib/use-seen";
-import { useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
+import { useListen } from "@/lib/listen";
+import { itemsFromPosts } from "@/lib/listen-player";
+import { postOnScreen, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
 import type { Post, Topic } from "@/lib/types";
 import { ChipRow } from "./ChipRow";
 import { DailyBanner } from "./DailyBanner";
@@ -119,6 +121,21 @@ export function Timeline({
     if (count - 1 - index < PRELOAD_POSTS) void loadMore();
   });
 
+  const { player } = useListen();
+  // Only once hydrated: whether the device voice exists is known only in the browser.
+  const listenable = ready && !!player && !switching && feed.posts.some((p) => player.canPlay(p.card));
+
+  /** Listen mode from the post on screen (or the top), with the feed's topic filter. */
+  function listen() {
+    if (!player) return;
+    const from = Math.min(postOnScreen(listRef.current), Math.max(0, feed.posts.length - 1));
+    player.start({
+      items: itemsFromPosts(feed.posts.slice(from)),
+      cursor: feed.cursor,
+      topics: feed.key.split("|")[1] ?? "",
+    });
+  }
+
   function chooseTopic(slug: string) {
     if (slug === topic) return;
     setTopic(slug);
@@ -137,7 +154,19 @@ export function Timeline({
 
   return (
     <div className="mx-auto max-w-3xl">
-      {topics.length ? <TopicChips topics={topics} selected={topic} onSelect={chooseTopic} /> : null}
+      {topics.length ? (
+        <TopicChips
+          topics={topics}
+          selected={topic}
+          onSelect={chooseTopic}
+          trailing={listenable ? <ListenFeedButton onClick={listen} compact /> : null}
+        />
+      ) : null}
+      {listenable ? (
+        <div className={`mb-4 flex justify-end ${topics.length ? "max-md:hidden" : "max-md:mb-2"}`}>
+          <ListenFeedButton onClick={listen} />
+        </div>
+      ) : null}
       {switching && !error ? (
         <p role="status" className="mb-4 text-center text-sm text-muted">
           {feed.key.split("|")[0] === who ? "Loading…" : "Loading your timeline…"}
@@ -200,14 +229,18 @@ function TopicChips({
   topics,
   selected,
   onSelect,
+  trailing,
 }: {
   topics: Pick<Topic, "slug" | "name">[];
   selected: string;
   onSelect: (slug: string) => void;
+  /** After the chips, not scrolling with them: the Listen button. */
+  trailing?: ReactNode;
 }) {
   return (
     <ChipRow
       data-feed-chips
+      trailing={trailing}
       label="Filter the timeline by topic"
       className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 bg-bg md:hidden"
       scrollClassName="flex gap-2 overflow-x-auto px-3 [scrollbar-width:none]"
@@ -231,6 +264,31 @@ function TopicChips({
         );
       })}
     </ChipRow>
+  );
+}
+
+/**
+ * Starts Listen mode from the post on screen. On phones it is a headphones button at the end of the
+ * topic chips (`compact`); on wider screens a "Listen" button above the timeline.
+ */
+function ListenFeedButton({ onClick, compact = false }: { onClick: () => void; compact?: boolean }) {
+  if (compact) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label="Listen to this feed"
+        className="mr-1 grid size-11 place-items-center rounded-full text-accent-text hover:bg-surface-2"
+      >
+        <Icon name="headphones" className="size-6" />
+      </button>
+    );
+  }
+  return (
+    <button type="button" onClick={onClick} className="btn btn-small" aria-label="Listen to this feed">
+      <Icon name="headphones" className="size-4" />
+      Listen
+    </button>
   );
 }
 
@@ -282,6 +340,7 @@ function JoinPrompt() {
   return (
     <section
       aria-labelledby="join-title"
+      data-join-prompt
       className="panel mb-6 bg-accent-soft p-5 text-center max-md:mb-2 max-md:shrink-0 max-md:p-4 max-md:text-left sm:p-6"
     >
       <h2 id="join-title" className="font-serif text-xl font-semibold max-md:text-lg">

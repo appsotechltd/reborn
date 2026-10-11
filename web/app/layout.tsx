@@ -3,6 +3,7 @@ import { Figtree, Fraunces } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { AuthProvider } from "@/lib/auth";
+import { ListenProvider } from "@/lib/listen";
 import { ThemeSync } from "@/components/ThemeSync";
 import { SiteUrlProvider } from "@/lib/site-url";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
@@ -54,9 +55,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ThemeSync />
         <SiteUrlProvider url={siteUrl()}>
           <AuthProvider>
-            <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>
-              {children}
-            </SiteChrome>
+            {/* Listen mode's player lives here, above the pages, so it keeps playing across navigation. */}
+            <ListenProvider>
+              <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>
+                {children}
+              </SiteChrome>
+            </ListenProvider>
           </AuthProvider>
         </SiteUrlProvider>
       </body>
