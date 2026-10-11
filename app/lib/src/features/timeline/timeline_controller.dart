@@ -66,6 +66,10 @@ int? caughtUpIndex(List<Post> posts) {
 class TimelineController extends AsyncNotifier<TimelineState> {
   List<String>? _topics;
 
+  /// The topics the timeline was fetched with (null: the server's choice);
+  /// Listen mode loads further pages with the same filter.
+  List<String>? get topics => _topics;
+
   @override
   Future<TimelineState> build() async {
     final filter = ref.watch(timelineFilterProvider);

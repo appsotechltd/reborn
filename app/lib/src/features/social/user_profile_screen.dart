@@ -31,6 +31,7 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
     final p = profile.value;
     return Scaffold(
       appBar: AppBar(
+        leading: exitLeading(context),
         title: Text('@$handle'),
         actions: [
           if (p != null && !p.isMe)

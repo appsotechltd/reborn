@@ -304,6 +304,14 @@ class RebornRepository {
 
   Future<AuthorPage> author(String name) => _run(() => api.author(name));
 
+  /// A page of the library's books.
+  Future<SourceListPage> sources({String? topic, String? q, String? cursor}) =>
+      _run(() => api.sources(topic: topic, q: q, cursor: cursor));
+
+  /// A page of the library's authors.
+  Future<AuthorListPage> authors({String? topic, String? q, String? cursor}) =>
+      _run(() => api.authors(topic: topic, q: q, cursor: cursor));
+
   Future<GiftTiers> giftTiers() => _run(api.giftTiers);
 
   Future<Gift> giftApple(String postId, String signedTransaction) =>
@@ -403,6 +411,12 @@ class RebornRepository {
 
   Future<Contribution> reject(String id, String note) =>
       _run(() => api.reject(id, note));
+
+  Future<List<ReportedComment>> reportedComments() =>
+      _run(api.reportedComments);
+
+  Future<void> moderateComment(String id, {required bool hide}) =>
+      _run(() => api.moderateComment(id, hide: hide));
 
   // ---- Agent ----
 

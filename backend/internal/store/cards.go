@@ -10,6 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/appsotechltd/reborn/backend/internal/cardaudio"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/jackc/pgx/v5"
@@ -44,12 +45,28 @@ type Card struct {
 	Credit     string        `json:"credit"`
 	// Explainer is the card's animated explainer video, when one is rendered.
 	Explainer *explainers.Explainer `json:"explainer,omitempty"`
+	// Audio is the card read aloud in its book's voice, when one is recorded.
+	Audio *cardaudio.Audio `json:"audio,omitempty"`
 }
 
 var explainerSet atomic.Pointer[explainers.Set]
 
 // SetExplainers sets the explainer videos attached to cards as they are read.
 func SetExplainers(set explainers.Set) { explainerSet.Store(&set) }
+
+var audioSet atomic.Pointer[cardaudio.Set]
+
+// SetAudio sets the recordings attached to cards as they are read.
+func SetAudio(set cardaudio.Set) { audioSet.Store(&set) }
+
+func audioFor(id string) *cardaudio.Audio {
+	if set := audioSet.Load(); set != nil {
+		if a, ok := (*set)[id]; ok {
+			return &a
+		}
+	}
+	return nil
+}
 
 func explainerFor(id string) *explainers.Explainer {
 	if set := explainerSet.Load(); set != nil {
@@ -87,6 +104,7 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 	}
 	c.Credit = "Source: " + c.Source.Attribution
 	c.Explainer = explainerFor(c.ID)
+	c.Audio = audioFor(c.ID)
 	return c, nil
 }
 
@@ -362,28 +380,45 @@ type SourceSummary struct {
 	Attribution string    `json:"attribution"`
 	Topics      []string  `json:"topics"`
 	CardCount   int       `json:"card_count"`
+	VideoCount  int       `json:"video_count"`
 	UpdatedAt   time.Time `json:"updated_at"`
 }
 
+// videoCounts counts the cards with an explainer video, per source id.
+func videoCounts() map[string]int {
+	out := map[string]int{}
+	if set := explainerSet.Load(); set != nil {
+		for id := range *set {
+			if i := strings.LastIndex(id, "--"); i > 0 {
+				out[id[:i]]++
+			}
+		}
+	}
+	return out
+}
+
 // Sources lists sources with published cards, optionally only those with cards
-// in topic, ordered by title.
-func (s *Store) Sources(ctx context.Context, topic string, offset, limit int) ([]SourceSummary, error) {
+// in topic or whose title or authors contain q, ordered by title.
+func (s *Store) Sources(ctx context.Context, topic, q string, offset, limit int) ([]SourceSummary, error) {
 	rows, err := s.DB.Query(ctx, `SELECT s.id, s.title, s.authors, s.kind, s.licence, s.attribution,
 			array_agg(DISTINCT c.topic ORDER BY c.topic), count(c.id), greatest(s.updated_at, max(c.updated_at))
 		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		WHERE $4 = '' OR strpos(lower(s.title || ' ' || array_to_string(s.authors, ' ')), lower($4)) > 0
 		GROUP BY s.id
 		HAVING $1 = '' OR bool_or(c.topic = $1)
-		ORDER BY lower(s.title), s.id OFFSET $2 LIMIT $3`, topic, offset, limit)
+		ORDER BY lower(s.title), s.id OFFSET $2 LIMIT $3`, topic, offset, limit, q)
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
+	videos := videoCounts()
 	out := []SourceSummary{}
 	for rows.Next() {
 		var x SourceSummary
 		if err := rows.Scan(&x.ID, &x.Title, &x.Authors, &x.Kind, &x.Licence, &x.Attribution, &x.Topics, &x.CardCount, &x.UpdatedAt); err != nil {
 			return nil, err
 		}
+		x.VideoCount = videos[x.ID]
 		out = append(out, x)
 	}
 	return out, rows.Err()

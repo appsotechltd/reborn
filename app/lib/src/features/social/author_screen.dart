@@ -5,9 +5,13 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../library/card_collection.dart';
+import '../library/library_controller.dart';
 import 'follow_button.dart';
 
-/// An author: their sources in the library, and a follow button.
+/// An author: their sources in the library, a follow button, and every
+/// idea from their work (all, or only those with a video), which Listen
+/// mode can play in order.
 class AuthorScreen extends ConsumerWidget {
   const AuthorScreen({super.key, required this.name});
   final String name;
@@ -17,15 +21,24 @@ class AuthorScreen extends ConsumerWidget {
     final author = ref.watch(authorProvider(name));
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Author')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Author'),
+      ),
       body: author.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(
           error: e,
           onRetry: () => ref.invalidate(authorProvider(name)),
         ),
-        data: (a) => ListView(
-          children: [
+        data: (a) {
+          final page = 'author:$name';
+          final videos = a.cards.any((c) => c.explainer != null);
+          final shown = visibleCards(
+            a.cards,
+            videos && ref.watch(videosOnlyProvider(page)),
+          );
+          final before = <Widget>[
             ReadingWidth(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 8, 20, 8),
@@ -70,6 +83,7 @@ class AuthorScreen extends ConsumerWidget {
                   title: Text(s.title),
                   subtitle: Text(
                     '${s.cardCount} ${s.cardCount == 1 ? 'idea' : 'ideas'}'
+                    '${s.videoCount > 0 ? ' · ${videoCount(s.videoCount)}' : ''}'
                     '${s.kind.isEmpty ? '' : ' · ${s.kind}'}',
                   ),
                   trailing: const Icon(Icons.chevron_right),
@@ -77,9 +91,42 @@ class AuthorScreen extends ConsumerWidget {
                       context.push('/sources/${Uri.encodeComponent(s.id)}'),
                 ),
               ),
-            const SizedBox(height: 24),
-          ],
-        ),
+            if (a.cards.isNotEmpty) ...[
+              ReadingWidth(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 4),
+                  child: Text(
+                    'All ${ideaCount(a.cards.length)} by ${a.name}',
+                    style: theme.textTheme.titleMedium,
+                  ),
+                ),
+              ),
+              ReadingWidth(
+                child: CardCollectionBar(
+                  page: page,
+                  cards: a.cards,
+                  listenLabel: 'Listen to this author',
+                ),
+              ),
+            ],
+          ];
+          return ListView.builder(
+            itemCount: before.length + shown.length + 1,
+            itemBuilder: (context, i) {
+              if (i < before.length) return before[i];
+              i -= before.length;
+              if (i == shown.length) return const SizedBox(height: 24);
+              final c = shown[i];
+              return ReadingWidth(
+                child: CardTile(
+                  key: ValueKey('author-card-${c.id}'),
+                  card: c,
+                  trailing: c.explainer != null ? const HasVideoIcon() : null,
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }

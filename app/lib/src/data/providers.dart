@@ -271,6 +271,11 @@ final moderationQueueProvider = FutureProvider.autoDispose<List<Contribution>>(
   (ref) => ref.watch(repositoryProvider).moderationQueue(),
 );
 
+final reportedCommentsProvider =
+    FutureProvider.autoDispose<List<ReportedComment>>(
+      (ref) => ref.watch(repositoryProvider).reportedComments(),
+    );
+
 // ---------------------------------------------------------------------------
 // Social read-side providers
 

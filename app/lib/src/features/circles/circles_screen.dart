@@ -4,21 +4,41 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
 import '../discover/discover_screen.dart';
+import 'circle_screen.dart';
 
-/// Book circles: yours, and all of them to browse.
+/// Book circles: yours, and all of them to browse. On expanded windows the
+/// open circle shows on the right.
 class CirclesScreen extends ConsumerWidget {
   const CirclesScreen({super.key});
 
+  static const pane = 'circles';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(paneSelectionProvider(pane));
+    final id = selected is String ? selected : null;
+    return ListDetail(
+      list: _list(context, ref),
+      selectedId: id,
+      detail: () => CircleScreen(circleId: id!),
+      empty: const EmptyDetail(
+        icon: Icons.groups_outlined,
+        text: 'Pick a circle to join the conversation here.',
+      ),
+    );
+  }
+
+  Widget _list(BuildContext context, WidgetRef ref) {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     return DefaultTabController(
       length: 2,
       initialIndex: signedIn ? 0 : 1,
       child: Scaffold(
         appBar: AppBar(
+          leading: exitLeading(context),
           title: const Text('Book circles'),
           bottom: const TabBar(
             tabs: [
@@ -77,9 +97,19 @@ class _CircleList extends ConsumerWidget {
                     child: Text(empty, textAlign: TextAlign.center),
                   ),
                 ]
-              : [for (final c in list) CircleTile(circle: c)],
+              : [for (final c in list) _tile(context, ref, c)],
         ),
       ),
+    );
+  }
+
+  Widget _tile(BuildContext context, WidgetRef ref, Circle c) {
+    if (!WindowSize.of(context).isTwoPane) return CircleTile(circle: c);
+    final pane = paneSelectionProvider(CirclesScreen.pane);
+    return CircleTile(
+      circle: c,
+      selected: ref.watch(pane) == c.id,
+      onTap: () => ref.read(pane.notifier).select(c.id),
     );
   }
 }

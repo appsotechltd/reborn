@@ -13,7 +13,10 @@ class FavoritesScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     return Scaffold(
-      appBar: AppBar(title: const Text('Favourites')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Favourites'),
+      ),
       body: !signedIn
           ? const SignInPrompt(
               icon: Icons.favorite_border,

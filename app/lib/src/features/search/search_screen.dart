@@ -48,6 +48,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final hasQuery = _q.isNotEmpty || _topic != null;
     return Scaffold(
       appBar: AppBar(
+        leading: exitLeading(context),
         title: const Text('Search'),
         actions: const [ProfileMenuButton(), SizedBox(width: 8)],
       ),

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getProfile, loadOr } from "@/lib/server-api";
 import { ProfileView } from "./ProfileView";
 
@@ -18,5 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ handle: s
 
 export default async function Page({ params }: { params: Promise<{ handle: string }> }) {
   const { handle } = await params;
+  // A handle no account has is a real 404. When the API is down, the page loads in the browser as before.
+  const { data: profile, ok } = await loadOr(() => getProfile(handle), null);
+  if (ok && !profile) notFound();
   return <ProfileView handle={handle} />;
 }

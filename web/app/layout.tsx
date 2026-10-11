@@ -3,6 +3,8 @@ import { Figtree, Fraunces } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { AuthProvider } from "@/lib/auth";
+import { ListenProvider } from "@/lib/listen";
+import { ThemeSync } from "@/components/ThemeSync";
 import { SiteUrlProvider } from "@/lib/site-url";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
 import { themeScript } from "@/lib/theme";
@@ -34,6 +36,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
+  // Lets the phone tab bar pad itself clear of the home indicator (env(safe-area-inset-bottom)).
+  viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#faf8f4" },
     { media: "(prefers-color-scheme: dark)", color: "#14110e" },
@@ -48,11 +52,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="flex min-h-dvh flex-col antialiased">
+        <ThemeSync />
         <SiteUrlProvider url={siteUrl()}>
           <AuthProvider>
-            <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>
-              {children}
-            </SiteChrome>
+            {/* Listen mode's player lives here, above the pages, so it keeps playing across navigation. */}
+            <ListenProvider>
+              <SiteChrome header={<SiteHeader />} footer={<SiteFooter />}>
+                {children}
+              </SiteChrome>
+            </ListenProvider>
           </AuthProvider>
         </SiteUrlProvider>
       </body>

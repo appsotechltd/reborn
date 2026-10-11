@@ -5,7 +5,10 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/repository.dart';
+import '../../layout/adaptive.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
+import '../card/card_screen.dart';
 import '../notifications/notifications_screen.dart';
 
 /// Selected topic for Trending on Discover; null means all topics.
@@ -21,12 +24,29 @@ final trendingTopicProvider = NotifierProvider<TrendingTopic, String?>(
 );
 
 /// The Discover tab: search, trending (by topic), new posts, popular books
-/// and authors, and book circles.
+/// and authors, and book circles. On expanded windows an idea picked from
+/// the list opens on the right.
 class DiscoverScreen extends ConsumerWidget {
   const DiscoverScreen({super.key});
 
+  static const pane = 'discover';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(paneSelectionProvider(pane));
+    final card = selected is IdeaCard ? selected : null;
+    return ListDetail(
+      list: _list(context, ref),
+      selectedId: card?.id,
+      detail: () => CardScreen(cardId: card!.id, initial: card),
+      empty: const EmptyDetail(
+        icon: Icons.auto_stories_outlined,
+        text: 'Pick an idea to read it here.',
+      ),
+    );
+  }
+
+  Widget _list(BuildContext context, WidgetRef ref) {
     final discover = ref.watch(discoverProvider);
     final topic = ref.watch(trendingTopicProvider);
     return Scaffold(
@@ -57,6 +77,16 @@ class DiscoverScreen extends ConsumerWidget {
                   onTap: () => context.push('/search'),
                   readOnly: true,
                 ),
+              ),
+            ),
+            ReadingWidth(
+              child: ListTile(
+                key: const ValueKey('discover-library'),
+                leading: const Icon(Icons.local_library_outlined),
+                title: const Text('Library'),
+                subtitle: const Text('Browse all books and authors'),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => context.push('/library'),
               ),
             ),
             ...discover.when(
@@ -102,13 +132,22 @@ class DiscoverScreen extends ConsumerWidget {
         ],
         data: (posts) => posts.isEmpty
             ? const [_Empty('Nothing trending here yet.')]
-            : [for (final p in posts.take(10)) _PostTile(post: p)],
+            : [
+                for (final (i, p) in posts.take(10).indexed)
+                  DiscoverPostCard(post: p, rank: i + 1),
+              ],
       ),
       const _Heading('New ideas'),
       if (d.newPosts.isEmpty) const _Empty('No new ideas yet.'),
-      for (final p in d.newPosts.take(10)) _PostTile(post: p),
+      for (final p in d.newPosts.take(6)) DiscoverPostCard(post: p),
       if (d.books.isNotEmpty) ...[
-        const _Heading('Popular books'),
+        _Heading(
+          'Popular books',
+          action: TextButton(
+            onPressed: () => context.push('/library'),
+            child: const Text('All books'),
+          ),
+        ),
         SizedBox(
           height: 128,
           child: ListView(
@@ -119,7 +158,13 @@ class DiscoverScreen extends ConsumerWidget {
         ),
       ],
       if (d.authors.isNotEmpty) ...[
-        const _Heading('Popular authors'),
+        _Heading(
+          'Popular authors',
+          action: TextButton(
+            onPressed: () => context.push('/library?tab=authors'),
+            child: const Text('All authors'),
+          ),
+        ),
         for (final a in d.authors)
           ReadingWidth(
             child: ListTile(
@@ -151,8 +196,17 @@ class DiscoverScreen extends ConsumerWidget {
 
 /// A circle in a list; opens the circle screen.
 class CircleTile extends StatelessWidget {
-  const CircleTile({super.key, required this.circle});
+  const CircleTile({
+    super.key,
+    required this.circle,
+    this.onTap,
+    this.selected = false,
+  });
   final Circle circle;
+
+  /// Instead of opening the circle screen (e.g. to show it in a side pane).
+  final VoidCallback? onTap;
+  final bool selected;
 
   @override
   Widget build(BuildContext context) => ReadingWidth(
@@ -165,32 +219,128 @@ class CircleTile extends StatelessWidget {
         '${circle.members == 1 ? 'member' : 'members'}',
       ),
       trailing: circle.isMember ? const Icon(Icons.check, size: 18) : null,
-      onTap: () => context.push('/circles/${Uri.encodeComponent(circle.id)}'),
+      selected: selected,
+      onTap:
+          onTap ??
+          () => context.push('/circles/${Uri.encodeComponent(circle.id)}'),
     ),
   );
 }
 
-class _PostTile extends ConsumerWidget {
-  const _PostTile({required this.post});
+/// "The first 130 characters…", cut at a word: the excerpt on a post card.
+String excerpt(String text, [int max = 130]) {
+  final flat = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+  if (flat.length <= max) return flat;
+  final cut = flat.substring(0, max - 1);
+  final space = cut.lastIndexOf(' ');
+  return '${space > 80 ? cut.substring(0, space) : cut}…';
+}
+
+/// A post in a Discover list: topic, title, excerpt, credit and how people
+/// responded, with its rank in Trending. Opens the card screen, or on
+/// expanded windows shows the card on the right.
+class DiscoverPostCard extends ConsumerWidget {
+  const DiscoverPostCard({super.key, required this.post, this.rank});
   final Post post;
+  final int? rank;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final c = Candlelight.of(context);
+    final card = post.card;
     final s = post.stats;
-    final activity = s.totalReactions + s.comments + s.favorites;
+    final topicName = ref.watch(topicNamesProvider)[card.topic] ?? card.topic;
+    final twoPane = WindowSize.of(context).isTwoPane;
+    final picked = ref.watch(paneSelectionProvider(DiscoverScreen.pane));
+    final selected = twoPane && picked is IdeaCard && picked.id == card.id;
+    final muted = theme.textTheme.bodySmall;
+    String count(int n, String one, String many) =>
+        '${compactCount(n)} ${n == 1 ? one : many}';
     return ReadingWidth(
-      child: CardTile(
-        card: post.card,
-        trailing: activity == 0
-            ? null
-            : Row(
-                mainAxisSize: MainAxisSize.min,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 6, 16, 6),
+        child: Card(
+          key: ValueKey('discover-post-${post.id}'),
+          shape: selected
+              ? RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(
+                    CandlelightTokens.radiusCard,
+                  ),
+                  side: BorderSide(color: c.amberText, width: 1.5),
+                )
+              : null,
+          child: InkWell(
+            onTap: twoPane
+                ? () => ref
+                      .read(paneSelectionProvider(DiscoverScreen.pane).notifier)
+                      .select(card)
+                : () => context.push(
+                    '/cards/${Uri.encodeComponent(card.id)}',
+                    extra: card,
+                  ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.favorite_border, size: 16),
-                  const SizedBox(width: 4),
-                  Text(compactCount(activity)),
+                  if (rank != null)
+                    ExcludeSemantics(
+                      child: SizedBox(
+                        width: 34,
+                        child: Text(
+                          '$rank',
+                          style: theme.textTheme.headlineSmall?.copyWith(
+                            color: c.muted,
+                            height: 1.1,
+                          ),
+                        ),
+                      ),
+                    ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CategoryTag(topicName),
+                        const SizedBox(height: 4),
+                        Text(
+                          card.title,
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontSize: 20,
+                            height: 1.3,
+                          ),
+                        ),
+                        if (card.body.trim().isNotEmpty) ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            excerpt(card.body),
+                            key: const ValueKey('discover-excerpt'),
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: c.muted,
+                              height: 1.55,
+                            ),
+                          ),
+                        ],
+                        const SizedBox(height: 10),
+                        Text(card.credit, style: muted?.copyWith(fontSize: 12)),
+                        const SizedBox(height: 6),
+                        Text(
+                          [
+                            count(s.totalReactions, 'reaction', 'reactions'),
+                            count(s.comments, 'comment', 'comments'),
+                            count(s.favorites, 'favourite', 'favourites'),
+                          ].join('   '),
+                          key: const ValueKey('discover-counts'),
+                          style: muted?.copyWith(fontSize: 12),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
+            ),
+          ),
+        ),
       ),
     );
   }

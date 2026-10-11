@@ -9,7 +9,8 @@ import { useAuth } from "@/lib/auth";
 import { useLoad } from "@/lib/use-load";
 import type { Card, Stash } from "@/lib/types";
 
-export function StashDetail({ id }: { id: string }) {
+export function StashDetail({ id, publicHref }: { id: string; publicHref?: string }) {
+  const { ready, user } = useAuth();
   return (
     <div className="mx-auto max-w-read">
       <p>
@@ -18,9 +19,17 @@ export function StashDetail({ id }: { id: string }) {
         </Link>
       </p>
       <div className="mt-4">
-        <RequireAuth>
+        <RequireAuth message="Stashes are private to the account that made them. Sign in to open this one.">
           <StashBody id={id} />
         </RequireAuth>
+        {ready && !user && publicHref ? (
+          <p className="mt-4 text-center text-sm text-muted">
+            Its owner has shared it.{" "}
+            <Link href={publicHref} className="link">
+              Read the public stash
+            </Link>
+          </p>
+        ) : null}
       </div>
     </div>
   );

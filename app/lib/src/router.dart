@@ -16,6 +16,8 @@ import 'features/contribute/my_contributions_screen.dart';
 import 'features/daily/daily_screen.dart';
 import 'features/discover/discover_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/library/library_screen.dart';
+import 'features/listen/listen_ui.dart';
 import 'features/moderation/moderation_screen.dart';
 import 'features/notifications/notifications_screen.dart';
 import 'features/onboarding/topic_picker_screen.dart';
@@ -36,8 +38,12 @@ import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
 import 'features/timeline/timeline_screen.dart';
+import 'tv/tv_card_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
+  // The address bar follows pushed pages (a card, comments, the quiz), so a
+  // refresh keeps the page and its URL can be copied.
+  GoRouter.optionURLReflectsImperativeAPIs = true;
   final router = GoRouter(
     initialLocation: '/home',
     redirect: (context, state) {
@@ -109,7 +115,22 @@ final routerProvider = Provider<GoRouter>((ref) {
         ],
       ),
       GoRoute(path: '/feed', builder: (_, _) => const HomeScreen()),
+      // The TV layout's idea page and full-screen video.
+      GoRoute(
+        path: '/tv/cards/:id',
+        builder: (_, s) => TvCardScreen(
+          cardId: s.pathParameters['id']!,
+          initial: s.extra is Post ? s.extra as Post : null,
+        ),
+      ),
+      GoRoute(
+        path: '/tv/video/:id',
+        builder: (_, s) => s.extra is IdeaCard
+            ? TvVideoScreen(card: s.extra as IdeaCard)
+            : TvCardScreen(cardId: s.pathParameters['id']!),
+      ),
       GoRoute(path: '/daily', builder: (_, _) => const DailyScreen()),
+      GoRoute(path: '/listen', builder: (_, _) => const NowListeningScreen()),
       GoRoute(
         path: '/cards/:id',
         builder: (_, s) => CardScreen(
@@ -145,6 +166,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/sources/:id',
         builder: (_, s) => SourceScreen(sourceId: s.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/library',
+        builder: (_, s) => LibraryScreen(
+          initialTab: s.uri.queryParameters['tab'] == 'authors' ? 1 : 0,
+        ),
       ),
       GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
       GoRoute(

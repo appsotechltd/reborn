@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/lib/auth";
 import { NOTIFICATIONS_CHANGED } from "@/lib/engage";
+import { Icon } from "./Icon";
 
 const POLL_MS = 60_000;
 
@@ -43,15 +44,15 @@ export function NotificationBell() {
   return (
     <Link
       href="/notifications"
-      className="btn btn-small btn-ghost relative"
+      className="btn btn-small btn-ghost relative size-11 p-0 text-muted hover:text-fg"
       aria-current={pathname === "/notifications" ? "page" : undefined}
     >
-      <span aria-hidden="true">🔔</span>
+      <Icon name="bell" className="size-6" />
       <span className="sr-only">Notifications{unread ? `, ${unread} unread` : ""}</span>
       {unread ? (
         <span
           aria-hidden="true"
-          className="absolute -right-0.5 -top-0.5 grid min-w-5 place-items-center rounded-full bg-accent px-1 text-xs font-bold text-accent-fg"
+          className="absolute right-0.5 top-0.5 grid min-w-5 place-items-center rounded-full bg-oxblood px-1 text-xs font-bold text-oxblood-fg"
         >
           {unread > 99 ? "99+" : unread}
         </span>

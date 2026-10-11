@@ -155,7 +155,10 @@ class _PremiumScreenState extends ConsumerState<PremiumScreen> {
     final restoreError = ref.watch(premiumErrorProvider);
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Premium')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Premium'),
+      ),
       body: status.when(
         loading: () => const LoadingView(),
         error: (e, _) =>

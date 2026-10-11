@@ -159,7 +159,10 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
     final comments = ref.watch(commentsProvider(widget.postId));
     final session = ref.watch(sessionProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Comments')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Comments'),
+      ),
       body: Column(
         children: [
           Expanded(

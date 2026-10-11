@@ -32,13 +32,19 @@ class AdminScreen extends ConsumerWidget {
     final isModerator = ref.watch(sessionProvider.select((s) => s.isModerator));
     if (!isModerator) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Dashboard')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Dashboard'),
+        ),
         body: const Center(child: Text('Only moderators can see this.')),
       );
     }
     final stats = ref.watch(adminStatsProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Dashboard')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Dashboard'),
+      ),
       body: stats.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(
@@ -100,6 +106,7 @@ class _Dashboard extends StatelessWidget {
                       activeColor: theme.colorScheme.primary,
                       signupColor: theme.colorScheme.tertiary,
                       gridColor: theme.colorScheme.outlineVariant,
+                      labelColor: theme.colorScheme.onSurfaceVariant,
                     ),
                     size: Size.infinite,
                   ),
@@ -214,35 +221,50 @@ class _Legend extends StatelessWidget {
   );
 }
 
-/// Stat tiles of (label, value).
+/// Stat tiles of (label, value), in equal columns that fill the width: two
+/// on a phone, more as it widens (each at least [minTileWidth]).
 class _Tiles extends StatelessWidget {
   const _Tiles(this.items);
   final List<(String, String)> items;
 
+  static const minTileWidth = 150.0;
+  static const gap = 8.0;
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: [
-        for (final (label, value) in items)
-          SizedBox(
-            width: 150,
-            child: Card(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(value, style: theme.textTheme.headlineSmall),
-                    Text(label, style: theme.textTheme.bodySmall),
-                  ],
+    return LayoutBuilder(
+      builder: (context, box) {
+        final cols = math.max(
+          2,
+          ((box.maxWidth + gap) / (minTileWidth + gap)).floor(),
+        );
+        final width = (box.maxWidth - gap * (cols - 1)) / cols;
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: [
+            for (final (label, value) in items)
+              SizedBox(
+                key: ValueKey('stat-$label'),
+                width: width,
+                child: Card(
+                  margin: EdgeInsets.zero,
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(value, style: theme.textTheme.headlineSmall),
+                        Text(label, style: theme.textTheme.bodySmall),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-      ],
+          ],
+        );
+      },
     );
   }
 }
@@ -254,12 +276,17 @@ class DailyChartPainter extends CustomPainter {
     required this.activeColor,
     required this.signupColor,
     required this.gridColor,
+    required this.labelColor,
   });
 
   final List<DailyStat> days;
   final Color activeColor;
   final Color signupColor;
   final Color gridColor;
+
+  /// The scale's top value; a text colour, so it reads in both modes (the
+  /// grid colour is too faint for text in dark mode).
+  final Color labelColor;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -300,7 +327,7 @@ class DailyChartPainter extends CustomPainter {
     final label = TextPainter(
       text: TextSpan(
         text: '$maxV',
-        style: TextStyle(color: gridColor.withValues(alpha: 1), fontSize: 10),
+        style: TextStyle(color: labelColor, fontSize: 11),
       ),
       textDirection: TextDirection.ltr,
     )..layout();
@@ -311,5 +338,7 @@ class DailyChartPainter extends CustomPainter {
   bool shouldRepaint(DailyChartPainter old) =>
       old.days != days ||
       old.activeColor != activeColor ||
-      old.signupColor != signupColor;
+      old.signupColor != signupColor ||
+      old.gridColor != gridColor ||
+      old.labelColor != labelColor;
 }

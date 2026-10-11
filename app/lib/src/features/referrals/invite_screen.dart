@@ -43,7 +43,10 @@ class InviteScreen extends ConsumerWidget {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     if (!signedIn) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Invite friends')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Invite friends'),
+        ),
         body: const SignInPrompt(
           icon: Icons.card_giftcard,
           title: 'Invite friends',
@@ -54,7 +57,10 @@ class InviteScreen extends ConsumerWidget {
     final referrals = ref.watch(referralsProvider);
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Invite friends')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Invite friends'),
+      ),
       body: referrals.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(

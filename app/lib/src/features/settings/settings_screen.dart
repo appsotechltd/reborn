@@ -121,7 +121,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final session = ref.watch(sessionProvider);
     if (!session.signedIn) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Settings')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Settings'),
+        ),
         body: ListView(
           padding: const EdgeInsets.all(20),
           children: const [
@@ -138,7 +141,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     }
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Settings'),
+      ),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [

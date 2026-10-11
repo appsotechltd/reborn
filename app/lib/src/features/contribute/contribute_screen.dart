@@ -145,7 +145,10 @@ class _ContributeScreenState extends ConsumerState<ContributeScreen> {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     if (!signedIn) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Contribute')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Contribute'),
+        ),
         body: const SignInPrompt(
           icon: Icons.edit_note,
           title: 'Share an idea',
@@ -160,6 +163,7 @@ class _ContributeScreenState extends ConsumerState<ContributeScreen> {
     const gap = SizedBox(height: 12);
     return Scaffold(
       appBar: AppBar(
+        leading: exitLeading(context),
         title: const Text('Contribute an idea'),
         actions: [
           TextButton(

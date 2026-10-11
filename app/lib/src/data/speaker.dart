@@ -7,6 +7,10 @@ abstract class Speaker extends ChangeNotifier {
   String? get speakingId;
   Future<void> speak(String id, String text);
   Future<void> stop();
+
+  /// Speeds speech up or down from its normal rate (1.0), e.g. for Listen
+  /// mode's speed setting. Takes effect from the next [speak].
+  Future<void> setRate(double multiplier) async {}
 }
 
 class TtsSpeaker extends Speaker {
@@ -14,10 +18,20 @@ class TtsSpeaker extends Speaker {
     _tts.setCompletionHandler(_done);
     _tts.setCancelHandler(_done);
     _tts.setErrorHandler((_) => _done());
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
+      // Keep reading with the screen locked (Listen mode's fallback voice).
+      _tts.setSharedInstance(true).catchError((_) {});
+      _tts
+          .setIosAudioCategory(IosTextToSpeechAudioCategory.playback, const [
+            IosTextToSpeechAudioCategoryOptions.duckOthers,
+          ])
+          .catchError((_) {});
+    }
   }
 
   final FlutterTts _tts = FlutterTts();
   String? _speakingId;
+  double _rate = 1;
 
   @override
   String? get speakingId => _speakingId;
@@ -33,7 +47,7 @@ class TtsSpeaker extends Speaker {
     _speakingId = id;
     notifyListeners();
     try {
-      await _tts.setSpeechRate(kIsWeb ? 0.95 : 0.48);
+      await _tts.setSpeechRate((kIsWeb ? 0.95 : 0.48) * _rate);
       await _tts.speak(text);
     } catch (_) {
       _done();
@@ -45,6 +59,9 @@ class TtsSpeaker extends Speaker {
     await _tts.stop();
     _done();
   }
+
+  @override
+  Future<void> setRate(double multiplier) async => _rate = multiplier;
 
   @override
   void dispose() {

@@ -6,6 +6,7 @@ import { Composer } from "@/app/circles/[id]/CircleThread";
 import { JoinView } from "@/app/join/JoinView";
 import { AuthForm } from "@/components/AuthForm";
 import { AuthProvider } from "@/lib/auth";
+import { NOTIFICATIONS_CHANGED } from "@/lib/engage";
 import { makeCard } from "./fixtures";
 
 vi.mock("next/navigation", () => ({
@@ -37,42 +38,70 @@ afterEach(() => {
 describe("notifications inbox", () => {
   beforeEach(signIn);
 
-  it("marks everything read and updates the unread state", async () => {
-    const notifications = [
-      { id: "n1", kind: "reply", text: "Bob replied to your comment", actor: null, post_id: "p--01", comment_id: "c1", circle_id: null, read_at: null, created_at: "2026-10-10T09:00:00Z" },
-      { id: "n2", kind: "follow", text: "Cy started following you", actor: { id: "c", handle: "cy", display_name: "Cy" }, post_id: null, comment_id: null, circle_id: null, read_at: null, created_at: "2026-10-10T08:00:00Z" },
-    ];
-    const f = stubApi((u) => (u.includes("/v1/notifications?") ? json(200, { notifications, unread: 2 }) : undefined));
+  const twoNew = [
+    { id: "n1", kind: "reply", text: "Bob replied to your comment", actor: null, post_id: "p--01", comment_id: "c1", circle_id: null, read_at: null, created_at: "2026-10-10T09:00:00Z" },
+    { id: "n2", kind: "follow", text: "Cy started following you", actor: { id: "c", handle: "cy", display_name: "Cy" }, post_id: null, comment_id: null, circle_id: null, read_at: null, created_at: "2026-10-10T08:00:00Z" },
+  ];
+
+  it("marks what it shows as read on open (clearing the badge) but keeps the new rows highlighted", async () => {
+    const changed = vi.fn();
+    window.addEventListener(NOTIFICATIONS_CHANGED, changed);
+    const f = stubApi((u) => (u.includes("/v1/notifications?") ? json(200, { notifications: twoNew, unread: 2 }) : undefined));
     render(
       <AuthProvider>
         <Inbox />
       </AuthProvider>,
     );
-    expect(await screen.findByText("2 unread")).toBeTruthy();
+    expect(await screen.findByText("2 new")).toBeTruthy();
     expect(screen.getByRole("link", { name: /Bob replied/ }).getAttribute("href")).toBe("/ideas/p--01#comment-c1");
     expect(screen.getByRole("link", { name: /Cy started/ }).getAttribute("href")).toBe("/u/cy");
-    fireEvent.click(screen.getByRole("button", { name: "Mark all as read" }));
-    expect(await screen.findByText("All caught up")).toBeTruthy();
-    const read = calls(f).find(([u]) => u.endsWith("/v1/notifications/read"));
-    expect(read?.[1]?.method).toBe("POST");
-    expect(read?.[1]?.body).toBeUndefined();
+    await waitFor(() => expect(changed).toHaveBeenCalled());
+    const reads = calls(f).filter(([u]) => u.endsWith("/v1/notifications/read"));
+    expect(reads).toHaveLength(1);
+    expect(reads[0][1]?.method).toBe("POST");
+    expect(reads[0][1]?.body).toBe(JSON.stringify({ ids: ["n1", "n2"] }));
+    // The rows stay marked as new while the list is open; nothing is left to mark.
+    expect(document.querySelectorAll("[data-unread]")).toHaveLength(2);
+    expect(screen.queryByRole("button", { name: "Mark all as read" })).toBeNull();
+    // Opening one doesn't mark it again.
+    const link = screen.getByRole("link", { name: /Bob replied/ });
+    link.addEventListener("click", (e) => e.preventDefault());
+    fireEvent.click(link);
+    expect(calls(f).filter(([u]) => u.endsWith("/v1/notifications/read"))).toHaveLength(1);
+    window.removeEventListener(NOTIFICATIONS_CHANGED, changed);
   });
 
-  it("marks one notification read when it is opened", async () => {
-    const notifications = [
-      { id: "n1", kind: "circle", text: "Ann in Stoics: hello", actor: null, post_id: null, comment_id: null, circle_id: "k1", read_at: null, created_at: "2026-10-10T09:00:00Z" },
-    ];
-    const f = stubApi((u) => (u.includes("/v1/notifications?") ? json(200, { notifications, unread: 1 }) : undefined));
+  it("offers Mark all as read when marking on open fails", async () => {
+    let failRead = true;
+    const f = stubApi((u) => {
+      if (u.includes("/v1/notifications?")) return json(200, { notifications: twoNew, unread: 2 });
+      if (u.endsWith("/v1/notifications/read") && failRead) return json(500, { error: { code: "internal", message: "boom" } });
+      return undefined;
+    });
     render(
       <AuthProvider>
         <Inbox />
       </AuthProvider>,
     );
-    const link = await screen.findByRole("link", { name: /Ann in Stoics/ });
-    link.addEventListener("click", (e) => e.preventDefault());
-    fireEvent.click(link);
-    await waitFor(() => expect(calls(f).some(([u, i]) => u.endsWith("/v1/notifications/read") && i?.body === JSON.stringify({ ids: ["n1"] }))).toBe(true));
+    const button = await screen.findByRole("button", { name: "Mark all as read" });
+    await waitFor(() => expect(calls(f).some(([u]) => u.endsWith("/v1/notifications/read"))).toBe(true));
+    failRead = false;
+    fireEvent.click(button);
     expect(await screen.findByText("All caught up")).toBeTruthy();
+    const last = calls(f).filter(([u]) => u.endsWith("/v1/notifications/read")).at(-1);
+    expect(last?.[1]?.body).toBeUndefined();
+  });
+
+  it("leaves an inbox with nothing new alone", async () => {
+    const read = twoNew.map((n) => ({ ...n, read_at: "2026-10-10T10:00:00Z" }));
+    const f = stubApi((u) => (u.includes("/v1/notifications?") ? json(200, { notifications: read, unread: 0 }) : undefined));
+    render(
+      <AuthProvider>
+        <Inbox />
+      </AuthProvider>,
+    );
+    expect(await screen.findByText("All caught up")).toBeTruthy();
+    expect(calls(f).some(([u]) => u.endsWith("/v1/notifications/read"))).toBe(false);
   });
 });
 

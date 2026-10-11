@@ -240,9 +240,19 @@ Future<void> openExternal(BuildContext context, String url) async {
 
 /// Compact list entry for a card; opens the card screen.
 class CardTile extends ConsumerWidget {
-  const CardTile({super.key, required this.card, this.trailing});
+  const CardTile({
+    super.key,
+    required this.card,
+    this.trailing,
+    this.onTap,
+    this.selected = false,
+  });
   final IdeaCard card;
   final Widget? trailing;
+
+  /// Instead of opening the card screen (e.g. to show it in a side pane).
+  final VoidCallback? onTap;
+  final bool selected;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -260,8 +270,13 @@ class CardTile extends ConsumerWidget {
         ),
       ),
       trailing: trailing,
-      onTap: () =>
-          context.push('/cards/${Uri.encodeComponent(card.id)}', extra: card),
+      selected: selected,
+      onTap:
+          onTap ??
+          () => context.push(
+            '/cards/${Uri.encodeComponent(card.id)}',
+            extra: card,
+          ),
     );
   }
 }
@@ -323,6 +338,10 @@ class ProfileMenuButton extends ConsumerWidget {
           ),
         ],
         const PopupMenuItem(
+          value: '/library',
+          child: _MenuRow(Icons.local_library_outlined, 'Library'),
+        ),
+        const PopupMenuItem(
           value: '/premium',
           child: _MenuRow(Icons.workspace_premium_outlined, 'Premium'),
         ),
@@ -370,5 +389,30 @@ class _MenuRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Row(
     children: [Icon(icon, size: 20), const SizedBox(width: 12), Text(label)],
+  );
+}
+
+/// The tabs' own pages: a page shown at one of these is in the shell (or in
+/// one of its panes), which has its navigation.
+const _shellPaths = ['/home', '/discover', '/stashes', '/review', '/ask'];
+
+/// An app bar's `leading` for pages that can be opened straight from a link
+/// (a shared card, a refresh, an installed web app): when there is nothing
+/// to go back to, a Home button, so the page is never a dead end. Null (the
+/// usual Back button, or none in a pane) otherwise.
+Widget? exitLeading(BuildContext context) {
+  final route = ModalRoute.of(context);
+  if (route == null || !route.isFirst) return null;
+  final router = GoRouter.maybeOf(context);
+  if (router == null) return null;
+  final path = router.routerDelegate.currentConfiguration.uri.path;
+  if (_shellPaths.any((p) => path == p || path.startsWith('$p/'))) {
+    return null;
+  }
+  return IconButton(
+    key: const ValueKey('exit-home'),
+    tooltip: 'Home',
+    icon: const Icon(Icons.home_outlined),
+    onPressed: () => context.go('/home'),
   );
 }

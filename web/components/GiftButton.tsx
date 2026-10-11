@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
-import { formatMoney } from "@/lib/social";
+import { formatCount, formatMoney } from "@/lib/social";
 import type { GiftTiersResponse } from "@/lib/types";
+import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 import { useSignInRedirect } from "./SignInPrompt";
 
 /** Gift dialog: pick a tier and pay with Stripe Checkout. Gifts support Reborn. */
-export function GiftButton({ postId, title }: { postId: string; title: string }) {
+export function GiftButton({ postId, title, count = 0 }: { postId: string; title: string; count?: number }) {
   const { user, api } = useAuth();
   const toSignIn = useSignInRedirect();
   const [open, setOpen] = useState(false);
@@ -52,8 +53,10 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
 
   return (
     <>
-      <button type="button" className="btn btn-small btn-ghost" aria-haspopup="dialog" onClick={show}>
-        <span aria-hidden="true">🎁</span> <span data-action-label>Gift</span>
+      <button type="button" className="btn btn-small btn-ghost gap-1.5 px-2.5 text-accent-text" aria-haspopup="dialog" onClick={show}>
+        <Icon name="gift" />
+        Gift
+        {count > 0 ? <span> · {formatCount(count)}</span> : null}
         {!user ? <span className="sr-only"> (sign in to send a gift)</span> : null}
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>
@@ -69,7 +72,13 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
             Loading…
           </p>
         ) : null}
-        {tiers ? (
+        {tiers && !enabled ? (
+          // Payments aren't set up: no prices to pick from, just the notice.
+          <p role="status" className="mt-4 rounded-lg border border-line bg-surface-2 px-3 py-2 text-sm">
+            Gifts are coming soon.
+          </p>
+        ) : null}
+        {tiers && enabled ? (
           <>
             <ul className="mt-4 grid gap-2 sm:grid-cols-3">
               {tiers.tiers.map((t) => (
@@ -77,7 +86,7 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
                   <button
                     type="button"
                     className="btn w-full flex-col gap-0 py-3"
-                    disabled={!enabled || busy !== null}
+                    disabled={busy !== null}
                     onClick={() => checkout(t.id)}
                   >
                     <span className="font-semibold">{t.name}</span>
@@ -88,13 +97,7 @@ export function GiftButton({ postId, title }: { postId: string; title: string })
                 </li>
               ))}
             </ul>
-            {!enabled ? (
-              <p role="status" className="mt-3 rounded-lg border border-line bg-surface-2 px-3 py-2 text-sm">
-                Gifts are coming soon.
-              </p>
-            ) : (
-              <p className="hint mt-3">You&apos;ll pay securely with Stripe and come straight back here.</p>
-            )}
+            <p className="hint mt-3">You&apos;ll pay securely with Stripe and come straight back here.</p>
           </>
         ) : null}
         {error ? (

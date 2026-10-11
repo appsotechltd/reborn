@@ -3,16 +3,27 @@
 import { useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
-import { TOPICS } from "@/lib/content";
+import { TOPICS, topicName } from "@/lib/content";
 import type { Post } from "@/lib/types";
+import { ChipRow } from "./ChipRow";
 import { PostPreviewList } from "./PostPreview";
 import { ErrorNote } from "./SignInPrompt";
 
-/** Trending posts with a topic filter. The unfiltered list is server-rendered. */
+interface TopicList {
+  posts: Post[];
+  /** Nothing was trending in the topic, so these are its newest ideas instead. */
+  newest?: boolean;
+}
+
+/**
+ * Trending posts with a topic filter. The unfiltered list is server-rendered. A topic
+ * with nothing trending this week (no reactions, comments or saves yet) falls back to
+ * its newest ideas, so a filter never ends in an empty list while the topic has cards.
+ */
 export function TrendingPosts({ initial }: { initial: Post[] }) {
   const { api } = useAuth();
   const [topic, setTopic] = useState("");
-  const [lists, setLists] = useState<Record<string, Post[]>>({ "": initial });
+  const [lists, setLists] = useState<Record<string, TopicList>>({ "": { posts: initial } });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -23,7 +34,12 @@ export function TrendingPosts({ initial }: { initial: Post[] }) {
     setLoading(true);
     try {
       const r = await api.trending({ topic: slug || undefined, limit: 10 });
-      setLists((l) => ({ ...l, [slug]: r.posts }));
+      let list: TopicList = { posts: r.posts };
+      if (!r.posts.length && slug) {
+        const newest = await api.timeline({ topics: slug, limit: 10 }, false);
+        list = { posts: newest.posts, newest: true };
+      }
+      setLists((l) => ({ ...l, [slug]: list }));
     } catch (err) {
       setError(isApiError(err) ? err.message : "Couldn't load trending ideas.");
     } finally {
@@ -31,13 +47,14 @@ export function TrendingPosts({ initial }: { initial: Post[] }) {
     }
   }
 
-  const posts = lists[topic];
+  const list = lists[topic];
+  const posts = list?.posts;
   return (
     <>
-      <div
-        role="group"
-        aria-label="Filter by topic"
-        className="flex flex-wrap gap-2 max-md:-mx-4 max-md:flex-nowrap max-md:overflow-x-auto max-md:px-4 max-md:pb-1 max-md:[scrollbar-width:none]"
+      <ChipRow
+        label="Filter by topic"
+        className="max-md:-mx-4"
+        scrollClassName="flex flex-wrap gap-2 max-md:flex-nowrap max-md:overflow-x-auto max-md:px-4 max-md:pb-1 max-md:[scrollbar-width:none]"
       >
         {[{ slug: "", name: "All topics" }, ...TOPICS].map((t) => (
           <button
@@ -50,7 +67,7 @@ export function TrendingPosts({ initial }: { initial: Post[] }) {
             {t.name}
           </button>
         ))}
-      </div>
+      </ChipRow>
       <ErrorNote error={error} />
       <div className="mt-4" aria-busy={loading}>
         {loading && !posts ? (
@@ -58,9 +75,16 @@ export function TrendingPosts({ initial }: { initial: Post[] }) {
             Loading…
           </p>
         ) : posts?.length ? (
-          <PostPreviewList posts={posts} ranked />
+          <>
+            {list.newest ? (
+              <p role="status" className="mb-3 text-sm text-muted">
+                Nothing trending in {topicName(topic)} this week yet. Here are its newest ideas.
+              </p>
+            ) : null}
+            <PostPreviewList posts={posts} ranked={!list.newest} />
+          </>
         ) : posts ? (
-          <p className="text-muted">Nothing trending in this topic yet. Be the first to react to something.</p>
+          <p className="text-muted">No ideas in this topic yet.</p>
         ) : null}
       </div>
     </>

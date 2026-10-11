@@ -4,7 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
-import '../../data/speaker.dart';
+import '../listen/listen_controller.dart';
+import '../../layout/adaptive.dart';
 import '../post/share.dart';
 import '../stashes/stash_picker.dart';
 import '../../theme.dart';
@@ -22,6 +23,9 @@ class IdeaCardView extends ConsumerWidget {
     this.label,
     this.showActions = true,
     this.showShare = true,
+    this.showVideo = true,
+    this.showTopic = true,
+    this.byline,
     this.padding = const EdgeInsets.fromLTRB(20, 16, 20, 24),
   });
 
@@ -33,6 +37,18 @@ class IdeaCardView extends ConsumerWidget {
 
   /// False when the surrounding post view has its own Share button.
   final bool showShare;
+
+  /// False on the TV idea page, which shows the title beside the card and
+  /// plays the video full screen from its own button: neither video nor
+  /// title is repeated here.
+  final bool showVideo;
+
+  /// False on the TV idea page, whose left column already shows the topic.
+  final bool showTopic;
+
+  /// The source line ("Meditations · Marcus Aurelius"), shown under the
+  /// title, as on the feed card: topic, title, then source.
+  final Widget? byline;
   final EdgeInsets padding;
 
   String? get _disclaimer =>
@@ -53,28 +69,45 @@ class IdeaCardView extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Wrap(
-            spacing: 10,
-            runSpacing: 6,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              if (label != null) _Pill(text: label!),
-              CategoryTag(topicName),
-            ],
-          ),
-          const SizedBox(height: 10),
-          // A video post carries its title on the film itself.
-          if (card.explainer != null) ...[
+          if (label != null || showTopic) ...[
+            Wrap(
+              spacing: 10,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                if (label != null) _Pill(text: label!),
+                if (showTopic) CategoryTag(topicName),
+              ],
+            ),
+            const SizedBox(height: 10),
+          ],
+          // The title is always written out, video or not: the poster's own
+          // printed title is art (and gone when the video fails to load).
+          if (showVideo) ...[
+            Text(
+              card.title,
+              key: const ValueKey('card-title'),
+              style: cardPageTitleStyle(context),
+            ),
+            const SizedBox(height: 6),
+          ],
+          if (card.explainer != null && showVideo) ...[
+            const SizedBox(height: 4),
             ExplainerPlayer(
               explainer: card.explainer!,
               title: card.title,
               autoplayId: card.id,
             ),
-            const SizedBox(height: 16),
-          ] else ...[
-            Text(card.title, style: theme.textTheme.headlineSmall),
-            const SizedBox(height: 12),
+            const SizedBox(height: 10),
           ],
+          ?byline,
+          // The health or support note comes before the reading, so it's
+          // seen first.
+          if (_disclaimer != null) ...[
+            const SizedBox(height: 14),
+            _Disclaimer(text: _disclaimer!),
+          ],
+          const SizedBox(height: 16),
           for (final p in paragraphs)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
@@ -84,10 +117,6 @@ class IdeaCardView extends ConsumerWidget {
             _QuoteBlock(quote: card.quote!, locator: card.locator),
           const SizedBox(height: 8),
           _ApplyIt(text: card.applyIt),
-          if (_disclaimer != null) ...[
-            const SizedBox(height: 12),
-            _Disclaimer(text: _disclaimer!),
-          ],
           const SizedBox(height: 16),
           _Credit(card: card),
           if (showActions) ...[
@@ -98,6 +127,15 @@ class IdeaCardView extends ConsumerWidget {
       ),
     );
   }
+}
+
+/// The article-style title of the card page: 30px on phones, 36px from
+/// tablet width up (web: text-3xl / sm:text-4xl Fraunces).
+TextStyle? cardPageTitleStyle(BuildContext context) {
+  final wide = MediaQuery.sizeOf(context).width >= WindowSize.mediumMin;
+  final size = wide ? 36.0 : 30.0;
+  return Theme.of(context).textTheme.headlineSmall
+      ?.copyWith(fontSize: size, height: 1.2, letterSpacing: -0.015 * size);
 }
 
 /// Amber pill for a badge such as "Today's idea".
@@ -139,7 +177,7 @@ class _QuoteBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '“${quote.trim()}”',
+            displayQuote(quote),
             style: TextStyle(
               fontFamily: kDisplayFont,
               fontWeight: FontWeight.w600,
@@ -278,49 +316,60 @@ class _CardActions extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final speaker = ref.watch(speakerProvider);
-    return ListenableBuilder(
-      listenable: speaker,
-      builder: (context, _) {
-        final speaking = speaker.speakingId == card.id;
-        return Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            speaking
-                ? FilledButton.tonalIcon(
-                    onPressed: speaker.stop,
-                    icon: const Icon(Icons.stop),
-                    label: const Text('Stop'),
-                  )
-                : OutlinedButton.icon(
-                    onPressed: () => speaker.speak(card.id, card.spokenText),
-                    icon: const Icon(Icons.headphones_outlined),
-                    label: const Text('Listen'),
-                  ),
-            OutlinedButton.icon(
-              onPressed: () => showStashPicker(context, ref, card),
-              icon: const Icon(Icons.bookmark_add_outlined),
-              label: const Text('Stash'),
-            ),
-            if (showShare)
-              Builder(
-                builder: (context) => OutlinedButton.icon(
-                  onPressed: () => sharePost(
-                    context,
-                    ref,
-                    Post.fromCard(card),
-                    countLocally: false,
-                  ),
-                  icon: const Icon(Icons.ios_share),
-                  label: const Text('Share'),
-                ),
+    // Listen plays this card's recording, or reads it with the device
+    // voice when it has none (see ListenController.playCard).
+    final playing = ref.watch(
+      listenProvider.select(
+        (s) => s.active && s.playing && s.current?.card.id == card.id,
+      ),
+    );
+    final listen = ref.read(listenProvider.notifier);
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        playing
+            ? FilledButton.tonalIcon(
+                onPressed: listen.stop,
+                icon: const Icon(Icons.stop),
+                label: const Text('Stop'),
+              )
+            : OutlinedButton.icon(
+                onPressed: () => listen.playCard(card),
+                icon: const Icon(Icons.headphones_outlined),
+                label: const Text('Listen'),
               ),
-          ],
-        );
-      },
+        OutlinedButton.icon(
+          onPressed: () => showStashPicker(context, ref, card),
+          icon: const Icon(Icons.bookmark_add_outlined),
+          label: const Text('Stash'),
+        ),
+        if (showShare)
+          Builder(
+            builder: (context) => OutlinedButton.icon(
+              onPressed: () => sharePost(
+                context,
+                ref,
+                Post.fromCard(card),
+                countLocally: false,
+              ),
+              icon: const Icon(Icons.ios_share),
+              label: const Text('Share'),
+            ),
+          ),
+      ],
     );
   }
+}
+
+/// A card's quote as shown: wrapped in curly double quotes, unless the
+/// text already carries its own double quote marks (speech inside the
+/// quote, or a quote stored with its outer pair), which would otherwise
+/// show doubled ("“"Begin, friend," ..."”").
+String displayQuote(String quote) {
+  final q = quote.trim();
+  if (RegExp('["“”]').hasMatch(q)) return q;
+  return '“$q”';
 }
 
 /// Plain-text version of a card for sharing, always with its credit.
@@ -332,7 +381,7 @@ String shareText(IdeaCard card) {
   if (card.quote != null) {
     b
       ..writeln()
-      ..writeln('“${card.quote!.trim()}”');
+      ..writeln(displayQuote(card.quote!));
   }
   b
     ..writeln()

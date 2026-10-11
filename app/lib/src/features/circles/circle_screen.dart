@@ -1,4 +1,5 @@
 import '../../theme.dart';
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -8,7 +9,9 @@ import 'package:go_router/go_router.dart';
 import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
+import 'circles_screen.dart';
 
 const kCircleFull = 'This circle is full (50 members).';
 
@@ -172,7 +175,16 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
         if (mounted) setState(() => _circle = c);
       } on ApiException catch (e) {
         // The circle was deleted when its last member left.
-        if (e.statusCode == 404 && mounted) context.pop();
+        if (e.statusCode == 404 && mounted) {
+          if (Navigator.of(context).canPop()) {
+            context.pop();
+          } else {
+            // In the side pane of Book circles: clear the pane.
+            ref
+                .read(paneSelectionProvider(CirclesScreen.pane).notifier)
+                .select(null);
+          }
+        }
       }
     } catch (e) {
       if (mounted) _snack(errorMessage(e));
@@ -258,6 +270,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     final c = _circle;
     return Scaffold(
       appBar: AppBar(
+        leading: exitLeading(context),
         title: Text(c?.name ?? 'Circle'),
         actions: [
           if (c != null && c.isMember)
@@ -347,9 +360,16 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                     ),
                   ),
                 if (c.isMember)
-                  Chip(
-                    visualDensity: VisualDensity.compact,
-                    label: Text(c.isOwner ? 'Owner' : 'Member'),
+                  // A status, not a control: announced as plain text
+                  // (leaving is the separate exit button).
+                  Semantics(
+                    container: true,
+                    label: c.isOwner ? 'Owner' : 'Member',
+                    excludeSemantics: true,
+                    child: Chip(
+                      visualDensity: VisualDensity.compact,
+                      label: Text(c.isOwner ? 'Owner' : 'Member'),
+                    ),
                   ),
               ],
             ),
@@ -486,7 +506,9 @@ class _MessageTile extends StatelessWidget {
         : m.author.displayName;
     return Padding(
       key: ValueKey('message-${m.id}'),
-      padding: const EdgeInsets.fromLTRB(16, 6, 4, 6),
+      // Room on the right for the idea chip's border when there is no
+      // delete button.
+      padding: EdgeInsets.fromLTRB(16, 6, onDelete == null ? 16 : 4, 6),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -522,7 +544,11 @@ class _MessageTile extends StatelessWidget {
                     child: ActionChip(
                       key: ValueKey('message-idea-${m.id}'),
                       avatar: const Icon(Icons.lightbulb_outline, size: 18),
-                      label: Text(ideaTitle ?? 'Open the idea'),
+                      label: Text(
+                        ideaTitle ?? 'Open the idea',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                       onPressed: () => context.push(
                         '/cards/${Uri.encodeComponent(m.postId!)}',
                       ),

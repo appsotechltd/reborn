@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { PostActions } from "@/components/PostActions";
 import { AuthProvider } from "@/lib/auth";
@@ -77,20 +77,40 @@ describe("<PostActions>", () => {
       );
       vi.stubGlobal("fetch", fetchMock);
       renderActions();
-      fireEvent.click(screen.getByRole("button", { name: /react/i }));
+      // Every reaction is one tap away, with its count, as in the app.
+      const group = screen.getByRole("group", { name: "Reactions" });
+      expect(within(group).getAllByRole("button")).toHaveLength(5);
       fireEvent.click(screen.getByRole("button", { name: "Insightful, 0" }));
-      expect(screen.getByRole("button", { name: /insightful/i, expanded: false })).toBeTruthy();
+      const active = screen.getByRole("button", { name: "Insightful, 1" });
+      expect(active.getAttribute("aria-pressed")).toBe("true");
       await waitFor(() =>
         expect(fetchMock.mock.calls.some(([u, i]) => String(u).endsWith("/reaction") && i?.method === "PUT")).toBe(true),
       );
-      fireEvent.click(screen.getByRole("button", { name: /insightful/i, expanded: false }));
-      const active = screen.getByRole("button", { name: "Insightful, 1" });
-      expect(active.getAttribute("aria-pressed")).toBe("true");
-      fireEvent.click(active);
+      // Another reaction replaces it; tapping the current one again clears it.
+      fireEvent.click(screen.getByRole("button", { name: "Love, 2" }));
+      expect(screen.getByRole("button", { name: "Insightful, 0" }).getAttribute("aria-pressed")).toBe("false");
+      expect(screen.getByRole("button", { name: "Love, 3" }).getAttribute("aria-pressed")).toBe("true");
+      fireEvent.click(screen.getByRole("button", { name: "Love, 3" }));
+      expect(screen.getByRole("button", { name: "Love, 2" }).getAttribute("aria-pressed")).toBe("false");
       await waitFor(() =>
         expect(fetchMock.mock.calls.some(([u, i]) => String(u).endsWith("/reaction") && i?.method === "DELETE")).toBe(true),
       );
     });
+  });
+
+  it("shows favourite, comment, share and gift counts with names for screen readers", () => {
+    vi.stubGlobal("fetch", vi.fn(async () => new Response(null, { status: 204 })));
+    const post = makePost({ stats: { reactions: { like: 2 }, comments: 3, favorites: 5, shares: 7, gifts: 2 } });
+    render(
+      <AuthProvider>
+        <PostActions post={post} />
+      </AuthProvider>,
+    );
+    expect(screen.getByRole("button", { name: "Like, 2" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: /favourite.*5 favourites/i })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "3 comments" }).getAttribute("href")).toBe("/ideas/example-book--01#comments");
+    expect(screen.getByRole("button", { name: /^Share.*shared 7 times$/ })).toBeTruthy();
+    expect(screen.getByRole("button", { name: /^Gift\s*· 2/ })).toBeTruthy();
   });
 
   it("sends signed-out visitors to sign in", () => {

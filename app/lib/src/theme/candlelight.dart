@@ -119,7 +119,7 @@ class CandlelightTokens {
     line: Color(0xFFDDD7CC),
     ghostLine: Color(0xFFCFC6B8),
     amberText: Color(0xFF9A5B0E),
-    react: Color(0xFFC9821F),
+    react: Color(0xFF9A5B0E),
     chipOnBg: Color(0xFF1C1814),
     chipOnFg: Color(0xFFF2E8D8),
     success: Color(0xFF3F7A3A),

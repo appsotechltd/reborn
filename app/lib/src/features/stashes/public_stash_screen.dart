@@ -15,7 +15,10 @@ class PublicStashScreen extends ConsumerWidget {
     final stash = ref.watch(publicStashProvider(stashId));
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(stash.value?.stash.name ?? 'Stash')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: Text(stash.value?.stash.name ?? 'Stash'),
+      ),
       body: stash.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(

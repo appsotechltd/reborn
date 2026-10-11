@@ -1,12 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { useSeenTracker } from "@/lib/use-seen";
-import { useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
-import type { Post } from "@/lib/types";
+import { useListen } from "@/lib/listen";
+import { itemsFromPosts } from "@/lib/listen-player";
+import { postOnScreen, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
+import type { Post, Topic } from "@/lib/types";
+import { ChipRow } from "./ChipRow";
+import { DailyBanner } from "./DailyBanner";
+import { Icon } from "./Icon";
 import { LoadMoreSentinel } from "./LoadMoreSentinel";
 import { PostCard } from "./PostCard";
 import { ErrorNote } from "./SignInPrompt";
@@ -20,7 +25,7 @@ const PRELOAD_MARGIN = "0px 0px 300% 0px";
 const PRELOAD_POSTS = 3;
 
 interface FeedState {
-  /** Whose timeline this is: ANON, or the token it was loaded with. */
+  /** Whose timeline this is (ANON, or the token it was loaded with) and its topic filter: `${who}|${topic}`. */
   key: string;
   posts: Post[];
   cursor: string | null;
@@ -41,14 +46,25 @@ export function caughtUpIndex(posts: Post[]): number {
  * snapping one post at a time (CSS scroll-snap on the page, see globals.css), with
  * j/k and the arrow keys moving one post. From md up it is a column of posts.
  */
-export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]; initialCursor: string | null }) {
+export function Timeline({
+  initialPosts,
+  initialCursor,
+  topics = [],
+}: {
+  initialPosts: Post[];
+  initialCursor: string | null;
+  /** For the phone feed's topic chips ("For you" and one per topic), as in the app. */
+  topics?: Pick<Topic, "slug" | "name">[];
+}) {
   const { ready, token, user, api } = useAuth();
-  const [feed, setFeed] = useState<FeedState>({ key: ANON, posts: initialPosts, cursor: initialCursor });
+  const [topic, setTopic] = useState("");
+  const [feed, setFeed] = useState<FeedState>({ key: `${ANON}|`, posts: initialPosts, cursor: initialCursor });
   const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [moreError, setMoreError] = useState<string | null>(null);
   const listRef = useRef<HTMLOListElement>(null);
-  const wanted = token ?? ANON;
+  const who = token ?? ANON;
+  const wanted = `${who}|${topic}`;
   const switching = ready && feed.key !== wanted;
   const busy = useRef(false);
 
@@ -56,7 +72,7 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
     if (!ready || feed.key === wanted) return;
     let cancelled = false;
     api
-      .timeline({ limit: PAGE }, wanted !== ANON)
+      .timeline({ limit: PAGE, topics: topic || undefined }, who !== ANON)
       .then((page) => {
         if (cancelled) return;
         setFeed({ key: wanted, posts: page.posts, cursor: page.next_cursor });
@@ -68,7 +84,7 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
     return () => {
       cancelled = true;
     };
-  }, [ready, wanted, feed.key, api]);
+  }, [ready, wanted, who, topic, feed.key, api]);
 
   const loadMore = useCallback(async () => {
     if (!feed.cursor || busy.current || switching) return;
@@ -76,8 +92,9 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
     setLoadingMore(true);
     setMoreError(null);
     const key = feed.key;
+    const [keyWho, keyTopic] = key.split("|");
     try {
-      const page = await api.timeline({ cursor: feed.cursor, limit: PAGE }, key !== ANON);
+      const page = await api.timeline({ cursor: feed.cursor, limit: PAGE, topics: keyTopic || undefined }, keyWho !== ANON);
       setFeed((f) =>
         f.key !== key
           ? f
@@ -95,7 +112,7 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
     }
   }, [api, feed.cursor, feed.key, switching]);
 
-  const signedIn = feed.key !== ANON;
+  const signedIn = !feed.key.startsWith(`${ANON}|`);
   const track = useSeenTracker(api, signedIn && !!user);
   const divider = signedIn ? caughtUpIndex(feed.posts) : -1;
 
@@ -104,42 +121,85 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
     if (count - 1 - index < PRELOAD_POSTS) void loadMore();
   });
 
+  const { player } = useListen();
+  // Only once hydrated: whether the device voice exists is known only in the browser.
+  const listenable = ready && !!player && !switching && feed.posts.some((p) => player.canPlay(p.card));
+
+  /** Listen mode from the post on screen (or the top), with the feed's topic filter. */
+  function listen() {
+    if (!player) return;
+    const from = Math.min(postOnScreen(listRef.current), Math.max(0, feed.posts.length - 1));
+    player.start({
+      items: itemsFromPosts(feed.posts.slice(from)),
+      cursor: feed.cursor,
+      topics: feed.key.split("|")[1] ?? "",
+    });
+  }
+
+  function chooseTopic(slug: string) {
+    if (slug === topic) return;
+    setTopic(slug);
+    window.scrollTo({ top: 0 });
+  }
+
+  // Above the first post: on phones these share its slide (as in the app), on wider screens they
+  // stack above it as before.
+  const lead = (
+    <>
+      <DailyBanner />
+      {ready && !user ? <JoinPrompt /> : null}
+      {user ? <StreakWidget /> : null}
+    </>
+  );
+
   return (
     <div className="mx-auto max-w-3xl">
-      {ready && !user ? <JoinPrompt /> : null}
-      {user ? (
-        <div className="max-md:snap-start">
-          <StreakWidget />
+      {topics.length ? (
+        <TopicChips
+          topics={topics}
+          selected={topic}
+          onSelect={chooseTopic}
+          trailing={listenable ? <ListenFeedButton onClick={listen} compact /> : null}
+        />
+      ) : null}
+      {listenable ? (
+        <div className={`mb-4 flex justify-end ${topics.length ? "max-md:hidden" : "max-md:mb-2"}`}>
+          <ListenFeedButton onClick={listen} />
         </div>
       ) : null}
       {switching && !error ? (
         <p role="status" className="mb-4 text-center text-sm text-muted">
-          Loading your timeline…
+          {feed.key.split("|")[0] === who ? "Loading…" : "Loading your timeline…"}
         </p>
       ) : null}
       {feed.posts.length === 0 && !switching ? (
-        <p className="panel p-6 text-center text-muted">
-          No ideas here yet. Pick some topics in{" "}
-          <Link href="/settings" className="link">
-            Settings
-          </Link>{" "}
-          or{" "}
-          <Link href="/sources" className="link">
-            browse the sources
-          </Link>
-          .
-        </p>
+        <>
+          {lead}
+          <p className="panel p-6 text-center text-muted">
+            No ideas here yet.{" "}
+            <Link href="/welcome?edit=1" className="link">
+              Pick some topics
+            </Link>{" "}
+            or{" "}
+            <Link href="/sources" className="link">
+              browse the sources
+            </Link>
+            .
+          </p>
+        </>
       ) : (
         <ol ref={listRef} data-snap-feed className="grid gap-6 max-md:gap-0" aria-label="Timeline">
           {feed.posts.map((p, i) => (
             <li
               key={`${signedIn ? "me" : "anon"}:${p.id}`}
-              className="max-md:flex max-md:h-[var(--slide-h)] max-md:snap-start max-md:snap-always max-md:flex-col max-md:py-2"
+              className="max-md:flex max-md:h-[var(--slide-h)] max-md:snap-start max-md:snap-always max-md:flex-col max-md:pb-1 max-md:pt-2"
             >
+              {i === 0 ? lead : null}
               {i === divider ? <CaughtUp /> : null}
               <div className="max-md:min-h-0 max-md:flex-1">
                 <PostCard post={p} showReason snap trackRef={signedIn && !p.viewer?.seen ? track : undefined} />
               </div>
+              {i === 0 && feed.posts.length > 1 ? <SwipeHint /> : null}
             </li>
           ))}
         </ol>
@@ -160,6 +220,88 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
   );
 }
 
+/**
+ * The phone feed's topic chips, as in the app: "For you" and each topic, filtering the feed in
+ * place. They stay under the header while the feed snaps. Wider screens have the topic links
+ * above the timeline instead.
+ */
+function TopicChips({
+  topics,
+  selected,
+  onSelect,
+  trailing,
+}: {
+  topics: Pick<Topic, "slug" | "name">[];
+  selected: string;
+  onSelect: (slug: string) => void;
+  /** After the chips, not scrolling with them: the Listen button. */
+  trailing?: ReactNode;
+}) {
+  return (
+    <ChipRow
+      data-feed-chips
+      trailing={trailing}
+      label="Filter the timeline by topic"
+      className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 bg-bg md:hidden"
+      scrollClassName="flex gap-2 overflow-x-auto px-3 [scrollbar-width:none]"
+    >
+      {[{ slug: "", name: "For you" }, ...topics].map((t) => {
+        const on = selected === t.slug;
+        return (
+          <button
+            key={t.slug}
+            type="button"
+            aria-pressed={on}
+            onClick={() => onSelect(t.slug)}
+            className="flex min-h-11 shrink-0 items-center"
+          >
+            <span
+              className={`chip h-9 px-4 text-sm font-semibold ${on ? "chip-on" : "hover:text-fg"}`}
+            >
+              {t.name}
+            </span>
+          </button>
+        );
+      })}
+    </ChipRow>
+  );
+}
+
+/**
+ * Starts Listen mode from the post on screen. On phones it is a headphones button at the end of the
+ * topic chips (`compact`); on wider screens a "Listen" button above the timeline.
+ */
+function ListenFeedButton({ onClick, compact = false }: { onClick: () => void; compact?: boolean }) {
+  if (compact) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label="Listen to this feed"
+        className="mr-1 grid size-11 place-items-center rounded-full text-accent-text hover:bg-surface-2"
+      >
+        <Icon name="headphones" className="size-6" />
+      </button>
+    );
+  }
+  return (
+    <button type="button" onClick={onClick} className="btn btn-small" aria-label="Listen to this feed">
+      <Icon name="headphones" className="size-4" />
+      Listen
+    </button>
+  );
+}
+
+/** "Swipe up for the next idea", under the first post on phones. */
+function SwipeHint() {
+  return (
+    <p aria-hidden="true" className="flex shrink-0 items-center justify-center gap-1 pt-1 text-xs text-muted md:hidden">
+      <Icon name="arrowUp" className="size-4" />
+      Swipe up for the next idea
+    </p>
+  );
+}
+
 /** The end of everything the timeline has: never a dead end, always somewhere to go next. */
 function FeedEnd() {
   return (
@@ -172,7 +314,7 @@ function FeedEnd() {
         <Link href="/discover" className="btn">
           Discover more ideas
         </Link>
-        <Link href="/settings" className="btn">
+        <Link href="/welcome?edit=1" className="btn">
           Follow more topics
         </Link>
       </div>
@@ -196,14 +338,18 @@ function CaughtUp() {
 
 function JoinPrompt() {
   return (
-    <section aria-labelledby="join-title" className="panel mb-6 bg-accent-soft p-5 text-center max-md:snap-start sm:p-6">
-      <h2 id="join-title" className="font-serif text-xl font-semibold">
+    <section
+      aria-labelledby="join-title"
+      data-join-prompt
+      className="panel mb-6 bg-accent-soft p-5 text-center max-md:mb-2 max-md:shrink-0 max-md:p-4 max-md:text-left sm:p-6"
+    >
+      <h2 id="join-title" className="font-serif text-xl font-semibold max-md:text-lg">
         Make this timeline yours
       </h2>
-      <p className="mt-1 text-muted">
+      <p className="mt-1 text-muted max-md:text-sm">
         Follow books, authors and people, react and comment, and keep your favourites. It&apos;s free.
       </p>
-      <div className="mt-4 flex flex-wrap justify-center gap-3">
+      <div className="mt-4 flex flex-wrap justify-center gap-3 max-md:mt-3 max-md:justify-start max-md:gap-2">
         <Link href="/register" className="btn btn-primary">
           Create an account
         </Link>

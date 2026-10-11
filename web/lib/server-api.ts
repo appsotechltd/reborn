@@ -2,9 +2,11 @@ import { connection } from "next/server";
 import { apiRequest, isApiError, type RequestOptions } from "./api";
 import { REVALIDATE_SECONDS, serverApiUrl } from "./config";
 import type {
+  Circle,
   DiscoverResponse,
   PublicStash,
   AuthorPage,
+  AuthorSummary,
   Card,
   FeedResponse,
   FollowState,
@@ -49,6 +51,8 @@ export const getDiscover = () => get<DiscoverResponse>("/v1/discover");
 export const getPublicStash = (id: string) =>
   orNull(get<{ stash: PublicStash; cards: Card[] }>(`/v1/public/stashes/${encodeURIComponent(id)}`));
 export const getProfile = (handle: string) => orNull(get<Profile>(`/v1/users/${encodeURIComponent(handle)}`));
+/** Whether a book circle exists (circles are public; membership is checked by the page in the browser). */
+export const getCircle = (id: string) => orNull(get<Circle>(`/v1/circles/${encodeURIComponent(id)}`));
 export const getTopics = () => get<{ topics: Topic[] }>("/v1/topics").then((r) => r.topics);
 export const getDaily = () => get<{ date: string; card: Card }>("/v1/daily");
 export const getFeed = (q: { topics?: string; cursor?: string; limit?: number } = {}) =>
@@ -65,6 +69,33 @@ export async function getAllSources(topic?: string, max = 500): Promise<SourceSu
       { topic, cursor, limit: 50 },
     );
     out.push(...page.sources);
+    cursor = page.next_cursor;
+  } while (cursor && out.length < max);
+  return out;
+}
+
+export interface LibraryQuery {
+  topic?: string;
+  q?: string;
+  cursor?: string | null;
+  limit?: number;
+}
+
+/** One page of GET /v1/sources (the Library's Books tab). */
+export const getSourcesPage = (q: LibraryQuery = {}) =>
+  get<{ sources: SourceSummary[]; next_cursor: string | null }>("/v1/sources", { limit: 50, ...q });
+
+/** One page of GET /v1/authors (the Library's Authors tab). */
+export const getAuthorsPage = (q: LibraryQuery = {}) =>
+  get<{ authors: AuthorSummary[]; next_cursor: string | null }>("/v1/authors", { limit: 50, ...q });
+
+/** Every author (follows cursors, capped), for the sitemap. */
+export async function getAllAuthors(max = 2000): Promise<AuthorSummary[]> {
+  const out: AuthorSummary[] = [];
+  let cursor: string | null = null;
+  do {
+    const page: { authors: AuthorSummary[]; next_cursor: string | null } = await getAuthorsPage({ cursor });
+    out.push(...page.authors);
     cursor = page.next_cursor;
   } while (cursor && out.length < max);
   return out;

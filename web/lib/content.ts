@@ -1,4 +1,4 @@
-import type { Card, Licence, SourceKind, Topic } from "./types";
+import type { Licence, SourceKind, Topic } from "./types";
 
 /** Topic list from content/SCHEMA.md; used as a fallback when the API is down. */
 export const TOPICS: { slug: string; name: string }[] = [
@@ -29,6 +29,13 @@ export const TOPICS: { slug: string; name: string }[] = [
 
 /** Topics whose cards carry the server's support note instead of the health disclaimer. */
 export const SUPPORT_TOPICS = new Set(["heartbreak-healing", "grief-loss"]);
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** Whether an id is a UUID (stash and circle ids are). */
+export function isUuid(id: string): boolean {
+  return UUID_RE.test(id);
+}
 
 export function topicName(slug: string, topics?: Pick<Topic, "slug" | "name">[]): string {
   const list = topics && topics.length ? topics : TOPICS;
@@ -85,11 +92,4 @@ export function excerpt(text: string, max = 160): string {
   if (flat.length <= max) return flat;
   const cut = flat.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(" ") > 80 ? cut.lastIndexOf(" ") : cut.length)}…`;
-}
-
-/** Text read aloud by the Listen button. */
-export function speechText(card: Pick<Card, "title" | "body" | "quote" | "apply_it">): string {
-  return [card.title, card.body, card.quote ? `Quote: ${card.quote}` : "", `Apply it: ${card.apply_it}`]
-    .filter(Boolean)
-    .join("\n\n");
 }
