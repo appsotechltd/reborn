@@ -36,6 +36,16 @@ void main() {
         'cards': [cardJson(), healthCard().toJson()],
         'next_cursor': null,
       },
+      '/v1/timeline' => {
+        'posts': [
+          postJson(
+            cardJson(),
+            reason: {'kind': 'topic', 'label': 'Mindfulness & Philosophy'},
+          ),
+          postJson(healthCard().toJson()),
+        ],
+        'next_cursor': null,
+      },
       '/v1/daily' => {'date': '2026-10-10', 'card': healthCard().toJson()},
       _ => null,
     };
@@ -79,7 +89,7 @@ void main() {
     requests = [];
   });
 
-  testWidgets('first launch shows the topic picker, then the feed', (
+  testWidgets('first launch shows the topic picker, then the timeline', (
     tester,
   ) async {
     await pumpApp(tester, {});
@@ -90,9 +100,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text("TODAY'S IDEA"), findsOneWidget);
     expect(find.text(sampleCard().title), findsOneWidget);
-    expect(requests, contains('GET /v1/feed'));
-    // Signed out: no view recorded.
+    expect(requests, contains('GET /v1/timeline'));
+    // Signed out: a sign-up prompt, and nothing recorded as viewed or seen.
+    expect(find.text('Make Reborn yours'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 3));
     expect(requests.where((r) => r.endsWith('/view')), isEmpty);
+    expect(requests, isNot(contains('POST /v1/seen')));
   });
 
   testWidgets('tabs work signed out and offline banner shows cached content', (

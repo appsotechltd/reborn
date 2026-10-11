@@ -22,6 +22,9 @@ class OfflineCache {
   static String stashKey(String id) => 'stash.$id';
   static String cardKey(String id) => 'card.$id';
   static String sourceKey(String id) => 'source.$id';
+  static String timelineKey(List<String>? topics, String? cursor) =>
+      'timeline.${(topics == null || topics.isEmpty) ? '_' : ([...topics]..sort()).join(',')}.${cursor ?? '_'}';
+  static String postKey(String id) => 'post.$id';
 
   Future<void> write(String key, Object? json) =>
       _prefs.setString('$_prefix$key', jsonEncode(json));
@@ -52,11 +55,14 @@ class OfflineCache {
     return json is Map<String, dynamic> ? IdeaCard.fromJson(json) : null;
   }
 
-  /// Removes everything cached for the signed-in user (stashes).
+  /// Removes everything cached for the signed-in user (stashes, and posts
+  /// and timeline pages, which carry the user's reactions).
   Future<void> clearUserData() async {
     for (final k in _prefs.getKeys().toList()) {
       if (k.startsWith('$_prefix$stashesKey') ||
-          k.startsWith('${_prefix}stash.')) {
+          k.startsWith('${_prefix}stash.') ||
+          k.startsWith('${_prefix}timeline.') ||
+          k.startsWith('${_prefix}post.')) {
         await _prefs.remove(k);
       }
     }

@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
+import { browserTimezone, clearReferral, isReferralCode, readReferral } from "@/lib/engage";
 
-export function AuthForm({ mode, next }: { mode: "signin" | "register"; next: string }) {
+const noopSubscribe = () => () => {};
+
+export function AuthForm({ mode, next, referral }: { mode: "signin" | "register"; next: string; referral?: string }) {
   const { api, signIn } = useAuth();
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -15,6 +18,10 @@ export function AuthForm({ mode, next }: { mode: "signin" | "register"; next: st
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const register = mode === "register";
+  // A code from /register?ref=, else one remembered by /join?ref=.
+  const stored = useSyncExternalStore(noopSubscribe, readReferral, () => null);
+  const [code, setCode] = useState<string | null>(null);
+  const referralCode = code ?? (isReferralCode(referral) ? referral : stored) ?? "";
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -26,8 +33,15 @@ export function AuthForm({ mode, next }: { mode: "signin" | "register"; next: st
     setBusy(true);
     try {
       const res = register
-        ? await api.register({ email: email.trim(), password, display_name: name.trim() })
+        ? await api.register({
+            email: email.trim(),
+            password,
+            display_name: name.trim(),
+            timezone: browserTimezone(),
+            ...(referralCode.trim() ? { referral_code: referralCode.trim() } : {}),
+          })
         : await api.login({ email: email.trim(), password });
+      if (register) clearReferral();
       signIn(res.token, res.user);
       router.push(next);
     } catch (err) {
@@ -111,6 +125,23 @@ export function AuthForm({ mode, next }: { mode: "signin" | "register"; next: st
             </p>
           )}
         </div>
+        {register ? (
+          <div>
+            <label htmlFor="referral_code" className="label">
+              Invite code <span className="font-normal text-muted">(optional)</span>
+            </label>
+            <input
+              id="referral_code"
+              className="field"
+              autoComplete="off"
+              autoCapitalize="characters"
+              spellCheck={false}
+              maxLength={40}
+              value={referralCode}
+              onChange={(e) => setCode(e.target.value)}
+            />
+          </div>
+        ) : null}
         {error ? (
           <p role="alert" className="rounded-lg border border-bad px-3 py-2 text-sm text-bad">
             {error}

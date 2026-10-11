@@ -8,6 +8,7 @@ import '../card/card_view.dart';
 import '../daily/daily_screen.dart';
 import 'feed_controller.dart';
 
+/// One idea per page, swiped vertically (opened from the timeline).
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -63,7 +64,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     });
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Reborn'),
+        title: const Text('Swipe ideas'),
         actions: const [ProfileMenuButton(), SizedBox(width: 8)],
       ),
       body: Column(

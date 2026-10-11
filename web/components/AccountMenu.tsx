@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useRef } from "react";
 import { useAuth } from "@/lib/auth";
+import { PremiumBadge } from "./PremiumBadge";
 
 export function AccountMenu() {
   const { ready, user, signOut } = useAuth();
@@ -28,10 +29,18 @@ export function AccountMenu() {
     { href: "/favorites", label: "Favourites" },
     { href: "/following", label: "Following" },
     { href: "/stashes", label: "My stashes" },
+    { href: "/circles", label: "Book circles" },
     { href: "/review", label: "Review" },
     { href: "/quiz", label: "Quiz" },
     { href: "/contribute", label: "Contribute" },
-    ...(user.role === "moderator" ? [{ href: "/moderation", label: "Moderation" }] : []),
+    { href: "/invite", label: "Invite friends" },
+    { href: "/premium", label: user.premium ? "Premium" : "Go Premium" },
+    ...(user.role === "moderator"
+      ? [
+          { href: "/admin", label: "Dashboard" },
+          { href: "/moderation", label: "Moderation" },
+        ]
+      : []),
     { href: "/settings", label: "Settings" },
   ];
 
@@ -52,6 +61,11 @@ export function AccountMenu() {
           {user.handle ? `@${user.handle} · ` : ""}
           {user.email}
         </p>
+        {user.premium ? (
+          <p className="px-3 pb-2">
+            <PremiumBadge />
+          </p>
+        ) : null}
         <ul>
           {items.map((it) => (
             <li key={it.href}>

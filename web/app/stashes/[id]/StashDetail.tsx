@@ -71,6 +71,18 @@ function StashBody({ id }: { id: string }) {
     }, "Couldn't rename the stash.");
   };
 
+  const togglePublic = (on: boolean) =>
+    act(async () => {
+      setData((d) => ({ stash: { ...stash, is_public: on }, cards: d?.cards ?? [] }));
+      try {
+        const updated = await api.updateStash(stash.id, { is_public: on });
+        setData((d) => ({ stash: updated, cards: d?.cards ?? [] }));
+      } catch (err) {
+        setData((d) => ({ stash: { ...stash, is_public: !on }, cards: d?.cards ?? [] }));
+        throw err;
+      }
+    }, "Couldn't change who can see this stash.");
+
   const remove = () => {
     if (!window.confirm(`Delete “${stash.name}”? The ideas stay in the library.`)) return;
     return act(async () => {
@@ -145,6 +157,28 @@ function StashBody({ id }: { id: string }) {
             <button type="button" className="btn btn-small" onClick={remove} disabled={busy}>
               Delete stash
             </button>
+          </div>
+          <div className="panel mt-4 flex flex-wrap items-center justify-between gap-3 p-4">
+            <label className="flex cursor-pointer items-center gap-3">
+              <input
+                type="checkbox"
+                className="size-4"
+                checked={!!stash.is_public}
+                disabled={busy}
+                onChange={(e) => togglePublic(e.target.checked)}
+              />
+              <span>
+                <span className="font-semibold">Public</span>
+                <span className="block text-sm text-muted">
+                  {stash.is_public ? "Anyone with the link can see it, and it shows on your profile." : "Only you can see this stash."}
+                </span>
+              </span>
+            </label>
+            {stash.is_public ? (
+              <Link href={`/s/${stash.id}`} className="link text-sm">
+                View public page
+              </Link>
+            ) : null}
           </div>
         </header>
       )}
