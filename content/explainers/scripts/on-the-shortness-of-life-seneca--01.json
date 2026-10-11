@@ -1,17 +1,167 @@
 {
-  "card_id": "on-the-shortness-of-life-seneca--01",
-  "scenes": [
-    { "type": "title", "narration": "Life isn't too short. We spend too much of it carelessly." },
-    { "type": "statement", "params": { "lines": ["“Life is so short.”", "We make it short."], "strike": 0, "emphasis": [1], "strikeAt": 2.2 },
-      "narration": "Seneca rejects the common complaint that life is cruelly brief. We're given enough time to do important things, if we arrange it well." },
-    { "type": "hourglass", "params": { "mode": "leak", "labels": ["distraction", "indulgence", "drifting", "autopilot"] },
-      "narration": "The real problem is leakage: hours drained by distraction, indulgence, and drifting without purpose.", "min_seconds": 7 },
-    { "type": "quote", "narration": "We do not have a very short time, but we lose a great deal of it. Life is long enough for the most important things." },
-    { "type": "hours", "params": { "title": "One day of waking hours", "kept": { "1": "deep work", "6": "people", "12": "health" }, "summary": "3 hours chosen. 13 leaked." },
-      "narration": "The point stings because it puts the issue back in our hands. A year can feel like nothing when it's spent on autopilot.", "min_seconds": 7 },
-    { "type": "hourglass", "params": { "mode": "aim", "labels": ["your craft", "your people", "your health"] },
-      "narration": "Or it can feel rich, when it's aimed at a few things that matter.", "min_seconds": 6 },
-    { "type": "apply", "narration": "Look at yesterday honestly. Estimate how many hours went to things you'd choose again, and how many simply leaked away." },
-    { "type": "end", "narration": "", "min_seconds": 4 }
-  ]
+ "card_id": "on-the-shortness-of-life-seneca--01",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An antique brass hourglass on a dark wooden desk lit by a single candle, golden sand falling, dust in the air."
+    },
+    "beats": [
+     {
+      "word": "carelessly",
+      "image": {
+       "prompt": "A pocket watch lying forgotten in wet grass at dusk, its glass cracked."
+      }
+     }
+    ]
+   },
+   "narration": "Life isn't too short. We spend too much of it carelessly."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A weathered ancient Roman marble bust of a bearded philosopher in a dark museum hall, one shaft of light across the face."
+    },
+    "zoom": "out",
+    "beats": [
+     {
+      "word": "we're",
+      "image": {
+       "prompt": "An ancient Roman writing desk with scrolls, an oil lamp and a stylus in warm lamplight, no people."
+      }
+     },
+     {
+      "word": "arrange",
+      "image": {
+       "prompt": "Hands placing smooth river stones in a careful line on dark slate, soft side light, close up."
+      }
+     }
+    ]
+   },
+   "narration": "Seneca rejects the common complaint that life is cruelly brief. We're given enough time to do important things, if we arrange it well."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Sand pouring out through a crack in a glass hourglass, grains scattering into darkness, macro shot."
+    },
+    "beats": [
+     {
+      "word": "distraction",
+      "image": {
+       "prompt": "A phone glowing face down on tangled sheets in a dark bedroom at night, cold blue light."
+      }
+     },
+     {
+      "word": "drifting",
+      "image": {
+       "prompt": "A small empty rowing boat drifting alone on a misty dark lake at dawn."
+      },
+      "zoom": "out"
+     }
+    ]
+   },
+   "narration": "The real problem is leakage: hours drained by distraction, indulgence, and drifting without purpose.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A winding mountain road stretching far into the distance at golden hour, seen from high above."
+    },
+    "zoom": "out",
+    "beats": [
+     {
+      "word": "life",
+      "image": {
+       "prompt": "Sunrise breaking over a vast valley, light flooding through layers of mist, epic scale."
+      }
+     }
+    ]
+   },
+   "narration": "We do not have a very short time, but we lose a great deal of it. Life is long enough for the most important things."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Open empty hands held palm up in warm candlelight, close up."
+    },
+    "beats": [
+     {
+      "word": "year",
+      "image": {
+       "prompt": "Dry autumn leaves swirling across an empty city street at dusk."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "autopilot",
+      "image": {
+       "prompt": "A commuter train window at night reflecting a tired, blurred passenger, city lights streaking past."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "The point stings because it puts the issue back in our hands. A year can feel like nothing when it's spent on autopilot.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An arrow buried in the centre of a straw archery target, warm evening light, shallow focus."
+    },
+    "lift": true,
+    "beats": [
+     {
+      "word": "few",
+      "image": {
+       "prompt": "Hands sharing bread across a candlelit wooden table, warm and intimate, faces out of frame."
+      }
+     }
+    ]
+   },
+   "narration": "Or it can feel rich, when it's aimed at a few things that matter.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A person sitting by a window at dawn with a cup of tea, looking out, seen from behind."
+    },
+    "beats": [
+     {
+      "word": "leaked",
+      "image": {
+       "prompt": "Water dripping from a brass tap into a dark stone basin, a single drop in focus."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Look at yesterday honestly. Estimate how many hours went to things you'd choose again, and how many simply leaked away."
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
 }

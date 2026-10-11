@@ -89,7 +89,8 @@ async function addScore(timeline, voiceFile, outFile, base) {
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
-  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme });
+  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme,
+    captionMax: script.captionMax, score: script.score });
   return entry && { ...entry, script: `scripts/${cardId}.json` };
 }
 

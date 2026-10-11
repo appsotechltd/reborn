@@ -106,6 +106,9 @@ voice, so re-renders only voice the lines that changed.
 `params.object`); `photo` moves slowly through cinematic stills (`params.image`). A scene can change
 shot on a word of its narration with `params.beats: [{ "word": "drifting", "image": {...} }]`.
 
+`photo` is the house style for story and philosophy cards (Seneca, Epictetus, Franklin, Aesop).
+Cards whose animation does the teaching, such as the NHS breathing guide, keep their animated look.
+
 `"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
 under the voice.
 
