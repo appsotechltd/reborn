@@ -2,11 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { ListenDock } from "./ListenDock";
 import { TabBar } from "./TabBar";
 
 /**
  * Wraps pages in the site header and footer (and, on phones, the app's bottom tab bar), except embeds (/embed/*), which
- * render bare so they fit inside an iframe on someone else's site.
+ * render bare so they fit inside an iframe on someone else's site. While Listen mode is on, its
+ * mini-player docks above the tab bar.
  */
 export function SiteChrome({ header, footer, children }: { header: ReactNode; footer: ReactNode; children: ReactNode }) {
   const pathname = usePathname() ?? "/";
@@ -30,6 +32,7 @@ export function SiteChrome({ header, footer, children }: { header: ReactNode; fo
         {children}
       </main>
       {footer}
+      <ListenDock />
       <TabBar />
     </>
   );

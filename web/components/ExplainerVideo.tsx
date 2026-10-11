@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
+import { isListeningPlaying, videoStarted } from "@/lib/media-focus";
 import type { Card } from "@/lib/types";
 
 /** After the reader presses play, how long to wait for playback before offering the fallback. */
@@ -82,7 +83,8 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
         const entry = entries[entries.length - 1];
         if (!entry) return;
         if (entry.isIntersecting && entry.intersectionRatio >= AUTOPLAY_RATIO) {
-          if (!v.paused || userPaused.current) return;
+          // Listen mode is playing: feed videos stay still until the reader starts one.
+          if (!v.paused || userPaused.current || isListeningPlaying()) return;
           v.muted = !soundOn;
           tryPlay(v).catch((err) => {
             if (isUnplayable(err)) return setFailed(true);
@@ -166,6 +168,7 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     v.muted = !v.muted;
     soundOn = !v.muted;
     setMuted(v.muted);
+    if (!v.muted) videoStarted();
     if (v.paused && !userPaused.current) tryPlay(v).catch(() => {});
   }
 
@@ -199,6 +202,8 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           onClick={feed && started ? toggleSound : undefined}
           onPlay={(ev) => {
             claimPlayback(ev.currentTarget);
+            // A video with sound is one the reader chose: Listen mode pauses for it.
+            if (!ev.currentTarget.muted) videoStarted();
             setStarted(true);
             setIsPlaying(true);
           }}

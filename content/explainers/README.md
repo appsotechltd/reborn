@@ -14,9 +14,9 @@ Two kinds:
 Every video credits its source on screen the whole time, ends on a card with the full credit
 and licence, and health cards keep "General information, not medical advice" on screen plus
 the full disclaimer at the end. Illustrations are drawn from scratch: no book covers or
-copyrighted imagery. Videos never show captions on screen, because they hide the picture; the
-narration is written to a `.vtt` file next to each video, which players can show when a viewer
-turns captions on.
+copyrighted imagery. Videos have no captions, on screen or as a caption track, because they
+hide the picture. Each render writes the video and a `.jpg` poster (the title frame); upload both
+to the media bucket with `reborn media-upload content/explainers/out explainers`.
 
 ## Setup
 
@@ -46,7 +46,7 @@ an optional voice-over line. Card text, credit, licence and the health note come
 
 ```sh
 npm run stills -- aesops-fables--07   # a few PNG frames per scene in .cache/stills (seconds)
-npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster + .vtt of the narration, updates out/manifest.json
+npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster, updates out/manifest.json
 npm run render                        # every script
 npm test
 ```
@@ -106,15 +106,30 @@ voice, so re-renders only voice the lines that changed.
 `params.object`); `photo` moves slowly through cinematic stills (`params.image`). A scene can change
 shot on a word of its narration with `params.beats: [{ "word": "drifting", "image": {...} }]`.
 
+`photo` is the house style for story and philosophy cards (Seneca, Epictetus, Franklin, Aesop).
+Cards whose animation does the teaching, such as the NHS breathing guide, keep their animated look.
+
 `"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
 under the voice.
 
-Photo images come from Google Imagen through the Gemini API (`GEMINI_API_KEY`, optional
-`IMAGEN_MODEL`) and are cached in `.cache/images` by prompt, so each is paid for once (about $0.02 an
-image on Imagen 4 Fast; check Google's pricing first). Style samples render to `out/samples/`:
+Photo images come from one of three providers, each read from its own key. Every image is paid
+for once and kept forever. It is saved under `images/` in the media bucket (R2, using the same
+`R2_*` settings as the API) and in `.cache/images`, keyed by provider, model, size and prompt. A
+saved image is always reused, on any machine. Only `--regenerate-images` makes new ones.
+
+| Provider | Key | Default for |
+|---|---|---|
+| OpenAI (`gpt-image-1` at medium quality; `OPENAI_IMAGE_MODEL`, `OPENAI_IMAGE_QUALITY`) | `OPENAI_API_KEY` | photoreal shots and card art |
+| Ideogram 3.0 | `IDEOGRAM_API_KEY` | images with words in them (`image: { prompt, text }`), such as quote images |
+| Google Imagen (`IMAGEN_MODEL`) | `GEMINI_API_KEY` | fallback |
+
+When the preferred provider has no key, the next one that does is used. Force one for a whole render with
+`--image-provider openai|ideogram|imagen` or `IMAGE_PROVIDER`, or for one image with `provider` on it.
+Check each provider's current prices before a large run. Style samples render to `out/samples/`:
 
 ```sh
-GEMINI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json
+OPENAI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json --image-provider openai
+node src/images.mjs "A dark stone wall at dusk" --text "Life is long enough" --out quote.png
 ```
 
 ## Realistic films
@@ -126,7 +141,7 @@ GEMINI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json
    `--provider animatic` renders placeholder clips so pacing can be checked.
 3. **Render.** `FILM_PROVIDER=veo GEMINI_API_KEY=...` or `FILM_PROVIDER=runway RUNWAYML_API_SECRET=...`,
    then `npm run film:render -- <card-id>`. Each shot is generated once and cached; clips are
-   cut to length, the credit and health note are burned in (captions go to a `.vtt` file), narration is laid over, and
+   cut to length, the credit and health note are burned in, narration is laid over, and
    the film ends on the same end card as the animated videos. Output: `out/<card-id>.film.mp4`.
 4. **Publish.** Add `--publish` to make the film the card's explainer in `out/manifest.json`.
 

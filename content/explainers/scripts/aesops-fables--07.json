@@ -1,153 +1,216 @@
 {
-  "card_id": "aesops-fables--07",
-  "scenes": [
-    {
-      "type": "title",
-      "narration": "Steady daily effort beats bursts of talent followed by coasting. Here's the oldest proof we have."
+ "card_id": "aesops-fables--07",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "emma",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An ancient stone path winding through olive trees at sunrise."
     },
-    {
-      "type": "race",
-      "params": {
-        "label": "On your marks",
-        "hare": {
-          "from": 0.04,
-          "to": 0.04,
-          "state": "idle"
-        },
-        "tortoise": {
-          "from": 0.04,
-          "to": 0.04
-        }
+    "beats": [
+     {
+      "word": "oldest",
+      "image": {
+       "prompt": "An ancient Greek clay amphora on a stone ledge in warm light."
       },
-      "narration": "The hare was sure of his speed. The tortoise challenged him to a race anyway."
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Steady daily effort beats bursts of talent followed by coasting. Here's the oldest proof we have."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A wild brown hare sitting alert in a misty meadow at dawn, ears up."
     },
-    {
-      "type": "race",
-      "params": {
-        "hare": {
-          "from": 0.04,
-          "to": 0.58,
-          "state": "run"
-        },
-        "tortoise": {
-          "from": 0.04,
-          "to": 0.12
-        }
+    "beats": [
+     {
+      "word": "tortoise",
+      "image": {
+       "prompt": "A tortoise on a dusty country path, low angle, close up, morning light."
       },
-      "narration": "The hare shot ahead, so far that the tortoise was barely moving behind him.",
-      "cut": true
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "The hare was sure of his speed. The tortoise challenged him to a race anyway."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A hare sprinting through tall grass, motion blur, golden light."
     },
-    {
-      "type": "race",
-      "params": {
-        "hare": {
-          "from": 0.58,
-          "to": 0.58,
-          "state": "sleep"
-        },
-        "tortoise": {
-          "from": 0.12,
-          "to": 0.42
-        }
+    "beats": [
+     {
+      "word": "barely",
+      "image": {
+       "prompt": "A tortoise walking slowly along a long empty dirt road, wide shot."
       },
-      "narration": "Sure of winning, he lay down under a tree for a nap. The tortoise just kept plodding.",
-      "cut": true
+      "zoom": [
+       "out"
+      ]
+     }
+    ]
+   },
+   "narration": "The hare shot ahead, so far that the tortoise was barely moving behind him.",
+   "cut": true
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A hare asleep in the shade under a large oak tree in a summer field."
     },
-    {
-      "type": "race",
-      "params": {
-        "hare": {
-          "from": 0.58,
-          "to": 0.86,
-          "state": "wake",
-          "wakeAt": 0.62
-        },
-        "tortoise": {
-          "from": 0.42,
-          "to": 0.97
-        },
-        "cheer": true
+    "beats": [
+     {
+      "word": "plodding",
+      "image": {
+       "prompt": "Close up of a tortoise's feet stepping over pebbles on a path."
       },
-      "narration": "By the time the hare woke up and raced for the line, the tortoise was already crossing it.",
-      "min_seconds": 7,
-      "cut": true
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Sure of winning, he lay down under a tree for a nap. The tortoise just kept plodding.",
+   "cut": true
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A hare bolting across a field at sunset, dust kicking up."
     },
-    {
-      "type": "quote",
-      "narration": "Slow and steady wins the race."
-    },
-    {
-      "type": "compound",
-      "params": {
-        "title": "Two ways to chase a goal",
-        "days": 14,
-        "series": [
-          {
-            "label": "Bursts, then coasting",
-            "color": "#b0784e",
-            "values": [
-              3,
-              3,
-              0,
-              0,
-              0,
-              0,
-              0,
-              2,
-              2,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
-            "label": "A little every day",
-            "color": "#4f7a3a",
-            "values": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
-            ]
-          }
-        ]
+    "beats": [
+     {
+      "word": "crossing",
+      "image": {
+       "prompt": "A tortoise passing a ribbon stretched between two wooden posts at the end of a country path, golden hour."
       },
-      "narration": "It plays out in languages, savings, fitness and business. Intense sprints followed by long breaks stall, while small daily steps keep adding up.",
-      "min_seconds": 8
-    },
-    {
-      "type": "statement",
-      "params": {
-        "lines": [
-          "You don't need to be the fastest.",
-          "You need to keep going."
-        ],
-        "emphasis": [
-          1
-        ]
-      },
-      "narration": "You don't need to be the fastest. You need to keep going. And if you're the hare, don't let a head start make you complacent."
-    },
-    {
-      "type": "apply",
-      "narration": "Pick one goal and set a small daily minimum you can keep even on bad days, like ten minutes. Start today."
-    },
-    {
-      "type": "end",
-      "narration": "",
-      "min_seconds": 4
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "By the time the hare woke up and raced for the line, the tortoise was already crossing it.",
+   "min_seconds": 7,
+   "cut": true
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A tortoise resting in warm sunlight on a smooth stone, serene, shallow focus."
     }
-  ]
+   },
+   "narration": "Slow and steady wins the race."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A person practising violin by a window in morning light."
+    },
+    "beats": [
+     {
+      "word": "savings",
+      "image": {
+       "prompt": "Coins stacked in small growing piles on a dark wooden table, warm light."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "stall",
+      "image": {
+       "prompt": "An old bicycle leaning against a wall overgrown with ivy."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "adding",
+      "image": {
+       "prompt": "Footprints in fresh snow climbing a long hill towards the sunrise."
+      },
+      "zoom": [
+       "out"
+      ]
+     }
+    ]
+   },
+   "narration": "It plays out in languages, savings, fitness and business. Intense sprints followed by long breaks stall, while small daily steps keep adding up.",
+   "min_seconds": 8
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A lone hiker walking steadily up a mountain trail at dawn, seen from behind."
+    },
+    "lift": true,
+    "beats": [
+     {
+      "word": "hare",
+      "image": {
+       "prompt": "A hare sitting in an empty field gazing at the horizon at dusk."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "You don't need to be the fastest. You need to keep going. And if you're the hare, don't let a head start make you complacent."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A kitchen timer and a pair of running shoes on a wooden floor in morning light."
+    },
+    "beats": [
+     {
+      "word": "bad",
+      "image": {
+       "prompt": "Rain on a window with a warm lamp glowing inside."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "today",
+      "image": {
+       "prompt": "A front door opening onto a bright street at sunrise."
+      },
+      "zoom": [
+       "out"
+      ]
+     }
+    ]
+   },
+   "narration": "Pick one goal and set a small daily minimum you can keep even on bad days, like ten minutes. Start today."
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
 }

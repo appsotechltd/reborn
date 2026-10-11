@@ -58,6 +58,21 @@ export function headerHeight(): number {
   return h;
 }
 
+/**
+ * Index of the post on screen in a feed list (its direct children): the first one still mostly
+ * below the sticky bars. 0 when the list hasn't been laid out (or nothing is scrolled).
+ */
+export function postOnScreen(list: HTMLElement | null): number {
+  if (!list) return 0;
+  const offset = headerHeight();
+  const slides = Array.from(list.children).filter((c): c is HTMLElement => c instanceof HTMLElement);
+  const i = slides.findIndex((s) => {
+    const r = s.getBoundingClientRect();
+    return r.bottom - offset > Math.min(r.height / 2, 160);
+  });
+  return Math.max(0, i);
+}
+
 function reducedMotion(): boolean {
   return !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 }

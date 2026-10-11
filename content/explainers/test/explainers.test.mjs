@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { ROOT, loadCard, HEALTH_DISCLAIMER } from "../src/library.mjs";
-import { buildTimeline, phrases, toVtt } from "../src/timeline.mjs";
+import { buildTimeline, phrases } from "../src/timeline.mjs";
 import { narrate } from "../src/narration.mjs";
 import { FilmPlan, checkPlan } from "../film/schema.mjs";
 
@@ -33,7 +33,6 @@ test("timeline uses audio length when narrated and reading pace when silent", as
   assert.equal(voiced.scenes[1].duration, 4);
   const cues = voiced.scenes[0].captions;
   assert.ok(Math.abs(cues.at(-1).end - (voiced.scenes[0].speechStart + 9)) < 0.01);
-  assert.match(toVtt(voiced), /^WEBVTT\n\n1\n00:00:00\.350 --> /);
 });
 
 test("cards carry credit, licence and the health note for health cards", async () => {

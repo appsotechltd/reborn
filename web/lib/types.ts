@@ -52,6 +52,16 @@ export interface Explainer {
   narrated: boolean;
 }
 
+/** The card read aloud in its book's voice (content/audio). Absent until it has been recorded. */
+export interface CardAudio {
+  /** Absolute, or a path relative to the API base URL (as explainer URLs are). */
+  url: string;
+  duration_s: number;
+  voice: string;
+  /** The voice's display name, e.g. "George". */
+  voice_name: string;
+}
+
 export interface Card {
   id: string;
   title: string;
@@ -67,6 +77,7 @@ export interface Card {
   source: CardSource;
   credit: string;
   explainer?: Explainer | null;
+  audio?: CardAudio | null;
 }
 
 /** Full source (GET /v1/sources/{id}), fields from content/SCHEMA.md. */
@@ -89,7 +100,20 @@ export interface SourceSummary {
   attribution: string;
   topics: string[];
   card_count: number;
+  /** Cards with an explainer video. */
+  video_count?: number;
   updated_at: string;
+}
+
+/** Item of GET /v1/authors. */
+export interface AuthorSummary {
+  name: string;
+  /** How many works. */
+  sources: number;
+  card_count: number;
+  video_count: number;
+  topics: string[];
+  followers: number;
 }
 
 export interface Topic {
@@ -305,6 +329,10 @@ export interface FollowingItem {
 export interface AuthorPage extends FollowState {
   name: string;
   sources: SourceSummary[];
+  /** Every published card by the author, ordered by book then card. */
+  cards?: Card[];
+  card_count?: number;
+  video_count?: number;
 }
 
 export interface GiftTier {

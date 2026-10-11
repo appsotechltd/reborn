@@ -5,6 +5,7 @@ import 'package:video_player/video_player.dart';
 import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../theme.dart';
+import '../listen/listen_controller.dart';
 import 'video_autoplay.dart';
 
 /// Makes the video controller for a URL; tests swap in a fake.
@@ -61,7 +62,39 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
       _autoplay &&
       _tickerOn &&
       !_userPaused &&
+      !_listening &&
       _scope!.playing == widget.autoplayId;
+
+  /// Listen mode is playing: feed videos wait.
+  bool _listening = false;
+
+  @override
+  void initState() {
+    super.initState();
+    ref.listenManual(listenProvider.select((s) => s.playing), (was, now) {
+      _listening = now;
+      if (was == null || !mounted) return;
+      if (now) {
+        final c = _controller;
+        if (c != null && c.value.isInitialized && c.value.isPlaying) c.pause();
+      }
+      _scheduleSync();
+      setState(() {});
+    }, fireImmediately: true);
+  }
+
+  /// The reader started a video: Listen mode pauses.
+  void _pauseListening() {
+    if (!_listening) return;
+    ref.read(listenProvider.notifier).pause();
+    _listening = false;
+  }
+
+  void _toggleMuted() {
+    if (_scope!.muted) _pauseListening();
+    _scope!.toggleMuted();
+    _sync();
+  }
 
   @override
   void didChangeDependencies() {
@@ -151,6 +184,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   }
 
   Future<void> _start() async {
+    if (!_autoplay) _pauseListening();
     final c = ref.read(videoControllerFactoryProvider)(
       Uri.parse(resolveMediaUrl(widget.explainer.videoUrl)),
     );
@@ -189,6 +223,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   void _toggle() {
     final c = _controller;
     if (c == null || !c.value.isInitialized) return;
+    if (!c.value.isPlaying) _pauseListening();
     if (_autoplay) {
       // Pausing the feed's video sticks until it scrolls away.
       _userPaused = c.value.isPlaying;
@@ -209,6 +244,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   }
 
   void _tapPoster() {
+    _pauseListening();
     if (_autoplay) {
       _userPaused = false;
       _failed = false;
@@ -246,7 +282,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
             excludeSemantics: true,
             child: GestureDetector(
               behavior: HitTestBehavior.opaque,
-              onTap: _scope!.toggleMuted,
+              onTap: _toggleMuted,
               child: VideoPlayer(c),
             ),
           ),
@@ -281,7 +317,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                   icon: muted
                       ? Icons.volume_off_rounded
                       : Icons.volume_up_rounded,
-                  onPressed: _scope!.toggleMuted,
+                  onPressed: _toggleMuted,
                 ),
               ],
             ),

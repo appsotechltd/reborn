@@ -67,6 +67,7 @@ Or run the whole backend in Docker: `docker compose up --build`, then
 | `VOYAGE_MODEL` | `voyage-3.5` | Embedding model (1024 dimensions) |
 | `CONTENT_DIR` | `../content/library` | Default folder for `seed` and `validate` |
 | `EXPLAINER_DIR` | `../content/explainers/out` | Folder with the explainers' `manifest.json`; the videos themselves are served from the media store under `explainers/` |
+| `CARD_AUDIO_DIR` | `../content/audio/out` | Folder with the card recordings' `manifest.json`; the mp3s are served from the media store under `audio/` |
 | `CORS_ORIGINS` | `*` | Comma-separated origins allowed to call the API from a browser |
 | `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET` | unset | Cloudflare R2 bucket for every media file (videos, images, captions, documents). Required in production |
 | `MEDIA_BASE_URL` | `http://localhost:8080/media` without R2 | Public URL of the R2 bucket (a custom domain or the `r2.dev` URL); media links are built from it |

@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { CardView } from "@/components/CardView";
 import { AUTOPLAY_RATIO, resetPlayback } from "@/components/ExplainerVideo";
+import { onVideoStarted, setListeningPlaying } from "@/lib/media-focus";
 import { installFakeIO, setVisible, stubMatchMedia } from "./fake-io";
 import { makeCard } from "./fixtures";
 
@@ -56,6 +57,29 @@ describe("feed video autoplay", () => {
   });
 
   const videoOf = (n: number) => screen.getByLabelText(`Animated explainer: Idea ${n}`) as HTMLVideoElement;
+
+  it("stays still while Listen mode plays, and pauses Listen mode when the reader turns the sound on", async () => {
+    const started = vi.fn();
+    const off = onVideoStarted(started);
+    setListeningPlaying(true);
+    render(<CardView card={card(1)} feed />);
+    const v = videoOf(1);
+    await act(async () => setVisible(v, 1));
+    expect(play).not.toHaveBeenCalled();
+    setListeningPlaying(false);
+    await act(async () => setVisible(v, 0));
+    await act(async () => setVisible(v, 1));
+    expect(play).toHaveBeenCalledTimes(1);
+    // Playing muted by itself doesn't interrupt; choosing the sound does.
+    expect(started).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("button", { name: "Unmute video" }));
+    expect(started).toHaveBeenCalledTimes(1);
+    // Listen mode starting again pauses it.
+    setListeningPlaying(true);
+    expect(pause).toHaveBeenCalled();
+    setListeningPlaying(false);
+    off();
+  });
 
   it("plays muted once 60% is on screen and pauses when it scrolls away", async () => {
     render(<CardView card={card(1)} feed />);

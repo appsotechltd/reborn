@@ -79,6 +79,16 @@ class DiscoverScreen extends ConsumerWidget {
                 ),
               ),
             ),
+            ReadingWidth(
+              child: ListTile(
+                key: const ValueKey('discover-library'),
+                leading: const Icon(Icons.local_library_outlined),
+                title: const Text('Library'),
+                subtitle: const Text('Browse all books and authors'),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => context.push('/library'),
+              ),
+            ),
             ...discover.when(
               loading: () => const [
                 Padding(padding: EdgeInsets.all(48), child: LoadingView()),
@@ -131,7 +141,13 @@ class DiscoverScreen extends ConsumerWidget {
       if (d.newPosts.isEmpty) const _Empty('No new ideas yet.'),
       for (final p in d.newPosts.take(6)) DiscoverPostCard(post: p),
       if (d.books.isNotEmpty) ...[
-        const _Heading('Popular books'),
+        _Heading(
+          'Popular books',
+          action: TextButton(
+            onPressed: () => context.push('/library'),
+            child: const Text('All books'),
+          ),
+        ),
         SizedBox(
           height: 128,
           child: ListView(
@@ -142,7 +158,13 @@ class DiscoverScreen extends ConsumerWidget {
         ),
       ],
       if (d.authors.isNotEmpty) ...[
-        const _Heading('Popular authors'),
+        _Heading(
+          'Popular authors',
+          action: TextButton(
+            onPressed: () => context.push('/library?tab=authors'),
+            child: const Text('All authors'),
+          ),
+        ),
         for (final a in d.authors)
           ReadingWidth(
             child: ListTile(

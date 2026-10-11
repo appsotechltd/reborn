@@ -142,6 +142,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /v1/users/{handle}", s.profile)
 	mux.HandleFunc("GET /v1/users/{handle}/favorites", s.profileFavorites)
 	mux.HandleFunc("GET /v1/users/{handle}/followers", s.profileFollowers)
+	mux.HandleFunc("GET /v1/authors", s.authors)
 	mux.HandleFunc("GET /v1/authors/{name}", s.author)
 
 	mux.HandleFunc("GET /v1/gifts/tiers", s.giftTiers)

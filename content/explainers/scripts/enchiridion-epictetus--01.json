@@ -1,23 +1,172 @@
 {
-  "card_id": "enchiridion-epictetus--01",
-  "scenes": [
-    { "type": "title", "narration": "Epictetus opens his little handbook with one simple split." },
-    { "type": "quote", "narration": "Of things, some are in our power, and others are not." },
-    { "type": "sort", "params": { "items": [
-        { "text": "Your opinions", "side": "in" }, { "text": "Your body", "side": "out" },
-        { "text": "Your intentions", "side": "in" }, { "text": "Your reputation", "side": "out" },
-        { "text": "Your choices", "side": "in" }, { "text": "Your job title", "side": "out" },
-        { "text": "How you respond", "side": "in" }, { "text": "Others' praise", "side": "out" } ] },
-      "narration": "Your opinions, intentions, desires and choices are yours to direct. Your body, possessions, reputation and job title can be influenced, but never fully controlled.", "min_seconds": 10 },
-    { "type": "statement", "params": { "lines": ["Most stress comes from", "treating the second circle", "like the first."], "emphasis": [2] },
-      "narration": "Most stress comes from treating the second group as if it belonged in the first: needing the promotion, the praise, the perfect outcome." },
-    { "type": "sort", "params": { "mode": "focus", "note": "Effort here. Hold the rest loosely.", "items": [
-        { "text": "Your opinions", "side": "in" }, { "text": "Your body", "side": "out" },
-        { "text": "Your intentions", "side": "in" }, { "text": "Your reputation", "side": "out" },
-        { "text": "Your choices", "side": "in" }, { "text": "Your job title", "side": "out" },
-        { "text": "How you respond", "side": "in" }, { "text": "Others' praise", "side": "out" } ] },
-      "narration": "So put your effort where your control is real, like preparation, honesty and how you respond, and hold everything else more loosely." },
-    { "type": "apply", "narration": "Take one worry and split it into two columns: what I control, and what I don't. Then act on one item from the first column today." },
-    { "type": "end", "narration": "", "min_seconds": 4 }
-  ]
+ "card_id": "enchiridion-epictetus--01",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A small worn leather handbook lying on a stone step in an ancient Greek courtyard, early morning light."
+    },
+    "beats": [
+     {
+      "word": "split",
+      "image": {
+       "prompt": "A forest path splitting in two directions in dark misty woods, seen from above."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Epictetus opens his little handbook with one simple split."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An open hand cupping a small candle flame in darkness, warm light on the palm."
+    },
+    "beats": [
+     {
+      "word": "others",
+      "image": {
+       "prompt": "Storm clouds rolling over a wild sea, seen from a high cliff."
+      },
+      "zoom": [
+       "out"
+      ]
+     }
+    ]
+   },
+   "narration": "Of things, some are in our power, and others are not."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Hands writing in a journal by lamplight on a dark wooden desk, close up."
+    },
+    "beats": [
+     {
+      "word": "body",
+      "image": {
+       "prompt": "A lone runner silhouetted on a ridge at dawn."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "reputation",
+      "image": {
+       "prompt": "A crowd of blurred faces in a dim hall, all turned towards the camera, shallow focus."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "controlled",
+      "image": {
+       "prompt": "A kite pulling hard against its string in strong wind under a grey sky."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Your opinions, intentions, desires and choices are yours to direct. Your body, possessions, reputation and job title can be influenced, but never fully controlled.",
+   "min_seconds": 10
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A man in a suit at a desk late at night with his head in his hands, face hidden, city lights outside."
+    },
+    "beats": [
+     {
+      "word": "praise",
+      "image": {
+       "prompt": "An empty theatre stage under a single hard spotlight, rows of empty seats."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "perfect",
+      "image": {
+       "prompt": "A cracked white porcelain cup on a dark table, side light."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Most stress comes from treating the second group as if it belonged in the first: needing the promotion, the praise, the perfect outcome."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A craftsman's hands sanding a piece of wood at a workbench, sawdust in the light."
+    },
+    "lift": true,
+    "beats": [
+     {
+      "word": "honesty",
+      "image": {
+       "prompt": "Two people talking quietly across a kitchen table in warm evening light, faces out of frame."
+      },
+      "zoom": [
+       null
+      ]
+     },
+     {
+      "word": "loosely",
+      "image": {
+       "prompt": "An open hand letting sand slip through the fingers into the wind at sunset."
+      },
+      "zoom": [
+       "out"
+      ]
+     }
+    ]
+   },
+   "narration": "So put your effort where your control is real, like preparation, honesty and how you respond, and hold everything else more loosely."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A notebook page divided by a single pencil line down the middle, blank, on a wooden desk in lamplight."
+    },
+    "beats": [
+     {
+      "word": "today",
+      "image": {
+       "prompt": "Morning light through a window onto a pair of boots by an open door."
+      },
+      "zoom": [
+       null
+      ]
+     }
+    ]
+   },
+   "narration": "Take one worry and split it into two columns: what I control, and what I don't. Then act on one item from the first column today."
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
 }

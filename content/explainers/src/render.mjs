@@ -7,9 +7,12 @@
 //   node src/render.mjs --voice george          narrate in an approved voice (src/voices.mjs); "none" renders silent
 //   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora, swarm, depth)
 //   node src/render.mjs --sample samples/seneca-photo.json   render a style sample to out/samples/
+//   ... --image-provider openai|ideogram|imagen   force one image provider (default: picked per image)
+//   ... --regenerate-images                       pay for new images instead of reusing the saved ones
 //
-// A script can set "voice" too; --voice wins. Videos never show captions on screen (they hide
-// the picture); the spoken words go to a .vtt file next to each video instead.
+// A script can set "voice" too; --voice wins. Videos have no captions (they hide the picture),
+// on screen or as a caption track. Each render writes the .mp4 and a .jpg poster; upload both with
+// `reborn media-upload content/explainers/out explainers`.
 // Env: CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
 import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -19,7 +22,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { chromium } from "playwright-core";
 import { ROOT, loadCard, listScripts } from "./library.mjs";
 import { narrator, narrate } from "./narration.mjs";
-import { buildTimeline, toVtt } from "./timeline.mjs";
+import { buildTimeline } from "./timeline.mjs";
 import { resolveImages } from "./images.mjs";
 
 const SCRIPTS = path.join(ROOT, "scripts");
@@ -33,6 +36,8 @@ function args() {
     if (a[i] === "--voice") opt.voice = a[++i];
     else if (a[i] === "--stills") opt.stills = true;
     else if (a[i] === "--theme") opt.theme = a[++i];
+    else if (a[i] === "--image-provider") opt.imageProviderName = a[++i];
+    else if (a[i] === "--regenerate-images") opt.regenerateImages = true;
     else if (a[i] === "--sample") opt.sample = a[++i];
     else opt.ids.push(a[i]);
   }
@@ -84,19 +89,20 @@ async function addScore(timeline, voiceFile, outFile, base) {
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
-  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme });
+  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme,
+    captionMax: script.captionMax, score: script.score });
   return entry && { ...entry, script: `scripts/${cardId}.json` };
 }
 
 /**
- * Renders scenes for a card to `${opt.base}.mp4` (+ .jpg poster and a .vtt of the narration).
+ * Renders scenes for a card to `${opt.base}.mp4` and its `.jpg` poster.
  * Also used by the film pipeline to render its end card.
  */
 export async function renderScenes(browser, card, scenes, opt) {
   const cardId = opt.label || card.id;
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
-  await resolveImages(scenes, opt.imageProvider !== undefined ? { provider: opt.imageProvider } : {});
+  await resolveImages(scenes, { provider: opt.imageProvider, providerName: opt.imageProviderName, regenerate: opt.regenerateImages });
   const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
@@ -149,13 +155,12 @@ export async function renderScenes(browser, card, scenes, opt) {
   await page.evaluate((x) => window.__seek(x), Math.min(timeline.scenes[0].duration - 0.6, 3.2));
   await page.screenshot({ path: `${base}.jpg`, type: "jpeg", quality: 85, scale: "css" });
   await page.close();
-  await writeFile(`${base}.vtt`, toVtt(timeline));
+  for (const ext of ["mp4", "jpg"]) if (!existsSync(`${base}.${ext}`)) throw new Error(`${cardId}: ${base}.${ext} was not written`);
   console.log(`\r${cardId}: ${timeline.duration.toFixed(1)}s, ${frames} frames in ${((Date.now() - started) / 1000).toFixed(0)}s${provider ? `, narrated (${provider.name})` : ", silent"}`);
 
   return {
     video: `${path.basename(base)}.mp4`,
     poster: `${path.basename(base)}.jpg`,
-    captions: `${path.basename(base)}.vtt`,
     duration_s: Math.round(timeline.duration * 10) / 10,
     width: 720,
     height: 1280,

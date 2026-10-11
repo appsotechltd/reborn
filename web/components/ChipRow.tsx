@@ -5,12 +5,13 @@ import { useCallback, useEffect, useRef, useState, type ReactNode } from "react"
 /**
  * A row of chips that scrolls sideways when it doesn't fit, with a fade on each edge
  * that has more chips beyond it, so it's clear the row scrolls. Rows that fit (or wrap,
- * on wider screens) show no fade.
+ * on wider screens) show no fade. `trailing` sits after the row, outside the scroll, always in view.
  */
 export function ChipRow({
   label,
   className = "",
   scrollClassName = "",
+  trailing,
   children,
   ...rest
 }: {
@@ -19,6 +20,8 @@ export function ChipRow({
   className?: string;
   /** Classes for the scrolling row itself (flex, gap, padding, overflow). */
   scrollClassName?: string;
+  /** A control after the row that doesn't scroll with it. */
+  trailing?: ReactNode;
   children: ReactNode;
 } & { [data: `data-${string}`]: string | boolean | undefined }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,8 +48,17 @@ export function ChipRow({
     };
   }, [update]);
 
+  const endFade = (
+    <span
+      aria-hidden="true"
+      className={`pointer-events-none absolute inset-y-0 w-10 bg-linear-to-l from-bg to-transparent transition-opacity duration-150 ${
+        trailing ? "right-full" : "right-0"
+      } ${edges.end ? "opacity-100" : "opacity-0"}`}
+    />
+  );
+
   return (
-    <div className={`relative ${className}`} {...rest}>
+    <div className={`relative ${trailing ? "flex items-center" : ""} ${className}`} {...rest}>
       <div
         ref={ref}
         role="group"
@@ -54,7 +66,7 @@ export function ChipRow({
         onScroll={update}
         data-fade-start={edges.start || undefined}
         data-fade-end={edges.end || undefined}
-        className={scrollClassName}
+        className={`${trailing ? "min-w-0 flex-1" : ""} ${scrollClassName}`}
       >
         {children}
       </div>
@@ -64,12 +76,14 @@ export function ChipRow({
           edges.start ? "opacity-100" : "opacity-0"
         }`}
       />
-      <span
-        aria-hidden="true"
-        className={`pointer-events-none absolute inset-y-0 right-0 w-10 bg-linear-to-l from-bg to-transparent transition-opacity duration-150 ${
-          edges.end ? "opacity-100" : "opacity-0"
-        }`}
-      />
+      {trailing ? (
+        <div className="relative shrink-0">
+          {endFade}
+          {trailing}
+        </div>
+      ) : (
+        endFade
+      )}
     </div>
   );
 }

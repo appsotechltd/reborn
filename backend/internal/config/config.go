@@ -51,6 +51,7 @@ type Config struct {
 	MediaBaseURL string // public URL of the bucket (custom domain or r2.dev); "/media" locally
 	MediaDir     string // local fallback folder for development
 	ExplainerDir string // folder holding the explainers' manifest.json
+	CardAudioDir string // folder holding the card recordings' manifest.json
 }
 
 // R2Enabled reports whether every R2 setting is present.
@@ -103,6 +104,7 @@ func Load() Config {
 		MediaBaseURL: os.Getenv("MEDIA_BASE_URL"),
 		MediaDir:     env("MEDIA_DIR", "media"),
 		ExplainerDir: env("EXPLAINER_DIR", "../content/explainers/out"),
+		CardAudioDir: env("CARD_AUDIO_DIR", "../content/audio/out"),
 	}
 }
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CardList } from "@/components/CardPreview";
 import { AuthorLinks } from "@/components/CardView";
+import { CardsBrowser } from "@/components/CardsBrowser";
 import { SourceFollowButton } from "@/components/FollowButton";
 import { SourceCircles } from "@/components/SourceCircles";
 import { JsonLd } from "@/components/JsonLd";
@@ -107,14 +107,14 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
         ) : null}
       </header>
 
-      <section aria-labelledby="cards-title" className="mt-12">
-        <h2 id="cards-title" className="font-serif text-2xl font-semibold">
-          {cards.length} {cards.length === 1 ? "idea" : "ideas"} from this {source.kind}
-        </h2>
-        <div className="mt-4">
-          <CardList cards={cards} />
-        </div>
-      </section>
+      <div className="mt-12">
+        <CardsBrowser
+          cards={cards}
+          queue={`source:${source.id}`}
+          listenLabel={`Listen to this ${isBook ? "book" : source.kind}`}
+          context={`from this ${source.kind}`}
+        />
+      </div>
 
       <SourceCircles sourceId={source.id} title={source.title} />
     </div>

@@ -1,0 +1,222 @@
+import 'dart:async';
+import 'dart:io';
+
+import 'package:audio_session/audio_session.dart';
+import 'package:flutter/foundation.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:path_provider/path_provider.dart';
+
+import 'listen_audio.dart';
+
+/// The chime played between cards.
+const kListenChimeAsset = 'assets/audio/chime.mp3';
+
+/// How many cached recordings to keep on the device.
+const kListenCacheFiles = 40;
+
+/// Listen mode's player, on just_audio. On iOS and Android each recording is
+/// cached to a file as it streams (and the next few are downloaded ahead), so
+/// a short loss of signal doesn't stop playback; on the web the browser's
+/// own cache is all there is.
+class JustAudioListenAudio implements ListenAudio {
+  JustAudioListenAudio();
+
+  // Interruptions (calls, unplugged headphones) go through Listen mode so
+  // its state stays right; see [interruptions].
+  final _player = AudioPlayer(handleInterruptions: false);
+  AudioPlayer? _chime;
+  final _completed = StreamController<void>.broadcast();
+  final _interruptions = StreamController<bool>.broadcast();
+  final _subs = <StreamSubscription<Object?>>[];
+  bool _sessionReady = false;
+
+  Future<void> _ensureSession() async {
+    if (_sessionReady) return;
+    _sessionReady = true;
+    _subs.add(
+      _player.processingStateStream.listen((s) {
+        if (s == ProcessingState.completed) _completed.add(null);
+      }),
+    );
+    try {
+      final session = await AudioSession.instance;
+      await session.configure(const AudioSessionConfiguration.speech());
+      _subs
+        ..add(
+          session.becomingNoisyEventStream.listen(
+            (_) => _interruptions.add(false),
+          ),
+        )
+        ..add(
+          session.interruptionEventStream.listen((e) {
+            if (e.type == AudioInterruptionType.duck) return;
+            if (e.begin) {
+              _interruptions.add(false);
+            } else if (e.type == AudioInterruptionType.pause) {
+              _interruptions.add(true);
+            }
+          }),
+        );
+    } catch (_) {
+      // Plays without a configured session.
+    }
+  }
+
+  @override
+  Future<Duration?> play(String url, {double speed = 1}) async {
+    await _ensureSession();
+    final uri = Uri.parse(url);
+    final duration = await _player.setAudioSource(await _source(uri));
+    await _player.setSpeed(speed);
+    unawaited(_player.play());
+    return duration;
+  }
+
+  @override
+  Future<void> pause() => _player.pause();
+
+  @override
+  Future<void> resume() async {
+    unawaited(_player.play());
+  }
+
+  @override
+  Future<void> seek(Duration position) => _player.seek(position);
+
+  @override
+  Future<void> setSpeed(double speed) => _player.setSpeed(speed);
+
+  @override
+  Future<void> stop() => _player.stop();
+
+  @override
+  Duration get position => _player.position;
+
+  @override
+  Stream<Duration> get positionStream => _player.positionStream;
+
+  @override
+  Stream<void> get completed => _completed.stream;
+
+  @override
+  Stream<bool> get interruptions => _interruptions.stream;
+
+  @override
+  Future<void> playChime() async {
+    try {
+      final chime = _chime ??= AudioPlayer();
+      await chime.setAsset(kListenChimeAsset);
+      await chime.setVolume(0.6);
+      unawaited(chime.play());
+      await chime.processingStateStream
+          .firstWhere((s) => s == ProcessingState.completed)
+          .timeout(const Duration(seconds: 3));
+      await chime.stop();
+    } catch (_) {
+      // No chime is better than no next card.
+    }
+  }
+
+  // ---- Caching (iOS and Android) ----
+
+  static Future<Directory>? _dir;
+  static final _downloading = <String>{};
+
+  static Future<Directory> _cacheDir() => _dir ??= () async {
+    final tmp = await getTemporaryDirectory();
+    final dir = Directory('${tmp.path}/listen_audio');
+    await dir.create(recursive: true);
+    return dir;
+  }();
+
+  /// A stable file name for a URL (32-bit FNV-1a of the URL).
+  static String _name(Uri uri) {
+    var h = 0x811c9dc5;
+    for (final c in uri.toString().codeUnits) {
+      h = ((h ^ c) * 0x01000193) & 0xffffffff;
+    }
+    return '${h.toRadixString(16).padLeft(8, '0')}.mp3';
+  }
+
+  Future<AudioSource> _source(Uri uri) async {
+    if (kIsWeb) return AudioSource.uri(uri);
+    try {
+      final file = File('${(await _cacheDir()).path}/${_name(uri)}');
+      if (await file.exists()) return AudioSource.file(file.path);
+      // Experimental in just_audio, but the documented way to cache while
+      // streaming; falls back to plain streaming below if it throws.
+      // ignore: experimental_member_use
+      return LockCachingAudioSource(uri, cacheFile: file);
+    } catch (_) {
+      return AudioSource.uri(uri);
+    }
+  }
+
+  @override
+  Future<void> prefetch(List<String> urls) async {
+    if (kIsWeb) return;
+    try {
+      final dir = await _cacheDir();
+      for (final url in urls) {
+        final uri = Uri.parse(url);
+        final file = File('${dir.path}/${_name(uri)}');
+        if (await file.exists() || !_downloading.add(file.path)) continue;
+        unawaited(
+          _download(uri, file).whenComplete(() {
+            _downloading.remove(file.path);
+          }),
+        );
+      }
+      unawaited(_prune(dir));
+    } catch (_) {
+      // Best effort.
+    }
+  }
+
+  static Future<void> _download(Uri uri, File file) async {
+    // Not "<file>.part": that's where just_audio streams to.
+    final part = File('${file.path}.prefetch');
+    final client = HttpClient();
+    try {
+      final response = await (await client.getUrl(uri)).close();
+      if (response.statusCode != 200) return;
+      await response.pipe(part.openWrite());
+      if (!await file.exists()) await part.rename(file.path);
+    } catch (_) {
+      // Played from the network instead.
+    } finally {
+      client.close();
+      if (await part.exists()) await part.delete().catchError((_) => part);
+    }
+  }
+
+  /// Keeps the newest [kListenCacheFiles] recordings.
+  static Future<void> _prune(Directory dir) async {
+    try {
+      final files = await dir
+          .list()
+          .where((e) => e is File && e.path.endsWith('.mp3'))
+          .cast<File>()
+          .toList();
+      if (files.length <= kListenCacheFiles) return;
+      final dated = [for (final f in files) (f, await f.lastModified())];
+      dated.sort((a, b) => b.$2.compareTo(a.$2));
+      for (final (f, _) in dated.skip(kListenCacheFiles)) {
+        await f.delete();
+      }
+    } catch (_) {
+      // Best effort.
+    }
+  }
+
+  @override
+  Future<void> dispose() async {
+    for (final s in _subs) {
+      await s.cancel();
+    }
+    await _completed.close();
+    await _interruptions.close();
+    await _chime?.dispose();
+    await _player.dispose();
+  }
+}

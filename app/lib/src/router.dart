@@ -17,6 +17,8 @@ import 'features/contribute/my_contributions_screen.dart';
 import 'features/daily/daily_screen.dart';
 import 'features/discover/discover_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/library/library_screen.dart';
+import 'features/listen/listen_ui.dart';
 import 'features/moderation/moderation_screen.dart';
 import 'features/notifications/notifications_screen.dart';
 import 'features/onboarding/topic_picker_screen.dart';
@@ -129,6 +131,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             : TvCardScreen(cardId: s.pathParameters['id']!),
       ),
       GoRoute(path: '/daily', builder: (_, _) => const DailyScreen()),
+      GoRoute(path: '/listen', builder: (_, _) => const NowListeningScreen()),
       GoRoute(
         path: '/cards/:id',
         builder: (_, s) => CardScreen(
@@ -164,6 +167,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/sources/:id',
         builder: (_, s) => SourceScreen(sourceId: s.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/library',
+        builder: (_, s) => LibraryScreen(
+          initialTab: s.uri.queryParameters['tab'] == 'authors' ? 1 : 0,
+        ),
       ),
       GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
       GoRoute(

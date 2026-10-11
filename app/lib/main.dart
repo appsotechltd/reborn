@@ -8,6 +8,8 @@ import 'src/app.dart';
 import 'src/data/providers.dart';
 import 'src/features/ai/topup_service.dart';
 import 'src/features/gifts/gift_service.dart';
+import 'src/features/listen/audio_service_session.dart';
+import 'src/features/listen/listen_audio.dart';
 import 'src/features/notifications/push_service.dart';
 import 'src/features/premium/premium_service.dart';
 import 'src/tv/tv_mode.dart';
@@ -17,12 +19,16 @@ Future<void> main() async {
   _registerFontLicenses();
   final prefs = await SharedPreferences.getInstance();
   final tv = await detectTv();
+  // Listen mode's background playback and lock-screen controls.
+  final listenSession = await AudioServiceListenSession.start();
   final container = ProviderContainer(
     // Errors are shown with a "Try again" button instead of silent retries.
     retry: (_, _) => null,
     overrides: [
       sharedPreferencesProvider.overrideWithValue(prefs),
       tvDetectedProvider.overrideWithValue(tv),
+      if (listenSession != null)
+        listenMediaSessionProvider.overrideWithValue(listenSession),
     ],
   );
   // On iOS/Android, finish gifts that were paid for but didn't reach the

@@ -135,10 +135,13 @@ func (s *Store) ProfileByHandle(ctx context.Context, handle, viewerID string) (U
 	return p, notFound(err)
 }
 
-// AuthorPage is an author with their sources.
+// AuthorPage is an author with their sources and every published card from them.
 type AuthorPage struct {
-	Name    string          `json:"name"`
-	Sources []SourceSummary `json:"sources"`
+	Name       string          `json:"name"`
+	Sources    []SourceSummary `json:"sources"`
+	Cards      []Card          `json:"cards"`
+	CardCount  int             `json:"card_count"`
+	VideoCount int             `json:"video_count"`
 	FollowState
 }
 
@@ -152,9 +155,11 @@ func (s *Store) Author(ctx context.Context, name, viewerID string) (AuthorPage, 
 	if err != nil {
 		return a, err
 	}
+	videos := videoCounts()
 	a.Sources, err = pgx.CollectRows(rows, func(r pgx.CollectableRow) (SourceSummary, error) {
 		var x SourceSummary
 		err := r.Scan(&x.ID, &x.Title, &x.Authors, &x.Kind, &x.Licence, &x.Attribution, &x.Topics, &x.CardCount, &x.UpdatedAt)
+		x.VideoCount = videos[x.ID]
 		return x, err
 	})
 	if err != nil {
@@ -163,6 +168,55 @@ func (s *Store) Author(ctx context.Context, name, viewerID string) (AuthorPage, 
 	if len(a.Sources) == 0 {
 		return a, ErrNotFound
 	}
+	for _, src := range a.Sources {
+		a.CardCount += src.CardCount
+		a.VideoCount += src.VideoCount
+	}
+	cardRows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`WHERE $1 = ANY(s.authors) AND c.status = 'published'
+		ORDER BY lower(s.title), c.id`, name)
+	if err != nil {
+		return a, err
+	}
+	if a.Cards, err = collectCards(cardRows); err != nil {
+		return a, err
+	}
 	a.FollowState, err = s.FollowStateOf(ctx, "author", name, viewerID)
 	return a, err
+}
+
+// AuthorSummary is an author in the authors list.
+type AuthorSummary struct {
+	Name       string   `json:"name"`
+	Sources    int      `json:"sources"`
+	CardCount  int      `json:"card_count"`
+	VideoCount int      `json:"video_count"`
+	Topics     []string `json:"topics"`
+	Followers  int      `json:"followers"`
+}
+
+// Authors lists everyone with published cards, optionally only those with cards
+// in topic or whose name contains q, ordered by name.
+func (s *Store) Authors(ctx context.Context, topic, q string, offset, limit int) ([]AuthorSummary, error) {
+	rows, err := s.DB.Query(ctx, `SELECT a.name, count(DISTINCT s.id), count(c.id), array_agg(DISTINCT c.topic ORDER BY c.topic),
+			(SELECT count(*) FROM follows f WHERE f.kind = 'author' AND f.target = a.name),
+			array_agg(DISTINCT s.id)
+		FROM sources s CROSS JOIN LATERAL unnest(s.authors) AS a(name)
+		JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		WHERE $4 = '' OR strpos(lower(a.name), lower($4)) > 0
+		GROUP BY a.name
+		HAVING $1 = '' OR bool_or(c.topic = $1)
+		ORDER BY lower(a.name) OFFSET $2 LIMIT $3`, topic, offset, limit, q)
+	if err != nil {
+		return nil, err
+	}
+	videos := videoCounts()
+	return pgx.CollectRows(rows, func(r pgx.CollectableRow) (AuthorSummary, error) {
+		var x AuthorSummary
+		var sources []string
+		err := r.Scan(&x.Name, &x.Sources, &x.CardCount, &x.Topics, &x.Followers, &sources)
+		for _, id := range sources {
+			x.VideoCount += videos[id]
+		}
+		return x, err
+	})
 }

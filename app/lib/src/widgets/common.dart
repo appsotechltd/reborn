@@ -342,6 +342,10 @@ class ProfileMenuButton extends ConsumerWidget {
           child: _MenuRow(Icons.auto_awesome_outlined, 'Reborn AI'),
         ),
         const PopupMenuItem(
+          value: '/library',
+          child: _MenuRow(Icons.local_library_outlined, 'Library'),
+        ),
+        const PopupMenuItem(
           value: '/premium',
           child: _MenuRow(Icons.workspace_premium_outlined, 'Premium'),
         ),

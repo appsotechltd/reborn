@@ -210,6 +210,39 @@ class ApiClient {
     _map(await _send('GET', '/v1/sources/${Uri.encodeComponent(id)}')),
   );
 
+  /// The library's books (GET /v1/sources), ordered by title. [q] matches
+  /// the title or an author's name.
+  Future<SourceListPage> sources({
+    String? topic,
+    String? q,
+    String? cursor,
+    int limit = 50,
+  }) async => SourceListPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '/v1/sources',
+        query: {'topic': topic, 'q': q, 'cursor': cursor, 'limit': '$limit'},
+      ),
+    ),
+  );
+
+  /// Everyone with published cards (GET /v1/authors), ordered by name.
+  Future<AuthorListPage> authors({
+    String? topic,
+    String? q,
+    String? cursor,
+    int limit = 50,
+  }) async => AuthorListPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '/v1/authors',
+        query: {'topic': topic, 'q': q, 'cursor': cursor, 'limit': '$limit'},
+      ),
+    ),
+  );
+
   Future<List<IdeaCard>> search(
     String q, {
     String? topic,

@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
-import '../../data/speaker.dart';
+import '../listen/listen_controller.dart';
 import '../../layout/adaptive.dart';
 import '../post/share.dart';
 import '../stashes/stash_picker.dart';
@@ -316,47 +316,48 @@ class _CardActions extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final speaker = ref.watch(speakerProvider);
-    return ListenableBuilder(
-      listenable: speaker,
-      builder: (context, _) {
-        final speaking = speaker.speakingId == card.id;
-        return Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            speaking
-                ? FilledButton.tonalIcon(
-                    onPressed: speaker.stop,
-                    icon: const Icon(Icons.stop),
-                    label: const Text('Stop'),
-                  )
-                : OutlinedButton.icon(
-                    onPressed: () => speaker.speak(card.id, card.spokenText),
-                    icon: const Icon(Icons.headphones_outlined),
-                    label: const Text('Listen'),
-                  ),
-            OutlinedButton.icon(
-              onPressed: () => showStashPicker(context, ref, card),
-              icon: const Icon(Icons.bookmark_add_outlined),
-              label: const Text('Stash'),
-            ),
-            if (showShare)
-              Builder(
-                builder: (context) => OutlinedButton.icon(
-                  onPressed: () => sharePost(
-                    context,
-                    ref,
-                    Post.fromCard(card),
-                    countLocally: false,
-                  ),
-                  icon: const Icon(Icons.ios_share),
-                  label: const Text('Share'),
-                ),
+    // Listen plays this card's recording, or reads it with the device
+    // voice when it has none (see ListenController.playCard).
+    final playing = ref.watch(
+      listenProvider.select(
+        (s) => s.active && s.playing && s.current?.card.id == card.id,
+      ),
+    );
+    final listen = ref.read(listenProvider.notifier);
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        playing
+            ? FilledButton.tonalIcon(
+                onPressed: listen.stop,
+                icon: const Icon(Icons.stop),
+                label: const Text('Stop'),
+              )
+            : OutlinedButton.icon(
+                onPressed: () => listen.playCard(card),
+                icon: const Icon(Icons.headphones_outlined),
+                label: const Text('Listen'),
               ),
-          ],
-        );
-      },
+        OutlinedButton.icon(
+          onPressed: () => showStashPicker(context, ref, card),
+          icon: const Icon(Icons.bookmark_add_outlined),
+          label: const Text('Stash'),
+        ),
+        if (showShare)
+          Builder(
+            builder: (context) => OutlinedButton.icon(
+              onPressed: () => sharePost(
+                context,
+                ref,
+                Post.fromCard(card),
+                countLocally: false,
+              ),
+              icon: const Icon(Icons.ios_share),
+              label: const Text('Share'),
+            ),
+          ),
+      ],
     );
   }
 }
