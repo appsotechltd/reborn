@@ -69,12 +69,10 @@ func (s *Server) markSeen(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "bad_request", "post_ids must list 1-100 posts")
 		return
 	}
-	n, err := s.Store.MarkSeen(r.Context(), userID(r), in.PostIDs, s.Now())
-	if err != nil {
+	if _, err := s.Store.MarkSeen(r.Context(), userID(r), in.PostIDs, s.Now()); err != nil {
 		s.fail(w, r, err, "posts")
 		return
 	}
-	s.recordActivity(r.Context(), userID(r), n)
 	w.WriteHeader(http.StatusNoContent)
 }
 

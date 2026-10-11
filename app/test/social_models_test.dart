@@ -73,7 +73,7 @@ void main() {
       expect(t('favorite', 'Bob'), 'Bob favourited this');
       expect(
         t('topic', 'Mindfulness & Philosophy'),
-        'Mindfulness & Philosophy',
+        'In Mindfulness & Philosophy, one of your topics',
       );
       expect(t('new', ''), 'New on Reborn');
     });

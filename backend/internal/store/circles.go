@@ -27,6 +27,9 @@ const MaxCircleMembers = 50
 // ErrFull means a circle has no room.
 var ErrFull = errors.New("circle is full")
 
+// ErrWrongBook means an attached idea is not from the circle's book.
+var ErrWrongBook = errors.New("idea is from another book")
+
 const circleCols = `ci.id::text, ci.name, ci.description, ci.created_at,
 	s.id, s.title, s.authors, s.kind, s.url, s.licence, s.licence_url, s.attribution,
 	o.id::text, o.handle, o.display_name,
@@ -189,7 +192,7 @@ func (s *Store) AddCircleMessage(ctx context.Context, userID, id, body, postID s
 			return CircleMessage{}, nil, err
 		}
 		if !ok {
-			return CircleMessage{}, nil, ErrNotFound
+			return CircleMessage{}, nil, ErrWrongBook
 		}
 	}
 	rows, err := s.DB.Query(ctx, `WITH cm AS (

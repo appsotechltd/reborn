@@ -62,4 +62,22 @@ void main() {
     t.dispose();
     expect(batches.last, ['c']);
   });
+
+  testWidgets('staying on screen counts as read; scrolling past does not', (
+    tester,
+  ) async {
+    final reads = <String>[];
+    final t = SeenTracker(onFlush: batches.add, onRead: reads.add);
+    t.update('a', 1);
+    t.update('b', 1);
+    await tester.pump(const Duration(seconds: 2));
+    t.update('b', 0); // scrolled past after being seen
+    await tester.pump(const Duration(seconds: 7));
+    expect(reads, ['a']);
+    expect(t.isSeen('b'), isTrue);
+    t.update('a', 1);
+    await tester.pump(const Duration(seconds: 9));
+    expect(reads, ['a']); // once per post
+    t.dispose();
+  });
 }

@@ -750,7 +750,7 @@ class PostReason {
     'source' => 'From $label',
     'author' => 'Because you follow $label',
     'favorite' => '$label favourited this',
-    'topic' => label,
+    'topic' => 'In $label, one of your topics',
     _ => 'New on Reborn',
   };
 }

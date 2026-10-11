@@ -55,7 +55,7 @@ export function reasonText(reason: PostReason | null | undefined): string | null
     case "favorite":
       return reason.label ? `${reason.label} favourited this` : null;
     case "topic":
-      return reason.label || null; // already the topic's display name
+      return reason.label ? `In ${reason.label}, one of your topics` : null;
     case "new":
       return "New on Reborn";
     default:

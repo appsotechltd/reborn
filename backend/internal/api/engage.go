@@ -443,6 +443,10 @@ func (s *Server) addCircleMessage(w http.ResponseWriter, r *http.Request) {
 	}
 	id := r.PathValue("id")
 	m, members, err := s.Store.AddCircleMessage(r.Context(), userID(r), id, body, in.PostID)
+	if errors.Is(err, store.ErrWrongBook) {
+		writeError(w, http.StatusBadRequest, "wrong_book", "you can only attach ideas from this circle's book")
+		return
+	}
 	if err != nil {
 		s.fail(w, r, err, "circle or post")
 		return
