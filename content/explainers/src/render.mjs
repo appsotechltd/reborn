@@ -10,8 +10,9 @@
 //   ... --image-provider openai|ideogram|imagen   force one image provider (default: picked per image)
 //   ... --regenerate-images                       pay for new images instead of reusing the saved ones
 //
-// A script can set "voice" too; --voice wins. Videos never show captions on screen (they hide
-// the picture); the spoken words go to a .vtt file next to each video instead.
+// A script can set "voice" too; --voice wins. Videos have no captions (they hide the picture),
+// on screen or as a caption track. Each render writes the .mp4 and a .jpg poster; upload both with
+// `reborn media-upload content/explainers/out explainers`.
 // Env: CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
 import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -21,7 +22,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { chromium } from "playwright-core";
 import { ROOT, loadCard, listScripts } from "./library.mjs";
 import { narrator, narrate } from "./narration.mjs";
-import { buildTimeline, toVtt } from "./timeline.mjs";
+import { buildTimeline } from "./timeline.mjs";
 import { resolveImages } from "./images.mjs";
 
 const SCRIPTS = path.join(ROOT, "scripts");
@@ -93,7 +94,7 @@ async function renderCard(browser, cardId, opt) {
 }
 
 /**
- * Renders scenes for a card to `${opt.base}.mp4` (+ .jpg poster and a .vtt of the narration).
+ * Renders scenes for a card to `${opt.base}.mp4` and its `.jpg` poster.
  * Also used by the film pipeline to render its end card.
  */
 export async function renderScenes(browser, card, scenes, opt) {
@@ -153,13 +154,12 @@ export async function renderScenes(browser, card, scenes, opt) {
   await page.evaluate((x) => window.__seek(x), Math.min(timeline.scenes[0].duration - 0.6, 3.2));
   await page.screenshot({ path: `${base}.jpg`, type: "jpeg", quality: 85, scale: "css" });
   await page.close();
-  await writeFile(`${base}.vtt`, toVtt(timeline));
+  for (const ext of ["mp4", "jpg"]) if (!existsSync(`${base}.${ext}`)) throw new Error(`${cardId}: ${base}.${ext} was not written`);
   console.log(`\r${cardId}: ${timeline.duration.toFixed(1)}s, ${frames} frames in ${((Date.now() - started) / 1000).toFixed(0)}s${provider ? `, narrated (${provider.name})` : ", silent"}`);
 
   return {
     video: `${path.basename(base)}.mp4`,
     poster: `${path.basename(base)}.jpg`,
-    captions: `${path.basename(base)}.vtt`,
     duration_s: Math.round(timeline.duration * 10) / 10,
     width: 720,
     height: 1280,

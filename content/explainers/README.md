@@ -14,9 +14,9 @@ Two kinds:
 Every video credits its source on screen the whole time, ends on a card with the full credit
 and licence, and health cards keep "General information, not medical advice" on screen plus
 the full disclaimer at the end. Illustrations are drawn from scratch: no book covers or
-copyrighted imagery. Videos never show captions on screen, because they hide the picture; the
-narration is written to a `.vtt` file next to each video, which players can show when a viewer
-turns captions on.
+copyrighted imagery. Videos have no captions, on screen or as a caption track, because they
+hide the picture. Each render writes the video and a `.jpg` poster (the title frame); upload both
+to the media bucket with `reborn media-upload content/explainers/out explainers`.
 
 ## Setup
 
@@ -46,7 +46,7 @@ an optional voice-over line. Card text, credit, licence and the health note come
 
 ```sh
 npm run stills -- aesops-fables--07   # a few PNG frames per scene in .cache/stills (seconds)
-npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster + .vtt of the narration, updates out/manifest.json
+npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster, updates out/manifest.json
 npm run render                        # every script
 npm test
 ```
@@ -138,7 +138,7 @@ node src/images.mjs "A dark stone wall at dusk" --text "Life is long enough" --o
    `--provider animatic` renders placeholder clips so pacing can be checked.
 3. **Render.** `FILM_PROVIDER=veo GEMINI_API_KEY=...` or `FILM_PROVIDER=runway RUNWAYML_API_SECRET=...`,
    then `npm run film:render -- <card-id>`. Each shot is generated once and cached; clips are
-   cut to length, the credit and health note are burned in (captions go to a `.vtt` file), narration is laid over, and
+   cut to length, the credit and health note are burned in, narration is laid over, and
    the film ends on the same end card as the animated videos. Output: `out/<card-id>.film.mp4`.
 4. **Publish.** Add `--publish` to make the film the card's explainer in `out/manifest.json`.
 
