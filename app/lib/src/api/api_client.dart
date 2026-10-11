@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+import 'ai_models.dart';
 import 'models.dart';
 
 /// Base URL of the Reborn API, from `--dart-define=API_BASE_URL=...`.
@@ -92,6 +93,7 @@ class ApiClient {
     String path, {
     Map<String, String?>? query,
     Object? body,
+    Duration? timeout,
   }) async {
     final req = http.Request(method, _uri(path, query));
     req.headers['Accept'] = 'application/json';
@@ -106,7 +108,7 @@ class ApiClient {
     http.Response res;
     try {
       res = await http.Response.fromStream(
-        await _http.send(req).timeout(timeout),
+        await _http.send(req).timeout(timeout ?? this.timeout),
       );
     } on TimeoutException {
       throw const ApiException.network('The request timed out');
@@ -811,6 +813,114 @@ class ApiClient {
             'POST',
             '/v1/agent/chat',
             body: {'messages': messages.map((m) => m.toJson()).toList()},
+          ),
+        ),
+      );
+
+  // ---- Reborn AI ----
+
+  /// Replies can take a while: the model may search, draw a chart or make a picture.
+  static const aiTimeout = Duration(minutes: 2);
+
+  Future<AIStatus> aiStatus() async =>
+      AIStatus.fromJson(_map(await _send('GET', '/v1/ai')));
+
+  Future<AITurn> aiChat(String message, {String? conversationId}) async =>
+      AITurn.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '/v1/ai/chat',
+            body: {'message': message, 'conversation_id': ?conversationId},
+            timeout: aiTimeout,
+          ),
+        ),
+      );
+
+  /// Sends a recorded voice message; the server transcribes and answers it.
+  Future<AITurn> aiVoice(
+    List<int> audio,
+    String filename, {
+    String? conversationId,
+  }) async {
+    final req = http.MultipartRequest('POST', _uri('/v1/ai/voice'));
+    req.headers['Accept'] = 'application/json';
+    final token = _token();
+    if (token != null && token.isNotEmpty) {
+      req.headers['Authorization'] = 'Bearer $token';
+    }
+    if (conversationId != null) req.fields['conversation_id'] = conversationId;
+    req.files.add(
+      http.MultipartFile.fromBytes('audio', audio, filename: filename),
+    );
+    http.Response res;
+    try {
+      res = await http.Response.fromStream(
+        await _http.send(req).timeout(aiTimeout),
+      );
+    } on TimeoutException {
+      throw const ApiException.network('The request timed out');
+    } catch (e) {
+      throw const ApiException.network();
+    }
+    if (res.statusCode >= 200 && res.statusCode < 300) {
+      return AITurn.fromJson(_map(jsonDecode(utf8.decode(res.bodyBytes))));
+    }
+    throw _parseError(res);
+  }
+
+  Future<AISpeech> aiSpeech(String messageId) async => AISpeech.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '/v1/ai/messages/${Uri.encodeComponent(messageId)}/speech',
+        timeout: aiTimeout,
+      ),
+    ),
+  );
+
+  Future<List<AIConversation>> aiConversations() async =>
+      (_map(await _send('GET', '/v1/ai/conversations'))['conversations']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(AIConversation.fromJson)
+          .toList();
+
+  Future<List<AIMessage>> aiConversation(String id) async =>
+      (_map(
+                    await _send(
+                      'GET',
+                      '/v1/ai/conversations/${Uri.encodeComponent(id)}',
+                    ),
+                  )['messages']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(AIMessage.fromJson)
+          .toList();
+
+  Future<void> deleteAIConversation(String id) =>
+      _send('DELETE', '/v1/ai/conversations/${Uri.encodeComponent(id)}');
+
+  Future<AITopUp> topUpApple(String signedTransaction) async =>
+      AITopUp.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '/v1/ai/topups/apple',
+            body: {'signed_transaction': signedTransaction},
+          ),
+        ),
+      );
+
+  Future<AITopUp> topUpGoogle(String productId, String purchaseToken) async =>
+      AITopUp.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '/v1/ai/topups/google',
+            body: {'product_id': productId, 'purchase_token': purchaseToken},
           ),
         ),
       );

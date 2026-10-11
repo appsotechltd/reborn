@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!-- Android TV: installable on TVs (leanback) without requiring them,
          and no touchscreen needed (the remote's D-pad drives the app). -->
     <uses-feature android:name="android.software.leanback" android:required="false"/>

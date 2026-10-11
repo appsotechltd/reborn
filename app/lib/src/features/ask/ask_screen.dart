@@ -58,6 +58,11 @@ class _AskScreenState extends ConsumerState<AskScreen> {
       appBar: AppBar(
         title: const Text('Ask'),
         actions: [
+          IconButton(
+            tooltip: 'Reborn AI',
+            icon: const Icon(Icons.auto_awesome_outlined),
+            onPressed: () => context.push('/ai'),
+          ),
           if (signedIn && state.entries.isNotEmpty)
             IconButton(
               tooltip: 'New conversation',

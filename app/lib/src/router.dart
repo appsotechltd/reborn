@@ -5,6 +5,7 @@ import 'api/models.dart';
 import 'data/providers.dart';
 import 'features/ask/ask_screen.dart';
 import 'features/admin/admin_screen.dart';
+import 'features/ai/ai_screen.dart';
 import 'features/auth/auth_screen.dart';
 import 'features/auth/forgot_password_screen.dart';
 import 'features/card/card_screen.dart';
@@ -179,6 +180,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, s) => PublicStashScreen(stashId: s.pathParameters['id']!),
       ),
       GoRoute(path: '/premium', builder: (_, _) => const PremiumScreen()),
+      GoRoute(path: '/ai', builder: (_, _) => const AIScreen()),
       GoRoute(path: '/invite', builder: (_, _) => const InviteScreen()),
       GoRoute(path: '/admin', builder: (_, _) => const AdminScreen()),
       GoRoute(path: '/signin', builder: (_, _) => const AuthScreen()),

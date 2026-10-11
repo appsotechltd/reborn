@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'src/app.dart';
 import 'src/data/providers.dart';
+import 'src/features/ai/topup_service.dart';
 import 'src/features/gifts/gift_service.dart';
 import 'src/features/notifications/push_service.dart';
 import 'src/features/premium/premium_service.dart';
@@ -28,6 +29,7 @@ Future<void> main() async {
   // server last time (no-op on web).
   container.read(giftServiceProvider).start();
   container.read(premiumServiceProvider).start();
+  container.read(topUpServiceProvider).start();
   // Push is optional: without Firebase config this does nothing. Signed in,
   // it asks for permission and registers the device; signing out removes it.
   final push = container.read(pushServiceProvider);
