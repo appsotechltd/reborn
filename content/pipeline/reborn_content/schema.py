@@ -175,6 +175,8 @@ def validate_card(r: Report, where: str, card: object, src: dict) -> None:
     quote = _str(r, where, card, "quote", 300, required=False)
     if quote and src.get("licence") == "original-summary":
         r.error(where, "quote not allowed for original-summary sources")
+    if quote and any(m in quote for m in '"“”'):
+        r.warn(where, "quote contains double quote marks; the apps wrap quotes in them, so use single marks for speech inside")
     if quote and body and quote.strip() in body:
         r.warn(where, "body contains the quote verbatim; the body should be in our own words")
     health = card.get("health", False)
