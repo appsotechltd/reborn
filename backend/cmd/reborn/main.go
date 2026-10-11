@@ -36,6 +36,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/objstore"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
 	"github.com/appsotechltd/reborn/backend/internal/push"
+	"github.com/appsotechltd/reborn/backend/internal/rebornai"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -168,14 +169,16 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	store.SetExplainers(set)
 	slog.Info("explainer videos", "cards", len(set), "manifest", cfg.ExplainerDir)
 	srv := &api.Server{
-		Store:       st,
-		Cache:       c,
-		Tokens:      auth.NewTokens(cfg.JWTSecret),
-		Embedder:    e,
-		AgentHourly: cfg.AgentHourly,
-		CORSOrigins: cfg.CORSOrigins,
-		WebBaseURL:  strings.TrimRight(cfg.WebBaseURL, "/"),
-		Media:       media,
+		Store:          st,
+		Cache:          c,
+		Tokens:         auth.NewTokens(cfg.JWTSecret),
+		Embedder:       e,
+		AgentHourly:    cfg.AgentHourly,
+		CORSOrigins:    cfg.CORSOrigins,
+		AIMonthlyUnits: cfg.AIMonthlyUnits,
+		AIHourly:       cfg.AIHourly,
+		WebBaseURL:     strings.TrimRight(cfg.WebBaseURL, "/"),
+		Media:          media,
 	}
 	if srv.Mailer, err = mail.FromURL(cfg.SMTPURL, cfg.MailFrom); err != nil {
 		return err
@@ -190,6 +193,16 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		srv.Agent = agent.New(cfg.AnthropicAPIKey, cfg.AgentModel, st, e)
 	} else {
 		slog.Warn("ANTHROPIC_API_KEY is not set; the AI guide is disabled")
+	}
+	if cfg.OpenAIAPIKey != "" {
+		models := rebornai.DefaultModels
+		models.Chat, models.Effort, models.Voice = cfg.AIChatModel, cfg.AIEffort, cfg.AIVoice
+		if models.Effort == "none" {
+			models.Effort = ""
+		}
+		srv.AI = &rebornai.Assistant{AI: &rebornai.OpenAI{APIKey: cfg.OpenAIAPIKey}, Lib: st, Embedder: e, Media: media, Models: models}
+	} else {
+		slog.Warn("OPENAI_API_KEY is not set; Reborn AI is disabled")
 	}
 	go srv.RunDailyPushes(ctx, 5*time.Minute)
 	hs := &http.Server{Addr: cfg.Addr, Handler: srv.Handler(), ReadHeaderTimeout: 10 * time.Second}

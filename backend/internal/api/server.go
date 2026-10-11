@@ -18,6 +18,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/objstore"
 	"github.com/appsotechltd/reborn/backend/internal/payments"
 	"github.com/appsotechltd/reborn/backend/internal/push"
+	"github.com/appsotechltd/reborn/backend/internal/rebornai"
 	"github.com/appsotechltd/reborn/backend/internal/store"
 )
 
@@ -46,6 +47,11 @@ type Server struct {
 	StripePrices    map[string]string // premium plan id -> Stripe price id
 	GoogleRTDNToken string            // shared secret in the Play notifications push URL
 	Push            push.Sender       // nil disables push notifications
+
+	// AI is Reborn AI, the premium assistant; nil when no OpenAI key is configured.
+	AI             *rebornai.Assistant
+	AIMonthlyUnits int // AI units premium includes each month
+	AIHourly       int // messages a member may send Reborn AI per hour
 
 	// Media stores videos, images and other files: R2 in production, a local
 	// folder in development, which the API then serves under /media/.
@@ -167,6 +173,19 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("POST /v1/moderation/comments/{id}/restore", s.moderator(s.moderateComment(false)))
 
 	mux.HandleFunc("POST /v1/agent/chat", s.authed(s.chat))
+
+	mux.HandleFunc("GET /v1/ai", s.aiStatus)
+	mux.HandleFunc("POST /v1/ai/chat", s.authed(s.aiChat))
+	mux.HandleFunc("POST /v1/ai/voice", s.authed(s.aiVoice))
+	mux.HandleFunc("POST /v1/ai/messages/{id}/speech", s.authed(s.aiSpeech))
+	mux.HandleFunc("GET /v1/ai/conversations", s.authed(s.aiConversations))
+	mux.HandleFunc("GET /v1/ai/conversations/{id}", s.authed(s.aiConversation))
+	mux.HandleFunc("DELETE /v1/ai/conversations/{id}", s.authed(s.deleteAIConversation))
+	mux.HandleFunc("GET /v1/ai/usage", s.authed(s.aiUsage))
+	mux.HandleFunc("POST /v1/ai/topups/checkout", s.authed(s.topUpCheckout))
+	mux.HandleFunc("GET /v1/ai/topups/{id}", s.authed(s.topUp))
+	mux.HandleFunc("POST /v1/ai/topups/apple", s.authed(s.topUpApple))
+	mux.HandleFunc("POST /v1/ai/topups/google", s.authed(s.topUpGoogle))
 
 	return s.recoverer(s.logger(s.cors(s.identify(mux))))
 }

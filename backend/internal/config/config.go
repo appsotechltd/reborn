@@ -16,6 +16,12 @@ type Config struct {
 	AnthropicAPIKey string
 	AgentModel      string
 	AgentHourly     int
+	OpenAIAPIKey    string // Reborn AI; also used by the content pipeline's image generation
+	AIChatModel     string
+	AIEffort        string // reasoning effort for AIChatModel; "none" for a non-reasoning model
+	AIVoice         string
+	AIMonthlyUnits  int
+	AIHourly        int
 	VoyageAPIKey    string
 	VoyageModel     string
 	CORSOrigins     string
@@ -61,6 +67,12 @@ func Load() Config {
 		AnthropicAPIKey: os.Getenv("ANTHROPIC_API_KEY"),
 		AgentModel:      env("AGENT_MODEL", "claude-opus-5-5"),
 		AgentHourly:     envInt("AGENT_HOURLY_LIMIT", 30),
+		OpenAIAPIKey:    os.Getenv("OPENAI_API_KEY"),
+		AIChatModel:     env("OPENAI_CHAT_MODEL", "gpt-5.4-mini"),
+		AIEffort:        env("OPENAI_REASONING_EFFORT", "low"),
+		AIVoice:         env("OPENAI_TTS_VOICE", "marin"),
+		AIMonthlyUnits:  envInt("AI_MONTHLY_UNITS", 250),
+		AIHourly:        envInt("AI_HOURLY_LIMIT", 60),
 		VoyageAPIKey:    os.Getenv("VOYAGE_API_KEY"),
 		VoyageModel:     env("VOYAGE_MODEL", "voyage-3.5"),
 		CORSOrigins:     env("CORS_ORIGINS", "*"),
