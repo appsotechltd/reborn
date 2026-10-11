@@ -36,6 +36,7 @@ import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
 import 'features/timeline/timeline_screen.dart';
+import 'tv/tv_card_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final router = GoRouter(
@@ -109,6 +110,20 @@ final routerProvider = Provider<GoRouter>((ref) {
         ],
       ),
       GoRoute(path: '/feed', builder: (_, _) => const HomeScreen()),
+      // The TV layout's idea page and full-screen video.
+      GoRoute(
+        path: '/tv/cards/:id',
+        builder: (_, s) => TvCardScreen(
+          cardId: s.pathParameters['id']!,
+          initial: s.extra is Post ? s.extra as Post : null,
+        ),
+      ),
+      GoRoute(
+        path: '/tv/video/:id',
+        builder: (_, s) => s.extra is IdeaCard
+            ? TvVideoScreen(card: s.extra as IdeaCard)
+            : TvCardScreen(cardId: s.pathParameters['id']!),
+      ),
       GoRoute(path: '/daily', builder: (_, _) => const DailyScreen()),
       GoRoute(
         path: '/cards/:id',

@@ -4,8 +4,10 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
+import 'stash_detail_screen.dart';
 
 /// Asks for a stash name (create or rename). Returns null if cancelled.
 Future<String?> askStashName(
@@ -38,8 +40,11 @@ Future<String?> askStashName(
   ).then((v) => (v == null || v.isEmpty) ? null : v);
 }
 
+/// Your stashes. On expanded windows the open stash shows on the right.
 class StashesScreen extends ConsumerWidget {
   const StashesScreen({super.key});
+
+  static const pane = 'stashes';
 
   Future<void> _create(BuildContext context, WidgetRef ref) async {
     final name = await askStashName(context, title: 'New stash');
@@ -58,6 +63,22 @@ class StashesScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
+    final selected = ref.watch(paneSelectionProvider(pane));
+    final id = signedIn && selected is String ? selected : null;
+    return ListDetail(
+      list: _list(context, ref, signedIn),
+      selectedId: id,
+      detail: () => StashDetailScreen(stashId: id!),
+      empty: EmptyDetail(
+        icon: Icons.bookmarks_outlined,
+        text: signedIn
+            ? 'Pick a stash to see its ideas here.'
+            : 'Your stashes show up here once you sign in.',
+      ),
+    );
+  }
+
+  Widget _list(BuildContext context, WidgetRef ref, bool signedIn) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stashes'),
@@ -121,7 +142,11 @@ class _StashTile extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final twoPane = WindowSize.of(context).isTwoPane;
+    final pane = paneSelectionProvider(StashesScreen.pane);
     return ListTile(
+      key: ValueKey('stash-${stash.id}'),
+      selected: twoPane && ref.watch(pane) == stash.id,
       leading: CircleAvatar(
         backgroundColor: Candlelight.of(context).inset,
         foregroundColor: Candlelight.of(context).amberText,
@@ -133,8 +158,19 @@ class _StashTile extends ConsumerWidget {
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
       ),
-      onTap: () => context.push('/stashes/${stash.id}'),
-      trailing: offline ? null : StashMenu(stash: stash),
+      onTap: twoPane
+          ? () => ref.read(pane.notifier).select(stash.id)
+          : () => context.push('/stashes/${stash.id}'),
+      trailing: offline
+          ? null
+          : StashMenu(
+              stash: stash,
+              onDeleted: () {
+                if (ref.read(pane) == stash.id) {
+                  ref.read(pane.notifier).select(null);
+                }
+              },
+            ),
     );
   }
 }

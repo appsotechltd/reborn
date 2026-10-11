@@ -22,6 +22,7 @@ class IdeaCardView extends ConsumerWidget {
     this.label,
     this.showActions = true,
     this.showShare = true,
+    this.showVideo = true,
     this.padding = const EdgeInsets.fromLTRB(20, 16, 20, 24),
   });
 
@@ -33,6 +34,11 @@ class IdeaCardView extends ConsumerWidget {
 
   /// False when the surrounding post view has its own Share button.
   final bool showShare;
+
+  /// False on the TV idea page, which shows the title beside the card and
+  /// plays the video full screen from its own button: neither video nor
+  /// title is repeated here.
+  final bool showVideo;
   final EdgeInsets padding;
 
   String? get _disclaimer =>
@@ -64,14 +70,14 @@ class IdeaCardView extends ConsumerWidget {
           ),
           const SizedBox(height: 10),
           // A video post carries its title on the film itself.
-          if (card.explainer != null) ...[
+          if (card.explainer != null && showVideo) ...[
             ExplainerPlayer(
               explainer: card.explainer!,
               title: card.title,
               autoplayId: card.id,
             ),
             const SizedBox(height: 16),
-          ] else ...[
+          ] else if (showVideo) ...[
             Text(card.title, style: theme.textTheme.headlineSmall),
             const SizedBox(height: 12),
           ],

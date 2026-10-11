@@ -240,9 +240,19 @@ Future<void> openExternal(BuildContext context, String url) async {
 
 /// Compact list entry for a card; opens the card screen.
 class CardTile extends ConsumerWidget {
-  const CardTile({super.key, required this.card, this.trailing});
+  const CardTile({
+    super.key,
+    required this.card,
+    this.trailing,
+    this.onTap,
+    this.selected = false,
+  });
   final IdeaCard card;
   final Widget? trailing;
+
+  /// Instead of opening the card screen (e.g. to show it in a side pane).
+  final VoidCallback? onTap;
+  final bool selected;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -260,8 +270,13 @@ class CardTile extends ConsumerWidget {
         ),
       ),
       trailing: trailing,
-      onTap: () =>
-          context.push('/cards/${Uri.encodeComponent(card.id)}', extra: card),
+      selected: selected,
+      onTap:
+          onTap ??
+          () => context.push(
+            '/cards/${Uri.encodeComponent(card.id)}',
+            extra: card,
+          ),
     );
   }
 }

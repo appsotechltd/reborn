@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
 import 'stashes_screen.dart';
 
@@ -22,7 +23,15 @@ class StashDetailScreen extends ConsumerWidget {
             StashMenu(
               stash: f.value.stash,
               onDeleted: () {
-                if (context.mounted) context.pop();
+                if (!context.mounted) return;
+                // In the side pane there's no page to leave: clear it.
+                if (Navigator.of(context).canPop()) {
+                  context.pop();
+                } else {
+                  ref
+                      .read(paneSelectionProvider(StashesScreen.pane).notifier)
+                      .select(null);
+                }
               },
             ),
         ],

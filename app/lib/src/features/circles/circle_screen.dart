@@ -1,4 +1,5 @@
 import '../../theme.dart';
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -8,7 +9,9 @@ import 'package:go_router/go_router.dart';
 import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
+import 'circles_screen.dart';
 
 const kCircleFull = 'This circle is full (50 members).';
 
@@ -172,7 +175,16 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
         if (mounted) setState(() => _circle = c);
       } on ApiException catch (e) {
         // The circle was deleted when its last member left.
-        if (e.statusCode == 404 && mounted) context.pop();
+        if (e.statusCode == 404 && mounted) {
+          if (Navigator.of(context).canPop()) {
+            context.pop();
+          } else {
+            // In the side pane of Book circles: clear the pane.
+            ref
+                .read(paneSelectionProvider(CirclesScreen.pane).notifier)
+                .select(null);
+          }
+        }
       }
     } catch (e) {
       if (mounted) _snack(errorMessage(e));

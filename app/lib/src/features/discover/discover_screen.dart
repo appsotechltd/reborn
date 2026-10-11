@@ -5,7 +5,9 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/repository.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
+import '../card/card_screen.dart';
 import '../notifications/notifications_screen.dart';
 
 /// Selected topic for Trending on Discover; null means all topics.
@@ -21,12 +23,29 @@ final trendingTopicProvider = NotifierProvider<TrendingTopic, String?>(
 );
 
 /// The Discover tab: search, trending (by topic), new posts, popular books
-/// and authors, and book circles.
+/// and authors, and book circles. On expanded windows an idea picked from
+/// the list opens on the right.
 class DiscoverScreen extends ConsumerWidget {
   const DiscoverScreen({super.key});
 
+  static const pane = 'discover';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(paneSelectionProvider(pane));
+    final card = selected is IdeaCard ? selected : null;
+    return ListDetail(
+      list: _list(context, ref),
+      selectedId: card?.id,
+      detail: () => CardScreen(cardId: card!.id, initial: card),
+      empty: const EmptyDetail(
+        icon: Icons.auto_stories_outlined,
+        text: 'Pick an idea to read it here.',
+      ),
+    );
+  }
+
+  Widget _list(BuildContext context, WidgetRef ref) {
     final discover = ref.watch(discoverProvider);
     final topic = ref.watch(trendingTopicProvider);
     return Scaffold(
@@ -151,8 +170,17 @@ class DiscoverScreen extends ConsumerWidget {
 
 /// A circle in a list; opens the circle screen.
 class CircleTile extends StatelessWidget {
-  const CircleTile({super.key, required this.circle});
+  const CircleTile({
+    super.key,
+    required this.circle,
+    this.onTap,
+    this.selected = false,
+  });
   final Circle circle;
+
+  /// Instead of opening the circle screen (e.g. to show it in a side pane).
+  final VoidCallback? onTap;
+  final bool selected;
 
   @override
   Widget build(BuildContext context) => ReadingWidth(
@@ -165,7 +193,10 @@ class CircleTile extends StatelessWidget {
         '${circle.members == 1 ? 'member' : 'members'}',
       ),
       trailing: circle.isMember ? const Icon(Icons.check, size: 18) : null,
-      onTap: () => context.push('/circles/${Uri.encodeComponent(circle.id)}'),
+      selected: selected,
+      onTap:
+          onTap ??
+          () => context.push('/circles/${Uri.encodeComponent(circle.id)}'),
     ),
   );
 }
@@ -178,9 +209,19 @@ class _PostTile extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final s = post.stats;
     final activity = s.totalReactions + s.comments + s.favorites;
+    final twoPane = WindowSize.of(context).isTwoPane;
+    final selected = ref.watch(paneSelectionProvider(DiscoverScreen.pane));
     return ReadingWidth(
       child: CardTile(
+        key: ValueKey('discover-post-${post.id}'),
         card: post.card,
+        selected:
+            twoPane && selected is IdeaCard && selected.id == post.card.id,
+        onTap: twoPane
+            ? () => ref
+                  .read(paneSelectionProvider(DiscoverScreen.pane).notifier)
+                  .select(post.card)
+            : null,
         trailing: activity == 0
             ? null
             : Row(

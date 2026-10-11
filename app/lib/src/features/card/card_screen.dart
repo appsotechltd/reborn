@@ -3,8 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
 import '../post/post_view.dart';
+
+/// The widest the card page gets on tablets and up.
+const kCardPageWidth = 720.0;
 
 /// Shows one card as a post (reactions, favourite, comments, share, gift).
 /// When [initial] is given (navigated from a list) the card is shown right
@@ -66,7 +70,27 @@ class _CardScreenState extends ConsumerState<CardScreen> {
     );
   }
 
-  Widget _scroll(Post post) => SingleChildScrollView(
-    child: ReadingWidth(child: PostView(post: post)),
-  );
+  /// Phones: the post edge to edge. Tablets and up: a card centred at
+  /// most [kCardPageWidth] wide, with margins around it.
+  Widget _scroll(Post post) {
+    if (WindowSize.of(context).isCompact) {
+      return SingleChildScrollView(
+        child: ReadingWidth(child: PostView(post: post)),
+      );
+    }
+    return SingleChildScrollView(
+      padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
+      child: ReadingWidth(
+        maxWidth: kCardPageWidth,
+        child: Card(
+          key: const ValueKey('card-page-card'),
+          margin: EdgeInsets.zero,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: PostView(post: post),
+          ),
+        ),
+      ),
+    );
+  }
 }

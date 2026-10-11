@@ -9,15 +9,20 @@ import 'src/data/providers.dart';
 import 'src/features/gifts/gift_service.dart';
 import 'src/features/notifications/push_service.dart';
 import 'src/features/premium/premium_service.dart';
+import 'src/tv/tv_mode.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   _registerFontLicenses();
   final prefs = await SharedPreferences.getInstance();
+  final tv = await detectTv();
   final container = ProviderContainer(
     // Errors are shown with a "Try again" button instead of silent retries.
     retry: (_, _) => null,
-    overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
+    overrides: [
+      sharedPreferencesProvider.overrideWithValue(prefs),
+      tvDetectedProvider.overrideWithValue(tv),
+    ],
   );
   // On iOS/Android, finish gifts that were paid for but didn't reach the
   // server last time (no-op on web).

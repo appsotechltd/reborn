@@ -438,55 +438,79 @@ class PostActionBar extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 4),
-          Row(
-            children: [
-              _CountButton(
-                key: const ValueKey('post-favorite'),
-                tooltip: post.favorited
-                    ? 'Remove from favourites'
-                    : 'Add to favourites',
-                icon: post.favorited ? Icons.favorite : Icons.favorite_border,
-                color: post.favorited ? Candlelight.of(context).react : null,
-                count: stats.favorites,
-                onPressed: () {
-                  if (!ensureSignedIn(context, ref)) return;
-                  _guard(context, () => store.toggleFavorite(post));
-                },
-              ),
-              _CountButton(
-                key: const ValueKey('post-comments'),
-                tooltip: 'Comments',
-                icon: Icons.mode_comment_outlined,
-                count: stats.comments,
-                onPressed: () => context.push(
-                  '/posts/${Uri.encodeComponent(post.id)}/comments',
-                  extra: post,
-                ),
-              ),
-              Builder(
-                builder: (context) => _CountButton(
-                  key: const ValueKey('post-share'),
-                  tooltip: 'Share',
-                  icon: Icons.ios_share,
-                  count: stats.shares,
-                  onPressed: () => sharePost(context, ref, post),
-                ),
-              ),
-              const Spacer(),
-              TextButton.icon(
-                key: const ValueKey('post-gift'),
-                onPressed: () {
-                  if (!ensureSignedIn(context, ref)) return;
-                  showGiftSheet(context, post);
-                },
-                icon: const Icon(Icons.volunteer_activism_outlined, size: 20),
-                label: Text(
-                  stats.gifts > 0
-                      ? 'Gift · ${compactCount(stats.gifts)}'
-                      : 'Gift',
-                ),
-              ),
-            ],
+          LayoutBuilder(
+            builder: (context, c) {
+              final narrow = c.maxWidth < 330;
+              void gift() {
+                if (!ensureSignedIn(context, ref)) return;
+                showGiftSheet(context, post);
+              }
+
+              return Row(
+                children: [
+                  _CountButton(
+                    key: const ValueKey('post-favorite'),
+                    tooltip: post.favorited
+                        ? 'Remove from favourites'
+                        : 'Add to favourites',
+                    icon: post.favorited
+                        ? Icons.favorite
+                        : Icons.favorite_border,
+                    color: post.favorited
+                        ? Candlelight.of(context).react
+                        : null,
+                    count: stats.favorites,
+                    onPressed: () {
+                      if (!ensureSignedIn(context, ref)) return;
+                      _guard(context, () => store.toggleFavorite(post));
+                    },
+                  ),
+                  _CountButton(
+                    key: const ValueKey('post-comments'),
+                    tooltip: 'Comments',
+                    icon: Icons.mode_comment_outlined,
+                    count: stats.comments,
+                    onPressed: () => context.push(
+                      '/posts/${Uri.encodeComponent(post.id)}/comments',
+                      extra: post,
+                    ),
+                  ),
+                  Builder(
+                    builder: (context) => _CountButton(
+                      key: const ValueKey('post-share'),
+                      tooltip: 'Share',
+                      icon: Icons.ios_share,
+                      count: stats.shares,
+                      onPressed: () => sharePost(context, ref, post),
+                    ),
+                  ),
+                  const Spacer(),
+                  // In a narrow column (the tablet grid) Gift is just its icon.
+                  if (narrow)
+                    _CountButton(
+                      key: const ValueKey('post-gift'),
+                      tooltip: 'Gift',
+                      icon: Icons.volunteer_activism_outlined,
+                      count: stats.gifts,
+                      onPressed: gift,
+                    )
+                  else
+                    TextButton.icon(
+                      key: const ValueKey('post-gift'),
+                      onPressed: gift,
+                      icon: const Icon(
+                        Icons.volunteer_activism_outlined,
+                        size: 20,
+                      ),
+                      label: Text(
+                        stats.gifts > 0
+                            ? 'Gift · ${compactCount(stats.gifts)}'
+                            : 'Gift',
+                      ),
+                    ),
+                ],
+              );
+            },
           ),
         ],
       ),
