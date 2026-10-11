@@ -7,8 +7,11 @@ import '../../widgets/common.dart';
 
 /// Sign in ([register] false) or create an account ([register] true).
 class AuthScreen extends ConsumerStatefulWidget {
-  const AuthScreen({super.key, this.register = false});
+  const AuthScreen({super.key, this.register = false, this.referralCode});
   final bool register;
+
+  /// Prefills the optional referral code (from an invite link).
+  final String? referralCode;
 
   @override
   ConsumerState<AuthScreen> createState() => _AuthScreenState();
@@ -19,6 +22,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   final _email = TextEditingController();
   final _password = TextEditingController();
   final _name = TextEditingController();
+  late final _referral = TextEditingController(text: widget.referralCode ?? '');
   bool _busy = false;
   bool _obscure = true;
   String? _error;
@@ -28,6 +32,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     _email.dispose();
     _password.dispose();
     _name.dispose();
+    _referral.dispose();
     super.dispose();
   }
 
@@ -44,6 +49,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
           _email.text.trim(),
           _password.text,
           _name.text.trim(),
+          referralCode: _referral.text.trim().toUpperCase(),
         );
       } else {
         await session.signIn(_email.text.trim(), _password.text);
@@ -142,6 +148,19 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       },
                       onFieldSubmitted: (_) => _submit(),
                     ),
+                    if (register) ...[
+                      const SizedBox(height: 12),
+                      TextFormField(
+                        key: const ValueKey('referral-field'),
+                        controller: _referral,
+                        textCapitalization: TextCapitalization.characters,
+                        autocorrect: false,
+                        decoration: const InputDecoration(
+                          labelText: 'Referral code (optional)',
+                          helperText: 'From a friend who invited you',
+                        ),
+                      ),
+                    ],
                     if (!register)
                       Align(
                         alignment: Alignment.centerRight,

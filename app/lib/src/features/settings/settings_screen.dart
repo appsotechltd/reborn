@@ -5,6 +5,8 @@ import 'package:go_router/go_router.dart';
 import '../../api/api_client.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../blocks/block_actions.dart';
+import 'reading_settings.dart';
 
 final _handlePattern = RegExp(r'^[a-z0-9_]{3,30}$');
 
@@ -182,7 +184,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                       ),
                       child: const Text('View your public profile'),
                     ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 24),
+                  const Divider(),
+                  const ReadingSettings(),
+                  const Divider(),
+                  const SizedBox(height: 8),
+                  Text('Blocked and muted', style: theme.textTheme.titleMedium),
+                  const BlockedList(),
+                  const SizedBox(height: 16),
                   const Divider(),
                   const SizedBox(height: 8),
                   Text(

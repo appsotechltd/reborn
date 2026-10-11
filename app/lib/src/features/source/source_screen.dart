@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../circles/circles_screen.dart';
 import '../social/follow_button.dart';
 
 const _licenceNames = {
@@ -44,6 +45,12 @@ class SourceScreen extends ConsumerWidget {
             ),
             for (final c in f.value.cards)
               ReadingWidth(child: CardTile(card: c)),
+            ReadingWidth(
+              child: SourceCircles(
+                sourceId: f.value.source.id,
+                sourceTitle: f.value.source.title,
+              ),
+            ),
             const SizedBox(height: 24),
           ],
         ),

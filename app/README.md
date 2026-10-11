@@ -2,8 +2,9 @@
 
 The Reborn client: one-minute idea cards from books, with a timeline, a daily
 idea, search, stashes, spaced review and quizzes, an "Ask" agent, community
-contributions, and a social layer (reactions, favourites, comments, shares,
-gifts and follows).
+contributions, a social layer (reactions, favourites, comments, shares,
+gifts and follows), notifications and push, streaks, blocking, Discover, public
+stashes, book circles, Premium, referrals and a moderator dashboard.
 It talks to the backend described in [`../docs/API.md`](../docs/API.md).
 
 The web app is built separately in Next.js. This project keeps its `web/`
@@ -31,6 +32,12 @@ flutter run -d emulator-5554 --dart-define=API_BASE_URL=http://10.0.2.2:8080
 flutter run -d ios --dart-define=API_BASE_URL=http://localhost:8080
 ```
 
+Push notifications use Firebase Cloud Messaging and are optional. Without
+`android/app/google-services.json` and `ios/Runner/GoogleService-Info.plist`
+(plus the Push Notifications capability and an APNs key in Firebase on iOS)
+the app runs normally and skips push quietly. Add those files from the
+Firebase console to turn push on.
+
 For local development, `android/app/src/main/AndroidManifest.xml` declares the
 `INTERNET` permission and `android:usesCleartextTraffic="true"` so the app can
 reach a plain `http://` backend. Use HTTPS and drop cleartext before a release
@@ -41,7 +48,7 @@ build.
 ```sh
 flutter analyze
 flutter test
-flutter build web     # compile check when no Android SDK is available
+flutter build web --release --no-web-resources-cdn   # compile check without an Android SDK
 flutter build apk --dart-define=API_BASE_URL=https://api.example.com
 ```
 
@@ -62,6 +69,7 @@ lib/
       repository.dart          network-first reads with offline fallback
       providers.dart           Riverpod providers, session (token) and topic prefs
       speaker.dart             flutter_tts wrapper for the Listen button
+      device_timezone.dart     the device's IANA timezone (flutter_timezone)
     widgets/common.dart        shared widgets (sign-in prompt, errors, card tile, menu)
     features/
       onboarding/  home/ (swipe feed)  daily/  card/  source/  search/
@@ -72,8 +80,17 @@ lib/
                    optimistic post store, native share
       comments/    comments screen with one level of replies
       social/      profiles by handle, authors, following, favourites
-      settings/    handle, bio, delete account
+      settings/    handle, bio, daily goal, timezone, push toggles, blocked
+                   list, delete account
       gifts/       gift sheet, in-app purchase store and server hand-off
+      notifications/  bell, inbox, optional Firebase push service
+      streak/      streak card (current streak, today vs goal, last 7 days)
+      blocks/      block/mute menu and the blocked list
+      discover/    Discover tab: trending by topic, new, books, authors, circles
+      circles/     circle list, create form, circle screen with messages
+      premium/     Premium screen, badge, subscription purchase service
+      referrals/   invite screen
+      admin/       moderator dashboard with a CustomPaint chart
 test/                          model, client, cache, Ask and widget tests
 ```
 
@@ -133,3 +150,52 @@ test/                          model, client, cache, Ask and widget tests
   that open the card. `503 agent_unavailable` and `429` show friendly messages,
   and the question is put back in the input box.
 - **Moderation** is in the profile menu for users with `role == "moderator"`.
+- **Notifications**: the bell on the timeline and Discover shows the unread
+  count from `GET /v1/notifications` (refreshed on pull, on app resume and when
+  a push arrives). Opening an item marks it read (`POST /v1/notifications/read`
+  with its id; "Mark all read" sends no body) and opens its circle, comments,
+  post or the actor's profile.
+- **Push** (iOS and Android only): when Firebase is configured, the app asks for
+  permission after sign-in, registers the FCM token with `POST /v1/devices`
+  (`platform` `ios` or `android`) and deletes it with `DELETE /v1/devices/{token}`
+  on sign-out. Tapping a push opens the screen for its `post_id`, `comment_id`,
+  `circle_id` and `kind`. Without Firebase config nothing is asked or sent.
+- **Streak**: a card on the timeline and profile shows the current streak,
+  today's ideas against the daily goal, and the last seven days
+  (`GET /v1/me/streak`). Settings has the daily goal, the timezone (the
+  device's IANA zone is sent at sign-up and can be applied later) and a switch
+  per push kind (`notify` on `PATCH /v1/me`).
+- **Block and mute** from a profile's menu or a comment's menu. Blocking asks
+  first. Settings lists blocked and muted people with Undo.
+- **Discover** (the fourth tab, which replaces Search; search is in its search
+  bar): trending posts with topic chips (`GET /v1/trending`), plus new posts,
+  popular books, popular authors and circles from `GET /v1/discover`.
+- **Public stashes**: a switch on each stash makes it public. Profiles have a
+  Stashes tab that opens the public stash screen (`/s/{id}`).
+- **Book circles**: a list of your circles and all circles (profile menu), a
+  circles section with a create form on each book's screen, and a circle
+  screen with the member list (`GET /v1/circles/{id}/members`, owner first),
+  join and leave. Messages refresh every 10 seconds while the screen is open; a
+  message can attach an idea from the book, which opens the post. You can
+  delete your own messages; circle owners and moderators can delete any.
+  `409 circle_full` says the circle is full.
+- **Premium**: plans, status and benefits from `GET /v1/premium`. On iOS and
+  Android the plans are auto-renewing subscriptions `reborn.premium.monthly`
+  and `reborn.premium.yearly` bought with `in_app_purchase`, with the user id as
+  `applicationUserName` (Apple's `appAccountToken`, Play's obfuscated account
+  id). iOS sends the StoreKit 2 JWS to `POST /v1/premium/apple`; Android sends
+  the product id and purchase token to `POST /v1/premium/google`. The purchase
+  is completed (finished/acknowledged) only after the server confirms it.
+  Restore purchases re-sends owned subscriptions; Manage subscription opens the
+  store's subscription page. Without a store, or when the provider is off, the
+  plans show "coming soon". Your own profile shows a Premium badge. The
+  subscription products must exist in App Store Connect and the Play Console.
+- **Referrals**: the invite screen shows your code, shares
+  `WEB_BASE_URL/join?ref=CODE` and counts invited and rewarded friends. Sign-up
+  has an optional referral code field, prefilled by `/join?ref=CODE` links.
+- **Dashboard** (moderators, in the profile menu): stat tiles, a 30-day chart
+  of active users and sign-ups drawn with CustomPaint, retention, engagement,
+  revenue, moderation queues and top posts from `GET /v1/admin/stats`.
+
+New dependencies for these features: `firebase_core`, `firebase_messaging`
+and `flutter_timezone`.

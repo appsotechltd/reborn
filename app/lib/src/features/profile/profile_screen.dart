@@ -5,6 +5,8 @@ import 'package:go_router/go_router.dart';
 import '../../api/api_client.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../premium/premium_screen.dart';
+import '../streak/streak_card.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
@@ -78,7 +80,14 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               children: [
                 ListTile(
                   leading: const Icon(Icons.badge_outlined),
-                  title: Text(user?.displayName ?? ''),
+                  title: Wrap(
+                    spacing: 8,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Text(user?.displayName ?? ''),
+                      if (user?.premium ?? false) const PremiumBadge(),
+                    ],
+                  ),
                   subtitle: Text(
                     [
                       if (user?.handle.isNotEmpty ?? false) '@${user!.handle}',
@@ -104,6 +113,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                       '/users/${Uri.encodeComponent(user!.handle)}',
                     ),
                   ),
+                const StreakCard(),
                 ListTile(
                   leading: const Icon(Icons.favorite_border),
                   title: const Text('Favourites'),
@@ -113,6 +123,25 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   leading: const Icon(Icons.people_outline),
                   title: const Text('Following'),
                   onTap: () => context.push('/following'),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.groups_outlined),
+                  title: const Text('Book circles'),
+                  onTap: () => context.push('/circles'),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.workspace_premium_outlined),
+                  title: const Text('Premium'),
+                  subtitle: Text(
+                    (user?.premium ?? false) ? "You're Premium" : 'See plans',
+                  ),
+                  onTap: () => context.push('/premium'),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.card_giftcard),
+                  title: const Text('Invite friends'),
+                  subtitle: const Text('You both get free Premium days'),
+                  onTap: () => context.push('/invite'),
                 ),
                 ListTile(
                   leading: const Icon(Icons.tune),
@@ -139,6 +168,12 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     leading: const Icon(Icons.gavel_outlined),
                     title: const Text('Moderation queue'),
                     onTap: () => context.push('/moderation'),
+                  ),
+                if (session.isModerator)
+                  ListTile(
+                    leading: const Icon(Icons.insights_outlined),
+                    title: const Text('Dashboard'),
+                    onTap: () => context.push('/admin'),
                   ),
                 const Divider(),
                 ListTile(

@@ -8,8 +8,11 @@ import '../../data/providers.dart';
 import '../../data/repository.dart';
 import '../../widgets/common.dart';
 import '../daily/daily_screen.dart';
+import '../notifications/notifications_controller.dart';
+import '../notifications/notifications_screen.dart';
 import '../post/post_store.dart';
 import '../post/post_view.dart';
+import '../streak/streak_card.dart';
 import 'seen_tracker.dart';
 import 'timeline_controller.dart';
 
@@ -92,6 +95,11 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   Future<void> _refresh() {
     _tracker.flush();
     ref.read(postStoreProvider.notifier).forget();
+    if (ref.read(sessionProvider).signedIn) {
+      ref
+        ..invalidate(streakProvider)
+        ..invalidate(notificationsProvider);
+    }
     return ref.refresh(timelineProvider.future);
   }
 
@@ -111,6 +119,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
             icon: const Icon(Icons.swipe_vertical_outlined),
             onPressed: () => context.push('/feed'),
           ),
+          const NotificationBell(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],
@@ -142,6 +151,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     _scheduleMeasure();
     final entries = <Widget Function()>[
       () => const ReadingWidth(child: DailyBanner()),
+      if (signedIn) () => const ReadingWidth(child: StreakCard()),
       if (!signedIn) () => const ReadingWidth(child: JoinPrompt()),
     ];
     final caughtUp = state.caughtUp;

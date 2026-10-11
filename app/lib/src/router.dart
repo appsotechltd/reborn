@@ -4,17 +4,24 @@ import 'package:go_router/go_router.dart';
 import 'api/models.dart';
 import 'data/providers.dart';
 import 'features/ask/ask_screen.dart';
+import 'features/admin/admin_screen.dart';
 import 'features/auth/auth_screen.dart';
 import 'features/auth/forgot_password_screen.dart';
 import 'features/card/card_screen.dart';
+import 'features/circles/circle_screen.dart';
+import 'features/circles/circles_screen.dart';
 import 'features/comments/comments_screen.dart';
 import 'features/contribute/contribute_screen.dart';
 import 'features/contribute/my_contributions_screen.dart';
 import 'features/daily/daily_screen.dart';
+import 'features/discover/discover_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/moderation/moderation_screen.dart';
+import 'features/notifications/notifications_screen.dart';
 import 'features/onboarding/topic_picker_screen.dart';
+import 'features/premium/premium_screen.dart';
 import 'features/profile/profile_screen.dart';
+import 'features/referrals/invite_screen.dart';
 import 'features/review/quiz_screen.dart';
 import 'features/review/review_screen.dart';
 import 'features/search/search_screen.dart';
@@ -25,6 +32,7 @@ import 'features/social/favorites_screen.dart';
 import 'features/social/following_screen.dart';
 import 'features/social/user_profile_screen.dart';
 import 'features/source/source_screen.dart';
+import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
 import 'features/timeline/timeline_screen.dart';
@@ -61,7 +69,10 @@ final routerProvider = Provider<GoRouter>((ref) {
           ),
           StatefulShellBranch(
             routes: [
-              GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
+              GoRoute(
+                path: '/discover',
+                builder: (_, _) => const DiscoverScreen(),
+              ),
             ],
           ),
           StatefulShellBranch(
@@ -135,10 +146,38 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/sources/:id',
         builder: (_, s) => SourceScreen(sourceId: s.pathParameters['id']!),
       ),
+      GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
+      GoRoute(
+        path: '/notifications',
+        builder: (_, _) => const NotificationsScreen(),
+      ),
+      GoRoute(path: '/circles', builder: (_, _) => const CirclesScreen()),
+      GoRoute(
+        path: '/circles/:id',
+        builder: (_, s) => CircleScreen(circleId: s.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/s/:id',
+        builder: (_, s) => PublicStashScreen(stashId: s.pathParameters['id']!),
+      ),
+      GoRoute(path: '/premium', builder: (_, _) => const PremiumScreen()),
+      GoRoute(path: '/invite', builder: (_, _) => const InviteScreen()),
+      GoRoute(path: '/admin', builder: (_, _) => const AdminScreen()),
       GoRoute(path: '/signin', builder: (_, _) => const AuthScreen()),
       GoRoute(
         path: '/register',
-        builder: (_, _) => const AuthScreen(register: true),
+        builder: (_, s) => AuthScreen(
+          register: true,
+          referralCode: s.uri.queryParameters['ref'],
+        ),
+      ),
+      // Invite links (WEB_BASE_URL/join?ref=CODE) opened in the app.
+      GoRoute(
+        path: '/join',
+        builder: (_, s) => AuthScreen(
+          register: true,
+          referralCode: s.uri.queryParameters['ref'],
+        ),
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfileScreen()),
       GoRoute(path: '/contribute', builder: (_, _) => const ContributeScreen()),

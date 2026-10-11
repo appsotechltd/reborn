@@ -6,9 +6,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:reborn/src/app.dart';
+import 'package:reborn/src/data/device_timezone.dart';
 import 'package:reborn/src/data/providers.dart';
 import 'package:reborn/src/data/speaker.dart';
 import 'package:reborn/src/features/gifts/gift_store.dart';
+import 'package:reborn/src/features/notifications/push_service.dart';
 import 'package:reborn/src/features/post/share.dart';
 import 'package:reborn/src/router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -99,6 +101,8 @@ Future<ProviderContainer> pumpApp(
   String? location,
   Sharer? sharer,
   GiftStore? giftStore,
+  PushMessaging? push,
+  String? timezone,
   Size size = const Size(800, 2000),
 }) async {
   tester.view.physicalSize = size;
@@ -121,6 +125,19 @@ Future<ProviderContainer> pumpApp(
     () =>
         (_) => {'posts': <Object>[], 'next_cursor': null},
   );
+  final defaults = <String, Object? Function(Call)>{
+    'GET /v1/notifications': (_) => {'notifications': <Object>[], 'unread': 0},
+    'GET /v1/me/streak': (_) => {
+      'current': 0,
+      'longest': 0,
+      'today': 0,
+      'goal': 3,
+      'last_days': <Object>[],
+    },
+    'GET /v1/me/blocks': (_) => {'blocks': <Object>[]},
+    'GET /v1/discover': (_) => <String, Object>{},
+  };
+  defaults.forEach((k, v) => server.routes.putIfAbsent(k, () => v));
   await tester.pumpWidget(
     ProviderScope(
       retry: (_, _) => null,
@@ -130,6 +147,8 @@ Future<ProviderContainer> pumpApp(
         speakerProvider.overrideWithValue(FakeSpeaker()),
         sharerProvider.overrideWithValue(sharer ?? FakeSharer()),
         giftStoreProvider.overrideWithValue(giftStore ?? const NoGiftStore()),
+        pushMessagingProvider.overrideWithValue(push),
+        deviceTimezoneProvider.overrideWithValue(() async => timezone),
       ],
       child: const RebornApp(),
     ),

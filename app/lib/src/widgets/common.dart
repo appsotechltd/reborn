@@ -312,7 +312,19 @@ class ProfileMenuButton extends ConsumerWidget {
             value: '/following',
             child: _MenuRow(Icons.people_outline, 'Following'),
           ),
+          const PopupMenuItem(
+            value: '/circles',
+            child: _MenuRow(Icons.groups_outlined, 'Book circles'),
+          ),
+          const PopupMenuItem(
+            value: '/invite',
+            child: _MenuRow(Icons.card_giftcard, 'Invite friends'),
+          ),
         ],
+        const PopupMenuItem(
+          value: '/premium',
+          child: _MenuRow(Icons.workspace_premium_outlined, 'Premium'),
+        ),
         const PopupMenuItem(
           value: '/topics',
           child: _MenuRow(Icons.tune, 'Your topics'),
@@ -330,6 +342,11 @@ class ProfileMenuButton extends ConsumerWidget {
           const PopupMenuItem(
             value: '/moderation',
             child: _MenuRow(Icons.gavel_outlined, 'Moderation'),
+          ),
+        if (session.isModerator)
+          const PopupMenuItem(
+            value: '/admin',
+            child: _MenuRow(Icons.insights_outlined, 'Dashboard'),
           ),
         if (session.signedIn)
           const PopupMenuItem(

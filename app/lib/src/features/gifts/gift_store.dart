@@ -40,7 +40,7 @@ class StorePurchase {
   final Object? raw;
 }
 
-/// In-app purchases of gift tiers (consumables).
+/// In-app purchases: gift tiers (consumables) and Premium (subscriptions).
 abstract class GiftStore {
   /// Null when this build has no store (web, desktop).
   GiftPlatform? get platform;
@@ -61,6 +61,17 @@ abstract class GiftStore {
 
   /// Re-delivers purchases that were paid for but never finished.
   Future<void> restoreUnfinished();
+
+  /// Starts a subscription purchase tied to [userId] (iOS appAccountToken,
+  /// Play obfuscatedAccountId); the result arrives on [purchases].
+  Future<bool> subscribe(String productId, {required String userId});
+
+  /// Completes a subscription purchase (iOS finish, Play acknowledge).
+  /// Call only after the server has accepted it.
+  Future<void> finishSubscription(StorePurchase purchase);
+
+  /// Asks the store to re-deliver owned purchases ("Restore purchases").
+  Future<void> restore();
 }
 
 /// Used where there is no store: gifts show as "coming soon".
@@ -81,6 +92,13 @@ class NoGiftStore implements GiftStore {
   Future<void> finish(StorePurchase purchase) async {}
   @override
   Future<void> restoreUnfinished() async {}
+  @override
+  Future<bool> subscribe(String productId, {required String userId}) async =>
+      false;
+  @override
+  Future<void> finishSubscription(StorePurchase purchase) async {}
+  @override
+  Future<void> restore() async {}
 }
 
 /// Apple / Google in-app purchases through the official `in_app_purchase`
@@ -177,6 +195,32 @@ class IapGiftStore implements GiftStore {
       }
     }
   }
+
+  @override
+  Future<bool> subscribe(String productId, {required String userId}) async {
+    if (!_products.containsKey(productId)) await prices({productId});
+    final product = _products[productId];
+    if (product == null) return false;
+    // applicationUserName becomes the StoreKit 2 appAccountToken on iOS and
+    // the obfuscatedAccountId on Play, so the server can match the owner.
+    return _iap.buyNonConsumable(
+      purchaseParam: PurchaseParam(
+        productDetails: product,
+        applicationUserName: userId,
+      ),
+    );
+  }
+
+  @override
+  Future<void> finishSubscription(StorePurchase purchase) async {
+    final d = purchase.raw;
+    if (d is PurchaseDetails && d.pendingCompletePurchase) {
+      await _iap.completePurchase(d);
+    }
+  }
+
+  @override
+  Future<void> restore() => _iap.restorePurchases();
 }
 
 /// The store for this build: App Store on iOS, Play on Android, none on web.

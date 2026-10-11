@@ -220,8 +220,10 @@ class ApiClient {
   Future<AuthResult> register(
     String email,
     String password,
-    String displayName,
-  ) async => AuthResult.fromJson(
+    String displayName, {
+    String? timezone,
+    String? referralCode,
+  }) async => AuthResult.fromJson(
     _map(
       await _send(
         'POST',
@@ -230,6 +232,9 @@ class ApiClient {
           'email': email,
           'password': password,
           'display_name': displayName,
+          if (timezone != null && timezone.isNotEmpty) 'timezone': timezone,
+          if (referralCode != null && referralCode.isNotEmpty)
+            'referral_code': referralCode,
         },
       ),
     ),
@@ -253,6 +258,9 @@ class ApiClient {
     String? handle,
     String? bio,
     List<String>? topics,
+    String? timezone,
+    int? dailyGoal,
+    Map<String, bool>? notify,
   }) async => User.fromJson(
     _map(
       await _send(
@@ -263,6 +271,9 @@ class ApiClient {
           'handle': ?handle,
           'bio': ?bio,
           'topics': ?topics,
+          'timezone': ?timezone,
+          'daily_goal': ?dailyGoal,
+          'notify': ?notify,
         },
       ),
     ),
@@ -433,6 +444,212 @@ class ApiClient {
     ),
   );
 
+  // ---- Notifications, streaks, referrals ----
+
+  Future<NotificationsPage> notifications({int limit = 50}) async =>
+      NotificationsPage.fromJson(
+        _map(
+          await _send('GET', '/v1/notifications', query: {'limit': '$limit'}),
+        ),
+      );
+
+  /// Marks [ids] read, or everything when [ids] is null.
+  Future<void> markNotificationsRead([List<String>? ids]) => _send(
+    'POST',
+    '/v1/notifications/read',
+    body: ids == null ? null : {'ids': ids},
+  );
+
+  Future<void> registerDevice(String platform, String token) => _send(
+    'POST',
+    '/v1/devices',
+    body: {'platform': platform, 'token': token},
+  );
+
+  Future<void> unregisterDevice(String token) =>
+      _send('DELETE', '/v1/devices/${Uri.encodeComponent(token)}');
+
+  Future<Streak> streak() async =>
+      Streak.fromJson(_map(await _send('GET', '/v1/me/streak')));
+
+  Future<Referrals> referrals() async =>
+      Referrals.fromJson(_map(await _send('GET', '/v1/me/referrals')));
+
+  // ---- Blocking ----
+
+  Future<List<BlockedUser>> blocks() async =>
+      (_map(await _send('GET', '/v1/me/blocks'))['blocks'] as List? ?? const [])
+          .whereType<Map<String, dynamic>>()
+          .map(BlockedUser.fromJson)
+          .toList();
+
+  /// [kind] is `block` or `mute`; null clears it.
+  Future<void> setBlock(String userId, String? kind) => kind == null
+      ? _send('DELETE', '/v1/blocks/${Uri.encodeComponent(userId)}')
+      : _send(
+          'PUT',
+          '/v1/blocks/${Uri.encodeComponent(userId)}',
+          body: {'kind': kind},
+        );
+
+  // ---- Discover ----
+
+  Future<DiscoverPage> discover() async =>
+      DiscoverPage.fromJson(_map(await _send('GET', '/v1/discover')));
+
+  Future<List<Post>> trending({
+    String? topic,
+    int days = 7,
+    int limit = 20,
+  }) async => PostPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '/v1/trending',
+        query: {'topic': topic, 'days': '$days', 'limit': '$limit'},
+      ),
+    ),
+  ).posts;
+
+  Future<List<Stash>> userStashes(String handle) async =>
+      (_map(
+                    await _send(
+                      'GET',
+                      '/v1/users/${Uri.encodeComponent(handle)}/stashes',
+                    ),
+                  )['stashes']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(Stash.fromJson)
+          .toList();
+
+  Future<PublicStash> publicStash(String id) async => PublicStash.fromJson(
+    _map(await _send('GET', '/v1/public/stashes/${Uri.encodeComponent(id)}')),
+  );
+
+  // ---- Circles ----
+
+  Future<List<Circle>> circles({String? source, bool mine = false}) async =>
+      parseCircles(
+        _map(
+          await _send(
+            'GET',
+            '/v1/circles',
+            query: {'source': source, 'mine': mine ? '1' : null},
+          ),
+        )['circles'],
+      );
+
+  Future<Circle> createCircle(
+    String sourceId,
+    String name, {
+    String? description,
+  }) async => Circle.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '/v1/circles',
+        body: {
+          'source_id': sourceId,
+          'name': name,
+          if (description != null && description.isNotEmpty)
+            'description': description,
+        },
+      ),
+    ),
+  );
+
+  String _circle(String id) => '/v1/circles/${Uri.encodeComponent(id)}';
+
+  Future<Circle> circle(String id) async =>
+      Circle.fromJson(_map(await _send('GET', _circle(id))));
+
+  Future<Circle> joinCircle(String id) async =>
+      Circle.fromJson(_map(await _send('POST', '${_circle(id)}/join')));
+
+  Future<void> leaveCircle(String id) => _send('POST', '${_circle(id)}/leave');
+
+  /// Members, owner first.
+  Future<List<CircleMember>> circleMembers(String id) async =>
+      (_map(await _send('GET', '${_circle(id)}/members'))['members'] as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(CircleMember.fromJson)
+          .toList();
+
+  Future<List<CircleMessage>> circleMessages(
+    String id, {
+    DateTime? before,
+    int limit = 50,
+  }) async =>
+      (_map(
+                    await _send(
+                      'GET',
+                      '${_circle(id)}/messages',
+                      query: {
+                        'before': before?.toUtc().toIso8601String(),
+                        'limit': '$limit',
+                      },
+                    ),
+                  )['messages']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(CircleMessage.fromJson)
+          .toList();
+
+  Future<CircleMessage> postCircleMessage(
+    String id,
+    String body, {
+    String? postId,
+  }) async => CircleMessage.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '${_circle(id)}/messages',
+        body: {'body': body, 'post_id': ?postId},
+      ),
+    ),
+  );
+
+  Future<void> deleteCircleMessage(String circleId, String messageId) =>
+      _send('DELETE', '${_circle(circleId)}/messages/$messageId');
+
+  // ---- Premium ----
+
+  Future<PremiumStatus> premium() async =>
+      PremiumStatus.fromJson(_map(await _send('GET', '/v1/premium')));
+
+  Future<PremiumStatus> premiumApple(String signedTransaction) async =>
+      PremiumStatus.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '/v1/premium/apple',
+            body: {'signed_transaction': signedTransaction},
+          ),
+        ),
+      );
+
+  Future<PremiumStatus> premiumGoogle(
+    String productId,
+    String purchaseToken,
+  ) async => PremiumStatus.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '/v1/premium/google',
+        body: {'product_id': productId, 'purchase_token': purchaseToken},
+      ),
+    ),
+  );
+
+  // ---- Moderator dashboard ----
+
+  Future<AdminStats> adminStats() async =>
+      AdminStats.fromJson(_map(await _send('GET', '/v1/admin/stats')));
+
   // ---- Stashes ----
 
   Future<List<Stash>> stashes() async {
@@ -443,16 +660,23 @@ class ApiClient {
         .toList();
   }
 
-  Future<Stash> createStash(String name, {String? description}) async =>
-      Stash.fromJson(
-        _map(
-          await _send(
-            'POST',
-            '/v1/stashes',
-            body: {'name': name, 'description': ?description},
-          ),
-        ),
-      );
+  Future<Stash> createStash(
+    String name, {
+    String? description,
+    bool? isPublic,
+  }) async => Stash.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '/v1/stashes',
+        body: {
+          'name': name,
+          'description': ?description,
+          'is_public': ?isPublic,
+        },
+      ),
+    ),
+  );
 
   Future<StashDetail> stash(String id) async =>
       StashDetail.fromJson(_map(await _send('GET', '/v1/stashes/$id')));
@@ -461,12 +685,17 @@ class ApiClient {
     String id, {
     String? name,
     String? description,
+    bool? isPublic,
   }) async => Stash.fromJson(
     _map(
       await _send(
         'PATCH',
         '/v1/stashes/$id',
-        body: {'name': ?name, 'description': ?description},
+        body: {
+          'name': ?name,
+          'description': ?description,
+          'is_public': ?isPublic,
+        },
       ),
     ),
   );

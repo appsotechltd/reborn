@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../blocks/block_actions.dart';
 import '../post/post_store.dart';
 import 'comments_controller.dart';
 
@@ -142,6 +143,16 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
     }
   }
 
+  Future<void> _block(Comment c, String kind) => changeBlock(
+    context,
+    ref,
+    userId: c.author.id,
+    name: c.author.displayName.isEmpty
+        ? '@${c.author.handle}'
+        : c.author.displayName,
+    kind: kind,
+  );
+
   @override
   Widget build(BuildContext context) {
     final comments = ref.watch(commentsProvider(widget.postId));
@@ -194,6 +205,8 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
                   onReply: () => _reply(t.comment),
                   onDelete: () => _delete(t.comment),
                   onReport: () => _report(t.comment),
+                  isMine: t.comment.author.id == me,
+                  onBlock: (kind) => _block(t.comment, kind),
                 ),
                 for (final r in t.replies)
                   Padding(
@@ -204,6 +217,8 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
                       onReply: () => _reply(t.comment),
                       onDelete: () => _delete(r),
                       onReport: () => _report(r),
+                      isMine: r.author.id == me,
+                      onBlock: (kind) => _block(r, kind),
                     ),
                   ),
               ],
@@ -314,6 +329,8 @@ class CommentTile extends StatelessWidget {
     required this.onReply,
     required this.onDelete,
     required this.onReport,
+    this.isMine = false,
+    this.onBlock,
   });
 
   final Comment comment;
@@ -321,6 +338,10 @@ class CommentTile extends StatelessWidget {
   final VoidCallback onReply;
   final VoidCallback onDelete;
   final VoidCallback onReport;
+  final bool isMine;
+
+  /// Mutes (`mute`) or blocks (`block`) the author.
+  final void Function(String kind)? onBlock;
 
   @override
   Widget build(BuildContext context) {
@@ -378,12 +399,21 @@ class CommentTile extends StatelessWidget {
           PopupMenuButton<String>(
             tooltip: 'More',
             icon: const Icon(Icons.more_vert, size: 18),
-            onSelected: (v) => v == 'delete' ? onDelete() : onReport(),
+            onSelected: (v) => switch (v) {
+              'delete' => onDelete(),
+              'report' => onReport(),
+              _ => onBlock?.call(v),
+            },
             itemBuilder: (_) => [
               if (canDelete)
-                const PopupMenuItem(value: 'delete', child: Text('Delete'))
-              else
+                const PopupMenuItem(value: 'delete', child: Text('Delete')),
+              if (!isMine) ...[
                 const PopupMenuItem(value: 'report', child: Text('Report')),
+                if (onBlock != null) ...[
+                  PopupMenuItem(value: 'mute', child: Text('Mute $name')),
+                  PopupMenuItem(value: 'block', child: Text('Block $name')),
+                ],
+              ],
             ],
           ),
         ],
