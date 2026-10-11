@@ -8,6 +8,7 @@
 //   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora, swarm, depth)
 //   node src/render.mjs --sample samples/seneca-photo.json   render a style sample to out/samples/
 //   ... --image-provider openai|ideogram|imagen   force one image provider (default: picked per image)
+//   ... --regenerate-images                       pay for new images instead of reusing the saved ones
 //
 // A script can set "voice" too; --voice wins. Videos never show captions on screen (they hide
 // the picture); the spoken words go to a .vtt file next to each video instead.
@@ -35,6 +36,7 @@ function args() {
     else if (a[i] === "--stills") opt.stills = true;
     else if (a[i] === "--theme") opt.theme = a[++i];
     else if (a[i] === "--image-provider") opt.imageProviderName = a[++i];
+    else if (a[i] === "--regenerate-images") opt.regenerateImages = true;
     else if (a[i] === "--sample") opt.sample = a[++i];
     else opt.ids.push(a[i]);
   }
@@ -98,7 +100,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   const cardId = opt.label || card.id;
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
-  await resolveImages(scenes, { provider: opt.imageProvider, providerName: opt.imageProviderName });
+  await resolveImages(scenes, { provider: opt.imageProvider, providerName: opt.imageProviderName, regenerate: opt.regenerateImages });
   const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
