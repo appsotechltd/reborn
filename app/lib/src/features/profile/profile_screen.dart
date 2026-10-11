@@ -62,7 +62,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final user = session.user;
     if (!session.signedIn) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Profile')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Profile'),
+        ),
         body: const SignInPrompt(
           icon: Icons.person_outline,
           title: 'Your profile',
@@ -72,7 +75,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     }
     final topics = ref.watch(topicPrefsProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Profile')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Profile'),
+      ),
       body: ListView(
         children: [
           ReadingWidth(

@@ -17,7 +17,10 @@ class AuthorScreen extends ConsumerWidget {
     final author = ref.watch(authorProvider(name));
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Author')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Author'),
+      ),
       body: author.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(

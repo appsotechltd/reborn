@@ -136,15 +136,56 @@ class _TvShellState extends State<_TvShell> {
     items[i.clamp(0, items.length - 1)].requestFocus();
   }
 
+  /// The rail's items, top to bottom (tabs, then Settings).
+  List<FocusNode> get _railItems {
+    final items = _rail.traversalDescendants
+        .where((n) => n is! FocusScopeNode && n.canRequestFocus)
+        .toList();
+    items.sort((a, b) => a.rect.top.compareTo(b.rect.top));
+    return items;
+  }
+
+  void _moveInRail(int step) {
+    final items = _railItems;
+    if (items.isEmpty) return;
+    final at = items.indexOf(FocusManager.instance.primaryFocus!);
+    final next = at < 0
+        ? widget.navigationShell.currentIndex
+        : (at + step).clamp(0, items.length - 1);
+    items[next].requestFocus();
+  }
+
+  /// Whether [n] belongs to a tab's app bar (search, bell, avatar): those
+  /// are reached with Up from the content, not by entering the tab.
+  static bool _inAppBar(FocusNode n) =>
+      n.context?.findAncestorWidgetOfExactType<AppBar>() != null;
+
   void _focusContent() {
     _content.requestFocus();
     final now = FocusManager.instance.primaryFocus;
-    if (now != null && now != _content && _active(now)) return;
+    // Back to the item this tab last had, if there was one (a page's focus
+    // scope is not an item: nothing would show focus).
+    if (now != null &&
+        now is! FocusScopeNode &&
+        _active(now) &&
+        !_inAppBar(now)) {
+      return;
+    }
     // Nothing to go back to in this tab: its top-left item.
     final candidates = _content.traversalDescendants
-        .where((n) => n is! FocusScopeNode && _active(n) && !n.rect.isEmpty)
+        .where(
+          (n) =>
+              n is! FocusScopeNode &&
+              _active(n) &&
+              !n.rect.isEmpty &&
+              !_inAppBar(n),
+        )
         .toList();
-    if (candidates.isEmpty) return;
+    if (candidates.isEmpty) {
+      // Nothing to land on yet: keep focus visible on the rail.
+      _focusRail();
+      return;
+    }
     candidates.sort((a, b) {
       final dy = a.rect.top.compareTo(b.rect.top);
       return dy != 0 ? dy : a.rect.left.compareTo(b.rect.left);
@@ -163,11 +204,23 @@ class _TvShellState extends State<_TvShell> {
             skipTraversal: true,
             canRequestFocus: false,
             onKeyEvent: (_, e) {
-              if (!_down(e) || e.logicalKey != LogicalKeyboardKey.arrowRight) {
-                return KeyEventResult.ignored;
+              if (!_down(e)) return KeyEventResult.ignored;
+              final key = e.logicalKey;
+              if (key == LogicalKeyboardKey.arrowRight) {
+                _focusContent();
+                return KeyEventResult.handled;
               }
-              _focusContent();
-              return KeyEventResult.handled;
+              // Up and Down walk the rail and stop at its ends: they never
+              // jump out to the tab's app bar. Left has nowhere to go.
+              if (key == LogicalKeyboardKey.arrowDown ||
+                  key == LogicalKeyboardKey.arrowUp) {
+                _moveInRail(key == LogicalKeyboardKey.arrowDown ? 1 : -1);
+                return KeyEventResult.handled;
+              }
+              if (key == LogicalKeyboardKey.arrowLeft) {
+                return KeyEventResult.handled;
+              }
+              return KeyEventResult.ignored;
             },
             child: FocusScope(
               node: _rail,
@@ -177,9 +230,18 @@ class _TvShellState extends State<_TvShell> {
                 onDestinationSelected: (i) {
                   widget.go(i);
                   // Straight into the tab, ready for the arrows.
-                  WidgetsBinding.instance.addPostFrameCallback(
-                    (_) => _focusContent(),
-                  );
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    _focusContent();
+                    // A newly shown tab's page can claim focus for its own
+                    // scope a frame later, which shows nothing: try again.
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      if (mounted &&
+                          FocusManager.instance.primaryFocus
+                              is FocusScopeNode) {
+                        _focusContent();
+                      }
+                    });
+                  });
                 },
                 labelType: NavigationRailLabelType.all,
                 groupAlignment: 0,
@@ -220,9 +282,19 @@ class _TvShellState extends State<_TvShell> {
                   return KeyEventResult.ignored;
                 }
                 final focus = FocusManager.instance.primaryFocus;
-                if (focus != null &&
-                    focus.focusInDirection(TraversalDirection.left)) {
-                  return KeyEventResult.handled;
+                // From a real item, move left within the tab, but only if
+                // focus really ends up further left; otherwise (or from no
+                // item at all) go to the rail. Left never moves right.
+                if (focus != null && focus is! FocusScopeNode) {
+                  final from = focus.rect.center.dx;
+                  if (focus.focusInDirection(TraversalDirection.left)) {
+                    final to = FocusManager.instance.primaryFocus;
+                    if (to != null &&
+                        to is! FocusScopeNode &&
+                        to.rect.center.dx < from) {
+                      return KeyEventResult.handled;
+                    }
+                  }
                 }
                 _focusRail();
                 return KeyEventResult.handled;

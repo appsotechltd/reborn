@@ -781,6 +781,21 @@ class ApiClient {
         ),
       );
 
+  /// Comments people have reported, most reported first; hidden ones too.
+  Future<List<ReportedComment>> reportedComments() async =>
+      (_map(await _send('GET', '/v1/moderation/comments'))['comments']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(ReportedComment.fromJson)
+          .toList();
+
+  /// Hides (or restores) a reported comment; either way its reports clear.
+  Future<void> moderateComment(String id, {required bool hide}) => _send(
+    'POST',
+    '/v1/moderation/comments/${Uri.encodeComponent(id)}/${hide ? 'hide' : 'restore'}',
+  );
+
   List<Contribution> _contributions(dynamic v) =>
       (_map(v)['contributions'] as List? ?? const [])
           .whereType<Map<String, dynamic>>()

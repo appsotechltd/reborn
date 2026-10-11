@@ -474,6 +474,8 @@ class PostActionBar extends ConsumerWidget {
                 children: [
                   _CountButton(
                     key: const ValueKey('post-favorite'),
+                    label: 'Favourite',
+                    toggled: post.favorited,
                     tooltip: post.favorited
                         ? 'Remove from favourites'
                         : 'Add to favourites',
@@ -491,6 +493,7 @@ class PostActionBar extends ConsumerWidget {
                   ),
                   _CountButton(
                     key: const ValueKey('post-comments'),
+                    label: 'Comments',
                     tooltip: 'Comments',
                     icon: Icons.mode_comment_outlined,
                     count: stats.comments,
@@ -502,6 +505,7 @@ class PostActionBar extends ConsumerWidget {
                   Builder(
                     builder: (context) => _CountButton(
                       key: const ValueKey('post-share'),
+                      label: 'Share',
                       tooltip: 'Share',
                       icon: Icons.ios_share,
                       count: stats.shares,
@@ -513,6 +517,7 @@ class PostActionBar extends ConsumerWidget {
                   if (narrow)
                     _CountButton(
                       key: const ValueKey('post-gift'),
+                      label: 'Gift',
                       tooltip: 'Gift',
                       icon: Icons.volunteer_activism_outlined,
                       count: stats.gifts,
@@ -602,30 +607,46 @@ class _ReactionChip extends StatelessWidget {
 class _CountButton extends StatelessWidget {
   const _CountButton({
     super.key,
+    required this.label,
     required this.tooltip,
     required this.icon,
     required this.count,
     required this.onPressed,
     this.color,
+    this.toggled,
   });
+
+  /// What a screen reader announces before the count ("Favourite, 3"):
+  /// otherwise it would hear only the number.
+  final String label;
   final String tooltip;
   final IconData icon;
   final int count;
   final VoidCallback onPressed;
   final Color? color;
 
+  /// For a toggle (favourite): whether it is on.
+  final bool? toggled;
+
   @override
-  Widget build(BuildContext context) => Tooltip(
-    message: tooltip,
-    child: TextButton.icon(
-      onPressed: onPressed,
-      style: TextButton.styleFrom(
-        foregroundColor:
-            color ?? Theme.of(context).colorScheme.onSurfaceVariant,
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+  Widget build(BuildContext context) => Semantics(
+    button: true,
+    toggled: toggled,
+    label: '$label, $count',
+    onTap: onPressed,
+    excludeSemantics: true,
+    child: Tooltip(
+      message: tooltip,
+      child: TextButton.icon(
+        onPressed: onPressed,
+        style: TextButton.styleFrom(
+          foregroundColor:
+              color ?? Theme.of(context).colorScheme.onSurfaceVariant,
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+        ),
+        icon: Icon(icon, size: 20),
+        label: Text(compactCount(count)),
       ),
-      icon: Icon(icon, size: 20),
-      label: Text(compactCount(count)),
     ),
   );
 }

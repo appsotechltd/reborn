@@ -13,7 +13,10 @@ class MyContributionsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     return Scaffold(
-      appBar: AppBar(title: const Text('My contributions')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('My contributions'),
+      ),
       floatingActionButton: signedIn
           ? FloatingActionButton.extended(
               onPressed: () => context.push('/contribute'),

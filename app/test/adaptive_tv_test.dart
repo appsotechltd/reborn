@@ -255,10 +255,11 @@ void main() {
       await key(tester, LogicalKeyboardKey.arrowLeft);
       expect(focusLabel(), 'tv-card for-you/1');
 
+      // Down keeps the column: the card below, not the row's first.
       await key(tester, LogicalKeyboardKey.arrowDown);
-      expect(focusLabel(), 'tv-card trending/0');
+      expect(focusLabel(), 'tv-card trending/1');
       await key(tester, LogicalKeyboardKey.arrowDown);
-      expect(focusLabel(), 'tv-card new/0');
+      expect(focusLabel(), 'tv-card new/0'); // the row has one card
       // Up returns to where each row was left.
       await key(tester, LogicalKeyboardKey.arrowUp);
       await key(tester, LogicalKeyboardKey.arrowUp);

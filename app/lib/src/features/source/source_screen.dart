@@ -27,7 +27,10 @@ class SourceScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final detail = ref.watch(sourceProvider(sourceId));
     return Scaffold(
-      appBar: AppBar(title: const Text('Source')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Source'),
+      ),
       body: detail.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(

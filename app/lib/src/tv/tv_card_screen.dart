@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -28,6 +30,7 @@ class TvCardScreen extends ConsumerStatefulWidget {
 class _TvCardScreenState extends ConsumerState<TvCardScreen> {
   final _scroll = ScrollController();
   final _bodyFocus = FocusNode(debugLabel: 'tv-card-body');
+  final _readFocus = FocusNode(debugLabel: 'tv-read');
   bool _bodyFocused = false;
   bool _recorded = false;
 
@@ -43,6 +46,7 @@ class _TvCardScreenState extends ConsumerState<TvCardScreen> {
   void dispose() {
     _scroll.dispose();
     _bodyFocus.dispose();
+    _readFocus.dispose();
     super.dispose();
   }
 
@@ -57,6 +61,15 @@ class _TvCardScreenState extends ConsumerState<TvCardScreen> {
   KeyEventResult _onBodyKey(FocusNode _, KeyEvent e) {
     if (e is! KeyDownEvent && e is! KeyRepeatEvent) {
       return KeyEventResult.ignored;
+    }
+    // The first Back from the text returns to the buttons; the next one
+    // leaves the page.
+    if (e is KeyDownEvent &&
+        (e.logicalKey == LogicalKeyboardKey.escape ||
+            e.logicalKey == LogicalKeyboardKey.goBack ||
+            e.logicalKey == LogicalKeyboardKey.browserBack)) {
+      _readFocus.requestFocus();
+      return KeyEventResult.handled;
     }
     final down = e.logicalKey == LogicalKeyboardKey.arrowDown;
     final up = e.logicalKey == LogicalKeyboardKey.arrowUp;
@@ -151,6 +164,7 @@ class _TvCardScreenState extends ConsumerState<TvCardScreen> {
                         ),
                       OutlinedButton.icon(
                         key: const ValueKey('tv-read'),
+                        focusNode: _readFocus,
                         autofocus: video == null,
                         onPressed: () => _bodyFocus.requestFocus(),
                         icon: const Icon(Icons.chrome_reader_mode_outlined),
@@ -193,6 +207,8 @@ class _TvCardScreenState extends ConsumerState<TvCardScreen> {
                     card: card,
                     showActions: false,
                     showVideo: false,
+                    // The topic already heads the left column.
+                    showTopic: false,
                     padding: const EdgeInsets.fromLTRB(28, 24, 28, 28),
                   ),
                 ),
@@ -310,24 +326,58 @@ class _TvVideoScreenState extends ConsumerState<TvVideoScreen> {
                         ),
                 ),
                 if (_failed)
-                  Center(
-                    child: Container(
-                      key: const ValueKey('tv-video-failed'),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 24,
-                        vertical: 14,
-                      ),
-                      decoration: BoxDecoration(
-                        color: CandlelightTokens.videoBase.withValues(
-                          alpha: 0.9,
+                  LayoutBuilder(
+                    // Below the poster's printed title, above its credit.
+                    builder: (context, box) => Align(
+                      alignment: const Alignment(0, 0.5),
+                      child: ConstrainedBox(
+                        // Kept inside the poster (shown at its own shape,
+                        // centred) and wrapped: a dark band reaching past the
+                        // poster vanishes into the dark screen, leaving its
+                        // text looking as if it overflowed.
+                        constraints: BoxConstraints(
+                          maxWidth: math.min(
+                            520,
+                            math.min(
+                              box.maxWidth,
+                              box.maxHeight * (video?.aspectRatio ?? 16 / 9),
+                            ),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        "This video couldn't be played here. "
-                        'Back to leave.',
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          color: const Color(0xFFF2E8D8),
+                        child: Container(
+                          key: const ValueKey('tv-video-failed'),
+                          margin: const EdgeInsets.symmetric(horizontal: 16),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 16,
+                          ),
+                          decoration: BoxDecoration(
+                            color: CandlelightTokens.videoBase.withValues(
+                              alpha: 0.92,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "This video couldn't be played here.",
+                                textAlign: TextAlign.center,
+                                softWrap: true,
+                                style: theme.textTheme.titleMedium?.copyWith(
+                                  color: const Color(0xFFF2E8D8),
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              Text(
+                                'Press Back to leave.',
+                                textAlign: TextAlign.center,
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  color: const Color(0xFFD9CDBA),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),

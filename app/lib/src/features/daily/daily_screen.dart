@@ -17,7 +17,10 @@ class DailyScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final daily = ref.watch(dailyProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text("Today's idea")),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text("Today's idea"),
+      ),
       body: daily.when(
         loading: () => const LoadingView(),
         error: (e, _) =>

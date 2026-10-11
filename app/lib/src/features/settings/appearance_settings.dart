@@ -18,6 +18,7 @@ class AppearanceSettings extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final mode = ref.watch(themeModeProvider);
+    final device = ref.watch(isTvProvider) ? 'TV' : 'phone';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -25,8 +26,8 @@ class AppearanceSettings extends ConsumerWidget {
         const SizedBox(height: 4),
         Text(
           mode == ThemeMode.system
-              ? "Follows your phone's light or dark setting."
-              : 'Always ${mode.name}, whatever your phone uses.',
+              ? "Follows your $device's light or dark setting."
+              : 'Always ${mode.name}, whatever your $device uses.',
           style: theme.textTheme.bodySmall,
         ),
         const SizedBox(height: 12),

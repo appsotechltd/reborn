@@ -22,8 +22,9 @@ final videoControllerFactoryProvider =
 /// The credit, licence and any health note are burned into the video itself;
 /// there are no on-screen captions.
 ///
-/// Films stay dark in both colour modes: a bottom fade, an amber kicker, the
-/// title in white Fraunces and a duration pill.
+/// Films stay dark in both colour modes: a bottom fade with an amber kicker
+/// and, beneath it, the Play pill with the duration beside it. The poster
+/// art carries the title and topic at its top, so nothing is laid over it.
 class ExplainerPlayer extends ConsumerStatefulWidget {
   const ExplainerPlayer({
     super.key,
@@ -322,6 +323,8 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
               Image.network(
                 resolveMediaUrl(e.posterUrl),
                 fit: BoxFit.cover,
+                // The poster art prints its own title and topic; the card's
+                // title is written out above the player.
                 errorBuilder: (_, _, _) =>
                     const ColoredBox(color: CandlelightTokens.videoBase),
               ),
@@ -330,32 +333,61 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                   gradient: CandlelightTokens.videoFade,
                 ),
               ),
-              Positioned(
-                top: 12,
-                right: 12,
-                child: _DurationPill(text: duration),
-              ),
               if (c != null && !_failed)
                 const Center(
                   child: CircularProgressIndicator(
                     color: CandlelightTokens.amber,
                   ),
+                ),
+              // Below the poster's printed title and above its printed
+              // credit line, so neither is covered.
+              if (_failed)
+                Align(
+                  alignment: const Alignment(0, 0.45),
+                  child: Container(
+                    key: const ValueKey('video-failed'),
+                    margin: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 14,
+                      vertical: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      color: const Color(0xE614110E),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      "Couldn't load the video. Tap to try again.",
+                      textAlign: TextAlign.center,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: _filmInk,
+                      ),
+                    ),
+                  ),
                 )
               else
-                const _PlayBadge(),
-              Positioned(
-                left: 16,
-                right: 16,
-                bottom: 16,
-                child: _failed
-                    ? Text(
-                        "Couldn't load the video. Tap to try again.",
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: _filmInk,
-                        ),
-                      )
-                    : _FilmCaption(kicker: kicker, title: widget.title),
-              ),
+                // Play with the duration beside it, in the bottom band, clear
+                // of the poster's own title and topic label (as on the web).
+                Positioned(
+                  left: 16,
+                  right: 16,
+                  bottom: 16,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // Bright amber is fine here: the film is always dark.
+                      CategoryTag(kicker, color: CandlelightTokens.amber),
+                      const SizedBox(height: 10),
+                      Row(
+                        children: [
+                          if (c == null) const _PlayPill(),
+                          const Spacer(),
+                          _DurationPill(text: duration),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
             ],
           ),
         ),
@@ -418,34 +450,39 @@ class _FilmButton extends StatelessWidget {
 /// Text on films is white-ish whatever the app's mode.
 const _filmInk = Color(0xFFFFFFFF);
 
-class _FilmCaption extends StatelessWidget {
-  const _FilmCaption({required this.kicker, required this.title});
-  final String kicker;
-  final String title;
+/// The amber "Play" pill in the poster's bottom row.
+class _PlayPill extends StatelessWidget {
+  const _PlayPill();
 
   @override
-  Widget build(BuildContext context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    mainAxisSize: MainAxisSize.min,
-    children: [
-      // Bright amber is fine here: the film is always dark.
-      CategoryTag(kicker, color: CandlelightTokens.amber),
-      const SizedBox(height: 6),
-      Text(
-        title,
-        maxLines: 4,
-        overflow: TextOverflow.ellipsis,
-        style: const TextStyle(
-          fontFamily: kDisplayFont,
-          fontWeight: FontWeight.w600,
-          fontSize: 20,
-          height: 1.15,
-          letterSpacing: -0.2,
-          color: _filmInk,
-          shadows: [Shadow(color: Color(0x8014110E), blurRadius: 12)],
+  Widget build(BuildContext context) => Container(
+    key: const ValueKey('video-play'),
+    constraints: const BoxConstraints(minHeight: 44),
+    padding: const EdgeInsets.fromLTRB(12, 6, 18, 6),
+    decoration: const ShapeDecoration(
+      color: CandlelightTokens.amber,
+      shape: StadiumBorder(),
+    ),
+    child: const Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(
+          Icons.play_arrow_rounded,
+          color: CandlelightTokens.onAmber,
+          size: 22,
         ),
-      ),
-    ],
+        SizedBox(width: 4),
+        Text(
+          'Play',
+          style: TextStyle(
+            fontFamily: kBodyFont,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: CandlelightTokens.onAmber,
+          ),
+        ),
+      ],
+    ),
   );
 }
 

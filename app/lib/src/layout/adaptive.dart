@@ -89,10 +89,21 @@ class DetailPane extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => HeroControllerScope.none(
-    child: Navigator(
-      key: ValueKey('detail-pane-$id'),
-      pages: [MaterialPage<void>(key: ValueKey(id), child: child)],
-      onDidRemovePage: (_) {},
+    // Its own semantics container: the page route's modal barrier blocks
+    // the semantics of whatever was painted before it in its container,
+    // which would otherwise be the list pane on the left.
+    child: Semantics(
+      container: true,
+      explicitChildNodes: true,
+      child: Navigator(
+        key: ValueKey('detail-pane-$id'),
+        // Focus stays where it was (the list item that opened it), so a
+        // remote's OK doesn't land on the page's first button, such as a
+        // stash's options menu.
+        requestFocus: false,
+        pages: [MaterialPage<void>(key: ValueKey(id), child: child)],
+        onDidRemovePage: (_) {},
+      ),
     ),
   );
 }

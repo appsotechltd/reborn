@@ -38,6 +38,7 @@ class CirclesScreen extends ConsumerWidget {
       initialIndex: signedIn ? 0 : 1,
       child: Scaffold(
         appBar: AppBar(
+          leading: exitLeading(context),
           title: const Text('Book circles'),
           bottom: const TabBar(
             tabs: [

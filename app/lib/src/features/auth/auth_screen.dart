@@ -56,6 +56,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
         await session.signIn(_email.text.trim(), _password.text);
       }
       if (!mounted) return;
+      // Let go of the text field before the page closes: otherwise a later
+      // view-focus change sorts its detached render object and throws
+      // "Null check operator used on a null value".
+      FocusManager.instance.primaryFocus?.unfocus();
       if (context.canPop()) {
         context.pop();
       } else {
@@ -75,7 +79,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     final theme = Theme.of(context);
     final register = widget.register;
     return Scaffold(
-      appBar: AppBar(title: Text(register ? 'Create account' : 'Sign in')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: Text(register ? 'Create account' : 'Sign in'),
+      ),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),

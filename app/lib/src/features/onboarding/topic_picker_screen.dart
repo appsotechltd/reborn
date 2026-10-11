@@ -123,6 +123,32 @@ class _TopicPickerScreenState extends ConsumerState<TopicPickerScreen> {
                           ),
                         ],
                       ),
+                      if (widget.onboarding &&
+                          !ref.watch(
+                            sessionProvider.select((s) => s.signedIn),
+                          )) ...[
+                        const SizedBox(height: 24),
+                        // Returning readers on a new device go straight to
+                        // sign-in; their topics come with their account.
+                        Center(
+                          child: TextButton(
+                            key: const ValueKey('onboarding-sign-in'),
+                            onPressed: _saving
+                                ? null
+                                : () async {
+                                    final router = GoRouter.of(context);
+                                    await ref
+                                        .read(topicPrefsProvider.notifier)
+                                        .markOnboarded();
+                                    router.go('/home');
+                                    router.push('/signin');
+                                  },
+                            child: const Text(
+                              'Already have an account? Sign in',
+                            ),
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),

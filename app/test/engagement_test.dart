@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:reborn/src/data/providers.dart';
 import 'package:reborn/src/features/circles/circle_screen.dart';
 import 'package:reborn/src/features/gifts/gift_store.dart';
+import 'package:reborn/src/features/notifications/notifications_controller.dart';
 import 'package:reborn/src/features/notifications/push_service.dart';
 import 'package:reborn/src/router.dart';
 
@@ -89,62 +90,86 @@ Map<String, dynamic> premiumJson({bool premium = false}) => {
 };
 
 void main() {
-  testWidgets('inbox: bell count, tap marks read and opens the comment', (
-    tester,
-  ) async {
-    final server = FakeServer()
-      ..on(
-        'GET /v1/notifications',
-        (_) => {
-          'notifications': [
-            notificationJson('n1'),
-            notificationJson(
-              'n2',
-              kind: 'follow',
-              text: 'Bob followed you',
-              postId: null,
-              commentId: null,
-              readAt: '2026-10-09T09:00:00Z',
-            ),
-          ],
-          'unread': 1,
-        },
-      )
-      ..on('POST /v1/notifications/read', (_) => const Reply.empty())
-      ..on('GET /v1/posts/p1/comments', (_) => {'comments': <Object>[]})
-      ..on('GET /v1/posts/p1', (_) => postJson(cardJson()));
-    final container = await pumpApp(tester, server, prefs: signedInPrefs);
+  testWidgets(
+    'inbox: opening it marks the listed items read and clears the badge',
+    (tester) async {
+      var n1Read = false;
+      final server = FakeServer()
+        ..on(
+          'GET /v1/notifications',
+          (_) => {
+            'notifications': [
+              notificationJson(
+                'n1',
+                readAt: n1Read ? '2026-10-09T10:00:00Z' : null,
+              ),
+              notificationJson(
+                'n2',
+                kind: 'follow',
+                text: 'Bob followed you',
+                postId: null,
+                commentId: null,
+                readAt: '2026-10-09T09:00:00Z',
+              ),
+            ],
+            'unread': n1Read ? 0 : 1,
+          },
+        )
+        ..on('POST /v1/notifications/read', (_) {
+          n1Read = true;
+          return const Reply.empty();
+        })
+        ..on('GET /v1/posts/p1/comments', (_) => {'comments': <Object>[]})
+        ..on('GET /v1/posts/p1', (_) => postJson(cardJson()));
+      final container = await pumpApp(tester, server, prefs: signedInPrefs);
 
-    final bell = find.byKey(const ValueKey('notification-bell'));
-    expect(bell, findsOneWidget);
-    expect(find.descendant(of: bell, matching: find.text('1')), findsOneWidget);
+      final bell = find.byKey(const ValueKey('notification-bell'));
+      expect(bell, findsOneWidget);
+      expect(
+        find.descendant(of: bell, matching: find.text('1')),
+        findsOneWidget,
+      );
 
-    await tester.tap(bell);
-    await tester.pumpAndSettle();
-    expect(find.widgetWithText(AppBar, 'Notifications'), findsOneWidget);
-    final unread = find.byKey(const ValueKey('notification-n1'));
-    expect(
-      find.descendant(
-        of: unread,
-        matching: find.byKey(const ValueKey('unread-dot')),
-      ),
-      findsOneWidget,
-    );
-    // The read one has no dot.
-    expect(find.byKey(const ValueKey('unread-dot')), findsOneWidget);
+      await tester.tap(bell);
+      await tester.pumpAndSettle();
+      expect(find.widgetWithText(AppBar, 'Notifications'), findsOneWidget);
+      final unread = find.byKey(const ValueKey('notification-n1'));
+      expect(
+        find.descendant(
+          of: unread,
+          matching: find.byKey(const ValueKey('unread-dot')),
+        ),
+        findsOneWidget,
+      );
+      // The read one has no dot.
+      expect(find.byKey(const ValueKey('unread-dot')), findsOneWidget);
+      // Opening the inbox marked what it lists read, as on the web: the badge
+      // clears, but the new row keeps its dot while the inbox is open.
+      expect(server.called('POST /v1/notifications/read').single.body, {
+        'ids': ['n1'],
+      });
+      expect(container.read(unreadCountProvider), 0);
+      expect(find.text('Mark all read'), findsNothing);
 
-    await tester.tap(unread);
-    await tester.pumpAndSettle();
-    expect(server.called('POST /v1/notifications/read').single.body, {
-      'ids': ['n1'],
-    });
-    expect(find.widgetWithText(AppBar, 'Comments'), findsOneWidget);
+      await tester.tap(unread);
+      await tester.pumpAndSettle();
+      // Already marked: no second call.
+      expect(server.called('POST /v1/notifications/read'), hasLength(1));
+      expect(find.widgetWithText(AppBar, 'Comments'), findsOneWidget);
 
-    container.read(routerProvider).pop();
-    await tester.pumpAndSettle();
-    expect(find.byKey(const ValueKey('unread-dot')), findsNothing);
-    expect(find.text('Mark all read'), findsNothing);
-  });
+      container.read(routerProvider).pop();
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('unread-dot')), findsOneWidget);
+
+      // Leave the inbox and come back: nothing is new any more.
+      container.read(routerProvider).pop();
+      await tester.pumpAndSettle();
+      expect(find.descendant(of: bell, matching: find.text('1')), findsNothing);
+      await tester.tap(bell);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('unread-dot')), findsNothing);
+    },
+  );
 
   test('push data opens the right screen', () {
     expect(pushLocation({'kind': 'circle', 'circle_id': 'k1'}), '/circles/k1');

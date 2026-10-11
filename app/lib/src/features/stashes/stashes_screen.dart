@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../notifications/notifications_screen.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../layout/adaptive.dart';
@@ -82,7 +83,11 @@ class StashesScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stashes'),
-        actions: const [ProfileMenuButton(), SizedBox(width: 8)],
+        actions: const [
+          NotificationBell(),
+          ProfileMenuButton(),
+          SizedBox(width: 8),
+        ],
       ),
       floatingActionButton: signedIn
           ? FloatingActionButton.extended(

@@ -37,7 +37,10 @@ class FollowingScreen extends ConsumerWidget {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     if (!signedIn) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Following')),
+        appBar: AppBar(
+          leading: exitLeading(context),
+          title: const Text('Following'),
+        ),
         body: const SignInPrompt(
           icon: Icons.people_outline,
           title: 'Follow books, authors and people',
@@ -47,7 +50,10 @@ class FollowingScreen extends ConsumerWidget {
     }
     final following = ref.watch(followingProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Following')),
+      appBar: AppBar(
+        leading: exitLeading(context),
+        title: const Text('Following'),
+      ),
       body: following.when(
         loading: () => const LoadingView(),
         error: (e, _) => ErrorView(

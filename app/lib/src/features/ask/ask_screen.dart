@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../notifications/notifications_screen.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
@@ -63,6 +64,7 @@ class _AskScreenState extends ConsumerState<AskScreen> {
               icon: const Icon(Icons.add_comment_outlined),
               onPressed: ref.read(askProvider.notifier).clear,
             ),
+          const NotificationBell(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],

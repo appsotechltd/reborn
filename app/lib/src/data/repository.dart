@@ -404,6 +404,12 @@ class RebornRepository {
   Future<Contribution> reject(String id, String note) =>
       _run(() => api.reject(id, note));
 
+  Future<List<ReportedComment>> reportedComments() =>
+      _run(api.reportedComments);
+
+  Future<void> moderateComment(String id, {required bool hide}) =>
+      _run(() => api.moderateComment(id, hide: hide));
+
   // ---- Agent ----
 
   Future<ChatReply> chat(List<ChatMessage> messages) =>

@@ -1054,6 +1054,45 @@ class Comment {
   );
 }
 
+/// A comment in the moderators' queue: its reports, and whether it is
+/// already hidden (three reports hide it until a moderator decides).
+class ReportedComment {
+  const ReportedComment({
+    required this.comment,
+    required this.status,
+    required this.reports,
+    this.reasons = const [],
+  });
+
+  final Comment comment;
+
+  /// `visible` or `hidden`.
+  final String status;
+  final int reports;
+  final List<String> reasons;
+
+  String get id => comment.id;
+  bool get hidden => status == 'hidden';
+
+  factory ReportedComment.fromJson(Map<String, dynamic> json) =>
+      ReportedComment(
+        comment: Comment.fromJson(json),
+        status: json['status'] as String? ?? 'visible',
+        reports: _int(json['reports']),
+        reasons: (json['reasons'] as List? ?? const [])
+            .whereType<String>()
+            .where((r) => r.isNotEmpty)
+            .toList(),
+      );
+
+  ReportedComment withStatus(String status) => ReportedComment(
+    comment: comment,
+    status: status,
+    reports: reports,
+    reasons: reasons,
+  );
+}
+
 class CommentPage {
   const CommentPage({required this.comments, this.nextCursor});
   final List<Comment> comments;

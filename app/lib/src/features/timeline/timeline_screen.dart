@@ -844,7 +844,13 @@ class _TopicChips extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final topics = ref.watch(topicsProvider).value ?? kDefaultTopics;
+    final all = ref.watch(topicsProvider).value ?? kDefaultTopics;
+    // The reader's own topics first, in catalogue order, then the rest.
+    final mine = ref.watch(topicPrefsProvider).toSet();
+    final topics = [
+      ...all.where((t) => mine.contains(t.slug)),
+      ...all.where((t) => !mine.contains(t.slug)),
+    ];
     final selected = ref.watch(timelineFilterProvider);
     final notifier = ref.read(timelineFilterProvider.notifier);
     return SizedBox(

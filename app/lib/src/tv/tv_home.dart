@@ -64,6 +64,31 @@ class _TvHomeState extends ConsumerState<TvHome> {
     _node(row, col).requestFocus();
   }
 
+  /// Up or Down into row [r] from column [c] of another row: back to where
+  /// that row was left, or (on a first visit) to the card nearest the same
+  /// spot on screen, the usual leanback behaviour.
+  void _focusVertical(int r, int fromRow, int c) {
+    final row = _rows[r];
+    if (row.posts.isEmpty) return;
+    final last = _lastCol[row.id];
+    if (last != null) return _focus(r, last);
+    final from = _node(_rows[fromRow], c);
+    if (from.context == null || from.rect.isEmpty) return _focus(r, c);
+    final x = from.rect.center.dx;
+    var best = c.clamp(0, row.posts.length - 1);
+    var bestD = double.infinity;
+    for (var i = 0; i < row.posts.length; i++) {
+      final n = _node(row, i);
+      if (n.context == null || n.rect.isEmpty) continue;
+      final d = (n.rect.center.dx - x).abs();
+      if (d < bestD) {
+        bestD = d;
+        best = i;
+      }
+    }
+    _focus(r, best);
+  }
+
   KeyEventResult _onKey(int r, int c, KeyEvent e) {
     if (e is! KeyDownEvent && e is! KeyRepeatEvent) {
       return KeyEventResult.ignored;
@@ -85,12 +110,12 @@ class _TvHomeState extends ConsumerState<TvHome> {
       return KeyEventResult.handled;
     }
     if (key == LogicalKeyboardKey.arrowDown) {
-      if (r + 1 < _rows.length) _focus(r + 1, null);
+      if (r + 1 < _rows.length) _focusVertical(r + 1, r, c);
       return KeyEventResult.handled;
     }
     if (key == LogicalKeyboardKey.arrowUp) {
       if (r == 0) return KeyEventResult.ignored;
-      _focus(r - 1, null);
+      _focusVertical(r - 1, r, c);
       return KeyEventResult.handled;
     }
     return KeyEventResult.ignored;
@@ -139,23 +164,27 @@ class _TvHomeState extends ConsumerState<TvHome> {
         });
       }
       body = FocusTraversalGroup(
-        child: ListView(
-          key: const ValueKey('tv-rows'),
-          padding: const EdgeInsets.only(bottom: 24),
-          children: [
-            for (var r = 0; r < _rows.length; r++)
-              _TvRowView(
-                key: ValueKey('tv-row-${_rows[r].id}'),
-                row: _rows[r],
-                nodeFor: (c) => _node(_rows[r], c),
-                onKey: (c, e) => _onKey(r, c, e),
-                onFocused: (c) => _lastCol[_rows[r].id] = c,
-                onOpen: (post) => context.push(
-                  '/tv/cards/${Uri.encodeComponent(post.card.id)}',
-                  extra: post,
+        // No scrollbar on a TV: focus moves the page.
+        child: ScrollConfiguration(
+          behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+          child: ListView(
+            key: const ValueKey('tv-rows'),
+            padding: const EdgeInsets.only(bottom: 24),
+            children: [
+              for (var r = 0; r < _rows.length; r++)
+                _TvRowView(
+                  key: ValueKey('tv-row-${_rows[r].id}'),
+                  row: _rows[r],
+                  nodeFor: (c) => _node(_rows[r], c),
+                  onKey: (c, e) => _onKey(r, c, e),
+                  onFocused: (c) => _lastCol[_rows[r].id] = c,
+                  onOpen: (post) => context.push(
+                    '/tv/cards/${Uri.encodeComponent(post.card.id)}',
+                    extra: post,
+                  ),
                 ),
-              ),
-          ],
+            ],
+          ),
         ),
       );
     }
@@ -302,16 +331,21 @@ class _TvPostCardState extends ConsumerState<TvPostCard> {
       ...card.source.authors,
     ].where((s) => s.isNotEmpty).join(' · ');
 
-    final tag = Text(
-      topic.toUpperCase(),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
-      style: TextStyle(
-        fontFamily: kBodyFont,
-        fontSize: 11,
-        fontWeight: FontWeight.w700,
-        letterSpacing: 1.3,
-        color: onVideo ? CandlelightTokens.amber : c.amberText,
+    // A long topic shrinks a little to fit rather than being cut off
+    // ("PERSONAL DEVELOPM…").
+    final tag = FittedBox(
+      fit: BoxFit.scaleDown,
+      alignment: Alignment.centerLeft,
+      child: Text(
+        topic.toUpperCase(),
+        maxLines: 1,
+        style: TextStyle(
+          fontFamily: kBodyFont,
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 1.0,
+          color: onVideo ? CandlelightTokens.amber : c.amberText,
+        ),
       ),
     );
     Widget title(int lines) => Text(
@@ -404,11 +438,22 @@ class _TvPostCardState extends ConsumerState<TvPostCard> {
                                   alignment: const Alignment(0, -0.2),
                                   errorBuilder: (_, _, _) => const SizedBox(),
                                 ),
-                                const Center(
-                                  child: Icon(
-                                    Icons.play_circle_fill,
-                                    size: 44,
-                                    color: CandlelightTokens.amber,
+                                // In the bottom-right corner, off the
+                                // title printed on the poster.
+                                const Positioned(
+                                  right: 8,
+                                  bottom: 8,
+                                  child: DecoratedBox(
+                                    key: ValueKey('tv-tile-play'),
+                                    decoration: BoxDecoration(
+                                      color: Color(0xB314110E),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Icon(
+                                      Icons.play_circle_fill,
+                                      size: 36,
+                                      color: CandlelightTokens.amber,
+                                    ),
                                   ),
                                 ),
                               ],

@@ -65,7 +65,7 @@ class _CardScreenState extends ConsumerState<CardScreen> {
       );
     }
     return Scaffold(
-      appBar: AppBar(title: const Text('Idea')),
+      appBar: AppBar(leading: exitLeading(context), title: const Text('Idea')),
       body: body,
     );
   }

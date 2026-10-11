@@ -24,6 +24,7 @@ class IdeaCardView extends ConsumerWidget {
     this.showActions = true,
     this.showShare = true,
     this.showVideo = true,
+    this.showTopic = true,
     this.byline,
     this.padding = const EdgeInsets.fromLTRB(20, 16, 20, 24),
   });
@@ -41,6 +42,9 @@ class IdeaCardView extends ConsumerWidget {
   /// plays the video full screen from its own button: neither video nor
   /// title is repeated here.
   final bool showVideo;
+
+  /// False on the TV idea page, whose left column already shows the topic.
+  final bool showTopic;
 
   /// The source line ("Meditations · Marcus Aurelius"), shown under the
   /// title, as on the feed card: topic, title, then source.
@@ -65,31 +69,36 @@ class IdeaCardView extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Wrap(
-            spacing: 10,
-            runSpacing: 6,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              if (label != null) _Pill(text: label!),
-              CategoryTag(topicName),
-            ],
-          ),
-          const SizedBox(height: 10),
-          // A video post carries its title on the film itself.
-          if (card.explainer != null && showVideo) ...[
-            ExplainerPlayer(
-              explainer: card.explainer!,
-              title: card.title,
-              autoplayId: card.id,
+          if (label != null || showTopic) ...[
+            Wrap(
+              spacing: 10,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                if (label != null) _Pill(text: label!),
+                if (showTopic) CategoryTag(topicName),
+              ],
             ),
             const SizedBox(height: 10),
-          ] else if (showVideo) ...[
+          ],
+          // The title is always written out, video or not: the poster's own
+          // printed title is art (and gone when the video fails to load).
+          if (showVideo) ...[
             Text(
               card.title,
               key: const ValueKey('card-title'),
               style: cardPageTitleStyle(context),
             ),
             const SizedBox(height: 6),
+          ],
+          if (card.explainer != null && showVideo) ...[
+            const SizedBox(height: 4),
+            ExplainerPlayer(
+              explainer: card.explainer!,
+              title: card.title,
+              autoplayId: card.id,
+            ),
+            const SizedBox(height: 10),
           ],
           ?byline,
           // The health or support note comes before the reading, so it's
@@ -168,7 +177,7 @@ class _QuoteBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '“${quote.trim()}”',
+            displayQuote(quote),
             style: TextStyle(
               fontFamily: kDisplayFont,
               fontWeight: FontWeight.w600,
@@ -352,6 +361,16 @@ class _CardActions extends ConsumerWidget {
   }
 }
 
+/// A card's quote as shown: wrapped in curly double quotes, unless the
+/// text already carries its own double quote marks (speech inside the
+/// quote, or a quote stored with its outer pair), which would otherwise
+/// show doubled ("“"Begin, friend," ..."”").
+String displayQuote(String quote) {
+  final q = quote.trim();
+  if (RegExp('["“”]').hasMatch(q)) return q;
+  return '“$q”';
+}
+
 /// Plain-text version of a card for sharing, always with its credit.
 String shareText(IdeaCard card) {
   final b = StringBuffer()
@@ -361,7 +380,7 @@ String shareText(IdeaCard card) {
   if (card.quote != null) {
     b
       ..writeln()
-      ..writeln('“${card.quote!.trim()}”');
+      ..writeln(displayQuote(card.quote!));
   }
   b
     ..writeln()

@@ -106,12 +106,7 @@ class StreakView extends StatelessWidget {
                           ),
                       ],
                     ),
-                    Text(
-                      s.goalMet
-                          ? 'Goal met: ${s.today} of ${s.goal} ideas today'
-                          : '${s.today} of ${s.goal} ideas today',
-                      style: theme.textTheme.bodySmall,
-                    ),
+                    Text(streakTodayText(s), style: theme.textTheme.bodySmall),
                     const SizedBox(height: 4),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(4),
@@ -175,3 +170,11 @@ class _Day extends StatelessWidget {
     );
   }
 }
+
+/// The line under the streak headline. Once the goal is met the count is
+/// no longer framed as "N of goal", which read oddly past the goal
+/// ("31 of 3"); it mirrors the web wording.
+String streakTodayText(Streak s) => s.goalMet
+    ? 'Goal met · ${s.today} ${s.today == 1 ? 'idea' : 'ideas'} today '
+          '(goal ${s.goal})'
+    : '${s.today} of ${s.goal} ideas today';

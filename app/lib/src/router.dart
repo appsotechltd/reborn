@@ -39,6 +39,9 @@ import 'features/timeline/timeline_screen.dart';
 import 'tv/tv_card_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
+  // The address bar follows pushed pages (a card, comments, the quiz), so a
+  // refresh keeps the page and its URL can be copied.
+  GoRouter.optionURLReflectsImperativeAPIs = true;
   final router = GoRouter(
     initialLocation: '/home',
     redirect: (context, state) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../notifications/notifications_screen.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
@@ -24,6 +25,7 @@ class ReviewScreen extends ConsumerWidget {
               icon: const Icon(Icons.quiz_outlined),
               label: const Text('Quiz'),
             ),
+          const NotificationBell(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],
@@ -113,7 +115,10 @@ class _ReviewSessionState extends ConsumerState<ReviewSession> {
               ),
               const SizedBox(height: 8),
               const Text(
-                'Stash ideas to add them to your reviews.',
+                // True whether or not the reader has stashed anything yet:
+                // a stashed idea is first due the next day.
+                'Ideas you stash come back here for review, first the next '
+                'day, then at growing intervals.',
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
