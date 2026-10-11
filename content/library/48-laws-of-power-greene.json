@@ -19,7 +19,7 @@
   "cards": [
     {
       "id": "48-laws-of-power-greene--01",
-      "topic": "business",
+      "topic": "communication",
       "tags": [
         "communication",
         "restraint",
@@ -88,7 +88,7 @@
     },
     {
       "id": "48-laws-of-power-greene--04",
-      "topic": "relationships",
+      "topic": "communication",
       "tags": [
         "persuasion",
         "conflict",
@@ -154,6 +154,558 @@
         ],
         "answer": 3,
         "explanation": "The chooser feels free, but every option has been pre-selected. Asking what's missing breaks the frame."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--07",
+      "topic": "productivity",
+      "tags": [
+        "workplace",
+        "managers",
+        "insecurity"
+      ],
+      "title": "Notice when a boss feels threatened by your talent",
+      "body": "Greene's first law warns that outshining the person above you can backfire. He retells how Nicolas Fouquet threw a dazzling party for Louis XIV and was arrested soon after, partly because the display made the king feel overshadowed.\n\nThe useful lesson is awareness, not flattery. Some managers are secure and happy to see you shine; others feel threatened. If you notice your good work being met with coldness, it may not be about the work. You can share credit generously, keep your boss informed and, if the insecurity is severe, look for a manager who lets you grow.",
+      "apply_it": "Think of your current manager. Do they celebrate your wins or seem uneasy about them? Note one way to keep them informed this week.",
+      "quiz": {
+        "question": "What does Greene's story of Fouquet and Louis XIV illustrate?",
+        "options": [
+          "Showing off to a superior can make them feel threatened",
+          "Bosses always reward the best performer",
+          "Parties are a waste of money",
+          "Kings never trusted their ministers"
+        ],
+        "answer": 0,
+        "explanation": "Fouquet's lavish display made the king feel overshadowed. Knowing this helps you read how a superior reacts to your success."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--08",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "business",
+        "trust"
+      ],
+      "title": "Be careful about mixing close friendship with business",
+      "body": "Greene argues that friends can make tricky colleagues or partners. Affection can stop people from being frank, old resentments can surface once money is involved, and it is hard to correct or let go of someone you are close to.\n\nYou don't need to distrust your friends to take this seriously. If you hire, lend to or start a business with a friend, agree the terms in writing, discuss what happens if it goes wrong and judge them on the work. Greene also notes that a former rival who has to prove themselves can sometimes be a more reliable ally than a friend who takes you for granted.",
+      "apply_it": "If you work with a friend, write down one thing you've both assumed but never actually agreed. Raise it kindly this week.",
+      "quiz": {
+        "question": "Why does Greene think friends can make difficult business partners?",
+        "options": [
+          "Friends are usually less skilled",
+          "Friends always want to be the boss",
+          "Affection can block honesty and hidden resentments can surface over money",
+          "Business law forbids it"
+        ],
+        "answer": 2,
+        "explanation": "Closeness can make frank feedback hard and money can bring old tensions to the surface, so clear agreements protect the friendship."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--09",
+      "topic": "productivity",
+      "tags": [
+        "credit",
+        "teamwork",
+        "career"
+      ],
+      "title": "Protect the credit for your work",
+      "body": "Greene describes how some people let others do the hard work and then take the credit. His example is the inventor Nikola Tesla, whose ideas made others rich and famous while he died poor.\n\nRead as a warning, this is about protecting yourself. Good work does not always speak for itself, especially in large organisations. Keep a simple record of what you did, share progress updates in writing, and make sure your name is on the work you produce. At the same time, give honest credit to others; a reputation for fairness protects you too.",
+      "apply_it": "Start a short 'work log' today: one line per week on what you delivered. It helps in reviews and if credit is ever disputed.",
+      "quiz": {
+        "question": "Which inventor does Greene use to show how people can lose credit for their work?",
+        "options": [
+          "Thomas Edison",
+          "Henry Ford",
+          "Alexander Graham Bell",
+          "Nikola Tesla"
+        ],
+        "answer": 3,
+        "explanation": "Greene uses Tesla, whose work others profited from, as a warning to protect the credit for what you create."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--10",
+      "topic": "productivity",
+      "tags": [
+        "career",
+        "skills",
+        "value"
+      ],
+      "title": "Build skills that are genuinely hard to replace",
+      "body": "One of Greene's laws is about making others depend on you. Stripped of its scheming side, the sound part is this: people who hold rare, valuable skills or knowledge are harder to push aside.\n\nThe honest route is to become very good at something your workplace or community needs, not to hoard information or sabotage others. The flip side is worth noticing too: if someone keeps you dependent on them, by keeping you uninformed or untrained, ask whether that serves you. Learning the skills yourself is one of the best protections you have.",
+      "apply_it": "Name one skill in your field that few people have but many need. What's one step you could take this month to learn it?",
+      "quiz": {
+        "question": "What is the honest way to apply Greene's idea about being hard to replace?",
+        "options": [
+          "Hide key information from colleagues",
+          "Develop rare skills that others genuinely need",
+          "Make yourself the only person with passwords",
+          "Refuse to train anyone else"
+        ],
+        "answer": 1,
+        "explanation": "Real value comes from skills others need, not from hoarding information, which damages trust."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--11",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "scams",
+        "generosity",
+        "awareness"
+      ],
+      "title": "Be alert when sudden generosity comes before a big request",
+      "body": "Greene explains that a well-timed act of honesty or generosity can lower people's guard. His example is the con artist Count Lustig, who won Al Capone's trust by returning money he had borrowed from him, and was then given a reward.\n\nThis is useful to know in self-defence. Many scams start with a small gift, a refund or a show of openness before the real request arrives. Kindness is usually genuine, but if a near-stranger is unusually generous and then asks for money, access or a quick decision, slow down and judge the request on its own merits.",
+      "apply_it": "Next time an unexpected favour is followed by a request, pause and ask: would I agree to this if the favour hadn't happened?",
+      "quiz": {
+        "question": "Why should a sudden gift or act of honesty from a near-stranger make you more careful?",
+        "options": [
+          "It can be used to lower your guard before a bigger request",
+          "Gifts are always bribes",
+          "Honest people never give gifts",
+          "It means they are rich"
+        ],
+        "answer": 0,
+        "explanation": "Greene shows how a small act of honesty or generosity can disarm someone. Judge the later request on its own merits."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--12",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "privacy",
+        "conversation",
+        "trust"
+      ],
+      "title": "Watch what you share in casual conversation",
+      "body": "Greene notes that people often reveal their plans, weaknesses and opinions in relaxed social chat, and that some people use friendly conversation precisely to gather that information.\n\nThe protective lesson is to be thoughtful, not paranoid. At work events, online and in groups, it is easy to overshare about salary, plans to leave, money at home or private conflicts. Before sharing something sensitive, ask whether you would be comfortable with it being repeated. Being warm and being discreet can go together.",
+      "apply_it": "Before your next social event with colleagues or new contacts, decide one topic you will keep private.",
+      "quiz": {
+        "question": "What is the protective lesson from Greene's warning about friendly information-gathering?",
+        "options": [
+          "Never talk to colleagues",
+          "Assume everyone is a spy",
+          "Be warm but discreet about sensitive plans and weaknesses",
+          "Only talk about the weather"
+        ],
+        "answer": 2,
+        "explanation": "The aim is balance: keep friendly relationships while thinking before you share sensitive details."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--13",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "unpredictability",
+        "workplace",
+        "control"
+      ],
+      "title": "Unpredictable behaviour can be a way of keeping you off balance",
+      "body": "Greene observes that people who act unpredictably can keep others anxious and focused on them. He describes chess champion Bobby Fischer unsettling Boris Spassky with constant delays and demands before their 1972 match.\n\nIf a boss, partner or client blows hot and cold, it can leave you spending energy trying to guess their mood. Recognising this as a pattern, whether deliberate or not, helps you step back. Focus on what you can control: clear agreements, written records and your own steady standards, rather than chasing their approval.",
+      "apply_it": "If someone's moods keep you guessing, write down the facts of what was agreed, and act on those instead of their mood.",
+      "quiz": {
+        "question": "What effect does Greene say unpredictable behaviour can have on others?",
+        "options": [
+          "It makes them relaxed and trusting",
+          "It has no effect",
+          "It makes them more creative",
+          "It keeps them anxious and focused on the unpredictable person"
+        ],
+        "answer": 3,
+        "explanation": "Unpredictability keeps people off balance and watching. Spotting the pattern helps you anchor yourself in clear facts."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--14",
+      "topic": "relationships",
+      "tags": [
+        "judgement",
+        "respect",
+        "people"
+      ],
+      "title": "Learn who you are dealing with before you push",
+      "body": "Greene warns that people differ widely in how they react to a slight. Some shrug it off; others are proud, insecure or vengeful and will remember a joke or a public correction for years.\n\nThe practical lesson is to take time to understand people before you challenge, tease or criticise them, especially in a new workplace or community. This isn't about fear. It is about choosing the right moment and manner, such as giving criticism in private, and avoiding needless enemies.",
+      "apply_it": "Before giving tough feedback, ask: how has this person reacted to criticism before? Choose your setting with that in mind.",
+      "quiz": {
+        "question": "What does Greene advise before you challenge or criticise someone?",
+        "options": [
+          "Do it publicly so others learn",
+          "Understand the kind of person they are first",
+          "Never criticise anyone",
+          "Always use humour"
+        ],
+        "answer": 1,
+        "explanation": "People react very differently to slights. Knowing them first helps you avoid needless conflict."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--15",
+      "topic": "relationships",
+      "tags": [
+        "conflict",
+        "neutrality",
+        "boundaries"
+      ],
+      "title": "You don't have to take sides in every quarrel",
+      "body": "Greene points out that people who rush to join every dispute lose their freedom and get pulled into fights that are not theirs. He uses Queen Elizabeth I, who avoided committing herself too early to any suitor or faction.\n\nIn ordinary life, office feuds, family arguments and online pile-ons all invite you to pick a side. You can stay kind and fair to both people without signing up to the battle. Holding back keeps your judgement clear and leaves you able to help mend things later.",
+      "apply_it": "Next time two people want you on their side, try saying: 'I care about you both, and I'd rather not get in the middle.'",
+      "quiz": {
+        "question": "Which historical figure does Greene use to show the value of not committing too early?",
+        "options": [
+          "Queen Elizabeth I",
+          "Napoleon",
+          "Julius Caesar",
+          "Louis XIV"
+        ],
+        "answer": 0,
+        "explanation": "Elizabeth I kept her independence by not tying herself too early to any suitor or faction."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--16",
+      "topic": "mental-strength",
+      "tags": [
+        "setbacks",
+        "patience",
+        "strategy"
+      ],
+      "title": "When you can't win now, step back and keep your strength",
+      "body": "Greene argues that fighting a battle you cannot win often makes things worse. Yielding for the moment, without bitterness, can protect you and give you time to recover. He describes Bertolt Brecht answering hostile US congressional questions with calm courtesy and leaving the country free.\n\nThe healthy lesson is about choosing your battles. Pausing an argument with a stronger opponent, accepting a setback gracefully or walking away from a no-win situation is not cowardice. It keeps your energy and options for a better moment.",
+      "apply_it": "Think of a conflict draining you. Is it winnable right now? If not, what would stepping back for a while look like?",
+      "quiz": {
+        "question": "According to Greene, why can stepping back from a battle you can't win be wise?",
+        "options": [
+          "It shows you are weak",
+          "It always ends the conflict forever",
+          "It protects your energy and keeps options open for later",
+          "It makes the other side feel guilty"
+        ],
+        "answer": 2,
+        "explanation": "A tactical retreat preserves strength and gives you time, rather than losing everything in a fight you can't win."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--17",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "priorities",
+        "energy"
+      ],
+      "title": "Concentrate your energy instead of spreading it thin",
+      "body": "Greene argues that strength comes from concentration. Spreading yourself across too many projects, causes or people weakens your impact on all of them.\n\nThis is one of his most useful ideas for ordinary life. If you are juggling several side hustles, courses and commitments, each gets a little attention and none takes off. Choosing one or two areas and going deep tends to produce far better results than many half-efforts.",
+      "apply_it": "List everything you're currently trying to build or learn. Circle the one that matters most and give it your best hours this week.",
+      "quiz": {
+        "question": "What does Greene say about spreading your efforts widely?",
+        "options": [
+          "It makes you more powerful",
+          "It's the only way to find your passion",
+          "It doesn't matter either way",
+          "It weakens your impact; concentration is stronger"
+        ],
+        "answer": 3,
+        "explanation": "Focused effort in one area usually achieves more than scattered effort across many."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--18",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "blame",
+        "scapegoat",
+        "workplace"
+      ],
+      "title": "Notice when you are being set up to take the blame",
+      "body": "Greene describes how some people keep their own hands clean by letting others carry out unpleasant tasks or take the fall when things go wrong. The person left holding the problem becomes the scapegoat.\n\nKnowing this helps you protect yourself. If you are suddenly handed a risky task with no clear instructions, or asked to deliver bad news that isn't yours, get the request in writing, ask who made the decision, and make your concerns known early. Clear records make it much harder for blame to be shifted onto you.",
+      "apply_it": "When you get a vague, risky request, reply with a short email confirming what was asked and by whom.",
+      "quiz": {
+        "question": "How can you protect yourself from being made a scapegoat?",
+        "options": [
+          "Refuse every difficult task",
+          "Get risky requests in writing and clarify who decided",
+          "Blame someone else first",
+          "Stay silent and hope for the best"
+        ],
+        "answer": 1,
+        "explanation": "A written record of who asked for what makes it much harder for blame to be shifted onto you."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--19",
+      "topic": "money",
+      "tags": [
+        "scams",
+        "schemes",
+        "belonging"
+      ],
+      "title": "Be wary of groups that promise belonging plus easy answers",
+      "body": "Greene analyses how charismatic figures build devoted followings by offering people something to believe in: a vague promise, rituals, a sense of belonging and a leader who seems special.\n\nRead in reverse, this is a guide to spotting cult-like groups and get-rich schemes. Warning signs include pressure to recruit others, secrecy, a leader who cannot be questioned, promises that are big but vague, and a demand for growing contributions. Belonging is a real human need, which is exactly why these groups can be so persuasive.",
+      "apply_it": "If a group asks for your money or time, ask: can members question the leader openly? Do they make money mainly by recruiting?",
+      "quiz": {
+        "question": "Which is a warning sign of a cult-like group or scheme, based on Greene's analysis?",
+        "options": [
+          "Members are pressured to recruit and can't question the leader",
+          "It publishes clear accounts",
+          "It welcomes outside advice",
+          "It makes modest, specific promises"
+        ],
+        "answer": 0,
+        "explanation": "Recruitment pressure and an unquestionable leader are classic signs of the cult-like dynamics Greene describes."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--20",
+      "topic": "personal-development",
+      "tags": [
+        "confidence",
+        "action",
+        "courage"
+      ],
+      "title": "Hesitation often causes more trouble than boldness",
+      "body": "Greene argues that timid, half-hearted action invites problems: people sense your doubt and push back, and you second-guess yourself mid-way. Committing fully tends to command more respect and get better results.\n\nThe healthy version is not recklessness. It means doing your thinking first, then acting with conviction once you have decided. Whether you are asking for a raise, launching a product or making a request, a clear and confident ask usually lands better than an apologetic one.",
+      "apply_it": "Rewrite one request you've been putting off so it's direct and confident, without apologising for asking.",
+      "quiz": {
+        "question": "What does Greene say is the risk of entering an action timidly?",
+        "options": [
+          "None; timidity is always safer",
+          "You'll be seen as arrogant",
+          "Others sense your doubt and you second-guess yourself",
+          "It makes things happen faster"
+        ],
+        "answer": 2,
+        "explanation": "Half-hearted action invites resistance. Thinking first and then committing fully tends to work better."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--21",
+      "topic": "money",
+      "tags": [
+        "scams",
+        "fantasies",
+        "investing"
+      ],
+      "title": "If an offer sells a dream, check the facts twice",
+      "body": "Greene notes that people are drawn to those who promise to fulfil their fantasies, such as sudden wealth, easy success or a perfect relationship. He tells of Bragadino, a sixteenth-century swindler who won over Venice by claiming he could make gold.\n\nFor anyone with savings or ambitions, this is a protective lesson. Offers that play to your deepest hopes, like doubling your money fast, can switch off your judgement. The more an offer feels like a dream come true, the more carefully you should check who is behind it and what it really costs.",
+      "apply_it": "Before any 'life-changing' investment or offer, ask a trusted person to look at it with you, and wait 48 hours.",
+      "quiz": {
+        "question": "Why does Greene say people fall for those who sell fantasies?",
+        "options": [
+          "They are always greedy",
+          "Fantasies are usually true",
+          "They enjoy losing money",
+          "The promise of a dream can switch off their judgement"
+        ],
+        "answer": 3,
+        "explanation": "Appeals to deep hopes can override careful thinking, which is why dream-like offers need extra checking."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--22",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-awareness",
+        "weaknesses",
+        "manipulation"
+      ],
+      "title": "Know your own pressure points before someone else finds them",
+      "body": "Greene writes that everyone has a weak spot: an insecurity, a craving for approval, a need to be seen as generous or a hidden fear. People who want to influence you will often look for it.\n\nThe best defence is self-knowledge. If you know that flattery, guilt or fear of missing out tends to move you, you can catch yourself when it is happening. Noticing 'I'm agreeing because I want them to like me' gives you a moment to decide on the merits instead.",
+      "apply_it": "Write down the one emotion that most often pushes you into decisions you regret. Watch for it this week.",
+      "quiz": {
+        "question": "What is the best defence against people who target your weak spots?",
+        "options": [
+          "Avoid all people",
+          "Knowing your own weak spots so you notice when they're being pressed",
+          "Pretending you have no weaknesses",
+          "Finding their weak spots first"
+        ],
+        "answer": 1,
+        "explanation": "Self-awareness lets you notice when guilt, flattery or fear is being used to steer you."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--23",
+      "topic": "productivity",
+      "tags": [
+        "timing",
+        "patience",
+        "decisions"
+      ],
+      "title": "Good timing often matters as much as a good idea",
+      "body": "Greene argues that skilled people pay close attention to timing. They wait patiently when the moment isn't right and then act quickly when it is, instead of rushing out of anxiety or missing the chance through hesitation.\n\nYou can apply this anywhere: raising an issue with your manager when they are calm, launching when customers are ready, or asking a family member for support after, not during, a stressful day. Patience is not passivity; it is waiting with a plan.",
+      "apply_it": "Think of one request you need to make. When is the best moment to ask it, and what will you do until then?",
+      "quiz": {
+        "question": "What does Greene suggest about timing?",
+        "options": [
+          "Wait patiently for the right moment, then act quickly",
+          "Always act immediately",
+          "Timing is pure luck",
+          "Never act until everyone agrees"
+        ],
+        "answer": 0,
+        "explanation": "Greene's view is to be patient while the moment is wrong and decisive once it is right."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--24",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "irritations",
+        "attention",
+        "calm"
+      ],
+      "title": "Don't give small irritations more attention than they deserve",
+      "body": "Greene observes that reacting strongly to a minor problem can make it bigger. Attention gives it importance, and a fuss signals that you have been rattled. Sometimes the strongest response to a small slight or rumour is to calmly ignore it.\n\nThis is useful online and at work. A petty comment, a minor mistake or a rival's jab often fades if left alone, while a heated reply keeps it alive. Save your energy for issues that truly matter, and fix the small ones quietly.",
+      "apply_it": "Next time something petty annoys you, wait a day before responding. Does it still need a reply?",
+      "quiz": {
+        "question": "Why does Greene suggest sometimes ignoring small problems?",
+        "options": [
+          "Problems always solve themselves",
+          "It is rude to respond",
+          "Reacting strongly gives them importance and shows you're rattled",
+          "Small problems never matter"
+        ],
+        "answer": 2,
+        "explanation": "Attention can magnify a minor issue. A calm non-reaction often lets it fade."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--25",
+      "topic": "mental-strength",
+      "tags": [
+        "anger",
+        "provocation",
+        "self-control"
+      ],
+      "title": "When someone tries to provoke you, staying calm is your protection",
+      "body": "Greene explains that angry people make mistakes, so some people deliberately try to provoke others into losing their temper. Once you lose control, you hand them the advantage.\n\nRecognising this is powerful. If a colleague, rival or online troll seems to be baiting you, the reaction is often exactly what they want. Breathing, delaying your reply and responding with facts rather than feeling keeps you in charge of yourself, and often deflates the provocation entirely.",
+      "apply_it": "Decide on a personal rule, such as 'no replies while angry'. Next time you feel baited, use it.",
+      "quiz": {
+        "question": "Why might someone deliberately try to make you angry, according to Greene?",
+        "options": [
+          "Because anger makes you smarter",
+          "To help you release stress",
+          "To show they respect you",
+          "Because angry people make mistakes and lose control"
+        ],
+        "answer": 3,
+        "explanation": "Losing your temper can hand the advantage to the person provoking you. Staying calm protects you."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--26",
+      "topic": "money",
+      "tags": [
+        "free",
+        "obligation",
+        "money"
+      ],
+      "title": "Free offers often come with hidden strings",
+      "body": "Greene warns that what is offered for free frequently carries hidden costs: an obligation, a favour expected later, a sales pitch or simply a way to hook you. He suggests that paying your own way keeps you independent.\n\nThis is a sound money habit. 'Free' trials, gifts from someone who wants a favour and 'free' seminars that end with an expensive package all deserve a second look. Paying a fair price, when you can, often keeps a relationship cleaner than accepting something you will be expected to repay later.",
+      "apply_it": "Look at one 'free' thing you use or were offered recently. What does the giver gain from it?",
+      "quiz": {
+        "question": "What is Greene's point about free offers?",
+        "options": [
+          "Always accept them; they are pure profit",
+          "They often carry hidden obligations or costs",
+          "Only rich people get free things",
+          "Free offers are illegal"
+        ],
+        "answer": 1,
+        "explanation": "A 'free' offer often brings an obligation or a sales hook. Paying your way can keep you independent."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--27",
+      "topic": "leadership",
+      "tags": [
+        "change",
+        "leadership",
+        "culture"
+      ],
+      "title": "Introduce big changes gradually, respecting what people value",
+      "body": "Greene notes that people fear sudden, sweeping change and that reformers who overturn everything at once often face a backlash. Changes that respect familiar customs and arrive step by step are more readily accepted.\n\nThis is practical advice for any new manager, committee member or family member trying to improve things. Explain why change is needed, keep what works, and introduce one improvement at a time. People accept a lot more when they don't feel their whole world is being thrown out.",
+      "apply_it": "If you want to change something at work or home, pick the smallest first step and keep one familiar thing the same.",
+      "quiz": {
+        "question": "Why does Greene advise introducing change gradually?",
+        "options": [
+          "Sudden sweeping change triggers fear and backlash",
+          "Because change is always bad",
+          "Because people never notice gradual change",
+          "To avoid explaining your reasons"
+        ],
+        "answer": 0,
+        "explanation": "People resist upheaval. Step-by-step change that respects what they value is easier to accept."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--28",
+      "topic": "relationships",
+      "tags": [
+        "envy",
+        "humility",
+        "success"
+      ],
+      "title": "Success can stir envy, so stay humble and approachable",
+      "body": "Greene points out that people who seem to have everything can attract quiet envy, and envy can turn into criticism or sabotage. He suggests not flaunting your success and being open about your flaws.\n\nThe healthy takeaway is humility. When you get a promotion, a windfall or recognition, acknowledge others' help, avoid boasting and stay approachable. Admitting a weakness or a past struggle makes you more relatable. It also helps to remember that envy says more about the other person's pain than about you.",
+      "apply_it": "After your next win, thank at least one person who helped you, publicly if you can.",
+      "quiz": {
+        "question": "What does Greene suggest to reduce envy from others?",
+        "options": [
+          "Show off so they respect you",
+          "Hide all your achievements forever",
+          "Avoid flaunting success and be open about some flaws",
+          "Stop trying to succeed"
+        ],
+        "answer": 2,
+        "explanation": "Humility and openness about imperfections make success less likely to provoke envy."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--29",
+      "topic": "business",
+      "tags": [
+        "victory",
+        "restraint",
+        "goals"
+      ],
+      "title": "After a win, know when to stop",
+      "body": "Greene warns that the moment of victory can be dangerous. Success breeds overconfidence, and people often push too far, taking on more risk, more enemies or a deal too many, and lose what they gained.\n\nThis applies to investing, business growth and even arguments. Decide in advance what 'enough' looks like. When you hit your goal, consolidate: bank some gains, rest, review what worked. Then set a new aim deliberately, rather than chasing momentum.",
+      "apply_it": "For your current goal, write down what 'done' looks like and what you'll do to consolidate when you get there.",
+      "quiz": {
+        "question": "What risk does Greene highlight at the moment of victory?",
+        "options": [
+          "Giving up too early",
+          "Celebrating too little",
+          "Forgetting your goals",
+          "Overconfidence leading you to push too far and lose your gains"
+        ],
+        "answer": 3,
+        "explanation": "Success can breed overconfidence. Knowing when to stop protects what you've gained."
+      }
+    },
+    {
+      "id": "48-laws-of-power-greene--30",
+      "topic": "personal-development",
+      "tags": [
+        "adaptability",
+        "change",
+        "resilience"
+      ],
+      "title": "Stay flexible so change doesn't break you",
+      "body": "Greene's final law is about being adaptable, like water that takes the shape of whatever holds it. He argues that rigid people and organisations become predictable and brittle, while those who adjust to circumstances last longer.\n\nFor most people, this means holding firm values while staying open on methods. Industries change, jobs disappear and plans fail. Being willing to learn new skills, try a different approach or move to a new place keeps you resilient when the ground shifts.",
+      "apply_it": "Name one way of working you've held on to for years. Is it still the best way, or just the familiar one?",
+      "quiz": {
+        "question": "What image does Greene use for being adaptable?",
+        "options": [
+          "A rock",
+          "Water",
+          "A mountain",
+          "A fortress"
+        ],
+        "answer": 1,
+        "explanation": "Greene uses water, which takes the shape of its container, as the image of adaptability."
       }
     }
   ]

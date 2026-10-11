@@ -1,0 +1,711 @@
+{
+  "source": {
+    "id": "psychology-of-money-housel",
+    "title": "The Psychology of Money",
+    "authors": [
+      "Morgan Housel"
+    ],
+    "kind": "book",
+    "url": "https://www.harriman-house.com/psychologyofmoney",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of The Psychology of Money by Morgan Housel (2020). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Harriman House",
+    "year": 2020,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "psychology-of-money-housel--01",
+      "topic": "money",
+      "tags": [
+        "behaviour",
+        "experience",
+        "empathy"
+      ],
+      "title": "Your money habits make sense to you because of what you have lived through",
+      "body": "Housel argues that people rarely make money choices at random. Someone who grew up during high inflation, a crash or a long boom carries that experience into how they save, spend and invest. Their choices can look strange from outside yet feel completely reasonable from inside.\n\nThis matters today because financial advice often assumes everyone reasons from the same starting point. Before judging a parent who hoards cash or a friend who takes big risks, ask what years shaped them. The same question is worth asking about yourself.",
+      "apply_it": "Write down one money belief you hold strongly, then note the event or period in your life that probably taught it to you.",
+      "quiz": {
+        "question": "According to Housel, why do people make money decisions that seem odd to others?",
+        "options": [
+          "They lack intelligence",
+          "They are reasoning from their own life experiences",
+          "They follow random impulses",
+          "They copy what experts say"
+        ],
+        "answer": 1,
+        "explanation": "Our personal history shapes what feels sensible, so different lives lead to different, internally logical choices."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--02",
+      "topic": "money",
+      "tags": [
+        "risk",
+        "survival",
+        "long-term"
+      ],
+      "title": "Getting rich and staying rich take different skills",
+      "body": "Housel separates two jobs. Building wealth often rewards boldness and optimism. Keeping it rewards caution, humility and a healthy fear that things can go wrong. Many people who make a fortune later lose it by assuming their good run will last.\n\nHis practical point is that staying in the game beats any single brilliant move. If you avoid the kind of loss that wipes you out, such as debt you can't service or betting everything on one idea, time has a chance to work for you. Survival comes first; returns come second.",
+      "apply_it": "List one financial decision you could make this year that could seriously set you back. Decide what limit would keep it from wiping you out.",
+      "quiz": {
+        "question": "What does Housel say matters most for keeping wealth?",
+        "options": [
+          "Taking ever-bigger risks",
+          "Following the latest trends",
+          "Avoiding losses that knock you out of the game",
+          "Spending to signal success"
+        ],
+        "answer": 2,
+        "explanation": "Staying wealthy depends on caution and survival, so compounding can keep working over time."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--03",
+      "topic": "money",
+      "tags": [
+        "enough",
+        "contentment",
+        "goals"
+      ],
+      "title": "Know what 'enough' looks like before the goalposts move",
+      "body": "One of Housel's warnings is that when income rises, expectations tend to rise just as fast, so satisfaction never arrives. People with plenty sometimes risk what they have and need for more of what they don't need, simply because they compare themselves with those just ahead.\n\nDeciding in advance what 'enough' means gives you a stopping point. It doesn't mean ending ambition; it means refusing gambles whose downside could cost your health, relationships or security for a gain that wouldn't change your life.",
+      "apply_it": "Describe in two sentences what a comfortable, 'enough' life would look like for you, including a rough monthly figure.",
+      "quiz": {
+        "question": "Why is defining 'enough' useful, in Housel's view?",
+        "options": [
+          "It stops expectations from endlessly rising and limits needless risk",
+          "It guarantees you'll get rich",
+          "It means you should stop working",
+          "It helps you compare yourself with others"
+        ],
+        "answer": 0,
+        "explanation": "Without a clear 'enough', the target keeps moving and people take risks they don't need."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--04",
+      "topic": "money",
+      "tags": [
+        "compounding",
+        "patience",
+        "investing"
+      ],
+      "title": "Time does more of the work than skill",
+      "body": "Housel points out that the most famous investors owe much of their fortune to how long they kept going, not only how well they picked. Compounding is easy to underestimate because growth looks slow for years and then speeds up dramatically.\n\nFor most people the lesson is encouraging: you don't need extraordinary returns. Decent, steady results held for a very long time can beat impressive returns that don't last. Starting early and avoiding interruptions matters more than finding the perfect investment.",
+      "apply_it": "If you have savings or a pension, check whether anything is pushing you to stop or withdraw early. Note one thing that would help you stay consistent.",
+      "quiz": {
+        "question": "What does Housel suggest is a key ingredient of long-term wealth?",
+        "options": [
+          "Finding the single best investment",
+          "Trading frequently",
+          "Borrowing heavily",
+          "Staying invested for a very long time"
+        ],
+        "answer": 3,
+        "explanation": "Compounding rewards duration; steady results held for decades can outperform short bursts of brilliance."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--05",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "status",
+        "wealth"
+      ],
+      "title": "Real wealth is mostly the money you don't see",
+      "body": "Housel notes that we judge wealth by what is visible: cars, houses, holidays. But spending money is the opposite of keeping it. Wealth is the income you chose not to spend, quietly invested and growing where no one can see it.\n\nHe also observes that people who admire someone's expensive car usually imagine themselves in it, rather than admiring the driver. Buying things to win respect rarely works. Choosing to save instead gives you something better: options and freedom later.",
+      "apply_it": "Next time you want something mainly so others will notice it, pause for 48 hours and decide whether you'd still want it if nobody saw it.",
+      "quiz": {
+        "question": "How does Housel distinguish being rich from being wealthy?",
+        "options": [
+          "Rich means a high salary; wealthy means owning property",
+          "Wealth is unspent money and assets that aren't on display",
+          "There is no difference",
+          "Wealth is measured by what you can show others"
+        ],
+        "answer": 1,
+        "explanation": "Visible spending can look like wealth, but true wealth is the saved and invested money you never see."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--06",
+      "topic": "money",
+      "tags": [
+        "margin-of-safety",
+        "saving",
+        "uncertainty"
+      ],
+      "title": "Leave room for error, and save even without a reason",
+      "body": "Because the future is uncertain, Housel suggests planning for things not going to plan. A margin of safety, such as savings you don't touch, modest assumptions or lower debt, lets you survive surprises without being forced to sell or give up.\n\nHe also argues you don't need a specific goal to justify saving. Money set aside is protection against events you can't predict, and it buys control over your time: the ability to leave a bad job, wait out a downturn or take a chance.",
+      "apply_it": "Set up an automatic transfer, however small, into a savings pot labelled 'room for error'.",
+      "quiz": {
+        "question": "Why does Housel recommend saving even without a specific goal?",
+        "options": [
+          "Because interest rates are always high",
+          "To impress lenders",
+          "It cushions you against surprises and gives you control over your time",
+          "Because spending is always wrong"
+        ],
+        "answer": 2,
+        "explanation": "Unplanned events are certain to happen; savings give flexibility and independence when they do."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--07",
+      "topic": "money",
+      "tags": [
+        "luck",
+        "risk",
+        "judgement"
+      ],
+      "title": "Luck and risk are two sides of the same coin",
+      "body": "Housel tells the story of Bill Gates, who attended one of the very few high schools in the world with a computer in the 1960s, and of his gifted school friend Kent Evans, who died in a mountaineering accident before he could share in that future. One shows luck, the other risk.\n\nHis point is that outcomes depend on forces beyond any one person's effort. Hard work and good decisions matter, but so does chance, in both directions. Judging people, including yourself, purely by results ignores that. A good decision can turn out badly and a reckless one can turn out well.",
+      "apply_it": "Think of one result in your life you credit fully to your own effort. List one piece of luck that also helped.",
+      "quiz": {
+        "question": "What does Housel use the stories of Bill Gates and Kent Evans to show?",
+        "options": [
+          "That luck and risk both shape outcomes beyond our control",
+          "That talent always wins in the end",
+          "That computers guarantee success",
+          "That school matters more than anything"
+        ],
+        "answer": 0,
+        "explanation": "One friend had extraordinary luck, the other met tragic risk. Both remind us that results aren't purely earned."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--08",
+      "topic": "money",
+      "tags": [
+        "luck",
+        "learning",
+        "role-models"
+      ],
+      "title": "Learn from broad patterns, not extreme success stories",
+      "body": "Because luck plays such a big part, Housel warns against copying the most dramatic winners. The more extreme an outcome, the more likely it involved rare luck or risk that you can't repeat. Studying one billionaire's choices can teach the wrong lessons.\n\nHe suggests looking instead for broad patterns that show up across many ordinary people: those who save steadily, avoid ruinous debt and stay patient tend to do well over time. Those lessons are less exciting than a famous rags-to-riches story, but they're far more likely to work for you.",
+      "apply_it": "Next time you read a success story, ask: would this approach work for most people who tried it, or only for the lucky few?",
+      "quiz": {
+        "question": "Why does Housel caution against copying extreme success stories?",
+        "options": [
+          "They are always made up",
+          "Ordinary people can't learn from others",
+          "Rich people never share their secrets",
+          "Extreme outcomes often depend on luck you can't repeat"
+        ],
+        "answer": 3,
+        "explanation": "The more extreme the result, the more chance played a role, so broad patterns are better guides."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--09",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "humility",
+        "self-compassion",
+        "luck"
+      ],
+      "title": "Be humble when things go well and kind to yourself when they don't",
+      "body": "Housel draws a practical attitude from the role of luck. When things go right, remember that some of it wasn't your doing, which keeps you from becoming overconfident and taking bigger risks than you should. When things go wrong, remember that not every failure is a verdict on your character or ability.\n\nThis balance protects you on both sides. Arrogance after success is how many fortunes get lost, and harsh self-blame after setbacks can stop people from trying again. Neither success nor failure is ever as personal as it feels.",
+      "apply_it": "Recall a recent setback. Write one factor that was outside your control, then one thing you'd keep doing anyway.",
+      "quiz": {
+        "question": "What attitude does Housel recommend toward success and failure?",
+        "options": [
+          "Take full credit for success and full blame for failure",
+          "Ignore results entirely",
+          "Stay humble in success and forgiving in failure",
+          "Assume every failure is someone else's fault"
+        ],
+        "answer": 2,
+        "explanation": "Because luck and risk play a part, humility guards against overconfidence and compassion guards against giving up."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--10",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "tail-events",
+        "persistence"
+      ],
+      "title": "A few big wins can matter more than many small losses",
+      "body": "Housel describes how, in investing and business, a small number of outcomes often drive most of the results. Many investments go nowhere, many products flop, and yet one or two successes can outweigh all of them. He calls these 'tail' events.\n\nThe practical lesson is that being wrong often is normal, even for very successful people. What matters is staying in the game long enough, and diversified enough, for the rare big winners to show up. Treating each individual failure as proof you're doing badly misreads how this kind of success actually works.",
+      "apply_it": "Look at a goal where you've had several misses. Ask whether you've given yourself enough attempts, not just whether each one worked.",
+      "quiz": {
+        "question": "According to Housel, what often drives most of the results in investing and business?",
+        "options": [
+          "Avoiding every mistake",
+          "Following expert forecasts",
+          "Steady average performance every year",
+          "A small number of outcomes that turn out very well"
+        ],
+        "answer": 3,
+        "explanation": "Tail events, a few big successes, can outweigh many failures, so persistence and diversification matter."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--11",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "panic",
+        "behaviour"
+      ],
+      "title": "How you act in a few moments of panic matters most",
+      "body": "Housel argues that an investor's long-run results are shaped less by countless ordinary days than by how they behave during rare moments of fear, such as a market crash or a frightening news cycle. Selling everything in a panic can undo decades of patient saving.\n\nThe same is true in careers and businesses: a handful of critical decisions under pressure count far more than routine ones. Since you can't predict when these moments will come, the preparation has to happen in advance: knowing your plan, holding enough cash and deciding beforehand not to react to every headline.",
+      "apply_it": "Write a one-line rule for what you'll do, and won't do, the next time your investments or income take a sudden hit.",
+      "quiz": {
+        "question": "What does Housel say has the biggest effect on an investor's results?",
+        "options": [
+          "How they respond during rare moments of panic",
+          "How many news articles they read",
+          "How often they trade",
+          "Whether they pick the hottest stock each year"
+        ],
+        "answer": 0,
+        "explanation": "A few high-pressure moments, like crashes, can make or break long-term results."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--12",
+      "topic": "personal-development",
+      "tags": [
+        "freedom",
+        "time",
+        "happiness"
+      ],
+      "title": "Control over your time is the best thing money can buy",
+      "body": "Housel calls this the highest dividend money pays: the ability to do what you want, when you want, with the people you want. He points to research suggesting that a strong sense of control over one's life predicts happiness better than income alone.\n\nThis changes how you might think about spending. A bigger car may bring a brief thrill, but savings that let you turn down a bad job, take time to care for family or wait for a better opportunity give a deeper, longer-lasting kind of comfort. Money's quietest use can be its most valuable.",
+      "apply_it": "Name one decision about your time you'd make differently if you had six months of expenses saved. Let that guide your next saving step.",
+      "quiz": {
+        "question": "What does Housel describe as money's highest dividend?",
+        "options": [
+          "Buying the latest gadgets",
+          "Control over your own time",
+          "Impressing your neighbours",
+          "Paying less tax"
+        ],
+        "answer": 1,
+        "explanation": "He argues that autonomy over your time is the most valuable thing money provides."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--13",
+      "topic": "productivity",
+      "tags": [
+        "work",
+        "freedom",
+        "time"
+      ],
+      "title": "A bigger salary doesn't always mean more freedom",
+      "body": "Housel observes that many people today earn far more than earlier generations yet don't feel happier. One reason he offers is that a lot of modern work is thinking work, which follows you home. A farmer could leave the field at sunset; someone whose job lives in their head and phone may never fully switch off.\n\nThe lesson isn't to avoid ambitious work. It's to notice that pay is only one part of the deal. Hours, flexibility, commute and how much the job intrudes on your evenings shape whether higher income actually improves your life.",
+      "apply_it": "When comparing two jobs or roles, list what each costs you in time and mental space, not just what it pays.",
+      "quiz": {
+        "question": "Why does Housel say higher pay doesn't always bring more happiness?",
+        "options": [
+          "Taxes take all the extra money",
+          "Rich people are naturally unhappy",
+          "Modern work often takes over your time and attention",
+          "Money has no effect on wellbeing"
+        ],
+        "answer": 2,
+        "explanation": "When work occupies your mind constantly, you can lose control of your time despite higher income."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--14",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "ego",
+        "spending"
+      ],
+      "title": "Your savings rate depends more on your ego than on your income",
+      "body": "Housel argues that you can't fully control your income or investment returns, but you can control how much you save. And beyond a basic level of comfort, much spending is driven by ego: wanting to keep up, to look successful or to match people around you.\n\nSo one of the strongest ways to build wealth is learning to want a bit less. Every time you're content without the bigger version of something, the gap between what you earn and what you spend widens. That gap, not the size of your pay, is what turns into savings.",
+      "apply_it": "Pick one purchase you made mainly to look good to others. Decide whether you'd buy it again, and redirect that amount next time.",
+      "quiz": {
+        "question": "What does Housel say is most important for building savings?",
+        "options": [
+          "Picking the best investments",
+          "Waiting for a big pay rise",
+          "Following stock tips",
+          "Keeping your ego and lifestyle wants in check"
+        ],
+        "answer": 3,
+        "explanation": "Savings come from the gap between income and spending, and that gap widens when ego-driven spending falls."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--15",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "strategy",
+        "consistency"
+      ],
+      "title": "Aim to be reasonable with money, not perfectly rational",
+      "body": "Housel suggests that the best financial plan on paper is useless if you can't stick with it. People aren't spreadsheets; they have fears, families and feelings. A strategy that feels comfortable enough to keep through hard times can beat a mathematically better one that you abandon in a panic.\n\nHe also notes that liking what you invest in or work on helps you endure. Choosing a reasonable plan you believe in, and can live with when things go badly, is a smarter goal than chasing the theoretically optimal one.",
+      "apply_it": "Look at your current saving or investing plan. Would you still follow it during a scary year? If not, simplify it until you would.",
+      "quiz": {
+        "question": "Why does Housel prefer reasonable plans over perfectly rational ones?",
+        "options": [
+          "You're more likely to stick with a plan you can live with",
+          "Rational plans are always wrong",
+          "Feelings should be ignored",
+          "Reasonable plans guarantee higher returns"
+        ],
+        "answer": 0,
+        "explanation": "A plan only works if you keep following it, so comfort and endurance matter more than theoretical perfection."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--16",
+      "topic": "money",
+      "tags": [
+        "history",
+        "forecasting",
+        "uncertainty"
+      ],
+      "title": "Use history to understand people, not to predict the future",
+      "body": "Housel points out that many of the events that changed economies most were things that had never happened before, so no one using the past as a guide saw them coming. History is a poor map of what exactly will happen next.\n\nWhere history is useful, he argues, is in showing how people behave: greed, fear, overconfidence and the habit of following the crowd repeat across centuries. So study the past for lessons about human nature, while staying humble about specific forecasts, whether they come from experts or from your own hunches.",
+      "apply_it": "Before acting on a prediction you've read, ask: is this about how people behave, or about exactly what will happen next?",
+      "quiz": {
+        "question": "According to Housel, what is history most useful for?",
+        "options": [
+          "Predicting exact market moves",
+          "Understanding recurring human behaviour",
+          "Proving that experts are always right",
+          "Showing that nothing ever changes"
+        ],
+        "answer": 1,
+        "explanation": "Specific events surprise us, but patterns of greed and fear repeat, so history teaches about people."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--17",
+      "topic": "money",
+      "tags": [
+        "risk",
+        "planning",
+        "surprises"
+      ],
+      "title": "Your worst-case plan probably isn't bad enough",
+      "body": "Housel notes that people often plan for the worst thing that has happened before. But the worst event in history was, at the time, worse than anything before it. The past can't show you the full range of what's possible.\n\nHe borrows a point from financial planner Carl Richards: real risk is whatever remains once you believe every possibility is covered. The practical answer isn't constant fear but extra buffers: more savings than seems necessary, less debt than you could handle on a good day, and plans that can bend rather than break.",
+      "apply_it": "Take your emergency plan and ask what you'd do if the situation lasted twice as long. Add one step that covers that case.",
+      "quiz": {
+        "question": "Why does Housel say worst-case planning often falls short?",
+        "options": [
+          "Bad events never repeat",
+          "Planning is a waste of time",
+          "The next worst event may exceed anything seen before",
+          "Experts always know the worst case"
+        ],
+        "answer": 2,
+        "explanation": "Every record-breaking disaster was once unprecedented, so buffers should go beyond past extremes."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--18",
+      "topic": "money",
+      "tags": [
+        "optimism",
+        "risk",
+        "long-term"
+      ],
+      "title": "Be optimistic about the long run and cautious about the short run",
+      "body": "Housel describes a useful mixed mindset. Be optimistic that, over many years, growth and progress will reward patience. But be paranoid about the things that could stop you from reaching the long run, such as job loss, a crash or a medical bill, when you can't afford to be caught out.\n\nThe two attitudes support each other. Short-term caution, in the form of savings and modest debt, lets you survive the bad stretches. That survival is what lets your long-term optimism actually pay off, instead of being cut short at the worst moment.",
+      "apply_it": "Write one reason you're hopeful about your finances in ten years, and one safeguard you'll put in place this year to get there.",
+      "quiz": {
+        "question": "What combination of attitudes does Housel recommend?",
+        "options": [
+          "Pessimism about everything",
+          "Optimism about everything",
+          "Ignoring the future entirely",
+          "Long-term optimism with short-term caution"
+        ],
+        "answer": 3,
+        "explanation": "Caution keeps you in the game through hard times, so long-term optimism can pay off."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--19",
+      "topic": "personal-development",
+      "tags": [
+        "change",
+        "planning",
+        "goals"
+      ],
+      "title": "Avoid extreme financial plans, because you will change",
+      "body": "Housel points out that people consistently underestimate how much their goals and tastes will change. The job, city or lifestyle you dream of at 20 may not appeal at 40. Psychologists call this the 'end of history illusion': we know we've changed a lot in the past, yet assume we're done changing now.\n\nHis advice is to avoid the extremes, like saving nothing at all or sacrificing every comfort for a single distant goal. A moderate plan, with balanced saving, working and living, is less likely to leave you full of regret when your priorities shift.",
+      "apply_it": "Look at one long-term plan you hold. Ask what you'd regret if your priorities changed in ten years, and soften the most extreme part.",
+      "quiz": {
+        "question": "What is the 'end of history illusion' Housel mentions?",
+        "options": [
+          "Believing you have finished changing even though you've changed before",
+          "Thinking history is boring",
+          "Expecting markets to stop rising",
+          "Forgetting past mistakes"
+        ],
+        "answer": 0,
+        "explanation": "We see how much we've changed but wrongly assume we'll stay the same from now on."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--20",
+      "topic": "learning",
+      "tags": [
+        "sunk-cost",
+        "change",
+        "decisions"
+      ],
+      "title": "Don't stay stuck just because you've already invested a lot",
+      "body": "Housel connects changing goals to sunk costs: the time, money or effort you've already spent and can't get back. Because we hate to see that investment wasted, we often keep going down a path that no longer suits who we've become.\n\nHe encourages accepting that changing your mind is normal and healthy. The years spent training for a career, or the money put into a project, are gone either way. The question worth asking is which path serves you best from here, not how to justify what you've already spent.",
+      "apply_it": "Pick one commitment you continue mainly because of past effort. Ask: if I were starting fresh today, would I choose this?",
+      "quiz": {
+        "question": "How does Housel suggest handling past investments of time or money?",
+        "options": [
+          "Never change course once you've started",
+          "Accept them as gone and decide based on what's best now",
+          "Spend more to recover them",
+          "Blame others for them"
+        ],
+        "answer": 1,
+        "explanation": "Sunk costs can't be recovered, so future choices should reflect who you are now."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--21",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "volatility",
+        "patience"
+      ],
+      "title": "Treat market ups and downs as a fee, not a fine",
+      "body": "Housel argues that every reward has a price, and the price of long-term investment returns is uncertainty: drops, doubt and fear along the way. Many people try to avoid paying it by jumping in and out, which often costs them more.\n\nThe mindset shift he suggests is to view volatility as a fee, like an admission ticket to something worth having, rather than a fine that means you did something wrong. If you accept the fee in advance, you're far less likely to panic when it's charged.",
+      "apply_it": "Before your next investment, write down how big a temporary fall you're prepared to sit through. Read it if that fall arrives.",
+      "quiz": {
+        "question": "How does Housel suggest viewing market volatility?",
+        "options": [
+          "As a sign you made a mistake",
+          "As a reason to sell immediately",
+          "As the price you pay for long-term returns",
+          "As something experts can always avoid"
+        ],
+        "answer": 2,
+        "explanation": "Seeing volatility as a fee for returns makes it easier to stay invested when prices fall."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--22",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "goals",
+        "comparison"
+      ],
+      "title": "Know what game you're playing before taking money cues from others",
+      "body": "Housel explains that people can make very different money choices that are all sensible for them. A short-term trader and someone saving for retirement might look at the same price and reach opposite conclusions, both reasonably. Trouble starts when one copies the other without realising they have different goals and time frames.\n\nHe links this to bubbles: prices pushed up by short-term buyers get taken as a signal by long-term investors, who end up paying for a game they never meant to play. Knowing your own goals helps you ignore advice that wasn't meant for you.",
+      "apply_it": "Write one sentence describing your own money game: what you're aiming for and over what time frame.",
+      "quiz": {
+        "question": "Why does Housel warn against copying other investors?",
+        "options": [
+          "Everyone else is always wrong",
+          "Copying is illegal",
+          "Only experts should invest",
+          "They may have different goals and time frames"
+        ],
+        "answer": 3,
+        "explanation": "A move that's sensible for a short-term trader can be harmful for someone investing for decades."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--23",
+      "topic": "psychology",
+      "tags": [
+        "pessimism",
+        "optimism",
+        "progress"
+      ],
+      "title": "Pessimism sounds smarter, but progress usually wins",
+      "body": "Housel notices that gloomy forecasts tend to sound more intelligent and get more attention than hopeful ones. Bad news is sudden and vivid; progress is slow and easy to miss. A crash makes headlines in a day, while decades of steady improvement barely get noticed.\n\nHe doesn't dismiss risk. His point is that growth tends to compound quietly while setbacks arrive loudly, which skews how we see the world. Remembering this can stop you from giving up on long-term plans because of a frightening headline.",
+      "apply_it": "After reading a gloomy money headline, ask yourself what quiet progress might be happening that wouldn't make the news.",
+      "quiz": {
+        "question": "Why does Housel say pessimism often seems more convincing than optimism?",
+        "options": [
+          "Setbacks are sudden and visible while progress is slow and quiet",
+          "Pessimists are always right",
+          "Optimism is against the law in finance",
+          "Good news never happens"
+        ],
+        "answer": 0,
+        "explanation": "Sudden losses grab attention while gradual gains go unnoticed, so pessimism sounds wiser than it is."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--24",
+      "topic": "learning",
+      "tags": [
+        "stories",
+        "bias",
+        "beliefs"
+      ],
+      "title": "The more you want something to be true, the easier it is to believe",
+      "body": "Housel describes how strong hopes make us vulnerable to appealing stories. When people badly need something, such as a quick way out of debt or a cure for money stress, they are more likely to believe a story that promises it, even when the odds are poor.\n\nThis explains why get-rich-quick schemes often target people in difficult situations. Noticing your own desire is a useful warning signal. When an opportunity seems perfectly suited to what you most wish for, that's exactly when to slow down and check the facts.",
+      "apply_it": "Think of an offer that excited you recently. Ask: am I believing this because the evidence is strong, or because I want it to be true?",
+      "quiz": {
+        "question": "According to Housel, when are people most likely to believe an unrealistic story?",
+        "options": [
+          "When they have lots of data",
+          "When they badly want it to be true",
+          "When they are calm and relaxed",
+          "When the story is boring"
+        ],
+        "answer": 1,
+        "explanation": "Strong desire makes appealing stories easier to accept, even when the odds are poor."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--25",
+      "topic": "learning",
+      "tags": [
+        "uncertainty",
+        "control",
+        "humility"
+      ],
+      "title": "You understand less than you think, so leave room for surprises",
+      "body": "Housel points out that everyone sees only a small part of the world, then fills the gaps with stories that feel complete. We believe we understand why markets moved or how the economy works, and that confidence gives us a sense of control we don't really have.\n\nAccepting this is freeing rather than discouraging. If you admit how much is unknown, you'll make plans that don't depend on perfect predictions: spreading risk, keeping reserves and focusing on the few things you can actually control, like your savings rate and your behaviour.",
+      "apply_it": "List three things that affect your finances. Mark which you control. Put your energy into those.",
+      "quiz": {
+        "question": "What mistake does Housel say we make about our understanding of the world?",
+        "options": [
+          "We admit we know nothing",
+          "We rely too much on experts",
+          "We fill gaps with stories and feel more in control than we are",
+          "We ignore all stories"
+        ],
+        "answer": 2,
+        "explanation": "Incomplete knowledge gets patched with stories that make the world feel more predictable than it is."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--26",
+      "topic": "money",
+      "tags": [
+        "peace-of-mind",
+        "personal-finance",
+        "decisions"
+      ],
+      "title": "Manage your money in a way that lets you sleep at night",
+      "body": "Housel offers a simple test for financial decisions: does this let you rest easy? He admits his own family made choices that aren't strictly optimal on paper, such as paying off their home and keeping more cash than advisers might suggest, because of the security it gave them.\n\nHis point isn't that everyone should copy those choices. It's that peace of mind is a legitimate goal. A plan that keeps you anxious every night may lead to poor decisions, while one that lets you sleep is more likely to last.",
+      "apply_it": "Ask yourself which part of your money situation worries you most at night, and choose one step to ease it this month.",
+      "quiz": {
+        "question": "What test does Housel suggest for financial decisions?",
+        "options": [
+          "Whether it maximises returns at any cost",
+          "Whether friends approve",
+          "Whether experts recommend it",
+          "Whether it lets you sleep at night"
+        ],
+        "answer": 3,
+        "explanation": "Peace of mind is a valid goal, and calm plans are easier to stick with."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--27",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "simplicity",
+        "index-funds"
+      ],
+      "title": "A simple, low-cost approach can be enough",
+      "body": "Near the end of the book, Housel shares how he invests his own money. He says he mostly uses low-cost index funds, because he believes consistently beating the market is very hard for most people, and he'd rather focus on saving steadily and staying patient.\n\nHe's careful to say this is what works for him, not a rule for everyone. But it challenges the idea that you need complexity or insider tips to do well. For many ordinary savers, a simple, cheap, diversified approach, held for a long time, is a sensible starting point.",
+      "apply_it": "Check what fees you pay on any savings or investment product you hold. Ask whether a simpler, cheaper option exists in your country.",
+      "quiz": {
+        "question": "How does Housel describe his own investing approach?",
+        "options": [
+          "Mostly low-cost index funds, kept simple",
+          "Day trading every morning",
+          "Following celebrity tips",
+          "Investing only in gold"
+        ],
+        "answer": 0,
+        "explanation": "He favours simple, low-cost funds, while noting it's his choice rather than a universal rule."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--28",
+      "topic": "money",
+      "tags": [
+        "flexibility",
+        "saving",
+        "opportunity"
+      ],
+      "title": "In a world full of clever people, flexibility is an edge",
+      "body": "Housel observes that intelligence is common; there are always people smarter or better informed than you. What's rarer is flexibility: the ability to wait, to change direction or to grab an opportunity without being forced into a bad deal.\n\nSavings provide that flexibility. Someone with a cushion can take a lower-paid job that teaches more, retrain, or hold steady when others are forced to sell. In a competitive world, having options can be worth more than having a slightly better idea.",
+      "apply_it": "Name one opportunity you'd take if you had more savings. Set a modest saving target to make that option realistic.",
+      "quiz": {
+        "question": "What does Housel say is a rarer advantage than intelligence?",
+        "options": [
+          "Having a famous mentor",
+          "Flexibility and the ability to wait",
+          "Knowing the latest trend",
+          "Working longer hours"
+        ],
+        "answer": 1,
+        "explanation": "Because smart people are everywhere, the room to wait and adapt, often bought with savings, is the edge."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--29",
+      "topic": "money",
+      "tags": [
+        "history",
+        "learning",
+        "patience"
+      ],
+      "title": "Be patient with yourself: modern money management is new",
+      "body": "Housel points out that many of the financial tools ordinary people now rely on are surprisingly recent. Widespread personal retirement saving, easy consumer credit and mass investing in shares have only become common in the last few generations, especially in richer countries.\n\nSo nobody really has deep instincts for this. We're all relatively new at it, learning as we go. That's a reason to be patient with your own mistakes and with family members who handle money differently, and to keep learning instead of assuming you should already know everything.",
+      "apply_it": "Name one money topic you feel embarrassed not to understand. Spend 15 minutes this week learning the basics.",
+      "quiz": {
+        "question": "Why does Housel say people struggle with modern personal finance?",
+        "options": [
+          "They are lazy",
+          "Most tools are fairly recent, so we're all still learning",
+          "Money was easier in the past",
+          "Banks hide everything"
+        ],
+        "answer": 1,
+        "explanation": "Many modern financial tools are new, so few people have long experience or instincts for them."
+      }
+    },
+    {
+      "id": "psychology-of-money-housel--30",
+      "topic": "money",
+      "tags": [
+        "risk",
+        "emergency-fund",
+        "resilience"
+      ],
+      "title": "Find the single points of failure in your finances",
+      "body": "Housel borrows an idea from engineering: systems often collapse because one part fails and nothing backs it up. In personal finance, he notes, the biggest weak point for many households is reliance on a single monthly income with no savings behind it.\n\nOther single points of failure might be one client, one customer, one investment or one person who knows how the money works. Spotting them in advance lets you add a backup, such as an emergency fund, a second skill or a shared record of accounts, before anything breaks.",
+      "apply_it": "List the parts of your finances that would cause serious trouble if they stopped tomorrow. Choose one to back up this month.",
+      "quiz": {
+        "question": "What does Housel identify as a common single point of failure for households?",
+        "options": [
+          "Owning too many books",
+          "Having too many friends",
+          "Relying on one paycheck with no savings",
+          "Paying bills on time"
+        ],
+        "answer": 2,
+        "explanation": "Depending entirely on one income without savings leaves a household exposed if it stops."
+      }
+    }
+  ]
+}

@@ -4,22 +4,38 @@ import 'package:go_router/go_router.dart';
 import 'api/models.dart';
 import 'data/providers.dart';
 import 'features/ask/ask_screen.dart';
+import 'features/admin/admin_screen.dart';
 import 'features/auth/auth_screen.dart';
+import 'features/auth/forgot_password_screen.dart';
 import 'features/card/card_screen.dart';
+import 'features/circles/circle_screen.dart';
+import 'features/circles/circles_screen.dart';
+import 'features/comments/comments_screen.dart';
 import 'features/contribute/contribute_screen.dart';
 import 'features/contribute/my_contributions_screen.dart';
 import 'features/daily/daily_screen.dart';
+import 'features/discover/discover_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/moderation/moderation_screen.dart';
+import 'features/notifications/notifications_screen.dart';
 import 'features/onboarding/topic_picker_screen.dart';
+import 'features/premium/premium_screen.dart';
 import 'features/profile/profile_screen.dart';
+import 'features/referrals/invite_screen.dart';
 import 'features/review/quiz_screen.dart';
 import 'features/review/review_screen.dart';
 import 'features/search/search_screen.dart';
+import 'features/settings/settings_screen.dart';
 import 'features/shell/app_shell.dart';
+import 'features/social/author_screen.dart';
+import 'features/social/favorites_screen.dart';
+import 'features/social/following_screen.dart';
+import 'features/social/user_profile_screen.dart';
 import 'features/source/source_screen.dart';
+import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
+import 'features/timeline/timeline_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final router = GoRouter(
@@ -48,12 +64,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         branches: [
           StatefulShellBranch(
             routes: [
-              GoRoute(path: '/home', builder: (_, _) => const HomeScreen()),
+              GoRoute(path: '/home', builder: (_, _) => const TimelineScreen()),
             ],
           ),
           StatefulShellBranch(
             routes: [
-              GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
+              GoRoute(
+                path: '/discover',
+                builder: (_, _) => const DiscoverScreen(),
+              ),
             ],
           ),
           StatefulShellBranch(
@@ -89,6 +108,7 @@ final routerProvider = Provider<GoRouter>((ref) {
           ),
         ],
       ),
+      GoRoute(path: '/feed', builder: (_, _) => const HomeScreen()),
       GoRoute(path: '/daily', builder: (_, _) => const DailyScreen()),
       GoRoute(
         path: '/cards/:id',
@@ -98,13 +118,66 @@ final routerProvider = Provider<GoRouter>((ref) {
         ),
       ),
       GoRoute(
+        path: '/posts/:id/comments',
+        builder: (_, s) => CommentsScreen(
+          postId: s.pathParameters['id']!,
+          post: s.extra is Post ? s.extra as Post : null,
+        ),
+      ),
+      GoRoute(
+        path: '/users/:handle',
+        builder: (_, s) =>
+            UserProfileScreen(handle: s.pathParameters['handle']!),
+      ),
+      GoRoute(
+        path: '/authors/:name',
+        builder: (_, s) => AuthorScreen(name: s.pathParameters['name']!),
+      ),
+      GoRoute(path: '/favorites', builder: (_, _) => const FavoritesScreen()),
+      GoRoute(path: '/following', builder: (_, _) => const FollowingScreen()),
+      GoRoute(path: '/settings', builder: (_, _) => const SettingsScreen()),
+      GoRoute(
+        path: '/forgot',
+        builder: (_, s) => ForgotPasswordScreen(
+          email: s.extra is String ? s.extra as String : null,
+        ),
+      ),
+      GoRoute(
         path: '/sources/:id',
         builder: (_, s) => SourceScreen(sourceId: s.pathParameters['id']!),
       ),
+      GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
+      GoRoute(
+        path: '/notifications',
+        builder: (_, _) => const NotificationsScreen(),
+      ),
+      GoRoute(path: '/circles', builder: (_, _) => const CirclesScreen()),
+      GoRoute(
+        path: '/circles/:id',
+        builder: (_, s) => CircleScreen(circleId: s.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/s/:id',
+        builder: (_, s) => PublicStashScreen(stashId: s.pathParameters['id']!),
+      ),
+      GoRoute(path: '/premium', builder: (_, _) => const PremiumScreen()),
+      GoRoute(path: '/invite', builder: (_, _) => const InviteScreen()),
+      GoRoute(path: '/admin', builder: (_, _) => const AdminScreen()),
       GoRoute(path: '/signin', builder: (_, _) => const AuthScreen()),
       GoRoute(
         path: '/register',
-        builder: (_, _) => const AuthScreen(register: true),
+        builder: (_, s) => AuthScreen(
+          register: true,
+          referralCode: s.uri.queryParameters['ref'],
+        ),
+      ),
+      // Invite links (WEB_BASE_URL/join?ref=CODE) opened in the app.
+      GoRoute(
+        path: '/join',
+        builder: (_, s) => AuthScreen(
+          register: true,
+          referralCode: s.uri.queryParameters['ref'],
+        ),
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfileScreen()),
       GoRoute(path: '/contribute', builder: (_, _) => const ContributeScreen()),

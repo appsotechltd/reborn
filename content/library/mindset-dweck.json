@@ -1,0 +1,712 @@
+{
+  "source": {
+    "id": "mindset-dweck",
+    "title": "Mindset",
+    "authors": [
+      "Carol S. Dweck"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Mindset_(book)",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Mindset by Carol S. Dweck (2006). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Random House",
+    "year": 2006,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "mindset-dweck--01",
+      "topic": "psychology",
+      "tags": [
+        "growth-mindset",
+        "beliefs",
+        "learning"
+      ],
+      "title": "What you believe about ability shapes how you approach challenges",
+      "body": "Dweck contrasts two beliefs. In a fixed mindset, talent and intelligence are set amounts, so every test is a verdict on who you are. In a growth mindset, abilities can be developed through effort, good strategies and help from others, so a test is a chance to learn.\n\nShe argues these beliefs affect whether people seek challenges or avoid them. Most of us hold a mix, and it can shift by area: you might feel you can improve at work but believe you're simply 'not a maths person'.",
+      "apply_it": "Name one area where you think 'I'm just not good at this'. Rephrase it as 'I'm not good at this yet' and pick one thing to practise.",
+      "quiz": {
+        "question": "In a growth mindset, how are abilities seen?",
+        "options": [
+          "As fixed at birth",
+          "As something that can be developed",
+          "As irrelevant to success",
+          "As purely down to luck"
+        ],
+        "answer": 1,
+        "explanation": "A growth mindset treats ability as something that can grow with effort, strategy and support."
+      }
+    },
+    {
+      "id": "mindset-dweck--02",
+      "topic": "communication",
+      "tags": [
+        "praise",
+        "parenting",
+        "teaching"
+      ],
+      "title": "Praise the process, not the person's talent",
+      "body": "Dweck's research suggests that how we praise matters. Calling someone 'so clever' can quietly teach them that ability is fixed, which can make them wary of hard tasks that might prove otherwise. Praising the effort, the strategy they used or how they kept going points attention at things they can control and repeat.\n\nThis isn't about praising effort that didn't work. It's about linking progress to what the person did, so they know what to try next time.",
+      "apply_it": "Next time you compliment someone's work, mention a specific choice they made, such as how they planned it or what they tried after getting stuck.",
+      "quiz": {
+        "question": "Which kind of praise does Dweck recommend?",
+        "options": [
+          "\"You're a natural\"",
+          "\"You're smarter than everyone\"",
+          "No praise at all",
+          "Specific praise for the approach and persistence"
+        ],
+        "answer": 3,
+        "explanation": "Praising process links success to things people can repeat and improve."
+      }
+    },
+    {
+      "id": "mindset-dweck--03",
+      "topic": "mental-strength",
+      "tags": [
+        "failure",
+        "resilience",
+        "feedback"
+      ],
+      "title": "A setback is information, not a label",
+      "body": "In a fixed mindset, failing can feel like proof that you lack ability, so people may hide mistakes, blame others or give up. Dweck describes how people with more of a growth mindset tend to treat setbacks as useful feedback: what went wrong, and what should I change?\n\nThe disappointment is still real. The difference is what happens next. Separating 'I failed at this' from 'I am a failure' keeps the door open to trying again with a better plan.",
+      "apply_it": "Think of a recent setback. Write one sentence on what it taught you and one change you'll make next time.",
+      "quiz": {
+        "question": "How does a growth mindset tend to treat failure?",
+        "options": [
+          "As feedback to learn from",
+          "As proof of low ability",
+          "As something to hide",
+          "As someone else's fault"
+        ],
+        "answer": 0,
+        "explanation": "Treating setbacks as information makes it easier to adjust and keep going."
+      }
+    },
+    {
+      "id": "mindset-dweck--04",
+      "topic": "personal-development",
+      "tags": [
+        "effort",
+        "mastery",
+        "practice"
+      ],
+      "title": "Effort is how ability grows, not a sign that you lack it",
+      "body": "A fixed mindset holds that if you were really good at something, it would come easily, so needing to work hard feels embarrassing. Dweck argues the opposite: effort is what builds skill, and even people we call gifted typically put in a great deal of practice.\n\nThat doesn't mean grinding blindly. Effort works best alongside new strategies and asking for help when you're stuck, rather than just repeating the same approach.",
+      "apply_it": "Choose a skill you find hard. Schedule a short practice session this week and try one new method or ask one person for a tip.",
+      "quiz": {
+        "question": "What does Dweck say about needing to work hard at something?",
+        "options": [
+          "It shows you lack talent",
+          "It means you should quit",
+          "It's how ability is built, especially with good strategies",
+          "It only matters for children"
+        ],
+        "answer": 2,
+        "explanation": "Effort paired with good strategies and help is the route to improvement."
+      }
+    },
+    {
+      "id": "mindset-dweck--05",
+      "topic": "relationships",
+      "tags": [
+        "relationships",
+        "conflict",
+        "growth-mindset"
+      ],
+      "title": "Good relationships are built, not just found",
+      "body": "Dweck applies mindsets to relationships too. A fixed view says that if two people are right for each other, things should be easy, so any conflict feels like a sign of a bad match, and problems get blamed on a partner's fixed flaws.\n\nA growth view expects friction and sees it as something two people can work on together through honest talk and changed habits. Partners, friends and colleagues can all learn to communicate and understand each other better.",
+      "apply_it": "Think of a recurring disagreement with someone close. Instead of blaming their character, suggest one small change you could both try.",
+      "quiz": {
+        "question": "With a fixed mindset about relationships, how might conflict be seen?",
+        "options": [
+          "As a normal thing to work through",
+          "As a sign the relationship is wrong or the partner is flawed",
+          "As a chance to learn",
+          "As unimportant"
+        ],
+        "answer": 1,
+        "explanation": "A fixed view treats problems as evidence of a bad match rather than something to work on."
+      }
+    },
+    {
+      "id": "mindset-dweck--06",
+      "topic": "personal-development",
+      "tags": [
+        "challenge",
+        "learning",
+        "growth-mindset"
+      ],
+      "title": "Choose tasks that stretch you, not ones that just make you look good",
+      "body": "Dweck describes a basic choice people keep making: prove yourself or improve yourself. In a fixed mindset, every task is a chance to show you're smart or skilled, so the safest move is to stick with things you already do well. In her studies, children with this view often chose an easy puzzle they had already solved rather than a harder one they could learn from.\n\nIn a growth mindset, the reward is in the stretch. A task you can't yet do is interesting, not threatening. Looking good today matters less than being better next month.",
+      "apply_it": "This week, pick one task slightly beyond your current skill, such as a new tool, a harder book or a tough conversation, and attempt it on purpose.",
+      "quiz": {
+        "question": "In Dweck's studies, what did many fixed-mindset children choose?",
+        "options": [
+          "A harder puzzle they could learn from",
+          "No puzzle at all",
+          "Whatever their friends chose",
+          "An easy puzzle they could already do"
+        ],
+        "answer": 3,
+        "explanation": "Fixed-mindset children often played it safe to keep looking smart."
+      }
+    },
+    {
+      "id": "mindset-dweck--07",
+      "topic": "personal-development",
+      "tags": [
+        "effort",
+        "excuses",
+        "fear-of-failure"
+      ],
+      "title": "Not trying hard so you have an excuse is a trap",
+      "body": "Dweck points out a sneaky way the fixed mindset protects itself: holding back effort. If you don't really try and then fail, you can tell yourself you could have succeeded if you'd bothered. Students may skip studying, and adults may leave applications to the last minute, keeping that escape route open.\n\nThe cost is high. By avoiding a clear test of your ability, you also avoid the work that would actually build it. Dweck argues that the growth mindset removes the need for this cover: if ability can grow, then giving full effort and falling short is just a step, not a final verdict.",
+      "apply_it": "Think of something you've been half-trying at. What would full effort look like for one week? Write down one step and do it.",
+      "quiz": {
+        "question": "Why might someone in a fixed mindset deliberately hold back effort?",
+        "options": [
+          "So that failure can be blamed on not trying rather than lack of ability",
+          "Because effort always leads to burnout",
+          "To let others take credit",
+          "Because they are sure of success"
+        ],
+        "answer": 0,
+        "explanation": "Low effort provides an excuse that protects the belief in fixed ability."
+      }
+    },
+    {
+      "id": "mindset-dweck--08",
+      "topic": "personal-development",
+      "tags": [
+        "criticism",
+        "feedback",
+        "learning"
+      ],
+      "title": "Useful criticism is a gift, even when it stings",
+      "body": "Dweck notes that people in a fixed mindset tend to ignore or dismiss negative feedback, even when it's useful, because it feels like a judgement of who they are. Hearing that their work has a weakness becomes 'I'm not good enough', so it's easier to argue or not listen.\n\nIn a growth mindset, criticism is information about what to work on next. It still stings, but the question becomes 'What can I learn from this?' rather than 'How do I defend myself?' Over time, people who take in feedback improve faster than those who protect their image.",
+      "apply_it": "Next time you get criticism, say 'thank you', then ask one follow-up question: 'What would make it better?'",
+      "quiz": {
+        "question": "How does Dweck say a growth mindset treats criticism?",
+        "options": [
+          "As an attack to be defended against",
+          "As information about what to work on next",
+          "As something to ignore",
+          "As proof of fixed ability"
+        ],
+        "answer": 1,
+        "explanation": "Feedback is seen as useful guidance rather than a verdict on one's worth."
+      }
+    },
+    {
+      "id": "mindset-dweck--09",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "negotiation",
+        "skills"
+      ],
+      "title": "Leadership and negotiation are skills people develop, not traits they're born with",
+      "body": "Dweck argues that many abilities we treat as inborn are learned. In business, she cites the leadership writer Warren Bennis, who concluded that leaders are made rather than born, and that they keep developing throughout their lives.\n\nShe also describes research by Laura Kray and Michael Haselhuhn on negotiation: people taught that negotiating skill can be developed did better in negotiations and were more willing to keep going when talks got hard. Believing a skill is fixed makes people avoid situations where they might look weak, which are often the very situations where the skill grows.",
+      "apply_it": "Pick a skill you think you 'just don't have', such as speaking up or negotiating. Find one low-stakes chance to practise it this week.",
+      "quiz": {
+        "question": "What did research on negotiation that Dweck describes suggest?",
+        "options": [
+          "Good negotiators are born, not made",
+          "Training has no effect on negotiation",
+          "Learning that negotiation skill can grow helped people negotiate better",
+          "Fixed beliefs make people more persistent"
+        ],
+        "answer": 2,
+        "explanation": "People who saw negotiation as learnable did better and persisted more."
+      }
+    },
+    {
+      "id": "mindset-dweck--10",
+      "topic": "learning",
+      "tags": [
+        "intelligence",
+        "testing",
+        "potential"
+      ],
+      "title": "A test shows where you are now, not how far you can go",
+      "body": "Dweck reminds readers that Alfred Binet, who created the forerunner of the IQ test in early 1900s Paris, designed it to find children who needed extra help at school, not to measure a fixed amount of intelligence. He believed that with education and practice, children's thinking could improve.\n\nDweck argues that test scores, exam results and early performance tell you a person's current skills. They can't tell you what someone will be able to do after years of effort, good teaching and support. Treating a score as a permanent label, for yourself or for others, closes off growth before it starts.",
+      "apply_it": "Think of a score or label you received in the past, like 'not good at maths'. Write one sentence on what you could learn now if it didn't apply.",
+      "quiz": {
+        "question": "Why did Binet originally design his test, according to Dweck?",
+        "options": [
+          "To prove that intelligence is fixed",
+          "To identify children who needed extra help to improve",
+          "To rank children for life",
+          "To select future leaders"
+        ],
+        "answer": 1,
+        "explanation": "Binet aimed to help struggling children develop, not to stamp a permanent score on them."
+      }
+    },
+    {
+      "id": "mindset-dweck--11",
+      "topic": "personal-development",
+      "tags": [
+        "genius",
+        "practice",
+        "collaboration"
+      ],
+      "title": "Even 'geniuses' built their abilities over years, and with help",
+      "body": "Dweck challenges the picture of the lone genius struck by inspiration. Using examples such as Thomas Edison and Charles Darwin, she points out that famous achievers typically worked for many years, learned from others and often relied on teams of collaborators. Edison, for instance, worked with a large group of assistants rather than inventing alone.\n\nThe myth matters because it can make ordinary people feel that great work is out of reach unless you were born special. Seeing achievement as the product of long effort, curiosity and support makes it something you can work towards.",
+      "apply_it": "Choose someone you admire. Look up how many years they practised and who helped them before they became known.",
+      "quiz": {
+        "question": "What does Dweck emphasise about famous achievers like Edison and Darwin?",
+        "options": [
+          "They worked for years and relied on others",
+          "They succeeded through sudden inspiration alone",
+          "They were born with all their skill",
+          "They avoided working with other people"
+        ],
+        "answer": 0,
+        "explanation": "Great achievements usually come from long effort and collaboration, not lone flashes of genius."
+      }
+    },
+    {
+      "id": "mindset-dweck--12",
+      "topic": "mental-strength",
+      "tags": [
+        "sport",
+        "practice",
+        "character"
+      ],
+      "title": "Natural talent matters less than how hard you keep working",
+      "body": "In her chapter on sport, Dweck questions the idea of the 'natural'. She describes how Michael Jordan was cut from his high school varsity team and responded with relentless practice, continuing to work on weaknesses even at the height of his career. Many champions, she argues, were not the most obviously gifted at the start.\n\nWhat stands out is character: the ability to dig deep when things go badly, learn from defeats and keep improving. Players who rely on talent alone may coast and then struggle when they finally face tough competition.",
+      "apply_it": "Name one weakness in a skill you care about. Spend fifteen minutes practising that specific part, not the parts you're already good at.",
+      "quiz": {
+        "question": "How did Michael Jordan respond to being cut from his school's varsity team, according to Dweck?",
+        "options": [
+          "He gave up basketball for years",
+          "He switched to another sport",
+          "He blamed his coach and moved schools",
+          "He practised relentlessly"
+        ],
+        "answer": 3,
+        "explanation": "Jordan used the setback as motivation to work even harder."
+      }
+    },
+    {
+      "id": "mindset-dweck--13",
+      "topic": "personal-development",
+      "tags": [
+        "success",
+        "effort",
+        "sport"
+      ],
+      "title": "Measure success by whether you gave your best, not only by the score",
+      "body": "Dweck admires the basketball coach John Wooden, who won many championships yet defined success differently from most coaches. For Wooden, success was the peace of mind that comes from knowing you did your best to become the best you're capable of. Winning was welcome, but it was a by-product.\n\nDweck sees this as a growth-mindset view. If your sense of worth depends only on beating others, every loss is crushing and every win is fragile. If it depends on full preparation and effort, you can feel proud after a loss and stay hungry after a win.",
+      "apply_it": "At the end of today, ask yourself: did I prepare well and give my real effort? Note one thing you'd do better tomorrow.",
+      "quiz": {
+        "question": "How did John Wooden define success?",
+        "options": [
+          "Winning every game",
+          "Being more talented than rivals",
+          "Peace of mind from knowing you did your best",
+          "Earning the most money"
+        ],
+        "answer": 2,
+        "explanation": "Wooden focused on effort and preparation, with winning as a by-product."
+      }
+    },
+    {
+      "id": "mindset-dweck--14",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "ego",
+        "feedback"
+      ],
+      "title": "Leaders who need to look brilliant end up surrounded by yes-men",
+      "body": "Dweck examines leaders she sees as having a fixed mindset, such as Lee Iacocca at Chrysler. Because they needed to prove their own greatness, they tended to take credit, avoid criticism and punish people who disagreed. Over time, the people around them told them what they wanted to hear, and problems went unspoken.\n\nShe contrasts them with leaders such as Lou Gerstner at IBM and Anne Mulcahy at Xerox, who asked hard questions, listened to bad news and focused on building their teams. A leader who can admit mistakes makes it safe for others to speak up, which is how organisations learn.",
+      "apply_it": "If you lead anyone, ask your team this week: 'What's one thing I could be doing better?' Listen without defending yourself.",
+      "quiz": {
+        "question": "According to Dweck, what often happens around fixed-mindset leaders?",
+        "options": [
+          "People stop telling them unwelcome truths",
+          "Teams become more honest",
+          "Mistakes are discussed openly",
+          "Staff are encouraged to disagree"
+        ],
+        "answer": 0,
+        "explanation": "Leaders who need to look great punish disagreement, so people stop raising problems."
+      }
+    },
+    {
+      "id": "mindset-dweck--15",
+      "topic": "business",
+      "tags": [
+        "culture",
+        "talent",
+        "organisations"
+      ],
+      "title": "Organisations that worship talent push people to hide their mistakes",
+      "body": "Dweck discusses Enron as an example of a company that prized 'natural talent' above all. When everyone must appear brilliant, admitting a weakness or a mistake becomes dangerous. People are pushed to look good rather than to learn, and problems are covered up instead of fixed.\n\nShe suggests that healthier workplaces value development: they reward learning, teamwork and honest reporting of problems, and they see employees as people who can grow rather than as fixed stars or fixed failures. This applies to small businesses and families as much as large companies.",
+      "apply_it": "Think about your team or household. Is it safe to admit a mistake? Share one of your own recent errors to make it easier for others.",
+      "quiz": {
+        "question": "What problem does Dweck see in a culture that worships talent?",
+        "options": [
+          "People learn too quickly",
+          "Teams become too cooperative",
+          "Everyone admits their weaknesses",
+          "People feel they must look brilliant, so they hide mistakes"
+        ],
+        "answer": 3,
+        "explanation": "When looking talented is everything, honesty about errors feels too risky."
+      }
+    },
+    {
+      "id": "mindset-dweck--16",
+      "topic": "leadership",
+      "tags": [
+        "management",
+        "coaching",
+        "feedback"
+      ],
+      "title": "Managers who believe people can change notice improvement and coach better",
+      "body": "Dweck describes research by Peter Heslin and colleagues on managers' mindsets. Managers who believed people's abilities were fixed tended to stick with their first impression of an employee and failed to notice when that person improved. Their feedback and coaching suffered as a result.\n\nWhen managers learned that abilities can be developed, they became better at spotting real change and more willing to coach. The point applies to anyone who supervises, teaches or parents: if you've already decided who someone is, you'll miss the evidence that they've grown.",
+      "apply_it": "Think of someone you've written off as 'just like that'. Look for one recent sign of improvement and tell them you noticed.",
+      "quiz": {
+        "question": "What did Dweck report about managers with a fixed view of ability?",
+        "options": [
+          "They gave more coaching than others",
+          "They often failed to notice when employees improved",
+          "They changed their opinions quickly",
+          "They praised effort constantly"
+        ],
+        "answer": 1,
+        "explanation": "A fixed belief locks in first impressions, so real improvement goes unseen."
+      }
+    },
+    {
+      "id": "mindset-dweck--17",
+      "topic": "dating-marriage",
+      "tags": [
+        "partners",
+        "growth",
+        "support"
+      ],
+      "title": "Look for people who help you grow, not just people who admire you",
+      "body": "Dweck describes how mindsets shape what people want in a partner. In a fixed mindset, the ideal partner often makes you feel perfect: someone who looks up to you and never challenges you. In a growth mindset, people tend to want a partner who sees their faults, helps them work on them and encourages them to learn new things.\n\nAdmiration feels good, but a relationship where nobody can point out a problem can't improve. The same is true of friendships and mentors. The people who help us most are often the ones who are honest with us and on our side at the same time.",
+      "apply_it": "Name one person in your life who helps you grow. Thank them, and tell them specifically how they've helped.",
+      "quiz": {
+        "question": "In a growth mindset, what kind of partner do people tend to want?",
+        "options": [
+          "Someone who helps them see their faults and grow",
+          "Someone who puts them on a pedestal",
+          "Someone who never disagrees",
+          "Someone exactly like themselves"
+        ],
+        "answer": 0,
+        "explanation": "Growth-minded people value partners who support their development, not just admiration."
+      }
+    },
+    {
+      "id": "mindset-dweck--18",
+      "topic": "relationships",
+      "tags": [
+        "shyness",
+        "social-skills",
+        "confidence"
+      ],
+      "title": "If you're shy, treat social skills as something you can learn",
+      "body": "Dweck mentions research by Jennifer Beer on shyness. Shy people with a fixed mindset tended to see social situations as tests that could expose them as awkward or unlikeable, so they were anxious and held back. Shy people with a growth mindset still felt nervous, but they saw meeting people as a chance to practise and learn.\n\nThe growth-minded shy people handled conversations better once things got going, and others found them more comfortable to be around. Shyness may not disappear, but believing social skills can be developed changes how you approach each new encounter.",
+      "apply_it": "At your next gathering, set a small learning goal, like asking one person two questions about themselves, and treat it as practice, not a test.",
+      "quiz": {
+        "question": "How did shy people with a growth mindset approach social situations?",
+        "options": [
+          "As tests that would expose them",
+          "As something to avoid completely",
+          "As proof they would never improve",
+          "As chances to practise and learn"
+        ],
+        "answer": 3,
+        "explanation": "They still felt nervous, but saw social encounters as practice rather than judgement."
+      }
+    },
+    {
+      "id": "mindset-dweck--19",
+      "topic": "heartbreak-healing",
+      "tags": [
+        "rejection",
+        "resentment",
+        "healing"
+      ],
+      "title": "After rejection, ask what you can learn instead of plotting revenge",
+      "body": "Dweck describes research on how people respond to being rejected in a relationship. Those with a fixed mindset often felt that the rejection exposed something permanently wrong with them. They tended to feel bitter and wanted revenge, and the hurt lingered.\n\nThose with a growth mindset also felt the pain, but they were more interested in understanding what happened, forgiving and moving on. They asked what they could learn and how they might do things differently. Rejection doesn't have to become a verdict on your worth, and holding on to revenge keeps you tied to the person who hurt you.",
+      "apply_it": "If you're carrying hurt from a past rejection, write down one thing you learned from it and one way you've grown since.",
+      "quiz": {
+        "question": "How did people with a fixed mindset often respond to rejection in Dweck's account?",
+        "options": [
+          "They quickly forgave and moved on",
+          "They felt nothing",
+          "They felt labelled and wanted revenge",
+          "They immediately asked for feedback"
+        ],
+        "answer": 2,
+        "explanation": "Rejection felt like a judgement on them, which fuelled bitterness and a wish for revenge."
+      }
+    },
+    {
+      "id": "mindset-dweck--20",
+      "topic": "parenting",
+      "tags": [
+        "parenting",
+        "feedback",
+        "honesty"
+      ],
+      "title": "Comfort children with honest feedback, not reassuring fictions",
+      "body": "Dweck tells of a nine-year-old girl who lost a gymnastics competition and was crushed. Her father could have said she was robbed or was the best. Instead he gently explained that other girls had trained longer and harder, and that if she really wanted to win, she would need to put in the work.\n\nDweck argues this honest, caring feedback served her better than false comfort, which would have taught her nothing and left her confused. Constructive criticism helps someone see what to do differently, without labelling them or blaming others. Children, and adults, can handle the truth when it comes with support.",
+      "apply_it": "Next time someone you care about faces a setback, resist saying 'they were unfair'. Ask instead: 'What do you think would help next time?'",
+      "quiz": {
+        "question": "What did the father tell his daughter after she lost the gymnastics competition?",
+        "options": [
+          "That other girls had worked harder and she'd need to work for it",
+          "That the judges had cheated her",
+          "That she was the best anyway",
+          "That gymnastics wasn't worth her time"
+        ],
+        "answer": 0,
+        "explanation": "He gave honest, kind feedback that pointed to what she could do next."
+      }
+    },
+    {
+      "id": "mindset-dweck--21",
+      "topic": "learning",
+      "tags": [
+        "teaching",
+        "standards",
+        "mentoring"
+      ],
+      "title": "The best teachers set high standards and give warm support",
+      "body": "Dweck studies great teachers such as Marva Collins, who taught children in Chicago that others had written off, and Dorothy DeLay, the renowned violin teacher. She finds a common pattern: they set very high standards for every student, and they combined them with genuine warmth and patience. They believed every student could grow and were curious about learning themselves.\n\nHigh standards without support can crush people. Warmth without standards lets them drift. Dweck argues the combination tells a learner: 'This is hard, I believe you can do it, and I'll help you get there.' That applies to managers, coaches and parents too.",
+      "apply_it": "If you teach, coach or manage someone, tell them one high standard you have and one specific way you'll support them in reaching it.",
+      "quiz": {
+        "question": "What combination does Dweck find in great teachers?",
+        "options": [
+          "Low standards to protect self-esteem",
+          "High standards plus a warm, supportive atmosphere",
+          "Strict discipline with little encouragement",
+          "Teaching only the most talented students"
+        ],
+        "answer": 1,
+        "explanation": "Great teachers expect a lot from everyone and help them get there."
+      }
+    },
+    {
+      "id": "mindset-dweck--22",
+      "topic": "study-smarter",
+      "tags": [
+        "brain",
+        "learning",
+        "students"
+      ],
+      "title": "Learning that the brain grows with practice can help, though effects vary",
+      "body": "Dweck describes workshops in which students learned that the brain forms new connections when they practise and stretch themselves, much as a muscle gets stronger with use. In an early study with young teenagers, those taught this view showed better motivation and maths grades than a comparison group.\n\nIt's worth knowing that later, much larger studies of short mindset lessons found smaller average effects than early studies suggested, with the clearest benefits for students who were struggling. The message still holds as a useful reframe, but it's not a quick fix. It works best alongside good teaching and real support.",
+      "apply_it": "When you're struggling to learn something, remind yourself that the difficulty is the part where your brain is building new skill. Then try one new strategy.",
+      "quiz": {
+        "question": "What did later large studies find about short growth-mindset lessons?",
+        "options": [
+          "No students ever benefited",
+          "Larger effects than early studies",
+          "They replaced the need for good teaching",
+          "Smaller average effects, with clearer benefits for struggling students"
+        ],
+        "answer": 3,
+        "explanation": "Large replications found modest average gains, mostly among lower-achieving students."
+      }
+    },
+    {
+      "id": "mindset-dweck--23",
+      "topic": "personal-development",
+      "tags": [
+        "self-awareness",
+        "triggers",
+        "inner-critic"
+      ],
+      "title": "Everyone has fixed-mindset triggers, so learn to spot yours",
+      "body": "In the updated edition of the book, Dweck stresses that nobody has a pure growth mindset. Everyone is a mix, and certain situations, such as facing a challenge, receiving criticism or meeting someone more skilled, can trigger a fixed-mindset voice that says you're not good enough or should give up.\n\nShe suggests getting to know this voice, even giving it a name, so you can recognise it when it shows up. Instead of fighting yourself, you can acknowledge it, and then choose a growth response: try a new approach, ask for help or keep going.",
+      "apply_it": "Write down one situation that triggers your 'I'm not good at this' voice. Next time it happens, name it and choose one growth-minded step.",
+      "quiz": {
+        "question": "What does Dweck suggest doing with your fixed-mindset voice?",
+        "options": [
+          "Pretend it doesn't exist",
+          "Accept everything it says",
+          "Recognise it, perhaps name it, then choose a growth response",
+          "Only listen to it during challenges"
+        ],
+        "answer": 2,
+        "explanation": "Spotting and naming the voice makes it easier to respond differently."
+      }
+    },
+    {
+      "id": "mindset-dweck--24",
+      "topic": "personal-development",
+      "tags": [
+        "growth-mindset",
+        "strategies",
+        "effort"
+      ],
+      "title": "A growth mindset is more than praising effort or staying positive",
+      "body": "Dweck warns against a 'false growth mindset'. Some people think it simply means being open-minded, feeling positive, or praising effort no matter what. Others claim to have it without changing how they act.\n\nShe stresses that effort is a means to learning, not the goal itself. Praising effort that isn't working can comfort people while they stay stuck. A real growth approach connects effort to progress: trying new strategies, seeking input from others and learning from what didn't work. It's also not a promise that anyone can do anything; it's a belief that abilities can be developed further than people often think.",
+      "apply_it": "If you've been trying hard at something without progress, list two different strategies you haven't tried yet, or one person to ask for advice.",
+      "quiz": {
+        "question": "What does Dweck mean by a 'false growth mindset'?",
+        "options": [
+          "Treating effort alone or positivity as the goal, without real learning",
+          "Believing intelligence is fixed",
+          "Refusing to try new things",
+          "Asking others for help"
+        ],
+        "answer": 0,
+        "explanation": "Effort matters as a route to learning; praising it alone, or just feeling positive, misses the point."
+      }
+    },
+    {
+      "id": "mindset-dweck--25",
+      "topic": "mental-strength",
+      "tags": [
+        "low-mood",
+        "coping",
+        "resilience"
+      ],
+      "title": "When you feel low, keeping up small duties can protect you",
+      "body": "Dweck describes a study of university students' moods over several weeks. When students with a fixed mindset felt down, many let things slide: they stopped studying, fell behind and labelled themselves failures, which made things worse.\n\nStudents with more of a growth mindset often felt just as low, but they were more likely to keep up with their work and look after their responsibilities, which helped them cope. Dweck isn't saying mindset cures depression. Persistent low mood deserves proper support from people you trust or a health professional.",
+      "apply_it": "On a low day, choose one small task you can still do, like a short walk or one page of work, and do it. If low moods persist, talk to someone you trust.",
+      "quiz": {
+        "question": "In Dweck's account, what did growth-minded students more often do when they felt low?",
+        "options": [
+          "Gave up on their studies",
+          "Kept up with their work and responsibilities",
+          "Blamed others for their mood",
+          "Avoided everyone"
+        ],
+        "answer": 1,
+        "explanation": "Feeling low didn't stop them from taking care of tasks, which helped them cope."
+      },
+      "health": true
+    },
+    {
+      "id": "mindset-dweck--26",
+      "topic": "personal-development",
+      "tags": [
+        "self-assessment",
+        "honesty",
+        "feedback"
+      ],
+      "title": "Judge your abilities honestly, because you can't improve what you won't see",
+      "body": "Dweck reports that people with a fixed mindset are often poor at judging their own abilities. Because every result feels like a verdict on who they are, it's uncomfortable to look closely at weaknesses, so they tend to overestimate some skills or dismiss evidence that doesn't fit.\n\nPeople with a growth mindset tend to be more accurate. If you believe you can improve, there's less to lose by admitting where you currently stand, and that honest picture is what tells you what to work on. Accurate self-assessment is not harsh self-criticism; it's simply seeing clearly.",
+      "apply_it": "Rate yourself from 1 to 10 on one skill that matters to you. Then ask someone who knows your work for their rating and compare.",
+      "quiz": {
+        "question": "Why does Dweck say growth-minded people tend to assess themselves more accurately?",
+        "options": [
+          "They have higher natural ability",
+          "They never make mistakes",
+          "Admitting weaknesses feels less threatening when you believe you can improve",
+          "They avoid all feedback"
+        ],
+        "answer": 2,
+        "explanation": "If abilities can grow, an honest view of your current level is useful rather than frightening."
+      }
+    },
+    {
+      "id": "mindset-dweck--27",
+      "topic": "relationships",
+      "tags": [
+        "judgement",
+        "labels",
+        "fairness"
+      ],
+      "title": "Don't sum up a person from one action",
+      "body": "Dweck notes that mindsets shape how we judge other people, not just ourselves. In research she describes, people with a more fixed mindset were quicker to decide someone's character from a single action, and to stick with that label. Someone who made one mistake became 'careless', 'dishonest' or 'lazy'.\n\nPeople with more of a growth mindset were more likely to look for the reasons behind the behaviour and to think about how the person might learn or change. That doesn't mean excusing harm. It means leaving room for context, and for the possibility that people can do better, which is how colleagues, children and friends get a second chance to improve.",
+      "apply_it": "Next time someone annoys you, before labelling them, ask: what else might explain this, and what would help them do better?",
+      "quiz": {
+        "question": "How did people with a fixed mindset tend to judge others in Dweck's account?",
+        "options": [
+          "They looked for reasons behind the behaviour",
+          "They avoided judging anyone",
+          "They always gave second chances",
+          "They labelled someone's character quickly from one action"
+        ],
+        "answer": 3,
+        "explanation": "A fixed view leads to fast, lasting trait labels; a growth view looks at context and change."
+      }
+    },
+    {
+      "id": "mindset-dweck--28",
+      "topic": "skills-mastery",
+      "tags": [
+        "drawing",
+        "talent",
+        "beginners"
+      ],
+      "title": "Skills that look like gifts, such as drawing, can often be learned",
+      "body": "Many adults say they 'can't draw' as if it were a fact about their brain. Dweck points to the art teacher Betty Edwards, whose students' self-portraits improved strikingly after a short course. Before, their drawings looked childlike; afterwards, many looked like the work of someone with artistic talent.\n\nDweck's point is that we often call something a gift because we never saw the learning behind it. Drawing, singing, maths or public speaking can seem like things you either have or don't, when often they're skills nobody taught you properly. Being a beginner is uncomfortable, but it's the only way in.",
+      "apply_it": "Pick one 'I can't' skill, such as drawing, singing or cooking. Follow one beginner lesson or video this week and keep what you make.",
+      "quiz": {
+        "question": "What did Betty Edwards' students show, according to Dweck?",
+        "options": [
+          "Only gifted people can learn to draw",
+          "Drawing ability improved greatly with good teaching",
+          "Drawing cannot be taught to adults",
+          "Self-portraits are the hardest thing to learn"
+        ],
+        "answer": 1,
+        "explanation": "Their rapid improvement suggested that 'artistic talent' is largely a learnable skill."
+      }
+    },
+    {
+      "id": "mindset-dweck--29",
+      "topic": "study-smarter",
+      "tags": [
+        "studying",
+        "learning",
+        "strategies"
+      ],
+      "title": "Study to understand, not just to memorise",
+      "body": "Dweck describes research by Heidi Grant on students taking a tough university chemistry course. Students with a growth mindset tended to earn better grades, and part of the reason was how they studied. They looked for themes and principles, went over their mistakes until they understood them, and kept their motivation up when the material got dull or hard.\n\nStudents with a fixed mindset were more likely to just read and memorise, and when they did poorly they lost interest. The lesson: learning grows with good strategies, not just more hours.",
+      "apply_it": "For your next study or training session, end by explaining the main idea in your own words, then review one mistake until you understand why it happened.",
+      "quiz": {
+        "question": "How did growth-minded students in the chemistry course tend to study?",
+        "options": [
+          "Memorising the textbook word for word",
+          "Looking for principles and learning from mistakes",
+          "Only studying the night before",
+          "Avoiding difficult topics"
+        ],
+        "answer": 1,
+        "explanation": "They focused on understanding and on learning from their errors."
+      }
+    },
+    {
+      "id": "mindset-dweck--30",
+      "topic": "personal-development",
+      "tags": [
+        "comparison",
+        "envy",
+        "inspiration"
+      ],
+      "title": "Let other people's success inspire you instead of threatening you",
+      "body": "Dweck contrasts how the two mindsets react when someone else does well. In a fixed mindset, another person's success can feel like a threat: if they're talented, perhaps you're less so. That can lead to envy, quietly undermining others or avoiding people who do better.\n\nIn a growth mindset, someone else's success is useful. It shows what's possible and offers lessons: how did they do it, and what can you learn from them? Ability isn't a limited supply where one person's gain is your loss.",
+      "apply_it": "Think of someone whose success you envy. Ask them, or find out, one specific thing they did to get there, and try it.",
+      "quiz": {
+        "question": "How does a growth mindset tend to react to others' success?",
+        "options": [
+          "Feels threatened by it",
+          "Ignores it entirely",
+          "Finds lessons and inspiration in it",
+          "Tries to undermine it"
+        ],
+        "answer": 2,
+        "explanation": "Others' success is seen as evidence of what's possible and a source of lessons."
+      }
+    }
+  ]
+}

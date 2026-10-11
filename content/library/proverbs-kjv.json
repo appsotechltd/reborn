@@ -1,0 +1,1324 @@
+{
+  "source": {
+    "id": "proverbs-kjv",
+    "title": "The Book of Proverbs (King James Version)",
+    "authors": [
+      "Traditionally attributed to Solomon and other sages"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/8020",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "The Bible, King James Version, Book 20: Proverbs, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1611,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "King James Version (1611) text from Gutenberg #8020. Public domain in the US and most countries. In the UK the KJV is still under Crown letters patent, which covers printing the Bible text; short quotations are generally accepted. Locators are chapter:verse."
+  },
+  "cards": [
+    {
+      "id": "proverbs-kjv--01",
+      "topic": "faith-wisdom",
+      "tags": [
+        "diligence",
+        "self-motivation",
+        "planning",
+        "habits"
+      ],
+      "title": "Learn from the ant: work steadily without waiting to be told",
+      "body": "The ant has no boss standing over it, yet it gathers food in summer for the months ahead. Proverbs holds it up to the sluggard as a teacher.\n\nThe lesson has two parts. First, self-direction: the best workers don't need supervision to start. Second, timing: the ant works when the season allows, storing up before it is needed rather than scrambling once it is too late. Good habits look the same today. You build savings, skills and relationships in the easy season, not in the crisis.",
+      "quote": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+      "locator": "Proverbs 6:6",
+      "apply_it": "List one thing you would do this week if nobody were checking. Do it first, before anything assigned to you.",
+      "quiz": {
+        "question": "What makes the ant a model worker in Proverbs?",
+        "options": [
+          "It prepares in summer with no overseer",
+          "It works hard only when watched",
+          "It works alone and never rests",
+          "It takes food from others"
+        ],
+        "answer": 0,
+        "explanation": "Proverbs 6:7-8 stresses that the ant has no guide or ruler, yet stores food in summer for later."
+      }
+    },
+    {
+      "id": "proverbs-kjv--02",
+      "topic": "faith-wisdom",
+      "tags": [
+        "excellence",
+        "skill",
+        "career",
+        "craft"
+      ],
+      "title": "Become excellent at your work and doors open",
+      "body": "Proverbs asks: have you seen someone skilled and diligent in their work? They will stand before kings, not obscure people.\n\nThe promise isn't luck or connections. It is that real competence, built patiently, eventually gets noticed by people with influence. Skill is portable and hard to fake. A carpenter, a coder or a nurse who is truly excellent becomes the person others seek out. If you want better opportunities, the most dependable route is to become very good at something useful.",
+      "quote": "Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men.",
+      "locator": "Proverbs 22:29",
+      "apply_it": "Pick one skill central to your work. Find out what an expert does that you don't, and practise that for 20 minutes today.",
+      "quiz": {
+        "question": "What does Proverbs 22:29 say diligence in your work leads to?",
+        "options": [
+          "Being left alone",
+          "Standing before kings",
+          "Quick riches",
+          "Fewer responsibilities"
+        ],
+        "answer": 1,
+        "explanation": "Skilled, diligent work earns a place among people of influence."
+      }
+    },
+    {
+      "id": "proverbs-kjv--03",
+      "topic": "faith-wisdom",
+      "tags": [
+        "advice",
+        "decisions",
+        "planning",
+        "mentors"
+      ],
+      "title": "Plans fail for lack of counsel: test them on others first",
+      "body": "Proverbs returns to this idea more than once. Without advice, plans fall apart; with many advisers, they succeed.\n\nWe are often blind to the weak points in our own ideas because we love them. Taking a plan to several people with different experience, such as a customer, an accountant or someone who has tried it before, shows the problems while they are still cheap to fix. Seeking counsel is not weakness; it is how careful builders work. The final decision is still yours, but it is better informed.",
+      "quote": "Without counsel purposes are disappointed: but in the multitude of counsellors they are established.",
+      "locator": "Proverbs 15:22",
+      "apply_it": "Before your next big decision, ask three people with different viewpoints: \"What would make this fail?\"",
+      "quiz": {
+        "question": "What does Proverbs 15:22 say makes plans succeed?",
+        "options": [
+          "Keeping them secret",
+          "Acting quickly",
+          "Many advisers",
+          "Working alone"
+        ],
+        "answer": 2,
+        "explanation": "Plans are established \"in the multitude of counsellors\"."
+      }
+    },
+    {
+      "id": "proverbs-kjv--04",
+      "topic": "faith-wisdom",
+      "tags": [
+        "saving",
+        "patience",
+        "wealth",
+        "compounding"
+      ],
+      "title": "Money gathered little by little lasts; quick money vanishes",
+      "body": "Proverbs contrasts two kinds of wealth. Money gained quickly or dishonestly dwindles away. Money gathered steadily by labour grows.\n\nThis is the oldest form of the compounding idea. Small, regular amounts saved or invested over years build real security, while windfalls and get-rich-quick schemes often disappear as fast as they came. The habit of gathering matters more than the size of any single gain, because it also builds the discipline to keep what you have.",
+      "quote": "Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.",
+      "locator": "Proverbs 13:11",
+      "apply_it": "Set up an automatic transfer of a small, fixed amount into savings on every payday.",
+      "quiz": {
+        "question": "Which wealth grows, according to Proverbs 13:11?",
+        "options": [
+          "Wealth gained quickly",
+          "Wealth borrowed",
+          "Wealth inherited",
+          "Wealth gathered by labour"
+        ],
+        "answer": 3,
+        "explanation": "Wealth gathered steadily by labour increases, while quick or empty gains dwindle."
+      }
+    },
+    {
+      "id": "proverbs-kjv--05",
+      "topic": "faith-wisdom",
+      "tags": [
+        "debt",
+        "freedom",
+        "borrowing",
+        "independence"
+      ],
+      "title": "The borrower is servant to the lender",
+      "body": "Proverbs states it bluntly: the borrower becomes the servant of the lender. Debt is not just a number. It gives someone else a claim on your future time and choices.\n\nSome borrowing, such as a modest loan for a productive asset, can make sense. But every repayment is income already spent, and that limits what you can say yes or no to. People with little debt can change jobs, take risks and weather bad months. People with heavy debt often can't. Reducing what you owe is a way of buying back freedom.",
+      "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+      "locator": "Proverbs 22:7",
+      "apply_it": "List every debt you have with its interest rate. Put any extra money this month towards the most expensive one.",
+      "quiz": {
+        "question": "Why does Proverbs call the borrower a servant?",
+        "options": [
+          "Debt gives the lender a claim on your future",
+          "Lenders are always unkind",
+          "Borrowing is illegal",
+          "Servants earn more"
+        ],
+        "answer": 0,
+        "explanation": "Owing money ties your future income and choices to the lender."
+      }
+    },
+    {
+      "id": "proverbs-kjv--06",
+      "topic": "faith-wisdom",
+      "tags": [
+        "conflict",
+        "communication",
+        "anger",
+        "words"
+      ],
+      "title": "A gentle answer turns away anger",
+      "body": "A gentle reply calms anger, while harsh words inflame it. When someone comes at you hot, your reply decides whether the fire grows or dies down.\n\nA gentle answer is not weakness or agreement. It is choosing a calm tone so the real issue can be discussed. Harsh words feel satisfying for a moment but usually make the other person defend themselves, and the argument becomes about the argument. Lowering your voice, slowing down and acknowledging their point often takes the heat out in seconds.",
+      "quote": "A soft answer turneth away wrath: but grievous words stir up anger.",
+      "locator": "Proverbs 15:1",
+      "apply_it": "In your next tense conversation, make your first sentence a calm acknowledgement, such as \"I can see this really matters to you.\"",
+      "quiz": {
+        "question": "According to Proverbs 15:1, what stirs up anger?",
+        "options": [
+          "A soft answer",
+          "Grievous (harsh) words",
+          "Silence",
+          "Asking questions"
+        ],
+        "answer": 1,
+        "explanation": "Harsh words stir up anger, while a gentle answer turns it away."
+      }
+    },
+    {
+      "id": "proverbs-kjv--07",
+      "topic": "faith-wisdom",
+      "tags": [
+        "friendship",
+        "growth",
+        "feedback",
+        "community"
+      ],
+      "title": "As iron sharpens iron, good friends sharpen each other",
+      "body": "Proverbs compares friendship to two pieces of iron rubbed together: each makes the other sharper.\n\nThe best friendships aren't only comfortable. They include honest feedback, shared ambition and a little friction. Elsewhere Proverbs adds that those who walk with the wise become wise. The people you spend time with shape your standards, habits and thinking. It is worth choosing companions who challenge you to grow, and being that kind of friend in return.",
+      "quote": "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",
+      "locator": "Proverbs 27:17",
+      "apply_it": "Ask one trusted friend: \"What's one thing I could do better?\" Listen without defending yourself.",
+      "quiz": {
+        "question": "What does \"iron sharpeneth iron\" say about good friendship?",
+        "options": [
+          "Friends should never disagree",
+          "Friends should compete to win",
+          "Friends improve each other",
+          "Friendship is dangerous"
+        ],
+        "answer": 2,
+        "explanation": "Like iron on iron, good friends make each other better."
+      }
+    },
+    {
+      "id": "proverbs-kjv--08",
+      "topic": "faith-wisdom",
+      "tags": [
+        "anger",
+        "self-control",
+        "patience",
+        "strength"
+      ],
+      "title": "Ruling your own temper is greater than taking a city",
+      "body": "Proverbs ranks self-control above military conquest. Someone who is slow to anger is better than a mighty warrior, and someone who rules their own spirit is better than one who captures a city.\n\nIt flips our usual idea of strength. Conquering outward things is visible and celebrated, but mastering your reactions is harder and more valuable. Another proverb pictures the person without self-control as a city with broken walls, open to any attack. Pausing before reacting is a skill that protects your relationships, reputation and decisions.",
+      "quote": "He that is slow to anger is better than the mighty; and he that ruleth his spirit than he that taketh a city.",
+      "locator": "Proverbs 16:32",
+      "apply_it": "When you feel anger rising today, take three slow breaths before you say or type anything.",
+      "quiz": {
+        "question": "What does Proverbs 16:32 rank above taking a city?",
+        "options": [
+          "Building a house",
+          "Winning an argument",
+          "Earning great riches",
+          "Ruling your own spirit"
+        ],
+        "answer": 3,
+        "explanation": "Mastering your own spirit is called greater than conquering a city."
+      }
+    },
+    {
+      "id": "proverbs-kjv--09",
+      "topic": "faith-wisdom",
+      "tags": [
+        "listening",
+        "speech",
+        "restraint",
+        "wisdom"
+      ],
+      "title": "Listen fully before you answer",
+      "body": "Proverbs calls it foolish and shameful to answer before you have heard someone out. It warns against the habit of replying before you understand.\n\nWe often start forming our answer while the other person is still talking. We miss what they really mean, solve the wrong problem, or say something we regret. Proverbs adds that even a fool seems wise when silent, and that the hasty speaker is worse off than a fool. Listening to the end, and asking a question before giving an opinion, makes you both wiser and better trusted.",
+      "quote": "He that answereth a matter before he heareth it, it is folly and shame unto him.",
+      "locator": "Proverbs 18:13",
+      "apply_it": "In your next conversation, ask one clarifying question before giving any advice or opinion.",
+      "quiz": {
+        "question": "What does Proverbs 18:13 call answering before hearing?",
+        "options": [
+          "Folly and shame",
+          "Efficient",
+          "Confident leadership",
+          "Good manners"
+        ],
+        "answer": 0,
+        "explanation": "Answering before hearing a matter fully is called folly and shame."
+      }
+    },
+    {
+      "id": "proverbs-kjv--10",
+      "topic": "faith-wisdom",
+      "tags": [
+        "wisdom",
+        "learning",
+        "priorities",
+        "understanding"
+      ],
+      "title": "Wisdom is the main thing; whatever else you get, get understanding",
+      "body": "Proverbs makes wisdom the first priority: whatever else you gain, gain understanding.\n\nMoney, status and skills all depend on judgement to be used well. Without it, people waste opportunities, trust the wrong people, or win one thing and lose another. Wisdom grows by seeking out good teachers, learning from mistakes, and listening more than you speak. In Proverbs, getting wisdom is not just reading. It means humbly taking correction and changing how you live.",
+      "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+      "locator": "Proverbs 4:7",
+      "apply_it": "Choose one source of wisdom, such as a mentor, a book or an elder. Spend 15 minutes with it this week and write down one lesson to apply.",
+      "quiz": {
+        "question": "What does Proverbs 4:7 call the principal (main) thing?",
+        "options": [
+          "Wealth",
+          "Wisdom",
+          "Strength",
+          "Reputation"
+        ],
+        "answer": 1,
+        "explanation": "Wisdom is named the principal thing, worth getting above all else."
+      }
+    },
+    {
+      "id": "proverbs-kjv--11",
+      "topic": "faith-wisdom",
+      "tags": [
+        "procrastination",
+        "laziness",
+        "habits",
+        "poverty"
+      ],
+      "title": "Small delays add up: 'just a little more sleep' is how decline begins",
+      "body": "Proverbs pictures the sluggard asking for only a little more: a little sleep, a little slumber, a little folding of the hands. None of it looks serious on its own. But the next verse warns that poverty then arrives like a traveller on the road, or like an armed man you can't fight off.\n\nThat is how decline usually works. It isn't one big failure but many small postponements: one more episode, one more snooze, tomorrow instead of today. Each feels harmless. Together they quietly decide your future. The fix is equally small: notice the 'just a little more' moment and act anyway.",
+      "quote": "Yet a little sleep, a little slumber, a little folding of the hands to sleep:",
+      "locator": "Proverbs 6:10",
+      "apply_it": "Identify your most common 'just five more minutes' moment. Tomorrow, act at the first prompt instead.",
+      "quiz": {
+        "question": "According to Proverbs 6:10-11, how does poverty come to the sluggard?",
+        "options": [
+          "Through one big disaster",
+          "Through bad luck only",
+          "Through many small delays that add up",
+          "Through other people's greed"
+        ],
+        "answer": 2,
+        "explanation": "The sluggard asks for just a little more rest; then poverty comes like a traveller or an armed man."
+      }
+    },
+    {
+      "id": "proverbs-kjv--12",
+      "topic": "faith-wisdom",
+      "tags": [
+        "excuses",
+        "laziness",
+        "fear",
+        "action"
+      ],
+      "title": "Notice when you invent a 'lion in the street' to avoid work",
+      "body": "Proverbs mocks the lazy man who says there's a lion in the road, a lion in the streets, so he can't possibly go out. It's an excuse dramatic enough that no one can argue with it, and conveniently it means staying in.\n\nOur lions are more modern: the economy is bad, the timing is wrong, I need more training first, nobody will buy it. Sometimes the risk is real. But often the excuse is chosen because it lets us avoid something uncomfortable. When you catch yourself listing reasons not to start, ask honestly: is this a real lion, or a story that keeps me on the sofa?",
+      "quote": "The slothful man saith, There is a lion in the way; a lion is in the streets.",
+      "locator": "Proverbs 26:13",
+      "apply_it": "Write down your top reason for not starting a task you're avoiding. Test it: what evidence actually supports it?",
+      "quiz": {
+        "question": "What is the 'lion in the streets' in Proverbs 26:13?",
+        "options": [
+          "A real danger that should always stop you",
+          "A dramatic excuse the lazy person uses to avoid work",
+          "A symbol of royal power",
+          "A reward for hard work"
+        ],
+        "answer": 1,
+        "explanation": "The slothful man claims there's a lion in the way, an exaggerated excuse to avoid going out to work."
+      }
+    },
+    {
+      "id": "proverbs-kjv--13",
+      "topic": "faith-wisdom",
+      "tags": [
+        "debt",
+        "guarantees",
+        "risk",
+        "borrowing"
+      ],
+      "title": "Be very careful about guaranteeing someone else's debt",
+      "body": "Proverbs warns repeatedly against 'striking hands', meaning pledging to cover another person's debt. The next verse spells out the risk: if you can't pay, why should they take your very bed from under you?\n\nCo-signing a loan, standing surety for a relative or friend, or letting someone borrow in your name can feel like an act of love. But if they fail to pay, the full debt becomes yours, often with the relationship damaged too. If you want to help, it is usually safer to give an amount you can afford to lose than to promise to cover an amount you can't control.",
+      "quote": "Be not thou one of them that strike hands, or of them that are sureties for debts.",
+      "locator": "Proverbs 22:26",
+      "apply_it": "If someone asks you to guarantee a loan, decide in advance the maximum you could lose without hardship, and offer at most that as a gift.",
+      "quiz": {
+        "question": "What does Proverbs 22:27 warn may happen to someone who guarantees debts they can't pay?",
+        "options": [
+          "Their bed may be taken from under them",
+          "They will be praised for kindness",
+          "The lender will forgive them",
+          "Nothing, guarantees are harmless"
+        ],
+        "answer": 0,
+        "explanation": "Verse 27 asks: if you have nothing to pay, why should he take away your bed from under you?"
+      }
+    },
+    {
+      "id": "proverbs-kjv--14",
+      "topic": "faith-wisdom",
+      "tags": [
+        "finances",
+        "attention",
+        "management",
+        "diligence"
+      ],
+      "title": "Know the real state of your business and your money",
+      "body": "Proverbs tells the herder to be diligent to know the state of his flocks and to look well to his herds, because riches don't last forever. In a farming economy your animals were your bank account and your business.\n\nThe modern version is simple: know your numbers. How much comes in and goes out each month? Which products or customers make money and which lose it? What do you owe and when? Many businesses and households get into trouble not from one bad decision but from not looking. A short regular check-up catches problems while they are still small.",
+      "quote": "Be thou diligent to know the state of thy flocks, and look well to thy herds.",
+      "locator": "Proverbs 27:23",
+      "apply_it": "Set a fixed weekly 20-minute slot to review your income, spending and debts, or your business's key numbers.",
+      "quiz": {
+        "question": "Why does Proverbs 27 urge the herder to know the state of his flocks?",
+        "options": [
+          "Because flocks are sacred",
+          "Because neighbours may be watching",
+          "Because animals need entertainment",
+          "Because riches are not forever"
+        ],
+        "answer": 3,
+        "explanation": "Verse 24 gives the reason: riches are not for ever, so watch over what you have."
+      }
+    },
+    {
+      "id": "proverbs-kjv--15",
+      "topic": "faith-wisdom",
+      "tags": [
+        "forgiveness",
+        "gossip",
+        "friendship",
+        "conflict"
+      ],
+      "title": "Let offences go; repeating them breaks friendships",
+      "body": "Proverbs contrasts two ways of handling someone's wrong. The person who covers an offence, meaning lets it go rather than broadcasting it, is seeking love. The person who keeps bringing the matter up separates even close friends.\n\nEveryone slips up. Raising an old mistake in every argument, or retelling it to others, turns one wrong into a lasting wound. This does not mean hiding serious harm or abuse. It means that for ordinary hurts, once something has been dealt with, letting it rest is often the most loving and practical choice. Friendships survive offences far better than they survive endless reminders of them.",
+      "quote": "He that covereth a transgression seeketh love; but he that repeateth a matter separateth very friends.",
+      "locator": "Proverbs 17:9",
+      "apply_it": "Think of an old offence you keep bringing up with someone. Decide not to mention it again this month.",
+      "quiz": {
+        "question": "According to Proverbs 17:9, what does repeating a matter do?",
+        "options": [
+          "Strengthens trust",
+          "Clears the air for good",
+          "Separates close friends",
+          "Proves you are right"
+        ],
+        "answer": 2,
+        "explanation": "Covering a transgression seeks love, but repeating a matter separates very friends."
+      }
+    },
+    {
+      "id": "proverbs-kjv--16",
+      "topic": "faith-wisdom",
+      "tags": [
+        "resilience",
+        "failure",
+        "persistence",
+        "comeback"
+      ],
+      "title": "Good people fall many times; what matters is getting back up",
+      "body": "Proverbs says a righteous person falls seven times and rises again. Seven, in Hebrew writing, suggests 'many' or 'as many as it takes'. Notice that falling is assumed. The difference between the just and the wicked is not that one never stumbles, but that one keeps rising.\n\nThis is encouraging for anyone who has failed in business, exams, relationships or habits. Setbacks don't disqualify you. A failed first business, a broken streak or a lost job is a fall, not the end. What counts is the next step: get up, learn what you can and keep going.",
+      "quote": "For a just man falleth seven times, and riseth up again:",
+      "locator": "Proverbs 24:16",
+      "apply_it": "Recall a recent setback. Write down one small step that counts as 'rising again', and take it today.",
+      "quiz": {
+        "question": "What does Proverbs 24:16 say about the just person?",
+        "options": [
+          "They never fall",
+          "They fall only once",
+          "They give up after failing",
+          "They fall many times and rise again"
+        ],
+        "answer": 3,
+        "explanation": "A just man falls seven times and rises up again; falling is expected, rising is what defines them."
+      }
+    },
+    {
+      "id": "proverbs-kjv--17",
+      "topic": "faith-wisdom",
+      "tags": [
+        "pride",
+        "humility",
+        "arrogance",
+        "risk"
+      ],
+      "title": "Pride comes before a fall, so stay teachable when things go well",
+      "body": "One of the best-known lines in Proverbs: pride goes before destruction, and a haughty spirit before a fall. Success breeds confidence, and confidence can slide into arrogance: ignoring advice, cutting corners and assuming you can't fail.\n\nYou can see this in companies that dismissed new competitors, investors who borrowed heavily at the top, and leaders who stopped listening. The danger is greatest right after a win, when you feel untouchable. Staying humble is not about thinking little of yourself. It is about remaining willing to hear bad news, check your assumptions and learn from people below you.",
+      "quote": "Pride goeth before destruction, and an haughty spirit before a fall.",
+      "locator": "Proverbs 16:18",
+      "apply_it": "After your next success, ask someone you trust: 'What am I missing or getting wrong?'",
+      "quiz": {
+        "question": "According to Proverbs 16:18, what comes before a fall?",
+        "options": [
+          "A haughty spirit",
+          "Hard work",
+          "Humility",
+          "Careful planning"
+        ],
+        "answer": 0,
+        "explanation": "Pride goes before destruction, and a haughty spirit before a fall."
+      }
+    },
+    {
+      "id": "proverbs-kjv--18",
+      "topic": "faith-wisdom",
+      "tags": [
+        "planning",
+        "uncertainty",
+        "humility",
+        "future"
+      ],
+      "title": "Don't boast about tomorrow: plan, but expect surprises",
+      "body": "Proverbs warns: don't boast about tomorrow, because you don't know what a day may bring. It is not a ban on planning; Proverbs praises planning elsewhere. It is a warning against treating plans as certainties.\n\nPeople spend expected bonuses before they arrive, announce deals before they are signed, and promise deadlines with no margin. Then something ordinary, like illness, delay or a market shift, breaks the plan. Hold your plans firmly enough to act on them but loosely enough to adjust. Build in buffers, keep savings for surprises, and talk about the future with a little humility.",
+      "quote": "Boast not thyself of to morrow; for thou knowest not what a day may bring forth.",
+      "locator": "Proverbs 27:1",
+      "apply_it": "Add a 20% time or money buffer to one plan you are currently counting on.",
+      "quiz": {
+        "question": "Why does Proverbs 27:1 warn against boasting about tomorrow?",
+        "options": [
+          "Because planning is forbidden",
+          "Because you do not know what a day may bring",
+          "Because tomorrow never comes",
+          "Because only kings may plan"
+        ],
+        "answer": 1,
+        "explanation": "You do not know what a day may bring forth, so plans should not be treated as certain."
+      }
+    },
+    {
+      "id": "proverbs-kjv--19",
+      "topic": "faith-wisdom",
+      "tags": [
+        "reputation",
+        "integrity",
+        "character",
+        "trust"
+      ],
+      "title": "A good name is worth more than great riches",
+      "body": "Proverbs says a good name should be chosen over great riches, and being well regarded over silver and gold. A reputation for honesty and kindness opens doors that money can't, and it lasts when money runs out.\n\nThe choice is real. Shortcuts like overcharging a customer, breaking a promise or cheating on a deal can bring quick gain while spending your name. In close communities and small markets especially, people remember. Trust, once lost, is very hard to rebuild. When gain and reputation pull in different directions, Proverbs is clear about which to protect.",
+      "quote": "A GOOD name is rather to be chosen than great riches, and loving favour rather than silver and gold.",
+      "locator": "Proverbs 22:1",
+      "apply_it": "Ask yourself: what three words would people who deal with me use to describe me? Is there one I want to change?",
+      "quiz": {
+        "question": "According to Proverbs 22:1, what should be chosen over great riches?",
+        "options": [
+          "Silver and gold",
+          "Power",
+          "A good name",
+          "A large house"
+        ],
+        "answer": 2,
+        "explanation": "A good name is rather to be chosen than great riches."
+      }
+    },
+    {
+      "id": "proverbs-kjv--20",
+      "topic": "faith-wisdom",
+      "tags": [
+        "honesty",
+        "fair-trade",
+        "ethics",
+        "customers"
+      ],
+      "title": "Use honest measures: cheating customers is detestable",
+      "body": "In the ancient market, traders weighed goods on balance scales. A rigged scale or a light weight let a seller cheat customers quietly. Proverbs says a false balance is detestable to God, while a just weight is his delight.\n\nThe modern versions are short measures, hidden fees, misleading labels, fake discounts and fiddled meters. They may earn a little extra today, but they rob customers and eventually destroy trust. Honest measure, giving people what they paid for, is both a moral duty and a sound long-term business strategy.",
+      "quote": "A false balance is abomination to the LORD: but a just weight is his delight.",
+      "locator": "Proverbs 11:1",
+      "apply_it": "Check one way you charge or measure, such as prices, quantities or fees. Would a customer feel fairly treated if they saw exactly how it works?",
+      "quiz": {
+        "question": "What does Proverbs 11:1 say about a false balance?",
+        "options": [
+          "It is a clever business tactic",
+          "It is acceptable in small amounts",
+          "It is the buyer's responsibility to check",
+          "It is an abomination, while a just weight is a delight"
+        ],
+        "answer": 3,
+        "explanation": "A false balance is abomination to the LORD, but a just weight is his delight."
+      }
+    },
+    {
+      "id": "proverbs-kjv--21",
+      "topic": "faith-wisdom",
+      "tags": [
+        "integrity",
+        "honesty",
+        "peace-of-mind",
+        "character"
+      ],
+      "title": "Living honestly lets you walk without fear of being found out",
+      "body": "Proverbs says the person who walks uprightly walks securely, but the one who takes crooked paths will be found out. Honesty has a practical benefit beyond morality: you have nothing to hide and nothing to keep track of.\n\nA lie needs to be remembered, defended and often backed up by another lie. A shady deal hangs over you, waiting to be discovered. The honest person sleeps better and can face questions calmly. And crooked paths tend to come to light eventually, through records, witnesses or simple bad luck. Integrity is a kind of security no one can sell you.",
+      "quote": "He that walketh uprightly walketh surely: but he that perverteth his ways shall be known.",
+      "locator": "Proverbs 10:9",
+      "apply_it": "Is there anything in your life you would be uneasy to have discovered? Take one step to put it right.",
+      "quiz": {
+        "question": "According to Proverbs 10:9, how does the upright person walk?",
+        "options": [
+          "Surely, or securely",
+          "Quickly",
+          "Alone",
+          "In fear"
+        ],
+        "answer": 0,
+        "explanation": "He that walks uprightly walks surely, while the crooked will be known."
+      }
+    },
+    {
+      "id": "proverbs-kjv--22",
+      "topic": "faith-wisdom",
+      "tags": [
+        "deceit",
+        "honesty",
+        "consequences",
+        "ethics"
+      ],
+      "title": "Gains from deceit taste sweet at first and turn to gravel later",
+      "body": "Proverbs uses a vivid image: bread gained by deceit is sweet to a person, but afterward their mouth is filled with gravel. Cheating often pays off quickly. The trouble comes later.\n\nThink of the inflated invoice, the exam answers bought, the falsified CV or the scam that worked once. The early reward feels good. Then come the fear of discovery, the damaged relationships, the lost job, the legal trouble, or simply having to live with yourself. When a dishonest shortcut looks tempting, picture the gravel, not just the first bite.",
+      "quote": "Bread of deceit is sweet to a man; but afterwards his mouth shall be filled with gravel.",
+      "locator": "Proverbs 20:17",
+      "apply_it": "Think of a shortcut you've been tempted by. Write down what the 'gravel' might be a year from now.",
+      "quiz": {
+        "question": "What image does Proverbs 20:17 use for gains from deceit?",
+        "options": [
+          "Gold that keeps its value",
+          "Water in the desert",
+          "Bread that is sweet at first but turns to gravel",
+          "A seed that grows into a tree"
+        ],
+        "answer": 2,
+        "explanation": "Bread of deceit is sweet at first, but afterwards the mouth is filled with gravel."
+      }
+    },
+    {
+      "id": "proverbs-kjv--23",
+      "topic": "faith-wisdom",
+      "tags": [
+        "generosity",
+        "giving",
+        "abundance",
+        "community"
+      ],
+      "title": "Generous people tend to find themselves refreshed in turn",
+      "body": "Proverbs observes a pattern: some people give freely and still grow richer, while others hold back more than they should and end up poorer. The generous person will prosper, and whoever waters others will be watered too.\n\nThis is not a get-rich trick. It describes how communities work. People who help others build goodwill, trust and networks that come back to them in hard times. A business that treats customers and staff generously earns loyalty. A neighbour who shares is helped when they need it. Tight-fistedness may save in the short run but often costs in relationships and opportunities.",
+      "quote": "The liberal soul shall be made fat: and he that watereth shall be watered also himself.",
+      "locator": "Proverbs 11:25",
+      "apply_it": "Do one generous act this week for someone in your network, such as an introduction, a meal or a skill you share for free.",
+      "quiz": {
+        "question": "What does Proverbs 11:25 say happens to the one who waters others?",
+        "options": [
+          "They run out of water",
+          "They are watered also themselves",
+          "They are taken advantage of",
+          "They become poor"
+        ],
+        "answer": 1,
+        "explanation": "The liberal soul shall be made fat, and he that waters shall be watered also himself."
+      }
+    },
+    {
+      "id": "proverbs-kjv--24",
+      "topic": "faith-wisdom",
+      "tags": [
+        "fairness",
+        "payment",
+        "promptness",
+        "integrity"
+      ],
+      "title": "Pay what you owe promptly when you are able to",
+      "body": "Proverbs says: don't withhold good from those to whom it is due when you have the power to do it. The next verse adds: don't tell your neighbour 'come back tomorrow' when you already have it with you.\n\nThis covers wages, debts, invoices and promised help. Delaying payment when you could pay costs the other person more than you might think. A worker may miss rent; a small supplier may struggle to buy stock. Paying on time, or early, is one of the simplest ways to show respect and build a reputation as someone people want to work with.",
+      "quote": "Withhold not good from them to whom it is due, when it is in the power of thine hand to do it.",
+      "locator": "Proverbs 3:27",
+      "apply_it": "Check whether you owe anyone money, a reply or a favour that you could settle today. Settle it.",
+      "quiz": {
+        "question": "What does Proverbs 3:28 warn against saying to a neighbour?",
+        "options": [
+          "Thank you for your help",
+          "Let me pay you now",
+          "I cannot help you at all",
+          "Go, and come again, and tomorrow I will give, when you have it already"
+        ],
+        "answer": 3,
+        "explanation": "Verse 28 warns against delaying with 'come again tomorrow' when you have it by you."
+      }
+    },
+    {
+      "id": "proverbs-kjv--25",
+      "topic": "faith-wisdom",
+      "tags": [
+        "wealth",
+        "obsession",
+        "contentment",
+        "perspective"
+      ],
+      "title": "Don't wear yourself out chasing riches; they can fly away",
+      "body": "Proverbs advises: don't exhaust yourself to get rich. Will you fix your eyes on something that is suddenly gone? Riches, it says, sprout wings and fly off like an eagle into the sky.\n\nThis isn't against working hard or earning well. It is a warning about obsession: sacrificing health, family and integrity for money that can vanish through inflation, a business failure, theft or a bad investment. Earn, save and invest sensibly, but don't let the pursuit of wealth become your whole identity. Put your deepest effort into things that can't fly away so easily.",
+      "quote": "for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
+      "locator": "Proverbs 23:5",
+      "apply_it": "Notice one area where chasing money is costing you sleep, health or time with family. Set one boundary there.",
+      "quiz": {
+        "question": "What image does Proverbs 23:5 use for riches?",
+        "options": [
+          "They make themselves wings and fly away like an eagle",
+          "They grow like a tree",
+          "They are buried like treasure",
+          "They flow like a river"
+        ],
+        "answer": 0,
+        "explanation": "Riches certainly make themselves wings; they fly away as an eagle toward heaven."
+      }
+    },
+    {
+      "id": "proverbs-kjv--26",
+      "topic": "faith-wisdom",
+      "tags": [
+        "saving",
+        "spending",
+        "reserves",
+        "discipline"
+      ],
+      "title": "The wise keep a store in reserve; the foolish spend everything",
+      "body": "Proverbs notes that there is precious treasure and oil in the home of the wise, but a foolish person swallows it all up. Oil was a valuable, storable resource, used for cooking, light and trade.\n\nThe principle is to keep a reserve. Spending everything as it comes in, however much it is, leaves you exposed to the first emergency. Saving even a small amount regularly builds a buffer that turns a crisis into an inconvenience. The wise person isn't necessarily the one who earns most, but the one who doesn't consume it all.",
+      "quote": "There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up.",
+      "locator": "Proverbs 21:20",
+      "apply_it": "Set up an automatic transfer of a small fixed amount into savings on every payday.",
+      "quiz": {
+        "question": "According to Proverbs 21:20, what does the foolish man do with his resources?",
+        "options": [
+          "Stores them safely",
+          "Invests them wisely",
+          "Spends them all up",
+          "Gives them to the poor"
+        ],
+        "answer": 2,
+        "explanation": "There is treasure and oil in the dwelling of the wise, but a foolish man spends it up."
+      }
+    },
+    {
+      "id": "proverbs-kjv--27",
+      "topic": "faith-wisdom",
+      "tags": [
+        "action",
+        "talk",
+        "work",
+        "results"
+      ],
+      "title": "Work produces results; mere talk leads to poverty",
+      "body": "Proverbs says that in all hard work there is profit, but mere talk leads only to poverty. Effort, even unglamorous effort, usually produces something. Talking about plans, however exciting, produces nothing on its own.\n\nMost of us know someone with big plans who never starts, or teams that hold meeting after meeting without moving. Talk has its place: planning, deciding, persuading. But it is easy to mistake talking about work for doing it. Measure your week by what you made, sold, built or finished, not by how much you discussed it.",
+      "quote": "In all labour there is profit: but the talk of the lips tendeth only to penury.",
+      "locator": "Proverbs 14:23",
+      "apply_it": "Look at a plan you have discussed for a while. Do one concrete piece of work on it today instead of talking about it.",
+      "quiz": {
+        "question": "What does Proverbs 14:23 say talk of the lips leads to?",
+        "options": [
+          "Profit",
+          "Fame",
+          "Wisdom",
+          "Poverty"
+        ],
+        "answer": 3,
+        "explanation": "In all labour there is profit, but the talk of the lips tends only to penury, meaning poverty."
+      }
+    },
+    {
+      "id": "proverbs-kjv--28",
+      "topic": "faith-wisdom",
+      "tags": [
+        "laziness",
+        "waste",
+        "work-quality",
+        "responsibility"
+      ],
+      "title": "Doing your work carelessly is as damaging as wasting things",
+      "body": "Proverbs makes a sharp link: the one who is slack in their work is brother to the one who destroys. We usually think of laziness as passive, not doing much. Proverbs says it is active harm, a close relative of vandalism.\n\nWork done badly or left half-finished costs someone: the customer, the colleague who has to redo it, the employer, the community. A poorly built wall falls; a careless report leads to bad decisions. Thinking of sloppiness as a form of waste can change how you approach even routine tasks.",
+      "quote": "He also that is slothful in his work is brother to him that is a great waster.",
+      "locator": "Proverbs 18:9",
+      "apply_it": "Pick one routine task you tend to rush. Do it properly today and notice the difference it makes to others.",
+      "quiz": {
+        "question": "What does Proverbs 18:9 compare the slothful worker to?",
+        "options": [
+          "A wise teacher",
+          "A brother to a great waster",
+          "A patient farmer",
+          "A careful saver"
+        ],
+        "answer": 1,
+        "explanation": "He that is slothful in his work is brother to him that is a great waster."
+      }
+    },
+    {
+      "id": "proverbs-kjv--29",
+      "topic": "faith-wisdom",
+      "tags": [
+        "planning",
+        "patience",
+        "haste",
+        "diligence"
+      ],
+      "title": "Careful planning leads to plenty; hasty shortcuts lead to want",
+      "body": "Proverbs contrasts the plans of the diligent, which lead to abundance, with haste, which leads to poverty. Diligence here means steady, thoughtful effort; haste means rushing in without preparation or chasing quick wins.\n\nYou see this in rushed investments, impulsive purchases, businesses launched without research, and decisions made under pressure from a 'limited-time offer'. Careful thinking feels slower but tends to compound. Hurry often looks efficient and turns out expensive. When someone pressures you to decide right now, that itself is a warning sign.",
+      "quote": "The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.",
+      "locator": "Proverbs 21:5",
+      "apply_it": "Adopt a rule: for any purchase or commitment above a set amount, wait 48 hours before deciding.",
+      "quiz": {
+        "question": "According to Proverbs 21:5, what do hasty people tend toward?",
+        "options": [
+          "Want, or poverty",
+          "Plenty",
+          "Fame",
+          "Wisdom"
+        ],
+        "answer": 0,
+        "explanation": "The thoughts of the diligent tend to plenteousness, but of everyone that is hasty only to want."
+      }
+    },
+    {
+      "id": "proverbs-kjv--30",
+      "topic": "faith-wisdom",
+      "tags": [
+        "priorities",
+        "planning",
+        "sequencing",
+        "foundations"
+      ],
+      "title": "Get your income working before you build the house",
+      "body": "Proverbs gives advice about order: prepare your work outside, get your fields ready, and afterwards build your house. In a farming economy, the field fed you; the house was where you lived. Build the house first and you might have a fine home and nothing to eat.\n\nThe modern parallel is to build your income and foundations before the lifestyle. Secure skills, a working business or savings before the big wedding, the new car or the expensive house. Getting the order wrong is how many people end up with impressive possessions and no means to keep them.",
+      "quote": "Prepare thy work without, and make it fit for thyself in the field; and afterwards build thine house.",
+      "locator": "Proverbs 24:27",
+      "apply_it": "List your next three big plans. Put them in order: which one makes the others affordable? Start there.",
+      "quiz": {
+        "question": "What does Proverbs 24:27 say to do before building your house?",
+        "options": [
+          "Throw a celebration",
+          "Borrow as much as possible",
+          "Prepare your work and your field",
+          "Buy furniture"
+        ],
+        "answer": 2,
+        "explanation": "It says to prepare your work and make your field ready, and afterwards build your house."
+      }
+    },
+    {
+      "id": "proverbs-kjv--31",
+      "topic": "faith-wisdom",
+      "tags": [
+        "risk",
+        "foresight",
+        "prudence",
+        "planning"
+      ],
+      "title": "See trouble coming and take cover; don't just walk into it",
+      "body": "Proverbs says a prudent person sees danger and hides from it, while the simple keep going and suffer for it. Prudence here is not cowardice. It is paying attention to warning signs and acting before the damage arrives.\n\nThe signs are often visible: a business partner who keeps missing payments, an investment promising impossible returns, a road known for robberies at night, a cough that won't go away. The simple person notices and carries on anyway. The prudent person adjusts by walking away, asking questions, getting a check-up or taking another route. Most disasters give some warning; the skill is acting on it.",
+      "quote": "A prudent man foreseeth the evil, and hideth himself: but the simple pass on, and are punished.",
+      "locator": "Proverbs 22:3",
+      "apply_it": "Name one warning sign you've been ignoring at work, with money or with your health. Take one protective step this week.",
+      "quiz": {
+        "question": "According to Proverbs 22:3, what does the simple person do when danger is ahead?",
+        "options": [
+          "Hides from it",
+          "Prepares carefully",
+          "Asks for advice",
+          "Passes on and is punished"
+        ],
+        "answer": 3,
+        "explanation": "The prudent foresee evil and hide; the simple pass on and are punished."
+      }
+    },
+    {
+      "id": "proverbs-kjv--32",
+      "topic": "faith-wisdom",
+      "tags": [
+        "critical-thinking",
+        "scams",
+        "misinformation",
+        "skepticism"
+      ],
+      "title": "Don't believe everything you hear; check where it leads",
+      "body": "Proverbs says the simple believe every word, but the prudent give thought to their steps. Being easily convinced was a danger in ancient markets and courts, and it is an even bigger one today.\n\nScam messages, fake investment schemes, viral rumours and miracle cures all rely on people believing what they are told without checking. A prudent habit is to pause before acting on any claim, especially one that promises a lot, demands urgency or confirms what you already want to believe. Ask who is saying it, how they know, and what they gain if you believe them.",
+      "quote": "The simple believeth every word: but the prudent man looketh well to his going.",
+      "locator": "Proverbs 14:15",
+      "apply_it": "Before you forward or act on the next surprising claim you see, check it with one independent, reliable source.",
+      "quiz": {
+        "question": "How does the prudent person differ from the simple in Proverbs 14:15?",
+        "options": [
+          "The prudent look well to their going instead of believing every word",
+          "The prudent never listen to anyone",
+          "The prudent believe every word",
+          "The prudent rely only on rumours"
+        ],
+        "answer": 0,
+        "explanation": "The simple believe every word, but the prudent look well to their going."
+      }
+    },
+    {
+      "id": "proverbs-kjv--33",
+      "topic": "faith-wisdom",
+      "tags": [
+        "fairness",
+        "conflict",
+        "listening",
+        "judgement"
+      ],
+      "title": "The first story sounds right until you hear the other side",
+      "body": "Proverbs observes that whoever states their case first seems right, until the other person comes forward and questions them. It is a principle of courts, but it applies everywhere.\n\nWhen a friend tells you how a colleague wronged them, or a child explains a fight with a sibling, or one partner describes a quarrel, the account will almost always sound convincing. That's because you have heard only one side. Before taking sides, giving advice or making a decision, try to hear the other version. Very often the picture changes.",
+      "quote": "He that is first in his own cause seemeth just; but his neighbour cometh and searcheth him.",
+      "locator": "Proverbs 18:17",
+      "apply_it": "Next time someone tells you about a conflict, hold off judging until you've heard, or at least imagined fairly, the other side.",
+      "quiz": {
+        "question": "What does Proverbs 18:17 say about the first person to state their case?",
+        "options": [
+          "They are always right",
+          "They seem right until the other side examines them",
+          "They should be ignored",
+          "They are usually lying"
+        ],
+        "answer": 1,
+        "explanation": "He that is first in his own cause seems just, but his neighbour comes and searches him."
+      }
+    },
+    {
+      "id": "proverbs-kjv--34",
+      "topic": "faith-wisdom",
+      "tags": [
+        "silence",
+        "speech",
+        "restraint",
+        "listening"
+      ],
+      "title": "When unsure, staying quiet is often the wisest move",
+      "body": "Proverbs makes a wry point: even a fool who keeps silent is considered wise, and one who keeps their lips shut seems intelligent. Silence hides ignorance; too much talk reveals it.\n\nThe practical lesson is not to stay silent always, but to resist the urge to fill every pause or weigh in on every topic. In meetings, interviews, negotiations and arguments, people who speak less, and only when they have something to add, are often taken more seriously. Pausing before speaking also gives you time to think, which tends to improve what you eventually say.",
+      "quote": "Even a fool, when he holdeth his peace, is counted wise:",
+      "locator": "Proverbs 17:28",
+      "apply_it": "In your next meeting or discussion, speak only when you have something genuinely useful to add, and notice how it lands.",
+      "quiz": {
+        "question": "What does Proverbs 17:28 say about a fool who holds their peace?",
+        "options": [
+          "They are seen as rude",
+          "They lose respect",
+          "They are counted wise",
+          "They are ignored completely"
+        ],
+        "answer": 2,
+        "explanation": "Even a fool, when he holds his peace, is counted wise."
+      }
+    },
+    {
+      "id": "proverbs-kjv--35",
+      "topic": "faith-wisdom",
+      "tags": [
+        "speech",
+        "timing",
+        "encouragement",
+        "communication"
+      ],
+      "title": "The right word at the right moment is precious",
+      "body": "Proverbs compares a word spoken at the right time to apples of gold set in silver: beautiful, valuable and carefully placed. The point is not only what you say but when and how you say it.\n\nThe same feedback can wound in a public meeting and help in a private chat. Encouragement means most just before a big test or right after a failure. A joke can lift a room or fall flat at a funeral. Good communicators think about timing and setting as much as content. Before speaking, ask: is this the right moment, and the right way, for this person to hear it?",
+      "quote": "A word fitly spoken is like apples of gold in pictures of silver.",
+      "locator": "Proverbs 25:11",
+      "apply_it": "Think of something kind or useful you've been meaning to say to someone. Choose a good moment this week and say it.",
+      "quiz": {
+        "question": "What does Proverbs 25:11 compare a word fitly spoken to?",
+        "options": [
+          "A sharp sword",
+          "A heavy stone",
+          "A passing wind",
+          "Apples of gold in settings of silver"
+        ],
+        "answer": 3,
+        "explanation": "A word fitly spoken is like apples of gold in pictures, or settings, of silver."
+      }
+    },
+    {
+      "id": "proverbs-kjv--36",
+      "topic": "faith-wisdom",
+      "tags": [
+        "gossip",
+        "conflict",
+        "peace",
+        "workplace"
+      ],
+      "title": "Without gossip, quarrels die out like a fire without wood",
+      "body": "Proverbs uses a simple image: where there is no wood, the fire goes out, and where there is no gossip, the quarrel dies down. Conflicts need fuel. Gossip, retelling who said what and adding a bit each time, keeps them burning.\n\nIn families, offices and communities, many feuds last mainly because people keep passing on stories. You can't always end a quarrel, but you can refuse to be the wood. Don't repeat the hurtful remark; don't carry messages between sides; change the subject. Starved of fuel, many conflicts simply burn out.",
+      "quote": "Where no wood is, there the fire goeth out: so where there is no talebearer, the strife ceaseth.",
+      "locator": "Proverbs 26:20",
+      "apply_it": "The next time someone shares gossip about a conflict, don't pass it on. Try saying 'I'd rather not get into that.'",
+      "quiz": {
+        "question": "According to Proverbs 26:20, what happens when there is no talebearer?",
+        "options": [
+          "The strife ceases",
+          "The fire spreads",
+          "The truth is lost",
+          "Friends drift apart"
+        ],
+        "answer": 0,
+        "explanation": "Where no wood is, the fire goes out; where there is no talebearer, the strife ceases."
+      }
+    },
+    {
+      "id": "proverbs-kjv--37",
+      "topic": "faith-wisdom",
+      "tags": [
+        "friendship",
+        "loyalty",
+        "family",
+        "adversity"
+      ],
+      "title": "A true friend stays through good times and bad",
+      "body": "Proverbs says a friend loves at all times, and a brother is born for times of trouble. Real friendship is not seasonal; it doesn't vanish when you lose your job or fall ill. And family, at its best, exists for exactly those hard moments.\n\nThis works both ways. It helps you recognise who your true friends are, and it asks you to be that kind of friend. Showing up when someone is struggling, through a visit, a meal, practical help or simply staying in touch, is where friendship is proved. Anyone can be around for the celebrations.",
+      "quote": "A friend loveth at all times, and a brother is born for adversity.",
+      "locator": "Proverbs 17:17",
+      "apply_it": "Think of a friend or relative going through a hard time. Reach out to them today with something practical.",
+      "quiz": {
+        "question": "According to Proverbs 17:17, when does a friend love?",
+        "options": [
+          "Only in good times",
+          "At all times",
+          "Only when it is convenient",
+          "When they need something"
+        ],
+        "answer": 1,
+        "explanation": "A friend loves at all times, and a brother is born for adversity."
+      }
+    },
+    {
+      "id": "proverbs-kjv--38",
+      "topic": "faith-wisdom",
+      "tags": [
+        "friends",
+        "influence",
+        "growth",
+        "mentors"
+      ],
+      "title": "You become like the people you spend time with",
+      "body": "Proverbs says whoever walks with the wise grows wise, but a companion of fools will suffer harm. Our habits, ambitions and standards are shaped by the people around us more than we usually admit.\n\nIf your closest friends save, read, work hard and treat people well, you are likely to do the same. If they mock effort, waste money or drift into trouble, the pull goes the other way. You don't have to drop old friends harshly, but it is worth choosing deliberately to spend more time with people who are where you want to be, and to learn from them.",
+      "quote": "He that walketh with wise men shall be wise: but a companion of fools shall be destroyed.",
+      "locator": "Proverbs 13:20",
+      "apply_it": "Name one person you admire who you could spend more time with or learn from. Arrange a coffee or call this month.",
+      "quiz": {
+        "question": "What does Proverbs 13:20 say happens to someone who walks with wise people?",
+        "options": [
+          "They become foolish",
+          "They lose their friends",
+          "They shall be wise",
+          "They become rich"
+        ],
+        "answer": 2,
+        "explanation": "He that walks with wise men shall be wise; a companion of fools shall be destroyed."
+      }
+    },
+    {
+      "id": "proverbs-kjv--39",
+      "topic": "faith-wisdom",
+      "tags": [
+        "feedback",
+        "honesty",
+        "friendship",
+        "flattery"
+      ],
+      "title": "Honest criticism from a friend is worth more than flattery",
+      "body": "Proverbs says the wounds of a friend can be trusted, but the kisses of an enemy are deceitful. A true friend will sometimes tell you what you don't want to hear, about your plan, your behaviour or your relationship. It stings, but it comes from care.\n\nFlattery feels better and costs nothing, which is why people who want something from you use it freely. Value the friends who are willing to risk your displeasure by being honest. And when you need to tell a friend a hard truth, do it with the same care: privately, kindly and for their good.",
+      "quote": "Faithful are the wounds of a friend; but the kisses of an enemy are deceitful.",
+      "locator": "Proverbs 27:6",
+      "apply_it": "Ask a close friend for one piece of honest feedback about something you're doing, and thank them without arguing.",
+      "quiz": {
+        "question": "According to Proverbs 27:6, what is deceitful?",
+        "options": [
+          "The wounds of a friend",
+          "Honest advice",
+          "A friend's silence",
+          "The kisses of an enemy"
+        ],
+        "answer": 3,
+        "explanation": "Faithful are the wounds of a friend, but the kisses of an enemy are deceitful."
+      }
+    },
+    {
+      "id": "proverbs-kjv--40",
+      "topic": "faith-wisdom",
+      "tags": [
+        "feedback",
+        "learning",
+        "correction",
+        "growth"
+      ],
+      "title": "Welcoming correction is how you get better",
+      "body": "Proverbs is blunt: whoever loves discipline loves knowledge, but whoever hates correction is stupid. In older English the word is 'brutish', like an animal that can't learn.\n\nCorrection is uncomfortable. Our first instinct is to defend ourselves, explain or blame someone else. But every skill, from cooking to coding to leadership, improves through feedback on what we are doing wrong. People who can hear 'that's not right' without collapsing or attacking grow much faster than those who can't. Treat correction as information, not insult.",
+      "quote": "Whoso loveth instruction loveth knowledge: but he that hateth reproof is brutish.",
+      "locator": "Proverbs 12:1",
+      "apply_it": "Next time you're corrected, respond only with 'Thanks, tell me more' before deciding what to do with it.",
+      "quiz": {
+        "question": "According to Proverbs 12:1, what does the one who loves instruction love?",
+        "options": [
+          "Knowledge",
+          "Praise",
+          "Comfort",
+          "Power"
+        ],
+        "answer": 0,
+        "explanation": "Whoever loves instruction loves knowledge, but he that hates reproof is brutish."
+      }
+    },
+    {
+      "id": "proverbs-kjv--41",
+      "topic": "faith-wisdom",
+      "tags": [
+        "parenting",
+        "children",
+        "habits",
+        "education"
+      ],
+      "title": "What children learn early tends to stay with them for life",
+      "body": "Proverbs advises: train up a child in the way they should go, and when they are old they will not depart from it. Habits and values formed in childhood tend to last.\n\nFor parents, teachers and older relatives, this is both encouragement and responsibility. Children absorb how you handle money, anger, work, honesty and other people, often more from what you do than from what you say. Small, consistent lessons, like saving part of their pocket money, saying sorry, finishing chores or reading together, lay down patterns that can guide them decades later.",
+      "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+      "locator": "Proverbs 22:6",
+      "apply_it": "Pick one value you want a child in your life to learn. Find a small, regular way to practise it together.",
+      "quiz": {
+        "question": "What does Proverbs 22:6 say about a child trained in the way they should go?",
+        "options": [
+          "They will rebel when older",
+          "They will forget it quickly",
+          "When they are old they will not depart from it",
+          "They will need retraining as adults"
+        ],
+        "answer": 2,
+        "explanation": "Train up a child in the way he should go, and when he is old he will not depart from it."
+      }
+    },
+    {
+      "id": "proverbs-kjv--42",
+      "topic": "faith-wisdom",
+      "tags": [
+        "envy",
+        "contentment",
+        "comparison",
+        "wellbeing"
+      ],
+      "title": "Envy eats away at you from the inside",
+      "body": "Proverbs contrasts a heart at peace, which gives life to the body, with envy, which rots the bones. Envy damages the envious person most of all. The neighbour with the bigger house or the colleague who got promoted is unaffected; you are the one losing sleep.\n\nSocial media makes comparison constant, putting others' best moments next to our ordinary days. Envy can be a signal of something you want, which is useful information. But dwelling in it breeds bitterness. Notice it, ask what it is telling you, then turn your attention back to your own path and the things you are grateful for.",
+      "quote": "A sound heart is the life of the flesh: but envy the rottenness of the bones.",
+      "locator": "Proverbs 14:30",
+      "apply_it": "When you next feel envy, write down what it shows you want. Then list one step toward it and one thing you already have.",
+      "quiz": {
+        "question": "What does Proverbs 14:30 compare envy to?",
+        "options": [
+          "Rottenness of the bones",
+          "A refreshing drink",
+          "A strong foundation",
+          "A sharp sword"
+        ],
+        "answer": 0,
+        "explanation": "A sound heart is the life of the flesh, but envy is the rottenness of the bones."
+      },
+      "health": true
+    },
+    {
+      "id": "proverbs-kjv--43",
+      "topic": "faith-wisdom",
+      "tags": [
+        "joy",
+        "mood",
+        "wellbeing",
+        "laughter"
+      ],
+      "title": "A cheerful heart does you good; a crushed spirit drains you",
+      "body": "Proverbs says a merry heart does good like a medicine, but a broken spirit dries up the bones. The writers had noticed that mood and wellbeing are linked: joy seems to strengthen people, while lasting sadness wears them down.\n\nThis is not a claim that cheerfulness cures illness, or that people who are struggling should simply cheer up. Deep sadness can need real support. But it is a reminder to make room for things that lift your spirit: laughter with friends, music, time outdoors, play. These are not luxuries to cut when life gets busy. They are part of what keeps you going.",
+      "quote": "A merry heart doeth good like a medicine: but a broken spirit drieth the bones.",
+      "locator": "Proverbs 17:22",
+      "apply_it": "Schedule one thing this week purely because it makes you laugh or lifts your mood.",
+      "quiz": {
+        "question": "What does Proverbs 17:22 say a merry heart does?",
+        "options": [
+          "Makes you careless",
+          "Does good like a medicine",
+          "Has no effect",
+          "Makes others jealous"
+        ],
+        "answer": 1,
+        "explanation": "A merry heart does good like a medicine, but a broken spirit dries the bones."
+      },
+      "health": true
+    },
+    {
+      "id": "proverbs-kjv--44",
+      "topic": "faith-wisdom",
+      "tags": [
+        "family",
+        "love",
+        "contentment",
+        "home"
+      ],
+      "title": "A simple meal with love beats a feast with hatred",
+      "body": "Proverbs compares two dinners: a plate of vegetables where there is love, and a fattened ox served with hatred. The simple meal wins easily. What makes a home good is the relationships, not the menu or the furniture.\n\nMany families work hard to provide more, a bigger house or a better car, while the atmosphere at home becomes tense and cold. Proverbs suggests checking the priorities. Peace, warmth and kindness around the table matter more than what is on it. If you have to choose between more money and more harmony, harmony is often the richer choice.",
+      "quote": "Better is a dinner of herbs where love is, than a stalled ox and hatred therewith.",
+      "locator": "Proverbs 15:17",
+      "apply_it": "Plan one simple meal this week with family or friends, phones away, focused on enjoying each other.",
+      "quiz": {
+        "question": "Which meal does Proverbs 15:17 call better?",
+        "options": [
+          "A fattened ox with hatred",
+          "A royal banquet",
+          "A meal eaten alone",
+          "A dinner of herbs where there is love"
+        ],
+        "answer": 3,
+        "explanation": "Better is a dinner of herbs where love is, than a stalled ox and hatred with it."
+      }
+    },
+    {
+      "id": "proverbs-kjv--45",
+      "topic": "faith-wisdom",
+      "tags": [
+        "justice",
+        "poverty",
+        "advocacy",
+        "fairness"
+      ],
+      "title": "Speak up for people who can't speak up for themselves",
+      "body": "Proverbs ends with advice from a mother to her son, a king: open your mouth for those who cannot speak, judge fairly, and defend the rights of the poor and needy. Power and voice come with a duty to use them for people who have neither.\n\nYou don't need to be a king. A manager can make sure a junior worker gets credit or fair pay. A parent can speak to a school about a child being bullied. A citizen can stand with neighbours facing an unfair eviction. Whenever you have more voice than someone being treated unfairly, Proverbs asks you to use it.",
+      "quote": "Open thy mouth, judge righteously, and plead the cause of the poor and needy.",
+      "locator": "Proverbs 31:9",
+      "apply_it": "Think of someone in your workplace or community who is being overlooked or treated unfairly. Do one thing to speak up for them.",
+      "quiz": {
+        "question": "Whose cause does Proverbs 31:9 tell the king to plead?",
+        "options": [
+          "The rich and powerful",
+          "His own family only",
+          "The poor and needy",
+          "Foreign rulers"
+        ],
+        "answer": 2,
+        "explanation": "Open thy mouth, judge righteously, and plead the cause of the poor and needy."
+      }
+    },
+    {
+      "id": "proverbs-kjv--46",
+      "topic": "faith-wisdom",
+      "tags": [
+        "humility",
+        "self-promotion",
+        "reputation",
+        "praise"
+      ],
+      "title": "Let others praise you rather than praising yourself",
+      "body": "Proverbs advises: let someone else praise you, not your own mouth; a stranger, and not your own lips. Self-praise rings hollow. When others speak well of you, it carries weight because they have nothing to gain.\n\nThere is a balance today. In job interviews or business, you do need to describe your skills and results clearly. But there is a difference between stating facts and boasting. Let your work, reviews, references and results do most of the talking. People trust reputations built by others far more than claims we make about ourselves.",
+      "quote": "Let another man praise thee, and not thine own mouth; a stranger, and not thine own lips.",
+      "locator": "Proverbs 27:2",
+      "apply_it": "Instead of describing yourself as great at something, collect one testimonial or result that shows it.",
+      "quiz": {
+        "question": "According to Proverbs 27:2, who should praise you?",
+        "options": [
+          "Another person, even a stranger",
+          "Your own mouth",
+          "Nobody",
+          "Only your family"
+        ],
+        "answer": 0,
+        "explanation": "Let another man praise thee, and not thine own mouth; a stranger, and not thine own lips."
+      }
+    },
+    {
+      "id": "proverbs-kjv--47",
+      "topic": "faith-wisdom",
+      "tags": [
+        "mistakes",
+        "honesty",
+        "accountability",
+        "change"
+      ],
+      "title": "Hiding your mistakes keeps you stuck; owning them lets you move on",
+      "body": "Proverbs says that whoever conceals their wrongs will not prosper, but whoever confesses and gives them up finds mercy. Notice that this is about your own faults. Elsewhere Proverbs praises covering others' offences, meaning letting them go. Here the advice is to be honest about yourself.\n\nHiding a mistake at work, a debt from your spouse or a broken promise usually makes it grow. Admitting it, and then actually changing, is what brings forgiveness and a fresh start. Both parts matter: confessing without changing is just talk.",
+      "quote": "He that covereth his sins shall not prosper: but whoso confesseth and forsaketh them shall have mercy.",
+      "locator": "Proverbs 28:13",
+      "apply_it": "Is there a mistake you've been hiding? Tell the person affected this week, and say what you'll do differently.",
+      "quiz": {
+        "question": "According to Proverbs 28:13, who shall have mercy?",
+        "options": [
+          "Whoever covers their sins well",
+          "Whoever never makes mistakes",
+          "Whoever blames others",
+          "Whoever confesses and forsakes their wrongs"
+        ],
+        "answer": 3,
+        "explanation": "He that covers his sins shall not prosper, but whoever confesses and forsakes them shall have mercy."
+      }
+    },
+    {
+      "id": "proverbs-kjv--48",
+      "topic": "faith-wisdom",
+      "tags": [
+        "negotiation",
+        "bargaining",
+        "sales",
+        "awareness"
+      ],
+      "title": "Expect buyers to talk down a deal they are secretly pleased with",
+      "body": "Proverbs captures a scene from every market: 'It's no good, it's no good!' says the buyer, then walks away and boasts about the bargain. Haggling has looked the same for thousands of years.\n\nThere are lessons on both sides. If you sell, don't be shaken by a buyer's complaints; criticism is often a bargaining tactic, not a true judgement of your product. Know your value and hold firm when it makes sense. If you buy, recognise the game you're playing, and stay honest enough that you wouldn't mind the seller hearing you boast later.",
+      "quote": "It is naught, it is naught, saith the buyer: but when he is gone his way, then he boasteth.",
+      "locator": "Proverbs 20:14",
+      "apply_it": "Before your next negotiation, write down your true minimum or maximum price so complaints don't move you below it.",
+      "quiz": {
+        "question": "What does the buyer in Proverbs 20:14 do after leaving?",
+        "options": [
+          "Complains to his friends",
+          "Boasts about the deal",
+          "Returns the goods",
+          "Pays extra to the seller"
+        ],
+        "answer": 1,
+        "explanation": "The buyer says 'it is naught' while bargaining, then boasts once he has gone his way."
+      }
+    },
+    {
+      "id": "proverbs-kjv--49",
+      "topic": "faith-wisdom",
+      "tags": [
+        "alcohol",
+        "temperance",
+        "spending",
+        "self-control"
+      ],
+      "title": "Heavy drinking and overindulgence lead to poverty",
+      "body": "Proverbs warns against joining those who drink too much wine or gorge on meat, because the drunkard and the glutton end up poor, and drowsiness dresses a person in rags. Overindulgence costs in two ways: the money spent directly, and the lost energy, time and judgement that follow.\n\nRegular heavy drinking, constant partying or spending on luxuries can quietly drain both budget and productivity. Proverbs doesn't ask for joyless living, but for moderation. If a habit regularly leaves you short of money or energy the next day, it may be costing far more than its price.",
+      "quote": "For the drunkard and the glutton shall come to poverty: and drowsiness shall clothe a man with rags.",
+      "locator": "Proverbs 23:21",
+      "apply_it": "Add up what you spent on alcohol or going out last month. Decide on a monthly limit that fits your goals.",
+      "quiz": {
+        "question": "What does Proverbs 23:21 say the drunkard and glutton come to?",
+        "options": [
+          "Great wealth",
+          "Many friends",
+          "Poverty",
+          "Wisdom"
+        ],
+        "answer": 2,
+        "explanation": "The drunkard and the glutton shall come to poverty, and drowsiness shall clothe a man with rags."
+      },
+      "health": true
+    },
+    {
+      "id": "proverbs-kjv--50",
+      "topic": "faith-wisdom",
+      "tags": [
+        "encouragement",
+        "kindness",
+        "anxiety",
+        "support"
+      ],
+      "title": "A kind word can lift a heavy heart",
+      "body": "Proverbs observes that worry weighs a person down, but a good word makes them glad. Anxiety bends people over, sometimes visibly. And something as small as an encouraging word can lighten it.\n\nWe often underestimate the power of a short message, a compliment or simply saying 'you're doing well' to someone who is struggling. It costs nothing and can change someone's day. Look out for the people around you who seem weighed down, such as a stressed colleague, a tired parent or a student before exams, and offer them a good word.",
+      "quote": "Heaviness in the heart of man maketh it stoop: but a good word maketh it glad.",
+      "locator": "Proverbs 12:25",
+      "apply_it": "Send one sincere encouraging message today to someone who seems under pressure.",
+      "quiz": {
+        "question": "According to Proverbs 12:25, what makes a heavy heart glad?",
+        "options": [
+          "Money",
+          "Silence",
+          "Advice to work harder",
+          "A good word"
+        ],
+        "answer": 3,
+        "explanation": "Heaviness in the heart makes it stoop, but a good word makes it glad."
+      }
+    }
+  ]
+}

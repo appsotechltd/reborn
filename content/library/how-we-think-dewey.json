@@ -1,0 +1,801 @@
+{
+  "source": {
+    "id": "how-we-think-dewey",
+    "title": "How We Think",
+    "authors": [
+      "John Dewey"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/37423",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "John Dewey, How We Think, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1910,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "1910 D. C. Heath edition (Gutenberg #37423), fetched from the GITenberg mirror; front matter and index dropped with start/end markers. Published in the US in 1910, so public domain in the US; John Dewey died in 1952, so also public domain in life+70 countries. Written for teachers; cards turn Dewey's account of reflective thinking into everyday advice on judging claims, solving problems and learning. Dated remarks contrasting 'savage' and 'civilized' peoples are not used."
+  },
+  "cards": [
+    {
+      "id": "how-we-think-dewey--01",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "beliefs",
+        "evidence",
+        "questioning"
+      ],
+      "title": "Real thinking means checking what a belief rests on and where it leads",
+      "body": "Dewey separates the loose stream of thoughts that drifts through our heads from what he calls reflective thought. Reflection is not just having opinions; it is the active, careful habit of asking what grounds a belief stands on and what else would follow if it were true.\n\nHis example is Columbus. People once held that the world was flat mostly because everyone around them did. Columbus questioned the familiar view, looked at evidence and worked out consequences. Dewey's point is that even had he been wrong, his belief would have been a different kind of belief, because it was reached by a better method.",
+      "quote": "Because Columbus did not accept unhesitatingly the current traditional theory, because he doubted and inquired, he arrived at his thought.",
+      "locator": "Chapter One. What Is Thought? ¶20",
+      "apply_it": "Pick one belief you hold strongly about money, health or work. Write down the evidence it rests on and one consequence that would follow if it were false.",
+      "quiz": {
+        "question": "According to Dewey, what makes a belief the product of reflective thought?",
+        "options": [
+          "Its grounds and consequences have been actively examined",
+          "It is shared by most people around you",
+          "It came to you suddenly and feels certain",
+          "It was taught by a respected authority"
+        ],
+        "answer": 0,
+        "explanation": "Reflective thought is the careful examination of a belief in light of the grounds that support it and the conclusions it leads to."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--02",
+      "topic": "learning",
+      "tags": [
+        "prejudice",
+        "beliefs",
+        "bias",
+        "critical-thinking"
+      ],
+      "title": "Many of your beliefs were absorbed, not judged",
+      "body": "Dewey points out that a large share of what we believe was never reasoned out at all. It slipped in from tradition, from what we were told as children, from imitating people around us, from what suited our interests or stirred our feelings. We can rarely say when or how we picked it up.\n\nHe calls such beliefs prejudices in the literal sense: judgments made before the evidence. They may even be true, but we hold them without knowing whether they are. Recognising that some of your firmest views arrived this way is the first step to testing them rather than defending them by reflex.",
+      "quote": "Such thoughts are prejudices, that is, prejudgments, not judgments proper that rest upon a survey of evidence.",
+      "locator": "Chapter One. What Is Thought? ¶14",
+      "apply_it": "Name one opinion you have held since childhood. Ask yourself honestly: did I ever examine the evidence for it, or did I simply absorb it?",
+      "quiz": {
+        "question": "What does Dewey mean when he calls some beliefs 'prejudices'?",
+        "options": [
+          "Beliefs that are always false",
+          "Beliefs held only by uneducated people",
+          "Beliefs accepted before any survey of the evidence",
+          "Beliefs about other social groups only"
+        ],
+        "answer": 2,
+        "explanation": "Dewey uses 'prejudice' literally as a prejudgment: a belief picked up from tradition, imitation or interest without examining its grounds."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--03",
+      "topic": "learning",
+      "tags": [
+        "problems",
+        "curiosity",
+        "motivation",
+        "thinking"
+      ],
+      "title": "Thinking starts with a real puzzle, so find the problem first",
+      "body": "Dewey insists that thinking does not switch on just because someone says 'think!'. It begins when something puzzles or blocks us: a fork in the road, a plan that doesn't fit the time available, a fact that contradicts what we expected. Without such a felt difficulty, ideas simply drift.\n\nThis is why lectures urging people to 'use their heads' achieve so little, whether aimed at children or adults. If you want yourself, a team or a child to think hard, start by making the problem real and specific: what exactly is not working, and why does it matter to us?",
+      "quote": "Thinking is not a case of spontaneous combustion; it does not occur just on \"general principles.\"",
+      "locator": "Chapter One. What Is Thought? ¶47",
+      "apply_it": "Before your next study session or meeting, write the actual question you are stuck on in one sentence. If you can't, find it first.",
+      "quiz": {
+        "question": "In Dewey's view, what reliably sets real thinking in motion?",
+        "options": [
+          "A general instruction to think harder",
+          "Complete calm with nothing on your mind",
+          "Memorising a list of logical rules",
+          "A specific difficulty or perplexity that needs resolving"
+        ],
+        "answer": 3,
+        "explanation": "Dewey says the origin of thinking is some perplexity or doubt; general appeals to think, without a felt difficulty, are futile."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--04",
+      "topic": "learning",
+      "tags": [
+        "suspended-judgment",
+        "patience",
+        "decision-making",
+        "doubt"
+      ],
+      "title": "Learn to sit with doubt a little longer before you decide",
+      "body": "The easiest move when something puzzles us is to grab the first plausible explanation and end the discomfort. Dewey says this is exactly where good and bad thinking part ways. Accepting the first suggestion is uncritical thinking.\n\nGood thinking means holding off, hunting for more evidence that would confirm or sink the idea, and tolerating the unease of not yet knowing. Dewey admits this is uncomfortable. But he calls the habit of suspended conclusion the most important factor in training a good mind, whether you are diagnosing a fault in a machine, judging a rumour or choosing between job offers.",
+      "quote": "Reflective thinking, in short, means judgment suspended during further inquiry; and suspense is likely to be somewhat painful.",
+      "locator": "Chapter One. What Is Thought? ¶51",
+      "apply_it": "Next time you catch yourself explaining something instantly, add 'or maybe...' and list one other explanation before you settle.",
+      "quiz": {
+        "question": "Why does Dewey say reflective thinking is uncomfortable?",
+        "options": [
+          "It requires advanced mathematics",
+          "It means enduring doubt while you keep inquiring",
+          "It always leads to unpopular conclusions",
+          "It forces you to rely on authority"
+        ],
+        "answer": 1,
+        "explanation": "Reflection means suspending judgment during further inquiry, and staying in that state of unrest is somewhat painful."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--05",
+      "topic": "learning",
+      "tags": [
+        "open-mindedness",
+        "reading",
+        "perspective",
+        "echo-chamber"
+      ],
+      "title": "Read and listen beyond one kind of person and one kind of book",
+      "body": "Dewey quotes John Locke on a type of thinker who reasons honestly but from too small a world. Such people talk only with one sort of person, read one sort of book and hear one set of opinions. They are not stupid; they simply never take their minds into the 'great ocean of knowledge'.\n\nLocke adds that people with equal natural ability end up with very different understanding mainly because of how widely they range for information. Today the same trap is built into our feeds, which serve us more of what we already agree with. Widening your inputs on purpose is one of the cheapest ways to think better.",
+      "quote": "They converse but with one sort of men, they read but one sort of books, they will not come in the hearing but of one sort of notions....",
+      "locator": "Chapter Two. The Need for Training Thought ¶40",
+      "apply_it": "This week, read one long article or book chapter from a viewpoint you usually avoid, and note one point that is fair.",
+      "quiz": {
+        "question": "What limits the third kind of thinker Locke describes, as quoted by Dewey?",
+        "options": [
+          "Lack of natural intelligence",
+          "Too much reading",
+          "A narrow range of people, books and ideas",
+          "Following passion instead of reason"
+        ],
+        "answer": 2,
+        "explanation": "These people follow reason sincerely but lack breadth: they mix with one sort of people and read one sort of book."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--06",
+      "topic": "learning",
+      "tags": [
+        "confirmation-bias",
+        "evidence",
+        "notes",
+        "darwin"
+      ],
+      "title": "Write down the facts that don't fit your favourite idea",
+      "body": "Dewey notes a weakness shared by everyone: we notice the cases that confirm what we already believe far more readily than the cases that contradict it. Scientists build whole techniques around this, because the exceptions are often where the truth hides.\n\nHe cites a habit of Charles Darwin. Darwin found it so easy to forget evidence against his own theories that he made a rule: not only to look for counter-examples, but to write each one down immediately. The tool is simple and works anywhere, from business plans to judgments about people. Memory edits; a note doesn't.",
+      "quote": "he had made it a habit not merely to hunt for contrary instances, but also to write down any exception he noted or thought of--as otherwise it was almost sure to be forgotten.",
+      "locator": "Chapter Seven. Systematic Inference: Induction and Deduction ¶44",
+      "apply_it": "Keep a short 'doesn't fit' list for a plan or belief you care about. Each time you meet contrary evidence, add it the same day.",
+      "quiz": {
+        "question": "Why did Darwin write down exceptions to his generalisations?",
+        "options": [
+          "Because otherwise they were almost sure to be forgotten",
+          "To publish them as separate discoveries",
+          "To prove his critics wrong",
+          "Because his memory for confirming cases was poor"
+        ],
+        "answer": 0,
+        "explanation": "Cases that oppose a favourite idea are easily passed over, so Darwin recorded them before memory quietly dropped them."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--07",
+      "topic": "learning",
+      "tags": [
+        "testing",
+        "evidence",
+        "beliefs",
+        "proof"
+      ],
+      "title": "Know which of your beliefs have actually been tested",
+      "body": "For Dewey, to prove something originally meant to try it, to put it to the test. Until an idea has been 'tried out', its worth is unknown; it might be a bluff. Once it survives a hard test, it carries its own credentials.\n\nWe cannot test everything we believe. But Dewey asks for something more modest: keep a clear line in your mind between beliefs that rest on tested evidence and those that don't, and hold the second kind more loosely. That habit alone protects you from much confident nonsense, including your own.",
+      "quote": "Not until a thing has been tried--\"tried out,\" in colloquial language--do we know its true worth.",
+      "locator": "Chapter Two. The Need for Training Thought ¶58",
+      "apply_it": "Sort three things you believe about your work or health into 'tested' and 'untested'. For one untested belief, plan a small, safe way to try it.",
+      "quiz": {
+        "question": "What does Dewey ask for when not every belief can be tested?",
+        "options": [
+          "Believe nothing until it is proven",
+          "Distinguish tested beliefs from untested ones and hold the latter cautiously",
+          "Trust whatever experts say",
+          "Test only beliefs that are popular"
+        ],
+        "answer": 1,
+        "explanation": "Where testing isn't possible, Dewey asks us to discriminate between beliefs resting on tested evidence and those that don't, and adjust our confidence."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--08",
+      "topic": "learning",
+      "tags": [
+        "teaching",
+        "learner",
+        "initiative",
+        "feedback"
+      ],
+      "title": "You haven't taught until someone has learned",
+      "body": "Dewey compares teaching to selling. Nobody claims to have sold something when no one bought it, yet teachers, managers and parents often claim to have 'taught' or 'explained' when nothing was learned.\n\nHe goes further: in learning, the initiative lies with the learner even more than with a buyer in a shop. You can only appeal to powers the other person already has. So effective teaching starts with knowing the learner's existing habits, interests and experience, and connecting to them, rather than delivering content and hoping it lands.",
+      "quote": "One might as well say he has sold when no one has bought, as to say that he has taught when no one has learned.",
+      "locator": "Chapter Three. Natural Resources in the Training of Thought ¶4",
+      "apply_it": "After you next explain something, ask the other person to tell it back or use it on a fresh example. Judge your teaching by that, not by your explanation.",
+      "quiz": {
+        "question": "What comparison does Dewey use for teaching and learning?",
+        "options": [
+          "Planting and harvesting",
+          "Building and repairing",
+          "Speaking and writing",
+          "Selling and buying"
+        ],
+        "answer": 3,
+        "explanation": "Just as there is no sale without a buyer, there is no teaching without learning, and the learner holds most of the initiative."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--09",
+      "topic": "learning",
+      "tags": [
+        "curiosity",
+        "wonder",
+        "routine",
+        "lifelong-learning"
+      ],
+      "title": "Protect your curiosity from routine, dogmatism and gossip",
+      "body": "Children are full of wonder, but Dewey observes how easily curiosity gets dulled. Some lose it to indifference or carelessness, others to flippancy. Many become encased in fixed opinions. Some are so absorbed in routine that new facts no longer reach them, while others keep curiosity only for what advances their career, or for their neighbours' private business.\n\nHe concludes that a teacher's job is less to create curiosity than to keep the existing spark alive. The same applies to adults looking after their own minds: curiosity is a natural resource that has to be guarded.",
+      "quote": "Some lose it in indifference or carelessness; others in a frivolous flippancy; many escape these evils only to become incased in a hard dogmatism which is equally fatal to the spirit of wonder.",
+      "locator": "Chapter Three. Natural Resources in the Training of Thought ¶18",
+      "apply_it": "Write down one question about the world you have wondered about recently but never looked into. Spend 15 minutes on it today.",
+      "quiz": {
+        "question": "According to Dewey, what is the teacher's main task regarding curiosity?",
+        "options": [
+          "To create it in children who have none",
+          "To replace it with discipline",
+          "To direct it only toward exam subjects",
+          "To keep alive the spark that already exists"
+        ],
+        "answer": 3,
+        "explanation": "Dewey says the teacher rarely kindles curiosity; the task is to keep the existing spark of wonder alive and protect it from routine and dogma."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--10",
+      "topic": "learning",
+      "tags": [
+        "motivation",
+        "context",
+        "potential",
+        "labels"
+      ],
+      "title": "Someone 'slow' at one subject may be quick in a different setting",
+      "body": "Dewey warns teachers not to label a learner as dull just because they don't respond to a subject as it is usually taught. The same pupil may be lively and sharp in a game, a social situation or a practical task. A boy lost in geometry might grasp it through woodwork; a girl bored by history may be shrewd at judging people she knows.\n\nApart from illness or disability, he says, being slow in every direction is rare. When someone seems to struggle, including you, the more useful question is: in what setting, and through what method, does this click?",
+      "quote": "The pupil labeled hopeless may react in quick and lively fashion when the thing-in-hand seems to him worth while, as some out-of-school sport or social affair.",
+      "locator": "Chapter Three. Natural Resources in the Training of Thought ¶24",
+      "apply_it": "Think of a subject you were told you were 'bad at'. Find one practical use of it you care about and try learning it from there.",
+      "quiz": {
+        "question": "What does Dewey say about pupils who seem dull in school subjects?",
+        "options": [
+          "They should be moved to simpler work",
+          "They may respond quickly when the subject seems worthwhile or is approached differently",
+          "Their slowness is usually inborn and permanent",
+          "They need more drill and repetition"
+        ],
+        "answer": 1,
+        "explanation": "Dewey notes that the 'hopeless' pupil may be quick when the task feels worthwhile, and that general dullness is comparatively rare."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--11",
+      "topic": "productivity",
+      "tags": [
+        "overthinking",
+        "decisions",
+        "options",
+        "balance"
+      ],
+      "title": "Too many options can paralyse you, so aim for a balance",
+      "body": "Dewey notices two opposite failures. Some minds produce too few ideas: their conclusions may be correct but thin, and they tend to bore others with dry facts. Others produce so many possibilities, for and against, that they wander among them and cannot decide.\n\nHe says plainly that there is such a thing as too much thinking, when action is paralysed by the number of views a situation suggests. A flood of ideas can also tempt us into pleasant daydreaming instead of the harder work of finding real connections. The goal is a balance: enough alternatives to see the situation richly, few enough to choose and act.",
+      "quote": "There is such a thing as too much thinking, as when action is paralyzed by the multiplicity of views suggested by a situation.",
+      "locator": "Chapter Three. Natural Resources in the Training of Thought ¶27",
+      "apply_it": "For a decision you keep postponing, list your options, cut the list to the best three, and set a date to choose.",
+      "quiz": {
+        "question": "What does Dewey say about having a very large number of suggestions?",
+        "options": [
+          "It can paralyse action and make deciding difficult",
+          "It always produces the best conclusion",
+          "It is a sign of a pedant",
+          "It only happens to slow thinkers"
+        ],
+        "answer": 0,
+        "explanation": "Too many suggestions can leave a person wandering among them, unable to decide; the best habit balances too few against too many."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--12",
+      "topic": "learning",
+      "tags": [
+        "depth",
+        "patience",
+        "speed",
+        "reflection"
+      ],
+      "title": "Slow answers are sometimes deep answers",
+      "body": "Schools and workplaces often reward the fastest reply. Dewey cautions that quickness can be 'a flash in the pan'. Some people take longer because impressions sink in and build up, so that when they do respond, they think at a deeper level.\n\nMany children are scolded for not answering promptly when their minds are still gathering themselves to deal with the problem properly. Denying them time trains snap judgments instead. Dewey argues that how deeply a problem sinks in decides the quality of the thinking that follows, so give yourself and others time to digest a hard question.",
+      "quote": "Many a child is rebuked for \"slowness,\" for not \"answering promptly,\" when his forces are taking time to gather themselves together to deal effectively with the problem at hand.",
+      "locator": "Chapter Three. Natural Resources in the Training of Thought ¶32",
+      "apply_it": "In your next discussion, when someone pauses before answering, wait a few extra seconds instead of filling the silence or moving on.",
+      "quiz": {
+        "question": "What risk does Dewey see in always demanding quick answers?",
+        "options": [
+          "Learners will become too slow",
+          "It makes lessons too long",
+          "It trains speedy but superficial, snapshot judgments",
+          "It favours deep thinkers unfairly"
+        ],
+        "answer": 2,
+        "explanation": "Failing to allow time leads to habits of speedy but snapshot and superficial judgment, while depth needs time to gather."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--13",
+      "topic": "business",
+      "tags": [
+        "work",
+        "feedback",
+        "approval",
+        "problem-solving"
+      ],
+      "title": "Ask whether it solves the problem, not just whether the boss will like it",
+      "body": "Dewey describes a quiet distortion in classrooms. Pupils start studying the teacher instead of the subject. 'Is this right?' stops meaning 'Does this meet the real conditions of the problem?' and comes to mean 'Will this satisfy the teacher?'\n\nThe same thing happens at work, where people learn to produce what pleases a manager rather than what actually works for the customer or the task. Reading people is a useful skill, Dewey admits. But when approval becomes the standard of success, real competence stalls. Keep the problem itself as your first judge.",
+      "quote": "\"Is this right?\" comes to mean \"Will this answer or this process satisfy the teacher?\"--instead of meaning, \"Does it satisfy the inherent conditions of the problem?\"",
+      "locator": "Chapter Four. School Conditions and the Training of Thought ¶20",
+      "apply_it": "On your current task, write down what 'done well' means for the person or problem it serves, separate from what your manager prefers. Check your work against that.",
+      "quiz": {
+        "question": "What distortion does Dewey warn about?",
+        "options": [
+          "Pupils ignoring the teacher completely",
+          "Pupils trying to satisfy the teacher instead of the problem",
+          "Teachers giving too much praise",
+          "Problems that are too hard to solve"
+        ],
+        "answer": 1,
+        "explanation": "When 'Is this right?' comes to mean 'Will this satisfy the teacher?', learners adapt to a person rather than mastering the problem."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--14",
+      "topic": "learning",
+      "tags": [
+        "wisdom",
+        "information",
+        "knowledge",
+        "judgment"
+      ],
+      "title": "Information is stored knowledge; wisdom is knowledge put to work in life",
+      "body": "Dewey draws an old but often forgotten line. Information is knowledge acquired and stored up. Wisdom is knowledge working to help us live better. You can hold a great deal of the first with little of the second.\n\nHe criticises schooling that turns pupils into 'cyclopedias of useless information' and treats 'covering the ground' as the main goal. He doesn't dismiss facts: thinking needs material to work on. But the test of learning is whether it improves your judgment and your life, not how much you can recite.",
+      "quote": "Information is knowledge which is merely acquired and stored up; wisdom is knowledge operating in the direction of powers to the better living of life.",
+      "locator": "Chapter Four. School Conditions and the Training of Thought ¶31",
+      "apply_it": "Take one thing you learned this month and write how it will change a decision or habit this week. If it changes nothing, ask why you kept it.",
+      "quiz": {
+        "question": "How does Dewey distinguish wisdom from information?",
+        "options": [
+          "Wisdom is information that is older",
+          "Wisdom is a larger quantity of facts",
+          "Wisdom comes only from books",
+          "Wisdom is knowledge operating to help us live better"
+        ],
+        "answer": 3,
+        "explanation": "Information is merely acquired and stored; wisdom is knowledge working toward the better living of life."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--15",
+      "topic": "learning",
+      "tags": [
+        "learning-by-doing",
+        "problem-solving",
+        "memory",
+        "practical-knowledge"
+      ],
+      "title": "Knowledge you gain while solving problems is the knowledge you can use",
+      "body": "Dewey challenges the belief that we can pile up facts now and use them freely later. Information gathered apart from any real problem tends to stay inert. What we can actually draw on when thinking is what we picked up in the course of thinking.\n\nHe points to people with little formal schooling who use every ounce of what they know, because they learned it while dealing with real situations, and to very learned people who are swamped by their own learning because memory, not thinking, did the work. The lesson: learn with a question in hand.",
+      "quote": "men of vast erudition are often swamped by the mere bulk of their learning, because memory, rather than thinking, has been operative in obtaining it.",
+      "locator": "Chapter Four. School Conditions and the Training of Thought ¶32",
+      "apply_it": "Before starting a course, book or tutorial, write down one real problem you want it to help you solve, and apply each part to that problem as you go.",
+      "quiz": {
+        "question": "Why are some very learned people unable to use what they know, according to Dewey?",
+        "options": [
+          "They learned too little practical skill",
+          "They forgot most of it with age",
+          "Their knowledge was gained by memory rather than by thinking",
+          "They studied the wrong subjects"
+        ],
+        "answer": 2,
+        "explanation": "Knowledge acquired by memory alone, apart from solving problems, is hard to put to logical use later."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--16",
+      "topic": "personal-development",
+      "tags": [
+        "obstacles",
+        "difficulty",
+        "growth",
+        "freedom"
+      ],
+      "title": "Difficulties are not interruptions to growth; they are what makes you think",
+      "body": "Dewey argues that thought appears only when an impulse is checked. If everything goes smoothly, we act without reflecting. Any worthwhile activity runs into obstacles by itself, so there is no need to invent artificial hardships.\n\nBut the obstacles that do arise should be welcomed rather than removed, because they are the natural trigger for reflection. Real freedom, he says, isn't a life without resistance. It is the power gained by thinking your own way through the difficulties that block an easy success.",
+      "quote": "The difficulties that present themselves within the development of an experience are, however, to be cherished by the educator, not minimized, for they are the natural stimuli to reflective inquiry.",
+      "locator": "Chapter Five. The Means and End of Mental Training: The Psychological and the Logical ¶40",
+      "apply_it": "When a project hits a snag this week, pause before asking for a quick fix. Spend ten minutes writing out what the obstacle is teaching you.",
+      "quiz": {
+        "question": "How does Dewey view the obstacles that arise in a meaningful activity?",
+        "options": [
+          "As natural stimuli to thinking that should be cherished",
+          "As proof the task is too hard",
+          "As failures to be avoided",
+          "As something the teacher should remove quickly"
+        ],
+        "answer": 0,
+        "explanation": "Dewey says such difficulties should be cherished, not minimised, because they are the natural stimuli to reflective inquiry."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--17",
+      "topic": "learning",
+      "tags": [
+        "habits",
+        "attention",
+        "carelessness",
+        "practice"
+      ],
+      "title": "You are always forming thinking habits, good or bad",
+      "body": "Dewey warns that there is no neutral ground. If we aren't building habits of looking carefully, we are building habits of glancing over the surface. If we aren't learning to follow ideas through, we are learning grasshopper-like guessing. If we don't learn to hold judgment until evidence is in, we drift between believing too easily and dismissing too lightly, depending on mood.\n\nCarefulness, thoroughness and continuity grow only by being exercised from the start. Every hurried read, every half-checked conclusion, is practice too.",
+      "quote": "if not habits of consecutively following up the suggestions that occur, then habits of haphazard, grasshopper-like guessing",
+      "locator": "Chapter Five. The Means and End of Mental Training: The Psychological and the Logical ¶47",
+      "apply_it": "Choose one daily task, such as reading emails or checking figures, and do it slowly and fully today, as deliberate practice in carefulness.",
+      "quiz": {
+        "question": "What does Dewey say happens if careful thinking habits are not built?",
+        "options": [
+          "Opposite habits like hasty glancing and haphazard guessing are formed instead",
+          "Nothing; the mind stays neutral",
+          "Thinking improves naturally with age",
+          "Memory becomes stronger"
+        ],
+        "answer": 0,
+        "explanation": "Positive habits are always being formed: if not careful ones, then hasty, haphazard and credulous ones."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--18",
+      "topic": "learning",
+      "tags": [
+        "diagnosis",
+        "problem-definition",
+        "critical-thinking",
+        "solutions"
+      ],
+      "title": "Define the problem properly before you rush to solve it",
+      "body": "Dewey uses the example of a doctor. A skilled physician may notice signs of a disease at a glance, but if that first guess takes over, real thinking stops. Much of the doctor's skill is holding back the first suggestion until the problem has been explored, which is what diagnosis means.\n\nDewey says the same inspection is needed in any new or complicated situation. Take pains to locate what is actually wrong, or your attempts to fix it will be more or less random. A clear definition of the problem is what turns a guess into tested reasoning.",
+      "quote": "The essence of critical thinking is suspended judgment; and the essence of this suspense is inquiry to determine the nature of the problem before proceeding to attempts at its solution.",
+      "locator": "Chapter Six. The Analysis of a Complete Act of Thought ¶26",
+      "apply_it": "For a problem you face now, write three sentences describing what exactly is going wrong, when, and for whom, before you list any solutions.",
+      "quiz": {
+        "question": "What is the 'essence of critical thinking' according to Dewey?",
+        "options": [
+          "Choosing the most popular solution",
+          "Trusting your first impression",
+          "Suspended judgment while you investigate the nature of the problem",
+          "Collecting as many solutions as possible"
+        ],
+        "answer": 2,
+        "explanation": "Dewey says the essence is suspended judgment, and the essence of that suspense is inquiring into the problem before attempting a solution."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--19",
+      "topic": "productivity",
+      "tags": [
+        "decision-making",
+        "effort",
+        "judgment",
+        "stakes"
+      ],
+      "title": "Match the effort of your thinking to what is at stake",
+      "body": "Dewey doesn't ask us to deliberate endlessly about everything. A trained mind, he says, is one that judges how far each step of thinking should be taken in a given case: how much to observe, how many ideas to consider, how carefully to test.\n\nOver-thinking a small choice is as foolish as under-thinking a big one. Sometimes any decision that lets you act promptly beats a perfect decision too late; other questions deserve months or even a lifetime. The skill lies in reading which is which, and learning from past mistakes.",
+      "quote": "To take too much pains in one case is as foolish--as illogical--as to take too little in another.",
+      "locator": "Chapter Six. The Analysis of a Complete Act of Thought ¶38",
+      "apply_it": "Before your next decision, rate its stakes from 1 to 5 and give yourself a matching time limit: minutes for a 1, days for a 5.",
+      "quiz": {
+        "question": "What marks a trained mind in Dewey's view?",
+        "options": [
+          "It always takes the maximum care over every decision",
+          "It decides everything quickly",
+          "It follows fixed rules for every case",
+          "It judges how much thinking each situation needs"
+        ],
+        "answer": 3,
+        "explanation": "The trained mind grasps how much observation, reasoning and testing a particular case requires; no cast-iron rules apply."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--20",
+      "topic": "learning",
+      "tags": [
+        "consequences",
+        "ideas",
+        "reasoning",
+        "testing"
+      ],
+      "title": "Follow an idea's consequences before you accept it",
+      "body": "Once an idea occurs to us, Dewey says the next step is reasoning: working out what would follow if it were true. This often changes everything. Ideas that look plausible at first sight can turn out unfit, even absurd, once their full consequences are traced.\n\nThe reverse also happens. An idea that seems wild at first can, when developed, become exactly the right fit for the problem. Either way, thinking an idea through protects you from accepting or rejecting it on first impressions alone.",
+      "quote": "Conjectures that seem plausible at first sight are often found unfit or even absurd when their full consequences are traced out.",
+      "locator": "Chapter Six. The Analysis of a Complete Act of Thought ¶32",
+      "apply_it": "Take a plan you like and write 'If this is true, then...' three times, following it to its consequences. Note any that look wrong.",
+      "quiz": {
+        "question": "What does Dewey say tracing out an idea's consequences can do?",
+        "options": [
+          "Only confirm ideas you already like",
+          "Expose plausible ideas as unfit, or turn wild-seeming ideas into fruitful ones",
+          "Replace the need for observation",
+          "Make every idea look equally good"
+        ],
+        "answer": 1,
+        "explanation": "Reasoning out consequences can show a plausible idea to be absurd, and can transform remote-seeming suggestions into apt ones."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--21",
+      "topic": "learning",
+      "tags": [
+        "questions",
+        "problem-definition",
+        "focus",
+        "clarity"
+      ],
+      "title": "A question well put is half answered",
+      "body": "Dewey shows how a doctor who knows how the healthy body works can spot what is unusual in a patient and ignore what is merely conspicuous. Background knowledge lets you locate the real problem. And once a difficulty is clearly grasped, he says, it often suggests its own solution.\n\nA vague, scattered sense that 'something is wrong' leads to groping and fumbling. A sharp question, by contrast, points to where to look. Time spent improving the question is rarely wasted; it is often the fastest route to the answer.",
+      "quote": "A question well put is half answered",
+      "locator": "Chapter Seven. Systematic Inference: Induction and Deduction ¶58",
+      "apply_it": "Rewrite a problem you are stuck on as a single, specific question, then rewrite it again more sharply. Notice what the better version tells you to check.",
+      "quiz": {
+        "question": "What does Dewey say a clearly apprehended difficulty tends to do?",
+        "options": [
+          "Require outside experts",
+          "Become more confusing",
+          "Suggest its own solution",
+          "Disappear without action"
+        ],
+        "answer": 2,
+        "explanation": "A difficulty clearly apprehended is likely to suggest its own solution; a vague perception leads to groping and fumbling."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--22",
+      "topic": "learning",
+      "tags": [
+        "superstition",
+        "causation",
+        "fallacies",
+        "evidence"
+      ],
+      "title": "'It happened after' does not mean 'it happened because'",
+      "body": "Much everyday belief, Dewey notes, rests on things simply happening together. We see one event follow another and assume the first caused the second. Logicians call this the post hoc fallacy.\n\nHis examples include planting by the moon, comets as omens, bad luck from broken mirrors and patent medicines said to cure disease. Such beliefs can feel well supported because we remember the hits and forget the misses. Rule-of-thumb experience can be useful, but on its own it cannot tell right conclusions from wrong ones. Asking 'how exactly would this cause that?' is the beginning of a better test.",
+      "quote": "That potatoes should be planted only during the crescent moon ... that bad luck follows the cracking of a mirror, that a patent medicine cures a disease--these and a thousand like notions are asseverated on the basis of empirical coincidence and conjunction.",
+      "locator": "Chapter Eleven. Empirical and Scientific Thinking ¶8",
+      "apply_it": "Next time someone credits a remedy, ritual or product for a result, ask: what else happened at the same time, and what would have happened without it?",
+      "quiz": {
+        "question": "What is the fallacy Dewey describes as the animating principle of purely empirical conclusions?",
+        "options": [
+          "Believing that what comes after something is caused by it",
+          "Trusting scientific instruments too much",
+          "Refusing to accept any evidence",
+          "Assuming rare events never happen"
+        ],
+        "answer": 0,
+        "explanation": "Post hoc, ergo propter hoc: the belief that because one thing comes after another, it comes because of the other."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--23",
+      "topic": "communication",
+      "tags": [
+        "clarity",
+        "vagueness",
+        "language",
+        "precision"
+      ],
+      "title": "Vague words hide muddled thinking, so make your meaning precise",
+      "body": "Dewey calls vagueness the 'aboriginal logical sin', the source of most bad thinking. A clear meaning, even a wrong one, can be examined and corrected. A vague one is too soft to test. It lets different meanings mix together unnoticed, lets one meaning slide into another during an argument, and hides the fact that we may not mean anything precise at all.\n\nHe accepts we can never remove vagueness completely, but says reducing it takes sincerity and effort. In meetings, contracts and family disagreements alike, pinning down what a word means saves a great deal of confusion.",
+      "quote": "Vagueness disguises the unconscious mixing together of different meanings, and facilitates the substitution of one meaning for another, and covers up the failure to have any precise meaning at all.",
+      "locator": "II. Direct and Indirect Understanding ¶47",
+      "apply_it": "In your next disagreement or plan, pick the key word (like 'soon', 'fair' or 'success') and agree on exactly what it means, with a number or example.",
+      "quiz": {
+        "question": "Why does Dewey consider vague meanings so harmful?",
+        "options": [
+          "They are always deliberately dishonest",
+          "They evade testing and let meanings shift unnoticed",
+          "They make speech too technical",
+          "They are found only in children"
+        ],
+        "answer": 1,
+        "explanation": "Vague meanings evade testing; they disguise the mixing of meanings and cover up the lack of any precise meaning."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--24",
+      "topic": "learning",
+      "tags": [
+        "humility",
+        "jargon",
+        "open-mindedness",
+        "understanding"
+      ],
+      "title": "Honest ignorance beats borrowed catch-phrases",
+      "body": "Dewey warns that people of every age can use precise-sounding words with only a hazy idea of what they mean. We tend to assume that a definite phrase carries a definite idea, when often it doesn't.\n\nHe goes so far as to say that genuine ignorance is more useful, because it usually comes with humility, curiosity and openness. Being able to repeat buzzwords and slogans, by contrast, gives the feeling of knowing and seals the mind against new ideas. Notice when you are reaching for a stock phrase instead of an explanation.",
+      "quote": "Genuine ignorance is more profitable because likely to be accompanied by humility, curiosity, and open-mindedness",
+      "locator": "Chapter Thirteen. Language and the Training of Thought ¶26",
+      "apply_it": "Pick one buzzword you use at work or online. Explain it in plain words to someone, or to yourself on paper, without using the word itself.",
+      "quiz": {
+        "question": "Why does Dewey prefer genuine ignorance to repeating catch-phrases?",
+        "options": [
+          "Ignorance is always harmless",
+          "Catch-phrases are too hard to remember",
+          "Catch-phrases are always factually wrong",
+          "Ignorance tends to come with humility and curiosity, while catch-phrases give a false sense of learning"
+        ],
+        "answer": 3,
+        "explanation": "Genuine ignorance is accompanied by humility, curiosity and open-mindedness; stock phrases give the conceit of learning and shut out new ideas."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--25",
+      "topic": "creativity",
+      "tags": [
+        "originality",
+        "independent-thinking",
+        "initiative",
+        "students"
+      ],
+      "title": "Originality means working ideas through yourself, not being different",
+      "body": "Dewey says all genuine thinking contains some originality, but he defines it carefully. It does not mean reaching a conclusion nobody has reached before, or disagreeing with others. You can use plenty of other people's material and suggestions and still think originally.\n\nOriginality means taking a personal interest in the question, turning over the suggestions others offer on your own initiative, and following them honestly to a tested conclusion. He adds that when people are taught that a field is fully settled, they may stay docile pupils but stop being students.",
+      "quote": "Originality means personal interest in the question, personal initiative in turning over the suggestions furnished by others, and sincerity in following them out to a tested conclusion.",
+      "locator": "Chapter Fourteen. Observation and Information in the Training of Mind ¶39",
+      "apply_it": "Take one piece of advice you've read recently. Test it on your own situation this week and write down what you found, in your own words.",
+      "quiz": {
+        "question": "How does Dewey define originality in thinking?",
+        "options": [
+          "Reaching conclusions no one has reached before",
+          "Refusing to use other people's ideas",
+          "Disagreeing with experts",
+          "Personal interest and initiative in testing ideas, including others' suggestions"
+        ],
+        "answer": 3,
+        "explanation": "Originality is personal interest, personal initiative in turning over suggestions from others, and sincerity in testing them, not novelty for its own sake."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--26",
+      "topic": "learning",
+      "tags": [
+        "reflection",
+        "quiet",
+        "focus",
+        "deep-work"
+      ],
+      "title": "Give ideas quiet time to digest",
+      "body": "Dewey points out that we say 'stop and think' for a reason. Turning a vague idea into a clear one needs a pause: a break from incoming stimulation and demands for action, so that the idea can mature.\n\nHe compares reasoning to digestion. A silent, uninterrupted working-over of alternatives produces coherent conclusions; rapid back-and-forth argument and grabbing at one suggestion after another do not. Constant notifications, meetings and noise leave little room for this. Building in quiet thinking time is not laziness; it is part of the work.",
+      "quote": "Reasoning is no more akin to disputing or arguing, or to the abrupt seizing and dropping of suggestions, than digestion is to a noisy champing of the jaws.",
+      "locator": "Chapter Fifteen. The Recitation and the Training of Thought ¶33",
+      "apply_it": "Schedule 20 minutes today with your phone in another room. Take one open question and just think it through on paper.",
+      "quiz": {
+        "question": "What does Dewey compare reasoning to?",
+        "options": [
+          "A debate, which needs a quick opponent",
+          "Digestion, which needs quiet uninterrupted working-over",
+          "A race, which rewards speed",
+          "A storage room for facts"
+        ],
+        "answer": 1,
+        "explanation": "Dewey likens reasoning to digestion: it needs a silent, uninterrupted working-over, not noisy argument."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--27",
+      "topic": "creativity",
+      "tags": [
+        "play",
+        "seriousness",
+        "open-mindedness",
+        "curiosity"
+      ],
+      "title": "Be playful and serious at the same time",
+      "body": "Dewey warns that work cut off from play becomes dull, and play cut off from purpose becomes mere fooling. His ideal state of mind joins the two. Free mental play means following a subject wherever it unfolds, without forcing it to fit a belief you already hold, which keeps you curious, flexible and free of dogma.\n\nBut this play is serious, not careless. It means noticing each result exactly so it can be used next. In Dewey's view, the honest pursuit of truth and the enjoyment of free-ranging thought turn out to be the same thing.",
+      "quote": "To be playful and serious at the same time is possible, and it defines the ideal mental condition.",
+      "locator": "Chapter Sixteen. Some General Conclusions ¶23",
+      "apply_it": "Pick a work problem and spend ten minutes generating deliberately silly or unusual solutions. Then seriously test the best one.",
+      "quiz": {
+        "question": "What does Dewey describe as the ideal mental condition?",
+        "options": [
+          "Being playful and serious at the same time",
+          "Playfulness without concern for results",
+          "Strict seriousness with no play",
+          "Alternating between work and rest"
+        ],
+        "answer": 0,
+        "explanation": "Dewey says it is possible to be playful and serious at once, and this defines the ideal mental condition."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--28",
+      "topic": "productivity",
+      "tags": [
+        "motivation",
+        "drudgery",
+        "purpose",
+        "chores"
+      ],
+      "title": "Dull tasks become bearable when you value what they lead to",
+      "body": "Dewey describes drudgery as work where interest in the result never reaches the means. The doing itself feels hateful, a necessary evil. He rejects the idea that forcing people through distasteful tasks builds a love of duty; it mostly breeds shirking and evasion.\n\nBetter, he says, to help people truly appreciate the value of the end, so that some of that value transfers to the steps. Boring tasks are not interesting in themselves, but they can borrow interest from a result we care about. Connecting each chore to its purpose is a practical motivation tool.",
+      "quote": "Not interesting in themselves, they borrow interest from the result with which they are associated.",
+      "locator": "Chapter Sixteen. Some General Conclusions ¶19",
+      "apply_it": "Take a task you've been avoiding and write one sentence naming the result it serves and why that result matters to you. Then start.",
+      "quiz": {
+        "question": "According to Dewey, how is willingness to do unattractive tasks best achieved?",
+        "options": [
+          "By imposing them regularly to build discipline",
+          "By making them as short as possible",
+          "By helping people value the end so its value transfers to the means",
+          "By paying people more"
+        ],
+        "answer": 2,
+        "explanation": "Dewey says willingness comes from appreciating the end so much that its value is transferred to the means, which borrow interest from the result."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--29",
+      "topic": "study-smarter",
+      "tags": [
+        "challenge",
+        "difficulty",
+        "learning-zone",
+        "motivation"
+      ],
+      "title": "Learn best at the edge: mix the familiar with the challenging",
+      "body": "Dewey observed that learners often wake up when something unfamiliar appears and stay flat when asked to think about what they already know. The familiar doesn't spark thought on its own, yet it is the toolkit we use to grasp the new.\n\nSo the best thinking happens when easy and difficult are in proportion. The new and remote supplies the stimulus; the familiar supplies the way in. Too much that is easy gives nothing to inquire into, and too much that is hard makes inquiry hopeless. Choose learning material that stretches you, but not out of reach.",
+      "quote": "Too much that is easy gives no ground for inquiry; too much of the hard renders inquiry hopeless.",
+      "locator": "Chapter Sixteen. Some General Conclusions ¶35",
+      "apply_it": "Look at what you are learning now. If it feels effortless, raise the difficulty; if it feels hopeless, find one step that links it to what you already know.",
+      "quiz": {
+        "question": "When does the best thinking occur, according to Dewey?",
+        "options": [
+          "When everything is familiar and easy",
+          "When the easy and the difficult are in proportion",
+          "When material is as hard as possible",
+          "When learners avoid new topics"
+        ],
+        "answer": 1,
+        "explanation": "The best thinking occurs when the easy and the difficult are duly proportioned; the familiar gives access and the new gives the stimulus."
+      }
+    },
+    {
+      "id": "how-we-think-dewey--30",
+      "topic": "communication",
+      "tags": [
+        "misunderstanding",
+        "assumptions",
+        "conversation",
+        "conflict"
+      ],
+      "title": "When you talk past each other, dig up the hidden assumptions",
+      "body": "Conversations work, Dewey notes, because people share a background they never need to spell out. Spelling it all out every time would be absurd. But when two people find themselves at cross-purposes, that unspoken background is usually where the trouble lies.\n\nThe fix is to bring the assumptions into the open and compare them: what each person is taking for granted, what situation or goal each has in mind. Once the hidden premise is visible, the misunderstanding often dissolves. The same move helps in your own thinking when it keeps hitting a wall.",
+      "quote": "If, however, the two persons find themselves at cross-purposes, it is necessary to dig up and compare the presuppositions, the implied context, on the basis of which each is speaking.",
+      "locator": "Chapter Sixteen. Some General Conclusions ¶6",
+      "apply_it": "Next time an argument goes round in circles, stop and ask: 'What are we each assuming here?' Write both lists down.",
+      "quiz": {
+        "question": "What does Dewey recommend when two people are at cross-purposes?",
+        "options": [
+          "Repeat your point more firmly",
+          "Change the subject",
+          "Let an authority decide",
+          "Dig up and compare the assumptions each is speaking from"
+        ],
+        "answer": 3,
+        "explanation": "When people are at cross-purposes, the implicit must be made explicit by comparing the presuppositions each is speaking from."
+      }
+    }
+  ]
+}

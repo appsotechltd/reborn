@@ -20,7 +20,7 @@
   "cards": [
     {
       "id": "art-of-public-speaking-carnegie--01",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "stage-fright",
@@ -45,7 +45,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--02",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "confidence",
@@ -70,7 +70,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--03",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "preparation",
@@ -95,7 +95,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--04",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "delivery",
@@ -120,7 +120,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--05",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "pausing",
@@ -145,7 +145,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--06",
-      "topic": "productivity",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "knowledge",
@@ -170,7 +170,7 @@
     },
     {
       "id": "art-of-public-speaking-carnegie--07",
-      "topic": "business",
+      "topic": "communication",
       "tags": [
         "public-speaking",
         "audience",
@@ -191,6 +191,1081 @@
         ],
         "answer": 2,
         "explanation": "Fitting the speech to the event, audience and time limit comes before anything else."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--08",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "confidence",
+        "openings"
+      ],
+      "title": "Don't open by apologising; just begin",
+      "body": "Many speakers start with 'I'm not very good at this' or 'sorry, I didn't have much time to prepare'. The authors give short advice: don't apologise. If the apology isn't needed, it wastes the opening. If it is needed, saying so won't fix anything; it only lowers the audience's expectations and your own confidence.\n\nThe same applies to presentations, pitches and even emails that begin with excuses. Listeners judge you on what you deliver, not on the disclaimers before it. Prepare as well as you can, then go straight into your first point with a steady voice.",
+      "quote": "Do not apologize. It ought not to be necessary; and if it is, it will not help. Go straight ahead.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶32",
+      "apply_it": "Look at the first line of your next presentation or important email. If it starts with an apology or excuse, delete it.",
+      "quiz": {
+        "question": "What is the authors' view on apologising at the start of a speech?",
+        "options": [
+          "Don't; it either isn't needed or won't help",
+          "Always apologise to seem humble",
+          "Apologise only to large audiences",
+          "Apologise, then repeat it at the end"
+        ],
+        "answer": 0,
+        "explanation": "The authors say an apology ought not to be necessary, and if it is, it won't help: go straight ahead."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--09",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "nerves",
+        "audience"
+      ],
+      "title": "Your audience is hoping you do well",
+      "body": "Nervous speakers often imagine the audience as a panel of critics waiting for a mistake. The authors suggest pausing at the start, looking at the people in front of you, and remembering a simple fact: they gave up their time, and sometimes money, to be there. Almost nobody does that hoping to be bored.\n\nIn other words, listeners are generally on your side. They want the talk to be good because they want their time to be well spent. Holding that thought can calm your nerves and change how you carry yourself: you're speaking to people who want you to succeed.",
+      "quote": "a hundred chances to one they want you to succeed",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶29",
+      "apply_it": "Before your next talk or meeting, take a few seconds to look around the room and remind yourself: these people want this to go well.",
+      "quiz": {
+        "question": "Why do the authors say most audiences want the speaker to succeed?",
+        "options": [
+          "They are paid to be polite",
+          "They have invested their time and hope it won't be wasted",
+          "They don't really listen anyway",
+          "They know the speaker personally"
+        ],
+        "answer": 1,
+        "explanation": "The authors point out that no one spends time, perhaps money, hoping you will waste it by talking dully."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--10",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "nerves",
+        "pacing"
+      ],
+      "title": "Take a breath and start slowly, as if talking to one friend",
+      "body": "Nerves make people rush, and rushing makes nerves worse. The authors' advice for the first moments of a talk is to resist the urge to hurry. Take a deep breath, relax and begin in a quiet, conversational tone, as though speaking to one large friend rather than a crowd.\n\nThey compare it to jumping into cold water: the first moment is the worst, and once you're in, it feels fine. Starting calmly signals control to the audience and to yourself. Many people find that after the first minute their voice steadies and the rest of the talk flows far more easily.",
+      "quote": "Do not make haste to begin--haste shows lack of control.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶31",
+      "apply_it": "At your next presentation, stand still, take one slow breath, and say your first sentence a little slower than feels natural.",
+      "quiz": {
+        "question": "How do the authors suggest beginning a speech?",
+        "options": [
+          "Loudly, to grab attention",
+          "As quickly as possible to get it over with",
+          "Calmly, in a quiet conversational tone after a deep breath",
+          "By reading a long apology"
+        ],
+        "answer": 2,
+        "explanation": "They advise not rushing, because haste shows lack of control; take a deep breath, relax and begin conversationally."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--11",
+      "topic": "communication",
+      "tags": [
+        "humility",
+        "ego",
+        "presence"
+      ],
+      "title": "Trying to look impressive is easy to spot, and it backfires",
+      "body": "The authors warn of a worse form of self-consciousness than nervousness: the speaker who is busy showing off. Conceit, they say, advertises itself. You can always see it in others, which means others can see it in you.\n\nThe cure is to focus on something bigger than yourself, such as the message, the cause or the people you are serving. When attention moves there, the urge to look clever fades. This applies well beyond speeches. In interviews, meetings and social media posts, people warm to those who are trying to help or inform, and quietly withdraw from those who are mainly trying to impress.",
+      "quote": "Nothing advertises itself so thoroughly as conceit. One may be so full of self as to be empty.",
+      "locator": "Chapter I. Acquiring Confidence Before an Audience ¶16",
+      "apply_it": "Before your next presentation or post, ask: what does my audience need from this? Cut one line that is only there to impress.",
+      "quiz": {
+        "question": "What do the authors say about conceit?",
+        "options": [
+          "It can be hidden with practice",
+          "It helps win an audience's respect",
+          "It only matters for professional speakers",
+          "Others easily notice it, just as you notice it in them"
+        ],
+        "answer": 3,
+        "explanation": "They say nothing advertises itself so thoroughly as conceit: if you have it, others are seeing it in you."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--12",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "feedback",
+        "practice"
+      ],
+      "title": "Listen to yourself and be your own strictest critic",
+      "body": "The authors say the techniques of good delivery can't be learned just by reading about them. You have to practise, again and again. And when no one else is available to listen, listen to yourself, judging your own speaking more strictly than anyone else would.\n\nToday this is easier than ever. Record yourself on your phone, then play it back. You'll hear the filler words, the flat patches and the sentences that run on too long, things you never notice in the moment. Uncomfortable as it is, this kind of self-review is one of the fastest ways to improve any skill involving your voice.",
+      "quote": "If no one else will listen to you, listen to yourself--you must always be your own best critic, and the severest one of all.",
+      "locator": "Chapter II. The Sin of Monotony ¶18",
+      "apply_it": "Record yourself giving a two-minute explanation of something you know well. Play it back and note three things to improve.",
+      "quiz": {
+        "question": "What do the authors recommend if no one else will listen to you practise?",
+        "options": [
+          "Listen to yourself and be your own severest critic",
+          "Stop practising until you find an audience",
+          "Only practise in your head",
+          "Read more books about speaking instead"
+        ],
+        "answer": 0,
+        "explanation": "They say if no one else will listen, listen to yourself: you must be your own best and severest critic."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--13",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "emphasis",
+        "clarity"
+      ],
+      "title": "In every sentence, find the few words that matter most",
+      "body": "The authors point out that when we say a long word, we stress one syllable and pass lightly over the rest. Good speakers treat sentences the same way. In almost every sentence there are a few key words carrying the big ideas, and those deserve emphasis; the small words around them should be passed over lightly.\n\nIf you stress every word equally, nothing stands out, and listeners can't tell what matters. Picking out your key words is also a test of clarity: if you can't find them, you may not be sure what you mean. Mark them in your notes before an important talk.",
+      "quote": "In almost every sentence there are a few MOUNTAIN PEAK WORDS that represent the big, important ideas.",
+      "locator": "Chapter III. Efficiency Through Emphasis and Subordination ¶13",
+      "apply_it": "Take the three main sentences of your next talk and underline the one or two words in each that carry the meaning. Stress those aloud.",
+      "quiz": {
+        "question": "What are 'mountain peak words', according to the authors?",
+        "options": [
+          "Long words that impress listeners",
+          "The few words in a sentence carrying the big ideas",
+          "Words spoken at a high pitch",
+          "The first and last word of every sentence"
+        ],
+        "answer": 1,
+        "explanation": "They describe a few mountain peak words in almost every sentence that represent the important ideas and deserve emphasis."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--14",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "authenticity",
+        "memorising"
+      ],
+      "title": "Think the thought each time, rather than reciting the words",
+      "body": "The authors observe that memorised speeches often sound hollow, like a parrot repeating sounds. The problem isn't memorising; it's speaking words without actively thinking the thoughts behind them.\n\nTheir solution is to let the words be 'born again' each time you speak. Even if you have given the same talk many times, bring the idea freshly to mind as you say it, as though explaining it for the first time. Then your voice naturally varies and carries conviction. This works for sales pitches, lectures and any message you repeat often: focus on the meaning, and the words will sound alive.",
+      "quote": "your words must be born again every time they are spoken",
+      "locator": "Chapter VIII. Concentration in Delivery ¶10",
+      "apply_it": "Next time you repeat a familiar explanation, pause before each point and picture what it means before you say it.",
+      "quiz": {
+        "question": "Why do memorised speeches often sound hollow, according to the authors?",
+        "options": [
+          "Memorised speeches are always too long",
+          "Audiences dislike all prepared speeches",
+          "The speaker says the words without actively thinking the thoughts",
+          "The speaker speaks too slowly"
+        ],
+        "answer": 2,
+        "explanation": "They say the trouble is mental: speakers enunciate word-sounds mechanically instead of concentratedly thinking the thoughts."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--15",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "concentration",
+        "delivery"
+      ],
+      "title": "Finish the sentence you're saying before thinking of the next",
+      "body": "A common habit among speakers is to plan the next sentence while still saying the current one. The authors point out the cost: concentration trails off, so sentences start strongly and end weakly, often just where the most important word sits.\n\nTheir rule is to give full attention to the sentence you are speaking and look ahead only in the natural pauses between thoughts. It's like driving: you glance down the road during quiet moments, but you don't steer by staring at the next bend. The same applies in conversation. People notice when you're preparing your reply instead of finishing your point or hearing theirs.",
+      "quote": "while speaking one sentence do not think of the sentence to follow",
+      "locator": "Chapter VIII. Concentration in Delivery ¶6",
+      "apply_it": "In your next presentation, consciously land the final word of each key sentence before glancing at your notes for the next.",
+      "quiz": {
+        "question": "What happens when speakers think ahead to the next sentence while speaking?",
+        "options": [
+          "They speak with greater fluency",
+          "Their audience pays closer attention",
+          "They avoid all pauses",
+          "They start sentences strongly and end them weakly"
+        ],
+        "answer": 3,
+        "explanation": "The authors say concentration trails off, so speakers start sentences strongly and end them weakly; look ahead only in pauses."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--16",
+      "topic": "communication",
+      "tags": [
+        "writing",
+        "clarity",
+        "plain-language"
+      ],
+      "title": "Plain, short, specific words hit harder",
+      "body": "In their advice on forceful wording, the authors list a few simple rules. Plain words beat rare ones. Short words beat long ones: 'end' is more direct than 'terminate'. Specific words beat general ones. They also suggest cutting unnecessary words and favouring short sentences.\n\nThis advice has aged well. Reports, emails, presentations and social posts all gain from it. Jargon and inflated vocabulary make readers work harder and often hide fuzzy thinking. When you edit, look for long words with short equivalents and vague words with precise ones. Your message will be easier to understand and more likely to be acted on.",
+      "quote": "SHORT words are stronger than long words--end has more directness than terminate.",
+      "locator": "Chapter IX. Force ¶29",
+      "apply_it": "Take your last important email. Replace five long or vague words with shorter, more specific ones, and cut every word that adds nothing.",
+      "quiz": {
+        "question": "According to the authors, which word is more forceful?",
+        "options": [
+          "End",
+          "Terminate",
+          "Conclude formally",
+          "Bring to a termination"
+        ],
+        "answer": 0,
+        "explanation": "They note short words are stronger than long ones: 'end' has more directness than 'terminate'."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--17",
+      "topic": "communication",
+      "tags": [
+        "conviction",
+        "hedging",
+        "communication"
+      ],
+      "title": "Cut the hedges like 'I suppose' when you honestly believe something",
+      "body": "The authors note that memorable speeches don't say 'it seems to me', 'perhaps' or 'in my humble opinion'. They mock a nervous young preacher who smothered his message in so many qualifiers that it lost all force.\n\nTheir point is not to fake certainty; they add that you should only assert convictions you honestly hold. It's that once you have thought something through and believe it, say so plainly. Constant hedging tells listeners you don't trust your own conclusions, so why should they? Save qualifiers for real uncertainty, and state your genuine views clearly.",
+      "quote": "An audience will never be moved by what \"seems\" to you to be truth or what in your \"humble opinion\" may be so.",
+      "locator": "Chapter IX. Force ¶49",
+      "apply_it": "Reread a recent message or proposal. Remove hedges like 'I think maybe' wherever you actually are confident.",
+      "quiz": {
+        "question": "When do the authors say you should assert conclusions plainly?",
+        "options": [
+          "Always, whether you believe them or not",
+          "When you honestly hold them as convictions",
+          "Never; hedging is more polite",
+          "Only when the audience already agrees"
+        ],
+        "answer": 1,
+        "explanation": "They advise asserting convictions as conclusions 'if you honestly can', rather than smothering them in 'it seems to me'."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--18",
+      "topic": "communication",
+      "tags": [
+        "conviction",
+        "preparation",
+        "persuasion"
+      ],
+      "title": "Live with your subject until you're convinced it matters",
+      "body": "The authors say real force in speaking comes from inside: you must be convinced of the truth or importance of what you're saying before you can move anyone else. Loudness and dramatic gestures can't replace that conviction.\n\nHow do you get it? Their answer is to live with your subject. Read about it, think about it and look for why it matters to real people, until you care about it. This is useful advice for anyone asked to present on something they find dull. Dig until you find the part that genuinely matters, and lead with that.",
+      "quote": "Live with your subject until you are convinced of its importance.",
+      "locator": "Chapter IX. Force ¶22",
+      "apply_it": "For your next presentation, write one sentence on why the topic genuinely matters to the audience. If you can't, keep researching until you can.",
+      "quiz": {
+        "question": "According to the authors, where does forceful delivery begin?",
+        "options": [
+          "In speaking as loudly as possible",
+          "In using big hand gestures",
+          "In the speaker's own conviction about the subject",
+          "In memorising every word"
+        ],
+        "answer": 2,
+        "explanation": "They say force arises from conviction, and the way to acquire it is to live with your subject until convinced of its importance."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--19",
+      "topic": "communication",
+      "tags": [
+        "sincerity",
+        "storytelling",
+        "authenticity"
+      ],
+      "title": "A sincere personal story can beat a polished performance",
+      "body": "The authors once set a hundred students, many of them experienced lawyers and campaigners, to speak on a heated political issue. Several gave learned, elegant speeches. The one that electrified the room came from a modest clerk who simply told how he grew up hearing his mother's stories of his homeland.\n\nTheir conclusion: you cannot fake feeling for long, and audiences sense the difference. Sincerity moves people more than clever phrasing. If you are speaking on something you care about, your own honest experience is often your strongest material. Don't bury it under borrowed eloquence.",
+      "quote": "Sincerity is the very soul of eloquence.",
+      "locator": "Chapter X. Feeling and Enthusiasm ¶27",
+      "apply_it": "For your next talk or pitch, add one short, true story from your own experience that shows why the topic matters to you.",
+      "quiz": {
+        "question": "In the authors' story, whose speech most moved the audience?",
+        "options": [
+          "An experienced lawyer with the best facts",
+          "A campaigner with the most elegant phrases",
+          "The speaker who spoke longest",
+          "A modest clerk speaking from personal experience"
+        ],
+        "answer": 3,
+        "explanation": "The clerk's genuine conviction and feeling, speaking from his own life, electrified the audience more than polished speeches."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--20",
+      "topic": "communication",
+      "tags": [
+        "service",
+        "purpose",
+        "motivation"
+      ],
+      "title": "Great communication comes from wanting to help others",
+      "body": "The authors note that few of the speeches remembered by history were given for selfish or narrow causes. They came from a strong desire to help people. In their view, the sign of greatness is a wish to serve others.\n\nThis is practical as well as idealistic. When your aim is to impress, you focus on yourself and get nervous. When your aim is to help, you focus on the listener's needs, and your words become clearer and warmer. Before any presentation, pitch or difficult conversation, ask who you are trying to help and how. That question improves both what you say and how you say it.",
+      "quote": "The seal and sign of greatness is a desire to serve others.",
+      "locator": "Chapter X. Feeling and Enthusiasm ¶23",
+      "apply_it": "Before your next talk or meeting, finish this sentence in writing: 'This will help them by...'",
+      "quiz": {
+        "question": "According to the authors, what is the 'seal and sign of greatness'?",
+        "options": [
+          "A desire to serve others",
+          "A large vocabulary",
+          "A loud, commanding voice",
+          "Fame and public recognition"
+        ],
+        "answer": 0,
+        "explanation": "They write that the seal and sign of greatness is a desire to serve others, and that moving speeches come from sympathy and love."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--21",
+      "topic": "communication",
+      "tags": [
+        "preparation",
+        "fluency",
+        "practice"
+      ],
+      "title": "A 'ready' speaker is simply a well-prepared one",
+      "body": "People often envy those who can speak fluently on the spot, assuming it's a natural gift. The authors argue that fluency is almost entirely a matter of preparation. Readiness literally means being prepared, and those most ready are those best prepared.\n\nThey name two ingredients: knowing your subject thoroughly and being used to telling what you know to an audience. Both can be built. Even naturally gifted speakers depend on the same laws of preparation. If you freeze when asked to speak, the fix is not a new personality; it is more knowledge of your topic and more practice explaining it out loud.",
+      "quote": "Readiness, in its prime sense, is preparedness, and they are most ready who are best prepared.",
+      "locator": "Chapter XI. Fluency Through Preparation ¶9",
+      "apply_it": "Pick a topic you'll likely be asked about at work. Practise explaining it aloud for two minutes, three times this week.",
+      "quiz": {
+        "question": "What two conditions do the authors say fluency depends on?",
+        "options": [
+          "A natural gift and a loud voice",
+          "Knowing your subject and being used to telling it to an audience",
+          "Long words and complex sentences",
+          "Memorising every speech word for word"
+        ],
+        "answer": 1,
+        "explanation": "They say fluency depends on knowledge of what you will say and being accustomed to telling what you know to an audience."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--22",
+      "topic": "communication",
+      "tags": [
+        "practice",
+        "skills",
+        "performance"
+      ],
+      "title": "Drill technique in private; on stage, think only of your message",
+      "body": "While learning a new skill, the authors note, practising technique can make you worse for a while. Paying attention to your voice or gestures interrupts the flow. That's normal, and it belongs at home, not on the platform.\n\nWhen you actually speak, they say, think only of your subject. Your listeners follow your attention: if you think about your hands, they will too. The technique you've drilled will show up automatically as habit. The same applies to sport, music and job interviews: practise the mechanics deliberately beforehand, then trust them and focus on the purpose when it counts.",
+      "quote": "There you must think only of your subject.",
+      "locator": "Chapter XI. Fluency Through Preparation ¶17",
+      "apply_it": "Before your next talk, practise one technique, like pausing, in private. During the talk, put all your attention on your message.",
+      "quiz": {
+        "question": "Where do the authors say you should focus on technique like inflection?",
+        "options": [
+          "Only while speaking to the audience",
+          "Nowhere; technique doesn't matter",
+          "In private practice, not on the platform",
+          "Only after the speech is over"
+        ],
+        "answer": 2,
+        "explanation": "They say technical practice belongs at home; on the platform you must think only of your subject and let habit handle technique."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--23",
+      "topic": "communication",
+      "tags": [
+        "voice",
+        "relaxation",
+        "public-speaking"
+      ],
+      "title": "Relax and let your voice flow instead of forcing it",
+      "body": "The authors say the secret of a good speaking voice is ease, and ease comes from relaxation. Tense muscles in the face, jaw and throat squeeze the sound and make it harsh; relaxed ones let it flow. Nervousness is a common cause of that tension, which is one more reason to build confidence.\n\nTheir simple instruction is not to push. Breathe deeply, loosen your jaw and shoulders, and let the sound come out rather than forcing it. Before a presentation or an important call, a few slow breaths and a gentle roll of the neck and shoulders can make your voice noticeably clearer and more pleasant to listen to.",
+      "quote": "Don't make your voice go--let it go.",
+      "locator": "Chapter XII. The Voice ¶8",
+      "apply_it": "Before your next call or talk, take three slow breaths, drop your shoulders, let your jaw loosen, then speak.",
+      "quiz": {
+        "question": "According to the authors, what is the basis of a good voice?",
+        "options": [
+          "Speaking as loudly as possible",
+          "A naturally deep voice",
+          "Tightening the throat for control",
+          "Ease, which comes from relaxation"
+        ],
+        "answer": 3,
+        "explanation": "They say the secret of good voice is relaxation, the basis of ease; don't force your tones."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--24",
+      "topic": "communication",
+      "tags": [
+        "optimism",
+        "voice",
+        "attitude"
+      ],
+      "title": "People can hear a smile in your voice",
+      "body": "The authors connect a pleasant voice with a joyful attitude. They note that happiness is largely a matter of viewing life from the right angle, and that this attitude can be cultivated. When it is, it shows in how you sound.\n\nThey cite a telephone company that hung a sign in its booths: 'The Voice with the Smile Wins'. Call centres still train staff this way, because listeners can hear warmth even when they can't see a face. Before an important call or meeting, put yourself in a good frame of mind and actually smile. It changes your tone, and people respond to it.",
+      "quote": "The Voice with the Smile Wins.\" It does. Try it.",
+      "locator": "Chapter XIII. Voice Charm ¶16",
+      "apply_it": "On your next phone call, smile as you say hello and keep a warm tone. Notice how the other person responds.",
+      "quiz": {
+        "question": "What do the authors say about an optimistic attitude?",
+        "options": [
+          "It can be cultivated and shows in your voice",
+          "It is fixed at birth",
+          "It makes you sound less serious",
+          "It matters only in face-to-face talks"
+        ],
+        "answer": 0,
+        "explanation": "They say happiness is largely an attitude of mind, the optimistic attitude can be cultivated, and it expresses itself in voice charm."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--25",
+      "topic": "communication",
+      "tags": [
+        "clarity",
+        "pronunciation",
+        "communication"
+      ],
+      "title": "Speak every word clearly, or you haven't really communicated",
+      "body": "The authors had little patience for speakers who mumble, drop the endings of words or run them together, then assume they've told the audience something. Telling, they point out, means communicating, and that requires words people can actually make out.\n\nMuch of this is habit, not ability, and habits can be changed with attention and practice. Clear speech matters more than ever on phone and video calls, where sound quality is poor and listeners may not share your accent. Slow down slightly, finish your consonants, and don't let sentences trail away. Being understood the first time is a form of respect.",
+      "quote": "Telling means communicating, and how can he actually communicate without making every word distinct?",
+      "locator": "Chapter XIV. Distinctness and Precision of Utterance ¶6",
+      "apply_it": "Record a one-minute voice note explaining something. Play it back and note any words that are swallowed or rushed.",
+      "quiz": {
+        "question": "What is the authors' main argument for speaking distinctly?",
+        "options": [
+          "It makes you sound more upper-class",
+          "You can't truly communicate unless each word is clear",
+          "It allows you to speak faster",
+          "It impresses examiners"
+        ],
+        "answer": 1,
+        "explanation": "They say telling means communicating, and you cannot communicate without making every word distinct."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--26",
+      "topic": "communication",
+      "tags": [
+        "body-language",
+        "gestures",
+        "authenticity"
+      ],
+      "title": "Good gestures come from real feeling, not rehearsed rules",
+      "body": "The authors were scornful of speaking manuals that prescribed a gesture for every phrase. Gesture, they say, is the outward sign of an inner state. If you genuinely care about your message, your body will want to express it; if you don't, bolting on movements looks like nailing dead branches to a tree.\n\nSo the fix for stiff or awkward body language starts inside: know and care about what you're saying. Then practise enough to move naturally, review yourself, and refine. But don't plan in advance to point here and spread your arms there. Audiences can sense when movement is mechanical.",
+      "quote": "Gestures must be born, not built.",
+      "locator": "Chapter XV. The Truth About Gesture ¶5",
+      "apply_it": "In your next presentation, don't plan any gestures. Focus on what you mean and let your hands follow. Review a recording afterward.",
+      "quiz": {
+        "question": "How do the authors say a speaker should fix weak or awkward gestures?",
+        "options": [
+          "Memorise a gesture for each sentence",
+          "Keep the hands completely still",
+          "Attend to the cause: real thought and feeling about the message",
+          "Copy a famous speaker's movements exactly"
+        ],
+        "answer": 2,
+        "explanation": "They say gesture is an outward expression of an inward condition; attend to the cause, not the effect. Gestures must be born, not built."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--27",
+      "topic": "communication",
+      "tags": [
+        "body-language",
+        "fidgeting",
+        "presence"
+      ],
+      "title": "Every fidget pulls attention away from your message",
+      "body": "The authors warn that any movement without meaning weakens a speech. People naturally watch what moves. They tell of a well-known man introducing a speaker: the only thing anyone remembered afterward was that he played nervously with the tablecloth while he talked.\n\nTapping pens, swaying, adjusting glasses or clicking a pen all do the same thing today, in person and on camera. They pull eyes from your message and signal nerves. You don't have to stand like a statue. Just make your movements purposeful, and when you have nothing to express, let your hands and feet be still.",
+      "quote": "Restlessness is not expression. A great many useless movements will only take the attention of the audience from what you are saying.",
+      "locator": "Chapter XV. The Truth About Gesture ¶20",
+      "apply_it": "Record yourself presenting for two minutes. Count your unnecessary movements, then practise again keeping still between purposeful gestures.",
+      "quiz": {
+        "question": "What was remembered about the man who introduced a speaker in the authors' example?",
+        "options": [
+          "His powerful closing line",
+          "His elegant gestures",
+          "His loud voice",
+          "That he fiddled with the table covering"
+        ],
+        "answer": 3,
+        "explanation": "The only thing remembered about that introduction was that he played nervously with the table covering while he talked."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--28",
+      "topic": "communication",
+      "tags": [
+        "calm",
+        "intensity",
+        "presence"
+      ],
+      "title": "Fuss is not force: quiet intensity often carries more weight",
+      "body": "The authors observe that in life's biggest moments people rarely make dramatic movements. Grief tends to sit in silence. A great river is quieter than a small stream; the barking dog seldom bites. The person to take seriously is often not the one shouting, but the one who stays quiet and focused.\n\nThis applies to speaking, negotiating and leadership. Waving your arms and raising your voice can look like a lack of control. Calm, deliberate delivery, with real feeling behind it, often lands harder. Save big gestures for moments that genuinely call for them, and let stillness do much of the work.",
+      "quote": "Fuss is not force.",
+      "locator": "Chapter XV. The Truth About Gesture ¶30",
+      "apply_it": "In your next tense conversation, lower your volume and slow down rather than speeding up. Notice the effect on the other person.",
+      "quiz": {
+        "question": "What point do the authors make with the image of the quiet Hudson River?",
+        "options": [
+          "Deep power is often quiet; fuss is not force",
+          "Rivers make good speech topics",
+          "Speakers should talk as loudly as a stream",
+          "Only small things are powerful"
+        ],
+        "answer": 0,
+        "explanation": "They note the Hudson makes less noise than a little creek, illustrating that fuss is not force."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--29",
+      "topic": "communication",
+      "tags": [
+        "notes",
+        "public-speaking",
+        "eye-contact"
+      ],
+      "title": "Prepare full notes, then shrink them for the stage",
+      "body": "The authors call speaking from notes the best method for beginners, but warn of a trap: notes keep growing until you're effectively reading a script, with your eyes down and the audience lost.\n\nTheir advice is to make notes as full as you like while preparing, then condense them into a short outline of key points to use while speaking. Mark the big ideas so they catch your eye: underline a key word, circle a central point. Glance at notes only when you must. Fewer notes mean more eye contact, more natural delivery and more trust from your listeners.",
+      "quote": "Use as few notes as possible.",
+      "locator": "V. Conclusion ¶3",
+      "apply_it": "Take your full notes for your next talk and reduce them to a single card of keywords. Practise twice using only the card.",
+      "quiz": {
+        "question": "What do the authors advise about notes for the platform?",
+        "options": [
+          "Write out every word and read it",
+          "Make them full while preparing, then condense them for use",
+          "Never prepare any notes",
+          "Use notes only for the conclusion"
+        ],
+        "answer": 1,
+        "explanation": "They say to make notes as full as you please in preparation but condense them for the platform, and use as few as possible."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--30",
+      "topic": "creativity",
+      "tags": [
+        "writing",
+        "editing",
+        "preparation"
+      ],
+      "title": "Good talks are not written; they are rewritten",
+      "body": "The authors admired writers who laboured over their words: one poet spent a whole day perfecting two lines, and a great historian spent twenty years rewriting his masterpiece. You won't have that much time for a speech, but the principle holds. Cut useless words, compress long passages into a sentence and choose sharper examples.\n\nA first draft is just raw material. The real quality comes in revision, when you can see what matters and what is padding. Whether you're preparing a presentation, a report or a job application, plan time for at least one serious rewrite rather than sending your first attempt.",
+      "quote": "Good speeches, like plays, are not written; they are rewritten.",
+      "locator": "Chapter XVI. Methods of Delivery ¶17",
+      "apply_it": "Take your next important piece of writing and do one full revision pass, aiming to cut at least a fifth of the words.",
+      "quiz": {
+        "question": "What do the authors suggest doing to improve a written speech?",
+        "options": [
+          "Keep the first draft for freshness",
+          "Make it longer with more detail",
+          "Rewrite it, cutting useless words and choosing better illustrations",
+          "Have someone else deliver it"
+        ],
+        "answer": 2,
+        "explanation": "They advise taking time to eliminate useless words, condense paragraphs and choose proper illustrations: good speeches are rewritten."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--31",
+      "topic": "creativity",
+      "tags": [
+        "observation",
+        "curiosity",
+        "ideas"
+      ],
+      "title": "Train yourself to notice: daily life is full of material",
+      "body": "The authors quote the preacher Henry Ward Beecher, who said he never met a person on the street without getting something for a sermon. They urge readers to sharpen their observation: look at the people around you on a bus and see what you can work out about their lives, work and habits.\n\nObservation is a skill that grows with practice. The more you notice, the more stories, examples and ideas you have to draw on when you speak, write or solve problems. Instead of drifting through a commute, treat it as a field trip. Ordinary moments become material when you pay attention.",
+      "quote": "Transmute every incident of your day into a subject for a speech or an illustration.",
+      "locator": "Chapter XVII. Thought and Reserve Power ¶20",
+      "apply_it": "On your next journey, pick one person or scene and note three details. Write down one idea or lesson it suggests.",
+      "quiz": {
+        "question": "What practice do the authors suggest for developing observation?",
+        "options": [
+          "Avoid looking at strangers",
+          "Read only about famous people",
+          "Watch more films",
+          "Study the people around you and see what you can discover about them"
+        ],
+        "answer": 3,
+        "explanation": "They suggest looking at those opposite you in a car to discover their habits and occupations, and turning every incident into material."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--32",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "sources",
+        "misinformation"
+      ],
+      "title": "'I read it somewhere' is not proof; check who wrote it",
+      "body": "The authors warn that much of what is printed is counterfeit, and that many people treat 'I read it in a book' as proof. The careful thinker asks more questions: which book, who wrote it, what do they know, who recognises them as an authority, and do other experts agree?\n\nThe advice fits the age of social media even better than the age of print. Before you repeat a statistic, health tip or news story, check where it came from and whether the source has real expertise. Passing on false information, even by accident, damages your credibility, like being caught with counterfeit money.",
+      "quote": "\"I read it in a book\" is to many a sufficient warranty of truth, but not to the thinker.",
+      "locator": "Chapter XVII. Thought and Reserve Power ¶48",
+      "apply_it": "Before sharing your next statistic or claim, find the original source and check who produced it and what their expertise is.",
+      "quiz": {
+        "question": "What questions do the authors say a careful mind asks about a book?",
+        "options": [
+          "What book, who wrote it, and what right do they have to speak on it",
+          "Is it popular and well reviewed",
+          "Is it long and expensive",
+          "Does it agree with my existing views"
+        ],
+        "answer": 0,
+        "explanation": "They list: What book? Who wrote it? What does he know? What right has he to speak? Who recognises him? Do other authorities agree?"
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--33",
+      "topic": "learning",
+      "tags": [
+        "open-mind",
+        "reading",
+        "critical-thinking"
+      ],
+      "title": "Read people you disagree with, not just those who agree",
+      "body": "The authors advise seeking out reading that makes you use your own brain, and especially not limiting yourself to writers you already know you'll agree with. Opposing views wake you up, they say. The other side may turn out to be right, and you'll never know unless you examine it fairly.\n\nThey also warn against starting with a conclusion and then simply gathering reasons to support it. Today's news feeds and algorithms make this trap easy. Approach questions with an open mind, think them through honestly, and once you've done that, have the courage to stand by what you conclude.",
+      "quote": "Do not confine your reading to what you already know you will agree with. Opposition wakes one up.",
+      "locator": "Chapter XVII. Thought and Reserve Power ¶49",
+      "apply_it": "This week, read one thoughtful article arguing against a view you hold. Write down its strongest point.",
+      "quiz": {
+        "question": "Why do the authors recommend reading views you disagree with?",
+        "options": [
+          "To find easy arguments to mock",
+          "Opposition wakes you up, and the other side may be better",
+          "Because agreeing is always wrong",
+          "To avoid forming any opinions"
+        ],
+        "answer": 1,
+        "explanation": "They say opposition wakes one up; the other road may be better, but you'll never know unless you examine it."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--34",
+      "topic": "study-smarter",
+      "tags": [
+        "spare-time",
+        "learning",
+        "habits"
+      ],
+      "title": "Collect the quarter hours you usually let drift",
+      "body": "Asked how they could find time to prepare, the authors point to people who learned in the gaps of busy lives: a young man who read with one hand while working a sawmill, and another who memorised poetry while tending boiling syrup pans. They quote Napoleon's saying that quarter hours decide the destinies of nations.\n\nMost of us waste many fifteen-minute pieces every day, waiting, commuting or scrolling. The authors suggest carrying a small book of good speeches or ideas and reading a few pages in idle moments. Today that might be a saved article or an audiobook. Small, steady use of spare minutes adds up surprisingly fast.",
+      "quote": "Napoleon said that quarter hours decide the destinies of nations. How many quarter hours do we let drift by aimlessly!",
+      "locator": "Chapter XVIII. Subject and Preparation ¶9",
+      "apply_it": "Choose one short reading or learning item and keep it ready on your phone. Use it in your next three waiting moments.",
+      "quiz": {
+        "question": "What use of time do the authors recommend for busy people?",
+        "options": [
+          "Saving all learning for holidays",
+          "Giving up sleep to study",
+          "Using idle quarter hours for reading and learning",
+          "Waiting until retirement to study"
+        ],
+        "answer": 2,
+        "explanation": "They cite Napoleon on quarter hours and suggest turning idle minutes, like time on the car, into learning."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--35",
+      "topic": "communication",
+      "tags": [
+        "time-management",
+        "respect",
+        "meetings"
+      ],
+      "title": "Stay within your time limit; it's a form of respect",
+      "body": "The authors are firm about time limits. If you're given ten minutes, take ten, not eleven; if you must miss, run short. Going over steals time from the next speaker and the audience, which they compare to stealing someone's watch. With proper preparation and good proportion, there is no need to overrun.\n\nThey add a line that every meeting chair would endorse: people who make short speeches get invited back. In presentations, team updates and toasts, finishing on time, or a little early, builds goodwill and leaves listeners wanting more rather than checking the clock.",
+      "quote": "Blessed is the man that maketh short speeches, for he shall be invited to speak again.",
+      "locator": "Chapter XVIII. Subject and Preparation ¶26",
+      "apply_it": "For your next presentation or update, rehearse with a timer and cut until you finish with a minute to spare.",
+      "quiz": {
+        "question": "What do the authors compare overrunning your time limit to?",
+        "options": [
+          "Giving a generous gift",
+          "Arriving early to a party",
+          "Paying a compliment",
+          "Stealing someone's watch"
+        ],
+        "answer": 3,
+        "explanation": "They write that you wouldn't steal a man's watch, and no more should you steal the time of the next speaker or the audience."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--36",
+      "topic": "communication",
+      "tags": [
+        "structure",
+        "presentations",
+        "priorities"
+      ],
+      "title": "Don't spend most of your time warming up",
+      "body": "The authors describe a common mistake: a speaker uses eight minutes of a ten-minute talk just getting started, then rushes the actual point. They compare it to spending eighty percent of your building budget on the entrance hall.\n\nTheir fix is to decide in advance which part of your talk matters most, place it where it will have the greatest effect, and give it the bulk of your preparation and time. Introductions, background and context should serve that core, not crowd it out. The same applies to emails and reports: get to the point quickly.",
+      "quote": "Many a speaker has awakened to find that he has burnt up eight minutes of a ten-minute speech in merely getting up steam.",
+      "locator": "Chapter XVIII. Subject and Preparation ¶27",
+      "apply_it": "For your next presentation, time your introduction. If it takes more than a fifth of the total, cut it down.",
+      "quiz": {
+        "question": "What do the authors compare a long warm-up in a speech to?",
+        "options": [
+          "Spending 80% of a building budget on the entrance",
+          "Planting seeds before rain",
+          "Tuning an instrument before a concert",
+          "Reading the last page of a book first"
+        ],
+        "answer": 0,
+        "explanation": "They say burning up eight minutes of a ten-minute speech getting up steam is like spending eighty percent of your money on the vestibule."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--37",
+      "topic": "communication",
+      "tags": [
+        "research",
+        "evidence",
+        "credibility"
+      ],
+      "title": "Facts you gathered yourself carry the most weight",
+      "body": "The authors say nothing gives a talk more authority than first-hand facts. Saying 'I examined the employment records of every mill in this district' is far more powerful than quoting someone else's opinion. They urge speakers to act like reporters and go and find out for themselves.\n\nThis is just as true for a business proposal, a community campaign or a job interview. If you've visited the site, spoken to the customers or crunched the numbers yourself, say so. It takes more effort, but it gives you confidence and makes your audience far more likely to believe and act on what you say.",
+      "quote": "The surest way to give life to speech-material is to gather your facts at first hand.",
+      "locator": "Chapter XVIII. Subject and Preparation ¶30",
+      "apply_it": "For your next proposal or argument, gather one fact yourself: make a call, run a quick survey or check the data directly.",
+      "quiz": {
+        "question": "What do the authors say gives a speaker's words the weight of authority?",
+        "options": [
+          "Long quotations from famous people",
+          "Facts gathered at first hand",
+          "A loud and confident tone",
+          "Complicated technical words"
+        ],
+        "answer": 1,
+        "explanation": "They say the surest way to give life to speech material is to gather facts first hand; no citation of authorities can equal it."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--38",
+      "topic": "creativity",
+      "tags": [
+        "notebook",
+        "ideas",
+        "preparation"
+      ],
+      "title": "Keep a notebook for ideas, and use it every day",
+      "body": "The authors recommend keeping a notebook, or small cards in your pocket, to capture your own experiences, thoughts and good ideas from others as they come. They even describe a simple indexing system so material can be found again when needed.\n\nThey admit it takes effort, but they're blunt about why it matters: far more speeches fail through half-hearted preparation than through lack of talent. A steady habit of capturing ideas means you never start from a blank page. Today a notes app works just as well, as long as you actually capture things and organise them so you can find them.",
+      "quote": "more speeches have been spoiled by half-hearted preparation than by lack of talent.",
+      "locator": "Chapter XVIII. Subject and Preparation ¶39",
+      "apply_it": "Set up one place for capturing ideas, paper or app. Add at least one idea, quote or observation to it every day this week.",
+      "quiz": {
+        "question": "According to the authors, what spoils more speeches than lack of talent?",
+        "options": [
+          "Nervousness",
+          "A weak voice",
+          "Half-hearted preparation",
+          "Small audiences"
+        ],
+        "answer": 2,
+        "explanation": "They write that more speeches have been spoiled by half-hearted preparation than by lack of talent."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--39",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "clarity",
+        "learning"
+      ],
+      "title": "If you can't explain it clearly, you don't fully understand it",
+      "body": "The authors note a familiar experience: you feel sure you understand an idea until you try to explain it, and then the clarity turns to haze. Explaining, they say, is the real test of understanding.\n\nThis makes explanation a powerful learning tool. Try describing a concept in simple words to a friend, or write a short explanation for a beginner. Wherever you stumble shows exactly where your understanding is weak. It also guides preparation: before you present or teach, make sure you can explain the core idea plainly, because if you can't, your audience certainly won't follow.",
+      "quote": "Exposition, then, is the test of clear understanding.",
+      "locator": "Chapter XIX. Influencing by Exposition ¶12",
+      "apply_it": "Pick a concept from your work. Explain it in five plain sentences to someone outside your field and note where you get stuck.",
+      "quiz": {
+        "question": "What do the authors call 'the test of clear understanding'?",
+        "options": [
+          "Remembering the definition word for word",
+          "Having read many books on it",
+          "Feeling confident about it",
+          "Being able to explain it clearly"
+        ],
+        "answer": 3,
+        "explanation": "They say we may feel we've mastered an idea until we try to express it; exposition is the test of clear understanding."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--40",
+      "topic": "communication",
+      "tags": [
+        "audience",
+        "explaining",
+        "clarity"
+      ],
+      "title": "Explain enough, but never talk down to people",
+      "body": "The authors describe two pitfalls in explaining. Explain too little and listeners don't know what you mean; arguments go nowhere when people are using the same word for different things. Explain too much and you insult their intelligence and bore them.\n\nThe answer is to estimate what your audience already knows about the subject and the specific point. Define key terms when they might be understood differently, then trust your listeners with the rest. Their warning is memorable: in trying to simplify, don't 'sillify'. Clear isn't the same as childish.",
+      "quote": "In trying to simplify, it is fatal to \"sillify.\"",
+      "locator": "Chapter XIX. Influencing by Exposition ¶14",
+      "apply_it": "Before your next explanation, write down what the audience already knows. Cut anything that repeats it, and define one term they might misread.",
+      "quiz": {
+        "question": "What two pitfalls in explaining do the authors describe?",
+        "options": [
+          "Explaining too little and explaining too much",
+          "Speaking too fast and too slowly",
+          "Using too many and too few gestures",
+          "Being too funny and too serious"
+        ],
+        "answer": 0,
+        "explanation": "They warn of explaining too little, leaving doubt, and tediously explaining too much, which disrespects listeners' intelligence."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--41",
+      "topic": "communication",
+      "tags": [
+        "storytelling",
+        "concrete-examples",
+        "persuasion"
+      ],
+      "title": "Show a vivid scene instead of stating an abstract fact",
+      "body": "The authors advise speakers to paint pictures rather than make general statements. Saying 'war is cruel' barely registers. Describing a wounded soldier asking for water, or children at a window waiting for a father who won't return, makes the same point impossible to ignore.\n\nPeople remember images and stories far better than abstractions. In a pitch, show one customer struggling with the problem. In a fundraising appeal, describe one family helped. In a team talk, give a specific example of the behaviour you want. Concrete scenes do the persuading that general claims can't.",
+      "quote": "It is much more effective than telling the truth in abstract terms.",
+      "locator": "II. The Uses of Imaging in Public Speaking ¶16",
+      "apply_it": "Find one abstract claim in your next presentation, like 'this saves time', and replace it with a short, specific scene showing it.",
+      "quiz": {
+        "question": "How do the authors suggest conveying that war is cruel?",
+        "options": [
+          "State 'war is cruel' firmly several times",
+          "Show concrete scenes of its suffering",
+          "Quote statistics only",
+          "Avoid the subject entirely"
+        ],
+        "answer": 1,
+        "explanation": "They advise not asserting the fact abstractly but showing the wounded soldier and the waiting children."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--42",
+      "topic": "communication",
+      "tags": [
+        "storytelling",
+        "humour",
+        "relevance"
+      ],
+      "title": "Only tell a story or joke if it makes your point",
+      "body": "The authors love a good anecdote, but they're harsh about stories told for no reason. A great joke dragged in with no link to the subject falls flat, while a fitting one can save a speech. They advise thinking of an anecdote as an illustration: it's there to make an idea clearer or more memorable.\n\nThey also mock the rambling introduction, 'I heard this in 1905, or maybe 1906, from a man called Williams or Wilson...'. Keep the set-up short and the point sharp. At work or socially, a story that clearly connects to the topic earns attention; one that doesn't just wastes it.",
+      "quote": "a purposeless story is of all offenses on the platform the most asinine.",
+      "locator": "Chapter XXI. Influencing by Narration ¶13",
+      "apply_it": "Before telling a story in your next talk or meeting, finish this sentence: 'This story shows that...'. If you can't, leave it out.",
+      "quiz": {
+        "question": "How should a speaker think of an anecdote, according to the authors?",
+        "options": [
+          "As a break from the main topic",
+          "As filler to use up time",
+          "As an illustration that serves the point",
+          "As a chance to show off"
+        ],
+        "answer": 2,
+        "explanation": "They say regarding an anecdote as an illustration holds it to its purpose; a purposeless story is the worst offence."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--43",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "confidence",
+        "persuasion"
+      ],
+      "title": "Don't mistake someone's confidence for evidence",
+      "body": "The authors tell of a speaker at a club who insisted grass would grow from wood ashes without any seed. People laughed, but he repeated it so forcefully, citing his own experience, that one of the most intelligent listeners came round. Asked why, he said: because the speaker was so confident. It took a letter from the government's agriculture department to correct him.\n\nThe authors use this to show how persuasive confidence is. The lesson for listeners is to guard against it. Sales pitches, investment tips and online claims often rely on certainty rather than proof. When someone sounds very sure, ask what the evidence actually is.",
+      "quote": "Because the speaker is so confident.",
+      "locator": "Chapter XXII. Influencing by Suggestion ¶32",
+      "apply_it": "Next time someone pitches you a 'sure thing', ask them for the evidence and check it independently before deciding.",
+      "quiz": {
+        "question": "Why did the intelligent listener come to believe the wood-ash claim?",
+        "options": [
+          "Because he saw it proven",
+          "Because a scientist confirmed it",
+          "Because it was printed in a book",
+          "Because the speaker was so confident"
+        ],
+        "answer": 3,
+        "explanation": "He said he changed his mind 'because the speaker is so confident'; it took an official letter to dislodge the error."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--44",
+      "topic": "communication",
+      "tags": [
+        "persuasion",
+        "sales",
+        "customer-focus"
+      ],
+      "title": "Frame your request in terms of what the other person gains",
+      "body": "The authors describe a book salesman who walked into a lawyer's office and asked, 'Do you want to buy a book?' Another rep opened with 'I want to sell you a sewing machine.' Both failed for the same reason: they talked only about their own interests.\n\nThe authors' advice is to turn every argument into terms of your listener's advantage, and they add an important condition: don't argue for something that isn't actually good for them. Whether you're selling, pitching an idea to your manager or asking a favour, start with what the other person needs and how your proposal helps.",
+      "quote": "The successful pleader must convert his arguments into terms of his hearers' advantage.",
+      "locator": "Chapter XXIV. Influencing by Persuasion ¶40",
+      "apply_it": "Rewrite the opening of your next request or pitch so the first sentence is about the other person's problem or goal, not yours.",
+      "quiz": {
+        "question": "Why did the book salesman in the authors' example fail?",
+        "options": [
+          "He talked only in terms of his own interests",
+          "His books were too expensive",
+          "He spoke too quietly",
+          "He visited the wrong office"
+        ],
+        "answer": 0,
+        "explanation": "They say both salesmen talked only in terms of their own interests instead of the hearer's advantage."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--45",
+      "topic": "money",
+      "tags": [
+        "crowd-psychology",
+        "speculation",
+        "investing"
+      ],
+      "title": "Crowds feel instead of reasoning, so step back before you follow one",
+      "body": "The authors argue that people in a crowd behave differently from people alone. Individually we weigh things up; caught up in a crowd, responsibility feels shared and emotions spread, so people back ideas they would reject on reflection.\n\nTheir financial example is the South Sea Bubble of the 1700s, when a whole nation was swept into speculation. Shares soared, a company raised money for 'a design which will hereafter be promulgated', and then panic wiped fortunes out. Similar manias have hit stocks, property and crypto since. When everyone around you is excited about an investment, that is the moment to slow down and reason it through alone.",
+      "quote": "Britain became a speculative crowd.",
+      "locator": "Chapter XXV. Influencing the Crowd ¶8",
+      "apply_it": "Before any investment that 'everyone' is talking about, write down why you'd buy it if no one else were. Wait 48 hours before acting.",
+      "quiz": {
+        "question": "What happened in the South Sea Company episode the authors describe?",
+        "options": [
+          "A steady, safe rise in prices",
+          "A speculative frenzy, then a panic and collapse",
+          "A government ban on all trading",
+          "A calm, reasoned investment boom"
+        ],
+        "answer": 1,
+        "explanation": "They describe Britain becoming a speculative crowd: shares soared, then a panic sent the stock down 800 points in days."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--46",
+      "topic": "study-smarter",
+      "tags": [
+        "vocabulary",
+        "learning",
+        "language"
+      ],
+      "title": "Use a new word five times and it becomes yours",
+      "body": "The authors distinguish between words you recognise and words you can actually use. Owning a word means knowing its meanings, how it relates to other words and how to use it. They describe a speaker who built a large, precise vocabulary by noting every new word he met, looking it up and then deliberately putting it to use.\n\nTheir rule of thumb is to use a new word correctly about five times before you can count it as truly owned. The same idea works for learning a new language or a field's technical terms. Reading builds recognition, but using the word in speech or writing is what moves it into your active vocabulary.",
+      "quote": "Use a new word accurately five times and it is yours.",
+      "locator": "Chapter XXVII. Growing a Vocabulary ¶6",
+      "apply_it": "Pick one useful new word or term this week. Look it up properly, then use it correctly five times in speech or writing.",
+      "quiz": {
+        "question": "How did the speaker in the authors' example build his vocabulary?",
+        "options": [
+          "By reading the dictionary cover to cover",
+          "By avoiding unfamiliar words",
+          "By noting new words, mastering them and putting them into use",
+          "By using long words in every sentence"
+        ],
+        "answer": 2,
+        "explanation": "He noted all new words he heard or read, mastered them and put them into use; use a word accurately five times and it is yours."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--47",
+      "topic": "study-smarter",
+      "tags": [
+        "memory",
+        "attention",
+        "focus"
+      ],
+      "title": "You remember what you give full attention to",
+      "body": "The authors say the first and most important step in remembering anything is concentrated attention at the moment you take it in. You forget the fourth item on a shopping list mainly because your attention slipped when you heard it. Impressions gathered lightly fade quickly; deep impressions last.\n\nThey suggest cutting out distractions while learning, picking out the essentials, and dwelling on them intently. In an age of multitasking this is more relevant than ever: half-attention while scrolling or half-listening in meetings produces half-memories. If something matters, stop and give it your full focus for a few minutes.",
+      "quote": "One intense hour will do more than dreamy years.",
+      "locator": "Chapter XXVIII. Memory Training ¶17",
+      "apply_it": "Next time you need to remember something, such as a name or instruction, stop all else for ten seconds and focus fully on it.",
+      "quiz": {
+        "question": "What do the authors call the first and most important step in memorising?",
+        "options": [
+          "Repeating it a hundred times",
+          "Using a complex memory system",
+          "Writing it in very small letters",
+          "Concentrated attention when taking it in"
+        ],
+        "answer": 3,
+        "explanation": "They say concentrated attention when you wish to store the mind is the first and by far the most important step."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--48",
+      "topic": "communication",
+      "tags": [
+        "public-speaking",
+        "recovery",
+        "composure"
+      ],
+      "title": "If your mind goes blank, start a new sentence from your last key word",
+      "body": "Every speaker fears the moment when the next point vanishes. The authors offer an emergency technique: take a breath, perhaps walk slowly across the stage, then begin a new sentence using the last important word you said. Then build another sentence from that one, and keep going until you find your way back to your outline.\n\nThey admit the result may be a little rough, but crude is better than collapse. Practising this as an exercise also trains fluency in general. Knowing you have a way out of a blank moment makes the fear of it much smaller, which in turn makes it less likely to happen.",
+      "quote": "Perhaps the surest and most practical method is to begin a new sentence with your last important word.",
+      "locator": "Chapter XXVIII. Memory Training ¶44",
+      "apply_it": "Practise this at home: say a sentence, then build three more, each starting from the last key word of the one before.",
+      "quiz": {
+        "question": "What emergency technique do the authors suggest if you forget your next point?",
+        "options": [
+          "Begin a new sentence with your last important word",
+          "Apologise and sit down",
+          "Read your full script aloud",
+          "Ask the audience to wait while you check notes"
+        ],
+        "answer": 0,
+        "explanation": "They suggest walking slowly to compose yourself and beginning a new sentence with your last important word until you regain your outline."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--49",
+      "topic": "communication",
+      "tags": [
+        "listening",
+        "conversation",
+        "connection"
+      ],
+      "title": "Good listeners are remembered as good conversationalists",
+      "body": "The authors point out that 'conversation' means a turn-by-turn exchange, yet many people treat it as a monologue. Talking is enjoyable because it lets us express ourselves, so someone who dominates the conversation denies others that pleasure and comes across as a bore.\n\nMeanwhile, an ordinary talker who listens with genuine interest is often remembered as delightful company. They also warn against the reply that ignores what was just said because you were busy planning your own point. Attentive, respectful listening is not just polite. It makes people enjoy talking with you and more open to what you say next.",
+      "quote": "They are praised who please: they please who listen well.",
+      "locator": "Chapter XXXI. Making Conversation Effective ¶15",
+      "apply_it": "In your next conversation, ask one follow-up question about what the other person said before sharing your own view.",
+      "quiz": {
+        "question": "Why, according to the authors, might a mediocre talker be considered a good conversationalist?",
+        "options": [
+          "They tell the most jokes",
+          "They listen with interest and let others express themselves",
+          "They always speak first",
+          "They use impressive vocabulary"
+        ],
+        "answer": 1,
+        "explanation": "They say a mediocre talker who listens interestedly is liked because he lets companions enjoy self-expression."
+      }
+    },
+    {
+      "id": "art-of-public-speaking-carnegie--50",
+      "topic": "communication",
+      "tags": [
+        "conversation",
+        "self-focus",
+        "social-skills"
+      ],
+      "title": "Take the constant 'I' out of your conversation",
+      "body": "The authors give blunt advice for better conversation: cut down how much you talk about yourself. Hardly anyone can talk about themselves for long without becoming tiresome. They also say most people don't want to hear a long list of your troubles, or gossip about other people's faults.\n\nInstead, shape your conversation around the other person's interests. They mention a man of ordinary ability who charmed far abler people simply by talking about what interested them. This doesn't mean hiding who you are or never sharing problems with close friends. It means that in everyday talk, curiosity about others wins more goodwill than stories about yourself.",
+      "quote": "Dynamite the \"I\" out of your conversation.",
+      "locator": "Chapter XXXI. Making Conversation Effective ¶24",
+      "apply_it": "In your next social conversation, notice how often you say 'I'. Try to turn at least two moments back to the other person's interests.",
+      "quiz": {
+        "question": "What do the authors recommend instead of talking about yourself?",
+        "options": [
+          "Talking about other people's faults",
+          "Staying completely silent",
+          "Talking in terms of your listener's interests",
+          "Listing your recent troubles"
+        ],
+        "answer": 2,
+        "explanation": "They advise removing the 'I' and preparing to talk in terms of your listener's interests."
       }
     }
   ]

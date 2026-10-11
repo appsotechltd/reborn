@@ -376,6 +376,15 @@ func (s *Server) circle(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, http.StatusOK, c)
 }
 
+func (s *Server) circleMembers(w http.ResponseWriter, r *http.Request) {
+	list, err := s.Store.CircleMembers(r.Context(), userID(r), r.PathValue("id"))
+	if err != nil {
+		s.fail(w, r, err, "circle")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"members": list})
+}
+
 func (s *Server) joinCircle(w http.ResponseWriter, r *http.Request) {
 	err := s.Store.JoinCircle(r.Context(), userID(r), r.PathValue("id"))
 	if err == store.ErrFull {

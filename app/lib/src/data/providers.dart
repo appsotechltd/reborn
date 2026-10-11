@@ -6,6 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../api/api_client.dart';
 import '../api/models.dart';
+import '../features/notifications/push_service.dart';
+import 'device_timezone.dart';
 import 'offline_cache.dart';
 import 'repository.dart';
 
@@ -100,10 +102,24 @@ class SessionController extends Notifier<Session> {
     await ref.read(topicPrefsProvider.notifier).syncAfterSignIn();
   }
 
-  Future<void> register(String email, String password, String name) async {
+  /// Creates an account, sending the device's timezone and an optional
+  /// referral code.
+  Future<void> register(
+    String email,
+    String password,
+    String name, {
+    String? referralCode,
+  }) async {
+    final timezone = await ref.read(deviceTimezoneProvider)();
     final r = await ref
         .read(repositoryProvider)
-        .register(email, password, name);
+        .register(
+          email,
+          password,
+          name,
+          timezone: timezone,
+          referralCode: referralCode,
+        );
     await _store(r);
     await ref.read(topicPrefsProvider.notifier).syncAfterSignIn();
   }
@@ -123,8 +139,17 @@ class SessionController extends Notifier<Session> {
     }
   }
 
-  Future<void> signOut() async {
+  /// DELETE /v1/me, then signs out on this device.
+  Future<void> deleteAccount() async {
+    await ref.read(repositoryProvider).deleteMe();
+    await signOut(deleted: true);
+  }
+
+  /// [deleted] skips unregistering the push token (the server already
+  /// removed the account's devices).
+  Future<void> signOut({bool deleted = false}) async {
     if (!state.signedIn) return;
+    if (!deleted) await ref.read(pushServiceProvider).unregister();
     await _prefs.remove(tokenKey);
     await _prefs.remove(userKey);
     await ref.read(offlineCacheProvider).clearUserData();
@@ -217,9 +242,11 @@ final cardProvider = FutureProvider.autoDispose
     );
 
 final sourceProvider = FutureProvider.autoDispose
-    .family<Fetched<SourceDetail>, String>(
-      (ref, id) => ref.watch(repositoryProvider).source(id),
-    );
+    .family<Fetched<SourceDetail>, String>((ref, id) {
+      // Re-fetch on sign-in/out: `follow` is personal.
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref.watch(repositoryProvider).source(id);
+    });
 
 final stashesProvider = FutureProvider.autoDispose<Fetched<List<Stash>>>((ref) {
   ref.watch(sessionProvider.select((s) => s.token));
@@ -242,4 +269,107 @@ final myContributionsProvider = FutureProvider.autoDispose<List<Contribution>>(
 
 final moderationQueueProvider = FutureProvider.autoDispose<List<Contribution>>(
   (ref) => ref.watch(repositoryProvider).moderationQueue(),
+);
+
+// ---------------------------------------------------------------------------
+// Social read-side providers
+
+final postProvider = FutureProvider.autoDispose.family<Fetched<Post>, String>((
+  ref,
+  id,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).post(id);
+});
+
+final profileProvider = FutureProvider.autoDispose.family<Profile, String>((
+  ref,
+  handle,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).profile(handle);
+});
+
+final authorProvider = FutureProvider.autoDispose.family<AuthorPage, String>((
+  ref,
+  name,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).author(name);
+});
+
+final followingProvider = FutureProvider.autoDispose<List<FollowItem>>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).following();
+});
+
+final giftTiersProvider = FutureProvider.autoDispose<GiftTiers>(
+  (ref) => ref.watch(repositoryProvider).giftTiers(),
+);
+
+// ---------------------------------------------------------------------------
+// Engagement, discover, circles, premium and admin read-side providers
+
+final streakProvider = FutureProvider.autoDispose<Streak>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).streak();
+});
+
+final referralsProvider = FutureProvider.autoDispose<Referrals>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).referrals();
+});
+
+final blocksProvider = FutureProvider.autoDispose<List<BlockedUser>>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).blocks();
+});
+
+final discoverProvider = FutureProvider.autoDispose<DiscoverPage>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).discover();
+});
+
+final trendingProvider = FutureProvider.autoDispose.family<List<Post>, String>((
+  ref,
+  topic,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).trending(topic: topic);
+});
+
+final userStashesProvider = FutureProvider.autoDispose
+    .family<List<Stash>, String>(
+      (ref, handle) => ref.watch(repositoryProvider).userStashes(handle),
+    );
+
+final publicStashProvider = FutureProvider.autoDispose
+    .family<PublicStash, String>(
+      (ref, id) => ref.watch(repositoryProvider).publicStash(id),
+    );
+
+typedef CircleQuery = ({String? source, bool mine});
+
+final circlesProvider = FutureProvider.autoDispose
+    .family<List<Circle>, CircleQuery>((ref, q) {
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref
+          .watch(repositoryProvider)
+          .circles(source: q.source, mine: q.mine);
+    });
+
+/// A circle's members, owner first.
+final circleMembersProvider = FutureProvider.autoDispose
+    .family<List<CircleMember>, String>((ref, id) {
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref.watch(repositoryProvider).circleMembers(id);
+    });
+
+final premiumProvider = FutureProvider.autoDispose<PremiumStatus>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).premium();
+});
+
+final adminStatsProvider = FutureProvider.autoDispose<AdminStats>(
+  (ref) => ref.watch(repositoryProvider).adminStats(),
 );

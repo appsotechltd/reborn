@@ -9,6 +9,7 @@ import type { Post } from "@/lib/types";
 import { LoadMoreSentinel } from "./LoadMoreSentinel";
 import { PostCard } from "./PostCard";
 import { ErrorNote } from "./SignInPrompt";
+import { StreakWidget } from "./StreakWidget";
 
 const PAGE = 10;
 const ANON = "anon";
@@ -89,6 +90,7 @@ export function Timeline({ initialPosts, initialCursor }: { initialPosts: Post[]
   return (
     <div className="mx-auto max-w-3xl">
       {ready && !user ? <JoinPrompt /> : null}
+      {user ? <StreakWidget /> : null}
       {switching && !error ? (
         <p role="status" className="mb-4 text-center text-sm text-muted">
           Loading your timeline…

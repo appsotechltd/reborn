@@ -20,7 +20,7 @@
   "cards": [
     {
       "id": "the-prince-machiavelli--01",
-      "topic": "business",
+      "topic": "leadership",
       "tags": [
         "leadership",
         "hiring",
@@ -45,7 +45,7 @@
     },
     {
       "id": "the-prince-machiavelli--02",
-      "topic": "business",
+      "topic": "leadership",
       "tags": [
         "feedback",
         "leadership",
@@ -70,7 +70,7 @@
     },
     {
       "id": "the-prince-machiavelli--03",
-      "topic": "business",
+      "topic": "leadership",
       "tags": [
         "change-management",
         "innovation",
@@ -141,6 +141,881 @@
         ],
         "answer": 2,
         "explanation": "Knowing their limits, they aimed high so that their shot would still reach the mark."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--06",
+      "topic": "productivity",
+      "tags": [
+        "problems",
+        "prevention",
+        "foresight"
+      ],
+      "title": "Fix problems while they are small, before they become obvious",
+      "body": "Machiavelli borrows a doctor's observation: some illnesses are easy to cure at the start but hard to spot, and later easy to spot but hard to cure. He argues that troubles in public life work the same way. The wise leader notices them early and acts while the fix is still cheap.\n\nThis applies to a leaking roof, a small debt, a tense silence with a colleague or a customer who has gone quiet. By the time everyone can see the problem, your options have shrunk. Paying attention to faint early signals is one of the most valuable habits you can build.",
+      "quote": "in the beginning of the malady it is easy to cure but difficult to detect, but in the course of time... it becomes easy to detect but difficult to cure.",
+      "locator": "III. Concerning Mixed Principalities ¶10",
+      "apply_it": "Name one small problem you have been ignoring because it is not urgent yet. Spend 15 minutes on it today.",
+      "quiz": {
+        "question": "According to the hectic fever comparison, when is a problem easiest to fix?",
+        "options": [
+          "Once everyone can clearly see it",
+          "After it has peaked and started to fade",
+          "At the start, when it is still hard to notice",
+          "Only when an expert is called in"
+        ],
+        "answer": 2,
+        "explanation": "Machiavelli says early problems are easy to cure but hard to detect; waiting makes them obvious but hard to fix."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--07",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "presence",
+        "management"
+      ],
+      "title": "Stay close to the work so you hear about problems early",
+      "body": "Machiavelli notes that a ruler who lives in the territory he governs sees disorder as it starts and can deal with it quickly. One who stays far away only hears about trouble once it has grown too big to handle.\n\nThe same is true of managers, business owners and parents. If you only learn what is happening through reports, you learn late. Walking the shop floor, visiting the branch, or simply asking the people doing the work how things are going gives you the early warning that distance takes away.",
+      "quote": "if one is on the spot, disorders are seen as they spring up, and one can quickly remedy them; but if one is not at hand, they are heard of only when they are great",
+      "locator": "III. Concerning Mixed Principalities ¶6",
+      "apply_it": "This week, spend one hour where the real work happens in your business or team, and just watch and ask questions.",
+      "quiz": {
+        "question": "Why does Machiavelli advise a ruler to live in the territory he governs?",
+        "options": [
+          "So he can collect more taxes personally",
+          "So he can avoid his advisers",
+          "So he looks humble to foreign powers",
+          "So he can spot and fix disorder as soon as it starts"
+        ],
+        "answer": 3,
+        "explanation": "Being on the spot means troubles are seen as they spring up, while distance means hearing of them only when they are too big."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--08",
+      "topic": "communication",
+      "tags": [
+        "conflict",
+        "avoidance",
+        "decisions"
+      ],
+      "title": "Avoiding a hard conversation usually just postpones it on worse terms",
+      "body": "Machiavelli criticises King Louis XII for making a bad concession to dodge a war. His point: a conflict that is coming cannot really be avoided by a blunder; it is only delayed, and the delay usually favours the other side.\n\nIn everyday life we often give ground, stay silent or agree to bad terms just to keep the peace for now. Sometimes that is wise. But if the disagreement is real, avoiding it tends to let it grow and weakens your position. Facing it early, calmly and honestly is often the kinder and safer choice.",
+      "quote": "a blunder ought never to be perpetrated to avoid war, because it is not to be avoided, but is only deferred to your disadvantage.",
+      "locator": "III. Concerning Mixed Principalities ¶17",
+      "apply_it": "Think of a conversation you keep putting off. Write down the first sentence you would say, and set a date to have it.",
+      "quiz": {
+        "question": "What does Machiavelli say happens when you make a bad concession just to avoid a conflict?",
+        "options": [
+          "The conflict is only delayed, usually to your disadvantage",
+          "The conflict disappears for good",
+          "The other side becomes your loyal friend",
+          "You gain a reputation for strength"
+        ],
+        "answer": 0,
+        "explanation": "He argues the conflict is not avoided, only deferred, and the delay works against you."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--09",
+      "topic": "business",
+      "tags": [
+        "power",
+        "alliances",
+        "self-protection"
+      ],
+      "title": "Be careful when you help someone else become far more powerful",
+      "body": "Looking at how France helped the Church and Spain grow strong in Italy, only to be pushed out by them, Machiavelli draws a blunt rule: whoever makes another powerful often ends up ruined by them. The newly powerful party tends to distrust the very skill or strength that lifted it.\n\nThis is not a reason to stop helping people. It is a reminder to protect yourself when you hand over key customers, skills, money or control. Get agreements in writing, keep some independence, and don't assume gratitude will last once the balance of power shifts.",
+      "quote": "he who is the cause of another becoming powerful is ruined",
+      "locator": "III. Concerning Mixed Principalities ¶18",
+      "apply_it": "Is there a partner, client or relative you are helping grow? Write down one safeguard that keeps you from becoming fully dependent on them.",
+      "quiz": {
+        "question": "What warning does Machiavelli draw from France's dealings in Italy?",
+        "options": [
+          "Helping allies always guarantees their loyalty",
+          "Making another party powerful can lead to your own ruin",
+          "Small states should never form alliances",
+          "Wars are won by having many weak friends"
+        ],
+        "answer": 1,
+        "explanation": "France helped the Church and Spain grow strong, and they later drove France out. He turns this into a general warning."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--10",
+      "topic": "personal-development",
+      "tags": [
+        "windfall",
+        "foundations",
+        "success"
+      ],
+      "title": "Sudden success needs foundations built quickly afterwards",
+      "body": "Machiavelli observes that rulers who rise suddenly, by luck or someone else's favour, have an easy climb but a hard time staying on top. Like plants that shoot up fast, they have shallow roots, and the first storm can knock them down unless they quickly lay the foundations others built slowly.\n\nToday this fits a sudden promotion, a viral product, an inheritance or a big contract. The windfall is the start, not the finish. Use the good moment to learn the skills, build the systems, savings and relationships that would have come with slower growth.",
+      "quote": "States that rise unexpectedly, then, like all other things in nature which are born and grow rapidly, cannot leave their foundations and correspondencies fixed in such a way that the first storm will not overthrow them",
+      "locator": "VII. Concerning New Principalities Which Are… ¶2",
+      "apply_it": "If something good came to you quickly (a role, money, attention), list two foundations you still need to build to keep it.",
+      "quiz": {
+        "question": "What is the main risk for those who rise suddenly through luck?",
+        "options": [
+          "They have too many loyal supporters",
+          "They become too cautious to act",
+          "They lack the foundations to survive the first storm",
+          "They are forced to give their gains away"
+        ],
+        "answer": 2,
+        "explanation": "Like fast-growing plants, sudden risers have shallow roots and must quickly lay the foundations others built over time."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--11",
+      "topic": "relationships",
+      "tags": [
+        "trust",
+        "grudges",
+        "self-protection"
+      ],
+      "title": "Don't assume new favours wipe out old hurts",
+      "body": "Machiavelli says Cesare Borgia's fatal mistake was backing a man he had once wronged for the papacy, trusting that new benefits would make him forget. They didn't. Machiavelli concludes that people who have been hurt by you, or fear you, rarely let it go just because you are kind to them now.\n\nThe practical lesson is protective, not cynical: if you have harmed someone, a gift or favour is not the same as repair. Acknowledge the hurt honestly. And before you depend on someone, ask whether there is an old injury between you that has never really been settled.",
+      "quote": "He who believes that new benefits will cause great personages to forget old injuries is deceived.",
+      "locator": "VII. Concerning New Principalities Which Are… ¶12",
+      "apply_it": "Is there someone you once wronged and tried to make up for with favours? Consider a sincere, direct apology instead.",
+      "quiz": {
+        "question": "What was Cesare Borgia's mistake, according to Machiavelli?",
+        "options": [
+          "Spending too much money on his army",
+          "Refusing to take any advice",
+          "Moving his court too far from Rome",
+          "Trusting that new benefits would make a man forget old injuries"
+        ],
+        "answer": 3,
+        "explanation": "He supported someone he had injured, believing new benefits would erase old grievances, and it led to his ruin."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--12",
+      "topic": "leadership",
+      "tags": [
+        "change-management",
+        "leadership",
+        "rewards"
+      ],
+      "title": "Deliver unavoidable bad news at once, and spread good news over time",
+      "body": "Writing about how new rulers handle harsh measures, Machiavelli makes a psychological point: pain delivered in one go is felt less than pain repeated again and again, while rewards given little by little keep their pleasant effect longer.\n\nAt work this is a useful guide for decent leadership. If a restructure, budget cut or difficult change must happen, do it clearly and completely, rather than in many small shocks that keep people anxious. Rewards and recognition, on the other hand, land better when they come regularly rather than in one big burst that is soon forgotten.",
+      "quote": "injuries ought to be done all at one time, so that, being tasted less, they offend less; benefits ought to be given little by little, so that the flavour of them may last longer.",
+      "locator": "VIII. Concerning Those Who Have Obtained a… ¶7",
+      "apply_it": "If you must deliver hard news, put it all in one honest message. Then plan small, regular thank-yous rather than one big gesture.",
+      "quiz": {
+        "question": "How does Machiavelli suggest handling unavoidable hardships and rewards?",
+        "options": [
+          "Hardships all at once, rewards little by little",
+          "Hardships slowly, rewards all at once",
+          "Both slowly over many years",
+          "Both all at once at the start"
+        ],
+        "answer": 0,
+        "explanation": "Pain given at once is felt less; benefits given gradually keep their flavour longer."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--13",
+      "topic": "personal-development",
+      "tags": [
+        "consistency",
+        "character",
+        "crisis"
+      ],
+      "title": "Be steady in good times, because last-minute changes earn no credit",
+      "body": "Machiavelli advises living in a way that no sudden change of fortune forces you to transform overnight. If you only become generous, fair or strict when a crisis hits, it is too late: harsh steps fail, and kind ones look forced, so nobody feels thankful for them.\n\nThink of a boss who starts praising staff only when they threaten to quit, or a partner who changes only when the relationship is ending. Consistent character built in ordinary times is what people trust when things go wrong.",
+      "quote": "mild ones will not help you, for they will be considered as forced from you, and no one will be under any obligation to you for them.",
+      "locator": "VIII. Concerning Those Who Have Obtained a… ¶8",
+      "apply_it": "Pick one good behaviour you tend to save for emergencies (thanking people, checking in, saving) and do it this week while things are calm.",
+      "quiz": {
+        "question": "Why do kind measures taken in a crisis often fail, according to Machiavelli?",
+        "options": [
+          "They are too expensive to keep up",
+          "People see them as forced, so they feel no obligation",
+          "People prefer harsh measures in a crisis",
+          "They are never announced publicly"
+        ],
+        "answer": 1,
+        "explanation": "Changes made under pressure look forced, so nobody feels grateful or obligated for them."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--14",
+      "topic": "business",
+      "tags": [
+        "leadership",
+        "fairness",
+        "support"
+      ],
+      "title": "Most people simply want not to be mistreated, and that is easy to give",
+      "body": "Machiavelli contrasts the powerful few, who want to dominate, with ordinary people, who mainly want not to be oppressed. He argues the second group's wish is fairer and far easier to satisfy, and that a leader backed by the many is more secure than one relying on a small elite.\n\nIn a company or community, this means your strongest base is usually the broad group of ordinary members, staff or customers. You don't win them with flashy perks. You win them by treating them fairly, keeping promises and not abusing your position.",
+      "quote": "their object is more righteous than that of the nobles, the latter wishing to oppress, while the former only desire not to be oppressed.",
+      "locator": "IX. Concerning a Civil Principality ¶3",
+      "apply_it": "Ask yourself: is there any way people below you might feel pushed around? Fix one of those things this month.",
+      "quiz": {
+        "question": "According to Machiavelli, what do ordinary people mainly want from those in power?",
+        "options": [
+          "Expensive gifts and festivals",
+          "A share in ruling",
+          "Not to be oppressed",
+          "Constant change and excitement"
+        ],
+        "answer": 2,
+        "explanation": "He says the people only desire not to be oppressed, which is fairer and easier to satisfy than the ambitions of the few."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--15",
+      "topic": "relationships",
+      "tags": [
+        "trust",
+        "kindness",
+        "reputation"
+      ],
+      "title": "Good treatment from someone you expected harm from earns deep loyalty",
+      "body": "Machiavelli notes that when people receive good from someone they expected to treat them badly, they become more attached to that person than if they had liked him from the start.\n\nThis is a hopeful idea for anyone starting out on the wrong foot: a new manager people are nervous about, an in-law who was not welcomed, a business that once let customers down. Fair, generous treatment that surprises people can turn suspicion into strong loyalty. First impressions matter, but what you do next can matter more.",
+      "quote": "men, when they receive good from him of whom they were expecting evil, are bound more closely to their benefactor",
+      "locator": "IX. Concerning a Civil Principality ¶5",
+      "apply_it": "Think of someone who is wary of you. What is one fair or generous thing you could do that would surprise them?",
+      "quiz": {
+        "question": "What happens when people receive good from someone they expected harm from?",
+        "options": [
+          "They become even more suspicious",
+          "They forget the person quickly",
+          "They demand even more favours",
+          "They become more closely bound to that person"
+        ],
+        "answer": 3,
+        "explanation": "Machiavelli says unexpected good treatment binds people more closely than favour they already expected."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--16",
+      "topic": "money",
+      "tags": [
+        "savings",
+        "emergency-fund",
+        "resilience"
+      ],
+      "title": "Keep enough reserves to outlast a long siege",
+      "body": "Machiavelli admired the free German cities of his day. They were hard to attack partly because they kept a full year's supply of food, drink and fuel in public stores, and always had work to keep people earning. Attackers knew a siege would be long and costly, so they rarely tried.\n\nYour household can use the same idea. An emergency fund, a little food stored, and skills that can earn an income make you far less vulnerable to job loss, illness or rising prices. Reserves don't just help in a crisis; they give you the calm to make better decisions.",
+      "quote": "they always keep in public depots enough for one year's eating, drinking, and firing.",
+      "locator": "X. Concerning the Way in Which the… ¶2",
+      "apply_it": "Work out how many weeks your household could cover basic costs with no income. Set a small monthly amount to grow that number.",
+      "quiz": {
+        "question": "What made the free German cities hard to attack, in part?",
+        "options": [
+          "They kept a year's supply of food, drink and fuel",
+          "They paid large bribes to neighbours",
+          "They had no walls, so nothing to attack",
+          "They relied on foreign armies"
+        ],
+        "answer": 0,
+        "explanation": "Their stored supplies and steady work meant a siege would be long and costly, discouraging attackers."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--17",
+      "topic": "psychology",
+      "tags": [
+        "commitment",
+        "helping",
+        "loyalty"
+      ],
+      "title": "People grow attached to those they have helped, not only those who help them",
+      "body": "Machiavelli notices something surprising about human nature: we become bound to people not just by the favours we receive from them but also by the favours we do for them. Having sacrificed for a cause or a leader, people feel more committed to it.\n\nYou can use this kindly. Inviting a new colleague to help you, asking a neighbour for advice, or letting a friend contribute to your project can deepen the relationship. People value what they have invested in, so giving others a real chance to contribute builds connection.",
+      "quote": "it is the nature of men to be bound by the benefits they confer as much as by those they receive.",
+      "locator": "X. Concerning the Way in Which the… ¶4",
+      "apply_it": "Ask someone you would like to know better for a small piece of help or advice, and thank them properly afterwards.",
+      "quiz": {
+        "question": "What does Machiavelli say binds people to one another?",
+        "options": [
+          "Only the gifts they receive",
+          "The benefits they give as much as the benefits they receive",
+          "Only fear of punishment",
+          "Only shared family ties"
+        ],
+        "answer": 1,
+        "explanation": "He says people are bound by the benefits they confer as much as by those they receive."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--18",
+      "topic": "personal-development",
+      "tags": [
+        "self-reliance",
+        "skills",
+        "resilience"
+      ],
+      "title": "Build your own strength instead of relying on borrowed power",
+      "body": "After chapters on hired and borrowed armies, Machiavelli concludes that no state is safe without its own forces. Power that rests on someone else's strength depends entirely on luck and can vanish when that support is withdrawn.\n\nFor an individual, your 'own forces' are your skills, savings, reputation and relationships. A job title, a rich relative or a single big client can disappear. Investing steadily in abilities and resources that belong to you is what keeps you standing when outside support falls away.",
+      "quote": "nothing can be so uncertain or unstable as fame or power not founded on its own strength.",
+      "locator": "XIII. Concerning Auxiliaries, Mixed Soldiery,… ¶11",
+      "apply_it": "List what your income or position depends on. Pick one item you do not control and start building a backup you do control.",
+      "quiz": {
+        "question": "What does Machiavelli say about power not founded on its own strength?",
+        "options": [
+          "It is the safest kind of power",
+          "It lasts longer than earned power",
+          "It is the most uncertain and unstable kind",
+          "It is only a problem in peacetime"
+        ],
+        "answer": 2,
+        "explanation": "He says nothing is as uncertain or unstable as fame or power not founded on its own strength."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--19",
+      "topic": "productivity",
+      "tags": [
+        "tools",
+        "authenticity",
+        "methods"
+      ],
+      "title": "Use tools and methods that fit you, not someone else's armour",
+      "body": "Machiavelli recalls the story of David, who was given King Saul's armour before facing Goliath. David took it off at once, saying he could not use it, and went out with his own sling and knife. Machiavelli concludes that other people's weapons either fall off you, weigh you down or tie you up.\n\nToday we are offered endless borrowed systems: a famous CEO's morning routine, a friend's business model, an app everyone praises. Some help, but many simply don't fit. Prefer the methods you can actually handle well, even if they look humbler.",
+      "quote": "the arms of others either fall from your back, or they weigh you down, or they bind you fast.",
+      "locator": "XIII. Concerning Auxiliaries, Mixed Soldiery,… ¶8",
+      "apply_it": "Think of a method or routine you adopted because someone else swore by it. Is it helping you? Keep, adapt or drop it this week.",
+      "quiz": {
+        "question": "Why did David reject Saul's armour in Machiavelli's example?",
+        "options": [
+          "It was too valuable to risk in battle",
+          "Saul asked for it back",
+          "He wanted to look braver without it",
+          "He could make no use of it and preferred his own sling and knife"
+        ],
+        "answer": 3,
+        "explanation": "David said he could not use the borrowed armour and chose to fight with the weapons he knew."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--20",
+      "topic": "business",
+      "tags": [
+        "dependence",
+        "partners",
+        "risk"
+      ],
+      "title": "Beware rescuers who become your masters",
+      "body": "Machiavelli warns about calling in a powerful outside force to fight for you. If it loses, you are ruined with it; if it wins, you are now in its power.\n\nIn business and personal life this applies to a big investor who rescues a struggling firm, a lender who bails you out, or a powerful patron who solves your problem. Help like this can be useful, but count the cost: what control or freedom are you handing over? Wherever possible, accept help on terms that leave you able to stand on your own afterwards.",
+      "quote": "for losing, one is undone, and winning, one is their captive.",
+      "locator": "XIII. Concerning Auxiliaries, Mixed Soldiery,… ¶1",
+      "apply_it": "Before accepting a large loan, investor or favour, write down what control you would give up and whether you could exit later.",
+      "quiz": {
+        "question": "What is the danger of relying on a powerful outside force, according to Machiavelli?",
+        "options": [
+          "If it loses you are ruined, and if it wins you are in its power",
+          "It always switches sides immediately",
+          "It costs nothing but achieves little",
+          "It makes your own team lazy but safe"
+        ],
+        "answer": 0,
+        "explanation": "With borrowed forces, losing undoes you and winning leaves you their captive."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--21",
+      "topic": "psychology",
+      "tags": [
+        "judgement",
+        "risk",
+        "foresight"
+      ],
+      "title": "Look for the hidden poison in deals that look great at first",
+      "body": "Machiavelli says people often enter an arrangement that looks attractive at the start without seeing the poison hidden inside it. He gives the example of Rome hiring Gothic soldiers, a step that seemed useful but began the empire's decline. True wisdom, he says, is recognising harm before it arrives, and few people manage it.\n\nOffers that look very good, like easy credit, a quick-profit scheme or a too-generous partnership, deserve a second look. Ask what could go wrong in a year or five years, not just what you gain this week.",
+      "quote": "the scanty wisdom of man, on entering into an affair which looks well at first, cannot discern the poison that is hidden in it",
+      "locator": "XIII. Concerning Auxiliaries, Mixed Soldiery,… ¶10",
+      "apply_it": "For the next attractive offer you get, write down three ways it could hurt you later before you say yes.",
+      "quiz": {
+        "question": "What does Machiavelli say people often miss when entering an affair that looks good at first?",
+        "options": [
+          "The paperwork it requires",
+          "The poison hidden inside it",
+          "The friends they could invite",
+          "The quick rewards it offers"
+        ],
+        "answer": 1,
+        "explanation": "He warns that limited human wisdom often fails to see the poison hidden in deals that look attractive at first."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--22",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "scenarios",
+        "preparation"
+      ],
+      "title": "Rehearse 'what if' scenarios in calm times",
+      "body": "Machiavelli praises Philopoemen, a Greek leader who, even on country walks with friends in peacetime, would stop and ask: if an enemy were on that hill, what should we do? He would argue it out, listen to their views and give his own reasons. As a result, when war came, very little could surprise him.\n\nYou can do the same for the risks in your life and work. What if a key customer leaves? What if the power goes off on launch day? Talking through scenarios in advance turns panic into a plan.",
+      "quote": "by these continual discussions there could never arise, in time of war, any unexpected circumstances that he could not deal with.",
+      "locator": "XIV. That Which Concerns a Prince on the… ¶3",
+      "apply_it": "Pick one likely setback in your work or home. With a friend or colleague, talk through what you'd do in the first 24 hours.",
+      "quiz": {
+        "question": "What did Philopoemen do in peacetime that Machiavelli admired?",
+        "options": [
+          "Rested completely from all thoughts of war",
+          "Hired foreign generals to plan for him",
+          "Discussed 'what if' battle scenarios with his friends",
+          "Avoided travelling in the countryside"
+        ],
+        "answer": 2,
+        "explanation": "He constantly discussed possible situations, so nothing unexpected could catch him unprepared."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--23",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "history",
+        "role-models"
+      ],
+      "title": "Study why others failed as closely as why they succeeded",
+      "body": "Machiavelli advises reading the lives of notable people and examining the causes of both their victories and their defeats, so you can imitate the first and avoid the second. He adds that the wise never sit idle in good times but build up resources they can use when fortune turns.\n\nMost of us study success stories only. Yet failures often teach more clearly, and cost you nothing if they are someone else's. When you read a biography or watch a business collapse, ask what caused it and how you would avoid it.",
+      "quote": "to examine the causes of their victories and defeat, so as to avoid the latter and imitate the former",
+      "locator": "XIV. That Which Concerns a Prince on the… ¶4",
+      "apply_it": "Pick a business or person whose failure you know about. Write down two causes and one way to avoid each in your own life.",
+      "quiz": {
+        "question": "What does Machiavelli advise studying in the lives of great people?",
+        "options": [
+          "Only their victories",
+          "Only their family background",
+          "Only their public speeches",
+          "The causes of both their victories and their defeats"
+        ],
+        "answer": 3,
+        "explanation": "He says to examine the causes of both, imitating the victories and avoiding the defeats."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--24",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "expertise",
+        "transferable-skills"
+      ],
+      "title": "Know one area deeply and you will learn others faster",
+      "body": "Machiavelli tells rulers to know their own land in detail: how hills rise, valleys open and rivers run. He points out a second benefit. Because landscapes resemble each other, someone who understands one region can quickly understand any other.\n\nThe principle reaches well beyond terrain. Deep knowledge of one market, one craft or one subject gives you patterns you can recognise elsewhere. A person who has truly mastered running one small shop learns a second business far faster than someone who has only skimmed many.",
+      "quote": "with a knowledge of the aspect of one country one can easily arrive at a knowledge of others.",
+      "locator": "XIV. That Which Concerns a Prince on the… ¶2",
+      "apply_it": "Choose one area of your work to understand thoroughly this month. Note one pattern from it that could apply elsewhere.",
+      "quiz": {
+        "question": "Why does Machiavelli say knowing your own land well also helps elsewhere?",
+        "options": [
+          "Landscapes resemble each other, so knowledge transfers",
+          "Other countries are always identical",
+          "Enemies never travel to new places",
+          "It lets you avoid learning anything new"
+        ],
+        "answer": 0,
+        "explanation": "Because one region resembles others, deep knowledge of one helps you understand others easily."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--25",
+      "topic": "personal-development",
+      "tags": [
+        "realism",
+        "decision-making",
+        "planning"
+      ],
+      "title": "Plan for the world as it is, not as it ought to be",
+      "body": "Machiavelli says many writers described ideal states that never existed. He chose instead to write about how people actually behave, because the gap between how we live and how we ought to live is huge, and ignoring it leads to ruin.\n\nYou can hold high values and still be realistic. Assume some people will pay late, some promises will be broken and some plans will slip. Building your budget, contracts and expectations around real behaviour, rather than ideal behaviour, protects you and the people who rely on you.",
+      "quote": "how one lives is so far distant from how one ought to live, that he who neglects what is done for what ought to be done, sooner effects his ruin than his preservation",
+      "locator": "XV. Concerning Things for Which Men, and… ¶1",
+      "apply_it": "Look at one plan you are making. Where have you assumed people will behave perfectly? Add a buffer for real-world behaviour.",
+      "quiz": {
+        "question": "Why did Machiavelli choose to write about how people actually behave?",
+        "options": [
+          "He believed ideals do not matter at all",
+          "Ignoring how people really act leads to ruin",
+          "He had never read other writers",
+          "He wanted to describe imaginary republics"
+        ],
+        "answer": 1,
+        "explanation": "He says the gap between how we live and how we ought to live is so large that ignoring it brings ruin."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--26",
+      "topic": "money",
+      "tags": [
+        "spending",
+        "generosity",
+        "budgeting"
+      ],
+      "title": "Showy generosity can drain you faster than anything",
+      "body": "Machiavelli warns that nothing runs out as quickly as lavish giving done for reputation. While you spend to look generous, you lose the means to keep doing it, and end up either poor or forced to squeeze others to keep up appearances.\n\nThis is a real trap: big weddings, rounds of drinks, gifts and loans we can't afford, given so people think well of us. Real generosity is sustainable. Give what you can keep giving, and don't let the wish to look rich make you poor.",
+      "quote": "there is nothing wastes so rapidly as liberality, for even whilst you exercise it you lose the power to do so",
+      "locator": "XVI. Concerning Liberality and Meanness ¶5",
+      "apply_it": "Set a monthly limit for gifts, contributions and treats for others, and stick to it even when you feel pressure to impress.",
+      "quiz": {
+        "question": "What problem does Machiavelli see with lavish generosity done for reputation?",
+        "options": [
+          "It always makes people grateful forever",
+          "It costs nothing in the long run",
+          "It drains your means so you soon cannot keep it up",
+          "It is the fastest way to build wealth"
+        ],
+        "answer": 2,
+        "explanation": "He says it wastes faster than anything: while giving lavishly you lose the power to keep giving."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--27",
+      "topic": "money",
+      "tags": [
+        "thrift",
+        "saving",
+        "opportunity"
+      ],
+      "title": "Quiet thrift pays for the big moves later",
+      "body": "Machiavelli points out that Pope Julius II fought costly campaigns without imposing extra taxes, because he had built up money through long thriftiness. Being seen as careful with money, he argues, is a small price compared with the freedom it gives to act.\n\nPeople may call you tight when you skip expensive outings or keep driving an old car. But steady saving is what lets you start a business, pay for training, or handle an emergency without borrowing. A modest reputation for carefulness is worth the options it buys.",
+      "quote": "he supplied his additional expenses out of his long thriftiness.",
+      "locator": "XVI. Concerning Liberality and Meanness ¶3",
+      "apply_it": "Pick one regular expense you mostly keep up for appearances. Cut it and move the money into savings for a future goal.",
+      "quiz": {
+        "question": "How did Pope Julius II pay for his campaigns without new taxes?",
+        "options": [
+          "By borrowing from foreign banks",
+          "By selling Church land",
+          "By cutting his army in half",
+          "From money saved through long thriftiness"
+        ],
+        "answer": 3,
+        "explanation": "Machiavelli says he covered his additional expenses out of his long thriftiness."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--28",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "trust",
+        "caution",
+        "balance"
+      ],
+      "title": "Balance trust and caution: neither naive nor paranoid",
+      "body": "Machiavelli advises being slow to believe and slow to act, avoiding showing fear, and moving with prudence and humanity. Too much confidence makes you careless; too much distrust makes you impossible to live with.\n\nThis balance matters in every relationship and workplace. Checking facts before reacting to gossip, or reading a contract before signing, is wise. But treating everyone as a suspect drives good people away. Aim for calm, reasonable trust that you adjust based on evidence.",
+      "quote": "too much confidence may not make him incautious and too much distrust render him intolerable.",
+      "locator": "XVII. Concerning Cruelty and Clemency, and… ¶4",
+      "apply_it": "Next time you hear something alarming about someone, wait and check one fact before you react or repeat it.",
+      "quiz": {
+        "question": "What two extremes does Machiavelli warn against?",
+        "options": [
+          "Too much confidence and too much distrust",
+          "Too much reading and too little sleep",
+          "Too much travel and too little rest",
+          "Too much praise and too little criticism"
+        ],
+        "answer": 0,
+        "explanation": "He warns that overconfidence makes you careless and excessive distrust makes you intolerable."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--29",
+      "topic": "business",
+      "tags": [
+        "leadership",
+        "fairness",
+        "pay"
+      ],
+      "title": "Never mess with people's livelihood",
+      "body": "Machiavelli observes that rulers become hated above all when they take people's property. He makes the striking claim that people forget even the death of a father more quickly than the loss of their inheritance.\n\nWhatever you think of that exaggeration, the lesson for leaders is clear: nothing destroys goodwill faster than touching people's income or possessions unfairly. Late wages, unexplained deductions, or taking credit for someone's work cause deep, lasting resentment. Protect people's earnings, and they will forgive many other mistakes.",
+      "quote": "men more quickly forget the death of their father than the loss of their patrimony.",
+      "locator": "XVII. Concerning Cruelty and Clemency, and… ¶6",
+      "apply_it": "If you manage or pay anyone, check that every payment is on time and explained clearly this month.",
+      "quiz": {
+        "question": "What does Machiavelli say most quickly makes a ruler hated?",
+        "options": [
+          "Holding public festivals",
+          "Taking people's property",
+          "Asking for advice",
+          "Living in the territory he rules"
+        ],
+        "answer": 1,
+        "explanation": "He says rulers must keep their hands off people’s property, since its loss is resented more than almost anything."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--30",
+      "topic": "leadership",
+      "tags": [
+        "decisiveness",
+        "leadership",
+        "respect"
+      ],
+      "title": "Indecision costs you respect faster than tough choices do",
+      "body": "Machiavelli says a leader becomes despised when seen as fickle, frivolous or irresolute. He should instead show courage, seriousness and strength, and make his decisions final, so no one hopes to talk him round or deceive him.\n\nYou don't need to be rigid to use this. People lose confidence in a parent, manager or team captain who changes position with every complaint. Take time to decide well, explain your reasons, and then stand by the decision unless genuinely new facts appear.",
+      "quote": "let him show that his judgments are irrevocable, and maintain himself in such reputation that no one can hope either to deceive him or to get round him.",
+      "locator": "XIX. That One Should Avoid Being Despised… ¶3",
+      "apply_it": "Think of a decision you keep reopening. Gather what you need, decide by a set date, and then tell people it's settled.",
+      "quiz": {
+        "question": "What makes a leader despised, according to Machiavelli?",
+        "options": [
+          "Making firm, well-reasoned decisions",
+          "Showing courage in hard times",
+          "Being seen as fickle and irresolute",
+          "Taking advice from wise counsellors"
+        ],
+        "answer": 2,
+        "explanation": "He lists being fickle, frivolous and irresolute as qualities that make a leader contemptible."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--31",
+      "topic": "leadership",
+      "tags": [
+        "teams",
+        "unity",
+        "conflict"
+      ],
+      "title": "A divided team falls quickly under pressure",
+      "body": "Some rulers of Machiavelli's time kept their towns split into rival factions so they would be easier to control. Machiavelli rejects this. When a real threat arrives, he says, a divided city is quickly lost, because the weaker side will help the outsiders.\n\nSome managers still play staff off against each other or let feuds simmer because it keeps people busy competing. It may look manageable in calm times, but in a crisis a split team cannot pull together. Deal with rivalries openly and build shared goals instead.",
+      "quote": "when the enemy comes upon you in divided cities you are quickly lost, because the weakest party will always assist the outside forces",
+      "locator": "XX. Are Fortresses, and Many Other Things… ¶3",
+      "apply_it": "Is there an ongoing rivalry in your team or family? Bring the people together this week around one goal they share.",
+      "quiz": {
+        "question": "Why did Machiavelli reject keeping cities divided into factions?",
+        "options": [
+          "Factions are too expensive to fund",
+          "It made the people too loyal to the prince",
+          "Factions only work in wartime",
+          "In a crisis a divided city is quickly lost"
+        ],
+        "answer": 3,
+        "explanation": "He says when an enemy comes, divided cities fall quickly because the weaker faction helps the outsiders."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--32",
+      "topic": "relationships",
+      "tags": [
+        "trust",
+        "loyalty",
+        "second-chances"
+      ],
+      "title": "Former doubters can become your most loyal supporters",
+      "body": "Machiavelli notes that new rulers often found more faithfulness in people they first distrusted than in those they trusted from the start. Those who began on the other side know they must prove themselves through actions, so they work harder, while comfortable supporters may grow careless.\n\nIn a new job or role, don't write off the people who were sceptical of you. Give them a fair chance and a real task. Many will become your strongest allies, precisely because they want to show your first impression of them was wrong.",
+      "quote": "they know it to be very necessary for them to cancel by deeds the bad impression which he had formed of them",
+      "locator": "XX. Are Fortresses, and Many Other Things… ¶5",
+      "apply_it": "Identify one person who doubted you at the start. Offer them a meaningful responsibility and see how they respond.",
+      "quiz": {
+        "question": "Why might people who first opposed a new leader serve him well?",
+        "options": [
+          "They want to cancel the bad impression through their deeds",
+          "They are paid more than others",
+          "They have no other skills",
+          "They secretly want to replace him"
+        ],
+        "answer": 0,
+        "explanation": "Machiavelli says they work to undo the bad impression by deeds, while trusted supporters may grow careless."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--33",
+      "topic": "business",
+      "tags": [
+        "neutrality",
+        "commitment",
+        "alliances"
+      ],
+      "title": "Sitting on the fence often leaves you with no friends",
+      "body": "Machiavelli argues that a leader is respected when he clearly takes a side. Staying neutral in a fight between powerful neighbours usually backfires: the winner sees you as an unreliable friend, and the loser feels you abandoned him. He notes that the one who is not your friend asks you to stay neutral, while a true friend asks you to stand with him.\n\nNot every dispute needs your involvement. But when people you depend on face a real test, refusing to commit can cost you both relationships. Choose thoughtfully, then commit.",
+      "quote": "he who is not your friend will demand your neutrality, whilst he who is your friend will entreat you to declare yourself",
+      "locator": "XXI. How a Prince Should Conduct Himself So… ¶4",
+      "apply_it": "Is there a situation where you are avoiding taking a stand to keep everyone happy? Decide where you honestly stand.",
+      "quiz": {
+        "question": "What happens to the neutral party, according to Machiavelli?",
+        "options": [
+          "Both sides reward him equally",
+          "Neither the winner nor the loser treats him as a friend",
+          "He always becomes the strongest power",
+          "He is ignored and left completely safe"
+        ],
+        "answer": 1,
+        "explanation": "The winner distrusts a doubtful friend and the loser will not shelter someone who did not help."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--34",
+      "topic": "productivity",
+      "tags": [
+        "decision-making",
+        "risk",
+        "trade-offs"
+      ],
+      "title": "There is no perfectly safe option, so choose the lesser evil",
+      "body": "Machiavelli warns that no one should imagine they can choose a completely safe course. In ordinary affairs, escaping one problem usually lands you in another. Wisdom is the ability to judge which troubles are worse, and pick the smaller one.\n\nThis frees you from waiting for a risk-free choice that never comes. Staying in a job has risks; leaving it has others. Instead of asking 'which option is safe?', ask 'which risks can I best live with and manage?' Then act.",
+      "quote": "prudence consists in knowing how to distinguish the character of troubles, and for choice to take the lesser evil.",
+      "locator": "XXI. How a Prince Should Conduct Himself So… ¶6",
+      "apply_it": "For a decision you're stuck on, list the main risk of each option. Pick the one whose risk you can best handle.",
+      "quiz": {
+        "question": "According to Machiavelli, what does prudence consist of?",
+        "options": [
+          "Always finding a perfectly safe option",
+          "Avoiding all decisions until risks vanish",
+          "Telling troubles apart and choosing the lesser evil",
+          "Letting others decide for you"
+        ],
+        "answer": 2,
+        "explanation": "He says no course is perfectly safe; prudence is distinguishing troubles and choosing the lesser one."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--35",
+      "topic": "learning",
+      "tags": [
+        "judgement",
+        "advice",
+        "learning"
+      ],
+      "title": "You don't need every idea yourself if you can judge others' ideas well",
+      "body": "Machiavelli describes three kinds of minds: one that understands things on its own, one that recognises good thinking when others offer it, and one that does neither. The first is excellent, the second good, and the third useless.\n\nThis is encouraging. You don't have to be the most original person in the room to lead well. If you can tell good advice from bad, praise what is right and correct what is wrong, you can make excellent decisions and keep people honest. Developing that judgement is a skill anyone can practise.",
+      "quote": "there are three classes of intellects: one which comprehends by itself; another which appreciates what others comprehended; and a third which neither comprehends by itself nor by the showing of others",
+      "locator": "XXII. Concerning the Secretaries of Princes ¶2",
+      "apply_it": "Next time someone suggests an idea, pause to weigh its strengths and weaknesses out loud before accepting or rejecting it.",
+      "quiz": {
+        "question": "In Machiavelli's three kinds of minds, which is called 'good'?",
+        "options": [
+          "The one that understands nothing at all",
+          "The one that ignores all advice",
+          "The one that copies whatever is popular",
+          "The one that recognises good thinking from others"
+        ],
+        "answer": 3,
+        "explanation": "The first understands on its own (excellent), the second appreciates what others understand (good), the third neither (useless)."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--36",
+      "topic": "business",
+      "tags": [
+        "hiring",
+        "trust",
+        "character"
+      ],
+      "title": "Trust people who put the shared work ahead of their own gain",
+      "body": "Machiavelli offers one test for judging an assistant that he says never fails: if you see someone always thinking of his own interests before yours and seeking profit in everything, you will never be able to trust him.\n\nWhen choosing a business partner, employee or treasurer for your group, watch how people handle small things. Do they quietly take the best for themselves, or care about the shared goal? Self-interest is normal, but someone who puts it first in every situation should not be trusted with what matters to you.",
+      "quote": "when you see the servant thinking more of his own interests than of yours, and seeking inwardly his own profit in everything, such a man will never make a good servant",
+      "locator": "XXII. Concerning the Secretaries of Princes ¶3",
+      "apply_it": "Before trusting someone with money or responsibility, recall two small situations where you saw whose interests they put first.",
+      "quiz": {
+        "question": "What is Machiavelli's test for whether an assistant can be trusted?",
+        "options": [
+          "Whether he thinks more of his own interests than yours",
+          "Whether he comes from a noble family",
+          "Whether he agrees with everything you say",
+          "Whether he has worked for many princes"
+        ],
+        "answer": 0,
+        "explanation": "He says someone who seeks his own profit in everything will never be trustworthy."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--37",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "communication",
+        "consistency"
+      ],
+      "title": "Leaders who consult no one end up changing course constantly",
+      "body": "Machiavelli describes the Emperor Maximilian, who shared his plans with no one and took no advice. When his plans became known in action, the people around him objected, and he gave way. The result: what he did one day he undid the next, and nobody could rely on his decisions.\n\nKeeping everything to yourself can feel strong, but it means your plans are tested only after you have committed. Consulting good people early, then deciding, leads to plans that last and a team that knows what you want.",
+      "quote": "those things he does one day he undoes the next, and no one ever understands what he wishes or intends to do, and no one can rely on his resolutions.",
+      "locator": "XXIII. How Flatterers Should Be Avoided ¶3",
+      "apply_it": "Before your next important decision, share the plan with two trusted people and ask what could go wrong.",
+      "quiz": {
+        "question": "Why did the Emperor Maximilian keep reversing his decisions?",
+        "options": [
+          "He listened to too many advisers at once",
+          "He consulted no one, so his plans met objections only once in motion",
+          "He had no money to carry them out",
+          "He was forced out by foreign kings"
+        ],
+        "answer": 1,
+        "explanation": "Being secretive, his plans were challenged only when carried out, and being pliant, he kept abandoning them."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--38",
+      "topic": "leadership",
+      "tags": [
+        "judgement",
+        "advice",
+        "responsibility"
+      ],
+      "title": "Advice is only as good as the judgement of the person using it",
+      "body": "Machiavelli warns against thinking a weak leader can simply rely on good advisers. Each adviser has his own interests, and a leader without judgement cannot weigh or combine their views. So, he concludes, good advice comes from a wise leader, not the other way round.\n\nYou can't fully outsource your thinking about your money, health choices or career. Experts and friends are valuable, but you still need enough understanding to ask good questions, spot conflicts of interest and make the final call.",
+      "quote": "good counsels, whencesoever they come, are born of the wisdom of the prince, and not the wisdom of the prince from good counsels.",
+      "locator": "XXIII. How Flatterers Should Be Avoided ¶6",
+      "apply_it": "Before your next big decision based on advice, learn enough basics to explain the choice in your own words.",
+      "quiz": {
+        "question": "Why can a leader without judgement not simply rely on advisers?",
+        "options": [
+          "Advisers are always dishonest",
+          "Advice is never useful",
+          "He cannot weigh or unite their competing views",
+          "Advisers refuse to speak to weak leaders"
+        ],
+        "answer": 2,
+        "explanation": "Each adviser thinks of his own interests, and only a leader with judgement can weigh them."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--39",
+      "topic": "personal-development",
+      "tags": [
+        "adaptability",
+        "change",
+        "habits"
+      ],
+      "title": "The approach that made you successful can later ruin you",
+      "body": "Machiavelli explains why people prosper one day and fail the next without changing at all: the times change and they don't. A cautious person does well in cautious times but fails when boldness is needed, partly because temperament is hard to change, and partly because having always succeeded one way, he cannot believe another way is better.\n\nNotice your default style, whether careful, fast, frugal or adventurous. Then ask honestly whether your current situation still rewards it.",
+      "quote": "having always prospered by acting in one way, he cannot be persuaded that it is well to leave it",
+      "locator": "XXV. What Fortune Can Effect in Human… ¶5",
+      "apply_it": "Write down the approach that has worked best for you so far. Then name one current situation where it may no longer fit.",
+      "quiz": {
+        "question": "Why do people often fail to adapt when the times change?",
+        "options": [
+          "They never had any success before",
+          "They change their methods too often",
+          "Fortune always punishes the cautious",
+          "Past success with one method makes them reluctant to leave it"
+        ],
+        "answer": 3,
+        "explanation": "Machiavelli says nature resists change, and past success convinces people their old way is still best."
+      }
+    },
+    {
+      "id": "the-prince-machiavelli--40",
+      "topic": "leadership",
+      "tags": [
+        "teamwork",
+        "leadership",
+        "coordination"
+      ],
+      "title": "Individual talent wins little without good leadership",
+      "body": "Looking at Italian armies of his day, Machiavelli notes that Italians excelled in individual duels and small fights, but armies made of them performed poorly. The reason, he says, was weak leadership: the capable would not obey, and everyone thought he knew best.\n\nMany teams today are full of skilled people who still underperform. Talent needs coordination: a clear direction, agreed roles and someone whose lead others accept. If your group is brilliant individually but stuck, the missing piece may be leadership, not ability.",
+      "quote": "Here there is great valour in the limbs whilst it fails in the head.",
+      "locator": "XXVI. An Exhortation to Liberate Italy from… ¶7",
+      "apply_it": "In a group you belong to, check: does everyone know the goal and their role? If not, propose a short meeting to agree on both.",
+      "quiz": {
+        "question": "Why did Italian armies perform poorly despite skilled individual fighters?",
+        "options": [
+          "Weak leadership: the capable would not obey and each thought he knew best",
+          "The soldiers lacked strength and skill",
+          "They had too many good generals",
+          "They were always outnumbered"
+        ],
+        "answer": 0,
+        "explanation": "Machiavelli blames the leaders: valour in the limbs but failure in the head."
       }
     }
   ]

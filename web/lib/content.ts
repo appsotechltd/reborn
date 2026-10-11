@@ -4,13 +4,27 @@ import type { Card, Licence, SourceKind, Topic } from "./types";
 export const TOPICS: { slug: string; name: string }[] = [
   { slug: "business", name: "Business" },
   { slug: "psychology", name: "Psychology" },
+  { slug: "mental-strength", name: "Mental Strength & Resilience" },
   { slug: "health", name: "Health & Wellness" },
   { slug: "emotional-intelligence", name: "Emotional Intelligence" },
   { slug: "personal-development", name: "Personal Development" },
   { slug: "productivity", name: "Productivity & Career" },
   { slug: "money", name: "Money" },
   { slug: "relationships", name: "Relationships" },
+  { slug: "dating-marriage", name: "Dating & Marriage" },
   { slug: "mindfulness", name: "Mindfulness & Philosophy" },
+  { slug: "faith-wisdom", name: "Faith & Wisdom" },
+  { slug: "leadership", name: "Leadership" },
+  { slug: "parenting", name: "Parenting & Family" },
+  { slug: "communication", name: "Communication & Influence" },
+  { slug: "creativity", name: "Creativity" },
+  { slug: "learning", name: "Learning & Thinking" },
+  { slug: "lives-history", name: "Lives & History" },
+  { slug: "entrepreneurship", name: "Entrepreneurship" },
+  { slug: "heartbreak-healing", name: "Heartbreak & Healing" },
+  { slug: "grief-loss", name: "Grief & Loss" },
+  { slug: "study-smarter", name: "Study Smarter" },
+  { slug: "skills-mastery", name: "Skills & Mastery" },
 ];
 
 export function topicName(slug: string, topics?: Pick<Topic, "slug" | "name">[]): string {

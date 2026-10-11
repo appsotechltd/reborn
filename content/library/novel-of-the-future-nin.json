@@ -1,0 +1,136 @@
+{
+  "source": {
+    "id": "novel-of-the-future-nin",
+    "title": "The Novel of the Future",
+    "authors": [
+      "Anaïs Nin"
+    ],
+    "kind": "book",
+    "url": "https://www.ohioswallow.com/9780804011501/the-novel-of-the-future/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of The Novel of the Future by Anaïs Nin (1968). Not affiliated with or endorsed by the author's estate or publisher.",
+    "publisher": "Macmillan",
+    "year": 1968,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "novel-of-the-future-nin--01",
+      "topic": "creativity",
+      "tags": [
+        "perception",
+        "art",
+        "attention"
+      ],
+      "title": "Art helps you see the familiar as if for the first time",
+      "body": "In the chapter on abstraction in The Novel of the Future, Nin argues that a central job of art is to refresh our perception. What we see every day, we stop seeing. A writer or artist who shows an ordinary scene from an unexpected angle makes it feel alive and meaningful again.\n\nYou can borrow the method. Describe your street, your kitchen or your commute as if to someone who has never seen it, and details you walked past for years start to appear.",
+      "apply_it": "Pick one everyday place and write three details about it you have never noticed before.",
+      "quiz": {
+        "question": "What does Nin see as a function of art?",
+        "options": [
+          "To record facts exactly",
+          "To entertain only",
+          "To teach grammar",
+          "To renew our perception of the familiar"
+        ],
+        "answer": 3,
+        "explanation": "She wrote that art renews our perception of things we no longer notice."
+      }
+    },
+    {
+      "id": "novel-of-the-future-nin--02",
+      "topic": "personal-development",
+      "tags": [
+        "growth",
+        "change",
+        "patience"
+      ],
+      "title": "People don't grow in neat, straight lines",
+      "body": "Nin argues in The Novel of the Future that the old idea of character developing in an orderly, step-by-step way no longer holds. People move forward, slip back and mature unevenly: wise in one area of life, still young in another.\n\nShe was making a point about how novels should portray people, but it is freeing to apply to yourself. A setback in one part of your life doesn't erase growth in another, and other people's uneven progress deserves the same patience.",
+      "apply_it": "Name one area where you have clearly grown and one where you are still learning. Treat both kindly.",
+      "quiz": {
+        "question": "How does Nin say real people develop?",
+        "options": [
+          "Unevenly, moving forward and back",
+          "In a steady, orderly line",
+          "Not at all after childhood",
+          "Only through formal education"
+        ],
+        "answer": 0,
+        "explanation": "She rejected the idea of chronological, symmetrical development in favour of uneven growth."
+      }
+    },
+    {
+      "id": "novel-of-the-future-nin--03",
+      "topic": "creativity",
+      "tags": [
+        "dreams",
+        "unconscious",
+        "creativity"
+      ],
+      "title": "Take your dreams seriously, then bring them into the day",
+      "body": "A large part of The Novel of the Future defends the dream, which Nin defines broadly as the thoughts and images that slip past our rational control. She believed the unconscious holds raw experience that the socially trained conscious mind often filters out, and she pointed to writers like Joyce, Lawrence and Kafka as drawing on it.\n\nFor Nin, the aim was not to live in dreams but to translate them into life and work. Your daydreams and night images can be clues to what you really want.",
+      "apply_it": "Keep a notebook by your bed for a week. Note any dream or daydream, and one thing it might be telling you.",
+      "quiz": {
+        "question": "How does Nin broadly define 'dreams' in The Novel of the Future?",
+        "options": [
+          "Only what happens during sleep",
+          "Plans for the future",
+          "Thoughts and images that escape rational control",
+          "Fantasies to avoid"
+        ],
+        "answer": 2,
+        "explanation": "She defined dreams widely, as whatever escapes rational control."
+      }
+    },
+    {
+      "id": "novel-of-the-future-nin--04",
+      "topic": "creativity",
+      "tags": [
+        "journaling",
+        "practice",
+        "writing"
+      ],
+      "title": "Daily practice beats waiting for inspiration",
+      "body": "The Novel of the Future includes Nin's reflections on how her diary and her fiction fed each other. Writing every day in the diary kept her prose fluent and alive, and gave her a store of observations and feelings to draw on when she wrote novels.\n\nThe lesson works for any craft. Regular, low-pressure practice, like a musician's scales, keeps the skill warm, so that when a bigger project comes you are ready. Inspiration tends to visit people who are already working.",
+      "apply_it": "Set a ten-minute daily writing or practice slot for the next seven days, and don't judge what comes out.",
+      "quiz": {
+        "question": "What role did the diary play in Nin's fiction, according to The Novel of the Future?",
+        "options": [
+          "None at all",
+          "It kept her writing fluent and fed material into her novels",
+          "It replaced her novels completely",
+          "It was only for recording dates"
+        ],
+        "answer": 1,
+        "explanation": "She described the diary and fiction nourishing each other through steady practice."
+      }
+    },
+    {
+      "id": "novel-of-the-future-nin--05",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "emotion",
+        "media",
+        "honesty"
+      ],
+      "title": "When feeling is missing, shock often fills the gap",
+      "body": "In The Novel of the Future, Nin criticises fiction that replaces emotion with violence, and the fashion for toughness, ugliness and caricature. To her, shock is often a sign that real feeling has gone missing, and she argues for writing that dares to show emotional truth instead.\n\nThe same test helps outside books. When a film, a news story or an argument relies on outrage and shock, ask what feeling is being avoided. Naming the real emotion is usually more honest and more useful.",
+      "apply_it": "Next time something online makes you angry, pause and name the quieter feeling underneath, such as fear, sadness or hurt.",
+      "quiz": {
+        "question": "What did Nin say violence in fiction often stands in for?",
+        "options": [
+          "Missing emotion",
+          "Good plotting",
+          "Historical accuracy",
+          "Humour"
+        ],
+        "answer": 0,
+        "explanation": "She saw violence in fiction as a substitute for lost or avoided emotion."
+      }
+    }
+  ]
+}

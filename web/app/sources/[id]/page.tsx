@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { CardList } from "@/components/CardPreview";
 import { AuthorLinks } from "@/components/CardView";
 import { SourceFollowButton } from "@/components/FollowButton";
+import { SourceCircles } from "@/components/SourceCircles";
 import { JsonLd } from "@/components/JsonLd";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, formatYear, licenceName } from "@/lib/content";
@@ -114,6 +115,8 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
           <CardList cards={cards} />
         </div>
       </section>
+
+      <SourceCircles sourceId={source.id} title={source.title} />
     </div>
   );
 }

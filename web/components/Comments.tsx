@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { threadComments } from "@/lib/comments";
 import { timeAgo } from "@/lib/social";
 import { useLoad } from "@/lib/use-load";
 import type { Comment, User } from "@/lib/types";
+import { BlockMenu } from "./BlockMenu";
 import { ErrorNote, Loading } from "./SignInPrompt";
 
 const MAX = 1000;
@@ -21,8 +22,21 @@ export function Comments({ postId }: { postId: string }) {
   const { data, error, loading, setData } = useLoad(loader);
   const [more, setMore] = useState<{ busy: boolean; error: string | null }>({ busy: false, error: null });
 
+  // Comments load after the page, so follow a #comment-… link (from a notification) once they arrive.
+  const loaded = !!data;
+  useEffect(() => {
+    if (!loaded || !window.location.hash.startsWith("#comment-")) return;
+    document.getElementById(window.location.hash.slice(1))?.scrollIntoView({ block: "center" });
+  }, [loaded]);
+
   const add = (c: Comment) =>
     setData((prev) => ({ comments: [...(prev?.comments ?? []), c], next_cursor: prev?.next_cursor ?? null }));
+  // Hide everything from someone you just blocked or muted.
+  const hideAuthor = (authorId: string) =>
+    setData((prev) => ({
+      comments: (prev?.comments ?? []).filter((c) => c.author.id !== authorId),
+      next_cursor: prev?.next_cursor ?? null,
+    }));
   const remove = (id: string) =>
     setData((prev) => ({
       comments: (prev?.comments ?? []).filter((c) => c.id !== id && c.parent_id !== id),
@@ -79,12 +93,12 @@ export function Comments({ postId }: { postId: string }) {
         <ul className="mt-6 space-y-5">
           {threads.map((t) => (
             <li key={t.comment.id}>
-              <CommentItem comment={t.comment} user={user} postId={postId} onAdded={add} onRemoved={remove} canReply />
+              <CommentItem comment={t.comment} user={user} postId={postId} onAdded={add} onRemoved={remove} onHideAuthor={hideAuthor} canReply />
               {t.replies.length ? (
                 <ul className="mt-3 space-y-3 border-l-2 border-line pl-4 sm:ml-4">
                   {t.replies.map((r) => (
                     <li key={r.id}>
-                      <CommentItem comment={r} user={user} postId={postId} onAdded={add} onRemoved={remove} replyTo={t.comment.id} canReply />
+                      <CommentItem comment={r} user={user} postId={postId} onAdded={add} onRemoved={remove} onHideAuthor={hideAuthor} replyTo={t.comment.id} canReply />
                     </li>
                   ))}
                 </ul>
@@ -192,6 +206,7 @@ function CommentItem({
   canReply,
   onAdded,
   onRemoved,
+  onHideAuthor,
 }: {
   comment: Comment;
   user: User | null;
@@ -201,6 +216,7 @@ function CommentItem({
   canReply?: boolean;
   onAdded: (c: Comment) => void;
   onRemoved: (id: string) => void;
+  onHideAuthor?: (authorId: string) => void;
 }) {
   const { api } = useAuth();
   const [replying, setReplying] = useState(false);
@@ -231,7 +247,7 @@ function CommentItem({
   }
 
   return (
-    <article aria-label={`Comment by ${comment.author.display_name}`}>
+    <article id={`comment-${comment.id}`} aria-label={`Comment by ${comment.author.display_name}`} className="scroll-mt-24">
       <p className="text-sm">
         <Link href={`/u/${comment.author.handle}`} className="font-semibold hover:underline">
           {comment.author.display_name}
@@ -241,7 +257,13 @@ function CommentItem({
           <time dateTime={comment.created_at} title={new Date(comment.created_at).toLocaleString()}>
             {timeAgo(comment.created_at)}
           </time>
-        </span>
+        </span>{" "}
+        <BlockMenu
+          userId={comment.author.id}
+          name={comment.author.display_name}
+          align="left"
+          onChange={(kind) => (kind ? onHideAuthor?.(comment.author.id) : undefined)}
+        />
       </p>
       <p className="mt-1 whitespace-pre-line break-words">{comment.body}</p>
       {user ? (

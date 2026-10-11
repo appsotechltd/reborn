@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/speaker.dart';
+import '../post/share.dart';
 import '../stashes/stash_picker.dart';
 import 'explainer_player.dart';
 
@@ -20,6 +20,7 @@ class IdeaCardView extends ConsumerWidget {
     required this.card,
     this.label,
     this.showActions = true,
+    this.showShare = true,
     this.padding = const EdgeInsets.fromLTRB(20, 16, 20, 24),
   });
 
@@ -28,6 +29,9 @@ class IdeaCardView extends ConsumerWidget {
   /// Optional badge above the title, e.g. "Today's idea".
   final String? label;
   final bool showActions;
+
+  /// False when the surrounding post view has its own Share button.
+  final bool showShare;
   final EdgeInsets padding;
 
   String? get _disclaimer =>
@@ -91,7 +95,7 @@ class IdeaCardView extends ConsumerWidget {
           _Credit(card: card),
           if (showActions) ...[
             const SizedBox(height: 12),
-            _CardActions(card: card),
+            _CardActions(card: card, showShare: showShare),
           ],
         ],
       ),
@@ -283,8 +287,9 @@ class _Credit extends StatelessWidget {
 }
 
 class _CardActions extends ConsumerWidget {
-  const _CardActions({required this.card});
+  const _CardActions({required this.card, required this.showShare});
   final IdeaCard card;
+  final bool showShare;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -313,20 +318,19 @@ class _CardActions extends ConsumerWidget {
               icon: const Icon(Icons.bookmark_add_outlined),
               label: const Text('Stash'),
             ),
-            OutlinedButton.icon(
-              onPressed: () async {
-                await Clipboard.setData(ClipboardData(text: shareText(card)));
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Idea copied — paste it anywhere'),
-                    ),
-                  );
-                }
-              },
-              icon: const Icon(Icons.ios_share),
-              label: const Text('Share'),
-            ),
+            if (showShare)
+              Builder(
+                builder: (context) => OutlinedButton.icon(
+                  onPressed: () => sharePost(
+                    context,
+                    ref,
+                    Post.fromCard(card),
+                    countLocally: false,
+                  ),
+                  icon: const Icon(Icons.ios_share),
+                  label: const Text('Share'),
+                ),
+              ),
           ],
         );
       },

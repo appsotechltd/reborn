@@ -237,31 +237,75 @@ class User {
     required this.email,
     required this.displayName,
     required this.role,
+    this.handle = '',
+    this.bio = '',
     this.topics = const [],
+    this.timezone = '',
+    this.dailyGoal = 3,
+    this.notify = const {},
+    this.referralCode = '',
+    this.premium = false,
+    this.premiumUntil,
   });
 
   final String id;
   final String email;
   final String displayName;
   final String role;
+  final String handle;
+  final String bio;
   final List<String> topics;
 
+  /// IANA name, e.g. "Europe/London".
+  final String timezone;
+  final int dailyGoal;
+
+  /// Push settings by kind: `daily`, `replies`, `follows`, `circles`.
+  final Map<String, bool> notify;
+  final String referralCode;
+  final bool premium;
+  final DateTime? premiumUntil;
+
   bool get isModerator => role == 'moderator';
+
+  /// Missing settings default to on.
+  bool notifies(String kind) => notify[kind] ?? true;
 
   factory User.fromJson(Map<String, dynamic> json) => User(
     id: json['id'] as String? ?? '',
     email: json['email'] as String? ?? '',
     displayName: json['display_name'] as String? ?? '',
     role: json['role'] as String? ?? 'member',
+    handle: json['handle'] as String? ?? '',
+    bio: json['bio'] as String? ?? '',
     topics: _stringList(json['topics']),
+    timezone: json['timezone'] as String? ?? '',
+    dailyGoal: (json['daily_goal'] as num?)?.toInt() ?? 3,
+    notify: json['notify'] is Map
+        ? {
+            for (final e in (json['notify'] as Map).entries)
+              e.key.toString(): e.value == true,
+          }
+        : const {},
+    referralCode: json['referral_code'] as String? ?? '',
+    premium: json['premium'] as bool? ?? false,
+    premiumUntil: _date(json['premium_until']),
   );
 
   Map<String, dynamic> toJson() => {
     'id': id,
     'email': email,
+    'handle': handle,
     'display_name': displayName,
+    'bio': bio,
     'role': role,
     'topics': topics,
+    'timezone': timezone,
+    'daily_goal': dailyGoal,
+    'notify': notify,
+    'referral_code': referralCode,
+    'premium': premium,
+    'premium_until': premiumUntil?.toUtc().toIso8601String(),
   };
 }
 
@@ -282,6 +326,7 @@ class Stash {
     required this.name,
     this.description = '',
     this.cardCount = 0,
+    this.isPublic = false,
     this.createdAt,
   });
 
@@ -289,6 +334,9 @@ class Stash {
   final String name;
   final String description;
   final int cardCount;
+
+  /// Public stashes show on the owner's profile.
+  final bool isPublic;
   final DateTime? createdAt;
 
   factory Stash.fromJson(Map<String, dynamic> json) => Stash(
@@ -296,6 +344,7 @@ class Stash {
     name: json['name'] as String? ?? '',
     description: json['description'] as String? ?? '',
     cardCount: (json['card_count'] as num?)?.toInt() ?? 0,
+    isPublic: json['is_public'] as bool? ?? false,
     createdAt: _date(json['created_at']),
   );
 
@@ -304,6 +353,7 @@ class Stash {
     'name': name,
     'description': description,
     'card_count': cardCount,
+    'is_public': isPublic,
     'created_at': createdAt?.toUtc().toIso8601String(),
   };
 }
@@ -354,18 +404,27 @@ class DailyIdea {
 }
 
 class SourceDetail {
-  const SourceDetail({required this.source, required this.cards});
+  const SourceDetail({
+    required this.source,
+    required this.cards,
+    this.follow = const FollowState(),
+  });
   final Source source;
   final List<IdeaCard> cards;
+  final FollowState follow;
 
   factory SourceDetail.fromJson(Map<String, dynamic> json) => SourceDetail(
     source: Source.fromJson(json['source'] as Map<String, dynamic>),
     cards: parseCards(json['cards']),
+    follow: json['follow'] is Map<String, dynamic>
+        ? FollowState.fromJson(json['follow'] as Map<String, dynamic>)
+        : const FollowState(),
   );
 
   Map<String, dynamic> toJson() => {
     'source': source.toJson(),
     'cards': cards.map((c) => c.toJson()).toList(),
+    'follow': follow.toJson(),
   };
 }
 
@@ -572,3 +631,1102 @@ class ChatReply {
 /// non-whitespace.
 int wordCount(String text) =>
     text.trim().isEmpty ? 0 : text.trim().split(RegExp(r'\s+')).length;
+
+// ---------------------------------------------------------------------------
+// Social: posts, profiles, follows, comments and gifts.
+
+int _int(Object? v) => (v as num?)?.toInt() ?? 0;
+
+/// The five reactions, in display order.
+enum Reaction {
+  like('Like', '👍'),
+  love('Love', '❤️'),
+  insightful('Insightful', '💡'),
+  inspiring('Inspiring', '✨'),
+  helpful('Helpful', '🙏');
+
+  const Reaction(this.label, this.emoji);
+  final String label;
+  final String emoji;
+
+  static Reaction? fromName(Object? name) {
+    for (final r in values) {
+      if (r.name == name) return r;
+    }
+    return null;
+  }
+}
+
+class PostStats {
+  const PostStats({
+    this.reactions = const {},
+    this.comments = 0,
+    this.favorites = 0,
+    this.shares = 0,
+    this.gifts = 0,
+  });
+
+  final Map<String, int> reactions;
+  final int comments;
+  final int favorites;
+  final int shares;
+  final int gifts;
+
+  int get totalReactions => reactions.values.fold(0, (a, b) => a + b);
+
+  factory PostStats.fromJson(Map<String, dynamic> json) => PostStats(
+    reactions: json['reactions'] is Map
+        ? {
+            for (final e in (json['reactions'] as Map).entries)
+              e.key.toString(): _int(e.value),
+          }
+        : const {},
+    comments: _int(json['comments']),
+    favorites: _int(json['favorites']),
+    shares: _int(json['shares']),
+    gifts: _int(json['gifts']),
+  );
+
+  Map<String, dynamic> toJson() => {
+    'reactions': reactions,
+    'comments': comments,
+    'favorites': favorites,
+    'shares': shares,
+    'gifts': gifts,
+  };
+
+  PostStats copyWith({
+    Map<String, int>? reactions,
+    int? comments,
+    int? favorites,
+    int? shares,
+    int? gifts,
+  }) => PostStats(
+    reactions: reactions ?? this.reactions,
+    comments: comments ?? this.comments,
+    favorites: favorites ?? this.favorites,
+    shares: shares ?? this.shares,
+    gifts: gifts ?? this.gifts,
+  );
+}
+
+/// The signed-in user's own state on a post.
+class PostViewer {
+  const PostViewer({this.reaction, this.favorited = false, this.seen = false});
+  final Reaction? reaction;
+  final bool favorited;
+  final bool seen;
+
+  factory PostViewer.fromJson(Map<String, dynamic> json) => PostViewer(
+    reaction: Reaction.fromName(json['reaction']),
+    favorited: json['favorited'] as bool? ?? false,
+    seen: json['seen'] as bool? ?? false,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'reaction': reaction?.name,
+    'favorited': favorited,
+    'seen': seen,
+  };
+}
+
+/// Why a post is in the timeline.
+class PostReason {
+  const PostReason({required this.kind, this.label = ''});
+
+  /// `source`, `author`, `favorite`, `topic` or `new`.
+  final String kind;
+  final String label;
+
+  factory PostReason.fromJson(Map<String, dynamic> json) => PostReason(
+    kind: json['kind'] as String? ?? '',
+    label: json['label'] as String? ?? '',
+  );
+
+  Map<String, dynamic> toJson() => {'kind': kind, 'label': label};
+
+  /// The small line shown above a timeline post.
+  String get text => switch (kind) {
+    'source' => 'From $label',
+    'author' => 'Because you follow $label',
+    'favorite' => '$label favourited this',
+    'topic' => label,
+    _ => 'New on Reborn',
+  };
+}
+
+/// Every published card is a post.
+class Post {
+  const Post({
+    required this.id,
+    required this.card,
+    this.publishedAt,
+    this.stats = const PostStats(),
+    this.viewer,
+    this.reason,
+  });
+
+  final String id;
+  final IdeaCard card;
+  final DateTime? publishedAt;
+  final PostStats stats;
+
+  /// Present only when signed in.
+  final PostViewer? viewer;
+
+  /// Present only in the timeline.
+  final PostReason? reason;
+
+  /// A post for a card known only from the library (e.g. offline).
+  factory Post.fromCard(IdeaCard card) => Post(id: card.id, card: card);
+
+  factory Post.fromJson(Map<String, dynamic> json) {
+    final card = IdeaCard.fromJson(json['card'] as Map<String, dynamic>);
+    return Post(
+      id: json['id'] as String? ?? card.id,
+      card: card,
+      publishedAt: _date(json['published_at']),
+      stats: json['stats'] is Map<String, dynamic>
+          ? PostStats.fromJson(json['stats'] as Map<String, dynamic>)
+          : const PostStats(),
+      viewer: json['viewer'] is Map<String, dynamic>
+          ? PostViewer.fromJson(json['viewer'] as Map<String, dynamic>)
+          : null,
+      reason: json['reason'] is Map<String, dynamic>
+          ? PostReason.fromJson(json['reason'] as Map<String, dynamic>)
+          : null,
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'published_at': publishedAt?.toUtc().toIso8601String(),
+    'card': card.toJson(),
+    'stats': stats.toJson(),
+    if (viewer != null) 'viewer': viewer!.toJson(),
+    if (reason != null) 'reason': reason!.toJson(),
+  };
+
+  Reaction? get myReaction => viewer?.reaction;
+  bool get favorited => viewer?.favorited ?? false;
+
+  Post copyWith({PostStats? stats, PostViewer? viewer}) => Post(
+    id: id,
+    card: card,
+    publishedAt: publishedAt,
+    stats: stats ?? this.stats,
+    viewer: viewer ?? this.viewer,
+    reason: reason,
+  );
+
+  /// Sets (or with null clears) the viewer's reaction, adjusting counts.
+  Post withReaction(Reaction? next) {
+    final prev = myReaction;
+    final counts = Map<String, int>.of(stats.reactions);
+    if (prev != null) {
+      final n = (counts[prev.name] ?? 0) - 1;
+      if (n > 0) {
+        counts[prev.name] = n;
+      } else {
+        counts.remove(prev.name);
+      }
+    }
+    if (next != null) counts[next.name] = (counts[next.name] ?? 0) + 1;
+    final v = viewer ?? const PostViewer();
+    return copyWith(
+      stats: stats.copyWith(reactions: counts),
+      viewer: PostViewer(reaction: next, favorited: v.favorited, seen: v.seen),
+    );
+  }
+
+  Post withFavorite(bool on) {
+    if (on == favorited) return this;
+    final v = viewer ?? const PostViewer();
+    return copyWith(
+      stats: stats.copyWith(
+        favorites: (stats.favorites + (on ? 1 : -1)).clamp(0, 1 << 30),
+      ),
+      viewer: PostViewer(reaction: v.reaction, favorited: on, seen: v.seen),
+    );
+  }
+}
+
+/// A page of posts (`{"posts":[Post],"next_cursor"}`).
+class PostPage {
+  const PostPage({required this.posts, this.nextCursor});
+  final List<Post> posts;
+  final String? nextCursor;
+
+  factory PostPage.fromJson(Map<String, dynamic> json) => PostPage(
+    posts: (json['posts'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(Post.fromJson)
+        .toList(),
+    nextCursor: json['next_cursor'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'posts': posts.map((p) => p.toJson()).toList(),
+    'next_cursor': nextCursor,
+  };
+}
+
+/// `{"id","handle","display_name"}`, e.g. a comment's author.
+class UserSummary {
+  const UserSummary({
+    required this.id,
+    required this.handle,
+    required this.displayName,
+  });
+  final String id;
+  final String handle;
+  final String displayName;
+
+  factory UserSummary.fromJson(Map<String, dynamic> json) => UserSummary(
+    id: json['id'] as String? ?? '',
+    handle: json['handle'] as String? ?? '',
+    displayName: json['display_name'] as String? ?? '',
+  );
+}
+
+/// A public profile.
+class Profile {
+  const Profile({
+    required this.id,
+    required this.handle,
+    required this.displayName,
+    this.bio = '',
+    this.followers = 0,
+    this.following = 0,
+    this.favorites = 0,
+    this.isFollowing = false,
+    this.isMe = false,
+  });
+
+  final String id;
+  final String handle;
+  final String displayName;
+  final String bio;
+  final int followers;
+  final int following;
+  final int favorites;
+  final bool isFollowing;
+  final bool isMe;
+
+  factory Profile.fromJson(Map<String, dynamic> json) => Profile(
+    id: json['id'] as String? ?? '',
+    handle: json['handle'] as String? ?? '',
+    displayName: json['display_name'] as String? ?? '',
+    bio: json['bio'] as String? ?? '',
+    followers: _int(json['followers']),
+    following: _int(json['following']),
+    favorites: _int(json['favorites']),
+    isFollowing: json['is_following'] as bool? ?? false,
+    isMe: json['is_me'] as bool? ?? false,
+  );
+
+  Profile withFollow(FollowState f) => Profile(
+    id: id,
+    handle: handle,
+    displayName: displayName,
+    bio: bio,
+    followers: f.followers,
+    following: following,
+    favorites: favorites,
+    isFollowing: f.isFollowing,
+    isMe: isMe,
+  );
+}
+
+/// What follow/unfollow return, and the `follow` of a source.
+class FollowState {
+  const FollowState({this.followers = 0, this.isFollowing = false});
+  final int followers;
+  final bool isFollowing;
+
+  factory FollowState.fromJson(Map<String, dynamic> json) => FollowState(
+    followers: _int(json['followers']),
+    isFollowing: json['is_following'] as bool? ?? false,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'followers': followers,
+    'is_following': isFollowing,
+  };
+}
+
+/// What can be followed.
+enum FollowKind { user, source, author }
+
+/// One entry of GET /v1/me/following.
+class FollowItem {
+  const FollowItem({
+    required this.kind,
+    required this.target,
+    required this.label,
+    this.handle,
+  });
+
+  final String kind;
+  final String target;
+  final String label;
+  final String? handle;
+
+  factory FollowItem.fromJson(Map<String, dynamic> json) => FollowItem(
+    kind: json['kind'] as String? ?? '',
+    target: json['target'] as String? ?? '',
+    label: json['label'] as String? ?? '',
+    handle: json['handle'] as String?,
+  );
+}
+
+/// A source in a list (e.g. an author's books).
+class SourceSummary {
+  const SourceSummary({
+    required this.id,
+    required this.title,
+    this.authors = const [],
+    this.kind = '',
+    this.cardCount = 0,
+  });
+
+  final String id;
+  final String title;
+  final List<String> authors;
+  final String kind;
+  final int cardCount;
+
+  factory SourceSummary.fromJson(Map<String, dynamic> json) => SourceSummary(
+    id: json['id'] as String? ?? '',
+    title: json['title'] as String? ?? '',
+    authors: _stringList(json['authors']),
+    kind: json['kind'] as String? ?? '',
+    cardCount: _int(json['card_count']),
+  );
+}
+
+class AuthorPage {
+  const AuthorPage({
+    required this.name,
+    required this.sources,
+    this.follow = const FollowState(),
+  });
+  final String name;
+  final List<SourceSummary> sources;
+  final FollowState follow;
+
+  factory AuthorPage.fromJson(Map<String, dynamic> json) => AuthorPage(
+    name: json['name'] as String? ?? '',
+    sources: (json['sources'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(SourceSummary.fromJson)
+        .toList(),
+    follow: FollowState.fromJson(json),
+  );
+}
+
+class Comment {
+  const Comment({
+    required this.id,
+    required this.postId,
+    this.parentId,
+    required this.body,
+    required this.author,
+    this.createdAt,
+  });
+
+  final String id;
+  final String postId;
+  final String? parentId;
+  final String body;
+  final UserSummary author;
+  final DateTime? createdAt;
+
+  factory Comment.fromJson(Map<String, dynamic> json) => Comment(
+    id: json['id'] as String? ?? '',
+    postId: json['post_id'] as String? ?? '',
+    parentId: json['parent_id'] as String?,
+    body: json['body'] as String? ?? '',
+    author: UserSummary.fromJson(
+      (json['author'] as Map<String, dynamic>?) ?? const {},
+    ),
+    createdAt: _date(json['created_at']),
+  );
+}
+
+class CommentPage {
+  const CommentPage({required this.comments, this.nextCursor});
+  final List<Comment> comments;
+  final String? nextCursor;
+
+  factory CommentPage.fromJson(Map<String, dynamic> json) => CommentPage(
+    comments: (json['comments'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(Comment.fromJson)
+        .toList(),
+    nextCursor: json['next_cursor'] as String?,
+  );
+}
+
+/// A top-level comment with its replies (one level deep).
+class CommentThread {
+  const CommentThread(this.comment, this.replies);
+  final Comment comment;
+  final List<Comment> replies;
+}
+
+/// Groups comments (oldest first) into top-level threads. A reply whose
+/// parent isn't loaded is shown as top level.
+List<CommentThread> threadComments(List<Comment> comments) {
+  final top = <Comment>[];
+  final replies = <String, List<Comment>>{};
+  final ids = comments.map((c) => c.id).toSet();
+  for (final c in comments) {
+    if (c.parentId != null && ids.contains(c.parentId)) {
+      replies.putIfAbsent(c.parentId!, () => []).add(c);
+    } else {
+      top.add(c);
+    }
+  }
+  return [for (final c in top) CommentThread(c, replies[c.id] ?? const [])];
+}
+
+class GiftTier {
+  const GiftTier({
+    required this.id,
+    required this.name,
+    required this.amountCents,
+    required this.currency,
+    required this.productId,
+  });
+
+  final String id;
+  final String name;
+  final int amountCents;
+  final String currency;
+  final String productId;
+
+  factory GiftTier.fromJson(Map<String, dynamic> json) => GiftTier(
+    id: json['id'] as String? ?? '',
+    name: json['name'] as String? ?? '',
+    amountCents: _int(json['amount_cents']),
+    currency: json['currency'] as String? ?? 'usd',
+    productId: json['product_id'] as String? ?? '',
+  );
+
+  /// e.g. "$4.99" (used when the store has no localized price).
+  String get displayPrice {
+    final symbol = switch (currency.toLowerCase()) {
+      'usd' => r'$',
+      'gbp' => '£',
+      'eur' => '€',
+      _ => '${currency.toUpperCase()} ',
+    };
+    return '$symbol${(amountCents / 100).toStringAsFixed(2)}';
+  }
+}
+
+class GiftTiers {
+  const GiftTiers({required this.tiers, this.providers = const {}});
+  final List<GiftTier> tiers;
+
+  /// `stripe`, `apple`, `google` -> whether that provider is set up.
+  final Map<String, bool> providers;
+
+  bool enabled(String provider) => providers[provider] ?? false;
+
+  factory GiftTiers.fromJson(Map<String, dynamic> json) => GiftTiers(
+    tiers: (json['tiers'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(GiftTier.fromJson)
+        .toList(),
+    providers: json['providers'] is Map
+        ? {
+            for (final e in (json['providers'] as Map).entries)
+              e.key.toString(): e.value == true,
+          }
+        : const {},
+  );
+}
+
+class Gift {
+  const Gift({
+    required this.id,
+    required this.postId,
+    required this.tier,
+    this.amountCents = 0,
+    this.currency = 'usd',
+    this.provider = '',
+    this.status = '',
+  });
+
+  final String id;
+  final String postId;
+  final String tier;
+  final int amountCents;
+  final String currency;
+  final String provider;
+  final String status;
+
+  factory Gift.fromJson(Map<String, dynamic> json) => Gift(
+    id: json['id'] as String? ?? '',
+    postId: json['post_id'] as String? ?? '',
+    tier: json['tier'] as String? ?? '',
+    amountCents: _int(json['amount_cents']),
+    currency: json['currency'] as String? ?? 'usd',
+    provider: json['provider'] as String? ?? '',
+    status: json['status'] as String? ?? '',
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Notifications, streaks, referrals, blocking, discover, circles, premium and
+// the moderator dashboard.
+
+/// One inbox item. (Named to avoid Flutter's `Notification`.)
+class AppNotification {
+  const AppNotification({
+    required this.id,
+    required this.kind,
+    required this.text,
+    this.actor,
+    this.postId,
+    this.commentId,
+    this.circleId,
+    this.readAt,
+    this.createdAt,
+  });
+
+  final String id;
+
+  /// `daily`, `reply`, `follow`, `circle` or `reward`.
+  final String kind;
+  final String text;
+  final UserSummary? actor;
+  final String? postId;
+  final String? commentId;
+  final String? circleId;
+  final DateTime? readAt;
+  final DateTime? createdAt;
+
+  bool get read => readAt != null;
+
+  factory AppNotification.fromJson(Map<String, dynamic> json) =>
+      AppNotification(
+        id: json['id'] as String? ?? '',
+        kind: json['kind'] as String? ?? '',
+        text: json['text'] as String? ?? '',
+        actor: json['actor'] is Map<String, dynamic>
+            ? UserSummary.fromJson(json['actor'] as Map<String, dynamic>)
+            : null,
+        postId: json['post_id'] as String?,
+        commentId: json['comment_id'] as String?,
+        circleId: json['circle_id'] as String?,
+        readAt: _date(json['read_at']),
+        createdAt: _date(json['created_at']),
+      );
+
+  AppNotification markedRead(DateTime at) => AppNotification(
+    id: id,
+    kind: kind,
+    text: text,
+    actor: actor,
+    postId: postId,
+    commentId: commentId,
+    circleId: circleId,
+    readAt: readAt ?? at,
+    createdAt: createdAt,
+  );
+}
+
+class NotificationsPage {
+  const NotificationsPage({required this.items, this.unread = 0});
+  final List<AppNotification> items;
+  final int unread;
+
+  factory NotificationsPage.fromJson(Map<String, dynamic> json) =>
+      NotificationsPage(
+        items: (json['notifications'] as List? ?? const [])
+            .whereType<Map<String, dynamic>>()
+            .map(AppNotification.fromJson)
+            .toList(),
+        unread: _int(json['unread']),
+      );
+}
+
+/// Where a notification (inbox item or push) leads, or null.
+String? notificationLocation({
+  String? postId,
+  String? commentId,
+  String? circleId,
+  String? actorHandle,
+}) {
+  if (circleId != null && circleId.isNotEmpty) {
+    return '/circles/${Uri.encodeComponent(circleId)}';
+  }
+  if (postId != null && postId.isNotEmpty) {
+    final p = Uri.encodeComponent(postId);
+    return commentId != null && commentId.isNotEmpty
+        ? '/posts/$p/comments'
+        : '/cards/$p';
+  }
+  if (actorHandle != null && actorHandle.isNotEmpty) {
+    return '/users/${Uri.encodeComponent(actorHandle)}';
+  }
+  return null;
+}
+
+class DayCount {
+  const DayCount({required this.day, this.ideas = 0});
+  final String day;
+  final int ideas;
+
+  factory DayCount.fromJson(Map<String, dynamic> json) =>
+      DayCount(day: json['day'] as String? ?? '', ideas: _int(json['ideas']));
+}
+
+class Streak {
+  const Streak({
+    this.current = 0,
+    this.longest = 0,
+    this.goal = 3,
+    this.today = 0,
+    this.goalMet = false,
+    this.lastDays = const [],
+  });
+
+  final int current;
+  final int longest;
+  final int goal;
+  final int today;
+  final bool goalMet;
+
+  /// The last 7 local days, oldest first.
+  final List<DayCount> lastDays;
+
+  factory Streak.fromJson(Map<String, dynamic> json) => Streak(
+    current: _int(json['current']),
+    longest: _int(json['longest']),
+    goal: _int(json['goal']),
+    today: _int(json['today']),
+    goalMet: json['goal_met'] as bool? ?? false,
+    lastDays: (json['last_days'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(DayCount.fromJson)
+        .toList(),
+  );
+}
+
+class Referrals {
+  const Referrals({
+    required this.code,
+    required this.link,
+    this.invited = 0,
+    this.rewarded = 0,
+    this.rewardDays = 0,
+  });
+
+  final String code;
+  final String link;
+  final int invited;
+  final int rewarded;
+  final int rewardDays;
+
+  factory Referrals.fromJson(Map<String, dynamic> json) => Referrals(
+    code: json['code'] as String? ?? '',
+    link: json['link'] as String? ?? '',
+    invited: _int(json['invited']),
+    rewarded: _int(json['rewarded']),
+    rewardDays: _int(json['reward_days']),
+  );
+}
+
+/// Someone the user blocked (`block`) or muted (`mute`).
+class BlockedUser {
+  const BlockedUser({required this.user, required this.kind});
+  final UserSummary user;
+  final String kind;
+
+  bool get muted => kind == 'mute';
+
+  factory BlockedUser.fromJson(Map<String, dynamic> json) => BlockedUser(
+    user: UserSummary.fromJson(json),
+    kind: json['kind'] as String? ?? 'block',
+  );
+}
+
+class PopularBook {
+  const PopularBook({required this.source, this.followers = 0});
+  final SourceSummary source;
+  final int followers;
+
+  factory PopularBook.fromJson(Map<String, dynamic> json) => PopularBook(
+    source: SourceSummary.fromJson(json),
+    followers: _int(json['followers']),
+  );
+}
+
+class PopularAuthor {
+  const PopularAuthor({
+    required this.name,
+    this.followers = 0,
+    this.sources = 0,
+  });
+  final String name;
+  final int followers;
+  final int sources;
+
+  factory PopularAuthor.fromJson(Map<String, dynamic> json) => PopularAuthor(
+    name: json['name'] as String? ?? '',
+    followers: _int(json['followers']),
+    sources: _int(json['sources']),
+  );
+}
+
+List<Post> _posts(Object? v) => (v as List? ?? const [])
+    .whereType<Map<String, dynamic>>()
+    .map(Post.fromJson)
+    .toList();
+
+class DiscoverPage {
+  const DiscoverPage({
+    this.trending = const [],
+    this.newPosts = const [],
+    this.books = const [],
+    this.authors = const [],
+    this.circles = const [],
+  });
+
+  final List<Post> trending;
+  final List<Post> newPosts;
+  final List<PopularBook> books;
+  final List<PopularAuthor> authors;
+  final List<Circle> circles;
+
+  factory DiscoverPage.fromJson(Map<String, dynamic> json) => DiscoverPage(
+    trending: _posts(json['trending']),
+    newPosts: _posts(json['new']),
+    books: (json['books'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(PopularBook.fromJson)
+        .toList(),
+    authors: (json['authors'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(PopularAuthor.fromJson)
+        .toList(),
+    circles: parseCircles(json['circles']),
+  );
+}
+
+/// A discussion group for one book, up to 50 members.
+class Circle {
+  const Circle({
+    required this.id,
+    required this.name,
+    this.description = '',
+    required this.sourceId,
+    required this.sourceTitle,
+    this.owner,
+    this.members = 0,
+    this.isMember = false,
+    this.role,
+    this.createdAt,
+  });
+
+  final String id;
+  final String name;
+  final String description;
+  final String sourceId;
+  final String sourceTitle;
+  final UserSummary? owner;
+  final int members;
+  final bool isMember;
+
+  /// `owner` or `member` when the viewer is in it.
+  final String? role;
+  final DateTime? createdAt;
+
+  bool get isOwner => role == 'owner';
+
+  factory Circle.fromJson(Map<String, dynamic> json) {
+    final source = json['source'] is Map<String, dynamic>
+        ? json['source'] as Map<String, dynamic>
+        : const <String, dynamic>{};
+    return Circle(
+      id: json['id'] as String? ?? '',
+      name: json['name'] as String? ?? '',
+      description: json['description'] as String? ?? '',
+      sourceId: source['id'] as String? ?? '',
+      sourceTitle: source['title'] as String? ?? '',
+      owner: json['owner'] is Map<String, dynamic>
+          ? UserSummary.fromJson(json['owner'] as Map<String, dynamic>)
+          : null,
+      members: _int(json['members']),
+      isMember: json['is_member'] as bool? ?? false,
+      role: json['role'] as String?,
+      createdAt: _date(json['created_at']),
+    );
+  }
+}
+
+List<Circle> parseCircles(Object? v) => (v as List? ?? const [])
+    .whereType<Map<String, dynamic>>()
+    .map(Circle.fromJson)
+    .toList();
+
+class CircleMessage {
+  const CircleMessage({
+    required this.id,
+    required this.circleId,
+    required this.body,
+    this.postId,
+    required this.author,
+    this.createdAt,
+  });
+
+  final String id;
+  final String circleId;
+  final String body;
+
+  /// An idea from the circle's book, attached to the message.
+  final String? postId;
+  final UserSummary author;
+  final DateTime? createdAt;
+
+  factory CircleMessage.fromJson(Map<String, dynamic> json) => CircleMessage(
+    id: json['id'] as String? ?? '',
+    circleId: json['circle_id'] as String? ?? '',
+    body: json['body'] as String? ?? '',
+    postId: json['post_id'] as String?,
+    author: UserSummary.fromJson(
+      (json['author'] as Map<String, dynamic>?) ?? const {},
+    ),
+    createdAt: _date(json['created_at']),
+  );
+}
+
+/// A member of a book circle (`GET /v1/circles/{id}/members`).
+class CircleMember {
+  const CircleMember({
+    required this.id,
+    required this.handle,
+    required this.displayName,
+    this.role = 'member',
+    this.joinedAt,
+  });
+
+  final String id;
+  final String handle;
+  final String displayName;
+
+  /// `owner` or `member`.
+  final String role;
+  final DateTime? joinedAt;
+
+  bool get isOwner => role == 'owner';
+  String get name => displayName.isNotEmpty ? displayName : '@$handle';
+
+  factory CircleMember.fromJson(Map<String, dynamic> json) => CircleMember(
+    id: json['id'] as String? ?? '',
+    handle: json['handle'] as String? ?? '',
+    displayName: json['display_name'] as String? ?? '',
+    role: json['role'] as String? ?? 'member',
+    joinedAt: _date(json['joined_at']),
+  );
+}
+
+/// A public stash with its owner and cards.
+class PublicStash {
+  const PublicStash({required this.stash, this.owner, required this.cards});
+  final Stash stash;
+  final UserSummary? owner;
+  final List<IdeaCard> cards;
+
+  factory PublicStash.fromJson(Map<String, dynamic> json) {
+    final s = (json['stash'] as Map<String, dynamic>?) ?? const {};
+    return PublicStash(
+      stash: Stash.fromJson(s),
+      owner: s['owner'] is Map<String, dynamic>
+          ? UserSummary.fromJson(s['owner'] as Map<String, dynamic>)
+          : null,
+      cards: parseCards(json['cards']),
+    );
+  }
+}
+
+class PremiumPlan {
+  const PremiumPlan({
+    required this.id,
+    required this.name,
+    required this.amountCents,
+    required this.currency,
+    required this.interval,
+    required this.productId,
+  });
+
+  final String id;
+  final String name;
+  final int amountCents;
+  final String currency;
+
+  /// `month` or `year`.
+  final String interval;
+  final String productId;
+
+  factory PremiumPlan.fromJson(Map<String, dynamic> json) => PremiumPlan(
+    id: json['id'] as String? ?? '',
+    name: json['name'] as String? ?? '',
+    amountCents: _int(json['amount_cents']),
+    currency: json['currency'] as String? ?? 'usd',
+    interval: json['interval'] as String? ?? '',
+    productId: json['product_id'] as String? ?? '',
+  );
+
+  String get displayPrice => GiftTier(
+    id: id,
+    name: name,
+    amountCents: amountCents,
+    currency: currency,
+    productId: productId,
+  ).displayPrice;
+}
+
+class PremiumSubscription {
+  const PremiumSubscription({
+    required this.provider,
+    required this.plan,
+    required this.status,
+    this.expiresAt,
+  });
+  final String provider;
+  final String plan;
+  final String status;
+  final DateTime? expiresAt;
+
+  factory PremiumSubscription.fromJson(Map<String, dynamic> json) =>
+      PremiumSubscription(
+        provider: json['provider'] as String? ?? '',
+        plan: json['plan'] as String? ?? '',
+        status: json['status'] as String? ?? '',
+        expiresAt: _date(json['expires_at']),
+      );
+}
+
+class PremiumStatus {
+  const PremiumStatus({
+    this.plans = const [],
+    this.providers = const {},
+    this.premium = false,
+    this.premiumUntil,
+    this.subscription,
+  });
+
+  final List<PremiumPlan> plans;
+  final Map<String, bool> providers;
+  final bool premium;
+  final DateTime? premiumUntil;
+  final PremiumSubscription? subscription;
+
+  bool enabled(String provider) => providers[provider] ?? false;
+
+  factory PremiumStatus.fromJson(Map<String, dynamic> json) => PremiumStatus(
+    plans: (json['plans'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(PremiumPlan.fromJson)
+        .toList(),
+    providers: json['providers'] is Map
+        ? {
+            for (final e in (json['providers'] as Map).entries)
+              e.key.toString(): e.value == true,
+          }
+        : const {},
+    premium: json['premium'] as bool? ?? false,
+    premiumUntil: _date(json['premium_until']),
+    subscription: json['subscription'] is Map<String, dynamic>
+        ? PremiumSubscription.fromJson(
+            json['subscription'] as Map<String, dynamic>,
+          )
+        : null,
+  );
+}
+
+/// GET /v1/admin/stats. Sections are kept as maps of numbers; [daily] and
+/// [topPosts] are typed for the chart and list.
+class AdminStats {
+  const AdminStats({
+    this.users = const {},
+    this.retention = const {},
+    this.engagement = const {},
+    this.moderation = const {},
+    this.content = const {},
+    this.gifts = const [],
+    this.subscriptions = const [],
+    this.daily = const [],
+    this.topPosts = const [],
+  });
+
+  final Map<String, num> users;
+  final Map<String, num> retention;
+  final Map<String, num> engagement;
+  final Map<String, num> moderation;
+  final Map<String, num> content;
+
+  /// `{"provider","currency","amount_cents","count"}` for the last 30 days.
+  final List<Map<String, dynamic>> gifts;
+
+  /// `{"provider","count"}` active subscriptions.
+  final List<Map<String, dynamic>> subscriptions;
+  final List<DailyStat> daily;
+  final List<TopPost> topPosts;
+
+  static Map<String, num> _nums(Object? v) => v is Map
+      ? {
+          for (final e in v.entries)
+            if (e.value is num) e.key.toString(): e.value as num,
+        }
+      : const {};
+
+  static List<Map<String, dynamic>> _maps(Object? v) =>
+      (v as List? ?? const []).whereType<Map<String, dynamic>>().toList();
+
+  factory AdminStats.fromJson(Map<String, dynamic> json) {
+    final revenue = json['revenue'] is Map ? json['revenue'] as Map : const {};
+    return AdminStats(
+      users: _nums(json['users']),
+      retention: _nums(json['retention']),
+      engagement: _nums(json['engagement']),
+      moderation: _nums(json['moderation']),
+      content: _nums(json['content']),
+      gifts: _maps(revenue['gifts_30d']),
+      subscriptions: _maps(revenue['subscriptions']),
+      daily: _maps(json['daily']).map(DailyStat.fromJson).toList(),
+      topPosts: _maps(json['top_posts']).map(TopPost.fromJson).toList(),
+    );
+  }
+}
+
+class DailyStat {
+  const DailyStat({required this.day, this.signups = 0, this.active = 0});
+  final String day;
+  final int signups;
+  final int active;
+
+  factory DailyStat.fromJson(Map<String, dynamic> json) => DailyStat(
+    day: json['day'] as String? ?? '',
+    signups: _int(json['signups']),
+    active: _int(json['active']),
+  );
+}
+
+class TopPost {
+  const TopPost({required this.id, required this.title, this.score = 0});
+  final String id;
+  final String title;
+  final int score;
+
+  factory TopPost.fromJson(Map<String, dynamic> json) => TopPost(
+    id: json['id'] as String? ?? '',
+    title: json['title'] as String? ?? '',
+    score: _int(json['score']),
+  );
+}

@@ -9,6 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  const { next } = await searchParams;
-  return <AuthForm mode="register" next={safeNext(next)} />;
+  const { next, ref } = await searchParams;
+  return <AuthForm mode="register" next={safeNext(next)} referral={(Array.isArray(ref) ? ref[0] : ref) ?? undefined} />;
 }

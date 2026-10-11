@@ -1,0 +1,711 @@
+{
+  "source": {
+    "id": "thinking-fast-and-slow-kahneman",
+    "title": "Thinking, Fast and Slow",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Thinking, Fast and Slow by Daniel Kahneman (2011). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Farrar, Straus and Giroux",
+    "year": 2011,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "thinking-fast-and-slow-kahneman--01",
+      "topic": "psychology",
+      "tags": [
+        "thinking",
+        "decision-making",
+        "bias"
+      ],
+      "title": "Your mind runs on two speeds: a quick autopilot and a slow, effortful checker",
+      "body": "Kahneman describes thinking as two characters. System 1 is fast and automatic: it reads faces, finishes familiar phrases and produces gut feelings without being asked. System 2 is slow and deliberate: it does long sums, weighs options and follows rules, but it tires easily and would rather go along with whatever System 1 suggests.\n\nMost of the time this works well. The trouble comes when a quick impression feels like a careful conclusion. Knowing which system is talking helps you decide when to slow down and check.",
+      "apply_it": "Before your next important yes or no, pause and ask: is this a gut feeling or something I actually worked through? If it's the gut, spend two minutes checking it.",
+      "quiz": {
+        "question": "In Kahneman's model, what is System 2 like?",
+        "options": [
+          "Fast, automatic and effortless",
+          "Slow, effortful and easily tired",
+          "Purely emotional",
+          "Only active during sleep"
+        ],
+        "answer": 1,
+        "explanation": "System 2 does deliberate reasoning, but it takes effort and often defers to System 1's quick answers."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--02",
+      "topic": "psychology",
+      "tags": [
+        "anchoring",
+        "negotiation",
+        "bias"
+      ],
+      "title": "The first number you hear quietly drags your estimate toward it",
+      "body": "Anchoring is the tendency for an initial number to pull later judgements towards it, even when that number is obviously irrelevant. Kahneman shows that people asked to think about an arbitrary figure first then give estimates that lean in its direction.\n\nThis matters in everyday life: a high asking price, a 'was' price on a sale tag or the first offer in a salary talk all set an anchor. Adjusting away from it feels like enough, but people usually stop adjusting too soon.",
+      "apply_it": "Before you see a price or an offer, write down your own number based on your research. Use it as your reference instead of theirs.",
+      "quiz": {
+        "question": "What does anchoring describe?",
+        "options": [
+          "Remembering only the last thing you heard",
+          "Avoiding numbers when deciding",
+          "Estimates being pulled toward an initial number, even an irrelevant one",
+          "Always rounding numbers down"
+        ],
+        "answer": 2,
+        "explanation": "An early figure acts as a reference point, and people tend to adjust away from it too little."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--03",
+      "topic": "psychology",
+      "tags": [
+        "availability",
+        "risk",
+        "media"
+      ],
+      "title": "What comes to mind easily feels more common than it is",
+      "body": "Kahneman explains that we often judge how frequent or likely something is by how easily examples spring to mind. That shortcut, the availability heuristic, is usually decent, but vivid, recent or heavily reported events are easier to recall than dull, common ones.\n\nSo a dramatic news story can make a rare danger feel close, while everyday risks fade into the background. The ease of remembering gets mistaken for evidence about how often something happens.",
+      "apply_it": "Next time a news story makes you worried, look up how often that event actually happens before changing your plans.",
+      "quiz": {
+        "question": "Why might a rare but dramatic event seem more likely than it is?",
+        "options": [
+          "Vivid examples are easy to recall, and ease of recall feels like frequency",
+          "Rare events are actually common",
+          "People are bad at all maths",
+          "System 2 always exaggerates risk"
+        ],
+        "answer": 0,
+        "explanation": "The availability heuristic treats how easily something comes to mind as a guide to how often it happens."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--04",
+      "topic": "psychology",
+      "tags": [
+        "loss-aversion",
+        "money",
+        "decision-making"
+      ],
+      "title": "Losing hurts more than winning the same amount feels good",
+      "body": "One of Kahneman's best-known findings, developed with Amos Tversky, is loss aversion: a loss stings more than an equal gain pleases. That asymmetry makes many people turn down bets that are actually in their favour, cling to things simply because they own them, and keep a failing plan going to avoid admitting the loss.\n\nThe same choice can also feel different depending on whether it is framed as something gained or something given up, even when the outcome is identical.",
+      "apply_it": "Take one decision you're stuck on and rewrite it twice: once as what you gain, once as what you lose. Does your answer change? Choose on the facts, not the framing.",
+      "quiz": {
+        "question": "What is loss aversion?",
+        "options": [
+          "Preferring gains to be delivered slowly",
+          "Forgetting past losses quickly",
+          "Feeling indifferent to money",
+          "Feeling a loss more strongly than a gain of the same size"
+        ],
+        "answer": 3,
+        "explanation": "Losses loom larger than equivalent gains, which shapes many choices about risk and change."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--05",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "projects",
+        "estimation"
+      ],
+      "title": "Plans run late because we picture the best case: check the outside view",
+      "body": "The planning fallacy is our habit of forecasting projects as if everything will go smoothly. We imagine the steps we know about and overlook the delays, interruptions and surprises that almost always turn up.\n\nKahneman's remedy is to take the 'outside view': instead of reasoning only from the details of your own plan, ask how long similar projects usually took for other people or for you in the past. Start from that base rate, then adjust for what is genuinely different this time.",
+      "apply_it": "For your next project, find out how long the last two or three similar ones actually took. Use that as your starting estimate.",
+      "quiz": {
+        "question": "What does taking the 'outside view' mean?",
+        "options": [
+          "Asking an outsider to do the work",
+          "Starting from how similar projects actually turned out",
+          "Planning only for the best case",
+          "Ignoring past experience"
+        ],
+        "answer": 1,
+        "explanation": "Base rates from comparable cases correct the optimism built into an inside-view plan."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--06",
+      "topic": "learning",
+      "tags": [
+        "wysiati",
+        "overconfidence",
+        "evidence"
+      ],
+      "title": "We build confident stories from whatever is in front of us",
+      "body": "Kahneman coined a clumsy acronym, WYSIATI, for 'what you see is all there is'. The fast mind makes the most coherent story it can from the information at hand and rarely asks what is missing. A neat story feels convincing, so confidence comes from coherence rather than from how complete or reliable the evidence is.\n\nThat is why a one-sided account can persuade us, and why first impressions of people and situations stick so firmly.",
+      "apply_it": "When you feel sure about something, ask: what would I need to know that I don't know yet? Look for one piece of missing information.",
+      "quiz": {
+        "question": "According to the WYSIATI idea, where does our confidence mostly come from?",
+        "options": [
+          "The amount of evidence we have",
+          "Expert advice",
+          "How coherent the story feels",
+          "Careful statistical checks"
+        ],
+        "answer": 2,
+        "explanation": "A tidy story feels convincing even when it rests on thin or one-sided information."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--07",
+      "topic": "psychology",
+      "tags": [
+        "happiness",
+        "memory",
+        "experiences"
+      ],
+      "title": "The self that lives an experience and the self that remembers it don't agree",
+      "body": "Kahneman distinguishes the experiencing self, which lives moment by moment, from the remembering self, which keeps score and makes future choices. The remembering self doesn't add up the whole experience. It leans heavily on the most intense moment and on how things ended, and largely ignores how long it lasted.\n\nSo a holiday with a bad last day can be remembered as worse than it was, and an unpleasant experience that tapers off gently can be remembered as more bearable.",
+      "apply_it": "When planning an evening, trip or meeting, give extra thought to the ending. Finish on something good.",
+      "quiz": {
+        "question": "Which features does the remembering self weigh most heavily?",
+        "options": [
+          "The peak moment and the ending",
+          "The total length of the experience",
+          "The very first minute",
+          "The average of every moment"
+        ],
+        "answer": 0,
+        "explanation": "Memories are shaped mostly by the most intense point and the end, not by duration."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--08",
+      "topic": "learning",
+      "tags": [
+        "system-2",
+        "effort",
+        "checking"
+      ],
+      "title": "Your careful mind is lazy: it often signs off on the first answer without checking",
+      "body": "Kahneman calls System 2 a 'lazy controller'. Checking takes effort, so the slow mind tends to accept whatever answer the fast mind offers, as long as it feels right.\n\nHis favourite example is a simple puzzle: a bat and a ball cost 1.10 together, and the bat costs 1.00 more than the ball. Most people's first answer for the ball is 10 cents. It feels obvious, but it's wrong (the ball is 5 cents). Many bright people give the quick answer because they never stop to test it. The lesson is that feeling sure is not the same as having checked.",
+      "apply_it": "Pick one figure you'll rely on this week, such as a total, a deadline or a price. Before using it, spend thirty seconds checking it a second way.",
+      "quiz": {
+        "question": "Why do many people answer the bat-and-ball puzzle wrongly?",
+        "options": [
+          "The maths is too advanced for most adults",
+          "They accept the intuitive answer without checking it",
+          "The puzzle has no correct answer",
+          "They are deliberately tricked with false numbers"
+        ],
+        "answer": 1,
+        "explanation": "The quick answer feels right, and the lazy System 2 doesn't bother to test it."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--09",
+      "topic": "psychology",
+      "tags": [
+        "cognitive-ease",
+        "repetition",
+        "misinformation"
+      ],
+      "title": "Things you hear again and again start to feel true",
+      "body": "Kahneman explains that the mind runs a constant check on how easy things feel to process. When something is familiar, clearly written or easy to understand, we experience 'cognitive ease', and that comfortable feeling gets mistaken for truth.\n\nOne result is that repetition alone makes a statement more believable, even when it's false. Hearing a rumour five times doesn't add evidence, but it does make the claim feel familiar. That is why slogans, adverts and forwarded messages work, and why a claim's popularity is a weak reason to believe it.",
+      "apply_it": "When a claim feels obviously true, ask: have I seen evidence for this, or have I just heard it many times?",
+      "quiz": {
+        "question": "According to Kahneman, why can repeated statements feel more true?",
+        "options": [
+          "Repetition usually means they have been fact-checked",
+          "People only repeat things that are accurate",
+          "Hearing something often makes us more sceptical",
+          "Familiarity makes them easy to process, and ease feels like truth"
+        ],
+        "answer": 3,
+        "explanation": "Cognitive ease from familiarity is easily confused with evidence."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--10",
+      "topic": "business",
+      "tags": [
+        "halo-effect",
+        "meetings",
+        "judgement"
+      ],
+      "title": "Gather views separately before discussing, so the first voice doesn't sway all",
+      "body": "The halo effect is our tendency to let one impression colour everything else. If we like someone's confidence, we assume they're also competent and honest. Kahneman describes noticing this when marking students' essays: his reaction to the first answer influenced how he graded the rest, so he changed to grading one question at a time across all students.\n\nHe applies the same idea to groups. In a meeting, the first or loudest speaker can set the direction for everyone. Asking each person to write down their view before discussion keeps their judgements independent, so the group gets the benefit of many minds rather than one.",
+      "apply_it": "At your next team decision, ask everyone to write a short view privately before anyone speaks, then share them.",
+      "quiz": {
+        "question": "What does Kahneman suggest to reduce the halo effect in group discussions?",
+        "options": [
+          "Have people write their views independently before discussing",
+          "Let the most senior person speak first",
+          "Vote by raising hands immediately",
+          "Discuss until everyone agrees with the first speaker"
+        ],
+        "answer": 0,
+        "explanation": "Independent judgements stop early impressions and early speakers from spreading their errors."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--11",
+      "topic": "learning",
+      "tags": [
+        "heuristics",
+        "substitution",
+        "judgement"
+      ],
+      "title": "When a question is hard, your mind quietly answers an easier one",
+      "body": "Kahneman describes a trick the fast mind plays called substitution. Faced with a difficult question, such as 'Is this investment sound?' or 'How happy am I with my life?', we often answer an easier, related one instead: 'Do I like this company?' or 'How do I feel right now?'\n\nThe swap happens without our noticing, so the answer arrives quickly and feels like a response to the real question. Most of the time it's close enough. But on important decisions, the easy question can lead you astray. Spotting the substitution means asking whether you've actually addressed what was asked.",
+      "apply_it": "For one decision you're weighing, write down the real question. Then check: is my gut answer about that question, or about something easier?",
+      "quiz": {
+        "question": "What is 'substitution' in Kahneman's account?",
+        "options": [
+          "Replacing an old habit with a new one",
+          "Choosing a cheaper product instead of an expensive one",
+          "Answering an easier question in place of a hard one without noticing",
+          "Letting a colleague make the decision for you"
+        ],
+        "answer": 2,
+        "explanation": "The fast mind swaps a hard question for an easy one and treats the answer as if it fits the original."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--12",
+      "topic": "psychology",
+      "tags": [
+        "affect-heuristic",
+        "risk",
+        "feelings"
+      ],
+      "title": "If you like something, you'll tend to underrate its risks",
+      "body": "Kahneman discusses research by Paul Slovic on the 'affect heuristic': our feelings about something shape what we believe about it. When people like a technology, a business or an idea, they tend to see its benefits as high and its risks as low. When they dislike it, they see the reverse.\n\nIn reality, benefits and risks are separate questions, and something can be both very useful and quite risky. Letting a warm or cold feeling decide both at once means important trade-offs get missed. Naming the feeling first makes it easier to look at the facts on their own terms.",
+      "apply_it": "Think of something you're enthusiastic about, like a purchase or plan. List its real risks, as if advising a friend.",
+      "quiz": {
+        "question": "What does the affect heuristic predict about something people like?",
+        "options": [
+          "They tend to judge its benefits high and its risks low",
+          "They study its risks more carefully",
+          "They judge both its benefits and risks as low",
+          "Their feelings have no effect on their judgements"
+        ],
+        "answer": 0,
+        "explanation": "Liking something tends to make its benefits look bigger and its risks look smaller."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--13",
+      "topic": "learning",
+      "tags": [
+        "statistics",
+        "small-samples",
+        "evidence"
+      ],
+      "title": "Small samples produce extreme results, so don't read too much into them",
+      "body": "Kahneman warns against what he and Tversky called the 'law of small numbers': our habit of trusting small samples as if they were large ones. Small groups vary a lot by chance, so they produce the most extreme results, both the best and the worst.\n\nHe gives the example of research finding that the best-performing schools were often small, which led to investment in small schools. But the worst-performing schools also tended to be small. Size wasn't causing excellence; small numbers simply swing more. Before concluding that a pattern is real, ask how many cases it's based on.",
+      "apply_it": "Next time a few reviews, results or anecdotes impress you, ask how many cases there are and whether chance alone could explain them.",
+      "quiz": {
+        "question": "Why did small schools appear among both the best and worst performers?",
+        "options": [
+          "Small schools always have better teachers",
+          "Small samples vary more by chance",
+          "Large schools hide their results",
+          "Small schools receive more funding"
+        ],
+        "answer": 1,
+        "explanation": "With fewer students, averages swing more widely, producing extremes at both ends."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--14",
+      "topic": "learning",
+      "tags": [
+        "base-rates",
+        "probability",
+        "stereotypes"
+      ],
+      "title": "Start with how common something is before judging by how well it 'fits'",
+      "body": "Kahneman and Tversky showed that people judge likelihood by resemblance, which they called representativeness. If a description of a person sounds like a typical librarian, we guess librarian, even if there are far more people in other jobs that could fit the same description.\n\nWhat gets ignored is the base rate: how common each possibility is to begin with. A story that fits a stereotype can feel convincing while the numbers point elsewhere. Kahneman's advice is to anchor your judgement on the base rate and then adjust, cautiously, for how strong and reliable the specific evidence really is.",
+      "apply_it": "Before judging a person or situation by how it 'looks', ask: how common is this outcome in general? Start there.",
+      "quiz": {
+        "question": "What do people tend to neglect when judging by resemblance?",
+        "options": [
+          "The details of the description",
+          "Their own first impression",
+          "Whether the description is vivid",
+          "The base rate, or how common each outcome is"
+        ],
+        "answer": 3,
+        "explanation": "Representativeness pulls attention to fit and away from how common each option is."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--15",
+      "topic": "learning",
+      "tags": [
+        "probability",
+        "stories",
+        "conjunction-fallacy"
+      ],
+      "title": "More detail makes a story feel likelier, even though it makes it less likely",
+      "body": "In a famous experiment, Kahneman and Tversky described 'Linda', a socially concerned former philosophy student, and asked which was more probable: that she is a bank teller, or a bank teller who is active in the feminist movement. Most people chose the second, though it can't be more likely than the first, since it adds an extra condition.\n\nThis is the conjunction fallacy. Each added detail makes a story more vivid and plausible, yet every detail is another thing that has to be true. It's worth remembering when forecasts, plans or conspiracy theories become convincing precisely because they are so detailed.",
+      "apply_it": "When a scenario feels convincing because of all its details, list each detail that must be true for it to happen. Does it still seem likely?",
+      "quiz": {
+        "question": "What is the conjunction fallacy?",
+        "options": [
+          "Forgetting details of a story",
+          "Combining two unrelated decisions",
+          "Judging a detailed scenario as more likely than a simpler one it includes",
+          "Believing that rare events never happen"
+        ],
+        "answer": 2,
+        "explanation": "Adding conditions can only lower probability, yet detail makes a scenario feel more plausible."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--16",
+      "topic": "learning",
+      "tags": [
+        "regression-to-the-mean",
+        "feedback",
+        "luck"
+      ],
+      "title": "An unusually good or bad result is often followed by a more ordinary one",
+      "body": "Kahneman recalls teaching flight instructors who said that praising a great landing led to a worse one next time, while shouting at a bad landing led to improvement. He realised they were seeing regression to the mean. Performance varies partly by luck, so an exceptional result in either direction is usually followed by something closer to average, whatever the instructor says.\n\nWe invent causes for this pattern all the time: a star's 'slump', a new manager 'fixing' a bad quarter, a remedy that 'worked' after a bad week. Before crediting or blaming a cause, ask whether things were simply returning to normal.",
+      "apply_it": "Think of a recent change you credited to some action, like a new rule. Could the result simply have been returning to normal after an unusual period?",
+      "quiz": {
+        "question": "Why did the flight instructors wrongly think criticism worked better than praise?",
+        "options": [
+          "Praise genuinely makes pilots worse",
+          "Extreme performances tend to be followed by more average ones anyway",
+          "Criticism always improves performance",
+          "The pilots ignored the instructors"
+        ],
+        "answer": 1,
+        "explanation": "Luck plays a part, so very good or bad landings are naturally followed by more typical ones."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--17",
+      "topic": "learning",
+      "tags": [
+        "hindsight-bias",
+        "outcome-bias",
+        "decisions"
+      ],
+      "title": "Judge a decision by what was known at the time, not by how it turned out",
+      "body": "Kahneman explains that once we know an outcome, we rewrite our memory of what we believed before. Events that surprised us come to seem obvious, the hindsight bias that makes us say 'I knew it all along'.\n\nA close cousin is outcome bias: judging decisions by results rather than by the quality of the thinking. A reckless choice that happened to work gets praised, while a sensible choice that met bad luck gets blamed. This makes people afraid of reasonable risks and too forgiving of lucky gambles. Fair reviews look at what information and options were available when the call was made.",
+      "apply_it": "Before a big decision, write down what you expect and why. Later, compare the outcome with your reasoning, not just the result.",
+      "quiz": {
+        "question": "What is outcome bias?",
+        "options": [
+          "Judging a decision by its result rather than the quality of the reasoning",
+          "Refusing to make decisions until all outcomes are known",
+          "Expecting the worst outcome every time",
+          "Preferring decisions made by groups"
+        ],
+        "answer": 0,
+        "explanation": "Good decisions can end badly and bad ones can end well; the result alone doesn't show which was which."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--18",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "overconfidence",
+        "skill"
+      ],
+      "title": "Feeling skilled at picking winners isn't proof that you are",
+      "body": "Kahneman describes the 'illusion of validity'. As a young army psychologist, he rated soldiers for officer training and felt confident in his predictions, yet follow-up data showed they were barely better than chance. The confidence didn't go away, even after he knew this.\n\nHe sees the same thing in stock picking: when he studied years of results for a group of investment advisers, their rankings from one year to the next were almost unrelated, which suggests luck was doing most of the work. A sense of skill comes from a coherent story, not from a track record. In areas full of uncertainty, confidence is a poor guide to accuracy.",
+      "apply_it": "If you pick investments or make predictions, keep a written record of your calls and check your actual hit rate after a few months.",
+      "quiz": {
+        "question": "What did Kahneman find when he looked at advisers' year-to-year results?",
+        "options": [
+          "The best advisers stayed on top every year",
+          "Advisers with more confidence performed better",
+          "Results were perfectly predictable",
+          "Their rankings barely carried over from one year to the next"
+        ],
+        "answer": 3,
+        "explanation": "Year-to-year consistency was close to zero, a sign that luck rather than skill drove much of the results."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--19",
+      "topic": "business",
+      "tags": [
+        "hiring",
+        "checklists",
+        "interviews"
+      ],
+      "title": "Simple scoring rules often beat expert gut feeling, so use them",
+      "body": "Kahneman draws on Paul Meehl's work showing that simple formulas, combining a few relevant factors, often predict outcomes as well as or better than expert judgement. Experts tend to be inconsistent and get swayed by vivid details.\n\nHe applied this in the army, replacing free-form interviews with a structured one: interviewers rated a handful of traits one at a time, using factual questions, then added their overall impression only at the end. Predictions improved. The lesson for hiring, lending or any repeated judgement is to decide your criteria in advance, score each separately, and let intuition come last rather than first.",
+      "apply_it": "For your next hiring or selection decision, pick four to six criteria in advance, score each candidate on them separately, then form your overall view.",
+      "quiz": {
+        "question": "In Kahneman's structured interview, when did interviewers use their overall intuition?",
+        "options": [
+          "First, before any questions",
+          "Never; intuition was banned completely",
+          "At the end, after scoring each trait separately",
+          "Only when the candidate seemed unusual"
+        ],
+        "answer": 2,
+        "explanation": "Intuition was kept, but only after the disciplined, trait-by-trait scoring."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--20",
+      "topic": "learning",
+      "tags": [
+        "intuition",
+        "expertise",
+        "feedback"
+      ],
+      "title": "Trust gut feelings only where there's real pattern and quick feedback",
+      "body": "Kahneman and the psychologist Gary Klein disagreed about intuition for years, then worked out where they agreed. Expert intuition can be trusted when two conditions hold: the environment is regular enough to have learnable patterns, and the person has had long practice with clear, quick feedback. Firefighters, nurses and chess players can develop real intuition this way.\n\nWhere outcomes are mostly luck, or feedback comes years later, such as long-range forecasts or picking shares, confident hunches are much less reliable. The feeling of certainty is the same in both cases, so you have to judge the setting, not the strength of the feeling.",
+      "apply_it": "Think of an area where you trust your gut. Ask: is it predictable, and have I had lots of quick feedback on my calls there?",
+      "quiz": {
+        "question": "According to Kahneman and Klein, when is intuition most trustworthy?",
+        "options": [
+          "Whenever the person feels very certain",
+          "In regular environments where the person has had long practice with quick feedback",
+          "In unpredictable situations driven by luck",
+          "When there is no time to think at all"
+        ],
+        "answer": 1,
+        "explanation": "Real skill needs learnable patterns and feedback; confidence alone doesn't show it's there."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--21",
+      "topic": "productivity",
+      "tags": [
+        "premortem",
+        "planning",
+        "teams"
+      ],
+      "title": "Before committing, imagine the plan has failed and ask why",
+      "body": "Kahneman recommends a technique from Gary Klein called the premortem. Before a team finalises an important decision, gather the people involved and ask them to imagine it's a year from now: the plan was carried out and turned into a disaster. Each person spends a few minutes writing a brief history of how it went wrong.\n\nThis works because once a group leans towards a plan, doubts become hard to voice. The premortem makes raising problems the task, rather than a sign of disloyalty, and it brings out risks that optimism had hidden.",
+      "apply_it": "Before your next important plan, take five minutes to write: 'It's a year later and this failed. Here's what happened...'",
+      "quiz": {
+        "question": "What does a premortem ask people to do?",
+        "options": [
+          "Celebrate the plan's likely success",
+          "Review a project after it has finished",
+          "Vote on whether to start the plan",
+          "Imagine the plan has already failed and explain why"
+        ],
+        "answer": 3,
+        "explanation": "By assuming failure, people feel free to name risks they'd otherwise keep quiet about."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--22",
+      "topic": "business",
+      "tags": [
+        "optimism",
+        "entrepreneurship",
+        "risk"
+      ],
+      "title": "Optimism keeps you going, but it also makes you underestimate the odds",
+      "body": "Kahneman calls optimism a mixed blessing. Optimistic people tend to be cheerful, persistent and resilient, and much of the world's progress comes from them. But optimism also distorts judgement. Many people starting a business believe their own chances are far better than the typical success rate for ventures like theirs.\n\nPart of the problem is focusing on our own plans and skills while ignoring what competitors are doing, and how much depends on luck. Kahneman doesn't recommend pessimism. He suggests keeping the energy of optimism while checking plans against realistic base rates and preparing for setbacks.",
+      "apply_it": "For a project you're excited about, find out how similar projects usually turn out. Plan for that typical result, not only your best case.",
+      "quiz": {
+        "question": "What is one way Kahneman says optimism can mislead entrepreneurs?",
+        "options": [
+          "They focus on their own plans and overlook competitors and luck",
+          "They give up too easily",
+          "They overestimate their competitors' abilities",
+          "They rely too heavily on statistics"
+        ],
+        "answer": 0,
+        "explanation": "Optimists tend to ignore what others are doing and the role of chance, so they overrate their odds."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--23",
+      "topic": "psychology",
+      "tags": [
+        "prospect-theory",
+        "reference-points",
+        "comparison"
+      ],
+      "title": "We judge outcomes as gains or losses from a reference point, not by totals",
+      "body": "A central idea of prospect theory, which Kahneman developed with Amos Tversky, is that people don't evaluate outcomes by their final wealth or situation. They judge changes relative to a reference point, often what they have now or what they expected.\n\nThat's why the same salary can feel like a win to someone who expected less and a blow to someone who expected more, or who learns a colleague got a bigger raise. Knowing this helps explain many emotional reactions to money and status. It also suggests asking whether the reference point you're using is a sensible one.",
+      "apply_it": "Think of something that disappointed you recently. What reference point were you comparing it with? Would a different one change how you feel?",
+      "quiz": {
+        "question": "In prospect theory, how do people tend to evaluate outcomes?",
+        "options": [
+          "By their total final wealth only",
+          "By how other people react",
+          "As gains or losses relative to a reference point",
+          "By how long the outcome lasts"
+        ],
+        "answer": 2,
+        "explanation": "Outcomes are felt as changes from a reference point, such as current state or expectations."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--24",
+      "topic": "money",
+      "tags": [
+        "risk",
+        "losses",
+        "decision-making"
+      ],
+      "title": "Facing a sure loss, people often take wild gambles to avoid it",
+      "body": "Kahneman and Tversky found that people are usually cautious about gains, preferring a sure thing to a gamble, but often become risk-seeking when every option involves a loss. Given a choice between a certain loss and a gamble that might lose more or might lose nothing, many choose the gamble.\n\nThis helps explain why people double down on losing bets, pour more money into a failing business or refuse a reasonable settlement. The hope of escaping the loss feels better than accepting it. Spotting this pattern can help you cut losses early instead of risking more to avoid admitting them.",
+      "apply_it": "If you're behind and tempted to take a bigger risk to 'get back to even', pause. Would you take that same risk if you weren't behind?",
+      "quiz": {
+        "question": "How do people often behave when all options involve losing?",
+        "options": [
+          "They become extra cautious",
+          "They become more willing to take risky gambles",
+          "They always choose the smallest certain loss",
+          "They stop caring about the outcome"
+        ],
+        "answer": 1,
+        "explanation": "In the domain of losses, people often gamble to avoid accepting a sure loss."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--25",
+      "topic": "money",
+      "tags": [
+        "probability",
+        "insurance",
+        "lotteries"
+      ],
+      "title": "We give tiny chances far more weight than they deserve",
+      "body": "Kahneman describes how people weigh probabilities unevenly. A small chance of something big, like winning a lottery or suffering a rare disaster, gets far more weight than the odds justify. This 'possibility effect' helps sell lottery tickets and some insurance. Meanwhile, moving from almost certain to completely certain feels worth paying a lot for, the 'certainty effect'.\n\nThe result is that we sometimes overpay to remove the last bit of risk, and overpay for a slim chance of a dream outcome. Looking at the actual numbers, and at the cost spread over a year or a lifetime, helps put them in proportion.",
+      "apply_it": "Add up what you spend in a year on lotteries, betting or extended warranties. Compare it with the realistic chance of the payout.",
+      "quiz": {
+        "question": "What is the 'possibility effect'?",
+        "options": [
+          "Assuming every outcome is equally likely",
+          "Ignoring rare events completely",
+          "Preferring possibilities you can't imagine",
+          "Giving small chances far more weight than their odds deserve"
+        ],
+        "answer": 3,
+        "explanation": "A slim chance of a big outcome feels much bigger than it is, which is why lottery tickets sell."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--26",
+      "topic": "productivity",
+      "tags": [
+        "attention",
+        "multitasking",
+        "focus"
+      ],
+      "title": "Your attention is limited, and you can't see what you're not paying attention to",
+      "body": "Kahneman cites the well-known 'invisible gorilla' experiment by Christopher Chabris and Daniel Simons. Viewers asked to count passes in a basketball video often fail to notice a person in a gorilla suit walking through the scene. Many refuse to believe it was there.\n\nThe lesson is that focused attention has a narrow beam. Effortful tasks use up the capacity of the slow mind, so when you're concentrating hard on one thing, others can go unseen. Kahneman notes that drivers tend to stop talking when overtaking on a tricky road. We are not only blind to some things; we are blind to our blindness.",
+      "apply_it": "When you need to concentrate, like driving in traffic or doing careful work, stop other demands such as calls or messages until you're done.",
+      "quiz": {
+        "question": "What does the 'invisible gorilla' experiment show?",
+        "options": [
+          "Focused attention can make us miss obvious things",
+          "People always notice unusual events",
+          "Watching videos improves attention",
+          "Counting improves peripheral vision"
+        ],
+        "answer": 0,
+        "explanation": "When attention is absorbed by one task, even something striking can go unnoticed."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--27",
+      "topic": "money",
+      "tags": [
+        "mental-accounting",
+        "investing",
+        "selling"
+      ],
+      "title": "Money is money: don't let mental 'accounts' drive bad choices",
+      "body": "Kahneman discusses Richard Thaler's idea of mental accounting. We sort money into imaginary accounts, such as savings, holiday money or winnings, and treat each differently, even though money in one is worth exactly the same as in another.\n\nOne costly result is the 'disposition effect'. When investors need cash, many sell a share that has gone up, to close that account as a win, rather than one that has gone down, which would mean admitting a loss. Yet the better choice usually depends on future prospects, not on what you paid. Thinking about your money as one whole helps you avoid decisions driven by keeping score.",
+      "apply_it": "Look at something you're holding on to, such as shares or stock in a shop. Would you buy it at today's price? If not, why keep it?",
+      "quiz": {
+        "question": "What is the 'disposition effect'?",
+        "options": [
+          "Buying only shares that have fallen",
+          "Spending windfalls faster than wages",
+          "Preferring to sell winners rather than losers to avoid admitting a loss",
+          "Saving more after a pay rise"
+        ],
+        "answer": 2,
+        "explanation": "Investors like closing a mental account as a gain and avoid realising losses, even when it's the wrong move."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--28",
+      "topic": "money",
+      "tags": [
+        "investing",
+        "framing",
+        "risk"
+      ],
+      "title": "See each risky choice as one of many, and check results less often",
+      "body": "Kahneman suggests that loss aversion is made worse by 'narrow framing', treating each risky decision on its own. A single small bet with good odds can feel too painful to accept, yet a lifetime of similar bets would almost certainly come out ahead.\n\nHe recommends 'broad framing': adopting a policy for a whole class of decisions, such as always taking reasonable small risks with favourable odds, and accepting that you'll win some and lose some. For long-term investors, checking prices less often helps too, because frequent looks show more small losses, which hurt and tempt you to make poor trades.",
+      "apply_it": "Decide a simple rule for one recurring choice, like how often you'll check your savings or investments, and stick with it for three months.",
+      "quiz": {
+        "question": "What is 'broad framing'?",
+        "options": [
+          "Making every decision as quickly as possible",
+          "Treating similar risky decisions as a group under one policy",
+          "Asking many people for advice",
+          "Avoiding all risk"
+        ],
+        "answer": 1,
+        "explanation": "Seeing choices as a portfolio reduces the sting of individual losses and leads to better overall decisions."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--29",
+      "topic": "psychology",
+      "tags": [
+        "framing",
+        "defaults",
+        "communication"
+      ],
+      "title": "How a choice is worded or set by default can change the decision",
+      "body": "Kahneman shows that people, including experts, respond differently to the same facts depending on how they're presented. Doctors were more willing to recommend surgery when told it had a 90% one-month survival rate than when told it had 10% mortality, though these mean the same thing.\n\nDefaults are another powerful frame. Kahneman points out that countries where people are organ donors unless they opt out have far higher donation rates than countries where people must opt in. Most people stick with whatever option is already chosen. Whenever you face a choice, try restating it the other way, and ask who set the default.",
+      "apply_it": "Take one choice you face, like a phone plan or a pension option. Restate it another way (losses instead of gains) and see if your preference changes.",
+      "quiz": {
+        "question": "Why did doctors respond differently to '90% survival' and '10% mortality'?",
+        "options": [
+          "The framing changed their reaction, even though the facts were identical",
+          "The two statements described different operations",
+          "Mortality figures are more reliable",
+          "Survival rates only apply to young patients"
+        ],
+        "answer": 0,
+        "explanation": "Equivalent facts can feel very different depending on whether they stress survival or death."
+      }
+    },
+    {
+      "id": "thinking-fast-and-slow-kahneman--30",
+      "topic": "mindfulness",
+      "tags": [
+        "focusing-illusion",
+        "happiness",
+        "attention"
+      ],
+      "title": "Whatever you're thinking about seems more important than it really is",
+      "body": "Kahneman describes the 'focusing illusion': when we think about one factor in life, such as income, climate or a new car, we greatly overestimate how much it affects overall happiness. He cites research in which people expected Californians to be happier because of the weather, though their life satisfaction wasn't higher.\n\nThe reason is that we adapt. After a while, most things fade into the background and we stop thinking about them, so they matter less to how we feel day to day. What keeps affecting us are things that keep drawing our attention, such as time with people we like.",
+      "apply_it": "Before a purchase or move you expect to make you happier, ask: how often will I actually notice this once the novelty wears off?",
+      "quiz": {
+        "question": "What is the focusing illusion?",
+        "options": [
+          "Being unable to focus on one task",
+          "Believing happiness can't change",
+          "Overestimating how much a factor matters to happiness while you think about it",
+          "Paying too much attention to other people"
+        ],
+        "answer": 2,
+        "explanation": "Thinking about something magnifies its importance, but in daily life we adapt and notice it less."
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { CardList } from "@/components/CardPreview";
+import { Unavailable } from "@/components/Unavailable";
+import { excerpt } from "@/lib/content";
+import { getPublicStash, loadOr } from "@/lib/server-api";
+
+export const revalidate = 60; // short: an owner can make the stash private again
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const { data } = await loadOr(() => getPublicStash(id), null);
+  if (!data) return { title: "Stash not found", robots: { index: false } };
+  const { stash, cards } = data;
+  const title = `${stash.name} · a stash by ${stash.owner.display_name}`;
+  const description =
+    stash.description ||
+    (cards.length
+      ? `${cards.length} ${cards.length === 1 ? "idea" : "ideas"} including “${cards[0].title}”. ${excerpt(cards[0].body, 100)}`
+      : `A stash of ideas by ${stash.owner.display_name} on Reborn.`);
+  const url = `/s/${stash.id}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { siteName: "Reborn", type: "website", title, description, url },
+    twitter: { card: "summary", title, description },
+  };
+}
+
+export default async function PublicStashPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const { data, ok } = await loadOr(() => getPublicStash(id), null);
+  if (!ok) return <Unavailable what="this stash" />;
+  if (!data) notFound();
+  const { stash, cards } = data;
+
+  return (
+    <div>
+      <header className="mx-auto max-w-read text-center">
+        <p className="eyebrow">Stash</p>
+        <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-balance">{stash.name}</h1>
+        {stash.description ? <p className="mt-2 text-lg text-muted">{stash.description}</p> : null}
+        <p className="mt-3 text-sm text-muted">
+          By{" "}
+          <Link href={`/u/${stash.owner.handle}`} className="link">
+            {stash.owner.display_name}
+          </Link>{" "}
+          · {stash.card_count} {stash.card_count === 1 ? "idea" : "ideas"}
+        </p>
+      </header>
+      <section aria-label="Ideas in this stash" className="mt-10">
+        {cards.length ? <CardList cards={cards} /> : <p className="text-center text-muted">This stash is empty.</p>}
+      </section>
+    </div>
+  );
+}

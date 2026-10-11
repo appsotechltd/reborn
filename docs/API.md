@@ -256,6 +256,7 @@ A circle is a discussion group for one book (source), up to 50 members.
 | `GET /v1/circles` | optional | `?source=&mine=1&limit=30` | `{"circles":[Circle]}`. `mine` needs sign-in |
 | `POST /v1/circles` | required | `{"source_id","name"(1-80),"description"?(≤500)}` | `Circle` (201). You become the owner |
 | `GET /v1/circles/{id}` | optional | | `Circle` |
+| `GET /v1/circles/{id}/members` | optional | | `{"members":[Profile + {"role","joined_at"}]}`, owner first |
 | `POST /v1/circles/{id}/join` | required | | `Circle`. `409 circle_full` |
 | `POST /v1/circles/{id}/leave` | required | | `204`. The oldest member takes over from a leaving owner; an empty circle is deleted |
 | `GET /v1/circles/{id}/messages` | member | `?before=<RFC 3339>&limit=50` | `{"messages":[CircleMessage]}`, oldest first |

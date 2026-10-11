@@ -109,7 +109,17 @@ export interface User {
   bio?: string;
   role: Role;
   topics: string[];
+  /** IANA timezone, e.g. "Europe/London". */
+  timezone?: string;
+  /** Ideas a day, 1-50. */
+  daily_goal?: number;
+  notify?: Partial<Record<NotifyKind, boolean>>;
+  referral_code?: string;
+  premium?: boolean;
+  premium_until?: string | null;
 }
+
+export type NotifyKind = "daily" | "replies" | "follows" | "circles";
 
 export interface AuthResponse {
   token: string;
@@ -121,6 +131,8 @@ export interface Stash {
   name: string;
   description: string;
   card_count: number;
+  /** Public stashes show on the owner's profile and at /s/{id}. */
+  is_public?: boolean;
   created_at: string;
 }
 
@@ -318,4 +330,127 @@ export interface Gift {
   status: "pending" | "paid" | "refunded" | string;
   created_at: string;
   paid_at: string | null;
+}
+
+// --- Engagement: notifications, streaks, referrals, blocks, discover, circles, premium, admin ---
+
+export type NotificationKind = "daily" | "reply" | "follow" | "circle" | "reward";
+
+export interface AppNotification {
+  id: string;
+  kind: NotificationKind | string;
+  text: string;
+  actor: PublicUser | null;
+  post_id: string | null;
+  comment_id: string | null;
+  circle_id: string | null;
+  read_at: string | null;
+  created_at: string;
+}
+
+export interface NotificationsResponse {
+  notifications: AppNotification[];
+  unread: number;
+}
+
+export interface Streak {
+  current: number;
+  longest: number;
+  goal: number;
+  today: number;
+  goal_met: boolean;
+  last_days: { day: string; ideas: number }[];
+}
+
+export interface Referrals {
+  code: string;
+  link: string;
+  invited: number;
+  rewarded: number;
+  reward_days: number;
+}
+
+export type BlockKind = "block" | "mute";
+
+export interface BlockedUser extends PublicUser {
+  kind: BlockKind;
+}
+
+export interface PopularSource extends SourceSummary {
+  followers: number;
+}
+
+export interface PopularAuthor {
+  name: string;
+  followers: number;
+  sources: number;
+}
+
+export interface Circle {
+  id: string;
+  name: string;
+  description: string;
+  source: { id: string; title: string };
+  owner: PublicUser | null;
+  members: number;
+  is_member: boolean;
+  role: "owner" | "member" | null;
+  created_at: string;
+}
+
+export interface CircleMember extends PublicUser {
+  role: "owner" | "member" | string;
+  joined_at: string;
+}
+
+export interface CircleMessage {
+  id: string;
+  circle_id: string;
+  body: string;
+  post_id: string | null;
+  author: PublicUser;
+  created_at: string;
+}
+
+export interface DiscoverResponse {
+  trending: Post[];
+  new: Post[];
+  books: PopularSource[];
+  authors: PopularAuthor[];
+  circles: Circle[];
+}
+
+export interface PublicStash extends Stash {
+  owner: PublicUser;
+}
+
+export interface PremiumPlan {
+  id: "monthly" | "yearly" | string;
+  name: string;
+  amount_cents: number;
+  currency: string;
+  interval: string;
+  product_id: string;
+}
+
+export interface PremiumStatus {
+  plans: PremiumPlan[];
+  providers: { stripe: boolean; apple: boolean; google: boolean };
+  premium: boolean;
+  premium_until: string | null;
+  subscription: { provider: string; plan: string; status: string; expires_at: string } | null;
+}
+
+export interface AdminStats {
+  users: { total: number; new_7d: number; new_30d: number; dau: number; wau: number; mau: number; premium: number };
+  retention: { cohort: number; d1: number; d7: number };
+  engagement: { ideas_read_7d: number; reactions_7d: number; comments_7d: number; favorites_7d: number; shares_7d: number };
+  revenue: {
+    gifts_30d: { provider: string; currency: string; amount_cents: number; count: number }[] | null;
+    subscriptions: { provider: string; count: number }[] | null;
+  };
+  moderation: { pending_contributions: number; reported_comments: number };
+  content: { posts: number; sources: number };
+  daily: { day: string; signups: number; active: number }[] | null;
+  top_posts: { id: string; title: string; score: number }[] | null;
 }

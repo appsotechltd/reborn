@@ -78,7 +78,10 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 	if c.Tags == nil {
 		c.Tags = []string{}
 	}
-	if c.Health {
+	if content.SupportTopics[c.Topic] {
+		d := content.SupportNote
+		c.Disclaimer = &d
+	} else if c.Health {
 		d := content.HealthDisclaimer
 		c.Disclaimer = &d
 	}

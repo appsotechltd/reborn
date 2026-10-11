@@ -1,0 +1,712 @@
+{
+  "source": {
+    "id": "seven-principles-marriage-gottman",
+    "title": "The Seven Principles for Making Marriage Work",
+    "authors": [
+      "John M. Gottman",
+      "Nan Silver"
+    ],
+    "kind": "book",
+    "url": "https://www.penguinrandomhouse.com/books/248395/the-seven-principles-for-making-marriage-work-by-john-gottman-phd-and-nan-silver/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of The Seven Principles for Making Marriage Work by John M. Gottman and Nan Silver (1999; revised 2015). Not affiliated with or endorsed by the authors or publisher.",
+    "publisher": "Harmony Books",
+    "year": 1999,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. Ideas cross-checked against publisher and reputable summary pages. Gottman's research mostly studied married couples; cards phrase the ideas for any committed couple."
+  },
+  "cards": [
+    {
+      "id": "seven-principles-marriage-gottman--01",
+      "topic": "dating-marriage",
+      "tags": [
+        "friendship",
+        "marriage",
+        "connection"
+      ],
+      "title": "A lasting marriage rests on deep friendship",
+      "body": "Gottman's central claim is that happy couples are not the ones who never fight or who have perfect communication skills. They are good friends. They know each other well, like each other, and enjoy each other's company in ordinary moments.\n\nThat friendship creates a store of goodwill. When conflict comes, it softens the blow: a partner who feels liked and respected is more willing to listen, forgive a sharp word, and keep working on the problem together.",
+      "apply_it": "Today, do one thing purely as a friend to your partner: ask about their day and really listen, or share a joke you know they'll enjoy.",
+      "quiz": {
+        "question": "According to Gottman, what lies at the heart of a happy marriage?",
+        "options": [
+          "A deep friendship and mutual respect",
+          "Never arguing",
+          "Matching personalities",
+          "Equal incomes"
+        ],
+        "answer": 0,
+        "explanation": "Gottman finds that friendship, not the absence of conflict, protects couples when problems arise."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--02",
+      "topic": "dating-marriage",
+      "tags": [
+        "communication",
+        "myths",
+        "conflict"
+      ],
+      "title": "Better listening techniques alone won't save a relationship",
+      "body": "Gottman challenges a popular idea: that couples mainly need to learn 'active listening', repeating back each other's words without judgement during a fight. In his observations, even very happy couples rarely did this when upset, and asking hurt people to calmly validate an attack is a lot to expect.\n\nWhat made the difference instead was the friendship and positivity underneath. Techniques can help, but they work best when they sit on top of real fondness and respect, not in place of it.",
+      "apply_it": "Next time a talk gets tense, ask yourself: am I treating my partner as a friend right now, or as an opponent?",
+      "quiz": {
+        "question": "What does Gottman say about active-listening techniques during conflict?",
+        "options": [
+          "They are the single key to a happy marriage",
+          "They are harmful and should be avoided",
+          "Happy couples rarely used them, so they aren't the main answer",
+          "Only men need to learn them"
+        ],
+        "answer": 2,
+        "explanation": "He observed that happy couples seldom used formal active listening; friendship mattered more."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--03",
+      "topic": "dating-marriage",
+      "tags": [
+        "conflict",
+        "start-up",
+        "communication"
+      ],
+      "title": "The first few minutes often decide how an argument ends",
+      "body": "Gottman calls it a 'harsh start-up' when a discussion opens with criticism, sarcasm or blame. In his research, the way a conflict conversation began strongly predicted how it would end. A hostile opening usually led to a hostile finish, no matter what was said in between.\n\nThe lesson is simple but powerful: if you want a calm, useful conversation, the opening line matters most. Starting softly gives your partner room to hear you instead of defending themselves.",
+      "apply_it": "Before raising a problem, write your opening sentence down first and remove any blame or sarcasm from it.",
+      "quiz": {
+        "question": "What does a 'harsh start-up' tend to predict?",
+        "options": [
+          "A quick and fair compromise",
+          "Nothing; openings don't matter",
+          "A stronger friendship",
+          "A conversation that ends badly"
+        ],
+        "answer": 3,
+        "explanation": "Gottman found that discussions opening harshly usually end negatively."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--04",
+      "topic": "dating-marriage",
+      "tags": [
+        "four-horsemen",
+        "conflict",
+        "repair"
+      ],
+      "title": "Know the Four Horsemen and the antidote to each",
+      "body": "Gottman names four habits that predict serious trouble: criticism, contempt, defensiveness and stonewalling. He calls them the Four Horsemen.\n\nEach has an antidote. Instead of criticism, raise a complaint about a specific behaviour without attacking character. Instead of contempt, build a habit of noticing and saying what you appreciate. Instead of defensiveness, accept some responsibility, even a small part. Instead of stonewalling, take a break to calm down and then come back. Knowing the pattern lets you catch it early and swap in the better move.",
+      "apply_it": "Think of your last argument. Which horseman showed up from you, and what would its antidote have sounded like?",
+      "quiz": {
+        "question": "Which is the antidote Gottman pairs with defensiveness?",
+        "options": [
+          "Giving the silent treatment",
+          "Accepting some responsibility for the problem",
+          "Listing your partner's past mistakes",
+          "Changing the subject"
+        ],
+        "answer": 1,
+        "explanation": "Taking responsibility for even part of the problem calms things instead of escalating them."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--05",
+      "topic": "dating-marriage",
+      "tags": [
+        "flooding",
+        "stonewalling",
+        "calm"
+      ],
+      "title": "Stop fighting when you're flooded, and come back calmer",
+      "body": "Gottman describes 'flooding': feeling so overwhelmed during a fight that your body goes into alarm. Your heart races, you can't take in what your partner says, and you want only to attack or escape. Stonewalling often follows.\n\nHis advice is to recognise the signs and agree to pause. A break of at least about twenty minutes, spent doing something soothing rather than rehearsing your grievances, lets your body settle. Then return to the conversation. Pausing on purpose is very different from storming off.",
+      "apply_it": "Agree with your partner on a signal word that means 'I need a break; I'll come back in 30 minutes'.",
+      "quiz": {
+        "question": "What does Gottman recommend doing during a break from a flooded argument?",
+        "options": [
+          "Doing something calming and not replaying the fight",
+          "Planning your best counter-arguments",
+          "Calling friends to take your side",
+          "Leaving without saying when you'll return"
+        ],
+        "answer": 0,
+        "explanation": "The break only helps if you actually calm down instead of stoking the anger."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--06",
+      "topic": "dating-marriage",
+      "tags": [
+        "repair",
+        "conflict",
+        "humour"
+      ],
+      "title": "Learn to make, and accept, repair attempts",
+      "body": "A repair attempt is any move that stops a fight from spiralling: a joke, a touch, 'Let me try that again', 'I see your point', or 'Can we take a break?'. Gottman sees successful repair as one of the clearest signs of a healthy couple.\n\nThe key is not only making repair attempts but noticing and accepting them, even when they are clumsy or come in the middle of anger. In struggling relationships, repairs are often missed or rejected, so small fights become big ones.",
+      "apply_it": "Write down two phrases you could use to repair mid-argument, and tell your partner to treat them as a white flag.",
+      "quiz": {
+        "question": "In Gottman's view, what makes repair attempts work?",
+        "options": [
+          "Making them perfectly worded",
+          "Only using them after the fight ends",
+          "The partner noticing and accepting them",
+          "Avoiding humour"
+        ],
+        "answer": 2,
+        "explanation": "A repair attempt only works if the other partner recognises and accepts it."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--07",
+      "topic": "dating-marriage",
+      "tags": [
+        "memories",
+        "warning-signs",
+        "marriage"
+      ],
+      "title": "When the past gets rewritten negatively, the relationship needs care",
+      "body": "Gottman noticed that in deeply troubled marriages, couples tended to retell their shared history in a gloomy way. They forgot or played down the happy early days and remembered mainly disappointments.\n\nIn contrast, couples who described their early days with warmth and pride were usually doing well. If you notice that you can no longer recall good times with your partner, treat it as a sign to invest in the friendship again, not as proof that it was never good.",
+      "apply_it": "Tell your partner the story of a happy early memory you share and ask them to add their version.",
+      "quiz": {
+        "question": "What does Gottman say about how unhappy couples remember their past?",
+        "options": [
+          "They remember it more fondly than it was",
+          "They don't talk about it at all",
+          "Their memories are always accurate",
+          "They tend to recall it mainly negatively"
+        ],
+        "answer": 3,
+        "explanation": "Negative rewriting of shared history is a sign that the relationship is in trouble."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--08",
+      "topic": "dating-marriage",
+      "tags": [
+        "love-maps",
+        "friendship",
+        "curiosity"
+      ],
+      "title": "Keep an up-to-date map of your partner's world",
+      "body": "Gottman's first principle is to build 'love maps': detailed knowledge of your partner's inner world. That means their current worries, friends and rivals at work, hopes, tastes and the events coming up in their life.\n\nCouples with rich love maps cope better with big changes, such as a new baby or job loss, because they keep track of how each other is changing. A love map is never finished, so the habit is to keep asking.",
+      "apply_it": "Ask your partner: 'What's worrying you most this week?' and 'What are you looking forward to?'",
+      "quiz": {
+        "question": "What is a 'love map' in Gottman's language?",
+        "options": [
+          "A list of romantic places to visit",
+          "Detailed knowledge of your partner's inner world",
+          "A plan for your wedding",
+          "A record of past arguments"
+        ],
+        "answer": 1,
+        "explanation": "Love maps are your knowledge of your partner's worries, hopes, friends and history."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--09",
+      "topic": "dating-marriage",
+      "tags": [
+        "love-maps",
+        "questions",
+        "listening"
+      ],
+      "title": "Interview your partner like a curious reporter",
+      "body": "To build love maps, Gottman suggests asking open questions the way an interested journalist would: about stresses, friends, dreams, important memories and how your partner wants to grow. The aim is to understand, not to judge, correct or give advice.\n\nHe also offers question games and self-reflection exercises that partners answer separately and then share. The effort pays off because feeling known is one of the deepest forms of feeling loved.",
+      "apply_it": "Pick three open questions (e.g. 'Who has helped you most in life?') and ask them over dinner this week.",
+      "quiz": {
+        "question": "When building love maps, what should you avoid while your partner answers?",
+        "options": [
+          "Judging or offering quick advice",
+          "Asking follow-up questions",
+          "Remembering what they said",
+          "Sharing your own answers later"
+        ],
+        "answer": 0,
+        "explanation": "The goal is understanding, so judgement and advice get in the way."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--10",
+      "topic": "dating-marriage",
+      "tags": [
+        "appreciation",
+        "respect",
+        "contempt"
+      ],
+      "title": "Nurture fondness and admiration on purpose",
+      "body": "Gottman's second principle is to keep alive the fondness and admiration you feel for your partner. Even in strained relationships, he finds, these feelings often survive under the surface and can be revived.\n\nRemembering why you chose each other, and noticing their good qualities today, is the strongest protection against contempt. A person who feels admired is far more willing to hear a complaint and work things out.",
+      "apply_it": "List three qualities you admire in your partner, and tell them one of them today with a specific example.",
+      "quiz": {
+        "question": "According to Gottman, fondness and admiration protect most strongly against which horseman?",
+        "options": [
+          "Flooding",
+          "Love maps",
+          "Contempt",
+          "Compromise"
+        ],
+        "answer": 2,
+        "explanation": "Admiration is the opposite of the scorn at the core of contempt."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--11",
+      "topic": "dating-marriage",
+      "tags": [
+        "bids",
+        "turning-toward",
+        "daily-life"
+      ],
+      "title": "Small bids for attention matter more than grand gestures",
+      "body": "Gottman says partners constantly make 'bids' for connection: a comment about the news, a sigh, a request for help, a shared joke. Each time, the other can turn toward the bid (respond with interest), turn away (ignore it) or turn against it (respond with irritation).\n\nIn his research, couples who stayed together turned toward each other's bids far more often. Romance is built less on expensive dinners than on the many tiny moments when someone notices you and responds.",
+      "apply_it": "Today, notice your partner's small comments and sighs, and respond to each with real attention.",
+      "quiz": {
+        "question": "Which is an example of 'turning toward' a partner's bid?",
+        "options": [
+          "Looking at your phone while they talk",
+          "Saying 'Not now, you're always interrupting'",
+          "Changing the subject to your own news",
+          "Putting down what you're doing to respond with interest"
+        ],
+        "answer": 3,
+        "explanation": "Turning toward means engaging with the bid instead of ignoring or rejecting it."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--12",
+      "topic": "dating-marriage",
+      "tags": [
+        "emotional-bank-account",
+        "goodwill",
+        "turning-toward"
+      ],
+      "title": "Every small kindness is a deposit in your emotional bank account",
+      "body": "Gottman likens turning toward your partner to saving money. Each attentive response, kind word or shared moment adds to an emotional bank account.\n\nThat balance matters when hard times come. A couple with plenty saved can absorb a bad week, a harsh word or a stressful event without assuming the worst of each other. A couple whose account is empty reads every slip as proof of bad intentions.",
+      "apply_it": "Do three small 'deposits' today: a thank-you, a message during the day, and five minutes of undistracted conversation.",
+      "quiz": {
+        "question": "Why does Gottman think the 'emotional bank account' matters?",
+        "options": [
+          "It decides who controls the household money",
+          "Savings of goodwill help couples absorb hard times",
+          "It replaces the need to talk about problems",
+          "It only matters in the first year"
+        ],
+        "answer": 1,
+        "explanation": "A healthy balance of goodwill helps partners give each other the benefit of the doubt."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--13",
+      "topic": "dating-marriage",
+      "tags": [
+        "positive-sentiment",
+        "goodwill",
+        "perception"
+      ],
+      "title": "Goodwill makes you read your partner's mistakes generously",
+      "body": "Gottman describes a state he calls 'positive sentiment override': when a relationship is going well, you tend to interpret your partner's neutral or even irritable moments kindly. They're tired, not cruel.\n\nWhen a relationship is struggling, the opposite happens and even neutral comments sound like attacks. He argues you can't simply decide to think positively; the generous lens comes from the friendship built through love maps, admiration and turning toward each other.",
+      "apply_it": "Next time your partner snaps, pause and list two non-hostile reasons they might be acting that way.",
+      "quiz": {
+        "question": "Where does 'positive sentiment override' come from, according to Gottman?",
+        "options": [
+          "A strong underlying friendship",
+          "Forcing yourself to think positive thoughts",
+          "Avoiding all disagreements",
+          "Agreeing with everything your partner says"
+        ],
+        "answer": 0,
+        "explanation": "The generous lens grows out of the friendship couples build day to day."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--14",
+      "topic": "dating-marriage",
+      "tags": [
+        "stress",
+        "support",
+        "listening"
+      ],
+      "title": "Have a daily stress-reducing conversation",
+      "body": "Gottman recommends a regular conversation, around twenty minutes, about stresses from outside the relationship: work, family, money worries, friends. Partners take turns talking and listening.\n\nThe listener's job is to show understanding and be on their partner's side, not to rush to advice or defend the boss. Feeling that your partner is your ally against outside pressure keeps those pressures from spilling into the relationship.",
+      "apply_it": "Tonight, ask 'What was the hardest part of your day?' and listen for 20 minutes without fixing or judging.",
+      "quiz": {
+        "question": "In the stress-reducing conversation, what is the listener mainly supposed to do?",
+        "options": [
+          "Give fast solutions",
+          "Defend the people causing stress",
+          "Show understanding and take their partner's side",
+          "Talk about their own day instead"
+        ],
+        "answer": 2,
+        "explanation": "The point is to feel supported, so empathy comes before advice."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--15",
+      "topic": "dating-marriage",
+      "tags": [
+        "influence",
+        "respect",
+        "teamwork"
+      ],
+      "title": "Let your partner influence you",
+      "body": "Gottman's fourth principle is accepting influence: taking your partner's opinions and feelings seriously when making decisions, and being willing to change your mind. He found this was especially important for husbands, since men in his studies were less likely than women to do it, but the principle applies to every partner.\n\nWhen one person refuses to share power, the other feels unheard and conflicts escalate. Couples who act as a team, looking for common ground, are much more stable.",
+      "apply_it": "Before your next decision as a couple, ask 'What do you think we should do?' and look for something in their answer you can agree with.",
+      "quiz": {
+        "question": "What does 'accepting influence' mean in Gottman's work?",
+        "options": [
+          "Giving in to every demand",
+          "Avoiding decisions altogether",
+          "Asking friends to decide for you",
+          "Letting your partner's views genuinely shape decisions"
+        ],
+        "answer": 3,
+        "explanation": "It means sharing power and being open to persuasion, not simply surrendering."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--16",
+      "topic": "dating-marriage",
+      "tags": [
+        "conflict",
+        "perpetual-problems",
+        "acceptance"
+      ],
+      "title": "Separate solvable problems from perpetual ones",
+      "body": "Gottman divides couples' conflicts into two kinds. Solvable problems are situational and can be settled, such as who does the school run. Perpetual problems come from lasting differences in personality or values, such as one partner's need for order and the other's spontaneity.\n\nBy his estimate, the large majority of couples' conflicts, around 69 percent, are perpetual. Knowing which kind you're facing saves a lot of frustration: one needs a solution, the other needs ongoing dialogue and acceptance.",
+      "apply_it": "Sort your recurring disagreements into two lists: ones that could be settled, and ones rooted in who you each are.",
+      "quiz": {
+        "question": "What does Gottman say about most conflicts in a relationship?",
+        "options": [
+          "They can all be solved with the right technique",
+          "Most are perpetual differences that need managing, not solving",
+          "They are caused by affairs",
+          "They disappear after the first year"
+        ],
+        "answer": 1,
+        "explanation": "He estimates about two-thirds of conflicts are perpetual and must be lived with skilfully."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--17",
+      "topic": "dating-marriage",
+      "tags": [
+        "start-up",
+        "complaints",
+        "communication"
+      ],
+      "title": "Soften how you raise a complaint",
+      "body": "For solvable problems, Gottman's first step is a softened start-up. In practice that means: talk about yourself rather than accusing ('I'm feeling...'), describe what is happening without judging, say clearly what you need, and be polite and appreciative.\n\nFor example, 'I'm stressed by the dishes piling up; could we agree on a plan?' invites teamwork. 'You never do anything around here' invites a fight. Same problem, very different results.",
+      "apply_it": "Rewrite one recent complaint using the pattern: 'I feel... about... and I need...'",
+      "quiz": {
+        "question": "Which opening is a 'softened start-up'?",
+        "options": [
+          "'I'm worried about our spending; can we look at it together?'",
+          "'You're so lazy, as usual.'",
+          "'Why do you always ruin things?'",
+          "'Forget it, I'll do everything myself.'"
+        ],
+        "answer": 0,
+        "explanation": "It describes a feeling and a need without blaming the partner's character."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--18",
+      "topic": "dating-marriage",
+      "tags": [
+        "compromise",
+        "teamwork",
+        "conflict"
+      ],
+      "title": "Compromise starts with accepting influence",
+      "body": "Gottman points out that real compromise isn't possible while either partner refuses to budge. Once both are open to being influenced, you can look for common ground.\n\nA helpful approach is for each person to identify the small core they truly can't give up, and the much larger area where they are flexible. Most of the agreement happens in the flexible zone. Neither person gets everything, but both feel respected.",
+      "apply_it": "On a current disagreement, each write down your one non-negotiable and three things you could be flexible about, then compare.",
+      "quiz": {
+        "question": "What helps couples find compromise, according to Gottman?",
+        "options": [
+          "Each partner refusing to change",
+          "Letting the louder partner decide",
+          "Knowing your small core needs and your wider areas of flexibility",
+          "Avoiding the topic entirely"
+        ],
+        "answer": 2,
+        "explanation": "Separating core needs from flexible areas makes common ground easier to find."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--19",
+      "topic": "dating-marriage",
+      "tags": [
+        "acceptance",
+        "tolerance",
+        "flaws"
+      ],
+      "title": "Be tolerant of each other's faults",
+      "body": "Gottman lists tolerance of each other's flaws as part of solving problems. Many conflicts can't be fixed until each person stops waiting for the other to become someone else.\n\nAccepting a partner's quirks doesn't mean accepting mistreatment. It means recognising that everyone has irritating habits, including you, and that you can still love a person while disliking a trait. Feeling accepted often makes people more willing to change.",
+      "apply_it": "Name one harmless habit of your partner's that annoys you, and decide to let it go for a week.",
+      "quiz": {
+        "question": "How does Gottman see tolerance of a partner's flaws?",
+        "options": [
+          "As accepting mistreatment",
+          "As a way of giving up on the relationship",
+          "As unnecessary if you communicate well",
+          "As a key step in solving problems together"
+        ],
+        "answer": 3,
+        "explanation": "Acceptance of everyday faults lowers defensiveness and makes problem-solving possible."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--20",
+      "topic": "dating-marriage",
+      "tags": [
+        "gridlock",
+        "dreams",
+        "perpetual-problems"
+      ],
+      "title": "Gridlock often hides an unspoken dream",
+      "body": "When a perpetual problem becomes gridlocked, with the same painful fight repeating, Gottman argues there is usually a deeper dream behind each position. A fight about money may really be about one person's dream of security and another's dream of freedom or adventure.\n\nUntil those dreams are named and respected, neither partner can give ground, because it feels like giving up part of themselves.",
+      "apply_it": "For your most repeated fight, ask yourself: what hope or value of mine is behind my position?",
+      "quiz": {
+        "question": "According to Gottman, what often lies beneath a gridlocked conflict?",
+        "options": [
+          "A lack of money",
+          "Unspoken dreams or values on each side",
+          "Poor memory",
+          "Too much free time"
+        ],
+        "answer": 1,
+        "explanation": "Gridlock tends to protect deeper dreams that haven't been understood."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--21",
+      "topic": "dating-marriage",
+      "tags": [
+        "perpetual-problems",
+        "dialogue",
+        "acceptance"
+      ],
+      "title": "Aim for dialogue, not victory, on lasting differences",
+      "body": "For perpetual problems, Gottman's goal is not to solve them but to move from gridlock to dialogue. Each partner explains the story and dream behind their position while the other listens, asks questions and tries to understand, without persuading.\n\nOnce both feel understood, couples can often find a temporary arrangement and even joke about the issue. Happy couples still have these differences; they just talk about them without hurting each other.",
+      "apply_it": "Take turns: each spend ten minutes explaining why your side of a recurring issue matters so much to you, while the other only asks questions.",
+      "quiz": {
+        "question": "What is Gottman's goal for perpetual problems?",
+        "options": [
+          "To move from painful gridlock to ongoing respectful dialogue",
+          "To make one partner give up",
+          "To solve them completely",
+          "To stop discussing them forever"
+        ],
+        "answer": 0,
+        "explanation": "Lasting differences are managed through dialogue, not eliminated."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--22",
+      "topic": "dating-marriage",
+      "tags": [
+        "shared-meaning",
+        "values",
+        "purpose"
+      ],
+      "title": "Create shared meaning together",
+      "body": "Gottman's seventh principle goes beyond managing conflict. Strong couples build a shared inner life: a sense of what their family stands for, what they want their life together to mean, and the values they want to pass on.\n\nThis shared meaning doesn't mean agreeing on everything. It means talking about your deeper beliefs and goals and weaving them together, so the relationship feels like a joint project with a purpose.",
+      "apply_it": "Ask each other: 'What do we want our home to feel like?' and write down three words you both agree on.",
+      "quiz": {
+        "question": "What does Gottman's principle of 'shared meaning' involve?",
+        "options": [
+          "Agreeing on every opinion",
+          "Doing everything together",
+          "Building a shared sense of purpose, values and goals",
+          "Avoiding talk about beliefs"
+        ],
+        "answer": 2,
+        "explanation": "It means weaving your values and goals into a joint sense of purpose."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--23",
+      "topic": "dating-marriage",
+      "tags": [
+        "rituals",
+        "shared-meaning",
+        "habits"
+      ],
+      "title": "Build rituals of connection",
+      "body": "Gottman encourages couples to create rituals: regular, meaningful habits that belong to them. Examples include how you greet each other, a weekly meal together, how birthdays or religious holidays are marked, or a bedtime chat.\n\nRituals give a relationship rhythm and identity. They guarantee connection even in busy seasons, and they show children what the family values.",
+      "apply_it": "Pick one ritual to start this month, such as a Sunday walk or a phone-free dinner once a week.",
+      "quiz": {
+        "question": "Why does Gottman value rituals of connection?",
+        "options": [
+          "They make relationships more formal",
+          "They replace the need for conversation",
+          "They are only for religious families",
+          "They guarantee regular connection and express shared values"
+        ],
+        "answer": 3,
+        "explanation": "Rituals create dependable moments of connection and a shared identity."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--24",
+      "topic": "dating-marriage",
+      "tags": [
+        "roles",
+        "shared-meaning",
+        "expectations"
+      ],
+      "title": "Talk about the roles you each play in life",
+      "body": "Part of shared meaning, Gottman says, is understanding how each of you sees your roles: as a partner, parent, son or daughter, worker, friend. Two people can carry very different pictures of what a 'good spouse' or 'good parent' does, often inherited from their own families.\n\nTalking openly about these pictures prevents silent disappointment and helps you support each other in the roles that matter most to each of you.",
+      "apply_it": "Each write one sentence: 'To me, a good partner is someone who...' and share them.",
+      "quiz": {
+        "question": "Why discuss your views of family roles, according to Gottman?",
+        "options": [
+          "To decide who is in charge",
+          "Because unspoken role expectations can cause disappointment",
+          "Because roles never change",
+          "To copy your parents exactly"
+        ],
+        "answer": 1,
+        "explanation": "Different, unspoken pictures of roles can lead to misunderstandings."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--25",
+      "topic": "dating-marriage",
+      "tags": [
+        "goals",
+        "shared-meaning",
+        "family"
+      ],
+      "title": "Make your shared goals and symbols explicit",
+      "body": "Gottman suggests couples talk about their life goals, including the deeper ones like peace, faith, service or family, and the symbols that express what matters to them, such as their home, traditions or keepsakes.\n\nWhen partners know and honour each other's goals, they can pursue them as a team instead of in competition. Even very different goals can fit together once they are spoken aloud.",
+      "apply_it": "Share one goal you hope to reach in the next five years and ask how your partner could support it.",
+      "quiz": {
+        "question": "What does Gottman suggest couples do with their life goals?",
+        "options": [
+          "Talk about them so they can support each other",
+          "Keep them private to avoid conflict",
+          "Only pursue shared goals",
+          "Let one partner set the goals"
+        ],
+        "answer": 0,
+        "explanation": "Talking about goals lets partners support each other rather than compete."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--26",
+      "topic": "dating-marriage",
+      "tags": [
+        "habits",
+        "time",
+        "connection"
+      ],
+      "title": "Invest a few extra hours a week in your relationship",
+      "body": "Gottman describes 'magic five hours': a small weekly investment that, in his experience, helped couples who had completed his workshops keep improving. It includes learning one thing about your partner's day before parting in the morning, a calm reunion conversation after work, daily expressions of appreciation and affection, a weekly date, and a regular check-in about how the relationship is going.\n\nThe idea is that strong relationships are kept alive by small, regular habits, not occasional grand efforts.",
+      "apply_it": "Choose two of these habits, such as a goodbye question and a weekly date, and put them in your calendar.",
+      "quiz": {
+        "question": "What is the main message of Gottman's 'magic five hours'?",
+        "options": [
+          "Couples need a long holiday every year",
+          "Five hours of arguing clears the air",
+          "Small, regular weekly habits keep relationships strong",
+          "Only weekends matter"
+        ],
+        "answer": 2,
+        "explanation": "Regular small investments of time keep a relationship healthy."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--27",
+      "topic": "dating-marriage",
+      "tags": [
+        "check-in",
+        "communication",
+        "habits"
+      ],
+      "title": "Hold a regular 'state of the union' check-in",
+      "body": "Gottman recommends setting aside time each week to talk about how the relationship is going. Start by sharing what went well and what you appreciated. Then raise any issues calmly, using a soft start-up, and listen to understand.\n\nA set time means problems are raised before they pile up, and neither partner has to ambush the other at a bad moment.",
+      "apply_it": "Agree on a weekly 30-minute check-in. Open it by each naming one thing the other did that you appreciated.",
+      "quiz": {
+        "question": "How does Gottman suggest starting a weekly relationship check-in?",
+        "options": [
+          "With a list of complaints",
+          "With a discussion of money only",
+          "By reviewing old arguments",
+          "With appreciation for what went well"
+        ],
+        "answer": 3,
+        "explanation": "Beginning with appreciation sets a positive tone for raising issues."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--28",
+      "topic": "dating-marriage",
+      "tags": [
+        "myths",
+        "differences",
+        "compatibility"
+      ],
+      "title": "Personality differences don't doom a relationship",
+      "body": "Gottman argues against several common beliefs about why relationships fail. Being very different in personality or interests, he says, does not by itself predict divorce. Nor does having an unequal split of roles, as long as both feel it is fair.\n\nWhat matters more is how couples treat each other: whether they stay friends and handle their differences with respect. Differences are normal; contempt and disconnection are the real danger.",
+      "apply_it": "Name one difference between you and your partner that actually helps your relationship.",
+      "quiz": {
+        "question": "What does Gottman say about personality differences between partners?",
+        "options": [
+          "They always lead to divorce",
+          "They matter less than how couples treat each other",
+          "Couples must have identical interests",
+          "They only matter in arranged marriages"
+        ],
+        "answer": 1,
+        "explanation": "How partners handle differences matters more than the differences themselves."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--29",
+      "topic": "dating-marriage",
+      "tags": [
+        "in-laws",
+        "boundaries",
+        "teamwork"
+      ],
+      "title": "Agree to face family and in-law pressures as a team",
+      "body": "Among common sources of conflict, Gottman discusses tensions with in-laws and extended family. He suggests that partners make it clear they are a unit: each should feel their spouse is on their side, even while showing respect to parents and relatives.\n\nThis is especially relevant where extended family plays a big role in married life. Loving your family and putting your partnership first are not in competition when you discuss it openly and agree together.",
+      "apply_it": "Talk with your partner about one family situation and agree how you'll respond together.",
+      "quiz": {
+        "question": "What is Gottman's advice on in-law conflicts?",
+        "options": [
+          "Show partners you are a united team while respecting relatives",
+          "Always side with your parents",
+          "Cut off extended family",
+          "Let each partner handle their own family alone"
+        ],
+        "answer": 0,
+        "explanation": "Couples do best when each partner feels their spouse is on their side."
+      }
+    },
+    {
+      "id": "seven-principles-marriage-gottman--30",
+      "topic": "dating-marriage",
+      "tags": [
+        "transitions",
+        "parenthood",
+        "support"
+      ],
+      "title": "Treat big life changes as a test of turning toward",
+      "body": "Gottman notes that major transitions, especially the arrival of a baby, put heavy strain on couples. Sleep loss, new roles and less time together can leave one or both partners feeling forgotten.\n\nCouples who cope best keep the friendship going, share the load, and include each other in the new experience rather than letting one partner become an outsider. The same applies to job changes, moves or illness: keep turning toward each other.",
+      "apply_it": "If you're facing a big change, plan one short daily moment that is just for the two of you.",
+      "quiz": {
+        "question": "According to Gottman, what helps couples through a big transition like having a baby?",
+        "options": [
+          "Avoiding each other until it passes",
+          "Letting one partner handle everything",
+          "Keeping the friendship and sharing the experience",
+          "Postponing all conversations"
+        ],
+        "answer": 2,
+        "explanation": "Staying connected and sharing the load protects the relationship during change."
+      }
+    }
+  ]
+}

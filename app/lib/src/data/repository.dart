@@ -11,18 +11,32 @@ class Fetched<T> {
   final bool offline;
 }
 
-/// The nine topics from content/SCHEMA.md, used when /v1/topics is
+/// The twenty-three topics from content/SCHEMA.md, used when /v1/topics is
 /// unreachable and nothing is cached yet.
 const kDefaultTopics = <Topic>[
   Topic(slug: 'business', name: 'Business'),
   Topic(slug: 'psychology', name: 'Psychology'),
+  Topic(slug: 'mental-strength', name: 'Mental Strength & Resilience'),
   Topic(slug: 'health', name: 'Health & Wellness'),
   Topic(slug: 'emotional-intelligence', name: 'Emotional Intelligence'),
   Topic(slug: 'personal-development', name: 'Personal Development'),
   Topic(slug: 'productivity', name: 'Productivity & Career'),
   Topic(slug: 'money', name: 'Money'),
   Topic(slug: 'relationships', name: 'Relationships'),
+  Topic(slug: 'dating-marriage', name: 'Dating & Marriage'),
   Topic(slug: 'mindfulness', name: 'Mindfulness & Philosophy'),
+  Topic(slug: 'faith-wisdom', name: 'Faith & Wisdom'),
+  Topic(slug: 'leadership', name: 'Leadership'),
+  Topic(slug: 'parenting', name: 'Parenting & Family'),
+  Topic(slug: 'communication', name: 'Communication & Influence'),
+  Topic(slug: 'creativity', name: 'Creativity'),
+  Topic(slug: 'learning', name: 'Learning & Thinking'),
+  Topic(slug: 'lives-history', name: 'Lives & History'),
+  Topic(slug: 'entrepreneurship', name: 'Entrepreneurship'),
+  Topic(slug: 'heartbreak-healing', name: 'Heartbreak & Healing'),
+  Topic(slug: 'grief-loss', name: 'Grief & Loss'),
+  Topic(slug: 'study-smarter', name: 'Study Smarter'),
+  Topic(slug: 'skills-mastery', name: 'Skills & Mastery'),
 ];
 
 /// Wraps [ApiClient] with the offline cache: reads go to the network first;
@@ -164,13 +178,142 @@ class RebornRepository {
   Future<AuthResult> login(String email, String password) =>
       _run(() => api.login(email, password));
 
-  Future<AuthResult> register(String email, String password, String name) =>
-      _run(() => api.register(email, password, name));
+  Future<AuthResult> register(
+    String email,
+    String password,
+    String name, {
+    String? timezone,
+    String? referralCode,
+  }) => _run(
+    () => api.register(
+      email,
+      password,
+      name,
+      timezone: timezone,
+      referralCode: referralCode,
+    ),
+  );
 
   Future<User> me() => _run(api.me);
 
-  Future<User> updateMe({String? displayName, List<String>? topics}) =>
-      _run(() => api.updateMe(displayName: displayName, topics: topics));
+  Future<User> updateMe({
+    String? displayName,
+    String? handle,
+    String? bio,
+    List<String>? topics,
+    String? timezone,
+    int? dailyGoal,
+    Map<String, bool>? notify,
+  }) => _run(
+    () => api.updateMe(
+      displayName: displayName,
+      handle: handle,
+      bio: bio,
+      topics: topics,
+      timezone: timezone,
+      dailyGoal: dailyGoal,
+      notify: notify,
+    ),
+  );
+
+  Future<void> deleteMe() => _run(api.deleteMe);
+
+  Future<void> forgotPassword(String email) =>
+      _run(() => api.forgotPassword(email));
+
+  // ---- Social ----
+
+  Future<Fetched<PostPage>> timeline({
+    List<String>? topics,
+    String? cursor,
+  }) async {
+    final r = await _cached<PostPage>(
+      OfflineCache.timelineKey(topics, cursor),
+      () => api.timeline(topics: topics, cursor: cursor),
+      (v) => v.toJson(),
+      (j) => PostPage.fromJson(j as Map<String, dynamic>),
+    );
+    if (!r.offline) await cache.putCards(r.value.posts.map((p) => p.card));
+    return r;
+  }
+
+  /// Best effort: losing a "seen" mark only means seeing a post again.
+  Future<void> markSeen(List<String> postIds) async {
+    if (postIds.isEmpty) return;
+    try {
+      await _run(() => api.markSeen(postIds));
+    } on ApiException {
+      // Ignore.
+    }
+  }
+
+  /// A post; offline, the cached post or else the cached card without stats.
+  Future<Fetched<Post>> post(String id) async {
+    try {
+      return await _cached<Post>(
+        OfflineCache.postKey(id),
+        () => api.post(id),
+        (v) => v.toJson(),
+        (j) => Post.fromJson(j as Map<String, dynamic>),
+      );
+    } on ApiException catch (e) {
+      final card = e.isNetwork ? cache.getCard(id) : null;
+      if (card == null) rethrow;
+      return Fetched(Post.fromCard(card), offline: true);
+    }
+  }
+
+  Future<void> setFavorite(String postId, bool on) =>
+      _run(() => api.setFavorite(postId, on));
+
+  Future<void> setReaction(String postId, Reaction? kind) =>
+      _run(() => api.setReaction(postId, kind));
+
+  /// Counts a share; never fails the share itself.
+  Future<void> recordShare(String postId, String channel) async {
+    try {
+      await _run(() => api.share(postId, channel));
+    } on ApiException {
+      // Best effort.
+    }
+  }
+
+  Future<CommentPage> comments(String postId, {String? cursor}) =>
+      _run(() => api.comments(postId, cursor: cursor));
+
+  Future<Comment> addComment(String postId, String body, {String? parentId}) =>
+      _run(() => api.addComment(postId, body, parentId: parentId));
+
+  Future<void> deleteComment(String id) => _run(() => api.deleteComment(id));
+
+  Future<void> reportComment(String id, {String? reason}) =>
+      _run(() => api.reportComment(id, reason: reason));
+
+  Future<PostPage> myFavorites({String? cursor}) =>
+      _run(() => api.myFavorites(cursor: cursor));
+
+  Future<List<FollowItem>> following() => _run(api.following);
+
+  Future<FollowState> setFollow(FollowKind kind, String target, bool on) =>
+      _run(() => api.setFollow(kind, target, on));
+
+  Future<Profile> profile(String handle) => _run(() => api.profile(handle));
+
+  Future<PostPage> userFavorites(String handle, {String? cursor}) =>
+      _run(() => api.userFavorites(handle, cursor: cursor));
+
+  Future<AuthorPage> author(String name) => _run(() => api.author(name));
+
+  Future<GiftTiers> giftTiers() => _run(api.giftTiers);
+
+  Future<Gift> giftApple(String postId, String signedTransaction) =>
+      _run(() => api.giftApple(postId, signedTransaction));
+
+  Future<Gift> giftGoogle(
+    String postId,
+    String productId,
+    String purchaseToken,
+  ) => _run(() => api.giftGoogle(postId, productId, purchaseToken));
 
   // ---- Stashes ----
 
@@ -217,6 +360,9 @@ class RebornRepository {
   Future<Stash> renameStash(String id, String name, {String? description}) =>
       _run(() => api.updateStash(id, name: name, description: description));
 
+  Future<Stash> setStashPublic(String id, bool isPublic) =>
+      _run(() => api.updateStash(id, isPublic: isPublic));
+
   Future<void> deleteStash(String id) async {
     await _run(() => api.deleteStash(id));
     await cache.remove(OfflineCache.stashKey(id));
@@ -262,4 +408,86 @@ class RebornRepository {
 
   Future<ChatReply> chat(List<ChatMessage> messages) =>
       _run(() => api.chat(messages));
+
+  // ---- Notifications, streaks, referrals ----
+
+  Future<NotificationsPage> notifications() => _run(api.notifications);
+
+  Future<void> markNotificationsRead([List<String>? ids]) =>
+      _run(() => api.markNotificationsRead(ids));
+
+  Future<void> registerDevice(String platform, String token) =>
+      _run(() => api.registerDevice(platform, token));
+
+  Future<void> unregisterDevice(String token) =>
+      _run(() => api.unregisterDevice(token));
+
+  Future<Streak> streak() => _run(api.streak);
+
+  Future<Referrals> referrals() => _run(api.referrals);
+
+  // ---- Blocking ----
+
+  Future<List<BlockedUser>> blocks() => _run(api.blocks);
+
+  Future<void> setBlock(String userId, String? kind) =>
+      _run(() => api.setBlock(userId, kind));
+
+  // ---- Discover ----
+
+  Future<DiscoverPage> discover() => _run(api.discover);
+
+  Future<List<Post>> trending({String? topic}) =>
+      _run(() => api.trending(topic: topic));
+
+  Future<List<Stash>> userStashes(String handle) =>
+      _run(() => api.userStashes(handle));
+
+  Future<PublicStash> publicStash(String id) => _run(() => api.publicStash(id));
+
+  // ---- Circles ----
+
+  Future<List<Circle>> circles({String? source, bool mine = false}) =>
+      _run(() => api.circles(source: source, mine: mine));
+
+  Future<Circle> createCircle(
+    String sourceId,
+    String name, {
+    String? description,
+  }) => _run(() => api.createCircle(sourceId, name, description: description));
+
+  Future<Circle> circle(String id) => _run(() => api.circle(id));
+
+  Future<Circle> joinCircle(String id) => _run(() => api.joinCircle(id));
+
+  Future<void> leaveCircle(String id) => _run(() => api.leaveCircle(id));
+
+  Future<List<CircleMember>> circleMembers(String id) =>
+      _run(() => api.circleMembers(id));
+
+  Future<List<CircleMessage>> circleMessages(String id, {DateTime? before}) =>
+      _run(() => api.circleMessages(id, before: before));
+
+  Future<CircleMessage> postCircleMessage(
+    String id,
+    String body, {
+    String? postId,
+  }) => _run(() => api.postCircleMessage(id, body, postId: postId));
+
+  Future<void> deleteCircleMessage(String circleId, String messageId) =>
+      _run(() => api.deleteCircleMessage(circleId, messageId));
+
+  // ---- Premium ----
+
+  Future<PremiumStatus> premium() => _run(api.premium);
+
+  Future<PremiumStatus> premiumApple(String signedTransaction) =>
+      _run(() => api.premiumApple(signedTransaction));
+
+  Future<PremiumStatus> premiumGoogle(String productId, String purchaseToken) =>
+      _run(() => api.premiumGoogle(productId, purchaseToken));
+
+  // ---- Moderator dashboard ----
+
+  Future<AdminStats> adminStats() => _run(api.adminStats);
 }

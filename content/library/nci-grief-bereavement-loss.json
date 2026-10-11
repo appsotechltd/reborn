@@ -1,0 +1,310 @@
+{
+  "source": {
+    "id": "nci-grief-bereavement-loss",
+    "title": "Grief, Bereavement, and Loss (PDQ) – Patient Version",
+    "authors": [
+      "PDQ Supportive and Palliative Care Editorial Board"
+    ],
+    "kind": "guide",
+    "url": "https://www.cancer.gov/about-cancer/advanced-cancer/caregivers/planning/bereavement-pdq",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.cancer.gov/policies/copyright-reuse",
+    "attribution": "Source: National Cancer Institute, PDQ Grief, Bereavement, and Loss – Patient Version (public domain). Available free at cancer.gov. Use does not imply endorsement by NCI, NIH, HHS or the U.S. Government.",
+    "publisher": "National Cancer Institute",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Page used: https://www.cancer.gov/about-cancer/advanced-cancer/caregivers/planning/bereavement-pdq (updated 12 February 2025). NCI website text is in the public domain unless marked; the page itself says PDQ content can be used freely as text, but must not be presented as an NCI PDQ summary unless the whole summary is shown and kept updated. Our cards are original summaries, credited to NCI with a link back and a no-endorsement statement; no images used (PDQ images are third-party). Chosen as the US-government companion to nhs-grief-bereavement because the NIA grief pages could not be fetched."
+  },
+  "cards": [
+    {
+      "id": "nci-grief-bereavement-loss--01",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "mourning",
+        "culture"
+      ],
+      "title": "Grief is the feeling; mourning is how cultures express it",
+      "body": "The National Cancer Institute separates three words that are often mixed up. Grief is the inner, emotional response to losing someone. Mourning is how that grief is shown outwardly, and it is shaped by beliefs, religious practice and culture. Bereavement is the whole period of grief and mourning after a death.\n\nThis matters because mourning customs differ widely: wakes, set periods of wearing certain colours, prayers on fixed days, quiet private remembrance. None is the single right way, and someone's outward mourning may not show the full depth of their grief.",
+      "apply_it": "Ask someone from a different background how loss is mourned in their family or tradition, and listen without comparing.",
+      "quiz": {
+        "question": "In NCI's terms, what is mourning?",
+        "options": [
+          "The private feeling of sadness",
+          "A medical diagnosis",
+          "The outward expression of grief, shaped by culture and beliefs",
+          "Grief that never ends"
+        ],
+        "answer": 2,
+        "explanation": "Grief is the emotional response; mourning is its public expression, shaped by beliefs, religion and culture."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--02",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "anticipatory-grief",
+        "preparation"
+      ],
+      "title": "Grief can begin before someone dies",
+      "body": "NCI describes anticipatory grief: the grief that comes before a death, felt by the person who is dying, their family, or both. It can be made heavier by distress, pain and medical complications.\n\nTalking with someone trained in grief can help. NCI also mentions a study of parents whose child died of cancer: those who felt prepared for the end of life coped better socially in the two years after the loss. Honest conversations and planning, painful as they are, may make the time afterwards a little steadier.",
+      "apply_it": "If someone you love is seriously ill, consider one honest conversation you have been avoiding, perhaps with help from a counsellor or faith leader.",
+      "quiz": {
+        "question": "What is anticipatory grief?",
+        "options": [
+          "Grief felt before a death, by the dying person or their family",
+          "Grief that only starts a year after a death",
+          "Pretending not to be sad",
+          "A fear of one's own death in childhood"
+        ],
+        "answer": 0,
+        "explanation": "Anticipatory grief happens before a death and can affect both the patient and the family."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--03",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "grief-bursts",
+        "triggers"
+      ],
+      "title": "Sudden 'grief bursts' are normal, even long after a loss",
+      "body": "NCI describes grief bursts: intense waves of distress that last around 20 to 30 minutes. They can be set off by reminders such as birthdays, holidays, anniversaries or sorting through belongings, and sometimes they arrive with no clear trigger at all.\n\nKnowing about grief bursts can take some of the fear out of them. A sudden wave does not mean you are going backwards. It usually passes, and for most people such episodes become less frequent and less severe with time.",
+      "apply_it": "Mark a hard date coming up, such as an anniversary, in your calendar and plan one kind thing for yourself that day.",
+      "quiz": {
+        "question": "According to NCI, about how long does a typical grief burst last?",
+        "options": [
+          "A few seconds",
+          "Around 20 to 30 minutes",
+          "Several days",
+          "Exactly one week"
+        ],
+        "answer": 1,
+        "explanation": "Grief bursts are intense episodes of distress lasting roughly 20 to 30 minutes."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--04",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "timeline",
+        "normal-grief"
+      ],
+      "title": "There is no single 'typical' way or timetable for grief",
+      "body": "NCI lists many common grief reactions: shock or disbelief, longing, crying and sighing, dreams of the person, searching for places you shared, anger, sadness, poor sleep and appetite, tiredness and guilt. Most bereaved people still manage daily life, even when it is hard.\n\nFor most people, these symptoms ease in frequency and intensity somewhere between six months and two years after the loss. But NCI stresses there is no one typical grief response. Your path may look very different from someone else's.",
+      "apply_it": "If you are comparing your grief to someone else's, write down one way your loss, or your relationship with the person, was unique.",
+      "quiz": {
+        "question": "What does NCI say about the typical grief response?",
+        "options": [
+          "Everyone recovers in exactly six months",
+          "Crying means grief is abnormal",
+          "There is no single typical grief response",
+          "Grief always gets worse over time"
+        ],
+        "answer": 2,
+        "explanation": "NCI says symptoms usually lessen between 6 months and 2 years, but there is no one typical response."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--05",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "depression",
+        "warning-signs"
+      ],
+      "title": "How grief and depression differ, and when to get help",
+      "body": "Grief and depression can look alike: poor sleep, guilt, loss of interest. NCI offers some differences. Grief's painful feelings tend to come and go, while depression is more constant. Grief brings emptiness, depression an inability to feel pleasure. Grieving people usually keep their sense of self-worth, which depression often erodes.\n\nThese are guides, not a self-diagnosis tool. If low mood feels constant, you feel worthless, or you think about ending your life, speak to a doctor or contact a crisis line straight away.",
+      "apply_it": "Save the number of a crisis line in your country in your phone today, so it is there if you or someone you love ever needs it.",
+      "quiz": {
+        "question": "According to NCI, which feature points more towards depression than ordinary grief?",
+        "options": [
+          "Waves of sadness that come and go",
+          "Missing the person who died",
+          "Crying at reminders",
+          "Constant low mood and feeling worthless"
+        ],
+        "answer": 3,
+        "explanation": "Grief's pain tends to come in waves while self-worth stays intact; constant low mood and worthlessness suggest depression."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--06",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "support",
+        "secondary-losses"
+      ],
+      "title": "A death brings secondary losses, and support matters",
+      "body": "NCI notes that bereavement often brings secondary losses alongside the death itself: income, a way of life, daily routines, sometimes a home or a role in the family. These can be as hard to adjust to as the loss of the person.\n\nLimited support from family, friends, neighbours or community raises the risk of struggling. The practical lesson is that support is not a luxury in grief: helping with money matters, routines and company can make a real difference to how someone copes.",
+      "apply_it": "Think of someone recently bereaved. Which secondary loss might they be facing, such as income, transport or routine, and how could you help with it?",
+      "quiz": {
+        "question": "What does NCI mean by secondary losses?",
+        "options": [
+          "Losses that follow a death, such as income or daily routines",
+          "The death of a second family member",
+          "Forgetting the person over time",
+          "A less important kind of grief"
+        ],
+        "answer": 0,
+        "explanation": "Bereavement often brings secondary losses like income, lifestyle changes and routines, closely tied to available support."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--07",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "faith",
+        "culture"
+      ],
+      "title": "Faith and community can support grieving, in different ways",
+      "body": "NCI notes that grief happens in every culture, but beliefs about death vary, and people draw on the practices that meet their needs. Research on religion and grief is mixed: some studies find it helps, others do not. Regular attendance at a place of worship and support from a religious community have been linked with coping better and making sense of the loss.\n\nThe takeaway is respect. For some, prayer and ritual are a lifeline; for others, different sources of meaning help more.",
+      "apply_it": "If you have a faith or community, consider who in it you could lean on. If not, name one group or friendship that gives you a sense of belonging.",
+      "quiz": {
+        "question": "What does NCI say about religion and grief?",
+        "options": [
+          "It always makes grief worse",
+          "Research is mixed, but community support is linked with better coping",
+          "It only matters for older people",
+          "Religion has never been studied"
+        ],
+        "answer": 1,
+        "explanation": "Findings on religion are mixed, but religious community support and attendance are linked with better outcomes."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--08",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "treatment",
+        "therapy"
+      ],
+      "title": "Most grief needs time and support, not treatment",
+      "body": "According to NCI, normal grief often needs no treatment, and most people adjust over months to a couple of years. Treatment may help people with serious grief reactions or significant distress.\n\nFor complicated grief, NCI reports that cognitive behavioural therapy, which builds skills for changing unhelpful thoughts and behaviours, did better than general counselling in one trial. Decisions about medication for grief-related depression are made between a person and their clinician. If grief feels stuck or overwhelming, a professional assessment is worth asking for.",
+      "apply_it": "If grief has felt stuck or unbearable for a long time, write down three things that have changed in your daily life, and share them with a health professional.",
+      "quiz": {
+        "question": "What does NCI say about treating normal grief?",
+        "options": [
+          "Everyone needs medication",
+          "Grief can never be helped",
+          "It often needs no treatment; help is for serious or complicated grief",
+          "Therapy makes grief last longer"
+        ],
+        "answer": 2,
+        "explanation": "Normal grief often resolves without treatment; therapies such as CBT may help complicated grief."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--09",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "family"
+      ],
+      "title": "Children grieve in short bursts, so don't mistake play for not caring",
+      "body": "NCI explains that children often grieve in short bursts: sad one moment, playing the next. Adults may assume the child does not understand or has moved on, when in fact the child's mind is protecting them from feelings too big to hold all at once.\n\nChildren may also throw themselves into activities, struggle to put feelings into words, show anger or fear through behaviour, and ask the same questions repeatedly, partly to check the story has not changed. Grief can return as they grow, at milestones such as graduating or marrying.",
+      "apply_it": "When a grieving child asks the same question again, answer it again patiently. They may be checking the story still holds.",
+      "quiz": {
+        "question": "Why might a grieving child switch quickly from sadness to play?",
+        "options": [
+          "They don't care about the person",
+          "They have finished grieving",
+          "They are being rude",
+          "Their mind is protecting them from overwhelming feelings"
+        ],
+        "answer": 3,
+        "explanation": "Children grieve in short bursts; switching to play is a way of coping, not a sign they've moved on."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--10",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "development",
+        "family"
+      ],
+      "title": "A child's age shapes how they understand death",
+      "body": "NCI sets out how understanding of death grows with age. Very young children cannot grasp death but feel the separation. Two- and three-year-olds often confuse death with sleep. Children of three to six may see death as temporary and believe their own thoughts caused it. From about six to nine, they become curious about what happens to the body and may find death frightening. By around twelve, most understand that death is final and happens to everyone.\n\nKnowing this helps adults pitch explanations at the right level.",
+      "apply_it": "If you need to explain a death to a child, think about their age first, and plan one simple, true sentence they can understand.",
+      "quiz": {
+        "question": "According to NCI, what do children aged roughly 3 to 6 often believe about death?",
+        "options": [
+          "That it may be temporary, and that their thoughts could cause it",
+          "That it is final and universal",
+          "That it only happens to animals",
+          "Nothing: they don't notice a death"
+        ],
+        "answer": 0,
+        "explanation": "Young children may see death as a limited form of life and engage in magical thinking about causing it."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--11",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "honest-words"
+      ],
+      "title": "Use clear words like 'died' with children, not 'gone to sleep'",
+      "body": "NCI identifies three worries many grieving children have: did I cause it, could I die too, and who will look after me? Answering these, even if the child does not ask out loud, is part of helping them.\n\nNCI advises talking openly and honestly, in simple language and as much detail as the child can take in, and reassuring them that they will be safe and cared for. Words like 'died' and 'death' are clearer than phrases such as 'passed away', 'sleeping' or 'lost', which can confuse or frighten children.",
+      "apply_it": "Practise saying gently and clearly, 'Grandma died. Her body stopped working. It wasn't your fault, and we will look after you.'",
+      "quiz": {
+        "question": "Why does NCI suggest avoiding phrases like 'gone to sleep' with children?",
+        "options": [
+          "They are too formal",
+          "They can confuse children about what death is",
+          "Children prefer long explanations",
+          "They are disrespectful to the dead"
+        ],
+        "answer": 1,
+        "explanation": "Euphemisms such as 'sleeping' or 'lost' can confuse children; clear words like 'died' are better."
+      },
+      "health": true
+    },
+    {
+      "id": "nci-grief-bereavement-loss--12",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "funerals",
+        "family"
+      ],
+      "title": "Invite children to funerals and memorials, but don't force them",
+      "body": "NCI suggests including children in planning and attending memorial services, without forcing them to take part. Explaining beforehand what will happen, such as who will be there, what the room or place looks like, and what people will do, helps a child feel prepared.\n\nIf a parent is too overwhelmed to support the child on the day, another trusted adult can stay beside them. Whatever your culture's rites, giving children a role and a choice helps them feel part of the family's goodbye.",
+      "apply_it": "If a child will attend a funeral or memorial, walk them through what will happen beforehand, and name a trusted adult who will stay with them.",
+      "quiz": {
+        "question": "What does NCI recommend about children and memorial services?",
+        "options": [
+          "Children should never attend",
+          "Children must attend whether they want to or not",
+          "Include them and prepare them, but don't force them",
+          "Only teenagers should be told about them"
+        ],
+        "answer": 2,
+        "explanation": "Including children, explaining what to expect, and not forcing them helps; another trusted adult can support them."
+      },
+      "health": true
+    }
+  ]
+}

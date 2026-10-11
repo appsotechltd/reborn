@@ -19,7 +19,7 @@
   "cards": [
     {
       "id": "self-reliance-emerson--01",
-      "topic": "personal-development",
+      "topic": "creativity",
       "tags": [
         "confidence",
         "ideas",
@@ -94,7 +94,7 @@
     },
     {
       "id": "self-reliance-emerson--04",
-      "topic": "psychology",
+      "topic": "learning",
       "tags": [
         "changing-your-mind",
         "consistency",
@@ -144,7 +144,7 @@
     },
     {
       "id": "self-reliance-emerson--06",
-      "topic": "psychology",
+      "topic": "mental-strength",
       "tags": [
         "regret",
         "action",
@@ -165,6 +165,606 @@
         ],
         "answer": 0,
         "explanation": "Regret is useful only when it helps; otherwise, returning to your work starts the repair."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--07",
+      "topic": "personal-development",
+      "tags": [
+        "envy",
+        "focus",
+        "hard-work"
+      ],
+      "title": "Stop envying others and work the ground you've been given",
+      "body": "Emerson says there comes a point in every person's education when they realise envy is ignorance and imitation is self-destruction. The world is full of good things, but the only harvest that will feed you comes from working your own patch of ground.\n\nEnvy keeps your eyes on someone else's field: their salary, their business, their life online. Meanwhile your own plot goes untended. Accepting your situation, strengths and limits as your starting point, then working it steadily, is where real progress begins.",
+      "quote": "though the wide universe is full of good, no kernel of nourishing corn can come to him but through his toil bestowed on that plot of ground which is given to him to till",
+      "locator": "Self-Reliance ¶2",
+      "apply_it": "When you catch yourself envying someone, write one action you can take on your own 'plot' today instead.",
+      "quiz": {
+        "question": "What does Emerson say envy is?",
+        "options": [
+          "A useful motivator",
+          "Ignorance",
+          "A sign of ambition",
+          "Natural and harmless"
+        ],
+        "answer": 1,
+        "explanation": "Emerson says each person eventually learns that envy is ignorance and imitation is suicide."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--08",
+      "topic": "personal-development",
+      "tags": [
+        "potential",
+        "experiment",
+        "courage"
+      ],
+      "title": "You won't know what you can do until you try",
+      "body": "Emerson writes that each person carries a power that is new in the world. Nobody else knows what it is, and neither do you, until you have tried.\n\nWe often decide in advance that we're 'not the type' to start a business, speak in public or learn a hard skill. But your abilities aren't revealed by thinking about them; they show up in action. Treat new challenges as experiments to discover yourself, not tests you might fail.",
+      "quote": "none but he knows what that is which he can do, nor does he know until he has tried",
+      "locator": "Self-Reliance ¶2",
+      "apply_it": "Pick one thing you've assumed you're bad at and try a small version of it this week.",
+      "quiz": {
+        "question": "According to Emerson, how do you find out what you're capable of?",
+        "options": [
+          "By asking people who know you",
+          "By taking personality tests",
+          "By trying",
+          "By studying great people"
+        ],
+        "answer": 2,
+        "explanation": "Emerson says no one knows what he can do, not even himself, until he has tried."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--09",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "honesty",
+        "kindness",
+        "boundaries"
+      ],
+      "title": "Kindness needs a backbone to be real goodness",
+      "body": "Emerson argues that goodness without any edge is not goodness at all. He would rather speak an honest, even rough truth than offer affectionate words that are fake. Truth, he says, is more beautiful than pretended love.\n\nBeing endlessly agreeable can feel kind, but it often means avoiding hard conversations, enabling bad behaviour or saying yes when you mean no. Real kindness includes honest feedback and firm boundaries, delivered with care rather than cruelty.",
+      "quote": "Your goodness must have some edge to it—else it is none.",
+      "locator": "Self-Reliance ¶7",
+      "apply_it": "Think of a situation where you've been 'nice' instead of honest. Plan a kind but truthful thing to say.",
+      "quiz": {
+        "question": "What does Emerson say about goodness that has no edge?",
+        "options": [
+          "It is the highest virtue",
+          "It is not goodness at all",
+          "It always wins friends",
+          "It should be taught to children"
+        ],
+        "answer": 1,
+        "explanation": "Emerson says goodness must have some edge to it, otherwise it is not real goodness."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--10",
+      "topic": "personal-development",
+      "tags": [
+        "authenticity",
+        "consistency",
+        "character"
+      ],
+      "title": "Choose a steady, genuine life over a glittering one",
+      "body": "Emerson says his life is for itself, not for a show. He would rather it be modest but genuine and steady than impressive but unstable. He doesn't want to do good deeds as a kind of fine paid for living.\n\nToday it's easy to build a life that looks good from outside: the right photos, the right job titles, occasional grand gestures. Emerson suggests a different test. Is your life honest and even, day to day? A quieter life that is truly yours will satisfy you more than one designed to impress.",
+      "quote": "My life is for itself and not for a spectacle.",
+      "locator": "Self-Reliance ¶8",
+      "apply_it": "List one thing you do mainly for appearances. Decide whether to drop it or do it for its own sake.",
+      "quiz": {
+        "question": "What kind of life does Emerson prefer?",
+        "options": [
+          "Glittering and admired",
+          "Busy and famous",
+          "Wealthy and secure",
+          "Genuine and steady, even if humbler"
+        ],
+        "answer": 3,
+        "explanation": "Emerson prefers a life of a lower strain, so long as it is genuine and equal, to one that is glittering and unsteady."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--11",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "habits",
+        "conformity"
+      ],
+      "title": "Dead habits and obligations scatter your energy",
+      "body": "Emerson warns that keeping up customs that mean nothing to you, supporting groups you no longer believe in or following a party line, drains your strength. It wastes time and blurs who you really are. 'Do your work,' he says, and people will know you.\n\nMost of us carry commitments we keep out of habit or fear of what others will think. Each one takes a slice of time and attention. Dropping the ones that are dead to you frees energy for the work that actually expresses who you are.",
+      "quote": "But do your work, and I shall know you. Do your work, and you shall reinforce yourself.",
+      "locator": "Self-Reliance ¶10",
+      "apply_it": "List your regular commitments. Cross out one you keep only out of habit or pressure.",
+      "quiz": {
+        "question": "Why does Emerson object to conforming to customs that are dead to you?",
+        "options": [
+          "It scatters your force and wastes your time",
+          "It is illegal",
+          "It makes you too popular",
+          "It costs too much money"
+        ],
+        "answer": 0,
+        "explanation": "Emerson says conforming to dead usages scatters your force, loses your time and blurs your character."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--12",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "authenticity",
+        "social-pressure",
+        "body-language"
+      ],
+      "title": "Notice when you're wearing a forced smile",
+      "body": "Emerson describes 'the foolish face of praise': the strained smile we put on when we're uncomfortable and pretending to be interested. He notes how the face muscles tighten with an unpleasant feeling when they're moved by social pressure rather than real feeling.\n\nThat tight, fake smile is a useful signal. It tells you you're performing rather than being honest. You don't have to be rude, but you can steer the conversation, admit you're tired or leave politely. Small acts of honesty protect your energy and self-respect.",
+      "quote": "the forced smile which we put on in company where we do not feel at ease in answer to conversation which does not interest us",
+      "locator": "Self-Reliance ¶10",
+      "apply_it": "Next time you notice a forced smile on your face, take it as a cue to change topic or politely step away.",
+      "quiz": {
+        "question": "What does Emerson call the forced smile we wear when uncomfortable?",
+        "options": [
+          "The face of wisdom",
+          "The smile of courage",
+          "The foolish face of praise",
+          "The mask of kindness"
+        ],
+        "answer": 2,
+        "explanation": "Emerson refers to 'the foolish face of praise', the forced smile we wear in company where we do not feel at ease."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--13",
+      "topic": "psychology",
+      "tags": [
+        "criticism",
+        "disapproval",
+        "resilience"
+      ],
+      "title": "Most disapproval is shallow, so don't let it steer you",
+      "body": "Emerson says the world punishes nonconformity with its displeasure, so you must learn to judge a sour face correctly. The frowns of the crowd, like their smiles, usually have no deep cause. They come and go with fashion and the latest news.\n\nWhen people react badly to your choices, it can feel like a verdict on you. Often it's just a passing mood. Weigh criticism from people who know you and care, but don't let random disapproval decide your path.",
+      "quote": "the sour faces of the multitude, like their sweet faces, have no deep cause, but are put on and off as the wind blows and a newspaper directs",
+      "locator": "Self-Reliance ¶11",
+      "apply_it": "Recall a recent disapproving reaction that bothered you. Ask: did it come from deep thought or a passing mood?",
+      "quiz": {
+        "question": "What does Emerson say about the crowd's sour faces?",
+        "options": [
+          "They reveal deep truths about you",
+          "They should always be obeyed",
+          "They are permanent",
+          "They have no deep cause and change with the wind"
+        ],
+        "answer": 3,
+        "explanation": "Emerson says the crowd's frowns, like its smiles, have no deep cause and are put on and off as the wind blows."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--14",
+      "topic": "personal-development",
+      "tags": [
+        "progress",
+        "direction",
+        "consistency"
+      ],
+      "title": "Progress zigzags up close but runs straight from a distance",
+      "body": "Emerson compares a life to a ship's voyage: the best ship sails a zigzag of a hundred turns, yet seen from far enough away the line straightens into one direction. Honest actions, even when they look inconsistent, add up to a clear course.\n\nIf your career or growth feels messy, with false starts and changes of direction, this is encouraging. Each honest step, taken in good faith, belongs to a larger pattern. Judge your path over years, not weeks.",
+      "quote": "The voyage of the best ship is a zigzag line of a hundred tacks.",
+      "locator": "Self-Reliance ¶16",
+      "apply_it": "Map the main turns of your last five years. What overall direction do they share?",
+      "quiz": {
+        "question": "What image does Emerson use for a life of honest but varied actions?",
+        "options": [
+          "A ship sailing a zigzag that straightens at a distance",
+          "A straight railway line",
+          "A circle that returns to the start",
+          "A tree that never moves"
+        ],
+        "answer": 0,
+        "explanation": "Emerson says the best ship's voyage is a zigzag of many tacks, which looks straight from a distance."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--15",
+      "topic": "business",
+      "tags": [
+        "leadership",
+        "legacy",
+        "initiative"
+      ],
+      "title": "Great institutions start as one person's long shadow",
+      "body": "Emerson notes that institutions, movements and organisations usually trace back to one determined person. He writes that all history reduces easily to the biography of a few earnest, determined people.\n\nThis is a reminder that one committed person can start something lasting: a school, a business, a cooperative, a community group. You don't need permission or a large team to begin. Many big organisations were once just one person's conviction, steadily acted on.",
+      "quote": "An institution is the lengthened shadow of one man",
+      "locator": "Self-Reliance ¶17",
+      "apply_it": "Write down one thing your community lacks that you could start in a small way this year.",
+      "quiz": {
+        "question": "What does Emerson say an institution is?",
+        "options": [
+          "A government creation",
+          "The lengthened shadow of one man",
+          "A product of luck",
+          "A committee's decision"
+        ],
+        "answer": 1,
+        "explanation": "Emerson says an institution is the lengthened shadow of one person, and history is the biography of a few earnest people."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--16",
+      "topic": "mindfulness",
+      "tags": [
+        "present-moment",
+        "comparison",
+        "contentment"
+      ],
+      "title": "Live in the present like a rose, not in regret or worry",
+      "body": "Emerson points to the roses under his window. They don't compare themselves with earlier roses or better ones; they simply are, fully, in every moment. People, by contrast, keep looking back with regret or straining forward to the future, missing what's around them.\n\nHe concludes that we can't be happy and strong until we live more in the present. That doesn't mean ignoring plans or lessons, but spending more of our attention here, where life actually happens.",
+      "quote": "These roses under my window make no reference to former roses or to better ones; they are for what they are; they exist with God today.",
+      "locator": "Self-Reliance ¶23",
+      "apply_it": "Spend five minutes today fully attending to one ordinary thing, like a meal or a walk, without planning or replaying.",
+      "quiz": {
+        "question": "What does Emerson admire about the roses under his window?",
+        "options": [
+          "Their bright colour",
+          "How long they last",
+          "They exist fully today without comparing themselves",
+          "They are rare and expensive"
+        ],
+        "answer": 2,
+        "explanation": "Emerson says the roses make no reference to former or better roses; they are what they are, today."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--17",
+      "topic": "productivity",
+      "tags": [
+        "momentum",
+        "growth",
+        "complacency"
+      ],
+      "title": "Your power is in moving forward, not in what you've already done",
+      "body": "Emerson writes that life only counts while it is being lived, not the fact of having lived. Power, he says, stops the moment we rest; it exists in the shift from an old state to a new one, in leaping across the gap towards an aim.\n\nPast achievements are pleasant to remember but they don't do today's work. A degree, a past promotion or a successful launch can become a comfortable place to stop. Emerson's point is to keep moving: the energy is in the next step.",
+      "quote": "Life only avails, not the having lived.",
+      "locator": "Self-Reliance ¶26",
+      "apply_it": "Identify one past success you've been resting on. Set a fresh, specific goal that builds on it.",
+      "quiz": {
+        "question": "According to Emerson, where does power reside?",
+        "options": [
+          "In past achievements",
+          "In wealth and property",
+          "In famous connections",
+          "In the moment of moving to a new state"
+        ],
+        "answer": 3,
+        "explanation": "Emerson says power ceases in repose and resides in the transition from a past to a new state."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--18",
+      "topic": "productivity",
+      "tags": [
+        "distraction",
+        "attention",
+        "boundaries"
+      ],
+      "title": "Others can only distract you as much as your curiosity allows",
+      "body": "Emerson notes that at times the whole world seems to conspire to interrupt you with urgent trifles: friends, clients, family, worries, all knocking at once. His response is to keep your state and not join their confusion. The power others have to annoy us, he says, comes from our own weak curiosity.\n\nNotifications, gossip and other people's dramas pull at us all day. Many of them only win because we choose to look. Deciding in advance what deserves your attention puts you back in charge.",
+      "quote": "The power men possess to annoy me I give them by a weak curiosity.",
+      "locator": "Self-Reliance ¶29",
+      "apply_it": "Turn off notifications for one app that regularly pulls you into other people's trivial drama.",
+      "quiz": {
+        "question": "Where does Emerson say others get their power to annoy us?",
+        "options": [
+          "From our own weak curiosity",
+          "From their status",
+          "From our duties",
+          "From bad luck"
+        ],
+        "answer": 0,
+        "explanation": "Emerson says the power others have to annoy him is given by his own weak curiosity."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--19",
+      "topic": "parenting",
+      "tags": [
+        "family",
+        "boundaries",
+        "identity"
+      ],
+      "title": "You don't have to take on your family's faults as your own",
+      "body": "Emerson asks why we should adopt the faults of a friend, spouse, parent or child simply because they sit at our fireside or share our blood. He won't take on their bad temper or foolishness, or even feel ashamed of it.\n\nYou can love your family and still refuse to carry their anger, habits or reputation. Their choices are theirs. Separating your identity from theirs lets you be kinder to them, because you're no longer reacting as if their every flaw were a judgement on you.",
+      "quote": "Why should we assume the faults of our friend, or wife, or father, or child, because they sit around our hearth, or are said to have the same blood?",
+      "locator": "Self-Reliance ¶29",
+      "apply_it": "Name one family habit or fault you've been carrying as your own. Decide what you will do differently.",
+      "quiz": {
+        "question": "What does Emerson refuse to do regarding his family's faults?",
+        "options": [
+          "Ever speak to them again",
+          "Adopt their faults or be ashamed of them",
+          "Forgive them",
+          "Tell other people about them"
+        ],
+        "answer": 1,
+        "explanation": "Emerson asks why we should take on the faults of family members just because they share our hearth or blood."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--20",
+      "topic": "relationships",
+      "tags": [
+        "honesty",
+        "family",
+        "authenticity"
+      ],
+      "title": "Tell the people closest to you who you really are",
+      "body": "Emerson imagines saying to his parents, partner and friends: I've lived with you by appearances until now; from now on I'll be truthful. He promises to keep caring for them, but in his own honest way. If they can love him as he is, everyone will be happier; if not, he'll still try to deserve their love.\n\nLiving a pretend version of yourself for family keeps the peace short-term but builds distance. Gently sharing your real views and choices, while still showing love, gives relationships a chance to become real.",
+      "quote": "If you can love me for what I am, we shall be the happier. If you cannot, I will still seek to deserve that you should.",
+      "locator": "Self-Reliance ¶30",
+      "apply_it": "Share one true preference or decision with a family member that you've been hiding to keep the peace.",
+      "quiz": {
+        "question": "In Emerson's imagined speech, what does he promise if family can't accept who he is?",
+        "options": [
+          "To leave them forever",
+          "To pretend again",
+          "To still seek to deserve their love",
+          "To stop supporting them"
+        ],
+        "answer": 2,
+        "explanation": "He says if they cannot love him for what he is, he will still seek to deserve that they should."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--21",
+      "topic": "mental-strength",
+      "tags": [
+        "resilience",
+        "struggle",
+        "growth"
+      ],
+      "title": "Strength is built in the hard battles you'd rather avoid",
+      "body": "Emerson criticises his own society for raising people who are afraid of truth, fortune, death and each other. He calls them parlour soldiers, people who avoid the rough fights of life where strength is actually formed.\n\nComfort is pleasant, but it doesn't grow you. Difficult conversations, financial setbacks and hard projects are uncomfortable precisely because they demand more of you. Choosing to face them, rather than retreating, is how resilience is made.",
+      "quote": "We are parlor soldiers. We shun the rugged battle of fate, where strength is born.",
+      "locator": "Self-Reliance ¶33",
+      "apply_it": "Identify one hard challenge you've been avoiding. Take the first small step on it today.",
+      "quiz": {
+        "question": "Where does Emerson say strength is born?",
+        "options": [
+          "In comfortable homes",
+          "In the approval of others",
+          "In avoiding risk",
+          "In the rugged battle of fate"
+        ],
+        "answer": 3,
+        "explanation": "Emerson says we shun the rugged battle of fate, which is exactly where strength is born."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--22",
+      "topic": "entrepreneurship",
+      "tags": [
+        "failure",
+        "careers",
+        "resilience"
+      ],
+      "title": "One failure isn't ruin; you have a hundred chances",
+      "body": "Emerson contrasts young people who lose heart after one failed venture with a sturdy country lad who tries farming, teaching, trading, editing and more, and always lands on his feet. That person doesn't wait for the perfect profession; he lives now. He has not one chance, but a hundred.\n\nA failed business or a job rejection feels final, but it rarely is. Many successful people have tried several paths. Seeing your life as a series of attempts, not one high-stakes bet, keeps you trying.",
+      "quote": "He has not one chance, but a hundred chances.",
+      "locator": "Self-Reliance ¶34",
+      "apply_it": "If a recent setback has stalled you, list three other paths or next attempts you could try.",
+      "quiz": {
+        "question": "What does Emerson admire about the sturdy lad who tries many trades?",
+        "options": [
+          "He has a hundred chances, not one",
+          "He becomes rich quickly",
+          "He never fails at anything",
+          "He sticks to a single profession"
+        ],
+        "answer": 0,
+        "explanation": "Emerson admires the lad who tries many trades, always lands on his feet, and so has a hundred chances, not one."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--23",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "empathy",
+        "support",
+        "encouragement"
+      ],
+      "title": "Help a struggling friend find their strength, don't just cry with them",
+      "body": "Emerson criticises a kind of sympathy that simply sits down and weeps with someone who is weeping. He'd rather offer truth and health, gently shaking the person back into contact with their own good sense.\n\nComfort matters, and listening comes first. But pure agreement with someone's despair can keep them stuck. Real support also reminds them of their strengths, helps them see options and encourages action. Aim to leave a friend a little stronger than you found them.",
+      "quote": "We come to them who weep foolishly and sit down and cry for company, instead of imparting to them truth and health in rough electric shocks",
+      "locator": "Self-Reliance ¶38",
+      "apply_it": "Next time a friend is down, after listening, ask: 'What's one thing you could do about this?'",
+      "quiz": {
+        "question": "What kind of sympathy does Emerson criticise?",
+        "options": [
+          "Giving honest advice",
+          "Sitting down and crying for company",
+          "Helping with practical tasks",
+          "Encouraging someone to act"
+        ],
+        "answer": 1,
+        "explanation": "Emerson criticises sympathy that just cries along, instead of offering truth and health that restore the person's reason."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--24",
+      "topic": "learning",
+      "tags": [
+        "thinking",
+        "frameworks",
+        "open-mind"
+      ],
+      "title": "Treat every system or framework as a tool, not the whole truth",
+      "body": "Emerson notes that a powerful thinker creates a new way of classifying the world, and followers delight in seeing everything through it. That helps at first. But unbalanced minds start treating the system as the final truth, as if its walls were the walls of the universe.\n\nThe same happens today with business models, self-help methods, religions and political ideologies. A good framework sharpens your thinking for a while. When you can't imagine any view outside it, it has become a cage.",
+      "quote": "the classification is idolized, passes for the end and not for a speedily exhaustible means",
+      "locator": "Self-Reliance ¶39",
+      "apply_it": "Think of a framework you rely on. Write down one situation it doesn't explain well.",
+      "quiz": {
+        "question": "What mistake does Emerson say unbalanced minds make with a master's system?",
+        "options": [
+          "They ignore it",
+          "They improve it too quickly",
+          "They treat it as the end rather than a temporary tool",
+          "They teach it to others"
+        ],
+        "answer": 2,
+        "explanation": "Emerson says the classification is idolised and treated as the end rather than a quickly exhausted means."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--25",
+      "topic": "creativity",
+      "tags": [
+        "innovation",
+        "local-solutions",
+        "design"
+      ],
+      "title": "Design for your own place instead of copying foreign models",
+      "body": "Emerson asks why his country's builders and artists copied European styles. He argues that an artist who studies the exact task at hand, considering the climate, soil, length of day, needs of the people and form of government, will create something that truly fits and is beautiful too.\n\nThis is powerful advice for entrepreneurs and builders everywhere. Solutions imported wholesale from elsewhere often fit poorly. Start from your own conditions and people, and you can create products, buildings and services better suited than any copy.",
+      "quote": "considering the climate, the soil, the length of the day, the wants of the people, the habit and form of the government",
+      "locator": "Self-Reliance ¶43",
+      "apply_it": "For a project you're working on, list three local conditions it must fit before borrowing ideas from elsewhere.",
+      "quiz": {
+        "question": "What does Emerson advise builders and artists to study?",
+        "options": [
+          "The most famous foreign styles",
+          "Whatever is most fashionable",
+          "The ancient Greek model",
+          "Their own local conditions and the people's needs"
+        ],
+        "answer": 3,
+        "explanation": "Emerson says by studying the precise task, including climate, soil and people's needs, the artist creates something that truly fits."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--26",
+      "topic": "creativity",
+      "tags": [
+        "talent",
+        "originality",
+        "skills"
+      ],
+      "title": "Develop your own gift instead of borrowing someone else's",
+      "body": "Emerson's advice is blunt: stand on your own ground and stop copying. Your own gift can be expressed with the full strength of a lifetime of practice, but a talent copied from someone else is only half yours. Nobody, he says, could have taught Shakespeare to be Shakespeare.\n\nYou can learn from others, but your best work comes from building on what you are naturally drawn to and good at. Copying a famous person's style keeps you second-rate; developing your own makes you the only one.",
+      "quote": "Insist on yourself; never imitate.",
+      "locator": "Self-Reliance ¶44",
+      "apply_it": "List two things you do well that others struggle with. Plan one way to develop one of them further this month.",
+      "quiz": {
+        "question": "Why does Emerson warn against imitating another person's talent?",
+        "options": [
+          "You only half possess a borrowed talent",
+          "It is against the law",
+          "Others will be angry",
+          "It takes too long"
+        ],
+        "answer": 0,
+        "explanation": "Emerson says your own gift has a lifetime's force, but you only have an extemporaneous half possession of another's."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--27",
+      "topic": "learning",
+      "tags": [
+        "technology",
+        "skills",
+        "dependence"
+      ],
+      "title": "Every convenience can weaken a skill you used to have",
+      "body": "Emerson notices that progress takes as well as gives. The person with a carriage has lost the use of his feet; the one with a fine watch can't tell the time by the sun. Notebooks, he says, weaken memory.\n\nThe same pattern applies to phones, maps and calculators. Tools are useful, but relying on them for everything can quietly erode abilities you might need. Choose which skills are worth keeping in your own head and hands, and practise them on purpose.",
+      "quote": "The civilized man has built a coach, but has lost the use of his feet.",
+      "locator": "Self-Reliance ¶47",
+      "apply_it": "Pick one skill you've handed to a device, like mental arithmetic or finding your way, and practise it this week.",
+      "quiz": {
+        "question": "What point does Emerson make about the man who built a coach?",
+        "options": [
+          "He travels further and is wiser",
+          "He became rich",
+          "He lost the use of his feet",
+          "He helped his neighbours"
+        ],
+        "answer": 2,
+        "explanation": "Emerson says the civilised man built a coach but lost the use of his feet: conveniences can weaken abilities."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--28",
+      "topic": "relationships",
+      "tags": [
+        "respect",
+        "wealth",
+        "judgement"
+      ],
+      "title": "Value people for who they are, not what they own",
+      "body": "Emerson observes that when people focus on property, they start measuring each other by what each has rather than what each is. Respect follows money and possessions instead of character.\n\nIt's an easy trap: treating the person with the car, the house or the title as more important. But wealth can be inherited, lucky or lost overnight, while character is the person. Notice whose opinions you weight more heavily, and why.",
+      "quote": "They measure their esteem of each other by what each has, and not by what each is.",
+      "locator": "Self-Reliance ¶50",
+      "apply_it": "In your next meeting with someone, note one quality of character you admire, regardless of their wealth or status.",
+      "quiz": {
+        "question": "What does Emerson say people tend to measure each other by?",
+        "options": [
+          "What each person is",
+          "Their honesty",
+          "Their kindness",
+          "What each person has"
+        ],
+        "answer": 3,
+        "explanation": "Emerson says people measure their esteem of each other by what each has, and not by what each is."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--29",
+      "topic": "money",
+      "tags": [
+        "skills",
+        "wealth",
+        "security"
+      ],
+      "title": "What you become is wealth that no one can take away",
+      "body": "Emerson distinguishes between property that merely lies with you, like an inheritance or lucky gain, and what a person acquires through who they are. The latter he calls living property: it doesn't depend on rulers, mobs, fire, storms or bankruptcy, and it renews itself wherever you go.\n\nSkills, knowledge, character and good habits are this kind of wealth. Markets can crash and possessions can be lost, but what you've built in yourself travels with you. Investing in it is the most secure investment there is.",
+      "quote": "what the man acquires is living property, which does not wait the beck of rulers, or mobs, or revolutions, or fire, or storm, or bankruptcies",
+      "locator": "Self-Reliance ¶50",
+      "apply_it": "Choose one skill that would increase your earning power and spend 30 minutes on it this week.",
+      "quiz": {
+        "question": "What does Emerson call what a person acquires through who they are?",
+        "options": [
+          "Living property",
+          "Dead weight",
+          "Borrowed wealth",
+          "Accidental fortune"
+        ],
+        "answer": 0,
+        "explanation": "Emerson calls it living property, which no ruler, disaster or bankruptcy can take away."
+      }
+    },
+    {
+      "id": "self-reliance-emerson--30",
+      "topic": "mindfulness",
+      "tags": [
+        "peace",
+        "luck",
+        "principles"
+      ],
+      "title": "Don't let lucky breaks set your mood; peace comes from within",
+      "body": "Emerson warns against riding the wheel of fortune. A political win, a rise in income or good news about someone you love lifts your spirits and you think good days are coming. 'Do not believe it,' he says. Lasting peace comes only from yourself and from living by your principles.\n\nGood luck is welcome, but if your calm depends on it, bad luck will take it away just as quickly. Focusing on what you can control, your effort and values, gives you a steadier peace that outside events can't easily shake.",
+      "quote": "Nothing can bring you peace but yourself. Nothing can bring you peace but the triumph of principles.",
+      "locator": "Self-Reliance ¶51",
+      "apply_it": "Write down one principle you want to live by this week, and notice how it steadies you when news is good or bad.",
+      "quiz": {
+        "question": "According to Emerson, what can bring you peace?",
+        "options": [
+          "A political victory",
+          "Rising income",
+          "Yourself and the triumph of principles",
+          "The return of good luck"
+        ],
+        "answer": 2,
+        "explanation": "Emerson says nothing can bring you peace but yourself and the triumph of principles, not lucky events."
       }
     }
   ]
