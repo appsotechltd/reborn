@@ -1,11 +1,16 @@
 // AI still images: shots for the "photo" look, and stand-alone art such as card and quote images.
 //
 // A scene or beat asks for one with `image: { prompt }`, `image: { prompt, text }` for an image
-// with words in it (a quote image), or `image: { file }` for an image on disk. Images are made once
-// and cached in .cache/images by provider + prompt, so re-renders cost nothing.
+// with words in it (a quote image), or `image: { file }` for an image on disk.
+//
+// Every generated image is paid for once and kept forever: it is saved under images/ in the media
+// bucket (R2, when the R2_* settings are present) and in .cache/images, keyed by provider, model,
+// size and prompt. A saved image is always reused; only --regenerate-images (IMAGE_REGENERATE=1)
+// makes new ones, and they replace the saved copies.
 //
 // Providers, each read from its own key:
-// - openai: OpenAI's image model (OPENAI_API_KEY, OPENAI_IMAGE_MODEL). Default for photoreal shots.
+// - openai: OpenAI's image model (OPENAI_API_KEY, OPENAI_IMAGE_MODEL) at medium quality
+//   (OPENAI_IMAGE_QUALITY). Default for photoreal shots.
 // - ideogram: Ideogram 3.0 (IDEOGRAM_API_KEY). Default for images with text, which it spells best.
 // - imagen: Google Imagen through the Gemini API (GEMINI_API_KEY, IMAGEN_MODEL).
 // IMAGE_PROVIDER (or --image-provider, or `provider` on one image) forces one; "auto" (the default)
@@ -21,6 +26,7 @@ import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { ROOT } from "./library.mjs";
+import { r2FromEnv } from "./mediastore.mjs";
 
 const CACHE = path.join(ROOT, ".cache", "images");
 
@@ -42,6 +48,7 @@ export function imagen({ apiKey = process.env.GEMINI_API_KEY, model = process.en
   return {
     name: "imagen",
     model,
+    size: "9:16",
     async generate(prompt) {
       const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:predict`, {
         method: "POST",
@@ -56,11 +63,12 @@ export function imagen({ apiKey = process.env.GEMINI_API_KEY, model = process.en
   };
 }
 
-export function openai({ apiKey = process.env.OPENAI_API_KEY, model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1", quality = process.env.OPENAI_IMAGE_QUALITY || "high", fetch = globalThis.fetch } = {}) {
+export function openai({ apiKey = process.env.OPENAI_API_KEY, model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1", quality = process.env.OPENAI_IMAGE_QUALITY || "medium", fetch = globalThis.fetch } = {}) {
   if (!apiKey) return null;
   return {
     name: "openai",
     model,
+    size: "1024x1536",
     async generate(prompt) {
       const res = await fetch("https://api.openai.com/v1/images/generations", {
         method: "POST",
@@ -81,6 +89,7 @@ export function ideogram({ apiKey = process.env.IDEOGRAM_API_KEY, speed = proces
   return {
     name: "ideogram",
     model: `ideogram-v3/${speed.toLowerCase()}`,
+    size: "9x16",
     async generate(prompt) {
       const form = new FormData();
       form.set("prompt", prompt);
@@ -127,18 +136,35 @@ function requests(scenes) {
   return scenes.flatMap((s) => [s.params?.image, ...(s.params?.beats || []).map((b) => b.image)]).filter(Boolean);
 }
 
-/** Makes (or reuses from the cache) one image; returns its file path. */
-export async function makeImage(img, { provider, providerName, cache = CACHE } = {}) {
+/** The permanent name of an image: the same provider, model, size and prompt always give the same key. */
+export function imageKey(p, prompt) {
+  return `images/${p.name}-${createHash("sha256").update([p.name, p.model, p.size, prompt].join("\n")).digest("hex").slice(0, 24)}.png`;
+}
+
+let warnedLocalOnly = false;
+
+/**
+ * Returns the file path of one image: the local copy, else the bucket's copy (downloaded once),
+ * else a newly generated one, which is then saved to both. `regenerate` skips the lookups.
+ */
+export async function makeImage(img, { provider, providerName, cache = CACHE, store = r2FromEnv(), regenerate = process.env.IMAGE_REGENERATE === "1" } = {}) {
   const kind = img.text ? "text" : "photo";
   const p = provider ?? pickProvider(kind, { name: img.provider || providerName });
   if (!p) throw new Error("an image needs generating but no image key is set (OPENAI_API_KEY, IDEOGRAM_API_KEY or GEMINI_API_KEY)");
   const prompt = fullPrompt(img);
-  const file = path.join(cache, `${p.name}-${createHash("sha256").update(`${p.model}\n${prompt}`).digest("hex").slice(0, 20)}.png`);
-  if (!existsSync(file)) {
-    await mkdir(cache, { recursive: true });
-    await writeFile(file, await p.generate(prompt));
-    console.log(`image (${p.name}): ${img.prompt.slice(0, 70)}`);
+  const key = imageKey(p, prompt);
+  const file = path.join(cache, path.basename(key));
+  await mkdir(cache, { recursive: true });
+  if (!regenerate) {
+    if (existsSync(file)) return file;
+    const saved = store && (await store.get(key));
+    if (saved) { await writeFile(file, saved); return file; }
   }
+  const png = await p.generate(prompt);
+  await writeFile(file, png);
+  if (store) await store.put(key, png);
+  else if (!warnedLocalOnly) { warnedLocalOnly = true; console.warn("R2 is not configured: new images are kept in .cache/images only"); }
+  console.log(`image (${p.name}, ${key}): ${img.prompt.slice(0, 60)}`);
   return file;
 }
 
@@ -146,9 +172,9 @@ export async function makeImage(img, { provider, providerName, cache = CACHE } =
  * Resolves each `image` to a file URL the renderer can load (`image.src`), generating missing ones.
  * `provider` forces one provider object; `providerName` forces one by name ("auto" picks per image).
  */
-export async function resolveImages(scenes, { provider, providerName } = {}) {
+export async function resolveImages(scenes, { provider, providerName, regenerate } = {}) {
   for (const img of requests(scenes)) {
-    const file = img.file ? path.resolve(ROOT, img.file) : await makeImage(img, { provider, providerName });
+    const file = img.file ? path.resolve(ROOT, img.file) : await makeImage(img, { provider, providerName, ...(regenerate !== undefined && { regenerate }) });
     img.src = pathToFileURL(file).href;
   }
 }
@@ -161,9 +187,10 @@ async function main() {
     if (a[i] === "--text") img.text = a[++i];
     else if (a[i] === "--provider") img.provider = a[++i];
     else if (a[i] === "--out") out = a[++i];
+    else if (a[i] === "--regenerate") process.env.IMAGE_REGENERATE = "1";
     else img.prompt = a[i];
   }
-  if (!img.prompt) throw new Error('usage: node src/images.mjs "<prompt>" [--text "<words>"] [--provider openai|ideogram|imagen] [--out file.png]');
+  if (!img.prompt) throw new Error('usage: node src/images.mjs "<prompt>" [--text "<words>"] [--provider openai|ideogram|imagen] [--out file.png] [--regenerate]');
   await copyFile(await makeImage(img), out);
   console.log(out);
 }

@@ -109,12 +109,14 @@ shot on a word of its narration with `params.beats: [{ "word": "drifting", "imag
 `"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
 under the voice.
 
-Photo images come from one of three providers, each read from its own key. Images are cached in
-`.cache/images` by provider and prompt, so each one is paid for only once:
+Photo images come from one of three providers, each read from its own key. Every image is paid
+for once and kept forever. It is saved under `images/` in the media bucket (R2, using the same
+`R2_*` settings as the API) and in `.cache/images`, keyed by provider, model, size and prompt. A
+saved image is always reused, on any machine. Only `--regenerate-images` makes new ones.
 
 | Provider | Key | Default for |
 |---|---|---|
-| OpenAI (`gpt-image-1`, override with `OPENAI_IMAGE_MODEL`) | `OPENAI_API_KEY` | photoreal shots and card art |
+| OpenAI (`gpt-image-1` at medium quality; `OPENAI_IMAGE_MODEL`, `OPENAI_IMAGE_QUALITY`) | `OPENAI_API_KEY` | photoreal shots and card art |
 | Ideogram 3.0 | `IDEOGRAM_API_KEY` | images with words in them (`image: { prompt, text }`), such as quote images |
 | Google Imagen (`IMAGEN_MODEL`) | `GEMINI_API_KEY` | fallback |
 
