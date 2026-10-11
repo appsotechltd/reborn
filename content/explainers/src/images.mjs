@@ -56,7 +56,7 @@ export function imagen({ apiKey = process.env.GEMINI_API_KEY, model = process.en
   };
 }
 
-export function openai({ apiKey = process.env.OPENAI_API_KEY, model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1", quality = process.env.OPENAI_IMAGE_QUALITY || "high", fetch = globalThis.fetch } = {}) {
+export function openai({ apiKey = process.env.OPENAI_API_KEY, model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1", quality = process.env.OPENAI_IMAGE_QUALITY || "medium", fetch = globalThis.fetch } = {}) {
   if (!apiKey) return null;
   return {
     name: "openai",
