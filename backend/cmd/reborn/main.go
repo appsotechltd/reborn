@@ -27,6 +27,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/api"
 	"github.com/appsotechltd/reborn/backend/internal/auth"
 	"github.com/appsotechltd/reborn/backend/internal/cache"
+	"github.com/appsotechltd/reborn/backend/internal/cardaudio"
 	"github.com/appsotechltd/reborn/backend/internal/config"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/db"
@@ -167,6 +168,12 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	}
 	store.SetExplainers(set)
 	slog.Info("explainer videos", "cards", len(set), "manifest", cfg.ExplainerDir)
+	audio, err := cardaudio.Load(ctx, cfg.CardAudioDir, media)
+	if err != nil {
+		return fmt.Errorf("load card audio: %w", err)
+	}
+	store.SetAudio(audio)
+	slog.Info("card audio", "cards", len(audio), "manifest", cfg.CardAudioDir)
 	srv := &api.Server{
 		Store:       st,
 		Cache:       c,

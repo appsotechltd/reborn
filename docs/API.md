@@ -64,6 +64,20 @@ The web player loads them with `crossorigin="anonymous"` (needed for the caption
 web origin must be in `CORS_ORIGINS`, as it already is for API calls.
 `kind` is `animated` today and `film` for realistic films later. See `content/explainers/README.md`.
 
+Cards that have been voiced also carry `audio` (absent otherwise), played by the Listen button and Listen mode:
+
+```json
+"audio": { "url": "/media/audio/meditations-marcus-aurelius--01.mp3", "duration_s": 42.9,
+           "voice": "bm_george", "voice_name": "George" }
+```
+
+The recording reads the title, the body, "Apply it." and the tip, the support or health note when the card
+has one, and "From <source>, by <authors>." Each book has one voice from the approved list
+(`content/audio/voices.json`). URLs follow the same rules as `explainer`. Without `audio`, clients read the
+same text with the device's voice. Listen mode plays the `GET /v1/timeline` queue and, once at least 70% of a
+card has been heard, calls `POST /v1/seen` and `POST /v1/cards/{id}/view` (skipped within 5 seconds: nothing;
+otherwise seen only). See `content/audio/README.md`.
+
 ### User
 
 ```json

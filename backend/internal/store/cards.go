@@ -10,6 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/appsotechltd/reborn/backend/internal/cardaudio"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/jackc/pgx/v5"
@@ -44,12 +45,28 @@ type Card struct {
 	Credit     string        `json:"credit"`
 	// Explainer is the card's animated explainer video, when one is rendered.
 	Explainer *explainers.Explainer `json:"explainer,omitempty"`
+	// Audio is the card read aloud in its book's voice, when one is recorded.
+	Audio *cardaudio.Audio `json:"audio,omitempty"`
 }
 
 var explainerSet atomic.Pointer[explainers.Set]
 
 // SetExplainers sets the explainer videos attached to cards as they are read.
 func SetExplainers(set explainers.Set) { explainerSet.Store(&set) }
+
+var audioSet atomic.Pointer[cardaudio.Set]
+
+// SetAudio sets the recordings attached to cards as they are read.
+func SetAudio(set cardaudio.Set) { audioSet.Store(&set) }
+
+func audioFor(id string) *cardaudio.Audio {
+	if set := audioSet.Load(); set != nil {
+		if a, ok := (*set)[id]; ok {
+			return &a
+		}
+	}
+	return nil
+}
 
 func explainerFor(id string) *explainers.Explainer {
 	if set := explainerSet.Load(); set != nil {
@@ -87,6 +104,7 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 	}
 	c.Credit = "Source: " + c.Source.Attribution
 	c.Explainer = explainerFor(c.ID)
+	c.Audio = audioFor(c.ID)
 	return c, nil
 }
 
