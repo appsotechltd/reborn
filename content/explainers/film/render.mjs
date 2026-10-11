@@ -9,8 +9,8 @@
 // Each shot is generated once and cached by provider + prompt, so editing one
 // shot only re-renders that shot. Narration uses the same provider as the
 // animated explainers (an approved voice, chosen with --voice). The source
-// credit and any health note are burned in; captions are not (they hide the picture)
-// and go to a .vtt file instead. The film ends on the same end card as the animated explainers.
+// credit and any health note are burned in; captions are not (they hide the picture).
+// The film ends on the same end card as the animated explainers.
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
@@ -18,7 +18,6 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 import { ROOT, loadCard } from "../src/library.mjs";
 import { narrator, narrate } from "../src/narration.mjs";
-import { phrases, wordCount } from "../src/timeline.mjs";
 import { launchBrowser, renderScenes } from "../src/render.mjs";
 import { FilmPlan, checkPlan } from "./schema.mjs";
 import { videoProvider } from "./providers/index.mjs";
@@ -119,28 +118,16 @@ async function renderFilm(cardId, opt) {
     await browser.close();
   }
 
-  // 3. Narration and captions, each shot's line starting just after its cut.
+  // 3. Narration, each shot's line starting just after its cut.
   const voice = narrator(opt.voice);
   const audio = await narrate(voice, `${cardId}-film`, plan.shots.map((s) => s.narration));
-  const cues = [];
   let t = 0;
   const delays = [];
   plan.shots.forEach((s, i) => {
-    const start = t + 0.3;
-    const words = wordCount(s.narration);
-    const speech = audio[i]?.seconds ?? words / 2.6;
-    if (words) {
-      let c = start;
-      for (const p of phrases(s.narration)) {
-        const len = (wordCount(p) / words) * speech;
-        cues.push({ start: c, end: c + len, text: p });
-        c += len;
-      }
-    }
-    if (audio[i]) delays.push({ file: audio[i].file, ms: Math.round(start * 1000) });
+    if (audio[i]) delays.push({ file: audio[i].file, ms: Math.round((t + 0.3) * 1000) });
     t += s.seconds;
   });
-  const assFile = path.join(dir, "captions.ass");
+  const assFile = path.join(dir, "overlays.ass");
   await writeFile(assFile, overlays(card, filmSeconds));
 
   // 4. Assemble: shots + end card, burn in the credit, lay narration over.
@@ -162,12 +149,10 @@ async function renderFilm(cardId, opt) {
   await ffmpeg([...inputs, ...audioInputs, "-filter_complex", filters.join(";"), ...maps,
     "-c:v", "libx264", "-preset", "slow", "-crf", "22", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-t", String(total), `${base}.mp4`]);
   await ffmpeg(["-ss", String(Math.min(2, plan.shots[0].seconds / 2)), "-i", `${base}.mp4`, "-frames:v", "1", "-q:v", "3", `${base}.jpg`]);
-  const vtt = (s) => new Date(s * 1000).toISOString().slice(11, 23);
-  await writeFile(`${base}.vtt`, "WEBVTT\n\n" + cues.map((c, i) => `${i + 1}\n${vtt(c.start)} --> ${vtt(c.end)}\n${c.text}\n`).join("\n"));
   console.log(`${cardId}: film ${total}s -> ${path.relative(process.cwd(), base)}.mp4`);
 
   return {
-    kind: "film", video: `${cardId}.film.mp4`, poster: `${cardId}.film.jpg`, captions: `${cardId}.film.vtt`,
+    kind: "film", video: `${cardId}.film.mp4`, poster: `${cardId}.film.jpg`,
     duration_s: total, width: W, height: H, narrated: Boolean(voice), voice: voice?.voice ?? null,
     provider: `${provider.name}/${provider.model}`, plan: `film/plans/${cardId}.json`,
   };

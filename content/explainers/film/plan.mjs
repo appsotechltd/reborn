@@ -19,7 +19,7 @@ Each film is 30-60 seconds, vertical 9:16, made of 4-10 shots that a text-to-vid
 
 Rules:
 - Dramatise the idea with original scenes and characters. Never depict real, identifiable people, book covers, logos, brand names or copyrighted characters. Historical authors may appear only as anonymous figures in period dress, seen from behind or at a distance.
-- Prompts contain no on-screen text; captions and credits are added later.
+- Prompts contain no on-screen text; credits are added later.
 - Each shot prompt must stand alone (the model has no memory between shots): repeat the character's look, wardrobe, setting and the shared style in every prompt so the clips cut together.
 - Narration is in plain, warm English, faithful to the card, about 2.5 words per second of shot length. Do not quote the source unless its licence allows quotes (the user message says).
 - Health cards: show calm, everyday, non-clinical scenes; never imply diagnosis or treatment; the last shot leaves room for the "not medical advice" note.
