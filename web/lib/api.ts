@@ -12,6 +12,7 @@ import type {
   Referrals,
   Streak,
   AuthorPage,
+  AuthorSummary,
   AuthResponse,
   Card,
   Comment,
@@ -188,8 +189,10 @@ export function createApiClient(
     daily: () => req<{ date: string; card: Card }>("/v1/daily"),
     card: (id: string) => req<Card>(`/v1/cards/${enc(id)}`),
     cards: (ids: string[]) => req<{ cards: Card[] }>("/v1/cards", { query: { ids: ids.join(",") } }),
-    sources: (q: { topic?: string; cursor?: string | null; limit?: number } = {}) =>
+    sources: (q: { topic?: string; q?: string; cursor?: string | null; limit?: number } = {}) =>
       req<{ sources: SourceSummary[]; next_cursor: string | null }>("/v1/sources", { query: q }),
+    authors: (q: { topic?: string; q?: string; cursor?: string | null; limit?: number } = {}) =>
+      req<{ authors: AuthorSummary[]; next_cursor: string | null }>("/v1/authors", { query: q }),
     source: (id: string) =>
       req<{ source: Source; cards: Card[]; follow?: FollowState }>(`/v1/sources/${enc(id)}`),
     search: (q: { q: string; topic?: string; limit?: number }) =>

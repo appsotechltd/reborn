@@ -10,7 +10,7 @@ import { PremiumBadge } from "./PremiumBadge";
 /** On phones the header has no link strip, so the links that aren't tabs are in this menu. */
 const PHONE_EXTRAS = [
   { href: "/search", label: "Search" },
-  { href: "/sources", label: "All sources" },
+  { href: "/sources", label: "Library" },
 ];
 
 const MENU_BOX =

@@ -6,6 +6,7 @@ import type {
   DiscoverResponse,
   PublicStash,
   AuthorPage,
+  AuthorSummary,
   Card,
   FeedResponse,
   FollowState,
@@ -68,6 +69,33 @@ export async function getAllSources(topic?: string, max = 500): Promise<SourceSu
       { topic, cursor, limit: 50 },
     );
     out.push(...page.sources);
+    cursor = page.next_cursor;
+  } while (cursor && out.length < max);
+  return out;
+}
+
+export interface LibraryQuery {
+  topic?: string;
+  q?: string;
+  cursor?: string | null;
+  limit?: number;
+}
+
+/** One page of GET /v1/sources (the Library's Books tab). */
+export const getSourcesPage = (q: LibraryQuery = {}) =>
+  get<{ sources: SourceSummary[]; next_cursor: string | null }>("/v1/sources", { limit: 50, ...q });
+
+/** One page of GET /v1/authors (the Library's Authors tab). */
+export const getAuthorsPage = (q: LibraryQuery = {}) =>
+  get<{ authors: AuthorSummary[]; next_cursor: string | null }>("/v1/authors", { limit: 50, ...q });
+
+/** Every author (follows cursors, capped), for the sitemap. */
+export async function getAllAuthors(max = 2000): Promise<AuthorSummary[]> {
+  const out: AuthorSummary[] = [];
+  let cursor: string | null = null;
+  do {
+    const page: { authors: AuthorSummary[]; next_cursor: string | null } = await getAuthorsPage({ cursor });
+    out.push(...page.authors);
     cursor = page.next_cursor;
   } while (cursor && out.length < max);
   return out;

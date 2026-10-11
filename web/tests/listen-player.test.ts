@@ -359,3 +359,34 @@ describe("ListenPlayer", () => {
     vi.restoreAllMocks();
   });
 });
+
+describe("ListenPlayer.playCards (a book's or an author's cards)", () => {
+  it("plays a fixed list in order, never pages the timeline, and finishes after the last card", () => {
+    const { player, api, main } = setup();
+    player.playCards([withAudio(3), withAudio(1), withAudio(2)], { queue: "source:example-book|all" });
+    const s = player.getState();
+    expect(s.queue).toBe("source:example-book|all");
+    expect(s.single).toBe(false);
+    expect(s.items.map((i) => i.id)).toEqual(["example-book--03", "example-book--01", "example-book--02"]);
+    const a = main();
+    expect(a.src).toContain("example-book--03.mp3");
+    for (let n = 0; n < 2; n++) {
+      end(a); // the card
+      end(a); // the chime
+    }
+    expect(a.src).toContain("example-book--02.mp3");
+    end(a);
+    expect(player.getState().phase).toBe("finished");
+    expect(api.timeline).not.toHaveBeenCalled();
+  });
+
+  it("records seen and read as in the timeline", async () => {
+    const { player, api, main } = setup();
+    player.playCards([withAudio(1), withAudio(2)]);
+    expect(player.getState().queue).toBeNull();
+    end(main());
+    await Promise.resolve();
+    expect(api.markSeen).toHaveBeenCalledWith(["example-book--01"]);
+    expect(api.recordView).toHaveBeenCalledWith("example-book--01");
+  });
+});

@@ -44,7 +44,8 @@ export function SiteFooter() {
           cards. Every card credits its source and licence.
         </p>
         <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
-          <Link href="/sources" className="hover:underline">All sources</Link>
+          <Link href="/sources" className="hover:underline">Library</Link>
+          <Link href="/authors" className="hover:underline">Authors</Link>
           <Link href="/search" className="hover:underline">Search</Link>
           <Link href="/contribute" className="hover:underline">Contribute an idea</Link>
           <Link href="/ask" className="hover:underline">Ask the guide</Link>

@@ -68,6 +68,11 @@ export interface ListenState {
   sleep: SleepTimer;
   /** Only the one card (from its page), no queue. */
   single: boolean;
+  /**
+   * What a fixed list was started from (e.g. "source:meditations", "author:Epictetus"), so its
+   * page can show the session as its own; null for the timeline and single cards.
+   */
+  queue: string | null;
   loadingMore: boolean;
   error: string | null;
   /** Which session this is: a new number each time one starts. */
@@ -188,6 +193,11 @@ export function itemsFromPosts(posts: Post[]): ListenItem[] {
   return posts.map((p) => ({ id: p.id, card: p.card }));
 }
 
+/** A card's post has the card's id. */
+export function itemsFromCards(cards: Card[]): ListenItem[] {
+  return cards.map((card) => ({ id: card.id, card }));
+}
+
 // --- The player ----------------------------------------------------------------------------------
 
 export interface ListenDeps {
@@ -209,6 +219,8 @@ export interface StartOptions {
   /** The feed's topic filter, as `topics` for /v1/timeline. */
   topics?: string;
   single?: boolean;
+  /** Names a fixed list (see ListenState.queue). */
+  queue?: string;
 }
 
 const IDLE: Omit<ListenState, "speed"> = {
@@ -222,6 +234,7 @@ const IDLE: Omit<ListenState, "speed"> = {
   duration: 0,
   sleep: null,
   single: false,
+  queue: null,
   loadingMore: false,
   error: null,
   session: 0,
@@ -323,10 +336,19 @@ export class ListenPlayer {
       index: Math.min(Math.max(0, opts.index ?? 0), items.length - 1),
       playing: true,
       single: !!opts.single,
+      queue: opts.queue ?? null,
       session: this.session,
     });
     this.bindMediaSession();
     this.go(this.state.index, false);
+  }
+
+  /**
+   * Starts a session over a fixed list of cards, in order (a book's or an author's page): no
+   * timeline paging, so it finishes after the last card. Seen and read work as in the timeline.
+   */
+  playCards(cards: Card[], opts: { queue?: string; index?: number } = {}) {
+    this.start({ items: itemsFromCards(cards), index: opts.index, cursor: null, queue: opts.queue });
   }
 
   play() {
