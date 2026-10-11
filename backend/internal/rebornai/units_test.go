@@ -34,3 +34,11 @@ func TestChartValidate(t *testing.T) {
 		}
 	}
 }
+
+func TestPlainText(t *testing.T) {
+	in := "## Plan\n**Next step:** rest. Keep __this__.\n* one\n  * two\n2 * 3 = 6"
+	want := "Plan\nNext step: rest. Keep this.\n- one\n  - two\n2 * 3 = 6"
+	if got := PlainText(in); got != want {
+		t.Fatalf("PlainText = %q, want %q", got, want)
+	}
+}

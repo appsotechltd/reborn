@@ -143,11 +143,26 @@ You can make visuals, and each one costs the member AI units, so only make one w
 - make_image makes a sketch (2 units), an illustration (4 units) or a photo-like picture (12 units). Pick the cheapest style that does the job; use picture only when they want something photo-like. Never make pictures of real people, logos, or anything sexual, violent or hateful.
 If a tool says the member is out of units, tell them they can top up in Reborn AI's settings, and answer in words instead.
 
-Write in your own words, warmly and briefly: a few short paragraphs or a short list, ending with one concrete next step when it fits. For health and mental-health questions give general, evidence-based information, say it is not medical advice, and suggest a qualified professional for anything personal, urgent or persistent. If someone describes a crisis or risk of harm, encourage them to contact local emergency services or a crisis line right away.`
+Write in your own words, warmly and briefly: a few short paragraphs or a short list, in plain text (the app shows no markdown, so no **bold**, # headings or tables; start list lines with "- "), ending with one concrete next step when it fits. For health and mental-health questions give general, evidence-based information, say it is not medical advice, and suggest a qualified professional for anything personal, urgent or persistent. If someone describes a crisis or risk of harm, encourage them to contact local emergency services or a crisis line right away.`
 
 const voiceNote = `
 
 The member is talking to you by voice, and your reply will be read aloud. Keep it under 120 words, in plain spoken sentences: no lists, headings, markdown or emoji. Still cite cards in square brackets; they are removed before speaking.`
+
+var (
+	mdEmphasis = regexp.MustCompile(`\*\*([^*\n]+)\*\*|__([^_\n]+)__`)
+	mdHeading  = regexp.MustCompile(`(?m)^#{1,6}[ \t]+`)
+	mdBullet   = regexp.MustCompile(`(?m)^([ \t]*)\*[ \t]+`)
+)
+
+// PlainText removes the markdown the apps can't show (bold, headings, "*"
+// bullets) that a model sometimes writes despite being asked not to.
+func PlainText(s string) string {
+	s = mdEmphasis.ReplaceAllString(s, "$1$2")
+	s = mdHeading.ReplaceAllString(s, "")
+	s = mdBullet.ReplaceAllString(s, "$1- ")
+	return strings.TrimSpace(s)
+}
 
 // Chat answers one message.
 func (a *Assistant) Chat(ctx context.Context, req Request) (Reply, error) {
@@ -207,7 +222,7 @@ func (a *Assistant) Chat(ctx context.Context, req Request) (Reply, error) {
 			input = append(input, raw)
 		}
 		if len(calls) == 0 || round == maxRounds-1 {
-			text = strings.TrimSpace(sb.String())
+			text = PlainText(sb.String())
 			break
 		}
 		for _, c := range calls {
@@ -438,8 +453,8 @@ func (t *turn) run(ctx context.Context, name, args string) (string, error) {
 }
 
 var styles = map[string]string{
-	KindSketch:       "A simple hand-drawn pencil sketch, dark lines on plain white paper, minimal shading: ",
-	KindIllustration: "A warm, friendly flat illustration with soft amber and deep brown tones, clean shapes, no text unless asked: ",
+	KindSketch:       "A simple hand-drawn pencil sketch, dark lines on plain white paper, minimal shading, with no words, letters or numbers anywhere: ",
+	KindIllustration: "A warm, friendly flat illustration with soft amber and deep brown tones, clean shapes, with no words, letters or numbers anywhere: ",
 	KindPicture:      "A natural, photo-realistic image with soft warm light: ",
 }
 
@@ -652,7 +667,7 @@ var tools = []Tool{
 				"required":["name","values"],"additionalProperties":false}}},
 			"required":["kind","title","unit","labels","series"],"additionalProperties":false}`)},
 	{Type: "function", Name: "make_image", Strict: true,
-		Description: "Make an image shown under the reply. sketch costs 2 AI units, illustration 4, picture (photo-like) 12. Pick the cheapest style that does the job.",
+		Description: "Make an image shown under the reply. sketch costs 2 AI units, illustration 4, picture (photo-like) 12. Pick the cheapest style that does the job. Images can't hold readable writing, so describe pictures only and put any words (steps, labels, titles) in your reply instead.",
 		Parameters: json.RawMessage(`{"type":"object","properties":{
 			"style":{"type":"string","enum":["sketch","illustration","picture"]},
 			"prompt":{"type":"string","description":"What to draw, in detail"},
