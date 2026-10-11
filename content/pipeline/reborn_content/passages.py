@@ -48,6 +48,7 @@ _TRANSLATE = str.maketrans(
 )
 _ELLIPSIS = re.compile(r"\s*(?:\.\s*\.\s*\.|…)\s*")
 _NON_WORD = re.compile(r"[^\w']+")
+_QUOTE_MARK = re.compile(r"(?<!\w)'|'(?!\w)")  # a quotation mark, not an apostrophe inside a word
 
 
 def normalise(text: str) -> str:
@@ -57,7 +58,7 @@ def normalise(text: str) -> str:
     deliberate, as quotes should follow the edition they cite.
     """
     text = unicodedata.normalize("NFKC", text).translate(_TRANSLATE).lower()
-    return " ".join(_NON_WORD.sub(" ", text).split())
+    return " ".join(_QUOTE_MARK.sub(" ", _NON_WORD.sub(" ", text)).split())
 
 
 def quote_segments(quote: str) -> list[str]:
