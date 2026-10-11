@@ -295,8 +295,8 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
 }
 
 /// The phone timeline: one post per page, swiped vertically with snapping.
-/// A long post scrolls inside its page and hands the swipe back to the feed
-/// at either end. The current page counts as on screen for the seen and read
+/// Each page fits the screen (a long post is cut short, with "Read more"
+/// for the full card), so a swipe always moves one post. The current page counts as on screen for the seen and read
 /// rules, and its video (if any) is the one that plays.
 class _SwipeFeed extends StatefulWidget {
   const _SwipeFeed({
@@ -326,7 +326,6 @@ class _SwipeFeedState extends State<_SwipeFeed> {
   final _focus = FocusNode(debugLabel: 'swipe feed');
   int _page = 0;
   bool _turning = false;
-  double _overscroll = 0;
 
   List<Post> get _posts => widget.state.posts;
 
@@ -383,7 +382,7 @@ class _SwipeFeedState extends State<_SwipeFeed> {
     setState(() {}); // page position semantics
   }
 
-  /// Moves exactly one page; used by the in-page scroll hand-off and keys.
+  /// Moves exactly one page; used by the keys.
   Future<void> _turn(int delta) async {
     if (_turning || !_pages.hasClients) return;
     final target = _page + delta;
@@ -469,17 +468,11 @@ class _SwipeFeedState extends State<_SwipeFeed> {
             await widget.onRefresh();
             if (mounted && _pages.hasClients) _pages.jumpToPage(0);
           },
-          // The first post's own scroll can pull to refresh too.
-          notificationPredicate: (n) =>
-              n.depth == 0 || (n.depth == 1 && _page == 0),
           child: NotificationListener<ScrollNotification>(
             onNotification: (n) {
               if (n is ScrollStartNotification && !_focus.hasFocus) {
                 _focus.requestFocus();
               }
-              // Notifications from inside a page arrive with depth 1 here;
-              // re-dispatch them as the page's own.
-              if (n.depth == 1) _onInnerAtDepth(n);
               return false;
             },
             child: PageView.builder(
@@ -500,23 +493,6 @@ class _SwipeFeedState extends State<_SwipeFeed> {
         ),
       ),
     );
-  }
-
-  /// A drag past the top or bottom of a long post turns the page. Flings
-  /// that hit an edge don't, so a quick scroll through a post stays on it.
-  void _onInnerAtDepth(ScrollNotification n) {
-    if (n.metrics.axis != Axis.vertical) return;
-    if (n is ScrollStartNotification) _overscroll = 0;
-    if (n is OverscrollNotification && n.dragDetails != null) {
-      _overscroll += n.overscroll;
-      if (_overscroll > 24) {
-        _overscroll = 0;
-        _turn(1);
-      } else if (_overscroll < -24 && _page > 0) {
-        _overscroll = 0;
-        _turn(-1);
-      }
-    }
   }
 }
 

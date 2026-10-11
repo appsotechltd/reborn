@@ -15,7 +15,11 @@ interface CardViewProps {
   children?: ReactNode;
   /** Link the title (used when the card is shown in a list such as the timeline). */
   titleHref?: string;
-  /** In a feed: the explainer plays by itself (muted) while it is on screen. */
+  /**
+   * In the home feed: the explainer plays by itself (muted) while it is on screen, and below md
+   * (the full-screen phone feed, with `titleHref`) the card becomes a preview that fits its slide:
+   * topic, title, source and as much of the body as fits (faded at the cut), then "Read more".
+   */
   feed?: boolean;
 }
 
@@ -42,10 +46,16 @@ export function AuthorLinks({ authors, className = "link" }: { authors: string[]
 export function CardView({ card, headingLevel = "h1", actions, children, titleHref, feed = false }: CardViewProps) {
   const Heading = headingLevel;
   const Sub = headingLevel === "h1" ? "h2" : "h3";
+  // The phone feed's preview. Everything it leaves out is only hidden below md, so tablets and
+  // desktops still get the full card; the card's own page has it all.
+  const preview = feed && titleHref ? titleHref : null;
+  const video = !!card.explainer;
+  const phoneOnly = preview ? "max-md:hidden" : "";
   return (
     <article
-      className={`mx-auto w-full max-w-read ${feed && card.explainer ? "max-md:flex max-md:flex-col" : ""}`}
+      className={`mx-auto w-full max-w-read ${preview ? "max-md:flex max-md:min-h-0 max-md:flex-1 max-md:flex-col" : ""}`}
       aria-labelledby={`card-${card.id}-title`}
+      data-card-preview={preview ? "" : undefined}
     >
       <p className="eyebrow">
         <Link href={`/topics/${card.topic}`} className="hover:text-accent-text hover:underline">
@@ -54,7 +64,9 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       </p>
       <Heading
         id={`card-${card.id}-title`}
-        className="mt-2 font-serif text-3xl font-semibold leading-tight tracking-tight text-balance sm:text-4xl"
+        className={`mt-2 font-serif font-semibold leading-tight tracking-tight text-balance ${
+          preview ? `text-2xl md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}` : "text-3xl sm:text-4xl"
+        }`}
       >
         {titleHref ? (
           <Link href={titleHref} className="hover:underline">
@@ -84,23 +96,47 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         <p
           role="note"
           aria-label={SUPPORT_TOPICS.has(card.topic) ? "Support note" : "Health disclaimer"}
-          className="mt-6 rounded-inset border border-warn-border bg-warn px-4 py-3 text-sm text-warn-fg"
+          className={`mt-6 rounded-inset border border-warn-border bg-warn px-4 py-3 text-sm text-warn-fg ${
+            preview ? "max-md:mt-3 max-md:py-2 max-md:text-xs" : ""
+          }`}
         >
-          <strong className="font-semibold">{SUPPORT_TOPICS.has(card.topic) ? "Support note: " : "Health note: "}</strong>
-          {card.disclaimer}
+          {/* Clamp an inner span: clamping the padded box lets a third line show in its padding. */}
+          <span className={preview ? "max-md:line-clamp-2" : undefined}>
+            <strong className="font-semibold">{SUPPORT_TOPICS.has(card.topic) ? "Support note: " : "Health note: "}</strong>
+            {card.disclaimer}
+          </span>
         </p>
       ) : null}
 
       {card.explainer ? <ExplainerVideo card={card} feed={feed} /> : null}
 
-      <div className="prose-reborn mt-6">
+      <div
+        data-card-body
+        className={`prose-reborn mt-6 ${
+          preview
+            ? video
+              ? "max-md:hidden"
+              : // As much as fits above "Read more", clipped (not scrollable) and faded at the cut.
+                "max-md:mt-4 max-md:min-h-0 max-md:flex-1 max-md:overflow-clip max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-3.5rem),transparent)]"
+            : ""
+        }`}
+      >
         {paragraphs(card.body).map((p, i) => (
           <p key={i}>{p}</p>
         ))}
       </div>
 
+      {preview && (!video || card.body.trim()) ? (
+        // Always shown in the preview (it never has Apply it or the full credit), only on phones.
+        <p className="mt-3 shrink-0 md:hidden">
+          <Link href={preview} className="btn btn-small" data-read-more>
+            Read more<span className="sr-only">: {card.title}</span>
+          </Link>
+        </p>
+      ) : null}
+
       {card.quote ? (
-        <figure className="mt-6 border-l-2 border-oxblood pl-4">
+        <figure className={`mt-6 border-l-2 border-oxblood pl-4 ${phoneOnly}`}>
           <blockquote className="font-serif text-xl font-semibold italic leading-relaxed">“{card.quote}”</blockquote>
           <figcaption className="mt-1 text-sm text-muted">
             {card.source.authors.join(", ")}, <cite>{card.source.title}</cite>
@@ -110,7 +146,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
 
       <section
         aria-label="Apply it"
-        className="mt-8 rounded-inset bg-surface-2 px-5 py-4"
+        className={`mt-8 rounded-inset bg-surface-2 px-5 py-4 ${phoneOnly}`}
       >
         <Sub className="eyebrow">Apply it</Sub>
         <p className="mt-1 text-lg leading-relaxed">{card.apply_it}</p>
@@ -118,7 +154,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
 
       {children}
 
-      <footer className="mt-8 border-t border-line pt-4 text-sm text-muted" data-testid="card-credit">
+      <footer className={`mt-8 border-t border-line pt-4 text-sm text-muted ${phoneOnly}`} data-testid="card-credit">
         <p>
           <Link href={`/sources/${card.source.id}`} className="hover:text-fg hover:underline">
             {card.credit}

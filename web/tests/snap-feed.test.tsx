@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { PostCard } from "@/components/PostCard";
 import { Timeline } from "@/components/Timeline";
 import { AuthProvider } from "@/lib/auth";
 import { currentSlide, keyDirection } from "@/lib/use-snap-feed";
@@ -151,7 +152,110 @@ describe("snap feed keyboard navigation", () => {
     expect(slide.className).toContain("max-md:snap-start");
     expect(slide.className).toContain("max-md:snap-always");
     expect(slide.className).toContain("max-md:h-[var(--slide-h)]");
-    expect(slide.querySelector("[data-slide-scroll]")).toBeTruthy();
     expect(screen.getAllByTestId("post-actions")[0].className).toContain("max-md:shrink-0");
+  });
+
+  it("has no scroll container inside a slide, so a swipe always moves to the next post", () => {
+    stubMatchMedia({ "max-width": true });
+    renderFeed();
+    const list = screen.getByRole("list", { name: "Timeline" });
+    expect(list.querySelector("[data-slide-scroll]")).toBeNull();
+    for (const el of list.querySelectorAll<HTMLElement>("*")) {
+      expect(el.getAttribute("class") ?? "").not.toMatch(/overflow(-y)?-(auto|scroll)\b/);
+    }
+  });
+
+  it("moves to the next post with the arrow keys while Read more has focus", () => {
+    stubMatchMedia({ "max-width": true });
+    renderFeed();
+    fireEvent.keyDown(document.body, { key: "j" });
+    vi.spyOn(Date, "now").mockReturnValue(Date.now() + 5000);
+    const readMore = screen.getAllByRole("link", { name: /^Read more/ })[0];
+    readMore.focus();
+    expect(document.activeElement).toBe(readMore);
+    const down = fireEvent.keyDown(readMore, { key: "ArrowDown" });
+    expect(down).toBe(false); // handled: moved a post, not scrolled
+    expect(scrolled.map((s) => s.index)).toEqual([0, 1]);
+    expect(document.activeElement?.textContent).toBe("Idea 2");
+  });
+});
+
+describe("snap feed preview", () => {
+  const video = {
+    kind: "animated" as const,
+    video_url: "/media/explainers/example-book--09.mp4",
+    poster_url: "/media/explainers/example-book--09.jpg",
+    captions_url: null,
+    duration_s: 40,
+    width: 720,
+    height: 1280,
+    narrated: false,
+  };
+
+  beforeEach(() => {
+    installFakeIO();
+    vi.stubGlobal("fetch", vi.fn(async () => json(200, { posts: [], next_cursor: null })));
+  });
+  afterEach(() => vi.unstubAllGlobals());
+
+  const renderCard = (post: (typeof posts)[number], snap = false) =>
+    render(
+      <AuthProvider>
+        <PostCard post={post} snap={snap} />
+      </AuthProvider>,
+    );
+
+  it("clamps the body to the slide, fades it at the cut and leaves the rest to the card page", () => {
+    const { container } = renderCard(posts[0], true);
+    const article = container.querySelector("article")!;
+    expect(article.hasAttribute("data-card-preview")).toBe(true);
+    expect(article.className).toContain("max-md:flex-col");
+    // Topic, title and source stay.
+    expect(screen.getByRole("link", { name: "Personal Development" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Idea 1" }).className).toContain("max-md:line-clamp-3");
+    expect(screen.getByRole("link", { name: "An Example Book" })).toBeTruthy();
+    // The body takes what space is left, clipped (never scrolled) and faded at the bottom.
+    const body = container.querySelector<HTMLElement>("[data-card-body]")!;
+    expect(body.className).toContain("max-md:flex-1");
+    expect(body.className).toContain("max-md:min-h-0");
+    expect(body.className).toContain("max-md:overflow-clip");
+    expect(body.className).toMatch(/max-md:\[mask-image:linear-gradient\(to_bottom/);
+    // Apply it and the full credit are on the card page only (on phones).
+    expect(screen.getByRole("region", { name: "Apply it" }).className).toContain("max-md:hidden");
+    expect(screen.getByTestId("card-credit").className).toContain("max-md:hidden");
+  });
+
+  it("always offers Read more on phones, linking to the card's page", () => {
+    renderCard(posts[0], true);
+    const link = screen.getByRole("link", { name: "Read more: Idea 1" });
+    expect(link.getAttribute("href")).toBe("/ideas/example-book--01");
+    expect(link.parentElement!.className).toContain("md:hidden"); // tablets and desktops show the full card
+    expect(link.tabIndex).not.toBe(-1);
+  });
+
+  it("puts the video first with the title under it and Read more when there is body text", () => {
+    const post = makePost({ card: makeCard({ id: "example-book--09", title: "Watch this", explainer: video }) });
+    const { container } = renderCard(post, true);
+    const figure = screen.getByTestId("explainer");
+    expect(figure.className).toContain("max-md:order-first");
+    expect(figure.className).toContain("max-md:flex-1");
+    expect(figure.firstElementChild!.getAttribute("style")).toContain("aspect-ratio: 720 / 1280");
+    expect(screen.getByRole("heading", { name: "Watch this" }).className).toContain("max-md:line-clamp-2");
+    expect(container.querySelector("[data-card-body]")!.className).toContain("max-md:hidden");
+    expect(screen.getByRole("link", { name: "Read more: Watch this" }).getAttribute("href")).toBe("/ideas/example-book--09");
+  });
+
+  it("leaves Read more off a video post with no body text", () => {
+    const post = makePost({ card: makeCard({ id: "example-book--09", title: "Watch this", body: " ", explainer: video }) });
+    renderCard(post, true);
+    expect(screen.queryByRole("link", { name: /^Read more/ })).toBeNull();
+  });
+
+  it("shows the full card outside the home feed", () => {
+    const { container } = renderCard(posts[0]);
+    expect(container.querySelector("[data-card-preview]")).toBeNull();
+    expect(screen.queryByRole("link", { name: /^Read more/ })).toBeNull();
+    expect(container.querySelector("[data-card-body]")!.className).not.toContain("max-md:");
+    expect(screen.getByRole("region", { name: "Apply it" }).className).not.toContain("max-md:hidden");
   });
 });

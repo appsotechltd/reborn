@@ -131,12 +131,18 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   }
 
   return (
-    // In the phone feed the video leads its slide (CardView makes the card a flex column there).
-    <figure className={`mt-6 ${feed ? "max-md:order-first max-md:mb-4 max-md:mt-0" : ""}`} data-testid="explainer">
+    // In the phone feed the video leads its slide and takes whatever height the title, source,
+    // "Read more" and actions leave (CardView makes the card a flex column there); the frame keeps
+    // the film's shape, so it is as wide as that height allows.
+    <figure
+      className={`mt-6 ${feed ? "max-md:order-first max-md:mb-3 max-md:mt-0 max-md:flex max-md:min-h-0 max-md:flex-1 max-md:justify-center" : ""}`}
+      data-testid="explainer"
+    >
       <div
         className={`relative mx-auto w-full max-w-[22rem] overflow-hidden rounded-card border border-film bg-film text-film-fg ${
-          feed ? "max-md:w-fit max-md:max-w-full" : ""
+          feed ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""
         }`}
+        style={feed ? { aspectRatio: `${e.width} / ${e.height}` } : undefined}
       >
         <video
           ref={videoRef}
@@ -149,9 +155,7 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           poster={mediaUrl(e.poster_url)}
           width={e.width}
           height={e.height}
-          className={`block h-auto w-full bg-film ${
-            feed ? "max-md:max-h-[calc(var(--slide-h)-12rem)] max-md:w-auto max-md:max-w-full" : ""
-          }`}
+          className={`block h-auto w-full bg-film ${feed ? "max-md:h-full max-md:object-contain" : ""}`}
           aria-label={`${kind}: ${card.title}`}
           onClick={feed && started ? toggleSound : undefined}
           onPlay={(ev) => {

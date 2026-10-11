@@ -3,9 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
+import '../../data/providers.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
+import '../card/explainer_player.dart';
 import '../gifts/gift_sheet.dart';
 import 'post_store.dart';
 import 'share.dart';
@@ -48,11 +50,12 @@ class PostView extends ConsumerWidget {
   }
 }
 
-/// A post filling one page of the swipe feed: optional [header] widgets and
-/// the card scroll inside the page (a short post doesn't scroll at all, so
-/// the swipe goes straight to the feed), and the action bar stays pinned at
-/// the bottom so reacting, favouriting, comments and share are always in
-/// reach.
+/// A post filling one page of the swipe feed, with no scrolling inside it:
+/// optional [header] widgets, then a preview of the card cut to fit the
+/// page (topic, title, source and as much of the body as fits) with a
+/// "Read more" button that opens the full card screen. The action bar stays
+/// pinned at the bottom so reacting, favouriting, comments and share are
+/// always in reach, and every drag goes to the feed.
 class SwipePostPage extends ConsumerWidget {
   const SwipePostPage({
     super.key,
@@ -70,33 +73,24 @@ class SwipePostPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final p = watchPost(ref, post);
-    final reason = p.reason;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Expanded(
-          child: SingleChildScrollView(
-            // Not always-scrollable: a post that fits leaves drags to the
-            // page view.
-            physics: const ClampingScrollPhysics(),
+          child: Padding(
             padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 ...header,
-                Card(
-                  margin: EdgeInsets.zero,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      if (reason != null) PostReasonLine(reason: reason),
-                      AuthorByline(card: p.card),
-                      IdeaCardView(
-                        card: p.card,
-                        showShare: false,
-                        padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
-                      ),
-                    ],
+                Expanded(
+                  child: Card(
+                    margin: EdgeInsets.zero,
+                    clipBehavior: Clip.antiAlias,
+                    child: _FitAtLeast(
+                      minHeight: 180,
+                      child: PostPreview(post: p),
+                    ),
                   ),
                 ),
               ],
@@ -108,6 +102,193 @@ class SwipePostPage extends ConsumerWidget {
       ],
     );
   }
+}
+
+/// Gives [child] the height it's offered, but never less than [minHeight]
+/// (clipped at the bottom then), so a crowded first page can't overflow.
+class _FitAtLeast extends StatelessWidget {
+  const _FitAtLeast({required this.minHeight, required this.child});
+  final double minHeight;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, c) {
+      if (c.maxHeight >= minHeight) return child;
+      return ClipRect(
+        child: OverflowBox(
+          alignment: Alignment.topCenter,
+          minHeight: minHeight,
+          maxHeight: minHeight,
+          child: child,
+        ),
+      );
+    },
+  );
+}
+
+/// The swipe-feed preview of a post: why it's here, topic, title (or the
+/// video sized to fit, title under it), source, the body cut to the lines
+/// that fit, any health note, and "Read more" for the full card.
+class PostPreview extends ConsumerWidget {
+  const PostPreview({super.key, required this.post});
+  final Post post;
+
+  void _open(BuildContext context) => context.push(
+    '/cards/${Uri.encodeComponent(post.card.id)}',
+    extra: post.card,
+  );
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final card = post.card;
+    final reason = post.reason;
+    final topicName = ref.watch(topicNamesProvider)[card.topic] ?? card.topic;
+    final body = card.body
+        .split(RegExp(r'\n\s*\n'))
+        .map((p) => p.trim())
+        .where((p) => p.isNotEmpty)
+        .join('\n\n');
+    final disclaimer =
+        card.disclaimer ?? (card.health ? kHealthDisclaimerFallback : null);
+    final video = card.explainer;
+
+    final title = Text(
+      card.title,
+      key: const ValueKey('preview-title'),
+      maxLines: video == null ? 3 : 2,
+      overflow: TextOverflow.ellipsis,
+      style: video == null
+          ? theme.textTheme.headlineSmall
+          : theme.textTheme.titleLarge,
+    );
+    final readMore = Align(
+      alignment: Alignment.centerLeft,
+      child: FilledButton.tonalIcon(
+        key: const ValueKey('read-more'),
+        onPressed: () => _open(context),
+        icon: const Icon(Icons.arrow_forward, size: 18),
+        label: Text('Read more', semanticsLabel: 'Read more: ${card.title}'),
+      ),
+    );
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (reason != null) PostReasonLine(reason: reason),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: CategoryTag(topicName),
+          ),
+        ),
+        if (video != null) ...[
+          Flexible(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+              child: LayoutBuilder(
+                builder: (context, c) => ExplainerPlayer(
+                  explainer: video,
+                  title: card.title,
+                  autoplayId: card.id,
+                  maxHeight: c.maxHeight,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+            child: title,
+          ),
+          AuthorByline(card: card),
+        ] else ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+            child: title,
+          ),
+          AuthorByline(card: card),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+              child: _FittedBody(text: body, style: theme.textTheme.bodyLarge),
+            ),
+          ),
+        ],
+        if (disclaimer != null)
+          Padding(
+            key: const ValueKey('preview-disclaimer'),
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.health_and_safety_outlined,
+                  size: 16,
+                  color: Candlelight.of(context).amberText,
+                ),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Text(
+                    disclaimer,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: theme.textTheme.bodySmall,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        // The full card always has more than the preview (the "Apply it"
+        // step, any quote, the full credit), so a text post always offers
+        // it; a video post when there's text to read.
+        if (video == null || body.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(14, 8, 14, 12),
+            child: readMore,
+          )
+        else
+          const SizedBox(height: 12),
+      ],
+    );
+  }
+}
+
+/// The body cut to the whole lines that fit the height it's given, ending
+/// in an ellipsis when it's cut.
+class _FittedBody extends StatelessWidget {
+  const _FittedBody({required this.text, this.style});
+  final String text;
+  final TextStyle? style;
+
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, c) {
+      if (text.isEmpty) return const SizedBox.shrink();
+      final painter = TextPainter(
+        text: TextSpan(text: text, style: style),
+        textDirection: Directionality.of(context),
+        textScaler: MediaQuery.textScalerOf(context),
+      )..layout(maxWidth: c.maxWidth);
+      var lines = 0;
+      var used = 0.0;
+      for (final m in painter.computeLineMetrics()) {
+        if (used + m.height > c.maxHeight) break;
+        used += m.height;
+        lines++;
+      }
+      painter.dispose();
+      if (lines == 0) return const SizedBox.shrink();
+      return Text(
+        text,
+        key: const ValueKey('preview-body'),
+        maxLines: lines,
+        overflow: TextOverflow.ellipsis,
+        style: style,
+      );
+    },
+  );
 }
 
 /// The small "why you're seeing this" line above a timeline post.
