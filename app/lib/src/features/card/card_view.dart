@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/speaker.dart';
+import '../../layout/adaptive.dart';
 import '../post/share.dart';
 import '../stashes/stash_picker.dart';
 import '../../theme.dart';
@@ -23,6 +24,7 @@ class IdeaCardView extends ConsumerWidget {
     this.showActions = true,
     this.showShare = true,
     this.showVideo = true,
+    this.byline,
     this.padding = const EdgeInsets.fromLTRB(20, 16, 20, 24),
   });
 
@@ -39,6 +41,10 @@ class IdeaCardView extends ConsumerWidget {
   /// plays the video full screen from its own button: neither video nor
   /// title is repeated here.
   final bool showVideo;
+
+  /// The source line ("Meditations · Marcus Aurelius"), shown under the
+  /// title, as on the feed card: topic, title, then source.
+  final Widget? byline;
   final EdgeInsets padding;
 
   String? get _disclaimer =>
@@ -76,11 +82,23 @@ class IdeaCardView extends ConsumerWidget {
               title: card.title,
               autoplayId: card.id,
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
           ] else if (showVideo) ...[
-            Text(card.title, style: theme.textTheme.headlineSmall),
-            const SizedBox(height: 12),
+            Text(
+              card.title,
+              key: const ValueKey('card-title'),
+              style: cardPageTitleStyle(context),
+            ),
+            const SizedBox(height: 6),
           ],
+          ?byline,
+          // The health or support note comes before the reading, so it's
+          // seen first.
+          if (_disclaimer != null) ...[
+            const SizedBox(height: 14),
+            _Disclaimer(text: _disclaimer!),
+          ],
+          const SizedBox(height: 16),
           for (final p in paragraphs)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
@@ -90,10 +108,6 @@ class IdeaCardView extends ConsumerWidget {
             _QuoteBlock(quote: card.quote!, locator: card.locator),
           const SizedBox(height: 8),
           _ApplyIt(text: card.applyIt),
-          if (_disclaimer != null) ...[
-            const SizedBox(height: 12),
-            _Disclaimer(text: _disclaimer!),
-          ],
           const SizedBox(height: 16),
           _Credit(card: card),
           if (showActions) ...[
@@ -104,6 +118,15 @@ class IdeaCardView extends ConsumerWidget {
       ),
     );
   }
+}
+
+/// The article-style title of the card page: 30px on phones, 36px from
+/// tablet width up (web: text-3xl / sm:text-4xl Fraunces).
+TextStyle? cardPageTitleStyle(BuildContext context) {
+  final wide = MediaQuery.sizeOf(context).width >= WindowSize.mediumMin;
+  final size = wide ? 36.0 : 30.0;
+  return Theme.of(context).textTheme.headlineSmall
+      ?.copyWith(fontSize: size, height: 1.2, letterSpacing: -0.015 * size);
 }
 
 /// Amber pill for a badge such as "Today's idea".

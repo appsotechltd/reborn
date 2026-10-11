@@ -37,12 +37,12 @@ class PostView extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         if (showReason && reason != null) PostReasonLine(reason: reason),
-        AuthorByline(card: p.card),
         IdeaCardView(
           card: p.card,
           label: label,
           showShare: false,
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 8),
+          byline: AuthorByline.inline(card: p.card),
+          padding: const EdgeInsets.fromLTRB(20, 14, 20, 8),
         ),
         PostActionBar(post: p),
       ],
@@ -332,8 +332,14 @@ class PostReasonLine extends StatelessWidget {
 /// "Meditations · Marcus Aurelius": the book opens the source screen and
 /// each author name opens the author screen.
 class AuthorByline extends StatelessWidget {
-  const AuthorByline({super.key, required this.card});
+  const AuthorByline({super.key, required this.card}) : inline = false;
+
+  /// Inside already padded content (the card page): the names line up with
+  /// the text above, their tap targets reaching into the margin.
+  const AuthorByline.inline({super.key, required this.card}) : inline = true;
+
   final IdeaCard card;
+  final bool inline;
 
   @override
   Widget build(BuildContext context) {
@@ -343,32 +349,50 @@ class AuthorByline extends StatelessWidget {
       fontWeight: FontWeight.w600,
     );
     final source = card.source;
+    // The links' own padding spaces the dot.
+    final dot = Text('·', style: theme.textTheme.bodySmall);
+    final links = <Widget>[
+      if (source.title.isNotEmpty)
+        _Link(
+          text: source.title,
+          style: style,
+          onTap: source.id.isEmpty
+              ? null
+              : () =>
+                    context.push('/sources/${Uri.encodeComponent(source.id)}'),
+        ),
+      for (final a in source.authors)
+        _Link(
+          key: ValueKey('author-$a'),
+          text: a,
+          style: style,
+          onTap: () => context.push('/authors/${Uri.encodeComponent(a)}'),
+        ),
+    ];
+    // Each separator stays at the end of the name before it, so a long
+    // title never leaves a stray dot at the start of a line.
+    final line = Wrap(
+      key: const ValueKey('card-byline'),
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        for (final (i, link) in links.indexed)
+          i == links.length - 1
+              ? link
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Flexible(child: link),
+                    dot,
+                  ],
+                ),
+      ],
+    );
+    if (inline) {
+      return Transform.translate(offset: const Offset(-6, 0), child: line);
+    }
     return Padding(
       padding: const EdgeInsets.fromLTRB(14, 8, 14, 0),
-      child: Wrap(
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: [
-          if (source.title.isNotEmpty)
-            _Link(
-              text: source.title,
-              style: style,
-              onTap: source.id.isEmpty
-                  ? null
-                  : () => context.push(
-                      '/sources/${Uri.encodeComponent(source.id)}',
-                    ),
-            ),
-          for (final a in source.authors) ...[
-            Text(' · ', style: theme.textTheme.bodySmall),
-            _Link(
-              key: ValueKey('author-$a'),
-              text: a,
-              style: style,
-              onTap: () => context.push('/authors/${Uri.encodeComponent(a)}'),
-            ),
-          ],
-        ],
-      ),
+      child: line,
     );
   }
 }

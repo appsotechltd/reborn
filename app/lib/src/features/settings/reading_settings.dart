@@ -14,6 +14,79 @@ const kNotifyKinds = [
   ('circles', 'Circles', 'New messages in your book circles'),
 ];
 
+/// Saves reading settings with PATCH /v1/me, updates the signed-in user
+/// and, when the goal or timezone changed, the streak. Errors go to
+/// [messenger].
+Future<void> saveReadingSettings(
+  WidgetRef ref,
+  ScaffoldMessengerState messenger, {
+  int? dailyGoal,
+  Map<String, bool>? notify,
+  String? timezone,
+}) async {
+  try {
+    final user = await ref
+        .read(repositoryProvider)
+        .updateMe(dailyGoal: dailyGoal, notify: notify, timezone: timezone);
+    await ref.read(sessionProvider.notifier).setUser(user);
+    if (dailyGoal != null || timezone != null) {
+      ref.invalidate(streakProvider);
+    }
+  } catch (e) {
+    messenger.showSnackBar(SnackBar(content: Text(errorMessage(e))));
+  }
+}
+
+/// The daily goal choices, with [goal] among them.
+List<int> goalChoices(int goal) => {...kGoalChoices, goal}.toList()..sort();
+
+/// A sheet to pick the daily goal (the same choices as in Settings), saved
+/// right away.
+Future<void> showGoalPicker(BuildContext context, WidgetRef ref) async {
+  final goal = ref.read(sessionProvider).user?.dailyGoal;
+  final messenger = ScaffoldMessenger.of(context);
+  final picked = await showModalBottomSheet<int>(
+    context: context,
+    showDragHandle: true,
+    builder: (context) => SafeArea(
+      child: SingleChildScrollView(
+        key: const ValueKey('goal-picker'),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 4),
+              child: Text(
+                'Daily goal',
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+              child: Text(
+                'Ideas to read each day to keep your streak',
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ),
+            for (final n in goalChoices(goal ?? 3))
+              ListTile(
+                key: ValueKey('goal-$n'),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 24),
+                title: Text(n == 1 ? '1 idea a day' : '$n ideas a day'),
+                trailing: n == goal ? const Icon(Icons.check) : null,
+                selected: n == goal,
+                onTap: () => Navigator.of(context).pop(n),
+              ),
+          ],
+        ),
+      ),
+    ),
+  );
+  if (picked != null && picked != goal) {
+    await saveReadingSettings(ref, messenger, dailyGoal: picked);
+  }
+}
+
 /// Daily goal, push notification switches and timezone. Each change is saved
 /// right away with PATCH /v1/me.
 class ReadingSettings extends ConsumerStatefulWidget {
@@ -38,20 +111,13 @@ class _ReadingSettingsState extends ConsumerState<ReadingSettings> {
     int? dailyGoal,
     Map<String, bool>? notify,
     String? timezone,
-  }) async {
-    final messenger = ScaffoldMessenger.of(context);
-    try {
-      final user = await ref
-          .read(repositoryProvider)
-          .updateMe(dailyGoal: dailyGoal, notify: notify, timezone: timezone);
-      await ref.read(sessionProvider.notifier).setUser(user);
-      if (dailyGoal != null || timezone != null) {
-        ref.invalidate(streakProvider);
-      }
-    } catch (e) {
-      messenger.showSnackBar(SnackBar(content: Text(errorMessage(e))));
-    }
-  }
+  }) => saveReadingSettings(
+    ref,
+    ScaffoldMessenger.of(context),
+    dailyGoal: dailyGoal,
+    notify: notify,
+    timezone: timezone,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +125,7 @@ class _ReadingSettingsState extends ConsumerState<ReadingSettings> {
     final user = ref.watch(sessionProvider).user;
     if (user == null) return const SizedBox.shrink();
     final goal = user.dailyGoal;
-    final choices = {...kGoalChoices, goal}.toList()..sort();
+    final choices = goalChoices(goal);
     final tz = user.timezone;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,

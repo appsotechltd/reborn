@@ -6,6 +6,7 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/repository.dart';
 import '../../layout/adaptive.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_screen.dart';
 import '../notifications/notifications_screen.dart';
@@ -121,11 +122,14 @@ class DiscoverScreen extends ConsumerWidget {
         ],
         data: (posts) => posts.isEmpty
             ? const [_Empty('Nothing trending here yet.')]
-            : [for (final p in posts.take(10)) _PostTile(post: p)],
+            : [
+                for (final (i, p) in posts.take(10).indexed)
+                  DiscoverPostCard(post: p, rank: i + 1),
+              ],
       ),
       const _Heading('New ideas'),
       if (d.newPosts.isEmpty) const _Empty('No new ideas yet.'),
-      for (final p in d.newPosts.take(10)) _PostTile(post: p),
+      for (final p in d.newPosts.take(6)) DiscoverPostCard(post: p),
       if (d.books.isNotEmpty) ...[
         const _Heading('Popular books'),
         SizedBox(
@@ -201,37 +205,120 @@ class CircleTile extends StatelessWidget {
   );
 }
 
-class _PostTile extends ConsumerWidget {
-  const _PostTile({required this.post});
+/// "The first 130 characters…", cut at a word: the excerpt on a post card.
+String excerpt(String text, [int max = 130]) {
+  final flat = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+  if (flat.length <= max) return flat;
+  final cut = flat.substring(0, max - 1);
+  final space = cut.lastIndexOf(' ');
+  return '${space > 80 ? cut.substring(0, space) : cut}…';
+}
+
+/// A post in a Discover list: topic, title, excerpt, credit and how people
+/// responded, with its rank in Trending. Opens the card screen, or on
+/// expanded windows shows the card on the right.
+class DiscoverPostCard extends ConsumerWidget {
+  const DiscoverPostCard({super.key, required this.post, this.rank});
   final Post post;
+  final int? rank;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final c = Candlelight.of(context);
+    final card = post.card;
     final s = post.stats;
-    final activity = s.totalReactions + s.comments + s.favorites;
+    final topicName = ref.watch(topicNamesProvider)[card.topic] ?? card.topic;
     final twoPane = WindowSize.of(context).isTwoPane;
-    final selected = ref.watch(paneSelectionProvider(DiscoverScreen.pane));
+    final picked = ref.watch(paneSelectionProvider(DiscoverScreen.pane));
+    final selected = twoPane && picked is IdeaCard && picked.id == card.id;
+    final muted = theme.textTheme.bodySmall;
+    String count(int n, String one, String many) =>
+        '${compactCount(n)} ${n == 1 ? one : many}';
     return ReadingWidth(
-      child: CardTile(
-        key: ValueKey('discover-post-${post.id}'),
-        card: post.card,
-        selected:
-            twoPane && selected is IdeaCard && selected.id == post.card.id,
-        onTap: twoPane
-            ? () => ref
-                  .read(paneSelectionProvider(DiscoverScreen.pane).notifier)
-                  .select(post.card)
-            : null,
-        trailing: activity == 0
-            ? null
-            : Row(
-                mainAxisSize: MainAxisSize.min,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 6, 16, 6),
+        child: Card(
+          key: ValueKey('discover-post-${post.id}'),
+          shape: selected
+              ? RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(
+                    CandlelightTokens.radiusCard,
+                  ),
+                  side: BorderSide(color: c.amberText, width: 1.5),
+                )
+              : null,
+          child: InkWell(
+            onTap: twoPane
+                ? () => ref
+                      .read(paneSelectionProvider(DiscoverScreen.pane).notifier)
+                      .select(card)
+                : () => context.push(
+                    '/cards/${Uri.encodeComponent(card.id)}',
+                    extra: card,
+                  ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.favorite_border, size: 16),
-                  const SizedBox(width: 4),
-                  Text(compactCount(activity)),
+                  if (rank != null)
+                    ExcludeSemantics(
+                      child: SizedBox(
+                        width: 34,
+                        child: Text(
+                          '$rank',
+                          style: theme.textTheme.headlineSmall?.copyWith(
+                            color: c.muted,
+                            height: 1.1,
+                          ),
+                        ),
+                      ),
+                    ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CategoryTag(topicName),
+                        const SizedBox(height: 4),
+                        Text(
+                          card.title,
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontSize: 20,
+                            height: 1.3,
+                          ),
+                        ),
+                        if (card.body.trim().isNotEmpty) ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            excerpt(card.body),
+                            key: const ValueKey('discover-excerpt'),
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: c.muted,
+                              height: 1.55,
+                            ),
+                          ),
+                        ],
+                        const SizedBox(height: 10),
+                        Text(card.credit, style: muted?.copyWith(fontSize: 12)),
+                        const SizedBox(height: 6),
+                        Text(
+                          [
+                            count(s.totalReactions, 'reaction', 'reactions'),
+                            count(s.comments, 'comment', 'comments'),
+                            count(s.favorites, 'favourite', 'favourites'),
+                          ].join('   '),
+                          key: const ValueKey('discover-counts'),
+                          style: muted?.copyWith(fontSize: 12),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
+            ),
+          ),
+        ),
       ),
     );
   }

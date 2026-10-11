@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
+import '../settings/reading_settings.dart';
 
 /// Current streak, today's ideas against the daily goal, and the last 7
 /// days. Shown on the timeline and profile when signed in.
@@ -16,13 +17,19 @@ class StreakCard extends ConsumerWidget {
     if (!signedIn) return const SizedBox.shrink();
     final streak = ref.watch(streakProvider).value;
     if (streak == null) return const SizedBox.shrink();
-    return StreakView(streak: streak);
+    return StreakView(
+      streak: streak,
+      onChangeGoal: () => showGoalPicker(context, ref),
+    );
   }
 }
 
 class StreakView extends StatelessWidget {
-  const StreakView({super.key, required this.streak});
+  const StreakView({super.key, required this.streak, this.onChangeGoal});
   final Streak streak;
+
+  /// Opens the daily goal picker; no "Change goal" button without it.
+  final VoidCallback? onChangeGoal;
 
   static const _weekdays = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
@@ -38,7 +45,10 @@ class StreakView extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          // The Change goal button's own padding takes up the top.
+          padding: onChangeGoal == null
+              ? const EdgeInsets.all(16)
+              : const EdgeInsets.fromLTRB(16, 9, 16, 16),
           child: Row(
             children: [
               Column(
@@ -58,20 +68,51 @@ class StreakView extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      s.current == 1
-                          ? '1-day streak'
-                          : '${s.current}-day streak',
-                      style: theme.textTheme.titleSmall,
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text.rich(
+                            TextSpan(
+                              text: s.current == 1
+                                  ? '1-day streak'
+                                  : '${s.current}-day streak',
+                              children: [
+                                // The best run, when it's longer than this one.
+                                if (s.longest > s.current)
+                                  TextSpan(
+                                    text: ' · best ${s.longest}',
+                                    style: theme.textTheme.bodySmall,
+                                  ),
+                              ],
+                            ),
+                            key: const ValueKey('streak-title'),
+                            style: theme.textTheme.titleSmall,
+                          ),
+                        ),
+                        if (onChangeGoal != null)
+                          TextButton(
+                            key: const ValueKey('change-goal'),
+                            onPressed: onChangeGoal,
+                            style: TextButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                              ),
+                              minimumSize: const Size(0, 32),
+                              tapTargetSize: MaterialTapTargetSize.padded,
+                              visualDensity: VisualDensity.compact,
+                              textStyle: theme.textTheme.labelMedium,
+                            ),
+                            child: const Text('Change goal'),
+                          ),
+                      ],
                     ),
-                    const SizedBox(height: 4),
                     Text(
                       s.goalMet
                           ? 'Goal met: ${s.today} of ${s.goal} ideas today'
                           : '${s.today} of ${s.goal} ideas today',
                       style: theme.textTheme.bodySmall,
                     ),
-                    const SizedBox(height: 6),
+                    const SizedBox(height: 4),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(4),
                       child: LinearProgressIndicator(

@@ -8,6 +8,7 @@ import '../../data/repository.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
+import '../post/post_view.dart';
 
 class DailyScreen extends ConsumerWidget {
   const DailyScreen({super.key});
@@ -29,6 +30,7 @@ class DailyScreen extends ConsumerWidget {
               child: IdeaCardView(
                 card: f.value.card,
                 label: _dateLabel(f.value.date),
+                byline: AuthorByline.inline(card: f.value.card),
               ),
             ),
           ),
