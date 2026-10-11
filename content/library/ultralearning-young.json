@@ -1,0 +1,711 @@
+{
+  "source": {
+    "id": "ultralearning-young",
+    "title": "Ultralearning",
+    "authors": [
+      "Scott H. Young"
+    ],
+    "kind": "book",
+    "url": "https://www.scotthyoung.com/blog/ultralearning/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career by Scott H. Young (2019). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Harper Business",
+    "year": 2019,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. URL is the author's page for the book."
+  },
+  "cards": [
+    {
+      "id": "ultralearning-young--01",
+      "topic": "skills-mastery",
+      "tags": [
+        "ultralearning",
+        "self-directed",
+        "projects"
+      ],
+      "title": "Ultralearning: an intense, self-directed way to learn hard skills",
+      "body": "Scott Young defines ultralearning as a strategy for acquiring skills and knowledge that is both self-directed and intense. You decide what to learn and how, and you choose the most effective methods even when they're uncomfortable.\n\nHe illustrates it with his own projects, such as working through the material of MIT's computer science degree, using freely available courses and exams, in about a year. You don't need extreme projects to use the approach. The core idea is to take charge of your learning and treat it as a focused project.",
+      "apply_it": "Pick one skill you'd like to learn this year and write a one-line description of it as a project with an end date.",
+      "quiz": {
+        "question": "How does Young define ultralearning?",
+        "options": [
+          "A self-directed, intense strategy for learning skills and knowledge",
+          "Studying only through formal university courses",
+          "Learning many things casually at once",
+          "Speed-reading as many books as possible"
+        ],
+        "answer": 0,
+        "explanation": "Ultralearning combines taking charge of your own learning with an intense, effective approach."
+      }
+    },
+    {
+      "id": "ultralearning-young--02",
+      "topic": "skills-mastery",
+      "tags": [
+        "metalearning",
+        "research",
+        "planning"
+      ],
+      "title": "Before you start learning, research how to learn it",
+      "body": "Young's first principle is metalearning: learning about how a subject is learned before diving in. Find out what the skill involves, how others mastered it, and which resources work well.\n\nAs a rough rule, he suggests spending about 10 percent of your expected total learning time on this research. A few hours of mapping the terrain at the start can save many hours of wasted effort on the wrong books, courses or methods later.",
+      "apply_it": "For a skill you want to learn, spend one hour finding how three people who mastered it actually learned it.",
+      "quiz": {
+        "question": "Roughly how much of your total learning time does Young suggest spending on metalearning research?",
+        "options": [
+          "About 50 percent",
+          "None: just start",
+          "About 90 percent",
+          "About 10 percent"
+        ],
+        "answer": 3,
+        "explanation": "He suggests investing roughly 10 percent of your planned time into researching how to learn the skill."
+      }
+    },
+    {
+      "id": "ultralearning-young--03",
+      "topic": "skills-mastery",
+      "tags": [
+        "motivation",
+        "goals",
+        "career"
+      ],
+      "title": "Check that the skill will really get you what you want",
+      "body": "Part of metalearning, Young says, is getting clear on why you are learning. If the skill is a means to an end, such as a new job or a promotion, you should check whether it will really deliver that result.\n\nHe suggests talking to people who already have the outcome you want. You may find that a different skill matters more, or that a credential you assumed was essential isn't. Asking a few questions upfront can save months spent learning the wrong thing.",
+      "apply_it": "Message one person who already has the job or result you want and ask which skills mattered most.",
+      "quiz": {
+        "question": "If you're learning a skill to reach a career goal, what does Young advise?",
+        "options": [
+          "Start immediately without checking",
+          "Ask people who have that goal whether the skill really matters",
+          "Learn every related skill just in case",
+          "Rely on online job ads only"
+        ],
+        "answer": 1,
+        "explanation": "Talking to people who have the outcome helps confirm you're learning the right thing."
+      }
+    },
+    {
+      "id": "ultralearning-young--04",
+      "topic": "skills-mastery",
+      "tags": [
+        "metalearning",
+        "concepts",
+        "facts"
+      ],
+      "title": "Sort what you'll learn into concepts, facts and procedures",
+      "body": "To work out what a subject involves, Young suggests listing what you need to learn under three headings: concepts that must be understood, facts that must be memorised, and procedures that must be practised until they're automatic.\n\nThis quick map shows where the real difficulty lies. Learning a language is heavy on facts, like vocabulary; physics is heavy on concepts; driving is mostly procedure. Knowing which kind of learning dominates tells you which methods to lean on.",
+      "apply_it": "Make three columns for your current learning goal: concepts, facts, procedures. Fill in what you can.",
+      "quiz": {
+        "question": "What three categories does Young use to map what must be learned?",
+        "options": [
+          "Easy, medium and hard",
+          "Concepts, facts and procedures",
+          "Reading, writing and listening",
+          "Theory, history and opinion"
+        ],
+        "answer": 1,
+        "explanation": "Sorting material into concepts, facts and procedures shows where the main difficulty lies."
+      }
+    },
+    {
+      "id": "ultralearning-young--05",
+      "topic": "skills-mastery",
+      "tags": [
+        "benchmarking",
+        "resources",
+        "prioritising"
+      ],
+      "title": "Borrow a proven curriculum, then emphasise and exclude",
+      "body": "Young recommends benchmarking: find a common way the skill is taught, such as a university course outline or a popular programme, and use it as a starting plan. Then adapt it with what he calls the emphasise/exclude method.\n\nEmphasise the parts that matter most for your goal, and leave out or delay the parts that don't. If you want to speak a language for travel, for example, you might focus on conversation and skip formal writing at first.",
+      "apply_it": "Find one existing course outline for your skill and cross out what doesn't serve your goal.",
+      "quiz": {
+        "question": "What is Young's 'emphasise/exclude' method?",
+        "options": [
+          "Studying only what you enjoy",
+          "Repeating every topic equally",
+          "Excluding all formal resources",
+          "Adapting a standard curriculum to focus on what matters for your goal"
+        ],
+        "answer": 3,
+        "explanation": "You take a benchmark curriculum and reshape it around your specific goal."
+      }
+    },
+    {
+      "id": "ultralearning-young--06",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "focus",
+        "starting"
+      ],
+      "title": "Beat procrastination by committing to just a few minutes",
+      "body": "Young sees failing to start as the first focus problem. His suggestion: notice when you're putting something off, then agree to work for just a few minutes. Discomfort tends to be strongest at the beginning and often fades once you're under way.\n\nAs you get better, you can extend the commitment, for example to a timed work block followed by a short break. Scheduling these blocks on your calendar also helps, because a decision already made needs no fresh willpower.",
+      "apply_it": "Pick the task you're avoiding and commit to just five minutes on it, starting now.",
+      "quiz": {
+        "question": "What does Young suggest when you're procrastinating?",
+        "options": [
+          "Commit to working for just a few minutes, since the discomfort often fades",
+          "Wait for motivation to arrive",
+          "Work on something else first",
+          "Promise yourself a full day of work"
+        ],
+        "answer": 0,
+        "explanation": "Starting small gets you past the uncomfortable beginning, after which work becomes easier."
+      }
+    },
+    {
+      "id": "ultralearning-young--07",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "distraction",
+        "environment"
+      ],
+      "title": "Tackle distraction from your space, your task and your mind",
+      "body": "Once you've started, Young says, focus can break down in three ways. Your environment may pull at you: a phone, noise, people. The task itself may be dull or confusing in a way that invites drift. And your own mind may wander to worries or daydreams.\n\nEach needs a different fix: change the setting, make the task more engaging or better defined, or gently bring your attention back when it drifts. Naming the source is the first step to solving it.",
+      "apply_it": "Next time you lose focus, note which source it came from: environment, task or mind.",
+      "quiz": {
+        "question": "Which three sources of distraction does Young identify?",
+        "options": [
+          "Family, friends and work",
+          "Morning, afternoon and evening",
+          "Your environment, the task and your own mind",
+          "Food, sleep and exercise"
+        ],
+        "answer": 2,
+        "explanation": "Focus can be broken by your surroundings, the task itself or your wandering mind."
+      }
+    },
+    {
+      "id": "ultralearning-young--08",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "energy",
+        "complex-tasks"
+      ],
+      "title": "Match your energy level to the kind of task",
+      "body": "Young notes that the right level of mental alertness depends on the task. Simple, repetitive work often goes better with high energy, and a bit of background noise may even help. Complex tasks that need careful thought, like solving hard problems or writing, usually go better when you are calmer.\n\nIf you feel restless on a hard task, a quieter setting may help. If you feel sluggish on a simple one, some energising music or a more lively place might work better.",
+      "apply_it": "For your next complex task, choose the quietest place available; for a routine one, try light background music.",
+      "quiz": {
+        "question": "According to Young, what level of alertness suits complex, thoughtful tasks?",
+        "options": [
+          "Maximum excitement",
+          "Being half asleep",
+          "A calmer state",
+          "It makes no difference"
+        ],
+        "answer": 2,
+        "explanation": "Complex tasks generally benefit from calmer focus, while simple ones may suit higher energy."
+      }
+    },
+    {
+      "id": "ultralearning-young--09",
+      "topic": "skills-mastery",
+      "tags": [
+        "directness",
+        "transfer",
+        "context"
+      ],
+      "title": "Learn a skill in the situation where you'll use it",
+      "body": "Young's principle of directness tackles a common problem: what we learn in one setting often fails to transfer to another. Students who ace classroom tests may still struggle to use the knowledge in real life.\n\nHis answer is to learn as close as possible to the real context. If you want to speak a language, have conversations. If you want to build websites, build websites. Indirect study can help, but it should support doing the real thing, not replace it.",
+      "apply_it": "Ask: where will I actually use this skill? Then find a way to practise in that exact setting this week.",
+      "quiz": {
+        "question": "What problem does Young's 'directness' principle address?",
+        "options": [
+          "Knowledge learned in one setting often fails to transfer to real use",
+          "People study too many subjects",
+          "Courses are too expensive",
+          "Learning takes too long to start"
+        ],
+        "answer": 0,
+        "explanation": "Learning in the real context avoids the problem of knowledge that doesn't transfer."
+      }
+    },
+    {
+      "id": "ultralearning-young--10",
+      "topic": "skills-mastery",
+      "tags": [
+        "projects",
+        "portfolio",
+        "learning-by-doing"
+      ],
+      "title": "Organise your learning around a real project",
+      "body": "One way to learn directly, Young suggests, is to build your learning around a project that produces something: a working app, a short film, a portfolio of drawings, a business plan. The project forces you to learn whatever it really requires.\n\nProjects also show you gaps that courses tend to hide, because real work doesn't come neatly divided into chapters. And at the end you have something concrete to show for it, which can matter for your career.",
+      "apply_it": "Replace one course you plan to take with a small project that would require the same skill.",
+      "quiz": {
+        "question": "Why does Young favour project-based learning?",
+        "options": [
+          "It avoids all difficulty",
+          "It needs no planning",
+          "It is always faster than courses",
+          "It forces you to learn what the real task requires and leaves a tangible result"
+        ],
+        "answer": 3,
+        "explanation": "A project pushes you to learn what matters and gives you something concrete to show."
+      }
+    },
+    {
+      "id": "ultralearning-young--11",
+      "topic": "skills-mastery",
+      "tags": [
+        "immersion",
+        "languages",
+        "environment"
+      ],
+      "title": "Surround yourself with the skill through immersion",
+      "body": "Young and a friend, Vat Jaiswal, spent a year learning four languages by living in Spain, Brazil, China and South Korea for about three months each, with a rule to avoid speaking English. Being surrounded by the language forced them to use it constantly.\n\nImmersion can work beyond languages: joining a community of programmers, artists or entrepreneurs puts you in constant contact with the skill. The more of your day involves real use, the faster you tend to learn.",
+      "apply_it": "Find one way to immerse yourself in your skill: a community, a club, or a daily habit of real use.",
+      "quiz": {
+        "question": "What rule did Young and his friend follow during their year of language learning?",
+        "options": [
+          "Study only from textbooks",
+          "Avoid speaking English",
+          "Learn all four languages at once",
+          "Speak only with teachers"
+        ],
+        "answer": 1,
+        "explanation": "Avoiding English forced them to use each new language constantly."
+      }
+    },
+    {
+      "id": "ultralearning-young--12",
+      "topic": "skills-mastery",
+      "tags": [
+        "simulation",
+        "practice",
+        "transfer"
+      ],
+      "title": "When you can't practise for real, simulate what matters",
+      "body": "Sometimes the real situation is too costly or risky to practise in, like flying a plane. Young points to the flight simulator as a model: it doesn't copy every detail, but it reproduces the decisions and judgements a pilot has to make.\n\nThe lesson is to keep the parts of the task that demand the same thinking, and drop surface details that don't. A role-played job interview with tough questions may prepare you better than reading lists of tips.",
+      "apply_it": "Design a practice version of a high-stakes task that keeps the hard decisions but removes the risk.",
+      "quiz": {
+        "question": "What should a good practice simulation reproduce, according to Young?",
+        "options": [
+          "Every visual detail of the real situation",
+          "The decisions and thinking the real task demands",
+          "Only the easiest parts",
+          "The same location and clothing"
+        ],
+        "answer": 1,
+        "explanation": "A good simulation matches the mental demands of the real task, not its surface appearance."
+      }
+    },
+    {
+      "id": "ultralearning-young--13",
+      "topic": "skills-mastery",
+      "tags": [
+        "drill",
+        "weaknesses",
+        "bottleneck"
+      ],
+      "title": "Learn directly first, then drill the part that holds you back",
+      "body": "Young's principle of drill means isolating one component of a skill and practising it on its own. He suggests finding the 'rate-determining step', borrowed from chemistry: the one weak element that limits your overall performance.\n\nHis cycle is to practise directly first, notice which part is holding you back, drill that part separately, and then return to direct practice. Drilling without the real task risks working on the wrong thing; direct practice alone can leave a weak link untouched.",
+      "apply_it": "After your next full practice, name the single weakest part and spend your next session drilling only that.",
+      "quiz": {
+        "question": "What is the 'rate-determining step' in Young's drill principle?",
+        "options": [
+          "The fastest part of a skill",
+          "The first step in any course",
+          "The most enjoyable part of practice",
+          "The weakest component that limits overall performance"
+        ],
+        "answer": 3,
+        "explanation": "It is the bottleneck component; drilling it improves the whole skill."
+      }
+    },
+    {
+      "id": "ultralearning-young--14",
+      "topic": "skills-mastery",
+      "tags": [
+        "drill",
+        "techniques",
+        "practice"
+      ],
+      "title": "Use time slices and copying to isolate tricky parts",
+      "body": "Young suggests several ways to build drills. Time slicing means taking one moment of a sequence, like the opening of a speech or one tricky passage of music, and repeating just that. Copycat drills remove the parts you're not focusing on, for example tracing an existing drawing's composition so you can focus purely on shading.\n\nAnother, the magnifying glass method, means spending far more time than usual on one component, such as research for an essay, to strengthen it.",
+      "apply_it": "Choose one short slice of a skill (an opening, a move, a phrase) and repeat it ten times today.",
+      "quiz": {
+        "question": "What is a 'copycat' drill in Ultralearning?",
+        "options": [
+          "Copying the parts you aren't practising so you can focus on one component",
+          "Copying a friend's homework",
+          "Imitating a famous person's lifestyle",
+          "Memorising a text word for word"
+        ],
+        "answer": 0,
+        "explanation": "Copying the other parts frees you to concentrate on the one component you're drilling."
+      }
+    },
+    {
+      "id": "ultralearning-young--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "prerequisites",
+        "learning-order",
+        "motivation"
+      ],
+      "title": "Start with the hard thing and fill in basics as you need them",
+      "body": "Young describes prerequisite chaining: rather than studying every foundation before attempting something real, you jump into a challenging task and learn the basics when you discover you need them.\n\nThis keeps learning connected to a real goal and stops you getting bored in endless preparation. The cost is more confusion at the start, so it works best when you're willing to go back and fill gaps once they show up.",
+      "apply_it": "Attempt a real task slightly beyond your level, and list the basics you discover you're missing.",
+      "quiz": {
+        "question": "What is 'prerequisite chaining'?",
+        "options": [
+          "Finishing every foundation course before attempting anything",
+          "Learning only from the simplest material",
+          "Starting with a challenging task and learning basics as gaps appear",
+          "Linking several unrelated courses together"
+        ],
+        "answer": 2,
+        "explanation": "You begin with real work and fill in prerequisites when you hit them."
+      }
+    },
+    {
+      "id": "ultralearning-young--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "retrieval-practice",
+        "testing",
+        "study-skills"
+      ],
+      "title": "Testing yourself beats rereading, even though it doesn't feel like it",
+      "body": "Young cites research by psychologists Jeffrey Karpicke and Janell Blunt. Students who tried to recall a text from memory remembered more later than students who studied it by building concept maps, even though many students expected the opposite.\n\nRereading feels productive because the material seems familiar, but that familiarity is misleading. Pulling information out of your memory is harder, and that effort is what makes it stick. Young calls retrieval one of the most powerful learning tools available.",
+      "apply_it": "After reading a chapter, close it and write down everything you remember before looking again.",
+      "quiz": {
+        "question": "What did Karpicke and Blunt's study suggest?",
+        "options": [
+          "Rereading is the best way to study",
+          "Concept maps beat all other methods",
+          "Recalling from memory led to better learning than concept mapping",
+          "Students correctly predicted the best method"
+        ],
+        "answer": 2,
+        "explanation": "Free recall outperformed concept mapping, though students expected the reverse."
+      }
+    },
+    {
+      "id": "ultralearning-young--17",
+      "topic": "skills-mastery",
+      "tags": [
+        "desirable-difficulty",
+        "retrieval-practice",
+        "memory"
+      ],
+      "title": "Make recall a little harder, and test before you feel ready",
+      "body": "Young explains that retrieval works best when it's challenging but still possible. Waiting a little before testing yourself, or using open questions rather than multiple choice, makes recall harder and memories stronger.\n\nHe also describes a 'forward testing' effect: trying to answer questions before you've fully learned the material can help you learn it better afterwards. You don't need to wait until you feel ready to test yourself. The struggle itself is part of the learning.",
+      "apply_it": "Before reading your next chapter, try to answer three questions about it, then read to check.",
+      "quiz": {
+        "question": "According to Young, when should you start testing yourself?",
+        "options": [
+          "Even before you feel ready, because the effort helps learning",
+          "Only after you've mastered the material",
+          "Never, testing is for teachers",
+          "Only right before an exam"
+        ],
+        "answer": 0,
+        "explanation": "Challenging retrieval, even before you feel prepared, strengthens learning."
+      }
+    },
+    {
+      "id": "ultralearning-young--18",
+      "topic": "skills-mastery",
+      "tags": [
+        "note-taking",
+        "retrieval-practice",
+        "study-skills"
+      ],
+      "title": "Write questions instead of notes, and study with the book closed",
+      "body": "Young offers practical ways to build retrieval into study. In the question-book method, instead of copying down facts, you write questions you will answer later from memory. In closed-book learning, you try to explain or work through a topic without looking at your source, only checking afterwards.\n\nBoth turn passive studying into active practice. Flash cards and free recall, where you write out everything you know about a topic, work on the same principle.",
+      "apply_it": "Turn your notes from one recent lesson into five questions and answer them tomorrow without looking.",
+      "quiz": {
+        "question": "What is the 'question-book method'?",
+        "options": [
+          "Buying a book of exam questions",
+          "Asking a teacher every question you have",
+          "Reading only the questions at the end of chapters",
+          "Writing questions to answer later instead of copying facts"
+        ],
+        "answer": 3,
+        "explanation": "Writing questions instead of notes builds retrieval practice into your study."
+      }
+    },
+    {
+      "id": "ultralearning-young--19",
+      "topic": "skills-mastery",
+      "tags": [
+        "feedback",
+        "ego",
+        "performance"
+      ],
+      "title": "Feedback helps most when it's about the work, not about you",
+      "body": "Young notes that feedback is not always helpful. He cites a large review of research which found that in a substantial share of cases, feedback actually made performance worse, especially when it was aimed at a person's ego or worth rather than at the task.\n\nThe lesson is to seek feedback about specific actions you can change, and to give feedback that way too. Praise or criticism of who someone is tends to trigger defensiveness; information about what to do differently tends to help.",
+      "apply_it": "When asking for feedback, ask 'What is one thing I could change in this piece of work?'",
+      "quiz": {
+        "question": "When does feedback tend to hurt performance, according to Young?",
+        "options": [
+          "When it is specific",
+          "When it targets a person's ego or worth rather than the task",
+          "When it comes quickly",
+          "When it suggests what to change"
+        ],
+        "answer": 1,
+        "explanation": "Feedback aimed at the person rather than the work often backfires."
+      }
+    },
+    {
+      "id": "ultralearning-young--20",
+      "topic": "skills-mastery",
+      "tags": [
+        "feedback",
+        "types",
+        "improvement"
+      ],
+      "title": "Know which kind of feedback you're getting",
+      "body": "Young distinguishes three kinds of feedback. Outcome feedback tells you whether you succeeded overall, like a pass or a rejection. Informational feedback tells you what is going wrong, without saying how to fix it. Corrective feedback tells you what's wrong and how to fix it, which usually needs a teacher, coach or expert.\n\nMore precise feedback is generally more useful, but don't wait for perfect feedback. Use the best kind available, and look for ways to move up to more precise types.",
+      "apply_it": "For your current skill, identify which kind of feedback you get now and one way to get a more precise kind.",
+      "quiz": {
+        "question": "Which type of feedback tells you what's wrong and how to fix it?",
+        "options": [
+          "Outcome feedback",
+          "Corrective feedback",
+          "Informational feedback",
+          "Silent feedback"
+        ],
+        "answer": 1,
+        "explanation": "Corrective feedback identifies the problem and how to fix it; it usually requires an expert."
+      }
+    },
+    {
+      "id": "ultralearning-young--21",
+      "topic": "skills-mastery",
+      "tags": [
+        "feedback",
+        "noise",
+        "difficulty"
+      ],
+      "title": "Filter out noisy feedback and aim for the right difficulty",
+      "body": "Not all feedback is useful signal, Young warns. Random factors can make results go up and down. If you write online, raw visitor numbers may jump around for reasons unrelated to quality, while the share of readers who finish your piece may tell you more.\n\nHe also points out that difficulty affects feedback. If a task is so easy you always succeed, or so hard you always fail, you learn little. Aim for a level where results vary, so the feedback actually tells you something.",
+      "apply_it": "Pick one measure of your progress and ask: is this mostly signal, or mostly random noise?",
+      "quiz": {
+        "question": "Why does Young suggest practising at a level where you sometimes fail?",
+        "options": [
+          "Failure is more enjoyable",
+          "It guarantees fast success",
+          "It avoids the need for feedback",
+          "Results that vary give you useful information"
+        ],
+        "answer": 3,
+        "explanation": "If you always succeed or always fail, feedback tells you little; mixed results are informative."
+      }
+    },
+    {
+      "id": "ultralearning-young--22",
+      "topic": "skills-mastery",
+      "tags": [
+        "meta-feedback",
+        "tracking",
+        "learning-rate"
+      ],
+      "title": "Track how fast you're learning, not just how well you're doing",
+      "body": "Young suggests a further step he calls meta-feedback: paying attention to your rate of learning. For example, track your score on practice tests over weeks, or your rating in a competitive game.\n\nIf your progress slows, that tells you something about your method, not just your current level. You can then try a different approach for a while and see whether the learning rate picks up. This turns your own learning into something you can test and improve.",
+      "apply_it": "Choose one number that reflects your skill and record it weekly for the next month.",
+      "quiz": {
+        "question": "What is 'meta-feedback' in Ultralearning?",
+        "options": [
+          "Feedback on your rate of learning, used to adjust your methods",
+          "Feedback from more than one teacher",
+          "Feedback that is always positive",
+          "Feedback given by a computer"
+        ],
+        "answer": 0,
+        "explanation": "Tracking how quickly you improve tells you whether your methods are working."
+      }
+    },
+    {
+      "id": "ultralearning-young--23",
+      "topic": "skills-mastery",
+      "tags": [
+        "memory",
+        "spacing",
+        "forgetting"
+      ],
+      "title": "Space your reviews out to fight forgetting",
+      "body": "Young explains that we forget for several reasons: memories fade with time, new learning interferes with old, and we lose the cues that help us retrieve something. Spaced practice is one of the strongest defences.\n\nRather than cramming in one long session, review material several times with gaps in between, gradually lengthening the gaps. Spaced repetition software automates this for things like vocabulary. The total study time may be similar, but far more of it lasts.",
+      "apply_it": "Take one topic you studied this week and schedule short reviews in two days, one week and one month.",
+      "quiz": {
+        "question": "What does Young recommend to reduce forgetting?",
+        "options": [
+          "Cramming everything in one session",
+          "Avoiding review until the end",
+          "Spacing out reviews over increasing intervals",
+          "Learning only one fact at a time"
+        ],
+        "answer": 2,
+        "explanation": "Spaced reviews make memories last much longer than cramming."
+      }
+    },
+    {
+      "id": "ultralearning-young--24",
+      "topic": "skills-mastery",
+      "tags": [
+        "automaticity",
+        "retention",
+        "overlearning"
+      ],
+      "title": "Practise core skills until they're automatic, and they'll last",
+      "body": "Young notes that procedural skills, like riding a bike or typing, tend to be remembered much longer than facts. So it can pay to proceduralise the core of a skill: practise the essential parts until you can do them without thinking.\n\nHe also describes overlearning: practising a bit beyond the level you need, for example taking a more advanced course than required. Both help knowledge survive the long gaps when you're not using it.",
+      "apply_it": "Identify the two or three core actions in your skill and practise them until you can do them without thinking.",
+      "quiz": {
+        "question": "Why does Young suggest making core skills automatic?",
+        "options": [
+          "Automatic skills don't need to be learned",
+          "It removes the need for practice later",
+          "Procedural skills tend to be retained much longer than facts",
+          "Facts are always more important than skills"
+        ],
+        "answer": 2,
+        "explanation": "Skills practised to automaticity tend to last much longer than memorised facts."
+      }
+    },
+    {
+      "id": "ultralearning-young--25",
+      "topic": "skills-mastery",
+      "tags": [
+        "problem-solving",
+        "persistence",
+        "understanding"
+      ],
+      "title": "Stay with a hard problem a little longer before looking up the answer",
+      "body": "Young's principle of intuition begins with not giving up too quickly. When you're stuck, it's tempting to check the answer immediately. He suggests setting a 'struggle timer': commit to working on the problem for a set time before seeking help, and when you're ready to quit, try a bit longer.\n\nThe struggle itself builds understanding, and you'll often get further than you expected. Even if you don't solve it, you'll understand the answer far better when you finally see it.",
+      "apply_it": "Next time you're stuck, set a timer for ten more minutes before checking the solution.",
+      "quiz": {
+        "question": "What is the 'struggle timer' in Ultralearning?",
+        "options": [
+          "A set time to work on a hard problem before seeking help",
+          "A timer for how long you can study",
+          "A rule to give up after one minute",
+          "A countdown to an exam"
+        ],
+        "answer": 0,
+        "explanation": "It commits you to struggling a while longer, which deepens understanding."
+      }
+    },
+    {
+      "id": "ultralearning-young--26",
+      "topic": "skills-mastery",
+      "tags": [
+        "feynman-technique",
+        "understanding",
+        "teaching"
+      ],
+      "title": "Explain it simply to find out whether you really understand",
+      "body": "Young recommends a method associated with the physicist Richard Feynman. Write the idea you want to understand at the top of a page, then explain it as if teaching someone new to the subject. When you get stuck or fall back on vague jargon, you've found a gap.\n\nGo back to your sources to fill it, then try again. This exposes an illusion we all have: we often think we understand something far better than we do, until we have to explain it.",
+      "apply_it": "Pick one concept you 'know' and explain it in writing as if to a 12-year-old. Note where you stall.",
+      "quiz": {
+        "question": "What does the Feynman technique reveal?",
+        "options": [
+          "How fast you can read",
+          "Which teacher is best",
+          "How many facts you've memorised",
+          "Gaps in understanding that we don't notice until we explain"
+        ],
+        "answer": 3,
+        "explanation": "Explaining simply exposes the places where your understanding is vague."
+      }
+    },
+    {
+      "id": "ultralearning-young--27",
+      "topic": "skills-mastery",
+      "tags": [
+        "intuition",
+        "examples",
+        "self-honesty"
+      ],
+      "title": "Build intuition with concrete examples and honest self-checks",
+      "body": "Young argues that deep intuition comes from working with many concrete examples, not just abstract statements. Before tackling a general rule, play with specific cases until you can see why it works. He also suggests trying to prove or derive important results yourself, rather than simply accepting them.\n\nAbove all, don't fool yourself. It's easy to think you understand when you only recognise the words. Testing yourself honestly protects you from that comfortable illusion.",
+      "apply_it": "For the next rule or principle you learn, work through three specific examples before moving on.",
+      "quiz": {
+        "question": "How does Young suggest building intuition about an abstract idea?",
+        "options": [
+          "Memorise the definition word for word",
+          "Work through concrete examples and try to derive it yourself",
+          "Skip it and come back later",
+          "Ask someone to summarise it"
+        ],
+        "answer": 1,
+        "explanation": "Concrete examples and working things out yourself build genuine understanding."
+      }
+    },
+    {
+      "id": "ultralearning-young--28",
+      "topic": "skills-mastery",
+      "tags": [
+        "experimentation",
+        "creativity",
+        "style"
+      ],
+      "title": "Once you know the basics, experiment to keep improving",
+      "body": "Young's final principle is experimentation. Early on, following an established method works well. But as you advance, there are fewer clear paths, and you have to try things to find what works for you.\n\nHe suggests copying others before creating your own style, comparing two methods side by side, adding constraints that force new solutions, and combining skills into unusual mixes. Exploring the extremes of a style can also show you possibilities you'd never find in the middle.",
+      "apply_it": "Pick one constraint to add to your next practice, such as a time limit or a banned tool, and see what changes.",
+      "quiz": {
+        "question": "When does experimentation become most important, according to Young?",
+        "options": [
+          "Before you learn anything",
+          "Once the basics are learned and clear paths run out",
+          "Only when you have a teacher",
+          "Never: always follow the standard method"
+        ],
+        "answer": 1,
+        "explanation": "Beyond the basics, trying new methods, constraints and combinations is how you keep improving."
+      }
+    },
+    {
+      "id": "ultralearning-young--29",
+      "topic": "productivity",
+      "tags": [
+        "project-planning",
+        "scheduling",
+        "learning-goals"
+      ],
+      "title": "Plan your learning project, then review what worked",
+      "body": "Young offers a simple structure for a learning project. Research first: decide the scope, the direct practice you'll do, your main resources, and some drills as a backup. Then schedule it: decide how many hours a week, when they'll happen, and how long the project will run, and put it on your calendar.\n\nAs you go, check against the principles. Afterwards, review honestly what worked, what didn't, and what you'd change next time. Part-time projects fitted around work count too.",
+      "apply_it": "Write a one-page plan for a learning project: scope, resources, weekly hours, start and end dates.",
+      "quiz": {
+        "question": "What does Young suggest doing after a learning project ends?",
+        "options": [
+          "Start the next one immediately without reflecting",
+          "Forget about it",
+          "Repeat the same plan exactly",
+          "Review what worked, what didn't and what to change"
+        ],
+        "answer": 3,
+        "explanation": "A post-project review turns your experience into better plans for next time."
+      }
+    },
+    {
+      "id": "ultralearning-young--30",
+      "topic": "skills-mastery",
+      "tags": [
+        "maintenance",
+        "retention",
+        "mastery"
+      ],
+      "title": "After a project, decide whether to maintain, relearn or go deeper",
+      "body": "Skills fade when they're not used, so Young suggests deciding what to do once a project ends. You can maintain a skill with light, regular practice, which can become less frequent over time. You can let it fade and relearn it later, which is usually much faster than learning it the first time. Or you can go deeper, with a new project aimed at mastery.\n\nMaking that choice on purpose stops hard-won skills from quietly disappearing.",
+      "apply_it": "List the skills you've learned in the last few years and choose one to maintain with a short weekly habit.",
+      "quiz": {
+        "question": "What three options does Young offer for skills once a project ends?",
+        "options": [
+          "Maintain, relearn later, or pursue mastery",
+          "Forget, ignore, or replace",
+          "Teach, sell, or abandon",
+          "Repeat, reread, or rewrite"
+        ],
+        "answer": 0,
+        "explanation": "You can keep a skill up, let it fade and relearn it, or deepen it toward mastery."
+      }
+    }
+  ]
+}

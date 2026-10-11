@@ -1,0 +1,801 @@
+{
+  "source": {
+    "id": "art-of-writing-stevenson",
+    "title": "Essays in the Art of Writing",
+    "authors": [
+      "Robert Louis Stevenson"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/492",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Robert Louis Stevenson, Essays in the Art of Writing, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1905,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Posthumous 1905 Chatto & Windus collection of essays first published 1881-1894 (Stevenson died 1894). Gutenberg #492, via the GITenberg mirror. Contents: On Some Technical Elements of Style; The Morality of the Profession of Letters; Books which have Influenced Me; A Note on Realism; My First Book: Treasure Island; The Genesis and Preface of The Master of Ballantrae. 'A College Magazine' (the 'sedulous ape' essay) is not in this book; it is in Memories and Portraits."
+  },
+  "cards": [
+    {
+      "id": "art-of-writing-stevenson--01",
+      "topic": "creativity",
+      "tags": [
+        "writing",
+        "words",
+        "precision",
+        "craft"
+      ],
+      "title": "Words are fixed building blocks, so every one must move your meaning forward",
+      "body": "Stevenson compared writers with painters and sculptors. They work in soft, shapeable materials like clay, and can leave parts vague or shadowy. Writers have to build with words, which are fixed blocks of set size and meaning, the same ones used every day at the market.\n\nThat makes writing strict. There's no smudge to hide behind: every word, sentence and paragraph has to advance in a logical order and carry a definite meaning. When your writing feels muddy, look for words that are only filling space or that don't connect to the step before.",
+      "quote": "literature alone is condemned to work in mosaic with finite and quite rigid words.",
+      "locator": "On Some Technical Elements of Style in Literature ¶4",
+      "apply_it": "Take one paragraph you wrote today. Check that each sentence follows from the last; fix or cut any that doesn't.",
+      "quiz": {
+        "question": "Why did Stevenson call writing a kind of mosaic?",
+        "options": [
+          "Because writers must build from fixed, rigid words",
+          "Because books contain pictures",
+          "Because writing is mostly decoration",
+          "Because words can be shaped like clay"
+        ],
+        "answer": 0,
+        "explanation": "Unlike clay or paint, words have fixed shapes and meanings, so writers assemble them like mosaic tiles."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--02",
+      "topic": "creativity",
+      "tags": [
+        "word-choice",
+        "writing",
+        "speaking",
+        "style"
+      ],
+      "title": "The first thing readers notice is how well you choose your words",
+      "body": "Stevenson said the first quality that grabs us in a good writer, or a brilliant talker, is the fit and contrast of their words. Using everyday words, made rough for trade and argument, a skilled writer can bring out fine shades of meaning, give them fresh energy, or turn them into a drum that stirs feeling.\n\nHe added that word choice isn't everything; some writers with plainer vocabulary excel in other ways. But it's the most immediately felt skill. A precise verb or a surprising pairing makes a sentence come alive in a way general words never do.",
+      "quote": "the first merit which attracts in the pages of a good writer, or the talk of a brilliant conversationalist, is the apt choice and contrast of the words employed.",
+      "locator": "On Some Technical Elements of Style in Literature ¶5",
+      "apply_it": "Find three vague words in something you've written (like 'thing', 'good', 'very'). Replace each with a more exact one.",
+      "quiz": {
+        "question": "What did Stevenson call the first merit that attracts us in a good writer?",
+        "options": [
+          "Long sentences",
+          "Many quotations",
+          "Apt choice and contrast of words",
+          "A large vocabulary of rare words"
+        ],
+        "answer": 2,
+        "explanation": "He says the apt choice and contrast of words is the most immediately felt quality, in writing and in talk."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--03",
+      "topic": "creativity",
+      "tags": [
+        "sentences",
+        "rhythm",
+        "writing",
+        "endings"
+      ],
+      "title": "Build each sentence to a satisfying finish, not a weak trailing end",
+      "body": "Stevenson described a good sentence as a small piece of suspense. It gathers into a kind of knot, holds the meaning briefly in the air, then resolves and clears. The reader is led to expect, and then to welcome, each phrase.\n\nHe warned that nothing disappoints the ear more than a sentence that starts with grand preparation and then fizzles out. He also said the pattern must keep changing: surprise the reader, then satisfy them, never falling into a mechanical balance. Reading your work aloud is the quickest way to hear sentences that collapse at the end.",
+      "quote": "nothing more often disappoints the ear than a sentence solemnly and sonorously prepared, and hastily and weakly finished.",
+      "locator": "On Some Technical Elements of Style in Literature ¶7",
+      "apply_it": "Read your last few sentences aloud. Rewrite any that end on a weak word so the important idea comes last.",
+      "quiz": {
+        "question": "What disappoints the ear most, according to Stevenson?",
+        "options": [
+          "A short sentence",
+          "A sentence grandly begun but weakly finished",
+          "A question",
+          "A sentence with a surprise"
+        ],
+        "answer": 1,
+        "explanation": "A sentence that builds up solemnly and then ends hastily and weakly lets the reader down."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--04",
+      "topic": "creativity",
+      "tags": [
+        "filler",
+        "clarity",
+        "editing",
+        "writing"
+      ],
+      "title": "Never add words just to make a sentence sound balanced",
+      "body": "Stevenson compared a writer to a juggler keeping two oranges in the air: one is the pleasing pattern of the sentence, the other is the argument. Drop either and the trick fails.\n\nHe was especially hard on the cheville, a French term for a hollow or watered-down phrase put in only to round off the sound. Every phrase must help carry the meaning forward; otherwise, he said, you are cheating at the game. Modern equivalents include 'at the end of the day', 'it is important to note that' and other padding. Cut them and the rhythm usually improves anyway.",
+      "quote": "no form of words must be selected, no knot must be tied among the phrases, unless knot and word be precisely what is wanted to forward and illuminate the argument; for to fail in this is to swindle in the game.",
+      "locator": "On Some Technical Elements of Style in Literature ¶8",
+      "apply_it": "Search your draft for stock phrases that add sound but no meaning. Delete three of them.",
+      "quiz": {
+        "question": "What is a 'cheville', as Stevenson uses the word?",
+        "options": [
+          "A key argument",
+          "A chapter heading",
+          "A type of rhyme",
+          "A meaningless phrase used only to balance the sound"
+        ],
+        "answer": 3,
+        "explanation": "He defines it as any meaningless or watered phrase used to strike a balance in the sound, and says prose must reject it."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--05",
+      "topic": "creativity",
+      "tags": [
+        "style",
+        "concision",
+        "writing",
+        "density"
+      ],
+      "title": "The best style isn't the 'most natural': it does more in fewer words",
+      "body": "Stevenson disagreed with people who say the best style is simply the most natural. The most natural writing, he said, is a chronicler's string of shallow, disconnected statements: this happened, then this.\n\nGood style is synthetic. It ties two or more ideas together, contrasts them, and so does the work of two sentences in the space of one. That compression shows a deeper grasp of how events connect, and the reader feels it as pleasure. Natural-sounding prose is often the result of hard shaping, not a first draft.",
+      "quote": "That style is therefore the most perfect, not, as fools say, which is the most natural, for the most natural is the disjointed babble of the chronicler",
+      "locator": "On Some Technical Elements of Style in Literature ¶9",
+      "apply_it": "Find two short, flat sentences in your writing that are related. Combine them into one that shows how they connect.",
+      "quiz": {
+        "question": "What makes a style most perfect, according to Stevenson?",
+        "options": [
+          "Being as natural as speech",
+          "Using the most words",
+          "Combining ideas so one sentence does the work of two",
+          "Avoiding all rhythm"
+        ],
+        "answer": 2,
+        "explanation": "He praises synthetic writing that weaves elements together, rather than the 'natural' babble of a list of events."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--06",
+      "topic": "creativity",
+      "tags": [
+        "rhythm",
+        "prose",
+        "variety",
+        "writing"
+      ],
+      "title": "Vary the length of your phrases: prose should have rhythm but no beat",
+      "body": "Stevenson set out a simple rule for prose rhythm: it can be as rhythmical as you like, but it must never slip into a regular metre. Successive phrases should differ clearly in length and movement.\n\nEnglish, he noticed, naturally falls into a sing-song beat, and bad, inexperienced or tired writers drift into accidental verse without noticing. A run of phrases of the same length quickly bores the ear. The fix is variety: a long, winding sentence, then a short one. Then something in between.",
+      "quote": "Prose must be rhythmical, and it may be as much so as you will; but it must not be metrical.",
+      "locator": "On Some Technical Elements of Style in Literature ¶24",
+      "apply_it": "Count the words in five consecutive sentences of your writing. If they're all similar, rewrite one to be much shorter and one much longer.",
+      "quiz": {
+        "question": "What is Stevenson's rule for rhythm in prose?",
+        "options": [
+          "Be rhythmical but never fall into a regular metre",
+          "Avoid rhythm entirely",
+          "Use a regular metre like poetry",
+          "Keep every phrase the same length"
+        ],
+        "answer": 0,
+        "explanation": "Prose should suggest no measure at all; its phrases must keep varying in length and rhythm."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--07",
+      "topic": "creativity",
+      "tags": [
+        "sound",
+        "repetition",
+        "revision",
+        "reading-aloud"
+      ],
+      "title": "Listen for repeated sounds and words your eye misses",
+      "body": "Stevenson believed writers are guided by sound far more than they realise. He told of one careful writer who swapped one short word for another of the same meaning and rhythm, and couldn't say why, until he looked back and saw he'd been hammering the same vowel for half a page.\n\nHe also mocked Macaulay for leaning on the same consonant sounds and repeating words. The lesson is practical: repetition you can't see on the page is often obvious to the ear. Reading your draft aloud catches clunky echoes and accidental tongue-twisters.",
+      "quote": "for nearly half a page he had been riding that vowel to the death.",
+      "locator": "On Some Technical Elements of Style in Literature ¶43",
+      "apply_it": "Read your next important piece of writing aloud before sending it. Mark any word or sound that jars and fix it.",
+      "quiz": {
+        "question": "In Stevenson's story, why did the writer swap one word for another of the same meaning?",
+        "options": [
+          "The new word was shorter",
+          "It changed the meaning",
+          "His editor demanded it",
+          "He had been overusing the same vowel sound"
+        ],
+        "answer": 3,
+        "explanation": "Looking back, he found he'd been repeating an open A sound for nearly half a page, and his ear had sensed it."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--08",
+      "topic": "creativity",
+      "tags": [
+        "patience",
+        "standards",
+        "writing",
+        "craft"
+      ],
+      "title": "Perfect sentences are rare, so be patient with your own",
+      "body": "At the end of his essay on style, Stevenson listed all the things a writer juggles at once: exact words, a logical weave, rhythm without metre, and pleasing patterns of sound. Almost every faculty, from the sensual ear to pure reasoning, is at work in a single good passage.\n\nNo wonder, he concluded, that perfect sentences are rare and perfect pages rarer. This is a comfort. If your writing seldom feels finished, that's not proof you lack talent; it's the nature of a demanding craft. Aim for better, not flawless.",
+      "quote": "We need not wonder, then, if perfect sentences are rare, and perfect pages rarer.",
+      "locator": "On Some Technical Elements of Style in Literature ¶45",
+      "apply_it": "Pick one sentence in your current draft and polish only that one until you're proud of it. Then move on.",
+      "quiz": {
+        "question": "Why are perfect sentences rare, in Stevenson's view?",
+        "options": [
+          "Because English is a poor language",
+          "Because a good passage demands many faculties working at once",
+          "Because readers don't care",
+          "Because only poets can write them"
+        ],
+        "answer": 1,
+        "explanation": "A perfect passage requires taste, reason, ear and logic all held at full stretch at the same time."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--09",
+      "topic": "creativity",
+      "tags": [
+        "constraints",
+        "difficulty",
+        "form",
+        "creativity"
+      ],
+      "title": "Constraints can make work better: added difficulty, added beauty",
+      "body": "Stevenson argued that it is easier to write fairly pleasing verse than reasonably interesting prose. Verse gives the writer a ready-made pattern of metre and rhyme. In prose you must invent the pattern yourself, creating the difficulties before solving them.\n\nHe compared great poets to jugglers who add a third orange: by mastering an extra constraint, they delight us with a further layer of skill. Fixed forms, word limits, tight deadlines and small budgets can work the same way, forcing choices that lead to richer results.",
+      "quote": "Thus it is: added difficulty, added beauty",
+      "locator": "On Some Technical Elements of Style in Literature ¶11",
+      "apply_it": "Set yourself one constraint for your next piece: a word limit, a fixed structure or a single colour. See what it forces you to invent.",
+      "quiz": {
+        "question": "Why did Stevenson think interesting prose is harder than pleasing verse?",
+        "options": [
+          "In prose the writer has to invent his own pattern",
+          "Prose is longer",
+          "Verse has fewer rules",
+          "Readers prefer poetry"
+        ],
+        "answer": 0,
+        "explanation": "Verse supplies a pattern through its laws; prose writers must create their own."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--10",
+      "topic": "productivity",
+      "tags": [
+        "career",
+        "purpose",
+        "money",
+        "meaningful-work"
+      ],
+      "title": "Choose your work for love of it and its usefulness, not the pay alone",
+      "body": "Stevenson wrote that there are two good reasons for choosing a way of life: a natural taste for it, and the real good it does. Writing, he felt, met both tests.\n\nHe didn't pretend money was irrelevant, but he put it in its place. The work you do all day affects your happiness far more than the quality of your dinner. And whatever your job, you could always earn more by cheating. Pay matters, but if it's your only reason, you may build a career you neither enjoy nor respect.",
+      "quote": "There are two just reasons for the choice of any way of life: the first is inbred taste in the chooser; the second some high utility in the industry selected.",
+      "locator": "The Morality of the Profession of Letters ¶2",
+      "apply_it": "Score your current work from 1 to 10 on two questions: do I enjoy it, and is it useful to others? What one change would raise the lower score?",
+      "quiz": {
+        "question": "What are Stevenson's two good reasons for choosing a way of life?",
+        "options": [
+          "Salary and status",
+          "Family tradition and security",
+          "Natural taste for it and its usefulness",
+          "Short hours and good holidays"
+        ],
+        "answer": 2,
+        "explanation": "He names inbred taste in the chooser and high utility in the work as the just reasons for choosing a career."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--11",
+      "topic": "communication",
+      "tags": [
+        "influence",
+        "responsibility",
+        "media",
+        "writing"
+      ],
+      "title": "Everything you publish shapes what people think, so write responsibly",
+      "body": "Stevenson reminded writers that even the humblest article, review or news piece helps build public opinion. What a nation reads shapes how it speaks, and together they educate the young.\n\nHe was troubled by newspapers on opposite sides each twisting the same news for their party, while readers smiled as if it were a harmless joke. We teach children to respect truth, he noted, yet openly accept public falsehood. Today, every post or forwarded message is a small contribution to the public mood. Even small writers can do real good or real harm.",
+      "quote": "in the humblest sort of literary work, we have it in our power either to do great harm or great good.",
+      "locator": "The Morality of the Profession of Letters ¶3",
+      "apply_it": "Before you share or post your next piece of news, take one minute to check whether it is accurate and fairly put.",
+      "quiz": {
+        "question": "Why did Stevenson think even small pieces of writing matter?",
+        "options": [
+          "They earn good money",
+          "They help build public opinion and educate readers",
+          "They are easy to write",
+          "Nobody reads them"
+        ],
+        "answer": 1,
+        "explanation": "The total of a nation's reading shapes its speech and opinions, so every writer can do great harm or good."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--12",
+      "topic": "communication",
+      "tags": [
+        "accuracy",
+        "truth",
+        "storytelling",
+        "writing"
+      ],
+      "title": "In any story, the only way to be clever is to be exact",
+      "body": "Stevenson said every writer owes two things to readers: truth to the facts and a good spirit in telling them. People build their picture of the world largely from what they read, so writers carry responsibility for how accurate that picture is.\n\nHe also gave a sharp rule for narrative. Vividness is good, but it's a second quality that depends on accuracy. Painting a wrong impression vividly only makes your failure more obvious. Whether you are reporting, pitching or telling a family story, get the facts right first, then make them come alive.",
+      "quote": "in all narration there is only one way to be clever, and that is to be exact.",
+      "locator": "The Morality of the Profession of Letters ¶4",
+      "apply_it": "In your next report or story, double-check one key fact or figure before adding any colour or drama.",
+      "quiz": {
+        "question": "What does Stevenson say about being vivid?",
+        "options": [
+          "It matters more than accuracy",
+          "It only matters in fiction",
+          "It should be avoided",
+          "It is a secondary quality that must rest on exactness"
+        ],
+        "answer": 3,
+        "explanation": "To vividly convey a wrong impression only makes failure conspicuous; exactness comes first."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--13",
+      "topic": "creativity",
+      "tags": [
+        "empathy",
+        "open-mind",
+        "attitude",
+        "writing"
+      ],
+      "title": "A writer's most important tool is sympathy",
+      "body": "Stevenson pointed out that a fact can be told with rage, tears, laughter or admiration, and each version becomes a different story. In fiction and reflective writing, the author's attitude doesn't just colour the facts; it chooses them.\n\nSo the writer's first duty, he said, is to keep the mind flexible, generous and bright. Let everything but prejudice find a voice, look for the good in things, and keep silent where you don't fully understand. Narrow beliefs produce narrow, small, sometimes cruel work. Sympathy widens what you can see and say.",
+      "quote": "he should recognise from the first that he has only one tool in his workshop, and that tool is sympathy.",
+      "locator": "The Morality of the Profession of Letters ¶5",
+      "apply_it": "Think of a person or group you're writing or talking about. Write down one thing that could be said in their favour.",
+      "quiz": {
+        "question": "What did Stevenson call the writer's one tool?",
+        "options": [
+          "Grammar",
+          "Imagination",
+          "Sympathy",
+          "Research"
+        ],
+        "answer": 2,
+        "explanation": "He says a writer should recognise from the start that he has only one tool in his workshop: sympathy."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--14",
+      "topic": "learning",
+      "tags": [
+        "reading",
+        "generosity",
+        "criticism",
+        "merit"
+      ],
+      "title": "When reading, look for merits rather than faults",
+      "body": "Stevenson admitted that many valuable books have serious flaws: some are partly unbalanced, some harsh, many gloomy or weak. Even great works contain passages that jar.\n\nYet he refused to let flaws cancel what's good. No book is perfect, even in its plan, but many can delight, improve or encourage you. A book written with real force usually captures some truth and beauty despite its weaknesses. The habit of hunting for merits makes you a better reader, a fairer critic and a kinder colleague.",
+      "quote": "We are not, above all, to look for faults, but merits.",
+      "locator": "The Morality of the Profession of Letters ¶7",
+      "apply_it": "Think of a book, film or colleague's work you dismissed. Write down two genuine strengths it has.",
+      "quiz": {
+        "question": "What attitude did Stevenson recommend towards flawed books?",
+        "options": [
+          "Look above all for merits, not faults",
+          "Reject any book with flaws",
+          "Only read perfect books",
+          "Focus on correcting the author"
+        ],
+        "answer": 0,
+        "explanation": "He says no book is perfect, but many will delight or improve us, so we should look for merits."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--15",
+      "topic": "creativity",
+      "tags": [
+        "patience",
+        "ideas",
+        "planning",
+        "reflection"
+      ],
+      "title": "Never hurry what can be done slowly: let an idea mature before you start",
+      "body": "Stevenson believed you can never be sure of getting a work exactly right, but you can improve your odds with one rule: never rush anything that could be done at a slower pace.\n\nHe added that the waiting must come before you start, because writing itself convinces you of your own view. So turn the subject over first, like tasting something on the tongue, to be sure you like its flavour. If the topic is controversial, think about it in good moods and bad, in health and sickness. This close examination, he said, makes the craft a lifelong education.",
+      "quote": "Nothing should be done in a hurry that can be done slowly.",
+      "locator": "The Morality of the Profession of Letters ¶8",
+      "apply_it": "Before starting your next big piece of work, spend a few days noting your thoughts on it. Begin only when the idea still excites you.",
+      "quiz": {
+        "question": "Why did Stevenson say the delay must come before starting a work?",
+        "options": [
+          "Because publishers are slow",
+          "Because rest improves handwriting",
+          "Because ideas expire",
+          "Because once you write, you partly convince yourself"
+        ],
+        "answer": 3,
+        "explanation": "The act of writing persuades the writer, so careful thought must come first."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--16",
+      "topic": "learning",
+      "tags": [
+        "fiction",
+        "reading",
+        "empathy",
+        "influence"
+      ],
+      "title": "Good fiction teaches by taking you out of yourself",
+      "body": "Asked which books had shaped him, Stevenson started with novels and plays. Fiction, he argued, influences us most honestly: it doesn't pin us to a doctrine we later find wrong, or teach a lesson we must unlearn. It rearranges and clarifies the lessons of life and, for a while, removes our own demanding ego from the picture.\n\nShakespeare served him best; few living friends, he said, had done him as much good as Hamlet or Rosalind. If your reading is all how-to books, a great novel may teach you more about people than any manual.",
+      "quote": "they disengage us from ourselves, they constrain us to the acquaintance of others",
+      "locator": "Books Which Have Influenced Me ¶2",
+      "apply_it": "Add one well-regarded novel to your reading list this month and notice which character you find yourself thinking about.",
+      "quiz": {
+        "question": "Why did Stevenson consider fiction the most influential kind of book?",
+        "options": [
+          "It is the easiest to read",
+          "It clarifies life's lessons and draws us out of ourselves without fixing us to a dogma",
+          "It contains the most facts",
+          "It is always morally simple"
+        ],
+        "answer": 1,
+        "explanation": "Fiction rearranges life's lessons and makes us acquainted with others, rather than teaching a lesson we must unlearn."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--17",
+      "topic": "learning",
+      "tags": [
+        "teachers",
+        "inspiration",
+        "values",
+        "mentors"
+      ],
+      "title": "The best teachers pass on a spirit, not a set of rules",
+      "body": "Writing about Wordsworth, Stevenson observed that almost everyone has been influenced by him, though it's hard to say exactly how. You don't learn a specific lesson, and you needn't share any of his beliefs. Yet something of his innocence and austere joy rubs off.\n\nStevenson concluded that this is what the best teachers do. A doctrine, once learned, may just be a new mistake replacing an old one. But a spirit, communicated, stays with you for life. Think of the mentors who changed you: it's often their attitude, not their advice, that you still carry.",
+      "quote": "a dogma learned is only a new error—the old one was perhaps as good; but a spirit communicated is a perpetual possession.",
+      "locator": "Books Which Have Influenced Me ¶9",
+      "apply_it": "Think of the teacher or mentor who influenced you most. Write down the attitude, not the rules, you picked up from them.",
+      "quiz": {
+        "question": "What did Stevenson say the best teachers communicate?",
+        "options": [
+          "A spirit that becomes a lasting possession",
+          "Exam techniques",
+          "Strict rules",
+          "A complete system of beliefs"
+        ],
+        "answer": 0,
+        "explanation": "He contrasts a dogma, which may be a new error, with a spirit, which is a perpetual possession."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--18",
+      "topic": "personal-development",
+      "tags": [
+        "self-awareness",
+        "faults",
+        "reading",
+        "honesty"
+      ],
+      "title": "Seek out books that show you your own faults",
+      "body": "Stevenson praised George Meredith's novel The Egoist as unlike any of the thousands of novels he'd read. It's a satire, but not the easy kind that mocks other people's obvious faults. It hunts down the reader's own.\n\nHe told the story of a young friend who rushed to Meredith in distress, crying that the selfish hero was based on him. Meredith replied that the character was all of us. Stevenson reread the book five or six times and called the hero a useful exposure of himself. Reading that makes you squirm can be the most valuable kind.",
+      "quote": "It is yourself that is hunted down; these are your own faults that are dragged into the day and numbered",
+      "locator": "Books Which Have Influenced Me ¶10",
+      "apply_it": "Next time a character, article or comment makes you uncomfortable, ask: what part of this is true about me?",
+      "quiz": {
+        "question": "What made The Egoist special to Stevenson?",
+        "options": [
+          "It mocked other people's faults",
+          "It was very short",
+          "It exposed the reader's own faults",
+          "It had a happy ending"
+        ],
+        "answer": 2,
+        "explanation": "Its satire targeted not the obvious faults of others but the reader's own, which is why he reread it so often."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--19",
+      "topic": "learning",
+      "tags": [
+        "open-mind",
+        "disagreement",
+        "reading",
+        "understanding"
+      ],
+      "title": "The gift of reading is trying to see what truth lies in views you reject",
+      "body": "Stevenson said real reading is a rare gift. It starts with understanding that you are not perfectly right and those you disagree with are not entirely wrong. You can hold firm beliefs and still learn from people who hold them differently or not at all.\n\nHis test is simple. When you meet something that seems shockingly new, false or dangerous, do you try to find what truth excuses it? Then you have the gift. If you are merely offended and dismiss the author as a fool, he joked, stick to the daily papers.",
+      "quote": "If he tries to see what it means, what truth excuses it, he has the gift, and let him read.",
+      "locator": "Books Which Have Influenced Me ¶12",
+      "apply_it": "Read one thoughtful article from a viewpoint you disagree with. Write one sentence on what it gets right.",
+      "quiz": {
+        "question": "What is Stevenson's test of a true reader?",
+        "options": [
+          "Reading many books quickly",
+          "Looking for the truth in something that seems false or offensive",
+          "Agreeing with the author",
+          "Remembering every detail"
+        ],
+        "answer": 1,
+        "explanation": "A true reader tries to see what truth excuses an idea that seems false or dangerous, instead of simply taking offence."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--20",
+      "topic": "creativity",
+      "tags": [
+        "style",
+        "improvement",
+        "editing",
+        "craft"
+      ],
+      "title": "Style is the one part of your craft you can always improve",
+      "body": "Stevenson believed some gifts are fixed at birth: passion, wisdom, raw creative force. Those can't be learned or faked. But style can.\n\nBy style he meant the skilful use of whatever qualities you have: keeping parts in proportion, cutting what's useless, stressing what matters, and keeping a consistent character from start to finish. These are within reach of anyone willing to work and think hard. The key questions keep coming back: what goes in, what comes out, and is this detail essential or just decoration?",
+      "quote": "it is still the one quality in which he may improve himself at will.",
+      "locator": "A Note on Realism ¶1",
+      "apply_it": "Edit one piece of your work using Stevenson's questions: what is useless, what is important, and is it consistent from start to end?",
+      "quiz": {
+        "question": "Which quality did Stevenson say a writer can improve at will?",
+        "options": [
+          "Passion",
+          "Wisdom",
+          "Creative force",
+          "Style"
+        ],
+        "answer": 3,
+        "explanation": "He says passion and creative force are given at birth, but style is within reach of industry and courage."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--21",
+      "topic": "creativity",
+      "tags": [
+        "editing",
+        "omission",
+        "detail",
+        "storytelling"
+      ],
+      "title": "Leave out much, and keep the details that do several jobs at once",
+      "body": "Stevenson noted that every artist's tools are crude compared with real experience, so the main resource is omission. Leave out what is dull and irrelevant; play down what is dull but necessary.\n\nThe details worth keeping are the ones that pay two or three debts at once. In the best stories, a detail moves the plot along, builds a character and strikes the theme together. That ideal is rarely reached, he admitted, and as a work grows, filler creeps in and swamps the main idea. Choose details that multitask.",
+      "quote": "He must, that is, suppress much and omit more.",
+      "locator": "A Note on Realism ¶7",
+      "apply_it": "Look at one detail in your current work. Does it serve two purposes? If it serves only one, consider cutting or changing it.",
+      "quiz": {
+        "question": "Which details does Stevenson say a writer should eagerly keep?",
+        "options": [
+          "The longest descriptions",
+          "Every true fact",
+          "Those that serve several purposes at once",
+          "The ones easiest to write"
+        ],
+        "answer": 2,
+        "explanation": "The highest art keeps facts that serve a double or treble purpose, both ornament and support of the design."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--22",
+      "topic": "creativity",
+      "tags": [
+        "cliches",
+        "originality",
+        "habits",
+        "craft"
+      ],
+      "title": "Beware ready-made solutions that come too easily to hand",
+      "body": "Stevenson warned that writers tend to include what they already know how to describe, especially what has been described many times before. Stock scenes, familiar tricks and standard structures come naturally to a practised hand, like a stonemason's favourite carved leaf.\n\nThese stock solutions are often good, which is why they survive. But they are rarely a perfect fit for the problem at hand, and they pull you away from looking freshly at life. Templates speed up work, but check that they fit, not just that they are familiar.",
+      "quote": "offer us ready-made but not perfectly appropriate solutions for any problem that arises",
+      "locator": "A Note on Realism ¶8",
+      "apply_it": "In your current project, find one place where you used a familiar formula. Try one fresh alternative and compare.",
+      "quiz": {
+        "question": "What is the danger of stock incidents and tricks of workmanship, according to Stevenson?",
+        "options": [
+          "They offer ready-made solutions that don't quite fit and keep us from studying life",
+          "They are always bad",
+          "They are illegal to copy",
+          "Readers never notice them"
+        ],
+        "answer": 0,
+        "explanation": "Stock solutions tempt because they come easily, but they are not perfectly appropriate and wean us from fresh observation."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--23",
+      "topic": "creativity",
+      "tags": [
+        "growth",
+        "formula",
+        "experimentation",
+        "craft"
+      ],
+      "title": "Bring fresh effort to each new work instead of repeating a formula",
+      "body": "Stevenson described the moment of starting a serious work as one of great strain: the writer must decide scale, style and spirit almost at once. Artists of moderate energy, he said, face that struggle only once. They form a style and stick to it for life.\n\nGreater artists can't settle for that, because a fixed process slowly hardens into something dry and mechanical. Each new work calls up all their powers again, and their manner keeps changing as their experience grows. That's why critics talk of different periods in Raphael, Shakespeare or Beethoven.",
+      "quote": "Every fresh work in which they embark is the signal for a fresh engagement of the whole forces of their mind",
+      "locator": "A Note on Realism ¶6",
+      "apply_it": "Before starting your next project, ask: what would I do differently if this were my first attempt? Try one new approach.",
+      "quiz": {
+        "question": "What happens to artists who form one style and keep it for life, according to Stevenson?",
+        "options": [
+          "They become the greatest masters",
+          "They never make mistakes",
+          "They earn the most money",
+          "Their work tends to become academic and mechanical"
+        ],
+        "answer": 3,
+        "explanation": "He says such a process must degenerate towards the academic and cut-and-dried; greater artists re-engage fully with each work."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--24",
+      "topic": "creativity",
+      "tags": [
+        "persistence",
+        "failure",
+        "finishing",
+        "writing"
+      ],
+      "title": "Stevenson failed to finish a novel ten or twelve times before Treasure Island",
+      "body": "By his early thirties, Stevenson was a published essayist and story writer, but he had never finished a novel. He had started one after another, from before age fifteen to twenty-nine, and every one stopped, like a schoolboy's watch. He compared himself to a cricketer who had played for years without scoring a run.\n\nAnyone can write a short story, he said, but length is what defeats people. His eventual success came after years of abandoned attempts. If you have a drawer of unfinished projects, you are in good company. The attempts were his training.",
+      "quote": "although I had attempted the thing with vigour not less than ten or twelve times, I had not yet written a novel.",
+      "locator": "My First Book: ‘Treasure Island’ ¶2",
+      "apply_it": "Pick one unfinished project. Write down what stopped it, and one small change that could help the next attempt get further.",
+      "quiz": {
+        "question": "What did Stevenson say defeats would-be novelists?",
+        "options": [
+          "Lack of ideas",
+          "The length of the work",
+          "Bad publishers",
+          "Too much research"
+        ],
+        "answer": 1,
+        "explanation": "Anyone can write a short story, he said, but 'it is the length that kills'."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--25",
+      "topic": "creativity",
+      "tags": [
+        "play",
+        "inspiration",
+        "maps",
+        "ideas"
+      ],
+      "title": "Treasure Island began as a map drawn for fun",
+      "body": "On a rainy holiday in Scotland, Stevenson was keeping a schoolboy company as he painted pictures. For fun, he drew and coloured the map of an imaginary island and labelled it Treasure Island.\n\nAs he looked at it, the characters began to appear among the imaginary woods, and soon he was writing a list of chapters. The story grew from playful, low-pressure making, not from a plan to write a classic. Sketching, doodling or building something with no purpose can be the start of serious work.",
+      "quote": "the future character of the book began to appear there visibly among imaginary woods",
+      "locator": "My First Book: ‘Treasure Island’ ¶6",
+      "apply_it": "Spend 15 minutes making something just for fun: a sketch, a map, a playlist. Note any idea it sparks.",
+      "quiz": {
+        "question": "How did Treasure Island begin?",
+        "options": [
+          "As a map Stevenson drew for fun",
+          "As a commission from a publisher",
+          "As a true story he heard",
+          "As a school assignment"
+        ],
+        "answer": 0,
+        "explanation": "Stevenson drew a map of an imaginary island while painting with a schoolboy, and the story grew from it."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--26",
+      "topic": "creativity",
+      "tags": [
+        "characters",
+        "fiction",
+        "real-life",
+        "writing"
+      ],
+      "title": "Build characters from real people by cutting away, not adding on",
+      "body": "Stevenson based Long John Silver on an admired friend. He kept the man's strength, courage, quickness and big-hearted charm, stripped away his finer qualities, and set what remained in the rough world of a sailor.\n\nHe explained the logic. A stranger you met for a minute is easy to describe but you don't really know him, so you must invent most of him. A friend you know well is too complex to fit on a page, so you trim him down to the trunk and a few main branches. At least those are true.",
+      "quote": "from the second, knife in hand, we must cut away and deduct the needless arborescence of his nature",
+      "locator": "My First Book: ‘Treasure Island’ ¶6",
+      "apply_it": "Think of someone you know well. Write three traits that are the 'trunk' of their character, and build a fictional sketch from just those.",
+      "quiz": {
+        "question": "How did Stevenson create Long John Silver?",
+        "options": [
+          "He invented him from nothing",
+          "He copied a famous pirate",
+          "He took a friend and cut away his finer qualities",
+          "He combined characters from other novels"
+        ],
+        "answer": 2,
+        "explanation": "He kept a friend's strength, courage and geniality and removed the rest, which he saw as a common way of making character."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--27",
+      "topic": "creativity",
+      "tags": [
+        "influences",
+        "honesty",
+        "borrowing",
+        "credit"
+      ],
+      "title": "Be honest about your influences, even the ones you didn't notice",
+      "body": "Stevenson freely admitted what Treasure Island borrowed: the parrot from Robinson Crusoe, the skeleton from Poe, possibly the stockade from another novel. These were small details, he said; nobody owns skeletons or talking birds.\n\nBut one debt troubled him. Years later he picked up Washington Irving's Tales of a Traveller and found much of his opening chapters there: Billy Bones, the chest, the inn parlour. He hadn't known at the time; the ideas felt entirely his own. All makers absorb more than they realise, so give credit generously.",
+      "quote": "It is my debt to Washington Irving that exercises my conscience, and justly so, for I believe plagiarism was rarely carried farther.",
+      "locator": "My First Book: ‘Treasure Island’ ¶7",
+      "apply_it": "For your current project, list three works that influenced it. Find a way to credit at least one.",
+      "quiz": {
+        "question": "Which debt troubled Stevenson most about Treasure Island?",
+        "options": [
+          "The parrot from Robinson Crusoe",
+          "His opening chapters' debt to Washington Irving",
+          "The skeleton from Poe",
+          "The map from his father"
+        ],
+        "answer": 1,
+        "explanation": "He felt small details were fair game, but his unconscious borrowing from Irving's Tales of a Traveller weighed on his conscience."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--28",
+      "topic": "creativity",
+      "tags": [
+        "feedback",
+        "audience",
+        "collaboration",
+        "motivation"
+      ],
+      "title": "Read your work to a live audience as you go",
+      "body": "While writing Treasure Island, Stevenson read each morning's chapter aloud to his family after lunch. He had planned for one boy as his audience but found he had two: his father caught fire with the story.\n\nHis father didn't just listen. He drew up the inventory of Billy Bones's sea chest and named Flint's old ship. When a visitor arrived, they restarted the readings for him, and he left with the manuscript and a publishing connection. A regular, enthusiastic audience gave the story momentum, ideas and, eventually, a publisher.",
+      "quote": "as I read aloud my morning’s work to the family.",
+      "locator": "My First Book: ‘Treasure Island’ ¶7",
+      "apply_it": "Share a small piece of work in progress this week with one friendly listener and ask what they want to happen next.",
+      "quiz": {
+        "question": "How did Stevenson's father contribute to Treasure Island?",
+        "options": [
+          "He wrote the ending",
+          "He drew the original map",
+          "He found the publisher",
+          "He drew up the inventory of Billy Bones's chest and named Flint's ship"
+        ],
+        "answer": 3,
+        "explanation": "Listening to the daily readings, he collaborated by preparing the chest's inventory and naming the Walrus."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--29",
+      "topic": "creativity",
+      "tags": [
+        "writers-block",
+        "rest",
+        "persistence",
+        "momentum"
+      ],
+      "title": "When the words dry up, step away, then come back",
+      "body": "After writing fifteen chapters of Treasure Island in fifteen days, Stevenson suddenly lost the thread. He had nothing left to say, proofs of the opening were already waiting, and he was thirty-one, unwell and not yet earning a living. He was close to despair.\n\nInstead of forcing it, he shut his mouth hard, travelled to Davos, and deliberately thought of other things, reading other novels. When he finally sat down again, the rest of the story came easily, a chapter a day. Sometimes the best move for a stuck project is a real break.",
+      "quote": "Arrived at my destination, down I sat one morning to the unfinished tale; and behold! it flowed from me like small talk",
+      "locator": "My First Book: ‘Treasure Island’ ¶8",
+      "apply_it": "If you're stuck on something, set a date to return to it and spend the time between on something unrelated.",
+      "quiz": {
+        "question": "What did Stevenson do when he got stuck at chapter sixteen?",
+        "options": [
+          "Abandoned the book for good",
+          "Forced himself to write every day",
+          "Stepped away and thought of other things until he returned",
+          "Asked his father to finish it"
+        ],
+        "answer": 2,
+        "explanation": "He deliberately turned to other things, and when he came back to the tale it flowed easily."
+      }
+    },
+    {
+      "id": "art-of-writing-stevenson--30",
+      "topic": "creativity",
+      "tags": [
+        "worldbuilding",
+        "research",
+        "planning",
+        "consistency"
+      ],
+      "title": "Know your story's world like the back of your hand",
+      "body": "Stevenson said a writer must know his setting, real or imaginary, intimately: distances, directions, where the sun rises, the phases of the moon. After a mistake with the moon in one novel, he never wrote again without an almanac.\n\nHe went further. A map and a plan aren't just insurance against errors, such as a sun setting in the east. Studied closely, they suggest things you hadn't thought of: shortcuts, meetings, turns of plot. The same applies to any project: a clear model of the terrain is a source of ideas.",
+      "quote": "The author must know his countryside, whether real or imaginary, like his hand",
+      "locator": "My First Book: ‘Treasure Island’ ¶11",
+      "apply_it": "For your current project, make a simple map, timeline or diagram of its world. Note one new idea it suggests.",
+      "quiz": {
+        "question": "Why did Stevenson always write with an almanac after Prince Otto?",
+        "options": [
+          "Because he had made a mistake with the moon",
+          "To track deadlines",
+          "To find character names",
+          "His publisher required it"
+        ],
+        "answer": 0,
+        "explanation": "He had come to grief over the moon in Prince Otto, so he adopted the almanac to avoid such blunders."
+      }
+    }
+  ]
+}

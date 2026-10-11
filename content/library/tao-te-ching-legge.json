@@ -1,0 +1,803 @@
+{
+  "source": {
+    "id": "tao-te-ching-legge",
+    "title": "Tao Te Ching",
+    "authors": [
+      "Laozi"
+    ],
+    "translator": "James Legge",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Laozi, Tao Te Ching (trans. James Legge), Standard Ebooks, public domain",
+    "publisher": "Standard Ebooks",
+    "year": -400,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "James Legge's 1891 translation (Sacred Books of the East, vol. 39), also Project Gutenberg #216. Legge died in 1897, so the translation is public domain. Text from Standard Ebooks (proofread edition of the same translation), which gives clean chapter locators (Part I = chapters I-XXXVII, Part II = XXXVIII-LXXXI). Year is approximate (traditionally 4th century BCE or earlier)."
+  },
+  "cards": [
+    {
+      "id": "tao-te-ching-legge--01",
+      "topic": "faith-wisdom",
+      "tags": [
+        "humility",
+        "service",
+        "water",
+        "taoism"
+      ],
+      "title": "Be like water: helpful to all and content with the low place",
+      "body": "Laozi holds up water as the model of the highest goodness. Water nourishes everything it touches, yet it does not compete; it flows to the low places that people avoid.\n\nThis is a picture of quiet usefulness. Many of us want to be seen, to win arguments and to take the best seat. The Tao Te Ching suggests that real excellence looks more like water: serving without fuss, adapting to the shape of the situation, and not fighting for status. Such a person, Laozi adds, attracts little blame.",
+      "quote": "The highest excellence is like (that of) water. The excellence of water appears in its benefiting all things, and in its occupying, without striving (to the contrary), the low place which all men dislike.",
+      "locator": "Part I, VIII",
+      "apply_it": "Do one useful thing today for someone without mentioning it or seeking credit.",
+      "quiz": {
+        "question": "Why does Laozi compare the highest excellence to water?",
+        "options": [
+          "It benefits all things and accepts the low place without striving",
+          "It is always fast and powerful",
+          "It can be sold for profit",
+          "It stays still and never moves"
+        ],
+        "answer": 0,
+        "explanation": "Chapter VIII praises water for helping all things while taking the low place others dislike."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--02",
+      "topic": "faith-wisdom",
+      "tags": [
+        "moderation",
+        "excess",
+        "enough",
+        "balance"
+      ],
+      "title": "Stop before the cup overflows",
+      "body": "It is better to leave a vessel unfilled, Laozi says, than to try to carry it when it is brimming. And a blade sharpened again and again will not keep its edge for long.\n\nBoth images warn against pushing things to the extreme. Overfilled schedules spill, overworked people burn out, and over-polished plans never ship. Knowing when something is full enough, whether a meal, a workload or a speech, is a quiet kind of wisdom that keeps you steady.",
+      "quote": "It is better to leave a vessel unfilled, than to attempt to carry it when it is full.",
+      "locator": "Part I, IX",
+      "apply_it": "Look at tomorrow's plan. Remove one thing so the day is not filled to the brim.",
+      "quiz": {
+        "question": "What does the image of the overfilled vessel teach?",
+        "options": [
+          "Always fill everything completely",
+          "Pushing things to the limit makes them hard to carry",
+          "Empty vessels are useless",
+          "Carrying more makes you stronger"
+        ],
+        "answer": 1,
+        "explanation": "Chapter IX says it is better to leave a vessel unfilled than to carry it full."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--03",
+      "topic": "faith-wisdom",
+      "tags": [
+        "success",
+        "arrogance",
+        "humility",
+        "stepping-back"
+      ],
+      "title": "When the work is done, step back instead of clinging to the spotlight",
+      "body": "Laozi notes that a hall full of gold and jade cannot be kept safe, and wealth and honour that breed arrogance bring their own trouble. His advice: when the work is done and your name is rising, withdraw quietly.\n\nThis runs against modern habits of self-promotion. Yet people who hand over credit, let others lead and step aside at the right time are often the most respected. Clinging to position invites resentment; letting go gracefully keeps your peace.",
+      "quote": "When the work is done, and one’s name is becoming distinguished, to withdraw into obscurity is the way of Heaven.",
+      "locator": "Part I, IX",
+      "apply_it": "After your next success, publicly thank the people who helped and let them take the lead on what comes next.",
+      "quiz": {
+        "question": "According to chapter IX, what should one do when the work is done and fame is growing?",
+        "options": [
+          "Demand a reward",
+          "Fill the hall with gold",
+          "Withdraw quietly",
+          "Start a bigger project at once"
+        ],
+        "answer": 2,
+        "explanation": "Laozi calls withdrawing into obscurity after success the way of Heaven."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--04",
+      "topic": "faith-wisdom",
+      "tags": [
+        "space",
+        "emptiness",
+        "simplicity",
+        "rest"
+      ],
+      "title": "Empty space is what makes things useful",
+      "body": "Thirty spokes meet at the hub of a wheel, Laozi observes, yet it is the empty centre that lets the wheel turn. A clay pot is useful because of its hollow; a room because of the space inside its walls.\n\nWe tend to value only what we can see and add. But a diary with no gaps, a house with no clear space or a mind with no quiet cannot hold anything new. Leaving room, unscheduled time, silence, open space, is not waste. It is what makes the rest work.",
+      "quote": "Clay is fashioned into vessels; but it is on their empty hollowness, that their use depends.",
+      "locator": "Part I, XI",
+      "apply_it": "Block one empty half-hour in your week with nothing planned. Protect it.",
+      "quiz": {
+        "question": "In chapter XI, what makes a clay vessel useful?",
+        "options": [
+          "Its decoration",
+          "Its weight",
+          "Its price",
+          "Its empty hollow"
+        ],
+        "answer": 3,
+        "explanation": "Laozi points out that the usefulness of a pot, wheel or room depends on its empty space."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--05",
+      "topic": "faith-wisdom",
+      "tags": [
+        "distraction",
+        "overstimulation",
+        "desire",
+        "simplicity"
+      ],
+      "title": "Too much stimulation dulls the senses",
+      "body": "Laozi warns that the five colours blind the eye, the five notes deafen the ear and the five flavours spoil the taste. Racing and hunting madden the mind, and chasing rare goods leads people astray. So the sage cares for real needs, the belly, rather than the endless hunger of the eyes.\n\nWritten long before screens and advertising, this describes our world well. Constant input leaves us less able to enjoy anything. Choosing simpler pleasures and real needs restores the senses.",
+      "quote": "Therefore the sage seeks to satisfy (the craving of) the belly, and not the (insatiable longing of the) eyes.",
+      "locator": "Part I, XII",
+      "apply_it": "Take one meal today with no screen. Notice the taste of the food.",
+      "quiz": {
+        "question": "What does the sage seek to satisfy, according to chapter XII?",
+        "options": [
+          "Real needs rather than the endless longing of the eyes",
+          "Every desire as quickly as possible",
+          "Only rare and costly goods",
+          "The demands of fashion"
+        ],
+        "answer": 0,
+        "explanation": "The sage satisfies the belly, not the insatiable longing of the eyes."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--06",
+      "topic": "faith-wisdom",
+      "tags": [
+        "stillness",
+        "patience",
+        "clarity",
+        "calm"
+      ],
+      "title": "Let muddy water settle and it becomes clear",
+      "body": "Who can make muddy water clear? Laozi answers: let it be still, and it will gradually clear by itself.\n\nWhen we are confused or upset, the instinct is to stir harder: more thinking, more talking, more action. Often that just keeps the mud moving. Stepping back, breathing and waiting lets things settle so we can see what to do. Many decisions are better made after a night's sleep than in the heat of the moment.",
+      "quote": "Who can (make) the muddy water (clear)? Let it be still, and it will gradually become clear.",
+      "locator": "Part I, XV",
+      "apply_it": "Facing a confusing decision? Wait one night before deciding, and spend five quiet minutes before bed.",
+      "quiz": {
+        "question": "How does muddy water become clear in chapter XV?",
+        "options": [
+          "By stirring it harder",
+          "By being left still",
+          "By adding more water",
+          "By boiling it"
+        ],
+        "answer": 1,
+        "explanation": "Laozi says to let it be still, and it will gradually become clear."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--07",
+      "topic": "faith-wisdom",
+      "tags": [
+        "humility",
+        "self-promotion",
+        "respect",
+        "ego"
+      ],
+      "title": "Those who don't show off are the ones who shine",
+      "body": "Laozi lists a set of paradoxes: the sage does not display himself, so he shines; does not assert himself, so he stands out; does not boast, so his merit is recognised; is not self-satisfied, so he goes further.\n\nWe all know people who try too hard to impress, and how it pushes others away. Quiet competence and humility draw respect more surely than self-praise. When you stop competing for attention, there is nothing for others to compete against.",
+      "quote": "He is free from self-display, and therefore he shines; from self-assertion, and therefore he is distinguished; from self-boasting, and therefore his merit is acknowledged",
+      "locator": "Part I, XXII",
+      "apply_it": "In your next conversation, notice the urge to mention your achievements, and let it pass.",
+      "quiz": {
+        "question": "Why does the sage 'shine', according to chapter XXII?",
+        "options": [
+          "Because he boasts often",
+          "Because he wears fine clothes",
+          "Because he is free from self-display",
+          "Because he always argues his case"
+        ],
+        "answer": 2,
+        "explanation": "The sage shines because he does not display himself."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--08",
+      "topic": "productivity",
+      "tags": [
+        "sustainability",
+        "burnout",
+        "pace",
+        "consistency"
+      ],
+      "title": "Violent bursts never last; steady effort does",
+      "body": "A violent wind does not last the whole morning, Laozi observes, and a sudden downpour does not last the whole day. If heaven and earth cannot keep up such outbursts, how could a human being?\n\nThis applies to work, fitness and emotions alike. Frantic sprints and dramatic resolutions burn out quickly. A steady pace you can keep for months achieves more than a storm of effort that collapses in a week.",
+      "quote": "A violent wind does not last for a whole morning; a sudden rain does not last for the whole day.",
+      "locator": "Part I, XXIII",
+      "apply_it": "Replace one big, intense goal with a small daily version you could keep up for a year.",
+      "quiz": {
+        "question": "What does the image of the violent wind teach?",
+        "options": [
+          "Storms are always good",
+          "You should work as hard as possible every day",
+          "Nature never changes",
+          "Extreme bursts cannot be sustained"
+        ],
+        "answer": 3,
+        "explanation": "Laozi notes that even heaven and earth cannot make violent outbursts last."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--09",
+      "topic": "faith-wisdom",
+      "tags": [
+        "calm",
+        "groundedness",
+        "self-control",
+        "stability"
+      ],
+      "title": "Stay grounded: stillness steadies action",
+      "body": "Laozi teaches that gravity is the root of lightness and stillness is the ruler of movement. He pictures a wise traveller who, marching all day, never strays far from his baggage carts, and who is not carried away by dazzling sights.\n\nIn modern terms, keep your centre. Busy days, exciting opportunities and provocations pull us in many directions. A person rooted in calm and in their core values can move fast without losing themselves. Acting lightly, Laozi warns, means losing your root.",
+      "quote": "Gravity is the root of lightness; stillness, the ruler of movement.",
+      "locator": "Part I, XXVI",
+      "apply_it": "Before a busy day, spend two minutes in stillness and name the one value you want to act from.",
+      "quiz": {
+        "question": "In chapter XXVI, what rules movement?",
+        "options": [
+          "Stillness",
+          "Speed",
+          "Excitement",
+          "Wealth"
+        ],
+        "answer": 0,
+        "explanation": "Gravity is the root of lightness; stillness rules movement."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--10",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "inclusion",
+        "potential",
+        "people"
+      ],
+      "title": "A good leader never writes anyone off",
+      "body": "Laozi says the sage is always skilful at saving people, so he casts no one away, and skilful at saving things, so he wastes nothing. He adds that the skilled teach the unskilled, and the unskilled are the material the skilled work with.\n\nFor anyone who leads a team, class or family, this is a challenge. It is easy to give up on the slow, the difficult or the struggling. The wise leader looks for each person's use and helps them grow, rather than discarding them.",
+      "quote": "In the same way the sage is always skilful at saving men, and so he does not cast away any man",
+      "locator": "Part I, XXVII",
+      "apply_it": "Think of someone you have given up on. Find one way to give them a real chance this week.",
+      "quiz": {
+        "question": "What does the sage do with people, according to chapter XXVII?",
+        "options": [
+          "He keeps only the most talented",
+          "He casts no one away",
+          "He avoids people entirely",
+          "He punishes the unskilled"
+        ],
+        "answer": 1,
+        "explanation": "The sage is skilful at saving people and so casts no one away."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--11",
+      "topic": "faith-wisdom",
+      "tags": [
+        "self-knowledge",
+        "self-mastery",
+        "contentment",
+        "strength"
+      ],
+      "title": "Knowing and mastering yourself is the greater strength",
+      "body": "Laozi contrasts two kinds of power. Knowing others is discernment; knowing yourself is true wisdom. Overcoming others takes strength; overcoming yourself takes real might. And whoever is content with what they have is rich.\n\nIt is a short list for a whole life. Beating rivals and reading other people are useful skills, but self-awareness and self-control shape everything else. They are also fully within your power, unlike the behaviour of others.",
+      "quote": "He who knows other men is discerning; he who knows himself is intelligent. He who overcomes others is strong; he who overcomes himself is mighty.",
+      "locator": "Part I, XXXIII",
+      "apply_it": "Write down one habit you want to master in yourself. Choose one small step against it today.",
+      "quiz": {
+        "question": "According to chapter XXXIII, who is 'mighty'?",
+        "options": [
+          "The one who overcomes others",
+          "The one with the biggest army",
+          "The one who overcomes himself",
+          "The one who knows other men"
+        ],
+        "answer": 2,
+        "explanation": "Laozi says overcoming others is strength, but overcoming yourself is might."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--12",
+      "topic": "health",
+      "tags": [
+        "priorities",
+        "wellbeing",
+        "fame",
+        "wealth"
+      ],
+      "title": "Which do you value more: your life, or fame and money?",
+      "body": "Laozi asks two blunt questions: which is dearer to you, fame or your life? Which matters more, your life or your wealth? Keeping life and losing the others, he suggests, brings far less sorrow than the reverse.\n\nMany people trade sleep, health and peace for status or money, assuming they can fix the damage later. Laozi's questions invite a pause. Health and life cannot be bought back. When work demands everything, it is worth asking whether the trade is truly worth it.",
+      "quote": "Of fame or life, Which do you hold more dear? Of life or wealth, To which would you adhere?",
+      "locator": "Part II, XLIV",
+      "apply_it": "Look at this week's schedule. Is there one place you are trading health for money or status? Adjust it.",
+      "quiz": {
+        "question": "What do Laozi's questions in chapter XLIV encourage you to value most?",
+        "options": [
+          "Fame above everything",
+          "Wealth above everything",
+          "The opinions of others",
+          "Your life and wellbeing"
+        ],
+        "answer": 3,
+        "explanation": "Laozi asks whether fame or wealth is really dearer than life itself."
+      },
+      "health": true
+    },
+    {
+      "id": "tao-te-ching-legge--13",
+      "topic": "money",
+      "tags": [
+        "contentment",
+        "greed",
+        "enough",
+        "wealth"
+      ],
+      "title": "Discontent is the greatest trouble; contentment is lasting wealth",
+      "body": "Laozi names no calamity greater than being discontented with your lot, and no fault greater than always wanting to get more. The sufficiency that comes from contentment, he says, is a sufficiency that lasts.\n\nIncome can rise and fall, but a person who knows how to be content is rich in a way no market can take away. This does not mean giving up on improving your life. It means not letting constant wanting rob you of what you already have.",
+      "quote": "There is no guilt greater than to sanction ambition; no calamity greater than to be discontented with one’s lot; no fault greater than the wish to be getting.",
+      "locator": "Part II, XLVI",
+      "apply_it": "List five things you already have that you once hoped for. Read the list when you feel the urge to buy.",
+      "quiz": {
+        "question": "What does Laozi call the greatest calamity in chapter XLVI?",
+        "options": [
+          "Being discontented with one's lot",
+          "Losing a war",
+          "Being poor",
+          "Having no fame"
+        ],
+        "answer": 0,
+        "explanation": "No calamity is greater than discontent; contentment is an enduring sufficiency."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--14",
+      "topic": "faith-wisdom",
+      "tags": [
+        "simplicity",
+        "subtraction",
+        "focus",
+        "letting-go"
+      ],
+      "title": "Grow wiser by doing less, not just learning more",
+      "body": "Laozi draws a contrast: the person devoted to learning adds something every day, while the person devoted to the Tao lets go of something every day, reducing and reducing until little effortful striving is left.\n\nWe usually try to improve by adding: more apps, more goals, more commitments. Laozi points to the opposite path. Removing unneeded tasks, possessions and worries can bring more clarity than any new technique. Ask what you could stop doing.",
+      "quote": "He who devotes himself to learning (seeks) from day to day to increase (his knowledge); he who devotes himself to the Tao (seeks) from day to day to diminish (his doing).",
+      "locator": "Part II, XLVIII",
+      "apply_it": "Make a 'stop doing' list with three items. Drop one this week.",
+      "quiz": {
+        "question": "In chapter XLVIII, what does the follower of the Tao do each day?",
+        "options": [
+          "Adds new knowledge",
+          "Diminishes his doing",
+          "Takes on more tasks",
+          "Gathers more possessions"
+        ],
+        "answer": 1,
+        "explanation": "Learning adds each day; the way of the Tao reduces each day."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--15",
+      "topic": "relationships",
+      "tags": [
+        "kindness",
+        "goodness",
+        "sincerity",
+        "reciprocity"
+      ],
+      "title": "Be good even to those who are not good to you",
+      "body": "Laozi says the sage is good to those who are good to him, and also good to those who are not, so that goodness spreads. He is sincere with the sincere and also with the insincere.\n\nMost of us mirror others: kind to the kind, cold to the cold. Laozi suggests breaking that cycle. Your character need not depend on how others behave. Steady goodness can change the tone of a home, a workplace or a community, and it protects your own peace.",
+      "quote": "To those who are good (to me), I am good; and to those who are not good (to me), I am also good;",
+      "locator": "Part II, XLIX",
+      "apply_it": "Think of someone who has been unkind to you. Treat them with plain courtesy at your next meeting.",
+      "quiz": {
+        "question": "How does the sage treat those who are not good to him?",
+        "options": [
+          "He ignores them completely",
+          "He repays them with harm",
+          "He is good to them as well",
+          "He reports them to the ruler"
+        ],
+        "answer": 2,
+        "explanation": "Chapter XLIX: the sage is good to the good and also to those who are not good."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--16",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "credit",
+        "empowerment",
+        "humility"
+      ],
+      "title": "The best leaders let people feel they did it themselves",
+      "body": "Laozi ranks rulers. The best are barely noticed. Next come those people love and praise, then those they fear, and lowest those they despise. Of the best, he says, their work was done and people said: we did this ourselves.\n\nThis is a high standard for any manager, parent or community leader. Instead of being the hero, you set things up so others succeed and own the result. People led this way grow in confidence and keep going even when you are not there.",
+      "quote": "Their work was done and their undertakings were successful, while the people all said, “We are as we are, of ourselves!”",
+      "locator": "Part I, XVII",
+      "apply_it": "In your next project, let someone else present the result and own the success.",
+      "quiz": {
+        "question": "How do people speak of the best leaders, according to chapter XVII?",
+        "options": [
+          "They praise the leader loudly",
+          "They fear the leader",
+          "They despise the leader",
+          "They say the success came from themselves"
+        ],
+        "answer": 3,
+        "explanation": "Under the best rulers, the people said, 'We are as we are, of ourselves.'"
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--17",
+      "topic": "faith-wisdom",
+      "tags": [
+        "shortcuts",
+        "simplicity",
+        "discipline",
+        "temptation"
+      ],
+      "title": "The main road is easy, yet people love the side paths",
+      "body": "The great Way is level and easy, Laozi says, but people prefer the byways. He then describes rulers with splendid palaces and fine robes while their fields lie weeds and granaries stand empty.\n\nThe simple path, honest work, steady habits, caring for what matters, is usually clear. We wander because detours look exciting or promise a shortcut. Laozi's warning is to notice when show has replaced substance, and to come back to the plain road.",
+      "quote": "The great Tao (or way) is very level and easy; but people love the byways.",
+      "locator": "Part II, LIII",
+      "apply_it": "Name one 'byway' that keeps pulling you off course. Decide how you will avoid it this week.",
+      "quiz": {
+        "question": "What do people love, according to chapter LIII?",
+        "options": [
+          "The byways rather than the level main road",
+          "Hard, rocky paths",
+          "Staying at home",
+          "Walking in circles"
+        ],
+        "answer": 0,
+        "explanation": "The great Way is level and easy, but people love the byways."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--18",
+      "topic": "faith-wisdom",
+      "tags": [
+        "speech",
+        "humility",
+        "wisdom",
+        "listening"
+      ],
+      "title": "Those who truly know often say little",
+      "body": "He who knows does not speak about it, Laozi writes, and he who is always ready to speak does not know. The wise person blunts sharp edges, untangles knots and softens their own brightness.\n\nThose who talk the most about a subject are not always the ones who understand it best. Deep knowledge tends to make people humble and careful. Speaking less, and listening more, also leaves room to learn something new.",
+      "quote": "He who knows (the Tao) does not (care to) speak (about it); he who is (ever ready to) speak about it does not know it.",
+      "locator": "Part II, LVI",
+      "apply_it": "In your next group conversation, speak last and keep it short.",
+      "quiz": {
+        "question": "What does chapter LVI say about those always ready to speak?",
+        "options": [
+          "They are the wisest",
+          "They do not truly know",
+          "They should lead",
+          "They are always honest"
+        ],
+        "answer": 1,
+        "explanation": "Laozi says the one who knows does not care to speak, and the one ever ready to speak does not know."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--19",
+      "topic": "faith-wisdom",
+      "tags": [
+        "fortune",
+        "uncertainty",
+        "perspective",
+        "equanimity"
+      ],
+      "title": "Good and bad fortune are often tangled together",
+      "body": "Laozi exclaims: misery, and happiness is found by its side; happiness, and misery lurks beneath it. Who knows how either will turn out in the end?\n\nA lost job can lead to a better path; a windfall can bring trouble. This is not a reason for fear, but for steadiness. Do not despair too quickly in bad times, or relax too completely in good ones. The story is rarely finished when we judge it.",
+      "quote": "Misery!⁠—happiness is to be found by its side! Happiness!⁠—misery lurks beneath it! Who knows what either will come to in the end?",
+      "locator": "Part II, LVIII",
+      "apply_it": "Recall a past setback that later led to something good. Let it shape how you see a current problem.",
+      "quiz": {
+        "question": "What does chapter LVIII say about misery and happiness?",
+        "options": [
+          "Misery always lasts forever",
+          "Happiness always lasts forever",
+          "They lie side by side and we cannot know how either will end",
+          "They never come near each other"
+        ],
+        "answer": 2,
+        "explanation": "Happiness is found beside misery, and misery lurks beneath happiness: who knows the end?"
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--20",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "honesty",
+        "tact",
+        "gentleness",
+        "character"
+      ],
+      "title": "Be straight without being cutting",
+      "body": "Laozi describes the sage as a square whose corners cut no one, upright but not harsh, bright but not dazzling.\n\nSome people are honest in a way that wounds; others are gentle but never say anything true. Laozi points to a third way: firm principles and clear words, delivered without needless sharpness. You can tell someone a hard truth and still leave their dignity intact.",
+      "quote": "He is straightforward, but allows himself no license; he is bright, but does not dazzle.",
+      "locator": "Part II, LVIII",
+      "apply_it": "Before giving honest feedback, add one sentence that shows respect for the person.",
+      "quiz": {
+        "question": "How does Laozi describe the sage in chapter LVIII?",
+        "options": [
+          "Sharp-edged and cutting",
+          "Silent and never honest",
+          "Proud and showy",
+          "Straightforward but not harsh; bright but not dazzling"
+        ],
+        "answer": 3,
+        "explanation": "He is like a square that cuts no one: straightforward, bright, but never harsh."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--21",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "micromanagement",
+        "patience",
+        "management"
+      ],
+      "title": "Lead the way you'd cook a small fish: gently, without constant stirring",
+      "body": "Laozi gives one of his most famous images: running a large country should be done the way you cook small fish. Poke and turn small fish too often and they fall apart.\n\nThe lesson works for any leader. Constant interference, new rules every week and checking every detail wear people out and damage the work. Set clear direction, then let things cook. Intervene with care, only when needed.",
+      "quote": "Governing a great state is like cooking small fish.",
+      "locator": "Part II, LX",
+      "apply_it": "Pick one task you usually micromanage. Hand it over with clear goals and check in only once.",
+      "quiz": {
+        "question": "What does 'cooking small fish' suggest about leading?",
+        "options": [
+          "Handle things gently and avoid constant interference",
+          "Move fast and stir often",
+          "Cook everything at high heat",
+          "Leaders should do all the work"
+        ],
+        "answer": 0,
+        "explanation": "Small fish fall apart if over-handled, so a great state should be governed gently."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--22",
+      "topic": "productivity",
+      "tags": [
+        "prevention",
+        "early-action",
+        "small-steps",
+        "planning"
+      ],
+      "title": "Handle hard things while they are still easy",
+      "body": "Laozi advises dealing with difficult things while they are easy, and doing great things while they are small. Every difficult matter, he says, began as something easy, and every great one began small.\n\nA small leak, a minor misunderstanding or a little debt is easy to fix today. Left alone, it grows. The same is true of big goals: they are achieved by small steps taken early. The wise act before things become large.",
+      "quote": "All difficult things in the world are sure to arise from a previous state in which they were easy, and all great things from one in which they were small.",
+      "locator": "Part II, LXIII",
+      "apply_it": "Identify one small problem you have been ignoring. Fix it today before it grows.",
+      "quiz": {
+        "question": "According to chapter LXIII, when should difficult things be handled?",
+        "options": [
+          "Only when they become urgent",
+          "While they are still easy",
+          "Never",
+          "After everything else is done"
+        ],
+        "answer": 1,
+        "explanation": "Laozi says to anticipate difficult things while they are easy."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--23",
+      "topic": "personal-development",
+      "tags": [
+        "promises",
+        "trust",
+        "planning",
+        "realism"
+      ],
+      "title": "Easy promises and easy assumptions both lead to trouble",
+      "body": "He who lightly promises, Laozi warns, will keep little faith; he who thinks everything easy will find everything hard. So the sage treats even easy things as difficult, and ends up with no difficulties.\n\nQuick yeses damage trust when we cannot deliver, and underestimating a task leads to rushed, poor work. Taking things seriously at the start, promising carefully and planning honestly, is what makes them go smoothly later.",
+      "quote": "He who lightly promises is sure to keep but little faith; he who is continually thinking things easy is sure to find them difficult.",
+      "locator": "Part II, LXIII",
+      "apply_it": "Before you promise anything this week, double your time estimate.",
+      "quiz": {
+        "question": "What happens to one who lightly promises, according to chapter LXIII?",
+        "options": [
+          "He becomes trusted by all",
+          "He finds everything easy",
+          "He keeps little faith",
+          "He never has difficulties"
+        ],
+        "answer": 2,
+        "explanation": "Light promises lead to little faith; thinking things easy makes them hard."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--24",
+      "topic": "productivity",
+      "tags": [
+        "small-steps",
+        "beginning",
+        "persistence",
+        "growth"
+      ],
+      "title": "A journey of a thousand miles begins with one step",
+      "body": "Laozi points to the large tree that grew from a tiny sprout, the nine-storey tower that rose from a small heap of earth, and the long journey that began with a single step.\n\nBig goals can freeze us. A degree, a business, a healthy body or a savings fund seems too far away. But nothing great starts big. Each one is a pile of small actions, started on an ordinary day. The only step you need to see clearly is the next one.",
+      "quote": "the journey of a thousand li commenced with a single step.",
+      "locator": "Part II, LXIV",
+      "apply_it": "Choose a big goal and take the smallest possible first step today.",
+      "quiz": {
+        "question": "What is the lesson of the tree, the tower and the journey in chapter LXIV?",
+        "options": [
+          "Only big efforts matter",
+          "Long journeys should be avoided",
+          "Towers must be built quickly",
+          "Great things start from very small beginnings"
+        ],
+        "answer": 3,
+        "explanation": "Each great thing began small: a sprout, a heap of earth, a single step."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--25",
+      "topic": "productivity",
+      "tags": [
+        "finishing",
+        "carelessness",
+        "focus",
+        "follow-through"
+      ],
+      "title": "Most projects fail on the edge of success; finish with care",
+      "body": "Laozi notices that people often ruin their affairs when they are on the point of success. If they were as careful at the end as at the beginning, he says, they would not fail.\n\nWe start with energy and attention, then relax when the finish line is in sight. That is when the typo goes out, the deal slips or the old habit returns. Bringing the same care to the last step as to the first protects everything that went before.",
+      "quote": "If they were careful at the end, as (they should be) at the beginning, they would not so ruin them.",
+      "locator": "Part II, LXIV",
+      "apply_it": "For your current project, write a short checklist for the final step and follow it carefully.",
+      "quiz": {
+        "question": "When do people often ruin their affairs, according to chapter LXIV?",
+        "options": [
+          "When they are on the eve of success",
+          "At the very beginning",
+          "Only when they are tired",
+          "When they ask for help"
+        ],
+        "answer": 0,
+        "explanation": "People ruin affairs on the eve of success; care at the end prevents it."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--26",
+      "topic": "leadership",
+      "tags": [
+        "servant-leadership",
+        "humility",
+        "influence",
+        "respect"
+      ],
+      "title": "To lead people, put yourself below them",
+      "body": "Rivers and seas receive the water of every valley stream, Laozi says, because they lie lower. So the wise leader who wants to be above people speaks humbly of himself, and to lead them he places himself behind them. Then people do not feel his weight and do not tire of him.\n\nThis is servant leadership, centuries before the phrase. Leaders who serve, listen and share credit are followed willingly. Those who demand to be on top are resented.",
+      "quote": "So it is that the sage (ruler), wishing to be above men, puts himself by his words below them, and, wishing to be before them, places his person behind them.",
+      "locator": "Part II, LXVI",
+      "apply_it": "Ask the people you lead: 'What do you need from me this week?' Act on one answer.",
+      "quiz": {
+        "question": "Why are rivers and seas 'kings' of the valley streams?",
+        "options": [
+          "Because they are the loudest",
+          "Because they lie lower than the streams",
+          "Because they are the highest",
+          "Because they stay still"
+        ],
+        "answer": 1,
+        "explanation": "Chapter LXVI says rivers and seas receive all streams by being lower than them."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--27",
+      "topic": "faith-wisdom",
+      "tags": [
+        "gentleness",
+        "thrift",
+        "humility",
+        "values"
+      ],
+      "title": "Three treasures: gentleness, thrift and not pushing to the front",
+      "body": "Laozi names three precious things he holds fast: gentleness, economy and not presuming to put himself first. From gentleness comes courage; from economy, the means to be generous; from not seeking the front, the trust of others.\n\nHe warns that people abandon these for boldness, lavishness and pushing ahead, and that this ends badly. The three treasures make a simple daily check: was I gentle, careful with resources and willing to let others go first?",
+      "quote": "But I have three precious things which I prize and hold fast. The first is gentleness; the second is economy; and the third is shrinking from taking precedence of others.",
+      "locator": "Part II, LXVII",
+      "apply_it": "Tonight, review your day against the three treasures: gentleness, thrift, humility. Which needs attention tomorrow?",
+      "quiz": {
+        "question": "Which of these is one of Laozi's three treasures?",
+        "options": [
+          "Boldness",
+          "Lavish spending",
+          "Gentleness",
+          "Being first in everything"
+        ],
+        "answer": 2,
+        "explanation": "Laozi's three treasures are gentleness, economy and not taking precedence over others."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--28",
+      "topic": "faith-wisdom",
+      "tags": [
+        "humility",
+        "learning",
+        "self-awareness",
+        "ignorance"
+      ],
+      "title": "Knowing what you don't know is the highest wisdom",
+      "body": "To know and yet think you do not know is the highest attainment, says Laozi; not to know and yet think you know is a sickness. Only by being troubled by this sickness can we avoid it.\n\nOverconfidence causes many failures in business, health and relationships. People who admit the limits of their knowledge ask questions, check facts and learn. A simple 'I'm not sure, let me find out' is a sign of strength, not weakness.",
+      "quote": "To know and yet (think) we do not know is the highest (attainment); not to know (and yet think) we do know is a disease.",
+      "locator": "Part II, LXXI",
+      "apply_it": "Today, say 'I don't know, let me find out' at least once when it is true.",
+      "quiz": {
+        "question": "What does Laozi call 'a disease' in chapter LXXI?",
+        "options": [
+          "Admitting we do not know",
+          "Asking too many questions",
+          "Reading too many books",
+          "Thinking we know when we do not"
+        ],
+        "answer": 3,
+        "explanation": "Not knowing yet thinking we know is called a disease."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--29",
+      "topic": "faith-wisdom",
+      "tags": [
+        "flexibility",
+        "adaptability",
+        "resilience",
+        "openness"
+      ],
+      "title": "Stay supple: rigidity belongs to what is dying",
+      "body": "Laozi observes that at birth a person is soft and supple, and at death stiff and hard. Young plants are tender; dead ones are dry and brittle. Firmness and hardness, he concludes, go with death; softness and suppleness with life.\n\nThe same is true of minds and organisations. Those who cannot bend, learn or change their views tend to break when circumstances shift. Staying open, curious and adaptable is a sign of being alive.",
+      "quote": "Thus it is that firmness and strength are the concomitants of death; softness and weakness, the concomitants of life.",
+      "locator": "Part II, LXXVI",
+      "apply_it": "Pick one opinion you hold firmly. Spend ten minutes honestly considering the other side.",
+      "quiz": {
+        "question": "In chapter LXXVI, what goes with life?",
+        "options": [
+          "Softness and suppleness",
+          "Hardness and stiffness",
+          "Strength of arms",
+          "Dryness"
+        ],
+        "answer": 0,
+        "explanation": "Firmness goes with death; softness and suppleness go with life."
+      }
+    },
+    {
+      "id": "tao-te-ching-legge--30",
+      "topic": "money",
+      "tags": [
+        "generosity",
+        "giving",
+        "abundance",
+        "service"
+      ],
+      "title": "The more you give, the more you have",
+      "body": "Laozi writes that the sage does not hoard for himself. The more he spends on others, the more he has; the more he gives, the richer he becomes.\n\nIt sounds like a paradox, but many people find it true. Generosity builds trust, friendship and a sense of purpose that hoarding never does. Giving time, knowledge or money within your means tends to enlarge your life rather than shrink it.",
+      "quote": "The more that he expends for others, the more does he possess of his own; the more that he gives to others, the more does he have himself.",
+      "locator": "Part II, LXXXI",
+      "apply_it": "Give something this week, an hour, a skill or a small gift, to someone who could use it.",
+      "quiz": {
+        "question": "What happens to the sage who gives to others, according to chapter LXXXI?",
+        "options": [
+          "He becomes poor",
+          "He has more himself",
+          "He loses his friends",
+          "He is forgotten"
+        ],
+        "answer": 1,
+        "explanation": "The more he gives to others, the more he has himself."
+      }
+    }
+  ]
+}

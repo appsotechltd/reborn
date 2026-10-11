@@ -1,0 +1,712 @@
+{
+  "source": {
+    "id": "peak-ericsson",
+    "title": "Peak: Secrets from the New Science of Expertise",
+    "authors": [
+      "Anders Ericsson",
+      "Robert Pool"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Peak:_Secrets_from_the_New_Science_of_Expertise",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Peak: Secrets from the New Science of Expertise by Anders Ericsson and Robert Pool (2016). Not affiliated with or endorsed by the authors or publisher.",
+    "publisher": "Houghton Mifflin Harcourt",
+    "year": 2016,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright (Eamon Dolan/Houghton Mifflin Harcourt in the US, Bodley Head in the UK). URL points to a general description of the book."
+  },
+  "cards": [
+    {
+      "id": "peak-ericsson--01",
+      "topic": "skills-mastery",
+      "tags": [
+        "talent",
+        "adaptability",
+        "perfect-pitch"
+      ],
+      "title": "The real human gift is adaptability, not fixed talent",
+      "body": "Ericsson and Pool open with perfect pitch, long treated as a rare inborn gift. They describe a Japanese study in which young children who were trained for months all developed it, and they point out that Mozart, the classic 'born genius', had years of intense musical training from his father before he became famous.\n\nTheir conclusion is that the gift almost everyone shares is adaptability: brains and bodies change in response to the right kind of training. The useful question is not 'Do I have the talent?' but 'How could this be trained?'",
+      "apply_it": "Think of one skill you believe you were 'not born with'. Write down how someone could train it step by step.",
+      "quiz": {
+        "question": "According to Ericsson and Pool, what is the gift most people share?",
+        "options": [
+          "Adaptability: the ability to change through training",
+          "Perfect pitch",
+          "A fixed level of intelligence",
+          "A natural ear for languages"
+        ],
+        "answer": 0,
+        "explanation": "They argue the shared gift is the brain and body's ability to adapt to the right training."
+      }
+    },
+    {
+      "id": "peak-ericsson--02",
+      "topic": "skills-mastery",
+      "tags": [
+        "naive-practice",
+        "experience",
+        "improvement"
+      ],
+      "title": "Years of experience don't make you better on their own",
+      "body": "The authors describe 'naive practice': simply doing an activity over and over and hoping to improve. Most people learn a skill like driving or typing until it is 'good enough' and automatic. From then on, extra years add little, because they are no longer stretching themselves.\n\nEricsson and Pool note research suggesting that, in some fields, long-serving professionals are not reliably better than newer ones, and on some measures are worse. Time in a role is not the same thing as improvement. Only practice designed to make you better keeps you getting better.",
+      "apply_it": "Name a skill you use every day but haven't improved in years. What would deliberately stretching it look like?",
+      "quiz": {
+        "question": "What is 'naive practice' in Peak?",
+        "options": [
+          "Practising with a coach and clear goals",
+          "Practising only the hardest parts",
+          "Studying the theory before practising",
+          "Repeating an activity and expecting to improve automatically"
+        ],
+        "answer": 3,
+        "explanation": "Naive practice is repeating something without a plan, which usually stops producing improvement once you reach 'good enough'."
+      }
+    },
+    {
+      "id": "peak-ericsson--03",
+      "topic": "skills-mastery",
+      "tags": [
+        "purposeful-practice",
+        "goals",
+        "planning"
+      ],
+      "title": "Practise with a clear, specific goal for each session",
+      "body": "Ericsson and Pool contrast vague intentions like 'get better at the piano' with the specific targets of purposeful practice, such as playing one passage at full speed three times in a row without a mistake.\n\nA specific goal tells you what to work on and when you have succeeded. They also stress breaking a long-term aim into a chain of small steps, so you always know the next one. Progress becomes visible, and that visibility is a big part of what keeps people going.",
+      "apply_it": "Before your next practice, write one specific, measurable target for that session alone.",
+      "quiz": {
+        "question": "Which of these is a purposeful practice goal?",
+        "options": [
+          "Get better at the piano",
+          "Play this passage at full tempo three times without errors",
+          "Practise for a while this evening",
+          "Enjoy playing more"
+        ],
+        "answer": 1,
+        "explanation": "Purposeful practice uses specific, measurable goals that show clearly whether you succeeded."
+      }
+    },
+    {
+      "id": "peak-ericsson--04",
+      "topic": "skills-mastery",
+      "tags": [
+        "focus",
+        "attention",
+        "practice"
+      ],
+      "title": "If your mind is drifting, you aren't really practising",
+      "body": "A key feature of purposeful practice, the authors write, is full attention. Going through the motions while thinking about dinner may feel like practice, but it trains very little. The improvement comes from noticing exactly what you are doing and what is going wrong.\n\nThis is why shorter, intense sessions often beat long, half-hearted ones. When you notice you have stopped concentrating, it may be better to stop, rest, and come back fresh than to keep putting in mindless time.",
+      "apply_it": "During your next practice, set a timer for 25 minutes and note every time your attention drifts.",
+      "quiz": {
+        "question": "What do Ericsson and Pool say about practising while distracted?",
+        "options": [
+          "It works as long as you put in enough hours",
+          "It trains very little, because improvement needs full attention",
+          "It's the best way to make a skill automatic",
+          "It only matters for physical skills"
+        ],
+        "answer": 1,
+        "explanation": "Purposeful practice needs focus; mindless repetition produces little improvement."
+      }
+    },
+    {
+      "id": "peak-ericsson--05",
+      "topic": "skills-mastery",
+      "tags": [
+        "comfort-zone",
+        "challenge",
+        "growth"
+      ],
+      "title": "Growth happens just outside your comfort zone",
+      "body": "The authors explain that the body and brain like stability. When you only do what you can already do comfortably, nothing needs to change, so nothing does. Real adaptation is triggered when you push slightly beyond your current limits and keep doing so.\n\nThe key word is slightly. Pushing far beyond your level leads to failure and frustration, while staying inside it leads to stagnation. Good practice keeps adjusting the challenge so that you are always reaching for something just out of easy reach.",
+      "apply_it": "Pick one task you do comfortably and make it 10% harder next time: faster, longer, or with a new constraint.",
+      "quiz": {
+        "question": "Why does staying in your comfort zone stall improvement, according to Peak?",
+        "options": [
+          "Comfort makes you lazy and dishonest",
+          "It leads to injury",
+          "Experts never feel comfortable",
+          "Without a challenge, the brain and body have no reason to adapt"
+        ],
+        "answer": 3,
+        "explanation": "Adaptation is triggered by pushing a little beyond current limits; comfort gives no signal to change."
+      }
+    },
+    {
+      "id": "peak-ericsson--06",
+      "topic": "skills-mastery",
+      "tags": [
+        "plateaus",
+        "strategy",
+        "memory"
+      ],
+      "title": "When progress stalls, change your method, not just your hours",
+      "body": "Ericsson describes working with a student, Steve Faloon, who trained to remember strings of random digits. Ordinary memory holds about seven. Over about two years of sessions, he reached more than eighty, but along the way he repeatedly got stuck.\n\nEach time, the breakthrough came from inventing a new approach, such as grouping digits into meaningful chunks, rather than simply trying harder. The lesson for anyone on a plateau: more of the same rarely helps. Look for a different way to attack the problem.",
+      "apply_it": "If you're stuck on something, list three completely different ways you could practise it.",
+      "quiz": {
+        "question": "How did Steve Faloon get past his plateaus in the memory study?",
+        "options": [
+          "By inventing new strategies, such as grouping digits into chunks",
+          "By practising more hours with the same method",
+          "By taking long breaks from the task",
+          "By using memory pills"
+        ],
+        "answer": 0,
+        "explanation": "His breakthroughs came from changing his approach, not from simply repeating the same thing."
+      }
+    },
+    {
+      "id": "peak-ericsson--07",
+      "topic": "skills-mastery",
+      "tags": [
+        "plateaus",
+        "weaknesses",
+        "diagnosis"
+      ],
+      "title": "To beat a plateau, push just past it and see what breaks",
+      "body": "When you are stuck, the authors suggest finding out exactly what is holding you back. One way is to push yourself somewhat beyond your usual level, for example typing faster than is comfortable, and watching where the errors appear.\n\nThe mistakes that show up under pressure point to the specific weak elements. Once you know which ones they are, you can design practice aimed at them, rather than repeating the whole skill and hoping the problem fixes itself.",
+      "apply_it": "Do your skill at a slightly faster or harder level for five minutes and write down where you break down.",
+      "quiz": {
+        "question": "What does Peak suggest to find out what is causing a plateau?",
+        "options": [
+          "Stop practising for a month",
+          "Practise only what you already do well",
+          "Push slightly beyond your usual level and notice where errors appear",
+          "Ask friends whether you have talent"
+        ],
+        "answer": 2,
+        "explanation": "Pushing past your comfortable level reveals the specific weak points to work on."
+      }
+    },
+    {
+      "id": "peak-ericsson--08",
+      "topic": "skills-mastery",
+      "tags": [
+        "brain",
+        "neuroplasticity",
+        "use-it-or-lose-it"
+      ],
+      "title": "Training reshapes the brain, and skills fade without use",
+      "body": "Ericsson and Pool describe research on London taxi drivers, who spend years memorising the city's maze of streets. Brain scans found that a region involved in spatial memory, part of the hippocampus, was larger in qualified drivers and grew as they trained.\n\nThe flip side is that the brain trims what it doesn't use. The authors note that this region tended to shrink again in drivers who had retired. Ability is not a possession you keep forever; it is maintained by continuing to use it.",
+      "apply_it": "Choose one valuable skill you've let slip and schedule a short session to use it this week.",
+      "quiz": {
+        "question": "What did research on London taxi drivers suggest?",
+        "options": [
+          "Taxi drivers are born with better memories",
+          "The brain stops changing in adulthood",
+          "Intense training can change brain structure, and unused skills fade",
+          "Driving damages memory"
+        ],
+        "answer": 2,
+        "explanation": "Training enlarged a memory-related brain region, and it shrank again after drivers retired."
+      }
+    },
+    {
+      "id": "peak-ericsson--09",
+      "topic": "skills-mastery",
+      "tags": [
+        "mental-representations",
+        "chess",
+        "patterns"
+      ],
+      "title": "Experts see meaningful patterns where beginners see clutter",
+      "body": "The book's central idea is the mental representation: an organised mental picture of how things in a field fit together. Chess masters can glance at a board from a real game and remember it almost perfectly. Give them pieces placed at random, though, and their advantage largely disappears.\n\nTheir edge is not a better memory in general. It is a huge store of patterns that lets them see a position as a few meaningful units instead of dozens of separate pieces. Building those patterns is what practice is really for.",
+      "apply_it": "In your own field, name one pattern you now spot instantly that a beginner would miss.",
+      "quiz": {
+        "question": "Why do chess masters remember real positions so well?",
+        "options": [
+          "They see them as meaningful patterns stored from long practice",
+          "They have unusually strong general memories",
+          "They memorise boards from books",
+          "They use special memory pills"
+        ],
+        "answer": 0,
+        "explanation": "Their advantage vanishes with random positions, showing it comes from stored patterns, not raw memory."
+      }
+    },
+    {
+      "id": "peak-ericsson--10",
+      "topic": "skills-mastery",
+      "tags": [
+        "specific-skills",
+        "transfer",
+        "memory"
+      ],
+      "title": "Skills are specific: training one rarely improves everything",
+      "body": "Steve Faloon's extraordinary memory for digits did not carry over to letters; when tested on letters, he was back to an ordinary level. Ericsson and Pool use this to make a broader point: the mental representations you build are tied to the particular skill you practised.\n\nThat means there is no shortcut of training a general 'memory muscle' or 'brain power' and expecting it to lift every area. If you want to get better at something, you need to practise that thing, or something very close to it.",
+      "apply_it": "List the exact situations where you want a skill to show up, and make sure your practice looks like them.",
+      "quiz": {
+        "question": "What happened when Steve Faloon, the digit memory expert, was tested on letters?",
+        "options": [
+          "He remembered letters even better",
+          "He refused to take the test",
+          "He remembered them perfectly",
+          "His memory was back to an ordinary level"
+        ],
+        "answer": 3,
+        "explanation": "His skill was specific to digits, showing that practice builds specific, not general, abilities."
+      }
+    },
+    {
+      "id": "peak-ericsson--11",
+      "topic": "skills-mastery",
+      "tags": [
+        "mental-representations",
+        "planning",
+        "writing"
+      ],
+      "title": "A clear mental picture of the goal helps you plan and spot errors",
+      "body": "Mental representations do more than help you remember. Ericsson and Pool explain that they let experts plan: a climber can imagine a route before touching the rock, and an experienced writer has a sense of how a whole piece should be structured before writing it.\n\nThey also let you check your own work, because you can compare what you are doing with a detailed picture of what good looks like. Beginners often don't know they are making mistakes; experts notice and correct them as they go.",
+      "apply_it": "Before starting a task, sketch or describe what the finished result should look like, then compare at the end.",
+      "quiz": {
+        "question": "Besides memory, how do mental representations help experts?",
+        "options": [
+          "They let experts skip practice",
+          "They help experts plan ahead and notice their own mistakes",
+          "They make experts more confident than others",
+          "They replace the need for feedback from anyone"
+        ],
+        "answer": 1,
+        "explanation": "Detailed mental pictures support planning and self-monitoring against a standard of good work."
+      }
+    },
+    {
+      "id": "peak-ericsson--12",
+      "topic": "skills-mastery",
+      "tags": [
+        "mental-representations",
+        "feedback-loop",
+        "practice"
+      ],
+      "title": "Better practice builds better mental maps, which improve practice",
+      "body": "The authors describe a virtuous circle. Practising well sharpens your mental representations, and sharper representations let you practise better, because you can see more precisely what you're doing wrong and what to try next.\n\nThis helps explain why experts keep pulling ahead. Their improved understanding of the skill feeds back into how they train. For a learner, it means the goal of practice is not only to perform the activity, but to understand it more deeply each time.",
+      "apply_it": "After a practice session, write one thing you now understand about the skill that you didn't before.",
+      "quiz": {
+        "question": "What is the 'virtuous circle' described in Peak?",
+        "options": [
+          "Rest improves talent, which improves rest",
+          "Practice improves mental representations, which then improve practice",
+          "Praise improves motivation, which improves praise",
+          "Competition improves luck, which improves competition"
+        ],
+        "answer": 1,
+        "explanation": "Good practice sharpens your mental picture of the skill, which in turn makes further practice more effective."
+      }
+    },
+    {
+      "id": "peak-ericsson--13",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "teachers",
+        "expertise"
+      ],
+      "title": "Deliberate practice is purposeful practice guided by expert know-how",
+      "body": "Ericsson and Pool separate purposeful practice, which anyone can do alone, from deliberate practice, which they call the gold standard. Deliberate practice happens in fields like music, chess and sport, where skills are well understood, performance can be measured, and teachers have developed proven training methods over generations.\n\nIn those fields a teacher designs exercises that target the student's weaknesses, step by step. Where such a body of knowledge exists, using it is far more efficient than inventing your own training from scratch.",
+      "apply_it": "Find out whether your skill has established training methods (books, courses, coaches) before designing your own.",
+      "quiz": {
+        "question": "What, according to Peak, distinguishes deliberate practice from purposeful practice?",
+        "options": [
+          "It always takes exactly 10,000 hours",
+          "It needs no feedback",
+          "It is done only by children",
+          "It uses training methods developed in a well-established field, usually with a teacher"
+        ],
+        "answer": 3,
+        "explanation": "Deliberate practice draws on proven training techniques, usually guided by a teacher, in well-developed fields."
+      }
+    },
+    {
+      "id": "peak-ericsson--14",
+      "topic": "skills-mastery",
+      "tags": [
+        "solitary-practice",
+        "music",
+        "motivation"
+      ],
+      "title": "Top performers spent more time in hard, solitary practice",
+      "body": "In a well-known study of violin students at a music academy in Berlin, Ericsson and colleagues found that the best students had spent many more hours practising alone than the merely good ones. The students themselves rated solitary practice as the most important activity for improvement.\n\nThey also said it was not especially enjoyable. The authors' point is that the practice that builds skill is often effortful and not much fun in the moment. What keeps people going is the satisfaction of getting better.",
+      "apply_it": "Schedule one focused session this week on the hardest part of your skill, alone and without distractions.",
+      "quiz": {
+        "question": "What did the Berlin violin study find about the best students?",
+        "options": [
+          "They had spent many more hours practising alone",
+          "They practised less but had more talent",
+          "They mostly played with friends",
+          "They found practice the most fun activity"
+        ],
+        "answer": 0,
+        "explanation": "The best students had accumulated far more solitary practice, which they rated important but not enjoyable."
+      }
+    },
+    {
+      "id": "peak-ericsson--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "10000-hours",
+        "myths",
+        "practice"
+      ],
+      "title": "The '10,000-hour rule' is a misreading, the authors say",
+      "body": "The popular idea that 10,000 hours of practice makes anyone an expert came from Ericsson's violin research, but he and Pool argue it was oversimplified. The figure was roughly an average for the best violinists by age 20; they had not yet mastered the field, and the number varies widely by field.\n\nMore importantly, not any hours count. Years of naive repetition don't add up the same way. And nothing magic happens at an exact number. What matters is the quality of the practice and that it keeps going.",
+      "apply_it": "Instead of counting hours, track how many sessions this month had a specific goal and real feedback.",
+      "quiz": {
+        "question": "What is Ericsson and Pool's main objection to the '10,000-hour rule'?",
+        "options": [
+          "The real number is 5,000 hours",
+          "It only applies to sport",
+          "Not all hours count, and the number isn't a fixed threshold",
+          "Practice doesn't matter at all"
+        ],
+        "answer": 2,
+        "explanation": "They stress practice quality over a magic number, which in any case was an average that varies by field."
+      }
+    },
+    {
+      "id": "peak-ericsson--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "talent",
+        "iq",
+        "persistence"
+      ],
+      "title": "An early talent edge tends to fade against steady practice",
+      "body": "The authors discuss a study of children learning chess. Among beginners, higher IQ gave some advantage. But among a group of strong young players, those with lower IQs had practised more on average and played at least as well.\n\nTheir reading is that natural advantages may help at the start, but long-term practice matters more as skill grows. Other researchers think inborn differences play a bigger role than Peak suggests, so treat this as a strong argument rather than settled fact. Either way, the part you control is the practice.",
+      "apply_it": "If someone 'naturally' outperforms you at first, write down your practice plan for the next three months instead of comparing.",
+      "quiz": {
+        "question": "What did the chess study in Peak suggest about IQ?",
+        "options": [
+          "It decided who became a strong player",
+          "It had no effect at any stage",
+          "It helped early on, but practice mattered more among strong players",
+          "Lower IQ always meant worse play"
+        ],
+        "answer": 2,
+        "explanation": "IQ gave beginners an edge, but among strong players practice was the bigger factor."
+      }
+    },
+    {
+      "id": "peak-ericsson--17",
+      "topic": "skills-mastery",
+      "tags": [
+        "talent",
+        "labels",
+        "self-fulfilling-prophecy"
+      ],
+      "title": "Labelling people 'untalented' can stop them before they start",
+      "body": "Ericsson and Pool warn about the dark side of believing in innate talent. When a child is told early that they have no ear for music or no head for numbers, they often stop trying. Without practice, they fall further behind, which then seems to prove the label right.\n\nThe belief creates the result it predicts. The authors argue it is far better to assume most people can improve with the right practice, and to judge ability only after real, well-designed effort has been made.",
+      "apply_it": "Think of a 'no talent' label you were given as a child. Try one short, structured practice session on that skill.",
+      "quiz": {
+        "question": "Why do the authors see the belief in innate talent as harmful?",
+        "options": [
+          "Labels like 'untalented' make people quit, which then confirms the label",
+          "It makes people too confident",
+          "It leads to too much practice",
+          "It only harms adults"
+        ],
+        "answer": 0,
+        "explanation": "Telling people they lack talent discourages practice, so the label becomes a self-fulfilling prophecy."
+      }
+    },
+    {
+      "id": "peak-ericsson--18",
+      "topic": "skills-mastery",
+      "tags": [
+        "teachers",
+        "coaching",
+        "choosing-a-mentor"
+      ],
+      "title": "Choose a teacher who can design your practice, not just judge it",
+      "body": "The book advises taking care when choosing a teacher or coach. Look for someone who has reached a high level in the field, but also has real experience teaching people at your stage. Good teachers set targeted exercises, give useful feedback, and help you build your own picture of what good performance looks like.\n\nThe authors add that you may outgrow a teacher. Changing to someone more advanced as you improve is not disloyalty; it's part of the path.",
+      "apply_it": "Write three questions you'd ask a potential coach about how they would structure your practice.",
+      "quiz": {
+        "question": "What does Peak suggest looking for in a teacher?",
+        "options": [
+          "The lowest price available",
+          "Someone who praises everything you do",
+          "A teacher you can stay with forever",
+          "Skill in the field plus experience teaching people at your level"
+        ],
+        "answer": 3,
+        "explanation": "A good teacher combines expertise with teaching experience and designs targeted exercises."
+      }
+    },
+    {
+      "id": "peak-ericsson--19",
+      "topic": "skills-mastery",
+      "tags": [
+        "self-teaching",
+        "feedback",
+        "three-fs"
+      ],
+      "title": "No coach? Focus, get feedback, and fix it",
+      "body": "When there's no teacher available, Ericsson and Pool offer a simple guide sometimes summed up as three Fs: focus, feedback, fix it. Break the skill into parts you can practise with full attention. Find some way to learn how you're doing. Then work out what is going wrong and adjust.\n\nIt won't be as efficient as expert coaching, but it is far better than naive repetition. Learning from books, recordings of experts and your own careful analysis can take you a long way.",
+      "apply_it": "Pick one part of your skill and plan: what you'll focus on, how you'll get feedback, and how you'll fix errors.",
+      "quiz": {
+        "question": "What are the 'three Fs' for practising without a teacher?",
+        "options": [
+          "Fast, frequent, fun",
+          "Focus, feedback, fix it",
+          "Find, follow, finish",
+          "Fail, forget, forgive"
+        ],
+        "answer": 1,
+        "explanation": "Without a coach, focus on a specific part, get feedback, and fix what's going wrong."
+      }
+    },
+    {
+      "id": "peak-ericsson--20",
+      "topic": "skills-mastery",
+      "tags": [
+        "feedback",
+        "work",
+        "medicine"
+      ],
+      "title": "Where feedback is missing, build it in",
+      "body": "Some jobs give almost no feedback. The authors discuss doctors who read mammograms: they often never learn whether a scan they judged clear later turned out to show cancer, so it is hard for them to improve.\n\nTheir suggestion is to create feedback deliberately, for example by practising on collections of past cases where the outcome is already known, and checking answers immediately. The broader lesson applies anywhere: if your work doesn't tell you when you're wrong, find a way to make it.",
+      "apply_it": "Identify one decision you make regularly. How could you later check whether it was right?",
+      "quiz": {
+        "question": "What problem did the authors highlight with doctors reading mammograms?",
+        "options": [
+          "They read too few scans",
+          "They often never learn whether their readings were correct",
+          "They rely too much on computers",
+          "They get too much feedback"
+        ],
+        "answer": 1,
+        "explanation": "Without knowing outcomes, they can't improve, so the authors suggest practising on cases with known results."
+      }
+    },
+    {
+      "id": "peak-ericsson--21",
+      "topic": "skills-mastery",
+      "tags": [
+        "skills-vs-knowledge",
+        "training",
+        "learning"
+      ],
+      "title": "Train what people can do, not just what they know",
+      "body": "Ericsson and Pool argue that many training programmes focus on passing on knowledge, through lectures and reading, when what matters is what people can actually do. They give the example of continuing education for doctors, where sitting through lectures had little effect on performance, while more interactive, practice-based training helped more.\n\nKnowing about a skill is not the same as having it. Good training gets learners to perform, receive feedback, and try again.",
+      "apply_it": "Turn one thing you've read recently into an exercise you can actually perform and check.",
+      "quiz": {
+        "question": "What do the authors criticise in many training programmes?",
+        "options": [
+          "They use too much practice",
+          "They give too much feedback",
+          "They are too short",
+          "They pass on knowledge instead of building the ability to perform"
+        ],
+        "answer": 3,
+        "explanation": "Peak argues that real improvement comes from practising skills, not just absorbing information."
+      }
+    },
+    {
+      "id": "peak-ericsson--22",
+      "topic": "productivity",
+      "tags": [
+        "after-action-review",
+        "feedback",
+        "teams"
+      ],
+      "title": "Review every performance honestly, like a flight school debrief",
+      "body": "The authors tell how the US Navy set up its 'Top Gun' school after pilots performed poorly in air combat. Trainees flew mock dogfights against instructors and then went through detailed debriefs: what happened, why, and what to do differently.\n\nThe Navy pilots' performance in real combat later improved sharply. The principle is simple to borrow. After any important performance, from a sales pitch to a match, walk through it carefully and turn the mistakes into specific changes for next time.",
+      "apply_it": "After your next important task, spend ten minutes writing: what happened, why, and what you'll change.",
+      "quiz": {
+        "question": "What made the Navy's 'Top Gun' training effective, according to Peak?",
+        "options": [
+          "Realistic practice followed by detailed debriefs",
+          "More flying hours with no review",
+          "Recruiting naturally talented pilots",
+          "Studying aircraft manuals"
+        ],
+        "answer": 0,
+        "explanation": "Realistic mock combat plus careful debriefs turned experience into specific improvements."
+      }
+    },
+    {
+      "id": "peak-ericsson--23",
+      "topic": "productivity",
+      "tags": [
+        "work",
+        "practice",
+        "career"
+      ],
+      "title": "Turn your daily work into practice",
+      "body": "Ericsson and Pool argue that many workplaces separate 'doing' from 'learning', so people stop improving once they know the job. They suggest treating routine work as a chance to practise: go into a meeting or a presentation with one specific skill to work on, then review afterwards how it went.\n\nThis takes little extra time, because the work happens anyway. What changes is your intention and the reflection that follows, which turns ordinary experience into purposeful practice.",
+      "apply_it": "Choose one meeting this week and decide on one specific skill to practise in it.",
+      "quiz": {
+        "question": "What do the authors suggest about everyday work?",
+        "options": [
+          "Keep learning separate from work",
+          "Only improve through formal courses",
+          "Treat routine tasks as chances to practise a specific skill",
+          "Avoid reflecting on work so it stays efficient"
+        ],
+        "answer": 2,
+        "explanation": "Adding a specific aim and a review turns ordinary work into practice."
+      }
+    },
+    {
+      "id": "peak-ericsson--24",
+      "topic": "skills-mastery",
+      "tags": [
+        "session-length",
+        "rest",
+        "concentration"
+      ],
+      "title": "Keep practice sessions short enough to stay fully focused",
+      "body": "Because purposeful practice demands intense focus, the authors observe that it can't be kept up for long stretches. The top students in the Berlin violin study tended to practise in sessions of about an hour, and they made a point of resting, including sleeping more than less accomplished students.\n\nIf you're learning something new, it can make sense to start with shorter sessions and build up. Ending a session when concentration fades is often better than grinding on at half attention.",
+      "apply_it": "Plan your practice as one or more focused blocks of under an hour, with a real break between them.",
+      "quiz": {
+        "question": "What pattern did the best violin students follow, according to Peak?",
+        "options": [
+          "Practising all day without breaks",
+          "Practising only at night",
+          "Sessions of about an hour, with plenty of rest",
+          "Short bursts of a few minutes"
+        ],
+        "answer": 2,
+        "explanation": "Intense practice is hard to sustain, so the best students used roughly hour-long sessions and rested well."
+      }
+    },
+    {
+      "id": "peak-ericsson--25",
+      "topic": "skills-mastery",
+      "tags": [
+        "motivation",
+        "habits",
+        "environment"
+      ],
+      "title": "Strengthen your reasons to keep going and weaken reasons to quit",
+      "body": "Motivation, the authors suggest, comes down to two forces: reasons to continue and reasons to stop. You can work on both. Make quitting harder by setting a fixed practice time each day and removing distractions like your phone. Make continuing more attractive by noticing progress and reminding yourself why you started.\n\nThey note that most people find it easier to keep going once practice becomes a regular part of their routine, rather than something they have to decide to do every day.",
+      "apply_it": "Set a fixed time for practice tomorrow and remove one distraction from the space in advance.",
+      "quiz": {
+        "question": "How do Ericsson and Pool suggest managing motivation?",
+        "options": [
+          "Strengthen reasons to continue and reduce reasons to stop",
+          "Wait until you feel inspired",
+          "Rely purely on willpower",
+          "Practise only when you have free time"
+        ],
+        "answer": 0,
+        "explanation": "They frame motivation as a balance you can shift, for example with fixed times and fewer distractions."
+      }
+    },
+    {
+      "id": "peak-ericsson--26",
+      "topic": "skills-mastery",
+      "tags": [
+        "community",
+        "motivation",
+        "support"
+      ],
+      "title": "Practise among people who are practising too",
+      "body": "The authors point out that a social circle that shares your goal is a powerful source of motivation. Musicians in bands, chess club members and running groups support each other, compete a little, and make practice feel normal.\n\nIf no such group exists around you, you can start one, even with just one or two others. Being part of a community that values improvement makes it much easier to keep putting in the effort on days when you'd rather not.",
+      "apply_it": "Find or start one group (online or nearby) of people working on the same skill as you.",
+      "quiz": {
+        "question": "Why do the authors recommend joining a group of fellow learners?",
+        "options": [
+          "Groups replace the need for practice",
+          "It guarantees fast success",
+          "It avoids the need for a teacher",
+          "Shared goals and support make it easier to keep practising"
+        ],
+        "answer": 3,
+        "explanation": "A community that values improvement provides motivation and makes practice feel normal."
+      }
+    },
+    {
+      "id": "peak-ericsson--27",
+      "topic": "skills-mastery",
+      "tags": [
+        "stages",
+        "development",
+        "mastery"
+      ],
+      "title": "The road to expertise often moves through four stages",
+      "body": "Drawing on research into how world-class performers developed, the book outlines a common path. It often starts with playful interest, usually encouraged by parents or friends. Next comes a more serious phase with a teacher and regular practice. Then a period of full commitment, where the person devotes much of their life to improving.\n\nA rare few go on to a fourth stage: creating something new and pushing their field forward. Knowing these stages helps you see where you are and what the next step might require.",
+      "apply_it": "Which stage are you at in your main skill? Write one step that would move you to the next.",
+      "quiz": {
+        "question": "What is often the first stage on the path to expertise described in Peak?",
+        "options": [
+          "Full-time commitment",
+          "Playful interest, often encouraged by others",
+          "Creating new work in the field",
+          "Finding a world-class coach"
+        ],
+        "answer": 1,
+        "explanation": "Most expert paths start with playful interest before becoming serious and then committed."
+      }
+    },
+    {
+      "id": "peak-ericsson--28",
+      "topic": "skills-mastery",
+      "tags": [
+        "creativity",
+        "innovation",
+        "mastery"
+      ],
+      "title": "Breakthrough creativity usually grows out of deep mastery",
+      "body": "Ericsson and Pool argue that pioneers who break new ground are usually people who first mastered what was already known. Their rich mental representations let them see gaps, problems and possibilities that others miss.\n\nCreativity, in this view, is not a mysterious bolt from nowhere. It builds on the same slow work of developing skill and understanding, followed by trial and error at the edge of the field. Learn the field deeply first, and new ideas become far more likely.",
+      "apply_it": "Before trying to innovate in your field, list the three things you most need to master first.",
+      "quiz": {
+        "question": "Where does breakthrough creativity usually come from, according to Peak?",
+        "options": [
+          "Avoiding existing knowledge to stay original",
+          "Deep mastery that lets people see what others miss",
+          "Pure luck",
+          "Natural genius with little training"
+        ],
+        "answer": 1,
+        "explanation": "Pioneers usually build on rich mental representations developed through mastery."
+      }
+    },
+    {
+      "id": "peak-ericsson--29",
+      "topic": "skills-mastery",
+      "tags": [
+        "active-learning",
+        "teaching",
+        "physics"
+      ],
+      "title": "Students learn more from active practice than from lectures",
+      "body": "The authors describe an experiment in a university physics course. One class had regular lectures; another, taught by people using deliberate practice principles, spent class time working through problems, discussing, and getting feedback.\n\nOn a test afterwards, the active class scored much higher. The lesson extends beyond classrooms: when you're learning, solving problems and getting feedback beats listening passively, even if listening feels more comfortable.",
+      "apply_it": "Next time you study, close the book after 15 minutes and solve a problem on the topic without looking.",
+      "quiz": {
+        "question": "What did the physics class experiment in Peak find?",
+        "options": [
+          "Lectures produced the best results",
+          "There was no difference",
+          "Students preferred lectures and learned more from them",
+          "Students in the active, problem-solving class did much better"
+        ],
+        "answer": 3,
+        "explanation": "Active problem-solving with feedback outperformed traditional lecturing."
+      }
+    },
+    {
+      "id": "peak-ericsson--30",
+      "topic": "skills-mastery",
+      "tags": [
+        "adult-learning",
+        "age",
+        "beliefs"
+      ],
+      "title": "It's rarely too late to get much better",
+      "body": "Ericsson and Pool accept that some abilities are easier to develop young, especially certain physical traits shaped during childhood. But they argue that for most skills, adults can improve far more than they assume, and that the biggest barrier is often the belief that it's too late.\n\nThe same principles apply at any age: specific goals, focus, feedback and stretching beyond your comfort zone. Starting later may limit how far you go in some fields, but it rarely stops meaningful improvement.",
+      "apply_it": "Choose one skill you think you're 'too old' for and commit to four weeks of purposeful practice.",
+      "quiz": {
+        "question": "What do the authors say about learning as an adult?",
+        "options": [
+          "Adults can improve far more than they usually assume",
+          "Adults can't develop new skills",
+          "Age doesn't matter in any field",
+          "Adults should only practise physical skills"
+        ],
+        "answer": 0,
+        "explanation": "Some abilities favour early starters, but most adults can make major improvements with good practice."
+      }
+    }
+  ]
+}

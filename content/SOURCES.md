@@ -57,7 +57,13 @@ Status key: **in use** (cards in `library/`), **next** (usable, not ingested yet
 | [CDC](https://www.cdc.gov) | Physical activity, sleep, nutrition guidance | Mostly public domain; some images and partner content are not. To check per page | `web` | Health |
 | King James Bible: Book of Proverbs ([Gutenberg #8020](https://www.gutenberg.org/ebooks/8020)) | Short maxims on wisdom, work, planning, money, speech and friendship | Public domain in the US and most countries. In the UK the KJV text is still under Crown letters patent, which covers printing the Bible; short quotations are generally accepted. Lawyer to confirm for UK distribution | `gutenberg` adapter with `verses = "Proverbs"`: one passage per verse, locators like "Proverbs 6:6" | Productivity, business, money, relationships, emotional intelligence |
 | [Wikisource](https://en.wikisource.org) | Seneca's *Moral Letters to Lucilius* (Gummere's 1917–25 Loeb translation; translator died 1920) | Public domain | `web`: read by hand, no quotes until a Wikisource adapter exists | Mindfulness, money, relationships |
-| [NHS](https://www.nhs.uk) | Mental wellbeing guides, breathing exercises, healthy living | OGL v3.0 plus the nhs.uk terms above. Checked ([terms](https://www.nhs.uk/our-policies/terms-and-conditions/)) | `web` | Health, mindfulness |
+| [NHS](https://www.nhs.uk) | Mental wellbeing guides, breathing exercises, Live Well, mental-health self-help, grief and bereavement (incl. children, stillbirth, miscarriage) | OGL v3.0 plus the nhs.uk terms above. Checked ([terms](https://www.nhs.uk/our-policies/terms-and-conditions/)) | `web` | Health, mindfulness, grief & loss |
+| More Gutenberg and Standard Ebooks titles (added 2026-10-11) | Ecclesiastes (KJV), Legge's *Tao Te Ching*, Carus's *The Gospel of Buddha*, Plutarch's *Lives* (Dryden/Clough), Xenophon's *Cyropaedia*, Reynolds' *Seven Discourses on Art*, Stevenson's *Essays in the Art of Writing*, Dewey's *How We Think*, William James' *Talks to Teachers*, *Dr. Montessori's Own Handbook*, Bennett's *Mental Efficiency* | Public domain; licence header checked per book | `gutenberg` (GITenberg mirror) and `standardebooks` adapters, quotes verified | Faith & wisdom, lives & history, leadership, creativity, learning, study, skills, parenting, mental strength |
+| [CDC](https://www.cdc.gov) Healthy Living and Positive Parenting Tips | Everyday health habits; parenting tips by child age | Public domain US government work; credit and no-endorsement line | `web` | Health, parenting |
+| [NIH News in Health](https://newsinhealth.nih.gov) | Readable health articles | Public domain US government work | `web` | Health |
+| [OASH womenshealth.gov](https://www.womenshealth.gov) | Healthy relationships and safety | Public domain US government work | `web` | Dating & marriage |
+| HHS Children's Bureau, *The Importance of Fathers in the Healthy Development of Children* | Fathers' role in child development | US government work; summarised in our own words because the reuse statement for fatherhood.gov was unclear | `summary` | Parenting |
+| [NCI PDQ](https://www.cancer.gov/about-cancer/advanced-cancer/caregivers/planning/bereavement-pdq) *Grief, Bereavement, and Loss* (patient version) | Grief, prolonged grief, grief in children | Public domain; PDQ text may be reused freely ([copyright and reuse](https://www.cancer.gov/policies/copyright-reuse)) | `web` | Grief & loss |
 
 ## Next: usable, not ingested yet
 
@@ -99,6 +105,8 @@ a `web` entry.
 | TED talks | CC BY-NC-ND: summarise only |
 | MedlinePlus A.D.A.M. encyclopedia, drug monographs | Copyrighted, licensed to NLM |
 | Deepstash, Blinkist, other apps' cards | Never copy; the plan forbids it |
+| NHS Every Mind Matters | All rights reserved and no commercial use, unlike the main nhs.uk pages; we use the nhs.uk mental-health self-help pages instead |
+| NIA (nia.nih.gov) articles | Public domain, but the article pages could not be fetched; NCI's PDQ grief summary is used instead |
 
 ## Summarise only (`original-summary`)
 
@@ -120,7 +128,7 @@ Thinking, Fast and Slow, Mindset, Man's Search for Meaning, Emotional Intelligen
 The Psychology of Money, Rich Dad Poor Dad, Crucial Conversations, The 5 Love Languages, Chinua
 Achebe's The Education of a British-Protected Child, Tony Elumelu's Africapitalism, Strive
 Masiyiwa's mentoring posts and talks, and Anaïs Nin's Diary, In Favor of the Sensitive Man and The
-Novel of the Future (her erotica is excluded). *How to Win Friends* (1936, renewed) is in copyright in the US until
+Novel of the Future (her erotica is excluded); and, for the new categories, The Seven Principles for Making Marriage Work (Gottman), Attached (Levine & Heller), How to Talk So Kids Will Listen (Faber & Mazlish), Grit (Duckworth), Make It Stick (Brown, Roediger & McDaniel), A Mind for Numbers (Oakley), Getting Past Your Breakup (Elliott), Rebuilding (Fisher & Alberti), Peak (Ericsson & Pool), Ultralearning (Young) and It's OK That You're Not OK (Devine). *How to Win Friends* (1936, renewed) is in copyright in the US until
 2032 but public domain since 2026 in life+70 countries (Carnegie died 1955). They are registered in
 `sources.toml` with `adapter = "summary"`. *The Richest Man in Babylon* (1926) has been public
 domain in the US since 2022, but Clason died in 1957, so it is in copyright until the end of 2027 in

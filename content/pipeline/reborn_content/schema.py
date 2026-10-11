@@ -23,8 +23,10 @@ LICENCES = {
     "cc-by-sa-4.0", "cc0-1.0", "ogl-3.0", "original-summary",
 }
 TOPICS = {
-    "business", "psychology", "health", "emotional-intelligence", "personal-development",
-    "productivity", "money", "relationships", "mindfulness",
+    "business", "psychology", "mental-strength", "health", "emotional-intelligence", "personal-development",
+    "productivity", "money", "relationships", "dating-marriage", "mindfulness", "faith-wisdom", "leadership",
+    "parenting", "communication", "creativity", "learning", "lives-history", "entrepreneurship",
+    "heartbreak-healing", "grief-loss", "study-smarter", "skills-mastery",
 }
 SOURCE_REQUIRED = {"id", "title", "authors", "kind", "url", "licence", "licence_url", "attribution", "retrieved_at"}
 SOURCE_FIELDS = SOURCE_REQUIRED | {"publisher", "year", "language", "translator", "notes"}

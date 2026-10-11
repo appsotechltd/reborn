@@ -22,7 +22,8 @@ MIRROR = "https://raw.githubusercontent.com/GITenberg/{path}"
 _START = re.compile(r"^\*\*\*\s*START OF (THE|THIS) PROJECT GUTENBERG EBOOK.*$", re.M | re.I)
 _END = re.compile(r"^\*\*\*\s*END OF (THE|THIS) PROJECT GUTENBERG EBOOK.*$", re.M | re.I)
 _ROMAN = re.compile(r"^(?:[IVXLC]+\.?|\d+\.?)$")
-_OLD_SMALL_PRINT = re.compile(r"SMALL PRINT!\*\*FOR PUBLIC DOMAIN EBOOKS", re.I)
+_OLD_SMALL_PRINT = re.compile(r"SMALL PRINT!\*\*FOR PUBLIC DOMAIN E(BOOKS|TEXTS)", re.I)
+_PAGE_MARK = re.compile(r"\s*\{\d+[a-z]?\}")  # "{47a}" page/footnote anchors in some ebooks
 _VERSE = re.compile(r"^\d+:(\d{3}):(\d{3})\s+", re.M)
 _HEADING_WORD = re.compile(r"^(CHAPTER|BOOK|PART|LECTURE|SECTION|LESSON)\b", re.I)
 
@@ -54,7 +55,9 @@ def title_case(line: str) -> str:
         elif i > 0 and core.lower() in _SMALL and not out[-1].endswith((".", ":")):
             out.append(w.lower())
         else:
-            out.append(w[:1] + w[1:].lower())
+            # capitalise the first letter even after an opening quote: "‘TREASURE" -> "‘Treasure"
+            j = next((k for k, ch in enumerate(w) if ch.isalpha()), 0)
+            out.append(w[: j + 1] + w[j + 1 :].lower())
     return " ".join(out)
 
 
@@ -86,11 +89,20 @@ def parse_verses(body: str, source_id: str, book: str) -> list[Passage]:
     return passages
 
 
-def parse_text(text: str, source_id: str, start: str | None = None, end: str | None = None, verses: str | None = None):
+def parse_text(
+    text: str,
+    source_id: str,
+    start: str | None = None,
+    end: str | None = None,
+    verses: str | None = None,
+    section_marker: str | None = None,
+    section_label: str | None = None,
+):
     text = text.replace("\r\n", "\n").lstrip("﻿")
     m_start, m_end = _START.search(text), _END.search(text)
     header = text[: m_start.start()] if m_start else text[:3000]
-    licence = licence_from_header(header, text[m_end.end() :] if m_end else "")
+    # Very old etexts (1990s) have neither marker; their "small print" licence sits near the top
+    licence = licence_from_header(header, text[m_end.end() :] if m_end else text if not m_start else "")
     body = text[m_start.end() : m_end.start() if m_end else len(text)] if m_start else text
     if start:
         i = body.find(start)
@@ -106,12 +118,20 @@ def parse_text(text: str, source_id: str, start: str | None = None, end: str | N
         return licence, " ".join(header.split())[:600], parse_verses(body, source_id, verses)
 
     passages: list[Passage] = []
-    heading, count = "Front matter", 0
+    heading, count, sections = "Front matter", 0, 0
     for block in re.split(r"\n\s*\n", body):
         if not block.strip():
             continue
-        if _is_heading(block):
-            line = ". ".join(title_case(" ".join(ln.split())).rstrip(".") for ln in block.strip().split("\n"))
+        # section_marker: numbered sections whose heading line is followed by a mixed-case subtitle,
+        # e.g. "A DISCOURSE / Delivered at the Opening of..." -> "Discourse 1"
+        if section_marker and block.strip().split("\n")[0].strip() == section_marker:
+            sections += 1
+            heading, count = f"{section_label or title_case(section_marker)} {sections}", 0
+            continue
+        unmarked = _PAGE_MARK.sub("", block)
+        if _is_heading(unmarked):
+            line = ". ".join(title_case(" ".join(ln.split())).rstrip(".") for ln in unmarked.strip().split("\n"))
+            line = line.strip("#").strip()  # "#What Is Apperception?#" sub-headings in some etexts
             # "CHAPTER I" followed by its title: keep both
             if heading and _HEADING_WORD.match(heading) and count == 0 and not _HEADING_WORD.match(line):
                 heading = f"{heading}. {line}"
@@ -137,5 +157,5 @@ def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
         text = data.decode("utf-8")
     except UnicodeDecodeError:
         text = data.decode("latin-1")
-    licence, evidence, passages = parse_text(text, entry["id"], entry.get("start"), entry.get("end"), entry.get("verses"))
+    licence, evidence, passages = parse_text(text, entry["id"], entry.get("start"), entry.get("end"), entry.get("verses"), entry.get("section_marker"), entry.get("section_label"))
     return FetchResult(licence, evidence, url, passages)

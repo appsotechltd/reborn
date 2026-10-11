@@ -1,0 +1,750 @@
+{
+  "source": {
+    "id": "nhs-live-well",
+    "title": "Live Well",
+    "authors": [
+      "NHS"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/live-well/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Adapted from the NHS website Live Well section (healthy eating, exercise, healthy weight, sleep and tiredness, alcohol, quitting smoking). Pages used, under https://www.nhs.uk/live-well/: eat-well/how-to-eat-a-balanced-diet/eight-tips-for-healthy-eating/, eat-well/5-a-day/5-a-day-what-counts/, eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/, eat-well/food-types/how-does-sugar-in-our-diet-affect-our-health/, eat-well/food-types/salt-nutrition/, exercise/exercise-health-benefits/, exercise/physical-activity-guidelines-for-adults-aged-19-to-64/, exercise/why-sitting-too-much-is-bad-for-us/, exercise/walking-for-health/, exercise/how-to-warm-up-before-exercising/, exercise/strength-exercises/, healthy-weight/managing-your-weight/understanding-calories/, healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/, sleep-and-tiredness/self-help-tips-to-fight-fatigue/, alcohol-advice/calculating-alcohol-units/, alcohol-advice/the-risks-of-drinking-too-much/, alcohol-advice/tips-on-cutting-down-alcohol/, alcohol-advice/calories-in-alcohol/, quit-smoking/nhs-stop-smoking-services-help-you-quit/, quit-smoking/stopping-smoking-mental-health-benefits/, quit-smoking/passive-smoking-protect-your-family-and-friends/, quit-smoking/paan-bidi-and-shisha-risks/. NHS terms 3.6b: adapted content uses the standard OGL attribution, must not imply NHS endorsement, and must not be sold as a separately charged item (3.10). UK-specific helpline numbers are deliberately left out of the cards."
+  },
+  "cards": [
+    {
+      "id": "nhs-live-well--01",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "carbohydrates",
+        "fibre"
+      ],
+      "title": "Build each main meal around a high-fibre starchy food",
+      "body": "The NHS healthy eating tips say starchy foods should make up just over a third of what you eat, with at least one at every main meal. Choose the higher-fibre versions: brown rice, wholewheat pasta, wholemeal bread, or potatoes eaten with their skins on.\n\nStarchy food is often blamed for weight gain, but gram for gram carbohydrate has less than half the calories of fat. The real problem is usually what gets added: oil on chips, thick butter on bread, creamy sauces on pasta. Keep the starch and go easy on the extras.",
+      "apply_it": "At your next main meal, swap one white starch for a wholegrain or higher-fibre version and notice how long you stay full.",
+      "quiz": {
+        "question": "According to the NHS, what usually adds most calories to starchy foods?",
+        "options": [
+          "The starch itself",
+          "The fibre in wholegrain versions",
+          "Added fats such as oil, butter and creamy sauces",
+          "Eating them at lunchtime"
+        ],
+        "answer": 2,
+        "explanation": "Gram for gram, carbohydrate has less than half the calories of fat. The fats added on top are usually the bigger problem."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--02",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "5-a-day",
+        "vegetables",
+        "fruit"
+      ],
+      "title": "Five portions of fruit and veg a day, and frozen or tinned counts",
+      "body": "The NHS advice is to eat at least five portions of a variety of fruit and vegetables every day. One portion is 80g, about a handful, and fresh, frozen, tinned and dried all count. Fruit and vegetables cooked into stews, soups and sauces count too, so they do not need to be eaten on their own.\n\nThis matters because frozen and tinned produce is often cheaper and keeps longer. When you buy tinned, the NHS suggests fruit in natural juice and vegetables in water, without added sugar or salt. Variety matters as much as quantity, because different colours bring different nutrients.",
+      "apply_it": "Count your fruit and vegetable portions today. If you are under five, add a handful of frozen or tinned vegetables to tonight's meal.",
+      "quiz": {
+        "question": "Which of these counts towards your 5 A Day?",
+        "options": [
+          "Only fresh fruit eaten raw",
+          "Frozen peas added to a stew",
+          "Vegetables only if eaten on their own",
+          "Nothing that comes from a tin"
+        ],
+        "answer": 1,
+        "explanation": "Fresh, frozen, tinned and dried fruit and vegetables all count, including those cooked into dishes."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--03",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "5-a-day",
+        "starchy-foods",
+        "juice"
+      ],
+      "title": "Juice and beans count once a day; yam, cassava and plantain don't count",
+      "body": "Some foods have special rules in the NHS 5 A Day guidance. Fruit juice, vegetable juice and smoothies count as only one portion a day, and the total should stay under 150ml, because even unsweetened juice is sugary and harms teeth. Beans and pulses such as lentils and chickpeas also count only once a day, however much you eat.\n\nPotatoes, yams, cassava and plantain do not count at all, because they are usually eaten as the starchy part of the meal. They are still useful foods, but you need other fruit and vegetables alongside them. Sweet potatoes, by contrast, do count.",
+      "apply_it": "Look at your usual plate. If the only 'vegetable' is yam, cassava, plantain or potato, add a separate portion of greens, tomatoes or another vegetable.",
+      "quiz": {
+        "question": "Why don't cassava and plantain count towards 5 A Day?",
+        "options": [
+          "They contain no nutrients at all",
+          "They are too sugary",
+          "They are usually eaten as the starchy part of a meal",
+          "They are only counted if fried"
+        ],
+        "answer": 2,
+        "explanation": "Like potatoes, they are usually eaten as starchy foods, so you need other fruit and vegetables as well."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--04",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "fish",
+        "omega-3"
+      ],
+      "title": "Eat fish twice a week, and make one of them oily",
+      "body": "The NHS recommends at least two portions of fish a week, with at least one being oily fish. Oily fish such as sardines, mackerel, herring, pilchards, salmon and trout are rich in omega-3 fats. White fish such as cod, hake and haddock also count towards the two portions.\n\nFresh, frozen and tinned fish all count, which makes this easier and cheaper than it sounds: a tin of sardines or mackerel is an oily fish portion. One caution from the guidance is that tinned and smoked fish can be high in salt, so check the label.",
+      "apply_it": "Add a tin of sardines or mackerel to your shopping list and plan one meal around it this week.",
+      "quiz": {
+        "question": "What does the NHS recommend about fish?",
+        "options": [
+          "At least two portions a week, including one oily fish",
+          "Fish only once a month",
+          "Only fresh fish counts",
+          "Avoid oily fish because of its fat"
+        ],
+        "answer": 0,
+        "explanation": "At least two portions a week, one of them oily. Fresh, frozen and tinned all count."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--05",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "fats",
+        "heart-health"
+      ],
+      "title": "Swap saturated fats for small amounts of vegetable oil",
+      "body": "The NHS guidance says that, on average, men should have no more than 30g of saturated fat a day and women no more than 20g. Saturated fat is found in foods like fatty meat, butter, lard, ghee, cream, cheese, cakes and pastries.\n\nThe practical move is a swap rather than cutting out fat completely: cook with a small amount of vegetable or olive oil, or a reduced-fat spread, instead of butter, lard or ghee, and choose lean cuts of meat with the visible fat trimmed off. Unsaturated fats from oils, oily fish and avocados are the better choice, though all fats are high in energy, so use them sparingly.",
+      "apply_it": "Next time you cook, measure the oil with a spoon instead of pouring it, and trim any visible fat from meat.",
+      "quiz": {
+        "question": "What is the NHS daily maximum for saturated fat for an average woman?",
+        "options": [
+          "5g",
+          "50g",
+          "No limit",
+          "20g"
+        ],
+        "answer": 3,
+        "explanation": "On average, women should have no more than 20g of saturated fat a day and men no more than 30g."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--06",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "sugar",
+        "teeth"
+      ],
+      "title": "Free sugars, including honey and juice, should stay under 30g a day",
+      "body": "The sugars to cut down on are 'free sugars'. The NHS defines these as any sugar added to food or drink, plus the sugar in honey, syrups and unsweetened fruit juices and smoothies. Sugar that sits naturally inside whole fruit, vegetables and milk is not counted as free sugar.\n\nAdults should have no more than 30g of free sugars a day, about seven sugar cubes, and children less: 24g for ages 7 to 10 and 19g for ages 4 to 6. A single fizzy drink can use up most of that. The NHS suggests swapping sugary drinks for water or no-added-sugar versions and reducing sugar in tea or cereal gradually until you no longer miss it.",
+      "apply_it": "Check the sugar in one drink you have every day. If it is sweetened, try halving the sugar this week and halving again next week.",
+      "quiz": {
+        "question": "Which of these counts as a free sugar?",
+        "options": [
+          "Sugar inside a whole apple",
+          "Honey stirred into tea",
+          "Natural sugar in plain milk",
+          "Sugar inside a raw carrot"
+        ],
+        "answer": 1,
+        "explanation": "Honey, syrups, juices and any added sugar are free sugars. Sugar inside whole fruit, vegetables and milk is not."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--07",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "salt",
+        "blood-pressure"
+      ],
+      "title": "Most salt is already in the food you buy, not the salt shaker",
+      "body": "The NHS says adults should have no more than 6g of salt a day, about one level teaspoon, and children less. Too much salt can raise blood pressure, which increases the risk of heart attacks and strokes.\n\nThe surprise is where it comes from: around three quarters of the salt we eat is already in everyday foods like bread, breakfast cereals, stock cubes, sauces, processed meats and ready meals. So cutting down means checking labels and choosing lower-salt versions as well as using less at the table. Flavouring food with herbs, spices, garlic, chilli, black pepper or lemon instead of salt helps your taste adjust.",
+      "apply_it": "Taste your food before adding salt, and try seasoning one dish this week with garlic, chilli, herbs or lemon instead.",
+      "quiz": {
+        "question": "Where does most of the salt we eat come from, according to the NHS?",
+        "options": [
+          "Salt added at the table",
+          "Fresh fruit",
+          "Tap water",
+          "Everyday packaged foods like bread, cereals and sauces"
+        ],
+        "answer": 3,
+        "explanation": "About three quarters of the salt we eat is already in the foods we buy."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--08",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "food-labels",
+        "shopping"
+      ],
+      "title": "Use traffic-light labels to compare foods at a glance",
+      "body": "Many packaged foods show colour-coded labels on the front. In the NHS guide to reading labels, red means high, amber medium and green low in fat, saturated fat, sugar or salt. Mostly green is generally the healthier choice, amber is fine most of the time, and red means eat it less often and in smaller amounts.\n\nWhere there is no colour, the back-of-pack figures per 100g help. More than 22.5g of sugars, 17.5g of fat or 1.5g of salt per 100g counts as high. The ingredients list helps too: ingredients appear in order of weight, so if sugar, butter or oil is near the top, there is a lot of it.",
+      "apply_it": "Pick two similar products you buy, like two breakfast cereals, and compare their labels. Choose the one with more green and fewer reds.",
+      "quiz": {
+        "question": "On a food label, how are ingredients ordered?",
+        "options": [
+          "By weight, largest first",
+          "Alphabetically",
+          "By price",
+          "Healthiest first"
+        ],
+        "answer": 0,
+        "explanation": "Ingredients are listed by weight, largest first, so what appears near the top makes up most of the product."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--09",
+      "topic": "health",
+      "tags": [
+        "hydration",
+        "drinks",
+        "sugar"
+      ],
+      "title": "Drink six to eight glasses of fluid a day, mostly water",
+      "body": "The NHS healthy eating tips recommend 6 to 8 glasses of fluid a day, on top of the water you get from food. All non-alcoholic drinks count, including tea and coffee, but water, lower-fat milk and lower-sugar drinks are the healthiest options.\n\nSugary soft and fizzy drinks are high in calories and bad for teeth, so the guidance is to limit them. You will need more fluid in hot weather or when you are exercising. Even mild dehydration can leave you feeling tired, so a glass of water is a simple first thing to try when your energy dips.",
+      "apply_it": "Keep a bottle or jug of water where you work and aim to finish it by mid-afternoon.",
+      "quiz": {
+        "question": "Which statement matches the NHS guidance on fluids?",
+        "options": [
+          "Only plain water counts",
+          "Tea and coffee make you lose fluid so don't count",
+          "Sugary fizzy drinks are a good way to hydrate",
+          "All non-alcoholic drinks count, but water and low-sugar drinks are best"
+        ],
+        "answer": 3,
+        "explanation": "All non-alcoholic drinks count towards 6 to 8 glasses, but water, lower-fat milk and low-sugar drinks are healthiest."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--10",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "intensity",
+        "fitness"
+      ],
+      "title": "Use the talk test to tell moderate from vigorous exercise",
+      "body": "The NHS activity guidelines give a simple way to judge effort without any equipment. Moderate activity raises your heart rate, makes you breathe faster and feel warmer: you can still talk, but you could not sing a song. Brisk walking, cycling, dancing and pushing a lawn mower are examples.\n\nVigorous activity makes you breathe hard and fast, so you can only say a few words before pausing for breath. Running, swimming, football, skipping and climbing stairs usually count. The guidance notes that a minute of vigorous effort gives roughly double the benefit of a minute of moderate effort, and almost any activity becomes vigorous if you push harder.",
+      "apply_it": "On your next walk, try to speak a sentence and then sing a line. If talking is easy and singing is hard, you are at moderate intensity.",
+      "quiz": {
+        "question": "During moderate activity, what can you typically do?",
+        "options": [
+          "Sing a whole song easily",
+          "Talk, but not sing",
+          "Only say one word at a time",
+          "Nothing, you must be silent"
+        ],
+        "answer": 1,
+        "explanation": "Moderate activity: you can talk but not sing. Vigorous: only a few words before pausing for breath."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--11",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "strength",
+        "muscles"
+      ],
+      "title": "Work your muscles on two days a week, on top of your cardio",
+      "body": "Besides the weekly aerobic target, the NHS guidelines say adults should do strengthening activities on at least two days a week, covering the major muscle groups: legs, hips, back, abdomen, chest, shoulders and arms. These sessions are in addition to the aerobic minutes, not part of them.\n\nStrength work does not have to mean a gym. Carrying heavy shopping, digging in the garden, lifting and carrying children, yoga, push-ups and sit-ups all count. The aim is to work each muscle until you need a short rest before you could repeat the movement.",
+      "apply_it": "Choose two days this week and write down one strength activity for each, such as carrying shopping home or ten push-ups against a wall.",
+      "quiz": {
+        "question": "How do strength activities relate to the weekly aerobic target?",
+        "options": [
+          "They replace it completely",
+          "They only count for people over 65",
+          "They are done in addition to it, on at least two days a week",
+          "They should be avoided on days with aerobic exercise"
+        ],
+        "answer": 2,
+        "explanation": "Strength work is extra to the aerobic minutes, on at least two days a week, and can be on the same or different days."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--12",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "sitting",
+        "sedentary",
+        "work"
+      ],
+      "title": "Exercising doesn't cancel out sitting all day, so break it up",
+      "body": "The NHS points out that modern life has engineered much of the movement out of our days: we drive, machines do the chores, and most jobs need little physical effort. Many adults sit for more than seven hours a day, and long periods of sitting are linked to heart disease, type 2 diabetes and weight gain.\n\nCrucially, the guidance says meeting your weekly exercise target does not fully undo long stretches of sitting. So alongside exercise, break up sitting time: stand or walk while on the phone, walk to a colleague instead of messaging, stand on the bus, take the stairs, and set a reminder to get up every 30 minutes.",
+      "apply_it": "Set a phone or computer reminder to stand up and move every 30 minutes for the rest of today.",
+      "quiz": {
+        "question": "What does the NHS say about people who exercise but sit for long periods?",
+        "options": [
+          "Exercise fully cancels out the sitting",
+          "Meeting the exercise target does not fully offset long sitting",
+          "Sitting is only a problem for people over 65",
+          "Sitting is harmless if you sleep well"
+        ],
+        "answer": 1,
+        "explanation": "Hitting the activity target doesn't fully make up for long periods of sitting, so it's worth breaking sitting up too."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--13",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "walking",
+        "habits"
+      ],
+      "title": "A brisk 10-minute walk counts, and walking can fit into your day",
+      "body": "The NHS calls walking simple, free and one of the easiest ways to get more active. You do not need hours: a brisk 10-minute walk a day has health benefits and counts towards your weekly activity. Brisk means about three miles an hour, faster than a stroll, at a pace where you can talk but not sing.\n\nThe trick is to build walking into things you already do: walk part of the way to work, walk to the shops or with children to school, take the stairs, leave the car for short trips, or take an after-dinner walk with family or friends. Comfortable, supportive shoes are the only kit you need.",
+      "apply_it": "Find one regular trip this week you could walk instead of drive or ride, even just part of the way.",
+      "quiz": {
+        "question": "What counts as a brisk walking pace in the NHS guidance?",
+        "options": [
+          "A slow stroll",
+          "Jogging as fast as possible",
+          "About three miles an hour, where you can talk but not sing",
+          "Any pace, as long as it lasts an hour"
+        ],
+        "answer": 2,
+        "explanation": "Brisk walking is around three miles an hour, faster than a stroll; you can talk but not sing."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--14",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "warm-up",
+        "injury-prevention"
+      ],
+      "title": "Warm up for at least six minutes before you exercise",
+      "body": "The NHS recommends a warm-up of at least six minutes before exercise to help prevent injury and make the workout more effective. A warm-up gradually prepares your heart, lungs, muscles and joints for harder effort.\n\nThe NHS routine is easy to do anywhere: march on the spot for a few minutes, swinging your arms; do heel digs and knee lifts; roll your shoulders forwards and backwards while marching; then finish with gentle knee bends. Stop straight away if you feel pain or unwell, and check with a health professional first if you have a health condition, injury or have recently been pregnant.",
+      "apply_it": "Before your next workout, set a timer for six minutes and march on the spot, do knee lifts and roll your shoulders until it rings.",
+      "quiz": {
+        "question": "How long a warm-up does the NHS recommend before exercising?",
+        "options": [
+          "At least six minutes",
+          "Thirty seconds",
+          "No warm-up is needed",
+          "At least one hour"
+        ],
+        "answer": 0,
+        "explanation": "At least six minutes, longer if you feel you need it."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--15",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "strength",
+        "home-workout",
+        "older-adults"
+      ],
+      "title": "Build strength at home with a chair, a wall and two water bottles",
+      "body": "The NHS strength exercises need no gym. Using a sturdy chair without wheels or arms, you can do sit-to-stands (stand up from the edge of the chair using your legs, then sit down slowly), mini-squats and calf raises holding the chair back. A wall press-up, leaning in to a wall from arm's length, works the chest and arms. Filled water bottles make light weights for biceps curls.\n\nThe guidance is to do these at least twice a week, start gently with around five repetitions, move slowly and with control, and build up gradually. These exercises are useful if you have been inactive for a while, as they are designed to be gentle.",
+      "apply_it": "Try five slow sit-to-stands from a sturdy chair today, without using your hands if you can.",
+      "quiz": {
+        "question": "What can you use as light weights for the NHS biceps curl exercise?",
+        "options": [
+          "A bag of cement",
+          "A bicycle",
+          "Nothing; weights are required from a gym",
+          "Filled water bottles"
+        ],
+        "answer": 3,
+        "explanation": "The NHS suggests light weights such as filled water bottles."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--16",
+      "topic": "health",
+      "tags": [
+        "weight",
+        "calories",
+        "energy-balance"
+      ],
+      "title": "Your weight follows the balance of calories in and calories used",
+      "body": "Calories measure the energy in food and drink. NHS guidance gives about 2,500 calories a day for an average man and 2,000 for an average woman, though real needs vary with age, size and activity.\n\nThe principle is energy balance. If you take in about the same as you use, your weight stays steady. Take in more and the body stores the extra as fat; take in less and it draws on those stores. So both sides matter: what and how much you eat and drink, and how active you are. Checking the energy figure on labels and menus and planning meals ahead makes the intake side easier to see.",
+      "apply_it": "For one day, check the calories on the labels of the packaged foods and drinks you have, and notice which ones surprised you.",
+      "quiz": {
+        "question": "According to the energy balance principle, what leads to weight gain?",
+        "options": [
+          "Taking in more calories than you use",
+          "Eating breakfast",
+          "Drinking water",
+          "Eating any carbohydrate"
+        ],
+        "answer": 0,
+        "explanation": "When you consume more energy than you use, the body stores the extra as fat."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--17",
+      "topic": "health",
+      "tags": [
+        "weight",
+        "weight-loss",
+        "goals"
+      ],
+      "title": "Aim to lose about half a kilo to a kilo a week, not overnight",
+      "body": "The NHS tips for losing weight advise against crash diets and sudden weight loss. A realistic goal is about 0.5kg to 1kg (1 to 2 pounds) a week. Losing weight steadily is easier to keep up, and you do not have to change everything at once: the advice is to try one tip at a time.\n\nUseful starting points from the guidance include swapping sugary drinks for water, eating more fruit and vegetables, cutting back on sugar and fat gradually, getting more active, and telling someone you trust about your plan so they can encourage you on hard days.",
+      "apply_it": "Pick just one change from this card, such as swapping one sugary drink a day for water, and keep it going for two weeks before adding another.",
+      "quiz": {
+        "question": "What rate of weight loss does the NHS suggest as realistic?",
+        "options": [
+          "5kg a week",
+          "About 0.5kg to 1kg a week",
+          "Any rate, as fast as possible",
+          "None; weight should never change"
+        ],
+        "answer": 1,
+        "explanation": "A steady 0.5 to 1kg (1 to 2 pounds) a week; crash diets are discouraged."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--18",
+      "topic": "health",
+      "tags": [
+        "weight",
+        "snacking",
+        "meals",
+        "habits"
+      ],
+      "title": "Don't skip meals, and keep healthier snacks within reach",
+      "body": "Two everyday habits feature in the NHS weight loss tips. First, do not skip meals: going without can leave you so hungry that you snack on whatever is nearby. Second, change what is nearby. Rather than stocking crisps, biscuits and sweets at home, keep healthier options such as fruit, plain popcorn or rice cakes.\n\nThe guidance also suggests stopping eating when you feel full and saving leftovers for another day instead of finishing the plate out of habit. These small changes work with human nature rather than relying on willpower alone.",
+      "apply_it": "Next time you shop, replace one snack you tend to overeat with fruit or another healthier option.",
+      "quiz": {
+        "question": "Why does the NHS advise against skipping meals when trying to lose weight?",
+        "options": [
+          "It slows your hair growth",
+          "Skipping meals is illegal",
+          "It can leave you hungry and more likely to snack",
+          "It makes you sleep too much"
+        ],
+        "answer": 2,
+        "explanation": "Missing meals can leave you hungry and more likely to snack on less healthy foods."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--19",
+      "topic": "health",
+      "tags": [
+        "tiredness",
+        "fatigue",
+        "when-to-see-a-doctor"
+      ],
+      "title": "Tiredness that rest and sleep don't fix is worth a doctor's visit",
+      "body": "The NHS sleep and tiredness pages note that everyday tiredness is often down to stress, too little sleep, diet or other lifestyle habits, and many of these can be changed yourself.\n\nBut there is an important line. If you have fatigue, an overwhelming tiredness that is not relieved by rest and sleep, it may be a sign of an underlying medical condition. In that case the advice is to see a doctor rather than simply pushing through or relying on coffee and energy drinks.",
+      "apply_it": "If you have felt exhausted for weeks despite resting, write down when it started and how it affects you, and book an appointment with a doctor.",
+      "quiz": {
+        "question": "When does the NHS suggest seeing a doctor about tiredness?",
+        "options": [
+          "After one late night",
+          "Only if you also have a cold",
+          "Never; tiredness always passes",
+          "When overwhelming tiredness isn't relieved by rest and sleep"
+        ],
+        "answer": 3,
+        "explanation": "Fatigue that rest and sleep don't relieve may point to an underlying condition, so see a doctor."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--20",
+      "topic": "health",
+      "tags": [
+        "tiredness",
+        "energy",
+        "eating",
+        "exercise"
+      ],
+      "title": "Fight tiredness with small regular meals and a short walk",
+      "body": "Among the NHS self-help tips for tiredness, two are surprisingly simple. First, eat little and often: small, healthy meals and snacks every few hours keep your energy steadier than a few large meals.\n\nSecond, move. It sounds backwards when you feel drained, but the NHS says regular activity reduces tiredness over time, and even a single 15-minute walk gives a short energy boost. Start small and build up over weeks. The same page adds that mild dehydration can cause tiredness, so a glass of water, especially after exercise, may help.",
+      "apply_it": "Next time you hit an afternoon slump, drink a glass of water and take a 15-minute walk instead of reaching for sugar or caffeine.",
+      "quiz": {
+        "question": "What does the NHS say a single 15-minute walk can do for tiredness?",
+        "options": [
+          "Give you a short energy boost",
+          "Make tiredness much worse",
+          "Nothing at all",
+          "Replace a full night's sleep"
+        ],
+        "answer": 0,
+        "explanation": "Even one 15-minute walk gives a short energy boost, and regular activity reduces tiredness over time."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--21",
+      "topic": "health",
+      "tags": [
+        "tiredness",
+        "stress",
+        "relaxation",
+        "talking-therapy"
+      ],
+      "title": "Stress drains energy, so schedule something that helps you unwind",
+      "body": "The NHS tiredness guidance points out that stress uses up a lot of energy. Building relaxing activities into your day, such as exercise, yoga, tai chi, listening to music, reading or spending time with friends, can improve your energy as well as your mood. Whatever helps you unwind is worth protecting time for.\n\nWhen tiredness is tied to ongoing stress, anxiety or low mood, the guidance mentions that talking therapies such as counselling or cognitive behavioural therapy (CBT) may help, and a doctor can point you towards them.",
+      "apply_it": "Block 20 minutes in tomorrow's schedule for something that relaxes you, and treat it like an appointment.",
+      "quiz": {
+        "question": "According to the NHS, why can stress make you tired?",
+        "options": [
+          "Stress has no link to tiredness",
+          "Stress uses up a lot of energy",
+          "Stress makes you sleep too long",
+          "Stress lowers your weight"
+        ],
+        "answer": 1,
+        "explanation": "Stress uses a lot of energy, so relaxing activities can boost energy."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--22",
+      "topic": "health",
+      "tags": [
+        "alcohol",
+        "units",
+        "drinking"
+      ],
+      "title": "Know what a unit of alcohol is, and work it out from the label",
+      "body": "A unit is a way of measuring the pure alcohol in a drink: 10ml, roughly what an average adult body can process in an hour. The NHS explains how to calculate it: multiply the drink's strength (the ABV percentage on the label) by its volume in millilitres, then divide by 1,000.\n\nSo a 568ml pint at 5.2% is about 3 units, a standard 175ml glass of 12% wine is about 2.1, and a 750ml bottle of 13.5% wine is about 10. Stronger drinks and bigger glasses add up faster than people expect, which is why counting units is more accurate than counting drinks.",
+      "apply_it": "Check the ABV on a drink you often have and calculate its units: ABV x volume in ml / 1,000.",
+      "quiz": {
+        "question": "How do you calculate the units in a drink, according to the NHS?",
+        "options": [
+          "Count the number of glasses",
+          "Divide the price by the volume",
+          "ABV percentage x volume in ml / 1,000",
+          "Units are the same for every drink"
+        ],
+        "answer": 2,
+        "explanation": "Multiply the ABV by the volume in ml and divide by 1,000."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--23",
+      "topic": "health",
+      "tags": [
+        "alcohol",
+        "guidelines",
+        "risk"
+      ],
+      "title": "Keep to 14 units a week or less, spread out, with drink-free days",
+      "body": "The NHS low-risk guideline for both men and women is not to drink more than 14 units a week on a regular basis. That is about six pints of average-strength beer or ten small glasses of lower-strength wine. If you do drink that much, spread it over three or more days, and have several drink-free days each week.\n\nThe guidance is honest that low risk is not no risk: there is no completely safe drinking level, and the less you drink, the lower the risk. Over many years, drinking above 14 units a week raises the risk of some cancers, stroke, heart disease, liver disease and brain damage. During pregnancy, the safest choice is not to drink at all.",
+      "apply_it": "Add up the units you drank last week. If it was over 14, pick two days this week to be alcohol-free.",
+      "quiz": {
+        "question": "What is the NHS low-risk weekly guideline for alcohol?",
+        "options": [
+          "28 units for men, 14 for women",
+          "No more than 14 units a week, spread over 3 or more days",
+          "Any amount, as long as it's on weekends",
+          "50 units a week"
+        ],
+        "answer": 1,
+        "explanation": "Both men and women are advised not to regularly drink more than 14 units a week, spread over three or more days."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--24",
+      "topic": "health",
+      "tags": [
+        "alcohol",
+        "binge-drinking",
+        "safety"
+      ],
+      "title": "Binge drinking is about pace, so slow down and eat first",
+      "body": "The NHS defines binge drinking as drinking a lot in a short time: more than 8 units in one session for men, or more than 6 for women. Short-term risks include accidents and injuries, misjudging dangerous situations, and losing self-control, for example getting into fights or having unprotected sex.\n\nTo lower the risk on a night out, the guidance suggests limiting how much you drink, drinking more slowly, eating before and while you drink, and alternating alcoholic drinks with water or soft drinks.",
+      "apply_it": "Before your next social occasion, decide your limit and plan to have a glass of water between each alcoholic drink.",
+      "quiz": {
+        "question": "According to the NHS, which of these lowers the risks of a single drinking session?",
+        "options": [
+          "Drinking quickly to finish early",
+          "Drinking on an empty stomach",
+          "Mixing in more spirits",
+          "Alternating alcoholic drinks with water"
+        ],
+        "answer": 3,
+        "explanation": "Drinking slowly, with food, and alternating with water or soft drinks all lower the risk."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--25",
+      "topic": "health",
+      "tags": [
+        "alcohol",
+        "cutting-down",
+        "habits"
+      ],
+      "title": "Plan, budget and choose smaller drinks to cut down on alcohol",
+      "body": "The NHS tips for cutting down are practical. Decide on a limit before you start drinking, and take out only a set amount of money for alcohol. Tell friends and family you are cutting down so they can support you. Choose smaller sizes, such as a bottle of beer instead of a pint or a small wine glass, and pick drinks with a lower ABV.\n\nThe benefits arrive quickly: better mornings, more energy, less daytime tiredness, and easier weight control. Over time, cutting down lowers the risk of serious illness and can improve mood and sleep, since alcohol disrupts deep sleep.",
+      "apply_it": "Set your limit and your spending budget before your next drink, and tell one person about your plan.",
+      "quiz": {
+        "question": "Which is one of the NHS tips for cutting down on alcohol?",
+        "options": [
+          "Choose smaller sizes and lower-strength drinks",
+          "Only drink in rounds with friends",
+          "Drink faster to feel full sooner",
+          "Avoid telling anyone"
+        ],
+        "answer": 0,
+        "explanation": "Smaller sizes, lower-ABV drinks, a set budget and telling others are all NHS tips."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--26",
+      "topic": "health",
+      "tags": [
+        "alcohol",
+        "calories",
+        "weight"
+      ],
+      "title": "Alcohol carries hidden calories, almost as many as fat",
+      "body": "The NHS notes that alcohol has about 7 calories per gram, almost as much as fat, and mixers such as cola add more. A standard glass of wine can contain up to 158 calories and a pint of strong beer up to 222. Five pints of lager a week adds up to over 57,000 calories a year.\n\nTo keep the calories down, the guidance suggests drinking a glass of water after each alcoholic drink, not drinking on an empty stomach, choosing healthier snacks, sipping slowly, and avoiding rounds, which push you to drink at other people's pace.",
+      "apply_it": "Count the drinks you had last weekend and estimate the calories. Decide whether that is how you want to spend them.",
+      "quiz": {
+        "question": "How many calories per gram does alcohol contain, according to the NHS?",
+        "options": [
+          "None",
+          "About 1",
+          "About 7, almost as many as fat",
+          "About 50"
+        ],
+        "answer": 2,
+        "explanation": "Alcohol has about 7 calories per gram, almost as many as fat."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--27",
+      "topic": "health",
+      "tags": [
+        "smoking",
+        "mental-health",
+        "anxiety",
+        "quitting"
+      ],
+      "title": "Smoking doesn't relieve stress; quitting lowers anxiety",
+      "body": "Many smokers feel that cigarettes calm them down. The NHS explains why this is misleading. Between cigarettes, nicotine withdrawal causes irritability and anxiety, and the next cigarette relieves it, so smoking feels like stress relief. In fact smoking is likely to have caused that anxiety in the first place.\n\nPeople who stop smoking tend to feel less anxious, depressed and stressed, with better mood and quality of life. The NHS says evidence suggests the effect on anxiety and depression can be as large as taking antidepressants. Anyone on mental health medicines should talk to their doctor before quitting, as doses may need adjusting.",
+      "apply_it": "If you smoke, notice the next time a cigarette 'calms' you. Ask yourself whether you were really stressed, or just craving.",
+      "quiz": {
+        "question": "What does the NHS say about smoking and anxiety?",
+        "options": [
+          "Smoking is a reliable way to reduce anxiety",
+          "Quitting always makes anxiety worse",
+          "Smoking and mood are unrelated",
+          "Smoking increases anxiety, and quitting tends to reduce it"
+        ],
+        "answer": 3,
+        "explanation": "Smoking increases anxiety and tension; withdrawal relief only feels like calm. Quitting tends to improve mood."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--28",
+      "topic": "health",
+      "tags": [
+        "smoking",
+        "quitting",
+        "support"
+      ],
+      "title": "You're more likely to quit for good with expert support and treatment",
+      "body": "The NHS says the most effective way to stop smoking is with help from a stop smoking adviser, combined with stop smoking aids. Free NHS stop smoking services offer support for up to 12 weeks, including one-to-one or group sessions, help planning for situations where you are likely to smoke, and treatments such as nicotine patches, gum, lozenges and sprays, or prescription tablets.\n\nA failed attempt is not wasted: the NHS notes that each attempt teaches you something, and getting to know the support available improves your chances next time. Ask a doctor or pharmacist what stop smoking help is available where you live.",
+      "apply_it": "If you smoke, ask a pharmacist or doctor this week what quit-smoking support and aids are available locally.",
+      "quiz": {
+        "question": "What does the NHS say is the most effective way to stop smoking?",
+        "options": [
+          "Willpower alone, without telling anyone",
+          "Expert support combined with stop smoking aids",
+          "Switching to shisha",
+          "Smoking only on weekends"
+        ],
+        "answer": 1,
+        "explanation": "Help from a stop smoking adviser plus aids like nicotine replacement gives the best chance of quitting."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--29",
+      "topic": "health",
+      "tags": [
+        "smoking",
+        "passive-smoking",
+        "children",
+        "family"
+      ],
+      "title": "Opening a window doesn't protect others from your smoke",
+      "body": "Secondhand smoke is the smoke a smoker breathes out plus the smoke from the burning tip. The NHS says it contains more than 5,000 harmful chemicals, and much of it is invisible and has no smell. Regular exposure raises the risk of lung cancer and heart disease, and children living with smokers are more likely to get asthma, chest infections, ear infections and meningitis.\n\nCommon fixes do not work: smoke lingers for hours even with a window open, spreads to other rooms, and can reach harmful levels in a car with the windows down. Quitting is the best protection; until then, smoke only outside and never in the home or car.",
+      "apply_it": "If anyone smokes in your home or car, agree a rule today: smoking only happens outside, away from children.",
+      "quiz": {
+        "question": "Does opening a window stop secondhand smoke harming others?",
+        "options": [
+          "No, smoke can linger for hours even with a window open",
+          "Yes, it removes all the smoke instantly",
+          "Yes, if the window is in another room",
+          "Only in a car"
+        ],
+        "answer": 0,
+        "explanation": "Smoke can stay in the air for hours, even with windows open, and spreads through the home."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-live-well--30",
+      "topic": "health",
+      "tags": [
+        "smoking",
+        "smokeless-tobacco",
+        "shisha",
+        "cancer"
+      ],
+      "title": "Paan, bidi and shisha are not safer ways to use tobacco",
+      "body": "The NHS warns that smokeless tobacco such as paan, gutkha and chewing tobacco raises the risk of mouth and food-pipe cancers and can be as addictive as smoking. Even betel quid chewed without tobacco can raise cancer risk.\n\nBidi, thin cigarettes wrapped in leaf, and shisha (waterpipe or hookah) carry the same kinds of risk as cigarettes: cancer, heart disease and breathing problems. Passing smoke through water does not make shisha safe; its smoke still contains cancer-causing chemicals and carbon monoxide. Stop smoking services can help with these products too.",
+      "apply_it": "If you or someone close to you uses shisha, paan or bidi, look up local stop smoking support that covers them.",
+      "quiz": {
+        "question": "What does the NHS say about shisha smoke?",
+        "options": [
+          "The water filters out all harmful substances",
+          "It is safer than fresh air",
+          "It contains cancer-causing chemicals and carbon monoxide, like cigarette smoke",
+          "It only affects the lungs of older people"
+        ],
+        "answer": 2,
+        "explanation": "Shisha smoke contains significant levels of cancer-causing chemicals and toxic gases such as carbon monoxide."
+      },
+      "health": true
+    }
+  ]
+}

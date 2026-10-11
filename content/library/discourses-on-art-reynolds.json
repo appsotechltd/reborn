@@ -1,0 +1,801 @@
+{
+  "source": {
+    "id": "discourses-on-art-reynolds",
+    "title": "Seven Discourses on Art",
+    "authors": [
+      "Joshua Reynolds"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/2176",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Joshua Reynolds, Seven Discourses on Art, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1778,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "The first seven discourses Reynolds gave to Royal Academy students, 1769-1776 (collected 1778). Text from the 1901 Cassell edition, Gutenberg #2176, via the GITenberg mirror. Fetched passages start at the dedication, so the 1901 editor's introduction is not used."
+  },
+  "cards": [
+    {
+      "id": "discourses-on-art-reynolds--01",
+      "topic": "skills-mastery",
+      "tags": [
+        "rules",
+        "craft",
+        "learning",
+        "fundamentals"
+      ],
+      "title": "Learn the rules of your craft before you try to break them",
+      "body": "Reynolds told young art students to follow the proven rules of the great masters without arguing, at least at first. People who start by doubting everything, he warned, spend their lives and never get past the basics.\n\nHe wasn't against rule-breaking. Once students had become masters, they could decide when a rule no longer served them. But the order matters. Rules are like scaffolding around a building under construction: pull it down too early and nothing stands. Whether you write code, cook, design or play music, the fundamentals are what make your later freedom worth something.",
+      "quote": "But let us not destroy the scaffold until we have raised the building.",
+      "locator": "Discourse 1 ¶18",
+      "apply_it": "Name one rule in your craft you are tempted to ignore. Practise following it strictly for a week, then decide whether to break it.",
+      "quiz": {
+        "question": "What does Reynolds say about breaking the rules of art?",
+        "options": [
+          "It is a matter for later, once you have mastered the basics",
+          "Beginners should break rules to find their own voice",
+          "Rules should never be broken by anyone",
+          "Rules only matter for professionals, not students"
+        ],
+        "answer": 0,
+        "explanation": "He compares rules to scaffolding: useful while you build, and only optional once the building stands."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--02",
+      "topic": "skills-mastery",
+      "tags": [
+        "craft",
+        "skill",
+        "shortcuts",
+        "quality"
+      ],
+      "title": "Don't mistake a flashy, quick hand for real skill",
+      "body": "Reynolds watched talented students fall in love with speed and dazzle: a confident, showy way of handling chalk or brush that impresses at first glance. It is easy to learn, so they chase it, and it feels like mastery.\n\nHis warning was blunt. These students peak as boys. They have learned the ornament of the art, not its substance, and by the time they notice, the habit is too deep to undo. Today the same trap appears as slick slides, clever phrasing or flashy code tricks. Polish is welcome, but only on top of real understanding, not in place of it.",
+      "quote": "they have taken the shadow for the substance",
+      "locator": "Discourse 1 ¶21",
+      "apply_it": "Look at your last piece of work. Which parts are genuine skill and which are surface polish? Spend your next practice session on the first.",
+      "quiz": {
+        "question": "Why did Reynolds worry about students who gained a quick, showy facility?",
+        "options": [
+          "It made their work too slow",
+          "Teachers disliked fast workers",
+          "They stopped growing because they mistook ornament for mastery",
+          "Showy work never sold"
+        ],
+        "answer": 2,
+        "explanation": "Easy dazzle feels like mastery, so students stop working on the hard, real parts of the art."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--03",
+      "topic": "skills-mastery",
+      "tags": [
+        "hard-work",
+        "shortcuts",
+        "mastery",
+        "patience"
+      ],
+      "title": "There is no easy method to excellence, however gifted you are",
+      "body": "Reynolds noticed two forces pulling students away from real progress: the wish to look accomplished and plain impatience. Faced with the long, exact work needed to draw well, young people want to take the fortress in one bold charge instead of a slow siege.\n\nHis answer was to repeat, again and again, that effort is the only currency that buys lasting reputation. Talent may make you faster, but it does not exempt you. This still applies to anyone hunting for the course, hack or app that will make them skilled overnight.",
+      "quote": "They must, therefore, be told again and again that labour is the only price of solid fame, and that whatever their force of genius may be, there is no easy method of becoming a good painter.",
+      "locator": "Discourse 1 ¶23",
+      "apply_it": "Write down one skill you keep looking for a shortcut to. Commit to 20 minutes of plain, deliberate practice on it today.",
+      "quiz": {
+        "question": "According to Reynolds, what is the price of lasting fame in art?",
+        "options": [
+          "Natural genius",
+          "Labour",
+          "Good teachers",
+          "Royal patronage"
+        ],
+        "answer": 1,
+        "explanation": "He insists that whatever a student's gifts, steady labour is the only real path."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--04",
+      "topic": "creativity",
+      "tags": [
+        "process",
+        "drafts",
+        "revision",
+        "mastery"
+      ],
+      "title": "Effortless-looking masterpieces are built from many sketches and drafts",
+      "body": "When we see a great painting, it can look as if the artist simply had a gift and produced it in one go. Reynolds pointed out how the great masters actually worked: first many rough sketches, then a finished drawing of the whole, then careful studies of each part, from hands and feet to folds of cloth, then the painting, and finally retouching from life.\n\nThe ease we admire is the result of all that hidden labour. Knowing this is freeing. Your first draft is supposed to be rough. The magic appears later, through stages.",
+      "quote": "The pictures, thus wrought with such pain, now appear like the effect of enchantment, and as if some mighty genius had struck them off at a blow.",
+      "locator": "Discourse 1 ¶24",
+      "apply_it": "For your next project, plan at least three stages: rough sketch, full draft, and a detailed pass on the weakest parts.",
+      "quiz": {
+        "question": "How did the great masters produce their celebrated works, according to Reynolds?",
+        "options": [
+          "They painted quickly in one sitting",
+          "They copied older paintings exactly",
+          "They waited for inspiration before starting",
+          "They worked from sketches to drawings to studies of parts, then painted and retouched"
+        ],
+        "answer": 3,
+        "explanation": "Their works look effortless, but each passed through many stages of sketching, study and retouching."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--05",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "focus",
+        "effort",
+        "learning"
+      ],
+      "title": "Being busy is not the same as improving: aim at the real difficulties",
+      "body": "Reynolds praised hard work, but he added a sharp warning: a student is not progressing just because he is occupied. Effort has to go where the art is genuinely hard, not into the parts that are pleasant or merely decorative.\n\nHis students liked competing over who could draw fastest or paint the shiniest silk. He wanted them competing over the purest outline and the most graceful figure. Modern research on deliberate practice says much the same: hours only count when they target your weak points. Ten minutes on the hard thing beats an hour on what you already do well.",
+      "quote": "A student is not always advancing because he is employed; he must apply his strength to that part of the art where the real difficulties lie",
+      "locator": "Discourse 1 ¶25",
+      "apply_it": "List the hardest part of your craft. Spend the first 15 minutes of your next practice session only on that.",
+      "quiz": {
+        "question": "What did Reynolds want students to compete over instead of speed or shiny effects?",
+        "options": [
+          "Who could finish the most pictures",
+          "Who could copy a master most exactly",
+          "Who could draw the purest and most correct outline",
+          "Who could sell their work first"
+        ],
+        "answer": 2,
+        "explanation": "He wanted effort directed at the real difficulties of the art, such as correct outline and graceful figures."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--06",
+      "topic": "creativity",
+      "tags": [
+        "observation",
+        "accuracy",
+        "drawing",
+        "seeing"
+      ],
+      "title": "Draw what you actually see, not what you think it should look like",
+      "body": "Reynolds noticed a common fault in art schools: students looked at a live model, then drew their own vague idea of a beautiful figure instead. The drawing matched the pose but not the person.\n\nHe argued that copying exactly what is in front of you builds precision and deep knowledge of the subject, even if it looks slower at first. Later you can idealise, but from a base of real observation. The lesson goes beyond drawing. Whether you are describing a customer's problem or writing a scene, start with what is really there, not with what you assume.",
+      "quote": "make a drawing rather of what they think the figure ought to be than of what it appears.",
+      "locator": "Discourse 1 ¶26",
+      "apply_it": "Pick an everyday object and sketch or describe it for five minutes, recording only what you actually see, not what you know about it.",
+      "quiz": {
+        "question": "What error did Reynolds see in how students drew from live models?",
+        "options": [
+          "They drew their idea of the figure instead of what was in front of them",
+          "They drew too slowly",
+          "They refused to use models at all",
+          "They copied old paintings instead"
+        ],
+        "answer": 0,
+        "explanation": "They changed the form to fit vague ideas of beauty instead of recording what they saw."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--07",
+      "topic": "skills-mastery",
+      "tags": [
+        "stages",
+        "mastery",
+        "independence",
+        "learning"
+      ],
+      "title": "Mastery comes in three stages: basics, learning from many, then your own judgment",
+      "body": "Reynolds divided an artist's education into three periods. First come the rudiments, the grammar of the craft. Second, the student studies everything that has been done, learning from many masters rather than one, so no single teacher's habits narrow him. This is still a time of discipline.\n\nOnly in the third stage does the student trust his own judgment, test the rules against nature, and add what earlier masters missed. Then he can let his imagination run freely, because it has been trained. It's a useful map for any skill: know which stage you are in before deciding how much to trust your own instincts.",
+      "quote": "he will stand among his instructors, not as an imitator, but a rival.",
+      "locator": "Discourse 2 ¶8",
+      "apply_it": "Which of Reynolds's three stages are you in for your main skill? Write one thing you should do differently because of that.",
+      "quiz": {
+        "question": "In Reynolds's second stage of study, what should the student do?",
+        "options": [
+          "Follow one favourite master exclusively",
+          "Rely on his own judgment",
+          "Stop studying and start selling work",
+          "Learn from many masters while still accepting discipline"
+        ],
+        "answer": 3,
+        "explanation": "In the second period the student gathers the best from many masters but is not yet ready to trust his own judgment alone."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--08",
+      "topic": "creativity",
+      "tags": [
+        "invention",
+        "ideas",
+        "inputs",
+        "originality"
+      ],
+      "title": "Invention is new combinations of what you have already stored up",
+      "body": "Reynolds rejected the idea that creative work springs from nothing. Invention, he said, is mostly a fresh combination of images and ideas already gathered in memory. That means a large part of any creative life must be spent collecting material.\n\nThis is encouraging. If you feel you have no ideas, the fix is not to wait for a lightning bolt but to feed your mind: read, look, listen, travel, keep notes. The richer and more varied your store, the more original your combinations can be. An empty warehouse cannot ship anything.",
+      "quote": "Nothing can come of nothing. He who has laid up no materials can produce no combinations.",
+      "locator": "Discourse 2 ¶10",
+      "apply_it": "Start an idea file today. Add three things that caught your attention this week: a phrase, an image, a solution someone used.",
+      "quiz": {
+        "question": "What is invention, according to Reynolds?",
+        "options": [
+          "A gift that cannot be explained",
+          "A new combination of images already gathered in memory",
+          "Something only the young possess",
+          "Copying the latest fashion"
+        ],
+        "answer": 1,
+        "explanation": "He calls invention little more than a new combination of what has been previously stored in memory."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--09",
+      "topic": "creativity",
+      "tags": [
+        "originality",
+        "research",
+        "learning",
+        "influences"
+      ],
+      "title": "The more great work you know, the more original your own can be",
+      "body": "Reynolds observed that students who know little of what came before tend to overrate themselves. Every idea new to them feels like a discovery, when better travellers passed that way long ago. Their work ends up less original, not more, because it unknowingly repeats old ground.\n\nHis surprising conclusion: wide knowledge of excellent work increases your power of invention. You see where the edges really are, and you avoid reinventing the obvious. Before launching a product, writing a book or starting a business, look at what the best people have already done.",
+      "quote": "The more extensive therefore your acquaintance is with the works of those who have excelled the more extensive will be your powers of invention; and what may appear still more like a paradox, the more original will be your conceptions.",
+      "locator": "Discourse 2 ¶12",
+      "apply_it": "Before your next creative project, spend an hour studying three of the best existing examples in that field.",
+      "quiz": {
+        "question": "What happens to students who don't know the work of those before them, says Reynolds?",
+        "options": [
+          "They mistake old ground for new discoveries",
+          "They become the most original",
+          "They are free from bad influences",
+          "They learn faster"
+        ],
+        "answer": 0,
+        "explanation": "Not knowing the past, they mistake trifling excursions for discoveries and their work is rarely original."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--10",
+      "topic": "skills-mastery",
+      "tags": [
+        "copying",
+        "practice",
+        "mindless-work",
+        "learning"
+      ],
+      "title": "Mindless copying feels productive but trains nothing",
+      "body": "Reynolds saw students spend weeks making exact copies of famous paintings, line by line, and believe they were progressing fast. He disagreed. Much of any large picture is ordinary, so copying all of it teaches little. Worse, it needs no thinking, so the mind dozes while the hand works, and the student learns to imitate without choosing.\n\nThe same trap exists in typing out tutorials or highlighting whole textbooks. It looks like work. Real learning requires selecting what matters and asking why it works.",
+      "quote": "I consider general copying as a delusive kind of industry; the student satisfies himself with the appearance of doing something",
+      "locator": "Discourse 2 ¶16",
+      "apply_it": "Next time you study a good example, don't copy it whole. Pick the one part that makes it excellent and write down why it works.",
+      "quiz": {
+        "question": "Why did Reynolds call general copying a 'delusive' kind of industry?",
+        "options": [
+          "Because it is illegal",
+          "Because copies sell for less",
+          "Because it gives the feeling of work while the mind sleeps",
+          "Because masters forbade it"
+        ],
+        "answer": 2,
+        "explanation": "Copying everything requires no thought, so students feel busy while their powers of invention go unused."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--11",
+      "topic": "creativity",
+      "tags": [
+        "imitation",
+        "masters",
+        "principles",
+        "style"
+      ],
+      "title": "Copy the masters' thinking, not their brushstrokes",
+      "body": "Reynolds did allow some copying, but of a smarter kind. Rather than reproducing every touch of a great painting, students should make quick sketches of how the whole picture is organised and keep them as a guide.\n\nThe deeper aim was to absorb the masters' way of thinking. Ask how Michelangelo or Raphael would handle your subject, and imagine them judging your finished work. You follow the same road without stepping in their exact footprints. Ask how a writer, founder or coach you admire would approach your problem, not just how their results look.",
+      "quote": "Instead of copying the touches of those great masters, copy only their conceptions. Instead of treading in their footsteps, endeavour only to keep the same road.",
+      "locator": "Discourse 2 ¶22",
+      "apply_it": "Pick someone whose work you admire. Before your next task, write two lines on how they would approach it.",
+      "quiz": {
+        "question": "What did Reynolds suggest students copy from the great masters?",
+        "options": [
+          "Every brushstroke exactly",
+          "Their conceptions and way of thinking",
+          "Their signatures",
+          "Only their colours"
+        ],
+        "answer": 1,
+        "explanation": "He urged students to copy conceptions rather than touches, keeping to the masters' road without treading in their footsteps."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--12",
+      "topic": "skills-mastery",
+      "tags": [
+        "feedback",
+        "comparison",
+        "benchmarking",
+        "improvement"
+      ],
+      "title": "Make your own version of a great work, then put them side by side",
+      "body": "Reynolds proposed an exercise he thought more useful than a master's spoken corrections. Choose a picture you admire, paint a companion piece on a similar subject, then place yours next to it and compare carefully.\n\nThe gap becomes something you feel, not just something you are told. He admitted it is humbling, and only people with real ambition will put themselves through it. But seeing your own faults is the first step of progress, and lessons you discover yourself stick. Writers, designers and programmers can do the same with any benchmark they respect.",
+      "quote": "After you have finished your work, place it near the model, and compare them carefully together. You will then not only see, but feel your own deficiencies more sensibly than by precepts",
+      "locator": "Discourse 2 ¶23",
+      "apply_it": "Choose one excellent example in your field. Make your own attempt at something similar, then list three differences you can see.",
+      "quiz": {
+        "question": "What makes Reynolds's side-by-side exercise hard for students?",
+        "options": [
+          "It requires expensive materials",
+          "It takes many years",
+          "It is forbidden in academies",
+          "It humbles their vanity by exposing their faults"
+        ],
+        "answer": 3,
+        "explanation": "Comparing your work directly with a master's means facing your shortcomings, which needs humility and resolve."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--13",
+      "topic": "study-smarter",
+      "tags": [
+        "self-teaching",
+        "motivation",
+        "learning",
+        "curiosity"
+      ],
+      "title": "The lessons that stick are the ones you teach yourself",
+      "body": "Reynolds noted that instruction pushed on us by others is received lazily, and so achieves little. What we work out ourselves lands differently: we are fond of the teacher, and the lesson arrives exactly when the mind is open and hungry for it.\n\nThat's why he favoured exercises that make students discover their own faults rather than lectures listing them. If you want something to stick, for yourself or someone you are training, create the conditions for discovery. Ask questions, set a challenge, then let the answer be found.",
+      "quote": "Few have been taught to any purpose who have not been their own teachers.",
+      "locator": "Discourse 2 ¶25",
+      "apply_it": "Instead of looking up the answer to your next problem straight away, spend ten minutes trying to work it out yourself first.",
+      "quiz": {
+        "question": "Why did Reynolds think self-discovered lessons work better?",
+        "options": [
+          "They are always more accurate",
+          "They take less time",
+          "They arrive when the mind is eager and open to them",
+          "Teachers are usually wrong"
+        ],
+        "answer": 2,
+        "explanation": "Lessons we give ourselves come when we're most receptive, and we value them more."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--14",
+      "topic": "creativity",
+      "tags": [
+        "taste",
+        "models",
+        "learning",
+        "humility"
+      ],
+      "title": "If you don't admire the classics yet, imitate them and you will",
+      "body": "Reynolds advised students to pick their models from works with an established reputation rather than from their own passing fancy. Young taste is unreliable, and something that has been admired across generations has usually earned it.\n\nHe added a practical promise: if a celebrated work leaves you cold, try to imitate it. In the effort you will discover what you missed, and find the world was not wrong. This applies to books, music or business classics. Before you dismiss what has lasted, try to do what it does.",
+      "quote": "If you should not admire them at first, you will, by endeavouring to imitate them, find that the world has not been mistaken.",
+      "locator": "Discourse 2 ¶26",
+      "apply_it": "Choose a widely admired classic in your field that you don't 'get'. Try to imitate one part of it and note what you learn.",
+      "quiz": {
+        "question": "What did Reynolds advise when a celebrated work fails to impress you?",
+        "options": [
+          "Try to imitate it and see what you learn",
+          "Criticise it publicly",
+          "Ignore it and trust your own taste",
+          "Look for a newer model"
+        ],
+        "answer": 0,
+        "explanation": "He believed that trying to imitate an established masterpiece reveals the qualities you missed."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "practice",
+        "repetition",
+        "patience",
+        "skill"
+      ],
+      "title": "Skill grows like a clock's hand: too slowly to see, but always moving",
+      "body": "Reynolds was frank that steady work can feel pointless, because progress is invisible from day to day. He compared it to the hour hand of a clock, always moving towards its point but too slowly to catch with the eye.\n\nDrawing, he said, is like playing an instrument: it can only be built by a huge number of repetitions. He told students to keep a crayon always in hand and to practise drawing figures from memory after class until it became as easy as writing letters. Keep a record so you can see the hand has moved.",
+      "quote": "A facility of drawing, like that of playing upon a musical instrument, cannot be acquired but by an infinite number of acts.",
+      "locator": "Discourse 2 ¶29",
+      "apply_it": "Keep a dated sample of your work today. Put a reminder to compare it with new work in three months.",
+      "quiz": {
+        "question": "Why did Reynolds compare progress in art to a clock's hand?",
+        "options": [
+          "Because artists must work to a strict schedule",
+          "Because clocks were his favourite subject",
+          "Because time is short",
+          "Because progress is constant but too slow to notice day to day"
+        ],
+        "answer": 3,
+        "explanation": "Progress makes hourly approaches to its goal but moves too slowly to observe, which tests perseverance."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--16",
+      "topic": "creativity",
+      "tags": [
+        "talent",
+        "hard-work",
+        "genius",
+        "effort"
+      ],
+      "title": "Don't lean on talent: effort improves it or makes up for it",
+      "body": "Reynolds said there was one rule only the vain, the ignorant and the idle would argue with: never rely on your own genius. If you have great talent, steady work will improve it. If your gifts are modest, steady work will fill the gap.\n\nHe refused to debate what genius really is. Instead he observed that persistent, focused effort that isn't put off by difficulty produces results people usually credit to natural gifts. It's a hopeful message for anyone who feels they started behind, and a warning for anyone coasting on early praise.",
+      "quote": "If you have great talents, industry will improve them: if you have but moderate abilities, industry will supply their deficiency.",
+      "locator": "Discourse 2 ¶34",
+      "apply_it": "Think of one area where you've been relying on talent. Schedule three practice sessions this week as if you had none.",
+      "quiz": {
+        "question": "According to Reynolds, what should a student with only moderate ability do?",
+        "options": [
+          "Give up and choose another career",
+          "Rely on industry to make up the difference",
+          "Copy a more talented student",
+          "Wait for natural gifts to appear"
+        ],
+        "answer": 1,
+        "explanation": "Industry improves great talent and supplies what moderate talent lacks."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--17",
+      "topic": "creativity",
+      "tags": [
+        "observation",
+        "curiosity",
+        "everyday",
+        "inspiration"
+      ],
+      "title": "Treat everything you see as a lesson for your craft",
+      "body": "Reynolds admired the Greek general Philopoemen, who on every journey asked himself how he would fight an enemy on that ground. His mind practised even when he wasn't at war.\n\nReynolds pictured the ideal young painter the same way: at home, in the street or in the fields, always studying faces, light and form with his profession in mind. Even bad pictures taught him something, as did shapes glimpsed in fire or stains on a wall. You can't always be at your desk or easel, but you can always be gathering material.",
+      "quote": "Every object that presents itself is to him a lesson.",
+      "locator": "Discourse 2 ¶37",
+      "apply_it": "On your next walk or commute, look for three things you could use in your work. Note them down when you arrive.",
+      "quiz": {
+        "question": "What did Reynolds admire about the general Philopoemen?",
+        "options": [
+          "His mind was always rehearsing his profession, even in peacetime",
+          "His wealth",
+          "His paintings",
+          "His refusal to plan"
+        ],
+        "answer": 0,
+        "explanation": "Philopoemen studied every landscape as a possible battlefield, and Reynolds wanted painters to observe the world with the same constant attention."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--18",
+      "topic": "creativity",
+      "tags": [
+        "inspiration",
+        "preparation",
+        "practice",
+        "myths"
+      ],
+      "title": "Prepared minds work with ease; those waiting for inspiration struggle",
+      "body": "Reynolds had little patience for the artist who claims to be waiting for genius to strike. In his experience, such people are simply stuck, and when something finally comes out, it comes with pain and is often monstrous.\n\nThe artist who has stocked his mind with ideas and trained his hand through practice works with ease and readiness. Inspiration, in this view, is what preparation feels like from the inside. If you rely on mood, you'll rarely start. If you rely on routine and a full notebook, starting becomes ordinary.",
+      "quote": "The artist who has his mind thus filled with ideas, and his hand made expert by practice, works with ease and readiness",
+      "locator": "Discourse 2 ¶38",
+      "apply_it": "Set a fixed time for creative work tomorrow and show up whether you feel inspired or not.",
+      "quiz": {
+        "question": "According to Reynolds, what lets an artist work with ease?",
+        "options": [
+          "Waiting for the right mood",
+          "Working only at night",
+          "A mind full of ideas and a hand trained by practice",
+          "Having wealthy patrons"
+        ],
+        "answer": 2,
+        "explanation": "He contrasts the prepared artist who works readily with the one waiting for inspiration who struggles."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--19",
+      "topic": "creativity",
+      "tags": [
+        "editing",
+        "focus",
+        "simplicity",
+        "cutting"
+      ],
+      "title": "Cut every detail that doesn't serve the main idea, however good it is",
+      "body": "Reynolds believed the most common error in art was getting lost in small particulars: elaborate fabrics, furniture, minor figures. They can add an air of truth, but they easily drown the main effect.\n\nHis rule was strict. The big idea is what makes a work excellent, and smaller things, however well done, must be sacrificed to it without mercy. A great artist doesn't ask whether a detail can be allowed in; he asks whether the work would be weaker without it. Writers, presenters and designers face the same choice every day.",
+      "quote": "All smaller things, however perfect in their way, are to be sacrificed without mercy to the greater.",
+      "locator": "Discourse 4 ¶7",
+      "apply_it": "Review a draft you're working on. For each section ask: would the work be weaker without it? Delete one thing that fails the test.",
+      "quiz": {
+        "question": "What test did Reynolds suggest for including a detail in a picture?",
+        "options": [
+          "Whether it can be included without criticism",
+          "Whether its absence would make the work defective",
+          "Whether it took a long time to paint",
+          "Whether the patron likes it"
+        ],
+        "answer": 1,
+        "explanation": "He says details must not merely be allowed; they must be shown to be necessary to the whole."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--20",
+      "topic": "creativity",
+      "tags": [
+        "craft",
+        "effort",
+        "audience",
+        "subtlety"
+      ],
+      "title": "Hide your effort: let the audience feel the result, not see the work",
+      "body": "Reynolds noted a difference between great and lesser artists. The lesser artist wants every bit of his effort to be noticed, so his pictures look laboured and showy. The great artist takes just as much trouble to hide the means, so the viewer simply feels the effect.\n\nThe result of showing off is people who leave impressed but unmoved. The same holds for a speech crammed with jargon or a report padded to look thorough. The goal is the reader's experience, not proof of how hard you worked.",
+      "quote": "The ignorant often part from such pictures with wonder in their mouths, and indifference in their hearts.",
+      "locator": "Discourse 4 ¶10",
+      "apply_it": "Find one place in your current work where you're showing off effort. Simplify it so the point lands without the display.",
+      "quiz": {
+        "question": "How does a great artist treat the marks of his labour, according to Reynolds?",
+        "options": [
+          "He displays them proudly",
+          "He leaves them unfinished",
+          "He signs each one",
+          "He takes pains to conceal them"
+        ],
+        "answer": 3,
+        "explanation": "The lesser artist shows off his industry; the greater conceals it so the viewer only feels the result."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--21",
+      "topic": "communication",
+      "tags": [
+        "communication",
+        "style",
+        "purpose",
+        "clarity"
+      ],
+      "title": "Skill with words or colour is a tool; the real job is to move people",
+      "body": "Reynolds was critical of painters who used dazzling technique mainly to show they could. People called their mechanical skill 'the language of painters', but he answered that it's a poor orator whose speech only proves he can talk.\n\nHis principle applies far beyond painting. Vocabulary, design flair and technical fluency exist to serve a purpose: convincing, explaining, moving someone. When the tool becomes the point, the audience notices the cleverness and misses the message. Ask what your work is meant to do to the person receiving it.",
+      "quote": "Words should be employed as the means, not as the end: language is the instrument, conviction is the work.",
+      "locator": "Discourse 4 ¶22",
+      "apply_it": "Before your next email or presentation, write one sentence stating what you want the reader to believe or do. Cut anything that doesn't serve it.",
+      "quiz": {
+        "question": "What does Reynolds say is 'the work', as opposed to the instrument?",
+        "options": [
+          "Language",
+          "Colour",
+          "Conviction",
+          "Technique"
+        ],
+        "answer": 2,
+        "explanation": "He says language is only the instrument; persuading or moving the audience is the actual work."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--22",
+      "topic": "creativity",
+      "tags": [
+        "genius",
+        "mindset",
+        "confidence",
+        "effort"
+      ],
+      "title": "Believing in 'natural genius' breeds either arrogance or despair",
+      "body": "Reynolds said the purpose of nearly all his discourses was to fight one popular belief: that great work comes from inborn genius and that genius is enough. He thought the belief did damage whichever way it landed.\n\nIn a confident person it produces vanity: why practise if you are gifted? In a modest person it produces hopeless sluggishness: why try if you weren't born with it? Both stop progress. His alternative was to treat skill as something built through study and practice, which leaves room for both humility and hope.",
+      "quote": "This opinion, according to the temper of mind it meets with, almost always produces, either a vain confidence, or a sluggish despair, both equally fatal to all proficiency.",
+      "locator": "Discourse 6 ¶94",
+      "apply_it": "Notice the next time you think 'I'm just not a natural at this'. Replace it with one concrete practice step.",
+      "quiz": {
+        "question": "What two effects did Reynolds say the belief in native genius produces?",
+        "options": [
+          "Vain confidence or sluggish despair",
+          "Wealth and fame",
+          "Patience and humility",
+          "Originality and speed"
+        ],
+        "answer": 0,
+        "explanation": "Depending on temperament, it makes people either complacent or hopeless, and both stop progress."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--23",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "strengths",
+        "specialisation",
+        "choices"
+      ],
+      "title": "Find out what you can and can't do, then choose your own path",
+      "body": "Reynolds encouraged students to aim high and even to try uniting many excellences. But he warned that some qualities pull against each other, and spreading yourself across every possible kind of excellence wastes your powers.\n\nHis advice was to test yourself, honestly learn what you can and cannot do, and then pick a particular area where all your strengths can work together, so that you become the first in your own way. Only a rare genius, he joked, can master every style, and such a person should be teaching, not listening.",
+      "quote": "instead of dissipating your natural faculties over the immense field of possible excellence, you may choose some particular walk in which you may exercise all your powers",
+      "locator": "Discourse 5 ¶14",
+      "apply_it": "Write down two things you do better than most people around you. Is there a path that combines both?",
+      "quiz": {
+        "question": "What did Reynolds advise instead of trying to excel at everything?",
+        "options": [
+          "Copy the most famous painter",
+          "Change style every year",
+          "Avoid ambition altogether",
+          "Choose a particular path where all your powers can work together"
+        ],
+        "answer": 3,
+        "explanation": "He wanted students to test their abilities and choose one walk in which to be first in their own way."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--24",
+      "topic": "personal-development",
+      "tags": [
+        "audience",
+        "popularity",
+        "integrity",
+        "standards"
+      ],
+      "title": "Be as choosy about whom you try to please as about whom you copy",
+      "body": "Reynolds believed that love of fame drives excellent work. But an indiscriminate hunger for applause, he warned, drags your standards down. The easiest work to like is often the lowest, because it asks nothing of anyone.\n\nHe worried that public exhibitions, good as they were for competition, tempted painters to please every passing crowd. His advice is relevant in an age of likes and views: decide whose judgement you respect, and aim your work at them, not at the biggest crowd.",
+      "quote": "Be as select in those whom you endeavour to please, as in those whom you endeavour to imitate.",
+      "locator": "Discourse 5 ¶48",
+      "apply_it": "Name three people whose opinion of your work you truly respect. Next time you finish something, ask yourself what they would think.",
+      "quiz": {
+        "question": "What danger did Reynolds see in an excessive thirst for fame?",
+        "options": [
+          "It makes artists lazy",
+          "It leads to vulgar views and a corrupted style",
+          "It makes paintings too expensive",
+          "It stops artists exhibiting"
+        ],
+        "answer": 1,
+        "explanation": "An undistinguishing desire to please everyone pulls the artist towards the lowest, most popular style."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--25",
+      "topic": "creativity",
+      "tags": [
+        "invention",
+        "imitation",
+        "reading",
+        "thinking"
+      ],
+      "title": "We learn to invent by studying others' inventions",
+      "body": "In his discourse on imitation, Reynolds took on the romantic idea that genius owes nothing to anyone. He argued the reverse: imitation is the very source of variety and originality.\n\nInvention is a mark of genius, he agreed. But experience shows we learn to invent by becoming familiar with what others have invented, just as we learn to think by reading other people's thoughts. A songwriter studies songs, an entrepreneur studies businesses, a writer reads. Originality is not the absence of influence; it is what grows out of many influences digested well.",
+      "quote": "it is by being conversant with the inventions of others that we learn to invent, as by reading the thoughts of others we learn to think.",
+      "locator": "Discourse 6 ¶28",
+      "apply_it": "Pick one inventive work in your field. Spend 20 minutes taking it apart: what problem did it solve, and how?",
+      "quiz": {
+        "question": "How does Reynolds say we learn to invent?",
+        "options": [
+          "By being conversant with the inventions of others",
+          "By avoiding other people's work",
+          "By waiting for inspiration",
+          "By formal rules alone"
+        ],
+        "answer": 0,
+        "explanation": "He compares it to learning to think by reading the thoughts of others."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--26",
+      "topic": "creativity",
+      "tags": [
+        "inputs",
+        "variety",
+        "creative-block",
+        "learning"
+      ],
+      "title": "Without fresh input, you end up copying yourself",
+      "body": "Reynolds called the mind a barren soil that soon wears out unless it is continually enriched with material from outside. Even the greatest natural talent cannot live on its own stock forever.\n\nThe artist who refuses to draw on anyone else's ideas doesn't become original; he becomes repetitive, forced to imitate himself until his work is predictable. If your recent work feels stale or samey, the fix may not be more effort but new input: other fields, other artists, other cultures, other ways of seeing.",
+      "quote": "he will be obliged to imitate himself, and to repeat what he has before often repeated.",
+      "locator": "Discourse 6 ¶32",
+      "apply_it": "This week, spend an hour with work from a field completely unlike yours and note one idea you could borrow.",
+      "quiz": {
+        "question": "What happens to the artist who never draws on other minds, according to Reynolds?",
+        "options": [
+          "He becomes truly original",
+          "He becomes famous faster",
+          "He ends up imitating himself and repeating old work",
+          "He avoids all mistakes"
+        ],
+        "answer": 2,
+        "explanation": "Living only on his own stock, he runs dry and repeats what he has already done."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--27",
+      "topic": "creativity",
+      "tags": [
+        "analysis",
+        "principles",
+        "study",
+        "learning"
+      ],
+      "title": "Don't just admire good work: work out why it works",
+      "body": "Reynolds pointed out that the principles behind a fine work don't sit on the surface where casual viewers can see them. Art at its best is not showy; its methods are hidden.\n\nSo the student's job is not just to enjoy, but to investigate: how the light is arranged, how one colour sets off another, which parts are lost in shadow and which stand out, and why. Learned this way, the lesson becomes truly your own and is never forgotten. Applied today, it means reverse-engineering the article, product or performance you admire.",
+      "quote": "We must not content ourselves with merely admiring and relishing; we must enter into the principles on which the work is wrought",
+      "locator": "Discourse 6 ¶46",
+      "apply_it": "Choose something you admire and list three decisions its creator made that you hadn't noticed at first.",
+      "quiz": {
+        "question": "What does Reynolds say the student must do beyond admiring a great work?",
+        "options": [
+          "Buy it",
+          "Enter into the principles on which it was made",
+          "Copy it exactly",
+          "Criticise its faults publicly"
+        ],
+        "answer": 1,
+        "explanation": "He says principles do not float on the surface; the student must dig for the hidden causes of beauty."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--28",
+      "topic": "creativity",
+      "tags": [
+        "imitation",
+        "flaws",
+        "role-models",
+        "judgement"
+      ],
+      "title": "Don't copy your heroes' flaws: they earned praise despite them",
+      "body": "Reynolds noticed that every great artist has a 'manner', peculiar habits that make them recognisable, and that these quirks are usually defects. Admirers easily mistake them for strengths and copy them.\n\nA careless student can always find a famous name to excuse his own faults: Poussin was dry, Rubens crude, Correggio's proportions off. But those masters didn't become great because of these faults. They deserve forgiveness for them, not imitation. When you study a successful person, separate what made them succeed from what they got away with.",
+      "quote": "they have a right to our pardon, but not to our admiration.",
+      "locator": "Discourse 6 ¶58",
+      "apply_it": "Think of someone you model yourself on. Which of their habits are strengths, and which are quirks you should stop copying?",
+      "quiz": {
+        "question": "How should students treat the defects found in great masters, according to Reynolds?",
+        "options": [
+          "Copy them as part of the style",
+          "Ignore the master entirely",
+          "Point them out publicly",
+          "Pardon them, but not admire or imitate them"
+        ],
+        "answer": 3,
+        "explanation": "The masters' reputations were not won through their defects, so these deserve pardon but not imitation."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--29",
+      "topic": "creativity",
+      "tags": [
+        "influences",
+        "imitation",
+        "originality",
+        "learning"
+      ],
+      "title": "Learn from many models, as Raphael did, and you will become original",
+      "body": "Reynolds used Raphael as proof that imitation and originality go together. Raphael began by copying his teacher Perugino so closely their work was hard to tell apart. Then he studied Michelangelo's drawing, Leonardo's colour, Fra Bartolomeo and the ancient remains, even paying people to draw works he could not visit.\n\nBecause he took so many models, he became a model for everyone after him. Reynolds warned that copying a single master keeps you behind him. Drawing from many lets you combine their strengths into something new.",
+      "quote": "always imitating, and always original.",
+      "locator": "Discourse 6 ¶62",
+      "apply_it": "List the people you learn from in your field. If there is only one or two, add three more from different styles this month.",
+      "quiz": {
+        "question": "What made Raphael a model for later painters, according to Reynolds?",
+        "options": [
+          "He refused to study anyone else",
+          "He invented oil painting",
+          "He imitated many different masters and combined what he learned",
+          "He worked only from nature"
+        ],
+        "answer": 2,
+        "explanation": "By taking many models, Raphael became original and a model himself."
+      }
+    },
+    {
+      "id": "discourses-on-art-reynolds--30",
+      "topic": "creativity",
+      "tags": [
+        "borrowing",
+        "improvement",
+        "originality",
+        "ethics"
+      ],
+      "title": "When you borrow an idea, try to improve on it",
+      "body": "Reynolds was relaxed about borrowing. Ancient works were common property, and taking an idea from a modern artist was no theft if it was woven so well into your own work that no seam showed. Poets did it all the time.\n\nBut he set a higher bar than simply hiding the join: you should compete with your source and try to make the borrowed idea better. That, he said, turns borrowing into constant invention rather than plagiarism. Credit your sources where your field expects it, and use what you take as a starting point, not a finish line.",
+      "quote": "he should enter into a competition with his original, and endeavour to improve what he is appropriating to his own work.",
+      "locator": "Discourse 6 ¶74",
+      "apply_it": "Think of an idea you've borrowed recently. Write down one way you could take it further than the original did.",
+      "quiz": {
+        "question": "What turns borrowing into 'continual invention', according to Reynolds?",
+        "options": [
+          "Competing with the original and trying to improve it",
+          "Using only ancient sources",
+          "Hiding where the idea came from",
+          "Changing the colours"
+        ],
+        "answer": 0,
+        "explanation": "Trying to surpass the borrowed idea makes imitation an exercise of the mind rather than plagiarism."
+      }
+    }
+  ]
+}

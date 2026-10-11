@@ -441,3 +441,227 @@ mirror = "The-Bible-King-James-Version-Book-20-Proverbs_8020/master/8020.txt"
 verses = "Proverbs"
 licence = "public-domain"
 # KJV: public domain in the US and most countries; in the UK it remains under Crown letters patent.
+
+[[source]]
+id = "montessori-own-handbook"
+adapter = "gutenberg"
+gutenberg_id = 29635
+mirror = "Dr.-Montessori-s-Own-Handbook_29635/master/29635-8.txt"
+start = "DR. MONTESSORI'S OWN HANDBOOK"
+end = "THE END"
+licence = "public-domain"
+
+[[source]]
+id = "discourses-on-art-reynolds"
+adapter = "gutenberg"
+gutenberg_id = 2176
+mirror = "Seven-Discourses-on-Art_2176/master/2176.txt"
+start = "TO THE KING"
+section_marker = "A DISCOURSE"
+section_label = "Discourse"
+licence = "public-domain"
+
+[[source]]
+id = "art-of-writing-stevenson"
+adapter = "gutenberg"
+gutenberg_id = 492
+mirror = "Essays-in-the-Art-of-Writing_492/master/492-0.txt"
+start = "ON SOME TECHNICAL ELEMENTS OF STYLE IN LITERATURE"
+licence = "public-domain"
+
+# ---------------------------------------------------------------- Leadership
+
+[[source]]
+id = "plutarchs-lives"
+adapter = "gutenberg"
+gutenberg_id = 674
+mirror = "Plutarch-Lives-of-the-noble-Grecians-and-Romans_674/master/674.txt"
+start = "THESEUS\n\nAs geographers"
+end = "End of The Project Gutenberg Etext of Plutarch's Lives"
+licence = "public-domain"
+# Dryden translation revised by A. H. Clough (d. 1861); 1996 etext with the old "small print" licence.
+
+[[source]]
+id = "cyropaedia-xenophon"
+adapter = "gutenberg"
+gutenberg_id = 2085
+mirror = "Cyropaedia--The-Education-of-Cyrus_2085/master/2085.txt"
+start = "BOOK I\n\n[C.1]"
+licence = "public-domain"
+# Translated by Henry Graham Dakyns (d. 1911).
+
+[[source]]
+id = "ecclesiastes-kjv"
+adapter = "gutenberg"
+gutenberg_id = 8021
+mirror = "The-Bible-King-James-Version-Book-21-Ecclesiastes_8021/master/8021.txt"
+verses = "Ecclesiastes"
+licence = "public-domain"
+# KJV: public domain in the US and most countries; in the UK it remains under Crown letters patent.
+
+[[source]]
+id = "tao-te-ching-legge"
+adapter = "standardebooks"
+repo = "laozi_tao-te-ching_james-legge"
+licence = "public-domain"
+# Translated by James Legge (1815-1897). Gutenberg #216 is the same translation, but its plain text gives no usable chapter locators.
+
+[[source]]
+id = "gospel-of-buddha-carus"
+adapter = "gutenberg"
+gutenberg_id = 35895
+mirror = "The-Gospel-of-Buddha-Compiled-from-Ancient-Records_35895/master/35895-0.txt"
+start = "I.\n\nREJOICE!"
+end = "TABLE OF REFERENCE."
+licence = "public-domain"
+# Compiled by Paul Carus (1852-1919), 1894. Substitute for the Dhammapada (Gutenberg #2017 has no GITenberg mirror).
+
+[[source]]
+id = "nhs-live-well"
+adapter = "web"
+url = "https://www.nhs.uk/live-well/"
+licence = "ogl-3.0"
+
+[[source]]
+id = "how-we-think-dewey"
+adapter = "gutenberg"
+gutenberg_id = 37423
+mirror = "How-We-Think_37423/master/37423-8.txt"
+start = "PART ONE: THE PROBLEM OF TRAINING THOUGHT"
+end = "INDEX"
+licence = "public-domain"
+
+[[source]]
+id = "cdc-healthy-living"
+adapter = "web"
+url = "https://www.cdc.gov/chronic-disease/prevention/index.html"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "nih-news-in-health"
+adapter = "web"
+url = "https://newsinhealth.nih.gov/"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "nhs-mental-health-self-help"
+adapter = "web"
+url = "https://www.nhs.uk/mental-health/self-help/"
+licence = "ogl-3.0"
+
+[[source]]
+id = "mental-efficiency-bennett"
+adapter = "gutenberg"
+gutenberg_id = 23347
+mirror = "Mental-Efficiency-and-Other-Hints-to-Men-and-Women_23347/master/23347-8.txt"
+start = "I\n\nMENTAL EFFICIENCY\n\n\nTHE APPEAL"
+end = "THE END"
+licence = "public-domain"
+# Arnold Bennett (1867-1931), 1911. Gutenberg #23347 (not #2846).
+
+[[source]]
+id = "grit-duckworth"
+adapter = "summary"
+url = "https://www.simonandschuster.com/books/9781501111105"
+licence = "original-summary"
+
+[[source]]
+id = "talks-to-teachers-james"
+adapter = "gutenberg"
+gutenberg_id = 16287
+mirror = "Talks-To-Teachers-On-Psychology--And-To-Students-On-Some-Of-Life-s-Ideals_16287/master/16287-8.txt"
+start = "*       *       *       *       *"
+end = "THE END."
+licence = "public-domain"
+
+[[source]]
+id = "cdc-positive-parenting"
+adapter = "web"
+url = "https://www.cdc.gov/child-development/positive-parenting-tips/index.html"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "seven-principles-marriage-gottman"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/248395/the-seven-principles-for-making-marriage-work-by-john-gottman-phd-and-nan-silver/"
+licence = "original-summary"
+
+[[source]]
+id = "attached-levine-heller"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/303069/attached-by-amir-levine-md-and-rachel-sf-heller-ma/"
+licence = "original-summary"
+
+[[source]]
+id = "womenshealth-relationships-and-safety"
+adapter = "web"
+url = "https://www.womenshealth.gov/relationships-and-safety"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "hhs-importance-of-fathers"
+adapter = "summary"
+url = "https://www.childwelfare.gov/pubPDFs/fatherhood.pdf"
+licence = "original-summary"
+# HHS Children's Bureau manual (2006). Replaces requested fatherhood.gov: no reuse terms found and pages unreadable from here.
+
+[[source]]
+id = "how-to-talk-so-kids-will-listen"
+adapter = "summary"
+url = "https://www.simonandschuster.com/books/How-to-Talk-So-Kids-Will-Listen-Listen-So-Kids-Will-Talk/Adele-Faber/The-How-To-Talk-Series/9781451663884"
+licence = "original-summary"
+
+[[source]]
+id = "make-it-stick"
+adapter = "summary"
+url = "https://www.hup.harvard.edu/books/9780674729018"
+licence = "original-summary"
+
+[[source]]
+id = "a-mind-for-numbers-oakley"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/314056/a-mind-for-numbers-by-barbara-oakley-phd/"
+licence = "original-summary"
+
+[[source]]
+id = "getting-past-your-breakup-elliott"
+adapter = "summary"
+url = "https://www.hachettebookgroup.com/titles/susan-j-elliott/getting-past-your-breakup/9780738213286/"
+licence = "original-summary"
+
+[[source]]
+id = "rebuilding-fisher-alberti"
+adapter = "summary"
+url = "https://www.newharbinger.com/9781626258242/rebuilding/"
+licence = "original-summary"
+# Chosen over GOV.UK / mygov.scot separation pages (OGL v3): those cover legal steps and helplines only.
+
+[[source]]
+id = "peak-ericsson"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Peak:_Secrets_from_the_New_Science_of_Expertise"
+licence = "original-summary"
+
+[[source]]
+id = "ultralearning-young"
+adapter = "summary"
+url = "https://www.scotthyoung.com/blog/ultralearning/"
+licence = "original-summary"
+
+[[source]]
+id = "nhs-grief-bereavement"
+adapter = "web"
+url = "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/"
+licence = "ogl-3.0"
+
+[[source]]
+id = "nci-grief-bereavement-loss"
+adapter = "web"
+url = "https://www.cancer.gov/about-cancer/advanced-cancer/caregivers/planning/bereavement-pdq"
+licence = "us-gov-public-domain"
+
+[[source]]
+id = "its-ok-that-youre-not-ok-devine"
+adapter = "summary"
+url = "https://refugeingrief.com/refuge/books/"
+licence = "original-summary"

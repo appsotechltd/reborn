@@ -1,0 +1,741 @@
+{
+  "source": {
+    "id": "nih-news-in-health",
+    "title": "NIH News in Health",
+    "authors": [
+      "National Institutes of Health"
+    ],
+    "kind": "article",
+    "url": "https://newsinhealth.nih.gov/",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://newsinhealth.nih.gov/about-us",
+    "attribution": "Source: NIH News in Health, National Institutes of Health (public domain). Available free at newsinhealth.nih.gov. Use does not imply endorsement by NIH, HHS or the U.S. Government.",
+    "publisher": "National Institutes of Health",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "NIH News in Health is the monthly consumer health newsletter of the U.S. National Institutes of Health, a federal government work. Its About Us page says: 'Reprint our articles and illustrations in your own publication. Our material is not copyrighted.' and asks reusers to 'acknowledge NIH News in Health as the source and send us a copy.' It also notes most photographs are copyrighted and can't be used without permission; we use no images. Our cards are original summaries, not reprints, so we credit NIH News in Health, carry a no-endorsement statement and link back. US helpline numbers in the articles were generalised to 'a local helpline'. Articles used: https://newsinhealth.nih.gov/2025/03/build-social-bonds-protect-health; https://newsinhealth.nih.gov/2024/05/get-active-together; https://newsinhealth.nih.gov/2024/02/dejunking-your-diet; https://newsinhealth.nih.gov/2024/10/stopping-middle-age-spread; https://newsinhealth.nih.gov/2022/09/healthy-social-media-habits; https://newsinhealth.nih.gov/2022/02/delving-into-devices; https://newsinhealth.nih.gov/2021/06/mindfulness-your-health; https://newsinhealth.nih.gov/2019/03/practicing-gratitude; https://newsinhealth.nih.gov/2020/10/manage-stress-build-resilience; https://newsinhealth.nih.gov/2021/01/feeling-stressed; https://newsinhealth.nih.gov/2019/10/well-aged-mind; https://newsinhealth.nih.gov/2019/09/preventing-falls; https://newsinhealth.nih.gov/2017/12/coping-caregiving; https://newsinhealth.nih.gov/2021/07/step-it-up; https://newsinhealth.nih.gov/2020/03/maintain-your-muscle; https://newsinhealth.nih.gov/2021/04/good-sleep-good-health; https://newsinhealth.nih.gov/2024/09/tired-achy-eyes; https://newsinhealth.nih.gov/2024/11/protect-your-hearing; https://newsinhealth.nih.gov/2022/10/adult-hearing-health-care; https://newsinhealth.nih.gov/2022/05/noise-complaints."
+  },
+  "cards": [
+    {
+      "id": "nih-news-in-health--01",
+      "topic": "relationships",
+      "tags": [
+        "loneliness",
+        "social-connection",
+        "isolation"
+      ],
+      "title": "Being alone and feeling lonely are different, and both matter",
+      "body": "NIH News in Health separates two ideas. Social isolation means having few contacts. Loneliness is how you feel about your connections. Some people live quietly and are content; others feel lonely in a crowded house because their relationships feel empty.\n\nThe article says both are linked with poorer health, including heart disease, depression, anxiety and dementia, even for people who are comfortable on their own. Risk rises with living alone, money worries, trouble moving around, poor hearing or eyesight, and big changes like retirement or losing a loved one. About 1 in 3 US adults say they feel lonely, so it is common, not a personal failing.",
+      "apply_it": "Ask yourself two separate questions: how many people did I talk to this week, and how connected do I actually feel?",
+      "quiz": {
+        "question": "According to the article, what is the difference between isolation and loneliness?",
+        "options": [
+          "Isolation is having few contacts; loneliness is how you feel about your connections",
+          "They are two words for exactly the same thing",
+          "Loneliness only affects older people",
+          "Isolation is harmless if you are content"
+        ],
+        "answer": 0,
+        "explanation": "Isolation is about the number of contacts, loneliness about the feeling. Both are linked with poorer health, even for people who are content alone."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--02",
+      "topic": "relationships",
+      "tags": [
+        "social-connection",
+        "community",
+        "small-steps"
+      ],
+      "title": "Rebuild connection with small, regular encounters",
+      "body": "You don't need a big friendship circle overnight. An NIH researcher quoted by NIH News in Health says high-quality relationships are best, but even brief encounters are a real first step: greeting the same shop assistant each week, or chatting with someone you always see at the bus stop.\n\nThe article's tips build from there: join a group for a hobby, volunteer at a school, library or hospital, sing in a choir, take an exercise class, or teach a skill such as baking or chess to younger people. It also suggests checking on neighbours who may be struggling, such as an older person living alone or a single parent.",
+      "apply_it": "This week, learn the name of one person you see regularly, such as a shopkeeper or neighbour, and use it.",
+      "quiz": {
+        "question": "What does the article suggest as a first step towards new connections?",
+        "options": [
+          "Waiting until you feel less shy",
+          "Brief, regular chats with people you already see",
+          "Only spending time online",
+          "Moving to a bigger city"
+        ],
+        "answer": 1,
+        "explanation": "Short, repeated encounters, like greeting the same shop worker each week, can grow into real connection."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--03",
+      "topic": "relationships",
+      "tags": [
+        "marriage",
+        "empathy",
+        "relationship-quality"
+      ],
+      "title": "In close relationships, feeling understood matters more than status",
+      "body": "Married people tend to live longer on average, but NIH News in Health stresses that the quality of the relationship is what counts. Supportive partnerships help health; tense, hostile ones can harm it.\n\nResearcher David Sbarra points to responsiveness as the heart of intimacy: the sense that your partner understands and cares about what you are going through. His team has also linked divorce and separation with changes in cell structures associated with ageing. The lesson is not 'stay married at any cost' but that how you treat each other day to day is part of looking after your health.",
+      "apply_it": "Next time someone close to you shares a worry, repeat back what you heard before offering any advice.",
+      "quiz": {
+        "question": "What does researcher David Sbarra see as key to intimacy?",
+        "options": [
+          "Living in the same house",
+          "Earning a similar income",
+          "Feeling that your partner is responsive and understands you",
+          "Never arguing"
+        ],
+        "answer": 2,
+        "explanation": "Perceived responsiveness, or empathy, from a partner is what he identifies as central to intimacy."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--04",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "accountability",
+        "social-support"
+      ],
+      "title": "Make exercise plans with someone else and you're more likely to keep them",
+      "body": "Motivation fades, but people are a strong backup. NIH News in Health reports that people with more social support tend to be more active. Moving with others makes it more fun, gives encouragement and builds self-efficacy, the belief that you can do it.\n\nIn one NIH-supported study, people leaving hospital wore step trackers and chose a friend or relative to cheer them on; those more engaged socially walked noticeably more after 12 weeks. You don't even have to train side by side. Agreeing set times, checking in, and sharing goals and setbacks all add accountability.",
+      "apply_it": "Tell one friend your activity goal for this week and ask them to check in with you on Friday.",
+      "quiz": {
+        "question": "Which of these does the article say social support can do for exercise?",
+        "options": [
+          "Replace the need for any activity",
+          "Only help professional athletes",
+          "Make you need less sleep",
+          "Make it more enjoyable and build belief that you can succeed"
+        ],
+        "answer": 3,
+        "explanation": "Being active with others adds fun and encouragement and increases self-efficacy, the belief you can succeed."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--05",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "chronic-conditions",
+        "tai-chi",
+        "confidence"
+      ],
+      "title": "If exercise feels scary, start gently in a group of people like you",
+      "body": "People who have had a heart attack or live with lung or heart disease often fear exercise: they worry about getting breathless or embarrassed. Yet activity matters for their recovery.\n\nNIH News in Health describes tai chi programmes, gentle movement combined with breathing and focus, developed for people with heart and lung conditions. Seeing others with similar problems exercising safely helped participants gain confidence, and the classes moved in small steps. If you have a health condition, a beginner or condition-specific class, cleared with your doctor, can be a less frightening way back into movement.",
+      "apply_it": "If a health problem keeps you from exercising, ask your doctor or clinic whether there is a gentle group class suited to you.",
+      "quiz": {
+        "question": "Why did group classes help people with serious heart or lung conditions?",
+        "options": [
+          "Seeing similar people exercise built their confidence",
+          "They were much more intense than solo exercise",
+          "They removed the need to see a doctor",
+          "They only involved sitting still"
+        ],
+        "answer": 0,
+        "explanation": "Watching others with similar conditions exercise safely, in small steps, helped people overcome fear."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--06",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "ultra-processed-food",
+        "overeating"
+      ],
+      "title": "Ultra-processed food can lead you to eat more without noticing",
+      "body": "In an NIH study, adults lived at a research unit for four weeks: two on an ultra-processed diet and two on a minimally processed one. Meals were matched for calories, sugar, fat, fibre and salt, and people ate as much as they liked.\n\nOn the ultra-processed diet they ate about 500 more calories a day and gained around 2 pounds (about 1 kg); on the other diet they lost about the same. They rated both diets as equally pleasant. Scientists don't yet know exactly why, but NIH News in Health suggests choosing whole foods where possible, fewer sugary drinks, whole grains and simple-ingredient snacks.",
+      "apply_it": "Swap one packaged snack this week for fruit, nuts or vegetables you prepare yourself.",
+      "quiz": {
+        "question": "In the NIH study, what happened on the ultra-processed diet?",
+        "options": [
+          "People ate fewer calories",
+          "People ate about 500 more calories a day and gained weight",
+          "People found the food much less pleasant",
+          "Nothing changed compared with the other diet"
+        ],
+        "answer": 1,
+        "explanation": "Even with matched nutrients and equal enjoyment, people ate about 500 extra calories a day and gained about 2 pounds."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--07",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "processing",
+        "food-labels"
+      ],
+      "title": "Not all processed food is bad; watch for the ultra-processed kind",
+      "body": "Chopping, freezing and cooking are all processing, and some processing protects you, such as cooking meat or pasteurising milk. NIH News in Health draws the line at ultra-processed foods: products made with industrial methods and ingredients you wouldn't keep at home, like hydrogenated oils, isolated proteins and high-fructose corn syrup.\n\nThey are designed to be cheap, long-lasting, tasty and ready to eat: soft drinks, crisps, nuggets and sausages. One researcher's rule of thumb is that something in a crinkly packet from the middle aisles is probably ultra-processed. Reading ingredient lists helps you spot them.",
+      "apply_it": "Pick one packaged food in your kitchen and read its ingredients. Count how many you wouldn't cook with at home.",
+      "quiz": {
+        "question": "Which of these does the article describe as helpful processing?",
+        "options": [
+          "Adding high-fructose corn syrup",
+          "Adding hydrogenated oils",
+          "Pasteurising milk",
+          "Making chips in a factory"
+        ],
+        "answer": 2,
+        "explanation": "Some processing, like pasteurising milk or cooking meat, helps prevent foodborne illness."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--08",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "cravings",
+        "habit-change"
+      ],
+      "title": "Eating better may feel worse at first, and that's normal",
+      "body": "Psychologist Ashley Gearhardt, quoted in NIH News in Health, says many people feel worse, not better, when they first cut back on ultra-processed food: irritable, agitated and full of cravings. Some of the same brain circuits light up when people crave these foods as when they crave drugs, though scientists haven't settled whether the foods are truly addictive.\n\nKnowing this in advance helps. Rough first days are not proof that you have failed or that healthy food 'doesn't suit you'. The article suggests getting support from family and friends, and a dietitian if you can.",
+      "apply_it": "If you cut back on sugary or packaged food, expect a few cranky days and plan a support person or healthy snack for them.",
+      "quiz": {
+        "question": "What do people often experience when they start eating healthier, according to Gearhardt?",
+        "options": [
+          "Instant energy and no cravings",
+          "Nothing at all",
+          "Immediate weight loss",
+          "Irritability, agitation and strong cravings"
+        ],
+        "answer": 3,
+        "explanation": "Many people feel worse at first, with irritability and cravings; knowing this can help them stick with the change."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--09",
+      "topic": "health",
+      "tags": [
+        "ageing",
+        "metabolism",
+        "weight"
+      ],
+      "title": "Your metabolism slows in midlife, but your appetite doesn't",
+      "body": "NIH News in Health explains 'middle-age spread': many adults gain weight between their 20s and 40s, and from about 30 to 40 the same exercise may deliver less. An NIH expert sums it up: metabolism slows with age while appetite and portions stay the same, so weight creeps up.\n\nMuch of the gain is fat, which shifts toward the organs as muscle is slowly lost, and desk jobs add to it. Because you need fewer calories but the same nutrients, the article advises nutrient-rich food, more movement spread through the day (stairs, walking breaks, standing for part of work), good sleep, less alcohol and regular checkups.",
+      "apply_it": "Look at your usual portions. Is there one you could trim slightly while keeping the vegetables and protein?",
+      "quiz": {
+        "question": "What is the main cause of middle-age spread described in the article?",
+        "options": [
+          "Metabolism slows while appetite and food intake stay the same",
+          "Eating breakfast",
+          "Drinking too much water",
+          "Sleeping too much"
+        ],
+        "answer": 0,
+        "explanation": "A slowing metabolism combined with an unchanged appetite leads to steady weight gain over time."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--10",
+      "topic": "health",
+      "tags": [
+        "screen-time",
+        "social-media",
+        "mental-health"
+      ],
+      "title": "How you use social media matters more than whether you use it",
+      "body": "NIH News in Health reports that social media can help or harm depending on how you use it. Actively connecting, chatting with friends or finding support, can build real relationships online and off. Hours of passive scrolling through other people's highlights can leave you feeling left out, isolated, or sure everyone else has a better life.\n\nHeavy use has been linked with depression, anxiety and stress, though it isn't always clear which comes first. Time online also matters for what it replaces: exercise, hobbies, sleep and time with people face to face.",
+      "apply_it": "After your next session on social media, rate how you feel from 1 to 5. Notice which apps or accounts lower the score.",
+      "quiz": {
+        "question": "Which kind of social media use does the article link with feeling left out?",
+        "options": [
+          "Messaging close friends",
+          "Passively scrolling through other people's posts",
+          "Finding a support group",
+          "Looking up health information"
+        ],
+        "answer": 1,
+        "explanation": "Passively watching others can increase feelings of isolation and missing out; active connection tends to help."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--11",
+      "topic": "health",
+      "tags": [
+        "screen-time",
+        "social-media",
+        "algorithms"
+      ],
+      "title": "Clicking on upsetting content teaches your feed to show you more",
+      "body": "NIH News in Health points out that online feeds learn from you. Click on something that disturbs you and you will tend to be shown more of it, and repeated exposure to distressing content can raise stress and anxiety.\n\nThe same mechanism can normalise risky habits. Researchers found that passively viewing tobacco content made people more likely to use tobacco, with similar trends for alcohol and cannabis. The article also warns about online culture that frames drinking as 'self-care': using alcohol to manage stress is not a healthy way to cope.",
+      "apply_it": "Mute or unfollow three accounts that usually leave you anxious or craving something, and see how your feed changes in a week.",
+      "quiz": {
+        "question": "Why can clicking on disturbing content make things worse?",
+        "options": [
+          "It deletes the content",
+          "It has no effect on what you see",
+          "It tends to bring you more of the same content",
+          "It blocks the account automatically"
+        ],
+        "answer": 2,
+        "explanation": "Clicking on content signals interest, so you are shown more of it, and repeated exposure can increase stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--12",
+      "topic": "health",
+      "tags": [
+        "screen-time",
+        "parenting",
+        "children"
+      ],
+      "title": "Parents often underestimate how long children spend on devices",
+      "body": "In one study described by NIH News in Health, young children with their own tablets used them for almost two hours a day, and only about a third of their parents guessed that correctly. Researchers also found inappropriate ads, such as for violent games, on more than half of popular children's video channels studied.\n\nMore media use, especially near bedtime, is linked with worse sleep. The article's suggestions: set a family limit and keep it, no screens at meals or homework, no TV or devices in the bedroom at night, offer outdoor play and shared games, and limit your own screen time too, since children copy what adults do.",
+      "apply_it": "For one week, note your child's (or your own) actual daily screen time and compare it with your guess.",
+      "quiz": {
+        "question": "What did the study find about parents' estimates of children's tablet use?",
+        "options": [
+          "Parents overestimated it",
+          "All parents estimated it exactly",
+          "Children used tablets for only ten minutes a day",
+          "Only about a third of parents estimated it accurately"
+        ],
+        "answer": 3,
+        "explanation": "Young children used their tablets almost two hours a day, and only about a third of parents guessed this correctly."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--13",
+      "topic": "parenting",
+      "tags": [
+        "screen-time",
+        "parenting",
+        "communication"
+      ],
+      "title": "Talk with children about what they see online, from an early age",
+      "body": "Rules and timers help, but NIH News in Health highlights something that lasts longer: conversation. A paediatrician quoted in the article suggests making it normal at home to chat about what's on screens, so children feel safe coming to you when they see something confusing or upsetting.\n\nAdults can also model critical thinking out loud: saying what they like or dislike about a show, or pointing out when an ad seems misleading. Children who hear this learn to question content on their own. Devices aren't all bad either: video calls with distant relatives and good educational apps can help.",
+      "apply_it": "While watching something with a child, ask: 'Do you think that advert is telling the truth? Why?'",
+      "quiz": {
+        "question": "Why does the article suggest talking regularly about what's on devices?",
+        "options": [
+          "So children feel comfortable coming to you about upsetting content",
+          "So you can ban all devices",
+          "Because children cannot learn critical thinking",
+          "Because educational apps never help"
+        ],
+        "answer": 0,
+        "explanation": "Making device talk normal means children are more likely to tell you when something disturbs or confuses them."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--14",
+      "topic": "mindfulness",
+      "tags": [
+        "mindfulness",
+        "thoughts",
+        "depression"
+      ],
+      "title": "Watch difficult thoughts float past like leaves on a stream",
+      "body": "Mindfulness means noticing your thoughts, feelings and surroundings in the present moment, with curiosity rather than judgement. NIH News in Health reports that mindfulness-based treatments have been shown to reduce anxiety and depression for some people.\n\nResearcher Sona Dimidjian explains two ways it helps. Depression drags attention into the past or future, and mindfulness trains you to come back to now. It also helps you 'de-centre' from negative thoughts: you watch them pass like leaves floating down a stream instead of being swept away with them. It is simple but not easy, so start with a few minutes a day.",
+      "apply_it": "Sit for three minutes. Each time a thought appears, picture placing it on a leaf and letting it float away.",
+      "quiz": {
+        "question": "What does 'de-centring' from negative thoughts mean in the article?",
+        "options": [
+          "Arguing with every thought",
+          "Observing thoughts pass by without being carried away by them",
+          "Never having negative thoughts again",
+          "Writing thoughts down to show a doctor"
+        ],
+        "answer": 1,
+        "explanation": "De-centring means noticing thoughts like leaves on a stream, rather than getting swept along by them."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--15",
+      "topic": "mindfulness",
+      "tags": [
+        "mindfulness",
+        "body-scan",
+        "relaxation"
+      ],
+      "title": "A body scan reconnects you with how you actually feel",
+      "body": "One practice NIH News in Health recommends is the body scan. Sit or lie comfortably, close your eyes and take a few deep breaths. Notice your feet. Then slowly move your attention up through your legs, stomach, arms, hands, neck and head.\n\nThe point is not to fix anything. You simply notice sensations or discomfort without trying to change them or judging them. Done regularly, it builds mindfulness. The article adds that if an app doesn't work for you, it doesn't mean you're bad at mindfulness; a teacher or a well-made programme from a university or medical school may suit you better.",
+      "apply_it": "Tonight in bed, do a two-minute body scan from your toes to the top of your head before you sleep.",
+      "quiz": {
+        "question": "During a body scan, what should you do with uncomfortable sensations?",
+        "options": [
+          "Try hard to make them go away",
+          "Stop the exercise immediately",
+          "Notice them without judging or changing them",
+          "Ignore that part of the body"
+        ],
+        "answer": 2,
+        "explanation": "The body scan is about noticing sensations as they are, without trying to change or judge them."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--16",
+      "topic": "mindfulness",
+      "tags": [
+        "mindful-eating",
+        "habits",
+        "body-awareness"
+      ],
+      "title": "Paying attention to how food makes you feel helps you choose better",
+      "body": "Mindfulness isn't only for a cushion. NIH News in Health describes studies suggesting it can reduce binge and emotional eating and help people notice when they are full and enjoy food more.\n\nThe mechanism is body awareness. If you notice the energy crash after a sugary doughnut, you are more likely to choose differently next time. Noticing good feelings, such as a lift in mood after a walk, reinforces healthy habits too. In one eight-week programme for people with high blood pressure, participants became more aware of their eating habits and chose healthier diets afterwards.",
+      "apply_it": "At your next meal, eat the first five bites slowly, noticing taste and texture, then check how hungry you still are.",
+      "quiz": {
+        "question": "How can body awareness help with healthier eating, according to the article?",
+        "options": [
+          "Noticing effects like a sugar crash guides better choices later",
+          "It lets you skip meals safely",
+          "It makes all food taste the same",
+          "It replaces the need for vegetables"
+        ],
+        "answer": 0,
+        "explanation": "Noticing how food makes you feel, such as a crash after sugar, helps you make better choices next time."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--17",
+      "topic": "mindfulness",
+      "tags": [
+        "gratitude",
+        "positive-emotions",
+        "stress"
+      ],
+      "title": "Notice something good each day and let the feeling sink in",
+      "body": "NIH News in Health describes gratitude as a two-step skill. First, notice good things, big or small: a good parking space, a warm drink, a friend's support. Second, pause and actually enjoy that moment, whatever else is going wrong, and let the thankful feeling grow.\n\nPsychologist Judith Moskowitz suggests doing it daily, in the morning or before sleep. Stress makes us miss positive moments, and practice helps us spot them. Other ideas from the article: keep a gratitude journal, relive good moments by sharing them, or write a thank-you letter, even one you never send. It doesn't work for everyone, which is why her team also teaches meditation and acts of kindness.",
+      "apply_it": "When something good happens today, pause for ten seconds to enjoy it, then tell someone about it this evening.",
+      "quiz": {
+        "question": "What is the second step of the gratitude practice described?",
+        "options": [
+          "Comparing your life with others'",
+          "Taking a moment to enjoy the positive experience",
+          "Ignoring the negatives completely forever",
+          "Telling everyone online"
+        ],
+        "answer": 1,
+        "explanation": "After noticing something good, you take a moment to savour it and let the feeling of gratitude build."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--18",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "sleep",
+        "loneliness"
+      ],
+      "title": "Poor sleep and loneliness both make stress hit harder",
+      "body": "Psychologist Janice Kiecolt-Glaser, quoted in NIH News in Health, studies how stress affects the body. Short bursts of stress can help you rise to a deadline, but when it drags on, the body behaves as if it is under constant threat. Her research links chronic stress with inflammation, which is tied to heart disease and other illnesses.\n\nTwo everyday factors make it worse. People are more sensitive to stress when they are short of sleep, and she calls loneliness 'really destructive'. So protecting your sleep and keeping in touch with people, by phone or video if you can't meet, are not luxuries during hard times; they are part of how you cope.",
+      "apply_it": "During your next stressful week, protect one thing on purpose: a fixed bedtime, or one call a day with someone you trust.",
+      "quiz": {
+        "question": "According to Kiecolt-Glaser, what makes people more sensitive to stress?",
+        "options": [
+          "Being short of sleep",
+          "Drinking water",
+          "Eating breakfast",
+          "Having a hobby"
+        ],
+        "answer": 0,
+        "explanation": "People react more strongly to stress when sleep-deprived, and loneliness also makes stress more harmful."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--19",
+      "topic": "mindfulness",
+      "tags": [
+        "reframing",
+        "stress",
+        "mindset"
+      ],
+      "title": "Reframe a frustrating moment as a small opportunity",
+      "body": "Experts quoted in NIH News in Health call it reframing: changing how you look at a problem. Their example is a traffic jam. Instead of fuming, you treat it as time to enjoy music or catch up on a podcast you never get round to.\n\nReframing doesn't deny that the situation is annoying. It shifts your attention to what you can still get from it, which eases the stress response. The article notes it becomes easier with practice, so start with small daily irritations, such as queues, delays and slow internet, before trying it on bigger problems.",
+      "apply_it": "Next time you're stuck waiting, ask: 'What is one useful or pleasant thing I can do with these minutes?'",
+      "quiz": {
+        "question": "What is 'reframing' in the article?",
+        "options": [
+          "Avoiding stressful places",
+          "Complaining until you feel better",
+          "Changing jobs",
+          "Changing how you view a problem"
+        ],
+        "answer": 3,
+        "explanation": "Reframing means seeing a problem differently, like using a traffic jam to enjoy music or a podcast."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--20",
+      "topic": "productivity",
+      "tags": [
+        "stress",
+        "priorities",
+        "self-compassion"
+      ],
+      "title": "When overloaded, decide what can wait, and say no",
+      "body": "Psychologist Janice Kiecolt-Glaser, quoted in NIH News in Health, describes stress as feeling overloaded, out of control and unable to cope. The article's tips go straight at that feeling. Set goals and priorities: decide what must be done now and what can wait, and learn to say 'no' to new tasks when your plate is full.\n\nIt also suggests self-compassion: at the end of the day, note what you did get done rather than what you didn't. Add regular relaxing time, enough sleep and people who support you. If you can't cope, or are using alcohol or drugs to get through, talk to a health worker or a local helpline.",
+      "apply_it": "Tonight, list three things you completed today before you look at what's left undone.",
+      "quiz": {
+        "question": "What end-of-day habit does the article suggest for self-compassion?",
+        "options": [
+          "Noting what you accomplished rather than what you didn't",
+          "Listing every mistake you made",
+          "Working an extra hour",
+          "Checking email in bed"
+        ],
+        "answer": 0,
+        "explanation": "Looking at what you did achieve, not just the unfinished list, is a form of self-compassion that eases stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--21",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "sleep-quality",
+        "routine"
+      ],
+      "title": "Good sleep has three parts: enough, unbroken and on a regular schedule",
+      "body": "An NIH sleep expert quoted in NIH News in Health describes healthy sleep as three things together: getting enough of it, sleeping well without constant waking, and keeping a consistent schedule. Hitting the hours but at wildly different times, or in broken pieces, still falls short.\n\nThe article also corrects a myth: more is not always better. If an adult regularly sleeps more than nine hours and still wakes unrefreshed, there may be an underlying problem worth raising with a health worker. Ongoing trouble falling or staying asleep is another reason to get checked, since treatments such as talking therapy for insomnia exist.",
+      "apply_it": "For one week, note your bedtime, wake time and how rested you feel. Which of the three parts is your weak spot?",
+      "quiz": {
+        "question": "Which is one of the three parts of healthy sleep described in the article?",
+        "options": [
+          "Sleeping as long as possible every night",
+          "A consistent sleep schedule",
+          "Napping in the evening",
+          "Falling asleep with the TV on"
+        ],
+        "answer": 1,
+        "explanation": "Healthy sleep means enough sleep, good quality sleep and a consistent schedule; more than nine hours isn't automatically better."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--22",
+      "topic": "health",
+      "tags": [
+        "ageing",
+        "memory",
+        "brain-health"
+      ],
+      "title": "Some forgetfulness is normal with age, and older minds have strengths",
+      "body": "NIH News in Health reassures readers that occasionally losing things, forgetting a word or briefly losing track of the day is common with age and doesn't necessarily mean dementia. Learning may take longer. An NIH ageing expert compares memory to a disk that gets fuller over time: storing and finding things gets harder, but you can still learn and grow.\n\nAgeing brings advantages too: older adults often have stronger verbal ability, better problem-solving and a store of experience. Staying mentally, physically and socially active, and having a sense of purpose, are linked with better thinking in later life.",
+      "apply_it": "Take up one new learning activity this month, such as a language, instrument or course, and stick with it for four weeks.",
+      "quiz": {
+        "question": "According to the article, which is a common, normal sign of ageing?",
+        "options": [
+          "Being unable to recognise family",
+          "Getting lost in your own home",
+          "Occasionally forgetting a word",
+          "Sudden confusion after starting a new medicine"
+        ],
+        "answer": 2,
+        "explanation": "Occasionally losing things or forgetting words is common with age and doesn't necessarily signal dementia."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--23",
+      "topic": "health",
+      "tags": [
+        "ageing",
+        "medicines",
+        "alcohol"
+      ],
+      "title": "Sudden memory problems can come from medicines or alcohol, and may be reversible",
+      "body": "Not every change in thinking is dementia. NIH News in Health lists depression, anxiety, infections and certain medicines as possible causes, some of them treatable. A sudden change in memory or mood may follow a new drug, or a combination of drugs, supplements or remedies that interact.\n\nThe article advises older adults to carry a list of every prescription, over-the-counter and herbal product they take to every appointment, because different doctors may not know what the others prescribed. Alcohol hits the older brain harder, and some medicines are dangerous with it. Problems from medicines or alcohol misuse can sometimes be reversed.",
+      "apply_it": "Write a list of every medicine, supplement and herbal remedy you (or an older relative) take, and keep it in your wallet or phone.",
+      "quiz": {
+        "question": "Why does the article recommend carrying a full list of medicines?",
+        "options": [
+          "To get cheaper prices",
+          "So you can stop taking them",
+          "Because pharmacies require it",
+          "So every doctor knows what you take and can spot harmful combinations"
+        ],
+        "answer": 3,
+        "explanation": "Different doctors may not know what others prescribed; a full list helps catch interactions that affect thinking."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--24",
+      "topic": "money",
+      "tags": [
+        "scams",
+        "ageing",
+        "protection"
+      ],
+      "title": "Check any request for money before acting, especially later in life",
+      "body": "NIH News in Health reports that ageing can change how the brain handles complicated social situations, and older adults are frequent targets of scammers. Common tricks include fake investments, charity scams, identity theft, and callers pretending to be a relative in trouble who needs money urgently.\n\nOne research team found that people with low awareness of scam tactics were about twice as likely to later develop Alzheimer's disease, suggesting it may be an early warning sign. The advice is simple: verify any investment offer or money request before acting, and ask trusted family or friends to help you check.",
+      "apply_it": "Agree a rule with older relatives: before sending money to anyone who calls or messages, they phone you first.",
+      "quiz": {
+        "question": "What does the article advise when you receive a request for money?",
+        "options": [
+          "Verify it before acting, and ask someone you trust to help",
+          "Pay quickly before the chance is gone",
+          "Only pay if the caller sounds upset",
+          "Send a smaller amount first"
+        ],
+        "answer": 0,
+        "explanation": "Verifying offers and requests, with help from trusted people, is the main protection against scams."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--25",
+      "topic": "health",
+      "tags": [
+        "falls",
+        "ageing",
+        "home-safety"
+      ],
+      "title": "Most falls can be prevented with a plan, so tell your doctor about any fall",
+      "body": "Falls send millions of older adults to emergency departments, sometimes with hip fractures or head injuries that change their lives. NIH News in Health lists the risks: age over 65, weak bones, poor balance, foot pain and unsafe shoes, medicines that cause dizziness, blood pressure that drops on standing, and declining eyesight or hearing. Anyone who has fallen once is much more likely to fall again.\n\nPrevention works best as a team effort. Exercise classes help, as do regular eye and hearing checks, good footwear, removing loose rugs and clutter, good lighting, grab bars in the bathroom and always holding stair rails.",
+      "apply_it": "Walk through your home (or an older relative's) and remove one tripping hazard today, such as a loose rug or cable.",
+      "quiz": {
+        "question": "Why should you tell a doctor about a fall, even a minor one?",
+        "options": [
+          "Doctors are required to report it",
+          "Having fallen once makes another fall much more likely",
+          "It guarantees you won't need exercise",
+          "Falls only matter for children"
+        ],
+        "answer": 1,
+        "explanation": "A previous fall greatly raises the risk of another, so a doctor can help build a prevention plan."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--26",
+      "topic": "health",
+      "tags": [
+        "caregiving",
+        "stress",
+        "self-care"
+      ],
+      "title": "If you care for someone, protecting your own health is part of the job",
+      "body": "Millions of people look after an ill, disabled or elderly relative without pay. NIH News in Health notes it can bring closeness and fulfilment, but caregivers often skip their own checkups, sleep badly, eat poorly, exercise less and have higher rates of depression and anxiety.\n\nA support programme called REACH, for people caring for someone with dementia, improved caregivers' quality of life and reduced depression; its lesson was that caregivers need support. The article's tips: make lists and routines, ask others for specific help such as shopping, take a break every day, keep a hobby, join a support group, and tell your doctor you're a caregiver.",
+      "apply_it": "Write down two specific tasks someone else could do for you this week, and ask one person to take one.",
+      "quiz": {
+        "question": "What did the REACH programme show caregivers most need?",
+        "options": [
+          "More hours of caregiving",
+          "To stop working",
+          "Support",
+          "Expensive equipment"
+        ],
+        "answer": 2,
+        "explanation": "REACH found that support improved caregivers' quality of life and lowered depression."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--27",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "everyday-movement",
+        "sitting"
+      ],
+      "title": "You don't need a gym: weave movement into your ordinary day",
+      "body": "An exercise researcher quoted in NIH News in Health says many people wrongly believe activity only counts if it's very hard, in a special place, with special clothes. Carrying shopping and climbing stairs count too, and short bursts add up: three 10-minute walks equal a 30-minute session.\n\nThe article's ideas: take the stairs, park further away, walk at lunch or hold walking meetings, stand or walk while watching TV, and set an hourly alarm to move for a minute or two. If tiredness is your barrier, schedule activity when your energy is highest; moving usually raises energy rather than draining it.",
+      "apply_it": "Work out the time of day you feel most energetic and book a 10-minute walk into it tomorrow.",
+      "quiz": {
+        "question": "What does the article say about low energy as a barrier to exercise?",
+        "options": [
+          "Never exercise when tired",
+          "Only exercise late at night",
+          "Wait until you feel fully rested for a week",
+          "Schedule activity when your energy is highest; activity usually raises energy"
+        ],
+        "answer": 3,
+        "explanation": "Moving at your most energetic time of day helps, and activity tends to increase energy levels."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--28",
+      "topic": "health",
+      "tags": [
+        "strength-training",
+        "ageing",
+        "independence"
+      ],
+      "title": "Strength training is about staying capable, not building big muscles",
+      "body": "NIH News in Health points out that most people who lift weights don't see much change in muscle size, and that's not the point. Strength keeps you able to get out of a chair, climb stairs and live independently as you age. In one study, older adults who already had trouble walking got stronger at everyday movements after three months of weight training; those who only stretched did not.\n\nStrength work may also help bones and how the body handles food, and research suggests it can benefit mental health, perhaps by boosting a sense of control. Adults are advised to work the major muscle groups on two or more days a week.",
+      "apply_it": "Try this tomorrow: stand up from a chair and sit back down slowly 10 times without using your hands, if you can do so safely.",
+      "quiz": {
+        "question": "What is the main goal of strength training according to the article?",
+        "options": [
+          "Maintaining muscle function for daily life and independence",
+          "Getting visibly bigger muscles",
+          "Replacing all other exercise",
+          "Losing weight in a week"
+        ],
+        "answer": 0,
+        "explanation": "Most people don't gain much size; the value is keeping the strength needed for everyday tasks and independence."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--29",
+      "topic": "health",
+      "tags": [
+        "eye-health",
+        "screen-time",
+        "20-20-20"
+      ],
+      "title": "Tired eyes from screens? Blink, and use the 20-20-20 rule",
+      "body": "NIH News in Health explains that when we read or work on a computer, our blink rate plummets, which dries and tires the eyes. Fans, car air vents, smoke and wind make it worse, and dry eyes are more common after 50, in women and in contact lens wearers. From the 40s, the eye's focusing muscle also tires more easily close up.\n\nThe fix is simple: every 20 minutes, look at something about 20 feet (6 metres) away for about 20 seconds. Children benefit from time outdoors looking into the distance. Sunglasses that block UV, an up-to-date prescription and not smoking also help; if discomfort continues, get an eye exam.",
+      "apply_it": "Set a 20-minute timer during your next screen session and look out of a window for 20 seconds each time it rings.",
+      "quiz": {
+        "question": "Why do eyes often feel dry and tired during screen work?",
+        "options": [
+          "Screens make tears salty",
+          "We blink far less while concentrating on close work",
+          "Screens are too dim",
+          "Eyes only tire in the morning"
+        ],
+        "answer": 1,
+        "explanation": "Blink rates drop sharply during reading or computer work, which dries and strains the eyes."
+      },
+      "health": true
+    },
+    {
+      "id": "nih-news-in-health--30",
+      "topic": "health",
+      "tags": [
+        "hearing",
+        "noise",
+        "tinnitus"
+      ],
+      "title": "Protect your hearing before loud events; damage can be permanent",
+      "body": "NIH News in Health warns that loud sounds damage tiny structures in the inner ear, causing hearing loss or tinnitus: ringing, buzzing or humming that others can't hear. The louder the sound, the more harm, and loss can be sudden or creep up over years. Nearly half of US adults in their 60s say they have hearing loss.\n\nMove away from noise or turn it down. Before concerts, sports events, fireworks or noisy work with mowers and drills, use earplugs or earmuffs; cheap foam plugs work, and high-fidelity plugs protect hearing without muffling music. If ringing persists or worsens, see a health worker.",
+      "apply_it": "Keep a pair of foam earplugs in your bag or car so they're there next time you're somewhere loud.",
+      "quiz": {
+        "question": "According to the article, how does the loudness of a sound relate to hearing damage?",
+        "options": [
+          "Loudness doesn't matter, only duration",
+          "Only sudden bangs cause damage",
+          "The louder the sound, the more damage it can cause",
+          "Quiet sounds are more harmful"
+        ],
+        "answer": 2,
+        "explanation": "The louder the sound, the more damage it can do to the tiny structures of the inner ear."
+      },
+      "health": true
+    }
+  ]
+}

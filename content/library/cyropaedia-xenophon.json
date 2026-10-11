@@ -1,0 +1,803 @@
+{
+  "source": {
+    "id": "cyropaedia-xenophon",
+    "title": "Cyropaedia: The Education of Cyrus",
+    "authors": [
+      "Xenophon"
+    ],
+    "translator": "Henry Graham Dakyns",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/2085",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Xenophon, Cyropaedia (trans. Henry Graham Dakyns), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": -370,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Gutenberg #2085, fetched from the GITenberg mirror. Translated by Henry Graham Dakyns (died 1911), edited by F. M. Stawell (died 1936); both died before 1956, so the translation is public domain. Written in Greek around 370 BCE. A partly fictional portrait of Cyrus the Great as an ideal leader; cards skip its passages on conquest, deception of enemies and slavery."
+  },
+  "cards": [
+    {
+      "id": "cyropaedia-xenophon--01",
+      "topic": "leadership",
+      "tags": [
+        "forethought",
+        "work-ethic",
+        "responsibility",
+        "purpose"
+      ],
+      "title": "A leader should stand out by foresight and hard work, not comfort",
+      "body": "Riding out to his first command, the young Cyrus tells his father Cambyses what he has noticed about rulers. Most people, he says, think a leader differs from those he leads by richer meals, more gold, longer sleep and freedom from effort. Cyrus disagrees. He believes a leader should be marked out by thinking ahead, by good judgment, and by being keener to work than anyone else.\n\nThe perks of a senior role are visible and tempting. Xenophon's point is that they are not what the role is for. The real privilege is carrying more responsibility for the future of the group.",
+      "quote": "I hold that the ruler should be marked out from other men, not by taking life easily, but by his forethought and his wisdom and his eagerness for work.",
+      "locator": "Book I ¶32",
+      "apply_it": "List three perks of your current role. Then list three ways you could show more forethought this month. Spend your energy on the second list.",
+      "quiz": {
+        "question": "According to the young Cyrus, what should set a ruler apart from others?",
+        "options": [
+          "Forethought, wisdom and eagerness for work",
+          "Longer rest and freedom from trouble",
+          "Splendid banquets and wealth",
+          "Stricter punishments"
+        ],
+        "answer": 0,
+        "explanation": "Cyrus rejected comfort and luxury as the marks of a leader and named foresight, judgment and hard work instead."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--02",
+      "topic": "leadership",
+      "tags": [
+        "planning",
+        "reserves",
+        "resources",
+        "resilience"
+      ],
+      "title": "Build your reserves in good times, before you need them",
+      "body": "Cambyses asks his son a pointed question: are you really relying on supplies promised by someone else, without even knowing how much they are? What if they fall short? His advice is a rule to hold above all others: never wait until the day of need to gather what you need. Use times of plenty to prepare for lean ones. A leader who isn't desperate gets better terms from others and keeps the respect of his team.\n\nFor a business, a household or a community group, this means building savings, spare capacity and goodwill while things are going well, not scrambling for them in a crisis.",
+      "quote": "never put off the collecting of supplies until the day of need, make the season of your abundance provide against the time of dearth.",
+      "locator": "Book I ¶32",
+      "apply_it": "Name one resource your team or household would need in a crisis (cash, skills, contacts). Add a little to that reserve this week.",
+      "quiz": {
+        "question": "What did Cambyses say was the advantage of preparing supplies before the day of need?",
+        "options": [
+          "It impresses enemies with wealth",
+          "It allows you to avoid all work later",
+          "You get better terms and keep your team's respect",
+          "It means you never need allies"
+        ],
+        "answer": 2,
+        "explanation": "A leader who isn't in straits can negotiate better and stays free of blame in the eyes of those who depend on him."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--03",
+      "topic": "leadership",
+      "tags": [
+        "management",
+        "skills",
+        "wellbeing",
+        "motivation"
+      ],
+      "title": "Leadership is much more than technical skill",
+      "body": "Cyrus recalls paying a teacher who claimed to teach generalship. His father then quizzed him. Did the teacher cover managing supplies? Keeping people healthy? Firing up their spirit? Getting willing discipline? Each time the answer was no; the teacher had only taught tactics. Cambyses laughed: what use are tactics without supplies, health and discipline? He then sent his son to learn from experienced leaders.\n\nMany people are promoted because they are good at the technical work. But running a team also means budgets, wellbeing, morale and cooperation. Xenophon's point is that the technical part is only a small slice of the job.",
+      "quote": "And so you made it clear to me that tactics and manoeuvres and drill were only a small part of all that is implied in generalship",
+      "locator": "Book I ¶35",
+      "apply_it": "Rate yourself 1–5 on four areas: resources, team wellbeing, motivation and cooperation. Pick the lowest and find someone experienced to learn from.",
+      "quiz": {
+        "question": "What had Cyrus's teacher taught him under the name of generalship?",
+        "options": [
+          "Supplies and economy",
+          "Health of the troops",
+          "How to inspire enthusiasm",
+          "Only tactics"
+        ],
+        "answer": 3,
+        "explanation": "The teacher had only taught tactics, which Cambyses showed was a small part of leading people."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--04",
+      "topic": "leadership",
+      "tags": [
+        "wellbeing",
+        "prevention",
+        "teams",
+        "care"
+      ],
+      "title": "Keep your people well, don't just patch them up when they break",
+      "body": "Cyrus proudly tells his father he has hired an excellent staff of doctors for his army. Cambyses is unimpressed. Doctors, he says, are like tailors who mend torn clothes: useful once the damage is done. A leader's real job goes deeper: to stop people falling ill in the first place, through a healthy place to live, sensible eating and regular activity, the same habits a sensible person practises for himself.\n\nThe modern parallel is a team that is constantly exhausted, with wellbeing support offered only after burnout. Xenophon's advice is to design work and conditions so people stay well, rather than relying on repairs.",
+      "quote": "your prime object should be to save your men from falling ill at all.",
+      "locator": "Book I ¶35",
+      "apply_it": "Identify one working condition that regularly wears your team down (late hours, no breaks, endless meetings). Change it before someone burns out.",
+      "quiz": {
+        "question": "Why did Cambyses compare doctors to tailors who patch torn garments?",
+        "options": [
+          "Because doctors were badly paid",
+          "Because they repair damage, while a leader should prevent it",
+          "Because both use needles",
+          "Because armies didn't need doctors"
+        ],
+        "answer": 1,
+        "explanation": "He wanted Cyrus to focus on keeping his people healthy, not just on treating them once they fell ill."
+      },
+      "health": true
+    },
+    {
+      "id": "cyropaedia-xenophon--05",
+      "topic": "leadership",
+      "tags": [
+        "credibility",
+        "communication",
+        "hope",
+        "trust"
+      ],
+      "title": "Don't spend your credibility on promises you can't be sure of",
+      "body": "Cyrus suggests that raising hopes is the best way to fire up his men. His father agrees, with a warning. A huntsman who keeps calling his hounds when there's no quarry will find that, after being fooled a few times, they ignore him even when the prey is in sight. Hope works the same way. A leader who raises false expectations will one day announce real good news and not be believed. Better to avoid promising what you can't know, and save your personal appeals for the moments that truly matter.\n\nEvery \"this will be the last late night\" that proves false costs a leader trust that is hard to win back.",
+      "quote": "Let a man rouse false expectations often enough, and in the end, even when hope is at the door, he may cry the good news in vain.",
+      "locator": "Book I ¶36",
+      "apply_it": "Before your next upbeat announcement, ask: am I certain of this? If not, say what you know and what you don't.",
+      "quiz": {
+        "question": "What does the huntsman's story warn leaders against?",
+        "options": [
+          "Hunting too often",
+          "Giving too many rewards",
+          "Raising false hopes until no one believes them",
+          "Speaking only in a crisis"
+        ],
+        "answer": 2,
+        "explanation": "Repeated false alarms teach hounds, and people, to ignore the call even when it is real."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--06",
+      "topic": "leadership",
+      "tags": [
+        "authority",
+        "competence",
+        "influence",
+        "trust"
+      ],
+      "title": "People follow willingly when they believe you know the way",
+      "body": "Cyrus says obedience comes from rewarding those who obey and punishing those who don't. Cambyses calls that the obedience of compulsion. There is a nobler, faster route: the obedience of the will. People gladly follow someone they believe knows better than they do, just as a sick person begs the doctor for advice, a crew listens to the pilot, and travellers stick close to the one who knows the road. But if people think following you leads to disaster, no penalty, persuasion or reward will move them.\n\nAuthority that rests on demonstrated competence lasts far longer than authority that rests on carrots and sticks.",
+      "quote": "But there is a shorter way to a nobler goal, the obedience of the will. When the interests of mankind are at stake, they will obey with joy the man whom they believe to be wiser than themselves.",
+      "locator": "Book I ¶37",
+      "apply_it": "Think of an area where your team doubts your judgment. What would you need to learn or show to earn their trust there?",
+      "quiz": {
+        "question": "What does Cambyses call the 'shorter way to a nobler goal'?",
+        "options": [
+          "The obedience of the will, won by being wiser",
+          "Generous bribes",
+          "Strict punishment",
+          "Avoiding hard decisions"
+        ],
+        "answer": 0,
+        "explanation": "People gladly follow someone they believe knows better, like patients following a doctor."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--07",
+      "topic": "leadership",
+      "tags": [
+        "integrity",
+        "competence",
+        "authenticity",
+        "reputation"
+      ],
+      "title": "The quickest way to seem capable is to become capable",
+      "body": "Cyrus asks how to win a reputation for wisdom quickly. His father's answer: wherever you want to seem wise, be wise. Try faking expertise as a farmer, rider, doctor or musician, he says, and think of all the props and tricks you'd need just to keep up appearances. You might fool people for a while and gather admirers, but sooner or later a real test comes and the pretender is exposed.\n\nImage management is tempting in any career. Xenophon's argument is practical as much as moral: genuine skill is cheaper to maintain than a performance, and it survives the moment of truth.",
+      "quote": "None quicker, my lad, than this: wherever you wish to seem wise, be wise.",
+      "locator": "Book I ¶39",
+      "apply_it": "Find one area where you rely on looking competent more than being competent. Spend 20 minutes a day this week closing that gap.",
+      "quiz": {
+        "question": "According to Cambyses, what happens to someone who only pretends to be skilled?",
+        "options": [
+          "They become skilled over time",
+          "They are eventually exposed when tested",
+          "They always succeed",
+          "They are admired forever"
+        ],
+        "answer": 1,
+        "explanation": "Faking expertise takes endless effort, and the impostor is revealed when the real test arrives."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--08",
+      "topic": "leadership",
+      "tags": [
+        "empathy",
+        "care",
+        "loyalty",
+        "relationships"
+      ],
+      "title": "Sharing people's joys and troubles wins more loyalty than favours",
+      "body": "Cyrus assumes that to win the affection of those he leads, he must keep doing them good. His father points out that you can't always give people benefits. But one path is always open: sympathy. Be glad with them when things go well, grieve with them when things go badly, help with their difficulties, worry about risks to them and act ahead of time to protect them. These, Cambyses says, are the true signs of comradeship, more than any gift.\n\nA manager without a bonus budget still has this tool every day: noticing, caring and showing up when it counts.",
+      "quote": "to rejoice with the happy in the day of good things, to share their sorrow when ill befalls them, to lend a hand in all their difficulties",
+      "locator": "Book I ¶42",
+      "apply_it": "This week, mark one teammate's good news and check in on one who is struggling, in person and without being asked.",
+      "quiz": {
+        "question": "According to Cambyses, what way of winning affection is always open to a leader?",
+        "options": [
+          "Giving expensive gifts",
+          "Avoiding personal contact",
+          "Raising pay every year",
+          "The way of sympathy: sharing joys, sorrows and difficulties"
+        ],
+        "answer": 3,
+        "explanation": "Benefits aren't always possible, but genuine sympathy and help in difficulty are, and they are the true signs of comradeship."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--09",
+      "topic": "leadership",
+      "tags": [
+        "innovation",
+        "creativity",
+        "learning",
+        "competition"
+      ],
+      "title": "Don't just apply what you were taught; invent something new",
+      "body": "Cambyses tells his son that knowing the standard lessons is not enough. A keen student, he says, must become a creator and discoverer, like a real musician who isn't content with the basics but composes new melodies. And just as fresh music wins the audience, the newest idea is often the one that gives you the edge, precisely because rivals haven't seen it before.\n\nThe context in the book is military, but the principle fits any competitive field. Best practices are where you start. Lasting advantage usually comes from the new approach no one else has thought of yet.",
+      "quote": "you must not confine yourself to the lessons you have learnt; you must show yourself a creator and discoverer",
+      "locator": "Book I ¶56",
+      "apply_it": "Pick one routine process you inherited. Spend 30 minutes sketching a completely different way of doing it.",
+      "quiz": {
+        "question": "Why did Cambyses compare a good leader to a musician?",
+        "options": [
+          "Both should compose new things, not just repeat the basics",
+          "Both must practise scales daily",
+          "Both need an audience",
+          "Music calms soldiers"
+        ],
+        "answer": 0,
+        "explanation": "Just as a real musician creates new melodies, a leader should invent new approaches rather than only apply old lessons."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--10",
+      "topic": "leadership",
+      "tags": [
+        "planning",
+        "foresight",
+        "responsibility",
+        "trust"
+      ],
+      "title": "People follow you because they trust you to plan ahead for them",
+      "body": "Near the end of his long advice, Cambyses gives his son a principle to keep always in mind: if you want people to follow you, remember that they expect you to plan for them. That means never slipping into a careless frame of mind. At night, think about what tomorrow requires; in the day, think about how the night should be spent.\n\nTeams can cope with hard work and uncertainty if they believe someone is thinking ahead on their behalf. What wears them down is a leader who reacts to everything at the last minute. Planning is not admin; it is a form of care.",
+      "quote": "if you wish your men to follow you, remember that they expect you to plan for them.",
+      "locator": "Book I ¶56",
+      "apply_it": "Before you finish work today, write the three things your team will need from you tomorrow and prepare one of them now.",
+      "quiz": {
+        "question": "What does Cambyses say people expect from the leader they follow?",
+        "options": [
+          "That he will be the strongest",
+          "That he will never ask for effort",
+          "That he will plan for them",
+          "That he will always agree with them"
+        ],
+        "answer": 2,
+        "explanation": "Followers rely on the leader to think ahead, so he must never fall into a careless mood."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--11",
+      "topic": "leadership",
+      "tags": [
+        "developing-people",
+        "courage",
+        "teams",
+        "coaching"
+      ],
+      "title": "Your own courage isn't enough; build it in your team",
+      "body": "When Cyrus first saw how lightly equipped and untrained the ordinary Persian soldiers were, he worried they would be overwhelmed. His answer was not to rely on the elite few. He gave everyone proper equipment and training, and told the elite Peers that their job now included raising the spirit of the others. A leader, he said, must not only be brave himself but make sure his followers are as brave as he is.\n\nIn any team, a strong leader surrounded by under-equipped, unconfident people will struggle. Investing in their tools, skills and confidence multiplies what the whole group can do.",
+      "quote": "A leader must not only have a stout heart himself; he must see to it that his followers are as valiant as he.",
+      "locator": "Book II ¶17",
+      "apply_it": "Choose one person on your team who lacks confidence or tools. Give them one concrete resource or skill they need this week.",
+      "quiz": {
+        "question": "What did Cyrus say a leader must do besides being brave himself?",
+        "options": [
+          "Keep the best equipment for himself",
+          "Fight every battle alone",
+          "Avoid relying on ordinary soldiers",
+          "Make sure his followers are as valiant as he is"
+        ],
+        "answer": 3,
+        "explanation": "He equipped and encouraged the ordinary soldiers so the whole army shared the courage of its leaders."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--12",
+      "topic": "leadership",
+      "tags": [
+        "opportunity",
+        "inclusion",
+        "fairness",
+        "motivation"
+      ],
+      "title": "Open the door: offer equal recognition for equal effort",
+      "body": "In Persia, ordinary citizens had been shut out of the rights of the elite Peers, not by choice but because they had to spend their time earning a living. Cyrus told them that this was changing. They would get the same equipment, face the same challenges and win the same honours, with the only difference being their own effort. Xenophon says every one of them signed up, ashamed to refuse when they were offered equal honour for equal toil.\n\nTalented people are often held back by circumstance, not ability. Leaders who open real paths to recognition, regardless of background, unlock effort that was always there.",
+      "quote": "they were offered equal honour in return for equal toil.",
+      "locator": "Book II ¶22",
+      "apply_it": "Look at who gets the visible opportunities on your team. Is there someone capable who has never been offered one? Offer it.",
+      "quiz": {
+        "question": "Why had the ordinary Persians not shared the Peers' rights before?",
+        "options": [
+          "They were less brave",
+          "They had to spend their time earning a living",
+          "They had refused to fight",
+          "The Peers had defeated them"
+        ],
+        "answer": 1,
+        "explanation": "Circumstance, not ability, had kept them out; given equal tools and a fair chance, they all joined."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--13",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "delegation",
+        "priorities",
+        "support"
+      ],
+      "title": "Success comes from concentrating on one thing, not attempting many",
+      "body": "Before the campaign, Cyrus asked for a team of helpers whose only job was to supply the soldiers with everything they needed, so the soldiers could put all their attention on their own craft. Xenophon explains his reasoning: Cyrus had learned that success in any field comes from refusing to take on a crowd of tasks and focusing the mind on one.\n\nIn modern work, people are often spread across admin, side projects and endless small requests. Removing that clutter from your team's path, and from your own, is one of the most effective things a leader can do.",
+      "quote": "He had learnt, he thought, that success, in whatever sphere, was only to be won by refusing to attempt a multitude of tasks and concentrating the mind on one.",
+      "locator": "Book II ¶23",
+      "apply_it": "Ask your team which recurring tasks distract them from their core work. Remove, automate or reassign one of them this month.",
+      "quiz": {
+        "question": "Why did Cyrus appoint helpers to supply his soldiers?",
+        "options": [
+          "To reduce costs",
+          "To spy on the soldiers",
+          "So the soldiers could concentrate fully on their main work",
+          "Because the soldiers refused to carry supplies"
+        ],
+        "answer": 2,
+        "explanation": "He believed success comes from focusing on one task, so he removed other burdens from his soldiers."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--14",
+      "topic": "leadership",
+      "tags": [
+        "coaching",
+        "structure",
+        "accountability",
+        "standards"
+      ],
+      "title": "Make every leader responsible for developing the people below them",
+      "body": "Cyrus organised training so that improvement cascaded through the whole army. A private was challenged to be his best. The leader of five was expected to match the best private and bring his five up to the same standard. The leader of ten did the same for his ten, and so on up to the commander, who looked after the officers beneath him. Prizes rewarded both individuals and whole units, including those most loyal and diligent.\n\nThis is a simple model for any organisation: every manager is judged not just on their own work but on how well they raise the people they lead.",
+      "quote": "The petty officer commanding a squad of five was not only to equal the leading private, he must also do what he could to bring his men to the same perfection",
+      "locator": "Book II ¶24",
+      "apply_it": "Add one line to your own goals: how you will help each person who reports to you improve this quarter.",
+      "quiz": {
+        "question": "How did Cyrus expect each officer to contribute to the training?",
+        "options": [
+          "By bringing the men under him up to the best standard",
+          "By punishing failures",
+          "By training only himself",
+          "By leaving training to outside teachers"
+        ],
+        "answer": 0,
+        "explanation": "Each level was responsible for raising the level below it, so improvement spread through the whole army."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--15",
+      "topic": "leadership",
+      "tags": [
+        "respect",
+        "support-staff",
+        "equality",
+        "hospitality"
+      ],
+      "title": "Honour the support staff, and eat the same food as your guests",
+      "body": "Cyrus regularly invited people to his table, not only senior officers but also small squads, whole units and anyone who had done work he cared about. There was never any difference between the food served to him and to his guests. He also insisted that the army's servants and support workers share equally with the soldiers. He held them as worthy of honour as ambassadors, because the work they did required loyalty, intelligence, speed and calm.\n\nOrganisations often overlook the people who make everything else possible. Treating them with visible respect, and refusing private privileges at shared tables, says more than any value statement.",
+      "quote": "In every case there was no distinction whatever between the meats for himself and for his guests.",
+      "locator": "Book II ¶27",
+      "apply_it": "Thank one person in a support role (cleaning, admin, IT, logistics) for something specific they did, and tell their manager too.",
+      "quiz": {
+        "question": "How did Cyrus treat the army's servants and support workers?",
+        "options": [
+          "He kept them separate from the soldiers",
+          "He made them share equally and honoured them like ambassadors",
+          "He paid them nothing",
+          "He ignored them"
+        ],
+        "answer": 1,
+        "explanation": "He believed their work demanded loyalty and intelligence and deserved the same respect as the soldiers'."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--16",
+      "topic": "relationships",
+      "tags": [
+        "humour",
+        "team-spirit",
+        "kindness",
+        "culture"
+      ],
+      "title": "Good humour that hurts no one is a gift to a team",
+      "body": "At Cyrus's dinners, officers told funny stories about clumsy new recruits. A sour officer named Aglaitadas grumbled that the storytellers were just impostors showing off. Cyrus stopped him. An impostor, he said, claims to be richer or braver than he is and promises what he can't deliver, for his own gain. Someone who creates laughter for friends, without profit to himself or harm to anyone, deserves a better name. Cyrus also steered the jokes into praise of the recruits.\n\nShared laughter helps teams bond and get through hard times. The test is the one Cyrus gives: is the humour for everyone, and does it wound anyone?",
+      "quote": "But he who contrives mirth for his friends, not for his own profit, or his hearers' loss, or to injure any man, surely, if we must needs give him a name, we ought to call him a man of taste and breeding and a messenger of wit.",
+      "locator": "Book II ¶39",
+      "apply_it": "At your next team gathering, share a light, kind story that makes people laugh with each other, not at anyone.",
+      "quiz": {
+        "question": "How did Cyrus distinguish an impostor from someone who makes friends laugh?",
+        "options": [
+          "Impostors are funnier",
+          "Humourists should be punished",
+          "There is no difference",
+          "Impostors deceive for gain; good humourists harm no one"
+        ],
+        "answer": 3,
+        "explanation": "Cyrus said mirth made for friends, without profit or injury, deserves praise, unlike the self-serving claims of an impostor."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--17",
+      "topic": "leadership",
+      "tags": [
+        "rewards",
+        "fairness",
+        "consultation",
+        "merit"
+      ],
+      "title": "Let the team agree on how rewards are shared",
+      "body": "An officer complained that the lazy and the brave would claim equal shares of any gains. Rather than simply issuing an order, Cyrus put the question to the whole army: share everything equally, or reward each according to what they contributed? He expected them to choose merit, because hardly anyone will argue in public that the hardest worker shouldn't get the most. The army did vote for it, with Cyrus as judge.\n\nPay and reward systems imposed from above often breed resentment. When people help decide the rules, and the rules reward real contribution, they are far more likely to accept the results.",
+      "quote": "it would seem too base to deny that he who works the hardest and does most for the common good deserves the highest recompense.",
+      "locator": "Book II ¶56",
+      "apply_it": "If your team shares a bonus, credit or workload, invite them to discuss the principles for dividing it before the next round.",
+      "quiz": {
+        "question": "How did Cyrus settle the question of how to share rewards?",
+        "options": [
+          "He put it to the whole army, expecting them to choose merit",
+          "He decided secretly himself",
+          "He gave everything to the officers",
+          "He divided it by lottery"
+        ],
+        "answer": 0,
+        "explanation": "He let the army decide, confident that people would publicly back rewarding the greatest contribution."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--18",
+      "topic": "leadership",
+      "tags": [
+        "example",
+        "culture",
+        "accountability",
+        "standards"
+      ],
+      "title": "Most people follow the lead in front of them, so set it well",
+      "body": "When officers joked about a comrade who always wanted the biggest share of everything except work, Cyrus turned serious. Most people, he said, follow the example given to them: they become noble and brave under noble leaders and slide into bad habits under bad ones. He saw two kinds of problem members: the merely lazy, who cost the group, and those who shirk work but grab rewards, who actually teach others that bad behaviour pays. The second kind, he argued, must be removed for the sake of everyone else.\n\nA team's culture is shaped most by what its leaders do and what they tolerate.",
+      "quote": "they will seek after nobleness and valour if their leaders are valiant and noble, but after baseness if these are base.",
+      "locator": "Book II ¶62",
+      "apply_it": "Is there someone on your team who takes credit but avoids work? Address it directly this week, privately and with clear expectations.",
+      "quiz": {
+        "question": "Which kind of team member did Cyrus see as most harmful?",
+        "options": [
+          "Those who were simply slow",
+          "Those who asked too many questions",
+          "Those backward in work but forward in grabbing rewards",
+          "New recruits"
+        ],
+        "answer": 2,
+        "explanation": "People who shirk work yet grab rewards show others that bad behaviour pays, so Cyrus wanted them removed."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--19",
+      "topic": "leadership",
+      "tags": [
+        "honesty",
+        "trust",
+        "accountability",
+        "integrity"
+      ],
+      "title": "When you've done wrong, telling the truth is your best chance",
+      "body": "The king of Armenia had broken his agreement, withholding promised payments and secretly building forts. When Cyrus put him on trial, his first advice to the king was to speak the truth. Above all, he said, an obvious lie destroys the sympathy one person feels for another. The king's family and people already knew what he had done, and lying would only condemn him further. The king told the truth, and the trial ended in reconciliation and a new alliance.\n\nWhen mistakes come to light at work, the urge to minimise or deny is strong. Honesty doesn't erase consequences, but it keeps open the goodwill that makes recovery possible.",
+      "quote": "beyond all else, be assured, manifest lying checks the sympathy of man and man.",
+      "locator": "Book III ¶5",
+      "apply_it": "If you're hiding a mistake right now, tell the affected person today, plainly, along with what you'll do to fix it.",
+      "quiz": {
+        "question": "Why did Cyrus urge the Armenian king to tell the truth?",
+        "options": [
+          "Because lying was illegal in Persia",
+          "Because the king was a poor liar",
+          "Because Cyrus already planned to punish him",
+          "Because an obvious lie destroys people's sympathy"
+        ],
+        "answer": 3,
+        "explanation": "Cyrus warned that manifest lying cuts off the sympathy that might otherwise help the wrongdoer."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--20",
+      "topic": "relationships",
+      "tags": [
+        "forgiveness",
+        "ignorance",
+        "family",
+        "reconciliation"
+      ],
+      "title": "Much harm comes from ignorance, not malice; leave room to forgive",
+      "body": "Cyrus asked Tigranes, the Armenian prince, about a wise friend of his. Tigranes said his own father had executed the man, believing he was turning his son against him. Yet as he died, the man told Tigranes not to be angry with his father: he acted from ignorance, not malice, and wrongs done in ignorance are not truly intended. Cyrus told the king his fault was human, and urged Tigranes to forgive him.\n\nIn families, workplaces and communities, people often hurt us out of fear, jealousy or misunderstanding. Seeing that doesn't excuse the harm, but it can free us from a grudge that poisons our relationships.",
+      "quote": "What he does is not done from malice, but from ignorance; and the sins of ignorance, I hold, are unintentional.",
+      "locator": "Book III ¶31",
+      "apply_it": "Think of someone you resent. Write one way their action might have come from fear or misunderstanding rather than malice.",
+      "quiz": {
+        "question": "What did the condemned wise man tell Tigranes about his father?",
+        "options": [
+          "To take revenge",
+          "That his father acted from ignorance, not malice",
+          "To leave Armenia forever",
+          "That his father was a tyrant"
+        ],
+        "answer": 1,
+        "explanation": "He asked Tigranes not to be angry, because harm done in ignorance is not truly intended."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--21",
+      "topic": "business",
+      "tags": [
+        "negotiation",
+        "win-win",
+        "partnerships",
+        "conflict-resolution"
+      ],
+      "title": "Turn rivals into partners by finding what each side lacks",
+      "body": "The Armenians and the Chaldaean hill tribes had long raided each other. Cyrus asked questions until he found the real problem: the Chaldaeans were poor because they lacked farmland, while much Armenian land lay idle, and the Armenians lacked pasture that the Chaldaean mountains had. He proposed a deal: Chaldaeans would farm Armenian land and pay fair dues, Armenians would graze the mountains and pay in turn, and a neutral guard would hold the pass and back whichever side was wronged. Both agreed, and Xenophon says the treaty still held in his day.\n\nGood negotiators look past positions to needs, and design deals where both sides gain.",
+      "quote": "Then both parties applauded the decision, and said that only thus could they establish a lasting peace",
+      "locator": "Book III ¶53",
+      "apply_it": "In a current dispute, write down what each side actually lacks. Look for one exchange that would leave both better off.",
+      "quiz": {
+        "question": "How did Cyrus make lasting peace between the Armenians and Chaldaeans?",
+        "options": [
+          "By defeating both",
+          "By giving all the land to one side",
+          "By trading farmland and pasture between them, with a neutral guard",
+          "By moving both peoples away"
+        ],
+        "answer": 2,
+        "explanation": "He matched each side's surplus to the other's need and added a neutral guarantee, so both gained from peace."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--22",
+      "topic": "leadership",
+      "tags": [
+        "goodwill",
+        "generosity",
+        "reputation",
+        "relationships"
+      ],
+      "title": "Goodwill is a store of wealth you can draw on later",
+      "body": "When Cyrus left Armenia, the whole population came out to thank him, and the queen offered him the gold he had earlier refused. He turned it down again and told her to spend it on her son and on lasting good things for her family. Xenophon sums up the visit: Cyrus left with the money he actually needed, but also with a far larger fund of goodwill, earned by his graciousness, to draw on whenever he needed it. The Armenian king sent him a bigger army than ever before.\n\nIn business and community life, fairness and generosity build trust that pays off long after a single deal is done.",
+      "quote": "having gained not only the actual money he took away with him, but a far ampler store of wealth, won by his own graciousness, on which he could draw in time of need.",
+      "locator": "Book III ¶58",
+      "apply_it": "In your next negotiation, give one thing that costs you little but matters to the other side, and notice how it changes the relationship.",
+      "quiz": {
+        "question": "What did Xenophon say Cyrus gained from his conduct in Armenia besides money?",
+        "options": [
+          "A large store of goodwill to draw on later",
+          "A new palace",
+          "Control of the Chaldaean hills only",
+          "Nothing of value"
+        ],
+        "answer": 0,
+        "explanation": "His graciousness won him a fund of goodwill that proved more valuable than the money itself."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--23",
+      "topic": "leadership",
+      "tags": [
+        "teams",
+        "rivalry",
+        "shared-goals",
+        "collaboration"
+      ],
+      "title": "Give a jealous team a shared challenge and rivalry turns to comradeship",
+      "body": "Cyrus's training competitions made his soldiers skilled, but they also made some jealous of each other. Xenophon says this was one reason Cyrus decided to move on to a real challenge quickly. He believed that facing a common danger awakens comradeship among people working for the same cause. Bickering stops; nobody resents a colleague's success; envy turns into praise, and rivals welcome each other as fellow-workers.\n\nInternal competition can sharpen a team, but too much of it curdles. Pointing everyone at a meaningful shared goal is often the best cure for petty rivalries.",
+      "quote": "envy is swallowed up in praise, and each competitor greets his rivals with delight as fellow-workers for the common good.",
+      "locator": "Book III ¶62",
+      "apply_it": "If your team is squabbling, name one shared, meaningful goal for the next month and make it the team's main measure of success.",
+      "quiz": {
+        "question": "Why did Cyrus want to lead his soldiers against a real challenge soon?",
+        "options": [
+          "They were bored of eating",
+          "Competition was making them jealous, and shared danger unites people",
+          "He wanted to test new weapons",
+          "His allies demanded it"
+        ],
+        "answer": 1,
+        "explanation": "He saw that a common challenge turns rivals into comrades and dissolves envy."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--24",
+      "topic": "leadership",
+      "tags": [
+        "partnerships",
+        "fairness",
+        "generosity",
+        "long-term"
+      ],
+      "title": "Let partners divide the gains, and be glad of the smaller share",
+      "body": "After a hard-won success, Cyrus and his Persians found themselves holding a camp full of valuables while their allies were still out finishing the job. They could have helped themselves. Cyrus argued against it. Grabbing now would bring riches for a moment, he said, but being fair to allies would bind them closer. He proposed letting the allies divide everything, and counting it a gain if the Persians got the smaller share, because allies who feel well treated stay.\n\nIn joint ventures and partnerships, the side that grabs first often wins the deal and loses the relationship. Generosity with shared gains keeps partners loyal.",
+      "quote": "But it does not seem to me that grasping will be so lucrative as proving ourselves just toward our allies, and so binding them closer.",
+      "locator": "Book IV ¶37",
+      "apply_it": "In your next joint project, offer partners the first say on how credit or rewards are shared, and see what it does for trust.",
+      "quiz": {
+        "question": "Why did Cyrus want the allies to divide the gains?",
+        "options": [
+          "He had no use for wealth",
+          "It was required by law",
+          "The allies had threatened him",
+          "Fairness would bind the allies closer, a more lasting gain"
+        ],
+        "answer": 3,
+        "explanation": "He saw that justice toward partners brings lasting loyalty, worth more than short-term riches."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--25",
+      "topic": "leadership",
+      "tags": [
+        "names",
+        "respect",
+        "accountability",
+        "communication"
+      ],
+      "title": "Learn people's names, and give instructions to named people",
+      "body": "Cyrus's officers marvelled that he always named each one when giving him his post. Xenophon explains why Cyrus took such care. A craftsman knows the names of all his tools; it seemed absurd for a leader not to know the names of the people he relied on. Naming someone is also a courtesy and makes them feel personally seen, which makes them keener to do well. And vague orders like \"someone fetch water\" fail, because everyone looks at everyone else and no one feels responsible.\n\nIn meetings and group chats, \"can someone look into this?\" usually means no one will. Name the person.",
+      "quote": "After a command of that kind, every one looks at every one else, and no one carries it out, every one is to blame, and no one is ashamed or afraid, because there are so many beside himself.",
+      "locator": "Book V ¶82",
+      "apply_it": "In your next meeting, end each action item with one named owner and a date, instead of 'someone' or 'we'.",
+      "quiz": {
+        "question": "Why did Cyrus avoid orders like 'some one fetch the water'?",
+        "options": [
+          "Nobody takes responsibility when no one is named",
+          "They sounded too polite",
+          "Servants preferred written orders",
+          "He didn't know anyone's name"
+        ],
+        "answer": 0,
+        "explanation": "When no one is named, everyone waits for someone else, and the task doesn't get done."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--26",
+      "topic": "leadership",
+      "tags": [
+        "strategy",
+        "risk",
+        "adaptability",
+        "foresight"
+      ],
+      "title": "Face the threats you can't fight head-on, and change your plan",
+      "body": "Cyrus's allies were enjoying an easy campaign and wanted to keep going as they were. Cyrus asked for a debate because, he said, he feared the future. Winter was coming, supplies along their route were used up, and no army can fight cold and hunger. If they carried on in the same way, those forces would drive them out. So he proposed a new approach: secure forts and supplies so they could last. The whole assembly agreed.\n\nOrganisations often keep doing what is working today until conditions change underneath them. Good leaders name the slow, impersonal threats early and adapt before they bite.",
+      "quote": "I see opponents against us whom we cannot fight, if we conduct the campaign as we are doing now.",
+      "locator": "Book VI ¶20",
+      "apply_it": "List one slow-moving threat to your work or finances (a market shift, rising costs). Write one change you'd need to make if it arrives.",
+      "quiz": {
+        "question": "What 'opponents' worried Cyrus most when his allies wanted to continue as before?",
+        "options": [
+          "A new enemy king",
+          "His own officers",
+          "Winter, cold and lack of supplies",
+          "A rival ally"
+        ],
+        "answer": 2,
+        "explanation": "He saw that circumstances like winter and hunger would defeat them unless they changed their approach."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--27",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "structure",
+        "time",
+        "priorities"
+      ],
+      "title": "Build a structure you can trust, so you have time for what matters most",
+      "body": "As his responsibilities grew, Cyrus faced a classic dilemma: the finances needed constant attention, but if he spent all his time on them he'd have none left for the most important work. His solution came from the army. Just as captains of ten were overseen by captains of a hundred, and so on up, he set up layers of trusted managers for every department. By talking with a few senior people he kept the whole system in hand, and ended up with more free time than someone running a single household. He kept one job for himself: choosing and training his closest colleagues.\n\nGood delegation isn't dumping work; it's building a reliable structure.",
+      "quote": "by conferring with a few officers he could keep the whole system under his control, and actually have more leisure for himself than the manager of a single household or the master of a single ship.",
+      "locator": "Book VIII ¶3",
+      "apply_it": "List the tasks only you can do. For everything else, name who could own it and what check-in would keep you informed.",
+      "quiz": {
+        "question": "Which task did Cyrus refuse to delegate?",
+        "options": [
+          "Collecting revenue",
+          "Managing his horses",
+          "Building roads",
+          "Choosing and training his closest colleagues"
+        ],
+        "answer": 3,
+        "explanation": "He set up layers of managers for everything else but kept the training of his key partners as his personal task."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--28",
+      "topic": "leadership",
+      "tags": [
+        "self-control",
+        "example",
+        "integrity",
+        "character"
+      ],
+      "title": "Self-control shows in what you do when no one is watching",
+      "body": "Cyrus believed people grow better through laws, but that a good leader is a living law, setting the standard by example. When people saw restraint in the man who had the most freedom to behave badly, they were readier to drop their own arrogance. Xenophon notes a distinction Cyrus drew: a modest person avoids shameful acts in public, but a self-controlled person avoids base acts even in secret.\n\nLeaders' habits spread through organisations faster than their policies. The private test, how you behave when no one would ever know, is what ultimately shapes the example you set.",
+      "quote": "the modest man will do nothing shameful in the light of day, but the man of self-control nothing base, not even in secret.",
+      "locator": "Book VIII ¶5",
+      "apply_it": "Pick one small shortcut you take when no one is watching. Drop it for a week and notice how it affects how you lead.",
+      "quiz": {
+        "question": "How did Cyrus distinguish modesty from self-control?",
+        "options": [
+          "They are the same thing",
+          "Modesty avoids shame in public; self-control avoids baseness even in secret",
+          "Self-control is only for soldiers",
+          "Modesty is stronger than self-control"
+        ],
+        "answer": 1,
+        "explanation": "Modesty depends on being seen, while self-control holds even when no one would ever know."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--29",
+      "topic": "leadership",
+      "tags": [
+        "generosity",
+        "friendship",
+        "wealth",
+        "trust"
+      ],
+      "title": "Friends you have helped are a better treasure than a hoard",
+      "body": "Croesus, once the richest king in the world, warned Cyrus that his generosity would make him poor. Cyrus responded with an experiment. He sent a friend round to his other friends saying he needed money for a project. They pledged far more than Croesus thought Cyrus could ever have saved. Hoarding, Cyrus said, only brings envy and the need for hired guards; friends made prosperous are themselves treasure, and better guardians too. The happiest person, he added, earns wealth honestly and uses it well.\n\nWhether in business or community life, money and help shared generously often come back as loyalty and support when you need it.",
+      "quote": "But I hold to it that if I make my friends rich they will be my treasures themselves, and far better guards too, for me and all we have, than if I set hired watchmen over my wealth.",
+      "locator": "Book VIII ¶13",
+      "apply_it": "Think of one person you could genuinely help get ahead this month, with an introduction, advice or a share of an opportunity. Do it.",
+      "quiz": {
+        "question": "How did Cyrus prove his point to Croesus?",
+        "options": [
+          "By showing him a hidden vault",
+          "By taxing his subjects",
+          "By asking his friends for money and receiving more than any hoard",
+          "By borrowing from Croesus"
+        ],
+        "answer": 2,
+        "explanation": "His friends pledged more than Croesus estimated a hoard would hold, showing that generosity had built a better treasure."
+      }
+    },
+    {
+      "id": "cyropaedia-xenophon--30",
+      "topic": "leadership",
+      "tags": [
+        "loyalty",
+        "kindness",
+        "succession",
+        "relationships"
+      ],
+      "title": "Loyalty isn't natural; every leader must earn it with kindness",
+      "body": "On his deathbed, Cyrus gave clear instructions for who would succeed him, so that there would be no dispute. He then told his elder son, the new king, that his power would be guarded not by a golden sceptre but by faithful friends. Loyalty, he warned, doesn't grow by itself like grass. Each leader must win his own followers, and the way to do it is not through force but through kindness.\n\nNew managers sometimes assume their title brings the team's loyalty with it. Cyrus's last advice says otherwise: trust has to be earned again by every leader, through care and fair treatment.",
+      "quote": "No, every leader must win his own followers for himself, and the way to win them is not by violence but by loving-kindness.",
+      "locator": "Book VIII ¶170",
+      "apply_it": "If you've recently taken over a team or role, ask each person one-on-one what they need from you to do their best work.",
+      "quiz": {
+        "question": "According to the dying Cyrus, what truly guards a kingdom?",
+        "options": [
+          "Faithful friends won by kindness",
+          "High walls",
+          "A golden sceptre",
+          "A large treasury"
+        ],
+        "answer": 0,
+        "explanation": "He told his son that loyal friends are the true sceptre, and they must be won through loving-kindness, not force."
+      }
+    }
+  ]
+}
