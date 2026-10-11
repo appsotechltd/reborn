@@ -18,6 +18,12 @@ describe("<CardView>", () => {
     expect(licence.getAttribute("rel")).toContain("license");
   });
 
+  it("labels the note on grief and heartbreak cards as support, even when flagged health", () => {
+    render(<CardView card={makeCard({ health: true, topic: "grief-loss", disclaimer: "You don't have to go through it alone." })} />);
+    const note = screen.getByRole("note", { name: /support note/i });
+    expect(note.textContent).toContain("Support note:");
+  });
+
   it("shows the health disclaimer when present", () => {
     const disclaimer = "This is general information, not medical advice.";
     render(<CardView card={makeCard({ health: true, topic: "health", disclaimer })} />);

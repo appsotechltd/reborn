@@ -27,6 +27,9 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "skills-mastery", name: "Skills & Mastery" },
 ];
 
+/** Topics whose cards carry the server's support note instead of the health disclaimer. */
+export const SUPPORT_TOPICS = new Set(["heartbreak-healing", "grief-loss"]);
+
 export function topicName(slug: string, topics?: Pick<Topic, "slug" | "name">[]): string {
   const list = topics && topics.length ? topics : TOPICS;
   return list.find((t) => t.slug === slug)?.name ?? slug.replace(/-/g, " ");

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { licenceName, paragraphs, topicName } from "@/lib/content";
+import { licenceName, paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
 import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
 import { ExplainerVideo } from "./ExplainerVideo";
@@ -78,10 +78,10 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       {card.disclaimer ? (
         <p
           role="note"
-          aria-label={card.health ? "Health disclaimer" : "Support note"}
+          aria-label={SUPPORT_TOPICS.has(card.topic) ? "Support note" : "Health disclaimer"}
           className="mt-6 rounded-lg border border-warn-border bg-warn px-4 py-3 text-sm text-warn-fg"
         >
-          <strong className="font-semibold">{card.health ? "Health note: " : "Support note: "}</strong>
+          <strong className="font-semibold">{SUPPORT_TOPICS.has(card.topic) ? "Support note: " : "Health note: "}</strong>
           {card.disclaimer}
         </p>
       ) : null}
