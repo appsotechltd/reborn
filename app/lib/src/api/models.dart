@@ -1049,7 +1049,7 @@ class FollowItem {
   );
 }
 
-/// A source in a list (e.g. an author's books).
+/// A source in a list (the library's books, an author's books).
 class SourceSummary {
   const SourceSummary({
     required this.id,
@@ -1057,6 +1057,8 @@ class SourceSummary {
     this.authors = const [],
     this.kind = '',
     this.cardCount = 0,
+    this.videoCount = 0,
+    this.topics = const [],
   });
 
   final String id;
@@ -1065,12 +1067,80 @@ class SourceSummary {
   final String kind;
   final int cardCount;
 
+  /// Cards with an explainer video.
+  final int videoCount;
+
+  /// Topic slugs of its published cards.
+  final List<String> topics;
+
   factory SourceSummary.fromJson(Map<String, dynamic> json) => SourceSummary(
     id: json['id'] as String? ?? '',
     title: json['title'] as String? ?? '',
     authors: _stringList(json['authors']),
     kind: json['kind'] as String? ?? '',
     cardCount: _int(json['card_count']),
+    videoCount: _int(json['video_count']),
+    topics: _stringList(json['topics']),
+  );
+}
+
+/// A page of GET /v1/sources.
+class SourceListPage {
+  const SourceListPage({required this.sources, this.nextCursor});
+  final List<SourceSummary> sources;
+  final String? nextCursor;
+
+  factory SourceListPage.fromJson(Map<String, dynamic> json) => SourceListPage(
+    sources: (json['sources'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(SourceSummary.fromJson)
+        .toList(),
+    nextCursor: json['next_cursor'] as String?,
+  );
+}
+
+/// An author in the library's list (GET /v1/authors).
+class AuthorSummary {
+  const AuthorSummary({
+    required this.name,
+    this.sources = 0,
+    this.cardCount = 0,
+    this.videoCount = 0,
+    this.topics = const [],
+    this.followers = 0,
+  });
+
+  final String name;
+
+  /// How many of their books are in the library.
+  final int sources;
+  final int cardCount;
+  final int videoCount;
+  final List<String> topics;
+  final int followers;
+
+  factory AuthorSummary.fromJson(Map<String, dynamic> json) => AuthorSummary(
+    name: json['name'] as String? ?? '',
+    sources: _int(json['sources']),
+    cardCount: _int(json['card_count']),
+    videoCount: _int(json['video_count']),
+    topics: _stringList(json['topics']),
+    followers: _int(json['followers']),
+  );
+}
+
+/// A page of GET /v1/authors.
+class AuthorListPage {
+  const AuthorListPage({required this.authors, this.nextCursor});
+  final List<AuthorSummary> authors;
+  final String? nextCursor;
+
+  factory AuthorListPage.fromJson(Map<String, dynamic> json) => AuthorListPage(
+    authors: (json['authors'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(AuthorSummary.fromJson)
+        .toList(),
+    nextCursor: json['next_cursor'] as String?,
   );
 }
 
@@ -1078,10 +1148,18 @@ class AuthorPage {
   const AuthorPage({
     required this.name,
     required this.sources,
+    this.cards = const [],
+    this.cardCount = 0,
+    this.videoCount = 0,
     this.follow = const FollowState(),
   });
   final String name;
   final List<SourceSummary> sources;
+
+  /// Every published card by them, ordered by book then card.
+  final List<IdeaCard> cards;
+  final int cardCount;
+  final int videoCount;
   final FollowState follow;
 
   factory AuthorPage.fromJson(Map<String, dynamic> json) => AuthorPage(
@@ -1090,6 +1168,9 @@ class AuthorPage {
         .whereType<Map<String, dynamic>>()
         .map(SourceSummary.fromJson)
         .toList(),
+    cards: parseCards(json['cards']),
+    cardCount: _int(json['card_count']),
+    videoCount: _int(json['video_count']),
     follow: FollowState.fromJson(json),
   );
 }

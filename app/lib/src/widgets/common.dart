@@ -338,6 +338,10 @@ class ProfileMenuButton extends ConsumerWidget {
           ),
         ],
         const PopupMenuItem(
+          value: '/library',
+          child: _MenuRow(Icons.local_library_outlined, 'Library'),
+        ),
+        const PopupMenuItem(
           value: '/premium',
           child: _MenuRow(Icons.workspace_premium_outlined, 'Premium'),
         ),

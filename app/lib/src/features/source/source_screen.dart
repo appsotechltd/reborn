@@ -6,6 +6,8 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
 import '../circles/circles_screen.dart';
+import '../library/card_collection.dart';
+import '../library/library_controller.dart';
 import '../social/follow_button.dart';
 
 const _licenceNames = {
@@ -37,17 +39,31 @@ class SourceScreen extends ConsumerWidget {
           error: e,
           onRetry: () => ref.invalidate(sourceProvider(sourceId)),
         ),
-        data: (f) => ListView(
-          children: [
+        data: (f) {
+          final cards = f.value.cards;
+          final page = 'source:$sourceId';
+          final videos = cards.any((c) => c.explainer != null);
+          final shown = visibleCards(
+            cards,
+            videos && ref.watch(videosOnlyProvider(page)),
+          );
+          final before = [
             ReadingWidth(
               child: _SourceHeader(
                 source: f.value.source,
-                count: f.value.cards.length,
+                count: cards.length,
                 follow: f.value.follow,
               ),
             ),
-            for (final c in f.value.cards)
-              ReadingWidth(child: CardTile(card: c)),
+            ReadingWidth(
+              child: CardCollectionBar(
+                page: page,
+                cards: cards,
+                listenLabel: 'Listen to this book',
+              ),
+            ),
+          ];
+          final after = [
             ReadingWidth(
               child: SourceCircles(
                 sourceId: f.value.source.id,
@@ -55,8 +71,26 @@ class SourceScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 24),
-          ],
-        ),
+          ];
+          return ListView.builder(
+            itemCount: before.length + shown.length + after.length,
+            itemBuilder: (context, i) {
+              if (i < before.length) return before[i];
+              i -= before.length;
+              if (i < shown.length) {
+                final c = shown[i];
+                return ReadingWidth(
+                  child: CardTile(
+                    key: ValueKey('source-card-${c.id}'),
+                    card: c,
+                    trailing: c.explainer != null ? const HasVideoIcon() : null,
+                  ),
+                );
+              }
+              return after[i - shown.length];
+            },
+          );
+        },
       ),
     );
   }

@@ -222,6 +222,15 @@ class ListenController extends Notifier<ListenState> {
     await _cue(state.index);
   }
 
+  /// Starts Listen mode on a fixed list of [cards] (a book's or an
+  /// author's ideas) from [index]. The queue is just these cards: no more
+  /// pages load. Seen and read work as on the timeline.
+  Future<void> startCards(List<IdeaCard> cards, {int index = 0}) =>
+      startTimeline(
+        posts: [for (final c in cards) Post.fromCard(c)],
+        index: index,
+      );
+
   /// Plays one card (its page's Listen button): its recording, or else the
   /// device voice. No queue follows it.
   Future<void> playCard(IdeaCard card) async {
