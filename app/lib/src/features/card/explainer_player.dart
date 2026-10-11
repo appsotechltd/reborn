@@ -170,8 +170,7 @@ class _ExplainerPlayerState extends State<ExplainerPlayer> {
         const SizedBox(height: 6),
         Text(
           '${e.kind == 'film' ? 'Short film' : 'Animated explainer'} · '
-          '${seconds < 60 ? '$seconds s' : '${(seconds / 60).toStringAsFixed(1)} min'}'
-          '${e.narrated ? '' : ' · captions on screen'}',
+          '${seconds < 60 ? '$seconds s' : '${(seconds / 60).toStringAsFixed(1)} min'}',
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),

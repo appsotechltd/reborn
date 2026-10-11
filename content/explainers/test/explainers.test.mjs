@@ -69,3 +69,12 @@ test("sample film plans are valid", async () => {
     assert.deepEqual(checkPlan(plan, await loadCard(plan.card_id)), [], f);
   }
 });
+
+test("only approved voices can narrate", async () => {
+  const { approvedVoice, VOICES, DEFAULT_VOICE } = await import("../src/voices.mjs");
+  assert.equal(VOICES.length, 15);
+  assert.ok(VOICES.includes(DEFAULT_VOICE));
+  assert.deepEqual(approvedVoice("George"), { name: "george", engine: "kokoro", kokoroVoice: "bm_george" });
+  assert.equal(approvedVoice("bella-chatterbox").engine, "chatterbox");
+  for (const bad of ["af_heart", "fenrir", "nicole", "chatterbox", "elevenlabs"]) assert.throws(() => approvedVoice(bad), /not an approved voice/);
+});

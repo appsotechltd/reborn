@@ -129,7 +129,7 @@ void main() {
       findsOneWidget,
     );
     expect(
-      find.text('Animated explainer · 49 s · captions on screen'),
+      find.text('Animated explainer · 49 s'),
       findsOneWidget,
     );
     // The credit stays on the card even with a video.

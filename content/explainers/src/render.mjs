@@ -4,12 +4,13 @@
 //   node src/render.mjs                         render every script in scripts/
 //   node src/render.mjs aesops-fables--07       render one card
 //   node src/render.mjs --stills                write a few PNG frames per card instead (fast preview)
-//   node src/render.mjs --voice none            force a silent render even if a voice key is set
+//   node src/render.mjs --voice george          narrate in an approved voice (src/voices.mjs); "none" renders silent
 //   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora, swarm, depth)
 //   node src/render.mjs --sample samples/seneca-photo.json   render a style sample to out/samples/
 //
-// Env: ELEVENLABS_API_KEY (+ optional ELEVENLABS_VOICE_ID, ELEVENLABS_MODEL) adds narration.
-//      CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
+// A script can set "voice" too; --voice wins. Videos never show captions on screen (they hide
+// the picture); the spoken words go to a .vtt file next to each video instead.
+// Env: CHROMIUM_PATH points at a Chromium binary if Playwright's own is not installed.
 import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { spawn } from "node:child_process";
@@ -83,12 +84,12 @@ async function addScore(timeline, voiceFile, outFile, base) {
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
-  const entry = await renderScenes(browser, card, script.scenes, { ...opt, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme });
+  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme });
   return entry && { ...entry, script: `scripts/${cardId}.json` };
 }
 
 /**
- * Renders scenes for a card to `${opt.base}.mp4` (+ .jpg poster and .vtt captions).
+ * Renders scenes for a card to `${opt.base}.mp4` (+ .jpg poster and a .vtt of the narration).
  * Also used by the film pipeline to render its end card.
  */
 export async function renderScenes(browser, card, scenes, opt) {
@@ -96,7 +97,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
   await resolveImages(scenes, opt.imageProvider !== undefined ? { provider: opt.imageProvider } : {});
-  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null, captionStyle: opt.captionStyle || null };
+  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null };
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
   page.on("pageerror", (e) => console.error(`[${cardId}] page error:`, e.message));
@@ -149,7 +150,7 @@ export async function renderScenes(browser, card, scenes, opt) {
   await page.screenshot({ path: `${base}.jpg`, type: "jpeg", quality: 85, scale: "css" });
   await page.close();
   await writeFile(`${base}.vtt`, toVtt(timeline));
-  console.log(`\r${cardId}: ${timeline.duration.toFixed(1)}s, ${frames} frames in ${((Date.now() - started) / 1000).toFixed(0)}s${provider ? `, narrated (${provider.name})` : ", silent with captions"}`);
+  console.log(`\r${cardId}: ${timeline.duration.toFixed(1)}s, ${frames} frames in ${((Date.now() - started) / 1000).toFixed(0)}s${provider ? `, narrated (${provider.name})` : ", silent"}`);
 
   return {
     video: `${path.basename(base)}.mp4`,
@@ -174,9 +175,9 @@ async function renderSample(file, opt) {
   const card = await loadCard(script.card_id);
   const browser = await launchBrowser();
   try {
-    await renderScenes(browser, card, script.scenes, { ...opt, label: path.basename(file, ".json"),
+    await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: path.basename(file, ".json"),
       base: path.join(OUT, "samples", path.basename(file, ".json")), fps: script.fps, theme: opt.theme || script.theme,
-      captionStyle: script.captionStyle, captionMax: script.captionMax, score: script.score });
+      captionMax: script.captionMax, score: script.score });
   } finally {
     await browser.close();
   }

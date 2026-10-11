@@ -1,9 +1,7 @@
 {
   "card_id": "on-the-shortness-of-life-seneca--01",
-  "about": "Cinematic stills look: AI images with slow camera moves, composed music, word-by-word captions.",
+  "about": "Cinematic stills look: AI images with slow camera moves, composed music, no on-screen captions.",
   "theme": "photo",
-  "captionStyle": "cinema",
-  "captionMax": 4,
   "score": true,
   "scenes": [
     { "type": "shape",

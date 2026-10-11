@@ -5,7 +5,7 @@
  * (0..ctx.duration). ctx = { card, params, duration, index }.
  *
  * Coordinates are in the 540x960 stage. The illustration band is y 100-710;
- * captions sit below it, so scenes keep their content above y 710.
+ * the source credit sits below it, so scenes keep their content above y 710.
  * Illustrations are original drawings: no book covers or copyrighted imagery.
  */
 (function () {

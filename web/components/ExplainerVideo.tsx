@@ -28,7 +28,6 @@ export function ExplainerVideo({ card }: { card: Card }) {
       </video>
       <figcaption className="mt-2 text-center text-sm text-muted">
         {e.kind === "film" ? "Short film" : "Animated explainer"} · {seconds < 60 ? `${seconds} s` : `${Math.round(seconds / 6) / 10} min`}
-        {e.narrated ? null : " · captions on screen"}
       </figcaption>
     </figure>
   );

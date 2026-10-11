@@ -17,7 +17,6 @@
     timeline = tl;
     const card = tl.card;
     if (tl.theme) document.body.dataset.theme = tl.theme; else delete document.body.dataset.theme;
-    if (tl.captionStyle) document.body.dataset.captions = tl.captionStyle; else delete document.body.dataset.captions;
     R.bg.setup(el("bgcanvas"), tl.theme, [...tl.scenes.slice(1).map((s) => s.start), ...tl.scenes.flatMap((s) => (s.beats || []).map((b) => b.start))], tl.scale || 2, tl);
     el("topic").textContent = card.topicName;
     el("health").hidden = !card.health;
@@ -61,25 +60,6 @@
       m.node.style.visibility = a > 0 ? "visible" : "hidden";
       if (a > 0) m.impl.update(m.node, R.clamp(local, 0, d), m.ctx, m.state);
     }
-
-    // Burned-in captions: the phrase being spoken right now.
-    let cur = null;
-    for (const s of timeline.scenes) {
-      for (const c of s.captions) {
-        if (t >= c.start && t < c.end) cur = c;
-      }
-    }
-    const cap = el("caption");
-    const text = cur ? cur.text : "";
-    if (timeline.captionStyle === "cinema") {
-      // Word by word: each word lights up as it is spoken.
-      if (cap.dataset.text !== text) { cap.dataset.text = text; cap.innerHTML = R.words(text, "cw"); }
-      if (cur) {
-        const ws = cap.querySelectorAll(".cw");
-        const p = (t - cur.start) / (cur.end - cur.start);
-        ws.forEach((w, i) => w.classList.toggle("on", i <= Math.floor(p * ws.length)));
-      }
-    } else if (cap.textContent !== text) cap.textContent = text;
 
     el("progress").style.width = `${(R.clamp(t / timeline.duration) * 100).toFixed(2)}%`;
   };

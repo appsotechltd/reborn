@@ -53,7 +53,7 @@
       // The end card needs a quiet backdrop for the credit: fade the picture down under it.
       const end = tl.scenes.find((s) => s.type === "end");
       if (end && t > end.start - 0.4) { g.fillStyle = `rgba(0,0,0,${(0.72 * R.ease(R.seg(t, end.start - 0.4, end.start + 0.6))).toFixed(3)})`; g.fillRect(0, 0, W, H); }
-      // Grade: darken a touch, deepen the bottom for captions and credit.
+      // Grade: darken a touch, deepen the bottom for the credit.
       g.fillStyle = "rgba(0,0,0,0.12)"; g.fillRect(0, 0, W, H);
       const low = g.createLinearGradient(0, H * 0.5, 0, H);
       low.addColorStop(0, "rgba(0,0,0,0)"); low.addColorStop(1, "rgba(0,0,0,0.78)");

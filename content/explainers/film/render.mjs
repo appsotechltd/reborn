@@ -8,9 +8,9 @@
 //
 // Each shot is generated once and cached by provider + prompt, so editing one
 // shot only re-renders that shot. Narration uses the same provider as the
-// animated explainers (ElevenLabs when ELEVENLABS_API_KEY is set). Captions,
-// the source credit and any health note are burned in, and the film ends on
-// the same end card as the animated explainers.
+// animated explainers (an approved voice, chosen with --voice). The source
+// credit and any health note are burned in; captions are not (they hide the picture)
+// and go to a .vtt file instead. The film ends on the same end card as the animated explainers.
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
@@ -65,20 +65,18 @@ const assTime = (s) => {
 };
 const assText = (s) => s.replace(/[{}]/g, "").replace(/\n/g, "\\N");
 
-/** Captions at the bottom, the source credit (and health note) at the top. */
-function subtitles(card, cues, filmSeconds) {
+/** The source credit (and health note) at the top. Spoken words are never burned in. */
+function overlays(card, filmSeconds) {
   const lines = [
     "[Script Info]", "ScriptType: v4.00+", `PlayResX: ${W}`, `PlayResY: ${H}`, "WrapStyle: 0", "",
     "[V4+ Styles]",
     "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-    "Style: Caption,Inter,40,&H00F3FAFF,&H00F3FAFF,&H00000000,&H50201A16,1,0,0,0,100,100,0,0,3,14,0,2,60,60,230,1",
     "Style: Credit,Inter,20,&H00F3FAFF,&H00F3FAFF,&H00000000,&H78000000,0,0,0,0,100,100,0,0,3,8,0,8,40,40,40,1",
     "Style: Health,Inter,22,&H0008475C,&H0008475C,&H00000000,&H00D6F4FF,1,0,0,0,100,100,0,0,3,8,0,8,40,40,96,1",
     "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     `Dialogue: 0,${assTime(0)},${assTime(filmSeconds)},Credit,,0,0,0,,${assText(`From ${card.sourceTitle} · ${card.authors.join(", ")} · ${card.licenceName}`)}`,
   ];
   if (card.health) lines.push(`Dialogue: 0,${assTime(0)},${assTime(filmSeconds)},Health,,0,0,0,,General information, not medical advice.`);
-  for (const c of cues) lines.push(`Dialogue: 1,${assTime(c.start)},${assTime(c.end)},Caption,,0,0,0,,${assText(c.text)}`);
   return lines.join("\n") + "\n";
 }
 
@@ -143,9 +141,9 @@ async function renderFilm(cardId, opt) {
     t += s.seconds;
   });
   const assFile = path.join(dir, "captions.ass");
-  await writeFile(assFile, subtitles(card, cues, filmSeconds));
+  await writeFile(assFile, overlays(card, filmSeconds));
 
-  // 4. Assemble: shots + end card, burn in captions/credit, lay narration over.
+  // 4. Assemble: shots + end card, burn in the credit, lay narration over.
   const inputs = [...norm, `${endBase}.mp4`].flatMap((f) => ["-i", f]);
   const n = norm.length + 1;
   const audioInputs = delays.flatMap((d) => ["-i", d.file]);
@@ -186,7 +184,7 @@ async function main() {
     else opt.ids.push(a[i]);
   }
   if (!opt.ids.length) {
-    console.error("usage: node film/render.mjs <card-id> [...] [--dry-run] [--provider veo|runway] [--voice elevenlabs|none] [--publish]");
+    console.error("usage: node film/render.mjs <card-id> [...] [--dry-run] [--provider veo|runway] [--voice <approved voice>|none] [--publish]");
     process.exit(2);
   }
   const manifestFile = path.join(OUT, "manifest.json");

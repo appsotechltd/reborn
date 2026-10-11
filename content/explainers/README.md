@@ -14,7 +14,9 @@ Two kinds:
 Every video credits its source on screen the whole time, ends on a card with the full credit
 and licence, and health cards keep "General information, not medical advice" on screen plus
 the full disclaimer at the end. Illustrations are drawn from scratch: no book covers or
-copyrighted imagery.
+copyrighted imagery. Videos never show captions on screen, because they hide the picture; the
+narration is written to a `.vtt` file next to each video, which players can show when a viewer
+turns captions on.
 
 ## Setup
 
@@ -44,7 +46,7 @@ an optional voice-over line. Card text, credit, licence and the health note come
 
 ```sh
 npm run stills -- aesops-fables--07   # a few PNG frames per scene in .cache/stills (seconds)
-npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster + .vtt captions, updates out/manifest.json
+npm run render -- aesops-fables--07   # out/<id>.mp4 + .jpg poster + .vtt of the narration, updates out/manifest.json
 npm run render                        # every script
 npm test
 ```
@@ -73,24 +75,28 @@ The page is a pure function of time (`window.__seek(t)`), so renders are repeata
 
 ### Narration
 
-Videos are narrated by **Kokoro-82M**, a free open-weights voice (Apache-2.0 licence, fine for
-commercial use) that runs locally on the CPU. Install it once:
+Videos are narrated in one of the **approved voices** (`src/voices.mjs`), the only voices Reborn
+uses. Pick whichever suits the card with `"voice"` in its script or `--voice <name>`; the default
+is `heart`.
+
+| Engine | Voices |
+|---|---|
+| Kokoro | `heart`, `bella`, `emma`, `michael`, `george`, `sarah`, `alloy`, `nova`, `adam`, `echo`, `eric`, `liam` |
+| Chatterbox | `heart-chatterbox`, `bella-chatterbox`, `george-chatterbox` |
+
+Both engines are free and run locally. **Kokoro-82M** (Apache-2.0) is fast on a CPU. **Chatterbox**
+(MIT) is more expressive and slower. Its three voices are copies of the Kokoro voices with the
+same names: Chatterbox clones a short clip that Kokoro reads first (cached in `.cache/voices`).
 
 ```sh
 tools/setup-kokoro.sh          # Python venv + model files (about 350 MB) in .cache/kokoro
-npm run render                 # narrates automatically when Kokoro is installed
+tools/setup-chatterbox.sh      # only for the Chatterbox voices; needs huggingface.co
+npm run render -- --voice george
 ```
 
-The default voice is `af_heart`, Kokoro's best-rated voice. Change it with `KOKORO_VOICE`
-(British options: `bf_emma`, `bm_george`, `bm_fable`) and the pace with `KOKORO_SPEED`
-(default 0.95). Scene timing follows the real audio, and captions stay burned in so videos
-still work muted.
-
-With `ELEVENLABS_API_KEY` set (optional `ELEVENLABS_VOICE_ID`, `ELEVENLABS_MODEL`), ElevenLabs
-is used instead. `--voice kokoro|elevenlabs|none` picks one explicitly; with neither installed
-the video renders silent with captions. Audio is cached in `.cache/audio` by text and voice,
-so re-renders only voice changed lines. Another provider plugs in through `src/narration.mjs`
-(`synthesize(text) -> mp3 bytes`).
+`KOKORO_SPEED` sets the pace (default 0.95). Scene timing follows the real audio. `--voice none`
+renders silently, with timings from reading speed. Audio is cached in `.cache/audio` by text and
+voice, so re-renders only voice the lines that changed.
 
 ## Looks
 
@@ -101,7 +107,7 @@ so re-renders only voice changed lines. Another provider plugs in through `src/n
 shot on a word of its narration with `params.beats: [{ "word": "drifting", "image": {...} }]`.
 
 `"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
-under the voice. `"captionStyle": "cinema"` with `"captionMax": 4` shows short, word-by-word captions.
+under the voice.
 
 Photo images come from Google Imagen through the Gemini API (`GEMINI_API_KEY`, optional
 `IMAGEN_MODEL`) and are cached in `.cache/images` by prompt, so each is paid for once (about $0.02 an
@@ -117,10 +123,10 @@ GEMINI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json
    voice-over script and shot list (`film/schema.mjs`) and writes `film/plans/<card-id>.json`.
    Review and edit it. Two hand-written samples are there already.
 2. **Preview for free.** `npm run film:render -- <card-id> --dry-run` prints every prompt;
-   `--provider animatic` renders placeholder clips so pacing and captions can be checked.
+   `--provider animatic` renders placeholder clips so pacing can be checked.
 3. **Render.** `FILM_PROVIDER=veo GEMINI_API_KEY=...` or `FILM_PROVIDER=runway RUNWAYML_API_SECRET=...`,
    then `npm run film:render -- <card-id>`. Each shot is generated once and cached; clips are
-   cut to length, captions, credit and health note are burned in, narration is laid over, and
+   cut to length, the credit and health note are burned in (captions go to a `.vtt` file), narration is laid over, and
    the film ends on the same end card as the animated videos. Output: `out/<card-id>.film.mp4`.
 4. **Publish.** Add `--publish` to make the film the card's explainer in `out/manifest.json`.
 

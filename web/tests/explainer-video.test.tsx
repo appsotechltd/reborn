@@ -22,7 +22,9 @@ describe("explainer video", () => {
     expect(video.getAttribute("poster")).toMatch(/^https?:\/\/[^/]+\/media\/explainers\/example-book--01\.jpg$/);
     expect(container.querySelector("source")?.getAttribute("src")).toMatch(/\/media\/explainers\/example-book--01\.mp4$/);
     expect(container.querySelector("track")?.getAttribute("kind")).toBe("captions");
-    expect(screen.getByText(/52 s · captions on screen/)).toBeTruthy();
+    expect(screen.getByText(/52 s/)).toBeTruthy();
+    expect(screen.queryByText(/captions on screen/)).toBeNull();
+    expect(container.querySelector("track")?.hasAttribute("default")).toBe(false);
     expect(screen.getByTestId("card-credit")).toBeTruthy();
   });
 
