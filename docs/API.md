@@ -169,7 +169,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/cards/{id}` | none | | `Card` |
 | `GET /v1/cards` | none | `?ids=a,b,c` (max 100) | `{"cards":[Card]}` |
 | `POST /v1/cards/{id}/view` | required | | `204`. Records that the user read the card: counts toward the streak, daily goal and referral rewards, once per card. Call when a card is opened, or after a timeline post has been on screen for 8 seconds |
-| `GET /v1/sources` | none | `?topic=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards |
+| `GET /v1/sources` | none | `?topic=&q=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","video_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards. `q` matches title or author names (case-insensitive substring). `video_count` counts cards with an explainer video |
 | `GET /v1/sources/{id}` | optional | | `{"source":Source,"cards":[Card],"follow":{"followers","is_following"}}`. `Source` has the fields in content/SCHEMA.md |
 | `GET /v1/sitemap` | none | | `{"cards":[{"id","updated_at"}],"sources":[{"id","updated_at"}],"topics":["business",...]}` for building sitemaps |
 | `GET /v1/search` | optional | `?q=sleep&topic=health&limit=20` | `{"cards":[Card]}`. `q` may be omitted when `topic` is given, to browse the topic |
@@ -199,7 +199,8 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/users/{handle}` | optional | | `Profile` |
 | `GET /v1/users/{handle}/favorites` | optional | `?cursor=&limit=20` | `{"posts":[Post],"next_cursor"}` |
 | `GET /v1/users/{handle}/followers` | none | `?cursor=&limit=50` | `{"users":[{"id","handle","display_name"}],"next_cursor"}` |
-| `GET /v1/authors/{name}` | optional | | `{"name","sources":[...],"followers","is_following"}` |
+| `GET /v1/authors` | optional | `?topic=&q=&cursor=&limit=50` | `{"authors":[{"name","sources","card_count","video_count","topics":[...],"followers"}],"next_cursor":"..."|null}`, everyone with published cards, ordered by name. `q` matches the name; `topic` keeps authors with cards in it |
+| `GET /v1/authors/{name}` | optional | | `{"name","sources":[...],"cards":[Card],"card_count","video_count","followers","is_following"}`. `cards` is every published card by the author, ordered by book then card |
 | `GET /v1/gifts/tiers` | none | | `{"tiers":[{"id","name","amount_cents","currency","product_id"}],"providers":{"stripe","apple","google"}}`. A provider is `false` until its keys are set |
 | `POST /v1/posts/{id}/gifts/checkout` | required | `{"tier"}` | `{"gift_id","url"}` (201). Send the browser to `url` (Stripe Checkout). It returns to `/ideas/{id}?gift={gift_id}`. `503 gifts_unavailable` without Stripe keys |
 | `POST /v1/posts/{id}/gifts/apple` | required | `{"signed_transaction"}` (StoreKit 2 JWS) | `Gift` (201). Verified against Apple's root certificate; a transaction counts once |

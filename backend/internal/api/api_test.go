@@ -231,6 +231,19 @@ func TestPublicBrowsing(t *testing.T) {
 	if n := len(list(h.do("GET", "/v1/sources", "", nil, 200), "sources")); n != 3 {
 		t.Fatalf("all sources = %d", n)
 	}
+	if srcs := list(h.do("GET", "/v1/sources?q=marcus", "", nil, 200), "sources"); len(srcs) != 1 || srcs[0].(map[string]any)["id"] != "meditations-marcus-aurelius" {
+		t.Fatalf("sources?q = %v", srcs)
+	}
+	authors := list(h.do("GET", "/v1/authors", "", nil, 200), "authors")
+	if len(authors) != 3 {
+		t.Fatalf("authors = %v", authors)
+	}
+	if a := list(h.do("GET", "/v1/authors?q=aurel", "", nil, 200), "authors"); len(a) != 1 || a[0].(map[string]any)["name"] != "Marcus Aurelius" || a[0].(map[string]any)["card_count"].(float64) < 1 {
+		t.Fatalf("authors?q = %v", a)
+	}
+	if a := list(h.do("GET", "/v1/authors?topic=health", "", nil, 200), "authors"); len(a) != 1 {
+		t.Fatalf("authors?topic = %v", a)
+	}
 	sm := h.do("GET", "/v1/sitemap", "", nil, 200)
 	if len(list(sm, "cards")) != 9 || len(list(sm, "sources")) != 3 || len(list(sm, "topics")) != 23 {
 		t.Fatalf("sitemap = %v", sm)

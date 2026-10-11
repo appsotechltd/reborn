@@ -109,7 +109,7 @@ func TestTimeline(t *testing.T) {
 		}
 	}
 	a := h.do("GET", "/v1/authors/"+url.PathEscape("Marcus Aurelius"), tok, nil, 200)
-	if a["is_following"] != true || len(list(a, "sources")) != 1 {
+	if a["is_following"] != true || len(list(a, "sources")) != 1 || len(list(a, "cards")) != int(a["card_count"].(float64)) || len(list(a, "cards")) == 0 {
 		t.Fatalf("author page = %v", a)
 	}
 	src := h.do("GET", "/v1/sources/nhs-sleep-tips", tok, nil, 200)

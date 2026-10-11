@@ -200,7 +200,7 @@ func (s *Server) sources(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	list, err := s.Store.Sources(r.Context(), topic, offset, limit)
+	list, err := s.Store.Sources(r.Context(), topic, strings.TrimSpace(r.URL.Query().Get("q")), offset, limit)
 	if err != nil {
 		s.fail(w, r, err, "sources")
 		return
@@ -224,4 +224,32 @@ func (s *Server) sitemap(w http.ResponseWriter, r *http.Request) {
 		topics[i] = t.Slug
 	}
 	writeJSON(w, http.StatusOK, map[string]any{"cards": cards, "sources": sources, "topics": topics})
+}
+
+func (s *Server) authors(w http.ResponseWriter, r *http.Request) {
+	topic := r.URL.Query().Get("topic")
+	if topic != "" && !content.IsTopic(topic) {
+		writeError(w, http.StatusBadRequest, "bad_request", "unknown topic")
+		return
+	}
+	limit := intParam(r, "limit", 50, 1, 200)
+	offset := 0
+	if c := r.URL.Query().Get("cursor"); c != "" {
+		var err error
+		if offset, err = strconv.Atoi(c); err != nil || offset < 0 {
+			writeError(w, http.StatusBadRequest, "bad_request", "invalid cursor")
+			return
+		}
+	}
+	list, err := s.Store.Authors(r.Context(), topic, strings.TrimSpace(r.URL.Query().Get("q")), offset, limit)
+	if err != nil {
+		s.fail(w, r, err, "authors")
+		return
+	}
+	var next *string
+	if len(list) == limit {
+		n := strconv.Itoa(offset + limit)
+		next = &n
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"authors": list, "next_cursor": next})
 }
