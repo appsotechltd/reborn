@@ -109,12 +109,22 @@ shot on a word of its narration with `params.beats: [{ "word": "drifting", "imag
 `"score": true` adds original music and sound effects composed by `tools/score.py` (numpy), mixed
 under the voice.
 
-Photo images come from Google Imagen through the Gemini API (`GEMINI_API_KEY`, optional
-`IMAGEN_MODEL`) and are cached in `.cache/images` by prompt, so each is paid for once (about $0.02 an
-image on Imagen 4 Fast; check Google's pricing first). Style samples render to `out/samples/`:
+Photo images come from one of three providers, each read from its own key. Images are cached in
+`.cache/images` by provider and prompt, so each one is paid for only once:
+
+| Provider | Key | Default for |
+|---|---|---|
+| OpenAI (`gpt-image-1`, override with `OPENAI_IMAGE_MODEL`) | `OPENAI_API_KEY` | photoreal shots and card art |
+| Ideogram 3.0 | `IDEOGRAM_API_KEY` | images with words in them (`image: { prompt, text }`), such as quote images |
+| Google Imagen (`IMAGEN_MODEL`) | `GEMINI_API_KEY` | fallback |
+
+When the preferred provider has no key, the next one that does is used. Force one for a whole render with
+`--image-provider openai|ideogram|imagen` or `IMAGE_PROVIDER`, or for one image with `provider` on it.
+Check each provider's current prices before a large run. Style samples render to `out/samples/`:
 
 ```sh
-GEMINI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json
+OPENAI_API_KEY=... node src/render.mjs --sample samples/seneca-photo.json --image-provider openai
+node src/images.mjs "A dark stone wall at dusk" --text "Life is long enough" --out quote.png
 ```
 
 ## Realistic films
