@@ -15,6 +15,7 @@ import '../../tv/tv_mode.dart';
 import '../../widgets/common.dart';
 import '../card/video_autoplay.dart';
 import '../daily/daily_screen.dart';
+import '../listen/listen_controller.dart';
 import '../notifications/notifications_controller.dart';
 import '../notifications/notifications_screen.dart';
 import '../post/post_store.dart';
@@ -66,6 +67,11 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   late final SeenTracker _tracker;
   late final AppLifecycleListener _lifecycle;
   bool _measureScheduled = false;
+
+  /// The post on screen, where Listen mode starts: the swipe feed's page,
+  /// or the most visible post in the column feed.
+  int _swipePage = 0;
+  String? _onScreen;
 
   @override
   void initState() {
@@ -151,16 +157,47 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     }
     _videos.setActive(best);
 
-    if (!ref.read(sessionProvider).signedIn) return;
+    final signedIn = ref.read(sessionProvider).signedIn;
+    String? onScreen;
+    var onScreenFraction = 0.0;
+    var onScreenTop = double.infinity;
     for (final e in _probes.entries) {
       var fraction = 0.0;
       final r = visibleOf(e.value);
       if (r != null) {
         fraction =
             r.intersect(vpRect).height / math.min(r.height, vpRect.height);
+        if (fraction > onScreenFraction + 0.001 ||
+            ((fraction - onScreenFraction).abs() <= 0.001 &&
+                r.top < onScreenTop)) {
+          onScreen = e.key;
+          onScreenFraction = fraction;
+          onScreenTop = r.top;
+        }
       }
-      _tracker.update(e.key, fraction);
+      if (signedIn) _tracker.update(e.key, fraction);
     }
+    _onScreen = onScreen;
+  }
+
+  /// Starts Listen mode from the post on screen (or the top of the feed),
+  /// with the feed's topic filter, and opens the player.
+  void _listen() {
+    final state = ref.read(timelineProvider).value;
+    if (state == null || state.posts.isEmpty) return;
+    var index = WindowSize.of(context).isCompact
+        ? _swipePage
+        : state.posts.indexWhere((p) => p.id == _onScreen);
+    if (index < 0 || index >= state.posts.length) index = 0;
+    ref
+        .read(listenProvider.notifier)
+        .startTimeline(
+          posts: state.posts,
+          index: index,
+          cursor: state.nextCursor,
+          topics: ref.read(timelineProvider.notifier).topics,
+        );
+    context.push('/listen');
   }
 
   Future<void> _refresh() {
@@ -202,12 +239,19 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final size = WindowSize.of(context);
     final swipe = size.isCompact;
     ref.listen(timelineFilterProvider, (_, _) {
+      _swipePage = 0;
       if (_scroll.hasClients) _scroll.jumpTo(0);
     });
     return Scaffold(
       appBar: AppBar(
         title: const Wordmark(),
         actions: [
+          IconButton(
+            key: const ValueKey('listen-feed'),
+            tooltip: 'Listen',
+            icon: const Icon(Icons.headphones_outlined),
+            onPressed: _listen,
+          ),
           IconButton(
             tooltip: 'Swipe through ideas',
             icon: const Icon(Icons.swipe_vertical_outlined),
@@ -241,6 +285,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
                           onRefresh: _refresh,
                           onPreload: _preload,
                           onLoadMore: _loadMore,
+                          onPage: (i) => _swipePage = i,
                         )
                       : _wide(state, signedIn, size);
                 },
@@ -423,6 +468,7 @@ class _SwipeFeed extends StatefulWidget {
     required this.onRefresh,
     required this.onPreload,
     required this.onLoadMore,
+    this.onPage,
   });
 
   final TimelineState state;
@@ -432,6 +478,9 @@ class _SwipeFeed extends StatefulWidget {
   final Future<void> Function() onRefresh;
   final void Function(TimelineState state, int index) onPreload;
   final VoidCallback onLoadMore;
+
+  /// The page now on screen.
+  final ValueChanged<int>? onPage;
 
   @override
   State<_SwipeFeed> createState() => _SwipeFeedState();
@@ -494,6 +543,7 @@ class _SwipeFeedState extends State<_SwipeFeed> {
 
   void _onPage(int index) {
     _page = index;
+    widget.onPage?.call(index);
     _sync();
     setState(() {}); // page position semantics
   }

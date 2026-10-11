@@ -128,6 +128,44 @@ class Explainer {
   };
 }
 
+/// A card's voiced recording (Listen mode). It reads the title, body,
+/// "Apply it." and the apply-it line, the health note when there is one, and
+/// "From `source`, by `authors`."
+class CardAudio {
+  const CardAudio({
+    required this.url,
+    this.durationS = 0,
+    this.voice = '',
+    this.voiceName = '',
+  });
+
+  /// Absolute, or a path relative to the API base URL (like explainers).
+  final String url;
+  final double durationS;
+
+  /// The voice id, e.g. `bm_george`.
+  final String voice;
+
+  /// The voice's display name, e.g. `George`.
+  final String voiceName;
+
+  Duration get duration => Duration(milliseconds: (durationS * 1000).round());
+
+  factory CardAudio.fromJson(Map<String, dynamic> json) => CardAudio(
+    url: json['url'] as String? ?? '',
+    durationS: (json['duration_s'] as num?)?.toDouble() ?? 0,
+    voice: json['voice'] as String? ?? '',
+    voiceName: json['voice_name'] as String? ?? '',
+  );
+
+  Map<String, dynamic> toJson() => {
+    'url': url,
+    'duration_s': durationS,
+    'voice': voice,
+    'voice_name': voiceName,
+  };
+}
+
 /// An idea card. Named `IdeaCard` to avoid clashing with Material's `Card`.
 class IdeaCard {
   const IdeaCard({
@@ -145,6 +183,7 @@ class IdeaCard {
     required this.source,
     required this.credit,
     this.explainer,
+    this.audio,
   });
 
   final String id;
@@ -163,6 +202,9 @@ class IdeaCard {
 
   /// The card's explainer video, when one is rendered.
   final Explainer? explainer;
+
+  /// The card's voiced recording, absent until one is made.
+  final CardAudio? audio;
 
   factory IdeaCard.fromJson(Map<String, dynamic> json) => IdeaCard(
     id: json['id'] as String,
@@ -185,6 +227,12 @@ class IdeaCard {
     explainer: json['explainer'] is Map<String, dynamic>
         ? Explainer.fromJson(json['explainer'] as Map<String, dynamic>)
         : null,
+    audio:
+        json['audio'] is Map<String, dynamic> &&
+            ((json['audio'] as Map<String, dynamic>)['url'] as String? ?? '')
+                .isNotEmpty
+        ? CardAudio.fromJson(json['audio'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -202,10 +250,31 @@ class IdeaCard {
     'source': source.toJson(),
     'credit': credit,
     if (explainer != null) 'explainer': explainer!.toJson(),
+    if (audio != null) 'audio': audio!.toJson(),
   };
 
-  /// Text read aloud by the Listen button.
-  String get spokenText => '$title.\n\n$body\n\nApply it. $applyIt';
+  /// Text read aloud by the device voice when the card has no [audio]: the
+  /// same script as the recording (title, body, apply it, the health note
+  /// when there is one, and where it comes from).
+  String get spokenText {
+    final b = StringBuffer('$title.\n\n$body\n\nApply it. $applyIt');
+    final note = disclaimer?.trim() ?? '';
+    if (note.isNotEmpty) b.write('\n\n$note');
+    if (source.title.isNotEmpty) {
+      b.write('\n\nFrom ${source.title}');
+      if (source.authors.isNotEmpty) {
+        b.write(', by ${_andList(source.authors)}');
+      }
+      b.write('.');
+    }
+    return b.toString();
+  }
+}
+
+/// "A", "A and B", "A, B and C".
+String _andList(List<String> items) {
+  if (items.length <= 1) return items.join();
+  return '${items.sublist(0, items.length - 1).join(', ')} and ${items.last}';
 }
 
 List<IdeaCard> parseCards(Object? v) => v is List

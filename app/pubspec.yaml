@@ -47,6 +47,10 @@ dependencies:
   firebase_core: ^4.15.0
   firebase_messaging: ^16.7.0
   flutter_timezone: ^5.1.1
+  just_audio: ^0.10.6
+  audio_service: ^0.18.19
+  path_provider: ^2.1.6
+  audio_session: ^0.2.4
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +77,9 @@ flutter:
   assets:
     - assets/fonts/Fraunces-OFL.txt
     - assets/fonts/Figtree-OFL.txt
+    # Listen mode: the chime between cards and the lock-screen artwork.
+    - assets/audio/chime.mp3
+    - assets/audio/artwork.png
 
   # Candlelight fonts, bundled so nothing is fetched at runtime.
   # Both are SIL Open Font License 1.1 (licence texts above, shown on the
