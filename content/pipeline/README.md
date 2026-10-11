@@ -16,7 +16,7 @@ python -m unittest -v
 1. Check its licence is on the allow-list in [../SOURCES.md](../SOURCES.md).
 2. Add a `[[source]]` entry to [sources.toml](sources.toml) with its adapter and expected licence.
 3. `python -m reborn_content fetch <id>`; the adapter refuses it if the upstream licence differs.
-4. Read `../build/passages/<id>.jsonl`, write `../library/<id>.json` (3–10 cards, our own words,
+4. Read `../build/passages/<id>.jsonl`, write `../library/<id>.json` (30–50 cards: fewer than 30 is flagged, more than 50 is rejected; our own words,
    quotes copied exactly with the passage's `locator`).
 5. `validate` and `verify` until clean, then `stats --markdown > ../LIBRARY.md`.
 

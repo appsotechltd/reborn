@@ -85,13 +85,31 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 |---|---|
 | `business` | Business |
 | `psychology` | Psychology |
+| `mental-strength` | Mental Strength & Resilience |
 | `health` | Health & Wellness |
 | `emotional-intelligence` | Emotional Intelligence |
 | `personal-development` | Personal Development |
 | `productivity` | Productivity & Career |
 | `money` | Money |
 | `relationships` | Relationships |
+| `dating-marriage` | Dating & Marriage |
 | `mindfulness` | Mindfulness & Philosophy |
+| `faith-wisdom` | Faith & Wisdom |
+| `leadership` | Leadership |
+| `parenting` | Parenting & Family |
+| `communication` | Communication & Influence |
+| `creativity` | Creativity |
+| `learning` | Learning & Thinking |
+| `lives-history` | Lives & History |
+| `entrepreneurship` | Entrepreneurship |
+| `heartbreak-healing` | Heartbreak & Healing |
+| `grief-loss` | Grief & Loss |
+| `study-smarter` | Study Smarter |
+| `skills-mastery` | Skills & Mastery |
+
+`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
+
+Cards in `heartbreak-healing` and `grief-loss` always show a support note pointing to people who can help, in place of the health disclaimer. Write them gently.
 
 ## Example
 

@@ -45,7 +45,7 @@
     },
     {
       "id": "discourses-epictetus--02",
-      "topic": "productivity",
+      "topic": "skills-mastery",
       "tags": [
         "stoicism",
         "habits",
@@ -120,7 +120,7 @@
     },
     {
       "id": "discourses-epictetus--05",
-      "topic": "personal-development",
+      "topic": "learning",
       "tags": [
         "stoicism",
         "learning",
@@ -145,7 +145,7 @@
     },
     {
       "id": "discourses-epictetus--06",
-      "topic": "personal-development",
+      "topic": "mental-strength",
       "tags": [
         "stoicism",
         "resilience",
@@ -166,6 +166,1106 @@
         ],
         "answer": 0,
         "explanation": "He advised practising on minor troubles first, then moving to bigger ones."
+      }
+    },
+    {
+      "id": "discourses-epictetus--07",
+      "topic": "personal-development",
+      "tags": [
+        "effort",
+        "self-improvement",
+        "comparison"
+      ],
+      "title": "Don't neglect something just because you'll never be the best at it",
+      "body": "Epictetus admits he is naturally slow and will never match the greatest people of his age. He asks whether that is a reason to stop trying, and answers no. He will never be a champion athlete, yet he still looks after his body. He will never be the richest man, yet he still manages his money.\n\nThe trap he names is despair about reaching the top, which quietly turns into neglect. Most of life's value comes from being decent and improving at things, not from being world-class. Your health, your savings and your craft all repay ordinary, steady care, whatever your talent level.",
+      "quote": "I shall never be a Milo, and yet I do not neglect my body; nor shall I be a Croesus, and yet I do not neglect my property",
+      "apply_it": "Pick one area you have given up on because you'll 'never be great at it'. Set one small, ordinary standard for it this week.",
+      "locator": "Book I, II. How a Man on Every Occasion Can… ¶9",
+      "quiz": {
+        "question": "What does Epictetus conclude from knowing he will never be a top athlete or the richest man?",
+        "options": [
+          "He still takes care of his body and property",
+          "He should focus only on what he is best at",
+          "He should stop comparing and stop trying",
+          "He should find a teacher who is the best"
+        ],
+        "answer": 0,
+        "explanation": "He refuses to let despair of reaching the highest level become an excuse for neglecting things that still deserve care."
+      }
+    },
+    {
+      "id": "discourses-epictetus--08",
+      "topic": "personal-development",
+      "tags": [
+        "progress",
+        "results",
+        "learning"
+      ],
+      "title": "Judge your progress by results, not by the tools you own",
+      "body": "Epictetus mocks students who show off how much of a philosophy book they have studied. He compares them to an athlete who, asked to show his shoulders, proudly holds up his training weights. Nobody cares about the weights, he says; they want to see what the weights have done to you.\n\nThe same applies today to courses bought, books read, apps downloaded and notes taken. Those are equipment. Real progress shows up in how you act: whether you are calmer, more honest, more skilled, more reliable. Epictetus asks you to look at the change in yourself, not at the pile of material you have gathered.",
+      "quote": "If I were talking to an athlete, I should say: Show me your shoulders; and then he might say, “Here are my Halteres.” You and your Halteres look to that.",
+      "apply_it": "Name one book or course you finished recently. Write one specific way your behaviour has changed because of it. If you can't, practise it this week.",
+      "locator": "Book I, IV. Of Progress or Improvement ¶3",
+      "quiz": {
+        "question": "In Epictetus's athlete example, what does he actually want to see?",
+        "options": [
+          "The quality of the training weights",
+          "How many hours were spent training",
+          "The effect the training has had on the body",
+          "The name of the athlete's coach"
+        ],
+        "answer": 2,
+        "explanation": "He wants the 'shoulders', not the 'halteres': the visible result of training, not the equipment or the effort spent."
+      }
+    },
+    {
+      "id": "discourses-epictetus--09",
+      "topic": "psychology",
+      "tags": [
+        "adversity",
+        "complaining",
+        "growth"
+      ],
+      "title": "Fix the small problem instead of complaining that it exists",
+      "body": "Someone complains to Epictetus that his nose runs. Epictetus replies: that is what hands are for. It is far better to wipe your nose than to find fault with the world for allowing runny noses.\n\nHe widens the point with Hercules. Without the lion, the hydra and the other monsters, Hercules would have been nobody special; the hardships gave him the chance to show his strength. Epictetus argues we are given the capacities to deal with what happens to us. Complaining wastes the energy that could solve the problem, while tackling it turns an annoyance into practice and even into something to be proud of.",
+      "quote": "Nay, how much better it is to wipe your nose than to find fault.",
+      "apply_it": "Next time you catch yourself complaining about a small problem, stop and ask: what is the 'wipe your nose' action here? Do it.",
+      "locator": "Book I, VI. Of Providence ¶4",
+      "quiz": {
+        "question": "What does Epictetus say about Hercules and the monsters he faced?",
+        "options": [
+          "The monsters were punishments he deserved",
+          "He should have avoided them and lived quietly",
+          "Others should have fought them for him",
+          "Without them, he would never have shown what he was capable of"
+        ],
+        "answer": 3,
+        "explanation": "Epictetus argues the lion, hydra and other trials were what made Hercules Hercules; difficulties are the occasions for using our strength."
+      }
+    },
+    {
+      "id": "discourses-epictetus--10",
+      "topic": "relationships",
+      "tags": [
+        "helping",
+        "dignity",
+        "empathy"
+      ],
+      "title": "When people are struggling, offer real help, not pity",
+      "body": "Epictetus tells of a man who had lost his rank and wealth. Epictetus wrote a letter on his behalf in a pleading, sorrowful tone. The man read it and handed it back, saying he wanted help, not pity, because nothing bad had happened to him as a person.\n\nThe story is a reminder that pity can quietly lower someone. It treats them as broken and defines them by their misfortune. People going through hard times often want practical support while keeping their dignity: an introduction, a job lead, a hand with a task. Speak to them and about them as capable adults who have had a setback.",
+      "quote": "I wished for your help, not your pity: no evil has happened to me.",
+      "apply_it": "Think of someone going through a hard time. Instead of saying how sorry you feel, offer one concrete thing you could do for them.",
+      "locator": "Book I, IX. How from the Fact That We Are Akin to… ¶6",
+      "quiz": {
+        "question": "Why did the man give Epictetus's letter back?",
+        "options": [
+          "It asked for help in a pitying tone he didn't want",
+          "It was addressed to the wrong person",
+          "It asked for too much money",
+          "It praised him too highly"
+        ],
+        "answer": 0,
+        "explanation": "He wanted practical help but rejected being pitied; he didn't consider himself harmed as a person by losing wealth and rank."
+      }
+    },
+    {
+      "id": "discourses-epictetus--11",
+      "topic": "mental-strength",
+      "tags": [
+        "loss",
+        "anger",
+        "possessions"
+      ],
+      "title": "When something is taken from you, notice what you can still never lose",
+      "body": "Epictetus once kept an iron lamp beside his household shrine. One night he heard a noise, ran down, and found the lamp stolen. He reflected that the thief had done nothing surprising, and told himself he would simply get a clay lamp tomorrow.\n\nHis point is that we can only lose things we have, and the things we have are outside us. The thief valued the lamp so much he gave up his honesty for it; Epictetus kept his calm and his character. When you are robbed or cheated, take sensible steps, but don't add a second loss by letting anger take over your peace of mind.",
+      "quote": "Tomorrow, I said, you will find an earthen lamp",
+      "apply_it": "Recall something you lost or had taken. List what was actually lost, then list what you still kept: your skills, character, relationships.",
+      "locator": "Book I, XVIII. That We Ought Not to Be Angry with the… ¶2",
+      "quiz": {
+        "question": "How did Epictetus respond when his iron lamp was stolen?",
+        "options": [
+          "He chased the thief through the streets",
+          "He swore never to own anything again",
+          "He calmly planned to replace it with a cheaper clay lamp",
+          "He blamed his neighbours for not watching"
+        ],
+        "answer": 2,
+        "explanation": "He judged the theft unsurprising and decided to replace it with an earthenware lamp, refusing to let the loss disturb him."
+      }
+    },
+    {
+      "id": "discourses-epictetus--12",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "impressions",
+        "judgment"
+      ],
+      "title": "Check your first impressions the way a jeweller tests gold",
+      "body": "Epictetus notes how carefully people test coins: the money changer looks, touches, smells and even listens to the ring of a coin before accepting it. Yet we accept thoughts and impressions about our lives with no testing at all.\n\nHe calls examining impressions the first and chief work of a thinking person: sorting them, and letting none in without inspection. Today that means pausing before you accept a rumour, a headline, an angry interpretation of someone's message, or a fearful story about your future. Ask what evidence you have, what else might be true, and whether the impression is genuine or fake currency.",
+      "quote": "it is the chief and the first work of a philosopher to examine appearances, and to distinguish them, and to admit none without examination.",
+      "apply_it": "Today, catch one strong impression (\"she's ignoring me\", \"this will fail\"). Test it: what's the evidence, and what's another explanation?",
+      "locator": "Book I, XX. About Reason, How It Contemplates Itself ¶1",
+      "quiz": {
+        "question": "What comparison does Epictetus use for examining impressions?",
+        "options": [
+          "A farmer sorting seeds",
+          "A sailor reading the weather",
+          "A doctor checking a pulse",
+          "An assayer testing coins with several senses"
+        ],
+        "answer": 3,
+        "explanation": "He points out how carefully people test coins by sight, touch, smell and sound, and asks us to test impressions just as carefully."
+      }
+    },
+    {
+      "id": "discourses-epictetus--13",
+      "topic": "mental-strength",
+      "tags": [
+        "adversity",
+        "resilience",
+        "training"
+      ],
+      "title": "Treat a hard season as a tough sparring partner",
+      "body": "Epictetus opens one discourse with the line that difficulties reveal what people are. When trouble comes, he says, picture a wrestling trainer who has paired you with a rough young opponent. Why? So that you can become a champion, which never happens without sweat.\n\nHe also warns against being like a cowardly scout who sees a shadow and runs back shouting that the enemy is near. Fear magnifies danger. A hard season, whether a difficult boss, a money squeeze or a setback, is the opponent that builds your strength if you choose to engage with it as an athlete would.",
+      "quote": "It is circumstances (difficulties) which show what men are.",
+      "apply_it": "Name your current biggest difficulty. Write one skill or strength it could build in you if you face it like training.",
+      "locator": "Book I, XXIV. How We Should Struggle with… ¶1",
+      "quiz": {
+        "question": "According to Epictetus, why might the trainer pair you with a rough opponent?",
+        "options": [
+          "To punish you for laziness",
+          "So you can become a champion through the struggle",
+          "To make the match quick",
+          "Because no gentle opponents were available"
+        ],
+        "answer": 1,
+        "explanation": "The rough opponent is how champions are made; hardship is the training that reveals and builds strength."
+      }
+    },
+    {
+      "id": "discourses-epictetus--14",
+      "topic": "mindfulness",
+      "tags": [
+        "opinions",
+        "stress",
+        "status"
+      ],
+      "title": "Much of your pressure comes from what you insist you must have",
+      "body": "A man complains to Epictetus that he wants the best seats at the games, reserved for senators. Epictetus says he is squeezing himself. Don't be a spectator at all, or wait until the show ends and then sit in the senators' seats in the sun.\n\nHis general truth: it is we who put ourselves in tight spots, and it is our opinions that squeeze us. Many of our stresses come from fixed ideas about status, about being seen in the right place, or about how things must go. Loosen the requirement and the pressure eases, often with little real loss.",
+      "quote": "it is we who squeeze ourselves, who put ourselves in straits",
+      "apply_it": "List one situation that's stressing you. Underline the 'must' behind it (I must get, I must be seen). Ask what happens if you drop it.",
+      "locator": "Book I, XXV. On the Same ¶5",
+      "quiz": {
+        "question": "What does Epictetus mean by saying we 'squeeze ourselves'?",
+        "options": [
+          "Our own opinions and demands create much of our pressure",
+          "Crowded places are bad for health",
+          "We should always fight for the best seats",
+          "Other people deliberately make our lives harder"
+        ],
+        "answer": 0,
+        "explanation": "He argues the pressure comes from our opinions, such as insisting on a senator's seat, rather than from the situation itself."
+      }
+    },
+    {
+      "id": "discourses-epictetus--15",
+      "topic": "study-smarter",
+      "tags": [
+        "learning",
+        "pacing",
+        "self-awareness"
+      ],
+      "title": "Know your current capacity before you take on the hardest material",
+      "body": "Epictetus says the beginning of wisdom is noticing the state of your own mind. If you know it is still weak, you won't throw it at the hardest problems first.\n\nHe pokes fun at people who can't digest a mouthful yet buy whole volumes and try to swallow them, then suffer the consequences. Learners today do the same with ten courses at once, or by jumping into advanced material before the basics. Honest self-assessment lets you choose the next right step, digest it, and build from there. Faster progress comes from learning at the right level, not from biting off the most.",
+      "quote": "if men cannot swallow even a morsel, they buy whole volumes and attempt to devour them",
+      "apply_it": "Look at what you're trying to learn. Is it the right level? Choose the one next-step resource and park the rest for later.",
+      "locator": "Book I, XXVI. What Is the Law of Life ¶3",
+      "quiz": {
+        "question": "What mistake does Epictetus describe in people who 'buy whole volumes'?",
+        "options": [
+          "Reading too slowly",
+          "Spending too much money on books",
+          "Taking on more than they can digest before knowing their capacity",
+          "Refusing to read at all"
+        ],
+        "answer": 2,
+        "explanation": "He says people who can't swallow a morsel try to devour whole books; know your capacity first."
+      }
+    },
+    {
+      "id": "discourses-epictetus--16",
+      "topic": "psychology",
+      "tags": [
+        "habits",
+        "language",
+        "reframing"
+      ],
+      "title": "Fight a bad habit by practising its opposite",
+      "body": "When asked how to deal with a troublesome habit, Epictetus answers simply: with the contrary habit. He gives the example of how people talk about death and misfortune, repeating phrases that deepen distress. Tear yourself away from those expressions, he advises, and practise a different way of speaking.\n\nHabits of thought and speech are built by repetition, so they are also replaced by repetition. If you habitually say 'I always mess up', practise saying 'I made a mistake and can fix it'. If you scroll whenever bored, practise a short walk. Willpower alone rarely removes a habit; a rehearsed alternative does.",
+      "quote": "What aid then can we find against habit? The contrary habit.",
+      "apply_it": "Pick one unhelpful habit of speech or action. Write its opposite, and practise the opposite three times today.",
+      "locator": "Book I, XXVII. In How Many Ways Appearances Exist, and… ¶1",
+      "quiz": {
+        "question": "What does Epictetus recommend as the remedy for a troublesome habit?",
+        "options": [
+          "Avoiding all situations that trigger it",
+          "Punishing yourself each time",
+          "Waiting for it to fade with age",
+          "Deliberately practising the contrary habit"
+        ],
+        "answer": 3,
+        "explanation": "He says the aid against habit is the contrary habit, built through practice, including how we speak about events."
+      }
+    },
+    {
+      "id": "discourses-epictetus--17",
+      "topic": "communication",
+      "tags": [
+        "disagreement",
+        "persuasion",
+        "peace"
+      ],
+      "title": "If you can't change someone's mind, join in kindly or stay quiet",
+      "body": "Must we correct everyone who sees things differently? Epictetus says no; it is enough to be persuaded yourself. When children run up clapping and shouting that today is a wonderful festival, we don't lecture them that festivals aren't truly good. We clap along.\n\nSo when you can't change someone's mind, he suggests, either join in with good grace or stay silent. Many arguments, online and at home, change nothing and cost relationships. Save persuasion for when someone is open to it, and otherwise keep your own convictions without needing to win.",
+      "quote": "when you are not able to make a man change his mind, be assured that he is a child, and clap your hands with him; and if you do not choose to do this, keep silent.",
+      "apply_it": "Before your next debate, ask: is this person open to changing their mind? If not, choose warmth or silence instead of argument.",
+      "locator": "Book I, XXIX. On Constancy (Or Firmness) ¶7",
+      "quiz": {
+        "question": "What does Epictetus suggest when you cannot change someone's mind?",
+        "options": [
+          "Join in kindly or keep silent",
+          "Keep repeating your argument louder",
+          "End the relationship",
+          "Ask a third person to judge"
+        ],
+        "answer": 0,
+        "explanation": "Using the clapping children at a festival, he advises going along kindly or staying silent, since being persuaded yourself is enough."
+      }
+    },
+    {
+      "id": "discourses-epictetus--18",
+      "topic": "mindfulness",
+      "tags": [
+        "solitude",
+        "reframing",
+        "contentment"
+      ],
+      "title": "Call time alone 'peace' and a crowd 'a festival'",
+      "body": "Epictetus observes that discontented people find fault with every situation. Alone, they complain of loneliness; with others, they complain that people are rogues and nuisances, including their own family and neighbours.\n\nHe suggests a deliberate change of labels. When you're alone, call it tranquillity and freedom. When you're among many, don't call it a crowd or a hassle; call it a festival and a gathering. We can't escape other people or remake them, but the names we give our circumstances shape how we feel in them. Choosing kinder names is a small, practical way to accept life as it comes.",
+      "quote": "you ought when you are alone to call this condition by the name of tranquillity and freedom",
+      "apply_it": "Next time you feel lonely, say 'this is quiet time'. Next time you're in a packed bus or busy home, say 'this is a gathering'. Notice any shift.",
+      "locator": "Book I, XII. Of Contentment ¶3",
+      "quiz": {
+        "question": "What does Epictetus suggest we call being among many people?",
+        "options": [
+          "A test of patience",
+          "A waste of time",
+          "A festival and assembly",
+          "An unavoidable burden"
+        ],
+        "answer": 2,
+        "explanation": "He advises calling a crowd a festival and assembly instead of trouble, and calling solitude tranquillity and freedom."
+      }
+    },
+    {
+      "id": "discourses-epictetus--19",
+      "topic": "mental-strength",
+      "tags": [
+        "fear",
+        "courage",
+        "caution"
+      ],
+      "title": "Put your caution where your choices are, and your courage everywhere else",
+      "body": "Hunters once drove deer by waving feathers. Frightened by the harmless feathers, the deer ran straight into the deadly nets. Epictetus says we behave the same way: we panic over things outside our control, such as loss, criticism or hardship, while being careless about what is in our control, such as acting dishonestly or rashly.\n\nHis fix is to swap them. Be confident about external events, since worry doesn't change them. Be careful about your own decisions, words and actions, where care actually makes a difference. Misplaced fear wastes energy on shadows and leaves the real traps unguarded.",
+      "quote": "We are then in the condition of deer when they flee from the huntsmen’s feathers in fright",
+      "apply_it": "List two things you fear this week. Mark each 'mine' or 'not mine'. Put care into the 'mine' items and let the others go.",
+      "locator": "Book II, I. That Confidence (Courage) Is Not… ¶2",
+      "quiz": {
+        "question": "In Epictetus's image, what is the deer's mistake?",
+        "options": [
+          "It runs too slowly",
+          "It trusts the hunters",
+          "It stays in one place too long",
+          "It fears harmless feathers and runs into the real danger of the nets"
+        ],
+        "answer": 3,
+        "explanation": "The deer confuse what to fear: they flee harmless feathers into deadly nets, as we fear externals and neglect our own choices."
+      }
+    },
+    {
+      "id": "discourses-epictetus--20",
+      "topic": "mental-strength",
+      "tags": [
+        "integrity",
+        "preparation",
+        "character"
+      ],
+      "title": "The best preparation for a crisis is how you have lived all along",
+      "body": "When Socrates was reminded to prepare a defence for his trial, he replied that he had been preparing for it all his life. How? By keeping hold of what was in his own power, and never doing anything unjust in private or public.\n\nEpictetus holds this up as the source of calm under pressure. You can't fully script a crisis, an audit or a tough conversation. But if you have acted honestly day after day, you have far less to hide or fear, and your past conduct becomes your strongest case. Daily integrity is quiet preparation for moments you can't predict.",
+      "quote": "Do you not think then that I have been preparing for it all my life?",
+      "apply_it": "Ask: if my last month of conduct were reviewed tomorrow, what would I be nervous about? Start fixing that today.",
+      "locator": "Book II, II. Of Tranquillity (Freedom from… ¶2",
+      "quiz": {
+        "question": "How did Socrates say he had prepared for his trial?",
+        "options": [
+          "By living justly and keeping to what was in his power",
+          "By hiring the best speaker in Athens",
+          "By studying the laws for weeks",
+          "By making friends with the judges"
+        ],
+        "answer": 0,
+        "explanation": "He said his whole life had been preparation: he had kept to what was in his power and never acted unjustly."
+      }
+    },
+    {
+      "id": "discourses-epictetus--21",
+      "topic": "business",
+      "tags": [
+        "reputation",
+        "character",
+        "networking"
+      ],
+      "title": "Your conduct is your best letter of recommendation",
+      "body": "Epictetus retells a story about Diogenes. Someone asked him for a letter of recommendation. Diogenes replied that the reader would see he was a man the moment he met him, and if the reader was a good judge of character, he'd know whether he was good or bad. If not, ten thousand letters wouldn't help.\n\nReferences and introductions have their place, but they can't substitute for who you are. Experienced people judge you by how you behave once they meet you. Invest more in being competent, honest and reliable than in polishing what others say about you.",
+      "quote": "he will know whether you are good or bad, if he is by experience skillful to distinguish the good and the bad",
+      "apply_it": "Before your next interview or important meeting, spend as much time preparing how you'll act as on how you'll present your CV.",
+      "locator": "Book II, III. To Those Who Recommend Persons to… ¶1",
+      "quiz": {
+        "question": "What was Diogenes's point about letters of recommendation?",
+        "options": [
+          "Letters should always be long and detailed",
+          "A skilled judge will know your character from meeting you; letters can't replace it",
+          "Only famous people should write them",
+          "They are the main way to get ahead"
+        ],
+        "answer": 1,
+        "explanation": "Diogenes said an experienced person would see your character directly, and an inexperienced one wouldn't learn it from any number of letters."
+      }
+    },
+    {
+      "id": "discourses-epictetus--22",
+      "topic": "parenting",
+      "tags": [
+        "family",
+        "generosity",
+        "conflict"
+      ],
+      "title": "Give up the small thing and gain a better character",
+      "body": "Epictetus describes what it means to be a good brother or sister: give way easily, speak well of your sibling, and don't fight over things outside your control. Readily let them have those, so you gain more of what depends on you.\n\nHe makes it vivid: instead of winning a lettuce or a seat, you gain goodness of disposition. Many family quarrels are about small things such as who got the bigger share, the better chair or the last word. Letting those go isn't weakness. It is a trade that keeps peace and builds character.",
+      "quote": "For see what a thing it is, in place of a lettuce, if it should so happen, or a seat, to gain for yourself goodness of disposition.",
+      "apply_it": "Think of a recurring small dispute with a sibling or relative. Next time it comes up, give way gracefully and notice the result.",
+      "locator": "Book II, X. How We May Discover the Duties of Life… ¶2",
+      "quiz": {
+        "question": "According to Epictetus, what do you gain by giving up a lettuce or seat to your brother?",
+        "options": [
+          "Your brother's debt to you",
+          "A reputation for weakness",
+          "Goodness of disposition",
+          "A better seat next time"
+        ],
+        "answer": 2,
+        "explanation": "He says letting go of small external things lets you gain something far more valuable: a good disposition."
+      }
+    },
+    {
+      "id": "discourses-epictetus--23",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "standards",
+        "judgment"
+      ],
+      "title": "Don't trust what merely seems right; find a standard to check it",
+      "body": "Epictetus says philosophy begins when you notice that people disagree about what is good and right, and you start distrusting what merely 'seems' so. Different people and cultures are equally sure of contradictory things, so seeming can't settle the matter.\n\nIn weighing goods we use a balance; in carpentry we use a straight rule. Likewise, he urges us to find a standard for judging our choices and then use it consistently. In practice: before deciding, ask what principle you're applying, and whether you'd accept it if someone else used it. A clear rule beats a strong feeling.",
+      "quote": "a condemnation and distrust of that which only “seems,” and a certain investigation of that which “seems” whether it “seems” rightly",
+      "apply_it": "Write down one principle you want to guide your decisions this month (e.g. 'Would I be fine if this were public?'). Apply it to one choice today.",
+      "locator": "Book II, XI. What the Beginning of Philosophy Is ¶2",
+      "quiz": {
+        "question": "What tools does Epictetus compare to a rule for judging what is right?",
+        "options": [
+          "A compass and a map",
+          "A clock and a calendar",
+          "A key and a lock",
+          "A balance for weights and a carpenter's rule"
+        ],
+        "answer": 3,
+        "explanation": "He compares the needed standard to a balance for weights and a carpenter's square for straightness."
+      }
+    },
+    {
+      "id": "discourses-epictetus--24",
+      "topic": "communication",
+      "tags": [
+        "communication",
+        "patience",
+        "teaching"
+      ],
+      "title": "When someone doesn't understand, guide them instead of mocking them",
+      "body": "Epictetus notices that clever people, when they fail to persuade someone less educated, often give up and sneer that nothing can be done with such a person. But a guide who finds a traveller lost doesn't laugh at him and walk off; he leads him to the right road.\n\nHis advice: show the person the truth clearly and they will often follow. And if you can't yet show it, don't ridicule them. Recognise the limits of your own ability to explain. This applies to customers, colleagues, children and anyone learning something new.",
+      "quote": "a guide, when he has found a man out of the road leads him into the right way: he does not ridicule or abuse him and then leave him.",
+      "apply_it": "Recall someone you recently gave up on explaining something to. Try a simpler explanation, an example or a picture.",
+      "locator": "Book II, XII. Of Disputation or Discussion ¶1",
+      "quiz": {
+        "question": "According to Epictetus, if you can't persuade someone, what should you conclude?",
+        "options": [
+          "Recognise your own lack of ability to show them",
+          "They are not worth talking to",
+          "They should be mocked so they learn",
+          "It's best to stop all discussion"
+        ],
+        "answer": 0,
+        "explanation": "He says don't ridicule them; rather feel your own incapacity, because shown the truth clearly, people tend to follow."
+      }
+    },
+    {
+      "id": "discourses-epictetus--25",
+      "topic": "mental-strength",
+      "tags": [
+        "anxiety",
+        "approval",
+        "performance"
+      ],
+      "title": "You get anxious when you want what isn't in your power",
+      "body": "Epictetus says that when he sees an anxious person, he asks what they want. A lute player singing alone feels no anxiety. Put him on stage and he trembles, even if he plays well, because he wants not only to play well but to win applause, and applause isn't in his control.\n\nWhere we have skill and control, we feel confident. Anxiety gathers around outcomes we can't command, such as other people's approval. Before a presentation or performance, shift your aim to what you can do: prepare, play your part well, and let the audience's reaction be theirs.",
+      "quote": "If he did not want something which is not in his power, how could he be anxious?",
+      "apply_it": "Before your next high-stakes moment, write: 'My job is to ___.' Make it about your effort, not about the reaction you get.",
+      "locator": "Book II, XIII. On Anxiety (Solicitude) ¶1",
+      "quiz": {
+        "question": "Why does the lute player feel anxious in the theatre but not when alone?",
+        "options": [
+          "He has forgotten his music",
+          "The theatre has bad acoustics",
+          "He wants applause, which is not in his power",
+          "He is unwell"
+        ],
+        "answer": 2,
+        "explanation": "On stage he wants the crowd's applause as well as to play well, and applause is outside his control."
+      }
+    },
+    {
+      "id": "discourses-epictetus--26",
+      "topic": "mental-strength",
+      "tags": [
+        "catastrophizing",
+        "fear",
+        "perspective"
+      ],
+      "title": "Fear blows things up bigger than they really are",
+      "body": "Epictetus admits that on a sea voyage, looking at the endless water, he would imagine that if wrecked he must drink up the whole sea. It never occurred to him that a few pints would be enough. In an earthquake he imagined the whole city falling on him, when one stone would do the same harm.\n\nThe lesson isn't about drowning; it's about how the mind magnifies. What disturbs us, he says, is our opinion, not the sea. Catastrophic thinking piles up imagined scale. Bringing a fear back to its real size makes it something you can think about and act on.",
+      "quote": "What then disturbs me? The sea? No, but my opinion.",
+      "apply_it": "Take one big worry and write its realistic size: what actually happens, how much, for how long. Compare with the version in your head.",
+      "locator": "Book II, XVI. That We Do Not Strive to Use Our… ¶3",
+      "quiz": {
+        "question": "What point does Epictetus make with the image of drinking up the whole sea?",
+        "options": [
+          "Sea travel is always dangerous",
+          "One should learn to swim",
+          "Water is scarce on ships",
+          "Our opinions exaggerate dangers far beyond their real size"
+        ],
+        "answer": 3,
+        "explanation": "He imagined needing to drink the whole sea when a little would suffice; it's opinion, not the sea, that disturbs us."
+      }
+    },
+    {
+      "id": "discourses-epictetus--27",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "openness",
+        "mindset"
+      ],
+      "title": "You only get from learning what you're willing to change",
+      "body": "Students complained that they gained nothing from his school. Epictetus asked who actually came in order to improve, to have their opinions examined, or to learn what they lacked. If you come only to collect clever arguments and confirm what you already believe, you'll naturally leave with exactly what you brought.\n\nThe same is true of books, mentors, therapy and training at work. Benefit depends on arriving ready to let go of some views and practise new ones. Walk in asking 'what might I be wrong about?' rather than 'how can I show what I know?'",
+      "quote": "Why do you wonder then if you carry back from the school the very things which you bring into it?",
+      "apply_it": "Before your next class, meeting or book, write one belief you're willing to have challenged by it.",
+      "locator": "Book II, XXI. Of Inconsistency ¶3",
+      "quiz": {
+        "question": "Why, according to Epictetus, did some students gain nothing from school?",
+        "options": [
+          "They came to display, not to correct their opinions",
+          "The lessons were too difficult",
+          "They lacked natural talent",
+          "The school was too far away"
+        ],
+        "answer": 0,
+        "explanation": "They didn't come to have their principles corrected, so they carried home exactly what they brought."
+      }
+    },
+    {
+      "id": "discourses-epictetus--28",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "trust",
+        "values"
+      ],
+      "title": "Judge a friendship by what each person truly values",
+      "body": "Epictetus notes that people who seem the best of friends can turn on each other once something they both crave comes between them, like dogs when meat is thrown between them. Wars and family feuds have started that way.\n\nSo don't judge a friendship by shared upbringing, oaths or how close people appear. Ask where each person places their interest. If they value externals such as money, status and possessions above their character, the bond is fragile. Friendships built on shared commitment to honesty, loyalty and decency are the ones that survive competition and temptation.",
+      "quote": "examine this only, wherein they place their interest, whether in externals or in the will.",
+      "apply_it": "Think about your closest friendships. Would they survive a disagreement over money or opportunity? Invest in the ones built on shared values.",
+      "locator": "Book II, XXII. On Friendship ¶8",
+      "quiz": {
+        "question": "What does Epictetus say we should examine to judge whether people are true friends?",
+        "options": [
+          "How long they have known each other",
+          "Where they place their interest: in externals or in their own character",
+          "Whether they grew up together",
+          "How often they swear loyalty"
+        ],
+        "answer": 1,
+        "explanation": "He says ignore appearances and oaths; check whether people place their good in externals or in the will."
+      }
+    },
+    {
+      "id": "discourses-epictetus--29",
+      "topic": "personal-development",
+      "tags": [
+        "purpose",
+        "focus",
+        "distraction"
+      ],
+      "title": "Don't settle in at a pleasant stop and forget where you were going",
+      "body": "Epictetus pictures a traveller heading home who finds a comfortable inn and simply stays there. Man, he says, you've forgotten your purpose: you were passing through this inn, not travelling to it. There are many pleasant inns and meadows, but they are for passing through.\n\nHe was warning students who got so taken with clever speech and arguments that they stopped short of actually improving their lives. The same happens with a comfortable job that was meant as a stepping stone, or a tool or hobby that replaces the goal it was meant to serve. Enjoy the inn, but keep travelling.",
+      "quote": "you were not travelling to this inn, but you were passing through it.",
+      "apply_it": "Name one comfortable 'inn' in your life (a role, habit or stage). Ask: is this where I meant to arrive, or a stop on the way?",
+      "locator": "Book II, XXIII. On the Power of Speaking ¶7",
+      "quiz": {
+        "question": "What mistake does the traveller in Epictetus's story make?",
+        "options": [
+          "He chooses an expensive inn",
+          "He travels too fast to enjoy the journey",
+          "He refuses to rest anywhere",
+          "He stays at a pleasant inn and forgets his real destination"
+        ],
+        "answer": 3,
+        "explanation": "He was only meant to pass through the inn but, pleased with it, stayed and forgot his purpose of getting home."
+      }
+    },
+    {
+      "id": "discourses-epictetus--30",
+      "topic": "learning",
+      "tags": [
+        "listening",
+        "learning",
+        "mentorship"
+      ],
+      "title": "Show you're ready to learn, and teachers will give you more",
+      "body": "A young man complained that Epictetus told him nothing. Epictetus replied that the student hadn't stirred him: just as good horses excite a skilled rider, eager and serious students bring out a teacher's best.\n\nHis advice: don't tell a mentor 'you've taught me nothing'; show yourself worthy of being taught, and see how it moves them. People who arrive prepared, ask good questions and act on advice tend to receive far more from managers, mentors and elders than those who wait passively to be impressed.",
+      "quote": "When you would listen to a philosopher, do not say to him, “You tell me nothing;” but only show yourself worthy of hearing or fit for hearing; and you will see how you will move the speaker.",
+      "apply_it": "Before your next meeting with a mentor or manager, prepare one specific question and one update on how you used their last advice.",
+      "locator": "Book II, XXIV. To (Or Against) a Person Who Was One of… ¶5",
+      "quiz": {
+        "question": "Why did Epictetus say he had little to say to the young man?",
+        "options": [
+          "He was too busy",
+          "The young man hadn't paid him",
+          "The young man had not roused him by showing he was fit to hear",
+          "He disliked teaching young people"
+        ],
+        "answer": 2,
+        "explanation": "He said the student hadn't 'roused' him; a learner who shows himself fit to hear moves the speaker to say more."
+      }
+    },
+    {
+      "id": "discourses-epictetus--31",
+      "topic": "mindfulness",
+      "tags": [
+        "calm",
+        "perception",
+        "opinions"
+      ],
+      "title": "A disturbed mind distorts things, the way rippling water bends light",
+      "body": "Epictetus compares the soul to a bowl of water and our impressions to a ray of light falling on it. When the water is stirred, the light seems to move, yet it doesn't really. When we are agitated, the world looks shaky and confusing, but what's disturbed is our own state, not the facts.\n\nHe adds that sorrow, bad fortune and blame are, at bottom, opinions about things outside our control. The practical lesson: when you're upset, don't trust how things look. Let the water settle first, through a pause, a breath or a night's sleep, then look again.",
+      "quote": "Such as is a dish of water, such is the soul. Such as is the ray of light which falls on the water, such are the appearances.",
+      "apply_it": "When you feel stirred up, delay any judgement or reply by one hour. Then look again at the situation and see if it looks different.",
+      "locator": "Book III, III. What Is the Matter on Which a Good Man… ¶5",
+      "quiz": {
+        "question": "In Epictetus's image, why does the ray of light appear to move?",
+        "options": [
+          "Because the water it falls on is disturbed",
+          "Because the light itself is moving",
+          "Because the bowl is broken",
+          "Because the observer is too far away"
+        ],
+        "answer": 0,
+        "explanation": "When the water is moved, the ray seems to move though it doesn't; likewise a disturbed mind distorts how things appear."
+      }
+    },
+    {
+      "id": "discourses-epictetus--32",
+      "topic": "personal-development",
+      "tags": [
+        "growth",
+        "self-improvement",
+        "satisfaction"
+      ],
+      "title": "Take daily pleasure in becoming a little better",
+      "body": "Epictetus quotes Socrates: just as one man enjoys improving his farm and another his horse, Socrates was pleased each day to see himself growing better.\n\nBetter in what? Not in clever words, says Epictetus, but in things like blaming no one, complaining less, and showing the same steady face going out and coming in. This is a source of satisfaction anyone can have. Instead of measuring a good day only by money earned or praise received, notice the small ways you handled people and problems better than before.",
+      "quote": "so I am daily pleased in observing that I am growing better.",
+      "apply_it": "Tonight, write one small way you behaved better today than you might have a year ago.",
+      "locator": "Book III, V. Against Those Who on Account of… ¶3",
+      "quiz": {
+        "question": "What did Socrates take daily pleasure in, according to Epictetus?",
+        "options": [
+          "Improving his land",
+          "Observing himself growing better",
+          "Winning arguments",
+          "Receiving visitors"
+        ],
+        "answer": 1,
+        "explanation": "As others enjoy improving land or horses, Socrates enjoyed seeing himself grow better each day."
+      }
+    },
+    {
+      "id": "discourses-epictetus--33",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "example",
+        "influence"
+      ],
+      "title": "Lead people by showing them what's good, not by threats",
+      "body": "Epictetus challenges an official who boasted he could imprison or beat whomever he pleased. You can do that to a stone or a donkey, he replies; it isn't governing people. Govern us as reasoning beings: show us what benefits us and we will follow; show us what harms us and we will turn away.\n\nHe points to Socrates, who led people by making them want to imitate him. For anyone managing a team, raising children or leading a group, the lesson holds: force may get compliance for a moment, but explaining the why and modelling the behaviour gets real commitment.",
+      "quote": "Govern us as rational animals: show us what is profitable to us, and we will follow it",
+      "apply_it": "Next time you need someone to do something, explain why it benefits them or the team before giving the instruction.",
+      "locator": "Book III, VII. To the Administrator of the Free Cities… ¶4",
+      "quiz": {
+        "question": "According to Epictetus, what is real 'governing of men'?",
+        "options": [
+          "Having the power to punish anyone",
+          "Holding an official title from Caesar",
+          "Being richer than those you lead",
+          "Showing people what benefits them so they follow willingly"
+        ],
+        "answer": 3,
+        "explanation": "He says force works on stones and donkeys; governing humans means showing them what's good so they follow, like Socrates."
+      }
+    },
+    {
+      "id": "discourses-epictetus--34",
+      "topic": "mental-strength",
+      "tags": [
+        "facts",
+        "interpretation",
+        "resilience"
+      ],
+      "title": "Separate what happened from the story you add to it",
+      "body": "Epictetus trains his students with a simple drill. Your ship is lost: what has happened? Your ship is lost. Nothing more. A man has been taken to prison: what has happened? He's been taken to prison. That he has 'fared badly', he says, is something each person adds from their own opinion.\n\nThis doesn't deny that losses hurt or need dealing with. It separates the bare event from the layer of judgement we pile on top: 'this is a disaster', 'my life is ruined'. Stating the plain fact first gives you a steadier place to decide what to do next.",
+      "quote": "Your ship is lost. What has happened? Your ship is lost.",
+      "apply_it": "Describe a recent setback in one plain sentence with no judgement words. Then decide on one next step.",
+      "locator": "Book III, VIII. How We Must Exercise Ourselves Against… ¶1",
+      "quiz": {
+        "question": "What does Epictetus say is added to bare events like a lost ship?",
+        "options": [
+          "Extra financial costs",
+          "Other people's gossip",
+          "The judgement that one has fared badly, from our own opinion",
+          "Legal consequences"
+        ],
+        "answer": 2,
+        "explanation": "He says the bare fact is just that the ship is lost; the idea that it's a misfortune is added from our own opinion."
+      }
+    },
+    {
+      "id": "discourses-epictetus--35",
+      "topic": "money",
+      "tags": [
+        "contentment",
+        "desire",
+        "simplicity"
+      ],
+      "title": "Want fewer things and you'll get more of what you need",
+      "body": "Epictetus describes children reaching into a narrow-necked jar for figs and nuts. If they grab a fistful, they can't pull their hand out, and they cry. Let go of a few and you'll get them out.\n\nHe was telling a man whose desires were never satisfied that everything he owned looked small to him, while Epictetus found what he had to be plenty. The lesson applies to money and time: grasping at everything at once leaves you stuck. Choosing fewer wants, and spending on what matters most, often means you actually get them.",
+      "quote": "Drop a few of them and you will draw things out. And do you part with your desires: do not desire many things and you will have what you want.",
+      "apply_it": "List your current wants (purchases, goals). Cross off half. Put your money and effort into the rest.",
+      "locator": "Book III, IX. To a Certain Rhetorician Who Was Going… ¶2",
+      "quiz": {
+        "question": "What happens to children who grab a full fistful of figs from the jar?",
+        "options": [
+          "They can't get their hand out",
+          "They share them with friends",
+          "They are praised for being clever",
+          "They break the jar"
+        ],
+        "answer": 0,
+        "explanation": "A full fist won't fit back through the narrow neck; dropping a few lets them draw things out, as fewer desires let us get what we want."
+      }
+    },
+    {
+      "id": "discourses-epictetus--36",
+      "topic": "productivity",
+      "tags": [
+        "reflection",
+        "evening-review",
+        "habits"
+      ],
+      "title": "Review your day each evening: what went wrong, what went right, what's left",
+      "body": "Epictetus approvingly quotes verses attributed to Pythagoras: don't let sleep close your eyes until you've gone over each of the day's actions. Ask what was done wrong, what was done, and what was left undone; then blame what was wrong and take pleasure in what was right.\n\nThis evening review is one of the oldest self-improvement habits. It takes a few minutes, catches mistakes while they're fresh, makes you notice wins you would otherwise overlook, and sets up tomorrow. It works best when honest but kind: correct, don't punish.",
+      "quote": "What’s done amiss, what done, what left undone",
+      "apply_it": "Tonight before sleep, spend three minutes on three questions: What did I do wrong? What did I do well? What did I leave undone?",
+      "locator": "Book III, X. In What Manner We Ought to Bear Sickness ¶2",
+      "quiz": {
+        "question": "What does the verse quoted by Epictetus recommend doing before sleep?",
+        "options": [
+          "Planning the next week in detail",
+          "Reading a philosophical text",
+          "Praying for good fortune",
+          "Reviewing each action of the day, blaming the wrong and rejoicing in the right"
+        ],
+        "answer": 3,
+        "explanation": "The verses urge examining the day's actions before sleep: what was amiss, what was done, what was left undone."
+      }
+    },
+    {
+      "id": "discourses-epictetus--37",
+      "topic": "mental-strength",
+      "tags": [
+        "self-discipline",
+        "weaknesses",
+        "practice"
+      ],
+      "title": "Train specifically against your own weak spots",
+      "body": "Epictetus scorns showy training, such as climbing a pole or carrying unusual gear around to impress people. Real training is personal: each of us should practise most against whatever we find hardest.\n\nIf you lean towards pleasure, lean deliberately the other way for practice. If you're irritable, practise staying calm when insulted or treated with disrespect. A short-tempered person, a procrastinator and someone who overspends each need a different workout. Pick your own weak spot and give it targeted, repeated practice in everyday situations.",
+      "quote": "Practice, man, if you are irritable, to endure if you are abused, not to be vexed if you are treated with dishonor.",
+      "apply_it": "Name your main weakness (temper, impatience, spending). Set one small daily exercise against it for the next week.",
+      "locator": "Book III, XII. About Exercise ¶2",
+      "quiz": {
+        "question": "What kind of training does Epictetus recommend?",
+        "options": [
+          "Impressive feats that others can watch",
+          "The same exercises for everyone",
+          "Practising most against the things you personally find hardest",
+          "Avoiding all difficult situations"
+        ],
+        "answer": 2,
+        "explanation": "He dismisses showy feats and says each person should practise against their own particular weakness, e.g. the irritable against insults."
+      }
+    },
+    {
+      "id": "discourses-epictetus--38",
+      "topic": "mindfulness",
+      "tags": [
+        "solitude",
+        "self-reliance",
+        "inner-life"
+      ],
+      "title": "Learn to be good company for yourself",
+      "body": "Epictetus accepts that humans naturally seek community and conversation. But he says we should also be prepared for being alone: able to be enough for ourselves and to be our own companion, talking with ourselves and occupied with our own thoughts, without feeling lost.\n\nPeople who can't bear their own company often fill every gap with noise, scrolling or relationships that aren't good for them. Building comfort in solitude, through reflection, reading, walking or prayer, makes you steadier, and makes your time with others a choice rather than an escape.",
+      "quote": "a man ought to be prepared in a manner for this also (being alone), to be able to be sufficient for himself and to be his own companion.",
+      "apply_it": "Spend 15 minutes today alone with no phone, music or screen. Notice what thoughts come up.",
+      "locator": "Book III, XIII. What Solitude Is, and What Kind of… ¶1",
+      "quiz": {
+        "question": "What does Epictetus say we should be able to do when alone?",
+        "options": [
+          "Be sufficient for ourselves and be our own companion",
+          "Immediately seek out other people",
+          "Keep busy so we don't have to think",
+          "Feel sorry for ourselves"
+        ],
+        "answer": 0,
+        "explanation": "While humans are social, he says we should also be able to be our own companion and enough for ourselves."
+      }
+    },
+    {
+      "id": "discourses-epictetus--39",
+      "topic": "relationships",
+      "tags": [
+        "influence",
+        "company",
+        "environment"
+      ],
+      "title": "The people you spend time with will either light you up or put you out",
+      "body": "Epictetus warns that anyone who spends a lot of time with others, talking, drinking or socialising, will either become like them or bring them round to his own ways. He compares it to placing a dead coal next to a burning one: either the dead coal puts out the live one, or the live one lights the dead one.\n\nThat is why he urges care in close friendships, especially while your new habits are still fragile. Choose to spend more time with people who strengthen the person you're trying to become, and be honest about who pulls you back.",
+      "quote": "if a man places a piece of quenched charcoal close to a piece that is burning, either the quenched charcoal will quench the other, or the burning charcoal will light that which is quenched.",
+      "apply_it": "List the five people you spend most time with. For each, ask: does time with them build up or wear down the habits I want?",
+      "locator": "Book III, XVI. That We Ought with Caution to Enter… ¶1",
+      "quiz": {
+        "question": "What does the image of the two pieces of charcoal illustrate?",
+        "options": [
+          "That fire is dangerous",
+          "That close company either changes you or is changed by you",
+          "That friendships always fade",
+          "That opposites attract"
+        ],
+        "answer": 1,
+        "explanation": "Either the dead coal quenches the burning one or the burning one lights it; close association changes one side or the other."
+      }
+    },
+    {
+      "id": "discourses-epictetus--40",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "blame",
+        "responsibility",
+        "parenting"
+      ],
+      "title": "Stop 'beating the stone': fix the real cause, not a scapegoat",
+      "body": "Epictetus recalls how nurses treated small children who tripped through their own carelessness: instead of correcting the child, the nurse would beat the stone. But what did the stone do? Likewise a tutor would punish the cook rather than check the child's appetite.\n\nWe grow up, he says, still blaming outside things for what comes from our own opinions and choices. The habit shows in adults who blame traffic, colleagues or 'bad luck' for every problem. Real progress starts when you look first at your part in what went wrong, and teach children to do the same.",
+      "quote": "the nurse, if we ever stumbled through want of care, did not chide us, but would beat the stone. But what did the stone do?",
+      "apply_it": "Next time something goes wrong, before blaming anyone or anything, ask: what was my part in this, and what can I change?",
+      "locator": "Book III, XIX. What Is the Condition of a Common Kind… ¶1",
+      "quiz": {
+        "question": "What is Epictetus's point about the nurse who beats the stone?",
+        "options": [
+          "Children should be kept away from stones",
+          "We learn early to blame outside things instead of correcting ourselves",
+          "Nurses were too strict in his day",
+          "Stones are dangerous for children"
+        ],
+        "answer": 1,
+        "explanation": "Instead of correcting the careless child, the nurse blamed the stone; we carry this habit of blaming externals into adulthood."
+      }
+    },
+    {
+      "id": "discourses-epictetus--41",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "difficult-people",
+        "patience",
+        "growth"
+      ],
+      "title": "A difficult person can be your best training partner",
+      "body": "Epictetus argues that we can gain something from everything, even from someone who insults us. An athlete benefits from a tough training partner who grips his neck and works his shoulders. In the same way, a person who tests your temper trains you in patience and mildness.\n\nIs my neighbour bad? Bad for himself, says Epictetus, but good for me, because he exercises my good nature and self-control. You can't choose every colleague, relative or neighbour, but you can treat the hard ones as practice. That shift turns resentment into a kind of quiet progress.",
+      "quote": "Is my neighbour bad? Bad to himself, but good to me: he exercises my good disposition, my moderation.",
+      "apply_it": "Think of the most difficult person you deal with. Name one quality (patience, clarity, calm) they give you the chance to practise.",
+      "locator": "Book III, XX. That We Can Derive Advantage from All… ¶2",
+      "quiz": {
+        "question": "How does Epictetus say a bad neighbour can be 'good to me'?",
+        "options": [
+          "By teaching me to avoid people",
+          "By making me move house",
+          "By exercising my good disposition and moderation",
+          "By giving me a reason to complain"
+        ],
+        "answer": 2,
+        "explanation": "Like a tough training partner, a bad neighbour exercises one's patience, good disposition and self-control."
+      }
+    },
+    {
+      "id": "discourses-epictetus--42",
+      "topic": "relationships",
+      "tags": [
+        "hypocrisy",
+        "criticism",
+        "integrity"
+      ],
+      "title": "Don't lecture others while you're hiding the same fault",
+      "body": "Epictetus is describing who has the right to correct others. A person who keeps their own conduct in order can speak freely to family and friends without being a busybody. But if you scold others while holding a stolen cake under your arm, he says, you'd do better to go into a corner and eat your theft, and leave other people's business alone.\n\nCriticism lands only when the critic's own house is in order. Before correcting a child, colleague or friend, check whether you're guilty of the same thing. If you are, deal with it first, or at least admit it.",
+      "quote": "But if while you have a cake under your arm, you rebuke others, I will say to you: Will you not rather go away into a corner and eat that which you have stolen",
+      "apply_it": "Before you next criticise someone, ask: do I do this too? If yes, start by admitting it.",
+      "locator": "Book III, XXII. About Cynism ¶28",
+      "quiz": {
+        "question": "What does the 'cake under your arm' represent?",
+        "options": [
+          "A gift you should share",
+          "A reward for good behaviour",
+          "A hidden fault of your own while you rebuke others",
+          "Wealth that makes you superior"
+        ],
+        "answer": 2,
+        "explanation": "It's the image of someone rebuking others while holding something stolen: criticising while guilty yourself."
+      }
+    },
+    {
+      "id": "discourses-epictetus--43",
+      "topic": "personal-development",
+      "tags": [
+        "identity",
+        "purpose",
+        "goals"
+      ],
+      "title": "First decide who you want to be, then act accordingly",
+      "body": "Epictetus notes that athletes decide what they're training for before choosing a diet and routine. A long-distance runner trains differently from a sprinter or an all-round competitor. Craftspeople likewise gather tools to suit their trade.\n\nHis advice is to do the same with your life. Say to yourself who you want to be, then do what follows from that. Actions aimed at no end are wasted, and actions aimed at the wrong end miss the mark. A clear picture of the person you are trying to become makes daily choices much simpler.",
+      "quote": "First say to yourself who you wish to be, then do accordingly what you are doing",
+      "apply_it": "Write one sentence: 'I want to be a person who ___.' Check today's plans against it and drop one thing that doesn't fit.",
+      "locator": "Book III, XXIII. To Those Who Read and Discuss for the… ¶1",
+      "quiz": {
+        "question": "What example does Epictetus use to show that purpose must come before action?",
+        "options": [
+          "Athletes choosing training to suit their event",
+          "Merchants choosing goods to sell",
+          "Farmers choosing crops for the season",
+          "Sailors choosing the right wind"
+        ],
+        "answer": 0,
+        "explanation": "He says a long-distance runner, sprinter and pentathlete each train differently because they first decide what they want to be."
+      }
+    },
+    {
+      "id": "discourses-epictetus--44",
+      "topic": "mental-strength",
+      "tags": [
+        "growth",
+        "discomfort",
+        "feedback"
+      ],
+      "title": "Real growth often feels more like treatment than entertainment",
+      "body": "Epictetus tells his students that a philosopher's school is like a doctor's surgery. You shouldn't leave it feeling pleased, but feeling the sting of treatment, because everyone arrives with something that needs fixing.\n\nHe was criticising teachers who just entertain and students who just want praise. The point applies to any serious attempt to improve: honest feedback, coaching or self-examination will sometimes be uncomfortable. If a book, course or mentor only ever makes you feel good, ask whether anything is being healed.",
+      "quote": "The philosopher’s school, ye men, is a surgery: you ought not to go out of it with pleasure, but with pain.",
+      "apply_it": "Ask someone you trust for one honest piece of feedback this week. Thank them, even if it stings.",
+      "locator": "Book III, XXIII. To Those Who Read and Discuss for the… ¶5",
+      "quiz": {
+        "question": "Why does Epictetus compare his school to a surgery?",
+        "options": [
+          "Because his students were all doctors",
+          "Because the lessons were held in a hospital",
+          "Because it was expensive",
+          "Because students arrive needing treatment, and treatment is uncomfortable"
+        ],
+        "answer": 3,
+        "explanation": "He says students arrive 'unwell' in their opinions; real treatment hurts a little, so you shouldn't expect to leave only pleased."
+      }
+    },
+    {
+      "id": "discourses-epictetus--45",
+      "topic": "business",
+      "tags": [
+        "asking-for-help",
+        "confidence",
+        "networking"
+      ],
+      "title": "Approach powerful people without awe and without flattery",
+      "body": "Should you go to a rich or powerful person's door to ask for something? Epictetus says yes, if it's reasonable to do so for your family, friends or community. You aren't ashamed to visit a shoemaker for shoes or a gardener for vegetables. Approach the wealthy the same way: no awe, no flattery.\n\nAnd don't go assuming you'll get what you want. Go because it was right to try. Treating influential people as ordinary people you have a request for keeps your dignity intact, makes you more natural and persuasive, and spares you bitterness if they refuse.",
+      "quote": "You are not ashamed to go to the doors of a shoemaker, when you are in want of shoes, nor to the door of a gardener, when you want lettuces",
+      "apply_it": "Write a short, plain request to someone influential you've been nervous to contact. Remove any flattery. Send it.",
+      "locator": "Book III, XXIV. That We Ought Not to Be Moved by a… ¶9",
+      "quiz": {
+        "question": "How does Epictetus say we should approach the rich when we need something?",
+        "options": [
+          "Not at all, as it's beneath us",
+          "With gifts and praise",
+          "As we would a shoemaker: without awe or flattery",
+          "Only through a go-between"
+        ],
+        "answer": 2,
+        "explanation": "He says go to the rich as you'd go to a shoemaker or gardener: plainly, without awe or flattery, doing what's fitting."
+      }
+    },
+    {
+      "id": "discourses-epictetus--46",
+      "topic": "mental-strength",
+      "tags": [
+        "setbacks",
+        "restarting",
+        "persistence"
+      ],
+      "title": "After a slip, you can start again today, not next year",
+      "body": "Epictetus contrasts his students' struggle with the Olympic Games. An athlete who loses must wait four years for another chance. But in the contest to live well, no one makes you wait. As soon as you've recovered yourself, you can renew the effort; and if you give up again, you can renew it again.\n\nThis matters for anyone who breaks a streak, slips on a budget or falls back into an old habit. There's no need to wait for Monday, next month or New Year. The next choice is the next chance to begin.",
+      "quote": "we are not compelled to wait for another four years that the games at Olympia may come again",
+      "apply_it": "If you've slipped on a goal recently, choose one small action you can take toward it in the next hour.",
+      "locator": "Book III, XXV. To Those Who Fall Off (Desist) from… ¶1",
+      "quiz": {
+        "question": "Why does Epictetus mention waiting four years for the Olympic Games?",
+        "options": [
+          "To show that patience is the main virtue",
+          "To contrast it with life, where you can renew the effort immediately",
+          "To encourage his students to compete",
+          "To warn that chances come rarely"
+        ],
+        "answer": 1,
+        "explanation": "Unlike Olympic athletes waiting four years, we can renew the contest to live well as soon as we've recovered ourselves."
+      }
+    },
+    {
+      "id": "discourses-epictetus--47",
+      "topic": "money",
+      "tags": [
+        "freedom",
+        "desire",
+        "contentment"
+      ],
+      "title": "Freedom comes from wanting less, not from having everything",
+      "body": "Epictetus describes people who chase status and wealth believing they'll be satisfied once they arrive. When the prizes come, the restlessness, the craving and the boredom are the same as before.\n\nHis conclusion is that freedom is gained not by fully owning everything you desire but by removing the desire. He suggests putting the effort you'd spend chasing possessions into changing your attitude instead. This doesn't mean ignoring real needs. It means noticing how much of your unrest comes from a moving target of wants, and that easing the want often brings more peace than the purchase.",
+      "quote": "freedom is acquired not by the full possession of the things which are desired, but by removing the desire.",
+      "apply_it": "Pick one thing you keep wanting to buy. Wait 30 days. Notice whether the desire fades or stays.",
+      "locator": "Book IV, I. About Freedom ¶24",
+      "quiz": {
+        "question": "According to Epictetus, how is freedom acquired?",
+        "options": [
+          "By saving enough money",
+          "By gaining a high position",
+          "By removing desire rather than possessing everything desired",
+          "By moving to a new place"
+        ],
+        "answer": 2,
+        "explanation": "He says freedom comes not from fully possessing what we desire but from removing the desire itself."
+      }
+    },
+    {
+      "id": "discourses-epictetus--48",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "progress",
+        "celebration",
+        "self-control"
+      ],
+      "title": "Celebrate each day you handle yourself better",
+      "body": "Epictetus tells his students that if they have reduced a habit of bad temper, harsh words, hastiness or laziness, and are no longer moved by what used to move them, they can celebrate a festival every day: today for one good action, tomorrow for another.\n\nHe thinks this is a better reason for celebration than winning public office. Most people only celebrate external milestones. Noticing and enjoying inner progress, such as a calmer reply or a resisted temptation, reinforces the change and gives you reasons for gladness that no one can take away.",
+      "quote": "you can celebrate a festival daily, today because you have behaved well in one act, and tomorrow because you have behaved well in another.",
+      "apply_it": "At the end of today, name one moment you handled better than you used to, and give yourself a small, real reward for it.",
+      "locator": "Book IV, IV. To Those Who Are Desirous of Passing… ¶9",
+      "quiz": {
+        "question": "What does Epictetus say is a reason to 'celebrate a festival daily'?",
+        "options": [
+          "Behaving well in one act today and in another tomorrow",
+          "Receiving a promotion",
+          "Hearing praise from others",
+          "Finishing a book of philosophy"
+        ],
+        "answer": 0,
+        "explanation": "He says reducing bad habits and behaving well in each act is cause for daily celebration, greater than a high office."
+      }
+    },
+    {
+      "id": "discourses-epictetus--49",
+      "topic": "personal-development",
+      "tags": [
+        "patience",
+        "humility",
+        "showing-off"
+      ],
+      "title": "Practise quietly before you try to impress anyone",
+      "body": "Epictetus criticises people who get excited about philosophy and immediately adopt the look of a philosopher and start correcting everyone. First train yourself, he says, and for a while keep it to yourself.\n\nHe uses the image of a seed that must lie buried and grow slowly. A plant that shoots up too early, in a false spring, gets killed by the first frost. Announcing a new career, diet or skill before you've built roots invites pressure and early collapse. Let your practice grow out of sight until it's strong enough to stand in the cold.",
+      "quote": "Fruit grows thus: the seed must be buried for some time, hid, grow slowly in order that it may come to perfection.",
+      "apply_it": "Pick a new habit or skill you're building. Commit to practising it for 30 days before telling anyone about it.",
+      "locator": "Book IV, VIII. Against Those Who Hastily Rush Into the… ¶8",
+      "quiz": {
+        "question": "What happens to plants that 'blossom too soon' in Epictetus's image?",
+        "options": [
+          "They produce the best fruit",
+          "They are harvested first",
+          "They spread their seeds further",
+          "The cold weather scorches them"
+        ],
+        "answer": 3,
+        "explanation": "Seeds that shoot up too early in warm weather are caught by a single frost; growth needs time hidden first."
+      }
+    },
+    {
+      "id": "discourses-epictetus--50",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "attention",
+        "habits"
+      ],
+      "title": "'I'll start tomorrow' really means 'I'll be careless today'",
+      "body": "Epictetus warns that when you say 'tomorrow I will begin to pay attention', you are really saying that today you'll allow yourself to be careless, shameless, irritable and envious. Look at how much you are permitting.\n\nHe adds that letting attention slip doesn't just cost one day. It builds a habit of not attending and a habit of postponing. If paying attention is good tomorrow, it's better today, so that you'll be able to do it tomorrow too. Perfection isn't possible, he admits, but constant effort will spare you many mistakes.",
+      "quote": "If it is good to use attention tomorrow, how much better is it to do so today?",
+      "apply_it": "Notice the next time you say 'I'll start tomorrow'. Replace it with one five-minute action you take right now.",
+      "locator": "Book IV, XII. On Attention ¶4",
+      "quiz": {
+        "question": "What does Epictetus say 'Tomorrow I will begin to attend' really means?",
+        "options": [
+          "A sensible plan to rest first",
+          "Today I will permit myself to act badly and carelessly",
+          "A promise that will certainly be kept",
+          "That tomorrow is more important than today"
+        ],
+        "answer": 1,
+        "explanation": "He says postponing attention means giving yourself permission to be careless, passionate and envious today, and builds a habit of deferral."
       }
     }
   ]

@@ -119,7 +119,7 @@
     },
     {
       "id": "aesops-fables--05",
-      "topic": "relationships",
+      "topic": "communication",
       "tags": [
         "persuasion",
         "influence",
@@ -215,6 +215,806 @@
         ],
         "answer": 2,
         "explanation": "Changing course for every critic led to an absurd result and the loss of the donkey."
+      }
+    },
+    {
+      "id": "aesops-fables--09",
+      "topic": "psychology",
+      "tags": [
+        "rationalisation",
+        "self-honesty",
+        "goals"
+      ],
+      "title": "Don't pretend you never wanted what you failed to get",
+      "body": "In the fable, a hungry fox jumps again and again for a bunch of grapes, can't reach them, and walks off with dignity, announcing that they were sour anyway.\n\nWe all do this. After missing a job, a scholarship or a relationship, it is tempting to say we never wanted it. That protects our pride but stops us learning. A more useful response is honest: 'I wanted that and didn't get it. What would I do differently?' Admitting disappointment is the first step to trying again with a better plan.",
+      "quote": "I thought those Grapes were ripe, but I see now they are quite sour.",
+      "locator": "The Fox and the Grapes ¶1",
+      "apply_it": "Think of something you recently missed out on. Write one honest sentence about why you wanted it and one lesson for next time.",
+      "quiz": {
+        "question": "Why did the fox say the grapes were sour?",
+        "options": [
+          "Because he tasted them and they were sour",
+          "To save face after failing to reach them",
+          "Because another animal warned him",
+          "Because grapes are bad for foxes"
+        ],
+        "answer": 1,
+        "explanation": "He could not reach them, so he declared them sour to protect his pride."
+      }
+    },
+    {
+      "id": "aesops-fables--10",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "flattery",
+        "manipulation",
+        "vanity"
+      ],
+      "title": "Be wary when someone praises you just before asking for something",
+      "body": "A crow sits in a tree with a piece of cheese. A fox praises her beauty and wonders aloud whether her voice is as lovely. Flattered, the crow opens her beak to sing, the cheese falls, and the fox runs off with it.\n\nFlattery is still one of the oldest sales tricks. Salespeople, scammers and sometimes acquaintances use compliments to lower your guard just before a request. Enjoy genuine praise, but when compliments arrive right before you're asked to buy, sign or lend, pause and think with a clear head.",
+      "quote": "You have a voice, madam, I see: what you want is wits.",
+      "locator": "The Fox and the Crow ¶1",
+      "apply_it": "Next time praise is followed by a request, say 'Let me think about it' and decide a day later.",
+      "quiz": {
+        "question": "How did the fox get the cheese?",
+        "options": [
+          "By climbing the tree",
+          "By trading it for grapes",
+          "By flattering the crow until she opened her beak to sing",
+          "By scaring the crow away"
+        ],
+        "answer": 2,
+        "explanation": "The fox praised the crow so she would sing, dropping the cheese."
+      }
+    },
+    {
+      "id": "aesops-fables--11",
+      "topic": "relationships",
+      "tags": [
+        "kindness",
+        "respect",
+        "networking"
+      ],
+      "title": "Never dismiss someone because they seem too small to matter",
+      "body": "A lion spares a mouse that woke him, laughing at its promise to repay him one day. Later the lion is caught in a hunter's net, and the mouse gnaws through the ropes to free him.\n\nThe fable reminds us that kindness to people who seem powerless is never wasted, and that help can come from unexpected places. The junior colleague, the security guard or the young neighbour may one day be the person who gets you out of trouble. Treat everyone with respect, not just those who seem useful now.",
+      "quote": "you laughed at me when I promised I would repay you: but now you see, even a Mouse can help a Lion.",
+      "locator": "The Lion and the Mouse ¶1",
+      "apply_it": "This week, offer real courtesy or a small favour to someone others tend to overlook.",
+      "quiz": {
+        "question": "How did the mouse repay the lion?",
+        "options": [
+          "It brought him food",
+          "It warned him about a fox",
+          "It never repaid him",
+          "It gnawed through the hunters' net to free him"
+        ],
+        "answer": 3,
+        "explanation": "When the lion was trapped in a net, the mouse chewed through the ropes and set him free."
+      }
+    },
+    {
+      "id": "aesops-fables--12",
+      "topic": "creativity",
+      "tags": [
+        "problem-solving",
+        "creativity",
+        "persistence"
+      ],
+      "title": "When the obvious approach fails, try small creative steps",
+      "body": "A thirsty crow finds a pitcher with only a little water at the bottom, too low to reach. Rather than giving up, she drops in pebbles one by one until the water rises high enough to drink.\n\nTwo lessons sit in this story. First, a hard situation often pushes us to invent solutions we would never have looked for. Second, the answer is often many small actions rather than one big one. When a goal looks out of reach, ask what small 'pebble' you could add today.",
+      "quote": "She began dropping pebbles into the Pitcher, and with each pebble the water rose a little higher",
+      "locator": "The Crow and the Pitcher ¶1",
+      "apply_it": "Pick a goal that feels out of reach. Write down the smallest step you could take today, and take it.",
+      "quiz": {
+        "question": "How did the crow reach the water?",
+        "options": [
+          "By dropping pebbles in to raise the water level",
+          "By breaking the pitcher",
+          "By calling other birds for help",
+          "By tipping the pitcher over"
+        ],
+        "answer": 0,
+        "explanation": "She dropped in pebbles one at a time until the water rose to the brim."
+      }
+    },
+    {
+      "id": "aesops-fables--13",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "trust",
+        "loyalty"
+      ],
+      "title": "A friend who runs at the first sign of danger was never a friend",
+      "body": "Two friends are travelling when a bear appears. One scrambles up a tree to save himself, leaving the other to lie still on the ground and pretend to be dead. When the bear has gone, the friend in the tree asks what it whispered. The answer: never travel with someone who abandons you at the first sign of danger.\n\nIt is easy to be a friend when things go well. Illness, job loss or trouble reveal who stays. Notice those people and value them, and try to be that kind of friend yourself.",
+      "quote": "He told me never again to travel with a friend who deserts you at the first sign of danger.",
+      "locator": "The Bear and the Travellers ¶1",
+      "apply_it": "Think of someone who stood by you in a hard time. Thank them this week, and ask if they need anything.",
+      "quiz": {
+        "question": "What lesson did the bear supposedly whisper to the traveller?",
+        "options": [
+          "Always climb a tree when you see a bear",
+          "Never travel with a friend who deserts you in danger",
+          "Bears never attack people on the road",
+          "Travel alone to stay safe"
+        ],
+        "answer": 1,
+        "explanation": "The traveller learned that a friend who runs at the first sign of danger is no real friend."
+      }
+    },
+    {
+      "id": "aesops-fables--14",
+      "topic": "mental-strength",
+      "tags": [
+        "resilience",
+        "flexibility",
+        "stress"
+      ],
+      "title": "Bend with the storm instead of fighting what you cannot stop",
+      "body": "A mighty oak is torn up by a gale and falls among some reeds that survived unharmed. Surprised, it asks how. The reeds explain that the oak stubbornly fought the storm, while they bowed and let it pass over them.\n\nSome forces, like a recession, a company restructure or a loss, are stronger than us. Fighting them head-on can break us. Flexibility is not weakness: adapting, staying low for a while and recovering afterwards is often how we survive and stand tall again.",
+      "quote": "we bow and yield to every breeze, and thus the gale passed harmlessly over our heads.",
+      "locator": "The Oak and the Reeds ¶1",
+      "apply_it": "Name one situation you are fighting that you cannot control. What would 'bending' look like, for now?",
+      "quiz": {
+        "question": "Why did the reeds survive the storm when the oak did not?",
+        "options": [
+          "They had deeper roots than the oak",
+          "The storm never reached them",
+          "They bent and yielded instead of resisting",
+          "The oak protected them"
+        ],
+        "answer": 2,
+        "explanation": "The oak fought the storm and broke; the reeds bowed and let it pass harmlessly over them."
+      }
+    },
+    {
+      "id": "aesops-fables--15",
+      "topic": "personal-development",
+      "tags": [
+        "credibility",
+        "action",
+        "boasting"
+      ],
+      "title": "Show what you can do instead of talking about it",
+      "body": "A traveller returns home boasting of an amazing jump he made in Rhodes and says anyone there will confirm it. A listener replies that there is no need to go to Rhodes: pretend this is Rhodes, and jump.\n\nClaims are cheap; evidence is convincing. In interviews, at work and in business, people trust what they can see you do. Instead of listing what you have achieved elsewhere, offer a sample, a demonstration or a small result. Let your work speak.",
+      "quote": "Let's just imagine this is Rhodes for a minute: and now⁠—jump!",
+      "locator": "The Boasting Traveller ¶1",
+      "apply_it": "Instead of describing a skill in your next pitch or interview, prepare a short example or demonstration of it.",
+      "quiz": {
+        "question": "How did the listener respond to the boasting traveller?",
+        "options": [
+          "He travelled to Rhodes to check",
+          "He praised him in front of everyone",
+          "He told an even bigger story",
+          "He asked him to prove it by jumping right there"
+        ],
+        "answer": 3,
+        "explanation": "The listener said, in effect: pretend this is Rhodes and jump, so deeds not words."
+      }
+    },
+    {
+      "id": "aesops-fables--16",
+      "topic": "leadership",
+      "tags": [
+        "parenting",
+        "leadership",
+        "example"
+      ],
+      "title": "People follow what you do more than what you say",
+      "body": "A mother crab tells her son to stop walking sideways and walk straight. He agrees, if she will show him how. She tries and fails, and realises how foolish it was to criticise him.\n\nChildren, employees and team members copy behaviour far more than they follow instructions. If you want your children to read, respect others or manage money, let them see you do it. If you want your team to be on time, be on time. Your example is your strongest message.",
+      "quote": "Show me how, dear mother, and I'll follow your example.",
+      "locator": "The Crab and His Mother ¶1",
+      "apply_it": "Choose one habit you often ask others to adopt. Practise it visibly yourself for the next week.",
+      "quiz": {
+        "question": "What happened when the mother crab tried to show her son how to walk straight?",
+        "options": [
+          "She could not do it herself",
+          "She walked perfectly straight",
+          "Her son refused to watch",
+          "She found another crab to teach him"
+        ],
+        "answer": 0,
+        "explanation": "She tried and failed, realising she had been foolish to criticise what she could not do."
+      }
+    },
+    {
+      "id": "aesops-fables--17",
+      "topic": "productivity",
+      "tags": [
+        "hard-work",
+        "farming",
+        "effort"
+      ],
+      "title": "The real treasure is often in the work itself",
+      "body": "A dying farmer tells his sons that treasure is hidden in the vineyard. After his death they dig over every inch of ground looking for it. They find no gold, but the well-dug vines produce the best harvest ever.\n\nThe father's trick teaches a lasting lesson: steady, thorough work tends to pay, even when the reward looks different from what you expected. Whether you farm, run a shop or study, the 'treasure' is often the result of effort that no shortcut can replace.",
+      "quote": "the vines, after so thorough a digging, produced a crop such as had never before been seen.",
+      "locator": "The Farmer and His Sons ¶1",
+      "apply_it": "Pick one area of your work you've been rushing. Give it a thorough, careful effort this week and note the result.",
+      "quiz": {
+        "question": "What did the sons find after digging the vineyard?",
+        "options": [
+          "A chest of gold coins",
+          "No gold, but a record harvest",
+          "Nothing at all of value",
+          "Their father's hidden will"
+        ],
+        "answer": 1,
+        "explanation": "They found no treasure, but their thorough digging produced an outstanding crop."
+      }
+    },
+    {
+      "id": "aesops-fables--18",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "helping",
+        "crisis",
+        "empathy"
+      ],
+      "title": "In a crisis, help first and give advice later",
+      "body": "A boy is drowning in a river. A passer-by stops at the bank and lectures him about the danger of deep water, without helping. The boy begs him to save him first and scold him afterwards.\n\nWhen someone is in trouble, through debt, illness, a breakup or a mistake at work, the urge to explain what they did wrong can be strong. But advice in the moment rarely helps. Offer practical help and comfort first. When they are safe, a calm conversation about lessons is more likely to be welcome.",
+      "quote": "please help me first and scold me afterwards.",
+      "locator": "The Boy Bathing ¶1",
+      "apply_it": "Next time someone brings you a problem, ask 'What would help right now?' before offering any opinion.",
+      "quiz": {
+        "question": "What did the drowning boy ask the man to do?",
+        "options": [
+          "Go and fetch his parents",
+          "Teach him how to swim",
+          "Help him first and scold him afterwards",
+          "Leave him alone"
+        ],
+        "answer": 2,
+        "explanation": "The man lectured instead of helping; the boy asked to be rescued first and scolded later."
+      }
+    },
+    {
+      "id": "aesops-fables--19",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-awareness",
+        "criticism",
+        "humility"
+      ],
+      "title": "We see others' faults clearly and miss our own",
+      "body": "Aesop imagines that everyone carries two bags full of faults. The bag in front, always in view, holds other people's faults. The bag on our back, out of sight, holds our own.\n\nThis explains why it is so easy to criticise a colleague's lateness or a relative's spending while excusing our own versions of the same thing. Before judging someone, it is worth checking the bag behind you. Asking trusted people for honest feedback is one way to see what you carry.",
+      "quote": "men do not see their own faults, but never fail to see those of others.",
+      "locator": "The Two Bags ¶1",
+      "apply_it": "Next time you feel irritated by someone's fault, ask yourself honestly whether you ever do something similar.",
+      "quiz": {
+        "question": "In the fable of the Two Bags, which bag holds our own faults?",
+        "options": [
+          "The one in front, always in view",
+          "Both bags equally",
+          "Neither: we carry only others' faults",
+          "The one on our back, out of sight"
+        ],
+        "answer": 3,
+        "explanation": "The front bag holds neighbours' faults; the one behind, which we can't see, holds our own."
+      }
+    },
+    {
+      "id": "aesops-fables--20",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "overload",
+        "greed"
+      ],
+      "title": "Grab less at once and you will get further",
+      "body": "A boy pushes his hand into a jar of nuts and grabs as many as he can hold. Now his fist is too big to come out of the narrow neck, and he bursts into tears. A bystander tells him to take half and he'll get his hand out easily.\n\nWe often do the same with our time: too many projects, too many commitments, too many goals at once, until we're stuck and achieve nothing. Taking on less and finishing it usually brings more than holding on to everything.",
+      "quote": "be content with half the amount, and you'll be able to get your hand out without difficulty.",
+      "locator": "The Boy and the Filberts ¶1",
+      "apply_it": "Look at your to-do list or current goals. Remove or postpone half, and finish what remains.",
+      "quiz": {
+        "question": "Why could the boy not pull his hand out of the jar?",
+        "options": [
+          "He had grabbed too many nuts to fit through the neck",
+          "The jar was glued to the table",
+          "His hand was injured",
+          "The nuts were too hot to hold"
+        ],
+        "answer": 0,
+        "explanation": "His full fist was too big for the jar’s neck; taking half would have let him out."
+      }
+    },
+    {
+      "id": "aesops-fables--21",
+      "topic": "personal-development",
+      "tags": [
+        "preparation",
+        "skills",
+        "readiness"
+      ],
+      "title": "Sharpen your tools before you need them",
+      "body": "A wild boar is sharpening his tusks on a tree when a fox asks why, since no hunters or dangers are around. The boar replies that when danger comes there will be no time to sharpen them.\n\nSkills, savings, health and contacts work the same way. You can't learn a trade, build an emergency fund or get fit on the day trouble arrives. Quiet periods are exactly when you should prepare, so that you are ready when the moment comes.",
+      "quote": "the instant my life is in danger I shall need to use my tusks. There'll be no time to sharpen them then.",
+      "locator": "The Wild Boar and the Fox ¶1",
+      "apply_it": "Choose one skill or resource you would need in an emergency, such as savings, a CV or first aid. Spend 30 minutes on it this week.",
+      "quiz": {
+        "question": "Why was the boar sharpening his tusks when no danger was near?",
+        "options": [
+          "Because he was bored",
+          "Because there would be no time to do it once danger came",
+          "Because the fox told him to",
+          "Because he planned to attack the fox"
+        ],
+        "answer": 1,
+        "explanation": "He said that when danger arrives there is no time left to prepare."
+      }
+    },
+    {
+      "id": "aesops-fables--22",
+      "topic": "personal-development",
+      "tags": [
+        "strengths",
+        "self-image",
+        "value"
+      ],
+      "title": "What you undervalue in yourself may be what saves you",
+      "body": "A stag admires his magnificent antlers in a pool but is ashamed of his thin legs. When a lion attacks, those legs carry him to safety, until his antlers catch in branches and he is caught.\n\nWe often prize what looks impressive, like status, appearance or possessions, and overlook our quieter strengths, like reliability, patience or practical skill. Take an honest look at what actually helps you through difficulties, and give those qualities the respect they deserve.",
+      "quote": "I despised my legs, which might have saved my life: but I gloried in my horns, and they have proved my ruin.",
+      "locator": "The Stag at the Pool ¶1",
+      "apply_it": "Write down one 'unimpressive' quality that has helped you through a hard time. How could you develop it further?",
+      "quiz": {
+        "question": "What caused the stag to be caught?",
+        "options": [
+          "His thin legs were too slow",
+          "He stopped to drink again",
+          "His admired antlers got tangled in branches",
+          "He was too proud to run"
+        ],
+        "answer": 2,
+        "explanation": "His legs carried him to safety, but the antlers he admired caught in the trees."
+      }
+    },
+    {
+      "id": "aesops-fables--23",
+      "topic": "personal-development",
+      "tags": [
+        "self-reliance",
+        "action",
+        "responsibility"
+      ],
+      "title": "Put your own shoulder to the wheel before asking for help",
+      "body": "A wagon driver's cart sinks into the mud. He stands and calls on Hercules for help without trying anything himself. Hercules appears and tells him to push the wheel and urge on his horses first; only then can he expect help.\n\nIt is fine to ask for support, from friends, family, or faith. But people are far more willing to help someone who is already trying. Take the first practical step yourself, then ask for what you still need.",
+      "quote": "If you won't lift a finger to help yourself, you can't expect Hercules or anyone else to come to your aid.",
+      "locator": "Hercules and the Wagoner ¶1",
+      "apply_it": "For a problem you're waiting for someone else to fix, list one action you can take yourself today.",
+      "quiz": {
+        "question": "What did Hercules tell the stuck wagon driver?",
+        "options": [
+          "To wait patiently for rescue",
+          "To abandon the wagon",
+          "To pray louder",
+          "To push the wheel himself before asking for help"
+        ],
+        "answer": 3,
+        "explanation": "Hercules said to put his shoulder to the wheel first; those who don't help themselves can't expect aid."
+      }
+    },
+    {
+      "id": "aesops-fables--24",
+      "topic": "business",
+      "tags": [
+        "quality",
+        "craftsmanship",
+        "focus"
+      ],
+      "title": "One excellent thing can be worth more than many ordinary ones",
+      "body": "A vixen boasts to a lioness about her many cubs, adding slyly that the lioness only ever has one. The lioness replies: one, but it's a lion.\n\nIn business and creative work, it is tempting to measure success by volume: more products, more posts, more clients. Often a smaller number of excellent products or deep relationships brings more value and reputation. Before adding more, ask whether improving the quality of what you already do would be the better investment.",
+      "quote": "“No,” said the Lioness grimly, “but that one’s a lion.”",
+      "locator": "The Lioness and the Vixen ¶1",
+      "apply_it": "Pick one product, service or task you do often. Instead of doing more of it this week, make one instance truly excellent.",
+      "quiz": {
+        "question": "How did the lioness answer the vixen's boast?",
+        "options": [
+          "She said she had only one, but it was a lion",
+          "She said she would have more next year",
+          "She agreed that more is always better",
+          "She ignored the vixen"
+        ],
+        "answer": 0,
+        "explanation": "The lioness pointed out that quality matters more than quantity: her one cub was a lion."
+      }
+    },
+    {
+      "id": "aesops-fables--25",
+      "topic": "money",
+      "tags": [
+        "contentment",
+        "lifestyle",
+        "peace"
+      ],
+      "title": "A simple life in peace can beat luxury full of worry",
+      "body": "A town mouse mocks his country friend's plain meal of roots and invites him to the city, where the larder is full of figs, honey and dates. But every few minutes someone comes in and the mice must flee and hide. The country mouse goes home, preferring simple food eaten in peace.\n\nBigger houses, flashier cars and high-pressure jobs can bring stress, debt and constant fear of losing them. Before chasing a richer lifestyle, ask what it will cost you in peace of mind.",
+      "quote": "You live in the lap of luxury, I can see, but you are surrounded by dangers; whereas at home I can enjoy my simple dinner of roots and corn in peace.",
+      "locator": "The Town Mouse and the Country Mouse ¶1",
+      "apply_it": "Before your next big lifestyle upgrade, list the new worries or debts it would bring. Is the trade worth it?",
+      "quiz": {
+        "question": "Why did the country mouse go home?",
+        "options": [
+          "The town food made him ill",
+          "He preferred simple food in peace to luxury full of danger",
+          "The town mouse asked him to leave",
+          "He missed his family"
+        ],
+        "answer": 1,
+        "explanation": "The town larder was rich but constantly disturbed by danger; he chose peace over luxury."
+      }
+    },
+    {
+      "id": "aesops-fables--26",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "revenge",
+        "anger",
+        "consequences"
+      ],
+      "title": "Revenge often burns your own harvest",
+      "body": "A farmer catches the fox that has been stealing his hens. To punish it, he ties burning material to its tail and lets it go. The fox runs straight into the farmer's ripe cornfield, and the whole harvest burns.\n\nRevenge feels satisfying in the moment, but it is hard to control where it spreads. An angry message, a public accusation or a spiteful act can damage your own reputation, relationships and livelihood more than the person you aimed at. Protect yourself from repeat harm, then let the score-settling go.",
+      "quote": "the Fox made straight for the fields where the corn was standing ripe and ready for cutting. It quickly caught fire and was all burnt up",
+      "locator": "The Farmer and the Fox ¶1",
+      "apply_it": "Next time you want to get even, write down how the plan could backfire on you before you act.",
+      "quiz": {
+        "question": "What happened when the farmer took revenge on the fox?",
+        "options": [
+          "The fox never came back and he was happy",
+          "His neighbours praised him",
+          "The fox ran into his cornfield and burned his harvest",
+          "The fox stole even more hens"
+        ],
+        "answer": 2,
+        "explanation": "The burning fox ran through the ripe corn, destroying the farmer’s own harvest."
+      }
+    },
+    {
+      "id": "aesops-fables--27",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "planning",
+        "seasons"
+      ],
+      "title": "Save in the good season for the lean one",
+      "body": "In winter, a starving grasshopper asks the ants for some of their stored grain. They ask what she did all summer. She was too busy singing to gather food. The ants tell her she may as well dance through the winter, and go back to work.\n\nIncome often comes in seasons: harvests, busy months, contracts, bonuses. The fable's lesson is to set something aside while times are good, so a slow period doesn't become a crisis. Enjoy the summer, but store some grain too.",
+      "quote": "Why didn't you collect a store of food for the winter?",
+      "locator": "The Grasshopper and the Ants ¶1",
+      "apply_it": "Next time you receive extra income, save a fixed share of it, even 10%, before spending the rest.",
+      "quiz": {
+        "question": "Why was the grasshopper starving in winter?",
+        "options": [
+          "The ants stole her food",
+          "There was no food in summer",
+          "She gave all her food away",
+          "She spent the summer singing instead of storing food"
+        ],
+        "answer": 3,
+        "explanation": "She had not gathered any store during summer, so she had nothing when winter came."
+      }
+    },
+    {
+      "id": "aesops-fables--28",
+      "topic": "business",
+      "tags": [
+        "teamwork",
+        "interdependence",
+        "roles"
+      ],
+      "title": "Every role in a system matters, even the ones that look idle",
+      "body": "The parts of the body rebel against the belly, complaining that they do all the work while it does nothing. They stop feeding it. Soon the whole body weakens, and the limbs realise too late that the belly was keeping them all alive.\n\nIn organisations, some roles look unproductive from outside: accounts, cleaning, management, maintenance. Cutting or disrespecting them can quietly weaken everything else. Before deciding someone contributes nothing, understand what would happen if their work stopped.",
+      "quote": "the whole Body soon began to fail, and the Members and all shared in the general collapse. And then they saw too late how foolish they had been.",
+      "locator": "The Belly and the Members ¶1",
+      "apply_it": "Pick a role in your workplace or home you rarely think about. Ask what would break if it stopped, and thank the person.",
+      "quiz": {
+        "question": "What happened when the limbs stopped feeding the belly?",
+        "options": [
+          "The whole body weakened, including the limbs",
+          "The limbs grew stronger",
+          "The belly found another source of food",
+          "Nothing changed at all"
+        ],
+        "answer": 0,
+        "explanation": "Starving the belly led to the collapse of the whole body, limbs included."
+      }
+    },
+    {
+      "id": "aesops-fables--29",
+      "topic": "relationships",
+      "tags": [
+        "helping",
+        "teamwork",
+        "foresight"
+      ],
+      "title": "Help others carry a little now, or carry it all later",
+      "body": "An ass and a mule are both loaded for a journey. On a steep road the ass begs the mule to take part of his load, but the mule refuses. The ass collapses and dies, and the driver puts the ass's whole load, and its skin, on the mule.\n\nIn families and teams, refusing a small amount of help to someone struggling often comes back to you in a bigger way: a colleague burns out and you inherit their work, or a relative's small problem becomes a family crisis. Sharing the load early is often the self-interested choice too.",
+      "quote": "if I had been willing to help the Ass at first, I should not now be carrying his load and his skin into the bargain.",
+      "locator": "The Ass and the Mule ¶1",
+      "apply_it": "Is someone near you struggling with their load? Offer one specific, small piece of help this week.",
+      "quiz": {
+        "question": "What happened to the mule after refusing to help the ass?",
+        "options": [
+          "He was rewarded with extra food",
+          "He had to carry the ass's whole load as well as his own",
+          "He was set free by the driver",
+          "Nothing happened to him"
+        ],
+        "answer": 1,
+        "explanation": "After the ass died, its entire load and skin were put on the mule."
+      }
+    },
+    {
+      "id": "aesops-fables--30",
+      "topic": "relationships",
+      "tags": [
+        "friends",
+        "reputation",
+        "character"
+      ],
+      "title": "People judge you by the company you choose",
+      "body": "A man takes a donkey home on trial. The new donkey immediately goes and stands beside the laziest, greediest animal in the stable. The man returns it to the seller at once, saying he could tell what kind of beast it was from the companion it chose.\n\nEmployers, lenders and partners often judge you by who you spend time with. More importantly, the people around you shape your habits. Choosing friends and colleagues who are honest and hardworking influences both how others see you and who you become.",
+      "quote": "I could see what sort of beast he is from the companion he chose for himself.",
+      "locator": "The Ass and His Purchaser ¶1",
+      "apply_it": "List the five people you spend the most time with. Is there one positive influence you could see more often?",
+      "quiz": {
+        "question": "Why did the buyer return the donkey so quickly?",
+        "options": [
+          "It refused to eat",
+          "It ran away from the stable",
+          "It chose to stand next to the laziest, greediest animal",
+          "It was too old to work"
+        ],
+        "answer": 2,
+        "explanation": "Its choice of companion told the buyer what sort of animal it was."
+      }
+    },
+    {
+      "id": "aesops-fables--31",
+      "topic": "personal-development",
+      "tags": [
+        "decisions",
+        "exit-plan",
+        "caution"
+      ],
+      "title": "Before you jump in, ask how you would get out",
+      "body": "Two frogs leave a dried-up marsh and find a deep, cool well. One wants to jump in and live there. The other asks: if this well also dries up, how would we ever get out?\n\nBig commitments like a long contract, a loan, a business partnership or moving abroad can be easy to enter and hard to leave. Before saying yes, ask what happens if things go wrong and whether you have a way out. A clear exit plan makes bold choices much safer.",
+      "quote": "supposing this well dried up like the marsh, how should we get out again?",
+      "locator": "The Frogs and the Well ¶1",
+      "apply_it": "For your next big commitment, write down how you would exit if it went badly, and what that would cost.",
+      "quiz": {
+        "question": "What question did the wiser frog ask before jumping into the well?",
+        "options": [
+          "How deep is the water?",
+          "Are there any fish to eat?",
+          "Who owns the well?",
+          "How would we get out if it dried up?"
+        ],
+        "answer": 3,
+        "explanation": "He asked how they would escape if the well dried up like the marsh."
+      }
+    },
+    {
+      "id": "aesops-fables--32",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "conflict",
+        "calm",
+        "de-escalation"
+      ],
+      "title": "Some quarrels grow bigger the more you attack them",
+      "body": "Hercules sees what looks like an apple on the road and stamps on it. It doubles in size. He hits it with his club and it swells until it blocks the whole road. The goddess Minerva tells him it is the apple of discord: left alone it stays small, but violence makes it grow.\n\nMany disputes work like this. Every sharp reply, forwarded message or public complaint makes them bigger. Sometimes the wisest move is to stop hitting, let things cool down, and deal with the real issue calmly later.",
+      "quote": "if you do not meddle with it, it remains small as it was at first, but if you resort to violence it swells into the thing you see.",
+      "locator": "Hercules and Minerva ¶1",
+      "apply_it": "In your next heated exchange, don't reply for a few hours. Then respond calmly, or not at all.",
+      "quiz": {
+        "question": "What happened each time Hercules struck the apple of discord?",
+        "options": [
+          "It grew bigger",
+          "It shrank",
+          "It turned into gold",
+          "It rolled away"
+        ],
+        "answer": 0,
+        "explanation": "Minerva explained that discord stays small if left alone but swells when attacked."
+      }
+    },
+    {
+      "id": "aesops-fables--33",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "observation",
+        "mistakes"
+      ],
+      "title": "Learn from other people's mistakes so you don't have to make them",
+      "body": "A lion, a fox and a donkey hunt together. The donkey divides the catch into three equal shares, and the furious lion kills him. Asked to divide it again, the fox gives the lion almost everything. When the lion asks who taught him, the fox replies: the donkey.\n\nThe cheapest lessons are the ones others pay for. When a colleague's business fails, a friend falls into debt, or someone loses a job, look calmly at what went wrong. You can avoid the same trap without paying the same price.",
+      "quote": "Happy is he who learns from the misfortunes of others.",
+      "locator": "The Lion, the Fox, and the Ass ¶2",
+      "apply_it": "Think of a recent failure you've seen up close. Write down one lesson from it you can apply to your own life.",
+      "quiz": {
+        "question": "Who did the fox say taught him how to divide the catch?",
+        "options": [
+          "The lion",
+          "The donkey",
+          "His mother",
+          "Nobody, he guessed"
+        ],
+        "answer": 1,
+        "explanation": "The fox learned from seeing what happened to the donkey."
+      }
+    },
+    {
+      "id": "aesops-fables--34",
+      "topic": "personal-development",
+      "tags": [
+        "promises",
+        "integrity",
+        "trust"
+      ],
+      "title": "Don't promise more than you can deliver",
+      "body": "A sick man vows to sacrifice a hundred oxen if he recovers. When he gets well, he owns no oxen, so he offers a hundred little oxen made of fat and claims his vow is fulfilled. In the fable, his trickery leads him into much worse trouble.\n\nOverpromising is tempting when we're desperate or want to impress: a customer is told the job will be done tomorrow, a friend is promised a loan. When we can't deliver, we're tempted to cut corners or bend the truth. Promise modestly and deliver fully.",
+      "quote": "Do not promise more than you can perform.",
+      "locator": "The Impostor ¶2",
+      "apply_it": "Before agreeing to your next request, check your real capacity and promise a little less than you think you can do.",
+      "quiz": {
+        "question": "What did the sick man do instead of keeping his vow?",
+        "options": [
+          "Sacrificed a hundred real oxen",
+          "Sold his house to buy oxen",
+          "Offered a hundred little oxen made of fat",
+          "Forgot about the vow entirely"
+        ],
+        "answer": 2,
+        "explanation": "Having no oxen, he tried to fulfil the vow with fake oxen made of tallow."
+      }
+    },
+    {
+      "id": "aesops-fables--35",
+      "topic": "psychology",
+      "tags": [
+        "loss-aversion",
+        "sunk-cost",
+        "money"
+      ],
+      "title": "We chase what we lost harder than what we could gain",
+      "body": "A bat, a bramble and a seagull go into business together and lose everything in a shipwreck. Ever since, Aesop jokes, the seagull keeps diving for the lead it lost, the bat hides from its creditors, and the bramble grabs at the clothes of passers-by hoping to recover its stock.\n\nPeople feel losses more sharply than equal gains, so we often spend years trying to win back money or status we lost. Sometimes it's wiser to accept the loss and put that energy into building something new.",
+      "quote": "All men are more concerned to recover what they lose than to acquire what they lack.",
+      "locator": "The Bat, the Bramble, and the Seagull ¶2",
+      "apply_it": "Is there a loss you keep trying to win back? Ask whether that energy would earn more if spent on a fresh start.",
+      "quiz": {
+        "question": "What does the fable say people care about most?",
+        "options": [
+          "Gaining things they never had",
+          "Helping their business partners",
+          "Avoiding the sea",
+          "Recovering what they have lost"
+        ],
+        "answer": 3,
+        "explanation": "The moral says people are more concerned to recover losses than to acquire what they lack."
+      }
+    },
+    {
+      "id": "aesops-fables--36",
+      "topic": "psychology",
+      "tags": [
+        "spotlight-effect",
+        "self-consciousness",
+        "humility"
+      ],
+      "title": "Others notice you far less than you think",
+      "body": "A gnat rests on a bull's horn for a long time. When it is ready to leave, it politely asks the bull whether he minds. The bull replies that he didn't notice when it arrived and won't notice when it goes.\n\nMany of us worry about how we looked in a meeting, what people thought of our outfit or a small mistake. In reality, most people are busy with their own concerns and barely noticed. This can be freeing: you can try new things without imagining the whole world is watching.",
+      "quote": "It's all one to me; I didn't notice when you came, and I shan't know when you go away.",
+      "locator": "The Gnat and the Bull ¶1",
+      "apply_it": "Think of a small embarrassment you keep replaying. Ask: would anyone else even remember it? Then let it go.",
+      "quiz": {
+        "question": "How did the bull respond when the gnat asked if he minded it leaving?",
+        "options": [
+          "He hadn't noticed it arrive and wouldn't notice it leave",
+          "He begged it to stay",
+          "He was relieved it was going",
+          "He was angry it had stayed so long"
+        ],
+        "answer": 0,
+        "explanation": "The bull had not even noticed the gnat, showing we matter less in others’ eyes than in our own."
+      }
+    },
+    {
+      "id": "aesops-fables--37",
+      "topic": "money",
+      "tags": [
+        "comparison",
+        "appearances",
+        "overspending"
+      ],
+      "title": "Trying to look bigger than you are can make you burst",
+      "body": "A little frog tells his mother that a huge creature crushed his brother. She puffs herself up and asks: was it this big? Bigger, he says. She puffs harder and harder, trying to match the ox, until she bursts.\n\nComparing ourselves to people with far more money and trying to match them, in houses, weddings, phones or cars, can stretch us until something breaks, usually our finances. You don't need to match anyone's size. Live within your own means and measure yourself against your own goals.",
+      "quote": "And yet again she puffed and puffed herself out till she was almost as round as a ball.",
+      "locator": "The Ox and the Frog ¶1",
+      "apply_it": "Identify one purchase you're considering mainly to keep up with someone else. Skip it and save the money.",
+      "quiz": {
+        "question": "What happened to the mother frog?",
+        "options": [
+          "She grew as big as the ox",
+          "She burst trying to make herself as big as the ox",
+          "She chased the ox away",
+          "She found her lost son"
+        ],
+        "answer": 1,
+        "explanation": "Trying to match the ox’s size, she puffed herself up until she burst."
+      }
+    },
+    {
+      "id": "aesops-fables--38",
+      "topic": "money",
+      "tags": [
+        "money",
+        "purpose",
+        "hoarding"
+      ],
+      "title": "Money you never use does you no more good than a brick",
+      "body": "A miser sells everything, melts it into a lump of gold, and buries it in a field, visiting it every day just to look at it. When a servant steals it, a neighbour tells him to bury a brick instead and visit that; it will do him just as much good.\n\nSaving is wise, and emergency funds matter. But money hoarded only for its own sake, never used to improve your life, support others or build something, has little value. Give your savings a purpose.",
+      "quote": "put a brick into the hole, and take a look at it every day: you won't be any worse off than before",
+      "locator": "The Miser ¶1",
+      "apply_it": "Give each of your savings a named purpose: emergency, education, business, giving. If one has no purpose, choose one.",
+      "quiz": {
+        "question": "What did the neighbour advise the miser after his gold was stolen?",
+        "options": [
+          "Call the police immediately",
+          "Work harder to earn more gold",
+          "Bury a brick and look at it, since the gold was of no use anyway",
+          "Forgive the thief and move on"
+        ],
+        "answer": 2,
+        "explanation": "Since the miser never used his gold, a brick would serve him just as well."
+      }
+    },
+    {
+      "id": "aesops-fables--39",
+      "topic": "personal-development",
+      "tags": [
+        "courage",
+        "problems",
+        "action"
+      ],
+      "title": "Grasp difficult problems firmly rather than touching them timidly",
+      "body": "A boy picking berries gets stung by a nettle. Crying, he tells his mother he only touched it lightly. She explains that this is exactly why it stung: if he had gripped it firmly, it would not have hurt.\n\nMany problems hurt more when we approach them half-heartedly: a hard conversation done vaguely, a debt we only partly face, a task we keep poking at. Committing fully, with a clear plan and firm action, often makes the experience less painful and the result better.",
+      "quote": "if you had grasped it firmly, it wouldn't have hurt you in the least.",
+      "locator": "The Boy and the Nettles ¶1",
+      "apply_it": "Pick a problem you've been tackling half-heartedly. Set aside a block of time this week to deal with it properly.",
+      "quiz": {
+        "question": "Why did the nettle sting the boy, according to his mother?",
+        "options": [
+          "Because he grabbed it too hard",
+          "Because he was allergic",
+          "Because it was the wrong season",
+          "Because he only touched it lightly"
+        ],
+        "answer": 3,
+        "explanation": "She said a light touch stings, but grasping it firmly would not have hurt."
+      }
+    },
+    {
+      "id": "aesops-fables--40",
+      "topic": "business",
+      "tags": [
+        "honesty",
+        "integrity",
+        "reputation"
+      ],
+      "title": "Honesty is rewarded; greed for what is not yours can lose you everything",
+      "body": "A woodcutter drops his axe in a river. The god Mercury dives and brings up a golden axe, then a silver one, but the woodcutter says neither is his. When his own axe appears, he claims it, and Mercury rewards his honesty with all three. A jealous neighbour copies the trick, claims the golden axe, and ends up with nothing, not even his own.\n\nShortcuts built on dishonesty can bring quick gains, but they risk losing what you already had, especially your good name.",
+      "quote": "he not only declined to give him the golden axe, but also refused to recover for him the one he had let fall into the stream.",
+      "locator": "Mercury and the Woodman ¶1",
+      "apply_it": "Think of a time you could gain by bending the truth. Decide now what you will do if that situation comes up.",
+      "quiz": {
+        "question": "What happened to the neighbour who claimed the golden axe?",
+        "options": [
+          "He got nothing, not even his own axe back",
+          "He received all three axes",
+          "He received the silver axe",
+          "He was made a god"
+        ],
+        "answer": 0,
+        "explanation": "Mercury refused him the golden axe and would not recover his own either."
       }
     }
   ]

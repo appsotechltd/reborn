@@ -11,18 +11,32 @@ class Fetched<T> {
   final bool offline;
 }
 
-/// The nine topics from content/SCHEMA.md, used when /v1/topics is
+/// The twenty-three topics from content/SCHEMA.md, used when /v1/topics is
 /// unreachable and nothing is cached yet.
 const kDefaultTopics = <Topic>[
   Topic(slug: 'business', name: 'Business'),
   Topic(slug: 'psychology', name: 'Psychology'),
+  Topic(slug: 'mental-strength', name: 'Mental Strength & Resilience'),
   Topic(slug: 'health', name: 'Health & Wellness'),
   Topic(slug: 'emotional-intelligence', name: 'Emotional Intelligence'),
   Topic(slug: 'personal-development', name: 'Personal Development'),
   Topic(slug: 'productivity', name: 'Productivity & Career'),
   Topic(slug: 'money', name: 'Money'),
   Topic(slug: 'relationships', name: 'Relationships'),
+  Topic(slug: 'dating-marriage', name: 'Dating & Marriage'),
   Topic(slug: 'mindfulness', name: 'Mindfulness & Philosophy'),
+  Topic(slug: 'faith-wisdom', name: 'Faith & Wisdom'),
+  Topic(slug: 'leadership', name: 'Leadership'),
+  Topic(slug: 'parenting', name: 'Parenting & Family'),
+  Topic(slug: 'communication', name: 'Communication & Influence'),
+  Topic(slug: 'creativity', name: 'Creativity'),
+  Topic(slug: 'learning', name: 'Learning & Thinking'),
+  Topic(slug: 'lives-history', name: 'Lives & History'),
+  Topic(slug: 'entrepreneurship', name: 'Entrepreneurship'),
+  Topic(slug: 'heartbreak-healing', name: 'Heartbreak & Healing'),
+  Topic(slug: 'grief-loss', name: 'Grief & Loss'),
+  Topic(slug: 'study-smarter', name: 'Study Smarter'),
+  Topic(slug: 'skills-mastery', name: 'Skills & Mastery'),
 ];
 
 /// Wraps [ApiClient] with the offline cache: reads go to the network first;

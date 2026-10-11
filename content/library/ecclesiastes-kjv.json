@@ -1,0 +1,801 @@
+{
+  "source": {
+    "id": "ecclesiastes-kjv",
+    "title": "The Book of Ecclesiastes (King James Version)",
+    "authors": [
+      "Traditionally attributed to Solomon, \"the Preacher\""
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/8021",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "The Bible, King James Version, Book 21: Ecclesiastes, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1611,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "King James Version (1611) text from Gutenberg #8021. Public domain in the US and most countries. In the UK the KJV is still under Crown letters patent, which covers printing the Bible text; short quotations are generally accepted. Locators are chapter:verse."
+  },
+  "cards": [
+    {
+      "id": "ecclesiastes-kjv--01",
+      "topic": "faith-wisdom",
+      "tags": [
+        "perspective",
+        "history",
+        "humility",
+        "learning"
+      ],
+      "title": "Your problem is probably not new, so learn from those who faced it",
+      "body": "The Preacher looks at the world and notices that the same patterns keep returning: people rise and fall, chase the same goals and make the same mistakes. Nothing under the sun is truly new.\n\nThat can sound gloomy, but it is also a comfort. Whatever you are facing, a debt, a betrayal, a hard choice, someone has faced it before. Their stories, and the wisdom traditions that kept them, can guide you. You are not the first, so you need not start from nothing.",
+      "quote": "The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.",
+      "locator": "Ecclesiastes 1:9",
+      "apply_it": "Think of a problem you face now. Ask an older person, or read, how others handled the same thing.",
+      "quiz": {
+        "question": "What practical comfort can we draw from 'no new thing under the sun'?",
+        "options": [
+          "Others have faced our problems before and can teach us",
+          "Nothing we do can ever matter",
+          "New ideas are always wrong",
+          "History never repeats itself"
+        ],
+        "answer": 0,
+        "explanation": "The Preacher sees patterns repeating, which means the experience of people before us is useful today."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--02",
+      "topic": "faith-wisdom",
+      "tags": [
+        "acceptance",
+        "serenity",
+        "control",
+        "letting-go"
+      ],
+      "title": "Stop wearing yourself out on what cannot be changed",
+      "body": "The Preacher admits plainly that some things cannot be fixed. What is crooked stays crooked, and what is missing cannot be counted into existence.\n\nThis is not an excuse for giving up on everything. It is a call to sort your worries. Some situations respond to effort; others, like the past, other people's choices or a loss, do not. Pouring energy into the second kind only drains you. Accepting them frees strength for the things you can actually improve.",
+      "quote": "That which is crooked cannot be made straight: and that which is wanting cannot be numbered.",
+      "locator": "Ecclesiastes 1:15",
+      "apply_it": "Write two lists: worries you can act on and worries you cannot. Choose one action for the first list today.",
+      "quiz": {
+        "question": "What does the Preacher say about what is 'crooked'?",
+        "options": [
+          "Everything can be fixed with enough effort",
+          "Some things cannot be straightened, so accept them",
+          "Crooked things should be hidden",
+          "Only kings can straighten them"
+        ],
+        "answer": 1,
+        "explanation": "Ecclesiastes 1:15 says the crooked cannot be made straight: some things are beyond our power to change."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--03",
+      "topic": "faith-wisdom",
+      "tags": [
+        "success",
+        "meaning",
+        "ambition",
+        "reflection"
+      ],
+      "title": "Success alone will not fill you, so ask what you are really chasing",
+      "body": "The Preacher built houses, planted vineyards, gathered silver and gold and denied himself no pleasure. Then he looked back on all of it and found it empty, like chasing the wind.\n\nHis experiment is useful for anyone driven by achievement. Goals are good, but when we expect a promotion, a car or a bigger house to give lasting meaning, we are usually disappointed. Ecclesiastes invites us to ask what we hope the success will give us, and whether there is a more direct path to that.",
+      "quote": "Then I looked on all the works that my hands had wrought, and on the labour that I had laboured to do: and, behold, all was vanity and vexation of spirit",
+      "locator": "Ecclesiastes 2:11",
+      "apply_it": "Pick one goal you are chasing. Write what you hope it will give you, and one way to get some of that now.",
+      "quiz": {
+        "question": "What did the Preacher conclude after gaining great wealth and works?",
+        "options": [
+          "It made him permanently happy",
+          "He needed even more to be content",
+          "It all felt empty and gave no lasting profit",
+          "It proved he was wiser than everyone"
+        ],
+        "answer": 2,
+        "explanation": "In 2:11 he looks on all his works and calls them vanity and vexation of spirit."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--04",
+      "topic": "faith-wisdom",
+      "tags": [
+        "work",
+        "gratitude",
+        "contentment",
+        "daily-life"
+      ],
+      "title": "Enjoy the good in ordinary work and meals as a gift",
+      "body": "After all his searching, the Preacher lands on something simple: eat, drink and let yourself enjoy the good in your work. He sees this not as a lowly pleasure but as something that comes from the hand of God.\n\nMany of us postpone joy until a future day when everything is sorted. Ecclesiastes suggests that the shared meal, the task done well and the end of a working day are where a good life is actually lived. Noticing them is a form of gratitude.",
+      "quote": "There is nothing better for a man, than that he should eat and drink, and that he should make his soul enjoy good in his labour.",
+      "locator": "Ecclesiastes 2:24",
+      "apply_it": "At your next meal, pause and name one good thing from today's work.",
+      "quiz": {
+        "question": "Where does the Preacher find 'nothing better' for a person?",
+        "options": [
+          "Collecting more wealth than others",
+          "Escaping work completely",
+          "Being remembered forever",
+          "Enjoying food, drink and the good in one's daily work"
+        ],
+        "answer": 3,
+        "explanation": "Ecclesiastes 2:24 points to simple enjoyment of food and labour, received as a gift."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--05",
+      "topic": "faith-wisdom",
+      "tags": [
+        "seasons",
+        "timing",
+        "change",
+        "patience"
+      ],
+      "title": "Every season of life has its purpose, including the hard ones",
+      "body": "The famous poem of Ecclesiastes 3 lists pairs: birth and death, planting and uprooting, weeping and laughing, mourning and dancing. Each has its time.\n\nThis helps in two ways. When life is hard, it reminds you that this season is not the whole story. When life is easy, it reminds you to enjoy it without assuming it will last forever. Asking 'what season am I in?' can also guide decisions: some seasons are for building, others for rest, healing or letting go.",
+      "quote": "To every thing there is a season, and a time to every purpose under the heaven:",
+      "locator": "Ecclesiastes 3:1",
+      "apply_it": "Name the season you are in right now (building, resting, grieving, growing). What does it ask of you?",
+      "quiz": {
+        "question": "What is the main lesson of 'to every thing there is a season'?",
+        "options": [
+          "Different times call for different actions, and seasons pass",
+          "Life never changes",
+          "Only happy times have a purpose",
+          "You should do everything at once"
+        ],
+        "answer": 0,
+        "explanation": "The poem pairs opposite seasons, each with its own proper time."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--06",
+      "topic": "faith-wisdom",
+      "tags": [
+        "communication",
+        "silence",
+        "listening",
+        "timing"
+      ],
+      "title": "Know when to speak and when to stay quiet",
+      "body": "Among the seasons listed in Ecclesiastes 3 are seasons for silence and seasons for speech. Both are right in their place.\n\nIn a tense meeting or a family quarrel, the urge is often to say everything now. Sometimes the wiser move is to wait until feelings cool or you understand more. At other times silence is the failure: when someone is being wronged, or a truth needs saying, holding back is not wisdom but fear. The skill is in reading which moment you are in.",
+      "quote": "A time to rend, and a time to sew; a time to keep silence, and a time to speak;",
+      "locator": "Ecclesiastes 3:7",
+      "apply_it": "Before your next difficult conversation, ask: is this a moment to speak, or to listen and wait?",
+      "quiz": {
+        "question": "According to Ecclesiastes 3:7, when is silence right?",
+        "options": [
+          "Silence is always better than speaking",
+          "There is a time for silence and a time for speech",
+          "Speaking is always better than silence",
+          "Only leaders should speak"
+        ],
+        "answer": 1,
+        "explanation": "The verse pairs silence and speech, each right at its proper time."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--07",
+      "topic": "faith-wisdom",
+      "tags": [
+        "envy",
+        "comparison",
+        "motivation",
+        "work"
+      ],
+      "title": "Work driven by envy leaves you empty",
+      "body": "The Preacher noticed something uncomfortable: much hard work and skill comes from rivalry with a neighbour. People toil not because the work is good but to outdo someone else.\n\nHe calls this vanity and chasing the wind. Comparison can push you for a while, but it never lets you rest, because there is always someone ahead. Work rooted in purpose, service or love of the craft is steadier. It is worth checking which engine is driving you.",
+      "quote": "Again, I considered all travail, and every right work, that for this a man is envied of his neighbour.",
+      "locator": "Ecclesiastes 4:4",
+      "apply_it": "Think of something you are working hard at. Would you still do it if nobody else could see?",
+      "quiz": {
+        "question": "What does the Preacher say drives much human effort?",
+        "options": [
+          "Pure love of God alone",
+          "Fear of hunger only",
+          "Rivalry and envy between neighbours",
+          "Orders from the king"
+        ],
+        "answer": 2,
+        "explanation": "In 4:4 he observes that much labour comes from envy of one's neighbour, and calls it vanity."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--08",
+      "topic": "money",
+      "tags": [
+        "contentment",
+        "enough",
+        "peace",
+        "stress"
+      ],
+      "title": "A little with peace beats a lot with stress",
+      "body": "Ecclesiastes compares two hands. One handful held quietly is better, the Preacher says, than two full hands gained through toil and worry.\n\nThis is a challenge to the idea that more is always better. A higher income that costs your sleep, health and family time may leave you poorer overall. Knowing what 'enough' looks like for you lets you choose work and spending that protect your peace, instead of chasing a number that keeps moving.",
+      "quote": "Better is an handful with quietness, than both the hands full with travail and vexation of spirit.",
+      "locator": "Ecclesiastes 4:6",
+      "apply_it": "Write down what 'enough' would look like for your household this year.",
+      "quiz": {
+        "question": "What does the 'handful with quietness' teach?",
+        "options": [
+          "You should never try to earn money",
+          "Two hands full is always best",
+          "Quiet people earn more",
+          "Modest means with peace can be better than plenty with stress"
+        ],
+        "answer": 3,
+        "explanation": "Ecclesiastes 4:6 prefers a peaceful handful over two hands full of toil and vexation."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--09",
+      "topic": "relationships",
+      "tags": [
+        "work-life-balance",
+        "purpose",
+        "family",
+        "overwork"
+      ],
+      "title": "Ask yourself who your endless work is for",
+      "body": "The Preacher describes a man who is completely alone, with no child or brother, yet never stops working and is never satisfied with his riches. He never pauses to ask the obvious question: for whom am I doing this, and why am I depriving myself of good?\n\nIt is a portrait of overwork that has lost its reason. Most of us start working hard for people we love, then drift until the work crowds them out. Asking the Preacher's question regularly keeps work in its place.",
+      "quote": "neither saith he, For whom do I labour, and bereave my soul of good?",
+      "locator": "Ecclesiastes 4:8",
+      "apply_it": "Ask yourself the Preacher's question: who am I working for? Spend one hour this week with that person.",
+      "quiz": {
+        "question": "What question did the lonely worker in Ecclesiastes 4:8 fail to ask?",
+        "options": [
+          "For whom am I working, and why deny myself good?",
+          "How can I earn more?",
+          "Who is richer than me?",
+          "When will I retire?"
+        ],
+        "answer": 0,
+        "explanation": "The man labours endlessly without asking for whom he works, depriving himself of good."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--10",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "support",
+        "teamwork",
+        "resilience"
+      ],
+      "title": "Have someone who can lift you when you fall",
+      "body": "Two are better than one, says the Preacher, because when one falls the other can help him up. But woe to the person who falls with no one beside them.\n\nEveryone stumbles: an illness, a lost job, a hard season of grief. Independence is good, but complete isolation is dangerous. Investing in a few trusted friendships, and being that friend for others, is like building a safety net before you need it.",
+      "quote": "For if they fall, the one will lift up his fellow: but woe to him that is alone when he falleth; for he hath not another to help him up.",
+      "locator": "Ecclesiastes 4:10",
+      "apply_it": "Name one person who would help you up if you fell. Check in with them this week.",
+      "quiz": {
+        "question": "Why are two better than one, according to Ecclesiastes 4:10?",
+        "options": [
+          "Two people can avoid all work",
+          "If one falls, the other can help him up",
+          "One person always makes mistakes",
+          "Two people earn double the money"
+        ],
+        "answer": 1,
+        "explanation": "The verse warns that a person alone has no one to help them up."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--11",
+      "topic": "faith-wisdom",
+      "tags": [
+        "community",
+        "strength",
+        "unity",
+        "faith"
+      ],
+      "title": "A cord of three strands is hard to break",
+      "body": "Ecclesiastes builds from two people helping each other to an image of a threefold cord, which is not quickly broken. One can be overpowered; two can stand together; three bound together are stronger still.\n\nMany readers see in this a picture of a marriage or friendship strengthened by shared faith, or of a family and community woven together. Whatever the third strand is for you, the lesson is that bonds multiply strength. Build your life in company.",
+      "quote": "and a threefold cord is not quickly broken.",
+      "locator": "Ecclesiastes 4:12",
+      "apply_it": "Think of a group you belong to. What could you do this week to strengthen it?",
+      "quiz": {
+        "question": "What does the 'threefold cord' illustrate?",
+        "options": [
+          "Rope is better than chains",
+          "Three is an unlucky number",
+          "Strength grows when people are bound together",
+          "Being alone makes you strongest"
+        ],
+        "answer": 2,
+        "explanation": "A cord of three strands is not quickly broken: unity multiplies strength."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--12",
+      "topic": "faith-wisdom",
+      "tags": [
+        "prayer",
+        "humility",
+        "speech",
+        "reverence"
+      ],
+      "title": "In prayer and worship, listen more and talk less",
+      "body": "When you go to a place of worship, the Preacher advises, come ready to listen rather than to make showy offerings. Do not rush to speak before God; God is in heaven and you are on earth, so let your words be few.\n\nThis is advice about humility. Many words can hide a distracted heart. Quiet attention, honest short prayers and listening before speaking reflect respect, both for God and for others. It applies to any serious moment.",
+      "quote": "for God is in heaven, and thou upon earth: therefore let thy words be few.",
+      "locator": "Ecclesiastes 5:2",
+      "apply_it": "In your next time of prayer or reflection, spend the first two minutes in silence before saying anything.",
+      "quiz": {
+        "question": "What does Ecclesiastes 5:2 advise about speaking before God?",
+        "options": [
+          "Speak as much as possible",
+          "Only speak in public",
+          "Never pray at all",
+          "Let your words be few"
+        ],
+        "answer": 3,
+        "explanation": "Because God is in heaven and we are on earth, the Preacher says our words should be few."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--13",
+      "topic": "faith-wisdom",
+      "tags": [
+        "promises",
+        "integrity",
+        "commitment",
+        "trust"
+      ],
+      "title": "Make fewer promises and keep every one",
+      "body": "The Preacher warns against making vows and not keeping them. It is better, he says, not to promise at all than to promise and fail to pay.\n\nThe same applies far beyond religious vows. Saying yes too easily, to a friend, a client or a family member, and then not following through damages trust more than an honest 'no'. Before you commit, pause and ask whether you can really deliver. Then deliver.",
+      "quote": "Better is it that thou shouldest not vow, than that thou shouldest vow and not pay.",
+      "locator": "Ecclesiastes 5:5",
+      "apply_it": "Review your open promises. Keep one today, or honestly renegotiate one you cannot keep.",
+      "quiz": {
+        "question": "What does Ecclesiastes 5:5 say is better than a broken vow?",
+        "options": [
+          "Not making the vow in the first place",
+          "Making a bigger vow",
+          "Blaming someone else",
+          "Forgetting the vow quietly"
+        ],
+        "answer": 0,
+        "explanation": "It is better not to vow than to vow and not pay."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--14",
+      "topic": "money",
+      "tags": [
+        "greed",
+        "contentment",
+        "wealth",
+        "desire"
+      ],
+      "title": "Loving money never leaves you satisfied",
+      "body": "The person who loves silver, says the Preacher, will never have enough silver, and whoever loves abundance will never be content with their income.\n\nThe problem is not money itself but the love of it. When money becomes the goal, each raise just resets the target. Wealth used as a tool for needs, generosity and security can serve you well. Wealth loved for itself is a thirst that drinking only increases.",
+      "quote": "He that loveth silver shall not be satisfied with silver; nor he that loveth abundance with increase",
+      "locator": "Ecclesiastes 5:10",
+      "apply_it": "Write down what your money is for: three things you want it to do. Check your next big purchase against them.",
+      "quiz": {
+        "question": "According to Ecclesiastes 5:10, what happens to those who love money?",
+        "options": [
+          "They become peaceful",
+          "They are never satisfied with what they have",
+          "They always lose it",
+          "They become wise"
+        ],
+        "answer": 1,
+        "explanation": "Whoever loves silver is not satisfied with silver: the love of money keeps moving the target."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--15",
+      "topic": "faith-wisdom",
+      "tags": [
+        "mortality",
+        "reflection",
+        "priorities",
+        "grief"
+      ],
+      "title": "Remembering that life ends helps you live it well",
+      "body": "It is better to go to a house of mourning than to a feast, the Preacher says, because death is the end of everyone and the living take it to heart.\n\nThis is not a call to gloom. Funerals and times of loss make us honest about what matters: love, kindness, the way we treated people. Feasts rarely do that. Letting the reality of death shape your priorities can make you gentler, braver and less bothered by small things.",
+      "quote": "It is better to go to the house of mourning, than to go to the house of feasting: for that is the end of all men; and the living will lay it to his heart.",
+      "locator": "Ecclesiastes 7:2",
+      "apply_it": "Ask: if I had one year left, what would I stop doing and what would I start?",
+      "quiz": {
+        "question": "Why does the Preacher say the house of mourning is better than a feast?",
+        "options": [
+          "Feasts are always sinful",
+          "Mourners get better food",
+          "It makes the living take life's end to heart",
+          "Sadness is the goal of life"
+        ],
+        "answer": 2,
+        "explanation": "Mourning reminds the living of their own end, and they lay it to heart."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--16",
+      "topic": "faith-wisdom",
+      "tags": [
+        "feedback",
+        "criticism",
+        "growth",
+        "humility"
+      ],
+      "title": "Honest correction from a wise person beats flattery",
+      "body": "The Preacher says it is better to hear the rebuke of a wise person than the songs of fools. Praise feels good; correction stings. But the sting is often where growth begins.\n\nPeople who only surround themselves with cheerful agreement stop improving. A mentor, colleague or friend who tells you the truth kindly is rare and valuable. The skill is to receive it without defending yourself at once, and to ask what you can learn.",
+      "quote": "It is better to hear the rebuke of the wise, than for a man to hear the song of fools.",
+      "locator": "Ecclesiastes 7:5",
+      "apply_it": "Ask one person you respect: 'What is one thing I could do better?' Listen without arguing.",
+      "quiz": {
+        "question": "Which does Ecclesiastes 7:5 prefer?",
+        "options": [
+          "The song of fools",
+          "Silence from everyone",
+          "Praise from strangers",
+          "The rebuke of the wise"
+        ],
+        "answer": 3,
+        "explanation": "Correction from the wise is better than pleasant songs from fools."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--17",
+      "topic": "productivity",
+      "tags": [
+        "finishing",
+        "patience",
+        "pride",
+        "perseverance"
+      ],
+      "title": "Finishing well matters more than starting big",
+      "body": "Ecclesiastes says the end of a thing is better than its beginning, and a patient spirit is better than a proud one.\n\nBeginnings are exciting: new plans, new businesses, new resolutions. Endings require patience: the dull middle, the setbacks, the final details. Pride wants quick credit; patience keeps going until the job is done. Many people are good starters. The ones who quietly finish are the ones who build something lasting.",
+      "quote": "Better is the end of a thing than the beginning thereof: and the patient in spirit is better than the proud in spirit.",
+      "locator": "Ecclesiastes 7:8",
+      "apply_it": "Choose one unfinished project. Define what 'done' looks like and take the next step today.",
+      "quiz": {
+        "question": "What does Ecclesiastes 7:8 rank above the proud spirit?",
+        "options": [
+          "The patient spirit",
+          "The angry spirit",
+          "The quick spirit",
+          "The rich spirit"
+        ],
+        "answer": 0,
+        "explanation": "It says the end is better than the beginning and patience better than pride."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--18",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anger",
+        "self-control",
+        "patience",
+        "calm"
+      ],
+      "title": "Don't let anger move in and settle",
+      "body": "The Preacher warns against being quick in spirit to become angry, because anger rests in the lap of fools.\n\nAnger as a passing reaction is human. The danger is letting it settle in and make itself at home, so that you nurse grudges and act from resentment. A wise person notices the heat, waits before responding, and lets it pass rather than keeping it. That pause can save relationships, jobs and peace of mind.",
+      "quote": "Be not hasty in thy spirit to be angry: for anger resteth in the bosom of fools.",
+      "locator": "Ecclesiastes 7:9",
+      "apply_it": "Next time you feel angry, wait ten slow breaths before you reply or send anything.",
+      "quiz": {
+        "question": "Where does Ecclesiastes 7:9 say anger 'rests'?",
+        "options": [
+          "In the heart of the wise",
+          "In the bosom of fools",
+          "In the house of God",
+          "In the king's palace"
+        ],
+        "answer": 1,
+        "explanation": "Anger that settles in is the mark of a fool, so the Preacher advises not to be hasty to anger."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--19",
+      "topic": "faith-wisdom",
+      "tags": [
+        "nostalgia",
+        "present-moment",
+        "complaining",
+        "perspective"
+      ],
+      "title": "Stop asking why the old days were better",
+      "body": "The Preacher says not to ask why former days were better than these, because that question does not come from wisdom.\n\nNostalgia edits the past: we remember the good and forget the hardships. Complaining that things used to be better can keep us from dealing with today, the only time we can act. Every age has its troubles and its gifts. Wisdom works with the present instead of mourning an imagined past.",
+      "quote": "Say not thou, What is the cause that the former days were better than these? for thou dost not enquire wisely concerning this.",
+      "locator": "Ecclesiastes 7:10",
+      "apply_it": "When you catch yourself saying 'things were better before', name one good thing about today instead.",
+      "quiz": {
+        "question": "Why does the Preacher discourage asking why former days were better?",
+        "options": [
+          "The past was always worse",
+          "It is illegal to discuss the past",
+          "It is not a wise question",
+          "Only kings may ask it"
+        ],
+        "answer": 2,
+        "explanation": "Ecclesiastes 7:10 says such a question is not asked wisely."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--20",
+      "topic": "faith-wisdom",
+      "tags": [
+        "prosperity",
+        "adversity",
+        "gratitude",
+        "reflection"
+      ],
+      "title": "Enjoy good days, and use hard days to reflect",
+      "body": "In the day of prosperity be joyful, says the Preacher, but in the day of adversity consider. God has set the one alongside the other.\n\nThis is a balanced way to meet life's ups and downs. Good times are to be enjoyed, not spoiled by worry. Hard times are for thinking: what is this teaching me, what needs to change, what really matters? Both kinds of days come to everyone, and each has its own use.",
+      "quote": "In the day of prosperity be joyful, but in the day of adversity consider",
+      "locator": "Ecclesiastes 7:14",
+      "apply_it": "If today is good, enjoy it fully. If today is hard, write down one thing it might be teaching you.",
+      "quiz": {
+        "question": "What does Ecclesiastes 7:14 advise doing in the day of adversity?",
+        "options": [
+          "Give up hope",
+          "Pretend nothing is wrong",
+          "Blame others",
+          "Consider and reflect"
+        ],
+        "answer": 3,
+        "explanation": "In prosperity be joyful; in adversity, consider."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--21",
+      "topic": "faith-wisdom",
+      "tags": [
+        "gossip",
+        "self-awareness",
+        "forgiveness",
+        "criticism"
+      ],
+      "title": "Don't take every overheard criticism to heart; you have said worse",
+      "body": "The Preacher advises not to pay attention to everything people say, or you may hear your own servant cursing you. Then he adds a sharp reminder: you know in your heart that you have often cursed others too.\n\nIt is a lesson in humility and thick skin. People vent, and words said in frustration are not always meant. Since you have done the same, you can give others the grace you would want, and save yourself the hurt of chasing every remark.",
+      "quote": "For oftentimes also thine own heart knoweth that thou thyself likewise hast cursed others.",
+      "locator": "Ecclesiastes 7:22",
+      "apply_it": "When you hear that someone criticised you, recall a time you spoke carelessly about someone. Respond with grace.",
+      "quiz": {
+        "question": "Why does the Preacher say not to take every word spoken about you to heart?",
+        "options": [
+          "You have also spoken badly of others",
+          "Words never hurt anyone",
+          "Servants always lie",
+          "You should confront every critic"
+        ],
+        "answer": 0,
+        "explanation": "Ecclesiastes 7:21-22 reminds us that we have also cursed others."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--22",
+      "topic": "productivity",
+      "tags": [
+        "effort",
+        "wholeheartedness",
+        "work-ethic",
+        "mortality"
+      ],
+      "title": "Whatever you do, do it with all your strength",
+      "body": "The Preacher urges: whatever task your hand finds, do it with all your might. His reason is sobering: there is no work or planning in the grave. Our time to act is now.\n\nHalf-hearted effort wastes the one life we have. This does not mean doing everything; it means that what you choose to do deserves your full attention. Cooking, studying, serving a customer or caring for a child can all be done wholeheartedly.",
+      "quote": "Whatsoever thy hand findeth to do, do it with thy might",
+      "locator": "Ecclesiastes 9:10",
+      "apply_it": "Pick one ordinary task today and give it your full attention from start to finish.",
+      "quiz": {
+        "question": "Why does the Preacher urge doing things 'with thy might'?",
+        "options": [
+          "Because others are watching",
+          "Because our time to work and plan is limited to this life",
+          "Because rest is sinful",
+          "Because effort guarantees riches"
+        ],
+        "answer": 1,
+        "explanation": "He notes there is no work or device in the grave, so we should act fully now."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--23",
+      "topic": "faith-wisdom",
+      "tags": [
+        "luck",
+        "humility",
+        "success",
+        "uncertainty"
+      ],
+      "title": "Talent doesn't guarantee success; time and chance touch everyone",
+      "body": "The Preacher observed that the race does not always go to the swift, nor the battle to the strong, nor wealth to the clever. Time and chance happen to them all.\n\nThis keeps us humble when we succeed and kind when others fail. Effort and skill matter, but so do timing, health and circumstances beyond anyone's control. It also means a setback is not always a judgement on your worth. Keep doing good work, and hold outcomes with an open hand.",
+      "quote": "the race is not to the swift, nor the battle to the strong, neither yet bread to the wise, nor yet riches to men of understanding, nor yet favour to men of skill; but time and chance happeneth to them all.",
+      "locator": "Ecclesiastes 9:11",
+      "apply_it": "Think of a past success. Name one piece of luck or help that made it possible, and give thanks for it.",
+      "quiz": {
+        "question": "What does Ecclesiastes 9:11 say happens to all people?",
+        "options": [
+          "Guaranteed reward for skill",
+          "Wealth for the wise",
+          "Time and chance",
+          "Victory for the strong"
+        ],
+        "answer": 2,
+        "explanation": "The fastest and strongest do not always win; time and chance happen to all."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--24",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "communication",
+        "calm",
+        "persuasion",
+        "leadership"
+      ],
+      "title": "Quiet, wise words carry further than shouting",
+      "body": "The Preacher tells of a poor wise man who saved his city, yet was soon forgotten. Even so, he concludes, the words of the wise heard in quiet carry more weight than the shouting of a ruler among fools.\n\nIn a world of loud opinions, calm and thoughtful speech can seem weak. Over time it is often what people trust and remember. Whether you lead a team or a household, a steady voice tends to settle a room better than a raised one.",
+      "quote": "The words of wise men are heard in quiet more than the cry of him that ruleth among fools.",
+      "locator": "Ecclesiastes 9:17",
+      "apply_it": "In your next disagreement, lower your voice and slow down. Notice how people respond.",
+      "quiz": {
+        "question": "What does Ecclesiastes 9:17 say about quiet words of the wise?",
+        "options": [
+          "They are never heard at all",
+          "They only work for kings",
+          "They should be shouted to be effective",
+          "They are heard more than the shouting of a ruler among fools"
+        ],
+        "answer": 3,
+        "explanation": "Quiet wisdom is heard more than the cry of a ruler among fools."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--25",
+      "topic": "faith-wisdom",
+      "tags": [
+        "reputation",
+        "integrity",
+        "character",
+        "small-things"
+      ],
+      "title": "A little foolishness can spoil a good reputation",
+      "body": "Dead flies make a perfumer's ointment stink, says the Preacher, and a little folly can do the same to someone respected for wisdom and honour.\n\nReputation takes years to build and moments to damage. One careless comment online, one dishonest shortcut or one drunken night can overshadow a long record of good. The lesson is not to live in fear, but to treat small choices seriously, because people judge character by them.",
+      "quote": "Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.",
+      "locator": "Ecclesiastes 10:1",
+      "apply_it": "Before you post, send or say something risky today, ask: would I be happy for this to define me?",
+      "quiz": {
+        "question": "What do the 'dead flies' in Ecclesiastes 10:1 represent?",
+        "options": [
+          "A little folly that spoils a good name",
+          "Hard work that pays off",
+          "Wealth that attracts thieves",
+          "Old age"
+        ],
+        "answer": 0,
+        "explanation": "As dead flies spoil perfume, a little folly spoils a reputation for wisdom."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--26",
+      "topic": "productivity",
+      "tags": [
+        "working-smart",
+        "preparation",
+        "tools",
+        "efficiency"
+      ],
+      "title": "Sharpen the axe instead of swinging harder",
+      "body": "If the iron is blunt and you do not sharpen it, the Preacher says, you have to use more strength. Wisdom helps you succeed.\n\nMany of us push harder when work goes badly, staying later and grinding more. Often the better move is to stop and sharpen: learn a skill, fix the tool, improve the process, rest. A little time spent preparing can save a great deal of wasted effort.",
+      "quote": "If the iron be blunt, and he do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.",
+      "locator": "Ecclesiastes 10:10",
+      "apply_it": "Identify one 'blunt tool' in your work, a skill or process, and spend 20 minutes improving it.",
+      "quiz": {
+        "question": "What lesson does the blunt iron teach?",
+        "options": [
+          "Always use more force",
+          "Sharpening first saves wasted strength",
+          "Old tools should be thrown away",
+          "Work only with your hands"
+        ],
+        "answer": 1,
+        "explanation": "A blunt blade needs more strength; wisdom directs effort well."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--27",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "perfectionism",
+        "action",
+        "risk"
+      ],
+      "title": "Waiting for perfect conditions means you never plant",
+      "body": "Whoever watches the wind will not sow, says the Preacher, and whoever keeps looking at the clouds will not reap.\n\nThe farmer who waits for perfect weather misses the season. The same is true of starting a business, having a hard talk or changing a habit. There will always be a reason to wait. Prudence is wise, but endless watching becomes an excuse. At some point you have to put the seed in the ground.",
+      "quote": "He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap.",
+      "locator": "Ecclesiastes 11:4",
+      "apply_it": "Name one thing you have delayed until conditions are 'right'. Take the first small step this week.",
+      "quiz": {
+        "question": "What happens to the one who keeps watching the wind?",
+        "options": [
+          "He gets a bigger harvest",
+          "He becomes rich",
+          "He never sows",
+          "He avoids all risk and succeeds"
+        ],
+        "answer": 2,
+        "explanation": "Waiting for perfect conditions means never sowing or reaping."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--28",
+      "topic": "money",
+      "tags": [
+        "generosity",
+        "kindness",
+        "giving",
+        "patience"
+      ],
+      "title": "Give generously; good often returns in unexpected ways",
+      "body": "Cast your bread upon the waters, says the Preacher, for you will find it after many days. Readers have long taken this as a call to generosity and to bold, open-handed living.\n\nKindness and help given freely, without calculating the return, has a way of coming back: in friendship, trust, opportunities or simply in the person you become. The return may take many days, and it may come from somewhere you did not expect. Give anyway.",
+      "quote": "Cast thy bread upon the waters: for thou shalt find it after many days.",
+      "locator": "Ecclesiastes 11:1",
+      "apply_it": "Do one generous thing today without expecting anything back.",
+      "quiz": {
+        "question": "How is 'cast thy bread upon the waters' commonly understood?",
+        "options": [
+          "As advice to waste food",
+          "As a fishing technique",
+          "As a warning never to share",
+          "As a call to generous giving that bears fruit later"
+        ],
+        "answer": 3,
+        "explanation": "It encourages open-handed generosity, trusting that good returns after many days."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--29",
+      "topic": "money",
+      "tags": [
+        "diversification",
+        "risk",
+        "planning",
+        "uncertainty"
+      ],
+      "title": "Spread your efforts, because you don't know what trouble is coming",
+      "body": "Give a portion to seven, and also to eight, the Preacher advises, because you do not know what disaster may come on the earth. A few verses later he adds: sow in the morning and in the evening, since you cannot know which will succeed.\n\nIt reads like early advice on not putting all your eggs in one basket. Several skills, more than one source of income and a varied set of relationships all help you stay standing when one fails.",
+      "quote": "Give a portion to seven, and also to eight; for thou knowest not what evil shall be upon the earth.",
+      "locator": "Ecclesiastes 11:2",
+      "apply_it": "Look at your income, savings or skills. Where are you relying on just one thing? Plan one small way to spread it.",
+      "quiz": {
+        "question": "Why does the Preacher advise giving a portion 'to seven, and also to eight'?",
+        "options": [
+          "Because we cannot know what trouble may come",
+          "Because seven is a lucky number",
+          "To impress neighbours",
+          "To avoid paying taxes"
+        ],
+        "answer": 0,
+        "explanation": "Since we do not know what evil may come, spreading our efforts reduces risk."
+      }
+    },
+    {
+      "id": "ecclesiastes-kjv--30",
+      "topic": "faith-wisdom",
+      "tags": [
+        "purpose",
+        "reverence",
+        "duty",
+        "meaning"
+      ],
+      "title": "After all the questions, the Preacher returns to reverence and doing right",
+      "body": "Ecclesiastes asks hard questions about work, wealth, injustice and death, and does not pretend the answers are easy. Yet it ends with a clear conclusion: fear God and keep his commandments, for this is the whole duty of a person.\n\nFor believers, this is the anchor beneath all the uncertainty. Even for readers of other traditions, the shape is instructive: when life feels meaningless, return to reverence, humility and doing what is right, one day at a time.",
+      "quote": "Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man.",
+      "locator": "Ecclesiastes 12:13",
+      "apply_it": "When life feels confusing, ask: what is the right thing to do today? Do that.",
+      "quiz": {
+        "question": "What is the Preacher's final conclusion in Ecclesiastes?",
+        "options": [
+          "Gather as much wealth as possible",
+          "Fear God and keep his commandments",
+          "Nothing matters, so do as you like",
+          "Study every book ever written"
+        ],
+        "answer": 1,
+        "explanation": "Ecclesiastes 12:13 sums up the whole matter: fear God and keep his commandments."
+      }
+    }
+  ]
+}

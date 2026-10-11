@@ -1,0 +1,740 @@
+{
+  "source": {
+    "id": "womenshealth-relationships-and-safety",
+    "title": "Relationships and Safety",
+    "authors": [
+      "Office on Women's Health, U.S. Department of Health and Human Services"
+    ],
+    "kind": "guide",
+    "url": "https://www.womenshealth.gov/relationships-and-safety",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.womenshealth.gov/relationships-and-safety/signs-abuse",
+    "attribution": "Source: Office on Women's Health, U.S. Department of Health and Human Services (public domain). Available free at womenshealth.gov. Use does not imply endorsement by OWH, HHS or the U.S. Government.",
+    "publisher": "Office on Women's Health, U.S. Department of Health and Human Services",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Each womenshealth.gov page in this section states that its material is free of copyright restrictions and may be copied without permission, with citation appreciated. Our cards are original summaries in our own words, not reproductions; we credit OWH, carry a no-endorsement statement and link back. No logos or images used. The site is written for women, but the signs and safety advice apply to anyone, so cards are phrased inclusively. Cards point readers to local emergency services and helplines, and give US hotline numbers from the site where useful. Pages used: https://www.womenshealth.gov/relationships-and-safety, https://www.womenshealth.gov/relationships-and-safety/signs-abuse, https://www.womenshealth.gov/relationships-and-safety/domestic-violence, https://www.womenshealth.gov/relationships-and-safety/domestic-violence/signs-domestic-violence, https://www.womenshealth.gov/relationships-and-safety/domestic-violence/leaving-abusive-relationship, https://www.womenshealth.gov/relationships-and-safety/domestic-violence/effects-domestic-violence-children, https://www.womenshealth.gov/relationships-and-safety/other-types, https://www.womenshealth.gov/relationships-and-safety/other-types/dating-violence-and-abuse, https://www.womenshealth.gov/relationships-and-safety/other-types/emotional-and-verbal-abuse, https://www.womenshealth.gov/relationships-and-safety/other-types/financial-abuse, https://www.womenshealth.gov/relationships-and-safety/other-types/sexual-coercion, https://www.womenshealth.gov/relationships-and-safety/other-types/stalking, https://www.womenshealth.gov/relationships-and-safety/effects-violence-against-women, https://www.womenshealth.gov/relationships-and-safety/get-help, https://www.womenshealth.gov/relationships-and-safety/get-help/how-help-friend, https://www.womenshealth.gov/relationships-and-safety/help-end-violence."
+  },
+  "cards": [
+    {
+      "id": "womenshealth-relationships-and-safety--01",
+      "topic": "dating-marriage",
+      "tags": [
+        "abuse",
+        "warning-signs",
+        "dating-safety"
+      ],
+      "title": "Abuse can hide behind affection and support",
+      "body": "The Office on Women's Health (OWH) points out that abuse can be hard to see when the same partner is loving, attentive or pays the bills. Some abusive partners switch between kindness and harm precisely to keep someone in the relationship.\n\nBeing cared for in some ways doesn't cancel out being hurt in others. Forced sex, threats and cruel words are abuse even if the relationship also has good days. If you are unsure, it is worth talking to someone you trust or a helpline.",
+      "apply_it": "Ask yourself: if a friend described my relationship to me, would I be worried for them?",
+      "quiz": {
+        "question": "According to OWH, why can abuse be hard to recognise?",
+        "options": [
+          "Abusive partners may also be loving or provide financial support",
+          "It always starts with physical violence",
+          "Abuse only happens to strangers",
+          "It is always obvious to friends"
+        ],
+        "answer": 0,
+        "explanation": "Affection or support can mask abuse, and some abusers use kindness to keep a partner close."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--02",
+      "topic": "dating-marriage",
+      "tags": [
+        "control",
+        "monitoring",
+        "warning-signs"
+      ],
+      "title": "Constant monitoring is a warning sign, not a sign of love",
+      "body": "OWH lists close monitoring among the signs of abuse: a partner who always needs to know where you are and who you're with, demands your passwords, expects instant replies to calls and messages, or gets angry when you don't check in.\n\nIt can be framed as caring or worry. But a healthy partner trusts you and respects your privacy and your time. Tracking and checking up on someone is a way of controlling them.",
+      "apply_it": "Notice whether you feel anxious when you can't reply to a partner instantly. If so, ask why.",
+      "quiz": {
+        "question": "Which of these does OWH list as a sign of abuse?",
+        "options": [
+          "Asking how your day went",
+          "Planning a date together",
+          "Demanding your passwords and instant replies",
+          "Respecting your time with friends"
+        ],
+        "answer": 2,
+        "explanation": "Demanding passwords and constant contact are forms of monitoring and control."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--03",
+      "topic": "dating-marriage",
+      "tags": [
+        "isolation",
+        "control",
+        "warning-signs"
+      ],
+      "title": "Being cut off from friends and family is a red flag",
+      "body": "A partner who discourages or blocks your contact with friends, family, work or school is showing one of the signs of abuse OWH describes. Isolation can be gradual: insulting your loved ones, sulking when you see them, or making it easier to just stay home.\n\nIsolation matters because it removes the people who might notice something is wrong and help. A healthy relationship adds to your life; it doesn't shrink your world.",
+      "apply_it": "List the people you used to see often. Have you drifted from any of them because of a partner's reaction?",
+      "quiz": {
+        "question": "Why is isolation from friends and family dangerous in a relationship?",
+        "options": [
+          "It saves time",
+          "It makes the relationship stronger",
+          "It only matters for teenagers",
+          "It removes people who could notice problems and help"
+        ],
+        "answer": 3,
+        "explanation": "Cutting someone off from their support network increases the abuser's control."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--04",
+      "topic": "dating-marriage",
+      "tags": [
+        "jealousy",
+        "control",
+        "warning-signs"
+      ],
+      "title": "Jealousy and accusations are about control",
+      "body": "OWH describes frequent accusations of cheating, often without reason, as a common sign of abuse, along with a quick temper that leaves you on edge and a partner who makes your daily decisions, such as what you wear or eat.\n\nSome jealousy is a normal human feeling. But when it becomes constant suspicion, anger and rules about your behaviour, it is being used to control you. You are not responsible for managing a partner's jealousy by shrinking your life.",
+      "apply_it": "Think about whether you change your clothes, plans or friendships to avoid a partner's jealous anger.",
+      "quiz": {
+        "question": "When does jealousy become a warning sign, according to OWH?",
+        "options": [
+          "Whenever a partner feels it at all",
+          "When it becomes constant accusations and control over your choices",
+          "Only when it is about strangers",
+          "Never; jealousy proves love"
+        ],
+        "answer": 1,
+        "explanation": "Frequent baseless accusations and controlling rules are signs of abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--05",
+      "topic": "dating-marriage",
+      "tags": [
+        "unhealthy-relationships",
+        "self-check",
+        "warning-signs"
+      ],
+      "title": "Notice the signs of an unhealthy relationship early",
+      "body": "Not every unhealthy relationship is abusive, but OWH lists signs worth noticing: putting all your energy into your partner, dropping friends and activities, feeling pressured or controlled, having more bad times than good, often feeling sad or afraid, not being supported in your goals, not feeling free to be yourself, and being unable to talk honestly about needs or settle disagreements.\n\nIf you see these, OWH suggests trying to talk with your partner, or with a trusted friend, relative, counsellor or faith leader.",
+      "apply_it": "Read the list again and count how many apply to you. If several do, talk to someone you trust this week.",
+      "quiz": {
+        "question": "Which is a sign of an unhealthy relationship listed by OWH?",
+        "options": [
+          "Having more bad times than good",
+          "Supporting each other's goals",
+          "Spending time with friends",
+          "Settling disagreements honestly"
+        ],
+        "answer": 0,
+        "explanation": "Frequent bad times, pressure and lost friendships are signs a relationship is unhealthy."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--06",
+      "topic": "dating-marriage",
+      "tags": [
+        "consent",
+        "respect",
+        "healthy-relationships"
+      ],
+      "title": "Healthy relationships respect your 'no'",
+      "body": "OWH is clear that healthy relationships never require sexual contact you don't want. Consent means a clear yes, freely given, and past consent, even to a kiss or to the same act before, doesn't mean consent now.\n\nThis applies in dating, long relationships and marriage alike. Respecting each other's boundaries is one of the clearest signs of a healthy partnership, and pressure to cross them is a warning sign.",
+      "apply_it": "Talk with your partner about how each of you will say 'not now' and how you'll respect it.",
+      "quiz": {
+        "question": "According to OWH, does consent in the past mean consent now?",
+        "options": [
+          "Yes, once is enough",
+          "Only in marriage",
+          "No, consent must be given each time",
+          "Only if it was recent"
+        ],
+        "answer": 2,
+        "explanation": "Previous consent does not mean consent to future activity."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--07",
+      "topic": "dating-marriage",
+      "tags": [
+        "dating-safety",
+        "consent",
+        "dating"
+      ],
+      "title": "Paying for a date never means someone owes you sex",
+      "body": "OWH lists 'you owe me sex because I paid for the date' among the signs of dating abuse. Buying a meal, a gift or a trip is not a deal for sexual activity, and no one is ever required to have sex with someone else.\n\nAbuse can happen even on a first date. Anyone who acts as if generosity earns them access to your body is showing you something important about how they see you.",
+      "apply_it": "If you're dating, decide in advance that you'll leave if anyone claims you 'owe' them, and arrange your own way home.",
+      "quiz": {
+        "question": "What does OWH say about someone paying for a date?",
+        "options": [
+          "It means you should agree to sex",
+          "It is a form of consent",
+          "It only matters on a first date",
+          "It never means you owe them sex"
+        ],
+        "answer": 3,
+        "explanation": "Generosity doesn't create a debt of sexual activity; that claim is a sign of abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--08",
+      "topic": "dating-marriage",
+      "tags": [
+        "sexual-coercion",
+        "consent",
+        "pressure"
+      ],
+      "title": "Pressure and guilt can be sexual coercion",
+      "body": "OWH describes sexual coercion as unwanted sexual activity that happens through pressure rather than physical force: repeated requests, guilt ('if you loved me you would'), saying it's too late to stop, threatening to end the relationship, lies, rumours, or offering rewards.\n\nIt most often happens within an existing relationship, and it is never the fault of the person pressured. You can say clearly what you do and don't want, or leave, and you don't owe anyone an explanation.",
+      "apply_it": "Practise one clear sentence you could use, such as: 'I don't want to, and I don't need to explain why.'",
+      "quiz": {
+        "question": "Which is an example of sexual coercion described by OWH?",
+        "options": [
+          "Agreeing happily together",
+          "Saying 'if you loved me, you would'",
+          "Stopping when asked",
+          "Talking openly about boundaries"
+        ],
+        "answer": 1,
+        "explanation": "Guilt-based pressure to get sex is a form of coercion."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--09",
+      "topic": "dating-marriage",
+      "tags": [
+        "digital-abuse",
+        "technology",
+        "dating-safety"
+      ],
+      "title": "Digital abuse is real abuse",
+      "body": "OWH explains that phones and social media can be used to abuse a partner: repeated unwanted calls or texts, harassment online, pressure to send nude images, demanding passwords, or using technology to monitor who you talk to.\n\nYou never have to send photos that make you uncomfortable. Once an image is sent, you lose control over who sees it. Healthy partners respect your digital boundaries just as they respect your physical ones.",
+      "apply_it": "Review your phone's privacy settings and location sharing, and turn off anything you don't want a partner to see.",
+      "quiz": {
+        "question": "What does OWH say about pressure to send private images?",
+        "options": [
+          "It is a form of digital abuse and you never have to comply",
+          "It's a normal part of dating",
+          "It only matters for teenagers",
+          "It's fine if you trust the person"
+        ],
+        "answer": 0,
+        "explanation": "Pressure to send nude images is listed as digital abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--10",
+      "topic": "dating-marriage",
+      "tags": [
+        "abuse",
+        "escalation",
+        "warning-signs"
+      ],
+      "title": "Abuse often starts small and grows",
+      "body": "According to OWH, abuse often begins with emotional and verbal behaviour such as name-calling, constant checking in or demands on your time. Some abusers are extremely loving and attentive at first, creating a strong 'us against the world' bond, and only later start insulting, threatening and controlling.\n\nThese early behaviours are attempts to gain power, and they can escalate to stalking or physical violence. Taking them seriously early, and talking to someone, can prevent much greater harm.",
+      "apply_it": "Think back to the start of a relationship. Were there small controlling moments you explained away?",
+      "quiz": {
+        "question": "How does abuse often begin, according to OWH?",
+        "options": [
+          "Always with physical violence",
+          "With a sudden single incident only",
+          "With emotional and verbal behaviour that can escalate",
+          "It never escalates"
+        ],
+        "answer": 2,
+        "explanation": "Name-calling, checking up and control often come first and can grow worse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--11",
+      "topic": "dating-marriage",
+      "tags": [
+        "emotional-abuse",
+        "verbal-abuse",
+        "health"
+      ],
+      "title": "Emotional abuse can harm as much as physical abuse",
+      "body": "OWH stresses that insults, threats, humiliation and control can cause harm as serious as physical violence, even when no one is hit. Emotional abuse often comes before physical abuse or happens alongside it.\n\nIts effects can include constant fear of upsetting your partner, shame, feeling powerless or worthless, and changing your behaviour to keep the peace. Staying in an abusive relationship is linked with long-term problems such as depression, anxiety and chronic pain. If this is happening to you, it is never your fault.",
+      "apply_it": "If you feel you're always 'walking on eggshells', write that down and share it with someone you trust.",
+      "quiz": {
+        "question": "What does OWH say about emotional and verbal abuse?",
+        "options": [
+          "It's less serious than physical abuse",
+          "It isn't really abuse",
+          "It only affects the abuser",
+          "It can cause harm as serious as physical abuse"
+        ],
+        "answer": 3,
+        "explanation": "Emotional abuse can be as harmful as physical abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--12",
+      "topic": "dating-marriage",
+      "tags": [
+        "gaslighting",
+        "emotional-abuse",
+        "self-trust"
+      ],
+      "title": "Gaslighting makes you doubt your own memory",
+      "body": "OWH describes gaslighting as a form of emotional abuse where someone makes you feel you are losing your mind. They deny things happened, call you crazy or too sensitive, or retell events in ways that contradict what you remember.\n\nBecause it builds slowly, it can be hard to notice. The more you doubt yourself, the more you may depend on the person doing it. Writing down what happens, and talking to someone outside the relationship, can help you trust your own perceptions again.",
+      "apply_it": "If you often question your memory after arguments, keep a private, safe note of what was said and when.",
+      "quiz": {
+        "question": "What is gaslighting, as described by OWH?",
+        "options": [
+          "Forgetting an anniversary",
+          "Making someone doubt their own memory and sanity to control them",
+          "A normal disagreement",
+          "Giving honest feedback"
+        ],
+        "answer": 1,
+        "explanation": "Gaslighting manipulates someone into doubting their perceptions in order to control them."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--13",
+      "topic": "dating-marriage",
+      "tags": [
+        "financial-abuse",
+        "money",
+        "control"
+      ],
+      "title": "Controlling money can be a form of abuse",
+      "body": "OWH explains that financial abuse is when a partner controls money to keep you dependent and unable to leave. It can be gradual and framed as 'help': an allowance that shrinks, questioning every purchase, demanding receipts, keeping you from working, hiding accounts or making money decisions without you.\n\nIt can also include taking out loans or credit in your name. Healthy couples make financial decisions together and both partners have access to information about their money.",
+      "apply_it": "Check that you know where your household's money is kept and can access your own account and records.",
+      "quiz": {
+        "question": "Which is a sign of financial abuse described by OWH?",
+        "options": [
+          "Being kept from working and having every purchase questioned",
+          "Budgeting together openly",
+          "Saving for a shared goal",
+          "Each having some personal spending money"
+        ],
+        "answer": 0,
+        "explanation": "Control of work, spending and accounts is a form of financial abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--14",
+      "topic": "dating-marriage",
+      "tags": [
+        "financial-safety",
+        "money",
+        "independence"
+      ],
+      "title": "Protect your own financial safety",
+      "body": "OWH suggests practical steps to protect yourself from financial abuse: keep your PINs and passwords private and change them if needed, avoid co-signing loans with a partner who might leave you with debt, check your credit record for accounts you didn't open, and, if it's safe, set aside some money or open an account your abuser can't reach.\n\nEvery adult has the right to their own bank account. Financial independence is part of being able to make free choices about your life.",
+      "apply_it": "Change one important banking password today and make sure only you know it.",
+      "quiz": {
+        "question": "Which step does OWH suggest to protect against financial abuse?",
+        "options": [
+          "Share all your passwords with a partner",
+          "Co-sign every loan to show trust",
+          "Keep PINs and passwords private and check for accounts opened in your name",
+          "Give up your own bank account"
+        ],
+        "answer": 2,
+        "explanation": "Keeping your information private and monitoring your credit protects you from financial abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--15",
+      "topic": "dating-marriage",
+      "tags": [
+        "threats",
+        "abuse",
+        "safety"
+      ],
+      "title": "Threats are abuse, even without physical violence",
+      "body": "OWH lists threats as clear signs of abuse: threatening to hurt you, your children, other people or pets; using or threatening to use a weapon; threatening self-harm when upset with you; or threatening to report you to authorities to control you.\n\nThreats are designed to make you afraid and obedient. They are serious warning signs that the situation may become dangerous. If you are in immediate danger, contact your local emergency services.",
+      "apply_it": "If you've been threatened, tell one trusted person today and note the date and what was said.",
+      "quiz": {
+        "question": "Which does OWH count as a sign of abuse?",
+        "options": [
+          "A partner disagreeing with you",
+          "A partner wanting time alone",
+          "A partner asking for an apology",
+          "A partner threatening self-harm to control you"
+        ],
+        "answer": 3,
+        "explanation": "Threats of self-harm used to control a partner are listed as abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--16",
+      "topic": "dating-marriage",
+      "tags": [
+        "stalking",
+        "safety",
+        "technology"
+      ],
+      "title": "Stalking is a crime, and you can respond to it",
+      "body": "OWH defines stalking as repeated, unwanted contact that makes you feel afraid or unsafe: following you, turning up uninvited, frequent calls, unwanted gifts, threats or damage to property. Online, it can include threatening messages, harassment on social media and using GPS or apps to track you. Most stalkers are people the victim knows, including former partners.\n\nOWH advises recording every incident, keeping evidence, telling people around you, and reporting to police. Stalking can escalate, so take it seriously.",
+      "apply_it": "If someone keeps contacting you against your wishes, start a dated log of every incident and save screenshots.",
+      "quiz": {
+        "question": "What does OWH advise if you're being stalked?",
+        "options": [
+          "Keep it secret",
+          "Record incidents, keep evidence and report it",
+          "Reply to every message",
+          "Ignore it until it stops"
+        ],
+        "answer": 1,
+        "explanation": "Documenting, telling others and reporting help protect you."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--17",
+      "topic": "dating-marriage",
+      "tags": [
+        "cyberstalking",
+        "online-safety",
+        "boundaries"
+      ],
+      "title": "Handle online harassment with one warning, then evidence",
+      "body": "For cyberstalking, OWH suggests sending one clear written message telling the person to stop contacting you, and then not responding again. Save evidence with screenshots or printouts, report the harassment to the website or app, and block the person.\n\nIt also helps to avoid posting details like your address, workplace, school or regular routines. If it continues, contact police or a domestic violence service.",
+      "apply_it": "Review your social media profiles and remove details that show where you live, work or go every day.",
+      "quiz": {
+        "question": "After sending one clear warning to an online harasser, what does OWH suggest?",
+        "options": [
+          "Stop responding, save evidence, report and block",
+          "Keep arguing with them",
+          "Post their details publicly",
+          "Delete all evidence"
+        ],
+        "answer": 0,
+        "explanation": "One warning, then no contact, with evidence saved and the behaviour reported."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--18",
+      "topic": "dating-marriage",
+      "tags": [
+        "blame",
+        "abuse",
+        "support"
+      ],
+      "title": "Abuse is never the victim's fault",
+      "body": "OWH repeats this point throughout its pages: abuse is never the fault of the person being abused. Abusers are responsible for their own behaviour, and no one can 'make' someone hurt them. Questions about clothing, drinking or where someone was wrongly shift blame onto victims.\n\nAbuse is not a sign of love, and it can happen to anyone regardless of education, income, age, sexual orientation or marital status. Knowing this can make it easier to reach out for help without shame.",
+      "apply_it": "If someone shares an experience of abuse with you, start with: 'It's not your fault.'",
+      "quiz": {
+        "question": "According to OWH, who is responsible for abuse?",
+        "options": [
+          "The person being abused",
+          "Both partners equally",
+          "The person who commits the abuse",
+          "Whoever started the argument"
+        ],
+        "answer": 2,
+        "explanation": "Abusers alone are responsible for their behaviour."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--19",
+      "topic": "dating-marriage",
+      "tags": [
+        "inclusion",
+        "abuse",
+        "same-sex-relationships"
+      ],
+      "title": "Abuse happens in all kinds of relationships",
+      "body": "OWH notes that dating and partner violence happens across races, incomes, education levels and ages, in married and unmarried couples, and in same-sex relationships. In same-sex relationships it can include extra tactics, such as threatening to reveal someone's sexuality or gender identity, or claiming that women can't be violent or that only married people can get help.\n\nThe signs of control and fear are what matter, not who the partners are. Everyone deserves to feel safe.",
+      "apply_it": "If you're helping a friend, avoid assumptions about who can be abused or who can abuse.",
+      "quiz": {
+        "question": "Which is an abuse tactic in same-sex relationships mentioned by OWH?",
+        "options": [
+          "Planning a holiday together",
+          "Introducing a partner to friends",
+          "Sharing household chores",
+          "Threatening to reveal someone's sexuality or gender identity"
+        ],
+        "answer": 3,
+        "explanation": "Threatening to 'out' a partner is a specific form of control OWH describes."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--20",
+      "topic": "dating-marriage",
+      "tags": [
+        "safety-plan",
+        "leaving",
+        "support"
+      ],
+      "title": "You don't have to leave today, but a safety plan helps",
+      "body": "OWH explains that leaving an abusive relationship is hard and can take time, and you don't have to leave immediately. What helps is a safety plan made with trusted people: safe places to go, a code word that signals danger, a hidden spare phone and keys, and key phone numbers memorised.\n\nBecause some abusers become more dangerous when a partner leaves, planning matters. Domestic violence hotlines and local services can help you build a plan. In the US, the National Domestic Violence Hotline is 800-799-7233.",
+      "apply_it": "If you're in an unsafe relationship, choose one trusted person and agree on a code word that means 'I need help'.",
+      "quiz": {
+        "question": "What does OWH suggest for someone not ready to leave an abusive relationship?",
+        "options": [
+          "Wait until things get worse",
+          "Make a safety plan with trusted people",
+          "Confront the abuser alone",
+          "Tell the abuser your plans"
+        ],
+        "answer": 1,
+        "explanation": "A safety plan helps people stay safer and leave safely when ready."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--21",
+      "topic": "dating-marriage",
+      "tags": [
+        "safety-plan",
+        "documents",
+        "preparation"
+      ],
+      "title": "Keep copies of important documents somewhere safe",
+      "body": "OWH suggests that, even if you're not sure about leaving, it can help to keep copies of key papers somewhere outside the home or in a place your partner can't find: identity documents and passports for you and your children, health cards, bank statements, rental or property papers, and a list of important numbers.\n\nIf you can, keep some money aside and evidence of abuse such as photos or threatening messages. But if you are in immediate danger, leave without them. Your safety comes first.",
+      "apply_it": "If it is safe, make copies of your ID and your children's documents and store them with someone you trust.",
+      "quiz": {
+        "question": "What does OWH say to do if you're in immediate danger and haven't gathered documents?",
+        "options": [
+          "Leave without them; safety comes first",
+          "Stay until you have everything",
+          "Ask the abuser for them",
+          "Go back for them later at night"
+        ],
+        "answer": 0,
+        "explanation": "Documents help, but immediate safety always comes first."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--22",
+      "topic": "dating-marriage",
+      "tags": [
+        "privacy",
+        "technology",
+        "safety"
+      ],
+      "title": "Plan your digital privacy when seeking help",
+      "body": "OWH warns on every page that anyone with access to your phone or computer may be able to see which websites you've visited, and browsing history can't always be fully erased. If you're worried a partner is watching, it may be safer to research help on a library computer or a trusted friend's phone.\n\nIt also suggests using a separate phone for calls for help and memorising important numbers in case your phone is taken.",
+      "apply_it": "If you need to look up help privately, plan to use a device your partner cannot access.",
+      "quiz": {
+        "question": "Why does OWH suggest using a library computer or a friend's phone to seek help?",
+        "options": [
+          "They are faster",
+          "Hotlines only accept those calls",
+          "A partner with access to your device may see your browsing",
+          "It is required by law"
+        ],
+        "answer": 2,
+        "explanation": "Shared or monitored devices can reveal your search for help."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--23",
+      "topic": "dating-marriage",
+      "tags": [
+        "shelters",
+        "support",
+        "leaving"
+      ],
+      "title": "Lack of money doesn't have to stop you getting safe",
+      "body": "Abusers often control money, which can make leaving feel impossible. OWH explains that domestic violence shelters don't charge to stay, and many help with transport. Shelters usually provide food, basic needs and childcare, and often counselling, legal help, job training and help finding longer-term housing.\n\nServices differ from country to country, but many places have shelters or support organisations. A helpline or local women's or family support service can tell you what's available near you.",
+      "apply_it": "Find out the name and number of one domestic violence service or helpline in your area and save it somewhere safe.",
+      "quiz": {
+        "question": "What does OWH say about shelters and money?",
+        "options": [
+          "Shelters charge high fees",
+          "You need savings before contacting a shelter",
+          "Shelters only help people with jobs",
+          "Shelters don't charge to stay and many help with transport"
+        ],
+        "answer": 3,
+        "explanation": "Lack of money doesn't block access to shelter support."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--24",
+      "topic": "dating-marriage",
+      "tags": [
+        "helping-others",
+        "friendship",
+        "support"
+      ],
+      "title": "How to talk to a friend you think is being abused",
+      "body": "OWH suggests choosing a private moment, being honest about specific things that worried you, and saying you want to help. Listen, tell them they're not alone, and ask what they need. Offer practical help, such as childcare, a lift or a place to stay.\n\nAvoid blaming or pressuring, such as 'You just need to leave.' Instead, say how worried you are for their safety. It's common for people to deny abuse at first or to leave and return several times; staying in their life matters.",
+      "apply_it": "If you're worried about someone, plan when and where you could talk privately, and one sentence that expresses concern without blame.",
+      "quiz": {
+        "question": "What does OWH advise against when helping a friend who is being abused?",
+        "options": [
+          "Listening to them",
+          "Pressuring them by saying 'You just need to leave'",
+          "Offering practical help",
+          "Staying in their life"
+        ],
+        "answer": 1,
+        "explanation": "Pressure and blame can push someone away; express concern instead."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--25",
+      "topic": "dating-marriage",
+      "tags": [
+        "helping-others",
+        "patience",
+        "support"
+      ],
+      "title": "Keep supporting a friend, whatever they decide",
+      "body": "Each adult makes their own decisions, OWH reminds readers, and you can't force someone to leave. People stay for many reasons: fear, money, children, love or isolation. Many leave and return several times.\n\nThe most useful thing is to keep being there, encourage their other friendships and family ties, and keep helping after they leave, when they may feel lonely. Cutting them off removes one of the few safe places they have.",
+      "apply_it": "If you know someone in a hard relationship, send them a simple message this week: 'Thinking of you. I'm here whenever you need.'",
+      "quiz": {
+        "question": "Why does OWH advise staying in the life of a friend who stays with an abuser?",
+        "options": [
+          "Because you may be one of their few safe places",
+          "To change their mind by force",
+          "To report every detail to others",
+          "To prove you were right"
+        ],
+        "answer": 0,
+        "explanation": "Remaining a steady source of support keeps a safe connection open."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--26",
+      "topic": "dating-marriage",
+      "tags": [
+        "helping-others",
+        "warning-signs",
+        "friendship"
+      ],
+      "title": "Spot the signs someone close may be in an abusive relationship",
+      "body": "OWH lists signs that a friend or relative may be being abused: their partner insults them in front of others, they seem constantly worried about upsetting their partner, they make excuses for the partner's behaviour, the partner is very jealous or controlling, they have unexplained injuries, they've pulled away from friends and family, or their mood or personality has changed.\n\nNoticing these signs is not about accusing anyone. It's about knowing when to gently check in.",
+      "apply_it": "Think of the people close to you. Is there someone you haven't heard from in a while who you could check on?",
+      "quiz": {
+        "question": "Which is a sign OWH lists that a friend may be abused?",
+        "options": [
+          "They have a busy social life",
+          "They talk openly about their relationship",
+          "They seem constantly worried about upsetting their partner",
+          "They make plans independently"
+        ],
+        "answer": 2,
+        "explanation": "Constant fear of upsetting a partner is a common sign of abuse."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--27",
+      "topic": "dating-marriage",
+      "tags": [
+        "children",
+        "family",
+        "domestic-violence"
+      ],
+      "title": "Children are affected even when they don't see the abuse",
+      "body": "OWH explains that children can be harmed by domestic violence even if they never see it: they may hear it or sense the fear and tension at home. Effects vary by age, from sleep problems and clinginess in young children to self-blame and school struggles in older ones, and risky behaviour in teens.\n\nChildren do best in a safe, stable, loving home, whether with one parent or two. Support from trusted adults and early help improves how children recover.",
+      "apply_it": "If children are in an unsafe home, tell them clearly that the problems are not their fault, and talk to a support service about options.",
+      "quiz": {
+        "question": "What does OWH say about children and domestic violence?",
+        "options": [
+          "Children aren't affected if they don't see it",
+          "Only teenagers are affected",
+          "Children always forget it",
+          "Children can be harmed even if they only hear or sense it"
+        ],
+        "answer": 3,
+        "explanation": "Children can be affected by hearing abuse or feeling the tension at home."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--28",
+      "topic": "dating-marriage",
+      "tags": [
+        "children",
+        "consent",
+        "prevention"
+      ],
+      "title": "Teach children about respect, boundaries and consent",
+      "body": "To help prevent violence, OWH suggests teaching children early that they decide who touches them and can say no to hugs or kisses, even from relatives. Teach the proper names of body parts so they can speak clearly about their bodies, and teach them to treat others as they want to be treated.\n\nAs they grow, talk about what healthy dating looks like: mutual respect, and that consent means a clear 'yes'. Showing respect in your own relationships teaches the most.",
+      "apply_it": "Next time a child doesn't want to hug a relative, support their choice and suggest a wave or high-five instead.",
+      "quiz": {
+        "question": "What does OWH suggest teaching young children?",
+        "options": [
+          "That they must hug all relatives",
+          "That they can decide who touches them",
+          "To avoid naming body parts",
+          "That boundaries don't apply in families"
+        ],
+        "answer": 1,
+        "explanation": "Teaching bodily autonomy early helps children recognise and report unsafe touch."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--29",
+      "topic": "dating-marriage",
+      "tags": [
+        "recovery",
+        "mental-health",
+        "support"
+      ],
+      "title": "Survivors can heal with the right support",
+      "body": "OWH describes how violence can affect health long after it ends: fear, anger, numbness, guilt and shame, as well as depression, anxiety and post-traumatic stress. Some people use alcohol, drugs or overeating to cope, which may feel helpful briefly but tends to make things worse.\n\nGetting help can prevent long-term harm. Counsellors and therapists can help survivors manage emotions, rebuild self-esteem and learn coping skills. A doctor or local health service can help you find support.",
+      "apply_it": "If you're carrying the effects of past abuse, take one step this month toward support, such as asking a doctor about counselling.",
+      "quiz": {
+        "question": "According to OWH, what can help survivors recover?",
+        "options": [
+          "Support from counsellors, therapists or doctors",
+          "Using alcohol to cope",
+          "Keeping it to themselves",
+          "Avoiding all relationships forever"
+        ],
+        "answer": 0,
+        "explanation": "Professional support can help survivors manage emotions and heal."
+      },
+      "health": true
+    },
+    {
+      "id": "womenshealth-relationships-and-safety--30",
+      "topic": "dating-marriage",
+      "tags": [
+        "prevention",
+        "community",
+        "bystander"
+      ],
+      "title": "Everyone can help build a culture without violence",
+      "body": "OWH sees ending relationship violence as a shared effort. Ordinary people can help by contacting emergency services if they see or hear violence, learning safe ways to intervene as a bystander, supporting friends, volunteering with shelters or youth programmes, and asking about anti-harassment policies at work, school or college.\n\nIt also means leading by example: rejecting violence as a way to solve problems, speaking up against jokes or messages that excuse abuse, and teaching young people respectful views of what it means to be a man or a woman.",
+      "apply_it": "Next time you hear a joke or comment that excuses abuse, calmly say you don't agree.",
+      "quiz": {
+        "question": "Which is one way OWH suggests anyone can help prevent relationship violence?",
+        "options": [
+          "Staying silent to avoid conflict",
+          "Assuming it's a private matter",
+          "Speaking up against messages that excuse abuse",
+          "Blaming victims for their choices"
+        ],
+        "answer": 2,
+        "explanation": "Challenging attitudes that excuse violence helps change the culture."
+      },
+      "health": true
+    }
+  ]
+}

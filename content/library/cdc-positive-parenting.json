@@ -1,0 +1,718 @@
+{
+  "source": {
+    "id": "cdc-positive-parenting",
+    "title": "Positive Parenting Tips and Essentials for Parenting",
+    "authors": [
+      "Centers for Disease Control and Prevention"
+    ],
+    "kind": "guide",
+    "url": "https://www.cdc.gov/child-development/positive-parenting-tips/index.html",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.cdc.gov/other/agencymaterials.html",
+    "attribution": "Source: Centers for Disease Control and Prevention (public domain). Available free at cdc.gov. Use does not imply endorsement by CDC, HHS or the U.S. Government.",
+    "publisher": "Centers for Disease Control and Prevention",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "CDC 'Use of Agency Materials' states most CDC website information is public domain (exceptions: contractor/third-party material, which these pages are not marked as). CDC asks for credit, a no-endorsement statement, a note that the material is free on its site, and no substantive changes to reproduced material; our cards are original summaries rather than reproductions, so we credit CDC, carry the disclaimer, and link back. No CDC logos or images used. US-specific services (state early intervention, NHTSA car-seat rules, US helplines) are generalised to 'your doctor or local health services' for an international audience. Pages read (all under https://www.cdc.gov/): child-development/positive-parenting-tips/index.html; child-development/positive-parenting-tips/infants.html; child-development/positive-parenting-tips/toddlers-1-2-years.html; child-development/positive-parenting-tips/toddlers-2-3-years.html; child-development/positive-parenting-tips/preschooler-3-5-years.html; parenting-toddlers/index.html; parenting-toddlers/understanding-the-early-years/index.html; parenting-toddlers/noticing-and-naming/emotion-coaching.html; parenting-toddlers/communication/index.html; parenting-toddlers/communication/child-led-play.html; parenting-toddlers/communication/giving-directions.html; parenting-toddlers/structure-rules/index.html; parenting-toddlers/structure-rules/rules.html; parenting-toddlers/responding-to-behavior/index.html; parenting-toddlers/responding-to-behavior/ignoring.html; parenting-toddlers/responding-to-behavior/time-out.html; parenting-toddlers/responding-to-behavior/time-out-challenges.html; parenting-toddlers/responding-to-behavior/time-in.html; parenting-toddlers/responding-to-behavior/using-rewards.html; act-early/milestones/index.html; act-early/families/concerned.html."
+  },
+  "cards": [
+    {
+      "id": "cdc-positive-parenting--01",
+      "topic": "parenting",
+      "tags": [
+        "babies",
+        "language",
+        "talking"
+      ],
+      "title": "Talk to your baby often, and answer their sounds with words",
+      "body": "CDC's tips for parents of infants start with something free: talk to your baby a lot. Your voice is soothing to them, and hearing speech is how language begins. When your baby coos or babbles, repeat the sound back and add words to it, as if you're having a conversation.\n\nReading aloud, singing and playing music also help babies understand language and sounds and support brain development. Add plenty of praise, cuddles and affection: being held helps a baby feel cared for and secure. Any language your family speaks works.",
+      "apply_it": "During a nappy change or feed today, keep up a gentle running commentary, and copy back any sound your baby makes.",
+      "quiz": {
+        "question": "What does CDC suggest when your baby makes a sound?",
+        "options": [
+          "Stay quiet so they can practise alone",
+          "Correct the sound",
+          "Wait until they can say real words",
+          "Repeat the sound and add words to it"
+        ],
+        "answer": 3,
+        "explanation": "Repeating your baby's sounds and adding words turns babbling into a conversation that builds language."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--02",
+      "topic": "parenting",
+      "tags": [
+        "babies",
+        "safety",
+        "sleep"
+      ],
+      "title": "Never shake a baby, and always lay them on their back to sleep",
+      "body": "CDC's infant safety advice includes a few rules with no exceptions. Never shake a baby: their neck muscles are too weak to support the head, and shaking can cause brain damage or death. CDC also suggests preparing yourself emotionally for a new baby, as well as making the home safe.\n\nAlways place babies on their backs to sleep, which lowers the risk of sudden infant death syndrome (SIDS), and keep things that could cover their face out of the sleep space. Keep your home smoke-free, and never carry hot food or drinks while holding a baby.",
+      "apply_it": "Tell everyone who cares for your baby, including grandparents and babysitters, the two rules: back to sleep, and never shake.",
+      "quiz": {
+        "question": "Why does CDC warn never to shake a baby?",
+        "options": [
+          "Their weak neck muscles mean shaking can cause brain damage or death",
+          "It makes them cry more",
+          "It disturbs their sleep pattern",
+          "It slows language development"
+        ],
+        "answer": 0,
+        "explanation": "A baby's neck can't support the head, so shaking can cause brain damage or death."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--03",
+      "topic": "parenting",
+      "tags": [
+        "self-care",
+        "parents",
+        "wellbeing"
+      ],
+      "title": "Look after yourself: parenting is easier when you are well",
+      "body": "Among CDC's positive parenting tips for infants is one aimed at the parent: take care of your own physical, mental and emotional health. Parenting is demanding, and you will be better able to enjoy it, and to respond patiently, when you are doing well yourself.\n\nCDC's parenting pages return to this idea often. Feeling frustrated, annoyed or even rejected by a young child is normal. When it happens, pause, calm yourself, and look for support. Sleep, food, a short walk, help from family or friends: these aren't luxuries, they're part of caring for your child.",
+      "apply_it": "Name one small thing you'll do for yourself this week (a walk, a nap swap, a call to a friend) and ask someone to cover for you.",
+      "quiz": {
+        "question": "Why does CDC include caring for yourself in its parenting tips?",
+        "options": [
+          "Because babies prefer tired parents",
+          "Because it is a legal requirement",
+          "Because it replaces spending time with your baby",
+          "Because parenting is demanding and you'll do it better when you're well"
+        ],
+        "answer": 3,
+        "explanation": "Parenting is demanding; looking after your own health helps you enjoy it and respond well."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--04",
+      "topic": "parenting",
+      "tags": [
+        "toddlers",
+        "language",
+        "vocabulary"
+      ],
+      "title": "Expand your toddler's words into fuller ones",
+      "body": "Toddlers between one and two are starting to name familiar people and objects and to put together simple phrases. CDC suggests building language by talking with your child and expanding on what they already say. If your toddler says 'baba', you might reply with the full word, 'bottle', or a short sentence about it.\n\nOther easy language games: ask your toddler to find objects or name body parts, play simple matching games like shape sorters, and take everyday outings, like a walk or a bus ride, to name what you see together.",
+      "apply_it": "Today, each time your toddler uses a single word, answer with that word in a short, simple sentence.",
+      "quiz": {
+        "question": "According to CDC, what's a good response when a toddler says 'baba'?",
+        "options": [
+          "Ignore it until they say it properly",
+          "Say 'no, that's wrong'",
+          "Repeat 'baba' back exactly",
+          "Reply with the full word, 'bottle'"
+        ],
+        "answer": 3,
+        "explanation": "Expanding a toddler's word into the full word models correct language without criticism."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--05",
+      "topic": "parenting",
+      "tags": [
+        "praise",
+        "discipline",
+        "toddlers"
+      ],
+      "title": "Praise wanted behaviour more than you punish unwanted behaviour",
+      "body": "For toddlers aged one to two, CDC advises encouraging wanted behaviour with praise and rewards more often than you punish unwanted behaviour. When a consequence is needed, keep it short: time-outs at this age should be very brief.\n\nThe key addition is to always show or tell your child what to do instead. 'No' only tells a toddler what's wrong; they also need to see what's right. For example, 'Gentle hands, like this,' while showing a soft stroke, teaches more than 'Stop hitting!' on its own.",
+      "apply_it": "Count today how many times you praise versus correct your toddler. Aim to tip the balance towards praise tomorrow.",
+      "quiz": {
+        "question": "What should accompany any correction of a toddler, according to CDC?",
+        "options": [
+          "Showing or telling them what to do instead",
+          "A long explanation of why it was wrong",
+          "A loud voice so they remember",
+          "A promise of a treat"
+        ],
+        "answer": 0,
+        "explanation": "CDC advises always showing or telling the child what to do instead, so they learn the right behaviour."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--06",
+      "topic": "parenting",
+      "tags": [
+        "safety",
+        "water",
+        "toddlers"
+      ],
+      "title": "Never leave a young child near water without someone watching",
+      "body": "CDC is clear on this: drowning is a leading cause of injury and death for young children. Never leave a toddler near any water without supervision, including bathtubs, pools, ponds, lakes and the sea, even for a moment.\n\nCDC recommends fencing backyard pools and keeping a close watch whenever water is nearby. For preschoolers, CDC suggests teaching them to swim, but stresses that lessons don't replace constant supervision around water, even a paddling pool.",
+      "apply_it": "Agree with every adult in your home that bath time and any time near water means someone is always watching, with no phone breaks.",
+      "quiz": {
+        "question": "What does CDC say about swimming lessons for preschoolers?",
+        "options": [
+          "They make supervision unnecessary",
+          "They should be avoided",
+          "They're useful, but children still need constant supervision near water",
+          "They're only for children over 10"
+        ],
+        "answer": 2,
+        "explanation": "Teaching children to swim helps, but CDC says to keep supervising constantly around any water."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--07",
+      "topic": "parenting",
+      "tags": [
+        "safety",
+        "home",
+        "toddlers"
+      ],
+      "title": "Childproof as your child gets mobile: dangers arrive fast",
+      "body": "Once toddlers move around, CDC notes, risks can escalate quickly, so stay close and make the home safer. Lock up medicines, cleaning products and poisons. Cover unused electrical sockets. Keep irons, heaters and appliances out of reach and turn pot handles to the back of the stove. Store knives, scissors and any firearms securely. Use gates to block stairs and lock doors to risky areas.\n\nTo prevent choking, cut food into small pieces, have children sit to eat, and check toys for loose parts. Don't hold hot drinks with a child on your lap, and never leave a child alone in a vehicle.",
+      "apply_it": "Crouch to toddler height in your kitchen and find three things within reach that could hurt them. Move or lock them away today.",
+      "quiz": {
+        "question": "Which is a CDC tip for kitchen safety with toddlers?",
+        "options": [
+          "Turn pot handles towards the back of the stove",
+          "Let toddlers stir hot pots to learn",
+          "Keep cleaning products under the sink unlocked",
+          "Hold hot drinks with your child on your lap"
+        ],
+        "answer": 0,
+        "explanation": "Turning pot handles inward keeps toddlers from pulling hot pans down on themselves."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--08",
+      "topic": "parenting",
+      "tags": [
+        "eating",
+        "toddlers",
+        "meals"
+      ],
+      "title": "Picky eating is normal: avoid battles over food",
+      "body": "CDC reassures parents that toddlers' eating is often picky and unpredictable, and their preferences may change from day to day. Toddlers also need less food than babies do relative to their size. Turning meals into a power struggle tends to backfire.\n\nInstead, offer a variety of healthy foods and let your child choose from them. It can take many tries before a child accepts a new food, so keep offering small bites without pressure. Offer water and plain milk rather than sugary drinks, eat together when you can, and let them see you enjoying fruit and vegetables.",
+      "apply_it": "Put one new healthy food on the table this week alongside familiar ones, and say nothing about whether your child eats it.",
+      "quiz": {
+        "question": "What does CDC say about a toddler refusing a new food?",
+        "options": [
+          "Insist until they finish it",
+          "Never offer it again",
+          "It may take many tries before they accept it, so keep offering",
+          "Replace it with a sugary drink"
+        ],
+        "answer": 2,
+        "explanation": "Acceptance often takes many exposures, so offering it calmly again and again works better than pressure."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--09",
+      "topic": "parenting",
+      "tags": [
+        "sleep",
+        "routines",
+        "health"
+      ],
+      "title": "Young children need far more sleep than adults",
+      "body": "CDC's age-by-age tips include how much sleep children need in each 24 hours, naps included: about 12 to 16 hours for babies aged 4 to 12 months, 11 to 14 hours for toddlers aged one to three, and 10 to 13 hours for children aged three to five.\n\nThat is much more than many busy households allow for. A predictable bedtime routine, a calm hour before bed, and keeping TVs and screens out of children's bedrooms all help protect it. If your child seems constantly tired or struggles with sleep, mention it to a doctor or health worker.",
+      "apply_it": "Count your child's total sleep, naps included, for two days and compare it with the range for their age.",
+      "quiz": {
+        "question": "Roughly how much sleep does CDC say children aged 3 to 5 need in 24 hours?",
+        "options": [
+          "6 to 8 hours",
+          "8 to 9 hours",
+          "10 to 13 hours, including naps",
+          "16 to 18 hours"
+        ],
+        "answer": 2,
+        "explanation": "CDC gives 10 to 13 hours per 24 hours, including naps, for 3-to-5-year-olds."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--10",
+      "topic": "parenting",
+      "tags": [
+        "screen-time",
+        "media",
+        "toddlers"
+      ],
+      "title": "Keep screens limited, and out of children's bedrooms",
+      "body": "CDC's tips, which draw on the American Academy of Pediatrics, advise no screen media for children under 18 months other than video calls with family. For children aged two to five, the tip is no more than about one hour a day of good-quality programmes.\n\nCDC also suggests keeping TVs out of children's bedrooms and making a family media plan: agreed times, places and limits that adults follow too. Screens that do the playing for a child take away time from talking, moving, sleeping and hands-on play, which young children need most.",
+      "apply_it": "Agree one screen-free time for the whole family, such as meals, and keep to it for a week, adults included.",
+      "quiz": {
+        "question": "What screen use does CDC (citing the AAP) consider fine for children under 18 months?",
+        "options": [
+          "Educational cartoons",
+          "Up to two hours of TV",
+          "Tablet games",
+          "Video chatting with family"
+        ],
+        "answer": 3,
+        "explanation": "For under-18-month-olds, the advice is no screen media other than video chatting."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--11",
+      "topic": "parenting",
+      "tags": [
+        "choices",
+        "independence",
+        "preschoolers"
+      ],
+      "title": "Offer two simple choices to build independence",
+      "body": "CDC suggests giving young children a few simple choices: what to wear, when to play, which healthy snack to eat. For giving directions, its toddler guide recommends offering two options where possible, such as 'the grey trousers or the blue ones?' Two is usually enough; more can overwhelm a small child.\n\nChoices let children practise deciding and feel some control, which often means fewer battles. CDC adds a limit: only offer choices when the situation is safe. Holding hands to cross the road isn't up for a vote.",
+      "apply_it": "Turn one daily struggle (dressing, snacks, bath toys) into a choice between two options you're happy with.",
+      "quiz": {
+        "question": "How many options does CDC suggest are usually enough when offering a young child a choice?",
+        "options": [
+          "Two",
+          "Five",
+          "Ten",
+          "As many as possible"
+        ],
+        "answer": 0,
+        "explanation": "Two options are usually enough to give a sense of control without overwhelming a young child."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--12",
+      "topic": "parenting",
+      "tags": [
+        "problem-solving",
+        "emotions",
+        "preschoolers"
+      ],
+      "title": "When your child is upset, walk them through solving the problem",
+      "body": "For three-to-five-year-olds, CDC suggests that when your child is upset, you help them work through the steps of solving the problem rather than fixing it for them or dismissing it. Its emotion-coaching advice adds the order: first acknowledge the feeling, then look for solutions together.\n\nFor example, if a tower keeps falling, you might name the frustration, say it's fine to feel angry but not to throw blocks, then ask whether they'd like to restack them or start a puzzle instead. Over time, children learn that problems have options and they can find them.",
+      "apply_it": "Next time your child is upset about a problem, name the feeling first, then ask: 'What could we try?' and wait for their ideas.",
+      "quiz": {
+        "question": "According to CDC, what should come before problem-solving with an upset child?",
+        "options": [
+          "A reward",
+          "A lecture",
+          "Acknowledging their feeling",
+          "A time-out"
+        ],
+        "answer": 2,
+        "explanation": "Jumping into solutions too early can dismiss feelings; acknowledge the emotion first, then solve together."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--13",
+      "topic": "parenting",
+      "tags": [
+        "tantrums",
+        "toddlers",
+        "patience"
+      ],
+      "title": "Tantrums are normal at this age, and so is feeling frustrated",
+      "body": "CDC's Essentials for Parenting stresses that tantrums and frustration are normal for toddlers and preschoolers. Their language is limited, they're striving for independence, and they get overwhelmed quickly. Tantrums are one way a young child releases built-up emotion and calms down.\n\nIt's also normal for parents to feel annoyed or even rejected. CDC's advice is to pause and calm yourself before responding, whether that's three deep breaths or, if another trusted adult is with your child, a short walk. Children copy what they see, so your calm teaches theirs.",
+      "apply_it": "Choose your personal 'pause' now (three deep breaths, a glass of water) so it's ready for the next meltdown.",
+      "quiz": {
+        "question": "How does CDC describe tantrums in toddlers and preschoolers?",
+        "options": [
+          "A sign of bad parenting",
+          "A medical emergency",
+          "Something to punish severely",
+          "A normal way young children release built-up emotion"
+        ],
+        "answer": 3,
+        "explanation": "CDC calls tantrums and frustration normal at this age; they help a child release emotion and calm down."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--14",
+      "topic": "parenting",
+      "tags": [
+        "development",
+        "comparison",
+        "individuality"
+      ],
+      "title": "Every child grows at their own pace, so don't compare",
+      "body": "CDC reminds parents that children develop at different rates. One two-year-old may be frustrated by having only a few words, while another talks all day. Learning what's typical at each age helps you set realistic expectations, but watching your own child is just as important.\n\nCDC suggests reflecting on how your child's abilities have changed over the past month, three months and six months, rather than measuring them against cousins or classmates. Following their lead in play when it's safe, and sharing their sense of wonder, supports them along their own path.",
+      "apply_it": "Write down three things your child can do now that they couldn't do six months ago.",
+      "quiz": {
+        "question": "What does CDC suggest instead of comparing your child with others?",
+        "options": [
+          "Reflect on how your own child has changed over recent months",
+          "Push them to catch up quickly",
+          "Ignore development entirely",
+          "Only compare with older siblings"
+        ],
+        "answer": 0,
+        "explanation": "Each child develops at their own rate, so tracking your child's own progress is more useful than comparisons."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--15",
+      "topic": "parenting",
+      "tags": [
+        "milestones",
+        "development",
+        "doctor"
+      ],
+      "title": "Track milestones, and if something worries you, act early",
+      "body": "Milestones are skills most children reach by a certain age, like a first smile, waving bye-bye or a first step, in how they play, learn, speak, act and move. CDC offers free age-by-age checklists and a Milestone Tracker app to help parents keep an eye on them.\n\nIf your child is missing milestones, has lost skills, or you're simply worried, CDC's message is: don't wait. You know your child best. Talk to your child's doctor or health worker, ask about developmental screening, and ask about support services. Checklists help you notice, but they don't replace a proper screening.",
+      "apply_it": "Look up the milestone checklist for your child's age and tick off what they do. Note any questions for your next health visit.",
+      "quiz": {
+        "question": "What does CDC advise if you're worried about your child's development?",
+        "options": [
+          "Wait and see for a year",
+          "Compare with neighbours' children first",
+          "Only act if a teacher complains",
+          "Act early and talk to your child's doctor"
+        ],
+        "answer": 3,
+        "explanation": "CDC's message is 'Don't wait': acting early can make a real difference."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-positive-parenting--16",
+      "topic": "parenting",
+      "tags": [
+        "listening",
+        "communication",
+        "feelings"
+      ],
+      "title": "Listen actively: get to eye level, repeat back, name the feeling",
+      "body": "CDC's guide to communicating with young children describes active listening. Give your full attention, get down to your child's eye level and make eye contact. Show you've heard by repeating back what they said in similar words, and name the feeling you think they have.\n\nCDC gives the example of a parent rushing to make dinner when a younger child runs in crying that his brother hit him. Stopping, turning to him and saying something like 'It sounds like your brother made you sad' shows him his feelings matter, and teaches him he can bring problems to you later.",
+      "apply_it": "Next time your child tells you something, stop what you're doing, get to eye level, and repeat back what you heard.",
+      "quiz": {
+        "question": "Which is part of CDC's description of active listening?",
+        "options": [
+          "Keep working while nodding",
+          "Correct the child's account immediately",
+          "Get to eye level and repeat back what they said",
+          "Ask lots of 'why' questions"
+        ],
+        "answer": 2,
+        "explanation": "Full attention, eye level, repeating back and naming feelings show a child you are really listening."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--17",
+      "topic": "parenting",
+      "tags": [
+        "consent",
+        "touch",
+        "respect"
+      ],
+      "title": "Ask before a hug, and offer other ways to connect",
+      "body": "CDC's guidance on nonverbal communication says to use physical touch only if it's comfortable for your child, and to ask first: 'Would you like a hug?' Then watch for their answer, spoken or not, like a nod. You can offer choices: a hug, a high-five or holding hands.\n\nIf your child needs to calm down first, a thumbs up, smile or wink can show warmth without touch. Building touch into routines, such as holding hands on walks or cuddling at story time, keeps connection natural, and asking teaches children that their body is their own.",
+      "apply_it": "Today, before you hug your child, ask 'Hug or high-five?' and respect the answer.",
+      "quiz": {
+        "question": "What does CDC recommend before physical touch with your child?",
+        "options": [
+          "Never touch young children",
+          "Ask for consent and watch for their answer",
+          "Hug them whenever you want",
+          "Only touch them when they cry"
+        ],
+        "answer": 1,
+        "explanation": "CDC says to ask, for example 'Would you like a hug?', then watch for a verbal or nonverbal reply."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--18",
+      "topic": "parenting",
+      "tags": [
+        "play",
+        "attention",
+        "language"
+      ],
+      "title": "Narrate your child's play like a sports commentator",
+      "body": "CDC suggests two simple ways to connect during play: imitate and describe. Imitate by playing with the same or a similar toy the way your child does. Describe by narrating what they're doing in detail, like a sports commentator for someone who can't see the game.\n\nFor example: 'You put a green hat on the cowboy. Now you picked green boots to match. Those boots are hard to put on, and I like how hard you're trying.' This shows interest, builds vocabulary, supports self-esteem and helps stretch attention span, which is useful preparation for school.",
+      "apply_it": "Spend three minutes today describing your child's play out loud, without asking questions or giving directions.",
+      "quiz": {
+        "question": "What benefit does CDC link to describing a child's play?",
+        "options": [
+          "It makes the child stop playing",
+          "It helps extend attention span and build vocabulary",
+          "It replaces the need for praise",
+          "It teaches them to play quietly"
+        ],
+        "answer": 1,
+        "explanation": "Describing play shows interest, builds vocabulary and self-esteem, and helps extend attention span."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--19",
+      "topic": "parenting",
+      "tags": [
+        "play",
+        "connection",
+        "child-led"
+      ],
+      "title": "Spend 5 to 15 minutes a day letting your child lead the play",
+      "body": "CDC recommends daily child-led play: 5 to 15 minutes, ideally at the same time each day, when you can focus without distractions. Choose open-ended things like blocks, crayons and paper rather than toys that move or play by themselves.\n\nDuring this time, let your child make the decisions. Limit questions, directions and criticism, since even 'Wouldn't you rather use the blocks?' takes control away. If they call a blue crayon purple, just join in. Praise specific things you like, show enthusiasm, and keep it going even after a rough day; it's a chance to reconnect.",
+      "apply_it": "Set a timer for 10 minutes today and follow your child's lead in play without suggesting, correcting or asking questions.",
+      "quiz": {
+        "question": "During child-led play, what does CDC suggest limiting?",
+        "options": [
+          "Enthusiasm",
+          "Specific praise",
+          "Questions, directions and criticism",
+          "Time spent together"
+        ],
+        "answer": 2,
+        "explanation": "Questions, directions and criticism take control away from the child, who should lead this play time."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--20",
+      "topic": "parenting",
+      "tags": [
+        "routines",
+        "bedtime",
+        "structure"
+      ],
+      "title": "Predictable routines help young children feel safe",
+      "body": "CDC explains that routines help children feel safe because they know what to expect. Start with the most important parts of the day. For bedtime, CDC suggests 'brush, book, bed': brush teeth, read aloud, then tuck in. A mealtime routine might be washing hands and helping set the table.\n\nKeep routines short, since young children have short attention spans, and make them enjoyable: bubbles in the bath, an 'I spy' game during errands. When a routine has to change, CDC advises talking about it when you're both calm, explaining why and whether it's temporary.",
+      "apply_it": "Try 'brush, book, bed' in the same order every night this week and notice whether bedtime gets easier.",
+      "quiz": {
+        "question": "What three steps make up CDC's suggested 'brush, book, bed' routine?",
+        "options": [
+          "Brush teeth, read aloud, tuck in",
+          "Brush hair, watch TV, sleep",
+          "Bath, snack, bed",
+          "Brush teeth, play outside, sleep"
+        ],
+        "answer": 0,
+        "explanation": "CDC's simple bedtime routine is brushing teeth, reading a book aloud, then getting tucked into bed."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--21",
+      "topic": "parenting",
+      "tags": [
+        "rules",
+        "structure",
+        "caregivers"
+      ],
+      "title": "Keep family rules few, clear and the same with every caregiver",
+      "body": "CDC notes that toddlers and preschoolers can only remember two or three rules at a time, so start with one and add another once it sticks. Avoid vague rules like 'be good'. Pair each 'no' with what to do instead: 'No hurting others: keep your hands and feet to yourself.' 'No yelling inside: use your inside voice.'\n\nAsk your child to say the rule in their own words, and post a simple chart with pictures where everyone can see it. Most importantly, every adult who cares for the child, whether parents, grandparents, other relatives or childminders, should enforce the rules the same way, or the child gets mixed messages.",
+      "apply_it": "Choose one family rule, phrase it as what to do, draw it as a picture, and share it with every adult who looks after your child.",
+      "quiz": {
+        "question": "How many rules does CDC say toddlers and preschoolers can learn and remember at a time?",
+        "options": [
+          "Two or three",
+          "Ten",
+          "Twenty",
+          "Only one, ever"
+        ],
+        "answer": 0,
+        "explanation": "Young children can manage two or three rules at once, so start with one and add more gradually."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--22",
+      "topic": "parenting",
+      "tags": [
+        "consistency",
+        "follow-through",
+        "discipline"
+      ],
+      "title": "Say what you mean, and do what you say",
+      "body": "CDC's guide to routines and rules rests on three ideas: consistency, predictability and follow-through. Respond to the same behaviour in the same way each time, whatever your mood or how busy you are. Praise a wanted behaviour each time you see it, and use the same consequence each time for a misbehaviour.\n\nFollow-through means doing what you said you would: if you promised a reward, give it; if you warned of a consequence, apply it. CDC suggests asking before you give a warning whether you have the time and energy to carry it out. Empty threats teach children that your words are optional.",
+      "apply_it": "Before your next warning, ask yourself: 'Will I actually do this?' If not, change the warning to one you will carry out.",
+      "quiz": {
+        "question": "What does CDC suggest asking yourself before you warn of a consequence?",
+        "options": [
+          "Whether the child will cry",
+          "Whether you have the time and energy to follow through",
+          "Whether other parents would approve",
+          "Whether you can make it harsher"
+        ],
+        "answer": 1,
+        "explanation": "Consequences only work if they're consistent, so only warn of what you're ready to carry out."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--23",
+      "topic": "parenting",
+      "tags": [
+        "directions",
+        "communication",
+        "cooperation"
+      ],
+      "title": "Give directions as clear statements, one at a time, at eye level",
+      "body": "CDC's tips for giving directions start with getting your child's attention: get close, use their name, and crouch to face them. Then make a statement, not a question, since 'Will you put your shoes on?' invites 'No'. Give one direction at a time, in a calm, firm voice, and say please.\n\nReplace 'Don't', 'Stop' and 'Quit' with the behaviour you want: 'Push the car gently' rather than 'Stop banging!' Match the request to your child's abilities; a two-year-old who can't do something isn't being defiant. Gestures help, and use 'let's' only if you'll actually help.",
+      "apply_it": "Rewrite your three most common 'don'ts' (e.g. 'Don't run!') as 'do' instructions ('Walk inside, please').",
+      "quiz": {
+        "question": "Why does CDC suggest giving directions as statements rather than questions?",
+        "options": [
+          "Questions are rude",
+          "Questions invite the child to refuse",
+          "Statements are longer",
+          "Children don't understand questions"
+        ],
+        "answer": 1,
+        "explanation": "A question like 'Will you…?' gives the child the option to say no; a polite statement makes the expectation clear."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--24",
+      "topic": "parenting",
+      "tags": [
+        "discipline",
+        "attention",
+        "no-spanking"
+      ],
+      "title": "Your attention shapes behaviour, and harsh attention backfires",
+      "body": "CDC's Essentials for Parenting explains that young children want parents' attention, positive or negative, and any attention right after a behaviour makes it more likely to happen again. Positive attention includes praise, hugs and high-fives. Healthy ways to discourage behaviour include a calm warning, or withdrawing attention from minor misbehaviour.\n\nCDC lists spanking, yelling at or embarrassing a child as unhealthy negative attention. It says these can weaken your relationship and contribute to later problems with emotions, behaviour, mental health and self-esteem. CDC also says all behaviour is a form of communication and a chance to connect.",
+      "apply_it": "Today, catch your child doing three things right and give each one immediate, warm attention.",
+      "quiz": {
+        "question": "How does CDC classify spanking, yelling and embarrassing a child?",
+        "options": [
+          "Effective discipline for young children",
+          "Unhealthy negative attention that can harm the relationship",
+          "Useful only in public",
+          "Healthy negative attention"
+        ],
+        "answer": 1,
+        "explanation": "CDC lists them as unhealthy negative attention, linked to relationship harm and later emotional and behavioural problems."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--25",
+      "topic": "parenting",
+      "tags": [
+        "ignoring",
+        "whining",
+        "attention"
+      ],
+      "title": "Calmly ignore minor attention-seeking, then praise the calm",
+      "body": "For minor behaviours like whining or interrupting, CDC describes 'redirecting your attention': withdraw your attention completely while the behaviour continues, without talking, looking or touching, while keeping your child safe. The moment it stops, turn back warmly and praise the good behaviour, even if it's just sitting quietly.\n\nExpect it to get worse before it gets better; children often push harder to see if the old trick still works, and giving in teaches them that escalating pays. This is not for needs (hunger, tiredness, illness), real distress, or anything dangerous, which you stop at once.",
+      "apply_it": "Pick one minor habit, like whining, and agree with every caregiver to ignore it and praise the moment it stops.",
+      "quiz": {
+        "question": "What should you do immediately after the minor misbehaviour stops?",
+        "options": [
+          "Explain why it was wrong",
+          "Keep ignoring the child for an hour",
+          "Return your attention and praise the good behaviour",
+          "Give a time-out anyway"
+        ],
+        "answer": 2,
+        "explanation": "Ignoring alone doesn't teach what you want; prompt praise once the behaviour stops does."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--26",
+      "topic": "parenting",
+      "tags": [
+        "time-out",
+        "discipline",
+        "consequences"
+      ],
+      "title": "Use time-out calmly, briefly and only for serious behaviour",
+      "body": "CDC describes time-out as briefly removing a young child from attention and fun to stop serious misbehaviour: doing something dangerous, hurting someone, breaking a known family rule, or ignoring a direction after one warning. Minor whining is better handled by ignoring or distraction.\n\nWarn once, then explain briefly and calmly, without lecturing or arguing. A boring spot such as a chair at the end of a hallway works; never use a closet, and stay close enough to supervise. CDC suggests about one minute per year of age, ending once the child has been quiet a few seconds. Afterwards, look for the next good behaviour and praise it.",
+      "apply_it": "Choose a safe, boring time-out spot in your home and practise what time-out looks like with your child while you're both in a good mood.",
+      "quiz": {
+        "question": "How long does CDC suggest a time-out should last?",
+        "options": [
+          "As long as it takes to feel sorry",
+          "About one minute per year of the child's age",
+          "At least 30 minutes",
+          "Until bedtime"
+        ],
+        "answer": 1,
+        "explanation": "CDC suggests about one minute per year of age, for example two minutes for a two-year-old."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--27",
+      "topic": "parenting",
+      "tags": [
+        "time-in",
+        "emotions",
+        "meltdowns"
+      ],
+      "title": "Meltdown or misbehaviour? Choose time-in or time-out",
+      "body": "CDC distinguishes two tools. Time-out suits unsafe or harmful behaviour, such as hitting, biting or refusing a rule after a warning. Time-in suits emotional meltdowns, when a child is upset, anxious or overwhelmed and needs help to calm down; separation can make some children's behaviour worse.\n\nFor time-in, first check for hunger, tiredness or discomfort, and calm yourself. Then stay with your child, name the feeling, offer comfort while they settle (asking before touching), reassure them you're there, and talk it through once they're calm. Many families need both tools.",
+      "apply_it": "Next time your child gets upset, ask yourself first: is this unsafe behaviour, or a big feeling? Choose your response from the answer.",
+      "quiz": {
+        "question": "According to CDC, when is time-in the better choice?",
+        "options": [
+          "When a child hits a sibling",
+          "When a child runs into the street",
+          "When a child is having an emotional meltdown",
+          "When a child breaks a family rule after a warning"
+        ],
+        "answer": 2,
+        "explanation": "Time-in, staying close and helping the child calm down, is for emotional distress; time-out is for unsafe or harmful behaviour."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--28",
+      "topic": "parenting",
+      "tags": [
+        "emotion-coaching",
+        "feelings",
+        "emotional-intelligence"
+      ],
+      "title": "Coach feelings in five steps: notice, connect, listen, name, solve",
+      "body": "CDC's emotion-coaching guide gives five steps. Notice your child's emotions, ideally when they're still mild. Connect with eye contact, a smile or a gentle touch. Listen with empathy, without judging the feeling. Name the emotion simply: 'Your blocks fell. Are you feeling angry?' Then find solutions together.\n\nAll feelings are accepted, but hurtful behaviour isn't: it's okay to be angry, not okay to throw blocks. During a full tantrum, keep everyone safe and wait; coach once you're both calm. If your guess is wrong, accept the correction and try again. That builds their feelings vocabulary too.",
+      "apply_it": "Today, name one of your child's feelings out loud when it's still small: 'You look disappointed that it's time to go.'",
+      "quiz": {
+        "question": "In CDC's emotion coaching, what is accepted and what is limited?",
+        "options": [
+          "Happy feelings are accepted; sad ones are limited",
+          "All feelings are accepted; hurtful behaviour is limited",
+          "All behaviour is accepted; feelings are limited",
+          "Nothing is limited"
+        ],
+        "answer": 1,
+        "explanation": "Every feeling is okay to have, but behaviour that hurts people or things still has limits."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--29",
+      "topic": "parenting",
+      "tags": [
+        "praise",
+        "encouragement",
+        "behaviour"
+      ],
+      "title": "Say exactly what you liked: 'labelled' praise works best",
+      "body": "CDC explains that praise tells children which behaviours you like, so they're more likely to repeat them and feel good about themselves. The most useful kind is labelled praise, which names the exact behaviour: 'I saw you put your toys away!' General praise like 'Great job!' shows approval but doesn't tell the child what to do again.\n\nKeep it simple and upbeat, and give it right after the behaviour. Adapt it to your child: some children don't like hugs, so a thumbs up, smile or wink may suit them better.",
+      "apply_it": "Replace three 'good job's today with labelled praise that names exactly what your child did.",
+      "quiz": {
+        "question": "Which is an example of labelled praise?",
+        "options": [
+          "Great job!",
+          "Good boy!",
+          "I saw that you put your toys away!",
+          "You're the best!"
+        ],
+        "answer": 2,
+        "explanation": "Labelled praise names the specific behaviour, so the child knows exactly what earned it."
+      }
+    },
+    {
+      "id": "cdc-positive-parenting--30",
+      "topic": "parenting",
+      "tags": [
+        "rewards",
+        "sticker-chart",
+        "motivation"
+      ],
+      "title": "The best rewards are often free: time, attention and affection",
+      "body": "CDC explains that rewards given right after a behaviour make it more likely to happen again, boost self-esteem in children who hear 'no' a lot, and help parent and child feel good together. Rewards needn't cost money. Social rewards, like hugs, high-fives, specific praise, an extra story or helping with dinner, can be given often and are very powerful.\n\nFor a reward chart, choose a few clear behaviours phrased positively ('use kind words'), use pictures, let your child add the sticker, and never take away an earned reward. If it isn't working, check that the goal is realistic, clear and the reward is still motivating.",
+      "apply_it": "List five free rewards your child loves (a story, a game, choosing dinner) and use one today right after a behaviour you want.",
+      "quiz": {
+        "question": "According to CDC, what should you never do with a reward chart?",
+        "options": [
+          "Use pictures",
+          "Let the child place the sticker",
+          "Take away rewards already earned",
+          "Phrase behaviours positively"
+        ],
+        "answer": 2,
+        "explanation": "CDC says never take away earned rewards; new rewards simply require repeating the behaviour."
+      }
+    }
+  ]
+}

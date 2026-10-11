@@ -1,0 +1,711 @@
+{
+  "source": {
+    "id": "rich-dad-poor-dad-kiyosaki",
+    "title": "Rich Dad Poor Dad",
+    "authors": [
+      "Robert T. Kiyosaki"
+    ],
+    "kind": "book",
+    "url": "https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Rich Dad Poor Dad by Robert T. Kiyosaki (1997). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Warner Books",
+    "year": 1997,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. Cards cover the book's widely accepted ideas only; its riskier advice (heavy leverage, downplaying formal education) is deliberately left out."
+  },
+  "cards": [
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--01",
+      "topic": "money",
+      "tags": [
+        "assets",
+        "liabilities",
+        "cash-flow"
+      ],
+      "title": "Know the difference between an asset and a liability",
+      "body": "Kiyosaki's central idea is a simple test: does this thing put money into your pocket, or take money out? Investments that pay you, such as a business, shares that pay dividends or a rental that earns more than it costs, work for you. Things that need regular payments, like a car loan or costly subscriptions, drain you.\n\nMany people buy liabilities believing they are assets. Using the cash-flow test before a big purchase helps you see whether you are building wealth or just adding monthly bills.",
+      "apply_it": "Look at your three largest monthly payments. For each, write whether it brings money in or only takes money out.",
+      "quiz": {
+        "question": "What simple test does Kiyosaki use to separate assets from liabilities?",
+        "options": [
+          "Whether it is expensive",
+          "Whether friends admire it",
+          "Whether it puts money in your pocket or takes it out",
+          "Whether it is physical"
+        ],
+        "answer": 2,
+        "explanation": "In his framing, an asset produces cash flow for you; a liability costs you money over time."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--02",
+      "topic": "money",
+      "tags": [
+        "financial-literacy",
+        "budgeting",
+        "learning"
+      ],
+      "title": "Financial literacy matters more than income",
+      "body": "The book argues that a high salary is no protection if you don't understand money. People with good incomes can still struggle because spending rises with pay and they never learn to read the basic numbers of their own lives.\n\nKiyosaki urges readers to understand what comes in, what goes out and what they actually own versus owe, much like a simple personal set of accounts. Today that can be as easy as a budgeting app and a quarterly net-worth check, but the habit of looking is what counts.",
+      "apply_it": "Make a one-page list of what you own and what you owe, and work out the difference. Repeat it in three months.",
+      "quiz": {
+        "question": "Why does Kiyosaki say a high income alone isn't enough?",
+        "options": [
+          "Without understanding money, spending tends to rise with income",
+          "Taxes always take it all",
+          "High earners can't save",
+          "Salaries are always too low"
+        ],
+        "answer": 0,
+        "explanation": "Without financial understanding, extra income often disappears into extra spending."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--03",
+      "topic": "money",
+      "tags": [
+        "saving",
+        "discipline",
+        "habits"
+      ],
+      "title": "Pay yourself first",
+      "body": "Kiyosaki encourages putting money toward savings and investments before paying everything else, rather than saving whatever happens to be left at the end of the month. Usually nothing is left.\n\nThe idea is about priorities: your future self is treated as a bill that must be paid. Modern tools make this easier than ever, because a standing order on payday moves the money before you can spend it. Start with an amount you can sustain, even if it feels small, and raise it as your income grows.",
+      "apply_it": "Set a standing order for the day after payday that moves a fixed amount into savings or investments.",
+      "quiz": {
+        "question": "What does 'pay yourself first' mean?",
+        "options": [
+          "Buy yourself a treat each payday",
+          "Pay off all debts before saving anything",
+          "Ask for a pay rise",
+          "Set money aside for savings and investing before other spending"
+        ],
+        "answer": 3,
+        "explanation": "Saving comes off the top, so it actually happens instead of depending on leftovers."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--04",
+      "topic": "learning",
+      "tags": [
+        "career",
+        "skills",
+        "learning"
+      ],
+      "title": "Early in your career, choose jobs for what they teach",
+      "body": "One of the book's more practical messages is that when you're starting out, the skills a job gives you can be worth more than the pay. Kiyosaki describes learning sales, communication and how businesses run as investments that keep paying back for decades.\n\nThis doesn't mean accepting unfair pay. It means weighing learning alongside salary: a role that teaches you to sell, manage people or understand finance can widen your options far more than a slightly better-paid job that teaches little.",
+      "apply_it": "Name one skill, such as selling, negotiating or reading accounts, that would most widen your options, and find one way to practise it this month.",
+      "quiz": {
+        "question": "What does the book suggest young workers weigh alongside salary?",
+        "options": [
+          "Job titles",
+          "The skills and knowledge the job will teach",
+          "Office location",
+          "How many holidays they get"
+        ],
+        "answer": 1,
+        "explanation": "Broad, transferable skills learned early can be worth more over a lifetime than a small pay difference."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--05",
+      "topic": "money",
+      "tags": [
+        "side-income",
+        "assets",
+        "long-term"
+      ],
+      "title": "Build your own asset column while you keep your job",
+      "body": "Kiyosaki advises readers to 'mind their own business', meaning the collection of assets they own, not their employer's business. You can keep working a regular job while steadily buying or building things that produce income, so your security doesn't depend entirely on one pay packet.\n\nIn practice this is gradual and doesn't require big bets: regular investing, a small side project or new skills that can earn money. The aim is that, over time, your assets cover more of your living costs.",
+      "apply_it": "Pick one income-producing asset you could start or add to this year, and write the first small step.",
+      "quiz": {
+        "question": "In the book, what does 'minding your own business' refer to?",
+        "options": [
+          "Ignoring other people's opinions",
+          "Starting a company immediately",
+          "Growing the assets you personally own while you work",
+          "Avoiding all investing"
+        ],
+        "answer": 2,
+        "explanation": "It means steadily building your own asset column alongside your job, not instead of it."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--06",
+      "topic": "personal-development",
+      "tags": [
+        "mindset",
+        "problem-solving",
+        "language"
+      ],
+      "title": "Ask 'How can I afford it?' instead of saying 'I can't afford it'",
+      "body": "Kiyosaki contrasts two reactions to something expensive. His 'poor dad' would say he couldn't afford it, which ended the conversation. His 'rich dad' asked how he could afford it, which pushed his mind to look for options.\n\nThe point isn't to buy everything you want. It's that the question you ask shapes whether you think at all. 'I can't' closes the door; 'how could I?' invites ideas, such as saving over time, earning extra or finding a cheaper route. Sometimes the honest answer is still 'not now', but you reach it by thinking rather than by habit.",
+      "apply_it": "Next time you say 'I can't afford that', rephrase it as 'How could I afford that?' and write down two possible answers.",
+      "quiz": {
+        "question": "Why does Kiyosaki prefer the question 'How can I afford it?'",
+        "options": [
+          "It means you should buy everything",
+          "It makes your mind search for options instead of shutting down",
+          "It impresses other people",
+          "It avoids budgeting"
+        ],
+        "answer": 1,
+        "explanation": "The question forces you to think creatively, even if the final answer is to wait."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--07",
+      "topic": "psychology",
+      "tags": [
+        "fear",
+        "desire",
+        "rat-race"
+      ],
+      "title": "Notice when fear or desire is making your money decisions",
+      "body": "Kiyosaki describes what he calls the rat race: people get up, go to work, pay bills and repeat, driven by fear of not having enough money. When more money comes, desire for more things takes over, and the cycle continues.\n\nHis advice is not to pretend these emotions aren't there, but to recognise them. A decision made from panic or from craving tends to be different from one made calmly. Naming the feeling before acting gives you a chance to choose rather than react.",
+      "apply_it": "Before your next significant purchase or job decision, write down whether fear, desire or careful thought is driving it.",
+      "quiz": {
+        "question": "What does Kiyosaki say keeps many people in the 'rat race'?",
+        "options": [
+          "Too much free time",
+          "Bad luck alone",
+          "Fear of not having money, followed by desire for more",
+          "Reading too many books"
+        ],
+        "answer": 2,
+        "explanation": "Fear pushes people to work for pay, and desire spends it, so the cycle repeats."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--08",
+      "topic": "personal-development",
+      "tags": [
+        "responsibility",
+        "learning",
+        "blame"
+      ],
+      "title": "Stop blaming others and ask what the situation can teach you",
+      "body": "Early in the book, a young Kiyosaki is angry at his rich dad for paying him very little. Rich dad's response is that blaming him, or the boss, or anyone else, would leave Kiyosaki stuck. If he saw that he was the one who could change, he could learn something and move forward.\n\nThe lesson travels well beyond money. Some unfairness is real and worth challenging. But focusing only on blame hands control of your future to other people. Asking what you can learn, and what you can do differently, puts it back in your hands.",
+      "apply_it": "Think of a money frustration you blame on someone else. Write one thing within your control that you could change about it.",
+      "quiz": {
+        "question": "What did rich dad say blaming others would do?",
+        "options": [
+          "Keep you stuck instead of learning",
+          "Make people pay you more",
+          "Prove you were right",
+          "Help you win arguments"
+        ],
+        "answer": 0,
+        "explanation": "Blame hands your power to others; asking what you can learn lets you change."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--09",
+      "topic": "money",
+      "tags": [
+        "home",
+        "assets",
+        "cash-flow"
+      ],
+      "title": "Your home may cost you money each month, so don't count it as income",
+      "body": "One of Kiyosaki's best-known claims is that a family home is not an asset in his cash-flow sense, because it takes money out of your pocket every month through loan payments, repairs, rates and insurance.\n\nThis is a matter of definition and is debated: a paid-off home can provide security and save on rent, and property can hold value over time. The defensible takeaway is narrower. Don't stretch to buy the biggest house you can, believing it will make you rich. Know what it really costs each month, and keep building other savings alongside it.",
+      "apply_it": "Add up everything your home (rented or owned) costs you each month, including repairs and transport. Compare it with what you're saving.",
+      "quiz": {
+        "question": "What is the defensible lesson from Kiyosaki's view on homes?",
+        "options": [
+          "Never own a home",
+          "Always buy the biggest house you can",
+          "Homes always lose value",
+          "Know the full monthly cost and don't rely on your home alone to build wealth"
+        ],
+        "answer": 3,
+        "explanation": "His cash-flow view is debated, but understanding true costs and keeping other savings is sound."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--10",
+      "topic": "money",
+      "tags": [
+        "wealth",
+        "emergency-fund",
+        "measurement"
+      ],
+      "title": "Measure wealth by how long you could live without working",
+      "body": "Kiyosaki offers a definition of wealth he credits to the thinker Buckminster Fuller: the number of days you could keep going, at your current lifestyle, if you stopped working today.\n\nThis measure is useful because it ignores how much you earn and how rich you look. Someone with a modest income and three months of savings may be wealthier, by this test, than a high earner with no reserves. Growing that number, a week at a time, is a concrete goal anyone can track.",
+      "apply_it": "Divide your savings by your monthly living costs. That's your current number of months. Set a goal to add one more.",
+      "quiz": {
+        "question": "How does Kiyosaki define wealth?",
+        "options": [
+          "Your yearly salary",
+          "The value of your car",
+          "Your job title",
+          "How long you could keep your lifestyle going without working"
+        ],
+        "answer": 3,
+        "explanation": "Wealth, in this sense, is measured in time: how long your resources could support you."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--11",
+      "topic": "money",
+      "tags": [
+        "luxuries",
+        "discipline",
+        "assets"
+      ],
+      "title": "Buy luxuries last, and let your assets pay for them",
+      "body": "Kiyosaki describes rich dad's habit of not buying treats on credit or straight from wages. Instead he would first build something that produced income, then use that income to pay for the luxury. The treat became a reward for building an asset rather than a debt.\n\nYou don't need to adopt this strictly to see the value. Buying status items on credit is one of the quickest ways to stay stuck. Delaying a luxury until your savings or a side income can cover it keeps your wants from undermining your progress.",
+      "apply_it": "Choose one luxury you want. Set a rule that you'll buy it only from income your savings or a side project generates.",
+      "quiz": {
+        "question": "How did rich dad pay for luxuries?",
+        "options": [
+          "With income from assets he had built",
+          "With credit cards",
+          "By borrowing from friends",
+          "By skipping bill payments"
+        ],
+        "answer": 0,
+        "explanation": "Luxuries came last, funded by assets, so wants didn't create new debts."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--12",
+      "topic": "money",
+      "tags": [
+        "financial-literacy",
+        "windfalls",
+        "knowledge"
+      ],
+      "title": "Money without knowledge tends to disappear quickly",
+      "body": "Kiyosaki observes that people who suddenly receive large sums, such as lottery winners or newly rich athletes, sometimes end up broke within a few years. Their problem wasn't a lack of money but a lack of understanding about how to manage it.\n\nThe lesson for ordinary earners is that learning about money matters at every income level. A pay rise, inheritance or business windfall won't last if old habits stay the same. Building knowledge first means more money actually makes you better off.",
+      "apply_it": "If you received a large sum tomorrow, what would you do first? Write a three-step plan now, before any windfall arrives.",
+      "quiz": {
+        "question": "According to Kiyosaki, why do some windfall winners end up broke?",
+        "options": [
+          "They lack the knowledge to manage money",
+          "They pay too much tax",
+          "Banks take it away",
+          "They give it all to charity"
+        ],
+        "answer": 0,
+        "explanation": "Without financial knowledge, even large amounts can quickly disappear."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--13",
+      "topic": "entrepreneurship",
+      "tags": [
+        "opportunity",
+        "mindset",
+        "learning"
+      ],
+      "title": "Your mind is your most valuable asset, so train it to spot opportunities",
+      "body": "Kiyosaki argues that opportunities are often seen with the mind, not the eyes. Two people can look at the same situation and one sees nothing while the other sees a problem to solve or a gap to fill. The difference is usually knowledge and practice.\n\nHe encourages investing in your understanding of business and money so you can recognise good chances when they appear, and also spot bad deals dressed as opportunities. The more you learn, the more you notice.",
+      "apply_it": "Spend a week writing down one everyday problem you notice each day. At the end, ask which might be worth solving for others.",
+      "quiz": {
+        "question": "What does Kiyosaki say helps people see opportunities others miss?",
+        "options": [
+          "Better eyesight",
+          "Being born rich",
+          "Luck alone",
+          "Knowledge and a trained mind"
+        ],
+        "answer": 3,
+        "explanation": "Opportunities are recognised by people who have learned what to look for."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--14",
+      "topic": "communication",
+      "tags": [
+        "sales",
+        "communication",
+        "career"
+      ],
+      "title": "Talent isn't enough; learn to communicate your value",
+      "body": "Kiyosaki recalls meeting a gifted writer who struggled to earn a living. He suggested she learn to sell, and she was offended. His point was that many skilled people stay underpaid because they can't market what they do, while others with less talent but better communication skills do well.\n\nSelling here means explaining clearly why your work matters: in a job interview, a pitch to a client or a request for a raise. It is a learnable skill, and pairing it with real ability multiplies what that ability can earn.",
+      "apply_it": "Write three sentences explaining what you do well and why it matters to someone who'd pay for it. Practise saying them aloud.",
+      "quiz": {
+        "question": "What did Kiyosaki suggest to the talented writer who struggled financially?",
+        "options": [
+          "Stop writing completely",
+          "Work longer hours",
+          "Learn to sell and communicate her value",
+          "Move to a different country"
+        ],
+        "answer": 2,
+        "explanation": "Skill earns more when paired with the ability to explain its value to others."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--15",
+      "topic": "money",
+      "tags": [
+        "financial-literacy",
+        "investing",
+        "law"
+      ],
+      "title": "Build financial know-how in four areas: accounts, investing, markets and law",
+      "body": "Kiyosaki describes financial intelligence as a mix of four kinds of knowledge. Accounting helps you read the numbers. Investing is the study of making money grow. Understanding markets means knowing supply and demand. Law covers rules such as tax and contracts that affect your money.\n\nYou don't need to become an expert in all four. But knowing a little about each helps you ask better questions, avoid traps and understand what advisers are telling you. Treat it as a gradual education, not a single course.",
+      "apply_it": "Pick the area of the four you know least about. Find one beginner article, video or free course on it this week.",
+      "quiz": {
+        "question": "Which of these is NOT one of Kiyosaki's four areas of financial intelligence?",
+        "options": [
+          "Accounting",
+          "Investing",
+          "Law",
+          "Fashion"
+        ],
+        "answer": 3,
+        "explanation": "He lists accounting, investing, understanding markets and law."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--16",
+      "topic": "money",
+      "tags": [
+        "risk",
+        "learning",
+        "failure"
+      ],
+      "title": "Start small so mistakes become affordable lessons",
+      "body": "Kiyosaki writes that fear of losing money keeps many people from ever learning to invest. He argues that losses are part of learning, and that the wealthy he knew had all made mistakes along the way.\n\nThe sensible way to apply this is to keep early experiments small. A modest first investment or side project teaches you how things work without risking money you need. His more aggressive suggestions, such as borrowing heavily to invest, carry real dangers and are best avoided by most readers. Learn cheaply first, and grow only as your knowledge does.",
+      "apply_it": "Choose one money skill you want to learn by doing. Set a small limit you can afford to lose while practising.",
+      "quiz": {
+        "question": "What is the safest way to apply Kiyosaki's point about losing money?",
+        "options": [
+          "Keep early experiments small and affordable",
+          "Borrow heavily to learn faster",
+          "Never invest at all",
+          "Put all your savings into one idea"
+        ],
+        "answer": 0,
+        "explanation": "Small, affordable experiments let you learn from mistakes without risking money you need."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--17",
+      "topic": "psychology",
+      "tags": [
+        "cynicism",
+        "doubt",
+        "research"
+      ],
+      "title": "Don't let doubters stop you from looking into an idea",
+      "body": "Kiyosaki names cynicism as an obstacle that keeps people stuck. When considering an opportunity, many hear warnings from friends or their own inner voice and drop it without investigating. He compares this to the folk tale of Chicken Little, who panicked that the sky was falling.\n\nCaution is healthy, and some warnings are right. The lesson is to let doubts trigger research rather than end the conversation. Check the facts, ask people with real experience and then decide.",
+      "apply_it": "Think of an idea you dropped because someone doubted it. Spend 20 minutes researching whether their concern was valid.",
+      "quiz": {
+        "question": "How does Kiyosaki suggest responding to doubts about an opportunity?",
+        "options": [
+          "Ignore all warnings",
+          "Ask only people who agree with you",
+          "Always give up immediately",
+          "Use them as a reason to research the facts"
+        ],
+        "answer": 3,
+        "explanation": "Doubts should lead to investigation, not automatic retreat."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--18",
+      "topic": "productivity",
+      "tags": [
+        "laziness",
+        "busyness",
+        "avoidance"
+      ],
+      "title": "Being busy can be a way of avoiding money problems",
+      "body": "Kiyosaki argues that some of the busiest people are, in one sense, lazy: they keep themselves so occupied with work and routine that they never deal with their finances. Busyness becomes a reason not to look at the bills, plan or learn.\n\nHis suggested cure is a little greed in the healthy sense: asking 'what's in it for me?' if I take the time. Picturing the benefit, such as freedom or less stress, can motivate you to do the uncomfortable thinking you've been putting off.",
+      "apply_it": "Block 30 minutes this week to look at a money task you've been avoiding. Write down one benefit of finishing it.",
+      "quiz": {
+        "question": "What kind of laziness does Kiyosaki warn about?",
+        "options": [
+          "Sleeping too much",
+          "Staying so busy that you avoid dealing with your finances",
+          "Refusing to work at all",
+          "Taking holidays"
+        ],
+        "answer": 1,
+        "explanation": "Constant busyness can hide avoidance of important but uncomfortable money matters."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--19",
+      "topic": "learning",
+      "tags": [
+        "arrogance",
+        "learning",
+        "humility"
+      ],
+      "title": "What you don't know can cost you, so let curiosity beat pride",
+      "body": "Kiyosaki lists arrogance as an obstacle to wealth. Pride can make people pretend to understand things they don't, avoid asking questions or dismiss ideas outside their experience. That's when costly mistakes happen.\n\nHis suggestion is simple: when you notice yourself being defensive about a topic, treat it as a sign you need to learn more. Ask a knowledgeable person, read a book or take a course. Admitting ignorance is the first step to fixing it.",
+      "apply_it": "Think of a money topic where you nod along without really understanding. Ask someone to explain it simply this week.",
+      "quiz": {
+        "question": "How does Kiyosaki suggest handling arrogance?",
+        "options": [
+          "Never ask questions",
+          "Avoid people who know more",
+          "Treat defensiveness as a sign to learn more",
+          "Pretend to understand everything"
+        ],
+        "answer": 2,
+        "explanation": "Defensiveness signals a gap in knowledge, which learning can fill."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--20",
+      "topic": "personal-development",
+      "tags": [
+        "motivation",
+        "purpose",
+        "goals"
+      ],
+      "title": "Find a reason for change that's stronger than your fears",
+      "body": "Among his steps for getting started, Kiyosaki puts first having a strong reason: a 'why' powerful enough to keep you going when it's hard. He describes his own as a mix of things he wanted and things he didn't want, such as not wanting to work his whole life just to pay bills.\n\nGoals without a deep reason tend to fade when effort is required. Knowing exactly why you want financial change, perhaps security for your family or freedom to choose your work, gives you something to hold onto.",
+      "apply_it": "Write down your 'why' for improving your finances, in one sentence. Put it somewhere you'll see it every day.",
+      "quiz": {
+        "question": "What does Kiyosaki list as the first step in getting started?",
+        "options": [
+          "Buying property",
+          "Finding a reason stronger than your fears",
+          "Quitting your job",
+          "Opening many bank accounts"
+        ],
+        "answer": 1,
+        "explanation": "A deep reason keeps you going when the work gets hard."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--21",
+      "topic": "personal-development",
+      "tags": [
+        "choices",
+        "habits",
+        "time"
+      ],
+      "title": "Your daily choices about time and money shape your future",
+      "body": "Kiyosaki stresses that every day we make small decisions about what to do with our time, money and attention. Each one is a choice to invest in our future or not, even when it doesn't feel that way.\n\nHe gives the example of how people spend spare time or a little extra money: on entertainment alone, or partly on learning. Neither is wrong in moderation, but the balance, repeated daily, adds up to very different lives over years.",
+      "apply_it": "Look at how you spent your free time and spare money yesterday. Shift one small portion toward learning or saving today.",
+      "quiz": {
+        "question": "What does Kiyosaki mean by the 'power of choice'?",
+        "options": [
+          "Daily decisions about time and money add up to your future",
+          "You should never enjoy yourself",
+          "Only big decisions matter",
+          "Choice is an illusion"
+        ],
+        "answer": 0,
+        "explanation": "Small, repeated choices about time and money shape where you end up."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--22",
+      "topic": "relationships",
+      "tags": [
+        "friends",
+        "learning",
+        "association"
+      ],
+      "title": "Learn from friends who talk openly about money",
+      "body": "Kiyosaki suggests choosing to spend time with people who discuss money thoughtfully, not because you should copy them, but because you can learn from their experience and mistakes. He notes he has friends of all incomes and learns from each.\n\nHe also warns about following the crowd: by the time everyone is excited about an opportunity, it may be too late. The aim is to learn from others' thinking, not to hand your decisions to them.",
+      "apply_it": "Start one honest money conversation this month with a friend you respect. Ask what lesson cost them the most to learn.",
+      "quiz": {
+        "question": "What does Kiyosaki suggest about friends and money?",
+        "options": [
+          "Only befriend rich people",
+          "Never discuss money",
+          "Learn from friends who discuss money, without blindly copying them",
+          "Always follow what the crowd is doing"
+        ],
+        "answer": 2,
+        "explanation": "Friends' experiences are a source of learning, but decisions should still be your own."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--23",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "adaptability",
+        "skills"
+      ],
+      "title": "Master one approach, then keep learning new ones",
+      "body": "Kiyosaki describes the value of learning a method well, using it, then moving on to learn another. He warns that people can become stuck repeating the one thing they know, even when the world around them has changed.\n\nThis applies to skills as much as money. A trade, a business model or a saving strategy that worked ten years ago may not be the best one now. Keeping a habit of learning lets you adapt rather than fall behind.",
+      "apply_it": "Name one skill or method you've relied on for years. Find one newer approach in the same area and learn its basics.",
+      "quiz": {
+        "question": "What does Kiyosaki warn happens when people stop learning new approaches?",
+        "options": [
+          "They become rich faster",
+          "They get stuck repeating what may no longer work",
+          "They avoid all risk",
+          "They have more free time"
+        ],
+        "answer": 1,
+        "explanation": "Methods can become outdated, so continued learning helps you adapt."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--24",
+      "topic": "money",
+      "tags": [
+        "advice",
+        "advisers",
+        "fees"
+      ],
+      "title": "Value good advice, but understand how advisers are paid",
+      "body": "Kiyosaki argues that good professional advice, such as from an experienced accountant, lawyer or broker, can be worth far more than it costs. He encourages respecting and paying good advisers properly, since their knowledge can save you from expensive mistakes.\n\nA useful modern caveat: check how any adviser earns their money. Someone paid by commission may favour products that pay them most. Look for qualifications, a track record and transparency about fees, and make sure you still understand the decisions you make.",
+      "apply_it": "If you use a financial adviser or agent, ask them directly how they are paid for the product they're recommending.",
+      "quiz": {
+        "question": "What modern caveat applies to Kiyosaki's advice to value advisers?",
+        "options": [
+          "Never pay for advice",
+          "Advisers are always unbiased",
+          "Only listen to friends",
+          "Check how advisers are paid, since incentives can affect advice"
+        ],
+        "answer": 3,
+        "explanation": "Commission-based pay can create conflicts of interest, so transparency matters."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--25",
+      "topic": "personal-development",
+      "tags": [
+        "mentors",
+        "role-models",
+        "learning"
+      ],
+      "title": "Find heroes who have done what you want to do",
+      "body": "Kiyosaki describes how, as a boy, he admired sports stars and copied their moves. As an adult, he looked up to successful investors and studied how they thought. Having role models made difficult goals feel possible.\n\nChoose your heroes carefully, though. Learn from people with long, honest track records, not from loud personalities promising fast money. Studying how they handled setbacks is often more useful than studying their wins.",
+      "apply_it": "Choose one person whose financial journey you respect. Read or watch one interview about how they handled a setback.",
+      "quiz": {
+        "question": "How did Kiyosaki use heroes in learning about money?",
+        "options": [
+          "He studied how successful people thought",
+          "He copied their spending habits",
+          "He asked them for money",
+          "He ignored them"
+        ],
+        "answer": 0,
+        "explanation": "Role models show what's possible and how others think through challenges."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--26",
+      "topic": "relationships",
+      "tags": [
+        "generosity",
+        "teaching",
+        "giving"
+      ],
+      "title": "Give and teach what you want to receive",
+      "body": "Kiyosaki's last step in getting started is the power of giving. He suggests that if you want to learn something, teach it to others, and if you want more of something, such as kindness or help, offer it first. He also mentions rich dad's habit of giving to charity.\n\nTeaching forces you to understand a subject properly, and generosity tends to build trust and relationships. Neither guarantees a return, but both make your life and community richer.",
+      "apply_it": "Teach one money idea you've learned to a family member or friend this week. Notice what you understand better afterwards.",
+      "quiz": {
+        "question": "What does Kiyosaki suggest doing if you want to learn something?",
+        "options": [
+          "Keep it secret",
+          "Teach it to others",
+          "Pay someone to do it",
+          "Avoid it until later"
+        ],
+        "answer": 1,
+        "explanation": "Teaching others deepens your own understanding."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--27",
+      "topic": "productivity",
+      "tags": [
+        "reflection",
+        "habits",
+        "change"
+      ],
+      "title": "Pause and check whether your current approach is working",
+      "body": "In his action steps, Kiyosaki suggests a simple starting point: stop what you're doing and take an honest look at it. Repeating the same habits, he argues, will produce the same results, so it's worth asking what's working and what isn't.\n\nThis doesn't mean dramatic change overnight. It means building in moments of review, such as monthly or yearly, so that you don't drift for years in a direction you never chose.",
+      "apply_it": "Set a 30-minute monthly check-in with yourself to ask: what's working with my money, and what isn't?",
+      "quiz": {
+        "question": "What does Kiyosaki suggest as a first action step?",
+        "options": [
+          "Quit your job immediately",
+          "Borrow money to invest",
+          "Stop and honestly assess what's working",
+          "Copy someone else's plan exactly"
+        ],
+        "answer": 2,
+        "explanation": "Reviewing your habits lets you change direction on purpose."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--28",
+      "topic": "parenting",
+      "tags": [
+        "parenting",
+        "financial-literacy",
+        "family"
+      ],
+      "title": "Teach children about money at home",
+      "body": "Kiyosaki's story starts from the observation that many people leave school knowing little about managing money. He learned his lessons from his friend's father, not from a classroom.\n\nYou don't need to share his doubts about schooling to take the useful point: money skills are often best taught at home, alongside formal education. Letting children handle small amounts, save for something they want and see how a household budget works gives them a head start that many adults never had.",
+      "apply_it": "Give a child in your life a small amount to manage for a month, and talk through how they chose to spend or save it.",
+      "quiz": {
+        "question": "What is the most useful takeaway from Kiyosaki's view on money education?",
+        "options": [
+          "Children shouldn't go to school",
+          "Money skills can and should be taught at home",
+          "Only rich families can teach money",
+          "Children shouldn't handle money"
+        ],
+        "answer": 1,
+        "explanation": "Home can teach practical money skills alongside formal schooling."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--29",
+      "topic": "money",
+      "tags": [
+        "income",
+        "taxes",
+        "debt"
+      ],
+      "title": "Notice who gets paid from your work before you do",
+      "body": "Kiyosaki points out that many workers spend much of their effort paying others: the employer who profits from their labour, the government through taxes, and lenders through loan repayments. Only what's left goes toward their own future.\n\nTaxes fund public services and are a duty, so the useful lesson isn't to avoid them. It's to see the whole picture, reduce unnecessary debt so less goes to lenders, and make sure that some part of every pay cheque goes toward building something of your own.",
+      "apply_it": "Look at last month's pay. Calculate how much went to debt repayments and how much to your own savings. Aim to shift the balance.",
+      "quiz": {
+        "question": "What is the main lesson from Kiyosaki's point about who gets paid from your work?",
+        "options": [
+          "Avoid paying taxes",
+          "Reduce unnecessary debt and make sure some income builds your own future",
+          "Never work for an employer",
+          "Spend everything quickly"
+        ],
+        "answer": 1,
+        "explanation": "Seeing where your money goes helps you cut debt and keep some for yourself."
+      }
+    },
+    {
+      "id": "rich-dad-poor-dad-kiyosaki--30",
+      "topic": "communication",
+      "tags": [
+        "negotiation",
+        "rejection",
+        "confidence"
+      ],
+      "title": "Make more offers and get comfortable hearing no",
+      "body": "In his action steps, Kiyosaki encourages readers to make lots of offers when they buy or sell, noting that many people never ask for a better price because they fear rejection or looking foolish. In his view, each offer, even a refused one, teaches you something about negotiating and about what things are really worth.\n\nThe same applies to asking for a raise, a discount or a better contract. Polite, reasonable requests cost little, and getting used to hearing 'no' makes you far more confident when the stakes are higher.",
+      "apply_it": "This week, make one polite request for a better deal: a discount, a lower rate or improved terms. Note what you learn from the reply.",
+      "quiz": {
+        "question": "Why does Kiyosaki encourage people to make lots of offers?",
+        "options": [
+          "To annoy sellers",
+          "Because every offer is accepted",
+          "Each offer, even a refused one, teaches negotiation and value",
+          "To avoid ever paying full price"
+        ],
+        "answer": 2,
+        "explanation": "Practice with offers builds negotiation skill and comfort with rejection."
+      }
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "source": {
+    "id": "nhs-grief-bereavement",
+    "title": "Grief, bereavement and loss",
+    "authors": [
+      "NHS"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Adapted from NHS website pages: https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/ ; https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/children-and-bereavement/ ; https://www.nhs.uk/conditions/stillbirth/what-happens/ ; https://www.nhs.uk/conditions/miscarriage/afterwards/ ; https://www.nhs.uk/tests-and-treatments/end-of-life-care/your-wellbeing/coping-with-a-terminal-illness/ . Main nhs.uk content under the NHS website terms (not Every Mind Matters, which reserves rights). NHS terms 3.6b: adapted content uses the standard OGL attribution, must not imply NHS endorsement, and must not be sold as a separately charged item (3.10). UK helpline numbers are as listed on those pages when retrieved."
+  },
+  "cards": [
+    {
+      "id": "nhs-grief-bereavement--01",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "loss",
+        "bereavement"
+      ],
+      "title": "Grief can follow many kinds of loss, not only a death",
+      "body": "Grief is the natural response to losing someone or something that mattered to you. The NHS points out that it is not only death that brings it on. The end of a relationship, losing a job, moving away from home, or watching someone you love become seriously ill can all bring real grief.\n\nNaming it as grief can help. It explains why you may feel low or exhausted after a change other people see as minor, and it gives you permission to look after yourself instead of telling yourself to just get on with it.",
+      "apply_it": "Think of a recent change in your life that still weighs on you. Could part of what you feel be grief? Write one sentence naming what you lost.",
+      "quiz": {
+        "question": "According to the NHS, which of these can cause grief?",
+        "options": [
+          "Only the death of a close family member",
+          "Only sudden or violent deaths",
+          "Losses such as a break-up, losing a job or moving home",
+          "Only losses that happen in childhood"
+        ],
+        "answer": 2,
+        "explanation": "The NHS lists many causes of grief, including the end of a relationship, job loss, moving home and a loved one's serious illness."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--02",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "shock",
+        "symptoms"
+      ],
+      "title": "Shock and numbness are a common first reaction to loss",
+      "body": "In the first days after a loss, many people do not feel what they expect to feel. The NHS describes shock and numbness as common early reactions: you may feel dazed, distant, or strangely calm, as if it has not really happened.\n\nThis is not a sign that you did not care. It is one of the ways a mind copes with news too big to take in at once. Other feelings, such as deep sadness, crying and tiredness, often arrive later, sometimes in waves.",
+      "apply_it": "If someone you know seems oddly calm after a loss, resist judging it. Offer quiet, practical help instead, such as a meal or a lift.",
+      "quiz": {
+        "question": "What does feeling numb soon after a death usually mean?",
+        "options": [
+          "The person did not love the one who died",
+          "It is a common early reaction to a loss that is hard to take in",
+          "The grief is already over",
+          "The person needs to be told to cry"
+        ],
+        "answer": 1,
+        "explanation": "The NHS lists shock and numbness among the common first symptoms of grief."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--03",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "anger",
+        "guilt"
+      ],
+      "title": "Anger and guilt are normal parts of grief, too",
+      "body": "Grief is not only sadness. The NHS notes that many bereaved people feel angry, at the person who died, at the circumstances, at doctors or at life itself. Many also feel guilty: about things they said or never said, or a belief that they should have been able to stop the death.\n\nThese feelings can be confusing and even shameful to admit. Knowing they are a common part of grief can ease the extra burden of thinking something is wrong with you. Talking them through with someone you trust often makes them easier to carry.",
+      "apply_it": "If you feel guilt about a loss, write down what you wish you had said. Then write what a kind friend would say back to you.",
+      "quiz": {
+        "question": "Which feelings does the NHS describe as common in grief, besides sadness?",
+        "options": [
+          "Anger and guilt",
+          "Only relief",
+          "Only boredom",
+          "Nothing: grief is sadness alone"
+        ],
+        "answer": 0,
+        "explanation": "Anger at the person or the circumstances, and guilt about things said or unsaid, are listed as common symptoms."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--04",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "behaviour",
+        "awareness"
+      ],
+      "title": "Grief doesn't always look like grief",
+      "body": "The NHS points out that grief is not always obvious. Its feelings can come and go, and strong emotions can surface without warning, weeks or months later. Because of this, it can be hard to connect a change in someone's behaviour, such as irritability, withdrawal or exhaustion, with a loss.\n\nThis is worth remembering for yourself and for others. A colleague who has become short-tempered, or a relative who no longer joins in, may be grieving. Gentle curiosity is kinder than assuming they are simply being difficult.",
+      "apply_it": "Think of someone whose mood has changed lately. Has there been a loss in their life? Consider checking in with a simple 'How are you really doing?'",
+      "quiz": {
+        "question": "Why can grief be hard to recognise?",
+        "options": [
+          "It always passes within a week",
+          "It only affects children",
+          "Its feelings can come and go and surface without warning, so changes are not always linked to the loss",
+          "It never affects behaviour"
+        ],
+        "answer": 2,
+        "explanation": "The NHS notes grief doesn't always look obvious and can be hard to link to changes in behaviour."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--05",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "stages",
+        "acceptance"
+      ],
+      "title": "The stages of grief are not a fixed path",
+      "body": "The NHS describes stages that many people recognise: denial, anger, bargaining, depression and acceptance. It is careful to add that people do not necessarily go through all of them, or in any set order.\n\nIt also clarifies what acceptance means: coming to terms with the loss, not liking it or feeling fine about it. So if you move back and forth between feelings, skip some, or never feel 'done', you are not grieving wrongly. The NHS adds that for most people grief becomes less intense over time.",
+      "apply_it": "If you have ever felt you were 'behind' in grief, remind yourself today: there is no correct order and no deadline.",
+      "quiz": {
+        "question": "What does the NHS say about the stages of grief?",
+        "options": [
+          "Everyone goes through all five in order",
+          "Acceptance means you are happy about the loss",
+          "Skipping a stage means grief went wrong",
+          "People may not go through all of them, or in a set order"
+        ],
+        "answer": 3,
+        "explanation": "Stages are common, but not everyone experiences all of them or follows a fixed order. Acceptance means coming to terms with the loss."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--06",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "talking",
+        "support"
+      ],
+      "title": "Talking to someone you trust lightens the load",
+      "body": "One of the first things the NHS suggests is talking: to a friend or family member you trust, a health professional, or a counsellor. Peer support, where you meet others who have lived through a similar loss, is another option many people find helpful.\n\nTalking does not remove the loss, but it can stop you carrying it alone. Different people help in different ways: one friend may be good at listening, another at practical help. In many communities, faith leaders and elders also offer this support.",
+      "apply_it": "Name one person you could talk to honestly about a loss. Send them a short message today, even just 'Can we talk this week?'",
+      "quiz": {
+        "question": "Which of these does the NHS suggest when coping with grief?",
+        "options": [
+          "Keep your feelings to yourself",
+          "Talk to someone you trust, a professional or a peer support group",
+          "Only talk once you feel better",
+          "Avoid anyone who knew the person"
+        ],
+        "answer": 1,
+        "explanation": "Talking to people you trust, health professionals, counsellors or peer support groups can help."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--07",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "self-care",
+        "exercise",
+        "food"
+      ],
+      "title": "Look after your body while you grieve",
+      "body": "Grief is tiring, and it is easy to stop eating properly or moving at all. The NHS suggests two simple things that can help: regular, healthy meals and regular exercise.\n\nThese are not cures for sadness. They are ways of keeping your body steady enough to carry what you are feeling. A walk around the block, a plain meal at the usual time, or a glass of water count. When friends ask how they can help, food and company on a walk are good answers.",
+      "apply_it": "Today, eat one proper meal at a regular time and take a short walk, even ten minutes.",
+      "quiz": {
+        "question": "What physical habits does the NHS suggest during grief?",
+        "options": [
+          "Regular healthy meals and regular exercise",
+          "Fasting until the feelings pass",
+          "Staying in bed as much as possible",
+          "Training hard to forget the loss"
+        ],
+        "answer": 0,
+        "explanation": "The NHS suggests eating regular, healthy meals and exercising regularly."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--08",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "goals",
+        "overwhelm"
+      ],
+      "title": "Set small goals instead of trying to do everything at once",
+      "body": "After a loss there can be a flood of things to deal with, alongside the feelings themselves. The NHS advises against trying to do everything at once. Setting small, achievable goals is more realistic.\n\nOne phone call, one form, one cupboard. Each small task completed is real progress, and it leaves energy for rest. The NHS also suggests not dwelling on things you cannot change; your attention is precious and better spent on the next small step.",
+      "apply_it": "Write down everything you feel you must do, then circle just one small task to finish today.",
+      "quiz": {
+        "question": "What does the NHS recommend about tasks after a loss?",
+        "options": [
+          "Finish everything in the first week",
+          "Avoid all tasks for months",
+          "Let other people decide everything",
+          "Set small, achievable goals rather than doing everything at once"
+        ],
+        "answer": 3,
+        "explanation": "Trying to do everything at once can overwhelm you; small achievable goals help."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--09",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "alcohol",
+        "coping"
+      ],
+      "title": "Alcohol, drugs and gambling make grief harder, not easier",
+      "body": "When feelings are overwhelming, it is tempting to numb them. The NHS specifically advises against using alcohol, cigarettes, gambling or drugs to cope with grief.\n\nThese can feel like relief in the moment, but they tend to deepen low mood, disturb sleep and create new problems on top of the loss. If you notice yourself reaching for them more often, that is a sign to talk to someone, such as a GP, a counsellor or a support service, rather than a reason for shame.",
+      "apply_it": "Notice what you reach for when grief hits hardest. Choose one gentler alternative for next time, such as calling a friend or going outside.",
+      "quiz": {
+        "question": "What does the NHS advise about alcohol and gambling during grief?",
+        "options": [
+          "They are a safe way to relax",
+          "Use them only at weekends",
+          "Don't use them to cope",
+          "They help you sleep better"
+        ],
+        "answer": 2,
+        "explanation": "The NHS lists alcohol, cigarettes, gambling and drugs as things not to use to cope with grief."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--10",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "loneliness",
+        "support"
+      ],
+      "title": "You are not as alone as grief makes you feel",
+      "body": "Grief can feel isolating, as if no one else could understand. The NHS lists believing you are alone as one of the things to avoid, and points to support from friends, family, health professionals and bereavement charities.\n\nIn the UK, for example, Cruse Bereavement Support helps adults, and other organisations support families after the death of a baby or child, or a loss by suicide. Many countries have similar services, and religious and community groups often offer support too.",
+      "apply_it": "Search for one bereavement service, helpline or support group in your area and save its contact details, for yourself or someone else.",
+      "quiz": {
+        "question": "Which belief does the NHS suggest letting go of when grieving?",
+        "options": [
+          "That support exists",
+          "That you are completely alone with it",
+          "That grief changes over time",
+          "That talking can help"
+        ],
+        "answer": 1,
+        "explanation": "The NHS advises against believing you are alone; support is available from people and organisations."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--11",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "gp",
+        "talking-therapy"
+      ],
+      "title": "Know when to ask a doctor for help",
+      "body": "Sadness after a bereavement usually eases gradually. The NHS suggests seeing a GP if you are struggling to cope with stress, anxiety or low mood, if low mood has lasted more than two weeks, or if the things you are trying yourself are not helping.\n\nIn England, adults can also refer themselves to NHS talking therapies without seeing a GP first. Wherever you live, a doctor or local health service can point you to support. If you are in crisis or thinking of harming yourself, get urgent help straight away.",
+      "apply_it": "Check where you would go for help in your area if low mood after a loss lasted more than two weeks. Note the number somewhere easy to find.",
+      "quiz": {
+        "question": "When does the NHS suggest seeing a GP after a bereavement?",
+        "options": [
+          "Only if you stop crying",
+          "Never: grief should be handled alone",
+          "Only after a year has passed",
+          "If low mood lasts more than two weeks or self-help isn't working"
+        ],
+        "answer": 3,
+        "explanation": "The NHS suggests seeing a GP if you can't cope, low mood lasts over two weeks, or your own efforts aren't helping."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--12",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "prolonged-grief",
+        "warning-signs"
+      ],
+      "title": "For some, grief stays very intense: that deserves support",
+      "body": "For most people grief softens over time, but the NHS describes prolonged grief disorder, where grief stays very intense for many months or years. Signs can include sadness or guilt that does not change, constant thoughts about the person who died, finding it very hard to accept the death, and being unable to return to daily life.\n\nIt is more likely after a sudden, unexpected or traumatic death. This is not a weakness. If it sounds familiar, the NHS advises speaking to a GP, and anyone having suicidal thoughts should seek help urgently.",
+      "apply_it": "If grief has stayed unchanged and overwhelming for a long time, book an appointment with a doctor this week and take a note of what you've been feeling.",
+      "quiz": {
+        "question": "According to the NHS, prolonged grief disorder is more likely after which kind of death?",
+        "options": [
+          "A sudden, unexpected or traumatic death",
+          "A death expected for many years",
+          "The death of a pet",
+          "Any death in old age"
+        ],
+        "answer": 0,
+        "explanation": "The NHS says it is more likely if the death was sudden, unexpected or traumatic."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--13",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "honesty",
+        "family"
+      ],
+      "title": "Be honest with children about a death, and include them",
+      "body": "When a child loses someone, adults often want to protect them from the truth. The NHS recommends direct, honest communication instead, and talking about the person who has died, whether a grandparent, parent, sibling or friend.\n\nLeaving a child out of family ceremonies can make them feel shut out. The NHS suggests talking as a family about how the child can take part in events to remember or say goodbye, in ways that fit your family's traditions. Photos, stories and games can help children share their feelings.",
+      "apply_it": "If a child in your life has lost someone, invite them to share a favourite memory or story about that person.",
+      "quiz": {
+        "question": "What does the NHS recommend when a child is bereaved?",
+        "options": [
+          "Avoid mentioning the person who died",
+          "Keep the child away from all ceremonies",
+          "Talk honestly and involve the child in remembering",
+          "Wait until they are adults to explain"
+        ],
+        "answer": 2,
+        "explanation": "Direct, honest talk and including children in remembering helps; excluding them can make them feel left out."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--14",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "play",
+        "memory-box"
+      ],
+      "title": "Children grieve in their own way and time, often through play",
+      "body": "The NHS notes that children may bring up their loss at different times and in different ways, sometimes long after the event. Young children might talk about death or act it out in play. This is normal: it is how they make sense of what happened.\n\nA memory box can help. Together with the child, you can fill it with gifts, photos, written memories or objects such as shells from a day out, anything that helps them feel connected to the person who died.",
+      "apply_it": "Gather three small objects or photos that remind a grieving child of the person they lost, and offer to start a memory box with them.",
+      "quiz": {
+        "question": "What does it usually mean when a young child acts out death in play?",
+        "options": [
+          "They are being disrespectful",
+          "They are trying to make sense of what happened",
+          "They have forgotten the person",
+          "They need to be stopped at once"
+        ],
+        "answer": 1,
+        "explanation": "The NHS describes talking about death or acting it out in play as a normal way for children to understand a loss."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--15",
+      "topic": "grief-loss",
+      "tags": [
+        "children",
+        "grief",
+        "anticipatory-grief",
+        "self-care"
+      ],
+      "title": "Support children before a death, and look after yourself too",
+      "body": "The NHS notes that a child's stress is often highest before someone dies, because of fear and uncertainty. Pre-bereavement counselling can give them space to talk about their worries. A parent who knows they are dying might make a memory box with or for their child, as a lasting link.\n\nThe page also reminds parents and carers that they need support after a loss too. Getting help for your own grief is not selfish: it makes it easier to support the children who depend on you.",
+      "apply_it": "If you are supporting a grieving child, name one person or service who can support you as well, and reach out to them.",
+      "quiz": {
+        "question": "When does the NHS say a child's stress around a death is often highest?",
+        "options": [
+          "Before the death, because of fear and uncertainty",
+          "Only years later",
+          "On the day of the funeral only",
+          "Children don't feel stress about death"
+        ],
+        "answer": 0,
+        "explanation": "A child's stress is often at its highest before a death, which is why pre-bereavement support can help."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--16",
+      "topic": "grief-loss",
+      "tags": [
+        "baby-loss",
+        "stillbirth",
+        "memories"
+      ],
+      "title": "After a baby dies, parents can choose how to make memories",
+      "body": "The death of a baby is devastating, and the NHS stresses that there is no right or wrong way to respond. After a stillbirth, parents can choose whether to see and hold their baby, give them a name, take photos, or keep mementoes such as a lock of hair, hand or footprints, or a blanket.\n\nIf they are unsure, hospitals can often store keepsakes for later. Guilt, anxiety and depression are common afterwards, for both parents. Talking to a GP, midwife or other bereaved parents can help, and charities such as Sands offer helplines.",
+      "apply_it": "If someone you know has lost a baby, use the baby's name if they have given one, and simply say you are sorry.",
+      "quiz": {
+        "question": "What does the NHS say about the choices parents make after a stillbirth?",
+        "options": [
+          "Parents must hold their baby",
+          "Photos are not allowed",
+          "Keepsakes must be decided on immediately",
+          "They are personal decisions with no right or wrong answer"
+        ],
+        "answer": 3,
+        "explanation": "Seeing, holding, naming and keeping mementoes are all personal choices; hospitals can store keepsakes if parents are unsure."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--17",
+      "topic": "grief-loss",
+      "tags": [
+        "miscarriage",
+        "baby-loss",
+        "partners"
+      ],
+      "title": "After a miscarriage, both partners may need support",
+      "body": "The NHS notes that after a miscarriage you may feel many emotions, including anxiety and deep upset, and that coming to terms with it emotionally can take longer than physical recovery.\n\nSupport is available for partners too, who may grieve quietly while focusing on the person who was pregnant. Talking with each other, family or friends helps. You may be offered counselling or can ask for it, and support groups, in person or online, connect you with others who understand.",
+      "apply_it": "If you or your partner have been through a miscarriage, ask each other one gentle question: 'How are you really feeling about it?'",
+      "quiz": {
+        "question": "What does the NHS say about support after a miscarriage?",
+        "options": [
+          "Only the pregnant person needs support",
+          "Support is available for partners too, and counselling can be asked for",
+          "Emotional recovery is always quicker than physical",
+          "Talking about it makes things worse"
+        ],
+        "answer": 1,
+        "explanation": "Partners can be affected as well; counselling and support groups are available."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-grief-bereavement--18",
+      "topic": "grief-loss",
+      "tags": [
+        "terminal-illness",
+        "anticipatory-grief",
+        "support"
+      ],
+      "title": "When someone you love is dying, everyone is grieving at once",
+      "body": "The NHS page on coping with a terminal illness reminds us that loved ones are also working through their own feelings about the diagnosis. That can make conversations hard on both sides, and a counsellor or someone less close can help.\n\nIt suggests taking things a day or a week at a time, writing worries down, and accepting offers of help. Being specific works best: say if you need shopping done, meals for the freezer or lifts to appointments. Groups such as Samaritans are there for difficult nights.",
+      "apply_it": "If someone close to you is seriously ill, offer one specific, concrete form of help this week rather than 'let me know if you need anything'.",
+      "quiz": {
+        "question": "What does the NHS suggest when accepting help during terminal illness?",
+        "options": [
+          "Refuse help to stay independent",
+          "Wait for people to guess what you need",
+          "Be specific about what you need, such as meals or lifts",
+          "Only accept help from professionals"
+        ],
+        "answer": 2,
+        "explanation": "Accept offers of help and be specific, such as shopping, meals or lifts to appointments."
+      },
+      "health": true
+    }
+  ]
+}

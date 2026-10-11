@@ -18,7 +18,7 @@
   "cards": [
     {
       "id": "interesting-narrative-olaudah-equiano--01",
-      "topic": "money",
+      "topic": "entrepreneurship",
       "tags": [
         "entrepreneurship",
         "compounding",
@@ -70,7 +70,7 @@
     },
     {
       "id": "interesting-narrative-olaudah-equiano--03",
-      "topic": "personal-development",
+      "topic": "skills-mastery",
       "tags": [
         "learning",
         "skills",
@@ -120,7 +120,7 @@
     },
     {
       "id": "interesting-narrative-olaudah-equiano--05",
-      "topic": "personal-development",
+      "topic": "lives-history",
       "tags": [
         "resilience",
         "resourcefulness",
@@ -141,6 +141,1177 @@
         ],
         "answer": 1,
         "explanation": "With no proper materials, he patched the hole with pump leather and tallow, and the boat carried all thirty-two people to safety."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--06",
+      "topic": "lives-history",
+      "tags": [
+        "work-ethic",
+        "community",
+        "contribution",
+        "idleness"
+      ],
+      "title": "When everyone contributes, a community has no beggars",
+      "body": "Describing the Igbo village of his childhood, Equiano recalls that farming was the main occupation and that almost everyone, including women and children, took part. People grew used to work from their earliest years. Because everyone added something to the shared store, he says, idleness was unknown and there were no beggars.\n\nHe was writing partly to show European readers that Africans were industrious people with ordered societies. The practical point still applies to families, teams and neighbourhoods: when each person contributes something, however small, the group is more secure and fewer people are left behind.",
+      "quote": "Everyone contributes something to the common stock; and as we are unacquainted with idleness, we have no beggars.",
+      "locator": "I ¶8",
+      "apply_it": "Look at a group you belong to, such as a household or team. Identify one regular contribution you could add to its 'common stock' this month.",
+      "quiz": {
+        "question": "According to Equiano, why were there no beggars in his home village?",
+        "options": [
+          "The king gave everyone free food",
+          "Beggars were sent to other villages",
+          "Trade with Europeans made everyone rich",
+          "Everyone contributed and idleness was unknown"
+        ],
+        "answer": 3,
+        "explanation": "He says everyone contributed to the common stock and people were unacquainted with idleness."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--07",
+      "topic": "money",
+      "tags": [
+        "contentment",
+        "simplicity",
+        "needs",
+        "wants"
+      ],
+      "title": "Keep your wants few and they are easily met",
+      "body": "Equiano describes his homeland as fertile and generous, a place where people's needs were few and easily supplied. There were few manufactured goods, little use for money, and trade centred on food. He presents this not as poverty but as a life where people had what they needed.\n\nModern life constantly invents new wants. Equiano's memory is a reminder that wealth can also be measured by how little you need to feel satisfied. Keeping your wants modest makes it easier to stay out of debt, save, and stay calm when money is short.",
+      "quote": "As we live in a country where nature is prodigal of her favours, our wants are few and easily supplied",
+      "locator": "I ¶7",
+      "apply_it": "List three things you currently want to buy. For each, ask whether it meets a real need or a manufactured want, and drop one.",
+      "quiz": {
+        "question": "How does Equiano describe his people's wants?",
+        "options": [
+          "Endless and hard to satisfy",
+          "Few and easily supplied",
+          "Met only by imported goods",
+          "Paid for mostly with coins"
+        ],
+        "answer": 1,
+        "explanation": "He says nature was generous, so their wants were few and easily supplied, and money was of little use."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--08",
+      "topic": "relationships",
+      "tags": [
+        "community",
+        "mutual-aid",
+        "neighbours",
+        "generosity"
+      ],
+      "title": "Help your neighbours build, and they'll help you",
+      "body": "In Equiano's village, building a house took little special skill, and the whole neighbourhood turned out to help. The only payment anyone expected in return was a feast. Building a home was a shared task, and the reward was celebration together rather than wages.\n\nThis kind of mutual aid still exists in many communities, from harvest help to rotating savings groups. It builds trust and saves money, and it means nobody faces a big task alone. Taking part when others need help is also how you earn help when your own turn comes.",
+      "quote": "The whole neighbourhood afford their unanimous assistance in building them and in return receive, and expect no other recompense than a feast.",
+      "locator": "I ¶6",
+      "apply_it": "Offer a few hours of help to a neighbour, friend or relative with a practical project this month, and expect nothing more than their company.",
+      "quiz": {
+        "question": "What did neighbours expect in return for helping build a house in Equiano's village?",
+        "options": [
+          "A share of the land",
+          "Payment in coins",
+          "Only a feast",
+          "Free labour for a full year"
+        ],
+        "answer": 2,
+        "explanation": "The whole neighbourhood helped, expecting no recompense except a feast."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--09",
+      "topic": "psychology",
+      "tags": [
+        "prejudice",
+        "equality",
+        "intelligence",
+        "humility"
+      ],
+      "title": "Intelligence has nothing to do with skin colour",
+      "body": "Equiano directly confronts the European claim that Africans were naturally inferior. Any apparent difference, he argues, comes from circumstance: people taken from their homeland don't know the language or customs, are rarely taught, and are crushed by slavery itself, which depresses the mind. He reminds proud Europeans that their own ancestors were once considered uncivilised too.\n\nHis conclusion was radical for his time and remains essential: ability is not determined by appearance. When someone seems to fall short, look first at the opportunities and treatment they have had, before drawing conclusions about who they are.",
+      "quote": "understanding is not confined to feature or colour.",
+      "locator": "I ¶19",
+      "apply_it": "Think of someone you've judged as less capable. Write down what opportunities or support they may have lacked compared with you.",
+      "quiz": {
+        "question": "To what did Equiano attribute the 'apparent inferiority' Europeans claimed to see in Africans?",
+        "options": [
+          "Their situation, including slavery and lack of teaching",
+          "Differences in natural ability",
+          "The climate of Africa",
+          "A lack of interest in learning"
+        ],
+        "answer": 0,
+        "explanation": "He argued it came from their situation: no teaching, unfamiliar customs, and slavery itself depressing the mind."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--10",
+      "topic": "personal-development",
+      "tags": [
+        "honesty",
+        "integrity",
+        "upbringing",
+        "courage"
+      ],
+      "title": "Tell the truth even when it may cost you",
+      "body": "Soon after he was kidnapped, the young Equiano was helping an older enslaved woman look after poultry when he tossed a pebble and accidentally killed a chicken. When she asked about it, he told her exactly what happened, even though he feared a beating. His mother, he explains, had never allowed him to lie.\n\nHis honesty did get him into trouble, and he ran and hid in fear. But the habit his mother built stayed with him through a life in which his trustworthiness later helped him earn his freedom. Values taught at home can survive even the hardest circumstances.",
+      "quote": "I told her the truth, because my mother would never suffer me to tell a lie",
+      "locator": "II ¶2",
+      "apply_it": "Is there something small you've been avoiding admitting? Tell the truth about it today, simply and without excuses.",
+      "quiz": {
+        "question": "Why did young Equiano admit to killing the chicken?",
+        "options": [
+          "He wanted to be punished",
+          "Someone had seen him do it",
+          "He thought it was a joke",
+          "His mother had never allowed him to lie"
+        ],
+        "answer": 3,
+        "explanation": "He told the truth because his mother would never suffer him to tell a lie, even though he feared punishment."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--11",
+      "topic": "relationships",
+      "tags": [
+        "friendship",
+        "kindness",
+        "prejudice",
+        "mentors"
+      ],
+      "title": "Befriend the stranger others ignore",
+      "body": "On his first ship to England, Equiano, a frightened enslaved boy who barely spoke English, was befriended by Richard 'Dick' Baker, an educated American youth a few years older. Dick became his constant companion and teacher for two years, and they shared many hardships. Equiano mourned him for life after his early death.\n\nEquiano notes the painful contradiction that Dick's family held slaves. Even so, he honoured Dick for rising above prejudice to befriend someone who was a stranger, different in colour and enslaved. One person's kindness can change the course of another's life.",
+      "quote": "who, at the age of fifteen, discovered a mind superior to prejudice; and who was not ashamed to notice, to associate with, and to be the friend and instructor of one who was ignorant, a stranger, of a different complexion, and a slave!",
+      "locator": "III ¶2",
+      "apply_it": "Notice someone new or isolated in your workplace, school or community. Introduce yourself and offer to help them find their way.",
+      "quiz": {
+        "question": "What did Equiano most admire in his friend Dick Baker?",
+        "options": [
+          "His great wealth",
+          "A mind superior to prejudice",
+          "His skill as a ship's captain",
+          "His fame in England"
+        ],
+        "answer": 1,
+        "explanation": "He praised Dick for befriending and teaching a stranger of a different colour who was enslaved."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--12",
+      "topic": "psychology",
+      "tags": [
+        "fear",
+        "familiarity",
+        "understanding",
+        "adaptation"
+      ],
+      "title": "Fear of the unfamiliar fades as you come to know it",
+      "body": "When Equiano first met Europeans, as a kidnapped child, he was terrified, even believing they might be spirits or cannibals. After two or three years at sea, he reflected that no danger he later faced had frightened him half as much. That early fear, he realised, came from not understanding them, and it wore away as he learned their language and ways.\n\nMuch fear of new people, places or tasks has the same source. Getting to know something is often the best cure for dreading it. This is not about ignoring real danger, which he certainly faced, but about letting knowledge replace imagination.",
+      "quote": "That fear, however, which was the effect of my ignorance, wore away as I began to know them.",
+      "locator": "IV ¶1",
+      "apply_it": "Pick one person, place or task that makes you uneasy mainly because it's unfamiliar. Take one small step to learn more about it this week.",
+      "quiz": {
+        "question": "What made Equiano's fear of Europeans wear away?",
+        "options": [
+          "Being given a weapon",
+          "Being moved to a different ship",
+          "Coming to know them and their language",
+          "Avoiding all contact with them"
+        ],
+        "answer": 2,
+        "explanation": "He said the fear came from ignorance and faded as he learned to know them."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--13",
+      "topic": "learning",
+      "tags": [
+        "mentors",
+        "learning",
+        "reading",
+        "self-improvement"
+      ],
+      "title": "Learn eagerly from anyone willing to teach you",
+      "body": "Equiano longed to read and write, and he took every chance to learn at sea. A captain's clerk taught him writing and arithmetic. Then Daniel Queen, a well-educated man of about forty who shared his mess, took him under his wing, teaching him to shave and dress hair and to read the Bible, explaining passages he did not understand.\n\nEquiano was enslaved and had no formal schooling, yet he gathered an education from the people around him. Mentors are often closer than we think: colleagues, older relatives, neighbours. Showing eagerness and gratitude makes people more willing to invest in you.",
+      "quote": "Fortunately this man soon became very much attached to me, and took very great pains to instruct me in many things.",
+      "locator": "IV ¶27",
+      "apply_it": "Name one person around you who knows something you want to learn. Ask them a specific question or for half an hour of their time.",
+      "quiz": {
+        "question": "Who was Daniel Queen?",
+        "options": [
+          "A well-educated shipmate who taught Equiano",
+          "The captain who sold Equiano",
+          "A Quaker merchant in Philadelphia",
+          "Equiano's childhood friend in Africa"
+        ],
+        "answer": 0,
+        "explanation": "Daniel Queen took great pains to instruct him, teaching him hairdressing and to read the Bible."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--14",
+      "topic": "mental-strength",
+      "tags": [
+        "courage",
+        "duty",
+        "fear",
+        "acceptance"
+      ],
+      "title": "Accept what you can't control, then give your full effort to your duty",
+      "body": "As a boy during a fierce naval battle with the French, Equiano carried gunpowder to a cannon, watching shipmates fall around him. At first he tried to time his runs to avoid the enemy's fire. Then he reasoned that there was a time appointed for him to die as for him to be born, and let go of the fear of death. After that, he did his job with energy.\n\nObsessing over risks you can't control can freeze you. Accepting uncertainty, while staying sensible, can free you to focus on the part that depends on you.",
+      "quote": "I instantly cast off all fear or thought whatever of death, and went through the whole of my duty with alacrity",
+      "locator": "IV ¶14",
+      "apply_it": "When anxiety about an outcome stalls you, say: 'This part isn't mine to control.' Then name the next action that is, and do it.",
+      "quiz": {
+        "question": "What helped Equiano overcome fear during the sea battle?",
+        "options": [
+          "Hiding below deck until it ended",
+          "Being promised his freedom afterwards",
+          "Drinking rum before the fight",
+          "Accepting that his time to die was not in his control"
+        ],
+        "answer": 3,
+        "explanation": "He reflected that there was a time allotted to die as to be born, cast off his fear and did his duty."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--15",
+      "topic": "personal-development",
+      "tags": [
+        "risk",
+        "mistakes",
+        "learning",
+        "caution"
+      ],
+      "title": "Let a narrow escape teach you to be less foolhardy",
+      "body": "Equiano admits to several reckless adventures driven by curiosity. During the siege of Belle-Isle, he wandered beyond the lines to look around, came under fire, then rode off on a stray horse that nearly carried him over a cliff. He threw himself off just in time and headed back to the ship resolved not to be so foolish again soon. Years later, a visit down a coal pit nearly cost him his life when the coal collapsed.\n\nCuriosity is valuable, but a close call is a warning worth heeding. Wise people notice their near misses and adjust before luck runs out.",
+      "quote": "As soon as I found myself at liberty I made the best of my way for the ship, determined I would not be so foolhardy again in a hurry.",
+      "locator": "IV ¶23",
+      "apply_it": "Recall your most recent near miss, whether at work, on the road or with money. Write down one precaution it suggests and adopt it.",
+      "quiz": {
+        "question": "What did Equiano decide after the runaway horse nearly carried him over a cliff?",
+        "options": [
+          "To join the cavalry",
+          "Not to be so foolhardy again in a hurry",
+          "To explore further the next day",
+          "To buy a horse of his own"
+        ],
+        "answer": 1,
+        "explanation": "He escaped, returned to the ship and determined not to be so foolhardy again in a hurry."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--16",
+      "topic": "mental-strength",
+      "tags": [
+        "grief",
+        "setbacks",
+        "calm",
+        "reflection"
+      ],
+      "title": "Let grief run its course, then think calmly about what to do",
+      "body": "Equiano had served his master, Captain Pascal, faithfully through years of war, and expected to be freed. Instead, Pascal forced him onto a ship and sold him to the West Indies. Equiano wept bitterly. After a time, he writes, his grief exhausted itself, and once the first confusion passed he was able to think more calmly about his situation.\n\nA brutal betrayal deserves grief, and Equiano did not pretend otherwise. But he also did not let despair make his decisions. Allowing strong emotions to pass before planning your next step is a skill that serves in any crisis.",
+      "quote": "In a little time my grief, spent with its own violence, began to subside; and after the first confusion of my thoughts was over I reflected with more calmness on my present condition",
+      "locator": "V ¶1",
+      "apply_it": "After your next major disappointment, allow yourself time to feel it. Then, once calmer, write down three facts about your situation and one possible next step.",
+      "quiz": {
+        "question": "What happened when Equiano expected to be freed by Captain Pascal?",
+        "options": [
+          "Pascal freed him and paid him wages",
+          "He was sent to school in London",
+          "Pascal sold him to the West Indies",
+          "He was made an officer in the navy"
+        ],
+        "answer": 2,
+        "explanation": "Instead of freedom, Pascal forced him onto a ship and sold him, a betrayal Equiano grieved bitterly."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--17",
+      "topic": "personal-development",
+      "tags": [
+        "reputation",
+        "references",
+        "reliability",
+        "career"
+      ],
+      "title": "Build a record of good conduct that others will put in writing",
+      "body": "When Equiano bought his freedom, his former owner, the Quaker merchant Robert King, wrote him a character reference stating that he had always behaved well and done his duty honestly and diligently. Later employers, such as Dr Irving, also gave him certificates of good conduct.\n\nAs a free Black man in a world that often refused to recognise his freedom, such documents mattered. Today references, reviews and recommendations still open doors. They are earned slowly, through years of reliable work, and they travel with you when you move on.",
+      "quote": "The bearer hereof, Gustavus Vassa, was my slave for upwards of three years, during which he has always behaved himself well, and discharged his duty with honesty and assiduity.",
+      "locator": "IX ¶2",
+      "apply_it": "When you finish a job or project, ask the person you worked for whether they would be willing to write a short reference while your work is fresh in their mind.",
+      "quiz": {
+        "question": "What did Robert King's written certificate say about Equiano?",
+        "options": [
+          "He behaved well and did his duty honestly and diligently",
+          "He was skilled only as a cook",
+          "He was free to return to Africa",
+          "He owed King money for his passage"
+        ],
+        "answer": 0,
+        "explanation": "King certified that Equiano had always behaved well and discharged his duty with honesty and assiduity."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--18",
+      "topic": "business",
+      "tags": [
+        "skills",
+        "usefulness",
+        "versatility",
+        "leverage"
+      ],
+      "title": "Wide usefulness gives you value and leverage",
+      "body": "Sold to the Quaker merchant Robert King in Montserrat, Equiano made himself useful in almost every part of the business. He acted as a clerk, received and delivered cargo, kept stores, shaved and dressed his master, cared for his horse and worked on ships. King admitted that Equiano saved him over a hundred pounds a year and was worth more than any of his paid clerks.\n\nEquiano was enslaved, and the profit from his labour went to another man; that injustice is the frame. Yet his range of skills earned him trust and room to trade, which became his path to freedom. Being capable in many areas gives you options.",
+      "quote": "By these means I became very useful to my master; and saved him, as he used to acknowledge, above a hundred pounds a year.",
+      "locator": "V ¶13",
+      "apply_it": "List the different tasks you can do well at work. Pick one adjacent skill that would make you useful in a new area, and start learning it.",
+      "quiz": {
+        "question": "How much did Robert King say Equiano saved him each year?",
+        "options": [
+          "About five pounds",
+          "Nothing; he cost more than he saved",
+          "Exactly forty pounds",
+          "Over a hundred pounds"
+        ],
+        "answer": 3,
+        "explanation": "King acknowledged that Equiano saved him above a hundred pounds a year and was more useful than his clerks."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--19",
+      "topic": "skills-mastery",
+      "tags": [
+        "skills",
+        "trade",
+        "training",
+        "independence"
+      ],
+      "title": "Ask your helpers for a skill, not just a favour",
+      "body": "Back in London as a free man, with thirty-seven guineas saved, Equiano visited the Guerin sisters, old friends who asked how they could help. He offered to work for them as a servant, but, if that didn't suit, he asked to be introduced to someone who could teach him a trade by which he could earn his living. They arranged for him to learn hairdressing.\n\nHelp that builds your skills keeps paying long after the favour itself is forgotten. When people offer support, asking for training, an introduction or a chance to learn can be worth more than money.",
+      "quote": "I would be much obliged to them to recommend me to some person who would teach me a business whereby I might earn my living.",
+      "locator": "IX ¶6",
+      "apply_it": "Next time someone offers to help you, ask for one thing that builds your ability, such as an introduction, training or feedback on your work.",
+      "quiz": {
+        "question": "What did Equiano ask the Guerin sisters to help him with?",
+        "options": [
+          "A loan of thirty-seven guineas",
+          "Finding someone to teach him a trade",
+          "A passage back to Africa",
+          "A place at a university"
+        ],
+        "answer": 1,
+        "explanation": "He asked to be recommended to someone who would teach him a business by which he could earn his living."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--20",
+      "topic": "psychology",
+      "tags": [
+        "self-interest",
+        "bias",
+        "reasoning",
+        "slavery"
+      ],
+      "title": "Self-interest can blind people to the obvious",
+      "body": "Equiano heard slaveholders claim that enslaved people couldn't even earn back their purchase price. He pointed out the contradiction: skilled enslaved coopers, carpenters and masons earned their owners good money, planters paid high prices for them, and the people making this claim fought hardest against abolition. If slaves were unprofitable, why defend the trade so fiercely?\n\nHe concluded that people are blinded by what he called mistaken interest. When someone profits from a belief, they will defend it with arguments that don't hold together. Notice when your own conclusions conveniently match what benefits you.",
+      "quote": "So much are men blinded, and to such inconsistent arguments are they driven by mistaken interest!",
+      "locator": "V ¶14",
+      "apply_it": "Think of a strong opinion you hold that also benefits you. Write the best argument against it, and see if your view still stands.",
+      "quiz": {
+        "question": "What contradiction did Equiano point out in the claim that slaves couldn't earn their cost?",
+        "options": [
+          "Slaves were never actually sold",
+          "Most slaves worked as clerks",
+          "The same people paid high prices and opposed abolition",
+          "The claim came from abolitionists"
+        ],
+        "answer": 2,
+        "explanation": "If slaves were unprofitable, why did planters pay high prices and loudly oppose abolition? Interest blinded them."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--21",
+      "topic": "psychology",
+      "tags": [
+        "greed",
+        "character",
+        "environment",
+        "corruption"
+      ],
+      "title": "Greed and cruel systems can corrupt ordinary people",
+      "body": "Having visited fifteen islands, Equiano found the cruelty of slavery almost the same everywhere. He refused to believe slave dealers were born worse than anyone else. Instead, he blamed avarice: the trade itself hardened people to every feeling of humanity. In other work, he suggested, the same men might have been generous and just.\n\nHis insight still matters. Systems that reward exploitation can turn ordinary people cruel, which is why fighting unjust systems matters as much as condemning individuals. It's also a warning to watch what our own incentives are doing to our character.",
+      "quote": "it is the fatality of this mistaken avarice, that it corrupts the milk of human kindness and turns it into gall.",
+      "locator": "V ¶27",
+      "apply_it": "Look at one way you earn money or get ahead. Ask honestly: is this making me harder or kinder toward others? Note one change if needed.",
+      "quiz": {
+        "question": "What did Equiano blame for the cruelty of slave dealers?",
+        "options": [
+          "Avarice and the trade itself, not inborn wickedness",
+          "The climate of the West Indies",
+          "A lack of religious education alone",
+          "Orders from the British king"
+        ],
+        "answer": 0,
+        "explanation": "He said dealers were not born worse than others; mistaken avarice corrupted their kindness."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--22",
+      "topic": "relationships",
+      "tags": [
+        "generosity",
+        "compassion",
+        "solidarity",
+        "sharing"
+      ],
+      "title": "Share your good fortune with someone who has lost theirs",
+      "body": "On a trading trip to Santa Cruz, Equiano and an elderly enslaved fisherman each brought fruit to sell. Two white men seized their bags. After much pleading, the men returned Equiano's two bags but kept the old man's, which was all he owned. Seeing him wringing his hands and crying, Equiano gave him nearly a third of his own fruit.\n\nEquiano had very little himself and was saving for his freedom. Yet he shared with someone harder hit by the same injustice. Generosity from people who are struggling too can mean the most, and solidarity makes hard times more bearable.",
+      "quote": "The poor old man, wringing his hands, cried bitterly for his loss; and, indeed, he then did look up to God on high, which so moved me with pity for him, that I gave him nearly one third of my fruits.",
+      "locator": "VI ¶4",
+      "apply_it": "Think of someone facing the same hardship you are, but worse. Share something of yours with them this week, whether time, food or money.",
+      "quiz": {
+        "question": "What did Equiano do after the old fisherman's fruit was taken?",
+        "options": [
+          "Reported the men to a magistrate",
+          "Bought the fruit back for him",
+          "Sold his own fruit and kept the profit",
+          "Gave him nearly a third of his own fruit"
+        ],
+        "answer": 3,
+        "explanation": "Moved by the old man's grief, Equiano gave him nearly one third of his own fruit."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--23",
+      "topic": "entrepreneurship",
+      "tags": [
+        "trading",
+        "markets",
+        "reinvestment",
+        "profit"
+      ],
+      "title": "Learn which goods sell where, and reinvest your profits",
+      "body": "As a sailor-trader, Equiano paid close attention to prices in different ports. On one voyage he made nearly three hundred percent profit on four barrels of pork bought in Charleston. When his master gave the crew a larger ship, he was pleased because it meant more space for his own goods, and he invested as much as he could in a bigger cargo.\n\nHis method was simple: know your markets, buy where something is cheap, sell where it is wanted, and put profits back into the next venture. Small traders across the world still build businesses this way.",
+      "quote": "having made near three hundred percent, by four barrels of pork I brought from Charlestown, I laid in as large a cargo as I could",
+      "locator": "VII ¶1",
+      "apply_it": "Pick one item you know well. Compare its price in two different places, online or local, and note where you could buy low and sell higher.",
+      "quiz": {
+        "question": "What did Equiano do after making nearly 300 percent on pork from Charleston?",
+        "options": [
+          "Spent it on new clothes",
+          "Laid in as large a cargo as he could",
+          "Lent it all to the captain",
+          "Stopped trading to rest"
+        ],
+        "answer": 1,
+        "explanation": "He reinvested, laying in as large a cargo as he could for the next voyage to Philadelphia."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--24",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "boundaries",
+        "dignity",
+        "assertiveness",
+        "respect"
+      ],
+      "title": "State your boundaries plainly, even to those with power over you",
+      "body": "Equiano's freedom depended partly on the captain he sailed with. When the captain began treating him rudely, Equiano told him plainly what he thought: he would rather die than be imposed on as other enslaved people were, because life without liberty had lost its savour.\n\nHe knew this was risky. But the captain relied on him and, Equiano says, always grew milder when he spoke up. Calmly stating where your limits are, even to someone more powerful, is often better than silently enduring mistreatment that will only grow.",
+      "quote": "whenever he treated me waspishly I used plainly to tell him my mind, and that I would die before I would be imposed on as other negroes were",
+      "locator": "VI ¶7",
+      "apply_it": "Identify one way someone regularly oversteps with you. Plan a calm, clear sentence stating your limit, and use it next time.",
+      "quiz": {
+        "question": "How did Equiano respond when the captain treated him rudely?",
+        "options": [
+          "He ran away at the next port",
+          "He stayed silent to protect his savings",
+          "He plainly told the captain his mind",
+          "He complained to the captain's wife"
+        ],
+        "answer": 2,
+        "explanation": "He told the captain plainly that he would not be imposed on, even though his hopes depended on the man."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--25",
+      "topic": "personal-development",
+      "tags": [
+        "trustworthiness",
+        "reputation",
+        "honesty",
+        "character"
+      ],
+      "title": "A consistent record of trustworthiness speaks for you",
+      "body": "When Robert King heard rumours that Equiano planned to run away, Equiano asked the captain to answer for him. Had he ever tried to escape? Had he not always returned on time, even at Guadeloupe, when the crew deserted to a French fleet and urged him to join them? The captain confirmed every word, adding that he had secretly tested Equiano several times.\n\nEquiano's steady behaviour, over years, meant that someone else could vouch for him when it mattered. Trust is built in moments nobody seems to be watching.",
+      "quote": "To my no small surprise, and very great joy, the captain confirmed every syllable that I had said",
+      "locator": "VI ¶9",
+      "apply_it": "Think of a commitment you keep only when observed. Keep it this week when nobody is watching.",
+      "quiz": {
+        "question": "Why did the captain defend Equiano against the rumour that he would run away?",
+        "options": [
+          "He had always returned on time, even when he could have fled",
+          "Equiano paid him to speak up",
+          "The captain didn't know Equiano well",
+          "Equiano promised to work without pay"
+        ],
+        "answer": 0,
+        "explanation": "The captain confirmed Equiano's account and said he had tested him and never found him trying to escape."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--26",
+      "topic": "health",
+      "tags": [
+        "overwork",
+        "rest",
+        "health",
+        "burnout"
+      ],
+      "title": "Overworking to finish faster can make you ill",
+      "body": "Eager to shorten voyages, Equiano says he always pushed himself and did double work. On one trip to Georgia, this overwork brought on a severe fever, and he was dangerously ill for eleven days before a skilled doctor helped him recover.\n\nHard work was central to his story, but so was this warning. Constantly running at double effort can leave you unable to work at all. Rest, proper food and medical help when you're unwell are part of being productive, not the opposite of it.",
+      "quote": "I had always exerted myself and did double work, in order to make our voyages as short as possible; and from thus overworking myself while we were at Georgia I caught a fever and ague.",
+      "locator": "VI ¶11",
+      "apply_it": "Check your past week: where did you push past healthy limits? Schedule one proper rest period in the coming week and keep it.",
+      "quiz": {
+        "question": "What did Equiano say caused his fever in Georgia?",
+        "options": [
+          "Eating spoiled pork",
+          "A fight with the captain",
+          "Swimming in cold water",
+          "Overworking himself to shorten the voyages"
+        ],
+        "answer": 3,
+        "explanation": "He said that doing double work to make voyages shorter led to the fever and ague that nearly killed him."
+      },
+      "health": true
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--27",
+      "topic": "psychology",
+      "tags": [
+        "resolutions",
+        "habits",
+        "willpower",
+        "self-awareness"
+      ],
+      "title": "Promises made in a crisis fade when the crisis passes",
+      "body": "Seriously ill, Equiano promised God he would live a better life if he recovered. Once he was well, busy with the ship, his resolve slowly weakened. By the time he stepped ashore at Montserrat, he admits, he had forgotten his resolutions altogether.\n\nHis honesty about this is useful. Many people make sincere vows when frightened or ill, then slip back into old habits once life is normal again. Knowing this tendency, you can turn a crisis resolution into a concrete plan, with reminders and support, while the motivation is still strong.",
+      "quote": "When we were safe arrived at Montserrat, and I had got ashore, I forgot my former resolutions.",
+      "locator": "VI ¶11",
+      "apply_it": "Recall a resolution you made during a difficult time. Turn it into one specific habit with a reminder you'll see daily.",
+      "quiz": {
+        "question": "What happened to the promise Equiano made while ill?",
+        "options": [
+          "He kept it perfectly for life",
+          "He forgot it once he was well and back ashore",
+          "He wrote it into a contract",
+          "The captain made him keep it"
+        ],
+        "answer": 1,
+        "explanation": "As he recovered and got busy, his resolutions declined, and ashore at Montserrat he forgot them."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--28",
+      "topic": "business",
+      "tags": [
+        "trust",
+        "honesty",
+        "customers",
+        "partners"
+      ],
+      "title": "Choose to do business with honest people",
+      "body": "In Philadelphia, Equiano sold most of his goods to Quakers. He found them honest and discreet, and they never tried to take advantage of him, which other buyers often did to an enslaved trader with no legal protection. So he decided from then on to deal with them in preference to anyone else.\n\nFor a small trader, choosing partners is as important as choosing goods. Honest customers and suppliers save time, money and stress. Notice who treats you fairly, and build your business around them.",
+      "quote": "They always appeared to be a very honest discreet sort of people, and never attempted to impose on me; I therefore liked them, and ever after chose to deal with them in preference to any others.",
+      "locator": "VII ¶1",
+      "apply_it": "Review your regular customers, suppliers or partners. Note who consistently deals fairly, and find one way to do more business with them.",
+      "quiz": {
+        "question": "Why did Equiano prefer to trade with Quakers in Philadelphia?",
+        "options": [
+          "They paid the highest prices",
+          "They were his relatives",
+          "They were honest and never tried to cheat him",
+          "They gave him free lodging"
+        ],
+        "answer": 2,
+        "explanation": "He found them honest and discreet, never imposing on him, so he chose to deal with them over others."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--29",
+      "topic": "money",
+      "tags": [
+        "inheritance",
+        "expectations",
+        "false-promises",
+        "disappointment"
+      ],
+      "title": "Don't count on money promised by others",
+      "body": "In Georgia, a silversmith who seemed rich promised Equiano's captain a large sum and then fell gravely ill. The captain, and Equiano with him, nursed the man day and night expecting a reward. When he died, they eagerly opened his trunks and found only a dollar and a half, not even enough to pay for his coffin.\n\nEquiano laughs at their own disappointment. Money promised, expected or hoped for is not money you have. Planning your life around a promised inheritance, payout or deal is a risky way to live.",
+      "quote": "While we thought we were embracing a substance we grasped an empty nothing.",
+      "locator": "VII ¶3",
+      "apply_it": "List any money you are counting on but haven't received. Make a plan that still works if none of it arrives.",
+      "quiz": {
+        "question": "What did the captain and Equiano find in the silversmith's trunks?",
+        "options": [
+          "Only a dollar and a half",
+          "Gold worth hundreds of pounds",
+          "A will leaving everything to the captain",
+          "Bank notes for a large sum"
+        ],
+        "answer": 0,
+        "explanation": "The supposed treasure came to a dollar and a half, not even enough for his coffin."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--30",
+      "topic": "relationships",
+      "tags": [
+        "gratitude",
+        "loyalty",
+        "duty",
+        "decisions"
+      ],
+      "title": "When gratitude and desire pull different ways, weigh both honestly",
+      "body": "Having just bought his freedom, Equiano longed to go to London. But his former master and the captain asked him to keep sailing with them. Out of gratitude for their help, he agreed, entering the crew as a paid sailor.\n\nHe describes the struggle between what he wanted and what he felt he owed. Loyalty to people who have helped us is admirable, but it can also delay our own plans. Equiano chose duty for a time, without abandoning his goal; he reached London later. Recognising both pulls helps you make a choice you can live with.",
+      "quote": "Here gratitude bowed me down; and none but the generous mind can judge of my feelings, struggling between inclination and duty.",
+      "locator": "VII ¶12",
+      "apply_it": "If you feel torn between loyalty to someone and your own goals, write down a time limit for honouring the obligation before pursuing your plan.",
+      "quiz": {
+        "question": "Why did Equiano stay with the vessel after gaining his freedom?",
+        "options": [
+          "He had no money for a passage",
+          "The law required him to stay",
+          "He had given up on going to London",
+          "Out of gratitude to his former master and captain"
+        ],
+        "answer": 3,
+        "explanation": "His benefactors asked him to stay, and gratitude led him to agree despite longing for London."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--31",
+      "topic": "mindfulness",
+      "tags": [
+        "setbacks",
+        "perspective",
+        "luck",
+        "gratitude"
+      ],
+      "title": "A disappointment today may turn out to be a blessing",
+      "body": "Before one voyage, Equiano's captain promised he could carry two bullocks of his own to sell, then went back on his word. To make amends, the captain pressed him to take turkeys instead, which Equiano doubted would survive at sea. On the stormy passage, every bullock died, while his turkeys thrived and sold for nearly three hundred percent profit.\n\nWhat felt like an unfair setback turned out to save him from a heavy loss. We can't always know whether a disappointment is bad news. Holding judgement a little loosely makes setbacks easier to bear.",
+      "quote": "so that in the event it proved a happy circumstance for me that I had not bought the bullocks I intended, for they must have perished with the rest",
+      "locator": "VII ¶16",
+      "apply_it": "Think of a past disappointment that later turned out well. Remind yourself of it the next time a plan is blocked.",
+      "quiz": {
+        "question": "What happened to the bullocks Equiano had wanted to carry?",
+        "options": [
+          "They sold for triple the price",
+          "They all died during the voyage",
+          "They were stolen in port",
+          "They were given to the crew as food"
+        ],
+        "answer": 1,
+        "explanation": "The bullocks died in the storms, while his turkeys did well, so being blocked turned out to be fortunate."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--32",
+      "topic": "productivity",
+      "tags": [
+        "warnings",
+        "escalation",
+        "responsibility",
+        "risk"
+      ],
+      "title": "When you see danger, keep raising the alarm until someone acts",
+      "body": "One evening at sea, Equiano spotted a rock ahead and warned the captain, who said 'very well' and stayed below. As the current carried the ship closer, Equiano went down again. Still the captain didn't come. Only on the third, angry warning did he come on deck. By then it was too late: the ship struck the rocks.\n\nTwo lessons follow. If you see a real risk, don't stop at one polite mention; escalate clearly until it is dealt with. And if you're in charge, take warnings seriously the first time.",
+      "quote": "I therefore went to him again, and told him the vessel was then near a large rock, and desired he would come up with speed.",
+      "locator": "VIII ¶2",
+      "apply_it": "Is there a risk at work or home you mentioned once and then dropped? Raise it again today, clearly and in writing if needed.",
+      "quiz": {
+        "question": "How many times did Equiano warn the captain before he came on deck?",
+        "options": [
+          "Once",
+          "Never; he steered away himself",
+          "Three times",
+          "Ten times over several days"
+        ],
+        "answer": 2,
+        "explanation": "He warned the captain twice, then a third time in anger; by then the ship was about to strike."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--33",
+      "topic": "faith-wisdom",
+      "tags": [
+        "courage",
+        "faith",
+        "superstition",
+        "persistence"
+      ],
+      "title": "Ignore superstitious fear and try again after a setback",
+      "body": "After surviving a shipwreck, Equiano's next vessel was also driven onto rocks within hours of sailing. Some of the crew swore the ship was cursed by spells from Montserrat or by witches among the people on board, and that they would never reach Georgia safely. Equiano refused to be put off. He urged them to stop cursing, trust in God and set out again. Seven days later, after hard work, they arrived safely.\n\nAfter repeated setbacks, it's tempting to believe you're cursed or doomed. Equiano's response was to reject the superstition and keep going.",
+      "quote": "Let us again face the winds and seas, and swear not, but trust to God, and he will deliver us.",
+      "locator": "VIII ¶10",
+      "apply_it": "After your next setback, write down the actual causes you can identify, rather than 'bad luck', and plan your next attempt.",
+      "quiz": {
+        "question": "How did Equiano respond when crew members said the ship was under a spell?",
+        "options": [
+          "He urged them to trust God and sail again",
+          "He agreed and left the ship",
+          "He hired a priest to remove the curse",
+          "He blamed the passengers"
+        ],
+        "answer": 0,
+        "explanation": "He rejected the talk of spells and witches, and they set sail again and arrived safely in Georgia."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--34",
+      "topic": "money",
+      "tags": [
+        "lending",
+        "debt",
+        "planning",
+        "boundaries"
+      ],
+      "title": "Don't lend money you'll soon need yourself",
+      "body": "Free at last and planning to sail for England, Equiano realised he had made a costly mistake: he had lent money to his captain and now needed it back for the journey. When he asked for it, he got only excuses and delays. Since a Black man's testimony was not accepted against a white man in West Indian courts, he had no legal remedy and feared losing both the money and his passage. He eventually recovered it, but only after a struggle.\n\nLending to someone with power over you, or to anyone, can be hard to reverse. Before lending, ask whether you could manage if the money came back late or never.",
+      "quote": "But, alas! I had put a great stumbling block in my own way, by which I was near losing my passage that season to England. I had lent my captain some money, which I now wanted to enable me to prosecute my intentions.",
+      "locator": "IX ¶1",
+      "apply_it": "Before your next loan to anyone, write down when you'll need that money and what you'd do if it isn't repaid on time. Lend only what you can wait for.",
+      "quiz": {
+        "question": "What problem did lending money to his captain cause Equiano?",
+        "options": [
+          "The captain refused to take him to Georgia",
+          "He was charged interest on it",
+          "It made him a target for thieves",
+          "He nearly lost his passage to England"
+        ],
+        "answer": 3,
+        "explanation": "He needed the money for his journey, but the captain shuffled when asked, putting his passage at risk."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--35",
+      "topic": "productivity",
+      "tags": [
+        "hobbies",
+        "idleness",
+        "leisure",
+        "learning"
+      ],
+      "title": "Fill idle hours with something that builds you",
+      "body": "While training as a hairdresser in London, Equiano found that a neighbour taught the French horn. Charmed by the sound, he arranged lessons and soon mastered all three parts. He enjoyed playing in the long evenings, partly because he didn't like being idle. In the same period he also signed up for evening lessons at a local academy to improve his arithmetic.\n\nSpare time can drift into nothing, or it can build skills and joy. Equiano chose pursuits that were both pleasant and improving, a habit that served him all his life.",
+      "quote": "I took great delight in blowing on this instrument, the evenings being long; and besides that I was fond of it, I did not like to be idle, and it filled up my vacant hours innocently.",
+      "locator": "IX ¶6",
+      "apply_it": "Choose one enjoyable skill, such as music, a language or a craft, and give it two of your free evenings this week.",
+      "quiz": {
+        "question": "How did Equiano fill his long evenings while learning hairdressing?",
+        "options": [
+          "Gambling with sailors",
+          "Learning the French horn and attending evening school",
+          "Sleeping to save energy",
+          "Working a second job at the docks"
+        ],
+        "answer": 1,
+        "explanation": "He learned the French horn because he disliked being idle, and also attended evening lessons."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--36",
+      "topic": "money",
+      "tags": [
+        "income",
+        "budgeting",
+        "education",
+        "adjusting"
+      ],
+      "title": "When income falls short of your plans, find a way to earn more",
+      "body": "In London, Equiano worked for a hairdresser and paid teachers to instruct him in the evenings. But his wages were only twelve pounds a year, a third of what he had earned before. With the cost of his lessons and daily needs, his savings of thirty-seven guineas dwindled to one.\n\nRather than fall into debt, he faced the numbers and went back to sea, a trade he knew paid better, to fund his next steps. Tracking how fast your savings are shrinking lets you change course before you run out.",
+      "quote": "My wages, however, which were by two thirds less than I ever had in my life (for I had only 12£ per annum) I soon found would not be sufficient to defray this extraordinary expense of masters, and my own necessary expenses",
+      "locator": "IX ¶6",
+      "apply_it": "Compare your monthly income and spending honestly. If you're drawing down savings, decide this week on one way to earn more or spend less.",
+      "quiz": {
+        "question": "Why did Equiano go back to sea after his time in London?",
+        "options": [
+          "He was ordered to by the navy",
+          "He had been fired by the hairdresser",
+          "His low wages couldn't cover his lessons and expenses",
+          "He wanted to escape his teachers"
+        ],
+        "answer": 2,
+        "explanation": "His £12 a year couldn't cover teachers and expenses; his savings shrank, so he returned to better-paid sea work."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--37",
+      "topic": "mindfulness",
+      "tags": [
+        "perspective",
+        "gratitude",
+        "complaining",
+        "empathy"
+      ],
+      "title": "Your bad luck may be someone else's good fortune",
+      "body": "On one slow voyage, the wind blew against Equiano's ship for days, and the captain grew angry and cursed. A young passenger rebuked him: they had everything they needed on board, and a wind that was contrary for them was probably fair for others who might need it more. Equiano backed him up, saying they had no real cause to complain.\n\nIt's a useful reframe. When events don't go your way, remember that the same circumstances may be helping someone else. It eases resentment and reminds us that the world doesn't revolve around our plans.",
+      "quote": "though the wind was contrary for us, yet it was fair for some others, who, perhaps, stood in more need of it than we.",
+      "locator": "XI ¶5",
+      "apply_it": "Next time something goes against you, such as weather, traffic or a lost bid, name one person it may be helping.",
+      "quiz": {
+        "question": "What did the young passenger say when the captain cursed the contrary wind?",
+        "options": [
+          "It was probably fair for others who needed it more",
+          "The captain should change course at once",
+          "The ship was cursed",
+          "They should pray for a storm"
+        ],
+        "answer": 0,
+        "explanation": "He reminded the captain that they lacked nothing, and the wind was likely fair for others in greater need."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--38",
+      "topic": "personal-development",
+      "tags": [
+        "integrity",
+        "conscience",
+        "temptation",
+        "beliefs"
+      ],
+      "title": "Turn down opportunities that require you to pretend",
+      "body": "In Spain, a priest named Father Vincent took a liking to Equiano and offered him a free university education if he would join the Catholic Church, even suggesting he might rise high in it. Equiano loved learning and admits he was tempted. But he concluded that accepting would be hypocrisy, because he could not honestly share the church's beliefs. He declined, and they parted on friendly terms.\n\nSome opportunities come at the price of pretending to be someone you're not. Equiano's choice shows that keeping faith with your conscience can matter more than an attractive offer.",
+      "quote": "but I began to think that it would be only hypocrisy in me to embrace his offer, as I could not in conscience conform to the opinions of his church.",
+      "locator": "XI ¶4",
+      "apply_it": "Think of a role or offer where you'd have to fake beliefs or values. Ask whether the benefit is worth what it would cost your integrity.",
+      "quiz": {
+        "question": "Why did Equiano refuse Father Vincent's offer of a free education in Spain?",
+        "options": [
+          "He didn't want to learn Spanish",
+          "The university was too far away",
+          "He had already finished his education",
+          "Accepting would have been hypocrisy against his conscience"
+        ],
+        "answer": 3,
+        "explanation": "Though tempted, he felt it would be hypocrisy to accept when he could not in conscience share the church's opinions."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--39",
+      "topic": "relationships",
+      "tags": [
+        "example",
+        "integrity",
+        "teaching",
+        "consistency"
+      ],
+      "title": "People learn from how you live, not just what you say",
+      "body": "On a voyage from London to Jamaica, Equiano befriended a young Miskito prince returning home and taught him the alphabet and Christian teachings. Other crew members mocked the young man until he stopped learning. When Equiano asked why, the prince put a sharp question to him: why did all the educated white men on board, who could read and navigate, swear, lie and get drunk, with Equiano the only exception?\n\nThe prince had noticed the gap between what people claimed and how they lived. Children, colleagues and friends do the same. Your example teaches more than your words.",
+      "quote": "How comes it that all the white men on board who can read and write, and observe the sun, and know all things, yet swear, lie, and get drunk, only excepting yourself?",
+      "locator": "XI ¶9",
+      "apply_it": "Choose one value you often talk about. Check this week whether your daily actions show it as clearly as your words.",
+      "quiz": {
+        "question": "What made the Miskito prince lose interest in Equiano's lessons?",
+        "options": [
+          "He was taken ill with fever",
+          "Seeing educated crewmen swear, lie, drink and mock him",
+          "Equiano stopped teaching him",
+          "He returned home to rule his people"
+        ],
+        "answer": 1,
+        "explanation": "Mocked by the crew, he noticed that educated men behaved badly, which undermined what he was being taught."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--40",
+      "topic": "faith-wisdom",
+      "tags": [
+        "rest",
+        "sabbath",
+        "routine",
+        "balance"
+      ],
+      "title": "Keep a regular day of rest, or the days blur together",
+      "body": "Working on a plantation on the Mosquito Shore, Equiano was troubled that he and his companions no longer kept Sunday as a day of rest and worship. Working had become their Sunday routine, until after a while they could no longer tell one day from another. He says this way of life eventually led him to leave.\n\nWhatever your faith, a regular pause from work gives shape to the week and space for rest, reflection and the people you love. Without it, life can become one long, undifferentiated stretch of labour.",
+      "quote": "working was too much Sunday's employment with ourselves; so much so, that in some length of time we really did not know one day from another.",
+      "locator": "XI ¶9",
+      "apply_it": "Pick one day or half-day each week to step away from paid work. Decide now what you'll do with it to rest and reconnect.",
+      "quiz": {
+        "question": "What happened when Equiano and his companions worked on Sundays?",
+        "options": [
+          "They grew very wealthy",
+          "They were punished by the governor",
+          "They lost track of one day from another",
+          "They became too tired to work at all"
+        ],
+        "answer": 2,
+        "explanation": "Working on Sundays meant that after a while they could not tell one day from another, and he eventually left."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--41",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anger",
+        "self-control",
+        "danger",
+        "calm"
+      ],
+      "title": "Uncontrolled anger is like riding a wild horse with no bridle",
+      "body": "Equiano once sailed with a captain whose rages were terrifying. After beating Equiano repeatedly, the captain set a barrel of gunpowder on deck and held a burning stick over it, threatening to blow up the ship because he feared an approaching vessel was Spanish. Equiano stood guard with an axe for over an hour, praying and choosing not to strike unless he had to. The ship turned out to be English.\n\nEquiano ends the episode with a couplet comparing a person who can't control anger to a rider on a wild, unbridled horse. Anger without restraint endangers everyone, including the angry person.",
+      "quote": "That he who cannot stem his anger's tide Doth a wild horse without a bridle ride.",
+      "locator": "XI ¶14",
+      "apply_it": "Notice your early signs of anger, such as a hot face or clenched jaw. Choose one pause habit, like ten slow breaths, to use when they appear.",
+      "quiz": {
+        "question": "In Equiano's couplet, what is a person who cannot control anger compared to?",
+        "options": [
+          "A rider on a wild horse without a bridle",
+          "A ship without a sail",
+          "A fire without fuel",
+          "A soldier without a sword"
+        ],
+        "answer": 0,
+        "explanation": "He likened someone who cannot stem anger's tide to a person riding a wild horse with no bridle."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--42",
+      "topic": "lives-history",
+      "tags": [
+        "solidarity",
+        "justice",
+        "advocacy",
+        "courage"
+      ],
+      "title": "Stand up for others in the way you once needed",
+      "body": "John Annis, a Black man working as a cook on a ship in London, was seized by William Kirkpatrick, a St Kitts man he had formerly lived with, and carried off to the island. The ship's officers did nothing. Equiano tried everything to free him: he had a writ issued, hired an attorney and sought advice from the anti-slavery campaigner Granville Sharp. His attorney took his money and failed him, and Annis died after brutal treatment.\n\nThe effort failed, but Equiano's reason for acting stands. He had known the loss of liberty himself, so he could not walk away. Our own hard experiences can make us the right people to help others.",
+      "quote": "I proved the only friend he had, who attempted to regain him his liberty if possible, having known the want of liberty myself.",
+      "locator": "X ¶2",
+      "apply_it": "Think of a hardship you've lived through. Find one person facing something similar and offer practical help or a listening ear.",
+      "quiz": {
+        "question": "Why did Equiano try to free John Annis?",
+        "options": [
+          "Annis owed him a large sum",
+          "A court ordered him to help",
+          "He was paid by the ship's captain",
+          "He had known the lack of liberty himself"
+        ],
+        "answer": 3,
+        "explanation": "Having known the want of liberty himself, he was the only friend who tried to regain Annis's freedom."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--43",
+      "topic": "faith-wisdom",
+      "tags": [
+        "friends",
+        "influence",
+        "company",
+        "change"
+      ],
+      "title": "When you want to change, seek out better company",
+      "body": "During a period of spiritual searching in London, Equiano felt that his old companions were holding him back from the life he wanted. He prayed to be separated from them and soon found himself among people of serious faith whose company strengthened him.\n\nEquiano describes this in religious terms, but the principle is widely recognised: the people we spend time with shape our habits and hopes. If you're trying to change, whether to stop drinking, study more or live more honestly, deliberately spending time with people who already live that way makes the change easier.",
+      "quote": "I prayed that the many evils I felt within might be done away, and that I might be weaned from my former carnal acquaintances.",
+      "locator": "X ¶6",
+      "apply_it": "List the five people you spend the most time with. Is there one group or person you could see more of who would support the change you want?",
+      "quiz": {
+        "question": "What did Equiano seek during his period of change in London?",
+        "options": [
+          "To move back to the West Indies",
+          "To leave old companions for better company",
+          "To become wealthy through trade",
+          "To join the navy as an officer"
+        ],
+        "answer": 1,
+        "explanation": "He prayed to be weaned from former acquaintances and was soon connected with people who strengthened his faith."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--44",
+      "topic": "business",
+      "tags": [
+        "whistleblowing",
+        "integrity",
+        "accountability",
+        "fraud"
+      ],
+      "title": "Report wrongdoing even when it costs you",
+      "body": "In 1786 Equiano was appointed Commissary of Provisions for the government expedition to resettle London's Black poor in Sierra Leone. He found that the agent in charge had been paid for clothes, bedding and supplies that were never bought, leaving the settlers short. He reported this to the Navy Commissioners.\n\nHe was dismissed soon after, through the influence of those he exposed. Many of the settlers suffered and died. Speaking up about fraud can carry a personal cost, but Equiano felt he could not stay silent while the government was cheated and his people were left without basic necessities.",
+      "quote": "I could not silently suffer government to be thus cheated, and my countrymen plundered and oppressed, and even left destitute of the necessaries for almost their existence.",
+      "locator": "XII ¶39",
+      "apply_it": "If you've noticed something dishonest at work, write down the facts with dates. Find out the proper channel for reporting it safely.",
+      "quiz": {
+        "question": "What happened after Equiano reported the agent's abuses?",
+        "options": [
+          "He was promoted to governor",
+          "The agent was jailed immediately",
+          "He was dismissed from his post",
+          "He was given the agent's job"
+        ],
+        "answer": 2,
+        "explanation": "He reported the agent to the Navy Commissioners and was soon dismissed through the influence of those he exposed."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--45",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "integrity",
+        "criticism",
+        "self-respect",
+        "justice"
+      ],
+      "title": "Defend yourself with your own record, not by attacking others",
+      "body": "Equiano's dismissal from the Sierra Leone expedition was celebrated by some as a public humiliation. He chose not to dwell on the motives of those who targeted him. Instead, he wished to stand on his own integrity rather than shelter behind other people's wrongdoing. He submitted a formal memorial to the authorities, setting out his service and asking for the money he was owed. He was eventually paid fifty pounds.\n\nWhen you're attacked or treated unfairly, it's tempting to hit back. Equiano's approach was to make a calm, factual case for himself through proper channels.",
+      "quote": "I wish to stand by my own integrity, and not to shelter myself under the impropriety of another",
+      "locator": "XII ¶42",
+      "apply_it": "If you've been unfairly treated, write a short factual summary of your own conduct and what you're asking for, with no attacks on anyone.",
+      "quiz": {
+        "question": "How did Equiano respond to his dismissal?",
+        "options": [
+          "He submitted a formal, factual memorial",
+          "He published insults about the agent",
+          "He left England in protest",
+          "He sued the Queen"
+        ],
+        "answer": 0,
+        "explanation": "He stood on his own integrity and petitioned the authorities, who later paid him fifty pounds."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--46",
+      "topic": "relationships",
+      "tags": [
+        "advocacy",
+        "compassion",
+        "voice",
+        "justice"
+      ],
+      "title": "Use your voice for others, not only for yourself",
+      "body": "In 1788 Equiano presented a petition to Queen Charlotte. He had his own grievances, having just been dismissed from his government post. But he set them aside and wrote that he was not asking pity for his own distress. He asked instead for compassion for the millions of Africans suffering under slavery in the West Indies.\n\nWhen people gain a hearing from the powerful, they often use it for personal complaints. Equiano used his for the many who had no access at all. Whatever influence you have, consider who else needs it more.",
+      "quote": "Yet I do not solicit your royal pity for my own distress; my sufferings, although numerous, are in a measure forgotten.",
+      "locator": "XII ¶54",
+      "apply_it": "Next time you have the ear of someone with influence, such as a manager or official, raise one issue that affects others, not just you.",
+      "quiz": {
+        "question": "In his petition to the Queen, what did Equiano ask for?",
+        "options": [
+          "Payment for his own lost wages",
+          "A royal title",
+          "Permission to trade in London",
+          "Compassion for millions of enslaved Africans"
+        ],
+        "answer": 3,
+        "explanation": "He said he did not ask pity for his own distress but for his African countrymen under the lash in the West Indies."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--47",
+      "topic": "personal-development",
+      "tags": [
+        "reflection",
+        "learning",
+        "experience",
+        "wisdom"
+      ],
+      "title": "An experience matters only if it makes you wiser",
+      "body": "Closing his book, Equiano expects that some readers will find parts of it trivial. He explains that he had trained himself to look for a lesson in even the smallest events, and so every circumstance he recorded mattered to him. What makes any event important, he asks, unless observing it makes us better and wiser?\n\nTwo people can live through the same events, and one learns a great deal while the other learns nothing. The difference is reflection: pausing to ask what an experience has taught you, and letting it change how you act.",
+      "quote": "what makes any event important, unless by its observation we become better and wiser",
+      "locator": "XII ¶72",
+      "apply_it": "At the end of each day this week, write one sentence on what a small event taught you.",
+      "quiz": {
+        "question": "According to Equiano, what makes any event important?",
+        "options": [
+          "How many people saw it happen",
+          "That observing it makes us better and wiser",
+          "Whether it made us richer",
+          "Whether it appeared in the newspapers"
+        ],
+        "answer": 1,
+        "explanation": "He asks what makes any event important unless by observing it we become better and wiser."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--48",
+      "topic": "psychology",
+      "tags": [
+        "prejudice",
+        "generalising",
+        "judgement",
+        "individuals"
+      ],
+      "title": "Judge people as individuals, not by the worst of their group",
+      "body": "After the horrors of the slave ship and a lonely period on a Virginia plantation, Equiano was taken aboard a ship bound for England. To his surprise, everyone on board treated him kindly, quite unlike the white people he had met so far. He began to realise that they were not all alike.\n\nTerrible experiences with some members of a group can lead us to expect the worst from all of them. Equiano's experience shows the value of staying open to evidence. Each person deserves to be judged on their own conduct.",
+      "quote": "everybody on board used me very kindly, quite contrary to what I had seen of any white people before; I therefore began to think that they were not all of the same disposition.",
+      "locator": "III ¶2",
+      "apply_it": "Think of a group you tend to distrust because of bad experiences. Recall one person from that group who treated you well.",
+      "quiz": {
+        "question": "What did Equiano conclude when the crew bound for England treated him kindly?",
+        "options": [
+          "That he was being fattened for sale",
+          "That the ship was heading back to Africa",
+          "That white people were not all of the same disposition",
+          "That kindness was a trick"
+        ],
+        "answer": 2,
+        "explanation": "Their kindness, unlike his earlier experiences, made him realise people were not all of the same disposition."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--49",
+      "topic": "relationships",
+      "tags": [
+        "gratitude",
+        "thanks",
+        "kindness",
+        "relationships"
+      ],
+      "title": "Go back and thank those who helped you in hard times",
+      "body": "When Equiano returned to Georgia, where he had once been gravely ill, the first thing he did was visit Dr Brady, the physician who had cared for him. He thanked him as warmly as he could for his kindness and attention during that illness.\n\nIt's easy to accept help when we're desperate and then forget it once we're well. Equiano's habit of returning to give thanks shows character and strengthens relationships. A personal thank-you, even months or years later, can mean a great deal to the person who helped.",
+      "quote": "As soon as we arrived here I waited on my careful doctor, Mr. Brady, to whom I made the most grateful acknowledgments in my power for his former kindness and attention during my illness.",
+      "locator": "VII ¶2",
+      "apply_it": "Think of someone who helped you through a hard time. Contact them this week to thank them specifically for what they did.",
+      "quiz": {
+        "question": "What did Equiano do as soon as he arrived back in Georgia?",
+        "options": [
+          "Visited and thanked Dr Brady for his past care",
+          "Sold his cargo at the market",
+          "Went to court over his wages",
+          "Looked for the men who had attacked him"
+        ],
+        "answer": 0,
+        "explanation": "He waited on Dr Brady straight away to thank him for his kindness during his illness."
+      }
+    },
+    {
+      "id": "interesting-narrative-olaudah-equiano--50",
+      "topic": "lives-history",
+      "tags": [
+        "ethics",
+        "persuasion",
+        "justice",
+        "abolition"
+      ],
+      "title": "What is cruel is never truly wise",
+      "body": "Near the end of his narrative, Equiano notes that the abuses of slavery in the West Indies had at last reached Parliament. Even some slaveholders, he reports, had petitioned against the trade, recognising that it was as unwise as it was unjust. He sums up: what is inhuman must always be unwise.\n\nEquiano made the moral case against slavery with passion, and he also argued it was economically foolish, so that both conscience and self-interest pointed the same way. In business and public life, practices that degrade people tend to carry hidden costs, and making both the moral and practical case is often the most persuasive.",
+      "quote": "what is inhuman must ever be unwise.",
+      "locator": "XII ¶55",
+      "apply_it": "Is there a practice at your work that is unkind or unfair? List its practical costs as well as its moral ones, and raise both.",
+      "quiz": {
+        "question": "Who, according to Equiano, had petitioned Parliament against the slave trade?",
+        "options": [
+          "Only the King of England",
+          "No one; Parliament acted alone",
+          "The ship captains who carried slaves",
+          "Even some people who held slaves in the West Indies"
+        ],
+        "answer": 3,
+        "explanation": "He says several persons of property in slaves had petitioned against it, seeing it as impolitic as it was unjust."
       }
     }
   ]

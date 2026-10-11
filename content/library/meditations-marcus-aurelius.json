@@ -94,7 +94,7 @@
     },
     {
       "id": "meditations-marcus-aurelius--04",
-      "topic": "mindfulness",
+      "topic": "mental-strength",
       "tags": [
         "stoicism",
         "obstacles",
@@ -215,6 +215,808 @@
         ],
         "answer": 0,
         "explanation": "Because people exist for each other, he advised either instructing them or tolerating them."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--09",
+      "topic": "communication",
+      "tags": [
+        "stoicism",
+        "feedback",
+        "respect"
+      ],
+      "title": "Correct someone's mistake by modelling the right way, not mocking them",
+      "body": "Marcus remembers his teacher Alexander for a small but powerful habit. When someone used a word wrongly or spoke clumsily, Alexander didn't scold or embarrass them. Instead he slipped the correct expression naturally into his reply, or kept the focus on the topic rather than the error.\n\nThis is a kind way to give feedback at work and at home. Public correction makes people defensive; quiet modelling helps them learn while keeping their dignity. The aim is to improve understanding, not to win a point.",
+      "quote": "but dexterously to introduce the very expression which ought to have been used, and in the way of answer or giving confirmation, or joining in an inquiry about the thing itself, not about the word",
+      "apply_it": "Next time someone makes a small mistake in front of you, resist pointing it out. Use the right word or method yourself and see if they pick it up.",
+      "locator": "Book I ¶10",
+      "quiz": {
+        "question": "How did Alexander the grammarian handle people who spoke incorrectly?",
+        "options": [
+          "He corrected them loudly in public",
+          "He ignored the topic entirely",
+          "He used the right expression in his own reply",
+          "He refused to talk to them"
+        ],
+        "answer": 2,
+        "explanation": "Marcus says Alexander avoided fault-finding and instead introduced the right expression naturally in his answer, keeping attention on the subject."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--10",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "busyness",
+        "excuses"
+      ],
+      "title": "Stop using \"I'm too busy\" as an excuse with the people close to you",
+      "body": "From Alexander the Platonist, Marcus learned not to tell people, often or without real need, that he had no time. Nor should he keep excusing himself from his duties to family and friends by pointing to urgent work.\n\nThis was an emperor running a vast state, and still he saw \"I'm busy\" as a habit to watch. Today the phrase is everywhere. Used too often, it tells people they are not a priority, and it hides choices we are actually making about our time.",
+      "quote": "not frequently nor without necessity to say to anyone, or to write in a letter, that I have no leisure",
+      "apply_it": "For one week, replace \"I'm too busy\" with an honest answer: either make a little time, or say clearly what you are choosing instead.",
+      "locator": "Book I ¶12",
+      "quiz": {
+        "question": "What did Marcus learn from Alexander the Platonist?",
+        "options": [
+          "To work longer hours than everyone",
+          "Not to keep saying he had no leisure as an excuse",
+          "To avoid writing letters",
+          "To delegate all family duties"
+        ],
+        "answer": 1,
+        "explanation": "He learned not to say often or needlessly that he had no leisure, nor to excuse neglecting his relationships by citing urgent business."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--11",
+      "topic": "money",
+      "tags": [
+        "stoicism",
+        "contentment",
+        "comfort"
+      ],
+      "title": "Enjoy comforts when you have them; don't miss them when you don't",
+      "body": "Describing his adoptive father, the emperor Antoninus, Marcus admires how he treated life's comforts. When good things were available, he used them without showing off or apologising. When they weren't, he didn't crave them.\n\nThis is a healthy middle path with money and possessions. You don't have to reject nice things, and you don't have to feel guilty about them. The real freedom is not depending on them, so a bad month, a lost job or a simpler season doesn't knock you over.",
+      "quote": "so that when he had them, he enjoyed them without affectation, and when he had them not, he did not want them.",
+      "apply_it": "Name one comfort you enjoy often. Go without it for a day or two and notice: do you enjoy it, or do you depend on it?",
+      "locator": "Book I ¶16",
+      "quiz": {
+        "question": "How did Antoninus relate to comforts, according to Marcus?",
+        "options": [
+          "He refused all comforts as a matter of principle",
+          "He enjoyed them when present and did not want them when absent",
+          "He collected as many as possible",
+          "He felt guilty whenever he used them"
+        ],
+        "answer": 1,
+        "explanation": "Marcus says when he had them he enjoyed them without affectation, and when he had them not, he did not want them."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--12",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "present-moment",
+        "time"
+      ],
+      "title": "The present moment is the only thing you can actually lose",
+      "body": "Marcus offers a striking thought: whether you live three thousand years or thirty, you only ever live in the present, and the present is all you can lose. The past is gone and the future isn't yours yet, so no one can take either from you.\n\nThis makes a long life and a short life more alike than we think. It also points to where our attention belongs. Worry pulls us into the future and regret pulls us into the past, yet the only place we can live, act and enjoy anything is now.",
+      "quote": "For the present is the only thing of which a man can be deprived, if it is true that this is the only thing which he has",
+      "apply_it": "Three times today, pause and name one thing you can see, hear and feel right now. Notice where your mind was before you stopped.",
+      "locator": "Book II ¶14",
+      "quiz": {
+        "question": "Why does Marcus say the longest and shortest lives lose the same thing?",
+        "options": [
+          "Because everyone forgets the past",
+          "Because fame fades equally",
+          "Because each can only lose the present moment",
+          "Because time moves faster when we're old"
+        ],
+        "answer": 2,
+        "explanation": "He argues that no one can lose the past or the future, since they don't possess them; the present is all anyone has and all anyone loses."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--13",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "focus",
+        "goals"
+      ],
+      "title": "Being busy without a clear aim is just another way to waste a life",
+      "body": "When outside events distract you, Marcus suggests giving yourself time to learn something good, and to stop being spun around. But he warns about the opposite trap too.\n\nSome people wear themselves out with constant activity, yet have no clear target for their effort or their thinking. Busyness can feel productive while going nowhere. The fix is a clear sense of what you are working toward, so that each action and thought can point at it.",
+      "quote": "For those too are triflers who have wearied themselves in life by their activity, and yet have no object to which to direct every movement",
+      "apply_it": "Write down in one sentence what your work this week is actually for. Cross off one task that doesn't serve it.",
+      "locator": "Book II ¶7",
+      "quiz": {
+        "question": "Who else does Marcus call \"triflers\", besides people who are easily distracted?",
+        "options": [
+          "People who rest too much",
+          "People who are tired from activity but have no aim",
+          "People who read too many books",
+          "People who work alone"
+        ],
+        "answer": 1,
+        "explanation": "He warns that those who exhaust themselves with activity but have no object to direct every movement toward are also triflers."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--14",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "thoughts",
+        "honesty"
+      ],
+      "title": "Think only thoughts you would not be ashamed to say out loud",
+      "body": "Marcus suggests a test for your inner life. Imagine someone suddenly asks: what are you thinking right now? Could you answer openly, without blushing?\n\nHe warns especially against idle curiosity about what other people are doing, saying and plotting, and against envy, suspicion and spite. These thoughts waste time and pull you away from your own work. If your mind is kind and simple enough to be shared, you'll be calmer and more trustworthy, both to others and to yourself.",
+      "quote": "a man should use himself to think of those things only about which if one should suddenly ask, What hast thou now in thy thoughts? With perfect openness thou mightest, immediately answer, This or That",
+      "apply_it": "Set a few random reminders today. When one goes off, ask: would I be comfortable saying this thought aloud? If not, redirect it.",
+      "locator": "Book III ¶4",
+      "quiz": {
+        "question": "What test does Marcus suggest for your thoughts?",
+        "options": [
+          "Whether they make you money",
+          "Whether you could share them openly if suddenly asked",
+          "Whether others agree with them",
+          "Whether they are original"
+        ],
+        "answer": 1,
+        "explanation": "He says to think only of things which, if someone suddenly asked what you were thinking, you could answer with perfect openness."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--15",
+      "topic": "business",
+      "tags": [
+        "stoicism",
+        "integrity",
+        "ethics"
+      ],
+      "title": "No deal is profitable if it costs you your word or self-respect",
+      "body": "Marcus sets out a clear rule for judging gains. Never count something as good for you if it forces you to break a promise, lose your self-respect, hate or suspect someone, act the hypocrite, or want something you would need to hide behind walls and curtains.\n\nThis is a useful filter for business and money decisions. A contract, side deal or shortcut can look profitable on paper while quietly costing your reputation and peace. If you would need to hide it, it is not a gain.",
+      "quote": "Never value anything as profitable to thyself which shall compel thee to break thy promise, to lose thy self-respect, to hate any man, to suspect, to curse, to act the hypocrite",
+      "apply_it": "Before your next deal or decision, ask: would I be comfortable if everyone could see it? If not, walk away.",
+      "locator": "Book III ¶7",
+      "quiz": {
+        "question": "Which of these does Marcus say makes something NOT truly profitable?",
+        "options": [
+          "If it takes a long time to pay off",
+          "If it requires hard work",
+          "If it forces you to break your promise",
+          "If others profit from it too"
+        ],
+        "answer": 2,
+        "explanation": "He says never value as profitable anything that compels you to break your promise, lose self-respect, hate, suspect, curse or act the hypocrite."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--16",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "praise",
+        "quality"
+      ],
+      "title": "Good work is good whether or not anyone praises it",
+      "body": "Marcus notes that something truly fine does not become better when praised or worse when ignored. Does an emerald lose its worth if nobody admires it? Neither does honest work, kindness or a well-made object.\n\nThis frees you from chasing likes and compliments. Do the job well because it is worth doing well. Praise, when it comes, is pleasant but adds nothing to the quality. Its absence takes nothing away. Measuring your work by its own standard is steadier than measuring it by applause.",
+      "quote": "Neither worse then nor better is a thing made by being praised.",
+      "apply_it": "Finish one piece of work today to a standard you are proud of, and don't show it to anyone for approval.",
+      "locator": "Book IV ¶21",
+      "quiz": {
+        "question": "What example does Marcus use to show that praise doesn't change value?",
+        "options": [
+          "A gold coin",
+          "A famous statue",
+          "A poem",
+          "An emerald"
+        ],
+        "answer": 3,
+        "explanation": "He asks whether an emerald is made worse if it is not praised, and lists gold, ivory and a flower as other examples."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--17",
+      "topic": "business",
+      "tags": [
+        "stoicism",
+        "craft",
+        "work"
+      ],
+      "title": "Love the trade you have learned, however humble it seems",
+      "body": "Marcus advises loving the skill or craft you have learned, even if others see it as small, and finding contentment in it. Then live the rest of your life trusting what you can't control, being neither a tyrant nor a slave to anyone.\n\nMany people undervalue their work because it isn't glamorous: tailoring, farming, bookkeeping, driving. But pride in doing your craft well is a source of dignity that no title can give. Respecting your own work is often the first step to doing it excellently.",
+      "quote": "Love the art, poor as it may be, which thou hast learned, and be content with it",
+      "apply_it": "List three things your work makes possible for other people. Read the list before your next shift.",
+      "locator": "Book IV ¶33",
+      "quiz": {
+        "question": "How does Marcus say you should treat the craft you have learned?",
+        "options": [
+          "Love it and be content with it, even if it is poor",
+          "Leave it for something more respected",
+          "Hide it from others",
+          "Only practise it for money"
+        ],
+        "answer": 0,
+        "explanation": "He says to love the art you've learned, poor as it may be, and be content with it, being neither tyrant nor slave of anyone."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--18",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "adversity",
+        "reframing"
+      ],
+      "title": "Bearing a misfortune well is itself a piece of good fortune",
+      "body": "Marcus imagines himself saying, \"How unlucky I am that this happened.\" He corrects it: rather, \"How lucky I am that, though this happened, I am still unbroken, not crushed by the present nor afraid of the future.\"\n\nAnyone could have suffered the same event, he says, but not everyone would have stayed steady. The setback cannot stop you being just, brave, modest and wise. So when something goes wrong, the question changes from \"why me?\" to \"how well can I carry this?\"",
+      "quote": "not that this is a misfortune, but that to bear it nobly is good fortune.",
+      "apply_it": "Think of a recent setback. Write one sentence starting \"I am fortunate that, even though this happened, I...\"",
+      "locator": "Book IV ¶52",
+      "quiz": {
+        "question": "How does Marcus reframe \"Unhappy am I because this has happened to me\"?",
+        "options": [
+          "\"Others have it worse, so I should stop complaining\"",
+          "\"I will get revenge on those responsible\"",
+          "\"This was bound to happen to me\"",
+          "\"Happy am I, though this happened, because I remain unbroken\""
+        ],
+        "answer": 3,
+        "explanation": "He says: not so, but happy am I, though this happened, because I continue free from pain, neither crushed by the present nor fearing the future."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--19",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "motivation",
+        "mornings"
+      ],
+      "title": "When you don't want to get up, remember what you were made to do",
+      "body": "Marcus, ruler of an empire, admits he sometimes didn't want to leave his warm bed. His answer to himself: I am getting up to do the work of a human being. Was I made just to lie under the blankets?\n\nHe points to ants, bees and birds all busy with their part of the world. Rest is necessary, he grants, but nature sets limits on rest just as on eating, and we often exceed them while falling short in our work. People who love their craft forget to eat to perfect it. Do you value your own purpose that much?",
+      "quote": "In the morning when thou risest unwillingly, let this thought be present⁠—I am rising to the work of a human being.",
+      "apply_it": "Write one line tonight about what tomorrow's work is for. Read it when your alarm goes off.",
+      "locator": "Book V ¶1",
+      "quiz": {
+        "question": "What does Marcus tell himself when he rises unwillingly?",
+        "options": [
+          "I will rest more tomorrow",
+          "I am rising to the work of a human being",
+          "Everyone else is still asleep",
+          "The day will be over soon"
+        ],
+        "answer": 1,
+        "explanation": "He reminds himself: I am rising to the work of a human being. He then compares himself to ants, bees and birds doing their work."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--20",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "character",
+        "excuses"
+      ],
+      "title": "You may lack talent, but no one lacks the ability to be honest and patient",
+      "body": "Marcus admits people might not admire his quick wit. Fine, he says, but there are many qualities nobody can claim they weren't born with: sincerity, seriousness, endurance, contentment with little, kindness, frankness, and avoiding pettiness.\n\nThese are fully in your power, with no excuse of natural limits, and yet we often fall short of them by choice. You may never be the cleverest person in the room. You can still be the most reliable, the most patient or the most honest, starting today.",
+      "quote": "Show those qualities then which are altogether in thy power, sincerity, gravity, endurance of labour, aversion to pleasure, contentment with thy portion and with few things, benevolence, frankness",
+      "apply_it": "Pick one quality from Marcus's list, such as sincerity, patience or kindness, and practise it on purpose in one situation today.",
+      "locator": "Book V ¶5",
+      "quiz": {
+        "question": "What is Marcus's point about qualities like sincerity and benevolence?",
+        "options": [
+          "Only the gifted can have them",
+          "They are fully in our power, so there's no excuse",
+          "They matter less than intelligence",
+          "They come naturally with age"
+        ],
+        "answer": 1,
+        "explanation": "He says these qualities are altogether in our power; there is no excuse of natural incapacity, yet we remain below the mark by choice."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--21",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "generosity",
+        "kindness"
+      ],
+      "title": "Do good like a vine grows grapes, without keeping score",
+      "body": "Marcus describes three kinds of people who help others. The first puts the favour on record and expects repayment. The second doesn't say so, but privately thinks of the other person as owing him. The third barely notices what he did.\n\nThat third person is like a vine that produces grapes and asks for nothing more, then simply grows grapes again next season. Kindness that keeps accounts tends to turn into resentment. Kindness done for its own sake keeps flowing.",
+      "quote": "but he goes on to another act, as a vine goes on to produce again the grapes in season.",
+      "apply_it": "Do one helpful thing today and tell nobody. Notice if you're tempted to mention it.",
+      "locator": "Book V ¶6",
+      "quiz": {
+        "question": "In Marcus's comparison, what does the third type of helper resemble?",
+        "options": [
+          "A merchant recording debts",
+          "A judge weighing favours",
+          "A vine producing grapes",
+          "A soldier awaiting reward"
+        ],
+        "answer": 2,
+        "explanation": "He compares the best helper to a vine that produces grapes and seeks nothing more, then goes on to produce again in season."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--22",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "habits",
+        "setbacks"
+      ],
+      "title": "When you slip, don't despair; just come back to your practice",
+      "body": "Marcus writes that you should not be disgusted, discouraged or frustrated when you fail to live up to your principles. When you fall short, return. Be content if most of what you do is in line with them.\n\nHe adds that you should return to philosophy not as to a harsh schoolmaster but as to a soothing remedy for sore eyes. This is wise advice for any new habit: missing one day doesn't ruin it, but quitting in disgust does. Kind, quick returns build lasting change.",
+      "quote": "but when thou hast failed, return back again, and be content if the greater part of what thou doest is consistent with man’s nature",
+      "apply_it": "Think of a habit you dropped. Restart it today in its smallest form, without punishing yourself for the gap.",
+      "locator": "Book V ¶9",
+      "quiz": {
+        "question": "How does Marcus say you should return to philosophy after failing?",
+        "options": [
+          "Like a student to a strict master",
+          "Like someone applying a soothing remedy",
+          "Only after a long break",
+          "With a public confession"
+        ],
+        "answer": 1,
+        "explanation": "He says don't return to philosophy as to a master, but like those with sore eyes who apply a sponge and egg, as a comforting remedy."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--23",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "thoughts",
+        "character"
+      ],
+      "title": "Your mind takes on the colour of the thoughts you repeat",
+      "body": "Marcus says that the kind of thoughts you habitually think will shape the character of your mind, because the soul is dyed by its thoughts. Like cloth soaked in colour, the mind slowly takes on whatever you keep it steeped in.\n\nSo choose what you repeat. He suggests one example: wherever it is possible to live, it is possible to live well. Habitual complaint, envy or fear will stain your outlook over time. Habitual gratitude, purpose and calm will colour it too.",
+      "quote": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts.",
+      "apply_it": "Choose one short thought you want to \"dye\" your mind with this week. Write it somewhere you'll see it daily.",
+      "locator": "Book V ¶16",
+      "quiz": {
+        "question": "What image does Marcus use for how habitual thoughts shape the mind?",
+        "options": [
+          "A river carving stone",
+          "A seed growing into a tree",
+          "The soul being dyed",
+          "A house being built"
+        ],
+        "answer": 2,
+        "explanation": "He says the soul is dyed by the thoughts, so your habitual thoughts become the character of your mind."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--24",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "composure",
+        "recovery"
+      ],
+      "title": "When something throws you off balance, return to calm as soon as you can",
+      "body": "Marcus accepts that circumstances will sometimes knock you out of tune. The point is not to stay there longer than you have to. Return to yourself quickly.\n\nHe adds that the more often you come back to your centre, the more mastery you gain over it. Composure, in other words, is less about never getting upset and more about how fast you recover. Each return is practice, and practice makes the next return easier.",
+      "quote": "When thou hast been compelled by circumstances to be disturbed in a manner, quickly return to thyself and do not continue out of tune longer than the compulsion lasts",
+      "apply_it": "After the next upsetting moment, try one minute of slow breathing, then ask, \"What is my next useful step?\"",
+      "locator": "Book VI ¶11",
+      "quiz": {
+        "question": "According to Marcus, how do you gain more mastery over your inner harmony?",
+        "options": [
+          "By avoiding all difficult situations",
+          "By continually returning to it",
+          "By suppressing every feeling",
+          "By waiting until others calm down"
+        ],
+        "answer": 1,
+        "explanation": "He says you will have more mastery over the harmony by continually recurring to it, and you shouldn't stay out of tune longer than necessary."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--25",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "conflict",
+        "forgiveness"
+      ],
+      "title": "Treat accidental knocks like a sparring partner's: step aside without grudges",
+      "body": "Marcus uses an image from the gym. If a training partner scratches you or bumps your head, you don't get offended or treat him as a traitor afterwards. You just keep an eye on him and quietly move out of his way, without hatred or suspicion.\n\nHe suggests doing the same in the rest of life. Many slights from colleagues, relatives and neighbours are like knocks in practice. You can protect yourself, even keep your distance, without carrying resentment around.",
+      "quote": "For it is in our power, as I said, to get out of the way, and to have no suspicion nor hatred.",
+      "apply_it": "Think of a recent minor slight. Decide on one practical way to avoid a repeat, then consciously let the grudge go.",
+      "locator": "Book VI ¶20",
+      "quiz": {
+        "question": "How does Marcus suggest we treat someone who hurts us in a gymnastic exercise?",
+        "options": [
+          "Quietly get out of their way, without suspicion or hatred",
+          "Report them to the trainer",
+          "Hit back to teach them",
+          "Never train with anyone again"
+        ],
+        "answer": 0,
+        "explanation": "He says we don't get offended or suspect them as treacherous; we guard ourselves and quietly get out of their way, without hatred."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--26",
+      "topic": "learning",
+      "tags": [
+        "stoicism",
+        "open-mind",
+        "truth"
+      ],
+      "title": "Be glad when someone proves you wrong; it means you've found the truth",
+      "body": "Marcus writes that if anyone can show him that his thinking or action is wrong, he will happily change, because he is looking for the truth, and nobody was ever harmed by the truth. The person harmed is the one who stays stuck in error.\n\nThis attitude is rare and powerful. Most of us defend our views out of pride. Treating correction as a gift turns arguments into learning, and makes people more willing to tell you what you need to hear.",
+      "quote": "If any man is able to convince me and show me that I do not think or act right, I will gladly change; for I seek the truth by which no man was ever injured.",
+      "apply_it": "In your next disagreement, ask the other person, \"What would change my mind here?\" and listen to the answer.",
+      "locator": "Book VI ¶21",
+      "quiz": {
+        "question": "According to Marcus, who is harmed in a disagreement about the truth?",
+        "options": [
+          "The one who changes his mind",
+          "The one who wins the argument",
+          "Nobody is ever harmed",
+          "The one who stays in his error and ignorance"
+        ],
+        "answer": 3,
+        "explanation": "He says no one was ever injured by the truth; the person injured is the one who abides in error and ignorance."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--27",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "appreciation",
+        "gratitude"
+      ],
+      "title": "When you need cheering up, think about the good qualities of people around you",
+      "body": "Marcus suggests a simple mood lift. When you want to feel glad, think of the strengths of the people you live and work with: one person's energy, another's modesty, a third's generosity.\n\nNothing delights so much, he says, as seeing good character in the people near us. It is easy to keep a mental list of others' faults. Keeping a list of their virtues makes you happier and kinder, and it often makes them better too, because people tend to rise to what is noticed in them.",
+      "quote": "When thou wishest to delight thyself, think of the virtues of those who live with thee",
+      "apply_it": "Write down one good quality of three people you see every day. Tell one of them what you noticed.",
+      "locator": "Book VI ¶47",
+      "quiz": {
+        "question": "What does Marcus suggest thinking about when you want to delight yourself?",
+        "options": [
+          "Your own past successes",
+          "Future plans and rewards",
+          "The virtues of the people who live with you",
+          "Famous heroes of history"
+        ],
+        "answer": 2,
+        "explanation": "He says to think of the virtues of those who live with you, such as one's activity, another's modesty, a third's liberality."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--28",
+      "topic": "communication",
+      "tags": [
+        "stoicism",
+        "listening",
+        "empathy"
+      ],
+      "title": "Listen so closely that you understand what the speaker really means",
+      "body": "Marcus gives himself a short instruction: get used to paying careful attention to what others say, and as far as possible, enter into the speaker's mind.\n\nMuch conflict comes from half-listening: preparing our reply while the other person is still talking. Real listening means trying to see things from where they stand, what they mean, what they fear, what they want. People feel the difference, and conversations become more honest and productive.",
+      "quote": "Accustom thyself to attend carefully to what is said by another, and as much as it is possible, be in the speaker’s mind.",
+      "apply_it": "In your next conversation, before you reply, summarise what the other person said in your own words and ask if you got it right.",
+      "locator": "Book VI ¶52",
+      "quiz": {
+        "question": "What does Marcus aim for when someone speaks to him?",
+        "options": [
+          "To prepare a clever reply",
+          "To be in the speaker's mind as far as possible",
+          "To find errors in their argument",
+          "To keep the conversation short"
+        ],
+        "answer": 1,
+        "explanation": "He tells himself to attend carefully to what is said and, as much as possible, be in the speaker's mind."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--29",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "help",
+        "teamwork"
+      ],
+      "title": "Don't be ashamed to ask for help to do your part",
+      "body": "Marcus compares duty to a soldier storming a city wall. If you are injured and can't climb the battlements alone, but can with someone's help, then take the help. The goal is to get the job done, not to do it unaided.\n\nPride often stops us from asking for support, whether with studies, money, health or work. Yet accepting help is not weakness when the task matters. What counts is that your part gets done.",
+      "quote": "Be not ashamed to be helped; for it is thy business to do thy duty like a soldier in the assault on a town.",
+      "apply_it": "Name one task you've been struggling with alone. Ask one person for specific help with it this week.",
+      "locator": "Book VII ¶7",
+      "quiz": {
+        "question": "In Marcus's example, what should a lame soldier do if he can't climb the wall alone?",
+        "options": [
+          "Give up the assault",
+          "Wait until he heals",
+          "Pretend he isn't injured",
+          "Accept help from another to get up"
+        ],
+        "answer": 3,
+        "explanation": "He asks: if being lame you can't mount the battlements alone but with help it is possible, why not? Don't be ashamed to be helped."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--30",
+      "topic": "mindfulness",
+      "tags": [
+        "stoicism",
+        "gratitude",
+        "contentment"
+      ],
+      "title": "Value what you have by imagining life without it",
+      "body": "Marcus advises thinking less about what you lack and more about what you have. Pick the best of your possessions, relationships and circumstances, and consider how much you would long for them if they were gone.\n\nBut he adds a careful warning: don't become so attached that losing them would shatter you. The aim is appreciation without clinging. Gratitude makes the present richer; holding things loosely makes the future less frightening.",
+      "quote": "Think not so much of what thou hast not as of what thou hast",
+      "apply_it": "Write down three things you have now that you would badly miss. Spend a minute appreciating each.",
+      "locator": "Book VII ¶27",
+      "quiz": {
+        "question": "What caution does Marcus add to his gratitude exercise?",
+        "options": [
+          "Don't overvalue things so much that losing them would disturb you",
+          "Don't tell anyone what you have",
+          "Don't think about the past",
+          "Don't own more than three things"
+        ],
+        "answer": 0,
+        "explanation": "He says to take care that you don't, through being so pleased with them, overvalue them so as to be disturbed if you lose them."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--31",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "pain",
+        "resilience"
+      ],
+      "title": "Pain has limits, so don't make it bigger with your imagination",
+      "body": "Marcus, who lived with chronic illness, borrows a thought from Epicurus: pain is neither unbearable nor endless, if you remember that it has limits and add nothing to it in imagination.\n\nHe also notices that many small discomforts, like drowsiness, heat or poor appetite, are forms of pain we can quietly bear. This isn't advice to ignore symptoms or skip a doctor. It is a mental habit: notice the sensation as it is, without piling on fears about how long it will last or what it means.",
+      "quote": "pain is neither intolerable nor everlasting, if thou bearest in mind that it has its limits, and if thou addest nothing to it in imagination",
+      "apply_it": "Next time you feel a minor ache or discomfort, describe it plainly to yourself, in the present tense, without predicting the future.",
+      "locator": "Book VII ¶65",
+      "quiz": {
+        "question": "Whose remark about pain does Marcus quote?",
+        "options": [
+          "Socrates",
+          "Epicurus",
+          "Plato",
+          "Seneca"
+        ],
+        "answer": 1,
+        "explanation": "He cites Epicurus: pain is neither intolerable nor everlasting if you remember its limits and add nothing to it in imagination."
+      },
+      "health": true
+    },
+    {
+      "id": "meditations-marcus-aurelius--32",
+      "topic": "productivity",
+      "tags": [
+        "stoicism",
+        "priorities",
+        "character"
+      ],
+      "title": "No time to read? You still have time to work on your character",
+      "body": "Marcus, short on time as emperor, tells himself: you may not have leisure to read. But you do have time to check your arrogance, to rise above pleasure and pain, to stop chasing fame, and to avoid being annoyed by thoughtless, ungrateful people, and even to care for them.\n\nBusy seasons are not an excuse to pause personal growth. The most important practice doesn't need a quiet afternoon; it happens in how you handle the next conversation, task or disappointment.",
+      "quote": "Thou hast not leisure [or ability] to read. But thou hast leisure [or ability] to check arrogance",
+      "apply_it": "On your busiest day this week, choose one character goal (patience, humility, kindness) and practise it in the middle of the rush.",
+      "locator": "Book VIII ¶8",
+      "quiz": {
+        "question": "What does Marcus say you still have leisure for, even without time to read?",
+        "options": [
+          "Long holidays",
+          "Checking arrogance and not being vexed at ungrateful people",
+          "Writing books",
+          "Studying philosophy at night"
+        ],
+        "answer": 1,
+        "explanation": "He says even if you can't read, you have leisure to check arrogance, rise above pleasure and pain and fame, and not be vexed at ungrateful people."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--33",
+      "topic": "money",
+      "tags": [
+        "stoicism",
+        "wealth",
+        "humility"
+      ],
+      "title": "Accept wealth without arrogance, and be ready to let it go",
+      "body": "This is one of the shortest lines in the Meditations, written by a man who controlled the wealth of an empire: take prosperity without becoming proud, and be ready to let it go.\n\nIt is a complete money philosophy in a sentence. There's no shame in doing well. But arrogance about money damages relationships, and clinging to it makes every downturn a crisis. Hold your gains gratefully and loosely, and they can't easily hold you.",
+      "quote": "Receive wealth or prosperity without arrogance; and be ready to let it go.",
+      "apply_it": "Next time you receive money or a win, do one humble thing with it, such as thanking someone or sharing a part, and remind yourself it may not last.",
+      "locator": "Book VIII ¶35",
+      "quiz": {
+        "question": "What two attitudes does Marcus recommend toward wealth?",
+        "options": [
+          "Save it all and never spend",
+          "Give it all away immediately",
+          "Receive it without arrogance and be ready to let it go",
+          "Avoid it because it corrupts"
+        ],
+        "answer": 2,
+        "explanation": "He writes: receive wealth or prosperity without arrogance, and be ready to let it go."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--34",
+      "topic": "mental-strength",
+      "tags": [
+        "stoicism",
+        "anxiety",
+        "one-step"
+      ],
+      "title": "Face today's trouble alone, not your whole life's troubles at once",
+      "body": "Marcus warns against trying to picture all the difficulties your life might hold. Instead, take each moment and ask: what exactly is unbearable about this? You'll usually be embarrassed to name anything.\n\nRemember too that neither the past nor the future weighs on you, only the present, and the present shrinks to something manageable when you draw a line around it. When worries pile up, narrow your view to this hour, this task, this step.",
+      "quote": "Do not disturb thyself by thinking of the whole of thy life.",
+      "apply_it": "When you feel overwhelmed, write down only what needs doing in the next hour. Do the first item.",
+      "locator": "Book VIII ¶38",
+      "quiz": {
+        "question": "What question does Marcus suggest asking about a present difficulty?",
+        "options": [
+          "Who caused this?",
+          "How long will it last?",
+          "Why does this always happen to me?",
+          "What is there in this that is intolerable and past bearing?"
+        ],
+        "answer": 3,
+        "explanation": "He suggests asking what in this is intolerable and past bearing; you will be ashamed to confess anything is."
+      },
+      "health": true
+    },
+    {
+      "id": "meditations-marcus-aurelius--35",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "facts",
+        "overthinking"
+      ],
+      "title": "Stick to the facts you were told, and don't add the story yourself",
+      "body": "Marcus gives an example. Someone reports that a person has spoken badly of you. That is what you were told; you were not told that you have been harmed. You see your child is ill; you do not see that the child is in danger.\n\nHis advice is to stay with the first, plain facts and not add frightening interpretations from inside your own head. Much distress comes from the extra layer we invent. Separating what happened from what we fear protects us from needless panic and anger.",
+      "quote": "This has been reported; but that thou hast been injured, that has not been reported.",
+      "apply_it": "When you hear worrying news, write two lines: \"What I actually know\" and \"What I am adding.\" Act on the first.",
+      "locator": "Book VIII ¶51",
+      "quiz": {
+        "question": "In Marcus's example, what has NOT been reported when someone speaks ill of you?",
+        "options": [
+          "That you have been injured",
+          "That someone spoke",
+          "Who the speaker was",
+          "That the report was made"
+        ],
+        "answer": 0,
+        "explanation": "He says it was reported that someone speaks ill of you, but that you have been injured was not reported. Don't add it yourself."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--36",
+      "topic": "relationships",
+      "tags": [
+        "stoicism",
+        "responsibility",
+        "justice"
+      ],
+      "title": "You can do wrong by failing to act, not only by acting",
+      "body": "In one short line, Marcus notes that a person often acts unjustly by not doing something, not only by doing something.\n\nWe usually judge ourselves by the harm we avoid causing. But keeping silent when someone is mistreated, not helping when it is easy, or not paying back what we owe are also ways of failing others. Being a good person includes the useful things we choose to do, not just the bad things we avoid.",
+      "quote": "He often acts unjustly who does not do a certain thing; not only he who does a certain thing.",
+      "apply_it": "Think of one thing you've been putting off that someone is counting on you for. Do it, or tell them honestly when you will.",
+      "locator": "Book IX ¶5",
+      "quiz": {
+        "question": "What is Marcus's point in this passage?",
+        "options": [
+          "Only actions can be unjust",
+          "Doing nothing is always the safe choice",
+          "Failing to act can also be unjust",
+          "Injustice only matters in law courts"
+        ],
+        "answer": 2,
+        "explanation": "He says a person often acts unjustly by not doing a certain thing, not only by doing something."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--37",
+      "topic": "business",
+      "tags": [
+        "stoicism",
+        "decisions",
+        "advice"
+      ],
+      "title": "When you can see the way, go; when you can't, ask the best advisers",
+      "body": "Marcus asks why we waste energy on suspicious fear when we can simply work out what needs to be done. If the path is clear, take it calmly without looking back. If it isn't, stop and consult the best advisers you can find.\n\nIf obstacles appear, keep going as best you can, holding to what seems right. And if you must fail, fail while attempting the right thing. Someone who works this way, he says, is both calm and active, cheerful and collected.",
+      "quote": "And if thou seest clear, go by this way content, without turning back: but if thou dost not see clear, stop and take the best advisers.",
+      "apply_it": "For a decision you're stuck on, name the two most knowledgeable people you could ask. Contact one this week.",
+      "locator": "Book X ¶13",
+      "quiz": {
+        "question": "What does Marcus advise when you cannot see clearly what to do?",
+        "options": [
+          "Guess and move fast",
+          "Wait for the problem to solve itself",
+          "Follow what most people do",
+          "Stop and take the best advisers"
+        ],
+        "answer": 3,
+        "explanation": "He says if you don't see clear, stop and take the best advisers; if you do, go on content without turning back."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--38",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stoicism",
+        "anger",
+        "self-control"
+      ],
+      "title": "Your anger usually hurts you more than the thing that caused it",
+      "body": "In a list of rules for handling anger, Marcus includes this one: consider how much more pain our anger and irritation bring us than the actions we are angry about.\n\nThe rude comment lasts seconds; replaying it can last days. The late payment is a problem; the rage about it ruins your sleep. Elsewhere in the same list he says gentleness takes more strength than temper. Noticing the cost of your anger is often enough to loosen its grip.",
+      "quote": "consider how much more pain is brought on us by the anger and vexation caused by such acts than by the acts themselves",
+      "apply_it": "Next time you feel angry, ask: what is this anger costing me right now? Write the answer down.",
+      "locator": "Book XI ¶33",
+      "quiz": {
+        "question": "What does Marcus say causes us more pain than the offending acts themselves?",
+        "options": [
+          "The anger and vexation they cause us",
+          "The opinions of other people",
+          "The cost of fixing the damage",
+          "The memory of past wrongs"
+        ],
+        "answer": 0,
+        "explanation": "He says to consider how much more pain is brought on us by our anger and vexation than by the acts we are angry at."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--39",
+      "topic": "personal-development",
+      "tags": [
+        "stoicism",
+        "self-respect",
+        "approval"
+      ],
+      "title": "We love ourselves most, yet care more what others think of us",
+      "body": "Marcus is puzzled by a human contradiction. Everyone loves himself more than anyone else, yet values other people's opinion of him more than his own.\n\nHe notes that if we were told to think nothing we wouldn't say aloud, we couldn't last a day, which shows how much we fear our neighbours' judgement. The lesson is to give your own considered judgement more weight. If you are living well by your own honest standards, other people's opinions can be heard without being obeyed.",
+      "quote": "I have often wondered how it is that every man loves himself more than all the rest of men, but yet sets less value on his own opinion of himself than on the opinion of others.",
+      "apply_it": "Write down one choice you made mainly to impress others. Ask what you would have chosen by your own standards.",
+      "locator": "Book XII ¶6",
+      "quiz": {
+        "question": "What contradiction does Marcus point out?",
+        "options": [
+          "We hate ourselves but love others",
+          "We value money more than friends",
+          "We love ourselves most yet value others' opinion of us more than our own",
+          "We trust strangers more than family"
+        ],
+        "answer": 2,
+        "explanation": "He wonders how every man loves himself more than others yet values others' opinion of him more than his own."
+      }
+    },
+    {
+      "id": "meditations-marcus-aurelius--40",
+      "topic": "skills-mastery",
+      "tags": [
+        "stoicism",
+        "practice",
+        "skills"
+      ],
+      "title": "Keep practising the things you think you can't do",
+      "body": "Marcus tells himself to practise even the things he despairs of mastering. He points to the left hand: clumsy at most tasks through lack of use, yet it holds a horse's reins more firmly than the right, because it has been trained for that.\n\nAbility follows practice more than talent. The maths you're \"bad at\", the language you \"can't learn\", the public speaking you avoid: these are often just untrained hands. Steady practice can turn a weakness into a reliable strength.",
+      "quote": "Practise thyself even in the things which thou despairest of accomplishing.",
+      "apply_it": "Pick one skill you believe you're bad at. Practise it for ten minutes a day for the next week.",
+      "locator": "Book XII ¶9",
+      "quiz": {
+        "question": "Why does Marcus mention the left hand?",
+        "options": [
+          "It is weaker and should be avoided",
+          "It shows rest is better than work",
+          "It proves some skills can't be learned",
+          "It holds the bridle better than the right because it has been practised"
+        ],
+        "answer": 3,
+        "explanation": "He notes the left hand, clumsy in other things for lack of practice, holds the bridle more vigorously than the right because it is practised in this."
       }
     }
   ]

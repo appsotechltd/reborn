@@ -1,0 +1,713 @@
+{
+  "source": {
+    "id": "make-it-stick",
+    "title": "Make It Stick: The Science of Successful Learning",
+    "authors": [
+      "Peter C. Brown",
+      "Henry L. Roediger III",
+      "Mark A. McDaniel"
+    ],
+    "kind": "book",
+    "url": "https://www.hup.harvard.edu/books/9780674729018",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III and Mark A. McDaniel (2014). Not affiliated with or endorsed by the authors or publisher.",
+    "publisher": "Belknap Press of Harvard University Press",
+    "year": 2014,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "make-it-stick--01",
+      "topic": "study-smarter",
+      "tags": [
+        "rereading",
+        "illusions",
+        "study-habits"
+      ],
+      "title": "Rereading feels productive but builds little lasting learning",
+      "body": "Brown, Roediger and McDaniel point out that rereading notes and textbooks is the most popular way students revise, yet it does surprisingly little for long-term memory. The second time through, the words feel familiar, and that easy familiarity is mistaken for understanding.\n\nThe authors call this an illusion of mastery. You recognise the material when it is in front of you, but recognising is not the same as being able to recall or use it on your own. Time spent rereading would usually be better spent testing yourself.",
+      "apply_it": "Next time you are about to reread a chapter, close the book and write down everything you remember first. Then reread only the parts you missed.",
+      "quiz": {
+        "question": "Why does rereading often mislead students, according to the authors?",
+        "options": [
+          "Familiar text feels like understanding even when you can't recall it",
+          "Rereading damages memory",
+          "Textbooks are usually wrong",
+          "Rereading takes too little time"
+        ],
+        "answer": 0,
+        "explanation": "Familiarity with the words creates an illusion of mastery that recall would expose."
+      }
+    },
+    {
+      "id": "make-it-stick--02",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "memory",
+        "self-testing"
+      ],
+      "title": "Pull information out of your memory to make it stick",
+      "body": "The central message of Make It Stick is that retrieval practice, recalling facts or ideas from memory, is one of the most powerful ways to learn. Each time you dig something out of memory, you strengthen it and make it easier to find again later.\n\nThis is why flashcards, practice questions and simply asking yourself 'what were the key points?' work so well. Putting information into your head matters less than practising getting it back out, because getting it out is exactly what an exam, a job or real life will ask of you.",
+      "apply_it": "After reading anything you want to remember today, look away and say or write its three main points from memory.",
+      "quiz": {
+        "question": "What does retrieval practice mean?",
+        "options": [
+          "Copying notes neatly",
+          "Listening to a lecture twice",
+          "Recalling information from memory instead of looking at it again",
+          "Reading faster"
+        ],
+        "answer": 2,
+        "explanation": "Retrieval practice means pulling knowledge from memory, which strengthens it for later."
+      }
+    },
+    {
+      "id": "make-it-stick--03",
+      "topic": "study-smarter",
+      "tags": [
+        "quizzes",
+        "testing",
+        "teaching"
+      ],
+      "title": "Use quizzes as a learning tool, not just a judgement",
+      "body": "Most of us think of tests as a way to measure learning. The authors argue that tests are also one of the best ways to produce learning. They describe classroom research, carried out with Roediger and McDaniel's involvement, in which frequent short quizzes that counted for little helped students remember more on later exams.\n\nThe key is low stakes. A quick quiz you can get wrong without real consequences becomes practice rather than a threat. Students and teachers alike can use this: quiz early, quiz often, and treat a wrong answer as useful information.",
+      "apply_it": "Write five quick questions about something you are learning this week and answer them two days from now, with no notes.",
+      "quiz": {
+        "question": "What kind of quizzes do the authors recommend for learning?",
+        "options": [
+          "One big exam at the end",
+          "Frequent, low-stakes quizzes",
+          "Quizzes only for the weakest students",
+          "Quizzes with answers printed beside the questions"
+        ],
+        "answer": 1,
+        "explanation": "Frequent low-stakes quizzes turn testing into practice that strengthens memory."
+      }
+    },
+    {
+      "id": "make-it-stick--04",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "exams",
+        "self-testing"
+      ],
+      "title": "Answering in your own words beats picking from a list",
+      "body": "Not all self-testing is equal. The authors explain that the more effort retrieval takes, the more it strengthens learning. Writing a short answer or explaining an idea from scratch forces you to produce the knowledge yourself, while choosing from multiple-choice options mostly asks you to recognise it.\n\nRecognition tests still help, but production is stronger practice. So when you quiz yourself, cover the answers and write or speak them in full rather than just ticking the one that looks right.",
+      "apply_it": "Turn one set of multiple-choice practice questions into open questions by covering the options and answering first.",
+      "quiz": {
+        "question": "Which kind of self-test tends to strengthen learning more, according to the book?",
+        "options": [
+          "Picking from four options",
+          "Rereading the answer key",
+          "True-or-false guessing",
+          "Producing the answer yourself, such as a short written answer"
+        ],
+        "answer": 3,
+        "explanation": "Effortful production, like short answers, strengthens memory more than recognition."
+      }
+    },
+    {
+      "id": "make-it-stick--05",
+      "topic": "study-smarter",
+      "tags": [
+        "feedback",
+        "mistakes",
+        "self-testing"
+      ],
+      "title": "Check your answers after you test yourself",
+      "body": "Testing yourself works best when you then find out whether you were right. The authors note that feedback after a quiz helps you correct errors, so you don't keep rehearsing a wrong answer, and also strengthens the right ones.\n\nThey also report that feedback doesn't always have to be instant: in some studies a short delay before seeing the correct answer led to better long-term retention than immediate correction. Either way, the habit to build is simple: retrieve first, then check, then fix what you got wrong.",
+      "apply_it": "After your next practice quiz, mark every answer and rewrite the wrong ones correctly from memory a few hours later.",
+      "quiz": {
+        "question": "Why do the authors stress feedback after self-testing?",
+        "options": [
+          "It makes the quiz shorter",
+          "It replaces the need to study",
+          "It only matters for multiple-choice tests",
+          "It corrects errors so you don't keep repeating wrong answers"
+        ],
+        "answer": 3,
+        "explanation": "Feedback stops errors from being reinforced and strengthens correct answers."
+      }
+    },
+    {
+      "id": "make-it-stick--06",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "flashcards",
+        "repetition"
+      ],
+      "title": "Don't stop practising something the moment you get it right once",
+      "body": "One correct recall can feel like proof that you have learned something. Make It Stick argues that one successful retrieval is only a start. Memories become durable through repeated retrieval, spread out over time, until you can call them up easily and in different situations.\n\nSo when using flashcards or practice questions, don't throw out the cards you answered correctly. Keep cycling them back in, less often than the hard ones, so that today's success becomes something you still know next month.",
+      "apply_it": "Keep a 'got it' pile of flashcards and run through it once a week instead of putting it away.",
+      "quiz": {
+        "question": "What do the authors say about getting an answer right once?",
+        "options": [
+          "It proves the fact is learned for good",
+          "It's a start; repeated retrieval over time makes it last",
+          "You should never review it again",
+          "It means you studied too much"
+        ],
+        "answer": 1,
+        "explanation": "Durable memory comes from repeated retrieval spread over time, not one success."
+      }
+    },
+    {
+      "id": "make-it-stick--07",
+      "topic": "study-smarter",
+      "tags": [
+        "spacing",
+        "memory",
+        "revision"
+      ],
+      "title": "Space out your study so a little forgetting happens in between",
+      "body": "The authors recommend spaced practice: returning to material in several sessions separated by time, instead of going over it many times in one sitting. Between sessions you forget a little, and the effort of recalling it again is what deepens learning and links it to what you already know.\n\nSpacing feels less smooth than repetition in one block, which is why people rarely choose it. But the gaps give memories time to consolidate. A practical approach is to review new material soon after learning it, then again after a few days, then after longer intervals.",
+      "apply_it": "Put three short review sessions for this week's material into your calendar: tomorrow, in three days and in a week.",
+      "quiz": {
+        "question": "Why does spacing study sessions help, according to Make It Stick?",
+        "options": [
+          "It lets you avoid ever being tested",
+          "Forgetting is always bad, so gaps are kept short",
+          "The effort of recalling after some forgetting strengthens memory",
+          "It only works for language learning"
+        ],
+        "answer": 2,
+        "explanation": "Recalling after a gap takes effort, and that effort consolidates the memory."
+      }
+    },
+    {
+      "id": "make-it-stick--08",
+      "topic": "study-smarter",
+      "tags": [
+        "cramming",
+        "massed-practice",
+        "exams"
+      ],
+      "title": "Cramming can get you through tomorrow, but it fades fast",
+      "body": "Massed practice, repeating something over and over in a short burst, is the strategy behind cramming. The authors acknowledge that it can produce quick gains, which is why it feels effective and why students trust it the night before an exam.\n\nThe problem is that what you learn this way is forgotten quickly. If you need the knowledge for a later course, a job or a final exam, cramming leaves you starting over. Spreading the same hours across several days gives far more lasting results.",
+      "apply_it": "Look at your next exam date and divide your revision into at least four shorter sessions starting this week.",
+      "quiz": {
+        "question": "What is the main weakness of cramming?",
+        "options": [
+          "What you learn is forgotten quickly",
+          "It never produces any short-term gains",
+          "It takes longer than spaced study",
+          "It only works for maths"
+        ],
+        "answer": 0,
+        "explanation": "Massed practice gives quick gains that fade fast, unlike spaced practice."
+      }
+    },
+    {
+      "id": "make-it-stick--09",
+      "topic": "study-smarter",
+      "tags": [
+        "interleaving",
+        "problem-solving",
+        "maths"
+      ],
+      "title": "Mix up problem types so you learn which method to use",
+      "body": "Textbooks often give you a block of problems that all use the same method. Make It Stick describes interleaving: mixing different kinds of problems or topics in one practice session. In the research the authors describe, students who practised mixed problems struggled more at first but did better on later tests.\n\nThe reason is that real tests and real life don't tell you which method is needed. Interleaving trains you to recognise what kind of problem you face and choose the right approach, not just repeat the method of the moment.",
+      "apply_it": "In your next practice session, shuffle questions from three different chapters instead of doing one chapter at a time.",
+      "quiz": {
+        "question": "What does interleaved practice train you to do?",
+        "options": [
+          "Recognise the type of problem and pick the right approach",
+          "Repeat one method until it is automatic",
+          "Avoid difficult problems",
+          "Memorise answers to specific questions"
+        ],
+        "answer": 0,
+        "explanation": "Mixing problem types builds the skill of identifying which method a problem needs."
+      }
+    },
+    {
+      "id": "make-it-stick--10",
+      "topic": "study-smarter",
+      "tags": [
+        "varied-practice",
+        "skills",
+        "transfer"
+      ],
+      "title": "Practise a skill in varied ways to make it flexible",
+      "body": "The authors describe a study in which children practised tossing beanbags into a bucket. Those who practised from mixed distances did better at a distance none of them had practised than children who practised only at that exact target distance.\n\nThe broader lesson is that varied practice builds a more adaptable skill. Whether you are learning to speak in public, play a sport or solve equations, practise under different conditions and with different examples, so the skill isn't tied to one narrow setting.",
+      "apply_it": "Change one condition the next time you practise a skill: a new place, a different example or a different time limit.",
+      "quiz": {
+        "question": "In the beanbag study, which group did best at the tested distance?",
+        "options": [
+          "Children who practised only at the tested distance",
+          "Children who didn't practise",
+          "Children who practised from varied distances",
+          "Children who watched others practise"
+        ],
+        "answer": 2,
+        "explanation": "Varied practice built a more flexible skill that transferred to the test distance."
+      }
+    },
+    {
+      "id": "make-it-stick--11",
+      "topic": "study-smarter",
+      "tags": [
+        "desirable-difficulties",
+        "effort",
+        "learning"
+      ],
+      "title": "If learning feels hard, that can be a good sign",
+      "body": "A key idea in Make It Stick is that learning which takes effort tends to last longer. The authors draw on the psychologist Robert Bjork's term 'desirable difficulties': strategies like spacing, interleaving and self-testing slow you down and feel clumsy, yet produce stronger, more durable learning.\n\nThe trap is that easy study feels better. Smooth progress makes you think you are learning a lot, while struggle makes you think you are failing. Learning to read effort as productive, not as a warning sign, is one of the book's most useful shifts.",
+      "apply_it": "Pick one study method that feels hard, such as self-testing, and commit to using it for a week before judging it.",
+      "quiz": {
+        "question": "What are 'desirable difficulties'?",
+        "options": [
+          "Problems that are too hard to solve",
+          "Challenges that slow learning down but make it last longer",
+          "Unfair exam questions",
+          "Distractions that interrupt study"
+        ],
+        "answer": 1,
+        "explanation": "Desirable difficulties, like spacing and self-testing, require effort that strengthens learning."
+      }
+    },
+    {
+      "id": "make-it-stick--12",
+      "topic": "study-smarter",
+      "tags": [
+        "desirable-difficulties",
+        "foundations",
+        "learning"
+      ],
+      "title": "A difficulty only helps if you can overcome it",
+      "body": "The authors are careful to say that not all difficulty is good. A difficulty is desirable when it makes you work harder in a way you are able to manage, such as recalling, connecting or mixing problems. It becomes undesirable when you lack the background knowledge to deal with it at all.\n\nIn practice, that means pitching challenge at the right level. If you are completely lost, go back and build the basics first. Struggle should stretch what you know, not leave you with nothing to work with.",
+      "apply_it": "If a topic feels impossible, list the two or three basic ideas it depends on and check you can explain each one first.",
+      "quiz": {
+        "question": "When does a difficulty become undesirable, according to the authors?",
+        "options": [
+          "When it takes more than five minutes",
+          "When it involves self-testing",
+          "When it happens in a classroom",
+          "When you lack the background to overcome it"
+        ],
+        "answer": 3,
+        "explanation": "Difficulty helps only when you have enough foundation to work through it."
+      }
+    },
+    {
+      "id": "make-it-stick--13",
+      "topic": "study-smarter",
+      "tags": [
+        "generation",
+        "problem-solving",
+        "curiosity"
+      ],
+      "title": "Try to solve a problem before you're shown the answer",
+      "body": "The authors describe generation: attempting to answer a question or solve a problem before being taught the solution. Even if your attempt is wrong, wrestling with the problem first prepares your mind, so the correct answer means more and sticks better when you meet it.\n\nThis turns passive learning into active learning. Before reading a chapter, guess the answers to the questions at the end. Before a colleague shows you how a task is done, try it yourself and notice where you get stuck.",
+      "apply_it": "Before your next lesson or tutorial, write down your best attempt at one problem it will cover, even if you're unsure.",
+      "quiz": {
+        "question": "What is the benefit of attempting a problem before being taught the solution?",
+        "options": [
+          "It means you never need a teacher",
+          "It guarantees a correct answer",
+          "It saves time by skipping the lesson",
+          "It primes your mind so the answer is better learned"
+        ],
+        "answer": 3,
+        "explanation": "Generating an attempt first, even a wrong one, makes the later answer stick better."
+      }
+    },
+    {
+      "id": "make-it-stick--14",
+      "topic": "study-smarter",
+      "tags": [
+        "mistakes",
+        "learning",
+        "growth"
+      ],
+      "title": "Errors are part of learning, not proof you can't learn",
+      "body": "Many people try to avoid mistakes while learning, as if any error might be permanently stamped into memory. Make It Stick argues that making errors and then correcting them is a normal and useful part of learning, as long as you get corrective feedback.\n\nFear of failure pushes learners toward easy, comfortable methods that feel safe but teach less. Seeing mistakes as information about what to practise next makes it easier to take on the harder strategies that really work.",
+      "apply_it": "Keep a short 'mistakes log' for one subject and review it before your next test.",
+      "quiz": {
+        "question": "How do the authors view errors made while learning?",
+        "options": [
+          "As something to avoid at all costs",
+          "As a useful part of learning when followed by correction",
+          "As proof of low ability",
+          "As irrelevant to learning"
+        ],
+        "answer": 1,
+        "explanation": "Errors with corrective feedback help learning; fear of them leads to weaker methods."
+      }
+    },
+    {
+      "id": "make-it-stick--15",
+      "topic": "study-smarter",
+      "tags": [
+        "elaboration",
+        "understanding",
+        "connections"
+      ],
+      "title": "Connect new ideas to what you already know",
+      "body": "Elaboration is the process of giving new material meaning by putting it in your own words and linking it to what you already know. The authors explain that the more connections you build between a new idea and existing knowledge, the more ways you have to find it later.\n\nYou can elaborate by explaining a concept to a friend, relating it to your own experience, or asking how it compares with something you've learned before. A physics idea, for instance, becomes clearer when you link it to something you've seen happen in everyday life.",
+      "apply_it": "Take one idea you learned today and write two sentences linking it to something from your own life.",
+      "quiz": {
+        "question": "What is elaboration?",
+        "options": [
+          "Making notes longer and more detailed",
+          "Reading at a slower pace",
+          "Linking new material to what you already know, in your own words",
+          "Highlighting key sentences"
+        ],
+        "answer": 2,
+        "explanation": "Elaboration builds connections that give you more routes to recall the idea."
+      }
+    },
+    {
+      "id": "make-it-stick--16",
+      "topic": "study-smarter",
+      "tags": [
+        "reflection",
+        "experience",
+        "self-review"
+      ],
+      "title": "Reflect after a lesson or experience to learn more from it",
+      "body": "The authors describe reflection as a mix of retrieval, elaboration and generation. After a class, a meeting or a task, you ask yourself questions: What happened? What went well? What could I have done better? What does this remind me of, and what would I do differently next time?\n\nThey give examples of professionals who use reflection to improve, and note that it works for students too. A few minutes of honest review turns an experience into lasting learning instead of letting it blur into the next one.",
+      "apply_it": "Tonight, spend five minutes answering: what did I learn today, and what would I do differently next time?",
+      "quiz": {
+        "question": "According to the authors, reflection combines which learning strategies?",
+        "options": [
+          "Retrieval, elaboration and generation",
+          "Rereading, highlighting and copying",
+          "Cramming, guessing and skipping",
+          "Listening, watching and waiting"
+        ],
+        "answer": 0,
+        "explanation": "Reflection draws on recalling, connecting and imagining alternatives."
+      }
+    },
+    {
+      "id": "make-it-stick--17",
+      "topic": "study-smarter",
+      "tags": [
+        "writing",
+        "reflection",
+        "summarising"
+      ],
+      "title": "Write a short paragraph after class to pull the ideas together",
+      "body": "One teaching practice described in the book is the 'learning paragraph': after a lecture or reading, students write a few sentences summarising the key ideas and connecting them, from memory, in their own words.\n\nThis small exercise combines several of the book's strategies at once. You retrieve the material, elaborate on it and spot what you didn't understand while there's still time to ask. It takes only a few minutes, and the gaps it reveals tell you exactly what to review.",
+      "apply_it": "After your next class or video, write a five-sentence summary from memory before looking at your notes.",
+      "quiz": {
+        "question": "What makes a short written summary after class so useful?",
+        "options": [
+          "It combines recall, elaboration and spotting gaps",
+          "It replaces the need for future revision",
+          "It lets you avoid listening in class",
+          "It is mainly for the teacher's benefit"
+        ],
+        "answer": 0,
+        "explanation": "Writing from memory retrieves, connects and exposes what you didn't grasp."
+      }
+    },
+    {
+      "id": "make-it-stick--18",
+      "topic": "study-smarter",
+      "tags": [
+        "calibration",
+        "self-awareness",
+        "exams"
+      ],
+      "title": "Check what you really know with tests, not feelings",
+      "body": "Calibration means bringing your sense of how well you know something into line with how well you actually know it. The authors warn that our feelings of knowing are often wrong, especially after easy study like rereading.\n\nThe remedy is objective checks: practice tests, past papers or explaining the topic without notes. If you can't produce it, you don't yet know it, however confident you feel. Calibrating early shows you where to spend your remaining study time.",
+      "apply_it": "Before you decide you're ready for a test, do a full practice paper under timed conditions and mark it honestly.",
+      "quiz": {
+        "question": "What does calibration mean in Make It Stick?",
+        "options": [
+          "Studying at the same time each day",
+          "Adjusting your desk and chair",
+          "Matching your judgement of what you know to what you actually know",
+          "Making all subjects equally difficult"
+        ],
+        "answer": 2,
+        "explanation": "Calibration uses objective checks to correct unreliable feelings of knowing."
+      }
+    },
+    {
+      "id": "make-it-stick--19",
+      "topic": "study-smarter",
+      "tags": [
+        "curse-of-knowledge",
+        "teaching",
+        "communication"
+      ],
+      "title": "Once you know something, it's hard to see how hard it is for others",
+      "body": "Among the illusions of knowing the authors describe is the 'curse of knowledge': when you understand something well, you tend to underestimate how long it takes others to learn it. Teachers, managers and experts often explain too quickly or skip steps that feel obvious to them.\n\nKnowing about this bias helps from both sides. If you're teaching, slow down and check what your listener actually understands. If you're learning from an expert, don't assume you're slow just because they made it sound simple.",
+      "apply_it": "Next time you explain something, ask the other person to describe it back to you in their own words.",
+      "quiz": {
+        "question": "What is the 'curse of knowledge'?",
+        "options": [
+          "Forgetting what you once knew",
+          "Underestimating how hard something is for others once you know it",
+          "Knowing too many facts to choose between",
+          "Refusing to share knowledge"
+        ],
+        "answer": 1,
+        "explanation": "Experts often forget how difficult the material was before they understood it."
+      }
+    },
+    {
+      "id": "make-it-stick--20",
+      "topic": "study-smarter",
+      "tags": [
+        "memory",
+        "bias",
+        "illusions"
+      ],
+      "title": "A confident memory can still be wrong",
+      "body": "Make It Stick explains that memory is not a recording. We rebuild memories each time we recall them, and they can shift with suggestion, imagination and what we've heard from others since. People can feel completely sure of a memory that is distorted or even false.\n\nThis matters for learning and for everyday life. Being certain doesn't prove you're right, whether about an exam answer or about what someone said in a meeting. Checking notes, sources and other people's accounts is a sensible habit.",
+      "apply_it": "Think of a disagreement where you were sure you remembered correctly. What evidence could you have checked?",
+      "quiz": {
+        "question": "What do the authors say about vivid, confident memories?",
+        "options": [
+          "They are always accurate",
+          "They cannot change over time",
+          "They only happen in childhood",
+          "They can still be distorted or false"
+        ],
+        "answer": 3,
+        "explanation": "Memories are reconstructed and can change, so confidence doesn't guarantee accuracy."
+      }
+    },
+    {
+      "id": "make-it-stick--21",
+      "topic": "study-smarter",
+      "tags": [
+        "learning-styles",
+        "myths",
+        "evidence"
+      ],
+      "title": "'Learning styles' don't hold up: match the method to the material",
+      "body": "Many people believe they are 'visual' or 'auditory' learners and learn best when teaching matches that style. The authors review the research and report that there is little good evidence for this idea: studies have not found that matching instruction to a preferred style improves learning.\n\nPeople do have preferences, and differences in ability and background matter. But the better question is what the material calls for. A map is best learned visually and a language needs listening and speaking, whoever you are. Use all the effective strategies, not just your favourite.",
+      "apply_it": "If you've labelled yourself a certain kind of learner, try a method outside that label this week, such as self-testing aloud.",
+      "quiz": {
+        "question": "What does Make It Stick conclude about learning styles?",
+        "options": [
+          "Everyone must be taught only in their own style",
+          "Visual learners can't learn from lectures",
+          "Learning styles are the most important factor in study",
+          "Evidence does not show that matching teaching to a style improves learning"
+        ],
+        "answer": 3,
+        "explanation": "The authors find little evidence that teaching to a preferred style helps; content should guide method."
+      }
+    },
+    {
+      "id": "make-it-stick--22",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "rules",
+        "examples"
+      ],
+      "title": "Look for the rule behind the examples",
+      "body": "The authors describe research suggesting that some learners focus on memorising individual examples, while others pull out the underlying principle that connects them. Those who extract the rule tend to handle new, unfamiliar problems better.\n\nYou can practise this deliberately. When you study worked examples, ask what they have in common and what principle makes them work. Comparing two or three examples side by side helps the general idea emerge, and that idea is what lets you solve the next problem nobody showed you.",
+      "apply_it": "Compare two worked examples from your notes and write one sentence stating the principle they share.",
+      "quiz": {
+        "question": "Why does extracting the underlying rule help, according to the book?",
+        "options": [
+          "It means you never need examples",
+          "It lets you solve new problems you haven't seen before",
+          "It is faster than reading",
+          "It helps you memorise the exact answers"
+        ],
+        "answer": 1,
+        "explanation": "Learners who grasp the principle transfer it to unfamiliar problems."
+      }
+    },
+    {
+      "id": "make-it-stick--23",
+      "topic": "study-smarter",
+      "tags": [
+        "structure",
+        "note-taking",
+        "big-picture"
+      ],
+      "title": "Build a framework, then fit the details into it",
+      "body": "The authors discuss 'structure building': the ability to pick out the main ideas of new material and organise them into a coherent mental framework, while setting aside details that don't fit. They report that people who are better at this tend to learn more effectively.\n\nThe good news is that it can be practised. As you read, ask what the big idea is and how each section supports it. A one-page outline or mind map of a chapter's main points gives the details somewhere to live.",
+      "apply_it": "Summarise one chapter you are studying as a one-page outline: main idea at the top, supporting points below.",
+      "quiz": {
+        "question": "What is 'structure building'?",
+        "options": [
+          "Building a study timetable",
+          "Memorising every detail equally",
+          "Organising the main ideas of new material into a coherent framework",
+          "Writing in complete sentences"
+        ],
+        "answer": 2,
+        "explanation": "Structure builders identify key ideas and fit relevant details into a mental framework."
+      }
+    },
+    {
+      "id": "make-it-stick--24",
+      "topic": "study-smarter",
+      "tags": [
+        "mental-models",
+        "skills",
+        "practice"
+      ],
+      "title": "Practise skills together until they form a mental model",
+      "body": "The book describes how, with practice, separate skills and facts combine into mental models: integrated ways of understanding and acting in a situation. A driver, pilot or nurse doesn't think step by step; experience has knitted many pieces into a model they can apply quickly.\n\nTo build these, the authors suggest practising pieces in realistic combinations, not only in isolation, and retrieving them in varied situations. Over time, the pieces fuse into something you can use smoothly under pressure.",
+      "apply_it": "After practising parts of a skill, run one full realistic attempt that combines them, such as a mock interview.",
+      "quiz": {
+        "question": "What is a mental model, as described in the book?",
+        "options": [
+          "An integrated understanding built from many skills and facts",
+          "A famous person you copy",
+          "A diagram in a textbook",
+          "A way of guessing answers"
+        ],
+        "answer": 0,
+        "explanation": "Through practice, separate skills combine into models you can apply quickly."
+      }
+    },
+    {
+      "id": "make-it-stick--25",
+      "topic": "study-smarter",
+      "tags": [
+        "review",
+        "revision",
+        "cumulative"
+      ],
+      "title": "Keep revisiting old material while you learn new material",
+      "body": "Because forgetting is natural, the authors encourage learners and teachers to keep bringing back earlier material instead of treating each topic as finished once the test is over. Mixing older content into current practice spaces your retrieval and interleaves topics at the same time.\n\nFor students, this means your revision of week two shouldn't stop in week three. A few old questions mixed into each practice session keeps earlier learning alive and shows how topics connect.",
+      "apply_it": "Add two questions from an earlier topic to every practice session you do this month.",
+      "quiz": {
+        "question": "Why should you keep revisiting earlier topics?",
+        "options": [
+          "It spaces retrieval and keeps earlier learning from fading",
+          "Old topics are always on the test",
+          "New material is less important",
+          "It makes each session shorter"
+        ],
+        "answer": 0,
+        "explanation": "Returning to earlier material combines spacing and interleaving, protecting what you learned."
+      }
+    },
+    {
+      "id": "make-it-stick--26",
+      "topic": "study-smarter",
+      "tags": [
+        "intelligence",
+        "abilities",
+        "strengths"
+      ],
+      "title": "Intelligence comes in more than one form",
+      "body": "The authors discuss the psychologist Robert Sternberg's idea of 'successful intelligence', which includes analytical, creative and practical abilities. Someone who struggles with school-style tests may be skilled at solving real problems in their community or work, and the reverse can also be true.\n\nThis wider view matters because a single score can mislead people about what they are capable of. Recognising your different strengths, and building the weaker ones, gives a fuller picture than one test result.",
+      "apply_it": "List one analytical, one creative and one practical strength you have. Which would you like to build next?",
+      "quiz": {
+        "question": "Which three abilities make up Sternberg's 'successful intelligence'?",
+        "options": [
+          "Reading, writing and arithmetic",
+          "Speed, memory and luck",
+          "Analytical, creative and practical",
+          "Visual, auditory and kinaesthetic"
+        ],
+        "answer": 2,
+        "explanation": "Sternberg's view includes analytical, creative and practical intelligence."
+      }
+    },
+    {
+      "id": "make-it-stick--27",
+      "topic": "study-smarter",
+      "tags": [
+        "weaknesses",
+        "improvement",
+        "testing"
+      ],
+      "title": "Find your weak spot, work on it, then test again",
+      "body": "The book describes 'dynamic testing', also linked to Sternberg: instead of treating a test as a final verdict, use it to find where you're weak, focus learning on that area, then test again to see how far you've improved.\n\nThis is a practical cycle for anyone. A failed driving test, a poor exam mark or a weak presentation becomes a map of what to work on next. The point of the first test is not to label you but to show where effort will pay off.",
+      "apply_it": "Take your last disappointing result, identify one specific weakness it revealed and plan two practice sessions on it.",
+      "quiz": {
+        "question": "What is the cycle behind dynamic testing?",
+        "options": [
+          "Test once and accept the result",
+          "Test, find a weakness, focus on it, test again",
+          "Avoid tests until you feel ready",
+          "Study everything equally, then test"
+        ],
+        "answer": 1,
+        "explanation": "Dynamic testing uses results to target weaknesses, then measures improvement."
+      }
+    },
+    {
+      "id": "make-it-stick--28",
+      "topic": "study-smarter",
+      "tags": [
+        "knowledge",
+        "memorisation",
+        "creativity"
+      ],
+      "title": "You need a store of knowledge to think creatively",
+      "body": "Some people dismiss memorising facts as old-fashioned rote learning. The authors push back: you can't reason, solve problems or be creative in a field without a solid base of knowledge to work with. Understanding and knowledge go together.\n\nThe goal isn't parroting facts. It's knowing the basics so well that your mind is free to think with them. A doctor, mechanic or writer uses deep stored knowledge every time they solve something new.",
+      "apply_it": "Identify the ten core facts or terms your subject depends on and make sure you can recall each without notes.",
+      "quiz": {
+        "question": "What is the authors' view on learning facts?",
+        "options": [
+          "Facts are useless now that we can search online",
+          "Only creativity matters",
+          "Memorising always harms understanding",
+          "A solid base of knowledge is needed for higher-level thinking"
+        ],
+        "answer": 3,
+        "explanation": "Reasoning and creativity depend on knowledge you can draw on."
+      }
+    },
+    {
+      "id": "make-it-stick--29",
+      "topic": "study-smarter",
+      "tags": [
+        "peers",
+        "discussion",
+        "understanding"
+      ],
+      "title": "Discuss ideas with classmates to expose what you don't understand",
+      "body": "The authors describe peer instruction, an approach where students answer a question, then discuss their reasoning with classmates and answer again. Explaining your thinking to someone else, and hearing theirs, reveals misunderstandings that solo study can hide.\n\nThe book presents this as one way to catch illusions of knowing. You don't need a formal class to use it. A study partner who asks 'why?' after each of your answers can be one of your best checks on what you really understand.",
+      "apply_it": "Meet a classmate for twenty minutes and take turns explaining one topic and asking each other 'why?'",
+      "quiz": {
+        "question": "Why can discussing answers with peers improve learning?",
+        "options": [
+          "It lets you copy their answers",
+          "It shortens study time",
+          "It removes the need for feedback",
+          "Explaining your reasoning exposes misunderstandings"
+        ],
+        "answer": 3,
+        "explanation": "Explaining and hearing others' reasoning reveals gaps solo study may hide."
+      }
+    },
+    {
+      "id": "make-it-stick--30",
+      "topic": "study-smarter",
+      "tags": [
+        "overconfidence",
+        "self-assessment",
+        "feedback"
+      ],
+      "title": "The less skilled you are, the harder it can be to see it",
+      "body": "In discussing illusions of knowing, the authors mention research by David Dunning and colleagues suggesting that people with low skill in an area often overestimate their performance, partly because the knowledge needed to do well is the same knowledge needed to judge how well you did. Later researchers have debated how strong this effect is, but the practical point holds.\n\nOutside feedback is the remedy. Tests, marked work and honest critics tell you what self-assessment can miss.",
+      "apply_it": "Ask someone more experienced to review one piece of your work and point out what you might not have noticed.",
+      "quiz": {
+        "question": "What does the research mentioned in the book suggest about people with low skill?",
+        "options": [
+          "They always underestimate themselves",
+          "They can overestimate their performance",
+          "They judge themselves perfectly",
+          "They never improve"
+        ],
+        "answer": 1,
+        "explanation": "Low skill can hide itself, so outside feedback is needed to see clearly."
+      }
+    }
+  ]
+}

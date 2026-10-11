@@ -1,0 +1,805 @@
+{
+  "source": {
+    "id": "gospel-of-buddha-carus",
+    "title": "The Gospel of Buddha",
+    "authors": [
+      "Paul Carus"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/35895",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Paul Carus, The Gospel of Buddha, Compiled from Ancient Records, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1894,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Gutenberg #35895 (Open Court, 1915 edition; first published 1894). Paul Carus (1852-1919) compiled and retold the Buddha's life and teachings from Buddhist scriptures, including a chapter of Dhammapada verses and many Jataka tales; his preface says most passages are close translations, some freely rendered. It is a 19th-century compilation, not a canonical text, so cards attribute ideas to the Buddha 'as Carus retells' where useful. Public domain (published before 1929; Carus died 1919). Used in place of Max Muller's Dhammapada (Gutenberg #2017), which has no GITenberg mirror. Locators are chapter titles."
+  },
+  "cards": [
+    {
+      "id": "gospel-of-buddha-carus--01",
+      "topic": "faith-wisdom",
+      "tags": [
+        "middle-way",
+        "balance",
+        "moderation",
+        "buddhism"
+      ],
+      "title": "Take the middle path between indulgence and self-punishment",
+      "body": "In his first sermon, as Carus retells it, the Buddha rejects two extremes. One is a life of constant pleasure-seeking; the other is harsh self-denial that punishes the body. Both, he says, are useless for finding peace.\n\nThe same balance helps in ordinary life. Crash diets and binges, all-night work sprints and long slumps, are two sides of one problem. A steady middle way, enough rest, enough effort, enough enjoyment, keeps the mind clear enough to grow.",
+      "quote": "There are two extremes, O bhikkhus, which the man who has given up the world ought not to follow... self-indulgence which is unworthy, vain and fit only for the worldly-minded... self-mortification, which is painful, useless and unprofitable.",
+      "locator": "The Sermon at Benares",
+      "apply_it": "Spot one area where you swing between extremes (food, work, spending). Write down a sensible middle you could keep.",
+      "quiz": {
+        "question": "Which two extremes does the Buddha reject in the Sermon at Benares?",
+        "options": [
+          "Self-indulgence and self-mortification",
+          "Wealth and poverty",
+          "Speech and silence",
+          "Work and rest"
+        ],
+        "answer": 0,
+        "explanation": "He calls both pleasure-seeking and painful self-denial unprofitable and teaches the middle path."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--02",
+      "topic": "health",
+      "tags": [
+        "self-care",
+        "body",
+        "balance",
+        "clear-mind"
+      ],
+      "title": "Looking after your body is a duty, not a luxury",
+      "body": "The Buddha in Carus's account tells his followers that meeting the body's real needs is not wrong. Keeping the body healthy is a duty, because without it the mind cannot stay strong and clear.\n\nMany people treat sleep, good food and exercise as indulgences to be earned after work is done. This teaching flips that around: caring for your health is what makes good work, clear thinking and spiritual growth possible. It is general wisdom, not medical advice, but the principle is sound.",
+      "quote": "To keep the body in good health is a duty, for otherwise we shall not be able to trim the lamp of wisdom, and keep our mind strong and clear.",
+      "locator": "The Sermon at Benares",
+      "apply_it": "Choose one health basic you neglect, sleep, water, a walk, and give it priority today.",
+      "quiz": {
+        "question": "Why is keeping the body healthy called a duty?",
+        "options": [
+          "Because the body is all that matters",
+          "Without it the mind cannot stay strong and clear",
+          "So we can enjoy endless pleasures",
+          "Because sickness is a punishment"
+        ],
+        "answer": 1,
+        "explanation": "Good health lets us 'trim the lamp of wisdom' and keep the mind strong and clear."
+      },
+      "health": true
+    },
+    {
+      "id": "gospel-of-buddha-carus--03",
+      "topic": "faith-wisdom",
+      "tags": [
+        "craving",
+        "suffering",
+        "desire",
+        "four-noble-truths"
+      ],
+      "title": "Unsatisfied craving is itself a kind of pain",
+      "body": "The first of the Buddha's four noble truths names the forms of suffering: illness, ageing, death, being stuck with what we dislike and separated from what we love. Then he adds one we often miss: any craving that is not satisfied is also painful.\n\nMuch of our daily unhappiness comes not from what happens but from wanting things to be otherwise. Noticing that wanting, and how it hurts, is the first step to loosening its grip, which is what the rest of the teaching is about.",
+      "quote": "Union with the unpleasant is painful, painful is separation from the pleasant; and any craving that is unsatisfied, that too is painful.",
+      "locator": "The Sermon at Benares",
+      "apply_it": "Next time you feel restless, name what you are craving. Just noticing it often softens it.",
+      "quiz": {
+        "question": "Besides illness and death, what does the first noble truth call painful?",
+        "options": [
+          "Hard physical work",
+          "Learning new things",
+          "Unsatisfied craving",
+          "Silence"
+        ],
+        "answer": 2,
+        "explanation": "The Buddha lists unsatisfied craving among the forms of suffering."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--04",
+      "topic": "faith-wisdom",
+      "tags": [
+        "sincerity",
+        "appearances",
+        "inner-life",
+        "humility"
+      ],
+      "title": "Religion lives in the heart, not in the outfit",
+      "body": "When the wealthy young Yasa felt ashamed of his jewels, the Buddha told him that outward appearance does not make or unmake a spiritual life. A hermit in the forest can still crave worldly things, while a person in ordinary clothes can have a heart set on higher things.\n\nThis cuts both ways. We should not judge others by their dress or status, and we should not think that looking religious is the same as being good. What counts is the state of the heart and the way we live.",
+      "quote": "The outward form does not constitute religion or affect the mind.",
+      "locator": "Yasa, the Youth of Benares",
+      "apply_it": "Notice one time today when you judge someone by appearance. Ask what you actually know about them.",
+      "quiz": {
+        "question": "What did the Buddha tell Yasa about outward appearance?",
+        "options": [
+          "Only monks' robes matter",
+          "Jewels prove spiritual success",
+          "Appearance is everything",
+          "It does not make a person truly religious"
+        ],
+        "answer": 3,
+        "explanation": "He taught that the outward form does not constitute religion or affect the mind."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--05",
+      "topic": "money",
+      "tags": [
+        "generosity",
+        "charity",
+        "giving",
+        "abundance"
+      ],
+      "title": "Giving away often leaves you stronger, not poorer",
+      "body": "When a rich merchant offered land for a monastery, the Buddha praised generosity in words that sound like a riddle: by giving food away we gain strength, by giving clothing we gain beauty.\n\nHe means that generosity enriches the giver's character and relationships. The generous person is loved, trusted and at peace. Giving is not only for the rich: time, skill, a meal or a kind word all count, and the habit of sharing changes the one who shares.",
+      "quote": "Hard it is to understand: By giving away our food, we get more strength, by bestowing clothing on others, we gain more beauty",
+      "locator": "The Sermon on Charity",
+      "apply_it": "Share something you have plenty of (food, time, a skill) with one person this week.",
+      "quiz": {
+        "question": "What does the Buddha say we gain by giving away our food?",
+        "options": [
+          "More strength",
+          "Nothing at all",
+          "Less respect",
+          "Hunger"
+        ],
+        "answer": 0,
+        "explanation": "In the Sermon on Charity he says that by giving away food we get more strength."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--06",
+      "topic": "faith-wisdom",
+      "tags": [
+        "giving",
+        "motive",
+        "kindness",
+        "sincerity"
+      ],
+      "title": "A small gift given with love can be worth more than a big one",
+      "body": "The Buddha in this book describes four kinds of offering. Some gifts are large but bring little merit, such as lavish feasts given for show. Some are small and given grudgingly. But a small gift offered from love, with the wish to grow in kindness and wisdom, has great merit.\n\nThe point is that the heart behind the gift matters more than its size. You do not need to be wealthy to be truly generous. A modest act done with sincere care counts for a great deal.",
+      "quote": "The merit is great, however, while the gift is small, when a man makes his offering from love and with a desire to grow in wisdom and in kindness.",
+      "locator": "Four Kinds of Merit",
+      "apply_it": "Give something small today, with full attention and goodwill, without telling anyone.",
+      "quiz": {
+        "question": "When is a small gift of great merit, according to the Buddha?",
+        "options": [
+          "When it is given for show",
+          "When it is given from love and a wish to grow in kindness",
+          "Never: only large gifts count",
+          "When the giver expects a reward"
+        ],
+        "answer": 1,
+        "explanation": "A small gift made from love and a desire to grow in wisdom has great merit."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--07",
+      "topic": "leadership",
+      "tags": [
+        "conflict-resolution",
+        "fairness",
+        "listening",
+        "mediation"
+      ],
+      "title": "To settle a quarrel, listen patiently to both sides",
+      "body": "When two groups of monks quarrelled bitterly, a senior disciple asked the Buddha how to treat them. The Buddha's advice was practical: do not scold them, because harsh words heal nothing. Give each party its own space, treat both with fairness, and hear each side patiently before deciding anything.\n\nAnyone who manages a team, leads a family or settles disputes can use this. Taking sides early or lecturing both parties only deepens the conflict. Patient, even-handed listening calms things enough for agreement.",
+      "quote": "Listen with patience to both parties. He alone who weighs both sides is called a muni.",
+      "locator": "The Re-establishment of Concord",
+      "apply_it": "In the next disagreement you mediate, let each person speak fully before you say anything.",
+      "quiz": {
+        "question": "How did the Buddha advise handling the quarrelling monks?",
+        "options": [
+          "Scold them harshly",
+          "Pick the stronger side",
+          "Listen patiently to both sides and treat them fairly",
+          "Ignore the quarrel"
+        ],
+        "answer": 2,
+        "explanation": "He said harsh words are no remedy and the wise weigh both sides."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--08",
+      "topic": "faith-wisdom",
+      "tags": [
+        "forgiveness",
+        "hatred",
+        "peace",
+        "conflict"
+      ],
+      "title": "Hatred never ends hatred; only letting go does",
+      "body": "One of the oldest Buddhist sayings is preserved in this book's selection from the Dhammapada: hatred does not cease by hatred, but only by its absence. Carus also tells the story of a prince who, given the chance to take revenge for his parents' death, put his sword away and made peace instead.\n\nRevenge feels like justice but usually starts the next round. Families, communities and nations stuck in feuds know this well. Choosing not to hate is not weakness. It is the only way to end the cycle.",
+      "quote": "For hatred does not cease by hatred at any time; hatred ceases by not-hatred, this is an old rule.",
+      "locator": "The Dhammapada",
+      "apply_it": "Is there a grudge you are holding? Take one small step to let it go, even if only in your own heart.",
+      "quiz": {
+        "question": "According to the Dhammapada, how does hatred cease?",
+        "options": [
+          "By greater hatred",
+          "By time alone",
+          "By winning the argument",
+          "By not-hatred"
+        ],
+        "answer": 3,
+        "explanation": "Hatred ceases by not-hatred: this, it says, is an old rule."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--09",
+      "topic": "faith-wisdom",
+      "tags": [
+        "mind",
+        "thoughts",
+        "character",
+        "self-awareness"
+      ],
+      "title": "Your mind shapes who you become",
+      "body": "The Dhammapada section opens with the claim that our character comes from the mind: we are mind-made, and the mind is the source of either happiness or corruption.\n\nThoughts repeated become attitudes, attitudes become actions, and actions become habits and character. That makes the quality of our thinking one of the most important things we can tend. Watching what we dwell on, and choosing better thoughts, is a practical first step toward a better life.",
+      "quote": "Creatures from mind their character derive; mind-marshalled are they, mind-made. Mind is the source either of bliss or of corruption.",
+      "locator": "The Dhammapada",
+      "apply_it": "Notice one recurring negative thought today. Write a kinder, truer version of it.",
+      "quiz": {
+        "question": "What does the Dhammapada call the source of bliss or corruption?",
+        "options": [
+          "The mind",
+          "Wealth",
+          "Fate",
+          "Other people"
+        ],
+        "answer": 0,
+        "explanation": "It says creatures are 'mind-made' and the mind is the source of bliss or corruption."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--10",
+      "topic": "faith-wisdom",
+      "tags": [
+        "responsibility",
+        "effort",
+        "self-reliance",
+        "growth"
+      ],
+      "title": "No teacher can do the work for you",
+      "body": "The Dhammapada verses in this book are blunt about responsibility. We do wrong by ourselves and suffer by ourselves; we turn from wrong by ourselves and become pure by ourselves. No one can purify another. You yourself must make the effort; the Buddhas only point the way.\n\nTeachers, mentors, books and pastors can guide us, but they cannot change us without our own effort. Waiting for someone else to fix our lives keeps us stuck. Growth begins when we take ownership.",
+      "quote": "You yourself must make an effort. The Tathāgatas are only preachers.",
+      "locator": "The Dhammapada",
+      "apply_it": "Pick one change you have been waiting for someone else to make happen. Take the first step yourself.",
+      "quiz": {
+        "question": "What does the Dhammapada say about the role of the Buddhas?",
+        "options": [
+          "They do all the work for you",
+          "They only point the way; you must make the effort",
+          "They decide your fate",
+          "They punish the lazy"
+        ],
+        "answer": 1,
+        "explanation": "It says each must make an effort; the Tathagatas are only preachers."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--11",
+      "topic": "faith-wisdom",
+      "tags": [
+        "self-mastery",
+        "discipline",
+        "victory",
+        "character"
+      ],
+      "title": "Conquering yourself beats conquering a thousand enemies",
+      "body": "The Dhammapada says that one who defeats a million men in battle is not as great as one who conquers himself.\n\nControlling your anger, your appetite or your laziness is harder than winning outward contests, because the opponent knows all your weak points. Yet it is the victory that changes everything else. Every time you keep a promise to yourself, you win a small part of that battle.",
+      "quote": "If some men conquer in battle a thousand times a thousand men, and if another conquer himself, he is the greatest of conquerors.",
+      "locator": "The Dhammapada",
+      "apply_it": "Choose one small self-promise for today, like no snacks after 8pm or a 10-minute walk, and keep it.",
+      "quiz": {
+        "question": "Who is 'the greatest of conquerors' in the Dhammapada?",
+        "options": [
+          "The one who defeats the most men",
+          "The richest king",
+          "The one who conquers himself",
+          "The fastest warrior"
+        ],
+        "answer": 2,
+        "explanation": "Conquering oneself is greater than conquering a thousand times a thousand men."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--12",
+      "topic": "faith-wisdom",
+      "tags": [
+        "habits",
+        "small-steps",
+        "consistency",
+        "goodness"
+      ],
+      "title": "Good fills you drop by drop, so don't dismiss small acts",
+      "body": "The Dhammapada uses a picture from daily life: a water-pot left under falling drops slowly fills. In the same way a person becomes full of evil through small wrongs, or full of good through small kindnesses, gathered little by little.\n\nWe tend to think only big decisions shape us. In fact, character is built from tiny repeated choices: one honest answer, one kind word, one small effort. Don't dismiss small good acts as pointless, or small wrongs as harmless. Both add up.",
+      "quote": "As by the falling of water-drops a water-pot is filled, so the wise man becomes full of good, though he gather it little by little.",
+      "locator": "The Dhammapada",
+      "apply_it": "Do one small good deed each day this week and tick it off. Watch the pot fill.",
+      "quiz": {
+        "question": "What does the image of the water-pot teach?",
+        "options": [
+          "Only big deeds matter",
+          "Water is precious",
+          "Good cannot be gathered",
+          "Small acts add up over time"
+        ],
+        "answer": 3,
+        "explanation": "As drops fill a water-pot, a person becomes full of good little by little."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--13",
+      "topic": "faith-wisdom",
+      "tags": [
+        "self-awareness",
+        "criticism",
+        "judgement",
+        "humility"
+      ],
+      "title": "We see others' faults easily and hide our own",
+      "body": "The Dhammapada observes that others' faults are easy to spot while our own are hard to see. We sift a neighbour's faults like chaff, but hide our own as a cheat hides a loaded die.\n\nIt warns that constantly watching others' failings, and taking offence at them, only feeds our own bad passions. The wiser focus is inward: what am I doing wrong, and what can I fix? This makes us easier to live with and helps us actually grow.",
+      "quote": "The fault of others is easily noticed, but that of oneself is difficult to perceive.",
+      "locator": "The Dhammapada",
+      "apply_it": "Next time you criticise someone in your head, ask: do I ever do something similar?",
+      "quiz": {
+        "question": "What does the Dhammapada say about faults?",
+        "options": [
+          "Others' faults are easy to see; our own are hard to perceive",
+          "Our own faults are always obvious",
+          "Faults should be announced publicly",
+          "Only fools have faults"
+        ],
+        "answer": 0,
+        "explanation": "It says others' faults are easily noticed, but our own are difficult to perceive."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--14",
+      "topic": "faith-wisdom",
+      "tags": [
+        "praise",
+        "criticism",
+        "equanimity",
+        "self-discipline"
+      ],
+      "title": "Stay steady whether people praise you or blame you",
+      "body": "The Dhammapada notes that well-makers guide water, fletchers straighten arrows and carpenters shape wood, and in the same way the wise shape themselves. Such people do not waver amid blame and praise, and become calm like a deep, still lake.\n\nIf compliments lift you too high and criticism knocks you flat, other people control your mood. Building your sense of worth on your own values and effort lets you hear both praise and blame calmly, and learn from each.",
+      "quote": "wise people fashion themselves; wise people falter not amidst blame and praise.",
+      "locator": "The Dhammapada",
+      "apply_it": "The next time you are praised or criticised, pause and ask: is it true, and what can I learn?",
+      "quiz": {
+        "question": "How do wise people respond to blame and praise, according to the Dhammapada?",
+        "options": [
+          "They chase praise",
+          "They do not falter",
+          "They fear blame above all",
+          "They stop working"
+        ],
+        "answer": 1,
+        "explanation": "Wise people fashion themselves and falter not amidst blame and praise."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--15",
+      "topic": "relationships",
+      "tags": [
+        "community",
+        "respect",
+        "gentleness",
+        "harmony"
+      ],
+      "title": "Live among others like a bee among flowers",
+      "body": "The Dhammapada offers a gentle image: the bee gathers nectar and leaves without harming the flower's colour or scent. So should a wise person live within a community.\n\nIn a shared house, workplace or neighbourhood, it is possible to take what you need, learn, earn, enjoy company, without leaving damage behind. Respect others' space, time and reputation, and your presence will be welcome rather than a burden.",
+      "quote": "As the bee collects nectar and departs without injuring the flower, or its color or scent, so let a sage dwell in the community.",
+      "locator": "The Dhammapada",
+      "apply_it": "Think about a group you are part of. What is one way you could take less, or leave it better than you found it?",
+      "quiz": {
+        "question": "What does the bee image teach about living in a community?",
+        "options": [
+          "Take as much as you can",
+          "Avoid communities altogether",
+          "Take what you need without harming others",
+          "Sting anyone who disturbs you"
+        ],
+        "answer": 2,
+        "explanation": "The bee collects nectar without injuring the flower: so should the wise live among others."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--16",
+      "topic": "parenting",
+      "tags": [
+        "family",
+        "duties",
+        "parents",
+        "friendship"
+      ],
+      "title": "Protect your home by good deeds, not just rituals",
+      "body": "Carus retells how the Buddha met a householder, Sigala, performing a ritual to the six directions to protect his home. The Buddha did not mock his father's custom. Instead he gave it new meaning: east stands for parents, south for teachers, west for spouse and children, north for friends, and above and below for spiritual guides and those who work for you.\n\nA home, he said, is guarded by good conduct toward all of these people. Rituals can remind us of our duties, but caring for our relationships is what actually protects us.",
+      "quote": "To guard thy home by mysterious ceremonies is not sufficient; thou must guard it by good deeds.",
+      "locator": "Guard the Six Quarters",
+      "apply_it": "List your 'six directions': parents, teachers, family, friends, guides, workers. Do one kind act for one of them today.",
+      "quiz": {
+        "question": "How did the Buddha say Sigala should truly guard his home?",
+        "options": [
+          "By more elaborate ceremonies",
+          "By building higher walls",
+          "By avoiding all visitors",
+          "By good deeds toward the people in his life"
+        ],
+        "answer": 3,
+        "explanation": "He said ceremonies are not sufficient; the home must be guarded by good deeds."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--17",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "honesty",
+        "speech",
+        "integrity",
+        "self-control"
+      ],
+      "title": "Guard your tongue, especially against lies",
+      "body": "When the Buddha's own son Rahula was careless with the truth, the Buddha taught him with a basin of dirty water: a mind spoiled by lying is like water no one would drink. He then told of a war elephant that stayed safe only as long as it kept its trunk, its weak spot, coiled up.\n\nThe lesson: our speech is our trunk. A single lie, insult or careless remark can do lasting harm. Guarding what we say protects both our relationships and our own integrity.",
+      "quote": "O Rāhula! if men would only guard their tongues all would be well!",
+      "locator": "The Lesson Given to Rāhula",
+      "apply_it": "For one day, pause before speaking whenever you feel tempted to exaggerate or shade the truth.",
+      "quiz": {
+        "question": "What was the main point of the Buddha's lesson to Rahula?",
+        "options": [
+          "Guard your tongue and stay truthful",
+          "Elephants are dangerous in war",
+          "Always drink clean water",
+          "Never wash a teacher's feet"
+        ],
+        "answer": 0,
+        "explanation": "He urged Rahula to guard his tongue from untruth, like an elephant protecting its trunk."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--18",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "insults",
+        "boundaries",
+        "calm",
+        "anger"
+      ],
+      "title": "You don't have to accept an insult someone offers you",
+      "body": "A man once came and abused the Buddha. The Buddha stayed silent until he finished, then asked: if someone refuses a gift, who does it belong to? The giver, the man admitted. Then, said the Buddha, I decline your abuse; keep it yourself.\n\nThis is a powerful way to think about insults. Harsh words only hurt us if we pick them up and carry them. You can hear them, refuse them inwardly and stay calm. The anger then stays with the one who brought it.",
+      "quote": "My son,\" said the Buddha, \"thou hast railed at me, but I decline to accept thy abuse, and request thee to keep it thyself.",
+      "locator": "The Sermon on Abuse",
+      "apply_it": "Next time someone is rude to you, silently say: 'I don't accept this gift.' Then respond calmly or not at all.",
+      "quiz": {
+        "question": "In the Sermon on Abuse, what did the Buddha do with the man's insults?",
+        "options": [
+          "He insulted him back",
+          "He declined to accept them, so they stayed with the man",
+          "He ran away",
+          "He agreed with every word"
+        ],
+        "answer": 1,
+        "explanation": "Like a refused gift, the abuse remained with the one who offered it."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--19",
+      "topic": "faith-wisdom",
+      "tags": [
+        "wealth",
+        "virtue",
+        "values",
+        "legacy"
+      ],
+      "title": "The only treasure no thief can take is the good you do",
+      "body": "The Buddha in this book compares two kinds of savings. Treasure buried in a deep pit does no good and can easily be lost. But the treasure stored up through generosity, self-control and good deeds is safe: no thief can steal it, and it is never gained by wronging others.\n\nAt death, he notes, we leave worldly wealth behind but take our deeds with us. Money still matters for daily life, but it is wise to invest in character and kindness too, which hold their value.",
+      "quote": "Let the wise do good deeds; they are a treasure that can never be lost.",
+      "locator": "Words of Instruction",
+      "apply_it": "Alongside your money goals, set one 'good deeds' goal for this month and track it.",
+      "quiz": {
+        "question": "What does the Buddha call 'a treasure that can never be lost'?",
+        "options": [
+          "Gold buried in a pit",
+          "Land and houses",
+          "Good deeds",
+          "Fame"
+        ],
+        "answer": 2,
+        "explanation": "He says good deeds are a treasure that no thief can steal and that cannot be lost."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--20",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "envy",
+        "joy",
+        "comparison",
+        "goodwill"
+      ],
+      "title": "Celebrate other people's good fortune",
+      "body": "Among the ten evils the Buddha urges his followers to avoid, as listed in this book, is covetousness. Instead of envying others, he says, rejoice at their good fortune.\n\nWhen a friend gets a promotion, a neighbour builds a house or a colleague is praised, envy whispers that their gain is your loss. It rarely is. Choosing to be glad for them turns a painful comparison into shared joy, strengthens the friendship and frees you to focus on your own path.",
+      "quote": "Covet not, nor envy, but rejoice at the fortunes of other people.",
+      "locator": "Avoiding the Ten Evils",
+      "apply_it": "Think of someone whose success you have envied. Send them a sincere message of congratulations.",
+      "quiz": {
+        "question": "What does the Buddha advise instead of envy?",
+        "options": [
+          "Compete harder",
+          "Hide your feelings",
+          "Avoid successful people",
+          "Rejoice at the fortunes of others"
+        ],
+        "answer": 3,
+        "explanation": "The eighth of the ten evils to avoid is covetousness: rejoice at others' fortune instead."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--21",
+      "topic": "relationships",
+      "tags": [
+        "gossip",
+        "kindness",
+        "loyalty",
+        "speech"
+      ],
+      "title": "Don't spread bad reports; look for the good in people",
+      "body": "Another of the ten evils is slander. The Buddha in this book tells his followers not to invent evil reports or repeat them, and not to carp, but to look for the good side of others so that they can honestly defend them.\n\nGossip is easy and often feels harmless, but it damages reputations and trust. Choosing to notice and speak of people's strengths changes the atmosphere of a family, office or church. And people come to trust the one who defends absent friends.",
+      "quote": "Invent not evil reports, neither do ye repeat them. Carp not, but look for the good sides of your fellow-beings",
+      "locator": "Avoiding the Ten Evils",
+      "apply_it": "When gossip starts today, change the subject or mention something good about the person being discussed.",
+      "quiz": {
+        "question": "What does the Buddha say we should look for in our fellow beings?",
+        "options": [
+          "Their good sides",
+          "Their secrets",
+          "Their mistakes",
+          "Their wealth"
+        ],
+        "answer": 0,
+        "explanation": "Avoiding slander means not repeating evil reports and looking for the good in others."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--22",
+      "topic": "relationships",
+      "tags": [
+        "conflict",
+        "perspective",
+        "values",
+        "peace"
+      ],
+      "title": "Don't stake what is priceless on what is worthless",
+      "body": "Two kings were about to go to war over a disputed embankment. The Buddha asked them: does the earth itself have value apart from its use? None, they said. Do human lives have value? They are priceless. Then, he asked, will you stake what is priceless on what has no value? Their anger cooled and they made peace.\n\nMany family feuds, workplace fights and land disputes follow the same pattern. Asking what is really at stake, and what we might lose, can calm the fiercest quarrel.",
+      "quote": "Are you going to stake that which is priceless against that which has no intrinsic value whatever?",
+      "locator": "The Peacemaker",
+      "apply_it": "Think of a current conflict. Write down what you could lose by fighting, and what you could gain. Compare.",
+      "quiz": {
+        "question": "How did the Buddha persuade the two kings not to fight?",
+        "options": [
+          "He threatened them with punishment",
+          "He showed them they were risking priceless lives for worthless earth",
+          "He took one king's side",
+          "He divided the land himself"
+        ],
+        "answer": 1,
+        "explanation": "He asked whether they would stake what is priceless against what has no intrinsic value."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--23",
+      "topic": "grief-loss",
+      "tags": [
+        "grief",
+        "loss",
+        "compassion",
+        "mortality"
+      ],
+      "title": "In grief, remember that loss touches every home",
+      "body": "Kisa Gotami's only child died, and in her grief she begged everyone for medicine. The Buddha asked her for a handful of mustard seed from a house where no one had lost a loved one. She went from door to door and found no such house. Slowly she understood that death comes to all, and that she was not alone.\n\nThe story does not rush grief or deny its pain. It shows a path from isolation toward shared humanity. If grief overwhelms you, reach out to people you trust or a counsellor.",
+      "quote": "Death is common to all; yet in this valley of desolation there is a path that leads him to immortality who has surrendered all selfishness.",
+      "locator": "The Mustard Seed",
+      "apply_it": "If someone you know is grieving, visit or call them this week. Listen more than you speak.",
+      "quiz": {
+        "question": "What did Kisa Gotami discover while searching for mustard seed?",
+        "options": [
+          "Mustard seed cures death",
+          "Only she had suffered loss",
+          "Every household had lost someone; death is common to all",
+          "The Buddha refused to help her"
+        ],
+        "answer": 2,
+        "explanation": "She found no house without loss and realised that death is common to all."
+      },
+      "health": true
+    },
+    {
+      "id": "gospel-of-buddha-carus--24",
+      "topic": "health",
+      "tags": [
+        "lifestyle",
+        "overeating",
+        "purpose",
+        "activity"
+      ],
+      "title": "Comfort without purpose can make you unwell",
+      "body": "A rich man suffering from heaviness, drowsiness and pain asked the Buddha for help. The Buddha named five causes: rich dinners, love of sleep, chasing pleasure, thoughtlessness and having nothing useful to do. His advice: eat with self-control and take on duties that use your abilities and serve others.\n\nThe man later returned feeling lighter and stronger. Modern advice echoes this story: moderate eating, activity and a sense of purpose support wellbeing. This is general wisdom; see a doctor about any health concern.",
+      "quote": "Exercise self-control at thy meals, and take upon thyself some duties that will exercise thy abilities and make thee useful to thy fellow-men.",
+      "locator": "Luxurious Living",
+      "apply_it": "Add one useful, active task to your week that helps someone else, and eat one meal more slowly.",
+      "quiz": {
+        "question": "What two things did the Buddha advise the ailing rich man to do?",
+        "options": [
+          "Sleep more and rest all day",
+          "Hire more servants",
+          "Eat richer food",
+          "Control his eating and take on useful duties"
+        ],
+        "answer": 3,
+        "explanation": "He advised self-control at meals and useful duties that serve others."
+      },
+      "health": true
+    },
+    {
+      "id": "gospel-of-buddha-carus--25",
+      "topic": "faith-wisdom",
+      "tags": [
+        "compassion",
+        "service",
+        "care",
+        "kindness"
+      ],
+      "title": "Care for the person no one else will go near",
+      "body": "An old monk with a bad temper fell ill with a disease so unpleasant that no one would help him. When the Buddha heard, he heated water and washed the man's sores with his own hands, day after day, telling his disciples that he had come to befriend the poor and nurse the afflicted, believers or not.\n\nIt is easy to help people who are pleasant and grateful. The harder, holier work is caring for those who are difficult, neglected or unattractive. That is where compassion is tested.",
+      "quote": "The Tathāgata has come into the world to befriend the poor, to succor the unprotected, to nourish those in bodily affliction, both the followers of the Dharma and unbelievers",
+      "locator": "The Sick Bhikkhu",
+      "apply_it": "Think of someone in your community who is often left out. Visit, call or help them this week.",
+      "quiz": {
+        "question": "Why did the Buddha personally care for the sick monk?",
+        "options": [
+          "To help the neglected and set an example of compassion",
+          "Because the monk was his favourite",
+          "To earn payment",
+          "Because the monk was always kind"
+        ],
+        "answer": 0,
+        "explanation": "The Buddha nursed the surly, neglected monk himself, to befriend the afflicted and set an example."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--26",
+      "topic": "personal-development",
+      "tags": [
+        "perseverance",
+        "hope",
+        "leadership",
+        "courage"
+      ],
+      "title": "Don't lose heart just before the breakthrough",
+      "body": "The Buddha told a discouraged monk a story of a caravan lost in the desert without water. The leader refused to despair, found a tuft of grass that hinted at water, and had his men dig. When they hit rock, everyone gave up except one young helper, who struck the stone with a hammer. It split, and water rose up.\n\nMany efforts fail just short of success because we stop at the rock. When others lose hope, one person's steady courage can save the group.",
+      "quote": "My lad, if thou givest up now, we shall all be lost. Do not lose heart.",
+      "locator": "Rescue in the Desert",
+      "apply_it": "Think of a goal where you have hit 'rock'. Plan one more strong blow before you decide to quit.",
+      "quiz": {
+        "question": "What saved the caravan in the desert story?",
+        "options": [
+          "They turned back home",
+          "One helper kept striking the rock when others gave up",
+          "Rain fell from the sky",
+          "They found another caravan"
+        ],
+        "answer": 1,
+        "explanation": "The lad who did not despair broke the rock and water rose for everyone."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--27",
+      "topic": "leadership",
+      "tags": [
+        "community",
+        "teamwork",
+        "tradition",
+        "governance"
+      ],
+      "title": "Communities thrive when they meet often and act together",
+      "body": "Asked about a powerful tribe's strength, the Buddha listed the conditions that keep a community thriving: meeting fully and often, acting in agreement, keeping what experience has proven good and testing new things carefully, respecting elders and avoiding laziness.\n\nThis reads like advice for any family meeting, church, savings group or company. Regular gatherings, shared decisions, careful change and respect across generations keep groups strong. When these fade, decline usually follows.",
+      "quote": "so long as they, O bhikkhus, do not abrogate that which experience has proved to be good, and introduce nothing except such things as have been carefully tested",
+      "locator": "The Conditions of Welfare",
+      "apply_it": "Suggest a regular meeting for a group you belong to, or bring one carefully tested improvement to it.",
+      "quiz": {
+        "question": "Which is one of the Buddha's 'conditions of welfare' for a community?",
+        "options": [
+          "Changing every rule each year",
+          "Meeting as rarely as possible",
+          "Keeping what is proven good and testing new things carefully",
+          "Letting one person decide everything"
+        ],
+        "answer": 2,
+        "explanation": "Communities prosper while they keep what experience has proved good and introduce only tested things."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--28",
+      "topic": "faith-wisdom",
+      "tags": [
+        "self-reliance",
+        "truth",
+        "responsibility",
+        "inner-light"
+      ],
+      "title": "Be a lamp to yourself",
+      "body": "Near the end of his life, as Carus tells it, the Buddha refused to leave his followers dependent on him. Instead he told them to be lamps unto themselves, to hold fast to the truth and rely on their own effort, thoughtful and mindful.\n\nGood teachers aim to make their students independent. Advice and guidance help, but in the end each person must think, practise and choose for themselves. Relying on your own understanding, while staying eager to learn, is a sign of maturity.",
+      "quote": "Therefore, O Ānanda, be ye lamps unto yourselves. Rely on yourselves, and do not rely on external help.",
+      "locator": "The Buddha's Farewell Address",
+      "apply_it": "On one decision this week, think it through yourself first before asking anyone else's opinion.",
+      "quiz": {
+        "question": "What did the Buddha tell Ananda in his farewell address?",
+        "options": [
+          "Depend on me forever",
+          "Choose a new master",
+          "Stop seeking truth",
+          "Be lamps unto yourselves"
+        ],
+        "answer": 3,
+        "explanation": "He told his followers to be lamps unto themselves and hold fast to the truth."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--29",
+      "topic": "faith-wisdom",
+      "tags": [
+        "dignity",
+        "equality",
+        "character",
+        "conduct"
+      ],
+      "title": "People are judged by their deeds, not their birth",
+      "body": "When a priest called the Buddha an outcast, the Buddha asked who an outcast really is. It is the angry, the hateful, the deceitful and the cruel, he said. Not by birth does one become an outcast, nor by birth a noble; it is deeds that decide.\n\nIn a world that still ranks people by family, tribe, class or wealth, this is a radical message. Respect belongs to good conduct wherever it is found, and no one is trapped by the circumstances of their birth.",
+      "quote": "Not by birth does one become an outcast, not by birth does one become a Brahman; by deeds one becomes an outcast, by deeds one becomes a Brahman.",
+      "locator": "The Outcast",
+      "apply_it": "Notice if you judge anyone by their background this week. Look instead at how they act.",
+      "quiz": {
+        "question": "According to the Buddha, what makes a person an outcast?",
+        "options": [
+          "Their deeds",
+          "Their birth",
+          "Their wealth",
+          "Their job"
+        ],
+        "answer": 0,
+        "explanation": "Not by birth but by deeds does one become an outcast or a Brahman."
+      }
+    },
+    {
+      "id": "gospel-of-buddha-carus--30",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "fear",
+        "anxiety",
+        "compassion",
+        "service"
+      ],
+      "title": "When fear grips you, helping others can loosen it",
+      "body": "During a deadly epidemic, Carus tells, one poet stayed calm, caring for the sick. A frightened man begged him for a cure for his fear. The poet answered that there is help for those who have compassion on others, but none while you cling only to yourself.\n\nAnxiety tends to turn us inward, which makes it grow. Turning outward, checking on a neighbour or helping where you can, often brings steadiness and meaning. If anxiety becomes overwhelming, speaking to a health professional also helps.",
+      "quote": "There is help for him who has compassion on others, but there is no help for thee so long as thou clingest to thine own self alone.",
+      "locator": "The Vanity of Worldliness",
+      "apply_it": "When you feel anxious this week, do one small act of help for someone else and notice how you feel.",
+      "quiz": {
+        "question": "What did the poet tell the frightened man during the epidemic?",
+        "options": [
+          "Hide away from everyone",
+          "Help comes through compassion for others",
+          "Enjoy yourself while you can",
+          "Fear is always useful"
+        ],
+        "answer": 1,
+        "explanation": "He said there is help for those who have compassion on others, not for those who cling only to self."
+      },
+      "health": true
+    }
+  ]
+}

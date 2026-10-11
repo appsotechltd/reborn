@@ -1,0 +1,714 @@
+{
+  "source": {
+    "id": "a-mind-for-numbers-oakley",
+    "title": "A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)",
+    "authors": [
+      "Barbara Oakley"
+    ],
+    "kind": "book",
+    "url": "https://www.penguinrandomhouse.com/books/314056/a-mind-for-numbers-by-barbara-oakley-phd/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of A Mind for Numbers by Barbara Oakley (2014). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Tarcher/Penguin",
+    "year": 2014,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "a-mind-for-numbers-oakley--01",
+      "topic": "study-smarter",
+      "tags": [
+        "focused-mode",
+        "diffuse-mode",
+        "thinking"
+      ],
+      "title": "Your brain has two modes of thinking, and you need both",
+      "body": "Barbara Oakley describes two ways the brain works on problems. In focused mode you concentrate tightly on a task, using approaches you already know. In diffuse mode your attention is relaxed, and your mind roams more widely, making looser connections that can lead to fresh insight.\n\nOakley argues that good learners switch between the two. Focused mode does the hard detailed work; diffuse mode, which often kicks in when you stop concentrating, helps you see the bigger picture and find a new way in when you are stuck.",
+      "apply_it": "Notice today when you're concentrating hard and when your mind is wandering. Which moments have given you your best ideas?",
+      "quiz": {
+        "question": "What characterises diffuse mode, according to Oakley?",
+        "options": [
+          "Relaxed attention that makes wider, looser connections",
+          "Intense concentration on one detail",
+          "Memorising by repetition",
+          "Working only under time pressure"
+        ],
+        "answer": 0,
+        "explanation": "Diffuse mode is relaxed, wide-ranging thinking that helps with new insights."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--02",
+      "topic": "study-smarter",
+      "tags": [
+        "diffuse-mode",
+        "breaks",
+        "problem-solving"
+      ],
+      "title": "When you're stuck, step away and let your mind work in the background",
+      "body": "Oakley's advice for a problem that won't give way is not to grind at it endlessly. After a solid stretch of focused effort, switch to something different: take a walk, shower, do some chores or work on another subject. This gives diffuse mode a chance to work on the problem in the background.\n\nOften, when you return, the way forward is clearer. The key is that the break comes after genuine effort. Diffuse mode can only rearrange what focused mode has first loaded into your mind.",
+      "apply_it": "Next time you're stuck for more than fifteen minutes, take a ten-minute walk, then return to the problem.",
+      "quiz": {
+        "question": "When does taking a break help solve a problem, in Oakley's view?",
+        "options": [
+          "Before you've looked at the problem at all",
+          "Only when you're falling asleep",
+          "After a period of genuine focused effort on it",
+          "Never; you should keep working until it's solved"
+        ],
+        "answer": 2,
+        "explanation": "Diffuse mode works on what focused effort has already loaded into your mind."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--03",
+      "topic": "study-smarter",
+      "tags": [
+        "einstellung",
+        "problem-solving",
+        "fresh-eyes"
+      ],
+      "title": "Your first idea can block a better one",
+      "body": "Oakley uses the term Einstellung for the way an idea you already have can stop you seeing a better solution. Like a chess player who spots a familiar move and misses the stronger one, you can get locked into the wrong approach because it came to mind first.\n\nThis is one reason students struggle when they jump straight into a problem without reading it properly, or cling to an old method. Stepping back, rereading the question and letting diffuse mode work can free you from a rut.",
+      "apply_it": "When an approach isn't working, write down one completely different way to attack the problem before trying again.",
+      "quiz": {
+        "question": "What does Oakley mean by Einstellung?",
+        "options": [
+          "A sudden burst of insight",
+          "An existing idea blocking you from seeing a better one",
+          "A type of memory technique",
+          "A test-taking strategy"
+        ],
+        "answer": 1,
+        "explanation": "Einstellung is getting stuck on a familiar approach that prevents a better solution."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--04",
+      "topic": "study-smarter",
+      "tags": [
+        "chunking",
+        "memory",
+        "understanding"
+      ],
+      "title": "Learning means building 'chunks' your mind can use in one piece",
+      "body": "Oakley explains chunking as the process of linking pieces of information through meaning and practice until they form a single, compact unit. A beginner driver thinks about every step of reversing a car; an experienced driver does it as one smooth action.\n\nChunks matter because they free up mental space. Once a concept or method is a chunk, you can call it up quickly and combine it with others, which is how experts handle complex problems without being overwhelmed.",
+      "apply_it": "Pick one method you use often in your subject. Can you do it in one smooth go? If not, practise it until you can.",
+      "quiz": {
+        "question": "What is a chunk, as Oakley uses the term?",
+        "options": [
+          "A large block of study time",
+          "A summary written by a teacher",
+          "A random fact",
+          "Pieces of information bound into one compact, usable unit"
+        ],
+        "answer": 3,
+        "explanation": "A chunk is information linked by meaning and practice into one unit you can use easily."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--05",
+      "topic": "study-smarter",
+      "tags": [
+        "chunking",
+        "practice",
+        "context"
+      ],
+      "title": "Build a chunk by focusing, understanding and then practising",
+      "body": "Oakley outlines how a chunk is formed. First, give the new material your full attention, without distractions. Second, understand the basic idea, the gist of what is going on. Third, practise it so you know not just how to use it, but when to use it, which she calls gaining context.\n\nSkipping any step weakens the chunk. Understanding without practice fades quickly, and practice without understanding leaves you unable to adapt when the problem changes slightly.",
+      "apply_it": "For one topic this week, check yourself on all three steps: did I focus, do I understand the gist, and have I practised when to use it?",
+      "quiz": {
+        "question": "Which step is about learning when to use a technique?",
+        "options": [
+          "Focusing your attention",
+          "Highlighting the textbook",
+          "Copying the solution",
+          "Gaining context through practice"
+        ],
+        "answer": 3,
+        "explanation": "Context comes from practice, showing both how and when to use a chunk."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--06",
+      "topic": "study-smarter",
+      "tags": [
+        "practice",
+        "problem-solving",
+        "fluency"
+      ],
+      "title": "Work key problems yourself until each step flows",
+      "body": "Oakley warns that following a worked solution is not the same as being able to produce it. She recommends taking important problems and working them yourself, from start to finish, without looking, and repeating this over several days until the steps come naturally, almost like a song you know by heart.\n\nThis repeated, active practice turns a solution into a chunk. In an exam or at work, you then have a ready pattern to draw on instead of trying to remember something you once watched someone else do.",
+      "apply_it": "Choose one key problem from your course and solve it from scratch on three separate days this week.",
+      "quiz": {
+        "question": "What does Oakley recommend doing with important problems?",
+        "options": [
+          "Reading the solution once carefully",
+          "Working them yourself repeatedly until the steps flow",
+          "Skipping them if they seem easy",
+          "Asking others to solve them for you"
+        ],
+        "answer": 1,
+        "explanation": "Working problems independently and repeatedly builds a solid chunk."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--07",
+      "topic": "study-smarter",
+      "tags": [
+        "big-picture",
+        "reading",
+        "textbooks"
+      ],
+      "title": "Skim the big picture before you dive into the details",
+      "body": "Before reading a chapter in depth, Oakley suggests getting an overview: glance at the headings, pictures, summary and the questions at the end. This top-down view tells you where the details fit and what matters most.\n\nShe pairs this with bottom-up learning, building chunks through practice. Without the big picture you can master details without knowing how they connect; with it, each new piece has somewhere to belong.",
+      "apply_it": "Before you read your next chapter, spend two minutes looking only at its headings, diagrams and end-of-chapter questions.",
+      "quiz": {
+        "question": "What does Oakley suggest doing before reading a chapter closely?",
+        "options": [
+          "Memorise the first page",
+          "Read it backwards",
+          "Skim headings, pictures and questions for an overview",
+          "Highlight every sentence"
+        ],
+        "answer": 2,
+        "explanation": "A quick overview gives the details a framework to fit into."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--08",
+      "topic": "study-smarter",
+      "tags": [
+        "transfer",
+        "creativity",
+        "chunking"
+      ],
+      "title": "The more chunks you build, the more connections you can make",
+      "body": "Oakley describes a growing library of chunks as the raw material for expertise and creativity. Once you have mastered many patterns, you can recognise them in new problems and even borrow ideas from one subject to solve problems in another.\n\nThis transfer is why learning compounds over time. A concept from maths can help in economics; a pattern from music can help with languages. Each solid chunk you build makes the next ones easier to learn and connect.",
+      "apply_it": "Think of a skill from one area of your life and write down how it could help in a subject you're studying now.",
+      "quiz": {
+        "question": "Why does a larger library of chunks help, according to Oakley?",
+        "options": [
+          "You can recognise patterns and transfer ideas between subjects",
+          "You no longer need to practise",
+          "It makes you remember everything automatically",
+          "It lets you skip understanding"
+        ],
+        "answer": 0,
+        "explanation": "More chunks mean more patterns to recognise and combine, including across fields."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--09",
+      "topic": "study-smarter",
+      "tags": [
+        "starting",
+        "persistence",
+        "luck"
+      ],
+      "title": "Just start: luck favours the one who tries",
+      "body": "Oakley calls it the law of serendipity: Lady Luck favours the one who tries. When a subject feels overwhelming, focus on learning one section at a time. You don't need to master everything at once; you need to make a start.\n\nOnce you begin, you'll often find that the next piece makes more sense, or that the questions you've studied turn up when they're needed. Effort creates opportunities that waiting never will.",
+      "apply_it": "Choose the smallest section of a subject you've been avoiding and study only that today.",
+      "quiz": {
+        "question": "What does Oakley's 'law of serendipity' encourage?",
+        "options": [
+          "Making a start, one section at a time",
+          "Waiting until you feel fully prepared",
+          "Relying on luck instead of effort",
+          "Studying everything in one night"
+        ],
+        "answer": 0,
+        "explanation": "Trying, even a little at a time, opens up chances that waiting doesn't."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--10",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "starting",
+        "discomfort"
+      ],
+      "title": "The pain of starting fades soon after you begin",
+      "body": "Oakley explains that thinking about a task we dislike can trigger a genuine feeling of discomfort, and procrastination is how we escape it, by turning to something more pleasant. The relief is short-lived and the task remains.\n\nThe encouraging part, she notes, is that the discomfort usually fades quickly once you actually start working. Knowing this makes it easier to push through the first few minutes, since the dread is mostly about the anticipation, not the work itself.",
+      "apply_it": "Next time you feel dread about a task, set a timer for five minutes and just begin. Notice how you feel when it ends.",
+      "quiz": {
+        "question": "What does Oakley say usually happens to the discomfort of a disliked task once you start?",
+        "options": [
+          "It gets steadily worse",
+          "It never changes",
+          "It fades fairly soon",
+          "It turns into anger"
+        ],
+        "answer": 2,
+        "explanation": "The dread is mostly in the anticipation; working on the task tends to dissolve it."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--11",
+      "topic": "study-smarter",
+      "tags": [
+        "pomodoro",
+        "focus",
+        "procrastination"
+      ],
+      "title": "Work in 25-minute bursts with a reward at the end",
+      "body": "One of Oakley's main tools against procrastination is the Pomodoro Technique, developed by Francesco Cirillo. You set a timer for 25 minutes, remove distractions and work with full focus. When the timer rings, you take a short break and give yourself a small reward.\n\nIt works because 25 minutes feels manageable, so it is easier to start, and the timer turns attention away from finishing the whole task towards simply doing focused work for a while. The breaks also give diffuse mode a chance to work.",
+      "apply_it": "Do two Pomodoros today: 25 minutes of focused work, a five-minute break, then another 25 minutes.",
+      "quiz": {
+        "question": "How long is a standard Pomodoro work session?",
+        "options": [
+          "5 minutes",
+          "25 minutes",
+          "90 minutes",
+          "Until the task is completely finished"
+        ],
+        "answer": 1,
+        "explanation": "The technique uses 25 minutes of focused work followed by a short break."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--12",
+      "topic": "productivity",
+      "tags": [
+        "process",
+        "procrastination",
+        "habits"
+      ],
+      "title": "Focus on putting in the time, not on finishing the task",
+      "body": "Oakley distinguishes between process and product. The product is the outcome, such as a finished assignment, and thinking about it can trigger the discomfort that leads to procrastination. The process is the flow of time and the habits you use to get there, such as 'I'll spend 25 minutes working on this'.\n\nBy focusing on the process, you let yourself off the hook of having to finish, which makes starting easier. Progress accumulates from regular sessions, and the product takes care of itself.",
+      "apply_it": "Rewrite one task on your list as a time commitment, like 'two Pomodoros on the essay', instead of 'finish essay'.",
+      "quiz": {
+        "question": "Why does Oakley suggest focusing on process rather than product?",
+        "options": [
+          "The product doesn't matter at all",
+          "Process means working without breaks",
+          "It guarantees better grades",
+          "Thinking about the finished product can trigger procrastination"
+        ],
+        "answer": 3,
+        "explanation": "Focusing on time spent avoids the dread of the whole task and makes starting easier."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--13",
+      "topic": "study-smarter",
+      "tags": [
+        "habits",
+        "procrastination",
+        "cues"
+      ],
+      "title": "Beat procrastination by changing your reaction to its cues",
+      "body": "Oakley explains that procrastination is a habit, and habits have parts: a cue that triggers them, a routine you follow, a reward and the belief that keeps them going. The cue is often a location, a time, a feeling or a notification.\n\nShe advises concentrating on the cue. If your phone pulls you away, switch it off or leave it in another room while you study. Then build a new routine for that cue, reward yourself for it, and believe the new habit can work.",
+      "apply_it": "Identify the cue that most often leads you to procrastinate and remove or block it during your next study session.",
+      "quiz": {
+        "question": "Which part of the procrastination habit does Oakley suggest focusing on to change it?",
+        "options": [
+          "The weather",
+          "Other people's habits",
+          "The length of the task",
+          "Your reaction to the cue"
+        ],
+        "answer": 3,
+        "explanation": "Changing your response to the cue, and removing cues, breaks the habit loop."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--14",
+      "topic": "productivity",
+      "tags": [
+        "planning",
+        "to-do-list",
+        "routines"
+      ],
+      "title": "Write tomorrow's task list the evening before",
+      "body": "Oakley recommends writing a short list of the next day's tasks the night before. This lets your mind start working on them, often through diffuse mode, and means you begin the day knowing exactly what to do rather than deciding in the moment.\n\nShe also suggests keeping the list realistic, with a few key tasks rather than an impossible list, and keeping a simple record over time of what you actually get done, so you learn how much you can really manage.",
+      "apply_it": "Before bed tonight, write down no more than five tasks for tomorrow.",
+      "quiz": {
+        "question": "Why does Oakley suggest making a task list the night before?",
+        "options": [
+          "It means you can sleep late",
+          "Your mind can begin working on it, and you start the day with a plan",
+          "It avoids needing any breaks",
+          "It guarantees every task gets done"
+        ],
+        "answer": 1,
+        "explanation": "A list made in advance gives you a clear start and lets your subconscious get to work."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--15",
+      "topic": "productivity",
+      "tags": [
+        "quitting-time",
+        "balance",
+        "rest"
+      ],
+      "title": "Set a time to stop working each day",
+      "body": "Oakley recommends having a quitting time, a set hour after which you stop work and switch to rest and other parts of life. Knowing work has an end makes the focused hours more productive, because you can't drift through them assuming there will always be more time later.\n\nRest isn't wasted time either. Time off gives diffuse mode room to work on what you've learned, and helps you return fresh the next day.",
+      "apply_it": "Choose a quitting time for your study or work today and stick to it.",
+      "quiz": {
+        "question": "What is one benefit of having a set quitting time, according to Oakley?",
+        "options": [
+          "You can avoid making plans",
+          "It removes the need for breaks",
+          "Focused hours become more productive and rest supports learning",
+          "It makes deadlines disappear"
+        ],
+        "answer": 2,
+        "explanation": "A firm end point sharpens focus, and rest gives diffuse mode time to work."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--16",
+      "topic": "study-smarter",
+      "tags": [
+        "recall",
+        "reading",
+        "memory"
+      ],
+      "title": "After reading a page, look away and recall the main idea",
+      "body": "One of Oakley's simplest recommendations is recall: after reading a page or section, look away and try to state the key ideas in your own words. She suggests trying not to look at the page while you do it.\n\nThis small act builds chunks far better than simply rereading, and it immediately reveals whether you actually took in what you read. If you can't recall it, you've found something to go back to before moving on.",
+      "apply_it": "Read one page of your notes, look away and say the main idea aloud before turning the page.",
+      "quiz": {
+        "question": "What does Oakley recommend doing after reading a page?",
+        "options": [
+          "Look away and recall its main ideas",
+          "Reread it three times",
+          "Highlight the whole page",
+          "Move on to the next page immediately"
+        ],
+        "answer": 0,
+        "explanation": "Recalling key ideas without looking builds understanding and exposes gaps."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--17",
+      "topic": "study-smarter",
+      "tags": [
+        "recall",
+        "context",
+        "exams"
+      ],
+      "title": "Practise recalling material in different places",
+      "body": "Oakley points out that we can become used to the cues of the room where we study, which may make recall harder somewhere else, such as an exam hall. One remedy she suggests is to practise recalling material in different settings: on a walk, in a different room, or outside.\n\nThis helps your knowledge stand on its own, independent of one desk or one corner of the library, so it's ready wherever you need it.",
+      "apply_it": "Take a set of key facts with you on a walk and try recalling them without notes.",
+      "quiz": {
+        "question": "Why does Oakley suggest recalling material in different places?",
+        "options": [
+          "So your knowledge isn't tied to the cues of one study room",
+          "Because libraries are bad for learning",
+          "To avoid being disturbed",
+          "Because walking replaces study"
+        ],
+        "answer": 0,
+        "explanation": "Varying the setting helps recall work outside the familiar study space."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--18",
+      "topic": "study-smarter",
+      "tags": [
+        "illusions-of-competence",
+        "highlighting",
+        "self-testing"
+      ],
+      "title": "Glancing at a solution isn't the same as knowing it",
+      "body": "Oakley warns about illusions of competence, the feeling that you understand something when you don't. A common one is looking at a worked solution and thinking 'yes, that makes sense', then finding you can't do it alone. Heavy highlighting can do the same, making it feel like the material is in your head when it is only on the page.\n\nThe test is whether you can produce it yourself. She suggests highlighting sparingly and checking understanding by recalling and working problems without help.",
+      "apply_it": "For one solution you 'understand', cover it up and try to solve the problem yourself right now.",
+      "quiz": {
+        "question": "What is an example of an illusion of competence, according to Oakley?",
+        "options": [
+          "Recalling an idea without notes",
+          "Working a problem from scratch",
+          "Thinking you can solve a problem because you followed its solution",
+          "Explaining a concept to a friend"
+        ],
+        "answer": 2,
+        "explanation": "Following a solution can feel like mastery even when you can't produce it yourself."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--19",
+      "topic": "study-smarter",
+      "tags": [
+        "memory",
+        "mnemonics",
+        "visualisation"
+      ],
+      "title": "Turn dry facts into vivid, even silly, images",
+      "body": "Oakley suggests that the brain remembers images, stories and feelings far better than abstract facts. To memorise something dry, like a formula or a list, she recommends making it vivid: picture memorable, even absurd images, invent a silly sentence from the first letters, or set it to a tune.\n\nThese tricks aren't a substitute for understanding, but they give your memory something to hold, freeing working memory for the real thinking.",
+      "apply_it": "Make up a short, funny image or sentence to help you remember one list or formula you need this week.",
+      "quiz": {
+        "question": "Why does Oakley recommend making facts vivid or silly?",
+        "options": [
+          "It replaces the need to understand",
+          "The brain remembers images and stories better than abstract facts",
+          "Teachers prefer silly answers",
+          "It makes the facts shorter"
+        ],
+        "answer": 1,
+        "explanation": "Vivid images, sentences and songs make abstract facts easier to hold in memory."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--20",
+      "topic": "study-smarter",
+      "tags": [
+        "metaphors",
+        "analogies",
+        "understanding"
+      ],
+      "title": "Use metaphors and analogies to understand hard ideas",
+      "body": "Oakley encourages learners to explain difficult concepts to themselves through metaphor and analogy: comparing electricity to water flowing through pipes, for instance. Linking something abstract to something familiar gives you a mental handle on it.\n\nNo analogy is perfect, and she notes that metaphors eventually break down. But they help you grasp the core idea quickly, and you can refine or replace them as your understanding grows.",
+      "apply_it": "Choose one concept you find hard and write a sentence comparing it to something from everyday life.",
+      "quiz": {
+        "question": "What does Oakley say about metaphors in learning?",
+        "options": [
+          "They are always perfectly accurate",
+          "They should never be used in science",
+          "They replace the need for practice",
+          "They help you grasp ideas, though they eventually break down"
+        ],
+        "answer": 3,
+        "explanation": "Analogies give a quick handle on abstract ideas, even if imperfect."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--21",
+      "topic": "study-smarter",
+      "tags": [
+        "imagination",
+        "visualisation",
+        "science"
+      ],
+      "title": "Imagine yourself inside the thing you're studying",
+      "body": "Oakley notes that some scientists and inventors have used their imagination to step inside the problem, picturing themselves as an electron, a molecule or a ray of light, and asking what they would feel or do.\n\nThis kind of playful visualisation makes abstract material more concrete and memorable. It can feel childish, but it is a serious way to build intuition about how something behaves.",
+      "apply_it": "Pick a process you're studying and describe it in the first person, as if you were part of it.",
+      "quiz": {
+        "question": "What technique does Oakley describe for building intuition about abstract ideas?",
+        "options": [
+          "Memorising definitions word for word",
+          "Avoiding mental pictures",
+          "Only studying with a group",
+          "Imagining yourself as part of the thing being studied"
+        ],
+        "answer": 3,
+        "explanation": "Imagining yourself inside the problem makes abstract ideas concrete."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--22",
+      "topic": "study-smarter",
+      "tags": [
+        "explaining",
+        "teaching",
+        "understanding"
+      ],
+      "title": "Explain it simply, as if to a beginner",
+      "body": "Oakley recommends testing your understanding by explaining a concept in simple terms, as if to someone who knows nothing about the subject. Trying to make it clear to a beginner forces you to find the core idea and exposes the parts you've been glossing over.\n\nYou don't need a real audience; you can talk to a friend, a family member or an imaginary student. Where you stumble or reach for jargon is exactly where your understanding needs work.",
+      "apply_it": "Explain one idea from your studies to a family member in two minutes, using no technical terms.",
+      "quiz": {
+        "question": "What does explaining something simply reveal, according to Oakley?",
+        "options": [
+          "How much jargon you know",
+          "The parts you don't really understand yet",
+          "That you should study less",
+          "Nothing useful"
+        ],
+        "answer": 1,
+        "explanation": "Simple explanations expose the gaps that jargon can hide."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--23",
+      "topic": "study-smarter",
+      "tags": [
+        "working-memory",
+        "focus",
+        "distractions"
+      ],
+      "title": "Your working memory holds only a few things at once",
+      "body": "Oakley describes working memory as a small mental workspace that can hold roughly four items at a time. Every distraction, such as a phone notification or a noisy room, uses up some of that limited space.\n\nThat's why chunking matters: a well-formed chunk counts as one item and leaves room for thinking. It's also why she recommends a quiet place and, sometimes, closing your eyes when thinking through something difficult.",
+      "apply_it": "During your next study session, put your phone in another room and notice whether it's easier to hold ideas in mind.",
+      "quiz": {
+        "question": "About how many items can working memory hold at once, according to Oakley?",
+        "options": [
+          "About forty",
+          "Unlimited",
+          "About four",
+          "Only one"
+        ],
+        "answer": 2,
+        "explanation": "Working memory is small, so distractions crowd it and chunks help save space."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--24",
+      "topic": "study-smarter",
+      "tags": [
+        "slow-learners",
+        "strengths",
+        "confidence"
+      ],
+      "title": "Learning more slowly can bring deeper understanding",
+      "body": "Oakley offers comfort to people who feel slow. She compares quick learners to a race car driver who gets to the finish fast but sees little on the way, and slower learners to a hiker who takes longer but notices more of the terrain.\n\nPeople who need more time often build a deeper, more flexible grasp, and may spot things fast thinkers miss. Speed is not the same as intelligence or ability to master a subject.",
+      "apply_it": "Write down one subject where taking your time has helped you understand something more fully.",
+      "quiz": {
+        "question": "In Oakley's analogy, what advantage does the 'hiker' have over the 'race car driver'?",
+        "options": [
+          "Noticing more along the way and understanding more deeply",
+          "Arriving first",
+          "Never needing to study",
+          "Avoiding all mistakes"
+        ],
+        "answer": 0,
+        "explanation": "Slower learners can take in more detail and build deeper understanding."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--25",
+      "topic": "study-smarter",
+      "tags": [
+        "impostor-syndrome",
+        "confidence",
+        "self-doubt"
+      ],
+      "title": "Feeling like an impostor is common, even among capable people",
+      "body": "Oakley notes that many students and professionals feel like impostors, convinced everyone else understands and they are about to be found out. This feeling is common among people who are actually doing well.\n\nRecognising it for what it is can stop it from derailing you. Feeling unsure is a normal part of learning something difficult, not evidence that you don't belong.",
+      "apply_it": "Next time you feel like an impostor, write down three pieces of evidence that you have earned your place.",
+      "quiz": {
+        "question": "What does Oakley say about impostor feelings?",
+        "options": [
+          "They are common, even among people who are doing well",
+          "They prove you don't belong",
+          "Only weak students have them",
+          "They mean you should change subjects"
+        ],
+        "answer": 0,
+        "explanation": "Impostor feelings are widespread and don't mean you lack ability."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--26",
+      "topic": "study-smarter",
+      "tags": [
+        "exercise",
+        "learning",
+        "brain-health"
+      ],
+      "title": "Regular exercise supports your learning",
+      "body": "Oakley highlights physical activity as a helpful partner to study. She points to research suggesting that exercise supports the growth of new neurons in brain areas linked to memory and helps the brain function well.\n\nExercise is also a good way to switch into diffuse mode. A brisk walk, a run or a game of football after focused study gives your mind time to make connections. This is general wellbeing advice; check with a health professional before starting something strenuous if you have health concerns.",
+      "apply_it": "Schedule one active break during your next long study day, such as a 20-minute walk.",
+      "quiz": {
+        "question": "Why does Oakley encourage exercise for learners?",
+        "options": [
+          "It replaces the need to study",
+          "It makes exams easier to pass without preparation",
+          "It supports brain health and gives diffuse mode time to work",
+          "It only helps athletes"
+        ],
+        "answer": 2,
+        "explanation": "Exercise supports the brain and offers a natural diffuse-mode break."
+      },
+      "health": true
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--27",
+      "topic": "study-smarter",
+      "tags": [
+        "sleep",
+        "exams",
+        "memory"
+      ],
+      "title": "Don't trade sleep for a last-minute all-nighter",
+      "body": "Oakley stresses that sleep is part of learning. She explains that sleep helps the brain clear away waste products and strengthen important connections. Reviewing material shortly before sleep can also help, as your mind may continue working on it.\n\nFor exams, she warns against all-nighters: arriving exhausted harms your thinking more than a few extra hours of cramming can help. A good night's sleep before a test is one of the simplest ways to perform well.",
+      "apply_it": "Plan your revision so you can sleep normally the night before your next exam.",
+      "quiz": {
+        "question": "What is Oakley's advice about the night before an exam?",
+        "options": [
+          "Study all night to cover more material",
+          "Get a good night's sleep rather than staying up cramming",
+          "Sleep only two hours",
+          "Avoid reviewing anything that week"
+        ],
+        "answer": 1,
+        "explanation": "Sleep supports memory and clear thinking; all-nighters undermine exam performance."
+      },
+      "health": true
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--28",
+      "topic": "study-smarter",
+      "tags": [
+        "exams",
+        "test-taking",
+        "diffuse-mode"
+      ],
+      "title": "In exams, start hard, then jump to easy",
+      "body": "Oakley's test-taking technique is called 'hard start, jump to easy'. Look over the paper, then start with a hard problem. As soon as you feel stuck, usually within a minute or two, move to an easier question and complete it. Later, return to the hard one.\n\nThis lets diffuse mode keep working on the difficult problem while you make progress elsewhere. When you go back, you often see it with fresh eyes. It also stops you sinking all your time into one question.",
+      "apply_it": "In your next practice test, try starting with a hard question and switching to easier ones the moment you get stuck.",
+      "quiz": {
+        "question": "What is the 'hard start, jump to easy' technique?",
+        "options": [
+          "Answer only the easy questions",
+          "Spend all your time on the hardest question",
+          "Start with the last question and work backwards",
+          "Start a hard problem, switch to easier ones when stuck, then return"
+        ],
+        "answer": 3,
+        "explanation": "Starting hard primes diffuse mode while you complete easier questions."
+      }
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--29",
+      "topic": "study-smarter",
+      "tags": [
+        "test-anxiety",
+        "breathing",
+        "stress"
+      ],
+      "title": "Reframe exam nerves and breathe deeply",
+      "body": "Oakley notes that feeling stressed before a test is normal, and that the body's stress response can actually help you focus. She suggests reframing the feeling: telling yourself 'this test has got me excited to do my best' instead of 'I'm scared'.\n\nIf panic starts to rise, she recommends slow, deep breathing from the belly for a few moments to calm down. If anxiety around exams is severe or lasting, talking to a counsellor or health professional can help.",
+      "apply_it": "Before your next test, take five slow, deep belly breaths and tell yourself you're excited to show what you know.",
+      "quiz": {
+        "question": "How does Oakley suggest reframing exam nerves?",
+        "options": [
+          "Ignore the test completely",
+          "Leave the exam early",
+          "Panic so you work faster",
+          "See the stress as excitement that can help you perform"
+        ],
+        "answer": 3,
+        "explanation": "Reframing stress as excitement, plus deep breathing, helps manage nerves."
+      },
+      "health": true
+    },
+    {
+      "id": "a-mind-for-numbers-oakley--30",
+      "topic": "study-smarter",
+      "tags": [
+        "checking",
+        "overconfidence",
+        "exams"
+      ],
+      "title": "Check your answers with fresh eyes before you hand them in",
+      "body": "Oakley warns that when you've just finished a problem, your focused mind can be overconfident. You see what you expect, so mistakes slip past. Before submitting work, she advises shifting your attention briefly and then reviewing your answers as if seeing them for the first time.\n\nAsk whether each result makes sense. Does the number look reasonable? Did you answer the question actually asked? A quick common-sense check catches many errors.",
+      "apply_it": "For your next assignment, pause for a minute after finishing, then check each answer by asking 'does this make sense?'",
+      "quiz": {
+        "question": "Why does Oakley recommend checking answers with fresh eyes?",
+        "options": [
+          "Teachers require it",
+          "The focused mind can be overconfident and miss mistakes",
+          "It makes answers longer",
+          "Your first answer is always wrong"
+        ],
+        "answer": 1,
+        "explanation": "Shifting attention and rechecking helps catch errors that overconfidence hides."
+      }
+    }
+  ]
+}

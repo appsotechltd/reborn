@@ -1,0 +1,712 @@
+{
+  "source": {
+    "id": "deep-work-newport",
+    "title": "Deep Work",
+    "authors": [
+      "Cal Newport"
+    ],
+    "kind": "book",
+    "url": "https://calnewport.com/writing/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Deep Work by Cal Newport (2016). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Grand Central Publishing",
+    "year": 2016,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "deep-work-newport--01",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "deep-work",
+        "career"
+      ],
+      "title": "Deep work is becoming rarer just as it becomes more valuable",
+      "body": "Newport splits work into two kinds. Deep work is demanding, distraction-free effort that stretches your abilities and produces things that are hard to copy. Shallow work is the logistical stuff, like email and routine admin, that can be done while distracted.\n\nHis argument is that the ability to concentrate hard is getting scarcer, because modern workplaces are built around constant messaging, while it is also becoming more valuable for learning difficult skills quickly and producing excellent results. Anyone who builds this ability gains an edge.",
+      "apply_it": "Look at yesterday and estimate how many hours were deep work versus shallow work. Write both numbers down.",
+      "quiz": {
+        "question": "How does Newport define deep work?",
+        "options": [
+          "Any work done in an office",
+          "Focused, distraction-free effort that pushes your abilities",
+          "Working long hours",
+          "Answering messages quickly"
+        ],
+        "answer": 1,
+        "explanation": "Deep work is concentrated, cognitively demanding effort that creates real value."
+      }
+    },
+    {
+      "id": "deep-work-newport--02",
+      "topic": "productivity",
+      "tags": [
+        "attention",
+        "task-switching",
+        "multitasking"
+      ],
+      "title": "Switching tasks leaves part of your mind behind",
+      "body": "Newport draws on research into what is called attention residue. When you move from one task to another, some of your attention stays stuck on the first one, so you perform worse on the second.\n\nThis means that a quick glance at your inbox in the middle of focused work is not free. Even a brief check can leave your mind partly elsewhere for a while afterwards. Working in long, single-task stretches, rather than constantly hopping between tabs and chats, lets your full attention land on what matters.",
+      "apply_it": "For your next focused block, close email and chat completely rather than just minimising them.",
+      "quiz": {
+        "question": "What is 'attention residue'?",
+        "options": [
+          "Part of your attention staying on a previous task after you switch",
+          "Notes left over from a meeting",
+          "Tiredness after a long day",
+          "A type of distraction app"
+        ],
+        "answer": 0,
+        "explanation": "After switching, some attention lingers on the old task and reduces performance on the new one."
+      }
+    },
+    {
+      "id": "deep-work-newport--03",
+      "topic": "productivity",
+      "tags": [
+        "scheduling",
+        "routines",
+        "focus"
+      ],
+      "title": "Pick a deep work rhythm that fits your life",
+      "body": "Newport describes several ways to fit deep work into a schedule. Some people almost entirely cut themselves off from shallow obligations. Others split their time, devoting whole days or seasons to focus and the rest to everything else. Many find a daily habit works best, such as the same focused block every morning. And some fit focus into whatever gaps appear, which takes practice.\n\nThe point is not which approach is best, but that relying on willpower alone fails. A deliberate routine makes deep work automatic.",
+      "apply_it": "Choose one recurring time slot this week for focused work and put it in your calendar as a fixed appointment.",
+      "quiz": {
+        "question": "What is Newport's main point about scheduling deep work?",
+        "options": [
+          "Everyone should go fully offline",
+          "Deep work only happens at night",
+          "Only the rhythmic approach works",
+          "Choose a deliberate approach rather than relying on willpower"
+        ],
+        "answer": 3,
+        "explanation": "He offers several approaches; what matters is having a deliberate system instead of waiting for willpower."
+      }
+    },
+    {
+      "id": "deep-work-newport--04",
+      "topic": "mental-strength",
+      "tags": [
+        "boredom",
+        "phones",
+        "concentration"
+      ],
+      "title": "Practise being bored so your focus can grow",
+      "body": "Newport argues that concentration is like a muscle that weakens if you never use it. If you reach for your phone every time you queue, wait or feel a flicker of boredom, your brain gets used to constant novelty and struggles to stay with hard tasks.\n\nOne idea he suggests is to schedule specific times for internet use and stay offline outside them, rather than scheduling breaks from distraction. Letting yourself sit with boredom now and then trains your mind to tolerate the slow parts of deep work.",
+      "apply_it": "Next time you're waiting in line, leave your phone in your pocket and just notice your surroundings.",
+      "quiz": {
+        "question": "Why does Newport suggest tolerating boredom?",
+        "options": [
+          "Boredom is relaxing",
+          "Phones are bad for your eyes",
+          "Constant novelty-seeking weakens your ability to concentrate",
+          "It saves battery"
+        ],
+        "answer": 2,
+        "explanation": "Always escaping boredom trains your brain to crave distraction, making deep focus harder."
+      }
+    },
+    {
+      "id": "deep-work-newport--05",
+      "topic": "productivity",
+      "tags": [
+        "social-media",
+        "tools",
+        "digital-minimalism"
+      ],
+      "title": "Judge each online tool by its real impact on what matters",
+      "body": "Many people justify apps by saying they offer some benefit. Newport thinks that bar is far too low, since almost anything has some benefit. He suggests a stricter test: identify the main goals in your work and life, then keep a tool only if its positive effects on those goals clearly outweigh its costs in time and attention.\n\nHe also suggests experimenting by stepping away from a service for a while and seeing whether anyone, including you, actually misses it.",
+      "apply_it": "Pick one social app, stop using it for 30 days without announcing it, then decide whether it truly earned a place back.",
+      "quiz": {
+        "question": "What test does Newport propose for keeping a digital tool?",
+        "options": [
+          "Keep it if it has any benefit at all",
+          "Keep it only if its benefits to your key goals clearly outweigh its costs",
+          "Keep it if friends use it",
+          "Never use any tools"
+        ],
+        "answer": 1,
+        "explanation": "Some benefit isn't enough; the tool must substantially help your most important goals."
+      }
+    },
+    {
+      "id": "deep-work-newport--06",
+      "topic": "productivity",
+      "tags": [
+        "shutdown",
+        "rest",
+        "work-life-balance"
+      ],
+      "title": "End the workday with a clear shutdown",
+      "body": "Newport recommends a consistent ritual at the end of each workday. Review your open tasks, make sure each one is captured or has a plan, look at the next day, and then deliberately declare work finished.\n\nThe point is to let your mind fully rest. Unfinished tasks tend to nag at you unless they are written down with a plan. Real downtime in the evening recharges your capacity for focus, and checking email at night chips away at the rest that makes tomorrow's deep work possible.",
+      "apply_it": "At the end of today, spend five minutes listing open tasks and tomorrow's first priority, then stop checking work messages.",
+      "quiz": {
+        "question": "What is the purpose of Newport's shutdown ritual?",
+        "options": [
+          "To let your mind properly rest and recharge",
+          "To work later into the evening",
+          "To impress your manager",
+          "To clear your inbox to zero"
+        ],
+        "answer": 0,
+        "explanation": "Closing loops and stopping work fully gives your brain the rest it needs for focus tomorrow."
+      }
+    },
+    {
+      "id": "deep-work-newport--07",
+      "topic": "skills-mastery",
+      "tags": [
+        "learning",
+        "career",
+        "skills"
+      ],
+      "title": "Two abilities matter most: learning hard things fast and producing great work",
+      "body": "Newport argues that in an economy reshaped by technology, two core abilities set people apart. The first is mastering difficult things quickly, because tools and industries keep changing and you will need to keep learning. The second is producing at a high level, in both quality and speed, since good work that never ships has little value.\n\nHe then argues that both of these depend on the ability to concentrate deeply. Scattered, half-attentive effort makes learning slower and output weaker, so focus becomes the foundation for staying valuable in your career.",
+      "apply_it": "Name one hard skill that would make you more valuable at work. Write down when this week you will spend an undistracted hour on it.",
+      "quiz": {
+        "question": "Which two core abilities does Newport say help people thrive in the modern economy?",
+        "options": [
+          "Networking widely and posting online often",
+          "Working the longest hours and never refusing tasks",
+          "Quickly mastering hard things and producing at an elite level",
+          "Knowing many tools and answering emails quickly"
+        ],
+        "answer": 2,
+        "explanation": "Newport names fast learning of hard skills and high-quality, fast output, and says both rely on deep focus."
+      }
+    },
+    {
+      "id": "deep-work-newport--08",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "output",
+        "intensity"
+      ],
+      "title": "Results depend on time spent multiplied by how intensely you focus",
+      "body": "Newport offers a simple way to think about output: the quality of work you produce depends on the time you spend multiplied by the intensity of your focus during that time.\n\nThe practical lesson is that long hours are not the only lever. A shorter stretch of full, single-minded attention can produce more than a long day broken up by messages and interruptions. If you raise the intensity, you can often get better results in less time, which also leaves more room for rest and the rest of your life.",
+      "apply_it": "Pick one task you usually do with your phone nearby. Do it once in a quiet place with no interruptions and compare how long it takes.",
+      "quiz": {
+        "question": "According to Newport's formula, what two things determine the quality of work produced?",
+        "options": [
+          "Talent and luck",
+          "Time spent and intensity of focus",
+          "Team size and budget",
+          "Experience and job title"
+        ],
+        "answer": 1,
+        "explanation": "He frames high-quality output as time spent multiplied by the intensity of focus."
+      }
+    },
+    {
+      "id": "deep-work-newport--09",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "skills",
+        "learning"
+      ],
+      "title": "Getting better requires focused practice on a specific weakness",
+      "body": "Newport draws on research about deliberate practice, the kind of training that experts use to improve. It has two key features. Your attention is tightly focused on a specific skill you are trying to improve, and you get feedback so you can correct your approach as you go.\n\nCasual repetition while distracted does not count. Newport's point is that deliberate practice simply cannot happen without deep concentration, which is one reason he sees focus as essential to building valuable skills rather than just a nice extra.",
+      "apply_it": "Pick one narrow part of a skill you want to improve. Practise only that for 30 minutes and ask someone for feedback afterwards.",
+      "quiz": {
+        "question": "Which two features define deliberate practice as described in Deep Work?",
+        "options": [
+          "Tight focus on a specific skill and feedback to correct your approach",
+          "Long hours and a relaxed attitude",
+          "Practising many skills at once while multitasking",
+          "Repeating what you already do well"
+        ],
+        "answer": 0,
+        "explanation": "Deliberate practice needs focused attention on one skill plus feedback, and that requires deep concentration."
+      }
+    },
+    {
+      "id": "deep-work-newport--10",
+      "topic": "business",
+      "tags": [
+        "workplace",
+        "distraction",
+        "measurement"
+      ],
+      "title": "The cost of constant distraction is real even though it's hard to measure",
+      "body": "Newport points out that most organisations never measure how much open-plan offices, instant messaging or expectations of fast email replies cost them in lost focus. He calls this a metric black hole: the damage is spread out and hard to see, so it gets ignored.\n\nBecause nobody can easily point to the lost value, habits that feel productive or friendly keep spreading, even if they quietly undermine the hardest and most valuable work. Just because a cost doesn't appear in a report doesn't mean it isn't there.",
+      "apply_it": "List the interruptions in your typical workday. For each one, ask whether anyone has ever checked what it costs your team.",
+      "quiz": {
+        "question": "Why does Newport say workplace distractions keep spreading?",
+        "options": [
+          "They have been proven to increase output",
+          "Workers refuse to use other tools",
+          "Laws require constant availability",
+          "Their cost to focus is hard to measure, so it is ignored"
+        ],
+        "answer": 3,
+        "explanation": "He calls it a metric black hole: the cost of distraction is real but rarely measured, so it goes unnoticed."
+      }
+    },
+    {
+      "id": "deep-work-newport--11",
+      "topic": "productivity",
+      "tags": [
+        "busyness",
+        "shallow-work",
+        "habits"
+      ],
+      "title": "Looking busy is not the same as producing valuable work",
+      "body": "Newport observes that in many jobs it is hard to show clearly how much value you create. Without a clear measure, people fall back on visible busyness, such as replying quickly, attending lots of meetings and always being online, as a way of signalling that they are productive.\n\nHe also notes that people tend to drift towards whatever is easiest in the moment, and constant connectivity is easy. The danger is that a full, frantic day can feel productive while the important, demanding work never gets done.",
+      "apply_it": "At the end of today, write down what you actually produced, not what you were busy with. Compare the two lists.",
+      "quiz": {
+        "question": "What does Newport say people often use as a stand-in for productivity when value is hard to measure?",
+        "options": [
+          "Detailed weekly reports of finished work",
+          "Customer satisfaction scores",
+          "Visible busyness, like fast replies and many meetings",
+          "Peer reviews of their best work"
+        ],
+        "answer": 2,
+        "explanation": "Without clear measures, people signal productivity through busyness, which can crowd out real work."
+      }
+    },
+    {
+      "id": "deep-work-newport--12",
+      "topic": "mindfulness",
+      "tags": [
+        "attention",
+        "wellbeing",
+        "meaning"
+      ],
+      "title": "What you pay attention to shapes how your life feels",
+      "body": "Newport cites the writer Winifred Gallagher, who argues that our experience of life is largely built from what we choose to focus on. If your attention is constantly pulled to small annoyances, urgent messages and online outrage, your days will feel that way.\n\nNewport's argument is that a life full of deep, absorbing work fills your mind with things that are meaningful, while a life of shallow distraction tends to feel stressed and fragmented. Guarding your attention is therefore not just about output; it also affects how good your life feels.",
+      "apply_it": "Tonight, recall where your attention went today. Was it mostly on things that mattered to you or on things that pulled at you?",
+      "quiz": {
+        "question": "What link between attention and life does Newport borrow from Winifred Gallagher?",
+        "options": [
+          "Attention has no effect on mood",
+          "Your experience of life is shaped largely by what you focus on",
+          "Only children can control their attention",
+          "Busy people are always happier"
+        ],
+        "answer": 1,
+        "explanation": "Gallagher argues that what you attend to builds your experience of life, so focus affects wellbeing."
+      }
+    },
+    {
+      "id": "deep-work-newport--13",
+      "topic": "psychology",
+      "tags": [
+        "flow",
+        "happiness",
+        "work"
+      ],
+      "title": "People often feel happiest when deeply absorbed in a challenge",
+      "body": "Newport draws on the psychologist Mihaly Csikszentmihalyi's research on flow: the state of being fully absorbed in an activity that stretches you but is within reach. Csikszentmihalyi's studies suggested that people often report feeling better during such focused, challenging work than during relaxed leisure.\n\nNewport uses this to argue that deep work is not only productive but satisfying. Instead of seeing focus as a grim sacrifice, you can see it as one of the most reliable ways to make your working hours feel engaging and worthwhile.",
+      "apply_it": "Recall the last time you lost track of time while working on something. What made it possible, and can you set up those conditions again this week?",
+      "quiz": {
+        "question": "What did Csikszentmihalyi's research on flow suggest, as described by Newport?",
+        "options": [
+          "People often feel good when absorbed in challenging activities",
+          "Relaxing is always more satisfying than working",
+          "Flow only happens during sport",
+          "Challenge always causes unhappiness"
+        ],
+        "answer": 0,
+        "explanation": "Flow research suggested that deep absorption in a stretching task is often more satisfying than passive leisure."
+      }
+    },
+    {
+      "id": "deep-work-newport--14",
+      "topic": "personal-development",
+      "tags": [
+        "craftsmanship",
+        "meaning",
+        "work"
+      ],
+      "title": "Any job done with real skill can become a source of meaning",
+      "body": "Newport argues that you don't need a glamorous job to find meaning in your work. Drawing on writers who discuss craftsmanship, he suggests that bringing skill and full attention to a task, whether carving wood, writing code or managing accounts, can make the work feel valuable.\n\nThe meaning comes less from the job title and more from how you approach the work. When you commit to doing something well and give it your full concentration, ordinary tasks can become a craft you take pride in.",
+      "apply_it": "Choose one routine part of your job and do it today as if you were a craftsperson: slowly, carefully and to the best of your skill.",
+      "quiz": {
+        "question": "Where does Newport suggest meaning in work can come from?",
+        "options": [
+          "Only from creative or famous careers",
+          "From earning the highest salary possible",
+          "From avoiding difficult tasks",
+          "Bringing skill and deep attention to the work, whatever the job"
+        ],
+        "answer": 3,
+        "explanation": "He argues that a craftsman-like approach with full focus can make almost any work meaningful."
+      }
+    },
+    {
+      "id": "deep-work-newport--15",
+      "topic": "productivity",
+      "tags": [
+        "routines",
+        "willpower",
+        "habits"
+      ],
+      "title": "Rely on routines rather than willpower to get into deep work",
+      "body": "Newport argues that if you wait until you feel like concentrating, you will rarely do it, because the pull of easier distractions is constant. He leans on research suggesting willpower gets used up through the day; it is worth knowing that this 'ego depletion' research has had mixed results when other scientists tried to repeat it.\n\nEither way, his practical advice holds up: don't depend on in-the-moment motivation. Build routines and rituals so that starting focused work becomes automatic, rather than a fresh battle each time.",
+      "apply_it": "Choose a fixed time tomorrow for focused work and put it in your calendar like an appointment, so you don't have to decide in the moment.",
+      "quiz": {
+        "question": "Why does Newport recommend routines for deep work?",
+        "options": [
+          "Because routines remove the need for any rest",
+          "Because motivation is always high in the morning",
+          "So you don't depend on in-the-moment willpower to start",
+          "So that your boss can monitor you"
+        ],
+        "answer": 2,
+        "explanation": "Routines make starting deep work automatic instead of a fresh struggle against distraction."
+      }
+    },
+    {
+      "id": "deep-work-newport--16",
+      "topic": "productivity",
+      "tags": [
+        "rituals",
+        "focus",
+        "environment"
+      ],
+      "title": "Set rules for where, how long and how you will work deeply",
+      "body": "Newport suggests turning deep work into a ritual with clear answers to a few questions. Where will you work? For how long? What rules will you follow, such as no internet or a set number of words to write? And how will you support the effort, perhaps with coffee, a short walk beforehand or food on hand so you don't break off?\n\nWhen these decisions are made ahead of time, you spend less mental energy getting started and are less likely to drift. The exact ritual matters less than having one and sticking to it.",
+      "apply_it": "Write your own deep work ritual on one card: location, duration, one rule and one support. Use it at your next focus session.",
+      "quiz": {
+        "question": "Which of these is part of the deep work ritual Newport suggests?",
+        "options": [
+          "Checking messages every ten minutes to stay informed",
+          "Deciding in advance where, how long and under what rules you will work",
+          "Working wherever you happen to be",
+          "Changing your approach every session"
+        ],
+        "answer": 1,
+        "explanation": "A ritual answers where, how long, how you'll work and how you'll support yourself, so starting is easier."
+      }
+    },
+    {
+      "id": "deep-work-newport--17",
+      "topic": "productivity",
+      "tags": [
+        "grand-gesture",
+        "commitment",
+        "environment"
+      ],
+      "title": "A big change of setting can signal that this work really matters",
+      "body": "Newport describes what he calls the grand gesture: making an unusual investment of money, effort or time to support a piece of deep work. He gives the example of J.K. Rowling checking into a hotel to finish the final Harry Potter book, and Bill Gates taking 'think weeks' away to read and reflect.\n\nThe change of setting removes everyday distractions, and the commitment itself raises the stakes, making you more motivated to use the time well. A grand gesture doesn't have to be expensive; a day in a library or a quiet room elsewhere can work.",
+      "apply_it": "For an important project, plan one day or half-day of work somewhere unusual, away from your normal distractions.",
+      "quiz": {
+        "question": "What is the purpose of a 'grand gesture' in Deep Work?",
+        "options": [
+          "To raise commitment and remove distractions through an unusual change of setting",
+          "To impress colleagues with how busy you are",
+          "To avoid work by taking a holiday",
+          "To spend as much money as possible"
+        ],
+        "answer": 0,
+        "explanation": "A grand gesture, like Rowling's hotel stay, signals importance and removes everyday distractions."
+      }
+    },
+    {
+      "id": "deep-work-newport--18",
+      "topic": "business",
+      "tags": [
+        "collaboration",
+        "teamwork",
+        "office-design"
+      ],
+      "title": "Mix time for sharing ideas with time to work alone on them",
+      "body": "Newport doesn't argue that you should always work in isolation. He accepts that bumping into colleagues and exchanging ideas can spark new thinking. But he warns that open offices and constant chat also break concentration.\n\nHis suggestion is a hub-and-spoke approach: spend some time in shared spaces where ideas collide, then retreat to quiet places to develop them. He also notes that working on a hard problem side by side with one other person, each pushing the other, can deepen focus rather than break it.",
+      "apply_it": "Book one session this week to think through a hard problem with a single colleague, with phones away, then follow it with solo time.",
+      "quiz": {
+        "question": "What balance does Newport suggest between collaboration and focus?",
+        "options": [
+          "Always work alone and never meet anyone",
+          "Keep everyone in one open office all day",
+          "Use group chat for all thinking",
+          "Alternate between shared spaces for ideas and quiet spaces for deep work"
+        ],
+        "answer": 3,
+        "explanation": "He recommends a hub-and-spoke pattern: exchange ideas in shared spaces, then go deep alone."
+      }
+    },
+    {
+      "id": "deep-work-newport--19",
+      "topic": "productivity",
+      "tags": [
+        "goals",
+        "lead-measures",
+        "execution"
+      ],
+      "title": "Focus on one big goal and track the actions that drive it",
+      "body": "Newport borrows ideas from a business framework called the 4 Disciplines of Execution. First, pick a small number of wildly important goals rather than many. Second, track lead measures, the behaviours that drive results, rather than only lag measures, the results themselves.\n\nFor deep work, he suggests the key lead measure is simply the number of hours spent in deep focus on your goal. You cannot directly control whether a paper is accepted or a sale closes, but you can control how many focused hours you put into it.",
+      "apply_it": "Choose one important goal for the next month. Decide how many deep work hours per week you will put into it.",
+      "quiz": {
+        "question": "What is a 'lead measure' in the approach Newport adapts?",
+        "options": [
+          "The final result you hope to achieve",
+          "Your manager's opinion of you",
+          "A behaviour you control that drives future results, like hours of deep work",
+          "The number of emails you send"
+        ],
+        "answer": 2,
+        "explanation": "Lead measures track the actions that produce outcomes; for deep work, focused hours are the key one."
+      }
+    },
+    {
+      "id": "deep-work-newport--20",
+      "topic": "productivity",
+      "tags": [
+        "accountability",
+        "tracking",
+        "weekly-review"
+      ],
+      "title": "Keep a visible scoreboard and review it every week",
+      "body": "Continuing his use of the 4 Disciplines of Execution, Newport recommends keeping a simple scoreboard that you can see, such as a card where you tally each hour of deep work. Seeing the marks build up is motivating, and gaps are hard to ignore.\n\nHe pairs this with a regular review. Once a week, look back at your tally, celebrate good weeks, understand what went wrong in poor ones, and plan how to make the coming week better. Accountability turns good intentions into consistent action.",
+      "apply_it": "Draw a simple tally chart for this week and mark each hour of focused work. Review it on Friday.",
+      "quiz": {
+        "question": "Why does Newport suggest a visible scoreboard of deep work hours?",
+        "options": [
+          "It replaces the need to do any work",
+          "Seeing progress motivates you and makes gaps obvious",
+          "It is required for tax purposes",
+          "It lets others interrupt you more easily"
+        ],
+        "answer": 1,
+        "explanation": "A visible tally motivates you, and a weekly review helps you learn from it and plan ahead."
+      }
+    },
+    {
+      "id": "deep-work-newport--21",
+      "topic": "health",
+      "tags": [
+        "rest",
+        "downtime",
+        "recovery"
+      ],
+      "title": "Real downtime makes your focused work better, not worse",
+      "body": "Newport argues that time away from work is not wasted. Rest gives your mind a chance to recover its ability to concentrate, and he cites research on how time in nature, like a walk in a park, can help restore attention.\n\nHe also suggests that work done late in the evening is rarely the work that matters most, so pushing on is often a poor trade. Protecting your evenings and weekends for rest, relationships and hobbies keeps you fresher for the deep work that does matter.",
+      "apply_it": "Take a 20-minute walk outside without your phone this week, and notice how your focus feels afterwards.",
+      "quiz": {
+        "question": "What does Newport say about downtime?",
+        "options": [
+          "It helps restore your ability to concentrate",
+          "It always reduces productivity",
+          "Only lazy people need it",
+          "It should be used to catch up on email"
+        ],
+        "answer": 0,
+        "explanation": "Rest recharges attention, so protecting downtime supports deep work."
+      },
+      "health": true
+    },
+    {
+      "id": "deep-work-newport--22",
+      "topic": "productivity",
+      "tags": [
+        "limits",
+        "energy",
+        "scheduling"
+      ],
+      "title": "Your daily capacity for intense focus is limited",
+      "body": "Newport points to research on expert performers suggesting that even highly trained people manage only a few hours of truly intense concentration a day, often around four, and that beginners may manage closer to an hour.\n\nThis has two lessons. First, don't expect to do deep work all day; protect the hours when you can. Second, your capacity can grow with practice, so start with what you can manage and build up gradually rather than feeling like a failure for not sustaining focus from morning to night.",
+      "apply_it": "Notice how long you can focus before your mind starts to wander. Plan one session of that length and slowly extend it over the coming weeks.",
+      "quiz": {
+        "question": "What does Newport suggest about how many hours of intense focus a person can manage in a day?",
+        "options": [
+          "Twelve hours if you are motivated",
+          "There is no limit with enough coffee",
+          "Exactly eight hours for everyone",
+          "Only a few hours, even for experts, and less for beginners"
+        ],
+        "answer": 3,
+        "explanation": "Research he cites suggests experts manage around four hours of intense focus; beginners less."
+      }
+    },
+    {
+      "id": "deep-work-newport--23",
+      "topic": "productivity",
+      "tags": [
+        "deadlines",
+        "intensity",
+        "time-limits"
+      ],
+      "title": "Set tight deadlines to push yourself into intense focus",
+      "body": "Newport describes a technique he links to Theodore Roosevelt, who reportedly studied in short, highly focused bursts. The idea is to estimate how long a task would normally take, then give yourself a noticeably tighter deadline and commit to meeting it.\n\nThe pressure forces you to concentrate fully, with no room to check your phone. Used occasionally, these intense sprints train your brain to work with full attention. Start with deadlines that are challenging but realistic, so you build confidence rather than frustration.",
+      "apply_it": "Pick a task for today, estimate how long it would usually take, then set a timer for noticeably less and work flat out.",
+      "quiz": {
+        "question": "What is the purpose of setting a tight, self-imposed deadline in this technique?",
+        "options": [
+          "To make sure the work is low quality",
+          "To give you an excuse to skip the task",
+          "To force full concentration and train your focus",
+          "To impress others with speed"
+        ],
+        "answer": 2,
+        "explanation": "The tight deadline leaves no room for distraction, which trains intense focus."
+      }
+    },
+    {
+      "id": "deep-work-newport--24",
+      "topic": "productivity",
+      "tags": [
+        "thinking",
+        "walking",
+        "problem-solving"
+      ],
+      "title": "Use walks and commutes to think through one problem",
+      "body": "Newport suggests a practice he calls productive meditation. During a period when your body is busy but your mind is free, such as walking, exercising or commuting, you focus your attention on a single well-defined problem.\n\nWhen your mind wanders, which it will, you gently bring it back. You can also give your thinking structure by reviewing the key facts, identifying the next question to answer and then summarising what you've worked out. Over time, this strengthens concentration and turns dead time into useful thinking.",
+      "apply_it": "On your next walk or commute, choose one specific problem. Each time your mind drifts, bring it back to that problem.",
+      "quiz": {
+        "question": "What is 'productive meditation' in Deep Work?",
+        "options": [
+          "Sitting silently with an empty mind",
+          "Focusing on one problem while your body is occupied, such as during a walk",
+          "Listening to podcasts while working",
+          "Thinking about many problems at once"
+        ],
+        "answer": 1,
+        "explanation": "You use physically busy but mentally free time to focus on one problem, returning to it when distracted."
+      }
+    },
+    {
+      "id": "deep-work-newport--25",
+      "topic": "productivity",
+      "tags": [
+        "social-media",
+        "experiment",
+        "digital-detox"
+      ],
+      "title": "Try a 30-day break from social media and see who notices",
+      "body": "Newport suggests an experiment for anyone unsure whether a social media service is worth keeping. Stop using it for 30 days without announcing it. At the end, ask two questions: would those 30 days have been noticeably better if I had used it, and did anyone care that I was gone?\n\nIf the answer to both is no, he suggests quitting for good. If yes, return to it. Many people discover that services which felt essential barely affected their lives, while the freed-up time and attention were valuable.",
+      "apply_it": "Choose one app you use daily but doubt. Log out for 30 days and set a reminder to ask Newport's two questions at the end.",
+      "quiz": {
+        "question": "After 30 days off a service, which two questions does Newport suggest asking?",
+        "options": [
+          "Would the time have been better with it, and did people care I was gone?",
+          "How many followers did I lose, and what did I miss?",
+          "Which app replaced it, and how many likes did I get?",
+          "Did I save money, and did my phone battery last longer?"
+        ],
+        "answer": 0,
+        "explanation": "If neither answer is yes, he suggests leaving the service for good."
+      }
+    },
+    {
+      "id": "deep-work-newport--26",
+      "topic": "personal-development",
+      "tags": [
+        "leisure",
+        "hobbies",
+        "free-time"
+      ],
+      "title": "Plan your free time so the internet doesn't fill it by default",
+      "body": "Newport notes that when we don't decide in advance what to do with an evening or weekend, we tend to drift into endless scrolling. That kind of passive entertainment is easy, but it leaves us restless and trains the mind to crave constant novelty.\n\nHe suggests putting real thought into your leisure: choose books to read, hobbies to practise, people to see or exercise to do. Structured, meaningful free time is more restful and satisfying, and it also protects your ability to concentrate at work.",
+      "apply_it": "Before this weekend, write down two enjoyable offline activities you will do and when.",
+      "quiz": {
+        "question": "What does Newport recommend doing with your free time?",
+        "options": [
+          "Spend it catching up on emails",
+          "Leave it unplanned so you can scroll freely",
+          "Work extra hours to get ahead",
+          "Plan meaningful activities in advance instead of drifting online"
+        ],
+        "answer": 3,
+        "explanation": "Deliberately planned leisure is more satisfying and stops the internet filling every gap."
+      }
+    },
+    {
+      "id": "deep-work-newport--27",
+      "topic": "productivity",
+      "tags": [
+        "time-blocking",
+        "planning",
+        "scheduling"
+      ],
+      "title": "Give every hour of your workday a job",
+      "body": "Newport recommends planning each workday in blocks of time, assigning specific tasks or kinds of work to each block, including shallow tasks like email. The schedule is not meant to be rigid. When something unexpected happens or a task overruns, you simply redo the plan for the rest of the day.\n\nThe benefit is that you stop making decisions on autopilot. You are constantly asking what makes the most sense to do with your time, which leads to more deep work and less drifting.",
+      "apply_it": "Tomorrow morning, divide your workday into blocks on paper and assign each block a task. Revise the plan when things change.",
+      "quiz": {
+        "question": "What should you do when your time-block plan for the day is disrupted, according to Newport?",
+        "options": [
+          "Abandon planning for the rest of the week",
+          "Ignore the disruption completely",
+          "Rewrite the plan for the remaining time",
+          "Work late to stick to the original plan"
+        ],
+        "answer": 2,
+        "explanation": "The schedule is flexible: when it breaks, you make a new plan for the rest of the day."
+      }
+    },
+    {
+      "id": "deep-work-newport--28",
+      "topic": "business",
+      "tags": [
+        "shallow-work",
+        "boundaries",
+        "managers"
+      ],
+      "title": "Agree on a budget for shallow work",
+      "body": "Newport suggests an honest conversation with your manager: what share of my time should go on shallow work like email, meetings and admin? Most jobs need some, but without a limit it can quietly take over.\n\nOnce you have an agreed figure, you can turn down extra meetings or tasks that would push you past it, and you have a clear reason to protect your deep work. For people who work for themselves, the same budget can be set personally.",
+      "apply_it": "Estimate what percentage of last week went to shallow work. Decide on a target share and, if possible, discuss it with your manager.",
+      "quiz": {
+        "question": "What is the point of a 'shallow work budget'?",
+        "options": [
+          "To spend more time in meetings",
+          "To cap low-value tasks so deep work is protected",
+          "To track how much money you spend at work",
+          "To avoid ever answering email"
+        ],
+        "answer": 1,
+        "explanation": "An agreed limit on shallow work gives you a reason to decline extras and protect focused time."
+      }
+    },
+    {
+      "id": "deep-work-newport--29",
+      "topic": "productivity",
+      "tags": [
+        "work-hours",
+        "constraints",
+        "efficiency"
+      ],
+      "title": "Commit to a fixed finishing time and work backwards from it",
+      "body": "Newport describes his own rule of rarely working past a set time in the early evening. Instead of letting work spill into the night, he treats the end time as fixed and plans his day so the important work fits inside it.\n\nThis constraint forces sharper choices. You become more willing to say no to low-value requests, more careful about which tasks deserve your time, and more focused during working hours, because you know there is no evening to catch up in.",
+      "apply_it": "Pick a firm finishing time for your workdays next week. Each morning, plan the day so the most important work fits before it.",
+      "quiz": {
+        "question": "How does a fixed finishing time help, according to Newport?",
+        "options": [
+          "It forces you to prioritise and cut low-value work",
+          "It means you can ignore planning",
+          "It lets you work longer on weekends instead",
+          "It guarantees you will never be busy"
+        ],
+        "answer": 0,
+        "explanation": "A firm end time makes you choose carefully and focus harder during the day."
+      }
+    },
+    {
+      "id": "deep-work-newport--30",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "communication",
+        "efficiency"
+      ],
+      "title": "Write emails that close the loop instead of starting a long thread",
+      "body": "Newport notes that vague emails like 'Shall we meet to discuss this?' spark many back-and-forth replies. Instead, he suggests taking a moment to think about the process needed to settle the matter, then laying it out in one message: propose times, explain the next steps, and say what will happen once they reply.\n\nHe also suggests you don't owe a reply to every email. If a message is unclear or not worth your time, it is acceptable not to respond. Both habits reduce the amount of shallow work that email creates.",
+      "apply_it": "Before sending your next meeting request, include two specific time options and say what happens after they choose.",
+      "quiz": {
+        "question": "What does Newport suggest to reduce long email back-and-forth?",
+        "options": [
+          "Reply as quickly as possible to every email",
+          "Copy more people in to speed things up",
+          "Use only one-word replies",
+          "Lay out the full process and next steps in one message"
+        ],
+        "answer": 3,
+        "explanation": "Process-centred emails settle the matter in fewer messages, cutting shallow work."
+      }
+    }
+  ]
+}

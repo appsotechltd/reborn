@@ -1,0 +1,740 @@
+{
+  "source": {
+    "id": "nhs-mental-health-self-help",
+    "title": "Mental health self-help",
+    "authors": [
+      "NHS"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/self-help/",
+    "licence": "ogl-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "publisher": "NHS",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Adapted from NHS website pages (www.nhs.uk, covered by the NHS website terms, OGL v3.0): https://www.nhs.uk/mental-health/self-help/, https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/, https://www.nhs.uk/mental-health/self-help/tips-and-support/how-to-be-happier/, https://www.nhs.uk/mental-health/self-help/tips-and-support/raise-low-self-esteem/, https://www.nhs.uk/mental-health/self-help/tips-and-support/cope-with-depression/, https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/tips-to-reduce-stress/, https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/exercise-for-depression/, https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/, https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/, https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/low-mood-sadness-depression/, https://www.nhs.uk/conditions/insomnia/, https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-cope-with-financial-worries/, https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-help-someone-with-depression/, https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/loneliness-in-older-people-how-to-help/, https://www.nhs.uk/mental-health/children-and-young-adults/help-for-teenagers-young-adults-and-students/tips-on-preparing-for-exams/. No content from the separate DHSC Every Mind Matters subsite (all rights reserved) is used. NHS terms 3.6b: adapted content uses the standard OGL attribution, must not imply NHS endorsement, and must not be sold as a separately charged item (3.10)."
+  },
+  "cards": [
+    {
+      "id": "nhs-mental-health-self-help--01",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "symptoms",
+        "self-awareness"
+      ],
+      "title": "Stress shows up in your body and behaviour, not only your thoughts",
+      "body": "The NHS stress page points out that it is not always obvious stress is behind what you feel. Besides worry, poor concentration, forgetfulness and feeling overwhelmed, stress can bring headaches, dizziness, muscle tension, stomach problems or a faster heartbeat.\n\nIt also changes behaviour: snapping at people, sleeping or eating much more or less than usual, avoiding certain people or places, or drinking and smoking more. Learning your own early signs lets you act before stress builds up. If physical symptoms like chest pain worry you, get them checked by a doctor rather than assuming it is only stress.",
+      "apply_it": "Write down three signs that usually tell you, or the people close to you, that you are getting stressed. Next time you notice one, pause and ask what is pressing on you.",
+      "quiz": {
+        "question": "According to the NHS, which of these can be a behavioural sign of stress?",
+        "options": [
+          "Sleeping or eating much more or less than usual",
+          "Having a clear, focused mind",
+          "Feeling unusually calm with people",
+          "Needing less caffeine than normal"
+        ],
+        "answer": 0,
+        "explanation": "The NHS lists changes in sleep and eating, irritability, avoidance and drinking or smoking more as behavioural signs of stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--02",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "problem-solving",
+        "self-awareness"
+      ],
+      "title": "Name what is causing your stress before trying to fix it",
+      "body": "The NHS stress busters guide says the first step to feeling better is identifying the cause. Common sources include pressure at work, unemployment or retirement, family difficulties or caring for someone, unexpected bills or borrowing, and illness, injury or loss.\n\nOnce you can name the source, you can see which parts you can change and which you cannot, and you avoid the most unhelpful response of all: numbing the feeling with drink or cigarettes instead of dealing with it. Sometimes there is no clear cause, and talking it through with someone you trust can help you find it.",
+      "apply_it": "Finish this sentence on paper: 'The main thing pressing on me right now is...' Then underline the part you could do something about this week.",
+      "quiz": {
+        "question": "What does the NHS guide call the first step to feeling better when stressed?",
+        "options": [
+          "Taking a long holiday",
+          "Identifying the cause of the stress",
+          "Cutting out all work",
+          "Ignoring the feeling until it passes"
+        ],
+        "answer": 1,
+        "explanation": "Identifying the cause comes first, so you can tackle what is actually driving the stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--03",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "stress",
+        "control",
+        "resilience"
+      ],
+      "title": "Feeling out of control drives stress, so take charge of what you can",
+      "body": "The NHS stress guide describes loss of control as one of the main causes of stress and poor wellbeing. The feeling that nothing you do makes a difference can make a hard situation feel far worse than it is.\n\nTaking control of even part of a problem is empowering, and it helps you find a solution that suits you rather than someone else. That might mean making one phone call, asking one question, or deciding the order you will tackle things in. Small actions give back a sense of agency, which itself eases stress.",
+      "apply_it": "Pick the problem that stresses you most and list every part of it. Circle one piece that is within your control and do it today.",
+      "quiz": {
+        "question": "Why does the NHS encourage taking control when stressed?",
+        "options": [
+          "It guarantees the problem will disappear",
+          "It means you never need help from others",
+          "Loss of control is a main cause of stress, and acting is empowering",
+          "It is the only way to avoid exercise"
+        ],
+        "answer": 2,
+        "explanation": "The guide says loss of control is a major cause of stress; taking charge of what you can helps you find your own solution."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--04",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "rest",
+        "work-life-balance"
+      ],
+      "title": "Protect a couple of evenings a week for yourself",
+      "body": "The NHS stress busters note that many people work long hours and never make time for the things they enjoy. Without that time, stress has nowhere to drain away.\n\nThe suggestion is concrete: set aside a couple of nights a week for quality time away from work, whether that means seeing friends, relaxing or exercising. Treat it as a real appointment rather than whatever is left over once everything else is done, because there is always more to do.",
+      "apply_it": "Look at the coming week and block out two evenings for something restful or fun. Tell someone, so the plan is harder to cancel.",
+      "quiz": {
+        "question": "What does the NHS suggest for 'me time'?",
+        "options": [
+          "Only take time off once all work is finished",
+          "Use free evenings to catch up on emails",
+          "Me time is unnecessary if you enjoy your job",
+          "Set aside a couple of nights a week away from work"
+        ],
+        "answer": 3,
+        "explanation": "The guide suggests reserving a couple of evenings a week for socialising, relaxing or exercise."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--05",
+      "topic": "productivity",
+      "tags": [
+        "stress",
+        "prioritising",
+        "time-management"
+      ],
+      "title": "Work smarter: do what matters most and accept some things won't get done",
+      "body": "One of the NHS stress busters is to work smarter rather than harder. That means prioritising the tasks that will make a real difference and leaving the least important ones until last.\n\nThe guide adds a point many people resist: accept that your in-tray may always be full and you will not get everything done. Trying to clear every task at once is a recipe for stress. Setting small, achievable targets, as the NHS stress page also advises, keeps you moving without feeling crushed.",
+      "apply_it": "Write today's tasks down and mark the two that would make the biggest difference. Do those first and let the bottom of the list wait.",
+      "quiz": {
+        "question": "According to the NHS stress busters, what should you do with the least important tasks?",
+        "options": [
+          "Leave them until last",
+          "Do them first to get them out of the way",
+          "Do them all at once alongside big tasks",
+          "Delegate every one of them immediately"
+        ],
+        "answer": 0,
+        "explanation": "Prioritise tasks that make a real difference and leave the least important ones until last."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--06",
+      "topic": "mindfulness",
+      "tags": [
+        "gratitude",
+        "positivity",
+        "journaling"
+      ],
+      "title": "End each day by writing down three things that went well",
+      "body": "The NHS stress guide encourages looking for the positives in life and the things you are grateful for. Its simple method: at the end of every day, write down three things that went well or that you are thankful for.\n\nThey do not need to be big. A good meal, a kind word or finishing a difficult task all count. The habit trains attention towards what is working, which is easy to overlook when stress makes problems loom large.",
+      "apply_it": "Tonight, before sleep, write three good things from today, however small. Try it for a week and notice if your days feel different.",
+      "quiz": {
+        "question": "What daily habit does the NHS suggest to help you be more positive?",
+        "options": [
+          "Listing everything that went wrong",
+          "Writing three things that went well or you're grateful for",
+          "Planning tomorrow in detail before bed",
+          "Comparing your day with friends' days"
+        ],
+        "answer": 1,
+        "explanation": "Noting three things that went well or that you're grateful for each evening helps you notice positives."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--07",
+      "topic": "mindfulness",
+      "tags": [
+        "acceptance",
+        "stress",
+        "resilience"
+      ],
+      "title": "Spend your energy on what you can change, not on what you can't",
+      "body": "Some situations cannot be changed, however much we worry about them. The NHS stress pages advise accepting this and putting your time and energy into what helps you feel better.\n\nThe guide gives an example: if your company is making redundancies, you cannot stop it, but you can focus on things within your control, such as looking for a new job. Accepting what is fixed is not giving up. It frees the energy that rumination wastes and points it at actions that can actually help.",
+      "apply_it": "Draw two columns: 'I can change' and 'I can't change'. Sort your current worries into them, then choose one action from the first column.",
+      "quiz": {
+        "question": "In the NHS example of redundancies at work, what is the helpful focus?",
+        "options": [
+          "Trying to stop the company's decision",
+          "Worrying until the outcome is known",
+          "Things within your control, such as looking for a new job",
+          "Pretending the redundancies are not happening"
+        ],
+        "answer": 2,
+        "explanation": "The guide says to focus on what you can control, like job hunting, rather than what you cannot change."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--08",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "alcohol",
+        "habits"
+      ],
+      "title": "Drink, cigarettes and gambling relieve stress briefly, then add to it",
+      "body": "The NHS is clear that relying on alcohol, smoking or caffeine to cope is unhelpful. They may give short-term relief, but they do not solve the problem and they create new ones over time. The stress and anxiety pages add gambling and drugs to the list, warning they can make mental health worse.\n\nThe better route is to deal with the cause of the stress. If you notice you are reaching for a drink or cigarette whenever pressure rises, treat that as a signal to stop and look at what is actually bothering you.",
+      "apply_it": "Next time you reach for a drink, cigarette or bet to unwind, wait ten minutes and name what you are feeling. Try a walk or a call to a friend instead.",
+      "quiz": {
+        "question": "What does the NHS say about using alcohol or smoking to cope with stress?",
+        "options": [
+          "It is a good way to relax after work",
+          "It is fine as long as it is daily",
+          "It is helpful if combined with caffeine",
+          "It may help briefly but creates new problems over time"
+        ],
+        "answer": 3,
+        "explanation": "Unhealthy habits give short-term relief but don't solve the problem and can make things worse."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--09",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "planning",
+        "life-events"
+      ],
+      "title": "Even happy milestones are stressful, so plan ahead for big days",
+      "body": "The NHS stress page notes that positive life events, such as buying a house, having a baby or planning a wedding, can cause stress too. It is not only bad news that strains us; any big change brings pressure.\n\nOne of the practical tips is to plan ahead for stressful days or events, such as a long journey, and make lists of things you need to remember. Getting details out of your head and onto paper means you are not carrying them all at once.",
+      "apply_it": "Think of the next big or busy day coming up. Write a short checklist for it now, while you are calm.",
+      "quiz": {
+        "question": "Which of these does the NHS say can also cause stress?",
+        "options": [
+          "Planning a wedding or having a baby",
+          "Only bad news and losses",
+          "Nothing positive ever causes stress",
+          "Only problems at work"
+        ],
+        "answer": 0,
+        "explanation": "Positive life events like buying a house, having a baby or a wedding can also be stressful."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--10",
+      "topic": "health",
+      "tags": [
+        "anxiety",
+        "stress-hormones",
+        "body"
+      ],
+      "title": "The racing heart of anxiety is your stress hormones at work",
+      "body": "When you feel anxious or scared, the NHS explains, your body releases stress hormones such as adrenaline and cortisol. These can sharpen you up, but they also cause physical symptoms: a faster or more noticeable heartbeat, sweating, shaking, breathlessness, dizziness, headaches or an upset stomach.\n\nKnowing this can make the sensations less frightening, because you can see them as a body response rather than a sign of catastrophe. Anxiety can also show up as tension, poor sleep, difficulty concentrating or avoiding things. Because regular anxiety can be a symptom of other conditions, the NHS advises against self-diagnosis and suggests speaking to a GP.",
+      "apply_it": "Next time your heart races under pressure, say to yourself: 'This is adrenaline. It will pass.' Then slow your breathing.",
+      "quiz": {
+        "question": "What causes many of the physical symptoms of anxiety, according to the NHS?",
+        "options": [
+          "A lack of willpower",
+          "Stress hormones such as adrenaline and cortisol",
+          "Eating too much fruit",
+          "Spending time outdoors"
+        ],
+        "answer": 1,
+        "explanation": "The body releases adrenaline and cortisol when anxious, which can cause a faster heartbeat, sweating and more."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--11",
+      "topic": "health",
+      "tags": [
+        "panic",
+        "anxiety",
+        "reassurance"
+      ],
+      "title": "Panic attacks feel terrifying but are not dangerous and usually pass in minutes",
+      "body": "A panic attack is a sudden rush of intense anxiety and fear. The NHS lists symptoms such as a racing heartbeat, feeling faint or dizzy, sweating, trembling, shortness of breath, tingling in the fingers or lips, nausea and a feeling of losing control.\n\nThe key reassurance from the NHS is that panic attacks are frightening but not dangerous and should not harm you. Most last between 5 and 20 minutes. Remembering this during an attack can stop fear of the symptoms feeding more panic. If attacks are regular, a GP can help, and in England adults can refer themselves to NHS talking therapies.",
+      "apply_it": "Write on a card or your phone: 'Panic is frightening but not dangerous. It usually passes in 5 to 20 minutes.' Read it if panic starts.",
+      "quiz": {
+        "question": "How long does the NHS say a panic attack usually lasts?",
+        "options": [
+          "Several hours",
+          "A whole day",
+          "About 5 to 20 minutes",
+          "Less than 5 seconds"
+        ],
+        "answer": 2,
+        "explanation": "Panic attacks usually last between 5 and 20 minutes and, while frightening, are not dangerous."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--12",
+      "topic": "psychology",
+      "tags": [
+        "anxiety",
+        "avoidance",
+        "courage"
+      ],
+      "title": "Avoiding what scares you keeps anxiety alive; face it a little at a time",
+      "body": "Avoiding situations that make you anxious feels like relief, but the NHS warns it can keep anxiety going. Its advice is not to avoid them, and instead to gradually spend more time in those situations so the anxiety reduces over time.\n\nThe word gradually matters. You are not meant to jump into the hardest version at once. Pair this with another NHS tip: do not try to do everything at once, but set small, achievable goals. Each small step that goes fine is evidence against the fear.",
+      "apply_it": "Pick one situation you have been avoiding. Plan a short, easy version of it this week, such as five minutes instead of an hour.",
+      "quiz": {
+        "question": "What does the NHS advise about situations that make you anxious?",
+        "options": [
+          "Avoid them completely",
+          "Face the hardest version straight away",
+          "Only go if someone else takes charge",
+          "Gradually spend more time in them"
+        ],
+        "answer": 3,
+        "explanation": "Gradually spending more time in anxiety-provoking situations helps reduce the anxiety over time."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--13",
+      "topic": "health",
+      "tags": [
+        "low-mood",
+        "depression",
+        "when-to-get-help"
+      ],
+      "title": "Low mood usually lifts in days or weeks; two weeks or more needs a GP",
+      "body": "Most people feel low at times. The NHS says low mood can bring sadness, worry, anger, low confidence, tiredness and sleep problems, and that it often improves within a few days or weeks. Small changes, such as sorting out something that is bothering you or getting more sleep, can help.\n\nThe line to watch is time. A low mood that lasts 2 weeks or more may be a sign of depression, especially with loss of enjoyment, hopelessness or trouble concentrating. Then the advice is to see a GP or, in England, refer yourself to NHS talking therapies. If you ever have thoughts of harming yourself, get help straight away.",
+      "apply_it": "If you have felt low for a while, count back roughly how long it has been. If it is two weeks or more, book a GP appointment this week.",
+      "quiz": {
+        "question": "According to the NHS, how long can low mood last before it may be a sign of depression?",
+        "options": [
+          "2 weeks or more",
+          "2 hours",
+          "2 days",
+          "It never signals depression"
+        ],
+        "answer": 0,
+        "explanation": "Low mood that lasts 2 weeks or more may be a sign of depression and is worth discussing with a GP."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--14",
+      "topic": "health",
+      "tags": [
+        "depression",
+        "routine",
+        "sleep"
+      ],
+      "title": "Keep your daily routine going even when your mood drags it down",
+      "body": "The NHS advice on coping with depression highlights routine. Low mood can push you into poor sleep patterns, staying up late and sleeping through the day, and a lack of structure can also disrupt eating.\n\nThe suggestion is to get up at your normal time and keep to your routine as much as you can, including cooking and eating regular meals. Routine gives the day shape when motivation is low, and steady meals keep energy levels more even. The same advice appears in the NHS guidance on coping with job loss and money worries.",
+      "apply_it": "Choose a fixed time to get up tomorrow and a time for one proper meal. Set reminders and keep both for the next week.",
+      "quiz": {
+        "question": "Why does the NHS recommend keeping a routine when you feel depressed?",
+        "options": [
+          "Routine guarantees depression will end",
+          "Low mood can disrupt sleep and eating, and routine helps keep them steady",
+          "It means you don't need any other support",
+          "Sleeping during the day is healthier"
+        ],
+        "answer": 1,
+        "explanation": "Low mood can lead to late nights, daytime sleep and irregular eating; routine counters this."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--15",
+      "topic": "relationships",
+      "tags": [
+        "depression",
+        "connection",
+        "isolation"
+      ],
+      "title": "When you feel low, resist the urge to withdraw from people",
+      "body": "Low mood often makes people want to hide away. The NHS advice on coping with depression is the opposite: try not to withdraw from life, because socialising can improve your mood. Keeping in touch with friends and family also means there is someone to talk to when things feel hard.\n\nIt does not have to be a big social event. A message, a phone call or a short visit keeps the thread of connection alive. The NHS also suggests talking about your feelings with a friend, family member, health professional or counsellor, and points to peer support where people with shared experiences help each other.",
+      "apply_it": "Send a short message today to one friend or family member you have not spoken to in a while, even just to say hello.",
+      "quiz": {
+        "question": "What does the NHS suggest about socialising when you are depressed?",
+        "options": [
+          "Avoid people until you feel better",
+          "Only talk to professionals",
+          "Stay in touch, because socialising can improve your mood",
+          "Socialising always makes depression worse"
+        ],
+        "answer": 2,
+        "explanation": "The NHS says not to withdraw from life, as socialising can improve mood and gives you people to talk to."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--16",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "depression",
+        "walking"
+      ],
+      "title": "Exercise lifts low mood, and starting with a daily walk is enough",
+      "body": "Regular exercise can improve mood in people with depression, the NHS says, and is especially useful for less severe depression. Any type works if it suits you and you do enough of it, so choose something you enjoy and are likely to keep up.\n\nIf you have not exercised for a while, start gently: the NHS coping guide suggests walking for 20 minutes every day, and even a brisk 10-minute walk can clear your head. Build up towards the adult guideline of 150 minutes of moderate activity a week. If you are worried about how exercise might affect your health, ask a GP, who may be able to offer exercise on prescription or a group programme.",
+      "apply_it": "Put on your shoes and walk for 20 minutes today, at a pace a little brisker than usual. Note your mood before and after.",
+      "quiz": {
+        "question": "How does the NHS suggest starting exercise if you haven't been active for a while?",
+        "options": [
+          "Run a long distance on day one",
+          "Wait until your mood has fully recovered",
+          "Only exercise at a gym with a trainer",
+          "Start gently, for example walking 20 minutes a day"
+        ],
+        "answer": 3,
+        "explanation": "Start gently, such as a daily 20-minute walk, and build up towards 150 minutes a week."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--17",
+      "topic": "psychology",
+      "tags": [
+        "self-esteem",
+        "negative-thoughts",
+        "cbt"
+      ],
+      "title": "Challenge harsh beliefs about yourself by collecting evidence against them",
+      "body": "Low self-esteem often rests on beliefs like 'I'm not good enough' that took hold in childhood or after hard events. The NHS suggests first identifying these beliefs, then challenging them.\n\nWrite the negative thoughts down, and note when you first started thinking them. Then look for evidence that contradicts them: skills you have, things you have done well, support people have given you. Seen on paper, an old belief often turns out to be a habit of thinking rather than a fact. The NHS adds that you can develop new ways of seeing yourself at any age.",
+      "apply_it": "Write down one harsh belief you hold about yourself. Under it, list three pieces of real evidence that contradict it.",
+      "quiz": {
+        "question": "What does the NHS suggest doing with negative beliefs about yourself?",
+        "options": [
+          "Write them down and look for evidence that contradicts them",
+          "Repeat them until they stop hurting",
+          "Ignore them and never think about them",
+          "Ask others to agree with them"
+        ],
+        "answer": 0,
+        "explanation": "Identify the beliefs, write them down, and challenge them with evidence such as your skills and the support you get."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--18",
+      "topic": "personal-development",
+      "tags": [
+        "self-esteem",
+        "strengths",
+        "confidence"
+      ],
+      "title": "Keep a visible list of at least five things you like about yourself",
+      "body": "Alongside challenging negative beliefs, the NHS advice on raising low self-esteem is to list your positive qualities, plus the good things other people say about you. Aim for at least five, keep adding to the list, and put it somewhere you will see it.\n\nIt also helps to recognise what you are good at, whether cooking, puzzles or being a good friend, and to do more of it, because using your strengths tends to lift your mood. Self-esteem grows from noticing real evidence of your worth, not from empty praise.",
+      "apply_it": "Write five positive things about yourself, including compliments others have given you. Stick the list on your mirror or save it as your phone wallpaper.",
+      "quiz": {
+        "question": "How many positive qualities does the NHS suggest listing to start with?",
+        "options": [
+          "One",
+          "At least five",
+          "Exactly fifty",
+          "None; lists don't help"
+        ],
+        "answer": 1,
+        "explanation": "The NHS suggests listing at least five positives, adding to it over time and keeping it where you'll see it."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--19",
+      "topic": "relationships",
+      "tags": [
+        "boundaries",
+        "assertiveness",
+        "self-esteem"
+      ],
+      "title": "Saying no more often protects your self-esteem and your relationships",
+      "body": "People with low self-esteem often say yes to things they do not want to do. The NHS warns that this can leave you overburdened, resentful, angry and even depressed.\n\nIts advice is to start saying no. For the most part, it says, saying no does not upset relationships, and you may need to keep repeating it in different ways until it is heard. This sits with being assertive: respecting other people's opinions and needs while expecting the same respect for your own, and letting your real self show rather than acting like someone else.",
+      "apply_it": "Think of one request you would normally agree to out of guilt. Practise a polite 'No, I can't this time' and use it the next time it comes up.",
+      "quiz": {
+        "question": "What does the NHS say usually happens when you start saying no?",
+        "options": [
+          "Your friends will always leave you",
+          "You must apologise many times",
+          "For the most part, it does not upset relationships",
+          "You lose all respect at work"
+        ],
+        "answer": 2,
+        "explanation": "The NHS says saying no mostly doesn't upset relationships, though you may need to repeat it before it's heard."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--20",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-compassion",
+        "self-criticism",
+        "self-esteem"
+      ],
+      "title": "Talk to yourself the way you would talk to a valued friend",
+      "body": "The NHS tips on being happier and raising self-esteem both come back to how you speak to yourself. Treat yourself as you would a valued friend: kind, but honest.\n\nA simple test helps. When you notice harsh self-criticism, ask whether you would say the same thing to your best friend. Usually you would not. Then replace the criticism with something positive and realistic, the kind of response you would give a friend in the same situation. This is not lying to yourself; it is being fair to yourself.",
+      "apply_it": "The next time you call yourself a name or think 'I'm useless', stop and rewrite it as what you'd say to a friend who made the same mistake.",
+      "quiz": {
+        "question": "What question does the NHS suggest asking when you criticise yourself harshly?",
+        "options": [
+          "Why am I always like this?",
+          "Who else has noticed my mistake?",
+          "How can I punish myself for this?",
+          "Would I say this to my best friend?"
+        ],
+        "answer": 3,
+        "explanation": "Ask whether you'd say it to your best friend; usually not, so replace it with something kind and realistic."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--21",
+      "topic": "personal-development",
+      "tags": [
+        "enjoyment",
+        "wellbeing",
+        "habits"
+      ],
+      "title": "Make time for things you enjoy, but skip pleasures that leave you worse",
+      "body": "Doing things you enjoy is good for your emotional wellbeing, the NHS happiness tips say. It can be as simple as watching sport with a friend, having a bath or meeting a friend for coffee. Doing something you are good at, such as cooking or dancing, adds a sense of achievement too.\n\nThe guide draws one distinction. Avoid things that feel good at the time but leave you feeling worse afterwards, such as drinking too much or eating junk food. The best pleasures are the ones you are still glad about the next day.",
+      "apply_it": "List three things you enjoy that leave you feeling better afterwards. Schedule one of them for this week.",
+      "quiz": {
+        "question": "Which activity does the NHS say to avoid when trying to feel happier?",
+        "options": [
+          "Things that feel good at the time but leave you feeling worse, like drinking too much",
+          "Watching sport with a friend",
+          "Doing something you're good at, like cooking",
+          "Having a relaxing bath"
+        ],
+        "answer": 0,
+        "explanation": "Enjoyable activities help, but avoid those that feel good briefly and leave you worse, like heavy drinking or junk food."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--22",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "resilience",
+        "hardship",
+        "creativity"
+      ],
+      "title": "Build resilience by finding meaning in hard times and sharing them",
+      "body": "Resilience is what helps you cope with life's difficulties. The NHS suggests that finding something worthwhile in painful experiences helps build it. That does not mean pretending the pain was good, only noticing what it taught you or what it made possible.\n\nOther ways to get through tough times include joining or starting a support group, and expressing difficult experiences creatively, for example through writing, painting or singing. Talking and sharing, with a friend, family member or counsellor, also releases tension instead of bottling it up, and can strengthen your relationships.",
+      "apply_it": "Think of a past hardship you came through. Write a few lines about one thing it taught you or one strength it showed you.",
+      "quiz": {
+        "question": "Which of these does the NHS suggest for building resilience?",
+        "options": [
+          "Bottling up difficult feelings",
+          "Expressing hard experiences through writing, painting or singing",
+          "Avoiding support groups",
+          "Forgetting painful experiences as fast as possible"
+        ],
+        "answer": 1,
+        "explanation": "Finding something worthwhile in pain, joining support groups and creative expression can all build resilience."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--23",
+      "topic": "mindfulness",
+      "tags": [
+        "mindfulness",
+        "everyday-life",
+        "senses"
+      ],
+      "title": "Practise mindfulness in ordinary moments, like eating or walking",
+      "body": "Mindfulness does not have to mean sitting still for an hour. The NHS mindfulness page says the first step is simply reminding yourself to notice your thoughts, feelings, body and surroundings, even small things like the feel of a banister under your hand.\n\nIts practical tips: notice the sensations of everyday activities, such as the taste of food or air moving past you as you walk. Pick a regular time, like your commute or a lunchtime walk, to pay attention. And try something new, such as sitting somewhere different, to see things freshly. Studies suggest mindfulness can help with stress, anxiety and depression, though the NHS notes it is not right for everyone.",
+      "apply_it": "Choose one daily routine, such as your walk to work or your first cup of tea, and spend it noticing sights, sounds and sensations.",
+      "quiz": {
+        "question": "What does the NHS suggest as a way to keep mindfulness regular?",
+        "options": [
+          "Practise only when you are very stressed",
+          "Only practise on a meditation retreat",
+          "Pick a set time, like your commute or a lunchtime walk",
+          "Avoid noticing your surroundings"
+        ],
+        "answer": 2,
+        "explanation": "Choosing a regular time, such as a commute or lunchtime walk, makes it easier to practise noticing."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--24",
+      "topic": "mindfulness",
+      "tags": [
+        "mindfulness",
+        "thoughts",
+        "labelling"
+      ],
+      "title": "Silently name your thoughts and feelings to loosen their grip",
+      "body": "Mindfulness is not about stopping thoughts, the NHS explains, but about seeing them as mental events that come and go. One way to build that awareness is to name them silently as they arise: 'Here is the thought that I might fail this exam,' or 'This is anxiety.'\n\nNaming creates a little distance. It helps you ask whether dwelling on a problem is actually useful or whether you are just caught up in your thoughts, and it can help you spot early signs of stress or anxiety. This is hard at first and gets easier with gentle practice. If your mind is very busy, gentle yoga or walking can help.",
+      "apply_it": "Next time a worry loops in your head, label it silently: 'This is the worry about...' Notice whether it feels any less heavy.",
+      "quiz": {
+        "question": "According to the NHS, what is mindfulness NOT about?",
+        "options": [
+          "Noticing your surroundings",
+          "Being aware of your feelings",
+          "Seeing thoughts as passing events",
+          "Stopping your thoughts"
+        ],
+        "answer": 3,
+        "explanation": "Mindfulness is not about stopping thoughts; it's about seeing them as mental events, for example by naming them."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--25",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "insomnia",
+        "routine"
+      ],
+      "title": "Beat poor sleep with a fixed wake-up time, not lie-ins or naps",
+      "body": "The NHS insomnia page says insomnia usually gets better by changing your sleeping habits. Several of its key tips are about timing. Get up at the same time every day. Only go to bed when you feel sleepy.\n\nJust as important are the things to avoid: do not nap during the day, and do not sleep in after a bad night; keep to your regular hours instead. A lie-in feels like catching up, but it shifts your body clock and makes the next night harder. If changing your habits has not helped, or you have struggled for months, see a GP, who may offer CBT for insomnia.",
+      "apply_it": "Set one wake-up time for every day this week, including weekends, and keep it even after a bad night.",
+      "quiz": {
+        "question": "What does the NHS advise after a bad night's sleep?",
+        "options": [
+          "Keep to your regular sleeping hours rather than sleeping in",
+          "Sleep in to catch up",
+          "Take a long afternoon nap",
+          "Go to bed much earlier than usual"
+        ],
+        "answer": 0,
+        "explanation": "Don't sleep in after a bad night; keep regular hours and avoid daytime naps."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--26",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "insomnia",
+        "caffeine"
+      ],
+      "title": "Give yourself an hour to wind down, and cut caffeine six hours before bed",
+      "body": "The NHS insomnia advice includes a set of timings worth knowing. Relax for at least an hour before bed, for example by having a bath or reading. Avoid smoking and drinking alcohol, tea or coffee in the 6 hours before bed. Do not eat a big meal late at night, and avoid exercise in the 4 hours before bed, although regular exercise earlier in the day helps.\n\nScreens matter too: the blue light from phones and TVs right before bed keeps you more awake. A dark, quiet bedroom and a comfortable mattress, pillows and covers complete the picture.",
+      "apply_it": "Tonight, switch off screens an hour before bed and do something calm instead. Check what time your last tea or coffee was.",
+      "quiz": {
+        "question": "How long before bed does the NHS suggest avoiding alcohol, tea and coffee?",
+        "options": [
+          "30 minutes",
+          "6 hours",
+          "10 minutes",
+          "It doesn't matter"
+        ],
+        "answer": 1,
+        "explanation": "The NHS insomnia page advises avoiding smoking, alcohol, tea and coffee in the 6 hours before bed."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--27",
+      "topic": "money",
+      "tags": [
+        "money-worries",
+        "debt",
+        "routine"
+      ],
+      "title": "When money worries hit, get debt advice early and keep your routine",
+      "body": "Feeling low or anxious after job loss, redundancy or debt is a normal reaction, the NHS says, and does not automatically mean you have depression or an anxiety disorder.\n\nIts advice for surviving financial stress is practical. If you are falling into debt, get advice on which debts to prioritise; free debt advice services exist. Stay active: keep in touch with friends, keep your CV up to date and keep paying bills where you can. Keep your daily routine, get up at your usual time and eat proper meals, and avoid drinking more to cope. If you still feel worried or low after a few weeks, see a GP.",
+      "apply_it": "If a debt is worrying you, write down every amount you owe today, then contact a free debt advice service to ask which to pay first.",
+      "quiz": {
+        "question": "What does the NHS suggest if you are falling into debt?",
+        "options": [
+          "Hide the bills until things improve",
+          "Borrow more to cover everything at once",
+          "Get advice on which debts to prioritise",
+          "Stop all contact with friends to save money"
+        ],
+        "answer": 2,
+        "explanation": "Getting advice on which debts to tackle first is one of the NHS tips for surviving financial stress."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--28",
+      "topic": "relationships",
+      "tags": [
+        "supporting-others",
+        "depression",
+        "listening"
+      ],
+      "title": "Support someone who seems depressed by listening, staying in touch and being patient",
+      "body": "Depression often builds slowly, and the person may not notice it. The NHS says a partner, relative or friend is often the first to see signs such as losing interest in things, seeming hopeless, irritability, changes in sleep or appetite, neglecting themselves, or withdrawing.\n\nTo help: let them know you care and are there to listen, accept them without judging, gently encourage things like activity and a balanced diet, find out about local services and encourage a GP visit. Keep in contact through messages, calls or meeting up, be patient, and look after your own mental health too. If you fear they may harm themselves, get urgent help.",
+      "apply_it": "Think of someone who has seemed low lately. Send them a message today simply saying you're thinking of them and happy to listen.",
+      "quiz": {
+        "question": "Which is one of the NHS tips for helping someone with depression?",
+        "options": [
+          "Tell them to cheer up",
+          "Leave them alone until they reach out",
+          "Point out what they are doing wrong",
+          "Keep in contact and be patient"
+        ],
+        "answer": 3,
+        "explanation": "The NHS advises listening without judgement, keeping in contact, being patient and caring for yourself too."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--29",
+      "topic": "study-smarter",
+      "tags": [
+        "exams",
+        "anxiety",
+        "breathing"
+      ],
+      "title": "On exam day, prepare early, breathe 4-2-7, and don't replay it afterwards",
+      "body": "The NHS exam tips say being well prepared is the best way to manage exam stress. On the day, eat a good breakfast, allow plenty of travel time and bring everything you need. Read the instructions and questions carefully, plan your time, and if you get stuck, move on and come back later.\n\nIf you feel overwhelmed, try the NHS breathing pattern: in through your nose for a count of 4, hold for 2, and out for 7, repeating as needed. Afterwards, resist going over the paper or comparing answers with friends. Focus on the next exam instead.",
+      "apply_it": "Practise the 4-2-7 breath now: in for 4, hold for 2, out for 7, three times. Use it before your next test, interview or big meeting.",
+      "quiz": {
+        "question": "What breathing pattern does the NHS suggest if you feel overwhelmed in an exam?",
+        "options": [
+          "In for 4, hold for 2, out for 7",
+          "In for 10, out for 1",
+          "Hold your breath as long as possible",
+          "Breathe quickly through your mouth"
+        ],
+        "answer": 0,
+        "explanation": "Breathe in through the nose for 4, hold for 2 and breathe out for 7, repeating as needed."
+      },
+      "health": true
+    },
+    {
+      "id": "nhs-mental-health-self-help--30",
+      "topic": "relationships",
+      "tags": [
+        "loneliness",
+        "older-people",
+        "kindness"
+      ],
+      "title": "A friendly chat with an older neighbour can ease loneliness on both sides",
+      "body": "The NHS guidance on loneliness in older people says helping benefits both the older person and you; volunteering can boost your own self-esteem and sense of purpose. Simply stopping to talk to an older neighbour is a good start. If they may have hearing or memory difficulties, speak clearly without shouting, pause between sentences and give them time to answer.\n\nPractical help matters too: offering to do shopping, post letters or collect medicines, giving a lift to appointments or faith services, helping with small household jobs, or sharing a plate of home-cooked food. In cold weather, watch for signs of illness and contact their doctor or a helpline if worried.",
+      "apply_it": "This week, stop and chat with an older neighbour or relative who lives alone, and ask if there's one small job you could help with.",
+      "quiz": {
+        "question": "How does the NHS suggest talking to an older person who may have hearing difficulties?",
+        "options": [
+          "Shout so they definitely hear",
+          "Speak quickly to save their time",
+          "Speak clearly without shouting and give them time to reply",
+          "Only communicate in writing"
+        ],
+        "answer": 2,
+        "explanation": "Speak clearly without shouting, pause between sentences and allow extra time for them to answer."
+      },
+      "health": true
+    }
+  ]
+}

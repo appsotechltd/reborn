@@ -48,6 +48,8 @@ def cmd_fetch(args) -> int:
 def cmd_validate(args) -> int:
     sources, _ = registry.load(REGISTRY_PATH)
     report, docs = validate_library(Path(args.library), sources)
+    for n in report.notes:
+        print(f"note: {n}")
     for w in report.warnings:
         print(f"warning: {w}")
     for e in report.errors:

@@ -1,0 +1,1322 @@
+{
+  "source": {
+    "id": "plutarchs-lives",
+    "title": "Plutarch's Lives",
+    "authors": [
+      "Plutarch"
+    ],
+    "translator": "John Dryden and others, revised by Arthur Hugh Clough",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/674",
+    "licence": "public-domain",
+    "licence_url": "https://www.gutenberg.org/policy/license.html",
+    "attribution": "Plutarch, Lives (Dryden translation, revised by A. H. Clough), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 100,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Complete Parallel Lives, Gutenberg #674 (1996 etext), fetched from the GITenberg mirror. Translation by John Dryden and others (1683–86), revised by Arthur Hugh Clough (died 1861); all translators died long before 1956, so the translation is public domain. Written in Greek around 100 CE."
+  },
+  "cards": [
+    {
+      "id": "plutarchs-lives--01",
+      "topic": "leadership",
+      "tags": [
+        "listening",
+        "conflict",
+        "persuasion",
+        "composure"
+      ],
+      "title": "When someone shouts you down, stay calm and ask to be heard",
+      "body": "Before the sea battle of Salamis, the Spartan commander Eurybiades wanted to retreat. Themistocles kept arguing, and the furious Eurybiades raised his staff as if to hit him. Themistocles didn't flinch or hit back. He simply asked to finish his point. Plutarch says his restraint surprised Eurybiades into listening, and the argument was won.\n\nIn a tense meeting, matching anger with anger turns a debate into a fight about pride. Staying level, and asking only for a fair hearing, keeps attention on the idea and makes the other person look for reasons to agree.",
+      "quote": "Strike if you will, but hear;",
+      "locator": "Themistocles ¶27",
+      "apply_it": "Next time someone pushes back hard on your idea, lower your voice, acknowledge their concern, and ask for two minutes to finish your case.",
+      "quiz": {
+        "question": "How did Themistocles respond when Eurybiades threatened to strike him?",
+        "options": [
+          "He stayed calm and asked to be heard",
+          "He walked out of the council",
+          "He struck first",
+          "He gave up his argument"
+        ],
+        "answer": 0,
+        "explanation": "His calm request for a hearing surprised Eurybiades into listening, and Themistocles' plan carried the day."
+      }
+    },
+    {
+      "id": "plutarchs-lives--02",
+      "topic": "lives-history",
+      "tags": [
+        "ambition",
+        "motivation",
+        "role-models",
+        "envy"
+      ],
+      "title": "Let other people's achievements wake you up, not eat you up",
+      "body": "As a young man, Themistocles watched Athens celebrate Miltiades, the general who won at Marathon. Plutarch says he went quiet, skipped his usual pleasures and lay awake at night. Asked why, he said Miltiades' victory would not let him sleep. And while others thought the war was over, he saw it as only the start, and began preparing Athens for what came next.\n\nSomeone else's success can make us bitter, or it can show us what is possible. Themistocles turned admiration into a plan. The healthy version of envy asks: what would I need to learn or build to do something like that?",
+      "quote": "the trophy of Miltiades would not let him sleep.",
+      "locator": "Themistocles ¶6",
+      "apply_it": "Think of a peer whose success stings a little. Write down one specific skill or habit of theirs you could start building this month.",
+      "quiz": {
+        "question": "What did Themistocles do with the admiration he felt for Miltiades?",
+        "options": [
+          "He tried to discredit Miltiades",
+          "He left Athens in frustration",
+          "He turned it into preparation for future challenges",
+          "He ignored it and carried on as before"
+        ],
+        "answer": 2,
+        "explanation": "It drove him to see further ahead than others and to get Athens ready for the larger war to come."
+      }
+    },
+    {
+      "id": "plutarchs-lives--03",
+      "topic": "lives-history",
+      "tags": [
+        "composure",
+        "insults",
+        "self-control",
+        "dignity"
+      ],
+      "title": "Answer abuse with calm, and even courtesy",
+      "body": "Plutarch tells how a man followed Pericles around the Athenian marketplace all day, insulting him while he worked. Pericles said nothing and carried on with his business. When he reached home after dark, with the man still shouting behind him, Pericles told a servant to take a lamp and walk his abuser safely home.\n\nThe story shows a leader who refused to let someone else set his mood. Hitting back would have made Pericles look small and given the heckler what he wanted. Calm courtesy, by contrast, left the insults with nowhere to land.",
+      "quote": "he ordered one of his servants to take a light, and to go along with the man and see him safe home.",
+      "locator": "Pericles ¶20",
+      "apply_it": "Recall the last time someone was rude to you. Write down the calmest, kindest response you could have given, and keep it ready for next time.",
+      "quiz": {
+        "question": "What did Pericles do after being insulted all day by a man in the marketplace?",
+        "options": [
+          "Had him arrested",
+          "Insulted him back in public",
+          "Avoided the marketplace afterwards",
+          "Sent a servant with a light to see him home"
+        ],
+        "answer": 3,
+        "explanation": "He stayed silent all day and then showed the man courtesy, refusing to let the abuse change his conduct."
+      }
+    },
+    {
+      "id": "plutarchs-lives--04",
+      "topic": "leadership",
+      "tags": [
+        "legacy",
+        "purpose",
+        "care",
+        "success"
+      ],
+      "title": "Judge your leadership by the harm you spared people, not the trophies",
+      "body": "As Pericles lay dying, friends sat by his bed listing his victories, thinking he couldn't hear. He interrupted. Those successes, he said, owed a lot to luck and other commanders had won as many. What he was proudest of was something they hadn't mentioned: no Athenian had ever had to mourn because of him.\n\nIt is a striking measure of a career. Not the wins on the wall, but how well you protected the people who relied on you. For a modern manager, that might mean jobs kept, burnout avoided, and nobody's life made worse by your decisions.",
+      "quote": "\"For,\" said he, \"no Athenian, through my means, ever wore mourning.\"",
+      "locator": "Pericles ¶104",
+      "apply_it": "Ask yourself: if your team described your impact in one sentence, would it be about results only, or also about how you treated them?",
+      "quiz": {
+        "question": "What did the dying Pericles say was his greatest achievement?",
+        "options": [
+          "His nine victories in war",
+          "That no Athenian had mourned because of him",
+          "The buildings he raised in Athens",
+          "The wealth he brought the city"
+        ],
+        "answer": 1,
+        "explanation": "He set aside his victories as partly luck and valued most that his decisions had cost no citizen a death to grieve."
+      }
+    },
+    {
+      "id": "plutarchs-lives--05",
+      "topic": "lives-history",
+      "tags": [
+        "envy",
+        "reputation",
+        "integrity",
+        "grace"
+      ],
+      "title": "Some people will resent you for being good; stay good anyway",
+      "body": "Aristides was known across Athens as \"the Just\". When the city voted on whether to banish him, an illiterate voter who didn't recognise him handed him a shard and asked him to write \"Aristides\" on it. Had Aristides wronged him? No, the man said; he was just tired of hearing him called the Just. Aristides wrote his own name and handed it back without a word.\n\nPlutarch uses the scene to show how envy can attach to virtue itself. Aristides didn't argue, sulk or change who he was. When reputation attracts resentment, the answer is not to become worse but to keep your conduct steady.",
+      "quote": "I am tired of hearing him everywhere called the Just.",
+      "locator": "Aristides ¶14",
+      "apply_it": "If someone resents a strength of yours, resist the urge to shrink it or defend it loudly. Just keep doing the right thing this week.",
+      "quiz": {
+        "question": "Why did the voter want Aristides banished?",
+        "options": [
+          "Aristides had cheated him",
+          "Aristides had broken a law",
+          "He was tired of hearing him called the Just",
+          "He supported a rival politician"
+        ],
+        "answer": 2,
+        "explanation": "The man had no grievance at all; he simply resented Aristides' reputation for fairness."
+      }
+    },
+    {
+      "id": "plutarchs-lives--06",
+      "topic": "leadership",
+      "tags": [
+        "lead-by-example",
+        "reform",
+        "integrity",
+        "home"
+      ],
+      "title": "Before you demand a change from others, try it in your own house",
+      "body": "Someone urged the Spartan lawgiver Lycurgus to turn Sparta into a democracy. His reply was short: go ahead, start with your own household. Plutarch collects it among Lycurgus's famously brief sayings.\n\nThe point travels well. It is easy to call for fairness, openness or shared decisions in an organisation while running your own team, family or project the old way. Testing an idea where you have direct control shows whether you truly believe it, teaches you its real costs, and gives you credibility when you ask others to follow.",
+      "quote": "\"Begin, friend,\" said he, \"and set it up in your family.\"",
+      "locator": "Lycurgus ¶40",
+      "apply_it": "Pick one change you keep asking your organisation or community for. Practise it first in the area you control and note what you learn.",
+      "quiz": {
+        "question": "What did Lycurgus tell the man who wanted democracy in Sparta?",
+        "options": [
+          "To start by practising it in his own family",
+          "Democracy was forbidden by the gods",
+          "To write a petition to the kings",
+          "To wait until the next war ended"
+        ],
+        "answer": 0,
+        "explanation": "He challenged the man to apply the idea where he had direct control before demanding it of the whole city."
+      }
+    },
+    {
+      "id": "plutarchs-lives--07",
+      "topic": "leadership",
+      "tags": [
+        "teams",
+        "humility",
+        "culture",
+        "talent"
+      ],
+      "title": "Build a team so strong that no single star is irreplaceable",
+      "body": "Among the Spartan sayings Plutarch records is one from Argileonis, mother of the famous general Brasidas. When visitors praised her dead son as the best man Sparta had, she corrected them: he was good and brave, but Sparta had many better.\n\nShe was not belittling her son. She was expressing a culture that valued the depth of the whole community over any one hero. Organisations that depend on a single brilliant person are fragile; when that person leaves, everything wobbles. Strong leaders deliberately grow many capable people and resist the cult of the indispensable star.",
+      "quote": "Brasidas was a good and brave man, but there are in Sparta many better than he.",
+      "locator": "Lycurgus ¶62",
+      "apply_it": "List the tasks on your team that only one person can do. Choose one and arrange for a second person to learn it this month.",
+      "quiz": {
+        "question": "Why did Argileonis say Sparta had many men better than her son?",
+        "options": [
+          "She disliked her son",
+          "She valued the strength of the whole community over one hero",
+          "She wanted to hide his achievements from enemies",
+          "She thought he had been a coward"
+        ],
+        "answer": 1,
+        "explanation": "Her answer reflects a culture that prized broad strength across many people rather than dependence on one star."
+      }
+    },
+    {
+      "id": "plutarchs-lives--08",
+      "topic": "leadership",
+      "tags": [
+        "conviction",
+        "criticism",
+        "patience",
+        "strategy"
+      ],
+      "title": "Don't let ridicule push you off a strategy you know is right",
+      "body": "Fabius Maximus fought Hannibal by delay: shadowing his army, avoiding pitched battles and letting him wear himself out. Romans mocked him as a coward, and friends urged him to fight just to silence the jeers. Fabius refused. Fear for his country was nothing to be ashamed of, he said, but a leader who changes course because of blame and gossip is unfit to lead.\n\nPatient strategies are often unpopular while they work, because their results arrive slowly. Listening to criticism matters, but there's a difference between new evidence and noise. Fabius held his course, and Rome later recognised that his caution had saved it.",
+      "quote": "I should be more fainthearted than they make me, if, through fear of idle reproaches, I should abandon my own convictions.",
+      "locator": "Fabius ¶9",
+      "apply_it": "Take one decision you're being criticised for. Separate the criticism into new facts and mere pressure, and act only on the facts.",
+      "quiz": {
+        "question": "Why did Fabius refuse to fight Hannibal despite public mockery?",
+        "options": [
+          "He was secretly afraid of battle",
+          "He was waiting for orders from the senate",
+          "Rome had no army ready",
+          "He believed giving in to idle reproaches would make him unfit to lead"
+        ],
+        "answer": 3,
+        "explanation": "He saw changing course because of gossip and blame as the real weakness, and stuck with the delaying strategy he believed in."
+      }
+    },
+    {
+      "id": "plutarchs-lives--09",
+      "topic": "lives-history",
+      "tags": [
+        "mistakes",
+        "humility",
+        "rivals",
+        "learning"
+      ],
+      "title": "Admitting a mistake openly can turn a rival into an ally",
+      "body": "Minucius, Fabius's impatient co-commander, rushed into battle against Hannibal and was nearly destroyed. Fabius came to his rescue, then said nothing harsh to him. Minucius responded with rare honesty. He told his soldiers that nobody gets through great affairs without error, but a sensible person learns from it. He then marched his army to Fabius's camp and placed himself under his command.\n\nBoth men behaved well. Fabius didn't gloat, which left room for his rival to change. Minucius didn't make excuses, which turned a humiliating failure into the beginning of trust. Teams recover fastest when mistakes can be owned without anyone being crushed for them.",
+      "quote": "To conduct great matters and never commit a fault is above the force of human nature; but to learn and improve by the faults we have committed, is that which becomes a good and sensible man.",
+      "locator": "Fabius ¶20",
+      "apply_it": "Think of a recent mistake of yours that affected others. Tell them plainly what you got wrong and what you will do differently.",
+      "quiz": {
+        "question": "How did Minucius respond after Fabius rescued his army?",
+        "options": [
+          "He publicly admitted his error and put himself under Fabius",
+          "He blamed his soldiers",
+          "He resigned and left Rome",
+          "He demanded a second command"
+        ],
+        "answer": 0,
+        "explanation": "He owned the mistake openly, and because Fabius had not humiliated him, the two armies were reconciled."
+      }
+    },
+    {
+      "id": "plutarchs-lives--10",
+      "topic": "lives-history",
+      "tags": [
+        "lifelong-learning",
+        "curiosity",
+        "ageing",
+        "growth"
+      ],
+      "title": "Keep learning something new every day, however old you get",
+      "body": "Solon, the lawgiver of Athens, was a merchant, poet and statesman, and Plutarch notes that some say he travelled more for learning and experience than for profit. In old age Solon liked to say, in one of his own verses, that he grew older each day while learning something new. Even late in life he went to see the new art of tragedy when it first appeared.\n\nFor anyone in charge of people, curiosity is a working tool. The world keeps changing, and the leader who stops learning gradually starts making yesterday's decisions. Solon treated learning not as a stage of youth but as a daily habit.",
+      "quote": "Each day grew older, and learnt something new,",
+      "locator": "Solon ¶6",
+      "apply_it": "Choose one thing to learn this week that has nothing to do with your current job title, and spend 15 minutes a day on it.",
+      "quiz": {
+        "question": "What did Solon say about himself in old age?",
+        "options": [
+          "He had learned everything he needed",
+          "He regretted spending time on poetry",
+          "He grew older each day while learning something new",
+          "He wished he had stayed a merchant"
+        ],
+        "answer": 2,
+        "explanation": "His line about learning something new each day reflects a lifelong habit of curiosity."
+      }
+    },
+    {
+      "id": "plutarchs-lives--11",
+      "topic": "lives-history",
+      "tags": [
+        "rules",
+        "fairness",
+        "incentives",
+        "trust"
+      ],
+      "title": "Good rules work when keeping them pays better than breaking them",
+      "body": "When Solon was writing new laws for Athens, the Scythian visitor Anacharsis laughed at him. Written laws, he said, are like spiders' webs: they catch the weak and poor, while the rich and powerful break straight through. Solon's answer was practical. People keep agreements when nobody gains from breaking them, so he would design his laws so that everyone could see justice was the better deal.\n\nAny organisation's policies face the same test. Rules that only bind junior staff, or that reward cheating, will be ignored. Rules that apply to everyone and make honesty the sensible choice tend to hold.",
+      "quote": "men keep their promises when neither side can get anything by the breaking of them",
+      "locator": "Solon ¶17",
+      "apply_it": "Look at one rule in your workplace or group. Does it apply equally to the powerful? Does following it pay off? Suggest one fix if not.",
+      "quiz": {
+        "question": "What was Solon's answer to the claim that laws are like spiders' webs?",
+        "options": [
+          "He would punish the rich more harshly",
+          "Only the gods could enforce laws",
+          "Laws were unnecessary in Athens",
+          "He would fit laws so that being just was clearly better than breaking them"
+        ],
+        "answer": 3,
+        "explanation": "He aimed to make obeying the law the obviously better choice for everyone, rich and poor alike."
+      }
+    },
+    {
+      "id": "plutarchs-lives--12",
+      "topic": "lives-history",
+      "tags": [
+        "observation",
+        "problem-solving",
+        "patience",
+        "understanding"
+      ],
+      "title": "Find out what is really causing the trouble before you force a fix",
+      "body": "A magnificent horse, Bucephalas, was brought to King Philip of Macedon, but it reared and fought everyone who tried to mount it. As it was being led away as useless, the young Alexander bet he could manage it. He had noticed something the handlers missed: the horse was frightened by its own moving shadow. He turned it to face the sun, calmed it gently, and rode it without whip or spur.\n\nThe handlers had treated a frightened animal as a bad one. Teams, customers and projects often \"rear up\" for reasons nobody has looked for. Careful observation of the cause usually beats more force.",
+      "quote": "turned him directly towards the sun, having, it seems, observed that he was disturbed at and afraid of the motion of his own shadow",
+      "locator": "Alexander ¶9",
+      "apply_it": "Pick a person or situation labelled 'difficult'. Spend ten minutes observing and asking what triggers the problem before trying any solution.",
+      "quiz": {
+        "question": "How did Alexander tame Bucephalas?",
+        "options": [
+          "By beating him into submission",
+          "By noticing he feared his shadow and turning him to face the sun",
+          "By starving him until he obeyed",
+          "By letting an older rider try first"
+        ],
+        "answer": 1,
+        "explanation": "He spotted the hidden cause of the horse's panic and removed it, then used gentleness rather than force."
+      }
+    },
+    {
+      "id": "plutarchs-lives--13",
+      "topic": "lives-history",
+      "tags": [
+        "trust",
+        "loyalty",
+        "courage",
+        "relationships"
+      ],
+      "title": "Show trust openly in the people who have earned it",
+      "body": "When Alexander fell dangerously ill, his doctors were afraid to treat him in case they failed. Only his physician Philip dared to prepare a strong remedy. Just then a letter came from the general Parmenio warning that Philip had been bribed to poison him. Alexander kept the letter to himself. When Philip brought the medicine, Alexander drank it while handing him the letter to read.\n\nIt was a dramatic gesture, but the principle is everyday: suspicion spreads, and acting on every rumour about a proven colleague destroys loyalty. Plutarch's scene shows trust given openly and visibly to someone who had earned it, and Philip's treatment saved his life.",
+      "quote": "for Alexander's looks were cheerful and open, to show his kindness to and confidence in his physician",
+      "locator": "Alexander ¶32",
+      "apply_it": "When you hear a rumour about a trusted colleague, go to them directly and calmly before you let it change how you treat them.",
+      "quiz": {
+        "question": "What did Alexander do with the letter accusing his physician?",
+        "options": [
+          "Had Philip arrested",
+          "Refused the medicine",
+          "Drank the medicine while handing Philip the letter",
+          "Showed it to all his generals first"
+        ],
+        "answer": 2,
+        "explanation": "He showed open confidence in a proven friend instead of acting on an unverified accusation."
+      }
+    },
+    {
+      "id": "plutarchs-lives--14",
+      "topic": "leadership",
+      "tags": [
+        "solidarity",
+        "example",
+        "hardship",
+        "morale"
+      ],
+      "title": "Don't take a comfort your team can't share",
+      "body": "During a gruelling desert pursuit, Alexander's soldiers were desperate for water. Some men who had found a little brought him a helmet full. Alexander looked around at his thirsty soldiers watching him, thanked the men, and handed it back untouched. If he alone drank, he said, the rest would lose heart. Plutarch says the army immediately begged him to lead them on.\n\nA small privilege taken in front of struggling people can undo months of good words. Refusing it costs the leader little and tells everyone that the hardship is shared. The modern versions are easy to spot: the perks, bonuses or shortcuts that only the boss enjoys during hard times.",
+      "quote": "\"For,\" said he, \"if I alone should drink, the rest will be out of heart.\"",
+      "locator": "Alexander ¶63",
+      "apply_it": "During your team's next crunch period, give up one visible privilege you have and work alongside them under the same conditions.",
+      "quiz": {
+        "question": "Why did Alexander refuse the helmet of water?",
+        "options": [
+          "He didn't want to drink while his soldiers went without",
+          "He suspected it was poisoned",
+          "He wasn't thirsty",
+          "He was saving it for his horse"
+        ],
+        "answer": 0,
+        "explanation": "He knew that drinking alone in front of thirsty men would crush their spirit, while refusing it showed shared hardship."
+      }
+    },
+    {
+      "id": "plutarchs-lives--15",
+      "topic": "lives-history",
+      "tags": [
+        "ambition",
+        "contentment",
+        "purpose",
+        "enough"
+      ],
+      "title": "Ask what all your striving is for, and whether you could have it now",
+      "body": "King Pyrrhus was preparing to invade Italy when his adviser Cineas asked him a series of simple questions. After Italy, what? Sicily. After Sicily? Africa, then Macedon and Greece. And then? Then, said Pyrrhus with a smile, we will relax, enjoy ourselves and talk with friends. Cineas asked what stopped them doing that now, without all the bloodshed and risk.\n\nPlutarch notes that the question troubled Pyrrhus but didn't change his plans. Many of us chase the next promotion, deal or milestone with a vague promise of rest afterwards. Cineas's question is worth asking: is the goal really the thing, or a delay of what we already could have?",
+      "quote": "And what hinders us now, sir, if we have a mind to be merry, and entertain one another",
+      "locator": "Pyrrhus ¶18",
+      "apply_it": "Write down your next big goal and what you hope it will finally let you enjoy. Is any part of that available to you now?",
+      "quiz": {
+        "question": "What was the point of Cineas's questions to Pyrrhus?",
+        "options": [
+          "To plan the best route to Italy",
+          "To show that the ease Pyrrhus wanted at the end was already available",
+          "To persuade him to attack Carthage first",
+          "To ask for a bigger reward"
+        ],
+        "answer": 1,
+        "explanation": "Cineas led Pyrrhus to admit that his final goal was leisure with friends, which he could already enjoy without endless war."
+      }
+    },
+    {
+      "id": "plutarchs-lives--16",
+      "topic": "lives-history",
+      "tags": [
+        "integrity",
+        "bribery",
+        "pressure",
+        "character"
+      ],
+      "title": "Be the person who can't be bought or rattled",
+      "body": "The Roman envoy Fabricius was famous for being honest and poor. King Pyrrhus first tried to give him gold as a \"gift\"; Fabricius declined. The next day Pyrrhus hid a huge war elephant behind a curtain and had it suddenly trumpet over Fabricius's head. Fabricius turned, smiled, and told the king that neither yesterday's money nor today's beast had moved him.\n\nPeople with power often test others with the same two tools: reward and fear. A negotiator, official or manager who can't be swayed by either becomes very hard to manipulate, and very easy to trust.",
+      "quote": "neither your money yesterday, nor this beast today make any impression upon me.",
+      "locator": "Pyrrhus ¶24",
+      "apply_it": "Name one 'sweetener' and one pressure tactic you've faced at work. Decide in advance how you'll respond if they come again.",
+      "quiz": {
+        "question": "What two tactics did Pyrrhus use to test Fabricius?",
+        "options": [
+          "Flattery and threats of exile",
+          "A marriage offer and a bribe",
+          "A banquet and a duel",
+          "A gift of gold and a sudden fright from an elephant"
+        ],
+        "answer": 3,
+        "explanation": "Pyrrhus tried money and then intimidation; Fabricius was moved by neither."
+      }
+    },
+    {
+      "id": "plutarchs-lives--17",
+      "topic": "lives-history",
+      "tags": [
+        "humility",
+        "status",
+        "service",
+        "good-humour"
+      ],
+      "title": "Don't be too important to pitch in",
+      "body": "Philopoemen, general of the Achaean League, once arrived early and alone at a house where he was to dine, dressed in a plain cloak. The hostess, busy preparing for the great general, mistook him for a servant and asked him to help. He took off his cloak and began chopping firewood. When her husband came home and stared, Philopoemen joked that he was paying the price for his plain looks.\n\nHe could have been offended. Instead he did the work and laughed at himself. Leaders who quietly pitch in with ordinary tasks, without making a show of it, earn a respect that titles alone never buy.",
+      "quote": "\"I am,\" replied he in his Doric dialect, \"paying the penalty of my ugly looks.\"",
+      "locator": "Philopoemen ¶2",
+      "apply_it": "This week, do one unglamorous task your team usually handles, without announcing it.",
+      "quiz": {
+        "question": "What did Philopoemen do when the hostess mistook him for a servant?",
+        "options": [
+          "Chopped the firewood and joked about it",
+          "Left in anger",
+          "Demanded an apology",
+          "Sent for his guards"
+        ],
+        "answer": 0,
+        "explanation": "He took no offence, did the work, and turned the mix-up into a joke at his own expense."
+      }
+    },
+    {
+      "id": "plutarchs-lives--18",
+      "topic": "lives-history",
+      "tags": [
+        "humour",
+        "words",
+        "relationships",
+        "reputation"
+      ],
+      "title": "A clever joke that wounds can cost you more than it wins",
+      "body": "Cicero was the greatest speaker in Rome and famous for his wit. Plutarch accepts that sharp jokes against opponents in court are fair game, but says Cicero went further: he would mock almost anyone for the sake of a good line, including people's families and appearance. It made him many enemies who later had a hand in his downfall.\n\nWit is a real asset in leadership. But a laugh bought at someone's expense is often remembered by them long after everyone else has forgotten it. The test is simple: would the joke still be funny to the person it's about?",
+      "quote": "But he excited much ill feeling by his readiness to attack anyone for the sake of a jest.",
+      "locator": "Cicero ¶39",
+      "apply_it": "Before your next witty remark about a person, ask: would they laugh too? If not, keep it to yourself.",
+      "quiz": {
+        "question": "What does Plutarch say Cicero's jokes did to him?",
+        "options": [
+          "Made him universally loved",
+          "Won every court case for him",
+          "Created much ill feeling against him",
+          "Got him elected consul"
+        ],
+        "answer": 2,
+        "explanation": "His readiness to mock anyone for a laugh earned him resentment and enemies."
+      }
+    },
+    {
+      "id": "plutarchs-lives--19",
+      "topic": "lives-history",
+      "tags": [
+        "self-promotion",
+        "vanity",
+        "credibility",
+        "humility"
+      ],
+      "title": "Stop retelling your own victories; let others do it",
+      "body": "Cicero's finest hour was exposing the Catiline conspiracy as consul. The trouble, Plutarch says, is that he never stopped talking about it. In the senate, in the assembly, in court and in his books he kept praising himself, until a style that was naturally delightful became tiresome to his listeners. His love of praise also got in the way of his wisest plans.\n\nEven real achievements lose their shine when the person who did them keeps reminding everyone. Colleagues start to roll their eyes, and the achievement becomes a joke. Credit lasts longer when it comes from others.",
+      "quote": "he also filled his books and writings with his own praises, to such an excess as to render a style, in itself most pleasant and delightful, nauseous and irksome to his hearers",
+      "locator": "Cicero ¶35",
+      "apply_it": "In your next few meetings, count how often you mention your own past wins. Try replacing one with credit for someone else.",
+      "quiz": {
+        "question": "What harm did Cicero's constant self-praise do?",
+        "options": [
+          "It had no effect on his reputation",
+          "It got him exiled immediately",
+          "It made him forget his speeches",
+          "It made his speeches tiresome to listeners"
+        ],
+        "answer": 3,
+        "explanation": "Plutarch says it turned a delightful style into something irksome and interfered with his best judgment."
+      }
+    },
+    {
+      "id": "plutarchs-lives--20",
+      "topic": "lives-history",
+      "tags": [
+        "feedback",
+        "growth",
+        "learning",
+        "mentors"
+      ],
+      "title": "Seek out the listener who will tell you your faults",
+      "body": "As a young man, Cicero studied speaking in Rhodes with the teacher Apollonius. Because Apollonius didn't understand Latin, he asked Cicero to speak in Greek, and Cicero gladly agreed, thinking his faults would be easier to point out that way. After the speech, everyone praised him except Apollonius, who sat silent for a long time before finally saying he admired Cicero and pitied Greece, which was losing its last glory to Rome.\n\nThe detail worth copying is Cicero's motive. He welcomed a harder setting because it exposed his weaknesses. Praise feels good, but growth comes from people and situations that show us what we still get wrong.",
+      "quote": "He complied willingly, thinking that his faults would thus be better pointed out to him.",
+      "locator": "Cicero ¶8",
+      "apply_it": "Ask one honest person to watch you present or work and name the two things you most need to improve. Thank them, and don't argue.",
+      "quiz": {
+        "question": "Why did Cicero happily agree to speak in Greek for Apollonius?",
+        "options": [
+          "Greek was his best language",
+          "He thought his faults would be pointed out more clearly",
+          "He wanted to impress the crowd",
+          "Latin was banned in Rhodes"
+        ],
+        "answer": 1,
+        "explanation": "He welcomed the chance to have his weaknesses exposed so he could improve."
+      }
+    },
+    {
+      "id": "plutarchs-lives--21",
+      "topic": "lives-history",
+      "tags": [
+        "ethics",
+        "competition",
+        "integrity",
+        "trust"
+      ],
+      "title": "Refuse a win that comes from someone else's betrayal",
+      "body": "While the Romans besieged the town of Falerii, a schoolmaster there led his pupils out of the gates and handed them to the Roman general Camillus, hoping to be rewarded for delivering the whole city. Camillus was disgusted. Even in conflict, he said, decent people keep certain rules; victory isn't worth a shameful act. He sent the teacher back in disgrace. The townspeople were so moved by his fairness that they chose to make peace with Rome.\n\nIn business, the equivalent is the leaked document, the poached secret or the insider offering to sell out a competitor. Camillus's choice protected his name and won more than the betrayal ever could.",
+      "quote": "A great general should rely on his own virtue, and not on other men's vices.",
+      "locator": "Camillus ¶11",
+      "apply_it": "If you are ever offered confidential information about a rival, decide now that you will refuse it and report the offer.",
+      "quiz": {
+        "question": "What happened after Camillus rejected the schoolmaster's betrayal?",
+        "options": [
+          "The town attacked Rome",
+          "Camillus was punished by the senate",
+          "The townspeople, impressed by his justice, sought peace",
+          "The schoolmaster became a Roman hero"
+        ],
+        "answer": 2,
+        "explanation": "His refusal to profit from treachery won the town's admiration, and they chose to submit and make peace."
+      }
+    },
+    {
+      "id": "plutarchs-lives--22",
+      "topic": "lives-history",
+      "tags": [
+        "feedback",
+        "perception",
+        "humility",
+        "trust"
+      ],
+      "title": "When people say you look too grand, listen and change",
+      "body": "After the Roman kings were expelled, the consul Valerius lived in a large, imposing house overlooking the forum. People began to mutter that he looked like a new king. When friends told him, he didn't argue or take offence. That same night he hired workers and had the whole house pulled down, and for a time had to stay with friends.\n\nPlutarch praises him for having ears open to truth rather than flattery. Leaders are often the last to hear how they are seen. Valerius treated people's perception as real information and acted on it fast, and his trust with the public was restored.",
+      "quote": "But Valerius showed how well it were for men in power and great offices to have ears that give admittance to truth before flattery",
+      "locator": "Poplicola ¶8",
+      "apply_it": "Ask a trusted colleague: 'Is there anything about how I come across that makes people uneasy?' Act on one thing they say.",
+      "quiz": {
+        "question": "What did Valerius do when told his house made him look like a king?",
+        "options": [
+          "Had it pulled down overnight",
+          "Built a wall around it",
+          "Punished those who complained",
+          "Ignored the criticism"
+        ],
+        "answer": 0,
+        "explanation": "He took the criticism seriously and acted immediately, showing he valued truth over flattery."
+      }
+    },
+    {
+      "id": "plutarchs-lives--23",
+      "topic": "leadership",
+      "tags": [
+        "power",
+        "humility",
+        "authority",
+        "trust"
+      ],
+      "title": "Giving up the trappings of power can increase your real influence",
+      "body": "Valerius, the Roman consul, went further than demolishing his grand house. He removed the axes from the bundles of rods carried before him, and lowered the rods whenever he entered the people's assembly, as a sign that power came from them. Plutarch observes that this humility was not weakness: every bit of outward authority he gave up came back as real power, because people followed him willingly. They named him Poplicola, \"friend of the people\".\n\nModern leaders have their own rods and axes: the corner office, the title, the closed door. Lowering them often wins more cooperation than any display of rank.",
+      "quote": "for whatever he detracted from his authority he added to his real power",
+      "locator": "Poplicola ¶9",
+      "apply_it": "Identify one status symbol that sets you apart from your team. Try going without it for a month and notice how people respond.",
+      "quiz": {
+        "question": "According to Plutarch, what happened when Poplicola reduced the outward signs of his authority?",
+        "options": [
+          "He lost all influence",
+          "His real power grew because people followed him willingly",
+          "The senate removed him",
+          "He was forced to resign"
+        ],
+        "answer": 1,
+        "explanation": "What he gave up in outward show he gained in genuine willing support."
+      }
+    },
+    {
+      "id": "plutarchs-lives--24",
+      "topic": "leadership",
+      "tags": [
+        "example",
+        "teamwork",
+        "morale",
+        "shared-effort"
+      ],
+      "title": "People love leaders who share the work, not just hand out rewards",
+      "body": "Serving in Africa, the young Marius matched the ordinary soldiers in hard work and simple living: eating the same bread, sleeping on a plain bed, helping dig trenches. Plutarch explains why this won their loyalty. When someone chooses to share our labour, it feels lighter, because it no longer feels forced. Soldiers, he says, admire those who give them honours and money less than those who share their work and danger.\n\nThis holds in any team. Bonuses and praise matter, but nothing builds loyalty like a manager who rolls up their sleeves during the hardest part of the job.",
+      "quote": "For they do not so much admire those that confer honors and riches upon them, as those that partake of the same labor and danger with themselves",
+      "locator": "Caius Marius ¶8",
+      "apply_it": "Next time your team faces a tedious or tiring task, join in for at least part of it instead of only checking on progress.",
+      "quiz": {
+        "question": "Why, according to Plutarch, did soldiers love leaders who shared their labour?",
+        "options": [
+          "Because it meant less work for everyone",
+          "Because the law required it",
+          "Because those leaders paid more",
+          "Because shared work feels lighter and less forced"
+        ],
+        "answer": 3,
+        "explanation": "Plutarch says voluntary sharing of labour eases it by removing the sense of compulsion, and earns more love than rewards do."
+      }
+    },
+    {
+      "id": "plutarchs-lives--25",
+      "topic": "leadership",
+      "tags": [
+        "persistence",
+        "patience",
+        "strategy",
+        "small-steps"
+      ],
+      "title": "Persistence beats force: big problems yield bit by bit",
+      "body": "Sertorius's allies in Spain kept demanding an all-out attack. To teach them, he staged a demonstration. A strong man tried to rip the whole tail off a weak horse at once, and failed. A weak man plucked a strong horse's tail one hair at a time, and soon finished. Things that can't be overcome all together, Sertorius said, give way when taken little by little.\n\nLarge goals at work and in life, such as clearing a debt, learning a skill or changing a culture, rarely fall to one heroic push. They fall to steady, patient effort repeated until the job is done.",
+      "quote": "You see, fellow soldiers, that perseverance is more prevailing than violence, and that many things which cannot be overcome when they are together, yield themselves up when taken little by little.",
+      "locator": "Sertorius ¶19",
+      "apply_it": "Break one overwhelming goal into the smallest possible daily action, and do it every day for two weeks.",
+      "quiz": {
+        "question": "What did Sertorius's demonstration with the two horses teach?",
+        "options": [
+          "Persistent small efforts overcome what brute force cannot",
+          "Strength always wins",
+          "Horses are useless in war",
+          "Weak men should not be soldiers"
+        ],
+        "answer": 0,
+        "explanation": "The weak man plucking hair by hair succeeded where the strong man's single great effort failed."
+      }
+    },
+    {
+      "id": "plutarchs-lives--26",
+      "topic": "lives-history",
+      "tags": [
+        "pride",
+        "rejection",
+        "self-control",
+        "resilience"
+      ],
+      "title": "Stubborn pride leaves you alone; learn to take a setback gracefully",
+      "body": "Marcius Coriolanus was a celebrated Roman soldier, but when the people voted against him for consul he could not bear the insult. Plutarch says he had always mistaken his proud, combative temper for nobility. He never learned what anyone dealing with the public must: avoid self-will, which, as Plato put it, keeps company with solitude, and be able to put up with ill treatment. His anger set him on a path that ended in exile.\n\nRejection happens to everyone who puts themselves forward. Those who can absorb it without lashing out keep their allies; those who can't end up isolated.",
+      "quote": "to avoid above all things that self-will, which, as Plato says, belongs to the family of solitude",
+      "locator": "Coriolanus ¶20",
+      "apply_it": "Recall a recent rejection or snub. Write down what a gracious response would have looked like, and how it might have kept a door open.",
+      "quiz": {
+        "question": "What flaw does Plutarch say led Coriolanus astray after his election defeat?",
+        "options": [
+          "Laziness",
+          "Too much trust in friends",
+          "Self-will and inability to bear ill treatment",
+          "Lack of military skill"
+        ],
+        "answer": 2,
+        "explanation": "His proud self-will, which Plato said belongs with solitude, made him unable to accept the setback and cut him off from others."
+      }
+    },
+    {
+      "id": "plutarchs-lives--27",
+      "topic": "lives-history",
+      "tags": [
+        "anger",
+        "self-awareness",
+        "habits",
+        "communication"
+      ],
+      "title": "Set up a signal that warns you when your temper is rising",
+      "body": "Caius Gracchus was a powerful speaker with a fierce temper. In the heat of a speech his voice would rise and break, and he'd slide into abuse that spoiled his argument. His fix was ingenious. A servant named Licinius stood behind him with a pitch-pipe, and whenever Caius's tone began to crack with anger, Licinius played a soft note. Hearing it, Caius calmed his voice and recovered himself.\n\nCaius didn't pretend he had no temper; he built a system around it. A trusted colleague with a quiet signal, a pause rule, or a note on your desk can do the same job today.",
+      "quote": "he struck a soft note with his pipe, on hearing which, Caius immediately checked the vehemence of his passion and his voice",
+      "locator": "Tiberius Gracchus ¶5",
+      "apply_it": "Agree a discreet signal with a trusted colleague or friend that means 'you're getting heated', and ask them to use it.",
+      "quiz": {
+        "question": "How did Caius Gracchus manage his temper while speaking?",
+        "options": [
+          "He avoided public speaking",
+          "He took a break every five minutes",
+          "He wrote out every word in advance",
+          "A servant played a soft note on a pipe when his voice grew angry"
+        ],
+        "answer": 3,
+        "explanation": "He used an outside signal to catch his anger early and bring his voice back under control."
+      }
+    },
+    {
+      "id": "plutarchs-lives--28",
+      "topic": "lives-history",
+      "tags": [
+        "gratitude",
+        "generosity",
+        "sincerity",
+        "respect"
+      ],
+      "title": "Value a small gift given with a whole heart",
+      "body": "On one of his journeys, the Persian king Artaxerxes was being showered with presents. A poor labourer who had nothing to give ran to the river, scooped up water in his hands and offered that. Plutarch says the king was so pleased that he sent the man a golden cup and a thousand gold coins.\n\nThe gesture shows a leader who measured gifts by the spirit behind them, not their price. In teams and communities, the small, sincere efforts of people with little to give are easy to overlook next to big contributions. Noticing and honouring them builds loyalty far beyond their cost.",
+      "quote": "a certain poor laborer, having got nothing at hand to bring him, ran to the river side, and, taking up water in his hands, offered it to him",
+      "locator": "Artaxerxes ¶5",
+      "apply_it": "Notice one small, sincere contribution someone made this week that others overlooked, and thank them for it specifically.",
+      "quiz": {
+        "question": "Why did Artaxerxes reward the labourer so generously?",
+        "options": [
+          "The water was rare and valuable",
+          "He valued the sincere spirit of the gift",
+          "The labourer was secretly a nobleman",
+          "He wanted to buy the river"
+        ],
+        "answer": 1,
+        "explanation": "The man had nothing else to give, and the king honoured the heart behind the humble offering."
+      }
+    },
+    {
+      "id": "plutarchs-lives--29",
+      "topic": "lives-history",
+      "tags": [
+        "learning",
+        "mistakes",
+        "wisdom",
+        "observation"
+      ],
+      "title": "Learn from other people's mistakes, not just their successes",
+      "body": "Cato the Elder liked to say that wise people gain more from fools than fools gain from the wise. His reasoning: the wise notice the fool's errors and avoid them, while fools never copy the good examples set by the wise.\n\nIt's a useful habit of mind. Every failed project, bad decision or public blunder you witness is free education, paid for by someone else. Rather than just shaking your head, ask what exactly went wrong and how you would avoid it. Over time, careful attention to others' mistakes can save you from making many of your own.",
+      "quote": "He used to assert, also, that wise men profited more by fools, than fools by wise men",
+      "locator": "Marcus Cato ¶13",
+      "apply_it": "Think of a recent mistake you saw someone else make. Write one sentence on what caused it and one on how you'll avoid it.",
+      "quiz": {
+        "question": "Why did Cato say the wise gain more from fools than fools from the wise?",
+        "options": [
+          "Fools are secretly clever",
+          "Fools pay the wise for advice",
+          "The wise avoid fools' faults, but fools don't copy the wise",
+          "The wise have more free time"
+        ],
+        "answer": 2,
+        "explanation": "The wise learn from mistakes they observe, while fools fail to imitate good examples."
+      }
+    },
+    {
+      "id": "plutarchs-lives--30",
+      "topic": "lives-history",
+      "tags": [
+        "learning",
+        "persistence",
+        "memory",
+        "questions"
+      ],
+      "title": "Learning slowly isn't a weakness if what you learn sticks",
+      "body": "As a boy, Cato the Younger was slow to understand new lessons, but once he had learned something he never forgot it. Plutarch thinks this is common: quick minds pick things up easily, while those who learn with effort remember best, as if each lesson were burned in. Cato was obedient to his teacher but always asked the reason and cause behind everything.\n\nIf you feel slower than others in a new job or course, take heart. Struggling with material and insisting on understanding why tends to produce knowledge that lasts. Speed is not the same as depth.",
+      "quote": "men of fine genius are readily reminded of things, but those who receive with most pains and difficulty, remember best",
+      "locator": "Cato the Younger ¶4",
+      "apply_it": "When learning something new this week, don't just memorise it: ask 'why does this work?' until you can explain it in your own words.",
+      "quiz": {
+        "question": "What does Plutarch say about people who learn with difficulty?",
+        "options": [
+          "They tend to remember best",
+          "They should give up early",
+          "They never become leaders",
+          "They learn only by punishment"
+        ],
+        "answer": 0,
+        "explanation": "Plutarch notes that what is learned with effort is retained most firmly, as was the case with Cato."
+      }
+    },
+    {
+      "id": "plutarchs-lives--31",
+      "topic": "lives-history",
+      "tags": [
+        "reliability",
+        "diligence",
+        "presence",
+        "habits"
+      ],
+      "title": "Be the one who shows up first and leaves last",
+      "body": "Cato the Younger, Plutarch says, was always the first to arrive at the Roman senate and the last to leave. While others drifted in slowly, he sat reading. He never left the city when the senate was due to meet. This steady presence made him impossible to sideline, and his opponents eventually tried to get him sent away on distant missions just to be rid of him.\n\nReliability is an underrated form of influence. The person who is always there, prepared and paying attention, ends up knowing more and being trusted with more than flashier colleagues who come and go.",
+      "quote": "He was always first at the senate, and went out last",
+      "locator": "Cato the Younger ¶30",
+      "apply_it": "Pick one regular meeting or commitment this month. Arrive early, prepared, and use the spare minutes to read the material.",
+      "quiz": {
+        "question": "What habit made Cato the Younger hard to sideline in the senate?",
+        "options": [
+          "He gave the longest speeches",
+          "He was always first to arrive and last to leave",
+          "He bribed other senators",
+          "He rarely attended"
+        ],
+        "answer": 1,
+        "explanation": "His constant, prepared presence meant he was always informed and influential."
+      }
+    },
+    {
+      "id": "plutarchs-lives--32",
+      "topic": "lives-history",
+      "tags": [
+        "preparation",
+        "respect",
+        "communication",
+        "public-speaking"
+      ],
+      "title": "Preparing what you say is a form of respect for your audience",
+      "body": "Demosthenes refused to speak in the Athenian assembly unless he had thought the subject through, even when people called on him by name. Rivals mocked him, saying his arguments smelled of lamp oil, from late nights of study. Demosthenes didn't apologise. Preparation, he said, was the more truly democratic habit: a way of respecting the people, while careless speaking showed someone who meant to force rather than persuade.\n\nWinging it can feel confident, but it often wastes others' time. Taking the trouble to prepare tells your listeners that they and their decision matter.",
+      "quote": "such preparation being a kind of respect to the people",
+      "locator": "Demosthenes ¶12",
+      "apply_it": "Before your next important conversation or meeting, spend 15 minutes writing down your main point and the strongest objection to it.",
+      "quiz": {
+        "question": "How did Demosthenes defend his habit of preparing speeches?",
+        "options": [
+          "He said he had a poor memory",
+          "He said spontaneous speech was forbidden",
+          "He said it was required by law",
+          "He said preparation was a kind of respect to the people"
+        ],
+        "answer": 3,
+        "explanation": "He saw preparation as respecting his audience, and careless speech as a sign of wanting to force rather than persuade."
+      }
+    },
+    {
+      "id": "plutarchs-lives--33",
+      "topic": "lives-history",
+      "tags": [
+        "practice",
+        "weaknesses",
+        "discipline",
+        "public-speaking"
+      ],
+      "title": "Turn your weakest skill into a training plan",
+      "body": "Demosthenes became the greatest orator of Athens despite poor natural gifts. In old age he explained how. He cured his unclear, stammering speech by talking with pebbles in his mouth. He strengthened his voice by reciting while running or climbing steep slopes. He practised in front of a large mirror at home.\n\nHe didn't wait for talent; he designed specific exercises for each weakness and did them over and over. Whatever skill holds you back, whether speaking, writing or managing conflict, can usually be broken into parts and trained in the same deliberate way.",
+      "quote": "his inarticulate and stammering pronunciation he overcame and rendered more distinct by speaking with pebbles in his mouth",
+      "locator": "Demosthenes ¶19",
+      "apply_it": "Name your weakest professional skill. Design one five-minute daily drill that targets it, and do it for the next fortnight.",
+      "quiz": {
+        "question": "How did Demosthenes overcome his natural weaknesses as a speaker?",
+        "options": [
+          "He used specific exercises such as pebbles, running and a mirror",
+          "He hired others to speak for him",
+          "He avoided speaking in public",
+          "He relied on natural talent"
+        ],
+        "answer": 0,
+        "explanation": "He designed targeted drills for each defect and practised them persistently."
+      }
+    },
+    {
+      "id": "plutarchs-lives--34",
+      "topic": "leadership",
+      "tags": [
+        "brevity",
+        "communication",
+        "character",
+        "credibility"
+      ],
+      "title": "Say less, and let your character carry the weight",
+      "body": "Before speaking to the Athenians, Phocion was once seen deep in thought. Asked why, he said he was working out how to shorten what he was about to say. Even Demosthenes, the great orator, called Phocion the cutter of his long sentences. Plutarch suggests the real power was not only his brevity but his character: a word, or even a nod, from someone respected outweighs a thousand clever arguments.\n\nIn meetings and messages, the instinct is often to add more. Cutting to the point respects people's time, and a reputation for integrity makes the few words land.",
+      "quote": "I am considering how I may shorten what I am going to say to the Athenians.",
+      "locator": "Phocion ¶9",
+      "apply_it": "Take your next important email or talk and cut it by a third without losing the main point.",
+      "quiz": {
+        "question": "What was Phocion thinking about before addressing the Athenians?",
+        "options": [
+          "How to make his speech longer",
+          "How to flatter the crowd",
+          "How to shorten what he was going to say",
+          "How to avoid speaking at all"
+        ],
+        "answer": 2,
+        "explanation": "He worked to cut his message down, and his respected character gave his few words great force."
+      }
+    },
+    {
+      "id": "plutarchs-lives--35",
+      "topic": "lives-history",
+      "tags": [
+        "applause",
+        "independence",
+        "judgment",
+        "popularity"
+      ],
+      "title": "When everyone cheers, double-check your thinking",
+      "body": "Phocion was known for telling the Athenians what they didn't want to hear. Once, when he gave his opinion to the assembly and was met with loud general applause, he turned to his friends and asked whether he had accidentally said something foolish.\n\nIt was half a joke, but a serious point sits behind it. Instant popularity can mean an idea flatters the crowd rather than serves it. Leaders who seek applause tend to drift towards easy answers. Phocion treated universal approval as a cue to look again, a good habit for anyone making decisions others will cheer or resent.",
+      "quote": "\"Have I inadvertently said something foolish?\"",
+      "locator": "Phocion ¶14",
+      "apply_it": "Next time a proposal of yours is accepted with no pushback at all, ask one person to argue the opposite case before you act.",
+      "quiz": {
+        "question": "How did Phocion react when the assembly loudly applauded his opinion?",
+        "options": [
+          "He asked for more applause",
+          "He changed his opinion",
+          "He immediately left the assembly",
+          "He asked friends whether he had said something foolish"
+        ],
+        "answer": 3,
+        "explanation": "He treated sudden universal approval as a reason to question whether his advice was really sound."
+      }
+    },
+    {
+      "id": "plutarchs-lives--36",
+      "topic": "lives-history",
+      "tags": [
+        "humility",
+        "credit",
+        "success",
+        "envy"
+      ],
+      "title": "Give credit to good fortune and others, and step back at the top",
+      "body": "Timoleon freed Sicily from tyrants and made it prosper, yet he always credited his success to fortune and to God rather than to himself. Plutarch disagrees, calling it fortunate merit, but admires the attitude. Timoleon also refused to return to the power struggles of Greece. He lived quietly in the house the Syracusans gave him, avoiding the envy that, Plutarch says, ruins so many great commanders hungry for ever more honours, and enjoyed watching the cities he had helped flourish.\n\nKnowing when to claim less credit, and when to step aside, can protect both your peace and the good you have built.",
+      "quote": "the success of fortunate merit",
+      "locator": "Timoleon ¶48",
+      "apply_it": "When you next succeed, name aloud three things or people that helped you, besides your own effort.",
+      "quiz": {
+        "question": "How did Timoleon explain his own success?",
+        "options": [
+          "Entirely by his own genius",
+          "By the favour of fortune and God",
+          "By the weakness of his enemies only",
+          "By bribing the Syracusans"
+        ],
+        "answer": 1,
+        "explanation": "He credited fortune and God, and declined further power, avoiding the envy that destroyed other commanders."
+      }
+    },
+    {
+      "id": "plutarchs-lives--37",
+      "topic": "leadership",
+      "tags": [
+        "rewards",
+        "generosity",
+        "fairness",
+        "example"
+      ],
+      "title": "Treat rewards as the team's fund, and give comforts to the weakest first",
+      "body": "Plutarch says Caesar's soldiers saw that he didn't pile up wealth for his own luxury. What he gained he treated as a fund for rewarding courage, and he counted what he gave deserving soldiers as an increase to his own riches. He also took on hardship despite poor health. Once, caught in a storm with only one small room available, he gave it to Oppius, who was ill, and slept outside under a shed with the others.\n\nPeople watch where a leader's gains go and who gets the scarce comforts. Sharing rewards fairly and putting the vulnerable first builds a fierce kind of loyalty.",
+      "quote": "places of honor should be given up to the greater men, and necessary accommodations to the weaker",
+      "locator": "Caesar ¶16",
+      "apply_it": "Next time something scarce needs allocating on your team (a quiet room, flexible hours, a budget), ask first who needs it most.",
+      "quiz": {
+        "question": "What did Caesar do when only one small room was available during a storm?",
+        "options": [
+          "Took it for himself",
+          "Gave it to the highest-ranking officer",
+          "Gave it to Oppius, who was ill, and slept outside",
+          "Ordered the owner to build another"
+        ],
+        "answer": 2,
+        "explanation": "He gave the shelter to the weakest member of the party, as he said necessary comforts should go to the weaker."
+      }
+    },
+    {
+      "id": "plutarchs-lives--38",
+      "topic": "leadership",
+      "tags": [
+        "risk",
+        "early-warning",
+        "problems",
+        "vigilance"
+      ],
+      "title": "Deal with small problems early, before they grow unstoppable",
+      "body": "Early in Caesar's career, Roman nobles dismissed him as a charming spendthrift chasing popularity. By the time they saw that he was quietly gathering enough power to change the whole constitution, Plutarch says, it was too late. They learned that no beginning is so small that steady effort won't make it large, and that ignoring a danger at first makes it irresistible in the end. Only Cicero, like a good pilot wary of a calm sea, saw it coming.\n\nThe lesson applies to risks of every kind: a minor customer complaint, a little team conflict, a small budget overrun. They are cheapest to address while they still look trivial.",
+      "quote": "there is no beginning so mean, which continued application will not make considerable, and that despising a danger at first, will make it at last irresistible",
+      "locator": "Caesar ¶4",
+      "apply_it": "List three small issues you've been ignoring at work or home. Pick one and take a concrete step on it today.",
+      "quiz": {
+        "question": "What lesson did Caesar's opponents learn too late?",
+        "options": [
+          "That a danger ignored at first can become irresistible",
+          "That charm is always harmless",
+          "That wealth guarantees power",
+          "That pilots make good politicians"
+        ],
+        "answer": 0,
+        "explanation": "They underestimated a small beginning, and by the time they took it seriously it could no longer be stopped."
+      }
+    },
+    {
+      "id": "plutarchs-lives--39",
+      "topic": "lives-history",
+      "tags": [
+        "generosity",
+        "community",
+        "hospitality",
+        "wealth"
+      ],
+      "title": "Use your success to open doors for your community",
+      "body": "When Cimon of Athens became rich, Plutarch says he spent his wealth on his fellow citizens even more honourably than he had won it. He took down the fences around his gardens and fields so that strangers and needy neighbours could freely pick the fruit. At home he kept a plain but generous table where any poor citizen was welcome.\n\nGenerosity like this is not just charity; it builds the trust and goodwill a community leader depends on. Today the fences might be knowledge, contacts or opportunities. Opening them up, so others can share what you have, is one of the most practical uses of success.",
+      "quote": "he pulled down all the enclosures of his gardens and grounds, that strangers, and the needy of his fellow-citizens, might gather of his fruits freely",
+      "locator": "Cimon ¶23",
+      "apply_it": "Identify one 'fence' around something you have, such as a skill, network or resource, and open it to someone who needs it this week.",
+      "quiz": {
+        "question": "What did Cimon do with his gardens once he became rich?",
+        "options": [
+          "Built higher walls around them",
+          "Removed the fences so the needy could gather fruit freely",
+          "Sold the fruit at high prices",
+          "Gave them to the state"
+        ],
+        "answer": 1,
+        "explanation": "He opened his land to strangers and poor citizens, using his wealth to benefit the community."
+      }
+    },
+    {
+      "id": "plutarchs-lives--40",
+      "topic": "leadership",
+      "tags": [
+        "shared-authority",
+        "fairness",
+        "conflict-resolution",
+        "trust"
+      ],
+      "title": "Even when you're given sole power to decide, bring others in",
+      "body": "Aratus restored peace in his city of Sicyon, which was torn by quarrels over property between returning exiles and current owners. The citizens named him sole judge of every dispute. Plutarch admires what he did next: he refused to decide alone and appointed fifteen fellow citizens to work through the cases with him. The settlement that came out of it brought real goodwill between rich and poor, and even the exiles raised a statue in his honour.\n\nDecisions that affect many people stick better when others help make them. Sharing authority can feel slower, but it makes the result fairer and far more widely accepted.",
+      "quote": "he would not accept the commission alone, but, associating with himself fifteen of the citizens",
+      "locator": "Aratus ¶23",
+      "apply_it": "For your next decision that affects several people, invite two or three of them to help shape it instead of deciding alone.",
+      "quiz": {
+        "question": "What did Aratus do when given sole power to settle property disputes?",
+        "options": [
+          "Decided every case himself",
+          "Gave all property to the exiles",
+          "Refused to get involved",
+          "Shared the work with fifteen fellow citizens"
+        ],
+        "answer": 3,
+        "explanation": "By bringing others into the decision, he produced a settlement that both rich and poor accepted."
+      }
+    },
+    {
+      "id": "plutarchs-lives--41",
+      "topic": "leadership",
+      "tags": [
+        "collaboration",
+        "colleagues",
+        "envy",
+        "teamwork"
+      ],
+      "title": "Partners who use each other's strengths beat rivals who compete",
+      "body": "Plutarch contrasts the Theban leaders Pelopidas and Epaminondas with famous Athenian pairs like Themistocles and Aristides, whose shared leadership was full of envy and mutual jealousy. Pelopidas and Epaminondas, very different men, stayed loyal friends through every campaign and office. The reason, Plutarch says, was that neither chased wealth or glory for himself. Both wanted their city to thrive, so they used one another's talents as if they were their own.\n\nCo-leaders, co-founders and colleagues often slide into rivalry. Keeping a shared goal in front of you makes the other person's strength something to use, not something to fear.",
+      "quote": "they used to that end one another's excellences as their own",
+      "locator": "Pelopidas ¶7",
+      "apply_it": "Think of a colleague you quietly compete with. Name one of their strengths and find a way to put it to work on a shared goal this week.",
+      "quiz": {
+        "question": "Why did Pelopidas and Epaminondas avoid the jealousy that troubled other leaders?",
+        "options": [
+          "They both aimed at their city's good rather than personal glory",
+          "They never worked together",
+          "One was always in charge of the other",
+          "They were brothers"
+        ],
+        "answer": 0,
+        "explanation": "Because neither sought wealth or glory for himself, each could treat the other's abilities as his own."
+      }
+    },
+    {
+      "id": "plutarchs-lives--42",
+      "topic": "leadership",
+      "tags": [
+        "factions",
+        "integration",
+        "culture",
+        "teams"
+      ],
+      "title": "Break up old factions by creating new, shared groups",
+      "body": "When Numa became king, Rome was split between two peoples, Romans and Sabines, who still thought of themselves as rivals. Numa's solution, Plutarch says, was to divide the whole population into many smaller groups by trade: musicians, goldsmiths, carpenters, dyers, shoemakers, potters and so on, each with its own meetings and rites. The old divide faded as people identified with their craft companies instead.\n\nAfter a merger, a reorganisation or a split in a community, people cling to old \"us and them\" lines. Building mixed teams around shared work and purpose can quietly dissolve divisions that arguing never would.",
+      "quote": "he resolved to divide the whole population into a number of small divisions, and thus hoped, by introducing other distinctions, to obliterate the original and great distinction",
+      "locator": "Numa Pompilius ¶29",
+      "apply_it": "If your group has an 'us and them' divide, set up one small project team that deliberately mixes people from both sides.",
+      "quiz": {
+        "question": "How did Numa reduce the rivalry between Romans and Sabines?",
+        "options": [
+          "By banishing the Sabines",
+          "By holding a single great election",
+          "By organising everyone into many groups based on their trades",
+          "By building a wall between them"
+        ],
+        "answer": 2,
+        "explanation": "New shared identities based on crafts made the old divide fade."
+      }
+    },
+    {
+      "id": "plutarchs-lives--43",
+      "topic": "lives-history",
+      "tags": [
+        "persuasion",
+        "unity",
+        "community",
+        "power-sharing"
+      ],
+      "title": "Unite people by visiting them and offering them a real share",
+      "body": "According to tradition, Attica was once scattered villages that quarrelled and even fought. Theseus set out to make them one city. Plutarch says he went from township to township and tribe to tribe, settling disputes by persuasion. He promised a commonwealth where he would only lead in war and guard the laws, with everything else shared equally. Then he built a single council hall, named the whole state Athens and created a common festival.\n\nBringing separate groups together, whether departments, villages or organisations, takes patient personal persuasion, a fair share of power, and shared symbols that everyone can own.",
+      "quote": "which he by his persuasions appeased, going from township to township, and from tribe to tribe",
+      "locator": "Theseus ¶50",
+      "apply_it": "If you need buy-in from several groups, meet each one separately before the big meeting and ask what they need to feel it's fair.",
+      "quiz": {
+        "question": "How did Theseus bring the villages of Attica together, according to Plutarch?",
+        "options": [
+          "By force alone",
+          "By moving everyone to an island",
+          "By paying each village",
+          "By going from township to township persuading them and promising shared government"
+        ],
+        "answer": 3,
+        "explanation": "He persuaded each community in person and offered them an equal share in a common commonwealth."
+      }
+    },
+    {
+      "id": "plutarchs-lives--44",
+      "topic": "lives-history",
+      "tags": [
+        "flattery",
+        "trust",
+        "advisers",
+        "awareness"
+      ],
+      "title": "Watch for flatterers who disguise themselves as honest critics",
+      "body": "Mark Antony loved bold banter and was happy to be teased himself. Plutarch says this was the cause of many of his disasters. He assumed that people who joked so freely with him would never flatter him in serious matters. But clever flatterers mixed a little boldness into their praise, like confectioners adding something sharp to sweets, so that their agreement in council seemed like conviction. Meanwhile Antony was unaware of much that was done in his name.\n\nA leader can't judge honesty by tone alone. Someone who teases you but always ends up agreeing may not be the independent voice you think.",
+      "quote": "not knowing how common it is with parasites to mix their flattery with boldness, as confectioners do their sweetmeats with something biting",
+      "locator": "Antony ¶25",
+      "apply_it": "List your closest advisers. For each, recall a time they told you something you didn't want to hear. If you can't, look for another voice.",
+      "quiz": {
+        "question": "Why were Antony's flatterers hard to spot?",
+        "options": [
+          "They never spoke to him",
+          "They mixed boldness into their flattery to seem sincere",
+          "They wrote anonymous letters",
+          "They always disagreed with him"
+        ],
+        "answer": 1,
+        "explanation": "By adding a little edge to their praise, they made their agreement look like honest conviction."
+      }
+    },
+    {
+      "id": "plutarchs-lives--45",
+      "topic": "lives-history",
+      "tags": [
+        "decisions",
+        "fear",
+        "delay",
+        "evidence"
+      ],
+      "title": "Don't let fear of bad omens freeze a decision that can't wait",
+      "body": "During the Athenian campaign in Sicily, the army was ready to withdraw secretly when an eclipse of the moon frightened Nicias, its general. Few people then understood eclipses, and he took it as a sign of disaster. He persuaded the army to wait another full month. Plutarch notes that a better adviser might have read the omen the other way, and that Dion later ignored a similar eclipse and succeeded. The delay proved fatal for Nicias's army.\n\nModern leaders have their own 'eclipses': vague anxieties and gut fears dressed up as caution. When delay itself is dangerous, ask what the evidence actually says.",
+      "quote": "the moon was eclipsed in the night, to the great fright of Nicias and others, who, for want of experience, or out of superstition, felt alarm at such appearances",
+      "locator": "Nicias ¶71",
+      "apply_it": "Name one decision you're putting off. Write down the specific evidence for waiting. If there isn't any, set a date to decide.",
+      "quiz": {
+        "question": "What made Nicias delay his army's withdrawal?",
+        "options": [
+          "New intelligence about the enemy",
+          "A storm at sea",
+          "Fear caused by an eclipse of the moon",
+          "Orders from Athens"
+        ],
+        "answer": 2,
+        "explanation": "Lacking understanding of eclipses, he took one as an omen and waited, with disastrous results."
+      }
+    },
+    {
+      "id": "plutarchs-lives--46",
+      "topic": "lives-history",
+      "tags": [
+        "envy",
+        "outsiders",
+        "success",
+        "relationships"
+      ],
+      "title": "Expect success to stir envy, especially if you're the outsider",
+      "body": "Eumenes was a Greek serving among Alexander's Macedonian generals after the king's death. When he won a great victory, Plutarch says it brought him fame but also deep envy, both from enemies and from his own troops, who resented that a foreigner was leading Macedonian soldiers to beat one of their own heroes. That resentment shadowed him for the rest of his career.\n\nNewcomers who succeed quickly, whether a new hire, a young manager or someone from another background, often meet the same reaction. It helps to expect it, share credit generously and build relationships, rather than assuming results alone will win people over.",
+      "quote": "it created him great envy both among his own troops, and his enemies, that he, a stranger and a foreigner, should employ the forces and arms of Macedon",
+      "locator": "Eumenes ¶9",
+      "apply_it": "After your next win, publicly credit the colleagues who helped, especially long-standing ones who might feel overlooked.",
+      "quiz": {
+        "question": "What did Eumenes' victory bring him besides fame?",
+        "options": [
+          "Envy from both enemies and his own troops",
+          "A royal marriage",
+          "Immediate retirement",
+          "A large fortune"
+        ],
+        "answer": 0,
+        "explanation": "As a foreigner leading Macedonians, his success provoked resentment that followed him afterwards."
+      }
+    },
+    {
+      "id": "plutarchs-lives--47",
+      "topic": "lives-history",
+      "tags": [
+        "reform",
+        "self-interest",
+        "allies",
+        "money"
+      ],
+      "title": "A reform can fail because one ally wants only the part that helps him",
+      "body": "The young Spartan king Agis planned a bold reform: cancel debts and share out the land fairly. His uncle Agesilaus joined in eagerly, because he was deep in debt, but he owned large estates and didn't want to give any up. So he persuaded Agis to cancel the debts first and leave the land for later. The debt records were burned, the land was never divided, and the reform collapsed. Plutarch blames the love of money of one man.\n\nWhen allies back a change, ask which parts they actually gain from. Sequencing a plan to suit one partner's self-interest can quietly kill the rest of it.",
+      "quote": "through the sordid weakness of one man these promising beginnings were blasted",
+      "locator": "Agis ¶20",
+      "apply_it": "For a change you're leading, list your key supporters and what each personally gains. Watch for anyone who backs only their part.",
+      "quiz": {
+        "question": "Why did Agis's reform fail, according to Plutarch?",
+        "options": [
+          "The people opposed it",
+          "An ally who wanted debts cancelled but kept his land steered it off course",
+          "A foreign army invaded",
+          "Agis lost interest"
+        ],
+        "answer": 1,
+        "explanation": "Agesilaus backed the debt relief that helped him, then made sure the land division never happened."
+      }
+    },
+    {
+      "id": "plutarchs-lives--48",
+      "topic": "lives-history",
+      "tags": [
+        "authenticity",
+        "character",
+        "adaptability",
+        "trust"
+      ],
+      "title": "Adapting to every crowd can leave you with no real character",
+      "body": "Alcibiades was brilliant and charming, with a rare talent for fitting in anywhere. Plutarch says he could change faster than a chameleon: frugal and tough in Sparta, luxurious in Ionia, a hard drinker in Thrace. But unlike the chameleon, which can't turn white, Alcibiades could take on any colour at all, good or bad, depending on the company. People never knew where he truly stood, and he ended up distrusted by Athens, Sparta and Persia in turn.\n\nAdapting your style to others is a real skill. Changing your values to suit each audience is something else, and it eventually costs you everyone's trust.",
+      "quote": "he could at once comply with and really embrace and enter into their habits and ways of life, and change faster than the chameleon",
+      "locator": "Alcibiades ¶52",
+      "apply_it": "Write down three values you won't change whoever you're with. Check whether you held to them in your last few conversations.",
+      "quiz": {
+        "question": "Why does Plutarch say Alcibiades was 'faster than the chameleon'?",
+        "options": [
+          "He could run very fast",
+          "He changed sides only once",
+          "He wore colourful clothes",
+          "He adapted himself to any company, good or bad"
+        ],
+        "answer": 3,
+        "explanation": "He could take on the habits and apparent values of any group, which made him charming but untrustworthy."
+      }
+    },
+    {
+      "id": "plutarchs-lives--49",
+      "topic": "lives-history",
+      "tags": [
+        "humility",
+        "success",
+        "change",
+        "perspective"
+      ],
+      "title": "At your moment of triumph, remember how quickly fortunes turn",
+      "body": "After defeating King Perseus of Macedon, the Roman general Aemilius Paulus saw the once-mighty king kneeling before him. Back in his tent he sat in silence, then spoke to the young officers around him. Anyone who knows he is only human, he said, should not grow proud in success. Alexander's empire had collapsed, and a king who led a huge army now depended on his captors for food. He urged them to drop their vain pride and stay humble, mindful of reverses still to come.\n\nSuccess in business or life is never permanent. The moment of victory is exactly when to stay modest and prepare for change.",
+      "quote": "No, young men, cast off that vain pride and empty boast of victory; sit down with humility, looking always for what is yet to come",
+      "locator": "Aemilius Paulus ¶35",
+      "apply_it": "After your next success, write down one way it could be undone and one step to prepare for that possibility.",
+      "quiz": {
+        "question": "What did Aemilius Paulus teach his young officers after his victory?",
+        "options": [
+          "To stay humble because fortune can change quickly",
+          "To celebrate with great feasts",
+          "To pursue more conquests",
+          "To punish the defeated king harshly"
+        ],
+        "answer": 0,
+        "explanation": "Seeing Perseus's fall, he warned that success is fragile and that pride in victory is foolish."
+      }
+    },
+    {
+      "id": "plutarchs-lives--50",
+      "topic": "lives-history",
+      "tags": [
+        "contentment",
+        "money",
+        "service",
+        "simplicity"
+      ],
+      "title": "Needing little leaves you free to serve others",
+      "body": "Comparing Aristides, who died poor, with Cato, who grew rich, Plutarch defends modest means. Poverty is shameful only when it comes from laziness or waste. In an honest, hard-working person it can show greatness of mind, because someone busy with petty wants has no time for great things, and someone with many needs can't relieve the needs of others. What best equips a person for public service, he says, is not wealth but contentment and independence.\n\nThis doesn't mean money is bad. It means that keeping your wants modest frees attention, time and courage for the people and causes you care about.",
+      "quote": "What most of all enables a man to serve the public is not wealth, but content and independence",
+      "locator": "Comparison of Aristides with Marcus Cato ¶6",
+      "apply_it": "Identify one want that eats up your time or money without making you happier. Cut it back for a month and use the freedom to help someone.",
+      "quiz": {
+        "question": "According to Plutarch, what best enables a person to serve the public?",
+        "options": [
+          "Great wealth",
+          "Powerful friends",
+          "Contentment and independence",
+          "Noble birth"
+        ],
+        "answer": 2,
+        "explanation": "He argues that modest needs free the mind for the common good, while many wants distract from it."
+      }
+    }
+  ]
+}

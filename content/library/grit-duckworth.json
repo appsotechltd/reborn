@@ -1,0 +1,714 @@
+{
+  "source": {
+    "id": "grit-duckworth",
+    "title": "Grit: The Power of Passion and Perseverance",
+    "authors": [
+      "Angela Duckworth"
+    ],
+    "kind": "book",
+    "url": "https://www.simonandschuster.com/books/9781501111105",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Grit: The Power of Passion and Perseverance by Angela Duckworth (2016). Not affiliated with or endorsed by the author or publisher.",
+    "publisher": "Scribner",
+    "year": 2016,
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright. Later research (e.g. Credé, Tynan and Harms, 2017 meta-analysis) found grit overlaps heavily with conscientiousness and predicts performance only modestly; one card says so, and cards avoid presenting grit as the main cause of success."
+  },
+  "cards": [
+    {
+      "id": "grit-duckworth--01",
+      "topic": "mental-strength",
+      "tags": [
+        "grit",
+        "perseverance",
+        "long-term-goals"
+      ],
+      "title": "Grit means sticking with one big goal for years, not intense bursts",
+      "body": "Duckworth defines grit as passion and perseverance for very long-term goals. The surprising part is what she means by passion. It isn't fiery enthusiasm or obsession. It's consistency: caring about the same top-level goal month after month, year after year, rather than jumping to a new interest whenever the excitement fades.\n\nPerseverance is the other half: the habit of working hard and bouncing back from setbacks. Together they describe staying power, which she argues is often overlooked when we explain why some people go further than others.",
+      "apply_it": "Look back over the past five years. Which interest or goal have you stayed with the longest? Write down what kept you going.",
+      "quiz": {
+        "question": "In Duckworth's definition of grit, what does 'passion' mostly mean?",
+        "options": [
+          "Intense excitement about a new project",
+          "Consistency of interest in the same goal over a long time",
+          "Strong emotions at work",
+          "Loving every task you do"
+        ],
+        "answer": 1,
+        "explanation": "She uses passion to mean steady, long-lasting commitment to one top goal, not intensity."
+      }
+    },
+    {
+      "id": "grit-duckworth--02",
+      "topic": "mental-strength",
+      "tags": [
+        "grit",
+        "research",
+        "perseverance"
+      ],
+      "title": "Staying power can predict who finishes, beyond test scores",
+      "body": "Duckworth's early research included cadets starting the gruelling summer training at the US Military Academy at West Point. The academy's admissions score, built from grades, test results and fitness, did a poor job of predicting who would drop out. A short questionnaire about grit did better.\n\nShe reports similar patterns among salespeople and spelling bee contestants. The lesson she draws is that how long you keep going can matter alongside raw ability. Bear in mind that later studies found the effect smaller than these early results suggested.",
+      "apply_it": "Think of a time you nearly quit something hard but didn't. What made the difference?",
+      "quiz": {
+        "question": "In Duckworth's West Point study, what predicted who completed summer training better than the admissions score?",
+        "options": [
+          "Physical strength",
+          "Family background",
+          "A short grit questionnaire",
+          "Height and weight"
+        ],
+        "answer": 2,
+        "explanation": "Grit scores predicted completion better than the academy's overall admissions score, though later research suggests grit's effects are modest."
+      }
+    },
+    {
+      "id": "grit-duckworth--03",
+      "topic": "personal-development",
+      "tags": [
+        "effort",
+        "skill",
+        "achievement"
+      ],
+      "title": "Effort counts twice: it builds skill and then turns skill into results",
+      "body": "Duckworth offers two rough formulas. Talent multiplied by effort gives you skill. Skill multiplied by effort gives you achievement. Talent is how fast your skill grows when you put in effort; but effort shows up in both steps.\n\nSo someone with more talent but less effort can end up with real skill and still achieve little, because skill sitting unused produces nothing. It's a simple way to remember that consistent work is what converts potential into results.",
+      "apply_it": "Pick one skill you already have but rarely use. Schedule one session this week to put it to work on something real.",
+      "quiz": {
+        "question": "Why does Duckworth say 'effort counts twice'?",
+        "options": [
+          "Effort builds skill, and effort applies skill to produce achievement",
+          "Hard workers get paid double",
+          "Effort is twice as important as sleep",
+          "You must try everything twice"
+        ],
+        "answer": 0,
+        "explanation": "In her formulas, effort appears once in building skill and again in turning skill into achievement."
+      }
+    },
+    {
+      "id": "grit-duckworth--04",
+      "topic": "psychology",
+      "tags": [
+        "talent",
+        "bias",
+        "effort"
+      ],
+      "title": "We secretly prefer 'naturals' over hard workers",
+      "body": "Duckworth describes research by psychologist Chia-Jung Tsay showing that people, even experts, often rate a performer more highly when told they are naturally gifted rather than a hard worker, even when the performances are comparable. Duckworth calls this our bias toward naturalness.\n\nThe danger is that we undervalue effort and overvalue early signs of talent, in hiring, schooling and in ourselves. Knowing about the bias helps you judge people by what they actually do, and stop writing off those who simply work harder to get there.",
+      "apply_it": "Next time you praise someone, notice whether you're praising their 'gift' or their work. Try naming the work.",
+      "quiz": {
+        "question": "What does the research Duckworth cites show about how we judge performers?",
+        "options": [
+          "We always judge fairly",
+          "We prefer hard workers",
+          "We only care about results",
+          "We tend to favour those described as natural talents"
+        ],
+        "answer": 3,
+        "explanation": "People often rate 'naturals' higher than 'strivers' even when performance is similar."
+      }
+    },
+    {
+      "id": "grit-duckworth--05",
+      "topic": "mental-strength",
+      "tags": [
+        "talent",
+        "excuses",
+        "effort"
+      ],
+      "title": "Calling someone a genius can be an excuse not to try",
+      "body": "Duckworth draws on a point made by Nietzsche: when we see a finished masterpiece, we don't ask how it came to be. We treat great performers as magical, which conveniently means we don't have to compare ourselves with them.\n\nIf excellence is a gift, then falling short isn't our fault. But when you look closely at top performers, Duckworth argues, you mostly find countless ordinary acts of practice added together. Seeing that clearly is less comfortable, but it puts more within your reach.",
+      "apply_it": "Choose someone whose skill you admire. Find out how many years of practice it took them, and write down one step they took that you could copy.",
+      "quiz": {
+        "question": "According to the idea Duckworth borrows from Nietzsche, why do we label people geniuses?",
+        "options": [
+          "It lets us avoid comparing ourselves and feeling we should try harder",
+          "Because they were born different",
+          "Because they never practise",
+          "Because experts tell us to"
+        ],
+        "answer": 0,
+        "explanation": "Seeing others as magical relieves us of the pressure to compare ourselves and do the work."
+      }
+    },
+    {
+      "id": "grit-duckworth--06",
+      "topic": "mental-strength",
+      "tags": [
+        "quitting",
+        "persistence",
+        "commitment"
+      ],
+      "title": "Don't quit on a bad day; quit at a natural stopping point",
+      "body": "Duckworth observes that many of us abandon things too early and too often, usually in a low moment: after a rejection, a tough session or a boring week. One bad day says little about whether the path is right.\n\nHer approach is to commit for a defined stretch, such as a season, a term or a contract, and only then decide whether to continue. That way the choice is made with a clear head rather than in frustration, and you give yourself enough time to see real progress.",
+      "apply_it": "If you're tempted to quit something, write down the next natural stopping point and commit to reaching it before deciding.",
+      "quiz": {
+        "question": "When does Duckworth suggest deciding whether to quit?",
+        "options": [
+          "Immediately, when you feel frustrated",
+          "Never; you must always finish",
+          "At a natural stopping point, not in a low moment",
+          "Only when a friend agrees"
+        ],
+        "answer": 2,
+        "explanation": "She suggests committing to a natural end point, so you don't quit impulsively on a bad day."
+      }
+    },
+    {
+      "id": "grit-duckworth--07",
+      "topic": "productivity",
+      "tags": [
+        "goals",
+        "priorities",
+        "purpose"
+      ],
+      "title": "Arrange your goals in a hierarchy with one purpose at the top",
+      "body": "Duckworth pictures goals as layered. At the bottom are concrete daily tasks. In the middle are goals that serve a larger aim. At the top is one ultimate concern that gives the rest meaning and direction, like a compass.\n\nGritty people, she says, have a top goal that stays steady for years, and most of their smaller goals connect to it. When your goals point in many unrelated directions, effort scatters. Asking 'what is this for?' about each task helps you see whether it serves the top.",
+      "apply_it": "Write your top goal at the top of a page. Under it, list this week's tasks and draw a line from each to the goal. Notice what doesn't connect.",
+      "quiz": {
+        "question": "In Duckworth's goal hierarchy, what sits at the top?",
+        "options": [
+          "Today's to-do list",
+          "One ultimate concern that gives the other goals direction",
+          "Whatever is most urgent",
+          "Your boss's priorities"
+        ],
+        "answer": 1,
+        "explanation": "A single top-level goal acts like a compass that organises the lower goals."
+      }
+    },
+    {
+      "id": "grit-duckworth--08",
+      "topic": "mental-strength",
+      "tags": [
+        "rejection",
+        "flexibility",
+        "persistence"
+      ],
+      "title": "When one route is blocked, find another way to the same goal",
+      "body": "In Duckworth's view, lower-level goals are means, not ends, so they can be swapped. If a plan fails or an opportunity is refused, gritty people don't abandon the larger aim. They look for a different route.\n\nShe gives the example of cartoonist Bob Mankoff, who submitted thousands of cartoons to The New Yorker before one was accepted, adjusting his approach along the way. Being stubborn about the destination while flexible about the path lets you persist without banging your head on the same wall.",
+      "apply_it": "Think of a recent setback. Write down two other routes to the same larger goal.",
+      "quiz": {
+        "question": "What does Duckworth say gritty people do when a lower-level goal fails?",
+        "options": [
+          "Give up the main goal",
+          "Keep repeating exactly the same approach",
+          "Wait for luck to change",
+          "Swap it for another route to the same higher goal"
+        ],
+        "answer": 3,
+        "explanation": "Lower-level goals are interchangeable means, so gritty people find another way to the top goal."
+      }
+    },
+    {
+      "id": "grit-duckworth--09",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "priorities",
+        "goals"
+      ],
+      "title": "List your goals, circle the top five, then ask what ties them together",
+      "body": "Duckworth retells a story about Warren Buffett advising his pilot to write down 25 career goals, circle the five most important, and treat the other 20 as things to avoid, because they steal attention from what matters most.\n\nShe adds her own twist: rather than seeing goals as a simple list, ask which ones serve a common higher purpose. Goals that support your top aim may be worth keeping; ones that pull in unrelated directions are the true distractions. Focus is about alignment as well as number.",
+      "apply_it": "Write down ten goals. Circle your top three, then cross out any of the rest that don't serve those three.",
+      "quiz": {
+        "question": "What twist does Duckworth add to the Buffett goal-list story?",
+        "options": [
+          "Check which goals serve a shared higher purpose, not just rank them",
+          "Set 50 goals instead of 25",
+          "Only ever have one goal",
+          "Share the list publicly"
+        ],
+        "answer": 0,
+        "explanation": "She suggests looking at how goals fit a hierarchy under one purpose, not only how they rank."
+      }
+    },
+    {
+      "id": "grit-duckworth--10",
+      "topic": "personal-development",
+      "tags": [
+        "grit",
+        "growth",
+        "age"
+      ],
+      "title": "Grit can grow over a lifetime",
+      "body": "Duckworth found that, in her large samples, older adults scored higher on grit than younger ones. She acknowledges this could partly reflect generational differences, but she leans toward a maturity explanation: as life teaches us that quitting has costs and that persistence pays, we become steadier.\n\nThe hopeful message is that grit isn't fixed at birth. Experience, circumstances and deliberate effort can all strengthen it. If you've been a quitter, that isn't a life sentence.",
+      "apply_it": "Think of one way you're more persistent now than five years ago. What experience taught you that?",
+      "quiz": {
+        "question": "What did Duckworth find about grit and age?",
+        "options": [
+          "Young people are grittiest",
+          "Grit never changes",
+          "Older adults tended to score higher on grit",
+          "Grit only depends on genes"
+        ],
+        "answer": 2,
+        "explanation": "Older adults scored higher, suggesting grit can increase with maturity and experience."
+      }
+    },
+    {
+      "id": "grit-duckworth--11",
+      "topic": "mental-strength",
+      "tags": [
+        "interest",
+        "practice",
+        "purpose",
+        "hope"
+      ],
+      "title": "Four things build grit: interest, practice, purpose and hope",
+      "body": "Duckworth argues that gritty people tend to share four psychological assets. Interest: they genuinely enjoy what they do. Practice: they work daily to get better than yesterday. Purpose: they believe their work matters to others. Hope: they expect that effort can improve things, even after setbacks.\n\nThese tend to develop roughly in that order over years. The framework helps you diagnose a stalled commitment: is the problem that you've lost interest, stopped practising well, can't see the point, or have lost hope?",
+      "apply_it": "Pick a goal you're struggling with. Rate your interest, practice, purpose and hope from 1 to 5. Work on the lowest one.",
+      "quiz": {
+        "question": "Which list matches the four assets Duckworth says build grit?",
+        "options": [
+          "Talent, luck, money, connections",
+          "Interest, practice, purpose, hope",
+          "Speed, strength, focus, sleep",
+          "Passion, pride, power, praise"
+        ],
+        "answer": 1,
+        "explanation": "She names interest, practice, purpose and hope."
+      }
+    },
+    {
+      "id": "grit-duckworth--12",
+      "topic": "personal-development",
+      "tags": [
+        "passion",
+        "interest",
+        "exploration"
+      ],
+      "title": "You find your passion by doing things, not by thinking hard",
+      "body": "Many people wait to discover their passion through reflection. Duckworth argues interests don't usually appear that way. They are sparked by interactions with the world: a class, a person, a project, a problem you bump into.\n\nSo the practical move is to try things and pay attention to what keeps pulling you back. At first an interest is fragile and may need to be triggered again and again. Early on it's normal to feel unsure; clarity tends to come after engagement, not before.",
+      "apply_it": "This month, try one new activity, class or project linked to something you're curious about. Note afterwards whether you want more.",
+      "quiz": {
+        "question": "According to Duckworth, how do interests usually develop?",
+        "options": [
+          "Through quiet introspection alone",
+          "By taking personality tests",
+          "Through experiences and interactions with the world",
+          "They are fixed at birth"
+        ],
+        "answer": 2,
+        "explanation": "She argues interests are triggered by engaging with the world, not found by introspection."
+      }
+    },
+    {
+      "id": "grit-duckworth--13",
+      "topic": "parenting",
+      "tags": [
+        "interest",
+        "encouragement",
+        "mentors"
+      ],
+      "title": "Early interests are fragile and need encouragement",
+      "body": "Duckworth notes that a new interest often needs support to survive. When she looked at the paths of top performers, early on there was frequently someone, such as a parent, teacher or coach, who encouraged them and made the activity enjoyable before any serious discipline began.\n\nIf you're helping a child or a new colleague, criticism and pressure too early can snuff out a budding interest. First let them enjoy it; rigour can come later, once the interest has roots.",
+      "apply_it": "Think of someone just starting something new. Offer them one piece of specific encouragement this week instead of correction.",
+      "quiz": {
+        "question": "What does Duckworth say a budding interest needs early on?",
+        "options": [
+          "Strict criticism",
+          "Competition with others",
+          "Being left alone completely",
+          "Encouragement and enjoyment from supportive people"
+        ],
+        "answer": 3,
+        "explanation": "Early interests are fragile and grow with encouragement before serious discipline."
+      }
+    },
+    {
+      "id": "grit-duckworth--14",
+      "topic": "skills-mastery",
+      "tags": [
+        "expertise",
+        "interest",
+        "depth"
+      ],
+      "title": "Beginners crave novelty; experts find endless nuance",
+      "body": "Duckworth points out that for a beginner, the same thing done again feels boring, so they look for something new. Experts experience it differently. They see subtle details and variations in their field that a beginner can't yet notice, and those keep them interested for decades.\n\nIf an interest starts to feel stale, the answer may not be to switch fields. Look for depth: harder problems, finer distinctions, a new angle within the same area.",
+      "apply_it": "In something you've done for a while, find one detail you've never really studied and spend 20 minutes exploring it.",
+      "quiz": {
+        "question": "According to Duckworth, what keeps experts interested in the same field for years?",
+        "options": [
+          "Noticing nuance and subtle variations",
+          "Constantly changing fields",
+          "Earning more money",
+          "Avoiding difficult problems"
+        ],
+        "answer": 0,
+        "explanation": "Experts find nuance where novices only see repetition."
+      }
+    },
+    {
+      "id": "grit-duckworth--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "feedback",
+        "improvement"
+      ],
+      "title": "Practise with a stretch goal, full focus and quick feedback",
+      "body": "Duckworth builds on psychologist Anders Ericsson's research on deliberate practice. It has a recognisable shape: set a specific stretch goal just beyond your current level, work on it with full concentration, get immediate feedback on what went wrong, then repeat with reflection until it's mastered, and set a new stretch.\n\nShe notes this kind of practice is tiring, so experts typically do it in limited blocks. An hour of it can do more than a whole day of comfortable repetition.",
+      "apply_it": "Choose one weak spot in a skill. Do a 30-minute session on just that, and ask someone (or a recording) for feedback right after.",
+      "quiz": {
+        "question": "Which is a feature of deliberate practice as Duckworth describes it?",
+        "options": [
+          "Repeating what you already do well",
+          "A stretch goal with immediate feedback",
+          "Practising while multitasking",
+          "Long, relaxed sessions without review"
+        ],
+        "answer": 1,
+        "explanation": "Deliberate practice combines a stretch goal, full focus, feedback, and repetition with reflection."
+      }
+    },
+    {
+      "id": "grit-duckworth--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "discomfort",
+        "effort"
+      ],
+      "title": "Hard practice is supposed to feel hard",
+      "body": "In Duckworth's study of spelling bee finalists, solo study of difficult words was the kind of preparation that best predicted success, and also the kind the children rated as the least enjoyable. Grittier spellers simply did more of it.\n\nShe contrasts this effortful practice with flow, the absorbed state you may feel when performing. Both have a place. The useful insight is that discomfort during practice isn't a sign you're doing it wrong. Telling yourself it's meant to feel tough makes it easier to stay with it.",
+      "apply_it": "Next time practice feels frustrating, say to yourself: 'This is what improvement feels like.' Then do ten more minutes.",
+      "quiz": {
+        "question": "What did Duckworth find about the spelling bee practice that worked best?",
+        "options": [
+          "It was the most fun",
+          "It was done in groups",
+          "It predicted success yet was rated least enjoyable",
+          "It required no effort"
+        ],
+        "answer": 2,
+        "explanation": "Solo deliberate practice best predicted performance but was the least enjoyable, and grittier kids did more of it."
+      }
+    },
+    {
+      "id": "grit-duckworth--17",
+      "topic": "mental-strength",
+      "tags": [
+        "purpose",
+        "motivation",
+        "service"
+      ],
+      "title": "Purpose beyond yourself helps passion last",
+      "body": "Duckworth's third asset is purpose: the sense that your work matters to other people. In her surveys, grittier people were more likely to say their work connects to the wellbeing of others.\n\nShe doesn't claim self-interest is bad; most people have both motives, and she suggests the mix tends to work best. But when the excitement fades and progress is slow, knowing who benefits from your effort gives you a reason to continue that personal ambition alone may not.",
+      "apply_it": "Write down three people who benefit, directly or indirectly, from the work you do. Keep the note where you'll see it.",
+      "quiz": {
+        "question": "What does Duckworth say helps sustain long-term passion?",
+        "options": [
+          "Avoiding all self-interest",
+          "Thinking only about rewards",
+          "Working alone",
+          "A sense that your work helps others"
+        ],
+        "answer": 3,
+        "explanation": "Purpose, believing your work matters to others, helps keep passion going."
+      }
+    },
+    {
+      "id": "grit-duckworth--18",
+      "topic": "productivity",
+      "tags": [
+        "purpose",
+        "calling",
+        "mindset"
+      ],
+      "title": "Job, career or calling: how you see the work matters",
+      "body": "Duckworth retells the parable of three bricklayers asked what they're doing. One says he's laying bricks, one that he's building a church, and one that he's building a house of God. Same work, different meaning.\n\nShe links this to research by Amy Wrzesniewski showing that people in almost any occupation can see their work as a job, a career or a calling. Whether you experience a calling depends less on your title than on how you understand what your work contributes.",
+      "apply_it": "Describe your work in one sentence as a 'job', then rewrite it as a 'calling'. Which rings true, and what would make it more so?",
+      "quiz": {
+        "question": "What point does the bricklayer parable make, according to Duckworth?",
+        "options": [
+          "The same work can be seen as a job, a career or a calling",
+          "Bricklaying is the best job",
+          "Only some professions can be callings",
+          "Pay determines meaning"
+        ],
+        "answer": 0,
+        "explanation": "Three people doing identical work saw it very differently; meaning depends on perspective."
+      }
+    },
+    {
+      "id": "grit-duckworth--19",
+      "topic": "productivity",
+      "tags": [
+        "purpose",
+        "job-crafting",
+        "role-models"
+      ],
+      "title": "You can build more purpose into the job you already have",
+      "body": "Duckworth suggests you don't have to quit to find purpose. She offers three moves: reflect on how your current work contributes to others; make small changes to your tasks and interactions so they better fit your values (an approach called job crafting); and find a role model whose work shows purpose, to learn how they think about it.\n\nSmall shifts, such as spending more time on the part of the job that helps people most, can change how meaningful the whole thing feels.",
+      "apply_it": "Identify one task in your job that clearly helps someone. Find a way to spend a bit more time on it this week.",
+      "quiz": {
+        "question": "Which is one of Duckworth's suggestions for finding purpose in your current work?",
+        "options": [
+          "Change jobs immediately",
+          "Craft your tasks to better fit your values",
+          "Avoid thinking about who benefits",
+          "Wait until retirement"
+        ],
+        "answer": 1,
+        "explanation": "She suggests reflecting on contribution, job crafting and finding purposeful role models."
+      }
+    },
+    {
+      "id": "grit-duckworth--20",
+      "topic": "mental-strength",
+      "tags": [
+        "hope",
+        "resilience",
+        "control"
+      ],
+      "title": "Hope means believing your own effort can improve things",
+      "body": "Duckworth's fourth asset is hope, but not the passive kind that waits for luck. It's the expectation that your own efforts can make tomorrow better.\n\nShe draws on research by Martin Seligman and Steven Maier on learned helplessness: when bad things happen that we can't control, we can learn to stop trying. When we experience some control over setbacks, we stay resilient. Gritty people, as a Japanese proverb she cites suggests, fall seven times and get up eight, because they believe getting up can work.",
+      "apply_it": "Pick one problem you feel stuck on. Write down one small action fully within your control, and do it today.",
+      "quiz": {
+        "question": "What kind of hope does Duckworth associate with grit?",
+        "options": [
+          "Hoping for good luck",
+          "Hoping others will fix things",
+          "Believing your own effort can improve the future",
+          "Expecting nothing to go wrong"
+        ],
+        "answer": 2,
+        "explanation": "Her idea of hope is the belief that your own efforts can make tomorrow better."
+      },
+      "health": true
+    },
+    {
+      "id": "grit-duckworth--21",
+      "topic": "psychology",
+      "tags": [
+        "optimism",
+        "self-talk",
+        "resilience"
+      ],
+      "title": "Explain setbacks as temporary and specific, not permanent and personal",
+      "body": "Duckworth draws on Seligman's work on explanatory style: the way you explain bad events to yourself. Pessimists tend to see setbacks as permanent and pervasive ('I'm hopeless at everything'). Optimists look for temporary, specific causes ('I didn't prepare enough for this one').\n\nShe reports that optimistic explanations tend to go with more persistence. The point isn't denial; it's choosing explanations that leave room for action. If low mood or hopelessness persists, talking to a health professional is a sensible step.",
+      "apply_it": "Recall a recent setback. Write the pessimistic explanation, then rewrite it as a temporary, specific cause you can act on.",
+      "quiz": {
+        "question": "Which explanation reflects the optimistic style Duckworth describes?",
+        "options": [
+          "'I'm bad at everything'",
+          "'Nothing ever works for me'",
+          "'I'll never be good enough'",
+          "'I didn't prepare well this time; I can fix that'"
+        ],
+        "answer": 3,
+        "explanation": "Optimists explain setbacks with temporary, specific causes that leave room for action."
+      },
+      "health": true
+    },
+    {
+      "id": "grit-duckworth--22",
+      "topic": "parenting",
+      "tags": [
+        "parenting",
+        "support",
+        "high-standards"
+      ],
+      "title": "Wise parents are both warm and demanding",
+      "body": "Duckworth reviews research on parenting styles and concludes that children tend to do best when parents combine warmth and support with high expectations. Demanding without support feels harsh; support without demands lets children drift.\n\nShe stresses that both are needed together: believing a child can meet high standards, and backing them with patience and help. Parents who are respected and loved in this way are also more likely to have children who copy their example, including their persistence.",
+      "apply_it": "Think of one expectation you hold for a child or young person. Add one concrete way you'll support them in meeting it.",
+      "quiz": {
+        "question": "What combination does Duckworth say tends to produce the best results in parenting?",
+        "options": [
+          "Warmth plus high expectations",
+          "Strict rules with little affection",
+          "Warmth with no expectations",
+          "Letting children decide everything"
+        ],
+        "answer": 0,
+        "explanation": "She calls it wise parenting: supportive and demanding at the same time."
+      }
+    },
+    {
+      "id": "grit-duckworth--23",
+      "topic": "parenting",
+      "tags": [
+        "activities",
+        "follow-through",
+        "teenagers"
+      ],
+      "title": "Sticking with an activity for years teaches follow-through",
+      "body": "Duckworth argues that structured extracurricular activities, such as music, sport or debate, offer something school and free time often don't: they are both hard and interesting, usually with an adult who isn't a parent setting the bar.\n\nShe discusses research suggesting that young people who kept at the same activity for more than a year tended to do better later. She admits the evidence isn't conclusive, but she believes multi-year commitment helps young people learn to value and even enjoy hard work.",
+      "apply_it": "If you have children or mentor teens, help one choose an activity and agree to stick with it for a full year.",
+      "quiz": {
+        "question": "What does Duckworth think multi-year extracurricular commitment teaches?",
+        "options": [
+          "How to win prizes",
+          "To value and persist with hard work",
+          "How to avoid school",
+          "That talent is everything"
+        ],
+        "answer": 1,
+        "explanation": "She believes sticking with an activity teaches young people to value hard work, though she notes the evidence isn't conclusive."
+      }
+    },
+    {
+      "id": "grit-duckworth--24",
+      "topic": "parenting",
+      "tags": [
+        "parenting",
+        "challenge",
+        "commitment"
+      ],
+      "title": "Try the Hard Thing Rule at home",
+      "body": "Duckworth describes a rule in her family. Everyone, parents included, does one hard thing: something that needs regular, deliberate practice, such as an instrument, a sport or a craft. You can quit, but only at a natural stopping point like the end of a season, not on a bad day. And you choose your own hard thing; nobody picks it for you.\n\nLater, she added that older children commit to one activity for at least two years. The rule teaches persistence while respecting each person's interests.",
+      "apply_it": "Propose the Hard Thing Rule to your household or a friend: each person picks one hard thing and a stopping point.",
+      "quiz": {
+        "question": "Which is part of Duckworth's Hard Thing Rule?",
+        "options": [
+          "Parents choose the hard thing for children",
+          "You can quit any time it gets boring",
+          "You may quit only at a natural stopping point",
+          "Only children have to take part"
+        ],
+        "answer": 2,
+        "explanation": "You choose your own hard thing and can only quit at a natural stopping point."
+      }
+    },
+    {
+      "id": "grit-duckworth--25",
+      "topic": "leadership",
+      "tags": [
+        "culture",
+        "identity",
+        "belonging"
+      ],
+      "title": "Join a group where persistence is normal",
+      "body": "Duckworth argues that one of the most powerful ways to become grittier is to join a gritty culture. When the people around you keep high standards and don't give up, their norms gradually become yours. Over time this shapes identity: you start thinking 'people like us keep going'.\n\nIdentity then drives decisions without much willpower. Choosing your team, workplace, study group or friends is therefore one of the most important choices you make about your own character.",
+      "apply_it": "Name one group whose habits you'd like to rub off on you. Find one way to spend more time with them this month.",
+      "quiz": {
+        "question": "Why does Duckworth recommend joining a gritty group?",
+        "options": [
+          "It's easier than working alone",
+          "Groups do the work for you",
+          "It guarantees success",
+          "Its norms shape your identity and choices over time"
+        ],
+        "answer": 3,
+        "explanation": "Culture shapes identity, and identity shapes what you do, so gritty groups make people grittier."
+      }
+    },
+    {
+      "id": "grit-duckworth--26",
+      "topic": "leadership",
+      "tags": [
+        "coaching",
+        "culture",
+        "high-standards"
+      ],
+      "title": "Great coaches build cultures that are demanding and caring",
+      "body": "Duckworth profiles leaders who made grit central to their teams, including American football coach Pete Carroll and university soccer coach Anson Dorrance. What stands out is that their cultures combine high expectations with genuine care, mirroring what she calls wise parenting.\n\nThey use shared language and clear values so team members know what's expected, and they invest in each person's growth. For any leader, the lesson is that grit can be cultivated in a group: set the bar high and give people the support to reach it.",
+      "apply_it": "If you lead a team, write one standard you expect and one specific way you'll support people in meeting it.",
+      "quiz": {
+        "question": "What combination did the coaches Duckworth profiles build into their teams?",
+        "options": [
+          "High expectations with genuine care",
+          "Fear and punishment",
+          "Relaxed standards to keep morale up",
+          "Focus on star players only"
+        ],
+        "answer": 0,
+        "explanation": "Like wise parents, they combined demanding standards with real support."
+      }
+    },
+    {
+      "id": "grit-duckworth--27",
+      "topic": "mental-strength",
+      "tags": [
+        "character",
+        "kindness",
+        "balance"
+      ],
+      "title": "Grit isn't the only strength that matters",
+      "body": "Duckworth is clear that grit is not everything. Character, she argues, includes other strengths too: kindness and gratitude, which help us get along with others, and curiosity, which helps us learn. A gritty person who is unkind or dishonest isn't someone to admire.\n\nShe also notes that persistence should be aimed at worthwhile goals, and that it's fine to change lower-level goals. Grit is a tool, and its value depends on what you use it for and how you treat people along the way.",
+      "apply_it": "Besides persistence, name one other strength you want to grow this year, such as kindness, curiosity or honesty. Plan one small step.",
+      "quiz": {
+        "question": "What does Duckworth say about grit and character?",
+        "options": [
+          "Grit is all that matters",
+          "Character includes other strengths like kindness and curiosity",
+          "Kindness slows success",
+          "Curiosity is a distraction from grit"
+        ],
+        "answer": 1,
+        "explanation": "She says grit is one part of character, alongside strengths like kindness and curiosity."
+      }
+    },
+    {
+      "id": "grit-duckworth--28",
+      "topic": "psychology",
+      "tags": [
+        "research",
+        "conscientiousness",
+        "critical-thinking"
+      ],
+      "title": "Grit matters, but it predicts success less than the book suggests",
+      "body": "Duckworth's book made grit famous, but later research urges caution. A large 2017 review of grit studies by Marcus Credé and colleagues found grit overlaps heavily with conscientiousness, a long-studied personality trait, so it may not be a new ingredient. Grit's links with performance were modest, and the perseverance part predicted outcomes better than the consistency-of-interest part.\n\nThe practical ideas in the book can still be useful. Just treat grit as one helpful factor among many, alongside opportunity, health, support and ability, not a master key.",
+      "apply_it": "When a book claims one trait explains success, look up what later studies found before reorganising your life around it.",
+      "quiz": {
+        "question": "What did later research find about grit?",
+        "options": [
+          "It is the strongest predictor of success ever found",
+          "It has nothing to do with personality",
+          "It overlaps heavily with conscientiousness and predicts success modestly",
+          "It only matters in sport"
+        ],
+        "answer": 2,
+        "explanation": "A 2017 meta-analysis found grit closely tied to conscientiousness and only modestly linked to performance."
+      }
+    },
+    {
+      "id": "grit-duckworth--29",
+      "topic": "mental-strength",
+      "tags": [
+        "stamina",
+        "consistency",
+        "daily-habits"
+      ],
+      "title": "Show up every day, especially when you don't feel like it",
+      "body": "Running through Duckworth's stories of high achievers is a plain theme: they keep turning up. The writer, the athlete and the scientist she interviews rarely describe dramatic moments. They describe working steadily for years, through boredom and setbacks, getting slightly better than the day before.\n\nShe contrasts this daily discipline with the popular image of success as sudden. Most visible achievement rests on a long, invisible stretch of ordinary days. Treat consistency, not intensity, as the thing to protect.",
+      "apply_it": "Choose one action toward your top goal that takes under 15 minutes. Do it every day for the next two weeks and tick it off.",
+      "quiz": {
+        "question": "What common theme does Duckworth find in high achievers' stories?",
+        "options": [
+          "A single lucky break",
+          "Intense bursts followed by long breaks",
+          "Natural talent with little effort",
+          "Steady daily work over many years"
+        ],
+        "answer": 3,
+        "explanation": "Her interviews point to consistent daily effort sustained over years."
+      }
+    },
+    {
+      "id": "grit-duckworth--30",
+      "topic": "skills-mastery",
+      "tags": [
+        "deliberate-practice",
+        "routine",
+        "habits"
+      ],
+      "title": "Practise at the same time and place so you don't have to decide",
+      "body": "Duckworth notes that experts tend to turn deliberate practice into a habit. Rather than choosing each day whether and when to practise, they set a fixed time and place and simply show up.\n\nBecause deliberate practice is demanding, relying on daily motivation is risky; on low-energy days you'll talk yourself out of it. A routine removes that negotiation. The decision has already been made, so all that's left is to begin, which is often the hardest part.",
+      "apply_it": "Choose a fixed time and place for practising one skill. Put it in your calendar as a repeating event for the next month.",
+      "quiz": {
+        "question": "Why does Duckworth say experts make practice a routine?",
+        "options": [
+          "Because they have more free time",
+          "So they don't have to decide each day whether to practise",
+          "Because coaches require it",
+          "So practice feels easier and less demanding"
+        ],
+        "answer": 1,
+        "explanation": "A fixed time and place removes the daily decision, so demanding practice actually happens."
+      }
+    }
+  ]
+}

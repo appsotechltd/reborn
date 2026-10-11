@@ -1,0 +1,770 @@
+{
+  "source": {
+    "id": "cdc-healthy-living",
+    "title": "Healthy Living: Preventing Chronic Diseases",
+    "authors": [
+      "Centers for Disease Control and Prevention"
+    ],
+    "kind": "guide",
+    "url": "https://www.cdc.gov/chronic-disease/prevention/index.html",
+    "licence": "us-gov-public-domain",
+    "licence_url": "https://www.cdc.gov/other/agencymaterials.html",
+    "attribution": "Source: Centers for Disease Control and Prevention (public domain). Available free at cdc.gov. Use does not imply endorsement by CDC, HHS or the U.S. Government.",
+    "publisher": "Centers for Disease Control and Prevention",
+    "language": "en",
+    "retrieved_at": "2026-10-10",
+    "notes": "CDC 'Use of Agency Materials' states most CDC website information is public domain (exceptions: contractor/third-party material). CDC asks for credit, a no-endorsement statement, a note that the material is free on its site, and no substantive changes to reproduced material; our cards are original summaries rather than reproductions, so we credit CDC, carry the disclaimer, and link back. No CDC logos or images used. The index URL is CDC's 'Preventing Chronic Diseases: What You Can Do Now' hub (cdc.gov/healthy-living does not resolve). Cards are based on these CDC pages, read 2026-10-10: https://www.cdc.gov/chronic-disease/prevention/index.html; https://www.cdc.gov/nutrition/features/healthy-eating-tips.html; https://www.cdc.gov/healthy-weight-growth/healthy-eating/meals-snacks.html; https://www.cdc.gov/salt/about/index.html; https://www.cdc.gov/physical-activity-basics/guidelines/adults.html; https://www.cdc.gov/physical-activity-basics/adding-adults/index.html; https://www.cdc.gov/physical-activity-basics/measuring/index.html; https://www.cdc.gov/sleep/about/index.html; https://www.cdc.gov/mental-health/living-with/index.html; https://www.cdc.gov/emotional-well-being/improve-your-emotional-well-being/index.html; https://www.cdc.gov/emotional-well-being/managing-difficult-emotions/index.html; https://www.cdc.gov/emotional-well-being/conversations-matter/index.html; https://www.cdc.gov/heart-disease/prevention/index.html; https://www.cdc.gov/high-blood-pressure/about/index.html; https://www.cdc.gov/high-blood-pressure/prevention/index.html; https://www.cdc.gov/diabetes/prevention-type-2/index.html; https://www.cdc.gov/diabetes/prevention-type-2/truth-about-prediabetes.html; https://www.cdc.gov/clean-hands/about/index.html; https://www.cdc.gov/clean-hands/data-research/facts-stats/index.html; https://www.cdc.gov/clean-hands/about/hand-sanitizer.html."
+  },
+  "cards": [
+    {
+      "id": "cdc-healthy-living--01",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "vegetables",
+        "fruit",
+        "cooking"
+      ],
+      "title": "Put more colours on your plate to eat a wider range of nutrients",
+      "body": "CDC's healthy eating tips start with variety: build meals around whole, nutrient-dense foods such as vegetables, fruit, whole grains, protein, healthy fats and dairy without added sugar. A plate with several colours usually means a wider mix of nutrients.\n\nThe suggestions are small kitchen habits rather than a strict diet: stir chopped peppers, onions or broccoli into stews and omelettes, make a sauce from fresh tomatoes and herbs, add fresh herbs to salads and meat dishes, and top plain yogurt with fruit. Most people, CDC notes, need more of these foods and less highly processed food.",
+      "apply_it": "At your next meal, add one vegetable or fruit of a colour that is not already on your plate.",
+      "quiz": {
+        "question": "Which habit fits CDC's tip to aim for a variety of colours?",
+        "options": [
+          "Eating the same safe meal every day",
+          "Adding diced vegetables to a stew or omelette",
+          "Choosing white bread over whole grain",
+          "Replacing fruit with fruit-flavoured sweets"
+        ],
+        "answer": 1,
+        "explanation": "CDC suggests easy additions like chopped peppers, onions or broccoli in stews and omelettes to widen the range of foods you eat."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--02",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "sugar",
+        "drinks",
+        "labels"
+      ],
+      "title": "Swap sugary drinks for water and let fruit do the sweetening",
+      "body": "Added sugars slip in easily through sweet drinks, syrups and snacks. CDC's advice is to cut them where they are easiest to spot. Drink water instead of sugary drinks, and if plain water feels boring, flavour it with slices of citrus, cucumber or a few berries. Sweeten cereal or yogurt with fruit rather than sugar, choose fruit or vegetable slices over sugary snacks, and skip the flavoured syrup in coffee.\n\nWhen buying packaged food, read the nutrition label and pick the option with no or lower added sugar. These swaps keep the pleasure of eating while removing sugar you would not miss.",
+      "apply_it": "Replace one sweet drink today with water flavoured with a slice of lemon, lime or cucumber.",
+      "quiz": {
+        "question": "According to CDC, what is a good way to sweeten plain yogurt or cereal?",
+        "options": [
+          "Add a spoon of table sugar",
+          "Use flavoured syrup",
+          "Add fruit",
+          "Choose a sweetened version"
+        ],
+        "answer": 2,
+        "explanation": "CDC suggests adding fruit to whole-grain cereal or yogurt for sweetness instead of added sugar."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--03",
+      "topic": "health",
+      "tags": [
+        "salt",
+        "sodium",
+        "blood-pressure",
+        "processed-food"
+      ],
+      "title": "Most salt comes from processed and restaurant food, not your salt shaker",
+      "body": "Your body needs only a small amount of sodium, and too much can raise blood pressure and the risk of heart disease and stroke. CDC says most sodium people eat comes from processed and restaurant foods: sandwiches with deli meat, packaged soups, pizza, bread, savoury snacks and cheese are among the biggest sources for adults.\n\nThe recommended limit for teens and adults is under 2,300 mg a day, yet one teaspoon of table salt already holds about 2,400 mg. Sodium also hides in ingredients like baking soda and MSG. Cooking more from fresh or frozen vegetables and comparing labels for lower-sodium options cuts it fastest.",
+      "apply_it": "Check the label on one packaged food you eat often and compare its sodium with a similar product.",
+      "quiz": {
+        "question": "Where does CDC say most of the sodium people eat comes from?",
+        "options": [
+          "Processed and restaurant foods",
+          "Salt added at the table",
+          "Fresh vegetables",
+          "Drinking water"
+        ],
+        "answer": 0,
+        "explanation": "CDC says most sodium comes from processed and restaurant foods, which is why reading labels and cooking from fresh ingredients helps."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--04",
+      "topic": "health",
+      "tags": [
+        "fiber",
+        "whole-grains",
+        "beans",
+        "breakfast"
+      ],
+      "title": "Add fibre with whole grains, beans and raw vegetables",
+      "body": "Fibre is one of the nutrients CDC encourages people to eat more of, and it comes mainly from plant foods that are close to their natural form. The tips are simple to slot into a normal day.\n\nStart the morning with a whole-grain cereal such as oats, topped with berries, pumpkin seeds or almonds. Throw half a cup of beans or lentils into a salad. Keep sliced raw vegetables ready for snacks, and eat fresh fruit with meals or as dessert. Choosing whole grains over refined ones is part of the same idea: less processing usually means more fibre left in the food.",
+      "apply_it": "Add a handful of beans, lentils or seeds to one meal you are already planning to eat this week.",
+      "quiz": {
+        "question": "Which breakfast best matches CDC's fibre tips?",
+        "options": [
+          "Sugary pastries",
+          "White toast with jam",
+          "Oatmeal topped with berries and seeds",
+          "Skipping breakfast"
+        ],
+        "answer": 2,
+        "explanation": "CDC suggests starting the day with whole-grain cereal like oatmeal, topped with berries, pumpkin seeds or almonds."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--05",
+      "topic": "health",
+      "tags": [
+        "meal-planning",
+        "protein",
+        "portions",
+        "home-cooking"
+      ],
+      "title": "Plan meals ahead so hunger does not choose for you",
+      "body": "CDC points out that we eat in many places, at home, at work, in cars and in restaurants, and that planning is what lets you make good choices in all of them. Deciding meals in advance makes an unhealthy drive-through dinner less likely.\n\nAt home, CDC suggests including protein at every meal and varying the source: eggs, fish, poultry, beans, lentils, nuts, seeds or soy. Watch portion sizes, including sauces and condiments, and serve food on individual plates rather than from shared dishes on the table, which can make second and third helpings less automatic. When eating out, look at the menu beforehand, or box half the meal as soon as it arrives.",
+      "apply_it": "Write down tomorrow's three meals tonight, with a protein source in each.",
+      "quiz": {
+        "question": "What does CDC suggest instead of serving meals family-style?",
+        "options": [
+          "Eating straight from the pot",
+          "Serving food on individual plates",
+          "Skipping protein at dinner",
+          "Eating only in restaurants"
+        ],
+        "answer": 1,
+        "explanation": "Plating individual portions, rather than putting shared dishes on the table, may discourage extra helpings."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--06",
+      "topic": "health",
+      "tags": [
+        "snacks",
+        "environment",
+        "habits",
+        "nutrition"
+      ],
+      "title": "Make healthy snacks the easiest thing to reach",
+      "body": "Snacking is often about what is in front of you, so CDC's tips focus on arranging your surroundings. Keep nutritious snacks at home and at work: washed and chopped carrots, celery or cucumber, nuts and seeds, plain unsweetened yogurt, whole-grain crackers, or tinned fruit without added sugar.\n\nPut a portion into a bowl or container instead of eating from the packet, which makes it easier to notice how much you eat. And store less healthy foods out of sight, on a high shelf or at the back of the freezer, while healthier choices sit at eye level at the front. You are using convenience in your favour instead of relying on willpower.",
+      "apply_it": "Move one less healthy snack out of sight and put a healthy one where you will see it first.",
+      "quiz": {
+        "question": "Which snack habit does CDC recommend?",
+        "options": [
+          "Eating chips straight from a large bag",
+          "Keeping sweets at eye level",
+          "Pouring a portion into a bowl instead of eating from the package",
+          "Only snacking when very hungry"
+        ],
+        "answer": 2,
+        "explanation": "Portioning snacks into a bowl or container helps you see and control how much you eat."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--07",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "intensity",
+        "guidelines",
+        "running"
+      ],
+      "title": "Vigorous activity gets you there in half the time",
+      "body": "The adult guideline that CDC promotes can be met in more than one way. Besides 150 minutes a week of moderate activity such as brisk walking, adults can do 75 minutes a week of vigorous activity such as jogging or running, or any equal mix of the two. Roughly, a minute of vigorous effort counts as two of moderate.\n\nThis gives busy people options: three 25-minute jogs a week reach the vigorous target. CDC also notes that going beyond these amounts brings extra health benefits, and that the minutes can be spread across the week in shorter chunks.",
+      "apply_it": "Look at your week and decide whether moderate, vigorous or a mix fits your schedule best.",
+      "quiz": {
+        "question": "Which weekly amount meets the adult aerobic guideline?",
+        "options": [
+          "75 minutes of vigorous activity",
+          "20 minutes of vigorous activity",
+          "60 minutes of moderate activity",
+          "Any amount of stretching"
+        ],
+        "answer": 0,
+        "explanation": "Adults can meet the guideline with 150 minutes of moderate activity, 75 minutes of vigorous activity, or an equal mix."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--08",
+      "topic": "health",
+      "tags": [
+        "strength",
+        "muscles",
+        "guidelines",
+        "exercise"
+      ],
+      "title": "Strength training twice a week should cover every major muscle group",
+      "body": "Walking and running are only half of CDC's adult recommendation. Adults also need muscle-strengthening activity on at least two days a week, and it should work all the major muscle groups: legs, hips, back, abdomen, chest, shoulders and arms.\n\nThat does not require a gym. Body-weight exercises such as squats, push-ups and lunges, carrying heavy loads, resistance bands or heavy gardening can all count if they make the muscles work hard. A simple approach is to plan two sessions that each touch every group, on days that suit your week, even on a day you also walk or jog.",
+      "apply_it": "Write a 15-minute routine with one exercise each for legs, back, chest, core and arms, and do it twice this week.",
+      "quiz": {
+        "question": "Which muscle groups should adult strength training cover?",
+        "options": [
+          "Only the arms",
+          "Only the legs",
+          "Mainly the abdomen",
+          "Legs, hips, back, abdomen, chest, shoulders and arms"
+        ],
+        "answer": 3,
+        "explanation": "CDC says muscle-strengthening activity should work all major muscle groups on at least two days a week."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--09",
+      "topic": "health",
+      "tags": [
+        "intensity",
+        "talk-test",
+        "exercise",
+        "effort"
+      ],
+      "title": "Use the talk test to judge how hard you are working",
+      "body": "You do not need a heart-rate monitor to know if your activity counts. CDC describes a simple talk test: during moderate activity you can talk but not sing; during vigorous activity you can say only a few words before pausing for breath.\n\nAnother method is to rate your effort from 0, sitting still, to 10, your hardest. Moderate is around 5 or 6, and vigorous starts around 7 or 8. Because this is relative, the same brisk walk might be vigorous for one person and moderate for someone fitter, so judge by your own body, not someone else's pace.",
+      "apply_it": "On your next walk, try singing a line of a song. If you can, pick up the pace a little.",
+      "quiz": {
+        "question": "In the talk test, what tells you an activity is moderate intensity?",
+        "options": [
+          "You can sing easily",
+          "You can talk but not sing",
+          "You cannot say any words",
+          "Your heart rate stays the same"
+        ],
+        "answer": 1,
+        "explanation": "At moderate intensity you can talk but not sing; at vigorous intensity you can only say a few words before needing a breath."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--10",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "everyday-activity",
+        "dancing",
+        "gardening"
+      ],
+      "title": "Dancing, swimming and yard work can count as exercise",
+      "body": "CDC's lists of moderate activities include much more than gym sessions. Brisk walking, recreational swimming, cycling on level ground, doubles tennis, active yoga, social dancing, water aerobics and general yard or home repair work can all count.\n\nVigorous examples include running, lap swimming, singles tennis, energetic dancing, skipping rope, fast cycling and heavy digging or shovelling that raises your heart rate. Knowing this widens your options: if you hate jogging, a lively dance class or an afternoon of hard gardening may move you just as well, and you are more likely to keep doing something you enjoy.",
+      "apply_it": "List three activities from your normal week, such as dancing, gardening or carrying loads, that could count if you did them briskly.",
+      "quiz": {
+        "question": "Which of these does CDC list as a moderate-intensity activity?",
+        "options": [
+          "Watching sport on TV",
+          "Sitting while reading",
+          "Social dancing",
+          "Lying down to stretch"
+        ],
+        "answer": 2,
+        "explanation": "CDC lists ballroom or line dancing among moderate activities, alongside brisk walking and yard work."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--11",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "planning",
+        "schedule",
+        "habits"
+      ],
+      "title": "Write your activity week down like a timetable",
+      "body": "CDC's page on adding activity as an adult suggests setting goals, choosing activities you enjoy and can manage, and planning them, with a printable diary to track what you actually do. It also shows sample weeks: brisk walks of 30 minutes on five days plus weights on two; or 25-minute jogs on three days plus weights on two; or a mix of walks and shorter jogs.\n\nSeeing a week on paper turns a vague intention into appointments. If you have been inactive, have a chronic condition such as heart disease, arthritis or diabetes, or have a disability, CDC advises talking to a doctor about which activities and amounts suit you, especially before vigorous exercise.",
+      "apply_it": "Draw a simple seven-day grid and write in when you will walk, jog or do strength work this week.",
+      "quiz": {
+        "question": "When does CDC suggest checking with a doctor about activity?",
+        "options": [
+          "Before any short walk",
+          "Before vigorous activity if you have been inactive or have a chronic condition",
+          "Only after age 80",
+          "Never; activity is always safe at any level"
+        ],
+        "answer": 1,
+        "explanation": "Moderate activity is safe for most people, but CDC advises talking to a doctor before vigorous activity if you have been inactive or have a condition."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--12",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "children",
+        "teens",
+        "family"
+      ],
+      "title": "Sleep needs change with age, and children need far more than adults",
+      "body": "CDC's sleep page gives recommended amounts by age, and they shrink steadily from birth. Newborns need 14 to 17 hours a day, toddlers 11 to 14 including naps, and preschoolers 10 to 13. School-age children need 9 to 12 hours, and teenagers 8 to 10. Adults need at least 7.\n\nThese ranges are useful for families planning bedtimes. A ten-year-old who has to be up at six for school needs to be asleep somewhere around eight or nine in the evening, which is much earlier than many households manage once homework, screens and chores are counted.",
+      "apply_it": "Work out the bedtime each child in your home would need to reach the recommended hours for their age.",
+      "quiz": {
+        "question": "How much sleep does CDC recommend for teenagers aged 13 to 17?",
+        "options": [
+          "5 to 6 hours",
+          "6 to 7 hours",
+          "8 to 10 hours",
+          "14 to 17 hours"
+        ],
+        "answer": 2,
+        "explanation": "CDC recommends 8 to 10 hours for teens; younger children need even more."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--13",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "sleep-quality",
+        "sleep-disorders",
+        "doctor"
+      ],
+      "title": "Feeling tired after a full night can be a sign of poor sleep quality",
+      "body": "Hours in bed are only half the story. CDC stresses that sleep quality matters too, and lists warning signs: trouble falling asleep, waking up many times in the night, and still feeling sleepy or tired even after enough hours.\n\nSome health conditions make good sleep hard, such as insomnia, restless legs syndrome, narcolepsy and sleep apnoea. If these signs keep happening, CDC advises seeing a health care provider, who can run tests such as a sleep study. Persistent tiredness is not something you just have to live with.",
+      "apply_it": "For the next week, note each morning whether you woke rested. If most answers are no, mention it at your next check-up.",
+      "quiz": {
+        "question": "Which of these is a sign of poor sleep quality, according to CDC?",
+        "options": [
+          "Feeling tired even after getting enough hours",
+          "Waking up once to drink water",
+          "Falling asleep within 15 minutes",
+          "Dreaming"
+        ],
+        "answer": 0,
+        "explanation": "CDC lists feeling sleepy or tired despite enough sleep, trouble falling asleep and frequent waking as signs of poor quality sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--14",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "sleep-diary",
+        "tracking",
+        "screens"
+      ],
+      "title": "Keep a sleep diary to find what is disturbing your nights",
+      "body": "When someone has ongoing sleep trouble, CDC notes, a health care provider may ask them to keep a sleep diary. It records when you went to bed and woke up, any waking in the night, naps, exercise, alcohol, caffeine and medicines.\n\nYou can start one yourself. A week or two of notes often reveals patterns you would otherwise miss, such as poor nights after late coffee or evening drinks. Pair it with CDC's basic tips: switch off electronic devices at least 30 minutes before bed, keep the bedroom quiet and cool, and avoid big meals and alcohol close to bedtime.",
+      "apply_it": "Start a simple sleep diary tonight: bedtime, wake time, naps, caffeine, alcohol and exercise.",
+      "quiz": {
+        "question": "What does CDC suggest doing with electronic devices before bed?",
+        "options": [
+          "Use them until you fall asleep",
+          "Turn them off at least 30 minutes before bed",
+          "Keep them on as background noise",
+          "Only use them in the bedroom"
+        ],
+        "answer": 1,
+        "explanation": "CDC's sleep tips include turning off electronics at least 30 minutes before bedtime."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--15",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "body",
+        "signs",
+        "self-awareness"
+      ],
+      "title": "Stress shows up in your body, appetite and habits, not just your mood",
+      "body": "CDC describes stress as the body's normal response to new or challenging situations, but warns that long-term stress can make health problems worse. It helps to recognise all the ways it shows up.\n\nEmotionally, stress can bring fear, anger, sadness, worry, numbness or frustration. It can change appetite, energy and interests, and make it hard to concentrate, decide or sleep. Physically it may appear as headaches, body pain, stomach trouble or skin rashes. It can also push people towards more alcohol, tobacco or drugs. Spotting these signals early is the cue to use coping strategies before stress becomes chronic.",
+      "apply_it": "Think of your last stressful week. Which body or habit change appeared first? Use it as your early warning sign.",
+      "quiz": {
+        "question": "Which of these does CDC list as a possible sign of stress?",
+        "options": [
+          "Improved concentration",
+          "More interest in hobbies",
+          "Steadier sleep",
+          "Headaches or stomach problems"
+        ],
+        "answer": 3,
+        "explanation": "CDC notes stress can cause physical reactions like headaches, body pain and stomach problems, as well as changes in sleep and appetite."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--16",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "news",
+        "social-media",
+        "coping"
+      ],
+      "title": "Limit the news and social media when they keep you on edge",
+      "body": "One of CDC's first suggestions for coping with stress is to take breaks from news and social media. Staying informed is good, but a constant stream of negative stories can be upsetting and keep your body in a state of alarm.\n\nCDC pairs this with ways to unwind: deep breathing, stretching or meditation, writing in a journal, spending time outdoors, and making time for hobbies you enjoy. The point is to swap some passive scrolling for activities that actually let you recover.",
+      "apply_it": "Choose two set times a day to check the news, and keep your phone away for the first 30 minutes after waking.",
+      "quiz": {
+        "question": "Why does CDC suggest limiting news and social media during stressful times?",
+        "options": [
+          "Because news is always false",
+          "Because phones cause stress by themselves",
+          "Because hobbies are more important than information",
+          "Because constant negative news can be upsetting"
+        ],
+        "answer": 3,
+        "explanation": "CDC notes that hearing about negative events constantly can be upsetting, so breaks help you cope."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--17",
+      "topic": "health",
+      "tags": [
+        "gratitude",
+        "journaling",
+        "emotional-wellbeing",
+        "stress"
+      ],
+      "title": "Write down specific things you are grateful for",
+      "body": "CDC lists gratitude among its strategies for managing stress and improving emotional well-being. The suggestion is concrete: write down particular things you are thankful for, daily or in a weekly journal, rather than vaguely feeling grateful.\n\nCDC also suggests turning gratitude outward: thank the people who have made a positive difference to you, do something kind for people you appreciate, and volunteer when you can. Being specific matters, because naming the friend who helped or the meal you enjoyed trains your attention to notice good things that stress tends to hide.",
+      "apply_it": "Before bed tonight, write three specific things from today you are grateful for, including one person by name.",
+      "quiz": {
+        "question": "How does CDC suggest practising gratitude?",
+        "options": [
+          "Thinking vaguely positive thoughts",
+          "Avoiding thanking others",
+          "Only when life is going well",
+          "Writing down specific things you are thankful for"
+        ],
+        "answer": 3,
+        "explanation": "CDC recommends writing down specific things you are grateful for and thanking people who have helped you."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--18",
+      "topic": "health",
+      "tags": [
+        "listening",
+        "support",
+        "conversations",
+        "friendship"
+      ],
+      "title": "To support someone, listen, ask open questions and skip the quick fixes",
+      "body": "Talking about feelings can relieve stress, and CDC offers tips for being the person someone can talk to. Set aside distractions and be ready to listen. Ask open-ended questions, such as how they have been feeling, and you can share a little of your own experience to get things started. Any format works: phone, text, video or in person.\n\nCDC suggests phrases like \"I'm listening\", \"Tell me more\" and \"I'm here for you\". It advises against brushing feelings aside with \"It will all be fine\", or jumping to comparisons and fixes like \"Stop worrying so much\". End on a hopeful note and agree when you will talk again.",
+      "apply_it": "Message one person who has seemed low lately and ask an open question about how they are doing.",
+      "quiz": {
+        "question": "Which phrase does CDC suggest using when supporting someone?",
+        "options": [
+          "\"It is what it is.\"",
+          "\"Stop worrying so much.\"",
+          "\"I know how to fix this.\"",
+          "\"Tell me more.\""
+        ],
+        "answer": 3,
+        "explanation": "CDC suggests validating phrases like \"Tell me more\" and \"I'm listening\", and warns against minimising comments or quick fixes."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--19",
+      "topic": "health",
+      "tags": [
+        "emotions",
+        "anger",
+        "grief",
+        "loneliness"
+      ],
+      "title": "Name the feeling underneath: anger often covers sadness or worry",
+      "body": "CDC's page on difficult emotions argues that identifying what you feel helps stop it from growing. Anger, for instance, can hide frustration, sadness, worry or feeling overwhelmed, so it is worth asking what lies beneath it. Assertive communication helps you express it clearly and respectfully.\n\nOther feelings have their own responses. Loneliness eases by joining groups with shared interests and reaching out to friends and family. Grief needs time, support and sometimes counselling. Prolonged sadness can be a sign of depression. CDC reminds readers that what works differs from person to person and that coping takes patience. If emotions keep interfering with daily life, a mental health professional can help.",
+      "apply_it": "Next time you feel angry, pause and ask: what else am I feeling right now? Name it before you respond.",
+      "quiz": {
+        "question": "According to CDC, what can anger sometimes mask?",
+        "options": [
+          "Hunger only",
+          "Frustration, sadness or worry",
+          "Physical strength",
+          "Nothing; anger is always simple"
+        ],
+        "answer": 1,
+        "explanation": "CDC notes that anger can mask other feelings such as frustration, sadness, worry or feeling overwhelmed."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--20",
+      "topic": "health",
+      "tags": [
+        "communication",
+        "i-statements",
+        "conflict",
+        "relationships"
+      ],
+      "title": "Use \"I\" statements and a calm tone when feelings run high",
+      "body": "Among CDC's strategies for emotional well-being is communicating better. Share your feelings honestly but respectfully, using \"I\" statements, for example \"I feel ignored when plans change last minute\" rather than \"You never think of me\". Keep your tone calm, listen without interrupting, and show empathy even when you disagree.\n\nCDC links this to working through problems: focus on solutions rather than dwelling on what went wrong, consider other people's perspectives, and treat mistakes as lessons. Together these skills make disagreements less likely to damage relationships.",
+      "apply_it": "Before your next difficult conversation, write the main point as an \"I feel... when...\" sentence.",
+      "quiz": {
+        "question": "Which is an example of an \"I\" statement?",
+        "options": [
+          "\"You always ruin everything.\"",
+          "\"Everyone thinks you're wrong.\"",
+          "\"Why can't you ever listen?\"",
+          "\"I feel worried when I don't hear from you.\""
+        ],
+        "answer": 3,
+        "explanation": "An \"I\" statement describes your own feeling and the situation, without blaming the other person."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--21",
+      "topic": "health",
+      "tags": [
+        "blood-pressure",
+        "heart",
+        "screening",
+        "numbers"
+      ],
+      "title": "High blood pressure usually has no symptoms, so measuring is the only way to know",
+      "body": "CDC calls attention to a hard fact about high blood pressure: it usually has no warning signs, so many people have it without knowing. The only way to find out is to have it measured.\n\nA reading has two numbers. Normal is below 120 over 80. Readings that stay at or above 130 over 80 count as high blood pressure, though one high reading is not a diagnosis because pressure changes during the day. Left unchecked, high blood pressure raises the risk of heart attack, heart failure, stroke and kidney disease. Many pharmacies and clinics can measure it quickly.",
+      "apply_it": "Find out when your blood pressure was last measured. If you do not know, arrange a check this month.",
+      "quiz": {
+        "question": "How can you tell if you have high blood pressure?",
+        "options": [
+          "Wait for headaches",
+          "Notice if you feel stressed",
+          "Have your blood pressure measured",
+          "Check if your face feels hot"
+        ],
+        "answer": 2,
+        "explanation": "High blood pressure usually has no symptoms, so CDC says measuring it is the only way to know."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--22",
+      "topic": "health",
+      "tags": [
+        "heart",
+        "cholesterol",
+        "blood-pressure",
+        "check-ups"
+      ],
+      "title": "Put blood pressure and cholesterol checks on your calendar",
+      "body": "CDC's heart disease prevention page turns routine checks into specific habits. Adults who have never had high blood pressure or other risk factors should have their blood pressure measured at least once a year; people already diagnosed need checks more often, which can be done at a clinic, a pharmacy or at home.\n\nCholesterol should be tested at least every four to six years, and more often if you have high cholesterol or a family history of it. These simple tests catch problems while lifestyle changes or treatment can still make a big difference.",
+      "apply_it": "Write down the dates of your last blood pressure and cholesterol checks, and book whichever is overdue.",
+      "quiz": {
+        "question": "How often does CDC suggest most adults have their cholesterol tested?",
+        "options": [
+          "Every month",
+          "Only after a heart attack",
+          "At least every 4 to 6 years",
+          "Once in a lifetime"
+        ],
+        "answer": 2,
+        "explanation": "CDC suggests checking cholesterol at least every 4 to 6 years, more often with a diagnosis or family history."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--23",
+      "topic": "health",
+      "tags": [
+        "blood-pressure",
+        "dash",
+        "potassium",
+        "alcohol"
+      ],
+      "title": "Fruit, vegetables and less salt and alcohol help keep blood pressure down",
+      "body": "To prevent high blood pressure, CDC recommends a varied diet rich in potassium, fibre and protein and lower in salt and saturated fat, with plenty of fresh fruit and vegetables. It points to the DASH eating plan (Dietary Approaches to Stop Hypertension), which has a proven record of lowering blood pressure.\n\nThe same page names other levers: keep a healthy weight, stay active for about 30 minutes on most days, do not smoke, and limit alcohol to no more than two drinks a day for men and one for women. It also links blood pressure to sleep and to long-term stress, anxiety or depression, so caring for your mind is part of caring for your heart.",
+      "apply_it": "Add one extra serving of fruit or vegetables to your day, and have one fewer salty snack.",
+      "quiz": {
+        "question": "Which eating plan does CDC mention for lowering blood pressure?",
+        "options": [
+          "The DASH eating plan",
+          "A high-salt diet",
+          "A sugar-only fast",
+          "A meat-only diet"
+        ],
+        "answer": 0,
+        "explanation": "CDC points to DASH (Dietary Approaches to Stop Hypertension), which has a proven record of lowering blood pressure."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--24",
+      "topic": "health",
+      "tags": [
+        "medicines",
+        "doctor",
+        "heart",
+        "care-team"
+      ],
+      "title": "Never stop a prescribed heart medicine without talking to your care team",
+      "body": "For people already managing high blood pressure, high cholesterol or diabetes, CDC's advice is to take prescribed medicines exactly as directed and to ask questions if anything is unclear. Do not stop a medicine on your own, even if you feel fine, without first speaking to your doctor, nurse or pharmacist.\n\nCDC also encourages working actively with your care team: review your treatment plan regularly, bring a written list of questions to appointments, and talk about how heart health and mental health affect each other. Feeling well is often a sign the treatment is working, not a sign it is no longer needed.",
+      "apply_it": "Before your next appointment, write down three questions about your health or medicines to take with you.",
+      "quiz": {
+        "question": "What does CDC advise if you want to stop a prescribed blood pressure medicine?",
+        "options": [
+          "Stop it once you feel fine",
+          "Halve the dose yourself",
+          "Ask a friend who takes the same medicine",
+          "Talk to your doctor, nurse or pharmacist first"
+        ],
+        "answer": 3,
+        "explanation": "CDC advises never stopping a medicine without first talking to a doctor, nurse or pharmacist."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--25",
+      "topic": "health",
+      "tags": [
+        "prediabetes",
+        "diabetes",
+        "risk-factors",
+        "screening"
+      ],
+      "title": "Prediabetes is common and silent, so know your risk factors",
+      "body": "Most people who develop type 2 diabetes first have prediabetes: blood sugar higher than normal but not high enough for a diabetes diagnosis. CDC says more than 2 in 5 US adults have it, and about 8 in 10 of them do not know, because it usually has no symptoms and can last for years.\n\nCDC suggests considering a blood sugar test if you are 45 or older, have overweight, have a parent or sibling with type 2 diabetes, are active fewer than three times a week, or had diabetes during pregnancy. Some ethnic groups, including Black and Hispanic people, face higher risk. A simple blood test from a doctor can confirm it.",
+      "apply_it": "Count how many of the listed risk factors apply to you. If any do, ask a health worker about a blood sugar test.",
+      "quiz": {
+        "question": "Why do most people with prediabetes not know they have it?",
+        "options": [
+          "It usually has no symptoms",
+          "It only affects children",
+          "It always disappears on its own",
+          "It can only be found after surgery"
+        ],
+        "answer": 0,
+        "explanation": "Prediabetes usually has no signs, so about 8 in 10 people with it do not know without a blood test."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--26",
+      "topic": "health",
+      "tags": [
+        "prediabetes",
+        "weight",
+        "exercise",
+        "prevention"
+      ],
+      "title": "Losing 5 to 7% of your body weight can help prevent type 2 diabetes",
+      "body": "CDC stresses that prediabetes is not a sentence: lifestyle changes can stop or slow the development of type 2 diabetes. The targets are modest. Losing 5 to 7% of body weight, which is 10 to 14 pounds (about 5 to 6 kg) for someone weighing 200 pounds (about 90 kg), combined with at least 150 minutes a week of brisk walking or similar activity, makes a real difference.\n\nThat matters because diabetes affects every major organ and can lead to kidney failure, blindness and nerve damage, and it raises the risk of heart disease, stroke and depression. Small, steady changes now are far easier than living with those complications later.",
+      "apply_it": "Work out 5% of your current weight. That number, not a dramatic diet, is the first goal worth aiming for.",
+      "quiz": {
+        "question": "What weight-loss target does CDC give for people with prediabetes?",
+        "options": [
+          "50% of body weight",
+          "5 to 7% of body weight",
+          "No weight loss is helpful",
+          "At least 30 kg"
+        ],
+        "answer": 1,
+        "explanation": "CDC cites losing 5 to 7% of body weight, together with 150 minutes of weekly activity, to prevent or delay type 2 diabetes."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--27",
+      "topic": "health",
+      "tags": [
+        "diabetes-prevention",
+        "coaching",
+        "support",
+        "habits"
+      ],
+      "title": "A coach and a group make lifestyle change easier to stick with",
+      "body": "For people with confirmed prediabetes, CDC recommends a structured lifestyle change programme, the National Diabetes Prevention Program in the US. Participants work with a trained lifestyle coach who helps them take small, manageable steps.\n\nThe programme covers healthier eating and adding activity to the day, but also the parts people often overlook: managing stress, staying motivated and solving the problems that stall progress. The wider lesson applies anywhere: changing habits is easier with guidance and company than alone, so ask your health service whether a similar group or coach is available near you.",
+      "apply_it": "Ask a clinic, workplace or community group whether they run a healthy-lifestyle or diabetes prevention group you could join.",
+      "quiz": {
+        "question": "Besides diet and activity, what else does CDC's lifestyle programme help with?",
+        "options": [
+          "Choosing medicines without a doctor",
+          "Avoiding all carbohydrates",
+          "Skipping meals",
+          "Managing stress and staying motivated"
+        ],
+        "answer": 3,
+        "explanation": "The programme's coach also helps participants manage stress, stay motivated and solve problems that slow progress."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--28",
+      "topic": "health",
+      "tags": [
+        "handwashing",
+        "hygiene",
+        "germs",
+        "food-safety"
+      ],
+      "title": "Wash your hands at the moments germs spread most",
+      "body": "CDC lists the key moments for washing hands: before, during and after preparing food; before eating; after using the toilet, changing a nappy or helping a child use the toilet; after blowing your nose, coughing or sneezing; before and after caring for someone with vomiting or diarrhoea or treating a wound; and after touching animals, their food or waste, or rubbish.\n\nThe reason is simple. Hands carry germs from these sources to our eyes, nose and mouth, to food, and to shared surfaces. CDC notes that handwashing education reduces diarrhoeal illness by roughly a quarter to a third, and colds and similar infections by about a fifth.",
+      "apply_it": "Put a reminder by your kitchen and bathroom sinks for one week to wash before food and after the toilet.",
+      "quiz": {
+        "question": "Which is one of the key times CDC says to wash your hands?",
+        "options": [
+          "Only before going to bed",
+          "Only when hands look dirty",
+          "After blowing your nose, coughing or sneezing",
+          "Once a day is always enough"
+        ],
+        "answer": 2,
+        "explanation": "CDC includes after blowing your nose, coughing or sneezing among the key times to wash hands."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--29",
+      "topic": "health",
+      "tags": [
+        "handwashing",
+        "soap",
+        "technique",
+        "hygiene"
+      ],
+      "title": "Soap, running water and 20 seconds of scrubbing do the job",
+      "body": "CDC's method has five steps: wet your hands with clean running water, warm or cold; lather with soap, including the backs of your hands, between your fingers and under your nails; scrub for at least 20 seconds, about two rounds of \"Happy Birthday\"; rinse under running water; then dry with a clean towel or air dryer.\n\nThe details have reasons. Running water avoids picking germs back up from a basin. Water temperature does not appear to change how many germs are removed. Ordinary soap works better than water alone because it lifts germs off the skin, and antibacterial soap has no proven extra benefit for consumers. Wet hands spread germs more easily, so dry them well.",
+      "apply_it": "Next time you wash your hands, hum \"Happy Birthday\" twice and check that you reached under your nails.",
+      "quiz": {
+        "question": "How long does CDC recommend scrubbing hands with soap?",
+        "options": [
+          "At least 20 seconds",
+          "About 3 seconds",
+          "Two minutes, always",
+          "Only until the soap is gone"
+        ],
+        "answer": 0,
+        "explanation": "CDC recommends scrubbing for at least 20 seconds, about two rounds of \"Happy Birthday\"."
+      },
+      "health": true
+    },
+    {
+      "id": "cdc-healthy-living--30",
+      "topic": "health",
+      "tags": [
+        "hand-sanitizer",
+        "hygiene",
+        "germs",
+        "safety"
+      ],
+      "title": "Hand sanitiser is a backup: use 60% alcohol and rub until dry",
+      "body": "Soap and water remain the best choice in most situations, says CDC. When they are not available, use a hand sanitiser with at least 60% alcohol, which is shown on the label. Put enough on one palm to cover all surfaces, then rub your hands and fingers together for about 20 seconds until they are dry. Do not wipe or rinse it off early.\n\nSanitiser has limits: it does not kill every germ, works poorly on visibly dirty or greasy hands, and may not remove chemicals like pesticides or lead. After gardening or working outdoors, wash with soap and water. Supervise young children so they do not swallow it.",
+      "apply_it": "Check the label on any hand sanitiser you carry. If it is below 60% alcohol, replace it.",
+      "quiz": {
+        "question": "When does CDC say hand sanitiser works poorly?",
+        "options": [
+          "When hands are visibly dirty or greasy",
+          "When hands are completely clean",
+          "When used for 20 seconds",
+          "When it contains 70% alcohol"
+        ],
+        "answer": 0,
+        "explanation": "Sanitiser is less effective on visibly dirty or greasy hands and does not remove chemicals, so washing with soap and water is better then."
+      },
+      "health": true
+    }
+  ]
+}
