@@ -7,6 +7,8 @@ import type { ApiClient } from "./api";
 export const SEEN_AFTER_MS = 1000;
 /** How long seen ids are collected before one POST /v1/seen. */
 export const SEEN_BATCH_MS = 2000;
+/** How long a post must stay on screen to count as read (streaks, goals). Scrolling past only marks it seen. */
+export const READ_AFTER_MS = 8000;
 
 /** True when at least half the element is visible, or it fills at least half the viewport (tall posts). */
 export function isHalfVisible(entry: Pick<IntersectionObserverEntry, "isIntersecting" | "intersectionRatio" | "intersectionRect" | "rootBounds">): boolean {
@@ -18,7 +20,8 @@ export function isHalfVisible(entry: Pick<IntersectionObserverEntry, "isIntersec
 
 /**
  * Marks posts seen once they have been at least half on screen for about a second,
- * batching ids into POST /v1/seen. Returns a ref callback for elements that carry
+ * batching ids into POST /v1/seen, and read (POST /v1/cards/{id}/view) once they
+ * have stayed on screen for READ_AFTER_MS. Returns a ref callback for elements that carry
  * `data-post-id`. Does nothing while `enabled` is false (signed out).
  */
 export function useSeenTracker(api: ApiClient, enabled: boolean) {
@@ -27,6 +30,8 @@ export function useSeenTracker(api: ApiClient, enabled: boolean) {
   const done = useRef(new Set<string>());
   const queue = useRef(new Set<string>());
   const timers = useRef(new Map<string, number>());
+  const readDone = useRef(new Set<string>());
+  const readTimers = useRef(new Map<string, number>());
   const flushTimer = useRef<number | undefined>(undefined);
 
   const flush = useCallback(() => {
@@ -46,12 +51,31 @@ export function useSeenTracker(api: ApiClient, enabled: boolean) {
   useEffect(() => {
     if (!enabled || typeof IntersectionObserver === "undefined") return;
     const timersMap = timers.current;
+    const readMap = readTimers.current;
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           const el = entry.target as HTMLElement;
           const id = el.dataset.postId;
-          if (!id || done.current.has(id)) continue;
+          if (!id) continue;
+          if (!readDone.current.has(id)) {
+            if (isHalfVisible(entry)) {
+              if (!readMap.has(id)) {
+                readMap.set(
+                  id,
+                  window.setTimeout(() => {
+                    readMap.delete(id);
+                    readDone.current.add(id);
+                    api.recordView(id).catch(() => readDone.current.delete(id));
+                  }, READ_AFTER_MS),
+                );
+              }
+            } else if (readMap.has(id)) {
+              window.clearTimeout(readMap.get(id));
+              readMap.delete(id);
+            }
+          }
+          if (done.current.has(id)) continue;
           if (isHalfVisible(entry)) {
             if (timersMap.has(id)) continue;
             timersMap.set(
@@ -83,11 +107,13 @@ export function useSeenTracker(api: ApiClient, enabled: boolean) {
       observer.current = null;
       timersMap.forEach((t) => window.clearTimeout(t));
       timersMap.clear();
+      readMap.forEach((t) => window.clearTimeout(t));
+      readMap.clear();
       document.removeEventListener("visibilitychange", onHide);
       window.removeEventListener("pagehide", flush);
       flush();
     };
-  }, [enabled, flush]);
+  }, [api, enabled, flush]);
 
   return useCallback((el: HTMLElement | null) => {
     if (!el) return;

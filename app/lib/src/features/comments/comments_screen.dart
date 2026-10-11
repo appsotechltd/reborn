@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../blocks/block_actions.dart';
 import '../post/post_store.dart';
@@ -301,6 +302,7 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
                   ),
                   const SizedBox(width: 4),
                   IconButton.filled(
+                    style: amberIconButtonStyle,
                     tooltip: 'Send',
                     onPressed: _sending ? null : _send,
                     icon: _sending
@@ -359,10 +361,7 @@ class CommentTile extends StatelessWidget {
             onTap: a.handle.isEmpty
                 ? null
                 : () => context.push('/users/${Uri.encodeComponent(a.handle)}'),
-            child: CircleAvatar(
-              radius: 16,
-              child: Text(name.characters.first.toUpperCase()),
-            ),
+            child: PersonAvatar(name: name, radius: 16),
           ),
           const SizedBox(width: 10),
           Expanded(

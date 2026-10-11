@@ -227,10 +227,14 @@ func (s *Store) DailyCard(ctx context.Context, userID string, topics []string, d
 // RecordView marks a card as read by the user and reports whether it was new to them.
 func (s *Store) RecordView(ctx context.Context, userID, cardID string) (bool, error) {
 	var isNew bool
-	err := s.DB.QueryRow(ctx, `INSERT INTO card_views (user_id, card_id)
-		SELECT $1, id FROM cards WHERE id = $2 AND status = 'published'
-		ON CONFLICT (user_id, card_id) DO UPDATE SET viewed_at = card_views.viewed_at
-		RETURNING (xmax = 0)`, userID, cardID).Scan(&isNew)
+	err := s.DB.QueryRow(ctx, `WITH prev AS (
+			SELECT read_at FROM card_views WHERE user_id = $1 AND card_id = $2
+		), up AS (
+			INSERT INTO card_views (user_id, card_id, read_at)
+			SELECT $1, id, now() FROM cards WHERE id = $2 AND status = 'published'
+			ON CONFLICT (user_id, card_id) DO UPDATE SET read_at = COALESCE(card_views.read_at, EXCLUDED.read_at)
+			RETURNING 1
+		) SELECT (SELECT read_at FROM prev) IS NULL FROM up`, userID, cardID).Scan(&isNew)
 	return isNew, notFound(err)
 }
 

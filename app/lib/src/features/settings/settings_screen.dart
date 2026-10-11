@@ -6,11 +6,12 @@ import '../../api/api_client.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
 import '../blocks/block_actions.dart';
+import 'appearance_settings.dart';
 import 'reading_settings.dart';
 
 final _handlePattern = RegExp(r'^[a-z0-9_]{3,30}$');
 
-/// Edit handle and bio; delete the account.
+/// Appearance for everyone; signed in, also handle, bio and account.
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
 
@@ -121,10 +122,17 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     if (!session.signedIn) {
       return Scaffold(
         appBar: AppBar(title: const Text('Settings')),
-        body: const SignInPrompt(
-          icon: Icons.settings_outlined,
-          title: 'Settings',
-          message: 'Sign in to edit your profile.',
+        body: ListView(
+          padding: const EdgeInsets.all(20),
+          children: const [
+            ReadingWidth(child: AppearanceSettings()),
+            SizedBox(height: 8),
+            SignInPrompt(
+              icon: Icons.settings_outlined,
+              title: 'Your profile',
+              message: 'Sign in to edit your profile.',
+            ),
+          ],
         ),
       );
     }
@@ -140,6 +148,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  const AppearanceSettings(),
+                  const SizedBox(height: 8),
+                  const Divider(),
+                  const SizedBox(height: 8),
                   Text('Public profile', style: theme.textTheme.titleMedium),
                   const SizedBox(height: 12),
                   TextFormField(

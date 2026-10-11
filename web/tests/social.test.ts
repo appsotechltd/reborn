@@ -44,7 +44,7 @@ describe("reasonText", () => {
     expect(reasonText({ kind: "source", label: "Meditations" })).toBe("From Meditations");
     expect(reasonText({ kind: "author", label: "Marcus Aurelius" })).toBe("Because you follow Marcus Aurelius");
     expect(reasonText({ kind: "favorite", label: "Bob" })).toBe("Bob favourited this");
-    expect(reasonText({ kind: "topic", label: "Psychology" })).toBe("Psychology");
+    expect(reasonText({ kind: "topic", label: "Psychology" })).toBe("In Psychology, one of your topics");
     expect(reasonText(undefined)).toBeNull();
   });
 });

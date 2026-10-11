@@ -184,7 +184,14 @@ func TestStreaksAndReferrals(t *testing.T) {
 	h.do("POST", "/v1/auth/register", "", map[string]any{"email": "cy@example.com", "password": "password1", "referral_code": "NOPE1234"}, 201)
 
 	read := func(tok string, ids ...string) {
-		h.do("POST", "/v1/seen", tok, map[string]any{"post_ids": ids}, 204)
+		for _, id := range ids {
+			h.do("POST", "/v1/cards/"+id+"/view", tok, nil, 204)
+		}
+	}
+	// Scrolling past posts marks them seen but isn't reading.
+	h.do("POST", "/v1/seen", ada, map[string]any{"post_ids": []string{"nhs-sleep-tips--01", "nhs-sleep-tips--02", "nhs-sleep-tips--03"}}, 204)
+	if st := h.do("GET", "/v1/me/streak", ada, nil, 200); st["today"].(float64) != 0 {
+		t.Fatalf("seen counted as read: %v", st)
 	}
 	// Ada reads two ideas on three days in a row (the goal is 2), skipping none.
 	day := h.now
@@ -192,7 +199,7 @@ func TestStreaksAndReferrals(t *testing.T) {
 		h.now = day.AddDate(0, 0, i)
 		read(ada, pair...)
 	}
-	read(ada, "nhs-sleep-tips--01") // already seen: doesn't count twice
+	read(ada, "nhs-sleep-tips--01") // already read: doesn't count twice
 	st := h.do("GET", "/v1/me/streak", ada, nil, 200)
 	if st["current"].(float64) != 3 || st["longest"].(float64) != 3 || st["today"].(float64) != 2 || st["goal_met"] != true || len(list(st, "last_days")) != 7 {
 		t.Fatalf("streak = %v", st)
@@ -290,7 +297,7 @@ func TestDiscoverStashesAndCircles(t *testing.T) {
 		t.Fatalf("members = %v", ms)
 	}
 	m := h.do("POST", "/v1/circles/"+id+"/messages", bob, map[string]any{"body": "Book II hit hard", "post_id": "meditations-marcus-aurelius--01"}, 201)
-	h.do("POST", "/v1/circles/"+id+"/messages", bob, map[string]any{"body": "x", "post_id": "nhs-sleep-tips--01"}, 404) // another book's idea
+	h.do("POST", "/v1/circles/"+id+"/messages", bob, map[string]any{"body": "x", "post_id": "nhs-sleep-tips--01"}, 400) // another book's idea
 	h.do("POST", "/v1/circles/"+id+"/messages", ada, map[string]any{"body": "Same"}, 201)
 	if msgs := list(h.do("GET", "/v1/circles/"+id+"/messages", ada, nil, 200), "messages"); len(msgs) != 2 || msgs[0].(map[string]any)["body"] != "Book II hit hard" {
 		t.Fatalf("messages = %v", msgs)

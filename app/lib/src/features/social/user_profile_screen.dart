@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../blocks/block_actions.dart';
 import '../premium/premium_screen.dart';
@@ -153,13 +154,7 @@ class ProfileHeader extends ConsumerWidget {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                radius: 28,
-                child: Text(
-                  name.isEmpty ? '?' : name.characters.first.toUpperCase(),
-                  style: theme.textTheme.titleLarge,
-                ),
-              ),
+              PersonAvatar(name: name, radius: 28),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(

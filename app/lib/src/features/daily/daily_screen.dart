@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/repository.dart';
+import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
 
@@ -68,45 +69,36 @@ class DailyBanner extends ConsumerWidget {
     if (card == null) return const SizedBox.shrink();
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
+    final amber = Candlelight.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
-      child: Material(
-        color: scheme.primaryContainer,
-        borderRadius: BorderRadius.circular(20),
+      child: Card(
         child: InkWell(
-          borderRadius: BorderRadius.circular(20),
           onTap: () => context.push('/daily'),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 12, 12, 12),
             child: Row(
               children: [
-                Icon(Icons.wb_sunny_outlined, color: scheme.onPrimaryContainer),
+                Icon(Icons.wb_sunny_outlined, color: amber.amberText),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        "TODAY'S IDEA",
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: scheme.onPrimaryContainer,
-                          letterSpacing: 1.1,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
+                      const CategoryTag("Today's idea"),
+                      const SizedBox(height: 4),
                       Text(
                         card.title,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          color: scheme.onPrimaryContainer,
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontSize: 18,
                         ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right, color: scheme.onPrimaryContainer),
+                Icon(Icons.chevron_right, color: scheme.onSurfaceVariant),
               ],
             ),
           ),

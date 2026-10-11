@@ -48,7 +48,7 @@ function Invite() {
       <div className="panel bg-accent-soft p-5">
         <p className="font-semibold">You both get {data.reward_days} days of Premium</p>
         <p className="mt-1 text-sm text-muted">
-          When a friend joins with your link and reads their first idea, you each get {data.reward_days} free days of
+          When a friend joins with your link and reads on three different days, you each get {data.reward_days} free days of
           Premium.
         </p>
       </div>

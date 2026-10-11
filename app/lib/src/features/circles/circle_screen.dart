@@ -1,3 +1,4 @@
+import '../../theme.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -456,6 +457,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                 ),
                 const SizedBox(width: 4),
                 IconButton.filled(
+                  style: amberIconButtonStyle,
                   tooltip: 'Send',
                   onPressed: _sending ? null : _send,
                   icon: const Icon(Icons.send),
@@ -495,10 +497,7 @@ class _MessageTile extends StatelessWidget {
                 : () => context.push(
                     '/users/${Uri.encodeComponent(m.author.handle)}',
                   ),
-            child: CircleAvatar(
-              radius: 16,
-              child: Text(name.characters.first.toUpperCase()),
-            ),
+            child: PersonAvatar(name: name, radius: 16),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -614,9 +613,7 @@ class _MembersSheet extends ConsumerWidget {
               for (final m in list)
                 ListTile(
                   key: ValueKey('member-${m.id}'),
-                  leading: CircleAvatar(
-                    child: Text(m.name.characters.first.toUpperCase()),
-                  ),
+                  leading: PersonAvatar(name: m.name),
                   title: Text(m.name),
                   subtitle: Text(
                     m.joinedAt == null

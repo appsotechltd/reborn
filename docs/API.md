@@ -154,7 +154,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/daily` | optional | | `{"date":"2026-10-10","card":Card}` |
 | `GET /v1/cards/{id}` | none | | `Card` |
 | `GET /v1/cards` | none | `?ids=a,b,c` (max 100) | `{"cards":[Card]}` |
-| `POST /v1/cards/{id}/view` | required | | `204` (records reading, used by the feed) |
+| `POST /v1/cards/{id}/view` | required | | `204`. Records that the user read the card: counts toward the streak, daily goal and referral rewards, once per card. Call when a card is opened, or after a timeline post has been on screen for 8 seconds |
 | `GET /v1/sources` | none | `?topic=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards |
 | `GET /v1/sources/{id}` | optional | | `{"source":Source,"cards":[Card],"follow":{"followers","is_following"}}`. `Source` has the fields in content/SCHEMA.md |
 | `GET /v1/sitemap` | none | | `{"cards":[{"id","updated_at"}],"sources":[{"id","updated_at"}],"topics":["business",...]}` for building sitemaps |
@@ -167,7 +167,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `POST /v1/auth/forgot` | none | `{"email"}` | `202` whether or not the account exists. Emails a link to `WEB_BASE_URL/reset-password?token=…` that works once, for 1 hour |
 | `POST /v1/auth/reset` | none | `{"token","password"}` | `{"token","user":User}` (signs in). `400 invalid_token` when used or expired |
 | `GET /v1/timeline` | optional | `?topics=a,b&cursor=&limit=20` | `{"posts":[Post],"next_cursor":"..."|null}`. Posts from the user's topics, followed books and authors, and posts favourited by people they follow (everything when none are set). Unseen first, then newest first. The cursor pins the first page's time, so marking posts seen while scrolling doesn't shift later pages |
-| `POST /v1/seen` | required | `{"post_ids":[...]}` (max 100) | `204`. Call as posts scroll into view |
+| `POST /v1/seen` | required | `{"post_ids":[...]}` (max 100) | `204`. Call as posts scroll into view. Seen posts drop below unseen ones but do not count as read |
 | `GET /v1/posts/{id}` | optional | | `Post` |
 | `PUT /v1/posts/{id}/favorite` | required | | `204` |
 | `DELETE /v1/posts/{id}/favorite` | required | | `204` |
@@ -226,7 +226,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 `Notification` is `{"id","kind","text","actor":Profile|null,"post_id","comment_id","circle_id","read_at","created_at"}`;
 `kind` is `daily`, `reply`, `follow`, `circle` or `reward`. Push messages carry the same ids in their data.
 `notify` on the user turns each kind of push on or off. The daily push goes once a day after 8am local time.
-A referral rewards both people with `reward_days` of premium once the new user reads their first idea.
+A referral rewards both people with `reward_days` of premium once the new user has read ideas on three different days (opening a card, or reading it in the timeline for a few seconds; scrolling past does not count).
 
 ### Blocking
 
@@ -260,7 +260,7 @@ A circle is a discussion group for one book (source), up to 50 members.
 | `POST /v1/circles/{id}/join` | required | | `Circle`. `409 circle_full` |
 | `POST /v1/circles/{id}/leave` | required | | `204`. The oldest member takes over from a leaving owner; an empty circle is deleted |
 | `GET /v1/circles/{id}/messages` | member | `?before=<RFC 3339>&limit=50` | `{"messages":[CircleMessage]}`, oldest first |
-| `POST /v1/circles/{id}/messages` | member | `{"body"(1-2000),"post_id"?}` | `CircleMessage` (201). Notifies the other members |
+| `POST /v1/circles/{id}/messages` | member | `{"body"(1-2000),"post_id"?}` | `CircleMessage` (201). Notifies the other members. `post_id` must be an idea from the circle's book, else `400 wrong_book` |
 | `DELETE /v1/circles/{id}/messages/{msgId}` | required | | `204`. The author, the circle owner or a moderator |
 
 `Circle` is `{"id","name","description","source":{"id","title"},"owner":Profile|null,"members","is_member","role","created_at"}`.

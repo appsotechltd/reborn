@@ -85,8 +85,8 @@ class InviteScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'When someone joins with your link and starts reading, '
-                    'you both get free Premium.',
+                    'When someone joins with your link and reads on three '
+                    'different days, you both get free Premium.',
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 24),

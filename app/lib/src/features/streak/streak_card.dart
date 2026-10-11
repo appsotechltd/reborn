@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
+import '../../theme.dart';
 
 /// Current streak, today's ideas against the daily goal, and the last 7
 /// days. Shown on the timeline and profile when signed in.
@@ -44,7 +45,9 @@ class StreakView extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.local_fire_department,
-                    color: s.current > 0 ? Colors.deepOrange : scheme.outline,
+                    color: s.current > 0
+                        ? Candlelight.of(context).react
+                        : scheme.outline,
                     size: 32,
                   ),
                   Text('${s.current}', style: theme.textTheme.titleLarge),

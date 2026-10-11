@@ -27,7 +27,7 @@ export function JoinView({ code }: { code: string }) {
       </p>
       {valid ? (
         <p className="mt-4 text-sm text-muted">
-          Join with this invite and you&apos;ll both get free Premium days once you read your first idea.
+          Join with this invite and you&apos;ll both get free Premium days once you&apos;ve read on three different days.
         </p>
       ) : null}
       <div className="mt-8 flex flex-wrap justify-center gap-3">

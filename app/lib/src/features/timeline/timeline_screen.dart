@@ -1,3 +1,4 @@
+import '../../theme.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -39,7 +40,11 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   void initState() {
     super.initState();
     final RebornRepository repo = ref.read(repositoryProvider);
-    _tracker = SeenTracker(onFlush: repo.markSeen, dwell: widget.dwell);
+    _tracker = SeenTracker(
+      onFlush: repo.markSeen,
+      onRead: repo.recordView,
+      dwell: widget.dwell,
+    );
   }
 
   @override
@@ -112,7 +117,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     });
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Reborn'),
+        title: const Wordmark(),
         actions: [
           IconButton(
             tooltip: 'Swipe through ideas',

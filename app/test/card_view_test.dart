@@ -56,10 +56,10 @@ void main() {
     expect(find.text(card.title), findsOneWidget);
     expect(find.text(card.body), findsOneWidget);
     expect(find.textContaining('Begin the morning'), findsOneWidget);
-    expect(find.text('Apply it'), findsOneWidget);
+    expect(find.text('APPLY IT'), findsOneWidget);
     expect(find.text(card.applyIt), findsOneWidget);
     expect(find.text(card.credit), findsOneWidget);
-    expect(find.text('Mindfulness & Philosophy'), findsOneWidget);
+    expect(find.text('MINDFULNESS & PHILOSOPHY'), findsOneWidget);
     // No disclaimer on a non-health card.
     expect(find.byKey(const ValueKey('card-disclaimer')), findsNothing);
   });
@@ -128,10 +128,10 @@ void main() {
       find.bySemanticsLabel('Play animated explainer: ${card.title}'),
       findsOneWidget,
     );
-    expect(
-      find.text('Animated explainer · 49 s'),
-      findsOneWidget,
-    );
+    // Video posts carry the kicker, title and duration on the film.
+    expect(find.text('ANIMATED EXPLAINER'), findsOneWidget);
+    expect(find.text(card.title), findsOneWidget);
+    expect(find.text('0:49'), findsOneWidget);
     // The credit stays on the card even with a video.
     expect(find.text(card.credit), findsOneWidget);
   });
