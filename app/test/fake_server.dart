@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
@@ -104,6 +105,7 @@ Future<ProviderContainer> pumpApp(
   PushMessaging? push,
   String? timezone,
   Size size = const Size(800, 2000),
+  List<Override> overrides = const [],
 }) async {
   tester.view.physicalSize = size;
   tester.view.devicePixelRatio = 1;
@@ -149,6 +151,7 @@ Future<ProviderContainer> pumpApp(
         giftStoreProvider.overrideWithValue(giftStore ?? const NoGiftStore()),
         pushMessagingProvider.overrideWithValue(push),
         deviceTimezoneProvider.overrideWithValue(() async => timezone),
+        ...overrides,
       ],
       child: const RebornApp(),
     ),
