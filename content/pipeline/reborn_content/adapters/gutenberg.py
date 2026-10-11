@@ -151,7 +151,8 @@ def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
     gid = entry["gutenberg_id"]
     urls = [PRIMARY.format(id=gid)]
     if entry.get("mirror"):
-        urls.append(MIRROR.format(path=entry["mirror"]))
+        # prefer_mirror: the cards were checked against the mirror's edition, which can differ from gutenberg.org's
+        urls.insert(0 if entry.get("prefer_mirror") else 1, MIRROR.format(path=entry["mirror"]))
     url, data = http.get_first(urls, cache_dir)
     try:
         text = data.decode("utf-8")

@@ -445,6 +445,7 @@ licence = "public-domain"
 [[source]]
 id = "montessori-own-handbook"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 29635
 mirror = "Dr.-Montessori-s-Own-Handbook_29635/master/29635-8.txt"
 start = "DR. MONTESSORI'S OWN HANDBOOK"
@@ -454,6 +455,7 @@ licence = "public-domain"
 [[source]]
 id = "discourses-on-art-reynolds"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 2176
 mirror = "Seven-Discourses-on-Art_2176/master/2176.txt"
 start = "TO THE KING"
@@ -464,6 +466,7 @@ licence = "public-domain"
 [[source]]
 id = "art-of-writing-stevenson"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 492
 mirror = "Essays-in-the-Art-of-Writing_492/master/492-0.txt"
 start = "ON SOME TECHNICAL ELEMENTS OF STYLE IN LITERATURE"
@@ -474,6 +477,7 @@ licence = "public-domain"
 [[source]]
 id = "plutarchs-lives"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 674
 mirror = "Plutarch-Lives-of-the-noble-Grecians-and-Romans_674/master/674.txt"
 start = "THESEUS\n\nAs geographers"
@@ -484,6 +488,7 @@ licence = "public-domain"
 [[source]]
 id = "cyropaedia-xenophon"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 2085
 mirror = "Cyropaedia--The-Education-of-Cyrus_2085/master/2085.txt"
 start = "BOOK I\n\n[C.1]"
@@ -493,6 +498,7 @@ licence = "public-domain"
 [[source]]
 id = "ecclesiastes-kjv"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 8021
 mirror = "The-Bible-King-James-Version-Book-21-Ecclesiastes_8021/master/8021.txt"
 verses = "Ecclesiastes"
@@ -509,6 +515,7 @@ licence = "public-domain"
 [[source]]
 id = "gospel-of-buddha-carus"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 35895
 mirror = "The-Gospel-of-Buddha-Compiled-from-Ancient-Records_35895/master/35895-0.txt"
 start = "I.\n\nREJOICE!"
@@ -525,6 +532,7 @@ licence = "ogl-3.0"
 [[source]]
 id = "how-we-think-dewey"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 37423
 mirror = "How-We-Think_37423/master/37423-8.txt"
 start = "PART ONE: THE PROBLEM OF TRAINING THOUGHT"
@@ -552,6 +560,7 @@ licence = "ogl-3.0"
 [[source]]
 id = "mental-efficiency-bennett"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 23347
 mirror = "Mental-Efficiency-and-Other-Hints-to-Men-and-Women_23347/master/23347-8.txt"
 start = "I\n\nMENTAL EFFICIENCY\n\n\nTHE APPEAL"
@@ -568,6 +577,7 @@ licence = "original-summary"
 [[source]]
 id = "talks-to-teachers-james"
 adapter = "gutenberg"
+prefer_mirror = true
 gutenberg_id = 16287
 mirror = "Talks-To-Teachers-On-Psychology--And-To-Students-On-Some-Of-Life-s-Ideals_16287/master/16287-8.txt"
 start = "*       *       *       *       *"
