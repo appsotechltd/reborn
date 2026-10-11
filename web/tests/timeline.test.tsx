@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { caughtUpIndex, Timeline } from "@/components/Timeline";
 import { AuthProvider } from "@/lib/auth";
@@ -71,6 +71,9 @@ describe("<Timeline>", () => {
 
 describe("<Timeline> endless loading", () => {
   afterEach(() => {
+    // Restore even when a test fails midway, so fake timers and spies never leak into the next test.
+    vi.useRealTimers();
+    vi.restoreAllMocks();
     window.localStorage.clear();
     vi.unstubAllGlobals();
   });
@@ -169,18 +172,19 @@ describe("<Timeline> endless loading", () => {
       </AuthProvider>,
     );
     await screen.findByRole("heading", { name: "Idea 1" });
+    // Let the signed-in refresh settle, then bring the video on screen: it autoplays.
+    await waitFor(() => {
+      act(() => setVisible(container.querySelector("video")!, 1));
+      expect(play).toHaveBeenCalledTimes(1);
+    });
     vi.useFakeTimers();
     const slide = container.querySelector('[data-post-id="example-book--01"]')!;
     act(() => setVisible(slide, 1));
-    act(() => setVisible(container.querySelector("video")!, 1));
-    expect(play).toHaveBeenCalledTimes(1);
     act(() => vi.advanceTimersByTime(READ_AFTER_MS - 100));
     expect(views).toHaveLength(0);
     act(() => vi.advanceTimersByTime(200));
     await act(async () => {});
     expect(views).toHaveLength(1);
     expect(views[0]).toMatch(/\/v1\/cards\/example-book--01\/view$/);
-    vi.useRealTimers();
-    play.mockRestore();
   });
 });
