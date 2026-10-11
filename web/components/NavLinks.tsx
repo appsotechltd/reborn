@@ -19,6 +19,7 @@ export const NAV_LINKS: { href: string; label: string; show: Show }[] = [
   { href: "/sources", label: "Sources", show: "md" },
   { href: "/review", label: "Review", show: "lg" },
   { href: "/ask", label: "Ask", show: "lg" },
+  { href: "/ai", label: "Reborn AI", show: "menu" },
   { href: "/stashes", label: "Stashes", show: "menu" },
   { href: "/circles", label: "Circles", show: "menu" },
 ];

@@ -1,4 +1,10 @@
 import type {
+  AIConversation,
+  AIMessage,
+  AIStatus,
+  AITopUp,
+  AITurnResponse,
+  AIWallet,
   AdminStats,
   BlockedUser,
   BlockKind,
@@ -168,6 +174,26 @@ export async function apiRequest<T>(
   } catch {
     throw new ApiError(res.status, "invalid_response", "The server sent a response we couldn't read.");
   }
+}
+
+/** POSTs multipart form data (a file upload) and parses the JSON reply. */
+export async function uploadRequest<T>(
+  baseUrl: string,
+  path: string,
+  form: FormData,
+  token: string | null,
+  fetchImpl: typeof fetch = fetch,
+): Promise<T> {
+  const headers: Record<string, string> = { Accept: "application/json" };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  let res: Response;
+  try {
+    res = await fetchImpl(buildUrl(baseUrl, path), { method: "POST", headers, body: form });
+  } catch {
+    throw new ApiError(0, "network_error", "Couldn't reach the Reborn server. Check your connection and try again.");
+  }
+  if (!res.ok) throw await errorFromResponse(res);
+  return (await res.json()) as T;
 }
 
 /** Typed client for every endpoint in docs/API.md. */
@@ -359,6 +385,31 @@ export function createApiClient(
     // AI guide
     chat: (messages: ChatMessage[]) =>
       req<ChatResponse>("/v1/agent/chat", { method: "POST", body: { messages } }),
+
+    // Reborn AI (premium)
+    aiStatus: () => req<AIStatus>("/v1/ai"),
+    aiChat: (message: string, conversationId?: string | null) =>
+      req<AITurnResponse>("/v1/ai/chat", {
+        method: "POST",
+        body: conversationId ? { conversation_id: conversationId, message } : { message },
+      }),
+    /** Sends a recorded voice message; the server transcribes and answers it. */
+    aiVoice: (audio: Blob, filename: string, conversationId?: string | null) => {
+      const form = new FormData();
+      form.append("audio", audio, filename);
+      if (conversationId) form.append("conversation_id", conversationId);
+      return uploadRequest<AITurnResponse>(baseUrl, "/v1/ai/voice", form, getToken(), fetchImpl);
+    },
+    aiSpeech: (messageId: string) =>
+      req<{ url: string; units: number; wallet: AIWallet }>(`/v1/ai/messages/${enc(messageId)}/speech`, { method: "POST" }),
+    aiConversations: () => req<{ conversations: AIConversation[] }>("/v1/ai/conversations"),
+    aiConversation: (id: string) =>
+      req<{ conversation: AIConversation; messages: AIMessage[] }>(`/v1/ai/conversations/${enc(id)}`),
+    deleteAIConversation: (id: string) => req<void>(`/v1/ai/conversations/${enc(id)}`, { method: "DELETE" }),
+    aiUsage: () => req<{ wallet: AIWallet; usage: { kind: string; units: number; created_at: string }[] }>("/v1/ai/usage"),
+    topUpCheckout: (pack: string) =>
+      req<{ topup_id: string; url: string }>("/v1/ai/topups/checkout", { method: "POST", body: { pack } }),
+    topUp: (id: string) => req<AITopUp>(`/v1/ai/topups/${enc(id)}`),
   };
 }
 

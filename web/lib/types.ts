@@ -454,3 +454,90 @@ export interface AdminStats {
   daily: { day: string; signups: number; active: number }[] | null;
   top_posts: { id: string; title: string; score: number }[] | null;
 }
+
+// --- Reborn AI -----------------------------------------------------------------
+
+export type AIKind = "text" | "chart" | "voice" | "sketch" | "illustration" | "picture";
+
+export interface AIWallet {
+  monthly_units: number;
+  allowance_used: number;
+  allowance_left: number;
+  topup_units: number;
+  remaining: number;
+  resets_at: string;
+}
+
+export interface AIRate {
+  kind: AIKind;
+  units: number;
+  per: string;
+}
+
+export interface UnitPack {
+  id: string;
+  name: string;
+  units: number;
+  amount_cents: number;
+  currency: string;
+  product_id: string;
+}
+
+export interface AIStatus {
+  available: boolean;
+  premium: boolean;
+  wallet: AIWallet | null;
+  rates: AIRate[];
+  packs: UnitPack[];
+  providers: { stripe: boolean; apple: boolean; google: boolean };
+}
+
+export interface AIChart {
+  kind: "bar" | "line" | "pie";
+  title: string;
+  unit?: string;
+  labels: string[];
+  series: { name: string; values: number[] }[];
+}
+
+export type AIAttachment =
+  | { type: "image"; style: "sketch" | "illustration" | "picture"; url: string; alt: string; width: number; height: number }
+  | { type: "chart"; alt: string; chart: AIChart };
+
+export interface AIMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  voice: boolean;
+  citations: Card[];
+  attachments: AIAttachment[];
+  units: number;
+  created_at: string;
+}
+
+export interface AIConversation {
+  id: string;
+  title: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AITurnResponse {
+  conversation: AIConversation;
+  user_message: AIMessage;
+  message: AIMessage;
+  wallet: AIWallet;
+  transcript?: string;
+}
+
+export interface AITopUp {
+  id: string;
+  pack: string;
+  units: number;
+  amount_cents: number;
+  currency: string;
+  provider: string;
+  status: "pending" | "paid" | "refunded";
+  created_at: string;
+  paid_at: string | null;
+}
