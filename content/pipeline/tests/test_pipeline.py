@@ -156,6 +156,7 @@ class QuoteMatchingTest(unittest.TestCase):
 
     def test_typography_insensitive(self):
         self.assertEqual(normalise("It’s “so”—done"), normalise("It's \"so\" - done"))
+        self.assertEqual(normalise("‘Begin,’ said he"), normalise('"Begin," said he'))
         hit = find_quote("Theophrastus—such a comparison as one would make—says it's so.", self.PASSAGES)
         self.assertEqual(hit.locator, "Book II ¶2")
 
@@ -249,6 +250,12 @@ class SchemaTest(unittest.TestCase):
         dup["title"] = "Another"
         doc["cards"].append(dup)
         self.assertIn("duplicate card id", " ".join(self.check(doc).errors))
+
+    def test_double_quote_marks_in_quote_warn(self):
+        doc = copy.deepcopy(VALID)
+        doc["cards"][0]["quote"] = '"Begin, friend," said he'
+        self.assertIn("double quote marks", " ".join(self.check(doc).warnings))
+        self.assertEqual(self.check(VALID).warnings, [])
 
     def test_source_must_be_registered_with_same_licence(self):
         self.assertIn("isn't in", " ".join(self.check(VALID, reg={}).errors))
