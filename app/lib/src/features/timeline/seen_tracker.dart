@@ -54,6 +54,18 @@ class SeenTracker {
     }
   }
 
+  String? _focused;
+
+  /// The post filling the screen in the swipe feed, or null for none: it
+  /// counts as fully visible and the previous one as gone.
+  void focus(String? id) {
+    if (id == _focused) return;
+    final old = _focused;
+    _focused = id;
+    if (old != null) update(old, 0);
+    if (id != null) update(id, 1);
+  }
+
   void _markRead(String id) {
     _readTimers.remove(id);
     if (_read.add(id)) onRead!(id);
@@ -87,6 +99,7 @@ class SeenTracker {
     }
     _timers.clear();
     _readTimers.clear();
+    _focused = null;
     flush();
   }
 }

@@ -65,7 +65,11 @@ class IdeaCardView extends ConsumerWidget {
           const SizedBox(height: 10),
           // A video post carries its title on the film itself.
           if (card.explainer != null) ...[
-            ExplainerPlayer(explainer: card.explainer!, title: card.title),
+            ExplainerPlayer(
+              explainer: card.explainer!,
+              title: card.title,
+              autoplayId: card.id,
+            ),
             const SizedBox(height: 16),
           ] else ...[
             Text(card.title, style: theme.textTheme.headlineSmall),
@@ -109,10 +113,8 @@ class _Pill extends StatelessWidget {
       decoration: ShapeDecoration(color: c.amber, shape: const StadiumBorder()),
       child: Text(
         text,
-        style: Theme.of(context).textTheme.labelMedium?.copyWith(
-          color: c.onAmber,
-          fontWeight: FontWeight.w600,
-        ),
+        style: Theme.of(context).textTheme.labelMedium
+            ?.copyWith(color: c.onAmber, fontWeight: FontWeight.w600),
       ),
     );
   }
@@ -210,19 +212,13 @@ class _Disclaimer extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(
-            Icons.health_and_safety_outlined,
-            size: 18,
-            color: c.amberText,
-          ),
+          Icon(Icons.health_and_safety_outlined, size: 18, color: c.amberText),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
               text,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: scheme.onSurface,
-                height: 1.45,
-              ),
+              style: Theme.of(context).textTheme.bodySmall
+                  ?.copyWith(color: scheme.onSurface, height: 1.45),
             ),
           ),
         ],

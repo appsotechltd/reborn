@@ -48,6 +48,68 @@ class PostView extends ConsumerWidget {
   }
 }
 
+/// A post filling one page of the swipe feed: optional [header] widgets and
+/// the card scroll inside the page (a short post doesn't scroll at all, so
+/// the swipe goes straight to the feed), and the action bar stays pinned at
+/// the bottom so reacting, favouriting, comments and share are always in
+/// reach.
+class SwipePostPage extends ConsumerWidget {
+  const SwipePostPage({
+    super.key,
+    required this.post,
+    this.header = const [],
+    this.footer,
+  });
+
+  final Post post;
+  final List<Widget> header;
+
+  /// Under the action bar, e.g. a swipe hint on the first page.
+  final Widget? footer;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final p = watchPost(ref, post);
+    final reason = p.reason;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Expanded(
+          child: SingleChildScrollView(
+            // Not always-scrollable: a post that fits leaves drags to the
+            // page view.
+            physics: const ClampingScrollPhysics(),
+            padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ...header,
+                Card(
+                  margin: EdgeInsets.zero,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (reason != null) PostReasonLine(reason: reason),
+                      AuthorByline(card: p.card),
+                      IdeaCardView(
+                        card: p.card,
+                        showShare: false,
+                        padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        PostActionBar(post: p),
+        ?footer,
+      ],
+    );
+  }
+}
+
 /// The small "why you're seeing this" line above a timeline post.
 class PostReasonLine extends StatelessWidget {
   const PostReasonLine({super.key, required this.reason});
@@ -277,13 +339,9 @@ class _ReactionChip extends StatelessWidget {
         message: reaction.label,
         child: Material(
           key: ValueKey('reaction-${reaction.name}'),
-          color: selected
-              ? react.withValues(alpha: 0.12)
-              : Colors.transparent,
+          color: selected ? react.withValues(alpha: 0.12) : Colors.transparent,
           shape: StadiumBorder(
-            side: BorderSide(
-              color: selected ? react : scheme.outlineVariant,
-            ),
+            side: BorderSide(color: selected ? react : scheme.outlineVariant),
           ),
           child: InkWell(
             customBorder: const StadiumBorder(),
