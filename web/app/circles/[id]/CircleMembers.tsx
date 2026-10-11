@@ -55,7 +55,7 @@ export function CircleMembers({ circleId, version = 0 }: { circleId: string; ver
               <Link href={`/u/${m.handle}`} className="chip min-h-8 gap-1 hover:text-fg">
                 {m.display_name}
                 {m.role === "owner" ? (
-                  <span className="font-semibold text-accent">
+                  <span className="font-semibold text-accent-text">
                     <span aria-hidden="true"> ★</span> owner
                   </span>
                 ) : null}

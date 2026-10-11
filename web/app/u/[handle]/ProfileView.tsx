@@ -35,7 +35,7 @@ export function ProfileView({ handle }: { handle: string }) {
       <header className="mx-auto max-w-read text-center">
         <span
           aria-hidden="true"
-          className="mx-auto grid size-16 place-items-center rounded-full bg-accent text-2xl font-bold text-accent-fg"
+          className="mx-auto grid size-16 place-items-center rounded-full bg-oxblood text-2xl font-bold text-oxblood-fg"
         >
           {profile.display_name.slice(0, 1).toUpperCase()}
         </span>

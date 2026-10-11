@@ -100,7 +100,7 @@ function Chat() {
             </li>
           ) : (
             <li key={i}>
-              <div className="font-serif text-lg leading-relaxed">
+              <div className="text-lg leading-relaxed">
                 <span className="sr-only">Guide: </span>
                 <CitedText text={t.content} citations={t.citations ?? []} />
               </div>
@@ -110,7 +110,7 @@ function Chat() {
                   <ol className="mt-2 grid gap-2">
                     {t.citations.map((c, ci) => (
                       <li key={c.id} className="panel flex gap-3 p-3 text-sm">
-                        <span className="font-semibold text-accent">{ci + 1}</span>
+                        <span className="font-semibold text-accent-text">{ci + 1}</span>
                         <span className="min-w-0">
                           <Link href={`/ideas/${c.id}`} className="font-semibold hover:underline">
                             {c.title}

@@ -86,7 +86,7 @@ function Browse({ source }: { source: string }) {
           </label>
           <select
             id="circle-book"
-            className="field min-h-10 py-1 text-sm"
+            className="field min-h-10 py-1 text-sm pointer-coarse:min-h-11"
             value={source}
             onChange={(e) => router.replace(e.target.value ? `/circles?source=${encodeURIComponent(e.target.value)}` : "/circles")}
           >

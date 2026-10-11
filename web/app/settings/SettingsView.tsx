@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { ErrorNote, RequireAuth } from "@/components/SignInPrompt";
+import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { TOPICS } from "@/lib/content";
@@ -17,6 +18,9 @@ export function SettingsView() {
     <div className="mx-auto max-w-read">
       <h1 className="font-serif text-4xl font-semibold tracking-tight">Settings</h1>
       <div className="mt-8">
+        <ThemeSwitch />
+      </div>
+      <div className="mt-8 border-t border-line pt-8">
         <RequireAuth>
           {user ? (
             <>
@@ -260,7 +264,7 @@ function BlockedList() {
           {data.map((b) => (
             <li key={b.id} className="flex items-center justify-between gap-3 py-3">
               <span className="min-w-0">
-                <Link href={`/u/${b.handle}`} className="font-semibold hover:underline">{b.display_name}</Link>{" "}
+                <Link href={`/u/${b.handle}`} className="inline-flex items-center font-semibold hover:underline pointer-coarse:min-h-11">{b.display_name}</Link>{" "}
                 <span className="text-muted">@{b.handle} · {b.kind === "block" ? "Blocked" : "Muted"}</span>
               </span>
               <button type="button" className="btn btn-small shrink-0" disabled={busy !== null} onClick={() => undo(b)}>

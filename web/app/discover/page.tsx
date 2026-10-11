@@ -52,16 +52,16 @@ export default async function DiscoverPage() {
             </section>
           ) : null}
 
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             <section aria-labelledby="books-title">
               <h2 id="books-title" className="font-serif text-2xl font-semibold">
                 Popular books
               </h2>
               <ol className="mt-4 divide-y divide-line border-y border-line">
                 {data.books.map((b) => (
-                  <li key={b.id} className="flex items-baseline justify-between gap-3 py-3">
+                  <li key={b.id} className="relative flex items-baseline justify-between gap-3 py-3">
                     <span className="min-w-0">
-                      <Link href={`/sources/${b.id}`} className="font-semibold hover:underline">
+                      <Link href={`/sources/${b.id}`} className="font-semibold after:absolute after:inset-0 hover:underline">
                         {b.title}
                       </Link>
                       <span className="block truncate text-sm text-muted">{formatAuthors(b.authors)}</span>
@@ -79,9 +79,9 @@ export default async function DiscoverPage() {
               </h2>
               <ol className="mt-4 divide-y divide-line border-y border-line">
                 {data.authors.map((a) => (
-                  <li key={a.name} className="flex items-baseline justify-between gap-3 py-3">
+                  <li key={a.name} className="relative flex items-baseline justify-between gap-3 py-3">
                     <span className="min-w-0">
-                      <Link href={authorHref(a.name)} className="font-semibold hover:underline">
+                      <Link href={authorHref(a.name)} className="font-semibold after:absolute after:inset-0 hover:underline">
                         {a.name}
                       </Link>
                       <span className="block text-sm text-muted">

@@ -269,12 +269,12 @@ function CommentItem({
       {user ? (
         <div className="mt-1 flex flex-wrap items-center gap-x-3 text-sm">
           {canReply ? (
-            <button type="button" className="text-muted hover:text-fg hover:underline" onClick={() => setReplying((r) => !r)}>
+            <button type="button" className="inline-flex items-center text-muted hover:text-fg hover:underline pointer-coarse:min-h-11" onClick={() => setReplying((r) => !r)}>
               Reply
             </button>
           ) : null}
           {canDelete ? (
-            <button type="button" className="text-muted hover:text-fg hover:underline" onClick={() => setConfirm("delete")}>
+            <button type="button" className="inline-flex items-center text-muted hover:text-fg hover:underline pointer-coarse:min-h-11" onClick={() => setConfirm("delete")}>
               Delete
             </button>
           ) : null}
@@ -284,7 +284,7 @@ function CommentItem({
                 Reported. Thanks for letting us know.
               </span>
             ) : (
-              <button type="button" className="text-muted hover:text-fg hover:underline" onClick={() => setConfirm("report")}>
+              <button type="button" className="inline-flex items-center text-muted hover:text-fg hover:underline pointer-coarse:min-h-11" onClick={() => setConfirm("report")}>
                 Report
               </button>
             )

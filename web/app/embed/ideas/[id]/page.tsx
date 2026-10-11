@@ -36,7 +36,7 @@ export default async function EmbedIdeaPage({ params }: { params: Promise<{ id: 
         <span>{topicName(card.topic)}</span>
         <Link href="/" target="_blank" rel="noopener" className="font-serif text-base font-semibold normal-case tracking-tight text-fg">
           {SITE_NAME}
-          <span className="text-accent">.</span>
+          <span className="text-accent-text">.</span>
         </Link>
       </p>
       <h1 id="embed-title" className="mt-2 font-serif text-2xl font-semibold leading-snug">
@@ -45,7 +45,7 @@ export default async function EmbedIdeaPage({ params }: { params: Promise<{ id: 
         </Link>
       </h1>
       {card.disclaimer ? (
-        <p role="note" aria-label="Health disclaimer" className="mt-3 rounded-lg border border-warn-border bg-warn px-3 py-2 text-sm text-warn-fg">
+        <p role="note" aria-label="Health disclaimer" className="mt-3 rounded-inset border border-warn-border bg-warn px-3 py-2 text-sm text-warn-fg">
           <strong className="font-semibold">Health note: </strong>
           {card.disclaimer}
         </p>
@@ -55,9 +55,9 @@ export default async function EmbedIdeaPage({ params }: { params: Promise<{ id: 
           <p key={i}>{p}</p>
         ))}
       </div>
-      <div className="mt-4 rounded-lg border-l-4 border-apply-border bg-apply px-4 py-3 text-apply-fg">
-        <p className="text-xs font-bold uppercase tracking-wider">Apply it</p>
-        <p className="mt-1 font-serif">{card.apply_it}</p>
+      <div className="mt-4 rounded-inset bg-surface-2 px-4 py-3">
+        <p className="eyebrow">Apply it</p>
+        <p className="mt-1">{card.apply_it}</p>
       </div>
       <footer className="mt-4 border-t border-line pt-3 text-xs text-muted" data-testid="card-credit">
         <p>{card.credit}</p>

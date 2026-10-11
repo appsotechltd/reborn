@@ -65,7 +65,7 @@ export function StreakCard({ streak }: { streak: Streak }) {
           );
         })}
       </ol>
-      <Link href="/settings#goal" className="text-xs text-muted hover:underline">
+      <Link href="/settings#goal" className="inline-flex items-center text-xs text-muted hover:underline pointer-coarse:min-h-11">
         Change goal
       </Link>
     </section>

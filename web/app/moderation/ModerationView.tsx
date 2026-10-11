@@ -205,8 +205,8 @@ function QueueItem({ c, onDecided }: { c: Contribution; onDecided: (c: Contribut
         {paragraphs(c.body).map((p, i) => <p key={i}>{p}</p>)}
       </div>
       <WordCounter text={c.body} />
-      <div className="mt-4 rounded-lg border-l-4 border-apply-border bg-apply px-4 py-3 text-apply-fg">
-        <strong>Apply it:</strong> {c.apply_it}
+      <div className="mt-4 rounded-inset bg-surface-2 px-4 py-3">
+        <strong className="text-accent-text">Apply it:</strong> {c.apply_it}
       </div>
       {c.quiz ? (
         <div className="mt-4 text-sm">
