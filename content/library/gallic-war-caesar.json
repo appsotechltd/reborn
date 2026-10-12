@@ -1,0 +1,1322 @@
+{
+  "source": {
+    "id": "gallic-war-caesar",
+    "title": "\"De Bello Gallico\" and Other Commentaries",
+    "authors": [
+      "Julius Caesar"
+    ],
+    "translator": "W. A. McDevitte and W. S. Bohn",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/10657",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Julius Caesar, \"De Bello Gallico\" and Other Commentaries (trans. W. A. McDevitte and W. S. Bohn), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": -50,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "McDevitte and Bohn translation (1869), Everyman's Library edition. The volume holds the Gallic War (Books I-VII by Caesar, Book VIII by Aulus Hirtius) and the Civil War (Books I-III). The passage file reuses locators such as 'Book I' for both works, so each card body names which war it comes from."
+  },
+  "cards": [
+    {
+      "id": "gallic-war-caesar--01",
+      "topic": "lives-history",
+      "tags": [
+        "julius-caesar",
+        "gaul",
+        "framing",
+        "propaganda"
+      ],
+      "title": "Whoever draws the map first shapes how everyone sees the story",
+      "body": "Caesar's account of his war in Gaul opens like a geography lesson. Gaul, he says, is divided into three parts: the Belgae in the north, the Aquitani in the southwest, and the Celts, whom Romans call Gauls, in between. He wrote about 50 BC, after eight years of fighting in what is now France, Belgium and Switzerland.\n\nThat calm, orderly opening does political work. Before a single battle, the reader sees Gaul as a tidy territory, already sorted into Roman categories, waiting to be managed. The many peoples, alliances and rivalries come later, framed by his map.\n\nThe lesson for us: the first framing of a problem tends to stick. When someone opens a meeting or a report with their own map of the situation, notice whose categories you are being asked to use.",
+      "quote": "All Gaul is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in ours Gauls, the third.",
+      "locator": "Book I ¶1",
+      "apply_it": "Next time you read a report or proposal, look at its first paragraph and ask: whose way of dividing up the problem is this?",
+      "quiz": {
+        "question": "How does Caesar open his account of the Gallic War?",
+        "options": [
+          "With a speech to his soldiers",
+          "With a description of Gaul divided into three parts",
+          "With his crossing of the Rhine",
+          "With a prayer to the gods"
+        ],
+        "answer": 1,
+        "explanation": "He begins with a neat three-part map of Gaul, framing the land in Roman terms before the story starts."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--02",
+      "topic": "lives-history",
+      "tags": [
+        "helvetii",
+        "commitment",
+        "migration",
+        "risk"
+      ],
+      "title": "Burning your boats makes you brave, but it also leaves you nowhere to go",
+      "body": "In 58 BC the Helvetii, a people living in what is now Switzerland, decided to migrate west in search of more land. Before setting out they burned their own twelve towns, about four hundred villages and all the grain they could not carry. Caesar says they did it so that, with no hope of going home, they would face every danger more readily.\n\nIt was a bold commitment device, and it failed. Caesar blocked their route, defeated them, and the survivors were sent back to rebuild what they had burned.\n\nCutting off retreat can focus the mind. But it only works if the plan ahead is sound. Before you make a choice impossible to undo, test the road you are committing to.",
+      "quote": "that after destroying the hope of a return home, they might be the more ready for undergoing all dangers.",
+      "locator": "Book I ¶5",
+      "apply_it": "Before making an irreversible commitment this month, write down what you will do if the plan fails. If the answer is 'nothing', slow down.",
+      "quiz": {
+        "question": "Why did the Helvetii burn their own towns before migrating?",
+        "options": [
+          "To stop the Romans using them",
+          "As a religious sacrifice",
+          "Because of a plague",
+          "So that, with no way home, they would face danger more readily"
+        ],
+        "answer": 3,
+        "explanation": "Caesar says they destroyed the hope of return so they would be readier to face every danger. Their campaign still failed."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--03",
+      "topic": "lives-history",
+      "tags": [
+        "speed",
+        "engineering",
+        "helvetii",
+        "surprise"
+      ],
+      "title": "Doing in one day what others need twenty for changes the whole contest",
+      "body": "The migrating Helvetii spent twenty days ferrying their people across the Saone river, in what is now eastern France, on rafts and lashed-together boats. Caesar caught the last group still on the near bank and attacked them. Then he had his army build a bridge and cross in a single day.\n\nCaesar reports that this speed shook the Helvetii so badly that they sent envoys to negotiate. Nothing had changed in numbers, but their sense of what was possible had.\n\nSpeed is not only about finishing sooner. When you move much faster than people expect, they start recalculating, and often lose confidence in their own plans. In work, a fast, well-made first draft or prototype can shift a conversation more than any argument.",
+      "quote": "when they found that he had effected in one day what they themselves had with the utmost difficulty accomplished in twenty, namely, the crossing of the river",
+      "locator": "Book I ¶13",
+      "apply_it": "Pick one task where a quick, good-enough version would change how others see the project, and deliver it this week.",
+      "quiz": {
+        "question": "What alarmed the Helvetii after the battle at the Saone?",
+        "options": [
+          "Caesar crossed the river in one day, a task that took them twenty",
+          "Caesar had more cavalry than expected",
+          "Their king had died",
+          "The Germans had joined Caesar"
+        ],
+        "answer": 0,
+        "explanation": "Caesar's army bridged and crossed the river in a day, which, he says, startled them into sending envoys."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--04",
+      "topic": "productivity",
+      "tags": [
+        "logistics",
+        "supplies",
+        "excuses",
+        "follow-through"
+      ],
+      "title": "Supplies win campaigns, so treat vague promises of delivery as a warning",
+      "body": "While chasing the Helvetii in 58 BC, Caesar depended on grain promised by his Gallic allies, the Aedui. Day after day they told him it was being collected, brought in, on the road. Meanwhile the date for handing out rations to his soldiers drew close. When he pressed their leaders, he learned that a faction among them was quietly blocking the deliveries.\n\nThroughout the Commentaries, Caesar keeps returning to grain, forage and transport. Battles fill the headlines, but food decides whether an army can stay in the field. He eventually broke off the chase to secure supplies at the town of Bibracte.\n\nIn any project, the unglamorous inputs matter. When a supplier or colleague keeps saying it is nearly there, ask a precise question about what has actually happened.",
+      "quote": "The Aedui kept deferring from day to day, and saying that it was being 'collected--brought in--on the road.'",
+      "locator": "Book I ¶16",
+      "apply_it": "Find one delivery you are waiting on. Ask the person for a specific date and what is blocking it, instead of accepting 'it's on the way'.",
+      "quiz": {
+        "question": "What answer did the Aedui keep giving Caesar about the promised grain?",
+        "options": [
+          "That it had been stolen",
+          "That the harvest had failed completely",
+          "That it was being collected, brought in, on the road",
+          "That Caesar should buy it elsewhere"
+        ],
+        "answer": 2,
+        "explanation": "Their repeated, vague replies hid the fact that a faction was blocking the supply."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--05",
+      "topic": "leadership",
+      "tags": [
+        "discretion",
+        "difficult-conversations",
+        "trust",
+        "politics"
+      ],
+      "title": "Take sensitive problems out of the crowded room",
+      "body": "In 58 BC, at a council of Gallic chiefs, the Aeduan magistrate Liscus hinted that powerful men were sabotaging Caesar's grain supply. Caesar realised he meant Dumnorix, brother of his loyal ally Divitiacus. Rather than air it publicly, he ended the meeting, kept Liscus back, and questioned him and others in private.\n\nWhen the charges proved true, Caesar spoke to Divitiacus first. The brother wept and asked for mercy, and Caesar pardoned Dumnorix for his sake, though he also set people to watch him.\n\nPublic confrontation forces everyone to defend their pride. Moving a delicate issue to a private conversation lets people speak freely and gives you room to protect relationships that matter, even while you deal firmly with the problem.",
+      "quote": "as he was unwilling that these matters should be discussed while so many were present, he speedily dismisses the council, but detains Liscus",
+      "locator": "Book I ¶18",
+      "apply_it": "If a sensitive issue comes up in a group meeting, suggest taking it offline and follow up one-to-one within a day.",
+      "quiz": {
+        "question": "How did Caesar handle the hint that Dumnorix was working against him?",
+        "options": [
+          "He accused him in front of the council",
+          "He ignored it",
+          "He ended the meeting and investigated privately",
+          "He had Dumnorix arrested at once"
+        ],
+        "answer": 2,
+        "explanation": "He dismissed the council, questioned Liscus alone, checked with others, and then spoke privately with Dumnorix's brother."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--06",
+      "topic": "mental-strength",
+      "tags": [
+        "fear",
+        "perception",
+        "verification",
+        "anxiety"
+      ],
+      "title": "Fear can make an experienced person report what they never saw",
+      "body": "In 58 BC Caesar planned a dawn trap for the Helvetii. His lieutenant Labienus was to seize a ridge above their camp while Caesar came in from below. Considius, a veteran officer with a strong reputation, rode up in a panic saying the ridge was held by the enemy: he had seen their arms and standards. Caesar pulled back. Only later did he learn that Labienus had held the ridge all along. Considius, in Caesar's words, had reported as seen what he had not seen.\n\nThe chance was lost. Experience did not protect Considius from fear filling in the picture.\n\nAnxiety does this to all of us. When a scary report arrives, yours or someone else's, ask what was actually observed and what was assumed.",
+      "quote": "Considius, struck with fear, had reported to him, as seen, that which he had not seen.",
+      "locator": "Book I ¶22",
+      "apply_it": "Next time you feel alarmed by news, write two lists: what you actually know, and what you are assuming. Act on the first.",
+      "quiz": {
+        "question": "What went wrong with Caesar's planned attack on the Helvetii?",
+        "options": [
+          "A frightened officer reported the enemy on a ridge that was actually held by Romans",
+          "Labienus got lost",
+          "The Helvetii had moved in the night",
+          "Rain made the attack impossible"
+        ],
+        "answer": 0,
+        "explanation": "Considius, gripped by fear, reported something he had not seen, and the chance was lost."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--07",
+      "topic": "leadership",
+      "tags": [
+        "shared-risk",
+        "example",
+        "courage",
+        "trust"
+      ],
+      "title": "Leaders earn courage by sharing the danger, not escaping it",
+      "body": "Before the decisive battle with the Helvetii in 58 BC, near the town of Bibracte in central France, Caesar sent his own horse away out of sight, then the horses of all his officers. He says he did this to make the danger equal for everyone and remove any hope of escape.\n\nThe gesture told the ordinary foot soldier that the men in charge would not gallop off if things went badly. Whatever happened, they would face it together.\n\nTeams watch what leaders protect for themselves. If the bosses keep an escape hatch, people notice and hold back. When a leader visibly accepts the same risks and conditions as everyone else, people are far more willing to give their best.",
+      "quote": "having removed out of sight first his own horse, then those of all, that he might make the danger of all equal, and do away with the hope of flight",
+      "locator": "Book I ¶25",
+      "apply_it": "Look for one privilege you keep that your team does not share during a hard stretch. Consider giving it up, visibly, until the pressure passes.",
+      "quiz": {
+        "question": "Why did Caesar send away his own horse before battle?",
+        "options": [
+          "It was injured",
+          "To use it as a decoy",
+          "Because cavalry was not allowed in the battle",
+          "To make the danger equal for all and remove hope of flight"
+        ],
+        "answer": 3,
+        "explanation": "Removing the officers' horses showed the soldiers their leaders would share the same risk."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--08",
+      "topic": "lives-history",
+      "tags": [
+        "human-cost",
+        "helvetii",
+        "statistics",
+        "war"
+      ],
+      "title": "Behind every victory report is a count of people who never came home",
+      "body": "After defeating the Helvetii, Caesar says his men found lists in their camp, written in Greek letters, counting everyone who had set out: 368,000 people, of whom about 92,000 could bear arms. He then ordered a census of those sent home. The number, he reports, was 110,000.\n\nThese are Caesar's own figures, and ancient numbers are often inflated, so we cannot treat them as exact. But even on his telling, most of a migrating people, including families, did not return.\n\nCaesar presents this as a neat administrative note. It is worth slowing down at such moments. Whether reading history or a company report, look for the human numbers tucked inside a success story, and ask what they meant for the people counted.",
+      "quote": "When the census of those who returned home was taken, as Caesar had commanded, the number was found to be 110,000.",
+      "locator": "Book I ¶31",
+      "apply_it": "When you next read about a 'successful' outcome, find the number of people it cost or affected, and pause on it for a moment.",
+      "quiz": {
+        "question": "According to Caesar's figures, about how many Helvetii and allies returned home out of 368,000?",
+        "options": [
+          "About 300,000",
+          "About 110,000",
+          "About 10,000",
+          "All of them"
+        ],
+        "answer": 1,
+        "explanation": "Caesar reports 368,000 set out and 110,000 returned. His numbers may be inflated, but the loss was clearly vast."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--09",
+      "topic": "lives-history",
+      "tags": [
+        "ariovistus",
+        "empire",
+        "perspective",
+        "germans"
+      ],
+      "title": "Your opponent's argument often mirrors your own",
+      "body": "In 58 BC Caesar met Ariovistus, a Germanic king who had settled in Gaul at the invitation of one Gallic faction and now took tribute from his neighbours, in what is now Alsace. Caesar demanded he stop. Ariovistus answered that he held his part of Gaul by right of conquest, exactly as Rome held its province. Why should Rome interfere in his province any more than he did in theirs?\n\nRemarkably, Caesar records this argument in full. It is hard to miss that it describes Rome's own empire. Caesar won the battle that followed, but the point stands on the page.\n\nWhen you are sure you are in the right, it helps to state your opponent's case at its strongest. Sometimes you will find it is your own logic, turned around.",
+      "quote": "this was his province of Gaul, just as that is ours.",
+      "locator": "Book I ¶46",
+      "apply_it": "In your next disagreement, write down the other side's best argument in one sentence. Check whether you use the same reasoning yourself.",
+      "quiz": {
+        "question": "How did Ariovistus defend his position in Gaul?",
+        "options": [
+          "He said the gods had given him Gaul",
+          "He claimed it by conquest, just as Rome held its own province",
+          "He said he had bought the land",
+          "He denied being in Gaul at all"
+        ],
+        "answer": 1,
+        "explanation": "Ariovistus argued that his rule in Gaul was as legitimate as Rome's province there, a mirror of Rome's own claims."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--10",
+      "topic": "mental-strength",
+      "tags": [
+        "fear",
+        "excuses",
+        "rumour",
+        "self-awareness"
+      ],
+      "title": "Fear often disguises itself as a practical objection",
+      "body": "In 58 BC, while Caesar's army rested at Vesontio (modern Besancon), traders' stories about the size and fierceness of Ariovistus's Germans spread through camp. Panic started with young officers who had joined Caesar for connections, not experience, and soon reached veterans. Men wept in their tents and made their wills.\n\nCaesar noticed something revealing. Those who did not want to look afraid said they had no fear of the enemy; they were only worried about the narrow roads, the vast forests and the grain supply.\n\nFear is uncomfortable to admit, so it often comes dressed as logistics. When you hear a string of sudden practical concerns, your own or a team's, gently ask whether something else is underneath. Naming the real worry makes it easier to deal with.",
+      "quote": "Such of them as wished to be considered less alarmed, said that they did not dread the enemy, but feared the narrowness of the roads and the vastness of the forests",
+      "locator": "Book I ¶41",
+      "apply_it": "Think of a task you keep finding practical reasons to postpone. Ask yourself honestly: is one of these reasons actually fear?",
+      "quiz": {
+        "question": "How did some Roman officers at Vesontio hide their fear?",
+        "options": [
+          "By pretending to be ill",
+          "By deserting at night",
+          "By asking for more pay",
+          "By blaming the roads, forests and supplies instead"
+        ],
+        "answer": 3,
+        "explanation": "Those who wanted to seem brave said they feared only the roads, forests and grain supply, not the enemy."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--11",
+      "topic": "leadership",
+      "tags": [
+        "rallying",
+        "speeches",
+        "pride",
+        "resolve"
+      ],
+      "title": "To lift a frightened team, show resolve and give them pride to live up to",
+      "body": "Facing near-mutiny at Vesontio in 58 BC, Caesar called his centurions together. He scolded them for second-guessing their general, reminded them that Romans had beaten these enemies before, and said the supply worries were his job. Then he announced he would march that very night. If no one else followed, he would go with the tenth legion alone, which he trusted completely.\n\nThe effect, as Caesar tells it, was immediate. The tenth thanked him for the honour, and the other legions hurried to say they had never doubted him.\n\nTwo things worked together: a firm decision that ended the drift, and public trust in one group that made everyone want to deserve it. Praise for what people already do well can be a stronger motivator than criticism.",
+      "quote": "But that, if no one else should follow, yet he would go with only the tenth legion, of which he had no misgivings, and it should be his praetorian cohort.",
+      "locator": "Book I ¶42",
+      "apply_it": "When your team is hesitating, make one clear decision about the next step, and name something specific you trust them to do well.",
+      "quiz": {
+        "question": "What did Caesar say he would do if the frightened army refused to march?",
+        "options": [
+          "Go on with only the tenth legion",
+          "Go home to Rome",
+          "Hire German soldiers",
+          "Wait for reinforcements"
+        ],
+        "answer": 0,
+        "explanation": "He declared he would march with the tenth legion alone, which shamed and inspired the others."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--12",
+      "topic": "communication",
+      "tags": [
+        "reputation",
+        "restraint",
+        "trust",
+        "negotiation"
+      ],
+      "title": "Think about how your actions will be told afterwards",
+      "body": "During Caesar's face-to-face talks with Ariovistus in 58 BC, the German king's horsemen began riding up and throwing stones and weapons at Caesar's escort. Caesar broke off and ordered his men not to throw a single weapon back. He says his chosen legion could have won that skirmish easily. But he did not want anyone to say he had lured the enemy into a trap under cover of a peace conference.\n\nThis is restraint with an eye on reputation. Breaking trust at a negotiation would have damaged how other peoples dealt with him in future.\n\nAt work, too, a short-term win can cost long-term credibility. Before reacting in a heated moment, ask how the story will sound when it is retold by people who were not there.",
+      "quote": "lest, after the enemy were routed, it might be said that they had been ensnared by him under the sanction of a conference.",
+      "locator": "Book I ¶48",
+      "apply_it": "Before replying to a provocation today, ask: how would this exchange sound if someone retold it without the context?",
+      "quiz": {
+        "question": "Why did Caesar forbid his men to fight back during the conference with Ariovistus?",
+        "options": [
+          "His men were outnumbered",
+          "The gods forbade fighting that day",
+          "So no one could say he had trapped the enemy during peace talks",
+          "Ariovistus had surrendered"
+        ],
+        "answer": 2,
+        "explanation": "He chose restraint so his conduct at a negotiation could not later be described as treachery."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--13",
+      "topic": "lives-history",
+      "tags": [
+        "belgae",
+        "alliances",
+        "strategy",
+        "divide"
+      ],
+      "title": "Alliances built on fear crack when each member's own home is threatened",
+      "body": "In 57 BC the Belgae of northern Gaul formed a huge coalition against Rome. Caesar camped on the river Aisne in what is now northeastern France and refused to be drawn into battle on bad ground. Meanwhile he asked his ally Divitiacus to lead Aeduan troops into the lands of the Bellovaci, the strongest coalition member.\n\nWhen their supplies ran low and news of the raid arrived, the Belgae agreed that each people should go home and defend whichever territory Rome attacked first. Their retreat turned into a disorderly flight, and Caesar then dealt with them one by one.\n\nCoalitions held together by a common enemy are fragile when members' own interests diverge. Whether you are building one or facing one, ask what each member will do when their home turf is at stake.",
+      "quote": "determined that it was best for each to return to his country, and resolved to assemble from all quarters to defend those into whose territories the Romans should first march an army",
+      "locator": "Book II ¶10",
+      "apply_it": "If you rely on a partnership, list what each partner gains from it. Where interests could split under pressure, talk about it before the pressure comes.",
+      "quiz": {
+        "question": "What made the Belgic coalition break up in 57 BC?",
+        "options": [
+          "A plague in their camp",
+          "A peace treaty with Rome",
+          "Short supplies and the threat to their own lands, so each went home",
+          "Their king was captured"
+        ],
+        "answer": 2,
+        "explanation": "With food running low and the Bellovaci's land under attack, they decided each should defend its own territory."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--14",
+      "topic": "leadership",
+      "tags": [
+        "training",
+        "autonomy",
+        "crisis",
+        "preparation"
+      ],
+      "title": "Train people well enough that they can act without waiting for orders",
+      "body": "In 57 BC, by the river Sambre in what is now Belgium, the Nervii burst out of the woods while Caesar's legions were still building their camp. Caesar admits he had everything to do at once: raise the signal, sound the trumpet, recall men, form lines, encourage them. There was no time.\n\nTwo things saved the army. The soldiers were so experienced that they knew what to do without being told. And Caesar had ordered each commander to stay with his legion until the camp was finished, so officers were on the spot and acted on their own judgment.\n\nIn a real crisis, the leader becomes a bottleneck. The best preparation is people who understand the goal well enough to act on it, and clear standing rules about where they should be.",
+      "quote": "having been trained by former engagements, they could suggest to themselves what ought to be done, as conveniently as receive information from others",
+      "locator": "Book II ¶20",
+      "apply_it": "Pick one routine decision you usually make for your team. Explain the reasoning behind it so they can make it themselves next time.",
+      "quiz": {
+        "question": "What saved Caesar's army when the Nervii attacked by surprise?",
+        "options": [
+          "Experienced soldiers and officers who acted without waiting for orders",
+          "A sudden storm",
+          "Reinforcements from Rome",
+          "The Nervii ran out of weapons"
+        ],
+        "answer": 0,
+        "explanation": "Trained soldiers knew what to do, and officers who stayed with their legions acted on their own initiative."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--15",
+      "topic": "leadership",
+      "tags": [
+        "presence",
+        "crisis",
+        "names",
+        "front-line"
+      ],
+      "title": "In a crisis, go to the front and call people by name",
+      "body": "At the Sambre in 57 BC the right wing was collapsing. In the twelfth legion every centurion of one cohort was dead, a standard was lost, the senior centurion was badly wounded, and men were drifting out of the fight. Caesar had come without a shield. He grabbed one from a soldier at the back, pushed through to the front line, and spoke to the centurions by name while urging on the rest.\n\nHe says hope returned at once. Each man wanted to show his best in his general's sight, and the enemy's charge slowed.\n\nWhen things go badly, people need to see that the person in charge is present and knows them. Using someone's name in a hard moment says: you matter, and I am here with you.",
+      "quote": "he advanced to the front of the line, and addressing the centurions by name, and encouraging the rest of the soldiers, he ordered them to carry forward the standards",
+      "locator": "Book II ¶25",
+      "apply_it": "When your team is under strain, go to where the work is hardest and speak to people individually, by name.",
+      "quiz": {
+        "question": "What did Caesar do when his right wing was close to breaking at the Sambre?",
+        "options": [
+          "He sent a messenger to Labienus and waited",
+          "He ordered a retreat",
+          "He offered the enemy terms",
+          "He took a shield, went to the front line and addressed centurions by name"
+        ],
+        "answer": 3,
+        "explanation": "His personal presence at the front, and naming his officers, restored the soldiers' courage."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--16",
+      "topic": "lives-history",
+      "tags": [
+        "clemency",
+        "slavery",
+        "human-cost",
+        "policy"
+      ],
+      "title": "Caesar's mercy was a policy, and so was his cruelty",
+      "body": "After the Sambre battle in 57 BC, the Nervii surrendered. Their envoys said their council of six hundred had been reduced to three, and their sixty thousand fighting men to barely five hundred. Caesar spared the survivors and ordered neighbours not to harm them. He tells us plainly why: so that he might appear merciful.\n\nWeeks later, the Aduatuci surrendered, then attacked at night with hidden weapons. Caesar sold the entire town into slavery. The buyers, he reports, counted 53,000 people.\n\nCaesar used clemency and harshness alike to send messages to the rest of Gaul. Being honest about this matters: the conquest killed and enslaved enormous numbers of people. When someone powerful shows kindness, it is fair to ask both who benefits and who is left out.",
+      "quote": "whom Caesar, that he might appear to use compassion towards the wretched and the suppliant, most carefully spared",
+      "locator": "Book II ¶28",
+      "apply_it": "When you see a powerful person or company make a generous gesture, ask what message it is meant to send, and to whom.",
+      "quiz": {
+        "question": "Why, by his own account, did Caesar spare the surviving Nervii?",
+        "options": [
+          "They paid him a large ransom",
+          "So that he might appear merciful to the defeated",
+          "The Senate ordered it",
+          "He needed them as soldiers"
+        ],
+        "answer": 1,
+        "explanation": "Caesar says he spared them so he would appear compassionate. Soon after he sold 53,000 Aduatuci into slavery."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--17",
+      "topic": "lives-history",
+      "tags": [
+        "veneti",
+        "naval-war",
+        "problem-solving",
+        "weak-point"
+      ],
+      "title": "Look for the one part your opponent's strength depends on",
+      "body": "In 56 BC the Veneti of Brittany, in northwest France, fought Rome at sea. Their tall oak ships were too strong to ram and too high to attack from, and Roman officers did not know what to do. Then someone thought of long poles fitted with sharp hooks. Roman crews caught the ropes that held the Veneti sails, rowed hard, and cut them. The yards crashed down, and ships that depended entirely on sail were helpless.\n\nThe battle was won. Caesar then punished the Veneti severely for having detained Roman envoys: he says he put their council to death and sold the rest into slavery.\n\nThe tactical lesson is about leverage. Instead of matching an opponent's strength, find the single part everything else relies on.",
+      "quote": "sharp hooks inserted into and fastened upon poles, of a form not unlike the hooks used in attacking town walls.",
+      "locator": "Book III ¶14",
+      "apply_it": "Take a problem that seems too big to tackle head-on. Ask: what one element does the rest depend on? Start there.",
+      "quiz": {
+        "question": "How did the Romans beat the Veneti's strong sailing ships?",
+        "options": [
+          "By ramming them",
+          "By cutting their rigging with hooks on poles so the sails fell",
+          "By setting them on fire",
+          "By blocking their harbours"
+        ],
+        "answer": 1,
+        "explanation": "Hooked poles cut the ropes holding the sails; without sails, the Veneti ships could not manoeuvre."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--18",
+      "topic": "lives-history",
+      "tags": [
+        "bias",
+        "wishful-thinking",
+        "deception",
+        "sabinus"
+      ],
+      "title": "We are easiest to fool when the lie is something we want to hear",
+      "body": "Also in 56 BC, Caesar's lieutenant Sabinus faced a large Gallic army in Normandy. He stayed in camp, letting both the enemy and his own soldiers think he was afraid. Then he paid a Gaul to pretend to desert and tell the enemy that the Romans planned to slip away by night.\n\nThe Gauls believed him. They rushed uphill to the camp, exhausted and carrying brushwood to fill the ditches, and were routed. Caesar lists their reasons for believing the story, ending with this: people usually believe what they wish.\n\nWishful thinking is a weak spot for everyone. When news arrives that perfectly matches what you hoped, that is exactly when to check it twice.",
+      "quote": "because in most cases men willingly believe what they wish.",
+      "locator": "Book III ¶18",
+      "apply_it": "Next time you hear news that fits your hopes perfectly, find one independent source to confirm it before acting.",
+      "quiz": {
+        "question": "According to Caesar, why did the Gauls believe Sabinus's fake deserter?",
+        "options": [
+          "He showed written proof",
+          "He was a famous chief",
+          "The gods sent a sign",
+          "Among other reasons, people readily believe what they wish"
+        ],
+        "answer": 3,
+        "explanation": "The story matched what the Gauls hoped, and Caesar notes that people willingly believe what they wish."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--19",
+      "topic": "lives-history",
+      "tags": [
+        "usipetes",
+        "atrocity",
+        "reading-sources",
+        "war"
+      ],
+      "title": "Read a victor's account for the facts it admits, not just the verdict it gives",
+      "body": "In 55 BC two Germanic peoples, the Usipetes and Tencteri, crossed the Rhine into Gaul with their families, driven out by stronger neighbours. During talks, some of their horsemen attacked Caesar's cavalry. Caesar decided they had acted in bad faith. When their leaders came the next day to apologise, he detained them, then fell on their camp.\n\nHis own account says the women and children fled and were hunted down by his cavalry, and many of the men drowned in the river trying to escape. He gives a figure of 430,000 for the whole people, almost certainly inflated, and says no Roman died.\n\nCaesar tells this as justified punishment. Yet his text also admits he held envoys who came to talk. Reading any self-account, notice the facts it includes, even when the conclusion is already drawn for you.",
+      "quote": "saw that their families were being slain, throwing away their arms and abandoning their standards, fled out of the camp",
+      "locator": "Book IV ¶15",
+      "apply_it": "Reread a one-sided account you trust, such as a company announcement or news story. List the facts it contains separately from the conclusions it draws.",
+      "quiz": {
+        "question": "What does Caesar's own account admit about his attack on the Usipetes and Tencteri?",
+        "options": [
+          "He detained their leaders who came to talk, and their families were killed",
+          "He met them in fair open battle",
+          "He let them settle peacefully",
+          "He lost most of his army"
+        ],
+        "answer": 0,
+        "explanation": "He presents it as just, but his text records detaining envoys and the killing of families fleeing the camp."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--20",
+      "topic": "productivity",
+      "tags": [
+        "engineering",
+        "speed",
+        "rhine",
+        "design"
+      ],
+      "title": "A bridge built in ten days sent a message no envoy could",
+      "body": "In 55 BC Caesar decided to cross the Rhine into Germania, in what is now western Germany. The Ubii offered boats, but he chose to build a timber bridge across the wide, fast river. His engineers drove paired piles into the riverbed at an angle, braced them with beams so the current pressed the joints tighter, and added upstream barriers against logs sent down to wreck it.\n\nWithin ten days of starting to collect timber, the army was across. He stayed eighteen days, burned villages, then returned and cut the bridge down.\n\nThe point was partly military and partly a demonstration: Rome could go wherever it chose. A well-planned project, delivered fast, can persuade more than words. Good preparation of materials and design is what makes that speed possible.",
+      "quote": "Within ten days after the timber began to be collected, the whole work was completed, and the whole army led over.",
+      "locator": "Book IV ¶18",
+      "apply_it": "For your next project, spend extra time on the design and materials up front, then see how much faster the build goes.",
+      "quiz": {
+        "question": "How long did it take Caesar's army to build the Rhine bridge, by his account?",
+        "options": [
+          "Two months",
+          "A single night",
+          "About ten days from collecting timber",
+          "A full year"
+        ],
+        "answer": 2,
+        "explanation": "He reports the whole work was done within ten days and the army led across."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--21",
+      "topic": "lives-history",
+      "tags": [
+        "courage",
+        "example",
+        "britain",
+        "first-step"
+      ],
+      "title": "Sometimes one person jumping first is all a hesitant group needs",
+      "body": "In 55 BC Caesar's first expedition reached the coast of Britain, near what is now Dover in Kent. The big transport ships could only anchor in deep water, and the soldiers, weighed down by armour, had to leap into the waves while Britons on horseback attacked from the shore. They hesitated.\n\nThen the standard-bearer of the tenth legion prayed aloud and shouted for his comrades to jump unless they wanted to betray their eagle to the enemy. He leapt into the sea and headed for the beach. Ashamed to be left behind, the others followed, ship after ship.\n\nGroups often freeze when each person waits for someone else to move. One clear, brave first step, with a reason everyone cares about, can break that spell.",
+      "quote": "Leap, fellow soldiers, unless you wish to betray your eagle to the enemy.",
+      "locator": "Book IV ¶25",
+      "apply_it": "If your group is stuck waiting for someone to start, be the one who takes the first visible step today.",
+      "quiz": {
+        "question": "What got Caesar's soldiers off the ships at the British landing?",
+        "options": [
+          "Caesar paid them a bonus",
+          "The tide went out",
+          "The tenth legion's eagle-bearer leapt in first and called them to follow",
+          "The Britons retreated"
+        ],
+        "answer": 2,
+        "explanation": "The standard-bearer jumped into the sea with the eagle, and the others followed rather than lose it."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--22",
+      "topic": "lives-history",
+      "tags": [
+        "setbacks",
+        "resourcefulness",
+        "britain",
+        "storms"
+      ],
+      "title": "After a disaster, use the wreckage to rebuild what still works",
+      "body": "A few days after the 55 BC landing in Britain, a full moon brought a high tide the Romans did not know about, and a storm struck the same night. Many ships were wrecked; others lost anchors and tackle. There were no spare ships, no repair materials and no grain stored for winter. The Britons, seeing this, began to rise again.\n\nCaesar did not wait. He had grain brought in daily, used the timber and bronze of the worst-damaged ships to repair the rest, and sent for supplies from Gaul. He lost twelve ships, but the remainder could sail home.\n\nSetbacks rarely leave nothing behind. Ask what you can salvage from what broke, and put it to work quickly while others are still reacting to the loss.",
+      "quote": "he effected that, after the loss of twelve ships, a voyage could be made well enough in the rest.",
+      "locator": "Book IV ¶31",
+      "apply_it": "Think of a recent setback. List three things from it you can still reuse, such as notes, contacts or skills, and use one this week.",
+      "quiz": {
+        "question": "How did Caesar repair his fleet after the storm in Britain?",
+        "options": [
+          "He used materials from the worst-damaged ships to fix the others",
+          "He waited for new ships from Rome",
+          "He hired British shipbuilders",
+          "He abandoned the fleet and walked home"
+        ],
+        "answer": 0,
+        "explanation": "He cannibalised the wrecked ships for timber and bronze, losing twelve but making the rest seaworthy."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--23",
+      "topic": "leadership",
+      "tags": [
+        "decisions",
+        "sources",
+        "dissent",
+        "sabinus-cotta"
+      ],
+      "title": "Never let a rival's advice decide your most important moves",
+      "body": "In the winter of 54 BC a Roman legion and five cohorts under Sabinus and Cotta were camped among the Eburones, in what is now Belgium. Their leader Ambiorix attacked, then offered friendly advice: all Gaul had risen, Germans were coming, so leave camp and he would grant safe passage.\n\nIn the war council, Cotta argued that they had food and strong walls, and asked what could be more foolish than deciding the biggest matters on an enemy's word. Sabinus insisted on leaving. After arguing until midnight, Cotta gave way. At dawn the column marched into an ambush in a valley and was destroyed.\n\nWhen the source of advice gains from your choice, weigh it with great care. Ask who benefits if you follow it.",
+      "quote": "what could be more undetermined, more undignified, than to adopt measures respecting the most important affairs on the authority of an enemy?",
+      "locator": "Book V ¶28",
+      "apply_it": "Before acting on advice about a big decision, ask: what does this person gain if I follow it? Then seek one neutral view.",
+      "quiz": {
+        "question": "What was Cotta's main objection to leaving the winter camp?",
+        "options": [
+          "The weather was too bad",
+          "Caesar had forbidden all movement",
+          "The soldiers were ill",
+          "They would be deciding the biggest matters on the word of an enemy"
+        ],
+        "answer": 3,
+        "explanation": "Cotta warned against acting on Ambiorix's advice; Sabinus overruled him, and the column was ambushed."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--24",
+      "topic": "mental-strength",
+      "tags": [
+        "preparation",
+        "panic",
+        "planning",
+        "composure"
+      ],
+      "title": "Think through the bad case before you are in it",
+      "body": "When the ambush struck the column of Sabinus and Cotta in 54 BC, the two men behaved very differently. Sabinus, who had pushed for the march and planned for nothing going wrong, ran about giving confused, timid orders. Caesar comments that this is what usually happens to people forced to make their plans in the middle of the action.\n\nCotta had opposed the march precisely because he foresaw an attack on the road. So when it came, he was ready: he encouraged the men like a general and fought like a soldier, until he was wounded and killed.\n\nComposure under pressure is often just preparation in disguise. A few minutes spent imagining what could go wrong, and what you would do, can save you from deciding in a panic.",
+      "quote": "which generally happens to those who are compelled to take council in the action itself.",
+      "locator": "Book V ¶33",
+      "apply_it": "Before your next important event, spend five minutes listing what could go wrong and your first move for each.",
+      "quiz": {
+        "question": "Why, according to Caesar, did Sabinus fall apart during the ambush?",
+        "options": [
+          "He was wounded early",
+          "He had planned nothing and was forced to decide in the middle of the action",
+          "His soldiers refused to obey",
+          "He was ill"
+        ],
+        "answer": 1,
+        "explanation": "Caesar says people who must make plans in the action itself usually lose their grip, while the prepared Cotta stayed steady."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--25",
+      "topic": "communication",
+      "tags": [
+        "blame",
+        "self-presentation",
+        "spin",
+        "accountability"
+      ],
+      "title": "Notice where a leader places the blame for a disaster",
+      "body": "The loss of Sabinus and Cotta's troops in 54 BC was among the worst Roman disasters of the Gallic War. When Caesar reached Quintus Cicero's camp, which had survived a long siege, he held an assembly. He consoled the soldiers and asked them to bear the loss patiently, since it had been caused by the misconduct and rashness of his lieutenant.\n\nCaesar had chosen where to spread his legions that winter, and he chose the commanders. But in his own account, the fault belongs to Sabinus alone.\n\nThe Commentaries were written by Caesar, about Caesar, for Roman readers. Every leader's report shapes the story in their favour to some degree. When reading one, notice who gets credit for successes and who carries the blame for failures.",
+      "quote": "he suggests that the disaster, which had been occasioned by the misconduct and rashness of his lieutenant, should be borne with a patient mind",
+      "locator": "Book V ¶52",
+      "apply_it": "Next time something goes wrong on your team, name your own part in it first, before discussing anyone else's.",
+      "quiz": {
+        "question": "How did Caesar explain the destruction of Sabinus and Cotta's force to his troops?",
+        "options": [
+          "He took full responsibility himself",
+          "He blamed the misconduct and rashness of his lieutenant",
+          "He blamed the Senate",
+          "He said it was a rumour"
+        ],
+        "answer": 1,
+        "explanation": "Caesar placed the blame on his lieutenant's rashness, a telling example of his self-presentation."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--26",
+      "topic": "lives-history",
+      "tags": [
+        "eburones",
+        "revenge",
+        "human-cost",
+        "collective-punishment"
+      ],
+      "title": "Revenge campaigns punish whole peoples while the leaders often escape",
+      "body": "In 53 BC, after the ambush of Sabinus and Cotta, Caesar set out to destroy the Eburones in what is now Belgium. Their people had scattered into forests and marshes. To avoid risking legionaries in the woods, Caesar invited neighbouring tribes to come and plunder the land, so that, in his words, Gallic lives rather than Roman ones would be risked, and the people and their name wiped out.\n\nVillages were burned and crops destroyed, leaving those in hiding to starve. Ambiorix himself, the man Caesar most wanted, slipped away again and again with just four horsemen.\n\nCollective punishment falls hardest on the ordinary people with least say. It is worth remembering when anger tempts us to blame a whole group for what a few have done.",
+      "quote": "in order that the life of the Gauls might be hazarded in the woods rather than the legionary soldiers",
+      "locator": "Book VI ¶33",
+      "apply_it": "When you feel angry at a whole group, name the specific people responsible, and check you are not blaming everyone else too.",
+      "quiz": {
+        "question": "Whom did Caesar invite to plunder the Eburones' land, and why?",
+        "options": [
+          "Roman settlers, to farm it",
+          "German mercenaries, to defend it",
+          "Nobody; he left them in peace",
+          "Neighbouring Gallic peoples, so their lives were risked instead of Roman soldiers'"
+        ],
+        "answer": 3,
+        "explanation": "He invited neighbouring tribes in so that Gauls, not legionaries, would take the risks in the woods."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--27",
+      "topic": "lives-history",
+      "tags": [
+        "vercingetorix",
+        "persistence",
+        "rejection",
+        "rebellion"
+      ],
+      "title": "Vercingetorix was thrown out by his own people before all Gaul chose him",
+      "body": "In 52 BC a young noble of the Arverni, in what is now central France, called his followers to arms against Rome. His name was Vercingetorix. His uncle and the other nobles thought the venture too dangerous and expelled him from the town of Gergovia. He did not give up. He raised men from the poor and desperate in the countryside, returned, drove out his opponents and was hailed as king.\n\nWithin weeks many peoples gave him supreme command. Caesar also notes his harshness: he punished the wavering with mutilation and death to hold the alliance together.\n\nEarly rejection is not the final verdict. Vercingetorix's rise shows how persistence and a clear cause can turn a refusal into leadership, though Caesar's account also shows the brutality he used.",
+      "quote": "he did not however desist, but held in the country a levy of the needy and desperate.",
+      "locator": "Book VII ¶4",
+      "apply_it": "Think of an idea that was turned down. Who else, outside the usual circle, might back it? Approach one of them this week.",
+      "quiz": {
+        "question": "What happened when Vercingetorix first tried to start the revolt?",
+        "options": [
+          "His uncle and nobles expelled him from Gergovia",
+          "He was made king at once",
+          "Caesar captured him",
+          "The Aedui joined him immediately"
+        ],
+        "answer": 0,
+        "explanation": "Rejected by the nobles, he raised a following in the countryside, came back and was hailed as king."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--28",
+      "topic": "lives-history",
+      "tags": [
+        "strategy",
+        "sacrifice",
+        "avaricum",
+        "exceptions"
+      ],
+      "title": "A good strategy can be undone by one exception made out of pity",
+      "body": "In 52 BC Vercingetorix told the Gauls they must starve the Romans by burning their own villages and towns, so Caesar's army could find no food. In one day more than twenty towns of the Bituriges went up in flames. But the Bituriges begged to spare Avaricum (modern Bourges), their finest city. Vercingetorix argued against it, then gave in out of sympathy.\n\nCaesar besieged the town. After weeks of work in cold rain, his soldiers broke in. Caesar says they spared neither the old nor women nor children, and that of about forty thousand inside, barely eight hundred escaped.\n\nVercingetorix's strategy had been sound. The exception made for emotional reasons became the place where it failed, at a terrible human cost.",
+      "quote": "Vercingetorix at first dissuades them from it, but afterwards concedes the point, owing to their entreaties and the compassion of the soldiers.",
+      "locator": "Book VII ¶16",
+      "apply_it": "Look at a rule or plan you have set yourself. Is there an exception you made out of feeling that is quietly undermining it?",
+      "quiz": {
+        "question": "Why was Avaricum not burned along with other towns?",
+        "options": [
+          "It was too well built to burn",
+          "The Romans got there first",
+          "Vercingetorix gave in to the Bituriges' pleas to spare it",
+          "It belonged to the Aedui"
+        ],
+        "answer": 2,
+        "explanation": "He opposed defending it but conceded to their entreaties; the city fell and almost all inside were killed."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--29",
+      "topic": "leadership",
+      "tags": [
+        "setbacks",
+        "visibility",
+        "trust",
+        "vercingetorix"
+      ],
+      "title": "Show up in person after a defeat and your authority can grow",
+      "body": "After the fall of Avaricum in 52 BC, the Gallic army could have turned on Vercingetorix. Instead, he called an assembly the next day. He told them that no one should expect every event in war to go their way, reminded them he had never wanted to defend the town, and promised to unite the rest of Gaul.\n\nCaesar, his enemy, observes something striking. Defeat usually weakens a general's authority, but Vercingetorix's grew. The Gauls respected that he had not lost heart, had not hidden or avoided their eyes, and had judged the situation correctly from the start.\n\nWhen things go wrong, the instinct is to keep a low profile. Facing people openly, owning the situation and laying out the next step is what builds lasting trust.",
+      "quote": "as ill success weakens the authority of other generals, so, on the contrary, his dignity increased daily, although a loss was sustained",
+      "locator": "Book VII ¶31",
+      "apply_it": "After your next mistake or loss, talk to the people affected within a day. Explain what happened and what you will do next.",
+      "quiz": {
+        "question": "Why did Vercingetorix's standing rise after the loss of Avaricum?",
+        "options": [
+          "He blamed Caesar's luck",
+          "He paid his soldiers more",
+          "He did not hide, stayed calm and had judged the situation rightly",
+          "He won a battle the next day"
+        ],
+        "answer": 2,
+        "explanation": "He faced his people openly and unshaken, and they saw he had been right, so his authority grew."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--30",
+      "topic": "leadership",
+      "tags": [
+        "gergovia",
+        "discipline",
+        "defeat",
+        "self-control"
+      ],
+      "title": "Courage needs self-control to go with it",
+      "body": "At Gergovia, near modern Clermont-Ferrand in 52 BC, Caesar launched a limited attack on the hill camps around the town, then sounded the retreat. Many soldiers did not hear or did not obey. Excited by success and hoping for plunder, they charged up to the town walls and were thrown back with heavy losses, including forty-six centurions. One centurion, Petreius, gave his life holding the enemy back so his men could escape.\n\nThe next day Caesar addressed the army. He praised their courage but sharply criticised their rashness and greed in deciding for themselves how far to go. He wanted restraint and self-command as much as bravery.\n\nEnthusiasm is valuable, but it must be steered. Energy without discipline can turn a near-success into a defeat.",
+      "quote": "he required in his soldiers forbearance and self-command, not less than valour and magnanimity.",
+      "locator": "Book VII ¶53",
+      "apply_it": "When you feel a rush of enthusiasm to push further than planned, pause and check: is this the agreed goal, or excitement talking?",
+      "quiz": {
+        "question": "What did Caesar criticise his soldiers for after Gergovia?",
+        "options": [
+          "Rashly ignoring the recall and deciding for themselves how far to go",
+          "Cowardice",
+          "Losing their weapons",
+          "Refusing to march"
+        ],
+        "answer": 0,
+        "explanation": "He praised their bravery but said he wanted self-command as much as courage."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--31",
+      "topic": "communication",
+      "tags": [
+        "misinformation",
+        "proof",
+        "trust",
+        "litavicus"
+      ],
+      "title": "The best answer to a lie is to let people see the truth for themselves",
+      "body": "In 52 BC an Aeduan noble named Litavicus, leading ten thousand Aeduan troops to join Caesar, wanted to turn them against Rome. He told them, weeping, that the Romans had executed their leaders Eporedorix and Viridomarus without trial, and produced coached witnesses. The furious soldiers killed the Roman citizens travelling with them.\n\nCaesar rode out with four legions, stopped the column, and ordered his men to kill no one. Then he simply sent the two supposedly dead nobles to ride among the Aeduan cavalry and speak to their friends. Once they were recognised, the lie collapsed and the troops laid down their arms.\n\nArguments rarely beat a vivid false story. Visible, first-hand evidence often does. When misinformation spreads, look for a way to show rather than tell.",
+      "quote": "He commands Eporedorix and Viridomarus, who they thought were killed, to move among the cavalry and address their friends.",
+      "locator": "Book VII ¶41",
+      "apply_it": "Next time you need to correct a rumour, find the most direct proof you can show, such as a document, a person or a demonstration.",
+      "quiz": {
+        "question": "How did Caesar expose Litavicus's lie?",
+        "options": [
+          "He sent a letter to the Aeduan council",
+          "He executed Litavicus",
+          "He bribed the soldiers",
+          "He had the nobles who were supposedly dead ride among the troops"
+        ],
+        "answer": 3,
+        "explanation": "Seeing Eporedorix and Viridomarus alive ended the false story immediately."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--32",
+      "topic": "lives-history",
+      "tags": [
+        "alesia",
+        "engineering",
+        "planning",
+        "two-fronts"
+      ],
+      "title": "At Alesia, Caesar built walls facing both inward and outward",
+      "body": "In 52 BC Vercingetorix and some eighty thousand men, by Caesar's count, shut themselves in Alesia, a hilltop town in what is now Burgundy, France. Caesar began a ring of trenches, ramparts, towers and hidden stakes, about eleven Roman miles around, to trap them. Knowing that a vast Gallic relief army was being raised, he then built a second ring, about fourteen miles around, facing outward.\n\nHis army now sat between two sets of walls, besieging and besieged at the same time. He also ordered thirty days of food and forage stockpiled so his men would not have to go out.\n\nCaesar did not plan only for the enemy in front of him. He planned for the one he expected to arrive. Good preparation asks: where else could pressure come from?",
+      "quote": "he constructed, against an external enemy, fortifications of the same kind in every respect",
+      "locator": "Book VII ¶75",
+      "apply_it": "For a current project, list not just the obvious challenge but where a second problem might come from, and prepare one step for it.",
+      "quiz": {
+        "question": "Why did Caesar build a second ring of fortifications at Alesia?",
+        "options": [
+          "To house his prisoners",
+          "To defend against a Gallic relief army coming from outside",
+          "To mark the city limits",
+          "To store grain"
+        ],
+        "answer": 1,
+        "explanation": "The outer ring faced outward to hold off the expected relief army, while the inner ring trapped Vercingetorix."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--33",
+      "topic": "lives-history",
+      "tags": [
+        "alesia",
+        "civilians",
+        "human-cost",
+        "war"
+      ],
+      "title": "In sieges, the people with no say often suffer most",
+      "body": "As food ran out inside Alesia in 52 BC, the Gallic leaders debated what to do. One chief, Critognatus, even proposed surviving on the bodies of those too old or weak to fight. They decided first to send out the townspeople, the Mandubii, whose town it was, with their wives and children.\n\nThe Mandubii came to the Roman lines weeping, begging to be taken as slaves if only they could be fed. Caesar posted guards on the rampart and refused to let them in. His account says no more about them.\n\nThe Mandubii had not started this war, yet they were caught between two armies and turned away by both. History is full of such people. Remembering them keeps the story of great generals honest.",
+      "quote": "But Caesar, placing guards on the rampart, forbade them to be admitted.",
+      "locator": "Book VII ¶79",
+      "apply_it": "When you hear about a conflict, ask who is caught in the middle without any say, and look for one way to learn their side.",
+      "quiz": {
+        "question": "What happened to the Mandubii, the townspeople of Alesia?",
+        "options": [
+          "They escaped to Rome",
+          "They were sent out by the Gauls and refused entry by Caesar",
+          "They joined Caesar's army",
+          "They were made Roman citizens"
+        ],
+        "answer": 1,
+        "explanation": "Expelled by the defenders and refused by Caesar, they were trapped between the lines."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--34",
+      "topic": "lives-history",
+      "tags": [
+        "alesia",
+        "visibility",
+        "presence",
+        "decisive-moment"
+      ],
+      "title": "Be visible at the decisive point",
+      "body": "On the last day at Alesia, in 52 BC, Gallic forces attacked Caesar's lines from inside and outside at once. The fiercest fighting was at a weak camp on a northern hill, where the relief army threw sixty thousand picked men against two legions. Caesar sent reinforcements, then came himself with fresh troops and cavalry.\n\nHis arrival was recognised by the colour of his cloak, the distinctive red worn by a general. A great shout went up along the lines, the cavalry struck the Gauls from behind, and the relief army broke.\n\nLeaders cannot be everywhere, but they can choose where to be seen. Turning up in person, recognisably, where the outcome is being decided tells everyone the moment matters.",
+      "quote": "His arrival being known from the colour of his robe",
+      "locator": "Book VII ¶89",
+      "apply_it": "Identify the single most important meeting or task on your team this week, and make sure you are present for it in person.",
+      "quiz": {
+        "question": "How did the soldiers at Alesia know Caesar had arrived at the critical point?",
+        "options": [
+          "A trumpet signal",
+          "A messenger announced it",
+          "He carried the eagle",
+          "The colour of his robe"
+        ],
+        "answer": 3,
+        "explanation": "His distinctive cloak made his arrival visible, which lifted his men and sealed the battle."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--35",
+      "topic": "lives-history",
+      "tags": [
+        "vercingetorix",
+        "surrender",
+        "slavery",
+        "human-cost"
+      ],
+      "title": "Vercingetorix surrendered himself for his people, and Caesar enslaved them",
+      "body": "With the relief army routed, Vercingetorix called his council in 52 BC. He told them he had fought not for himself but for the freedom of all, and offered himself to them: they could kill him to appease the Romans or hand him over alive. The chiefs surrendered him to Caesar, who sat at the front of his lines.\n\nCaesar kept back Aeduan and Arvernian prisoners to win back those peoples. The rest he handed out as plunder, one captive to every soldier in the army, to be sold as slaves.\n\nThis was the climax of Rome's conquest of Gaul. It ended with a leader taking responsibility for a lost cause, and with many thousands of ordinary Gauls sold into slavery. Both belong in the story.",
+      "quote": "That he had undertaken that war, not on account of his own exigencies, but on account of the general freedom",
+      "locator": "Book VII ¶89",
+      "apply_it": "Think of a time you led something that failed. How did you take responsibility, and what would you do differently next time?",
+      "quiz": {
+        "question": "After Alesia, what did Caesar do with most of the captured Gauls?",
+        "options": [
+          "Gave one to each soldier as plunder to be sold",
+          "Freed them all",
+          "Sent them to settle in Italy",
+          "Made them Roman soldiers"
+        ],
+        "answer": 0,
+        "explanation": "Except for Aeduan and Arvernian captives, he distributed the prisoners as slaves, one per soldier."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--36",
+      "topic": "lives-history",
+      "tags": [
+        "hirtius",
+        "cruelty",
+        "deterrence",
+        "clemency"
+      ],
+      "title": "Even a famously merciful conqueror chose terror when it suited him",
+      "body": "Book VIII of the Gallic War was written not by Caesar but by his officer Aulus Hirtius. It covers the last resistance in 51 BC, ending at Uxellodunum, a hill town in southwestern France. When the defenders surrendered, Caesar, Hirtius says, judged that his reputation for leniency was secure, and wanted to stop revolts breaking out elsewhere. So he had the hands of everyone who had fought against him cut off, and spared their lives so the punishment would be on display.\n\nClemency and cruelty were both instruments of the same policy: making resistance look hopeless.\n\nWhen we admire a historical figure for one quality, it is worth checking the full record. Powerful people often choose kindness or harshness for strategic reasons, not out of character alone.",
+      "quote": "Accordingly he cut off the hands of those who had borne arms against him. Their lives he spared, that the punishment of their rebellion might be the more conspicuous.",
+      "locator": "Book VIII. Continuation of Caesar's Gallic War Ascribed to Aulus Hirtius. Preface ¶45",
+      "apply_it": "Choose a public figure you admire. Look up one episode that complicates your picture of them.",
+      "quiz": {
+        "question": "What did Caesar do to the defenders of Uxellodunum, according to Hirtius?",
+        "options": [
+          "Freed them unconditionally",
+          "Executed all of them",
+          "Cut off their hands but spared their lives as a warning",
+          "Made them his bodyguard"
+        ],
+        "answer": 2,
+        "explanation": "Hirtius says he cut off their hands and let them live, so the punishment would deter others."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--37",
+      "topic": "communication",
+      "tags": [
+        "propaganda",
+        "third-person",
+        "self-presentation",
+        "writing"
+      ],
+      "title": "Caesar's 'plain notes' were carefully crafted publicity",
+      "body": "Caesar wrote his Commentaries in the third person, as if a neutral officer were reporting what 'Caesar' did. The style is spare and factual, and it presents itself as raw material, notes for future historians. His officer Hirtius, introducing Book VIII, says exactly that: they were published so historians would have memoirs of these deeds. Yet he adds that they were so elegant that historians found themselves robbed of material rather than supplied with it.\n\nThat was the point. The books reached Rome while Caesar was still away and fighting for his political future. A calm, modest-sounding record of victories made a powerful argument.\n\nThe most persuasive self-promotion often looks like plain reporting. When a story sounds objective, ask who wrote it, and why then.",
+      "quote": "which were published for the use of historians, that they might not want memoirs of such achievements",
+      "locator": "Book VIII. Continuation of Caesar's Gallic War Ascribed to Aulus Hirtius. Preface ¶1",
+      "apply_it": "Read your own latest report or update as if a rival wrote it. Where does plain-sounding fact quietly flatter you?",
+      "quiz": {
+        "question": "Why is writing in the third person effective self-presentation?",
+        "options": [
+          "It was required by Roman law",
+          "It made the books shorter",
+          "It makes the account sound like neutral reporting rather than boasting",
+          "Caesar could not write in the first person"
+        ],
+        "answer": 2,
+        "explanation": "Third-person, matter-of-fact prose makes Caesar's achievements read like objective history."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--38",
+      "topic": "communication",
+      "tags": [
+        "rubicon",
+        "omission",
+        "civil-war",
+        "self-presentation"
+      ],
+      "title": "What a storyteller leaves out can matter as much as what they say",
+      "body": "In January 49 BC the Senate in Rome passed its emergency decree against Caesar, and two tribunes who had vetoed measures against him fled to his camp at Ravenna. In The Civil War, Caesar describes his speech to the thirteenth legion: his enemies' wrongs, the tribunes' rights trampled, nine years of loyal service in Gaul. The soldiers cried out that they would defend him.\n\nThen comes one plain sentence: he set off with that legion to Ariminum (modern Rimini). He does not mention the Rubicon, the small river that marked his province's border, though crossing it with an army was the act that began civil war.\n\nFamous moments can vanish from the version told by the person most responsible. Ask what a narrator chose not to show.",
+      "quote": "Having made himself acquainted with the disposition of his soldiers, Caesar set off with that legion to Ariminum",
+      "locator": "Book I ¶8",
+      "apply_it": "In the next account you read of a controversial decision, ask: what key moment is missing or passed over quickly?",
+      "quiz": {
+        "question": "How does Caesar describe his move into Italy in The Civil War?",
+        "options": [
+          "In a plain sentence about marching to Ariminum, without naming the Rubicon",
+          "As a dramatic crossing of the Rubicon",
+          "As an order from the Senate",
+          "He says nothing about leaving Ravenna"
+        ],
+        "answer": 0,
+        "explanation": "Caesar's own account moves straight to Ariminum and never names the Rubicon."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--39",
+      "topic": "lives-history",
+      "tags": [
+        "clemency",
+        "civil-war",
+        "corfinium",
+        "policy"
+      ],
+      "title": "At Corfinium, Caesar's mercy was a weapon in a war for opinion",
+      "body": "In February 49 BC, early in the civil war, Caesar besieged the town of Corfinium in central Italy, held for Pompey's side by Lucius Domitius. Domitius planned to flee, his own soldiers handed him over, and the town surrendered. Caesar had the senators, knights and officers brought before him, protected them from his soldiers' taunts, briefly reproached them, and let them all go. He even returned the public money Domitius had brought, so he would not seem more generous with lives than with cash.\n\nIn a war among Romans, every town watched how he treated his opponents. Mercy made surrender easy and fighting him look unnecessary.\n\nGenerosity to opponents can be principled and strategic at once. People notice how you treat those who stood against you.",
+      "quote": "that he might not appear more moderate with respect to the life of men than in money matters",
+      "locator": "Book I ¶24",
+      "apply_it": "Think of someone who opposed you on a past decision. Find one way to treat them generously this week.",
+      "quiz": {
+        "question": "What did Caesar do with the senators and officers captured at Corfinium?",
+        "options": [
+          "Executed them",
+          "Sent them to Rome in chains",
+          "Held them for ransom",
+          "Protected them and let them all go, even returning money"
+        ],
+        "answer": 3,
+        "explanation": "He released them unharmed and returned the funds, a public show of clemency early in the civil war."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--40",
+      "topic": "communication",
+      "tags": [
+        "negotiation",
+        "peace",
+        "record",
+        "civil-war"
+      ],
+      "title": "Keep offering talks, both because peace may come and because people are watching",
+      "body": "Through the spring of 49 BC, as Pompey withdrew to Brundisium (modern Brindisi) to ship his army across to Greece, Caesar kept sending messages asking for a personal meeting. He sent a captured officer back with an invitation, and asked Pompey's relative Libo to arrange talks. Pompey replied that he could not negotiate without the consuls, who had already sailed.\n\nCaesar says that although his peace efforts often slowed his military plans, he persisted as if peace were still possible. Later, before the great battle at Pharsalus, he reminded his troops of every one of those efforts.\n\nOffering to talk is worth doing for its own sake. It also builds a record of good faith that shapes how others judge the conflict.",
+      "quote": "Caesar conducted matters as if he thought that the hopes of peace were not yet to be given up.",
+      "locator": "Book I ¶27",
+      "apply_it": "In a current disagreement, make one more genuine offer to talk, and keep a short note that you did.",
+      "quiz": {
+        "question": "Why did Caesar keep proposing meetings with Pompey in 49 BC?",
+        "options": [
+          "Pompey had asked him to",
+          "He acted as if peace were still possible, even though it slowed his plans",
+          "The Senate ordered it",
+          "He wanted to capture Pompey at the meeting"
+        ],
+        "answer": 1,
+        "explanation": "He persisted with peace proposals, and later used them to show his soldiers he had sought peace."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--41",
+      "topic": "productivity",
+      "tags": [
+        "transfer",
+        "improvisation",
+        "learning",
+        "ilerda"
+      ],
+      "title": "Lessons from one place can solve problems in another",
+      "body": "In 49 BC Caesar fought Pompey's generals near Ilerda (modern Lleida) in northeastern Spain. Floods swept away his bridges, the enemy guarded every crossing, and his army ran short of food. Caesar remembered the light boats he had seen in Britain years before. He had his soldiers build keels and ribs of light timber, weave the hulls from wicker, and cover them with hides.\n\nThe boats were hauled twenty-two miles by wagon in one night. Troops crossed the river, seized and fortified a hill, and a new bridge was built in two days. Supplies flowed again.\n\nExperience is most valuable when it travels. When you are stuck, ask where else you have seen a similar problem solved, even in a very different setting.",
+      "quote": "Caesar ordered his soldiers to make ships of the kind that his knowledge of Britain a few years before had taught him.",
+      "locator": "Book I ¶55",
+      "apply_it": "Take a problem you are stuck on and ask: where have I seen something like this solved before, in any field?",
+      "quiz": {
+        "question": "Where did Caesar get the idea for the boats he used at Ilerda?",
+        "options": [
+          "From Egyptian engineers",
+          "From what he had seen in Britain years earlier",
+          "From a Greek book",
+          "From Pompey's navy"
+        ],
+        "answer": 1,
+        "explanation": "He copied the light wicker-and-hide boats he had seen in Britain."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--42",
+      "topic": "leadership",
+      "tags": [
+        "strategy",
+        "patience",
+        "unpopular-decisions",
+        "ilerda"
+      ],
+      "title": "Winning without a battle can be the better victory, even if it is unpopular",
+      "body": "Near Ilerda in 49 BC, Caesar cut Pompey's generals Afranius and Petreius off from their supplies. His soldiers begged to attack. Caesar refused. Why risk men who had served him so well, even in a winning battle? A general, he reasoned, should conquer by planning as much as by the sword, and he pitied the fellow citizens who would die.\n\nHis troops grumbled openly. But soon the hungry enemy soldiers began crossing to visit friends in Caesar's camp, thanking them for sparing them, until the two camps seemed like one. The enemy army surrendered and was disbanded, with no one forced to join Caesar.\n\nA leader sometimes has to choose the slower, less dramatic path that costs fewer people, and stand firm while others want a fight.",
+      "quote": "it was as much a general's duty to conquer by tactics, as by the sword.",
+      "locator": "Book I ¶73",
+      "apply_it": "Before your next confrontation, ask whether patience and preparation could get the same result with less damage.",
+      "quiz": {
+        "question": "Why did Caesar refuse to attack at Ilerda when his soldiers wanted to?",
+        "options": [
+          "He was afraid of losing",
+          "His officers were sick",
+          "He had run out of weapons",
+          "He hoped to win without bloodshed by cutting off supplies, sparing his men and fellow citizens"
+        ],
+        "answer": 3,
+        "explanation": "He believed a general should win by tactics as much as by fighting, and the enemy army soon surrendered."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--43",
+      "topic": "lives-history",
+      "tags": [
+        "overconfidence",
+        "curio",
+        "risk",
+        "past-success"
+      ],
+      "title": "Past success is a dangerous adviser",
+      "body": "In 49 BC Caesar sent Gaius Curio, a young and ambitious supporter, to take the province of Africa (roughly modern Tunisia). Curio won early fights. When King Juba of Numidia marched against him, he wisely fortified a strong camp and sent for reinforcements.\n\nThen deserters told him only a small force was near; Juba, they said, had gone home. Caesar names what made Curio believe them: his youth, high spirits, past good fortune and confidence. He attacked, was drawn into open country by the Bagradas river, and was surrounded by Juba's full army. Refusing to face Caesar after losing his army, he fought until he was killed.\n\nA string of wins can make risky information feel trustworthy. Recheck your assumptions most carefully when you are on a roll.",
+      "quote": "His youth, his spirits, his former good fortune and confidence of success, contributed much to confirm this resolution.",
+      "locator": "Book II ¶38",
+      "apply_it": "After your next success, list one assumption you are now taking for granted, and test it before your next big move.",
+      "quiz": {
+        "question": "What led Curio to abandon his strong camp and attack?",
+        "options": [
+          "Deserters' false report, believed because of his confidence and past success",
+          "Orders from Caesar",
+          "His soldiers mutinied",
+          "He ran out of water"
+        ],
+        "answer": 0,
+        "explanation": "Caesar says Curio's youth and past good fortune made him trust a false report, with fatal results."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--44",
+      "topic": "mental-strength",
+      "tags": [
+        "morale",
+        "hardship",
+        "resilience",
+        "dyrrachium"
+      ],
+      "title": "Showing you can endure hardship can weaken your opponent's hopes",
+      "body": "In 48 BC, near Dyrrachium (modern Durres, Albania), Caesar tried to wall in Pompey's larger army. Pompey was supplied by sea; Caesar's men had eaten the countryside bare and were short of grain. Some of them found a root called chara, mixed it with milk, and baked it into a kind of bread.\n\nWhen Pompey's soldiers jeered at their hunger, Caesar's men threw these loaves over to them, to show they could live on almost anything. The soldiers said they would rather eat tree bark than let Pompey escape.\n\nHardship is easier to bear when you face it with defiance and a sense of shared purpose. Making the best of meagre resources can also tell rivals that waiting you out will not work.",
+      "quote": "loaves made of this, when Pompey's men upbraided ours with want, they frequently threw among them to damp their hopes.",
+      "locator": "Book III ¶48",
+      "apply_it": "When resources are tight, find one creative way to make do, and share it with your team as a sign you can keep going.",
+      "quiz": {
+        "question": "What did Caesar's soldiers do with their root bread at Dyrrachium?",
+        "options": [
+          "Sold it to Pompey's men",
+          "Offered it to the gods",
+          "Threw it to Pompey's taunting soldiers to dash their hopes",
+          "Hid it from their officers"
+        ],
+        "answer": 2,
+        "explanation": "Throwing the loaves showed the enemy they could survive on very little, undermining hope of starving them out."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--45",
+      "topic": "mental-strength",
+      "tags": [
+        "setbacks",
+        "perspective",
+        "resilience",
+        "dyrrachium"
+      ],
+      "title": "Weigh one defeat against all your successes before you lose heart",
+      "body": "At Dyrrachium in 48 BC, Pompey broke through Caesar's lines. In the confusion Caesar's men panicked; he lost nearly a thousand soldiers and over thirty officers, many trampled in the ditches by their own side.\n\nCaesar abandoned the siege and addressed his army. Do not be dismayed, he said; weigh this one setback against your many victories in Italy, Spain and the crossing to Greece. Repair it with courage, as you did after Gergovia. Typically, he blamed fortune rather than himself. Though his soldiers now begged to fight, he judged they needed time to recover and withdrew.\n\nAfter a failure, it helps to see it against your whole record. Then give yourself enough time to steady before the next attempt.",
+      "quote": "to weigh their many successful engagements against one disappointment, and that, too, a trifling one.",
+      "locator": "Book III ¶74",
+      "apply_it": "Write down one recent setback. Next to it, list five things that have gone well for you this year.",
+      "quiz": {
+        "question": "How did Caesar encourage his army after the defeat at Dyrrachium?",
+        "options": [
+          "He promised them double pay",
+          "He said the defeat had never happened",
+          "He told them to weigh one disappointment against their many successes",
+          "He blamed the soldiers' cowardice"
+        ],
+        "answer": 2,
+        "explanation": "He asked them to see one setback against many victories, while giving them time to recover before fighting again."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--46",
+      "topic": "lives-history",
+      "tags": [
+        "pharsalus",
+        "anticipation",
+        "reserves",
+        "strategy"
+      ],
+      "title": "Put your best reserve where you expect the real attack",
+      "body": "In August 48 BC, at Pharsalus in Thessaly, Greece, Caesar faced Pompey's larger army. Caesar reports that he had about 22,000 men in the field, and that Pompey far outnumbered him in cavalry. Watching how Pompey had deployed, Caesar guessed his plan: the horsemen would sweep around Caesar's right wing and attack from behind.\n\nSo Caesar took one cohort from each legion of his third line and formed a hidden fourth line opposite the cavalry, telling them the day depended on their courage. When Pompey's cavalry charged, these cohorts burst out, routed them, cut down the archers, and swung round onto Pompey's flank.\n\nCaesar won by reading where the decisive blow would come and preparing for it. Study what your rival is counting on.",
+      "quote": "admonished them that the success of that day depended on their courage.",
+      "locator": "Book III ¶90",
+      "apply_it": "Ask what your main competitor or obstacle is counting on to win. Put your best resource there.",
+      "quiz": {
+        "question": "How did Caesar counter Pompey's cavalry at Pharsalus?",
+        "options": [
+          "With a hidden fourth line of cohorts placed against the cavalry",
+          "By attacking Pompey's camp first",
+          "By digging a trench",
+          "By bribing the cavalry commanders"
+        ],
+        "answer": 0,
+        "explanation": "Anticipating the flanking charge, he placed a fourth line that routed the cavalry and turned the battle."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--47",
+      "topic": "leadership",
+      "tags": [
+        "morale",
+        "energy",
+        "motivation",
+        "pharsalus"
+      ],
+      "title": "Channel your people's energy instead of holding it back",
+      "body": "At Pharsalus, Pompey ordered his infantry to stand still and receive Caesar's charge, hoping Caesar's men would arrive tired and disordered. Caesar thought this a mistake. All people, he wrote, have a natural eagerness to meet the challenge, and a general should increase it, not suppress it; that is why armies sounded trumpets and raised a war cry.\n\nHis veterans, seeing Pompey's men not advancing, halted on their own halfway, caught their breath, and then charged. Experience and spirit worked together.\n\nWhen people are keen to act, a leader's job is usually to direct that energy, not dampen it with excessive caution. Experienced teams can be trusted to pace themselves.",
+      "quote": "This a general should endeavour not to repress, but to increase",
+      "locator": "Book III ¶93",
+      "apply_it": "Notice where your team is eager to move. Give them a clear target and room to run, rather than adding another layer of caution.",
+      "quiz": {
+        "question": "What did Caesar think of Pompey's order for his infantry to stand still at Pharsalus?",
+        "options": [
+          "It was brilliant",
+          "It was the only possible choice",
+          "He did not notice it",
+          "It wrongly suppressed the soldiers' natural eagerness, which a general should increase"
+        ],
+        "answer": 3,
+        "explanation": "Caesar argued that a leader should increase, not repress, the natural spirit people bring to a fight."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--48",
+      "topic": "lives-history",
+      "tags": [
+        "pharsalus",
+        "clemency",
+        "civil-war",
+        "human-cost"
+      ],
+      "title": "After Pharsalus, Caesar pardoned the defeated, and many thousands still died",
+      "body": "Caesar reports that about fifteen thousand of Pompey's army fell at Pharsalus and more than twenty-four thousand were taken prisoner. He says he lost about two hundred soldiers and thirty centurions, figures that historians treat with caution.\n\nThe morning after, the Pompeians who had fled to a hill came down and laid down their arms. They threw themselves on the ground in tears and begged for mercy. Caesar told them to rise, spoke of his clemency, pardoned them all, and ordered that nothing be taken from them.\n\nClemency helped Caesar turn former enemies into followers in a war among citizens. Even so, the battle was a slaughter of Romans by Romans. Mercy after the fact is real and matters, but it does not undo the cost.",
+      "quote": "he comforted them and bade them rise, and having spoken a few words of his own clemency to alleviate their fears, he pardoned them all",
+      "locator": "Book III ¶99",
+      "apply_it": "After winning an argument or contest, find one way to help the other side save face and move on.",
+      "quiz": {
+        "question": "How did Caesar treat Pompey's surrendering soldiers after Pharsalus?",
+        "options": [
+          "He sold them as slaves",
+          "He pardoned them all and ordered that nothing be taken from them",
+          "He executed the officers",
+          "He sent them to Gaul"
+        ],
+        "answer": 1,
+        "explanation": "He pardoned them and protected their property, part of his policy of clemency in the civil war."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--49",
+      "topic": "lives-history",
+      "tags": [
+        "pompey",
+        "betrayal",
+        "adversity",
+        "loyalty"
+      ],
+      "title": "In adversity, friends can quickly turn into enemies",
+      "body": "After Pharsalus, Pompey fled with a few followers. Cities he had once commanded shut their gates to him. In September 48 BC he sailed to Pelusium in Egypt, hoping the young king Ptolemy would shelter him, since Pompey had been a friend of the king's father.\n\nThe king's advisers sent a friendly reply in public, but secretly sent men to kill him. Pompey was greeted by an officer who had once served under him, stepped into a small boat, and was murdered. Caesar, his rival, gives the advisers' possible motives: fear, or contempt for a man whose luck had run out, as in adversity friends commonly turn into enemies.\n\nSupport that depends on your success is fragile. Value the people who stay when fortune turns.",
+      "quote": "as in adversity friends commonly change to enemies",
+      "locator": "Book III ¶105",
+      "apply_it": "Think of someone who stood by you in a hard time. Send them a message of thanks this week.",
+      "quiz": {
+        "question": "What happened to Pompey when he sought refuge in Egypt?",
+        "options": [
+          "He was welcomed and made governor",
+          "He was murdered by men sent by the young king's advisers",
+          "He was handed over to Caesar alive",
+          "He sailed on to Spain"
+        ],
+        "answer": 1,
+        "explanation": "The king's advisers feigned friendship and had him killed as he came ashore in a small boat."
+      }
+    },
+    {
+      "id": "gallic-war-caesar--50",
+      "topic": "lives-history",
+      "tags": [
+        "overconfidence",
+        "reputation",
+        "alexandria",
+        "risk"
+      ],
+      "title": "Reputation is not an army: even Caesar overrated his own fame",
+      "body": "Chasing Pompey in 48 BC, Caesar sailed to Alexandria with just two legions totalling about 3,200 men, plus 800 cavalry. The rest, he says, were too worn out by wounds and marching to follow. He went anyway, trusting that the fame of his victories would make him safe anywhere.\n\nOn landing he learned Pompey was dead. Crowds rioted because his officials carried the symbols of Roman authority, and soldiers were killed in the streets. Soon he was besieged in the city by the Egyptian king's army, and the Civil War breaks off in the middle of that struggle.\n\nEven the most successful leader can mistake reputation for real strength. When you are well known, it is easy to assume that name alone will carry you. Bring enough real resources anyway.",
+      "quote": "relying on the fame of his exploits; did not hesitate to set forward with a feeble force, and thought that he would be secure in any place.",
+      "locator": "Book III ¶107",
+      "apply_it": "Look at a plan where you are counting on your reputation or goodwill. What practical backup would you need if that was not enough?",
+      "quiz": {
+        "question": "Why did Caesar go to Alexandria with such a small force?",
+        "options": [
+          "He was ordered to by the Senate",
+          "Egypt had invited him as king",
+          "He wanted to hide from Pompey",
+          "He trusted that the fame of his exploits would keep him safe"
+        ],
+        "answer": 3,
+        "explanation": "He relied on his reputation and took a weak force, and soon found himself besieged in Alexandria."
+      }
+    }
+  ]
+}

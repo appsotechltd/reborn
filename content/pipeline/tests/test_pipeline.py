@@ -143,6 +143,13 @@ class GutenbergTest(unittest.TestCase):
         self.assertEqual(gutenberg._locator(long, 64), "Chapter VI. The Struggle for Means to Work ¶64")
         self.assertEqual(gutenberg._locator("Chapter I", 3), "Chapter I ¶3")
 
+    def test_heading_prefix_catches_wrapped_mixed_case_headings(self):
+        text = ("This eBook is for the use of anyone anywhere.\n*** START OF THE PROJECT GUTENBERG EBOOK X ***\n\n"
+                "Chapter I: The Extent Of The Empire In The Age Of The\nAntonines.\u2014Part I.\n\n"
+                "In the second century the empire was large.\n\n*** END OF THE PROJECT GUTENBERG EBOOK X ***\n")
+        _, _, passages = gutenberg.parse_text(text, "gibbon", heading_prefix="Chapter ")
+        self.assertEqual(passages[0].locator, "Chapter I: The Extent Of The Empire In The Age Of The Antonines.\u2014Part I ¶1")
+
 
 class OpenStaxTest(unittest.TestCase):
     ENTRY = {"id": "psych", "adapter": "openstax", "repo": "osbooks-psychology", "collection": "psychology-2e",

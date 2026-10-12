@@ -828,3 +828,89 @@ adapter = "web"
 url = "https://doi.org/10.1177/0030222820941296"
 licence = "cc-by-4.0"
 # OMEGA - Journal of Death and Dying 85(2):345-383 (2022, online 2020), DOI 10.1177/0030222820941296; CC BY 4.0 statement confirmed in the article's permissions block (PMC9185109).
+
+# ---------------------------------------------------------------- Kings, kingdoms and generals (added 2026-10-12)
+
+[[source]]
+id = "gallic-war-caesar"
+adapter = "gutenberg"
+gutenberg_id = 10657
+licence = "public-domain"
+# McDevitte and Bohn translation (1869).
+
+[[source]]
+id = "anabasis-xenophon"
+adapter = "gutenberg"
+gutenberg_id = 1170
+licence = "public-domain"
+# H. G. Dakyns translation (d. 1911).
+
+[[source]]
+id = "history-herodotus"
+adapter = "gutenberg"
+gutenberg_id = 2707
+licence = "public-domain"
+# G. C. Macaulay translation (1890), volume 1.
+
+[[source]]
+id = "peloponnesian-war-thucydides"
+adapter = "gutenberg"
+gutenberg_id = 7142
+licence = "public-domain"
+# Richard Crawley translation (1874).
+
+[[source]]
+id = "anabasis-of-alexander-arrian"
+adapter = "gutenberg"
+gutenberg_id = 46976
+licence = "public-domain"
+# E. J. Chinnock translation (1884).
+
+[[source]]
+id = "on-war-clausewitz"
+adapter = "gutenberg"
+gutenberg_id = 1946
+licence = "public-domain"
+# J. J. Graham translation (1873).
+
+[[source]]
+id = "baburnama"
+adapter = "gutenberg"
+gutenberg_id = 44608
+licence = "public-domain"
+# Annette Susannah Beveridge translation (1922; she died 1929).
+
+[[source]]
+id = "timbuctoo-the-mysterious-dubois"
+adapter = "gutenberg"
+gutenberg_id = 78611
+licence = "public-domain"
+# Félix Dubois (d. 1945), translated by Diana White, 1896.
+
+[[source]]
+id = "bushido-nitobe"
+adapter = "gutenberg"
+gutenberg_id = 12096
+licence = "public-domain"
+
+[[source]]
+id = "decline-and-fall-gibbon"
+adapter = "gutenberg"
+gutenberg_id = 731
+heading_prefix = "Chapter "
+licence = "public-domain"
+# Volume 1.
+
+[[source]]
+id = "life-of-charlemagne-einhard"
+adapter = "gutenberg"
+gutenberg_id = 48870
+licence = "public-domain"
+# A. J. Grant translation (1905-1922 edition; Grant d. 1948).
+
+[[source]]
+id = "olden-times-in-zululand-bryant"
+adapter = "web"
+url = "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor"
+licence = "public-domain"
+# A. T. Bryant (1929; he died 1953): public domain in the US and in life+70 countries. Read from the Internet Archive scan.

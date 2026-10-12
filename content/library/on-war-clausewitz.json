@@ -1,0 +1,1191 @@
+{
+  "source": {
+    "id": "on-war-clausewitz",
+    "title": "On War",
+    "authors": [
+      "Carl von Clausewitz"
+    ],
+    "translator": "J. J. Graham",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/1946",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Carl von Clausewitz, On War (trans. J. J. Graham), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1832,
+    "language": "en",
+    "retrieved_at": "2026-10-12"
+  },
+  "cards": [
+    {
+      "id": "on-war-clausewitz--01",
+      "topic": "lives-history",
+      "tags": [
+        "clausewitz",
+        "mentorship",
+        "prussia",
+        "early-life"
+      ],
+      "title": "A teenage soldier became a great thinker because a mentor noticed him",
+      "body": "Carl von Clausewitz was born in 1780 at Burg, near Magdeburg in what is now eastern Germany. He joined the Prussian army as an ensign in 1792, aged about twelve, and saw campaigns on the Rhine in 1793 and 1794. Later he entered the military school in Berlin, studying there from 1801 to 1803.\n\nThere he caught the eye of General Scharnhorst, who ran the school. His translator's memoir says this patronage shaped his whole career, and Clausewitz kept a deep respect for Scharnhorst all his life.\n\nTalent often needs someone older to see it, test it and open doors. Seeking out such a person, and later being one, is one of the most useful things a career can contain.",
+      "quote": "During his residence there he attracted the notice of General Scharnhorst, then at the head of the establishment; and the patronage of this distinguished officer had immense influence on his future career",
+      "locator": "The Introduction of the Author ¶9",
+      "apply_it": "Name one person whose judgment you admire in your field. Send them a short, specific question this week.",
+      "quiz": {
+        "question": "Who first guided the young Clausewitz at the Berlin military school?",
+        "options": [
+          "Napoleon",
+          "General Scharnhorst",
+          "Frederick the Great",
+          "General Yorck"
+        ],
+        "answer": 1,
+        "explanation": "Scharnhorst, head of the Berlin military school, noticed him there, and his patronage shaped Clausewitz's career."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--02",
+      "topic": "lives-history",
+      "tags": [
+        "jena",
+        "1806",
+        "habits",
+        "change"
+      ],
+      "title": "Prussia lost at Jena by fighting the last war with an old method",
+      "body": "In October 1806, at Jena and Auerstedt in what is now central Germany, Napoleon shattered the Prussian army. Clausewitz served in that campaign as aide to Prince Augustus and, his memoir says, was taken prisoner and sent to France.\n\nLooking back, he blamed a habit. Prussian generals kept using the oblique battle order that had made Frederick the Great famous fifty years earlier, though Napoleon's armies fought in a new way. A method born in one situation, he wrote, quietly outlives itself while the world changes around it.\n\nEvery team has its 'how we always do it'. The danger is not the method itself but forgetting to ask whether the conditions that made it work still hold.",
+      "quote": "The evil is only that such a manner originating in a special case easily outlives itself, because it continues whilst circumstances imperceptibly change.",
+      "locator": "CHAPTER IV. Methodicism ¶23",
+      "apply_it": "Pick one routine your team follows. Ask: what problem was this designed for, and does that problem still exist?",
+      "quiz": {
+        "question": "Why, according to Clausewitz, did the Prussian generals fail in 1806?",
+        "options": [
+          "They had too few soldiers",
+          "Their king refused to fight",
+          "They used a method that had outlived the conditions it was made for",
+          "They attacked at night"
+        ],
+        "answer": 2,
+        "explanation": "They kept repeating Frederick the Great's oblique order, a manner that had outlived its day as circumstances changed."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--03",
+      "topic": "lives-history",
+      "tags": [
+        "tauroggen",
+        "1812",
+        "honesty",
+        "trust"
+      ],
+      "title": "At Tauroggen, honesty about uncertainty won a general's trust",
+      "body": "In 1812 Clausewitz left Prussian service to fight for Russia against Napoleon. That December he carried letters to General Yorck, who commanded the Prussian corps marching with the French near Tauroggen, in what is now Lithuania. Yorck asked him directly whether the Russian promises were sincere.\n\nClausewitz did not oversell. He vouched for the honesty of the men who wrote the letter, but said he could not promise their troops would arrive on time, because in war we often fall short of the line we draw for ourselves. Yorck shook his hand and agreed to separate from the French.\n\nPeople trust those who tell them exactly what they can and cannot guarantee.",
+      "quote": "for your Excellency knows that in war we must often fall short of the line we have drawn for ourselves.",
+      "locator": "The Introduction of the Author ¶11",
+      "apply_it": "Next time you make a promise at work, separate clearly what you can guarantee from what you only hope.",
+      "quiz": {
+        "question": "What did Clausewitz tell Yorck about the Russian plans?",
+        "options": [
+          "That the letter was sincere, but he could not guarantee the troop movements",
+          "That victory was certain",
+          "That Yorck must decide in an hour or be arrested",
+          "Nothing; he refused to answer"
+        ],
+        "answer": 0,
+        "explanation": "He vouched for the writers' sincerity but admitted plans in war often fall short, and that candour won Yorck over."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--04",
+      "topic": "lives-history",
+      "tags": [
+        "napoleon",
+        "1812",
+        "russia",
+        "will"
+      ],
+      "title": "Napoleon took Moscow in 1812 and still lost, because Russia would not yield",
+      "body": "In 1812 Napoleon invaded Russia with a vast army, and Clausewitz, then in Russian service, watched the campaign closely. Napoleon beat the main Russian army and took Moscow, expecting the Tsar to ask for peace as Austria and Russia had after his earlier victories. No peace came. Clausewitz counts that of about 600,000 men who crossed the Niemen, only about 50,000 came back.\n\nHis verdict was that the campaign failed because the government stayed firm and the people loyal. Capturing a capital could not force a decision that only the other side could make.\n\nWhen your plan depends on someone else giving in, ask honestly what happens if they simply refuse.",
+      "quote": "the campaign of 1812 did not succeed because the government remained firm, the people loyal and steadfast, because it therefore could not succeed.",
+      "locator": "CHAPTER IX. Plan of War when the Destruction of the Enemy is the Object ¶86",
+      "apply_it": "Look at one goal that depends on another person agreeing. Write down your plan for the case where they never do.",
+      "quiz": {
+        "question": "Why, in Clausewitz's view, did Napoleon's 1812 campaign fail?",
+        "options": [
+          "He never reached Moscow",
+          "His army was too small",
+          "He was betrayed by his generals",
+          "The Russian government stayed firm and the people loyal"
+        ],
+        "answer": 3,
+        "explanation": "He took Moscow, but the Russian government and people did not give in, so the peace he needed never came."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--05",
+      "topic": "lives-history",
+      "tags": [
+        "clausewitz",
+        "strengths",
+        "self-knowledge",
+        "gneisenau"
+      ],
+      "title": "A brilliant strategist is not always a born commander of troops",
+      "body": "In 1830 Clausewitz became chief of staff to Marshal Gneisenau's army on the Polish frontier. A fellow officer there, General Brandt, admired how Clausewitz judged marches, timings and where decisions would fall. Yet he added that Clausewitz lacked the habit of command and the knack of carrying soldiers with him, and that fate never gave him a high command to prove himself.\n\nIt is a mixed verdict. Clausewitz's gift was to see and explain the whole; leading men in the moment was another skill.\n\nMost of us have a similar split. Knowing which kind of contribution is truly yours helps you choose roles where you shine and find partners for the rest.",
+      "quote": "Fate has unfortunately denied him an opportunity of showing his talents in high command, but I have a firm persuasion that as a strategist he would have greatly distinguished himself.",
+      "locator": "The Introduction of the Author ¶21",
+      "apply_it": "Write down your strongest skill and one skill you rely on others for. Who covers that second one for you?",
+      "quiz": {
+        "question": "What did General Brandt think Clausewitz lacked?",
+        "options": [
+          "Courage",
+          "Strategic insight",
+          "The habit of command and the art of carrying troops with him",
+          "Knowledge of history"
+        ],
+        "answer": 2,
+        "explanation": "Brandt praised his strategic judgment but felt he lacked the habit of command and the art of leading troops forward."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--06",
+      "topic": "lives-history",
+      "tags": [
+        "clausewitz",
+        "marie-von-clausewitz",
+        "legacy",
+        "writing"
+      ],
+      "title": "On War was published by his wife after cholera cut his work short",
+      "body": "Clausewitz spent about twelve years, much of it while director of the war academy in Berlin, writing the book that became On War. He did not want it published in his lifetime. In November 1831, back in Breslau (now Wrocław in Poland), he caught cholera and died, leaving sealed packets of drafts.\n\nHis wife, Marie von Clausewitz, edited and published them in 1832. In her preface she describes how they shared everything, and how he used to tell her, half joking, that she would publish it. Even he called much of it unfinished.\n\nGreat work is often a partnership, and unfinished work can still change the world if someone cares enough to carry it.",
+      "quote": "The work to which these lines serve as a preface occupied almost entirely the last twelve years of the life of my inexpressibly beloved husband, who has unfortunately been torn too soon from myself and his country.",
+      "locator": "Preface to the First Edition ¶2",
+      "apply_it": "Think of a project you keep polishing in private. What would it take to share a rough version with one trusted person?",
+      "quiz": {
+        "question": "Who brought On War into print after Clausewitz died?",
+        "options": [
+          "His wife, Marie von Clausewitz",
+          "His mentor Scharnhorst",
+          "Napoleon's staff",
+          "The King of Prussia"
+        ],
+        "answer": 0,
+        "explanation": "Marie von Clausewitz edited and published his sealed papers in 1832, writing the preface herself."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--07",
+      "topic": "leadership",
+      "tags": [
+        "meetings",
+        "decisions",
+        "compromise",
+        "clarity"
+      ],
+      "title": "Meetings without clear ideas end in compromises worth nothing",
+      "body": "Clausewitz noticed that good commanders act by a trained feel for what is right. But persuading others is different. Then everything depends on clear concepts and showing how things connect. Without that, he wrote, councils are a battle of words that ends with everyone keeping their own view, or a polite middle course of no real value. His editor links this to the endless debates at allied headquarters in the 1813 Leipzig campaign.\n\nThe lesson suits any team. Before a big meeting, write down the actual question, the facts that matter and the reasoning behind each option. Split-the-difference answers often please everyone and solve nothing.",
+      "quote": "most deliberations are merely a contention of words, resting on no firm basis, and ending either in every one retaining his own opinion, or in a compromise from mutual considerations of respect, a middle course really without any value.",
+      "locator": "Notice ¶15",
+      "apply_it": "Before your next decision meeting, send a one-paragraph note naming the question and the key facts.",
+      "quiz": {
+        "question": "According to Clausewitz, what do councils lacking clear concepts usually produce?",
+        "options": [
+          "Bold, unified plans",
+          "Everyone keeping their own opinion, or a worthless middle course",
+          "A vote that settles things fairly",
+          "A quick decision by the youngest officer"
+        ],
+        "answer": 1,
+        "explanation": "Without clear ideas, deliberation becomes a contest of words ending in stalemate or a compromise of no real value."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--08",
+      "topic": "business",
+      "tags": [
+        "priorities",
+        "goals",
+        "effort",
+        "value"
+      ],
+      "title": "How much you will spend on a goal depends on how much it is worth",
+      "body": "In theory, Clausewitz says, a contest pushes both sides to extremes. In real life the political object, the original reason for fighting, sets the scale. A small object calls for small effort, and both sides know it. The smaller the object, the less we value it and the more easily we give it up.\n\nThis is a quiet rule of good management. Before a project, a dispute or a negotiation, decide what the outcome is really worth to you. That number should limit your time, money and stubbornness. Many people pour huge effort into small prizes simply because they got started.",
+      "quote": "the smaller our political object, the less value shall we set upon it, and the more easily shall we be induced to give it up altogether.",
+      "locator": "11. The Political Object Now Reappears ¶1",
+      "apply_it": "Pick one ongoing dispute or project. Write what the best outcome is worth to you, then check whether your effort matches it.",
+      "quiz": {
+        "question": "What, for Clausewitz, sets the measure of effort in a real war?",
+        "options": [
+          "The size of the army",
+          "The general's ambition",
+          "The weather",
+          "The political object, the original reason for fighting"
+        ],
+        "answer": 3,
+        "explanation": "The political object is the standard for both the aim and the amount of effort, so a small object justifies only small effort."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--09",
+      "topic": "mental-strength",
+      "tags": [
+        "uncertainty",
+        "courage",
+        "chance",
+        "risk"
+      ],
+      "title": "Where chance is large, you need courage in the same measure",
+      "body": "Clausewitz wrote that no human activity is so bound up with chance as war, which makes it more like a card game than a calculation. Theory cannot pretend otherwise. It has to leave room for courage, boldness and even rashness.\n\nHis point is that luck and courage go together. The bigger the margin for the unexpected, the more self-reliance you need to act inside it. Daring can still be wise; it is simply judged by a different standard than safe calculation.\n\nStarting a business, changing careers or raising a family all carry a margin you cannot plan away. Instead of waiting for certainty, build the courage to act well when certainty never comes.",
+      "quote": "There is therefore everywhere a margin for the accidental, and just as much in the greatest things as in the smallest. As there is room for this accidental on the one hand, so on the other there must be courage and self-reliance in proportion to the room available.",
+      "locator": "22. How This Accords Best with the Human Mind in General ¶2",
+      "apply_it": "Name one decision you are delaying until you feel certain. What would acting with 70 percent confidence look like?",
+      "quiz": {
+        "question": "What does Clausewitz say must match the room left for chance?",
+        "options": [
+          "Courage and self-reliance",
+          "More detailed plans",
+          "Larger reserves of money",
+          "Slower decisions"
+        ],
+        "answer": 0,
+        "explanation": "As there is room for the accidental, there must be courage and self-reliance in proportion to it."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--10",
+      "topic": "leadership",
+      "tags": [
+        "strategy",
+        "goals",
+        "means-and-ends",
+        "policy"
+      ],
+      "title": "War is policy by other means: tactics serve the purpose, not the other way round",
+      "body": "Clausewitz's most famous idea is that war is not a separate thing with its own aims. It continues political relations with other means added. Diplomatic notes stop, but the political thinking behind them goes on. War has its own grammar, he said, but not its own logic.\n\nThat is why the purpose must always rule the method. The general may tell the statesman what the instrument can and cannot do, but the reason for using it comes from the policy.\n\nIn organisations, sales pushes, campaigns and reorganisations easily become ends in themselves. Keep asking what larger purpose each one serves, and whether it still serves it.",
+      "quote": "Is not war merely another kind of writing and language for political thoughts? It has certainly a grammar of its own, but its logic is not peculiar to itself.",
+      "locator": "CHAPTER VI. A. Influence of the Political Object on the Military Object ¶15",
+      "apply_it": "Take one big task on your list and write one sentence on the larger purpose it serves. If you can't, question the task.",
+      "quiz": {
+        "question": "What does Clausewitz mean by saying war has 'a grammar of its own' but not its own logic?",
+        "options": [
+          "War follows only military rules",
+          "Politicians should run every battle",
+          "War has its own methods, but its purpose comes from policy",
+          "Wars cannot be explained"
+        ],
+        "answer": 2,
+        "explanation": "War's methods are its own, but its reasons and aims are set by policy, which continues throughout."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--11",
+      "topic": "leadership",
+      "tags": [
+        "judgment",
+        "situation",
+        "realism",
+        "planning"
+      ],
+      "title": "Your first job is to understand the kind of contest you are really in",
+      "body": "Because wars arise from very different motives, they differ greatly in character. So, Clausewitz says, the first and most decisive judgment a leader makes is to grasp what kind of war this is. The worst error is to treat it as something it is not, or to wish it into something it can never become.\n\nThis applies far beyond war. A price war is not a branding exercise, a family crisis is not a debate, and a small dispute is not a battle for survival. Misreading the type of problem makes every later decision wrong, however clever. Before acting, name the situation honestly.",
+      "quote": "most decisive act of judgment which the Statesman and General exercises is rightly to understand in this respect the War in which he engages, not to take it for something, or to wish to make of it something, which by the nature of its relations it is impossible for it to be.",
+      "locator": "27. Influence of This View on the Right Understanding of Military. History, and on the Foundations of Theory ¶2",
+      "apply_it": "For a problem you face now, finish this sentence: 'This is really a ___ problem, not a ___ problem.'",
+      "quiz": {
+        "question": "What does Clausewitz call the first and most decisive act of judgment?",
+        "options": [
+          "Choosing the battlefield",
+          "Understanding correctly the kind of war you are engaged in",
+          "Picking the best generals",
+          "Counting the enemy's soldiers"
+        ],
+        "answer": 1,
+        "explanation": "The leader must understand the war's true nature and not mistake it for, or try to turn it into, something it cannot be."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--12",
+      "topic": "learning",
+      "tags": [
+        "systems-thinking",
+        "trinity",
+        "balance",
+        "theory"
+      ],
+      "title": "Every conflict pulls between passion, chance and reason",
+      "body": "Clausewitz ends his first chapter with a 'wonderful trinity'. War combines raw passion and hostility, which he links mostly to the people; the play of chance and probability, where the general's courage and talent work; and reason, the political purpose that belongs to the government.\n\nAny theory that ignores one of the three, or fixes their balance in advance, collides with reality. A good thinker stays poised between them, like an object held between three magnets.\n\nIt is a helpful lens for any human conflict, from office politics to a court case. Ask what emotions are driving it, where luck and skill will matter, and what rational aim is at stake.",
+      "quote": "The problem is, therefore, that theory shall keep itself poised in a manner between these three tendencies, as between three points of attraction.",
+      "locator": "28. Result for Theory ¶4",
+      "apply_it": "Map a current conflict in three lines: the emotions involved, the chance factors, and the rational goal.",
+      "quiz": {
+        "question": "Which three forces make up Clausewitz's 'trinity' of war?",
+        "options": [
+          "Money, men and weapons",
+          "Attack, defence and retreat",
+          "King, army and church",
+          "Passion, chance and reason"
+        ],
+        "answer": 3,
+        "explanation": "Violence and passion, the play of chance and probability, and reason as a political instrument."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--13",
+      "topic": "leadership",
+      "tags": [
+        "decision-making",
+        "intuition",
+        "coup-d-oeil",
+        "resolution"
+      ],
+      "title": "Great leaders combine a quick inner eye with the courage to follow it",
+      "body": "War is full of danger, uncertainty and chance, and plans keep meeting surprises. To get through, Clausewitz says, a commander needs two qualities. The first is coup d'oeil: an inner light that finds the truth quickly where ordinary minds see nothing or see it only after long study. The second is resolution: the courage to act on that faint light.\n\nNeither is enough alone. Insight without resolve leads to hesitation; resolve without insight leads to blind action.\n\nAt work, practise both. Train your judgment by reviewing past calls, and train your nerve by committing to decisions on time rather than waiting for perfect information.",
+      "quote": "two qualities are indispensable: in the first place an intellect which, even in the midst of this intense obscurity, is not without some traces of inner light, which lead to the truth, and then the courage to follow this faint light.",
+      "locator": "CHAPTER III. The Genius for War ¶16",
+      "apply_it": "Recall a recent decision you got right quickly. Write down what you noticed that others missed.",
+      "quiz": {
+        "question": "What two qualities does Clausewitz say are indispensable amid uncertainty?",
+        "options": [
+          "Wealth and rank",
+          "Strength and speed",
+          "A quick inner eye for the truth and the resolution to follow it",
+          "Patience and secrecy"
+        ],
+        "answer": 2,
+        "explanation": "Coup d'oeil, an intellect with an inner light even in obscurity, and resolution, the courage to follow that light."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--14",
+      "topic": "mental-strength",
+      "tags": [
+        "resolve",
+        "overthinking",
+        "decisions",
+        "courage"
+      ],
+      "title": "Being clever is not the same as being decisive",
+      "body": "Clausewitz saw that the cleverest people are often the least able to decide. Resolution, he argued, is not an act of intelligence but of feeling: courage in the face of responsibility. Some people see problems sharply and are not afraid, yet their insight and their courage never join hands, so they stay stuck.\n\nIn strong minds the intellect shows why a risk must be taken, and a fear of wavering then outweighs every other fear.\n\nIf you tend to overthink, remember that more analysis will not create resolve. At some point the useful question is not 'What else should I know?' but 'What does waiting cost me?'",
+      "quote": "Mere intelligence is still not courage, for we often see the cleverest people devoid of resolution.",
+      "locator": "CHAPTER III. The Genius for War ¶17",
+      "apply_it": "For a decision you keep postponing, write down what the delay itself is costing you each week.",
+      "quiz": {
+        "question": "According to Clausewitz, why do some very clever people fail to decide?",
+        "options": [
+          "Their insight and courage never work together to produce resolution",
+          "They lack information",
+          "They are lazy",
+          "They fear success"
+        ],
+        "answer": 0,
+        "explanation": "Resolution needs intellect to show the need to venture and feeling to supply the courage; without both, clever people hesitate."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--15",
+      "topic": "productivity",
+      "tags": [
+        "promotion",
+        "career",
+        "confidence",
+        "responsibility"
+      ],
+      "title": "People who are decisive in junior roles can freeze when promoted",
+      "body": "Clausewitz noticed a pattern: many officers who showed great resolution in a lower rank lost it in a higher one. Up there they see more dangers in a wrong decision and face unfamiliar problems. Used to acting on instinct, they grow more timid the more they notice their own wavering. A French saying he quotes sums it up: some shine in second place and fade in first.\n\nPromotion changes the job, not just the title. If you step up, expect the doubt and build new habits: get a clear view of the bigger picture, set decision deadlines and lean on trusted advisers. If you promote others, support them through this shift rather than assuming past boldness will carry over.",
+      "quote": "there have been many instances of men who have shown the greatest resolution in an inferior rank, and have lost it in a higher position.",
+      "locator": "CHAPTER III. The Genius for War ¶21",
+      "apply_it": "If you have recently stepped up, list two decisions you now own that you didn't before, and set a date for each.",
+      "quiz": {
+        "question": "Why do some bold junior officers lose their resolution when promoted?",
+        "options": [
+          "They become lazy",
+          "They face new, larger risks and unfamiliar problems, and their instinct no longer suffices",
+          "Their pay increases",
+          "They lose their courage in battle"
+        ],
+        "answer": 1,
+        "explanation": "Higher rank brings greater dangers of error and new problems, so those used to acting on impulse become more timid."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--16",
+      "topic": "leadership",
+      "tags": [
+        "morale",
+        "hope",
+        "teams",
+        "pressure"
+      ],
+      "title": "When everyone else is exhausted, the leader must rekindle hope",
+      "body": "While troops are fresh and eager, Clausewitz wrote, a commander needs little force of will. But when great results are at stake, difficulties come, and the machine itself starts to resist. Not through disobedience, but through spreading exhaustion and grief. Then the weight of the whole group's tiredness settles on the leader.\n\nHis job is to rekindle purpose and hope in others from his own spirit. When he can no longer do this, the group sinks with him.\n\nAny leader of a team in a hard stretch knows this. Your energy, steadiness and visible belief carry further than any memo. That is why leaders must protect their own reserves before the crisis arrives.",
+      "quote": "by the spark in his breast, by the light of his spirit, the spark of purpose, the light of hope, must be kindled afresh in others",
+      "locator": "CHAPTER III. The Genius for War ¶27",
+      "apply_it": "Next time your team hits a low point, name one concrete reason for hope out loud, and one next step.",
+      "quiz": {
+        "question": "When does Clausewitz say a commander most needs great force of will?",
+        "options": [
+          "When troops are fresh and eager",
+          "During peacetime drills",
+          "When writing reports",
+          "When difficulties arise and the whole group's weariness weighs on him"
+        ],
+        "answer": 3,
+        "explanation": "When the machine resists through exhaustion and suffering, the leader must rekindle purpose and hope in others."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--17",
+      "topic": "mental-strength",
+      "tags": [
+        "composure",
+        "emotions",
+        "self-control",
+        "stress"
+      ],
+      "title": "A strong mind stays steady in a storm, like a compass needle",
+      "body": "Clausewitz rejects the idea that strength of mind means strong outbursts of feeling. A strong mind, he says, is one that can still listen to reason in the middle of intense excitement. Its feelings are not destroyed but balanced by another feeling: a deep self-respect, the wish always to act as a reasoning being.\n\nHe compares it to a compass needle in a ship tossed by a storm. The ship rolls, but the needle still points true.\n\nYou cannot always stop strong feelings. You can practise noticing them and choosing your actions anyway: a pause before replying, a breath before deciding, a habit of asking what a calm version of you would do.",
+      "quote": "one which can maintain its serenity under the most powerful excitement, so that, in spite of the storm in the breast, the perception and judgment can act with perfect freedom, like the needle of the compass in the storm-tossed ship.",
+      "locator": "CHAPTER III. The Genius for War ¶46",
+      "apply_it": "Choose a short pause ritual, such as one slow breath, to use before your next heated reply.",
+      "quiz": {
+        "question": "How does Clausewitz define a strong mind?",
+        "options": [
+          "One that keeps its judgment free even under the most powerful excitement",
+          "One that feels nothing",
+          "One that shows its anger openly",
+          "One that avoids all risk"
+        ],
+        "answer": 0,
+        "explanation": "Strength of mind is keeping serenity and clear judgment despite the storm of feeling, like a compass in a storm."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--18",
+      "topic": "mental-strength",
+      "tags": [
+        "conviction",
+        "doubt",
+        "decisions",
+        "consistency"
+      ],
+      "title": "In doubtful moments, hold your first well-made judgment until clear evidence moves you",
+      "body": "In war a flood of vivid impressions, rumours and suffering keeps pressing against a commander's convictions. Feelings easily overrule reasoning. Clausewitz's remedy is a simple rule: in doubtful cases, stick to your first considered opinion and do not drop it until a clear conviction forces you to.\n\nThis is not stubbornness. It means trusting judgments made calmly, from a wider view, over the dazzle of the moment. That steadiness is what we call character.\n\nWhen a project wobbles and everyone panics, ask whether new facts have actually appeared, or only new fears. Change course for evidence, not for noise.",
+      "quote": "in all doubtful cases to adhere to the first opinion, and not to give it up until a clear conviction forces us to do so.",
+      "locator": "CHAPTER III. The Genius for War ¶50",
+      "apply_it": "Next time you feel the urge to reverse a decision, write down the new fact that justifies it. No new fact, no change.",
+      "quiz": {
+        "question": "What is Clausewitz's rule for doubtful cases?",
+        "options": [
+          "Always follow the latest report",
+          "Ask the troops to vote",
+          "Hold to your first opinion until a clear conviction forces you to change",
+          "Choose the safest option"
+        ],
+        "answer": 2,
+        "explanation": "He advises keeping the first considered opinion until clear conviction, not momentary impressions, compels a change."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--19",
+      "topic": "leadership",
+      "tags": [
+        "character",
+        "obstinacy",
+        "ego",
+        "feedback"
+      ],
+      "title": "Firmness is a strength; refusing to listen out of pride is obstinacy",
+      "body": "Clausewitz admired strength of character, but warned of its counterfeit: obstinacy. He saw obstinacy as a fault of the heart, not the head. It is resistance to better judgment that springs from a kind of egotism, the pleasure of governing yourself and others by your own mind alone.\n\nThe test is the source of your resistance. If you resist other views because of a better conviction or a trusted principle, that is character. If you resist simply from a feeling of opposition, it is obstinacy.\n\nWhen you dig in during a disagreement, ask yourself honestly: am I defending a reason, or defending my ego?",
+      "quote": "force of character degenerates into obstinacy whenever the resistance to opposing judgments proceeds not from better convictions or a reliance upon a trustworthy maxim, but from a feeling of opposition.",
+      "locator": "CHAPTER III. The Genius for War ¶55",
+      "apply_it": "In your next disagreement, state your reason in one sentence. If you can't, consider that you may just be resisting.",
+      "quiz": {
+        "question": "What turns strength of character into obstinacy?",
+        "options": [
+          "Holding a view for good reasons",
+          "Changing your mind often",
+          "Listening to advisers",
+          "Resisting other views from a mere feeling of opposition"
+        ],
+        "answer": 3,
+        "explanation": "When resistance comes not from better conviction or a trusted maxim but from a feeling of opposition, it becomes obstinacy."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--20",
+      "topic": "mental-strength",
+      "tags": [
+        "pressure",
+        "fear",
+        "judgment",
+        "experience"
+      ],
+      "title": "Under real pressure, reason works differently than it does at a desk",
+      "body": "Clausewitz walks the reader, step by step, from the edge of a battle toward the front line. The noise grows, someone known to us falls, and even the bravest feels confused. He notes that reason itself seems to bend in that medium; it is not refracted the same way as in quiet thought. Few people keep their power of quick decision the first time.\n\nHabit soon dulls the shock, but only exceptional character reaches full calm.\n\nThe same is true of hard conversations, emergencies or a live pitch. Do not judge yourself or others by what seems easy on paper, and expose yourself to pressure gradually so it stops being new.",
+      "quote": "The young soldier cannot reach any of these different strata of danger without feeling that the light of reason does not move here in the same medium, that it is not refracted in the same manner as in speculative contemplation.",
+      "locator": "CHAPTER IV. Of Danger in War ¶3",
+      "apply_it": "Rehearse one stressful task, such as a talk or difficult call, aloud before you do it for real.",
+      "quiz": {
+        "question": "What does Clausewitz say happens to reason in the presence of danger?",
+        "options": [
+          "It becomes sharper",
+          "It works in a different medium than in calm reflection",
+          "It disappears completely and never returns",
+          "It is unaffected"
+        ],
+        "answer": 1,
+        "explanation": "He says the light of reason is refracted differently under danger than in speculative contemplation."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--21",
+      "topic": "learning",
+      "tags": [
+        "information",
+        "rumours",
+        "negativity-bias",
+        "judgment"
+      ],
+      "title": "Most reports are wrong, and fear makes bad news grow",
+      "body": "Clausewitz was blunt about information in war: much of it contradicts itself, more is false, and most is doubtful. Worse, fear multiplies errors. People believe bad news more readily than good and enlarge it as they pass it on. Alarming reports rise like waves, fall back and rise again for no clear reason.\n\nHis advice is to judge by probability and knowledge of people, and for the leader to stand like a rock against which these waves break. If you are not naturally hopeful, lean deliberately from fear towards hope to stay balanced.\n\nIn a world of constant news and gossip, check sources, wait for confirmation and notice when fear is doing the reporting.",
+      "quote": "In a few words, most reports are false, and the timidity of men acts as a multiplier of lies and untruths. As a general rule, every one is more inclined to lend credence to the bad than the good.",
+      "locator": "CHAPTER VI. Information in War ¶2",
+      "apply_it": "Before reacting to an alarming message today, ask: who saw this first-hand, and what would confirm it?",
+      "quiz": {
+        "question": "What does Clausewitz say fear does to information?",
+        "options": [
+          "It multiplies lies and untruths",
+          "It sharpens accuracy",
+          "It has no effect",
+          "It makes people ignore bad news"
+        ],
+        "answer": 0,
+        "explanation": "He says timidity acts as a multiplier of lies, and people lend credence to the bad more than the good."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--22",
+      "topic": "mental-strength",
+      "tags": [
+        "execution",
+        "doubt",
+        "nerves",
+        "follow-through"
+      ],
+      "title": "Expect fresh doubts at the moment you start; they are normal",
+      "body": "Clausewitz observed that what we see with our own eyes strikes harder than conclusions reached by calm reflection. So no important undertaking ever began without the commander having to fight off new doubts as the action started. Even the person who made the plan, once on the spot, often thinks he got it wrong.\n\nHis answer is firm reliance on self. When the frightening foreground clears and the horizon widens, the first well-made conviction usually proves true.\n\nThe night before a launch, a move or a hard conversation, doubts flood in. Knowing that this happens to everyone helps you treat them as part of starting, not as proof the plan is wrong.",
+      "quote": "no important undertaking was ever yet carried out without the Commander having to subdue new doubts in himself at the time of commencing the execution of his work.",
+      "locator": "CHAPTER VI. Information in War ¶2",
+      "apply_it": "Write a one-line reminder of why you chose your current plan, and read it when doubts peak at the start.",
+      "quiz": {
+        "question": "According to Clausewitz, what happens as a commander begins to carry out an important plan?",
+        "options": [
+          "Everything becomes clear",
+          "His troops lose interest",
+          "He has to overcome new doubts in himself",
+          "The enemy surrenders"
+        ],
+        "answer": 2,
+        "explanation": "No important undertaking began without the commander subduing new doubts at the start of execution."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--23",
+      "topic": "productivity",
+      "tags": [
+        "friction",
+        "planning",
+        "execution",
+        "delays"
+      ],
+      "title": "Everything is simple, but the simplest thing is difficult",
+      "body": "Clausewitz gave the name friction to what separates real war from war on paper. He pictured a traveller who expects to finish two easy stages before nightfall, then finds no fresh horses, hills, bad roads and darkness. Countless small problems, none worth describing alone, add up and make us fall short.\n\nAn experienced general knows friction exists. He tries to overcome it where possible and does not expect a precision that friction makes impossible.\n\nProjects work the same way. The plan looks easy; then a file is missing, someone is ill and the software updates. Build slack into schedules, and treat small delays as normal rather than as signs of failure.",
+      "quote": "Everything is very simple in War, but the simplest thing is difficult.",
+      "locator": "CHAPTER VII. Friction in War ¶2",
+      "apply_it": "For your next project, add a buffer of at least 20 percent to the time you first estimate.",
+      "quiz": {
+        "question": "What does Clausewitz mean by 'friction'?",
+        "options": [
+          "Arguments between generals",
+          "The heat of gunfire",
+          "Resistance from the enemy's best troops",
+          "The many small difficulties that make real action harder than plans on paper"
+        ],
+        "answer": 3,
+        "explanation": "Friction is the accumulation of countless small difficulties that distinguishes real war from war on paper."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--24",
+      "topic": "learning",
+      "tags": [
+        "practice",
+        "training",
+        "experience",
+        "preparation"
+      ],
+      "title": "Meet a difficulty once in practice and you are half ready for it",
+      "body": "The only oil that reduces friction, Clausewitz says, is habit: an army made familiar with war. Habit strengthens the body in great effort, the mind in danger and judgment against first impressions. An experienced soldier is like an eye adjusting to a dark room.\n\nPeacetime drills are a weak substitute for real experience, but they help greatly if they include some of real war's friction, so leaders must use judgment, not just routine. Seeing a difficulty even once makes you half familiar with it.\n\nThe same goes for any skill. Practise under realistic conditions: rehearse with interruptions, run a fire drill for your project, try the hard conversation with a friend first.",
+      "quote": "if he has only met with them one single time before, even by that he is half acquainted with them.",
+      "locator": "CHAPTER VIII. Concluding Remarks, Book I ¶4",
+      "apply_it": "Rehearse one upcoming task under realistic pressure, such as a timed run-through or practice with interruptions.",
+      "quiz": {
+        "question": "What does Clausewitz call the only 'oil' that reduces friction?",
+        "options": [
+          "Money",
+          "Habituation to war through experience",
+          "Strict punishment",
+          "Better maps"
+        ],
+        "answer": 1,
+        "explanation": "Habituation, gained by experience and realistic exercises, is the one thing that lessens friction."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--25",
+      "topic": "learning",
+      "tags": [
+        "theory",
+        "judgment",
+        "self-education",
+        "mentoring"
+      ],
+      "title": "Good theory trains your judgment; it doesn't do your thinking for you",
+      "body": "Clausewitz believed no theory of war could give a leader rules to follow on the battlefield. Real situations are too varied, too emotional and too uncertain. Instead, theory should examine its subject closely, explain how means and ends relate and so educate the judgment of whoever studies it.\n\nHe compared it to a wise tutor who shapes a young mind without keeping the pupil in leading strings for life. Theory saves each new learner from clearing the same ground again, then steps aside.\n\nRead business books, manuals and frameworks this way. Use them to sharpen your understanding, not as scripts. The goal is a mind that can judge the case in front of it.",
+      "quote": "It should educate the mind of the future leader in War, or rather guide him in his self-instruction, but not accompany him to the field of battle",
+      "locator": "27. Theory Must Be of the Nature of Observations Not of Doctrine ¶2",
+      "apply_it": "After reading something useful, write how you would apply it to one real situation, and where it might not fit.",
+      "quiz": {
+        "question": "What did Clausewitz think theory should do for a leader?",
+        "options": [
+          "Give exact rules for every battle",
+          "Replace experience entirely",
+          "Educate his judgment and then let him act freely",
+          "Be memorised word for word"
+        ],
+        "answer": 2,
+        "explanation": "Theory should guide self-instruction and educate judgment, not accompany the leader onto the battlefield."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--26",
+      "topic": "learning",
+      "tags": [
+        "knowledge",
+        "mastery",
+        "internalising",
+        "skills"
+      ],
+      "title": "Knowledge only becomes power when it becomes part of you",
+      "body": "In most jobs, Clausewitz notes, you can look things up. An architect can calculate a beam's strength with a formula he barely remembers. But in war, things change so fast that the leader must carry his whole mental toolkit inside himself, ready to decide on the spot at every moment.\n\nKnowledge must be absorbed so fully into the mind and life that it turns into real power. That is why great commanders seem to act by natural talent, when in fact their study has become second nature.\n\nFor fast-moving work, such as negotiating, teaching or emergency care, aim beyond knowing where to find the answer. Practise until the core ideas are yours.",
+      "quote": "Knowledge must, by this complete assimilation with his own mind and life, be converted into real power.",
+      "locator": "46. Science Must Become Art ¶1",
+      "apply_it": "Pick one core idea from your field and explain it from memory to someone today, without notes.",
+      "quiz": {
+        "question": "Why does Clausewitz say a commander must fully absorb his knowledge?",
+        "options": [
+          "Because he must decide on the spot, with no time to consult books",
+          "To pass exams",
+          "To impress his staff",
+          "Because books are banned in the field"
+        ],
+        "answer": 0,
+        "explanation": "War's changing form means he must carry his knowledge within himself to decide at every moment."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--27",
+      "topic": "learning",
+      "tags": [
+        "decisions",
+        "outcomes",
+        "hindsight",
+        "probability"
+      ],
+      "title": "Judge a decision by its odds, not only by how it turned out",
+      "body": "Napoleon's campaigns of 1805, 1807 and 1809 ended in peace treaties; his campaign of 1812 ended in disaster. Clausewitz asks: should we now call the earlier ones reckless because the last one failed? That would be unfair. Each time, the outcome hung on whether a defeated ruler would make peace, something no one could know for certain.\n\nAll action aims at probable, not certain, results. Some cases call for great daring, and the greatest daring can be the greatest wisdom. Judging only by results confuses luck with skill.\n\nWhen you review a choice, ask what you knew at the time and how good the odds were, not just whether it worked.",
+      "quote": "All action in War, as we have already said, is directed on probable, not on certain, results.",
+      "locator": "CHAPTER V. Criticism ¶68",
+      "apply_it": "Review a recent decision that went badly. Was it a poor bet, or a good bet with bad luck?",
+      "quiz": {
+        "question": "Why does Clausewitz warn against judging Napoleon's earlier campaigns by the failure of 1812?",
+        "options": [
+          "They were actually defeats",
+          "Napoleon wasn't in charge then",
+          "The records were lost",
+          "Every action aims at probable results, so outcome alone doesn't prove a decision was wrong"
+        ],
+        "answer": 3,
+        "explanation": "Action in war is directed at probable results; judging purely by outcome confuses chance with sound or unsound judgment."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--28",
+      "topic": "productivity",
+      "tags": [
+        "strategy",
+        "willpower",
+        "second-guessing",
+        "long-term"
+      ],
+      "title": "Slow, long-range decisions need more willpower than fast ones",
+      "body": "It sounds strange, Clausewitz admits, but making an important strategic decision takes more strength of will than a tactical one. In the heat of battle you are carried along by the current and push your fears aside. In strategy things move slowly. There is time for your own worries and everyone else's: objections, protests and untimely regrets. And because you cannot see strategic situations directly, your convictions feel weaker.\n\nThe result is that most generals, when they should act, stay stuck in doubt.\n\nLong-term choices, such as career moves or investments, work the same way. Give yourself a deadline and a clear reason, so that slow time doesn't become endless second-guessing.",
+      "quote": "In Strategy, where all goes on at a slower rate, there is more room allowed for our own apprehensions and those of others, for objections and remonstrances, consequently also for unseasonable regrets",
+      "locator": "CHAPTER I. Strategy ¶12",
+      "apply_it": "Set a decision date for one long-term choice you keep revisiting, and write it in your calendar.",
+      "quiz": {
+        "question": "Why does strategy demand more willpower than tactics, according to Clausewitz?",
+        "options": [
+          "Strategy involves more fighting",
+          "Its slower pace leaves room for doubts, objections and regrets",
+          "Strategic decisions are always smaller",
+          "Tactics have no risk"
+        ],
+        "answer": 1,
+        "explanation": "The slow pace gives more room for apprehensions, objections and regrets, and situations must be conjectured rather than seen."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--29",
+      "topic": "lives-history",
+      "tags": [
+        "frederick-the-great",
+        "seven-years-war",
+        "discipline",
+        "focus"
+      ],
+      "title": "Frederick the Great won by doing just enough, never more than his means allowed",
+      "body": "In the Seven Years' War (1756 to 1763), Frederick the Great of Prussia faced far larger enemies. His goal was to bring Silesia, a province in what is now south-western Poland, safely into a guaranteed peace. Clausewitz praises his 1760 campaign not for clever flanking marches but for restraint: with very limited means, he never attempted more than his strength allowed.\n\nFrederick could not be an Alexander. Instead his power stayed controlled and balanced, rising to astonishing efforts in crises and then returning to the service of politics. Vanity, glory and revenge never pulled him off course.\n\nSmall organisations can win the same way: a clear aim, matched to their means, and no ego-driven detours.",
+      "quote": "Neither vanity, thirst for glory, nor vengeance could make him deviate from his course, and this course alone it is which brought him to a fortunate termination of the contest.",
+      "locator": "CHAPTER I. Strategy ¶15",
+      "apply_it": "Write your main goal for this quarter. Cross out one activity that serves your pride more than that goal.",
+      "quiz": {
+        "question": "What does Clausewitz most admire in Frederick's 1760 campaign?",
+        "options": [
+          "That he undertook nothing beyond his powers and just enough to gain his object",
+          "His brilliant flank marches",
+          "His conquest of Russia",
+          "His use of surprise attacks"
+        ],
+        "answer": 0,
+        "explanation": "With limited means, Frederick attempted nothing beyond his powers, and vanity or revenge never moved him off course."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--30",
+      "topic": "leadership",
+      "tags": [
+        "morale",
+        "culture",
+        "people",
+        "motivation"
+      ],
+      "title": "Morale is the blade; the physical means are only the handle",
+      "body": "Clausewitz insists that moral forces, the spirit of an army, the talents of its general and the feeling of the nation, are among the most important things in war. They cannot be counted or classified, and must be seen and felt. Yet any theory that ignores them is useless, because physical and moral effects are fused like an alloy.\n\nHis image is memorable: the physical factors are only the wooden handle; the moral ones are the polished blade.\n\nIn any organisation, budgets, tools and headcount are the handle. Trust, purpose and confidence decide what that handle can actually cut. Leaders who manage only the measurable parts miss most of what matters.",
+      "quote": "the physical are almost no more than the wooden handle, whilst the moral are the noble metal, the real bright-polished weapon.",
+      "locator": "CHAPTER III. Moral Forces ¶5",
+      "apply_it": "At your next team check-in, ask one question about morale, not just about numbers.",
+      "quiz": {
+        "question": "In Clausewitz's image, what are the moral forces?",
+        "options": [
+          "The wooden handle",
+          "The scabbard",
+          "The polished blade, the real weapon",
+          "The enemy's armour"
+        ],
+        "answer": 2,
+        "explanation": "He calls the physical factors the wooden handle and the moral forces the noble metal, the real weapon."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--31",
+      "topic": "leadership",
+      "tags": [
+        "team-spirit",
+        "culture",
+        "hardship",
+        "pride"
+      ],
+      "title": "Real team spirit is forged by shared hard work and earned success",
+      "body": "Clausewitz called it the military virtue of an army: a spirit that holds firm under fire, keeps faith in its leaders even after defeat and sees its toil as the road to victory. It can come only from two sources together: a run of campaigns and victories, and activity pushed sometimes to the limit. Soldiers, he says, are as proud of overcoming hardship as of surviving danger.\n\nDrill, smart uniforms and peacetime pride have value, but they cannot create this spirit. He warns not to confuse a team's real spirit with its passing mood.\n\nTeams bond through demanding work they finish together. Ask a lot, support people through it and celebrate the wins.",
+      "quote": "The soldier is as proud of overcoming toil, as he is of surmounting danger.",
+      "locator": "CHAPTER V. Military Virtue of an Army ¶13",
+      "apply_it": "Name a tough task your team recently completed together, and thank them for it specifically.",
+      "quiz": {
+        "question": "From which two sources does Clausewitz say true military spirit grows?",
+        "options": [
+          "Uniforms and parades",
+          "Victories, and activity carried sometimes to the highest pitch",
+          "Pay rises and holidays",
+          "Strict rules and punishment"
+        ],
+        "answer": 1,
+        "explanation": "It grows only from a succession of victories together with intense, demanding activity."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--32",
+      "topic": "mental-strength",
+      "tags": [
+        "boldness",
+        "hesitation",
+        "courage",
+        "initiative"
+      ],
+      "title": "Boldness wins against hesitation, and most caution is really fear",
+      "body": "Clausewitz called boldness a creative power. Beyond any calculation of numbers, time and space, it gains an extra margin from the weakness of others. Whenever boldness meets hesitation, the odds favour boldness, because hesitation has already lost its balance. Only against an equally strong, careful foresight is it at a disadvantage, and that is rare.\n\nHis sharpest line is that most people who seem prudent are really timid.\n\nThis is worth checking in yourself. When you call a choice careful, ask if it is a reasoned judgment or simply fear wearing sensible clothes. Often the bolder path is safer than it looks, because others are hesitating too.",
+      "quote": "As often as boldness encounters hesitation, the probability of the result is of necessity in its favour, because the very state of hesitation implies a loss of equilibrium already.",
+      "locator": "CHAPTER VI. Boldness ¶4",
+      "apply_it": "Think of one 'careful' choice you made recently. Write honestly whether it came from judgment or from fear.",
+      "quiz": {
+        "question": "Why does boldness tend to win against hesitation, according to Clausewitz?",
+        "options": [
+          "Bold people are always stronger",
+          "Luck always favours the bold",
+          "Hesitant leaders have smaller armies",
+          "Hesitation already implies a loss of balance"
+        ],
+        "answer": 3,
+        "explanation": "The very state of hesitation implies a loss of equilibrium, so the odds favour boldness against it."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--33",
+      "topic": "leadership",
+      "tags": [
+        "boldness",
+        "responsibility",
+        "seniority",
+        "risk"
+      ],
+      "title": "The higher you rise, the more your boldness must be guided by thought",
+      "body": "Clausewitz prized boldness at every level, from the drummer to the general. But he drew a line. Among the ranks, boldness is like a spring held down by the order of battle, released by a higher will. For a commander, boldness becomes less about risking himself and more about the safety of others and the good of the whole. So it must be joined to a reflective mind, or it becomes passion with no purpose.\n\nHe also warns that boldness turned against obedience is a danger, whatever its spirit.\n\nAs your responsibility grows, keep the courage but add the thinking: the people affected, the stakes and the reasons. Daring with others' wellbeing demands more care than daring with your own.",
+      "quote": "The higher the rank the more necessary it is that boldness should be accompanied by a reflective mind, that it may not be a mere blind outburst of passion to no purpose",
+      "locator": "CHAPTER VI. Boldness ¶6",
+      "apply_it": "Before a bold move that affects others, write down who bears the risk and what you will do if it fails.",
+      "quiz": {
+        "question": "Why must a senior leader's boldness be joined to reflection?",
+        "options": [
+          "Senior leaders are less brave",
+          "Reflection makes boldness unnecessary",
+          "At higher rank it concerns the preservation of others and the good of the whole",
+          "Juniors are never bold"
+        ],
+        "answer": 2,
+        "explanation": "With rank, boldness becomes less self-sacrifice and more about others' safety, so it needs a reflective mind."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--34",
+      "topic": "mental-strength",
+      "tags": [
+        "perseverance",
+        "persistence",
+        "goals",
+        "resilience"
+      ],
+      "title": "Persevere with your plan unless there is a decided reason to change",
+      "body": "In war, Clausewitz writes, things never happen as expected and look different up close. A commander lives in a whirlpool of true and false reports, mistakes made from fear, haste or tiredness, and accidents no one could foresee. Most impressions are discouraging, few are encouraging.\n\nWhoever gives way to all these impressions will never finish anything. So perseverance in the chosen aim, as long as there is no decided reason against it, is a vital counterweight. Almost every famous achievement came through endless effort and hardship.\n\nLong goals feel like this too. Expect a stream of discouragement, and keep going until a real reason, not just a bad week, tells you to stop.",
+      "quote": "He who would yield to these impressions would never carry out an undertaking",
+      "locator": "CHAPTER VII. Perseverance ¶2",
+      "apply_it": "Write the one condition that would truly justify quitting your current goal. Until it happens, keep going.",
+      "quiz": {
+        "question": "According to Clausewitz, when should a commander abandon his proposed aim?",
+        "options": [
+          "Only when there is a decided reason against it",
+          "At the first bad report",
+          "Whenever the troops are tired",
+          "Never under any circumstances"
+        ],
+        "answer": 0,
+        "explanation": "Perseverance in the aim is needed as long as there is no decided reason against it."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--35",
+      "topic": "business",
+      "tags": [
+        "focus",
+        "priorities",
+        "concentration",
+        "decisive-point"
+      ],
+      "title": "Bring your greatest strength to the point that decides the outcome",
+      "body": "Clausewitz called superiority of numbers the most general principle of victory, while admitting it is only one factor. In his survey of modern European battles, even the finest generals rarely beat an enemy twice their size. So the first rule is to be as strong as possible overall, and the second is to be strongest at the decisive point.\n\nThat relative superiority, he says, usually comes not from clever timing but from judging rightly which points matter, and from the resolve to sacrifice the unimportant for the important.\n\nFor a small business or a busy person, this is the heart of strategy: identify where the result will really be decided, and put your best people and hours there.",
+      "quote": "the resolution required to sacrifice the unimportant to the advantage of the important—that is, to keep the forces concentrated in an overpowering mass.",
+      "locator": "CHAPTER VIII. Superiority of Numbers ¶28",
+      "apply_it": "List your projects. Mark the one that will decide this year's results, and move time from the others to it.",
+      "quiz": {
+        "question": "Where does Clausewitz say relative superiority usually comes from?",
+        "options": [
+          "Exact calculations of time and space",
+          "Having a larger country",
+          "Secret weapons",
+          "Judging the decisive points rightly and sacrificing the unimportant for the important"
+        ],
+        "answer": 3,
+        "explanation": "It rests on recognising the decisive points and the resolution to sacrifice the unimportant to keep forces concentrated."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--36",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "multitasking",
+        "concentration",
+        "defaults"
+      ],
+      "title": "Make concentration the rule and make every split justify itself",
+      "body": "For Clausewitz there was no simpler or more binding law of strategy than keeping your forces concentrated. No part should be separated from the main body without urgent need. He found it incredible how often troops had been divided out of vague habit, with no clear reason.\n\nHis fix is about defaults. Treat concentration as normal, and treat every division as an exception that must be justified. Then the foolish splits disappear on their own.\n\nApply it to your time. Make one focused block of work the default, and make each new commitment, meeting or side project argue for its place. Scattered effort should be the exception you choose, not the habit you drift into.",
+      "quote": "If the concentration of the whole force is acknowledged as the norm, and every division and separation as an exception which must be justified, then not only will that folly be completely avoided",
+      "locator": "CHAPTER XI. Assembly of Forces in Space ¶3",
+      "apply_it": "Before saying yes to a new commitment this week, write one sentence on why it is worth splitting your focus.",
+      "quiz": {
+        "question": "What default does Clausewitz recommend about dividing forces?",
+        "options": [
+          "Divide forces whenever possible",
+          "Treat concentration as the norm and every division as an exception needing justification",
+          "Let each commander decide freely",
+          "Always keep half in reserve"
+        ],
+        "answer": 1,
+        "explanation": "Concentration should be the norm, with every separation an exception that must be justified."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--37",
+      "topic": "business",
+      "tags": [
+        "efficiency",
+        "resources",
+        "idle-capacity",
+        "management"
+      ],
+      "title": "Idle resources are worse than resources used imperfectly",
+      "body": "Clausewitz offered a simple principle he called economy of forces: always watch that every part of your strength is working together and none is idle. A commander whose troops are marching about or sitting where the enemy gives them nothing to do, while others fight, manages badly.\n\nHe goes further: such waste is worse than using forces to little purpose, because even imperfect action does some work, while completely idle troops count for nothing.\n\nIn business, look for talent stuck in pointless waiting, money sitting unused or skills nobody draws on. Putting them to some good use usually beats keeping them in reserve for a perfect moment that may never come.",
+      "quote": "In this sense there is a waste of forces, which is even worse than their employment to no purpose.",
+      "locator": "CHAPTER XIV. Economy of Forces ¶2",
+      "apply_it": "Identify one person, skill or resource on your team that is underused, and give it a real job this week.",
+      "quiz": {
+        "question": "What does Clausewitz consider even worse than using forces to little purpose?",
+        "options": [
+          "Using them boldly",
+          "Keeping a small reserve",
+          "Leaving them idle while others fight",
+          "Moving them quickly"
+        ],
+        "answer": 2,
+        "explanation": "Idle forces are entirely neutralised, which he calls a waste worse than imperfect use."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--38",
+      "topic": "mental-strength",
+      "tags": [
+        "setbacks",
+        "resilience",
+        "failure",
+        "recovery"
+      ],
+      "title": "After a defeat, retreat like a wounded lion, not in a panic",
+      "body": "A lost battle, Clausewitz says, breaks an army's morale even more than its strength. The worst response is to run, hoping a few quick marches will buy safety. That pace soon becomes a headlong rush that costs more in stragglers than fighting would, and puts out the last spark of resistance.\n\nInstead, the first moves back should be as small as possible, never giving more ground than circumstances demand, with steady resistance and bold counterstrokes when the pursuer overreaches. The retreats of great generals, he writes, have always resembled that of a wounded lion.\n\nAfter a setback in life or work, avoid the panic exit. Step back slowly, keep your dignity and keep the will to fight back.",
+      "quote": "Retreats of great Generals and of Armies inured to War have always resembled the retreat of a wounded lion, such is, undoubtedly, also the best theory.",
+      "locator": "CHAPTER XIII. Retreat After a Lost Battle ¶2",
+      "apply_it": "After your next setback, list what you still hold before deciding what to give up.",
+      "quiz": {
+        "question": "What does Clausewitz advise after a lost battle?",
+        "options": [
+          "Retreat slowly, resisting steadily, with bold counterstrokes",
+          "Retreat as fast as possible",
+          "Give up all ground at once",
+          "Fight a second battle immediately"
+        ],
+        "answer": 0,
+        "explanation": "A slow retreat with incessant resistance and bold counterstrokes keeps up the moral forces, like a wounded lion."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--39",
+      "topic": "business",
+      "tags": [
+        "defence",
+        "counterattack",
+        "resilience",
+        "competition"
+      ],
+      "title": "Good defence is not a shield alone, but a shield made of skilful blows",
+      "body": "Defence, for Clausewitz, means waiting for the blow and warding it off. But pure passivity would contradict the idea of conflict. A defensive campaign can still fight offensively; a defending army still fires into the enemy's ranks.\n\nHe sums it up: defence is no mere shield, but a shield formed of well-aimed blows. And once defence has won an advantage, the defender must strike back, or the gain withers away.\n\nWhen a competitor attacks your market, or a critic attacks your work, protecting what you have is wise. But plan from the start how you will turn that protection into a counter-move, rather than only absorbing hits.",
+      "quote": "The defensive form in war is therefore no mere shield but a shield formed of blows delivered with skill.",
+      "locator": "CHAPTER I. Offence and Defence ¶2",
+      "apply_it": "When defending a position at work, plan one counter-move you will make once the pressure eases.",
+      "quiz": {
+        "question": "How does Clausewitz describe the defensive form of war?",
+        "options": [
+          "A wall that never moves",
+          "A shield formed of blows delivered with skill",
+          "A sign of weakness",
+          "Waiting until the enemy gives up"
+        ],
+        "answer": 1,
+        "explanation": "Defence waits for the blow but strikes back skilfully; it is no mere shield."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--40",
+      "topic": "business",
+      "tags": [
+        "defence",
+        "time",
+        "patience",
+        "advantage"
+      ],
+      "title": "Holding what you have is easier than taking more, and time favours the defender",
+      "body": "Clausewitz argued, against the opinion of his day, that defence is the stronger form of war. Its aim is to keep, and keeping is easier than gaining. Every moment the attacker wastes, through error, fear or idleness, works for the defender, who reaps where he has not sown. The defender also gains from knowing and using the ground.\n\nBut because its object is negative, defence suits the weaker side, and should give way to attack once strength allows. The natural course is to begin defensively and end offensively.\n\nA business with loyal customers, or a person with a stable base, holds an underrated advantage. Protect it, let time work for you, then move forward when you are strong.",
+      "quote": "Every suspension of offensive action, either from erroneous views, from fear or from indolence, is in favour of the side acting defensively.",
+      "locator": "CHAPTER I. Offence and Defence ¶4",
+      "apply_it": "Write down one advantage you already hold, such as loyal customers or a skill, and one way to protect it this month.",
+      "quiz": {
+        "question": "Why does Clausewitz call defence the stronger form of war?",
+        "options": [
+          "Defenders always have more troops",
+          "Attackers never win",
+          "Defence needs no planning",
+          "Keeping is easier than gaining, and lost time works in the defender's favour"
+        ],
+        "answer": 3,
+        "explanation": "Preserving is easier than acquiring, unused time favours the defender, and ground helps the defence."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--41",
+      "topic": "business",
+      "tags": [
+        "overreach",
+        "limits",
+        "growth",
+        "culminating-point"
+      ],
+      "title": "Every advance has a culminating point; know it before you pass it",
+      "body": "An attack, Clausewitz observed, weakens as it goes. The attacker must guard supply lines, occupy hostile ground and move away from his resources while the defender falls back on his. Most attacks, unless they end in peace, reach a point where the remaining strength is just enough to hold on. He called it the culminating point of victory.\n\nGoing past it is not just wasted effort but dangerous, because the reaction is usually far stronger than the blow. Advantage is a means, not the goal, so spend it to win your aim, but know how far it reaches.\n\nFast-growing companies and ambitious people face this too. Know your limits before expansion turns into overextension.",
+      "quote": "But it is necessary to know how far it will reach, in order not to go beyond that point, and instead of fresh advantages, to reap disaster.",
+      "locator": "CHAPTER XXII. On the Culminating Point of Victory(*) ¶44",
+      "apply_it": "For one area where you are expanding, write the warning signs that would tell you you've gone too far.",
+      "quiz": {
+        "question": "What happens, according to Clausewitz, when an attacker passes the culminating point?",
+        "options": [
+          "Instead of fresh advantages he reaps disaster, as a strong reaction sets in",
+          "He wins more easily",
+          "Nothing changes",
+          "The enemy always surrenders"
+        ],
+        "answer": 0,
+        "explanation": "Overstepping the culminating point is destructive; the reaction is usually far stronger than the original blow."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--42",
+      "topic": "productivity",
+      "tags": [
+        "momentum",
+        "stopping",
+        "overcommitment",
+        "self-awareness"
+      ],
+      "title": "Momentum can carry you past the point where you should have stopped",
+      "body": "Why do attackers go too far? Clausewitz borrows an idea from physics. Once the mind has set firmly on a direction, reasons to stop are not felt at once at their full force. Meanwhile action rolls on, and you are carried past the point of balance without noticing. He adds that, like a horse pulling a load uphill, it can feel easier to keep advancing than to stop.\n\nThis explains many overruns: the project that should have been cancelled, the extra hour of work that ruins sleep, the argument that should have ended long ago.\n\nBuild in deliberate pauses with stop-or-continue questions, because the feeling of momentum is not a reliable guide.",
+      "quote": "the assailant, supported by the moral forces which specially lie in the offensive, like a horse drawing a load uphill, finds it less difficult to advance than to stop.",
+      "locator": "CHAPTER XXII. On the Culminating Point of Victory(*) ¶60",
+      "apply_it": "Set a checkpoint in your current big project where you will ask, on purpose: should we stop here?",
+      "quiz": {
+        "question": "Why do attackers often overshoot the culminating point?",
+        "options": [
+          "They have bad maps",
+          "Their generals are paid by distance",
+          "Once committed, the mind feels reasons to stop too late, and advancing feels easier than stopping",
+          "The defender tricks them every time"
+        ],
+        "answer": 2,
+        "explanation": "Motives to stop take time to be felt, and momentum makes it seem easier to advance than to halt."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--43",
+      "topic": "leadership",
+      "tags": [
+        "planning",
+        "end-goal",
+        "foresight",
+        "strategy"
+      ],
+      "title": "Don't take the first step without thinking what the last one will be",
+      "body": "Clausewitz wrote that every war should be seen as a whole from the very beginning. At the very first step forward, the commander should already have in view the object to which every line must lead. No war should begin, he says elsewhere, without asking what is to be achieved by it and in it.\n\nThe bigger and more consuming the struggle, the more tightly every event connects to the rest, and the more vital it is to think about the last step before taking the first.\n\nBefore starting a venture, a lawsuit or a major change, picture the end: what does success look like, and what is the final move that gets you there?",
+      "quote": "so much the more necessary it will also be not to take the first step without thinking what may be the last.",
+      "locator": "CHAPTER III. A. Interdependence of the Parts in War ¶16",
+      "apply_it": "Before starting your next big initiative, write one sentence describing the final step and what 'done' means.",
+      "quiz": {
+        "question": "What should a commander have in view at the very first step, according to Clausewitz?",
+        "options": [
+          "Only the next battle",
+          "The safest retreat route",
+          "The enemy's capital alone",
+          "The final object to which every line must converge"
+        ],
+        "answer": 3,
+        "explanation": "Every war should be seen as a whole, so the first step is taken with the final object already in view."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--44",
+      "topic": "business",
+      "tags": [
+        "centre-of-gravity",
+        "focus",
+        "leverage",
+        "problem-solving"
+      ],
+      "title": "Find the centre of gravity, the one point everything else depends on",
+      "body": "Clausewitz borrowed the idea of a centre of gravity from physics. An enemy's power rests on a few central points. For Alexander, Gustavus Adolphus and Frederick the Great it was their armies; in a divided state it might be the capital; in an alliance, the shared interest. Blows aimed there have the most effect.\n\nHis first principle of planning was to reduce the opponent's power to as few centres of gravity as possible, ideally one, and to concentrate on them with as few main efforts as possible, keeping side efforts minor.\n\nIn business or personal problems, ask: what single thing, if solved, would make the rest easier or unnecessary? Aim there.",
+      "quote": "to reduce the weight of the enemy’s power into as few centres of gravity as possible, into one if it can be done",
+      "locator": "CHAPTER IX. Plan of War when the Destruction of the Enemy is the Object ¶3",
+      "apply_it": "For your toughest current problem, write the one factor that, if changed, would shift everything else.",
+      "quiz": {
+        "question": "What did Clausewitz mean by an enemy's 'centre of gravity'?",
+        "options": [
+          "The middle of the battlefield",
+          "The central point on which the enemy's power depends",
+          "The heaviest artillery",
+          "The general's headquarters tent"
+        ],
+        "answer": 1,
+        "explanation": "It is the hub of power, such as an army, a capital or a shared interest, where a blow has the greatest effect."
+      }
+    },
+    {
+      "id": "on-war-clausewitz--45",
+      "topic": "learning",
+      "tags": [
+        "perspective",
+        "clarity",
+        "consistency",
+        "worldview"
+      ],
+      "title": "Find the right point of view and keep to it",
+      "body": "Near the end of On War, Clausewitz steps back to a general lesson. Nothing in life is more important, he says, than finding the right point of view from which to see and judge things, and then holding to it. Only from one standpoint can we see many events as a whole, and only keeping to it protects us from contradicting ourselves.\n\nFor him, in war that standpoint is policy, the purpose that gives the war meaning. Swapping between the eyes of the soldier, the administrator and the politician only breeds confusion.\n\nIn your own life, decide what your guiding standpoint is, perhaps your values or your main purpose, and judge choices from there.",
+      "quote": "There is, upon the whole, nothing more important in life than to find out the right point of view from which things should be looked at and judged of, and then to keep to that point",
+      "locator": "CHAPTER VI. A. Influence of the Political Object on the Military Object ¶26",
+      "apply_it": "Write one sentence describing the main purpose you want to judge your decisions by this year.",
+      "quiz": {
+        "question": "Why does Clausewitz value keeping to one point of view?",
+        "options": [
+          "It makes you popular",
+          "It saves paper",
+          "It lets you see events as a whole and guards against inconsistency",
+          "It avoids all mistakes"
+        ],
+        "answer": 2,
+        "explanation": "Only from one standpoint can events be seen in their unity, and keeping to it guards against inconsistency."
+      }
+    }
+  ]
+}
