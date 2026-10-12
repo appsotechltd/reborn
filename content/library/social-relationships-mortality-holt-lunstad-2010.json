@@ -1,0 +1,348 @@
+{
+  "source": {
+    "id": "social-relationships-mortality-holt-lunstad-2010",
+    "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+    "authors": [
+      "Julianne Holt-Lunstad",
+      "Timothy B. Smith",
+      "J. Bradley Layton"
+    ],
+    "kind": "study",
+    "url": "https://doi.org/10.1371/journal.pmed.1000316",
+    "licence": "cc-by-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Holt-Lunstad, Smith & Layton (2010), Social Relationships and Mortality Risk: A Meta-analytic Review, PLOS Medicine, CC BY 4.0",
+    "publisher": "PLOS Medicine",
+    "year": 2010,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "PLOS Medicine 7(7): e1000316 (2010), DOI 10.1371/journal.pmed.1000316. The article page on journals.plos.org states: 'This is an open-access article distributed under the terms of the Creative Commons Attribution License'; the PMC/Europe PMC record (PMC2910600) tags it CC BY 4.0, and PLOS applies CC BY 4.0 to its articles. Cards are our own summaries; no quotes."
+  },
+  "cards": [
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--01",
+      "topic": "health",
+      "tags": [
+        "social-connection",
+        "longevity",
+        "meta-analysis"
+      ],
+      "title": "People with strong relationships had 50% better odds of survival",
+      "body": "This landmark review pooled 148 studies covering more than 300,000 people, followed for an average of seven and a half years. Across those studies, people with stronger social relationships had a 50% greater likelihood of surviving the follow-up period than people with weak or few relationships.\n\nThe effect held across age, sex, initial health, length of follow-up and cause of death. The authors argue this makes social connection a real health factor, not just a nice extra. The studies were observational, so they show a strong link rather than proof of cause, but the size and consistency are hard to ignore.",
+      "apply_it": "Think of one friendship that has gone quiet. Send a message today suggesting a time to talk or meet.",
+      "locator": "Results: Omnibus Analysis",
+      "quiz": {
+        "question": "In this meta-analysis, how did strong social relationships relate to survival?",
+        "options": [
+          "About 50% greater likelihood of survival",
+          "No measurable effect",
+          "Twice the risk of death",
+          "An effect only in people over 80"
+        ],
+        "answer": 0,
+        "explanation": "Across 148 studies, stronger social relationships were linked to a 50% increased likelihood of survival."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--02",
+      "topic": "health",
+      "tags": [
+        "social-connection",
+        "risk-factors",
+        "smoking"
+      ],
+      "title": "Weak social ties rival smoking as a risk to long life",
+      "body": "To put the finding in context, the authors compared it with effect sizes from other meta-analyses. The link between social relationships and survival was comparable to quitting smoking, and larger than many well-known risk factors such as obesity and physical inactivity.\n\nTheir point is that doctors, educators and the public take smoking, diet and exercise seriously, and social connection belongs on that list too. You would not ignore a smoking habit for years. It is worth giving the same attention to whether you have people in your life.",
+      "apply_it": "Add a recurring social plan to your calendar, such as a weekly call or meal, and treat it as seriously as a workout.",
+      "locator": "Discussion; Conclusion",
+      "quiz": {
+        "question": "What did the authors compare the size of the social relationships effect to?",
+        "options": [
+          "Drinking coffee",
+          "Wearing glasses",
+          "Owning a pet",
+          "Quitting smoking"
+        ],
+        "answer": 3,
+        "explanation": "The effect was comparable with quitting smoking and exceeded risk factors such as obesity and physical inactivity."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--03",
+      "topic": "relationships",
+      "tags": [
+        "social-integration",
+        "community",
+        "variety"
+      ],
+      "title": "Being woven into many kinds of relationships showed the strongest link",
+      "body": "Studies measured relationships in different ways. The strongest link came from complex measures of social integration, which combined things like whether someone was married or partnered, how big their network was, and how much they took part in groups and activities. With these measures, the odds of survival were 91% higher.\n\nThis suggests that what matters is being part of a web of relationships and roles: family, friends, neighbours, colleagues, clubs, faith groups or volunteering. No single tie does it all.",
+      "apply_it": "List the different circles you belong to. If there are only one or two, pick one new group or activity to try this month.",
+      "locator": "Results: Structural aspects; Table 4",
+      "quiz": {
+        "question": "Which type of measure showed the strongest link with survival?",
+        "options": [
+          "Living alone or not",
+          "Received support only",
+          "Complex measures of social integration",
+          "Marital status alone"
+        ],
+        "answer": 2,
+        "explanation": "Multidimensional measures of social integration were linked to a 91% increase in odds of survival."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--04",
+      "topic": "relationships",
+      "tags": [
+        "living-alone",
+        "isolation",
+        "network"
+      ],
+      "title": "Living alone is not the same as being isolated",
+      "body": "A simple yes or no about living alone was the weakest predictor of survival in the review. The authors explain why: it is possible to live alone and still have a large, supportive network of people.\n\nSo if you live alone, this research is not a warning about your household. What matters is the connections you keep outside your front door. Equally, sharing a home with others does not guarantee that you feel connected.",
+      "apply_it": "If you live alone, plan two regular points of contact each week with people you enjoy, in person if you can.",
+      "locator": "Results: Structural aspects; Discussion",
+      "quiz": {
+        "question": "Why did 'living alone' predict survival only weakly?",
+        "options": [
+          "Living alone is always healthy",
+          "A person can live alone yet have a large supportive network",
+          "Few people live alone",
+          "It was not measured"
+        ],
+        "answer": 1,
+        "explanation": "Living alone does not capture social isolation well, because people who live alone may still have strong networks."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--05",
+      "topic": "relationships",
+      "tags": [
+        "social-support",
+        "perceived-support",
+        "trust"
+      ],
+      "title": "Feeling that support is there mattered more than help actually received",
+      "body": "The review separated different kinds of support. Believing that help would be available if you needed it was linked to better survival. Measures of support actually received were not significantly linked in the pooled data. The authors also note that received support was less predictive than social integration.\n\nOne way to read this is that the security of knowing people have your back, and being part of things, may matter more than the number of favours exchanged. Building trust before a crisis is part of looking after your health.",
+      "apply_it": "Name two people you could call in a crisis. If you cannot think of two, take one step to deepen a relationship this week.",
+      "locator": "Table 4; Discussion",
+      "quiz": {
+        "question": "Which was more strongly linked with survival?",
+        "options": [
+          "The perception that support is available",
+          "Support actually received",
+          "Number of social media followers",
+          "Money given by family"
+        ],
+        "answer": 0,
+        "explanation": "Perceived support availability predicted survival, while received support was not a significant predictor."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--06",
+      "topic": "relationships",
+      "tags": [
+        "loneliness",
+        "isolation",
+        "connection"
+      ],
+      "title": "Both loneliness and objective isolation were linked to shorter lives",
+      "body": "The review looked at loneliness, the feeling of being disconnected, and at objective isolation, the actual lack of contact or a confidant. Both were linked to poorer survival, at similar levels to other relationship measures.\n\nThe authors also found no simple threshold where only total isolation is harmful. Across many measures, more and better connection was linked to better survival. So you do not have to be completely alone for this to matter, and you do not need a huge circle to benefit from adding one more real connection.",
+      "apply_it": "If you have been feeling lonely, tell one trusted person how you have been feeling, or reach out to a local group or helpline.",
+      "locator": "Table 4; Discussion",
+      "quiz": {
+        "question": "What did the review find about social isolation and loneliness?",
+        "options": [
+          "Only total isolation mattered",
+          "Neither had any link",
+          "Loneliness was linked to longer life",
+          "Both were linked to poorer survival"
+        ],
+        "answer": 3,
+        "explanation": "Loneliness and social isolation were both associated with mortality, similar to other relationship measures."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--07",
+      "topic": "health",
+      "tags": [
+        "all-ages",
+        "young-adults",
+        "prevention"
+      ],
+      "title": "This is not just an issue for older people",
+      "body": "It is easy to think of loneliness as a problem only for the elderly. The review found the link between relationships and survival held across ages, between men and women, and regardless of initial health.\n\nThe authors conclude that efforts to strengthen social connection should not be limited to older adults. Habits of connection built in your twenties and thirties carry forward. Students, new parents, people who move cities and those working remotely can all be at risk of drifting into isolation.",
+      "apply_it": "If you have recently moved, changed job or had a big life change, write down one way to build new local ties this month.",
+      "locator": "Discussion; Conclusion",
+      "quiz": {
+        "question": "Who did the authors say efforts to strengthen social ties should target?",
+        "options": [
+          "Only people over 75",
+          "Only people already ill",
+          "Not only the elderly, since the link held across ages",
+          "Only men"
+        ],
+        "answer": 2,
+        "explanation": "The effect was consistent across ages, so the authors say efforts should not be isolated to subgroups such as the elderly."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--08",
+      "topic": "health",
+      "tags": [
+        "stress",
+        "buffering",
+        "support"
+      ],
+      "title": "Relationships can soften the impact of stress on the body",
+      "body": "The authors describe two ways relationships may affect health. The first is the stress-buffering idea. People around us offer information, emotional comfort and practical help during illness, loss and big transitions, and these resources help us respond to stress in healthier ways.\n\nThe review notes other research linking social support to better immune function and lower inflammation. So the comfort of a friend during a hard time may not just feel good. It may help your body cope too.",
+      "apply_it": "When you face your next stressful event, decide in advance who you will talk to about it, and tell them.",
+      "locator": "Introduction; Discussion",
+      "quiz": {
+        "question": "What does the stress-buffering model propose?",
+        "options": [
+          "Relationships cause stress",
+          "Relationships provide resources that soften the harmful effects of stress",
+          "Stress has no effect on health",
+          "Only strangers can reduce stress"
+        ],
+        "answer": 1,
+        "explanation": "The buffering hypothesis says social relationships provide resources that moderate the harmful influence of stressors."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--09",
+      "topic": "health",
+      "tags": [
+        "habits",
+        "purpose",
+        "social-norms"
+      ],
+      "title": "Your circle shapes your habits and gives you a sense of purpose",
+      "body": "The second pathway is more direct. Being part of a social network can encourage healthy behaviour directly, or simply model it, as people tend to follow the norms of those around them. Relationships also give us meaningful roles, such as parent, friend, team member or neighbour, which provide self-esteem and purpose.\n\nYou can use this on purpose. Spend time with people whose habits you would like to share, and take on roles where others count on you, such as coaching, mentoring or volunteering.",
+      "apply_it": "Invite a friend to join a healthy routine you want to keep, such as a weekly walk, a class or a cooking night.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "According to the main effects model, how can social networks improve health?",
+        "options": [
+          "By modelling healthy behaviours and giving meaningful roles",
+          "By removing all stress",
+          "Only by providing money",
+          "By replacing medical care"
+        ],
+        "answer": 0,
+        "explanation": "Networks encourage or model healthy behaviour and provide roles that give self-esteem and purpose."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--10",
+      "topic": "relationships",
+      "tags": [
+        "relationship-quality",
+        "conflict",
+        "marriage"
+      ],
+      "title": "Quality matters: harmful relationships carry their own risk",
+      "body": "Most studies in the review did not measure relationship quality. They simply counted ties as if all of them were good. The authors point out that this is not true: negative relationships have been linked to greater risk of death, and the effect of marriage depends on how good the marriage is.\n\nThat means the benefit of positive relationships may be even larger than the review measured. It also means more contact is not the goal in itself. Investing in warm, supportive relationships, and setting limits with harmful ones, both count.",
+      "apply_it": "Think about who leaves you feeling better after time together. Plan to see more of one of them this month.",
+      "locator": "Discussion",
+      "quiz": {
+        "question": "What did most studies in the review fail to account for?",
+        "options": [
+          "The age of participants",
+          "Where participants lived",
+          "How long they were followed",
+          "The quality of relationships"
+        ],
+        "answer": 3,
+        "explanation": "Most measures assumed all relationships were positive, though negative relationships are linked to greater risk."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--11",
+      "topic": "relationships",
+      "tags": [
+        "community",
+        "friends",
+        "support-groups"
+      ],
+      "title": "Lean on the people already in your life",
+      "body": "Formal support programmes have had mixed results in research. The authors note that most of these programmes provided support from strangers, while the evidence in their review comes almost entirely from naturally occurring relationships with family, friends and community.\n\nThey suggest that helping people use their own relationships, and community-based approaches, may work better than support from hired staff, except when a person's own ties are absent or harmful. Programmes and helplines can be valuable, especially if you lack people around you. But they work best alongside, not instead of, the people already in your life.",
+      "apply_it": "Ask one family member or friend for help with something small this week. Letting people help is part of building the tie.",
+      "locator": "Discussion",
+      "quiz": {
+        "question": "What did the authors suggest may work better than support from strangers?",
+        "options": [
+          "No support at all",
+          "Only online forums",
+          "Naturally occurring relationships and community-based approaches",
+          "Only paid professionals"
+        ],
+        "answer": 2,
+        "explanation": "Evidence came from natural relationships, so drawing on people's own networks and communities may be more successful."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--12",
+      "topic": "learning",
+      "tags": [
+        "causation",
+        "evidence",
+        "observational-studies"
+      ],
+      "title": "This research shows a strong link, though cause is hard to prove",
+      "body": "The authors are open about a limit. You cannot randomly assign people to be isolated or married, so this research cannot prove cause the way a drug trial can. The same is true for smoking, which was established as a major cause of disease without randomised trials.\n\nSeveral features make a causal role more plausible. Most participants were healthy community members at the start, initial health did not change the result, and other research links relationships to biological pathways. Still, the honest wording is a strong, consistent association that probably matters.",
+      "apply_it": "When you next read a health headline, ask whether the study was a trial or an observational study, and what that means for the claim.",
+      "locator": "Discussion",
+      "quiz": {
+        "question": "Why can't this research prove that relationships cause longer life?",
+        "options": [
+          "Too few people were studied",
+          "People cannot be randomly assigned to be isolated or connected",
+          "The results were inconsistent",
+          "Only animals were studied"
+        ],
+        "answer": 1,
+        "explanation": "Causality is hard to establish because participants cannot be randomly assigned to social conditions."
+      },
+      "health": true
+    },
+    {
+      "id": "social-relationships-mortality-holt-lunstad-2010--13",
+      "topic": "relationships",
+      "tags": [
+        "confidant",
+        "isolation",
+        "trends"
+      ],
+      "title": "Make sure you have at least one person you can confide in",
+      "body": "The authors note that modern life makes isolation easier: fewer families living together, more people moving away, later marriage and more people living alone. They cite a finding that the number of Americans reporting no confidant had tripled over two decades.\n\nA confidant is someone you can talk to about things that really matter. Given how closely connection was linked to health in this review, having at least one such person is worth protecting and building, even when life is busy.",
+      "apply_it": "Ask yourself who you would tell if something went badly wrong. Reach out to that person this week just to catch up.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "What trend did the authors cite about confidants?",
+        "options": [
+          "The number of Americans with no confidant had tripled",
+          "Most people now have five confidants",
+          "Confidants no longer matter",
+          "Technology had removed isolation"
+        ],
+        "answer": 0,
+        "explanation": "There had been a three-fold increase in the number of Americans reporting no confidant over two decades."
+      },
+      "health": true
+    }
+  ]
+}

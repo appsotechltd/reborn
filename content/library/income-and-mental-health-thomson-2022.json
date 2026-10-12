@@ -1,0 +1,275 @@
+{
+  "source": {
+    "id": "income-and-mental-health-thomson-2022",
+    "title": "How do income changes impact on mental health and wellbeing for working-age adults? A systematic review and meta-analysis",
+    "authors": [
+      "Rachel M. Thomson",
+      "Erik Igelström",
+      "Amrit Kaur Purba",
+      "Michal Shimonovich",
+      "et al."
+    ],
+    "kind": "study",
+    "url": "https://doi.org/10.1016/S2468-2667(22)00058-5",
+    "licence": "cc-by-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Thomson et al. (2022), How do income changes impact on mental health and wellbeing for working-age adults? A systematic review and meta-analysis, The Lancet Public Health, CC BY 4.0",
+    "publisher": "The Lancet Public Health",
+    "year": 2022,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "The Lancet Public Health 7(6): e515-e528 (2022), DOI 10.1016/S2468-2667(22)00058-5. Ten authors (Thomson, Igelström, Purba, Shimonovich, Thomson, McCartney, Reeves, Leyland, Pearce, Katikireddi). Licence confirmed on the article's licence statement in the Europe PMC full text (PMC7614874): 'This work is licensed under a CC BY 4.0 International license.' Cards are our own summaries; no quotes."
+  },
+  "cards": [
+    {
+      "id": "income-and-mental-health-thomson-2022--01",
+      "topic": "money",
+      "tags": [
+        "income",
+        "mental-health",
+        "evidence"
+      ],
+      "title": "Changes in income probably do affect mental health, though modestly",
+      "body": "Lower income goes with poorer mental health, but does changing someone's income actually change how they feel? This review pulled together 136 studies of working-age adults, including trials of cash transfers and natural experiments such as tax changes and lottery wins.\n\nMost studies pointed the same way: income rises went with better mental health and income falls with worse. The overall effects were modest and the certainty of the evidence was rated low, mainly because many studies had a high risk of bias. The authors' conclusion is that income probably has a real but modest effect.",
+      "apply_it": "Notice how money stress shows up in your body and mood this week, and write down one small step that would ease it.",
+      "locator": "Abstract; Results",
+      "quiz": {
+        "question": "What did the review conclude about income and mental health?",
+        "options": [
+          "Income changes probably affect mental health, with modest effects and low certainty",
+          "Income has no effect at all",
+          "Income is the main cause of all mental illness",
+          "Only lottery wins matter"
+        ],
+        "answer": 0,
+        "explanation": "Income changes probably affect mental health, especially out of poverty, but effects are modest and certainty low."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--02",
+      "topic": "money",
+      "tags": [
+        "poverty",
+        "income",
+        "wellbeing"
+      ],
+      "title": "Getting out of poverty mattered far more than other pay rises",
+      "body": "The clearest pattern was about poverty. When an income increase lifted people out of poverty, the improvement in mental health was many times larger than for other income increases. In stratified analyses, effects were up to 13 times larger for moves out of poverty.\n\nFor people already above the poverty line, extra income made only a very small difference to mental health measures. Money matters most when it covers the basics and gives some security.",
+      "apply_it": "If money is tight, list your essential costs and check what support, benefits or advice you might be entitled to.",
+      "locator": "Results; Discussion",
+      "quiz": {
+        "question": "When did income increases have the biggest effect on mental health?",
+        "options": [
+          "When they were small pay rises for high earners",
+          "When they came from lottery wins",
+          "When they were spent on luxuries",
+          "When they lifted people out of poverty"
+        ],
+        "answer": 3,
+        "explanation": "Effects were strikingly larger where increases moved individuals out of poverty."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--03",
+      "topic": "money",
+      "tags": [
+        "pay-rise",
+        "expectations",
+        "happiness"
+      ],
+      "title": "Above the basics, a raise gives only a tiny lift to mental health",
+      "body": "Studies that tracked income continuously, rather than as a yes or no change, found very small effects. Their pooled estimates suggest a 10% income increase was linked with only a tiny improvement in mental health and in wellbeing.\n\nThis is a useful reality check. If you are already covering your needs, a raise may help in many ways, but it is unlikely on its own to transform how you feel. Time, relationships and health may give more return than chasing the next increment.",
+      "apply_it": "Before chasing extra income, ask what else would most improve your week: more time, rest, or people. Plan one of those.",
+      "locator": "Results",
+      "quiz": {
+        "question": "Roughly how much did a 10% income increase improve mental health in the continuous studies?",
+        "options": [
+          "It doubled wellbeing",
+          "It removed depression",
+          "A very small amount",
+          "It made mental health worse"
+        ],
+        "answer": 2,
+        "explanation": "A 10% income increase was associated with only about a 0.003 standard deviation improvement in mental health."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--04",
+      "topic": "money",
+      "tags": [
+        "life-satisfaction",
+        "wellbeing",
+        "income"
+      ],
+      "title": "Money moved life satisfaction more than mental health symptoms",
+      "body": "The review looked at two kinds of outcome. Mental health measures capture things like depression and anxiety symptoms. Wellbeing measures capture life satisfaction and happiness. Income increases had about three times the effect on wellbeing that they had on mental health measures.\n\nThe authors add a caution: many wellbeing studies used a single question, such as how satisfied are you with life, which may be more open to bias. Still, it fits everyday experience. Money can make life feel more satisfying and secure without curing low mood.",
+      "apply_it": "Ask yourself separately: how satisfied am I with my life, and how is my mood? Notice if money affects one more than the other.",
+      "locator": "Results; Discussion",
+      "quiz": {
+        "question": "Which outcome responded more strongly to income increases?",
+        "options": [
+          "Mental health symptoms",
+          "Wellbeing, such as life satisfaction",
+          "Neither responded",
+          "Physical fitness"
+        ],
+        "answer": 1,
+        "explanation": "A binary income increase was linked to about three times the improvement in wellbeing compared with mental health measures."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--05",
+      "topic": "money",
+      "tags": [
+        "income-loss",
+        "emergency-fund",
+        "security"
+      ],
+      "title": "Losing income seemed to hurt more than gaining it helped",
+      "body": "Income decreases were linked to a worsening in mental health about two and a half times the size of the improvement from increases. This fits the idea of loss aversion, that losses weigh more heavily than equal gains.\n\nThe authors rate this finding as very low certainty, partly because of signs of publication bias, and note it would be unethical to test by cutting people's incomes. Still, it is a sensible reason to build protection against sudden drops where you can, such as a small emergency fund.",
+      "apply_it": "Set up an automatic transfer, however small, into a separate savings pot for emergencies.",
+      "locator": "Results; Discussion",
+      "quiz": {
+        "question": "How did income decreases compare with increases in this review?",
+        "options": [
+          "Decreases were linked to larger effects than increases",
+          "Decreases had no effect",
+          "Decreases improved mental health",
+          "They had exactly equal effects"
+        ],
+        "answer": 0,
+        "explanation": "Income decreases were associated with a worsening about two and a half times the magnitude of increases, though certainty was very low."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--06",
+      "topic": "money",
+      "tags": [
+        "control",
+        "security",
+        "stress"
+      ],
+      "title": "Money buys security and a sense of control, not just things",
+      "body": "Why would income affect mental health at all? The authors describe two routes. People on low incomes are less able to get goods and services that protect health. They are also less able to keep a feeling of control or security over their lives.\n\nThat second route is worth noticing. Part of what eases money stress is not the amount itself but feeling that you can cope with what comes. Knowing where your money goes, having a plan for bills, and a small buffer can all add to that sense of control.",
+      "apply_it": "Spend twenty minutes writing down your regular income and bills, so you can see your situation clearly.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "Which route linking income and mental health did the authors highlight?",
+        "options": [
+          "Income changes eye colour",
+          "Income only affects physical strength",
+          "There is no possible route",
+          "Income affects access to goods and a sense of control and security"
+        ],
+        "answer": 3,
+        "explanation": "Lower income limits access to health-promoting goods and services and the feeling of control or security."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--07",
+      "topic": "mental-strength",
+      "tags": [
+        "money-worries",
+        "job-loss",
+        "self-compassion"
+      ],
+      "title": "Money troubles and mental health can drag each other down",
+      "body": "The authors point out that the link runs both ways. People with poor mental health are more likely to lose income later, and events such as losing a job can harm both finances and mental health at once.\n\nIf you are in a hard financial patch and also struggling emotionally, this is not a personal failing. The two problems feed each other. It can help to get support on both fronts at the same time: practical money advice for one, and support from friends or professionals for the other.",
+      "apply_it": "If money and mood are both low right now, reach out for one kind of help this week, such as a free debt advice service or your doctor.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "What does the review say about the direction of the link?",
+        "options": [
+          "Only income affects mental health",
+          "Mental health has no link to income",
+          "Poor mental health can also lead to income loss",
+          "Job loss only affects money"
+        ],
+        "answer": 2,
+        "explanation": "Those with poor mental health are more likely to experience later income losses, and common causes like job loss affect both."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--08",
+      "topic": "money",
+      "tags": [
+        "windfall",
+        "lottery",
+        "expectations"
+      ],
+      "title": "Even big windfalls brought only a small lift in these studies",
+      "body": "Some of the most reliable evidence came from lottery studies in Sweden, rated at low risk of bias. Winners showed a small beneficial effect on mental health and on life satisfaction, real but small.\n\nThe review found no consistent evidence that the source of money mattered: welfare payments, tax changes and windfalls all pointed the same way. The lesson for daydreams is that a sudden fortune is unlikely to change how you feel as much as you might imagine.",
+      "apply_it": "Next time you imagine what a windfall would change, write down which of those things you could start on now, without one.",
+      "locator": "Results; Discussion",
+      "quiz": {
+        "question": "What did the low risk of bias lottery studies find?",
+        "options": [
+          "Winning ruined mental health",
+          "A small beneficial effect of winning",
+          "A huge, lasting boost in happiness",
+          "No studies looked at lotteries"
+        ],
+        "answer": 1,
+        "explanation": "Low risk of bias Swedish lottery studies reported a small beneficial effect of winning on mental health and life satisfaction."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--09",
+      "topic": "money",
+      "tags": [
+        "benefits",
+        "advice",
+        "entitlements"
+      ],
+      "title": "For people in poverty, more income may help about half as much as antidepressants",
+      "body": "To put the size in context, the authors compared their results with meta-analyses of common treatments. On their rough estimate, income boosts that lift people above the poverty line might be about half as effective as antidepressants, and a quarter as effective as talking therapy, for improving mental health.\n\nThat is a rough comparison across very different studies. But it suggests that, for people struggling financially, practical help with money, such as benefits advice or claiming what they are entitled to, can be a real part of supporting their mental health.",
+      "apply_it": "If you or someone close is struggling with money, look up a free, independent benefits or debt advice service and book a check.",
+      "locator": "Discussion",
+      "quiz": {
+        "question": "How did the authors compare anti-poverty income boosts to common treatments?",
+        "options": [
+          "Roughly half as effective as antidepressants",
+          "Ten times more effective than therapy",
+          "Completely ineffective",
+          "Exactly as effective as therapy"
+        ],
+        "answer": 0,
+        "explanation": "Income interventions that move people above the poverty line might be roughly half as effective as antidepressants and a quarter as effective as CBT."
+      },
+      "health": true
+    },
+    {
+      "id": "income-and-mental-health-thomson-2022--10",
+      "topic": "learning",
+      "tags": [
+        "evidence",
+        "bias",
+        "critical-thinking"
+      ],
+      "title": "The weakest studies showed the biggest effects",
+      "body": "A revealing detail: studies rated at critical risk of bias reported effects about six times larger than better-quality studies. The authors therefore left those studies out of their main analysis.\n\nThis is a pattern worth remembering whenever you read research. Dramatic results often come from weaker studies, and when better studies are done the effect usually shrinks. A careful review that weighs study quality, as this one does, tells you more than any single striking headline.",
+      "apply_it": "Next time you see a dramatic claim about money or happiness, look for whether it comes from one study or a careful review of many.",
+      "locator": "Results",
+      "quiz": {
+        "question": "How did the riskiest studies' results compare with better studies?",
+        "options": [
+          "They were identical",
+          "They showed no effect",
+          "They were half as large",
+          "They were about six times larger"
+        ],
+        "answer": 3,
+        "explanation": "Critical risk of bias studies reported effect sizes six times larger than other studies."
+      },
+      "health": true
+    }
+  ]
+}

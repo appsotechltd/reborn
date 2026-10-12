@@ -123,6 +123,26 @@ class GutenbergTest(unittest.TestCase):
         self.assertEqual(len(calls), 2)
         self.assertIn("GITenberg", res.fetched_from)
 
+    def test_falls_back_to_pglaf(self):
+        calls = []
+
+        def get(url, cache_dir, **_):
+            calls.append(url)
+            if "www.gutenberg.org" in url:
+                from reborn_content.http import FetchError
+                raise FetchError("403")
+            return (FIX / "gutenberg_pd.txt").read_bytes()
+
+        entry = {"id": "allen", "adapter": "gutenberg", "gutenberg_id": 4507, "licence": "public-domain"}
+        with mock.patch("reborn_content.http.get", side_effect=get):
+            res = adapters.fetch(entry, None)
+        self.assertEqual(res.fetched_from, "https://gutenberg.pglaf.org/cache/epub/4507/pg4507.txt")
+
+    def test_long_headings_are_shortened(self):
+        long = "Chapter VI. The Struggle for Means to Work. The. Burden of Celebrity. The First Assistance. From the State. It Comes Too Late"
+        self.assertEqual(gutenberg._locator(long, 64), "Chapter VI. The Struggle for Means to Work ¶64")
+        self.assertEqual(gutenberg._locator("Chapter I", 3), "Chapter I ¶3")
+
 
 class OpenStaxTest(unittest.TestCase):
     ENTRY = {"id": "psych", "adapter": "openstax", "repo": "osbooks-psychology", "collection": "psychology-2e",

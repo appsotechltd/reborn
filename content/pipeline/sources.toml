@@ -675,3 +675,156 @@ id = "its-ok-that-youre-not-ok-devine"
 adapter = "summary"
 url = "https://refugeingrief.com/refuge/books/"
 licence = "original-summary"
+
+# ---------------------------------------------------------------- Inventors, scientists and great thinkers (added 2026-10-12)
+# Fetched from gutenberg.org, falling back to its gutenberg.pglaf.org mirror (the same file).
+
+[[source]]
+id = "my-inventions-tesla"
+adapter = "web"
+url = "https://en.wikisource.org/wiki/My_Inventions"
+licence = "public-domain"
+# Tesla's 1919 Electrical Experimenter articles; Tesla died 1943, so public domain worldwide. Read on Wikisource.
+
+[[source]]
+id = "edison-his-life-and-inventions"
+adapter = "gutenberg"
+gutenberg_id = 820
+licence = "public-domain"
+
+[[source]]
+id = "autobiography-charles-darwin"
+adapter = "gutenberg"
+gutenberg_id = 2010
+licence = "public-domain"
+
+[[source]]
+id = "michael-faraday-thompson"
+adapter = "gutenberg"
+gutenberg_id = 65735
+licence = "public-domain"
+# Silvanus P. Thompson (d. 1916), 1898.
+
+[[source]]
+id = "early-history-of-the-airplane-wright"
+adapter = "gutenberg"
+gutenberg_id = 25420
+licence = "public-domain"
+
+[[source]]
+id = "pierre-curie-marie-curie"
+adapter = "gutenberg"
+gutenberg_id = 69617
+licence = "public-domain"
+# 1923 translation by Charlotte and Vernon Kellogg: public domain in the US; the translation may still be in copyright in life+70 countries (Charlotte Kellogg d. 1960).
+
+[[source]]
+id = "notebooks-leonardo-da-vinci"
+adapter = "gutenberg"
+gutenberg_id = 5000
+licence = "public-domain"
+# Jean Paul Richter's 1888 translation.
+
+[[source]]
+id = "foundations-of-science-poincare"
+adapter = "gutenberg"
+gutenberg_id = 39713
+licence = "public-domain"
+# George Bruce Halsted's 1913 translation (d. 1922).
+
+[[source]]
+id = "autobiography-andrew-carnegie"
+adapter = "gutenberg"
+gutenberg_id = 17976
+licence = "public-domain"
+
+[[source]]
+id = "essays-francis-bacon"
+adapter = "gutenberg"
+gutenberg_id = 575
+licence = "public-domain"
+
+[[source]]
+id = "essays-montaigne"
+adapter = "gutenberg"
+gutenberg_id = 3600
+licence = "public-domain"
+# Charles Cotton's translation, edited by William Carew Hazlitt.
+
+[[source]]
+id = "notes-on-nursing-nightingale"
+adapter = "gutenberg"
+gutenberg_id = 12439
+licence = "public-domain"
+
+[[source]]
+id = "story-of-my-life-helen-keller"
+adapter = "gutenberg"
+gutenberg_id = 2397
+licence = "public-domain"
+
+# ---------------------------------------------------------------- Etiquette & Manners (added 2026-10-12)
+
+[[source]]
+id = "etiquette-emily-post"
+adapter = "gutenberg"
+gutenberg_id = 14314
+licence = "public-domain"
+# 1922. Public domain in the US; Emily Post died 1960, so still in copyright in life+70 countries until 2031.
+
+[[source]]
+id = "letters-to-his-son-chesterfield"
+adapter = "gutenberg"
+gutenberg_id = 3361
+licence = "public-domain"
+
+[[source]]
+id = "rules-of-civility-washington"
+adapter = "gutenberg"
+gutenberg_id = 12029
+licence = "public-domain"
+# Moncure D. Conway's 1890 edition (d. 1907).
+
+[[source]]
+id = "book-of-business-etiquette-henney"
+adapter = "gutenberg"
+gutenberg_id = 23025
+licence = "public-domain"
+# 1922, published as by Nella Henney (Nella Braddy). Public domain in the US; she died 1973, so still in copyright in life+70 countries.
+
+# ---------------------------------------------------------------- Open-access research papers (added 2026-10-12)
+
+[[source]]
+id = "science-of-learning-weinstein-2018"
+adapter = "web"
+url = "https://doi.org/10.1186/s41235-017-0087-y"
+licence = "cc-by-4.0"
+# Cognitive Research: Principles and Implications 3:2 (2018), DOI 10.1186/s41235-017-0087-y; CC BY 4.0 statement confirmed in the article's licence block (PMC5780548).
+
+[[source]]
+id = "social-relationships-mortality-holt-lunstad-2010"
+adapter = "web"
+url = "https://doi.org/10.1371/journal.pmed.1000316"
+licence = "cc-by-4.0"
+# PLOS Medicine 7(7):e1000316 (2010), DOI 10.1371/journal.pmed.1000316; "Creative Commons Attribution License" confirmed on journals.plos.org article page, CC BY 4.0 per PMC2910600.
+
+[[source]]
+id = "sleep-and-mental-health-scott-2021"
+adapter = "web"
+url = "https://doi.org/10.1016/j.smrv.2021.101556"
+licence = "cc-by-4.0"
+# Sleep Medicine Reviews 60:101556 (2021), DOI 10.1016/j.smrv.2021.101556; "open access article under the CC BY license" confirmed in the article's licence block (PMC8651630).
+
+[[source]]
+id = "income-and-mental-health-thomson-2022"
+adapter = "web"
+url = "https://doi.org/10.1016/S2468-2667(22)00058-5"
+licence = "cc-by-4.0"
+# The Lancet Public Health 7(6):e515-e528 (2022), DOI 10.1016/S2468-2667(22)00058-5; CC BY 4.0 statement confirmed in the article's licence block (PMC7614874).
+
+[[source]]
+id = "funeral-practices-grief-burrell-2022"
+adapter = "web"
+url = "https://doi.org/10.1177/0030222820941296"
+licence = "cc-by-4.0"
+# OMEGA - Journal of Death and Dying 85(2):345-383 (2022, online 2020), DOI 10.1177/0030222820941296; CC BY 4.0 statement confirmed in the article's permissions block (PMC9185109).

@@ -1,0 +1,1272 @@
+{
+  "source": {
+    "id": "notebooks-leonardo-da-vinci",
+    "title": "The Notebooks of Leonardo Da Vinci",
+    "authors": [
+      "Leonardo da Vinci"
+    ],
+    "translator": "Jean Paul Richter",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/5000",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Leonardo da Vinci, The Notebooks of Leonardo Da Vinci (trans. Jean Paul Richter), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1888,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "Leonardo wrote these notes between about 1478 and 1519; they were first compiled, edited and translated by Jean Paul Richter in 1888, so the year given is that first edition."
+  },
+  "cards": [
+    {
+      "id": "notebooks-leonardo-da-vinci--01",
+      "topic": "learning",
+      "tags": [
+        "experience",
+        "first-hand",
+        "authority"
+      ],
+      "title": "Trust what you have tested over what you have only been told",
+      "body": "Leonardo was mocked for not being a scholar who could quote Latin authors. His answer was that he had a better teacher: experience. The people who sneered, he said, dressed themselves up in other people's work, while he went and looked for himself.\n\nThis is still a useful stance. Reading and quoting experts is fine, but knowledge you have checked with your own eyes and hands is sturdier. When a claim matters to you, look for a way to test it on a small scale before you build on it.",
+      "quote": "I shall rely on that which is much greater and more worthy:--on experience, the mistress of their Masters.",
+      "locator": "11 ¶1",
+      "apply_it": "Pick one piece of advice you follow without having tested it. Design a one-week trial to see whether it actually works for you.",
+      "quiz": {
+        "question": "What did Leonardo call 'the mistress of their Masters'?",
+        "options": [
+          "Experience",
+          "The ancient authors",
+          "His patrons in Milan",
+          "Mathematics"
+        ],
+        "answer": 0,
+        "explanation": "He said he could not quote authors like the scholars, but relied on experience, the teacher even their masters learned from."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--02",
+      "topic": "learning",
+      "tags": [
+        "judgment",
+        "expectations",
+        "mistakes"
+      ],
+      "title": "When results disappoint, question your expectations before the facts",
+      "body": "Leonardo noticed that people often blame experience for misleading them. In his view experience never lies. What goes wrong is our judgment, which promises itself results that the experiment never actually supported.\n\nThis is a handy check when something you tried falls flat. Before deciding the method is useless or the world is unfair, ask what you expected and why. Often the gap is between what the evidence showed and what we hoped it meant. Fixing the expectation is usually cheaper than throwing out the evidence.",
+      "quote": "Experience never errs; it is only your judgments that err by promising themselves effects such as are not caused by your experiments.",
+      "locator": "1153 ¶1",
+      "apply_it": "Think of a recent disappointment. Write down what you expected, and what evidence you actually had for that expectation.",
+      "quiz": {
+        "question": "According to Leonardo, what errs when we are disappointed?",
+        "options": [
+          "Experience itself",
+          "Our tools",
+          "Luck",
+          "Our judgments"
+        ],
+        "answer": 3,
+        "explanation": "Experience does not err; our judgments do, by expecting results the experience never promised."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--03",
+      "topic": "learning",
+      "tags": [
+        "thinking",
+        "authority",
+        "understanding"
+      ],
+      "title": "Quoting an authority is remembering, not thinking",
+      "body": "In an argument, it is tempting to settle things by naming a famous source. Leonardo pointed out that this uses your memory, not your understanding. You have shown that you know who said something, not that you know why it is true.\n\nThat does not mean experts are worthless. It means a quotation is a starting point. If you can explain the reasoning behind a claim in your own words, you understand it. If you can only cite who said it, you are borrowing someone else's thinking and cannot defend it when it is challenged.",
+      "quote": "Any one who in discussion relies upon authority uses, not his understanding, but rather his memory.",
+      "locator": "1159 ¶1",
+      "apply_it": "Next time you cite an expert, follow it with one sentence explaining the reasoning in your own words.",
+      "quiz": {
+        "question": "What does someone who relies on authority in discussion use, according to Leonardo?",
+        "options": [
+          "Their understanding",
+          "Their memory",
+          "Their imagination"
+        ],
+        "answer": 1,
+        "explanation": "He said relying on authority uses memory rather than understanding."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--04",
+      "topic": "learning",
+      "tags": [
+        "opinions",
+        "self-deception",
+        "humility"
+      ],
+      "title": "Your own opinions fool you more than anyone else can",
+      "body": "Among his short notes on folly and ignorance, Leonardo wrote that the greatest deception people suffer comes from their own opinions. Others may mislead us now and then, but we live with our own views all day, and we rarely audit them.\n\nIt is a humbling idea and a practical one. The beliefs you hold most comfortably are the ones least likely to be checked. Treat a strong opinion as a hypothesis: ask what would change your mind, and go looking for that evidence, not only for more support.",
+      "quote": "The greatest deception men suffer is from their own opinions.",
+      "locator": "1180 ¶1",
+      "apply_it": "Choose one opinion you hold strongly. Write down what evidence would change your mind, then look for it.",
+      "quiz": {
+        "question": "Where did Leonardo say the greatest deception comes from?",
+        "options": [
+          "Flatterers",
+          "Rumours",
+          "Our own opinions",
+          "Old books"
+        ],
+        "answer": 2,
+        "explanation": "He wrote that the greatest deception we suffer is from our own opinions."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--05",
+      "topic": "learning",
+      "tags": [
+        "primary-sources",
+        "originals",
+        "study"
+      ],
+      "title": "Go to the fountain, not the water jar",
+      "body": "Leonardo described a rival teacher who said beginners should learn by copying many masters' drawings. Leonardo agreed this works if the models are excellent, but such masters are rare. Copies of copies pick up errors. It is safer to study nature itself, the original thing.\n\nHis image is memorable: if you can reach the fountain, why drink from a jar someone filled from it? Today that means reading the original study rather than a summary of a summary, watching the real process rather than a commentary on it, and talking to the person who did the work.",
+      "quote": "for he who can go to the fountain does not go to the water-jar.",
+      "locator": "Of Study and the Order of Study ¶1",
+      "apply_it": "For a topic you are learning, find one original source (a study, a primary text, a practitioner) and spend 20 minutes with it.",
+      "quiz": {
+        "question": "Why did Leonardo prefer studying nature to copying other artists?",
+        "options": [
+          "Copying was forbidden by the guild",
+          "Copies made from nature lose quality, and great masters are rare",
+          "Nature is easier to draw",
+          "He disliked his teachers"
+        ],
+        "answer": 1,
+        "explanation": "Good masters are rare and imitations of nature deteriorate, so it is surer to go to the source."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--06",
+      "topic": "creativity",
+      "tags": [
+        "imagination",
+        "ideas",
+        "inspiration"
+      ],
+      "title": "Stare at a stained wall and let your imagination fill it in",
+      "body": "Leonardo offered a trick he admitted might sound silly. When you need to invent a scene, look at a wall marked with stains or mixed stones. You will start to see landscapes, battles, strange faces and figures in motion, which you can then work up into proper drawings. He compared it to church bells, in whose jangle you can hear any word you like.\n\nThe point is that vague, random input can unlock ideas. Clouds, a messy page, a blurry photo or random words can give your mind something to push against when a blank page gives it nothing.",
+      "quote": "when you look at a wall spotted with stains, or with a mixture of stones, if you have to devise some scene, you may discover a resemblance to various landscapes",
+      "locator": "A Way of Developing and Arousing the Mind to Various Inventions ¶1",
+      "apply_it": "Next time you are stuck, spend two minutes looking at something random (clouds, a textured surface) and note three ideas it suggests.",
+      "quiz": {
+        "question": "What did Leonardo compare the shapes in a stained wall to?",
+        "options": [
+          "The sound of bells in which you can hear any word",
+          "The pages of a book",
+          "Reflections in water",
+          "Footprints in sand"
+        ],
+        "answer": 0,
+        "explanation": "He said the shapes appear confusedly, like the jangle of bells in which you may hear any name or word you imagine."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--07",
+      "topic": "creativity",
+      "tags": [
+        "feedback",
+        "fresh-eyes",
+        "self-review"
+      ],
+      "title": "Flip your work to see it as a stranger would",
+      "body": "Leonardo observed that we spot faults in other people's work far more easily than in our own. While we pick at small flaws in others, big ones in our own work slip past. His fix was to look at a painting in a flat mirror. Reversed, it looks like another painter's work, and the errors jump out.\n\nThe same principle works for anything you make. Change how you meet your own work: print the essay, read it aloud, view the design upside down or on another screen. Unfamiliarity breaks the habit of seeing what you meant instead of what is there.",
+      "quote": "when you paint you should have a flat mirror and often look at your work as reflected in it, when you will see it reversed, and it will appear to you like some other painter's work",
+      "locator": "Of Judging Your Own Pictures ¶1",
+      "apply_it": "Before you finish your next piece of work, view it in a new form: printed, read aloud, or flipped. Note one fault you had missed.",
+      "quiz": {
+        "question": "Why did Leonardo recommend looking at your painting in a mirror?",
+        "options": [
+          "To check the colours were bright enough",
+          "Mirrors make paintings look larger",
+          "To copy it more quickly",
+          "Reversed, it looks like someone else's work, so faults are easier to judge"
+        ],
+        "answer": 3,
+        "explanation": "We judge others' work better than our own, so making it look like another painter's helps us see its faults."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--08",
+      "topic": "creativity",
+      "tags": [
+        "drafting",
+        "editing",
+        "rules"
+      ],
+      "title": "Use the rules to fix a draft, not to write it",
+      "body": "Leonardo wrote many rules for painting, but he was clear about when to use them. They are for correcting figures after the first composition, because everyone makes mistakes at first and you cannot fix what you cannot see. If you try to apply every rule while composing, he warned, you will never finish and the work will become confused.\n\nThis is good advice for any creative work. Let the first draft flow. Then switch modes and bring out the checklist, the style guide and the critical eye. Mixing the two jams both.",
+      "quote": "These rules are of use only in correcting the figures; since every man makes some mistakes in his first compositions and he who knows them not, cannot amend them.",
+      "locator": "18 ¶1",
+      "apply_it": "On your next project, write or sketch the first draft without stopping to correct. Only afterwards go through it with your checklist.",
+      "quiz": {
+        "question": "What did Leonardo warn would happen if you apply his rules while composing?",
+        "options": [
+          "Your colours will fade",
+          "You will become famous too quickly",
+          "You will never make an end, and the work will be confused",
+          "Nothing; rules should always be applied"
+        ],
+        "answer": 2,
+        "explanation": "He said the rules are for correcting; applying them during composition means never finishing and producing confusion."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--09",
+      "topic": "creativity",
+      "tags": [
+        "notebook",
+        "observation",
+        "capture"
+      ],
+      "title": "Carry a small notebook and sketch life as it happens",
+      "body": "Once a student had learned the basics, Leonardo told them to walk about and watch people talking, quarrelling, laughing or fighting, including how bystanders react. They should note these scenes with a few quick strokes in a little book carried everywhere, and keep the old books rather than rub them out. Forms and gestures are endless, he said, and memory cannot hold them all.\n\nHis own notebooks are proof of the habit. A pocket notebook or notes app is a store of raw material. Ideas and observations you capture today become the material you build with later.",
+      "quote": "And take a note of them with slight strokes thus, in a little book which you should always carry with you.",
+      "locator": "Of the Way to Learn to Compose Figures [In Groups] in Historical. Pictures ¶1",
+      "apply_it": "Carry a small notebook for one week. Each day, jot down one thing you observe about how people act or speak.",
+      "quiz": {
+        "question": "Why did Leonardo say the notes should be kept and not rubbed out?",
+        "options": [
+          "The forms of things are so endless that memory cannot keep them",
+          "Paper was expensive",
+          "His patrons wanted to see them",
+          "So he could sell them"
+        ],
+        "answer": 0,
+        "explanation": "He said forms and positions are infinite and memory cannot retain them, so the sketches serve as guides."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--10",
+      "topic": "creativity",
+      "tags": [
+        "drafting",
+        "iteration",
+        "reality-check"
+      ],
+      "title": "Sketch your idea first, then refine it against the real thing",
+      "body": "Leonardo described a working order for important pictures. First, get the idea in your imagination down on paper in expressive forms. Then keep taking out and putting in until you are satisfied. Only then bring in live models and check that nothing in the work clashes with reason and nature. He warned that no one can remember all of nature, so trusting memory alone is a kind of ignorance.\n\nIt is a sound creative loop: rough out the vision, revise freely, then test it against reality before calling it finished.",
+      "quote": "first strive in drawing to represent your intention to the eye by expressive forms, and the idea originally formed in your imagination; then go on taking out or putting in, until you have satisfied yourself.",
+      "locator": "How, in Important Works, a Man Should Not Trust Entirely to His. Memory Without Condescending to Draw From Nature ¶1",
+      "apply_it": "Take a current project through the three steps: rough out your idea, revise it twice, then check it against a real example or user.",
+      "quiz": {
+        "question": "What did Leonardo say comes after getting your imagined idea down in expressive forms?",
+        "options": [
+          "Selling the work at once",
+          "Throwing it away and starting again",
+          "Copying another master's version",
+          "Taking out or putting in until you are satisfied"
+        ],
+        "answer": 3,
+        "explanation": "He advised revising by taking out and putting in, then checking against live models."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--11",
+      "topic": "creativity",
+      "tags": [
+        "curiosity",
+        "inspiration",
+        "everyday"
+      ],
+      "title": "Something worth learning is always within reach",
+      "body": "In a single line among his precepts for painters, Leonardo noted that nature has kindly arranged things so that wherever you are in the world, you can find something to imitate.\n\nIt is a cheerful antidote to the idea that you need the right place, teacher or equipment before you can grow. A queue, a kitchen, a bus ride and a patch of weeds all hold forms, behaviours and patterns to study. The material is everywhere; what is scarce is attention.",
+      "quote": "Nature has beneficently provided that throughout the world you may find something to imitate.",
+      "locator": "How Something May Be Learnt Everywhere ¶1",
+      "apply_it": "Wherever you are right now, find one thing you could study or copy, and spend two minutes really looking at it.",
+      "quiz": {
+        "question": "What did Leonardo say nature has provided throughout the world?",
+        "options": [
+          "Rest from work",
+          "Something to imitate",
+          "Patrons for artists",
+          "Perfect light"
+        ],
+        "answer": 1,
+        "explanation": "He wrote that throughout the world you may find something to imitate."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--12",
+      "topic": "skills-mastery",
+      "tags": [
+        "learning-path",
+        "fundamentals",
+        "practice"
+      ],
+      "title": "Learn a craft in a sensible order",
+      "body": "Leonardo laid out a path for a young painter. First learn perspective, then the proportions of things. Then copy a good master to get used to fine forms. Then draw from nature to confirm the rules through practice. Then look for a while at the works of various masters. Finally, get into the habit of putting the art into practice and working.\n\nThe sequence is worth borrowing: principles, then guided imitation, then real-world practice, then wide exposure, then your own steady output. Skipping steps can make later stages slower and more frustrating.",
+      "quote": "The youth should first learn perspective, then the proportions of objects. Then he may copy from some good master, to accustom himself to fine forms.",
+      "locator": "483 ¶1",
+      "apply_it": "Map a skill you are learning onto Leonardo's stages. Which stage are you at, and what is the next one?",
+      "quiz": {
+        "question": "In Leonardo's course for a young artist, what came after copying a good master?",
+        "options": [
+          "Selling paintings",
+          "Studying poetry",
+          "Drawing from nature to confirm the rules by practice",
+          "Opening a workshop"
+        ],
+        "answer": 2,
+        "explanation": "After copying a master, the student drew from nature to confirm the rules through practice."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--13",
+      "topic": "skills-mastery",
+      "tags": [
+        "theory",
+        "practice",
+        "direction"
+      ],
+      "title": "Practice without understanding is sailing without a compass",
+      "body": "Leonardo loved practice, but he warned against falling in love with it on its own. Someone who practises without knowing the principles is like a sailor in a ship without a rudder or compass, never sure where they are heading. For painting, he said, perspective was the guide and gateway.\n\nRepetition alone can groove in bad habits as easily as good ones. Pair your practice with a clear grasp of why things work, so that each session moves you in a direction rather than just around in circles.",
+      "quote": "Those who are in love with practice without knowledge are like the sailor who gets into a ship without rudder or compass and who never can be certain whether he is going.",
+      "locator": "Of the Mistakes Made by Those Who Practise Without Knowledge ¶1",
+      "apply_it": "Before your next practice session, write one sentence on the principle you are trying to apply, and check it at the end.",
+      "quiz": {
+        "question": "What did Leonardo compare practice without knowledge to?",
+        "options": [
+          "A bird without wings",
+          "A sailor without rudder or compass",
+          "A house without a roof",
+          "A painter without brushes"
+        ],
+        "answer": 1,
+        "explanation": "He compared it to a sailor in a ship with no rudder or compass, never sure where he is going."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--14",
+      "topic": "skills-mastery",
+      "tags": [
+        "speed",
+        "accuracy",
+        "deliberate-practice"
+      ],
+      "title": "Go slowly and carefully; the speed comes on its own",
+      "body": "Leonardo told students who wanted to study well to always work slowly at their drawing. Notice exactly where the brightest lights and deepest shadows fall, how they blend, the proportions, which way each outline curves. Once your hand and judgement are trained by this care, he promised, you will become fast before you realise it.\n\nMany learners try to be quick first and accurate later. Leonardo reversed that. Careful, attentive repetitions build the judgement that speed relies on. Rushing early often just trains you to make the same mistakes faster.",
+      "quote": "And when you have thus schooled your hand and your judgment by such diligence, you will acquire rapidity before you are aware.",
+      "locator": "How That Diligence [Accuracy] Should First Be Learnt Rather Than. Rapid Execution ¶1",
+      "apply_it": "In your next practice session, deliberately work at half speed and focus only on accuracy.",
+      "quiz": {
+        "question": "What did Leonardo say should be learned first?",
+        "options": [
+          "Diligence and accuracy",
+          "Rapid execution",
+          "Bold colours",
+          "Large compositions"
+        ],
+        "answer": 0,
+        "explanation": "He taught that careful, diligent work should come first, and speed would follow."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "finishing",
+        "diligence",
+        "commitment"
+      ],
+      "title": "Finishing your work says more than loving the idea of it",
+      "body": "Leonardo noticed that many young people love drawing and enjoy the idea of it, yet lack real aptitude. The sign, he said, showed in those who are not diligent and never finish their drawings with shading.\n\nWe need not read this as a verdict on talent. The useful lesson is that follow-through is a strong signal of commitment. Enthusiasm is pleasant, but the unglamorous final stage, the shading and polishing, is where skill really grows. If you keep abandoning things near the end, that is worth noticing.",
+      "quote": "Many are they who have a taste and love for drawing, but no talent; and this will be discernible in boys who are not diligent and never finish their drawings with shading.",
+      "locator": "A Warning Concerning Youths Wishing to Be Painters ¶1",
+      "apply_it": "Find one unfinished piece of work you abandoned near the end. Spend 30 minutes taking it to completion.",
+      "quiz": {
+        "question": "What sign did Leonardo look for in young people who loved drawing but lacked aptitude?",
+        "options": [
+          "They drew too slowly",
+          "They worked alone",
+          "They copied other masters",
+          "They were not diligent and never finished their drawings with shading"
+        ],
+        "answer": 3,
+        "explanation": "He said it showed in those who were not diligent and never finished their drawings with shading."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "students",
+        "ambition",
+        "teachers"
+      ],
+      "title": "A good student aims to surpass the teacher",
+      "body": "One of Leonardo's shortest precepts is also one of his boldest: he is a poor disciple who does not excel his master. A teacher is a starting point, not a ceiling.\n\nThis takes nothing away from respect for teachers. The best ones want their students to go further. For a learner, it means absorbing what a mentor offers and then building on it with your own experiments, rather than settling for a faithful copy. For a teacher or manager, it is a reminder to measure success by how far your people outgrow you.",
+      "quote": "He is a poor disciple who does not excel his master.",
+      "locator": "498 ¶1",
+      "apply_it": "Name one thing your best teacher or mentor did well. What is one way you could take it further?",
+      "quiz": {
+        "question": "According to Leonardo, who is a poor disciple?",
+        "options": [
+          "One who argues with the master",
+          "One who studies nature",
+          "One who does not excel the master",
+          "One who works alone"
+        ],
+        "answer": 2,
+        "explanation": "He wrote: 'He is a poor disciple who does not excel his master.'"
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--17",
+      "topic": "skills-mastery",
+      "tags": [
+        "peers",
+        "motivation",
+        "emulation"
+      ],
+      "title": "Practise among peers who are a little better than you",
+      "body": "Although Leonardo prized solitude for reflection, he insisted that drawing in company beats drawing alone. You would be ashamed to fall behind the others, and that shame makes you careful. Healthy rivalry pushes you to join those who are praised more than you. You can learn from the work of people who do better, and if you are ahead, you learn from their mistakes.\n\nModern learners can use the same forces: a study group, a running club, a class or an online community where you share work and see others' progress.",
+      "quote": "a wholesome emulation will stimulate you to be among those who are more praised than yourself, and this praise of others will spur you on.",
+      "locator": "Of Whether It Is Better to Draw with Companions or Not ¶1",
+      "apply_it": "Find one group, class or online space where people practise the skill you are working on, and share something there this week.",
+      "quiz": {
+        "question": "Which of these was NOT one of Leonardo's reasons for drawing in company?",
+        "options": [
+          "Companions will finish your work for you",
+          "Others' praise spurs you on",
+          "You can learn from better drawings",
+          "Shame at falling behind makes you study carefully"
+        ],
+        "answer": 0,
+        "explanation": "He named shame, wholesome emulation and learning from others; not having others do your work."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--18",
+      "topic": "study-smarter",
+      "tags": [
+        "step-by-step",
+        "foundations",
+        "mastery"
+      ],
+      "title": "Climb one step at a time and fix each before the next",
+      "body": "Leonardo pointed out that the eye takes in a whole page in an instant, yet to understand it you must read word by word, line by line. Likewise, to reach the top of a building you must climb the stairs one at a time. So begin with the details, and do not move to the second step until the first is fixed in memory and in practice. Otherwise, he warned, you waste time or drag out your studies.\n\nIt is a case for mastery learning: solid foundations make every later step faster.",
+      "quote": "Again, if you wish to go to the top of a building you must go up step by step; otherwise it will be impossible that you should reach the top.",
+      "locator": "What Rules Should Be Given to Boys Learning to Paint ¶1",
+      "apply_it": "List the steps of something you are learning. Mark the first one you cannot yet do reliably, and practise only that this week.",
+      "quiz": {
+        "question": "When did Leonardo say you should move on to the second step?",
+        "options": [
+          "When you are bored of the first",
+          "Whenever your teacher is absent",
+          "After exactly one week",
+          "When the first is well fixed in memory and in practice"
+        ],
+        "answer": 3,
+        "explanation": "He advised not to go on to the second step until the first is well fixed in memory and practice."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--19",
+      "topic": "study-smarter",
+      "tags": [
+        "recall",
+        "memory",
+        "bedtime"
+      ],
+      "title": "Replay what you studied as you lie in bed",
+      "body": "Leonardo said he had proved for himself the value of a quiet exercise: lying in bed in the dark, he would recall in his mind the details of forms he had studied earlier, or ideas he had worked out. He called it admirable for fixing things in memory.\n\nWhat he describes resembles what learning researchers now call retrieval practice: pulling information out of your head rather than rereading it. A few minutes of calm recall before sleep or on waking is an easy, free way to review the day's learning.",
+      "quote": "I myself have proved it to be of no small use, when in bed in the dark, to recall in fancy the external details of forms previously studied",
+      "locator": "Of Studying, in the Dark, When You Wake, or in Bed Before You Go to. Sleep ¶1",
+      "apply_it": "Tonight, before sleep, try to recall three things you learned today in as much detail as you can.",
+      "quiz": {
+        "question": "What exercise did Leonardo find useful for memory?",
+        "options": [
+          "Rereading notes by candlelight",
+          "Recalling studied forms in his mind while in bed in the dark",
+          "Copying the same drawing a hundred times",
+          "Studying through the night without sleep"
+        ],
+        "answer": 1,
+        "explanation": "He recalled the details of forms previously studied while lying in bed in the dark."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--20",
+      "topic": "study-smarter",
+      "tags": [
+        "self-testing",
+        "mistakes",
+        "practice"
+      ],
+      "title": "Test yourself without the model and fix only what you got wrong",
+      "body": "Leonardo gave a precise method for learning something by heart. When you have drawn something so many times you think you know it, draw it without the model. Then lay a tracing of the model over your drawing and note exactly where they differ. Go back to the model and redraw just the wrong parts until you have them, and take care not to repeat those mistakes.\n\nIt is a model of self-testing: recall, compare against the source, then target practice on your errors rather than repeating what you already know.",
+      "quote": "When you have drawn the same thing so many times that you think you know it by heart, test it by drawing it without the model",
+      "locator": "Of a Method of Learning Well by Heart ¶1",
+      "apply_it": "Pick something you think you know. Write or draw it from memory, check it against the source, and redo only the parts you got wrong.",
+      "quiz": {
+        "question": "After drawing without the model, what did Leonardo suggest you do?",
+        "options": [
+          "Show it to a patron",
+          "Start a completely new subject",
+          "Compare it with a tracing of the model and redraw the wrong parts",
+          "Frame it as finished"
+        ],
+        "answer": 2,
+        "explanation": "He used a traced overlay to spot errors, then redrew the wrong parts until they were fixed in mind."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--21",
+      "topic": "study-smarter",
+      "tags": [
+        "review",
+        "planning",
+        "seasons"
+      ],
+      "title": "Set aside quiet seasons to sort and review what you gathered",
+      "body": "Leonardo suggested a yearly rhythm for young students. In summer, gather studies from life. On winter evenings, bring all those drawings together, choose the best studies of limbs and bodies, and commit them to memory for use in practice. The next summer, check fresh observations against what you studied in winter.\n\nThe principle is to alternate collecting and consolidating. A weekly or monthly review session, where you sort your notes and keep the best, turns a pile of material into usable knowledge.",
+      "quote": "Winter evenings ought to be employed by young students in looking over the things prepared during the summer",
+      "locator": "Of the Time for Studying Selection of Subjects ¶1",
+      "apply_it": "Schedule a 30-minute review this week to sort through your recent notes and pick out the five most useful things.",
+      "quiz": {
+        "question": "What did Leonardo say winter evenings should be used for?",
+        "options": [
+          "Resting completely from art",
+          "Looking over the summer's studies and choosing the best",
+          "Painting large frescoes",
+          "Travelling to see other masters"
+        ],
+        "answer": 1,
+        "explanation": "He advised reviewing the summer's drawings and selecting the best to commit to memory."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--22",
+      "topic": "study-smarter",
+      "tags": [
+        "interest",
+        "motivation",
+        "memory"
+      ],
+      "title": "Study without interest is like eating without appetite",
+      "body": "Leonardo made a simple comparison. Eating against your will does you no good, and study without a liking for it spoils the memory, which keeps nothing it takes in.\n\nYou cannot always choose what you must learn, but you can often find a way in that sparks interest: a real problem the topic solves, a story behind it, a question you want answered. Even a little genuine curiosity makes material far easier to remember than grim force alone.",
+      "quote": "Just as eating against one's will is injurious to health, so study without a liking for it spoils the memory, and it retains nothing it takes in.",
+      "locator": "1176 ¶1",
+      "apply_it": "For a subject you find dull, write down one question about it you genuinely want answered, and study to answer that.",
+      "quiz": {
+        "question": "What did Leonardo compare study without liking to?",
+        "options": [
+          "Eating against one's will",
+          "Walking without shoes",
+          "Sleeping in daylight",
+          "Painting without light"
+        ],
+        "answer": 0,
+        "explanation": "He said study without liking, like eating against your will, does no good; the memory retains nothing."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--23",
+      "topic": "study-smarter",
+      "tags": [
+        "depth",
+        "summaries",
+        "patience"
+      ],
+      "title": "Shortcuts and summaries can rob you of real understanding",
+      "body": "Leonardo was impatient with people who boil rich subjects down to bare outlines. Abbreviators, he said, harm both knowledge and love, because love of anything grows from knowing it fully, part by part. Impatience, he wrote, is the mother of stupidity, and it praises brevity as if there were not time to learn even one subject properly.\n\nSummaries have their place, but they are not understanding. When something matters to you, give it the time to learn the details. Depth is also what turns a topic from a chore into something you care about.",
+      "quote": "It is true that impatience, the mother of stupidity, praises brevity, as if such persons had not life long enough to serve them to acquire a complete knowledge of one single subject, such as the human body",
+      "locator": "1210 ¶1",
+      "apply_it": "Choose one topic you only know from summaries. Read or watch one full-length original treatment of it this month.",
+      "quiz": {
+        "question": "What did Leonardo call 'the mother of stupidity'?",
+        "options": [
+          "Pride",
+          "Solitude",
+          "Wealth",
+          "Impatience"
+        ],
+        "answer": 3,
+        "explanation": "He wrote that impatience, the mother of stupidity, praises brevity."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--24",
+      "topic": "productivity",
+      "tags": [
+        "breaks",
+        "perspective",
+        "judgment"
+      ],
+      "title": "Step away and stand back to judge your work better",
+      "body": "Leonardo gave two more tips for judging your own pictures. First, often leave off work and rest a little, because when you return you are a better judge; sitting too close to the work for too long can greatly deceive you. Second, step back to a distance, where the work looks smaller and your eye takes in more of it at once, so mismatches in proportion and colour stand out.\n\nBoth translate well. Take short breaks during long tasks, and before finishing, zoom out to look at the whole rather than the line you are fiddling with.",
+      "quote": "it is well that you should often leave off work and take a little relaxation, because, when you come back to it you are a better judge",
+      "locator": "Of Judging Your Own Pictures ¶1",
+      "apply_it": "During your next long task, set a timer to take a short break every hour, and do a whole-picture review before you finish.",
+      "quiz": {
+        "question": "Why did Leonardo recommend taking breaks from your work?",
+        "options": [
+          "To avoid paying assistants",
+          "To let the paint dry",
+          "When you come back you are a better judge of it",
+          "Because patrons preferred slow work"
+        ],
+        "answer": 2,
+        "explanation": "He said that when you return after rest you are a better judge, since sitting too close to the work deceives you."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--25",
+      "topic": "productivity",
+      "tags": [
+        "solitude",
+        "focus",
+        "distraction"
+      ],
+      "title": "Guard some time alone for deep work",
+      "body": "Leonardo argued that when an artist is absorbed in study and reflection, he should be alone. Alone, you are entirely your own master; with one companion you are half your own, and with many you are pulled further away. Even if you try to keep to yourself in company, he said, you cannot help listening to the chatter, so you end up a poor companion and a worse student.\n\nHe also valued studying with peers, so this is not a rule against people. It is a case for protecting stretches of undistracted time for the thinking that needs it.",
+      "quote": "While you are alone you are entirely your own [master] and if you have one companion you are but half your own",
+      "locator": "Of the Life of the Painter in His Studio ¶1",
+      "apply_it": "Block out one hour this week with no people, notifications or messages, and use it for your most demanding thinking.",
+      "quiz": {
+        "question": "According to Leonardo, how much your own are you with one companion?",
+        "options": [
+          "Half",
+          "Entirely",
+          "Not at all",
+          "Twice as much"
+        ],
+        "answer": 0,
+        "explanation": "Alone you are entirely your own; with one companion you are but half your own."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--26",
+      "topic": "productivity",
+      "tags": [
+        "prioritising",
+        "hard-problems",
+        "focus"
+      ],
+      "title": "When two problems compete, solve the harder one first",
+      "body": "Leonardo described what to do when, while working on one question, a second one barges into your mind. Decide which is the more difficult to work out, follow that one until it becomes quite clear, and only then turn to the other. He also wanted the mind kept clear and free from other cares while studying.\n\nIt is a neat rule for a crowded mind. Instead of flitting between two half-solved problems, tackle the tougher one fully while your energy is highest. The easier one often gets simpler once the hard one is settled.",
+      "quote": "then he must decide which of these cases is the more difficult to work out, and follow that up until it becomes quite clear, and then work out the explanation of the other",
+      "locator": "Of the Life of the Painter in the Country ¶1",
+      "apply_it": "When a second task interrupts your focus today, jot it down, decide which is harder, and finish that one first.",
+      "quiz": {
+        "question": "When a second subject interrupts, what did Leonardo say to do?",
+        "options": [
+          "Drop both and rest",
+          "Work on whichever is easier first",
+          "Work on both at once",
+          "Follow the more difficult one until it is clear, then the other"
+        ],
+        "answer": 3,
+        "explanation": "He said to decide which is more difficult, follow it until clear, then work out the other."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--27",
+      "topic": "productivity",
+      "tags": [
+        "mornings",
+        "time",
+        "habits"
+      ],
+      "title": "Don't waste the morning, when your mind is freshest",
+      "body": "In a note on how to picture Pleasure and Pain, Leonardo explained why he gave the figure a reed of the kind used to prop up beds. The bed, he said, is where vain dreams come and much of life is consumed. Precious time is wasted there in the morning, just when the mind is composed and rested and the body ready for new work.\n\nMany people still find their clearest thinking early in the day. Rather than letting those hours drift away, consider giving them to the work that most needs a fresh mind.",
+      "quote": "It is here that much precious time is wasted, that is, in the morning, when the mind is composed and rested, and the body is made fit to begin new labours",
+      "locator": "676 ¶5",
+      "apply_it": "Tomorrow, spend the first 30 minutes after you are ready for the day on your most important task, before checking messages.",
+      "quiz": {
+        "question": "Why did Leonardo think lingering in bed in the morning wasted time?",
+        "options": [
+          "Because the light is poor in the morning",
+          "Because the mind is then composed and rested and the body fit for new work",
+          "Because patrons visited early",
+          "Because sleep causes illness"
+        ],
+        "answer": 1,
+        "explanation": "He wrote that the morning is when the mind is rested and the body fit to begin new labours."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--28",
+      "topic": "productivity",
+      "tags": [
+        "legacy",
+        "lasting-work",
+        "meaning"
+      ],
+      "title": "Put your effort into work that outlives you",
+      "body": "Among his rules on how to spend life, Leonardo wrote a single line: avoid studies whose result dies with the worker. His own notebooks, kept and copied for centuries, show the principle at work.\n\nWe can apply it in modest ways. Effort that leaves something behind, such as a skill you teach, a document others can use, a tool, a well-raised child or a garden, keeps paying off. When choosing between tasks, ask which one will still be useful to someone after you have stopped working on it.",
+      "quote": "Avoid studies of which the result dies with the worker.",
+      "locator": "1169 ¶1",
+      "apply_it": "Pick one thing you know how to do well and write it down or teach it to someone, so it outlasts you.",
+      "quiz": {
+        "question": "What kind of studies did Leonardo advise avoiding?",
+        "options": [
+          "Studies that take many years",
+          "Studies of nature",
+          "Studies whose result dies with the worker",
+          "Studies done alone"
+        ],
+        "answer": 2,
+        "explanation": "He wrote: 'Avoid studies of which the result dies with the worker.'"
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--29",
+      "topic": "mindfulness",
+      "tags": [
+        "attention",
+        "walking",
+        "presence"
+      ],
+      "title": "When you walk, actually look",
+      "body": "Leonardo wanted a painter's mind to be like a mirror, filled with whatever is in front of it. So as you walk through the fields, turn your attention to one thing and then another, gathering a store of observations. He criticised painters who went for a walk to relax but carried their tiredness with them, so they saw nothing, and even greeted friends as if they were empty air.\n\nA walk can refresh you or just move your worries outdoors. Letting your attention rest on what you actually see and hear is a simple way to make it count.",
+      "quote": "as you go through the fields, turn your attention to various objects, and, in turn look now at this thing and now at that",
+      "locator": "Painting ¶1",
+      "apply_it": "On your next walk, leave your phone in your pocket and notice five specific things you would usually pass by.",
+      "quiz": {
+        "question": "What did Leonardo criticise some painters for doing on walks?",
+        "options": [
+          "Walking too quickly",
+          "Keeping fatigue in their minds so they saw nothing",
+          "Walking in groups",
+          "Sketching instead of resting"
+        ],
+        "answer": 1,
+        "explanation": "He said they kept fatigue in their minds and so did not take in what they saw, even friends."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--30",
+      "topic": "mindfulness",
+      "tags": [
+        "time",
+        "gratitude",
+        "memory"
+      ],
+      "title": "Time is not too short; it is enough as it passes",
+      "body": "Leonardo thought people are wrong to complain that time flies. Time is sufficient as it passes, he wrote; it is our good memory that makes long-past things feel recent, so life seems to have rushed by. Elsewhere he put it in four words: life, if well spent, is long.\n\nThe feeling of having no time often comes from looking back rather than living now. Rather than lamenting speed, focus on using the hours in front of you well. A day filled with attention feels long and full when you remember it.",
+      "quote": "Men are in error when they lament the flight of time, accusing it of being too swift, and not perceiving that it is sufficient as it passes",
+      "locator": "1170 ¶1",
+      "apply_it": "Tonight, instead of thinking 'where did the day go?', list three things you did with it that mattered.",
+      "quiz": {
+        "question": "Why did Leonardo think people wrongly complain that time is too swift?",
+        "options": [
+          "Time is sufficient as it passes; memory makes the past seem present",
+          "Clocks were inaccurate",
+          "People sleep too much",
+          "The seasons change too quickly"
+        ],
+        "answer": 0,
+        "explanation": "He said time is sufficient as it passes, and memory makes long-past things seem present."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--31",
+      "topic": "mindfulness",
+      "tags": [
+        "present-moment",
+        "time",
+        "flow"
+      ],
+      "title": "The present is the water you are touching right now",
+      "body": "Leonardo, who spent years studying rivers, offered a lovely image of the present. The water you touch in a river is the last of what has passed and the first of what is coming. So it is with the present moment.\n\nThe image holds two truths at once. Now is the only point where you can actually touch your life, and it is always connected to what came before and what comes next. You cannot hold the water still, but you can notice it while your hand is in it.",
+      "quote": "The water you touch in a river is the last of that which has passed, and the first of that which is coming. Thus it is with time present.",
+      "locator": "1174 ¶1",
+      "apply_it": "Pause for one minute today and notice three sensations in the present moment, as if putting your hand in the river.",
+      "quiz": {
+        "question": "What did Leonardo compare the present moment to?",
+        "options": [
+          "A candle burning down",
+          "A closed book",
+          "A shadow at noon",
+          "The water you touch in a river"
+        ],
+        "answer": 3,
+        "explanation": "The water you touch is the last of what has passed and the first of what is coming; so it is with the present."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--32",
+      "topic": "mindfulness",
+      "tags": [
+        "well-spent",
+        "sleep",
+        "meaning"
+      ],
+      "title": "A day well spent brings good sleep, and a life well spent a peaceful end",
+      "body": "Leonardo drew a parallel between a single day and a whole life. Just as a day well spent brings happy sleep, a life well used brings a happy death.\n\nThe comparison makes a large idea manageable. You cannot live a whole good life today, but you can live one good day, and a life is built from those. The quiet contentment you feel at night after a day of honest effort is a small preview of what a life of such days adds up to.",
+      "quote": "As a day well spent procures a happy sleep, so a life well employed procures a happy death.",
+      "locator": "1173 ¶1",
+      "apply_it": "Plan tomorrow so that by evening you can name one thing that made it a day well spent.",
+      "quiz": {
+        "question": "What does a day well spent procure, according to Leonardo?",
+        "options": [
+          "Wealth",
+          "Fame",
+          "A happy sleep",
+          "A long meal"
+        ],
+        "answer": 2,
+        "explanation": "He wrote that a day well spent procures a happy sleep, as a life well employed procures a happy death."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--33",
+      "topic": "mindfulness",
+      "tags": [
+        "contentment",
+        "money",
+        "enjoyment"
+      ],
+      "title": "Don't spend your whole life saving for a life you never enjoy",
+      "body": "Leonardo had harsh words for a particular kind of anxiety about money. It is supreme folly, he wrote, always to go without for fear of going without, because life flies away while you are still hoping to enjoy what you worked so hard to gain.\n\nPrudence is wise, and he praised the ant's foresight elsewhere. But there is a point where worry about future lack crowds out any present enjoyment. Planning for tomorrow and appreciating today are not enemies; the goal is to do both.",
+      "quote": "That man is of supreme folly who always wants for fear of wanting; and his life flies away while he is still hoping to enjoy the good things which he has with extreme labour acquired.",
+      "locator": "1187 ¶1",
+      "apply_it": "Name one good thing you already have but rarely enjoy. Make time to enjoy it this week.",
+      "quiz": {
+        "question": "What did Leonardo call supreme folly?",
+        "options": [
+          "Always going without for fear of going without",
+          "Spending on art",
+          "Lending money to friends",
+          "Working too little"
+        ],
+        "answer": 0,
+        "explanation": "He said it is supreme folly always to want for fear of wanting, while life flies away."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--34",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "criticism",
+        "feedback",
+        "listening"
+      ],
+      "title": "Listen to every critic, then decide calmly whether they are right",
+      "body": "Leonardo urged painters not to shrink from anyone's opinion while working. Even people who cannot paint know human bodies well enough to see a crooked shoulder or an oversized nose, and we are easily deceived about our own work. So listen patiently, weigh whether the critic has grounds, and if so, fix it. If not, act as if you had not heard; and if it is someone you respect, show them by reasoning where they went wrong.\n\nIt is a balanced model for feedback: open ears, honest judgement, no defensiveness and no automatic surrender.",
+      "quote": "be curious to hear with patience the opinions of others, consider and weigh well whether those who find fault have ground or not for blame, and, if so amend",
+      "locator": "That a Painter Ought to Be Curious to Hear the Opinions of Every One. On His Work ¶1",
+      "apply_it": "Ask someone outside your field for feedback on your work. Write down their points, then sort them into 'fair' and 'not fair' before reacting.",
+      "quiz": {
+        "question": "If a critic's fault-finding has no grounds, what did Leonardo advise?",
+        "options": [
+          "Argue with them publicly",
+          "Stop showing your work",
+          "Change the work anyway",
+          "Act as though you had not heard, or reason with them if you esteem them"
+        ],
+        "answer": 3,
+        "explanation": "If unfounded, act as though you had not heard; if it is someone you esteem, show them by argument the cause of their mistake."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--35",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "patience",
+        "insults",
+        "resilience"
+      ],
+      "title": "Put on more patience as the insults grow colder",
+      "body": "Leonardo offered a homely simile for handling insults. Patience protects us against them the way clothes protect us against cold. As the cold increases, you put on more layers and it cannot hurt you. In the same way, when offences grow greater, increase your patience, and they cannot wound your feelings.\n\nThe image makes patience feel active, something you deliberately add as needed. When a conversation turns hostile, consciously slow down, breathe and add a layer before you reply.",
+      "quote": "Patience serves us against insults precisely as clothes do against the cold.",
+      "locator": "A Simile for Patience ¶1",
+      "apply_it": "Next time someone provokes you, picture putting on another layer of patience, and wait one breath longer before you answer.",
+      "quiz": {
+        "question": "What did Leonardo compare patience to?",
+        "options": [
+          "A shield in battle",
+          "Clothes against the cold",
+          "A wall around a city",
+          "Medicine for a fever"
+        ],
+        "answer": 1,
+        "explanation": "He said patience serves against insults as clothes do against the cold; add more as the offence grows."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--36",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "friendship",
+        "feedback",
+        "praise"
+      ],
+      "title": "Correct a friend in private and praise them in public",
+      "body": "In his rules of life Leonardo set down a piece of social wisdom that has lasted for good reason: reprove your friend in secret and praise him openly.\n\nCriticism in front of others turns a useful note into a public humiliation, and people defend their pride instead of hearing the point. Private correction lets them save face and actually take it in. Public praise, meanwhile, costs you nothing and builds trust and goodwill. The same rule works for colleagues, teams and children.",
+      "quote": "Reprove your friend in secret and praise him openly.",
+      "locator": "1194 ¶2",
+      "apply_it": "This week, give one piece of genuine praise to someone in front of others, and save any criticism for a private moment.",
+      "quiz": {
+        "question": "How did Leonardo advise treating a friend?",
+        "options": [
+          "Praise in secret, reprove openly",
+          "Never reprove at all",
+          "Reprove in secret, praise openly",
+          "Reprove and praise only in writing"
+        ],
+        "answer": 2,
+        "explanation": "He wrote: 'Reprove your friend in secret and praise him openly.'"
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--37",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "listening",
+        "conversation",
+        "reading-people"
+      ],
+      "title": "Watch your listeners and change course when they tire",
+      "body": "Leonardo noticed that words which do not satisfy the hearer weary or annoy them, and you can see it in their frequent yawns. If you want someone's goodwill and see that fatigue, shorten your speech or change the subject; push on, and you will earn dislike instead of favour. He added a trick: to find what a person enjoys, change topics and watch for when they become intent, without yawning or frowning.\n\nGood conversation depends on reading the room. Faces and bodies tell you what words do not.",
+      "quote": "when you see such an excess of fatigue, abridge your speech, or change your discourse",
+      "locator": "1201 ¶1",
+      "apply_it": "In your next conversation, watch the other person's face for signs of boredom or interest, and adjust once based on what you see.",
+      "quiz": {
+        "question": "What did Leonardo suggest to discover what someone takes pleasure in?",
+        "options": [
+          "Ask them directly",
+          "Change the subject and watch when they become intent",
+          "Ask their friends",
+          "Give them a gift"
+        ],
+        "answer": 1,
+        "explanation": "He suggested changing the subject and watching when they become intent, without yawning or frowning."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--38",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "envy",
+        "success",
+        "criticism"
+      ],
+      "title": "Envy follows good work like a shadow",
+      "body": "Leonardo, who faced plenty of rivals, wrote that as soon as virtue is born, envy comes into the world to attack it. A body without a shadow would sooner exist than virtue without envy.\n\nThis can be oddly consoling. If you do something well and meet resentment or petty criticism, it is not necessarily a sign you did something wrong; it may be the shadow your achievement casts. That does not mean ignoring fair criticism, but it does mean not letting envy talk you out of good work.",
+      "quote": "No sooner is Virtue born than Envy comes into the world to attack it; and sooner will there be a body without a shadow than Virtue without Envy.",
+      "locator": "677 ¶4",
+      "apply_it": "Think of a time someone resented your success. Ask: was there a fair point in it? If not, let it go.",
+      "quiz": {
+        "question": "What did Leonardo say would sooner exist than virtue without envy?",
+        "options": [
+          "A body without a shadow",
+          "A river without water",
+          "A day without night",
+          "A tree without roots"
+        ],
+        "answer": 0,
+        "explanation": "He wrote that there will sooner be a body without a shadow than virtue without envy."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--39",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "anger",
+        "revenge",
+        "self-control"
+      ],
+      "title": "Chasing revenge on everyone leaves you revenged on no one",
+      "body": "Among Leonardo's animal sketches of vices is one on rage. A bear goes for honey and gets stung. He drops the honey to take revenge, but trying to punish every bee that stings him, he punishes none. His rage turns to madness and he flings himself on the ground, flailing at enemies he cannot hit.\n\nAnger that tries to answer every slight can make you lose what you came for. When you feel stung, ask whether striking back will help, or whether the wiser move is to keep your eyes on the honey.",
+      "quote": "And as he seeks to be revenged on all those that sting him, he is revenged on none",
+      "locator": "Rage ¶1",
+      "apply_it": "Next time you feel the urge to hit back at a small slight, write down what you actually want from the situation before responding.",
+      "quiz": {
+        "question": "In Leonardo's fable, what happens to the bear who seeks revenge on every bee?",
+        "options": [
+          "He gets all the honey",
+          "He finds a new hive",
+          "The bees make peace with him",
+          "He is revenged on none and his rage turns to madness"
+        ],
+        "answer": 3,
+        "explanation": "Seeking revenge on all who sting him, he is revenged on none, and his rage turns to madness."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--40",
+      "topic": "personal-development",
+      "tags": [
+        "self-mastery",
+        "discipline",
+        "character"
+      ],
+      "title": "The only true command you hold is over yourself",
+      "body": "Leonardo wrote that you can have no dominion greater or less than that over yourself. Among his rules of life he also advised seeking advice from someone who governs himself well.\n\nWe spend much energy trying to control other people and events, which mostly lie outside our reach. Self-command, over your habits, words and reactions, is both the smallest kingdom and the largest one you will ever rule. It is also the source of credibility: people trust the advice of those who visibly manage themselves.",
+      "quote": "You can have no dominion greater or less than that over yourself.",
+      "locator": "1192 ¶2",
+      "apply_it": "Identify one reaction you would like more control over. Decide in advance what you will do the next time it arises.",
+      "quiz": {
+        "question": "What dominion did Leonardo say is both the greatest and the least we can have?",
+        "options": [
+          "Over our family",
+          "Over our city",
+          "Over ourselves",
+          "Over our money"
+        ],
+        "answer": 2,
+        "explanation": "He wrote that we can have no dominion greater or less than that over ourselves."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--41",
+      "topic": "personal-development",
+      "tags": [
+        "use-it-or-lose-it",
+        "mind",
+        "habits"
+      ],
+      "title": "A mind left unused rusts like idle iron",
+      "body": "Leonardo compared the intellect to things that spoil when neglected. Iron rusts if it is not used; still water goes foul, or freezes in the cold; and our intellect spoils unless it is kept in use. In one of his fables, a razor that leaves the barber's shop to admire itself in the sun finds its edge eaten by rust.\n\nThe practical message is that mental sharpness is maintained, not owned. Regular reading, problem-solving and learning new things keep the edge. Long stretches of passivity let it dull.",
+      "quote": "Just as iron rusts unless it is used, and water putrifies or, in cold, turns to ice, so our intellect spoils unless it is kept in use.",
+      "locator": "1177 ¶3",
+      "apply_it": "Choose one small daily mental workout (a puzzle, a page of a hard book, a new word) and do it for the next seven days.",
+      "quiz": {
+        "question": "What did Leonardo say happens to the intellect unless it is used?",
+        "options": [
+          "It spoils, like iron that rusts",
+          "It grows stronger by resting",
+          "It becomes wiser",
+          "It stays the same"
+        ],
+        "answer": 0,
+        "explanation": "He compared it to iron that rusts unless used: the intellect spoils unless kept in use."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--42",
+      "topic": "personal-development",
+      "tags": [
+        "lifelong-learning",
+        "ageing",
+        "youth"
+      ],
+      "title": "Learn now so that your older self has something to feed on",
+      "body": "Leonardo believed that learning acquired in youth holds off the ills of old age. If you understand that old age feeds on wisdom, he wrote, you will live in youth so that your old age does not go hungry.\n\nWhatever your age now, you are the younger self of someone older. The reading, skills, friendships and reflection you invest in today become the stores you live on later. It is never too late to start stocking the cupboard, and it is never too early.",
+      "quote": "Learning acquired in youth arrests the evil of old age; and if you understand that old age has wisdom for its food, you will so conduct yourself in youth that your old age will not lack for nourishment.",
+      "locator": "1171 ¶1",
+      "apply_it": "Write down one thing you want your 80-year-old self to know or be able to do. Take one step towards it this week.",
+      "quiz": {
+        "question": "What did Leonardo say old age has for its food?",
+        "options": [
+          "Rest",
+          "Fame",
+          "Riches",
+          "Wisdom"
+        ],
+        "answer": 3,
+        "explanation": "He wrote that old age has wisdom for its food, so learn in youth to nourish it."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--43",
+      "topic": "personal-development",
+      "tags": [
+        "resolve",
+        "goals",
+        "persistence"
+      ],
+      "title": "Fix yourself to a star and obstacles will give way",
+      "body": "Among Leonardo's notes for mottoes and emblems are a few lines that read like a personal creed: obstacles cannot crush me; every obstacle yields to stern resolve; he who is fixed to a star does not change his mind. Nearby he jotted another motto: constancy is not the one who begins, but the one who perseveres.\n\nA clear guiding aim, the star, makes setbacks easier to bear, because each one becomes a detour rather than a reason to quit. Know where you are headed, and the obstacles look smaller.",
+      "quote": "Obstacles cannot crush me Every obstacle yields to stern resolve He who is fixed to a star does not change his mind.",
+      "locator": "682 ¶1",
+      "apply_it": "Write one sentence naming your 'star' for this year. Next time you hit a setback, reread it before deciding what to do.",
+      "quiz": {
+        "question": "What did Leonardo say about the person who is fixed to a star?",
+        "options": [
+          "They are easily distracted",
+          "They do not change their mind",
+          "They travel far",
+          "They need many advisers"
+        ],
+        "answer": 1,
+        "explanation": "His motto reads: 'He who is fixed to a star does not change his mind.'"
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--44",
+      "topic": "personal-development",
+      "tags": [
+        "service",
+        "usefulness",
+        "purpose"
+      ],
+      "title": "Aim never to tire of being useful",
+      "body": "Leonardo sketched several mottoes on the theme of tireless service: movement will cease before we are weary of being useful; in serving others I cannot do enough; no labour is enough to tire me.\n\nThese read as an ideal, not a demand to work yourself to exhaustion. Rest still matters. The deeper point is that usefulness to others can be a renewable source of energy and meaning. Work done only for yourself tends to drain you; work that helps someone often gives something back.",
+      "quote": "Movement will cease before we are weary of being useful.",
+      "locator": "685 ¶1",
+      "apply_it": "Ask one person this week: 'What would be most useful to you right now?' and do it.",
+      "quiz": {
+        "question": "Which of these is one of Leonardo's mottoes?",
+        "options": [
+          "Rest is better than labour",
+          "Serve yourself first",
+          "Movement will cease before we are weary of being useful",
+          "Fame is the only reward"
+        ],
+        "answer": 2,
+        "explanation": "He wrote: 'Movement will cease before we are weary of being useful.'"
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--45",
+      "topic": "personal-development",
+      "tags": [
+        "comparison",
+        "envy",
+        "self-acceptance"
+      ],
+      "title": "Copying someone else's harvest can break you",
+      "body": "Leonardo wrote short fables about plants. In one, a peach tree envied the huge crop on her neighbour, the nut tree, and decided to do the same. She loaded herself with so much fruit that the weight pulled her up by the roots and broke her down.\n\nComparison makes us take on loads that suit someone else's build. A colleague's pace, a friend's lifestyle or a stranger's highlight reel might be right for them and ruinous for you. Measure your output against your own strength and roots, not your neighbour's branches.",
+      "quote": "The peach, being envious of the vast quantity of fruit which she saw borne on the nut-tree, her neighbour, determined to do the same, and loaded herself with her own in such a way that the weight of the fruit pulled her up by the roots and broke her down to the ground.",
+      "locator": "1275 ¶2",
+      "apply_it": "Notice one area where you are comparing yourself to someone. Write down what a sustainable 'harvest' would look like for you.",
+      "quiz": {
+        "question": "What happened to the peach tree that envied the nut tree?",
+        "options": [
+          "It produced better fruit",
+          "The weight of its fruit pulled it up by the roots",
+          "It was cut down by farmers",
+          "It became friends with the nut tree"
+        ],
+        "answer": 1,
+        "explanation": "Loaded with too much fruit out of envy, it was pulled up by the roots and broken down."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--46",
+      "topic": "lives-history",
+      "tags": [
+        "curiosity",
+        "fear",
+        "exploration"
+      ],
+      "title": "Curiosity and fear can stand at the same cave mouth",
+      "body": "Leonardo described a moment from his wanderings among gloomy rocks. Driven by eager desire to see the strange shapes nature makes, he came to the entrance of a great cave and stood astonished, bending this way and that, shading his eyes, trying to see inside. Two opposite feelings rose in him: fear of the dark, threatening cavern, and desire to see whether something marvellous lay within.\n\nIt is a vivid portrait of what exploring feels like. Fear does not mean you lack curiosity; often the two arrive together at the edge of anything new.",
+      "quote": "two contrary emotions arose in me, fear and desire--fear of the threatening dark cavern, desire to see whether there were any marvellous thing within it",
+      "locator": "1339 ¶7",
+      "apply_it": "Think of something new you are hesitating over. Write down both the fear and the desire, and choose one small step to look inside.",
+      "quiz": {
+        "question": "Which two emotions did Leonardo feel at the cave entrance?",
+        "options": [
+          "Fear and desire",
+          "Anger and sadness",
+          "Joy and boredom",
+          "Pride and shame"
+        ],
+        "answer": 0,
+        "explanation": "He wrote that two contrary emotions arose in him: fear of the dark cavern and desire to see what marvels it held."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--47",
+      "topic": "lives-history",
+      "tags": [
+        "curiosity",
+        "asking-experts",
+        "to-do-lists"
+      ],
+      "title": "Leonardo's to-do lists were full of questions to ask people",
+      "body": "Leonardo's notebooks include memoranda that read like a curious person's to-do list. Get the master of arithmetic to show you how to square a figure. Get a friar to show you a book on weights. Ask Maestro Antonio how mortars are placed on bastions. Ask Benedetto Portinari how people move on the ice in Flanders.\n\nOne of history's great minds learned constantly by asking people who knew more than he did about specific things. Keeping a running list of questions, and the person to ask, is a simple habit anyone can copy.",
+      "quote": "Ask Benedetto Portinari how the people go on the ice in Flanders",
+      "locator": "1448 ¶15",
+      "apply_it": "Start a 'questions to ask' list. Add three things you are curious about and the name of someone who might know.",
+      "quiz": {
+        "question": "What do Leonardo's memoranda show about how he learned?",
+        "options": [
+          "He refused to ask anyone for help",
+          "He hired others to learn for him",
+          "He only learned from ancient books",
+          "He regularly noted specific questions to ask people with expert knowledge"
+        ],
+        "answer": 3,
+        "explanation": "His lists are full of reminders to ask specific people about specific things."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--48",
+      "topic": "lives-history",
+      "tags": [
+        "perseverance",
+        "obstacles",
+        "anatomy"
+      ],
+      "title": "Leonardo listed what could stop a learner, then kept going",
+      "body": "Introducing his anatomy studies, Leonardo listed what might stop someone attempting the same work: disgust; fear of spending nights among dissected bodies; not drawing well enough; not knowing perspective, geometry or mechanics; and lacking the patience to persevere. Whether he had these qualities, he said, his 120 notebooks would deliver the verdict. He had been held back not by greed or carelessness, only by lack of time.\n\nNaming the obstacles honestly, then letting the work speak, is a quietly powerful approach to any hard goal.",
+      "quote": "the hundred and twenty books composed by me will give verdict Yes or No. In these I have been hindered neither by avarice nor negligence, but simply by want of time.",
+      "locator": "796 ¶6",
+      "apply_it": "List the obstacles to a big goal of yours. Next to each, write one way your actual work could answer it.",
+      "quiz": {
+        "question": "What did Leonardo say had hindered him in his work?",
+        "options": [
+          "Avarice",
+          "Negligence",
+          "Simply want of time",
+          "Lack of patrons"
+        ],
+        "answer": 2,
+        "explanation": "He wrote he had been hindered neither by avarice nor negligence, but simply by want of time."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--49",
+      "topic": "lives-history",
+      "tags": [
+        "childhood",
+        "passions",
+        "flight"
+      ],
+      "title": "Notice the fascinations that run back to your earliest memories",
+      "body": "While writing notes about the flight of the kite, a bird of prey he studied closely, Leonardo paused to remark that this subject seemed to be his destiny. Among his very first childhood memories, he wrote, was one of lying in his cradle when a kite came down and struck his lips with its tail.\n\nWhatever that memory really was, he saw his lifelong interest in flight as rooted in early childhood. It is worth asking the same of yourself: which interests have followed you since you were small? Threads that persist that long often point to work that will hold your attention.",
+      "quote": "This writing distinctly about the kite seems to be my destiny, because among the first recollections of my infancy, it seemed to me that, as I was in my cradle, a kite came to me and opened my mouth with its tail",
+      "locator": "1363 ¶1",
+      "apply_it": "Write down three things that fascinated you as a child. Is one of them still pulling at you today?",
+      "quiz": {
+        "question": "Why did Leonardo feel that writing about the kite was his destiny?",
+        "options": [
+          "One of his earliest childhood memories involved a kite",
+          "A patron ordered him to study birds",
+          "He kept kites as pets",
+          "He read about them in Pliny"
+        ],
+        "answer": 0,
+        "explanation": "He linked his study of the kite to one of the first recollections of his infancy, of a kite coming to his cradle."
+      }
+    },
+    {
+      "id": "notebooks-leonardo-da-vinci--50",
+      "topic": "health",
+      "tags": [
+        "eating",
+        "appetite",
+        "habits"
+      ],
+      "title": "Eat when you are hungry, and chew your food well",
+      "body": "Among a handful of notes on health, Leonardo wrote a little rhyme of rules. Eat only when you want food and enjoy it. Chew thoroughly so that it does you good. Have it well cooked and simple.\n\nSome of his other medical views are outdated, but this part matches common modern advice on mindful eating: notice real hunger rather than eating by habit or boredom, slow down, and chew properly. Eating more slowly gives your body time to register fullness. If you have specific health needs, follow your doctor's guidance.",
+      "quote": "Eat only when you want and relish food. Chew thoroughly that it may do you good.",
+      "locator": "855 ¶1",
+      "apply_it": "At your next meal, put your fork down between bites and check in on whether you are still hungry.",
+      "quiz": {
+        "question": "Which of these was part of Leonardo's rule for keeping in health?",
+        "options": [
+          "Eat as much as possible",
+          "Skip meals regularly",
+          "Eat only spiced food",
+          "Chew thoroughly that it may do you good"
+        ],
+        "answer": 3,
+        "explanation": "His rule included eating only when you want food and chewing thoroughly."
+      },
+      "health": true
+    }
+  ]
+}

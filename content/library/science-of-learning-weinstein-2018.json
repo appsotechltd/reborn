@@ -1,0 +1,815 @@
+{
+  "source": {
+    "id": "science-of-learning-weinstein-2018",
+    "title": "Teaching the science of learning",
+    "authors": [
+      "Yana Weinstein",
+      "Christopher R. Madan",
+      "Megan A. Sumeracki"
+    ],
+    "kind": "study",
+    "url": "https://doi.org/10.1186/s41235-017-0087-y",
+    "licence": "cc-by-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Weinstein, Madan & Sumeracki (2018), Teaching the science of learning, Cognitive Research: Principles and Implications, CC BY 4.0",
+    "publisher": "Cognitive Research: Principles and Implications",
+    "year": 2018,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "Open-access tutorial review, Cognitive Research: Principles and Implications 3:2 (2018), DOI 10.1186/s41235-017-0087-y. Licence confirmed on the article's own licence statement (PMC5780548 / Europe PMC full text): 'distributed under the terms of the Creative Commons Attribution 4.0 International License'. Cards are our own summaries; no quotes."
+  },
+  "cards": [
+    {
+      "id": "science-of-learning-weinstein-2018--01",
+      "topic": "study-smarter",
+      "tags": [
+        "spacing",
+        "revision",
+        "memory"
+      ],
+      "title": "Spread the same study time over several days and you remember more",
+      "body": "The spacing effect is one of the strongest findings in the psychology of learning. Studying the same material for the same total time, but split across several sessions on different days, leads to better long-term memory than doing it all in one sitting.\n\nThe effect was first shown in the 1880s and has since been tested in hundreds of lab and classroom studies. In a large meta-analysis the authors cite, every study that tested memory more than a month later showed a clear benefit from spacing. So if you need something to last, give it several shorter visits rather than one long one.",
+      "apply_it": "Take tonight's planned two-hour review and split it into three 40-minute sessions on three different days this week.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "What does the spacing effect say?",
+        "options": [
+          "The same study time spread over days beats one block",
+          "Longer single sessions beat short ones",
+          "Studying late at night works best",
+          "Rereading is better than testing"
+        ],
+        "answer": 0,
+        "explanation": "Spreading the same amount of study over time leads to better long-term retention than massing it in one session."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--02",
+      "topic": "study-smarter",
+      "tags": [
+        "cramming",
+        "memory",
+        "forgetting"
+      ],
+      "title": "Cramming fills short-term recall but builds little lasting memory",
+      "body": "Why does cramming fade so fast? One useful theory splits memory into two strengths. Retrieval strength is how easily you can recall something right now. Storage strength is how deeply it is embedded.\n\nWhen something is very easy to recall at the moment you study it, as it is when you go over it again and again in one evening, each extra pass adds little storage strength. Waiting until it has started to slip a little before you restudy gives a bigger boost to the deep, lasting kind. That is why crammed material feels solid the night before and is gone a week later.",
+      "apply_it": "Before you reread a topic, wait until you have half forgotten it. Then try to recall it first, and only then check.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "According to the theory described, when does restudying build the most lasting memory?",
+        "options": [
+          "When the material is still fresh and easy",
+          "Only on the day of the exam",
+          "When you read it aloud",
+          "When recall has started to fade a little"
+        ],
+        "answer": 3,
+        "explanation": "Gains in storage strength are larger when retrieval strength has had time to drop before you restudy."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--03",
+      "topic": "study-smarter",
+      "tags": [
+        "desirable-difficulty",
+        "confidence",
+        "spacing"
+      ],
+      "title": "If spaced studying feels harder, that is part of why it works",
+      "body": "Students often feel less confident after spacing their study than after cramming. Spaced learning is genuinely harder: each session you have partly forgotten things and must work to bring them back.\n\nResearchers call this a desirable difficulty. The effort that makes it feel less smooth is the same effort that strengthens memory for the long term. Cramming feels better in the moment, which is one reason people keep doing it.\n\nSo do not judge a study method by how fluent or comfortable it feels. A slightly uncomfortable session where you struggle to recall is often doing more for you than an easy reread.",
+      "apply_it": "After your next study session, note how confident you felt and how much you could recall a week later. Compare methods by results, not feelings.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "Why might spaced study feel less effective than cramming even when it works better?",
+        "options": [
+          "Because it uses less total time",
+          "Because it only works for maths",
+          "Because it is harder, and that difficulty is what helps memory",
+          "Because it skips difficult topics"
+        ],
+        "answer": 2,
+        "explanation": "Spacing is harder in the moment. That desirable difficulty strengthens long-term learning."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--04",
+      "topic": "study-smarter",
+      "tags": [
+        "cramming",
+        "goals",
+        "long-term"
+      ],
+      "title": "Cramming can pass tomorrow's test, but you lose what you paid for",
+      "body": "The authors are honest that cramming does work if your only goal is to pass one exam the next morning. That is a big reason students keep doing it.\n\nThe cost shows up later. Crammed knowledge fades quickly, so the next course, the cumulative final or the job that needs the skill finds you starting again. The review suggests that what changes behaviour is valuing what you know beyond the exam, not just the grade.\n\nIf a subject matters for your future, plan to space it. If you truly only need a fact for one day, cramming is a choice, but make it knowingly.",
+      "apply_it": "For each subject you are studying, write down whether you will need it after the exam. Space out the ones you will.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "What do the authors say about cramming?",
+        "options": [
+          "It never works for anything",
+          "It can work for passing one exam but fades quickly",
+          "It is better than spacing for long-term memory",
+          "It reduces test anxiety"
+        ],
+        "answer": 1,
+        "explanation": "Cramming can get you through a single exam, but the knowledge is rapidly forgotten."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--05",
+      "topic": "study-smarter",
+      "tags": [
+        "timetable",
+        "spacing",
+        "planning"
+      ],
+      "title": "Review each subject the day after class, not just before the exam",
+      "body": "Spacing needs planning, because it cannot be done the night before. The review gives a simple model timetable for a school week: a short study session for each subject on the day after it is taught, one longer weekend session, and a rest day.\n\nAnother suggestion is to schedule review on the days a class does not meet. If a lesson is on Monday and Wednesday, review on Tuesday and Thursday. That puts natural gaps between first learning and each return to the material.\n\nThe point is not a perfect schedule. It is that each topic gets several visits spread across the week instead of one burst.",
+      "apply_it": "Open your calendar and add a 20-minute review slot the day after each class or lesson you have this week.",
+      "locator": "Spaced practice (Fig. 1)",
+      "quiz": {
+        "question": "In the sample timetable, when is each subject studied?",
+        "options": [
+          "The day after it is covered in class",
+          "Only on the weekend",
+          "The night before the exam",
+          "Right before the class"
+        ],
+        "answer": 0,
+        "explanation": "The example schedule studies each subject one day after it is taught, creating spacing between class and review."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--06",
+      "topic": "study-smarter",
+      "tags": [
+        "review",
+        "spacing",
+        "habits"
+      ],
+      "title": "A few minutes of old material at the start of each session adds up",
+      "body": "Spacing does not have to mean a complex plan. The authors point out that teachers can get much of the benefit just by spending a few minutes in each class reviewing earlier lessons, and some teachers set homework on older topics for the same reason.\n\nYou can do the same on your own. Begin each study session with a short look back at material from a week or two ago before moving on to new work. Over a term, every topic gets revisited many times at growing gaps, with almost no extra planning.",
+      "apply_it": "Start your next study session with five minutes of questions on something you learned two weeks ago.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "What low-cost way to add spacing do the authors suggest?",
+        "options": [
+          "Cancel all new lessons",
+          "Study only on weekends",
+          "Review everything once at the end",
+          "Spend a few minutes each session reviewing earlier material"
+        ],
+        "answer": 3,
+        "explanation": "Setting aside a few minutes per class to review previous lessons achieves spacing at little cost."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--07",
+      "topic": "study-smarter",
+      "tags": [
+        "spacing",
+        "timing",
+        "exams"
+      ],
+      "title": "The best gap between reviews depends on how long you need to remember",
+      "body": "How far apart should study sessions be? Research shows two sessions neither too close together nor too far apart are best, and that the ideal gap grows with how long you need to keep the information.\n\nIn a large study cited in the review, the best gap between sessions depended on when the test would be. Something needed next week calls for shorter gaps; something needed in a year allows longer ones. The authors admit the exact numbers are complex and hard to turn into simple rules.\n\nA practical reading is to start with short gaps and stretch them as the material becomes familiar, keeping your real deadline in mind.",
+      "apply_it": "For one subject, plan reviews at roughly one day, one week and three weeks after first learning it, and adjust if you forget too much.",
+      "locator": "Spaced practice",
+      "quiz": {
+        "question": "What did the large study find about the best gap between study sessions?",
+        "options": [
+          "It is always exactly one day",
+          "Longer gaps are always better",
+          "It depends on how long you need to retain the material",
+          "Gaps make no difference"
+        ],
+        "answer": 2,
+        "explanation": "The optimal gap was contingent on the retention interval: how long until the material is needed."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--08",
+      "topic": "study-smarter",
+      "tags": [
+        "interleaving",
+        "problem-solving",
+        "maths"
+      ],
+      "title": "Mix different problem types so you learn which method to use",
+      "body": "Most textbooks set blocks of the same type of problem in a row. Interleaving means mixing different types instead. In one study, college students who shuffled problems about the volumes of different shapes did better on a test a week later than those who practised one shape at a time. The pattern has also been found with younger students learning graph and slope problems.\n\nThe likely reason is that real tests do not tell you which method to use. When problems are mixed, you practise choosing the right approach, not just repeating it.",
+      "apply_it": "Take ten practice problems from three different chapters, shuffle them, and work through them without looking at chapter headings.",
+      "locator": "Interleaving",
+      "quiz": {
+        "question": "Why is interleaving thought to help with problem solving?",
+        "options": [
+          "It makes practice shorter",
+          "It trains you to choose the right method for each problem",
+          "It avoids difficult problems",
+          "It removes the need for feedback"
+        ],
+        "answer": 1,
+        "explanation": "Switching between problem types teaches when to apply each method, not just how to carry it out."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--09",
+      "topic": "study-smarter",
+      "tags": [
+        "interleaving",
+        "categories",
+        "comparison"
+      ],
+      "title": "Study similar categories side by side to learn the differences",
+      "body": "Interleaving also helps when you need to tell things apart. In one study, people learning to match paintings to artists did better when paintings by different painters were mixed together rather than grouped by painter. Similar results came from studies of learning bird species.\n\nThe explanation is that mixing lets you compare examples from different categories directly, so the distinguishing features stand out. This applies to anything where you must tell close cousins apart: plant families, legal tests, medical conditions, musical styles or grammar rules.",
+      "apply_it": "Pick two things you often confuse in a subject and make a set of mixed examples. Sort each one and say what gave it away.",
+      "locator": "Interleaving",
+      "quiz": {
+        "question": "In the painting study, what helped people identify the artists later?",
+        "options": [
+          "Studying different painters' works mixed together",
+          "Studying one painter at a time",
+          "Reading biographies of the painters",
+          "Looking at fewer paintings"
+        ],
+        "answer": 0,
+        "explanation": "Interleaving paintings by different artists allowed comparison and improved later identification."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--10",
+      "topic": "study-smarter",
+      "tags": [
+        "worked-examples",
+        "practice",
+        "problem-solving"
+      ],
+      "title": "Alternate trying a problem with studying a worked example",
+      "body": "Another useful form of interleaving is to alternate between studying and testing yourself. For problem-solving, this means trying a problem, then looking at a worked example, then trying another, rather than reading all the examples first and then doing a long string of problems.\n\nIn the research the authors describe, this back-and-forth pattern helped students reach mastery of a procedure faster. One explanation is that a study opportunity that comes straight after an attempt to recall or solve is more productive, because the attempt shows you exactly what you were missing.",
+      "apply_it": "Next time you learn a new type of problem, attempt one before reading the worked solution, then try the next one straight after.",
+      "locator": "Interleaving",
+      "quiz": {
+        "question": "What pattern does the review describe as helpful for learning procedures?",
+        "options": [
+          "Reading all worked examples first, then all problems",
+          "Only reading worked examples",
+          "Only solving problems without examples",
+          "Alternating between attempting problems and viewing worked examples"
+        ],
+        "answer": 3,
+        "explanation": "Alternating attempts with worked examples was linked to faster mastery, possibly because study after a retrieval attempt is more fruitful."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--11",
+      "topic": "study-smarter",
+      "tags": [
+        "interleaving",
+        "subjects",
+        "limits"
+      ],
+      "title": "Mix related topics within a subject, not unrelated subjects",
+      "body": "A common mistake is to think interleaving means hopping between maths, history and French in one session. The research has mostly tested mixing related material, such as different kinds of equations or different painters. Mixing unrelated subjects has not been shown to help.\n\nFor languages, the authors suggest mixing vocabulary themes rather than learning one theme at a time. For problem-based subjects, mix new questions with older ones from the same course, which also brings in spacing.\n\nMany flashcard and quiz apps shuffle items for you, so you do not have to plan the mixing yourself.",
+      "apply_it": "In your flashcard deck for one subject, turn on shuffle across all topics instead of studying one topic at a time.",
+      "locator": "Interleaving",
+      "quiz": {
+        "question": "What kind of interleaving has research support?",
+        "options": [
+          "Switching between unrelated subjects",
+          "Switching subjects every five minutes",
+          "Mixing related material within a subject",
+          "Studying two subjects at the same time"
+        ],
+        "answer": 2,
+        "explanation": "Research has focused on interleaving related material. Interleaving different subjects has not received empirical support."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--12",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "testing",
+        "memory"
+      ],
+      "title": "Testing yourself does not just measure learning, it strengthens it",
+      "body": "We usually think of tests as a way to check what we know. A century of research shows that pulling information out of memory actually makes that memory stronger. This is called retrieval practice, and it is among the best supported study strategies.\n\nIn many of the studies, students who practised recalling material remembered more later than students who spent the same time rereading it, even though rereading showed them all of the material again. Every time you close the book and try to remember, you are not only checking. You are building.",
+      "apply_it": "Swap your next rereading session for a self-test: close your notes and write down everything you can recall, then check.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What does retrieval practice research show?",
+        "options": [
+          "Tests only measure what you know",
+          "Bringing information to mind makes the memory stronger",
+          "Rereading is more effective than recalling",
+          "Testing harms learning"
+        ],
+        "answer": 1,
+        "explanation": "The act of retrieving knowledge strengthens it, beyond merely assessing it."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--13",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "children",
+        "all-ages"
+      ],
+      "title": "Retrieval practice works from preschool to university",
+      "body": "Much of the early research on testing yourself was done with college students, but the review lists studies showing that retrieval-based learning also works for preschoolers, primary school children, and middle and high school students.\n\nIt has also been built into other activities, such as drawing concept maps from memory. That makes it one of the most widely useful habits you can teach a child or adopt yourself. A parent can ask what a child remembers from a lesson. A teacher can open class with a quick recall question. An adult learner can quiz themselves on a podcast they just heard.",
+      "apply_it": "At dinner tonight, ask someone in your family to tell you three things they remember learning today, and share three of your own.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "Which groups has retrieval practice been shown to help?",
+        "options": [
+          "A wide range of ages from preschool to university",
+          "Only college students",
+          "Only adults over 30",
+          "Only people who like tests"
+        ],
+        "answer": 0,
+        "explanation": "Studies show benefits for preschoolers, primary, middle and high school students as well as college students."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--14",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "covert-retrieval",
+        "flashcards"
+      ],
+      "title": "Just bringing an answer to mind counts, even without writing it",
+      "body": "Is it the writing or saying aloud that helps, or the remembering itself? In one study, students who simply brought answers to mind silently remembered them just as well as students who wrote the answers out. Both groups did better than students who did no retrieval, even when nobody gave them feedback.\n\nThis suggests the key ingredient is the mental act of reaching back to recall. That is good news for learning on the move: you can quiz yourself while walking, commuting or waiting in a queue, with no pen or paper at all.",
+      "apply_it": "On your next walk or commute, silently recall the main points of something you studied yesterday before checking your notes.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What did the study on silent (covert) retrieval find?",
+        "options": [
+          "Only writing answers out helped",
+          "Silent recall harmed memory",
+          "Recall only works with feedback",
+          "Silent recall helped as much as writing answers out"
+        ],
+        "answer": 3,
+        "explanation": "Covert and overt retrieval both improved memory similarly over no retrieval, even without feedback."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--15",
+      "topic": "study-smarter",
+      "tags": [
+        "retrieval-practice",
+        "difficulty",
+        "self-testing"
+      ],
+      "title": "Reciting something you just read is not really retrieval practice",
+      "body": "Retrieval practice works best at the right level of difficulty. If you read a sentence, cover it and immediately recite it, you are probably just holding it in short-term memory, not retrieving it from long-term memory. It feels successful but does little.\n\nAt the other extreme, if you can recall almost nothing and get no feedback, the attempt is unlikely to help much either. The authors describe the goal as balancing success with effort: hard enough that you must reach for it, easy enough that you get some of it right.",
+      "apply_it": "When self-testing, put a short gap or another task between reading and recalling, so you are not just repeating what is still in your head.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "Why is reciting a sentence immediately after reading it weak retrieval practice?",
+        "options": [
+          "It takes too long",
+          "It gives too much feedback",
+          "You are holding it in working memory rather than retrieving it",
+          "It is too difficult"
+        ],
+        "answer": 2,
+        "explanation": "Immediate recitation likely keeps information in working memory instead of drawing it from long-term memory."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--16",
+      "topic": "study-smarter",
+      "tags": [
+        "feedback",
+        "mistakes",
+        "retrieval-practice"
+      ],
+      "title": "A wrong attempt still helps, as long as you then check the answer",
+      "body": "You do not have to get the answer right for a recall attempt to help. In one set of studies the authors cite, trying to recall and failing, followed by being shown the correct answer, produced the same benefit as recalling correctly.\n\nFeedback matters most when your success rate is low. If you are getting most questions wrong, always check the answers afterwards so the attempt has something to attach to.\n\nSo a quiz you do badly on is not wasted time. The attempt primes you to learn from the answer that follows.",
+      "apply_it": "After your next practice quiz, spend as long reviewing the answers you missed as you spent on the quiz itself.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "In the cited studies, what made a failed recall attempt as useful as a correct one?",
+        "options": [
+          "Trying again the next day",
+          "Being shown the correct answer afterwards",
+          "Writing the question down",
+          "Skipping hard questions"
+        ],
+        "answer": 1,
+        "explanation": "As long as the correct answer was provided after an unsuccessful attempt, the benefit matched that of successful retrieval."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--17",
+      "topic": "study-smarter",
+      "tags": [
+        "test-expectancy",
+        "attention",
+        "mind-wandering"
+      ],
+      "title": "Expecting a quiz makes you study better and drift off less",
+      "body": "Testing has indirect benefits as well as direct ones. In one study, students who expected to be tested took in new information more effectively. Other research found that frequent short tests during a lecture reduced mind-wandering, those moments when your thoughts slide away from the material.\n\nYou can use this on yourself. Before you start a reading, a video or a lecture, tell yourself you will have to explain it afterwards, and then actually do it. Knowing a recall moment is coming tends to keep your attention on what matters.",
+      "apply_it": "Before your next lecture, video or chapter, promise yourself a two-minute recall test at the end, and set a timer for it.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What indirect benefit of frequent testing does the review mention?",
+        "options": [
+          "It reduces mind-wandering",
+          "It makes material shorter",
+          "It replaces the need to study",
+          "It removes test anxiety completely"
+        ],
+        "answer": 0,
+        "explanation": "Frequent testing was found to decrease thoughts unrelated to the material being studied."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--18",
+      "topic": "study-smarter",
+      "tags": [
+        "brain-dump",
+        "concept-maps",
+        "retrieval-practice"
+      ],
+      "title": "Put the book away and write down everything you know",
+      "body": "Retrieval practice can be as simple as closing your materials and writing out all you know about a topic. Other forms include practice tests, open-ended prompts, and concept maps drawn from memory.\n\nOne finding in the review is striking: drawing a concept map while looking at the textbook helped memory less than drawing one from memory. The same activity becomes much more powerful once the book is closed. Many students make notes, summaries and mind maps with the source open in front of them. Try the closed-book version first and then fill the gaps.",
+      "apply_it": "Choose one topic, set a ten-minute timer, and write or sketch everything you know about it with your notes closed. Then check.",
+      "locator": "Retrieval practice; Conclusion",
+      "quiz": {
+        "question": "Which version of concept mapping helped memory more in the studies cited?",
+        "options": [
+          "Drawing it while reading the textbook",
+          "Copying a teacher's map",
+          "Colouring in a printed map",
+          "Drawing it from memory"
+        ],
+        "answer": 3,
+        "explanation": "Creating concept maps from memory was more effective for later memory than creating them while looking at the materials."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--19",
+      "topic": "study-smarter",
+      "tags": [
+        "quizzes",
+        "retrieval-practice",
+        "online-learning"
+      ],
+      "title": "Any chance to retrieve helps, whether questions come during or after",
+      "body": "In one study, short-answer questions were added to online learning modules. Some students got the questions spread through the module and others got them all at the end. Students did better on the questions when they were spread out, but on a later test the placement made no difference. Both groups beat students who got no questions at all.\n\nThe authors' takeaway is simple: what matters most is having retrieval opportunities during learning. Do not get stuck designing the perfect quiz. Any activity that gets you to successfully recall the material is likely to improve learning.",
+      "apply_it": "Add three recall questions to the end of your notes for each lesson, and answer them before your next session.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What mattered most in the online module study?",
+        "options": [
+          "Exactly where the questions were placed",
+          "How long the module was",
+          "Having retrieval questions at all",
+          "Whether answers were multiple choice"
+        ],
+        "answer": 2,
+        "explanation": "Both question placements beat no questions on the delayed test; providing retrieval opportunities is the key."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--20",
+      "topic": "study-smarter",
+      "tags": [
+        "test-anxiety",
+        "low-stakes",
+        "stress"
+      ],
+      "title": "Keep practice quizzes low-stakes, because pressure eats into the benefit",
+      "body": "Retrieval practice works, but pressure can undermine it. In one study, students quizzed under high pressure did as well on the quizzes themselves as students under low pressure, yet did worse on a later test. Anxiety seemed to take away some of the learning benefit.\n\nThe review notes that frequent low-stakes testing can reduce test anxiety and, in one study, protected learning from the harmful effects of stress. So treat self-quizzing as practice, not judgement. Nothing rides on it, and getting things wrong is part of the process.",
+      "apply_it": "Call your self-tests practice, not tests. Do them somewhere relaxed and do not keep score beyond noting what to review.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What happened to students quizzed under high pressure?",
+        "options": [
+          "They learned more",
+          "They did worse on a later test despite similar quiz scores",
+          "They stopped studying",
+          "They scored lower on the quiz itself"
+        ],
+        "answer": 1,
+        "explanation": "High-pressure students matched the low-pressure group on the quizzes but did worse on the later criterion test."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--21",
+      "topic": "learning",
+      "tags": [
+        "transfer",
+        "complex-material",
+        "evidence"
+      ],
+      "title": "Recall clearly helps with facts; for applying ideas, the evidence is mixed",
+      "body": "Retrieval practice reliably improves memory for facts. Whether it helps with more complex learning, such as applying ideas to new situations, is still being debated. Several studies found it did improve transfer to new problems, while others found little or no advantage over restudying.\n\nThe review suggests some reasons. Higher-level benefits may depend more on how the material was first presented, and may need more support and targeted practice with application questions.\n\nThe practical lesson: if your goal is to use knowledge, not just recall it, make some of your practice questions ask you to apply ideas, not just state them.",
+      "apply_it": "For your next self-test, write at least two questions that ask how an idea would apply to a new example.",
+      "locator": "Retrieval practice",
+      "quiz": {
+        "question": "What does the review say about retrieval practice for applying knowledge to new situations?",
+        "options": [
+          "The evidence is mixed and debated",
+          "It never helps",
+          "It always helps more than for facts",
+          "It only works for children"
+        ],
+        "answer": 0,
+        "explanation": "Some studies show improved transfer, others show limited or no benefit over restudy, so the question is debated."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--22",
+      "topic": "study-smarter",
+      "tags": [
+        "elaboration",
+        "connections",
+        "prior-knowledge"
+      ],
+      "title": "Link new ideas to what you already know",
+      "body": "Elaboration means connecting new information to knowledge you already have. One explanation for why it helps is organisation: when new ideas are tied into what you know, they are easier to find and rebuild later.\n\nThe authors are careful here. Elaboration is a broad term covering many techniques, so they do not claim every version always helps. The best-supported form is asking how and why questions, covered in the next idea. Still, the habit of asking yourself what this reminds you of, or how it fits with what you learned last week, is a simple way to start.",
+      "apply_it": "After reading a new idea, write one sentence linking it to something you already understand well.",
+      "locator": "Elaboration",
+      "quiz": {
+        "question": "What does elaboration involve?",
+        "options": [
+          "Reading faster",
+          "Highlighting key words",
+          "Memorising word for word",
+          "Connecting new information to existing knowledge"
+        ],
+        "answer": 3,
+        "explanation": "Elaboration is defined as connecting new information to pre-existing knowledge."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--23",
+      "topic": "study-smarter",
+      "tags": [
+        "elaborative-interrogation",
+        "questions",
+        "understanding"
+      ],
+      "title": "Ask yourself how and why, then check your answers",
+      "body": "The best-supported form of elaboration is called elaborative interrogation. It means asking how and why questions about what you are studying, then trying to answer them, first from your materials and later from memory. Studying flight? Ask how a plane takes off, why it needs an engine and why the wings are curved on top.\n\nThere is a catch. Check your answers against your materials or a teacher. When the explanations people come up with are poor, the review notes this can actually hurt learning. The authors also flag that the technique takes time and still has open questions.",
+      "apply_it": "For the topic you are studying now, write three how or why questions, answer them, and then check each answer against a reliable source.",
+      "locator": "Elaboration",
+      "quiz": {
+        "question": "What is the important caution about elaborative interrogation?",
+        "options": [
+          "It only works in groups",
+          "It should never be done from memory",
+          "Poor self-generated answers can hurt learning, so check them",
+          "It works only for maths"
+        ],
+        "answer": 2,
+        "explanation": "When the content generated is poor, it can actually hurt learning, so answers should be checked."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--24",
+      "topic": "study-smarter",
+      "tags": [
+        "self-explanation",
+        "problem-solving",
+        "metacognition"
+      ],
+      "title": "Talk yourself through each step as you solve a problem",
+      "body": "Self-explanation means explaining to yourself what you are doing and why as you learn. It might be as simple as saying out loud the steps needed to solve an equation. In two classroom studies the authors describe, students prompted to self-explain during problem solving performed better.\n\nThe biggest payoff of accurate self-explanation is transfer: being able to use what you know in a new situation, not just repeat a memorised routine. Where it makes sense, the review adds, doing actions alongside the explanation may help too.",
+      "apply_it": "On your next problem, say each step aloud and give the reason for it before moving on, as if teaching someone beside you.",
+      "locator": "Elaboration",
+      "quiz": {
+        "question": "What is described as the greatest potential benefit of self-explanation?",
+        "options": [
+          "Finishing problems faster",
+          "Transferring knowledge to new situations",
+          "Avoiding feedback",
+          "Memorising answers word for word"
+        ],
+        "answer": 1,
+        "explanation": "Accurate self-explanation can help students transfer their knowledge to new situations."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--25",
+      "topic": "study-smarter",
+      "tags": [
+        "concrete-examples",
+        "abstract-ideas",
+        "understanding"
+      ],
+      "title": "Pin every abstract idea to a concrete example",
+      "body": "Abstract ideas are harder to grasp and remember than concrete ones. Concrete words are recognised and recalled better than abstract ones, and imageable information helps people learn associations, even with abstract content.\n\nSo when you meet an abstract concept, find a specific example. If you are learning about the nervous system's stress response, imagine a fire alarm going off: one system gets you moving fast and another calms you down once it stops.\n\nThe aim is that the example helps you hold the abstract idea, not that you remember only the example.",
+      "apply_it": "Take the most abstract idea in your notes and write one concrete, everyday example of it beside it.",
+      "locator": "Concrete examples",
+      "quiz": {
+        "question": "Why do concrete examples help with abstract concepts?",
+        "options": [
+          "Concrete information is easier to understand and remember",
+          "They replace the need to learn the concept",
+          "They make notes shorter",
+          "They are always funny"
+        ],
+        "answer": 0,
+        "explanation": "Concrete information is better remembered and can improve learning of related abstract ideas."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--26",
+      "topic": "study-smarter",
+      "tags": [
+        "examples",
+        "transfer",
+        "deep-structure"
+      ],
+      "title": "Use several examples that look different but share the same idea",
+      "body": "Beginners tend to notice the surface details of an example, while experts see the underlying principle. Physics novices group problems that look alike, while experts group problems that use the same principle even if they look different.\n\nOne way to close this gap is to use more than one example. In classic research the review describes, giving several examples, especially ones with different surface details, helped people apply a principle to a new problem. Having students explain how two examples are similar can also help them pull out the shared structure.",
+      "apply_it": "For one concept, find two examples that look quite different, and write down what principle they have in common.",
+      "locator": "Concrete examples",
+      "quiz": {
+        "question": "What helped people apply a principle to a new problem in the research described?",
+        "options": [
+          "A single vivid example",
+          "No examples, only the rule",
+          "Examples that all looked the same",
+          "Several examples with different surface details"
+        ],
+        "answer": 3,
+        "explanation": "Multiple examples, especially with different surface details, helped people transfer the principle."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--27",
+      "topic": "study-smarter",
+      "tags": [
+        "examples",
+        "humour",
+        "relevance"
+      ],
+      "title": "Fun examples are fine, as long as they are relevant",
+      "body": "Do funny or memorable examples distract from the real point? The review finds no evidence that fun, relevant examples hurt learning. Jokes tend to be remembered better, and that does not seem to cost memory for the underlying concept.\n\nThe caveat is relevance. When eye-catching details have nothing to do with the core idea, learning of the important material can suffer. Choose examples and memory hooks that are tied to the concept, not just entertaining.",
+      "apply_it": "Review a memory trick or example you use. If it is not directly connected to the idea, replace it with one that is.",
+      "locator": "Concrete examples",
+      "quiz": {
+        "question": "When can memorable examples harm learning?",
+        "options": [
+          "Whenever they are funny",
+          "When there are two of them",
+          "When they are not relevant to the core concept",
+          "When they use pictures"
+        ],
+        "answer": 2,
+        "explanation": "Irrelevant memorable content can compromise learning of the target information; relevant fun examples do not seem to."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--28",
+      "topic": "study-smarter",
+      "tags": [
+        "dual-coding",
+        "diagrams",
+        "visuals"
+      ],
+      "title": "Combine words with pictures, and draw your own diagrams",
+      "body": "Dual coding means pairing words with visuals so the same idea is stored in more than one form. Pictures are generally remembered better than words, and a simple illustration can convey a process with several steps more clearly than paragraphs of text, especially for beginners.\n\nDrawing also helps. Research cited in the review found that generating your own drawings boosted memory beyond what simple imagery would explain. You could sketch two neurons and explain how one passes a message to the other, or draw a timeline of a historical period with a short label at each point.",
+      "apply_it": "Turn one page of your notes into a labelled diagram, then explain the diagram aloud from memory.",
+      "locator": "Dual coding",
+      "quiz": {
+        "question": "What is dual coding?",
+        "options": [
+          "Studying two subjects at once",
+          "Combining words with visuals",
+          "Reading notes twice",
+          "Using two colours of pen"
+        ],
+        "answer": 1,
+        "explanation": "Dual coding is combining verbal information with complementary visual representations."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--29",
+      "topic": "study-smarter",
+      "tags": [
+        "dual-coding",
+        "cognitive-load",
+        "visuals"
+      ],
+      "title": "Keep visuals clear and simple, because busy pictures can distract",
+      "body": "More visuals are not always better. Each extra representation adds mental load, and too much can overwhelm. In one study, visual examples reduced errors, but very visually rich examples led to worse performance than no visual at all, apparently because the details distracted.\n\nChoose images that are clear, unambiguous and directly about the content. Swapping single words for little pictures in a text does not count as dual coding either, since you lose the second form of the information instead of adding it.",
+      "apply_it": "Look at a slide or diagram you use for study and remove every decorative element that does not explain something.",
+      "locator": "Dual coding",
+      "quiz": {
+        "question": "What did the review note about visually rich examples?",
+        "options": [
+          "Their details can distract and hurt performance",
+          "They always help most",
+          "They remove cognitive load",
+          "They work only for children"
+        ],
+        "answer": 0,
+        "explanation": "Visually rich examples sometimes led to poorer performance than no visual, suggesting distracting detail."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--30",
+      "topic": "learning",
+      "tags": [
+        "learning-styles",
+        "myths",
+        "evidence"
+      ],
+      "title": "Learning styles are a myth: everyone benefits from words plus pictures",
+      "body": "Many people believe they are visual, auditory or verbal learners and should be taught that way. The evidence does not support this. Teaching people in their preferred style does not improve learning, and reviews describe learning styles as a myth.\n\nIn one study, people who learned in their preferred style felt they had learned more, but their actual performance did not improve. Dual coding is different. It means giving everyone several complementary forms of the same information, not matching one form to one person.",
+      "apply_it": "Next time you think 'I'm just not a visual learner', try adding a simple diagram to your notes anyway and see what you recall.",
+      "locator": "Dual coding",
+      "quiz": {
+        "question": "What does the evidence say about matching teaching to learning styles?",
+        "options": [
+          "It greatly improves learning",
+          "It only works for visual learners",
+          "It is required for dual coding",
+          "It raises feelings of learning but not actual performance"
+        ],
+        "answer": 3,
+        "explanation": "Learning through a preferred style raised subjective judgements of learning but not objective performance."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--31",
+      "topic": "skills-mastery",
+      "tags": [
+        "enactment",
+        "movement",
+        "memory"
+      ],
+      "title": "Acting something out can give memory an extra hook",
+      "body": "Dual coding theory has been extended to movement. Research described in the review suggests that performing actions, such as actually turning a handle rather than just reading about it, can add a motor code that improves memory. These enactment effects appear mainly during learning rather than at recall.\n\nEven reading words for objects you handle, like a spoon or a hammer, seems to bring a small memory benefit, possibly because the brain automatically simulates using them. If a skill or process involves physical steps, walk through the movements while you learn it.",
+      "apply_it": "When learning a process with physical steps, mime or physically do each step while you say what it is.",
+      "locator": "Dual coding",
+      "quiz": {
+        "question": "According to the review, when do enactment effects mainly occur?",
+        "options": [
+          "During recall",
+          "Only during sleep",
+          "During learning",
+          "Only in children"
+        ],
+        "answer": 2,
+        "explanation": "Enactment effects appear primarily to occur during learning, rather than during retrieval."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--32",
+      "topic": "study-smarter",
+      "tags": [
+        "spacing",
+        "retrieval-practice",
+        "combining-strategies"
+      ],
+      "title": "Combine spacing with self-testing for a double benefit",
+      "body": "The six strategies work well together. The authors highlight one pairing as especially potent: spacing combined with retrieval practice. Instead of rereading on different days, test yourself on different days.\n\nInterleaving brings spacing naturally when you mix old and new material, and concrete examples can be both verbal and visual, which adds dual coding. The authors are honest that research has not yet shown exactly how much these benefits add up, but each pairing has an empirical basis.",
+      "apply_it": "Set up a short self-quiz on this week's material for three different days next week, rather than one longer review.",
+      "locator": "Conclusion",
+      "quiz": {
+        "question": "Which combination do the authors describe as particularly potent?",
+        "options": [
+          "Highlighting and rereading",
+          "Spacing and retrieval practice",
+          "Cramming and dual coding",
+          "Learning styles and interleaving"
+        ],
+        "answer": 1,
+        "explanation": "Spacing can be particularly potent when combined with retrieval practice, by practising retrieval multiple times over time."
+      }
+    },
+    {
+      "id": "science-of-learning-weinstein-2018--33",
+      "topic": "study-smarter",
+      "tags": [
+        "closed-book",
+        "progression",
+        "retrieval-practice"
+      ],
+      "title": "Start with the book open, then work towards answering from memory",
+      "body": "Elaboration, examples and visuals all work best when they become retrieval practice. The authors suggest a natural progression: begin by answering your how and why questions using your class materials, then work up to answering them from memory.\n\nThe same goes for problems. When you interleave problem types, actually solve them rather than just looking over worked examples. Reading a solution feels like understanding, but producing it yourself is what builds the skill.",
+      "apply_it": "Take a topic you have studied with notes open, and this time explain it or solve its problems with the notes closed.",
+      "locator": "Conclusion",
+      "quiz": {
+        "question": "What progression do the authors suggest for elaborative questions?",
+        "options": [
+          "Start answering with materials, then work up to answering from memory",
+          "Answer from memory first, then never check",
+          "Only use materials",
+          "Only read worked examples"
+        ],
+        "answer": 0,
+        "explanation": "Students can start answering their how and why questions using class materials and progress to answering from memory."
+      }
+    }
+  ]
+}
