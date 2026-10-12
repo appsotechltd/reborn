@@ -18,7 +18,7 @@ relationships.
 
 - **Idea cards** with title, body, optional quote, an **Apply it** prompt and a credit line naming
   the source and licence on every card. Health cards always carry a "not medical advice" note.
-- **Feed** by topic (twenty-three categories), unread cards first, reshuffled daily; a **daily idea**.
+- **Feed** by topic (twenty-four categories), unread cards first, reshuffled daily; a **daily idea**.
 - **Search** that combines Postgres full-text search with semantic vector search (pgvector) when
   embeddings are configured.
 - **Stashes**: personal collections. Stashing a card enrols it in **spaced-repetition review**,

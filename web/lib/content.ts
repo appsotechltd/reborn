@@ -25,6 +25,7 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "grief-loss", name: "Grief & Loss" },
   { slug: "study-smarter", name: "Study Smarter" },
   { slug: "skills-mastery", name: "Skills & Mastery" },
+  { slug: "etiquette", name: "Etiquette & Manners" },
 ];
 
 /** Topics whose cards carry the server's support note instead of the health disclaimer. */
