@@ -38,6 +38,7 @@ const kDefaultTopics = <Topic>[
   Topic(slug: 'grief-loss', name: 'Grief & Loss'),
   Topic(slug: 'study-smarter', name: 'Study Smarter'),
   Topic(slug: 'skills-mastery', name: 'Skills & Mastery'),
+  Topic(slug: 'etiquette', name: 'Etiquette & Manners'),
 ];
 
 /// Wraps [ApiClient] with the offline cache: reads go to the network first;

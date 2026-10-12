@@ -106,8 +106,9 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `grief-loss` | Grief & Loss |
 | `study-smarter` | Study Smarter |
 | `skills-mastery` | Skills & Mastery |
+| `etiquette` | Etiquette & Manners |
 
-`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
+`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `etiquette` is manners and courtesy in social and business settings (introductions, dining, correspondence, hosting, meetings); `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
 
 Cards in `heartbreak-healing` and `grief-loss` always show a support note pointing to people who can help, in place of the health disclaimer. Write them gently.
 
