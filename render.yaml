@@ -1,0 +1,80 @@
+# Render Blueprint: the whole of Reborn on Render's free plan.
+# Dashboard: New > Blueprint > pick this repo > fill in the R2 keys > Apply.
+# Free web services sleep after 15 minutes idle (the first request then takes about
+# a minute), and the free Postgres expires 30 days after creation; point DATABASE_URL
+# at Neon or Supabase (both have pgvector) to keep the data longer.
+# If Render gives a service a different URL than below (the name was taken), update
+# the URL settings to match and redeploy reborn-web.
+
+databases:
+  - name: reborn-db
+    plan: free
+    region: frankfurt
+    databaseName: reborn
+    user: reborn
+    postgresMajorVersion: "16"
+    ipAllowList: []
+
+services:
+  - type: keyvalue
+    name: reborn-redis
+    plan: free
+    region: frankfurt
+    maxmemoryPolicy: allkeys-lru
+    ipAllowList: []
+
+  - type: web
+    name: reborn-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./deploy/api.Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    buildFilter:
+      paths: [backend/**, content/library/**, content/explainers/out/**, deploy/**]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: reborn-db, property: connectionString }
+      - key: REDIS_URL
+        fromService: { type: keyvalue, name: reborn-redis, property: connectionString }
+      - key: JWT_SECRET
+        generateValue: true
+      - key: WEB_BASE_URL
+        value: https://reborn-web.onrender.com
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: MEDIA_BASE_URL
+        value: https://pub-4db332244cac498b85be80bcd4879ade.r2.dev
+      - key: R2_ACCOUNT_ID
+        sync: false
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_BUCKET
+        sync: false
+      # Optional: turn on Reborn AI and the AI guide.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+
+  - type: web
+    name: reborn-web
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./web/Dockerfile
+    dockerContext: ./web
+    healthCheckPath: /
+    buildFilter:
+      paths: [web/**]
+    envVars:
+      # Render passes these to the Docker build too; NEXT_PUBLIC_API_URL is baked into the browser bundle.
+      - key: NEXT_PUBLIC_API_URL
+        value: https://reborn-api.onrender.com
+      - key: API_URL
+        value: https://reborn-api.onrender.com
+      - key: SITE_URL
+        value: https://reborn-web.onrender.com
