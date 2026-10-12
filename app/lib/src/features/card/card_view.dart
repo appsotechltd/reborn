@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../listen/listen_controller.dart';
@@ -69,6 +70,11 @@ class IdeaCardView extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          // The picture tops the card; a video card has its video instead.
+          if (card.image != null && card.explainer == null) ...[
+            CardPicture(image: card.image!),
+            const SizedBox(height: 16),
+          ],
           if (label != null || showTopic) ...[
             Wrap(
               spacing: 10,
@@ -119,6 +125,17 @@ class IdeaCardView extends ConsumerWidget {
           _ApplyIt(text: card.applyIt),
           const SizedBox(height: 16),
           _Credit(card: card),
+          if (card.image != null && card.explainer == null)
+            Padding(
+              padding: const EdgeInsets.only(left: 24, top: 2),
+              child: Text(
+                card.image!.captionLine,
+                key: const ValueKey('card-image-caption'),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
           if (showActions) ...[
             const SizedBox(height: 12),
             _CardActions(card: card, showShare: showShare),
@@ -260,6 +277,70 @@ class _Disclaimer extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// The card's 3:2 picture with its type badge. It keeps its dark backdrop
+/// in both themes (the pictures are made for it).
+class CardPicture extends StatelessWidget {
+  const CardPicture({super.key, required this.image});
+  final CardImage image;
+
+  static const _backdrop = Color(0xFF14110E);
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      key: const ValueKey('card-image'),
+      borderRadius: BorderRadius.circular(12),
+      child: AspectRatio(
+        aspectRatio: 3 / 2,
+        child: ColoredBox(
+          color: _backdrop,
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              Semantics(
+                image: true,
+                label: image.caption,
+                child: Image.network(
+                  resolveMediaUrl(image.url),
+                  fit: BoxFit.cover,
+                  excludeFromSemantics: true,
+                  errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                ),
+              ),
+              Positioned(
+                left: 10,
+                top: 10,
+                child: ExcludeSemantics(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: const Color(0xB814110E),
+                      borderRadius: BorderRadius.circular(999),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 3,
+                      ),
+                      child: Text(
+                        image.typeLabel,
+                        style: const TextStyle(
+                          color: Color(0xFFE9A23B),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
