@@ -1,7 +1,8 @@
 """Project Gutenberg plain-text ebooks.
 
-Registry fields: gutenberg_id, optional mirror (a path under raw.githubusercontent.com/GITenberg,
-used when gutenberg.org is unreachable), optional start / end (literal lines that bound the body,
+Registry fields: gutenberg_id (fetched from gutenberg.org, falling back to its gutenberg.pglaf.org
+mirror), optional mirror (a path under raw.githubusercontent.com/GITenberg, also used when
+gutenberg.org is unreachable), optional start / end (literal lines that bound the body,
 to drop front matter such as a table of contents), optional verses (a book name such as "Proverbs":
 the text is a Gutenberg Bible book with "20:006:006" verse numbers, and each verse becomes one
 passage with a "Proverbs 6:6" locator).
@@ -17,6 +18,7 @@ from ..passages import Passage
 from . import FetchResult, LicenceError
 
 PRIMARY = "https://www.gutenberg.org/cache/epub/{id}/pg{id}.txt"
+PGLAF = "https://gutenberg.pglaf.org/cache/epub/{id}/pg{id}.txt"  # Gutenberg's own mirror: the same file
 MIRROR = "https://raw.githubusercontent.com/GITenberg/{path}"
 
 _START = re.compile(r"^\*\*\*\s*START OF (THE|THIS) PROJECT GUTENBERG EBOOK.*$", re.M | re.I)
@@ -76,6 +78,15 @@ def _is_heading(block: str) -> bool:
     """A block of one to three short heading-like lines, e.g. "CHAPTER I." / "SELF-HELP"."""
     lines = [ln.strip() for ln in block.strip().split("\n")]
     return len(lines) <= 3 and all(_is_heading_line(ln) for ln in lines)
+
+
+def _locator(heading: str, count: int) -> str:
+    """Keep locators within the 120-char limit: a long run-on heading
+    ("Chapter VI. The Struggle for Means to Work. The. Burden of Celebrity. ...") keeps its first two parts."""
+    locator = f"{heading} ¶{count}"
+    if len(locator) <= 120:
+        return locator
+    return f"{'. '.join(heading.split('. ')[:2])[:110].rstrip()} ¶{count}"
 
 
 def parse_verses(body: str, source_id: str, book: str) -> list[Passage]:
@@ -143,13 +154,13 @@ def parse_text(
         if para.startswith("[Illustration") or len(para) < 2:
             continue
         count += 1
-        passages.append(Passage(source_id, len(passages) + 1, f"{heading} ¶{count}", para))
+        passages.append(Passage(source_id, len(passages) + 1, _locator(heading, count), para))
     return licence, " ".join(header.split())[:600], passages
 
 
 def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
     gid = entry["gutenberg_id"]
-    urls = [PRIMARY.format(id=gid)]
+    urls = [PRIMARY.format(id=gid), PGLAF.format(id=gid)]
     if entry.get("mirror"):
         # prefer_mirror: the cards were checked against the mirror's edition, which can differ from gutenberg.org's
         urls.insert(0 if entry.get("prefer_mirror") else 1, MIRROR.format(path=entry["mirror"]))

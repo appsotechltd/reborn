@@ -1,0 +1,1087 @@
+{
+  "source": {
+    "id": "autobiography-charles-darwin",
+    "title": "The Autobiography of Charles Darwin",
+    "authors": [
+      "Charles Darwin"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/2010",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Charles Darwin, The Autobiography of Charles Darwin, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1887,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "Written 1876 (with additions in 1881) and first published in 1887, edited by his son Francis Darwin, who omitted some private passages. This Gutenberg text does not include the later-restored sections on religious belief or the death of his daughter Annie."
+  },
+  "cards": [
+    {
+      "id": "autobiography-charles-darwin--01",
+      "topic": "study-smarter",
+      "tags": [
+        "memorisation",
+        "rote-learning",
+        "retention"
+      ],
+      "title": "Cramming lines by heart without meaning is gone within two days",
+      "body": "At school Darwin was made to learn forty or fifty lines of Virgil or Homer each morning. He found it easy, often managing it during morning chapel. But he called the exercise useless, because every line had vanished within forty-eight hours.\n\nIt is a familiar trap. Repeating something until you can recite it feels like learning, yet without meaning or later review it fades almost as fast as it arrived. What lasts is material you understand, connect to what you already know, and come back to more than once.",
+      "quote": "this exercise was utterly useless, for every verse was forgotten in forty-eight hours",
+      "locator": "Contents ¶15",
+      "apply_it": "Take one thing you memorised this week. Without notes, explain what it means and why it matters, then plan a short review in three days.",
+      "quiz": {
+        "question": "What happened to the verses Darwin learned by heart at school?",
+        "options": [
+          "They were forgotten within forty-eight hours",
+          "He could still recite them in old age",
+          "He turned them into his own poems",
+          "He used them in his scientific books"
+        ],
+        "answer": 0,
+        "explanation": "He learned them quickly but they were gone in two days, which is why he judged the exercise useless."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--02",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "reasoning",
+        "exams"
+      ],
+      "title": "Study an argument until you could rebuild it, not until you can recite it",
+      "body": "For his Cambridge degree Darwin had to master William Paley's books on theology and moral philosophy. He studied them so thoroughly that he believed he could have written out the whole argument correctly. The key, he said, was that he never tried to learn any part by rote. He followed the long chain of reasoning step by step, and that delighted him as much as geometry did.\n\nHe judged it the only part of his university course that truly trained his mind. Working through why each step follows from the last builds a skill you keep, not just a set of facts.",
+      "quote": "The careful study of these works, without attempting to learn any part by rote, was the only part of the academical course which, as I then felt and as I still believe, was of the least use to me in the education of my mind.",
+      "locator": "Cambridge 1828-1831 ¶4",
+      "apply_it": "Pick one argument or proof from your current study. Close the book and try to rebuild it from the first step to the last.",
+      "quiz": {
+        "question": "Why did Darwin value his study of Paley above the rest of his course?",
+        "options": [
+          "It was the easiest subject",
+          "His tutor praised him for it",
+          "It was the only subject he passed",
+          "He followed the reasoning instead of memorising it"
+        ],
+        "answer": 3,
+        "explanation": "He worked through the argument carefully without learning it by rote, and felt it was the one part of the course that educated his mind."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--03",
+      "topic": "skills-mastery",
+      "tags": [
+        "learning-by-doing",
+        "experiments",
+        "hands-on"
+      ],
+      "title": "A garden-shed lab taught him more than years of lessons",
+      "body": "Near the end of his school days Darwin's older brother set up a small chemistry lab in the garden tool-house. Darwin helped as his assistant, making gases and compounds and reading chemistry books with care, often working late into the night. His schoolmates nicknamed him \"Gas\" and the headmaster publicly scolded him for wasting time.\n\nYet he called it the best part of his education, because it showed him in practice what experimental science meant. Doing the thing, even badly and at home, can teach what no amount of listening does.",
+      "quote": "This was the best part of my education at school, for it showed me practically the meaning of experimental science.",
+      "locator": "Contents ¶21",
+      "apply_it": "Choose one skill you have only read about. Spend thirty minutes this week actually trying it, however roughly.",
+      "quiz": {
+        "question": "What did Darwin call the best part of his education at school?",
+        "options": [
+          "Learning Latin verse",
+          "Reading history in the school window",
+          "Helping his brother with chemistry experiments",
+          "His lessons in ancient geography"
+        ],
+        "answer": 2,
+        "explanation": "Working in his brother's home lab showed him what experimental science meant in practice."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--04",
+      "topic": "skills-mastery",
+      "tags": [
+        "practice",
+        "discomfort",
+        "regret",
+        "fundamentals"
+      ],
+      "title": "Push past early discomfort with a core skill, or pay for it later",
+      "body": "As a medical student in Edinburgh, Darwin found anatomy lectures so dull and dissection so distasteful that he avoided it. Later he called this one of the greatest evils of his life. He was sure he would soon have got over the disgust, and the practice would have been invaluable for all his later work. He felt the same about never learning to draw.\n\nOn the Beagle, a great pile of his notes on sea animals proved almost useless for exactly these reasons. When a skill sits at the base of what you want to do, early unease is usually worth working through.",
+      "quote": "It has proved one of the greatest evils in my life that I was not urged to practise dissection, for I should soon have got over my disgust; and the practice would have been invaluable for all my future work.",
+      "locator": "Contents ¶23",
+      "apply_it": "Name one basic skill in your field you have been avoiding because it feels unpleasant. Book a short first session with it this week.",
+      "quiz": {
+        "question": "Which two gaps did Darwin later regret most in his training?",
+        "options": [
+          "Languages and music",
+          "Dissection and drawing",
+          "Public speaking and writing",
+          "Mathematics and Latin"
+        ],
+        "answer": 1,
+        "explanation": "He regretted never practising dissection and being unable to draw. Both left many of his voyage notes almost useless."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--05",
+      "topic": "study-smarter",
+      "tags": [
+        "mathematics",
+        "patience",
+        "foundations"
+      ],
+      "title": "Don't quit a subject just because the first steps seem pointless",
+      "body": "Darwin tried mathematics at Cambridge, even spending a summer with a tutor, but gave up because he could not see any meaning in the early steps of algebra. Later he called this impatience very foolish. He deeply regretted not going far enough to grasp the great leading principles, since people who have them seem, he said, to have an extra sense.\n\nThe opening stages of many subjects feel like drills with no purpose. Often the meaning only appears once you are a little further in. A bit more patience at the start can open a whole way of thinking.",
+      "quote": "This impatience was very foolish, and in after years I have deeply regretted that I did not proceed far enough at least to understand something of the great leading principles of mathematics, for men thus endowed seem to have an extra sense.",
+      "locator": "Cambridge 1828-1831 ¶4",
+      "apply_it": "Think of a subject you dropped early. Find one short, clear explanation of its big ideas and read it this week.",
+      "quiz": {
+        "question": "Why did Darwin give up mathematics at Cambridge?",
+        "options": [
+          "He could not see any meaning in the early steps of algebra",
+          "He had no tutor",
+          "He was failing all his exams",
+          "His father told him to stop"
+        ],
+        "answer": 0,
+        "explanation": "He found the early steps meaningless and stopped, which he later called foolish impatience."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--06",
+      "topic": "learning",
+      "tags": [
+        "teachers",
+        "lectures",
+        "curiosity"
+      ],
+      "title": "One dull teacher can close a subject you were made for",
+      "body": "Darwin found the geology lectures at Edinburgh so dull that he vowed never to read a book on geology again. Yet he was primed for the subject. Years earlier an old neighbour had shown him a huge boulder in Shrewsbury that had no business being there, and he had pondered it for ages. At Cambridge, still put off by lectures, he even skipped Sedgwick's lively geology course.\n\nGeology later became one of his great loves. If one class or teacher has turned you against a subject, it may be the teaching you dislike, not the subject.",
+      "quote": "The sole effect they produced on me was the determination never as long as I lived to read a book on Geology, or in any way to study the science.",
+      "locator": "Contents ¶29",
+      "apply_it": "Think of a subject a poor class put you off. Try one popular book or talk on it from a different teacher.",
+      "quiz": {
+        "question": "What did the dull Edinburgh lectures make Darwin decide about geology?",
+        "options": [
+          "To study it at Cambridge",
+          "To become a professor of it",
+          "To teach it better himself",
+          "Never to read a book on it again"
+        ],
+        "answer": 3,
+        "explanation": "He resolved never to study geology, though he later became a great geologist once he met better guides."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--07",
+      "topic": "personal-development",
+      "tags": [
+        "late-bloomer",
+        "potential",
+        "labels",
+        "zeal"
+      ],
+      "title": "Being called ordinary early on does not decide who you become",
+      "body": "When Darwin left school, his masters and his father thought him a very ordinary boy, rather below average in intellect. His father once told him, in anger, that he cared only for shooting, dogs and rat-catching and would be a disgrace to the family. Darwin still called him the kindest man he ever knew.\n\nLooking back, he saw only three things that promised well: wide interests, real zeal for what caught his attention, and a keen pleasure in understanding complex things. Grades and labels miss qualities like these, and those are often what carry a life.",
+      "quote": "the only qualities which at this period promised well for the future, were, that I had strong and diversified tastes, much zeal for whatever interested me, and a keen pleasure in understanding any complex subject or thing.",
+      "locator": "Contents ¶17",
+      "apply_it": "List three things you get genuinely absorbed in, regardless of how you were rated. How could one of them grow this year?",
+      "quiz": {
+        "question": "Which qualities did Darwin think promised well in his school years?",
+        "options": [
+          "Top marks and good behaviour",
+          "A gift for languages",
+          "Wide tastes, zeal and pleasure in understanding complex things",
+          "Skill at verse-making"
+        ],
+        "answer": 2,
+        "explanation": "He saw his varied interests, zeal and love of understanding as the hopeful signs, not his school record."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--08",
+      "topic": "personal-development",
+      "tags": [
+        "listening",
+        "conversation",
+        "encouragement"
+      ],
+      "title": "Listen with real interest and people remember you",
+      "body": "At nineteen, Darwin met the statesman Sir James Mackintosh, the best talker he ever heard. He later learned that Mackintosh had said there was something in that young man that interested him. Darwin guessed why: he knew almost nothing about history or politics, but he listened with great interest to everything said.\n\nHe added that hearing praise from someone eminent is good for a young person because it helps keep them on the right course. Close attention is one of the simplest ways to make an impression, and a word of encouragement can steer someone more than we think.",
+      "quote": "This must have been chiefly due to his perceiving that I listened with much interest to everything which he said, for I was as ignorant as a pig about his subjects of history, politics, and moral philosophy.",
+      "locator": "Contents ¶34",
+      "apply_it": "In your next conversation, ask one follow-up question before offering any view of your own. Then encourage one younger person this week.",
+      "quiz": {
+        "question": "Why did Darwin think Mackintosh found him interesting?",
+        "options": [
+          "He knew a lot about politics",
+          "He listened with real interest",
+          "He told good stories",
+          "He was from a famous family"
+        ],
+        "answer": 1,
+        "explanation": "Darwin knew little of Mackintosh's subjects but listened attentively, which he believed made the impression."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--09",
+      "topic": "lives-history",
+      "tags": [
+        "mentors",
+        "henslow",
+        "friendship"
+      ],
+      "title": "The friendship that shaped his whole career began with long walks",
+      "body": "Darwin said nothing influenced his career more than his friendship with the Cambridge professor John Henslow. Henslow kept an open evening each week for students interested in science. Darwin went regularly, and soon walked with him on most days, so often that some dons called him \"the man who walks with Henslow.\"\n\nIt was Henslow who later suggested him for the Beagle voyage. A mentor is often found simply by showing up regularly where someone generous shares what they know, and then staying curious in their company.",
+      "quote": "I have not as yet mentioned a circumstance which influenced my whole career more than any other. This was my friendship with Professor Henslow.",
+      "locator": "Cambridge 1828-1831 ¶13",
+      "apply_it": "Who in your field holds open sessions, talks or clubs? Go to one this month and go back the next time too.",
+      "quiz": {
+        "question": "What nickname did some Cambridge dons give Darwin?",
+        "options": [
+          "The man who walks with Henslow",
+          "The beetle boy",
+          "Gas",
+          "The young naturalist"
+        ],
+        "answer": 0,
+        "explanation": "He walked with Henslow so often that he became known for it, and the friendship shaped his whole career."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--10",
+      "topic": "learning",
+      "tags": [
+        "teaching",
+        "feedback",
+        "discovery"
+      ],
+      "title": "Correct a learner kindly and they keep their love of discovery",
+      "body": "As a student Darwin saw pollen grains put out tiny tubes under the microscope and rushed off to tell Henslow. Most professors, he thought, would have laughed. Henslow instead agreed it was interesting, explained what it meant, and made clear it was already well known.\n\nDarwin left pleased at having found something remarkable for himself, not embarrassed, and resolved to be less hasty next time. When someone brings you a discovery you already know, honouring their excitement while setting the facts straight teaches two lessons at once.",
+      "quote": "so I left him not in the least mortified, but well pleased at having discovered for myself so remarkable a fact, but determined not to be in such a hurry again to communicate my discoveries.",
+      "locator": "Cambridge 1828-1831 ¶15",
+      "apply_it": "Next time someone shares a find you already know, start with what is genuinely good about it before adding context.",
+      "quiz": {
+        "question": "How did Henslow respond to Darwin's 'discovery' about pollen?",
+        "options": [
+          "He laughed at him",
+          "He ignored it",
+          "He published it for him",
+          "He took interest, explained it, and said it was already known"
+        ],
+        "answer": 3,
+        "explanation": "Henslow treated the excitement with respect while gently making clear the fact was known, so Darwin felt encouraged."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--11",
+      "topic": "personal-development",
+      "tags": [
+        "inspiration",
+        "reading",
+        "action"
+      ],
+      "title": "When a book lights a fire, take one real step towards it",
+      "body": "In his last year at Cambridge Darwin read Humboldt's travels and Herschel's introduction to natural science. Together they gave him a burning wish to add even a humble contribution to science. He copied out long passages about Tenerife and read them aloud to friends, some of whom half-promised to go there.\n\nDarwin was in earnest. He got an introduction to a London merchant to ask about ships. The plan was overtaken by the Beagle, but his readiness to act on inspiration was part of what made him ready when the bigger chance came.",
+      "quote": "This work, and Sir J. Herschel’s ‘Introduction to the Study of Natural Philosophy,’ stirred up in me a burning zeal to add even the most humble contribution to the noble structure of Natural Science.",
+      "locator": "Cambridge 1828-1831 ¶18",
+      "apply_it": "Think of a book that recently stirred you. Write down one concrete step it suggests and take it within a week.",
+      "quiz": {
+        "question": "What did Darwin do after reading Humboldt about Tenerife?",
+        "options": [
+          "Nothing, it was just a dream",
+          "He wrote his own travel book",
+          "He asked a merchant about ships to get there",
+          "He changed universities"
+        ],
+        "answer": 2,
+        "explanation": "He was in earnest and began enquiring about ships, until the Beagle offer came instead."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--12",
+      "topic": "learning",
+      "tags": [
+        "science",
+        "patterns",
+        "evidence"
+      ],
+      "title": "Facts become knowledge when you group them into laws",
+      "body": "A labourer told Darwin he had found a tropical shell in a gravel pit near Shrewsbury. Darwin was thrilled and told the geologist Adam Sedgwick. Sedgwick said someone must have thrown it there, adding that if it truly belonged in the pit it would overturn all they knew about local deposits.\n\nDarwin was astonished that Sedgwick was not delighted by such a strange fact. But it taught him something no book had: science is not collecting curiosities, it is grouping facts so general conclusions can be drawn. A single odd fact matters only by what it says about the pattern.",
+      "quote": "Nothing before had ever made me thoroughly realise, though I had read various scientific books, that science consists in grouping facts so that general laws or conclusions may be drawn from them.",
+      "locator": "Cambridge 1828-1831 ¶21",
+      "apply_it": "Look at a pile of notes or data you have. Group them under three headings and write one conclusion each group suggests.",
+      "quiz": {
+        "question": "What did the tropical shell conversation teach Darwin?",
+        "options": [
+          "That labourers are unreliable",
+          "That science groups facts to draw general laws",
+          "That shells are rare in England",
+          "That Sedgwick disliked him"
+        ],
+        "answer": 1,
+        "explanation": "He realised for the first time that science means grouping facts so that general conclusions can be drawn."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--13",
+      "topic": "learning",
+      "tags": [
+        "observation",
+        "blind-spots",
+        "attention"
+      ],
+      "title": "You can stare straight at something and not see it until you know to look",
+      "body": "On a geology trip in Wales, Darwin and Sedgwick spent hours in the valley of Cwm Idwal searching the rocks for fossils. Neither of them noticed the obvious signs of ancient glaciers all around them: scratched rocks, stranded boulders, moraines. Years later Darwin wrote that a burnt-down house could not tell its story more plainly than that valley.\n\nWe see what we are looking for. Experts with a fixed question can miss what is in plain view. Asking now and then \"what else is here?\" helps catch what your current focus filters out.",
+      "quote": "On this tour I had a striking instance of how easy it is to overlook phenomena, however conspicuous, before they have been observed by any one.",
+      "locator": "Cambridge 1828-1831 ¶22",
+      "apply_it": "On your next task, pause once and ask: what is in front of me that I am not looking for?",
+      "quiz": {
+        "question": "What did Darwin and Sedgwick miss in Cwm Idwal?",
+        "options": [
+          "Clear signs of ancient glaciers",
+          "Rare fossils",
+          "A hidden cave",
+          "A new species of beetle"
+        ],
+        "answer": 0,
+        "explanation": "Focused on fossils, both men overlooked the conspicuous glacial features all around them."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--14",
+      "topic": "lives-history",
+      "tags": [
+        "chance",
+        "turning-points",
+        "beagle"
+      ],
+      "title": "Huge turning points can hang on tiny things",
+      "body": "Darwin's father refused to let him join the Beagle unless a man of common sense advised it. His uncle Josiah Wedgwood did, and drove him thirty miles to make the case. The captain, a believer in reading character from faces, nearly rejected him for the shape of his nose.\n\nDarwin called the voyage by far the most important event of his life, yet it rested on these small things. It is a reminder to treat small kindnesses and chances seriously. A favour you do or an offer you take could change a life's direction.",
+      "quote": "yet it depended on so small a circumstance as my uncle offering to drive me thirty miles to Shrewsbury, which few uncles would have done, and on such a trifle as the shape of my nose.",
+      "locator": "“Voyage of the ‘Beagle’ From December 27, 1831, to October 2, 1836.” ¶6",
+      "apply_it": "Is there someone you could put in a word for, or drive the extra mile for, this month? Do it.",
+      "quiz": {
+        "question": "Which small circumstance helped Darwin get onto the Beagle?",
+        "options": [
+          "He won a competition",
+          "His school recommended him",
+          "He paid for his passage",
+          "His uncle drove him thirty miles to talk to his father"
+        ],
+        "answer": 3,
+        "explanation": "His uncle's offer to drive over and persuade his father helped make the voyage possible."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--15",
+      "topic": "skills-mastery",
+      "tags": [
+        "focus",
+        "attention",
+        "habits",
+        "beagle"
+      ],
+      "title": "The real gift of the voyage was a habit of concentrated attention",
+      "body": "Darwin said the Beagle gave him his first real education. More than any single study, it trained him in hard work and concentrated attention to whatever he was doing. Everything he thought about or read he linked directly to what he had seen or expected to see.\n\nHe was sure this habit made all his later work possible. Tying your reading to real problems you are facing keeps knowledge alive and attention sharp. Learning sticks best when it has somewhere to land.",
+      "quote": "The above various special studies were, however, of no importance compared with the habit of energetic industry and of concentrated attention to whatever I was engaged in, which I then acquired.",
+      "locator": "“Voyage of the ‘Beagle’ From December 27, 1831, to October 2, 1836.” ¶10",
+      "apply_it": "Before reading your next article or chapter, write the real problem you hope it will help with. Note one link afterwards.",
+      "quiz": {
+        "question": "What did Darwin value most from the Beagle years?",
+        "options": [
+          "His collections of animals",
+          "The fame it brought him",
+          "The habit of hard work and concentrated attention",
+          "His friendship with the captain"
+        ],
+        "answer": 2,
+        "explanation": "He said the special studies mattered far less than the habit of energetic, concentrated attention he gained."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "writing",
+        "journaling",
+        "practice"
+      ],
+      "title": "Write down what you see, carefully and vividly, every day",
+      "body": "During the voyage Darwin spent part of each day writing his journal, taking pains to describe everything carefully and vividly. He called it good practice. The journal also served as letters home.\n\nThe effort paid off twice. Back in England, preparing his book of travels was not hard work, because the notes were already well written. A daily habit of clear description sharpens how you see, and it quietly builds raw material for whatever you later make.",
+      "quote": "During some part of the day I wrote my Journal, and took much pains in describing carefully and vividly all that I had seen; and this was good practice.",
+      "locator": "“Voyage of the ‘Beagle’ From December 27, 1831, to October 2, 1836.” ¶9",
+      "apply_it": "Tonight, write five careful sentences describing one thing you saw today, as if for someone far away.",
+      "quiz": {
+        "question": "Why was writing Darwin's later travel book not hard work?",
+        "options": [
+          "A friend wrote it for him",
+          "His voyage journal had been written with care",
+          "The publisher shortened it",
+          "He copied other travellers"
+        ],
+        "answer": 1,
+        "explanation": "His careful daily journal on the voyage gave him material already in good shape."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--17",
+      "topic": "personal-development",
+      "tags": [
+        "passion",
+        "growth",
+        "priorities"
+      ],
+      "title": "Deeper pleasures can quietly replace old ones",
+      "body": "Before the voyage Darwin was wildly keen on shooting. He kept his boots open by the bed so as not to waste half a minute in the morning. On the Beagle he shot his own specimens at first, but gradually handed his gun to his servant, because shooting got in the way of working out the geology.\n\nHe found, without quite noticing, that observing and reasoning gave a higher pleasure than skill and sport. You rarely need to force yourself off an old passion. Feed a deeper one and it often takes the space by itself.",
+      "quote": "I discovered, though unconsciously and insensibly, that the pleasure of observing and reasoning was a much higher one than that of skill and sport.",
+      "locator": "“Voyage of the ‘Beagle’ From December 27, 1831, to October 2, 1836.” ¶11",
+      "apply_it": "What activity gives you a deeper satisfaction than your usual pastimes? Give it one extra hour this week.",
+      "quiz": {
+        "question": "Why did Darwin gradually give up shooting on the voyage?",
+        "options": [
+          "It interfered with his work and observing gave him a higher pleasure",
+          "He lost his gun",
+          "The captain forbade it",
+          "He became ill"
+        ],
+        "answer": 0,
+        "explanation": "Shooting got in the way of his geology, and he found observing and reasoning more satisfying."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--18",
+      "topic": "learning",
+      "tags": [
+        "mistakes",
+        "reasoning",
+        "humility"
+      ],
+      "title": "\"Nothing else explains it\" is not proof",
+      "body": "After the voyage Darwin studied the strange parallel terraces of Glen Roy in Scotland and argued they were old sea beaches. He chose the sea because, with what was then known, no other explanation seemed possible. Then Louis Agassiz proposed that a glacier had dammed a lake there, and Darwin had to give up his view.\n\nHe called the paper a great failure and was ashamed of it, but drew a lasting lesson: never trust the principle of exclusion. When we can't think of another answer, that usually says more about what we know than about the truth.",
+      "quote": "my error has been a good lesson to me never to trust in science to the principle of exclusion.",
+      "locator": "“Voyage of the ‘Beagle’ From December 27, 1831, to October 2, 1836.” ¶22",
+      "apply_it": "Take one belief you hold because 'nothing else fits'. Write two other possible explanations, however unlikely.",
+      "quiz": {
+        "question": "What lesson did Darwin draw from his Glen Roy mistake?",
+        "options": [
+          "Always trust the experts",
+          "Avoid studying Scotland",
+          "Never publish papers",
+          "Don't conclude something is true just because you can't think of an alternative"
+        ],
+        "answer": 3,
+        "explanation": "He had argued for sea action only because no other explanation seemed possible, and learned not to trust that kind of reasoning."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--19",
+      "topic": "faith-wisdom",
+      "tags": [
+        "belief",
+        "integrity",
+        "vocation"
+      ],
+      "title": "Before you profess a belief, take the time to examine it honestly",
+      "body": "When his father proposed he become a clergyman, Darwin liked the idea of being a country parson, but he had doubts about declaring his belief in every doctrine of the Church of England. So he asked for time, and read carefully on the creed and other books of divinity. At that point he did not doubt the literal truth of the Bible, and he persuaded himself he could accept the creed fully.\n\nWhatever you believe, his instinct is worth keeping: a public commitment deserves honest thought beforehand, not a quick yes to please others.",
+      "quote": "I asked for some time to consider, as from what little I had heard or thought on the subject I had scruples about declaring my belief in all the dogmas of the Church of England",
+      "locator": "Cambridge 1828-1831 ¶1",
+      "apply_it": "Is there a commitment you are being asked to make? Give yourself a set time to read, reflect and decide for yourself.",
+      "quiz": {
+        "question": "What did Darwin do when he had scruples about becoming a clergyman?",
+        "options": [
+          "Refused straight away",
+          "Agreed without thinking",
+          "Asked for time and read carefully on the subject",
+          "Asked his friends to decide"
+        ],
+        "answer": 2,
+        "explanation": "He took time to read and consider before committing, and at that stage concluded he could accept the creed."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--20",
+      "topic": "faith-wisdom",
+      "tags": [
+        "character",
+        "humility",
+        "faith",
+        "henslow"
+      ],
+      "title": "Faith shown in character: humble, kind and stirred by injustice",
+      "body": "Darwin described Henslow as deeply religious and very orthodox, and as a man of admirable moral qualities. Henslow was free of vanity and thought little about himself. He was gentle in temper but roused to fierce action by cruelty. Darwin once saw him try to push through a violent mob attacking two prisoners, then run for the mayor and send Darwin for more police.\n\nLater, as a village parson, Henslow devoted himself to schemes for his poor parishioners. Darwin, whose views came to differ, admired him without reservation. Lived goodness earns respect across every line of belief.",
+      "quote": "He was free from every tinge of vanity or other petty feeling; and I never saw a man who thought so little about himself or his own concerns.",
+      "locator": "Cambridge 1828-1831 ¶13",
+      "apply_it": "Think of someone whose beliefs differ from yours but whose character you admire. What one quality of theirs could you practise this week?",
+      "quiz": {
+        "question": "What did Darwin most admire in Henslow?",
+        "options": [
+          "His wealth and position",
+          "His humility, kindness and readiness to act against wrong",
+          "His skill at debate",
+          "His fame as a writer"
+        ],
+        "answer": 1,
+        "explanation": "Darwin praised Henslow's lack of vanity, good temper, benevolence, and his prompt action against cruelty."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--21",
+      "topic": "dating-marriage",
+      "tags": [
+        "marriage",
+        "home",
+        "shared-choices",
+        "family"
+      ],
+      "title": "Build the life that suits you both, then don't look back",
+      "body": "Darwin married in January 1839. His son notes that he wrote of a happy married life and of his children, though those passages were kept private. What the text does show is how they shaped their life. London society and meetings badly suited his health, so together they decided to move to the country, to a quiet house in the village of Down. Both of them preferred it, and they never regretted it.\n\nAn unexpected bonus was that the house was easy for their grown children to visit often. Good shared decisions start from what you both actually want, not what others expect.",
+      "quote": "Our fixing ourselves here has answered admirably in one way, which we did not anticipate, namely, by being very convenient for frequent visits from our children.",
+      "locator": "Residence at Down From September 14, 1842, to the Present Time, 1876 ¶1",
+      "apply_it": "With your partner, name one thing about your daily life that neither of you really enjoys. Talk about one change that would suit you both.",
+      "quiz": {
+        "question": "Why did the Darwins move from London to the country?",
+        "options": [
+          "City life suited his health badly and they both preferred the country",
+          "They had to for his job",
+          "His family insisted",
+          "It was cheaper"
+        ],
+        "answer": 0,
+        "explanation": "London society harmed his health, and they both preferred country life, a choice they never regretted."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--22",
+      "topic": "grief-loss",
+      "tags": [
+        "childhood",
+        "mother",
+        "memory"
+      ],
+      "title": "If early loss left you only fragments, those fragments still count",
+      "body": "Darwin's mother died when he was a little over eight. Writing nearly sixty years later, he noted that he remembered hardly anything of her except her deathbed, her black velvet gown and her oddly made work-table.\n\nMany people who lose a parent young carry only a few small, sharp images. That can feel like a second loss. But those details are a real link. They are kept because they mattered. Gathering stories from others who knew the person can gently add to what memory holds.",
+      "quote": "My mother died in July 1817, when I was a little over eight years old, and it is odd that I can remember hardly anything about her except her death-bed, her black velvet gown, and her curiously constructed work-table.",
+      "locator": "Contents ¶5",
+      "apply_it": "If you lost someone early, write down the small details you do remember. Consider asking one relative for a story about them.",
+      "quiz": {
+        "question": "What did Darwin remember about his mother, who died when he was eight?",
+        "options": [
+          "Long conversations with her",
+          "Nothing at all",
+          "Her teaching him botany in detail",
+          "Only a few details, such as her velvet gown and work-table"
+        ],
+        "answer": 3,
+        "explanation": "He remembered very little apart from her deathbed, her black velvet gown and her work-table."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--23",
+      "topic": "grief-loss",
+      "tags": [
+        "father",
+        "funeral",
+        "illness",
+        "mourning"
+      ],
+      "title": "Missing a goodbye does not lessen the love",
+      "body": "When Darwin's father died in 1848, Darwin was so ill that he could not attend the funeral or act as one of the executors. Elsewhere in his memoir he called his father the kindest man he ever knew, whose memory he loved with all his heart.\n\nSometimes illness, distance or circumstance keep us from a funeral or a final visit. It can leave guilt or a sense of something unfinished. But love isn't measured by attendance. You can mourn in your own way and time, through a letter, a visit to a meaningful place, or simply by remembering out loud.",
+      "quote": "So much was I out of health that when my dear father died on November 13th, 1848, I was unable to attend his funeral or to act as one of his executors.",
+      "locator": "My Several Publications ¶3",
+      "apply_it": "If you missed a goodbye, write the person a short letter saying what you would have said. Keep it or share it with someone close.",
+      "quiz": {
+        "question": "Why did Darwin miss his father's funeral?",
+        "options": [
+          "He was abroad on a voyage",
+          "They had fallen out",
+          "He was too unwell to attend",
+          "He was not told in time"
+        ],
+        "answer": 2,
+        "explanation": "He was so out of health that he could not attend, though he loved his father's memory deeply."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--24",
+      "topic": "health",
+      "tags": [
+        "chronic-illness",
+        "meaningful-work",
+        "coping"
+      ],
+      "title": "Absorbing work can lift you out of daily discomfort for a while",
+      "body": "For much of his adult life Darwin lived with long-lasting illness that cost him years of work and forced him to give up dinner parties and most social life. He wrote that scientific work was his chief enjoyment, and that its excitement made him forget, or drove away, his daily discomfort for a time.\n\nHe even noted that ill-health had spared him many distractions. For anyone managing a long-term condition, a pursuit that fully absorbs you can be a real source of relief and meaning alongside proper care.",
+      "quote": "My chief enjoyment and sole employment throughout life has been scientific work; and the excitement from such work makes me for the time forget, or drives quite away, my daily discomfort.",
+      "locator": "Residence at Down From September 14, 1842, to the Present Time, 1876 ¶3",
+      "apply_it": "If you live with ongoing discomfort, note which activities make you forget it for a while. Plan a little more of one of them.",
+      "quiz": {
+        "question": "What did Darwin say his scientific work did for his daily discomfort?",
+        "options": [
+          "Made it worse",
+          "Made him forget it or drove it away for a time",
+          "Cured it completely",
+          "Had no effect"
+        ],
+        "answer": 1,
+        "explanation": "The excitement of the work made him forget his discomfort for a time, though it did not cure his illness."
+      },
+      "health": true
+    },
+    {
+      "id": "autobiography-charles-darwin--25",
+      "topic": "productivity",
+      "tags": [
+        "contrary-evidence",
+        "notes",
+        "bias",
+        "method"
+      ],
+      "title": "Write down the facts that go against you, immediately",
+      "body": "Darwin followed what he called a golden rule. Whenever he met a fact, observation or thought that went against his general results, he made a note of it at once. Experience had taught him that inconvenient facts slip from memory far more easily than welcome ones.\n\nBecause of this habit, hardly any objection was raised to his theory that he had not already noticed and tried to answer. Our minds quietly favour what agrees with us. A simple note-it-now rule for the awkward facts is a strong guard against fooling yourself.",
+      "quote": "for I had found by experience that such facts and thoughts were far more apt to escape from the memory than favourable ones.",
+      "locator": "My Several Publications ¶14",
+      "apply_it": "Start a short 'against' list for one belief or plan you hold. Add anything that cuts against it the moment you meet it.",
+      "quiz": {
+        "question": "Why did Darwin write down contrary facts at once?",
+        "options": [
+          "Because unfavourable facts are forgotten more easily than favourable ones",
+          "To impress his critics",
+          "His publisher asked him to",
+          "To fill his notebooks"
+        ],
+        "answer": 0,
+        "explanation": "He found that facts against his views slipped from memory more easily, so he noted them without fail."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--26",
+      "topic": "learning",
+      "tags": [
+        "insight",
+        "preparation",
+        "reading"
+      ],
+      "title": "Breakthroughs come to minds already prepared for them",
+      "body": "Fifteen months into his systematic search, Darwin happened to read Malthus's essay on population, just for amusement. Because years of watching animals and plants had prepared him to see the struggle for existence everywhere, the idea struck him at once: favourable variations would tend to survive and unfavourable ones to disappear.\n\nThe insight felt sudden, but it rested on long, patient groundwork. Casual reading outside your field can spark something, but only if you have done the slow work that lets you recognise what you are seeing.",
+      "quote": "In October 1838, that is, fifteen months after I had begun my systematic enquiry, I happened to read for amusement ‘Malthus on Population,’",
+      "locator": "My Several Publications ¶8",
+      "apply_it": "Read something outside your field this week. Note one idea that connects to a problem you've been working on.",
+      "quiz": {
+        "question": "Why did reading Malthus spark Darwin's key idea?",
+        "options": [
+          "He was assigned it at university",
+          "Malthus wrote to him",
+          "It contained the whole theory already",
+          "Long observation had prepared him to see its relevance"
+        ],
+        "answer": 3,
+        "explanation": "He read it for amusement, but his long observations meant he was ready to see the struggle for existence and its effects."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--27",
+      "topic": "productivity",
+      "tags": [
+        "writing",
+        "condensing",
+        "drafts",
+        "clarity"
+      ],
+      "title": "Condense your work again and again until only the strongest parts remain",
+      "body": "Darwin credited much of the success of On the Origin of Species to the fact that it was a condensed version. He had written two shorter sketches years before, then cut down a much larger manuscript that was itself a summary. Each round forced him to pick the most striking facts and conclusions.\n\nHe added that the book's moderate size helped too. A version four or five times longer would have found few readers. Repeated condensing is a powerful way to sharpen any report, talk or plan.",
+      "quote": "By this means I was enabled to select the more striking facts and conclusions.",
+      "locator": "My Several Publications ¶14",
+      "apply_it": "Take a document you are working on and write a version half as long. Notice what you chose to keep.",
+      "quiz": {
+        "question": "To what did Darwin partly credit the success of the Origin?",
+        "options": [
+          "Its many illustrations",
+          "Its low price",
+          "Repeated condensing of earlier, longer drafts",
+          "Reviews by famous friends"
+        ],
+        "answer": 2,
+        "explanation": "Writing condensed sketches and abstracting a larger manuscript helped him keep only the most striking facts."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--28",
+      "topic": "productivity",
+      "tags": [
+        "revision",
+        "time",
+        "self-critique"
+      ],
+      "title": "Put your work away for a while and you can judge it like a stranger",
+      "body": "Darwin's book on insect-eating plants appeared sixteen years after his first observations. He said this delay, like that with all his books, was a great advantage. After a long interval a person can criticise their own work almost as well as if someone else had written it.\n\nClose to a piece of work, we read what we meant rather than what we wrote. Time away, even days rather than years, lets the flaws show.",
+      "quote": "for a man after a long interval can criticise his own work, almost as well as if it were that of another person.",
+      "locator": "My Several Publications ¶31",
+      "apply_it": "Finish a draft, then schedule a review for at least a few days later before you send or submit it.",
+      "quiz": {
+        "question": "Why did Darwin think delays helped his books?",
+        "options": [
+          "They built up public anticipation",
+          "After a long interval he could judge his own work as if it were another's",
+          "Prices for books rose over time",
+          "His health improved"
+        ],
+        "answer": 1,
+        "explanation": "Distance let him criticise his own work almost as well as a stranger could."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--29",
+      "topic": "personal-development",
+      "tags": [
+        "credit",
+        "generosity",
+        "ego",
+        "wallace"
+      ],
+      "title": "Care more about the idea succeeding than about who gets the credit",
+      "body": "In 1858 Alfred Russel Wallace sent Darwin an essay containing exactly the same theory he had been working on for twenty years. Their work was presented together. Darwin later wrote that he cared very little whether people gave more originality to him or to Wallace, and that Wallace's essay had helped the theory to be accepted. He also praised Wallace's generous and noble nature.\n\nShared credit can feel like loss. Keeping your eyes on the work itself, and being gracious to others who reach the same place, tends to serve both the idea and your peace of mind.",
+      "quote": "I cared very little whether men attributed most originality to me or Wallace; and his essay no doubt aided in the reception of the theory.",
+      "locator": "My Several Publications ¶16",
+      "apply_it": "Next time you share credit for something, publicly name one thing the other person contributed.",
+      "quiz": {
+        "question": "How did Darwin feel about sharing credit with Wallace?",
+        "options": [
+          "He cared little who got more credit and thought Wallace's essay helped",
+          "Bitter and resentful",
+          "He tried to stop Wallace publishing",
+          "He never mentioned Wallace"
+        ],
+        "answer": 0,
+        "explanation": "He said he cared very little about the credit and that Wallace's essay aided the theory's reception."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--30",
+      "topic": "productivity",
+      "tags": [
+        "conflict",
+        "time",
+        "focus",
+        "advice"
+      ],
+      "title": "Avoid public quarrels: they rarely help and they cost you time and temper",
+      "body": "Darwin's views were often misrepresented, opposed and mocked. Yet he believed most critics acted in good faith, and he was glad he had avoided controversies. He owed this to his friend the geologist Charles Lyell, who advised him never to get tangled in one, as it rarely did any good and wasted time and temper.\n\nIn an age of online arguments, the advice holds. Answer criticism through better work where you can, and save your energy for the work itself.",
+      "quote": "who many years ago, in reference to my geological works, strongly advised me never to get entangled in a controversy, as it rarely did any good and caused a miserable loss of time and temper.",
+      "locator": "My Several Publications ¶18",
+      "apply_it": "Is there an argument you keep returning to? Decide to step out of it and put that time into your own work.",
+      "quiz": {
+        "question": "What did Lyell advise Darwin about controversy?",
+        "options": [
+          "Always reply to every critic",
+          "Only argue in print",
+          "Let friends argue for you",
+          "Never get entangled, as it wastes time and temper"
+        ],
+        "answer": 3,
+        "explanation": "Lyell warned that controversy rarely did good and caused a miserable loss of time and temper."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--31",
+      "topic": "personal-development",
+      "tags": [
+        "self-compassion",
+        "criticism",
+        "effort"
+      ],
+      "title": "When criticism stings, remember you did your honest best",
+      "body": "Darwin made mistakes, faced contempt from critics, and was sometimes overpraised in ways that made him uncomfortable. His greatest comfort, he wrote, was to tell himself hundreds of times that he had worked as hard and as well as he could, and that no one can do more.\n\nAs a young man on the voyage he had decided he could not spend his life better than by adding a little to natural science. Critics, he said, could not take that conviction from him. Knowing your purpose and your honest effort gives you somewhere steady to stand.",
+      "quote": "I have worked as hard and as well as I could, and no man can do more than this.",
+      "locator": "My Several Publications ¶19",
+      "apply_it": "Next time you feel stung by criticism, write down honestly what effort you put in and what you'd improve. Then let the rest go.",
+      "quiz": {
+        "question": "What was Darwin's greatest comfort when criticised or mistaken?",
+        "options": [
+          "Reading good reviews",
+          "Counting his book sales",
+          "Reminding himself he had worked as hard and as well as he could",
+          "Talking to his critics"
+        ],
+        "answer": 2,
+        "explanation": "He repeated to himself that he had done his best and that no one can do more."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--32",
+      "topic": "learning",
+      "tags": [
+        "experiments",
+        "curiosity",
+        "rest",
+        "testing"
+      ],
+      "title": "Curiosity on holiday can open a whole new field",
+      "body": "In the summer of 1860 Darwin was resting near Hartfield when he noticed insects trapped on the leaves of sundew plants. He took some home, fed them insects and watched the tentacles move. Then a crucial test occurred to him: he placed leaves in liquids with and without nitrogen. Only the nitrogen-rich ones set the leaves moving.\n\nThat clear result opened a new field and, sixteen years later, a book. A passing curiosity becomes knowledge when you design one simple test that could prove you wrong.",
+      "quote": "Fortunately a crucial test occurred to me, that of placing a large number of leaves in various nitrogenous and non-nitrogenous fluids of equal density;",
+      "locator": "My Several Publications ¶30",
+      "apply_it": "Pick a small question you've wondered about. Design one simple test that would give a clear yes or no, and try it.",
+      "quiz": {
+        "question": "What test convinced Darwin sundews caught insects for a purpose?",
+        "options": [
+          "Counting insects on leaves",
+          "Placing leaves in fluids with and without nitrogen",
+          "Growing them in the dark",
+          "Asking a botanist"
+        ],
+        "answer": 1,
+        "explanation": "Only nitrogen-rich fluids triggered strong movements, showing a fine new field for study."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--33",
+      "topic": "productivity",
+      "tags": [
+        "writing",
+        "drafting",
+        "editing"
+      ],
+      "title": "Draft fast and rough, then fix it slowly",
+      "body": "Darwin found he often put his ideas first in a wrong or awkward form. He used to think out each sentence before writing it. Later he found it saved time to scribble whole pages as fast as he could, in a terrible hand with half the words shortened, and then correct them carefully.\n\nHe noticed the quick sentences were often better than ones he had written slowly. Splitting writing into a fast drafting pass and a slow editing pass stops the inner critic from blocking the flow.",
+      "quote": "but for several years I have found that it saves time to scribble in a vile hand whole pages as quickly as I possibly can, contracting half the words; and then correct deliberately.",
+      "locator": "Written May 1St, 1881 ¶7",
+      "apply_it": "For your next piece of writing, set a timer for fifteen minutes and draft without stopping. Edit afterwards.",
+      "quiz": {
+        "question": "What writing method did Darwin find saved time?",
+        "options": [
+          "Scribbling pages quickly, then correcting carefully",
+          "Polishing each sentence before moving on",
+          "Dictating to a secretary",
+          "Writing only in the mornings"
+        ],
+        "answer": 0,
+        "explanation": "He drafted fast and roughly, then revised deliberately, and the quick sentences were often better."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--34",
+      "topic": "study-smarter",
+      "tags": [
+        "notes",
+        "organisation",
+        "indexing",
+        "research"
+      ],
+      "title": "Build a filing system so every fact you find has a home",
+      "body": "Darwin kept thirty to forty large portfolios on labelled shelves, so he could file a stray reference or note instantly. At the back of books he owned he wrote an index of facts relevant to his work. For borrowed books he wrote a separate summary, and he had a big drawer full of them.\n\nBefore starting a subject he gathered these indexes into one classified index, so a lifetime of material was ready to use. A simple system of labelled folders and short summaries turns scattered reading into a resource you can draw on.",
+      "quote": "I may mention that I keep from thirty to forty large portfolios, in cabinets with labelled shelves, into which I can at once put a detached reference or memorandum.",
+      "locator": "Written May 1St, 1881 ¶8",
+      "apply_it": "Create a few labelled folders, paper or digital, for your main interests. File three notes into them today.",
+      "quiz": {
+        "question": "What did Darwin write at the end of books he owned?",
+        "options": [
+          "His signature and the date",
+          "A review of the book",
+          "Nothing, he kept them clean",
+          "An index of facts relevant to his work"
+        ],
+        "answer": 3,
+        "explanation": "He indexed relevant facts at the back of his own books and wrote summaries of borrowed ones."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--35",
+      "topic": "skills-mastery",
+      "tags": [
+        "writing",
+        "clarity",
+        "thinking"
+      ],
+      "title": "A struggle to express yourself can sharpen your thinking",
+      "body": "Even late in life Darwin found it as hard as ever to express himself clearly and briefly, and it cost him a great deal of time. But he saw an upside. Because he had to think long and hard about every sentence, he often spotted errors in his reasoning and in his own or others' observations.\n\nIf writing feels slow and difficult for you, that effort is not wasted. Wrestling a thought into clear words is one of the best ways to find out whether it holds up.",
+      "quote": "but it has had the compensating advantage of forcing me to think long and intently about every sentence, and thus I have been led to see errors in reasoning and in my own observations or those of others.",
+      "locator": "Written May 1St, 1881 ¶6",
+      "apply_it": "Take one idea you are confident about and write it out in three clear sentences. Note any gap you find.",
+      "quiz": {
+        "question": "What benefit did Darwin find in his difficulty writing clearly?",
+        "options": [
+          "It made his books shorter",
+          "It impressed his readers",
+          "Thinking hard about each sentence helped him catch errors",
+          "There was no benefit"
+        ],
+        "answer": 2,
+        "explanation": "The slow effort forced him to think intently and so revealed mistakes in reasoning and observation."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--36",
+      "topic": "personal-development",
+      "tags": [
+        "arts",
+        "balance",
+        "wellbeing",
+        "habits"
+      ],
+      "title": "Keep poetry and music in your week, or you may lose your taste for them",
+      "body": "Up to about thirty, Darwin loved poetry, pictures and music. By old age he could not bear a line of poetry and had almost lost his taste for art and music. His mind, he said, had become a kind of machine for grinding general laws out of large collections of facts.\n\nHe called this a loss of happiness, and perhaps a harm to the emotional side of our nature. If he lived again, he wrote, he would make a rule to read some poetry and listen to some music at least once a week. Even the busiest specialist needs something that feeds a different part of them.",
+      "quote": "if I had to live my life again, I would have made a rule to read some poetry and listen to some music at least once every week;",
+      "locator": "Written May 1St, 1881 ¶10",
+      "apply_it": "Put one weekly slot in your calendar for a poem, a piece of music or a picture you love. Keep it for a month.",
+      "quiz": {
+        "question": "What rule did Darwin wish he had kept?",
+        "options": [
+          "Write for an hour every morning",
+          "Read some poetry and listen to some music at least once a week",
+          "Take a long walk each day",
+          "Never work on Sundays"
+        ],
+        "answer": 1,
+        "explanation": "He believed weekly poetry and music might have kept those tastes alive, and called their loss a loss of happiness."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--37",
+      "topic": "learning",
+      "tags": [
+        "self-knowledge",
+        "critical-thinking",
+        "reflection"
+      ],
+      "title": "Know whether your mind is quick or slow, and work with it",
+      "body": "Darwin admitted he lacked quickness of wit. On first reading a paper or book he usually admired it, and only after a good deal of reflection did he see its weak points. He could not follow long abstract trains of thought, and could never remember a date or a line of poetry for more than a few days.\n\nYet his hazy but wide memory warned him when he had seen something for or against an idea, and he could usually find where. Knowing how your own mind works lets you build habits around its limits, such as returning to a text later rather than judging on first read.",
+      "quote": "a paper or book, when first read, generally excites my admiration, and it is only after considerable reflection that I perceive the weak points.",
+      "locator": "Written May 1St, 1881 ¶12",
+      "apply_it": "For the next important thing you read, wait a day before forming your verdict. Then list its weakest point.",
+      "quiz": {
+        "question": "How did Darwin usually react to a paper on first reading?",
+        "options": [
+          "He admired it, seeing weak points only after reflection",
+          "He spotted flaws immediately",
+          "He ignored it",
+          "He memorised it"
+        ],
+        "answer": 0,
+        "explanation": "He was a slow critic who saw weaknesses only after considerable reflection."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--38",
+      "topic": "learning",
+      "tags": [
+        "open-mind",
+        "hypotheses",
+        "evidence"
+      ],
+      "title": "Love your ideas, but drop them the moment facts turn against them",
+      "body": "Darwin admitted he could not resist forming a hypothesis on every subject. But he worked to keep his mind free to give up any of them, however much he loved it, as soon as facts went against it. Apart from his coral-reef theory, he could not remember a single first idea that had not later been abandoned or greatly changed.\n\nHaving ideas early is fine. The skill is holding them loosely, so evidence can reshape them.",
+      "quote": "I have steadily endeavoured to keep my mind free so as to give up any hypothesis, however much beloved (and I cannot resist forming one on every subject), as soon as facts are shown to be opposed to it.",
+      "locator": "Written May 1St, 1881 ¶15",
+      "apply_it": "Write down one opinion you hold strongly. Then note what evidence would make you change it.",
+      "quiz": {
+        "question": "How many of Darwin's first hypotheses survived unchanged, by his account?",
+        "options": [
+          "Nearly all of them",
+          "About half",
+          "None were tested",
+          "Only his coral-reef theory"
+        ],
+        "answer": 3,
+        "explanation": "Except for coral reefs, he could not recall a first-formed hypothesis that was not later dropped or greatly modified."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--39",
+      "topic": "learning",
+      "tags": [
+        "rumours",
+        "evidence",
+        "critical-thinking"
+      ],
+      "title": "A claim repeated everywhere can still have nothing behind it",
+      "body": "A local botanist told Darwin that bean seeds had grown on the wrong side of the pod all over the country, and two newspapers said the same. Darwin asked his gardener, who said beans only grow on the wrong side in leap years, but turned out to know nothing about how they grew at all.\n\nIn the end the botanist apologised: none of the farmers who had told him knew what they meant. A belief with no clear meaning had spread across England without evidence. Before passing a claim on, ask what exactly it means and how anyone knows.",
+      "quote": "So that here a belief—if indeed a statement with no definite idea attached to it can be called a belief—had spread over almost the whole of England without any vestige of evidence.",
+      "locator": "Written May 1St, 1881 ¶17",
+      "apply_it": "Next time a striking claim reaches you, ask two questions before sharing it: what exactly does it mean, and how do they know?",
+      "quiz": {
+        "question": "What did Darwin discover about the 'beans on the wrong side' story?",
+        "options": [
+          "It was true only in leap years",
+          "It was a newspaper's deliberate hoax",
+          "No one who spread it knew what it meant, and there was no evidence",
+          "It applied only in Kent"
+        ],
+        "answer": 2,
+        "explanation": "The farmers who started it could not say what they meant, so the claim had spread with no evidence at all."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--40",
+      "topic": "learning",
+      "tags": [
+        "fraud",
+        "intuition",
+        "verification"
+      ],
+      "title": "When a result looks too clean, check the source politely",
+      "body": "A respected Belgian journal published claims that rabbits had been closely inbred for many generations with no ill effects. Darwin felt doubts, partly because there had been no accidents of any kind, and his own breeding experience made that seem very unlikely.\n\nWith much hesitation he wrote to a professor to ask whether the author could be trusted. Soon after, the society found the whole account was a fraud. Experience-based doubt is worth acting on, quietly and courteously, even when the source looks respectable.",
+      "quote": "but I could not avoid feeling doubts—I hardly know why, except that there were no accidents of any kind, and my experience in breeding animals made me think this very improbable.",
+      "locator": "Written May 1St, 1881 ¶20",
+      "apply_it": "Think of a recent result or claim that seemed too perfect. Find one independent source that could confirm or challenge it.",
+      "quiz": {
+        "question": "What made Darwin suspicious of the rabbit-breeding report?",
+        "options": [
+          "The author was foreign",
+          "There were no accidents at all, which his experience said was improbable",
+          "It was in a newspaper",
+          "A friend warned him"
+        ],
+        "answer": 1,
+        "explanation": "The perfect record clashed with his breeding experience, so he checked, and it proved a fraud."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--41",
+      "topic": "skills-mastery",
+      "tags": [
+        "patience",
+        "persistence",
+        "talent",
+        "method"
+      ],
+      "title": "Patience and steady effort can carry moderate abilities a long way",
+      "body": "Summing up, Darwin listed what he thought had made his success: love of science, unbounded patience in long reflection on any subject, industry in observing and collecting facts, and a fair share of invention and common sense. He also counted methodical habits and the leisure that came from not having to earn a living.\n\nHe described his own abilities as moderate and was surprised at his influence. Whatever we think of his modesty, his list holds up. Long-term interest, patience and steady work often matter more than raw brilliance.",
+      "quote": "Of these, the most important have been—the love of science—unbounded patience in long reflecting over any subject—industry in observing and collecting facts—and a fair share of invention as well as of common sense.",
+      "locator": "Written May 1St, 1881 ¶23",
+      "apply_it": "Choose one long-term project. Commit to a small, regular slot for it each week, however slow progress feels.",
+      "quiz": {
+        "question": "Which of these did Darwin list among the main causes of his success?",
+        "options": [
+          "Unbounded patience in long reflection",
+          "Exceptional quickness of wit",
+          "A brilliant memory for dates",
+          "Powerful connections"
+        ],
+        "answer": 0,
+        "explanation": "He named love of science, unbounded patience, industry in collecting facts, and invention with common sense."
+      }
+    },
+    {
+      "id": "autobiography-charles-darwin--42",
+      "topic": "lives-history",
+      "tags": [
+        "parenting",
+        "curiosity",
+        "observation",
+        "family"
+      ],
+      "title": "Curiosity can begin at home, with the people you love",
+      "body": "Darwin's first child was born on 27 December 1839. Darwin at once began making notes on the first signs of each expression the baby showed. He felt sure even then that the finest shades of human expression had a gradual, natural origin.\n\nThose notes grew, over thirty years, into his book on the expression of emotions in people and animals. The most ordinary moments of family life can hold real questions. Paying close, loving attention to them is a fine way to stay curious.",
+      "quote": "My first child was born on December 27th, 1839, and I at once commenced to make notes on the first dawn of the various expressions which he exhibited,",
+      "locator": "My Several Publications ¶29",
+      "apply_it": "This week, notice one small thing about someone at home that makes you curious. Write it down along with your question.",
+      "quiz": {
+        "question": "What did Darwin begin doing when his first child was born?",
+        "options": [
+          "Writing poems about him",
+          "Planning his education",
+          "Taking a break from science",
+          "Making notes on the baby's earliest expressions"
+        ],
+        "answer": 3,
+        "explanation": "He noted the baby's first expressions, work that later fed into his book on the expression of emotions."
+      }
+    }
+  ]
+}

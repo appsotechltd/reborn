@@ -1,0 +1,1009 @@
+{
+  "source": {
+    "id": "early-history-of-the-airplane-wright",
+    "title": "The Early History of the Airplane",
+    "authors": [
+      "Orville Wright",
+      "Wilbur Wright"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/25420",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Orville Wright and Wilbur Wright, The Early History of the Airplane, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1922,
+    "language": "en",
+    "retrieved_at": "2026-10-12"
+  },
+  "cards": [
+    {
+      "id": "early-history-of-the-airplane-wright--01",
+      "topic": "creativity",
+      "tags": [
+        "curiosity",
+        "childhood",
+        "play",
+        "inspiration"
+      ],
+      "title": "A small toy can plant a curiosity that lasts a lifetime",
+      "body": "In 1878 the Wrights' father came home and tossed a little toy into the air. Instead of dropping, it flew across the room to the ceiling. It was a paper and bamboo helicopter driven by twisted rubber bands, and the boys named it the \"bat\". It broke soon, as toys do in small hands, but the memory stayed. Years later that same curiosity grew into the first powered airplane.\n\nBig interests often start with a single moment of wonder. Giving a child, or yourself, something that surprises you is cheap, and you never know which spark will catch.",
+      "quote": "A toy so delicate lasted only a short time in the hands of small boys, but its memory was abiding.",
+      "locator": "Front matter ¶6",
+      "apply_it": "Think of one object or moment from childhood that still fascinates you. What would it look like to explore it again for an hour this week?",
+      "quiz": {
+        "question": "What first sparked the Wright brothers' interest in flight?",
+        "options": [
+          "A toy helicopter their father tossed into the air",
+          "A newspaper story about balloons",
+          "A school science lesson",
+          "Watching a kite contest"
+        ],
+        "answer": 0,
+        "explanation": "Their father brought home a rubber-band helicopter in 1878. The toy broke quickly, but its memory lasted."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--02",
+      "topic": "learning",
+      "tags": [
+        "scaling",
+        "surprise",
+        "experiments",
+        "assumptions"
+      ],
+      "title": "Bigger is not simply more of the same",
+      "body": "As boys, the brothers built their own copies of the toy helicopter, each one larger than the last. To their astonishment, the bigger the \"bat\", the worse it flew. They later learned why: doubling the size of a machine can call for eight times the power. Discouraged, they went back to kites.\n\nThe lesson reaches far beyond toys. A plan that works for a small team, a small budget or a small project can fail when you scale it up, because some costs grow much faster than size. Before you grow something, ask which parts will get harder faster than the rest.",
+      "quote": "We did not know that a machine having only twice the linear dimensions of another would require eight times the power.",
+      "locator": "Front matter ¶7",
+      "apply_it": "Pick one thing you hope to grow, like a side project or a habit. Write down which part would get disproportionately harder at twice the size.",
+      "quiz": {
+        "question": "What did the boys discover when they built bigger toy helicopters?",
+        "options": [
+          "They flew higher",
+          "They flew just the same",
+          "They needed less power",
+          "The bigger ones flew less"
+        ],
+        "answer": 3,
+        "explanation": "Doubling the size of a machine can require about eight times the power, so their larger copies flew worse."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--03",
+      "topic": "creativity",
+      "tags": [
+        "enthusiasm",
+        "reading",
+        "motivation",
+        "role-models"
+      ],
+      "title": "Other people's enthusiasm can turn idle interest into real work",
+      "body": "News of the glider pioneer Otto Lilienthal's death in 1896 drew the brothers back to flight. They read everything they could find. The big technical books showed them how hard the problem was and where others had failed. But it was the passionate writers, Lilienthal and Mouillard, who changed them from curious readers into workers.\n\nFacts tell you what is possible; enthusiasm gives you the push to start. If an interest of yours has been sitting idle, look for people who are openly in love with that subject. Their energy is often catching in a way a textbook is not.",
+      "quote": "Mouillard and Lilienthal, the great missionaries of the flying cause, infected us with their own unquenchable enthusiasm, and transformed idle curiosity into the active zeal of workers.",
+      "locator": "Front matter ¶8",
+      "apply_it": "Find one writer, speaker or maker who is visibly excited about something you are curious about, and spend twenty minutes with their work.",
+      "quiz": {
+        "question": "According to the Wrights, what turned their idle curiosity into active work?",
+        "options": [
+          "Prize money offered for a flight",
+          "The enthusiasm of Mouillard and Lilienthal",
+          "Orders from the government",
+          "A bet between the brothers"
+        ],
+        "answer": 1,
+        "explanation": "The technical books gave them understanding, but the enthusiasm of these pioneers turned curiosity into zeal."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--04",
+      "topic": "entrepreneurship",
+      "tags": [
+        "fundamentals",
+        "cost",
+        "sequencing",
+        "risk"
+      ],
+      "title": "Master the basics before you bolt on expensive extras",
+      "body": "In the 1890s, one camp of inventors tried to fly by mounting costly engines on wings. The Wrights preferred the other camp, which studied gliding. Part of the reason was plain impatience with waste: why put delicate, expensive machinery on wings that nobody yet knew how to steer?\n\nThis is a sound rule for any venture. Spending heavily on scale, polish or power before the core works mostly makes failure more expensive. Get the central thing right first, cheaply, and add the costly parts once you know they will be carried by something that works.",
+      "quote": "partly from impatience at the wasteful extravagance of mounting delicate and costly machinery on wings which no one knew how to manage",
+      "locator": "Front matter ¶9",
+      "apply_it": "Look at a current project. What expensive step are you taking before the core idea is proven? Could you delay it?",
+      "quiz": {
+        "question": "Why did the Wrights favour the gliding school over the power-flight school at first?",
+        "options": [
+          "Gliders were faster",
+          "They could not afford any engine at all",
+          "They disliked the waste of putting costly engines on wings no one could control",
+          "A mentor ordered them to"
+        ],
+        "answer": 2,
+        "explanation": "They thought it was extravagant to mount delicate, costly machinery on wings nobody yet knew how to manage."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--05",
+      "topic": "creativity",
+      "tags": [
+        "first-principles",
+        "innovation",
+        "balance",
+        "contrarian"
+      ],
+      "title": "When everyone copies a flawed idea, try a fundamentally different one",
+      "body": "Almost every flying machine of the day used the same trick for stability: wings angled up in a V so the craft would right itself. In practice it made machines wobble and only worked in calm air. Despite these known limits, nearly everyone kept using it.\n\nThe Wrights decided it was a dead end. Instead of a machine that tried to balance itself, they built one that the pilot would actively balance, and they arched the wings the opposite way to everyone else. When a common approach has known flaws that everyone accepts, it can be worth asking whether the whole principle is wrong.",
+      "quote": "We therefore resolved to try a fundamentally different principle.",
+      "locator": "Front matter ¶12",
+      "apply_it": "Name one 'standard way' of doing something in your work that everyone admits has problems. Sketch one completely different approach.",
+      "quiz": {
+        "question": "What did the Wrights do about the popular self-righting wing design?",
+        "options": [
+          "Improved it slightly",
+          "Abandoned it for a machine the pilot actively balanced",
+          "Copied it exactly",
+          "Patented it"
+        ],
+        "answer": 1,
+        "explanation": "They judged it of no practical value and chose a different principle: a machine balanced by the operator's controls."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--06",
+      "topic": "entrepreneurship",
+      "tags": [
+        "scalability",
+        "design",
+        "systems",
+        "growth"
+      ],
+      "title": "Choose solutions that grow as fast as your problems do",
+      "body": "Earlier glider pilots kept balance by swinging their bodies. The Wrights saw a limit: a person can only shift so much weight so far, while the forces pushing a machine off balance keep growing with wing size and wind speed. So they chose to twist the wings instead, using the wind itself to restore balance. Because that corrective force grew in step with the disturbing force, the method could work on far bigger machines.\n\nAsk the same question of your own fixes. Does this solution still work at ten times the size, or does it rely on one person's limited effort?",
+      "quote": "As the forces obtainable for control would necessarily increase in the same ratio as the disturbing forces, the method seemed capable of expansion to an almost unlimited extent.",
+      "locator": "Front matter ¶13",
+      "apply_it": "Take one process that depends on you personally. Write down what would happen if demand tripled, and one way to make it scale.",
+      "quiz": {
+        "question": "Why did the Wrights reject balancing by shifting the pilot's body?",
+        "options": [
+          "It could not keep up as machines and winds got bigger",
+          "It was too comfortable",
+          "It was patented by someone else",
+          "It made the machine too light"
+        ],
+        "answer": 0,
+        "explanation": "The weight a pilot can move is limited, while disturbing forces rise with wing area and wind speed."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--07",
+      "topic": "mental-strength",
+      "tags": [
+        "failure",
+        "persistence",
+        "public-opinion",
+        "courage"
+      ],
+      "title": "Begin when others have given up",
+      "body": "By 1900 flight looked like a lost cause. Maxim had spent a fortune and quit, a government-funded French machine had failed, and pioneers Lilienthal and Pilcher had died in crashes. The public lumped flight enthusiasts in with people chasing perpetual motion.\n\nThat is exactly when the Wrights started their experiments. Other people's failures did not prove the goal impossible; they showed which roads were blocked. When a field is full of discouragement, the crowd has often left, and careful newcomers can study what went wrong without the noise.",
+      "quote": "The public, discouraged by the failures and tragedies just witnessed, considered flight beyond the reach of man, and classed its adherents with the inventors of perpetual motion.",
+      "locator": "Front matter ¶14",
+      "apply_it": "Think of a goal people told you is unrealistic. List two specific reasons others failed at it, and whether those reasons apply to you.",
+      "quiz": {
+        "question": "How did the public view flight around the time the Wrights began?",
+        "options": [
+          "As nearly solved",
+          "As a promising new industry",
+          "As a military secret",
+          "As beyond the reach of man"
+        ],
+        "answer": 3,
+        "explanation": "After many failures and deaths, people considered flight impossible and its fans no better than perpetual-motion seekers."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--08",
+      "topic": "relationships",
+      "tags": [
+        "mentors",
+        "generosity",
+        "intrinsic-motivation",
+        "community"
+      ],
+      "title": "Genuine love for the work draws generous mentors",
+      "body": "In 1901 the brothers met Octave Chanute, the leading authority on gliding. What won him over was learning that they flew for the love of it, not expecting to earn back the money they spent. He encouraged them, visited their camp for weeks over several years, and later lent them an assistant.\n\nExperienced people get many requests from those who want something. Someone who is clearly in it for the craft is rarer, and often easier to help. If you hope for a mentor, show them the work you are doing anyway.",
+      "quote": "When he learned that we were interested in flying as a sport, and not with any expectation of recovering the money we were expending on it, he gave us much encouragement.",
+      "locator": "Front matter ¶16",
+      "apply_it": "Share something you made purely out of interest with one person you admire, and ask a single specific question about it.",
+      "quiz": {
+        "question": "What led Octave Chanute to encourage the Wrights?",
+        "options": [
+          "They offered to pay him",
+          "They were relatives",
+          "They were flying as a sport, not expecting to profit",
+          "They had already flown with an engine"
+        ],
+        "answer": 2,
+        "explanation": "He gave them much encouragement on learning they were not in it for money."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--09",
+      "topic": "learning",
+      "tags": [
+        "critical-thinking",
+        "evidence",
+        "data",
+        "research"
+      ],
+      "title": "Respect the experts, but test their numbers",
+      "body": "The Wrights began with complete faith in the published tables of air pressure. Then their gliders kept lifting far less than the tables promised. Chanute assured them the build was fine, so they reached an uncomfortable conclusion: the accepted data was wrong. Over two years they doubted one figure after another and finally set it all aside to rely on their own measurements.\n\nThey did not regret the reading, though. The books gave them a broad grasp of the problem and steered them away from hopeless paths. Learn from what is written, then trust what you can check.",
+      "quote": "Having set out with absolute faith in the existing scientific data, we were driven to doubt one thing after another, till finally, after two years of experiment, we cast it all aside, and decided to rely entirely upon our own investigations.",
+      "locator": "Front matter ¶19",
+      "apply_it": "Pick one 'fact' you rely on at work or in health. Find where it came from and whether you can check it yourself.",
+      "quiz": {
+        "question": "What did the Wrights eventually do with the existing scientific data on air pressure?",
+        "options": [
+          "Cast it aside and relied on their own investigations",
+          "Followed it exactly",
+          "Ignored books from the start",
+          "Sold it to other inventors"
+        ],
+        "answer": 0,
+        "explanation": "After two years of puzzling results they cast it aside, though they still valued the general understanding the books gave them."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--10",
+      "topic": "learning",
+      "tags": [
+        "passion",
+        "hobbies",
+        "curiosity",
+        "depth"
+      ],
+      "title": "Work you take on reluctantly can become the work you love",
+      "body": "The brothers started flying as a sport. When the data failed them, they had to do science: careful lab measurements, which was not what they had signed up for. They admit they took it on reluctantly. Yet the deeper they went, the more absorbing it became.\n\nMany of us avoid the dull-looking part of a hobby or job: the theory, the bookkeeping, the practice drills. Sometimes that part is where the real fascination is hiding. The only way to find out is to go in far enough to see the patterns.",
+      "quote": "We had taken up aeronautics merely as a sport. We reluctantly entered upon the scientific side of it. But we soon found the work so fascinating that we were drawn into it deeper and deeper.",
+      "locator": "Front matter ¶22",
+      "apply_it": "Choose one part of a hobby or job you usually skip. Give it thirty focused minutes and notice whether it gets more interesting.",
+      "quiz": {
+        "question": "How did the Wrights feel about the scientific side of aeronautics at first?",
+        "options": [
+          "They always preferred it to flying",
+          "They hired others to do it",
+          "They gave it up quickly",
+          "They started it reluctantly but became fascinated"
+        ],
+        "answer": 3,
+        "explanation": "They entered it reluctantly, then found it so fascinating they were drawn deeper and deeper."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--11",
+      "topic": "skills-mastery",
+      "tags": [
+        "measurement",
+        "systematic",
+        "method",
+        "experiments"
+      ],
+      "title": "Measure systematically, not just once",
+      "body": "Since nobody's numbers could be trusted, the Wrights built their own testing machines, including a small wind tunnel. They first tried many shapes loosely, to get a feel for the subject. Then they got rigorous: nearly fifty standard wing surfaces, each measured at every angle from zero to 45 degrees in steps of two and a half degrees.\n\nThat pattern works for any skill. Explore broadly first to get oriented, then pin things down with a steady, repeatable method. Results gathered the same way each time can be compared, and comparison is where understanding comes from.",
+      "quote": "Measurements were tabulated on nearly 50 of these at all angles from zero to 45 degrees at intervals of 2-1/2 degrees.",
+      "locator": "Front matter ¶22",
+      "apply_it": "Pick one thing you are trying to improve, like sleep, a recipe or a workout. Change one setting at a time and log results the same way for a week.",
+      "quiz": {
+        "question": "How did the Wrights structure their wind tunnel work?",
+        "options": [
+          "Random tests whenever they had time",
+          "Broad preliminary tests, then systematic measurements of about 50 surfaces at set angles",
+          "One measurement per surface",
+          "Only full-size flights"
+        ],
+        "answer": 1,
+        "explanation": "After preliminary trials they measured nearly 50 standard surfaces at regular 2.5-degree steps."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--12",
+      "topic": "learning",
+      "tags": [
+        "verification",
+        "surprise",
+        "testing",
+        "self-doubt"
+      ],
+      "title": "When a result looks impossible, design a simple test",
+      "body": "Their tables showed something odd: a flat square plate got more pressure at 30 degrees than at 45, contradicting every earlier researcher. They nearly doubted their own work. Instead, they built a quick check. A weather vane with two plates set at an angle would, if their numbers were right, refuse to point straight into the wind and settle off to one side. It did exactly that.\n\nWhen your data surprises you, do not simply trust it or throw it out. Ask what else would have to be true if it were right, then test that cheaply.",
+      "quote": "This seemed so anomalous that we were almost ready to doubt our own measurements, when a simple test was suggested.",
+      "locator": "Front matter ¶23",
+      "apply_it": "Next time a number surprises you, write down one other thing that should also be true if it is correct, and check that.",
+      "quiz": {
+        "question": "How did the Wrights check their surprising pressure measurements?",
+        "options": [
+          "They asked Langley",
+          "They repeated the same test again",
+          "They built a weather vane whose behaviour their tables predicted",
+          "They ignored the result"
+        ],
+        "answer": 2,
+        "explanation": "Their tables predicted the vane would turn away from the wind, and it did."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--13",
+      "topic": "relationships",
+      "tags": [
+        "brothers",
+        "debate",
+        "teamwork",
+        "perspective"
+      ],
+      "title": "Arguing well can mean swapping sides",
+      "body": "Designing the propeller baffled them. With the machine moving forward, air rushing back and blades spinning sideways, nothing stood still to measure from. Wilbur and Orville argued about it at length, and they often ended up having convinced each other, each now holding the other's view.\n\nThat is a sign of a healthy partnership. They argued to understand, not to win, so each was willing to be moved. In your own close relationships, a disagreement that changes someone's mind, including yours, is a success, not a defeat.",
+      "quote": "After long arguments we often found ourselves in the ludicrous position of each having been converted to the other's side, with no more agreement than when the discussion began.",
+      "locator": "Front matter ¶26",
+      "apply_it": "In your next disagreement, try stating the other person's view so well they agree with your summary before you argue your own.",
+      "quiz": {
+        "question": "What often happened when the brothers argued about propellers?",
+        "options": [
+          "Wilbur always won",
+          "Each was converted to the other's side",
+          "They stopped speaking for days",
+          "They asked their father to decide"
+        ],
+        "answer": 1,
+        "explanation": "Their debates were so honest that each sometimes ended up holding the other's position."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--14",
+      "topic": "mental-strength",
+      "tags": [
+        "patience",
+        "persistence",
+        "hard-problems",
+        "clarity"
+      ],
+      "title": "Hard problems untangle slowly, then suddenly",
+      "body": "The brothers expected propellers to be easy: they are just wings moving in a spiral. Instead they found marine engineers had only rules of thumb after a century of use. The Wrights studied the problem for months, going over every part of it again and again, before it began to make sense. Once it did, designing the propellers was straightforward, and their first set was about a third more efficient than Maxim's or Langley's.\n\nWhen something stays confusing for a long time, that is not proof you will never get it. Keep turning it over; clarity often arrives all at once.",
+      "quote": "It was not till several months had passed, and every phase of the problem had been thrashed over and over, that the various reactions began to untangle themselves.",
+      "locator": "Front matter ¶27",
+      "apply_it": "Write down a problem that has confused you for weeks. Spend ten minutes listing every part of it separately, without trying to solve it.",
+      "quiz": {
+        "question": "How long did it take for the propeller problem to become clear?",
+        "options": [
+          "Several months of going over it again and again",
+          "A single afternoon",
+          "Ten years",
+          "It never became clear"
+        ],
+        "answer": 0,
+        "explanation": "Only after several months of thrashing it over did the reactions begin to untangle."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--15",
+      "topic": "creativity",
+      "tags": [
+        "design",
+        "context",
+        "fit",
+        "best-practice"
+      ],
+      "title": "There is no single best design, only the best fit",
+      "body": "Once they understood propellers, the Wrights reached a striking conclusion. High efficiency does not come from some special shape, and there is no such thing as a best propeller. One that works brilliantly on one machine may be almost worthless on another. Each should be designed for the machine it will drive.\n\nWe often hunt for the best laptop, the best workout or the best productivity system. The Wrights' point is that quality depends on fit. Start by describing your own conditions clearly, then choose or design for those.",
+      "quote": "The propeller should in every case be designed to meet the particular conditions of the machine to which it is to be applied.",
+      "locator": "Front matter ¶27",
+      "apply_it": "Before your next purchase or plan, write three sentences describing your exact situation, then judge options against those, not against rankings.",
+      "quiz": {
+        "question": "What did the Wrights conclude about propeller design?",
+        "options": [
+          "One shape is always best",
+          "Larger is always better",
+          "Marine designs work perfectly in air",
+          "There is no 'best' propeller; each must suit its machine"
+        ],
+        "answer": 3,
+        "explanation": "A propeller efficient on one machine may be nearly worthless on another, so each must be designed for its conditions."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--16",
+      "topic": "skills-mastery",
+      "tags": [
+        "humility",
+        "progress",
+        "iteration",
+        "honesty"
+      ],
+      "title": "A breakthrough is rarely the end of the problem",
+      "body": "After their 1903 flights, the Wrights believed they had solved balance. In 1904, flying circles at Huffman Prairie, they found they had not. Sometimes in a turn the machine rolled over no matter what the pilot did. On one flight a wing clipped a thorn tree. It took until late September 1905 to fix the causes.\n\nThe brothers were frank about this in their own account. Early success can hide the problems that only appear under new conditions. Treat a first win as a step, and keep watching for what still goes wrong.",
+      "quote": "We had not been flying long in 1904 before we found that the problem of equilibrium had not as yet been entirely solved.",
+      "locator": "Front matter ¶31",
+      "apply_it": "Think of a skill you consider 'done'. Try it in a new or harder situation this week and note what breaks.",
+      "quiz": {
+        "question": "What did the Wrights discover in 1904?",
+        "options": [
+          "Their engine was too powerful",
+          "Flight was impossible in Ohio",
+          "Balance was not yet fully solved, especially in turns",
+          "They no longer needed a pilot"
+        ],
+        "answer": 2,
+        "explanation": "Flying circles revealed the machine could roll over in turns, a problem not fully fixed until 1905."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--17",
+      "topic": "entrepreneurship",
+      "tags": [
+        "money",
+        "risk",
+        "bootstrapping",
+        "commitment"
+      ],
+      "title": "Spend what you can afford until the idea proves itself",
+      "body": "The Wrights paid for all their experiments themselves. At first they spent only what they could afford on recreation, with no thought of getting it back. Only after a successful powered flight did they leave their bicycle business and commit all their time and money to building a practical machine.\n\nThat sequence protects you. Treat a new idea like a hobby budget while it is unproven, so failure does not ruin you. When it clearly works, then go all in. Commitment that follows evidence is very different from a leap made on hope.",
+      "quote": "In the beginning we had no thought of recovering what we were expending, which was not great, and was limited to what we could afford in recreation.",
+      "locator": "Front matter ¶35",
+      "apply_it": "Set a monthly 'hobby budget' for a side idea. Decide in advance what result would justify committing more.",
+      "quiz": {
+        "question": "When did the Wrights give up their other business to focus on flying?",
+        "options": [
+          "After a successful flight with a motor",
+          "Before their first glider",
+          "When a bank lent them money",
+          "They never did"
+        ],
+        "answer": 0,
+        "explanation": "They funded early work from their recreation budget, and only went all in after powered flight succeeded."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--18",
+      "topic": "entrepreneurship",
+      "tags": [
+        "validation",
+        "prototypes",
+        "sequencing",
+        "testing"
+      ],
+      "title": "Prove the cheap version before you build the expensive one",
+      "body": "The Wrights did not attach an engine until a glider had shown that their controls worked and their lab data was right. The 1902 glider made nearly 1,000 flights. Only then did they feel able to predict a powered machine's performance in advance, and they began designing it before leaving camp.\n\nThis is the logic of the small experiment. A glider costs little and fails gently; an engine-driven machine is expensive and dangerous. Whatever you are building, find the cheapest test that would prove your core idea, and pass it first.",
+      "quote": "The flights of the 1902 glider had demonstrated the efficiency of our system of maintaining equilibrium, and also the accuracy of the laboratory work upon which the design of the glider was based.",
+      "locator": "Front matter ¶38",
+      "apply_it": "Name the riskiest assumption in a plan you have. Design a test that checks it for under an hour of work or a small cost.",
+      "quiz": {
+        "question": "What did the 1902 glider prove before the Wrights built a powered machine?",
+        "options": [
+          "That engines were unnecessary",
+          "That Kitty Hawk was too windy",
+          "That propellers were easy",
+          "That their balance system and lab data were accurate"
+        ],
+        "answer": 3,
+        "explanation": "Its flights demonstrated both their control system and the accuracy of their laboratory data."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--19",
+      "topic": "entrepreneurship",
+      "tags": [
+        "self-reliance",
+        "prototyping",
+        "suppliers",
+        "resourcefulness"
+      ],
+      "title": "If no one will build what you need, build it yourself, and test it cheap",
+      "body": "The brothers needed a light 8-horsepower engine. Most manufacturers said they were too busy, and the one offer looked overrated. So they designed their own, though their only engine experience was a workshop motor. Before finishing it properly, they bolted the four cylinders into a cheap temporary frame to check the power. Six weeks after starting, it was running and producing about nine horsepower.\n\nWhen the market cannot give you what you need, making it yourself is an option. A rough early test tells you whether the full effort is worth it.",
+      "quote": "Finally we decided to undertake the building of the motor ourselves.",
+      "locator": "Front matter ¶40",
+      "apply_it": "Is there a tool or resource you have been waiting for someone else to provide? Sketch the simplest version you could make yourself.",
+      "quiz": {
+        "question": "How did the Wrights check their engine design before completing it?",
+        "options": [
+          "They bought a similar engine",
+          "They fitted the cylinders in a cheap temporary frame and tested power",
+          "They asked Chanute to calculate it",
+          "They flew with it immediately"
+        ],
+        "answer": 1,
+        "explanation": "A quick test in a simple frame showed about nine horsepower, so they went ahead with the full build."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--20",
+      "topic": "relationships",
+      "tags": [
+        "credit",
+        "teamwork",
+        "gratitude",
+        "collaboration"
+      ],
+      "title": "Give named credit to the people who made it possible",
+      "body": "In Orville's own account of the first flight, he stops to credit Charlie Taylor, their mechanic. Taylor did all the machine work in the shop, and Orville says the engine was built so quickly largely because of his enthusiastic, efficient help. Elsewhere the brothers name the lifesaving station men who carried the machine and the local helpers at camp.\n\nBreakthroughs are told as stories about a few people, but they rest on many. Naming those who helped, specifically and in public, is both honest and generous, and it builds teams people want to stay on.",
+      "quote": "The ability to do this so quickly was largely due to the enthusiastic and efficient services of Mr. C. E. Taylor, who did all the machine work in our shop for the first as well as the succeeding experimental machines.",
+      "locator": "Front matter ¶40",
+      "apply_it": "Send a short message to someone whose work helped yours this month, naming exactly what they did.",
+      "quiz": {
+        "question": "Who did Orville credit with the speed of building the engine?",
+        "options": [
+          "Octave Chanute",
+          "Their father",
+          "Charlie Taylor, their mechanic",
+          "A motor company"
+        ],
+        "answer": 2,
+        "explanation": "He said the quick build was largely due to C. E. Taylor's enthusiastic and efficient machine work."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--21",
+      "topic": "lives-history",
+      "tags": [
+        "safety",
+        "risk",
+        "design",
+        "foresight"
+      ],
+      "title": "Design for the crash you hope never happens",
+      "body": "Building the first powered machine, the Wrights thought hard about what could go wrong. They put the engine to one side of the pilot so that in a nose-first crash it could not land on him. They added sled-like skids at the front to stop the machine flipping forward on landing. From gliding they knew a crushed wing would soak up the shock of a one-sided landing.\n\nBold projects need sensible protection. Asking how something might fail, and limiting the harm when it does, is what lets you keep experimenting.",
+      "quote": "We decided to place the motor to one side of the man, so that in case of a plunge headfirst, the motor could not fall upon him.",
+      "locator": "Front matter ¶43",
+      "apply_it": "For a risky plan you have, write down the worst likely failure and one cheap step that would soften it.",
+      "quiz": {
+        "question": "Why did the Wrights place the engine to one side of the pilot?",
+        "options": [
+          "For better balance in turns",
+          "So it could not fall on him in a headfirst crash",
+          "To make room for a passenger",
+          "Because the frame was too small"
+        ],
+        "answer": 1,
+        "explanation": "It was a safety choice: in a plunge headfirst, the motor would not land on the operator."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--22",
+      "topic": "learning",
+      "tags": [
+        "expert-advice",
+        "verification",
+        "experiments",
+        "humility"
+      ],
+      "title": "Take a warning seriously enough to test it",
+      "body": "While visiting camp, Chanute told them that machinery usually loses about 20 percent of its power in transmission. The Wrights had allowed only 5 percent. If he was right, chain friction would eat their whole power margin. They were alarmed, but rather than simply accept or dismiss him, they hung a drive chain over a sprocket with bags of sand and measured the loss directly. It came out at 5 percent, as they had first estimated.\n\nWhen someone you respect challenges your numbers, neither argue nor fold. Find a way to measure.",
+      "quote": "By measuring the extra amount of weight needed on one side to lift the weight on the other, we calculated the loss in transmission.",
+      "locator": "Front matter ¶51",
+      "apply_it": "Recall a piece of advice that contradicted your plan. Is there a quick, simple test that would show who was right?",
+      "quiz": {
+        "question": "How did the Wrights respond to Chanute's estimate of 20% power loss?",
+        "options": [
+          "They tested the chain with sandbags and measured the loss",
+          "They ignored it",
+          "They redesigned everything",
+          "They gave up on chains"
+        ],
+        "answer": 0,
+        "explanation": "Their sandbag test showed about 5%, matching their own original estimate."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--23",
+      "topic": "mental-strength",
+      "tags": [
+        "rest",
+        "discouragement",
+        "resilience",
+        "sleep"
+      ],
+      "title": "Discouraged at night? Try again in the morning",
+      "body": "In late 1903, problem followed problem. A cracked propeller shaft had already cost them two weeks. Then the sprockets kept working loose, and after many failed attempts to fix them, the brothers went to bed thoroughly discouraged. In the morning they woke in better spirits and decided to try again, and that day they solved it.\n\nTiredness makes problems look bigger than they are. When you are worn out and stuck, stopping for the night is not quitting. Rest often brings back both the mood and the ideas you need.",
+      "quote": "However, after a night's rest, we got up the next morning in better spirits and resolved to try again.",
+      "locator": "Front matter ¶52",
+      "apply_it": "Next time you feel defeated late in the day, write down where you are stuck and stop. Read the note fresh tomorrow morning.",
+      "quiz": {
+        "question": "What happened after the brothers went to bed discouraged about the loose sprockets?",
+        "options": [
+          "They abandoned the project",
+          "They hired a mechanic",
+          "They sent the parts back to Dayton",
+          "They woke in better spirits and tried again"
+        ],
+        "answer": 3,
+        "explanation": "A night's rest restored their spirits, and the next day's fix worked."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--24",
+      "topic": "creativity",
+      "tags": [
+        "cross-domain",
+        "resourcefulness",
+        "problem-solving",
+        "analogy"
+      ],
+      "title": "Borrow a fix from a field you already know",
+      "body": "The sprockets on the propeller shafts kept unscrewing. The brothers remembered something from their bicycle business: hard tire cement. They had once used it to repair a stopwatch after several watchmakers said it could not be done. If it could hold the hands on a watch, why not sprockets on a shaft? They heated the parts, melted cement into the threads and screwed them together. The sprockets stayed put.\n\nYour past jobs and hobbies are a toolbox. When stuck, ask where you have seen a similar problem before, even in a very different setting.",
+      "quote": "If tire cement was good for fastening the hands on a stop watch, why should it not be good for fastening the sprockets on the propeller shaft of a flying machine?",
+      "locator": "Front matter ¶53",
+      "apply_it": "Take a current problem and ask: where in my past work or hobbies have I solved something that looks like this?",
+      "quiz": {
+        "question": "What solved the problem of the loose sprockets?",
+        "options": [
+          "New nuts from Dayton",
+          "Welding",
+          "Hard tire cement from their bicycle trade",
+          "A tighter chain"
+        ],
+        "answer": 2,
+        "explanation": "They reused a trick from their bicycle business, melting tire cement into the threads."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--25",
+      "topic": "mental-strength",
+      "tags": [
+        "resilience",
+        "flexibility",
+        "stress",
+        "strength"
+      ],
+      "title": "Rigid strength can crack where flexible strength holds",
+      "body": "Their propeller shafts were made of thick steel tubing, many times stronger than needed for a steady load. Yet they cracked. The engine gave sharp jolts from uneven explosions, and the stiff tubes had no give to absorb them. The fix was thinner shafts of solid tool steel that could flex a little.\n\nIt is a useful picture for people too. Being tough and unbending can look strong, but life rarely pushes evenly. Some give, like rest, humour or asking for help, lets you absorb the shocks instead of breaking under them.",
+      "quote": "But the large hollow shafts had no spring in them to absorb the unequal strains.",
+      "locator": "Front matter ¶56",
+      "apply_it": "Where are you holding yourself rigid right now? Name one small way to build in some 'spring', like a break, a boundary or a request for help.",
+      "quiz": {
+        "question": "Why did the strong tubular shafts crack?",
+        "options": [
+          "They had no spring to absorb uneven shocks",
+          "They were too thin",
+          "They were made of wood",
+          "They were never tested"
+        ],
+        "answer": 0,
+        "explanation": "They were strong for even loads, but too stiff to absorb the jolts of an uneven engine."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--26",
+      "topic": "relationships",
+      "tags": [
+        "fairness",
+        "brothers",
+        "sharing",
+        "partnership"
+      ],
+      "title": "Settle the big honours fairly between partners",
+      "body": "When the powered machine was finally ready on 14 December 1903, who would fly first? The brothers simply tossed a coin. Wilbur won, but his attempt stalled after three and a half seconds. Three days later, the next turn belonged to Orville, and he made the first successful flight. Wilbur ran beside the wing to steady it.\n\nA coin toss is a small thing, but it shows how they shared credit and risk as equals. In any partnership, deciding prizes by a fair rule agreed in advance can prevent resentment from creeping in.",
+      "quote": "we tossed up a coin to decide who should have the first trial. Wilbur won.",
+      "locator": "Front matter ¶59",
+      "apply_it": "If you share work with someone, agree on a simple, fair rule for who gets the next visible opportunity.",
+      "quiz": {
+        "question": "How did the brothers decide who would make the first powered attempt?",
+        "options": [
+          "Wilbur as the elder went first",
+          "Their father chose",
+          "Chanute chose",
+          "They tossed a coin"
+        ],
+        "answer": 3,
+        "explanation": "A coin toss gave Wilbur the first try; after it failed, Orville took the next turn."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--27",
+      "topic": "mental-strength",
+      "tags": [
+        "setbacks",
+        "learning-from-failure",
+        "perspective",
+        "optimism"
+      ],
+      "title": "Even a failed attempt can prove something useful",
+      "body": "Wilbur's first try with the powered machine lasted just 3.5 seconds. It lifted, climbed too steeply, stalled and came down hard, breaking a skid. It said nothing about whether the engine was strong enough. But it did show that their launching method was safe and practical, and the brothers wrote that, on the whole, they were much pleased.\n\nAfter a setback, ask what it did prove, not only what it did not. Counting partial lessons keeps you moving and helps you plan the next attempt better.",
+      "quote": "While the test had shown nothing as to whether the power of the motor was sufficient to keep the machine up, since the landing was made many feet below the starting point, the experiment had demonstrated that the method adopted for launching the machine was a safe and practical one.",
+      "locator": "Front matter ¶59",
+      "apply_it": "Think of a recent attempt that did not work. Write one thing it did prove that you did not know before.",
+      "quiz": {
+        "question": "What did Wilbur's failed 3.5-second attempt show?",
+        "options": [
+          "That the engine was too weak",
+          "That the launching method was safe and practical",
+          "That flight was impossible",
+          "Nothing at all"
+        ],
+        "answer": 1,
+        "explanation": "It proved the launch method worked, so they were much pleased overall."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--28",
+      "topic": "lives-history",
+      "tags": [
+        "beginnings",
+        "milestones",
+        "first-flight",
+        "progress"
+      ],
+      "title": "Historic firsts often look small at the time",
+      "body": "On 17 December 1903, in an icy wind, Orville made the first powered flight. It lasted 12 seconds and was wildly up and down. Yet it was the first time a machine carrying a person had lifted itself by its own power, flown forward without losing speed and landed as high as it began. At noon the fourth flight, with Wilbur at the controls, lasted 59 seconds and covered 852 feet, steadying as he gained the feel.\n\nBeginnings rarely look impressive. Twelve shaky seconds were enough to change the world. Do not judge a start by its size.",
+      "quote": "This flight lasted only 12 seconds, but it was nevertheless the first in the history of the world in which a machine carrying a man had raised itself by its own power into the air in full flight",
+      "locator": "Front matter ¶66",
+      "apply_it": "Name one small first step you have been dismissing as too minor to count. Take it this week.",
+      "quiz": {
+        "question": "How long did the first powered flight last?",
+        "options": [
+          "59 seconds",
+          "3 minutes",
+          "12 seconds",
+          "3.5 seconds"
+        ],
+        "answer": 2,
+        "explanation": "Orville's first flight lasted 12 seconds; the day's fourth flight reached 59 seconds."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--29",
+      "topic": "learning",
+      "tags": [
+        "bottlenecks",
+        "focus",
+        "problem-solving",
+        "priorities"
+      ],
+      "title": "Find the one problem that actually blocks you",
+      "body": "Wilbur split the flying problem into three parts: wings that could lift, engines strong enough to drive them, and balance and steering in the air. He pointed out that the first two were largely solved already. A heavy machine had lifted itself as early as 1893, then crashed because no one could control it. Balance was the real barrier, and once it was solved, he said, the rest would be minor.\n\nIn any big goal, many problems compete for attention. Find the one that, if solved, unlocks the rest, and put your best effort there.",
+      "quote": "When this one feature has been worked out the age of flying machines will have arrived, for all other difficulties are of minor importance.",
+      "locator": "Front matter ¶74",
+      "apply_it": "List the obstacles to one of your goals. Circle the single one that would make the others easy or irrelevant.",
+      "quiz": {
+        "question": "Which difficulty did Wilbur see as the main barrier to flight?",
+        "options": [
+          "Building wings",
+          "Balancing and steering in flight",
+          "Building light engines",
+          "Finding funding"
+        ],
+        "answer": 1,
+        "explanation": "Wings and engines were largely solved; control was the feature still blocking the age of flight."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--30",
+      "topic": "skills-mastery",
+      "tags": [
+        "expertise",
+        "observation",
+        "humility",
+        "practice"
+      ],
+      "title": "Real mastery looks effortless until you try it",
+      "body": "Watching a bird, Wilbur wrote, you might think it only flaps its wings. In fact it is constantly managing balance, like a rider on a restless horse. Drop a sheet of paper flat and it darts and flips unpredictably; that is the kind of air a flyer must master. The bird has learned this so thoroughly that its skill becomes invisible.\n\nThe same is true of skilled people: a good speaker, cook or teacher makes it look easy. You only see the depth when you try. That is a reason to respect experts, and to be patient with yourself as a beginner.",
+      "quote": "The bird has learned this art of equilibrium, and learned it so thoroughly that its skill is not apparent to our sight. We only learn to appreciate it when we try to imitate it.",
+      "locator": "Front matter ¶75",
+      "apply_it": "Pick a skill someone near you makes look easy. Try a small piece of it, then ask them one question about how they do it.",
+      "quiz": {
+        "question": "Why, according to Wilbur, is a bird's skill hard to see?",
+        "options": [
+          "It is learned so thoroughly it looks effortless",
+          "Birds fly too high",
+          "Birds rely only on flapping",
+          "Birds have no skill"
+        ],
+        "answer": 0,
+        "explanation": "The bird's mastery of balance is so complete that we only appreciate it when we try to copy it."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--31",
+      "topic": "skills-mastery",
+      "tags": [
+        "learning-by-doing",
+        "practice",
+        "risk",
+        "action"
+      ],
+      "title": "Watching from the fence is safe, but riding teaches",
+      "body": "Wilbur compared learning to fly with taming a difficult horse. You can sit on the fence, watch, then go indoors and plan how to handle its kicks. Or you can climb on and learn each trick by meeting it. Watching is safer, he admitted, but riding produces more good riders.\n\nThe Wrights still managed risk by gliding low over sand. But they knew that a skill lives in the body and is learned through real attempts. Reading about public speaking, swimming or a new language only takes you so far. At some point you have to get on.",
+      "quote": "if you are looking for perfect safety you will do well to sit on a fence and watch the birds; but if you really wish to learn you must mount a machine and become acquainted with its tricks by actual trial.",
+      "locator": "Front matter ¶75",
+      "apply_it": "Choose a skill you have mostly been reading about. Book one real, low-stakes attempt in the next seven days.",
+      "quiz": {
+        "question": "In Wilbur's horse analogy, which approach produces more good riders?",
+        "options": [
+          "Watching from the fence",
+          "Reading books about horses",
+          "Waiting for a calm horse",
+          "Getting on and learning by practice"
+        ],
+        "answer": 3,
+        "explanation": "Watching is safer, but actual riding turns out the larger share of good riders."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--32",
+      "topic": "skills-mastery",
+      "tags": [
+        "practice",
+        "deliberate-practice",
+        "volume",
+        "time-on-task"
+      ],
+      "title": "Count your practice in hours, not in seconds",
+      "body": "Why had flight stayed unsolved so long? The Wrights' answer was simple: nobody had practised enough. They estimated that Lilienthal, the most famous glider pilot, logged only about five hours in the air over five years, in bursts of a few seconds. Nobody would ride a bicycle through busy city streets after so little practice.\n\nSo they looked for ways to practise by the hour, such as flying a glider as a tethered kite in steady sea winds. For any skill, look honestly at your actual time on task, and find setups that multiply it.",
+      "quote": "We figured that Lilienthal in five years of time had spent only about five hours in actual gliding through the air.",
+      "locator": "Front matter ¶77",
+      "apply_it": "Estimate how many actual minutes you spent practising your main skill last week. Find one way to double it.",
+      "quiz": {
+        "question": "What did the Wrights see as the main reason flight remained unsolved?",
+        "options": [
+          "Lack of money",
+          "Bad engines",
+          "No one had obtained adequate practice",
+          "Government restrictions"
+        ],
+        "answer": 2,
+        "explanation": "Lilienthal managed only about five hours of gliding in five years, far too little practice."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--33",
+      "topic": "creativity",
+      "tags": [
+        "simplicity",
+        "subtraction",
+        "design",
+        "removal"
+      ],
+      "title": "Sometimes the improvement is to take something away",
+      "body": "Nearly every glider of the time had a tail, which seemed essential for stability. After much study the Wrights concluded that tails caused more trouble than they solved, so they left them off their early gliders. They also had the pilot lie flat instead of upright, cutting wind resistance to about a fifth. Their later summary noted that tails could safely be eliminated in gliding.\n\nWe tend to fix problems by adding things. It is worth asking which part you could remove instead. Fewer parts can mean fewer ways to fail.",
+      "quote": "After much study we finally concluded that tails were a source of trouble rather than of assistance, and therefore we decided to dispense with them altogether.",
+      "locator": "Front matter ¶77",
+      "apply_it": "Look at one routine, document or product you manage. What one element could you remove to make it simpler and better?",
+      "quiz": {
+        "question": "What did the Wrights decide about tails on their early glider?",
+        "options": [
+          "They were more trouble than help, so they removed them",
+          "They added two tails",
+          "They made them larger",
+          "They copied Lilienthal's tail exactly"
+        ],
+        "answer": 0,
+        "explanation": "They judged tails a source of trouble and dispensed with them."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--34",
+      "topic": "learning",
+      "tags": [
+        "hypotheses",
+        "diagnosis",
+        "experiments",
+        "reasoning"
+      ],
+      "title": "List every possible cause, then build a way to test them",
+      "body": "In 1900 their glider lifted far less than expected. Instead of guessing, the Wrights listed three possible causes: the wings were not curved enough, the cloth let air through, or the standard Lilienthal tables were wrong. Then they designed the next year's machine so the curvature could be changed at will and the covering made airtight, letting them check the first two directly.\n\nThis is good thinking for any puzzle. Write down every plausible explanation, including the uncomfortable one that the experts are wrong, and set things up so you can rule them out one by one.",
+      "quote": "We decided to arrange our machine for the following year so that the depth of the curvature of its surfaces could be varied at will and its covering air-proofed.",
+      "locator": "Front matter ¶79",
+      "apply_it": "For a problem you face, write three possible causes. For each, note one quick way to test it.",
+      "quiz": {
+        "question": "How did the Wrights respond to their glider's weak lift in 1900?",
+        "options": [
+          "They blamed bad luck",
+          "They quit for a year",
+          "They doubled the engine size",
+          "They listed possible causes and built the next machine to test them"
+        ],
+        "answer": 3,
+        "explanation": "They listed three causes and made the 1901 machine adjustable so they could test them."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--35",
+      "topic": "mental-strength",
+      "tags": [
+        "expectations",
+        "success",
+        "humour",
+        "perspective"
+      ],
+      "title": "Judge success by what survived, not by the plan",
+      "body": "The 1900 season fell far short of the plan. They had hoped for hours of practice, and got about two minutes in total. Yet the brothers came home pleased. They had set out with almost revolutionary theories and an untried machine, and those theories had survived contact with reality, as had their own heads.\n\nThat dry humour holds a healthy attitude. Early efforts rarely deliver what you planned. Ask instead: did my core ideas hold up? Did I stay safe? If so, that is real progress worth celebrating.",
+      "quote": "we considered it quite a point to be able to return without having our pet theories completely knocked on the head by the hard logic of experience, and our own brains dashed out in the bargain.",
+      "locator": "Front matter ¶80",
+      "apply_it": "Look at a recent effort that missed its target. Write down which of your core ideas it confirmed.",
+      "quiz": {
+        "question": "Why were the brothers pleased with 1900 despite only about two minutes of gliding?",
+        "options": [
+          "They won a prize",
+          "Their main theories survived and they stayed safe",
+          "They sold the glider",
+          "They had flown with an engine"
+        ],
+        "answer": 1,
+        "explanation": "Their revolutionary theories were not knocked down, and nobody was hurt."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--36",
+      "topic": "skills-mastery",
+      "tags": [
+        "controlled-experiments",
+        "variables",
+        "testing",
+        "method"
+      ],
+      "title": "Change one thing at a time to find the real cause",
+      "body": "In 1901 the glider still lifted only about a third of what calculations promised. One suspect was porous cloth. To check, the Wrights made two small test surfaces of equal size, one air-proofed and one left as it was, and compared them. There was no difference, so cloth was not the problem. That pushed them toward the real culprits: a miscalibrated wind gauge and errors in the accepted tables.\n\nA fair comparison changes only one thing. Whether you are adjusting a diet, a budget or a workflow, testing one change against an otherwise identical baseline tells you what actually matters.",
+      "quote": "we constructed two small experimental surfaces of equal size, one of which was air-proofed and the other left in its natural state; but we could detect no difference in their lifting powers.",
+      "locator": "Front matter ¶84",
+      "apply_it": "Pick one change you are considering. Run it for a week while keeping everything else the same, then compare.",
+      "quiz": {
+        "question": "How did the Wrights test whether porous cloth reduced lift?",
+        "options": [
+          "They asked a weaver",
+          "They flew in heavier rain",
+          "They compared two equal surfaces, one air-proofed and one not",
+          "They guessed"
+        ],
+        "answer": 2,
+        "explanation": "Two otherwise identical surfaces showed no difference, ruling out the cloth."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--37",
+      "topic": "relationships",
+      "tags": [
+        "credit",
+        "fairness",
+        "disagreement",
+        "respect"
+      ],
+      "title": "Give credit to pioneers even when you correct them",
+      "body": "The Wrights' measurements often disagreed with Lilienthal's, and they had spent years finding errors in his tables. Yet Wilbur made a point of saying that Lilienthal was the first to discover an important effect of curved wings, one some critics had doubted existed at all. The Wrights' own experiments confirmed it.\n\nIt is easy to dismiss someone entirely once you find their mistakes. Fairness means separating the errors from the insights, and naming what a person got right. It keeps you honest and earns trust from others.",
+      "quote": "While our measurements differ considerably from those of Lilienthal, Lilienthal was the first to discover this exceedingly important fact",
+      "locator": "Front matter ¶85",
+      "apply_it": "Think of someone whose views you have partly rejected. Write down one thing they got right and, if you can, tell them.",
+      "quiz": {
+        "question": "How did Wilbur treat Lilienthal despite disagreeing with his figures?",
+        "options": [
+          "He ignored him",
+          "He credited him as the first to discover an important fact",
+          "He accused him of fraud",
+          "He copied his work without credit"
+        ],
+        "answer": 1,
+        "explanation": "Despite differences in measurements, Wilbur credited Lilienthal with the discovery and confirmed it."
+      }
+    },
+    {
+      "id": "early-history-of-the-airplane-wright--38",
+      "topic": "mental-strength",
+      "tags": [
+        "patience",
+        "thresholds",
+        "long-term",
+        "persistence"
+      ],
+      "title": "Some goals give no reward until you cross a high bar",
+      "body": "Wilbur explained why flight came later than trains and steamships. A boat or a land vehicle can start small and improve step by step: even a weak engine moves a boat a little. A flying machine is different. Below a certain power and skill, it does not fly at all, so the whole art must be well developed before you see any result.\n\nSome goals work like this, from learning an instrument to building a business. Long stretches with no visible payoff are not proof of failure. They may be the cost of reaching a threshold. Knowing that makes it easier to keep going.",
+      "quote": "The problems of land and water travel were solved in the nineteenth century, because it was possible to begin with small achievements and gradually work up to our present success.",
+      "locator": "Front matter ¶85",
+      "apply_it": "Is one of your goals a threshold goal? Write down a few small signs of progress you can track before the big result arrives.",
+      "quiz": {
+        "question": "Why, according to Wilbur, did flight take longer to solve than land and water travel?",
+        "options": [
+          "Flight gives no result until the art is highly developed",
+          "There was less funding",
+          "Engines did not exist",
+          "No one was interested"
+        ],
+        "answer": 0,
+        "explanation": "Boats and vehicles could improve gradually from small successes; flight needed high development before any flight was possible."
+      }
+    }
+  ]
+}

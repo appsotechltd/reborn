@@ -1,0 +1,375 @@
+{
+  "source": {
+    "id": "sleep-and-mental-health-scott-2021",
+    "title": "Improving sleep quality leads to better mental health: A meta-analysis of randomised controlled trials",
+    "authors": [
+      "Alexander J. Scott",
+      "Thomas L. Webb",
+      "Marrissa Martyn-St James",
+      "Georgina Rowse",
+      "Scott Weich"
+    ],
+    "kind": "study",
+    "url": "https://doi.org/10.1016/j.smrv.2021.101556",
+    "licence": "cc-by-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Scott et al. (2021), Improving sleep quality leads to better mental health: A meta-analysis of randomised controlled trials, Sleep Medicine Reviews, CC BY 4.0",
+    "publisher": "Sleep Medicine Reviews",
+    "year": 2021,
+    "language": "en",
+    "retrieved_at": "2026-10-12",
+    "notes": "Sleep Medicine Reviews 60:101556 (2021), DOI 10.1016/j.smrv.2021.101556. Licence confirmed on the article's own licence statement in the PMC/Europe PMC full text (PMC8651630): 'This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)'. Cards are our own summaries; no quotes."
+  },
+  "cards": [
+    {
+      "id": "sleep-and-mental-health-scott-2021--01",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "mental-health",
+        "meta-analysis"
+      ],
+      "title": "Improving sleep led to better mental health in 65 trials",
+      "body": "Poor sleep and poor mental health often go together, but which drives which? This review gathered 65 randomised controlled trials, with about 8,600 people, in which an intervention successfully improved sleep quality. It then looked at mental health at a later follow-up.\n\nOn average, better sleep led to a medium-sized improvement in overall mental health. Because these were randomised trials and mental health was measured after sleep improved, the authors argue this is strong evidence that sleep plays a causal role in mental health difficulties.",
+      "apply_it": "For the next two weeks, note your sleep quality and mood each morning on a simple 1 to 5 scale and look for a pattern.",
+      "locator": "Abstract; Results: Composite mental health",
+      "quiz": {
+        "question": "What did the review find when sleep quality was improved?",
+        "options": [
+          "Mental health improved by a medium-sized amount on average",
+          "Mental health did not change",
+          "Mental health got worse",
+          "Only physical health changed"
+        ],
+        "answer": 0,
+        "explanation": "Interventions that improved sleep had a medium-sized effect on composite mental health outcomes."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--02",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "insomnia",
+        "depression"
+      ],
+      "title": "Poor sleep is not only a symptom of low mood, it can feed it",
+      "body": "It was long assumed that mental health problems cause poor sleep. The review describes growing evidence that the reverse is also true: poor sleep can contribute to mental health difficulties starting, coming back and lasting.\n\nIn one meta-analysis the authors cite, people with insomnia at the start had about twice the risk of developing depression later. So treating sleep as something that will sort itself out once you feel better may miss part of the picture. Sleep can be a place to start.",
+      "apply_it": "If you have slept badly for weeks, treat it as worth acting on now rather than waiting for your mood to lift first.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "In the cited meta-analysis, what risk did insomnia carry?",
+        "options": [
+          "No extra risk of depression",
+          "Ten times the risk of insomnia",
+          "Lower risk of anxiety",
+          "About twice the risk of later depression"
+        ],
+        "answer": 3,
+        "explanation": "People with insomnia at baseline had a two-fold risk of developing depression at follow-up."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--03",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "depression",
+        "mood"
+      ],
+      "title": "Better sleep was followed by less depression",
+      "body": "Depression was the most studied outcome, measured in 61 of the trial comparisons. When sleep improved, depression scores fell by a medium-sized amount on average. When unusually large results were set aside, the effect was smaller but still clearly there.\n\nThis does not mean sleep is the whole story in depression, and the trials did not replace other treatments. It does suggest that getting help with sleep is a reasonable part of looking after mood, and worth raising with a doctor if low mood and poor sleep come together.",
+      "apply_it": "If you are struggling with low mood, mention your sleep specifically the next time you speak to a doctor or counsellor.",
+      "locator": "Results: Depression",
+      "quiz": {
+        "question": "What effect did improving sleep have on depression in these trials?",
+        "options": [
+          "None",
+          "It made depression worse",
+          "A medium-sized reduction on average",
+          "Only a reduction in men"
+        ],
+        "answer": 2,
+        "explanation": "Interventions that improved sleep had a statistically significant, medium-sized effect on depression."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--04",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "anxiety",
+        "stress"
+      ],
+      "title": "Sleeping better also eased anxiety and stress",
+      "body": "The benefits were not limited to mood. Improving sleep led to small-to-medium reductions in anxiety, based on 35 comparisons, and in stress, based on six.\n\nAnxiety and poor sleep can form a loop: worry keeps you awake, and tiredness makes worries feel bigger. These results suggest that working on the sleep side of that loop can help loosen it. The evidence for stress rests on fewer studies, so it is less certain than for depression and anxiety.",
+      "apply_it": "On a worrying evening, write your worries and one next step for each on paper an hour before bed, then set the list aside.",
+      "locator": "Results: Anxiety; Stress",
+      "quiz": {
+        "question": "Which outcomes, besides depression, improved with better sleep?",
+        "options": [
+          "Only eyesight",
+          "Anxiety and stress",
+          "Nothing else",
+          "Only physical fitness"
+        ],
+        "answer": 1,
+        "explanation": "Improving sleep had significant small-to-medium effects on anxiety and stress."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--05",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "rumination",
+        "overthinking"
+      ],
+      "title": "Better sleep was linked to less repetitive negative thinking",
+      "body": "Rumination means going over the same worries or regrets again and again. In the four trials that measured it, improving sleep led to a medium-sized reduction in rumination.\n\nThe authors suggest one reason sleep may matter so much is its role in managing emotions. Poor sleep may make negative events hit harder, blunt the lift from good ones, and push people towards less helpful ways of coping. That is a proposed mechanism rather than a proven one, and the rumination finding rests on only a few studies.",
+      "apply_it": "Notice whether your worries feel louder after a bad night. On those days, postpone big decisions and be gentle with yourself.",
+      "locator": "Results: Rumination; Future directions",
+      "quiz": {
+        "question": "How do the authors suggest sleep might affect mental health?",
+        "options": [
+          "Through its effect on how we regulate emotions",
+          "By changing eye colour",
+          "Only by reducing appetite",
+          "It has no possible mechanism"
+        ],
+        "answer": 0,
+        "explanation": "They propose that poor sleep may impair emotion regulation, which could link sleep and mental health."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--06",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "dose-response",
+        "evidence"
+      ],
+      "title": "The more sleep improved, the more mental health improved",
+      "body": "One of the strongest pieces of evidence in the review is a dose-response pattern. Trials that produced bigger improvements in sleep quality also produced bigger improvements in mental health.\n\nStudies whose interventions did not manage to improve sleep showed much smaller effects on mental health. Together these findings support the idea that it is the better sleep itself, not just the attention of being in a study, that drives the benefit. In practice, every step towards better sleep may count.",
+      "apply_it": "Choose one sleep habit to improve this week, such as a fixed wake-up time, and keep it every day, including weekends.",
+      "locator": "Results: Moderators",
+      "quiz": {
+        "question": "What dose-response pattern did the review find?",
+        "options": [
+          "Small sleep changes worked best",
+          "There was no link between the two",
+          "More sleep made mental health worse",
+          "Bigger sleep improvements went with bigger mental health improvements"
+        ],
+        "answer": 3,
+        "explanation": "Meta-regression showed greater improvements in sleep led to greater improvements in mental health."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--07",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "prevention",
+        "wellbeing"
+      ],
+      "title": "You do not need a diagnosis to benefit from better sleep",
+      "body": "The benefit of improving sleep was similar for people with diagnosed mental health conditions and for people with milder, non-clinical difficulties. It also held for people recruited from clinics and from the general community.\n\nThe authors suggest that improving sleep early might help limit the risk of milder problems growing more serious, though this needs more research. You do not have to wait until things are bad to take sleep seriously. It is a reasonable everyday investment in your wellbeing.",
+      "apply_it": "Treat a regular wind-down routine as part of your weekly self-care, even in weeks when you feel fine.",
+      "locator": "Results: Moderators; Discussion",
+      "quiz": {
+        "question": "Who benefited from improved sleep in this review?",
+        "options": [
+          "Only people with a clinical diagnosis",
+          "Only people under 25",
+          "Both people with clinical and non-clinical difficulties",
+          "Only people without health problems"
+        ],
+        "answer": 2,
+        "explanation": "There was no difference in benefit between clinical and non-clinical groups; both improved."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--08",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "chronic-illness",
+        "comorbidity"
+      ],
+      "title": "The benefit held even for people living with other health conditions",
+      "body": "About half the trial comparisons involved people with another physical or mental health condition. The mental health benefit of better sleep was similar whether people had such conditions or not.\n\nThis matters because mental and physical health problems often occur together. The authors also note other research where better sleep improved fatigue, chronic pain and quality of life. If you are managing a long-term condition, your sleep is worth discussing with your care team rather than treating it as a side issue.",
+      "apply_it": "If you live with a long-term condition, add sleep to the list of things to discuss at your next appointment.",
+      "locator": "Discussion: Sleep as a transdiagnostic treatment target",
+      "quiz": {
+        "question": "Did other health conditions prevent the benefit of improved sleep?",
+        "options": [
+          "Yes, the benefit disappeared",
+          "No, the benefit held regardless of comorbidities",
+          "Only physical conditions blocked it",
+          "The review did not include such people"
+        ],
+        "answer": 1,
+        "explanation": "Improving sleep had a medium-sized effect on mental health regardless of physical or mental health comorbidities."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--09",
+      "topic": "health",
+      "tags": [
+        "cbt-i",
+        "insomnia",
+        "treatment"
+      ],
+      "title": "For ongoing insomnia, CBT-I has the strongest evidence",
+      "body": "Most of the trials, about three in four, used cognitive behavioural therapy for insomnia, known as CBT-I. It is a structured programme that changes habits and thoughts around sleep, and it is offered in person, in groups and online.\n\nThe authors' practice advice is that professionals aiming to improve depression, anxiety and stress should consider sleep interventions, particularly CBT-I, where the evidence base is strongest. If poor sleep has lasted for weeks, it is worth asking a health professional whether CBT-I is available to you.",
+      "apply_it": "If you have struggled with sleep for more than a month, ask your doctor about CBT-I, including digital or self-help versions.",
+      "locator": "Results: Interventions; Practice points",
+      "quiz": {
+        "question": "Which intervention made up most of the trials and has the strongest evidence?",
+        "options": [
+          "Cognitive behavioural therapy for insomnia (CBT-I)",
+          "Sleeping pills",
+          "Herbal tea",
+          "Napping"
+        ],
+        "answer": 0,
+        "explanation": "Most interventions were multi-component CBT-I, which the authors say has the strongest evidence base."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--10",
+      "topic": "health",
+      "tags": [
+        "self-help",
+        "therapist",
+        "cbt-i"
+      ],
+      "title": "Self-help sleep programmes helped, and therapist-led ones helped more",
+      "body": "Interventions delivered face-to-face by a clinician or therapist had larger effects on mental health than self-administered ones, such as books or apps. But self-help versions still produced a real benefit.\n\nThat gives a sensible order of steps. Self-help tools are a good place to start, especially when waiting lists are long. If they are not enough, ask for support from a trained professional rather than concluding that nothing works for you.",
+      "apply_it": "Try a reputable self-help CBT-I programme for a few weeks, and if your sleep has not improved, ask for clinician support.",
+      "locator": "Results: Moderators",
+      "quiz": {
+        "question": "How did self-administered interventions compare with clinician-delivered ones?",
+        "options": [
+          "They did not work at all",
+          "They worked better",
+          "They made sleep worse",
+          "They helped, but less than clinician-delivered ones"
+        ],
+        "answer": 3,
+        "explanation": "Clinician-delivered interventions had larger effects, but self-administered ones still showed significant benefit."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--11",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "maintenance",
+        "habits"
+      ],
+      "title": "Benefits faded when sleep gains faded, so keep the habits going",
+      "body": "Mental health benefits were larger at follow-ups under six months than at longer ones. A further analysis suggested why: the sleep improvements themselves had shrunk by the later follow-ups.\n\nIn other words, the benefit seemed to last about as long as the better sleep did. The authors stress that sleep interventions need to keep their effects going. For you, that means the habits that got your sleep back on track are worth keeping after you start feeling better, not just during a rough patch.",
+      "apply_it": "Write down the two or three sleep habits that help you most, and keep them on your fridge or phone as a reminder.",
+      "locator": "Results: Post-hoc moderation analysis; Limitations",
+      "quiz": {
+        "question": "Why were the mental health benefits smaller at longer follow-ups?",
+        "options": [
+          "Mental health always worsens with age",
+          "People stopped answering questions",
+          "The improvements in sleep had also become smaller",
+          "Long follow-ups used different questionnaires"
+        ],
+        "answer": 2,
+        "explanation": "Studies with longer follow-ups showed smaller sleep improvements, which may explain the smaller mental health effects."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--12",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "routes",
+        "exercise"
+      ],
+      "title": "Several different routes to better sleep were tested",
+      "body": "Most trials used CBT-I, but others improved sleep through very different means, including exercise-based programmes such as walking, yoga and tai chi, sleep restriction, sleep hygiene, acupuncture, medication and even herbal tea. In this review, what counted was whether sleep actually improved.\n\nA further analysis found that CBT-I programmes with parts aimed at worry did not do better than approaches without such parts. That points to better sleep itself as the active ingredient. Many of these routes were tested in only a handful of trials, though, so CBT-I remains the best supported.",
+      "apply_it": "Pick one route you can try this week, such as a daily walk or a consistent bedtime, and track whether your sleep changes.",
+      "locator": "Results: Interventions; Post-hoc moderation analysis",
+      "quiz": {
+        "question": "What did the review suggest was the active ingredient in improving mental health?",
+        "options": [
+          "The specific brand of intervention",
+          "Better sleep quality itself",
+          "Being in a study",
+          "Taking medication"
+        ],
+        "answer": 1,
+        "explanation": "CBT-I with mental health-related modules was no more effective than other approaches, suggesting improved sleep itself drives the benefit."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--13",
+      "topic": "health",
+      "tags": [
+        "insomnia",
+        "common",
+        "reassurance"
+      ],
+      "title": "Sleep problems are very common, so you are not alone",
+      "body": "If you lie awake at night, you have plenty of company. A review of hundreds of studies cited by the authors found that nearly a third of the general population has symptoms of insomnia, meaning trouble falling or staying asleep. Another study put general sleep disturbance at around a third of people.\n\nKnowing how common this is can take away some of the shame or frustration. Sleep problems are a normal part of being human, and also very treatable.",
+      "apply_it": "If sleep has been hard lately, tell someone you trust about it. You may find they have been through it too.",
+      "locator": "Introduction",
+      "quiz": {
+        "question": "Roughly what share of the general population has symptoms of insomnia?",
+        "options": [
+          "Nearly one third",
+          "About 1 in 100",
+          "Almost everyone",
+          "About 1 in 20"
+        ],
+        "answer": 0,
+        "explanation": "Nearly one-third of the general population experience symptoms of insomnia."
+      },
+      "health": true
+    },
+    {
+      "id": "sleep-and-mental-health-scott-2021--14",
+      "topic": "learning",
+      "tags": [
+        "evidence",
+        "bias",
+        "limitations"
+      ],
+      "title": "Strong overall finding, but many trials had weaknesses",
+      "body": "The authors are open about limits. Many trials were at high or unclear risk of bias. There were signs of publication bias, though the effect stayed significant after adjusting for it. Outcomes beyond depression and anxiety, such as PTSD and psychosis, rested on very few studies, so conclusions there are premature. And most evidence came from treating insomnia rather than other sleep disorders.\n\nThe fair summary is that improving sleep very likely helps mental health, most clearly for depression, anxiety and stress, with more research needed on the details.",
+      "apply_it": "When you share a health finding with others, say how strong the evidence is as well as what it found.",
+      "locator": "Risk of bias; Publication bias; Strengths and limitations",
+      "quiz": {
+        "question": "For which outcomes were conclusions described as premature?",
+        "options": [
+          "Depression and anxiety",
+          "All outcomes",
+          "None of the outcomes",
+          "Outcomes like PTSD and psychosis with very few studies"
+        ],
+        "answer": 3,
+        "explanation": "A dearth of primary studies for PTSD, psychosis, suicidal ideation and similar outcomes made conclusions premature."
+      },
+      "health": true
+    }
+  ]
+}

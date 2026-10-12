@@ -1,0 +1,1051 @@
+{
+  "source": {
+    "id": "foundations-of-science-poincare",
+    "title": "The Foundations of Science: Science and Hypothesis, The Value of Science, Science and Method",
+    "authors": [
+      "Henri Poincaré"
+    ],
+    "translator": "George Bruce Halsted",
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/39713",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Henri Poincaré, The Foundations of Science (trans. George Bruce Halsted), Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1913,
+    "language": "en",
+    "retrieved_at": "2026-10-12"
+  },
+  "cards": [
+    {
+      "id": "foundations-of-science-poincare--01",
+      "topic": "creativity",
+      "tags": [
+        "invention",
+        "choice",
+        "ideas"
+      ],
+      "title": "Creating is mostly choosing which combinations are worth making",
+      "body": "Poincaré noticed that anyone can throw known ideas together. The trouble is that the possible combinations are endless and nearly all of them are dull. What marks a creator is not producing more combinations but recognising, often before trying them, the rare few that are useful.\n\nThis takes pressure off the myth of the endless idea machine. Brainstorming a hundred options is cheap. The real creative work is the judgement that filters them: knowing which ideas connect to something larger and which are dead ends. That judgement grows as you study good work in your field and ask why it was chosen.",
+      "quote": "Invention is discernment, choice.",
+      "locator": "Chapter III. Mathematical Creation ¶13",
+      "apply_it": "Next time you brainstorm, spend as long choosing as generating. Cross out all but three ideas and write one line on why each survived.",
+      "quiz": {
+        "question": "According to Poincaré, what is the heart of invention?",
+        "options": [
+          "Producing as many combinations as possible",
+          "Memorising every known fact",
+          "Discerning and choosing the few useful combinations",
+          "Working only by strict logical rules"
+        ],
+        "answer": 2,
+        "explanation": "He wrote that anyone could make new combinations; to create is to avoid useless ones and pick the rare useful few."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--02",
+      "topic": "creativity",
+      "tags": [
+        "analogy",
+        "cross-pollination",
+        "ideas"
+      ],
+      "title": "The most fertile ideas often join fields that seem far apart",
+      "body": "Among the combinations worth making, Poincaré found the most fruitful often came from bringing together elements from distant domains. He was careful not to overstate it: most pairings of unrelated things lead nowhere. But the rare ones that work are the most valuable of all, because they reveal a kinship nobody suspected.\n\nHis own breakthrough came this way, when he saw that functions he was studying behaved like the transformations of non-Euclidean geometry. For anyone stuck on a problem, it is worth asking where else a similar pattern shows up: in another job, hobby or discipline.",
+      "quote": "Among chosen combinations the most fertile will often be those formed of elements drawn from domains which are far apart.",
+      "locator": "Chapter III. Mathematical Creation ¶15",
+      "apply_it": "Take a problem you are stuck on and ask: who in a completely different field faces something with the same shape? Read for twenty minutes about how they handle it.",
+      "quiz": {
+        "question": "What did Poincaré say about combining ideas from distant fields?",
+        "options": [
+          "Every such pairing is useful",
+          "Most such pairings are sterile, but the rare good ones are the most fruitful",
+          "It should always be avoided",
+          "It only works in physics"
+        ],
+        "answer": 1,
+        "explanation": "He warned that most disparate combinations are sterile, yet certain rare ones are the most fruitful of all."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--03",
+      "topic": "creativity",
+      "tags": [
+        "insight",
+        "rest",
+        "breaks",
+        "travel"
+      ],
+      "title": "Big insights often arrive when you have stopped trying",
+      "body": "Poincaré had been working hard on a set of functions, then left on a geological field trip and forgot about mathematics. As he stepped onto a bus in Coutances, the key idea arrived out of nowhere: the transformations he had used were the same as those of non-Euclidean geometry. He kept chatting with his companion, yet felt certain he was right, and checked it properly once home.\n\nThe pattern of hard effort, a change of scene, then a sudden answer is familiar to many people. A walk, a trip or a night's sleep can let a stuck problem rearrange itself.",
+      "quote": "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it",
+      "locator": "Chapter III. Mathematical Creation ¶21",
+      "apply_it": "After a solid session on a hard problem, deliberately do something unrelated: walk, travel or sleep on it. Keep a notebook handy for what surfaces.",
+      "quiz": {
+        "question": "Where did Poincaré's key idea about Fuchsian functions come to him?",
+        "options": [
+          "At his desk after a long calculation",
+          "In a lecture hall",
+          "While reading another mathematician's paper",
+          "Stepping onto a bus during a geological excursion"
+        ],
+        "answer": 3,
+        "explanation": "It came as he put his foot on the step of an omnibus at Coutances, while his mind was on other things."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--04",
+      "topic": "creativity",
+      "tags": [
+        "unconscious",
+        "incubation",
+        "insight"
+      ],
+      "title": "A sudden flash is the visible end of long hidden work",
+      "body": "Poincaré argued that sudden illumination is a sign of long unconscious work beforehand. Often the first attack on a hard question gets nowhere. You rest, come back, and for half an hour still nothing. Then the decisive idea appears all at once.\n\nIt is tempting to think the rest simply refreshed you. Poincaré thought it more likely that the mind kept working below awareness during the break, and the return to the desk only acted as a trigger. Whatever the mechanism, the practical lesson holds: breaks are part of hard thinking, not a lapse from it, and coming back to the problem matters too.",
+      "quote": "Most striking at first is this appearance of sudden illumination, a manifest sign of long, unconscious prior work.",
+      "locator": "Chapter III. Mathematical Creation ¶26",
+      "apply_it": "Plan hard problems in two sittings with a break between them, rather than one long grind. Note whether the second session goes differently.",
+      "quiz": {
+        "question": "How did Poincaré explain sudden flashes of insight?",
+        "options": [
+          "As pure luck unrelated to effort",
+          "As the effect of strong coffee",
+          "As the result of long unconscious work during rest",
+          "As something only geniuses experience"
+        ],
+        "answer": 2,
+        "explanation": "He saw sudden illumination as a sign of long unconscious prior work, set going by earlier effort."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--05",
+      "topic": "skills-mastery",
+      "tags": [
+        "effort",
+        "persistence",
+        "incubation"
+      ],
+      "title": "Effort that seems wasted is what sets the deeper mind to work",
+      "body": "Poincaré stressed that the unconscious only delivers after a period of conscious effort. His sudden inspirations never came out of the blue. They followed days of deliberate work that seemed completely fruitless, where every path looked like a wrong turn.\n\nThose days were not wasted. In his view they set the unconscious machinery moving, and without them nothing would have come. This is encouraging for anyone learning a hard skill or tackling a stubborn problem. The frustrating sessions where nothing clicks are often the investment that makes the later breakthrough possible.",
+      "quote": "These efforts then have not been as sterile as one thinks; they have set agoing the unconscious machine and without them it would not have moved and would have produced nothing.",
+      "locator": "Chapter III. Mathematical Creation ¶27",
+      "apply_it": "Think of a recent session where you got nowhere. Write down what you tried and what failed, then return to it after a day's break.",
+      "quiz": {
+        "question": "What role did Poincaré give to days of apparently fruitless effort?",
+        "options": [
+          "They set the unconscious to work, making later insight possible",
+          "They were a waste best avoided",
+          "They proved the problem was impossible",
+          "They only mattered for beginners"
+        ],
+        "answer": 0,
+        "explanation": "He said these efforts were not as sterile as they seem: without them the unconscious machine would not have moved."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--06",
+      "topic": "study-smarter",
+      "tags": [
+        "verification",
+        "insight",
+        "checking"
+      ],
+      "title": "Check your brilliant ideas, especially the ones that come in bed",
+      "body": "Inspiration, Poincaré said, needs a second round of conscious work afterwards: shaping the idea, drawing out its consequences and, above all, checking it. A flash of insight usually feels completely certain. Often that feeling is right, but not always. Sometimes it is just as vivid and still wrong, which you only discover when you try to work it out in full.\n\nHe noticed this especially with ideas that came to him half asleep, in the morning or at night. For students and makers alike: capture the late-night idea, but test it in daylight before you build on it.",
+      "quote": "I have especially noticed this fact in regard to ideas coming to me in the morning or evening in bed while in a semi-hypnagogic state.",
+      "locator": "Chapter III. Mathematical Creation ¶28",
+      "apply_it": "Keep a note by your bed for ideas that come as you drift off, and make a habit of testing them the next day before acting on them.",
+      "quiz": {
+        "question": "Why did Poincaré insist on a second stage of conscious work after inspiration?",
+        "options": [
+          "Because inspirations are always wrong",
+          "To make the work look more impressive",
+          "Because rest had made him forget the idea",
+          "To verify the idea, since the feeling of certainty can deceive"
+        ],
+        "answer": 3,
+        "explanation": "He found the vivid certainty of inspiration usually right but sometimes false, so verification was essential."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--07",
+      "topic": "study-smarter",
+      "tags": [
+        "insight",
+        "discipline",
+        "focus"
+      ],
+      "title": "Insight gives a starting point; the detailed work still needs your full attention",
+      "body": "Poincaré observed that the unconscious never hands over a finished long calculation. You cannot ponder a multiplication at night and wake up with the answer. What inspiration gives is a point of departure. The careful working out has to happen afterwards, with discipline, attention and will.\n\nHe described the unconscious as a place of freedom and disorder, which is exactly why it throws up unexpected combinations, and exactly why it cannot follow strict rules. So divide your work: let loose, wandering thought find directions, then sit down and do the precise steps deliberately.",
+      "quote": "All one may hope from these inspirations, fruits of unconscious work, is a point of departure for such calculations.",
+      "locator": "Chapter III. Mathematical Creation ¶45",
+      "apply_it": "For your next project, split time into a loose 'explore' session and a focused 'execute' session, and don't expect either to do the other's job.",
+      "quiz": {
+        "question": "What, according to Poincaré, can we hope to get from unconscious work?",
+        "options": [
+          "Finished, checked calculations",
+          "A point of departure that must be worked out consciously",
+          "Nothing useful at all",
+          "Perfect memory of past results"
+        ],
+        "answer": 1,
+        "explanation": "He said inspiration gives only a starting point; the calculations require discipline, attention and will."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--08",
+      "topic": "creativity",
+      "tags": [
+        "beauty",
+        "elegance",
+        "intuition",
+        "taste"
+      ],
+      "title": "Your sense of elegance is a filter that points you to good ideas",
+      "body": "Why do some unconscious ideas break through to awareness while thousands do not? Poincaré's hypothesis was that it is our feeling for beauty. In mathematics, the ideas that strike us as elegant are those whose parts fit together in harmony, so the mind can take in the whole at once. Those are also the ones that reveal a law, which makes them useful.\n\nSo taste is not decoration. In any craft, the sense that something is clean, balanced and 'right' is a trained guide toward what works. Cultivating that taste, by studying excellent examples, sharpens the filter.",
+      "quote": "The useful combinations are precisely the most beautiful, I mean those best able to charm this special sensibility that all mathematicians know",
+      "locator": "Chapter III. Mathematical Creation ¶35",
+      "apply_it": "Collect three examples of excellent work in your field and write down what makes each one feel elegant. Use that list to judge your next draft.",
+      "quiz": {
+        "question": "In Poincaré's hypothesis, what acts as the 'sieve' that lets good unconscious ideas reach awareness?",
+        "options": [
+          "Our aesthetic feeling for harmony and elegance",
+          "Strict logical rules",
+          "Pure chance",
+          "The opinion of colleagues"
+        ],
+        "answer": 0,
+        "explanation": "He proposed that a special aesthetic sensibility picks out harmonious combinations, which are both beautiful and useful."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--09",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "memory",
+        "structure"
+      ],
+      "title": "Grasp the shape of an argument and the details stop needing memorising",
+      "body": "Poincaré admitted his memory was not good enough to make him a strong chess player. Yet he never lost his way in long mathematical reasoning. The reason, he said, is that a proof is not a pile of steps but steps in a particular order, and the order matters more than the steps.\n\nOnce he felt the overall plan, each piece fell into its place without any effort of memory. This is a useful study principle: before drilling details, get a clear picture of how the whole thing hangs together. A good outline does much of the remembering for you.",
+      "quote": "the order in which these elements are placed is much more important than the elements themselves.",
+      "locator": "Chapter III. Mathematical Creation ¶10",
+      "apply_it": "Before revising a topic, sketch a one-page map of how its main ideas connect. Then recall the details by walking through the map.",
+      "quiz": {
+        "question": "Why did Poincaré not get lost in long proofs despite an ordinary memory?",
+        "options": [
+          "He wrote every step down",
+          "He memorised proofs by repetition",
+          "He sensed the overall order, so each step found its place",
+          "He avoided long proofs"
+        ],
+        "answer": 2,
+        "explanation": "He said an intuition of the order lets one see the reasoning as a whole, so no effort of memory is needed for each element."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--10",
+      "topic": "skills-mastery",
+      "tags": [
+        "strengths",
+        "self-knowledge",
+        "talent"
+      ],
+      "title": "You can excel without being good at the skills people assume go with it",
+      "body": "You might expect a great mathematician to be a flawless calculator and a fine chess player. Poincaré, among the greatest of his age, confessed he could not even add without mistakes, and that he was a poor chess player who would foresee a danger, consider other moves, then make the first move having forgotten the danger.\n\nHis strength lay elsewhere: in sensing the overall order of an argument. It is a reminder not to rule yourself out of a field because you lack one skill people associate with it. Find out which abilities really drive success there, and build on yours.",
+      "quote": "As for myself, I must confess, I am absolutely incapable even of adding without mistakes.",
+      "locator": "Chapter III. Mathematical Creation ¶9",
+      "apply_it": "Name a field you have written off because of one weakness. Ask someone in it which skills actually matter most day to day.",
+      "quiz": {
+        "question": "What did Poincaré confess about his own abilities?",
+        "options": [
+          "He was a superb chess player",
+          "He could not add without mistakes",
+          "He had a photographic memory",
+          "He struggled to understand proofs"
+        ],
+        "answer": 1,
+        "explanation": "He admitted he was incapable of adding without mistakes and would be a poor chess player; his gift was a feel for the order of reasoning."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--11",
+      "topic": "learning",
+      "tags": [
+        "attention",
+        "observation",
+        "priorities"
+      ],
+      "title": "You cannot see everything, so choose what deserves your attention",
+      "body": "Poincaré opened Science and Method with a simple point. If a scientist had infinite time, the only advice needed would be to look and notice well. But there is never time to see everything, so a choice must be made, and it is better not to see something than to see it wrongly.\n\nThe same holds for anyone facing a flood of news, data or advice. Trying to take in everything leads to shallow, muddled impressions. Deciding in advance what is worth close attention, and looking at that properly, gives you fewer but more accurate observations.",
+      "quote": "as there is not time to see everything, and as it is better not to see than to see wrongly, it is necessary for him to make choice.",
+      "locator": "Introduction ¶1",
+      "apply_it": "List the three information sources you check most. Keep the one that teaches you most and look at it more carefully; drop or limit the others for a week.",
+      "quiz": {
+        "question": "Why, according to Poincaré, must the scientist make a choice of what to observe?",
+        "options": [
+          "Because observation is expensive",
+          "Because most facts are false",
+          "Because tradition requires it",
+          "Because there isn't time to see everything, and seeing wrongly is worse than not seeing"
+        ],
+        "answer": 3,
+        "explanation": "With no time to see everything, and since it is better not to see than to see wrongly, choice is necessary."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--12",
+      "topic": "study-smarter",
+      "tags": [
+        "priorities",
+        "transfer",
+        "fundamentals"
+      ],
+      "title": "Learn first the facts that will come up again and again",
+      "body": "Which facts deserve your effort? Poincaré's answer: the ones that may serve many times, because they are likely to recur. A fact that happens once teaches you only itself. A fact that keeps reappearing, alone or as part of something larger, pays you back every time it does.\n\nHe noted we are lucky to live in a world with repeating patterns, like common elements and species. For learners this suggests a priority: master core concepts and recurring patterns before rare special cases. The reusable ideas give the biggest return on study time.",
+      "quote": "the most interesting facts are those which may serve many times; these are the facts which have a chance of coming up again.",
+      "locator": "Chapter I. The Choice of Facts ¶7",
+      "apply_it": "Look over your next exam or project. Mark the three ideas that appear most often, and give them half your study time.",
+      "quiz": {
+        "question": "Which facts did Poincaré call the most interesting?",
+        "options": [
+          "The rarest and strangest",
+          "Those with immediate commercial use",
+          "Those that may serve many times because they recur",
+          "Those nobody else has noticed"
+        ],
+        "answer": 2,
+        "explanation": "He said the most interesting facts are those that may serve many times, having a chance of coming up again."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--13",
+      "topic": "learning",
+      "tags": [
+        "exceptions",
+        "testing",
+        "critical-thinking"
+      ],
+      "title": "Once a rule is settled, the exceptions become the interesting part",
+      "body": "Poincaré described a rhythm in good inquiry. First you study regular facts to find a rule. But once the rule is beyond doubt, more cases that obey it teach you nothing new. Then the exception matters most, and you turn from looking at resemblances to studying differences, starting with the sharpest.\n\nThis is a useful habit outside science too. When something you believe has plenty of support, stop collecting examples that agree. Go looking for the cases that do not fit. They are where you will learn something you did not already know.",
+      "quote": "It is then the exception which becomes important.",
+      "locator": "Chapter I. The Choice of Facts ¶11",
+      "apply_it": "Pick a belief you hold firmly about your work or health. Look for one case where it clearly did not hold and ask what was different.",
+      "quiz": {
+        "question": "After a rule is firmly established, what did Poincaré say becomes important?",
+        "options": [
+          "The exception",
+          "Finding more cases that confirm it",
+          "Forgetting the rule",
+          "Teaching it to others"
+        ],
+        "answer": 0,
+        "explanation": "Facts that conform to an established rule teach nothing new; the exception then becomes important."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--14",
+      "topic": "mindfulness",
+      "tags": [
+        "perspective",
+        "travel",
+        "distance"
+      ],
+      "title": "Going far away helps you understand your own corner of the world",
+      "body": "Poincaré explained why astronomers and geologists matter even to people who never look through a telescope. When we go very far in space or time, our usual rules can be completely overturned. Seeing those big reversals helps us notice the smaller changes that happen close to home.\n\nHe put it in a line that applies well beyond science: we understand our own little corner better for having travelled in distant countries. Time in an unfamiliar place, culture or period of history can reveal assumptions you never knew you held about everyday life.",
+      "quote": "We shall better know this corner for having traveled in distant countries with which we have nothing to do.",
+      "locator": "Chapter I. The Choice of Facts ¶12",
+      "apply_it": "Read about daily life in a very different place or century this week, and note one habit of your own that now looks less obvious.",
+      "quiz": {
+        "question": "Why did Poincaré value facts from far away in space or time?",
+        "options": [
+          "They are more exciting",
+          "They have more practical uses",
+          "They are easier to measure",
+          "Big overturnings of our rules there help us understand small changes near us"
+        ],
+        "answer": 3,
+        "explanation": "Far-off cases can overturn our rules, and that helps us see the little changes in our own corner."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--15",
+      "topic": "learning",
+      "tags": [
+        "patterns",
+        "analogy",
+        "connections"
+      ],
+      "title": "Look for the hidden likeness beneath things that seem different",
+      "body": "Finding resemblances and differences is useful, but Poincaré said the real aim is deeper: recognising likenesses hidden under apparent differences. Separate rules often look unrelated at first. Look closely and they share a form, the same order among their parts, even if their content differs.\n\nOnce you start seeing that shared form, the rules widen until they seem to cover everything. In daily life this is the skill of noticing that a conflict at work has the same shape as one at home, or that two hobbies train the same habit. Spotting the common pattern lets lessons travel.",
+      "quote": "But what we ought to aim at is less the ascertainment of resemblances and differences than the recognition of likenesses hidden under apparent divergences.",
+      "locator": "Chapter I. The Choice of Facts ¶13",
+      "apply_it": "Pick two problems you are facing in different parts of your life. Write down one way they share the same underlying shape.",
+      "quiz": {
+        "question": "What did Poincaré say we should mainly aim at?",
+        "options": [
+          "Listing as many differences as possible",
+          "Recognising likenesses hidden under apparent differences",
+          "Memorising particular rules",
+          "Avoiding comparisons altogether"
+        ],
+        "answer": 1,
+        "explanation": "He wrote that the aim is less noting resemblances and differences than recognising likenesses hidden under divergences."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--16",
+      "topic": "mindfulness",
+      "tags": [
+        "beauty",
+        "wonder",
+        "meaning",
+        "curiosity"
+      ],
+      "title": "Study things because they are beautiful, not only because they are useful",
+      "body": "Poincaré said the scientist does not study nature because it is useful but because he delights in it, and he delights in it because it is beautiful. He did not mean only the beauty that strikes the eye, which he valued too, but a deeper beauty: the harmonious order of the parts, which the mind can grasp.\n\nHe went as far as saying that if nature were not beautiful, life would not be worth living. You need not be a scientist to share this. Learning about the structure of a leaf, a piece of music or the night sky can be its own reward.",
+      "quote": "If nature were not beautiful, it would not be worth knowing, and if nature were not worth knowing, life would not be worth living.",
+      "locator": "Chapter I. The Choice of Facts ¶15",
+      "apply_it": "Pick something ordinary nearby, a plant, a bridge, a song, and spend ten minutes learning how it is put together, just for the pleasure of it.",
+      "quiz": {
+        "question": "Why, according to Poincaré, does the scientist study nature?",
+        "options": [
+          "Because he delights in it, and he delights in it because it is beautiful",
+          "Mainly for its practical uses",
+          "To win prizes",
+          "Because he is told to"
+        ],
+        "answer": 0,
+        "explanation": "He wrote that the scientist studies nature because he delights in it, and delights in it because it is beautiful."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--17",
+      "topic": "creativity",
+      "tags": [
+        "observation",
+        "meaning",
+        "noticing"
+      ],
+      "title": "Many people see the same fact; few see what it means",
+      "body": "Poincaré used Newton's apple, while admitting the story is probably untrue. Plenty of people before Newton saw apples fall, and none drew any conclusion. Facts alone are barren. What matters is a mind that can pick out the facts behind which something is hidden and recognise what is hiding there.\n\nHe called this perceiving the soul of the fact. An isolated striking event grabs everyone's attention, but the real discoverer sees the bond that links it to many others. In your own work, it is worth pausing on everyday events and asking what larger pattern they might belong to.",
+      "quote": "Facts would be sterile were there not minds capable of choosing among them, discerning those behind which something was hidden, and of recognizing what is hiding, minds which under the crude fact perceive the soul of the fact.",
+      "locator": "Chapter II. The Future of Mathematics ¶8",
+      "apply_it": "Take one routine event from this week, a complaint, a delay, a success, and ask: what else is this an example of?",
+      "quiz": {
+        "question": "What point did Poincaré make with Newton's apple?",
+        "options": [
+          "That the story is literally true",
+          "That observation is useless",
+          "That many saw apples fall, but only a mind that sees the hidden bond draws a law from it",
+          "That gravity was obvious to everyone"
+        ],
+        "answer": 2,
+        "explanation": "He said many had seen apples fall without concluding anything; facts need minds that perceive the soul of the fact."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--18",
+      "topic": "skills-mastery",
+      "tags": [
+        "generalisation",
+        "practice",
+        "transfer"
+      ],
+      "title": "After a hard task, extract the method so you gain a new power, not just one result",
+      "body": "Poincaré described the feeling after a long, laborious calculation. If all he got was the answer, he was not repaid for the effort unless it made him able to foresee similar results and guide similar work without groping. But even the groping was not wasted if it showed him how this problem resembled a wider class of others.\n\nThen, he said, it is not a new result he has won, but a new power. After finishing anything difficult, ask what pattern or method you can carry to the next problem. That habit turns one-off wins into lasting skill.",
+      "quote": "Then it is not a new result I have won, it is a new power.",
+      "locator": "Chapter II. The Future of Mathematics ¶12",
+      "apply_it": "After your next difficult task, write two lines: what worked, and where else that approach could apply.",
+      "quiz": {
+        "question": "When did Poincaré feel a laborious calculation had been worth it?",
+        "options": [
+          "Whenever it produced any answer",
+          "When it revealed a generalisation that applied to a wider class of problems",
+          "When it took a long time",
+          "When nobody else could check it"
+        ],
+        "answer": 1,
+        "explanation": "He valued the work when it showed him a profound analogy with other problems, giving a new power rather than one result."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--19",
+      "topic": "study-smarter",
+      "tags": [
+        "memory",
+        "notes",
+        "efficiency",
+        "fundamentals"
+      ],
+      "title": "Record what has been worked out so nobody has to work it out again",
+      "body": "Following the philosopher Mach, Poincaré said a great role of science is economy of thought, the way machines give economy of effort. Teaching children the multiplication table spares them countless future rounds of counting pebbles. Someone once worked out that six times seven is forty-two and noted it down, so no one needs to do it again.\n\nHe judged a fact's importance by how much thinking it saves. For learners, this is a case for memorising true fundamentals and keeping good notes: each solved problem written down clearly is effort your future self will not have to repeat.",
+      "quote": "In teaching children the multiplication table we spare them later innumerable pebble bunchings.",
+      "locator": "Chapter II. The Future of Mathematics ¶10",
+      "apply_it": "Start a short 'solved problems' file. Each time you figure something out the hard way, add a two-line note on how.",
+      "quiz": {
+        "question": "How did Poincaré measure the importance of a fact?",
+        "options": [
+          "By how surprising it is",
+          "By how hard it was to find",
+          "By how old it is",
+          "By how much thought it lets us spare"
+        ],
+        "answer": 3,
+        "explanation": "He wrote that a fact's importance is measured by its yield: the amount of thought it permits us to spare."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--20",
+      "topic": "learning",
+      "tags": [
+        "language",
+        "naming",
+        "concepts"
+      ],
+      "title": "A well-chosen word can do a surprising amount of thinking for you",
+      "body": "Poincaré was struck by how much a good word can save. He called mathematics the art of giving the same name to different things that share a form. When the right name is found, proofs made for one thing apply at once to many others, and the exceptions that cluttered the old rules fall away.\n\nPhysicists did the same with the word 'energy'. The lesson travels well. Naming a pattern, in your work, your habits or a relationship, makes it easier to spot, discuss and handle the next time it appears.",
+      "quote": "It is hard to believe how much a well-chosen word can economize thought, as Mach says.",
+      "locator": "Chapter II. The Future of Mathematics ¶21",
+      "apply_it": "Think of a pattern that keeps tripping you up. Give it a short, memorable name and use it next time you notice it.",
+      "quiz": {
+        "question": "What did Poincaré call mathematics in this passage?",
+        "options": [
+          "The art of exact calculation",
+          "The art of proving the obvious",
+          "The art of giving the same name to different things",
+          "The science of large numbers"
+        ],
+        "answer": 2,
+        "explanation": "He said mathematics is the art of giving the same name to different things that differ in matter but are alike in form."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--21",
+      "topic": "skills-mastery",
+      "tags": [
+        "repeatability",
+        "understanding",
+        "foresight"
+      ],
+      "title": "A success you can't explain or repeat is worth less than it looks",
+      "body": "Sometimes, Poincaré said, mathematicians reach a workable formula by trial and error. The engineer asks what more anyone could want. Yet the mathematician is not satisfied: he wants to have been able to foresee that it would work. If he knew how to foresee it once, he could foresee it again.\n\nThis is the difference between luck and skill. When something goes well, in a project, a talk or a workout, ask why. Understanding the reasons is what lets you do it again on purpose, and adapt it when conditions change.",
+      "quote": "We have succeeded; that is a small matter in our eyes if we can not validly expect to do so again.",
+      "locator": "Chapter II. The Future of Mathematics ¶35",
+      "apply_it": "Think of a recent success. Write down the two or three reasons it worked, so you could repeat it deliberately.",
+      "quiz": {
+        "question": "Why was the mathematician unsatisfied with a formula found by groping?",
+        "options": [
+          "Because he could not be sure of succeeding again without foreseeing why it worked",
+          "Because it gave wrong numbers",
+          "Because the engineer disliked it",
+          "Because it was too short"
+        ],
+        "answer": 0,
+        "explanation": "He wanted to foresee the result, since success is a small matter if we cannot validly expect it again."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--22",
+      "topic": "learning",
+      "tags": [
+        "specialisation",
+        "breadth",
+        "curiosity"
+      ],
+      "title": "Specialise too narrowly and you cut off the unexpected connections that drive progress",
+      "body": "As a field grows, Poincaré said, it becomes harder to grasp as a whole, so people cut it into pieces and settle for one: they specialise. He saw real danger in going too far. Progress comes through unexpected unions between different parts, and over-specialising forbids those meetings.\n\nHis remedy was contact: gatherings that open views onto neighbouring fields and push people to range a little beyond their own village. Depth matters, but a habit of looking over the fence at nearby disciplines keeps your thinking fresh.",
+      "quote": "To specialize too much would be to forbid these drawings together.",
+      "locator": "Chapter II. The Future of Mathematics ¶36",
+      "apply_it": "This month, attend one talk, read one article or have one conversation in a field next to yours, and note one idea you could borrow.",
+      "quiz": {
+        "question": "Why did Poincaré warn against too much specialisation?",
+        "options": [
+          "It makes people lazy",
+          "Specialists earn less",
+          "It makes teaching harder",
+          "Progress comes from unexpected unions between fields, which narrow specialising prevents"
+        ],
+        "answer": 3,
+        "explanation": "He said science progresses by unexpected union between its parts, and over-specialising would forbid these drawings together."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--23",
+      "topic": "learning",
+      "tags": [
+        "chaos",
+        "prediction",
+        "uncertainty"
+      ],
+      "title": "Tiny differences at the start can produce huge differences later",
+      "body": "Poincaré gave an early, clear description of what we now call sensitivity to initial conditions. A cone balanced on its tip will fall, but a breath of air decides which way. Weather forecasting is hard because a tenth of a degree here or there decides where a storm strikes. When slight differences in the starting state lead to enormous differences in the outcome, prediction becomes impossible and we call the result chance.\n\nIt is a useful humility for planning. Some systems, like markets, careers or weather, cannot be forecast in detail, so it pays to build in flexibility rather than rely on one prediction.",
+      "quote": "it may happen that slight differences in the initial conditions produce very great differences in the final phenomena; a slight error in the former would make an enormous error in the latter.",
+      "locator": "II ¶3",
+      "apply_it": "Pick one plan that depends on a precise forecast. Add a simple 'if this turns out differently' option to it.",
+      "quiz": {
+        "question": "Why, according to Poincaré, do some events seem due to chance even if they follow laws?",
+        "options": [
+          "Because the laws change randomly",
+          "Because a very slight, unobserved cause can produce a very large effect",
+          "Because scientists are careless",
+          "Because nature has no laws"
+        ],
+        "answer": 1,
+        "explanation": "He explained that slight differences in initial conditions can produce very great differences in outcome, making prediction impossible."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--24",
+      "topic": "psychology",
+      "tags": [
+        "coincidence",
+        "chance",
+        "meaning"
+      ],
+      "title": "Coincidences are what happens when two separate worlds briefly meet",
+      "body": "Poincaré offered a striking example. A man walks to work by a route anyone who knew his business could explain. A tiler works on a roof as his employer expects. The two belong to worlds that have nothing to do with each other. Then a tile falls and kills the man, and we call it chance.\n\nBecause we cannot take in the whole universe, he said, we cut it into slices, and now and then two slices collide. Seeing coincidence this way can ease the urge to hunt for hidden meaning or blame in every chance event, while still respecting how small a shift would have changed it.",
+      "quote": "But the passer-by scarcely thinks of the tiler, nor the tiler of him; they seem to belong to two worlds completely foreign to one another.",
+      "locator": "V ¶2",
+      "apply_it": "Next time a coincidence feels like a sign, try describing the two separate chains of events that happened to cross.",
+      "quiz": {
+        "question": "In Poincaré's example of the tiler and the passer-by, why do we call the accident chance?",
+        "options": [
+          "Because two chains of events that seemed unrelated unexpectedly met",
+          "Because neither man existed",
+          "Because the tiler intended it",
+          "Because it could have been predicted easily"
+        ],
+        "answer": 0,
+        "explanation": "We divide the world into slices, and when two seemingly foreign slices interact, the result seems due to chance."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--25",
+      "topic": "psychology",
+      "tags": [
+        "bias",
+        "chance",
+        "patterns"
+      ],
+      "title": "A round number feels meaningful, but it is no less likely than any other",
+      "body": "Poincaré pointed out a quirk in how we judge luck. If chance picks one number out of ten thousand and it comes up 10,000, we suspect a cause. If it comes up any other number, we shrug, though each had exactly the same one-in-ten-thousand odds. The round number simply strikes us more.\n\nHe added that this instinct is not always foolish: a simple result is more likely to have a simple cause. But it is worth knowing that 'striking' and 'improbable' are not the same thing. Before reading meaning into a neat coincidence, ask whether a dull outcome would have been just as unlikely.",
+      "quote": "But there is only one chance in 10,000 for the occurrence of any other one number; and yet this result will not astonish us, nor will it be hard for us to attribute it to chance; and that simply because it will be less striking.",
+      "locator": "X ¶3",
+      "apply_it": "When a 'too neat to be chance' event happens, ask how many other outcomes would have felt just as remarkable.",
+      "quiz": {
+        "question": "Why does a round number from a random draw surprise us more than another number?",
+        "options": [
+          "It is genuinely less likely",
+          "Round numbers are drawn more often",
+          "It is more striking, though its odds are the same",
+          "Because of a rule of arithmetic"
+        ],
+        "answer": 2,
+        "explanation": "Every single number has the same odds; the round one just strikes us more."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--26",
+      "topic": "psychology",
+      "tags": [
+        "groups",
+        "conformity",
+        "social-influence"
+      ],
+      "title": "People in groups don't decide independently; they sway each other",
+      "body": "Poincaré noted that calculations which treat people as independent coin-flips go wrong for things like assemblies and juries. The reason is simple: when people are brought together, they no longer decide at random and independently of one another. They influence one another, and one thing persists through all the pushing and pulling, a sheep-like habit of following.\n\nThis is worth remembering in meetings, online crowds and committees. Agreement in a group may reflect influence more than many independent judgements. Asking people to form their views separately before discussion gives a truer picture.",
+      "quote": "When men are brought together they no longer decide at random and independently one of another; they influence one another.",
+      "locator": "IX ¶6",
+      "apply_it": "Before your next group decision, ask everyone to write down their view privately first, then share.",
+      "quiz": {
+        "question": "Why did Poincaré think the laws of chance fail for groups like assemblies or juries?",
+        "options": [
+          "Because people are too few",
+          "Because people in groups influence one another and keep a herd habit",
+          "Because juries are always fair",
+          "Because votes are secret"
+        ],
+        "answer": 1,
+        "explanation": "People brought together influence one another, and their flock-of-sheep habit is an invariant that defeats the laws of chance."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--27",
+      "topic": "learning",
+      "tags": [
+        "skepticism",
+        "critical-thinking",
+        "belief"
+      ],
+      "title": "Doubting everything and believing everything are both ways to avoid thinking",
+      "body": "In his introduction to Science and Hypothesis, Poincaré described two easy reactions to science. Some people treat it as infallible. Others, on learning how much it depends on hypotheses, decide it is all flimsy and could be blown over by a breath. He called this second attitude just as superficial as the first.\n\nBoth are shortcuts. Blanket trust and blanket doubt spare us the work of examining which claims are well supported and which are not. The harder, better path is to look at each idea and ask what it rests on.",
+      "quote": "To doubt everything and to believe everything are two equally convenient solutions; each saves us from thinking.",
+      "locator": "Introduction ¶4",
+      "apply_it": "Take one claim you've recently either swallowed whole or dismissed outright. Spend five minutes checking what evidence it actually rests on.",
+      "quiz": {
+        "question": "What did Poincaré say about doubting everything and believing everything?",
+        "options": [
+          "Doubt is always wiser",
+          "Belief is always safer",
+          "Both are signs of a great scientist",
+          "Both are convenient solutions that save us from thinking"
+        ],
+        "answer": 3,
+        "explanation": "He called them two equally convenient solutions, each of which saves us from thinking."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--28",
+      "topic": "learning",
+      "tags": [
+        "logic",
+        "intuition",
+        "invention"
+      ],
+      "title": "Logic proves things; intuition is how you find them",
+      "body": "Poincaré saw two necessary roles in thinking. Logic alone gives certainty: it checks that each step is sound. But logic offers a thousand safe paths and does not say which one leads where you want to go. For that you need a faculty that sees the goal from afar, and that is intuition.\n\nHe concluded that each is indispensable: logic is the instrument of demonstration, intuition the instrument of invention. In practice, let hunches suggest directions, then test them with careful reasoning. Neither alone is enough.",
+      "quote": "Logic, which alone can give certainty, is the instrument of demonstration; intuition is the instrument of invention.",
+      "locator": "V ¶8",
+      "apply_it": "On your next decision, write your gut answer first, then check it step by step. Note where the two agree and where they don't.",
+      "quiz": {
+        "question": "How did Poincaré divide the roles of logic and intuition?",
+        "options": [
+          "Logic invents, intuition proves",
+          "Only logic matters in mathematics",
+          "Logic is the instrument of demonstration, intuition of invention",
+          "Only intuition matters for creators"
+        ],
+        "answer": 2,
+        "explanation": "He wrote that logic is the instrument of demonstration and intuition the instrument of invention; each is indispensable."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--29",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "chess",
+        "big-picture"
+      ],
+      "title": "Knowing the rules is not the same as understanding the game",
+      "body": "Poincaré compared reading mathematics to watching chess. Knowing how the pieces move lets you check that each move is legal, but that tells you little. Understanding the game means knowing why the player chose this move over others that were also allowed, and seeing how the moves form an organised whole.\n\nStudents often stop at the first level: they check each step of a worked example and feel they understand. The deeper question is why the steps were chosen. Asking it is what lets you solve a new problem rather than follow an old one.",
+      "quote": "To understand the game is wholly another matter; it is to know why the player moves this piece rather than that other which he could have moved without breaking the rules of the game.",
+      "locator": "V ¶4",
+      "apply_it": "For the next worked example you study, cover the solution and, at each step, ask why this step and not another.",
+      "quiz": {
+        "question": "In Poincaré's chess comparison, what does real understanding require?",
+        "options": [
+          "Knowing why the player chose one move over other legal moves",
+          "Knowing how each piece moves",
+          "Memorising famous games",
+          "Playing very fast"
+        ],
+        "answer": 0,
+        "explanation": "Knowing the rules only lets you confirm moves are legal; understanding is grasping why each move was chosen."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--30",
+      "topic": "psychology",
+      "tags": [
+        "differences",
+        "thinking-styles",
+        "teaching"
+      ],
+      "title": "People think in different ways, and that variety is something to welcome",
+      "body": "Poincaré saw two kinds of mathematical minds: the logicians, who advance step by step like a careful siege, and the intuitive thinkers, who make quick, bold conquests by seeing pictures. His teachers Bertrand and Hermite had the same schooling yet differed in everything, down to their gestures.\n\nAsked whether teachers should push students to change their kind of mind, he said no. It is useless and not even desirable: both sorts have done great things. The same applies at work and at home. Rather than forcing everyone to think your way, use the strengths of each style.",
+      "quote": "We must therefore resign ourselves to the diversity of minds, or better we must rejoice in it.",
+      "locator": "Chapter II. Mathematical Definitions and Teaching ¶14",
+      "apply_it": "Notice someone close to you who approaches problems very differently from you. Ask them to talk you through how they'd tackle your current problem.",
+      "quiz": {
+        "question": "What did Poincaré conclude about the different types of mathematical minds?",
+        "options": [
+          "Teachers should convert intuitive students into logicians",
+          "Only logicians make real progress",
+          "Intuitive thinkers should avoid mathematics",
+          "We should accept, or better rejoice in, the diversity of minds"
+        ],
+        "answer": 3,
+        "explanation": "He said it is useless and undesirable to change students' kinds of mind; we should rejoice in the diversity."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--31",
+      "topic": "study-smarter",
+      "tags": [
+        "understanding",
+        "forgetting",
+        "connections"
+      ],
+      "title": "Ideas you can't connect to what came before quickly fade",
+      "body": "Why do so many people struggle with mathematics? Poincaré thought most learners want more than to check that each step is valid. They want to know why the steps link up in this order. If they don't get that, the proofs they see are tied by too slender a thread to what comes before and after, so they leave no trace and are soon forgotten.\n\nLater topics lean on the forgotten ones, and the learner gets lost. The fix is to keep asking how each new piece connects to the last, and not to move on until that thread is clear.",
+      "quote": "a moment bright, they quickly vanish in night eternal.",
+      "locator": "Chapter II. Mathematical Definitions and Teaching ¶8",
+      "apply_it": "At the end of each study session, write one sentence linking today's topic to something you learned earlier.",
+      "quiz": {
+        "question": "Why, in Poincaré's view, do many learners forget the proofs they are shown?",
+        "options": [
+          "They are not clever enough",
+          "The proofs are connected by too slender a thread to what precedes and follows",
+          "They take too many notes",
+          "The proofs are too short"
+        ],
+        "answer": 1,
+        "explanation": "Without seeing why steps link together, the proofs are tied by too slender a thread and soon vanish from memory."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--32",
+      "topic": "study-smarter",
+      "tags": [
+        "illusion-of-understanding",
+        "active-learning",
+        "diagrams"
+      ],
+      "title": "Watching a diagram can make you feel you understand when you have only seen",
+      "body": "Poincaré described a kind of learner who wants a concrete image for every idea and asks what each concept is for. That is not a bad instinct, but it has a trap. Such learners often don't follow the reasoning at all; they look at the figures, feel they have understood, and have only seen.\n\nThis is the familiar illusion of understanding: a clear picture or video makes a topic feel easy. The test is whether you can explain or use it without the picture in front of you.",
+      "quote": "they think they have understood and they have only seen.",
+      "locator": "Chapter II. Mathematical Definitions and Teaching ¶10",
+      "apply_it": "After watching an explanation or studying a diagram, close it and explain the idea aloud in your own words. Note where you stall.",
+      "quiz": {
+        "question": "What trap did Poincaré see for learners who rely on figures?",
+        "options": [
+          "They may think they have understood when they have only seen",
+          "They cannot draw well",
+          "They forget faster than others",
+          "They refuse to use images"
+        ],
+        "answer": 0,
+        "explanation": "He wrote that such learners look at the figures rather than the reasoning, and think they have understood when they have only seen."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--33",
+      "topic": "learning",
+      "tags": [
+        "teaching",
+        "examples",
+        "definitions"
+      ],
+      "title": "Lead with examples before giving the general definition",
+      "body": "Poincaré argued that a definition stated cold, however logically perfect, often baffles learners. Many minds rebel at a rule that looks arbitrary. They want to know why it is built this way, what need it answers, and what familiar thing it resembles.\n\nHis better way: wherever possible, let the justification come before the statement and prepare for it, leading up to the general rule by studying particular examples. Whether you're teaching a child, training a colleague or learning alone, start with concrete cases and let the general idea emerge from them.",
+      "quote": "one should be led on to the general statement by the study of some particular examples.",
+      "locator": "Chapter II. Mathematical Definitions and Teaching ¶54",
+      "apply_it": "Next time you explain something, give two concrete examples first, then state the general rule.",
+      "quiz": {
+        "question": "What did Poincaré recommend about teaching definitions?",
+        "options": [
+          "State the definition first and never explain it",
+          "Avoid definitions entirely",
+          "Let examples and justification come first and lead to the general statement",
+          "Only use the most abstract definitions"
+        ],
+        "answer": 2,
+        "explanation": "He said that wherever possible justification should precede the statement, leading to it through particular examples."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--34",
+      "topic": "learning",
+      "tags": [
+        "facts",
+        "theory",
+        "organisation"
+      ],
+      "title": "A pile of facts is not knowledge until it is put in order",
+      "body": "Poincaré held that experiment is the only source of new truth, yet observation alone is not enough. Facts have to be used, and to use them we must generalise and set them in order. His image is memorable: science is built of facts as a house is built of stones, but a heap of stones is not a house.\n\nThe same goes for notes, research or life experience. Collecting more information does not by itself make you wiser. Knowledge comes from arranging what you know so that it explains things and helps you predict what will happen next.",
+      "quote": "Science is built up with facts, as a house is with stones. But a collection of facts is no more a science than a heap of stones is a house.",
+      "locator": "Chapter IX. Hypotheses in Physics ¶7",
+      "apply_it": "Gather your scattered notes on one subject and sort them under three or four headings. Write one sentence saying what they add up to.",
+      "quiz": {
+        "question": "What was Poincaré's point about stones and a house?",
+        "options": [
+          "Facts are useless",
+          "A collection of facts is no more a science than a heap of stones is a house",
+          "Building is like experimenting",
+          "Houses should be built from theory"
+        ],
+        "answer": 1,
+        "explanation": "Facts are the material of science, but they must be ordered and generalised to become knowledge."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--35",
+      "topic": "psychology",
+      "tags": [
+        "assumptions",
+        "bias",
+        "self-awareness"
+      ],
+      "title": "Your unconscious assumptions are more dangerous than the ones you know about",
+      "body": "People often say we should look at things with no preconceived ideas. Poincaré called that impossible. Everyone carries a picture of the world, and even our language is made of preconceptions. The dangerous ones are the unconscious ones, because we cannot question what we cannot see.\n\nHis remedy is to bring several conscious viewpoints into play. They will clash with one another and force you to see the matter from different sides. As he put it, someone who can choose his master is no longer a slave.",
+      "quote": "Only these are unconscious preconceived ideas, a thousand times more dangerous than the others.",
+      "locator": "Chapter IX. Hypotheses in Physics ¶13",
+      "apply_it": "Before a big decision, write down three assumptions you are making. Then add one opposing viewpoint for each.",
+      "quiz": {
+        "question": "Why did Poincaré think unconscious preconceptions are especially dangerous?",
+        "options": [
+          "Because they are always false",
+          "Because they come from other people",
+          "Because they make experiments too slow",
+          "Because we cannot examine or abandon what we don't know we hold"
+        ],
+        "answer": 3,
+        "explanation": "We make them without knowing it, so we are powerless to question them; conscious viewpoints can balance each other."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--36",
+      "topic": "skills-mastery",
+      "tags": [
+        "failure",
+        "mindset",
+        "experiments"
+      ],
+      "title": "When your hypothesis fails, be glad: something new is waiting",
+      "body": "Every guess should be tested as soon and as often as possible, Poincaré said, and dropped without reserve if it fails. Scientists usually do this, but grudgingly. He thought the bad mood was misplaced. A failed hypothesis, carefully made, means something unexpected is going on, and so something new is about to be found.\n\nIt may even serve better than a correct one, because it prompted the decisive test. Treat a plan that didn't work the same way: the surprise is information. Ask what it reveals that you couldn't have learned had you been right.",
+      "quote": "The physicist who has just renounced one of his hypotheses ought, on the contrary, to be full of joy; for he has found an unexpected opportunity for discovery.",
+      "locator": "Chapter IX. Hypotheses in Physics ¶44",
+      "apply_it": "Recall a plan that failed recently. Write down one thing the failure taught you that success would have hidden.",
+      "quiz": {
+        "question": "How did Poincaré think a physicist should feel when a hypothesis is disproved?",
+        "options": [
+          "Ashamed",
+          "Indifferent",
+          "Full of joy, because an unexpected discovery is waiting",
+          "Determined to defend it anyway"
+        ],
+        "answer": 2,
+        "explanation": "He said the physicist ought to be full of joy, for he has found an unexpected opportunity for discovery."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--37",
+      "topic": "skills-mastery",
+      "tags": [
+        "experiments",
+        "testing",
+        "one-change"
+      ],
+      "title": "Change one thing at a time, or you won't know what made the difference",
+      "body": "Poincaré warned against piling up many hypotheses at once. If a theory built on several assumptions fails the test, which one should you change? You can't tell. And if it succeeds, you haven't really confirmed all of them together; one result can't settle many unknowns.\n\nThis is practical advice for anyone improving a skill, a routine or a recipe. If you change your diet, sleep and training all in the same week, you won't know what helped or hurt. Make changes one after another and watch the result of each.",
+      "quote": "Let us notice besides that it is important not to multiply hypotheses beyond measure, and to make them only one after the other.",
+      "locator": "Chapter IX. Hypotheses in Physics ¶48",
+      "apply_it": "Pick one thing you're trying to improve. Choose a single change to test for the next two weeks and leave everything else the same.",
+      "quiz": {
+        "question": "Why did Poincaré advise making hypotheses one after the other?",
+        "options": [
+          "Because if a test fails or succeeds, you can't tell which of many assumptions was responsible",
+          "To save paper",
+          "Because experiments are cheap",
+          "Because single hypotheses are always correct"
+        ],
+        "answer": 0,
+        "explanation": "With many hypotheses at once, a failure doesn't show which to change, and a success can't confirm them all."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--38",
+      "topic": "mindfulness",
+      "tags": [
+        "humility",
+        "history",
+        "perspective"
+      ],
+      "title": "Every age laughs at the one before, and the next will laugh at us",
+      "body": "Poincaré observed that every age has mocked its predecessors for generalising too quickly and naively. Descartes pitied the ancient Ionian thinkers; now Descartes makes us smile. No doubt, he added, our children will some day laugh at us.\n\nThis is a gentle call to humility. Our current certainties, in science, health, or how to live, will look dated to someone. That need not stop us acting on our best understanding, but it can make us hold views a little more lightly and judge past generations a little more kindly.",
+      "quote": "Descartes pitied the Ionians; Descartes, in his turn, makes us smile. No doubt our children will some day laugh at us.",
+      "locator": "Chapter IX. Hypotheses in Physics ¶5",
+      "apply_it": "Name one thing you are sure about that people in fifty years might find naive. How would you hold it differently knowing that?",
+      "quiz": {
+        "question": "What did Poincaré predict about how future generations would see us?",
+        "options": [
+          "They will admire us without reservation",
+          "They will forget science altogether",
+          "They will copy our methods exactly",
+          "They will laugh at us as we smile at Descartes"
+        ],
+        "answer": 3,
+        "explanation": "He noted every age ridicules the one before, and expected our children would some day laugh at us."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--39",
+      "topic": "mindfulness",
+      "tags": [
+        "truth",
+        "honesty",
+        "sincerity"
+      ],
+      "title": "Seeking truth asks you to set aside prejudice and passion",
+      "body": "Poincaré linked scientific truth, which is demonstrated, with moral truth, which is felt, and said he could not separate them. To find either, he wrote, you must free yourself from prejudice and passion and reach complete sincerity. Both give the same joy when found, and both keep moving ahead as you approach.\n\nHe added that people who fear one kind of truth tend to fear the other, because they care above all about consequences. Facing honestly what is true, in your work or your relationships, takes the same courage either way.",
+      "quote": "To find the one, as well as to find the other, it is necessary to free the soul completely from prejudice and from passion; it is necessary to attain absolute sincerity.",
+      "locator": "Introduction ¶3",
+      "apply_it": "Think of a question in your life you've avoided looking at squarely because of what the answer might mean. Write down what you honestly think is true.",
+      "quiz": {
+        "question": "What did Poincaré say is needed to find both scientific and moral truth?",
+        "options": [
+          "Strong passion for a particular answer",
+          "Freedom from prejudice and passion, and absolute sincerity",
+          "Authority and tradition",
+          "Advanced mathematics"
+        ],
+        "answer": 1,
+        "explanation": "He wrote that finding either kind of truth requires freeing the soul from prejudice and passion and attaining absolute sincerity."
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--40",
+      "topic": "mindfulness",
+      "tags": [
+        "meaning",
+        "thought",
+        "mortality",
+        "wonder"
+      ],
+      "title": "Thought is a brief gleam in a long night, and that gleam is everything",
+      "body": "The Value of Science ends with a famous image. Geology shows that life is only a short episode between two eternities of death, and that even within it, conscious thought has lasted and will last only a moment, a small spark of light against a vast darkness.\n\nPoincaré did not draw a gloomy conclusion. His very next line is that this gleam is everything. Our awareness is fleeting, which is exactly what makes it precious. It is a fitting reason to spend some of that brief light noticing, understanding and wondering.",
+      "quote": "Thought is only a gleam in the midst of a long night.",
+      "locator": "Chapter XI. Science and Reality ¶82",
+      "apply_it": "Spend five quiet minutes today simply noticing something, the sky, a sound, a face, as if it were the only moment you had.",
+      "quiz": {
+        "question": "How does Poincaré follow the line 'Thought is only a gleam in the midst of a long night'?",
+        "options": [
+          "By saying this gleam is everything",
+          "By saying thought is therefore meaningless",
+          "By urging people to give up science",
+          "By predicting the end of the world"
+        ],
+        "answer": 0,
+        "explanation": "His next line is: 'But it is this gleam which is everything.'"
+      }
+    },
+    {
+      "id": "foundations-of-science-poincare--41",
+      "topic": "lives-history",
+      "tags": [
+        "poincare",
+        "persistence",
+        "breakthrough"
+      ],
+      "title": "Poincaré's career took off after an unremarkable start and a lost prize",
+      "body": "Henri Poincaré was born in Nancy in 1854. In his translator's account, his first paper in 1878 was not important, and an essay he entered for the Grand Prix of 1880 did not win. Then, in February 1881, came a sudden burst of creativity, marked by the moment on a bus when he saw that his functions were linked to non-Euclidean geometry.\n\nThat insight shaped his whole life's work. He went on to the Academy of Sciences at thirty-two and wrote hundreds of papers. Early misses, his story suggests, say little about where persistent work can lead.",
+      "quote": "Suddenly there came a change, a striking fire, a bursting forth, in February, 1881, and Poincaré tells us the very minute it happened.",
+      "locator": "Henri Poincaré ¶3",
+      "apply_it": "Think of an early setback in something you care about. Write down what you would do next if you treated it as a first draft, not a verdict.",
+      "quiz": {
+        "question": "What happened to Poincaré's essay entered for the Grand Prix of 1880?",
+        "options": [
+          "It won first prize",
+          "It was never finished",
+          "It did not win",
+          "It was lost in the post"
+        ],
+        "answer": 2,
+        "explanation": "His translator notes the essay did not win, shortly before his breakthrough of February 1881."
+      }
+    }
+  ]
+}
