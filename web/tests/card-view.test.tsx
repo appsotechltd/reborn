@@ -4,18 +4,12 @@ import { CardView } from "@/components/CardView";
 import { makeCard } from "./fixtures";
 
 describe("<CardView>", () => {
-  it("always shows the credit line with links to the source page, original and licence", () => {
+  it("has no source section at the bottom; the byline links to the source page", () => {
     const card = makeCard();
     render(<CardView card={card} />);
-    const credit = screen.getByTestId("card-credit");
-    const creditLink = within(credit).getByRole("link", { name: card.credit });
-    expect(creditLink.getAttribute("href")).toBe("/sources/example-book");
-    expect(within(credit).getByRole("link", { name: /original source/i }).getAttribute("href")).toBe(
-      "https://example.org/book",
-    );
-    const licence = within(credit).getByRole("link", { name: "Public domain" });
-    expect(licence.getAttribute("href")).toBe("https://example.org/licence");
-    expect(licence.getAttribute("rel")).toContain("license");
+    expect(screen.queryByTestId("card-credit")).toBeNull();
+    const byline = screen.getByTestId("card-byline");
+    expect(within(byline).getByRole("link", { name: "An Example Book" }).getAttribute("href")).toBe("/sources/example-book");
   });
 
   it("labels the note on grief and heartbreak cards as support, even when flagged health", () => {
@@ -29,7 +23,6 @@ describe("<CardView>", () => {
     render(<CardView card={makeCard({ health: true, topic: "health", disclaimer })} />);
     const note = screen.getByRole("note", { name: /health disclaimer/i });
     expect(note.textContent).toContain(disclaimer);
-    expect(screen.getByTestId("card-credit")).toBeTruthy();
   });
 
   it("shows no disclaimer when there is none", () => {
@@ -37,7 +30,7 @@ describe("<CardView>", () => {
     expect(screen.queryByRole("note")).toBeNull();
   });
 
-  it("keeps credit and disclaimer even with extra children and actions", () => {
+  it("keeps the disclaimer with extra children and actions", () => {
     render(
       <CardView
         card={makeCard({ health: true, disclaimer: "Not medical advice.", credit: "Source: Someone, Something, CC BY 4.0" })}
@@ -47,7 +40,7 @@ describe("<CardView>", () => {
         <p>Quiz goes here</p>
       </CardView>,
     );
-    expect(screen.getByText("Source: Someone, Something, CC BY 4.0")).toBeTruthy();
+    expect(screen.queryByText("Source: Someone, Something, CC BY 4.0")).toBeNull();
     expect(screen.getByRole("note").textContent).toContain("Not medical advice.");
     expect(screen.getByRole("heading", { level: 2, name: "Small steps beat big plans" })).toBeTruthy();
   });

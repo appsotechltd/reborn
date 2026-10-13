@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="162 150 700 900"><style>@font-face{font-family:Fraunces;src:url(../fonts/Fraunces-SemiBold.ttf)}</style>
+  <defs>
+    <radialGradient id="glow" cx="512" cy="430" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9A23B" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9A23B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6C66E"/>
+      <stop offset="1" stop-color="#E9A23B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="512" cy="430" r="300" fill="url(#glow)"/>
+  <path d="M512 742 C 440 690 350 676 262 700 L 262 488 C 350 464 440 478 512 530 Z" fill="#F2E8D8"/>
+  <path d="M512 742 C 584 690 674 676 762 700 L 762 488 C 674 464 584 478 512 530 Z" fill="#D9CDBA"/>
+  <path d="M520 206 C 540 292 614 348 614 440 C 614 498 568 536 512 536 C 456 536 410 498 410 440 C 410 370 462 334 492 286 C 506 264 516 238 520 206 Z" fill="url(#flame)"/>
+  <path d="M516 356 C 526 404 562 432 562 474 C 562 502 540 520 512 520 C 484 520 462 502 462 474 C 462 434 500 410 516 356 Z" fill="#FBE3B0"/>
+<text x="512" y="960" font-family="Fraunces" font-size="168" font-weight="600" text-anchor="middle" fill="#F2E8D8">Reborn</text></svg>

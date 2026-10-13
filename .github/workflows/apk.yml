@@ -13,8 +13,8 @@ permissions:
   contents: write
 
 env:
-  API_BASE_URL: ${{ vars.API_BASE_URL || 'https://reborn-api.onrender.com' }}
-  WEB_BASE_URL: ${{ vars.WEB_BASE_URL || 'https://reborn-web.onrender.com' }}
+  API_BASE_URL: ${{ vars.API_BASE_URL || 'https://reborn-api-wpd5.onrender.com' }}
+  WEB_BASE_URL: ${{ vars.WEB_BASE_URL || 'https://reborn-web-8xy4.onrender.com' }}
 
 jobs:
   apk:

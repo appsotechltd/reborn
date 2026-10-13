@@ -21,7 +21,9 @@ Things to know about the free plan:
 - The free Postgres expires 30 days after it is created. To keep the data, create a free
   database on Neon or Supabase (both support pgvector) and set `DATABASE_URL` on `reborn-api`
   to its connection string (with `sslmode=require`).
-- If a service name is taken, Render adds a suffix to its URL. Then update `WEB_BASE_URL`
+- Render added a suffix to the URLs (the names were taken): the live site is
+  https://reborn-web-8xy4.onrender.com and the API https://reborn-api-wpd5.onrender.com. If they
+  change again, update `WEB_BASE_URL`
   on the API, `NEXT_PUBLIC_API_URL`, `API_URL` and `SITE_URL` on the web service, and
   redeploy `reborn-web` (`NEXT_PUBLIC_API_URL` is baked in at build time).
 
