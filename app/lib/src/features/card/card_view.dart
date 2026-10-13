@@ -117,10 +117,8 @@ class IdeaCardView extends ConsumerWidget {
             _QuoteBlock(quote: card.quote!, locator: card.locator),
           const SizedBox(height: 8),
           _ApplyIt(text: card.applyIt),
-          const SizedBox(height: 16),
-          _Credit(card: card),
           if (showActions) ...[
-            const SizedBox(height: 12),
+            const SizedBox(height: 16),
             _CardActions(card: card, showShare: showShare),
           ],
         ],
@@ -260,50 +258,6 @@ class _Disclaimer extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _Credit extends StatelessWidget {
-  const _Credit({required this.card});
-  final IdeaCard card;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
-    return InkWell(
-      key: const ValueKey('card-credit'),
-      borderRadius: BorderRadius.circular(8),
-      onTap: card.source.id.isEmpty
-          ? null
-          : () =>
-                context.push('/sources/${Uri.encodeComponent(card.source.id)}'),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(
-              Icons.menu_book_outlined,
-              size: 16,
-              color: scheme.onSurfaceVariant,
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                card.credit,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: scheme.onSurfaceVariant,
-                  decoration: TextDecoration.underline,
-                  decorationColor: scheme.outline,
-                ),
-              ),
-            ),
-            Icon(Icons.chevron_right, size: 16, color: scheme.onSurfaceVariant),
-          ],
-        ),
       ),
     );
   }

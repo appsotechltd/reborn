@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { licenceName, paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
+import { paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
 import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
 import { ExplainerVideo } from "./ExplainerVideo";
@@ -42,8 +42,8 @@ export function AuthorLinks({ authors, className = "link" }: { authors: string[]
 }
 
 /**
- * The idea card. Always renders the credit line (linked to the source page,
- * the original and its licence) and, when present, the health disclaimer.
+ * The idea card, with the health disclaimer when present. The full credit, original
+ * link and licence live on the source page, linked from the byline under the title.
  */
 export function CardView({ card, headingLevel = "h1", actions, children, titleHref, feed = false }: CardViewProps) {
   const Heading = headingLevel;
@@ -165,23 +165,6 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
 
       {children}
 
-      <footer className={`mt-8 border-t border-line pt-4 text-sm text-muted ${phoneOnly}`} data-testid="card-credit">
-        <p>
-          <Link href={`/sources/${card.source.id}`} className="hover:text-fg hover:underline">
-            {card.credit}
-          </Link>
-        </p>
-        <p className="mt-1">
-          <a href={card.source.url} className="link" target="_blank" rel="noopener noreferrer">
-            Original source<span className="sr-only"> (opens in a new tab)</span>
-          </a>
-          {" · "}
-          Licence:{" "}
-          <a href={card.source.licence_url} className="link" target="_blank" rel="license noopener noreferrer">
-            {licenceName(card.source.licence)}
-          </a>
-        </p>
-      </footer>
     </article>
   );
 }
