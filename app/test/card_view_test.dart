@@ -48,7 +48,7 @@ Future<FakeSpeaker> pumpCard(WidgetTester tester, IdeaCard card) async {
 }
 
 void main() {
-  testWidgets('shows title, body, quote, apply it and the credit', (
+  testWidgets('shows title, body, quote and apply it, without the credit', (
     tester,
   ) async {
     final card = sampleCard();
@@ -58,13 +58,13 @@ void main() {
     expect(find.textContaining('Begin the morning'), findsOneWidget);
     expect(find.text('APPLY IT'), findsOneWidget);
     expect(find.text(card.applyIt), findsOneWidget);
-    expect(find.text(card.credit), findsOneWidget);
+    expect(find.text(card.credit), findsNothing);
     expect(find.text('MINDFULNESS & PHILOSOPHY'), findsOneWidget);
     // No disclaimer on a non-health card.
     expect(find.byKey(const ValueKey('card-disclaimer')), findsNothing);
   });
 
-  testWidgets('health card always shows its disclaimer and credit', (
+  testWidgets('health card always shows its disclaimer', (
     tester,
   ) async {
     final card = healthCard();
@@ -127,7 +127,6 @@ void main() {
     expect(find.text('ANIMATED EXPLAINER'), findsOneWidget);
     expect(find.text(card.title), findsOneWidget);
     expect(find.text('0:49'), findsOneWidget);
-    // The credit stays on the card even with a video.
     expect(find.text(card.credit), findsNothing); // credit lives on the source page
   });
 
