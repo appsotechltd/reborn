@@ -41,7 +41,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: WEB_BASE_URL
-        value: https://reborn-web.onrender.com
+        value: https://reborn-web-8xy4.onrender.com
       - key: CORS_ORIGINS
         value: "*"
       - key: MEDIA_BASE_URL
@@ -73,8 +73,8 @@ services:
     envVars:
       # Render passes these to the Docker build too; NEXT_PUBLIC_API_URL is baked into the browser bundle.
       - key: NEXT_PUBLIC_API_URL
-        value: https://reborn-api.onrender.com
+        value: https://reborn-api-wpd5.onrender.com
       - key: API_URL
-        value: https://reborn-api.onrender.com
+        value: https://reborn-api-wpd5.onrender.com
       - key: SITE_URL
-        value: https://reborn-web.onrender.com
+        value: https://reborn-web-8xy4.onrender.com
