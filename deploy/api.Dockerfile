@@ -17,6 +17,7 @@ COPY --from=build /out/reborn /usr/local/bin/reborn
 COPY content/library /content/library
 COPY content/summaries /content/summaries
 COPY content/explainers/out/manifest.json /content/explainers/manifest.json
+COPY content/audio/out/manifest.json /content/audio/manifest.json
 COPY deploy/api-start.sh /usr/local/bin/api-start
 ENV ADDR=:8080 \
     CONTENT_DIR=/content/library \
