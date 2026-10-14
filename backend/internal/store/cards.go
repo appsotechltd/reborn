@@ -327,9 +327,10 @@ func upsertCard(ctx context.Context, tx pgx.Tx, src content.Source, c content.Ca
 
 // SeedResult summarises an import.
 type SeedResult struct {
-	Sources int
-	Cards   int
-	Changed int
+	Sources   int
+	Cards     int
+	Changed   int
+	Summaries int
 }
 
 // Seed upserts every source and card in the library in one transaction.
@@ -360,7 +361,9 @@ func (s *Store) Seed(ctx context.Context, lib content.Library) (SeedResult, erro
 				return err
 			}
 		}
-		return nil
+		n, err := seedSummaries(ctx, tx, lib)
+		res.Summaries = n
+		return err
 	})
 	return res, err
 }

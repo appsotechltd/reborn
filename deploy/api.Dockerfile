@@ -15,6 +15,7 @@ FROM alpine:3.22
 RUN apk add --no-cache ca-certificates tzdata
 COPY --from=build /out/reborn /usr/local/bin/reborn
 COPY content/library /content/library
+COPY content/summaries /content/summaries
 COPY content/explainers/out/manifest.json /content/explainers/manifest.json
 COPY deploy/api-start.sh /usr/local/bin/api-start
 ENV ADDR=:8080 \
