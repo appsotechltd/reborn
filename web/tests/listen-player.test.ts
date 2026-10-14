@@ -390,3 +390,60 @@ describe("ListenPlayer.playCards (a book's or an author's cards)", () => {
     expect(api.recordView).toHaveBeenCalledWith("example-book--01");
   });
 });
+
+describe("ListenPlayer.follow (the audio follows the page on screen)", () => {
+  it("does nothing while no session is on", () => {
+    const { player } = setup();
+    player.follow({ items: items(withAudio(1)), queue: "source:example-book|all" });
+    player.followCard(withAudio(1));
+    expect(player.getState().active).toBe(false);
+  });
+
+  it("switches to another page's list from its start, keeping play", () => {
+    const { player, main } = setup();
+    player.start({ items: items(withAudio(1), withAudio(2)), queue: "timeline|" });
+    player.follow({ items: items(withAudio(7), withAudio(8)), queue: "source:other|all" });
+    const s = player.getState();
+    expect(s).toMatchObject({ queue: "source:other|all", index: 0, playing: true, phase: "card" });
+    expect(main().src).toContain("example-book--07.mp3");
+  });
+
+  it("leaves a list alone when its page opens again, and keeps pause and the sleep timer", () => {
+    const { player, main } = setup();
+    player.playCards([withAudio(1), withAudio(2), withAudio(3)], { queue: "source:example-book|all" });
+    player.next();
+    player.pause();
+    player.follow({ items: items(withAudio(1), withAudio(2), withAudio(3)), queue: "source:example-book|all" });
+    expect(player.getState().index).toBe(1);
+    player.setSleep(15);
+    const plays = main().play.mock.calls.length;
+    player.follow({ items: items(withAudio(5)), queue: "author:Someone|all" });
+    const s = player.getState();
+    expect(s).toMatchObject({ queue: "author:Someone|all", playing: false });
+    expect(s.sleep).toMatchObject({ kind: "minutes", minutes: 15 });
+    expect(main().play).toHaveBeenCalledTimes(plays);
+    expect(main().src).toContain("example-book--05.mp3");
+  });
+
+  it("moves to the item on screen within the same list", () => {
+    const { player, main } = setup();
+    const parts = items(withAudio(1), withAudio(2), withAudio(3));
+    player.start({ items: parts, queue: "summary:x" });
+    const session = player.getState().session;
+    player.follow({ items: parts, index: 2, queue: "summary:x" });
+    expect(player.getState()).toMatchObject({ index: 2, session, playing: true });
+    expect(main().src).toContain("example-book--03.mp3");
+    player.follow({ items: parts, index: 2, queue: "summary:x" });
+    expect(player.getState().index).toBe(2);
+  });
+
+  it("moves to a card's page within the session when the card is in it, else plays it alone", () => {
+    const { player, main } = setup();
+    player.playCards([withAudio(1), withAudio(2)], { queue: "source:example-book|all" });
+    player.followCard(withAudio(2));
+    expect(player.getState()).toMatchObject({ index: 1, queue: "source:example-book|all" });
+    player.followCard(withAudio(9));
+    expect(player.getState()).toMatchObject({ single: true, index: 0, playing: true });
+    expect(main().src).toContain("example-book--09.mp3");
+  });
+});

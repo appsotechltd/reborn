@@ -52,6 +52,30 @@ List<IdeaCard> visibleCards(List<IdeaCard> cards, bool videosOnly) => videosOnly
       ]
     : cards;
 
+/// Names a book's or author's list for Listen mode: `source:<id>|all`,
+/// `author:<name>|videos`.
+String collectionListenKey(String page, bool videosOnly) =>
+    '$page|${videosOnly ? 'videos' : 'all'}';
+
+/// What a book's or author's [page] plays, for Listen mode to follow (see
+/// ListenFollow): the cards [shown]. Null while Listen mode is already on
+/// this page's list (All or Videos), so it carries on undisturbed.
+ListenTarget? collectionListenTarget(
+  WidgetRef ref,
+  String page,
+  List<IdeaCard> shown,
+  bool videosOnly,
+) {
+  final ours = ref.watch(
+    listenProvider.select((s) => s.queueKey?.startsWith('$page|') ?? false),
+  );
+  if (ours || shown.isEmpty) return null;
+  return ListenTarget.cards(
+    key: collectionListenKey(page, videosOnly),
+    cards: shown,
+  );
+}
+
 /// Above a book's or author's cards: "Listen to this book" (plays the cards
 /// shown, in order, in Listen mode) and the All / Videos switch (hidden when
 /// none of the cards has a video).
@@ -87,7 +111,15 @@ class CardCollectionBar extends ConsumerWidget {
             onPressed: shown.isEmpty
                 ? null
                 : () {
-                    ref.read(listenProvider.notifier).startCards(shown);
+                    ref
+                        .read(listenProvider.notifier)
+                        .startCards(
+                          shown,
+                          key: collectionListenKey(
+                            page,
+                            videosOnly && videos > 0,
+                          ),
+                        );
                     context.push('/listen');
                   },
             icon: const Icon(Icons.headphones_outlined),

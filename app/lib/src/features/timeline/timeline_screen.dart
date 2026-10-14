@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ import '../../widgets/common.dart';
 import '../card/video_autoplay.dart';
 import '../daily/daily_screen.dart';
 import '../listen/listen_controller.dart';
+import '../listen/listen_follow.dart';
 import '../notifications/notifications_controller.dart';
 import '../notifications/notifications_screen.dart';
 import '../post/post_store.dart';
@@ -43,6 +45,13 @@ const kTimelineSidePanelWidth = 340.0;
 
 /// Start fetching the next page when this many posts or fewer are left.
 const kPreloadRemaining = 3;
+
+/// Listen mode follows the post on screen once it has stayed there this long.
+const kListenFollowAfter = Duration(milliseconds: 500);
+
+/// Names the timeline for Listen mode, with its topic filter.
+String timelineListenKey(List<String>? topics) =>
+    'timeline|${topics?.join(',') ?? ''}';
 
 /// A video in the column feed plays once this much of it is on screen.
 const kVideoVisibleFraction = 0.6;
@@ -74,6 +83,11 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   int _swipePage = 0;
   String? _onScreen;
 
+  /// The post on screen as Listen mode follows it: [_onScreen] or the swipe
+  /// page, once it has rested for [kListenFollowAfter].
+  String? _listenOn;
+  Timer? _listenTimer;
+
   @override
   void initState() {
     super.initState();
@@ -92,6 +106,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
 
   @override
   void dispose() {
+    _listenTimer?.cancel();
     _lifecycle.dispose();
     _tracker.dispose();
     _videos.dispose();
@@ -178,7 +193,36 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
       }
       if (signedIn) _tracker.update(e.key, fraction);
     }
+    if (onScreen != _onScreen) _onScreenChanged(onScreen);
     _onScreen = onScreen;
+  }
+
+  void _onScreenChanged(String? id) {
+    _listenTimer?.cancel();
+    _listenTimer = Timer(kListenFollowAfter, () {
+      if (mounted && id != _listenOn) setState(() => _listenOn = id);
+    });
+  }
+
+  /// While Listen mode is on, it follows the card post on screen (a
+  /// summary post on screen leaves it be).
+  ListenTarget? _listenTarget(TimelineState state, bool swipe) {
+    final posts = state.posts;
+    if (posts.isEmpty) return null;
+    final id =
+        _listenOn ??
+        posts[(swipe ? _swipePage : 0).clamp(0, posts.length - 1)].id;
+    final cards = posts.where((p) => !p.isSummary).toList();
+    final index = cards.indexWhere((p) => p.id == id);
+    if (index < 0) return null;
+    final topics = ref.read(timelineProvider.notifier).topics;
+    return ListenTarget(
+      key: timelineListenKey(topics),
+      posts: cards,
+      index: index,
+      cursor: state.nextCursor,
+      topics: topics,
+    );
   }
 
   /// Starts Listen mode from the post on screen (or the top of the feed),
@@ -194,13 +238,15 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final cards = state.posts.where((p) => !p.isSummary).toList();
     if (cards.isEmpty) return;
     index = state.posts.take(index).where((p) => !p.isSummary).length;
+    final topics = ref.read(timelineProvider.notifier).topics;
     ref
         .read(listenProvider.notifier)
         .startTimeline(
           posts: cards,
           index: index.clamp(0, cards.length - 1),
           cursor: state.nextCursor,
-          topics: ref.read(timelineProvider.notifier).topics,
+          topics: topics,
+          key: timelineListenKey(topics),
         );
     context.push('/listen');
   }
@@ -245,6 +291,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final swipe = size.isCompact;
     ref.listen(timelineFilterProvider, (_, _) {
       _swipePage = 0;
+      _listenOn = null;
       if (_scroll.hasClients) _scroll.jumpTo(0);
     });
     return Scaffold(
@@ -281,7 +328,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
                 ),
                 data: (state) {
                   _skipSeen(state);
-                  return swipe
+                  final feed = swipe
                       ? _SwipeFeed(
                           state: state,
                           signedIn: signedIn,
@@ -290,9 +337,18 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
                           onRefresh: _refresh,
                           onPreload: _preload,
                           onLoadMore: _loadMore,
-                          onPage: (i) => _swipePage = i,
+                          onPage: (i) {
+                            _swipePage = i;
+                            if (i < state.posts.length) {
+                              _onScreenChanged(state.posts[i].id);
+                            }
+                          },
                         )
                       : _wide(state, signedIn, size);
+                  return ListenFollow(
+                    target: _listenTarget(state, swipe),
+                    child: feed,
+                  );
                 },
               ),
             ),

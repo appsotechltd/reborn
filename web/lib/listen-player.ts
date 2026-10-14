@@ -221,6 +221,22 @@ export interface StartOptions {
   single?: boolean;
   /** Names a fixed list (see ListenState.queue). */
   queue?: string;
+  /** Start paused rather than playing (the session follows the page while paused). */
+  paused?: boolean;
+}
+
+/** What a page plays, for Listen mode to follow when the reader moves to it (see `follow`). */
+export interface FollowTarget {
+  items: ListenItem[];
+  /**
+   * The item on screen, followed as the reader moves through the page. Without one (a book's list)
+   * the list starts from its first item, and opening the page again leaves its session alone.
+   */
+  index?: number;
+  /** Names the page's list, e.g. "source:meditations|all", "summary:x", "timeline|". */
+  queue: string;
+  cursor?: string | null;
+  topics?: string;
 }
 
 const IDLE: Omit<ListenState, "speed"> = {
@@ -316,9 +332,10 @@ export class ListenPlayer {
   // --- Commands ------------------------------------------------------------------------------------
 
   /** Starts a session. Call it straight from the tap, so the browser allows sound. */
-  start(opts: StartOptions) {
+  start(opts: StartOptions, keepSleep = false) {
     if (this.state.active) this.leave(false);
-    this.teardown();
+    const sleep = keepSleep ? this.state.sleep : null;
+    this.teardown(keepSleep);
     if (!this.speedLoaded) {
       this.speedLoaded = true;
       this.state = { ...this.state, speed: readSpeed() };
@@ -334,9 +351,10 @@ export class ListenPlayer {
       active: true,
       items,
       index: Math.min(Math.max(0, opts.index ?? 0), items.length - 1),
-      playing: true,
+      playing: !opts.paused,
       single: !!opts.single,
       queue: opts.queue ?? null,
+      sleep,
       session: this.session,
     });
     this.bindMediaSession();
@@ -349,6 +367,55 @@ export class ListenPlayer {
    */
   playCards(cards: Card[], opts: { queue?: string; index?: number } = {}) {
     this.start({ items: itemsFromCards(cards), index: opts.index, cursor: null, queue: opts.queue });
+  }
+
+  /**
+   * The reader moved to a page with audio of its own while a session is on: the session switches to
+   * that page's audio, carrying on from the item on screen and keeping play or pause (and the sleep
+   * timer). Already on that page's list: moves to the item on screen if it isn't the current one.
+   * Does nothing when no session is on.
+   */
+  follow(target: FollowTarget) {
+    const { active, queue, items, index, playing } = this.state;
+    if (!active || !target.items.length) return;
+    if (queue === target.queue) {
+      const want = target.items[target.index ?? -1];
+      if (!want) return;
+      const at = items.findIndex((i) => i.id === want.id);
+      if (at === index) return;
+      if (at >= 0) return this.jump(at);
+    }
+    this.start(
+      {
+        items: target.items,
+        index: target.index ?? 0,
+        cursor: target.cursor ?? null,
+        topics: target.topics,
+        queue: target.queue,
+        paused: !playing,
+      },
+      true,
+    );
+  }
+
+  /**
+   * The reader opened a card's own page while a session is on: its card becomes the current one,
+   * within the session when the card is in it (so it carries on after), else on its own.
+   */
+  followCard(card: Card) {
+    const { active, items, index, playing } = this.state;
+    if (!active) return;
+    const at = items.findIndex((i) => i.id === card.id);
+    if (at === index) return;
+    if (at >= 0) return this.jump(at);
+    this.start({ items: [{ id: card.id, card }], single: true, paused: !playing }, true);
+  }
+
+  /** Moves to item `index` of this session, keeping play or pause. */
+  private jump(index: number) {
+    if (this.state.phase === "waiting") return;
+    this.leave(false);
+    this.go(index, false);
   }
 
   play() {
@@ -855,11 +922,13 @@ export class ListenPlayer {
     }
   }
 
-  private teardown() {
+  private teardown(keepSleep = false) {
     this.cancelSpeech();
     this.stopTick();
-    clearTimeout(this.sleepTimer);
-    this.sleepTimer = undefined;
+    if (!keepSleep) {
+      clearTimeout(this.sleepTimer);
+      this.sleepTimer = undefined;
+    }
     this.shownId = null;
     this.loading = false;
     if (this.audio) {

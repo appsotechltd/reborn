@@ -8,6 +8,8 @@ import '../../data/providers.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
+import '../listen/listen_controller.dart';
+import '../listen/listen_follow.dart';
 import '../post/post_view.dart';
 import 'summary_controller.dart';
 import 'summary_widgets.dart';
@@ -176,7 +178,19 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
             return const Center(child: Text('This summary has no parts yet.'));
           }
           _open(d);
-          return _all ? _allParts(d) : _oneAtATime(d);
+          // Listen mode follows the part on screen (from the first on the
+          // long page; not on the finished page).
+          final last = d.parts.length - 1;
+          return ListenFollow(
+            target: !_all && _index > last
+                ? null
+                : ListenTarget.cards(
+                    key: summaryListenKey(widget.summaryId),
+                    cards: d.parts,
+                    index: _all ? null : _index,
+                  ),
+            child: _all ? _allParts(d) : _oneAtATime(d),
+          );
         },
       ),
     );

@@ -7,6 +7,7 @@ import '../../data/providers.dart';
 import '../../widgets/common.dart';
 import '../library/card_collection.dart';
 import '../library/library_controller.dart';
+import '../listen/listen_follow.dart';
 import 'follow_button.dart';
 
 /// An author: their sources in the library, a follow button, and every
@@ -34,10 +35,9 @@ class AuthorScreen extends ConsumerWidget {
         data: (a) {
           final page = 'author:$name';
           final videos = a.cards.any((c) => c.explainer != null);
-          final shown = visibleCards(
-            a.cards,
-            videos && ref.watch(videosOnlyProvider(page)),
-          );
+          final videosOnly = videos && ref.watch(videosOnlyProvider(page));
+          final shown = visibleCards(a.cards, videosOnly);
+          final listen = collectionListenTarget(ref, page, shown, videosOnly);
           final before = <Widget>[
             ReadingWidth(
               child: Padding(
@@ -110,21 +110,24 @@ class AuthorScreen extends ConsumerWidget {
               ),
             ],
           ];
-          return ListView.builder(
-            itemCount: before.length + shown.length + 1,
-            itemBuilder: (context, i) {
-              if (i < before.length) return before[i];
-              i -= before.length;
-              if (i == shown.length) return const SizedBox(height: 24);
-              final c = shown[i];
-              return ReadingWidth(
-                child: CardTile(
-                  key: ValueKey('author-card-${c.id}'),
-                  card: c,
-                  trailing: c.explainer != null ? const HasVideoIcon() : null,
-                ),
-              );
-            },
+          return ListenFollow(
+            target: listen,
+            child: ListView.builder(
+              itemCount: before.length + shown.length + 1,
+              itemBuilder: (context, i) {
+                if (i < before.length) return before[i];
+                i -= before.length;
+                if (i == shown.length) return const SizedBox(height: 24);
+                final c = shown[i];
+                return ReadingWidth(
+                  child: CardTile(
+                    key: ValueKey('author-card-${c.id}'),
+                    card: c,
+                    trailing: c.explainer != null ? const HasVideoIcon() : null,
+                  ),
+                );
+              },
+            ),
           );
         },
       ),

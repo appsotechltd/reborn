@@ -9,6 +9,7 @@ import type { Post, ReactionKind } from "@/lib/types";
 import { EmbedButton } from "./EmbedButton";
 import { GiftButton } from "./GiftButton";
 import { Icon } from "./Icon";
+import { ListenIconButton } from "./ListenButton";
 import { ShareMenu } from "./ShareMenu";
 import { useSignInRedirect } from "./SignInPrompt";
 
@@ -22,6 +23,8 @@ interface PostActionsProps {
   className?: string;
   /** In the phone feed: below md, no rule above and no Embed, so it fits under the card. */
   compact?: boolean;
+  /** A Listen button for the post's card (feeds; the card's own page has its own). */
+  listen?: boolean;
 }
 
 /**
@@ -29,7 +32,7 @@ interface PostActionsProps {
  * then favourite, comments and share with counts, embed (web only) and Gift at the end.
  * Optimistic updates throughout.
  */
-export function PostActions({ post: initial, refresh = false, commentsHref, className = "mt-6", compact = false }: PostActionsProps) {
+export function PostActions({ post: initial, refresh = false, commentsHref, className = "mt-6", compact = false, listen = false }: PostActionsProps) {
   const { ready, token, user, api } = useAuth();
   const toSignIn = useSignInRedirect();
   const [post, setPost] = useState<Post>(initial);
@@ -139,6 +142,7 @@ export function PostActions({ post: initial, refresh = false, commentsHref, clas
             count={post.stats.shares}
             onShared={() => setPost((p) => ({ ...p, stats: { ...p.stats, shares: p.stats.shares + 1 } }))}
           />
+          {listen ? <ListenIconButton card={post.card} /> : null}
           {/* Embedding is a web thing for people with sites; it stays off the phone feed to keep one row. */}
           <span className={compact ? "max-md:hidden" : undefined}>
             <EmbedButton postId={post.id} title={post.card.title} />

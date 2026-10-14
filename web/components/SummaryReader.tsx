@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type TouchEvent } from "react";
 import { useAuth } from "@/lib/auth";
+import { useListenFollow } from "@/lib/listen";
+import { itemsFromCards } from "@/lib/listen-player";
 import { localProgress, resumeIndex, saveLocalProgress, summaryHref } from "@/lib/summaries";
 import type { SummaryDetail } from "@/lib/types";
 import { CardView } from "./CardView";
@@ -88,6 +90,11 @@ export function SummaryReader({
     }, SAVE_DELAY_MS);
     return () => window.clearTimeout(t);
   }, [ready, index, view, last, summary.id, token, api]);
+
+  // While a session is on, it follows the part on screen (once the opening place is known).
+  useListenFollow(
+    ready && index <= last ? { items: itemsFromCards(parts), index, queue: `summary:${summary.id}` } : null,
+  );
 
   const go = useCallback(
     (to: number) => {

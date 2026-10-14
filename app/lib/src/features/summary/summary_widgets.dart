@@ -20,6 +20,9 @@ String summaryPath(String id, {int? part, bool all = false}) {
   ).toString();
 }
 
+/// Names a summary's parts for Listen mode (see ListenState.queueKey).
+String summaryListenKey(String id) => 'summary:$id';
+
 /// Plays a summary start to finish in Listen mode from part [from], loading
 /// its parts when they aren't given, and opens the player.
 Future<void> listenToSummary(
@@ -45,7 +48,11 @@ Future<void> listenToSummary(
   if (cards.isEmpty) return;
   await ref
       .read(listenProvider.notifier)
-      .startCards(cards, index: from.clamp(0, cards.length - 1));
+      .startCards(
+        cards,
+        index: from.clamp(0, cards.length - 1),
+        key: summaryListenKey(id),
+      );
   if (context.mounted) context.push('/listen');
 }
 
