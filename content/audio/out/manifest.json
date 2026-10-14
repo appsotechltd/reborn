@@ -8404,8 +8404,2847 @@
   },
   "mental-efficiency-bennett--14": {
    "file": "mental-efficiency-bennett--14.mp3",
+   "duration_s": 47.85,
+   "voice": "bm_george",
+   "hash": "66b1cc12687987a1"
+  },
+  "mental-efficiency-bennett--15": {
+   "file": "mental-efficiency-bennett--15.mp3",
+   "duration_s": 49.87,
+   "voice": "bm_george",
+   "hash": "06817061df3d2d5e"
+  },
+  "mental-efficiency-bennett--16": {
+   "file": "mental-efficiency-bennett--16.mp3",
+   "duration_s": 48.74,
+   "voice": "bm_george",
+   "hash": "a18e0ea3fc3390c7"
+  },
+  "mental-efficiency-bennett--17": {
+   "file": "mental-efficiency-bennett--17.mp3",
+   "duration_s": 49.04,
+   "voice": "bm_george",
+   "hash": "d3b5d1d05976b7a0"
+  },
+  "mental-efficiency-bennett--18": {
+   "file": "mental-efficiency-bennett--18.mp3",
+   "duration_s": 47.72,
+   "voice": "bm_george",
+   "hash": "15cdb1158f134538"
+  },
+  "mental-efficiency-bennett--19": {
+   "file": "mental-efficiency-bennett--19.mp3",
+   "duration_s": 48.46,
+   "voice": "bm_george",
+   "hash": "e9d7bf0da67fe28f"
+  },
+  "mental-efficiency-bennett--20": {
+   "file": "mental-efficiency-bennett--20.mp3",
+   "duration_s": 51.66,
+   "voice": "bm_george",
+   "hash": "d22278812b7b4c3b"
+  },
+  "mental-efficiency-bennett--21": {
+   "file": "mental-efficiency-bennett--21.mp3",
+   "duration_s": 52.79,
+   "voice": "bm_george",
+   "hash": "072cf8927488cbc1"
+  },
+  "mental-efficiency-bennett--22": {
+   "file": "mental-efficiency-bennett--22.mp3",
+   "duration_s": 51.07,
+   "voice": "bm_george",
+   "hash": "76c47cff0d8c179e"
+  },
+  "mental-efficiency-bennett--23": {
+   "file": "mental-efficiency-bennett--23.mp3",
+   "duration_s": 48.38,
+   "voice": "bm_george",
+   "hash": "eff8542c9f6e151f"
+  },
+  "mental-efficiency-bennett--24": {
+   "file": "mental-efficiency-bennett--24.mp3",
+   "duration_s": 52.28,
+   "voice": "bm_george",
+   "hash": "0b21c5409192789a"
+  },
+  "mental-efficiency-bennett--25": {
+   "file": "mental-efficiency-bennett--25.mp3",
+   "duration_s": 49.96,
+   "voice": "bm_george",
+   "hash": "77877bfd3ea71bd6"
+  },
+  "mental-efficiency-bennett--26": {
+   "file": "mental-efficiency-bennett--26.mp3",
+   "duration_s": 48.51,
+   "voice": "bm_george",
+   "hash": "f06228e069face51"
+  },
+  "mental-efficiency-bennett--27": {
+   "file": "mental-efficiency-bennett--27.mp3",
+   "duration_s": 50.7,
+   "voice": "bm_george",
+   "hash": "34892a8a378e364c"
+  },
+  "mental-efficiency-bennett--28": {
+   "file": "mental-efficiency-bennett--28.mp3",
+   "duration_s": 57.35,
+   "voice": "bm_george",
+   "hash": "d5d4cce8fe2b4f9b"
+  },
+  "mental-efficiency-bennett--29": {
+   "file": "mental-efficiency-bennett--29.mp3",
+   "duration_s": 61.59,
+   "voice": "bm_george",
+   "hash": "00b8175bb52b9113"
+  },
+  "mental-efficiency-bennett--30": {
+   "file": "mental-efficiency-bennett--30.mp3",
+   "duration_s": 61.44,
+   "voice": "bm_george",
+   "hash": "a313f0e4dd380c4b"
+  },
+  "mindset-dweck--01": {
+   "file": "mindset-dweck--01.mp3",
+   "duration_s": 43.45,
+   "voice": "af_sarah",
+   "hash": "fe7ee1b7cacf3871"
+  },
+  "mindset-dweck--02": {
+   "file": "mindset-dweck--02.mp3",
+   "duration_s": 40.63,
+   "voice": "af_sarah",
+   "hash": "ce438d4b8cac9d87"
+  },
+  "mindset-dweck--03": {
+   "file": "mindset-dweck--03.mp3",
+   "duration_s": 38.29,
+   "voice": "af_sarah",
+   "hash": "825d7f26042288bc"
+  },
+  "mindset-dweck--04": {
+   "file": "mindset-dweck--04.mp3",
+   "duration_s": 39.63,
+   "voice": "af_sarah",
+   "hash": "4bf8c3d5cdca711c"
+  },
+  "mindset-dweck--05": {
+   "file": "mindset-dweck--05.mp3",
+   "duration_s": 41.06,
+   "voice": "af_sarah",
+   "hash": "7bb453dceb31407a"
+  },
+  "mindset-dweck--06": {
+   "file": "mindset-dweck--06.mp3",
+   "duration_s": 47.01,
+   "voice": "af_sarah",
+   "hash": "86c7600fa3fa1e80"
+  },
+  "mindset-dweck--07": {
+   "file": "mindset-dweck--07.mp3",
+   "duration_s": 47.31,
+   "voice": "af_sarah",
+   "hash": "eaa7a84b1a55cd06"
+  },
+  "mindset-dweck--08": {
+   "file": "mindset-dweck--08.mp3",
+   "duration_s": 45.2,
+   "voice": "af_sarah",
+   "hash": "7b2de9b508d1875d"
+  },
+  "mindset-dweck--09": {
+   "file": "mindset-dweck--09.mp3",
+   "duration_s": 51.49,
+   "voice": "af_sarah",
+   "hash": "2e6c02fd894f471a"
+  },
+  "mindset-dweck--10": {
+   "file": "mindset-dweck--10.mp3",
+   "duration_s": 50.77,
+   "voice": "af_sarah",
+   "hash": "148bf9e42328f10a"
+  },
+  "mindset-dweck--11": {
+   "file": "mindset-dweck--11.mp3",
+   "duration_s": 48.19,
+   "voice": "af_sarah",
+   "hash": "2c08c2c6df6e1c0a"
+  },
+  "mindset-dweck--12": {
+   "file": "mindset-dweck--12.mp3",
+   "duration_s": 47.44,
+   "voice": "af_sarah",
+   "hash": "0541980468822b57"
+  },
+  "mindset-dweck--13": {
+   "file": "mindset-dweck--13.mp3",
+   "duration_s": 47.29,
+   "voice": "af_sarah",
+   "hash": "4117bccd4c8377ac"
+  },
+  "mindset-dweck--14": {
+   "file": "mindset-dweck--14.mp3",
+   "duration_s": 50.55,
+   "voice": "af_sarah",
+   "hash": "085a4cf74a5f17f7"
+  },
+  "mindset-dweck--15": {
+   "file": "mindset-dweck--15.mp3",
+   "duration_s": 49.04,
+   "voice": "af_sarah",
+   "hash": "8d1e9cc45fdde419"
+  },
+  "mindset-dweck--16": {
+   "file": "mindset-dweck--16.mp3",
+   "duration_s": 48.12,
+   "voice": "af_sarah",
+   "hash": "9a6819899d778e8b"
+  },
+  "mindset-dweck--17": {
+   "file": "mindset-dweck--17.mp3",
+   "duration_s": 46.61,
+   "voice": "af_sarah",
+   "hash": "65b8d4366e6e4235"
+  },
+  "mindset-dweck--18": {
+   "file": "mindset-dweck--18.mp3",
+   "duration_s": 50.43,
+   "voice": "af_sarah",
+   "hash": "5f4f598ef836c85c"
+  },
+  "mindset-dweck--19": {
+   "file": "mindset-dweck--19.mp3",
+   "duration_s": 56.96,
+   "voice": "af_sarah",
+   "hash": "a28b12d85e1b0f1f"
+  },
+  "mindset-dweck--20": {
+   "file": "mindset-dweck--20.mp3",
+   "duration_s": 49.55,
+   "voice": "af_sarah",
+   "hash": "1ee705323b954150"
+  },
+  "mindset-dweck--21": {
+   "file": "mindset-dweck--21.mp3",
+   "duration_s": 51.62,
+   "voice": "af_sarah",
+   "hash": "7228e5f098775a93"
+  },
+  "mindset-dweck--22": {
+   "file": "mindset-dweck--22.mp3",
+   "duration_s": 52.75,
+   "voice": "af_sarah",
+   "hash": "cbf8a1ff879213ae"
+  },
+  "mindset-dweck--23": {
+   "file": "mindset-dweck--23.mp3",
+   "duration_s": 47.23,
+   "voice": "af_sarah",
+   "hash": "6e81160daf639403"
+  },
+  "mindset-dweck--24": {
+   "file": "mindset-dweck--24.mp3",
+   "duration_s": 51.56,
+   "voice": "af_sarah",
+   "hash": "a8374bc038056275"
+  },
+  "mindset-dweck--25": {
+   "file": "mindset-dweck--25.mp3",
+   "duration_s": 55.47,
+   "voice": "af_sarah",
+   "hash": "aeac80750cae0ff9"
+  },
+  "mindset-dweck--26": {
+   "file": "mindset-dweck--26.mp3",
+   "duration_s": 48.17,
+   "voice": "af_sarah",
+   "hash": "a7cad60d18641d25"
+  },
+  "mindset-dweck--27": {
+   "file": "mindset-dweck--27.mp3",
+   "duration_s": 49.87,
+   "voice": "af_sarah",
+   "hash": "b5d8384dd9aae294"
+  },
+  "mindset-dweck--28": {
+   "file": "mindset-dweck--28.mp3",
+   "duration_s": 49.53,
+   "voice": "af_sarah",
+   "hash": "5f109fc6ceee6e91"
+  },
+  "mindset-dweck--29": {
+   "file": "mindset-dweck--29.mp3",
+   "duration_s": 47.78,
+   "voice": "af_sarah",
+   "hash": "a3d6d0e650cc2e13"
+  },
+  "mindset-dweck--30": {
+   "file": "mindset-dweck--30.mp3",
+   "duration_s": 43.75,
+   "voice": "af_sarah",
+   "hash": "bd9103febd4ffbb0"
+  },
+  "mini-habits-guise--01": {
+   "file": "mini-habits-guise--01.mp3",
+   "duration_s": 38.63,
+   "voice": "am_liam",
+   "hash": "341d280368cbc31b"
+  },
+  "mini-habits-guise--02": {
+   "file": "mini-habits-guise--02.mp3",
+   "duration_s": 37.93,
+   "voice": "am_liam",
+   "hash": "c7389da19e94e753"
+  },
+  "mini-habits-guise--03": {
+   "file": "mini-habits-guise--03.mp3",
+   "duration_s": 38.95,
+   "voice": "am_liam",
+   "hash": "85e396e5f01d0fd3"
+  },
+  "mini-habits-guise--04": {
+   "file": "mini-habits-guise--04.mp3",
+   "duration_s": 36.6,
+   "voice": "am_liam",
+   "hash": "11d383b51c97112f"
+  },
+  "mini-habits-guise--05": {
+   "file": "mini-habits-guise--05.mp3",
+   "duration_s": 39.85,
+   "voice": "am_liam",
+   "hash": "e989f2abd8808795"
+  },
+  "mini-habits-guise--06": {
+   "file": "mini-habits-guise--06.mp3",
+   "duration_s": 43.39,
+   "voice": "am_liam",
+   "hash": "8d76d408a2884187"
+  },
+  "mini-habits-guise--07": {
+   "file": "mini-habits-guise--07.mp3",
+   "duration_s": 46.39,
+   "voice": "am_liam",
+   "hash": "2c47446109cd8575"
+  },
+  "mini-habits-guise--08": {
+   "file": "mini-habits-guise--08.mp3",
+   "duration_s": 40.25,
+   "voice": "am_liam",
+   "hash": "ed158a9601fb0d8c"
+  },
+  "mini-habits-guise--09": {
+   "file": "mini-habits-guise--09.mp3",
+   "duration_s": 40.85,
+   "voice": "am_liam",
+   "hash": "5ca124bf8fa2bdb7"
+  },
+  "mini-habits-guise--10": {
+   "file": "mini-habits-guise--10.mp3",
+   "duration_s": 42.51,
+   "voice": "am_liam",
+   "hash": "ce6044e164e3fddc"
+  },
+  "mini-habits-guise--11": {
+   "file": "mini-habits-guise--11.mp3",
+   "duration_s": 41.62,
+   "voice": "am_liam",
+   "hash": "210e6d5ab4416724"
+  },
+  "mini-habits-guise--12": {
+   "file": "mini-habits-guise--12.mp3",
+   "duration_s": 41.04,
+   "voice": "am_liam",
+   "hash": "e01caf816c3a1fb3"
+  },
+  "mini-habits-guise--13": {
+   "file": "mini-habits-guise--13.mp3",
+   "duration_s": 49.37,
+   "voice": "am_liam",
+   "hash": "630e5919c3792419"
+  },
+  "mini-habits-guise--14": {
+   "file": "mini-habits-guise--14.mp3",
+   "duration_s": 37.73,
+   "voice": "am_liam",
+   "hash": "54e9ad52f0e751ec"
+  },
+  "mini-habits-guise--15": {
+   "file": "mini-habits-guise--15.mp3",
+   "duration_s": 39.61,
+   "voice": "am_liam",
+   "hash": "34897cd45367cddc"
+  },
+  "mini-habits-guise--16": {
+   "file": "mini-habits-guise--16.mp3",
+   "duration_s": 42.34,
+   "voice": "am_liam",
+   "hash": "3dc5850f43ca1f57"
+  },
+  "mini-habits-guise--17": {
+   "file": "mini-habits-guise--17.mp3",
+   "duration_s": 40.04,
+   "voice": "am_liam",
+   "hash": "928f7623dc876f41"
+  },
+  "mini-habits-guise--18": {
+   "file": "mini-habits-guise--18.mp3",
+   "duration_s": 39.31,
+   "voice": "am_liam",
+   "hash": "c334f318e6c2b7e3"
+  },
+  "mini-habits-guise--19": {
+   "file": "mini-habits-guise--19.mp3",
+   "duration_s": 37.56,
+   "voice": "am_liam",
+   "hash": "0f0a9732176dd6d8"
+  },
+  "mini-habits-guise--20": {
+   "file": "mini-habits-guise--20.mp3",
+   "duration_s": 41.19,
+   "voice": "am_liam",
+   "hash": "66876b43c80fb211"
+  },
+  "mini-habits-guise--21": {
+   "file": "mini-habits-guise--21.mp3",
+   "duration_s": 36.15,
+   "voice": "am_liam",
+   "hash": "f28c67fb948b7fe6"
+  },
+  "mini-habits-guise--22": {
+   "file": "mini-habits-guise--22.mp3",
+   "duration_s": 37.03,
+   "voice": "am_liam",
+   "hash": "f8dff05f990f26d5"
+  },
+  "mini-habits-guise--23": {
+   "file": "mini-habits-guise--23.mp3",
+   "duration_s": 38.27,
+   "voice": "am_liam",
+   "hash": "8b5b7564d11028c2"
+  },
+  "mini-habits-guise--24": {
+   "file": "mini-habits-guise--24.mp3",
+   "duration_s": 36.99,
+   "voice": "am_liam",
+   "hash": "276ad9712de40170"
+  },
+  "mini-habits-guise--25": {
+   "file": "mini-habits-guise--25.mp3",
+   "duration_s": 36.5,
+   "voice": "am_liam",
+   "hash": "f8d8cff99021bb1c"
+  },
+  "mini-habits-guise--26": {
+   "file": "mini-habits-guise--26.mp3",
+   "duration_s": 39.5,
+   "voice": "am_liam",
+   "hash": "7dd25aaedc013ffb"
+  },
+  "mini-habits-guise--27": {
+   "file": "mini-habits-guise--27.mp3",
+   "duration_s": 41.38,
+   "voice": "am_liam",
+   "hash": "6a5ad45d16c442f5"
+  },
+  "mini-habits-guise--28": {
+   "file": "mini-habits-guise--28.mp3",
+   "duration_s": 37.58,
+   "voice": "am_liam",
+   "hash": "dadc13756417a7f1"
+  },
+  "mini-habits-guise--29": {
+   "file": "mini-habits-guise--29.mp3",
+   "duration_s": 38.27,
+   "voice": "am_liam",
+   "hash": "c248e88898e43c01"
+  },
+  "montessori-own-handbook--01": {
+   "file": "montessori-own-handbook--01.mp3",
+   "duration_s": 49.0,
+   "voice": "bf_emma",
+   "hash": "0c9b109419498e28"
+  },
+  "montessori-own-handbook--02": {
+   "file": "montessori-own-handbook--02.mp3",
+   "duration_s": 44.86,
+   "voice": "bf_emma",
+   "hash": "d2e5c055716c01b0"
+  },
+  "montessori-own-handbook--03": {
+   "file": "montessori-own-handbook--03.mp3",
+   "duration_s": 42.81,
+   "voice": "bf_emma",
+   "hash": "ab5c810e2f5caead"
+  },
+  "montessori-own-handbook--04": {
+   "file": "montessori-own-handbook--04.mp3",
+   "duration_s": 46.39,
+   "voice": "bf_emma",
+   "hash": "67e99e774751431f"
+  },
+  "montessori-own-handbook--05": {
+   "file": "montessori-own-handbook--05.mp3",
+   "duration_s": 48.93,
+   "voice": "bf_emma",
+   "hash": "7a1a698832bc8d9c"
+  },
+  "montessori-own-handbook--06": {
+   "file": "montessori-own-handbook--06.mp3",
+   "duration_s": 45.8,
+   "voice": "bf_emma",
+   "hash": "65ffdc9c67ac12c7"
+  },
+  "montessori-own-handbook--07": {
+   "file": "montessori-own-handbook--07.mp3",
+   "duration_s": 47.91,
+   "voice": "bf_emma",
+   "hash": "75551cbdce713417"
+  },
+  "montessori-own-handbook--08": {
+   "file": "montessori-own-handbook--08.mp3",
+   "duration_s": 42.9,
+   "voice": "bf_emma",
+   "hash": "2bbdcab2533ba827"
+  },
+  "montessori-own-handbook--09": {
+   "file": "montessori-own-handbook--09.mp3",
+   "duration_s": 43.17,
+   "voice": "bf_emma",
+   "hash": "7e58854a4605d548"
+  },
+  "montessori-own-handbook--10": {
+   "file": "montessori-own-handbook--10.mp3",
+   "duration_s": 45.78,
+   "voice": "bf_emma",
+   "hash": "a74b0d62bc0dca94"
+  },
+  "montessori-own-handbook--11": {
+   "file": "montessori-own-handbook--11.mp3",
+   "duration_s": 44.33,
+   "voice": "bf_emma",
+   "hash": "943329424b0b9964"
+  },
+  "montessori-own-handbook--12": {
+   "file": "montessori-own-handbook--12.mp3",
+   "duration_s": 41.74,
+   "voice": "bf_emma",
+   "hash": "06285d181258a13b"
+  },
+  "montessori-own-handbook--13": {
+   "file": "montessori-own-handbook--13.mp3",
+   "duration_s": 45.69,
+   "voice": "bf_emma",
+   "hash": "ee088d6b684fb283"
+  },
+  "montessori-own-handbook--14": {
+   "file": "montessori-own-handbook--14.mp3",
+   "duration_s": 46.25,
+   "voice": "bf_emma",
+   "hash": "961ec87b791c63a9"
+  },
+  "montessori-own-handbook--15": {
+   "file": "montessori-own-handbook--15.mp3",
+   "duration_s": 45.63,
+   "voice": "bf_emma",
+   "hash": "df48b73de75dcbbb"
+  },
+  "montessori-own-handbook--16": {
+   "file": "montessori-own-handbook--16.mp3",
+   "duration_s": 46.67,
+   "voice": "bf_emma",
+   "hash": "cd4e18d5867dfe70"
+  },
+  "montessori-own-handbook--17": {
+   "file": "montessori-own-handbook--17.mp3",
+   "duration_s": 47.23,
+   "voice": "bf_emma",
+   "hash": "05d1c466da83ee71"
+  },
+  "montessori-own-handbook--18": {
+   "file": "montessori-own-handbook--18.mp3",
+   "duration_s": 47.97,
+   "voice": "bf_emma",
+   "hash": "0e8fb534c3226721"
+  },
+  "montessori-own-handbook--19": {
+   "file": "montessori-own-handbook--19.mp3",
+   "duration_s": 44.79,
+   "voice": "bf_emma",
+   "hash": "17f54f9bd035ebe0"
+  },
+  "montessori-own-handbook--20": {
+   "file": "montessori-own-handbook--20.mp3",
+   "duration_s": 43.86,
+   "voice": "bf_emma",
+   "hash": "7ecb3d0689505c77"
+  },
+  "montessori-own-handbook--21": {
+   "file": "montessori-own-handbook--21.mp3",
+   "duration_s": 46.01,
+   "voice": "bf_emma",
+   "hash": "5ce55215c435e78a"
+  },
+  "montessori-own-handbook--22": {
+   "file": "montessori-own-handbook--22.mp3",
+   "duration_s": 41.77,
+   "voice": "bf_emma",
+   "hash": "e2d4127efa21c310"
+  },
+  "montessori-own-handbook--23": {
+   "file": "montessori-own-handbook--23.mp3",
+   "duration_s": 43.51,
+   "voice": "bf_emma",
+   "hash": "81edc0ef39736e7d"
+  },
+  "montessori-own-handbook--24": {
+   "file": "montessori-own-handbook--24.mp3",
+   "duration_s": 43.75,
+   "voice": "bf_emma",
+   "hash": "e7225a626f5945ac"
+  },
+  "montessori-own-handbook--25": {
+   "file": "montessori-own-handbook--25.mp3",
+   "duration_s": 42.55,
+   "voice": "bf_emma",
+   "hash": "bb6ec0cd3e83139f"
+  },
+  "montessori-own-handbook--26": {
+   "file": "montessori-own-handbook--26.mp3",
+   "duration_s": 41.94,
+   "voice": "bf_emma",
+   "hash": "0557908adf4ce23c"
+  },
+  "montessori-own-handbook--27": {
+   "file": "montessori-own-handbook--27.mp3",
+   "duration_s": 44.43,
+   "voice": "bf_emma",
+   "hash": "e477c16003cc1ec4"
+  },
+  "montessori-own-handbook--28": {
+   "file": "montessori-own-handbook--28.mp3",
+   "duration_s": 44.28,
+   "voice": "bf_emma",
+   "hash": "c251acd0ce7b3db2"
+  },
+  "montessori-own-handbook--29": {
+   "file": "montessori-own-handbook--29.mp3",
+   "duration_s": 46.37,
+   "voice": "bf_emma",
+   "hash": "a81cfa40fdfa4b99"
+  },
+  "montessori-own-handbook--30": {
+   "file": "montessori-own-handbook--30.mp3",
+   "duration_s": 48.72,
+   "voice": "bf_emma",
+   "hash": "4c162c4f80b17606"
+  },
+  "moral-letters-seneca--01": {
+   "file": "moral-letters-seneca--01.mp3",
+   "duration_s": 51.66,
+   "voice": "bm_george",
+   "hash": "4a9e7acda64a9885"
+  },
+  "moral-letters-seneca--02": {
+   "file": "moral-letters-seneca--02.mp3",
+   "duration_s": 51.02,
+   "voice": "bm_george",
+   "hash": "0fd4263ea2632ab0"
+  },
+  "moral-letters-seneca--03": {
+   "file": "moral-letters-seneca--03.mp3",
+   "duration_s": 49.38,
+   "voice": "bm_george",
+   "hash": "39cfe66b9abb1d67"
+  },
+  "moral-letters-seneca--04": {
+   "file": "moral-letters-seneca--04.mp3",
+   "duration_s": 52.09,
+   "voice": "bm_george",
+   "hash": "f10d88507ce30113"
+  },
+  "moral-letters-seneca--05": {
+   "file": "moral-letters-seneca--05.mp3",
+   "duration_s": 53.48,
+   "voice": "bm_george",
+   "hash": "52e4f462a5acdf77"
+  },
+  "moral-letters-seneca--06": {
+   "file": "moral-letters-seneca--06.mp3",
+   "duration_s": 51.07,
+   "voice": "bm_george",
+   "hash": "92c6148e764780c6"
+  },
+  "moral-letters-seneca--07": {
+   "file": "moral-letters-seneca--07.mp3",
+   "duration_s": 52.56,
+   "voice": "bm_george",
+   "hash": "41ecd6e79ee17c65"
+  },
+  "moral-letters-seneca--08": {
+   "file": "moral-letters-seneca--08.mp3",
+   "duration_s": 50.6,
+   "voice": "bm_george",
+   "hash": "14053cd3bc34bf5f"
+  },
+  "moral-letters-seneca--09": {
+   "file": "moral-letters-seneca--09.mp3",
+   "duration_s": 55.44,
+   "voice": "bm_george",
+   "hash": "d4c04ee85e571d18"
+  },
+  "moral-letters-seneca--10": {
+   "file": "moral-letters-seneca--10.mp3",
+   "duration_s": 50.92,
+   "voice": "bm_george",
+   "hash": "d01dd1161f9f2efa"
+  },
+  "moral-letters-seneca--11": {
+   "file": "moral-letters-seneca--11.mp3",
+   "duration_s": 51.81,
+   "voice": "bm_george",
+   "hash": "1c0e9e61a6c90fad"
+  },
+  "moral-letters-seneca--12": {
+   "file": "moral-letters-seneca--12.mp3",
+   "duration_s": 50.23,
+   "voice": "bm_george",
+   "hash": "3e5dcec9c5b7482e"
+  },
+  "moral-letters-seneca--13": {
+   "file": "moral-letters-seneca--13.mp3",
+   "duration_s": 49.0,
+   "voice": "bm_george",
+   "hash": "10a87c671926e95a"
+  },
+  "moral-letters-seneca--14": {
+   "file": "moral-letters-seneca--14.mp3",
+   "duration_s": 60.65,
+   "voice": "bm_george",
+   "hash": "43daecf48f38e479"
+  },
+  "moral-letters-seneca--15": {
+   "file": "moral-letters-seneca--15.mp3",
+   "duration_s": 49.23,
+   "voice": "bm_george",
+   "hash": "361bb779c6292a50"
+  },
+  "moral-letters-seneca--16": {
+   "file": "moral-letters-seneca--16.mp3",
+   "duration_s": 48.91,
+   "voice": "bm_george",
+   "hash": "9fd3633caa6f79f3"
+  },
+  "moral-letters-seneca--17": {
+   "file": "moral-letters-seneca--17.mp3",
+   "duration_s": 52.99,
+   "voice": "bm_george",
+   "hash": "ecb1e3be7b95078d"
+  },
+  "moral-letters-seneca--18": {
+   "file": "moral-letters-seneca--18.mp3",
+   "duration_s": 51.92,
+   "voice": "bm_george",
+   "hash": "ecb5113b4a1890ca"
+  },
+  "moral-letters-seneca--19": {
+   "file": "moral-letters-seneca--19.mp3",
+   "duration_s": 51.6,
+   "voice": "bm_george",
+   "hash": "5580664d3b7422ea"
+  },
+  "moral-letters-seneca--20": {
+   "file": "moral-letters-seneca--20.mp3",
+   "duration_s": 51.11,
+   "voice": "bm_george",
+   "hash": "1c59fea1ba5ee926"
+  },
+  "moral-letters-seneca--21": {
+   "file": "moral-letters-seneca--21.mp3",
+   "duration_s": 58.9,
+   "voice": "bm_george",
+   "hash": "f7534b48953a4b13"
+  },
+  "moral-letters-seneca--22": {
+   "file": "moral-letters-seneca--22.mp3",
+   "duration_s": 48.02,
+   "voice": "bm_george",
+   "hash": "97986e26ecb4e13e"
+  },
+  "moral-letters-seneca--23": {
+   "file": "moral-letters-seneca--23.mp3",
+   "duration_s": 52.09,
+   "voice": "bm_george",
+   "hash": "b3edbc659314a0b6"
+  },
+  "moral-letters-seneca--24": {
+   "file": "moral-letters-seneca--24.mp3",
+   "duration_s": 60.51,
+   "voice": "bm_george",
+   "hash": "d4b42be1f9ccb3fd"
+  },
+  "moral-letters-seneca--25": {
+   "file": "moral-letters-seneca--25.mp3",
+   "duration_s": 49.02,
+   "voice": "bm_george",
+   "hash": "dfebf19fe7e34584"
+  },
+  "moral-letters-seneca--26": {
+   "file": "moral-letters-seneca--26.mp3",
+   "duration_s": 46.76,
+   "voice": "bm_george",
+   "hash": "0e95185e91710d75"
+  },
+  "moral-letters-seneca--27": {
+   "file": "moral-letters-seneca--27.mp3",
+   "duration_s": 58.86,
+   "voice": "bm_george",
+   "hash": "fd7373e1726a692c"
+  },
+  "moral-letters-seneca--28": {
+   "file": "moral-letters-seneca--28.mp3",
+   "duration_s": 58.61,
+   "voice": "bm_george",
+   "hash": "c292c44ab55cf45a"
+  },
+  "moral-letters-seneca--29": {
+   "file": "moral-letters-seneca--29.mp3",
+   "duration_s": 52.05,
+   "voice": "bm_george",
+   "hash": "8142cbecc406e5b2"
+  },
+  "moral-letters-seneca--30": {
+   "file": "moral-letters-seneca--30.mp3",
+   "duration_s": 51.9,
+   "voice": "bm_george",
+   "hash": "8a1a296d4d55dd4f"
+  },
+  "moral-letters-seneca--31": {
+   "file": "moral-letters-seneca--31.mp3",
+   "duration_s": 46.97,
+   "voice": "bm_george",
+   "hash": "6d1426f9873181e7"
+  },
+  "moral-letters-seneca--32": {
+   "file": "moral-letters-seneca--32.mp3",
+   "duration_s": 50.85,
+   "voice": "bm_george",
+   "hash": "aceebdafb8cbee8e"
+  },
+  "moral-letters-seneca--33": {
+   "file": "moral-letters-seneca--33.mp3",
+   "duration_s": 49.42,
+   "voice": "bm_george",
+   "hash": "38ce4aefd82257ae"
+  },
+  "moral-letters-seneca--34": {
+   "file": "moral-letters-seneca--34.mp3",
+   "duration_s": 47.33,
+   "voice": "bm_george",
+   "hash": "b4e236c87219a5dd"
+  },
+  "moral-letters-seneca--35": {
+   "file": "moral-letters-seneca--35.mp3",
+   "duration_s": 48.27,
+   "voice": "bm_george",
+   "hash": "b4969543cd9c815a"
+  },
+  "moral-letters-seneca--36": {
+   "file": "moral-letters-seneca--36.mp3",
+   "duration_s": 48.74,
+   "voice": "bm_george",
+   "hash": "ed68e7446913ff24"
+  },
+  "moral-letters-seneca--37": {
+   "file": "moral-letters-seneca--37.mp3",
+   "duration_s": 46.91,
+   "voice": "bm_george",
+   "hash": "de7f2973ae1d7aff"
+  },
+  "moral-letters-seneca--38": {
+   "file": "moral-letters-seneca--38.mp3",
+   "duration_s": 46.74,
+   "voice": "bm_george",
+   "hash": "958ec202e04e3d25"
+  },
+  "moral-letters-seneca--39": {
+   "file": "moral-letters-seneca--39.mp3",
+   "duration_s": 49.7,
+   "voice": "bm_george",
+   "hash": "1a90fd2c75fa990c"
+  },
+  "moral-letters-seneca--40": {
+   "file": "moral-letters-seneca--40.mp3",
+   "duration_s": 48.74,
+   "voice": "bm_george",
+   "hash": "f3aa0e64bbbf33d9"
+  },
+  "nci-grief-bereavement-loss--01": {
+   "file": "nci-grief-bereavement-loss--01.mp3",
+   "duration_s": 64.67,
+   "voice": "af_heart",
+   "hash": "4ab462a5a0792168"
+  },
+  "nci-grief-bereavement-loss--02": {
+   "file": "nci-grief-bereavement-loss--02.mp3",
+   "duration_s": 63.13,
+   "voice": "af_heart",
+   "hash": "974cc331ddee8761"
+  },
+  "nci-grief-bereavement-loss--03": {
+   "file": "nci-grief-bereavement-loss--03.mp3",
+   "duration_s": 59.23,
+   "voice": "af_heart",
+   "hash": "1f42b3f5f8ae701a"
+  },
+  "nci-grief-bereavement-loss--04": {
+   "file": "nci-grief-bereavement-loss--04.mp3",
+   "duration_s": 64.15,
+   "voice": "af_heart",
+   "hash": "fb78c19c7c20b7be"
+  },
+  "nci-grief-bereavement-loss--05": {
+   "file": "nci-grief-bereavement-loss--05.mp3",
+   "duration_s": 62.21,
+   "voice": "af_heart",
+   "hash": "594d4bdf0fb98655"
+  },
+  "nci-grief-bereavement-loss--06": {
+   "file": "nci-grief-bereavement-loss--06.mp3",
+   "duration_s": 62.81,
+   "voice": "af_heart",
+   "hash": "c87cfa93c126ddb0"
+  },
+  "nci-grief-bereavement-loss--07": {
+   "file": "nci-grief-bereavement-loss--07.mp3",
+   "duration_s": 61.1,
+   "voice": "af_heart",
+   "hash": "8001ddaa5c13fbf6"
+  },
+  "nci-grief-bereavement-loss--08": {
+   "file": "nci-grief-bereavement-loss--08.mp3",
+   "duration_s": 67.65,
+   "voice": "af_heart",
+   "hash": "d55b9b805fb79eeb"
+  },
+  "nci-grief-bereavement-loss--09": {
+   "file": "nci-grief-bereavement-loss--09.mp3",
+   "duration_s": 65.48,
+   "voice": "af_heart",
+   "hash": "c7435c371ac35e50"
+  },
+  "nci-grief-bereavement-loss--10": {
+   "file": "nci-grief-bereavement-loss--10.mp3",
+   "duration_s": 59.4,
+   "voice": "af_heart",
+   "hash": "d27fb19a7cb3f6f4"
+  },
+  "nci-grief-bereavement-loss--11": {
+   "file": "nci-grief-bereavement-loss--11.mp3",
+   "duration_s": 62.55,
+   "voice": "af_heart",
+   "hash": "7d3a041883373015"
+  },
+  "nci-grief-bereavement-loss--12": {
+   "file": "nci-grief-bereavement-loss--12.mp3",
+   "duration_s": 61.06,
+   "voice": "af_heart",
+   "hash": "fa60687310c4f718"
+  },
+  "nhs-breathing-exercises-for-stress--01": {
+   "file": "nhs-breathing-exercises-for-stress--01.mp3",
+   "duration_s": 42.98,
+   "voice": "bf_emma",
+   "hash": "428731af8de5fd6c"
+  },
+  "nhs-breathing-exercises-for-stress--02": {
+   "file": "nhs-breathing-exercises-for-stress--02.mp3",
+   "duration_s": 44.36,
+   "voice": "bf_emma",
+   "hash": "8c0b26854302f678"
+  },
+  "nhs-breathing-exercises-for-stress--03": {
+   "file": "nhs-breathing-exercises-for-stress--03.mp3",
+   "duration_s": 47.92,
+   "voice": "bf_emma",
+   "hash": "70b9815ca7c4814f"
+  },
+  "nhs-five-steps-to-mental-wellbeing--01": {
+   "file": "nhs-five-steps-to-mental-wellbeing--01.mp3",
+   "duration_s": 46.81,
+   "voice": "bf_emma",
+   "hash": "3b097648a7c0c61f"
+  },
+  "nhs-five-steps-to-mental-wellbeing--02": {
+   "file": "nhs-five-steps-to-mental-wellbeing--02.mp3",
+   "duration_s": 46.64,
+   "voice": "bf_emma",
+   "hash": "e1bdfe567d1332b2"
+  },
+  "nhs-five-steps-to-mental-wellbeing--03": {
+   "file": "nhs-five-steps-to-mental-wellbeing--03.mp3",
+   "duration_s": 48.41,
+   "voice": "bf_emma",
+   "hash": "88ee4c0ddd82baa6"
+  },
+  "nhs-five-steps-to-mental-wellbeing--04": {
+   "file": "nhs-five-steps-to-mental-wellbeing--04.mp3",
+   "duration_s": 45.42,
+   "voice": "bf_emma",
+   "hash": "2832f95dcfbe3e27"
+  },
+  "nhs-five-steps-to-mental-wellbeing--05": {
+   "file": "nhs-five-steps-to-mental-wellbeing--05.mp3",
+   "duration_s": 51.32,
+   "voice": "bf_emma",
+   "hash": "db6be7c9cfbb9a0b"
+  },
+  "nhs-grief-bereavement--01": {
+   "file": "nhs-grief-bereavement--01.mp3",
+   "duration_s": 51.67,
+   "voice": "bf_emma",
+   "hash": "92a22e3a3008b38d"
+  },
+  "nhs-grief-bereavement--02": {
+   "file": "nhs-grief-bereavement--02.mp3",
+   "duration_s": 50.22,
+   "voice": "bf_emma",
+   "hash": "24a7a54f095abe01"
+  },
+  "nhs-grief-bereavement--03": {
+   "file": "nhs-grief-bereavement--03.mp3",
+   "duration_s": 51.37,
+   "voice": "bf_emma",
+   "hash": "ee889c162a5db82e"
+  },
+  "nhs-grief-bereavement--04": {
+   "file": "nhs-grief-bereavement--04.mp3",
+   "duration_s": 52.93,
+   "voice": "bf_emma",
+   "hash": "923a4694a5b8ad3d"
+  },
+  "nhs-grief-bereavement--05": {
+   "file": "nhs-grief-bereavement--05.mp3",
+   "duration_s": 51.18,
+   "voice": "bf_emma",
+   "hash": "12fcfaa01e48ad79"
+  },
+  "nhs-grief-bereavement--06": {
+   "file": "nhs-grief-bereavement--06.mp3",
+   "duration_s": 50.56,
+   "voice": "bf_emma",
+   "hash": "8542fbc88d41cc50"
+  },
+  "nhs-grief-bereavement--07": {
+   "file": "nhs-grief-bereavement--07.mp3",
+   "duration_s": 45.53,
+   "voice": "bf_emma",
+   "hash": "4f871800499a1d00"
+  },
+  "nhs-grief-bereavement--08": {
+   "file": "nhs-grief-bereavement--08.mp3",
    "duration_s": 47.88,
-   "voice": "bm_george"
+   "voice": "bf_emma",
+   "hash": "620f57fbc00c7415"
+  },
+  "nhs-grief-bereavement--09": {
+   "file": "nhs-grief-bereavement--09.mp3",
+   "duration_s": 51.37,
+   "voice": "bf_emma",
+   "hash": "bb8beddc2d0bc31e"
+  },
+  "nhs-grief-bereavement--10": {
+   "file": "nhs-grief-bereavement--10.mp3",
+   "duration_s": 52.57,
+   "voice": "bf_emma",
+   "hash": "60ea118be5226c17"
+  },
+  "nhs-grief-bereavement--11": {
+   "file": "nhs-grief-bereavement--11.mp3",
+   "duration_s": 52.4,
+   "voice": "bf_emma",
+   "hash": "c870916f40a05c7a"
+  },
+  "nhs-grief-bereavement--12": {
+   "file": "nhs-grief-bereavement--12.mp3",
+   "duration_s": 57.18,
+   "voice": "bf_emma",
+   "hash": "a0f9c702d9b6fb7f"
+  },
+  "nhs-grief-bereavement--13": {
+   "file": "nhs-grief-bereavement--13.mp3",
+   "duration_s": 51.84,
+   "voice": "bf_emma",
+   "hash": "c7b0c6bbf4fba0a9"
+  },
+  "nhs-grief-bereavement--14": {
+   "file": "nhs-grief-bereavement--14.mp3",
+   "duration_s": 49.58,
+   "voice": "bf_emma",
+   "hash": "681cb5c3548c53a6"
+  },
+  "nhs-grief-bereavement--15": {
+   "file": "nhs-grief-bereavement--15.mp3",
+   "duration_s": 49.8,
+   "voice": "bf_emma",
+   "hash": "aea1c8b557e13f8c"
+  },
+  "nhs-grief-bereavement--16": {
+   "file": "nhs-grief-bereavement--16.mp3",
+   "duration_s": 53.21,
+   "voice": "bf_emma",
+   "hash": "0587265f8d0c38ad"
+  },
+  "nhs-grief-bereavement--17": {
+   "file": "nhs-grief-bereavement--17.mp3",
+   "duration_s": 49.84,
+   "voice": "bf_emma",
+   "hash": "e154b593087eed22"
+  },
+  "nhs-grief-bereavement--18": {
+   "file": "nhs-grief-bereavement--18.mp3",
+   "duration_s": 53.08,
+   "voice": "bf_emma",
+   "hash": "91f83b472dd554ea"
+  },
+  "nhs-live-well--01": {
+   "file": "nhs-live-well--01.mp3",
+   "duration_s": 51.35,
+   "voice": "bf_emma",
+   "hash": "cfa1c8a1e4afdffd"
+  },
+  "nhs-live-well--02": {
+   "file": "nhs-live-well--02.mp3",
+   "duration_s": 56.67,
+   "voice": "bf_emma",
+   "hash": "5e93359ceca7d3a0"
+  },
+  "nhs-live-well--03": {
+   "file": "nhs-live-well--03.mp3",
+   "duration_s": 60.48,
+   "voice": "bf_emma",
+   "hash": "a6d4f68882aebed2"
+  },
+  "nhs-live-well--04": {
+   "file": "nhs-live-well--04.mp3",
+   "duration_s": 49.37,
+   "voice": "bf_emma",
+   "hash": "8d5f1d2c984d601e"
+  },
+  "nhs-live-well--05": {
+   "file": "nhs-live-well--05.mp3",
+   "duration_s": 55.51,
+   "voice": "bf_emma",
+   "hash": "2abcee8ff5d9801a"
+  },
+  "nhs-live-well--06": {
+   "file": "nhs-live-well--06.mp3",
+   "duration_s": 60.83,
+   "voice": "bf_emma",
+   "hash": "ec594c443ec1f2b3"
+  },
+  "nhs-live-well--07": {
+   "file": "nhs-live-well--07.mp3",
+   "duration_s": 55.51,
+   "voice": "bf_emma",
+   "hash": "a58e7f0b83b56150"
+  },
+  "nhs-live-well--08": {
+   "file": "nhs-live-well--08.mp3",
+   "duration_s": 60.04,
+   "voice": "bf_emma",
+   "hash": "e5a24baf2173ff6d"
+  },
+  "nhs-live-well--09": {
+   "file": "nhs-live-well--09.mp3",
+   "duration_s": 49.65,
+   "voice": "bf_emma",
+   "hash": "1a434241bd3964a0"
+  },
+  "nhs-live-well--10": {
+   "file": "nhs-live-well--10.mp3",
+   "duration_s": 57.92,
+   "voice": "bf_emma",
+   "hash": "1198852cdea8c670"
+  },
+  "nhs-live-well--11": {
+   "file": "nhs-live-well--11.mp3",
+   "duration_s": 52.46,
+   "voice": "bf_emma",
+   "hash": "59ef522445e48dc6"
+  },
+  "nhs-live-well--12": {
+   "file": "nhs-live-well--12.mp3",
+   "duration_s": 55.04,
+   "voice": "bf_emma",
+   "hash": "da51edf0ac85131a"
+  },
+  "nhs-live-well--13": {
+   "file": "nhs-live-well--13.mp3",
+   "duration_s": 52.85,
+   "voice": "bf_emma",
+   "hash": "f7a424213e0dd521"
+  },
+  "nhs-live-well--14": {
+   "file": "nhs-live-well--14.mp3",
+   "duration_s": 53.17,
+   "voice": "bf_emma",
+   "hash": "cbc348173a80b318"
+  },
+  "nhs-live-well--15": {
+   "file": "nhs-live-well--15.mp3",
+   "duration_s": 54.92,
+   "voice": "bf_emma",
+   "hash": "b321f18300312c24"
+  },
+  "nhs-live-well--16": {
+   "file": "nhs-live-well--16.mp3",
+   "duration_s": 54.57,
+   "voice": "bf_emma",
+   "hash": "308187b523ddb97e"
+  },
+  "nhs-live-well--17": {
+   "file": "nhs-live-well--17.mp3",
+   "duration_s": 54.47,
+   "voice": "bf_emma",
+   "hash": "798d8218561ab57c"
+  },
+  "nhs-live-well--18": {
+   "file": "nhs-live-well--18.mp3",
+   "duration_s": 50.69,
+   "voice": "bf_emma",
+   "hash": "9a63e5548d53862b"
+  },
+  "nhs-live-well--19": {
+   "file": "nhs-live-well--19.mp3",
+   "duration_s": 49.43,
+   "voice": "bf_emma",
+   "hash": "8c471ef9ff91ce33"
+  },
+  "nhs-live-well--20": {
+   "file": "nhs-live-well--20.mp3",
+   "duration_s": 54.32,
+   "voice": "bf_emma",
+   "hash": "9b9d5d5d1c9dac9c"
+  },
+  "nhs-live-well--21": {
+   "file": "nhs-live-well--21.mp3",
+   "duration_s": 51.63,
+   "voice": "bf_emma",
+   "hash": "96058d3f599ba271"
+  },
+  "nhs-live-well--22": {
+   "file": "nhs-live-well--22.mp3",
+   "duration_s": 62.66,
+   "voice": "bf_emma",
+   "hash": "4e48e3b296d23fc9"
+  },
+  "nhs-live-well--23": {
+   "file": "nhs-live-well--23.mp3",
+   "duration_s": 57.88,
+   "voice": "bf_emma",
+   "hash": "675fd07a4f1177f9"
+  },
+  "nhs-live-well--24": {
+   "file": "nhs-live-well--24.mp3",
+   "duration_s": 50.76,
+   "voice": "bf_emma",
+   "hash": "ce0f15a7ba9cd674"
+  },
+  "nhs-live-well--25": {
+   "file": "nhs-live-well--25.mp3",
+   "duration_s": 51.69,
+   "voice": "bf_emma",
+   "hash": "a5ec4f35ec62306e"
+  },
+  "nhs-live-well--26": {
+   "file": "nhs-live-well--26.mp3",
+   "duration_s": 53.79,
+   "voice": "bf_emma",
+   "hash": "bdc17ea15202335b"
+  },
+  "nhs-live-well--27": {
+   "file": "nhs-live-well--27.mp3",
+   "duration_s": 58.14,
+   "voice": "bf_emma",
+   "hash": "0c5a1acd2a10932d"
+  },
+  "nhs-live-well--28": {
+   "file": "nhs-live-well--28.mp3",
+   "duration_s": 57.07,
+   "voice": "bf_emma",
+   "hash": "c62762bb60631ee6"
+  },
+  "nhs-live-well--29": {
+   "file": "nhs-live-well--29.mp3",
+   "duration_s": 57.09,
+   "voice": "bf_emma",
+   "hash": "01b4c2a74cded9bb"
+  },
+  "nhs-live-well--30": {
+   "file": "nhs-live-well--30.mp3",
+   "duration_s": 54.06,
+   "voice": "bf_emma",
+   "hash": "9c749010162f031b"
+  },
+  "nhs-mental-health-self-help--01": {
+   "file": "nhs-mental-health-self-help--01.mp3",
+   "duration_s": 58.86,
+   "voice": "bf_emma",
+   "hash": "5f7b0bb5d54d1c19"
+  },
+  "nhs-mental-health-self-help--02": {
+   "file": "nhs-mental-health-self-help--02.mp3",
+   "duration_s": 54.23,
+   "voice": "bf_emma",
+   "hash": "215c397620a0d62f"
+  },
+  "nhs-mental-health-self-help--03": {
+   "file": "nhs-mental-health-self-help--03.mp3",
+   "duration_s": 51.31,
+   "voice": "bf_emma",
+   "hash": "4b44d7c5f54ae9d2"
+  },
+  "nhs-mental-health-self-help--04": {
+   "file": "nhs-mental-health-self-help--04.mp3",
+   "duration_s": 46.92,
+   "voice": "bf_emma",
+   "hash": "889a5923acd91c69"
+  },
+  "nhs-mental-health-self-help--05": {
+   "file": "nhs-mental-health-self-help--05.mp3",
+   "duration_s": 50.14,
+   "voice": "bf_emma",
+   "hash": "b107db9a213635a0"
+  },
+  "nhs-mental-health-self-help--06": {
+   "file": "nhs-mental-health-self-help--06.mp3",
+   "duration_s": 45.93,
+   "voice": "bf_emma",
+   "hash": "1ebe1dffdd4a240e"
+  },
+  "nhs-mental-health-self-help--07": {
+   "file": "nhs-mental-health-self-help--07.mp3",
+   "duration_s": 49.69,
+   "voice": "bf_emma",
+   "hash": "54708fc3613dfaa5"
+  },
+  "nhs-mental-health-self-help--08": {
+   "file": "nhs-mental-health-self-help--08.mp3",
+   "duration_s": 51.37,
+   "voice": "bf_emma",
+   "hash": "d3be7a2073de24c7"
+  },
+  "nhs-mental-health-self-help--09": {
+   "file": "nhs-mental-health-self-help--09.mp3",
+   "duration_s": 46.19,
+   "voice": "bf_emma",
+   "hash": "a76906e754bdb22e"
+  },
+  "nhs-mental-health-self-help--10": {
+   "file": "nhs-mental-health-self-help--10.mp3",
+   "duration_s": 59.59,
+   "voice": "bf_emma",
+   "hash": "7d2d6d48b0599d1f"
+  },
+  "nhs-mental-health-self-help--11": {
+   "file": "nhs-mental-health-self-help--11.mp3",
+   "duration_s": 59.1,
+   "voice": "bf_emma",
+   "hash": "b790eb7a87d5fb58"
+  },
+  "nhs-mental-health-self-help--12": {
+   "file": "nhs-mental-health-self-help--12.mp3",
+   "duration_s": 51.95,
+   "voice": "bf_emma",
+   "hash": "4c012c1210a1be52"
+  },
+  "nhs-mental-health-self-help--13": {
+   "file": "nhs-mental-health-self-help--13.mp3",
+   "duration_s": 57.95,
+   "voice": "bf_emma",
+   "hash": "22b92d19a76bd401"
+  },
+  "nhs-mental-health-self-help--14": {
+   "file": "nhs-mental-health-self-help--14.mp3",
+   "duration_s": 51.93,
+   "voice": "bf_emma",
+   "hash": "a6866a0699bfbe01"
+  },
+  "nhs-mental-health-self-help--15": {
+   "file": "nhs-mental-health-self-help--15.mp3",
+   "duration_s": 54.92,
+   "voice": "bf_emma",
+   "hash": "3e15a7c81b8e21c4"
+  },
+  "nhs-mental-health-self-help--16": {
+   "file": "nhs-mental-health-self-help--16.mp3",
+   "duration_s": 58.63,
+   "voice": "bf_emma",
+   "hash": "29ddaca8f140bb3a"
+  },
+  "nhs-mental-health-self-help--17": {
+   "file": "nhs-mental-health-self-help--17.mp3",
+   "duration_s": 52.38,
+   "voice": "bf_emma",
+   "hash": "a0fd1b9905d52fca"
+  },
+  "nhs-mental-health-self-help--18": {
+   "file": "nhs-mental-health-self-help--18.mp3",
+   "duration_s": 51.99,
+   "voice": "bf_emma",
+   "hash": "604e7320c12c3957"
+  },
+  "nhs-mental-health-self-help--19": {
+   "file": "nhs-mental-health-self-help--19.mp3",
+   "duration_s": 52.61,
+   "voice": "bf_emma",
+   "hash": "5fa8a986d86089fe"
+  },
+  "nhs-mental-health-self-help--20": {
+   "file": "nhs-mental-health-self-help--20.mp3",
+   "duration_s": 49.95,
+   "voice": "bf_emma",
+   "hash": "9d7ce99856d84823"
+  },
+  "nhs-mental-health-self-help--21": {
+   "file": "nhs-mental-health-self-help--21.mp3",
+   "duration_s": 48.17,
+   "voice": "bf_emma",
+   "hash": "1a5dc43c2f660579"
+  },
+  "nhs-mental-health-self-help--22": {
+   "file": "nhs-mental-health-self-help--22.mp3",
+   "duration_s": 55.0,
+   "voice": "bf_emma",
+   "hash": "43543dda50db36ec"
+  },
+  "nhs-mental-health-self-help--23": {
+   "file": "nhs-mental-health-self-help--23.mp3",
+   "duration_s": 59.89,
+   "voice": "bf_emma",
+   "hash": "32c38cb395b03cbb"
+  },
+  "nhs-mental-health-self-help--24": {
+   "file": "nhs-mental-health-self-help--24.mp3",
+   "duration_s": 55.3,
+   "voice": "bf_emma",
+   "hash": "a350a9d2596e21b3"
+  },
+  "nhs-mental-health-self-help--25": {
+   "file": "nhs-mental-health-self-help--25.mp3",
+   "duration_s": 53.08,
+   "voice": "bf_emma",
+   "hash": "c0b25a5086caad5c"
+  },
+  "nhs-mental-health-self-help--26": {
+   "file": "nhs-mental-health-self-help--26.mp3",
+   "duration_s": 54.15,
+   "voice": "bf_emma",
+   "hash": "f07c3deadf09ec4f"
+  },
+  "nhs-mental-health-self-help--27": {
+   "file": "nhs-mental-health-self-help--27.mp3",
+   "duration_s": 56.09,
+   "voice": "bf_emma",
+   "hash": "073ee92c2e4daca5"
+  },
+  "nhs-mental-health-self-help--28": {
+   "file": "nhs-mental-health-self-help--28.mp3",
+   "duration_s": 59.8,
+   "voice": "bf_emma",
+   "hash": "3c26a774088ca677"
+  },
+  "nhs-mental-health-self-help--29": {
+   "file": "nhs-mental-health-self-help--29.mp3",
+   "duration_s": 57.52,
+   "voice": "bf_emma",
+   "hash": "181d4b0d863ed6d2"
+  },
+  "nhs-mental-health-self-help--30": {
+   "file": "nhs-mental-health-self-help--30.mp3",
+   "duration_s": 60.91,
+   "voice": "bf_emma",
+   "hash": "4a130ecb34f4fb9b"
+  },
+  "nih-news-in-health--01": {
+   "file": "nih-news-in-health--01.mp3",
+   "duration_s": 59.16,
+   "voice": "af_nova",
+   "hash": "89d8b48ae77e0aae"
+  },
+  "nih-news-in-health--02": {
+   "file": "nih-news-in-health--02.mp3",
+   "duration_s": 56.15,
+   "voice": "af_nova",
+   "hash": "16490ffa9503d839"
+  },
+  "nih-news-in-health--03": {
+   "file": "nih-news-in-health--03.mp3",
+   "duration_s": 55.09,
+   "voice": "af_nova",
+   "hash": "ef7428ecd97d51aa"
+  },
+  "nih-news-in-health--04": {
+   "file": "nih-news-in-health--04.mp3",
+   "duration_s": 54.92,
+   "voice": "af_nova",
+   "hash": "81e05acf0f8e0e80"
+  },
+  "nih-news-in-health--05": {
+   "file": "nih-news-in-health--05.mp3",
+   "duration_s": 57.13,
+   "voice": "af_nova",
+   "hash": "ed6bcdd7adb4974b"
+  },
+  "nih-news-in-health--06": {
+   "file": "nih-news-in-health--06.mp3",
+   "duration_s": 56.11,
+   "voice": "af_nova",
+   "hash": "4adb868b6603681d"
+  },
+  "nih-news-in-health--07": {
+   "file": "nih-news-in-health--07.mp3",
+   "duration_s": 57.05,
+   "voice": "af_nova",
+   "hash": "58613e912314aff6"
+  },
+  "nih-news-in-health--08": {
+   "file": "nih-news-in-health--08.mp3",
+   "duration_s": 54.92,
+   "voice": "af_nova",
+   "hash": "727516a6d92e3905"
+  },
+  "nih-news-in-health--09": {
+   "file": "nih-news-in-health--09.mp3",
+   "duration_s": 57.67,
+   "voice": "af_nova",
+   "hash": "b09d97c38c5d0b76"
+  },
+  "nih-news-in-health--10": {
+   "file": "nih-news-in-health--10.mp3",
+   "duration_s": 56.03,
+   "voice": "af_nova",
+   "hash": "4105e29dcf14bbc7"
+  },
+  "nih-news-in-health--11": {
+   "file": "nih-news-in-health--11.mp3",
+   "duration_s": 55.77,
+   "voice": "af_nova",
+   "hash": "422b23de08724b87"
+  },
+  "nih-news-in-health--12": {
+   "file": "nih-news-in-health--12.mp3",
+   "duration_s": 57.41,
+   "voice": "af_nova",
+   "hash": "8050fc2861d324b0"
+  },
+  "nih-news-in-health--13": {
+   "file": "nih-news-in-health--13.mp3",
+   "duration_s": 55.21,
+   "voice": "af_nova",
+   "hash": "e2544f45dc446abc"
+  },
+  "nih-news-in-health--14": {
+   "file": "nih-news-in-health--14.mp3",
+   "duration_s": 55.64,
+   "voice": "af_nova",
+   "hash": "0c09a0e61b6744fd"
+  },
+  "nih-news-in-health--15": {
+   "file": "nih-news-in-health--15.mp3",
+   "duration_s": 53.79,
+   "voice": "af_nova",
+   "hash": "9a237f45309d16fa"
+  },
+  "nih-news-in-health--16": {
+   "file": "nih-news-in-health--16.mp3",
+   "duration_s": 56.39,
+   "voice": "af_nova",
+   "hash": "d5f276955a5597d4"
+  },
+  "nih-news-in-health--17": {
+   "file": "nih-news-in-health--17.mp3",
+   "duration_s": 58.71,
+   "voice": "af_nova",
+   "hash": "5184136335be7b08"
+  },
+  "nih-news-in-health--18": {
+   "file": "nih-news-in-health--18.mp3",
+   "duration_s": 58.12,
+   "voice": "af_nova",
+   "hash": "704faef2e2ae2e81"
+  },
+  "nih-news-in-health--19": {
+   "file": "nih-news-in-health--19.mp3",
+   "duration_s": 53.06,
+   "voice": "af_nova",
+   "hash": "60d4152afeea4d98"
+  },
+  "nih-news-in-health--20": {
+   "file": "nih-news-in-health--20.mp3",
+   "duration_s": 53.91,
+   "voice": "af_nova",
+   "hash": "2fda2572c8e5cbb4"
+  },
+  "nih-news-in-health--21": {
+   "file": "nih-news-in-health--21.mp3",
+   "duration_s": 58.78,
+   "voice": "af_nova",
+   "hash": "96b96d0c1dbc4844"
+  },
+  "nih-news-in-health--22": {
+   "file": "nih-news-in-health--22.mp3",
+   "duration_s": 58.14,
+   "voice": "af_nova",
+   "hash": "6013051dcee7f24d"
+  },
+  "nih-news-in-health--23": {
+   "file": "nih-news-in-health--23.mp3",
+   "duration_s": 61.91,
+   "voice": "af_nova",
+   "hash": "27d2ebf1e6f4f947"
+  },
+  "nih-news-in-health--24": {
+   "file": "nih-news-in-health--24.mp3",
+   "duration_s": 59.44,
+   "voice": "af_nova",
+   "hash": "1af446d2235f916f"
+  },
+  "nih-news-in-health--25": {
+   "file": "nih-news-in-health--25.mp3",
+   "duration_s": 58.69,
+   "voice": "af_nova",
+   "hash": "c46ee0b2503a44b9"
+  },
+  "nih-news-in-health--26": {
+   "file": "nih-news-in-health--26.mp3",
+   "duration_s": 58.48,
+   "voice": "af_nova",
+   "hash": "826ef1f68c851e3e"
+  },
+  "nih-news-in-health--27": {
+   "file": "nih-news-in-health--27.mp3",
+   "duration_s": 56.05,
+   "voice": "af_nova",
+   "hash": "abbc5f5cb17bb955"
+  },
+  "nih-news-in-health--28": {
+   "file": "nih-news-in-health--28.mp3",
+   "duration_s": 57.99,
+   "voice": "af_nova",
+   "hash": "c3386f1f5139fa95"
+  },
+  "nih-news-in-health--29": {
+   "file": "nih-news-in-health--29.mp3",
+   "duration_s": 60.31,
+   "voice": "af_nova",
+   "hash": "eff3dd75a2c9f56b"
+  },
+  "nih-news-in-health--30": {
+   "file": "nih-news-in-health--30.mp3",
+   "duration_s": 55.56,
+   "voice": "af_nova",
+   "hash": "8f24d4231a88fadd"
+  },
+  "nimh-so-stressed-out--01": {
+   "file": "nimh-so-stressed-out--01.mp3",
+   "duration_s": 56.64,
+   "voice": "af_heart",
+   "hash": "d297575525e8e85d"
+  },
+  "nimh-so-stressed-out--02": {
+   "file": "nimh-so-stressed-out--02.mp3",
+   "duration_s": 52.36,
+   "voice": "af_heart",
+   "hash": "8f799b74e4772e97"
+  },
+  "nimh-so-stressed-out--03": {
+   "file": "nimh-so-stressed-out--03.mp3",
+   "duration_s": 50.03,
+   "voice": "af_heart",
+   "hash": "3652bac376596dde"
+  },
+  "nimh-so-stressed-out--04": {
+   "file": "nimh-so-stressed-out--04.mp3",
+   "duration_s": 54.25,
+   "voice": "af_heart",
+   "hash": "ead5e26b5919e471"
+  },
+  "nimh-so-stressed-out--05": {
+   "file": "nimh-so-stressed-out--05.mp3",
+   "duration_s": 56.96,
+   "voice": "af_heart",
+   "hash": "677999021aedc54d"
+  },
+  "novel-of-the-future-nin--01": {
+   "file": "novel-of-the-future-nin--01.mp3",
+   "duration_s": 41.04,
+   "voice": "af_bella",
+   "hash": "f20c2fbb16cf66fc"
+  },
+  "novel-of-the-future-nin--02": {
+   "file": "novel-of-the-future-nin--02.mp3",
+   "duration_s": 42.64,
+   "voice": "af_bella",
+   "hash": "6ea69d1c815ec61f"
+  },
+  "novel-of-the-future-nin--03": {
+   "file": "novel-of-the-future-nin--03.mp3",
+   "duration_s": 45.39,
+   "voice": "af_bella",
+   "hash": "698a4ce683134523"
+  },
+  "novel-of-the-future-nin--04": {
+   "file": "novel-of-the-future-nin--04.mp3",
+   "duration_s": 42.73,
+   "voice": "af_bella",
+   "hash": "e9cd59e53874a72b"
+  },
+  "novel-of-the-future-nin--05": {
+   "file": "novel-of-the-future-nin--05.mp3",
+   "duration_s": 48.1,
+   "voice": "af_bella",
+   "hash": "ebc28392316e645b"
+  },
+  "on-anger-seneca--01": {
+   "file": "on-anger-seneca--01.mp3",
+   "duration_s": 43.49,
+   "voice": "bm_george",
+   "hash": "11a0710812772b88"
+  },
+  "on-anger-seneca--02": {
+   "file": "on-anger-seneca--02.mp3",
+   "duration_s": 46.48,
+   "voice": "bm_george",
+   "hash": "eb248a6f3c7b81c1"
+  },
+  "on-anger-seneca--03": {
+   "file": "on-anger-seneca--03.mp3",
+   "duration_s": 43.83,
+   "voice": "bm_george",
+   "hash": "286da8e15914ee84"
+  },
+  "on-anger-seneca--04": {
+   "file": "on-anger-seneca--04.mp3",
+   "duration_s": 43.43,
+   "voice": "bm_george",
+   "hash": "1432475e663e8ef8"
+  },
+  "on-anger-seneca--05": {
+   "file": "on-anger-seneca--05.mp3",
+   "duration_s": 42.3,
+   "voice": "bm_george",
+   "hash": "5e05e55e609d1fa5"
+  },
+  "on-anger-seneca--06": {
+   "file": "on-anger-seneca--06.mp3",
+   "duration_s": 43.13,
+   "voice": "bm_george",
+   "hash": "06600aacd60225f7"
+  },
+  "on-anger-seneca--07": {
+   "file": "on-anger-seneca--07.mp3",
+   "duration_s": 50.26,
+   "voice": "bm_george",
+   "hash": "471200658d0c5c53"
+  },
+  "on-anger-seneca--08": {
+   "file": "on-anger-seneca--08.mp3",
+   "duration_s": 49.42,
+   "voice": "bm_george",
+   "hash": "26f1081a062e28cd"
+  },
+  "on-anger-seneca--09": {
+   "file": "on-anger-seneca--09.mp3",
+   "duration_s": 49.02,
+   "voice": "bm_george",
+   "hash": "27a252d467a090d0"
+  },
+  "on-anger-seneca--10": {
+   "file": "on-anger-seneca--10.mp3",
+   "duration_s": 48.85,
+   "voice": "bm_george",
+   "hash": "ffbdf58dafc1258d"
+  },
+  "on-anger-seneca--11": {
+   "file": "on-anger-seneca--11.mp3",
+   "duration_s": 49.98,
+   "voice": "bm_george",
+   "hash": "cbb4aab3d8cbeeb1"
+  },
+  "on-anger-seneca--12": {
+   "file": "on-anger-seneca--12.mp3",
+   "duration_s": 52.24,
+   "voice": "bm_george",
+   "hash": "06d7c4a057d9d948"
+  },
+  "on-anger-seneca--13": {
+   "file": "on-anger-seneca--13.mp3",
+   "duration_s": 51.05,
+   "voice": "bm_george",
+   "hash": "b5411b8fe0d7634b"
+  },
+  "on-anger-seneca--14": {
+   "file": "on-anger-seneca--14.mp3",
+   "duration_s": 50.87,
+   "voice": "bm_george",
+   "hash": "b470f2439c311a91"
+  },
+  "on-anger-seneca--15": {
+   "file": "on-anger-seneca--15.mp3",
+   "duration_s": 48.51,
+   "voice": "bm_george",
+   "hash": "89ddb548246ce4bd"
+  },
+  "on-anger-seneca--16": {
+   "file": "on-anger-seneca--16.mp3",
+   "duration_s": 50.06,
+   "voice": "bm_george",
+   "hash": "984c1b00602aac59"
+  },
+  "on-anger-seneca--17": {
+   "file": "on-anger-seneca--17.mp3",
+   "duration_s": 48.46,
+   "voice": "bm_george",
+   "hash": "7016479726874c63"
+  },
+  "on-anger-seneca--18": {
+   "file": "on-anger-seneca--18.mp3",
+   "duration_s": 49.32,
+   "voice": "bm_george",
+   "hash": "2463e54746a68f78"
+  },
+  "on-anger-seneca--19": {
+   "file": "on-anger-seneca--19.mp3",
+   "duration_s": 45.29,
+   "voice": "bm_george",
+   "hash": "b4d6d8327f50338e"
+  },
+  "on-anger-seneca--20": {
+   "file": "on-anger-seneca--20.mp3",
+   "duration_s": 47.27,
+   "voice": "bm_george",
+   "hash": "75f87b2f41ef7044"
+  },
+  "on-anger-seneca--21": {
+   "file": "on-anger-seneca--21.mp3",
+   "duration_s": 48.21,
+   "voice": "bm_george",
+   "hash": "c77dd63626e48cf6"
+  },
+  "on-anger-seneca--22": {
+   "file": "on-anger-seneca--22.mp3",
+   "duration_s": 51.07,
+   "voice": "bm_george",
+   "hash": "b5edacc92d8df0d1"
+  },
+  "on-anger-seneca--23": {
+   "file": "on-anger-seneca--23.mp3",
+   "duration_s": 48.1,
+   "voice": "bm_george",
+   "hash": "ef2dc4483542d954"
+  },
+  "on-anger-seneca--24": {
+   "file": "on-anger-seneca--24.mp3",
+   "duration_s": 49.59,
+   "voice": "bm_george",
+   "hash": "3ec375a7210a1113"
+  },
+  "on-anger-seneca--25": {
+   "file": "on-anger-seneca--25.mp3",
+   "duration_s": 48.87,
+   "voice": "bm_george",
+   "hash": "ad6e495615af3742"
+  },
+  "on-anger-seneca--26": {
+   "file": "on-anger-seneca--26.mp3",
+   "duration_s": 48.85,
+   "voice": "bm_george",
+   "hash": "8a52926c68e5dc11"
+  },
+  "on-anger-seneca--27": {
+   "file": "on-anger-seneca--27.mp3",
+   "duration_s": 48.61,
+   "voice": "bm_george",
+   "hash": "e2f1313a9256ce3d"
+  },
+  "on-anger-seneca--28": {
+   "file": "on-anger-seneca--28.mp3",
+   "duration_s": 47.42,
+   "voice": "bm_george",
+   "hash": "bbd3d40b0b002a9c"
+  },
+  "on-anger-seneca--29": {
+   "file": "on-anger-seneca--29.mp3",
+   "duration_s": 48.59,
+   "voice": "bm_george",
+   "hash": "216a9a624343ed13"
+  },
+  "on-anger-seneca--30": {
+   "file": "on-anger-seneca--30.mp3",
+   "duration_s": 47.48,
+   "voice": "bm_george",
+   "hash": "7dd9c5baaf9d2f35"
+  },
+  "on-anger-seneca--31": {
+   "file": "on-anger-seneca--31.mp3",
+   "duration_s": 49.23,
+   "voice": "bm_george",
+   "hash": "355ee8daf95d7d26"
+  },
+  "on-anger-seneca--32": {
+   "file": "on-anger-seneca--32.mp3",
+   "duration_s": 46.44,
+   "voice": "bm_george",
+   "hash": "c857cb0897a0ce8a"
+  },
+  "on-anger-seneca--33": {
+   "file": "on-anger-seneca--33.mp3",
+   "duration_s": 46.8,
+   "voice": "bm_george",
+   "hash": "cd6ea816a0628968"
+  },
+  "on-anger-seneca--34": {
+   "file": "on-anger-seneca--34.mp3",
+   "duration_s": 56.88,
+   "voice": "bm_george",
+   "hash": "ec528a44b4469782"
+  },
+  "on-anger-seneca--35": {
+   "file": "on-anger-seneca--35.mp3",
+   "duration_s": 44.18,
+   "voice": "bm_george",
+   "hash": "0f66a4425f4ae5a1"
+  },
+  "on-anger-seneca--36": {
+   "file": "on-anger-seneca--36.mp3",
+   "duration_s": 46.31,
+   "voice": "bm_george",
+   "hash": "19e699d8a45b4c6f"
+  },
+  "on-anger-seneca--37": {
+   "file": "on-anger-seneca--37.mp3",
+   "duration_s": 49.1,
+   "voice": "bm_george",
+   "hash": "c066c921ec11b42b"
+  },
+  "on-anger-seneca--38": {
+   "file": "on-anger-seneca--38.mp3",
+   "duration_s": 47.42,
+   "voice": "bm_george",
+   "hash": "f8ec81337cc76935"
+  },
+  "on-anger-seneca--39": {
+   "file": "on-anger-seneca--39.mp3",
+   "duration_s": 48.55,
+   "voice": "bm_george",
+   "hash": "6a0275708f5e3f9d"
+  },
+  "on-anger-seneca--40": {
+   "file": "on-anger-seneca--40.mp3",
+   "duration_s": 47.59,
+   "voice": "bm_george",
+   "hash": "308a8f92ae6f6e32"
+  },
+  "on-peace-of-mind-seneca--01": {
+   "file": "on-peace-of-mind-seneca--01.mp3",
+   "duration_s": 44.24,
+   "voice": "bm_george",
+   "hash": "1ec1c885e726d889"
+  },
+  "on-peace-of-mind-seneca--02": {
+   "file": "on-peace-of-mind-seneca--02.mp3",
+   "duration_s": 43.64,
+   "voice": "bm_george",
+   "hash": "55d0a6171c86efcb"
+  },
+  "on-peace-of-mind-seneca--03": {
+   "file": "on-peace-of-mind-seneca--03.mp3",
+   "duration_s": 43.37,
+   "voice": "bm_george",
+   "hash": "1360bd918070d430"
+  },
+  "on-peace-of-mind-seneca--04": {
+   "file": "on-peace-of-mind-seneca--04.mp3",
+   "duration_s": 43.34,
+   "voice": "bm_george",
+   "hash": "3fd2da5daaf3e56d"
+  },
+  "on-peace-of-mind-seneca--05": {
+   "file": "on-peace-of-mind-seneca--05.mp3",
+   "duration_s": 43.75,
+   "voice": "bm_george",
+   "hash": "376420cfd15def39"
+  },
+  "on-peace-of-mind-seneca--06": {
+   "file": "on-peace-of-mind-seneca--06.mp3",
+   "duration_s": 44.03,
+   "voice": "bm_george",
+   "hash": "458b14f5eef8ca2a"
+  },
+  "on-peace-of-mind-seneca--07": {
+   "file": "on-peace-of-mind-seneca--07.mp3",
+   "duration_s": 48.66,
+   "voice": "bm_george",
+   "hash": "310a592774c7736e"
+  },
+  "on-peace-of-mind-seneca--08": {
+   "file": "on-peace-of-mind-seneca--08.mp3",
+   "duration_s": 47.08,
+   "voice": "bm_george",
+   "hash": "032303fef231ad4b"
+  },
+  "on-peace-of-mind-seneca--09": {
+   "file": "on-peace-of-mind-seneca--09.mp3",
+   "duration_s": 45.71,
+   "voice": "bm_george",
+   "hash": "3d76c13705b6ab26"
+  },
+  "on-peace-of-mind-seneca--10": {
+   "file": "on-peace-of-mind-seneca--10.mp3",
+   "duration_s": 47.25,
+   "voice": "bm_george",
+   "hash": "d2e3ea9e60fd6847"
+  },
+  "on-peace-of-mind-seneca--11": {
+   "file": "on-peace-of-mind-seneca--11.mp3",
+   "duration_s": 44.86,
+   "voice": "bm_george",
+   "hash": "8e06b3898af00d40"
+  },
+  "on-peace-of-mind-seneca--12": {
+   "file": "on-peace-of-mind-seneca--12.mp3",
+   "duration_s": 45.43,
+   "voice": "bm_george",
+   "hash": "097e2a5530829bf6"
+  },
+  "on-peace-of-mind-seneca--13": {
+   "file": "on-peace-of-mind-seneca--13.mp3",
+   "duration_s": 43.98,
+   "voice": "bm_george",
+   "hash": "0152283f9d749ff8"
+  },
+  "on-peace-of-mind-seneca--14": {
+   "file": "on-peace-of-mind-seneca--14.mp3",
+   "duration_s": 44.65,
+   "voice": "bm_george",
+   "hash": "581b793e84dfdc58"
+  },
+  "on-peace-of-mind-seneca--15": {
+   "file": "on-peace-of-mind-seneca--15.mp3",
+   "duration_s": 44.56,
+   "voice": "bm_george",
+   "hash": "9d39f2b767f63c09"
+  },
+  "on-peace-of-mind-seneca--16": {
+   "file": "on-peace-of-mind-seneca--16.mp3",
+   "duration_s": 46.39,
+   "voice": "bm_george",
+   "hash": "18884006833bc03a"
+  },
+  "on-peace-of-mind-seneca--17": {
+   "file": "on-peace-of-mind-seneca--17.mp3",
+   "duration_s": 46.65,
+   "voice": "bm_george",
+   "hash": "e335abed2b9462af"
+  },
+  "on-peace-of-mind-seneca--18": {
+   "file": "on-peace-of-mind-seneca--18.mp3",
+   "duration_s": 46.12,
+   "voice": "bm_george",
+   "hash": "8d29465eb24a6c5e"
+  },
+  "on-peace-of-mind-seneca--19": {
+   "file": "on-peace-of-mind-seneca--19.mp3",
+   "duration_s": 45.48,
+   "voice": "bm_george",
+   "hash": "2bb1beb3e24c203c"
+  },
+  "on-peace-of-mind-seneca--20": {
+   "file": "on-peace-of-mind-seneca--20.mp3",
+   "duration_s": 44.73,
+   "voice": "bm_george",
+   "hash": "a89bb142aa26b7bf"
+  },
+  "on-peace-of-mind-seneca--21": {
+   "file": "on-peace-of-mind-seneca--21.mp3",
+   "duration_s": 48.66,
+   "voice": "bm_george",
+   "hash": "a04093b42857ee6f"
+  },
+  "on-peace-of-mind-seneca--22": {
+   "file": "on-peace-of-mind-seneca--22.mp3",
+   "duration_s": 44.75,
+   "voice": "bm_george",
+   "hash": "a287e99e216aa3b5"
+  },
+  "on-peace-of-mind-seneca--23": {
+   "file": "on-peace-of-mind-seneca--23.mp3",
+   "duration_s": 47.21,
+   "voice": "bm_george",
+   "hash": "bc2f88efd92750bc"
+  },
+  "on-peace-of-mind-seneca--24": {
+   "file": "on-peace-of-mind-seneca--24.mp3",
+   "duration_s": 47.53,
+   "voice": "bm_george",
+   "hash": "7b0d73027ce2c947"
+  },
+  "on-peace-of-mind-seneca--25": {
+   "file": "on-peace-of-mind-seneca--25.mp3",
+   "duration_s": 47.59,
+   "voice": "bm_george",
+   "hash": "c3f89e3b6c3365e1"
+  },
+  "on-peace-of-mind-seneca--26": {
+   "file": "on-peace-of-mind-seneca--26.mp3",
+   "duration_s": 44.47,
+   "voice": "bm_george",
+   "hash": "7533f0a5ab70c0b3"
+  },
+  "on-peace-of-mind-seneca--27": {
+   "file": "on-peace-of-mind-seneca--27.mp3",
+   "duration_s": 44.88,
+   "voice": "bm_george",
+   "hash": "46d15cd4ef03603c"
+  },
+  "on-peace-of-mind-seneca--28": {
+   "file": "on-peace-of-mind-seneca--28.mp3",
+   "duration_s": 58.95,
+   "voice": "bm_george",
+   "hash": "969ec73cc27c0d33"
+  },
+  "on-peace-of-mind-seneca--29": {
+   "file": "on-peace-of-mind-seneca--29.mp3",
+   "duration_s": 46.99,
+   "voice": "bm_george",
+   "hash": "a208f7c7dd443e51"
+  },
+  "on-peace-of-mind-seneca--30": {
+   "file": "on-peace-of-mind-seneca--30.mp3",
+   "duration_s": 57.65,
+   "voice": "bm_george",
+   "hash": "2eecc899efccfd45"
+  },
+  "on-the-shortness-of-life-seneca--01": {
+   "file": "on-the-shortness-of-life-seneca--01.mp3",
+   "duration_s": 42.85,
+   "voice": "bm_george",
+   "hash": "ada9e69bbe51025d"
+  },
+  "on-the-shortness-of-life-seneca--02": {
+   "file": "on-the-shortness-of-life-seneca--02.mp3",
+   "duration_s": 45.41,
+   "voice": "bm_george",
+   "hash": "21812056f74cd609"
+  },
+  "on-the-shortness-of-life-seneca--03": {
+   "file": "on-the-shortness-of-life-seneca--03.mp3",
+   "duration_s": 45.18,
+   "voice": "bm_george",
+   "hash": "bfb97e65eff62c32"
+  },
+  "on-the-shortness-of-life-seneca--04": {
+   "file": "on-the-shortness-of-life-seneca--04.mp3",
+   "duration_s": 45.11,
+   "voice": "bm_george",
+   "hash": "098dcad0c3f1db02"
+  },
+  "on-the-shortness-of-life-seneca--05": {
+   "file": "on-the-shortness-of-life-seneca--05.mp3",
+   "duration_s": 45.99,
+   "voice": "bm_george",
+   "hash": "e3d8802206fb9b99"
+  },
+  "on-the-shortness-of-life-seneca--06": {
+   "file": "on-the-shortness-of-life-seneca--06.mp3",
+   "duration_s": 47.14,
+   "voice": "bm_george",
+   "hash": "6ca3419a5caab0d6"
+  },
+  "on-the-shortness-of-life-seneca--07": {
+   "file": "on-the-shortness-of-life-seneca--07.mp3",
+   "duration_s": 48.06,
+   "voice": "bm_george",
+   "hash": "033d6a5a6f21f1e2"
+  },
+  "on-the-shortness-of-life-seneca--08": {
+   "file": "on-the-shortness-of-life-seneca--08.mp3",
+   "duration_s": 45.9,
+   "voice": "bm_george",
+   "hash": "a8bdc7fb78633d90"
+  },
+  "on-the-shortness-of-life-seneca--09": {
+   "file": "on-the-shortness-of-life-seneca--09.mp3",
+   "duration_s": 46.61,
+   "voice": "bm_george",
+   "hash": "53391039e684965d"
+  },
+  "on-the-shortness-of-life-seneca--10": {
+   "file": "on-the-shortness-of-life-seneca--10.mp3",
+   "duration_s": 47.21,
+   "voice": "bm_george",
+   "hash": "657388817a3d2f4a"
+  },
+  "on-the-shortness-of-life-seneca--11": {
+   "file": "on-the-shortness-of-life-seneca--11.mp3",
+   "duration_s": 45.71,
+   "voice": "bm_george",
+   "hash": "b4740d9691d653a3"
+  },
+  "on-the-shortness-of-life-seneca--12": {
+   "file": "on-the-shortness-of-life-seneca--12.mp3",
+   "duration_s": 42.13,
+   "voice": "bm_george",
+   "hash": "dafd93b75aeac1f3"
+  },
+  "on-the-shortness-of-life-seneca--13": {
+   "file": "on-the-shortness-of-life-seneca--13.mp3",
+   "duration_s": 45.46,
+   "voice": "bm_george",
+   "hash": "5462af451ab144e6"
+  },
+  "on-the-shortness-of-life-seneca--14": {
+   "file": "on-the-shortness-of-life-seneca--14.mp3",
+   "duration_s": 42.49,
+   "voice": "bm_george",
+   "hash": "9ce6deaae6c7b4ec"
+  },
+  "on-the-shortness-of-life-seneca--15": {
+   "file": "on-the-shortness-of-life-seneca--15.mp3",
+   "duration_s": 46.8,
+   "voice": "bm_george",
+   "hash": "c270d83453a5e752"
+  },
+  "on-the-shortness-of-life-seneca--16": {
+   "file": "on-the-shortness-of-life-seneca--16.mp3",
+   "duration_s": 42.51,
+   "voice": "bm_george",
+   "hash": "4d87bbdd961c6919"
+  },
+  "on-the-shortness-of-life-seneca--17": {
+   "file": "on-the-shortness-of-life-seneca--17.mp3",
+   "duration_s": 44.97,
+   "voice": "bm_george",
+   "hash": "7837e7b7f8dbe3c0"
+  },
+  "on-the-shortness-of-life-seneca--18": {
+   "file": "on-the-shortness-of-life-seneca--18.mp3",
+   "duration_s": 46.61,
+   "voice": "bm_george",
+   "hash": "330998385f8f0074"
+  },
+  "on-the-shortness-of-life-seneca--19": {
+   "file": "on-the-shortness-of-life-seneca--19.mp3",
+   "duration_s": 46.54,
+   "voice": "bm_george",
+   "hash": "5755e4a903ed01a9"
+  },
+  "on-the-shortness-of-life-seneca--20": {
+   "file": "on-the-shortness-of-life-seneca--20.mp3",
+   "duration_s": 47.67,
+   "voice": "bm_george",
+   "hash": "2b2a3b2dea279bea"
+  },
+  "on-the-shortness-of-life-seneca--21": {
+   "file": "on-the-shortness-of-life-seneca--21.mp3",
+   "duration_s": 46.03,
+   "voice": "bm_george",
+   "hash": "9986c5fa599aa58a"
+  },
+  "on-the-shortness-of-life-seneca--22": {
+   "file": "on-the-shortness-of-life-seneca--22.mp3",
+   "duration_s": 47.4,
+   "voice": "bm_george",
+   "hash": "170521f16b4f5b3b"
+  },
+  "on-the-shortness-of-life-seneca--23": {
+   "file": "on-the-shortness-of-life-seneca--23.mp3",
+   "duration_s": 48.25,
+   "voice": "bm_george",
+   "hash": "e9b1fd1d033ef754"
+  },
+  "on-the-shortness-of-life-seneca--24": {
+   "file": "on-the-shortness-of-life-seneca--24.mp3",
+   "duration_s": 45.95,
+   "voice": "bm_george",
+   "hash": "96f84bb06d9349d4"
+  },
+  "on-the-shortness-of-life-seneca--25": {
+   "file": "on-the-shortness-of-life-seneca--25.mp3",
+   "duration_s": 46.18,
+   "voice": "bm_george",
+   "hash": "2d8f350dae40ba75"
+  },
+  "on-the-shortness-of-life-seneca--26": {
+   "file": "on-the-shortness-of-life-seneca--26.mp3",
+   "duration_s": 43.98,
+   "voice": "bm_george",
+   "hash": "b1d720cb7f6347ea"
+  },
+  "on-the-shortness-of-life-seneca--27": {
+   "file": "on-the-shortness-of-life-seneca--27.mp3",
+   "duration_s": 47.16,
+   "voice": "bm_george",
+   "hash": "fd5ca1e142dccf7d"
+  },
+  "on-the-shortness-of-life-seneca--28": {
+   "file": "on-the-shortness-of-life-seneca--28.mp3",
+   "duration_s": 44.71,
+   "voice": "bm_george",
+   "hash": "33f83b833b96a73a"
+  },
+  "on-the-shortness-of-life-seneca--29": {
+   "file": "on-the-shortness-of-life-seneca--29.mp3",
+   "duration_s": 45.18,
+   "voice": "bm_george",
+   "hash": "bf4175bde7ee10a1"
+  },
+  "on-the-shortness-of-life-seneca--30": {
+   "file": "on-the-shortness-of-life-seneca--30.mp3",
+   "duration_s": 48.63,
+   "voice": "bm_george",
+   "hash": "4281f06390d9efb9"
+  },
+  "peak-ericsson--01": {
+   "file": "peak-ericsson--01.mp3",
+   "duration_s": 46.46,
+   "voice": "am_echo",
+   "hash": "36d8dcb18ef0aba1"
+  },
+  "peak-ericsson--02": {
+   "file": "peak-ericsson--02.mp3",
+   "duration_s": 46.82,
+   "voice": "am_echo",
+   "hash": "9c5ab36342609b28"
+  },
+  "peak-ericsson--03": {
+   "file": "peak-ericsson--03.mp3",
+   "duration_s": 41.53,
+   "voice": "am_echo",
+   "hash": "b03af1cca7fcdfd5"
+  },
+  "peak-ericsson--04": {
+   "file": "peak-ericsson--04.mp3",
+   "duration_s": 41.66,
+   "voice": "am_echo",
+   "hash": "990a8baabba7192c"
+  },
+  "peak-ericsson--05": {
+   "file": "peak-ericsson--05.mp3",
+   "duration_s": 43.88,
+   "voice": "am_echo",
+   "hash": "434d7e824e22a07c"
+  },
+  "peak-ericsson--06": {
+   "file": "peak-ericsson--06.mp3",
+   "duration_s": 42.9,
+   "voice": "am_echo",
+   "hash": "84f28d370aca4257"
+  },
+  "peak-ericsson--07": {
+   "file": "peak-ericsson--07.mp3",
+   "duration_s": 40.83,
+   "voice": "am_echo",
+   "hash": "17bdf2fddbd61e22"
+  },
+  "peak-ericsson--08": {
+   "file": "peak-ericsson--08.mp3",
+   "duration_s": 43.98,
+   "voice": "am_echo",
+   "hash": "c9c78b398a98e30a"
+  },
+  "peak-ericsson--09": {
+   "file": "peak-ericsson--09.mp3",
+   "duration_s": 45.56,
+   "voice": "am_echo",
+   "hash": "4a5bcedf68f05e75"
+  },
+  "peak-ericsson--10": {
+   "file": "peak-ericsson--10.mp3",
+   "duration_s": 43.64,
+   "voice": "am_echo",
+   "hash": "88d21637f453553a"
+  },
+  "peak-ericsson--11": {
+   "file": "peak-ericsson--11.mp3",
+   "duration_s": 43.54,
+   "voice": "am_echo",
+   "hash": "cff2906244f3ab24"
+  },
+  "peak-ericsson--12": {
+   "file": "peak-ericsson--12.mp3",
+   "duration_s": 43.09,
+   "voice": "am_echo",
+   "hash": "9418f019d2af1a6b"
+  },
+  "peak-ericsson--13": {
+   "file": "peak-ericsson--13.mp3",
+   "duration_s": 47.27,
+   "voice": "am_echo",
+   "hash": "8548a75f4db22ec0"
+  },
+  "peak-ericsson--14": {
+   "file": "peak-ericsson--14.mp3",
+   "duration_s": 45.33,
+   "voice": "am_echo",
+   "hash": "200030f966513df8"
+  },
+  "peak-ericsson--15": {
+   "file": "peak-ericsson--15.mp3",
+   "duration_s": 45.52,
+   "voice": "am_echo",
+   "hash": "407efaa24a612c2c"
+  },
+  "peak-ericsson--16": {
+   "file": "peak-ericsson--16.mp3",
+   "duration_s": 46.97,
+   "voice": "am_echo",
+   "hash": "2b4439ef0f401f06"
+  },
+  "peak-ericsson--17": {
+   "file": "peak-ericsson--17.mp3",
+   "duration_s": 43.98,
+   "voice": "am_echo",
+   "hash": "3fe531fb341d728a"
+  },
+  "peak-ericsson--18": {
+   "file": "peak-ericsson--18.mp3",
+   "duration_s": 41.1,
+   "voice": "am_echo",
+   "hash": "83059b798611c13e"
+  },
+  "peak-ericsson--19": {
+   "file": "peak-ericsson--19.mp3",
+   "duration_s": 42.15,
+   "voice": "am_echo",
+   "hash": "60107fd72afdf5ba"
+  },
+  "peak-ericsson--20": {
+   "file": "peak-ericsson--20.mp3",
+   "duration_s": 41.47,
+   "voice": "am_echo",
+   "hash": "91f3b3a7321f5902"
+  },
+  "peak-ericsson--21": {
+   "file": "peak-ericsson--21.mp3",
+   "duration_s": 41.21,
+   "voice": "am_echo",
+   "hash": "0b1502c20dc563ad"
+  },
+  "peak-ericsson--22": {
+   "file": "peak-ericsson--22.mp3",
+   "duration_s": 44.65,
+   "voice": "am_echo",
+   "hash": "51ce1c014e89c3a0"
+  },
+  "peak-ericsson--23": {
+   "file": "peak-ericsson--23.mp3",
+   "duration_s": 40.93,
+   "voice": "am_echo",
+   "hash": "e6be5acce8d3e5d2"
+  },
+  "peak-ericsson--24": {
+   "file": "peak-ericsson--24.mp3",
+   "duration_s": 42.49,
+   "voice": "am_echo",
+   "hash": "72d1060960da70ab"
+  },
+  "peak-ericsson--25": {
+   "file": "peak-ericsson--25.mp3",
+   "duration_s": 43.58,
+   "voice": "am_echo",
+   "hash": "9aa76736a65136a0"
+  },
+  "peak-ericsson--26": {
+   "file": "peak-ericsson--26.mp3",
+   "duration_s": 40.12,
+   "voice": "am_echo",
+   "hash": "83f50878882d9761"
+  },
+  "peak-ericsson--27": {
+   "file": "peak-ericsson--27.mp3",
+   "duration_s": 43.07,
+   "voice": "am_echo",
+   "hash": "ddeeb5927ad63651"
+  },
+  "peak-ericsson--28": {
+   "file": "peak-ericsson--28.mp3",
+   "duration_s": 42.77,
+   "voice": "am_echo",
+   "hash": "96f8df4a0e94b64e"
+  },
+  "peak-ericsson--29": {
+   "file": "peak-ericsson--29.mp3",
+   "duration_s": 42.58,
+   "voice": "am_echo",
+   "hash": "de0149fcd75a2074"
+  },
+  "peak-ericsson--30": {
+   "file": "peak-ericsson--30.mp3",
+   "duration_s": 41.79,
+   "voice": "am_echo",
+   "hash": "49351fe4dde9078b"
+  },
+  "plutarchs-lives--01": {
+   "file": "plutarchs-lives--01.mp3",
+   "duration_s": 52.94,
+   "voice": "bm_george",
+   "hash": "c2c011a53dd20423"
+  },
+  "plutarchs-lives--02": {
+   "file": "plutarchs-lives--02.mp3",
+   "duration_s": 52.33,
+   "voice": "bm_george",
+   "hash": "edb06492ba212087"
+  },
+  "plutarchs-lives--03": {
+   "file": "plutarchs-lives--03.mp3",
+   "duration_s": 50.77,
+   "voice": "bm_george",
+   "hash": "8b230e4b57e5bb01"
+  },
+  "plutarchs-lives--04": {
+   "file": "plutarchs-lives--04.mp3",
+   "duration_s": 52.26,
+   "voice": "bm_george",
+   "hash": "cd2db402fcec1086"
+  },
+  "plutarchs-lives--05": {
+   "file": "plutarchs-lives--05.mp3",
+   "duration_s": 54.14,
+   "voice": "bm_george",
+   "hash": "52b161480e12d0f0"
+  },
+  "plutarchs-lives--06": {
+   "file": "plutarchs-lives--06.mp3",
+   "duration_s": 52.92,
+   "voice": "bm_george",
+   "hash": "b2f02117ebd5b363"
+  },
+  "plutarchs-lives--07": {
+   "file": "plutarchs-lives--07.mp3",
+   "duration_s": 55.61,
+   "voice": "bm_george",
+   "hash": "7b7a0c6ce60b8095"
+  },
+  "plutarchs-lives--08": {
+   "file": "plutarchs-lives--08.mp3",
+   "duration_s": 56.63,
+   "voice": "bm_george",
+   "hash": "33fb0c93ba9295e8"
+  },
+  "plutarchs-lives--09": {
+   "file": "plutarchs-lives--09.mp3",
+   "duration_s": 58.55,
+   "voice": "bm_george",
+   "hash": "ffa9ec6f20bb6309"
+  },
+  "plutarchs-lives--10": {
+   "file": "plutarchs-lives--10.mp3",
+   "duration_s": 53.84,
+   "voice": "bm_george",
+   "hash": "437189737075b770"
+  },
+  "plutarchs-lives--11": {
+   "file": "plutarchs-lives--11.mp3",
+   "duration_s": 54.84,
+   "voice": "bm_george",
+   "hash": "b6803a94e1b02649"
+  },
+  "plutarchs-lives--12": {
+   "file": "plutarchs-lives--12.mp3",
+   "duration_s": 54.42,
+   "voice": "bm_george",
+   "hash": "a431ae936d103f9e"
+  },
+  "plutarchs-lives--13": {
+   "file": "plutarchs-lives--13.mp3",
+   "duration_s": 56.42,
+   "voice": "bm_george",
+   "hash": "40c2bd8ab8f2067d"
+  },
+  "plutarchs-lives--14": {
+   "file": "plutarchs-lives--14.mp3",
+   "duration_s": 56.29,
+   "voice": "bm_george",
+   "hash": "3735068ea383880d"
+  },
+  "plutarchs-lives--15": {
+   "file": "plutarchs-lives--15.mp3",
+   "duration_s": 57.55,
+   "voice": "bm_george",
+   "hash": "7de2e9136cf97489"
+  },
+  "plutarchs-lives--16": {
+   "file": "plutarchs-lives--16.mp3",
+   "duration_s": 52.65,
+   "voice": "bm_george",
+   "hash": "eced030b44e6e0a6"
+  },
+  "plutarchs-lives--17": {
+   "file": "plutarchs-lives--17.mp3",
+   "duration_s": 47.55,
+   "voice": "bm_george",
+   "hash": "595cc19c215a6bd5"
+  },
+  "plutarchs-lives--18": {
+   "file": "plutarchs-lives--18.mp3",
+   "duration_s": 50.23,
+   "voice": "bm_george",
+   "hash": "0e5ee313ce5a1e7b"
+  },
+  "plutarchs-lives--19": {
+   "file": "plutarchs-lives--19.mp3",
+   "duration_s": 53.11,
+   "voice": "bm_george",
+   "hash": "ed3e17e1d65a16f2"
+  },
+  "plutarchs-lives--20": {
+   "file": "plutarchs-lives--20.mp3",
+   "duration_s": 55.97,
+   "voice": "bm_george",
+   "hash": "d3eb39af0ddc5680"
+  },
+  "plutarchs-lives--21": {
+   "file": "plutarchs-lives--21.mp3",
+   "duration_s": 54.93,
+   "voice": "bm_george",
+   "hash": "117c4f090da1b541"
+  },
+  "plutarchs-lives--22": {
+   "file": "plutarchs-lives--22.mp3",
+   "duration_s": 53.5,
+   "voice": "bm_george",
+   "hash": "81fb580bfab62db7"
+  },
+  "plutarchs-lives--23": {
+   "file": "plutarchs-lives--23.mp3",
+   "duration_s": 54.57,
+   "voice": "bm_george",
+   "hash": "4f5dddafb6756cd7"
+  },
+  "plutarchs-lives--24": {
+   "file": "plutarchs-lives--24.mp3",
+   "duration_s": 53.05,
+   "voice": "bm_george",
+   "hash": "be80eea2fbf549ed"
+  },
+  "plutarchs-lives--25": {
+   "file": "plutarchs-lives--25.mp3",
+   "duration_s": 51.47,
+   "voice": "bm_george",
+   "hash": "aad5e5a9ee5278fc"
+  },
+  "plutarchs-lives--26": {
+   "file": "plutarchs-lives--26.mp3",
+   "duration_s": 53.11,
+   "voice": "bm_george",
+   "hash": "59b0d232f566613a"
+  },
+  "plutarchs-lives--27": {
+   "file": "plutarchs-lives--27.mp3",
+   "duration_s": 51.94,
+   "voice": "bm_george",
+   "hash": "0dad36fdb9fa57c1"
+  },
+  "plutarchs-lives--28": {
+   "file": "plutarchs-lives--28.mp3",
+   "duration_s": 52.65,
+   "voice": "bm_george",
+   "hash": "b850e08c8281635e"
+  },
+  "plutarchs-lives--29": {
+   "file": "plutarchs-lives--29.mp3",
+   "duration_s": 51.75,
+   "voice": "bm_george",
+   "hash": "11b383798c14fe35"
+  },
+  "plutarchs-lives--30": {
+   "file": "plutarchs-lives--30.mp3",
+   "duration_s": 51.45,
+   "voice": "bm_george",
+   "hash": "46d60fef53b7f22c"
+  },
+  "plutarchs-lives--31": {
+   "file": "plutarchs-lives--31.mp3",
+   "duration_s": 51.13,
+   "voice": "bm_george",
+   "hash": "90fd8a3dc084f63c"
+  },
+  "plutarchs-lives--32": {
+   "file": "plutarchs-lives--32.mp3",
+   "duration_s": 52.07,
+   "voice": "bm_george",
+   "hash": "c39f74e5bb265424"
+  },
+  "plutarchs-lives--33": {
+   "file": "plutarchs-lives--33.mp3",
+   "duration_s": 52.94,
+   "voice": "bm_george",
+   "hash": "f4d76a8306670832"
+  },
+  "plutarchs-lives--34": {
+   "file": "plutarchs-lives--34.mp3",
+   "duration_s": 49.42,
+   "voice": "bm_george",
+   "hash": "6b3b6ab36ce4e563"
+  },
+  "plutarchs-lives--35": {
+   "file": "plutarchs-lives--35.mp3",
+   "duration_s": 53.58,
+   "voice": "bm_george",
+   "hash": "d3b8f6072e5be390"
+  },
+  "plutarchs-lives--36": {
+   "file": "plutarchs-lives--36.mp3",
+   "duration_s": 54.47,
+   "voice": "bm_george",
+   "hash": "f193bb2fe82ae072"
+  },
+  "plutarchs-lives--37": {
+   "file": "plutarchs-lives--37.mp3",
+   "duration_s": 53.07,
+   "voice": "bm_george",
+   "hash": "54f95640d0803d12"
+  },
+  "plutarchs-lives--38": {
+   "file": "plutarchs-lives--38.mp3",
+   "duration_s": 53.71,
+   "voice": "bm_george",
+   "hash": "c687d1b95359a0d2"
+  },
+  "plutarchs-lives--39": {
+   "file": "plutarchs-lives--39.mp3",
+   "duration_s": 54.69,
+   "voice": "bm_george",
+   "hash": "f8338f638368aa07"
+  },
+  "plutarchs-lives--40": {
+   "file": "plutarchs-lives--40.mp3",
+   "duration_s": 53.46,
+   "voice": "bm_george",
+   "hash": "f270733ebab5d43b"
+  },
+  "plutarchs-lives--41": {
+   "file": "plutarchs-lives--41.mp3",
+   "duration_s": 55.72,
+   "voice": "bm_george",
+   "hash": "3884271dfabd780b"
+  },
+  "plutarchs-lives--42": {
+   "file": "plutarchs-lives--42.mp3",
+   "duration_s": 56.74,
+   "voice": "bm_george",
+   "hash": "f68628d573c1e271"
+  },
+  "plutarchs-lives--43": {
+   "file": "plutarchs-lives--43.mp3",
+   "duration_s": 54.35,
+   "voice": "bm_george",
+   "hash": "62f9eee2f73c15c8"
+  },
+  "plutarchs-lives--44": {
+   "file": "plutarchs-lives--44.mp3",
+   "duration_s": 53.35,
+   "voice": "bm_george",
+   "hash": "e4943c32060875d4"
+  },
+  "plutarchs-lives--45": {
+   "file": "plutarchs-lives--45.mp3",
+   "duration_s": 54.42,
+   "voice": "bm_george",
+   "hash": "33f304234bbfaf83"
+  },
+  "plutarchs-lives--46": {
+   "file": "plutarchs-lives--46.mp3",
+   "duration_s": 56.1,
+   "voice": "bm_george",
+   "hash": "9be32256ca4abc70"
+  },
+  "plutarchs-lives--47": {
+   "file": "plutarchs-lives--47.mp3",
+   "duration_s": 52.88,
+   "voice": "bm_george",
+   "hash": "a21b112143f178a7"
+  },
+  "plutarchs-lives--48": {
+   "file": "plutarchs-lives--48.mp3",
+   "duration_s": 52.9,
+   "voice": "bm_george",
+   "hash": "04cc1f186137eed1"
+  },
+  "plutarchs-lives--49": {
+   "file": "plutarchs-lives--49.mp3",
+   "duration_s": 56.86,
+   "voice": "bm_george",
+   "hash": "a54dd72648d99a51"
+  },
+  "plutarchs-lives--50": {
+   "file": "plutarchs-lives--50.mp3",
+   "duration_s": 52.75,
+   "voice": "bm_george",
+   "hash": "60059c11c1831670"
+  },
+  "proverbs-kjv--01": {
+   "file": "proverbs-kjv--01.mp3",
+   "duration_s": 44.22,
+   "voice": "bf_emma",
+   "hash": "ad6a0717e1c4724c"
+  },
+  "proverbs-kjv--02": {
+   "file": "proverbs-kjv--02.mp3",
+   "duration_s": 43.9,
+   "voice": "bf_emma",
+   "hash": "b2be2bf4ec89958f"
+  },
+  "proverbs-kjv--03": {
+   "file": "proverbs-kjv--03.mp3",
+   "duration_s": 44.2,
+   "voice": "bf_emma",
+   "hash": "603d19422aaf5b0c"
+  },
+  "proverbs-kjv--04": {
+   "file": "proverbs-kjv--04.mp3",
+   "duration_s": 42.53,
+   "voice": "bf_emma",
+   "hash": "70f8e3735973672d"
+  },
+  "proverbs-kjv--05": {
+   "file": "proverbs-kjv--05.mp3",
+   "duration_s": 43.64,
+   "voice": "bf_emma",
+   "hash": "0c3c476beccb5370"
+  },
+  "proverbs-kjv--06": {
+   "file": "proverbs-kjv--06.mp3",
+   "duration_s": 44.39,
+   "voice": "bf_emma",
+   "hash": "172e5fa5dbe4c6a0"
+  },
+  "proverbs-kjv--07": {
+   "file": "proverbs-kjv--07.mp3",
+   "duration_s": 40.46,
+   "voice": "bf_emma",
+   "hash": "42f67caa0ca9d9be"
+  },
+  "proverbs-kjv--08": {
+   "file": "proverbs-kjv--08.mp3",
+   "duration_s": 46.05,
+   "voice": "bf_emma",
+   "hash": "4796b86379a86567"
+  },
+  "proverbs-kjv--09": {
+   "file": "proverbs-kjv--09.mp3",
+   "duration_s": 43.24,
+   "voice": "bf_emma",
+   "hash": "accbe0444167125b"
+  },
+  "proverbs-kjv--10": {
+   "file": "proverbs-kjv--10.mp3",
+   "duration_s": 44.47,
+   "voice": "bf_emma",
+   "hash": "2c6a13145b5488b4"
   }
  }
 }
