@@ -35,6 +35,15 @@ Only `out/manifest.json` is committed. The API reads it at startup (`CARD_AUDIO_
 
 ## Background music
 
-`listen_music.py` generates the optional background music Listen mode can play under the voice
-(off unless the listener turns it on). It is our own synthesised track, so it needs no licence.
-The steps to rebuild `listen-music.mp3` are at the top of the script.
+The optional background music Listen mode can play under the voice (off unless the listener turns
+it on) is Chopin's Nocturne in E-flat major, Op. 9 No. 2, from Musopen's Complete Chopin
+Collection (https://archive.org/details/musopen-chopin), released under CC0 1.0
+(https://creativecommons.org/publicdomain/zero/1.0/). No credit is required.
+
+`listen-music.mp3` (in web/public/audio and app/assets/audio) is that recording, lightly
+compressed, faded at both ends so the loop is smooth, and turned down to about -34 LUFS (about
+17 dB under the card voices), mono 64 kbps:
+
+    ffmpeg -i "Nocturne Op. 9 no. 2 in E flat major.mp3" \
+      -af "acompressor=threshold=-24dB:ratio=3:attack=50:release=800,highpass=f=60,volume=-6.4dB,afade=t=in:d=2,afade=t=out:st=271.6:d=5" \
+      -ac 1 -b:a 64k listen-music.mp3
