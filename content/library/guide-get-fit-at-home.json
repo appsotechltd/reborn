@@ -1,0 +1,286 @@
+{
+  "source": {
+    "id": "guide-get-fit-at-home",
+    "title": "Get Fit at Home",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/live-well/exercise/exercise-guidelines/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the World Health Organization and the CDC.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS, Physical activity guidelines for adults, https://www.nhs.uk/live-well/exercise/exercise-guidelines/physical-activity-guidelines-for-adults-aged-19-to-64/; World Health Organization, Physical activity fact sheet, https://www.who.int/news-room/fact-sheets/detail/physical-activity; CDC, Adult activity: an overview, https://www.cdc.gov/physical-activity-basics/guidelines/adults.html; NHS, How to warm up before exercising, https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/"
+  },
+  "cards": [
+    {
+      "id": "guide-get-fit-at-home--01",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "guidelines",
+        "health"
+      ],
+      "title": "Know how much movement your body needs each week",
+      "body": "Health bodies such as the WHO and the NHS give adults a simple target. Aim for at least 150 minutes of moderate activity a week, or 75 minutes of vigorous activity, or a mix of both. On top of that, do something that works your muscles on at least two days.\n\nModerate means you breathe faster but can still talk. Vigorous means you can only say a few words before you need a breath. Thirty minutes on five days covers the 150, and short ten-minute bursts count too.\n\nTry to sit less as well. Getting up and moving every half hour helps, even if you already exercise.",
+      "apply_it": "Add up roughly how many minutes you were active last week. Write the number down so you can see how far you are from 150.",
+      "quiz": {
+        "question": "What is the usual weekly target for moderate activity for adults?",
+        "options": [
+          "30 minutes",
+          "150 minutes",
+          "500 minutes",
+          "Only weekends matter"
+        ],
+        "answer": 1,
+        "explanation": "Guidelines from bodies like the WHO and NHS suggest at least 150 minutes of moderate activity a week, plus strength work on two days."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--02",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "beginners",
+        "mindset"
+      ],
+      "title": "Start where you are, not where you wish you were",
+      "body": "You do not need a gym, special clothes or a perfect plan to get fitter. Your living room, your stairs and your own body weight are enough to begin.\n\nIf you have been inactive for a while, start with what feels manageable, such as a ten-minute session on three days a week. A small habit you keep beats an ambitious plan you drop after a week. Any movement is better than none, and the biggest gains in health often come when someone goes from doing nothing to doing a little.\n\nBe honest about your starting point. Can you walk briskly for ten minutes? Do five squats? That is your baseline, and it is fine.",
+      "apply_it": "Pick a ten-minute slot today and simply move: march on the spot, climb stairs or dance to two songs.",
+      "quiz": {
+        "question": "Why is a small, regular habit better than a big plan when you start?",
+        "options": [
+          "Small habits burn more calories",
+          "You are more likely to keep doing it",
+          "Big plans are dangerous for everyone",
+          "It is not better"
+        ],
+        "answer": 1,
+        "explanation": "Consistency matters most. A short routine you actually keep builds fitness over time, while an over-ambitious plan is easy to abandon."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--03",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "warm-up",
+        "injury-prevention"
+      ],
+      "title": "Warm up for a few minutes before every session",
+      "body": "A warm-up gently raises your heart rate, loosens your joints and gets blood flowing to your muscles. It makes the workout feel easier and lowers the chance of strains.\n\nSpend at least five or six minutes on it. March on the spot while pumping your arms, then try heel digs, knee lifts towards the opposite hand, shoulder rolls and a few shallow knee bends. Start slowly and build up so you feel warmer and breathe a little faster by the end.\n\nAt the finish, cool down the same way: slow your movement for a few minutes, then stretch while your muscles are still warm.",
+      "apply_it": "Before your next workout, set a timer for six minutes and do a marching warm-up with arm swings and knee lifts.",
+      "quiz": {
+        "question": "Roughly how long should a basic warm-up last?",
+        "options": [
+          "About 30 seconds",
+          "One full hour",
+          "You should never warm up",
+          "At least five or six minutes"
+        ],
+        "answer": 3,
+        "explanation": "A warm-up of about six minutes or more gradually raises your heart rate and prepares muscles and joints."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--04",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "strength",
+        "bodyweight"
+      ],
+      "title": "Build strength with your own body weight",
+      "body": "Strength work keeps muscles and bones strong and makes daily tasks like carrying shopping easier. You can do it with no equipment at all.\n\nGood starter moves are squats (sit back as if onto a chair), push-ups (against a wall or on your knees at first), lunges, glute bridges (lie on your back and lift your hips) and a plank held for a few breaths. Aim for 8 to 12 slow, controlled repetitions of each move, then rest and repeat for two or three rounds.\n\nGood form matters more than speed. If a move hurts your joints, make it easier rather than pushing through.",
+      "apply_it": "Do one round today: 10 squats, 8 wall push-ups, 10 glute bridges and a 15-second plank.",
+      "quiz": {
+        "question": "What matters most when doing bodyweight strength moves?",
+        "options": [
+          "Controlled movement and good form",
+          "Doing them as fast as possible",
+          "Holding your breath throughout",
+          "Doing 100 of each"
+        ],
+        "answer": 0,
+        "explanation": "Slow, controlled reps with good form work the muscles well and reduce the risk of injury."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--05",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "cardio",
+        "home-workout"
+      ],
+      "title": "Get your heart pumping without any equipment",
+      "body": "Cardio is any activity that makes you breathe harder and raises your heart rate. It strengthens your heart and lungs and improves mood and sleep.\n\nAt home you can march or jog on the spot, climb your stairs, do star jumps, skip with an imaginary rope, shadow box or dance to fast music. Outside, a brisk walk is one of the simplest options there is.\n\nTry intervals to keep it interesting: 30 seconds of a lively move, then 30 seconds of easy marching, repeated for ten minutes. As you get fitter, make the active parts longer or the rests shorter.",
+      "apply_it": "Put on three upbeat songs and keep moving until they finish, mixing marching, stepping and dancing.",
+      "quiz": {
+        "question": "Which of these is a simple way to do cardio at home?",
+        "options": [
+          "Sitting very still",
+          "Reading about exercise",
+          "Climbing your stairs repeatedly",
+          "Sleeping longer"
+        ],
+        "answer": 2,
+        "explanation": "Stair climbing raises your heart rate and breathing, which is what cardio is about, and needs no equipment."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--06",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "flexibility",
+        "balance",
+        "stretching"
+      ],
+      "title": "Keep your body flexible and balanced",
+      "body": "Flexibility and balance help you move freely and avoid falls, especially as you get older. They are easy to fit in at the end of a workout.\n\nAfter your session, while muscles are warm, gently stretch your main muscle groups: thighs, calves, hips, chest, shoulders and back. Hold each stretch for around 15 to 30 seconds and breathe slowly. You should feel a mild pull, never sharp pain, and you should not bounce.\n\nFor balance, try standing on one leg while you brush your teeth, holding a counter for support at first. Yoga and tai chi videos are also a good way to build both.",
+      "apply_it": "Tonight, stand on one leg for 20 seconds each side, then do a slow calf and thigh stretch.",
+      "quiz": {
+        "question": "How should a good stretch feel?",
+        "options": [
+          "Sharp pain",
+          "Nothing at all",
+          "A mild, comfortable pull",
+          "Like you are bouncing hard"
+        ],
+        "answer": 2,
+        "explanation": "Stretch to a gentle pull and hold it. Pain or bouncing can strain the muscle."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--07",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "planning",
+        "routine"
+      ],
+      "title": "Follow a simple weekly plan",
+      "body": "A plan removes the daily question of what to do. Here is an easy starting week. Monday: 20 minutes of cardio. Tuesday: strength circuit. Wednesday: brisk walk. Thursday: strength circuit. Friday: cardio intervals. Saturday: something fun, like dancing or a long walk. Sunday: rest or gentle stretching.\n\nThat gives you two strength days and well over 150 minutes of movement once sessions grow to about 30 minutes. Start with shorter sessions if you need to.\n\nPut the sessions in your calendar like appointments. Doing them at the same time each day, such as before breakfast, helps them become automatic.",
+      "apply_it": "Write your next seven days on paper and give each day one activity and a time.",
+      "quiz": {
+        "question": "Why does scheduling workouts at a set time help?",
+        "options": [
+          "It makes workouts shorter",
+          "It helps the habit become automatic",
+          "It is required by law",
+          "It burns extra calories"
+        ],
+        "answer": 1,
+        "explanation": "A fixed time turns exercise into a routine you do without having to decide each day."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--08",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "progress",
+        "overload"
+      ],
+      "title": "Make it a little harder, a little at a time",
+      "body": "Your body adapts to what you ask of it. Once a routine feels easy, it stops making you much fitter, so you need to nudge it forward.\n\nChange one thing at a time: add two more repetitions, an extra round, five more minutes, or a harder version of a move, such as going from wall push-ups to knee push-ups. A good rule is to increase things slowly, every week or two, rather than doubling your effort overnight.\n\nKeep a short log of what you did. Seeing that you managed 8 push-ups in week one and 15 in week six is proof that you are improving.",
+      "apply_it": "Start a simple log today: write the date, what you did and how many reps or minutes.",
+      "quiz": {
+        "question": "What is a sensible way to make progress?",
+        "options": [
+          "Change one thing gradually, such as a few more reps",
+          "Double everything every day",
+          "Never change your routine",
+          "Only exercise when you feel like it"
+        ],
+        "answer": 0,
+        "explanation": "Small, gradual increases let your body adapt while keeping injury risk low."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--09",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "recovery",
+        "rest",
+        "sleep"
+      ],
+      "title": "Rest is part of getting fitter",
+      "body": "Muscles get stronger while you recover, not while you are working out. Without rest, you are more likely to feel worn out, lose motivation or get injured.\n\nGive each muscle group a day off between hard strength sessions, and include at least one easy or rest day each week. Some soreness a day or two after a new workout is normal and fades on its own. Gentle movement, like a walk, often helps it ease.\n\nSleep, water and decent food matter too. Most adults need around seven to nine hours of sleep. If you feel exhausted all the time, ease back for a few days.",
+      "apply_it": "Look at your week and mark at least one proper rest or easy day.",
+      "quiz": {
+        "question": "When do muscles actually get stronger?",
+        "options": [
+          "Only during the workout",
+          "Only if you never rest",
+          "Only when you feel pain",
+          "During recovery after the workout"
+        ],
+        "answer": 3,
+        "explanation": "Training is the signal, but the body rebuilds and strengthens muscles during rest and sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--10",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "motivation",
+        "habits"
+      ],
+      "title": "Find ways to keep yourself going",
+      "body": "Motivation rises and falls, so do not rely on it alone. Build your routine so it is easy to start, even on low days.\n\nLay out your exercise clothes the night before. Choose activities you actually enjoy. Work out with a friend or family member, in person or by video call, so you encourage each other. Set small goals, such as ten push-ups by the end of the month, and celebrate when you reach them.\n\nOn days you really do not feel like it, promise yourself just five minutes. Often you will keep going once you start, and if not, five minutes still counts.",
+      "apply_it": "Message one friend and invite them to do a short home workout with you this week.",
+      "quiz": {
+        "question": "What is a good trick for days when you don't feel like exercising?",
+        "options": [
+          "Skip the whole week",
+          "Do double the next day",
+          "Commit to just five minutes",
+          "Wait until you feel motivated"
+        ],
+        "answer": 2,
+        "explanation": "Starting small lowers the barrier. Once moving, you often carry on, and five minutes still keeps the habit alive."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-get-fit-at-home--11",
+      "topic": "life-guides",
+      "tags": [
+        "fitness",
+        "safety",
+        "doctor"
+      ],
+      "title": "Exercise safely and know when to check with a doctor",
+      "body": "For most people, regular activity is safe and very good for health. Still, speak to a doctor or nurse before starting if you have a heart or lung condition, diabetes, high blood pressure, joint problems, are pregnant, or have not been active for a long time.\n\nWhile exercising, clear space around you, wear supportive shoes and drink water. Stop straight away if you feel chest pain or pressure, severe breathlessness, dizziness or faintness, or sharp pain in a joint. Chest pain that does not go away with rest needs urgent medical help.\n\nListen to your body. Feeling challenged is fine; feeling unwell is not.",
+      "apply_it": "If you have a health condition, write down your questions and book a quick check with your doctor or nurse before stepping up.",
+      "quiz": {
+        "question": "Which symptom means you should stop exercising immediately?",
+        "options": [
+          "Chest pain or dizziness",
+          "Mild sweating",
+          "Breathing a bit faster",
+          "Feeling warm"
+        ],
+        "answer": 0,
+        "explanation": "Chest pain, dizziness, faintness or severe breathlessness are warning signs. Stop and get medical help if they don't settle."
+      },
+      "health": true
+    }
+  ]
+}

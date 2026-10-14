@@ -1,0 +1,284 @@
+{
+  "source": {
+    "id": "guide-sleep-better",
+    "title": "Sleep Better",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.cdc.gov/sleep/about/index.html",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US Centers for Disease Control and Prevention, the NHS and the Sleep Foundation.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: CDC, About Sleep, https://www.cdc.gov/sleep/about/index.html; NHS Every Mind Matters, Sleep, https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/; Sleep Foundation, Sleep Hygiene, https://www.sleepfoundation.org/sleep-hygiene; Sleep Foundation, Light and Sleep, https://www.sleepfoundation.org/how-sleep-works/light-and-sleep"
+  },
+  "cards": [
+    {
+      "id": "guide-sleep-better--01",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "health",
+        "basics"
+      ],
+      "title": "Know how much sleep you actually need",
+      "body": "Sleep isn't wasted time. While you sleep, your body repairs itself, your brain sorts and stores memories, and your mood resets. Too little sleep over time is linked to poorer concentration, low mood, weaker immunity and higher risk of health problems.\n\nMost adults need at least seven hours a night. Teenagers need more, about eight to ten hours, because their bodies and brains are still developing. Children need more still.\n\nQuality matters as well as quantity. Waking up refreshed and staying alert through the day are good signs you're getting enough. If you rely on alarms, caffeine and lie-ins to get by, you may be running short. The rest of this guide shows simple ways to sleep longer and better.",
+      "apply_it": "For the next three nights, note what time you fall asleep and wake up, and how rested you feel.",
+      "quiz": {
+        "question": "How much sleep do most adults need each night?",
+        "options": [
+          "About four hours",
+          "Exactly twelve hours",
+          "At least seven hours",
+          "It doesn't matter"
+        ],
+        "answer": 2,
+        "explanation": "Most adults need seven or more hours a night; teenagers need around eight to ten."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--02",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "routine",
+        "body-clock"
+      ],
+      "title": "Keep a regular sleep schedule",
+      "body": "Your body runs on an internal clock that controls when you feel sleepy and alert. It works best when it's predictable.\n\nTry to go to bed and get up at about the same time every day, including weekends. Big swings, like staying up very late on Saturday and sleeping until noon, act like mild jet lag and can leave you groggy for days.\n\nIf your timing is far off where you want it, shift it gradually, by 15 to 30 minutes every few days. Your wake-up time is the most important anchor, so start there. Over a couple of weeks, you'll likely find you get sleepy more naturally at night and wake up more easily in the morning.",
+      "apply_it": "Choose a wake-up time you can keep every day this week, including the weekend, and set an alarm for it.",
+      "quiz": {
+        "question": "Which time is the most important anchor for your body clock?",
+        "options": [
+          "Your wake-up time",
+          "Your lunch time",
+          "The time you stop work",
+          "It changes every day"
+        ],
+        "answer": 0,
+        "explanation": "A steady wake-up time helps set your internal clock, making it easier to feel sleepy at the right time at night."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--03",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "light",
+        "body-clock"
+      ],
+      "title": "Get daylight in the morning",
+      "body": "Light is the strongest signal your body clock uses to tell day from night. Bright light in the morning tells your brain the day has started, and that helps you feel sleepy at the right time in the evening.\n\nAfter you wake, open the curtains and try to get outside for a few minutes, even on a cloudy day. Daylight is much brighter than indoor lighting, so a short walk, eating breakfast near a window, or travelling to school or work on foot all help.\n\nIn the evening, do the opposite. Dim the lights as bedtime approaches so your body gets the message that night is coming. Morning light and evening dimness together keep your rhythm on track.",
+      "apply_it": "Tomorrow morning, spend at least 10 minutes outside or by a bright window within an hour of waking.",
+      "quiz": {
+        "question": "How does morning daylight help sleep?",
+        "options": [
+          "It makes you need less sleep",
+          "It replaces breakfast",
+          "It has no effect on sleep",
+          "It helps set your body clock so you feel sleepy at the right time at night"
+        ],
+        "answer": 3,
+        "explanation": "Morning light signals the start of the day to your body clock, which helps sleepiness arrive on time in the evening."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--04",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "wind-down",
+        "routine"
+      ],
+      "title": "Build a calming wind-down routine",
+      "body": "You can't go from busy to asleep in a moment. Your body and mind need time to slow down, so give yourself about 30 to 60 minutes to wind down before bed.\n\nPick a few calming activities and do them in the same order each night, so they become a signal that sleep is coming. You might have a warm shower or bath, dim the lights, read a book, listen to gentle music, stretch, pray or do some slow breathing.\n\nAvoid things that rev you up, such as intense exercise, work emails, arguments or exciting games, in this window. It may take a week or two, but a steady routine can help you fall asleep more easily.",
+      "apply_it": "Write down a three-step wind-down routine for tonight, such as a shower, dim lights, then reading.",
+      "quiz": {
+        "question": "Why do the same wind-down steps each night?",
+        "options": [
+          "Because variety ruins sleep entirely",
+          "So they become a signal to your body that sleep is coming",
+          "To use up spare time",
+          "It makes no difference"
+        ],
+        "answer": 1,
+        "explanation": "Repeating the same calming steps teaches your body to expect sleep, helping you drift off more easily."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--05",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "bedroom",
+        "environment"
+      ],
+      "title": "Make your bedroom a place for sleep",
+      "body": "Your surroundings make a big difference to how well you sleep. The ideal bedroom is cool, dark, quiet and comfortable.\n\nKeep the room slightly cool rather than warm, with good airflow if you can. Block out light with thick curtains or an eye mask. Reduce noise with earplugs, or use a fan or steady background sound to mask sudden noises. Make your bed as comfortable as your budget allows; clean bedding and a decent pillow help.\n\nTry to use your bed mainly for sleep, rather than working, eating or watching videos in it. That way your brain links bed with rest. Even in a shared or small room, small changes like an eye mask can help a lot.",
+      "apply_it": "Make one change to your bedroom tonight, like blocking a light source or moving your phone charger away from the bed.",
+      "quiz": {
+        "question": "Which bedroom conditions are best for sleep?",
+        "options": [
+          "Warm, bright and noisy",
+          "Cool, dark, quiet and comfortable",
+          "Full of screens and lights",
+          "It doesn't matter at all"
+        ],
+        "answer": 1,
+        "explanation": "A cool, dark, quiet and comfortable room supports deeper, less disturbed sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--06",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "screens",
+        "phones"
+      ],
+      "title": "Put screens away before bed",
+      "body": "Phones, tablets, computers and TVs make it harder to fall asleep. Their bright light can tell your brain it's still daytime, and the content, from social media to news to games, keeps your mind alert and engaged. It's easy for 'five more minutes' to become an hour.\n\nAim to switch off screens at least 30 minutes before bed, and ideally longer. Charge your phone outside the bedroom or across the room, and use a simple alarm clock if you need one. If you must use a device, turn the brightness down and avoid anything stressful or exciting.\n\nReplace scrolling with something calm, like reading a paper book, chatting with family or listening to soft music.",
+      "apply_it": "Tonight, put your phone on charge outside your bedroom or out of reach 30 minutes before bed.",
+      "quiz": {
+        "question": "Why do screens before bed make sleep harder?",
+        "options": [
+          "They are too quiet",
+          "They make the room too cold",
+          "Their light and content keep your brain alert",
+          "They have no effect"
+        ],
+        "answer": 2,
+        "explanation": "Bright screen light and engaging content both keep the brain switched on when it should be winding down."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--07",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "caffeine",
+        "alcohol"
+      ],
+      "title": "Watch caffeine, alcohol and late meals",
+      "body": "Caffeine blocks the chemical in your brain that builds sleepiness, and its effects can last many hours. Coffee, tea, cola, energy drinks and even chocolate contain it. Try to avoid caffeine from the afternoon onwards.\n\nAlcohol might make you feel drowsy, but it disrupts sleep later in the night, causing lighter sleep and more waking. Smoking and nicotine also interfere with sleep. Keep alcohol low and avoid it close to bedtime.\n\nLarge or very spicy meals just before bed can cause discomfort and heartburn. Try to finish your main meal a few hours before sleep. If you're hungry, a light snack is fine. A warm milky or caffeine-free herbal drink can be a soothing swap.",
+      "apply_it": "Set a 'caffeine cut-off' time of 2pm for yourself this week and see if you sleep better.",
+      "quiz": {
+        "question": "How does alcohol affect sleep?",
+        "options": [
+          "It may cause drowsiness but disrupts sleep later in the night",
+          "It improves sleep all night",
+          "It has no effect",
+          "It replaces the need for sleep"
+        ],
+        "answer": 0,
+        "explanation": "Alcohol can help you nod off but leads to lighter, broken sleep in the second half of the night."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--08",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "naps",
+        "energy"
+      ],
+      "title": "Nap smart, or not at all",
+      "body": "A short nap can boost alertness and mood, but the wrong kind of nap can steal sleep from your night.\n\nIf you nap, keep it short, about 20 to 30 minutes, and take it in the early afternoon. Longer naps can leave you groggy and make it harder to fall asleep at bedtime. Late afternoon or evening naps are the most likely to disturb your night.\n\nIf you're struggling to sleep at night, try skipping naps for a week or two and see if your night-time sleep improves. If you feel you need long naps every day despite a full night in bed, that's worth mentioning to a doctor, as it could be a sign of a sleep problem.",
+      "apply_it": "If you nap today, set an alarm for 25 minutes and make sure it ends before mid-afternoon.",
+      "quiz": {
+        "question": "What is the best kind of nap for most people?",
+        "options": [
+          "A two-hour nap in the evening",
+          "Several naps after dinner",
+          "A nap just before bedtime",
+          "A short nap of about 20 to 30 minutes in the early afternoon"
+        ],
+        "answer": 3,
+        "explanation": "Short, early-afternoon naps refresh you without making it harder to sleep at night."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--09",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "insomnia",
+        "habits"
+      ],
+      "title": "Can't sleep? Get up for a while",
+      "body": "Lying in bed tossing and turning can teach your brain to link bed with frustration and worry, which makes the problem worse.\n\nIf you've been awake for around 20 minutes and can't drop off, get up. Go to another room or sit somewhere quiet with dim light, and do something calm and boring, like reading, light stretching or listening to quiet music. Avoid screens and bright lights. When you feel sleepy again, go back to bed.\n\nTry not to keep checking the clock, which adds pressure. Remember that one bad night is not a disaster; your body will catch up. Sticking to your normal wake-up time the next morning helps you sleep better the following night.",
+      "apply_it": "Tonight, turn your clock away from you so you can't keep checking it.",
+      "quiz": {
+        "question": "What should you do if you can't fall asleep after about 20 minutes?",
+        "options": [
+          "Stay in bed and try harder",
+          "Check your phone in bed",
+          "Get up and do something calm in dim light until sleepy",
+          "Drink a strong coffee"
+        ],
+        "answer": 2,
+        "explanation": "Getting up stops your brain linking bed with frustration, and returning when sleepy helps rebuild the bed-sleep link."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--10",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "worry",
+        "journaling"
+      ],
+      "title": "Park your worries before bed",
+      "body": "Many people find their mind races as soon as their head hits the pillow. The quiet of night gives worries space to grow.\n\nTry a 'worry dump' an hour or two before bed. Write down everything on your mind: tasks for tomorrow, problems, anything nagging you. For each one, add a next step or note when you'll deal with it. Then close the notebook. You've told your brain the issue is recorded and doesn't need to be held in mind overnight.\n\nIf worries still come in bed, remind yourself, 'It's written down. I'll deal with it tomorrow.' Slow breathing or gently relaxing your muscles from toes to head can also help your mind settle.",
+      "apply_it": "An hour before bed tonight, write a list of everything on your mind with one next step for each.",
+      "quiz": {
+        "question": "How does writing worries down before bed help?",
+        "options": [
+          "It solves every problem instantly",
+          "It tells your brain the worries are recorded and can wait until tomorrow",
+          "It keeps you awake longer",
+          "It replaces sleep"
+        ],
+        "answer": 1,
+        "explanation": "Getting worries onto paper with a plan lets your mind relax instead of holding them all night."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-sleep-better--11",
+      "topic": "life-guides",
+      "tags": [
+        "sleep",
+        "getting-help",
+        "sleep-disorders"
+      ],
+      "title": "Know when to see a doctor about sleep",
+      "body": "Good habits fix many sleep problems, but not all of them. See a doctor or health worker if poor sleep lasts for several weeks, keeps affecting your mood, work or school, or if you feel very sleepy during the day despite spending enough time in bed.\n\nAlso get checked if someone notices you snore loudly, gasp or stop breathing in your sleep, or if you have strong urges to move your legs at night. These can be signs of conditions such as sleep apnoea or restless legs, which are treatable.\n\nA doctor can also check whether a medicine, pain or a mental health issue such as anxiety or depression is affecting your sleep. Getting help can make a big difference.",
+      "apply_it": "If poor sleep has bothered you for weeks, book a check-up and bring a few nights of sleep notes with you.",
+      "quiz": {
+        "question": "Which of these is a reason to see a doctor about sleep?",
+        "options": [
+          "Loud snoring with gasping or pauses in breathing",
+          "One late night after a party",
+          "Feeling rested every morning",
+          "Enjoying an occasional nap"
+        ],
+        "answer": 0,
+        "explanation": "Loud snoring with gasps or breathing pauses can signal sleep apnoea, which needs medical assessment."
+      },
+      "health": true
+    }
+  ]
+}

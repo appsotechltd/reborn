@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-break-a-bad-habit",
+    "title": "Break a Bad Habit for Good",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://en.wikipedia.org/wiki/Habit",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on research on habit formation (Lally and colleagues at University College London), Peter Gollwitzer's work on if-then plans and Wikipedia's overviews of habits.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Wikipedia, Habit, https://en.wikipedia.org/wiki/Habit; Wikipedia, Implementation intention, https://en.wikipedia.org/wiki/Implementation_intention; Lally et al. 2009, How are habits formed (European Journal of Social Psychology), summarised in Wikipedia, Habit; Schuenemann et al. 2022, Frontiers in Psychology, on emotions behind avoidance behaviour, https://pmc.ncbi.nlm.nih.gov/articles/PMC8980531/"
+  },
+  "cards": [
+    {
+      "id": "guide-break-a-bad-habit--01",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "habit-loop",
+        "mindset"
+      ],
+      "title": "Every habit runs on a loop: cue, routine, reward",
+      "body": "A habit is something you do so often it happens almost automatically. Researchers describe it as a loop. First comes a cue, something that triggers the urge, like boredom, a notification or finishing a meal. Then the routine, the behaviour itself, such as scrolling, snacking or biting your nails. Then the reward, the small payoff that makes your brain want to repeat it: relief, distraction, a bit of pleasure.\n\nEach time the loop runs, it gets stronger. That is why willpower alone often fails. You are fighting a well-worn path.\n\nThe good news is that once you can see the loop, you can start to change it.",
+      "apply_it": "Pick the habit you want to break and write it as a loop: my cue is..., my routine is..., my reward is...",
+      "quiz": {
+        "question": "What are the three parts of the habit loop?",
+        "options": [
+          "Goal, plan, action",
+          "Thought, feeling, memory",
+          "Start, middle, end",
+          "Cue, routine, reward"
+        ],
+        "answer": 3,
+        "explanation": "A cue triggers the routine, and the reward teaches your brain to repeat it."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--02",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "triggers",
+        "awareness"
+      ],
+      "title": "Spot your triggers by watching the habit closely",
+      "body": "Most bad habits happen without us noticing. To change one, first become a detective. For a week, every time you catch yourself doing it, jot down a few quick notes: the time, where you were, who you were with, what you were feeling and what happened just before.\n\nPatterns soon appear. Maybe you check your phone every time a task gets hard, or snack whenever you feel stressed after work, or spend money when you are lonely late at night.\n\nCommon triggers fall into a few groups: a place, a time of day, a feeling, certain people and the action that came just before. Knowing yours tells you exactly where to step in.",
+      "apply_it": "For the next three days, note every time the habit happens: time, place, feeling and what came just before.",
+      "quiz": {
+        "question": "Why keep notes on when a bad habit happens?",
+        "options": [
+          "To punish yourself",
+          "To reveal the triggers that set it off",
+          "To prove you have no willpower",
+          "Notes make habits stronger"
+        ],
+        "answer": 1,
+        "explanation": "Notes reveal patterns in time, place, feelings and people, showing where to step in."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--03",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "replacement",
+        "rewards"
+      ],
+      "title": "Replace the habit instead of just removing it",
+      "body": "Trying to simply stop a habit leaves a gap, and the old routine rushes back in to fill it. A more reliable approach is to keep the cue and the reward, but swap in a new routine that meets the same need.\n\nAsk what the habit really gives you. If scrolling at night is about winding down, try reading or a short stretch instead. If snacking at your desk is about taking a break, take a short walk or get a glass of water. If biting your nails comes from nervous energy, hold a stress ball.\n\nThe new routine doesn't need to be perfect. It just needs to scratch the same itch.",
+      "apply_it": "Write down what your habit gives you, such as relief or a break, and choose one healthier routine that gives the same reward.",
+      "quiz": {
+        "question": "Why is replacing a habit often better than just stopping it?",
+        "options": [
+          "It is faster",
+          "The new routine meets the same need, so the gap doesn't pull you back",
+          "It needs no effort",
+          "Stopping never works"
+        ],
+        "answer": 1,
+        "explanation": "A replacement that gives a similar reward fills the gap the old habit left."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--04",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "friction",
+        "environment"
+      ],
+      "title": "Make the bad habit harder and less convenient",
+      "body": "We tend to do what is easiest. You can use that against a bad habit by adding friction, small obstacles that make it harder to do on autopilot.\n\nCharge your phone in another room at night. Log out of the apps you waste time on, or move them off your home screen. Don't keep junk food in the house. Leave your bank card at home when you are going somewhere you overspend.\n\nEach extra step gives you a few seconds to notice the urge and choose differently. At the same time, make the good alternative easier: leave the book on your pillow or the water bottle on your desk. Make the right choice the lazy choice.",
+      "apply_it": "Add one obstacle to your bad habit today, such as moving an app or putting something out of sight.",
+      "quiz": {
+        "question": "What does adding friction to a bad habit do?",
+        "options": [
+          "Makes it more fun",
+          "Has no effect",
+          "Makes you feel guilty",
+          "Gives you a pause to notice the urge and choose differently"
+        ],
+        "answer": 3,
+        "explanation": "Extra steps break the autopilot and create a moment of choice."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--05",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "environment",
+        "cues"
+      ],
+      "title": "Change your surroundings to remove the cues",
+      "body": "Many habits are tied to places and situations. That is why people on holiday often find old habits fade: the usual cues are gone.\n\nYou can use this at home. Rearrange the spot where the habit happens. If you always scroll on the sofa, sit somewhere else in the evening. If you overspend with certain friends, suggest a different activity. If you snack while watching TV, keep your hands busy or watch somewhere else.\n\nEven small changes to your setting can weaken the automatic link between cue and routine. Times of change, like a new term, job or home, are a great chance to build fresh patterns from the start.",
+      "apply_it": "Change one thing in the place where your habit usually happens, such as moving a chair, an item or yourself.",
+      "quiz": {
+        "question": "Why can a change of surroundings help break a habit?",
+        "options": [
+          "It removes the cues that trigger the automatic routine",
+          "New places make you richer",
+          "It forces you to rest",
+          "It has no real effect"
+        ],
+        "answer": 0,
+        "explanation": "Habits are linked to settings; changing the setting weakens the cue."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--06",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "small-steps",
+        "progress"
+      ],
+      "title": "Start with small steps you can actually keep",
+      "body": "Trying to change everything at once usually ends in giving up after a few days. Small changes are easier to stick to, and each success builds confidence for the next.\n\nIf you want to cut down screen time, start by keeping your phone out of the bedroom, not by quitting all social media. If you want to stop spending on takeaways, cut from five a week to three before aiming lower. If you swear a lot, start with just one setting, like at work.\n\nChoose a step so small it feels almost too easy. Once it becomes normal, take the next one. Slow progress that lasts beats fast progress that collapses.",
+      "apply_it": "Shrink your goal into one step so small you are sure you can do it every day this week.",
+      "quiz": {
+        "question": "Why start with very small changes?",
+        "options": [
+          "Big changes are against the rules",
+          "Small steps don't count",
+          "Small steps are easier to keep and build confidence",
+          "They make the habit stronger"
+        ],
+        "answer": 2,
+        "explanation": "Small, keepable steps build momentum and confidence for bigger ones."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--07",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "if-then",
+        "planning"
+      ],
+      "title": "Plan your response in advance with if-then plans",
+      "body": "When the urge strikes, it is hard to think clearly. So decide ahead of time. An if-then plan links a specific situation to a specific response: \"If I feel bored at my desk, then I will stand up and stretch for one minute.\" Or: \"If I open my laptop to study, then I will put my phone in a drawer first.\"\n\nPsychologists have tested these plans in many studies and found they help people follow through on intentions more often than general promises like \"I'll try harder.\"\n\nWrite two or three plans for your most common triggers. Say them to yourself a few times so the response is ready when you need it.",
+      "apply_it": "Write one if-then plan for your strongest trigger: If [situation], then I will [new action].",
+      "quiz": {
+        "question": "Which is a well-formed if-then plan?",
+        "options": [
+          "I will try to be better",
+          "I must stop this habit",
+          "If I feel bored at my desk, then I will stand and stretch for one minute",
+          "Tomorrow will be different"
+        ],
+        "answer": 2,
+        "explanation": "If-then plans name a specific situation and a specific response."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--08",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "tracking",
+        "progress"
+      ],
+      "title": "Track your progress so you can see it",
+      "body": "What you measure, you notice. A simple tracker turns a vague effort into something you can see. Mark a calendar, tick a box in a notebook or use a habit app for each day you avoid the habit or use your replacement routine.\n\nWatching a chain of ticks grow is motivating, and you won't want to break it. Tracking also gives honest feedback. If you keep slipping on Friday nights, that tells you where to make a stronger plan.\n\nKeep it simple and quick, a few seconds a day. If tracking becomes a chore, you'll stop. The goal is awareness, not perfect records.",
+      "apply_it": "Make a simple tracker for the next 30 days, such as a grid on paper, and tick today if you kept your plan.",
+      "quiz": {
+        "question": "What is one benefit of tracking your habit?",
+        "options": [
+          "It shows patterns, like when you tend to slip",
+          "It guarantees you never slip",
+          "It replaces the need for a plan",
+          "It makes the habit automatic"
+        ],
+        "answer": 0,
+        "explanation": "Tracking motivates you and reveals patterns you can plan around."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--09",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "accountability",
+        "support"
+      ],
+      "title": "Get support and make yourself accountable",
+      "body": "Change is easier with other people on your side. Tell a friend or family member what you are working on and ask them to check in. Knowing someone will ask \"How's it going?\" can keep you on track on hard days.\n\nEven better, find someone with the same goal and do it together. You can encourage each other and share what works. Online groups can help too.\n\nAlso notice who makes the habit harder. You don't have to cut people off, but you might spend time with them in different settings for a while. And if a habit feels out of control or is harming your life, talking to a counsellor or doctor is a strong step, not a weak one.",
+      "apply_it": "Tell one person you trust about the habit you're breaking and ask them to check in with you once a week.",
+      "quiz": {
+        "question": "How can other people help you break a habit?",
+        "options": [
+          "They can't; it's purely individual",
+          "By doing it for you",
+          "By hiding your slips",
+          "By checking in and keeping you accountable"
+        ],
+        "answer": 3,
+        "explanation": "A supporter who checks in, or a partner with the same goal, makes follow-through more likely."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--10",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "slips",
+        "self-compassion"
+      ],
+      "title": "When you slip, restart quickly without guilt",
+      "body": "Almost everyone slips at some point. A slip doesn't mean you have failed or that all your progress is gone. The real danger is the thought \"I've blown it, so I might as well give up.\"\n\nTreat a slip as information. What was the trigger? Were you tired, stressed, with certain people? Use that to strengthen your plan, then get straight back on track with your next choice.\n\nBe kind to yourself in the way you would be to a friend. Harsh self-criticism often brings stress, and stress can trigger the very habit you're fighting. A useful rule is never to miss twice in a row. One slip is a blip; returning quickly is what counts.",
+      "apply_it": "Write down what you'll tell yourself after a slip, for example: One slip is a blip. What triggered it, and what's my next good choice?",
+      "quiz": {
+        "question": "What is the best response to slipping back into a habit?",
+        "options": [
+          "Give up, since progress is lost",
+          "Learn from the trigger and get back on track with your next choice",
+          "Punish yourself harshly",
+          "Pretend it didn't happen"
+        ],
+        "answer": 1,
+        "explanation": "Slips are normal; learning from them and restarting quickly keeps you moving forward."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--11",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "identity",
+        "mindset"
+      ],
+      "title": "See yourself as the person you're becoming",
+      "body": "Lasting change often comes from a shift in how you see yourself. Compare \"I'm trying to stop checking my phone\" with \"I'm someone who is present with people.\" The second describes who you are, and it makes each choice a chance to live it.\n\nEvery time you choose the new routine, you cast a small vote for that identity. Over time the votes add up, and the new behaviour feels more like you.\n\nThink about why this change matters. Who do you want to be for yourself, your family, your future? Keeping that reason in mind gives you strength when the old pull returns.",
+      "apply_it": "Finish this sentence and keep it where you'll see it: I am someone who...",
+      "quiz": {
+        "question": "How can thinking about identity help break a habit?",
+        "options": [
+          "It removes all cravings",
+          "It makes each good choice feel like proof of who you are becoming",
+          "It lets you skip planning",
+          "It only works for famous people"
+        ],
+        "answer": 1,
+        "explanation": "Seeing yourself as the new kind of person turns each choice into evidence for that identity."
+      }
+    },
+    {
+      "id": "guide-break-a-bad-habit--12",
+      "topic": "life-guides",
+      "tags": [
+        "habits",
+        "patience",
+        "time"
+      ],
+      "title": "Be patient: new habits take weeks to months",
+      "body": "You may have heard that a habit takes 21 days to form or break. Research suggests it is usually longer and varies a lot. In one well-known study at University College London, people took an average of about two months for a new daily behaviour to feel automatic, with a range from under three weeks to more than eight months.\n\nSo don't be discouraged if it still feels hard after a few weeks. That is normal. Missing a day here and there didn't stop people in the study from forming habits in the end.\n\nAlso expect old cues to pull at you now and then, even after a long time. Keep your plans ready, and keep going.",
+      "apply_it": "Mark a date about ten weeks from today in your calendar as a checkpoint, and keep going until then whatever happens.",
+      "quiz": {
+        "question": "According to research, how long does it usually take for a new behaviour to feel automatic?",
+        "options": [
+          "Exactly 21 days",
+          "One week",
+          "At least two years",
+          "About two months on average, with a wide range"
+        ],
+        "answer": 3,
+        "explanation": "In a UCL study the average was about 66 days, ranging from 18 to 254 days."
+      }
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "source": {
+    "id": "guide-master-your-anger",
+    "title": "Master Your Anger",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anger/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, HelpGuide and the Gottman Institute.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS, Anger, https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anger/; HelpGuide, Anger Management, https://www.helpguide.org/mental-health/wellbeing/anger-management; The Gottman Institute, The Four Horsemen: The Antidotes (time-outs and self-soothing), https://www.gottman.com/blog/the-four-horsemen-the-antidotes/"
+  },
+  "cards": [
+    {
+      "id": "guide-master-your-anger--01",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "emotions",
+        "mindset"
+      ],
+      "title": "Anger is normal; what you do with it is what counts",
+      "body": "Anger is a natural human emotion. It often shows up when we feel threatened, treated unfairly, blocked from a goal, or disrespected. In small doses it can even be useful, giving you energy to stand up for yourself or fix a problem.\n\nAnger becomes a problem when it is too frequent, too intense, or comes out in harmful ways: shouting, insults, breaking things, hurting people or bottling it up until you explode.\n\nMastering anger does not mean never feeling it. It means noticing it early, calming your body, thinking clearly, and choosing a response you will not regret later. These are skills anyone can learn.",
+      "apply_it": "Think about the last time you were angry. Write down what happened, what you felt, and what you did.",
+      "quiz": {
+        "question": "What does mastering anger mean?",
+        "options": [
+          "Never feeling angry at all",
+          "Always letting it all out",
+          "Noticing anger and choosing a helpful response",
+          "Hiding it from everyone"
+        ],
+        "answer": 2,
+        "explanation": "Anger is normal. The skill is noticing it and responding in a way you will not regret."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--02",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "triggers",
+        "self-awareness"
+      ],
+      "title": "Spot your triggers so they stop catching you off guard",
+      "body": "Most people have patterns: certain people, places, times or situations that regularly set them off. Common triggers include traffic, being interrupted, feeling criticised, money worries, and being tired or hungry.\n\nAnger also often hides other feelings, like hurt, embarrassment, fear or shame. Asking \"What am I really upset about?\" can reveal the deeper issue.\n\nFor a week or two, keep a simple anger diary. Each time you feel angry, note what happened, the time of day, how strong the anger was from one to ten, and what you did. You will start to see patterns, and you can plan ahead for your most common triggers.",
+      "apply_it": "Start an anger diary today. Each time you feel irritated, note the trigger, the time and how strong it felt from 1 to 10.",
+      "quiz": {
+        "question": "Why keep an anger diary?",
+        "options": [
+          "To spot patterns in what sets you off",
+          "To prove other people are wrong",
+          "To make yourself angrier",
+          "It has no real use"
+        ],
+        "answer": 0,
+        "explanation": "Writing down episodes reveals triggers and patterns, so you can prepare for them."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--03",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "warning-signs",
+        "body"
+      ],
+      "title": "Learn your body's early warning signs",
+      "body": "Anger usually builds before it bursts. Your body gives clues: a faster heartbeat, a hot face, clenched jaw or fists, tight shoulders, shallow breathing, or a knot in your stomach. Your thoughts may race, and you may start raising your voice or pacing.\n\nThe earlier you notice these signs, the easier it is to calm down. At a low level you can still think clearly. Once anger peaks, the thinking part of the brain struggles and you are more likely to say or do something you regret.\n\nLearn your own personal signals. Picture anger as a scale from one to ten, and aim to act when you reach three or four, not nine.",
+      "apply_it": "Recall a recent angry moment. List two physical signs you noticed first, so you can spot them earlier next time.",
+      "quiz": {
+        "question": "When is the best time to act on rising anger?",
+        "options": [
+          "Once you are about to explode",
+          "Only after the argument is over",
+          "Never, just ignore it",
+          "Early, when the first warning signs appear"
+        ],
+        "answer": 3,
+        "explanation": "Acting early, while you can still think clearly, makes calming down much easier."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--04",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "calming",
+        "breathing"
+      ],
+      "title": "Calm your body in the moment",
+      "body": "When anger rises, your body prepares to fight. Calming it down helps your mind catch up.\n\nTry slow breathing from your belly: breathe in through your nose, then breathe out slowly, a little longer than the in-breath. Repeat several times. Counting slowly to ten before you respond gives you a pause. Relax your jaw and drop your shoulders. Some people repeat a calming phrase like \"Slow down\" or \"I can handle this.\"\n\nOther quick helps include splashing cold water on your face, stretching, or focusing on something you can see and hear around you. These do not solve the problem, but they stop anger from making the decision for you.",
+      "apply_it": "Practise now: breathe in for four counts, out for six counts, five times. Then choose a calming phrase you will use when angry.",
+      "quiz": {
+        "question": "What is the main purpose of calming techniques like slow breathing?",
+        "options": [
+          "To solve the problem completely",
+          "To settle your body so you can think clearly",
+          "To ignore the other person",
+          "To show you are right"
+        ],
+        "answer": 1,
+        "explanation": "Calming your body gives your thinking brain a chance to choose a better response."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--05",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "time-out",
+        "conflict"
+      ],
+      "title": "Take a time-out, then come back",
+      "body": "Sometimes the wisest move is to step away. A time-out means leaving a heated situation for a while to cool down, with a plan to return.\n\nAgree on this with people you live or work with when you are calm. Say something like, \"I'm getting too angry to talk well. I need twenty minutes, then let's carry on.\" Then go somewhere else: walk, breathe, listen to music.\n\nUse the break to calm down, not to replay the argument and build your case. Twenty minutes or more is often needed for your body to settle. Then come back and finish the conversation, so the time-out does not become avoidance.",
+      "apply_it": "Agree a time-out signal with someone close to you today, like a phrase or hand sign, and how long a break will last.",
+      "quiz": {
+        "question": "What should you do during a time-out?",
+        "options": [
+          "Rehearse why you are right",
+          "Leave for good without a word",
+          "Do something calming, then return to talk",
+          "Send angry messages instead"
+        ],
+        "answer": 2,
+        "explanation": "A time-out works when you calm down during it and then return to resolve the issue."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--06",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "thinking",
+        "cbt"
+      ],
+      "title": "Catch the thinking traps that fuel anger",
+      "body": "How we think about events shapes how angry we get. Some common thinking traps add fuel to the fire:\n\nUsing words like \"always\" and \"never\": \"You never listen.\" Mind reading: \"He did that on purpose to insult me.\" Rigid rules: \"People must do things my way.\" Blaming: \"It's all their fault.\" Collecting grievances until one small thing tips you over.\n\nWhen you notice these, challenge them. Ask: Is that really true? Is there another explanation? What would I tell a friend in this situation? Swap \"He always ignores me\" for \"He missed my message today; maybe he is busy.\" Balanced thoughts lead to calmer feelings.",
+      "apply_it": "Write down one angry thought you had recently. Then write a calmer, more balanced version of it.",
+      "quiz": {
+        "question": "Which is an example of a thinking trap that fuels anger?",
+        "options": [
+          "'Maybe she is having a hard day.'",
+          "'He did that on purpose to insult me.'",
+          "'I'm not sure why that happened.'",
+          "'Let me ask what happened.'"
+        ],
+        "answer": 1,
+        "explanation": "Assuming bad intent without evidence is mind reading, a common trap that raises anger."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--07",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "assertiveness",
+        "communication"
+      ],
+      "title": "Be assertive, not aggressive",
+      "body": "There are healthy ways to express anger. Being assertive means stating your feelings and needs clearly and respectfully, while respecting the other person too. Being aggressive means attacking, blaming, shouting or threatening.\n\nA useful formula is: \"I feel ... when ... because ... I would like ...\" For example: \"I feel frustrated when plans change at the last minute, because I've arranged my day. I'd like a call as early as possible.\"\n\nStick to the present issue, avoid insults and sarcasm, and focus on fixing the problem rather than winning. Passive-aggressive habits, like the silent treatment, also hurt relationships, because they hide what you really need.",
+      "apply_it": "Think of something that annoys you. Write an 'I feel... when... because... I would like...' sentence about it.",
+      "quiz": {
+        "question": "Which statement is assertive rather than aggressive?",
+        "options": [
+          "'I feel frustrated when plans change late. Could you call earlier?'",
+          "'You're useless, you always ruin everything!'",
+          "Saying nothing and slamming the door",
+          "'Fine, whatever.'"
+        ],
+        "answer": 0,
+        "explanation": "Assertive statements share feelings and needs clearly and respectfully, without attacking."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--08",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "problem-solving",
+        "action"
+      ],
+      "title": "Solve the problem behind the anger",
+      "body": "Sometimes anger points to a real problem that needs fixing, like a noisy neighbour, a colleague who misses deadlines, or bills you cannot pay. Calming down is step one; step two is tackling the cause.\n\nDefine the problem clearly. List possible solutions, even imperfect ones. Pick one to try, make a plan, and review how it went. If something truly cannot be changed, like the weather or a past event, putting energy into it only keeps you angry. Focus on what you can influence.\n\nChanging your routine can help too. If the morning rush always ends in shouting, could you prepare things the night before?",
+      "apply_it": "Pick one situation that keeps making you angry. List three possible solutions and choose one to try this week.",
+      "quiz": {
+        "question": "What should you do if a source of anger cannot be changed?",
+        "options": [
+          "Keep fighting it harder",
+          "Blame someone for it",
+          "Stay angry until it changes",
+          "Focus your energy on what you can influence"
+        ],
+        "answer": 3,
+        "explanation": "Putting energy into what you cannot change keeps you angry. Focus on what you can affect."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--09",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "exercise",
+        "sleep"
+      ],
+      "title": "Exercise, sleep and fewer substances lower your fuse",
+      "body": "Your general state affects how quickly you snap. When you are tired, hungry, stressed or hungover, small things feel huge.\n\nRegular physical activity, such as brisk walking, running, dancing, football or yoga, burns off tension and improves mood. Aim for good sleep with a regular bedtime. Eat regular meals so you are not running on empty.\n\nAlcohol and drugs can lower your self-control and make anger and aggression more likely, and they can worsen mental health over time. Too much caffeine can make you jumpy. Looking after these basics will not remove anger, but it gives you a longer fuse.",
+      "apply_it": "Choose one basic to improve this week, such as a 20-minute daily walk or going to bed at the same time each night.",
+      "quiz": {
+        "question": "How can alcohol affect anger?",
+        "options": [
+          "It always calms people down",
+          "It can lower self-control and make aggression more likely",
+          "It has no effect on mood",
+          "It improves sleep quality"
+        ],
+        "answer": 1,
+        "explanation": "Alcohol reduces self-control, which can make angry outbursts more likely."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--10",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "forgiveness",
+        "wellbeing"
+      ],
+      "title": "Let go of grudges to free yourself",
+      "body": "Holding on to old hurts can keep anger simmering for years. Replaying what someone did, and imagining revenge, keeps you tense and unhappy, often more than it affects them.\n\nForgiveness means choosing to release resentment and the wish for payback. It does not mean saying what happened was fine, forgetting it, or letting someone keep hurting you. You can forgive and still set firm boundaries.\n\nIt is often a process, not a single moment. Writing about the hurt, talking it through with someone you trust, and trying to see the bigger picture can help. Forgiving yourself for past outbursts matters too, while you work on doing better.",
+      "apply_it": "Think of a small grudge you are holding. Write down how it affects you, and one step you could take to let it go.",
+      "quiz": {
+        "question": "What does forgiveness mean in this guide?",
+        "options": [
+          "Saying the hurt was acceptable",
+          "Forgetting everything that happened",
+          "Releasing resentment while still keeping boundaries",
+          "Letting someone keep hurting you"
+        ],
+        "answer": 2,
+        "explanation": "Forgiveness releases resentment for your own peace. You can still protect yourself with boundaries."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-master-your-anger--11",
+      "topic": "life-guides",
+      "tags": [
+        "anger",
+        "support",
+        "therapy"
+      ],
+      "title": "Know when to get help",
+      "body": "Everyone loses their temper sometimes. But it is time to seek help if anger is harming your relationships, work or health, if self-help is not working, if you feel angry most of the time, or if you have hurt or frightened someone.\n\nA doctor is a good first step. They can check for linked issues like stress, depression or anxiety, and point you to counselling or an anger management course. Many programmes use cognitive behavioural therapy, which has good evidence for helping people manage anger.\n\nIf your anger has led to violence or threats towards a partner or family, specialist services for people who want to stop abusive behaviour can help. If anyone is in immediate danger, contact emergency services.",
+      "apply_it": "Write down one person or service you could talk to about anger, such as a doctor or counsellor, and how to contact them.",
+      "quiz": {
+        "question": "Which is a sign it is time to seek professional help for anger?",
+        "options": [
+          "Anger is harming your relationships or you have hurt someone",
+          "You felt annoyed once last month",
+          "You disagreed with a friend",
+          "You felt frustrated in traffic"
+        ],
+        "answer": 0,
+        "explanation": "When anger damages relationships or leads to harm, professional support can make a real difference."
+      },
+      "health": true
+    }
+  ]
+}

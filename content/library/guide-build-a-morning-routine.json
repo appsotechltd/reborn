@@ -1,0 +1,269 @@
+{
+  "source": {
+    "id": "guide-build-a-morning-routine",
+    "title": "Build a Morning Routine",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.sleepfoundation.org/circadian-rhythm/light-and-sleep",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the Sleep Foundation and habit-building research.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Sleep Foundation, Light and sleep, https://www.sleepfoundation.org/circadian-rhythm/light-and-sleep; NHS Every Mind Matters, Sleep, https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/; NHS Better Health, Get active, https://www.nhs.uk/better-health/get-active/; Pablo Stafforini, Summary of The First 20 Hours (on routines and removing barriers), https://stafforini.com/notes/summary-of-the-first-20-hours-by-josh-kaufman/"
+  },
+  "cards": [
+    {
+      "id": "guide-build-a-morning-routine--01",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "habits",
+        "mindset"
+      ],
+      "title": "A good morning routine gives your day a calm, steady start",
+      "body": "How you spend the first hour after waking often sets the tone for the rest of the day. If you wake up late, grab your phone and rush out of the door, you start the day reacting. A simple routine lets you start it on purpose.\n\nA morning routine doesn't have to be long or impressive. It is just a few small things you do in roughly the same order most days, like drinking water, stepping outside, moving a little and choosing your priorities.\n\nBecause it repeats, it needs less willpower over time. Your mind can rest while your body follows a familiar path. This guide shows you how to build one that fits your real life.",
+      "apply_it": "Write down what your mornings usually look like now, from waking to leaving home or starting work.",
+      "quiz": {
+        "question": "What is the main benefit of a morning routine?",
+        "options": [
+          "It helps you start the day on purpose instead of reacting",
+          "It must last at least two hours",
+          "It only works for early risers"
+        ],
+        "answer": 0,
+        "explanation": "A short, repeated routine reduces decisions and helps you begin the day calmly and intentionally."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--02",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "evening",
+        "sleep"
+      ],
+      "title": "A good morning starts the night before",
+      "body": "It's hard to have a calm morning after a short, restless night. Most adults do best with around seven to nine hours of sleep, so work backwards from your wake time to choose a bedtime.\n\nGive yourself time to wind down. Put your phone away a while before bed, dim the lights, and do something relaxing like reading or stretching. Avoid heavy meals, caffeine and alcohol late in the evening.\n\nYou can also make tomorrow easier tonight. Lay out your clothes, pack your bag, prepare breakfast, and jot down the one or two most important things you need to do. Fewer decisions in the morning means less rushing and less stress.",
+      "apply_it": "Tonight, prepare one thing for tomorrow morning, such as clothes, bag or breakfast.",
+      "quiz": {
+        "question": "Which evening habit best supports a calm morning?",
+        "options": [
+          "Scrolling in bed until late",
+          "Having a strong coffee before bed",
+          "Preparing clothes and a short plan for tomorrow",
+          "Deciding everything in the morning"
+        ],
+        "answer": 2,
+        "explanation": "Preparing the night before cuts morning decisions, and winding down helps you sleep well."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--03",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "wake-time",
+        "body-clock"
+      ],
+      "title": "Wake up at about the same time every day",
+      "body": "Your body has an internal clock that controls when you feel alert and when you feel sleepy. It works best with regular timing. Going to bed and waking at roughly the same time each day, including most weekends, helps that clock settle, so waking up gets easier.\n\nPick a wake time that's realistic for your life, not one copied from someone else. If you currently wake at eight, don't jump to five. Move earlier by about fifteen minutes every few days instead.\n\nIf you tend to hit snooze, put your alarm across the room so you have to get up to switch it off. Then go straight into the first step of your routine.",
+      "apply_it": "Choose one realistic wake time and set it as a daily alarm for the next week.",
+      "quiz": {
+        "question": "What is the best way to shift to an earlier wake time?",
+        "options": [
+          "Move it earlier gradually, about fifteen minutes at a time",
+          "Only change it on weekdays",
+          "Jump two hours earlier overnight",
+          "Rely on the snooze button"
+        ],
+        "answer": 0,
+        "explanation": "Small, gradual changes let your body clock adjust without leaving you exhausted."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--04",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "phone",
+        "focus"
+      ],
+      "title": "Don't reach for your phone first thing",
+      "body": "For many people, the first thing they see each morning is a screen full of messages, news and social media. Before you've even sat up, your attention belongs to other people's demands, and it can leave you feeling anxious or behind.\n\nTry giving yourself the first twenty to thirty minutes without your phone. Charge it outside the bedroom, or at least out of reach, and use a simple alarm clock if you can. Do your own routine first: water, light, movement, a quiet moment.\n\nYou can check messages afterwards, with a clearer head. Most things that arrived overnight can wait half an hour, and you'll respond to them better.",
+      "apply_it": "Tonight, charge your phone outside your bedroom or out of arm's reach.",
+      "quiz": {
+        "question": "Why is it helpful to delay checking your phone in the morning?",
+        "options": [
+          "Phones work better later in the day",
+          "Your attention starts on your own priorities instead of others' demands",
+          "Messages disappear if left unread",
+          "It saves battery"
+        ],
+        "answer": 1,
+        "explanation": "Starting with your own routine helps you feel calmer and more in control before you respond to others."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--05",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "daylight",
+        "water"
+      ],
+      "title": "Drink water and get some daylight soon after waking",
+      "body": "Two simple things can help you feel more awake. First, drink a glass of water. You've gone many hours without a drink, and it's an easy, healthy first step. Keep a glass or bottle by your bed so you don't have to think about it.\n\nSecond, get some natural light. Daylight is one of the strongest signals your body clock uses to know it's morning, which helps you feel alert now and sleepy at the right time tonight. Open the curtains, step outside for a few minutes, or have breakfast by a window.\n\nEven on a cloudy day, outdoor light is usually much brighter than indoor lighting.",
+      "apply_it": "Put a glass of water by your bed tonight and step outside for five minutes after you wake tomorrow.",
+      "quiz": {
+        "question": "Why is morning daylight useful?",
+        "options": [
+          "It helps set your body clock so you feel alert by day and sleepy at night",
+          "It replaces the need for sleep",
+          "It only matters on sunny days"
+        ],
+        "answer": 0,
+        "explanation": "Light is a key signal for your internal clock, and outdoor light is bright even when it's cloudy."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--06",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "movement",
+        "energy"
+      ],
+      "title": "Move your body, even for a few minutes",
+      "body": "Moving in the morning wakes up your body and can lift your mood for hours. It doesn't have to be a full workout. A brisk ten-minute walk, some stretches, a few squats and push-ups, or dancing to one song all count.\n\nIf you can combine movement with daylight, even better: a short walk outside gives you both. Being active earlier in the day can also help you sleep better at night, while hard exercise close to bedtime may keep some people awake.\n\nChoose something you enjoy and can do without special equipment, so there's no excuse to skip it. Start small. Five minutes done every day beats an hour you never get round to.",
+      "apply_it": "Tomorrow morning, do five minutes of movement you enjoy, ideally outdoors.",
+      "quiz": {
+        "question": "Which is a good way to start morning movement?",
+        "options": [
+          "A short walk or a few minutes of stretching, done most days",
+          "Wait until you feel fully energetic",
+          "Only an intense hour at the gym counts"
+        ],
+        "answer": 0,
+        "explanation": "Small, regular movement is easy to keep up and still gives real benefits."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--07",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "reflection",
+        "prayer"
+      ],
+      "title": "Make space for quiet time, reflection or prayer",
+      "body": "Before the noise of the day begins, a few minutes of quiet can steady your mind. What this looks like depends on you. Some people pray or read a short passage of scripture. Others sit in silence, breathe slowly, or write in a journal.\n\nYou could note three things you're grateful for, or ask yourself, 'How do I want to show up today?' Even five minutes can help you feel calmer and more grounded, so you respond to the day's challenges instead of just reacting.\n\nFind a regular spot, like a chair by the window, and keep what you need there, such as a notebook or a book. The place itself becomes a cue to slow down.",
+      "apply_it": "Tomorrow, spend five quiet minutes before any screens: pray, breathe, or write three things you're grateful for.",
+      "quiz": {
+        "question": "What helps quiet time become a habit?",
+        "options": [
+          "Making it last at least an hour",
+          "Doing it only when you feel stressed",
+          "Having a regular spot with what you need ready",
+          "Doing it while checking messages"
+        ],
+        "answer": 2,
+        "explanation": "A consistent place with things ready acts as a cue, making the habit easier to repeat."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--08",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "planning",
+        "priorities"
+      ],
+      "title": "Choose your top one to three tasks for the day",
+      "body": "A busy day can fill up with small, urgent tasks while the important things never get done. Taking two minutes each morning to set priorities changes that.\n\nAsk yourself: what are the one to three things that would make today a success? Write them down on paper or a note where you'll see them. If you can, tackle the most important one early, while your energy and focus are fresh.\n\nKeep the list short. A long to-do list can feel overwhelming and leave you feeling you've failed. Three clear priorities are achievable, and finishing them gives you a real sense of progress, even if other things come up.",
+      "apply_it": "Each morning this week, write down your top three tasks and start the first before checking email.",
+      "quiz": {
+        "question": "Why keep your daily priority list short?",
+        "options": [
+          "Long lists are always more productive",
+          "A few clear priorities are achievable and keep you focused",
+          "So you can skip planning",
+          "Short lists mean less work"
+        ],
+        "answer": 1,
+        "explanation": "One to three priorities keep your attention on what matters most and are realistic to finish."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--09",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "breakfast",
+        "nutrition"
+      ],
+      "title": "Eat a simple, nourishing breakfast if it suits you",
+      "body": "Many people find a good breakfast keeps their energy steady and stops mid-morning snacking. Aim for something filling rather than sugary: for example oats or porridge, eggs, beans, wholegrain bread, yoghurt, nuts or fruit. Foods with fibre and protein tend to keep you full for longer.\n\nIt doesn't need to be fancy. Choose two or three easy options you like and rotate them, so you don't have to decide each morning. You can prepare some the night before.\n\nNot everyone is hungry first thing, and that's fine. If you prefer to eat later, plan a healthy option for when you do get hungry, so you don't end up grabbing whatever's nearest.",
+      "apply_it": "Pick two simple, filling breakfasts you enjoy and make sure you have what you need for them this week.",
+      "quiz": {
+        "question": "What kind of breakfast tends to keep you full longest?",
+        "options": [
+          "Something with fibre and protein, like oats, eggs or beans",
+          "Sugary cereal or pastries",
+          "Just a sweet fizzy drink"
+        ],
+        "answer": 0,
+        "explanation": "Fibre and protein digest more slowly, giving steadier energy than sugary foods."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--10",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "habit-stacking",
+        "small-steps"
+      ],
+      "title": "Start small and stack each new habit onto an old one",
+      "body": "The fastest way to fail is to add ten new habits at once. Start with one or two tiny ones you can do even on a bad day, such as drinking water and making your bed. Once they feel automatic, add another.\n\nA helpful trick is habit stacking: link a new habit to something you already do. 'After I switch off my alarm, I'll drink a glass of water.' 'After I put the kettle on, I'll write my top three tasks.' The old habit becomes the reminder for the new one.\n\nNew habits take time to feel natural, often weeks or months. Missing a day is fine. Just pick it up again the next morning.",
+      "apply_it": "Write one habit stack: 'After I ..., I will ...' and try it tomorrow.",
+      "quiz": {
+        "question": "What is habit stacking?",
+        "options": [
+          "Doing many new habits at once",
+          "Linking a new habit to something you already do",
+          "Keeping a list of every habit you want",
+          "Only doing habits at weekends"
+        ],
+        "answer": 1,
+        "explanation": "An existing habit acts as a reliable cue, making the new one easier to remember."
+      }
+    },
+    {
+      "id": "guide-build-a-morning-routine--11",
+      "topic": "life-guides",
+      "tags": [
+        "morning-routine",
+        "flexibility",
+        "weekends"
+      ],
+      "title": "Adjust your routine to your life, including weekends and hard days",
+      "body": "There's no single perfect morning routine. A parent with a baby, a shift worker and a student all have different mornings. Copying someone else's two-hour routine will probably fail. Build yours around your real hours, home and responsibilities.\n\nHave a short version for busy or difficult days: perhaps just water, one minute of stretching and choosing one priority. That way you keep the chain going even when time is tight.\n\nAt weekends, you can relax things, but try to keep your wake time within an hour or so of your weekday time, so Monday doesn't feel like jet lag. Every few weeks, review what's working and change what isn't.",
+      "apply_it": "Write a three-step 'minimum routine' you can do in five minutes on your busiest days.",
+      "quiz": {
+        "question": "What is a sensible approach to weekend mornings?",
+        "options": [
+          "Sleep until afternoon to catch up",
+          "Follow the exact same routine to the minute",
+          "Keep your wake time fairly close to your weekday time",
+          "Drop all habits until Monday"
+        ],
+        "answer": 2,
+        "explanation": "Keeping wake times similar helps your body clock stay steady, so Monday is easier."
+      }
+    }
+  ]
+}

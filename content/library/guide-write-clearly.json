@@ -1,0 +1,267 @@
+{
+  "source": {
+    "id": "guide-write-clearly",
+    "title": "Write Clearly",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.archives.gov/open/plain-writing/10-principles.html",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US National Archives, Digital.gov's plain language guides and the Purdue Online Writing Lab.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: US National Archives, Top 10 principles for plain language, https://www.archives.gov/open/plain-writing/10-principles.html; Digital.gov, Plain language guides, https://digital.gov/guides/plain-language; Purdue Online Writing Lab, Conciseness, https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html"
+  },
+  "cards": [
+    {
+      "id": "guide-write-clearly--01",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "audience",
+        "purpose"
+      ],
+      "title": "Know who you are writing for and what you want them to do",
+      "body": "Clear writing starts before you type a word. Ask two questions: who will read this, and what do I want them to know or do afterwards?\n\nA note to your grandmother, a report for your manager and a message to a customer need different words, detail and tone. Picture one real reader. What do they already know? What will confuse them? How much time do they have? Then write for that person, using 'you' where it fits.\n\nNext, sum up your purpose in one sentence, such as 'I want the team to choose a meeting date by Friday.' If you can't say it simply, you're not ready to write yet. That sentence becomes your guide for what to keep and cut.",
+      "apply_it": "Before your next email, write one line at the top: 'Reader: ... Purpose: ...' Delete it before sending.",
+      "quiz": {
+        "question": "What should you work out before you start writing?",
+        "options": [
+          "The longest words you know",
+          "How many pages to fill",
+          "Who your reader is and what you want them to do"
+        ],
+        "answer": 2,
+        "explanation": "Knowing your reader and purpose tells you what to include, what to leave out and what tone to use."
+      }
+    },
+    {
+      "id": "guide-write-clearly--02",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "structure",
+        "main-point"
+      ],
+      "title": "Put your main point first",
+      "body": "Many of us write the way we think: background first, then reasons, and finally the point. But readers are busy, and many stop after a few lines. If your key message is at the bottom, it may never be read.\n\nSo flip it. Start with the conclusion, the request or the decision, then add the details that support it. For example: 'Can you send the signed form by Thursday? The bank needs it to release the payment.' The reader knows at once what matters and why.\n\nThis works for emails, reports, essays and even text messages. Ask yourself: if they only read my first sentence, would they get the point?",
+      "apply_it": "Look at the last long message you sent. Rewrite its first line so it states the main point or request.",
+      "quiz": {
+        "question": "Where should the most important point usually go?",
+        "options": [
+          "At the start, before the details",
+          "In the middle, after the background",
+          "Scattered throughout",
+          "At the very end, as a surprise"
+        ],
+        "answer": 0,
+        "explanation": "Readers may not finish, so leading with the main point makes sure it gets through."
+      }
+    },
+    {
+      "id": "guide-write-clearly--03",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "sentences",
+        "plain-language"
+      ],
+      "title": "Keep sentences short, with one idea in each",
+      "body": "Long sentences make readers hold many ideas in their head at once. By the end, they have often forgotten the beginning. Short sentences are easier to follow, especially for people reading on a phone or in a second language.\n\nAim for about 15 to 20 words on average. You don't need every sentence to be short; a mix sounds natural. But if a sentence has several commas, dashes or 'and's, it probably holds more than one idea. Split it.\n\nAlso keep the subject and the verb close together. 'The manager, who had been away for two weeks at a conference in another city, approved it' is harder than 'The manager approved it. She had just returned from a conference.'",
+      "apply_it": "Find your longest sentence in something you wrote recently and split it into two or three shorter ones.",
+      "quiz": {
+        "question": "What is a good sign that a sentence should be split?",
+        "options": [
+          "It has several commas or several ideas",
+          "It has fewer than ten words",
+          "It starts with the subject"
+        ],
+        "answer": 0,
+        "explanation": "A sentence crowded with commas or ideas is hard to follow; splitting it helps the reader."
+      }
+    },
+    {
+      "id": "guide-write-clearly--04",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "plain-language",
+        "vocabulary"
+      ],
+      "title": "Choose plain, everyday words",
+      "body": "Fancy words don't make you sound smarter. They mostly make readers work harder. Clear writers pick the simple word whenever it does the job: 'use' instead of 'utilise', 'help' instead of 'facilitate', 'start' instead of 'commence', 'about' instead of 'with regard to'.\n\nBe careful with jargon and abbreviations too. Words that are normal in your job, school or group may mean nothing to outsiders. If you must use a technical term, explain it the first time.\n\nPlain words are not childish. They are respectful, because they let everyone understand you quickly, including people who are tired, stressed or reading in a second language. Good test: would you say this word out loud to a friend?",
+      "apply_it": "Pick three long or formal words you often use and choose a plainer swap for each.",
+      "quiz": {
+        "question": "Which is the plainer way to write 'We will endeavour to facilitate your request'?",
+        "options": [
+          "We shall attempt to expedite your request",
+          "Your request will be facilitated",
+          "We'll try to help with your request"
+        ],
+        "answer": 2,
+        "explanation": "Everyday words like 'try' and 'help' say the same thing faster and more warmly."
+      }
+    },
+    {
+      "id": "guide-write-clearly--05",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "active-voice",
+        "grammar"
+      ],
+      "title": "Prefer the active voice: say who does what",
+      "body": "In the active voice, the person doing the action comes first: 'The coach cancelled the match.' In the passive voice, the action comes first and the doer is hidden or pushed to the end: 'The match was cancelled by the coach,' or just 'The match was cancelled.'\n\nActive sentences are usually shorter, clearer and more direct. They also show who is responsible. Compare 'Mistakes were made' with 'I made a mistake.'\n\nThe passive voice is fine now and then, for example when the doer is unknown or doesn't matter: 'The shop was built in 1990.' But make the active voice your default. To spot the passive, look for 'was' or 'were' followed by a word like 'done', 'made' or 'sent'.",
+      "apply_it": "Find one passive sentence in your recent writing and rewrite it so the doer comes first.",
+      "quiz": {
+        "question": "Which sentence is in the active voice?",
+        "options": [
+          "Amina wrote the report",
+          "Mistakes were made",
+          "The cake was eaten",
+          "The report was written by Amina"
+        ],
+        "answer": 0,
+        "explanation": "In the active voice the doer (Amina) comes before the action (wrote)."
+      }
+    },
+    {
+      "id": "guide-write-clearly--06",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "paragraphs",
+        "structure"
+      ],
+      "title": "Give each paragraph one idea",
+      "body": "A paragraph is a small package with one job. When a paragraph tries to cover three things, readers lose track of what matters. When each paragraph has one clear idea, the whole piece feels easy to follow.\n\nStart each paragraph with a sentence that tells the reader what it is about. Then add the explanation, example or detail. When you move to a new idea, start a new paragraph.\n\nKeep paragraphs short, especially on screens. Three to five sentences is plenty for most writing, and a single sentence is fine when you want something to stand out. White space is not wasted space. It gives the eye a rest and makes your writing look approachable before anyone reads a word.",
+      "apply_it": "Take one long paragraph you've written and split it wherever the idea changes.",
+      "quiz": {
+        "question": "What should usually open a paragraph?",
+        "options": [
+          "A long list of examples",
+          "A sentence that says what the paragraph is about",
+          "An unrelated joke"
+        ],
+        "answer": 1,
+        "explanation": "A clear opening sentence tells readers the paragraph's one idea before the details."
+      }
+    },
+    {
+      "id": "guide-write-clearly--07",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "editing",
+        "conciseness"
+      ],
+      "title": "Cut clutter: every word should earn its place",
+      "body": "Clutter is any word that adds length but not meaning. Common examples are 'in order to' (just 'to'), 'at this point in time' ('now'), 'due to the fact that' ('because'), and fillers like 'really', 'very', 'basically' and 'just'.\n\nConcise doesn't mean using the fewest words possible. It means choosing strong, specific words and dropping the ones that do nothing. 'She walked very quickly' becomes 'She hurried.' 'Make a decision' becomes 'decide.'\n\nWhen you edit, question every word: does it add something the reader needs? If not, cut it. You can also merge two sentences that repeat each other. Your writing will feel sharper and more confident.",
+      "apply_it": "Edit one paragraph you wrote today and try to cut it by a fifth without losing any meaning.",
+      "quiz": {
+        "question": "What is a shorter way to write 'due to the fact that'?",
+        "options": [
+          "Because",
+          "In view of the fact",
+          "Owing to the circumstance that"
+        ],
+        "answer": 0,
+        "explanation": "One plain word replaces five, with no loss of meaning."
+      }
+    },
+    {
+      "id": "guide-write-clearly--08",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "headings",
+        "lists"
+      ],
+      "title": "Use headings and lists to make writing easy to scan",
+      "body": "Most people scan before they read. Headings, bullet points and numbered steps help them find what they need fast.\n\nUse headings in anything longer than a few paragraphs. Make them useful, like 'How to apply' or 'What happens next', rather than vague labels like 'Information'. Use bullet points for items that belong together and numbered lists for steps that must happen in order.\n\nKeep list items short and start each one the same way, for example all with a verb: 'Bring your ID', 'Arrive by nine', 'Pay at the desk.' Don't overdo it, though. A message that is all bullets can feel cold. Use structure where it genuinely helps the reader find, follow or remember something.",
+      "apply_it": "Turn one set of instructions you've written into a short numbered list.",
+      "quiz": {
+        "question": "When should you use a numbered list rather than bullets?",
+        "options": [
+          "When steps must be done in a particular order",
+          "When items are unrelated",
+          "Never; bullets are always better",
+          "When you want it to look longer"
+        ],
+        "answer": 0,
+        "explanation": "Numbers signal sequence, so they suit steps that must happen in order."
+      }
+    },
+    {
+      "id": "guide-write-clearly--09",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "email",
+        "messages"
+      ],
+      "title": "Write emails and messages people can act on quickly",
+      "body": "Emails and messages are where clear writing pays off most, because people read them fast and often on a phone.\n\nUse a subject line that says what the message is about and what you need, such as 'Please confirm venue by Friday'. Put the request or key news in the first line. Keep to one main topic per email, so it's easy to reply to and find later. If you need several things, number them.\n\nMake the next step obvious: who should do what, by when. Before sending, check names, dates, times and attachments. And remember tone: without your voice and face, short messages can sound sharp, so a friendly greeting and a thank-you go a long way.",
+      "apply_it": "Rewrite the subject line of your next email so it says both the topic and the action needed.",
+      "quiz": {
+        "question": "Which subject line is most helpful?",
+        "options": [
+          "Hi",
+          "Quick question",
+          "Please approve the budget by Wednesday",
+          "Update"
+        ],
+        "answer": 2,
+        "explanation": "It tells the reader the topic and exactly what action is needed, and by when."
+      }
+    },
+    {
+      "id": "guide-write-clearly--10",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "editing",
+        "proofreading"
+      ],
+      "title": "Edit in a separate step and read your work aloud",
+      "body": "Writing and editing use different parts of your brain. Trying to do both at once slows you down. So write a rough first draft quickly, then come back later, ideally after a break, to fix it.\n\nWhen you edit, read your work aloud, slowly. Your ear catches what your eye skips: missing words, clumsy phrases, sentences that run out of breath. If you stumble, your reader will too.\n\nCheck the big things first: is the main point clear and early? Then the smaller things: spelling, names, numbers and dates. For anything important, ask someone else to read it and tell you what they think it says. Their answer shows whether you got your message across.",
+      "apply_it": "Before sending your next important message, read it aloud once and fix anything that makes you stumble.",
+      "quiz": {
+        "question": "Why is reading your writing aloud helpful?",
+        "options": [
+          "It makes the text longer",
+          "Your ear catches awkward phrases and missing words your eye skips",
+          "It replaces the need to plan",
+          "It improves your handwriting"
+        ],
+        "answer": 1,
+        "explanation": "Hearing your words reveals clumsy or broken sentences that are easy to miss when reading silently."
+      }
+    },
+    {
+      "id": "guide-write-clearly--11",
+      "topic": "life-guides",
+      "tags": [
+        "writing",
+        "practice",
+        "habits"
+      ],
+      "title": "Get better through small, regular practice",
+      "body": "Clear writing is a skill, not a gift. Like any skill, it improves with regular practice and feedback.\n\nWrite a little every day: a journal entry, a summary of something you read, or a short note explaining an idea to a friend. Try summing up an article in three sentences. It trains you to find the main point and say it simply.\n\nRead good, clear writing too, and notice how it is built: short sentences, strong verbs, helpful headings. When someone misunderstands your message, treat it as useful feedback, not a failure. Ask what confused them and fix it next time. Over a few months, these small habits add up to writing people enjoy reading.",
+      "apply_it": "Summarise something you read today in three clear sentences, main point first.",
+      "quiz": {
+        "question": "What is a helpful way to treat a reader misunderstanding your message?",
+        "options": [
+          "As useful feedback on what to make clearer",
+          "As proof they didn't try hard enough",
+          "As a reason to write longer messages"
+        ],
+        "answer": 0,
+        "explanation": "Misunderstandings show exactly where your writing can be clearer next time."
+      }
+    }
+  ]
+}

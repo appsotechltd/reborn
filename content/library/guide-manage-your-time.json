@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-manage-your-time",
+    "title": "Manage Your Time",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://en.wikipedia.org/wiki/Time_management",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on Wikipedia's overviews of time management and multitasking, the UNC Chapel Hill Learning Center and Postgrad.ie's guide to the Eisenhower matrix.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Wikipedia, Time management, https://en.wikipedia.org/wiki/Time_management; Postgrad.ie, Mastering priorities with the Eisenhower matrix, https://www.postgrad.ie/mastering-priorities-with-the-eisenhower-matrix-a-time-management-guide-for-postgraduate-students/; Wikipedia, Human multitasking, https://en.wikipedia.org/wiki/Human_multitasking; UNC Chapel Hill Learning Center, Studying 101: Study smarter not harder, https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/"
+  },
+  "cards": [
+    {
+      "id": "guide-manage-your-time--01",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "tracking",
+        "awareness"
+      ],
+      "title": "Find out where your time really goes",
+      "body": "Most of us guess badly about how we spend our time. We think we spent an hour on work when it was forty minutes, and we have no idea how long went on scrolling.\n\nFor three to seven days, keep a simple time log. Every hour or so, jot down what you did, in rough blocks: work, study, travel, meals, chores, phone, TV, people. Be honest; nobody else needs to see it.\n\nAt the end, add up the categories. You'll probably find time leaks you didn't know about, and maybe that your most important goals got very little time. That picture is the starting point for real change.",
+      "apply_it": "Start a time log today. Every hour or two, write down roughly what you did since the last entry.",
+      "quiz": {
+        "question": "Why keep a time log for a few days?",
+        "options": [
+          "We often misjudge where our time goes, and a log shows the truth",
+          "To fill a notebook",
+          "Employers require it",
+          "It saves time instantly"
+        ],
+        "answer": 0,
+        "explanation": "A log reveals time leaks and shows how little time may go to what matters most."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--02",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "priorities",
+        "values"
+      ],
+      "title": "Decide what matters most to you",
+      "body": "Time management isn't about cramming more into each day. It is about spending time on what matters. So first, get clear on your priorities.\n\nThink about the main areas of your life: studies or work, family, friends, health, faith, growth, rest. What are your one or two most important goals in the next few months? These are what your time should serve.\n\nWhen you know your priorities, decisions get easier. A request or a distraction can be measured against a simple question: does this move me towards what matters, or away? Without priorities, you'll end up spending your days on whatever shouts loudest.",
+      "apply_it": "Write down your top three priorities for the next three months, and keep the list somewhere you'll see it every day.",
+      "quiz": {
+        "question": "Why define your priorities before planning your time?",
+        "options": [
+          "So you can do more tasks",
+          "Priorities don't affect time",
+          "To impress others",
+          "They give you a test for deciding what deserves your time"
+        ],
+        "answer": 3,
+        "explanation": "Clear priorities help you judge whether each activity is worth your time."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--03",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "eisenhower-matrix",
+        "priorities"
+      ],
+      "title": "Separate urgent from important",
+      "body": "Urgent tasks demand attention now: a ringing phone, a message, a deadline today. Important tasks move you towards your goals: studying for a big exam weeks away, building a skill, time with family. They're not always the same.\n\nA useful tool, often called the Eisenhower matrix, sorts tasks into four boxes. Urgent and important: do it now. Important but not urgent: schedule it. Urgent but not important: delegate it or keep it quick. Neither: drop it.\n\nThe secret of good time management is the second box. If you protect time for important-but-not-urgent tasks, fewer things turn into crises later.",
+      "apply_it": "List today's tasks and sort each one into the four boxes. Schedule at least one important but not urgent task this week.",
+      "quiz": {
+        "question": "In the Eisenhower matrix, what do you do with important but not urgent tasks?",
+        "options": [
+          "Ignore them",
+          "Schedule time for them",
+          "Delegate them",
+          "Do them only in emergencies"
+        ],
+        "answer": 1,
+        "explanation": "Scheduling important-but-not-urgent work keeps it from becoming a crisis later."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--04",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "weekly-planning",
+        "planning"
+      ],
+      "title": "Plan your week before it starts",
+      "body": "Ten to twenty minutes of planning once a week can save hours of confusion. Choose a regular time, perhaps Sunday evening or Monday morning.\n\nLook at the week ahead: fixed commitments like classes, work shifts, appointments and family events. Then place your important tasks into the gaps, especially those linked to your top priorities. Note deadlines and break big tasks into steps across the week.\n\nDon't fill every minute. Leave space for rest, people and the unexpected. A good weekly plan gives you a clear picture so each day starts with direction instead of guessing. It also helps you spot overloaded days early and adjust.",
+      "apply_it": "Set aside 15 minutes this weekend to plan next week: fixed commitments first, then your most important tasks.",
+      "quiz": {
+        "question": "What should go into your weekly plan after fixed commitments?",
+        "options": [
+          "As many tasks as possible in every minute",
+          "Important tasks linked to your priorities, with some free space",
+          "Only fun activities",
+          "Nothing; plans don't work"
+        ],
+        "answer": 1,
+        "explanation": "Place priority tasks in the gaps while leaving space for rest and surprises."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--05",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "daily-planning",
+        "focus"
+      ],
+      "title": "Pick your top three tasks each day",
+      "body": "Long to-do lists can feel overwhelming, and it's tempting to tick off easy, unimportant tasks first. Instead, choose your top three each day: the three things that would make the day a success if you finished them.\n\nDo this the night before or first thing in the morning. Then tackle at least one of them early, before messages and meetings take over.\n\nAnything else you finish is a bonus. If you only get the top three done, you've still had a productive day. Over weeks and months, consistently finishing your most important tasks adds up to real progress on the goals that matter.",
+      "apply_it": "Tonight, write down tomorrow's top three tasks, and plan to start the first one before checking messages.",
+      "quiz": {
+        "question": "What is the idea behind a daily top three?",
+        "options": [
+          "Only work three hours a day",
+          "Do the three easiest tasks first",
+          "Have three to-do lists",
+          "Focus on the three tasks that would make the day a success"
+        ],
+        "answer": 3,
+        "explanation": "Choosing three key tasks keeps attention on what matters rather than on easy busywork."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--06",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "time-blocking",
+        "scheduling"
+      ],
+      "title": "Give important tasks a time slot in your calendar",
+      "body": "A task on a list can wait forever. A task with a time slot gets done. Time blocking means assigning blocks of time in your calendar to specific tasks or types of work.\n\nFor example: 9 to 10:30, write report; 11 to 11:30, emails; 4 to 5, revise chemistry. Treat these blocks like appointments with yourself. If something else comes up, move the block rather than deleting it.\n\nBe realistic about how long things take. Most people underestimate, so add extra time. Blocking also shows you clearly when you're overloaded. If the blocks don't fit, you need to cut, delay or ask for help, not just work faster.",
+      "apply_it": "Block out time in your calendar tomorrow for your most important task, and treat it as an appointment.",
+      "quiz": {
+        "question": "What is time blocking?",
+        "options": [
+          "Assigning specific tasks to set times in your calendar",
+          "Blocking websites",
+          "Refusing all meetings",
+          "Working without breaks"
+        ],
+        "answer": 0,
+        "explanation": "Giving a task a set time slot makes it far more likely to happen."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--07",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "saying-no",
+        "boundaries"
+      ],
+      "title": "Learn to say no, kindly and clearly",
+      "body": "Every yes uses time you could give to something else. If you agree to every request, your own priorities get squeezed out.\n\nBefore saying yes, pause. Ask yourself: does this fit my priorities, and do I truly have the time? You can say, \"Let me check and get back to you,\" which gives you space to decide.\n\nWhen the answer is no, keep it polite and simple: \"Thank you for asking, but I can't take that on right now.\" You don't need a long excuse. Where it helps, offer an alternative, like a later date or a smaller part. Saying no to some things is how you say yes to what matters.",
+      "apply_it": "Prepare one polite sentence you can use to decline requests, and practise saying it out loud.",
+      "quiz": {
+        "question": "What is a good first step before agreeing to a request?",
+        "options": [
+          "Always say yes immediately",
+          "Ignore the person",
+          "Pause and check it against your priorities and time",
+          "Give a long excuse"
+        ],
+        "answer": 2,
+        "explanation": "A short pause helps you decide whether a request deserves your time."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--08",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "batching",
+        "efficiency"
+      ],
+      "title": "Batch similar small tasks together",
+      "body": "Switching between different kinds of tasks has a hidden cost: each time, your mind needs to warm up again. Batching means grouping similar small tasks and doing them in one go.\n\nFor example, answer messages and emails at two or three set times a day instead of all day long. Make all your phone calls in one block. Run errands in one trip. Do household admin like bills and forms in one weekly session.\n\nBatching saves time and mental energy, and it protects longer stretches for deep, focused work. It also brings calm: you know those small tasks have a time, so you can stop thinking about them in between.",
+      "apply_it": "Choose set times today for checking messages, such as late morning and late afternoon, and avoid checking in between.",
+      "quiz": {
+        "question": "Why batch similar tasks?",
+        "options": [
+          "It makes tasks more interesting",
+          "It doubles your workload",
+          "It reduces the cost of switching and frees longer focus time",
+          "It removes the need to plan"
+        ],
+        "answer": 2,
+        "explanation": "Grouping similar tasks reduces warm-up time and protects focus."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--09",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "energy",
+        "focus"
+      ],
+      "title": "Match your tasks to your energy",
+      "body": "Your energy and focus rise and fall through the day. Many people think best in the morning; others are sharper later. Notice your own pattern over a week: when do you feel alert, and when do you slump?\n\nThen plan around it. Put your hardest, most important thinking work, like writing, studying or problem solving, into your peak hours. Save easier tasks, such as tidying, emails and errands, for low-energy times.\n\nProtect your energy too. Regular sleep, food, water, movement and short breaks all help you work well. An hour at your best is often worth more than three hours when you're drained.",
+      "apply_it": "For the next few days, note when you feel most alert. Move one demanding task into that peak time.",
+      "quiz": {
+        "question": "When should you do your most demanding tasks?",
+        "options": [
+          "During your personal peak-energy hours",
+          "Whenever you remember",
+          "Late at night always",
+          "Right after a heavy meal"
+        ],
+        "answer": 0,
+        "explanation": "Matching hard work to your peak hours makes it faster and better."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--10",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "multitasking",
+        "focus"
+      ],
+      "title": "Do one thing at a time",
+      "body": "Multitasking feels efficient, but for tasks that need thinking, the brain doesn't really do two at once. It switches back and forth, and each switch costs time and attention. Research suggests rapid switching leads to more mistakes and can make work take much longer than doing tasks one after another. People also tend to overrate how well they multitask.\n\nSo single-task. Choose one task, close everything unrelated, silence notifications and give it your full attention for a set time. Then move on.\n\nYou may find you finish faster, make fewer errors and feel less frazzled at the end of the day.",
+      "apply_it": "For your next task, close every unrelated tab and app and silence notifications until it's done.",
+      "quiz": {
+        "question": "What does research say about multitasking on thinking tasks?",
+        "options": [
+          "It doubles productivity",
+          "It has no effect",
+          "Most people are excellent at it",
+          "Switching between tasks costs time and increases mistakes"
+        ],
+        "answer": 3,
+        "explanation": "The brain switches rather than truly multitasks, and each switch has a cost."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--11",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "buffer-time",
+        "planning"
+      ],
+      "title": "Leave buffer time for the unexpected",
+      "body": "Things take longer than planned. Buses are late, meetings run over, tasks turn out bigger than expected. If your day is packed edge to edge, one delay knocks everything else off and leaves you stressed and rushing.\n\nBuild in buffers. Leave 10 to 15 minutes between appointments. Give tasks more time than your first guess, especially new ones. Keep a little unscheduled time each day for surprises and catch-up.\n\nBuffers aren't wasted time. If nothing goes wrong, you get a breather or an early start on the next task. If something does go wrong, you can absorb it calmly.",
+      "apply_it": "Look at tomorrow's plan and add a 15-minute buffer between your busiest commitments.",
+      "quiz": {
+        "question": "Why add buffer time to your schedule?",
+        "options": [
+          "To waste time",
+          "So delays and surprises don't knock your whole day off course",
+          "To look busy",
+          "Buffers make tasks take longer"
+        ],
+        "answer": 1,
+        "explanation": "Spare time absorbs delays, so one problem doesn't ruin the whole day."
+      }
+    },
+    {
+      "id": "guide-manage-your-time--12",
+      "topic": "life-guides",
+      "tags": [
+        "time-management",
+        "weekly-review",
+        "habits"
+      ],
+      "title": "Review your week and keep improving",
+      "body": "Good time management is a habit you keep refining. Once a week, take a few minutes to look back before you plan ahead.\n\nAsk yourself: What did I get done? What slipped, and why? Where did time leak away? Did my time match my priorities? Then carry unfinished tasks forward, drop what no longer matters and adjust your approach.\n\nBe kind to yourself in the review. The aim is to learn, not to judge. Some weeks will go off track because life happens. By reviewing regularly, you'll keep making small improvements, and over months they add up to a calmer, more purposeful use of your time.",
+      "apply_it": "At the end of this week, spend ten minutes answering: what went well, what slipped, and what will I change next week?",
+      "quiz": {
+        "question": "What is the purpose of a weekly review?",
+        "options": [
+          "To judge yourself harshly",
+          "To learn what worked and adjust your plans",
+          "To fill time",
+          "To replace planning entirely"
+        ],
+        "answer": 1,
+        "explanation": "Regular reviews help you learn and make steady improvements."
+      }
+    }
+  ]
+}

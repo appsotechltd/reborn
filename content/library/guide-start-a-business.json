@@ -1,0 +1,250 @@
+{
+  "source": {
+    "id": "guide-start-a-business",
+    "title": "Start Your First Business",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US Small Business Administration, GOV.UK and Paul Graham.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: US Small Business Administration, Write your business plan, https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan; US Small Business Administration, Market research and competitive analysis, https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis; GOV.UK, Set up a business, https://www.gov.uk/set-up-business; Paul Graham, Do Things that Don't Scale, https://paulgraham.com/ds.html"
+  },
+  "cards": [
+    {
+      "id": "guide-start-a-business--01",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "ideas",
+        "problem-solving"
+      ],
+      "title": "Start with a real problem people want solved",
+      "body": "The strongest businesses begin with a problem, not a product. Ask: what frustrates people around me? What do they waste time or money on? What do they already pay for but complain about?\n\nGood ideas often come from your own life, skills or community. A student who struggles to find affordable textbooks, a mechanic who sees customers waiting days for parts, or a parent who cannot find reliable childcare may each spot a business.\n\nWrite down problems you notice for a week. Then pick ones that many people share, that matter enough for them to pay, and that you have some skill, interest or access to help solve.",
+      "apply_it": "Start a 'problems list' on your phone. Add every frustration you or others mention this week, however small.",
+      "quiz": {
+        "question": "Where do the strongest business ideas usually start?",
+        "options": [
+          "With a product you think is cool",
+          "With copying the biggest company",
+          "With a real problem people want solved",
+          "With a big loan"
+        ],
+        "answer": 2,
+        "explanation": "Businesses that solve a real, shared problem have customers who genuinely want to pay."
+      }
+    },
+    {
+      "id": "guide-start-a-business--02",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "customers",
+        "research"
+      ],
+      "title": "Talk to potential customers before you build anything",
+      "body": "Before spending money, find out whether people truly have the problem and how they deal with it now. Talk to at least ten to twenty possible customers.\n\nAsk about their past behaviour, not your idea. Good questions include: \"What is the hardest part of doing this?\", \"How do you solve it today?\", and \"What does that cost you?\" Avoid asking, \"Would you buy my product?\", because people are polite and often say yes when they mean no.\n\nListen far more than you talk. If people describe the problem with feeling, already spend money on poor solutions, or ask when they can try yours, those are good signs.",
+      "apply_it": "Write three open questions about the problem you want to solve. Ask them to one possible customer this week.",
+      "quiz": {
+        "question": "Why is 'Would you buy my product?' a weak question?",
+        "options": [
+          "People often say yes to be polite",
+          "It is too short",
+          "It is illegal to ask",
+          "It reveals your prices"
+        ],
+        "answer": 0,
+        "explanation": "Polite answers about the future mislead. Questions about what people actually do today give truer signals."
+      }
+    },
+    {
+      "id": "guide-start-a-business--03",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "mvp",
+        "testing"
+      ],
+      "title": "Test your idea small and cheap before going big",
+      "body": "Instead of building a full product, create the simplest version that lets real customers try it and pay. This is often called a minimum viable product.\n\nIf you want to start a lunch delivery service, cook ten meals and sell them to colleagues before renting a kitchen. If you plan an app, start with a simple form or messaging group where you do the work by hand. Selling a few items through social media can test demand before you buy stock.\n\nThe goal is learning fast: do people actually buy, come back, and tell others? Each small test costs little and shows you what to change before you risk more.",
+      "apply_it": "Describe the smallest version of your idea you could sell to five people within two weeks.",
+      "quiz": {
+        "question": "What is the main purpose of a minimum viable product?",
+        "options": [
+          "To look impressive to investors",
+          "To launch with every feature",
+          "To avoid talking to customers",
+          "To learn cheaply whether real customers will buy"
+        ],
+        "answer": 3,
+        "explanation": "A small, simple test shows real demand quickly and cheaply, before you invest heavily."
+      }
+    },
+    {
+      "id": "guide-start-a-business--04",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "planning",
+        "strategy"
+      ],
+      "title": "Write a simple one-page business plan",
+      "body": "You do not need a fifty-page document to start. A one-page plan helps you think clearly and spot gaps. Answer these questions briefly:\n\nWho are your customers, and what problem do you solve for them? What exactly do you sell, and why would people choose you over other options? How will customers find you and buy? What will it cost to run, and how will you make money? What key tools, partners or suppliers do you need?\n\nKeep it short and update it as you learn. A longer, more formal plan is useful later if you approach a bank or investor, but the one-page version is enough to begin.",
+      "apply_it": "Answer in one sentence each: Who is my customer? What do I sell? How will they find me? How do I make money?",
+      "quiz": {
+        "question": "What is a one-page business plan mainly for at the start?",
+        "options": [
+          "Impressing friends",
+          "Thinking clearly and spotting gaps",
+          "Replacing customer conversations",
+          "Registering with the government"
+        ],
+        "answer": 1,
+        "explanation": "A short plan sharpens your thinking. You update it as you learn from real customers."
+      }
+    },
+    {
+      "id": "guide-start-a-business--05",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "pricing",
+        "costs"
+      ],
+      "title": "Know your costs and set a price that makes a profit",
+      "body": "List your one-off start-up costs, like equipment or a website, and your regular costs, like rent, materials, transport and phone data. Add a buffer of about ten percent for surprises.\n\nFor each sale, work out what it costs you to make or deliver. Your price must cover that, contribute to your regular costs, and leave a profit. Then calculate your break-even point: how many sales you need each month just to cover costs.\n\nCheck what competitors charge, but do not simply undercut them. Very low prices can leave you working hard for nothing. If you offer better quality, speed or service, you can often charge more.",
+      "apply_it": "Pick one product or service you could sell. Write down every cost of one sale, then the lowest price that still leaves a profit.",
+      "quiz": {
+        "question": "What does your break-even point tell you?",
+        "options": [
+          "Your yearly profit",
+          "The best price in the market",
+          "How many sales you need to cover your costs",
+          "How much tax you owe"
+        ],
+        "answer": 2,
+        "explanation": "Break-even is the number of sales needed to cover costs. Anything beyond that is profit."
+      }
+    },
+    {
+      "id": "guide-start-a-business--06",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "legal",
+        "tax"
+      ],
+      "title": "Register your business and handle tax the right way",
+      "body": "Rules differ by country, so check your government's official business website or a local small-business advice centre. In general, you will need to decide on a structure, such as working for yourself as a sole trader or forming a company, which can separate your personal and business finances.\n\nMany places also require you to register your business name, get a licence or permit for some trades, and register with the tax authority once you earn above a certain amount. Selling food, alcohol, medicines or childcare usually has extra rules.\n\nDoing this early avoids fines and makes it easier to open a business bank account or apply for funding later.",
+      "apply_it": "Find your government's official small-business or tax website and note the first registration step for someone starting out.",
+      "quiz": {
+        "question": "Where should you check the exact rules for registering a business?",
+        "options": [
+          "A social media influencer",
+          "Your government's official business or tax website",
+          "A random online forum",
+          "You do not need to check"
+        ],
+        "answer": 1,
+        "explanation": "Rules vary by country, so official government sources or local advice centres are the reliable place to check."
+      }
+    },
+    {
+      "id": "guide-start-a-business--07",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "funding",
+        "money"
+      ],
+      "title": "Fund your start on a shoestring",
+      "body": "Most small businesses start with little money. Begin with what you have: your savings, skills, tools and network. Keep costs low by working from home, buying second-hand equipment, and only spending when a customer is waiting.\n\nAsk customers to pay a deposit or pay in advance. Use early profits to grow step by step. Some founders keep a job or part-time work while the business finds its feet.\n\nBe careful with debt. Borrow only for something that clearly earns money back, and never borrow more than you could repay if the business fails. Grants, small-business programmes, and later, loans or investors are options once you have proof that customers buy.",
+      "apply_it": "List three things you already own or can borrow that could help your business start without spending money.",
+      "quiz": {
+        "question": "What is a sensible rule for borrowing money to start a business?",
+        "options": [
+          "Only borrow what you could repay even if the business fails",
+          "Borrow as much as you can",
+          "Use high-interest credit cards first",
+          "Never track the debt"
+        ],
+        "answer": 0,
+        "explanation": "Borrowing only what you could repay protects you if things do not work out."
+      }
+    },
+    {
+      "id": "guide-start-a-business--08",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "marketing",
+        "sales"
+      ],
+      "title": "Win your first customers by hand",
+      "body": "Your first customers will rarely appear by themselves. Go and find them. Start with people who have the problem: friends of friends, local groups, online communities and nearby businesses.\n\nTell them simply what you offer and why it helps. Offer to solve their problem personally, even if it does not scale yet. Delight these early customers with great service, then ask for honest feedback, reviews and referrals.\n\nUse free tools well: a clear social media page, a messaging business account, a simple sign at your shop, or word of mouth. Focus on one group of customers first, win them over, then expand.",
+      "apply_it": "Write a two-sentence description of what you offer and send it to five people who might need it.",
+      "quiz": {
+        "question": "What is the best way to win your first customers?",
+        "options": [
+          "Wait for them to find you",
+          "Spend heavily on adverts straight away",
+          "Target everyone at once",
+          "Personally reach out and serve them extremely well"
+        ],
+        "answer": 3,
+        "explanation": "Early customers come from personal effort and great service. Their referrals help you grow."
+      }
+    },
+    {
+      "id": "guide-start-a-business--09",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "bookkeeping",
+        "money"
+      ],
+      "title": "Keep simple records of every sale and expense",
+      "body": "Good records tell you if you are making money and make tax time far easier. Keep business and personal money separate, ideally with a separate bank or mobile money account.\n\nRecord every sale and every expense with the date, amount and what it was for, and keep receipts or photos of them. A notebook, spreadsheet or free bookkeeping app works fine at first.\n\nOnce a month, add up your income and costs to see your profit, and check how much cash you have. Cash flow matters: a business can be profitable on paper yet run out of money if customers pay late. Chase unpaid invoices promptly.",
+      "apply_it": "Set up a simple sheet with columns for date, description, money in and money out. Add your last three transactions.",
+      "quiz": {
+        "question": "Why should you keep business and personal money separate?",
+        "options": [
+          "It looks fancier",
+          "It makes it clear whether the business is making money",
+          "Banks require everyone to",
+          "It doubles your income"
+        ],
+        "answer": 1,
+        "explanation": "Separate accounts make your real profit, costs and tax records clear."
+      }
+    },
+    {
+      "id": "guide-start-a-business--10",
+      "topic": "life-guides",
+      "tags": [
+        "business",
+        "growth",
+        "resilience"
+      ],
+      "title": "Grow by improving what works and learning from slips",
+      "body": "Once customers are buying, watch your numbers: sales, repeat customers, costs and profit. Ask regularly what customers love and what annoys them. Do more of what works and fix or drop what does not.\n\nGrow carefully. Hire help or expand only when demand is steady and you can afford it. Build simple routines and write down how you do key tasks, so others can help later.\n\nExpect setbacks. A product flops, a supplier lets you down, sales dip. Treat each as information, adjust and keep going. Find a mentor or join a local business group so you are not facing every problem alone.",
+      "apply_it": "Ask your last three customers what they liked most and what you could improve. Write down one change to make.",
+      "quiz": {
+        "question": "What is a wise approach to growing a small business?",
+        "options": [
+          "Expand fast regardless of demand",
+          "Ignore customer feedback",
+          "Grow carefully once demand is steady and affordable",
+          "Copy competitors exactly"
+        ],
+        "answer": 2,
+        "explanation": "Growing in step with real, steady demand keeps the business stable and avoids running out of cash."
+      }
+    }
+  ]
+}

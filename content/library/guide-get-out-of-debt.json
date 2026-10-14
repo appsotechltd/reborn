@@ -1,0 +1,300 @@
+{
+  "source": {
+    "id": "guide-get-out-of-debt",
+    "title": "Get Out of Debt",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://consumer.ftc.gov/articles/how-get-out-debt",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US Federal Trade Commission, the Consumer Financial Protection Bureau and Citizens Advice.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Federal Trade Commission, How to get out of debt, https://consumer.ftc.gov/articles/how-get-out-debt; Citizens Advice, Work out which debts to deal with first, https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/dealing-with-your-debts/work-out-which-debts-to-deal-with-first/; Consumer Financial Protection Bureau, What is a payday loan?, https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/; Consumer Financial Protection Bureau, Debt collection, https://www.consumerfinance.gov/consumer-tools/debt-collection/; Wikipedia, Debt-snowball method, https://en.wikipedia.org/wiki/Debt-snowball_method"
+  },
+  "cards": [
+    {
+      "id": "guide-get-out-of-debt--01",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "list"
+      ],
+      "title": "Face it: write down every debt you owe",
+      "body": "Debt is easier to beat once you can see it clearly. Many people avoid opening letters or checking balances because it feels scary, but not knowing usually makes things worse.\n\nSit down with your statements and make a list. For each debt, write who you owe, the total balance, the interest rate, the minimum monthly payment and the due date. Include everything: credit cards, loans, overdrafts, phone contracts, money owed to family, and any bills in arrears.\n\nThe total might be uncomfortable, but now you have a real starting point and can make a plan.",
+      "apply_it": "Gather your statements and write a list of every debt with its balance, interest rate and minimum payment.",
+      "quiz": {
+        "question": "What should your debt list include for each debt?",
+        "options": [
+          "Only the lender's name",
+          "Balance, interest rate, minimum payment and due date",
+          "Just the largest debts",
+          "Nothing, avoid looking"
+        ],
+        "answer": 1,
+        "explanation": "Knowing balances, rates and minimums lets you prioritise and plan payments properly."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--02",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "spending"
+      ],
+      "title": "Stop the debt from growing",
+      "body": "You cannot dig out of a hole while you are still digging. Before anything else, stop adding new debt.\n\nPut credit cards somewhere hard to reach, remove saved card details from shopping sites and turn off buy now, pay later options. Pause any spending that is not essential while you get on top of things. If you are relying on borrowing to cover everyday bills, that is a sign to get free debt advice soon.\n\nThis step on its own often brings relief, because the numbers stop moving in the wrong direction.",
+      "apply_it": "Delete saved card details from your shopping apps and websites today.",
+      "quiz": {
+        "question": "What is the first practical step to stop debt growing?",
+        "options": [
+          "Take out a new card",
+          "Stop adding new borrowing",
+          "Ignore your statements",
+          "Only pay interest"
+        ],
+        "answer": 1,
+        "explanation": "New borrowing cancels out repayments. Stopping it is the foundation of any payoff plan."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--03",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "budget"
+      ],
+      "title": "Build a simple budget to free up money",
+      "body": "A budget shows where your money really goes and how much you can put towards debt. Write down your monthly income after tax. Then list your spending: housing, food, transport, utilities, phone, and the smaller things like takeaways and subscriptions. Your bank statements will help.\n\nTake essentials away from income to see what is left. Then look for cuts: cancel unused subscriptions, cook more at home, shop with a list and switch to cheaper deals where you can.\n\nEvery bit you free up can go to your debts. Even a small extra amount each month speeds things up and cuts the interest you pay.",
+      "apply_it": "Go through last month's bank statement and highlight three costs you could cut or cancel.",
+      "quiz": {
+        "question": "What does a budget help you find?",
+        "options": [
+          "How to borrow more",
+          "A way to skip bills",
+          "Nothing useful",
+          "Money you can put towards debts"
+        ],
+        "answer": 3,
+        "explanation": "Seeing income and spending side by side reveals where money can be freed for repayments."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--04",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "priority-debts"
+      ],
+      "title": "Pay priority debts first",
+      "body": "Not all debts carry the same risk. Priority debts are the ones where not paying can lead to the most serious consequences, such as losing your home, having your power cut off, court action or losing essential goods.\n\nThese usually include rent or mortgage, secured loans, energy bills, taxes, court fines and child maintenance. Exactly which debts count depends on where you live.\n\nMake sure these are covered in your budget before you pay extra on credit cards or personal loans. If you are behind on any priority debt, contact the lender and a free debt adviser quickly.",
+      "apply_it": "Mark each debt on your list as priority or non-priority, and check every priority one is in your budget.",
+      "quiz": {
+        "question": "Which debt is usually a priority debt?",
+        "options": [
+          "Rent or mortgage",
+          "A store card",
+          "Money owed to a friend",
+          "A gym membership"
+        ],
+        "answer": 0,
+        "explanation": "Missing rent or mortgage payments can lead to losing your home, so it comes first."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--05",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "minimum-payments"
+      ],
+      "title": "Keep up the minimum payments on everything",
+      "body": "While you focus on one debt at a time, keep paying at least the minimum on all the others. Missing payments usually brings late fees, extra interest and damage to your credit record, which makes borrowing dearer later.\n\nSet up automatic payments for the minimums if you can, timed just after your pay arrives, so you never miss one by accident.\n\nBe aware that paying only the minimum forever can take years and cost a lot in interest. Minimums keep you safe; extra payments on top are what actually clear the debt.",
+      "apply_it": "Set up an automatic minimum payment for one debt that is currently paid by hand.",
+      "quiz": {
+        "question": "Why should you keep paying minimums on every debt?",
+        "options": [
+          "Because minimums clear debt quickly",
+          "Lenders reward it with cash",
+          "To avoid fees, extra interest and damage to your credit record",
+          "It doesn't matter"
+        ],
+        "answer": 2,
+        "explanation": "Missing minimums adds costs and hurts your credit, even while you focus extra money elsewhere."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--06",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "avalanche",
+        "snowball"
+      ],
+      "title": "Choose a payoff method: avalanche or snowball",
+      "body": "Once minimums are covered, put any extra money towards one debt at a time. There are two popular ways to pick which.\n\nThe avalanche method targets the debt with the highest interest rate first. It saves the most money overall. The snowball method targets the smallest balance first. You clear a debt sooner, which feels good and keeps many people motivated.\n\nWith either method, when one debt is paid off, roll its payment into the next one, so your payments grow over time. Research suggests both can work; the best one is the one you will stick with.",
+      "apply_it": "Look at your list and circle the debt you'd target first with the avalanche method, then the snowball method.",
+      "quiz": {
+        "question": "Which method saves the most interest overall?",
+        "options": [
+          "Snowball",
+          "Paying only minimums",
+          "Avalanche",
+          "Borrowing to pay debts"
+        ],
+        "answer": 2,
+        "explanation": "The avalanche targets the highest-interest debt first, which reduces total interest paid."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--07",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "lenders"
+      ],
+      "title": "Talk to your lenders before things get worse",
+      "body": "If you are struggling to pay, contact your lenders early, before you miss payments if possible. Many will agree to a lower payment plan, freeze or reduce interest, or give you a short break, especially if you explain your situation honestly.\n\nBefore you call, know your budget so you can offer an amount you can truly afford. Keep notes of who you spoke to and when, and ask for any agreement in writing.\n\nIf a debt collector contacts you, ask them to confirm the debt and the amount. Do not ignore them, but do not agree to payments you cannot keep.",
+      "apply_it": "Choose one debt that worries you and write a short script explaining your situation and what you can afford.",
+      "quiz": {
+        "question": "What should you have ready before calling a lender about payment problems?",
+        "options": [
+          "A new credit card",
+          "Your budget and an amount you can truly afford",
+          "Nothing",
+          "A payday loan"
+        ],
+        "answer": 1,
+        "explanation": "Knowing what you can afford lets you agree a realistic plan you can actually keep."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--08",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "payday-loans",
+        "scams"
+      ],
+      "title": "Steer clear of loan sharks and payday traps",
+      "body": "When money is tight, quick loans can look tempting. Payday and other short-term loans often charge fees that work out to very high yearly rates, and rolling them over can trap you in a cycle of borrowing just to pay the fees.\n\nLoan sharks are unlicensed lenders. They may charge huge interest, take your ID or bank card, and use threats or violence. Never borrow from someone who is not properly licensed.\n\nBefore borrowing, talk to a free debt adviser. Safer options may include a payment plan with your creditor, a credit union, community hardship funds, or government support you are entitled to.",
+      "apply_it": "Find out whether there is a credit union or community lender in your area and note its details.",
+      "quiz": {
+        "question": "What is a warning sign of a loan shark?",
+        "options": [
+          "They ask to keep your ID or bank card",
+          "They are licensed and regulated",
+          "They explain all fees in writing",
+          "They suggest free advice"
+        ],
+        "answer": 0,
+        "explanation": "Taking ID or bank cards is a classic sign of an illegal lender. Stay away and seek help."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--09",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "consolidation"
+      ],
+      "title": "Be careful with debt consolidation",
+      "body": "Consolidation means taking one new loan to pay off several debts, leaving a single payment. It can help if the new loan has a lower interest rate and you stop using the old cards.\n\nBut there are traps. A longer term can mean paying more interest in total even with a lower monthly payment. Some loans have fees. Securing a loan on your home puts your home at risk if you fall behind. And clearing cards often tempts people to run them up again.\n\nCompare the total cost, not just the monthly payment, and get free advice before signing.",
+      "apply_it": "If you're considering consolidation, work out the total you'd repay on the new loan versus your current debts.",
+      "quiz": {
+        "question": "What is a key risk of a consolidation loan secured on your home?",
+        "options": [
+          "It is always free",
+          "It deletes your debts",
+          "It has no interest",
+          "Your home could be at risk if you fall behind"
+        ],
+        "answer": 3,
+        "explanation": "A secured loan uses your home as security, so missing payments could mean losing it."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--10",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "advice",
+        "help"
+      ],
+      "title": "Get free, independent debt advice",
+      "body": "You do not have to sort out serious debt on your own. Many countries have free, independent debt advice charities, government money services, credit unions and non-profit credit counsellors. They can check your budget, talk to creditors for you and explain options you may not know about.\n\nBe wary of companies that charge large upfront fees, promise to wipe out all your debt, or tell you to stop talking to your creditors. These are common warning signs of debt relief scams.\n\nA good adviser looks at your whole situation before recommending anything, and the best help is often free.",
+      "apply_it": "Search for a free, non-profit debt advice service in your country and save its contact details.",
+      "quiz": {
+        "question": "Which is a warning sign of a debt relief scam?",
+        "options": [
+          "A free first consultation",
+          "Reviewing your full budget",
+          "Large upfront fees and promises to clear all debt",
+          "Explaining several options"
+        ],
+        "answer": 2,
+        "explanation": "Legitimate advisers rarely charge big upfront fees or guarantee to erase all debt."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--11",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "emergency-fund",
+        "savings"
+      ],
+      "title": "Build a small emergency buffer",
+      "body": "One reason people fall back into debt is that an unexpected cost, like a broken phone or a medical bill, lands with nothing saved to cover it.\n\nWhile paying down debt, try to build a small buffer too. Start tiny: put aside a little each week until you have a modest amount, such as enough for one surprise bill. Keep it in a separate account so you are not tempted to spend it.\n\nOnce your debts are cleared, keep growing it towards three to six months of essential costs. A buffer means the next surprise does not end up on a credit card.",
+      "apply_it": "Open or label a separate savings pot today and move even a small amount into it.",
+      "quiz": {
+        "question": "Why build a small buffer while paying off debt?",
+        "options": [
+          "To avoid using credit for surprise costs",
+          "To spend on treats",
+          "Lenders require it",
+          "It isn't useful"
+        ],
+        "answer": 0,
+        "explanation": "A small cushion covers surprises so you don't need to borrow again."
+      }
+    },
+    {
+      "id": "guide-get-out-of-debt--12",
+      "topic": "life-guides",
+      "tags": [
+        "debt",
+        "money",
+        "habits"
+      ],
+      "title": "Stay out of debt for good",
+      "body": "Clearing debt is a big achievement. Keeping it clear is about habits. Keep using your budget, and review it each month. Live on less than you earn, and save before you spend.\n\nOnce a debt is paid off, redirect that payment into savings instead of new spending. Use credit only for what you can repay in full, and pause before any big purchase, ideally sleeping on it for a day.\n\nIf things get tight again, act early: revisit your budget, talk to lenders and get free advice. Celebrate your progress along the way, without borrowing to do it.",
+      "apply_it": "Choose one rule to protect your progress, such as waiting 24 hours before any non-essential purchase.",
+      "quiz": {
+        "question": "What should you do with the payment once a debt is cleared?",
+        "options": [
+          "Spend it on something new",
+          "Take on a new loan",
+          "Forget about it",
+          "Redirect it into savings"
+        ],
+        "answer": 3,
+        "explanation": "Moving the freed-up payment into savings builds security and keeps you out of debt."
+      }
+    }
+  ]
+}

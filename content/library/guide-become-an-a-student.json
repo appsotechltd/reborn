@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-become-an-a-student",
+    "title": "Become an A Student",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the UNC Chapel Hill Learning Center, The Learning Scientists and research on retrieval and spaced practice.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: UNC Chapel Hill Learning Center, Studying 101: Study smarter not harder, https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/; The Learning Scientists, Six strategies for effective learning, https://www.learningscientists.org/downloadable-materials; Wikipedia, Testing effect, https://en.wikipedia.org/wiki/Testing_effect; Wikipedia, Spaced repetition, https://en.wikipedia.org/wiki/Spaced_repetition; Pooja K. Agarwal, Retrieval Practice, https://www.retrievalpractice.org/"
+  },
+  "cards": [
+    {
+      "id": "guide-become-an-a-student--01",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "mindset",
+        "learning"
+      ],
+      "title": "Top grades come from smart habits, not just brains",
+      "body": "Many students believe A grades belong to people who are naturally clever. In reality, most strong students rely on good habits: they show up, they study in ways that actually build memory, and they keep going steadily instead of cramming.\n\nSome popular methods feel productive but do little, like rereading notes again and again or highlighting whole pages. Research on learning points to better tools, such as testing yourself, spacing out your study and practising with real problems.\n\nThis guide covers those tools step by step. You don't need to study for more hours. You need to make the hours you already spend work much harder.",
+      "apply_it": "Think about how you studied for your last test. Write down which methods you used and circle any that were just rereading or highlighting.",
+      "quiz": {
+        "question": "Which study habit does research suggest is weak on its own?",
+        "options": [
+          "Testing yourself",
+          "Rereading and highlighting",
+          "Spacing out study sessions",
+          "Practising problems"
+        ],
+        "answer": 1,
+        "explanation": "Rereading and highlighting feel productive but build memory far less than active methods."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--02",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "classes",
+        "engagement"
+      ],
+      "title": "Go to every class and take part actively",
+      "body": "The easiest marks come from simply being there. In class you hear what the teacher thinks matters most, which is often what turns up in tests. Missing lessons means teaching yourself later, which takes much longer.\n\nDo more than sit there. Read or skim the topic beforehand so you have a hook to hang new ideas on. Sit where you can see and hear well. Ask questions when something is unclear; others are probably confused too. Answer questions even if you're unsure, because trying to recall an answer helps you learn.\n\nAfter class, spend five minutes looking over what was covered while it is fresh.",
+      "apply_it": "Before your next class, spend five minutes skimming the topic, and write one question you want answered during the lesson.",
+      "quiz": {
+        "question": "Why is it worth skimming a topic before class?",
+        "options": [
+          "So you can skip the class",
+          "Teachers check it",
+          "It replaces taking notes",
+          "It gives you a hook to connect new ideas to"
+        ],
+        "answer": 3,
+        "explanation": "A quick preview gives your brain a framework for what you hear in class."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--03",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "notes",
+        "organisation"
+      ],
+      "title": "Take notes that help you learn, not just copy",
+      "body": "Good notes are not a transcript. Trying to write down every word leaves no time to think. Instead, listen for main ideas, key terms, examples and anything the teacher repeats or stresses.\n\nWrite in your own words where you can, because putting an idea into your words forces you to understand it. Use headings, short bullet points and simple diagrams. Leave space on the side for questions.\n\nWithin a day, review your notes. Fill gaps, fix anything unclear and turn key points into questions, such as \"What are the causes of...?\" Those questions become ready-made material for testing yourself later. Notes are a tool for studying, not just a record.",
+      "apply_it": "Take your most recent notes and turn three key points into questions you could quiz yourself on.",
+      "quiz": {
+        "question": "What makes notes more useful for learning?",
+        "options": [
+          "Writing main ideas in your own words and turning them into questions",
+          "Copying every word exactly",
+          "Using as many colours as possible",
+          "Never looking at them again"
+        ],
+        "answer": 0,
+        "explanation": "Own-words notes and self-test questions make you process and later recall the material."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--04",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "active-recall",
+        "memory"
+      ],
+      "title": "Test yourself: active recall beats rereading",
+      "body": "The most powerful study habit is also simple: close the book and try to remember. Pulling information out of your memory, called retrieval practice or active recall, strengthens it far more than reading it again. Researchers have found this effect over and over, in classrooms as well as labs.\n\nWays to do it: answer practice questions, use flashcards, write down everything you remember about a topic on a blank page, or explain it out loud as if teaching a friend. Then check what you missed and focus there.\n\nIt feels harder than rereading, and that effort is exactly what makes it work. If studying feels too easy, you're probably not learning much.",
+      "apply_it": "Pick one topic, close your notes, and write down everything you can remember for five minutes. Then check and fill the gaps.",
+      "quiz": {
+        "question": "Why does testing yourself work better than rereading?",
+        "options": [
+          "It takes less effort",
+          "It covers more pages",
+          "Pulling information from memory strengthens it",
+          "Teachers prefer it"
+        ],
+        "answer": 2,
+        "explanation": "The effort of retrieval strengthens memory much more than passively reading again."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--05",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "spaced-repetition",
+        "memory"
+      ],
+      "title": "Space out your study instead of cramming",
+      "body": "Cramming the night before can get you through a test, but most of it is forgotten within days. Spreading study across several shorter sessions, known as spaced practice, helps you remember far longer.\n\nHere's how it works. We forget quickly after first learning something. Each time you review just as it starts to fade, the memory gets stronger and lasts longer. So review new material a day later, then a few days later, then a week later.\n\nIn practice, give each subject short regular sessions, such as 30 to 45 minutes a few times a week, rather than one long marathon. Flashcard apps that schedule reviews can do the spacing for you.",
+      "apply_it": "Choose one topic you learned this week and schedule quick reviews in your calendar for tomorrow, in three days and in one week.",
+      "quiz": {
+        "question": "What is spaced practice?",
+        "options": [
+          "Studying in a quiet space",
+          "Studying one subject all day",
+          "Spreading reviews of material over days and weeks",
+          "Taking a year off"
+        ],
+        "answer": 2,
+        "explanation": "Reviewing material over spread-out sessions makes memories much longer lasting than cramming."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--06",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "practice",
+        "problem-solving"
+      ],
+      "title": "Do lots of practice problems and past papers",
+      "body": "Understanding a worked example is not the same as being able to do it yourself. In subjects like maths, science and languages, skill comes from practice.\n\nAfter learning a method, try problems on your own without looking at the answer. When you get stuck, check the solution, understand the step you missed, then try a similar problem again. Keep a list of mistakes and why you made them; it becomes your personal guide to what to revise.\n\nBefore exams, past papers are gold. They show the style of questions, the time pressure and what examiners expect. Do some under timed, exam-like conditions, then mark them honestly using the marking guide.",
+      "apply_it": "Find one past paper or practice set for a subject you're studying and do one section without notes this week.",
+      "quiz": {
+        "question": "What should you do when you get a practice problem wrong?",
+        "options": [
+          "Understand the missed step, then try a similar problem",
+          "Move on and forget it",
+          "Copy the answer into your notes",
+          "Stop practising that topic"
+        ],
+        "answer": 0,
+        "explanation": "Learning from errors and retrying is how practice builds real skill."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--07",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "interleaving",
+        "learning"
+      ],
+      "title": "Mix up topics to learn when to use each method",
+      "body": "When practising, it is natural to do ten problems of the same type in a row. It feels smooth, but in an exam the questions come mixed, and the hard part is recognising which method fits.\n\nInterleaving means mixing different topics or problem types in one session. For example, instead of 15 fraction questions and then 15 percentage questions, mix them together. Or switch between related topics in history or biology.\n\nIt feels harder and slower, and you'll make more mistakes at first. That struggle is a good sign. Studies suggest mixing helps you tell problem types apart and choose the right approach when it counts.",
+      "apply_it": "In your next practice session, mix questions from two or three different topics instead of doing one type in a block.",
+      "quiz": {
+        "question": "What is interleaving?",
+        "options": [
+          "Studying with a friend",
+          "Taking long breaks",
+          "Reading notes in order",
+          "Mixing different topics or problem types in one session"
+        ],
+        "answer": 3,
+        "explanation": "Mixing problem types trains you to recognise which method each question needs."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--08",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "planning",
+        "schedule"
+      ],
+      "title": "Make a study schedule and stick to it",
+      "body": "Studying works best when it is planned rather than left to mood. At the start of each week, look at your deadlines and tests, then block regular study times for each subject.\n\nBe specific. \"Study biology\" is vague; \"Make flashcards for chapter 4 and test myself\" is clear. Work backwards from big deadlines, breaking projects into steps with their own dates.\n\nChoose times when you are most alert for the hardest subjects. Keep sessions to around 30 to 45 minutes with short breaks. When the workload is light, get ahead on bigger assignments so busy weeks are less stressful. Treat study blocks like appointments you don't cancel.",
+      "apply_it": "Open a calendar and block three specific study sessions for this week, each with a clear task.",
+      "quiz": {
+        "question": "Which is the best way to write a study task?",
+        "options": [
+          "Study biology",
+          "Make flashcards for chapter 4 and test myself",
+          "Do some work",
+          "Revise everything"
+        ],
+        "answer": 1,
+        "explanation": "Specific tasks are easier to start and to finish."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--09",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "focus",
+        "distractions"
+      ],
+      "title": "Protect your focus: put the phone away",
+      "body": "Every time you glance at a message or notification, your attention has to restart, and you lose time and accuracy. Studying with your phone nearby, even face down, can pull at your attention.\n\nPut your phone in another room or a drawer while you study, or use a focus mode or app blocker. Close extra tabs. Tell family or friends when you are studying so they don't interrupt.\n\nTry working in focused blocks, such as 25 to 45 minutes, then take a short break to check messages, stretch or get a drink. Knowing a break is coming makes it easier to ignore the urge to check. One hour of real focus beats three distracted ones.",
+      "apply_it": "Next time you study, put your phone in another room for a 30-minute focused block, then take a short break.",
+      "quiz": {
+        "question": "Why should the phone be out of reach while studying?",
+        "options": [
+          "Phones damage books",
+          "Each check breaks your focus and costs time",
+          "It saves battery",
+          "Teachers forbid it"
+        ],
+        "answer": 1,
+        "explanation": "Switching attention to the phone costs time and accuracy each time you refocus."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--10",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "sleep",
+        "memory"
+      ],
+      "title": "Sleep well: it locks in what you learned",
+      "body": "Staying up all night to study often backfires. During sleep, your brain processes and strengthens what you learned during the day. Short on sleep, you remember less, think more slowly and make more careless mistakes.\n\nMost teenagers need around eight to ten hours a night, and adults around seven or more. Try to keep regular sleep and wake times, even at weekends.\n\nA short review before bed, followed by real sleep, is a strong combination. Put screens away a while before bed so you can wind down. On the night before an exam, a good night's rest will usually help you more than a few extra hours of tired cramming.",
+      "apply_it": "Set a regular bedtime for the next week, including the night before your next test, and put your phone away 30 minutes before it.",
+      "quiz": {
+        "question": "Why is sleep important for studying?",
+        "options": [
+          "It isn't; studying all night works better",
+          "Sleep only matters in holidays",
+          "It makes exams shorter",
+          "Sleep helps the brain strengthen and store what you learned"
+        ],
+        "answer": 3,
+        "explanation": "Sleep helps consolidate memory, and lack of sleep harms thinking and recall."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--11",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "help",
+        "support"
+      ],
+      "title": "Ask for help early, not the night before",
+      "body": "Strong students ask for help often. If something doesn't make sense, ask soon, before the gap grows and the next topic builds on it.\n\nTalk to your teacher after class or during office hours, and come with a specific question, like \"I don't understand step three of this example.\" Join or start a study group, where explaining ideas to each other helps everyone. Use tutors, learning centres, library staff and good free online lessons.\n\nAsking for help is not a sign of weakness. It shows you take your learning seriously. Teachers usually notice and appreciate students who make the effort, and it can make a real difference to your grades.",
+      "apply_it": "Write down one thing you don't fully understand in a subject and ask a teacher, tutor or classmate about it this week.",
+      "quiz": {
+        "question": "When is the best time to ask for help?",
+        "options": [
+          "Early, as soon as something doesn't make sense",
+          "Only the night before the exam",
+          "Never; work it out alone",
+          "After the results come out"
+        ],
+        "answer": 0,
+        "explanation": "Asking early stops small gaps from growing as later topics build on them."
+      }
+    },
+    {
+      "id": "guide-become-an-a-student--12",
+      "topic": "life-guides",
+      "tags": [
+        "study",
+        "exams",
+        "exam-stress"
+      ],
+      "title": "Handle exams with a plan and a calm mind",
+      "body": "On exam day, start by reading the instructions and scanning the whole paper. Note how many marks each question carries and plan your time to match. Do the questions you're confident about first to build momentum, then return to harder ones. Show your working, and leave a few minutes to check answers.\n\nSome nerves are normal and can even sharpen you. If anxiety rises, pause and take a few slow breaths, breathing out longer than you breathe in. Remind yourself that you've prepared and that one question doesn't decide everything.\n\nAfterwards, don't dwell on mistakes. Learn from them for next time, then rest and move on.",
+      "apply_it": "Before your next exam, write a simple plan: how many minutes per mark, which questions to do first, and a few minutes kept for checking.",
+      "quiz": {
+        "question": "What is a good first step when an exam starts?",
+        "options": [
+          "Start the hardest question immediately",
+          "Check answers with a neighbour",
+          "Read the instructions and scan the whole paper to plan your time",
+          "Leave early"
+        ],
+        "answer": 2,
+        "explanation": "Scanning the paper and planning time by marks helps you use every minute well."
+      }
+    }
+  ]
+}

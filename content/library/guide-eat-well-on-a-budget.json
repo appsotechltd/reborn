@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-eat-well-on-a-budget",
+    "title": "Eat Well on a Budget",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.bda.uk.com/resource/food-facts-eat-well-spend-less.html",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the World Health Organization, the British Dietetic Association, the NHS and Harvard's Nutrition Source.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: World Health Organization, Healthy diet fact sheet, https://www.who.int/news-room/fact-sheets/detail/healthy-diet; British Dietetic Association, Eat well, spend less, https://www.bda.uk.com/resource/food-facts-eat-well-spend-less.html; Harvard T.H. Chan School of Public Health, Healthy Eating Plate, https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/; NHS, The Eatwell Guide, https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/"
+  },
+  "cards": [
+    {
+      "id": "guide-eat-well-on-a-budget--01",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "balanced-plate",
+        "basics"
+      ],
+      "title": "Build a balanced plate",
+      "body": "Eating well doesn't have to be complicated or expensive. A simple picture to keep in mind is a balanced plate.\n\nFill about half your plate with vegetables and fruit, in lots of colours. Fill about a quarter with whole grains or starchy foods, such as brown rice, maize, millet, oats, wholemeal bread or potatoes with their skins on. Fill the last quarter with protein, such as beans, lentils, eggs, fish, chicken or nuts. Add a little healthy oil for cooking.\n\nYou don't need every meal to be perfect; it's the balance over a day or a week that counts. The World Health Organization suggests at least five portions, about 400 grams, of fruit and vegetables a day.",
+      "apply_it": "At your next meal, check your plate: is about half of it vegetables or fruit? If not, add some.",
+      "quiz": {
+        "question": "On a balanced plate, roughly how much should be vegetables and fruit?",
+        "options": [
+          "None",
+          "About a quarter",
+          "About half",
+          "All of it"
+        ],
+        "answer": 2,
+        "explanation": "Aim for about half vegetables and fruit, a quarter whole grains or starches, and a quarter protein."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--02",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "meal-planning",
+        "budget"
+      ],
+      "title": "Plan your meals for the week",
+      "body": "Planning is the single biggest money-saver in the kitchen. When you don't know what you're eating, you're more likely to buy takeaways, grab expensive snacks or let food go to waste.\n\nOnce a week, sit down for 10 minutes and plan your main meals. Start by checking what you already have in the cupboard, fridge and freezer, and build meals around it. Choose recipes that share ingredients, so one bag of onions or a pack of lentils covers several dishes.\n\nPlan for leftovers too: a big pot of stew can be dinner tonight and lunch tomorrow. Keep it flexible. A plan is a guide, not a rule, and you can swap days around.",
+      "apply_it": "Write down five dinners for the coming week, starting with ingredients you already have at home.",
+      "quiz": {
+        "question": "What should you do first when planning meals?",
+        "options": [
+          "Buy new ingredients",
+          "Check what you already have at home",
+          "Order a takeaway",
+          "Plan only desserts"
+        ],
+        "answer": 1,
+        "explanation": "Starting with what you already have saves money and cuts waste."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--03",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "shopping",
+        "budget"
+      ],
+      "title": "Shop with a list, and not when you're hungry",
+      "body": "Shops and markets are designed to tempt you into buying more than you need. A list is your best defence.\n\nWrite your list from your meal plan, grouped by section so you move quickly. Stick to it, and allow yourself only a small, planned treat. Shopping after you've eaten helps too; when you're hungry, everything looks good and impulse buys add up fast.\n\nLook beyond eye level, where the priciest items are often placed, and check the top and bottom shelves for cheaper options. Special offers aren't always bargains, so only buy them if you'll really use them. Markets near closing time may have reduced fresh food, but only buy what you can eat or freeze.",
+      "apply_it": "Before your next shop, write a list from your meal plan and eat a snack before you go.",
+      "quiz": {
+        "question": "Why is it better not to shop when you're hungry?",
+        "options": [
+          "You are more likely to make impulse buys",
+          "Shops are closed then",
+          "Food costs more in the evening",
+          "It has no effect on spending"
+        ],
+        "answer": 0,
+        "explanation": "Hunger makes tempting extras harder to resist, so you end up spending more than planned."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--04",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "staples",
+        "protein"
+      ],
+      "title": "Stock up on cheap, nutritious staples",
+      "body": "Some of the healthiest foods in the world are also among the cheapest, and you can find them almost everywhere.\n\nBeans, lentils, chickpeas and peas are packed with protein and fibre, and dried ones are especially good value. Eggs are an affordable, versatile protein. Oats make a filling, cheap breakfast that beats most boxed cereals. Rice, maize meal, pasta and potatoes give lasting energy, and wholegrain versions add more fibre. Tinned fish, such as sardines or mackerel, offers healthy fats at a low price.\n\nTry swapping some meat for beans or lentils a few times a week, in stews, curries, soups or stuffed into wraps. You'll save money and still get a filling, nourishing meal.",
+      "apply_it": "Add one bag of dried or tinned beans or lentils to your next shop and plan one meal around it.",
+      "quiz": {
+        "question": "Which of these is a cheap, nutritious source of protein?",
+        "options": [
+          "Sugary cereal",
+          "Fizzy drinks",
+          "Crisps",
+          "Lentils"
+        ],
+        "answer": 3,
+        "explanation": "Lentils, beans and chickpeas are cheap, filling and high in protein and fibre."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--05",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "vegetables",
+        "frozen-food"
+      ],
+      "title": "Choose seasonal, loose and frozen vegetables",
+      "body": "Vegetables and fruit don't have to be expensive. A few smart choices make them affordable.\n\nBuy what's in season locally; it's usually cheaper and tastes better. Loose produce is often cheaper than pre-packed, and you can buy exactly the amount you need. Odd-shaped or 'wonky' produce is just as nutritious.\n\nFrozen vegetables and fruit are a budget hero. They're frozen soon after picking, so they keep their nutrients, they last for months and there's no waste because you use only what you need. Tinned vegetables and fruit count too; choose ones in water or juice rather than salty water or syrup. Mixing fresh, frozen and tinned keeps costs down all year.",
+      "apply_it": "Buy one bag of frozen vegetables this week and add a handful to a meal you already make.",
+      "quiz": {
+        "question": "Are frozen vegetables a good choice on a budget?",
+        "options": [
+          "No, they have no nutrients",
+          "Only if eaten raw",
+          "Yes, they keep their nutrients, last long and reduce waste",
+          "No, they always cost more"
+        ],
+        "answer": 2,
+        "explanation": "Frozen produce is nutritious, long-lasting and lets you use only what you need."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--06",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "batch-cooking",
+        "cooking"
+      ],
+      "title": "Cook in batches and freeze portions",
+      "body": "Cooking from scratch is usually much cheaper and healthier than ready meals or takeaways. Batch cooking makes it easier by saving time as well as money.\n\nPick a simple dish that keeps well, such as a bean stew, lentil soup, vegetable curry, chilli or pasta sauce. Make a big pot, eat some now, and divide the rest into portions. Keep a couple in the fridge for the next few days and freeze the rest, labelled with the name and date.\n\nOn busy evenings you then have a home-cooked meal ready in minutes, which makes it easier to resist expensive takeaways. Herbs, spices, garlic and onions are cheap ways to keep batch meals full of flavour.",
+      "apply_it": "Choose one dish you can double this week, and freeze the extra portions with a label.",
+      "quiz": {
+        "question": "What is one main benefit of batch cooking?",
+        "options": [
+          "Ready meals at home make costly takeaways less tempting",
+          "It means you never need vegetables",
+          "It only works for desserts",
+          "It uses more energy and money"
+        ],
+        "answer": 0,
+        "explanation": "Having home-cooked portions ready saves time and money and makes takeaways less tempting."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--07",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "food-waste",
+        "leftovers"
+      ],
+      "title": "Waste less food and love your leftovers",
+      "body": "Food you throw away is money in the bin. A few habits can cut waste a lot.\n\nStore food properly: keep the fridge cool, put older items at the front and newer ones at the back, and freeze bread, meat or ripe fruit before it goes off. Check what needs using up before you shop or cook.\n\nGet creative with leftovers. Leftover rice can become fried rice; tired vegetables can go into soup, stew or an omelette; overripe bananas are great in porridge or baking. Cook the right amount, and turn extra into tomorrow's lunch. Learn the difference between 'use by' dates, which are about safety, and 'best before' dates, which are about quality. Food is often fine after its best before date.",
+      "apply_it": "Look in your fridge today, find one item that needs using up, and plan a meal around it.",
+      "quiz": {
+        "question": "What does a 'best before' date usually mean?",
+        "options": [
+          "The food is unsafe after that date",
+          "The food must be thrown away the day before",
+          "Nothing at all",
+          "The food may be past its best quality but is often still fine"
+        ],
+        "answer": 3,
+        "explanation": "'Best before' is about quality; 'use by' is about safety and should be followed."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--08",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "drinks",
+        "sugar"
+      ],
+      "title": "Drink water instead of sugary drinks",
+      "body": "Sugary drinks like fizzy drinks, energy drinks, sweetened juices and cordials cost money and add a lot of sugar without filling you up. Too much sugar harms teeth and adds extra calories that can lead to weight gain.\n\nWater is the healthiest and cheapest drink there is. Where tap water is safe, it's practically free; where it isn't, boiled and cooled water or filtered water are good options. Plain milk, and tea or coffee without much sugar, also count towards your fluids.\n\nIf you're used to sweet drinks, cut down gradually. Add slices of lemon, cucumber or mint to water for flavour. Keep fruit juice to a small glass a day, and you'll save money as well as protecting your health.",
+      "apply_it": "Replace one sugary drink with water today, and carry a refillable bottle with you.",
+      "quiz": {
+        "question": "Why is water better than sugary drinks?",
+        "options": [
+          "It contains more sugar",
+          "It is healthier and much cheaper",
+          "It fills you up with calories",
+          "It harms your teeth less only if it is fizzy"
+        ],
+        "answer": 1,
+        "explanation": "Water hydrates you without sugar and costs little or nothing, unlike sugary drinks."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--09",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "processed-food",
+        "cooking"
+      ],
+      "title": "Cut back on ultra-processed food",
+      "body": "Ultra-processed foods are factory-made products with long ingredient lists, often including things you wouldn't use at home, such as additives, flavourings and sweeteners. Think packaged snacks, sugary cereals, instant noodles, fizzy drinks, many ready meals and processed meats.\n\nThey are often high in salt, sugar and unhealthy fats, low in fibre, and easy to overeat. Diets high in these foods are linked to health problems. They can also cost more per meal than simple home cooking.\n\nYou don't have to give them up completely. Aim to base most meals on whole or lightly processed foods, like vegetables, beans, grains, eggs, fish and fruit, and treat ultra-processed foods as occasional extras rather than everyday staples.",
+      "apply_it": "Swap one packaged snack today for a whole-food option, such as fruit, nuts or a boiled egg.",
+      "quiz": {
+        "question": "What is a sensible approach to ultra-processed foods?",
+        "options": [
+          "Eat them at every meal",
+          "Base most meals on whole foods and keep these as occasional extras",
+          "Never eat anything cooked",
+          "Only drink them"
+        ],
+        "answer": 1,
+        "explanation": "Building meals mostly from whole or lightly processed foods, with ultra-processed foods as extras, is a practical balance."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--10",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "food-labels",
+        "shopping"
+      ],
+      "title": "Read labels and compare prices properly",
+      "body": "Food labels help you choose healthier options and better value. Two quick checks make a big difference.\n\nFirst, look at the nutrition information per 100 grams. Compare similar products and choose the one lower in salt, sugar and saturated fat, and higher in fibre. If a label uses traffic-light colours, more greens and fewer reds is a good sign. The ingredients are listed from most to least, so if sugar is near the top, there's a lot of it.\n\nSecond, compare the unit price, the cost per kilo or per 100 grams, rather than the pack price. A bigger pack or a different brand is sometimes much cheaper per gram, and 'special offers' aren't always the best deal.",
+      "apply_it": "Next time you shop, compare the unit price of two versions of the same product before choosing.",
+      "quiz": {
+        "question": "What does it mean if sugar appears near the start of an ingredients list?",
+        "options": [
+          "The product contains very little sugar",
+          "The product is sugar-free",
+          "Sugar is one of the main ingredients",
+          "The list is in alphabetical order"
+        ],
+        "answer": 2,
+        "explanation": "Ingredients are listed from most to least, so an ingredient near the top makes up a large share of the product."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--11",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "portions",
+        "healthy-weight"
+      ],
+      "title": "Get portion sizes right",
+      "body": "Eating the right amount saves money and helps you maintain a healthy weight. Many people serve far more than they need, especially of rice, pasta, meat and snacks.\n\nUse your hand as a simple guide. A portion of grains like rice or pasta is roughly the size of your fist. A portion of meat, fish or beans is about the size of your palm. Vegetables can fill the rest of the plate. Using a smaller plate can help portions look generous.\n\nEat slowly and pause before going back for more; it takes time for your body to feel full. Cooking the right amount also means less waste, and any extras can be saved as tomorrow's lunch.",
+      "apply_it": "At your next meal, use your fist and palm to judge your portions of grains and protein.",
+      "quiz": {
+        "question": "Roughly how big is a portion of rice or pasta, using the hand guide?",
+        "options": [
+          "About the size of your fist",
+          "Two full plates",
+          "A single grain",
+          "As much as the pot holds"
+        ],
+        "answer": 0,
+        "explanation": "A fist-sized portion of grains is a simple, practical guide for most adults."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-eat-well-on-a-budget--12",
+      "topic": "life-guides",
+      "tags": [
+        "nutrition",
+        "store-brands",
+        "budget"
+      ],
+      "title": "Try store brands and keep healthy habits going",
+      "body": "Store brands and value ranges are often much cheaper than big-name brands, and for basics like rice, oats, pasta, flour, tinned tomatoes, beans and frozen vegetables, they're usually just as nutritious. Try swapping one branded item at a time; if you can't taste the difference, keep the cheaper one.\n\nBuying staples in bulk, or sharing a large bag with friends or family, can cut costs further, as long as you'll use it before it goes off.\n\nEating well on a budget is a set of habits, not a one-off effort. Plan, shop with a list, cook simple meals and waste less. If money is very tight, look for local food banks, community kitchens or support services that can help.",
+      "apply_it": "On your next shop, swap one branded basic for the store brand and see if you notice any difference.",
+      "quiz": {
+        "question": "Are store-brand basics like rice and oats usually less nutritious than big brands?",
+        "options": [
+          "Yes, always much worse",
+          "They contain no nutrients at all",
+          "Only frozen items are nutritious",
+          "No, they are usually just as nutritious and cost less"
+        ],
+        "answer": 3,
+        "explanation": "For simple staples, store brands usually offer similar nutrition at a lower price."
+      },
+      "health": true
+    }
+  ]
+}

@@ -107,8 +107,9 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `study-smarter` | Study Smarter |
 | `skills-mastery` | Skills & Mastery |
 | `etiquette` | Etiquette & Manners |
+| `life-guides` | Life Guides |
 
-`relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `etiquette` is manners and courtesy in social and business settings (introductions, dining, correspondence, hosting, meetings); `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
+`life-guides` holds Reborn's own complete guides (one `kind: "guide"` source per guide, its cards the guide's numbered parts in order; see SOURCES.md, Life Guides). `relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `etiquette` is manners and courtesy in social and business settings (introductions, dining, correspondence, hosting, meetings); `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
 
 Cards in `heartbreak-healing` and `grief-loss` always show a support note pointing to people who can help, in place of the health disclaimer. Write them gently.
 
@@ -116,7 +117,7 @@ Cards in `heartbreak-healing` and `grief-loss` always show a support note pointi
 
 A summary is one post for a whole book or topic that readers go through part by part (swipe one part per screen, or read it all on one page, or listen to it start to finish). Every part is an existing card, so summaries add no new text and follow the same licence rules.
 
-- **Book summaries** are built automatically when the library is seeded: every source with at least 5 cards gets one, with the same id as the source and its cards in file order. Public-domain and openly licensed books are shown as a "full summary"; `original-summary` books are shown as their "key ideas" in our own words (never a chapter-by-chapter walk-through).
+- **Book summaries** are built automatically when the library is seeded: every source with at least 5 cards gets one, with the same id as the source and its cards in file order. Public-domain and openly licensed books are shown as a "full summary"; `original-summary` books are shown as their "key ideas" in our own words (never a chapter-by-chapter walk-through), and sources of kind `guide` (the Life Guides) as a "complete guide".
 - **Topic summaries** are hand-picked runs of cards from several sources, one file each in `content/summaries/<id>.json`:
 
 | Field | Type | Required | Notes |

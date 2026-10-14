@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-raise-children",
+    "title": "Raise Happy, Responsible Children",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.unicef.org/parenting/child-care/how-discipline-your-child-smart-and-healthy-way",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on UNICEF, the American Academy of Pediatrics, the CDC and Harvard's Center on the Developing Child.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: UNICEF, How to discipline your child the smart and healthy way, https://www.unicef.org/parenting/child-care/how-discipline-your-child-smart-and-healthy-way; American Academy of Pediatrics (HealthyChildren.org), Disciplining Your Child, https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Disciplining-Your-Child.aspx; American Academy of Pediatrics (HealthyChildren.org), How to Make a Family Media Use Plan, https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx; CDC, Communicating with your toddler or preschooler, https://www.cdc.gov/parenting-toddlers/communication/index.html; Harvard Center on the Developing Child, 5 Steps for Brain-Building Serve and Return, https://developingchild.harvard.edu/guide/5-steps-for-brain-building-serve-and-return/"
+  },
+  "cards": [
+    {
+      "id": "guide-raise-children--01",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "connection",
+        "warmth"
+      ],
+      "title": "Warmth and connection come first",
+      "body": "Children who feel loved and safe with their parents tend to be more confident, cooperate more and cope better with life's challenges. That bond is the foundation for everything else, including discipline.\n\nConnection is built in everyday moments: a hug in the morning, eye contact when they talk, laughing together, reading a story at bedtime. With babies and toddlers, respond to their sounds and gestures, chatting back and forth. This kind of back-and-forth helps build a young child's brain.\n\nTry to give each child some one-on-one time every day, even ten or fifteen minutes, with phones away, doing something they choose.",
+      "apply_it": "Spend 10 minutes today with one child doing an activity they choose, with your phone out of sight.",
+      "quiz": {
+        "question": "Why is a warm bond with your child so important?",
+        "options": [
+          "It means you never need rules",
+          "It spoils children",
+          "It helps children feel safe, cooperate more and cope better",
+          "It only matters for babies"
+        ],
+        "answer": 2,
+        "explanation": "A loving, secure bond is the base that makes guidance and discipline work."
+      }
+    },
+    {
+      "id": "guide-raise-children--02",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "rules",
+        "routines"
+      ],
+      "title": "Set clear rules and steady routines",
+      "body": "Children feel more secure when they know what to expect. Predictable routines for mornings, meals, homework and bedtime reduce arguments and help children manage themselves.\n\nKeep family rules few, clear and suited to your child's age. Say what you want them to do rather than only what not to do: \"Walk inside, please\" works better than \"Stop running!\" Explain the reason in simple words, like \"so nobody gets hurt.\"\n\nAs children grow, involve them in making some rules and agreeing consequences. Older children and teenagers are more likely to follow rules they helped create.",
+      "apply_it": "Write down three simple family rules phrased as what to do, and share them with your children this week.",
+      "quiz": {
+        "question": "Which instruction works better with young children?",
+        "options": [
+          "'Walk inside, please.'",
+          "'Stop being naughty!'",
+          "'Don't, don't, don't!'",
+          "Saying nothing and hoping"
+        ],
+        "answer": 0,
+        "explanation": "Clear instructions that say what to do are easier for children to follow."
+      }
+    },
+    {
+      "id": "guide-raise-children--03",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "praise",
+        "encouragement"
+      ],
+      "title": "Praise effort and good behaviour specifically",
+      "body": "Children repeat behaviour that earns attention. Catch them being good and say so: \"Thank you for sharing your toys with your sister,\" or \"You kept trying with that hard sum.\"\n\nPraising effort, strategies and persistence rather than only intelligence or talent teaches children that they can improve through hard work. \"You worked really hard on this\" encourages them more than \"You're so clever.\"\n\nBe specific and sincere. Vague praise like \"Good job\" is fine sometimes, but naming exactly what they did shows you really noticed. Aim for many more positive comments than corrections.",
+      "apply_it": "Today, catch each child doing something well and name exactly what they did and why it was good.",
+      "quiz": {
+        "question": "Which praise best encourages a child to keep trying?",
+        "options": [
+          "'You're so clever.'",
+          "'Good, now do better.'",
+          "No praise at all",
+          "'You worked really hard on that and didn't give up.'"
+        ],
+        "answer": 3,
+        "explanation": "Praising effort teaches children they can grow by working hard, which builds persistence."
+      }
+    },
+    {
+      "id": "guide-raise-children--04",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "discipline",
+        "consistency"
+      ],
+      "title": "Discipline calmly and consistently, without harsh punishment",
+      "body": "Discipline means teaching, not hurting. Research and child health experts agree that hitting, shouting and shaming do not improve behaviour in the long run and can harm children's mental health and your relationship.\n\nInstead, warn your child calmly of the consequence: \"If you throw the ball inside again, I will put it away until tomorrow.\" If it happens again, follow through calmly. Brief time-outs, losing a privilege, or natural consequences, like a toy breaking if it is thrown, can teach the lesson.\n\nBe consistent, so the same behaviour gets the same response. If you lose your temper, take a break, then apologise and try again. That models good behaviour too.",
+      "apply_it": "Choose one behaviour you want to change and decide a calm, fair consequence you will use every time it happens.",
+      "quiz": {
+        "question": "What do child health experts say about hitting and shouting as discipline?",
+        "options": [
+          "They work best for most children",
+          "They do not help in the long run and can cause harm",
+          "They are fine if done often",
+          "They build confidence"
+        ],
+        "answer": 1,
+        "explanation": "Harsh punishment does not improve behaviour over time and can damage children's wellbeing."
+      }
+    },
+    {
+      "id": "guide-raise-children--05",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "listening",
+        "communication"
+      ],
+      "title": "Listen so your child feels heard",
+      "body": "Children open up to parents who listen. When your child talks, stop what you are doing, get down to their level and look at them. Let them finish before you respond.\n\nRepeat back what you heard and name the feeling: \"You're upset because your friend didn't play with you today.\" This shows you understand and teaches them words for their emotions.\n\nAvoid jumping straight to lectures or fixes. Ask, \"What do you think you could do?\" Car journeys, meals and bedtime are great times for chats. Children who are listened to when they are small are more likely to keep talking to you as teenagers.",
+      "apply_it": "Next time your child tells you something, repeat back what they said and name how they might be feeling.",
+      "quiz": {
+        "question": "What is a good way to show a child you are listening?",
+        "options": [
+          "Keep looking at your phone",
+          "Interrupt with advice",
+          "Repeat back what they said and name their feeling",
+          "Tell them it is not a big deal"
+        ],
+        "answer": 2,
+        "explanation": "Reflecting their words and feelings shows understanding and helps them learn emotional language."
+      }
+    },
+    {
+      "id": "guide-raise-children--06",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "responsibility",
+        "chores"
+      ],
+      "title": "Teach responsibility through everyday chores",
+      "body": "Chores teach children that they are useful members of the family, and they build skills and confidence. Start early and match tasks to age.\n\nToddlers can put toys in a box. Young children can lay the table, feed a pet or fold small clothes. Older children can wash dishes, sweep, help cook or look after a younger sibling for a short time. Teenagers can do their own laundry, cook simple meals and manage some money.\n\nShow them how, do it together a few times, then let them do it, even if it is not perfect. Thank them for their help rather than redoing their work in front of them.",
+      "apply_it": "Give each child one age-suitable chore this week. Show them how, then thank them when they do it.",
+      "quiz": {
+        "question": "What is a good way to introduce a new chore?",
+        "options": [
+          "Expect perfection the first time",
+          "Show them, do it together, then let them try",
+          "Redo it in front of them",
+          "Only give chores as punishment"
+        ],
+        "answer": 1,
+        "explanation": "Teaching step by step and praising effort builds skill and willingness."
+      }
+    },
+    {
+      "id": "guide-raise-children--07",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "emotions",
+        "feelings"
+      ],
+      "title": "Help children understand and manage emotions",
+      "body": "All feelings are allowed, but not all behaviour is. Children need help learning to name and handle big emotions like anger, fear, sadness and disappointment.\n\nWhen your child is upset, stay calm and name what you see: \"You look really frustrated.\" Comfort them first, then talk once they are calm. Teach simple calming tools, like taking deep breaths, squeezing a pillow, or having a quiet corner.\n\nTalk about feelings in stories and everyday life. Share your own in simple terms: \"I felt nervous before my meeting, so I took a few deep breaths.\" This shows that emotions are normal and manageable.",
+      "apply_it": "Teach your child one calming tool today, like five slow 'balloon breaths', and practise it together while calm.",
+      "quiz": {
+        "question": "What does 'all feelings are allowed, but not all behaviour' mean?",
+        "options": [
+          "Children can feel anything, but must learn safe ways to act",
+          "Children should hide their feelings",
+          "Any behaviour is fine if they are upset",
+          "Only happy feelings are acceptable"
+        ],
+        "answer": 0,
+        "explanation": "Accepting feelings while guiding behaviour helps children manage emotions safely."
+      }
+    },
+    {
+      "id": "guide-raise-children--08",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "screens",
+        "technology"
+      ],
+      "title": "Set healthy limits on screen time",
+      "body": "Screens can be fun and educational, but too much can crowd out sleep, play, reading and family time. Health experts generally advise very little screen time for babies and toddlers apart from video calls, and limited, good-quality content for young children.\n\nMake a family media plan together. Keep some times and places screen-free, like meals and the hour before bed, and keep devices out of bedrooms at night. Choose quality content, turn off autoplay, and use parental controls.\n\nFor older children, talk about online safety, privacy and advertising. And follow the rules yourself: children notice when parents are always on their phones.",
+      "apply_it": "Agree with your family on one screen-free time each day, such as dinner, and put all phones in another room.",
+      "quiz": {
+        "question": "Which is a good screen time habit for the whole family?",
+        "options": [
+          "Phones at the dinner table",
+          "Devices in bedrooms all night",
+          "Rules only for children",
+          "Keeping meals and the hour before bed screen-free"
+        ],
+        "answer": 3,
+        "explanation": "Screen-free meals and bedtimes protect conversation and sleep, and work best when parents follow them too."
+      }
+    },
+    {
+      "id": "guide-raise-children--09",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "role-model",
+        "values"
+      ],
+      "title": "Be the role model you want your children to copy",
+      "body": "Children learn far more from what you do than from what you say. If you want them to be kind, honest, patient and hardworking, they need to see you behaving that way.\n\nThey watch how you speak to your partner, treat neighbours, handle anger and stress, use your phone, and talk about others. When you make a mistake, admit it and apologise. This teaches them that everyone gets things wrong and that it can be put right.\n\nLive your values out loud. Explain why you help someone, keep a promise, or tell the truth even when it is hard.",
+      "apply_it": "Notice one habit you want your child to have. Today, make a point of doing it yourself where they can see.",
+      "quiz": {
+        "question": "How do children learn values most?",
+        "options": [
+          "Mainly from lectures",
+          "Mostly by watching what their parents do",
+          "Only from school",
+          "From punishment"
+        ],
+        "answer": 1,
+        "explanation": "Children copy what they see, so living your values teaches them more than words."
+      }
+    },
+    {
+      "id": "guide-raise-children--10",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "school",
+        "reading"
+      ],
+      "title": "Support learning at school and a love of reading",
+      "body": "Parents who show interest in their children's learning help them do better at school. Ask about their day, look at their work, and praise effort. Keep in touch with teachers and attend school meetings when you can.\n\nReading together is one of the best things you can do, from babyhood onwards. Read aloud daily, let children choose books, visit a library if there is one, and talk about the stories. Even if you are not confident reading yourself, telling stories or looking at pictures together helps.\n\nGive a regular, quiet time and place for homework, but let them do the work. Help with questions rather than answers.",
+      "apply_it": "Read or tell a story with your child for 15 minutes today, and ask them one question about it.",
+      "quiz": {
+        "question": "What is a helpful way to support homework?",
+        "options": [
+          "Do the homework for them",
+          "Ignore it completely",
+          "Give a quiet time and place and help with questions, not answers",
+          "Punish every wrong answer"
+        ],
+        "answer": 2,
+        "explanation": "A steady routine and guidance, not doing it for them, builds independent learners."
+      }
+    },
+    {
+      "id": "guide-raise-children--11",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "independence",
+        "age-stages"
+      ],
+      "title": "Build independence step by step as children grow",
+      "body": "The goal of parenting is a capable adult, so gradually hand over responsibility as your child shows they can handle it.\n\nToddlers can choose between two outfits. School-age children can pack their own bag, manage a little pocket money and make simple decisions. Teenagers can plan their time, handle small problems with teachers or friends, and cook or travel on their own in safe settings.\n\nLet children struggle a little and learn from small mistakes, rather than rescuing them at once. Ask, \"What do you think you could try?\" Keep warm and stay involved, especially with teens, while giving more freedom as trust grows.",
+      "apply_it": "Choose one task you usually do for your child that they could start doing themselves, and teach it to them this week.",
+      "quiz": {
+        "question": "Why let children struggle a little before helping?",
+        "options": [
+          "It helps them learn to solve problems themselves",
+          "To punish them",
+          "Because parents should not help",
+          "It makes them stop asking"
+        ],
+        "answer": 0,
+        "explanation": "Small, safe struggles build problem-solving skills and confidence."
+      }
+    },
+    {
+      "id": "guide-raise-children--12",
+      "topic": "life-guides",
+      "tags": [
+        "parenting",
+        "self-care",
+        "support"
+      ],
+      "title": "Look after yourself so you can look after them",
+      "body": "Parenting is demanding, and tired, stressed parents find it harder to stay calm and patient. Caring for yourself is not selfish; it helps your children too.\n\nTry to get enough sleep, eat regularly, move your body and take short breaks. Keep in touch with friends and family, and accept help when it is offered. When you feel your temper rising, pause and take a few slow breaths before you respond.\n\nNo parent is perfect. Notice what you do well, forgive your mistakes, and repair with your child when needed. If you feel overwhelmed, low or unable to cope for a long time, talk to a doctor, health visitor or parenting support service.",
+      "apply_it": "Plan 20 minutes for yourself this week doing something that recharges you, and ask someone to cover for you if needed.",
+      "quiz": {
+        "question": "Why is parent self-care important?",
+        "options": [
+          "It is selfish and unnecessary",
+          "It replaces time with children",
+          "Only parents of babies need it",
+          "Rested, supported parents find it easier to stay calm and patient"
+        ],
+        "answer": 3,
+        "explanation": "Looking after your own wellbeing helps you parent with patience and warmth."
+      }
+    }
+  ]
+}

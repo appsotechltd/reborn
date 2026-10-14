@@ -81,6 +81,7 @@ var Topics = []Topic{
 	{"study-smarter", "Study Smarter"},
 	{"skills-mastery", "Skills & Mastery"},
 	{"etiquette", "Etiquette & Manners"},
+	{"life-guides", "Life Guides"},
 }
 
 // Kinds lists the allowed source kinds.

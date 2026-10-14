@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-speak-fluently",
+    "title": "Speak Fluently and Confidently",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.toastmasters.org/resources/public-speaking-tips/how-to-overcome-your-fear-of-public-speaking",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on Toastmasters International, Storytelling with Data and the Open University.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Toastmasters International, How to Overcome Your Fear of Public Speaking, https://www.toastmasters.org/resources/public-speaking-tips/how-to-overcome-your-fear-of-public-speaking; Storytelling with Data, 8 tips for avoiding filler words, https://www.storytellingwithdata.com/blog/avoid-filler-words; Open University OpenLearn Create, Read-Aloud and Verbal Shadowing, https://www.open.edu/openlearncreate/mod/page/view.php?id=246761"
+  },
+  "cards": [
+    {
+      "id": "guide-speak-fluently--01",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "confidence",
+        "mindset"
+      ],
+      "title": "Fluency is a skill you build, not a gift you are born with",
+      "body": "Many people believe good speakers are simply born that way. In truth, smooth and confident speaking is a set of habits: thinking before you talk, pausing, breathing well and knowing your material. Like riding a bike, it gets easier every time you practise.\n\nFluent does not mean perfect. Even skilled speakers stumble, lose a word or repeat themselves. What makes them sound fluent is that they keep going calmly instead of panicking.\n\nSo drop the goal of never making a mistake. Aim instead to be clear, to be understood, and to recover gracefully when you slip. That is a target anyone can reach with steady practice.",
+      "apply_it": "Think of one person you find easy to listen to. Write down two things they do, such as pausing or smiling, that you could copy this week.",
+      "quiz": {
+        "question": "What makes a speaker sound fluent, according to this part?",
+        "options": [
+          "Never making a single mistake",
+          "Speaking as fast as possible",
+          "Staying calm and carrying on after a slip",
+          "Using long, impressive words"
+        ],
+        "answer": 2,
+        "explanation": "Fluent speakers still stumble. They sound smooth because they recover calmly and keep going."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--02",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "filler-words",
+        "pausing"
+      ],
+      "title": "Swap filler words like um and you know for a short pause",
+      "body": "Words like um, uh, like and you know usually pop out when your brain needs a second to find the next thought. A few are normal and nobody minds. Too many can make you sound unsure and make your message harder to follow.\n\nThe best replacement is silence. A one or two second pause feels long to you, but to listeners it sounds thoughtful and in control. It also gives you a moment to breathe.\n\nTo cut fillers, first notice them. Record yourself telling a friend about your day, then count your fillers. Next time, when you feel one coming, close your mouth, pause, and then continue.",
+      "apply_it": "Record a one-minute voice note about your day. Play it back and count your fillers. Try again and aim for fewer.",
+      "quiz": {
+        "question": "What is the best thing to do when you feel an um coming?",
+        "options": [
+          "Pause silently for a moment",
+          "Say it quickly and move on",
+          "Replace it with 'basically'",
+          "Speak faster to hide it"
+        ],
+        "answer": 0,
+        "explanation": "A short silent pause sounds confident to listeners and gives you time to think and breathe."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--03",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "pace",
+        "clarity"
+      ],
+      "title": "Slow down: a calm pace makes you clearer and easier to follow",
+      "body": "When we are nervous or excited, we tend to speed up. Words blur together, we trip over sounds, and our brain struggles to keep up with our mouth. That is when fillers and mistakes multiply.\n\nSpeaking a little slower than feels natural gives listeners time to understand you and gives you time to plan your next sentence. Vary your pace too: slow down for important points, and add a pause after a key idea so it can sink in.\n\nA useful check is to speak so that someone hearing you for the first time, perhaps in their second language, could follow every word.",
+      "apply_it": "Read a short paragraph aloud at your normal speed, then again 20 percent slower with a pause after each sentence. Notice which sounds clearer.",
+      "quiz": {
+        "question": "Why does slowing down help you speak more fluently?",
+        "options": [
+          "It makes you sound bored",
+          "It uses up the time you were given",
+          "It stops people asking questions",
+          "It gives you and your listeners time to think"
+        ],
+        "answer": 3,
+        "explanation": "A calmer pace lets listeners keep up and gives your brain time to plan, so you make fewer slips."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--04",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "breathing",
+        "nerves"
+      ],
+      "title": "Breathe low and slow to steady your voice",
+      "body": "Your voice rides on your breath. When you are tense, breathing becomes quick and shallow, high in the chest. Your voice can shake, sound thin, or run out mid-sentence.\n\nPractise breathing from your belly. Put a hand on your stomach and breathe in through your nose so your hand moves out, then breathe out slowly. Making the out-breath longer than the in-breath, for example in for four and out for six, helps your body calm down.\n\nBefore you speak, take two or three of these slow breaths. While speaking, use natural pauses at the end of sentences to top up your air instead of rushing on.",
+      "apply_it": "Right now, try five slow breaths: in through your nose for a count of four, out through your mouth for a count of six.",
+      "quiz": {
+        "question": "Which breathing pattern helps calm nerves before speaking?",
+        "options": [
+          "Quick, shallow breaths in the chest",
+          "Breathing out for longer than you breathe in",
+          "Holding your breath as long as possible",
+          "Breathing only through your mouth very fast"
+        ],
+        "answer": 1,
+        "explanation": "A longer out-breath helps slow your heart rate and settle your body, which steadies your voice."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--05",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "nerves",
+        "confidence"
+      ],
+      "title": "Make friends with your nerves instead of fighting them",
+      "body": "A racing heart, sweaty hands and a dry mouth before speaking are your body's alarm system switching on. It thinks you are in danger. Almost everyone feels this, including experienced speakers.\n\nYou cannot always switch the feeling off, but you can change how you read it. Tell yourself, \"This is energy to help me do well,\" rather than, \"I am going to fail.\" Move around a little beforehand to burn off extra tension, stand tall, and focus on what your listeners need rather than on how you look.\n\nRemember that most nerves are invisible. People rarely notice your shaky hands or the word you forgot.",
+      "apply_it": "Next time you feel nervous, say quietly to yourself: 'I'm excited and ready.' Then take one slow breath before you begin.",
+      "quiz": {
+        "question": "What is a helpful way to think about pre-speech nerves?",
+        "options": [
+          "As a sign you should cancel",
+          "As proof you are a bad speaker",
+          "As energy your body is giving you to perform",
+          "As something only beginners feel"
+        ],
+        "answer": 2,
+        "explanation": "Nerves are a normal alarm response. Seeing them as useful energy helps you speak instead of freezing."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--06",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "preparation",
+        "structure"
+      ],
+      "title": "Prepare your message so you know where you are going",
+      "body": "Much of fluency comes from knowing what you want to say. When your ideas are clear, the words follow more easily.\n\nFor a talk, decide your one main message first. Then choose two or three supporting points and a simple example or story for each. Know your opening and closing sentences almost by heart, because the start is when nerves are strongest and the end is what people remember.\n\nFor conversations, you can prepare too. Before an interview or an important chat, jot down the key points you want to make and a few questions you might be asked. Use short notes with keywords, not a full script you read word for word.",
+      "apply_it": "Pick a conversation you have coming up. Write your main point in one sentence and list two supporting points.",
+      "quiz": {
+        "question": "Which parts of a talk is it most useful to know almost by heart?",
+        "options": [
+          "The middle section only",
+          "The opening and the closing",
+          "Every single word",
+          "Nothing, it is better to improvise"
+        ],
+        "answer": 1,
+        "explanation": "Nerves peak at the start and people remember the end, so being sure of both helps you most."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--07",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "practice",
+        "feedback"
+      ],
+      "title": "Practise out loud, not just in your head",
+      "body": "Reading notes silently is not the same as saying them. Your mouth and breathing need rehearsal too. Practising aloud shows you where sentences are too long, where you stumble, and how long you really take.\n\nRehearse several times, ideally on different days. Record yourself on your phone and listen back, or film yourself to check your posture and eye contact. Then ask a friend for honest, kind feedback: what was clear, and what could be better?\n\nAlso practise recovering. Deliberately lose your place, pause, breathe, and carry on with a phrase like, \"So, as I was saying.\" Clubs where people practise speaking, such as Toastmasters, offer a friendly place to do this regularly.",
+      "apply_it": "Say your main point for an upcoming conversation out loud three times today, ideally recording the last attempt.",
+      "quiz": {
+        "question": "Why is it worth practising how to recover from a mistake?",
+        "options": [
+          "So a slip does not throw you off when it happens for real",
+          "So you can make more mistakes on purpose",
+          "Because audiences enjoy mistakes",
+          "It is not worth it"
+        ],
+        "answer": 0,
+        "explanation": "If you have rehearsed pausing and carrying on, a real slip becomes a small bump rather than a crash."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--08",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "vocabulary",
+        "reading"
+      ],
+      "title": "Grow your vocabulary with words you will actually use",
+      "body": "Searching for the right word causes many pauses and fillers. A wider everyday vocabulary helps words come to you faster.\n\nYou do not need rare or fancy words. Clear, simple language is usually best. Focus on useful words and phrases for the topics you speak about most, such as work, study or your interests.\n\nRead widely and listen to good speakers, podcasts and talks. When you meet a helpful word or expression, write it down with an example sentence, then use it in conversation within a day or two. Using a word yourself is what moves it from \"I recognise it\" to \"I can say it without thinking\".",
+      "apply_it": "Note down one new useful word or phrase you hear today and use it in a sentence with someone before tomorrow night.",
+      "quiz": {
+        "question": "What moves a new word into your active speaking vocabulary?",
+        "options": [
+          "Reading its definition once",
+          "Choosing the longest words possible",
+          "Avoiding simple words",
+          "Using it yourself in real sentences"
+        ],
+        "answer": 3,
+        "explanation": "Actively using a word in your own sentences is what makes it come to you easily when speaking."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--09",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "listening",
+        "conversation"
+      ],
+      "title": "Listen well, and your replies will flow more easily",
+      "body": "Good conversation is half listening. If you spend the whole time planning your next sentence, you miss what the other person said and your answers can sound off-topic or forced.\n\nInstead, give the speaker your full attention. Look at them, nod, and let them finish. Then respond to what they actually said, perhaps by asking a follow-up question or briefly summing up their point: \"So you mean the plan changed last minute?\"\n\nThis takes pressure off you, because the conversation naturally gives you things to talk about. People also feel valued when they are heard, which makes them warmer listeners when it is your turn to speak.",
+      "apply_it": "In your next conversation, ask at least one follow-up question about something the other person just said.",
+      "quiz": {
+        "question": "How does careful listening help you speak more fluently?",
+        "options": [
+          "It lets you avoid speaking at all",
+          "It gives you natural things to respond to",
+          "It means you can interrupt more",
+          "It helps you plan long speeches"
+        ],
+        "answer": 1,
+        "explanation": "When you truly listen, the other person's words give you ideas to reply to, so you search less for what to say."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--10",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "languages",
+        "practice"
+      ],
+      "title": "Speak a second language fluently by speaking it every day",
+      "body": "Many language learners understand far more than they can say. The gap closes only by speaking, even when it feels awkward.\n\nTry shadowing: play a short clip of a fluent speaker and repeat along with them, copying their rhythm and tone, not just the words. Read aloud for a few minutes daily. Learn whole phrases, like \"Could you say that again?\", rather than single words, so you can speak in chunks without translating each word.\n\nMost of all, find real conversations: a language partner, a class, or friends who speak it. Expect mistakes and let them go. Being understood matters more than perfect grammar.",
+      "apply_it": "Find a 20-second clip in the language you are learning and shadow it five times, copying the speaker's rhythm.",
+      "quiz": {
+        "question": "What is shadowing?",
+        "options": [
+          "Watching a film with subtitles",
+          "Writing out grammar rules",
+          "Repeating along with a fluent speaker, copying their rhythm and tone",
+          "Translating each word in your head"
+        ],
+        "answer": 2,
+        "explanation": "Shadowing trains your mouth and ear together, helping you speak in natural chunks without translating."
+      }
+    },
+    {
+      "id": "guide-speak-fluently--11",
+      "topic": "life-guides",
+      "tags": [
+        "speaking",
+        "habits",
+        "confidence"
+      ],
+      "title": "Keep going: small daily practice and kindness to yourself",
+      "body": "Confidence grows from experience. Every time you speak and survive, your brain learns that speaking is safe. So look for small, low-risk chances: ask a question in a meeting, chat to a shop assistant, or tell a short story at dinner.\n\nKeep a simple success note. After each speaking moment, write one thing that went well. On harder days, read it back.\n\nWhen you slip, be kind to yourself. Most stumbles go unnoticed, and even big ones are quickly forgotten. Review what you could do differently, then move on. If fear of speaking is severe and stops you living your life, talking to a counsellor or joining a supportive speaking group can help.",
+      "apply_it": "Choose one small speaking challenge for tomorrow, like asking a question in class or at work, and write down how it went.",
+      "quiz": {
+        "question": "How does confidence in speaking usually grow?",
+        "options": [
+          "Through repeated small experiences of speaking",
+          "By waiting until you feel ready",
+          "By avoiding speaking situations",
+          "By memorising every word you say"
+        ],
+        "answer": 0,
+        "explanation": "Each small speaking moment teaches your brain it is safe, so confidence builds step by step."
+      }
+    }
+  ]
+}

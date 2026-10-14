@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-take-control-of-money",
+    "title": "Take Control of Your Money",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US Consumer Financial Protection Bureau and Wikipedia's overview of personal budgeting.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Consumer Financial Protection Bureau, Budgeting: how to create a budget and stick with it, https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/; Consumer Financial Protection Bureau, An essential guide to building an emergency fund, https://www.consumerfinance.gov/start-small-save-up/start-saving/an-essential-guide-to-building-an-emergency-fund/; Wikipedia, Personal budget, https://en.wikipedia.org/wiki/Personal_budget; Consumer Financial Protection Bureau, Money as You Grow, https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/"
+  },
+  "cards": [
+    {
+      "id": "guide-take-control-of-money--01",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "mindset",
+        "control"
+      ],
+      "title": "Money is a tool you can learn to steer",
+      "body": "Many people feel money just happens to them: it arrives, it disappears, and they hope there is some left. Taking control starts with a different belief. Money is a tool, and like any tool you can learn to use it well, whatever you earn right now.\n\nYou do not need to be good at maths or have a big salary. You need a few simple habits: knowing where your money goes, deciding in advance what it is for, saving a little first, and checking in regularly.\n\nThis guide walks through those habits one at a time. Small, steady changes add up faster than you might expect.",
+      "apply_it": "Write one sentence about what you want money to do for you in the next year, such as feel less stressed or save for a course.",
+      "quiz": {
+        "question": "What is the starting belief for taking control of your money?",
+        "options": [
+          "Money is a tool you can learn to use well",
+          "You need a high income first",
+          "Only maths experts can budget",
+          "Saving is pointless on a small income"
+        ],
+        "answer": 0,
+        "explanation": "Control comes from simple habits, not from a big salary or advanced maths."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--02",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "tracking",
+        "spending"
+      ],
+      "title": "Find out exactly where your money goes",
+      "body": "You cannot fix what you cannot see. For one month, write down everything you spend, from rent and transport to snacks and phone data. Use a notebook, a spreadsheet or a free app, whichever you will actually keep up.\n\nAlso list every source of income and the dates bills are due. A budget often fails not because the totals are wrong but because a big bill lands before payday.\n\nAt the end of the month, group your spending into categories. Most people get a surprise: small daily buys, like drinks or delivery fees, quietly add up to a large sum. That surprise is useful. It shows you where change is easiest.",
+      "apply_it": "Start a spending log today. Record every purchase, however small, until the end of the week.",
+      "quiz": {
+        "question": "Why track spending for a full month before making a budget?",
+        "options": [
+          "Banks require it",
+          "To prove you earn enough",
+          "To see where money really goes, including small daily costs",
+          "So you can stop paying bills"
+        ],
+        "answer": 2,
+        "explanation": "Tracking shows real patterns, and small repeated purchases are often the biggest surprise."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--03",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "budgeting",
+        "planning"
+      ],
+      "title": "Choose a simple budget method you can stick with",
+      "body": "A budget is just a plan that tells your money where to go before you spend it. Pick a method that fits your life.\n\nThe 50/30/20 approach splits take-home pay into roughly half for needs, 30 per cent for wants and 20 per cent for saving or paying off debt. Zero-based budgeting gives every unit of income a job until nothing is left unassigned. The envelope method puts cash for each category into its own envelope; when an envelope is empty, that spending stops.\n\nThe percentages are a guide, not a rule. If rent takes more than half your pay, adjust. The best budget is the one you will actually follow.",
+      "apply_it": "Take last month's income and split it using 50/30/20. Compare the result with what you actually spent.",
+      "quiz": {
+        "question": "In the 50/30/20 method, what is the 20 per cent for?",
+        "options": [
+          "Rent",
+          "Entertainment",
+          "Saving or paying off debt",
+          "Food"
+        ],
+        "answer": 2,
+        "explanation": "Roughly half goes to needs, 30 per cent to wants and 20 per cent to savings or debt repayment."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--04",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "saving",
+        "automation"
+      ],
+      "title": "Pay yourself first, before anything else",
+      "body": "Most people save whatever is left at the end of the month, and usually nothing is left. Paying yourself first flips this. As soon as income arrives, move a set amount into savings, then live on the rest.\n\nMake it automatic if you can. Set up a regular transfer to a separate savings account on payday, so you never have to decide again. If your pay goes up, raise the amount.\n\nStart with any amount, even a small one. Saving a little every payday builds the habit, and the habit matters more than the size at first. Over time you will barely notice the money leaving, but you will notice it growing.",
+      "apply_it": "Decide on a small amount to save every payday and set up an automatic transfer, or a reminder, for the day your income arrives.",
+      "quiz": {
+        "question": "What does paying yourself first mean?",
+        "options": [
+          "Saving a set amount as soon as income arrives, then spending the rest",
+          "Buying yourself a treat on payday",
+          "Paying your bills last",
+          "Keeping all your money in cash"
+        ],
+        "answer": 0,
+        "explanation": "Saving first, ideally automatically, stops savings being whatever is left over."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--05",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "emergency-fund",
+        "saving"
+      ],
+      "title": "Build an emergency fund so surprises don't sink you",
+      "body": "Life brings surprise costs: a broken phone, a medical bill, a car repair, a gap between jobs. Without savings, these often end up on expensive credit, and the interest makes a bad week much worse.\n\nAn emergency fund is money set aside only for genuine emergencies. A common long-term target is three to six months of essential living costs. That can sound huge, so begin with a first goal, such as the cost of your last unexpected bill.\n\nKeep the fund in a safe account you can reach quickly, separate from your everyday money so you are not tempted to dip in. If you use it, that is what it is for. Then rebuild it.",
+      "apply_it": "Set a first emergency fund goal equal to one unexpected expense you have had before, and open or label a separate place for it.",
+      "quiz": {
+        "question": "What is a sensible first step towards an emergency fund?",
+        "options": [
+          "Saving six months of costs before anything else",
+          "Using a credit card instead",
+          "Investing it in shares",
+          "Setting a small first goal, like the cost of a past surprise bill"
+        ],
+        "answer": 3,
+        "explanation": "A small first target makes the habit achievable; the longer-term aim is often three to six months of essential costs."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--06",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "spending",
+        "needs-wants"
+      ],
+      "title": "Know the difference between needs and wants",
+      "body": "Needs are things you must pay for to live and work: housing, basic food, utilities, transport to work or school, essential medicine. Wants are everything that makes life nicer but is optional: takeaways, new clothes you don't need, subscriptions, the latest phone.\n\nWants are not bad. A good budget includes them, so you don't feel deprived and give up. The aim is to choose them on purpose rather than by habit.\n\nA simple test helps: before a non-essential purchase, wait a day or two. If you still want it and it fits your plan, buy it and enjoy it. Often the urge fades, and that money can go towards something you care about more.",
+      "apply_it": "Go through last week's spending and mark each item N for need or W for want. Pick one want you could cut or reduce.",
+      "quiz": {
+        "question": "What is a simple way to avoid impulse buying?",
+        "options": [
+          "Never buy any wants",
+          "Wait a day or two before non-essential purchases",
+          "Only shop online",
+          "Use credit for wants"
+        ],
+        "answer": 1,
+        "explanation": "A short wait lets the urge pass, so you buy wants on purpose rather than on impulse."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--07",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "debt",
+        "credit"
+      ],
+      "title": "Avoid bad debt and pay down what you owe",
+      "body": "Not all borrowing is the same. Debt used for something that lasts or grows in value, at a fair rate, can be reasonable. Debt for everyday spending, especially high-interest credit cards, payday loans or buy-now-pay-later piling up, can trap you because interest keeps adding to what you owe.\n\nBefore borrowing, ask: do I need this now, what will it cost in total, and can I afford the repayments without strain?\n\nIf you already have debts, list them all with their interest rates. Keep paying at least the minimum on each, then put any extra towards one debt, often the one with the highest interest. When it is gone, roll that payment into the next.",
+      "apply_it": "List every debt you have with its balance and interest rate. Circle the one costing you the most.",
+      "quiz": {
+        "question": "When paying off several debts, which one is often best to target with extra money?",
+        "options": [
+          "The newest one",
+          "The one with the highest interest rate",
+          "Whichever is from a friend",
+          "None; pay minimums only"
+        ],
+        "answer": 1,
+        "explanation": "Clearing the highest-interest debt first usually saves the most money overall, while keeping minimums on the rest."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--08",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "goals",
+        "saving"
+      ],
+      "title": "Give your savings a clear goal and a deadline",
+      "body": "Saving is easier when you know what it is for. \"Save more\" is vague. \"Save enough for a laptop in eight months\" is a goal you can plan around.\n\nWrite down each goal, how much it will cost and when you want it. Divide the cost by the number of months to find what you need to put aside each month. If the number is too high, stretch the deadline or lower the target.\n\nKeep separate pots or labelled accounts for different goals so you can see each one grow. Celebrate milestones, like reaching a quarter of the way. Watching progress is one of the best motivators, and it keeps you going when spending temptations appear.",
+      "apply_it": "Pick one savings goal, write its cost and deadline, and work out the monthly amount you need to save.",
+      "quiz": {
+        "question": "Why turn \"save more\" into a specific goal with a deadline?",
+        "options": [
+          "Banks insist on it",
+          "It earns more interest",
+          "It removes the need for a budget",
+          "It lets you work out a monthly amount and track progress"
+        ],
+        "answer": 3,
+        "explanation": "A clear cost and date tell you how much to save each month and give you progress to celebrate."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--09",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "income",
+        "career"
+      ],
+      "title": "Grow your income as well as cutting costs",
+      "body": "There is a limit to how much you can cut, but far less of a limit to how much you can earn over time. Taking control of money includes building your earning power.\n\nLook for ways to become more valuable: learn a skill employers pay for, get a qualification, take on extra responsibility, or ask for a raise with evidence of what you have achieved. Side income, such as tutoring, selling a craft or freelance work, can also help, as long as it doesn't drain your health or main job.\n\nWhen income rises, avoid letting spending rise to match it. Put a good share of every increase straight into savings or debt repayment.",
+      "apply_it": "Write down one skill that could raise your income in the next year and one small step you can take this week to start learning it.",
+      "quiz": {
+        "question": "What should you do with a pay rise to make real progress?",
+        "options": [
+          "Put a good share straight into savings or debt repayment",
+          "Spend it all on upgrades",
+          "Ignore it",
+          "Borrow more against it"
+        ],
+        "answer": 0,
+        "explanation": "Letting spending rise with income cancels the benefit; saving part of each increase builds security."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--10",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "insurance",
+        "protection"
+      ],
+      "title": "Protect what you build with basic insurance",
+      "body": "Savings can be wiped out by one big event, like a serious illness, an accident, a fire or a theft. Insurance spreads that risk: you pay a regular amount so that a large loss doesn't fall entirely on you.\n\nWhat you need depends on your life and country. Common types include health cover, insurance on a home or its contents, vehicle insurance where required, and life cover if others depend on your income.\n\nBefore buying, read what is and isn't covered, compare a few providers and avoid paying for cover you don't need. Insurance is not an investment; its job is protection. Your emergency fund handles small shocks, and insurance handles the big ones.",
+      "apply_it": "List your biggest financial risks, such as losing income or a costly accident, and check whether any cover you already have would protect you.",
+      "quiz": {
+        "question": "What is the main job of insurance in your money plan?",
+        "options": [
+          "To grow your wealth",
+          "To replace your emergency fund",
+          "To protect you from large losses you couldn't cover yourself",
+          "To reduce your tax"
+        ],
+        "answer": 2,
+        "explanation": "Insurance handles big shocks; your emergency fund covers smaller surprises."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--11",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "giving",
+        "generosity"
+      ],
+      "title": "Make room for giving",
+      "body": "Money is not only for spending and saving. Many people find that giving, to family in need, a cause they believe in or their faith community, brings meaning and joy that other spending doesn't.\n\nTreat giving as part of your plan rather than something you do only when you feel flush. Decide on an amount or a small percentage of income, and set it aside like any other category. That way you give generously without putting your own bills or savings at risk.\n\nGiving isn't only money. Time, skills and kindness count too. If money is tight right now, start small. The habit of generosity grows along with your income.",
+      "apply_it": "Decide on a small amount or percentage you will set aside for giving this month, and choose who or what it will support.",
+      "quiz": {
+        "question": "How can you give generously without harming your finances?",
+        "options": [
+          "Give whatever is in your wallet",
+          "Borrow to give",
+          "Plan a set amount as a budget category",
+          "Wait until you are rich"
+        ],
+        "answer": 2,
+        "explanation": "Planning giving as a category keeps it generous and sustainable."
+      }
+    },
+    {
+      "id": "guide-take-control-of-money--12",
+      "topic": "life-guides",
+      "tags": [
+        "money",
+        "review",
+        "habits"
+      ],
+      "title": "Review your money every month and adjust",
+      "body": "A budget is not something you write once and forget. Life changes: prices rise, income shifts, new goals appear. A short monthly money check-in keeps you in control.\n\nSet a regular time, perhaps the first weekend of each month. Compare what you planned with what you actually spent. Check progress on savings goals and debts. Ask what went well, what slipped and what to change next month.\n\nIf you overspent, don't give up or beat yourself up. Find the cause, adjust the plan and carry on. Everyone has off months. What makes the difference is coming back to it, again and again, until good money habits feel normal.",
+      "apply_it": "Put a 20-minute money review in your calendar for the start of next month, and repeat it monthly.",
+      "quiz": {
+        "question": "What should you do after a month where you overspent?",
+        "options": [
+          "Find the cause, adjust the plan and carry on",
+          "Abandon the budget",
+          "Stop tracking spending",
+          "Borrow to cover it and say nothing"
+        ],
+        "answer": 0,
+        "explanation": "Slips are normal; the regular review is where you learn and adjust."
+      }
+    }
+  ]
+}

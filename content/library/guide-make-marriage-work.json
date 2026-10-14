@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-make-marriage-work",
+    "title": "Make Your Marriage Work",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-the-antidotes/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the Gottman Institute and the NHS.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: The Gottman Institute, The Four Horsemen: The Antidotes, https://www.gottman.com/blog/the-four-horsemen-the-antidotes/; The Gottman Institute, The Magic Relationship Ratio, According to Science, https://www.gottman.com/blog/the-magic-relationship-ratio-according-science/; The Gottman Institute, Manage Conflict: The Six Skills, https://www.gottman.com/blog/manage-conflict-the-six-skills/; NHS, Getting help for domestic violence and abuse, https://www.nhs.uk/live-well/getting-help-for-domestic-violence/"
+  },
+  "cards": [
+    {
+      "id": "guide-make-marriage-work--01",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "friendship",
+        "connection"
+      ],
+      "title": "Build your marriage on a deep friendship",
+      "body": "Happy couples are usually good friends. They know each other's worries, hopes, favourite foods and the names of each other's colleagues. They enjoy each other's company and like spending time together.\n\nThis friendship acts like a cushion. When problems come, couples who feel liked and known give each other the benefit of the doubt, instead of assuming the worst.\n\nKeep learning about your partner, because people change over the years. Ask real questions: \"What are you looking forward to this month?\" or \"What is stressing you most right now?\" Remember the answers, and follow up later. Small curiosity, repeated often, keeps you close.",
+      "apply_it": "Ask your spouse one open question today about their hopes or worries, and really listen to the answer.",
+      "quiz": {
+        "question": "Why does friendship matter so much in a marriage?",
+        "options": [
+          "It means you never argue",
+          "It replaces the need to talk",
+          "It helps you give each other the benefit of the doubt in hard times",
+          "It only matters early on"
+        ],
+        "answer": 2,
+        "explanation": "Couples who feel known and liked tend to read each other kindly when problems come."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--02",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "communication",
+        "listening"
+      ],
+      "title": "Talk and listen so your partner feels understood",
+      "body": "Good communication is less about saying the perfect thing and more about making your partner feel heard. When they share something, put the phone down, look at them and listen to understand, not to reply.\n\nShow you get it by summing up what you heard: \"So you felt ignored at the meeting today.\" You do not need to fix every problem. Often your partner just wants to feel that you are on their side.\n\nMake time for a short daily check-in, even ten minutes, to talk about your days without screens. Couples who keep talking about small things find it easier to talk about big ones.",
+      "apply_it": "Tonight, spend ten screen-free minutes asking about each other's day. Sum up one thing your partner said.",
+      "quiz": {
+        "question": "What do partners often need most when they share a problem?",
+        "options": [
+          "To feel heard and supported",
+          "An instant solution",
+          "A lecture about what they did wrong",
+          "To be told to forget it"
+        ],
+        "answer": 0,
+        "explanation": "Often the goal is to feel understood. Advice can come later, if it is wanted."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--03",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "conflict",
+        "communication"
+      ],
+      "title": "Handle conflict gently: complain without blaming",
+      "body": "Every couple disagrees. What matters is how. Research by the Gottman Institute found that harsh criticism, contempt, defensiveness and shutting down are strong warning signs for a marriage.\n\nStart difficult talks gently. Describe the situation and your feelings, then say what you need: \"I feel stressed when the dishes pile up. Could we agree a plan?\" This works far better than, \"You never help, you're so lazy.\"\n\nTake responsibility for your part, even if it is small. If either of you feels flooded with anger, take a twenty-minute break to calm down, then come back to the conversation. Aim to understand each other, not to win.",
+      "apply_it": "Think of a recurring complaint. Rewrite it as 'I feel... when... Could we...?' and use that wording next time it comes up.",
+      "quiz": {
+        "question": "Which is a gentle way to raise a problem?",
+        "options": [
+          "You never help around here",
+          "Saying nothing and sulking",
+          "Bringing up every past mistake",
+          "I feel stressed when the dishes pile up. Could we make a plan?"
+        ],
+        "answer": 3,
+        "explanation": "Describing your feelings and a specific need invites teamwork instead of defensiveness."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--04",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "appreciation",
+        "respect"
+      ],
+      "title": "Show appreciation and respect every day",
+      "body": "Contempt, such as mocking, eye-rolling or name-calling, is one of the most damaging habits in a marriage. Its antidote is a steady habit of appreciation and respect.\n\nNotice what your partner does well and say it out loud: \"Thanks for picking up the children,\" or \"You handled that call really well.\" Thank them for ordinary things, not just big ones. Speak well of them to others, and never belittle them in public.\n\nResearchers suggest that stable couples have many more positive moments than negative ones, about five to one during disagreements. Daily thanks and kind words build that balance.",
+      "apply_it": "Tell your spouse one specific thing you appreciate about them today, out loud or in a message.",
+      "quiz": {
+        "question": "What is a powerful antidote to contempt in a marriage?",
+        "options": [
+          "Ignoring each other",
+          "A regular habit of appreciation and respect",
+          "Winning every argument",
+          "Keeping score of mistakes"
+        ],
+        "answer": 1,
+        "explanation": "Regular thanks and respect build goodwill and push out the mocking and scorn that harm marriages."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--05",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "affection",
+        "habits"
+      ],
+      "title": "Small daily gestures matter more than grand ones",
+      "body": "Romantic holidays and big gifts are lovely, but marriages are mostly built from small, frequent moments. A hug when you get home, a cup of tea made without asking, a message saying \"thinking of you\", or holding hands on a walk.\n\nAlso notice your partner's small bids for attention, like \"Look at that bird\" or a sigh after a long day. Turning towards them, with a comment, question or smile, tells them they matter. Repeatedly turning away, by ignoring or brushing them off, slowly builds distance.\n\nAsk your spouse which small gestures make them feel most loved. People differ, so learn their language.",
+      "apply_it": "Do one small kind thing for your partner today without being asked, and greet them warmly when you next see them.",
+      "quiz": {
+        "question": "What does 'turning towards' a partner's bid for attention mean?",
+        "options": [
+          "Ignoring it so they learn independence",
+          "Changing the subject to yourself",
+          "Responding with interest, a word or a smile",
+          "Waiting until the weekend to reply"
+        ],
+        "answer": 2,
+        "explanation": "Responding to small bids shows your partner they matter and builds closeness over time."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--06",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "money",
+        "teamwork"
+      ],
+      "title": "Talk openly about money as a team",
+      "body": "Money is one of the most common sources of conflict in marriage. Often the fights are less about numbers and more about different values: one partner feels safe saving, the other feels happy enjoying life now.\n\nTalk about how money was handled in your childhood homes and what money means to each of you. Then agree on shared basics: a budget, how bills are split, an emergency fund, and how much each of you can spend without checking with the other.\n\nBe honest. Hiding debts or spending damages trust. Set a regular money meeting, perhaps monthly, to review plans calmly together.",
+      "apply_it": "Agree on a time this week for a calm 20-minute money talk. Each bring one money goal for the year.",
+      "quiz": {
+        "question": "Money arguments are often really about what?",
+        "options": [
+          "Who is smarter",
+          "Different values and feelings about money",
+          "The exact price of groceries",
+          "Nothing important"
+        ],
+        "answer": 1,
+        "explanation": "Understanding each other's money values makes it easier to agree on shared plans."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--07",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "intimacy",
+        "affection"
+      ],
+      "title": "Keep intimacy and affection alive",
+      "body": "Physical closeness, from holding hands to a sexual relationship, helps couples feel connected. With busy jobs, children and tiredness, it can easily slip down the list.\n\nTalk about it kindly and openly. Share what you enjoy, what you would like more of, and listen without judgement. Desire can differ between partners and change over time, which is normal. What matters is caring about each other's needs and never pressuring or forcing.\n\nProtect time and energy for each other. Everyday affection, like kisses, cuddles and compliments, keeps warmth alive between more intimate moments. If problems persist, a doctor or counsellor can help.",
+      "apply_it": "Offer your partner a hug or kiss today just because, and tell them one thing you find attractive about them.",
+      "quiz": {
+        "question": "What is important when couples have different levels of desire?",
+        "options": [
+          "Talking kindly and caring about each other's needs",
+          "One partner should pressure the other",
+          "Never discussing it",
+          "Assuming the marriage is failing"
+        ],
+        "answer": 0,
+        "explanation": "Differences are normal. Open, respectful talk and care for each other's needs help, and pressure never does."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--08",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "goals",
+        "teamwork"
+      ],
+      "title": "Dream together and share goals",
+      "body": "Couples who feel like a team often share a sense of where they are going. That may include where to live, children, careers, faith, saving for a home, or how you want to spend your later years.\n\nMake time to talk about your dreams, both shared and personal. Support your partner's individual goals, even when they are not yours. Being cheered on by your spouse is a powerful gift.\n\nWrite down a few shared goals for the coming year and check in on them. Celebrating progress together, even small steps, strengthens the feeling that you are building a life side by side.",
+      "apply_it": "Ask your partner: 'What is one dream you have for us in the next five years?' Write both your answers down.",
+      "quiz": {
+        "question": "Why is supporting your partner's personal goals valuable?",
+        "options": [
+          "It means you must give up your own",
+          "It avoids all conflict",
+          "It is not valuable",
+          "Feeling cheered on by your spouse strengthens your bond"
+        ],
+        "answer": 3,
+        "explanation": "When partners back each other's dreams, both feel valued and the marriage grows stronger."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--09",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "forgiveness",
+        "repair"
+      ],
+      "title": "Apologise, forgive and repair after hurts",
+      "body": "Even loving partners hurt each other sometimes. Strong marriages are not those without mistakes, but those that repair well.\n\nA good apology names what you did, admits how it affected your partner, avoids excuses, and says what you will do differently: \"I'm sorry I snapped at you in front of your sister. That was embarrassing for you. I'll talk to you privately next time.\"\n\nForgiveness means choosing to let go of resentment and not using old hurts as weapons in future fights. It does not mean pretending nothing happened, and it takes time after serious betrayals. Small repairs, like a touch, a joke or \"let's start again\", can calm an argument mid-way.",
+      "apply_it": "Think of a small hurt you have caused recently. Offer a sincere apology that names it and says what you will do differently.",
+      "quiz": {
+        "question": "Which is part of a good apology?",
+        "options": [
+          "Explaining why it was really their fault",
+          "Naming what you did and how it affected them",
+          "Saying sorry but continuing the behaviour",
+          "Waiting for them to apologise first"
+        ],
+        "answer": 1,
+        "explanation": "A sincere apology owns the action and its impact, without excuses, and commits to change."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--10",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "boundaries",
+        "family"
+      ],
+      "title": "Protect your time together and set kind boundaries with family",
+      "body": "Work, children, phones and extended family can crowd out time as a couple. Guard it on purpose. Plan regular time together, such as a weekly walk, meal or date at home after the children sleep.\n\nExtended family can be a great support, but tension often comes when parents or in-laws make decisions for the couple. Agree together on boundaries, such as how often you visit, how decisions about children are made, and how money is shared with relatives.\n\nEach partner should speak to their own family, kindly and respectfully. Make it clear that your marriage comes first and that you face decisions as a united team.",
+      "apply_it": "Book one hour of couple time in your calendar this week, and agree together on one family boundary that would help you both.",
+      "quiz": {
+        "question": "Who is usually best placed to explain a boundary to a set of parents?",
+        "options": [
+          "The other spouse alone",
+          "A neighbour",
+          "Their own son or daughter, kindly and respectfully",
+          "Nobody, boundaries are rude"
+        ],
+        "answer": 2,
+        "explanation": "Speaking to your own family, as a united couple, usually lands better and protects the relationship."
+      }
+    },
+    {
+      "id": "guide-make-marriage-work--11",
+      "topic": "life-guides",
+      "tags": [
+        "marriage",
+        "counselling",
+        "safety"
+      ],
+      "title": "Get help early, and put safety first if there is abuse",
+      "body": "Many couples wait years before seeking help, by which time hurts run deep. Consider counselling when the same fights repeat without progress, you feel lonely or disconnected, trust has been broken, or you cannot talk without anger. A trained couples counsellor, a faith leader with counselling skills, or a respected marriage course can help you learn new ways to connect.\n\nAbuse is different. Violence, threats, forced sex, controlling money or isolating someone from friends and family are never things to simply work through. If you are afraid of your partner, your safety comes first. Contact emergency services if you are in danger, and reach out to a domestic abuse helpline, doctor or trusted person for support.",
+      "apply_it": "Look up one couples counselling service or marriage course near you, and save a local domestic abuse helpline number in your phone.",
+      "quiz": {
+        "question": "What should someone do if their partner is violent or controlling?",
+        "options": [
+          "Put their safety first and seek help from emergency services or an abuse helpline",
+          "Try harder to keep them happy",
+          "Keep it secret to protect the marriage",
+          "Wait for it to pass"
+        ],
+        "answer": 0,
+        "explanation": "Abuse is not a normal marriage problem to work through. Safety and specialist help come first."
+      }
+    }
+  ]
+}

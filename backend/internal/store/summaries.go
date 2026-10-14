@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/appsotechltd/reborn/backend/internal/cardimages"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/jackc/pgx/v5"
 )
@@ -21,7 +22,8 @@ type Summary struct {
 	TopicName   string `json:"topic_name"`
 	// Coverage is "full" for a book we may cover in full (public domain and
 	// open licences), "key-ideas" for an in-copyright book summarised in our
-	// own words, and "topic" for a topic summary.
+	// own words, "guide" for one of our own complete guides (a source of kind
+	// guide), and "topic" for a topic summary.
 	Coverage string `json:"coverage"`
 	// Source is the book, for book summaries.
 	Source      *SourceRef       `json:"source,omitempty"`
@@ -31,6 +33,8 @@ type Summary struct {
 	Minutes     int              `json:"minutes"`
 	PublishedAt time.Time        `json:"published_at"`
 	Viewer      *SummaryProgress `json:"viewer,omitempty"`
+	// Cover is a guide's cover picture (its first part's image), when it has one.
+	Cover *cardimages.Image `json:"cover,omitempty"`
 }
 
 // SummaryProgress is where the signed-in reader is in a summary.
@@ -55,7 +59,7 @@ const ReadingWordsPerMinute = 200
 const summaryCols = `sm.id, sm.kind, sm.title, sm.description, sm.topic, t.name, sm.authors,
 	cardinality(sm.source_ids), cardinality(sm.card_ids), sm.words, sm.published_at,
 	s.id, s.title, s.authors, s.kind, s.url, s.licence, s.licence_url, s.attribution,
-	p.user_id IS NOT NULL, coalesce(p.position, 0), p.finished_at IS NOT NULL`
+	p.user_id IS NOT NULL, coalesce(p.position, 0), p.finished_at IS NOT NULL, coalesce(sm.card_ids[1], '')`
 
 // summaryFrom joins the viewer's progress; $1 is the viewer's id or NULL.
 const summaryFrom = ` FROM summaries sm JOIN topics t ON t.slug = sm.topic
@@ -68,10 +72,11 @@ func scanSummary(row pgx.Row, viewer bool) (Summary, error) {
 	var srcID, srcTitle, srcKind, srcURL, srcLicence, srcLicenceURL, srcAttribution *string
 	var srcAuthors []string
 	var p SummaryProgress
+	var firstCard string
 	err := row.Scan(&sm.ID, &sm.Kind, &sm.Title, &sm.Description, &sm.Topic, &sm.TopicName, &sm.Authors,
 		&sm.SourceCount, &sm.PartCount, &words, &sm.PublishedAt,
 		&srcID, &srcTitle, &srcAuthors, &srcKind, &srcURL, &srcLicence, &srcLicenceURL, &srcAttribution,
-		&p.Started, &p.Position, &p.Finished)
+		&p.Started, &p.Position, &p.Finished, &firstCard)
 	if err != nil {
 		return sm, err
 	}
@@ -84,7 +89,10 @@ func scanSummary(row pgx.Row, viewer bool) (Summary, error) {
 		sm.Source = &SourceRef{ID: *srcID, Title: *srcTitle, Authors: srcAuthors, Kind: *srcKind, URL: *srcURL,
 			Licence: *srcLicence, LicenceURL: *srcLicenceURL, Attribution: *srcAttribution}
 		sm.Coverage = "full"
-		if !content.Licences[*srcLicence] {
+		if *srcKind == "guide" {
+			sm.Coverage = "guide"
+			sm.Cover = imageFor(firstCard)
+		} else if !content.Licences[*srcLicence] {
 			sm.Coverage = "key-ideas"
 		}
 	}

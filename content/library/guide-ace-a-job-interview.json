@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-ace-a-job-interview",
+    "title": "Ace a Job Interview",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the UK National Careers Service, MIT Career Advising and the University of Cincinnati careers service.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: National Careers Service, Interview advice, https://nationalcareers.service.gov.uk/careers-advice/interview-advice; National Careers Service, The STAR method, https://nationalcareers.service.gov.uk/careers-advice/interview-advice/the-star-method; MIT Career Advising, The STAR method for behavioral interviews, https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/; University of Cincinnati, STAR method for behavioral interviews, https://www.uc.edu/campus-life/career-co-op-support/interviews/biginterview/star-method-behavioral-interview.html; Harvard Program on Negotiation, Salary negotiations, https://www.pon.harvard.edu/daily/salary-negotiations/"
+  },
+  "cards": [
+    {
+      "id": "guide-ace-a-job-interview--01",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "preparation",
+        "research"
+      ],
+      "title": "Research the company before you walk in",
+      "body": "Interviewers can tell quickly who has done their homework. Before the day, spend an hour learning what the organisation does, who its customers are, what it says it values and what has happened to it recently.\n\nStart with its website, especially the \"about\" and news pages. Then look at its social media, recent news stories and, if you can, talk to someone who works there or in the same field.\n\nThis pays off in two ways. You can link your answers to what they care about, and you can ask sharper questions. Saying \"I saw you are opening a new branch next year, how will this team support that?\" shows real interest in a way a general answer never can.",
+      "apply_it": "Pick a company you would like to work for and write down three facts about it: what it sells, one value it claims, and one recent piece of news.",
+      "quiz": {
+        "question": "What is the main benefit of researching the company before an interview?",
+        "options": [
+          "You can avoid answering hard questions",
+          "You can link your answers to what they care about and ask sharper questions",
+          "You can tell them how to run their business",
+          "It means you don't need to read the job description"
+        ],
+        "answer": 1,
+        "explanation": "Knowing the organisation lets you connect your experience to its goals and shows genuine interest."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--02",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "job-description",
+        "preparation"
+      ],
+      "title": "Read the job description like a checklist",
+      "body": "The job description tells you what the interview will test. Read it slowly and underline every skill, quality and duty they mention, such as \"works well under pressure\", \"handles customer complaints\" or \"good with spreadsheets\".\n\nNext to each one, write a real moment from your life that proves you have it. Examples can come from paid work, school, volunteering, sport, church or helping at home. A teenager who organised a football tournament has evidence of planning and teamwork.\n\nIf there is a skill where you have no example, decide how you will answer honestly: what related experience you have and how you would learn. That way no question catches you completely off guard.",
+      "apply_it": "Take any job advert and list its top five skills. Beside each, write one short example from your own life that shows it.",
+      "quiz": {
+        "question": "Where can good examples for interview answers come from?",
+        "options": [
+          "Only from paid jobs",
+          "Only from your most recent job",
+          "Work, school, volunteering, sport or home life",
+          "Made-up stories that sound impressive"
+        ],
+        "answer": 2,
+        "explanation": "Any real experience counts if it shows the skill. Honest, specific examples are always stronger than invented ones."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--03",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "tell-me-about-yourself",
+        "self-presentation"
+      ],
+      "title": "Prepare a short answer to \"Tell me about yourself\"",
+      "body": "This question often comes first, and it sets the tone. It is not an invitation to share your life story. The interviewer wants a short, clear picture of who you are at work and why you fit this role.\n\nA simple shape works well: present, past, future. Say what you do now, mention one or two past experiences that built relevant skills, then say why you want this particular job. Aim for about one minute.\n\nFor example: \"I'm in my final year studying business, and I run the social media for our student union. Last summer I worked in a busy shop, which taught me to stay calm with customers. I'm applying here because I want to grow in marketing in a company that really listens to its customers.\"",
+      "apply_it": "Write your own one-minute \"present, past, future\" answer, then say it aloud with a timer and trim anything that runs over.",
+      "quiz": {
+        "question": "What is a good structure for answering \"Tell me about yourself\"?",
+        "options": [
+          "Present, past, future, in about a minute",
+          "Your full life story from childhood",
+          "A list of your hobbies",
+          "A summary of what you dislike about your current job"
+        ],
+        "answer": 0,
+        "explanation": "A short present, past, future answer stays focused on the role and leaves the interviewer wanting to ask more."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--04",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "star-method",
+        "storytelling"
+      ],
+      "title": "Answer with STAR stories: situation, task, action, result",
+      "body": "Many questions start with \"Tell me about a time when...\". These ask for real examples, because how you acted before predicts how you will act again. The STAR method keeps your answer clear: Situation, Task, Action, Result.\n\nGive the situation and task briefly, in a sentence or two. Spend most of your time on the action: what you personally did, using \"I\" rather than \"we\". Finish with the result, ideally with a number, and what you learned.\n\nPrepare three to five stories that can bend to fit different questions, such as a time you solved a problem, worked in a team, handled conflict or made a mistake. Keep them as notes, not scripts, so you sound natural rather than rehearsed.",
+      "apply_it": "Write one STAR story about a problem you solved. Keep the situation to one line and make the action the longest part.",
+      "quiz": {
+        "question": "In a STAR answer, which part should take up most of your time?",
+        "options": [
+          "Situation",
+          "Task",
+          "Result",
+          "Action"
+        ],
+        "answer": 3,
+        "explanation": "Interviewers most want to hear what you personally did, so the action should be the heart of the story."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--05",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "common-questions",
+        "practice"
+      ],
+      "title": "Practise the questions that come up again and again",
+      "body": "Most interviews draw on a familiar set of questions. Why do you want this job? What are your strengths? What is a weakness you are working on? Tell me about a mistake you made. Where do you see yourself in a few years? Why should we hire you?\n\nYou cannot predict every question, but practising these builds confidence for the rest. For weaknesses, choose a real one that will not ruin your chances, and explain what you are doing to improve it.\n\nPractise out loud, not just in your head. Ask a friend or family member to play the interviewer, or record yourself on your phone. You will notice filler words, rambling and nervous habits that are easy to fix once you see them.",
+      "apply_it": "Ask someone to fire three common interview questions at you tonight, and answer each one out loud without stopping.",
+      "quiz": {
+        "question": "What is a good way to answer a question about your weakness?",
+        "options": [
+          "Say you have no weaknesses",
+          "Name a real weakness and explain how you are improving it",
+          "Name a weakness that makes you sound perfect, like working too hard",
+          "Refuse to answer"
+        ],
+        "answer": 1,
+        "explanation": "An honest weakness paired with a clear improvement plan shows self-awareness and a willingness to grow."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--06",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "questions",
+        "curiosity"
+      ],
+      "title": "Bring good questions of your own",
+      "body": "Near the end, most interviewers ask if you have any questions. Saying \"No, I think you've covered everything\" wastes a chance to stand out. Prepare three or four questions in advance and write them down.\n\nGood questions show you are thinking about doing the job well. You might ask what success looks like in the first three months, what the team is like, what challenges the role faces, or how people learn and grow there. Avoid opening with pay and holidays unless they raise them.\n\nAlways finish by asking what the next steps are and when you can expect to hear back. This keeps you informed and shows you are serious about the role.",
+      "apply_it": "Write down three questions you would ask any employer, including \"What would success look like in the first three months?\"",
+      "quiz": {
+        "question": "Which question is usually best to ask at the end of an interview?",
+        "options": [
+          "How many holidays do I get?",
+          "Can I work from home every day?",
+          "What would success look like in the first three months?",
+          "Did I get the job?"
+        ],
+        "answer": 2,
+        "explanation": "Questions about doing the job well show genuine interest. Pay and leave are best discussed once there is an offer."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--07",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "first-impressions",
+        "punctuality"
+      ],
+      "title": "Dress for the job and arrive early",
+      "body": "First impressions form fast, so remove anything that could distract from what you say. Find out how people at the company dress, then go one step smarter. Clean, ironed, comfortable clothes beat expensive ones.\n\nPlan your journey the day before and allow extra time for delays. Aim to be ready five to ten minutes early, not thirty, which can put pressure on the interviewer. Save the interviewer's phone number so you can call if something goes wrong.\n\nBring a copy of your CV, your notes and a pen. Switch your phone off. Be polite to everyone you meet, from the security guard to the receptionist, because they are sometimes asked what they thought of you.",
+      "apply_it": "For your next interview or important meeting, plan the route tonight and set an arrival time ten minutes before the start.",
+      "quiz": {
+        "question": "How early should you aim to be ready for an interview?",
+        "options": [
+          "About five to ten minutes early",
+          "Exactly on time",
+          "At least an hour early",
+          "It doesn't matter if you are a little late"
+        ],
+        "answer": 0,
+        "explanation": "Five to ten minutes early gives you a calm buffer without putting pressure on the interviewer."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--08",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "body-language",
+        "confidence"
+      ],
+      "title": "Let your body language back up your words",
+      "body": "People judge confidence partly by how you carry yourself. Greet the interviewer warmly, smile, and if it fits the local custom, offer a firm handshake. Sit upright, lean slightly forward and keep your hands relaxed and visible.\n\nMake natural eye contact. You do not need to stare, but looking at the person when you speak and listen shows you are engaged. If there is a panel, look mainly at the person who asked the question, then glance at the others.\n\nNerves are normal and interviewers expect them. Take a slow breath before you answer, and it is fine to pause and say \"That's a good question, let me think.\" A short, calm pause looks far better than a rushed, rambling answer.",
+      "apply_it": "Before your next important conversation, take three slow breaths, sit up straight and practise pausing for a second before you answer.",
+      "quiz": {
+        "question": "What should you do if a question makes you nervous?",
+        "options": [
+          "Answer immediately with whatever comes to mind",
+          "Avoid eye contact until it passes",
+          "Take a breath and pause briefly to think before answering",
+          "Ask to skip it"
+        ],
+        "answer": 2,
+        "explanation": "A short, calm pause shows composure and usually leads to a clearer answer."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--09",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "online-interviews",
+        "video-calls"
+      ],
+      "title": "Treat an online interview as seriously as a face-to-face one",
+      "body": "Video interviews are now common, and small technical problems can throw you off. Test your camera, microphone, internet connection and the app the day before, and again thirty minutes before the start. Have the interviewer's phone number or email ready in case the call drops.\n\nChoose a quiet, well-lit spot with a plain background. Put the light in front of you, not behind. Raise your device so the camera is at eye level, and dress fully as you would in person.\n\nLook at the camera when you speak, not at your own face on the screen. Close other apps and silence notifications. Keep a glass of water and a few notes nearby, but don't read from a script.",
+      "apply_it": "Do a two-minute test video call with a friend from the spot you would use for an interview, and fix the lighting or background.",
+      "quiz": {
+        "question": "Where should you look when speaking in a video interview?",
+        "options": [
+          "At your own picture",
+          "At your notes",
+          "At the camera",
+          "Out of the window to think"
+        ],
+        "answer": 2,
+        "explanation": "Looking into the camera makes it seem to the interviewer that you are making eye contact."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--10",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "salary",
+        "negotiation"
+      ],
+      "title": "Handle salary questions calmly and with research",
+      "body": "Before the interview, find out the usual pay for this kind of role in your area using job adverts, salary surveys and people in the field. Decide on a realistic range and the lowest figure you would accept.\n\nIf they ask early what you expect, you can say you would like to learn more about the role first, or give your researched range. A range anchored slightly above your target leaves room to meet in the middle.\n\nWhen an offer comes, you do not have to accept on the spot. Thank them, ask for it in writing and take a day to consider. A polite, evidence-based request for a little more is normal in many workplaces, and you can also ask about training, leave or a pay review instead.",
+      "apply_it": "Look up three job adverts for a role you want and note the pay they list. Use them to set your own realistic range.",
+      "quiz": {
+        "question": "What is a sensible thing to do when you receive a job offer?",
+        "options": [
+          "Accept immediately before they change their mind",
+          "Thank them, ask for it in writing and take time to consider",
+          "Demand double the amount",
+          "Ignore the pay and accept anything"
+        ],
+        "answer": 1,
+        "explanation": "Taking a short time to review a written offer lets you check the details and decide whether to negotiate."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--11",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "follow-up",
+        "gratitude"
+      ],
+      "title": "Send a short thank-you message within a day",
+      "body": "A quick thank-you after the interview is polite, rare enough to be noticed, and a final chance to show interest. Send it by email within twenty-four hours to each person who interviewed you, if you have their details.\n\nKeep it to a few lines. Thank them for their time, mention one specific thing you enjoyed discussing, and repeat briefly why you are excited about the role. Check spelling and names carefully.\n\nIf you have not heard back by the date they gave, it is fine to send a polite follow-up asking about the timeline. One reminder is professional; several in a week can seem pushy.",
+      "apply_it": "Draft a three-line thank-you email template now, so you can personalise it quickly after your next interview.",
+      "quiz": {
+        "question": "When should a thank-you message be sent after an interview?",
+        "options": [
+          "Within about twenty-four hours",
+          "Only if you get the job",
+          "A month later",
+          "Before the interview"
+        ],
+        "answer": 0,
+        "explanation": "A prompt message keeps you fresh in their mind and shows professionalism."
+      }
+    },
+    {
+      "id": "guide-ace-a-job-interview--12",
+      "topic": "life-guides",
+      "tags": [
+        "interviews",
+        "rejection",
+        "resilience"
+      ],
+      "title": "Learn from rejection and go again",
+      "body": "Almost everyone faces rejection on the way to a good job. Often it has little to do with you: another candidate may have had one extra skill, or someone inside the company got the role. It hurts, but it is not a verdict on your worth.\n\nWhile the interview is fresh, write down the questions you found hard and how you could answer them better. Politely ask the employer for feedback. Not all will reply, but those who do can give you gold.\n\nThen treat each interview as practice that makes the next one easier. Keep applying, keep improving one thing at a time, and remember that you only need one yes.",
+      "apply_it": "Think of a past rejection. Write down one lesson from it and one thing you would do differently next time.",
+      "quiz": {
+        "question": "What is a useful step after being turned down for a job?",
+        "options": [
+          "Decide you are not good enough",
+          "Stop applying for a while",
+          "Note the hard questions and ask for feedback",
+          "Complain to the interviewer"
+        ],
+        "answer": 2,
+        "explanation": "Reflecting and asking for feedback turns a rejection into practice for the next interview."
+      }
+    }
+  ]
+}
