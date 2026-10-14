@@ -1,0 +1,1022 @@
+{
+ "version": 1,
+ "cards": {
+  "7-habits-covey--05": {
+   "file": "images/cards/v1/7-habits-covey--05.webp",
+   "full": "images/cards/v1-full/7-habits-covey--05.png",
+   "type": "illustration",
+   "caption": "Listening fully before replying",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "7-habits-covey--08": {
+   "file": "images/cards/v1/7-habits-covey--08.webp",
+   "full": "images/cards/v1-full/7-habits-covey--08.png",
+   "type": "illustration",
+   "caption": "On the subway, a new understanding of the scene",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "7-habits-covey--17": {
+   "file": "images/cards/v1/7-habits-covey--17.webp",
+   "full": "images/cards/v1-full/7-habits-covey--17.png",
+   "type": "3d",
+   "caption": "What sits at the centre holds everything else in orbit"
+  },
+  "7-habits-covey--23": {
+   "file": "images/cards/v1/7-habits-covey--23.webp",
+   "full": "images/cards/v1-full/7-habits-covey--23.png",
+   "type": "3d",
+   "caption": "Courage and consideration held in balance"
+  },
+  "aesops-fables--33": {
+   "file": "images/cards/v1/aesops-fables--33.webp",
+   "full": "images/cards/v1-full/aesops-fables--33.png",
+   "type": "illustration",
+   "caption": "The fox learned from the donkey's mistake",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "aesops-fables--36": {
+   "file": "images/cards/v1/aesops-fables--36.webp",
+   "full": "images/cards/v1-full/aesops-fables--36.png",
+   "type": "illustration",
+   "caption": "A gnat on a bull's horn that the bull never noticed",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "aesops-fables--38": {
+   "file": "images/cards/v1/aesops-fables--38.webp",
+   "full": "images/cards/v1-full/aesops-fables--38.png",
+   "type": "illustration",
+   "caption": "A buried lump of gold is worth no more than a brick",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "africapitalism-elumelu--05": {
+   "file": "images/cards/v1/africapitalism-elumelu--05.webp",
+   "full": "images/cards/v1-full/africapitalism-elumelu--05.png",
+   "type": "3d",
+   "caption": "One business at the centre, its benefits rippling out to the community"
+  },
+  "art-of-war-sun-tzu--19": {
+   "file": "images/cards/v1/art-of-war-sun-tzu--19.webp",
+   "full": "images/cards/v1-full/art-of-war-sun-tzu--19.png",
+   "type": "chart",
+   "caption": "Sun Tzu: a forced march at double speed brings only a tenth of the army to its goal",
+   "basis": "data",
+   "source": "The Art of War, Sun Tzu"
+  },
+  "art-of-writing-stevenson--12": {
+   "file": "images/cards/v1/art-of-writing-stevenson--12.webp",
+   "full": "images/cards/v1-full/art-of-writing-stevenson--12.png",
+   "type": "3d",
+   "caption": "An arrow dead centre in the target"
+  },
+  "as-a-man-thinketh-james-allen--18": {
+   "file": "images/cards/v1/as-a-man-thinketh-james-allen--18.webp",
+   "full": "images/cards/v1-full/as-a-man-thinketh-james-allen--18.png",
+   "type": "illustration",
+   "caption": "Doing the work in front of you with full care",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "atomic-habits-clear--11": {
+   "file": "images/cards/v1/atomic-habits-clear--11.webp",
+   "full": "images/cards/v1-full/atomic-habits-clear--11.png",
+   "type": "chart",
+   "caption": "Remove the cue and the moment never comes",
+   "basis": "illustration"
+  },
+  "attached-levine-heller--25": {
+   "file": "images/cards/v1/attached-levine-heller--25.webp",
+   "full": "images/cards/v1-full/attached-levine-heller--25.png",
+   "type": "3d",
+   "caption": "Even after leaving, a band still pulls back"
+  },
+  "attached-levine-heller--30": {
+   "file": "images/cards/v1/attached-levine-heller--30.webp",
+   "full": "images/cards/v1-full/attached-levine-heller--30.png",
+   "type": "3d",
+   "caption": "Two partners leaning in to shelter each other"
+  },
+  "autobiography-andrew-carnegie--35": {
+   "file": "images/cards/v1/autobiography-andrew-carnegie--35.webp",
+   "full": "images/cards/v1-full/autobiography-andrew-carnegie--35.png",
+   "type": "3d",
+   "caption": "All the good eggs in one basket, the strays left aside"
+  },
+  "autobiography-andrew-carnegie--41": {
+   "file": "images/cards/v1/autobiography-andrew-carnegie--41.webp",
+   "full": "images/cards/v1-full/autobiography-andrew-carnegie--41.png",
+   "type": "illustration",
+   "caption": "A wife welcoming the elderly relatives",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-benjamin-franklin--09": {
+   "file": "images/cards/v1/autobiography-benjamin-franklin--09.webp",
+   "full": "images/cards/v1-full/autobiography-benjamin-franklin--09.png",
+   "type": "chart",
+   "caption": "Franklin's self-teaching loop, step by step",
+   "basis": "illustration",
+   "source": "The Autobiography of Benjamin Franklin"
+  },
+  "autobiography-benjamin-franklin--19": {
+   "file": "images/cards/v1/autobiography-benjamin-franklin--19.webp",
+   "full": "images/cards/v1-full/autobiography-benjamin-franklin--19.png",
+   "type": "illustration",
+   "caption": "Still working when the neighbours go home",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-benjamin-franklin--38": {
+   "file": "images/cards/v1/autobiography-benjamin-franklin--38.webp",
+   "full": "images/cards/v1-full/autobiography-benjamin-franklin--38.png",
+   "type": "illustration",
+   "caption": "A chess game where the loser must study Italian",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-benjamin-franklin--46": {
+   "file": "images/cards/v1/autobiography-benjamin-franklin--46.webp",
+   "full": "images/cards/v1-full/autobiography-benjamin-franklin--46.png",
+   "type": "illustration",
+   "caption": "A long thin column on a narrow forest road",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-benjamin-franklin--49": {
+   "file": "images/cards/v1/autobiography-benjamin-franklin--49.webp",
+   "full": "images/cards/v1-full/autobiography-benjamin-franklin--49.png",
+   "type": "illustration",
+   "caption": "Everyone else looks lost in the fog",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-charles-darwin--03": {
+   "file": "images/cards/v1/autobiography-charles-darwin--03.webp",
+   "full": "images/cards/v1-full/autobiography-charles-darwin--03.png",
+   "type": "illustration",
+   "caption": "Two boys running a chemistry lab in a garden shed",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "autobiography-charles-darwin--21": {
+   "file": "images/cards/v1/autobiography-charles-darwin--21.webp",
+   "full": "images/cards/v1-full/autobiography-charles-darwin--21.png",
+   "type": "illustration",
+   "caption": "A quiet country life chosen together",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "book-of-business-etiquette-henney--16": {
+   "file": "images/cards/v1/book-of-business-etiquette-henney--16.webp",
+   "full": "images/cards/v1-full/book-of-business-etiquette-henney--16.png",
+   "type": "3d",
+   "caption": "A private inner light, ringed and protected"
+  },
+  "book-of-business-etiquette-henney--42": {
+   "file": "images/cards/v1/book-of-business-etiquette-henney--42.webp",
+   "full": "images/cards/v1-full/book-of-business-etiquette-henney--42.png",
+   "type": "chart",
+   "caption": "Time asked for versus time the customer gave",
+   "basis": "data",
+   "source": "The Book of Business Etiquette"
+  },
+  "book-of-business-etiquette-henney--46": {
+   "file": "images/cards/v1/book-of-business-etiquette-henney--46.webp",
+   "full": "images/cards/v1-full/book-of-business-etiquette-henney--46.png",
+   "type": "illustration",
+   "caption": "Courtesy to the work itself",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "consolation-of-philosophy-boethius--26": {
+   "file": "images/cards/v1/consolation-of-philosophy-boethius--26.webp",
+   "full": "images/cards/v1-full/consolation-of-philosophy-boethius--26.png",
+   "type": "illustration",
+   "caption": "Searching everything but the good life",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "deep-work-newport--30": {
+   "file": "images/cards/v1/deep-work-newport--30.webp",
+   "full": "images/cards/v1-full/deep-work-newport--30.png",
+   "type": "chart",
+   "caption": "Laying out the whole process in one email closes the loop",
+   "basis": "illustration"
+  },
+  "discourses-epictetus--25": {
+   "file": "images/cards/v1/discourses-epictetus--25.webp",
+   "full": "images/cards/v1-full/discourses-epictetus--25.png",
+   "type": "illustration",
+   "caption": "Anxiety comes from wanting the applause",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "discourses-epictetus--33": {
+   "file": "images/cards/v1/discourses-epictetus--33.webp",
+   "full": "images/cards/v1-full/discourses-epictetus--33.png",
+   "type": "3d",
+   "caption": "A light leads the way and others follow freely"
+  },
+  "discourses-epictetus--48": {
+   "file": "images/cards/v1/discourses-epictetus--48.webp",
+   "full": "images/cards/v1-full/discourses-epictetus--48.png",
+   "type": "chart",
+   "caption": "Each calmer day is a small festival",
+   "basis": "illustration"
+  },
+  "discourses-on-art-reynolds--15": {
+   "file": "images/cards/v1/discourses-on-art-reynolds--15.webp",
+   "full": "images/cards/v1-full/discourses-on-art-reynolds--15.png",
+   "type": "3d",
+   "caption": "A clock's hour hand, moving too slowly to see"
+  },
+  "early-history-of-the-airplane-wright--19": {
+   "file": "images/cards/v1/early-history-of-the-airplane-wright--19.webp",
+   "full": "images/cards/v1-full/early-history-of-the-airplane-wright--19.png",
+   "type": "chart",
+   "caption": "Engine power needed versus what the home-made engine delivered",
+   "basis": "data",
+   "source": "The Early History of the Airplane"
+  },
+  "early-history-of-the-airplane-wright--26": {
+   "file": "images/cards/v1/early-history-of-the-airplane-wright--26.webp",
+   "full": "images/cards/v1-full/early-history-of-the-airplane-wright--26.png",
+   "type": "illustration",
+   "caption": "Two brothers settle who flies first with a coin toss",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "eat-that-frog-tracy--20": {
+   "file": "images/cards/v1/eat-that-frog-tracy--20.webp",
+   "full": "images/cards/v1-full/eat-that-frog-tracy--20.png",
+   "type": "chart",
+   "caption": "Your own deadline lands before the real one",
+   "basis": "illustration"
+  },
+  "eat-that-frog-tracy--28": {
+   "file": "images/cards/v1/eat-that-frog-tracy--28.webp",
+   "full": "images/cards/v1-full/eat-that-frog-tracy--28.png",
+   "type": "illustration",
+   "caption": "Work done, time left for family",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "ecclesiastes-kjv--18": {
+   "file": "images/cards/v1/ecclesiastes-kjv--18.webp",
+   "full": "images/cards/v1-full/ecclesiastes-kjv--18.png",
+   "type": "chart",
+   "caption": "Anger that passes vs anger that settles in",
+   "basis": "illustration"
+  },
+  "education-of-a-british-protected-child-achebe--02": {
+   "file": "images/cards/v1/education-of-a-british-protected-child-achebe--02.webp",
+   "full": "images/cards/v1-full/education-of-a-british-protected-child-achebe--02.png",
+   "type": "illustration",
+   "caption": "Noticing whose side a story puts you on",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "education-of-a-british-protected-child-achebe--20": {
+   "file": "images/cards/v1/education-of-a-british-protected-child-achebe--20.webp",
+   "full": "images/cards/v1-full/education-of-a-british-protected-child-achebe--20.png",
+   "type": "illustration",
+   "caption": "A young reader learning from people who stood up for others",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "emotional-intelligence-goleman--15": {
+   "file": "images/cards/v1/emotional-intelligence-goleman--15.webp",
+   "full": "images/cards/v1-full/emotional-intelligence-goleman--15.png",
+   "type": "3d",
+   "caption": "The mood you bring spreads outward"
+  },
+  "emotional-intelligence-goleman--23": {
+   "file": "images/cards/v1/emotional-intelligence-goleman--23.webp",
+   "full": "images/cards/v1-full/emotional-intelligence-goleman--23.png",
+   "type": "3d",
+   "caption": "A web of connections already in place around one glowing point"
+  },
+  "emotional-intelligence-goleman--28": {
+   "file": "images/cards/v1/emotional-intelligence-goleman--28.webp",
+   "full": "images/cards/v1-full/emotional-intelligence-goleman--28.png",
+   "type": "3d",
+   "caption": "Three stepping stones rising toward a warm light: safety, making sense, rebuilding"
+  },
+  "enchiridion-epictetus--13": {
+   "file": "images/cards/v1/enchiridion-epictetus--13.webp",
+   "full": "images/cards/v1-full/enchiridion-epictetus--13.png",
+   "type": "illustration",
+   "caption": "At an ancient banquet, a dish is passed from guest to guest",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "enchiridion-epictetus--14": {
+   "file": "images/cards/v1/enchiridion-epictetus--14.webp",
+   "full": "images/cards/v1-full/enchiridion-epictetus--14.png",
+   "type": "illustration",
+   "caption": "Kind and present, steady inside",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "essays-francis-bacon--06": {
+   "file": "images/cards/v1/essays-francis-bacon--06.webp",
+   "full": "images/cards/v1-full/essays-francis-bacon--06.png",
+   "type": "3d",
+   "caption": "Pressure brings out what was hidden"
+  },
+  "essays-francis-bacon--15": {
+   "file": "images/cards/v1/essays-francis-bacon--15.webp",
+   "full": "images/cards/v1-full/essays-francis-bacon--15.png",
+   "type": "3d",
+   "caption": "Love that flows out to many"
+  },
+  "essays-francis-bacon--17": {
+   "file": "images/cards/v1/essays-francis-bacon--17.webp",
+   "full": "images/cards/v1-full/essays-francis-bacon--17.png",
+   "type": "illustration",
+   "caption": "A firm but respectful correction",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "essays-francis-bacon--46": {
+   "file": "images/cards/v1/essays-francis-bacon--46.webp",
+   "full": "images/cards/v1-full/essays-francis-bacon--46.png",
+   "type": "illustration",
+   "caption": "Light things float, weighty things sink",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "essays-montaigne--12": {
+   "file": "images/cards/v1/essays-montaigne--12.webp",
+   "full": "images/cards/v1-full/essays-montaigne--12.png",
+   "type": "3d",
+   "caption": "Step off the worn track and turn toward something new"
+  },
+  "essentialism-mckeown--16": {
+   "file": "images/cards/v1/essentialism-mckeown--16.webp",
+   "full": "images/cards/v1-full/essentialism-mckeown--16.png",
+   "type": "chart",
+   "caption": "The reverse pilot: pause a task and watch whether anyone misses it",
+   "basis": "illustration"
+  },
+  "etiquette-emily-post--12": {
+   "file": "images/cards/v1/etiquette-emily-post--12.webp",
+   "full": "images/cards/v1-full/etiquette-emily-post--12.png",
+   "type": "illustration",
+   "caption": "At a dinner party, the attentive listener is the best company",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "etiquette-emily-post--39": {
+   "file": "images/cards/v1/etiquette-emily-post--39.webp",
+   "full": "images/cards/v1-full/etiquette-emily-post--39.png",
+   "type": "illustration",
+   "caption": "Two girls on a train, crocheting toward hidden prizes",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "etiquette-emily-post--42": {
+   "file": "images/cards/v1/etiquette-emily-post--42.webp",
+   "full": "images/cards/v1-full/etiquette-emily-post--42.png",
+   "type": "illustration",
+   "caption": "A simple village wedding, remembered as one of the loveliest",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "etiquette-emily-post--43": {
+   "file": "images/cards/v1/etiquette-emily-post--43.webp",
+   "full": "images/cards/v1-full/etiquette-emily-post--43.png",
+   "type": "illustration",
+   "caption": "A brief, warm word in the receiving line",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "foundations-of-science-poincare--21": {
+   "file": "images/cards/v1/foundations-of-science-poincare--21.webp",
+   "full": "images/cards/v1-full/foundations-of-science-poincare--21.png",
+   "type": "3d",
+   "caption": "Arrows grouped in the centre of a target: a hit you can repeat"
+  },
+  "getting-past-your-breakup-elliott--10": {
+   "file": "images/cards/v1/getting-past-your-breakup-elliott--10.webp",
+   "full": "images/cards/v1-full/getting-past-your-breakup-elliott--10.png",
+   "type": "chart",
+   "caption": "Hard dates hit less hard when you plan for them",
+   "basis": "illustration"
+  },
+  "gospel-of-buddha-carus--23": {
+   "file": "images/cards/v1/gospel-of-buddha-carus--23.webp",
+   "full": "images/cards/v1-full/gospel-of-buddha-carus--23.png",
+   "type": "illustration",
+   "caption": "Going door to door for a house untouched by loss",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "gospel-of-buddha-carus--24": {
+   "file": "images/cards/v1/gospel-of-buddha-carus--24.webp",
+   "full": "images/cards/v1-full/gospel-of-buddha-carus--24.png",
+   "type": "illustration",
+   "caption": "A weary rich man seeks advice, rich dishes pushed aside",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "hhs-importance-of-fathers--08": {
+   "file": "images/cards/v1/hhs-importance-of-fathers--08.webp",
+   "full": "images/cards/v1-full/hhs-importance-of-fathers--08.png",
+   "type": "illustration",
+   "caption": "A father and child out on a hike together",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "how-to-win-friends-carnegie--25": {
+   "file": "images/cards/v1/how-to-win-friends-carnegie--25.webp",
+   "full": "images/cards/v1-full/how-to-win-friends-carnegie--25.png",
+   "type": "illustration",
+   "caption": "The same complaint, again",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "how-to-win-friends-carnegie--28": {
+   "file": "images/cards/v1/how-to-win-friends-carnegie--28.webp",
+   "full": "images/cards/v1-full/how-to-win-friends-carnegie--28.png",
+   "type": "chart",
+   "caption": "Reading only counts when an idea becomes an action",
+   "basis": "illustration"
+  },
+  "how-we-think-dewey--13": {
+   "file": "images/cards/v1/how-we-think-dewey--13.webp",
+   "full": "images/cards/v1-full/how-we-think-dewey--13.png",
+   "type": "illustration",
+   "caption": "A pupil watches the teacher's face instead of the problem",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "how-we-think-dewey--27": {
+   "file": "images/cards/v1/how-we-think-dewey--27.webp",
+   "full": "images/cards/v1-full/how-we-think-dewey--27.png",
+   "type": "3d",
+   "caption": "Play and purpose balanced on one beam"
+  },
+  "in-favor-of-the-sensitive-man-nin--07": {
+   "file": "images/cards/v1/in-favor-of-the-sensitive-man-nin--07.webp",
+   "full": "images/cards/v1-full/in-favor-of-the-sensitive-man-nin--07.png",
+   "type": "illustration",
+   "caption": "Tenderness and ambition, shared by both",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "interesting-narrative-olaudah-equiano--06": {
+   "file": "images/cards/v1/interesting-narrative-olaudah-equiano--06.webp",
+   "full": "images/cards/v1-full/interesting-narrative-olaudah-equiano--06.png",
+   "type": "illustration",
+   "caption": "A whole village working its shared fields",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "interesting-narrative-olaudah-equiano--30": {
+   "file": "images/cards/v1/interesting-narrative-olaudah-equiano--30.webp",
+   "full": "images/cards/v1-full/interesting-narrative-olaudah-equiano--30.png",
+   "type": "illustration",
+   "caption": "Torn between gratitude and a longed-for voyage",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "interesting-narrative-olaudah-equiano--43": {
+   "file": "images/cards/v1/interesting-narrative-olaudah-equiano--43.webp",
+   "full": "images/cards/v1-full/interesting-narrative-olaudah-equiano--43.png",
+   "type": "3d",
+   "caption": "Leaving the old crowd for company that lifts you"
+  },
+  "letters-to-his-son-chesterfield--03": {
+   "file": "images/cards/v1/letters-to-his-son-chesterfield--03.webp",
+   "full": "images/cards/v1-full/letters-to-his-son-chesterfield--03.png",
+   "type": "illustration",
+   "caption": "Offering the small kindness you'd like yourself",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "letters-to-his-son-chesterfield--15": {
+   "file": "images/cards/v1/letters-to-his-son-chesterfield--15.webp",
+   "full": "images/cards/v1-full/letters-to-his-son-chesterfield--15.png",
+   "type": "illustration",
+   "caption": "Contempt is remembered long after a wrong",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "letters-to-his-son-chesterfield--29": {
+   "file": "images/cards/v1/letters-to-his-son-chesterfield--29.webp",
+   "full": "images/cards/v1-full/letters-to-his-son-chesterfield--29.png",
+   "type": "3d",
+   "caption": "Between bowing low and bristling: standing upright"
+  },
+  "mans-search-for-meaning-frankl--16": {
+   "file": "images/cards/v1/mans-search-for-meaning-frankl--16.webp",
+   "full": "images/cards/v1-full/mans-search-for-meaning-frankl--16.png",
+   "type": "3d",
+   "caption": "Three drives side by side, with meaning standing tallest"
+  },
+  "mans-search-for-meaning-frankl--23": {
+   "file": "images/cards/v1/mans-search-for-meaning-frankl--23.webp",
+   "full": "images/cards/v1-full/mans-search-for-meaning-frankl--23.png",
+   "type": "chart",
+   "caption": "Frankl's order: change what can be changed, find meaning in what remains",
+   "basis": "illustration"
+  },
+  "mental-efficiency-bennett--09": {
+   "file": "images/cards/v1/mental-efficiency-bennett--09.webp",
+   "full": "images/cards/v1-full/mental-efficiency-bennett--09.png",
+   "type": "chart",
+   "caption": "Bennett's 15-minute recall drill",
+   "basis": "data",
+   "source": "Mental Efficiency, Arnold Bennett"
+  },
+  "mental-efficiency-bennett--22": {
+   "file": "images/cards/v1/mental-efficiency-bennett--22.webp",
+   "full": "images/cards/v1-full/mental-efficiency-bennett--22.png",
+   "type": "illustration",
+   "caption": "Good books on the shelf invite curiosity",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mental-efficiency-bennett--30": {
+   "file": "images/cards/v1/mental-efficiency-bennett--30.webp",
+   "full": "images/cards/v1-full/mental-efficiency-bennett--30.png",
+   "type": "illustration",
+   "caption": "A calm traveller watches a missed train pull away",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "michael-faraday-thompson--41": {
+   "file": "images/cards/v1/michael-faraday-thompson--41.webp",
+   "full": "images/cards/v1-full/michael-faraday-thompson--41.png",
+   "type": "illustration",
+   "caption": "A Victorian scientist reads a letter of plain explanation",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "michael-faraday-thompson--50": {
+   "file": "images/cards/v1/michael-faraday-thompson--50.webp",
+   "full": "images/cards/v1-full/michael-faraday-thompson--50.png",
+   "type": "illustration",
+   "caption": "Tea with a poor neighbour instead of a grand dinner",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mindset-dweck--09": {
+   "file": "images/cards/v1/mindset-dweck--09.webp",
+   "full": "images/cards/v1-full/mindset-dweck--09.png",
+   "type": "chart",
+   "caption": "Treating a skill as learnable keeps it growing; treating it as fixed keeps it flat",
+   "basis": "illustration"
+  },
+  "mindset-dweck--19": {
+   "file": "images/cards/v1/mindset-dweck--19.webp",
+   "full": "images/cards/v1-full/mindset-dweck--19.png",
+   "type": "chart",
+   "caption": "How long the hurt of rejection lingers, by mindset",
+   "basis": "illustration"
+  },
+  "mindset-dweck--20": {
+   "file": "images/cards/v1/mindset-dweck--20.webp",
+   "full": "images/cards/v1-full/mindset-dweck--20.png",
+   "type": "illustration",
+   "caption": "A father gives his daughter honest, gentle feedback",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mindset-dweck--21": {
+   "file": "images/cards/v1/mindset-dweck--21.webp",
+   "full": "images/cards/v1-full/mindset-dweck--21.png",
+   "type": "illustration",
+   "caption": "High standards and warm support",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mindset-dweck--27": {
+   "file": "images/cards/v1/mindset-dweck--27.webp",
+   "full": "images/cards/v1-full/mindset-dweck--27.png",
+   "type": "illustration",
+   "caption": "Look for the reasons behind one mistake",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mindset-dweck--28": {
+   "file": "images/cards/v1/mindset-dweck--28.webp",
+   "full": "images/cards/v1-full/mindset-dweck--28.png",
+   "type": "illustration",
+   "caption": "An adult beginner at the easel, learning to draw",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "moral-letters-seneca--20": {
+   "file": "images/cards/v1/moral-letters-seneca--20.webp",
+   "full": "images/cards/v1-full/moral-letters-seneca--20.png",
+   "type": "illustration",
+   "caption": "Admire the vine for its grapes, not its golden stakes",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "my-inventions-tesla--01": {
+   "file": "images/cards/v1/my-inventions-tesla--01.webp",
+   "full": "images/cards/v1-full/my-inventions-tesla--01.png",
+   "type": "illustration",
+   "caption": "An inventor building the machine in his mind first",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "my-inventions-tesla--21": {
+   "file": "images/cards/v1/my-inventions-tesla--21.webp",
+   "full": "images/cards/v1-full/my-inventions-tesla--21.png",
+   "type": "chart",
+   "caption": "Tesla's first-year schedule at Graz: 3 a.m. to 11 p.m., every day",
+   "basis": "data",
+   "source": "My Inventions, Nikola Tesla"
+  },
+  "my-inventions-tesla--32": {
+   "file": "images/cards/v1/my-inventions-tesla--32.webp",
+   "full": "images/cards/v1-full/my-inventions-tesla--32.png",
+   "type": "chart",
+   "caption": "Two ideas, two adoption speeds: fitting old machinery vs replacing it",
+   "basis": "illustration"
+  },
+  "nci-grief-bereavement-loss--09": {
+   "file": "images/cards/v1/nci-grief-bereavement-loss--09.webp",
+   "full": "images/cards/v1-full/nci-grief-bereavement-loss--09.png",
+   "type": "chart",
+   "caption": "A grieving child's day moves in and out of sadness",
+   "basis": "illustration"
+  },
+  "nhs-five-steps-to-mental-wellbeing--05": {
+   "file": "images/cards/v1/nhs-five-steps-to-mental-wellbeing--05.webp",
+   "full": "images/cards/v1-full/nhs-five-steps-to-mental-wellbeing--05.png",
+   "type": "illustration",
+   "caption": "Noticing the small details of an ordinary morning",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "nhs-grief-bereavement--03": {
+   "file": "images/cards/v1/nhs-grief-bereavement--03.webp",
+   "full": "images/cards/v1-full/nhs-grief-bereavement--03.png",
+   "type": "3d",
+   "caption": "Grief carries more than one weight: sadness, anger, guilt"
+  },
+  "nhs-mental-health-self-help--03": {
+   "file": "images/cards/v1/nhs-mental-health-self-help--03.webp",
+   "full": "images/cards/v1-full/nhs-mental-health-self-help--03.png",
+   "type": "3d",
+   "caption": "Circle the one piece you can control"
+  },
+  "nhs-mental-health-self-help--05": {
+   "file": "images/cards/v1/nhs-mental-health-self-help--05.webp",
+   "full": "images/cards/v1-full/nhs-mental-health-self-help--05.png",
+   "type": "chart",
+   "caption": "Do the two tasks that matter most and let the rest wait",
+   "basis": "illustration"
+  },
+  "nhs-mental-health-self-help--12": {
+   "file": "images/cards/v1/nhs-mental-health-self-help--12.webp",
+   "full": "images/cards/v1-full/nhs-mental-health-self-help--12.png",
+   "type": "chart",
+   "caption": "Each short, gradual exposure brings a smaller spike of anxiety",
+   "basis": "illustration"
+  },
+  "nih-news-in-health--15": {
+   "file": "images/cards/v1/nih-news-in-health--15.webp",
+   "full": "images/cards/v1-full/nih-news-in-health--15.png",
+   "type": "chart",
+   "caption": "A body scan: attention moves slowly from feet to head",
+   "basis": "illustration",
+   "source": "NIH News in Health"
+  },
+  "notebooks-leonardo-da-vinci--03": {
+   "file": "images/cards/v1/notebooks-leonardo-da-vinci--03.webp",
+   "full": "images/cards/v1-full/notebooks-leonardo-da-vinci--03.png",
+   "type": "illustration",
+   "caption": "Understanding why, not just who said it",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "notebooks-leonardo-da-vinci--10": {
+   "file": "images/cards/v1/notebooks-leonardo-da-vinci--10.webp",
+   "full": "images/cards/v1-full/notebooks-leonardo-da-vinci--10.png",
+   "type": "chart",
+   "caption": "Leonardo's three-stage working order",
+   "basis": "illustration",
+   "source": "The Notebooks of Leonardo Da Vinci"
+  },
+  "notebooks-leonardo-da-vinci--35": {
+   "file": "images/cards/v1/notebooks-leonardo-da-vinci--35.webp",
+   "full": "images/cards/v1-full/notebooks-leonardo-da-vinci--35.png",
+   "type": "3d",
+   "caption": "Add a layer of patience as the cold grows"
+  },
+  "novel-of-the-future-nin--03": {
+   "file": "images/cards/v1/novel-of-the-future-nin--03.webp",
+   "full": "images/cards/v1-full/novel-of-the-future-nin--03.png",
+   "type": "illustration",
+   "caption": "Catching a dream before the day begins",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "novel-of-the-future-nin--05": {
+   "file": "images/cards/v1/novel-of-the-future-nin--05.webp",
+   "full": "images/cards/v1-full/novel-of-the-future-nin--05.png",
+   "type": "3d",
+   "caption": "Shock often hides a quieter feeling"
+  },
+  "on-anger-seneca--14": {
+   "file": "images/cards/v1/on-anger-seneca--14.webp",
+   "full": "images/cards/v1-full/on-anger-seneca--14.png",
+   "type": "illustration",
+   "caption": "A Roman general holds back and takes stock",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "on-peace-of-mind-seneca--08": {
+   "file": "images/cards/v1/on-peace-of-mind-seneca--08.webp",
+   "full": "images/cards/v1-full/on-peace-of-mind-seneca--08.png",
+   "type": "chart",
+   "caption": "A steady course rather than highs and lows",
+   "basis": "illustration"
+  },
+  "on-peace-of-mind-seneca--19": {
+   "file": "images/cards/v1/on-peace-of-mind-seneca--19.webp",
+   "full": "images/cards/v1-full/on-peace-of-mind-seneca--19.png",
+   "type": "3d",
+   "caption": "Value things by their use, not their show"
+  },
+  "on-peace-of-mind-seneca--20": {
+   "file": "images/cards/v1/on-peace-of-mind-seneca--20.webp",
+   "full": "images/cards/v1-full/on-peace-of-mind-seneca--20.png",
+   "type": "illustration",
+   "caption": "Shelves of untouched scrolls, one being truly read",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "on-peace-of-mind-seneca--27": {
+   "file": "images/cards/v1/on-peace-of-mind-seneca--27.webp",
+   "full": "images/cards/v1-full/on-peace-of-mind-seneca--27.png",
+   "type": "illustration",
+   "caption": "Losing the cargo, gaining lighter luggage",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "on-the-shortness-of-life-seneca--21": {
+   "file": "images/cards/v1/on-the-shortness-of-life-seneca--21.webp",
+   "full": "images/cards/v1-full/on-the-shortness-of-life-seneca--21.png",
+   "type": "3d",
+   "caption": "Favour the knowledge that makes you better"
+  },
+  "pierre-curie-marie-curie--10": {
+   "file": "images/cards/v1/pierre-curie-marie-curie--10.webp",
+   "full": "images/cards/v1-full/pierre-curie-marie-curie--10.png",
+   "type": "illustration",
+   "caption": "Lean student years that felt like freedom",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "pierre-curie-marie-curie--14": {
+   "file": "images/cards/v1/pierre-curie-marie-curie--14.webp",
+   "full": "images/cards/v1-full/pierre-curie-marie-curie--14.png",
+   "type": "illustration",
+   "caption": "Protecting the hours for deep work",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "pierre-curie-marie-curie--36": {
+   "file": "images/cards/v1/pierre-curie-marie-curie--36.webp",
+   "full": "images/cards/v1-full/pierre-curie-marie-curie--36.png",
+   "type": "illustration",
+   "caption": "A grandfather keeping the children's world bright",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "plutarchs-lives--40": {
+   "file": "images/cards/v1/plutarchs-lives--40.webp",
+   "full": "images/cards/v1-full/plutarchs-lives--40.png",
+   "type": "illustration",
+   "caption": "Settling disputes together instead of alone",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "psychology-of-money-housel--13": {
+   "file": "images/cards/v1/psychology-of-money-housel--13.webp",
+   "full": "images/cards/v1-full/psychology-of-money-housel--13.png",
+   "type": "illustration",
+   "caption": "Thinking work follows you home",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "pushing-to-the-front-marden--39": {
+   "file": "images/cards/v1/pushing-to-the-front-marden--39.webp",
+   "full": "images/cards/v1-full/pushing-to-the-front-marden--39.png",
+   "type": "3d",
+   "caption": "Leave the weight of the past behind"
+  },
+  "pushing-to-the-front-marden--42": {
+   "file": "images/cards/v1/pushing-to-the-front-marden--42.webp",
+   "full": "images/cards/v1-full/pushing-to-the-front-marden--42.png",
+   "type": "3d",
+   "caption": "A candle burning at both ends"
+  },
+  "pushing-to-the-front-marden--47": {
+   "file": "images/cards/v1/pushing-to-the-front-marden--47.webp",
+   "full": "images/cards/v1-full/pushing-to-the-front-marden--47.png",
+   "type": "illustration",
+   "caption": "An old scar in a tree, cut when it was a sapling",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "rebuilding-fisher-alberti--01": {
+   "file": "images/cards/v1/rebuilding-fisher-alberti--01.webp",
+   "full": "images/cards/v1-full/rebuilding-fisher-alberti--01.png",
+   "type": "3d",
+   "caption": "Recovery as a mountain climbed one block at a time"
+  },
+  "rich-dad-poor-dad-kiyosaki--25": {
+   "file": "images/cards/v1/rich-dad-poor-dad-kiyosaki--25.webp",
+   "full": "images/cards/v1-full/rich-dad-poor-dad-kiyosaki--25.png",
+   "type": "illustration",
+   "caption": "Heroes make hard goals feel possible",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "rich-dad-poor-dad-kiyosaki--26": {
+   "file": "images/cards/v1/rich-dad-poor-dad-kiyosaki--26.webp",
+   "full": "images/cards/v1-full/rich-dad-poor-dad-kiyosaki--26.png",
+   "type": "illustration",
+   "caption": "Teaching an idea is the best way to learn it",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "richest-man-in-babylon-clason--28": {
+   "file": "images/cards/v1/richest-man-in-babylon-clason--28.webp",
+   "full": "images/cards/v1-full/richest-man-in-babylon-clason--28.png",
+   "type": "illustration",
+   "caption": "Prove yourself with a little before a lot",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "rules-of-civility-washington--06": {
+   "file": "images/cards/v1/rules-of-civility-washington--06.webp",
+   "full": "images/cards/v1-full/rules-of-civility-washington--06.png",
+   "type": "illustration",
+   "caption": "Asking leave before checking the phone",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "rules-of-civility-washington--37": {
+   "file": "images/cards/v1/rules-of-civility-washington--37.webp",
+   "full": "images/cards/v1-full/rules-of-civility-washington--37.png",
+   "type": "illustration",
+   "caption": "Declining a request with warmth and good manners",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "science-of-getting-rich-wattles--20": {
+   "file": "images/cards/v1/science-of-getting-rich-wattles--20.webp",
+   "full": "images/cards/v1-full/science-of-getting-rich-wattles--20.png",
+   "type": "illustration",
+   "caption": "A goal you truly want holds your attention without effort",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "science-of-learning-weinstein-2018--26": {
+   "file": "images/cards/v1/science-of-learning-weinstein-2018--26.webp",
+   "full": "images/cards/v1-full/science-of-learning-weinstein-2018--26.png",
+   "type": "3d",
+   "caption": "Different-looking shapes that share the same core idea"
+  },
+  "self-help-samuel-smiles--02": {
+   "file": "images/cards/v1/self-help-samuel-smiles--02.webp",
+   "full": "images/cards/v1-full/self-help-samuel-smiles--02.png",
+   "type": "chart",
+   "caption": "One hour a day from spare moments adds up to 365 hours a year",
+   "basis": "data",
+   "source": "Self-Help, Samuel Smiles (an hour a day)"
+  },
+  "self-help-samuel-smiles--07": {
+   "file": "images/cards/v1/self-help-samuel-smiles--07.webp",
+   "full": "images/cards/v1-full/self-help-samuel-smiles--07.png",
+   "type": "illustration",
+   "caption": "Ordinary people's careful daily work keeps a town strong",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "self-help-samuel-smiles--14": {
+   "file": "images/cards/v1/self-help-samuel-smiles--14.webp",
+   "full": "images/cards/v1-full/self-help-samuel-smiles--14.png",
+   "type": "3d",
+   "caption": "One example spreads to its neighbours, then to the whole group"
+  },
+  "self-help-samuel-smiles--26": {
+   "file": "images/cards/v1/self-help-samuel-smiles--26.webp",
+   "full": "images/cards/v1-full/self-help-samuel-smiles--26.png",
+   "type": "illustration",
+   "caption": "Pitching a treasure hunt to sceptical backers",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "self-help-samuel-smiles--40": {
+   "file": "images/cards/v1/self-help-samuel-smiles--40.webp",
+   "full": "images/cards/v1-full/self-help-samuel-smiles--40.png",
+   "type": "3d",
+   "caption": "Savings with a purpose: a home, a future"
+  },
+  "self-reliance-emerson--17": {
+   "file": "images/cards/v1/self-reliance-emerson--17.webp",
+   "full": "images/cards/v1-full/self-reliance-emerson--17.png",
+   "type": "3d",
+   "caption": "The energy is in the leap toward what's next"
+  },
+  "self-reliance-emerson--25": {
+   "file": "images/cards/v1/self-reliance-emerson--25.webp",
+   "full": "images/cards/v1-full/self-reliance-emerson--25.png",
+   "type": "illustration",
+   "caption": "A home shaped by its own land and climate",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "seven-principles-marriage-gottman--08": {
+   "file": "images/cards/v1/seven-principles-marriage-gottman--08.webp",
+   "full": "images/cards/v1-full/seven-principles-marriage-gottman--08.png",
+   "type": "3d",
+   "caption": "A small map of a partner's world, with today's worry marked"
+  },
+  "story-of-my-life-helen-keller--28": {
+   "file": "images/cards/v1/story-of-my-life-helen-keller--28.webp",
+   "full": "images/cards/v1-full/story-of-my-life-helen-keller--28.png",
+   "type": "illustration",
+   "caption": "A child questioned by a panel of adults",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "strive-masiyiwa-mentoring-posts--25": {
+   "file": "images/cards/v1/strive-masiyiwa-mentoring-posts--25.webp",
+   "full": "images/cards/v1-full/strive-masiyiwa-mentoring-posts--25.png",
+   "type": "illustration",
+   "caption": "Women-led businesses at the heart of the market",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "tao-te-ching-legge--12": {
+   "file": "images/cards/v1/tao-te-ching-legge--12.webp",
+   "full": "images/cards/v1-full/tao-te-ching-legge--12.png",
+   "type": "3d",
+   "caption": "A balance where one glowing life outweighs a pile of coins"
+  },
+  "the-prince-machiavelli--18": {
+   "file": "images/cards/v1/the-prince-machiavelli--18.webp",
+   "full": "images/cards/v1-full/the-prince-machiavelli--18.png",
+   "type": "3d",
+   "caption": "Strength you build yourself stands when borrowed support falls"
+  },
+  "the-prophet-kahlil-gibran--02": {
+   "file": "images/cards/v1/the-prophet-kahlil-gibran--02.webp",
+   "full": "images/cards/v1-full/the-prophet-kahlil-gibran--02.png",
+   "type": "3d",
+   "caption": "From a steady home base, a child sets off on a path of its own"
+  },
+  "the-prophet-kahlil-gibran--04": {
+   "file": "images/cards/v1/the-prophet-kahlil-gibran--04.webp",
+   "full": "images/cards/v1-full/the-prophet-kahlil-gibran--04.png",
+   "type": "3d",
+   "caption": "A vessel carved deep holds more light"
+  },
+  "think-and-grow-rich-hill--04": {
+   "file": "images/cards/v1/think-and-grow-rich-hill--04.webp",
+   "full": "images/cards/v1-full/think-and-grow-rich-hill--04.png",
+   "type": "3d",
+   "caption": "A small circle of members leaning in around one shared aim"
+  },
+  "think-and-grow-rich-hill--13": {
+   "file": "images/cards/v1/think-and-grow-rich-hill--13.webp",
+   "full": "images/cards/v1-full/think-and-grow-rich-hill--13.png",
+   "type": "illustration",
+   "caption": "An apprentice learns by watching a master at work",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "think-and-grow-rich-hill--22": {
+   "file": "images/cards/v1/think-and-grow-rich-hill--22.webp",
+   "full": "images/cards/v1-full/think-and-grow-rich-hill--22.png",
+   "type": "3d",
+   "caption": "Look closely before you decide"
+  },
+  "think-and-grow-rich-hill--25": {
+   "file": "images/cards/v1/think-and-grow-rich-hill--25.webp",
+   "full": "images/cards/v1-full/think-and-grow-rich-hill--25.png",
+   "type": "illustration",
+   "caption": "Spend time with people who lift you",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "think-and-grow-rich-hill--27": {
+   "file": "images/cards/v1/think-and-grow-rich-hill--27.webp",
+   "full": "images/cards/v1-full/think-and-grow-rich-hill--27.png",
+   "type": "chart",
+   "caption": "How fear of poverty keeps people stuck",
+   "basis": "illustration"
+  },
+  "thinking-fast-and-slow-kahneman--30": {
+   "file": "images/cards/v1/thinking-fast-and-slow-kahneman--30.webp",
+   "full": "images/cards/v1-full/thinking-fast-and-slow-kahneman--30.png",
+   "type": "chart",
+   "caption": "How much a new purchase is noticed fades over time, while time with people keeps drawing attention",
+   "basis": "illustration"
+  },
+  "ultralearning-young--17": {
+   "file": "images/cards/v1/ultralearning-young--17.webp",
+   "full": "images/cards/v1-full/ultralearning-young--17.png",
+   "type": "chart",
+   "caption": "Recall builds the strongest memories when it is hard but still possible",
+   "basis": "illustration"
+  },
+  "up-from-slavery-booker-t-washington--01": {
+   "file": "images/cards/v1/up-from-slavery-booker-t-washington--01.webp",
+   "full": "images/cards/v1-full/up-from-slavery-booker-t-washington--01.png",
+   "type": "illustration",
+   "caption": "Sweeping a classroom until no speck remains",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "up-from-slavery-booker-t-washington--19": {
+   "file": "images/cards/v1/up-from-slavery-booker-t-washington--19.webp",
+   "full": "images/cards/v1-full/up-from-slavery-booker-t-washington--19.png",
+   "type": "illustration",
+   "caption": "A chapter before the day's work",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "up-from-slavery-booker-t-washington--25": {
+   "file": "images/cards/v1/up-from-slavery-booker-t-washington--25.webp",
+   "full": "images/cards/v1-full/up-from-slavery-booker-t-washington--25.png",
+   "type": "illustration",
+   "caption": "Dignity that others cannot take away",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "up-from-slavery-booker-t-washington--29": {
+   "file": "images/cards/v1/up-from-slavery-booker-t-washington--29.webp",
+   "full": "images/cards/v1-full/up-from-slavery-booker-t-washington--29.png",
+   "type": "3d",
+   "caption": "Advanced skill sits on top of a broad base of fundamentals"
+  },
+  "walden-thoreau--12": {
+   "file": "images/cards/v1/walden-thoreau--12.webp",
+   "full": "images/cards/v1-full/walden-thoreau--12.png",
+   "type": "illustration",
+   "caption": "Baskets made, but no reason to buy them",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "walden-thoreau--37": {
+   "file": "images/cards/v1/walden-thoreau--37.webp",
+   "full": "images/cards/v1-full/walden-thoreau--37.png",
+   "type": "illustration",
+   "caption": "The real taste of a thing is found where it grows",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "walden-thoreau--39": {
+   "file": "images/cards/v1/walden-thoreau--39.webp",
+   "full": "images/cards/v1-full/walden-thoreau--39.png",
+   "type": "illustration",
+   "caption": "Walking out into the fields after rain, as if work were play",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "walden-thoreau--41": {
+   "file": "images/cards/v1/walden-thoreau--41.webp",
+   "full": "images/cards/v1-full/walden-thoreau--41.png",
+   "type": "illustration",
+   "caption": "Writing down the thought before it slips away",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  }
+ }
+}

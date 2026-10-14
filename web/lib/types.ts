@@ -62,6 +62,19 @@ export interface CardAudio {
   voice_name: string;
 }
 
+/** The card's picture (content/images): a 3:2 illustration, 3D render or chart. Absent on text-only cards. */
+export interface CardImage {
+  /** Absolute, or a path relative to the API base URL (as explainer URLs are). */
+  url: string;
+  full_url?: string | null;
+  type: "illustration" | "3d" | "chart" | string;
+  caption: string;
+  /** Charts only: "data" when drawn from real figures, "illustration" when it shows a concept. */
+  basis?: string | null;
+  source?: string | null;
+  credit?: string | null;
+}
+
 export interface Card {
   id: string;
   title: string;
@@ -78,6 +91,7 @@ export interface Card {
   credit: string;
   explainer?: Explainer | null;
   audio?: CardAudio | null;
+  image?: CardImage | null;
 }
 
 /** Full source (GET /v1/sources/{id}), fields from content/SCHEMA.md. */

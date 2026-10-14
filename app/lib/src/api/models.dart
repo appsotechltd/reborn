@@ -166,6 +166,69 @@ class CardAudio {
   };
 }
 
+/// The card's picture (content/images): a 3:2 illustration, 3D render or
+/// chart. Absent on text-only cards.
+class CardImage {
+  const CardImage({
+    required this.url,
+    this.fullUrl,
+    this.type = '',
+    this.caption = '',
+    this.basis,
+    this.source,
+    this.credit,
+  });
+
+  /// Absolute, or a path relative to the API base URL (like explainers).
+  final String url;
+  final String? fullUrl;
+
+  /// `illustration`, `3d` or `chart`.
+  final String type;
+  final String caption;
+
+  /// Charts only: `data` when drawn from real figures, `illustration` when it
+  /// pictures a concept.
+  final String? basis;
+  final String? source;
+  final String? credit;
+
+  /// The badge on the picture.
+  String get typeLabel => switch (type) {
+    'illustration' => 'Illustration',
+    '3d' => '3D',
+    'chart' => 'Chart',
+    _ => 'Image',
+  };
+
+  /// True when a chart only pictures an idea rather than measured figures.
+  bool get isConceptChart => type == 'chart' && basis == 'illustration';
+
+  /// The line under the credit.
+  String get captionLine =>
+      'Image: $caption${isConceptChart ? ' · A concept, not measured data' : ''}';
+
+  factory CardImage.fromJson(Map<String, dynamic> json) => CardImage(
+    url: json['url'] as String? ?? '',
+    fullUrl: json['full_url'] as String?,
+    type: json['type'] as String? ?? '',
+    caption: json['caption'] as String? ?? '',
+    basis: json['basis'] as String?,
+    source: json['source'] as String?,
+    credit: json['credit'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'url': url,
+    if (fullUrl != null) 'full_url': fullUrl,
+    'type': type,
+    'caption': caption,
+    if (basis != null) 'basis': basis,
+    if (source != null) 'source': source,
+    if (credit != null) 'credit': credit,
+  };
+}
+
 /// An idea card. Named `IdeaCard` to avoid clashing with Material's `Card`.
 class IdeaCard {
   const IdeaCard({
@@ -184,6 +247,7 @@ class IdeaCard {
     required this.credit,
     this.explainer,
     this.audio,
+    this.image,
   });
 
   final String id;
@@ -205,6 +269,9 @@ class IdeaCard {
 
   /// The card's voiced recording, absent until one is made.
   final CardAudio? audio;
+
+  /// The card's picture, absent on text-only cards.
+  final CardImage? image;
 
   factory IdeaCard.fromJson(Map<String, dynamic> json) => IdeaCard(
     id: json['id'] as String,
@@ -233,6 +300,12 @@ class IdeaCard {
                 .isNotEmpty
         ? CardAudio.fromJson(json['audio'] as Map<String, dynamic>)
         : null,
+    image:
+        json['image'] is Map<String, dynamic> &&
+            ((json['image'] as Map<String, dynamic>)['url'] as String? ?? '')
+                .isNotEmpty
+        ? CardImage.fromJson(json['image'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -251,6 +324,7 @@ class IdeaCard {
     'credit': credit,
     if (explainer != null) 'explainer': explainer!.toJson(),
     if (audio != null) 'audio': audio!.toJson(),
+    if (image != null) 'image': image!.toJson(),
   };
 
   /// Text read aloud by the device voice when the card has no [audio]: the

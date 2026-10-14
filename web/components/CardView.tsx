@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
 import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
+import { CardPicture } from "./CardPicture";
 import { ExplainerVideo } from "./ExplainerVideo";
 import { FitBody } from "./FitBody";
 import { Icon } from "./Icon";
@@ -59,6 +60,8 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       aria-labelledby={`card-${card.id}-title`}
       data-card-preview={preview ? "" : undefined}
     >
+      {/* The picture tops the full card; the phone feed's preview stays text, and a video card has its video. */}
+      {card.image && !video ? <CardPicture image={card.image} className={phoneOnly} /> : null}
       <p className={`eyebrow ${preview ? "max-md:order-first max-md:text-[0.6875rem]" : ""}`}>
         <Link href={`/topics/${card.topic}`} className="hover:text-accent-text hover:underline">
           {topicName(card.topic)}

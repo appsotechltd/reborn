@@ -78,6 +78,21 @@ same text with the device's voice. Listen mode plays the `GET /v1/timeline` queu
 card has been heard, calls `POST /v1/seen` and `POST /v1/cards/{id}/view` (skipped within 5 seconds: nothing;
 otherwise seen only). See `content/audio/README.md`.
 
+Cards with a picture also carry `image` (absent otherwise), shown at the top of the full card:
+
+```json
+"image": { "url": "https://media.example.com/images/cards/v1/meditations-marcus-aurelius--01.webp",
+           "full_url": "https://media.example.com/images/cards/v1-full/meditations-marcus-aurelius--01.png",
+           "type": "illustration", "caption": "A calm morning before a difficult day",
+           "basis": "illustration", "source": "...", "credit": "AI illustration (OpenAI gpt-image-1-mini)" }
+```
+
+`url` is a 3:2 WebP (1200x800); `full_url` is the original. `type` is `illustration`, `3d` or `chart`.
+`basis` is set on charts only: `data` when they plot real figures (`source` names them) and `illustration`
+when they picture an idea, in which case clients show "A concept, not measured data". Clients show
+`caption` under the picture as "Image: …". Pictures keep their dark look in both themes, like videos.
+The list lives in `content/images/manifest.json` (`CARD_IMAGE_DIR`).
+
 ### User
 
 ```json

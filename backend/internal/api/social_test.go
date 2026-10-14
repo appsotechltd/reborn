@@ -353,7 +353,13 @@ func TestStripeGift(t *testing.T) {
 	ts := h.now.Unix()
 	mac := hmac.New(sha256.New, []byte("whsec_test"))
 	fmt.Fprintf(mac, "%d.%s", ts, event)
-	send(fmt.Sprintf("t=%d,v1=%s", ts, "00"+hex.EncodeToString(mac.Sum(nil))[2:]), 400)
+	good := hex.EncodeToString(mac.Sum(nil))
+	// Change the first hex digit; a fixed "00" prefix was no change when the real MAC began with it.
+	bad := "0" + good[1:]
+	if good[0] == '0' {
+		bad = "1" + good[1:]
+	}
+	send(fmt.Sprintf("t=%d,v1=%s", ts, bad), 400)
 	send(fmt.Sprintf("t=%d,v1=%s", ts, hex.EncodeToString(mac.Sum(nil))), 204)
 	send(fmt.Sprintf("t=%d,v1=%s", ts, hex.EncodeToString(mac.Sum(nil))), 204) // retries are harmless
 
