@@ -1,0 +1,781 @@
+{
+  "source": {
+    "id": "zero-to-one-thiel",
+    "title": "Zero to One: Notes on Startups, or How to Build the Future",
+    "authors": [
+      "Peter Thiel",
+      "Blake Masters"
+    ],
+    "kind": "book",
+    "url": "https://www.penguinrandomhouse.com/books/234730/zero-to-one-by-peter-thiel-with-blake-masters/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#summarise-only-original-summary",
+    "attribution": "Summary in our own words of Zero to One by Peter Thiel with Blake Masters (2014). Not affiliated with or endorsed by the authors or publisher.",
+    "publisher": "Crown Business",
+    "year": 2014,
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Original summary written by Reborn; contains no text from the book. The book is in copyright."
+  },
+  "cards": [
+    {
+      "id": "zero-to-one-thiel--01",
+      "topic": "entrepreneurship",
+      "tags": [
+        "innovation",
+        "technology",
+        "progress"
+      ],
+      "title": "Zero to one: create something new, not more of the same",
+      "body": "Thiel splits progress into two kinds. Copying what already works, taking something from one to many, is horizontal progress, and globalisation is its clearest form. Creating something that did not exist before, going from zero to one, is vertical progress, and that is what technology really means.\n\nHe argues the world leans too heavily on copying. Spreading old methods to more places cannot keep up with rising needs. Real gains come from people who build what nobody has built yet.",
+      "apply_it": "Look at your current project and ask honestly: is this a copy of something that exists, or does it add something new?",
+      "quiz": {
+        "question": "What does 'zero to one' progress mean?",
+        "options": [
+          "Expanding a proven business to new countries",
+          "Creating something that did not exist before",
+          "Cutting costs on an existing product",
+          "Hiring a first employee"
+        ],
+        "answer": 1,
+        "explanation": "Zero to one is vertical progress: making something genuinely new, rather than copying what works."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--02",
+      "topic": "entrepreneurship",
+      "tags": [
+        "contrarian-thinking",
+        "truth",
+        "interviews"
+      ],
+      "title": "Ask yourself which important truth few people share with you",
+      "body": "Thiel's favourite interview question asks for an important truth that very few people agree with you about. It is hard to answer because the safe answers are things everyone already believes, and the brave answers often turn out to be merely odd.\n\nA good answer has the shape of a hidden reality: most people believe one thing, but the truth is something else. He sees this as the root of any great business, because a company built on what everyone already knows has no edge.",
+      "apply_it": "Write one sentence in the form 'Most people believe X, but the truth is Y' about your field. Test whether it is both true and important.",
+      "quiz": {
+        "question": "Why is the contrarian question hard to answer well?",
+        "options": [
+          "It requires knowing statistics",
+          "It has only one correct answer",
+          "Easy answers are things everyone already agrees with",
+          "It is a trick question with no answer"
+        ],
+        "answer": 2,
+        "explanation": "A good answer must be true and important yet not widely accepted, which is rare."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--03",
+      "topic": "entrepreneurship",
+      "tags": [
+        "dot-com",
+        "conventional-wisdom",
+        "strategy"
+      ],
+      "title": "Question the lessons everyone learned from the last crash",
+      "body": "After the dot-com bust, founders absorbed a set of cautious rules: move in small steps, stay lean and flexible, improve on what rivals already offer, and let a good product sell itself. These became startup gospel.\n\nThiel suggests the opposite may be closer to the truth. Bold bets beat trivial tweaks, a bad plan beats having none, crowded markets destroy profit, and sales matter as much as the product. Overreacting to a past mistake can be its own mistake.",
+      "apply_it": "Pick one rule your industry treats as obvious. Ask what event taught it, and whether the opposite might now be true.",
+      "quiz": {
+        "question": "What is Thiel's view of the cautious rules learned after the dot-com crash?",
+        "options": [
+          "They are always right",
+          "They only apply to large companies",
+          "They were invented by investors to control founders",
+          "They may have overcorrected; the opposite rules can be truer"
+        ],
+        "answer": 3,
+        "explanation": "He argues the lessons were an overreaction and their opposites often hold better."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--04",
+      "topic": "entrepreneurship",
+      "tags": [
+        "monopoly",
+        "competition",
+        "profit"
+      ],
+      "title": "Competition destroys profit; aim to be unique",
+      "body": "Economists praise perfect competition, but Thiel points out that in such a market nobody makes money. When many firms sell the same thing, prices fall to cost and everyone fights to survive. Restaurants and airlines create huge value yet keep little of it.\n\nA company with a monopoly of its own creation, one that offers something nobody else can, keeps enough profit to plan long term, pay people well and invest in new ideas. His advice is to build something so distinct that rivals cannot simply copy it.",
+      "apply_it": "List your direct competitors. If the list is long and you all sell the same thing, write down one way to become clearly different.",
+      "quiz": {
+        "question": "According to Thiel, what happens to profits in a perfectly competitive market?",
+        "options": [
+          "They are competed away",
+          "They grow steadily",
+          "They go only to the largest firm",
+          "They are protected by law"
+        ],
+        "answer": 0,
+        "explanation": "When everyone sells the same thing, prices fall to cost and profits vanish."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--05",
+      "topic": "business",
+      "tags": [
+        "market-definition",
+        "competition",
+        "honesty"
+      ],
+      "title": "Watch how companies describe the size of their market",
+      "body": "Thiel notices that firms bend the truth about competition in opposite directions. Dominant companies describe their market as vast and crowded, so they look like one small player among many and avoid scrutiny. Struggling companies define their market so narrowly that they appear to be the only one in it.\n\nBoth tricks hide the real picture. Being the only British restaurant in one part of town does not mean you lack rivals, because diners can eat anything. Honest market definition shows whether you are truly unique.",
+      "apply_it": "Describe your market in one sentence, then rewrite it the way a customer would see it. Who else could they pick instead of you?",
+      "quiz": {
+        "question": "Why might a struggling business define its market very narrowly?",
+        "options": [
+          "To pay less tax",
+          "To appear unique and free of competitors",
+          "To attract more regulators",
+          "To lower its prices"
+        ],
+        "answer": 1,
+        "explanation": "A narrow definition makes a firm seem alone in its market, hiding real competition."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--06",
+      "topic": "business",
+      "tags": [
+        "rivalry",
+        "imitation",
+        "focus"
+      ],
+      "title": "Rivalry makes you copy instead of create",
+      "body": "Thiel argues that competition is partly a habit of mind. Schools, careers and businesses train people to chase the same prizes, and the fiercer the contest, the more alike the rivals become. They end up fixated on each other rather than on what customers need.\n\nHe points to tech giants that spent years trying to beat each other on each other's turf while others quietly built new things. When you notice yourself obsessing over a rival, it may be time to step out of the fight and find your own ground.",
+      "apply_it": "Think of a rival you watch closely. Write down one thing you would build if that rival did not exist.",
+      "quiz": {
+        "question": "What is a hidden cost of intense rivalry?",
+        "options": [
+          "It always lowers quality",
+          "It makes companies too profitable",
+          "Rivals start to imitate each other and lose sight of customers",
+          "It prevents any hiring"
+        ],
+        "answer": 2,
+        "explanation": "Obsessing over rivals makes you copy them and forget what customers actually need."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--07",
+      "topic": "entrepreneurship",
+      "tags": [
+        "long-term",
+        "durability",
+        "valuation"
+      ],
+      "title": "Plan to be the last mover, not just the first",
+      "body": "Being first matters less than being the last to make a great leap in a market and then holding it for years. Thiel notes that most of a tech company's value comes from profits far in the future, which is why investors value some loss-making firms highly.\n\nSo the key question for any business is whether it will still exist and still be special a decade from now. Fast growth today means little if it cannot last.",
+      "apply_it": "Ask of your idea: what would keep it valuable in ten years? Write one reason, or one change that would create one.",
+      "quiz": {
+        "question": "What does Thiel say matters more than being first?",
+        "options": [
+          "Spending the most on ads",
+          "Having the youngest team",
+          "Launching in many countries at once",
+          "Being the last mover and lasting for years"
+        ],
+        "answer": 3,
+        "explanation": "Long-lasting dominance, not an early start, creates most of a company's value."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--08",
+      "topic": "entrepreneurship",
+      "tags": [
+        "technology",
+        "advantage",
+        "10x"
+      ],
+      "title": "Proprietary technology should be ten times better",
+      "body": "The first and strongest source of lasting advantage is technology that is hard to copy. Thiel suggests a rough rule: it should be about ten times better than the nearest alternative in some important way. Anything less looks like a small improvement and struggles to win attention.\n\nTen times better can mean inventing something wholly new, radically improving an existing solution, or offering a far better design. Search engines and online bookshops gained their lead by offering this kind of leap rather than a slight upgrade.",
+      "apply_it": "Name the main advantage of your product. Estimate how many times better it is than the next best option, and where it could become ten times better.",
+      "quiz": {
+        "question": "Roughly how much better should proprietary technology be to create a real advantage?",
+        "options": [
+          "About ten times better",
+          "About 10 percent better",
+          "About twice as good",
+          "Exactly as good but cheaper"
+        ],
+        "answer": 0,
+        "explanation": "Thiel's rule of thumb is a tenfold improvement, enough to be clearly superior."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--09",
+      "topic": "entrepreneurship",
+      "tags": [
+        "network-effects",
+        "users",
+        "scaling"
+      ],
+      "title": "Network effects grow from a small, dense start",
+      "body": "A product has network effects when each new user makes it more useful for everyone else, as with messaging tools or marketplaces. Once established, this is very hard for rivals to break.\n\nThe catch is that a network is worthless when it is tiny, and many founders aim at huge markets too early. Thiel notes that successful networks often began with a small, close-knit group, such as students at one university, where the product was valuable from day one.",
+      "apply_it": "If your idea gets better with more users, name the smallest group that would find it useful straight away.",
+      "quiz": {
+        "question": "Why do network businesses often start with a small, close group?",
+        "options": [
+          "Small groups pay more",
+          "The product must be useful even when the network is small",
+          "Large markets are illegal for new firms",
+          "It avoids needing any technology"
+        ],
+        "answer": 1,
+        "explanation": "A network has little value when tiny, so it needs a dense starting group to work at all."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--10",
+      "topic": "business",
+      "tags": [
+        "scale",
+        "branding",
+        "moats"
+      ],
+      "title": "Economies of scale and a strong brand protect a business",
+      "body": "Thiel lists two more sources of lasting advantage. Economies of scale mean the business gets stronger as it grows, because fixed costs like software or design spread across more customers. Service businesses that rely on people hours rarely scale this way.\n\nBranding is a claim to be unique, but he warns against building the brand before the substance. Some admired brands rest on genuine products; brand work without a real edge underneath rarely saves a company.",
+      "apply_it": "Ask whether your costs per customer fall as you grow. If not, look for one part of the work that could be built once and reused.",
+      "quiz": {
+        "question": "What is Thiel's caution about branding?",
+        "options": [
+          "Brands are worthless",
+          "Only big firms can have brands",
+          "A brand must rest on real substance, not replace it",
+          "Brands matter more than products"
+        ],
+        "answer": 2,
+        "explanation": "Brand only works as an advantage when it reflects a genuinely strong product."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--11",
+      "topic": "entrepreneurship",
+      "tags": [
+        "niche",
+        "market-entry",
+        "expansion"
+      ],
+      "title": "Start with a small market you can dominate",
+      "body": "New companies should begin by owning a small market completely, not by grabbing a tiny slice of a vast one. A modest group of people with a pressing need and few alternatives is ideal.\n\nOnce you dominate that niche, expand into related markets in widening circles. An online bookshop can grow into selling everything; a payment service can start with the most active sellers on one auction site. Claiming a share of a huge market sounds impressive but usually means fierce competition and little profit.",
+      "apply_it": "Describe the smallest group of customers you could serve better than anyone. Then sketch the next circle you could move into.",
+      "quiz": {
+        "question": "What does Thiel recommend for a new company's first market?",
+        "options": [
+          "The biggest market available",
+          "Any market with many competitors",
+          "Only government contracts",
+          "A small market it can dominate"
+        ],
+        "answer": 3,
+        "explanation": "Dominating a small market first gives a strong base from which to expand."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--12",
+      "topic": "entrepreneurship",
+      "tags": [
+        "disruption",
+        "strategy",
+        "framing"
+      ],
+      "title": "Don't make disruption the goal",
+      "body": "Disruption became a fashionable word for startups, but Thiel thinks it puts attention in the wrong place. Defining yourself by the giants you hope to topple means you are still measuring yourself against old rivals.\n\nWorse, picking a fight with incumbents invites them to fight back. He suggests that if you build something truly new and serve your own market well, you may change an industry without having to frame it as a battle. Creation, not destruction, should be the aim.",
+      "apply_it": "Rewrite your pitch without mentioning any competitor. What are you building, and for whom?",
+      "quiz": {
+        "question": "Why is aiming at disruption a weak goal, in Thiel's view?",
+        "options": [
+          "It keeps you focused on old rivals and invites a fight",
+          "It is too easy",
+          "It requires no investment",
+          "It is illegal in most countries"
+        ],
+        "answer": 0,
+        "explanation": "Framing yourself against incumbents keeps you copying them and draws retaliation."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--13",
+      "topic": "personal-development",
+      "tags": [
+        "optimism",
+        "planning",
+        "future"
+      ],
+      "title": "Definite optimism: believe the future can be better and plan for it",
+      "body": "Thiel sorts attitudes to the future along two lines: optimistic or pessimistic, and definite or indefinite. A definite optimist expects a better future and has a concrete plan to build it. An indefinite optimist expects things to improve but has no plan, so they keep options open and wait.\n\nHe argues that many societies drifted from definite to indefinite optimism, favouring process and diversification over bold projects. Great things tend to come from people who have a specific vision and commit to it.",
+      "apply_it": "Write down one thing you hope will be better in five years and one specific step you will take towards it this month.",
+      "quiz": {
+        "question": "What marks a definite optimist?",
+        "options": [
+          "Expecting the worst and preparing for it",
+          "Expecting a better future with a concrete plan to build it",
+          "Hoping things improve while keeping all options open",
+          "Avoiding any long-term thinking"
+        ],
+        "answer": 1,
+        "explanation": "Definite optimists both believe in a better future and have a plan to make it."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--14",
+      "topic": "personal-development",
+      "tags": [
+        "luck",
+        "planning",
+        "agency"
+      ],
+      "title": "You are not a lottery ticket",
+      "body": "Some people explain success as mostly luck, as if founders were lucky winners in a lottery. Thiel disagrees. Repeated success by the same people suggests that skill, planning and design play a large role.\n\nIf you treat your life as a lottery ticket, you spread yourself thin and never commit. If you believe outcomes can be shaped, a plan becomes worth making. Even a flawed plan, he argues, gives you more to work with than drifting and hoping chance favours you.",
+      "apply_it": "Pick one goal you have been leaving to luck. Write a three-step plan for it, even if it feels rough.",
+      "quiz": {
+        "question": "What is Thiel's main point in saying 'you are not a lottery ticket'?",
+        "options": [
+          "Success is mostly random",
+          "Gambling is a good strategy",
+          "Planning and design shape outcomes more than luck suggests",
+          "Only luck explains repeat success"
+        ],
+        "answer": 2,
+        "explanation": "He argues that skill and planning, not just chance, drive repeated success."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--15",
+      "topic": "money",
+      "tags": [
+        "power-law",
+        "investing",
+        "venture-capital"
+      ],
+      "title": "The power law: a few bets beat all the rest",
+      "body": "In venture capital, results follow a power law: one or two investments often return more than all the others combined. Thiel says this means an investor should only back companies that could, on their own, return the whole fund.\n\nThe pattern shows up elsewhere too. A few products, cities, customers or ideas tend to dominate. Assuming that outcomes spread evenly leads people to treat everything as roughly equal when, in fact, a small number of things matter far more.",
+      "apply_it": "List the projects or clients on your plate. Mark the one or two that could matter more than all the rest together.",
+      "quiz": {
+        "question": "What does the power law mean for a venture fund?",
+        "options": [
+          "Returns are spread evenly across investments",
+          "Every investment loses money",
+          "Only safe investments make money",
+          "One or two investments may outperform all the rest combined"
+        ],
+        "answer": 3,
+        "explanation": "A tiny number of winners produce most of a fund's returns."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--16",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "careers",
+        "power-law"
+      ],
+      "title": "Don't diversify yourself into mediocrity",
+      "body": "Schools and career advice often push people to be a bit good at many things and keep every door open. Thiel sees this as the power law ignored. If a few choices bring most of the results, spreading effort evenly guarantees that none gets the attention it needs.\n\nInstead, think hard about what you can do better than almost anyone, and whether it could grow to matter a great deal. Then commit to it, rather than hedging across many paths at once.",
+      "apply_it": "Name the one skill or project with the biggest possible upside for you. Block time for it before anything else this week.",
+      "quiz": {
+        "question": "Why does Thiel warn against keeping too many options open?",
+        "options": [
+          "Spreading effort evenly ignores that a few choices bring most results",
+          "Options are expensive to buy",
+          "Employers dislike broad skills",
+          "It always leads to failure"
+        ],
+        "answer": 0,
+        "explanation": "If results follow a power law, focus on the few things with the largest upside."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--17",
+      "topic": "creativity",
+      "tags": [
+        "secrets",
+        "discovery",
+        "curiosity"
+      ],
+      "title": "There are still secrets left to find",
+      "body": "Every great company is built on a secret: something important and true that most people have not noticed. Thiel worries that many now believe everything worth knowing is already known, or that the rest is impossible to learn.\n\nIf you think there are no secrets, you will not look for them, and you will not find them. He argues that the world still has many undiscovered truths, in science and in business, waiting for people willing to search.",
+      "apply_it": "Write down one thing in your field that seems unexplained or overlooked. Spend 20 minutes investigating it.",
+      "quiz": {
+        "question": "Why does believing there are no secrets matter?",
+        "options": [
+          "It saves time",
+          "People who believe it stop looking, so they find nothing new",
+          "It makes people more creative",
+          "It protects existing businesses"
+        ],
+        "answer": 1,
+        "explanation": "If you assume everything is known, you never search for undiscovered truths."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--18",
+      "topic": "learning",
+      "tags": [
+        "secrets",
+        "risk",
+        "complacency"
+      ],
+      "title": "Why people stop looking for secrets",
+      "body": "Thiel names four forces that discourage searching for hidden truths. Incrementalism teaches us to take small graded steps. Risk aversion makes us fear being wrong and alone. Complacency lets elites enjoy what they have without seeking more. And a flat, connected world makes us assume someone else must already have found any good idea.\n\nEach force feels sensible, yet together they stop people from trying bold things. Knowing them helps you notice when they are holding you back.",
+      "apply_it": "Which of the four forces, small steps, fear of being wrong, comfort or 'someone must have done it', stops you most? Write one way to push past it.",
+      "quiz": {
+        "question": "Which is one of the forces Thiel says discourages the search for secrets?",
+        "options": [
+          "Too much funding",
+          "Strong curiosity",
+          "Risk aversion",
+          "Lack of technology"
+        ],
+        "answer": 2,
+        "explanation": "Risk aversion, along with incrementalism, complacency and a flat world, deters bold searching."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--19",
+      "topic": "creativity",
+      "tags": [
+        "secrets",
+        "human-nature",
+        "insight"
+      ],
+      "title": "Look for secrets about nature and about people",
+      "body": "Thiel describes two kinds of secrets. Secrets of nature are hidden facts about the physical world, found by scientists and engineers. Secrets about people are things people don't know about themselves, or truths they would rather not say aloud.\n\nThe best place to search is where others are not looking. Ask which topics people avoid, which subjects are taboo, and which areas experts overlook. Ideas that seem odd or uncomfortable to discuss often hide valuable truths.",
+      "apply_it": "Think of a subject people around you avoid or dismiss. Write one question about it that nobody seems to be asking.",
+      "quiz": {
+        "question": "Where does Thiel suggest looking for secrets?",
+        "options": [
+          "Wherever most people are already looking",
+          "Only in university labs",
+          "Only in published bestsellers",
+          "In places others ignore or avoid"
+        ],
+        "answer": 3,
+        "explanation": "Unexplored and uncomfortable areas are where hidden truths tend to be found."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--20",
+      "topic": "entrepreneurship",
+      "tags": [
+        "co-founders",
+        "foundations",
+        "partnerships"
+      ],
+      "title": "Get the foundations right, starting with co-founders",
+      "body": "Thiel holds that a startup badly set up at the beginning cannot easily be fixed later. The early choices, especially who you start with, shape everything that follows.\n\nChoosing a co-founder is like a marriage: skills matter, but so does how well you know each other and how well you work together. Conflict between founders can kill a company. He advises founders to have real shared history before committing, rather than teaming up with someone they met only recently.",
+      "apply_it": "If you work with a partner, write down one thing you have never discussed but should, such as roles or what happens if one of you leaves.",
+      "quiz": {
+        "question": "Why does Thiel compare choosing a co-founder to marriage?",
+        "options": [
+          "Because shared history and working fit matter as much as skills",
+          "Because it is legally binding forever",
+          "Because founders must be related",
+          "Because it involves a ceremony"
+        ],
+        "answer": 0,
+        "explanation": "Trust and fit, not just talent, decide whether a founding team survives."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--21",
+      "topic": "leadership",
+      "tags": [
+        "governance",
+        "boards",
+        "alignment"
+      ],
+      "title": "Align ownership, possession and control",
+      "body": "Thiel separates three things in a company: ownership, meaning who holds the equity; possession, meaning who runs it day to day; and control, meaning who governs it formally, usually the board. Problems arise when these fall out of line.\n\nHe favours small boards, ideally around three people, because they can talk openly and actually oversee the company. Large boards tend to become ceremonial and slow, while staff with real ownership care more about long-term results.",
+      "apply_it": "In any team you lead, ask who owns the outcome, who does the work and who makes the final call. Are they aligned?",
+      "quiz": {
+        "question": "What board size does Thiel favour for a startup?",
+        "options": [
+          "Very large, for many viewpoints",
+          "Small, around three people",
+          "None at all",
+          "Exactly ten members"
+        ],
+        "answer": 1,
+        "explanation": "Small boards communicate well and give real oversight."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--22",
+      "topic": "leadership",
+      "tags": [
+        "pay",
+        "equity",
+        "incentives"
+      ],
+      "title": "Low cash pay and real equity keep everyone pulling together",
+      "body": "Everyone working at a startup should be fully committed, not part-time advisers or consultants. Thiel suggests that a chief executive of an early company should take a modest salary. High cash pay encourages protecting the present; modest pay keeps leaders focused on building future value with everyone else.\n\nEquity, an ownership share, ties people to the company's long-term success. It cannot be cashed in quickly, so it rewards those who stay and help the company grow.",
+      "apply_it": "If you set pay or rewards for a team, check whether they reward short-term comfort or long-term success. Adjust one incentive.",
+      "quiz": {
+        "question": "Why does Thiel prefer low salaries for startup chief executives?",
+        "options": [
+          "To save money for parties",
+          "It is required by law",
+          "It keeps them focused on building long-term value",
+          "To discourage anyone from leading"
+        ],
+        "answer": 2,
+        "explanation": "Modest pay aligns a leader with growing future value, not with the status quo."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--23",
+      "topic": "leadership",
+      "tags": [
+        "recruiting",
+        "mission",
+        "teams"
+      ],
+      "title": "Recruit with a mission and a team worth joining",
+      "body": "Early hires could work anywhere, so they need a compelling reason to choose you. Pay, perks and generic talk of great colleagues are not enough, since big companies offer those too.\n\nThiel suggests answering two questions clearly. Why does your mission matter, as something important that nobody else is doing? And why are you the right people to be working with? Recruits who join for those reasons are more likely to stay and care about the work.",
+      "apply_it": "Write two sentences: why your work matters, and why someone would want to do it alongside you. Use them next time you recruit.",
+      "quiz": {
+        "question": "What should a startup emphasise when recruiting early staff?",
+        "options": [
+          "Free food and perks",
+          "The highest salaries in the market",
+          "Short working hours",
+          "A unique mission and a team worth joining"
+        ],
+        "answer": 3,
+        "explanation": "Strong candidates join for an important mission and the people, not perks."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--24",
+      "topic": "leadership",
+      "tags": [
+        "culture",
+        "roles",
+        "conflict"
+      ],
+      "title": "Culture is not perks; give each person one clear job",
+      "body": "Thiel argues that company culture is not a list of benefits like snacks and games. It is what the company is: a group of people who share a vision and work well together.\n\nOne practical habit he describes is giving every person a single, clearly defined responsibility. When jobs overlap, colleagues compete for the same territory, and conflict follows. Distinct roles reduce internal fighting and let people build trusting relationships instead.",
+      "apply_it": "Check your team for two people doing overlapping work. Clarify who owns what, in writing.",
+      "quiz": {
+        "question": "What did Thiel find reduced internal conflict?",
+        "options": [
+          "Giving each person one clear responsibility",
+          "More office perks",
+          "Longer meetings",
+          "Frequent reorganisations"
+        ],
+        "answer": 0,
+        "explanation": "Clear, separate roles stop people competing over the same territory."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--25",
+      "topic": "leadership",
+      "tags": [
+        "culture",
+        "commitment",
+        "belief"
+      ],
+      "title": "Lean towards a shared cause, not a group of hired guns",
+      "body": "Thiel sets out a range between two extremes. At one end is a cult, where members are fanatically certain about something wrong. At the other is a consultancy, where people have no lasting ties and believe in nothing in particular.\n\nHe suggests great companies sit closer to the committed end, but should be right about what they believe. A team that shares an important truth the outside world has missed works with unusual energy and loyalty.",
+      "apply_it": "Write the one shared belief that your team or project depends on. Ask whether everyone on it would agree.",
+      "quiz": {
+        "question": "Where does Thiel think a strong company should sit between a cult and a consultancy?",
+        "options": [
+          "Exactly at the consultancy end",
+          "Closer to a committed group with shared beliefs, but right",
+          "Exactly in the middle",
+          "Outside the range entirely"
+        ],
+        "answer": 1,
+        "explanation": "Strong companies share deep conviction, as long as what they believe is true."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--26",
+      "topic": "business",
+      "tags": [
+        "distribution",
+        "sales",
+        "marketing"
+      ],
+      "title": "Distribution matters as much as the product",
+      "body": "Many builders, especially engineers, assume a great product will sell itself. Thiel says this is rarely true. Without a working way to reach customers, even superior products fail, while some ordinary products win because they are sold well.\n\nSelling and marketing can look superficial to people who make things, but customers do not appear by themselves. Planning how you will reach people deserves as much effort as building what you will offer them.",
+      "apply_it": "Write down exactly how your next ten customers will hear about you. If you can't, that is the gap to work on.",
+      "quiz": {
+        "question": "What does Thiel say about great products and sales?",
+        "options": [
+          "Great products always sell themselves",
+          "Sales only matter for bad products",
+          "Even great products fail without a working way to reach customers",
+          "Marketing should be avoided"
+        ],
+        "answer": 2,
+        "explanation": "Reaching customers is as essential as building something good."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--27",
+      "topic": "business",
+      "tags": [
+        "customer-value",
+        "acquisition-cost",
+        "sales"
+      ],
+      "title": "Match how you sell to what each customer is worth",
+      "body": "A business must earn more from a customer over time than it spends to win them. Thiel describes a ladder of methods. Expensive deals justify personal selling by senior people. Cheaper products need a sales team. Very cheap products rely on mass marketing or viral spread.\n\nHe warns of a dead zone in the middle: products too costly to sell through ads but too cheap to justify salespeople. Many promising firms stall there because no channel pays for itself.",
+      "apply_it": "Estimate what one customer is worth to you over a year and what it costs to win them. Is the first clearly larger?",
+      "quiz": {
+        "question": "What is the 'dead zone' Thiel warns about?",
+        "options": [
+          "A market with no customers",
+          "Industries banned from advertising",
+          "The first year of any startup",
+          "Products too costly for ads but too cheap for salespeople"
+        ],
+        "answer": 3,
+        "explanation": "Mid-priced products can fall between channels, with no sales method that pays for itself."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--28",
+      "topic": "communication",
+      "tags": [
+        "selling",
+        "persuasion",
+        "influence"
+      ],
+      "title": "Everyone is selling, even when it doesn't look like it",
+      "body": "Thiel notes that the best salespeople hide what they are doing; the most effective selling rarely looks like selling. Many professions involve persuasion under other names, from journalists pitching stories to managers rallying teams.\n\nThe same applies inside a company. Founders must sell the vision to employees, investors and the press. Recognising that persuasion is part of almost every job helps you take it seriously rather than looking down on it.",
+      "apply_it": "Notice three moments today when you needed to persuade someone. Write what worked and what didn't.",
+      "quiz": {
+        "question": "What does Thiel observe about the best salespeople?",
+        "options": [
+          "Their selling rarely looks like selling",
+          "They always use hard pressure",
+          "They avoid talking to customers",
+          "They only work in shops"
+        ],
+        "answer": 0,
+        "explanation": "The most effective persuasion is often invisible as sales."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--29",
+      "topic": "business",
+      "tags": [
+        "technology",
+        "automation",
+        "complementarity"
+      ],
+      "title": "Use computers to help people, not to replace them",
+      "body": "Thiel sees humans and computers as good at different things. People make judgements, read context and handle the unusual. Computers process huge amounts of data quickly and consistently.\n\nRather than trying to replace workers with machines, he argues the greatest value comes from combining the two. At his payment company, software flagged suspicious transactions and human analysts made the final call. He believes many of the best future businesses will be built on this partnership.",
+      "apply_it": "Pick one task you do repeatedly. Decide what part a tool could handle and what part needs your judgement.",
+      "quiz": {
+        "question": "How does Thiel view the relationship between people and computers?",
+        "options": [
+          "Computers will soon replace all workers",
+          "They complement each other and work best together",
+          "People should avoid computers",
+          "Computers are better at judgement"
+        ],
+        "answer": 1,
+        "explanation": "Combining human judgement with computing power creates the most value."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--30",
+      "topic": "entrepreneurship",
+      "tags": [
+        "evaluation",
+        "checklist",
+        "startups"
+      ],
+      "title": "Seven questions every business must answer",
+      "body": "Looking at a wave of failed clean-energy startups, Thiel lists seven questions a business needs good answers to. Engineering: is your technology a breakthrough? Timing: is now the right moment? Monopoly: are you starting with a large share of a small market? People: do you have the right team? Distribution: can you reach customers? Durability: will your position last? Secret: have you seen something others haven't?\n\nThe failed firms often answered few of these well, despite a popular cause behind them.",
+      "apply_it": "Score your own idea from 1 to 5 on each of the seven questions. Work first on the lowest score.",
+      "quiz": {
+        "question": "Which is one of Thiel's seven questions for a business?",
+        "options": [
+          "Is your logo memorable?",
+          "Do you have the biggest office?",
+          "Is now the right time to start?",
+          "Are you in a popular industry?"
+        ],
+        "answer": 2,
+        "explanation": "Timing is one of the seven, along with engineering, monopoly, people, distribution, durability and secret."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--31",
+      "topic": "leadership",
+      "tags": [
+        "founders",
+        "personality",
+        "leadership"
+      ],
+      "title": "The founder's paradox",
+      "body": "Founders often have unusual mixes of traits: they can seem both insider and outsider, admired and attacked. Thiel observes that people project extremes onto them, treating them as heroes when things go well and villains when they don't.\n\nUnusual founders can drive bold companies, since they see what others miss. But he cautions founders against believing their own legend and treating themselves as the whole story. A company should outlast any one person's moment of fame.",
+      "apply_it": "If you lead something, list one strength others praise and one blind spot it may hide. Ask a trusted colleague if they agree.",
+      "quiz": {
+        "question": "What does Thiel caution founders against?",
+        "options": [
+          "Taking any risks",
+          "Hiring anyone",
+          "Talking to the press",
+          "Believing their own myth and treating themselves as the whole story"
+        ],
+        "answer": 3,
+        "explanation": "Founders matter, but should not mistake public mythology for reality."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--32",
+      "topic": "entrepreneurship",
+      "tags": [
+        "small-teams",
+        "startups",
+        "innovation"
+      ],
+      "title": "New things come from small groups with a shared plan",
+      "body": "Thiel defines a startup as the largest group of people you can convince of a plan to build a different future. Big organisations struggle to create new things because bureaucracy slows them and risk is avoided. A lone genius can create art, but rarely a whole new industry.\n\nA small team with a clear sense of mission sits in between. It can move fast, think freshly and still have the people needed to make something real.",
+      "apply_it": "If you have a big idea, name the two or three people you would need to make it real, and start one conversation this week.",
+      "quiz": {
+        "question": "Why does Thiel think startups are good at creating new things?",
+        "options": [
+          "They are small enough to move fast but large enough to build",
+          "They have the most money",
+          "They avoid all planning",
+          "They copy large companies"
+        ],
+        "answer": 0,
+        "explanation": "Small teams combine agility with enough people to bring new ideas to life."
+      }
+    },
+    {
+      "id": "zero-to-one-thiel--33",
+      "topic": "personal-development",
+      "tags": [
+        "future",
+        "stagnation",
+        "progress"
+      ],
+      "title": "Choose to build towards a better future",
+      "body": "Thiel outlines possible futures: endless cycles of rise and fall, a long plateau where little changes, collapse, or a sharp rise driven by new technology. He thinks the plateau is tempting but not stable, since growing needs eventually outrun old solutions.\n\nThe better path depends on people choosing to create new things. The future is not fixed; it is shaped by those willing to think for themselves and act on what they see.",
+      "apply_it": "Write one way your own work could help move things forward rather than just keep them as they are.",
+      "quiz": {
+        "question": "What does Thiel say the better future depends on?",
+        "options": [
+          "Waiting for governments to act",
+          "People choosing to create new things",
+          "Luck alone",
+          "Keeping everything as it is"
+        ],
+        "answer": 1,
+        "explanation": "Progress comes from people deciding to build what does not yet exist."
+      }
+    }
+  ]
+}

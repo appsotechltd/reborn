@@ -828,3 +828,9 @@ adapter = "web"
 url = "https://doi.org/10.1177/0030222820941296"
 licence = "cc-by-4.0"
 # OMEGA - Journal of Death and Dying 85(2):345-383 (2022, online 2020), DOI 10.1177/0030222820941296; CC BY 4.0 statement confirmed in the article's permissions block (PMC9185109).
+
+[[source]]
+id = "zero-to-one-thiel"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/234730/zero-to-one-by-peter-thiel-with-blake-masters/"
+licence = "original-summary"
