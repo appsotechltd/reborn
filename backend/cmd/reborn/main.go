@@ -95,7 +95,7 @@ func run(ctx context.Context, cfg config.Config, cmd string, args []string) erro
 		if err != nil {
 			return err
 		}
-		slog.Info("seeded", "sources", res.Sources, "cards", res.Cards, "changed", res.Changed)
+		slog.Info("seeded", "sources", res.Sources, "cards", res.Cards, "changed", res.Changed, "summaries", res.Summaries)
 		return embedAll(ctx, st, embedder)
 	case "embed":
 		if embedder == nil {
@@ -126,6 +126,12 @@ func loadLibrary(dir string) (content.Library, error) {
 	if err != nil {
 		return lib, err
 	}
+	summaries, sp, err := content.LoadSummaries(content.SummaryDir(dir), lib)
+	if err != nil {
+		return lib, err
+	}
+	lib.Summaries = summaries
+	problems = append(problems, sp...)
 	errs := 0
 	for _, p := range problems {
 		fmt.Fprintln(os.Stderr, p.String())
@@ -137,7 +143,7 @@ func loadLibrary(dir string) (content.Library, error) {
 	for _, f := range lib.Files {
 		cards += len(f.Cards)
 	}
-	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "errors", errs)
+	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "topic_summaries", len(lib.Summaries), "errors", errs)
 	if errs > 0 {
 		return lib, fmt.Errorf("%d validation errors", errs)
 	}

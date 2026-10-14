@@ -8,7 +8,7 @@ import { useSeenTracker } from "@/lib/use-seen";
 import { useListen } from "@/lib/listen";
 import { itemsFromPosts } from "@/lib/listen-player";
 import { postOnScreen, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
-import type { Post, Topic } from "@/lib/types";
+import { isSummaryItem, type Post, type TimelineItem, type Topic } from "@/lib/types";
 import { ChipRow } from "./ChipRow";
 import { DailyBanner } from "./DailyBanner";
 import { Icon } from "./Icon";
@@ -16,6 +16,7 @@ import { LoadMoreSentinel } from "./LoadMoreSentinel";
 import { PostCard } from "./PostCard";
 import { ErrorNote } from "./SignInPrompt";
 import { StreakWidget } from "./StreakWidget";
+import { SummaryPost } from "./SummaryPost";
 
 const PAGE = 10;
 const ANON = "anon";
@@ -27,13 +28,18 @@ const PRELOAD_POSTS = 3;
 interface FeedState {
   /** Whose timeline this is (ANON, or the token it was loaded with) and its topic filter: `${who}|${topic}`. */
   key: string;
-  posts: Post[];
+  posts: TimelineItem[];
   cursor: string | null;
 }
 
 /** Index of the first post the viewer had already seen, where "You're all caught up" goes. */
-export function caughtUpIndex(posts: Post[]): number {
-  return posts.findIndex((p) => p.viewer?.seen === true);
+export function caughtUpIndex(posts: TimelineItem[]): number {
+  return posts.findIndex((p) => !isSummaryItem(p) && p.viewer?.seen === true);
+}
+
+/** The card posts, leaving out summary posts (Listen mode plays cards one by one). */
+export function cardPosts(items: TimelineItem[]): Post[] {
+  return items.filter((p): p is Post => !isSummaryItem(p));
 }
 
 /**
@@ -51,7 +57,7 @@ export function Timeline({
   initialCursor,
   topics = [],
 }: {
-  initialPosts: Post[];
+  initialPosts: TimelineItem[];
   initialCursor: string | null;
   /** For the phone feed's topic chips ("For you" and one per topic), as in the app. */
   topics?: Pick<Topic, "slug" | "name">[];
@@ -72,7 +78,7 @@ export function Timeline({
     if (!ready || feed.key === wanted) return;
     let cancelled = false;
     api
-      .timeline({ limit: PAGE, topics: topic || undefined }, who !== ANON)
+      .timelineWithSummaries({ limit: PAGE, topics: topic || undefined }, who !== ANON)
       .then((page) => {
         if (cancelled) return;
         setFeed({ key: wanted, posts: page.posts, cursor: page.next_cursor });
@@ -94,7 +100,10 @@ export function Timeline({
     const key = feed.key;
     const [keyWho, keyTopic] = key.split("|");
     try {
-      const page = await api.timeline({ cursor: feed.cursor, limit: PAGE, topics: keyTopic || undefined }, keyWho !== ANON);
+      const page = await api.timelineWithSummaries(
+        { cursor: feed.cursor, limit: PAGE, topics: keyTopic || undefined },
+        keyWho !== ANON,
+      );
       setFeed((f) =>
         f.key !== key
           ? f
@@ -123,14 +132,14 @@ export function Timeline({
 
   const { player } = useListen();
   // Only once hydrated: whether the device voice exists is known only in the browser.
-  const listenable = ready && !!player && !switching && feed.posts.some((p) => player.canPlay(p.card));
+  const listenable = ready && !!player && !switching && cardPosts(feed.posts).some((p) => player.canPlay(p.card));
 
   /** Listen mode from the post on screen (or the top), with the feed's topic filter. */
   function listen() {
     if (!player) return;
     const from = Math.min(postOnScreen(listRef.current), Math.max(0, feed.posts.length - 1));
     player.start({
-      items: itemsFromPosts(feed.posts.slice(from)),
+      items: itemsFromPosts(cardPosts(feed.posts.slice(from))),
       cursor: feed.cursor,
       topics: feed.key.split("|")[1] ?? "",
     });
@@ -197,7 +206,11 @@ export function Timeline({
               {i === 0 ? lead : null}
               {i === divider ? <CaughtUp /> : null}
               <div className="max-md:min-h-0 max-md:flex-1">
-                <PostCard post={p} showReason snap trackRef={signedIn && !p.viewer?.seen ? track : undefined} />
+                {isSummaryItem(p) ? (
+                  <SummaryPost summary={p.summary} snap />
+                ) : (
+                  <PostCard post={p} showReason snap trackRef={signedIn && !p.viewer?.seen ? track : undefined} />
+                )}
               </div>
               {i === 0 && feed.posts.length > 1 ? <SwipeHint /> : null}
             </li>

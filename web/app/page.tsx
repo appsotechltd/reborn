@@ -6,7 +6,7 @@ import { Unavailable } from "@/components/Unavailable";
 import { TOPICS } from "@/lib/content";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
 import { getTimeline, getTopics, loadOr } from "@/lib/server-api";
-import type { PostsResponse, Topic } from "@/lib/types";
+import type { TimelineResponse, Topic } from "@/lib/types";
 
 export const revalidate = 600;
 
@@ -30,7 +30,7 @@ export default async function HomePage() {
       const [timeline, topics] = await Promise.all([getTimeline(10), getTopics()]);
       return { timeline, topics };
     },
-    null as null | { timeline: PostsResponse; topics: Topic[] },
+    null as null | { timeline: TimelineResponse; topics: Topic[] },
   );
   const topics: Topic[] = data?.topics ?? TOPICS.map((t) => ({ ...t, card_count: 0 }));
 

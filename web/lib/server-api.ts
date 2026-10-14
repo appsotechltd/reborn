@@ -11,11 +11,13 @@ import type {
   FeedResponse,
   FollowState,
   Post,
-  PostsResponse,
   Profile,
   Source,
   SourceSummary,
   SitemapResponse,
+  Summary,
+  SummaryDetail,
+  TimelineResponse,
   Topic,
 } from "./types";
 
@@ -42,10 +44,14 @@ async function orNull<T>(p: Promise<T>): Promise<T | null> {
 
 export const getCard = (id: string) => orNull(get<Card>(`/v1/cards/${encodeURIComponent(id)}`));
 export const getSource = (id: string) =>
-  orNull(get<{ source: Source; cards: Card[]; follow?: FollowState }>(`/v1/sources/${encodeURIComponent(id)}`));
+  orNull(
+    get<{ source: Source; cards: Card[]; follow?: FollowState; summary_id?: string | null }>(
+      `/v1/sources/${encodeURIComponent(id)}`,
+    ),
+  );
 export const getPost = (id: string) => orNull(get<Post>(`/v1/posts/${encodeURIComponent(id)}`));
 /** The anonymous timeline (everything, newest first), as seen by signed-out visitors and crawlers. */
-export const getTimeline = (limit = 10) => get<PostsResponse>("/v1/timeline", { limit });
+export const getTimeline = (limit = 10) => get<TimelineResponse>("/v1/timeline", { limit, with: "summaries" });
 export const getAuthor = (name: string) => orNull(get<AuthorPage>(`/v1/authors/${encodeURIComponent(name)}`));
 export const getDiscover = () => get<DiscoverResponse>("/v1/discover");
 export const getPublicStash = (id: string) =>
@@ -58,6 +64,19 @@ export const getDaily = () => get<{ date: string; card: Card }>("/v1/daily");
 export const getFeed = (q: { topics?: string; cursor?: string; limit?: number } = {}) =>
   get<FeedResponse>("/v1/feed", q);
 export const getSitemap = () => get<SitemapResponse>("/v1/sitemap");
+export const getSummary = (id: string) => orNull(get<SummaryDetail>(`/v1/summaries/${encodeURIComponent(id)}`));
+
+/** Every summary (topic summaries first, then books by title), following cursors. */
+export async function getAllSummaries(max = 500): Promise<Summary[]> {
+  const out: Summary[] = [];
+  let cursor: string | null = null;
+  do {
+    const page: { summaries: Summary[]; next_cursor: string | null } = await get("/v1/summaries", { cursor, limit: 50 });
+    out.push(...page.summaries);
+    cursor = page.next_cursor;
+  } while (cursor && out.length < max);
+  return out;
+}
 
 /** All sources (follows cursors, capped to keep a single page reasonable). */
 export async function getAllSources(topic?: string, max = 500): Promise<SourceSummary[]> {

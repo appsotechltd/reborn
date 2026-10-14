@@ -100,6 +100,15 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen>
       appBar: AppBar(
         leading: exitLeading(context),
         title: const Text('Library'),
+        actions: [
+          TextButton.icon(
+            key: const ValueKey('library-summaries'),
+            onPressed: () => context.push('/summaries'),
+            icon: const Icon(Icons.library_books_outlined, size: 18),
+            label: const Text('Summaries'),
+          ),
+          const SizedBox(width: 8),
+        ],
         bottom: TabBar(
           controller: _tabs,
           tabs: const [

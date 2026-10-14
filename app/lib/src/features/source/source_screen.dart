@@ -9,6 +9,7 @@ import '../circles/circles_screen.dart';
 import '../library/card_collection.dart';
 import '../library/library_controller.dart';
 import '../social/follow_button.dart';
+import '../summary/summary_widgets.dart';
 
 const _licenceNames = {
   'public-domain': 'Public domain',
@@ -53,6 +54,7 @@ class SourceScreen extends ConsumerWidget {
                 source: f.value.source,
                 count: cards.length,
                 follow: f.value.follow,
+                summaryId: f.value.summaryId,
               ),
             ),
             ReadingWidth(
@@ -101,10 +103,12 @@ class _SourceHeader extends StatelessWidget {
     required this.source,
     required this.count,
     required this.follow,
+    this.summaryId,
   });
   final Source source;
   final int count;
   final FollowState follow;
+  final String? summaryId;
 
   @override
   Widget build(BuildContext context) {
@@ -148,6 +152,19 @@ class _SourceHeader extends StatelessWidget {
             target: source.id,
             initial: follow,
           ),
+          if (summaryId != null) ...[
+            const SizedBox(height: 8),
+            OutlinedButton.icon(
+              key: const ValueKey('source-summary'),
+              onPressed: () => context.push(summaryPath(summaryId!)),
+              icon: const Icon(Icons.library_books_outlined, size: 18),
+              label: Text(
+                source.licence == 'original-summary'
+                    ? 'Read the key ideas summary'
+                    : 'Read the full summary',
+              ),
+            ),
+          ],
           const SizedBox(height: 16),
           Card(
             child: Padding(

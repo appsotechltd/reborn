@@ -32,7 +32,7 @@ services:
     dockerContext: .
     healthCheckPath: /healthz
     buildFilter:
-      paths: [backend/**, content/library/**, content/explainers/out/**, deploy/**]
+      paths: [backend/**, content/library/**, content/summaries/**, content/explainers/out/**, deploy/**]
     envVars:
       - key: DATABASE_URL
         fromDatabase: { name: reborn-db, property: connectionString }

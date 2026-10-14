@@ -79,6 +79,9 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /v1/sources/{id}", s.source)
 	mux.HandleFunc("GET /v1/sitemap", s.sitemap)
 	mux.HandleFunc("GET /v1/search", s.search)
+	mux.HandleFunc("GET /v1/summaries", s.summaries)
+	mux.HandleFunc("GET /v1/summaries/{id}", s.summary)
+	mux.HandleFunc("PUT /v1/summaries/{id}/progress", s.authed(s.summaryProgress))
 
 	mux.HandleFunc("POST /v1/auth/register", s.register)
 	mux.HandleFunc("POST /v1/auth/login", s.login)

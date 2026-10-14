@@ -551,10 +551,14 @@ class SourceDetail {
     required this.source,
     required this.cards,
     this.follow = const FollowState(),
+    this.summaryId,
   });
   final Source source;
   final List<IdeaCard> cards;
   final FollowState follow;
+
+  /// The book's summary post, when it has one.
+  final String? summaryId;
 
   factory SourceDetail.fromJson(Map<String, dynamic> json) => SourceDetail(
     source: Source.fromJson(json['source'] as Map<String, dynamic>),
@@ -562,12 +566,14 @@ class SourceDetail {
     follow: json['follow'] is Map<String, dynamic>
         ? FollowState.fromJson(json['follow'] as Map<String, dynamic>)
         : const FollowState(),
+    summaryId: json['summary_id'] as String?,
   );
 
   Map<String, dynamic> toJson() => {
     'source': source.toJson(),
     'cards': cards.map((c) => c.toJson()).toList(),
     'follow': follow.toJson(),
+    'summary_id': summaryId,
   };
 }
 
@@ -898,7 +904,10 @@ class PostReason {
   };
 }
 
-/// Every published card is a post.
+/// Every published card is a post. The timeline also carries summary posts
+/// (a whole book or topic, read part by part): those have [summary] set and
+/// a stand-in [card] made from it, and are never reacted to, marked seen or
+/// played in Listen mode as a card.
 class Post {
   const Post({
     required this.id,
@@ -907,7 +916,17 @@ class Post {
     this.stats = const PostStats(),
     this.viewer,
     this.reason,
+    this.summary,
   });
+
+  /// A summary post in the timeline.
+  factory Post.fromSummary(Summary s) =>
+      Post(id: 'summary:${s.id}', card: s.standInCard, summary: s);
+
+  /// Set on summary posts only.
+  final Summary? summary;
+
+  bool get isSummary => summary != null;
 
   final String id;
   final IdeaCard card;
@@ -924,6 +943,11 @@ class Post {
   factory Post.fromCard(IdeaCard card) => Post(id: card.id, card: card);
 
   factory Post.fromJson(Map<String, dynamic> json) {
+    if (json['kind'] == 'summary' && json['summary'] is Map<String, dynamic>) {
+      return Post.fromSummary(
+        Summary.fromJson(json['summary'] as Map<String, dynamic>),
+      );
+    }
     final card = IdeaCard.fromJson(json['card'] as Map<String, dynamic>);
     return Post(
       id: json['id'] as String? ?? card.id,
@@ -941,14 +965,16 @@ class Post {
     );
   }
 
-  Map<String, dynamic> toJson() => {
-    'id': id,
-    'published_at': publishedAt?.toUtc().toIso8601String(),
-    'card': card.toJson(),
-    'stats': stats.toJson(),
-    if (viewer != null) 'viewer': viewer!.toJson(),
-    if (reason != null) 'reason': reason!.toJson(),
-  };
+  Map<String, dynamic> toJson() => summary != null
+      ? {'id': id, 'kind': 'summary', 'summary': summary!.toJson()}
+      : {
+          'id': id,
+          'published_at': publishedAt?.toUtc().toIso8601String(),
+          'card': card.toJson(),
+          'stats': stats.toJson(),
+          if (viewer != null) 'viewer': viewer!.toJson(),
+          if (reason != null) 'reason': reason!.toJson(),
+        };
 
   Reaction? get myReaction => viewer?.reaction;
   bool get favorited => viewer?.favorited ?? false;
@@ -960,6 +986,7 @@ class Post {
     stats: stats ?? this.stats,
     viewer: viewer ?? this.viewer,
     reason: reason,
+    summary: summary,
   );
 
   /// Sets (or with null clears) the viewer's reaction, adjusting counts.
@@ -995,6 +1022,211 @@ class Post {
 }
 
 /// A page of posts (`{"posts":[Post],"next_cursor"}`).
+/// Where the reader is in a summary; [position] is the zero-based part.
+class SummaryProgress {
+  const SummaryProgress({
+    this.started = false,
+    this.position = 0,
+    this.finished = false,
+  });
+  final bool started;
+  final int position;
+  final bool finished;
+
+  factory SummaryProgress.fromJson(Map<String, dynamic> json) =>
+      SummaryProgress(
+        started: json['started'] as bool? ?? false,
+        position: (json['position'] as num?)?.toInt() ?? 0,
+        finished: json['finished'] as bool? ?? false,
+      );
+
+  Map<String, dynamic> toJson() => {
+    'started': started,
+    'position': position,
+    'finished': finished,
+  };
+
+  /// Where "Continue" opens: the saved part, or the start once finished.
+  int resumeIndex(int parts) {
+    if (!started || finished || parts <= 0) return 0;
+    return position.clamp(0, parts - 1);
+  }
+}
+
+/// A full summary post: a whole book or topic read part by part, each part
+/// a card. Book summaries cover a public-domain or openly licensed book in
+/// full ([coverage] "full") or an in-copyright book's key ideas in our own
+/// words ("key-ideas"); topic summaries ("topic") draw from several books.
+class Summary {
+  const Summary({
+    required this.id,
+    required this.kind,
+    required this.title,
+    this.description = '',
+    required this.topic,
+    this.topicName = '',
+    this.coverage = 'full',
+    this.source,
+    this.authors = const [],
+    this.sourceCount = 0,
+    this.partCount = 0,
+    this.minutes = 0,
+    this.viewer,
+  });
+
+  final String id;
+  final String kind;
+  final String title;
+  final String description;
+  final String topic;
+  final String topicName;
+  final String coverage;
+
+  /// The book, for book summaries.
+  final Source? source;
+  final List<String> authors;
+  final int sourceCount;
+  final int partCount;
+  final int minutes;
+
+  /// Present only when signed in.
+  final SummaryProgress? viewer;
+
+  bool get isBook => kind == 'book';
+
+  factory Summary.fromJson(Map<String, dynamic> json) => Summary(
+    id: json['id'] as String? ?? '',
+    kind: json['kind'] as String? ?? 'book',
+    title: json['title'] as String? ?? '',
+    description: json['description'] as String? ?? '',
+    topic: json['topic'] as String? ?? '',
+    topicName: json['topic_name'] as String? ?? '',
+    coverage: json['coverage'] as String? ?? 'full',
+    source: json['source'] is Map<String, dynamic>
+        ? Source.fromJson(json['source'] as Map<String, dynamic>)
+        : null,
+    authors: _stringList(json['authors']),
+    sourceCount: (json['source_count'] as num?)?.toInt() ?? 0,
+    partCount: (json['part_count'] as num?)?.toInt() ?? 0,
+    minutes: (json['minutes'] as num?)?.toInt() ?? 0,
+    viewer: json['viewer'] is Map<String, dynamic>
+        ? SummaryProgress.fromJson(json['viewer'] as Map<String, dynamic>)
+        : null,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'kind': kind,
+    'title': title,
+    'description': description,
+    'topic': topic,
+    'topic_name': topicName,
+    'coverage': coverage,
+    if (source != null) 'source': source!.toJson(),
+    'authors': authors,
+    'source_count': sourceCount,
+    'part_count': partCount,
+    'minutes': minutes,
+    if (viewer != null) 'viewer': viewer!.toJson(),
+  };
+
+  /// The label above the title.
+  String get coverageLabel => switch (coverage) {
+    'key-ideas' => 'Key ideas summary',
+    'topic' => 'Topic summary',
+    _ => 'Full summary',
+  };
+
+  /// "by Robert Greene", or "From 5 sources, including Seneca, NHS and more".
+  String get byline {
+    String names(List<String> xs) => xs.length <= 1
+        ? (xs.isEmpty ? '' : xs.first)
+        : '${xs.sublist(0, xs.length - 1).join(', ')} and ${xs.last}';
+    if (isBook) return authors.isEmpty ? '' : 'by ${names(authors)}';
+    final from = 'From $sourceCount ${sourceCount == 1 ? 'source' : 'sources'}';
+    if (authors.isEmpty) return from;
+    final shown = authors.take(2).toList();
+    return '$from, including ${names(authors.length > 2 ? [...shown, 'more'] : shown)}';
+  }
+
+  /// "30 parts · 18 min".
+  String get meta =>
+      '$partCount ${partCount == 1 ? 'part' : 'parts'} · $minutes min';
+
+  /// Stands in for a card where the timeline expects one.
+  IdeaCard get standInCard => IdeaCard(
+    id: 'summary:$id',
+    title: title,
+    body: description,
+    applyIt: '',
+    topic: topic,
+    source:
+        source ??
+        Source(
+          id: '',
+          title: title,
+          authors: authors,
+          kind: 'summary',
+          url: '',
+          licence: '',
+          attribution: '',
+        ),
+    credit: '',
+  );
+
+  Summary withViewer(SummaryProgress? p) => Summary(
+    id: id,
+    kind: kind,
+    title: title,
+    description: description,
+    topic: topic,
+    topicName: topicName,
+    coverage: coverage,
+    source: source,
+    authors: authors,
+    sourceCount: sourceCount,
+    partCount: partCount,
+    minutes: minutes,
+    viewer: p,
+  );
+}
+
+/// GET /v1/summaries/{id}: the summary and its parts in reading order.
+class SummaryDetail {
+  const SummaryDetail({required this.summary, required this.parts});
+  final Summary summary;
+  final List<IdeaCard> parts;
+
+  factory SummaryDetail.fromJson(Map<String, dynamic> json) => SummaryDetail(
+    summary: Summary.fromJson(json),
+    parts: parseCards(json['parts']),
+  );
+
+  Map<String, dynamic> toJson() => {
+    ...summary.toJson(),
+    'parts': parts.map((c) => c.toJson()).toList(),
+  };
+}
+
+class SummaryPage {
+  const SummaryPage({required this.summaries, this.nextCursor});
+  final List<Summary> summaries;
+  final String? nextCursor;
+
+  factory SummaryPage.fromJson(Map<String, dynamic> json) => SummaryPage(
+    summaries: (json['summaries'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(Summary.fromJson)
+        .toList(),
+    nextCursor: json['next_cursor'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'summaries': summaries.map((s) => s.toJson()).toList(),
+    'next_cursor': nextCursor,
+  };
+}
+
 class PostPage {
   const PostPage({required this.posts, this.nextCursor});
   final List<Post> posts;

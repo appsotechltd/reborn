@@ -332,10 +332,13 @@ class ApiClient {
 
   String _post(String id) => '/v1/posts/${Uri.encodeComponent(id)}';
 
+  /// With [withSummaries] the page also carries summary posts (see
+  /// [Post.summary]) woven between the card posts.
   Future<PostPage> timeline({
     List<String>? topics,
     String? cursor,
     int limit = 20,
+    bool withSummaries = false,
   }) async => PostPage.fromJson(
     _map(
       await _send(
@@ -347,7 +350,51 @@ class ApiClient {
               : topics.join(','),
           'cursor': cursor,
           'limit': '$limit',
+          if (withSummaries) 'with': 'summaries',
         },
+      ),
+    ),
+  );
+
+  // ---- Full summary posts ----
+
+  String _summary(String id) => '/v1/summaries/${Uri.encodeComponent(id)}';
+
+  Future<SummaryPage> summaries({
+    String? kind,
+    String? topic,
+    String? source,
+    String? cursor,
+    int limit = 50,
+  }) async => SummaryPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '/v1/summaries',
+        query: {
+          'kind': kind,
+          'topic': topic,
+          'source': source,
+          'cursor': cursor,
+          'limit': '$limit',
+        },
+      ),
+    ),
+  );
+
+  Future<SummaryDetail> summary(String id) async =>
+      SummaryDetail.fromJson(_map(await _send('GET', _summary(id))));
+
+  Future<SummaryProgress> setSummaryProgress(
+    String id,
+    int position, {
+    bool finished = false,
+  }) async => SummaryProgress.fromJson(
+    _map(
+      await _send(
+        'PUT',
+        '${_summary(id)}/progress',
+        body: {'position': position, 'finished': finished},
       ),
     ),
   );

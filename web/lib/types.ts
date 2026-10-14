@@ -242,6 +242,8 @@ export interface SitemapResponse {
   cards: { id: string; updated_at: string }[];
   sources: { id: string; updated_at: string }[];
   topics: string[];
+  /** Absent from APIs older than summary posts. */
+  summaries?: { id: string; updated_at: string }[];
 }
 
 // --- Social layer -----------------------------------------------------------
@@ -282,6 +284,68 @@ export interface Post {
 export interface PostsResponse {
   posts: Post[];
   next_cursor: string | null;
+}
+
+// --- Full summary posts -------------------------------------------------------
+
+/**
+ * "full": a public-domain or openly licensed book, every idea in order. "key-ideas": an
+ * in-copyright book's key ideas in our own words. "topic": hand-picked parts from several books.
+ */
+export type SummaryCoverage = "full" | "key-ideas" | "topic";
+
+/** Where the signed-in reader is in a summary. `position` is the zero-based part. */
+export interface SummaryProgress {
+  started: boolean;
+  position: number;
+  finished: boolean;
+}
+
+/** One post for a whole book or topic, read part by part; every part is a card. */
+export interface Summary {
+  id: string;
+  kind: "book" | "topic";
+  title: string;
+  description: string;
+  topic: string;
+  topic_name: string;
+  coverage: SummaryCoverage | string;
+  /** The book, for book summaries. */
+  source?: CardSource | null;
+  authors: string[];
+  source_count: number;
+  part_count: number;
+  minutes: number;
+  published_at: string;
+  viewer?: SummaryProgress | null;
+}
+
+/** GET /v1/summaries/{id}: the summary with its parts in reading order. */
+export interface SummaryDetail extends Summary {
+  parts: Card[];
+}
+
+export interface SummariesResponse {
+  summaries: Summary[];
+  next_cursor: string | null;
+}
+
+/** A summary post in the timeline (only with ?with=summaries). */
+export interface SummaryItem {
+  id: string;
+  kind: "summary";
+  summary: Summary;
+}
+
+export type TimelineItem = Post | SummaryItem;
+
+export interface TimelineResponse {
+  posts: TimelineItem[];
+  next_cursor: string | null;
+}
+
+export function isSummaryItem(item: TimelineItem): item is SummaryItem {
+  return (item as SummaryItem).kind === "summary";
 }
 
 export type ShareChannel =

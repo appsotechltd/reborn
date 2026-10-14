@@ -45,6 +45,10 @@ import type {
   Source,
   SourceSummary,
   Stash,
+  SummariesResponse,
+  SummaryDetail,
+  SummaryProgress,
+  TimelineResponse,
   Topic,
   User,
   NotifyKind,
@@ -289,6 +293,20 @@ export function createApiClient(
     // Timeline & posts
     timeline: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
       req<PostsResponse>("/v1/timeline", { query: q, token: auth ? getToken() : null }),
+    /** The timeline with summary posts woven in (see TimelineItem). */
+    timelineWithSummaries: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
+      req<TimelineResponse>("/v1/timeline", { query: { ...q, with: "summaries" }, token: auth ? getToken() : null }),
+
+    // Full summary posts
+    summaries: (q: { kind?: "book" | "topic"; topic?: string; source?: string; cursor?: string | null; limit?: number } = {}) =>
+      req<SummariesResponse>("/v1/summaries", { query: q }),
+    summary: (id: string) => req<SummaryDetail>(`/v1/summaries/${enc(id)}`),
+    setSummaryProgress: (id: string, position: number, finished = false) =>
+      req<SummaryProgress>(`/v1/summaries/${enc(id)}/progress`, {
+        method: "PUT",
+        body: { position, finished },
+        keepalive: true,
+      }),
     markSeen: (postIds: string[]) =>
       req<void>("/v1/seen", { method: "POST", body: { post_ids: postIds }, keepalive: true }),
     post: (id: string) => req<Post>(`/v1/posts/${enc(id)}`),

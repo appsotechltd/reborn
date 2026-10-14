@@ -147,7 +147,16 @@ func (s *Server) source(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, r, err, "source")
 		return
 	}
-	writeJSON(w, http.StatusOK, map[string]any{"source": src, "cards": cards, "follow": follow})
+	summaryID, err := s.Store.SourceSummaryID(r.Context(), src.ID)
+	if err != nil {
+		s.fail(w, r, err, "source")
+		return
+	}
+	var summary *string
+	if summaryID != "" {
+		summary = &summaryID
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"source": src, "cards": cards, "follow": follow, "summary_id": summary})
 }
 
 func (s *Server) search(w http.ResponseWriter, r *http.Request) {
@@ -223,7 +232,12 @@ func (s *Server) sitemap(w http.ResponseWriter, r *http.Request) {
 	for i, t := range content.Topics {
 		topics[i] = t.Slug
 	}
-	writeJSON(w, http.StatusOK, map[string]any{"cards": cards, "sources": sources, "topics": topics})
+	summaries, err := s.Store.SitemapSummaries(r.Context())
+	if err != nil {
+		s.fail(w, r, err, "sitemap")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"cards": cards, "sources": sources, "topics": topics, "summaries": summaries})
 }
 
 func (s *Server) authors(w http.ResponseWriter, r *http.Request) {
