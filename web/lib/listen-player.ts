@@ -29,8 +29,9 @@ export const SEEK_STEP_S = 10;
 export const PAGE_SIZE = 20;
 export const CHIME_URL = "/audio/chime.mp3";
 /**
- * The optional background music: our own calm ambient track (generated, so no licence to keep),
- * mixed about 17 dB under the voices in the file itself, since iOS ignores an element's volume.
+ * The optional background music: Chopin's Nocturne Op. 9 No. 2, Musopen's CC0 recording (see
+ * content/audio/README.md), mixed about 17 dB under the voices in the file itself, since iOS
+ * ignores an element's volume.
  */
 export const MUSIC_URL = "/audio/listen-music.mp3";
 /** The app icon, for the lock screen and the system media controls. */

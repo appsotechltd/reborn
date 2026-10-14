@@ -79,7 +79,7 @@ flutter:
     - assets/fonts/Fraunces-OFL.txt
     - assets/fonts/Figtree-OFL.txt
     # Listen mode: the chime between cards, the optional background music
-    # (our own generated track) and the lock-screen artwork.
+    # (a CC0 Chopin recording) and the lock-screen artwork.
     - assets/audio/chime.mp3
     - assets/audio/listen-music.mp3
     - assets/audio/artwork.png
