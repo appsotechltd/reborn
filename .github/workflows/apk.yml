@@ -1,0 +1,52 @@
+name: Android test build
+
+# Builds a release APK pointed at the hosted API and publishes it as the "apk-latest"
+# GitHub release, so it can be downloaded straight onto a phone. Signed with the debug
+# key: fine for testing, not for the Play Store.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [app/**, .github/workflows/apk.yml]
+
+permissions:
+  contents: write
+
+env:
+  API_BASE_URL: ${{ vars.API_BASE_URL || 'https://reborn-api-wpd5.onrender.com' }}
+  WEB_BASE_URL: ${{ vars.WEB_BASE_URL || 'https://reborn-web-8xy4.onrender.com' }}
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: >-
+          flutter build apk --release
+          --dart-define=API_BASE_URL=$API_BASE_URL
+          --dart-define=WEB_BASE_URL=$WEB_BASE_URL
+      - run: cp build/app/outputs/flutter-apk/app-release.apk reborn.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reborn-apk
+          path: app/reborn.apk
+      - name: Publish as the apk-latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete apk-latest --yes --cleanup-tag || true
+          gh release create apk-latest reborn.apk --prerelease --target "$GITHUB_SHA" \
+            --title "Reborn test APK" \
+            --notes "Test build from $GITHUB_SHA, using the API at $API_BASE_URL."

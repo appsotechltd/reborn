@@ -142,6 +142,6 @@ void main() {
     await tester.tap(find.text("TODAY'S IDEA"));
     await tester.pumpAndSettle();
     expect(find.text(healthDisclaimer), findsOneWidget);
-    expect(find.text(healthCard().credit), findsOneWidget);
+    expect(find.text(healthCard().applyIt), findsOneWidget);
   });
 }

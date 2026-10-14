@@ -1,0 +1,10 @@
+# Context for deploy/api.Dockerfile (repo root). Only the backend and the content it bakes in are needed.
+.git
+app
+web
+docs
+services
+content/explainers/node_modules
+content/explainers/film
+content/pipeline
+**/node_modules

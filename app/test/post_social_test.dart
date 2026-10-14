@@ -67,7 +67,7 @@ void main() {
       location: '/cards/$postId',
     );
     expect(find.text(sampleCard().title), findsOneWidget);
-    expect(find.text(sampleCard().credit), findsOneWidget);
+    expect(find.text(sampleCard().applyIt), findsOneWidget);
     expect(reactionCount('love', '2'), findsOneWidget);
     expect(reactionCount('like', '0'), findsOneWidget);
 
@@ -416,7 +416,7 @@ void main() {
       location: '/cards/$postId',
     );
     expect(find.text(sampleCard().title), findsOneWidget);
-    expect(find.text(sampleCard().credit), findsOneWidget);
+    expect(find.text(sampleCard().applyIt), findsOneWidget);
     expect(find.byKey(const ValueKey('post-share')), findsOneWidget);
   });
 }

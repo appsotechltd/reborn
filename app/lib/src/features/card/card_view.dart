@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../api/api_client.dart';
 import '../../api/models.dart';
@@ -73,6 +72,14 @@ class IdeaCardView extends ConsumerWidget {
           // The picture tops the card; a video card has its video instead.
           if (card.image != null && card.explainer == null) ...[
             CardPicture(image: card.image!),
+            const SizedBox(height: 6),
+            Text(
+              card.image!.captionLine,
+              key: const ValueKey('card-image-caption'),
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
             const SizedBox(height: 16),
           ],
           if (label != null || showTopic) ...[
@@ -123,21 +130,8 @@ class IdeaCardView extends ConsumerWidget {
             _QuoteBlock(quote: card.quote!, locator: card.locator),
           const SizedBox(height: 8),
           _ApplyIt(text: card.applyIt),
-          const SizedBox(height: 16),
-          _Credit(card: card),
-          if (card.image != null && card.explainer == null)
-            Padding(
-              padding: const EdgeInsets.only(left: 24, top: 2),
-              child: Text(
-                card.image!.captionLine,
-                key: const ValueKey('card-image-caption'),
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ),
           if (showActions) ...[
-            const SizedBox(height: 12),
+            const SizedBox(height: 16),
             _CardActions(card: card, showShare: showShare),
           ],
         ],
@@ -340,50 +334,6 @@ class CardPicture extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _Credit extends StatelessWidget {
-  const _Credit({required this.card});
-  final IdeaCard card;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
-    return InkWell(
-      key: const ValueKey('card-credit'),
-      borderRadius: BorderRadius.circular(8),
-      onTap: card.source.id.isEmpty
-          ? null
-          : () =>
-                context.push('/sources/${Uri.encodeComponent(card.source.id)}'),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(
-              Icons.menu_book_outlined,
-              size: 16,
-              color: scheme.onSurfaceVariant,
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                card.credit,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: scheme.onSurfaceVariant,
-                  decoration: TextDecoration.underline,
-                  decorationColor: scheme.outline,
-                ),
-              ),
-            ),
-            Icon(Icons.chevron_right, size: 16, color: scheme.onSurfaceVariant),
-          ],
         ),
       ),
     );

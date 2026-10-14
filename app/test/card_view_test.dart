@@ -48,7 +48,7 @@ Future<FakeSpeaker> pumpCard(WidgetTester tester, IdeaCard card) async {
 }
 
 void main() {
-  testWidgets('shows title, body, quote, apply it and the credit', (
+  testWidgets('shows title, body, quote and apply it, without the credit', (
     tester,
   ) async {
     final card = sampleCard();
@@ -58,20 +58,21 @@ void main() {
     expect(find.textContaining('Begin the morning'), findsOneWidget);
     expect(find.text('APPLY IT'), findsOneWidget);
     expect(find.text(card.applyIt), findsOneWidget);
-    expect(find.text(card.credit), findsOneWidget);
+    expect(find.text(card.credit), findsNothing);
     expect(find.text('MINDFULNESS & PHILOSOPHY'), findsOneWidget);
     // No disclaimer on a non-health card.
     expect(find.byKey(const ValueKey('card-disclaimer')), findsNothing);
   });
 
-  testWidgets('health card always shows its disclaimer and credit', (
-    tester,
-  ) async {
+  testWidgets('health card always shows its disclaimer', (tester) async {
     final card = healthCard();
     await pumpCard(tester, card);
     expect(find.text(healthDisclaimer), findsOneWidget);
     expect(find.byKey(const ValueKey('card-disclaimer')), findsOneWidget);
-    expect(find.text(card.credit), findsOneWidget);
+    expect(
+      find.text(card.credit),
+      findsNothing,
+    ); // credit lives on the source page
   });
 
   testWidgets('health card without disclaimer text still gets the notice', (
@@ -81,14 +82,9 @@ void main() {
     expect(find.text(kHealthDisclaimerFallback), findsOneWidget);
   });
 
-  testWidgets('credit opens the source page', (tester) async {
+  testWidgets('no source section at the bottom of the card', (tester) async {
     await pumpCard(tester, sampleCard());
-    await tester.tap(find.byKey(const ValueKey('card-credit')));
-    await tester.pumpAndSettle();
-    expect(
-      find.text('source page meditations-marcus-aurelius'),
-      findsOneWidget,
-    );
+    expect(find.byKey(const ValueKey('card-credit')), findsNothing);
   });
 
   testWidgets('Listen reads title, body and apply it; Stop stops', (
@@ -132,8 +128,10 @@ void main() {
     expect(find.text('ANIMATED EXPLAINER'), findsOneWidget);
     expect(find.text(card.title), findsOneWidget);
     expect(find.text('0:49'), findsOneWidget);
-    // The credit stays on the card even with a video.
-    expect(find.text(card.credit), findsOneWidget);
+    expect(
+      find.text(card.credit),
+      findsNothing,
+    ); // credit lives on the source page
   });
 
   testWidgets('cards without an explainer show no player', (tester) async {
@@ -173,8 +171,9 @@ void main() {
     expect(tester.widget<Text>(caption).data, 'Image: A stone arch at dawn');
     expect(
       tester.getTopLeft(caption).dy,
-      greaterThan(
-        tester.getTopLeft(find.byKey(const ValueKey('card-credit'))).dy,
+      allOf(
+        greaterThan(tester.getTopLeft(picture).dy),
+        lessThan(tester.getTopLeft(find.text(card.title)).dy),
       ),
     );
   });

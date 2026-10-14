@@ -220,9 +220,8 @@ describe("snap feed preview", () => {
     expect(body.className).toContain("max-md:min-h-0");
     expect(body.className).toContain("max-md:overflow-clip");
     expect(body.className).toMatch(/max-md:\[mask-image:linear-gradient\(to_bottom/);
-    // Apply it and the full credit are on the card page only (on phones).
+    // Apply it is on the card page only (on phones).
     expect(screen.getByRole("region", { name: "Apply it" }).className).toContain("max-md:hidden");
-    expect(screen.getByTestId("card-credit").className).toContain("max-md:hidden");
   });
 
   it("always offers Read more on phones, linking to the card's page", () => {

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Candlelight umber, behind the launcher icon and the splash screen. -->
+    <color name="ic_launcher_background">#14110E</color>
+    <color name="splash_background">#14110E</color>
+</resources>

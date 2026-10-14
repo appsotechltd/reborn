@@ -73,7 +73,7 @@ void main() {
     await tester.tap(find.text('Show the idea'));
     await tester.pumpAndSettle();
     expect(find.text(sampleCard().body), findsOneWidget);
-    expect(find.text(sampleCard().credit), findsOneWidget);
+    expect(find.text(sampleCard().applyIt), findsOneWidget);
     for (final g in ['Again', 'Hard', 'Good', 'Easy']) {
       expect(find.text(g), findsOneWidget);
     }

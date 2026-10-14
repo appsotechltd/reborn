@@ -25,7 +25,6 @@ describe("explainer video", () => {
     expect(screen.getByText(/52 s/)).toBeTruthy();
     expect(screen.queryByText(/captions on screen/)).toBeNull();
     expect(container.querySelector("track")?.hasAttribute("default")).toBe(false);
-    expect(screen.getByTestId("card-credit")).toBeTruthy();
   });
 
   it("keeps absolute URLs (CDN) as they are", () => {
