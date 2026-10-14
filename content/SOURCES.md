@@ -131,7 +131,7 @@ Influence People (Carnegie), Deep Work, Essentialism, The 7 Habits of Highly Eff
 Thinking, Fast and Slow, Mindset, Man's Search for Meaning, Emotional Intelligence, Why We Sleep,
 The Psychology of Money, Rich Dad Poor Dad, Crucial Conversations, The 5 Love Languages, Chinua
 Achebe's The Education of a British-Protected Child, Tony Elumelu's Africapitalism, Strive
-Masiyiwa's mentoring posts and talks, and Anaïs Nin's Diary, In Favor of the Sensitive Man and The
+Masiyiwa's mentoring posts and talks, Zero to One (Thiel & Masters), and Anaïs Nin's Diary, In Favor of the Sensitive Man and The
 Novel of the Future (her erotica is excluded); and, for the new categories, The Seven Principles for Making Marriage Work (Gottman), Attached (Levine & Heller), How to Talk So Kids Will Listen (Faber & Mazlish), Grit (Duckworth), Make It Stick (Brown, Roediger & McDaniel), A Mind for Numbers (Oakley), Getting Past Your Breakup (Elliott), Rebuilding (Fisher & Alberti), Peak (Ericsson & Pool), Ultralearning (Young) and It's OK That You're Not OK (Devine). *How to Win Friends* (1936, renewed) is in copyright in the US until
 2032 but public domain since 2026 in life+70 countries (Carnegie died 1955). They are registered in
 `sources.toml` with `adapter = "summary"`. *The Richest Man in Babylon* (1926) has been public
