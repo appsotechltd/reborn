@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AuthorLinks } from "@/components/CardView";
 import { CardsBrowser } from "@/components/CardsBrowser";
 import { SourceFollowButton } from "@/components/FollowButton";
 import { SourceCircles } from "@/components/SourceCircles";
+import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, formatYear, licenceName } from "@/lib/content";
 import { siteUrl } from "@/lib/config";
 import { getSitemap, getSource, loadOr } from "@/lib/server-api";
+import { summaryHref } from "@/lib/summaries";
 
 export const revalidate = 600;
 
@@ -43,7 +46,7 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
   const { data, ok } = await loadOr(() => getSource(id), null);
   if (!ok) return <Unavailable what="this source" />;
   if (!data) notFound();
-  const { source, cards, follow } = data;
+  const { source, cards, follow, summary_id } = data;
   const isBook = source.kind === "book" || source.kind === "textbook";
 
   return (
@@ -68,8 +71,14 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
         <p className="mt-2 text-lg text-muted">
           by <AuthorLinks authors={source.authors} />
         </p>
-        <div className="mt-4">
+        <div className="mt-4 flex flex-wrap items-center gap-2">
           <SourceFollowButton id={source.id} title={source.title} initial={follow} />
+          {summary_id ? (
+            <Link href={summaryHref(summary_id)} className="btn btn-small">
+              <Icon name="libraryBooks" className="size-4" />
+              {source.licence === "original-summary" ? "Read the key ideas summary" : "Read the full summary"}
+            </Link>
+          ) : null}
         </div>
 
         <dl className="panel mt-6 grid gap-x-6 gap-y-3 p-5 text-[0.9375rem] sm:grid-cols-[auto_1fr]">
