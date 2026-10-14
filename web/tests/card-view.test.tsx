@@ -25,6 +25,30 @@ describe("<CardView>", () => {
     expect(note.textContent).toContain(disclaimer);
   });
 
+  it("puts the card's picture above the topic, with its type badge and caption under it", () => {
+    const image = { url: "/media/images/cards/v1/x.webp", type: "illustration", caption: "A candle in a dark room" };
+    const { container } = render(<CardView card={makeCard({ image })} />);
+    const figure = screen.getByTestId("card-image");
+    expect(container.querySelector("article")?.firstElementChild).toBe(figure);
+    expect(figure.textContent).toContain("Illustration");
+    expect(within(figure).getByRole("img", { name: image.caption }).getAttribute("src")).toMatch(/\/media\/images\/cards\/v1\/x\.webp$/);
+    const caption = within(figure).getByTestId("card-image-caption");
+    expect(caption.textContent).toBe("Image: A candle in a dark room");
+  });
+
+  it("says when a chart pictures a concept rather than measured data", () => {
+    const image = { url: "https://cdn.example/c.webp", type: "chart", caption: "Habits compound", basis: "illustration" };
+    render(<CardView card={makeCard({ image })} />);
+    expect(screen.getByTestId("card-image").textContent).toContain("Chart");
+    expect(screen.getByTestId("card-image-caption").textContent).toBe("Image: Habits compound · A concept, not measured data");
+  });
+
+  it("stays text-only without a picture", () => {
+    render(<CardView card={makeCard()} />);
+    expect(screen.queryByTestId("card-image")).toBeNull();
+    expect(screen.queryByTestId("card-image-caption")).toBeNull();
+  });
+
   it("shows no disclaimer when there is none", () => {
     render(<CardView card={makeCard()} />);
     expect(screen.queryByRole("note")).toBeNull();

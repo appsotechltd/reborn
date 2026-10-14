@@ -45,6 +45,7 @@ services:
       KOKORO_VOICE: ${KOKORO_VOICE:-af_heart}
       EXPLAINER_DIR: /content/explainers/out
       CARD_AUDIO_DIR: /content/audio/out
+      CARD_IMAGE_DIR: /content/images
     ports: ["8080:8080"]
     volumes: ["./content:/content:ro", "./backend/testdata:/testdata:ro", "media:/media"]
     depends_on:
