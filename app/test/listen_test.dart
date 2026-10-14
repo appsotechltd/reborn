@@ -29,6 +29,7 @@ class ListenRepo extends FakeRepository {
   Future<Fetched<PostPage>> timeline({
     List<String>? topics,
     String? cursor,
+    bool withSummaries = false,
   }) async {
     timelineCalls.add((topics, cursor));
     return Fetched(pages[cursor] ?? const PostPage(posts: []));

@@ -127,7 +127,16 @@ class _TvHomeState extends ConsumerState<TvHome> {
       if (posts != null && posts.isNotEmpty) rows.add(TvRow(id, title, posts));
     }
 
-    add('for-you', 'For you', ref.watch(timelineProvider).value?.posts);
+    add(
+      'for-you',
+      'For you',
+      ref
+          .watch(timelineProvider)
+          .value
+          ?.posts
+          .where((p) => !p.isSummary)
+          .toList(),
+    );
     final discover = ref.watch(discoverProvider).value;
     add('trending', 'Trending this week', discover?.trending);
     add('new', 'New ideas', discover?.newPosts);

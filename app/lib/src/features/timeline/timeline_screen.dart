@@ -21,6 +21,7 @@ import '../notifications/notifications_screen.dart';
 import '../post/post_store.dart';
 import '../post/post_view.dart';
 import '../streak/streak_card.dart';
+import '../summary/summary_widgets.dart';
 import 'seen_tracker.dart';
 import 'timeline_controller.dart';
 
@@ -189,11 +190,15 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
         ? _swipePage
         : state.posts.indexWhere((p) => p.id == _onScreen);
     if (index < 0 || index >= state.posts.length) index = 0;
+    // Listen mode plays the card posts; summary posts have their own Listen.
+    final cards = state.posts.where((p) => !p.isSummary).toList();
+    if (cards.isEmpty) return;
+    index = state.posts.take(index).where((p) => !p.isSummary).length;
     ref
         .read(listenProvider.notifier)
         .startTimeline(
-          posts: state.posts,
-          index: index,
+          posts: cards,
+          index: index.clamp(0, cards.length - 1),
           cursor: state.nextCursor,
           topics: ref.read(timelineProvider.notifier).topics,
         );
@@ -228,7 +233,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   /// Skips the posts the server already counts as seen.
   void _skipSeen(TimelineState state) => _tracker.skip([
     for (final p in state.posts)
-      if (p.viewer?.seen ?? false) p.id,
+      if (p.isSummary || (p.viewer?.seen ?? false)) p.id,
   ]);
 
   @override
@@ -347,6 +352,13 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
       final post = state.posts[i];
       // Built a few posts before the end: fetch the next page.
       _preload(state, i);
+      if (post.summary != null) {
+        return Padding(
+          key: ValueKey('timeline-${post.id}'),
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+          child: SummaryPostCard(summary: post.summary!),
+        );
+      }
       return _SeenProbe(
         key: ValueKey('timeline-${post.id}'),
         id: post.id,
@@ -534,7 +546,9 @@ class _SwipeFeedState extends State<_SwipeFeed> {
   /// preloads when near the end.
   void _sync() {
     final post = _page < _posts.length ? _posts[_page] : null;
-    widget.tracker.focus(widget.signedIn ? post?.id : null);
+    widget.tracker.focus(
+      widget.signedIn && !(post?.isSummary ?? false) ? post?.id : null,
+    );
     widget.videos.setActive(
       post?.card.explainer != null ? post!.card.id : null,
     );
@@ -613,11 +627,17 @@ class _SwipeFeedState extends State<_SwipeFeed> {
       key: ValueKey('page-${post.id}'),
       container: true,
       label: 'Post ${index + 1} of $total$more',
-      child: SwipePostPage(
-        post: post,
-        header: _header(index),
-        footer: index == 0 ? const _SwipeHint() : null,
-      ),
+      child: post.summary != null
+          ? SwipeSummaryPage(
+              summary: post.summary!,
+              header: _header(index),
+              footer: index == 0 ? const _SwipeHint() : null,
+            )
+          : SwipePostPage(
+              post: post,
+              header: _header(index),
+              footer: index == 0 ? const _SwipeHint() : null,
+            ),
     );
   }
 
