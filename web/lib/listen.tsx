@@ -1,8 +1,9 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, useSyncExternalStore, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useEffectEvent, useState, useSyncExternalStore, type ReactNode } from "react";
 import { currentToken, useAuth } from "./auth";
-import { ListenPlayer, type ListenState } from "./listen-player";
+import { ListenPlayer, type FollowTarget, type ListenState } from "./listen-player";
+import type { Card } from "./types";
 import { onVideoStarted, setListeningPlaying } from "./media-focus";
 
 const ListenContext = createContext<ListenPlayer | null>(null);
@@ -64,4 +65,29 @@ export function useListen(): { player: ListenPlayer | null; state: ListenState }
     () => SERVER_STATE,
   );
   return { player, state };
+}
+
+/**
+ * Keeps Listen mode on this page's audio: while a session is on, opening the page (or moving to
+ * another item on it) switches the session to `target`, from the item on screen. Pages without
+ * audio of their own don't call this, so the session carries on there. null: nothing yet.
+ */
+export function useListenFollow(target: FollowTarget | null) {
+  const player = useContext(ListenContext);
+  const key = target ? `${target.queue}#${target.index == null ? "" : (target.items[target.index]?.id ?? "")}` : null;
+  const follow = useEffectEvent(() => {
+    if (target) player?.follow(target);
+  });
+  useEffect(() => {
+    if (key) follow();
+  }, [player, key]);
+}
+
+/** As useListenFollow, for a card's own page (see ListenPlayer.followCard). */
+export function useListenFollowCard(card: Card) {
+  const player = useContext(ListenContext);
+  const follow = useEffectEvent(() => player?.followCard(card));
+  useEffect(() => {
+    follow();
+  }, [player, card.id]);
 }
