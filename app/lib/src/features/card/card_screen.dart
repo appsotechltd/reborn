@@ -5,6 +5,8 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../layout/adaptive.dart';
 import '../../widgets/common.dart';
+import '../listen/listen_controller.dart';
+import '../listen/listen_follow.dart';
 import '../post/post_view.dart';
 
 /// The widest the card page gets on tablets and up.
@@ -64,9 +66,14 @@ class _CardScreenState extends ConsumerState<CardScreen> {
         data: (f) => _scroll(f.value),
       );
     }
+    // While Listen mode is on, it moves to this card.
+    final card = post.value?.value.card ?? initial;
     return Scaffold(
       appBar: AppBar(leading: exitLeading(context), title: const Text('Idea')),
-      body: body,
+      body: ListenFollow(
+        target: card == null ? null : ListenTarget.card(card),
+        child: body,
+      ),
     );
   }
 

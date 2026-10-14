@@ -225,18 +225,70 @@ class RebornRepository {
 
   // ---- Social ----
 
+  /// The timeline. With [withSummaries] (the home feed) summary posts come
+  /// woven in; Listen mode pages through card posts only.
   Future<Fetched<PostPage>> timeline({
     List<String>? topics,
     String? cursor,
+    bool withSummaries = false,
   }) async {
+    final key = OfflineCache.timelineKey(topics, cursor);
     final r = await _cached<PostPage>(
-      OfflineCache.timelineKey(topics, cursor),
-      () => api.timeline(topics: topics, cursor: cursor),
+      withSummaries ? '$key.s' : key,
+      () => api.timeline(
+        topics: topics,
+        cursor: cursor,
+        withSummaries: withSummaries,
+      ),
       (v) => v.toJson(),
       (j) => PostPage.fromJson(j as Map<String, dynamic>),
     );
-    if (!r.offline) await cache.putCards(r.value.posts.map((p) => p.card));
+    if (!r.offline) {
+      await cache.putCards(
+        r.value.posts.where((p) => !p.isSummary).map((p) => p.card),
+      );
+    }
     return r;
+  }
+
+  /// A summary and its parts; kept for reading offline.
+  Future<Fetched<SummaryDetail>> summary(String id) => _cached<SummaryDetail>(
+    'summary.$id',
+    () => api.summary(id),
+    (v) => v.toJson(),
+    (j) => SummaryDetail.fromJson(j as Map<String, dynamic>),
+  );
+
+  Future<Fetched<SummaryPage>> summaries() => _cached<SummaryPage>(
+    'summaries',
+    () => api.summaries(limit: 50).then((first) async {
+      // Every summary: there are about a hundred, a few pages at most.
+      final all = [...first.summaries];
+      var cursor = first.nextCursor;
+      while (cursor != null && all.length < 500) {
+        final page = await api.summaries(cursor: cursor, limit: 50);
+        all.addAll(page.summaries);
+        cursor = page.nextCursor;
+      }
+      return SummaryPage(summaries: all);
+    }),
+    (v) => v.toJson(),
+    (j) => SummaryPage.fromJson(j as Map<String, dynamic>),
+  );
+
+  /// Best effort: the place is also kept on the device.
+  Future<SummaryProgress?> setSummaryProgress(
+    String id,
+    int position, {
+    bool finished = false,
+  }) async {
+    try {
+      return await _run(
+        () => api.setSummaryProgress(id, position, finished: finished),
+      );
+    } on ApiException {
+      return null;
+    }
   }
 
   /// Best effort: losing a "seen" mark only means seeing a post again.

@@ -52,8 +52,7 @@ describe("<Timeline>", () => {
     expect(await screen.findByText("Because you follow Ada Example")).toBeTruthy();
     expect(screen.getByText("Bob favourited this")).toBeTruthy();
     expect(screen.getByRole("separator", { name: "You're all caught up" })).toBeTruthy();
-    // Credit is still on every post.
-    expect(screen.getAllByTestId("card-credit")).toHaveLength(2);
+    expect(screen.queryAllByTestId("card-credit")).toHaveLength(0);
   });
 
   it("works signed out with a sign-up prompt", async () => {

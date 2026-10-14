@@ -52,6 +52,7 @@ type Config struct {
 	MediaDir     string // local fallback folder for development
 	ExplainerDir string // folder holding the explainers' manifest.json
 	CardAudioDir string // folder holding the card recordings' manifest.json
+	CardImageDir string // folder holding the card pictures' manifest.json
 }
 
 // R2Enabled reports whether every R2 setting is present.
@@ -105,6 +106,7 @@ func Load() Config {
 		MediaDir:     env("MEDIA_DIR", "media"),
 		ExplainerDir: env("EXPLAINER_DIR", "../content/explainers/out"),
 		CardAudioDir: env("CARD_AUDIO_DIR", "../content/audio/out"),
+		CardImageDir: env("CARD_IMAGE_DIR", "../content/images"),
 	}
 }
 

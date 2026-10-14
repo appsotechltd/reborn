@@ -112,6 +112,23 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 
 Cards in `heartbreak-healing` and `grief-loss` always show a support note pointing to people who can help, in place of the health disclaimer. Write them gently.
 
+## Summaries
+
+A summary is one post for a whole book or topic that readers go through part by part (swipe one part per screen, or read it all on one page, or listen to it start to finish). Every part is an existing card, so summaries add no new text and follow the same licence rules.
+
+- **Book summaries** are built automatically when the library is seeded: every source with at least 5 cards gets one, with the same id as the source and its cards in file order. Public-domain and openly licensed books are shown as a "full summary"; `original-summary` books are shown as their "key ideas" in our own words (never a chapter-by-chapter walk-through).
+- **Topic summaries** are hand-picked runs of cards from several sources, one file each in `content/summaries/<id>.json`:
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `id` | string | yes | Lowercase slug, max 80. Must equal the file name and must not be a source id |
+| `title` | string | yes | max 90 chars, e.g. `Grief: finding your way through loss` |
+| `description` | string | yes | One or two sentences, max 300 chars |
+| `topic` | enum | yes | One of the topics above |
+| `cards` | string[] | yes | 5–50 card ids from the library, in reading order, no repeats |
+
+`reborn validate` and `reborn seed` check topic summaries against the library; a summary that names a missing card is rejected. Removing a summary file hides it.
+
 ## Example
 
 ```json

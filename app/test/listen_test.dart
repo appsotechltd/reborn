@@ -10,6 +10,7 @@ import 'package:reborn/src/data/speaker.dart';
 import 'package:reborn/src/features/card/card_view.dart';
 import 'package:reborn/src/features/listen/listen_audio.dart';
 import 'package:reborn/src/features/listen/listen_controller.dart';
+import 'package:reborn/src/features/listen/listen_follow.dart';
 import 'package:reborn/src/features/listen/listen_ui.dart';
 import 'package:reborn/src/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,6 +30,7 @@ class ListenRepo extends FakeRepository {
   Future<Fetched<PostPage>> timeline({
     List<String>? topics,
     String? cursor,
+    bool withSummaries = false,
   }) async {
     timelineCalls.add((topics, cursor));
     return Fetched(pages[cursor] ?? const PostPage(posts: []));
@@ -558,6 +560,167 @@ void main() {
       await tester.pump();
       expect(h.state.active, isFalse);
       expect(find.text('Listen'), findsOneWidget);
+    });
+  });
+
+  group('follows the screen', () {
+    ListenTarget list(String key, List<String> ids, {int? index}) =>
+        ListenTarget(
+          key: key,
+          posts: [for (final id in ids) post(id)],
+          index: index,
+        );
+
+    testWidgets('does nothing while Listen mode is off', (tester) async {
+      final h = await harness();
+      await h.listen.follow(list('source:x|all', ['a']));
+      expect(h.state.active, isFalse);
+      expect(h.audio.played, isEmpty);
+    });
+
+    testWidgets('switches to another screen\'s list, keeping play', (
+      tester,
+    ) async {
+      final h = await harness();
+      await h.listen.startTimeline(posts: [post('a'), post('b')], key: 't|');
+      await tester.pump();
+      final session = h.state.session;
+      await h.listen.follow(list('source:x|all', ['x1', 'x2']));
+      await tester.pump();
+      expect(h.state.queueKey, 'source:x|all');
+      expect(h.state.current!.id, 'x1');
+      expect(h.state.playing, isTrue);
+      expect(h.state.session, greaterThan(session));
+      expect(h.audio.played.last, urlOf('x1'));
+      await h.listen.stop();
+    });
+
+    testWidgets('leaves its own list alone, and keeps pause and sleep', (
+      tester,
+    ) async {
+      final h = await harness();
+      await h.listen.startTimeline(
+        posts: [post('a'), post('b')],
+        key: 'source:x|all',
+      );
+      await h.listen.next();
+      await h.listen.pause();
+      await h.listen.follow(list('source:x|all', ['a', 'b']));
+      expect(h.state.current!.id, 'b');
+      h.listen.setSleep(ListenSleep.min15);
+      final plays = h.audio.played.length;
+      await h.listen.follow(list('author:y|all', ['y1']));
+      await tester.pump();
+      expect(h.state.current!.id, 'y1');
+      expect(h.state.playing, isFalse);
+      expect(h.state.sleep, ListenSleep.min15);
+      expect(h.audio.played.length, plays);
+      await h.listen.stop();
+    });
+
+    testWidgets('moves to the item on screen within its list', (tester) async {
+      final h = await harness();
+      await h.listen.startTimeline(
+        posts: [post('p1'), post('p2'), post('p3')],
+        key: 'summary:s',
+      );
+      final session = h.state.session;
+      await h.listen.follow(list('summary:s', ['p1', 'p2', 'p3'], index: 2));
+      await tester.pump();
+      expect(h.state.current!.id, 'p3');
+      expect(h.state.session, session);
+      expect(h.audio.played.last, urlOf('p3'));
+      await h.listen.stop();
+    });
+
+    testWidgets('a card page moves to its card, or plays it alone', (
+      tester,
+    ) async {
+      final h = await harness();
+      await h.listen.startTimeline(
+        posts: [post('a'), post('b')],
+        key: 'source:x|all',
+      );
+      await h.listen.follow(ListenTarget.card(post('b').card));
+      expect(h.state.current!.id, 'b');
+      expect(h.state.queueKey, 'source:x|all');
+      await h.listen.follow(ListenTarget.card(post('z').card));
+      await tester.pump();
+      expect(h.state.single, isTrue);
+      expect(h.state.current!.card.id, 'z');
+      expect(h.audio.played.last, urlOf('z'));
+      await h.listen.stop();
+    });
+
+    testWidgets('a screen follows on opening, not on coming back to it', (
+      tester,
+    ) async {
+      final h = await harness();
+      final nav = GlobalKey<NavigatorState>();
+      Widget screen(ListenTarget target) => ListenFollow(
+        target: target,
+        child: const Scaffold(body: Text('screen')),
+      );
+      await tester.pumpWidget(
+        UncontrolledProviderScope(
+          container: h.container,
+          child: MaterialApp(navigatorKey: nav, home: const Text('home')),
+        ),
+      );
+      await h.listen.startTimeline(posts: [post('a'), post('b')], key: 't|');
+      await tester.pump();
+
+      nav.currentState!.push(
+        MaterialPageRoute<void>(
+          builder: (_) =>
+              screen(list('summary:s', ['p1', 'p2', 'p3'], index: 1)),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(h.state.queueKey, 'summary:s');
+      expect(h.state.current!.id, 'p2');
+
+      // The parts play on; the player opens over the screen and closes.
+      await h.listen.next();
+      nav.currentState!.push(
+        MaterialPageRoute<void>(builder: (_) => const Text('player')),
+      );
+      await tester.pumpAndSettle();
+      nav.currentState!.pop();
+      await tester.pumpAndSettle();
+      expect(h.state.current!.id, 'p3');
+      await h.listen.stop();
+    });
+  });
+
+  group('background music', () {
+    testWidgets('off by default; plays exactly while playing once on', (
+      tester,
+    ) async {
+      final h = await harness();
+      await h.listen.startTimeline(posts: [post('a'), post('b')]);
+      expect(h.state.music, isFalse);
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.setMusic(true);
+      expect(h.audio.musicPlaying, isTrue);
+      expect(h.prefs.getBool(ListenController.musicKey), isTrue);
+      await h.listen.pause();
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.play();
+      expect(h.audio.musicPlaying, isTrue);
+      await h.listen.stop();
+      expect(h.audio.musicPlaying, isFalse);
+      expect(h.state.music, isTrue);
+    });
+
+    testWidgets('remembers the choice', (tester) async {
+      final h = await harness(prefsValues: {ListenController.musicKey: true});
+      expect(h.state.music, isTrue);
+      await h.listen.startTimeline(posts: [post('a')]);
+      expect(h.audio.musicPlaying, isTrue);
+      await h.listen.setMusic(false);
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.stop();
     });
   });
 }

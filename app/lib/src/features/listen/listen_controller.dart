@@ -50,11 +50,14 @@ class ListenState {
     this.position = Duration.zero,
     this.duration,
     this.speed = 1,
+    this.music = false,
     this.deviceVoice = false,
     this.sleep = ListenSleep.off,
     this.sleepAt,
     this.finished = false,
     this.single = false,
+    this.queueKey,
+    this.session = 0,
   });
 
   /// The posts to play, in timeline order.
@@ -70,6 +73,9 @@ class ListenState {
   final Duration? duration;
   final double speed;
 
+  /// Background music under the voice while playing (off unless turned on).
+  final bool music;
+
   /// The current card has no recording and is read by the device voice.
   final bool deviceVoice;
   final ListenSleep sleep;
@@ -82,6 +88,15 @@ class ListenState {
 
   /// One card from its page (no queue).
   final bool single;
+
+  /// Names the list playing, e.g. `timeline|`, `source:<id>|all`,
+  /// `summary:<id>`, so a screen can tell its own audio (see
+  /// [ListenController.follow]); null for one card.
+  final String? queueKey;
+
+  /// Which session this is: a new number each time a list or card starts
+  /// (moving within the list keeps it).
+  final int session;
 
   /// A Listen session is open (the mini-player shows).
   bool get active => queue.isNotEmpty;
@@ -99,12 +114,15 @@ class ListenState {
     Duration? duration,
     bool clearDuration = false,
     double? speed,
+    bool? music,
     bool? deviceVoice,
     ListenSleep? sleep,
     DateTime? sleepAt,
     bool clearSleepAt = false,
     bool? finished,
     bool? single,
+    String? queueKey,
+    int? session,
   }) => ListenState(
     queue: queue ?? this.queue,
     index: index ?? this.index,
@@ -113,11 +131,14 @@ class ListenState {
     position: position ?? this.position,
     duration: clearDuration ? null : (duration ?? this.duration),
     speed: speed ?? this.speed,
+    music: music ?? this.music,
     deviceVoice: deviceVoice ?? this.deviceVoice,
     sleep: sleep ?? this.sleep,
     sleepAt: clearSleepAt ? null : (sleepAt ?? this.sleepAt),
     finished: finished ?? this.finished,
     single: single ?? this.single,
+    queueKey: queueKey ?? this.queueKey,
+    session: session ?? this.session,
   );
 }
 
@@ -129,6 +150,7 @@ enum _Output { none, audio, voice }
 /// much was heard (see [kListenReadFraction] and [kListenSeenAfter]).
 class ListenController extends Notifier<ListenState> {
   static const speedKey = 'listen.speed';
+  static const musicKey = 'listen.music';
 
   /// Bumped on every change of card or stop, so a stale async step (a
   /// recording that finished loading after a skip) does nothing.
@@ -166,10 +188,13 @@ class ListenController extends Notifier<ListenState> {
   ListenState build() {
     ref.onDispose(_dispose);
     double? saved;
+    var music = false;
     try {
-      saved = ref.read(sharedPreferencesProvider).getDouble(speedKey);
+      final prefs = ref.read(sharedPreferencesProvider);
+      saved = prefs.getDouble(speedKey);
+      music = prefs.getBool(musicKey) ?? false;
     } catch (_) {
-      // No saved speed.
+      // No saved speed or music.
     }
     final session = ref.read(listenMediaSessionProvider);
     session.bind(
@@ -182,7 +207,10 @@ class ListenController extends Notifier<ListenState> {
         stop: stop,
       ),
     );
-    return ListenState(speed: kListenSpeeds.contains(saved) ? saved! : 1.0);
+    return ListenState(
+      speed: kListenSpeeds.contains(saved) ? saved! : 1.0,
+      music: music,
+    );
   }
 
   void _dispose() {
@@ -198,56 +226,118 @@ class ListenController extends Notifier<ListenState> {
   // ---- Starting ----
 
   /// Starts Listen mode on the timeline's [posts] from [index], loading
-  /// further pages from [cursor] with the same [topics] filter.
+  /// further pages from [cursor] with the same [topics] filter. [key] names
+  /// the list (see [ListenState.queueKey]).
   Future<void> startTimeline({
     required List<Post> posts,
     int index = 0,
     String? cursor,
     List<String>? topics,
+    String? key,
+  }) => _begin(
+    posts: posts,
+    index: index,
+    cursor: cursor,
+    topics: topics,
+    key: key,
+    playing: true,
+  );
+
+  /// Starts Listen mode on a fixed list of [cards] (a book's or an
+  /// author's ideas) from [index]. The queue is just these cards: no more
+  /// pages load. Seen and read work as on the timeline.
+  Future<void> startCards(List<IdeaCard> cards, {int index = 0, String? key}) =>
+      startTimeline(
+        posts: [for (final c in cards) Post.fromCard(c)],
+        index: index,
+        key: key,
+      );
+
+  /// Plays one card (its page's Listen button): its recording, or else the
+  /// device voice. No queue follows it.
+  Future<void> playCard(IdeaCard card) =>
+      _begin(posts: [Post.fromCard(card)], playing: true, single: true);
+
+  /// A screen with audio of its own was opened, or moved to another item,
+  /// while Listen mode is on: Listen mode switches to [target], carrying on
+  /// from its item on screen and keeping play or pause and the sleep timer.
+  /// Already on that list: moves to the item on screen, if it has one and
+  /// it isn't the current card. A card's own page ([ListenTarget.card])
+  /// moves to that card within the session when it's in it, else plays it
+  /// alone. Does nothing when Listen mode is off.
+  Future<void> follow(ListenTarget target) async {
+    final s = state;
+    if (!s.active || target.posts.isEmpty) return;
+    final cardId = target.cardId;
+    if (cardId != null) {
+      final at = s.queue.indexWhere((p) => p.card.id == cardId);
+      if (at == s.index) return;
+      if (at >= 0) return _jump(at);
+    } else if (s.queueKey == target.key) {
+      final i = target.index;
+      if (i == null || i < 0 || i >= target.posts.length) return;
+      final id = target.posts[i].id;
+      final at = s.queue.indexWhere((p) => p.id == id);
+      if (at == s.index) return;
+      if (at >= 0) return _jump(at);
+    }
+    await _begin(
+      posts: target.posts,
+      index: target.index ?? 0,
+      cursor: target.cursor,
+      topics: target.topics,
+      key: cardId == null ? target.key : null,
+      playing: s.playing,
+      single: cardId != null,
+      keepSleep: true,
+    );
+  }
+
+  /// A new session on [posts] from [index]; [keepSleep] keeps the sleep
+  /// timer running (Listen mode following the screen).
+  Future<void> _begin({
+    required List<Post> posts,
+    int index = 0,
+    String? cursor,
+    List<String>? topics,
+    String? key,
+    required bool playing,
+    bool single = false,
+    bool keepSleep = false,
   }) async {
     if (posts.isEmpty) return;
     _leave();
     await _stopOutput();
     _topics = topics;
-    _cursor = cursor;
+    _cursor = single ? null : cursor;
     _pageLoad = null;
+    if (!keepSleep) {
+      _sleepTimer?.cancel();
+      _sleepTimer = null;
+    }
+    final old = state;
     _set(
       ListenState(
         queue: List.of(posts),
         index: index.clamp(0, posts.length - 1),
-        playing: true,
-        speed: state.speed,
+        playing: playing,
+        speed: old.speed,
+        music: old.music,
+        single: single,
+        queueKey: key,
+        session: old.session + 1,
+        sleep: keepSleep ? old.sleep : ListenSleep.off,
+        sleepAt: keepSleep ? old.sleepAt : null,
       ),
     );
     await _cue(state.index);
   }
 
-  /// Starts Listen mode on a fixed list of [cards] (a book's or an
-  /// author's ideas) from [index]. The queue is just these cards: no more
-  /// pages load. Seen and read work as on the timeline.
-  Future<void> startCards(List<IdeaCard> cards, {int index = 0}) =>
-      startTimeline(
-        posts: [for (final c in cards) Post.fromCard(c)],
-        index: index,
-      );
-
-  /// Plays one card (its page's Listen button): its recording, or else the
-  /// device voice. No queue follows it.
-  Future<void> playCard(IdeaCard card) async {
+  /// Moves to card [index] of this session, keeping play or pause.
+  Future<void> _jump(int index) async {
     _leave();
-    await _stopOutput();
-    _topics = null;
-    _cursor = null;
-    _pageLoad = null;
-    _set(
-      ListenState(
-        queue: [Post.fromCard(card)],
-        playing: true,
-        speed: state.speed,
-        single: true,
-      ),
-    );
-    await _cue(0);
+    if (state.finished) _set(state.copyWith(finished: false));
+    await _go(index);
   }
 
   // ---- Controls ----
@@ -336,6 +426,28 @@ class ListenController extends Notifier<ListenState> {
     if (_output == _Output.audio) await _audio?.setSpeed(speed);
   }
 
+  /// Background music on or off (remembered on this device).
+  Future<void> setMusic(bool on) async {
+    _set(state.copyWith(music: on));
+    try {
+      await ref.read(sharedPreferencesProvider).setBool(musicKey, on);
+    } catch (_) {
+      // Remembered for this session only.
+    }
+  }
+
+  /// The music plays exactly while a session is playing with music on.
+  bool _musicPlaying = false;
+
+  void _syncMusic() {
+    final s = state;
+    final want = s.active && s.playing && s.music && !s.finished;
+    if (want == _musicPlaying) return;
+    _musicPlaying = want;
+    final audio = want ? _audioOrNull() : _audio;
+    unawaited(audio?.setMusic(want));
+  }
+
   /// The next speed in [kListenSpeeds], wrapping round.
   Future<void> cycleSpeed() {
     final i = kListenSpeeds.indexOf(state.speed);
@@ -370,7 +482,12 @@ class ListenController extends Notifier<ListenState> {
     _sleepTimer = null;
     await _stopOutput();
     _session.clear();
-    state = ListenState(speed: state.speed);
+    state = ListenState(
+      speed: state.speed,
+      music: state.music,
+      session: state.session + 1,
+    );
+    _syncMusic();
   }
 
   // ---- Queue ----
@@ -715,6 +832,7 @@ class ListenController extends Notifier<ListenState> {
   void _set(ListenState s, {bool session = false}) {
     final old = state;
     state = s;
+    _syncMusic();
     if (!s.active) return;
     if (session ||
         old.playing != s.playing ||
@@ -734,6 +852,56 @@ class ListenController extends Notifier<ListenState> {
 String subtitleOf(IdeaCard card) {
   final authors = card.source.authors.join(', ');
   return [card.source.title, authors].where((s) => s.isNotEmpty).join(' · ');
+}
+
+/// What a screen plays, for Listen mode to follow when the reader moves to
+/// it (see [ListenController.follow]).
+class ListenTarget {
+  const ListenTarget({
+    required this.key,
+    required this.posts,
+    this.index,
+    this.cursor,
+    this.topics,
+  }) : cardId = null;
+
+  /// A card's own page.
+  ListenTarget.card(IdeaCard card)
+    : key = 'card:${card.id}',
+      posts = [Post.fromCard(card)],
+      index = 0,
+      cursor = null,
+      topics = null,
+      cardId = card.id;
+
+  ListenTarget.cards({
+    required this.key,
+    required List<IdeaCard> cards,
+    this.index,
+  }) : posts = [for (final c in cards) Post.fromCard(c)],
+       cursor = null,
+       topics = null,
+       cardId = null;
+
+  /// Names the list (see [ListenState.queueKey]).
+  final String key;
+  final List<Post> posts;
+
+  /// The item on screen, followed as the reader moves through the screen.
+  /// Without one (a book's list) the list starts from its first card, and
+  /// opening the screen again leaves its session alone.
+  final int? index;
+  final String? cursor;
+  final List<String>? topics;
+  final String? cardId;
+
+  /// Changes when the screen's list or its item on screen does.
+  String get identity {
+    final i = index;
+    return i == null || i < 0 || i >= posts.length
+        ? key
+        : '$key#${posts[i].id}';
+  }
 }
 
 final listenProvider = NotifierProvider<ListenController, ListenState>(

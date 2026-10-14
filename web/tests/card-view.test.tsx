@@ -4,18 +4,12 @@ import { CardView } from "@/components/CardView";
 import { makeCard } from "./fixtures";
 
 describe("<CardView>", () => {
-  it("always shows the credit line with links to the source page, original and licence", () => {
+  it("has no source section at the bottom; the byline links to the source page", () => {
     const card = makeCard();
     render(<CardView card={card} />);
-    const credit = screen.getByTestId("card-credit");
-    const creditLink = within(credit).getByRole("link", { name: card.credit });
-    expect(creditLink.getAttribute("href")).toBe("/sources/example-book");
-    expect(within(credit).getByRole("link", { name: /original source/i }).getAttribute("href")).toBe(
-      "https://example.org/book",
-    );
-    const licence = within(credit).getByRole("link", { name: "Public domain" });
-    expect(licence.getAttribute("href")).toBe("https://example.org/licence");
-    expect(licence.getAttribute("rel")).toContain("license");
+    expect(screen.queryByTestId("card-credit")).toBeNull();
+    const byline = screen.getByTestId("card-byline");
+    expect(within(byline).getByRole("link", { name: "An Example Book" }).getAttribute("href")).toBe("/sources/example-book");
   });
 
   it("labels the note on grief and heartbreak cards as support, even when flagged health", () => {
@@ -29,7 +23,30 @@ describe("<CardView>", () => {
     render(<CardView card={makeCard({ health: true, topic: "health", disclaimer })} />);
     const note = screen.getByRole("note", { name: /health disclaimer/i });
     expect(note.textContent).toContain(disclaimer);
-    expect(screen.getByTestId("card-credit")).toBeTruthy();
+  });
+
+  it("puts the card's picture above the topic, with its type badge and caption under it", () => {
+    const image = { url: "/media/images/cards/v1/x.webp", type: "illustration", caption: "A candle in a dark room" };
+    const { container } = render(<CardView card={makeCard({ image })} />);
+    const figure = screen.getByTestId("card-image");
+    expect(container.querySelector("article")?.firstElementChild).toBe(figure);
+    expect(figure.textContent).toContain("Illustration");
+    expect(within(figure).getByRole("img", { name: image.caption }).getAttribute("src")).toMatch(/\/media\/images\/cards\/v1\/x\.webp$/);
+    const caption = within(figure).getByTestId("card-image-caption");
+    expect(caption.textContent).toBe("Image: A candle in a dark room");
+  });
+
+  it("says when a chart pictures a concept rather than measured data", () => {
+    const image = { url: "https://cdn.example/c.webp", type: "chart", caption: "Habits compound", basis: "illustration" };
+    render(<CardView card={makeCard({ image })} />);
+    expect(screen.getByTestId("card-image").textContent).toContain("Chart");
+    expect(screen.getByTestId("card-image-caption").textContent).toBe("Image: Habits compound · A concept, not measured data");
+  });
+
+  it("stays text-only without a picture", () => {
+    render(<CardView card={makeCard()} />);
+    expect(screen.queryByTestId("card-image")).toBeNull();
+    expect(screen.queryByTestId("card-image-caption")).toBeNull();
   });
 
   it("shows no disclaimer when there is none", () => {
@@ -37,7 +54,7 @@ describe("<CardView>", () => {
     expect(screen.queryByRole("note")).toBeNull();
   });
 
-  it("keeps credit and disclaimer even with extra children and actions", () => {
+  it("keeps the disclaimer with extra children and actions", () => {
     render(
       <CardView
         card={makeCard({ health: true, disclaimer: "Not medical advice.", credit: "Source: Someone, Something, CC BY 4.0" })}
@@ -47,7 +64,7 @@ describe("<CardView>", () => {
         <p>Quiz goes here</p>
       </CardView>,
     );
-    expect(screen.getByText("Source: Someone, Something, CC BY 4.0")).toBeTruthy();
+    expect(screen.queryByText("Source: Someone, Something, CC BY 4.0")).toBeNull();
     expect(screen.getByRole("note").textContent).toContain("Not medical advice.");
     expect(screen.getByRole("heading", { level: 2, name: "Small steps beat big plans" })).toBeTruthy();
   });

@@ -56,6 +56,7 @@ class TimelineState {
 /// `viewer`) or when every post is unseen.
 int? caughtUpIndex(List<Post> posts) {
   for (var i = 0; i < posts.length; i++) {
+    if (posts[i].isSummary) continue;
     final v = posts[i].viewer;
     if (v == null) return null;
     if (v.seen) return i;
@@ -80,7 +81,9 @@ class TimelineController extends AsyncNotifier<TimelineState> {
     _topics = filter != null
         ? [filter]
         : (signedIn ? null : (prefs.isEmpty ? null : prefs));
-    final page = await ref.read(repositoryProvider).timeline(topics: _topics);
+    final page = await ref
+        .read(repositoryProvider)
+        .timeline(topics: _topics, withSummaries: true);
     return TimelineState(
       posts: page.value.posts,
       nextCursor: page.value.nextCursor,
@@ -95,7 +98,11 @@ class TimelineController extends AsyncNotifier<TimelineState> {
     try {
       final page = await ref
           .read(repositoryProvider)
-          .timeline(topics: _topics, cursor: current.nextCursor);
+          .timeline(
+            topics: _topics,
+            cursor: current.nextCursor,
+            withSummaries: true,
+          );
       final have = current.posts.map((p) => p.id).toSet();
       state = AsyncData(
         current.copyWith(

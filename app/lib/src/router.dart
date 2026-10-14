@@ -38,6 +38,8 @@ import 'features/source/source_screen.dart';
 import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
+import 'features/summary/summaries_screen.dart';
+import 'features/summary/summary_screen.dart';
 import 'features/timeline/timeline_screen.dart';
 import 'tv/tv_card_screen.dart';
 
@@ -162,6 +164,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/forgot',
         builder: (_, s) => ForgotPasswordScreen(
           email: s.extra is String ? s.extra as String : null,
+        ),
+      ),
+      GoRoute(path: '/summaries', builder: (_, _) => const SummariesScreen()),
+      GoRoute(
+        path: '/summaries/:id',
+        builder: (_, s) => SummaryScreen(
+          summaryId: s.pathParameters['id']!,
+          readAll: s.uri.queryParameters['view'] == 'all',
+          initialPart: int.tryParse(s.uri.queryParameters['part'] ?? ''),
         ),
       ),
       GoRoute(

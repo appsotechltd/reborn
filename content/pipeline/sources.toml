@@ -914,3 +914,9 @@ adapter = "web"
 url = "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor"
 licence = "public-domain"
 # A. T. Bryant (1929; he died 1953): public domain in the US and in life+70 countries. Read from the Internet Archive scan.
+
+[[source]]
+id = "zero-to-one-thiel"
+adapter = "summary"
+url = "https://www.penguinrandomhouse.com/books/234730/zero-to-one-by-peter-thiel-with-blake-masters/"
+licence = "original-summary"

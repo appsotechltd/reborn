@@ -55,7 +55,16 @@ func (s *Server) timeline(w http.ResponseWriter, r *http.Request) {
 		n := fmt.Sprintf("%d-%d", snapshot.Unix(), offset+limit)
 		next = &n
 	}
-	writeJSON(w, http.StatusOK, map[string]any{"posts": posts, "next_cursor": next})
+	if r.URL.Query().Get("with") != "summaries" {
+		writeJSON(w, http.StatusOK, map[string]any{"posts": posts, "next_cursor": next})
+		return
+	}
+	summaryAt, err := s.timelineSummaries(r, topics, snapshot, offset, len(posts))
+	if err != nil {
+		s.fail(w, r, err, "timeline")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"posts": weave(posts, offset, summaryAt), "next_cursor": next})
 }
 
 func (s *Server) markSeen(w http.ResponseWriter, r *http.Request) {

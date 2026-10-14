@@ -28,6 +28,7 @@ import (
 	"github.com/appsotechltd/reborn/backend/internal/auth"
 	"github.com/appsotechltd/reborn/backend/internal/cache"
 	"github.com/appsotechltd/reborn/backend/internal/cardaudio"
+	"github.com/appsotechltd/reborn/backend/internal/cardimages"
 	"github.com/appsotechltd/reborn/backend/internal/config"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/db"
@@ -94,7 +95,7 @@ func run(ctx context.Context, cfg config.Config, cmd string, args []string) erro
 		if err != nil {
 			return err
 		}
-		slog.Info("seeded", "sources", res.Sources, "cards", res.Cards, "changed", res.Changed)
+		slog.Info("seeded", "sources", res.Sources, "cards", res.Cards, "changed", res.Changed, "summaries", res.Summaries)
 		return embedAll(ctx, st, embedder)
 	case "embed":
 		if embedder == nil {
@@ -125,6 +126,12 @@ func loadLibrary(dir string) (content.Library, error) {
 	if err != nil {
 		return lib, err
 	}
+	summaries, sp, err := content.LoadSummaries(content.SummaryDir(dir), lib)
+	if err != nil {
+		return lib, err
+	}
+	lib.Summaries = summaries
+	problems = append(problems, sp...)
 	errs := 0
 	for _, p := range problems {
 		fmt.Fprintln(os.Stderr, p.String())
@@ -136,7 +143,7 @@ func loadLibrary(dir string) (content.Library, error) {
 	for _, f := range lib.Files {
 		cards += len(f.Cards)
 	}
-	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "errors", errs)
+	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "topic_summaries", len(lib.Summaries), "errors", errs)
 	if errs > 0 {
 		return lib, fmt.Errorf("%d validation errors", errs)
 	}
@@ -175,6 +182,12 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	}
 	store.SetAudio(audio)
 	slog.Info("card audio", "cards", len(audio), "manifest", cfg.CardAudioDir)
+	images, err := cardimages.Load(ctx, cfg.CardImageDir, media)
+	if err != nil {
+		return fmt.Errorf("load card images: %w", err)
+	}
+	store.SetImages(images)
+	slog.Info("card images", "cards", len(images), "manifest", cfg.CardImageDir)
 	srv := &api.Server{
 		Store:          st,
 		Cache:          c,

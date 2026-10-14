@@ -8,7 +8,9 @@ import '../../widgets/common.dart';
 import '../circles/circles_screen.dart';
 import '../library/card_collection.dart';
 import '../library/library_controller.dart';
+import '../listen/listen_follow.dart';
 import '../social/follow_button.dart';
+import '../summary/summary_widgets.dart';
 
 const _licenceNames = {
   'public-domain': 'Public domain',
@@ -43,16 +45,16 @@ class SourceScreen extends ConsumerWidget {
           final cards = f.value.cards;
           final page = 'source:$sourceId';
           final videos = cards.any((c) => c.explainer != null);
-          final shown = visibleCards(
-            cards,
-            videos && ref.watch(videosOnlyProvider(page)),
-          );
+          final videosOnly = videos && ref.watch(videosOnlyProvider(page));
+          final shown = visibleCards(cards, videosOnly);
+          final listen = collectionListenTarget(ref, page, shown, videosOnly);
           final before = [
             ReadingWidth(
               child: _SourceHeader(
                 source: f.value.source,
                 count: cards.length,
                 follow: f.value.follow,
+                summaryId: f.value.summaryId,
               ),
             ),
             ReadingWidth(
@@ -72,23 +74,28 @@ class SourceScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 24),
           ];
-          return ListView.builder(
-            itemCount: before.length + shown.length + after.length,
-            itemBuilder: (context, i) {
-              if (i < before.length) return before[i];
-              i -= before.length;
-              if (i < shown.length) {
-                final c = shown[i];
-                return ReadingWidth(
-                  child: CardTile(
-                    key: ValueKey('source-card-${c.id}'),
-                    card: c,
-                    trailing: c.explainer != null ? const HasVideoIcon() : null,
-                  ),
-                );
-              }
-              return after[i - shown.length];
-            },
+          return ListenFollow(
+            target: listen,
+            child: ListView.builder(
+              itemCount: before.length + shown.length + after.length,
+              itemBuilder: (context, i) {
+                if (i < before.length) return before[i];
+                i -= before.length;
+                if (i < shown.length) {
+                  final c = shown[i];
+                  return ReadingWidth(
+                    child: CardTile(
+                      key: ValueKey('source-card-${c.id}'),
+                      card: c,
+                      trailing: c.explainer != null
+                          ? const HasVideoIcon()
+                          : null,
+                    ),
+                  );
+                }
+                return after[i - shown.length];
+              },
+            ),
           );
         },
       ),
@@ -101,10 +108,12 @@ class _SourceHeader extends StatelessWidget {
     required this.source,
     required this.count,
     required this.follow,
+    this.summaryId,
   });
   final Source source;
   final int count;
   final FollowState follow;
+  final String? summaryId;
 
   @override
   Widget build(BuildContext context) {
@@ -148,6 +157,19 @@ class _SourceHeader extends StatelessWidget {
             target: source.id,
             initial: follow,
           ),
+          if (summaryId != null) ...[
+            const SizedBox(height: 8),
+            OutlinedButton.icon(
+              key: const ValueKey('source-summary'),
+              onPressed: () => context.push(summaryPath(summaryId!)),
+              icon: const Icon(Icons.library_books_outlined, size: 18),
+              label: Text(
+                source.licence == 'original-summary'
+                    ? 'Read the key ideas summary'
+                    : 'Read the full summary',
+              ),
+            ),
+          ],
           const SizedBox(height: 16),
           Card(
             child: Padding(

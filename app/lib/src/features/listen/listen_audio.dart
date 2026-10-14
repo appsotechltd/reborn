@@ -37,6 +37,11 @@ abstract class ListenAudio {
   /// (or failed: a missing chime never stops the stream).
   Future<void> playChime();
 
+  /// Starts (true) or pauses (false) the background music, a quiet looping
+  /// track under the voice. Best effort: failing to play it changes nothing
+  /// else.
+  Future<void> setMusic(bool playing);
+
   /// Downloads [urls] ahead of time so a short loss of signal doesn't stop
   /// playback. Best effort; a no-op where caching isn't supported (web).
   Future<void> prefetch(List<String> urls);

@@ -282,6 +282,21 @@ function NowListening({
                 <p className="hint">Pauses at {clock(state.sleep.endsAt)}</p>
               ) : null}
             </div>
+            <div className="sm:col-span-2">
+              <button
+                type="button"
+                role="switch"
+                aria-checked={state.music}
+                onClick={() => player.setMusic(!state.music)}
+                className={`chip min-h-11 w-full justify-between px-4 text-sm ${state.music ? "chip-on" : "hover:text-fg"}`}
+              >
+                <span className="flex items-center gap-2">
+                  <Icon name="music" className="size-4" />
+                  Background music
+                </span>
+                <span>{state.music ? "On" : "Off"}</span>
+              </button>
+            </div>
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">

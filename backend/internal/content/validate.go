@@ -189,6 +189,8 @@ func ValidateFile(name string, f File) []Problem {
 // Library is a set of loaded library files.
 type Library struct {
 	Files []File
+	// Summaries are the hand-picked topic summaries (see LoadSummaries).
+	Summaries []TopicSummary
 }
 
 // LoadDir reads and validates every *.json file in dir. Files with errors are

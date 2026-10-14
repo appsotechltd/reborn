@@ -32,10 +32,11 @@ export interface LibraryPage<K extends LibraryKind> {
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
 /** "Library" with its two tabs, shared by /sources and /authors. */
-export function LibraryHeader({ current }: { current: LibraryKind }) {
-  const tabs: { kind: LibraryKind; href: string; label: string }[] = [
+export function LibraryHeader({ current }: { current: LibraryKind | "summaries" }) {
+  const tabs: { kind: LibraryKind | "summaries"; href: string; label: string }[] = [
     { kind: "books", href: "/sources", label: "Books" },
     { kind: "authors", href: "/authors", label: "Authors" },
+    { kind: "summaries", href: "/summaries", label: "Summaries" },
   ];
   return (
     <header>

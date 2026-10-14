@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/appsotechltd/reborn/backend/internal/cardaudio"
+	"github.com/appsotechltd/reborn/backend/internal/cardimages"
 	"github.com/appsotechltd/reborn/backend/internal/content"
 	"github.com/appsotechltd/reborn/backend/internal/explainers"
 	"github.com/jackc/pgx/v5"
@@ -47,12 +48,28 @@ type Card struct {
 	Explainer *explainers.Explainer `json:"explainer,omitempty"`
 	// Audio is the card read aloud in its book's voice, when one is recorded.
 	Audio *cardaudio.Audio `json:"audio,omitempty"`
+	// Image is the picture shown at the top of the full card, when one is made.
+	Image *cardimages.Image `json:"image,omitempty"`
 }
 
 var explainerSet atomic.Pointer[explainers.Set]
 
 // SetExplainers sets the explainer videos attached to cards as they are read.
 func SetExplainers(set explainers.Set) { explainerSet.Store(&set) }
+
+var imageSet atomic.Pointer[cardimages.Set]
+
+// SetImages sets the pictures attached to cards as they are read.
+func SetImages(set cardimages.Set) { imageSet.Store(&set) }
+
+func imageFor(id string) *cardimages.Image {
+	if set := imageSet.Load(); set != nil {
+		if img, ok := (*set)[id]; ok {
+			return &img
+		}
+	}
+	return nil
+}
 
 var audioSet atomic.Pointer[cardaudio.Set]
 
@@ -105,6 +122,7 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 	c.Credit = "Source: " + c.Source.Attribution
 	c.Explainer = explainerFor(c.ID)
 	c.Audio = audioFor(c.ID)
+	c.Image = imageFor(c.ID)
 	return c, nil
 }
 
@@ -327,9 +345,10 @@ func upsertCard(ctx context.Context, tx pgx.Tx, src content.Source, c content.Ca
 
 // SeedResult summarises an import.
 type SeedResult struct {
-	Sources int
-	Cards   int
-	Changed int
+	Sources   int
+	Cards     int
+	Changed   int
+	Summaries int
 }
 
 // Seed upserts every source and card in the library in one transaction.
@@ -360,7 +379,9 @@ func (s *Store) Seed(ctx context.Context, lib content.Library) (SeedResult, erro
 				return err
 			}
 		}
-		return nil
+		n, err := seedSummaries(ctx, tx, lib)
+		res.Summaries = n
+		return err
 	})
 	return res, err
 }

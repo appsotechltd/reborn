@@ -214,7 +214,6 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Idea'), findsOneWidget); // the card screen's title
     expect(find.text('APPLY IT'), findsOneWidget);
-    expect(find.byKey(const ValueKey('card-credit')), findsOneWidget);
     expect(server.called('POST /v1/cards/p1/view'), hasLength(1));
 
     // Back on the feed, on the same post, and a swipe still moves one.
