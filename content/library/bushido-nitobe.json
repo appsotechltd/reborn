@@ -1,0 +1,924 @@
+{
+  "source": {
+    "id": "bushido-nitobe",
+    "title": "Bushido, the Soul of Japan",
+    "authors": [
+      "Inazo Nitobe"
+    ],
+    "kind": "book",
+    "url": "https://www.gutenberg.org/ebooks/12096",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "attribution": "Inazo Nitobe, Bushido, the Soul of Japan, Project Gutenberg, public domain",
+    "publisher": "Project Gutenberg",
+    "year": 1900,
+    "language": "en",
+    "retrieved_at": "2026-10-12"
+  },
+  "cards": [
+    {
+      "id": "bushido-nitobe--01",
+      "topic": "lives-history",
+      "tags": [
+        "japan",
+        "samurai",
+        "moral-education",
+        "origins"
+      ],
+      "title": "A question from a Belgian professor led to a famous book on the samurai code",
+      "body": "Around 1889, the Japanese scholar Inazo Nitobe was walking with the Belgian jurist Émile de Laveleye when the professor learned that Japanese schools taught no religion. He stopped, astonished, and asked how children could learn right from wrong. Nitobe had no answer at the time. Years later he realised his own moral sense came from Bushido, the code of the samurai warrior class.\n\nHe wrote this book in English in 1899, in Pennsylvania, to explain Japan to Western readers. Keep that purpose in mind: it is a proud, idealised portrait, and the real samurai often fell short of it. Still, the question behind it is a good one for anyone: where did your sense of right and wrong actually come from?",
+      "quote": "No religion! How do you impart moral education?",
+      "locator": "Preface ¶1",
+      "apply_it": "Name two people or stories that shaped your sense of right and wrong before you were twelve.",
+      "quiz": {
+        "question": "What question prompted Nitobe to write the book?",
+        "options": [
+          "Why Japan had no army",
+          "Why samurai wore two swords",
+          "How Japan taught morals without religious schooling",
+          "Who founded the shogunate"
+        ],
+        "answer": 2,
+        "explanation": "De Laveleye asked how moral education was possible without religion in schools; Nitobe traced his own answer to Bushido."
+      }
+    },
+    {
+      "id": "bushido-nitobe--02",
+      "topic": "lives-history",
+      "tags": [
+        "japan",
+        "feudalism",
+        "unwritten-rules",
+        "culture"
+      ],
+      "title": "The samurai code was never written down; it grew out of centuries of practice",
+      "body": "Bushido, Nitobe explains, means 'military-knight-ways': the conduct expected of Japan's warrior class in daily life as well as in battle. It had no founding document. A few maxims passed by word of mouth or from famous warriors' pens, but mostly it lived in example and habit.\n\nHe dates its conscious rise to the feudal age that began late in the twelfth century, when Minamoto no Yoritomo took power and a professional warrior class, the samurai (literally 'those who serve'), came to the fore. Rival clans of fighters needed a shared standard of behaviour.\n\nEvery team and family has unwritten codes like this. They are powerful precisely because nobody has to look them up.",
+      "quote": "It was an organic growth of decades and centuries of military career.",
+      "locator": "Bushido as an Ethical System ¶6",
+      "apply_it": "Write down one unwritten rule in your workplace or family. Is it one you would choose to keep?",
+      "quiz": {
+        "question": "According to Nitobe, where did Bushido come from?",
+        "options": [
+          "A single law code issued by an emperor",
+          "Centuries of warrior practice and custom",
+          "A book by a famous general",
+          "Christian missionaries"
+        ],
+        "answer": 1,
+        "explanation": "He stresses it had no founder or charter; it grew over generations of military life."
+      }
+    },
+    {
+      "id": "bushido-nitobe--03",
+      "topic": "faith-wisdom",
+      "tags": [
+        "shinto",
+        "buddhism",
+        "zen",
+        "self-knowledge"
+      ],
+      "title": "Shinto shrines held a plain mirror: worship began with looking at yourself",
+      "body": "Nitobe names three roots of Bushido. From Buddhism, and Zen meditation in particular, came calm acceptance of what cannot be changed and composure in the face of danger. From Shinto, Japan's native faith, came loyalty, reverence for ancestors and love of the land.\n\nHe points to a striking detail. Shinto shrines are nearly bare, and the central object is often a simple mirror. Standing before it, the worshipper sees their own face. Nitobe reads this as a call to self-examination, much like the Greek motto 'Know thyself': a clear, calm heart reflects the divine.\n\nA mirror moment is still useful: before judging a situation, look honestly at your own part in it.",
+      "quote": "When you stand, therefore, in front of the shrine to worship, you see your own image reflected on its shining surface",
+      "locator": "Sources of Bushido, ¶4",
+      "apply_it": "Tonight, spend two quiet minutes asking: what did I do well today, and where did I fall short?",
+      "quiz": {
+        "question": "What did Nitobe say the mirror in a Shinto shrine stood for?",
+        "options": [
+          "The human heart, and a call to know yourself",
+          "Wealth and display",
+          "Protection from evil spirits"
+        ],
+        "answer": 0,
+        "explanation": "He saw it as an image of the heart and compared it to the Greek command 'Know thyself'."
+      }
+    },
+    {
+      "id": "bushido-nitobe--04",
+      "topic": "faith-wisdom",
+      "tags": [
+        "confucius",
+        "wang-yangming",
+        "knowledge",
+        "character"
+      ],
+      "title": "Samurai mocked book learning that never showed up in behaviour",
+      "body": "The moral teaching of Confucius and Mencius, brought from China, gave Bushido most of its ethics. Yet samurai had little respect for scholars who could only recite the classics. One compared learning to a strong-smelling vegetable that must be boiled again and again before it is fit to eat. A man who knew a lot but was unchanged by it was called a mere machine.\n\nNitobe connects this to the Chinese thinker Wang Yangming, who taught that 'to know and to act are one and the same'.\n\nThe test still works. If you have read about patience, kindness or saving money, the real question is whether anyone around you could tell.",
+      "quote": "The writer meant thereby that knowledge becomes really such only when it is assimilated in the mind of the learner and shows in his character.",
+      "locator": "Sources of Bushido, ¶9",
+      "apply_it": "Pick one idea from something you read recently and do one thing with it before the day ends.",
+      "quiz": {
+        "question": "What did Wang Yangming teach, as Nitobe quotes him?",
+        "options": [
+          "Knowledge is power",
+          "Study is its own reward",
+          "To know and to act are one and the same",
+          "Only priests need philosophy"
+        ],
+        "answer": 2,
+        "explanation": "Bushido valued knowledge only when it was put into practice and visible in character."
+      }
+    },
+    {
+      "id": "bushido-nitobe--05",
+      "topic": "mental-strength",
+      "tags": [
+        "rectitude",
+        "integrity",
+        "decisions",
+        "backbone"
+      ],
+      "title": "Rectitude was the backbone: without it, talent and learning counted for nothing",
+      "body": "Nitobe calls rectitude, or justice, the most important rule of the samurai. Nothing was more hateful to them than underhand dealing. One warrior described it as the power to decide on a course in line with reason and to hold to it without wavering. Another used a body image: rectitude is the bone. Without bones, the head cannot sit on the spine or the feet stand, and without rectitude no amount of skill makes a person worth trusting.\n\nEven in peaceful later centuries, the name 'man of rectitude' ranked above any title for scholarship or art.\n\nSkills can be learned at any time. A firm, honest spine is what makes people willing to rely on them.",
+      "quote": "Rectitude is the bone that gives firmness and stature.",
+      "locator": "Rectitude or Justice, ¶1",
+      "apply_it": "Think of a decision you keep putting off because the honest choice is awkward. What would holding firm look like?",
+      "quiz": {
+        "question": "In the samurai image, what was rectitude compared to?",
+        "options": [
+          "The bones of the body",
+          "A sword",
+          "A river",
+          "A mirror"
+        ],
+        "answer": 0,
+        "explanation": "Like bones holding up the body, rectitude gave a person firmness; without it talent counted for little."
+      }
+    },
+    {
+      "id": "bushido-nitobe--06",
+      "topic": "mental-strength",
+      "tags": [
+        "courage",
+        "recklessness",
+        "doing-right",
+        "confucius"
+      ],
+      "title": "Real courage is doing what is right, not rushing into danger",
+      "body": "The samurai did not count courage as a virtue unless it served a right cause. Nitobe quotes Confucius: seeing what is right and not doing it shows a lack of courage. Put positively, courage is doing what is right.\n\nRecklessness got no praise. Dying for a worthless cause was called a 'dog's death'. A prince of Mito remarked that charging into battle and being killed is easy, and any rough fellow can manage it; the harder courage is knowing when it is right to live and when it is right to stand firm.\n\nToday, the brave act is rarely dramatic. It is often the quiet, uncomfortable one: speaking up, apologising, or saying no.",
+      "quote": "Courage was scarcely deemed worthy to be counted among virtues, unless it was exercised in the cause of Righteousness.",
+      "locator": "Courage, the Spirit of Daring. And Bearing, ¶1",
+      "apply_it": "Name one right thing you know you should do this week but have been avoiding. Do it.",
+      "quiz": {
+        "question": "What did samurai call dying for an unworthy cause?",
+        "options": [
+          "A dog's death",
+          "A noble end",
+          "The warrior's path"
+        ],
+        "answer": 0,
+        "explanation": "Throwing life away for nothing was scorned; courage had to serve what was right."
+      }
+    },
+    {
+      "id": "bushido-nitobe--07",
+      "topic": "lives-history",
+      "tags": [
+        "ota-dokan",
+        "composure",
+        "poetry",
+        "edo"
+      ],
+      "title": "Ota Dokan, builder of Edo Castle, answered a poem even as he was struck down",
+      "body": "Ota Dokan was the fifteenth-century warrior who built the first castle at Edo, the city now called Tokyo. He was murdered in 1486. Nitobe retells a story that Japanese, he says, accept as history: as the assassin's spear struck, the attacker recited half a poem about clinging to life, and the wounded Dokan calmly finished it, saying his heart had learned in peaceful times to hold life lightly.\n\nWhether every word is true or not, the story was told to teach composure. Nitobe calls calm 'courage in repose': a mind with room to spare even under pressure.\n\nThat inner room is worth building in quiet times, so it is there when a hard moment arrives.",
+      "quote": "Tranquillity is courage in repose.",
+      "locator": "Courage, the Spirit of Daring. And Bearing, ¶4",
+      "apply_it": "Practise calm when stakes are low: next time something small goes wrong, take three slow breaths before you reply.",
+      "quiz": {
+        "question": "What did Nitobe say tranquillity was?",
+        "options": [
+          "A sign of weakness",
+          "Courage in repose",
+          "A gift only priests had",
+          "Indifference to others"
+        ],
+        "answer": 1,
+        "explanation": "He saw calm presence of mind as the quiet, resting form of courage."
+      }
+    },
+    {
+      "id": "bushido-nitobe--08",
+      "topic": "lives-history",
+      "tags": [
+        "yoshiie",
+        "mercy",
+        "respect",
+        "battle"
+      ],
+      "title": "A general lowered his bow because his fleeing enemy kept his wits",
+      "body": "In the eleventh century, at the Koromo River in northern Japan, the army of the warrior Sadato was routed and he fled. The pursuing general, Yoshiie, called out that it was a disgrace for a warrior to show his back. Sadato turned. Yoshiie shouted half a verse, a pun on the river's name about cloth torn to shreds. Sadato, still in danger, finished it at once: the threads were worn by long use.\n\nYoshiie unstrung his bow and rode away. Asked why, he said he could not bring himself to shame a man who kept his presence of mind while hunted.\n\nRespect for an opponent's character, even in a fight, can matter more than winning the moment.",
+      "quote": "he replied that he could not bear to put to shame one who had kept his presence of mind while hotly pursued by his enemy.",
+      "locator": "Courage, the Spirit of Daring. And Bearing, ¶14",
+      "apply_it": "Next time you win an argument, find one thing to honestly respect in the other person's case and say it.",
+      "quiz": {
+        "question": "Why did Yoshiie let his enemy Sadato go?",
+        "options": [
+          "He admired Sadato's composure under pressure",
+          "He ran out of arrows",
+          "Sadato paid a ransom",
+          "His own troops refused to fight"
+        ],
+        "answer": 0,
+        "explanation": "Sadato completed the verse calmly while being chased, and Yoshiie would not shame such a man."
+      }
+    },
+    {
+      "id": "bushido-nitobe--09",
+      "topic": "lives-history",
+      "tags": [
+        "kenshin",
+        "shingen",
+        "rivals",
+        "fair-play"
+      ],
+      "title": "Uesugi Kenshin sent salt to his enemy: 'I do not fight with salt'",
+      "body": "In sixteenth-century Japan, the warlords Uesugi Kenshin and Takeda Shingen fought each other for years. Shingen's lands lay in the mountains, far from the sea, and depended on salt from the coast. A third lord, Hojo, cut off that supply to weaken him.\n\nKenshin, whose own lands touched the coast, wrote to Shingen that the blockade was a mean act. He ordered his own people to sell Shingen all the salt he needed, saying he fought with the sword, not with salt. When Shingen died, Kenshin is said to have wept for 'the best of enemies'.\n\nCompetition can be fierce and still fair. Beating a rival by starving them of basics is not a victory worth having.",
+      "quote": "I do not fight with salt, but with the sword",
+      "locator": "Courage, the Spirit of Daring. And Bearing, ¶15",
+      "apply_it": "Is there a rival you are tempted to undercut in a petty way? Decide to compete only on the merits.",
+      "quiz": {
+        "question": "Why did Kenshin let salt reach his enemy Shingen?",
+        "options": [
+          "He wanted to trade for gold",
+          "Shingen had surrendered",
+          "He thought cutting off salt was a mean way to fight",
+          "The emperor ordered it"
+        ],
+        "answer": 2,
+        "explanation": "Kenshin held that real conflict should be settled honourably, not by depriving people of necessities."
+      }
+    },
+    {
+      "id": "bushido-nitobe--10",
+      "topic": "leadership",
+      "tags": [
+        "benevolence",
+        "servant-leadership",
+        "yozan",
+        "mencius"
+      ],
+      "title": "Japanese lord Yozan said, like Frederick the Great, that rulers are servants",
+      "body": "Nitobe argues that benevolence, meaning kindness, sympathy and mercy, was the princely virtue. Confucius and Mencius kept repeating that a ruler's first requirement is care for the people. Mencius said no one can truly rule people who have not given him their hearts.\n\nNitobe offers an example. In the eighteenth century, as Frederick the Great of Prussia called kings 'the first servants of the State', Uesugi Yozan, lord of Yonezawa in north-western Japan, made the same declaration and reformed his domain on that basis.\n\nNitobe's wider defence of 'fatherly' government belongs to his era. The core point travels well: authority lasts when the people under it can see it working for them.",
+      "quote": "Strangely coinciding in time, in the backwoods of North-western Japan, Yozan of Yonézawa made exactly the same declaration, showing that feudalism was not all tyranny and oppression.",
+      "locator": "Benevolence, the Feeling of. Distress, ¶2",
+      "apply_it": "Ask one person who reports to you, or relies on you, what would make their work easier. Act on one answer.",
+      "quiz": {
+        "question": "What did Yozan of Yonezawa declare, echoing Frederick the Great?",
+        "options": [
+          "That the sword is the soul of a lord",
+          "That rulers are servants of the state",
+          "That trade should be banned",
+          "That farmers must pay double taxes"
+        ],
+        "answer": 1,
+        "explanation": "He held, like Frederick, that a ruler exists to serve the people and the state."
+      }
+    },
+    {
+      "id": "bushido-nitobe--11",
+      "topic": "leadership",
+      "tags": [
+        "balance",
+        "justice",
+        "mercy",
+        "masamune"
+      ],
+      "title": "Too much firmness turns rigid; too much kindness turns weak",
+      "body": "Nitobe warns that the samurai were taught not to give charity blindly. Mercy had to be seasoned with justice. He quotes the warlord Masamune: rectitude pushed too far hardens into stiffness, and benevolence indulged too far sinks into weakness.\n\nThe samurai phrase 'the tenderness of a warrior' meant mercy from someone who had real power to act, used with judgement rather than impulse.\n\nAny parent, manager or coach knows this tension. All rules and no warmth makes people brittle and resentful. All warmth and no standards leaves them without direction. Good leaders keep adjusting the balance to the person and the moment.",
+      "quote": "Rectitude carried to excess hardens into stiffness; Benevolence indulged beyond measure sinks into weakness.",
+      "locator": "Benevolence, the Feeling of. Distress, ¶5",
+      "apply_it": "Think of someone you guide. Which do they need more of from you right now: firmness or warmth?",
+      "quiz": {
+        "question": "What did Masamune say happens to benevolence carried too far?",
+        "options": [
+          "It becomes wisdom",
+          "It turns into courage",
+          "It hardens into stiffness",
+          "It sinks into weakness"
+        ],
+        "answer": 3,
+        "explanation": "He warned that both justice and mercy go wrong at the extremes: rigidity on one side, weakness on the other."
+      }
+    },
+    {
+      "id": "bushido-nitobe--12",
+      "topic": "lives-history",
+      "tags": [
+        "kumagai",
+        "1184",
+        "cost-of-war",
+        "compassion"
+      ],
+      "title": "After killing a boy in battle in 1184, Kumagai gave up war and became a monk",
+      "body": "In 1184, at the battle of Suma-no-ura on the coast near modern Kobe, the warrior Kumagai overpowered an enemy and tore off his helmet, only to find a beardless youth about his own son's age. He begged the boy to escape. The boy refused, and with Kumagai's comrades closing in, Kumagai killed him rather than let a crueller hand do it.\n\nNitobe tells what followed. Kumagai cared nothing for the fame the war brought him. He shaved his head, became a Buddhist priest and spent the rest of his life on pilgrimage.\n\nThe story endures in Japanese art and theatre because it refuses to make war glorious. Behind every victory is someone's child.",
+      "quote": "he renounces his warlike career, shaves his head, dons a priestly garb, devotes the rest of his days to holy pilgrimage",
+      "locator": "Benevolence, the Feeling of. Distress, ¶11",
+      "apply_it": "When you hear of a 'win' in the news, pause to ask who paid the price for it.",
+      "quiz": {
+        "question": "How did Kumagai respond after the war?",
+        "options": [
+          "He was made a great lord",
+          "He wrote a manual of swordsmanship",
+          "He renounced fighting and became a priest"
+        ],
+        "answer": 2,
+        "explanation": "The killing of the young warrior turned him away from war for the rest of his life."
+      }
+    },
+    {
+      "id": "bushido-nitobe--13",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "poetry",
+        "music",
+        "gentleness",
+        "satsuma"
+      ],
+      "title": "Warriors were taught music and poetry to keep their hearts gentle",
+      "body": "Nitobe notes that in Satsuma, a province in southern Kyushu famous for its fighters, young samurai were expected to play sad, tender melodies on the biwa, a lute, to cool their tempers. Writing verse was encouraged across Japan for the same reason.\n\nHe tells of a rough young samurai who, set to write about the song of a warbler, angrily wrote that a brave warrior does not listen to birds. His teacher kept encouraging him, until one day he wrote of a warrior in armour stopping to listen to the song.\n\nArt is not a luxury for hard people. It trains attention to feeling, our own and other people's.",
+      "quote": "The cultivation of tender feelings breeds considerate regard for the sufferings of others.",
+      "locator": "Benevolence, the Feeling of. Distress, ¶21",
+      "apply_it": "This week, spend ten minutes with music, poetry or drawing that moves you, with no goal but noticing what you feel.",
+      "quiz": {
+        "question": "Why were young Satsuma samurai encouraged to play the biwa?",
+        "options": [
+          "To soothe their fiery spirits and cultivate gentleness",
+          "To entertain the lord",
+          "To signal troops in battle"
+        ],
+        "answer": 0,
+        "explanation": "Tender music and verse were meant to soften warriors and build regard for others' suffering."
+      }
+    },
+    {
+      "id": "bushido-nitobe--14",
+      "topic": "etiquette",
+      "tags": [
+        "politeness",
+        "empathy",
+        "manners",
+        "sincerity"
+      ],
+      "title": "Politeness is worth little unless it comes from care for other people's feelings",
+      "body": "Foreign visitors to Japan often remarked on its courtesy. Nitobe insists that manners practised only to avoid looking bad are a poor thing. True politeness is the outward sign of sympathy for others. At its best, he says, it comes close to love: patient, kind, not boastful.\n\nHe also admits that because politeness was prized so highly, counterfeits appeared: empty forms and elaborate rules followed for show. Confucius taught that the outward forms are no more the heart of courtesy than sounds alone are music.\n\nThe test for any good manners is simple. Would the gesture still make sense if no one were watching to judge you?",
+      "quote": "Politeness is a poor virtue, if it is actuated only by a fear of offending good taste, whereas it should be the outward manifestation of a sympathetic regard for the feelings of others.",
+      "locator": "Politeness, ¶1",
+      "apply_it": "Choose one routine courtesy, like a thank-you or a greeting, and do it today while really paying attention to the person.",
+      "quiz": {
+        "question": "What did Nitobe say true politeness should express?",
+        "options": [
+          "Respect for rank alone",
+          "Fear of social mistakes",
+          "Knowledge of rules",
+          "Sympathetic regard for others' feelings"
+        ],
+        "answer": 3,
+        "explanation": "He held that manners only matter when they are the outward form of real care."
+      }
+    },
+    {
+      "id": "bushido-nitobe--15",
+      "topic": "etiquette",
+      "tags": [
+        "tea-ceremony",
+        "calm",
+        "hospitality",
+        "ritual"
+      ],
+      "title": "Warriors left their swords at the door of the tea room",
+      "body": "Nitobe uses the tea ceremony, cha-no-yu, to show how a simple act can become a spiritual discipline. The tea room was small, spotless and bare, with perhaps one hanging scroll. Showiness was banned. Every movement followed a set form that, he argues, is simply the most economical and graceful way to do it.\n\nThe ceremony was developed by a contemplative recluse during a time of constant war. Guests entering laid down their swords, and with them the anger of battle and the worries of government, to share a bowl of tea in peace.\n\nA ritual of calm, even ten minutes of making tea or coffee slowly and well, can still mark the line between strain and rest.",
+      "quote": "Before entering the quiet precincts of the tea-room, the company assembling to partake of the ceremony laid aside, together with their swords, the ferocity of the battle-field or the cares of government, there to find peace and friendship.",
+      "locator": "Politeness, ¶11",
+      "apply_it": "When a guest next visits, put phones and work away and give them a simple drink made with full attention.",
+      "quiz": {
+        "question": "What did guests leave behind before entering the tea room?",
+        "options": [
+          "Their shoes only",
+          "Their swords, and with them the cares of battle and government",
+          "Their names",
+          "Their families"
+        ],
+        "answer": 1,
+        "explanation": "Setting down the sword symbolised leaving conflict and worry outside to find peace and friendship."
+      }
+    },
+    {
+      "id": "bushido-nitobe--16",
+      "topic": "etiquette",
+      "tags": [
+        "empathy",
+        "small-gestures",
+        "courtesy",
+        "kindness"
+      ],
+      "title": "If you can't shade a friend from the sun, you can stand in it with them",
+      "body": "Nitobe describes a custom an American missionary found 'awfully funny'. On a blazing day, a Japanese man meets an acquaintance who has no shade. He takes off his hat to greet them, and then, while they talk, he lowers his own parasol and stands in the sun too.\n\nFoolish? Nitobe explains the thought behind it: you are in the sun and I feel for you; I cannot shade you, so I will share your discomfort. Small acts like this, he says, are not empty conventions but the visible form of thoughtful feeling.\n\nWe can't always fix someone's hardship. We can often choose not to sit comfortably apart from it.",
+      "quote": "as I cannot shade you, I will share your discomforts.",
+      "locator": "Politeness, ¶14",
+      "apply_it": "Next time someone near you is stuck with a discomfort you can't fix, find a small way to share it rather than wait it out apart.",
+      "quiz": {
+        "question": "Why did the man lower his parasol while talking in the sun?",
+        "options": [
+          "To share the discomfort of the person he was talking to",
+          "The parasol was broken",
+          "Etiquette banned parasols outdoors"
+        ],
+        "answer": 0,
+        "explanation": "Unable to shade his companion, he chose to stand in the sun alongside them as a gesture of sympathy."
+      }
+    },
+    {
+      "id": "bushido-nitobe--17",
+      "topic": "lives-history",
+      "tags": [
+        "honesty",
+        "promises",
+        "trust",
+        "veracity"
+      ],
+      "title": "A samurai's word needed no written contract",
+      "body": "Nitobe writes that lying or dodging the truth was seen as cowardice. A samurai's word, 'bushi no ichi-gon', was enough to guarantee a statement, and promises were usually made and kept with no written pledge, which would have seemed beneath his dignity. Many swore no oaths at all, feeling their plain word should suffice.\n\nCourtesy was not allowed to override truth either. The warlord Masamune warned that politeness pushed beyond its proper bounds 'becomes a lie', and saying sweet things just to be agreeable was dismissed as an empty form.\n\nA reputation for keeping your word is built slowly and lost quickly. It is still the cheapest form of trust there is.",
+      "quote": "promises were generally made and fulfilled without a written pledge, which would have been deemed quite beneath his dignity.",
+      "locator": "Veracity or Truthfulness, ¶2",
+      "apply_it": "List the small promises you've made this week, like a call or a reply. Keep the oldest one today.",
+      "quiz": {
+        "question": "What did 'bushi no ichi-gon' mean?",
+        "options": [
+          "The samurai's sword",
+          "A samurai's family name",
+          "The word of a samurai, trusted without a written pledge",
+          "A samurai's yearly stipend"
+        ],
+        "answer": 2,
+        "explanation": "The phrase meant a samurai's spoken word was itself a sufficient guarantee."
+      }
+    },
+    {
+      "id": "bushido-nitobe--18",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "honour",
+        "shame",
+        "touchiness",
+        "patience"
+      ],
+      "title": "True honour lies within you, not in what others say about you",
+      "body": "Samurai children were raised on a strong sense of shame: 'You will be laughed at' was the last word in correcting them. Nitobe admits this often turned unhealthy. Hot-tempered men took offence at slights, real or imagined, and drew their swords, and innocent people died.\n\nThe code itself pushed back. Taking offence easily was mocked as being 'short-tempered', and a saying taught that to bear what you think you cannot bear is really to bear. Mencius, Nitobe notes, put it most clearly: everyone loves honour, yet few see that the honour others give can be taken away, while real honour is within.\n\nWhen pride is stung, ask whether your character was harmed, or only your image.",
+      "quote": "’Tis in every man’s mind to love honor: but little doth he dream that what is truly honorable lies within himself and not anywhere else.",
+      "locator": "Honor, ¶8",
+      "apply_it": "Next time you feel slighted, ask: has my actual character been changed by this? If not, let it go.",
+      "quiz": {
+        "question": "According to the Mencius quote, where does true honour lie?",
+        "options": [
+          "In public titles",
+          "Within oneself",
+          "In the approval of the crowd",
+          "In a family's wealth"
+        ],
+        "answer": 1,
+        "explanation": "Mencius held that honour given by others can be withdrawn; real honour is within."
+      }
+    },
+    {
+      "id": "bushido-nitobe--19",
+      "topic": "lives-history",
+      "tags": [
+        "nobunaga",
+        "hideyoshi",
+        "ieyasu",
+        "leadership-styles"
+      ],
+      "title": "Three unifiers of Japan, three ways to make a bird sing",
+      "body": "In the late 1500s and early 1600s, three warlords in turn brought Japan's warring provinces under one rule: Oda Nobunaga, Toyotomi Hideyoshi and Tokugawa Ieyasu, whose family then governed for over 250 years. Nitobe passes on a witty epigram a later writer put in their mouths about a nightingale that will not sing.\n\nNobunaga: I will kill it if it does not sing. Hideyoshi: I will make it sing. Ieyasu: I will wait until it sings.\n\nIt is a joke, not a record, but it captures three temperaments: force, cleverness and patience. It was the patient one who founded the lasting dynasty. Not every problem needs to be solved today.",
+      "quote": "A literary wit put a characteristic epigram into the mouths of three well-known personages in our history",
+      "locator": "Honor, ¶5",
+      "apply_it": "Think of a stuck situation. Are you forcing it, scheming around it, or could waiting a while serve better?",
+      "quiz": {
+        "question": "In the epigram, which leader says he will wait for the nightingale to sing?",
+        "options": [
+          "Ieyasu",
+          "Nobunaga",
+          "Hideyoshi"
+        ],
+        "answer": 0,
+        "explanation": "Ieyasu, known for patience, was the one who founded the long-lasting Tokugawa shogunate."
+      }
+    },
+    {
+      "id": "bushido-nitobe--20",
+      "topic": "mental-strength",
+      "tags": [
+        "patience",
+        "ieyasu",
+        "endurance",
+        "long-game"
+      ],
+      "title": "Ieyasu: life is a long journey with a heavy load, so do not hurry",
+      "body": "Tokugawa Ieyasu, who founded the shogunate that ruled Japan from 1603 until the 1860s, left a few maxims for those who came after him. Nitobe quotes them: life is like a long journey carrying a heavy load on your shoulders, so do not hurry. Blame no one, but always watch your own shortcomings. Forbearance is the basis of a long life.\n\nNitobe adds that Ieyasu lived as he taught, waiting out rivals for decades before taking power.\n\nThe image is a kind one for hard seasons. A heavy load is not a sign you are failing. It asks for a steady pace, rest along the way, and attention to your own footing more than to others' faults.",
+      "quote": "The life of man is like going a long distance with a heavy load upon the shoulders. Haste not.",
+      "locator": "Honor, ¶5",
+      "apply_it": "Name the heaviest thing you are carrying right now. What would a steadier, slower pace look like this week?",
+      "quiz": {
+        "question": "What did Ieyasu advise about the 'heavy load' of life?",
+        "options": [
+          "Drop it as fast as possible",
+          "Hand it to others",
+          "Do not hurry; watch your own shortcomings"
+        ],
+        "answer": 2,
+        "explanation": "He urged patience, steady pace and self-examination rather than blame."
+      }
+    },
+    {
+      "id": "bushido-nitobe--21",
+      "topic": "leadership",
+      "tags": [
+        "loyalty",
+        "dissent",
+        "candour",
+        "conscience"
+      ],
+      "title": "Loyalty meant telling your lord he was wrong, not flattering him",
+      "body": "Loyalty to one's lord was the keystone of the samurai code. Yet Nitobe stresses it was not blind obedience. Bushido did not ask anyone to make their conscience a slave to a ruler. Two kinds of retainer were despised: the fawning flatterer and the favourite who wins approval by always agreeing.\n\nWhen a samurai disagreed with his master, the loyal course was to use every means to persuade him he was wrong, as the faithful Kent does with King Lear in Shakespeare. He quotes the line: 'My life thou shalt command, but not my shame.'\n\nThe most loyal person on a team is often the one willing to say the unwelcome thing, respectfully, to the person in charge.",
+      "quote": "When a subject differed from his master, the loyal path for him to pursue was to use every available means to persuade him of his error, as Kent did to King Lear.",
+      "locator": "The Duty of Loyalty, ¶17",
+      "apply_it": "Is there a concern you've kept from a boss or leader to avoid friction? Plan how to raise it calmly this week.",
+      "quiz": {
+        "question": "According to Nitobe, what was the loyal response when a samurai disagreed with his lord?",
+        "options": [
+          "Try every means to persuade him of his error",
+          "Obey silently",
+          "Leave and serve another lord",
+          "Flatter him until he changed his mind"
+        ],
+        "answer": 0,
+        "explanation": "Bushido scorned flatterers; true loyalty meant honest persuasion, like Kent with King Lear."
+      }
+    },
+    {
+      "id": "bushido-nitobe--22",
+      "topic": "lives-history",
+      "tags": [
+        "shigemori",
+        "divided-loyalty",
+        "duty",
+        "family"
+      ],
+      "title": "Shigemori was torn between loyalty to his emperor and to his own father",
+      "body": "In twelfth-century Japan, Taira no Shigemori faced a cruel bind. His father, the powerful Taira no Kiyomori, was acting against the sovereign. The historian Rai Sanyo, writing centuries later, records Shigemori's anguish: if he stayed loyal to the throne, his father would be ruined; if he obeyed his father, he betrayed his duty to his ruler.\n\nNitobe says Bushido always ranked loyalty to the lord above even a son's duty, and that many people knew Shigemori's pain.\n\nMost of us face gentler versions: work against family, one friend against another. Naming the conflict honestly, as Shigemori did, is the first step to choosing well and living with the cost.",
+      "quote": "If I be loyal, my father must be undone; if I obey my father, my duty to my sovereign must go amiss.",
+      "locator": "The Duty of Loyalty, ¶9",
+      "apply_it": "If two duties are pulling at you, write each one down with what it truly asks of you. Seeing both clearly helps you choose.",
+      "quiz": {
+        "question": "What was Shigemori's dilemma?",
+        "options": [
+          "Whether to become a monk or a soldier",
+          "Whether to marry or go to war",
+          "Whether to leave Japan",
+          "Whether to be loyal to his sovereign or obey his father"
+        ],
+        "answer": 3,
+        "explanation": "His father opposed the sovereign, so loyalty to one meant betraying the other."
+      }
+    },
+    {
+      "id": "bushido-nitobe--23",
+      "topic": "lives-history",
+      "tags": [
+        "education",
+        "character",
+        "curriculum",
+        "samurai-schooling"
+      ],
+      "title": "Samurai schooling aimed first at character, then at skill",
+      "body": "Nitobe says the first goal of samurai education was to build character; cleverness and debate came second. Its three supports were wisdom, benevolence and courage.\n\nThe curriculum was practical: fencing, archery, jujutsu (unarmed self-defence meant to disable rather than kill), horsemanship, the spear, tactics, calligraphy, ethics, literature and history. Handwriting was taken seriously as a mirror of character. Mathematics was largely absent.\n\nTeachers were revered, and a saying held that parents give us birth but the teacher makes us human. Their work was repaid with gifts rather than fees, since forming a person was thought beyond price. Schools today still debate whether they teach facts or form people.",
+      "quote": "The first point to observe in knightly pedagogics was to build up character, leaving in the shade the subtler faculties of prudence, intelligence and dialectics.",
+      "locator": "Education and Training of. A Samurai, ¶2",
+      "apply_it": "Think of what you are learning now. Which character trait could it build in you, beyond the skill itself?",
+      "quiz": {
+        "question": "Which three qualities were said to support Bushido?",
+        "options": [
+          "Wealth, rank and fame",
+          "Wisdom, benevolence and courage",
+          "Strength, speed and cunning",
+          "Poetry, music and dance"
+        ],
+        "answer": 1,
+        "explanation": "Chi, Jin and Yu, wisdom, benevolence and courage, formed the tripod of samurai education."
+      }
+    },
+    {
+      "id": "bushido-nitobe--24",
+      "topic": "lives-history",
+      "tags": [
+        "money",
+        "simplicity",
+        "thrift",
+        "meiji"
+      ],
+      "title": "Samurai scorned money, which kept them clean but left many lost in business",
+      "body": "Samurai were raised to disdain money. Talking about prices was bad taste, and the actual counting of money was left to lower officials. Thrift was taught, but as self-discipline rather than economy, and luxury was seen as a threat to character. Nitobe credits this with keeping Japan's officials largely free from corruption.\n\nThe weakness showed after feudalism ended in the 1870s. Samurai were paid off in government bonds, and many put them into business. Nitobe writes that scarcely one in a hundred succeeded against shrewder rivals.\n\nThe balanced lesson: not loving money protects your integrity, but not understanding money can leave you exposed. You can value simplicity and still learn the numbers.",
+      "quote": "It is true that thrift was enjoined by Bushido, but not for economical reasons so much as for the exercise of abstinence.",
+      "locator": "Education and Training of. A Samurai, ¶5",
+      "apply_it": "Spend 15 minutes this week reviewing where your money actually goes. Simplicity works best with clear numbers.",
+      "quiz": {
+        "question": "According to Nitobe, how did most samurai fare in trade after feudalism ended?",
+        "options": [
+          "Scarcely one in a hundred succeeded",
+          "They became the richest merchants",
+          "They all became bankers",
+          "They were forbidden to try"
+        ],
+        "answer": 0,
+        "explanation": "Raised to ignore money, most samurai lacked the business skills to compete when they entered trade."
+      }
+    },
+    {
+      "id": "bushido-nitobe--25",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "self-control",
+        "emotions",
+        "balance",
+        "wellbeing"
+      ],
+      "title": "Self-control can go too far: the aim is a level mind, not a frozen heart",
+      "body": "Samurai were taught not to show joy or anger on their faces. Nitobe tells of a father who spent whole nights listening to his sick child's breathing from behind a door, so no one would catch him being 'weak', and of crowds seeing soldiers off to war in total silence.\n\nHe insists the Japanese felt no less than anyone; holding feelings in, he suspects, made them feel more. Grief found its way out in poetry instead. And he warns that self-restraint pushed too far can crush warmth, breed hypocrisy and dull the affections. The real goal was a level, cheerful mind.\n\nComposure is useful. But feelings that have no outlet at all tend to cost us later.",
+      "quote": "Discipline in self-control can easily go too far. It can well repress the genial current of the soul.",
+      "locator": "Self-control, ¶15",
+      "apply_it": "Pick one feeling you've been holding in. Tell a trusted person, or write it down.",
+      "quiz": {
+        "question": "What did Nitobe say the real ideal of self-restraint was?",
+        "options": [
+          "Never feeling anything",
+          "Hiding all emotion from family",
+          "Keeping the mind level and balanced",
+          "Laughing at every sorrow"
+        ],
+        "answer": 2,
+        "explanation": "He warned that suppression can go too far; the true aim was a calm, level mind, which the Greeks called euthymia."
+      },
+      "health": true
+    },
+    {
+      "id": "bushido-nitobe--26",
+      "topic": "mental-strength",
+      "tags": [
+        "endurance",
+        "hardship",
+        "hope",
+        "seppuku"
+      ],
+      "title": "Even the samurai code taught that daring to live can take more courage than dying",
+      "body": "Nitobe describes seppuku, the ritual suicide by which samurai sometimes atoned for crimes or escaped disgrace. He admits that once it was glorified, many young men threw their lives away for reasons that deserved no such end.\n\nYet he records a deeper teaching of the code: to hurry towards death to escape hardship was cowardice. He tells of a defeated warrior, alone and hungry in a hollow tree, who refused to give up and wrote a verse inviting every trial to test his remaining strength. He quotes Sir Thomas Browne: where life is harder than death, the truest courage is to dare to live.\n\nIf life ever feels too heavy, reaching out to someone you trust, or a crisis line, is that kind of courage.",
+      "quote": "It is a brave act of valor to contemn death, but where life is more terrible than death, it is then the truest valor to dare to live.",
+      "locator": "The Institutions of Suicide. And Redress, ¶24",
+      "apply_it": "Write the name of one person you could call on a very hard day. Let them know they're that person for you.",
+      "quiz": {
+        "question": "What did the code, as Nitobe describes it, say about hurrying towards death to escape hardship?",
+        "options": [
+          "It was the highest honour",
+          "It was cowardice; true courage was to endure",
+          "It was required after any defeat"
+        ],
+        "answer": 1,
+        "explanation": "Nitobe records that courting death to avoid suffering was counted cowardly; daring to live was true valour."
+      },
+      "health": true
+    },
+    {
+      "id": "bushido-nitobe--27",
+      "topic": "lives-history",
+      "tags": [
+        "forty-seven-ronin",
+        "revenge",
+        "justice",
+        "rule-of-law"
+      ],
+      "title": "Blood revenge faded once courts took over the work of justice",
+      "body": "Alongside ritual suicide, Nitobe describes kataki-uchi, the custom of revenge. Its most famous case is the forty-seven ronin: in 1701 their lord was condemned to die, and in 1703 his former retainers killed the official they blamed, then were themselves sentenced to death by the law. Nitobe notes their graves at Sengakuji temple in Tokyo still draw visitors.\n\nHe explains revenge as a crude court of last resort where no real court existed. The code allowed it only on behalf of a lord or parent; one's own injuries were to be borne and forgiven. Once Japan adopted a modern criminal code, he writes, the custom lost its reason to exist.\n\nFair institutions free people from the endless cycle of private payback.",
+      "quote": "The well-ordered police spies out the criminal for the injured party and the law metes out justice.",
+      "locator": "The Institutions of Suicide. And Redress, ¶30",
+      "apply_it": "Is there a grievance you've been nursing? Ask whether a fair process, a conversation, or letting go would serve you better than getting even.",
+      "quiz": {
+        "question": "According to Nitobe, why did the custom of revenge die out?",
+        "options": [
+          "The emperor banned swords",
+          "Samurai lost interest in honour",
+          "Buddhist monks forbade it",
+          "A criminal code and police made private revenge unnecessary"
+        ],
+        "answer": 3,
+        "explanation": "Once the state's courts and police reliably delivered justice, private revenge lost its purpose."
+      }
+    },
+    {
+      "id": "bushido-nitobe--28",
+      "topic": "lives-history",
+      "tags": [
+        "sword",
+        "responsibility",
+        "coming-of-age",
+        "symbols"
+      ],
+      "title": "A samurai boy got his first real sword at five, and with it a sense of responsibility",
+      "body": "Nitobe describes the sword as the soul of the samurai. At about five, a boy was dressed in samurai clothes, stood on a go board, and had a real sword placed in his sash instead of his toy one. From then on he did not leave home without a sword, often a wooden one at first. At fifteen, counted as an adult, he wore sharp steel.\n\nThe sword was treated with reverence: kept beside the pillow at night, given affectionate names, never stepped over. Its meaning was loyalty and honour, and simply carrying something so dangerous, Nitobe says, gave a young man self-respect and a sense of responsibility.\n\nBeing trusted with something that matters can help a young person grow into that trust.",
+      "quote": "The very possession of the dangerous instrument imparts to him a feeling and an air of self-respect and responsibility.",
+      "locator": "The Sword the Soul of the. Samurai, ¶1",
+      "apply_it": "Is there a young person you could trust with a real responsibility, suited to their age, this month?",
+      "quiz": {
+        "question": "At what age did a samurai boy traditionally receive his first real sword?",
+        "options": [
+          "Twelve",
+          "Twenty",
+          "Five",
+          "Thirty"
+        ],
+        "answer": 2,
+        "explanation": "At five, a ceremony placed a real sword in his sash; at fifteen he wore sharp blades as an adult."
+      }
+    },
+    {
+      "id": "bushido-nitobe--29",
+      "topic": "lives-history",
+      "tags": [
+        "katsu-kaishu",
+        "non-violence",
+        "restraint",
+        "meiji-restoration"
+      ],
+      "title": "Count Katsu tied his sword into its scabbard and never killed anyone",
+      "body": "Bushido revered the sword but, Nitobe insists, despised its misuse. A man who drew it without good cause was a coward or a braggart.\n\nHis example is Count Katsu Kaishu, a statesman in the violent years of the 1860s, when Japan's old order was collapsing and assassinations were common. Though he held great power and was repeatedly targeted for murder, Katsu said he never killed a single person. He bound his sword's hilt so tightly to its scabbard that it was hard to draw, resolving that even if others cut him, he would not cut.\n\nNitobe quotes a samurai saying that the best victory is the one won without bloodshed. Strength includes the power to hold back.",
+      "quote": "I made up my mind that though they cut me, I will not cut.",
+      "locator": "The Sword the Soul of the. Samurai, ¶5",
+      "apply_it": "Think of a conflict where you could 'tie your sword': decide in advance one sharp reply you will not make.",
+      "quiz": {
+        "question": "What did Count Katsu do with his sword?",
+        "options": [
+          "Fastened it so tightly to the scabbard it was hard to draw",
+          "Used it in many duels",
+          "Gave it to the emperor",
+          "Melted it down"
+        ],
+        "answer": 0,
+        "explanation": "He made his sword hard to draw, resolving never to kill, and survived turbulent times without shedding blood."
+      }
+    },
+    {
+      "id": "bushido-nitobe--30",
+      "topic": "lives-history",
+      "tags": [
+        "women",
+        "samurai-households",
+        "education",
+        "history"
+      ],
+      "title": "Samurai women trained with the halberd and ran the household while men were away",
+      "body": "Nitobe describes the training of girls in samurai families. They learned to use the naginata, a long-bladed pole weapon, to defend themselves and their homes. They also studied music, dancing and literature; he notes that some of the finest verses in Japanese literature were written by women.\n\nWhile husbands and fathers were away at war or on duty, the running of the household was left entirely to wives and mothers, including the education of children and even the defence of the home.\n\nThe picture is of women carrying heavy responsibility with little formal power, a pattern found in many societies. Remembering their skill and work gives a fuller history than one told only through generals.",
+      "quote": "While fathers and husbands were absent in field or camp, the government of the household was left entirely in the hands of mothers and wives.",
+      "locator": "The Training and Position of. Woman ¶15",
+      "apply_it": "Ask an older relative about a woman in your family history whose work kept things running. Write down what you learn.",
+      "quiz": {
+        "question": "Which weapon were samurai girls trained to use?",
+        "options": [
+          "The bow and arrow",
+          "The musket",
+          "The spear-thrower",
+          "The naginata, a long-handled blade"
+        ],
+        "answer": 3,
+        "explanation": "Girls learned the naginata, chiefly to defend themselves and their homes."
+      }
+    },
+    {
+      "id": "bushido-nitobe--31",
+      "topic": "lives-history",
+      "tags": [
+        "women",
+        "inequality",
+        "social-class",
+        "critical-reading"
+      ],
+      "title": "Nitobe admits samurai women were not treated as equals",
+      "body": "Nitobe is candid on one point: a woman under Bushido 'was not treated as man's equal'. Her life, he writes, was one of dependent service, as daughter, wife and mother. He adds an observation that surprises: among the classes of old Japan, women had the least freedom in the samurai class. Among artisans and small tradespeople, husbands and wives were closer to equal.\n\nHe then defends the system as 'difference' rather than inequality and urges reform without revolt, arguments shaped by his time that few would accept now.\n\nThe useful lesson is to look at who pays for a society's ideals. A code of honour for some can rest on the unseen sacrifice of others.",
+      "quote": "for in no class did she experience less freedom than among the samurai.",
+      "locator": "The Training and Position of. Woman ¶13",
+      "apply_it": "Pick a tradition you value. Ask who carries most of its unseen work, and whether that's fair.",
+      "quiz": {
+        "question": "In which class of old Japan, according to Nitobe, did women have the least freedom?",
+        "options": [
+          "Artisans",
+          "The samurai",
+          "Peasants",
+          "Merchants"
+        ],
+        "answer": 1,
+        "explanation": "Nitobe notes women had less freedom among the samurai than among artisans, where spouses were more nearly equal."
+      }
+    },
+    {
+      "id": "bushido-nitobe--32",
+      "topic": "lives-history",
+      "tags": [
+        "storytelling",
+        "influence",
+        "role-models",
+        "popular-culture"
+      ],
+      "title": "Samurai stories spread the code to farmers, shop boys and children",
+      "body": "The samurai were a small minority, Nitobe notes, but their ideals reached everyone through stories. Theatres, travelling storytellers and novels made them the main subject. Peasants around the fire retold the deeds of Yoshitsune and his loyal retainer Benkei, or the Soga brothers. Shop boys stayed up after work trading tales of Nobunaga and Hideyoshi. Toddlers learned the folk tale of Momotaro, the boy who defeats the ogres.\n\nHe quotes Emerson that virtues are as catching as vices, and observes that no class can stop moral influence from spreading.\n\nThe heroes a culture celebrates quietly set its standards. It is worth choosing which stories we pass on to children.",
+      "quote": "The peasants round the open fire in their huts never tire of repeating the achievements of Yoshitsuné and his faithful retainer Benkei, or of the two brave Soga brothers",
+      "locator": "The Influence of Bushido ¶6",
+      "apply_it": "Think of a story you often tell or share. What value does it quietly teach the people who hear it?",
+      "quiz": {
+        "question": "How, according to Nitobe, did samurai ideals reach ordinary Japanese people?",
+        "options": [
+          "Through theatre, storytellers, novels and fireside tales",
+          "Through compulsory military service",
+          "Through printed law codes",
+          "Through foreign missionaries"
+        ],
+        "answer": 0,
+        "explanation": "Popular stories about samurai heroes carried the code far beyond the warrior class."
+      }
+    },
+    {
+      "id": "bushido-nitobe--33",
+      "topic": "lives-history",
+      "tags": [
+        "meiji-restoration",
+        "modernisation",
+        "japan",
+        "change"
+      ],
+      "title": "The leaders who modernised Japan after 1868 were raised on the samurai code",
+      "body": "In 1868 the Meiji Restoration ended the rule of the shoguns. Within a few years, Nitobe writes, the feudal domains were abolished and the wearing of swords was banned. The samurai class ceased to exist.\n\nYet he argues that the statesmen who steered Japan through this upheaval, men like Saigo, Okubo, Kido and Ito, knew no moral teaching but Bushido. Japan adopted Western science and institutions by its own choice, and Nitobe believes the main motive was a sense of honour that could not bear to see the country treated as inferior.\n\nHis claim is a proud one, but its insight holds: old values can drive radical change, not just resist it.",
+      "quote": "The great statesmen who steered the ship of our state through the hurricane of the Restoration and the whirlpool of national rejuvenation, were men who knew no other moral teaching than the Precepts of Knighthood.",
+      "locator": "Is Bushido Still Alive? ¶9",
+      "apply_it": "Facing a big change? Name one value you already hold that could help you carry it through.",
+      "quiz": {
+        "question": "What motive did Nitobe see as the main driver of Japan's rapid modernisation?",
+        "options": [
+          "Desire for wealth",
+          "Blind imitation of the West",
+          "A sense of honour that refused to be seen as inferior",
+          "Pressure from missionaries"
+        ],
+        "answer": 2,
+        "explanation": "He argued it was honour, not money or imitation, that drove Japan to learn from the West."
+      }
+    },
+    {
+      "id": "bushido-nitobe--34",
+      "topic": "lives-history",
+      "tags": [
+        "self-criticism",
+        "honour",
+        "flaws",
+        "balanced-view"
+      ],
+      "title": "Nitobe admitted the samurai code also produced Japan's faults",
+      "body": "For all his admiration, Nitobe concedes that Bushido was 'largely responsible' for some of Japan's weaknesses. Its practical schooling neglected abstract thought, so the country had produced few philosophers. And the same intense sense of honour, he writes, bred touchiness, oversensitivity and what foreigners called conceit.\n\nThis honesty matters, because the book is otherwise an idealised portrait written for Western readers, and in the decades after it, militarists in Japan used samurai ideals to justify war. A heritage is never only its best stories.\n\nThe same is true of families, companies and nations: the trait that makes us strong often casts the shadow of our typical flaw.",
+      "quote": "Our sense of honor is responsible for our exaggerated sensitiveness and touchiness",
+      "locator": "Is Bushido Still Alive? ¶16",
+      "apply_it": "Name one strength you're proud of. What flaw tends to come with it when it's overdone?",
+      "quiz": {
+        "question": "Which fault did Nitobe link to the samurai sense of honour?",
+        "options": [
+          "Laziness",
+          "Touchiness and oversensitivity",
+          "Greed for money",
+          "Lack of courage"
+        ],
+        "answer": 1,
+        "explanation": "He admitted that the strong sense of honour also produced exaggerated sensitivity and touchiness."
+      }
+    },
+    {
+      "id": "bushido-nitobe--35",
+      "topic": "faith-wisdom",
+      "tags": [
+        "love",
+        "peace",
+        "legacy",
+        "stoicism"
+      ],
+      "title": "Beneath the instinct to fight lies a deeper instinct to love",
+      "body": "Nitobe ends by predicting that Bushido as a system would fade, as European chivalry did, once the feudal world that bore it was gone. States built on martial virtue, like Sparta or Rome, never last. The fighting instinct produces real virtues but does not cover the whole person. Beneath it, he writes, lies a diviner instinct to love, which Shinto, Mencius and Wang Yangming all taught but warrior codes too often forgot.\n\nHe compares Bushido to Stoicism: dead as a school, alive as a virtue wherever someone masters themselves. Like the scent of cherry blossom after the petals fall, its best qualities can outlast its name.\n\nKeep the courage and courtesy. Let love decide what they serve.",
+      "quote": "Beneath the instinct to fight there lurks a diviner instinct to love.",
+      "locator": "The Future of Bushido, ¶7",
+      "apply_it": "Think of a quality you've built through struggle, like toughness or discipline. How could you use it this week in the service of care?",
+      "quiz": {
+        "question": "How did Nitobe expect Bushido to survive?",
+        "options": [
+          "As a revived military system",
+          "Not at all",
+          "Only in museums",
+          "Like Stoicism: gone as a system but alive as a virtue"
+        ],
+        "answer": 3,
+        "explanation": "He expected the formal code to vanish but its virtues to live on, like Stoicism in the West."
+      }
+    }
+  ]
+}

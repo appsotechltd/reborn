@@ -5,7 +5,8 @@ mirror), optional mirror (a path under raw.githubusercontent.com/GITenberg, also
 gutenberg.org is unreachable), optional start / end (literal lines that bound the body,
 to drop front matter such as a table of contents), optional verses (a book name such as "Proverbs":
 the text is a Gutenberg Bible book with "20:006:006" verse numbers, and each verse becomes one
-passage with a "Proverbs 6:6" locator).
+passage with a "Proverbs 6:6" locator), optional heading_prefix (a block starting with it, such as
+"Chapter ", is a heading even when it wraps onto a mixed-case second line).
 """
 
 from __future__ import annotations
@@ -108,6 +109,7 @@ def parse_text(
     verses: str | None = None,
     section_marker: str | None = None,
     section_label: str | None = None,
+    heading_prefix: str | None = None,
 ):
     text = text.replace("\r\n", "\n").lstrip("﻿")
     m_start, m_end = _START.search(text), _END.search(text)
@@ -140,6 +142,11 @@ def parse_text(
             heading, count = f"{section_label or title_case(section_marker)} {sections}", 0
             continue
         unmarked = _PAGE_MARK.sub("", block)
+        # heading_prefix: mixed-case headings that wrap onto a second line, e.g.
+        # "Chapter I: The Extent Of The Empire In The Age Of The / Antonines.—Part I."
+        if heading_prefix and unmarked.strip().startswith(heading_prefix) and len(unmarked.strip()) <= 160:
+            heading, count = " ".join(unmarked.split()).rstrip("."), 0
+            continue
         if _is_heading(unmarked):
             line = ". ".join(title_case(" ".join(ln.split())).rstrip(".") for ln in unmarked.strip().split("\n"))
             line = line.strip("#").strip()  # "#What Is Apperception?#" sub-headings in some etexts
@@ -169,5 +176,5 @@ def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
         text = data.decode("utf-8")
     except UnicodeDecodeError:
         text = data.decode("latin-1")
-    licence, evidence, passages = parse_text(text, entry["id"], entry.get("start"), entry.get("end"), entry.get("verses"), entry.get("section_marker"), entry.get("section_label"))
+    licence, evidence, passages = parse_text(text, entry["id"], entry.get("start"), entry.get("end"), entry.get("verses"), entry.get("section_marker"), entry.get("section_label"), entry.get("heading_prefix"))
     return FetchResult(licence, evidence, url, passages)
