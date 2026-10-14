@@ -692,4 +692,35 @@ void main() {
       await h.listen.stop();
     });
   });
+
+  group('background music', () {
+    testWidgets('off by default; plays exactly while playing once on', (
+      tester,
+    ) async {
+      final h = await harness();
+      await h.listen.startTimeline(posts: [post('a'), post('b')]);
+      expect(h.state.music, isFalse);
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.setMusic(true);
+      expect(h.audio.musicPlaying, isTrue);
+      expect(h.prefs.getBool(ListenController.musicKey), isTrue);
+      await h.listen.pause();
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.play();
+      expect(h.audio.musicPlaying, isTrue);
+      await h.listen.stop();
+      expect(h.audio.musicPlaying, isFalse);
+      expect(h.state.music, isTrue);
+    });
+
+    testWidgets('remembers the choice', (tester) async {
+      final h = await harness(prefsValues: {ListenController.musicKey: true});
+      expect(h.state.music, isTrue);
+      await h.listen.startTimeline(posts: [post('a')]);
+      expect(h.audio.musicPlaying, isTrue);
+      await h.listen.setMusic(false);
+      expect(h.audio.musicPlaying, isFalse);
+      await h.listen.stop();
+    });
+  });
 }

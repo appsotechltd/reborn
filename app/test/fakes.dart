@@ -74,6 +74,7 @@ class FakeListenAudio implements ListenAudio {
   final seeks = <Duration>[];
   final failing = <String>{};
   int chimes = 0;
+  bool musicPlaying = false;
   bool playing = false;
   double speed = 1;
   Duration? length = const Duration(seconds: 40);
@@ -134,6 +135,9 @@ class FakeListenAudio implements ListenAudio {
 
   @override
   Future<void> playChime() async => chimes++;
+
+  @override
+  Future<void> setMusic(bool playing) async => musicPlaying = playing;
 
   @override
   Future<void> prefetch(List<String> urls) async => prefetched.addAll(urls);

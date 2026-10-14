@@ -46,6 +46,7 @@ const SERVER_STATE: ListenState = {
   position: 0,
   duration: 0,
   speed: 1,
+  music: false,
   sleep: null,
   single: false,
   queue: null,

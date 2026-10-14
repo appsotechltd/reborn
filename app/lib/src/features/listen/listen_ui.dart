@@ -306,6 +306,26 @@ class _NowPlaying extends ConsumerWidget {
               ),
             ),
             _SleepButton(state: s),
+            // Background music under the voice: off unless turned on.
+            Semantics(
+              button: true,
+              toggled: s.music,
+              label: 'Background music',
+              excludeSemantics: true,
+              child: s.music
+                  ? FilledButton.tonalIcon(
+                      key: const ValueKey('listen-music'),
+                      onPressed: () => controller.setMusic(false),
+                      icon: const Icon(Icons.music_note),
+                      label: const Text('Music on'),
+                    )
+                  : OutlinedButton.icon(
+                      key: const ValueKey('listen-music'),
+                      onPressed: () => controller.setMusic(true),
+                      icon: const Icon(Icons.music_off_outlined),
+                      label: const Text('Music off'),
+                    ),
+            ),
             OutlinedButton.icon(
               key: const ValueKey('listen-open-card'),
               onPressed: () => context.push(
