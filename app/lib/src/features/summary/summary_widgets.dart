@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
@@ -57,7 +58,9 @@ Future<void> listenToSummary(
 }
 
 /// The summary's cover: always the dark Candlelight look (like videos), so it
-/// stands out in the feed as something bigger than one card.
+/// stands out in the feed as something bigger than one card. A guide with a
+/// cover picture shows it behind the text, darkened so the title stays
+/// readable.
 class SummaryCover extends StatelessWidget {
   const SummaryCover({super.key, required this.summary, this.large = false});
   final Summary summary;
@@ -71,22 +74,42 @@ class SummaryCover extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final cover = summary.cover;
     return Container(
       key: ValueKey('summary-cover-${summary.id}'),
       padding: const EdgeInsets.fromLTRB(20, 20, 20, 22),
       decoration: BoxDecoration(
         color: _bg,
         borderRadius: BorderRadius.circular(9),
-        gradient: const RadialGradient(
-          center: Alignment(0.8, -1.1),
-          radius: 1.3,
-          colors: [Color(0x47E9A23B), _bg],
-          stops: [0, 0.6],
-        ),
+        image: cover == null
+            ? null
+            : DecorationImage(
+                image: NetworkImage(resolveMediaUrl(cover.url)),
+                fit: BoxFit.cover,
+                colorFilter: const ColorFilter.mode(
+                  Color(0xA61F1710),
+                  BlendMode.srcOver,
+                ),
+                onError: (_, _) {},
+              ),
+        gradient: cover != null
+            ? null
+            : const RadialGradient(
+                center: Alignment(0.8, -1.1),
+                radius: 1.3,
+                colors: [Color(0x47E9A23B), _bg],
+                stops: [0, 0.6],
+              ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (cover != null)
+            Semantics(
+              label: cover.caption,
+              image: true,
+              child: SizedBox(height: large ? 120 : 72),
+            ),
           Wrap(
             spacing: 6,
             runSpacing: 4,

@@ -1,0 +1,309 @@
+{
+  "source": {
+    "id": "guide-first-aid-basics",
+    "title": "First Aid Basics",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.sja.org.uk/first-aid-advice/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on St John Ambulance and the NHS.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: St John Ambulance, First aid advice, https://www.sja.org.uk/first-aid-advice/; St John Ambulance, CPR, https://www.sja.org.uk/first-aid-advice/cpr/; St John Ambulance, Choking, https://www.sja.org.uk/first-aid-advice/choking/; St John Ambulance, Severe bleeding, https://www.sja.org.uk/first-aid-advice/severe-bleeding/; St John Ambulance, Burns and scalds, https://www.sja.org.uk/first-aid-advice/burns-and-scalds/; NHS, Stroke symptoms, https://www.nhs.uk/conditions/stroke/symptoms/"
+  },
+  "cards": [
+    {
+      "id": "guide-first-aid-basics--01",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "emergency",
+        "safety"
+      ],
+      "title": "Keep yourself safe and call for help first",
+      "body": "In an emergency, your first job is to make sure you do not become a second casualty. Look for danger such as traffic, fire, electricity, deep water or violence before you go near someone. If it is not safe, keep back and call for help.\n\nCall your local emergency number as early as possible, or ask someone else to. Say where you are, what happened and how many people are hurt. Put the phone on speaker so the call handler can guide you while you help.\n\nThis guide covers the basics only. The best way to be ready is to take a proper hands-on first-aid course.",
+      "apply_it": "Save your local emergency number in your phone and find out where your nearest first-aid course runs.",
+      "quiz": {
+        "question": "What should you check before approaching an injured person?",
+        "options": [
+          "Whether they have money",
+          "That it is safe for you to approach",
+          "Their name",
+          "Nothing, just run in"
+        ],
+        "answer": 1,
+        "explanation": "Checking for danger first protects you, so you can help instead of becoming another casualty."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--02",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "breathing",
+        "assessment"
+      ],
+      "title": "Check if they respond and are breathing normally",
+      "body": "Once it is safe, kneel beside the person. Gently shake their shoulders and ask loudly, \"Can you hear me? Open your eyes.\" If they respond, keep them still, ask what happened and call for help if needed.\n\nIf they do not respond, open their airway: place one hand on their forehead, tilt the head back gently, and lift the chin with two fingertips. Then look, listen and feel for normal breathing for no more than ten seconds.\n\nOccasional gasps are not normal breathing. If they are unresponsive and not breathing normally, call your local emergency number and start CPR.",
+      "apply_it": "Practise the head tilt and chin lift on a willing friend so the movement feels familiar.",
+      "quiz": {
+        "question": "Someone is unresponsive and only making occasional gasps. What does that mean?",
+        "options": [
+          "They are breathing normally",
+          "Leave them to rest",
+          "Give them water",
+          "Treat it as not breathing normally and start CPR"
+        ],
+        "answer": 3,
+        "explanation": "Occasional gasps are not normal breathing. Call for help and start CPR."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--03",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "recovery-position",
+        "airway"
+      ],
+      "title": "Use the recovery position for someone breathing but unresponsive",
+      "body": "If a person is unresponsive but breathing normally, and you do not suspect a serious back or neck injury, place them on their side in the recovery position. This keeps the airway open and lets vomit drain out instead of choking them.\n\nKneel beside them. Place the arm nearest you at a right angle, palm up. Bring the far arm across their chest and hold the back of that hand against their cheek. Bend the far knee up, then pull on it to roll them towards you onto their side. Tilt the head back slightly to keep the airway open.\n\nCall for help and keep checking their breathing until it arrives.",
+      "apply_it": "Watch a recovery-position video from a recognised first-aid organisation and practise with a family member.",
+      "quiz": {
+        "question": "Why is the recovery position used?",
+        "options": [
+          "To keep the airway open and let fluids drain",
+          "To help them sleep",
+          "To stop bleeding",
+          "To check for fractures"
+        ],
+        "answer": 0,
+        "explanation": "Lying on the side keeps the airway clear and prevents choking on vomit."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--04",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "cpr",
+        "defibrillator"
+      ],
+      "title": "Know the basics of CPR for adults",
+      "body": "If an adult is unresponsive and not breathing normally, call your local emergency number and start CPR. Ask someone to find a defibrillator (AED) if one is nearby.\n\nPlace the heel of one hand in the centre of the chest, put your other hand on top and lock your fingers. With straight arms, press down hard and fast, about 5 to 6 centimetres deep, at 100 to 120 compressions a minute. Let the chest come back up each time. If you are trained, you can give 2 rescue breaths after every 30 compressions; if not, keep doing chest compressions only.\n\nWhen the defibrillator arrives, switch it on and follow its spoken instructions.",
+      "apply_it": "Learn a song with about 100 to 120 beats a minute to help keep pace, and look for a CPR class near you.",
+      "quiz": {
+        "question": "What should you do if you're not trained to give rescue breaths?",
+        "options": [
+          "Do nothing",
+          "Shake them harder",
+          "Give continuous chest compressions only",
+          "Wait for them to wake"
+        ],
+        "answer": 2,
+        "explanation": "Hands-only CPR is far better than nothing. Keep pushing hard and fast until help or a defibrillator arrives."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--05",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "choking",
+        "airway"
+      ],
+      "title": "Help an adult who is choking",
+      "body": "If someone can still cough, speak or breathe, encourage them to keep coughing, as this is often enough to clear the blockage.\n\nIf they cannot cough, speak or breathe, act fast. Help them lean forward and give up to five sharp blows between the shoulder blades with the heel of your hand. Check their mouth after each one. If that fails, stand behind them, place a fist just above the belly button, grab it with your other hand and pull sharply inwards and upwards up to five times.\n\nIf it still has not cleared, call your local emergency number and keep repeating the cycle. If they become unresponsive, start CPR. Anyone given abdominal thrusts should be checked by a doctor.",
+      "apply_it": "Learn the two steps: five back blows, then five abdominal thrusts. Say them out loud once to fix them in memory.",
+      "quiz": {
+        "question": "What should you do first if a choking adult can still cough?",
+        "options": [
+          "Give abdominal thrusts at once",
+          "Give them water",
+          "Encourage them to keep coughing",
+          "Lay them down"
+        ],
+        "answer": 2,
+        "explanation": "Coughing is the body's best tool. Only move to back blows and thrusts if coughing isn't working."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--06",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "bleeding",
+        "wounds"
+      ],
+      "title": "Stop severe bleeding with firm pressure",
+      "body": "Heavy bleeding can become life-threatening quickly, so act straight away. Wear gloves if you have them. Press firmly on the wound with a clean pad or cloth and keep pressing. If something is stuck in the wound, leave it in and press around it instead.\n\nCall your local emergency number, or get someone else to. Help the person lie down. Once you can, bandage the pad firmly in place, but not so tight that it cuts off blood flow beyond it.\n\nIf blood soaks through, put another pad on top and keep pressing rather than removing the first one. Watch for signs of shock while you wait.",
+      "apply_it": "Check that your home has clean dressings and gloves, and know where they are kept.",
+      "quiz": {
+        "question": "What should you do if an object is stuck in a wound?",
+        "options": [
+          "Pull it out quickly",
+          "Leave it in and press around it",
+          "Push it deeper",
+          "Ignore the bleeding"
+        ],
+        "answer": 1,
+        "explanation": "Removing an embedded object can make bleeding worse. Leave it in and apply pressure around it."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--07",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "burns",
+        "scalds"
+      ],
+      "title": "Cool a burn with running water for 20 minutes",
+      "body": "For a burn or scald, cool it under cool or lukewarm running water for at least 20 minutes as soon as possible. This reduces pain and damage. Remove rings, watches or clothing near the burn unless they are stuck to the skin.\n\nAfter cooling, cover it loosely with cling film laid on in strips, or a clean plastic bag for a hand, to protect it from infection. Do not use ice, butter, creams or toothpaste, and do not burst blisters.\n\nGet medical help for burns that are large, deep, on the face, hands, feet or genitals, caused by chemicals or electricity, or on a child or older person.",
+      "apply_it": "Tell your household the 20-minute rule today so everyone knows what to do if someone gets burned.",
+      "quiz": {
+        "question": "Which is the right first step for a burn?",
+        "options": [
+          "Cool it under running water for at least 20 minutes",
+          "Put ice on it",
+          "Cover it with butter",
+          "Pop the blisters"
+        ],
+        "answer": 0,
+        "explanation": "Cool running water for at least 20 minutes is the most helpful first step. Ice, butter and creams can cause harm."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--08",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "shock",
+        "circulation"
+      ],
+      "title": "Spot and treat shock",
+      "body": "Shock here means a medical emergency where not enough blood is reaching vital organs, often after heavy bleeding, severe burns or a serious injury. Signs include pale, cold, clammy skin, a fast and then weak pulse, fast shallow breathing, dizziness, feeling sick, and confusion or restlessness.\n\nTreat any cause you can, such as bleeding. Call your local emergency number and say you think it is shock. Help the person lie down and, if they have no leg, hip or pelvis injury, raise and support their legs. Loosen tight clothing and keep them warm with a coat or blanket.\n\nStay with them, reassure them and watch their breathing.",
+      "apply_it": "Memorise three signs of shock: pale clammy skin, fast breathing and a fast, weak pulse.",
+      "quiz": {
+        "question": "When should you NOT raise the legs of someone in shock?",
+        "options": [
+          "When they feel cold",
+          "When they are scared",
+          "Never raise them",
+          "When a leg, hip or pelvis injury is suspected"
+        ],
+        "answer": 3,
+        "explanation": "Raising the legs helps blood flow, but not if it could worsen a leg, hip or pelvis injury."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--09",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "fractures",
+        "injuries"
+      ],
+      "title": "Keep a suspected broken bone still",
+      "body": "Signs of a broken bone include pain, swelling, bruising, a limb that looks bent or shorter, and difficulty moving it. If you are unsure, treat it as a break.\n\nAsk the person to keep still and support the injured part in the most comfortable position, using your hands, padding or rolled clothing. Do not try to straighten it. A sling can support an arm. If bone is showing through the skin, cover the wound with a clean dressing and press around it, not on the bone.\n\nCall your local emergency number for serious breaks, such as a thigh, back, neck or pelvis, or if bone is visible. Watch for shock.",
+      "apply_it": "Practise making a simple arm sling from a scarf or triangular bandage.",
+      "quiz": {
+        "question": "What should you avoid doing with a suspected broken limb?",
+        "options": [
+          "Supporting it",
+          "Keeping the person still",
+          "Trying to straighten it",
+          "Calling for help"
+        ],
+        "answer": 2,
+        "explanation": "Moving or straightening a broken bone can cause more damage. Support it as it is and get help."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--10",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "seizures",
+        "epilepsy"
+      ],
+      "title": "Protect someone having a seizure",
+      "body": "During a seizure, a person may stiffen, fall and jerk. Stay calm. Your job is to keep them safe until it passes. Note the time it started. Move hard or sharp objects away, put something soft under their head and loosen anything tight around their neck.\n\nDo not hold them down and do not put anything in their mouth. When the jerking stops, check their breathing and place them in the recovery position. Stay with them while they come round, as they may be confused.\n\nCall your local emergency number if it is their first seizure, it lasts more than five minutes, another follows, they are injured, or they do not wake or breathe normally.",
+      "apply_it": "Learn the five-minute rule: if a seizure lasts longer than five minutes, call for emergency help.",
+      "quiz": {
+        "question": "Which of these should you never do during a seizure?",
+        "options": [
+          "Put something in their mouth",
+          "Time the seizure",
+          "Cushion their head",
+          "Move sharp objects away"
+        ],
+        "answer": 0,
+        "explanation": "Putting objects in the mouth can cause injury or block the airway. Protect the head and time the seizure instead."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--11",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "heart-attack",
+        "stroke",
+        "fast"
+      ],
+      "title": "Recognise a heart attack and a stroke fast",
+      "body": "Heart attack signs include chest pain or pressure that may spread to the arms, jaw, neck or back, along with breathlessness, sweating, feeling sick or dizzy. Some people, especially women and older adults, have milder or unusual symptoms. Call your local emergency number straight away, help them sit or rest comfortably and follow the call handler's advice.\n\nFor stroke, think FAST. Face: has it drooped on one side? Arms: can they lift both and keep them up? Speech: is it slurred or confused? Time: call your emergency number immediately, even if signs fade.\n\nWith both, every minute matters. Note when symptoms began.",
+      "apply_it": "Teach someone else what FAST stands for today.",
+      "quiz": {
+        "question": "In the FAST stroke check, what does the T stand for?",
+        "options": [
+          "Temperature",
+          "Tiredness",
+          "Treatment at home",
+          "Time to call emergency services"
+        ],
+        "answer": 3,
+        "explanation": "T means time: call your local emergency number at once, because fast treatment can limit brain damage."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-first-aid-basics--12",
+      "topic": "life-guides",
+      "tags": [
+        "first-aid",
+        "first-aid-kit",
+        "training"
+      ],
+      "title": "Keep a first-aid kit and take a proper course",
+      "body": "A simple kit at home, in the car and at work means you are ready when something happens. Include sterile dressings and plasters of various sizes, bandages, a triangular bandage, disposable gloves, tape, scissors, tweezers, cling film for burns, a foil blanket, and a list of emergency numbers. Check it every few months and replace used or out-of-date items.\n\nKnowing what to do matters even more than having the kit. Reading guides helps, but hands-on practice is what builds the confidence to act. Look for a recognised first-aid course near you; many are short, low-cost or free, and some workplaces pay for them.",
+      "apply_it": "Check your home first-aid kit today and write a list of anything missing.",
+      "quiz": {
+        "question": "What builds the confidence to act in an emergency most effectively?",
+        "options": [
+          "Owning an expensive kit",
+          "Hands-on practice on a first-aid course",
+          "Reading one article",
+          "Watching medical dramas"
+        ],
+        "answer": 1,
+        "explanation": "Practical training lets you rehearse skills like CPR so you can act calmly when it counts."
+      },
+      "health": true
+    }
+  ]
+}

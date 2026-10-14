@@ -1,0 +1,284 @@
+{
+  "source": {
+    "id": "guide-calm-anxiety",
+    "title": "Calm Anxiety and Worry",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/anxiety/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the US National Institute of Mental Health and HelpGuide.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS Every Mind Matters, Anxiety, https://www.nhs.uk/every-mind-matters/mental-health-issues/anxiety/; NHS, Breathing exercises for stress, https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/; National Institute of Mental Health, Anxiety Disorders, https://www.nimh.nih.gov/health/topics/anxiety-disorders; HelpGuide, How to Stop Worrying, https://www.helpguide.org/mental-health/anxiety/how-to-stop-worrying; NHS Every Mind Matters, Sleep, https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/"
+  },
+  "cards": [
+    {
+      "id": "guide-calm-anxiety--01",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "worry",
+        "mindset"
+      ],
+      "title": "Anxiety is an alarm system, not a sign that something is wrong with you",
+      "body": "Anxiety is the feeling of fear or unease about what might happen. Everyone has it sometimes, before an exam, a job interview or a hard conversation. It is your brain's alarm system trying to protect you, and a little of it can even help you focus.\n\nThe trouble starts when the alarm goes off too often, too loudly, or when there is no real danger. Then worry can fill your days, spoil your sleep and stop you doing things you care about.\n\nThe good news is that anxiety responds well to practice. Simple skills, done regularly, can turn the volume down. This guide walks you through them one step at a time, and tells you when it is time to get extra help.",
+      "apply_it": "Write one sentence finishing this line: 'Lately my worry alarm goes off most when...'",
+      "quiz": {
+        "question": "What is anxiety, at its root?",
+        "options": [
+          "A sign of weakness",
+          "Something only a few people ever feel",
+          "The brain's alarm system trying to protect you",
+          "A problem that can never change"
+        ],
+        "answer": 2,
+        "explanation": "Anxiety is a normal protective response. It becomes a problem when it is too frequent or too strong, and it can be eased with practice."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--02",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "body",
+        "fight-or-flight"
+      ],
+      "title": "Know how anxiety shows up in your body",
+      "body": "When your brain senses danger, it releases stress hormones such as adrenaline. Your heart beats faster, your breathing quickens, your muscles tighten and your stomach may churn. You might feel shaky, sweaty, dizzy or short of breath. This is the 'fight or flight' response, built to help you run or defend yourself.\n\nThese feelings are uncomfortable, but they are not dangerous in themselves, and they pass. Knowing this helps, because a lot of anxiety comes from being scared of the feelings, which makes them stronger.\n\nNext time your heart races, try naming it: 'This is my alarm going off. It will settle.' If you are ever unsure whether a symptom like chest pain is anxiety, check with a doctor.",
+      "apply_it": "Next time you feel anxious, pause and name two body signs you notice, such as a fast heartbeat or tight shoulders.",
+      "quiz": {
+        "question": "Why does naming anxiety's body signs help?",
+        "options": [
+          "It reduces fear of the feelings, which can otherwise make them stronger",
+          "It makes the feelings disappear instantly",
+          "It proves you are ill",
+          "It stops adrenaline being made"
+        ],
+        "answer": 0,
+        "explanation": "Fear of the sensations feeds anxiety. Recognising them as a normal, passing alarm helps calm the cycle."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--03",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "breathing",
+        "relaxation"
+      ],
+      "title": "Slow your breathing to calm the alarm",
+      "body": "Breathing is one of the few parts of the stress response you can control directly. Slow, deep breaths tell your body that the danger has passed.\n\nTry this: sit or lie comfortably and loosen anything tight. Let your breath drop down into your belly rather than your chest. Breathe in gently through your nose, counting to four or five, then breathe out slowly through your mouth for the same count, or a little longer. Keep going for about five minutes.\n\nDon't force it or gulp air. If counting to five feels hard at first, start with three and build up. Practising when you are calm makes it much easier to use when anxiety strikes.",
+      "apply_it": "Set a reminder to do five minutes of slow belly breathing today, even if you feel fine.",
+      "quiz": {
+        "question": "What makes slow breathing work best during anxious moments?",
+        "options": [
+          "Only using it in emergencies",
+          "Taking quick, deep gulps of air",
+          "Holding your breath as long as possible",
+          "Practising it regularly when you are calm"
+        ],
+        "answer": 3,
+        "explanation": "Regular practice when calm makes slow breathing feel natural, so it is easier to use when anxiety rises."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--04",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "grounding",
+        "mindfulness"
+      ],
+      "title": "Ground yourself in the present with your senses",
+      "body": "Anxiety lives in the future, in 'what if' thoughts. Grounding pulls your attention back to right now, where you are usually safe.\n\nA popular method is 5-4-3-2-1. Look around and name five things you can see. Then four things you can touch, like your feet on the floor or the fabric of your sleeve. Then three things you can hear, two things you can smell and one thing you can taste.\n\nOther quick anchors work too: hold something cold, press your feet firmly into the ground, or describe the room to yourself in detail. The aim is not to fight your thoughts but to give your mind something real to hold on to until the wave passes.",
+      "apply_it": "Try the 5-4-3-2-1 exercise once today wherever you are, and notice how your body feels afterwards.",
+      "quiz": {
+        "question": "What does grounding aim to do?",
+        "options": [
+          "Plan for every possible future problem",
+          "Bring your attention back to the present moment",
+          "Force all anxious thoughts to stop",
+          "Distract you with your phone"
+        ],
+        "answer": 1,
+        "explanation": "Grounding uses your senses to anchor you in the present, where anxiety's 'what ifs' have less grip."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--05",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "worry",
+        "habits"
+      ],
+      "title": "Give worry a set time each day",
+      "body": "Trying to stop worrying usually backfires. A better trick is to postpone it. Choose a 'worry time' of about 15 to 20 minutes, at the same time each day, and not too close to bedtime.\n\nDuring the day, when a worry pops up, jot it down in a note and tell yourself, 'I'll think about that at worry time.' Then get back to what you were doing.\n\nWhen worry time comes, read your list. You may find some worries no longer seem important. For the rest, ask: can I do anything about this? If yes, write one small step. If not, practise letting it go. Over time your brain learns that worries can wait, and they take up less of your day.",
+      "apply_it": "Pick a 15-minute worry time for tomorrow and start a note on your phone to collect worries in until then.",
+      "quiz": {
+        "question": "What should you do when a worry pops up outside your worry time?",
+        "options": [
+          "Think it through fully straight away",
+          "Write it down and save it for worry time",
+          "Ignore it and pretend it isn't there",
+          "Ask everyone around you about it"
+        ],
+        "answer": 1,
+        "explanation": "Noting the worry and postponing it teaches your mind that worries can wait, so they take up less of your day."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--06",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "thoughts",
+        "cbt"
+      ],
+      "title": "Question anxious thoughts instead of obeying them",
+      "body": "Anxious thoughts feel like facts, but they are often guesses that lean towards the worst outcome. Treat them like a theory to test, not the truth.\n\nWhen you notice a scary thought, write it down and ask a few questions. What is the evidence for and against it? How likely is the worst case, really? If it did happen, how would I cope? What would I tell a friend who had this thought?\n\nFor example, 'I'll make a fool of myself in the meeting' might become 'I'm nervous, but I've prepared, and even if I stumble, people will mostly forget by lunchtime.' This is a core skill in cognitive behavioural therapy (CBT), and it gets easier with practice.",
+      "apply_it": "Write down one worrying thought from this week and answer: what would I say to a friend who thought this?",
+      "quiz": {
+        "question": "How should you treat an anxious thought?",
+        "options": [
+          "As a fact you must act on",
+          "As something to hide from others",
+          "As a guess you can test against the evidence",
+          "As proof that the worst will happen"
+        ],
+        "answer": 2,
+        "explanation": "Anxious thoughts are often exaggerated predictions. Checking the evidence and finding a more balanced view weakens their hold."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--07",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "fears",
+        "exposure"
+      ],
+      "title": "Face your fears in small, steady steps",
+      "body": "Avoiding what scares you brings quick relief, but it teaches your brain that the thing really is dangerous. Over time, the fear grows and your world gets smaller.\n\nThe answer is to face fears gradually. Make a ladder: write the feared situation at the top, then list smaller, easier steps below it. If phone calls make you anxious, step one might be calling a friend, then ordering food by phone, then calling a shop with a question.\n\nStart at the bottom and stay with each step until your anxiety drops a little, then repeat it before moving up. Expect some discomfort; that is the sign you are learning. Each step shows your brain you can cope.",
+      "apply_it": "Choose one thing you avoid and write three small steps towards it. Try the easiest step this week.",
+      "quiz": {
+        "question": "Why can avoiding a feared situation make anxiety worse over time?",
+        "options": [
+          "It teaches your brain the situation is dangerous",
+          "It uses up too much energy",
+          "It is against the rules",
+          "It makes you more tired at night"
+        ],
+        "answer": 0,
+        "explanation": "Avoidance gives short-term relief but confirms the fear. Gradual, repeated exposure teaches your brain you can cope."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--08",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "caffeine",
+        "alcohol"
+      ],
+      "title": "Go easy on caffeine and alcohol",
+      "body": "What you drink can turn up anxiety. Caffeine, found in coffee, tea, cola and energy drinks, is a stimulant. It can make your heart race and leave you jittery, which feels very like anxiety and can trigger more of it.\n\nAlcohol can seem to calm nerves at first, but as it wears off it often leaves you more anxious, and it disturbs your sleep. Some people find a cycle forms, drinking to calm down and then feeling worse the next day.\n\nYou don't need to cut these out overnight. Try swapping some caffeinated drinks for water or caffeine-free options, avoiding caffeine after lunch, and keeping alcohol low. Notice whether your anxiety changes over a couple of weeks.",
+      "apply_it": "Count your caffeinated drinks today. Tomorrow, swap one of them for water or a caffeine-free drink.",
+      "quiz": {
+        "question": "How can alcohol affect anxiety?",
+        "options": [
+          "It cures anxiety permanently",
+          "It has no effect on mood",
+          "It improves sleep quality",
+          "It may calm you briefly but often leaves you more anxious later"
+        ],
+        "answer": 3,
+        "explanation": "Alcohol's calming effect is short-lived; as it wears off, anxiety often rises and sleep suffers."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--09",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "exercise",
+        "sleep"
+      ],
+      "title": "Move your body and protect your sleep",
+      "body": "Exercise is one of the most reliable ways to ease anxiety. Moving burns off stress hormones, releases tension in your muscles and gives your mind a break. Brisk walking, dancing, cycling or a game of football all count. Aim for about 150 minutes a week, but even a 10-minute walk can help on a bad day.\n\nSleep matters just as much. When you are tired, worries feel bigger and harder to manage, and anxiety can make sleep harder in turn. Keep regular bed and wake times, put your phone away before bed, and give yourself time to wind down.\n\nLooking after your body is not a side issue; it lowers the baseline level of anxiety you carry each day.",
+      "apply_it": "Take a brisk 10-minute walk today, and set a fixed time to put your phone away tonight.",
+      "quiz": {
+        "question": "Roughly how much activity a week is a good target for adults?",
+        "options": [
+          "About 15 minutes",
+          "About 15 hours",
+          "About 150 minutes",
+          "None, rest is better"
+        ],
+        "answer": 2,
+        "explanation": "Around 150 minutes of moderate activity a week is a common target, though even short walks help."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--10",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "support",
+        "talking"
+      ],
+      "title": "Talk to someone you trust",
+      "body": "Anxiety grows in secret. Keeping worries to yourself can make them loop round and round, while saying them out loud often shrinks them.\n\nChoose someone who makes you feel calmer, not more worked up: a friend, family member, teacher, faith leader or colleague. You don't need them to fix anything. Just explaining what is going on can help you see it more clearly, and you may find they have felt the same way.\n\nIf talking face to face feels hard, start with a message. Support groups and helplines are also good options if you'd rather talk to someone outside your circle. And helping others, through volunteering or simply checking in on a friend, can ease your own anxiety too.",
+      "apply_it": "Send a message today to one person you trust, telling them honestly how you've been feeling.",
+      "quiz": {
+        "question": "Who is the best person to share worries with?",
+        "options": [
+          "Anyone who will listen, even if they make you feel worse",
+          "Someone who usually leaves you feeling calmer",
+          "No one, it is better to keep worries private",
+          "Only a stranger online"
+        ],
+        "answer": 1,
+        "explanation": "Talking helps most with people who steady you. Their job is to listen, not necessarily to fix things."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-calm-anxiety--11",
+      "topic": "life-guides",
+      "tags": [
+        "anxiety",
+        "getting-help",
+        "crisis"
+      ],
+      "title": "Know when to see a doctor, and get urgent help in a crisis",
+      "body": "Self-help works well for many people, but it is not always enough. See a doctor or health worker if anxiety lasts for weeks, keeps getting worse, or gets in the way of school, work, sleep or relationships. Also get checked if you have physical symptoms, such as chest pain or breathlessness, and you are not sure they are anxiety.\n\nAnxiety is very treatable. Talking therapies such as CBT and, for some people, medicine can make a big difference. Asking for help is a strong move, not a weak one.\n\nIf you ever feel unable to cope or keep yourself safe, get urgent help now: call your local emergency number, contact a crisis helpline, or go to the nearest emergency department.",
+      "apply_it": "Save your local emergency number and a crisis helpline in your phone today, just in case you or a friend ever need it.",
+      "quiz": {
+        "question": "When should you seek urgent help?",
+        "options": [
+          "When you feel unable to cope or keep yourself safe",
+          "When you feel a little nervous before an exam",
+          "Only after trying self-help for a year",
+          "Never, anxiety always passes on its own"
+        ],
+        "answer": 0,
+        "explanation": "Feeling unable to cope or stay safe is an emergency. Contact emergency services or a crisis line straight away."
+      },
+      "health": true
+    }
+  ]
+}

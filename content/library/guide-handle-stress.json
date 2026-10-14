@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-handle-stress",
+    "title": "Handle Stress",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the World Health Organization and HelpGuide.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS Every Mind Matters, Stress, https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/; World Health Organization, Stress Q&A, https://www.who.int/news-room/questions-and-answers/item/stress; HelpGuide, Stress Management, https://www.helpguide.org/mental-health/stress/stress-management; NHS, Breathing exercises for stress, https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
+  },
+  "cards": [
+    {
+      "id": "guide-handle-stress--01",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "mindset",
+        "body"
+      ],
+      "title": "Stress is your body's response to pressure",
+      "body": "Stress is the tension and worry you feel when life puts demands on you, like exams, money problems, a busy job, family conflict or illness. It is a normal reaction that everyone has, and in small doses it can help you rise to a challenge and get things done.\n\nYour body responds to pressure by releasing hormones that make you more alert and ready for action. That's useful for a short burst. But when pressure goes on for weeks or months without a break, stress can start to harm your sleep, mood, relationships and physical health.\n\nThe aim isn't to remove all stress, which is impossible. It is to notice it early, reduce what you can and recover well.",
+      "apply_it": "Write down the three biggest pressures on you right now, just to see them clearly.",
+      "quiz": {
+        "question": "Which statement about stress is true?",
+        "options": [
+          "Stress is a normal response that becomes harmful when it goes on too long",
+          "All stress is harmful",
+          "Only weak people feel stress",
+          "Stress never affects physical health"
+        ],
+        "answer": 0,
+        "explanation": "Short bursts of stress can help you perform. Long-lasting stress without recovery is what tends to cause harm."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--02",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "warning-signs",
+        "self-awareness"
+      ],
+      "title": "Spot your stress signs early",
+      "body": "Stress shows up in your feelings, your body and your behaviour, and the signs are different for everyone.\n\nEmotional signs include irritability, feeling overwhelmed, racing thoughts, worry and finding it hard to make decisions. Physical signs include headaches, tight muscles, an upset stomach, trouble sleeping and feeling tired all the time. Behaviour changes might be eating more or less, drinking or smoking more, snapping at people, or avoiding things you normally enjoy.\n\nLearn your personal early warnings. Maybe your jaw clenches, or you stop replying to messages. Catching stress at this stage, rather than when you're exhausted, makes it much easier to deal with. If physical symptoms such as chest pain worry you, see a doctor.",
+      "apply_it": "List two signs that usually tell you you're getting stressed. Ask someone close to you what they notice too.",
+      "quiz": {
+        "question": "Why is it useful to know your personal stress signs?",
+        "options": [
+          "So you can ignore them",
+          "So you can blame others",
+          "Because they are the same for everyone",
+          "So you can act early before stress builds up"
+        ],
+        "answer": 3,
+        "explanation": "Spotting early signs lets you take action while stress is still manageable."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--03",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "control",
+        "acceptance"
+      ],
+      "title": "Sort what you can change from what you can't",
+      "body": "Much stress comes from fighting things we can't control, while ignoring the things we can. A simple sorting exercise helps.\n\nWrite down everything that's stressing you. Next to each, mark whether you can change it, partly change it, or not change it at all. For things you can change, plan one practical step, like asking for a deadline extension or making a budget. For things you can partly change, look for a compromise or speak up about what you need.\n\nFor things you truly can't change, such as the weather or someone else's choices, practise accepting them and focus on how you respond. Asking 'Will this matter in a year?' can also shrink some worries to their real size.",
+      "apply_it": "Sort your current stresses into 'can change' and 'can't change'. Take one small action on a 'can change' item today.",
+      "quiz": {
+        "question": "What is the best approach to stresses you truly cannot change?",
+        "options": [
+          "Keep fighting them harder",
+          "Accept them and focus on how you respond",
+          "Pretend they don't exist",
+          "Worry about them more often"
+        ],
+        "answer": 1,
+        "explanation": "Accepting what you can't control frees energy for the things you can change, including your own response."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--04",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "breathing",
+        "relaxation"
+      ],
+      "title": "Use breathing and relaxation to switch off the alarm",
+      "body": "When you're stressed, your body stays on high alert. Relaxation techniques send the opposite signal and help it settle.\n\nSlow breathing is the quickest tool. Breathe in gently through your nose for a count of about four, let your belly rise, then breathe out slowly through your mouth for a count of four to six. Keep going for a few minutes.\n\nAnother method is muscle relaxation: tense one group of muscles, such as your shoulders, for a few seconds, then let go and notice the difference. Work from your feet up to your face. Short breaks like these, taken a few times through a busy day, stop stress from piling up. Prayer, meditation, stretching or calm music can help in the same way.",
+      "apply_it": "Set three reminders today to stop for one minute of slow breathing.",
+      "quiz": {
+        "question": "What does slow breathing do during stress?",
+        "options": [
+          "Makes your heart beat faster",
+          "Signals to your body that it can settle",
+          "Raises stress hormones",
+          "Only works if you do it for an hour"
+        ],
+        "answer": 1,
+        "explanation": "Slow, deep breathing calms the body's alarm response, and even a minute or two can help."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--05",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "exercise",
+        "movement"
+      ],
+      "title": "Move your body to burn off stress",
+      "body": "Physical activity is one of the best natural stress relievers. It uses up the nervous energy stress creates, eases muscle tension, lifts your mood and improves sleep.\n\nYou don't need a gym. Walking, dancing, skipping, cycling, playing a sport, gardening or doing housework briskly all count. Rhythmic activities like walking or swimming are especially soothing, particularly if you pay attention to how your body feels as you move. A common target for adults is about 150 minutes of moderate activity a week, but any amount helps.\n\nWhen you feel overwhelmed, a short walk can clear your head better than staring at the problem. Many people find their best ideas come while they're moving.",
+      "apply_it": "Go for a 10-minute walk today, ideally when you feel most tense.",
+      "quiz": {
+        "question": "Which kind of activity is especially soothing for stress?",
+        "options": [
+          "Only intense gym workouts",
+          "Activities you hate",
+          "Rhythmic activities like walking or swimming",
+          "None, rest is always better"
+        ],
+        "answer": 2,
+        "explanation": "Rhythmic movement such as walking, swimming or dancing is particularly good at calming a stressed body and mind."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--06",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "sleep",
+        "routine"
+      ],
+      "title": "Protect your sleep when life is busy",
+      "body": "Stress and poor sleep feed each other. Stress makes it hard to switch off at night, and when you're tired, everything feels harder and more stressful the next day.\n\nWhen life gets busy, sleep is often the first thing people cut, but it is one of the best tools you have. Keep regular bed and wake times, even on weekends. Avoid large meals, caffeine and alcohol close to bedtime. Put screens away for at least half an hour before bed and do something calming instead.\n\nIf worries keep you awake, write them down with one next step for each, then close the notebook. Your brain is more likely to let go when it knows nothing will be forgotten.",
+      "apply_it": "Choose a fixed bedtime for tonight and set an alarm 30 minutes before it to start winding down.",
+      "quiz": {
+        "question": "What is a good thing to do if worries keep you awake?",
+        "options": [
+          "Write them down with one next step each",
+          "Check your phone until you're tired",
+          "Drink coffee to stay alert",
+          "Lie there and go over them again and again"
+        ],
+        "answer": 0,
+        "explanation": "Writing worries and next steps down helps your brain let go, making it easier to sleep."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--07",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "connection",
+        "support"
+      ],
+      "title": "Lean on people instead of carrying it alone",
+      "body": "Spending time with people who care about you is a powerful buffer against stress. Just talking things through can lower tension, even if the other person can't solve the problem.\n\nReach out to friends, family, neighbours, colleagues or a faith community. Face-to-face time is best, but a call or video chat works too. You don't have to make every conversation about your problems; sharing a meal or a laugh helps on its own.\n\nPeople often withdraw when stressed, which can make things worse. If you notice yourself cancelling plans and avoiding everyone, take it as a sign to reconnect. And remember connection works both ways: being there for others builds the relationships that support you later.",
+      "apply_it": "Arrange to see or call one person you enjoy spending time with this week.",
+      "quiz": {
+        "question": "What do you need from a person you talk to about stress?",
+        "options": [
+          "They must solve your problem",
+          "They should have the same problem",
+          "They must be a professional",
+          "They mainly need to listen and care"
+        ],
+        "answer": 3,
+        "explanation": "Feeling heard and cared for reduces stress, even when the other person can't fix anything."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--08",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "planning",
+        "time-management"
+      ],
+      "title": "Plan and prioritise to shrink the pile",
+      "body": "A long, messy to-do list in your head is a big source of stress. Getting it onto paper and organising it brings back a sense of control.\n\nWrite down everything you need to do. Then pick out the few tasks that truly matter most or have the nearest deadlines, and do those first. Break large tasks into small steps you can finish in one sitting; 'start the essay' becomes 'write the opening paragraph'. Drop, delay or share tasks that aren't essential.\n\nPlan ahead for stressful days, like packing your bag the night before a big event. Tick things off as you go, and reward yourself when you finish something hard. Progress, however small, lowers stress.",
+      "apply_it": "Write tomorrow's to-do list tonight and circle the top three tasks only.",
+      "quiz": {
+        "question": "What helps when a task feels too big?",
+        "options": [
+          "Waiting until you feel motivated",
+          "Doing all of it in one night",
+          "Breaking it into small steps you can finish in one go",
+          "Ignoring the deadline"
+        ],
+        "answer": 2,
+        "explanation": "Small, concrete steps make big tasks feel manageable and give you a sense of progress."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--09",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "boundaries",
+        "saying-no"
+      ],
+      "title": "Set boundaries and learn to say no",
+      "body": "Saying yes to everything is a fast route to burnout. Every time you agree to something, you're saying no to something else, often your own rest.\n\nKnow your limits. Before agreeing to a new request, pause and ask: Do I have time for this? Is it important to me? It's fine to say, 'I'd like to help, but I can't this week,' or to offer a smaller version: 'I can't run the event, but I can help set up.'\n\nBoundaries also apply to time and technology, such as not answering work messages late at night. Saying no politely and clearly may feel uncomfortable at first, but most people respect it, and it protects your energy for what matters most.",
+      "apply_it": "Think of one request you'd like to turn down. Write a polite one-sentence 'no' you could use.",
+      "quiz": {
+        "question": "What is a healthy way to handle a request you don't have time for?",
+        "options": [
+          "Say yes and stay up late to do it",
+          "Decline politely or offer a smaller version",
+          "Ignore the person",
+          "Agree, then quietly not do it"
+        ],
+        "answer": 1,
+        "explanation": "A clear, polite no, or a smaller offer, protects your energy and is usually respected."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--10",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "nature",
+        "outdoors"
+      ],
+      "title": "Spend time outdoors in nature",
+      "body": "Time in green spaces, near water or simply under the open sky can help calm a stressed mind. Many people find that being outdoors lowers tension, lifts mood and gives a fresh view on their problems.\n\nYou don't need a forest or a beach. A local park, a tree-lined street, a garden or sitting by an open window can help. Try leaving your phone in your pocket and really noticing what's around you: the sound of birds, the feel of the breeze, the colours of the leaves.\n\nCombining nature with movement, like a walk in the park, gives you two stress relievers at once. Even a few minutes outside during a busy day can reset your mood.",
+      "apply_it": "Spend at least 10 minutes outside today without your phone, and notice three things you see or hear.",
+      "quiz": {
+        "question": "What is a simple way to get the stress-easing benefits of nature?",
+        "options": [
+          "A walk in a local park or time in a garden",
+          "Only a long holiday counts",
+          "Watching a nature video while scrolling",
+          "Staying indoors with the curtains closed"
+        ],
+        "answer": 0,
+        "explanation": "Everyday green spaces, especially combined with a walk and fewer distractions, can help you feel calmer."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--11",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "news",
+        "screens"
+      ],
+      "title": "Limit news and screens that keep you on edge",
+      "body": "Constant news alerts, endless scrolling and late-night messages keep your mind switched on and can make stress worse. It's good to stay informed, but you don't need to check the news every hour.\n\nChoose one or two set times a day to catch up on news from a reliable source, then stop. Turn off non-essential notifications. Notice which apps or accounts leave you anxious or comparing yourself to others, and mute them or cut down.\n\nTry a screen-free hour before bed and screen-free meals. Use the time you get back for things that actually recharge you: a walk, a chat, a book, a hobby. You'll likely feel calmer and more in control.",
+      "apply_it": "Turn off notifications for one app that often stresses you, and pick two set times to check news tomorrow.",
+      "quiz": {
+        "question": "What is a good way to stay informed without extra stress?",
+        "options": [
+          "Check the news every hour",
+          "Keep all alerts switched on",
+          "Read news in bed late at night",
+          "Check a reliable source at one or two set times a day"
+        ],
+        "answer": 3,
+        "explanation": "Set times and trusted sources keep you informed without letting news take over your day."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-handle-stress--12",
+      "topic": "life-guides",
+      "tags": [
+        "stress",
+        "getting-help",
+        "professional-support"
+      ],
+      "title": "Get help when stress takes over",
+      "body": "Sometimes stress becomes too much to handle alone, and that is nothing to be ashamed of. Look for extra help if stress feels out of control, lasts for weeks, affects your sleep, work or relationships, or if you're relying on alcohol, drugs, food or other habits to cope.\n\nStart by talking to a doctor or health worker. They can check for any physical causes and point you to support such as talking therapies, which teach practical skills for managing stress. Counsellors, workplace support schemes, faith leaders and helplines can also help.\n\nIf you ever feel unable to cope or keep yourself safe, seek urgent help straight away through your local emergency number or a crisis line.",
+      "apply_it": "Look up one source of support near you, such as a doctor, counsellor or helpline, and save the details in your phone.",
+      "quiz": {
+        "question": "Which is a sign you should seek extra help for stress?",
+        "options": [
+          "You feel tense before one exam",
+          "You had one busy day",
+          "Stress lasts for weeks and affects daily life",
+          "You feel relaxed after a holiday"
+        ],
+        "answer": 2,
+        "explanation": "Long-lasting stress that disrupts sleep, work or relationships, or leads to unhealthy coping, is a good reason to get support."
+      },
+      "health": true
+    }
+  ]
+}

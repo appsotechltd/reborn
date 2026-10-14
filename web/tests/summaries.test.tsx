@@ -60,6 +60,7 @@ describe("summary helpers", () => {
     expect(coverageLabel({ coverage: "full" })).toBe("Full summary");
     expect(coverageLabel({ coverage: "key-ideas" })).toBe("Key ideas summary");
     expect(coverageLabel({ coverage: "topic" })).toBe("Topic summary");
+    expect(coverageLabel({ coverage: "guide" })).toBe("Complete guide");
     expect(summaryByline({ kind: "book", authors: ["Robert Greene"], source_count: 1 })).toBe("by Robert Greene");
     expect(summaryByline({ kind: "topic", authors: ["Seneca", "NHS", "Montaigne", "Megan Devine"], source_count: 5 })).toBe(
       "From 5 sources, including Seneca, NHS and more",

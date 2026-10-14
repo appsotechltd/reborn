@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-beat-procrastination",
+    "title": "Beat Procrastination",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8980531/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on research published in Frontiers in Psychology, the British Psychological Society, Wikipedia's overview of procrastination and the Pomodoro and time-management literature.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Schuenemann et al. 2022, I'll worry about it tomorrow: fostering emotion regulation skills to overcome procrastination, Frontiers in Psychology, https://pmc.ncbi.nlm.nih.gov/articles/PMC8980531/; Wikipedia, Procrastination, https://en.wikipedia.org/wiki/Procrastination; Wikipedia, Time management (Pomodoro technique), https://en.wikipedia.org/wiki/Time_management; British Psychological Society Research Digest, The cure for procrastination? Forgive yourself!, https://bps.org.uk/research-digest/cure-procrastination-forgive-yourself; Wikipedia, Implementation intention, https://en.wikipedia.org/wiki/Implementation_intention"
+  },
+  "cards": [
+    {
+      "id": "guide-beat-procrastination--01",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "emotions",
+        "mindset"
+      ],
+      "title": "Procrastination is about feelings, not laziness",
+      "body": "Most people who procrastinate are not lazy. They often care a lot about the task. The problem is how the task makes them feel: bored, anxious, confused, afraid of failing or overwhelmed.\n\nPutting it off brings quick relief from those feelings, so the brain learns that avoiding works. But the relief is short, and the task, plus the stress of the deadline, is still waiting. Researchers increasingly see procrastination as a way of managing unpleasant emotions, and studies suggest that learning to handle those emotions can reduce it.\n\nSo the first question isn't \"Why am I so lazy?\" It is \"What feeling am I trying to avoid?\"",
+      "apply_it": "Think of one task you're putting off. Name the feeling it gives you, such as boredom, worry or confusion, and write it down.",
+      "quiz": {
+        "question": "According to research, what often drives procrastination?",
+        "options": [
+          "Laziness",
+          "Having too much free time",
+          "A lack of intelligence",
+          "Avoiding unpleasant feelings about the task"
+        ],
+        "answer": 3,
+        "explanation": "Delay brings short-term relief from feelings like anxiety or boredom, which reinforces the habit."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--02",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "first-step",
+        "starting"
+      ],
+      "title": "Shrink the start to one tiny first step",
+      "body": "Big tasks feel heavy, so we avoid them. But you never actually do a big task, only the next small action. Make that action so small it feels almost silly to resist.\n\n\"Write my essay\" becomes \"Open a document and type the title.\" \"Clean the house\" becomes \"Put five things away.\" \"Start revising\" becomes \"Find my notes for chapter one.\"\n\nStarting is often the hardest part. Once you're moving, the dread usually fades and it becomes easier to carry on. Even if you stop after the tiny step, you've made progress and broken the spell of avoidance. Next time, the start will feel lighter.",
+      "apply_it": "Pick the task you're avoiding and write down its tiniest possible first action. Do just that action now.",
+      "quiz": {
+        "question": "Why make the first step tiny?",
+        "options": [
+          "Starting is the hardest part, and a tiny step lowers the barrier",
+          "Tiny tasks are the only ones that count",
+          "It looks impressive",
+          "So you can stop forever after"
+        ],
+        "answer": 0,
+        "explanation": "A tiny step is easy to begin, and momentum usually follows."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--03",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "two-minute-rule",
+        "starting"
+      ],
+      "title": "Use a two-minute start to get moving",
+      "body": "Tell yourself you'll work on the task for just two minutes. After that, you're free to stop if you really want to.\n\nThis works because it lowers the stakes. Two minutes isn't scary, and most of the resistance lives in the moment before you start. Once you begin, you often find the task isn't as bad as you imagined, and you keep going.\n\nA related trick: if a task takes less than two minutes, like replying to a short message or filing a paper, do it now instead of adding it to a list. Small tasks left undone pile up and create a background feeling of being behind.",
+      "apply_it": "Set a timer for two minutes and start the task you've been delaying. When it rings, decide whether to keep going.",
+      "quiz": {
+        "question": "Why does committing to only two minutes help?",
+        "options": [
+          "Two minutes is enough to finish any task",
+          "It is a strict rule you must never break",
+          "It lowers the stakes, and starting is where most resistance is",
+          "It replaces planning"
+        ],
+        "answer": 2,
+        "explanation": "A small, safe commitment gets you past the hardest moment: the start."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--04",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "planning",
+        "break-down"
+      ],
+      "title": "Break big tasks into clear, small pieces",
+      "body": "Vague tasks invite delay. \"Do the project\" gives your brain nothing to grab. Break it down into concrete steps you could each finish in one sitting.\n\nFor a school project, that might be: choose a topic, find three sources, make an outline, write the introduction, draft section one, and so on. For a job application: update the CV, write the cover letter, ask a referee, submit.\n\nWrite the steps down and tick them off as you go. Each tick gives a small sense of progress, which builds motivation. And when you sit down to work, you know exactly what to do next instead of staring at the whole mountain.",
+      "apply_it": "Take one big task and break it into five to ten small steps on paper. Do the first one today.",
+      "quiz": {
+        "question": "How does breaking a task into steps help?",
+        "options": [
+          "It makes the task longer",
+          "It lets you skip parts",
+          "It gives you a clear next action and visible progress",
+          "It is only useful for work projects"
+        ],
+        "answer": 2,
+        "explanation": "Concrete steps remove vagueness and give you something specific to start."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--05",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "deadlines",
+        "planning"
+      ],
+      "title": "Set your own deadlines for each step",
+      "body": "A single deadline weeks away feels unreal, so we wait until the pressure hits. Create your own mini deadlines for each step instead, spread out between now and the final date.\n\nPut them in your calendar with a specific time. Even better, make them visible to someone else: tell a friend, a study partner or a colleague when you'll send them a draft. External deadlines are often more powerful than private promises.\n\nBe realistic. We tend to underestimate how long things take, so add extra time. If you miss a mini deadline, don't abandon the plan. Reset it and keep moving.",
+      "apply_it": "Choose your next three steps for a task and give each one a date and time in your calendar.",
+      "quiz": {
+        "question": "Why set mini deadlines for steps of a project?",
+        "options": [
+          "Distant deadlines feel unreal, so steps give nearer pressure points",
+          "To make the work harder",
+          "Because the final deadline doesn't matter",
+          "To avoid planning"
+        ],
+        "answer": 0,
+        "explanation": "Nearer deadlines create helpful pressure and spread the work out."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--06",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "pomodoro",
+        "time-blocks"
+      ],
+      "title": "Work in short focused blocks with breaks",
+      "body": "Telling yourself to work all afternoon can feel overwhelming. Short, timed blocks make work feel manageable.\n\nA popular method, the Pomodoro technique, uses 25 minutes of focused work followed by a 5-minute break, with a longer break after four rounds. During the work block, you only work on one task. If a distracting thought pops up, jot it down and return to it later.\n\nThe timer gives you permission to ignore everything else for a short while, and the break is a reward that keeps you fresh. Adjust the lengths to suit you, perhaps 40 minutes on and 10 off. The key is a clear start, a clear end and a real break.",
+      "apply_it": "Set a timer for 25 minutes, work on one task only, then take a 5-minute break. Try two rounds.",
+      "quiz": {
+        "question": "What is the basic Pomodoro pattern?",
+        "options": [
+          "2 hours of work, then a nap",
+          "Working while watching TV",
+          "5 minutes of work, then 25 minutes of rest",
+          "25 minutes of focused work, then a 5-minute break"
+        ],
+        "answer": 3,
+        "explanation": "Short focused blocks with planned breaks make starting and keeping going easier."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--07",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "distractions",
+        "focus"
+      ],
+      "title": "Remove the easy escapes before you start",
+      "body": "When a task feels uncomfortable, your brain looks for an escape, and your phone is usually the closest one. Make escaping harder before you begin.\n\nPut your phone in another room or turn on a focus mode. Close tabs and apps you don't need. Use a website blocker during work blocks. Clear your desk of anything unrelated.\n\nAlso prepare your space so starting is easy: have your materials ready, the document open and a glass of water nearby. The fewer decisions and distractions between you and the task, the more likely you are to begin and to stay with it.",
+      "apply_it": "Before your next work session, put your phone out of reach and close every tab you don't need.",
+      "quiz": {
+        "question": "Why remove distractions before starting?",
+        "options": [
+          "Distractions are always harmful",
+          "They offer an easy escape when the task feels uncomfortable",
+          "It makes work slower",
+          "So you can multitask better"
+        ],
+        "answer": 1,
+        "explanation": "When work feels hard, nearby distractions become tempting escapes."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--08",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "self-compassion",
+        "emotions"
+      ],
+      "title": "Go easy on yourself to stop the cycle",
+      "body": "It might seem that being hard on yourself would push you to work. Often it does the opposite. Guilt and shame add more bad feelings to the task, which makes you want to avoid it even more.\n\nResearch on students found that those who forgave themselves for procrastinating on one exam tended to procrastinate less on the next. Self-compassion doesn't mean making excuses. It means admitting you delayed, understanding why, and moving on without beating yourself up.\n\nTry talking to yourself as you would to a friend: \"This is hard, and I put it off. That's human. What's one small thing I can do now?\"",
+      "apply_it": "Next time you catch yourself procrastinating, say: That's human. What's one small thing I can do now? Then do it.",
+      "quiz": {
+        "question": "How does self-compassion help with procrastination?",
+        "options": [
+          "It lets you skip the work",
+          "It reduces the guilt that makes tasks feel worse and more avoidable",
+          "It has no effect",
+          "It replaces planning"
+        ],
+        "answer": 1,
+        "explanation": "Less shame means less negative feeling attached to the task, so starting is easier."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--09",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "rewards",
+        "motivation"
+      ],
+      "title": "Reward yourself for progress, not just finishing",
+      "body": "Procrastination wins because avoiding gives an instant reward: relief. The benefits of doing the task often come much later. You can balance this by adding small rewards for progress now.\n\nAfter a focused work block, enjoy something you like: a favourite song, a short walk, a snack, a chat with a friend. Save a show you're excited about for after you finish a section. Some people pair a dull task with something pleasant, like listening to music while doing chores.\n\nKeep rewards in proportion and make them follow the work, not replace it. Over time, your brain links the task with something good instead of something to escape.",
+      "apply_it": "Decide on a small reward you will give yourself after your next focused work block, and only have it once the block is done.",
+      "quiz": {
+        "question": "Why add small rewards after work blocks?",
+        "options": [
+          "Rewards should replace work",
+          "To make tasks take longer",
+          "Rewards only work for children",
+          "To balance the instant relief that avoiding gives"
+        ],
+        "answer": 3,
+        "explanation": "Rewards for progress give work its own quick payoff, competing with the relief of avoidance."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--10",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "perfectionism",
+        "mindset"
+      ],
+      "title": "Aim for done, not perfect",
+      "body": "Perfectionism is a common hidden cause of procrastination. If anything less than perfect feels like failure, starting becomes frightening, so you wait for the ideal moment, mood or idea. It rarely comes.\n\nGive yourself permission to make a rough first version. Call it a draft, a sketch or version one. You can't improve something that doesn't exist, and editing is much easier than facing a blank page.\n\nSet a standard that is good enough for the purpose. Not every task needs your best possible work. Ask: what would a solid, finished version look like? Then aim for that, and polish only if time allows.",
+      "apply_it": "Start your next task by deliberately making a rough first draft, and give yourself a set time limit to finish it.",
+      "quiz": {
+        "question": "How does perfectionism lead to procrastination?",
+        "options": [
+          "Fear that work won't be perfect makes starting feel risky",
+          "It makes tasks shorter",
+          "Perfectionists have more free time",
+          "It doesn't; they are always early"
+        ],
+        "answer": 0,
+        "explanation": "When only perfect will do, starting feels risky, so people delay."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--11",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "if-then",
+        "habits"
+      ],
+      "title": "Plan when and where you will start",
+      "body": "A good intention like \"I'll do it this week\" is easy to put off forever. Make it concrete by deciding exactly when and where you'll start.\n\nUse an if-then plan: \"If it's 4pm on Tuesday, then I'll sit at the kitchen table and outline my essay.\" Or link the task to something you already do: \"After I finish lunch, I'll answer the two emails I've been avoiding.\"\n\nStudies on these plans show they make people more likely to act on their intentions, because the decision is already made before the moment comes. When the time arrives, you don't have to argue with yourself. You just follow the plan.",
+      "apply_it": "Write an if-then plan for a task you're avoiding: If it's [time] and I'm at [place], then I will [first step].",
+      "quiz": {
+        "question": "What makes an if-then plan effective?",
+        "options": [
+          "It sets a vague goal",
+          "It only works for exercise",
+          "It decides when and where you start, so there's no debate in the moment",
+          "It removes all deadlines"
+        ],
+        "answer": 2,
+        "explanation": "Deciding the time, place and action in advance removes the need to decide when the moment comes."
+      }
+    },
+    {
+      "id": "guide-beat-procrastination--12",
+      "topic": "life-guides",
+      "tags": [
+        "procrastination",
+        "habits",
+        "help"
+      ],
+      "title": "Keep going, and know when to get extra help",
+      "body": "Beating procrastination isn't a one-time win. It is a skill you build. Some days you'll start easily; on others you'll drift. What matters is noticing sooner and getting back on track faster.\n\nReview your week now and then. Which tricks worked? When did you avoid most? Adjust your plans, keep your best strategies, and drop what doesn't help.\n\nIf procrastination seriously affects your studies, work or life, or seems linked to constant worry, low mood or trouble focusing, it is worth talking to a counsellor, teacher, doctor or coach. Approaches that help people change thought patterns have good evidence behind them.",
+      "apply_it": "At the end of this week, write down which anti-procrastination tactic worked best for you, and plan to use it again next week.",
+      "quiz": {
+        "question": "When is it a good idea to seek extra help with procrastination?",
+        "options": [
+          "Never; it's just laziness",
+          "Only after failing a whole year",
+          "When it seriously affects your life or seems linked to worry, low mood or focus problems",
+          "Only if friends tell you to"
+        ],
+        "answer": 2,
+        "explanation": "Persistent procrastination with wider effects can have deeper causes that support can help with."
+      }
+    }
+  ]
+}

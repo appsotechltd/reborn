@@ -1072,6 +1072,7 @@ class Summary {
     this.partCount = 0,
     this.minutes = 0,
     this.viewer,
+    this.cover,
   });
 
   final String id;
@@ -1091,6 +1092,9 @@ class Summary {
 
   /// Present only when signed in.
   final SummaryProgress? viewer;
+
+  /// A guide's cover picture, when it has one.
+  final CardImage? cover;
 
   bool get isBook => kind == 'book';
 
@@ -1112,6 +1116,9 @@ class Summary {
     viewer: json['viewer'] is Map<String, dynamic>
         ? SummaryProgress.fromJson(json['viewer'] as Map<String, dynamic>)
         : null,
+    cover: json['cover'] is Map<String, dynamic>
+        ? CardImage.fromJson(json['cover'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -1128,11 +1135,13 @@ class Summary {
     'part_count': partCount,
     'minutes': minutes,
     if (viewer != null) 'viewer': viewer!.toJson(),
+    if (cover != null) 'cover': cover!.toJson(),
   };
 
   /// The label above the title.
   String get coverageLabel => switch (coverage) {
     'key-ideas' => 'Key ideas summary',
+    'guide' => 'Complete guide',
     'topic' => 'Topic summary',
     _ => 'Full summary',
   };
@@ -1188,6 +1197,7 @@ class Summary {
     partCount: partCount,
     minutes: minutes,
     viewer: p,
+    cover: cover,
   );
 }
 

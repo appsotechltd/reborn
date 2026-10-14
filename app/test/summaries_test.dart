@@ -98,6 +98,22 @@ void main() {
       Summary.fromJson(summaryJson(coverage: 'key-ideas')).coverageLabel,
       'Key ideas summary',
     );
+    final guide = Summary.fromJson({
+      ...summaryJson(coverage: 'guide'),
+      'cover': {
+        'url': 'https://media.test/images/cards/v1/guide-x--01.webp',
+        'type': 'illustration',
+        'caption': 'A calm start',
+      },
+    });
+    expect(guide.coverageLabel, 'Complete guide');
+    expect(guide.cover?.caption, 'A calm start');
+    expect(
+      Summary.fromJson(
+        jsonDecode(jsonEncode(guide.toJson())) as Map<String, dynamic>,
+      ).cover?.url,
+      'https://media.test/images/cards/v1/guide-x--01.webp',
+    );
     final topic = Summary.fromJson({
       ...summaryJson(kind: 'topic', coverage: 'topic'),
       'authors': ['Seneca', 'NHS', 'Montaigne'],

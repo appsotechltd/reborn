@@ -292,7 +292,7 @@ export interface PostsResponse {
  * "full": a public-domain or openly licensed book, every idea in order. "key-ideas": an
  * in-copyright book's key ideas in our own words. "topic": hand-picked parts from several books.
  */
-export type SummaryCoverage = "full" | "key-ideas" | "topic";
+export type SummaryCoverage = "full" | "key-ideas" | "guide" | "topic";
 
 /** Where the signed-in reader is in a summary. `position` is the zero-based part. */
 export interface SummaryProgress {
@@ -318,6 +318,8 @@ export interface Summary {
   minutes: number;
   published_at: string;
   viewer?: SummaryProgress | null;
+  /** A guide's cover picture, when it has one. */
+  cover?: CardImage | null;
 }
 
 /** GET /v1/summaries/{id}: the summary with its parts in reading order. */

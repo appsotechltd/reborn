@@ -12,6 +12,8 @@ export function coverageLabel(s: Pick<Summary, "coverage">): string {
   switch (s.coverage) {
     case "key-ideas":
       return "Key ideas summary";
+    case "guide":
+      return "Complete guide";
     case "topic":
       return "Topic summary";
     default:

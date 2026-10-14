@@ -1,0 +1,304 @@
+{
+  "source": {
+    "id": "guide-start-investing",
+    "title": "Start Investing",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.finra.org/investors/investing/investing-basics",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on FINRA and Wikipedia's articles on index funds, compound interest and dollar-cost averaging.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: FINRA, Investing basics, https://www.finra.org/investors/investing/investing-basics; Wikipedia, Index fund, https://en.wikipedia.org/wiki/Index_fund; Wikipedia, Compound interest, https://en.wikipedia.org/wiki/Compound_interest; Wikipedia, Dollar cost averaging, https://en.wikipedia.org/wiki/Dollar_cost_averaging; Federal Trade Commission, How to get out of debt (debt before investing), https://consumer.ftc.gov/articles/how-get-out-debt. General education, not financial advice."
+  },
+  "cards": [
+    {
+      "id": "guide-start-investing--01",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "emergency-fund",
+        "debt"
+      ],
+      "title": "Get your foundations ready before you invest",
+      "body": "This guide is general education, not financial advice. Investing means putting money into things like shares or funds in the hope it grows over time. But before you start, make sure your base is solid.\n\nFirst, build an emergency fund in an easy-access savings account, ideally enough for a few months of essential costs. That way a surprise bill will not force you to sell investments at a bad time.\n\nSecond, clear high-interest debt such as credit cards or payday loans. Paying off a card charging very high interest is a guaranteed return that investments rarely beat.",
+      "apply_it": "Check two things: do you have an emergency fund, and do you have any high-interest debt? Write down your answers.",
+      "quiz": {
+        "question": "What should usually come before investing?",
+        "options": [
+          "Buying a sports car",
+          "An emergency fund and clearing high-interest debt",
+          "Taking out a loan to invest",
+          "Nothing"
+        ],
+        "answer": 1,
+        "explanation": "Savings for emergencies and paying off costly debt give a stable base so you aren't forced to sell or borrow."
+      }
+    },
+    {
+      "id": "guide-start-investing--02",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "goals",
+        "time-horizon"
+      ],
+      "title": "Know your goals and how long you can wait",
+      "body": "Ask what you are investing for and when you will need the money. Your time horizon shapes everything.\n\nMoney you need within a few years, such as for a deposit or a course next year, is usually better in savings, because investments can fall in value just when you need them. Money you will not touch for many years, such as for retirement, can ride out ups and downs and has more time to grow.\n\nWrite down each goal, roughly how much it will cost and when. This helps you choose sensible investments and stops you being tempted to cash out early.",
+      "apply_it": "Write one financial goal with an amount and a target year, and decide whether it's short or long term.",
+      "quiz": {
+        "question": "Where is money you need in the next year or two usually better kept?",
+        "options": [
+          "In risky shares",
+          "In savings",
+          "In cryptocurrency",
+          "Under the mattress"
+        ],
+        "answer": 1,
+        "explanation": "Short-term money needs stability; investments can drop just when you need to withdraw."
+      }
+    },
+    {
+      "id": "guide-start-investing--03",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "risk"
+      ],
+      "title": "Understand the link between risk and return",
+      "body": "In investing, higher possible rewards usually come with higher risk. Cash savings are steady but grow slowly. Bonds, which are loans to governments or companies, tend to be in the middle. Shares, which are small pieces of companies, have grown the most over long periods but can drop sharply in the short term.\n\nRisk means your investment can lose value, and you may get back less than you put in. How much risk is right depends on your time horizon and how you would feel seeing your balance fall.\n\nNever invest money you cannot afford to have tied up or see drop for a while.",
+      "apply_it": "Imagine your investment fell by a fifth in a month. Write down honestly how you'd feel and what you'd do.",
+      "quiz": {
+        "question": "Which statement about risk and return is generally true?",
+        "options": [
+          "All investments are risk-free",
+          "Cash always beats shares",
+          "Risk only affects old people",
+          "Higher possible returns usually come with higher risk"
+        ],
+        "answer": 3,
+        "explanation": "Assets like shares offer higher long-run growth but bigger short-term swings than cash."
+      }
+    },
+    {
+      "id": "guide-start-investing--04",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "compounding"
+      ],
+      "title": "Let compound growth work over time",
+      "body": "Compounding means your returns start earning returns of their own. If you invest 100 and it grows by 7 percent, you have 107. Next year you earn on 107, not 100, and so on. Over many years this snowballs.\n\nA handy shortcut is the rule of 72: divide 72 by the yearly growth rate to estimate how many years it takes to double. At 6 percent, that is about 12 years. Returns are never guaranteed, though, and they vary from year to year.\n\nThe key ingredient is time. Starting early with small amounts can beat starting late with larger ones.",
+      "apply_it": "Use the rule of 72 to estimate how long money would take to double at 4 percent and at 8 percent.",
+      "quiz": {
+        "question": "Using the rule of 72, roughly how long does money take to double at 6 percent a year?",
+        "options": [
+          "12 years",
+          "6 years",
+          "72 years",
+          "2 years"
+        ],
+        "answer": 0,
+        "explanation": "72 divided by 6 is 12, so money growing at 6 percent a year roughly doubles in about 12 years."
+      }
+    },
+    {
+      "id": "guide-start-investing--05",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "diversification"
+      ],
+      "title": "Spread your money around",
+      "body": "Diversification means not putting all your eggs in one basket. If you put everything into one company and it fails, you could lose most of your money. If you own small pieces of hundreds or thousands of companies, one failure barely matters.\n\nYou can diversify across many companies, different industries, different countries and different types of investment, such as shares and bonds. Funds make this easy, because one fund can hold a large number of investments at once.\n\nDiversification does not remove risk or stop losses when whole markets fall, but it greatly reduces the danger of one bad bet sinking you.",
+      "apply_it": "Think about where your savings are now. Are they in one place or spread out? Note one way to spread them more.",
+      "quiz": {
+        "question": "What does diversification protect you from most?",
+        "options": [
+          "All market falls",
+          "Paying any fees",
+          "One single investment sinking your whole portfolio",
+          "Taxes"
+        ],
+        "answer": 2,
+        "explanation": "Spreading money across many holdings means one failure has only a small effect."
+      }
+    },
+    {
+      "id": "guide-start-investing--06",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "index-funds",
+        "funds"
+      ],
+      "title": "Consider low-cost index funds",
+      "body": "An index fund aims to track a whole market index, such as the largest companies in a country or the world, rather than trying to pick winners. Because it simply follows the index, it is usually cheap to run and spreads your money widely.\n\nOver long periods, many actively managed funds, where professionals pick investments, have failed to beat comparable index funds once fees are taken off. That is why index funds are popular with beginners and experienced investors alike.\n\nLook for broad, global or whole-market funds with low yearly charges, offered through a reputable, regulated provider in your country.",
+      "apply_it": "Look up what one broad index fund available to you holds and what its yearly fee is.",
+      "quiz": {
+        "question": "Why are index funds often recommended for beginners?",
+        "options": [
+          "They guarantee profits",
+          "They only hold one company",
+          "They are low-cost and widely diversified",
+          "They avoid all risk"
+        ],
+        "answer": 2,
+        "explanation": "Index funds track a whole market cheaply, giving broad diversification at low cost, though they can still fall."
+      }
+    },
+    {
+      "id": "guide-start-investing--07",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "fees"
+      ],
+      "title": "Pay attention to fees",
+      "body": "Fees look small but have a big effect over time, because they come out every year and reduce the money that compounds. A yearly charge of 1.5 percent instead of 0.2 percent can eat a large share of your gains over a few decades.\n\nCheck every layer: the fund's ongoing charge, the platform or account fee, trading fees and any adviser fees. Ask what you will pay in total before you invest.\n\nYou cannot control how markets perform, but you can control costs. Choosing low-cost options is one of the simplest ways to keep more of your returns.",
+      "apply_it": "For any investment or pension you have, find the total yearly fee and write it down as a percentage.",
+      "quiz": {
+        "question": "Why do small yearly fees matter so much?",
+        "options": [
+          "They are one-off costs",
+          "They reduce the money that compounds every year",
+          "They increase returns",
+          "They don't matter"
+        ],
+        "answer": 1,
+        "explanation": "Fees are taken every year, so they shrink the base that grows, and the loss compounds over time."
+      }
+    },
+    {
+      "id": "guide-start-investing--08",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "regular-investing",
+        "dollar-cost-averaging"
+      ],
+      "title": "Invest a set amount regularly",
+      "body": "You do not need a large lump sum to start. Many platforms let you invest small amounts each month. Investing the same amount on a regular schedule is often called dollar-cost averaging, or pound-cost averaging.\n\nWhen prices are low, your money buys more units; when prices are high, it buys fewer. This smooths out the price you pay and, just as importantly, builds a steady habit without worrying about the perfect moment.\n\nSet it up automatically, just after payday, so investing happens before you have a chance to spend the money. Increase the amount when your income rises.",
+      "apply_it": "Decide a small monthly amount you could invest without strain, and note the date after payday you'd set it for.",
+      "quiz": {
+        "question": "What is a main benefit of investing a set amount regularly?",
+        "options": [
+          "It builds a habit and smooths the price you pay",
+          "It guarantees a profit",
+          "It avoids all fees",
+          "It lets you time the market"
+        ],
+        "answer": 0,
+        "explanation": "Regular investing buys more when prices are low and fewer when high, and removes the stress of picking a moment."
+      }
+    },
+    {
+      "id": "guide-start-investing--09",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "market-timing",
+        "behaviour"
+      ],
+      "title": "Don't try to time the market",
+      "body": "It is tempting to wait for the perfect moment to buy, or to sell when news is scary and buy back later. Very few people, including professionals, manage to do this well consistently.\n\nSome of the market's best days often come soon after its worst, so people who sell in a panic can miss the recovery. Time in the market usually matters more than timing the market.\n\nDecide your plan in advance, invest regularly and expect ups and downs. Falls are a normal part of investing, not a sign that you have done something wrong.",
+      "apply_it": "Write a one-line promise to yourself about what you will do, and not do, the next time markets fall sharply.",
+      "quiz": {
+        "question": "Why is selling in a panic during a market fall risky?",
+        "options": [
+          "Markets never recover",
+          "It always increases profits",
+          "There is no risk",
+          "You might miss the recovery that often follows"
+        ],
+        "answer": 3,
+        "explanation": "Strong recovery days often follow sharp falls, so panic selling can lock in losses and miss the rebound."
+      }
+    },
+    {
+      "id": "guide-start-investing--10",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "scams",
+        "fraud"
+      ],
+      "title": "Spot and avoid investment scams",
+      "body": "Scammers target new investors with promises of fast, guaranteed or unusually high returns. Warning signs include pressure to act quickly, offers from strangers on social media or messaging apps, celebrity endorsements, secret or exclusive deals, and requests to pay in cryptocurrency or gift cards.\n\nIf something sounds too good to be true, it almost certainly is. Real investments carry risk and cannot promise big, steady gains.\n\nBefore handing over money, check that the firm is registered with your country's financial regulator, and never let anyone pressure you. Get-rich-quick schemes enrich the people selling them, not you.",
+      "apply_it": "Find your country's financial regulator website and bookmark its register or scam-warning list.",
+      "quiz": {
+        "question": "Which is a common sign of an investment scam?",
+        "options": [
+          "A regulated firm with clear fees",
+          "Advice to diversify",
+          "Guaranteed high returns and pressure to act fast",
+          "Low-cost index funds"
+        ],
+        "answer": 2,
+        "explanation": "Guaranteed high returns and urgency are classic red flags. Genuine investments involve risk."
+      }
+    },
+    {
+      "id": "guide-start-investing--11",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "tax",
+        "retirement"
+      ],
+      "title": "Use tax-advantaged accounts where you can",
+      "body": "Many countries offer special accounts that give tax benefits for saving and investing, often for retirement. Depending on where you live, you may get tax relief on what you pay in, pay no tax on growth, or pay no tax when you take money out. Some workplace pension schemes also add employer contributions, which is extra money on top of your own.\n\nThe names and rules differ from country to country, and there are usually limits on how much you can put in and when you can withdraw.\n\nFind out what your country offers and whether your employer provides a pension or retirement scheme. Using these well can make a big difference over time.",
+      "apply_it": "Ask your employer or check your government's official website about retirement or tax-free savings accounts you can use.",
+      "quiz": {
+        "question": "Why might a workplace pension with employer contributions be valuable?",
+        "options": [
+          "Your employer adds extra money on top of yours",
+          "It removes all risk",
+          "It has no rules",
+          "It is always taxed twice"
+        ],
+        "answer": 0,
+        "explanation": "Employer contributions boost your savings, and many such schemes also come with tax advantages."
+      }
+    },
+    {
+      "id": "guide-start-investing--12",
+      "topic": "life-guides",
+      "tags": [
+        "investing",
+        "money",
+        "long-term",
+        "habits"
+      ],
+      "title": "Stay the course and review once in a while",
+      "body": "Successful investing is often quite boring. Pick a sensible, diversified, low-cost plan, keep adding to it regularly, and leave it to grow for years.\n\nCheck in once or twice a year, not every day. Make sure your mix still suits your goals, and rebalance if one part has grown much larger than you intended. As a goal gets close, consider moving some money into safer options.\n\nKeep learning from trusted, independent sources, and consider a regulated, fee-transparent adviser for bigger decisions. Patience, low costs and steady habits matter more than finding the next hot tip.",
+      "apply_it": "Put a reminder in your calendar six months from now to review your savings and investments.",
+      "quiz": {
+        "question": "How often should most long-term investors review their plan?",
+        "options": [
+          "Every hour",
+          "Never",
+          "Whenever a friend gives a hot tip",
+          "Once or twice a year"
+        ],
+        "answer": 3,
+        "explanation": "Occasional reviews keep you on track without encouraging rash reactions to daily market moves."
+      }
+    }
+  ]
+}

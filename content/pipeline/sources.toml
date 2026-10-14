@@ -920,3 +920,185 @@ id = "zero-to-one-thiel"
 adapter = "summary"
 url = "https://www.penguinrandomhouse.com/books/234730/zero-to-one-by-peter-thiel-with-blake-masters/"
 licence = "original-summary"
+
+# Life Guides: Reborn's own complete guides, written in our own words from several references (see SOURCES.md, Life Guides).
+
+[[source]]
+id = "guide-ace-a-job-interview"
+adapter = "summary"
+url = "https://nationalcareers.service.gov.uk/careers-advice/interview-advice"
+licence = "original-summary"
+
+[[source]]
+id = "guide-beat-procrastination"
+adapter = "summary"
+url = "https://pmc.ncbi.nlm.nih.gov/articles/PMC8980531/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-become-an-a-student"
+adapter = "summary"
+url = "https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-break-a-bad-habit"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Habit"
+licence = "original-summary"
+
+[[source]]
+id = "guide-build-a-morning-routine"
+adapter = "summary"
+url = "https://www.sleepfoundation.org/circadian-rhythm/light-and-sleep"
+licence = "original-summary"
+
+[[source]]
+id = "guide-build-self-confidence"
+adapter = "summary"
+url = "https://www.nhs.uk/mental-health/self-help/tips-and-support/raise-low-self-esteem/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-calm-anxiety"
+adapter = "summary"
+url = "https://www.nhs.uk/every-mind-matters/mental-health-issues/anxiety/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-eat-well-on-a-budget"
+adapter = "summary"
+url = "https://www.bda.uk.com/resource/food-facts-eat-well-spend-less.html"
+licence = "original-summary"
+
+[[source]]
+id = "guide-first-aid-basics"
+adapter = "summary"
+url = "https://www.sja.org.uk/first-aid-advice/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-get-fit-at-home"
+adapter = "summary"
+url = "https://www.nhs.uk/live-well/exercise/exercise-guidelines/physical-activity-guidelines-for-adults-aged-19-to-64/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-get-out-of-debt"
+adapter = "summary"
+url = "https://consumer.ftc.gov/articles/how-get-out-debt"
+licence = "original-summary"
+
+[[source]]
+id = "guide-grow-your-career"
+adapter = "summary"
+url = "https://www.mykelly.com/career-advice/career-development/career-advancement-checklist"
+licence = "original-summary"
+
+[[source]]
+id = "guide-grow-your-faith-daily"
+adapter = "summary"
+url = "https://www.navigators.org/resource/how-to-have-a-daily-quiet-time/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-handle-stress"
+adapter = "summary"
+url = "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-lead-a-team"
+adapter = "summary"
+url = "https://www.nextgov.com/digital-government/2018/02/google-expanding-its-list-what-it-takes-be-great-manager/146314/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-learn-any-skill-fast"
+adapter = "summary"
+url = "https://stafforini.com/notes/summary-of-the-first-20-hours-by-josh-kaufman/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-make-and-keep-friends"
+adapter = "summary"
+url = "https://news.ku.edu/news/article/2018/03/06/study-reveals-number-hours-it-takes-make-friend"
+licence = "original-summary"
+
+[[source]]
+id = "guide-make-marriage-work"
+adapter = "summary"
+url = "https://www.gottman.com/blog/the-four-horsemen-the-antidotes/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-manage-your-time"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Time_management"
+licence = "original-summary"
+
+[[source]]
+id = "guide-master-your-anger"
+adapter = "summary"
+url = "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anger/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-negotiate-anything"
+adapter = "summary"
+url = "https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-quit-smoking"
+adapter = "summary"
+url = "https://www.nhs.uk/better-health/quit-smoking/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-raise-children"
+adapter = "summary"
+url = "https://www.unicef.org/parenting/child-care/how-discipline-your-child-smart-and-healthy-way"
+licence = "original-summary"
+
+[[source]]
+id = "guide-resolve-conflict-calmly"
+adapter = "summary"
+url = "https://wellness.asu.edu/explore-wellness/mind/emotional-well-being/conflict-resolution"
+licence = "original-summary"
+
+[[source]]
+id = "guide-sleep-better"
+adapter = "summary"
+url = "https://www.cdc.gov/sleep/about/index.html"
+licence = "original-summary"
+
+[[source]]
+id = "guide-speak-fluently"
+adapter = "summary"
+url = "https://www.toastmasters.org/resources/public-speaking-tips/how-to-overcome-your-fear-of-public-speaking"
+licence = "original-summary"
+
+[[source]]
+id = "guide-start-a-business"
+adapter = "summary"
+url = "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+licence = "original-summary"
+
+[[source]]
+id = "guide-start-investing"
+adapter = "summary"
+url = "https://www.finra.org/investors/investing/investing-basics"
+licence = "original-summary"
+
+[[source]]
+id = "guide-take-control-of-money"
+adapter = "summary"
+url = "https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-write-clearly"
+adapter = "summary"
+url = "https://www.archives.gov/open/plain-writing/10-principles.html"
+licence = "original-summary"

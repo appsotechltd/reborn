@@ -1,0 +1,309 @@
+{
+  "source": {
+    "id": "guide-quit-smoking",
+    "title": "Quit Smoking",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/better-health/quit-smoking/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the CDC and the World Health Organization.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS Better Health, Quit smoking, https://www.nhs.uk/better-health/quit-smoking/; NHS, Stop smoking services, https://www.nhs.uk/live-well/quit-smoking/nhs-stop-smoking-services-help-you-quit/; CDC, Benefits of quitting, https://www.cdc.gov/tobacco/about/benefits-of-quitting.html; World Health Organization, Tobacco fact sheet, https://www.who.int/news-room/fact-sheets/detail/tobacco"
+  },
+  "cards": [
+    {
+      "id": "guide-quit-smoking--01",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "benefits",
+        "health"
+      ],
+      "title": "Your body starts to heal soon after your last cigarette",
+      "body": "Stopping smoking is one of the best things you can do for your health, and the benefits begin quickly. Within minutes your heart rate starts to settle. Within a day or two the poisonous carbon monoxide in your blood drops to normal levels, and taste and smell often improve.\n\nOver the following weeks and months, breathing gets easier and coughing eases. Within a year or two your risk of heart attack falls sharply, and over the years your risks of stroke, lung cancer and many other cancers keep dropping.\n\nIt is never too late. People who quit at any age gain healthier years.",
+      "apply_it": "Write down three health changes you are looking forward to after you stop.",
+      "quiz": {
+        "question": "How soon do the benefits of quitting start?",
+        "options": [
+          "Only after ten years",
+          "Never, the damage is permanent",
+          "Within minutes to days",
+          "Only if you quit before 30"
+        ],
+        "answer": 2,
+        "explanation": "Heart rate and carbon monoxide levels improve within hours to days, and the benefits keep building for years."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--02",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "quit-date",
+        "planning"
+      ],
+      "title": "Pick a quit date and get ready for it",
+      "body": "Choosing a date turns a vague wish into a plan. Pick a day in the next week or two, ideally one that is not packed with stress, and mark it on your calendar.\n\nUse the days before to prepare. Tell people close to you. Decide what help you will use, such as nicotine replacement or a stop-smoking service. On the night before, get rid of all cigarettes, lighters and ashtrays at home, in your bag and in the car.\n\nMany people find it helps to aim to stop completely on that day rather than cutting down slowly, though cutting down first with support is also an option.",
+      "apply_it": "Choose your quit date now and write it somewhere you'll see every day.",
+      "quiz": {
+        "question": "What should you do the night before your quit date?",
+        "options": [
+          "Remove all cigarettes, lighters and ashtrays",
+          "Buy an extra pack just in case",
+          "Smoke as much as possible",
+          "Tell no one"
+        ],
+        "answer": 0,
+        "explanation": "Clearing out cigarettes and smoking items removes easy temptations when cravings hit."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--03",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "triggers",
+        "habits"
+      ],
+      "title": "Learn what makes you reach for a cigarette",
+      "body": "Smoking is tied to routines and feelings as well as nicotine. Common triggers include waking up, coffee or tea, finishing a meal, alcohol, stress, boredom, driving and being around other smokers.\n\nFor a few days before you quit, note each time you smoke and what was happening. Patterns will appear. Then plan a swap for each trigger. If it is after meals, get up and brush your teeth or go for a short walk. If it is stress, try slow breathing or calling a friend. If it is your morning coffee, change where you drink it or switch to tea for a while.\n\nThe aim is to break the link between the moment and the cigarette.",
+      "apply_it": "List your top three smoking triggers and write one swap next to each.",
+      "quiz": {
+        "question": "Why is it useful to know your triggers?",
+        "options": [
+          "So you can smoke more efficiently",
+          "Triggers don't matter",
+          "To prove nicotine isn't addictive",
+          "So you can plan a different response to each one"
+        ],
+        "answer": 3,
+        "explanation": "Knowing your triggers lets you prepare a replacement action, which weakens the habit."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--04",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "nicotine-replacement",
+        "medicines",
+        "pharmacist"
+      ],
+      "title": "Use nicotine replacement or medicines to double your chances",
+      "body": "Willpower alone works for some people, but most do better with help. Nicotine replacement therapy gives you a small, steady dose of nicotine without the smoke, which eases cravings and withdrawal. It comes as patches, gum, lozenges, mouth sprays and inhalators. Using a patch plus a fast-acting product often works best.\n\nThere are also prescription tablets in many countries that reduce cravings. The WHO says counselling and medication together can more than double your chance of quitting.\n\nTalk to a pharmacist, doctor or nurse about which option suits you, especially if you are pregnant, have a health condition or take other medicines.",
+      "apply_it": "Visit or call a pharmacist this week and ask which stop-smoking aids are available to you.",
+      "quiz": {
+        "question": "According to the WHO, what can more than double your chance of quitting?",
+        "options": [
+          "Cutting down to five a day",
+          "Counselling plus medication",
+          "Switching to roll-ups",
+          "Quitting only at weekends"
+        ],
+        "answer": 1,
+        "explanation": "Combining support with proven medicines, including nicotine replacement, greatly improves success rates."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--05",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "support",
+        "services"
+      ],
+      "title": "Get free help from a stop-smoking service",
+      "body": "Many countries offer free or low-cost stop-smoking services and quitlines. Trained advisers can help you choose a quit date, pick the right aids, plan for triggers and keep you going through the hard first weeks, often for up to about three months.\n\nYou can usually find them through your doctor, a pharmacy, a local health service or a national quitline. Some offer phone calls, text messages, apps or group sessions, so you can choose what suits you.\n\nPeople who use this kind of support, especially alongside medicines, are much more likely to quit for good than people who try on their own.",
+      "apply_it": "Search for your country's quitline or stop-smoking service and save the number in your phone.",
+      "quiz": {
+        "question": "What can a stop-smoking adviser help you with?",
+        "options": [
+          "Finding cheaper cigarettes",
+          "Choosing aids and planning for triggers",
+          "Nothing useful",
+          "Only paperwork"
+        ],
+        "answer": 1,
+        "explanation": "Advisers help you plan, choose aids and stay on track, which raises your chances of success."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--06",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "cravings",
+        "coping"
+      ],
+      "title": "Remember that every craving passes",
+      "body": "A craving can feel overwhelming, but it usually peaks and fades within a few minutes. If you can ride it out without smoking, it will pass, and over the weeks cravings come less often and feel weaker.\n\nHave a plan ready. Delay: tell yourself you will wait ten minutes. Breathe: take slow, deep breaths in and out. Drink water slowly. Do something else: walk, chew sugar-free gum, squeeze a stress ball or text a friend.\n\nKeep your hands and mouth busy. Some people carry carrot sticks, a toothpick or a fidget toy.",
+      "apply_it": "Write a mini craving plan on a card: wait, breathe, drink water, do something. Keep it in your pocket.",
+      "quiz": {
+        "question": "What usually happens to a craving if you wait it out?",
+        "options": [
+          "It gets stronger forever",
+          "It never ends",
+          "It only stops if you smoke",
+          "It peaks and fades within a few minutes"
+        ],
+        "answer": 3,
+        "explanation": "Cravings are usually short. Riding them out with a plan teaches your brain the link is breaking."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--07",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "withdrawal",
+        "symptoms"
+      ],
+      "title": "Know what withdrawal feels like and that it eases",
+      "body": "When you stop, your body has to adjust to life without nicotine. You may feel irritable, restless, low, anxious or hungry, have trouble concentrating or sleeping, or cough more for a while as your lungs clear.\n\nThese feelings are normal and are a sign of healing, not failure. They are usually strongest in the first week and ease over the next few weeks. Nicotine replacement can take the edge off them.\n\nLook after yourself: sleep well, drink water, eat regular meals and healthy snacks, and get some exercise, which helps mood and cravings. If low mood becomes severe or does not lift, talk to a doctor.",
+      "apply_it": "Plan two healthy snacks and a daily ten-minute walk for your first quit week.",
+      "quiz": {
+        "question": "When are withdrawal symptoms usually strongest?",
+        "options": [
+          "In the first week or so",
+          "After a year",
+          "They never come",
+          "Only on weekends"
+        ],
+        "answer": 0,
+        "explanation": "Withdrawal tends to peak early and fade over the following weeks."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--08",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "alcohol",
+        "relapse-prevention"
+      ],
+      "title": "Go easy on alcohol in the first weeks",
+      "body": "Alcohol is one of the most common reasons people slip back into smoking. It lowers your guard, and for many people drinking and smoking have gone together for years.\n\nIn the first weeks after quitting, try to avoid alcohol or drink much less. If you do go out, pick places where people do not smoke, stick with non-smoking friends and have a plan for what you will say if offered a cigarette, such as \"No thanks, I've stopped.\"\n\nYou may also notice that coffee feels stronger after quitting, so you might want to cut back a little if you feel jittery.",
+      "apply_it": "Plan your next social event: where you'll go, who with, and what you'll say if someone offers you a cigarette.",
+      "quiz": {
+        "question": "Why is alcohol risky in the early weeks of quitting?",
+        "options": [
+          "It contains nicotine",
+          "It makes cravings disappear",
+          "It lowers your guard and is often linked to smoking",
+          "It has no effect"
+        ],
+        "answer": 2,
+        "explanation": "Drinking weakens resolve and is a strong trigger for many smokers, so it's a common cause of relapse."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--09",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "support",
+        "family"
+      ],
+      "title": "Let other people help you stay smoke-free",
+      "body": "Quitting is easier when you are not doing it alone. Tell family, friends and colleagues that you are stopping and what would help, whether that is encouragement, patience on grumpy days or not smoking around you.\n\nIf people you live with smoke, ask them to smoke outside and keep cigarettes out of sight, or invite them to quit with you. Find a quit buddy, join an online group or use a quit app that tracks your progress.\n\nWhen you feel a strong urge, contact someone instead of reaching for a cigarette. Saying it out loud often takes away some of its power.",
+      "apply_it": "Tell one person today that you are quitting and ask them for one specific kind of help.",
+      "quiz": {
+        "question": "What is a helpful thing to ask people you live with who smoke?",
+        "options": [
+          "To smoke near you more often",
+          "To hide your nicotine patches",
+          "To smoke outside and keep cigarettes out of sight",
+          "Nothing"
+        ],
+        "answer": 2,
+        "explanation": "Reducing exposure and visibility of cigarettes at home removes strong triggers."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--10",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "money",
+        "motivation"
+      ],
+      "title": "Watch the money you save add up",
+      "body": "Smoking is expensive. Work out how much you spend in a week, then a month, then a year. For many people the yearly total is a shock and a powerful reason to stay stopped.\n\nPut that money to use. Move what you would have spent into a separate savings pot or jar each day, and decide on a reward, such as a meal out after a month or a trip after a year.\n\nWatching the total grow gives you a clear, daily sign of progress, and spending it on something you enjoy reminds you what you have gained.",
+      "apply_it": "Calculate your yearly smoking spend and choose one thing you'll buy with the first month's savings.",
+      "quiz": {
+        "question": "What is a good way to use the money you save by quitting?",
+        "options": [
+          "Spend it on cigarettes later",
+          "Put it aside and plan a reward",
+          "Ignore it",
+          "Give it to a payday lender"
+        ],
+        "answer": 1,
+        "explanation": "Setting the savings aside and planning a reward turns money saved into ongoing motivation."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--11",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "vaping",
+        "e-cigarettes"
+      ],
+      "title": "Think carefully about vaping as a quit aid",
+      "body": "Vapes heat a liquid, usually containing nicotine, instead of burning tobacco. Some health services say they can help adult smokers quit and are less harmful than smoking, while others, including the WHO, stress that they are not harmless and are not approved medicines everywhere. Rules vary by country.\n\nIf you are an adult smoker thinking of using one to stop, get advice from a doctor, pharmacist or stop-smoking service. The goal is to stop smoking completely, not to do both, and ideally to stop vaping too once you are confident you will not return to cigarettes.\n\nIf you do not smoke, do not start vaping.",
+      "apply_it": "If you're considering vaping to quit, write your questions down and ask a stop-smoking adviser or pharmacist.",
+      "quiz": {
+        "question": "If someone uses a vape to help quit, what should the goal be?",
+        "options": [
+          "Stop smoking completely, then ideally stop vaping too",
+          "Smoke and vape together",
+          "Vape forever",
+          "Start vaping before smoking"
+        ],
+        "answer": 0,
+        "explanation": "Dual use keeps the harm of smoking. The aim is to stop cigarettes fully and, in time, nicotine too."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-quit-smoking--12",
+      "topic": "life-guides",
+      "tags": [
+        "smoking",
+        "relapse",
+        "resilience"
+      ],
+      "title": "A slip does not mean you have failed",
+      "body": "Many people need a few attempts before they quit for good, and each try teaches you something. If you have one cigarette, do not tell yourself the whole effort is ruined. That thought is what turns a slip into a full return to smoking.\n\nInstead, stop again straight away. Throw away any remaining cigarettes. Ask what led to the slip: a trigger, a stressful moment, alcohol? Then add a plan for next time.\n\nIf you go back to smoking regularly, set a new quit date, perhaps with extra support or a different aid. Every smoke-free day still counts.",
+      "apply_it": "Write down what you'll do in the first hour after a slip so you get straight back on track.",
+      "quiz": {
+        "question": "What is the best response to smoking one cigarette after quitting?",
+        "options": [
+          "Give up completely",
+          "Buy a new pack",
+          "Wait a month before trying again",
+          "Stop again straight away and learn from the slip"
+        ],
+        "answer": 3,
+        "explanation": "A single slip is common. Getting straight back on track and planning for that trigger keeps you going."
+      },
+      "health": true
+    }
+  ]
+}

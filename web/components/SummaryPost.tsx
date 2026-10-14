@@ -19,7 +19,8 @@ import { Icon } from "./Icon";
 
 /**
  * The summary's cover: always the dark Candlelight look (like videos), so it stands out in the
- * feed as something bigger than one card.
+ * feed as something bigger than one card. A guide with a cover picture shows it behind the text,
+ * darkened so the title stays readable.
  */
 export function SummaryCover({
   summary,
@@ -37,9 +38,19 @@ export function SummaryCover({
   return (
     <div
       className="relative overflow-hidden rounded-inset bg-[#1f1710] px-5 py-6 text-[#f2e8d8] sm:px-7 sm:py-8"
-      style={{ backgroundImage: "radial-gradient(120% 90% at 85% 0%, rgba(233,162,59,0.28), transparent 60%)" }}
+      style={{
+        backgroundImage: summary.cover
+          ? `linear-gradient(to top, rgba(31,23,16,0.96) 30%, rgba(31,23,16,0.55)), url("${summary.cover.url}")`
+          : "radial-gradient(120% 90% at 85% 0%, rgba(233,162,59,0.28), transparent 60%)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
       data-summary-cover
     >
+      {summary.cover ? (
+        <span role="img" aria-label={summary.cover.caption} className="sr-only" data-summary-cover-image />
+      ) : null}
+      {summary.cover && size === "large" ? <div aria-hidden="true" className="h-24 sm:h-36" /> : null}
       <p className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#e9a23b]">
         <Icon name="libraryBooks" className="size-4" />
         <span>{coverageLabel(summary)}</span>

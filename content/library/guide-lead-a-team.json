@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-lead-a-team",
+    "title": "Lead a Team",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nextgov.com/digital-government/2018/02/google-expanding-its-list-what-it-takes-be-great-manager/146314/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on Google's Project Oxygen research, the Center for Creative Leadership, Mind Tools and Amy Edmondson's work on psychological safety.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-14",
+    "notes": "Written by Reborn in our own words; no text copied. References: Nextgov, Google is expanding its list of what it takes to be a great manager (Project Oxygen), https://www.nextgov.com/digital-government/2018/02/google-expanding-its-list-what-it-takes-be-great-manager/146314/; Center for Creative Leadership, Closing the gap between intent and impact (SBI feedback), https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/; Mind Tools, Successful delegation, https://www.mindtools.com/aru27rv/successful-delegation/"
+  },
+  "cards": [
+    {
+      "id": "guide-lead-a-team--01",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "example",
+        "character"
+      ],
+      "title": "Lead by example: your team copies what you do",
+      "body": "People watch what a leader does far more closely than what they say. If you arrive late, cut corners or gossip, your team will feel permission to do the same, whatever the rules say.\n\nSo model the standards you want. Keep your promises, admit your mistakes, treat everyone with respect and work hard when it counts. If you want people to speak up, speak up yourself. If you want calm under pressure, stay calm.\n\nThis doesn't mean being perfect. It means being consistent and honest. When you get something wrong, saying \"I handled that badly, here's what I'll do differently\" teaches more than any speech about accountability.",
+      "apply_it": "Pick one behaviour you want from your team, such as punctuality or honesty, and make sure you model it visibly all this week.",
+      "quiz": {
+        "question": "What does leading by example mean?",
+        "options": [
+          "Being perfect at everything",
+          "Showing the standards you want through your own behaviour",
+          "Telling people what to do in detail",
+          "Doing all the work yourself"
+        ],
+        "answer": 1,
+        "explanation": "Teams copy what leaders actually do, so consistent behaviour sets the real standard."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--02",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "goals",
+        "vision"
+      ],
+      "title": "Set clear goals so everyone knows what success looks like",
+      "body": "Research on great managers, including Google's large study known as Project Oxygen, keeps finding the same thing: good leaders give their team a clear vision and clear goals.\n\nYour team should be able to answer three questions: Where are we going? Why does it matter? What is my part? Explain the purpose behind the work, not just the tasks. People work harder and make better decisions when they understand the reason.\n\nMake goals specific and measurable, such as \"answer every customer message within one day\" rather than \"improve service\". Write them down, review progress together regularly and celebrate when you reach them. When priorities change, explain why, so people don't feel the ground shifting under them.",
+      "apply_it": "Write your team's top goal in one sentence, including why it matters. Ask two team members to say it back in their own words.",
+      "quiz": {
+        "question": "Which is the clearer team goal?",
+        "options": [
+          "Improve service",
+          "Do better",
+          "Work harder this month",
+          "Answer every customer message within one day"
+        ],
+        "answer": 3,
+        "explanation": "Specific, measurable goals tell everyone exactly what success looks like."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--03",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "trust",
+        "empowerment"
+      ],
+      "title": "Build trust and don't micromanage",
+      "body": "Trust is the foundation of a strong team. It grows when you are honest, fair and reliable, and when you show you believe in people's abilities.\n\nOne of the quickest ways to destroy trust is micromanaging: checking every detail, redoing people's work or making every decision yourself. It tells people you don't believe in them, and it exhausts you. Great managers empower their team instead. Agree on the result and the deadline, then let people choose how to get there.\n\nTrust also means having your team's back. Give credit publicly, take responsibility when things go wrong and deal with problems privately. People who feel protected take more initiative and do braver, better work.",
+      "apply_it": "Choose one task you usually control closely. Agree the outcome and deadline with a team member, then step back and let them own it.",
+      "quiz": {
+        "question": "What is a common way leaders damage trust?",
+        "options": [
+          "Micromanaging every detail",
+          "Giving credit publicly",
+          "Agreeing clear outcomes",
+          "Being honest about problems"
+        ],
+        "answer": 0,
+        "explanation": "Micromanaging signals a lack of belief in people and reduces initiative."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--04",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "communication",
+        "listening"
+      ],
+      "title": "Communicate clearly, often and in both directions",
+      "body": "Many team problems come from people not knowing what is happening. Good leaders share information openly: what is changing, why, and how it affects each person. When you can't share something, say so honestly rather than staying silent.\n\nCommunication is also about listening. Ask for people's views before making decisions that affect them, and give them your full attention when they speak: close the laptop and put the phone away.\n\nKeep messages simple and repeat the important ones. Something you have said once may not have landed with everyone. A short weekly team update or meeting, with time for questions, can prevent rumours, confusion and wasted effort.",
+      "apply_it": "Send your team a short update this week: what is going well, what is changing, and one question you would like their views on.",
+      "quiz": {
+        "question": "What should you do when you can't share certain information with your team?",
+        "options": [
+          "Make something up",
+          "Say nothing at all",
+          "Say honestly that you can't share it yet",
+          "Blame someone else"
+        ],
+        "answer": 2,
+        "explanation": "Being open about what you can't say keeps trust and stops rumours filling the gap."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--05",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "delegation",
+        "development"
+      ],
+      "title": "Delegate the right work to the right person",
+      "body": "Delegating is not dumping work. Done well, it frees your time for the things only you can do and helps your team grow.\n\nChoose tasks that someone else could do, especially ones that would build their skills. Keep the things that truly need your authority, like sensitive personnel matters. Pick the person thoughtfully, considering their skills, interests and current workload.\n\nThen be clear about the task: the purpose, the result you need, the deadline and how much decision power they have. Agree on check-in points rather than hovering. Offer support and resources. When it's done, review it properly and give feedback. Accepting poor work to avoid an awkward conversation only stops people improving.",
+      "apply_it": "List three tasks you did last week. Pick one someone else could do and learn from, and plan how you will hand it over.",
+      "quiz": {
+        "question": "Which is a good practice when delegating?",
+        "options": [
+          "Hand over tasks without explanation",
+          "Agree the purpose, result, deadline and check-in points",
+          "Check on the person every hour",
+          "Only delegate tasks you dislike"
+        ],
+        "answer": 1,
+        "explanation": "Clear expectations and agreed check-ins let people own the work without being micromanaged."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--06",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "one-to-ones",
+        "coaching"
+      ],
+      "title": "Hold regular one-to-ones that focus on the person",
+      "body": "A regular one-to-one meeting with each team member is one of the most useful habits a leader can build. Even twenty to thirty minutes every week or two makes a big difference.\n\nLet it be their meeting more than yours. Ask what is going well, what is getting in the way, how they are feeling and what support they need. Talk about their growth and career too, not just today's tasks. Being a good coach is one of the strongest signs of a great manager.\n\nProtect this time. Cancelling one-to-ones again and again tells people they are not a priority. Take brief notes and follow up on anything you promised, so they see that speaking up leads to action.",
+      "apply_it": "Schedule a short one-to-one with someone you lead or work with, and start by asking \"What's one thing getting in your way right now?\"",
+      "quiz": {
+        "question": "What should one-to-one meetings mainly focus on?",
+        "options": [
+          "The team member's progress, obstacles, wellbeing and growth",
+          "Only the leader's updates",
+          "Criticising mistakes",
+          "Nothing in particular, they can be skipped"
+        ],
+        "answer": 0,
+        "explanation": "One-to-ones work best as the team member's time to discuss what helps them succeed and grow."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--07",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "feedback",
+        "communication"
+      ],
+      "title": "Give clear feedback, and ask for it too",
+      "body": "People can't improve if they don't know how they are doing. Give feedback often, soon after events, and in private if it is critical.\n\nA simple model from the Center for Creative Leadership is Situation, Behaviour, Impact. Describe when it happened, what the person actually did, and the effect it had. \"In this morning's meeting, you interrupted Sam twice, and he stopped sharing ideas.\" It avoids vague labels like \"rude\" and makes the message easier to hear. Then ask what they were trying to achieve.\n\nUse the same model for praise, which people need just as much. And ask for feedback on your own leadership. Thank whoever gives it, even if it stings, and show that you act on it.",
+      "apply_it": "Give one person specific praise today using situation, behaviour and impact. Then ask someone \"What's one thing I could do better as a leader?\"",
+      "quiz": {
+        "question": "What does the SBI feedback model stand for?",
+        "options": [
+          "Speed, Balance, Insight",
+          "Strengths, Benefits, Ideas",
+          "Summary, Blame, Improvement",
+          "Situation, Behaviour, Impact"
+        ],
+        "answer": 3,
+        "explanation": "Describing the situation, the specific behaviour and its impact keeps feedback factual and easier to accept."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--08",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "recognition",
+        "motivation"
+      ],
+      "title": "Recognise good work often and specifically",
+      "body": "Feeling appreciated is one of the strongest drivers of motivation, and it costs nothing. Yet many people go months without hearing that their work matters.\n\nMake recognition a habit. Notice effort and progress, not only big wins. Be specific about what was good and why: \"The way you calmed that angry customer kept a client we could have lost\" means far more than \"Good job.\"\n\nMatch the recognition to the person. Some enjoy public praise in a team meeting; others prefer a quiet word or a written note. Share credit with your own bosses too, naming the people who did the work. Teams who feel seen tend to stay longer and go the extra mile.",
+      "apply_it": "Before the end of today, thank one person for something specific they did and say what difference it made.",
+      "quiz": {
+        "question": "What makes recognition most meaningful?",
+        "options": [
+          "Saying \"good job\" to everyone at once",
+          "Saving it for the annual review",
+          "Being specific about what was good and why",
+          "Only praising big wins"
+        ],
+        "answer": 2,
+        "explanation": "Specific recognition shows you truly noticed and explains what to keep doing."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--09",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "decisions",
+        "judgement"
+      ],
+      "title": "Make decisions clearly, even when they are hard",
+      "body": "Teams get frustrated when decisions drag on or keep changing. Being a strong decision maker is one of the behaviours linked to the best managers.\n\nFor important choices, gather the key facts and ask the people closest to the work for their views. Be clear about how the decision will be made: will you decide, will the team vote, or does it need agreement from everyone? Set a deadline so discussions don't go round in circles.\n\nThen decide, explain your reasons and commit. Not everyone will agree, and that is fine if they felt heard. If new information shows you were wrong, change course openly. Admitting a wrong call builds more respect than defending it.",
+      "apply_it": "Think of a decision your team has been putting off. Set a date to decide, and tell everyone how the decision will be made.",
+      "quiz": {
+        "question": "What helps a team accept a decision they disagree with?",
+        "options": [
+          "Feeling heard and understanding the reasons",
+          "Never explaining the decision",
+          "Changing the decision every week",
+          "Letting the loudest person decide"
+        ],
+        "answer": 0,
+        "explanation": "People can commit to a decision they would not have chosen when they were consulted and understand why."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--10",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "conflict",
+        "fairness"
+      ],
+      "title": "Handle conflict early and fairly",
+      "body": "Disagreement about ideas can make a team stronger. Personal conflict that is ignored, though, spreads tension and drains energy. Address it early, while it is small.\n\nTalk to each person privately first to understand their view. Then, if needed, bring them together in a calm setting. Focus on behaviours and the work, not on personalities. Let each person explain without interruption, look for the shared goal, and agree specific next steps.\n\nStay neutral and fair, especially if one person is a friend or a high performer. Make clear that respectful behaviour is non-negotiable. Then follow up a week or two later to check the agreement is holding. Problems that keep returning usually need firmer action.",
+      "apply_it": "Is there a small tension in your team or group you have been ignoring? Plan a short private conversation with one person this week.",
+      "quiz": {
+        "question": "What is a good first step when two team members are in conflict?",
+        "options": [
+          "Wait for it to go away",
+          "Talk to each person privately to understand their view",
+          "Take the side of the better performer",
+          "Discuss it in front of the whole team"
+        ],
+        "answer": 1,
+        "explanation": "Private conversations help you understand each side before bringing people together."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--11",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "psychological-safety",
+        "teamwork"
+      ],
+      "title": "Make it safe to speak up and make mistakes",
+      "body": "Psychological safety is a shared feeling that it is fine to ask questions, raise concerns, admit mistakes and suggest new ideas without being embarrassed or punished. Research by Harvard's Amy Edmondson and a large Google study found it is one of the strongest markers of high-performing teams.\n\nLeaders create it. Admit your own mistakes and uncertainty. Ask for input, especially from quieter people, and thank people when they bring bad news. When something goes wrong, ask \"What can we learn?\" rather than \"Whose fault is it?\"\n\nThis does not mean low standards. Safe teams can be very demanding. It means people put their energy into the work rather than into protecting themselves.",
+      "apply_it": "In your next meeting, share one thing you got wrong recently and what you learned, then invite others to raise concerns.",
+      "quiz": {
+        "question": "What does psychological safety mean in a team?",
+        "options": [
+          "No one is ever criticised",
+          "Standards are kept low",
+          "The leader makes all decisions",
+          "People feel safe to speak up, ask questions and admit mistakes"
+        ],
+        "answer": 3,
+        "explanation": "Psychological safety lets people raise problems and ideas without fear, while standards stay high."
+      }
+    },
+    {
+      "id": "guide-lead-a-team--12",
+      "topic": "life-guides",
+      "tags": [
+        "leadership",
+        "wellbeing",
+        "resilience"
+      ],
+      "title": "Look after yourself so you can look after others",
+      "body": "Leading people can be lonely and draining. You carry other people's worries, make hard calls and often feel stuck between your team and your own bosses. If you run on empty, your patience, judgement and mood suffer, and your team feels it.\n\nProtect the basics: sleep, movement, breaks and time off. Set reasonable working hours and model them, so your team doesn't feel they must reply at midnight.\n\nFind support of your own: a mentor, a peer who also leads, or a training course. Keep learning about leadership, because nobody is born knowing it. And remember that bad days are normal. What matters is coming back the next day and trying again.",
+      "apply_it": "Block out one short break in your calendar each day this week, and find one fellow leader you could talk to about challenges.",
+      "quiz": {
+        "question": "Why should leaders protect their own wellbeing?",
+        "options": [
+          "So they can work less than everyone else",
+          "It doesn't matter for leaders",
+          "Because tired leaders make worse judgements and their mood affects the team",
+          "To avoid making any decisions"
+        ],
+        "answer": 2,
+        "explanation": "A leader's energy and judgement shape the team, so looking after yourself helps everyone."
+      }
+    }
+  ]
+}

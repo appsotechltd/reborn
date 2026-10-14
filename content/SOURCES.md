@@ -148,6 +148,18 @@ honest number of distinct ideas rather than padding.
 The pipeline has no adapter for these on purpose: nothing is fetched or stored. Cards are written
 by hand and the validator rejects any `quote` on them.
 
+## Life Guides
+
+Complete guides written by Reborn for the Life Guides category, such as *Make Your Marriage Work*
+or *Become an A Student*. Each guide is one library file, `content/library/guide-<slug>.json`, with
+`kind: "guide"`, author `Reborn` and the `original-summary` licence: every part is written in our
+own words after reading several reputable, free-to-read sources (NHS, CDC, NIH, WHO, universities,
+government money and consumer sites, professional bodies and the like), so nothing is copied and
+no quote is used. The source `url` links the most useful reference and `notes` lists all of them;
+the attribution line names the main ones. Each guide has 10 to 12 parts in reading order, and the
+app shows it as a "Complete guide" post (the book summary built at seed). Guides on health,
+anger, anxiety, stress, sleep, food, exercise, smoking and first aid carry the health note.
+
 ## The pipeline
 
 Code lives in [pipeline/](pipeline/). Python 3.11+, standard library only.
