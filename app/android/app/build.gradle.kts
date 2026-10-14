@@ -29,11 +29,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        // Shared test key (see android/test-signing/README.md), so each test APK
+        // installs over the last one. Not for the Play Store.
+        create("test") {
+            storeFile = rootProject.file("test-signing/reborn-test.jks")
+            storePassword = "reborn-test"
+            keyAlias = "reborn-test"
+            keyPassword = "reborn-test"
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("test")
         }
     }
 }
