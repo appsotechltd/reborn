@@ -50,6 +50,7 @@ class ListenState {
     this.position = Duration.zero,
     this.duration,
     this.speed = 1,
+    this.music = false,
     this.deviceVoice = false,
     this.sleep = ListenSleep.off,
     this.sleepAt,
@@ -71,6 +72,9 @@ class ListenState {
   final Duration position;
   final Duration? duration;
   final double speed;
+
+  /// Background music under the voice while playing (off unless turned on).
+  final bool music;
 
   /// The current card has no recording and is read by the device voice.
   final bool deviceVoice;
@@ -110,6 +114,7 @@ class ListenState {
     Duration? duration,
     bool clearDuration = false,
     double? speed,
+    bool? music,
     bool? deviceVoice,
     ListenSleep? sleep,
     DateTime? sleepAt,
@@ -126,6 +131,7 @@ class ListenState {
     position: position ?? this.position,
     duration: clearDuration ? null : (duration ?? this.duration),
     speed: speed ?? this.speed,
+    music: music ?? this.music,
     deviceVoice: deviceVoice ?? this.deviceVoice,
     sleep: sleep ?? this.sleep,
     sleepAt: clearSleepAt ? null : (sleepAt ?? this.sleepAt),
@@ -144,6 +150,7 @@ enum _Output { none, audio, voice }
 /// much was heard (see [kListenReadFraction] and [kListenSeenAfter]).
 class ListenController extends Notifier<ListenState> {
   static const speedKey = 'listen.speed';
+  static const musicKey = 'listen.music';
 
   /// Bumped on every change of card or stop, so a stale async step (a
   /// recording that finished loading after a skip) does nothing.
@@ -181,10 +188,13 @@ class ListenController extends Notifier<ListenState> {
   ListenState build() {
     ref.onDispose(_dispose);
     double? saved;
+    var music = false;
     try {
-      saved = ref.read(sharedPreferencesProvider).getDouble(speedKey);
+      final prefs = ref.read(sharedPreferencesProvider);
+      saved = prefs.getDouble(speedKey);
+      music = prefs.getBool(musicKey) ?? false;
     } catch (_) {
-      // No saved speed.
+      // No saved speed or music.
     }
     final session = ref.read(listenMediaSessionProvider);
     session.bind(
@@ -197,7 +207,10 @@ class ListenController extends Notifier<ListenState> {
         stop: stop,
       ),
     );
-    return ListenState(speed: kListenSpeeds.contains(saved) ? saved! : 1.0);
+    return ListenState(
+      speed: kListenSpeeds.contains(saved) ? saved! : 1.0,
+      music: music,
+    );
   }
 
   void _dispose() {
@@ -309,6 +322,7 @@ class ListenController extends Notifier<ListenState> {
         index: index.clamp(0, posts.length - 1),
         playing: playing,
         speed: old.speed,
+        music: old.music,
         single: single,
         queueKey: key,
         session: old.session + 1,
@@ -412,6 +426,28 @@ class ListenController extends Notifier<ListenState> {
     if (_output == _Output.audio) await _audio?.setSpeed(speed);
   }
 
+  /// Background music on or off (remembered on this device).
+  Future<void> setMusic(bool on) async {
+    _set(state.copyWith(music: on));
+    try {
+      await ref.read(sharedPreferencesProvider).setBool(musicKey, on);
+    } catch (_) {
+      // Remembered for this session only.
+    }
+  }
+
+  /// The music plays exactly while a session is playing with music on.
+  bool _musicPlaying = false;
+
+  void _syncMusic() {
+    final s = state;
+    final want = s.active && s.playing && s.music && !s.finished;
+    if (want == _musicPlaying) return;
+    _musicPlaying = want;
+    final audio = want ? _audioOrNull() : _audio;
+    unawaited(audio?.setMusic(want));
+  }
+
   /// The next speed in [kListenSpeeds], wrapping round.
   Future<void> cycleSpeed() {
     final i = kListenSpeeds.indexOf(state.speed);
@@ -446,7 +482,12 @@ class ListenController extends Notifier<ListenState> {
     _sleepTimer = null;
     await _stopOutput();
     _session.clear();
-    state = ListenState(speed: state.speed, session: state.session + 1);
+    state = ListenState(
+      speed: state.speed,
+      music: state.music,
+      session: state.session + 1,
+    );
+    _syncMusic();
   }
 
   // ---- Queue ----
@@ -791,6 +832,7 @@ class ListenController extends Notifier<ListenState> {
   void _set(ListenState s, {bool session = false}) {
     final old = state;
     state = s;
+    _syncMusic();
     if (!s.active) return;
     if (session ||
         old.playing != s.playing ||

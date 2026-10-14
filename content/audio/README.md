@@ -32,3 +32,9 @@ reborn media-upload content/audio/out audio
 
 Only `out/manifest.json` is committed. The API reads it at startup (`CARD_AUDIO_DIR`, default
 `../content/audio/out`) and adds an `audio` object to each card (see `docs/API.md`).
+
+## Background music
+
+`listen_music.py` generates the optional background music Listen mode can play under the voice
+(off unless the listener turns it on). It is our own synthesised track, so it needs no licence.
+The steps to rebuild `listen-music.mp3` are at the top of the script.

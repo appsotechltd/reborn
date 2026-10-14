@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   CHIME_URL,
+  MUSIC_URL,
   heardOutcome,
   listenText,
   ListenPlayer,
@@ -24,6 +25,7 @@ class FakeAudio extends EventTarget {
     this.currentTime = 0;
   }
   preload = "";
+  loop = false;
   muted = false;
   currentTime = 0;
   duration = NaN;
@@ -445,5 +447,40 @@ describe("ListenPlayer.follow (the audio follows the page on screen)", () => {
     player.followCard(withAudio(9));
     expect(player.getState()).toMatchObject({ single: true, index: 0, playing: true });
     expect(main().src).toContain("example-book--09.mp3");
+  });
+});
+
+describe("ListenPlayer background music", () => {
+  const musicOf = (audios: FakeAudio[]) => audios.find((a) => a.src.endsWith(MUSIC_URL));
+
+  it("is off by default, and plays exactly while the voice plays once turned on", () => {
+    const { player, audios } = setup();
+    player.start({ items: items(withAudio(1), withAudio(2)) });
+    expect(player.getState().music).toBe(false);
+    expect(musicOf(audios)).toBeUndefined();
+
+    player.setMusic(true);
+    const music = musicOf(audios)!;
+    expect(music.loop).toBe(true);
+    expect(music.paused).toBe(false);
+    player.pause();
+    expect(music.paused).toBe(true);
+    player.play();
+    expect(music.paused).toBe(false);
+    player.setMusic(false);
+    expect(music.paused).toBe(true);
+    expect(window.localStorage.getItem("reborn.listen.music")).toBe("0");
+  });
+
+  it("remembers the choice for the next session, and stops with the session", () => {
+    window.localStorage.setItem("reborn.listen.music", "1");
+    const { player, audios } = setup();
+    player.start({ items: items(withAudio(1)) });
+    expect(player.getState().music).toBe(true);
+    const music = musicOf(audios)!;
+    expect(music.paused).toBe(false);
+    player.stop();
+    expect(music.paused).toBe(true);
+    expect(player.getState().music).toBe(true);
   });
 });
