@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { ListenButton } from "@/components/ListenButton";
+import { ListenButton, ListenIconButton } from "@/components/ListenButton";
 import { ListenDock } from "@/components/ListenDock";
 import { Timeline } from "@/components/Timeline";
 import { AuthProvider } from "@/lib/auth";
@@ -122,5 +122,17 @@ describe("Listen mode on the web", () => {
     expect(within(bar).getByText("Idea 1")).toBeTruthy();
     fireEvent.click(within(bar).getByRole("button", { name: "Next idea" }));
     expect(within(bar).getByText("Idea 2")).toBeTruthy();
+  });
+
+  it("plays one feed post's card from its Listen button, and pauses it", () => {
+    render(
+      <App>
+        <ListenIconButton card={voiced(2)} />
+      </App>,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Listen to this idea" }));
+    expect(within(screen.getByRole("region", { name: "Listen mode" })).getByText("Idea 2")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Pause this idea", pressed: true }));
+    expect(screen.getByRole("button", { name: "Resume this idea", pressed: false })).toBeTruthy();
   });
 });

@@ -70,7 +70,7 @@ export function PostCard({
         {reason ? <PostReasonLine reason={reason} snap={snap} /> : null}
         <CardView card={post.card} headingLevel="h2" titleHref={`/ideas/${post.id}`} feed={snap} />
       </div>
-      <PostActions post={post} compact={snap} className={snap ? "mt-6 max-md:mt-2 max-md:shrink-0 max-md:px-1" : undefined} />
+      <PostActions post={post} compact={snap} listen className={snap ? "mt-6 max-md:mt-2 max-md:shrink-0 max-md:px-1" : undefined} />
     </div>
   );
 }

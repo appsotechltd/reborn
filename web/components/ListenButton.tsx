@@ -32,3 +32,35 @@ export function ListenButton({ card }: { card: Card }) {
     </button>
   );
 }
+
+/**
+ * The feed's one-tap Listen for a post's card, an icon beside the post's actions: plays the card,
+ * or pauses and resumes it while it's the one playing. Hidden when it can't play here.
+ */
+export function ListenIconButton({ card }: { card: Card }) {
+  const hydrated = useHydrated();
+  const { player, state } = useListen();
+  if (!hydrated || !player || !player.canPlay(card)) return null;
+
+  const current = state.active && state.items[state.index]?.card.id === card.id && state.phase !== "finished";
+  const playing = current && state.playing;
+
+  function press() {
+    if (!player) return;
+    if (current) player.toggle();
+    else player.start({ items: [{ id: card.id, card }], single: true });
+  }
+
+  return (
+    <button
+      type="button"
+      className="btn btn-small btn-ghost px-2.5 text-muted hover:text-fg"
+      onClick={press}
+      aria-pressed={playing}
+      aria-label={playing ? "Pause this idea" : current ? "Resume this idea" : "Listen to this idea"}
+      title={playing ? "Pause this idea" : "Listen to this idea"}
+    >
+      <Icon name={playing ? "pause" : "headphones"} />
+    </button>
+  );
+}

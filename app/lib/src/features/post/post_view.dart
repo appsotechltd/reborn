@@ -9,6 +9,7 @@ import '../../widgets/common.dart';
 import '../card/card_view.dart';
 import '../card/explainer_player.dart';
 import '../gifts/gift_sheet.dart';
+import '../listen/listen_controller.dart';
 import 'post_store.dart';
 import 'share.dart';
 
@@ -97,7 +98,7 @@ class SwipePostPage extends ConsumerWidget {
             ),
           ),
         ),
-        PostActionBar(post: p),
+        PostActionBar(post: p, listen: true),
         ?footer,
       ],
     );
@@ -416,8 +417,12 @@ class _Link extends StatelessWidget {
 
 /// Reactions with counts, then favourite, comments, share and gift.
 class PostActionBar extends ConsumerWidget {
-  const PostActionBar({super.key, required this.post});
+  const PostActionBar({super.key, required this.post, this.listen = false});
   final Post post;
+
+  /// Shows a Listen button for the post's card (the swipe feed, whose card
+  /// preview has none of its own).
+  final bool listen;
 
   Future<void> _guard(
     BuildContext context,
@@ -464,7 +469,7 @@ class PostActionBar extends ConsumerWidget {
           const SizedBox(height: 4),
           LayoutBuilder(
             builder: (context, c) {
-              final narrow = c.maxWidth < 330;
+              final narrow = c.maxWidth < (listen ? 390 : 330);
               void gift() {
                 if (!ensureSignedIn(context, ref)) return;
                 showGiftSheet(context, post);
@@ -512,6 +517,7 @@ class PostActionBar extends ConsumerWidget {
                       onPressed: () => sharePost(context, ref, post),
                     ),
                   ),
+                  if (listen) _ListenPostButton(card: post.card),
                   const Spacer(),
                   // In a narrow column (the tablet grid) Gift is just its icon.
                   if (narrow)
@@ -599,6 +605,40 @@ class _ReactionChip extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Listen to one post's card: its recording, or the device voice. While
+/// it's the card playing, pauses and resumes it.
+class _ListenPostButton extends ConsumerWidget {
+  const _ListenPostButton({required this.card});
+  final IdeaCard card;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final (current, playing) = ref.watch(
+      listenProvider.select((s) {
+        final on = s.active && !s.finished && s.current?.card.id == card.id;
+        return (on, on && s.playing);
+      }),
+    );
+    final listen = ref.read(listenProvider.notifier);
+    return IconButton(
+      key: const ValueKey('post-listen'),
+      tooltip: playing ? 'Pause this idea' : 'Listen to this idea',
+      color: Theme.of(context).colorScheme.onSurfaceVariant,
+      onPressed: () {
+        if (current) {
+          listen.toggle();
+        } else {
+          listen.playCard(card);
+        }
+      },
+      icon: Icon(
+        playing ? Icons.pause_rounded : Icons.headphones_outlined,
+        size: 22,
       ),
     );
   }
