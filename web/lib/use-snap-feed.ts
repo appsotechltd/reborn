@@ -77,6 +77,11 @@ function reducedMotion(): boolean {
   return !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 }
 
+/** Smooth scrolling, unless the reader prefers reduced motion. */
+export function smoothScroll(): ScrollBehavior {
+  return reducedMotion() ? "auto" : "smooth";
+}
+
 /**
  * Keeps `--header-h` on <html> equal to the height of the sticky bars above the feed (the
  * header plus, on phones, the topic chips), so each slide can be exactly the screen below
@@ -144,7 +149,7 @@ export function useSnapFeedKeys(listRef: RefObject<HTMLElement | null>, onMove?:
       if (next < 0 || next >= slides.length) return;
       e.preventDefault();
       pending.current = { index: next, at: now };
-      slides[next].scrollIntoView({ block: "start", behavior: reducedMotion() ? "auto" : "smooth" });
+      slides[next].scrollIntoView({ block: "start", behavior: smoothScroll() });
       // Keep focus with the post on screen, so Tab carries on from there.
       slides[next].querySelector<HTMLElement>("h2 a")?.focus({ preventScroll: true });
       move.current?.(next, slides.length);

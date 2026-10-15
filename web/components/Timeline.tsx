@@ -5,9 +5,9 @@ import { type ReactNode, useCallback, useEffect, useRef, useState } from "react"
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { useSeenTracker } from "@/lib/use-seen";
-import { useListen, useListenFollow } from "@/lib/listen";
+import { useListen, useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromPosts } from "@/lib/listen-player";
-import { postOnScreen, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
+import { postOnScreen, smoothScroll, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
 import { isSummaryItem, type Post, type TimelineItem, type Topic } from "@/lib/types";
 import { ChipRow } from "./ChipRow";
 import { DailyBanner } from "./DailyBanner";
@@ -175,6 +175,13 @@ export function Timeline({
       : null,
   );
 
+  // The audio moving on to another post scrolls to it, when it's loaded.
+  useListenMove((item) => {
+    const i = feed.posts.findIndex((p) => p.id === item.id);
+    const slide = i >= 0 ? listRef.current?.children[i] : null;
+    if (slide && i !== postOnScreen(listRef.current)) slide.scrollIntoView({ block: "start", behavior: smoothScroll() });
+  });
+
   function chooseTopic(slug: string) {
     if (slug === topic) return;
     setTopic(slug);
@@ -231,7 +238,7 @@ export function Timeline({
           {feed.posts.map((p, i) => (
             <li
               key={`${signedIn ? "me" : "anon"}:${p.id}`}
-              className="max-md:flex max-md:h-[var(--slide-h)] max-md:snap-start max-md:snap-always max-md:flex-col max-md:pb-1 max-md:pt-2"
+              className="md:scroll-mt-24 max-md:flex max-md:h-[var(--slide-h)] max-md:snap-start max-md:snap-always max-md:flex-col max-md:pb-1 max-md:pt-2"
             >
               {i === 0 ? lead : null}
               {i === divider ? <CaughtUp /> : null}

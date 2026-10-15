@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useEffectEvent, useState, useSyncExternalStore, type ReactNode } from "react";
 import { currentToken, useAuth } from "./auth";
-import { ListenPlayer, type FollowTarget, type ListenState } from "./listen-player";
+import { ListenPlayer, type FollowTarget, type ListenItem, type ListenState } from "./listen-player";
 import type { Card } from "./types";
 import { onVideoStarted, setListeningPlaying } from "./media-focus";
 
@@ -82,6 +82,28 @@ export function useListenFollow(target: FollowTarget | null) {
   useEffect(() => {
     if (key) follow();
   }, [player, key]);
+}
+
+/**
+ * The other way round: when the audio moves on to another card within the session (the next one,
+ * or one picked in the player), `onMove` shows it on this page (opens its card, or scrolls or turns
+ * to it). Starting a session opens nothing.
+ */
+export function useListenMove(onMove: (item: ListenItem) => void) {
+  const player = useContext(ListenContext);
+  const move = useEffectEvent(onMove);
+  useEffect(() => {
+    if (!player) return;
+    let before = player.getState();
+    return player.subscribe(() => {
+      const now = player.getState();
+      const was = before;
+      before = now;
+      const item = now.active ? now.items[now.index] : undefined;
+      if (!item || now.session !== was.session || item.id === was.items[was.index]?.id) return;
+      move(item);
+    });
+  }, [player]);
 }
 
 /** As useListenFollow, for a card's own page (see ListenPlayer.followCard). */

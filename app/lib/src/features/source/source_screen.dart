@@ -76,6 +76,8 @@ class SourceScreen extends ConsumerWidget {
           ];
           return ListenFollow(
             target: listen,
+            onMove: (p) => openListenCard(context, p),
+            catchUp: false,
             child: ListView.builder(
               itemCount: before.length + shown.length + after.length,
               itemBuilder: (context, i) {

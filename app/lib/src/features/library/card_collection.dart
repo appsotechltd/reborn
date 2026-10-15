@@ -76,6 +76,13 @@ ListenTarget? collectionListenTarget(
   );
 }
 
+/// The audio moved on to [post] while a book's or author's page is on
+/// show: its card opens (and, from there, the card page keeps up).
+void openListenCard(BuildContext context, Post post) => context.push(
+  '/cards/${Uri.encodeComponent(post.card.id)}',
+  extra: post.card,
+);
+
 /// Above a book's or author's cards: "Listen to this book" (plays the cards
 /// shown, in order, in Listen mode) and the All / Videos switch (hidden when
 /// none of the cards has a video).

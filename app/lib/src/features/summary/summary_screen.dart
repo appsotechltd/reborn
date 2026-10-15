@@ -189,6 +189,11 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
                     cards: d.parts,
                     index: _all ? null : _index,
                   ),
+            // The audio moving on to another part turns to it.
+            onMove: (p) {
+              final i = d.parts.indexWhere((c) => c.id == p.card.id);
+              if (i >= 0 && !_all) _turn(i - _index, d.parts.length + 1);
+            },
             child: _all ? _allParts(d) : _oneAtATime(d),
           );
         },

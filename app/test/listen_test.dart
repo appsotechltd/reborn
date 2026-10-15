@@ -693,6 +693,80 @@ void main() {
     });
   });
 
+  group('opens the card playing', () {
+    testWidgets('shows the next card as the audio moves on', (tester) async {
+      final h = await harness();
+      final nav = GlobalKey<NavigatorState>();
+      final moves = <String>[];
+      await tester.pumpWidget(
+        UncontrolledProviderScope(
+          container: h.container,
+          child: MaterialApp(
+            navigatorKey: nav,
+            home: ListenFollow(
+              target: null,
+              onMove: (p) => moves.add(p.id),
+              child: const Text('screen'),
+            ),
+          ),
+        ),
+      );
+      await h.listen.startTimeline(posts: [post('a'), post('b'), post('c')]);
+      await tester.pump();
+      // Starting a list opens nothing; moving on does.
+      expect(moves, isEmpty);
+      await h.listen.next();
+      await tester.pump();
+      expect(moves, ['b']);
+
+      // Out of sight, nothing opens; back on screen, it catches up.
+      nav.currentState!.push(
+        MaterialPageRoute<void>(builder: (_) => const Text('player')),
+      );
+      await tester.pumpAndSettle();
+      await h.listen.next();
+      await tester.pump();
+      expect(moves, ['b']);
+      nav.currentState!.pop();
+      await tester.pumpAndSettle();
+      expect(moves, ['b', 'c']);
+      await h.listen.stop();
+    });
+
+    testWidgets('a list page opens nothing on coming back', (tester) async {
+      final h = await harness();
+      final nav = GlobalKey<NavigatorState>();
+      final moves = <String>[];
+      await tester.pumpWidget(
+        UncontrolledProviderScope(
+          container: h.container,
+          child: MaterialApp(
+            navigatorKey: nav,
+            home: ListenFollow(
+              target: null,
+              onMove: (p) => moves.add(p.id),
+              catchUp: false,
+              child: const Text('book'),
+            ),
+          ),
+        ),
+      );
+      await h.listen.startTimeline(posts: [post('a'), post('b'), post('c')]);
+      nav.currentState!.push(
+        MaterialPageRoute<void>(builder: (_) => const Text('card')),
+      );
+      await tester.pumpAndSettle();
+      await h.listen.next();
+      nav.currentState!.pop();
+      await tester.pumpAndSettle();
+      expect(moves, isEmpty);
+      await h.listen.next();
+      await tester.pump();
+      expect(moves, ['c']);
+      await h.listen.stop();
+    });
+  });
+
   group('background music', () {
     testWidgets('off by default; plays exactly while playing once on', (
       tester,

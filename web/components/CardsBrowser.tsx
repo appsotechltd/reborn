@@ -1,8 +1,9 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useHydrated } from "@/lib/auth";
-import { useListen, useListenFollow } from "@/lib/listen";
+import { useListen, useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromCards } from "@/lib/listen-player";
 import type { Card } from "@/lib/types";
 import { CardList } from "./CardPreview";
@@ -19,7 +20,8 @@ export function videoCards(cards: Card[]): Card[] {
  * Every card of a book or an author, with an All / Videos switch (hidden when there are no videos)
  * and "Listen to this book/author", which plays the cards shown, in order, in Listen mode.
  * Server-rendered with All selected, so every card is in the page's HTML. While a session is on,
- * opening the page moves it to the cards shown, unless it is already this page's (All or Videos).
+ * opening the page moves it to the cards shown, unless it is already this page's (All or Videos);
+ * when the audio moves on to another card, that card's page opens.
  */
 export function CardsBrowser({
   cards,
@@ -44,6 +46,8 @@ export function CardsBrowser({
   const { state: listen } = useListen();
   const ours = !!listen.queue?.startsWith(`${queue}|`);
   useListenFollow(ours ? null : { items: itemsFromCards(shown), queue: `${queue}|${current}` });
+  const router = useRouter();
+  useListenMove((item) => router.push(`/ideas/${encodeURIComponent(item.card.id)}`));
 
   return (
     <section aria-labelledby="cards-title">

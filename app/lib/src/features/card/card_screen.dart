@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../api/models.dart';
 import '../../data/providers.dart';
@@ -66,12 +67,20 @@ class _CardScreenState extends ConsumerState<CardScreen> {
         data: (f) => _scroll(f.value),
       );
     }
-    // While Listen mode is on, it moves to this card.
+    // While Listen mode is on, it moves to this card; when it moves on to
+    // another card, that card opens in place of this one.
     final card = post.value?.value.card ?? initial;
     return Scaffold(
       appBar: AppBar(leading: exitLeading(context), title: const Text('Idea')),
       body: ListenFollow(
         target: card == null ? null : ListenTarget.card(card),
+        onMove: (p) {
+          if (p.card.id == widget.cardId) return;
+          context.pushReplacement(
+            '/cards/${Uri.encodeComponent(p.card.id)}',
+            extra: p.card,
+          );
+        },
         child: body,
       ),
     );
