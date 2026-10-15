@@ -92,6 +92,159 @@ export interface Card {
   explainer?: Explainer | null;
   audio?: CardAudio | null;
   image?: CardImage | null;
+  // Member cards (written by a member, not from a book) add these:
+  /** The member who wrote it. Present only on member cards. */
+  author?: PublicUser | null;
+  category?: MemberCategory | null;
+  /** Who can see it: an Audience, or "hidden" when reports or a moderator took it down. */
+  visibility?: Audience | "hidden" | string;
+  created_at?: string;
+  /** An illustrated video made in the card studio. */
+  video?: CardVideo | null;
+}
+
+// --- Member cards, the card studio, writer earnings and subscriptions -----------
+
+export type Audience = "everyone" | "followers" | "subscribers" | "private";
+
+export interface MemberCategory {
+  id: string;
+  name: string;
+  /** Present in category lists. */
+  card_count?: number;
+}
+
+/** One illustration of an illustrated video, shown for an equal share of the narration. */
+export interface VideoScene {
+  url: string;
+  width: number;
+  height: number;
+}
+
+export interface CardVideo {
+  kind: "illustrated" | string;
+  scenes: VideoScene[];
+  audio_url: string;
+  voice: string;
+  duration_s: number;
+}
+
+export type ImageStyle = "sketch" | "illustration" | "picture";
+export type ImageShape = "landscape" | "square" | "portrait";
+export type StudioMedia = "image" | "audio" | "video";
+
+export interface StudioRate {
+  kind: ImageStyle | "audio" | "video" | string;
+  units: number;
+  per: string;
+}
+
+/** GET /v1/studio. */
+export interface StudioInfo {
+  available: boolean;
+  rates: StudioRate[];
+  video_scenes: number;
+  voices: { id: string; name: string }[];
+  audiences: Audience[];
+  monthly_units: number;
+  premium: boolean;
+  wallet: AIWallet | null;
+}
+
+export interface StudioResult {
+  card: Card;
+  units: number;
+  wallet: AIWallet;
+}
+
+export interface NewMemberCard {
+  title: string;
+  body: string;
+  apply_it?: string;
+  topic: string;
+  /** "" clears it on update. */
+  category_id?: string;
+  audience?: Audience;
+}
+
+export interface ReportedCard {
+  card: Card;
+  status: string;
+  reports: number;
+  reasons: string[] | null;
+}
+
+export interface EarningItem {
+  kind: "gift" | "subscription" | string;
+  /** Gifts only ("" for subscriptions). */
+  post_id?: string | null;
+  post_title?: string | null;
+  tier: string;
+  amount_cents: number;
+  author_cents: number;
+  currency: string;
+  /** Who paid, or null when their account is gone. */
+  from: PublicUser | null;
+  paid_at: string;
+}
+
+export interface EarningsResponse {
+  earnings: {
+    total_cents: number;
+    this_month_cents: number;
+    gifts: number;
+    subscribers: number;
+    currency: string;
+    recent: EarningItem[] | null;
+  };
+  commission_percent: number;
+  store_fee_percent: number;
+}
+
+export interface WriterTier {
+  id: string;
+  amount_cents: number;
+  currency: string;
+  product_id: string;
+}
+
+export interface WriterPlan {
+  tier: string;
+  enabled: boolean;
+  pitch: string;
+  subscribers: number;
+  updated_at: string;
+}
+
+export interface MyPlanResponse {
+  plan: WriterPlan | null;
+  tiers: WriterTier[];
+  commission_percent: number;
+  store_fee_percent: number;
+}
+
+export interface WriterSubscription {
+  writer: PublicUser;
+  tier: string;
+  provider: string;
+  /** False once a web subscription is cancelled (or for app passes): it ends at expires_at. */
+  renews: boolean;
+  expires_at: string;
+  active: boolean;
+}
+
+/** GET /v1/users/{handle}/plan. `plan` is null when the writer doesn't sell subscriptions. */
+export interface UserPlanResponse {
+  plan: { pitch: string; subscribers: number } | null;
+  tier: WriterTier | null;
+  locked_cards: number;
+  subscription: WriterSubscription | null;
+  providers: { stripe: boolean; apple: boolean; google: boolean };
+}
+
+export interface UserCardsResponse extends PostsResponse {
+  /** First page only: the writer's categories that hold cards the viewer may see. */
+  categories?: MemberCategory[];
 }
 
 /** Full source (GET /v1/sources/{id}), fields from content/SCHEMA.md. */
@@ -264,7 +417,7 @@ export interface PostViewer {
   seen: boolean;
 }
 
-export type ReasonKind = "source" | "author" | "favorite" | "topic" | "new";
+export type ReasonKind = "source" | "author" | "favorite" | "topic" | "writer" | "new";
 
 export interface PostReason {
   kind: ReasonKind | string;

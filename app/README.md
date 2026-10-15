@@ -131,6 +131,19 @@ test/                          model, client, cache, Ask and widget tests
   tiers show with "Gifts are coming soon". The products must exist in App
   Store Connect / the Play Console and the app needs the In-App Purchase
   capability before release.
+- **My cards** (`/me/cards`, from the profile menu): members write their own
+  cards with a topic, an optional category of their own and an audience
+  (Everyone, Followers, Subscribers, Only me). Saved cards open the **card
+  studio** (Premium, AI units): an image, the card read aloud, or an
+  illustrated video, priced on each button. Member cards read "by <name>" and
+  link to the writer's page, which lists their cards and a Subscribe box.
+  Others can report them from the post's menu.
+- **Writer subscriptions** are 30-day passes bought in the app:
+  `reborn.writer.month199|499|999`, Play consumables and App Store
+  non-renewing subscriptions, both bought with `buyConsumable` and sent to
+  `POST /v1/users/{handle}/subscribe/apple|google`, then consumed/finished,
+  as gifts are. **Earnings** (`/me/earnings`) shows what gifts and
+  subscriptions earned, the subscription offer and your own subscriptions.
 - **Follow** books (source screen), authors (tap an author name) and people
   (profile by handle). The profile menu has Favourites, Following and Settings
   (handle, bio, and in-app account deletion with `DELETE /v1/me`).

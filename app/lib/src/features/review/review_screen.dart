@@ -34,7 +34,7 @@ class ReviewScreen extends ConsumerWidget {
           ? const SignInPrompt(
               icon: Icons.refresh,
               title: 'Remember what you read',
-              message: 'Sign in to review stashed ideas at the right moment and take quick quizzes.',
+              message: 'Sign in to review saved ideas at the right moment and take quick quizzes.',
             )
           : ref
                 .watch(reviewDueProvider)
@@ -117,7 +117,7 @@ class _ReviewSessionState extends ConsumerState<ReviewSession> {
               const Text(
                 // True whether or not the reader has stashed anything yet:
                 // a stashed idea is first due the next day.
-                'Ideas you stash come back here for review, first the next '
+                'Ideas you save come back here for review, first the next '
                 'day, then at growing intervals.',
                 textAlign: TextAlign.center,
               ),

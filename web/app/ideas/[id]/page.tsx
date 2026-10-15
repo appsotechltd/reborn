@@ -16,7 +16,9 @@ import { excerpt, topicName } from "@/lib/content";
 import { SITE_NAME, siteUrl } from "@/lib/config";
 import { authorHref } from "@/lib/social";
 import { getCard, getPost, getSitemap, getSource, loadOr } from "@/lib/server-api";
+import { looksLikeMemberCard } from "@/lib/studio";
 import type { Card, Post } from "@/lib/types";
+import { MemberIdea } from "./MemberIdea";
 
 export const revalidate = 600;
 
@@ -33,8 +35,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const { data: card } = await loadOr(() => getCard(id), null);
-  if (!card) return { title: "Idea not found", robots: { index: false } };
+  if (!card) return { title: looksLikeMemberCard(id) ? "Idea" : "Idea not found", robots: { index: false } };
   const description = excerpt(card.body);
+  // A member's card is credited to them, not to a book.
+  const authors = card.author ? [card.author.display_name] : card.source.authors;
+  const authorUrls = card.author ? [`${siteUrl()}/u/${card.author.handle}`] : card.source.authors.map((name) => `${siteUrl()}${authorHref(name)}`);
   const url = `/ideas/${card.id}`;
   const oembed = `/oembed?url=${encodeURIComponent(`${siteUrl()}${url}`)}&format=json`;
   // og:image and twitter:image come from opengraph-image.tsx / twitter-image.tsx next to this page.
@@ -45,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       canonical: url,
       types: { "application/json+oembed": [{ url: oembed, title: card.title }] },
     },
-    authors: card.source.authors.map((name) => ({ name })),
+    authors: authors.map((name) => ({ name })),
     openGraph: {
       siteName: "Reborn",
       type: "article",
@@ -54,7 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       url,
       section: topicName(card.topic),
       tags: card.tags ?? undefined,
-      authors: card.source.authors.map((name) => `${siteUrl()}${authorHref(name)}`),
+      authors: authorUrls,
     },
     twitter: { card: "summary_large_image", title: card.title, description },
   };
@@ -78,14 +83,16 @@ function cardJsonLd(card: Card) {
     inLanguage: "en",
     creditText: card.credit,
     publisher: { "@type": "Organization", name: SITE_NAME, url: siteUrl() },
-    isBasedOn: {
+    ...(card.author
+      ? { author: { "@type": "Person", name: card.author.display_name, url: `${siteUrl()}/u/${card.author.handle}` } }
+      : { isBasedOn: {
       "@type": isBook ? "Book" : "CreativeWork",
       "@id": `${siteUrl()}/sources/${card.source.id}`,
       name: card.source.title,
       url: card.source.url,
       author: card.source.authors.map((name) => ({ "@type": "Person", name })),
       license: card.source.licence_url,
-    },
+    } }),
   };
 }
 
@@ -93,10 +100,12 @@ export default async function IdeaPage({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const { data: card, ok } = await loadOr(() => getCard(id), null);
   if (!ok) return <Unavailable what="this idea" />;
+  // A member's card for followers or subscribers only: the browser loads it as the reader.
+  if (!card && looksLikeMemberCard(id)) return <MemberIdea id={id} />;
   if (!card) notFound();
 
   const [{ data: source }, { data: loadedPost }] = await Promise.all([
-    loadOr(() => getSource(card.source.id), null),
+    card.author ? Promise.resolve({ data: null }) : loadOr(() => getSource(card.source.id), null),
     loadOr(() => getPost(card.id), null),
   ]);
   const related = (source?.cards ?? []).filter((c) => c.id !== card.id);
@@ -113,7 +122,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ id: strin
       <JsonLd
         data={breadcrumbsJsonLd(siteUrl(), [
           [topicName(card.topic), `/topics/${card.topic}`],
-          [card.source.title, `/sources/${card.source.id}`],
+          card.author ? [card.author.display_name, `/u/${card.author.handle}`] : [card.source.title, `/sources/${card.source.id}`],
           [card.title, `/ideas/${card.id}`],
         ])}
       />

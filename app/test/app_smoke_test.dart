@@ -123,7 +123,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Ask the library'), findsOneWidget);
 
-    await tester.tap(find.text('Stashes'));
+    await tester.tap(find.text('Collections'));
     await tester.pumpAndSettle();
     expect(find.text('Keep the ideas you love'), findsOneWidget);
 

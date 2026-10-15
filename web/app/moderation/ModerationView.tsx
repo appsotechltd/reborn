@@ -10,7 +10,7 @@ import { useAuth } from "@/lib/auth";
 import { formatAuthors, paragraphs, topicName } from "@/lib/content";
 import { useLoad } from "@/lib/use-load";
 import { timeAgo } from "@/lib/social";
-import type { Contribution, ReportedComment } from "@/lib/types";
+import type { Contribution, ReportedCard, ReportedComment } from "@/lib/types";
 
 export function ModerationView() {
   return (
@@ -41,8 +41,106 @@ function ModeratorOnly() {
   return (
     <>
       <Queue />
+      <ReportedCards />
       <ReportedComments />
     </>
+  );
+}
+
+/** Members' cards that readers reported. Three reports hide one until a moderator decides. */
+function ReportedCards() {
+  const { api, token } = useAuth();
+  const loader = useCallback(() => api.reportedCards().then((r) => r.cards), [api, token]); // eslint-disable-line react-hooks/exhaustive-deps
+  const { data, error, loading, setData } = useLoad(loader);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [actionError, setActionError] = useState<string | null>(null);
+  const [decided, setDecided] = useState<Record<string, "hidden" | "restored">>({});
+
+  async function decide(r: ReportedCard, hide: boolean) {
+    const id = r.card.id;
+    setBusy(id);
+    setActionError(null);
+    try {
+      await (hide ? api.hideCard(id) : api.restoreCard(id));
+      setDecided((d) => ({ ...d, [id]: hide ? "hidden" : "restored" }));
+      setData((prev) => (prev ?? []).map((p) => (p.card.id === id ? { ...p, status: hide ? "hidden" : "published" } : p)));
+    } catch (err) {
+      setActionError(isApiError(err) ? err.message : "Couldn't save the decision.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  return (
+    <section aria-labelledby="reported-cards-title" className="mt-16">
+      <h2 id="reported-cards-title" className="font-serif text-2xl font-semibold">Reported cards</h2>
+      <p className="mt-1 text-sm text-muted">
+        Cards members wrote. Three reports hide a card until you decide. Hiding or restoring clears its reports.
+      </p>
+      <div className="mt-4">
+        {loading ? (
+          <Loading label="Loading reported cards…" />
+        ) : error ? (
+          <ErrorNote error={error} />
+        ) : !data?.length ? (
+          <p className="panel p-6 text-center text-muted">No reported cards.</p>
+        ) : (
+          <ul className="grid gap-4">
+            {data.map((r) => {
+              const c = r.card;
+              const hidden = r.status === "hidden";
+              return (
+                <li key={c.id} className="panel p-5">
+                  <p className="text-sm text-muted">
+                    {c.author ? (
+                      <>
+                        by{" "}
+                        <Link href={`/u/${c.author.handle}`} className="font-semibold text-fg hover:underline">{c.author.display_name}</Link>
+                        {" · "}
+                      </>
+                    ) : null}
+                    {topicName(c.topic)}
+                  </p>
+                  <h3 className="mt-1 font-serif text-xl font-semibold">{c.title}</h3>
+                  <div className="prose-reborn mt-2 text-base">
+                    {paragraphs(c.body).map((p, i) => <p key={i}>{p}</p>)}
+                  </div>
+                  {c.apply_it ? <p className="mt-2 text-sm"><strong className="text-accent-text">Apply it:</strong> {c.apply_it}</p> : null}
+                  <p className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+                    <span className={`inline-flex rounded-full border px-2.5 py-0.5 text-xs font-semibold ${hidden ? "border-bad text-bad" : "border-line text-muted"}`}>
+                      {hidden ? "Hidden" : "Visible"}
+                    </span>
+                    <span className="text-muted">
+                      {r.reports} {r.reports === 1 ? "report" : "reports"}
+                    </span>
+                  </p>
+                  {r.reasons?.length ? (
+                    <ul className="mt-2 list-disc pl-5 text-sm text-muted">
+                      {r.reasons.map((reason, i) => <li key={i}>{reason}</li>)}
+                    </ul>
+                  ) : null}
+                  {decided[c.id] ? (
+                    <p role="status" className="mt-3 text-sm font-semibold text-ok">
+                      {decided[c.id] === "hidden" ? "Hidden" : "Restored"} ✓
+                    </p>
+                  ) : (
+                    <div className="mt-3 flex gap-2">
+                      <button type="button" className="btn btn-small btn-primary" disabled={busy !== null} onClick={() => decide(r, true)}>
+                        Hide
+                      </button>
+                      <button type="button" className="btn btn-small" disabled={busy !== null} onClick={() => decide(r, false)}>
+                        Restore
+                      </button>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+        <ErrorNote error={actionError} />
+      </div>
+    </section>
   );
 }
 

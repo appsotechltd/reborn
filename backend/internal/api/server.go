@@ -53,6 +53,12 @@ type Server struct {
 	AIMonthlyUnits int // AI units premium includes each month
 	AIHourly       int // messages a member may send Reborn AI per hour
 
+	// Gifts on member cards are shared with the writer: GiftCommission percent
+	// of what is left after the payment fee stays with Reborn. StoreFee is the
+	// percent Apple and Google keep.
+	GiftCommission int
+	StoreFee       int
+
 	// Media stores videos, images and other files: R2 in production, a local
 	// folder in development, which the API then serves under /media/.
 	Media objstore.Store
@@ -162,6 +168,35 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("DELETE /v1/stashes/{id}", s.authed(s.deleteStash))
 	mux.HandleFunc("PUT /v1/stashes/{id}/cards/{cardId}", s.authed(s.addToStash))
 	mux.HandleFunc("DELETE /v1/stashes/{id}/cards/{cardId}", s.authed(s.removeFromStash))
+
+	mux.HandleFunc("GET /v1/studio", s.studio)
+	mux.HandleFunc("GET /v1/me/categories", s.authed(s.myCategories))
+	mux.HandleFunc("POST /v1/me/categories", s.authed(s.createCategory))
+	mux.HandleFunc("PATCH /v1/me/categories/{id}", s.authed(s.renameCategory))
+	mux.HandleFunc("DELETE /v1/me/categories/{id}", s.authed(s.deleteCategory))
+	mux.HandleFunc("GET /v1/me/cards", s.authed(s.myCards))
+	mux.HandleFunc("POST /v1/me/cards", s.authed(s.createMyCard))
+	mux.HandleFunc("GET /v1/me/cards/{id}", s.authed(s.myCard))
+	mux.HandleFunc("PATCH /v1/me/cards/{id}", s.authed(s.updateMyCard))
+	mux.HandleFunc("DELETE /v1/me/cards/{id}", s.authed(s.deleteMyCard))
+	mux.HandleFunc("POST /v1/me/cards/{id}/image", s.authed(s.makeCardImage))
+	mux.HandleFunc("POST /v1/me/cards/{id}/audio", s.authed(s.makeCardAudio))
+	mux.HandleFunc("POST /v1/me/cards/{id}/video", s.authed(s.makeCardVideo))
+	mux.HandleFunc("DELETE /v1/me/cards/{id}/{kind}", s.authed(s.deleteCardMedia))
+	mux.HandleFunc("GET /v1/me/earnings", s.authed(s.earnings))
+	mux.HandleFunc("GET /v1/me/plan", s.authed(s.myPlan))
+	mux.HandleFunc("PUT /v1/me/plan", s.authed(s.setMyPlan))
+	mux.HandleFunc("GET /v1/me/subscriptions", s.authed(s.mySubscriptions))
+	mux.HandleFunc("GET /v1/users/{handle}/plan", s.userPlan)
+	mux.HandleFunc("POST /v1/users/{handle}/subscribe/checkout", s.authed(s.subscribeCheckout))
+	mux.HandleFunc("POST /v1/users/{handle}/subscribe/apple", s.authed(s.subscribeApple))
+	mux.HandleFunc("POST /v1/users/{handle}/subscribe/google", s.authed(s.subscribeGoogle))
+	mux.HandleFunc("DELETE /v1/users/{handle}/subscription", s.authed(s.cancelSubscription))
+	mux.HandleFunc("GET /v1/users/{handle}/cards", s.userCards)
+	mux.HandleFunc("POST /v1/posts/{id}/report", s.authed(s.reportPost))
+	mux.HandleFunc("GET /v1/moderation/cards", s.moderator(s.reportedCards))
+	mux.HandleFunc("POST /v1/moderation/cards/{id}/hide", s.moderator(s.moderateCard(true)))
+	mux.HandleFunc("POST /v1/moderation/cards/{id}/restore", s.moderator(s.moderateCard(false)))
 
 	mux.HandleFunc("GET /v1/review/due", s.authed(s.dueReviews))
 	mux.HandleFunc("POST /v1/review/{cardId}", s.authed(s.grade))

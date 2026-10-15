@@ -48,7 +48,7 @@ func (s *Store) keywordIDs(ctx context.Context, q, topic string, limit int) ([]s
 	rows, err := s.DB.Query(ctx, `
 		WITH q AS (SELECT replace(websearch_to_tsquery('english', $1)::text, ' & ', ' | ')::tsquery AS ts)
 		SELECT c.id FROM cards c, q
-		WHERE c.status = 'published' AND ($2 = '' OR c.topic = $2)
+		WHERE c.status = 'published' AND c.author_id IS NULL AND ($2 = '' OR c.topic = $2)
 		  AND (c.search @@ q.ts OR c.title ILIKE '%' || $1 || '%' OR $1 = ANY(c.tags))
 		ORDER BY ts_rank_cd(c.search, q.ts) DESC, c.id
 		LIMIT $3`, q, topic, limit)
@@ -60,7 +60,7 @@ func (s *Store) keywordIDs(ctx context.Context, q, topic string, limit int) ([]s
 
 func (s *Store) vectorIDs(ctx context.Context, vec []float32, topic string, limit int) ([]string, error) {
 	rows, err := s.DB.Query(ctx, `SELECT id FROM cards
-		WHERE status = 'published' AND embedding IS NOT NULL AND ($2 = '' OR topic = $2)
+		WHERE status = 'published' AND author_id IS NULL AND embedding IS NOT NULL AND ($2 = '' OR topic = $2)
 		ORDER BY embedding <=> $1 LIMIT $3`, pgvector.NewVector(vec), topic, limit)
 	if err != nil {
 		return nil, err
@@ -121,7 +121,7 @@ func fuse(lists [][]string, limit int) []string {
 func (s *Store) CardsMissingEmbeddings(ctx context.Context, model string, limit int) (ids, texts []string, err error) {
 	rows, err := s.DB.Query(ctx, `SELECT c.id, c.title, c.body, c.apply_it, c.tags, s.title
 		FROM cards c JOIN sources s ON s.id = c.source_id
-		WHERE c.status = 'published' AND (c.embedding IS NULL OR c.embedding_model IS DISTINCT FROM $1)
+		WHERE c.status = 'published' AND c.author_id IS NULL AND (c.embedding IS NULL OR c.embedding_model IS DISTINCT FROM $1)
 		ORDER BY c.id LIMIT $2`, model, limit)
 	if err != nil {
 		return nil, nil, err

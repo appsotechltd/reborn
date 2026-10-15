@@ -9,8 +9,11 @@ import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 import { useSignInRedirect } from "./SignInPrompt";
 
-/** Gift dialog: pick a tier and pay with Stripe Checkout. Gifts support Reborn. */
-export function GiftButton({ postId, title, count = 0 }: { postId: string; title: string; count?: number }) {
+/**
+ * Gift dialog: pick a tier and pay with Stripe Checkout. Gifts on library cards support Reborn;
+ * gifts on a member's card go to that member (`author`), less the payment fee and Reborn's share.
+ */
+export function GiftButton({ postId, title, count = 0, author }: { postId: string; title: string; count?: number; author?: string | null }) {
   const { user, api } = useAuth();
   const toSignIn = useSignInRedirect();
   const [open, setOpen] = useState(false);
@@ -61,12 +64,16 @@ export function GiftButton({ postId, title, count = 0 }: { postId: string; title
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>
         <h2 id={titleId} className="font-serif text-xl font-semibold">
-          Send a gift to Reborn
+          {author ? "Send a gift" : "Send a gift to Reborn"}
         </h2>
-        <p className="mt-1 text-sm text-muted">
-          Enjoyed “{title}”? A gift supports Reborn, the small team that writes, checks and credits these cards, and
-          keeps the library free to read. Gifts are not passed on to the book&apos;s author or publisher.
-        </p>
+        {author ? (
+          <p className="mt-1 text-sm text-muted">Enjoyed “{title}”? Your gift goes to {author}.</p>
+        ) : (
+          <p className="mt-1 text-sm text-muted">
+            Enjoyed “{title}”? A gift supports Reborn, the small team that writes, checks and credits these cards, and
+            keeps the library free to read. Gifts are not passed on to the book&apos;s author or publisher.
+          </p>
+        )}
         {tiers === null && !error ? (
           <p role="status" className="mt-4 text-muted">
             Loading…

@@ -8,12 +8,15 @@ import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../blocks/block_actions.dart';
 import '../post/share.dart';
+import '../mycards/my_cards_screen.dart';
 import '../premium/premium_screen.dart';
+import '../writers/subscribe_box.dart';
 import 'favorites_screen.dart';
 import 'follow_button.dart';
 
-/// A person's public profile by handle, with their favourites and public
-/// stashes.
+/// A person's public profile by handle: the cards they write (with a
+/// Subscribe box when they sell subscriptions), their favourites and their
+/// public stashes (shown as collections).
 class UserProfileScreen extends ConsumerStatefulWidget {
   const UserProfileScreen({super.key, required this.handle});
   final String handle;
@@ -24,6 +27,9 @@ class UserProfileScreen extends ConsumerStatefulWidget {
 
 class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
   int _tab = 0;
+
+  /// The category filter on the Cards tab ('' for all).
+  String _category = '';
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +64,7 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
         data: (p) => ListView(
           children: [
             ReadingWidth(child: ProfileHeader(profile: p)),
+            ReadingWidth(child: SubscribeBox(profile: p)),
             ReadingWidth(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
@@ -65,12 +72,17 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
                   segments: const [
                     ButtonSegment(
                       value: 0,
+                      label: Text('Cards'),
+                      icon: Icon(Icons.edit_note),
+                    ),
+                    ButtonSegment(
+                      value: 1,
                       label: Text('Favourites'),
                       icon: Icon(Icons.favorite_border),
                     ),
                     ButtonSegment(
-                      value: 1,
-                      label: Text('Stashes'),
+                      value: 2,
+                      label: Text('Collections'),
                       icon: Icon(Icons.bookmarks_outlined),
                     ),
                   ],
@@ -81,6 +93,8 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
               ),
             ),
             if (_tab == 0)
+              ..._cards(p)
+            else if (_tab == 1)
               ...favoriteTiles(
                 context,
                 ref,
@@ -95,6 +109,83 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
         ),
       ),
     );
+  }
+
+  List<Widget> _cards(Profile p) {
+    final handle = widget.handle;
+    // The writer's categories come with the unfiltered first page.
+    final cats =
+        ref
+            .watch(userCardsProvider((handle: handle, category: '')))
+            .value
+            ?.categories ??
+        const <CardCategory>[];
+    final cards = ref.watch(
+      userCardsProvider((handle: handle, category: _category)),
+    );
+    return [
+      if (cats.isNotEmpty)
+        ReadingWidth(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+            child: Row(
+              children: [
+                for (final (id, name) in [
+                  ('', 'All'),
+                  for (final c in cats) (c.id, c.name),
+                ])
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: ChoiceChip(
+                      key: ValueKey('user-category-${id.isEmpty ? 'all' : id}'),
+                      label: Text(name),
+                      selected: _category == id,
+                      onSelected: (_) => setState(() => _category = id),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ...cards.when(
+        loading: () => const [
+          Padding(padding: EdgeInsets.all(32), child: LoadingView()),
+        ],
+        error: (e, _) => [
+          ErrorView(
+            error: e,
+            onRetry: () => ref.invalidate(
+              userCardsProvider((handle: handle, category: _category)),
+            ),
+          ),
+        ],
+        data: (page) => page.posts.isEmpty
+            ? [
+                Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Text(
+                    p.isMe
+                        ? 'Cards you write show here. Write one from My cards.'
+                        : 'No cards yet.',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                if (p.isMe)
+                  Center(
+                    child: OutlinedButton(
+                      onPressed: () => context.push('/me/cards'),
+                      child: const Text('My cards'),
+                    ),
+                  ),
+              ]
+            : [
+                for (final post in page.posts)
+                  ReadingWidth(child: _WriterCardTile(card: post.card)),
+                const SizedBox(height: 24),
+              ],
+      ),
+    ];
   }
 
   List<Widget> _stashes(Profile p) {
@@ -115,9 +206,9 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
                 padding: const EdgeInsets.all(24),
                 child: Text(
                   p.isMe
-                      ? 'No public stashes. Make a stash public from its '
+                      ? 'No public collections. Make a collection public from its '
                             'page to show it here.'
-                      : 'No public stashes yet.',
+                      : 'No public collections yet.',
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -241,4 +332,47 @@ class _Count extends StatelessWidget {
       ],
     ),
   );
+}
+
+/// One of a writer's cards on their page: title, topic and category, and
+/// who it's for when that isn't everyone.
+class _WriterCardTile extends ConsumerWidget {
+  const _WriterCardTile({required this.card});
+  final IdeaCard card;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final names = ref.watch(topicNamesProvider);
+    final theme = Theme.of(context);
+    final muted = theme.colorScheme.onSurfaceVariant;
+    return ListTile(
+      key: ValueKey('writer-card-${card.id}'),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      title: Text(card.title, style: theme.textTheme.titleMedium),
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: 4),
+        child: Wrap(
+          spacing: 8,
+          runSpacing: 4,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            if (card.visibility != null && card.visibility != 'everyone')
+              VisibilityBadge(visibility: card.visibility),
+            Text(
+              [
+                names[card.topic] ?? card.topic,
+                if (card.category != null) card.category!.name,
+              ].join(' · '),
+            ),
+            if (card.video != null)
+              Icon(Icons.movie_outlined, size: 16, color: muted)
+            else if (card.audio != null)
+              Icon(Icons.headphones_outlined, size: 16, color: muted),
+          ],
+        ),
+      ),
+      onTap: () =>
+          context.push('/cards/${Uri.encodeComponent(card.id)}', extra: card),
+    );
+  }
 }

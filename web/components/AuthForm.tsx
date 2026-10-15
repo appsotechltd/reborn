@@ -71,7 +71,7 @@ export function AuthForm({ mode, next, referral }: { mode: "signin" | "register"
       <p className="mt-2 text-muted">
         {register
           ? "Save ideas, review them at the right time and ask the guide."
-          : "Sign in to your stashes, reviews and quizzes."}
+          : "Sign in to your collections, reviews and quizzes."}
       </p>
       <form onSubmit={submit} className="mt-6 space-y-4" noValidate={false}>
         {register ? (

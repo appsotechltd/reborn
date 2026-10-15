@@ -20,6 +20,8 @@ import 'features/home/home_screen.dart';
 import 'features/library/library_screen.dart';
 import 'features/listen/listen_ui.dart';
 import 'features/moderation/moderation_screen.dart';
+import 'features/mycards/my_card_screen.dart';
+import 'features/mycards/my_cards_screen.dart';
 import 'features/notifications/notifications_screen.dart';
 import 'features/onboarding/topic_picker_screen.dart';
 import 'features/premium/premium_screen.dart';
@@ -41,6 +43,7 @@ import 'features/stashes/stashes_screen.dart';
 import 'features/summary/summaries_screen.dart';
 import 'features/summary/summary_screen.dart';
 import 'features/timeline/timeline_screen.dart';
+import 'features/writers/earnings_screen.dart';
 import 'tv/tv_card_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -226,6 +229,21 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, _) => const MyContributionsScreen(),
       ),
       GoRoute(path: '/moderation', builder: (_, _) => const ModerationScreen()),
+      GoRoute(
+        path: '/me/cards',
+        builder: (_, _) => const MyCardsScreen(),
+        routes: [
+          GoRoute(path: 'new', builder: (_, _) => const MyCardScreen()),
+          GoRoute(
+            path: ':id',
+            builder: (_, s) => MyCardScreen(
+              cardId: s.pathParameters['id']!,
+              initial: s.extra is IdeaCard ? s.extra as IdeaCard : null,
+            ),
+          ),
+        ],
+      ),
+      GoRoute(path: '/me/earnings', builder: (_, _) => const EarningsScreen()),
     ],
   );
   ref.onDispose(router.dispose);

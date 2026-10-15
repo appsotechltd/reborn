@@ -52,6 +52,20 @@ import type {
   Topic,
   User,
   NotifyKind,
+  EarningsResponse,
+  ImageShape,
+  ImageStyle,
+  MemberCategory,
+  MyPlanResponse,
+  NewMemberCard,
+  ReportedCard,
+  StudioInfo,
+  StudioMedia,
+  StudioResult,
+  UserCardsResponse,
+  UserPlanResponse,
+  WriterPlan,
+  WriterSubscription,
 } from "./types";
 
 /**
@@ -431,6 +445,51 @@ export function createApiClient(
     topUpCheckout: (pack: string) =>
       req<{ topup_id: string; url: string }>("/v1/ai/topups/checkout", { method: "POST", body: { pack } }),
     topUp: (id: string) => req<AITopUp>(`/v1/ai/topups/${enc(id)}`),
+
+    // Member cards and categories
+    myCategories: () => req<{ categories: MemberCategory[] }>("/v1/me/categories"),
+    createCategory: (name: string) => req<MemberCategory>("/v1/me/categories", { method: "POST", body: { name } }),
+    renameCategory: (id: string, name: string) =>
+      req<MemberCategory>(`/v1/me/categories/${enc(id)}`, { method: "PATCH", body: { name } }),
+    deleteCategory: (id: string) => req<void>(`/v1/me/categories/${enc(id)}`, { method: "DELETE" }),
+    /** `category` is a category id, or "none" for cards without one. */
+    myCards: (q: { category?: string; cursor?: string | null; limit?: number } = {}) =>
+      req<{ cards: Card[]; next_cursor: string | null }>("/v1/me/cards", { query: q }),
+    myCard: (id: string) => req<Card>(`/v1/me/cards/${enc(id)}`),
+    createMyCard: (body: NewMemberCard) => req<Card>("/v1/me/cards", { method: "POST", body }),
+    updateMyCard: (id: string, body: Partial<NewMemberCard>) =>
+      req<Card>(`/v1/me/cards/${enc(id)}`, { method: "PATCH", body }),
+    deleteMyCard: (id: string) => req<void>(`/v1/me/cards/${enc(id)}`, { method: "DELETE" }),
+    userCards: (handle: string, q: { category?: string; cursor?: string | null; limit?: number } = {}) =>
+      req<UserCardsResponse>(`/v1/users/${enc(handle)}/cards`, { query: q }),
+    reportPost: (id: string, reason?: string) =>
+      req<void>(`/v1/posts/${enc(id)}/report`, { method: "POST", body: reason ? { reason } : {} }),
+    reportedCards: () => req<{ cards: ReportedCard[] }>("/v1/moderation/cards"),
+    hideCard: (id: string) => req<void>(`/v1/moderation/cards/${enc(id)}/hide`, { method: "POST" }),
+    restoreCard: (id: string) => req<void>(`/v1/moderation/cards/${enc(id)}/restore`, { method: "POST" }),
+
+    // The card studio (premium, spends AI units). Each call can take a minute or two.
+    studio: () => req<StudioInfo>("/v1/studio"),
+    makeCardImage: (id: string, body: { style: ImageStyle; prompt?: string; shape?: ImageShape }) =>
+      req<StudioResult>(`/v1/me/cards/${enc(id)}/image`, { method: "POST", body }),
+    makeCardAudio: (id: string, voice?: string) =>
+      req<StudioResult>(`/v1/me/cards/${enc(id)}/audio`, { method: "POST", body: voice ? { voice } : {} }),
+    makeCardVideo: (id: string, voice?: string) =>
+      req<StudioResult>(`/v1/me/cards/${enc(id)}/video`, { method: "POST", body: voice ? { voice } : {} }),
+    deleteCardMedia: (id: string, kind: StudioMedia) =>
+      req<Card>(`/v1/me/cards/${enc(id)}/${kind}`, { method: "DELETE" }),
+
+    // Writer earnings and subscriptions
+    earnings: () => req<EarningsResponse>("/v1/me/earnings"),
+    myPlan: () => req<MyPlanResponse>("/v1/me/plan"),
+    setMyPlan: (body: { tier: string; enabled: boolean; pitch?: string }) =>
+      req<WriterPlan>("/v1/me/plan", { method: "PUT", body }),
+    userPlan: (handle: string) => req<UserPlanResponse>(`/v1/users/${enc(handle)}/plan`),
+    subscribeCheckout: (handle: string) =>
+      req<{ url: string }>(`/v1/users/${enc(handle)}/subscribe/checkout`, { method: "POST" }),
+    cancelSubscription: (handle: string) =>
+      req<WriterSubscription>(`/v1/users/${enc(handle)}/subscription`, { method: "DELETE" }),
+    mySubscriptions: () => req<{ subscriptions: WriterSubscription[] }>("/v1/me/subscriptions"),
   };
 }
 

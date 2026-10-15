@@ -184,9 +184,9 @@ describe("real 404s for unknown profiles, circles and stashes", () => {
     stubApi(() => undefined);
     render(<AuthProvider>{await StashPage(params({ id }))}</AuthProvider>);
     expect(await screen.findByRole("heading", { name: "Sign in to continue" })).toBeTruthy();
-    expect(screen.getByText(/Stashes are private to the account that made them/)).toBeTruthy();
+    expect(screen.getByText(/Collections are private to the account that made them/)).toBeTruthy();
     expect(screen.queryByText(/not found/i)).toBeNull();
-    expect(screen.getByRole("link", { name: "Read the public stash" }).getAttribute("href")).toBe(`/s/${id}`);
+    expect(screen.getByRole("link", { name: "Read the public collection" }).getAttribute("href")).toBe(`/s/${id}`);
   });
 });
 

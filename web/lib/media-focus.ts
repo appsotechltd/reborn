@@ -11,7 +11,8 @@ const videoListeners = new Set<() => void>();
 export function setListeningPlaying(on: boolean) {
   listening = on;
   if (!on || typeof document === "undefined") return;
-  document.querySelectorAll("video").forEach((v) => {
+  // Illustrated videos play their narration in an <audio data-video-audio>.
+  document.querySelectorAll<HTMLMediaElement>("video, audio[data-video-audio]").forEach((v) => {
     if (!v.paused) v.pause();
   });
 }

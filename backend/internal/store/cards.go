@@ -50,6 +50,13 @@ type Card struct {
 	Audio *cardaudio.Audio `json:"audio,omitempty"`
 	// Image is the picture shown at the top of the full card, when one is made.
 	Image *cardimages.Image `json:"image,omitempty"`
+	// Member cards (written by a Reborn member) also carry these.
+	Author     *Profile        `json:"author,omitempty"`
+	Category   *MemberCategory `json:"category,omitempty"`
+	Video      *MemberVideo    `json:"video,omitempty"`
+	Visibility string          `json:"visibility,omitempty"` // everyone, followers, subscribers, private or hidden
+	CreatedAt  *time.Time      `json:"created_at,omitempty"`
+	member     *memberScan
 }
 
 var explainerSet atomic.Pointer[explainers.Set]
@@ -96,7 +103,9 @@ func explainerFor(id string) *explainers.Explainer {
 
 // cardCols selects a card joined with its source; scanCard reads it.
 const cardCols = `c.id, c.title, c.body, c.quote, c.apply_it, c.topic, c.tags, c.locator, c.health, c.quiz,
-	s.id, s.title, s.authors, s.kind, s.url, s.licence, s.licence_url, s.attribution`
+	s.id, s.title, s.authors, s.kind, s.url, s.licence, s.licence_url, s.attribution,
+	c.author_id::text, (SELECT au.handle FROM users au WHERE au.id = c.author_id), (SELECT au.display_name FROM users au WHERE au.id = c.author_id),
+	c.category_id::text, (SELECT mc.name FROM member_categories mc WHERE mc.id = c.category_id), c.media, c.status, c.audience, c.created_at`
 
 const cardFrom = ` FROM cards c JOIN sources s ON s.id = c.source_id `
 
@@ -120,6 +129,10 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 		c.Disclaimer = &d
 	}
 	c.Credit = "Source: " + c.Source.Attribution
+	if c.member != nil {
+		finishMemberCard(&c)
+		return c, nil
+	}
 	c.Explainer = explainerFor(c.ID)
 	c.Audio = audioFor(c.ID)
 	c.Image = imageFor(c.ID)
@@ -141,7 +154,7 @@ func collectCards(rows pgx.Rows) ([]Card, error) {
 
 // GetCard returns a published card.
 func (s *Store) GetCard(ctx context.Context, id string) (Card, error) {
-	c, err := scanCard(s.DB.QueryRow(ctx, `SELECT `+cardCols+cardFrom+`WHERE c.id = $1 AND c.status = 'published'`, id))
+	c, err := scanCard(s.DB.QueryRow(ctx, `SELECT `+cardCols+cardFrom+`WHERE c.id = $1 AND c.status = 'published' AND `+everyoneOnly, id))
 	return c, notFound(err)
 }
 
@@ -149,7 +162,7 @@ func (s *Store) GetCard(ctx context.Context, id string) (Card, error) {
 func (s *Store) GetCards(ctx context.Context, ids []string) ([]Card, error) {
 	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`
 		JOIN unnest($1::text[]) WITH ORDINALITY AS o(id, n) ON o.id = c.id
-		WHERE c.status = 'published' ORDER BY o.n`, ids)
+		WHERE c.status = 'published' AND `+everyoneOnly+` ORDER BY o.n`, ids)
 	if err != nil {
 		return nil, err
 	}
@@ -166,7 +179,7 @@ func (s *Store) SourceCards(ctx context.Context, id string) (content.Source, []C
 	if err != nil {
 		return src, nil, notFound(err)
 	}
-	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`WHERE c.source_id = $1 AND c.status = 'published' ORDER BY c.id`, id)
+	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`WHERE c.source_id = $1 AND c.status = 'published' AND c.author_id IS NULL ORDER BY c.id`, id)
 	if err != nil {
 		return src, nil, err
 	}
@@ -184,7 +197,7 @@ type TopicCount struct {
 // Topics lists topics in display order with card counts.
 func (s *Store) Topics(ctx context.Context) ([]TopicCount, error) {
 	rows, err := s.DB.Query(ctx, `SELECT t.slug, t.name, count(c.id)
-		FROM topics t LEFT JOIN cards c ON c.topic = t.slug AND c.status = 'published'
+		FROM topics t LEFT JOIN cards c ON c.topic = t.slug AND c.status = 'published' AND c.author_id IS NULL
 		GROUP BY t.slug, t.name, t.sort_order ORDER BY t.sort_order`)
 	if err != nil {
 		return nil, err
@@ -233,7 +246,7 @@ func (s *Store) Feed(ctx context.Context, p FeedParams) ([]Card, error) {
 	}
 	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`
 		LEFT JOIN card_views v ON v.card_id = c.id AND v.user_id = $1::uuid
-		WHERE c.status = 'published' AND (cardinality($2::text[]) = 0 OR c.topic = ANY($2))
+		WHERE c.status = 'published' AND c.author_id IS NULL AND (cardinality($2::text[]) = 0 OR c.topic = ANY($2))
 		ORDER BY (v.card_id IS NOT NULL), md5(c.id || $3 || coalesce($1::text, '')), c.id
 		OFFSET $4 LIMIT $5`, uid, p.Topics, p.Day, p.Offset, p.Limit)
 	if err != nil {
@@ -423,7 +436,7 @@ func videoCounts() map[string]int {
 func (s *Store) Sources(ctx context.Context, topic, q string, offset, limit int) ([]SourceSummary, error) {
 	rows, err := s.DB.Query(ctx, `SELECT s.id, s.title, s.authors, s.kind, s.licence, s.attribution,
 			array_agg(DISTINCT c.topic ORDER BY c.topic), count(c.id), greatest(s.updated_at, max(c.updated_at))
-		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published' AND c.author_id IS NULL
 		WHERE $4 = '' OR strpos(lower(s.title || ' ' || array_to_string(s.authors, ' ')), lower($4)) > 0
 		GROUP BY s.id
 		HAVING $1 = '' OR bool_or(c.topic = $1)
@@ -469,10 +482,10 @@ func (s *Store) Sitemap(ctx context.Context) (cards, sources []SitemapEntry, err
 		}
 		return out, rows.Err()
 	}
-	if cards, err = scan(`SELECT id, updated_at FROM cards WHERE status = 'published' ORDER BY id`); err != nil {
+	if cards, err = scan(`SELECT id, updated_at FROM cards WHERE status = 'published' AND author_id IS NULL ORDER BY id`); err != nil {
 		return nil, nil, err
 	}
 	sources, err = scan(`SELECT s.id, greatest(s.updated_at, max(c.updated_at)) FROM sources s
-		JOIN cards c ON c.source_id = s.id AND c.status = 'published' GROUP BY s.id ORDER BY s.id`)
+		JOIN cards c ON c.source_id = s.id AND c.status = 'published' AND c.author_id IS NULL GROUP BY s.id ORDER BY s.id`)
 	return cards, sources, err
 }

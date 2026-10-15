@@ -99,10 +99,15 @@ func (s *Store) QuizCards(ctx context.Context, userID, topic string, limit int) 
 func scanCardWith(row pgx.Row, extra ...any) (Card, error) {
 	var holder Card
 	var quiz []byte
+	var m memberScan
 	dest := []any{&holder.ID, &holder.Title, &holder.Body, &holder.Quote, &holder.ApplyIt, &holder.Topic, &holder.Tags, &holder.Locator, &holder.Health, &quiz,
-		&holder.Source.ID, &holder.Source.Title, &holder.Source.Authors, &holder.Source.Kind, &holder.Source.URL, &holder.Source.Licence, &holder.Source.LicenceURL, &holder.Source.Attribution}
+		&holder.Source.ID, &holder.Source.Title, &holder.Source.Authors, &holder.Source.Kind, &holder.Source.URL, &holder.Source.Licence, &holder.Source.LicenceURL, &holder.Source.Attribution,
+		&m.authorID, &m.handle, &m.name, &m.categoryID, &m.categoryName, &m.media, &m.status, &m.audience, &m.createdAt}
 	if err := row.Scan(append(dest, extra...)...); err != nil {
 		return holder, err
+	}
+	if m.authorID != nil {
+		holder.member = &m
 	}
 	return finishCard(holder, quiz)
 }

@@ -117,6 +117,7 @@ type EventObject struct {
 	Status            string            `json:"status"`
 	CurrentPeriodEnd  int64             `json:"current_period_end"`
 	EndedAt           int64             `json:"ended_at"`
+	CancelAtPeriodEnd bool              `json:"cancel_at_period_end"`
 	Items             struct {
 		Data []struct {
 			CurrentPeriodEnd int64 `json:"current_period_end"`
@@ -168,6 +169,52 @@ func (s *Stripe) CreateSubscriptionCheckout(ctx context.Context, in Subscription
 	}
 	err := s.post(ctx, "/v1/checkout/sessions", form, "", &out)
 	return out.URL, err
+}
+
+// WriterCheckout describes a monthly subscription to a writer.
+type WriterCheckout struct {
+	SubscriberID string
+	WriterID     string
+	WriterName   string
+	Tier         WriterTier
+	Email        string
+	SuccessURL   string
+	CancelURL    string
+}
+
+// CreateWriterCheckout starts a Checkout Session for a monthly subscription to
+// a writer. The subscription carries kind=writer so its webhooks are told
+// apart from premium.
+func (s *Stripe) CreateWriterCheckout(ctx context.Context, in WriterCheckout) (string, error) {
+	form := url.Values{
+		"mode":                              {"subscription"},
+		"success_url":                       {in.SuccessURL},
+		"cancel_url":                        {in.CancelURL},
+		"client_reference_id":               {in.SubscriberID},
+		"subscription_data[metadata][kind]": {"writer"},
+		"subscription_data[metadata][subscriber_id]":     {in.SubscriberID},
+		"subscription_data[metadata][writer_id]":         {in.WriterID},
+		"subscription_data[metadata][tier]":              {in.Tier.ID},
+		"line_items[0][quantity]":                        {"1"},
+		"line_items[0][price_data][currency]":            {in.Tier.Currency},
+		"line_items[0][price_data][unit_amount]":         {strconv.Itoa(in.Tier.AmountCents)},
+		"line_items[0][price_data][recurring][interval]": {"month"},
+		"line_items[0][price_data][product_data][name]":  {truncate("Subscription to "+in.WriterName+" on Reborn", 250)},
+	}
+	if in.Email != "" {
+		form.Set("customer_email", in.Email)
+	}
+	var out struct {
+		URL string `json:"url"`
+	}
+	err := s.post(ctx, "/v1/checkout/sessions", form, "", &out)
+	return out.URL, err
+}
+
+// CancelAtPeriodEnd stops a subscription renewing; it stays active until the period ends.
+func (s *Stripe) CancelAtPeriodEnd(ctx context.Context, subscriptionID string) error {
+	var out struct{}
+	return s.post(ctx, "/v1/subscriptions/"+url.PathEscape(subscriptionID), url.Values{"cancel_at_period_end": {"true"}}, "", &out)
 }
 
 // CreatePortal opens the billing portal, where a customer cancels or changes a subscription.

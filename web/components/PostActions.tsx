@@ -10,6 +10,7 @@ import { EmbedButton } from "./EmbedButton";
 import { GiftButton } from "./GiftButton";
 import { Icon } from "./Icon";
 import { ListenIconButton } from "./ListenButton";
+import { ReportButton } from "./ReportButton";
 import { ShareMenu } from "./ShareMenu";
 import { useSignInRedirect } from "./SignInPrompt";
 
@@ -85,6 +86,9 @@ export function PostActions({ post: initial, refresh = false, commentsHref, clas
   const favorited = !!user && !!post.viewer?.favorited;
   const mine = user ? (post.viewer?.reaction ?? null) : null;
   const comments = post.stats.comments;
+  // A member's card: others can report it, and its writer can't gift their own.
+  const author = post.card.author ?? null;
+  const own = !!author && !!user && author.id === user.id;
 
   return (
     <div className={`mx-auto w-full max-w-read ${className}`} data-testid="post-actions">
@@ -147,9 +151,12 @@ export function PostActions({ post: initial, refresh = false, commentsHref, clas
           <span className={compact ? "max-md:hidden" : undefined}>
             <EmbedButton postId={post.id} title={post.card.title} />
           </span>
-          <span className="ml-auto">
-            <GiftButton postId={post.id} title={post.card.title} count={post.stats.gifts} />
-          </span>
+          {author && !own ? <ReportButton postId={post.id} title={post.card.title} /> : null}
+          {own ? null : (
+            <span className="ml-auto">
+              <GiftButton postId={post.id} title={post.card.title} count={post.stats.gifts} author={author?.display_name} />
+            </span>
+          )}
         </div>
       </div>
       {error ? (

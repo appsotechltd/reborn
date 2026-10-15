@@ -12,12 +12,12 @@ export const PLAY_TIMEOUT_MS = 10_000;
 export const AUTOPLAY_RATIO = 0.6;
 
 // Only one video plays at a time, anywhere on the page.
-let playing: HTMLVideoElement | null = null;
+let playing: HTMLMediaElement | null = null;
 // Once the reader turns the sound on, later feed videos start with sound too (falling back to muted).
 let soundOn = false;
 
-/** Called when a video starts: pauses whichever one was playing before. */
-export function claimPlayback(video: HTMLVideoElement) {
+/** Called when a video (or an illustrated video's narration) starts: pauses whichever one was playing before. */
+export function claimPlayback(video: HTMLMediaElement) {
   if (playing && playing !== video && !playing.paused) playing.pause();
   playing = video;
 }

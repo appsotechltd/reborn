@@ -4,7 +4,7 @@ import { isUuid } from "@/lib/content";
 import { getPublicStash, loadOr } from "@/lib/server-api";
 import { StashDetail } from "./StashDetail";
 
-export const metadata: Metadata = { title: "Stash", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "Collection", robots: { index: false, follow: false } };
 
 /**
  * A stash is private to its owner, and the owner's session lives in the browser, so the

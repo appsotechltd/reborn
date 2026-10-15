@@ -8,6 +8,7 @@ import { PostActions } from "./PostActions";
 const REASON_ICON: Record<string, IconName> = {
   source: "book",
   author: "person",
+  writer: "person",
   favorite: "favoriteBorder",
   topic: "tag",
 };

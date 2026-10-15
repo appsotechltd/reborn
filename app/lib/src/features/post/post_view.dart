@@ -8,6 +8,7 @@ import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../card/card_view.dart';
 import '../card/explainer_player.dart';
+import '../card/illustrated_video_player.dart';
 import '../gifts/gift_sheet.dart';
 import '../listen/listen_controller.dart';
 import 'post_store.dart';
@@ -153,7 +154,9 @@ class PostPreview extends ConsumerWidget {
         .join('\n\n');
     final disclaimer =
         card.disclaimer ?? (card.health ? kHealthDisclaimerFallback : null);
-    final video = card.explainer;
+    final explainer = card.explainer;
+    final illustrated = explainer == null ? card.video : null;
+    final video = explainer ?? illustrated;
 
     final title = Text(
       card.title,
@@ -190,12 +193,20 @@ class PostPreview extends ConsumerWidget {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
               child: LayoutBuilder(
-                builder: (context, c) => ExplainerPlayer(
-                  explainer: video,
-                  title: card.title,
-                  autoplayId: card.id,
-                  maxHeight: c.maxHeight,
-                ),
+                builder: (context, c) => explainer != null
+                    ? ExplainerPlayer(
+                        explainer: explainer,
+                        title: card.title,
+                        autoplayId: card.id,
+                        maxHeight: c.maxHeight,
+                      )
+                    : Center(
+                        child: IllustratedVideoPlayer(
+                          video: illustrated!,
+                          title: card.title,
+                          maxHeight: c.maxHeight,
+                        ),
+                      ),
               ),
             ),
           ),
@@ -300,6 +311,7 @@ class PostReasonLine extends StatelessWidget {
   IconData get _icon => switch (reason.kind) {
     'source' => Icons.menu_book_outlined,
     'author' => Icons.person_outline,
+    'writer' => Icons.edit_note,
     'favorite' => Icons.favorite_border,
     'topic' => Icons.tag,
     _ => Icons.auto_awesome_outlined,
@@ -331,7 +343,8 @@ class PostReasonLine extends StatelessWidget {
 }
 
 /// "Meditations · Marcus Aurelius": the book opens the source screen and
-/// each author name opens the author screen.
+/// each author name opens the author screen. A card a member wrote reads
+/// "by `name`" instead, opening their profile.
 class AuthorByline extends StatelessWidget {
   const AuthorByline({super.key, required this.card}) : inline = false;
 
@@ -350,25 +363,40 @@ class AuthorByline extends StatelessWidget {
       fontWeight: FontWeight.w600,
     );
     final source = card.source;
+    final writer = card.author;
     // The links' own padding spaces the dot.
     final dot = Text('·', style: theme.textTheme.bodySmall);
     final links = <Widget>[
-      if (source.title.isNotEmpty)
+      if (writer != null)
         _Link(
-          text: source.title,
+          key: const ValueKey('card-writer'),
+          text: 'by ${writer.name}',
           style: style,
-          onTap: source.id.isEmpty
+          onTap: writer.handle.isEmpty
               ? null
-              : () =>
-                    context.push('/sources/${Uri.encodeComponent(source.id)}'),
+              : () => context.push(
+                  '/users/${Uri.encodeComponent(writer.handle)}',
+                ),
         ),
-      for (final a in source.authors)
-        _Link(
-          key: ValueKey('author-$a'),
-          text: a,
-          style: style,
-          onTap: () => context.push('/authors/${Uri.encodeComponent(a)}'),
-        ),
+      if (writer == null) ...[
+        if (source.title.isNotEmpty)
+          _Link(
+            text: source.title,
+            style: style,
+            onTap: source.id.isEmpty
+                ? null
+                : () => context.push(
+                    '/sources/${Uri.encodeComponent(source.id)}',
+                  ),
+          ),
+        for (final a in source.authors)
+          _Link(
+            key: ValueKey('author-$a'),
+            text: a,
+            style: style,
+            onTap: () => context.push('/authors/${Uri.encodeComponent(a)}'),
+          ),
+      ],
     ];
     // Each separator stays at the end of the name before it, so a long
     // title never leaves a stray dot at the start of a line.
@@ -442,6 +470,11 @@ class PostActionBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final store = ref.read(postStoreProvider.notifier);
     final stats = post.stats;
+    final writer = post.card.author;
+    final me = ref.watch(sessionProvider.select((s) => s.user?.id));
+    // Writers can't gift their own cards; others can report a member's card.
+    final mine = writer != null && me != null && writer.id == me;
+    final reportable = writer != null && !mine && !post.isSummary;
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
       child: Column(
@@ -520,7 +553,9 @@ class PostActionBar extends ConsumerWidget {
                   if (listen) _ListenPostButton(card: post.card),
                   const Spacer(),
                   // In a narrow column (the tablet grid) Gift is just its icon.
-                  if (narrow)
+                  if (mine)
+                    const SizedBox.shrink()
+                  else if (narrow)
                     _CountButton(
                       key: const ValueKey('post-gift'),
                       label: 'Gift',
@@ -543,6 +578,7 @@ class PostActionBar extends ConsumerWidget {
                             : 'Gift',
                       ),
                     ),
+                  if (reportable) _PostMenu(post: post),
                 ],
               );
             },
@@ -550,6 +586,78 @@ class PostActionBar extends ConsumerWidget {
         ],
       ),
     );
+  }
+}
+
+/// More actions on a member's card: Report.
+class _PostMenu extends ConsumerWidget {
+  const _PostMenu({required this.post});
+  final Post post;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) => PopupMenuButton<String>(
+    key: const ValueKey('post-menu'),
+    tooltip: 'More',
+    icon: Icon(
+      Icons.more_vert,
+      size: 20,
+      color: Theme.of(context).colorScheme.onSurfaceVariant,
+    ),
+    onSelected: (_) {
+      if (!ensureSignedIn(context, ref)) return;
+      reportPost(context, ref, post);
+    },
+    itemBuilder: (_) => const [
+      PopupMenuItem(
+        value: 'report',
+        child: Row(
+          children: [
+            Icon(Icons.flag_outlined, size: 20),
+            SizedBox(width: 12),
+            Text('Report'),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+/// Asks for an optional reason, then reports a member's card.
+Future<void> reportPost(BuildContext context, WidgetRef ref, Post post) async {
+  final controller = TextEditingController();
+  final reason = await showDialog<String>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      title: const Text('Report this card?'),
+      content: TextField(
+        controller: controller,
+        maxLength: 300,
+        maxLines: 3,
+        minLines: 1,
+        decoration: const InputDecoration(labelText: 'Reason (optional)'),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(ctx),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          key: const ValueKey('report-send'),
+          onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+          child: const Text('Report'),
+        ),
+      ],
+    ),
+  );
+  if (reason == null || !context.mounted) return;
+  final messenger = ScaffoldMessenger.of(context);
+  try {
+    await ref.read(repositoryProvider).reportPost(post.id, reason: reason);
+    messenger.showSnackBar(
+      const SnackBar(content: Text("Thanks, we'll take a look")),
+    );
+  } catch (e) {
+    messenger.showSnackBar(SnackBar(content: Text(errorMessage(e))));
   }
 }
 

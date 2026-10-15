@@ -229,6 +229,90 @@ class CardImage {
   };
 }
 
+/// One illustration of a member card's illustrated video.
+class VideoScene {
+  const VideoScene({required this.url, this.width = 0, this.height = 0});
+
+  /// Absolute, or a path relative to the API base URL (like explainers).
+  final String url;
+  final int width;
+  final int height;
+
+  factory VideoScene.fromJson(Map<String, dynamic> json) => VideoScene(
+    url: json['url'] as String? ?? '',
+    width: (json['width'] as num?)?.toInt() ?? 0,
+    height: (json['height'] as num?)?.toInt() ?? 0,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'url': url,
+    'width': width,
+    'height': height,
+  };
+}
+
+/// A member card's illustrated video: a few illustrations shown in turn over
+/// the card's narration (no captions). The apps animate it themselves.
+class CardVideo {
+  const CardVideo({
+    this.kind = 'illustrated',
+    this.scenes = const [],
+    required this.audioUrl,
+    this.voice = '',
+    this.durationS = 0,
+  });
+
+  final String kind;
+  final List<VideoScene> scenes;
+  final String audioUrl;
+  final String voice;
+  final double durationS;
+
+  Duration get duration => Duration(milliseconds: (durationS * 1000).round());
+
+  factory CardVideo.fromJson(Map<String, dynamic> json) => CardVideo(
+    kind: json['kind'] as String? ?? 'illustrated',
+    scenes: (json['scenes'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(VideoScene.fromJson)
+        .where((s) => s.url.isNotEmpty)
+        .toList(),
+    audioUrl: json['audio_url'] as String? ?? '',
+    voice: json['voice'] as String? ?? '',
+    durationS: (json['duration_s'] as num?)?.toDouble() ?? 0,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'kind': kind,
+    'scenes': scenes.map((s) => s.toJson()).toList(),
+    'audio_url': audioUrl,
+    'voice': voice,
+    'duration_s': durationS,
+  };
+}
+
+/// One of a member's own categories for the cards they write.
+class CardCategory {
+  const CardCategory({required this.id, required this.name, this.cardCount});
+  final String id;
+  final String name;
+
+  /// Present in category lists, absent on a card.
+  final int? cardCount;
+
+  factory CardCategory.fromJson(Map<String, dynamic> json) => CardCategory(
+    id: json['id'] as String? ?? '',
+    name: json['name'] as String? ?? '',
+    cardCount: (json['card_count'] as num?)?.toInt(),
+  );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'name': name,
+    if (cardCount != null) 'card_count': cardCount,
+  };
+}
+
 /// An idea card. Named `IdeaCard` to avoid clashing with Material's `Card`.
 class IdeaCard {
   const IdeaCard({
@@ -248,6 +332,11 @@ class IdeaCard {
     this.explainer,
     this.audio,
     this.image,
+    this.author,
+    this.category,
+    this.visibility,
+    this.createdAt,
+    this.video,
   });
 
   final String id;
@@ -272,6 +361,23 @@ class IdeaCard {
 
   /// The card's picture, absent on text-only cards.
   final CardImage? image;
+
+  /// Who wrote it, on cards members write (absent on library cards).
+  final UserSummary? author;
+
+  /// The writer's own category for it, when they filed it under one.
+  final CardCategory? category;
+
+  /// Member cards: `everyone`, `followers`, `subscribers`, `private`, or
+  /// `hidden` when reports or a moderator took it down.
+  final String? visibility;
+  final DateTime? createdAt;
+
+  /// A member card's illustrated video, when one is made.
+  final CardVideo? video;
+
+  /// True for cards members write.
+  bool get isMemberCard => author != null;
 
   factory IdeaCard.fromJson(Map<String, dynamic> json) => IdeaCard(
     id: json['id'] as String,
@@ -306,6 +412,21 @@ class IdeaCard {
                 .isNotEmpty
         ? CardImage.fromJson(json['image'] as Map<String, dynamic>)
         : null,
+    author: json['author'] is Map<String, dynamic>
+        ? UserSummary.fromJson(json['author'] as Map<String, dynamic>)
+        : null,
+    category: json['category'] is Map<String, dynamic>
+        ? CardCategory.fromJson(json['category'] as Map<String, dynamic>)
+        : null,
+    visibility: json['visibility'] as String?,
+    createdAt: _date(json['created_at']),
+    video:
+        json['video'] is Map<String, dynamic> &&
+            ((json['video'] as Map<String, dynamic>)['audio_url'] as String? ??
+                    '')
+                .isNotEmpty
+        ? CardVideo.fromJson(json['video'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -325,16 +446,26 @@ class IdeaCard {
     if (explainer != null) 'explainer': explainer!.toJson(),
     if (audio != null) 'audio': audio!.toJson(),
     if (image != null) 'image': image!.toJson(),
+    if (author != null) 'author': author!.toJson(),
+    if (category != null) 'category': category!.toJson(),
+    if (visibility != null) 'visibility': visibility,
+    if (createdAt != null) 'created_at': createdAt!.toUtc().toIso8601String(),
+    if (video != null) 'video': video!.toJson(),
   };
 
   /// Text read aloud by the device voice when the card has no [audio]: the
   /// same script as the recording (title, body, apply it, the health note
   /// when there is one, and where it comes from).
   String get spokenText {
-    final b = StringBuffer('$title.\n\n$body\n\nApply it. $applyIt');
+    final b = StringBuffer('$title.\n\n$body');
+    if (applyIt.isNotEmpty || author == null) b.write('\n\nApply it. $applyIt');
     final note = disclaimer?.trim() ?? '';
     if (note.isNotEmpty) b.write('\n\n$note');
-    if (source.title.isNotEmpty) {
+    if (author != null) {
+      if (author!.displayName.isNotEmpty) {
+        b.write('\n\nBy ${author!.displayName}.');
+      }
+    } else if (source.title.isNotEmpty) {
       b.write('\n\nFrom ${source.title}');
       if (source.authors.isNotEmpty) {
         b.write(', by ${_andList(source.authors)}');
@@ -883,7 +1014,8 @@ class PostViewer {
 class PostReason {
   const PostReason({required this.kind, this.label = ''});
 
-  /// `source`, `author`, `favorite`, `topic` or `new`.
+  /// `source`, `author`, `writer` (a member you follow wrote it),
+  /// `favorite`, `topic` or `new`.
   final String kind;
   final String label;
 
@@ -898,6 +1030,7 @@ class PostReason {
   String get text => switch (kind) {
     'source' => 'From $label',
     'author' => 'Because you follow $label',
+    'writer' => 'From $label, who you follow',
     'favorite' => '$label favourited this',
     'topic' => 'In $label, one of your topics',
     _ => 'New on Reborn',
@@ -1272,6 +1405,15 @@ class UserSummary {
     handle: json['handle'] as String? ?? '',
     displayName: json['display_name'] as String? ?? '',
   );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'handle': handle,
+    'display_name': displayName,
+  };
+
+  /// The display name, or the handle when there is none.
+  String get name => displayName.isEmpty ? '@$handle' : displayName;
 }
 
 /// A public profile.
@@ -1596,6 +1738,17 @@ List<CommentThread> threadComments(List<Comment> comments) {
   return [for (final c in top) CommentThread(c, replies[c.id] ?? const [])];
 }
 
+/// An amount in cents as "$4.99", "£1.20" or "CHF 3.00".
+String moneyLabel(int cents, [String currency = 'usd']) {
+  final symbol = switch (currency.toLowerCase()) {
+    'usd' => r'$',
+    'gbp' => '£',
+    'eur' => '€',
+    _ => '${currency.toUpperCase()} ',
+  };
+  return '$symbol${(cents / 100).toStringAsFixed(2)}';
+}
+
 class GiftTier {
   const GiftTier({
     required this.id,
@@ -1620,15 +1773,7 @@ class GiftTier {
   );
 
   /// e.g. "$4.99" (used when the store has no localized price).
-  String get displayPrice {
-    final symbol = switch (currency.toLowerCase()) {
-      'usd' => r'$',
-      'gbp' => '£',
-      'eur' => '€',
-      _ => '${currency.toUpperCase()} ',
-    };
-    return '$symbol${(amountCents / 100).toStringAsFixed(2)}';
-  }
+  String get displayPrice => moneyLabel(amountCents, currency);
 }
 
 class GiftTiers {

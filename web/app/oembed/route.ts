@@ -32,6 +32,10 @@ export async function GET(request: Request) {
     .replace(`width="${WIDTH}"`, `width="${width}"`)
     .replace(`height="${HEIGHT}"`, `height="${height}"`);
   const author = card.source.authors[0];
+  // A member's card links to the member's page.
+  const authorInfo = card.author
+    ? { author_name: card.author.display_name, author_url: `${site}/u/${card.author.handle}` }
+    : { author_name: formatAuthors(card.source.authors), ...(author ? { author_url: `${site}${authorHref(author)}` } : {}) };
 
   return Response.json(
     {
@@ -40,8 +44,7 @@ export async function GET(request: Request) {
       provider_name: SITE_NAME,
       provider_url: site,
       title: card.title,
-      author_name: formatAuthors(card.source.authors),
-      ...(author ? { author_url: `${site}${authorHref(author)}` } : {}),
+      ...authorInfo,
       html,
       width,
       height,

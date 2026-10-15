@@ -11,10 +11,16 @@ import type { Stash } from "@/lib/types";
 export function StashesView() {
   return (
     <div className="mx-auto max-w-read">
-      <h1 className="font-serif text-4xl font-semibold tracking-tight">Your stashes</h1>
-      <p className="mt-2 text-muted">Collections of ideas you want to keep. Stashed ideas join your review.</p>
+      <h1 className="font-serif text-4xl font-semibold tracking-tight">Your collections</h1>
+      <p className="mt-2 text-muted">Ideas you want to keep, yours and the library&apos;s. Saved ideas join your review.</p>
+      <p className="mt-3">
+        <Link href="/me/cards" className="link">
+          My cards
+        </Link>
+        <span className="text-muted"> · write your own ideas</span>
+      </p>
       <div className="mt-8">
-        <RequireAuth message="Sign in to keep stashes of the ideas you want to remember.">
+        <RequireAuth message="Sign in to keep collections of the ideas you want to remember.">
           <StashList />
         </RequireAuth>
       </div>
@@ -42,7 +48,7 @@ function StashList() {
       setName("");
       setDescription("");
     } catch (err) {
-      setActionError(isApiError(err) ? err.message : "Couldn't create the stash.");
+      setActionError(isApiError(err) ? err.message : "Couldn't create the collection.");
     } finally {
       setBusy(false);
     }
@@ -52,7 +58,7 @@ function StashList() {
     <>
       <form onSubmit={create} className="panel space-y-3 p-5" aria-labelledby="new-stash-title">
         <h2 id="new-stash-title" className="font-semibold">
-          New stash
+          New collection
         </h2>
         <div>
           <label htmlFor="stash-name" className="label">
@@ -81,19 +87,19 @@ function StashList() {
           />
         </div>
         <button type="submit" className="btn btn-primary" disabled={busy || !name.trim()}>
-          {busy ? "Creating…" : "Create stash"}
+          {busy ? "Creating…" : "Create collection"}
         </button>
         <ErrorNote error={actionError} />
       </form>
 
       <div className="mt-8">
         {loading ? (
-          <Loading label="Loading your stashes…" />
+          <Loading label="Loading your collections…" />
         ) : error ? (
           <ErrorNote error={error} />
         ) : !stashes?.length ? (
           <p className="text-muted">
-            No stashes yet. Create one above, or press <strong>Stash</strong> on any idea.
+            No collections yet. Create one above, or press <strong>Save</strong> on any idea.
           </p>
         ) : (
           <ul className="grid gap-3">

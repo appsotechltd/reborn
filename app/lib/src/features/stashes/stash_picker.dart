@@ -15,7 +15,7 @@ Future<void> showStashPicker(
   if (!await requireSignIn(
     context,
     ref,
-    'Sign in to stash ideas and review them later.',
+    'Sign in to save ideas and review them later.',
   )) {
     return;
   }
@@ -28,7 +28,7 @@ Future<void> showStashPicker(
     builder: (_) => _StashPickerSheet(card: card),
   );
   if (name != null) {
-    messenger.showSnackBar(SnackBar(content: Text('Stashed in “$name”')));
+    messenger.showSnackBar(SnackBar(content: Text('Saved to “$name”')));
   }
 }
 
@@ -109,7 +109,7 @@ class _StashPickerSheetState extends ConsumerState<_StashPickerSheet> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
                   child: Text(
-                    'Stash this idea',
+                    'Save to collection',
                     style: theme.textTheme.titleLarge,
                   ),
                 ),
@@ -136,7 +136,7 @@ class _StashPickerSheetState extends ConsumerState<_StashPickerSheet> {
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20, 0, 20, 4),
                             child: Text(
-                              'Stashes are folders for ideas you want to keep '
+                              'Collections are folders for ideas you want to keep '
                               'and review. Name your first one below.',
                               style: theme.textTheme.bodyMedium,
                             ),
@@ -161,7 +161,7 @@ class _StashPickerSheetState extends ConsumerState<_StashPickerSheet> {
                         child: TextField(
                           controller: _newName,
                           decoration: const InputDecoration(
-                            labelText: 'New stash',
+                            labelText: 'New collection',
                             hintText: 'e.g. Morning reads',
                             isDense: true,
                           ),

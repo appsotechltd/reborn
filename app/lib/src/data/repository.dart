@@ -2,6 +2,7 @@ import 'dart:async';
 
 import '../api/api_client.dart';
 import '../api/ai_models.dart';
+import '../api/member_models.dart';
 import '../api/models.dart';
 import 'offline_cache.dart';
 
@@ -590,4 +591,95 @@ class RebornRepository {
 
   Future<AITopUp> topUpGoogle(String productId, String purchaseToken) =>
       _run(() => api.topUpGoogle(productId, purchaseToken));
+
+  // ---- Member cards, categories and the card studio ----
+
+  Future<List<CardCategory>> myCategories() => _run(api.myCategories);
+
+  Future<CardCategory> createCategory(String name) =>
+      _run(() => api.createCategory(name));
+
+  Future<CardCategory> renameCategory(String id, String name) =>
+      _run(() => api.renameCategory(id, name));
+
+  Future<void> deleteCategory(String id) => _run(() => api.deleteCategory(id));
+
+  Future<MyCardsPage> myCards({String? category, String? cursor}) =>
+      _run(() => api.myCards(category: category, cursor: cursor));
+
+  Future<IdeaCard> myCard(String id) => _run(() => api.myCard(id));
+
+  Future<IdeaCard> createMyCard(Map<String, Object?> fields) =>
+      _run(() => api.createMyCard(fields));
+
+  Future<IdeaCard> updateMyCard(String id, Map<String, Object?> fields) =>
+      _run(() => api.updateMyCard(id, fields));
+
+  Future<void> deleteMyCard(String id) => _run(() => api.deleteMyCard(id));
+
+  Future<UserCardsPage> userCards(
+    String handle, {
+    String? category,
+    String? cursor,
+  }) => _run(() => api.userCards(handle, category: category, cursor: cursor));
+
+  Future<void> reportPost(String postId, {String? reason}) =>
+      _run(() => api.reportPost(postId, reason: reason));
+
+  Future<List<ReportedCard>> reportedCards() => _run(api.reportedCards);
+
+  Future<void> moderateCard(String id, {required bool hide}) =>
+      _run(() => api.moderateCard(id, hide: hide));
+
+  Future<StudioStatus> studio() => _run(api.studio);
+
+  Future<StudioResult> makeCardImage(
+    String id, {
+    required String style,
+    String? prompt,
+    String? shape,
+  }) => _run(
+    () => api.makeCardImage(id, style: style, prompt: prompt, shape: shape),
+  );
+
+  Future<StudioResult> makeCardAudio(String id, {String? voice}) =>
+      _run(() => api.makeCardAudio(id, voice: voice));
+
+  Future<StudioResult> makeCardVideo(String id, {String? voice}) =>
+      _run(() => api.makeCardVideo(id, voice: voice));
+
+  Future<IdeaCard> deleteCardMedia(String id, String kind) =>
+      _run(() => api.deleteCardMedia(id, kind));
+
+  // ---- Writer earnings and subscriptions ----
+
+  Future<Earnings> earnings() => _run(api.earnings);
+
+  Future<MyWriterPlan> myPlan() => _run(api.myPlan);
+
+  Future<WriterPlan> setMyPlan({
+    required String tier,
+    required bool enabled,
+    String pitch = '',
+  }) => _run(() => api.setMyPlan(tier: tier, enabled: enabled, pitch: pitch));
+
+  Future<List<WriterSubscription>> mySubscriptions() =>
+      _run(api.mySubscriptions);
+
+  Future<WriterOffer> writerOffer(String handle) =>
+      _run(() => api.writerOffer(handle));
+
+  Future<WriterSubscription> subscribeApple(
+    String handle,
+    String signedTransaction,
+  ) => _run(() => api.subscribeApple(handle, signedTransaction));
+
+  Future<WriterSubscription> subscribeGoogle(
+    String handle,
+    String productId,
+    String purchaseToken,
+  ) => _run(() => api.subscribeGoogle(handle, productId, purchaseToken));
+
+  Future<WriterSubscription> cancelSubscription(String handle) =>
+      _run(() => api.cancelSubscription(handle));
 }

@@ -101,7 +101,7 @@ class _Upsell extends StatelessWidget {
               Text('Reborn AI', style: theme.textTheme.headlineSmall),
               const SizedBox(height: 8),
               Text(
-                'Your own assistant inside Reborn. Talk or type, and it answers from the library with links to each idea, saves cards to your stashes, and draws charts, sketches and pictures.',
+                'Your own assistant inside Reborn. Talk or type, and it answers from the library with links to each idea, saves cards to your collections, and draws charts, sketches and pictures.',
                 style: theme.textTheme.bodyLarge,
               ),
               const SizedBox(height: 16),

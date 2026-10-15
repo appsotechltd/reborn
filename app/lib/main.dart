@@ -12,6 +12,7 @@ import 'src/features/listen/audio_service_session.dart';
 import 'src/features/listen/listen_audio.dart';
 import 'src/features/notifications/push_service.dart';
 import 'src/features/premium/premium_service.dart';
+import 'src/features/writers/writer_pass_service.dart';
 import 'src/tv/tv_mode.dart';
 
 Future<void> main() async {
@@ -36,6 +37,7 @@ Future<void> main() async {
   container.read(giftServiceProvider).start();
   container.read(premiumServiceProvider).start();
   container.read(topUpServiceProvider).start();
+  container.read(writerPassServiceProvider).start();
   // Push is optional: without Firebase config this does nothing. Signed in,
   // it asks for permission and registers the device; signing out removes it.
   final push = container.read(pushServiceProvider);

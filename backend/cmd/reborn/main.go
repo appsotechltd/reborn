@@ -197,6 +197,8 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 		CORSOrigins:    cfg.CORSOrigins,
 		AIMonthlyUnits: cfg.AIMonthlyUnits,
 		AIHourly:       cfg.AIHourly,
+		GiftCommission: cfg.GiftCommissionPercent,
+		StoreFee:       cfg.StoreFeePercent,
 		WebBaseURL:     strings.TrimRight(cfg.WebBaseURL, "/"),
 		Media:          media,
 	}

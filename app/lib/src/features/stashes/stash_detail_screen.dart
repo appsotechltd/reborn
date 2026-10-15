@@ -17,7 +17,7 @@ class StashDetailScreen extends ConsumerWidget {
     final f = detail.value;
     return Scaffold(
       appBar: AppBar(
-        title: Text(f?.value.stash.name ?? 'Stash'),
+        title: Text(f?.value.stash.name ?? 'Collection'),
         actions: [
           if (f != null && !f.offline)
             StashMenu(
@@ -60,7 +60,7 @@ class StashDetailScreen extends ConsumerWidget {
                       const Padding(
                         padding: EdgeInsets.all(24),
                         child: Text(
-                          'This stash is empty. Tap Stash on any idea '
+                          'This collection is empty. Tap Save on any idea '
                           'to add it.',
                         ),
                       ),
@@ -76,7 +76,7 @@ class StashDetailScreen extends ConsumerWidget {
                 trailing: f.offline
                     ? null
                     : IconButton(
-                        tooltip: 'Remove from stash',
+                        tooltip: 'Remove from collection',
                         icon: const Icon(Icons.bookmark_remove_outlined),
                         onPressed: () async {
                           final messenger = ScaffoldMessenger.of(context);
@@ -154,7 +154,7 @@ class _PublicToggleState extends ConsumerState<_PublicToggle> {
     subtitle: Text(
       _on
           ? 'Shown on your profile for anyone to see'
-          : 'Only you can see this stash',
+          : 'Only you can see this collection',
     ),
     value: _on,
     onChanged: widget.enabled && !_busy ? _set : null,

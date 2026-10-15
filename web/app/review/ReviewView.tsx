@@ -25,7 +25,7 @@ export function ReviewView() {
         Ideas come back just before you&apos;d forget them. Recall, then grade how well you remembered.
       </p>
       <div className="mt-8">
-        <RequireAuth message="Sign in to review the ideas you've stashed.">
+        <RequireAuth message="Sign in to review the ideas you've saved.">
           <ReviewSession />
         </RequireAuth>
       </div>
@@ -58,7 +58,7 @@ function ReviewSession() {
         <p className="mt-2 text-muted">
           {done
             ? "Come back later and they'll be waiting at the right moment."
-            : "Stash ideas you want to keep and they'll show up here when it's time to recall them."}
+            : "Save ideas you want to keep and they'll show up here when it's time to recall them."}
         </p>
         <div className="mt-5 flex flex-wrap justify-center gap-3">
           {done ? (

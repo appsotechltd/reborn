@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../api/api_client.dart';
+import '../api/member_models.dart';
 import '../api/models.dart';
 import '../features/notifications/push_service.dart';
 import 'device_timezone.dart';
@@ -377,4 +378,71 @@ final premiumProvider = FutureProvider.autoDispose<PremiumStatus>((ref) {
 
 final adminStatsProvider = FutureProvider.autoDispose<AdminStats>(
   (ref) => ref.watch(repositoryProvider).adminStats(),
+);
+
+// ---------------------------------------------------------------------------
+// Member cards, the card studio, and writer earnings and subscriptions
+
+/// My cards; [category] is a category id, `none`, or '' for all.
+final myCardsProvider = FutureProvider.autoDispose.family<MyCardsPage, String>((
+  ref,
+  category,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref
+      .watch(repositoryProvider)
+      .myCards(category: category.isEmpty ? null : category);
+});
+
+final myCategoriesProvider = FutureProvider.autoDispose<List<CardCategory>>((
+  ref,
+) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).myCategories();
+});
+
+final myCardProvider = FutureProvider.autoDispose.family<IdeaCard, String>(
+  (ref, id) => ref.watch(repositoryProvider).myCard(id),
+);
+
+typedef UserCardsQuery = ({String handle, String category});
+
+/// A writer's cards the viewer may see; '' for every category.
+final userCardsProvider = FutureProvider.autoDispose
+    .family<UserCardsPage, UserCardsQuery>((ref, q) {
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref
+          .watch(repositoryProvider)
+          .userCards(
+            q.handle,
+            category: q.category.isEmpty ? null : q.category,
+          );
+    });
+
+final writerOfferProvider = FutureProvider.autoDispose
+    .family<WriterOffer, String>((ref, handle) {
+      ref.watch(sessionProvider.select((s) => s.token));
+      return ref.watch(repositoryProvider).writerOffer(handle);
+    });
+
+final studioProvider = FutureProvider.autoDispose<StudioStatus>((ref) {
+  ref.watch(sessionProvider.select((s) => s.token));
+  return ref.watch(repositoryProvider).studio();
+});
+
+final earningsProvider = FutureProvider.autoDispose<Earnings>(
+  (ref) => ref.watch(repositoryProvider).earnings(),
+);
+
+final myPlanProvider = FutureProvider.autoDispose<MyWriterPlan>(
+  (ref) => ref.watch(repositoryProvider).myPlan(),
+);
+
+final mySubscriptionsProvider =
+    FutureProvider.autoDispose<List<WriterSubscription>>(
+      (ref) => ref.watch(repositoryProvider).mySubscriptions(),
+    );
+
+final reportedCardsProvider = FutureProvider.autoDispose<List<ReportedCard>>(
+  (ref) => ref.watch(repositoryProvider).reportedCards(),
 );
