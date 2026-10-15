@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CardList } from "@/components/CardPreview";
+import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
 import { LoadMoreCards } from "@/components/LoadMoreCards";
+import { ShareMenu } from "@/components/ShareMenu";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, TOPICS, topicName } from "@/lib/content";
+import { siteUrl } from "@/lib/config";
 import { getAllSources, getFeed, getTopics, loadOr } from "@/lib/server-api";
 
 export const revalidate = 600;
@@ -30,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description,
     alternates: { canonical: url },
     openGraph: { siteName: "Reborn", title, description, url },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -47,11 +50,42 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
     null,
   );
 
+  const base = siteUrl();
+  const url = `${base}/topics/${topic.slug}`;
+
   return (
     <div>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": url,
+          url,
+          name: `${topic.name} ideas`,
+          description: `One-minute ideas about ${topic.name.toLowerCase()} from books and open sources, each credited to its source.`,
+          image: `${url}/opengraph-image`,
+          inLanguage: "en",
+          isPartOf: { "@type": "WebSite", name: "Reborn", url: base },
+          mainEntity: data?.feed.cards.length
+            ? {
+                "@type": "ItemList",
+                itemListElement: data.feed.cards.map((c, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  url: `${base}/ideas/${c.id}`,
+                  name: c.title,
+                })),
+              }
+            : undefined,
+        }}
+      />
+      <JsonLd data={breadcrumbsJsonLd(base, [[topic.name, `/topics/${topic.slug}`]])} />
       <header className="mx-auto max-w-read text-center">
         <p className="eyebrow">Topic</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight">{topicName(slug, [topic])}</h1>
+        <div className="mt-4 flex justify-center">
+          <ShareMenu path={`/topics/${topic.slug}`} title={`${topic.name} ideas on Reborn`} what="topic" label />
+        </div>
       </header>
 
       {!ok || !data ? (

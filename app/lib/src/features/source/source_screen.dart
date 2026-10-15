@@ -9,6 +9,7 @@ import '../circles/circles_screen.dart';
 import '../library/card_collection.dart';
 import '../library/library_controller.dart';
 import '../listen/listen_follow.dart';
+import '../post/share.dart';
 import '../social/follow_button.dart';
 import '../summary/summary_widgets.dart';
 
@@ -34,6 +35,16 @@ class SourceScreen extends ConsumerWidget {
       appBar: AppBar(
         leading: exitLeading(context),
         title: const Text('Source'),
+        actions: [
+          if (detail.value?.value.source case final s?)
+            ShareLinkButton(
+              key: const ValueKey('source-share'),
+              title: s.authors.isEmpty
+                  ? s.title
+                  : '${s.title} by ${s.authors.join(', ')}',
+              path: '/sources/${Uri.encodeComponent(s.id)}',
+            ),
+        ],
       ),
       body: detail.when(
         loading: () => const LoadingView(),

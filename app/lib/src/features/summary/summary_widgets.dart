@@ -7,6 +7,7 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
 import '../listen/listen_controller.dart';
+import '../post/share.dart';
 import 'summary_controller.dart';
 
 /// The reader's page; [part] is one-based, [all] the one long page.
@@ -284,6 +285,11 @@ class SummaryPostCard extends ConsumerWidget {
                       listenToSummary(context, ref, summary.id, from: from),
                   icon: const Icon(Icons.headphones_outlined, size: 18),
                   label: const Text('Listen'),
+                ),
+                ShareLinkButton(
+                  key: const ValueKey('summary-post-share'),
+                  title: summary.title,
+                  path: summaryPath(summary.id),
                 ),
               ],
             ),

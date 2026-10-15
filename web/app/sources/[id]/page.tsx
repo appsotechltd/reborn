@@ -4,9 +4,10 @@ import { notFound } from "next/navigation";
 import { AuthorLinks } from "@/components/CardView";
 import { CardsBrowser } from "@/components/CardsBrowser";
 import { SourceFollowButton } from "@/components/FollowButton";
+import { ShareMenu } from "@/components/ShareMenu";
 import { SourceCircles } from "@/components/SourceCircles";
 import { Icon } from "@/components/Icon";
-import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, formatYear, licenceName } from "@/lib/content";
 import { siteUrl } from "@/lib/config";
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     description,
     alternates: { canonical: url },
     openGraph: { siteName: "Reborn", type: "website", title, description, url },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -58,6 +59,8 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
           "@id": `${siteUrl()}/sources/${source.id}`,
           name: source.title,
           url: source.url,
+          image: `${siteUrl()}/sources/${source.id}/opengraph-image`,
+          abstract: `${cards.length} one-minute ideas from ${source.title}.`,
           author: source.authors.map((name) => ({ "@type": "Person", name })),
           translator: source.translator ? { "@type": "Person", name: source.translator } : undefined,
           publisher: source.publisher ? { "@type": "Organization", name: source.publisher } : undefined,
@@ -65,6 +68,7 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
           inLanguage: source.language ?? "en",
         }}
       />
+      <JsonLd data={breadcrumbsJsonLd(siteUrl(), [["Books", "/sources"], [source.title, `/sources/${source.id}`]])} />
       <header className="mx-auto max-w-read">
         <p className="eyebrow capitalize">{source.kind}</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-balance">{source.title}</h1>
@@ -73,6 +77,7 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <SourceFollowButton id={source.id} title={source.title} initial={follow} />
+          <ShareMenu path={`/sources/${source.id}`} title={`${source.title} by ${formatAuthors(source.authors)}`} what={isBook ? "book" : source.kind} label />
           {summary_id ? (
             <Link href={summaryHref(summary_id)} className="btn btn-small">
               <Icon name="libraryBooks" className="size-4" />

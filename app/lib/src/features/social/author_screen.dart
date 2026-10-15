@@ -8,6 +8,7 @@ import '../../widgets/common.dart';
 import '../library/card_collection.dart';
 import '../library/library_controller.dart';
 import '../listen/listen_follow.dart';
+import '../post/share.dart';
 import 'follow_button.dart';
 
 /// An author: their sources in the library, a follow button, and every
@@ -25,6 +26,13 @@ class AuthorScreen extends ConsumerWidget {
       appBar: AppBar(
         leading: exitLeading(context),
         title: const Text('Author'),
+        actions: [
+          ShareLinkButton(
+            key: const ValueKey('author-share'),
+            title: '$name on Reborn',
+            path: '/authors/${Uri.encodeComponent(name)}',
+          ),
+        ],
       ),
       body: author.when(
         loading: () => const LoadingView(),

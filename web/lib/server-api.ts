@@ -32,14 +32,21 @@ function get<T>(path: string, query?: RequestOptions["query"]): Promise<T> {
   });
 }
 
-/** Returns null for 404 so pages can call notFound(). Other errors propagate. */
+/**
+ * Returns null for 404 so pages can call notFound(). Other errors propagate.
+ *
+ * A 404 also opts the render out of static caching: a page asked for while the API is still
+ * seeding (right after a deploy) must not be cached as "not found" for the next ten minutes,
+ * where crawlers and link previews would see it, and an uncached not-found gets a real 404 status.
+ */
 async function orNull<T>(p: Promise<T>): Promise<T | null> {
   try {
     return await p;
   } catch (err) {
-    if (isApiError(err) && err.status === 404) return null;
-    throw err;
+    if (!isApiError(err) || err.status !== 404) throw err;
   }
+  await connection();
+  return null;
 }
 
 export const getCard = (id: string) => orNull(get<Card>(`/v1/cards/${encodeURIComponent(id)}`));

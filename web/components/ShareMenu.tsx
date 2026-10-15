@@ -8,15 +8,29 @@ import type { ShareChannel } from "@/lib/types";
 import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 
-/** Share a post: network links, Copy link and (when the browser has it) the system share sheet. */
+/**
+ * Share anything with a public page (an idea, book, author, topic, summary, stash): network links,
+ * Copy link and (when the browser has it) the system share sheet, which reaches Instagram and the
+ * rest on phones. Only idea shares (`postId`) are counted.
+ */
 export function ShareMenu({
   postId,
+  path,
   title,
+  what = "idea",
+  label = false,
   count,
   onShared,
 }: {
-  postId: string;
+  /** The idea being shared; its share is counted. */
+  postId?: string;
+  /** Site path to share when it isn't an idea, e.g. `/sources/meditations`. */
+  path?: string;
   title: string;
+  /** What is being shared, for the dialog heading ("Share this book"). */
+  what?: string;
+  /** Show a "Share" label next to the icon. */
+  label?: boolean;
   /** Times shared, shown next to the icon. */
   count?: number;
   onShared?: () => void;
@@ -27,12 +41,14 @@ export function ShareMenu({
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const url = `${site}${ideaPath(postId)}`;
+  const url = `${site}${path ?? (postId ? ideaPath(postId) : "/")}`;
   const canNativeShare = hydrated && typeof navigator !== "undefined" && typeof navigator.share === "function";
-  const titleId = `share-${postId}-title`;
+  const key = (postId ?? path ?? "page").replace(/[^a-zA-Z0-9_-]/g, "-");
+  const titleId = `share-${key}-title`;
 
   function record(channel: ShareChannel) {
     onShared?.();
+    if (!postId) return;
     api.share(postId, channel).catch(() => {
       // Counting is best effort; never get in the way of the share itself.
     });
@@ -64,12 +80,12 @@ export function ShareMenu({
     <>
       <button
         type="button"
-        className="btn btn-small btn-ghost gap-1.5 px-2.5 text-muted hover:text-fg"
+        className={label ? "btn btn-small" : "btn btn-small btn-ghost gap-1.5 px-2.5 text-muted hover:text-fg"}
         aria-haspopup="dialog"
         onClick={() => setOpen(true)}
       >
-        <Icon name="share" />
-        <span className="sr-only">Share</span>
+        <Icon name="share" className={label ? "size-4" : undefined} />
+        <span className={label ? undefined : "sr-only"}>Share</span>
         {count !== undefined ? (
           <>
             <span aria-hidden="true">{formatCount(count)}</span>
@@ -79,14 +95,14 @@ export function ShareMenu({
       </button>
       <Modal open={open} onClose={() => setOpen(false)} titleId={titleId}>
         <h2 id={titleId} className="font-serif text-xl font-semibold">
-          Share this idea
+          Share this {what}
         </h2>
         <p className="mt-1 text-sm text-muted">“{title}”</p>
-        <label htmlFor={`share-${postId}-url`} className="sr-only">
-          Link to this idea
+        <label htmlFor={`share-${key}-url`} className="sr-only">
+          Link to this {what}
         </label>
         <input
-          id={`share-${postId}-url`}
+          id={`share-${key}-url`}
           className="field mt-4 text-sm"
           readOnly
           value={url}

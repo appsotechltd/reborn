@@ -30,3 +30,6 @@ export const SITE_TAGLINE = "Big ideas from great books, one minute at a time.";
 
 /** Public pages are regenerated at most this often (seconds). */
 export const REVALIDATE_SECONDS = 600;
+
+/** The site-wide link preview (app/opengraph-image.tsx), for pages without their own. */
+export const DEFAULT_OG_IMAGE = { url: "/opengraph-image", width: 1200, height: 630, alt: "Reborn" };

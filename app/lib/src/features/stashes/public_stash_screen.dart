@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
+import '../post/share.dart';
 
 /// Someone's public stash (GET /v1/public/stashes/{id}).
 class PublicStashScreen extends ConsumerWidget {
@@ -18,6 +19,14 @@ class PublicStashScreen extends ConsumerWidget {
       appBar: AppBar(
         leading: exitLeading(context),
         title: Text(stash.value?.stash.name ?? 'Stash'),
+        actions: [
+          if (stash.value?.stash case final s?)
+            ShareLinkButton(
+              key: const ValueKey('stash-share'),
+              title: s.name,
+              path: '/s/${Uri.encodeComponent(s.id)}',
+            ),
+        ],
       ),
       body: stash.when(
         loading: () => const LoadingView(),

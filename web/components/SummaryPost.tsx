@@ -16,6 +16,7 @@ import {
 } from "@/lib/summaries";
 import type { Card, Summary, SummaryProgress } from "@/lib/types";
 import { Icon } from "./Icon";
+import { ShareMenu } from "./ShareMenu";
 
 /**
  * The summary's cover: always the dark Candlelight look (like videos), so it stands out in the
@@ -209,6 +210,11 @@ export function SummaryPost({ summary, snap = false }: { summary: Summary; snap?
             Read it all
           </Link>
           <ListenSummaryButton summaryId={summary.id} from={from} />
+          <ShareMenu
+            path={summaryHref(summary.id)}
+            title={summary.title}
+            what={summary.coverage === "guide" ? "guide" : "summary"}
+          />
         </div>
       </div>
     </article>

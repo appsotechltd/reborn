@@ -6,7 +6,7 @@ import { AuthProvider } from "@/lib/auth";
 import { ListenProvider } from "@/lib/listen";
 import { ThemeSync } from "@/components/ThemeSync";
 import { SiteUrlProvider } from "@/lib/site-url";
-import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/config";
+import { SITE_NAME, SITE_TAGLINE, siteUrl, DEFAULT_OG_IMAGE } from "@/lib/config";
 import { themeScript } from "@/lib/theme";
 import "./globals.css";
 
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   description:
     "Reborn turns ideas from books and open sources into one-minute idea cards you can read, apply, review and quiz yourself on.",
   applicationName: SITE_NAME,
-  openGraph: { siteName: SITE_NAME, type: "website", locale: "en" },
-  twitter: { card: "summary" },
+  openGraph: { siteName: SITE_NAME, type: "website", locale: "en", images: [DEFAULT_OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [DEFAULT_OG_IMAGE] },
 };
 
 export const viewport: Viewport = {

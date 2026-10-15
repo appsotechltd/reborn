@@ -27,6 +27,28 @@ The API must be running (by default at `http://localhost:8080`, see the reposito
 | `NEXT_PUBLIC_API_URL` | browser (signed-in features, "load more") | `http://localhost:8080` | **Inlined at build time.** Must be reachable from users' browsers and allowed by the API's CORS settings. |
 | `SITE_URL` | canonical URLs, Open Graph, JSON-LD, `sitemap.xml`, `robots.txt` | `http://localhost:3000` | Set to the public origin (no trailing slash). Read when pages render; statically built pages pick it up at build time. |
 
+## Sharing and SEO
+
+Every public page (idea, book, author, topic, summary or Life Guide, public stash, profile) has a
+Share button: Facebook, X, WhatsApp, LinkedIn, Telegram, email, Copy link and, where the browser has
+one, the system share sheet (which is how Instagram is reached; Instagram has no web share link).
+Each content type also gets its own 1200×630 link-preview image (`opengraph-image.tsx` next to the
+page, drawn by `lib/og-image.tsx`), with `app/opengraph-image.tsx` as the site-wide fallback, plus
+canonical URLs, JSON-LD (Article, Book, Person, CollectionPage, BreadcrumbList) and a sitemap of
+every card, book, author, topic and summary.
+
+### Moving to a custom domain
+
+Everything public is built from one setting per app, so a domain change is configuration only:
+
+1. Point the domain at the Render web service and add it there as a custom domain.
+2. Set `SITE_URL` on the web service (render.yaml) to `https://<domain>` and redeploy. Canonicals,
+   previews, the sitemap and robots.txt all follow.
+3. Set `WEB_BASE_URL` on the API service (password reset and invite links) and the `WEB_BASE_URL`
+   repository variable used by the APK workflow (links shared from the app), then build a new APK.
+4. Add the domain to Google Search Console and submit `https://<domain>/sitemap.xml`. Keep the old
+   onrender.com address redirecting to the new domain so shared links keep working.
+
 ## Scripts
 
 | Command | What it does |

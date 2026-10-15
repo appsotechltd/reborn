@@ -10,6 +10,7 @@ import '../../data/repository.dart';
 import '../../layout/adaptive.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
+import '../post/share.dart';
 import '../social/author_screen.dart';
 import '../source/source_screen.dart';
 import 'card_collection.dart';
@@ -101,6 +102,14 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen>
         leading: exitLeading(context),
         title: const Text('Library'),
         actions: [
+          if (_topic case final slug?)
+            ShareLinkButton(
+              key: const ValueKey('library-topic-share'),
+              tooltip: 'Share this topic',
+              title:
+                  '${topics.where((t) => t.slug == slug).firstOrNull?.name ?? slug} ideas on Reborn',
+              path: '/topics/${Uri.encodeComponent(slug)}',
+            ),
           TextButton.icon(
             key: const ValueKey('library-summaries'),
             onPressed: () => context.push('/summaries'),

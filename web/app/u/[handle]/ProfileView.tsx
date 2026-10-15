@@ -6,6 +6,7 @@ import { BlockMenu } from "@/components/BlockMenu";
 import { FollowButton } from "@/components/FollowButton";
 import { PremiumBadge } from "@/components/PremiumBadge";
 import { PostFeed } from "@/components/PostFeed";
+import { ShareMenu } from "@/components/ShareMenu";
 import { ErrorNote, Loading } from "@/components/SignInPrompt";
 import { useAuth } from "@/lib/auth";
 import { useLoad } from "@/lib/use-load";
@@ -77,6 +78,7 @@ export function ProfileView({ handle }: { handle: string }) {
               onChange={(s) => setData((p) => ({ ...(p as Profile), followers: s.followers, is_following: s.is_following }))}
             />
           )}
+          <ShareMenu path={`/u/${profile.handle}`} title={`${profile.display_name} on Reborn`} what="profile" label />
           {!profile.is_me ? (
             <BlockMenu
               userId={profile.id}

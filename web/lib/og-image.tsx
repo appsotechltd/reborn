@@ -1,18 +1,26 @@
 import { ImageResponse } from "next/og";
-import { excerpt } from "./content";
+import { excerpt, formatAuthors, TOPICS } from "./content";
 import { SITE_NAME, SITE_TAGLINE } from "./config";
-import { getCard, loadOr } from "./server-api";
+import { getAuthor, getCard, getSource, getSummary, getTopics, loadOr } from "./server-api";
+import { coverageLabel, summaryByline } from "./summaries";
 
 export const OG_SIZE = { width: 1200, height: 630 };
+export const OG_ALT = "Reborn: big ideas from great books, one minute at a time";
 
-/** Link preview for an idea: title, a short excerpt and the credit line. */
-export async function ideaImage(id: string): Promise<ImageResponse> {
-  const { data: card } = await loadOr(() => getCard(id), null);
-  const title = card?.title ?? SITE_NAME;
-  const text = card ? excerpt(card.body, 190) : SITE_TAGLINE;
-  const credit = card?.credit ?? "";
+interface Preview {
+  /** Small label above the title ("Book", "Author", "Topic"). */
+  eyebrow?: string;
+  title: string;
+  text: string;
+  footer?: string;
+}
 
-  // Candlelight dark palette (design/candlelight.md); OG images are fixed images, not themed.
+/**
+ * The shared link-preview layout (WhatsApp, Facebook, X, LinkedIn, iMessage...): eyebrow, title,
+ * a short text and a footer line, in the Candlelight dark palette (design/candlelight.md).
+ * OG images are fixed images, not themed.
+ */
+export function previewImage({ eyebrow, title, text, footer }: Preview): ImageResponse {
   return new ImageResponse(
     (
       <div
@@ -30,9 +38,14 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: 30, fontWeight: 700, letterSpacing: 1 }}>
+          <div style={{ display: "flex", alignItems: "baseline", fontSize: 30, fontWeight: 700, letterSpacing: 1 }}>
             {SITE_NAME}
             <span style={{ color: "#e9a23b" }}>.</span>
+            {eyebrow ? (
+              <span style={{ marginLeft: 20, fontSize: 24, fontWeight: 400, color: "#e9a23b", letterSpacing: 2 }}>
+                {eyebrow.toUpperCase()}
+              </span>
+            ) : null}
           </div>
           <div
             style={{
@@ -43,9 +56,11 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
               lineHeight: 1.12,
             }}
           >
-            {title}
+            {excerpt(title, 110)}
           </div>
-          <div style={{ display: "flex", marginTop: 28, fontSize: 30, lineHeight: 1.4, color: "#d9cdba" }}>{text}</div>
+          <div style={{ display: "flex", marginTop: 28, fontSize: 30, lineHeight: 1.4, color: "#d9cdba" }}>
+            {excerpt(text, 190)}
+          </div>
         </div>
         <div
           style={{
@@ -56,10 +71,74 @@ export async function ideaImage(id: string): Promise<ImageResponse> {
             color: "#a89a86",
           }}
         >
-          {credit ? excerpt(credit, 120) : "Big ideas from great books, one minute at a time."}
+          {footer ? excerpt(footer, 120) : SITE_TAGLINE}
         </div>
       </div>
     ),
     OG_SIZE,
   );
+}
+
+/** The site-wide preview, for pages without their own. */
+export function siteImage(): ImageResponse {
+  return previewImage({
+    title: SITE_TAGLINE,
+    text: "One-minute idea cards, summaries and guides from great books, thinkers and open sources. Read, listen and save the ideas that help.",
+    footer: "Free to read on the web and on Android",
+  });
+}
+
+/** Link preview for an idea: title, a short excerpt and the credit line. */
+export async function ideaImage(id: string): Promise<ImageResponse> {
+  const { data: card } = await loadOr(() => getCard(id), null);
+  if (!card) return siteImage();
+  return previewImage({ title: card.title, text: card.body, footer: card.credit || undefined });
+}
+
+export async function sourceImage(id: string): Promise<ImageResponse> {
+  const { data } = await loadOr(() => getSource(id), null);
+  if (!data) return siteImage();
+  const { source, cards } = data;
+  const isBook = source.kind === "book" || source.kind === "textbook";
+  return previewImage({
+    eyebrow: isBook ? "Book" : source.kind,
+    title: source.title,
+    text: `by ${formatAuthors(source.authors)}. ${cards.length} one-minute ${cards.length === 1 ? "idea" : "ideas"} to read or listen to.`,
+    footer: source.attribution,
+  });
+}
+
+export async function authorImage(name: string): Promise<ImageResponse> {
+  const { data } = await loadOr(() => getAuthor(name), null);
+  if (!data) return siteImage();
+  const cards = data.card_count ?? data.sources.reduce((n, s) => n + s.card_count, 0);
+  const works = data.sources.slice(0, 3).map((s) => s.title);
+  return previewImage({
+    eyebrow: "Author",
+    title: data.name,
+    text: `${cards} one-minute ${cards === 1 ? "idea" : "ideas"} from ${data.sources.length} ${data.sources.length === 1 ? "work" : "works"}${works.length ? `, including ${works.join(", ")}` : ""}.`,
+  });
+}
+
+export async function topicImage(slug: string): Promise<ImageResponse> {
+  const { data: topics } = await loadOr(getTopics, TOPICS.map((t) => ({ ...t, card_count: 0 })));
+  const topic = topics.find((t) => t.slug === slug);
+  if (!topic) return siteImage();
+  return previewImage({
+    eyebrow: "Topic",
+    title: `${topic.name} ideas`,
+    text: `${topic.card_count ? `${topic.card_count} one-minute ideas` : "One-minute ideas"} about ${topic.name.toLowerCase()} from great books and open sources, each credited to its source.`,
+  });
+}
+
+export async function summaryImage(id: string): Promise<ImageResponse> {
+  const { data } = await loadOr(() => getSummary(id), null);
+  if (!data) return siteImage();
+  const by = summaryByline(data);
+  return previewImage({
+    eyebrow: coverageLabel(data),
+    title: data.title,
+    text: data.description,
+    footer: `${data.part_count} one-minute parts${by ? ` · ${by}` : ""}`,
+  });
 }

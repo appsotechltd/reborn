@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CardList } from "@/components/CardPreview";
+import { JsonLd } from "@/components/JsonLd";
+import { ShareMenu } from "@/components/ShareMenu";
 import { Unavailable } from "@/components/Unavailable";
 import { excerpt } from "@/lib/content";
 import { getPublicStash, loadOr } from "@/lib/server-api";
+import { DEFAULT_OG_IMAGE, siteUrl } from "@/lib/config";
 
 export const revalidate = 60; // short: an owner can make the stash private again
 
@@ -24,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { siteName: "Reborn", type: "website", title, description, url },
-    twitter: { card: "summary", title, description },
+    openGraph: { siteName: "Reborn", type: "website", title, description, url, images: [DEFAULT_OG_IMAGE] },
+    twitter: { card: "summary_large_image", title, description, images: [DEFAULT_OG_IMAGE] },
   };
 }
 
@@ -36,8 +39,24 @@ export default async function PublicStashPage({ params }: { params: Promise<{ id
   if (!data) notFound();
   const { stash, cards } = data;
 
+  const base = siteUrl();
+
   return (
     <div>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: stash.name,
+          url: `${base}/s/${stash.id}`,
+          itemListElement: cards.map((c, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `${base}/ideas/${c.id}`,
+            name: c.title,
+          })),
+        }}
+      />
       <header className="mx-auto max-w-read text-center">
         <p className="eyebrow">Stash</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-balance">{stash.name}</h1>
@@ -49,6 +68,9 @@ export default async function PublicStashPage({ params }: { params: Promise<{ id
           </Link>{" "}
           · {stash.card_count} {stash.card_count === 1 ? "idea" : "ideas"}
         </p>
+        <div className="mt-4 flex justify-center">
+          <ShareMenu path={`/s/${stash.id}`} title={stash.name} what="stash" label />
+        </div>
       </header>
       <section aria-label="Ideas in this stash" className="mt-10">
         {cards.length ? <CardList cards={cards} /> : <p className="text-center text-muted">This stash is empty.</p>}
