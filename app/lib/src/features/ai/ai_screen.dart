@@ -51,6 +51,7 @@ class AIScreen extends ConsumerWidget {
               onPressed: ref.read(aiChatProvider.notifier).newChat,
             ),
           ],
+          const ThemeToggleButton(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],

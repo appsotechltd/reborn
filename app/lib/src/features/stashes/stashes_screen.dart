@@ -86,6 +86,7 @@ class StashesScreen extends ConsumerWidget {
         title: const Text('Collections'),
         actions: const [
           NotificationBell(),
+          ThemeToggleButton(),
           ProfileMenuButton(),
           SizedBox(width: 8),
         ],

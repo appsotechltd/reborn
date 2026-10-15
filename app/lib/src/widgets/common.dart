@@ -282,6 +282,26 @@ class CardTile extends ConsumerWidget {
   }
 }
 
+/// Light / dark switch in every tab's app bar: a sun in dark mode, a moon in
+/// light mode. Pins the other mode (the same choice as in Settings).
+class ThemeToggleButton extends ConsumerWidget {
+  const ThemeToggleButton({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return IconButton(
+      key: const ValueKey('theme-toggle'),
+      tooltip: dark ? 'Switch to light mode' : 'Switch to dark mode',
+      visualDensity: VisualDensity.compact,
+      icon: Icon(dark ? Icons.light_mode_outlined : Icons.dark_mode_outlined),
+      onPressed: () => ref
+          .read(themeModeProvider.notifier)
+          .toggle(dark ? Brightness.dark : Brightness.light),
+    );
+  }
+}
+
 /// Profile / overflow menu shown in every tab's app bar.
 class ProfileMenuButton extends ConsumerWidget {
   const ProfileMenuButton({super.key});

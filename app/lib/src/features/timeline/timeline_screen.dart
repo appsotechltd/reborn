@@ -333,6 +333,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
               onPressed: () => context.push('/feed'),
             ),
           const NotificationBell(),
+          const ThemeToggleButton(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],

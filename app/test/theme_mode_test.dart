@@ -44,11 +44,16 @@ void _platform(WidgetTester tester, Brightness b) {
 }
 
 void main() {
-  testWidgets('System (the default) follows the platform brightness', (
-    tester,
-  ) async {
-    _platform(tester, Brightness.dark);
+  testWidgets('dark is the default, even on a light phone', (tester) async {
+    _platform(tester, Brightness.light);
     await _pumpApp(tester);
+    expect(_theme(tester).brightness, Brightness.dark);
+    expect(_theme(tester).scaffoldBackgroundColor, _darkBg);
+  });
+
+  testWidgets('System follows the platform brightness', (tester) async {
+    _platform(tester, Brightness.dark);
+    await _pumpApp(tester, prefs: {ThemeModeController.prefsKey: 'system'});
     expect(_theme(tester).brightness, Brightness.dark);
     expect(_theme(tester).scaffoldBackgroundColor, _darkBg);
 
@@ -72,8 +77,8 @@ void main() {
     expect(_theme(tester).scaffoldBackgroundColor, _darkBg);
   });
 
-  testWidgets('an unknown stored value falls back to System', (tester) async {
-    _platform(tester, Brightness.dark);
+  testWidgets('an unknown stored value falls back to dark', (tester) async {
+    _platform(tester, Brightness.light);
     await _pumpApp(tester, prefs: {ThemeModeController.prefsKey: 'sepia'});
     expect(_theme(tester).brightness, Brightness.dark);
   });
@@ -90,15 +95,48 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Appearance'), findsOneWidget);
 
-    await tester.tap(find.text('Dark'));
+    await tester.tap(find.text('Light'));
     await tester.pumpAndSettle();
-    expect(_theme(tester).brightness, Brightness.dark);
-    expect(prefs.getString(ThemeModeController.prefsKey), 'dark');
+    expect(_theme(tester).brightness, Brightness.light);
+    expect(prefs.getString(ThemeModeController.prefsKey), 'light');
 
     await tester.tap(find.text('System'));
     await tester.pumpAndSettle();
     expect(_theme(tester).brightness, Brightness.light);
-    expect(prefs.getString(ThemeModeController.prefsKey), isNull);
+    expect(prefs.getString(ThemeModeController.prefsKey), 'system');
+  });
+
+  testWidgets('the header toggle switches modes and Settings follows', (
+    tester,
+  ) async {
+    _platform(tester, Brightness.light);
+    final prefs = await _pumpApp(tester);
+    expect(_theme(tester).brightness, Brightness.dark);
+    final toggle = find.byKey(const ValueKey('theme-toggle')).first;
+    expect(
+      find.descendant(
+        of: toggle,
+        matching: find.byIcon(Icons.light_mode_outlined),
+      ),
+      findsOneWidget,
+    );
+
+    await tester.tap(toggle);
+    await tester.pumpAndSettle();
+    expect(_theme(tester).brightness, Brightness.light);
+    expect(prefs.getString(ThemeModeController.prefsKey), 'light');
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('theme-toggle')).first,
+        matching: find.byIcon(Icons.dark_mode_outlined),
+      ),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.byKey(const ValueKey('theme-toggle')).first);
+    await tester.pumpAndSettle();
+    expect(_theme(tester).brightness, Brightness.dark);
+    expect(prefs.getString(ThemeModeController.prefsKey), 'dark');
   });
 
   test('amber text is the deep tone in light mode, buttons match', () {

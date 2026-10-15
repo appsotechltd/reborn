@@ -65,7 +65,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Swipe ideas'),
-        actions: const [ProfileMenuButton(), SizedBox(width: 8)],
+        actions: const [
+          ThemeToggleButton(),
+          ProfileMenuButton(),
+          SizedBox(width: 8),
+        ],
       ),
       body: Column(
         children: [

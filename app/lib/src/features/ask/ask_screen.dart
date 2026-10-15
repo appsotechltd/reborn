@@ -70,6 +70,7 @@ class _AskScreenState extends ConsumerState<AskScreen> {
               onPressed: ref.read(askProvider.notifier).clear,
             ),
           const NotificationBell(),
+          const ThemeToggleButton(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],

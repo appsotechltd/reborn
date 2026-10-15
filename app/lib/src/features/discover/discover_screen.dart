@@ -54,6 +54,7 @@ class DiscoverScreen extends ConsumerWidget {
         title: const Text('Discover'),
         actions: const [
           NotificationBell(),
+          ThemeToggleButton(),
           ProfileMenuButton(),
           SizedBox(width: 8),
         ],
