@@ -71,30 +71,47 @@ describe("<PostActions>", () => {
       expect(heart.textContent).toContain("5");
     });
 
-    it("reacts, and tapping the same reaction again clears it", async () => {
+    it("reacts from the one React button's picker, and picking the same one again clears it", async () => {
       const fetchMock = vi.fn<(url: string, init?: RequestInit) => Promise<Response>>(async (url) =>
         String(url).endsWith("/v1/me") ? json(200, user) : new Response(null, { status: 204 }),
       );
       vi.stubGlobal("fetch", fetchMock);
       renderActions();
-      // Every reaction is one tap away, with its count, as in the app.
-      const group = screen.getByRole("group", { name: "Reactions" });
-      expect(within(group).getAllByRole("button")).toHaveLength(5);
+      const openPicker = () => {
+        fireEvent.click(screen.getByTestId("post-react"));
+        return screen.getByRole("group", { name: "Reactions" });
+      };
+      // One button with the total; the five reactions are in its picker, as in the app.
+      expect(screen.getByTestId("post-react").getAttribute("aria-label")).toBe("React, 2 reactions");
+      expect(within(openPicker()).getAllByRole("button")).toHaveLength(5);
       fireEvent.click(screen.getByRole("button", { name: "Insightful, 0" }));
-      const active = screen.getByRole("button", { name: "Insightful, 1" });
-      expect(active.getAttribute("aria-pressed")).toBe("true");
+      expect(screen.queryByRole("group", { name: "Reactions" })).toBeNull();
+      const trigger = screen.getByTestId("post-react");
+      expect(trigger.getAttribute("aria-label")).toBe("Your reaction: Insightful, 3 reactions");
+      expect(trigger.textContent).toContain("💡");
       await waitFor(() =>
         expect(fetchMock.mock.calls.some(([u, i]) => String(u).endsWith("/reaction") && i?.method === "PUT")).toBe(true),
       );
-      // Another reaction replaces it; tapping the current one again clears it.
+      expect(within(openPicker()).getByRole("button", { name: "Insightful, 1" }).getAttribute("aria-pressed")).toBe("true");
+      // Another reaction replaces it; picking the current one again clears it.
       fireEvent.click(screen.getByRole("button", { name: "Love, 2" }));
-      expect(screen.getByRole("button", { name: "Insightful, 0" }).getAttribute("aria-pressed")).toBe("false");
-      expect(screen.getByRole("button", { name: "Love, 3" }).getAttribute("aria-pressed")).toBe("true");
-      fireEvent.click(screen.getByRole("button", { name: "Love, 3" }));
-      expect(screen.getByRole("button", { name: "Love, 2" }).getAttribute("aria-pressed")).toBe("false");
+      expect(within(openPicker()).getByRole("button", { name: "Insightful, 0" }).getAttribute("aria-pressed")).toBe("false");
+      const love = screen.getByRole("button", { name: "Love, 3" });
+      expect(love.getAttribute("aria-pressed")).toBe("true");
+      fireEvent.click(love);
+      expect(screen.getByTestId("post-react").getAttribute("aria-label")).toBe("React, 2 reactions");
       await waitFor(() =>
         expect(fetchMock.mock.calls.some(([u, i]) => String(u).endsWith("/reaction") && i?.method === "DELETE")).toBe(true),
       );
+    });
+
+    it("closes the picker with Escape", () => {
+      vi.stubGlobal("fetch", vi.fn(async (url: string) => (String(url).endsWith("/v1/me") ? json(200, user) : new Response(null, { status: 204 }))));
+      renderActions();
+      fireEvent.click(screen.getByTestId("post-react"));
+      expect(screen.getByRole("group", { name: "Reactions" })).toBeTruthy();
+      fireEvent.keyDown(document, { key: "Escape" });
+      expect(screen.queryByRole("group", { name: "Reactions" })).toBeNull();
     });
   });
 
@@ -106,11 +123,29 @@ describe("<PostActions>", () => {
         <PostActions post={post} />
       </AuthProvider>,
     );
-    expect(screen.getByRole("button", { name: "Like, 2" })).toBeTruthy();
+    expect(screen.getByTestId("post-react").textContent).toContain("2");
+    fireEvent.click(screen.getByTestId("post-react"));
+    expect(screen.getByRole("button", { name: "Like, 2" }).textContent).toContain("2");
+    // Reactions nobody has used yet show no count.
+    expect(screen.getByRole("button", { name: "Love, 0" }).textContent).toBe("❤️");
     expect(screen.getByRole("button", { name: /favourite.*5 favourites/i })).toBeTruthy();
     expect(screen.getByRole("link", { name: "3 comments" }).getAttribute("href")).toBe("/ideas/example-book--01#comments");
     expect(screen.getByRole("button", { name: /^Share.*shared 7 times$/ })).toBeTruthy();
     expect(screen.getByRole("button", { name: /^Gift\s*· 2/ })).toBeTruthy();
+    expect(screen.getByRole("link", { name: /^Save to a collection/ })).toBeTruthy();
+  });
+
+  it("hides counts that are still zero", () => {
+    vi.stubGlobal("fetch", vi.fn(async () => new Response(null, { status: 204 })));
+    const post = makePost({ stats: { reactions: {}, comments: 0, favorites: 0, shares: 0, gifts: 0 } });
+    render(
+      <AuthProvider>
+        <PostActions post={post} />
+      </AuthProvider>,
+    );
+    const actions = screen.getByTestId("post-actions");
+    for (const el of actions.querySelectorAll("[aria-hidden=true]")) expect(el.textContent).not.toBe("0");
+    expect(screen.getByRole("link", { name: "0 comments" }).textContent).toBe("0 comments"); // screen readers still hear it
   });
 
   it("sends signed-out visitors to sign in", () => {

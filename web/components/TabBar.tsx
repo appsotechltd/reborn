@@ -19,9 +19,9 @@ export function isTabActive(tab: (typeof TABS)[number], pathname: string): boole
 }
 
 /**
- * Bottom navigation on phones (below md), as in the Flutter app: fixed to the bottom of the
- * screen above the home indicator, the current tab marked with an amber pill. Hidden from md
- * up, where the header's link strip takes over.
+ * Bottom navigation on phones (below md), as in the Flutter app: a floating capsule on the card
+ * colour, 16px in from each side and clear of the home indicator. The current tab is amber, with
+ * its filled icon and a bold label. Hidden from md up, where the header's link strip takes over.
  */
 export function TabBar() {
   const pathname = usePathname() ?? "/";
@@ -29,9 +29,9 @@ export function TabBar() {
     <nav
       aria-label="Tabs"
       data-tab-bar
-      className="fixed inset-x-0 bottom-0 z-10 bg-nav pb-[env(safe-area-inset-bottom,0px)] md:hidden"
+      className="fixed inset-x-4 bottom-[calc(0.75rem+env(safe-area-inset-bottom,0px))] z-10 md:hidden"
     >
-      <ul className="mx-auto flex h-[4.25rem] max-w-xl items-stretch">
+      <ul className="mx-auto flex h-16 max-w-xl items-stretch rounded-[2rem] border border-line bg-surface px-1.5 shadow-[var(--nav-shadow)]">
         {TABS.map((t) => {
           const active = isTabActive(t, pathname);
           return (
@@ -39,15 +39,11 @@ export function TabBar() {
               <Link
                 href={t.href}
                 aria-current={active ? "page" : undefined}
-                className={`flex flex-1 flex-col items-center justify-center gap-1 text-xs focus-visible:outline-offset-[-3px] ${
-                  active ? "font-semibold text-accent-text" : "font-medium text-muted hover:text-fg"
+                className={`flex flex-1 flex-col items-center justify-center gap-0.5 rounded-[1.75rem] text-[0.6875rem] focus-visible:outline-offset-[-3px] ${
+                  active ? "font-bold text-accent-text" : "font-medium text-muted hover:text-fg"
                 }`}
               >
-                <span
-                  className={`grid h-8 w-16 place-items-center rounded-full transition-colors ${active ? "bg-accent-soft" : ""}`}
-                >
-                  <Icon name={active ? t.activeIcon : t.icon} className="size-6" />
-                </span>
+                <Icon name={active ? t.activeIcon : t.icon} className="size-6" />
                 {t.label}
               </Link>
             </li>

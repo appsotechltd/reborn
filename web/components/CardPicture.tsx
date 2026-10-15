@@ -21,7 +21,7 @@ export function CardPicture({ image, className = "" }: { image: CardImage; class
   const label = TYPE_LABEL[image.type] ?? "Image";
   return (
     <figure className={`mb-6 ${className}`} data-testid="card-image">
-      <div className="relative aspect-[3/2] overflow-hidden rounded-inset bg-[#14110e]">
+      <div className="relative aspect-[3/2] overflow-hidden rounded-card bg-[#14110e]">
         {/* eslint-disable-next-line @next/next/no-img-element -- media comes from R2, not next/image's optimiser */}
         <img
           src={mediaUrl(image.url)}

@@ -8,6 +8,7 @@ import { ExplainerVideo } from "./ExplainerVideo";
 import { FitBody } from "./FitBody";
 import { Icon } from "./Icon";
 import { IllustratedVideo } from "./IllustratedVideo";
+import { ListenPill } from "./ListenButton";
 
 interface CardViewProps {
   card: Card;
@@ -63,7 +64,8 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
     >
       {/* The picture tops the full card; the phone feed's preview stays text, and a video card has its video. */}
       {card.image && !video ? <CardPicture image={card.image} className={phoneOnly} /> : null}
-      <p className={`eyebrow ${preview ? "max-md:order-first max-md:text-[0.6875rem]" : ""}`}>
+      {/* In the phone feed the topic rides on the post's cover instead (a video post has no cover). */}
+      <p className={`eyebrow ${preview ? (video ? "max-md:order-first max-md:text-[0.6875rem]" : "max-md:hidden") : ""}`}>
         <Link href={`/topics/${card.topic}`} className="hover:text-accent-text hover:underline">
           {topicName(card.topic)}
         </Link>
@@ -72,7 +74,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         id={`card-${card.id}-title`}
         className={`mt-2 font-serif font-semibold leading-tight tracking-tight text-balance ${
           preview
-            ? `text-2xl max-md:shrink-0 max-md:text-[1.375rem] max-md:leading-[1.22] md:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}`
+            ? `text-2xl max-md:mt-1 max-md:shrink-0 max-md:text-[1.5625rem] max-md:leading-[1.16] md:text-[1.625rem] lg:text-4xl ${video ? "max-md:line-clamp-2" : "max-md:line-clamp-3"}`
             : "text-3xl sm:text-4xl"
         }`}
       >
@@ -138,7 +140,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         // As much as fits above "Read more", clipped (never scrolled): whole lines ending in "…"
         // once measured, faded at the cut until then.
         <FitBody
-          className="prose-reborn mt-6 max-md:mt-3 max-md:min-h-0 max-md:flex-1 max-md:overflow-clip max-md:text-[1.0625rem] max-md:leading-[1.6] max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-3.5rem),transparent)]"
+          className="prose-reborn mt-6 max-md:mt-3 max-md:min-h-0 max-md:flex-1 max-md:overflow-clip max-md:text-base max-md:leading-[1.55] max-md:[mask-image:linear-gradient(to_bottom,#000_calc(100%-3.5rem),transparent)]"
         >
           {paragraphs(card.body).map((p, i) => (
             <p key={i}>{p}</p>
@@ -152,21 +154,30 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         </div>
       )}
 
-      {preview && (!video || card.body.trim()) ? (
-        // Always shown in the preview (it never has Apply it or the full credit), only on phones.
-        <p className="mt-3 shrink-0 max-md:order-2 md:hidden">
-          <Link href={preview} className="btn btn-small btn-primary gap-2 pl-3.5" data-read-more>
-            <Icon name="arrowForward" className="size-[1.125rem]" />
-            Read more<span className="sr-only">: {card.title}</span>
-          </Link>
-        </p>
+      {preview ? (
+        // Always shown in the preview (it never has Apply it or the full credit), only on phones:
+        // "Read the idea" for the card's page and Listen, as in the app.
+        <div className="mt-3 flex shrink-0 items-center gap-2 max-md:order-2 md:hidden">
+          {!video || card.body.trim() ? (
+            <Link href={preview} className="btn btn-primary h-[2.875rem] flex-1 gap-2" data-read-more>
+              Read the idea<span className="sr-only">: {card.title}</span>
+              <Icon name="arrowForward" className="size-[1.125rem]" />
+            </Link>
+          ) : null}
+          <ListenPill card={card} />
+        </div>
       ) : null}
 
       {card.quote ? (
-        <figure className={`mt-6 border-l-2 border-oxblood pl-4 ${phoneOnly}`}>
-          <blockquote className="font-serif text-xl font-semibold italic leading-relaxed">“{card.quote}”</blockquote>
-          <figcaption className="mt-1 text-sm text-muted">
+        // The quote on a soft panel with a large amber mark, as in the app.
+        <figure className={`relative mt-6 overflow-hidden rounded-[1.25rem] bg-quote-panel px-5 pb-4 pt-9 ${phoneOnly}`}>
+          <span aria-hidden="true" className="absolute left-4 top-0 font-serif text-[4.5rem] leading-none text-accent">
+            “
+          </span>
+          <blockquote className="font-serif text-lg font-semibold italic leading-relaxed">{card.quote}</blockquote>
+          <figcaption className="mt-2 text-sm text-muted">
             {card.source.authors.join(", ")}, <cite>{card.source.title}</cite>
+            {card.locator ? <> · {card.locator}</> : null}
           </figcaption>
         </figure>
       ) : null}
@@ -175,10 +186,13 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       {card.apply_it?.trim() ? (
         <section
           aria-label="Apply it"
-          className={`mt-8 rounded-inset bg-surface-2 px-5 py-4 ${phoneOnly}`}
+          className={`mt-6 rounded-[1.25rem] bg-amber-wash px-5 py-4 text-on-amber-wash ${phoneOnly}`}
         >
-          <Sub className="eyebrow">Apply it</Sub>
-          <p className="mt-1 text-lg leading-relaxed">{card.apply_it}</p>
+          <Sub className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.12em] text-accent-text">
+            <Icon name="fire" className="size-4 text-accent" />
+            Apply it
+          </Sub>
+          <p className="mt-1.5 text-lg leading-relaxed">{card.apply_it}</p>
         </section>
       ) : null}
 

@@ -138,10 +138,10 @@ describe("Listen mode on the web", () => {
         <Timeline initialPosts={posts} initialCursor={null} topics={[{ slug: "health", name: "Health" }]} />
       </App>,
     );
-    // The phone button at the end of the topic chips, and the wider screens' button above the feed.
+    // The wider screens' button above the feed (phones have it in the header).
     const buttons = screen.getAllByRole("button", { name: "Listen to this feed" });
-    expect(buttons).toHaveLength(2);
-    fireEvent.click(buttons[1]);
+    expect(buttons).toHaveLength(1);
+    fireEvent.click(buttons[0]);
     const bar = screen.getByRole("region", { name: "Listen mode" });
     expect(within(bar).getByText("Idea 1")).toBeTruthy();
     fireEvent.click(within(bar).getByRole("button", { name: "Next idea" }));

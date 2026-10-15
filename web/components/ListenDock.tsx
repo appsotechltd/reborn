@@ -5,6 +5,9 @@ import { useEffect, useRef, useState } from "react";
 import { topicName } from "@/lib/content";
 import { useListen } from "@/lib/listen";
 import { formatTime, SLEEP_MINUTES, sourceLine, SPEEDS, type ListenPlayer, type ListenState } from "@/lib/listen-player";
+import { mediaUrl } from "@/lib/config";
+import { coverColorsFor } from "@/lib/polish";
+import type { Card } from "@/lib/types";
 import { Icon } from "./Icon";
 
 /**
@@ -27,21 +30,19 @@ export function ListenDock() {
       <section
         data-listen-bar
         aria-label="Listen mode"
-        className="fixed inset-x-0 bottom-[var(--tabbar-h)] z-10 border-t border-line bg-nav md:pb-[env(safe-area-inset-bottom,0px)]"
+        className="fixed inset-x-0 bottom-[var(--tabbar-h)] z-10 border-t border-line bg-nav md:pb-[env(safe-area-inset-bottom,0px)] max-md:inset-x-4 max-md:h-[3.75rem] max-md:overflow-hidden max-md:rounded-[1.25rem] max-md:border max-md:bg-surface max-md:shadow-[var(--nav-shadow)]"
       >
         <div aria-hidden="true" className="absolute inset-x-0 top-0 h-0.5">
           <div className="h-full bg-accent" style={{ width: `${pct}%` }} />
         </div>
-        <div className="mx-auto flex h-[calc(4rem-1px)] max-w-3xl items-center gap-1 px-2 md:px-4">
+        <div className="mx-auto flex h-[calc(4rem-1px)] max-w-3xl items-center gap-1 px-2 max-md:h-full md:px-4">
           <button
             type="button"
             onClick={() => setOpen(true)}
             aria-haspopup="dialog"
             className="flex min-h-11 min-w-0 flex-1 items-center gap-3 rounded-lg px-2 text-left hover:bg-surface-2"
           >
-            <span className="grid size-10 shrink-0 place-items-center rounded-full bg-accent-soft text-accent-text">
-              <Icon name="headphones" className="size-5" />
-            </span>
+            <ListenThumb card={item.card} />
             <span className="min-w-0">
               <span className="block truncate text-sm font-semibold">{item.card.title}</span>
               <span className="block truncate text-xs text-muted">{statusLine(state)}</span>
@@ -148,7 +149,8 @@ function NowListening({
     <dialog
       ref={ref}
       aria-labelledby="listen-title"
-      className="m-auto max-h-[calc(100dvh-2rem)] w-[min(32rem,calc(100vw-2rem))] max-w-full overflow-y-auto rounded-2xl border border-line bg-surface p-0 text-fg backdrop:bg-black/50 max-md:mb-0 max-md:max-h-[92dvh] max-md:w-full max-md:rounded-b-none max-md:border-x-0 max-md:border-b-0"
+      style={{ background: "var(--player-bg)" }}
+      className="m-auto max-h-[calc(100dvh-2rem)] w-[min(32rem,calc(100vw-2rem))] max-w-full overflow-y-auto rounded-3xl border border-line p-0 text-fg backdrop:bg-black/50 max-md:mb-0 max-md:max-h-[92dvh] max-md:w-full max-md:rounded-b-none max-md:border-x-0 max-md:border-b-0"
       onClose={onClose}
       onClick={(e) => {
         if (e.target === ref.current) onClose();
@@ -167,6 +169,7 @@ function NowListening({
               <Icon name="expandMore" className="size-6" />
             </button>
           </div>
+          <ListenArtwork card={card} />
           <h2 id="listen-title" className="mt-1 font-serif text-2xl font-semibold leading-tight text-balance">
             {card.title}
           </h2>
@@ -318,5 +321,54 @@ function NowListening({
         </div>
       ) : null}
     </dialog>
+  );
+}
+
+/** The mini-player's small square: the card's picture, or its book's cover colours with headphones. */
+function ListenThumb({ card }: { card: Card }) {
+  const [top, bottom] = coverColorsFor(card.source.id);
+  return (
+    <span
+      aria-hidden="true"
+      className="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl text-[#f3e4ca]"
+      style={{ background: `linear-gradient(135deg, ${top}, ${bottom})` }}
+    >
+      {card.image ? (
+        // eslint-disable-next-line @next/next/no-img-element -- media comes from R2, not next/image's optimiser
+        <img src={mediaUrl(card.image.url)} alt="" className="size-full object-cover" />
+      ) : (
+        <Icon name="headphones" className="size-5" />
+      )}
+    </span>
+  );
+}
+
+/**
+ * The player's large square artwork, as in the app: the card's picture, or a cover in its book's
+ * colours with a flame, the book's title and authors. Only on screens tall enough to keep every
+ * control in view (700px and up).
+ */
+function ListenArtwork({ card }: { card: Card }) {
+  const [top, bottom] = coverColorsFor(card.source.id);
+  return (
+    <div
+      aria-hidden="true"
+      data-listen-artwork
+      className="mx-auto my-4 hidden size-[clamp(200px,34vh,300px)] overflow-hidden rounded-[1.75rem] shadow-[0_24px_60px_-18px_rgba(233,162,59,0.45)] [@media(min-height:700px)]:block"
+      style={{ background: `linear-gradient(135deg, ${top}, ${bottom})` }}
+    >
+      {card.image ? (
+        // eslint-disable-next-line @next/next/no-img-element -- media comes from R2, not next/image's optimiser
+        <img src={mediaUrl(card.image.url)} alt="" className="size-full object-cover" />
+      ) : (
+        <div className="flex size-full flex-col justify-between p-6 text-[#f3e4ca]">
+          <Icon name="fire" className="size-9 text-[#f3b65a]" />
+          <div>
+            <p className="line-clamp-3 font-serif text-2xl font-semibold leading-tight">{card.source.title}</p>
+            <p className="mt-1.5 truncate text-sm opacity-75">{card.source.authors.join(", ")}</p>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
