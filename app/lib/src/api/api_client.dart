@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import 'ai_models.dart';
+import 'member_models.dart';
 import 'models.dart';
 
 /// Base URL of the Reborn API, from `--dart-define=API_BASE_URL=...`.
@@ -1003,5 +1004,224 @@ class ApiClient {
             body: {'product_id': productId, 'purchase_token': purchaseToken},
           ),
         ),
+      );
+
+  // ---- Member cards and categories ----
+
+  String _myCard(String id) => '/v1/me/cards/${Uri.encodeComponent(id)}';
+  String _user(String handle) => '/v1/users/${Uri.encodeComponent(handle)}';
+
+  Future<List<CardCategory>> myCategories() async =>
+      (_map(await _send('GET', '/v1/me/categories'))['categories'] as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(CardCategory.fromJson)
+          .toList();
+
+  Future<CardCategory> createCategory(String name) async =>
+      CardCategory.fromJson(
+        _map(await _send('POST', '/v1/me/categories', body: {'name': name})),
+      );
+
+  Future<CardCategory> renameCategory(String id, String name) async =>
+      CardCategory.fromJson(
+        _map(
+          await _send(
+            'PATCH',
+            '/v1/me/categories/${Uri.encodeComponent(id)}',
+            body: {'name': name},
+          ),
+        ),
+      );
+
+  Future<void> deleteCategory(String id) =>
+      _send('DELETE', '/v1/me/categories/${Uri.encodeComponent(id)}');
+
+  /// [category] is a category id, or `none` for uncategorised cards.
+  Future<MyCardsPage> myCards({
+    String? category,
+    String? cursor,
+    int limit = 50,
+  }) async => MyCardsPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '/v1/me/cards',
+        query: {'category': category, 'cursor': cursor, 'limit': '$limit'},
+      ),
+    ),
+  );
+
+  Future<IdeaCard> myCard(String id) async =>
+      IdeaCard.fromJson(_map(await _send('GET', _myCard(id))));
+
+  /// Creates a card. [fields] are the API's: `title`, `body`, `apply_it`,
+  /// `topic`, `category_id` and `audience`.
+  Future<IdeaCard> createMyCard(Map<String, Object?> fields) async =>
+      IdeaCard.fromJson(
+        _map(await _send('POST', '/v1/me/cards', body: fields)),
+      );
+
+  /// Changes the given [fields]; `"category_id": ""` clears the category.
+  Future<IdeaCard> updateMyCard(String id, Map<String, Object?> fields) async =>
+      IdeaCard.fromJson(_map(await _send('PATCH', _myCard(id), body: fields)));
+
+  Future<void> deleteMyCard(String id) => _send('DELETE', _myCard(id));
+
+  Future<UserCardsPage> userCards(
+    String handle, {
+    String? category,
+    String? cursor,
+    int limit = 20,
+  }) async => UserCardsPage.fromJson(
+    _map(
+      await _send(
+        'GET',
+        '${_user(handle)}/cards',
+        query: {'category': category, 'cursor': cursor, 'limit': '$limit'},
+      ),
+    ),
+  );
+
+  Future<void> reportPost(String postId, {String? reason}) => _send(
+    'POST',
+    '${_post(postId)}/report',
+    body: {if (reason != null && reason.isNotEmpty) 'reason': reason},
+  );
+
+  Future<List<ReportedCard>> reportedCards() async =>
+      (_map(await _send('GET', '/v1/moderation/cards'))['cards'] as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(ReportedCard.fromJson)
+          .toList();
+
+  Future<void> moderateCard(String id, {required bool hide}) => _send(
+    'POST',
+    '/v1/moderation/cards/${Uri.encodeComponent(id)}/${hide ? 'hide' : 'restore'}',
+  );
+
+  // ---- The card studio ----
+
+  Future<StudioStatus> studio() async =>
+      StudioStatus.fromJson(_map(await _send('GET', '/v1/studio')));
+
+  /// Makes a picture for one of my cards. Up to about a minute.
+  Future<StudioResult> makeCardImage(
+    String id, {
+    required String style,
+    String? prompt,
+    String? shape,
+  }) async => StudioResult.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '${_myCard(id)}/image',
+        body: {
+          'style': style,
+          if (prompt != null && prompt.isNotEmpty) 'prompt': prompt,
+          'shape': ?shape,
+        },
+        timeout: aiTimeout,
+      ),
+    ),
+  );
+
+  Future<StudioResult> makeCardAudio(String id, {String? voice}) async =>
+      StudioResult.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '${_myCard(id)}/audio',
+            body: {'voice': ?voice},
+            timeout: aiTimeout,
+          ),
+        ),
+      );
+
+  /// Makes an illustrated video: the server draws each scene and records the
+  /// narration, which can take a couple of minutes.
+  Future<StudioResult> makeCardVideo(String id, {String? voice}) async =>
+      StudioResult.fromJson(
+        _map(
+          await _send(
+            'POST',
+            '${_myCard(id)}/video',
+            body: {'voice': ?voice},
+            timeout: studioVideoTimeout,
+          ),
+        ),
+      );
+
+  static const studioVideoTimeout = Duration(minutes: 4);
+
+  /// [kind] is `image`, `audio` or `video`.
+  Future<IdeaCard> deleteCardMedia(String id, String kind) async =>
+      IdeaCard.fromJson(_map(await _send('DELETE', '${_myCard(id)}/$kind')));
+
+  // ---- Writer earnings and subscriptions ----
+
+  Future<Earnings> earnings() async =>
+      Earnings.fromJson(_map(await _send('GET', '/v1/me/earnings')));
+
+  Future<MyWriterPlan> myPlan() async =>
+      MyWriterPlan.fromJson(_map(await _send('GET', '/v1/me/plan')));
+
+  Future<WriterPlan> setMyPlan({
+    required String tier,
+    required bool enabled,
+    String pitch = '',
+  }) async => WriterPlan.fromJson(
+    _map(
+      await _send(
+        'PUT',
+        '/v1/me/plan',
+        body: {'tier': tier, 'enabled': enabled, 'pitch': pitch},
+      ),
+    ),
+  );
+
+  Future<List<WriterSubscription>> mySubscriptions() async =>
+      (_map(await _send('GET', '/v1/me/subscriptions'))['subscriptions']
+                  as List? ??
+              const [])
+          .whereType<Map<String, dynamic>>()
+          .map(WriterSubscription.fromJson)
+          .toList();
+
+  Future<WriterOffer> writerOffer(String handle) async =>
+      WriterOffer.fromJson(_map(await _send('GET', '${_user(handle)}/plan')));
+
+  Future<WriterSubscription> subscribeApple(
+    String handle,
+    String signedTransaction,
+  ) async => WriterSubscription.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '${_user(handle)}/subscribe/apple',
+        body: {'signed_transaction': signedTransaction},
+      ),
+    ),
+  );
+
+  Future<WriterSubscription> subscribeGoogle(
+    String handle,
+    String productId,
+    String purchaseToken,
+  ) async => WriterSubscription.fromJson(
+    _map(
+      await _send(
+        'POST',
+        '${_user(handle)}/subscribe/google',
+        body: {'product_id': productId, 'purchase_token': purchaseToken},
+      ),
+    ),
+  );
+
+  /// Stops a web subscription renewing; it lasts to the end of its month.
+  Future<WriterSubscription> cancelSubscription(String handle) async =>
+      WriterSubscription.fromJson(
+        _map(await _send('DELETE', '${_user(handle)}/subscription')),
       );
 }

@@ -13,7 +13,7 @@ export function QuizView() {
     <div className="mx-auto max-w-read">
       <h1 className="font-serif text-4xl font-semibold tracking-tight">Quiz</h1>
       <p className="mt-2 text-muted">
-        Five quick questions, favouring ideas you&apos;ve stashed. Right answers push an idea further out in your
+        Five quick questions, favouring ideas you&apos;ve saved. Right answers push an idea further out in your
         review; wrong ones bring it back soon.
       </p>
       <div className="mt-8">

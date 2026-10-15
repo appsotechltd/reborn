@@ -155,6 +155,9 @@ void main() {
     expect(find.text('@bob'), findsWidgets);
     expect(find.text('Reads Stoics'), findsOneWidget);
     expect(find.text('2 followers'), findsOneWidget);
+    // Cards come first; favourites are a tab away.
+    await tester.tap(find.text('Favourites'));
+    await tester.pumpAndSettle();
     expect(find.text(sampleCard().title), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('follow-button')));
     await tester.pumpAndSettle();

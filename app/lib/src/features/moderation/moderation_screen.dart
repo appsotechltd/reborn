@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../api/member_models.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../widgets/common.dart';
 import '../contribute/contribution_tile.dart';
 
 /// Moderators' queue: contributions waiting for a decision, then comments
-/// people have reported (three reports hide one until a moderator hides or
-/// restores it), as on the web's moderation page.
+/// and member cards people have reported (three reports hide one until a
+/// moderator hides or restores it), as on the web's moderation page.
 class ModerationScreen extends ConsumerWidget {
   const ModerationScreen({super.key});
 
@@ -27,6 +28,7 @@ class ModerationScreen extends ConsumerWidget {
     final theme = Theme.of(context);
     final queue = ref.watch(moderationQueueProvider);
     final reported = ref.watch(reportedCommentsProvider);
+    final reportedCards = ref.watch(reportedCardsProvider);
 
     Widget heading(String text, {Key? key}) => ReadingWidth(
       child: Padding(
@@ -78,6 +80,7 @@ class ModerationScreen extends ConsumerWidget {
         onRefresh: () => Future.wait([
           ref.refresh(moderationQueueProvider.future),
           ref.refresh(reportedCommentsProvider.future),
+          ref.refresh(reportedCardsProvider.future),
         ]),
         child: ListView(
           physics: const AlwaysScrollableScrollPhysics(),
@@ -112,6 +115,13 @@ class ModerationScreen extends ConsumerWidget {
               () => ref.invalidate(reportedCommentsProvider),
               'No reported comments.',
               (c) => _ReportedItem(c: c),
+            ),
+            heading('Reported cards', key: const ValueKey('reported-cards')),
+            ...section(
+              reportedCards,
+              () => ref.invalidate(reportedCardsProvider),
+              'No reported cards.',
+              (c) => _ReportedCardItem(r: c),
             ),
           ],
         ),
@@ -176,6 +186,128 @@ class _ReportedItemState extends ConsumerState<_ReportedItem> {
             ),
             const SizedBox(height: 6),
             Text(c.body, style: theme.textTheme.bodyLarge),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 8,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 2,
+                  ),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(
+                      side: BorderSide(
+                        color: hidden ? scheme.error : scheme.outlineVariant,
+                      ),
+                    ),
+                  ),
+                  child: Text(
+                    hidden ? 'Hidden' : 'Visible',
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      color: hidden ? scheme.error : scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ),
+                Text(
+                  '${r.reports} ${r.reports == 1 ? 'report' : 'reports'}'
+                  '${r.reasons.isEmpty ? '' : ': ${r.reasons.toSet().join(', ')}'}',
+                  style: theme.textTheme.bodySmall,
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            if (_decided != null)
+              Text('$_decided ✓', style: theme.textTheme.labelLarge)
+            else
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  OutlinedButton(
+                    onPressed: _busy ? null : () => _decide(false),
+                    child: const Text('Restore'),
+                  ),
+                  const SizedBox(width: 8),
+                  FilledButton(
+                    onPressed: _busy ? null : () => _decide(true),
+                    child: const Text('Hide'),
+                  ),
+                ],
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// A reported member card with Hide and Restore.
+class _ReportedCardItem extends ConsumerStatefulWidget {
+  const _ReportedCardItem({required this.r});
+  final ReportedCard r;
+
+  @override
+  ConsumerState<_ReportedCardItem> createState() => _ReportedCardItemState();
+}
+
+class _ReportedCardItemState extends ConsumerState<_ReportedCardItem> {
+  bool _busy = false;
+
+  /// 'Hidden' or 'Restored' once decided here.
+  String? _decided;
+
+  Future<void> _decide(bool hide) async {
+    final messenger = ScaffoldMessenger.of(context);
+    setState(() => _busy = true);
+    try {
+      await ref
+          .read(repositoryProvider)
+          .moderateCard(widget.r.card.id, hide: hide);
+      if (mounted) {
+        setState(() {
+          _busy = false;
+          _decided = hide ? 'Hidden' : 'Restored';
+        });
+      }
+    } catch (e) {
+      messenger.showSnackBar(SnackBar(content: Text(errorMessage(e))));
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final r = widget.r;
+    final card = r.card;
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final hidden = _decided == null ? r.hidden : _decided == 'Hidden';
+    final author = card.author;
+    return Card(
+      key: ValueKey('reported-card-${card.id}'),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (author != null)
+              Text(
+                '${author.displayName} · @${author.handle}'
+                '${card.createdAt == null ? '' : ' · ${timeAgo(card.createdAt)}'}',
+                style: theme.textTheme.bodySmall,
+              ),
+            const SizedBox(height: 6),
+            Text(card.title, style: theme.textTheme.titleMedium),
+            const SizedBox(height: 4),
+            Text(
+              card.body,
+              maxLines: 6,
+              overflow: TextOverflow.ellipsis,
+              style: theme.textTheme.bodyMedium,
+            ),
             const SizedBox(height: 10),
             Wrap(
               spacing: 8,

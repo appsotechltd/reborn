@@ -8,7 +8,7 @@ import { Icon, type IconName } from "./Icon";
 export const TABS: { href: string; label: string; icon: IconName; activeIcon: IconName; match: string[] }[] = [
   { href: "/", label: "Home", icon: "homeOutlined", activeIcon: "home", match: [] },
   { href: "/discover", label: "Discover", icon: "exploreOutlined", activeIcon: "explore", match: ["/discover"] },
-  { href: "/stashes", label: "Stashes", icon: "bookmarksOutlined", activeIcon: "bookmarks", match: ["/stashes"] },
+  { href: "/stashes", label: "Collections", icon: "bookmarksOutlined", activeIcon: "bookmarks", match: ["/stashes", "/me"] },
   { href: "/review", label: "Review", icon: "refresh", activeIcon: "refresh", match: ["/review", "/quiz"] },
   { href: "/ask", label: "Ask", icon: "forumOutlined", activeIcon: "forum", match: ["/ask"] },
 ];

@@ -55,21 +55,28 @@ export default async function EmbedIdeaPage({ params }: { params: Promise<{ id: 
           <p key={i}>{p}</p>
         ))}
       </div>
-      <div className="mt-4 rounded-inset bg-surface-2 px-4 py-3">
-        <p className="eyebrow">Apply it</p>
-        <p className="mt-1">{card.apply_it}</p>
-      </div>
+      {card.apply_it?.trim() ? (
+        <div className="mt-4 rounded-inset bg-surface-2 px-4 py-3">
+          <p className="eyebrow">Apply it</p>
+          <p className="mt-1">{card.apply_it}</p>
+        </div>
+      ) : null}
       <footer className="mt-4 border-t border-line pt-3 text-xs text-muted" data-testid="card-credit">
         <p>{card.credit}</p>
         <p className="mt-1">
-          <a href={card.source.url} className="link" target="_blank" rel="noopener noreferrer">
-            Original source
-          </a>
-          {" · "}Licence:{" "}
-          <a href={card.source.licence_url} className="link" target="_blank" rel="license noopener noreferrer">
-            {licenceName(card.source.licence)}
-          </a>
-          {" · "}
+          {/* A member's card has no book behind it: its credit names the member. */}
+          {card.author ? null : (
+            <>
+              <a href={card.source.url} className="link" target="_blank" rel="noopener noreferrer">
+                Original source
+              </a>
+              {" · "}Licence:{" "}
+              <a href={card.source.licence_url} className="link" target="_blank" rel="license noopener noreferrer">
+                {licenceName(card.source.licence)}
+              </a>
+              {" · "}
+            </>
+          )}
           <Link href={href} className="link" target="_blank" rel="noopener">
             Read on {SITE_NAME}
           </Link>

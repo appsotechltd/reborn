@@ -83,7 +83,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         title: const Text('Delete your account?'),
         content: const Text(
           'This permanently deletes your account and everything in it: '
-          'stashes, reviews, favourites, follows, comments and '
+          'collections, reviews, favourites, follows, comments and '
           'contributions. It cannot be undone.',
         ),
         actions: [

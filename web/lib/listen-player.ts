@@ -125,6 +125,7 @@ export function authorsText(authors: string[]): string {
 
 /** "Source title · Author", for the player and the lock screen. */
 export function sourceLine(card: Card): string {
+  if (card.author) return `by ${card.author.display_name}`;
   const by = authorsText(card.source.authors);
   return by ? `${card.source.title} · ${by}` : card.source.title;
 }
@@ -138,9 +139,13 @@ export function listenText(card: Card): string {
   return [
     card.title,
     ...paragraphs(card.body),
-    `Apply it. ${card.apply_it}`,
+    card.apply_it?.trim() ? `Apply it. ${card.apply_it}` : "",
     card.disclaimer ?? "",
-    by ? `From ${card.source.title}, by ${by}.` : `From ${card.source.title}.`,
+    card.author
+      ? `By ${card.author.display_name}.`
+      : by
+        ? `From ${card.source.title}, by ${by}.`
+        : `From ${card.source.title}.`,
   ]
     .map((p) => p.trim())
     .filter(Boolean)

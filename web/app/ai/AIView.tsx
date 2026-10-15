@@ -24,7 +24,7 @@ export function AIView({ topup = null }: { topup?: string | null }) {
       <h1 className="mt-1 font-serif text-4xl font-semibold tracking-tight">Reborn AI</h1>
       <p className="mt-2 text-muted">
         Talk or type to think ideas through. Reborn AI draws on the library and links every card it uses, can save cards to
-        your stashes, and can make charts, sketches and pictures. It isn&apos;t medical, legal or financial advice.
+        your collections, and can make charts, sketches and pictures. It isn&apos;t medical, legal or financial advice.
       </p>
       <div className="mt-8">
         <RequireAuth message="Sign in to use Reborn AI.">

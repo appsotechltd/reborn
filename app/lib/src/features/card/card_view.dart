@@ -10,6 +10,7 @@ import '../post/share.dart';
 import '../stashes/stash_picker.dart';
 import '../../theme.dart';
 import 'explainer_player.dart';
+import 'illustrated_video_player.dart';
 
 const kHealthDisclaimerFallback =
     'This is general information, not medical advice.';
@@ -70,7 +71,9 @@ class IdeaCardView extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // The picture tops the card; a video card has its video instead.
-          if (card.image != null && card.explainer == null) ...[
+          if (card.image != null &&
+              card.explainer == null &&
+              (card.video == null || !showVideo)) ...[
             CardPicture(image: card.image!),
             const SizedBox(height: 6),
             Text(
@@ -113,6 +116,16 @@ class IdeaCardView extends ConsumerWidget {
             ),
             const SizedBox(height: 10),
           ],
+          if (card.video != null && card.explainer == null && showVideo) ...[
+            const SizedBox(height: 4),
+            Center(
+              child: IllustratedVideoPlayer(
+                video: card.video!,
+                title: card.title,
+              ),
+            ),
+            const SizedBox(height: 10),
+          ],
           ?byline,
           // The health or support note comes before the reading, so it's
           // seen first.
@@ -128,8 +141,11 @@ class IdeaCardView extends ConsumerWidget {
             ),
           if (card.quote != null && card.quote!.trim().isNotEmpty)
             _QuoteBlock(quote: card.quote!, locator: card.locator),
-          const SizedBox(height: 8),
-          _ApplyIt(text: card.applyIt),
+          // Members' own cards may have no "Apply it" step.
+          if (card.applyIt.trim().isNotEmpty) ...[
+            const SizedBox(height: 8),
+            _ApplyIt(text: card.applyIt),
+          ],
           if (showActions) ...[
             const SizedBox(height: 16),
             _CardActions(card: card, showShare: showShare),
@@ -373,7 +389,7 @@ class _CardActions extends ConsumerWidget {
         OutlinedButton.icon(
           onPressed: () => showStashPicker(context, ref, card),
           icon: const Icon(Icons.bookmark_add_outlined),
-          label: const Text('Stash'),
+          label: const Text('Save'),
         ),
         if (showShare)
           Builder(
@@ -414,9 +430,11 @@ String shareText(IdeaCard card) {
       ..writeln()
       ..writeln(displayQuote(card.quote!));
   }
-  b
-    ..writeln()
-    ..writeln('Apply it: ${card.applyIt}');
+  if (card.applyIt.trim().isNotEmpty) {
+    b
+      ..writeln()
+      ..writeln('Apply it: ${card.applyIt}');
+  }
   if (card.disclaimer != null) {
     b
       ..writeln()

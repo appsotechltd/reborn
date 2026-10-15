@@ -52,9 +52,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               final quizCards = cards.where((c) => c.quiz != null).toList();
               if (quizCards.isEmpty) {
                 return const Center(
-                  child: Text(
-                    'No quiz questions yet. Stash a few ideas first.',
-                  ),
+                  child: Text('No quiz questions yet. Save a few ideas first.'),
                 );
               }
               if (_index >= quizCards.length) {

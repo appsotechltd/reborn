@@ -71,7 +71,12 @@ class _GiftSheetState extends ConsumerState<GiftSheet> {
       Navigator.pop(context);
       messenger.showSnackBar(
         SnackBar(
-          content: Text('Thank you! Your ${tier.name} gift supports Reborn.'),
+          content: Text(
+            widget.post.card.author == null
+                ? 'Thank you! Your ${tier.name} gift supports Reborn.'
+                : 'Thank you! Your ${tier.name} gift is on its way to '
+                      '${widget.post.card.author!.name}.',
+          ),
         ),
       );
     } on GiftCancelled {
@@ -89,6 +94,7 @@ class _GiftSheetState extends ConsumerState<GiftSheet> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final tiers = ref.watch(giftTiersProvider);
+    final writer = widget.post.card.author;
     return SafeArea(
       child: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
@@ -108,7 +114,14 @@ class _GiftSheetState extends ConsumerState<GiftSheet> {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(kGiftExplainer, style: theme.textTheme.bodyMedium),
+              Text(
+                writer == null
+                    ? kGiftExplainer
+                    : 'Your gift goes to ${writer.name}, who wrote this card. '
+                          'Reborn keeps a share to cover costs.',
+                key: const ValueKey('gift-explainer'),
+                style: theme.textTheme.bodyMedium,
+              ),
               const SizedBox(height: 16),
               tiers.when(
                 loading: () => const Padding(

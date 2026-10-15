@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [
         "/stashes",
+        "/me",
         "/review",
         "/quiz",
         "/ask",

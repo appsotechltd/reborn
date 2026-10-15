@@ -41,14 +41,15 @@ Future<String?> askStashName(
   ).then((v) => (v == null || v.isEmpty) ? null : v);
 }
 
-/// Your stashes. On expanded windows the open stash shows on the right.
+/// Your stashes, shown as "Collections". On expanded windows the open one
+/// shows on the right.
 class StashesScreen extends ConsumerWidget {
   const StashesScreen({super.key});
 
   static const pane = 'stashes';
 
   Future<void> _create(BuildContext context, WidgetRef ref) async {
-    final name = await askStashName(context, title: 'New stash');
+    final name = await askStashName(context, title: 'New collection');
     if (name == null) return;
     try {
       await ref.read(repositoryProvider).createStash(name);
@@ -73,8 +74,8 @@ class StashesScreen extends ConsumerWidget {
       empty: EmptyDetail(
         icon: Icons.bookmarks_outlined,
         text: signedIn
-            ? 'Pick a stash to see its ideas here.'
-            : 'Your stashes show up here once you sign in.',
+            ? 'Pick a collection to see its ideas here.'
+            : 'Your collections show up here once you sign in.',
       ),
     );
   }
@@ -82,7 +83,7 @@ class StashesScreen extends ConsumerWidget {
   Widget _list(BuildContext context, WidgetRef ref, bool signedIn) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stashes'),
+        title: const Text('Collections'),
         actions: const [
           NotificationBell(),
           ProfileMenuButton(),
@@ -93,14 +94,14 @@ class StashesScreen extends ConsumerWidget {
           ? FloatingActionButton.extended(
               onPressed: () => _create(context, ref),
               icon: const Icon(Icons.add),
-              label: const Text('New stash'),
+              label: const Text('New collection'),
             )
           : null,
       body: !signedIn
           ? const SignInPrompt(
               icon: Icons.bookmarks_outlined,
               title: 'Keep the ideas you love',
-              message: 'Sign in to stash ideas into collections. Stashed ideas are saved for offline reading.',
+              message: 'Sign in to save ideas into collections. Saved ideas can be read offline.',
             )
           : ref
                 .watch(stashesProvider)
@@ -115,7 +116,7 @@ class StashesScreen extends ConsumerWidget {
                           child: Padding(
                             padding: EdgeInsets.all(24),
                             child: Text(
-                              'No stashes yet. Tap Stash on any idea, or create one here.',
+                              'No collections yet. Tap Save on any idea, or create one here.',
                               textAlign: TextAlign.center,
                             ),
                           ),
@@ -189,7 +190,7 @@ class StashMenu extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return PopupMenuButton<String>(
-      tooltip: 'Stash options',
+      tooltip: 'Collection options',
       onSelected: (v) async {
         final messenger = ScaffoldMessenger.of(context);
         final repo = ref.read(repositoryProvider);
@@ -198,7 +199,7 @@ class StashMenu extends ConsumerWidget {
             final name = await askStashName(
               context,
               initial: stash.name,
-              title: 'Rename stash',
+              title: 'Rename collection',
             );
             if (name == null) return;
             await repo.renameStash(stash.id, name);
@@ -208,7 +209,7 @@ class StashMenu extends ConsumerWidget {
               builder: (ctx) => AlertDialog(
                 title: Text('Delete “${stash.name}”?'),
                 content: const Text(
-                  'The ideas stay in the library; only this stash is removed.',
+                  'The ideas stay in the library; only this collection is removed.',
                 ),
                 actions: [
                   TextButton(

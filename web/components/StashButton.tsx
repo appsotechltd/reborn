@@ -6,7 +6,7 @@ import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import type { Stash } from "@/lib/types";
 
-/** "Stash" a card: pick an existing stash or create one. Prompts sign-in when signed out. */
+/** "Save" a card to a collection (stashes in the API): pick one or create one. Prompts sign-in when signed out. */
 export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: string }) {
   const { ready, user, api } = useAuth();
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -19,7 +19,7 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
   if (!ready) {
     return (
       <button type="button" className="btn btn-small" disabled>
-        Stash
+        Save
       </button>
     );
   }
@@ -27,8 +27,8 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
   if (!user) {
     return (
       <Link href={`/signin?next=${encodeURIComponent(`/ideas/${cardId}`)}`} className="btn btn-small">
-        <span aria-hidden="true">＋</span> Stash
-        <span className="sr-only"> (sign in to save this idea)</span>
+        <span aria-hidden="true">＋</span> Save
+        <span className="sr-only"> to a collection (sign in to save this idea)</span>
       </Link>
     );
   }
@@ -40,7 +40,7 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
       const res = await api.stashes();
       setStashes(res.stashes);
     } catch (err) {
-      setError(isApiError(err) ? err.message : "Couldn't load your stashes.");
+      setError(isApiError(err) ? err.message : "Couldn't load your collections.");
       setStashes([]);
     }
   }
@@ -71,7 +71,7 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
       setSaved((s) => new Set(s).add(stash.id));
       setNewName("");
     } catch (err) {
-      setError(isApiError(err) ? err.message : "Couldn't create the stash.");
+      setError(isApiError(err) ? err.message : "Couldn't create the collection.");
     } finally {
       setBusy(null);
     }
@@ -80,7 +80,8 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
   return (
     <>
       <button type="button" className="btn btn-small" onClick={open} aria-haspopup="dialog">
-        <span aria-hidden="true">＋</span> Stash
+        <span aria-hidden="true">＋</span> Save
+        <span className="sr-only"> to a collection</span>
       </button>
       <dialog
         ref={dialogRef}
@@ -92,16 +93,16 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
       >
         <div className="p-5">
           <h2 id={`stash-${cardId}-title`} className="font-serif text-xl font-semibold">
-            Stash this idea
+            Save to collection
           </h2>
-          <p className="mt-1 text-sm text-muted">“{cardTitle}”. Stashed ideas also go into your review.</p>
+          <p className="mt-1 text-sm text-muted">“{cardTitle}”. Saved ideas also go into your review.</p>
 
           {stashes === null ? (
             <p role="status" className="mt-4 text-muted">
-              Loading your stashes…
+              Loading your collections…
             </p>
           ) : stashes.length === 0 ? (
-            <p className="mt-4 text-muted">You don&apos;t have any stashes yet. Create your first one below.</p>
+            <p className="mt-4 text-muted">You don&apos;t have any collections yet. Create your first one below.</p>
           ) : (
             <ul className="mt-4 max-h-64 divide-y divide-line overflow-y-auto rounded-lg border border-line">
               {stashes.map((s) => (
@@ -134,12 +135,12 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
 
           <form onSubmit={create} className="mt-4 flex gap-2">
             <label htmlFor={`stash-${cardId}-new`} className="sr-only">
-              New stash name
+              New collection name
             </label>
             <input
               id={`stash-${cardId}-new`}
               className="field"
-              placeholder="New stash, e.g. Morning reads"
+              placeholder="New collection, e.g. Morning reads"
               value={newName}
               maxLength={80}
               onChange={(e) => setNewName(e.target.value)}
@@ -157,7 +158,7 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
 
           <div className="mt-5 flex justify-between gap-2">
             <Link href="/stashes" className="link self-center text-sm">
-              Manage stashes
+              Manage collections
             </Link>
             <button type="button" className="btn" onClick={() => dialogRef.current?.close()}>
               Done

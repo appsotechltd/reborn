@@ -314,7 +314,7 @@ function DeleteAccount() {
     <section aria-labelledby="delete-title" className="mt-16 rounded-xl border border-bad p-5">
       <h2 id="delete-title" className="font-serif text-xl font-semibold text-bad">Delete account</h2>
       <p className="mt-2 text-sm">
-        This permanently deletes your account and everything it owns: stashes, reviews, favourites, follows, reactions
+        This permanently deletes your account and everything it owns: cards, collections, reviews, favourites, follows, reactions
         and comments. It can&apos;t be undone.
       </p>
       <form onSubmit={remove} className="mt-4">

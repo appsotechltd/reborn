@@ -25,9 +25,9 @@ describe("<TabBar>", () => {
     expect(nav.className).toContain("md:hidden");
     expect(nav.className).toContain("fixed");
     const links = within(nav).getAllByRole("link");
-    expect(links.map((l) => l.textContent)).toEqual(["Home", "Discover", "Stashes", "Review", "Ask"]);
+    expect(links.map((l) => l.textContent)).toEqual(["Home", "Discover", "Collections", "Review", "Ask"]);
     expect(links.map((l) => l.getAttribute("href"))).toEqual(["/", "/discover", "/stashes", "/review", "/ask"]);
-    expect(within(nav).getByRole("link", { name: "Stashes" }).getAttribute("aria-current")).toBe("page");
+    expect(within(nav).getByRole("link", { name: "Collections" }).getAttribute("aria-current")).toBe("page");
     expect(within(nav).getByRole("link", { name: "Home" }).getAttribute("aria-current")).toBeNull();
   });
 

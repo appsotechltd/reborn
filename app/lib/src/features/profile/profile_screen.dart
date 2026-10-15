@@ -121,6 +121,18 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   ),
                 const StreakCard(),
                 ListTile(
+                  leading: const Icon(Icons.edit_note),
+                  title: const Text('My cards'),
+                  subtitle: const Text('Write ideas in your own words'),
+                  onTap: () => context.push('/me/cards'),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.savings_outlined),
+                  title: const Text('Earnings'),
+                  subtitle: const Text('Gifts, subscribers and your plan'),
+                  onTap: () => context.push('/me/earnings'),
+                ),
+                ListTile(
                   leading: const Icon(Icons.favorite_border),
                   title: const Text('Favourites'),
                   onTap: () => context.push('/favorites'),

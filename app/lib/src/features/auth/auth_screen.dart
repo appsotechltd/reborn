@@ -98,7 +98,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     const SizedBox(height: 4),
                     Text(
                       register
-                          ? 'Stash ideas, review them and ask the library.'
+                          ? 'Save ideas, review them and ask the library.'
                           : 'Welcome back.',
                       textAlign: TextAlign.center,
                     ),

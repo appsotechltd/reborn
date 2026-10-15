@@ -18,7 +18,7 @@ class PublicStashScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         leading: exitLeading(context),
-        title: Text(stash.value?.stash.name ?? 'Stash'),
+        title: Text(stash.value?.stash.name ?? 'Collection'),
         actions: [
           if (stash.value?.stash case final s?)
             ShareLinkButton(

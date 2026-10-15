@@ -15,18 +15,18 @@ export function StashDetail({ id, publicHref }: { id: string; publicHref?: strin
     <div className="mx-auto max-w-read">
       <p>
         <Link href="/stashes" className="link text-sm">
-          ← All stashes
+          ← All collections
         </Link>
       </p>
       <div className="mt-4">
-        <RequireAuth message="Stashes are private to the account that made them. Sign in to open this one.">
+        <RequireAuth message="Collections are private to the account that made them. Sign in to open this one.">
           <StashBody id={id} />
         </RequireAuth>
         {ready && !user && publicHref ? (
           <p className="mt-4 text-center text-sm text-muted">
             Its owner has shared it.{" "}
             <Link href={publicHref} className="link">
-              Read the public stash
+              Read the public collection
             </Link>
           </p>
         ) : null}
@@ -50,12 +50,12 @@ function StashBody({ id }: { id: string }) {
   if (status === 404) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-semibold">Stash not found</h1>
+        <h1 className="font-serif text-3xl font-semibold">Collection not found</h1>
         <p className="mt-2 text-muted">It may have been deleted.</p>
       </div>
     );
   }
-  if (error || !data) return <ErrorNote error={error ?? "Couldn't load this stash."} />;
+  if (error || !data) return <ErrorNote error={error ?? "Couldn't load this collection."} />;
 
   const { stash, cards } = data;
 
@@ -77,7 +77,7 @@ function StashBody({ id }: { id: string }) {
       const updated = await api.updateStash(stash.id, { name: name.trim(), description: description.trim() });
       setData((d) => ({ stash: updated, cards: d?.cards ?? [] }));
       setEditing(false);
-    }, "Couldn't rename the stash.");
+    }, "Couldn't rename the collection.");
   };
 
   const togglePublic = (on: boolean) =>
@@ -90,14 +90,14 @@ function StashBody({ id }: { id: string }) {
         setData((d) => ({ stash: { ...stash, is_public: !on }, cards: d?.cards ?? [] }));
         throw err;
       }
-    }, "Couldn't change who can see this stash.");
+    }, "Couldn't change who can see this collection.");
 
   const remove = () => {
     if (!window.confirm(`Delete “${stash.name}”? The ideas stay in the library.`)) return;
     return act(async () => {
       await api.deleteStash(stash.id);
       router.push("/stashes");
-    }, "Couldn't delete the stash.");
+    }, "Couldn't delete the collection.");
   };
 
   const removeCard = (card: Card) =>
@@ -164,7 +164,7 @@ function StashBody({ id }: { id: string }) {
               Rename
             </button>
             <button type="button" className="btn btn-small" onClick={remove} disabled={busy}>
-              Delete stash
+              Delete collection
             </button>
           </div>
           <div className="panel mt-4 flex flex-wrap items-center justify-between gap-3 p-4">
@@ -179,7 +179,7 @@ function StashBody({ id }: { id: string }) {
               <span>
                 <span className="font-semibold">Public</span>
                 <span className="block text-sm text-muted">
-                  {stash.is_public ? "Anyone with the link can see it, and it shows on your profile." : "Only you can see this stash."}
+                  {stash.is_public ? "Anyone with the link can see it, and it shows on your profile." : "Only you can see this collection."}
                 </span>
               </span>
             </label>
@@ -199,7 +199,7 @@ function StashBody({ id }: { id: string }) {
         </h2>
         {cards.length === 0 ? (
           <p className="mt-3 text-muted">
-            Nothing here yet. Open any idea and press <strong>Stash</strong> to add it.
+            Nothing here yet. Open any idea and press <strong>Save</strong> to add it.
           </p>
         ) : (
           <ul className="mt-4 grid gap-3">

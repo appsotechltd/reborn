@@ -7,6 +7,7 @@ import { CardPicture } from "./CardPicture";
 import { ExplainerVideo } from "./ExplainerVideo";
 import { FitBody } from "./FitBody";
 import { Icon } from "./Icon";
+import { IllustratedVideo } from "./IllustratedVideo";
 
 interface CardViewProps {
   card: Card;
@@ -52,7 +53,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
   // The phone feed's preview. Everything it leaves out is only hidden below md, so tablets and
   // desktops still get the full card; the card's own page has it all.
   const preview = feed && titleHref ? titleHref : null;
-  const video = !!card.explainer;
+  const video = !!card.explainer || !!card.video?.scenes?.length;
   const phoneOnly = preview ? "max-md:hidden" : "";
   return (
     <article
@@ -83,22 +84,33 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
           card.title
         )}
       </Heading>
-      {/* Source and authors in amber, as in the app: "Meditations · Marcus Aurelius". */}
+      {/* Source and authors in amber, as in the app: "Meditations · Marcus Aurelius". A member's own card reads "by <name>", linked to their page. */}
       <p className={`mt-2 text-sm text-muted ${preview ? "max-md:shrink-0 max-md:text-[0.8125rem]" : ""}`} data-testid="card-byline">
-        <span className="sr-only">From </span>
-        <Link href={`/sources/${card.source.id}`} className="font-semibold text-accent-text hover:underline">
-          {card.source.title}
-        </Link>
-        {card.source.authors.map((name, i) => (
-          <span key={name}>
-            <span aria-hidden="true"> · </span>
-            {i === 0 ? <span className="sr-only"> by </span> : <span className="sr-only">, </span>}
-            <Link href={authorHref(name)} className="font-semibold text-accent-text hover:underline">
-              {name}
+        {card.author ? (
+          <>
+            by{" "}
+            <Link href={`/u/${card.author.handle}`} className="font-semibold text-accent-text hover:underline">
+              {card.author.display_name}
             </Link>
-          </span>
-        ))}
-        {card.locator ? <span className={preview ? "max-md:hidden" : undefined}> · {card.locator}</span> : null}
+          </>
+        ) : (
+          <>
+            <span className="sr-only">From </span>
+            <Link href={`/sources/${card.source.id}`} className="font-semibold text-accent-text hover:underline">
+              {card.source.title}
+            </Link>
+            {card.source.authors.map((name, i) => (
+              <span key={name}>
+                <span aria-hidden="true"> · </span>
+                {i === 0 ? <span className="sr-only"> by </span> : <span className="sr-only">, </span>}
+                <Link href={authorHref(name)} className="font-semibold text-accent-text hover:underline">
+                  {name}
+                </Link>
+              </span>
+            ))}
+            {card.locator ? <span className={preview ? "max-md:hidden" : undefined}> · {card.locator}</span> : null}
+          </>
+        )}
       </p>
 
       {actions ? <div className="mt-4 flex flex-wrap gap-2">{actions}</div> : null}
@@ -120,6 +132,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
       ) : null}
 
       {card.explainer ? <ExplainerVideo card={card} feed={feed} /> : null}
+      {!card.explainer && card.video?.scenes?.length ? <IllustratedVideo video={card.video} title={card.title} feed={feed} /> : null}
 
       {preview && !video ? (
         // As much as fits above "Read more", clipped (never scrolled): whole lines ending in "…"
@@ -158,13 +171,16 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         </figure>
       ) : null}
 
-      <section
-        aria-label="Apply it"
-        className={`mt-8 rounded-inset bg-surface-2 px-5 py-4 ${phoneOnly}`}
-      >
-        <Sub className="eyebrow">Apply it</Sub>
-        <p className="mt-1 text-lg leading-relaxed">{card.apply_it}</p>
-      </section>
+      {/* Optional on members' own cards. */}
+      {card.apply_it?.trim() ? (
+        <section
+          aria-label="Apply it"
+          className={`mt-8 rounded-inset bg-surface-2 px-5 py-4 ${phoneOnly}`}
+        >
+          <Sub className="eyebrow">Apply it</Sub>
+          <p className="mt-1 text-lg leading-relaxed">{card.apply_it}</p>
+        </section>
+      ) : null}
 
       {children}
 

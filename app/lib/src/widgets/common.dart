@@ -264,7 +264,8 @@ class CardTile extends ConsumerWidget {
       subtitle: Padding(
         padding: const EdgeInsets.only(top: 4),
         child: Text(
-          '${names[card.topic] ?? card.topic} · ${card.source.title}',
+          '${names[card.topic] ?? card.topic} · '
+          '${card.author != null ? 'by ${card.author!.name}' : card.source.title}',
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
@@ -327,6 +328,14 @@ class ProfileMenuButton extends ConsumerWidget {
           const PopupMenuItem(
             value: '/following',
             child: _MenuRow(Icons.people_outline, 'Following'),
+          ),
+          const PopupMenuItem(
+            value: '/me/cards',
+            child: _MenuRow(Icons.edit_note, 'My cards'),
+          ),
+          const PopupMenuItem(
+            value: '/me/earnings',
+            child: _MenuRow(Icons.savings_outlined, 'Earnings'),
           ),
           const PopupMenuItem(
             value: '/circles',

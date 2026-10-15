@@ -18,7 +18,7 @@ class _Dest {
 const _destinations = [
   _Dest('Home', Icons.home_outlined, Icons.home),
   _Dest('Discover', Icons.explore_outlined, Icons.explore),
-  _Dest('Stashes', Icons.bookmarks_outlined, Icons.bookmarks),
+  _Dest('Collections', Icons.bookmarks_outlined, Icons.bookmarks),
   _Dest('Review', Icons.refresh_outlined, Icons.refresh),
   _Dest('Ask', Icons.forum_outlined, Icons.forum),
 ];
