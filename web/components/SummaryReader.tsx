@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type TouchEvent } from "react";
 import { useAuth } from "@/lib/auth";
-import { useListenFollow } from "@/lib/listen";
+import { useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromCards } from "@/lib/listen-player";
+import { smoothScroll } from "@/lib/use-snap-feed";
 import { localProgress, resumeIndex, saveLocalProgress, summaryHref } from "@/lib/summaries";
 import type { SummaryDetail } from "@/lib/types";
 import { CardView } from "./CardView";
@@ -109,6 +110,14 @@ export function SummaryReader({
     },
     [api, index, last, parts, token],
   );
+
+  // The audio moving on to another part turns to it (or, on the long page, scrolls to it).
+  useListenMove((item) => {
+    const i = parts.findIndex((c) => c.id === item.card.id);
+    if (i < 0 || !ready) return;
+    if (view === "all") allRef.current?.querySelector(`[data-part="${i}"]`)?.scrollIntoView({ block: "start", behavior: smoothScroll() });
+    else go(i);
+  });
 
   // On the long page, the furthest part scrolled into view is the place.
   useEffect(() => {

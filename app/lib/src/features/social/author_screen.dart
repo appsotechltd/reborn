@@ -112,6 +112,8 @@ class AuthorScreen extends ConsumerWidget {
           ];
           return ListenFollow(
             target: listen,
+            onMove: (p) => openListenCard(context, p),
+            catchUp: false,
             child: ListView.builder(
               itemCount: before.length + shown.length + 1,
               itemBuilder: (context, i) {

@@ -1,19 +1,25 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useHydrated } from "@/lib/auth";
-import { useListen, useListenFollowCard } from "@/lib/listen";
+import { useListen, useListenFollowCard, useListenMove } from "@/lib/listen";
 import type { Card } from "@/lib/types";
 import { Icon } from "./Icon";
 
 /**
  * Plays this one card in Listen mode: its recording when it has one, else the browser's own voice
  * reading the same text. Pressing it again pauses or resumes. Hidden when neither can play here.
- * It sits on the card's page, so while a session is on, opening the page switches it to this card.
+ * It sits on the card's page, so while a session is on, opening the page switches it to this card,
+ * and when the audio moves on to another card, that card's page opens in place of this one.
  */
 export function ListenButton({ card }: { card: Card }) {
   const hydrated = useHydrated();
+  const router = useRouter();
   const { player, state } = useListen();
   useListenFollowCard(card);
+  useListenMove((item) => {
+    if (item.card.id !== card.id) router.replace(`/ideas/${encodeURIComponent(item.card.id)}`);
+  });
   if (!hydrated || !player || !player.canPlay(card)) return null;
 
   const current = state.active && state.items[state.index]?.id === card.id && state.phase !== "finished";

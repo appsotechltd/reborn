@@ -87,6 +87,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
   /// page, once it has rested for [kListenFollowAfter].
   String? _listenOn;
   Timer? _listenTimer;
+  final _swipeKey = GlobalKey<_SwipeFeedState>();
 
   @override
   void initState() {
@@ -225,6 +226,24 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     );
   }
 
+  /// The audio moved on to post [id]: the feed scrolls to it, if loaded.
+  void _showPost(TimelineState state, String id, bool swipe) {
+    final i = state.posts.indexWhere((p) => p.id == id);
+    if (i < 0) return;
+    if (swipe) {
+      _swipeKey.currentState?.showPage(i);
+      return;
+    }
+    final probe = _probes[id];
+    if (probe != null && probe.mounted) {
+      Scrollable.ensureVisible(
+        probe,
+        duration: const Duration(milliseconds: 350),
+        curve: Curves.easeOutCubic,
+      );
+    }
+  }
+
   /// Starts Listen mode from the post on screen (or the top of the feed),
   /// with the feed's topic filter, and opens the player.
   void _listen() {
@@ -330,6 +349,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
                   _skipSeen(state);
                   final feed = swipe
                       ? _SwipeFeed(
+                          key: _swipeKey,
                           state: state,
                           signedIn: signedIn,
                           tracker: _tracker,
@@ -347,6 +367,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
                       : _wide(state, signedIn, size);
                   return ListenFollow(
                     target: _listenTarget(state, swipe),
+                    onMove: (p) => _showPost(state, p.id, swipe),
                     child: feed,
                   );
                 },
@@ -529,6 +550,7 @@ class _SidePanel extends ConsumerWidget {
 /// rules, and its video (if any) is the one that plays.
 class _SwipeFeed extends StatefulWidget {
   const _SwipeFeed({
+    super.key,
     required this.state,
     required this.signedIn,
     required this.tracker,
@@ -616,6 +638,16 @@ class _SwipeFeedState extends State<_SwipeFeed> {
     widget.onPage?.call(index);
     _sync();
     setState(() {}); // page position semantics
+  }
+
+  /// Turns to page [index] (the post the audio moved on to).
+  void showPage(int index) {
+    if (!_pages.hasClients || index == _page || index >= _posts.length) return;
+    _pages.animateToPage(
+      index,
+      duration: const Duration(milliseconds: 320),
+      curve: Curves.easeOutCubic,
+    );
   }
 
   /// Moves exactly one page; used by the keys.

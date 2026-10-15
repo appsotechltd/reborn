@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ListenButton, ListenIconButton } from "@/components/ListenButton";
+import { CardsBrowser } from "@/components/CardsBrowser";
 import { ListenDock } from "@/components/ListenDock";
 import { Timeline } from "@/components/Timeline";
 import { AuthProvider } from "@/lib/auth";
@@ -9,8 +10,9 @@ import { ListenProvider } from "@/lib/listen";
 import { isListeningPlaying, setListeningPlaying, videoStarted } from "@/lib/media-focus";
 import { makeCard, makePost } from "./fixtures";
 
+const router = vi.hoisted(() => ({ push: vi.fn(), replace: vi.fn() }));
 vi.mock("next/navigation", () => ({
-  useRouter: () => ({ push: vi.fn() }),
+  useRouter: () => router,
   usePathname: () => "/",
 }));
 
@@ -37,6 +39,8 @@ describe("Listen mode on the web", () => {
     vi.spyOn(HTMLMediaElement.prototype, "play").mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {});
     vi.spyOn(HTMLMediaElement.prototype, "load").mockImplementation(() => {});
+    // jsdom doesn't scroll.
+    Element.prototype.scrollIntoView = vi.fn();
     vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify({ posts: [], next_cursor: null }))));
   });
   afterEach(() => {
@@ -76,6 +80,26 @@ describe("Listen mode on the web", () => {
     fireEvent.click(within(sheet).getByRole("button", { name: "Stop listening" }));
     expect(screen.queryByRole("region", { name: "Listen mode" })).toBeNull();
     expect(screen.getByRole("button", { name: "Listen" })).toBeTruthy();
+  });
+
+  it("opens the card the audio moves on to", () => {
+    router.push.mockClear();
+    router.replace.mockClear();
+    render(
+      <App>
+        <CardsBrowser cards={[voiced(1), voiced(2)]} queue="source:example-book" listenLabel="Listen to this book" context="from this book" />
+        <ListenButton card={voiced(1)} />
+      </App>,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Listen to this book" }));
+    // Starting opens nothing.
+    expect(router.push).not.toHaveBeenCalled();
+    expect(router.replace).not.toHaveBeenCalled();
+    const bar = screen.getByRole("region", { name: "Listen mode" });
+    fireEvent.click(within(bar).getByRole("button", { name: "Next idea" }));
+    // The book's page opens the card; a card's page swaps itself for it.
+    expect(router.push).toHaveBeenCalledWith("/ideas/example-book--02");
+    expect(router.replace).toHaveBeenCalledWith("/ideas/example-book--02");
   });
 
   it("hides the card's Listen button when nothing here can read it", () => {
@@ -122,6 +146,10 @@ describe("Listen mode on the web", () => {
     expect(within(bar).getByText("Idea 1")).toBeTruthy();
     fireEvent.click(within(bar).getByRole("button", { name: "Next idea" }));
     expect(within(bar).getByText("Idea 2")).toBeTruthy();
+    // The feed scrolls to the post now playing.
+    const list = screen.getByRole("list", { name: "Timeline" });
+    expect(Element.prototype.scrollIntoView).toHaveBeenCalledTimes(1);
+    expect(vi.mocked(Element.prototype.scrollIntoView).mock.contexts[0]).toBe(list.children[1]);
   });
 
   it("plays one feed post's card from its Listen button, and pauses it", () => {
