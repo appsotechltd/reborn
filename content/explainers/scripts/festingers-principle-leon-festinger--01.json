@@ -1,0 +1,137 @@
+{
+ "card_id": "festingers-principle-leon-festinger--01",
+ "about": "Photo look (house style for story cards): the spilled-coffee story behind the 90/10 rule.",
+ "theme": "photo",
+ "score": true,
+ "voice": "echo",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A white coffee cup tipping over on a family breakfast table in morning light, coffee splashing mid-air, shallow focus, cinematic."
+    }
+   },
+   "narration": "Ten percent of life is what happens to you. Ninety percent is how you react."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A dark coffee stain spreading across a crisp white business shirt, close up, warm kitchen light."
+    },
+    "beats": [
+     {
+      "word": "shouts",
+      "image": {
+       "prompt": "A man in a stained white shirt standing in a kitchen, arms raised in frustration, seen from behind, a small child's backpack on a chair, morning light."
+      }
+     }
+    ]
+   },
+   "narration": "At breakfast, a child knocks over a cup, and coffee soaks her father's work shirt. He shouts."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A yellow school bus pulling away down a suburban street in the morning, an empty bus stop in the foreground."
+    },
+    "beats": [
+     {
+      "word": "races",
+      "image": {
+       "prompt": "A car speedometer needle climbing past the limit, dashboard glow, motion blur through the windscreen on a city road."
+      }
+     },
+     {
+      "word": "fine",
+      "image": {
+       "prompt": "Blue police lights reflected on a wet car window at the side of a road, morning, no faces."
+      }
+     }
+    ]
+   },
+   "narration": "His daughter cries and misses the school bus. He races to drive her, and gets a speeding fine.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A wall clock in a quiet open-plan office showing a quarter past nine, an empty desk, cold light."
+    },
+    "beats": [
+     {
+      "word": "home",
+      "image": {
+       "prompt": "A dim family kitchen in the evening, an untouched dinner plate on the table, a single lamp, tense quiet mood, no people."
+      }
+     }
+    ]
+   },
+   "narration": "He's late for work, snaps at a colleague, and comes home to a tense, quiet house."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Small dominoes falling in a long curving line on a dark wooden table, macro shot, dramatic side light."
+    },
+    "zoom": "out"
+   },
+   "narration": "The spill took two seconds. Everything after it came from the shouting, not the coffee.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A man in a coffee-stained shirt smiling gently and resting a hand on a young girl's shoulder at a sunny breakfast table, faces softly out of focus."
+    },
+    "beats": [
+     {
+      "word": "waves",
+      "image": {
+       "prompt": "A child's hand waving from the window of a yellow school bus, bright morning sun, shallow focus."
+      }
+     },
+     {
+      "word": "calm",
+      "image": {
+       "prompt": "A man walking into a bright office in the morning holding a coffee, relaxed posture, seen from behind, warm sunlight."
+      }
+     }
+    ]
+   },
+   "narration": "Replay it. Same spill. He breathes, says it's fine, and changes his shirt. She catches the bus and waves. He arrives on time, calm.",
+   "min_seconds": 8
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two paths splitting in a misty forest at sunrise, one dark and one lit by golden light."
+    },
+    "lift": true
+   },
+   "narration": "The event was the same. Only the reaction changed, and it decided the whole day.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A person sitting quietly with eyes closed, taking a slow breath by a window in soft morning light, seen in profile, peaceful."
+    }
+   },
+   "narration": "Next time something goes wrong, say to yourself: that's the ten percent. What's my ninety?",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}
