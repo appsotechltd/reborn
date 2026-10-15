@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../api/api_client.dart';
+import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
+import '../../widgets/polish.dart';
 import 'listen_controller.dart';
 
 /// "1:05".
@@ -111,46 +114,62 @@ class NowListeningScreen extends ConsumerWidget {
     final s = ref.watch(listenProvider);
     final post = s.current;
     final controller = ref.read(listenProvider.notifier);
-    return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          tooltip: 'Close player',
-          icon: const Icon(Icons.keyboard_arrow_down),
-          onPressed: () => context.canPop() ? context.pop() : context.go('/'),
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          stops: const [0, 0.45, 0.8],
+          colors: dark
+              ? const [Color(0xFF3A2410), Color(0xFF1E150D), Color(0xFF14110E)]
+              : const [Color(0xFFF6DDB0), Color(0xFFF4E9DA), Color(0xFFF1EFEA)],
         ),
-        title: const Text('Now listening'),
-        actions: [
-          if (s.active)
-            IconButton(
-              key: const ValueKey('listen-stop'),
-              tooltip: 'Stop listening',
-              icon: const Icon(Icons.stop_circle_outlined),
-              onPressed: () {
-                controller.stop();
-                if (context.canPop()) context.pop();
-              },
-            ),
-          const SizedBox(width: 8),
-        ],
       ),
-      body: post == null
-          ? const Center(
-              child: Padding(
-                padding: EdgeInsets.all(24),
-                child: Text('Nothing is playing.'),
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+            tooltip: 'Close player',
+            icon: const Icon(Icons.keyboard_arrow_down),
+            onPressed: () => context.canPop() ? context.pop() : context.go('/'),
+          ),
+          title: const Text('Now listening'),
+          actions: [
+            if (s.active)
+              IconButton(
+                key: const ValueKey('listen-stop'),
+                tooltip: 'Stop listening',
+                icon: const Icon(Icons.stop_circle_outlined),
+                onPressed: () {
+                  controller.stop();
+                  if (context.canPop()) context.pop();
+                },
               ),
-            )
-          : SafeArea(
-              child: Center(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 520),
-                    child: _NowPlaying(state: s),
+            const SizedBox(width: 8),
+          ],
+        ),
+        extendBodyBehindAppBar: true,
+        backgroundColor: Colors.transparent,
+        body: post == null
+            ? const Center(
+                child: Padding(
+                  padding: EdgeInsets.all(24),
+                  child: Text('Nothing is playing.'),
+                ),
+              )
+            : SafeArea(
+                child: Center(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.fromLTRB(28, 64, 28, 32),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 520),
+                      child: _NowPlaying(state: s),
+                    ),
                   ),
                 ),
               ),
-            ),
+      ),
     );
   }
 }
@@ -176,19 +195,20 @@ class _NowPlaying extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Center(
-          child: Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-              color: c.inset,
-              shape: BoxShape.circle,
-              border: Border.all(color: c.line),
+        // Short screens (a phone on its side) keep the controls in view
+        // and skip the picture.
+        if (MediaQuery.sizeOf(context).height >= 700) ...[
+          Center(
+            child: ListenArtwork(
+              card: card,
+              size: (MediaQuery.sizeOf(context).height * 0.34).clamp(
+                200.0,
+                300.0,
+              ),
             ),
-            child: Icon(Icons.headphones, size: 52, color: c.amberText),
           ),
-        ),
-        const SizedBox(height: 24),
+          const SizedBox(height: 28),
+        ],
         if (topic.isNotEmpty)
           Text(
             topic.toUpperCase(),
@@ -442,6 +462,95 @@ class _SleepButton extends ConsumerWidget {
           ),
           label: Text(label),
         ),
+      ),
+    );
+  }
+}
+
+/// The big square picture on the player: the card's own picture, or a
+/// warm cover with the book's title for cards without one.
+class ListenArtwork extends StatelessWidget {
+  const ListenArtwork({super.key, required this.card, this.size = 300});
+  final IdeaCard card;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    final image = card.image;
+    final (top, bottom) = coverColorsFor(card.source.id);
+    return ExcludeSemantics(
+      child: Container(
+        key: const ValueKey('listen-artwork'),
+        width: size,
+        height: size,
+        clipBehavior: Clip.antiAlias,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(28),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [top, bottom],
+          ),
+          boxShadow: const [
+            BoxShadow(
+              color: Color(0x59E9A23B),
+              offset: Offset(0, 30),
+              blurRadius: 60,
+              spreadRadius: -20,
+            ),
+            BoxShadow(
+              color: Color(0x80000000),
+              offset: Offset(0, 20),
+              blurRadius: 40,
+              spreadRadius: -20,
+            ),
+          ],
+        ),
+        child: image != null
+            ? Image.network(
+                resolveMediaUrl(image.url),
+                fit: BoxFit.cover,
+                errorBuilder: (_, _, _) => const SizedBox.shrink(),
+              )
+            : Padding(
+                padding: EdgeInsets.all(size * 0.08),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Icon(
+                      Icons.local_fire_department_rounded,
+                      color: CandlelightTokens.amber,
+                      size: 30,
+                    ),
+                    const Spacer(),
+                    Text(
+                      card.source.title,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontFamily: kDisplayFont,
+                        fontWeight: FontWeight.w600,
+                        fontSize: size * 0.093,
+                        height: 1.1,
+                        color: const Color(0xFFF3E4CA),
+                      ),
+                    ),
+                    if (card.source.authors.isNotEmpty) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        card.source.authors.join(', '),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontFamily: kBodyFont,
+                          fontSize: 14,
+                          color: Color(0xCCF3E4CA),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
       ),
     );
   }

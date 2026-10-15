@@ -14,6 +14,7 @@ import '../../theme.dart';
 import '../../tv/tv_home.dart';
 import '../../tv/tv_mode.dart';
 import '../../widgets/common.dart';
+import '../../widgets/polish.dart';
 import '../card/video_autoplay.dart';
 import '../daily/daily_screen.dart';
 import '../listen/listen_controller.dart';
@@ -315,19 +316,22 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     });
     return Scaffold(
       appBar: AppBar(
-        title: const Wordmark(),
+        title: const Wordmark(size: 27),
+        titleSpacing: 20,
         actions: [
+          if (swipe) const StreakChip(),
           IconButton(
             key: const ValueKey('listen-feed'),
             tooltip: 'Listen',
-            icon: const Icon(Icons.headphones_outlined),
+            icon: const Icon(Icons.headphones_rounded),
             onPressed: _listen,
           ),
-          IconButton(
-            tooltip: 'Swipe through ideas',
-            icon: const Icon(Icons.swipe_vertical_outlined),
-            onPressed: () => context.push('/feed'),
-          ),
+          if (!swipe)
+            IconButton(
+              tooltip: 'Swipe through ideas',
+              icon: const Icon(Icons.swipe_vertical_outlined),
+              onPressed: () => context.push('/feed'),
+            ),
           const NotificationBell(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
@@ -677,10 +681,9 @@ class _SwipeFeedState extends State<_SwipeFeed> {
   List<Widget> _header(int index) {
     final caughtUp = widget.state.caughtUp;
     return [
-      if (index == 0) ...[
-        const DailyBanner(),
-        if (widget.signedIn) const StreakCard() else const JoinPrompt(),
-      ],
+      // Today's idea and the streak live behind the streak chip in the
+      // top bar, so the first page is just the post.
+      if (index == 0 && !widget.signedIn) const JoinPrompt(),
       if (index == caughtUp) const CaughtUp(),
     ];
   }
@@ -1011,30 +1014,74 @@ class _TopicChips extends ConsumerWidget {
     ];
     final selected = ref.watch(timelineFilterProvider);
     final notifier = ref.read(timelineFilterProvider.notifier);
-    return SizedBox(
-      height: 48,
+    final line = Candlelight.of(context).line;
+    return Container(
+      height: 46,
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      decoration: BoxDecoration(
+        border: Border(bottom: BorderSide(color: line)),
+      ),
       child: ListView(
         scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 12),
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4),
-            child: ChoiceChip(
-              label: const Text('For you'),
-              selected: selected == null,
-              onSelected: (_) => notifier.select(null),
-            ),
+          _TopicTab(
+            label: 'For you',
+            selected: selected == null,
+            onTap: () => notifier.select(null),
           ),
           for (final t in topics)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4),
-              child: ChoiceChip(
-                label: Text(t.name),
-                selected: selected == t.slug,
-                onSelected: (on) => notifier.select(on ? t.slug : null),
-              ),
+            _TopicTab(
+              label: t.name,
+              selected: selected == t.slug,
+              onTap: () => notifier.select(selected == t.slug ? null : t.slug),
             ),
         ],
+      ),
+    );
+  }
+}
+
+/// One feed tab: plain text, the current one in ink over an amber rule.
+class _TopicTab extends StatelessWidget {
+  const _TopicTab({
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final c = Candlelight.of(context);
+    return Semantics(
+      button: true,
+      selected: selected,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: selected ? CandlelightTokens.amber : Colors.transparent,
+                width: 2,
+              ),
+            ),
+          ),
+          child: Text(
+            label,
+            style: theme.textTheme.titleSmall?.copyWith(
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              color: selected ? theme.colorScheme.onSurface : c.muted,
+            ),
+          ),
+        ),
       ),
     );
   }

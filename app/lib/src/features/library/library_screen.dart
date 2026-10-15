@@ -10,6 +10,7 @@ import '../../data/repository.dart';
 import '../../layout/adaptive.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
+import '../../widgets/polish.dart';
 import '../post/share.dart';
 import '../social/author_screen.dart';
 import '../source/source_screen.dart';
@@ -140,7 +141,28 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen>
                   textInputAction: TextInputAction.search,
                   decoration: InputDecoration(
                     hintText: 'Search books and authors',
-                    prefixIcon: const Icon(Icons.search),
+                    filled: true,
+                    fillColor: Theme.of(context).cardColor,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(28),
+                      borderSide: BorderSide(
+                        color: Candlelight.of(context).line,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(28),
+                      borderSide: BorderSide(
+                        color: Candlelight.of(context).line,
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(28),
+                      borderSide: const BorderSide(
+                        color: CandlelightTokens.amber,
+                        width: 1.5,
+                      ),
+                    ),
+                    prefixIcon: const Icon(Icons.search_rounded),
                     suffixIcon: _search.text.isEmpty
                         ? null
                         : IconButton(
@@ -365,9 +387,13 @@ class _BookRow extends ConsumerWidget {
     final topics = [for (final t in source.topics) names[t] ?? t];
     return ListTile(
       key: ValueKey('library-book-${source.id}'),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-      leading: const Icon(Icons.menu_book_outlined),
-      title: Text(source.title),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+      leading: BookCover(id: source.id, title: source.title),
+      title: Text(
+        source.title,
+        style: Theme.of(context).textTheme.titleMedium
+            ?.copyWith(fontFamily: kDisplayFont, fontSize: 17),
+      ),
       subtitle: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -404,9 +430,13 @@ class _AuthorRow extends ConsumerWidget {
     final pick = (kind: 'author', id: a.name);
     return ListTile(
       key: ValueKey('library-author-${a.name}'),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-      leading: const Icon(Icons.history_edu_outlined),
-      title: Text(a.name),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+      leading: PersonAvatar(name: a.name, radius: 22),
+      title: Text(
+        a.name,
+        style: Theme.of(context).textTheme.titleMedium
+            ?.copyWith(fontFamily: kDisplayFont, fontSize: 17),
+      ),
       subtitle: _Counts(
         parts: [
           '${a.sources} ${a.sources == 1 ? 'book' : 'books'}',

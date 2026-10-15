@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reborn/src/features/shell/app_shell.dart';
 import 'package:reborn/src/features/timeline/timeline_screen.dart';
 import 'package:reborn/src/features/card/explainer_player.dart';
 import 'package:reborn/src/layout/adaptive.dart';
@@ -101,7 +102,7 @@ void main() {
     testWidgets('phone: swipe feed and bottom navigation', (tester) async {
       await pumpApp(tester, server(), size: phone);
       expect(find.byKey(const ValueKey('swipe-feed')), findsOneWidget);
-      expect(find.byType(NavigationBar), findsOneWidget);
+      expect(find.byType(FloatingNavBar), findsOneWidget);
       expect(find.byType(NavigationRail), findsNothing);
       expect(find.byKey(const ValueKey('timeline-grid')), findsNothing);
     });

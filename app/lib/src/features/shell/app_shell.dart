@@ -16,11 +16,11 @@ class _Dest {
 }
 
 const _destinations = [
-  _Dest('Home', Icons.home_outlined, Icons.home),
-  _Dest('Discover', Icons.explore_outlined, Icons.explore),
-  _Dest('Collections', Icons.bookmarks_outlined, Icons.bookmarks),
-  _Dest('Review', Icons.refresh_outlined, Icons.refresh),
-  _Dest('Ask', Icons.forum_outlined, Icons.forum),
+  _Dest('Home', Icons.home_outlined, Icons.home_rounded),
+  _Dest('Discover', Icons.explore_outlined, Icons.explore_rounded),
+  _Dest('Collections', Icons.bookmark_border_rounded, Icons.bookmark_rounded),
+  _Dest('Review', Icons.replay_rounded, Icons.replay_rounded),
+  _Dest('Ask', Icons.auto_awesome_outlined, Icons.auto_awesome),
 ];
 
 /// Bottom navigation on phones (compact windows), a navigation rail from
@@ -84,19 +84,128 @@ class AppShell extends ConsumerWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const ListenMiniPlayer(),
-          NavigationBar(
+          FloatingNavBar(
             selectedIndex: navigationShell.currentIndex,
-            onDestinationSelected: _go,
-            destinations: [
-              for (final d in _destinations)
-                NavigationDestination(
-                  icon: Icon(d.icon),
-                  selectedIcon: Icon(d.selectedIcon),
-                  label: d.label,
-                ),
-            ],
+            onSelected: _go,
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// The phone tab bar: a rounded capsule floating over the page's edge,
+/// the current tab in amber with a filled icon.
+class FloatingNavBar extends StatelessWidget {
+  const FloatingNavBar({
+    super.key,
+    required this.selectedIndex,
+    required this.onSelected,
+  });
+
+  final int selectedIndex;
+  final ValueChanged<int> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final c = Candlelight.of(context);
+    final dark = theme.brightness == Brightness.dark;
+    return ColoredBox(
+      color: theme.scaffoldBackgroundColor,
+      child: SafeArea(
+        top: false,
+        minimum: const EdgeInsets.only(bottom: 12),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 6, 16, 0),
+          child: Container(
+            height: 64,
+            decoration: BoxDecoration(
+              color: theme.cardColor,
+              borderRadius: BorderRadius.circular(32),
+              border: Border.all(
+                color: dark ? const Color(0x12F2E8D8) : c.line,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: dark
+                      ? const Color(0x99000000)
+                      : const Color(0x403C280A),
+                  offset: const Offset(0, 10),
+                  blurRadius: 28,
+                  spreadRadius: -14,
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                for (final (i, d) in _destinations.indexed)
+                  Expanded(
+                    child: _NavItem(
+                      dest: d,
+                      selected: i == selectedIndex,
+                      onTap: () => onSelected(i),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _NavItem extends StatelessWidget {
+  const _NavItem({
+    required this.dest,
+    required this.selected,
+    required this.onTap,
+  });
+  final _Dest dest;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Candlelight.of(context);
+    final color = selected ? c.amberText : c.muted;
+    return Semantics(
+      button: true,
+      selected: selected,
+      label: dest.label,
+      excludeSemantics: true,
+      child: InkResponse(
+        key: ValueKey('nav-${dest.label.toLowerCase()}'),
+        onTap: onTap,
+        radius: 30,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 180),
+              child: Icon(
+                selected ? dest.selectedIcon : dest.icon,
+                key: ValueKey(selected),
+                size: 23,
+                color: color,
+              ),
+            ),
+            const SizedBox(height: 3),
+            Text(
+              dest.label,
+              maxLines: 1,
+              overflow: TextOverflow.fade,
+              softWrap: false,
+              style: TextStyle(
+                fontFamily: kBodyFont,
+                fontSize: 11,
+                fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                color: color,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

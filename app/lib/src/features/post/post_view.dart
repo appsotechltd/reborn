@@ -6,11 +6,13 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
+import '../../widgets/polish.dart';
 import '../card/card_view.dart';
 import '../card/explainer_player.dart';
 import '../card/illustrated_video_player.dart';
 import '../gifts/gift_sheet.dart';
 import '../listen/listen_controller.dart';
+import '../stashes/stash_picker.dart';
 import 'post_store.dart';
 import 'share.dart';
 
@@ -80,7 +82,7 @@ class SwipePostPage extends ConsumerWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -89,6 +91,14 @@ class SwipePostPage extends ConsumerWidget {
                   child: Card(
                     margin: EdgeInsets.zero,
                     clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                      side: BorderSide(
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? const Color(0x10F2E8D8)
+                            : Candlelight.of(context).line,
+                      ),
+                    ),
                     child: _FitAtLeast(
                       minHeight: 180,
                       child: PostPreview(post: p),
@@ -99,7 +109,7 @@ class SwipePostPage extends ConsumerWidget {
             ),
           ),
         ),
-        PostActionBar(post: p, listen: true),
+        PostActionBar(post: p),
         ?footer,
       ],
     );
@@ -129,9 +139,11 @@ class _FitAtLeast extends StatelessWidget {
   );
 }
 
-/// The swipe-feed preview of a post: why it's here, topic, title (or the
-/// video sized to fit, title under it), source, the body cut to the lines
-/// that fit, any health note, and "Read more" for the full card.
+/// The swipe-feed preview of a post: a cover (the card's picture, or its
+/// quote on a warm panel) with the topic on it, then why it's here, the
+/// title, source, the body cut to the lines that fit, any health note, and
+/// "Read the idea" beside Listen. A video post shows its video instead of
+/// the cover.
 class PostPreview extends ConsumerWidget {
   const PostPreview({super.key, required this.post});
   final Post post;
@@ -164,31 +176,52 @@ class PostPreview extends ConsumerWidget {
       maxLines: video == null ? 3 : 2,
       overflow: TextOverflow.ellipsis,
       style: video == null
-          ? theme.textTheme.headlineSmall
+          ? theme.textTheme.headlineSmall?.copyWith(
+              fontSize: 25,
+              height: 1.16,
+              letterSpacing: -0.3,
+            )
           : theme.textTheme.titleLarge,
     );
-    final readMore = Align(
-      alignment: Alignment.centerLeft,
-      child: FilledButton.tonalIcon(
-        key: const ValueKey('read-more'),
-        onPressed: () => _open(context),
-        icon: const Icon(Icons.arrow_forward, size: 18),
-        label: Text('Read more', semanticsLabel: 'Read more: ${card.title}'),
-      ),
+    final buttons = Row(
+      children: [
+        Expanded(
+          child: FilledButton(
+            key: const ValueKey('read-more'),
+            onPressed: () => _open(context),
+            style: FilledButton.styleFrom(minimumSize: const Size(0, 46)),
+            child: Text(
+              'Read the idea',
+              semanticsLabel: 'Read more: ${card.title}',
+            ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        _ListenPostButton(card: card),
+      ],
     );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (reason != null) PostReasonLine(reason: reason),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: CategoryTag(topicName),
+        if (video == null)
+          SizedBox(
+            // A quarter of a tall screen; less on a short one.
+            height: (MediaQuery.sizeOf(context).height * 0.25).clamp(
+              110.0,
+              230.0,
+            ),
+            child: PostCover(card: card, topic: topicName),
           ),
-        ),
+        if (reason != null) PostReasonLine(reason: reason),
         if (video != null) ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 14, 20, 0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: CategoryTag(topicName),
+            ),
+          ),
           Flexible(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
@@ -217,14 +250,20 @@ class PostPreview extends ConsumerWidget {
           AuthorByline(card: card),
         ] else ...[
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
             child: title,
           ),
           AuthorByline(card: card),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
-              child: _FittedBody(text: body, style: theme.textTheme.bodyLarge),
+              padding: const EdgeInsets.fromLTRB(20, 6, 20, 0),
+              child: _FittedBody(
+                text: body,
+                style: theme.textTheme.bodyLarge?.copyWith(
+                  fontSize: 16,
+                  height: 1.55,
+                ),
+              ),
             ),
           ),
         ],
@@ -255,13 +294,15 @@ class PostPreview extends ConsumerWidget {
         // The full card always has more than the preview (the "Apply it"
         // step, any quote, the full credit), so a text post always offers
         // it; a video post when there's text to read.
-        if (video == null || body.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(14, 8, 14, 12),
-            child: readMore,
-          )
-        else
-          const SizedBox(height: 12),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 18),
+          child: video == null || body.isNotEmpty
+              ? buttons
+              : Align(
+                  alignment: Alignment.centerLeft,
+                  child: _ListenPostButton(card: card),
+                ),
+        ),
       ],
     );
   }
@@ -443,13 +484,13 @@ class _Link extends StatelessWidget {
   );
 }
 
-/// Reactions with counts, then favourite, comments, share and gift.
+/// Favourite, reactions (one button opening the five), comments, save to
+/// a collection and share, then gift. Counts show only once there are any.
 class PostActionBar extends ConsumerWidget {
   const PostActionBar({super.key, required this.post, this.listen = false});
   final Post post;
 
-  /// Shows a Listen button for the post's card (the swipe feed, whose card
-  /// preview has none of its own).
+  /// Shows a Listen button for the post's card.
   final bool listen;
 
   Future<void> _guard(
@@ -476,114 +517,184 @@ class PostActionBar extends ConsumerWidget {
     final mine = writer != null && me != null && writer.id == me;
     final reportable = writer != null && !mine && !post.isSummary;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Wrap(
-              spacing: 6,
-              runSpacing: 6,
-              children: [
-                for (final r in Reaction.values)
-                  _ReactionChip(
-                    reaction: r,
-                    count: stats.reactions[r.name] ?? 0,
-                    selected: post.myReaction == r,
-                    onTap: () {
-                      if (!ensureSignedIn(context, ref)) return;
-                      _guard(context, () => store.react(post, r));
-                    },
+      padding: const EdgeInsets.fromLTRB(14, 2, 14, 6),
+      child: LayoutBuilder(
+        builder: (context, c) {
+          final narrow = c.maxWidth < (listen ? 400 : 360);
+          // The tablet grid's narrowest columns leave Save to the card page.
+          final tight = c.maxWidth < 320;
+          void gift() {
+            if (!ensureSignedIn(context, ref)) return;
+            showGiftSheet(context, post);
+          }
+
+          return Row(
+            children: [
+              _CountButton(
+                key: const ValueKey('post-favorite'),
+                label: 'Favourite',
+                toggled: post.favorited,
+                tooltip: post.favorited
+                    ? 'Remove from favourites'
+                    : 'Add to favourites',
+                icon: post.favorited
+                    ? Icons.favorite_rounded
+                    : Icons.favorite_border_rounded,
+                color: post.favorited ? Candlelight.of(context).react : null,
+                count: stats.favorites,
+                onPressed: () {
+                  if (!ensureSignedIn(context, ref)) return;
+                  _guard(context, () => store.toggleFavorite(post));
+                },
+              ),
+              _ReactButton(
+                post: post,
+                onReact: (r) {
+                  if (!ensureSignedIn(context, ref)) return;
+                  _guard(context, () => store.react(post, r));
+                },
+              ),
+              _CountButton(
+                key: const ValueKey('post-comments'),
+                label: 'Comments',
+                tooltip: 'Comments',
+                icon: Icons.chat_bubble_outline_rounded,
+                count: stats.comments,
+                onPressed: () => context.push(
+                  '/posts/${Uri.encodeComponent(post.id)}/comments',
+                  extra: post,
+                ),
+              ),
+              if (!post.isSummary && !tight)
+                IconButton(
+                  key: const ValueKey('post-save'),
+                  tooltip: 'Save to a collection',
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  onPressed: () => showStashPicker(context, ref, post.card),
+                  icon: const Icon(Icons.bookmark_border_rounded, size: 22),
+                ),
+              Builder(
+                builder: (context) => _CountButton(
+                  key: const ValueKey('post-share'),
+                  label: 'Share',
+                  tooltip: 'Share',
+                  icon: Icons.ios_share_rounded,
+                  count: stats.shares,
+                  onPressed: () => sharePost(context, ref, post),
+                ),
+              ),
+              if (listen) _ListenPostButton(card: post.card, compact: true),
+              const Spacer(),
+              // In a narrow column (the tablet grid) Gift is just its icon.
+              if (mine)
+                const SizedBox.shrink()
+              else if (narrow)
+                _CountButton(
+                  key: const ValueKey('post-gift'),
+                  label: 'Gift',
+                  tooltip: 'Gift',
+                  icon: Icons.volunteer_activism_outlined,
+                  count: stats.gifts,
+                  onPressed: gift,
+                )
+              else
+                TextButton.icon(
+                  key: const ValueKey('post-gift'),
+                  onPressed: gift,
+                  icon: const Icon(Icons.volunteer_activism_outlined, size: 20),
+                  label: Text(
+                    stats.gifts > 0
+                        ? 'Gift · ${compactCount(stats.gifts)}'
+                        : 'Gift',
                   ),
+                ),
+              if (reportable) _PostMenu(post: post),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+/// One button for the five reactions: your reaction (or a smile) and the
+/// total; tapping opens the five to pick from.
+class _ReactButton extends StatefulWidget {
+  const _ReactButton({required this.post, required this.onReact});
+  final Post post;
+  final ValueChanged<Reaction> onReact;
+
+  @override
+  State<_ReactButton> createState() => _ReactButtonState();
+}
+
+class _ReactButtonState extends State<_ReactButton> {
+  final _menu = MenuController();
+
+  @override
+  Widget build(BuildContext context) {
+    final post = widget.post;
+    final total = post.stats.reactions.values.fold<int>(0, (a, b) => a + b);
+    final mine = post.myReaction;
+    final scheme = Theme.of(context).colorScheme;
+    final react = Candlelight.of(context).react;
+    return MenuAnchor(
+      controller: _menu,
+      alignmentOffset: const Offset(-8, 4),
+      style: MenuStyle(
+        shape: const WidgetStatePropertyAll(StadiumBorder()),
+        padding: const WidgetStatePropertyAll(EdgeInsets.all(6)),
+        backgroundColor: WidgetStatePropertyAll(Theme.of(context).cardColor),
+      ),
+      menuChildren: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            for (final r in Reaction.values)
+              _ReactionChip(
+                reaction: r,
+                count: post.stats.reactions[r.name] ?? 0,
+                selected: mine == r,
+                onTap: () {
+                  _menu.close();
+                  widget.onReact(r);
+                },
+              ),
+          ],
+        ),
+      ],
+      builder: (context, menu, _) => Semantics(
+        button: true,
+        label: mine == null
+            ? 'React, $total'
+            : 'Your reaction: ${mine.label}, $total',
+        excludeSemantics: true,
+        onTap: () => menu.isOpen ? menu.close() : menu.open(),
+        child: Tooltip(
+          message: 'React',
+          child: TextButton(
+            key: const ValueKey('post-react'),
+            onPressed: () => menu.isOpen ? menu.close() : menu.open(),
+            style: TextButton.styleFrom(
+              foregroundColor: mine != null ? react : scheme.onSurfaceVariant,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              minimumSize: const Size(44, 44),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (mine != null)
+                  Text(mine.emoji, style: const TextStyle(fontSize: 18))
+                else
+                  const Icon(Icons.add_reaction_outlined, size: 21),
+                if (total > 0) ...[
+                  const SizedBox(width: 6),
+                  Text(compactCount(total)),
+                ],
               ],
             ),
           ),
-          const SizedBox(height: 4),
-          LayoutBuilder(
-            builder: (context, c) {
-              final narrow = c.maxWidth < (listen ? 390 : 330);
-              void gift() {
-                if (!ensureSignedIn(context, ref)) return;
-                showGiftSheet(context, post);
-              }
-
-              return Row(
-                children: [
-                  _CountButton(
-                    key: const ValueKey('post-favorite'),
-                    label: 'Favourite',
-                    toggled: post.favorited,
-                    tooltip: post.favorited
-                        ? 'Remove from favourites'
-                        : 'Add to favourites',
-                    icon: post.favorited
-                        ? Icons.favorite
-                        : Icons.favorite_border,
-                    color: post.favorited
-                        ? Candlelight.of(context).react
-                        : null,
-                    count: stats.favorites,
-                    onPressed: () {
-                      if (!ensureSignedIn(context, ref)) return;
-                      _guard(context, () => store.toggleFavorite(post));
-                    },
-                  ),
-                  _CountButton(
-                    key: const ValueKey('post-comments'),
-                    label: 'Comments',
-                    tooltip: 'Comments',
-                    icon: Icons.mode_comment_outlined,
-                    count: stats.comments,
-                    onPressed: () => context.push(
-                      '/posts/${Uri.encodeComponent(post.id)}/comments',
-                      extra: post,
-                    ),
-                  ),
-                  Builder(
-                    builder: (context) => _CountButton(
-                      key: const ValueKey('post-share'),
-                      label: 'Share',
-                      tooltip: 'Share',
-                      icon: Icons.ios_share,
-                      count: stats.shares,
-                      onPressed: () => sharePost(context, ref, post),
-                    ),
-                  ),
-                  if (listen) _ListenPostButton(card: post.card),
-                  const Spacer(),
-                  // In a narrow column (the tablet grid) Gift is just its icon.
-                  if (mine)
-                    const SizedBox.shrink()
-                  else if (narrow)
-                    _CountButton(
-                      key: const ValueKey('post-gift'),
-                      label: 'Gift',
-                      tooltip: 'Gift',
-                      icon: Icons.volunteer_activism_outlined,
-                      count: stats.gifts,
-                      onPressed: gift,
-                    )
-                  else
-                    TextButton.icon(
-                      key: const ValueKey('post-gift'),
-                      onPressed: gift,
-                      icon: const Icon(
-                        Icons.volunteer_activism_outlined,
-                        size: 20,
-                      ),
-                      label: Text(
-                        stats.gifts > 0
-                            ? 'Gift · ${compactCount(stats.gifts)}'
-                            : 'Gift',
-                      ),
-                    ),
-                  if (reportable) _PostMenu(post: post),
-                ],
-              );
-            },
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -687,27 +798,29 @@ class _ReactionChip extends StatelessWidget {
         message: reaction.label,
         child: Material(
           key: ValueKey('reaction-${reaction.name}'),
-          color: selected ? react.withValues(alpha: 0.12) : Colors.transparent,
+          color: selected ? react.withValues(alpha: 0.14) : Colors.transparent,
           shape: StadiumBorder(
-            side: BorderSide(color: selected ? react : scheme.outlineVariant),
+            side: BorderSide(color: selected ? react : Colors.transparent),
           ),
           child: InkWell(
             customBorder: const StadiumBorder(),
             onTap: onTap,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(reaction.emoji, style: const TextStyle(fontSize: 15)),
-                  const SizedBox(width: 4),
-                  Text(
-                    compactCount(count),
-                    style: theme.textTheme.labelMedium?.copyWith(
-                      color: selected ? react : scheme.onSurfaceVariant,
-                      fontWeight: selected ? FontWeight.w700 : null,
+                  Text(reaction.emoji, style: const TextStyle(fontSize: 20)),
+                  if (count > 0) ...[
+                    const SizedBox(width: 4),
+                    Text(
+                      compactCount(count),
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        color: selected ? react : scheme.onSurfaceVariant,
+                        fontWeight: selected ? FontWeight.w700 : null,
+                      ),
                     ),
-                  ),
+                  ],
                 ],
               ),
             ),
@@ -719,10 +832,12 @@ class _ReactionChip extends StatelessWidget {
 }
 
 /// Listen to one post's card: its recording, or the device voice. While
-/// it's the card playing, pauses and resumes it.
+/// it's the card playing, pauses and resumes it. An outlined "Listen" pill,
+/// or just the icon when [compact].
 class _ListenPostButton extends ConsumerWidget {
-  const _ListenPostButton({required this.card});
+  const _ListenPostButton({required this.card, this.compact = false});
   final IdeaCard card;
+  final bool compact;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -733,20 +848,36 @@ class _ListenPostButton extends ConsumerWidget {
       }),
     );
     final listen = ref.read(listenProvider.notifier);
-    return IconButton(
-      key: const ValueKey('post-listen'),
-      tooltip: playing ? 'Pause this idea' : 'Listen to this idea',
-      color: Theme.of(context).colorScheme.onSurfaceVariant,
-      onPressed: () {
-        if (current) {
-          listen.toggle();
-        } else {
-          listen.playCard(card);
-        }
-      },
-      icon: Icon(
-        playing ? Icons.pause_rounded : Icons.headphones_outlined,
-        size: 22,
+    void onPressed() {
+      if (current) {
+        listen.toggle();
+      } else {
+        listen.playCard(card);
+      }
+    }
+
+    final icon = Icon(
+      playing ? Icons.pause_rounded : Icons.headphones_rounded,
+      size: compact ? 22 : 19,
+    );
+    final tooltip = playing ? 'Pause this idea' : 'Listen to this idea';
+    if (compact) {
+      return IconButton(
+        key: const ValueKey('post-listen'),
+        tooltip: tooltip,
+        color: Theme.of(context).colorScheme.onSurfaceVariant,
+        onPressed: onPressed,
+        icon: icon,
+      );
+    }
+    return Tooltip(
+      message: tooltip,
+      child: OutlinedButton.icon(
+        key: const ValueKey('post-listen'),
+        onPressed: onPressed,
+        style: OutlinedButton.styleFrom(minimumSize: const Size(0, 46)),
+        icon: icon,
+        label: Text(playing ? 'Pause' : 'Listen'),
       ),
     );
   }
@@ -790,10 +921,11 @@ class _CountButton extends StatelessWidget {
         style: TextButton.styleFrom(
           foregroundColor:
               color ?? Theme.of(context).colorScheme.onSurfaceVariant,
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: count > 0 ? 10 : 8),
+          minimumSize: const Size(44, 44),
         ),
-        icon: Icon(icon, size: 20),
-        label: Text(compactCount(count)),
+        icon: Icon(icon, size: 22),
+        label: count > 0 ? Text(compactCount(count)) : const SizedBox.shrink(),
       ),
     ),
   );

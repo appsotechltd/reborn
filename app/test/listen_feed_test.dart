@@ -4,6 +4,7 @@ import 'package:reborn/src/api/api_client.dart';
 import 'package:reborn/src/features/card/explainer_player.dart';
 import 'package:reborn/src/features/listen/listen_audio.dart';
 import 'package:reborn/src/features/listen/listen_controller.dart';
+import 'package:reborn/src/features/shell/app_shell.dart';
 import 'package:reborn/src/features/timeline/timeline_controller.dart';
 
 import 'fake_server.dart';
@@ -70,7 +71,7 @@ void main() {
     expect(mini, findsOneWidget);
     expect(
       tester.getBottomLeft(mini).dy,
-      lessThanOrEqualTo(tester.getTopLeft(find.byType(NavigationBar)).dy),
+      lessThanOrEqualTo(tester.getTopLeft(find.byType(FloatingNavBar)).dy),
     );
 
     // Turning the video's sound on is starting it: Listen mode pauses.
