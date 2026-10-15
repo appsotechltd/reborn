@@ -18,14 +18,14 @@ const trendScore = `(
 // Trending returns the posts with the most activity since since, optionally in one topic.
 func (s *Store) Trending(ctx context.Context, viewerID, topic string, since time.Time, limit int) ([]Post, error) {
 	return s.queryPosts(ctx, viewerID, `SELECT `+postCols+postFrom+`
-		WHERE c.status = 'published' AND ($2 = '' OR c.topic = $2) AND `+trendScore+` > 0
+		WHERE c.status = 'published' AND `+everyoneOnly+` AND ($2 = '' OR c.topic = $2) AND `+trendScore+` > 0
 		ORDER BY `+trendScore+` DESC, c.published_at DESC, c.id LIMIT $3`, since, topic, limit)
 }
 
 // NewPosts returns the most recently published posts.
 func (s *Store) NewPosts(ctx context.Context, viewerID string, limit int) ([]Post, error) {
 	return s.queryPosts(ctx, viewerID, `SELECT `+postCols+postFrom+`
-		WHERE c.status = 'published' ORDER BY c.published_at DESC, md5(c.id || current_date::text) LIMIT $1`, limit)
+		WHERE c.status = 'published' AND `+everyoneOnly+` ORDER BY c.published_at DESC, md5(c.id || current_date::text) LIMIT $1`, limit)
 }
 
 // PopularSource is a book with its follower count.
@@ -39,7 +39,7 @@ func (s *Store) PopularSources(ctx context.Context, limit int) ([]PopularSource,
 	rows, err := s.DB.Query(ctx, `SELECT s.id, s.title, s.authors, s.kind, s.licence, s.attribution,
 			array_agg(DISTINCT c.topic ORDER BY c.topic), count(DISTINCT c.id), greatest(s.updated_at, max(c.updated_at)),
 			(SELECT count(*) FROM follows f WHERE f.kind = 'source' AND f.target = s.id) AS followers
-		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published' AND c.author_id IS NULL
 		GROUP BY s.id ORDER BY followers DESC, count(DISTINCT c.id) DESC, lower(s.title) LIMIT $1`, limit)
 	if err != nil {
 		return nil, err

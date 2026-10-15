@@ -353,6 +353,70 @@ may send `AI_HOURLY_LIMIT` (60) messages an hour. Models are set by `OPENAI_CHAT
 (`gpt-5.4-mini`), `OPENAI_REASONING_EFFORT` (`low`, or `none` for a non-reasoning model)
 and `OPENAI_TTS_VOICE` (`marin`, only used when Kokoro is down); pictures and speech are saved in media storage under `ai/`.
 
+### Member cards, categories and the card studio
+
+Members write their own idea cards and file them under categories of their own. Each card
+has an audience: `everyone` (timelines and the writer's page), `followers` (people who follow
+the writer), `subscribers` (people with a live paid subscription to the writer, who also see
+followers-only cards) or `private` (only the writer). A member `Card` adds `author` (Profile),
+`category` (`{"id","name"}` or absent), `visibility` (the audience, or `hidden` when reports
+or a moderator took it down), `created_at`, and `video` when it has an illustrated video:
+`{"kind":"illustrated","scenes":[{"url","width","height"}],"audio_url","voice","duration_s"}`
+(the apps show each scene for an equal share of the narration, drifting and cross-fading,
+with no captions). Its `image` and `audio` use the library fields. Member cards stay out of
+books, authors, search, Reborn AI and the sitemap; following a writer puts their cards first
+in the timeline (reason kind `writer`).
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/me/categories` | required | | `{"categories":[{"id","name","card_count"}]}` |
+| `POST /v1/me/categories` | required | `{"name"}` (1-40) | the category (201); `409` when the name is taken; at most 50 |
+| `PATCH /v1/me/categories/{id}` / `DELETE` | required | `{"name"}` | the category / `204` (its cards stay, uncategorised) |
+| `GET /v1/me/cards` | required | `?category=<id>|none&cursor=&limit=50` | `{"cards":[Card],"next_cursor"}`: all of the member's cards, newest first |
+| `POST /v1/me/cards` | required | `{"title" (≤120),"body" (≤1,500),"apply_it"? (≤400),"topic","category_id"?,"audience"?}` | `Card` (201) |
+| `GET/PATCH/DELETE /v1/me/cards/{id}` | required | PATCH takes any of the POST fields; `"category_id":""` clears it | `Card` / `204` |
+| `GET /v1/users/{handle}/cards` | optional | `?category=&cursor=&limit=20` | `{"posts":[Post],"categories":[...] (first page),"next_cursor"}`: the cards the viewer may see |
+| `POST /v1/posts/{id}/report` | required | `{"reason"?}` | `204`. Member cards only; 3 reports hide a card until a moderator looks |
+| `GET /v1/moderation/cards` | moderator | | `{"cards":[{"card","status","reports","reasons"}]}` |
+| `POST /v1/moderation/cards/{id}/hide` / `restore` | moderator | | `204`, clearing its reports |
+| `GET /v1/studio` | optional | | `{"available","rates":[{"kind","units","per"}],"video_scenes":4,"voices":[{"id","name"}],"audiences","monthly_units","premium","wallet"}` |
+| `POST /v1/me/cards/{id}/image` | premium | `{"style":"sketch|illustration|picture","prompt"? (≤1,000; default: from the card),"shape"?: "landscape|square|portrait"}` | `{"card","units","wallet"}` |
+| `POST /v1/me/cards/{id}/audio` | premium | `{"voice"?}` (an approved Kokoro voice id, default `af_heart`) | `{"card","units","wallet"}` |
+| `POST /v1/me/cards/{id}/video` | premium | `{"voice"?}` | `{"card","units","wallet"}` |
+| `DELETE /v1/me/cards/{id}/{image|audio|video}` | required | | `Card` (free) |
+
+Studio prices are in docs/AI_UNITS.md: sketch 2, illustration 4, picture 12, audio 1 unit
+per started 50 words, video 1 + 4 illustrations (16) + the audio. Units are charged only
+after the media is made; `402 out_of_units` when the wallet can't cover the price, `422
+declined` when OpenAI refuses the image. The work finishes and is saved even if the app
+closes mid-request.
+
+### Writer earnings and subscriptions
+
+Gifts on a member's card and payments for subscriptions to a writer are shared with the
+writer: the payment fee comes off first (Stripe 2.9% + 30c; Apple and Google
+`STORE_FEE_PERCENT`, default 15), then Reborn keeps `GIFT_COMMISSION_PERCENT` (default 30).
+Payouts to writers are not automated yet; the earnings are recorded for paying out later.
+
+| Method & path | Auth | Body / query | Response |
+|---|---|---|---|
+| `GET /v1/me/earnings` | required | | `{"earnings":{"total_cents","this_month_cents","gifts","subscribers","currency","recent":[{"kind":"gift|subscription","post_id","post_title","tier","amount_cents","author_cents","currency","from","paid_at"}]},"commission_percent","store_fee_percent"}` |
+| `GET /v1/me/plan` | required | | `{"plan":{"tier","enabled","pitch","subscribers","updated_at"}|null,"tiers":[{"id","amount_cents","currency","product_id"}],"commission_percent","store_fee_percent"}` |
+| `PUT /v1/me/plan` | required | `{"tier":"month_199|month_499|month_999","enabled","pitch"? (≤300)}` | the plan |
+| `GET /v1/users/{handle}/plan` | optional | | `{"plan":{"pitch","subscribers"}|null,"tier"|null,"locked_cards","subscription":{"writer","tier","provider","renews","expires_at","active"}|null,"providers"}` |
+| `POST /v1/users/{handle}/subscribe/checkout` | required | | `{"url"}` (201): a monthly Stripe subscription, returning to `/u/{handle}?subscribed=1` |
+| `POST /v1/users/{handle}/subscribe/apple` | required | `{"signed_transaction"}` | the subscription (201): a 30-day pass |
+| `POST /v1/users/{handle}/subscribe/google` | required | `{"product_id","purchase_token"}` | the subscription (201): a 30-day pass; consume the purchase afterwards |
+| `DELETE /v1/users/{handle}/subscription` | required | | the subscription: a web subscription stops renewing and lasts to its period end |
+| `GET /v1/me/subscriptions` | required | | `{"subscriptions":[...]}` |
+
+In the apps, subscriptions are 30-day passes so one member can subscribe to many writers at
+the same price: Apple non-renewing subscriptions and Google Play consumable products
+`reborn.writer.month199` ($1.99), `reborn.writer.month499` ($4.99) and
+`reborn.writer.month999` ($9.99). The Stripe webhook must also send
+`customer.subscription.created`, `.updated` and `.deleted`; writer subscriptions carry
+`metadata.kind = writer`.
+
 ### Moderator dashboard
 
 | Method & path | Auth | Body / query | Response |

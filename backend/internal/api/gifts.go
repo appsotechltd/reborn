@@ -2,6 +2,7 @@ package api
 
 import (
 	"errors"
+	"fmt"
 	"io"
 	"log/slog"
 	"net/http"
@@ -18,7 +19,38 @@ func (s *Server) giftTiers(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, http.StatusOK, map[string]any{
 		"tiers":     payments.Tiers,
 		"providers": map[string]bool{"stripe": s.Stripe != nil, "apple": s.Apple != nil, "google": s.Google != nil},
+		// Gifts on a member's card go to the writer, less the payment fee and this commission.
+		"commission_percent": s.GiftCommission,
 	})
+}
+
+// newGift describes a gift on post. On a member's card the writer gets their share.
+func (s *Server) newGift(post store.Post, uid string, tier payments.Tier, provider string) store.NewGift {
+	g := store.NewGift{UserID: uid, PostID: post.ID, Tier: tier.ID, AmountCents: tier.AmountCents, Currency: tier.Currency, Provider: provider}
+	if a := post.Card.Author; a != nil {
+		split := payments.SplitGift(tier.AmountCents, provider, s.GiftCommission, s.StoreFee)
+		g.AuthorID, g.FeeCents, g.AuthorCents = a.ID, split.FeeCents, split.AuthorCents
+	}
+	return g
+}
+
+// ownCard refuses a gift on the giver's own card.
+func ownCard(w http.ResponseWriter, post store.Post, uid string) bool {
+	if post.Card.Author != nil && post.Card.Author.ID == uid {
+		writeError(w, http.StatusBadRequest, "own_card", "you can't send a gift to your own card")
+		return true
+	}
+	return false
+}
+
+// giftPaid tells the writer of a member card about a gift.
+func (s *Server) giftPaid(p *store.PaidGift) {
+	if p == nil || p.AuthorID == "" || p.AuthorID == p.GiverID {
+		return
+	}
+	text := fmt.Sprintf("Someone sent a gift for your card. Your share is $%d.%02d.", p.AuthorCents/100, p.AuthorCents%100)
+	s.notify(store.NewNotification{UserID: p.AuthorID, Kind: "gift", ActorID: p.GiverID, PostID: p.PostID, Text: text},
+		"gifts", map[string]string{"post_id": p.PostID})
 }
 
 func (s *Server) giftTier(w http.ResponseWriter, id string) (payments.Tier, bool) {
@@ -54,8 +86,10 @@ func (s *Server) giftCheckout(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, r, err, "user")
 		return
 	}
-	g, err := s.Store.CreatePendingGift(r.Context(), store.NewGift{UserID: u.ID, PostID: post.ID, Tier: tier.ID,
-		AmountCents: tier.AmountCents, Currency: tier.Currency, Provider: "stripe"})
+	if ownCard(w, post, u.ID) {
+		return
+	}
+	g, err := s.Store.CreatePendingGift(r.Context(), s.newGift(post, u.ID, tier, "stripe"))
 	if err != nil {
 		s.fail(w, r, err, "gift")
 		return
@@ -102,10 +136,12 @@ func (s *Server) stripeWebhook(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 		if obj.PaymentStatus == "paid" && obj.Metadata["gift_id"] != "" {
-			if err := s.Store.MarkGiftPaid(r.Context(), obj.Metadata["gift_id"], "stripe", obj.ID, s.Now()); err != nil {
+			paid, err := s.Store.MarkGiftPaid(r.Context(), obj.Metadata["gift_id"], "stripe", obj.ID, s.Now())
+			if err != nil {
 				s.fail(w, r, err, "gift")
 				return
 			}
+			s.giftPaid(paid)
 		}
 		if obj.PaymentStatus == "paid" && obj.Metadata["topup_id"] != "" {
 			if err := s.Store.MarkTopUpPaid(r.Context(), obj.Metadata["topup_id"], "stripe", obj.ID, s.Now()); err != nil {
@@ -114,7 +150,11 @@ func (s *Server) stripeWebhook(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 	case "customer.subscription.created", "customer.subscription.updated", "customer.subscription.deleted":
-		if err := s.stripeSubscriptionEvent(r, obj); err != nil {
+		handle := s.stripeSubscriptionEvent
+		if obj.Metadata["kind"] == "writer" {
+			handle = s.stripeWriterEvent
+		}
+		if err := handle(r, obj); err != nil {
 			s.fail(w, r, err, "subscription")
 			return
 		}
@@ -176,11 +216,22 @@ func (s *Server) recordStoreGift(w http.ResponseWriter, r *http.Request, provide
 		writeError(w, http.StatusBadRequest, "invalid_purchase", "unknown product")
 		return
 	}
-	g, err := s.Store.RecordPaidGift(r.Context(), store.NewGift{UserID: userID(r), PostID: r.PathValue("id"), Tier: tier.ID,
-		AmountCents: tier.AmountCents, Currency: tier.Currency, Provider: provider}, ref, s.Now())
+	post, err := s.Store.GetPost(r.Context(), r.PathValue("id"), "")
 	if err != nil {
 		s.fail(w, r, err, "post")
 		return
+	}
+	uid := userID(r)
+	if ownCard(w, post, uid) {
+		return
+	}
+	g, isNew, err := s.Store.RecordPaidGift(r.Context(), s.newGift(post, uid, tier, provider), ref, s.Now())
+	if err != nil {
+		s.fail(w, r, err, "post")
+		return
+	}
+	if isNew {
+		s.giftPaid(&store.PaidGift{PostID: g.PostID, GiverID: uid, AuthorID: authorOf(post), AuthorCents: g.AuthorCents})
 	}
 	writeJSON(w, http.StatusCreated, g)
 }
@@ -192,4 +243,20 @@ func (s *Server) gift(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, http.StatusOK, g)
+}
+
+func authorOf(post store.Post) string {
+	if post.Card.Author != nil {
+		return post.Card.Author.ID
+	}
+	return ""
+}
+
+func (s *Server) earnings(w http.ResponseWriter, r *http.Request) {
+	e, err := s.Store.EarningsOf(r.Context(), userID(r), s.Now())
+	if err != nil {
+		s.fail(w, r, err, "earnings")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"earnings": e, "commission_percent": s.GiftCommission, "store_fee_percent": s.StoreFee})
 }

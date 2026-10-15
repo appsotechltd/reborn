@@ -45,12 +45,12 @@ type Viewer struct {
 
 // Reason says why a post is in someone's timeline.
 type Reason struct {
-	Kind  string `json:"kind"` // source, author, favorite, topic, new
+	Kind  string `json:"kind"` // writer, source, author, favorite, topic, new
 	Label string `json:"label"`
 }
 
-// Post is a card with its social context. Every published card is a post;
-// people react to, favourite, comment on and share posts but never write them.
+// Post is a card with its social context. Every published card is a post:
+// library cards, and cards members wrote and chose to share.
 type Post struct {
 	ID          string    `json:"id"`
 	PublishedAt time.Time `json:"published_at"`
@@ -115,6 +115,7 @@ func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) 
 		JOIN topics t ON t.slug = c.topic
 		CROSS JOIN LATERAL (
 			SELECT kind, label FROM (VALUES
+				(0, 'writer', CASE WHEN c.author_id IN (SELECT id FROM fu) THEN (SELECT display_name FROM users WHERE id = c.author_id) END),
 				(1, 'source', CASE WHEN c.source_id IN (SELECT target FROM f WHERE kind = 'source') THEN s.title END),
 				(2, 'author', (SELECT a FROM unnest(s.authors) a WHERE a IN (SELECT target FROM f WHERE kind = 'author') LIMIT 1)),
 				(3, 'favorite', ffav.display_name),
@@ -123,8 +124,8 @@ func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) 
 			) AS x(n, kind, label)
 			WHERE label IS NOT NULL ORDER BY n LIMIT 1
 		) r
-		WHERE c.status = 'published'
-		ORDER BY seen, c.published_at DESC, md5(c.id || $3 || coalesce($1::text, '')), c.id
+		WHERE c.status = 'published' AND (c.author_id IS NULL OR (NOT `+hiddenFor("c.author_id", "$1")+` AND `+visibleTo("$1")+`))
+		ORDER BY seen, r.kind <> 'writer', c.published_at DESC, md5(c.id || $3 || coalesce($1::text, '')), c.id
 		OFFSET $5 LIMIT $6`, uid, p.Topics, p.Day, p.Snapshot, p.Offset, p.Limit)
 	if err != nil {
 		return nil, err
@@ -152,7 +153,7 @@ func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) 
 
 // GetPost returns one published post.
 func (s *Store) GetPost(ctx context.Context, id, userID string) (Post, error) {
-	posts, err := s.queryPosts(ctx, userID, `SELECT `+postCols+postFrom+`WHERE c.id = $1 AND c.status = 'published'`, id)
+	posts, err := s.queryPosts(ctx, userID, `SELECT `+postCols+postFrom+`WHERE c.id = $1 AND c.status = 'published' AND `+visibleTo("$2"), id, nullableUser(userID))
 	if err != nil {
 		return Post{}, err
 	}
@@ -166,7 +167,8 @@ func (s *Store) GetPost(ctx context.Context, id, userID string) (Post, error) {
 func (s *Store) Favorites(ctx context.Context, ownerID, viewerID string, offset, limit int) ([]Post, error) {
 	return s.queryPosts(ctx, viewerID, `SELECT `+postCols+postFrom+`
 		JOIN favorites fv ON fv.card_id = c.id AND fv.user_id = $1
-		WHERE c.status = 'published' ORDER BY fv.created_at DESC, c.id OFFSET $2 LIMIT $3`, ownerID, offset, limit)
+		WHERE c.status = 'published' AND `+visibleTo("$4")+` ORDER BY fv.created_at DESC, c.id OFFSET $2 LIMIT $3`,
+		ownerID, offset, limit, nullableUser(viewerID))
 }
 
 func (s *Store) queryPosts(ctx context.Context, viewerID, q string, args ...any) ([]Post, error) {

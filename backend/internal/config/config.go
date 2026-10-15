@@ -24,9 +24,12 @@ type Config struct {
 	KokoroVoice     string
 	AIMonthlyUnits  int
 	AIHourly        int
-	VoyageAPIKey    string
-	VoyageModel     string
-	CORSOrigins     string
+	// Gifts on member cards: Reborn's cut after the payment fee, and the app stores' fee.
+	GiftCommissionPercent int
+	StoreFeePercent       int
+	VoyageAPIKey          string
+	VoyageModel           string
+	CORSOrigins           string
 
 	WebBaseURL string // where reset links and gift return pages point
 	SMTPURL    string
@@ -63,25 +66,27 @@ func (c Config) R2Enabled() bool {
 // Load reads the environment, applying development defaults.
 func Load() Config {
 	return Config{
-		Addr:            env("ADDR", ":8080"),
-		DatabaseURL:     env("DATABASE_URL", "postgres://reborn:reborn@localhost:5432/reborn?sslmode=disable"),
-		RedisURL:        env("REDIS_URL", "redis://localhost:6379/0"),
-		JWTSecret:       env("JWT_SECRET", "dev-only-change-me"),
-		ContentDir:      env("CONTENT_DIR", "../content/library"),
-		AnthropicAPIKey: os.Getenv("ANTHROPIC_API_KEY"),
-		AgentModel:      env("AGENT_MODEL", "claude-opus-5-5"),
-		AgentHourly:     envInt("AGENT_HOURLY_LIMIT", 30),
-		OpenAIAPIKey:    os.Getenv("OPENAI_API_KEY"),
-		AIChatModel:     env("OPENAI_CHAT_MODEL", "gpt-5.4-mini"),
-		AIEffort:        env("OPENAI_REASONING_EFFORT", "low"),
-		AIVoice:         env("OPENAI_TTS_VOICE", "marin"),
-		KokoroURL:       os.Getenv("KOKORO_URL"),
-		KokoroVoice:     env("KOKORO_VOICE", "af_heart"),
-		AIMonthlyUnits:  envInt("AI_MONTHLY_UNITS", 250),
-		AIHourly:        envInt("AI_HOURLY_LIMIT", 60),
-		VoyageAPIKey:    os.Getenv("VOYAGE_API_KEY"),
-		VoyageModel:     env("VOYAGE_MODEL", "voyage-3.5"),
-		CORSOrigins:     env("CORS_ORIGINS", "*"),
+		Addr:                  env("ADDR", ":8080"),
+		DatabaseURL:           env("DATABASE_URL", "postgres://reborn:reborn@localhost:5432/reborn?sslmode=disable"),
+		RedisURL:              env("REDIS_URL", "redis://localhost:6379/0"),
+		JWTSecret:             env("JWT_SECRET", "dev-only-change-me"),
+		ContentDir:            env("CONTENT_DIR", "../content/library"),
+		AnthropicAPIKey:       os.Getenv("ANTHROPIC_API_KEY"),
+		AgentModel:            env("AGENT_MODEL", "claude-opus-5-5"),
+		AgentHourly:           envInt("AGENT_HOURLY_LIMIT", 30),
+		OpenAIAPIKey:          os.Getenv("OPENAI_API_KEY"),
+		AIChatModel:           env("OPENAI_CHAT_MODEL", "gpt-5.4-mini"),
+		AIEffort:              env("OPENAI_REASONING_EFFORT", "low"),
+		AIVoice:               env("OPENAI_TTS_VOICE", "marin"),
+		KokoroURL:             os.Getenv("KOKORO_URL"),
+		KokoroVoice:           env("KOKORO_VOICE", "af_heart"),
+		AIMonthlyUnits:        envInt("AI_MONTHLY_UNITS", 250),
+		AIHourly:              envInt("AI_HOURLY_LIMIT", 60),
+		GiftCommissionPercent: envInt("GIFT_COMMISSION_PERCENT", 30),
+		StoreFeePercent:       envInt("STORE_FEE_PERCENT", 15),
+		VoyageAPIKey:          os.Getenv("VOYAGE_API_KEY"),
+		VoyageModel:           env("VOYAGE_MODEL", "voyage-3.5"),
+		CORSOrigins:           env("CORS_ORIGINS", "*"),
 
 		WebBaseURL: env("WEB_BASE_URL", "http://localhost:3000"),
 		SMTPURL:    os.Getenv("SMTP_URL"),

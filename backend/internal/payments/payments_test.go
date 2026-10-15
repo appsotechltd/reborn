@@ -182,3 +182,20 @@ func TestTiers(t *testing.T) {
 		t.Fatal("unknown tier found")
 	}
 }
+
+func TestSplitGift(t *testing.T) {
+	for _, tc := range []struct {
+		amount   int
+		provider string
+		want     Split
+	}{
+		{199, "google", Split{FeeCents: 30, AuthorCents: 118, RebornCents: 51}},
+		{499, "apple", Split{FeeCents: 75, AuthorCents: 296, RebornCents: 128}},
+		{499, "stripe", Split{FeeCents: 45, AuthorCents: 317, RebornCents: 137}},
+		{20, "stripe", Split{FeeCents: 20}},
+	} {
+		if got := SplitGift(tc.amount, tc.provider, 30, 15); got != tc.want {
+			t.Errorf("SplitGift(%d, %s) = %+v, want %+v", tc.amount, tc.provider, got, tc.want)
+		}
+	}
+}

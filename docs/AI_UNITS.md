@@ -85,3 +85,22 @@ Claude prices (Anthropic, 2026-10): Haiku 5.5 $0.10 / $0.50, Sonnet 5.5 $2 / $10
 - Done: replies are read aloud by our own Kokoro service (`services/kokoro`, voice Heart), so listening is free for members and costs us only server time. OpenAI's voice is the fallback when Kokoro is down. Voice messages members send still cost 1 unit per 30 words, because transcription stays on OpenAI.
 - Done: pictures are saved by model, size and prompt, so the same picture is never paid for twice, whoever asks.
 - OpenAI's Batch API halves text prices, but it is too slow for chat.
+
+## 7. The card studio (media for cards members write)
+
+Prices checked against the same OpenAI pricing as above (2026-10-15).
+
+| Action | What it uses | Our cost | AI units |
+|---|---|---|---|
+| Sketch | `gpt-image-1-mini` low, landscape | about $0.006 | 2 |
+| Illustration | `gpt-image-1-mini` medium, landscape | about $0.015 | 4 |
+| Photo-like picture | `gpt-image-2` medium, landscape | $0.041 | 12 |
+| Audio (the card read aloud) | our own Kokoro voice; OpenAI `gpt-4o-mini-tts` (about $0.015 a minute) only when Kokoro is down | $0 to $0.015 a minute | 1 per started 50 words (3 for a one-minute card) |
+| Illustrated video | 1 chat call to plan 4 scenes (about $0.003), 4 portrait illustrations (about $0.06), and the audio | about $0.06 to $0.08 | 1 + 16 + the audio (20 for a one-minute card) |
+
+The video plays in the apps as four illustrations that slowly drift and cross-fade over the
+narration, so no video file has to be rendered on the server. Every image and recording is
+saved in R2 and reused, never paid for twice.
+
+What 250 monthly units buy: about 12 one-minute videos, or 62 illustrations, or 125 sketches,
+or 20 photo-like pictures, or 83 one-minute audios, or any mix.

@@ -116,3 +116,77 @@ func PackByProduct(id string) (UnitPack, bool) {
 	}
 	return UnitPack{}, false
 }
+
+// Creator gifts: a gift on a card a member wrote is shared with them. The
+// payment fee comes off first, then Reborn keeps its commission.
+
+// DefaultCommissionPercent is Reborn's cut of a gift after the payment fee.
+const DefaultCommissionPercent = 30
+
+// DefaultStoreFeePercent is what Apple and Google keep from an in-app purchase
+// (15% on their small business programmes; 30% otherwise).
+const DefaultStoreFeePercent = 15
+
+// Split is how a gift is divided.
+type Split struct {
+	FeeCents    int `json:"fee_cents"`
+	AuthorCents int `json:"author_cents"`
+	RebornCents int `json:"reborn_cents"`
+}
+
+// SplitGift divides amountCents paid through provider. Stripe charges 2.9% +
+// 30c; the app stores keep storeFeePercent. The writer gets the rest less
+// commissionPercent, rounded down to the cent.
+func SplitGift(amountCents int, provider string, commissionPercent, storeFeePercent int) Split {
+	var fee int
+	if provider == "stripe" {
+		fee = (amountCents*29+999)/1000 + 30
+	} else {
+		fee = (amountCents*storeFeePercent + 99) / 100
+	}
+	fee = min(fee, amountCents)
+	net := amountCents - fee
+	author := net * (100 - commissionPercent) / 100
+	return Split{FeeCents: fee, AuthorCents: author, RebornCents: net - author}
+}
+
+// WriterTier is a monthly price a writer can charge for their subscribers-only
+// cards. On the web it is a Stripe subscription; in the apps it is a 30-day
+// pass (an Apple non-renewing subscription, a Google Play one-time product),
+// so one member can subscribe to many writers at the same price.
+type WriterTier struct {
+	ID          string `json:"id"`
+	AmountCents int    `json:"amount_cents"`
+	Currency    string `json:"currency"`
+	ProductID   string `json:"product_id"`
+}
+
+// WriterPassDays is how long an in-app subscription pass lasts.
+const WriterPassDays = 30
+
+// WriterTiers are the monthly prices writers choose from.
+var WriterTiers = []WriterTier{
+	{ID: "month_199", AmountCents: 199, Currency: "usd", ProductID: "reborn.writer.month199"},
+	{ID: "month_499", AmountCents: 499, Currency: "usd", ProductID: "reborn.writer.month499"},
+	{ID: "month_999", AmountCents: 999, Currency: "usd", ProductID: "reborn.writer.month999"},
+}
+
+// WriterTierByID finds a writer tier by id.
+func WriterTierByID(id string) (WriterTier, bool) {
+	for _, t := range WriterTiers {
+		if t.ID == id {
+			return t, true
+		}
+	}
+	return WriterTier{}, false
+}
+
+// WriterTierByProduct finds a writer tier by store product id.
+func WriterTierByProduct(id string) (WriterTier, bool) {
+	for _, t := range WriterTiers {
+		if t.ProductID == id {
+			return t, true
+		}
+	}
+	return WriterTier{}, false
+}

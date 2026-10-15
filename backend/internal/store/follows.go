@@ -24,6 +24,7 @@ type UserProfile struct {
 	Followers   int    `json:"followers"`
 	Following   int    `json:"following"`
 	Favorites   int    `json:"favorites"`
+	Cards       int    `json:"cards"` // cards they wrote that the viewer may see
 	IsFollowing bool   `json:"is_following"`
 	IsMe        bool   `json:"is_me"`
 }
@@ -127,11 +128,12 @@ func (s *Store) ProfileByHandle(ctx context.Context, handle, viewerID string) (U
 			(SELECT count(*) FROM follows WHERE kind = 'user' AND target = u.id::text),
 			(SELECT count(*) FROM follows WHERE follower_id = u.id),
 			(SELECT count(*) FROM favorites WHERE user_id = u.id),
+			(SELECT count(*) FROM cards c WHERE c.author_id = u.id AND c.status = 'published' AND `+visibleTo("$2")+`),
 			EXISTS (SELECT 1 FROM follows WHERE follower_id = $2::uuid AND kind = 'user' AND target = u.id::text),
 			(u.id = $2::uuid) IS TRUE
 		FROM users u WHERE lower(u.handle) = lower($1)
 		AND NOT EXISTS (SELECT 1 FROM blocks WHERE user_id = u.id AND blocked_id = $2::uuid AND kind = 'block')`, handle, vid).
-		Scan(&p.ID, &p.Handle, &p.DisplayName, &p.Bio, &p.Followers, &p.Following, &p.Favorites, &p.IsFollowing, &p.IsMe)
+		Scan(&p.ID, &p.Handle, &p.DisplayName, &p.Bio, &p.Followers, &p.Following, &p.Favorites, &p.Cards, &p.IsFollowing, &p.IsMe)
 	return p, notFound(err)
 }
 
@@ -150,7 +152,7 @@ func (s *Store) Author(ctx context.Context, name, viewerID string) (AuthorPage, 
 	a := AuthorPage{Name: name}
 	rows, err := s.DB.Query(ctx, `SELECT s.id, s.title, s.authors, s.kind, s.licence, s.attribution,
 			array_agg(DISTINCT c.topic ORDER BY c.topic), count(c.id), greatest(s.updated_at, max(c.updated_at))
-		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published'
+		FROM sources s JOIN cards c ON c.source_id = s.id AND c.status = 'published' AND c.author_id IS NULL
 		WHERE $1 = ANY(s.authors) GROUP BY s.id ORDER BY lower(s.title)`, name)
 	if err != nil {
 		return a, err

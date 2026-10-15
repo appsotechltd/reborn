@@ -11,7 +11,7 @@ import (
 	"github.com/jackc/pgx/v5/pgconn"
 )
 
-// Stash is a user's named collection of cards.
+// Stash is a user's named collection of cards ("Collections" in the apps).
 type Stash struct {
 	ID          string    `json:"id"`
 	Name        string    `json:"name"`
@@ -103,7 +103,8 @@ func (s *Store) StashCards(ctx context.Context, userID, id string) ([]Card, erro
 		return nil, err
 	}
 	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`JOIN stash_cards sc ON sc.card_id = c.id
-		WHERE sc.stash_id::text = $1 AND c.status = 'published' ORDER BY sc.added_at DESC`, id)
+		WHERE sc.stash_id::text = $1 AND ((c.status = 'published' AND `+visibleTo("$2")+`) OR (c.author_id = $2 AND c.status <> 'deleted'))
+		ORDER BY sc.added_at DESC`, id, userID)
 	if err != nil {
 		return nil, err
 	}
@@ -115,7 +116,8 @@ func (s *Store) AddToStash(ctx context.Context, userID, stashID, cardID string, 
 	return withTx(ctx, s.DB, func(tx pgx.Tx) error {
 		var ok bool
 		if err := tx.QueryRow(ctx, `SELECT EXISTS (SELECT 1 FROM stashes WHERE id::text = $1 AND user_id = $2)
-			AND EXISTS (SELECT 1 FROM cards WHERE id = $3 AND status = 'published')`, stashID, userID, cardID).Scan(&ok); err != nil {
+			AND EXISTS (SELECT 1 FROM cards WHERE id = $3 AND (status = 'published' OR (author_id = $2 AND status <> 'deleted')))`,
+			stashID, userID, cardID).Scan(&ok); err != nil {
 			return err
 		}
 		if !ok {
@@ -160,7 +162,7 @@ func (s *Store) GetPublicStash(ctx context.Context, id string) (PublicStash, []C
 	}
 	ps.Stash = st
 	rows, err := s.DB.Query(ctx, `SELECT `+cardCols+cardFrom+`JOIN stash_cards sc ON sc.card_id = c.id
-		WHERE sc.stash_id::text = $1 AND c.status = 'published' ORDER BY sc.added_at DESC`, id)
+		WHERE sc.stash_id::text = $1 AND c.status = 'published' AND `+everyoneOnly+` ORDER BY sc.added_at DESC`, id)
 	if err != nil {
 		return ps, nil, err
 	}
