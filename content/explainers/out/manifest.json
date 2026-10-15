@@ -34,6 +34,17 @@
       "kind": "animated",
       "script": "scripts/enchiridion-epictetus--01.json"
     },
+    "festingers-principle-leon-festinger--01": {
+      "video": "festingers-principle-leon-festinger--01.mp4",
+      "poster": "festingers-principle-leon-festinger--01.jpg",
+      "duration_s": 59.1,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_echo@0.95",
+      "kind": "animated",
+      "script": "scripts/festingers-principle-leon-festinger--01.json"
+    },
     "nhs-breathing-exercises-for-stress--02": {
       "video": "nhs-breathing-exercises-for-stress--02.mp4",
       "poster": "nhs-breathing-exercises-for-stress--02.jpg",

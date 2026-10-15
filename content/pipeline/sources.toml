@@ -1102,3 +1102,9 @@ id = "guide-write-clearly"
 adapter = "summary"
 url = "https://www.archives.gov/open/plain-writing/10-principles.html"
 licence = "original-summary"
+
+[[source]]
+id = "festingers-principle-leon-festinger"
+adapter = "summary"
+url = "https://en.wikipedia.org/wiki/Leon_Festinger"
+licence = "original-summary"
