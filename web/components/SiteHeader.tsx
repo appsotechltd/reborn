@@ -3,11 +3,12 @@ import { AccountMenu } from "./AccountMenu";
 import { NavLinks } from "./NavLinks";
 import { NotificationBell } from "./NotificationBell";
 import { HeaderListenButton, StreakChip } from "./StreakChip";
+import { ThemeToggle } from "./ThemeToggle";
 
 /**
  * The site header. From md up: the wordmark, the link strip, the bell and the account menu.
  * The streak chip (signed in) opens today's idea and the streak. On phones it is the wordmark, the
- * streak, the feed's Listen (on the home feed), the bell and the avatar, as in the app; the main links are in the
+ * streak, the feed's Listen (on the home feed), the light/dark switch, the bell and the avatar, as in the app; the main links are in the
  * bottom tab bar (easier to reach with a thumb), and the rest are in the avatar menu. The browser's
  * own back button does the app bar's back arrow's job.
  */
@@ -31,6 +32,7 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-1 max-md:gap-0">
           <StreakChip />
           <HeaderListenButton />
+          <ThemeToggle />
           <NotificationBell />
           <AccountMenu />
         </div>

@@ -26,6 +26,7 @@ class ReviewScreen extends ConsumerWidget {
               label: const Text('Quiz'),
             ),
           const NotificationBell(),
+          const ThemeToggleButton(),
           const ProfileMenuButton(),
           const SizedBox(width: 8),
         ],

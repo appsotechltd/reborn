@@ -50,7 +50,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       appBar: AppBar(
         leading: exitLeading(context),
         title: const Text('Search'),
-        actions: const [ProfileMenuButton(), SizedBox(width: 8)],
+        actions: const [
+          ThemeToggleButton(),
+          ProfileMenuButton(),
+          SizedBox(width: 8),
+        ],
       ),
       body: Column(
         children: [

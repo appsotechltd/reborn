@@ -320,7 +320,8 @@ void main() {
       );
       await push(tester, c, '/settings');
       expect(
-        find.text("Follows your TV's light or dark setting."),
+        // Dark is the default, so the hint names the TV, not the phone.
+        find.text('Always dark, whatever your TV uses.'),
         findsOneWidget,
       );
       expect(find.textContaining("phone's"), findsNothing);

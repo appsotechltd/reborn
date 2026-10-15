@@ -38,16 +38,15 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   // Lets the phone tab bar pad itself clear of the home indicator (env(safe-area-inset-bottom)).
   viewportFit: "cover",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#faf8f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#14110e" },
-  ],
+  // Dark is the default, whatever the device prefers.
+  themeColor: "#14110e",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     // suppressHydrationWarning: the inline script may set data-theme before React hydrates.
-    <html lang="en" className={`${fraunces.variable} ${figtree.variable}`} suppressHydrationWarning>
+    // Dark by default (as in the app); the script switches to the reader's choice before first paint.
+    <html lang="en" data-theme="dark" className={`${fraunces.variable} ${figtree.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
