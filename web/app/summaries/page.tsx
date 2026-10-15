@@ -3,6 +3,7 @@ import { LibraryHeader } from "@/components/Library";
 import { SummaryPost } from "@/components/SummaryPost";
 import { Unavailable } from "@/components/Unavailable";
 import { getAllSummaries, loadOr } from "@/lib/server-api";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const revalidate = 600;
 
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
   title: "Summaries",
   description,
   alternates: { canonical: "/summaries" },
-  openGraph: { siteName: "Reborn", title: "Summaries", description, url: "/summaries" },
-  twitter: { card: "summary", title: "Summaries", description },
+  openGraph: { siteName: "Reborn", title: "Summaries", description, url: "/summaries", images: [DEFAULT_OG_IMAGE] },
+  twitter: { card: "summary_large_image", title: "Summaries", description, images: [DEFAULT_OG_IMAGE] },
 };
 
 export default async function SummariesPage() {

@@ -11,6 +11,7 @@ import '../card/card_view.dart';
 import '../listen/listen_controller.dart';
 import '../listen/listen_follow.dart';
 import '../post/post_view.dart';
+import '../post/share.dart';
 import 'summary_controller.dart';
 import 'summary_widgets.dart';
 
@@ -150,6 +151,11 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
                 _pages?.dispose();
                 _pages = PageController(initialPage: _index);
               }),
+            ),
+            ShareLinkButton(
+              key: const ValueKey('summary-share'),
+              title: d.summary.title,
+              path: '/summaries/${Uri.encodeComponent(widget.summaryId)}',
             ),
             IconButton(
               key: const ValueKey('summary-listen-all'),

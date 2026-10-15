@@ -63,6 +63,16 @@ export function reasonText(reason: PostReason | null | undefined): string | null
   }
 }
 
+/** An author route param may arrive percent-encoded; decode once, tolerating stray "%". */
+export function authorFromParam(raw: string): string {
+  if (!raw.includes("%")) return raw;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return raw;
+  }
+}
+
 export function authorHref(name: string): string {
   return `/authors/${encodeURIComponent(name)}`;
 }

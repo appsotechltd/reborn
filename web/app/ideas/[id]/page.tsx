@@ -5,7 +5,7 @@ import { CardList } from "@/components/CardPreview";
 import { CardView } from "@/components/CardView";
 import { Comments } from "@/components/Comments";
 import { GiftThanks } from "@/components/GiftThanks";
-import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
 import { ListenButton } from "@/components/ListenButton";
 import { PostActions } from "@/components/PostActions";
 import { Quiz } from "@/components/Quiz";
@@ -70,6 +70,7 @@ function cardJsonLd(card: Card) {
     url,
     mainEntityOfPage: url,
     headline: card.title,
+    image: `${url}/opengraph-image`,
     description: excerpt(card.body),
     articleBody: card.body,
     articleSection: topicName(card.topic),
@@ -109,6 +110,13 @@ export default async function IdeaPage({ params }: { params: Promise<{ id: strin
   return (
     <>
       <JsonLd data={cardJsonLd(card)} />
+      <JsonLd
+        data={breadcrumbsJsonLd(siteUrl(), [
+          [topicName(card.topic), `/topics/${card.topic}`],
+          [card.source.title, `/sources/${card.source.id}`],
+          [card.title, `/ideas/${card.id}`],
+        ])}
+      />
       <ViewTracker cardId={card.id} />
       <Suspense fallback={null}>
         <GiftThanks />

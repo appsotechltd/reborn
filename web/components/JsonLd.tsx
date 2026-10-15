@@ -7,3 +7,17 @@ export function JsonLd({ data }: { data: unknown }) {
     />
   );
 }
+
+/** schema.org BreadcrumbList for [name, site path] pairs, Home first. */
+export function breadcrumbsJsonLd(base: string, items: [string, string][]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [["Home", "/"] as [string, string], ...items].map(([name, path], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: `${base}${path === "/" ? "" : path}`,
+    })),
+  };
+}

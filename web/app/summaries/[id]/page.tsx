@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
+import { ShareMenu } from "@/components/ShareMenu";
 import { SummaryCover } from "@/components/SummaryPost";
 import { SummaryReader, type SummaryView } from "@/components/SummaryReader";
 import { Unavailable } from "@/components/Unavailable";
 import { getSitemap, getSummary, loadOr } from "@/lib/server-api";
+import { siteUrl } from "@/lib/config";
 import { coverageLabel, summaryByline } from "@/lib/summaries";
 
 export const revalidate = 600;
@@ -37,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     description,
     alternates: { canonical: url },
     openGraph: { siteName: "Reborn", type: "article", title, description, url },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -56,11 +59,42 @@ export default async function SummaryPage({
   const part = Number.parseInt(first(sp.part), 10);
   const initialPart = Number.isFinite(part) && part >= 1 ? Math.min(part, data.parts.length) - 1 : null;
 
+  const base = siteUrl();
+  const url = `${base}/summaries/${data.id}`;
+
   return (
     <div className="mx-auto max-w-3xl">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "@id": url,
+          url,
+          mainEntityOfPage: url,
+          headline: `${data.title}: ${coverageLabel(data).toLowerCase()}`,
+          description: data.description,
+          image: `${url}/opengraph-image`,
+          inLanguage: "en",
+          author: data.authors.map((name) => ({ "@type": "Person", name })),
+          publisher: { "@type": "Organization", name: "Reborn", url: base },
+          isBasedOn: data.source
+            ? { "@type": "Book", "@id": `${base}/sources/${data.source.id}`, name: data.source.title }
+            : undefined,
+          hasPart: data.parts.map((c, i) => ({
+            "@type": "Article",
+            position: i + 1,
+            headline: c.title,
+            url: `${base}/ideas/${c.id}`,
+          })),
+        }}
+      />
+      <JsonLd data={breadcrumbsJsonLd(base, [["Summaries", "/summaries"], [data.title, `/summaries/${data.id}`]])} />
       <header className="mx-auto max-w-read">
         <SummaryCover summary={data} headingLevel="h1" />
         <p className="mt-4 text-lg leading-relaxed text-fg-2">{data.description}</p>
+        <div className="mt-3">
+          <ShareMenu path={`/summaries/${data.id}`} title={data.title} what={data.coverage === "guide" ? "guide" : "summary"} label />
+        </div>
         {data.source ? (
           <p className="mt-2 text-sm text-muted">
             From{" "}

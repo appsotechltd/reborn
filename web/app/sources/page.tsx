@@ -4,6 +4,7 @@ import { Unavailable } from "@/components/Unavailable";
 import { topicName } from "@/lib/content";
 import { libraryFilters, type SearchParams } from "@/lib/library";
 import { getSourcesPage, loadOr } from "@/lib/server-api";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const revalidate = 600;
 
@@ -19,8 +20,8 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
     alternates: { canonical: topic && !q ? `/sources?topic=${topic}` : "/sources" },
     // Searches are endless near-duplicates; the topic filters are worth indexing.
     robots: q ? { index: false, follow: true } : undefined,
-    openGraph: { siteName: "Reborn", title, description, url: "/sources" },
-    twitter: { card: "summary", title, description },
+    openGraph: { siteName: "Reborn", title, description, url: "/sources", images: [DEFAULT_OG_IMAGE] },
+    twitter: { card: "summary_large_image", title, description, images: [DEFAULT_OG_IMAGE] },
   };
 }
 

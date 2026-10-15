@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: SITE_TAGLINE,
     url: "/",
   },
-  twitter: { card: "summary", title: SITE_NAME, description: SITE_TAGLINE },
+  twitter: { card: "summary_large_image", title: SITE_NAME, description: SITE_TAGLINE },
 };
 
 export default async function HomePage() {

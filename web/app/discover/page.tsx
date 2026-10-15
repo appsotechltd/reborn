@@ -8,6 +8,7 @@ import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors } from "@/lib/content";
 import { getDiscover, loadOr } from "@/lib/server-api";
 import { authorHref } from "@/lib/social";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const revalidate = 600;
 
@@ -17,8 +18,8 @@ export const metadata: Metadata = {
   title: "Discover",
   description,
   alternates: { canonical: "/discover" },
-  openGraph: { siteName: "Reborn", title: "Discover", description, url: "/discover" },
-  twitter: { card: "summary", title: "Discover", description },
+  openGraph: { siteName: "Reborn", title: "Discover", description, url: "/discover", images: [DEFAULT_OG_IMAGE] },
+  twitter: { card: "summary_large_image", title: "Discover", description, images: [DEFAULT_OG_IMAGE] },
 };
 
 export default async function DiscoverPage() {

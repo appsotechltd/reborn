@@ -3,28 +3,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CardsBrowser } from "@/components/CardsBrowser";
 import { AuthorFollowButton } from "@/components/FollowButton";
-import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
+import { ShareMenu } from "@/components/ShareMenu";
 import { VideoCount } from "@/components/Library";
 import { Unavailable } from "@/components/Unavailable";
 import { licenceName, topicName } from "@/lib/content";
 import { siteUrl } from "@/lib/config";
 import { getAuthor, loadOr } from "@/lib/server-api";
-import { authorHref } from "@/lib/social";
+import { authorFromParam, authorHref } from "@/lib/social";
 
 export const revalidate = 600;
 
-/** Route params may arrive percent-encoded; decode once, tolerating stray "%". */
-function authorName(raw: string): string {
-  if (!raw.includes("%")) return raw;
-  try {
-    return decodeURIComponent(raw);
-  } catch {
-    return raw;
-  }
-}
-
 export async function generateMetadata({ params }: { params: Promise<{ name: string }> }): Promise<Metadata> {
-  const name = authorName((await params).name);
+  const name = authorFromParam((await params).name);
   const { data } = await loadOr(() => getAuthor(name), null);
   if (!data) return { title: "Author not found", robots: { index: false } };
   const n = data.sources.length;
@@ -37,12 +28,12 @@ export async function generateMetadata({ params }: { params: Promise<{ name: str
     description,
     alternates: { canonical: url },
     openGraph: { siteName: "Reborn", type: "profile", title, description, url },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
 export default async function AuthorPage({ params }: { params: Promise<{ name: string }> }) {
-  const name = authorName((await params).name);
+  const name = authorFromParam((await params).name);
   const { data, ok } = await loadOr(() => getAuthor(name), null);
   if (!ok) return <Unavailable what="this author" />;
   if (!data) notFound();
@@ -57,8 +48,11 @@ export default async function AuthorPage({ params }: { params: Promise<{ name: s
           "@type": "Person",
           "@id": `${siteUrl()}${authorHref(data.name)}`,
           name: data.name,
+          url: `${siteUrl()}${authorHref(data.name)}`,
+          image: `${siteUrl()}${authorHref(data.name)}/opengraph-image`,
         }}
       />
+      <JsonLd data={breadcrumbsJsonLd(siteUrl(), [["Authors", "/authors"], [data.name, authorHref(data.name)]])} />
       <header className="mx-auto max-w-read text-center">
         <p className="eyebrow">Author</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-balance">{data.name}</h1>
@@ -67,8 +61,9 @@ export default async function AuthorPage({ params }: { params: Promise<{ name: s
           {videos ? `, ${videos} ${videos === 1 ? "video" : "videos"},` : ""} from {data.sources.length}{" "}
           {data.sources.length === 1 ? "work" : "works"}
         </p>
-        <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex flex-wrap justify-center gap-2">
           <AuthorFollowButton name={data.name} initial={{ followers: data.followers, is_following: false }} />
+          <ShareMenu path={authorHref(data.name)} title={`${data.name} on Reborn`} what="author" label />
         </div>
         <p className="mt-2 text-sm text-muted">Follow to see new ideas from {data.name} in your timeline.</p>
       </header>

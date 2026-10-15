@@ -7,6 +7,7 @@ import '../../data/providers.dart';
 import '../../theme.dart';
 import '../../widgets/common.dart';
 import '../blocks/block_actions.dart';
+import '../post/share.dart';
 import '../premium/premium_screen.dart';
 import 'favorites_screen.dart';
 import 'follow_button.dart';
@@ -34,6 +35,13 @@ class _UserProfileScreenState extends ConsumerState<UserProfileScreen> {
         leading: exitLeading(context),
         title: Text('@$handle'),
         actions: [
+          ShareLinkButton(
+            key: const ValueKey('profile-share'),
+            title: p == null || p.displayName.isEmpty
+                ? '@$handle on Reborn'
+                : '${p.displayName} on Reborn',
+            path: '/u/${Uri.encodeComponent(handle)}',
+          ),
           if (p != null && !p.isMe)
             BlockMenu(
               userId: p.id,
