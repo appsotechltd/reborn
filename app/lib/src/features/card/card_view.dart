@@ -185,6 +185,7 @@ class _Pill extends StatelessWidget {
   }
 }
 
+/// The quote on a soft panel, a large amber quote mark at its corner.
 class _QuoteBlock extends StatelessWidget {
   const _QuoteBlock({required this.quote, this.locator});
   final String quote;
@@ -194,36 +195,61 @@ class _QuoteBlock extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final c = Candlelight.of(context);
+    final dark = theme.brightness == Brightness.dark;
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      padding: const EdgeInsets.fromLTRB(16, 4, 12, 4),
+      margin: const EdgeInsets.only(top: 4, bottom: 14),
       decoration: BoxDecoration(
-        border: Border(left: BorderSide(color: c.oxblood, width: 2)),
+        color: dark ? theme.cardColor : c.inset,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: dark ? const Color(0x10F2E8D8) : c.line),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Stack(
         children: [
-          Text(
-            displayQuote(quote),
-            style: TextStyle(
-              fontFamily: kDisplayFont,
-              fontWeight: FontWeight.w600,
-              fontStyle: FontStyle.italic,
-              fontSize: 18,
-              height: 1.45,
-              color: c.ink2,
+          Positioned(
+            left: 14,
+            top: -8,
+            child: ExcludeSemantics(
+              child: Text(
+                '“',
+                style: TextStyle(
+                  fontFamily: kDisplayFont,
+                  fontSize: 64,
+                  height: 1,
+                  color: CandlelightTokens.amber,
+                ),
+              ),
             ),
           ),
-          if (locator != null) ...[
-            const SizedBox(height: 6),
-            Text('— $locator', style: theme.textTheme.bodySmall),
-          ],
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 30, 20, 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  displayQuote(quote),
+                  style: TextStyle(
+                    fontFamily: kDisplayFont,
+                    fontWeight: FontWeight.w600,
+                    fontStyle: FontStyle.italic,
+                    fontSize: 18,
+                    height: 1.45,
+                    color: theme.colorScheme.onSurface,
+                  ),
+                ),
+                if (locator != null) ...[
+                  const SizedBox(height: 8),
+                  Text(locator!, style: theme.textTheme.bodySmall),
+                ],
+              ],
+            ),
+          ),
         ],
       ),
     );
   }
 }
 
+/// "Apply it": the step to take today, on a warm amber panel with a flame.
 class _ApplyIt extends StatelessWidget {
   const _ApplyIt({required this.text});
   final String text;
@@ -231,24 +257,40 @@ class _ApplyIt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final c = Candlelight.of(context);
+    final scheme = theme.colorScheme;
     return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
+      padding: const EdgeInsets.fromLTRB(16, 14, 18, 16),
       decoration: BoxDecoration(
-        color: c.inset,
-        borderRadius: BorderRadius.circular(CandlelightTokens.radiusInset),
+        color: scheme.primaryContainer,
+        borderRadius: BorderRadius.circular(20),
       ),
-      child: Column(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CategoryTag('Apply it'),
-          const SizedBox(height: 4),
-          Text(
-            text,
-            style: theme.textTheme.bodyLarge?.copyWith(
-              color: theme.colorScheme.onSurface,
-              fontSize: 16,
-              height: 1.5,
+          const Padding(
+            padding: EdgeInsets.only(top: 1),
+            child: Icon(
+              Icons.local_fire_department_rounded,
+              size: 22,
+              color: CandlelightTokens.amber,
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CategoryTag('Apply it', color: scheme.onPrimaryContainer),
+                const SizedBox(height: 4),
+                Text(
+                  text,
+                  style: theme.textTheme.bodyLarge?.copyWith(
+                    color: scheme.onPrimaryContainer,
+                    fontSize: 16,
+                    height: 1.5,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
@@ -304,7 +346,7 @@ class CardPicture extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       key: const ValueKey('card-image'),
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(18),
       child: AspectRatio(
         aspectRatio: 3 / 2,
         child: ColoredBox(

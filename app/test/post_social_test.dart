@@ -55,6 +55,19 @@ Finder reactionCount(String reaction, String count) => find.descendant(
   matching: find.text(count),
 );
 
+/// Opens the reaction picker under the React button.
+Future<void> openReactions(WidgetTester tester) async {
+  await tester.tap(find.byKey(const ValueKey('post-react')));
+  await tester.pumpAndSettle();
+}
+
+/// Opens the picker and taps one reaction (which closes it).
+Future<void> react(WidgetTester tester, String reaction) async {
+  await openReactions(tester);
+  await tester.tap(find.byKey(ValueKey('reaction-$reaction')));
+  await tester.pumpAndSettle();
+}
+
 void main() {
   testWidgets('reactions are optimistic, one per user, tap again clears', (
     tester,
@@ -68,11 +81,15 @@ void main() {
     );
     expect(find.text(sampleCard().title), findsOneWidget);
     expect(find.text(sampleCard().applyIt), findsOneWidget);
+    await openReactions(tester);
     expect(reactionCount('love', '2'), findsOneWidget);
-    expect(reactionCount('like', '0'), findsOneWidget);
+    // A reaction nobody has picked shows no count.
+    expect(find.byKey(const ValueKey('reaction-like')), findsOneWidget);
+    expect(reactionCount('like', '0'), findsNothing);
 
     await tester.tap(find.byKey(const ValueKey('reaction-love')));
     await tester.pumpAndSettle();
+    await openReactions(tester);
     expect(reactionCount('love', '3'), findsOneWidget);
     expect(server.called('PUT /v1/posts/$postId/reaction').single.body, {
       'kind': 'love',
@@ -81,13 +98,15 @@ void main() {
     // Switching moves the reaction.
     await tester.tap(find.byKey(const ValueKey('reaction-insightful')));
     await tester.pumpAndSettle();
+    await openReactions(tester);
     expect(reactionCount('love', '2'), findsOneWidget);
     expect(reactionCount('insightful', '1'), findsOneWidget);
 
     // Tapping the same one again clears it.
     await tester.tap(find.byKey(const ValueKey('reaction-insightful')));
     await tester.pumpAndSettle();
-    expect(reactionCount('insightful', '0'), findsOneWidget);
+    await openReactions(tester);
+    expect(reactionCount('insightful', '1'), findsNothing);
     expect(server.called('DELETE /v1/posts/$postId/reaction'), hasLength(1));
   });
 
@@ -103,10 +122,10 @@ void main() {
       prefs: signedInPrefs,
       location: '/cards/$postId',
     );
-    await tester.tap(find.byKey(const ValueKey('reaction-like')));
-    await tester.pumpAndSettle();
-    expect(reactionCount('like', '0'), findsOneWidget);
+    await react(tester, 'like');
     expect(find.text('Something broke'), findsOneWidget);
+    await openReactions(tester);
+    expect(reactionCount('like', '1'), findsNothing);
   });
 
   testWidgets('favourite toggles with its count', (tester) async {
@@ -122,7 +141,7 @@ void main() {
     await tester.tap(fav);
     await tester.pumpAndSettle();
     expect(find.descendant(of: fav, matching: find.text('5')), findsOneWidget);
-    expect(find.byIcon(Icons.favorite), findsOneWidget);
+    expect(find.byIcon(Icons.favorite_rounded), findsOneWidget);
     await tester.tap(fav);
     await tester.pumpAndSettle();
     expect(find.descendant(of: fav, matching: find.text('4')), findsOneWidget);
@@ -163,8 +182,7 @@ void main() {
   ) async {
     final server = postServer(signedIn: false);
     await pumpApp(tester, server, location: '/cards/$postId');
-    await tester.tap(find.byKey(const ValueKey('reaction-love')));
-    await tester.pumpAndSettle();
+    await react(tester, 'love');
     expect(find.text('Welcome back.'), findsOneWidget);
     expect(find.text('Forgot password?'), findsOneWidget);
     await tester.pageBack();

@@ -124,6 +124,7 @@ void main() {
 
     testWidgets('shows the best run when it is longer', (t) async {
       await pumpApp(t, streakServer(), size: phone, prefs: signedInPrefs);
+      await openStreak(t);
       expect(find.byKey(const ValueKey('streak-card')), findsOneWidget);
       expect(find.textContaining('2-day streak'), findsOneWidget);
       expect(find.textContaining('best 9'), findsOneWidget);
@@ -136,6 +137,7 @@ void main() {
         size: phone,
         prefs: signedInPrefs,
       );
+      await openStreak(t);
       expect(find.textContaining('4-day streak'), findsOneWidget);
       expect(find.textContaining('best'), findsNothing);
     });
@@ -143,6 +145,7 @@ void main() {
     testWidgets('Change goal picks a new daily goal and saves it', (t) async {
       final server = streakServer();
       await pumpApp(t, server, size: phone, prefs: signedInPrefs);
+      await openStreak(t);
       await t.tap(find.byKey(const ValueKey('change-goal')));
       await t.pumpAndSettle();
       expect(find.byKey(const ValueKey('goal-picker')), findsOneWidget);
@@ -213,4 +216,10 @@ void main() {
   test('light reactions use the accessible amber', () {
     expect(CandlelightTokens.light.react, const Color(0xFF9A5B0E));
   });
+}
+
+/// On phones the streak sits behind the flame chip in the top bar.
+Future<void> openStreak(WidgetTester t) async {
+  await t.tap(find.byKey(const ValueKey('streak-chip')));
+  await t.pumpAndSettle();
 }
