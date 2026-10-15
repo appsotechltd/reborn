@@ -73,7 +73,7 @@ describe("<CardView>", () => {
     render(<CardView card={makeCard({ quote: "A short quote." })} />);
     expect(screen.getByText("A first paragraph about taking small steps.")).toBeTruthy();
     expect(screen.getByText("A second paragraph about keeping going.")).toBeTruthy();
-    expect(screen.getByText("“A short quote.”")).toBeTruthy();
+    expect(screen.getByText("A short quote.")).toBeTruthy();
     expect(screen.getByRole("region", { name: "Apply it" }).textContent).toContain("Pick one tiny step");
   });
 });

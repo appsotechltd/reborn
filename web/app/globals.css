@@ -37,6 +37,22 @@
   --ok: #3f7a3a;
   --bad: #b3412f;
   --focus: #9a5b0e;
+  /* "Candlelight refined": post covers, the streak chip, Apply it and the player (as in the app). */
+  --cover-from: #fbebd0;
+  --cover-to: #f3d7a6;
+  --cover-ink: #4a2d06;
+  --cover-mark: rgba(154, 91, 14, 0.13);
+  --cover-chip-bg: rgba(255, 255, 255, 0.7);
+  --cover-chip-fg: #9a5b0e;
+  --streak-bg: #fbebd0;
+  --streak-border: #f0d9b0;
+  --streak-fg: #9a5b0e;
+  --amber-wash: #fbebd0;
+  --on-amber-wash: #4a2d06;
+  --quote-panel: #f6f2ea;
+  --post-border: #ddd7cc;
+  --nav-shadow: 0 12px 28px -12px rgba(60, 40, 10, 0.3);
+  --player-bg: linear-gradient(180deg, #f6ddb0 0%, #f4e9da 45%, #f1efea 100%);
   color-scheme: light;
 }
 
@@ -71,6 +87,21 @@
     --ok: #7fb36a;
     --bad: #e0664f;
     --focus: #e9a23b;
+    --cover-from: #3a2b17;
+    --cover-to: #221a12;
+    --cover-ink: #f6ddb3;
+    --cover-mark: rgba(233, 162, 59, 0.18);
+    --cover-chip-bg: rgba(20, 17, 14, 0.62);
+    --cover-chip-fg: #f3b65a;
+    --streak-bg: rgba(233, 162, 59, 0.1);
+    --streak-border: rgba(233, 162, 59, 0.28);
+    --streak-fg: #f3b65a;
+    --amber-wash: #3a2b17;
+    --on-amber-wash: #f6ddb3;
+    --quote-panel: #1f1a15;
+    --post-border: rgba(242, 232, 216, 0.06);
+    --nav-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.6);
+    --player-bg: linear-gradient(180deg, #3a2410 0%, #1e150d 45%, #14110e 100%);
     color-scheme: dark;
   }
 }
@@ -105,6 +136,21 @@
   --ok: #7fb36a;
   --bad: #e0664f;
   --focus: #e9a23b;
+  --cover-from: #3a2b17;
+  --cover-to: #221a12;
+  --cover-ink: #f6ddb3;
+  --cover-mark: rgba(233, 162, 59, 0.18);
+  --cover-chip-bg: rgba(20, 17, 14, 0.62);
+  --cover-chip-fg: #f3b65a;
+  --streak-bg: rgba(233, 162, 59, 0.1);
+  --streak-border: rgba(233, 162, 59, 0.28);
+  --streak-fg: #f3b65a;
+  --amber-wash: #3a2b17;
+  --on-amber-wash: #f6ddb3;
+  --quote-panel: #1f1a15;
+  --post-border: rgba(242, 232, 216, 0.06);
+  --nav-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.6);
+  --player-bg: linear-gradient(180deg, #3a2410 0%, #1e150d 45%, #14110e 100%);
   color-scheme: dark;
 }
 
@@ -135,6 +181,13 @@
   --color-warn-fg: var(--warn-fg);
   --color-ok: var(--ok);
   --color-bad: var(--bad);
+  --color-cover-ink: var(--cover-ink);
+  --color-streak: var(--streak-bg);
+  --color-streak-line: var(--streak-border);
+  --color-streak-fg: var(--streak-fg);
+  --color-amber-wash: var(--amber-wash);
+  --color-on-amber-wash: var(--on-amber-wash);
+  --color-quote-panel: var(--quote-panel);
   /* Films stay dark in both modes. */
   --color-film: #14110e;
   --color-film-fg: #ffffff;
@@ -169,7 +222,7 @@ a {
 }
 
 /*
- * Phones (below md) get the app's layout: a bottom tab bar (fixed, clear of the home
+ * Phones (below md) get the app's layout: a floating capsule tab bar (fixed, clear of the home
  * indicator) and, on the home timeline, a full-screen feed that snaps one post per screen.
  * --header-h is kept equal to the sticky header (plus the feed's topic chips) by the
  * timeline; each slide is exactly the screen between that and the tab bar.
@@ -188,7 +241,8 @@ body:has([data-listen-bar]) {
 }
 @media (width < 48rem) {
   :root:has([data-tab-bar]) {
-    --tabbar-h: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+    /* The floating capsule: 4rem tall, 0.75rem above the home indicator, plus a little air above it. */
+    --tabbar-h: calc(5rem + env(safe-area-inset-bottom, 0px));
   }
   body:has([data-tab-bar]) {
     padding-bottom: calc(var(--tabbar-h) + var(--listen-h));
@@ -201,6 +255,10 @@ body:has([data-listen-bar]) {
   /* The mini-player takes 4rem from the first slide; drop the sign-up prompt so the post still fits. */
   html:has([data-listen-bar]) [data-join-prompt] {
     display: none;
+  }
+  /* The sign-up prompt shares the first slide: that post's cover gives up its height for it. */
+  [data-snap-feed] > li:has([data-join-prompt]) [data-post-cover] {
+    height: 110px;
   }
   html:has([data-snap-feed]) [data-site-footer] {
     scroll-snap-align: end;

@@ -10,6 +10,7 @@ import type { AuthorSummary, SourceSummary } from "@/lib/types";
 import { AuthorLinks } from "./CardView";
 import { ChipRow } from "./ChipRow";
 import { Icon } from "./Icon";
+import { BookCover, PersonAvatar } from "./Polish";
 
 /*
  * The Library: every book (/sources) and every author (/authors), searchable and filtered by topic.
@@ -79,33 +80,37 @@ export function VideoCount({ count }: { count: number | undefined }) {
 
 export function BookRow({ source: s }: { source: SourceSummary }) {
   return (
-    <li className="py-5">
-      <h2 className="font-serif text-xl font-semibold">
-        <Link href={`/sources/${s.id}`} className="inline-flex items-center hover:underline pointer-coarse:min-h-11">
-          {s.title}
-        </Link>
-      </h2>
-      <p className="mt-1 text-muted">
-        <AuthorLinks authors={s.authors} className="hover:text-fg hover:underline" /> ·{" "}
-        <span className="capitalize">{s.kind}</span> · {licenceName(s.licence)}
-      </p>
-      <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
-        <span className="text-muted">{plural(s.card_count, "idea", "ideas")}</span>
-        <VideoCount count={s.video_count} />
-        {s.topics.map((t) => (
-          <Link key={t} href={`/topics/${t}`} className="chip hover:text-fg pointer-coarse:min-h-11">
-            {topicName(t)}
+    <li className="flex gap-4 py-5">
+      <BookCover id={s.id} title={s.title} className="mt-1 h-[4.25rem] w-12 text-xl" />
+      <div className="min-w-0 flex-1">
+        <h2 className="font-serif text-xl font-semibold">
+          <Link href={`/sources/${s.id}`} className="inline-flex items-center hover:underline pointer-coarse:min-h-11">
+            {s.title}
           </Link>
-        ))}
-      </p>
+        </h2>
+        <p className="mt-1 text-muted">
+          <AuthorLinks authors={s.authors} className="hover:text-fg hover:underline" /> ·{" "}
+          <span className="capitalize">{s.kind}</span> · {licenceName(s.licence)}
+        </p>
+        <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+          <span className="text-muted">{plural(s.card_count, "idea", "ideas")}</span>
+          <VideoCount count={s.video_count} />
+          {s.topics.map((t) => (
+            <Link key={t} href={`/topics/${t}`} className="chip hover:text-fg pointer-coarse:min-h-11">
+              {topicName(t)}
+            </Link>
+          ))}
+        </p>
+      </div>
     </li>
   );
 }
 
 export function AuthorRow({ author: a }: { author: AuthorSummary }) {
   return (
-    <li className="relative flex items-center justify-between gap-4 py-4">
-      <div className="min-w-0">
+    <li className="relative flex items-center gap-4 py-4">
+      <PersonAvatar name={a.name} />
+      <div className="min-w-0 flex-1">
         <h2 className="font-serif text-xl font-semibold">
           <Link href={authorHref(a.name)} className="after:absolute after:inset-0 hover:underline">
             {a.name}
@@ -239,7 +244,7 @@ export function LibraryBrowser<K extends LibraryKind>({
             onChange={(e) => setQ(e.currentTarget.value)}
             placeholder={kind === "books" ? "Search books or authors" : "Search authors"}
             autoComplete="off"
-            className="field pl-11"
+            className="field h-12 rounded-full border-line bg-surface pl-11 focus-visible:border-accent focus-visible:outline-none"
           />
         </div>
       </form>

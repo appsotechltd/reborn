@@ -5,9 +5,15 @@ import { useRef, useState } from "react";
 import { isApiError } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import type { Stash } from "@/lib/types";
+import { Icon } from "./Icon";
 
-/** "Save" a card to a collection (stashes in the API): pick one or create one. Prompts sign-in when signed out. */
-export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: string }) {
+const ICON_CLASS = "btn btn-small btn-ghost px-2.5 text-muted hover:text-fg";
+
+/**
+ * "Save" a card to a collection (stashes in the API): pick one or create one. Prompts sign-in when signed out.
+ * With `icon`, it is the bookmark in a post's action bar (as in the app) instead of a labelled button.
+ */
+export function StashButton({ cardId, cardTitle, icon = false }: { cardId: string; cardTitle: string; icon?: boolean }) {
   const { ready, user, api } = useAuth();
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [stashes, setStashes] = useState<Stash[] | null>(null);
@@ -17,7 +23,11 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
   const [newName, setNewName] = useState("");
 
   if (!ready) {
-    return (
+    return icon ? (
+      <button type="button" className={ICON_CLASS} disabled aria-label="Save to a collection">
+        <Icon name="bookmarkBorder" />
+      </button>
+    ) : (
       <button type="button" className="btn btn-small" disabled>
         Save
       </button>
@@ -25,7 +35,15 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
   }
 
   if (!user) {
-    return (
+    return icon ? (
+      <Link
+        href={`/signin?next=${encodeURIComponent(`/ideas/${cardId}`)}`}
+        className={ICON_CLASS}
+        aria-label="Save to a collection (sign in to save this idea)"
+      >
+        <Icon name="bookmarkBorder" />
+      </Link>
+    ) : (
       <Link href={`/signin?next=${encodeURIComponent(`/ideas/${cardId}`)}`} className="btn btn-small">
         <span aria-hidden="true">＋</span> Save
         <span className="sr-only"> to a collection (sign in to save this idea)</span>
@@ -79,10 +97,23 @@ export function StashButton({ cardId, cardTitle }: { cardId: string; cardTitle: 
 
   return (
     <>
-      <button type="button" className="btn btn-small" onClick={open} aria-haspopup="dialog">
-        <span aria-hidden="true">＋</span> Save
-        <span className="sr-only"> to a collection</span>
-      </button>
+      {icon ? (
+        <button
+          type="button"
+          className={saved.size ? "btn btn-small btn-ghost px-2.5 text-accent-text" : ICON_CLASS}
+          onClick={open}
+          aria-haspopup="dialog"
+          aria-label={saved.size ? "Saved to a collection" : "Save to a collection"}
+          title="Save to a collection"
+        >
+          <Icon name={saved.size ? "bookmark" : "bookmarkBorder"} />
+        </button>
+      ) : (
+        <button type="button" className="btn btn-small" onClick={open} aria-haspopup="dialog">
+          <span aria-hidden="true">＋</span> Save
+          <span className="sr-only"> to a collection</span>
+        </button>
+      )}
       <dialog
         ref={dialogRef}
         aria-labelledby={`stash-${cardId}-title`}

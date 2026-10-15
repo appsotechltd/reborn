@@ -63,7 +63,8 @@ describe("<Timeline>", () => {
       </AuthProvider>,
     );
     expect(screen.getByRole("heading", { name: "Idea 1" })).toBeTruthy();
-    expect(await screen.findByRole("link", { name: "Create an account" })).toBeTruthy();
+    // In the first slide on phones, above the grid on tablets and in the side panel on desktops.
+    expect((await screen.findAllByRole("link", { name: "Create an account" })).length).toBeGreaterThan(0);
     expect(screen.queryByRole("separator")).toBeNull();
   });
 });

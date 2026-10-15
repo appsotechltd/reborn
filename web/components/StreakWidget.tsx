@@ -8,16 +8,24 @@ import { useLoad } from "@/lib/use-load";
 import type { Streak } from "@/lib/types";
 import { Icon } from "./Icon";
 
-/** Current streak, today's ideas against the daily goal, and the last 7 days. Signed-in only. */
-export function StreakWidget() {
+type StreakVariant = "compact" | "wide" | "auto";
+
+/**
+ * Current streak, today's ideas against the daily goal, and the last 7 days. Signed-in only.
+ * `compact` is the app's card (the today sheet and the desktop side panel), `wide` the one-row
+ * strip above the tablet grid, and `auto` picks by screen width.
+ */
+export function StreakWidget({ variant = "auto" }: { variant?: StreakVariant }) {
   const { ready, token, api } = useAuth();
   const loader = useCallback(() => api.streak(), [api, token]); // eslint-disable-line react-hooks/exhaustive-deps
   const { data } = useLoad(ready && token ? loader : null);
   if (!data) return null;
-  return <StreakCard streak={data} />;
+  return <StreakCard streak={data} variant={variant} />;
 }
 
-export function StreakCard({ streak }: { streak: Streak }) {
+export function StreakCard({ streak, variant = "auto" }: { streak: Streak; variant?: StreakVariant }) {
+  if (variant === "compact") return <PhoneStreakCard streak={streak} className="" />;
+  if (variant === "wide") return <WideStreakCard streak={streak} className="" />;
   return (
     <>
       <PhoneStreakCard streak={streak} />
@@ -27,12 +35,12 @@ export function StreakCard({ streak }: { streak: Streak }) {
 }
 
 /** The app's streak card, on phones: flame and count, today against the goal, the week's dots. */
-function PhoneStreakCard({ streak }: { streak: Streak }) {
+function PhoneStreakCard({ streak, className = "md:hidden" }: { streak: Streak; className?: string }) {
   const goal = Math.max(1, streak.goal);
   const pct = Math.min(100, Math.round((streak.today / goal) * 100));
   const days = streak.current === 1 ? "1-day streak" : `${streak.current}-day streak`;
   return (
-    <section aria-label="Your reading streak" className="panel mb-2 flex shrink-0 items-center gap-4 p-4 md:hidden">
+    <section aria-label="Your reading streak" className={`panel mb-2 flex shrink-0 items-center gap-4 p-4 ${className}`}>
       <p className="flex flex-col items-center">
         <Icon name="fire" className={`size-8 ${streak.current > 0 ? "text-react" : "text-muted"}`} />
         <span className="font-serif text-xl font-semibold leading-tight">{streak.current}</span>
@@ -75,11 +83,11 @@ function PhoneStreakCard({ streak }: { streak: Streak }) {
   );
 }
 
-function WideStreakCard({ streak }: { streak: Streak }) {
+function WideStreakCard({ streak, className = "max-md:hidden" }: { streak: Streak; className?: string }) {
   const goal = Math.max(1, streak.goal);
   const pct = Math.min(100, Math.round((streak.today / goal) * 100));
   return (
-    <section aria-label="Your reading streak" className="panel mx-auto mb-6 max-w-3xl max-md:hidden flex flex-wrap items-center gap-x-6 gap-y-3 p-4 sm:px-6">
+    <section aria-label="Your reading streak" className={`panel mx-auto mb-6 flex max-w-3xl flex-wrap items-center gap-x-6 gap-y-3 p-4 sm:px-6 ${className}`}>
       <p className="flex items-baseline gap-2">
         <span aria-hidden="true" className="text-2xl">🔥</span>
         <span className="text-2xl font-semibold">{streak.current}</span>

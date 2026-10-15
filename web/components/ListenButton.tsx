@@ -70,3 +70,35 @@ export function ListenIconButton({ card }: { card: Card }) {
     </button>
   );
 }
+
+/**
+ * The phone feed preview's outlined Listen pill, beside "Read the idea" (as in the app): plays the
+ * card, or pauses and resumes it while it's the one playing. Hidden when it can't play here.
+ */
+export function ListenPill({ card }: { card: Card }) {
+  const hydrated = useHydrated();
+  const { player, state } = useListen();
+  if (!hydrated || !player || !player.canPlay(card)) return null;
+
+  const current = state.active && state.items[state.index]?.card.id === card.id && state.phase !== "finished";
+  const playing = current && state.playing;
+
+  function press() {
+    if (!player) return;
+    if (current) player.toggle();
+    else player.start({ items: [{ id: card.id, card }], single: true });
+  }
+
+  return (
+    <button
+      type="button"
+      className="btn h-[2.875rem] shrink-0 gap-1.5 px-4"
+      onClick={press}
+      aria-pressed={playing}
+      aria-label={playing ? "Pause this idea" : current ? "Resume this idea" : "Listen to this idea"}
+    >
+      <Icon name={playing ? "pause" : "headphones"} className="size-[1.125rem]" />
+      {playing ? "Pause" : current ? "Resume" : "Listen"}
+    </button>
+  );
+}

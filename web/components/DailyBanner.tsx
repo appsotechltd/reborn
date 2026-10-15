@@ -7,10 +7,11 @@ import { useLoad } from "@/lib/use-load";
 import { Icon } from "./Icon";
 
 /**
- * "Today's idea" at the top of the phone feed, as in the app: a card with the day's idea that
- * opens it. Phones only (below md); renders nothing until (or unless) the idea has loaded.
+ * "Today's idea", as in the app: a card with the day's idea that opens it. In the today sheet (the
+ * streak chip), above the tablet grid and in the desktop side panel; renders nothing until (or
+ * unless) the idea has loaded.
  */
-export function DailyBanner() {
+export function DailyBanner({ className = "", onOpen }: { className?: string; onOpen?: () => void }) {
   const { ready, api } = useAuth();
   const loader = useCallback(() => api.daily(), [api]);
   const { data } = useLoad(ready ? loader : null);
@@ -18,7 +19,8 @@ export function DailyBanner() {
   return (
     <Link
       href={`/ideas/${data.card.id}`}
-      className="panel mb-2 flex shrink-0 items-center gap-3 py-3 pl-4 pr-3 hover:bg-surface-2 md:hidden"
+      onClick={onOpen}
+      className={`panel mb-2 flex shrink-0 items-center gap-3 py-3 pl-4 pr-3 hover:bg-surface-2 ${className}`}
       data-testid="daily-banner"
     >
       <Icon name="sun" className="size-6 text-accent-text" />

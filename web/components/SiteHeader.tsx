@@ -2,10 +2,12 @@ import Link from "next/link";
 import { AccountMenu } from "./AccountMenu";
 import { NavLinks } from "./NavLinks";
 import { NotificationBell } from "./NotificationBell";
+import { HeaderListenButton, StreakChip } from "./StreakChip";
 
 /**
  * The site header. From md up: the wordmark, the link strip, the bell and the account menu.
- * On phones it is the wordmark, the bell and the avatar, as in the app; the main links are in the
+ * The streak chip (signed in) opens today's idea and the streak. On phones it is the wordmark, the
+ * streak, the feed's Listen (on the home feed), the bell and the avatar, as in the app; the main links are in the
  * bottom tab bar (easier to reach with a thumb), and the rest are in the avatar menu. The browser's
  * own back button does the app bar's back arrow's job.
  */
@@ -18,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-5xl items-center gap-x-4 px-4 py-1.5 max-md:gap-x-1 max-md:pl-2 max-md:pr-2 md:py-2">
         <Link
           href="/"
-          className="inline-flex min-h-11 items-center px-2 font-serif text-2xl font-semibold tracking-tight md:px-0"
+          className="inline-flex min-h-11 items-center px-2 font-serif text-2xl font-semibold tracking-tight max-md:text-[1.6875rem] md:px-0"
           aria-label="Reborn, home"
         >
           Reborn<span className="text-accent-text">.</span>
@@ -26,7 +28,9 @@ export function SiteHeader() {
         <nav aria-label="Main" className="min-w-0 flex-1 max-md:hidden">
           <NavLinks />
         </nav>
-        <div className="ml-auto flex items-center gap-1">
+        <div className="ml-auto flex items-center gap-1 max-md:gap-0">
+          <StreakChip />
+          <HeaderListenButton />
           <NotificationBell />
           <AccountMenu />
         </div>

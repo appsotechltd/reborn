@@ -1,9 +1,11 @@
 import type { Ref } from "react";
 import { reasonText } from "@/lib/social";
 import type { Post, PostReason } from "@/lib/types";
+import { topicName } from "@/lib/content";
 import { CardView } from "./CardView";
 import { Icon, type IconName } from "./Icon";
 import { PostActions } from "./PostActions";
+import { PostCover } from "./Polish";
 
 const REASON_ICON: Record<string, IconName> = {
   source: "book",
@@ -32,8 +34,9 @@ export function PostReasonLine({ reason, snap = false }: { reason: PostReason; s
  * A post in a list (timeline, favourites, profiles): the card with credit and licence, plus its actions.
  *
  * With `snap`, below the md breakpoint the post fits its slide in the full-screen feed with no
- * scrolling inside it (a swipe always moves to the next post): a preview card (why it's here, topic,
- * title, source, the body cut to the lines that fit, "Read more" for the card's page), with the
+ * scrolling inside it (a swipe always moves to the next post): a preview card (a cover with the
+ * picture or the quote and the topic, why it's here, title, source, the body cut to the lines that
+ * fit, "Read the idea" for the card's page and Listen), with the
  * action bar under the card so react, favourite, comments, share and gift are always in reach.
  * From md up it is the full card with its actions inside, as in other lists.
  */
@@ -51,23 +54,27 @@ export function PostCard({
   snap?: boolean;
 }) {
   const reason = showReason && post.reason ? post.reason : null;
+  // A video post opens with its video; every other phone feed post opens with a cover.
+  const card = post.card;
+  const cover = snap && !card.explainer && !card.video?.scenes?.length;
   return (
     <div
       ref={trackRef}
       data-post-id={post.id}
       className={`panel px-5 py-6 sm:px-8 sm:py-8 ${
         snap
-          ? "max-md:flex max-md:h-full max-md:flex-col max-md:rounded-none max-md:border-0 max-md:bg-transparent max-md:p-0 max-md:shadow-none"
+          ? "md:max-lg:px-5 md:max-lg:py-6 max-md:flex max-md:h-full max-md:flex-col max-md:rounded-none max-md:border-0 max-md:bg-transparent max-md:p-0 max-md:shadow-none"
           : ""
       }`}
     >
       <div
         className={
           snap
-            ? "max-md:flex max-md:min-h-0 max-md:flex-1 max-md:flex-col max-md:overflow-clip max-md:rounded-card max-md:border max-md:border-[var(--card-border)] max-md:bg-surface max-md:px-5 max-md:pb-3 max-md:pt-3.5 max-md:shadow-[var(--card-shadow)]"
+            ? "max-md:flex max-md:min-h-0 max-md:flex-1 max-md:flex-col max-md:overflow-clip max-md:rounded-[1.5rem] max-md:border max-md:border-[var(--post-border)] max-md:bg-surface max-md:px-5 max-md:pb-3.5 max-md:pt-3.5 max-md:shadow-[var(--card-shadow)]"
             : undefined
         }
       >
+        {cover ? <PostCover card={card} topic={topicName(card.topic)} className="-mx-5 -mt-3.5 mb-3.5 md:hidden" /> : null}
         {reason ? <PostReasonLine reason={reason} snap={snap} /> : null}
         <CardView card={post.card} headingLevel="h2" titleHref={`/ideas/${post.id}`} feed={snap} />
       </div>

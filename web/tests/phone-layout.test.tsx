@@ -84,7 +84,7 @@ describe("phone feed", () => {
     expect(screen.queryByRole("heading", { name: "Idea 1" })).toBeNull();
   });
 
-  it("puts today's idea and the swipe hint in the first slide", async () => {
+  it("keeps the first slide for the post: the sign-up prompt and the swipe hint, with today's idea off it", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn(async (input: string) =>
@@ -98,17 +98,20 @@ describe("phone feed", () => {
         <Timeline initialPosts={posts} initialCursor={null} />
       </AuthProvider>,
     );
-    const daily = await screen.findByTestId("daily-banner");
-    expect(daily.getAttribute("href")).toBe("/ideas/example-book--05");
-    expect(daily.textContent).toContain("Daily one");
+    // Today's idea sits above the tablet grid and in the desktop side panel; phones open it from the streak chip.
+    const daily = await screen.findAllByTestId("daily-banner");
+    expect(daily.map((d) => d.getAttribute("href"))).toEqual(["/ideas/example-book--05", "/ideas/example-book--05"]);
     const first = screen.getByRole("list", { name: "Timeline" }).querySelector("li")!;
-    expect(first.contains(daily)).toBe(true);
+    for (const d of daily) expect(first.contains(d)).toBe(false);
+    expect(daily[0].closest(".lg\\:hidden")).toBeTruthy();
+    expect(daily[1].closest("[data-side-panel]")!.className).toContain("lg:block");
     expect(first.textContent).toContain("Swipe up for the next idea");
-    await waitFor(() => expect(screen.getByRole("link", { name: "Create an account" })).toBeTruthy());
-    expect(first.contains(screen.getByRole("link", { name: "Create an account" }))).toBe(true);
+    await waitFor(() => expect(screen.getAllByRole("link", { name: "Create an account" }).length).toBeGreaterThan(0));
+    const join = within(first).getByRole("link", { name: "Create an account" });
+    expect(join.closest("[data-join-prompt]")!.className).toContain("md:hidden");
   });
 
-  it("previews a post like the app: reason with icon, amber source line, Read more pill, actions under the card", () => {
+  it("previews a post like the app: reason with icon, amber source line, cover with the topic, Read the idea pill, actions under the card", () => {
     vi.stubGlobal("fetch", vi.fn(async () => json(200, {})));
     const post = makePost({ reason: { kind: "topic", label: "Personal Development" } });
     const { container } = render(
@@ -122,7 +125,10 @@ describe("phone feed", () => {
     const source = screen.getByRole("link", { name: "An Example Book" });
     expect(source.className).toContain("text-accent-text");
     expect(screen.getByTestId("card-byline").textContent).toContain(" · ");
-    const readMore = screen.getByRole("link", { name: "Read more: Small steps beat big plans" });
+    const cover = container.querySelector<HTMLElement>("[data-post-cover]")!;
+    expect(cover.className).toContain("md:hidden");
+    expect(cover.textContent).toContain("Personal Development");
+    const readMore = screen.getByRole("link", { name: "Read the idea: Small steps beat big plans" });
     expect(readMore.className).toContain("btn-primary");
     // The body is cut to whole lines by FitBody (data-fit-lines), never scrolled.
     expect(container.querySelector("[data-card-body] [data-fit-lines]")).toBeTruthy();
@@ -130,7 +136,8 @@ describe("phone feed", () => {
     const actions = screen.getByTestId("post-actions");
     const box = container.querySelector("[data-card-preview]")!.parentElement!;
     expect(box.contains(actions)).toBe(false);
-    expect(box.className).toContain("max-md:rounded-card");
+    expect(box.className).toContain("max-md:rounded-[1.5rem]");
+    expect(box.contains(cover)).toBe(true);
   });
 
   it("names the source and authors for screen readers on the card page", () => {
