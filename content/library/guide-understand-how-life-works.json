@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-understand-how-life-works",
+    "title": "Understand How Life Works",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://evolution.berkeley.edu/evolution-101/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US National Human Genome Research Institute, the University of California Berkeley, the Natural History Museum London and the US National Institutes of Health.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: University of California Museum of Paleontology, Berkeley, Evolution 101, https://evolution.berkeley.edu/evolution-101/; National Human Genome Research Institute, A Brief Guide to Genomics, https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics; MedlinePlus Genetics (US National Library of Medicine), Help Me Understand Genetics, https://medlineplus.gov/genetics/understanding/; Natural History Museum London, What is natural selection?, https://www.nhm.ac.uk/discover/what-is-natural-selection.html; Natural History Museum London, What is biodiversity?, https://www.nhm.ac.uk/discover/what-is-biodiversity.html; National Institute of Allergy and Infectious Diseases, Immune System Overview, https://www.niaid.nih.gov/research/immune-system-overview; University of California Berkeley, Understanding Science, https://undsci.berkeley.edu/"
+  },
+  "cards": [
+    {
+      "id": "guide-understand-how-life-works--01",
+      "topic": "science",
+      "tags": [
+        "life",
+        "biology",
+        "big-picture"
+      ],
+      "title": "All living things share a handful of surprising rules",
+      "body": "An oak tree, a mushroom, a shark and you look nothing alike. Yet underneath, all known life runs on the same basic plan. Every living thing is made of cells. Every one stores its instructions in DNA, written in the same four-letter chemical code. Every one takes in energy, grows, responds to its surroundings and reproduces.\n\nThat shared plan is a clue. It points to a single family tree linking every organism on Earth, stretching back more than 3.5 billion years.\n\nThis guide follows life from the inside out: from cells and genes, to how traits pass between generations, to evolution, the web of ecosystems and the way your body defends itself. It ends with how scientists actually know all this, so you can judge new claims for yourself.",
+      "apply_it": "Pick any living thing near you, a plant, pet or insect, and name two things it has in common with you.",
+      "quiz": {
+        "question": "What do all known living things share?",
+        "options": [
+          "They all breathe air",
+          "They all have brains",
+          "They are all made of cells and use DNA",
+          "They all live on land"
+        ],
+        "answer": 2,
+        "explanation": "From bacteria to blue whales, all known life is built from cells and stores its instructions in DNA using the same code."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--02",
+      "topic": "science",
+      "tags": [
+        "cells",
+        "biology",
+        "body"
+      ],
+      "title": "Cells are the smallest units of life, and you are made of trillions",
+      "body": "A cell is a tiny, self-contained living unit wrapped in a thin oily membrane. Some organisms, like bacteria, are just one cell. You are made of around 30 trillion of them, working together.\n\nThere are two broad kinds. Bacteria and their cousins, the archaea, have simple cells with no nucleus. Plants, animals and fungi have more complex cells, with a nucleus that holds the DNA and small compartments that do special jobs. Mitochondria, for example, turn food into usable energy. Plant cells also have chloroplasts, which capture sunlight.\n\nYour cells are specialists. Nerve cells carry signals, red blood cells carry oxygen, and muscle cells contract. Almost all of them carry the same DNA. What makes them different is which genes each one switches on.",
+      "apply_it": "Look at the skin on the back of your hand and remember that each square millimetre holds many thousands of cells.",
+      "quiz": {
+        "question": "What makes a nerve cell different from a muscle cell in the same body?",
+        "options": [
+          "They switch on different genes",
+          "They contain completely different DNA",
+          "Nerve cells have no membrane",
+          "Muscle cells are bacteria"
+        ],
+        "answer": 0,
+        "explanation": "Almost all your cells carry the same DNA. They become different types by turning on different sets of genes."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--03",
+      "topic": "science",
+      "tags": [
+        "dna",
+        "genes",
+        "genetics"
+      ],
+      "title": "DNA is a code, and genes are its instructions for building you",
+      "body": "DNA is a long, twisted molecule shaped like a ladder, the famous double helix. Each rung is a pair of chemical letters, A with T and C with G. The order of those letters spells out information, much like letters spelling words.\n\nA gene is a stretch of DNA that usually carries the recipe for a protein. Proteins do most of the work in your body: they build muscle, digest food, carry oxygen and fight infection. Humans have roughly 20,000 protein-making genes, spread across about three billion letter pairs of DNA, packed into 23 pairs of chromosomes.\n\nYou get one set of chromosomes from each parent. All humans share about 99.9 percent of their DNA, which means the visible differences between people come from a very small fraction of it.",
+      "apply_it": "Find out one trait you share with a parent or grandparent and remember a gene likely played a part.",
+      "quiz": {
+        "question": "What does a gene usually do?",
+        "options": [
+          "Stores energy from food",
+          "Moves blood around the body",
+          "Fights germs directly",
+          "Carries the recipe for a protein"
+        ],
+        "answer": 3,
+        "explanation": "Most genes hold the instructions for making a particular protein, and proteins do most of the work inside living things."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--04",
+      "topic": "science",
+      "tags": [
+        "inheritance",
+        "heredity",
+        "genetics"
+      ],
+      "title": "Traits pass down through genes, but rarely in a simple way",
+      "body": "In the 1860s, a monk named Gregor Mendel bred pea plants and noticed that traits like flower colour passed down in predictable ratios. He had discovered that inheritance comes in units, which we now call genes.\n\nYou have two copies of most genes, one from each parent. Sometimes one version is dominant and hides the other, which is why two brown-eyed parents can have a blue-eyed child. Each parent passes on just one copy, chosen by chance.\n\nBut most traits, like height, are shaped by many genes working together, plus the environment. A child with tall parents may still be short if they had poor nutrition. Genes load the dice, while life and surroundings help decide how they roll. Be wary of anyone who claims there is a single gene for intelligence or personality.",
+      "apply_it": "Sketch a simple family tree of one visible trait, such as eye colour or a dimple, across three generations.",
+      "quiz": {
+        "question": "Why are most traits, like height, hard to predict?",
+        "options": [
+          "They are controlled by one gene only",
+          "They depend on many genes plus the environment",
+          "They are not inherited at all",
+          "They come only from the mother"
+        ],
+        "answer": 1,
+        "explanation": "Most traits are influenced by many genes together and by environment, such as diet, so they do not follow simple patterns."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--05",
+      "topic": "science",
+      "tags": [
+        "evolution",
+        "natural-selection",
+        "darwin"
+      ],
+      "title": "Evolution works because useful traits get passed on more often",
+      "body": "Natural selection is simple once you see it. Living things vary. Some of that variation is inherited. More offspring are born than can survive. So those with traits that help them survive and reproduce in their surroundings tend to leave more young, who inherit those traits.\n\nOver many generations, this shifts a population. Charles Darwin and Alfred Russel Wallace described the idea in 1858.\n\nYou can watch it happen today. When antibiotics are overused, the few bacteria that happen to resist them survive and multiply, creating resistant infections. That is why doctors ask you to take antibiotics only when needed and to finish the course as prescribed.\n\nEvolution has no goal or plan. It does not make creatures better in general, only better suited to where they live right now.",
+      "apply_it": "Next time you are prescribed antibiotics, follow the instructions exactly, knowing it helps slow resistance.",
+      "quiz": {
+        "question": "Why do antibiotic-resistant bacteria become more common?",
+        "options": [
+          "Bacteria decide to change",
+          "Antibiotics make bacteria stronger on purpose",
+          "Resistant bacteria survive and multiply when antibiotics kill the rest",
+          "Resistance is caught from people"
+        ],
+        "answer": 2,
+        "explanation": "Antibiotics kill susceptible bacteria, leaving resistant ones to reproduce. This is natural selection in action."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--06",
+      "topic": "science",
+      "tags": [
+        "tree-of-life",
+        "evolution",
+        "fossils"
+      ],
+      "title": "Every living thing is related on one vast family tree",
+      "body": "If you trace any two species back far enough, you find a shared ancestor. Humans and chimpanzees shared one around six to seven million years ago. Go back much further and you share ancestors with fish, plants and bacteria.\n\nScientists build this tree of life from several kinds of evidence that agree with each other. Fossils show creatures changing over time, like the transition from land mammals to whales. Anatomy reveals the same bone pattern in a human arm, a bat wing and a whale flipper. DNA comparisons show which species are close cousins.\n\nToday biologists group life into three great domains: bacteria, archaea, and eukaryotes, which include all plants, animals and fungi. Animals, it turns out, are more closely related to fungi than to plants.",
+      "apply_it": "Compare your arm with a picture of a bat wing or whale flipper and spot the matching bones.",
+      "quiz": {
+        "question": "Which pair is more closely related?",
+        "options": [
+          "Animals and plants",
+          "Animals and fungi",
+          "Fungi and bacteria",
+          "Plants and archaea"
+        ],
+        "answer": 1,
+        "explanation": "DNA evidence shows animals and fungi share a more recent common ancestor than either does with plants."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--07",
+      "topic": "science",
+      "tags": [
+        "microbes",
+        "bacteria",
+        "microbiome"
+      ],
+      "title": "Microbes run the planet, and most of them are harmless or helpful",
+      "body": "Microbes are living things too small to see without a microscope: bacteria, archaea, many fungi and tiny organisms called protists. Viruses are often grouped with them, though they cannot reproduce on their own.\n\nWe often think of microbes as germs, but only a small share cause disease. Ocean microbes make a large part of the oxygen we breathe. Soil microbes recycle dead matter into nutrients. Bacteria help us make bread, yoghurt and cheese.\n\nYour own body carries roughly as many bacterial cells as human ones, mostly in your gut. This community, your microbiome, helps digest food, makes some vitamins and trains your immune system. Eating plenty of fibre from vegetables, fruit, beans and whole grains feeds the helpful ones.\n\nKeep hygiene sensible: wash hands to block germs, but there is no need to try to sterilise your whole life.",
+      "apply_it": "Add one extra portion of fibre today, such as beans, oats or an apple, to feed your gut microbes.",
+      "quiz": {
+        "question": "What is true about most microbes?",
+        "options": [
+          "They all cause disease",
+          "They only live in dirty places",
+          "They are bigger than human cells",
+          "Most are harmless or helpful"
+        ],
+        "answer": 3,
+        "explanation": "Only a small fraction of microbes cause illness. Most are harmless, and many are essential for oxygen, soil and digestion."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--08",
+      "topic": "science",
+      "tags": [
+        "ecosystems",
+        "food-webs",
+        "ecology"
+      ],
+      "title": "Ecosystems run on energy from the Sun and links between species",
+      "body": "An ecosystem is a community of living things plus their surroundings, such as a pond, a forest or a coral reef. Almost all of them run on sunlight.\n\nPlants and algae capture that energy through photosynthesis. Plant eaters eat them, meat eaters eat the plant eaters, and decomposers like fungi and bacteria break down whatever dies, returning nutrients to the soil. Because energy is lost at each step, there are far fewer top predators than plants.\n\nThese links form a food web, not a simple chain. Removing one species can ripple through all the rest. When wolves returned to Yellowstone in the 1990s, they changed how elk grazed, and scientists linked this to recovering trees along some rivers, though they still debate how large the effect was. Small changes can matter a lot.",
+      "apply_it": "Next time you eat a meal, trace one ingredient back to the sunlight that grew it.",
+      "quiz": {
+        "question": "Why are there fewer top predators than plants in an ecosystem?",
+        "options": [
+          "Energy is lost at each step of the food web",
+          "Predators are lazier",
+          "Plants eat predators",
+          "Predators live longer"
+        ],
+        "answer": 0,
+        "explanation": "Only a fraction of energy passes from one level to the next, so each higher level can support fewer living things."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--09",
+      "topic": "science",
+      "tags": [
+        "immune-system",
+        "germs",
+        "vaccines"
+      ],
+      "title": "Your immune system learns, remembers and fights off germs",
+      "body": "Your body has layers of defence. Skin and the lining of your nose and gut form barriers. If germs get through, the fast innate system responds with inflammation, fever and white blood cells that swallow invaders.\n\nThen comes the clever part. The adaptive immune system builds targeted weapons: antibodies that lock onto a specific germ, and killer cells that destroy infected cells. This takes days the first time, which is why you feel ill.\n\nAfterwards, memory cells remain. If the same germ returns, they strike fast, often before you notice. Vaccines use this memory safely by showing the immune system a harmless piece or version of a germ, so it is ready for the real thing.\n\nSleep, a balanced diet, exercise and handwashing all help your defences work well.",
+      "apply_it": "Check that your routine vaccinations are up to date, or note to ask your doctor or pharmacist.",
+      "quiz": {
+        "question": "How does a vaccine protect you?",
+        "options": [
+          "It kills all germs in your body",
+          "It replaces your white blood cells",
+          "It trains immune memory using a harmless version or piece of a germ",
+          "It works only after you are sick"
+        ],
+        "answer": 2,
+        "explanation": "Vaccines let the immune system build memory cells without the danger of the full disease, so it can respond fast later."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--10",
+      "topic": "science",
+      "tags": [
+        "biodiversity",
+        "conservation",
+        "nature"
+      ],
+      "title": "Biodiversity keeps the living world resilient, and it is under pressure",
+      "body": "Biodiversity means the variety of life: different species, the genetic differences within them, and the range of habitats they form. Scientists have named about two million species, but estimates suggest there may be around eight million or more, most still undiscovered, especially insects and microbes.\n\nVariety makes nature sturdier, much like a varied diet or a varied investment fund. Diverse ecosystems cope better with disease, drought and change. They also give us food, medicines, clean water, pollination and flood protection.\n\nThe main threats are habitat loss, overuse such as overfishing, climate change, pollution and invasive species. Many populations of wild animals have shrunk sharply in recent decades.\n\nYou can help locally. Plant native flowers, leave a messy corner in a garden, cut pesticide use, and record wildlife sightings for citizen science.",
+      "apply_it": "Spend ten minutes outside and count how many different kinds of plants, insects or birds you can spot.",
+      "quiz": {
+        "question": "Which is a main threat to biodiversity?",
+        "options": [
+          "Planting native flowers",
+          "Recording wildlife sightings",
+          "Leaving garden corners wild",
+          "Habitat loss"
+        ],
+        "answer": 3,
+        "explanation": "Habitat loss, such as clearing forests and wetlands, is one of the biggest drivers of species decline worldwide."
+      }
+    },
+    {
+      "id": "guide-understand-how-life-works--11",
+      "topic": "science",
+      "tags": [
+        "scientific-method",
+        "evidence",
+        "critical-thinking"
+      ],
+      "title": "Science is a way of testing ideas against evidence, again and again",
+      "body": "Everything in this guide is known through science, which is less a list of facts than a method for checking ideas. Scientists ask a question, propose an explanation, and then make predictions that could prove it wrong. They test those predictions with observations or experiments, and share their methods so others can check.\n\nA scientific theory, like evolution or germ theory, is not a guess. It is a well-tested explanation supported by many lines of evidence. At the same time, science stays open to correction when new evidence appears.\n\nTo judge a claim you read, ask a few questions. What is the evidence? Was it a single study or many? Was it in people, animals or a dish? Who funded it? Do other experts agree? Curiosity plus healthy doubt is the heart of good thinking.",
+      "apply_it": "Pick one science headline you see today and ask: what was the evidence, and do other experts agree?",
+      "quiz": {
+        "question": "What does 'theory' mean in science?",
+        "options": [
+          "A wild guess",
+          "A well-tested explanation backed by lots of evidence",
+          "An idea nobody has checked",
+          "A belief held without proof"
+        ],
+        "answer": 1,
+        "explanation": "In science, a theory is a strong explanation supported by many lines of evidence, though always open to revision."
+      }
+    }
+  ]
+}

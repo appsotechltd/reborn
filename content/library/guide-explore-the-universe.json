@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-explore-the-universe",
+    "title": "Explore the Universe",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, Universe, https://science.nasa.gov/universe/; NASA Science, Stars, https://science.nasa.gov/universe/stars/; NASA Science, Black Holes, https://science.nasa.gov/universe/black-holes/; NASA Science, Exoplanets, https://science.nasa.gov/exoplanets/; NASA Science, Our Solar System, https://science.nasa.gov/solar-system/; NASA Science, Skywatching, https://science.nasa.gov/skywatching/; European Space Agency, Planck, https://www.esa.int/Science_Exploration/Space_Science/Planck"
+  },
+  "cards": [
+    {
+      "id": "guide-explore-the-universe--01",
+      "topic": "science",
+      "tags": [
+        "universe",
+        "scale",
+        "perspective"
+      ],
+      "title": "The universe is far bigger than anything your mind is built to picture",
+      "body": "Light travels about 300,000 kilometres every second. Even at that speed, it takes eight minutes to reach us from the Sun, more than four years from the nearest other star, and around 100,000 years to cross our galaxy, the Milky Way.\n\nAnd the Milky Way is just one galaxy among hundreds of billions that we can see. The part of the universe we can observe stretches roughly 93 billion light years from edge to edge, and it may carry on far beyond that.\n\nNumbers this big stop meaning anything, so astronomers use comparisons. If the Sun were a grapefruit in London, the nearest star would be another grapefruit in Moscow or Lisbon. Space is mostly empty.\n\nThis guide walks you outward, from our own Sun to the edge of what we can see, and ends with how to explore the sky yourself.",
+      "apply_it": "Tonight, look up at one bright star and remind yourself that its light left it years, maybe centuries, before you saw it.",
+      "quiz": {
+        "question": "Roughly how long does sunlight take to reach Earth?",
+        "options": [
+          "About one second",
+          "About eight minutes",
+          "About one day",
+          "About four years"
+        ],
+        "answer": 1,
+        "explanation": "The Sun is about 150 million kilometres away, so its light, moving at about 300,000 km per second, arrives roughly eight minutes after leaving."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--02",
+      "topic": "science",
+      "tags": [
+        "big-bang",
+        "cosmology",
+        "origins"
+      ],
+      "title": "Everything began in a hot, dense state about 13.8 billion years ago",
+      "body": "The Big Bang was not an explosion in empty space. It was space itself starting to stretch. About 13.8 billion years ago, everything we can see was packed into an extremely hot, dense state, and it has been expanding and cooling ever since.\n\nHow do we know? Three big clues. Distant galaxies are moving away from us, and the farther they are, the faster they go. The sky glows faintly with leftover heat from the early universe, which missions like ESA's Planck mapped in great detail. And the amounts of hydrogen and helium in old stars match what the early universe should have made.\n\nThere are still open questions. Most of the universe seems to be invisible dark matter and dark energy, and nobody yet knows what they are. Good science says so honestly.",
+      "apply_it": "Explain the Big Bang to someone in one sentence, using the idea that space itself is stretching.",
+      "quiz": {
+        "question": "Which clue supports the Big Bang?",
+        "options": [
+          "Stars twinkle at night",
+          "The Moon has craters",
+          "Faint leftover heat glows across the whole sky",
+          "Planets orbit the Sun"
+        ],
+        "answer": 2,
+        "explanation": "The cosmic microwave background is a faint glow of leftover heat from the young universe, one of the strongest pieces of evidence for the Big Bang."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--03",
+      "topic": "science",
+      "tags": [
+        "stars",
+        "life-cycle",
+        "elements"
+      ],
+      "title": "Stars are born in gas clouds and are powered by squeezing atoms together",
+      "body": "A star begins inside a huge cold cloud of gas and dust. Gravity pulls a clump together until its centre becomes so hot and crushed that hydrogen atoms fuse into helium. That fusion releases enormous energy, and a star switches on.\n\nOur Sun has been doing this for about 4.6 billion years and is roughly halfway through its life. In about five billion years it will swell into a red giant, then shrink into a small, dim white dwarf.\n\nBig stars live fast. They burn through their fuel in a few million years and end in a supernova, a blast that scatters elements like carbon, oxygen and iron into space. Those elements later build new stars, planets and people. The calcium in your bones and the iron in your blood were made inside stars long ago.",
+      "apply_it": "Hold something made of metal and remind yourself that its atoms were forged inside a star.",
+      "quiz": {
+        "question": "What powers a star like the Sun?",
+        "options": [
+          "Hydrogen fusing into helium",
+          "Burning coal-like material",
+          "Electricity from lightning",
+          "Heat left over from planets"
+        ],
+        "answer": 0,
+        "explanation": "In a star's core, intense heat and pressure fuse hydrogen into helium, releasing the energy that makes stars shine."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--04",
+      "topic": "science",
+      "tags": [
+        "solar-system",
+        "planets",
+        "sun"
+      ],
+      "title": "Our solar system is one star, eight planets and countless smaller worlds",
+      "body": "Our Sun holds more than 99 percent of the solar system's mass. Around it orbit eight planets. The four inner ones, Mercury, Venus, Earth and Mars, are small and rocky. The four outer ones are giants: Jupiter and Saturn are mostly gas, while Uranus and Neptune are rich in icy materials.\n\nBetween Mars and Jupiter lies the asteroid belt. Beyond Neptune is a cold zone of icy bodies, including the dwarf planet Pluto, and much farther out, a vast shell of comets.\n\nEach world tells part of a story. Venus shows how a thick carbon dioxide atmosphere can trap heat until the surface is hot enough to melt lead. Mars once had rivers and lakes. Jupiter's gravity has helped shape the orbits of everything around it. Earth, so far, is the only place we know where life exists.",
+      "apply_it": "Learn the planets in order with a phrase you make up yourself, using the first letter of each planet.",
+      "quiz": {
+        "question": "Which statement about the planets is correct?",
+        "options": [
+          "Jupiter is a small rocky planet",
+          "There are twelve planets",
+          "Pluto is the largest planet",
+          "The four inner planets are small and rocky"
+        ],
+        "answer": 3,
+        "explanation": "Mercury, Venus, Earth and Mars are rocky. Jupiter and Saturn are gas giants, Uranus and Neptune are ice giants, and Pluto is a dwarf planet."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--05",
+      "topic": "science",
+      "tags": [
+        "exoplanets",
+        "planets",
+        "discovery"
+      ],
+      "title": "Most stars have planets, and we have now found more than 6,000 of them",
+      "body": "Until the 1990s, nobody knew for sure whether other stars had planets. Today NASA counts more than 6,000 confirmed exoplanets, and the evidence suggests most stars have at least one.\n\nWe rarely see them directly, because a planet is tiny and faint next to its star. Instead, astronomers watch for clues. When a planet passes in front of its star, the starlight dips very slightly. When a planet tugs on its star, the star wobbles, which shifts its light.\n\nThe variety is astonishing. There are giant planets hotter than some stars, worlds that circle their sun in less than a day, and planets between the size of Earth and Neptune, a type our solar system lacks. Telescopes like James Webb can now study some of their atmospheres, looking for water, carbon dioxide and other gases.",
+      "apply_it": "Visit NASA's exoplanet pages and pick one strange world to read about for five minutes.",
+      "quiz": {
+        "question": "How do astronomers find most exoplanets?",
+        "options": [
+          "By photographing them up close",
+          "By listening for radio messages",
+          "By sending probes to each star",
+          "By watching for dips or wobbles in a star's light"
+        ],
+        "answer": 3,
+        "explanation": "Most exoplanets are found indirectly, through the small dip in light when a planet crosses its star, or the wobble its gravity causes."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--06",
+      "topic": "science",
+      "tags": [
+        "black-holes",
+        "gravity",
+        "physics"
+      ],
+      "title": "A black hole is matter squeezed so tight that not even light escapes",
+      "body": "When a very massive star dies, its core can collapse under its own gravity into a black hole. The pull near it is so strong that nothing, not even light, can climb back out once it crosses a boundary called the event horizon.\n\nBlack holes are not cosmic vacuum cleaners. From a safe distance, one behaves like any object of the same mass. If the Sun were swapped for a black hole of equal mass, Earth would keep orbiting just as before, though it would get very cold.\n\nAt the centre of our galaxy sits a giant one called Sagittarius A*, about four million times the Sun's mass. In 2019 and 2022, the Event Horizon Telescope, a network of radio dishes around the world, captured the first images of black hole shadows, ringed by glowing hot gas.",
+      "apply_it": "Next time someone says black holes suck everything in, explain why Earth would keep orbiting a Sun-mass black hole.",
+      "quiz": {
+        "question": "What would happen to Earth's orbit if the Sun became a black hole of the same mass?",
+        "options": [
+          "Earth would be sucked in at once",
+          "Earth would fly off into space",
+          "Earth would keep orbiting, but go cold and dark",
+          "Earth would start spinning faster"
+        ],
+        "answer": 2,
+        "explanation": "Gravity depends on mass and distance. Same mass, same distance, same orbit. Only the light and heat would be gone."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--07",
+      "topic": "science",
+      "tags": [
+        "galaxies",
+        "milky-way",
+        "cosmos"
+      ],
+      "title": "Galaxies are vast cities of stars, and ours is called the Milky Way",
+      "body": "A galaxy is a huge collection of stars, gas, dust and dark matter held together by gravity. Our Milky Way is a barred spiral about 100,000 light years across, holding perhaps 100 to 400 billion stars. The Sun sits in a quiet suburb, about halfway out from the centre.\n\nOn a dark night far from city lights, you can see the Milky Way as a pale band across the sky. You are looking edge on into the disc of our own galaxy.\n\nGalaxies come in spirals, smooth ovals called ellipticals, and irregular shapes. They also collide. The Andromeda galaxy, our big neighbour about 2.5 million light years away, is heading our way and is likely to merge with the Milky Way in billions of years. Because stars are so far apart, they would almost never actually crash.",
+      "apply_it": "Check a light pollution map online and find the nearest dark spot where you could see the Milky Way.",
+      "quiz": {
+        "question": "What is the pale band called the Milky Way that you can see on a dark night?",
+        "options": [
+          "A cloud of water vapour",
+          "Our own galaxy seen edge on from inside",
+          "A trail left by comets",
+          "The ring around the Moon"
+        ],
+        "answer": 1,
+        "explanation": "We live inside the disc of the Milky Way, so its billions of distant stars blend into a soft band of light across the sky."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--08",
+      "topic": "science",
+      "tags": [
+        "light",
+        "telescopes",
+        "time"
+      ],
+      "title": "Looking deep into space means looking back in time",
+      "body": "Light takes time to travel, so we always see things as they were when the light left them. You see the Moon as it was just over a second ago, and the Sun as it was eight minutes ago. The Andromeda galaxy appears as it looked 2.5 million years ago, before modern humans existed.\n\nThis turns telescopes into time machines. The farther away we look, the younger the universe appears. The James Webb Space Telescope, which sees in infrared light, has spotted galaxies whose light set out when the universe was only a few hundred million years old.\n\nInfrared matters because as the universe expands, light from very distant objects gets stretched toward longer, redder wavelengths. Webb is built to catch that stretched glow, letting astronomers watch the first galaxies forming.",
+      "apply_it": "Find a star or the Moon tonight and work out how long ago the light you are seeing set off.",
+      "quiz": {
+        "question": "Why does a distant galaxy look younger than it really is?",
+        "options": [
+          "Its light took a long time to reach us",
+          "Its stars are smaller",
+          "Telescopes add colour to it",
+          "Galaxies stop ageing when far away"
+        ],
+        "answer": 0,
+        "explanation": "We see light that left the galaxy long ago, so we see it as it was then, not as it is today."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--09",
+      "topic": "science",
+      "tags": [
+        "astrobiology",
+        "life",
+        "exploration"
+      ],
+      "title": "Scientists are searching for life beyond Earth in a few promising places",
+      "body": "Life as we know it needs liquid water, a source of energy and the right chemistry. So the search focuses on places that might have all three.\n\nMars had rivers and lakes billions of years ago, and rovers are drilling into old rocks for chemical traces of ancient microbes. Some rocks studied by NASA's Perseverance rover show intriguing patterns, but scientists stress that only careful lab work can confirm anything. Jupiter's moon Europa and Saturn's moon Enceladus hide oceans beneath their ice, and Enceladus sprays water into space. NASA's Europa Clipper is on its way to study Europa.\n\nFarther out, telescopes examine exoplanet atmospheres for gases that life might produce. Claims come up regularly, so expect headlines. The honest answer in 2026: no confirmed life beyond Earth yet, but we are looking harder than ever.",
+      "apply_it": "When you next see a 'life found in space' headline, check whether scientists say it is confirmed or just a possible sign.",
+      "quiz": {
+        "question": "Why are Europa and Enceladus exciting places to look for life?",
+        "options": [
+          "They are closer than the Moon",
+          "They are covered in forests",
+          "They have oceans of liquid water under their ice",
+          "They have breathable air"
+        ],
+        "answer": 2,
+        "explanation": "Both moons appear to hold liquid water oceans beneath icy shells, and water is one of the key ingredients for life as we know it."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--10",
+      "topic": "science",
+      "tags": [
+        "stargazing",
+        "skywatching",
+        "hobby"
+      ],
+      "title": "You can start stargazing tonight with nothing but your eyes",
+      "body": "You do not need a telescope to begin. Go somewhere as dark as you can, away from streetlights, and give your eyes 20 minutes to adjust. Avoid your bright phone screen, or use a red light, which keeps your night vision.\n\nStart with what is easy. The Moon is wonderful through ordinary binoculars, showing craters and mountains. Planets look like bright stars that do not twinkle much. Learn one pattern, such as the Plough in the north or Orion in winter, and use it to find others. Free star chart apps help, and NASA's monthly skywatching guide lists what to look for.\n\nIf you get hooked, binoculars are a better first buy than a cheap telescope. Local astronomy clubs often run free viewing nights where you can try real telescopes first.",
+      "apply_it": "Tonight, step outside for ten minutes, let your eyes adjust and find one bright planet or star pattern.",
+      "quiz": {
+        "question": "What is a good first piece of equipment for a new stargazer?",
+        "options": [
+          "An expensive large telescope",
+          "A bright torch",
+          "A smartphone with maximum brightness",
+          "Ordinary binoculars"
+        ],
+        "answer": 3,
+        "explanation": "Binoculars are cheap, easy to use and show the Moon's craters, star clusters and more. Bright lights spoil your night vision."
+      }
+    },
+    {
+      "id": "guide-explore-the-universe--11",
+      "topic": "science",
+      "tags": [
+        "perspective",
+        "wonder",
+        "science"
+      ],
+      "title": "Knowing our place in the cosmos can make life feel richer, not smaller",
+      "body": "It is easy to feel tiny after learning about billions of galaxies. But many people find the opposite. We are made of atoms forged in stars, living on a rare world with liquid water, able to work out the history of the universe with our minds and tools.\n\nWhen astronauts see Earth from space, many describe a shift in thinking: borders vanish, and the planet looks fragile and shared. Some call it the overview effect.\n\nAstronomy is also one of the most welcoming sciences. Amateurs discover comets, spot exploding stars and help classify galaxies through online citizen science projects. You can contribute real data from your sofa.\n\nKeep asking questions. The universe still holds huge mysteries, from dark matter to life elsewhere, and the next answers may arrive in your lifetime.",
+      "apply_it": "Join a free online citizen science astronomy project and classify a few images today.",
+      "quiz": {
+        "question": "What is one way ordinary people help astronomy?",
+        "options": [
+          "Through citizen science projects that classify real data",
+          "By voting on new planet names only",
+          "They cannot help without a degree",
+          "By building their own space stations"
+        ],
+        "answer": 0,
+        "explanation": "Citizen science projects let anyone help sort images of galaxies, spot new objects and more, contributing to real research."
+      }
+    }
+  ]
+}

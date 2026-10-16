@@ -1108,3 +1108,77 @@ id = "festingers-principle-leon-festinger"
 adapter = "summary"
 url = "https://en.wikipedia.org/wiki/Leon_Festinger"
 licence = "original-summary"
+
+# Category guides (2026-10-16): two complete guides each for the new and expanded categories.
+
+[[source]]
+id = "guide-use-ai-tools-well"
+adapter = "summary"
+url = "https://mitsloanedtech.mit.edu/ai/basics/effective-prompts/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-future-proof-your-career"
+adapter = "summary"
+url = "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-explore-the-universe"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-understand-how-life-works"
+adapter = "summary"
+url = "https://evolution.berkeley.edu/evolution-101/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-live-well-with-adhd"
+adapter = "summary"
+url = "https://www.nhs.uk/conditions/adhd-adults/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-recover-from-burnout"
+adapter = "summary"
+url = "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+licence = "original-summary"
+
+[[source]]
+id = "guide-live-longer-and-healthier"
+adapter = "summary"
+url = "https://www.nia.nih.gov/health/healthy-aging/what-do-we-know-about-healthy-aging"
+licence = "original-summary"
+
+[[source]]
+id = "guide-navigate-menopause"
+adapter = "summary"
+url = "https://www.nhs.uk/conditions/menopause/"
+licence = "original-summary"
+
+[[source]]
+id = "guide-spot-and-stop-scams"
+adapter = "summary"
+url = "https://consumer.ftc.gov/articles/how-avoid-scam"
+licence = "original-summary"
+
+[[source]]
+id = "guide-how-crimes-get-solved"
+adapter = "summary"
+url = "https://nij.ojp.gov/topics/forensics"
+licence = "original-summary"
+
+[[source]]
+id = "guide-lessons-from-fallen-empires"
+adapter = "summary"
+url = "https://www.britannica.com/place/Roman-Empire"
+licence = "original-summary"
+
+[[source]]
+id = "guide-how-ordinary-people-changed-history"
+adapter = "summary"
+url = "https://www.loc.gov/collections/rosa-parks-papers/about-this-collection/"
+licence = "original-summary"

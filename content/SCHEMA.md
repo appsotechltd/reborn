@@ -107,9 +107,13 @@ Non-commercial licences (any `*-nc-*`, e.g. WHO CC BY-NC-SA) are **rejected**: t
 | `study-smarter` | Study Smarter |
 | `skills-mastery` | Skills & Mastery |
 | `etiquette` | Etiquette & Manners |
+| `mental-health` | Mental Health |
+| `ai-skills` | AI & Future Skills |
+| `science` | Science & Nature |
+| `crime-society` | Crime & Society |
 | `life-guides` | Life Guides |
 
-`life-guides` holds Reborn's own complete guides (one `kind: "guide"` source per guide, its cards the guide's numbered parts in order; see SOURCES.md, Life Guides). `relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `etiquette` is manners and courtesy in social and business settings (introductions, dining, correspondence, hosting, meetings); `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping.
+`life-guides` holds Reborn's own complete guides (one `kind: "guide"` source per guide, its cards the guide's numbered parts in order; see SOURCES.md, Life Guides). `relationships` covers friendship, family ties and getting along with people in general; `dating-marriage` is dating, courtship, marriage and keeping love strong; `parenting` includes responsible, intentional parenting; `mental-strength` is mental toughness, discipline, focus, resilience and mental wellbeing; `learning` is clear reasoning and thinking well, while `study-smarter` is how to learn, revise, take exams and manage time as a student, and `skills-mastery` is picking up new skills fast and practising well; `etiquette` is manners and courtesy in social and business settings (introductions, dining, correspondence, hosting, meetings); `heartbreak-healing` is breakups, divorce and starting over; `grief-loss` is bereavement, mourning and coping; `mental-health` is everyday mental health conditions such as ADHD, burnout, anxiety and low mood (health note on every card); `ai-skills` is using AI tools well and the skills that stay valuable as work changes; `science` is how the universe, life and the natural world work; `crime-society` is how crime, scams and justice work and how to stay safe.
 
 Cards in `heartbreak-healing` and `grief-loss` always show a support note pointing to people who can help, in place of the health disclaimer. Write them gently.
 

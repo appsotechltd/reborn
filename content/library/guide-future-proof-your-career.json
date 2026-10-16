@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-future-proof-your-career",
+    "title": "Future-Proof Your Career",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the World Economic Forum, the International Labour Organization and the OECD.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: World Economic Forum, The Future of Jobs Report 2025, https://www.weforum.org/publications/the-future-of-jobs-report-2025/; International Labour Organization, Generative AI and Jobs: A Refined Global Index of Occupational Exposure (2025), https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure; OECD, OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market, https://www.oecd.org/en/publications/oecd-employment-outlook-2023_08785bba-en.html; UK Department for Education, The impact of AI on UK jobs and training, https://www.gov.uk/government/publications/the-impact-of-ai-on-uk-jobs-and-training; US Department of Labor, O*NET OnLine, https://www.onetonline.org/; National Careers Service, Skills assessment, https://nationalcareers.service.gov.uk/skills-assessment"
+  },
+  "cards": [
+    {
+      "id": "guide-future-proof-your-career--01",
+      "topic": "ai-skills",
+      "tags": [
+        "future-of-work",
+        "mindset",
+        "careers"
+      ],
+      "title": "AI is reshaping work, and preparing beats panicking",
+      "body": "Headlines swing between 'AI will take every job' and 'nothing will change'. The truth sits in between. AI is already changing how many jobs are done, especially work involving writing, data, customer service and admin. Some roles will shrink, new ones will appear, and most will be reshaped.\n\nThat can feel unsettling. But you have far more control than the headlines suggest. People who understand the changes, keep learning and build skills that machines struggle with tend to come out ahead.\n\nThis guide gives you a calm, practical plan. You will see what the big studies actually say, learn to look at your work task by task, discover which skills hold their value, and finish with a 90-day plan you can start this week. No crystal ball needed, just steady preparation.",
+      "apply_it": "Write one sentence about how you feel about AI and your work right now, honestly.",
+      "quiz": {
+        "question": "What is the most realistic view of how AI will affect jobs?",
+        "options": [
+          "Every job will vanish within a year",
+          "Nothing about work will change",
+          "Many jobs will be reshaped, some will shrink and new ones will grow",
+          "Only scientists will be affected"
+        ],
+        "answer": 2,
+        "explanation": "Research points to a mix: most jobs change, some decline and new roles emerge. Preparation helps you benefit."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--02",
+      "topic": "ai-skills",
+      "tags": [
+        "research",
+        "future-of-work",
+        "jobs-data"
+      ],
+      "title": "Major studies point to jobs changing more than vanishing",
+      "body": "The World Economic Forum's Future of Jobs Report 2025, based on a survey of more than a thousand large employers, expects around 170 million new jobs and 92 million lost by 2030, a net gain. Employers also expect about two-fifths of workers' core skills to change in that time.\n\nThe International Labour Organization found in 2025 that roughly one in four workers worldwide are in jobs with some exposure to generative AI, but concluded that transformation is far more likely than full automation, because most jobs still need human input. Clerical roles are the most exposed.\n\nThe OECD has noted that for many people the effect will show up less in lost jobs and more in changing tasks and job quality. The message is consistent: change is real, so adapting matters more than fearing.",
+      "apply_it": "Read the summary of one of these reports online and note one finding that surprised you.",
+      "quiz": {
+        "question": "According to the ILO, what is the most likely impact of generative AI on most jobs?",
+        "options": [
+          "Total automation of every role",
+          "Transformation of jobs rather than full replacement",
+          "No effect at all",
+          "Only effects on farming jobs"
+        ],
+        "answer": 1,
+        "explanation": "The ILO's 2025 study found most jobs mix tasks needing people, so transformation is far more likely than full automation."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--03",
+      "topic": "ai-skills",
+      "tags": [
+        "tasks",
+        "job-analysis",
+        "automation"
+      ],
+      "title": "Look at your job as a bundle of tasks, not a single thing",
+      "body": "AI rarely replaces a whole job at once. It takes over particular tasks. So the most useful question is not 'Will AI take my job?' but 'Which parts of my job will AI change?'\n\nList the main tasks you do in a typical week. Then sort them into three groups. Tasks AI could largely do, such as first drafts, routine reports or scheduling. Tasks AI could help with, like research or analysis you then review. And tasks that rely on you, such as calming an upset customer, making judgement calls or building trust with a team.\n\nThis shows you where to save time with AI and where to invest your growth. As routine tasks shrink, the human-heavy ones usually become a bigger, more valued part of the role.",
+      "apply_it": "List ten tasks from your week and mark each one: AI could do it, AI could help, or relies on me.",
+      "quiz": {
+        "question": "What is the most useful question to ask about AI and your job?",
+        "options": [
+          "Which tasks in my job will AI change?",
+          "When will I be fired?",
+          "How can I avoid all technology?",
+          "Is my whole job safe forever?"
+        ],
+        "answer": 0,
+        "explanation": "AI changes tasks more than whole jobs. Breaking your work into tasks shows where to use AI and where to grow."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--04",
+      "topic": "ai-skills",
+      "tags": [
+        "human-skills",
+        "judgement",
+        "communication"
+      ],
+      "title": "Judgement, care and connection are skills that keep their value",
+      "body": "As AI handles more routine work, the skills that rise in value are the ones that make us most human. Employers in the World Economic Forum survey rated analytical thinking as the top core skill, alongside resilience, flexibility, leadership, curiosity and creative thinking.\n\nThink about what these look like at work. Judgement: weighing messy trade-offs when there is no clear answer. Communication: explaining, persuading and listening well. Care: nursing, teaching, coaching, and making people feel understood. Creativity: framing the right problem and spotting fresh ideas. Ethics: knowing when something should not be done, even if it can.\n\nThese skills are hard to automate and they make you better at directing AI too. The good news is that all of them can be practised and improved on purpose.",
+      "apply_it": "Choose one human skill from this card and pick one situation this week where you will practise it deliberately.",
+      "quiz": {
+        "question": "Which of these skills is hardest for AI to replace?",
+        "options": [
+          "Typing data into a spreadsheet",
+          "Sorting emails by date",
+          "Copying text between documents",
+          "Weighing trade-offs and building trust with people"
+        ],
+        "answer": 3,
+        "explanation": "Judgement, communication, care and creativity are deeply human and grow in value as routine tasks are automated."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--05",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-literacy",
+        "upskilling",
+        "tools"
+      ],
+      "title": "Learn how AI is used in your own field, not just in general",
+      "body": "Being able to use AI well in your specific line of work is fast becoming one of the most valuable skills you can have. A teacher using AI to plan differentiated lessons, an accountant using it to spot anomalies, or a tradesperson using it to write quotes faster all gain an edge.\n\nStart by finding out what is already happening. Ask colleagues what they use. Look at your professional body or trade association for guidance. Search for case studies in your industry.\n\nThen experiment on real tasks, within your employer's rules and without pasting confidential data. Keep notes on what saves time and what goes wrong. Before long you may become the person others ask for help, which is a strong position to be in when roles are changing.",
+      "apply_it": "Ask two colleagues or people in your field how they currently use AI, and try one of their ideas.",
+      "quiz": {
+        "question": "What is a smart first step to learn AI for your career?",
+        "options": [
+          "Avoid AI until your boss forces you",
+          "Find out how people in your field use it and try it on real tasks",
+          "Paste confidential work files into any free tool",
+          "Only read general news about AI"
+        ],
+        "answer": 1,
+        "explanation": "Learning the AI uses specific to your field, safely and within the rules, gives you a practical and visible edge."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--06",
+      "topic": "ai-skills",
+      "tags": [
+        "lifelong-learning",
+        "habits",
+        "growth"
+      ],
+      "title": "Make learning a small weekly habit rather than a rare event",
+      "body": "With skills changing faster than ever, the most future-proof skill may be learning itself. The WEF survey found employers expect a large share of their workforce to need training by 2030, and curiosity and lifelong learning ranked among the fastest-rising skills.\n\nYou do not need to go back to school full-time. Small and steady wins. Aim for two or three short learning sessions a week, perhaps 30 minutes each. Use free courses, podcasts, library books, online tutorials or your employer's training budget.\n\nMake it stick by tying it to a routine, like learning on your commute or after Sunday breakfast. Learn by doing: apply each new idea to a real task within a few days. And track your progress, because seeing how far you have come keeps you going.",
+      "apply_it": "Block two 30-minute learning sessions in your calendar for this week and choose what you will learn.",
+      "quiz": {
+        "question": "What is the most effective way to keep your skills current?",
+        "options": [
+          "One big course every ten years",
+          "Waiting until you lose your job",
+          "Short, regular learning sessions applied to real tasks",
+          "Reading headlines about new technology"
+        ],
+        "answer": 2,
+        "explanation": "Frequent short sessions, applied quickly to real work, build skills steadily and keep you adaptable."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--07",
+      "topic": "ai-skills",
+      "tags": [
+        "portfolio",
+        "personal-brand",
+        "evidence"
+      ],
+      "title": "Show what you can do with a simple portfolio of real work",
+      "body": "A CV tells people what you claim. A portfolio shows them. In a fast-changing job market, evidence of real skills often matters more than job titles or qualifications alone.\n\nA portfolio does not have to be fancy. It could be a short document or simple web page with five or six examples: a project you led, a process you improved, a report you wrote, a problem you solved. For each, explain the challenge, what you did, the result, and any numbers that show impact.\n\nInclude a few examples of how you have used new tools, including AI, to work smarter, while being clear about your own contribution. Remove anything confidential. Update it every few months so it is ready when an opportunity appears, rather than scrambling at the last minute.",
+      "apply_it": "Write a short note on one recent piece of work: the challenge, what you did and the result.",
+      "quiz": {
+        "question": "Why is a portfolio valuable in a changing job market?",
+        "options": [
+          "It shows real evidence of your skills, not just claims",
+          "It replaces the need for any skills",
+          "Employers never look at examples",
+          "It should include confidential company files"
+        ],
+        "answer": 0,
+        "explanation": "A portfolio offers concrete proof of what you can do, which helps you stand out when roles and requirements shift."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--08",
+      "topic": "ai-skills",
+      "tags": [
+        "networking",
+        "relationships",
+        "opportunities"
+      ],
+      "title": "Your network is an early-warning system and a safety net",
+      "body": "Many opportunities are never advertised. They come through people who know you and trust your work. A good network also tells you early when your industry is shifting, which skills are in demand and which companies are hiring.\n\nNetworking does not need to feel fake. Think of it as staying in touch and being useful. Check in with a former colleague. Share an article you think someone would like. Offer help before you ask for any. Join a professional group, a local meetup or an online community in your field.\n\nAim for a mix of people: some in your field, some in neighbouring fields and some a few steps ahead of you. Two or three genuine conversations a month adds up to a strong, supportive web of contacts over a year.",
+      "apply_it": "Send a friendly message today to one person you have lost touch with in your field.",
+      "quiz": {
+        "question": "What is a genuine way to build your professional network?",
+        "options": [
+          "Only contact people when you need a job",
+          "Send the same request to hundreds of strangers",
+          "Avoid talking to anyone outside your team",
+          "Stay in touch, share useful things and offer help first"
+        ],
+        "answer": 3,
+        "explanation": "Networks built on regular, generous contact bring early news of change and opportunities that are never advertised."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--09",
+      "topic": "ai-skills",
+      "tags": [
+        "adaptability",
+        "resilience",
+        "change"
+      ],
+      "title": "Adaptability is a skill you can build by practising change",
+      "body": "Resilience, flexibility and agility ranked high among the skills employers want. The good news is that adaptability is not a fixed trait. You can train it, like a muscle, by deliberately stepping into small changes.\n\nVolunteer for a project slightly outside your comfort zone. Try a new tool before you have to. Take on a task in another team for a week. Each time you cope with something unfamiliar, you build evidence that you can handle change, which makes the next change less scary.\n\nIt also helps to keep a steady base: good sleep, supportive people and a clear sense of what you value. Change feels far more manageable when the rest of life is stable. When setbacks happen, ask what you can learn, adjust, and keep moving.",
+      "apply_it": "Volunteer for one small task this week that is new to you, and notice how you handle it.",
+      "quiz": {
+        "question": "How can you become more adaptable?",
+        "options": [
+          "By deliberately taking on small, unfamiliar challenges",
+          "By avoiding anything new",
+          "Adaptability cannot change at all",
+          "By waiting for big changes to force you"
+        ],
+        "answer": 0,
+        "explanation": "Adaptability grows through practice. Small, chosen challenges build the confidence to handle bigger changes."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--10",
+      "topic": "ai-skills",
+      "tags": [
+        "side-skills",
+        "t-shaped",
+        "versatility"
+      ],
+      "title": "Add a side skill that pairs well with your main strength",
+      "body": "People with one deep skill plus a few useful side skills are often the hardest to replace. This is sometimes called being T-shaped: deep in one area, broad across several.\n\nThe best side skills multiply what you already do. A nurse who learns basic data skills can help improve how a ward runs. A designer who learns to write clear copy becomes twice as useful. A plumber who learns simple marketing can grow their own business.\n\nPopular choices that pair with almost any job include data and spreadsheet skills, clear writing, public speaking, project management, a second language and practical AI use. Pick one that interests you and fits where your field is heading. Free tools like O*NET OnLine or the National Careers Service can show which skills are linked to roles you might want next.",
+      "apply_it": "Choose one side skill that would boost your main job, and find one free course or guide to start it.",
+      "quiz": {
+        "question": "What makes a side skill especially valuable?",
+        "options": [
+          "It has nothing to do with your work",
+          "It is the most difficult skill you can find",
+          "It multiplies the strength you already have",
+          "It replaces your main skill completely"
+        ],
+        "answer": 2,
+        "explanation": "Side skills that complement your core expertise make you more versatile and harder to replace."
+      }
+    },
+    {
+      "id": "guide-future-proof-your-career--11",
+      "topic": "ai-skills",
+      "tags": [
+        "planning",
+        "goals",
+        "action"
+      ],
+      "title": "Turn it all into a simple 90-day future-proofing plan",
+      "body": "Ninety days is long enough to make real progress and short enough to stay focused. Here is a simple plan.\n\nDays 1 to 30: understand. Do your task audit, read one summary of a jobs report, and ask colleagues how AI is changing your field. Choose one AI skill and one human skill to grow.\n\nDays 31 to 60: build. Practise both skills weekly on real tasks. Start your portfolio with two or three examples. Reconnect with five people in your network.\n\nDays 61 to 90: show. Share something you have learned, perhaps by helping a colleague or writing a short post. Update your CV and portfolio. Reflect on what worked, then set your next 90 days.\n\nRepeat this cycle and you will stay ready, whatever the future brings.",
+      "apply_it": "Open your calendar and set three reminders at day 30, day 60 and day 90 to review your plan.",
+      "quiz": {
+        "question": "What is the focus of the first 30 days in this plan?",
+        "options": [
+          "Quitting your job immediately",
+          "Understanding how your work is changing and choosing skills to grow",
+          "Updating your CV only",
+          "Avoiding any learning"
+        ],
+        "answer": 1,
+        "explanation": "The first month is for understanding: audit your tasks, learn what is changing and choose which skills to develop."
+      }
+    }
+  ]
+}

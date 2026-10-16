@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-navigate-menopause",
+    "title": "Navigate Menopause",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/conditions/menopause/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, NICE guideline NG23, the US National Institute on Aging and the British Menopause Society.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS, Menopause, https://www.nhs.uk/conditions/menopause/; NHS, Hormone replacement therapy (HRT), https://www.nhs.uk/medicines/hormone-replacement-therapy-hrt/; NICE, Menopause: identification and management (NG23, updated November 2024), https://www.nice.org.uk/guidance/ng23; National Institute on Aging, What Is Menopause?, https://www.nia.nih.gov/health/menopause/what-menopause; The Menopause Society, Menopause Education for Patients, https://menopause.org/patient-education; British Menopause Society / Women's Health Concern, Factsheets, https://www.womens-health-concern.org/help-and-advice/factsheets/"
+  },
+  "cards": [
+    {
+      "id": "guide-navigate-menopause--01",
+      "topic": "health",
+      "tags": [
+        "menopause",
+        "overview",
+        "hormones"
+      ],
+      "title": "Menopause is natural, and you do not have to just put up with it",
+      "body": "Menopause is when periods stop for good because the ovaries make much less oestrogen. It is a normal part of ageing for women and anyone with ovaries, usually arriving between 45 and 55, with an average around 51 in the UK and US.\n\nFor some, the change passes with few problems. For many others, symptoms such as hot flushes, poor sleep, low mood and brain fog affect work, relationships and confidence, sometimes for years.\n\nFor too long people were told to grin and bear it. That has changed. Symptoms are now widely recognised, there are effective treatments, both hormonal and non-hormonal, and lifestyle steps that genuinely help.\n\nThis guide explains what is happening in your body, how to get the right support, and how to protect your long-term health. Partners, friends and managers will find it useful too.",
+      "apply_it": "Write down the three changes in your body or mood that bother you most right now, even if you are unsure they are linked to menopause.",
+      "quiz": {
+        "question": "At what age does menopause usually happen?",
+        "options": [
+          "Between 45 and 55",
+          "Between 30 and 35",
+          "Always at exactly 60",
+          "Only after age 65"
+        ],
+        "answer": 0,
+        "explanation": "Most people reach menopause between 45 and 55. Earlier menopause happens too, and it should be checked by a doctor."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--02",
+      "topic": "health",
+      "tags": [
+        "perimenopause",
+        "definitions",
+        "periods"
+      ],
+      "title": "Perimenopause starts years before your periods finally stop",
+      "body": "It helps to know the terms. Perimenopause is the transition, when hormone levels rise and fall unpredictably and symptoms often begin. It typically starts in your 40s and can last four to eight years, sometimes longer. You can still get pregnant during this time, so keep using contraception.\n\nMenopause itself is a single point: 12 months after your last period. After that, you are postmenopausal for the rest of your life.\n\nSome people reach menopause earlier. Before 45 it is called early menopause, and before 40 it is called premature ovarian insufficiency. Surgery to remove the ovaries, or some cancer treatments, can cause sudden menopause.\n\nOften the first sign is not a missed period but changes in your cycle, heavier or lighter bleeding, or new anxiety and sleep problems.",
+      "apply_it": "If you have periods, start noting the dates and how heavy they are, so you can spot changes over the coming months.",
+      "quiz": {
+        "question": "When is someone said to have reached menopause?",
+        "options": [
+          "After their first hot flush",
+          "As soon as periods become irregular",
+          "On their 50th birthday",
+          "12 months after their last period"
+        ],
+        "answer": 3,
+        "explanation": "Menopause is confirmed 12 months after the final period. The variable years before that are perimenopause."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--03",
+      "topic": "health",
+      "tags": [
+        "symptoms",
+        "hot-flushes",
+        "body-changes"
+      ],
+      "title": "Symptoms are far wider than hot flushes",
+      "body": "Hot flushes and night sweats are the best known symptoms, affecting most people at some point. But falling oestrogen touches almost every system in the body, so the list is long.\n\nCommon ones include trouble sleeping, low mood, anxiety and irritability, difficulty concentrating or finding words, tiredness, headaches and joint aches. Many people notice vaginal dryness, discomfort during sex, needing to wee more often and repeated urine infections. Skin and hair can become drier and thinner, and some people feel heart palpitations or gain weight around the middle.\n\nEveryone's mix is different. Some have one or two mild symptoms, others many severe ones. Symptoms can last several years on average, and vaginal and urinary symptoms often continue or worsen unless treated.\n\nNaming them as menopause can be a relief in itself.",
+      "apply_it": "Read the symptom list again and tick any that you, or someone close to you, have experienced in the past three months.",
+      "quiz": {
+        "question": "Which of these is a common menopause symptom besides hot flushes?",
+        "options": [
+          "Difficulty concentrating or finding words",
+          "Improved night vision",
+          "Sudden growth in height",
+          "Permanently stronger bones"
+        ],
+        "answer": 0,
+        "explanation": "Brain fog, poor sleep, low mood, joint aches and vaginal dryness are all common symptoms of falling oestrogen."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--04",
+      "topic": "health",
+      "tags": [
+        "tracking",
+        "symptom-diary",
+        "self-care"
+      ],
+      "title": "Track your symptoms so you can spot patterns and get help",
+      "body": "Menopause symptoms can come and go, which makes them easy to doubt or forget when you finally see a doctor. A simple diary helps you and your clinician see the real picture.\n\nFor six to eight weeks, note your period dates and flow, hot flushes and night sweats, sleep quality, mood, energy, brain fog, aches and any vaginal or bladder changes. Score each from 0 to 3. Note possible triggers too, such as alcohol, caffeine, spicy food, stress or a warm room.\n\nYou can use a notebook, a free app or a printed symptom checklist from a menopause charity. Patterns often appear: flushes after wine, worse mood before a period, or poor sleep driving afternoon fog.\n\nBring the diary to your appointment. It turns a vague conversation into a focused one.",
+      "apply_it": "Start a symptom diary tonight, scoring sleep, mood, flushes and energy from 0 to 3.",
+      "quiz": {
+        "question": "Why is a symptom diary helpful before seeing a doctor?",
+        "options": [
+          "It replaces the need for an appointment",
+          "It is required before any treatment can start",
+          "It shows patterns and triggers clearly in a short appointment",
+          "It proves you do not need treatment"
+        ],
+        "answer": 2,
+        "explanation": "A diary captures symptoms that come and go, reveals triggers and makes a short appointment far more productive."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--05",
+      "topic": "health",
+      "tags": [
+        "doctor",
+        "appointment",
+        "diagnosis"
+      ],
+      "title": "Prepare for a focused, honest talk with your doctor",
+      "body": "If symptoms are affecting your life, see your GP or a nurse practitioner. You do not need to wait until they are severe.\n\nIf you are over 45 with typical symptoms, a diagnosis can usually be made from your symptoms alone. NICE guidance says blood tests are generally not needed at that age, because hormone levels swing too much to be reliable. Tests are more useful if you are under 45, or on certain contraception.\n\nGo prepared. Bring your symptom diary, a list of medicines, and your personal and family history of breast cancer, blood clots, heart disease and osteoporosis. Write down your top questions and what matters to you, such as sleep or work.\n\nIf you feel dismissed, you can ask for another appointment, a clinician with a menopause interest, or a referral to a specialist clinic.",
+      "apply_it": "Write your top three questions for your doctor and book an appointment, mentioning menopause when you book.",
+      "quiz": {
+        "question": "If you are over 45 with typical symptoms, what does NICE say about blood tests?",
+        "options": [
+          "They are always required before diagnosis",
+          "They are generally not needed to diagnose menopause",
+          "They must be repeated monthly",
+          "Only a brain scan can confirm menopause"
+        ],
+        "answer": 1,
+        "explanation": "For most people over 45, menopause is diagnosed from symptoms. Hormone levels fluctuate too much for tests to be reliable."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--06",
+      "topic": "health",
+      "tags": [
+        "hrt",
+        "hormones",
+        "treatment"
+      ],
+      "title": "HRT helps many people, and its risks are often smaller than feared",
+      "body": "Hormone replacement therapy tops up oestrogen, usually with a progestogen to protect the womb lining if you still have a womb. It is the most effective treatment for hot flushes and night sweats, and it also helps mood swings, sleep, joint aches and vaginal dryness, and protects bones.\n\nFears grew after a 2002 study, but later analysis gave a more reassuring picture, especially for people starting under 60 or within ten years of menopause. In 2025 the US FDA removed most of the boxed warnings on HRT products.\n\nRisks still exist and depend on type. Combined HRT carries a small increase in breast cancer risk that grows with time on it. Oestrogen-only HRT carries little or no increase. Tablets slightly raise clot and stroke risk; patches, gels and sprays do not appear to.\n\nDiscuss your personal risk with your doctor.",
+      "apply_it": "Write down your personal and family history of breast cancer, blood clots and stroke to discuss HRT options with your doctor.",
+      "quiz": {
+        "question": "Which form of HRT does not appear to raise the risk of blood clots?",
+        "options": [
+          "Oestrogen tablets",
+          "All forms equally raise clot risk",
+          "Any HRT taken with food",
+          "Oestrogen patches, gels or sprays applied to the skin"
+        ],
+        "answer": 3,
+        "explanation": "Oestrogen through the skin (patches, gels, sprays) is not linked with the raised clot risk seen with tablets at standard doses."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--07",
+      "topic": "health",
+      "tags": [
+        "non-hormonal",
+        "cbt",
+        "lifestyle"
+      ],
+      "title": "Non-hormonal options and lifestyle changes can also ease symptoms",
+      "body": "HRT is not for everyone. Some people prefer not to take it, and some cannot, for example after certain breast cancers. There are other effective routes.\n\nCognitive behavioural therapy, a talking therapy, is recommended by NICE to help with hot flushes, night sweats, low mood, anxiety and sleep. It changes how you respond to symptoms and can lessen their impact.\n\nSeveral prescription medicines reduce hot flushes, including some antidepressants, gabapentin and newer tablets such as fezolinetant and elinzanetant, which act on the brain's temperature control centre. Availability varies by country, so ask what is offered locally.\n\nLifestyle matters too: regular exercise, a healthy weight, less alcohol and caffeine, and stopping smoking. Be cautious with herbal remedies like black cohosh or red clover. Evidence is weak, quality varies and some interact with medicines.",
+      "apply_it": "Ask your doctor or local NHS talking therapies service whether CBT for menopause symptoms is available to you.",
+      "quiz": {
+        "question": "Which talking therapy is recommended by NICE for menopause symptoms?",
+        "options": [
+          "Hypnotising yourself to sleep",
+          "Psychoanalysis lasting several years",
+          "Cognitive behavioural therapy (CBT)",
+          "None, talking therapies never help"
+        ],
+        "answer": 2,
+        "explanation": "NICE recommends CBT for hot flushes, night sweats, low mood, anxiety and sleep problems linked to menopause."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--08",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "hot-flushes",
+        "night-sweats"
+      ],
+      "title": "Cool down hot flushes and reclaim your sleep",
+      "body": "Night sweats and broken sleep can leave you exhausted, which then worsens mood, memory and patience. Small changes can make a real difference.\n\nKeep your bedroom cool, use a fan by the bed and choose light, breathable bedding and nightwear in cotton or moisture-wicking fabric. Layers you can throw off help, as does a glass of cold water on the bedside table. Some people find a separate duvet from their partner helps both sleep better.\n\nNotice your triggers. Alcohol, spicy food, hot drinks, caffeine and stress can bring on flushes. When one starts, slow, steady breathing can help it pass.\n\nKeep a regular sleep routine and get morning daylight. If sleep stays poor, CBT for insomnia is very effective. HRT also often improves sleep by reducing night sweats.",
+      "apply_it": "Tonight, put a fan and a glass of cold water by your bed, and swap to lighter bedding if you can.",
+      "quiz": {
+        "question": "Which is a common trigger for hot flushes?",
+        "options": [
+          "Alcohol and caffeine",
+          "Drinking cold water",
+          "Sleeping with a fan",
+          "Wearing cotton nightwear"
+        ],
+        "answer": 0,
+        "explanation": "Alcohol, caffeine, spicy food, hot drinks and stress can trigger flushes. Cold water, fans and light bedding help."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--09",
+      "topic": "health",
+      "tags": [
+        "bone-health",
+        "heart-health",
+        "osteoporosis"
+      ],
+      "title": "Protect your bones and heart after menopause",
+      "body": "Oestrogen helps protect bones and blood vessels, so after menopause the risk of osteoporosis and heart disease rises. Bone loss is fastest in the first few years and is silent until a bone breaks.\n\nWeight-bearing and strength exercise are your best defence: brisk walking, dancing, climbing stairs, and lifting weights or using resistance bands two or more times a week. Get enough calcium from dairy, fortified plant milks, tofu and green vegetables, and vitamin D. In the UK, adults are advised to consider a vitamin D supplement in autumn and winter.\n\nFor your heart, check blood pressure, cholesterol and blood sugar, stay active, eat plenty of plants and fibre, and do not smoke.\n\nEarly menopause raises these risks more, so treatment, usually HRT until around 51, is normally advised.",
+      "apply_it": "Do one weight-bearing activity today, such as a brisk 20-minute walk or climbing stairs, and check you get calcium at two meals.",
+      "quiz": {
+        "question": "Why are bone and heart risks higher after menopause?",
+        "options": [
+          "Because periods stop being painful",
+          "Because people stop eating calcium",
+          "Because hot flushes damage bones",
+          "Because protective oestrogen falls"
+        ],
+        "answer": 3,
+        "explanation": "Oestrogen helps protect bones and blood vessels. When it falls, osteoporosis and heart disease become more likely."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--10",
+      "topic": "health",
+      "tags": [
+        "mood",
+        "brain-fog",
+        "mental-health"
+      ],
+      "title": "Mood changes and brain fog are real and usually improve",
+      "body": "Many people are frightened by forgetting words, losing their train of thought or feeling unlike themselves. Others notice anxiety, irritability, tearfulness or low mood, sometimes for the first time in their lives.\n\nThese symptoms are common and linked to hormone changes, poor sleep and stress. Brain fog during the transition usually improves after menopause, and it is not a sign of dementia.\n\nHelpful steps include treating night sweats to improve sleep, regular exercise, time outdoors, limiting alcohol, and lists or reminders on your phone. HRT often helps mood changes linked to menopause, and CBT can help with low mood and anxiety. Antidepressants are not a first choice for low mood caused by menopause alone, but are right for clinical depression.\n\nTalk to someone. Sharing what is happening reduces shame and isolation.",
+      "apply_it": "Tell one trusted person how you have been feeling lately, and set up phone reminders for tasks you tend to forget.",
+      "quiz": {
+        "question": "What does research suggest about menopause brain fog?",
+        "options": [
+          "It is a sure sign of early dementia",
+          "It only affects people who are unwell",
+          "It is common and usually improves after menopause",
+          "It never gets better without surgery"
+        ],
+        "answer": 2,
+        "explanation": "Brain fog is common during the transition, linked to hormones and poor sleep, and usually improves. It is not a sign of dementia."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--11",
+      "topic": "health",
+      "tags": [
+        "relationships",
+        "sexual-health",
+        "work"
+      ],
+      "title": "Sex, relationships, work and partners can all adapt",
+      "body": "Vaginal dryness and discomfort are common and very treatable. Vaginal moisturisers and lubricants help, and low-dose vaginal oestrogen is safe for most people, including many who cannot take HRT, and can be used long term. If low desire persists despite HRT, testosterone may be considered by a specialist.\n\nAt work, flushes, fatigue and fog can knock confidence. Simple adjustments help: a fan, a desk near a window, flexible hours, breathable uniforms or permission to take breaks. Many employers now have menopause policies, so ask HR or your manager.\n\nPartners, family and friends can make a big difference by learning about menopause, listening without trying to fix everything, and being patient with irritability or poor sleep. Honest conversations prevent misunderstandings, such as low libido being taken as rejection.",
+      "apply_it": "Choose one person, a partner, friend or manager, and share one practical thing that would help you right now.",
+      "quiz": {
+        "question": "What is true about low-dose vaginal oestrogen?",
+        "options": [
+          "It is unsafe for almost everyone",
+          "It is safe for most people and can be used long term",
+          "It must be stopped after one month",
+          "It only works for hot flushes"
+        ],
+        "answer": 1,
+        "explanation": "Vaginal oestrogen treats dryness and urinary symptoms, is safe for most people and can be used for as long as needed."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-navigate-menopause--12",
+      "topic": "health",
+      "tags": [
+        "doctor",
+        "warning-signs",
+        "urgent-help"
+      ],
+      "title": "Know when to see a doctor and when to get urgent help",
+      "body": "See your doctor if menopause symptoms are affecting your daily life, if you are under 45 and your periods change or stop, or if a treatment is not working or causes side effects.\n\nSome symptoms need checking promptly because they can signal something other than menopause. These include any bleeding after menopause, bleeding between periods or after sex, very heavy bleeding, unexpected or persistent bleeding on HRT, a new breast lump or skin change, or unexplained weight loss.\n\nGet urgent help for signs of a blood clot, such as a painful, swollen leg or sudden breathlessness and chest pain, or for stroke signs like face drooping, arm weakness or slurred speech.\n\nIf you feel hopeless or have thoughts of harming yourself, contact your doctor today, call a crisis line or emergency services. Help is there.",
+      "apply_it": "Save your doctor's number and a local crisis line in your phone, and note any bleeding after menopause to report straight away.",
+      "quiz": {
+        "question": "Which symptom after menopause should always be checked by a doctor?",
+        "options": [
+          "Occasional mild hot flushes",
+          "Feeling a little tired after a late night",
+          "Wanting to try a new exercise class",
+          "Any vaginal bleeding"
+        ],
+        "answer": 3,
+        "explanation": "Bleeding after menopause is never normal and should be checked promptly, even if it is light or happens once."
+      },
+      "health": true
+    }
+  ]
+}

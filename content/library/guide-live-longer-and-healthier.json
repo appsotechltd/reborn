@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-live-longer-and-healthier",
+    "title": "Live Longer and Healthier",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nia.nih.gov/health/healthy-aging/what-do-we-know-about-healthy-aging",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US National Institute on Aging, the CDC, the NHS and the World Health Organization.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: National Institute on Aging, What Do We Know About Healthy Aging?, https://www.nia.nih.gov/health/healthy-aging/what-do-we-know-about-healthy-aging; CDC, Adult Activity: An Overview, https://www.cdc.gov/physical-activity-basics/guidelines/adults.html; NHS, Physical activity guidelines for adults aged 19 to 64, https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/; World Health Organization, Physical activity fact sheet, https://www.who.int/news-room/fact-sheets/detail/physical-activity; Harvard T.H. Chan School of Public Health, The Nutrition Source: Healthy Eating Plate, https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/; NHS, NHS Health Check, https://www.nhs.uk/conditions/nhs-health-check/"
+  },
+  "cards": [
+    {
+      "id": "guide-live-longer-and-healthier--01",
+      "topic": "health",
+      "tags": [
+        "healthspan",
+        "longevity",
+        "ageing"
+      ],
+      "title": "Aim to add healthy years, not just more birthdays",
+      "body": "Most of us do not simply want to live longer. We want to stay well, independent and sharp for as long as possible. Researchers call this your healthspan: the years you live in good health, as opposed to your lifespan, the total years you live.\n\nIn many countries the gap between the two is around a decade, often spent managing illness or disability. The encouraging part is that a lot of what fills that gap, such as heart disease, type 2 diabetes, some cancers, falls and some dementia, is strongly shaped by daily habits.\n\nGenes matter, but they are not destiny. This guide covers the handful of habits with the strongest evidence behind them, and it is never too late to start. People who change habits in their 60s and 70s still gain real benefits.",
+      "apply_it": "Picture yourself at 85. Write down three things you want to still be able to do, such as climbing stairs or playing with grandchildren.",
+      "quiz": {
+        "question": "What does 'healthspan' mean?",
+        "options": [
+          "The total number of years you live",
+          "The years you live in good health",
+          "The time you spend at the gym",
+          "Your genetic age measured in a lab test"
+        ],
+        "answer": 1,
+        "explanation": "Healthspan is the number of years lived in good health. Many habits that extend it also help you live longer overall."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--02",
+      "topic": "health",
+      "tags": [
+        "evidence",
+        "blue-zones",
+        "research"
+      ],
+      "title": "Long-lived places teach us useful lessons, with some caveats",
+      "body": "You may have heard of Blue Zones, regions like Okinawa in Japan or Sardinia in Italy said to have unusually many people living past 100. The common threads described there are appealing: daily natural movement, mostly plant-based meals, strong family and community ties and a sense of purpose.\n\nBe a little careful, though. Some researchers have questioned the age records in these places, pointing to missing birth certificates and pension fraud. And the lifestyles studied are changing fast.\n\nThe better news is that the same themes show up in large, careful studies following hundreds of thousands of people. Not smoking, staying active, eating well, keeping a healthy weight and drinking little are linked with many extra years free of major disease. You do not need to move to an island; you need the habits.",
+      "apply_it": "Pick one Blue Zone habit that already appeals to you, such as walking to the shops or eating with friends, and do it this week.",
+      "quiz": {
+        "question": "What is the sensible way to treat Blue Zones claims?",
+        "options": [
+          "As proof that one island diet guarantees 100 years",
+          "As irrelevant, since nothing about lifestyle matters",
+          "As inspiration, backed up by larger studies, while accepting some records are disputed",
+          "As a reason to buy special supplements"
+        ],
+        "answer": 2,
+        "explanation": "Some longevity records are disputed, but the habits they highlight are supported by large population studies."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--03",
+      "topic": "health",
+      "tags": [
+        "exercise",
+        "aerobic",
+        "daily-movement"
+      ],
+      "title": "Move every day and build up to 150 minutes a week",
+      "body": "If physical activity were a pill, it would be the most prescribed medicine in the world. Regular movement lowers the risk of heart disease, stroke, type 2 diabetes, several cancers, depression and dementia.\n\nHealth bodies such as the WHO, CDC and NHS suggest adults aim for at least 150 minutes of moderate activity a week, like brisk walking or cycling, or 75 minutes of vigorous activity, like running. Moderate means you can talk but not sing.\n\nIf that sounds a lot, remember it is about 20 minutes a day, and it can be split into short bouts. Any amount beats none, and the biggest gains come when an inactive person starts doing a little.\n\nAlso break up long sitting. Stand up and move for a few minutes every half hour or so.",
+      "apply_it": "Take a 10-minute brisk walk today, ideally after a meal, at a pace where talking is easy but singing is not.",
+      "quiz": {
+        "question": "Which matches the main guideline for adults?",
+        "options": [
+          "150 minutes of moderate activity a week",
+          "10,000 steps exactly or no benefit",
+          "One long workout on Sundays only",
+          "Vigorous exercise every single day"
+        ],
+        "answer": 0,
+        "explanation": "WHO, CDC and NHS guidance is at least 150 minutes of moderate or 75 minutes of vigorous activity a week, spread across the week."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--04",
+      "topic": "health",
+      "tags": [
+        "strength",
+        "balance",
+        "falls"
+      ],
+      "title": "Strength and balance training keeps you independent",
+      "body": "From around our 30s, we slowly lose muscle, and the loss speeds up after 60 unless we push back. Weak muscles make everyday tasks harder, slow your metabolism and raise the risk of falls, which are a leading cause of injury in older adults.\n\nGuidelines recommend muscle-strengthening activity on at least two days a week, working the legs, hips, back, chest, shoulders and arms. You do not need a gym: squats from a chair, wall press-ups, carrying shopping or heavy gardening all count.\n\nBalance matters too, especially from your 60s. Older adults are advised to do activities that challenge balance on at least three days a week. Try standing on one leg while brushing your teeth, holding a counter for safety, or join a tai chi or yoga class.",
+      "apply_it": "Do 10 slow sit-to-stands from a sturdy chair today, without using your hands if you can.",
+      "quiz": {
+        "question": "How often should adults do muscle-strengthening activity?",
+        "options": [
+          "Once a month",
+          "Only after age 70",
+          "At least two days a week",
+          "Never, walking is enough"
+        ],
+        "answer": 2,
+        "explanation": "Guidelines advise strength work on two or more days a week, plus balance activities for older adults to help prevent falls."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--05",
+      "topic": "health",
+      "tags": [
+        "muscle",
+        "protein",
+        "ageing"
+      ],
+      "title": "Protect your muscle with enough protein and regular use",
+      "body": "Muscle is more than strength. It helps control blood sugar, protects your joints and bones, and acts as a reserve that helps you recover from illness or surgery. Losing a lot of it, called sarcopenia, is one of the biggest threats to independence in later life.\n\nTwo things protect muscle: using it, and eating enough protein to rebuild it. Many older adults eat too little protein, especially at breakfast. Experts often suggest older people aim a little higher than younger adults, roughly 1 to 1.2 grams per kilo of body weight a day unless a doctor advises otherwise, for example with kidney disease.\n\nSpread it across meals. Good sources include beans, lentils, tofu, eggs, fish, chicken, yoghurt and milk. Pair protein with strength exercise for the best effect.",
+      "apply_it": "Add a protein food to your breakfast tomorrow, such as Greek yoghurt, eggs or beans on toast.",
+      "quiz": {
+        "question": "Which combination best protects muscle as you age?",
+        "options": [
+          "Long rests and low protein",
+          "Strength exercise plus enough protein spread across meals",
+          "Cardio only, with no protein at breakfast",
+          "Protein shakes alone with no exercise"
+        ],
+        "answer": 1,
+        "explanation": "Muscle responds to being used and to adequate protein. Doing both, regularly, slows age-related muscle loss."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--06",
+      "topic": "health",
+      "tags": [
+        "nutrition",
+        "fibre",
+        "plants"
+      ],
+      "title": "Fill most of your plate with plants, fibre and whole foods",
+      "body": "There is no single magic diet, but the evidence keeps pointing in the same direction. Diets rich in vegetables, fruit, whole grains, beans, nuts and olive oil, like the Mediterranean pattern, are linked with less heart disease, diabetes and early death.\n\nA simple guide is Harvard's Healthy Eating Plate: half your plate vegetables and fruit, a quarter whole grains, a quarter healthy protein, with water as your main drink.\n\nFibre deserves special attention. It feeds your gut bacteria and helps cholesterol and blood sugar, yet most people eat far less than the roughly 30 grams a day advised in the UK. Beans, oats, wholemeal bread, fruit with skin and vegetables all help.\n\nCut back on ultra-processed snacks, processed meats, sugary drinks and very salty foods. Aim for progress, not perfection.",
+      "apply_it": "At your next meal, make half the plate vegetables or fruit and swap one refined grain for a whole grain.",
+      "quiz": {
+        "question": "According to the Healthy Eating Plate, what should fill half your plate?",
+        "options": [
+          "Meat and cheese",
+          "White bread and pasta",
+          "Vegetables and fruit",
+          "Desserts, as long as portions are small"
+        ],
+        "answer": 2,
+        "explanation": "The plate puts vegetables and fruit at half, with whole grains and healthy protein making up the rest."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--07",
+      "topic": "health",
+      "tags": [
+        "sleep",
+        "recovery",
+        "brain-health"
+      ],
+      "title": "Treat sleep as a pillar of health, not a luxury",
+      "body": "Sleep is when your body repairs itself and your brain clears waste and files memories. Regularly getting too little is linked with heart disease, weight gain, type 2 diabetes, low mood and a higher risk of accidents.\n\nMost adults need about seven to nine hours. Older adults often sleep more lightly and wake more, which is normal, but they still need roughly seven hours.\n\nHelpful habits are simple: wake at a similar time every day, get daylight in the morning, keep the bedroom cool, dark and quiet, and stop caffeine by early afternoon. Alcohol may help you fall asleep but breaks up sleep later in the night.\n\nLoud snoring with pauses in breathing, or feeling exhausted despite enough time in bed, can signal sleep apnoea. It is common and treatable, so mention it to a doctor.",
+      "apply_it": "Set a regular wake-up time for the next seven days, including the weekend, and go outside within an hour of waking.",
+      "quiz": {
+        "question": "What can loud snoring with breathing pauses be a sign of?",
+        "options": [
+          "Perfectly healthy deep sleep",
+          "Sleep apnoea, which is worth checking with a doctor",
+          "Too much exercise",
+          "Eating too many vegetables"
+        ],
+        "answer": 1,
+        "explanation": "Loud snoring with pauses and daytime exhaustion can point to sleep apnoea, a common condition that responds well to treatment."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--08",
+      "topic": "health",
+      "tags": [
+        "smoking",
+        "alcohol",
+        "prevention"
+      ],
+      "title": "Not smoking and drinking less add years to your life",
+      "body": "Smoking is still the single biggest preventable cause of early death. It harms almost every organ, and long-term smokers lose on average around ten years of life. The great news is that stopping helps at any age. Within a year your heart attack risk falls sharply, and people who stop before 40 regain most of those lost years.\n\nStop-smoking services, nicotine replacement and prescribed medicines more than double your chances of success compared with willpower alone. Vaping is less harmful than smoking and can help some people quit, but it is not risk free for non-smokers.\n\nWith alcohol, less is better. The WHO says no level is completely safe. In the UK, the advice is no more than 14 units a week, spread over several days with some drink-free days. That is about six medium glasses of wine.",
+      "apply_it": "If you drink, choose two alcohol-free days this week. If you smoke, look up your local free stop-smoking service.",
+      "quiz": {
+        "question": "What does the evidence say about quitting smoking?",
+        "options": [
+          "It only helps if you quit before 30",
+          "It makes no difference after 50",
+          "It is less important than taking vitamins",
+          "It brings benefits at any age"
+        ],
+        "answer": 3,
+        "explanation": "Stopping smoking brings health gains at every age, and support services greatly improve the chance of success."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--09",
+      "topic": "health",
+      "tags": [
+        "blood-pressure",
+        "cholesterol",
+        "screening"
+      ],
+      "title": "Know your numbers and keep up with screening",
+      "body": "High blood pressure and high cholesterol usually cause no symptoms, yet they quietly drive heart attacks, strokes, kidney disease and vascular dementia. The only way to know is to get checked.\n\nAs a rough guide, a healthy blood pressure is below about 120/80, and treatment is often discussed from 140/90 in the UK or 130/80 in the US. Many pharmacies check it for free, and home monitors are affordable. Your doctor can also check cholesterol, blood sugar and your overall heart risk. In England, adults aged 40 to 74 are invited for a free NHS Health Check every five years.\n\nTake up screening invitations for bowel, breast and cervical cancer, keep vaccines up to date, and get your hearing and eyes tested. Catching problems early makes them far easier to treat.",
+      "apply_it": "Find out when your blood pressure was last measured. If it was over a year ago, book a check at a pharmacy or surgery.",
+      "quiz": {
+        "question": "Why are blood pressure checks important even if you feel fine?",
+        "options": [
+          "High blood pressure usually has no symptoms",
+          "Checks cure high blood pressure",
+          "Only people with headaches get it",
+          "It only matters after age 90"
+        ],
+        "answer": 0,
+        "explanation": "High blood pressure is often silent. Regular checks catch it early so it can be treated before it causes damage."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--10",
+      "topic": "health",
+      "tags": [
+        "connection",
+        "purpose",
+        "loneliness"
+      ],
+      "title": "Stay connected and keep a sense of purpose",
+      "body": "Strong relationships are one of the most reliable predictors of a long, healthy life. Long-term loneliness and social isolation are linked with higher risks of heart disease, stroke, depression and dementia, with some researchers comparing the effect to smoking.\n\nConnection does not require a huge social circle. A few people you can call, regular contact with neighbours and a role in a group, such as a choir, faith community, walking club or volunteering, all count.\n\nPurpose matters too. People who feel their life has meaning, whether through family, work, creativity or helping others, tend to stay healthier and more active. Retirement can remove both purpose and contact in one go, so it helps to plan what will fill those gaps.\n\nIf hearing loss makes conversations tiring, get tested. Hearing aids help people stay social.",
+      "apply_it": "Message or call one person you have not spoken to for a while and suggest meeting up.",
+      "quiz": {
+        "question": "Which statement about loneliness is supported by research?",
+        "options": [
+          "It only affects mood, not physical health",
+          "It is a normal part of ageing that cannot change",
+          "Only very old people experience it",
+          "It is linked with higher risks of heart disease, stroke and dementia"
+        ],
+        "answer": 3,
+        "explanation": "Long-term isolation is linked with real physical risks. Small, regular social contact and a sense of purpose are protective."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--11",
+      "topic": "health",
+      "tags": [
+        "brain-health",
+        "dementia",
+        "learning"
+      ],
+      "title": "Keep your brain active and lower your dementia risk",
+      "body": "Dementia is not an inevitable part of ageing. A major 2024 review by the Lancet Commission estimated that nearly half of dementia cases worldwide are linked to risks we can change.\n\nThose risks include high blood pressure, high LDL cholesterol, diabetes, smoking, heavy drinking, physical inactivity, obesity, depression, social isolation, air pollution, head injury and untreated hearing or vision loss. In other words, what is good for your heart is good for your brain.\n\nMental challenge helps too. Learning something genuinely new and demanding, such as a language, an instrument or a craft, seems more useful than repeating easy puzzles. Social activities that make you think are doubly good.\n\nProtect your head by wearing a helmet for cycling, and treat hearing loss: hearing aids are a simple, underused step.",
+      "apply_it": "Choose one new skill to start learning this month and spend 15 minutes on it today.",
+      "quiz": {
+        "question": "Which is listed as a changeable dementia risk factor?",
+        "options": [
+          "Untreated hearing loss",
+          "Being left-handed",
+          "Having brown eyes",
+          "Your month of birth"
+        ],
+        "answer": 0,
+        "explanation": "Untreated hearing loss, high blood pressure, inactivity, smoking and isolation are among the modifiable risks for dementia."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-longer-and-healthier--12",
+      "topic": "health",
+      "tags": [
+        "supplements",
+        "doctor",
+        "urgent-help"
+      ],
+      "title": "Skip the longevity hype and know when to see a doctor",
+      "body": "Longevity is big business, and many products promise to slow ageing. Most pricey pills, such as NAD boosters, resveratrol or 'anti-ageing' stacks, have little or no good evidence in humans. Some supplements interact with medicines. A few are useful for specific people, such as vitamin D in the UK through autumn and winter, or B12 for some older adults and vegans. Ask a doctor or pharmacist.\n\nSee a doctor if you notice unexplained weight loss, a lump, a change in bowel habits, blood in your urine or stool, a persistent cough, new memory problems or frequent falls.\n\nCall emergency services straight away for chest pain or pressure, sudden breathlessness, or signs of stroke: a drooping face, arm weakness or slurred speech. Acting fast saves lives and brain function.",
+      "apply_it": "Check any supplements you take with a pharmacist, and save the stroke signs (face, arms, speech, time) in your phone notes.",
+      "quiz": {
+        "question": "Which symptom needs an emergency call, not a routine appointment?",
+        "options": [
+          "Mild stiffness after gardening",
+          "Wanting to try a new hobby",
+          "A slightly lower step count than usual",
+          "Sudden face drooping and slurred speech"
+        ],
+        "answer": 3,
+        "explanation": "Face drooping, arm weakness and slurred speech are stroke signs. Call emergency services immediately because every minute counts."
+      },
+      "health": true
+    }
+  ]
+}

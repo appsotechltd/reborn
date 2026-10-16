@@ -160,6 +160,11 @@ the attribution line names the main ones. Each guide has 10 to 12 parts in readi
 app shows it as a "Complete guide" post (the book summary built at seed). Guides on health,
 anger, anxiety, stress, sleep, food, exercise, smoking and first aid carry the health note.
 
+The same kind of guide also lives inside other categories: two each in Mental Health, AI & Future
+Skills, Science & Nature, Crime & Society, Health & Wellness and Lives & History (added 2026-10-16).
+Those cards take that category's topic instead of `life-guides`; mental health and health guides
+carry the health note.
+
 ## The pipeline
 
 Code lives in [pipeline/](pipeline/). Python 3.11+, standard library only.

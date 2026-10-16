@@ -1,0 +1,273 @@
+{
+  "source": {
+    "id": "guide-use-ai-tools-well",
+    "title": "Use AI Tools Well",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://mitsloanedtech.mit.edu/ai/basics/effective-prompts/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on MIT Sloan, the UK National Cyber Security Centre, the US Federal Trade Commission and NIST.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: MIT Sloan Teaching & Learning Technologies, Effective Prompts for AI: The Essentials, https://mitsloanedtech.mit.edu/ai/basics/effective-prompts/; MIT Sloan Teaching & Learning Technologies, When AI Gets It Wrong: Addressing AI Hallucinations and Bias, https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/; UK National Cyber Security Centre, ChatGPT and large language models: what's the risk?, https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk; US Federal Trade Commission, Scammers use AI to enhance their family emergency schemes, https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes; NIST, AI Risk Management Framework, https://www.nist.gov/itl/ai-risk-management-framework; University of Chicago, Generative AI resources for students, https://genai.uchicago.edu/resources/students"
+  },
+  "cards": [
+    {
+      "id": "guide-use-ai-tools-well--01",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "mindset",
+        "chatbots"
+      ],
+      "title": "AI assistants are brilliant helpers but not all-knowing oracles",
+      "body": "AI chatbots and assistants can now draft emails, explain tricky ideas, plan trips, summarise long documents and help you practise a new language. Used well, they can save you hours every week and make hard things feel easier to start.\n\nBut they are not magic and they are not always right. They can sound confident while being wrong, they do not truly understand your life, and anything you type may be stored by the company that runs them.\n\nThe people who get the most from AI treat it like a quick, keen assistant who needs clear instructions and whose work must be checked. This guide shows you how to do exactly that: write better prompts, give useful context, check facts, protect your privacy, learn rather than cheat, and spot AI-made fakes.",
+      "apply_it": "Write down three tasks from your week that an AI assistant might help you start, such as a tricky email or a meal plan.",
+      "quiz": {
+        "question": "What is the healthiest way to think of an AI assistant?",
+        "options": [
+          "A perfect source of truth you never need to check",
+          "A fast, keen helper whose work you guide and check",
+          "A replacement for your own judgement",
+          "A toy with no practical use"
+        ],
+        "answer": 1,
+        "explanation": "AI can be very useful, but it can be wrong and needs clear direction. Treat it as an assistant whose work you guide and review."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--02",
+      "topic": "ai-skills",
+      "tags": [
+        "how-ai-works",
+        "language-models",
+        "ai-basics"
+      ],
+      "title": "Chatbots predict likely words rather than look up the truth",
+      "body": "Most chatbots run on large language models. These are trained on huge amounts of text and learn the patterns of how words follow each other. When you ask a question, the model builds an answer one small piece at a time, choosing what is most likely to come next.\n\nThat is why AI is so good at fluent writing, summaries and explanations. It is also why it can produce a smooth, believable sentence that is simply false. It is matching patterns, not checking a database of facts, unless the tool is set up to search the web or read your documents.\n\nSome assistants now show links to sources, which helps. Still, think of the model as a skilled writer with a patchy memory. Great for drafts and ideas, but never the final word on facts.",
+      "apply_it": "Ask an AI assistant to explain how it creates answers, then compare its explanation with this card.",
+      "quiz": {
+        "question": "Why can a chatbot write a confident sentence that is false?",
+        "options": [
+          "It is programmed to lie",
+          "It always searches the internet first",
+          "It predicts likely words from patterns rather than checking facts",
+          "It only works offline"
+        ],
+        "answer": 2,
+        "explanation": "Language models generate text by predicting what is likely to come next, so fluent but wrong answers are possible."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--03",
+      "topic": "ai-skills",
+      "tags": [
+        "prompts",
+        "writing",
+        "clarity"
+      ],
+      "title": "A good prompt names the task, the audience and the format you want",
+      "body": "A vague request gets a vague answer. Asking 'Tell me about budgeting' gives you something generic. Asking 'Explain a simple monthly budget to a 19-year-old starting their first job, in five bullet points with one example each' gives you something you can actually use.\n\nA strong prompt usually covers four things. The task: what you want done. The audience: who it is for. The format: a list, a table, a short email, a step-by-step plan. And any limits: word count, tone, things to avoid.\n\nYou can also give the AI a role, such as 'act as a patient maths tutor', or show it an example of the style you like. You do not need special tricks or secret phrases. Clear, specific, plain language is what works best.",
+      "apply_it": "Rewrite one vague question you might ask AI so it names the task, the audience, the format and one limit.",
+      "quiz": {
+        "question": "Which prompt is likely to give the most useful answer?",
+        "options": [
+          "Tell me about budgeting",
+          "Budgeting?",
+          "Write something about money",
+          "Explain a monthly budget to a new worker in five bullet points with examples"
+        ],
+        "answer": 3,
+        "explanation": "Specific prompts that state the task, audience, format and limits produce far more useful answers than vague ones."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--04",
+      "topic": "ai-skills",
+      "tags": [
+        "context",
+        "prompts",
+        "personalisation"
+      ],
+      "title": "Give the AI the background it needs, just as you would a new helper",
+      "body": "Imagine asking a new colleague to write a thank-you note without telling them who it is for or what happened. They would have to guess. AI is the same. The more relevant background you share, the better it can help.\n\nUseful context includes your goal, what you have already tried, your level of knowledge and any constraints. For example: 'I'm a nurse planning meals for night shifts. I have 20 minutes to cook, a small budget and I don't eat pork.' That one sentence transforms the answer.\n\nYou can also paste in material to work from, such as your own notes or a document you are allowed to share, and ask the AI to use only that. Just keep personal and confidential details out, which we cover later. Relevant beats lengthy: share what matters, skip the rest.",
+      "apply_it": "Before your next AI request, add two sentences of background about your goal and your situation.",
+      "quiz": {
+        "question": "What kind of context helps an AI give a better answer?",
+        "options": [
+          "Your goal, your situation and any limits",
+          "Your passwords and bank details",
+          "As many unrelated details as possible",
+          "Nothing at all; short is always best"
+        ],
+        "answer": 0,
+        "explanation": "Relevant background like your goal, level and constraints helps the AI tailor its answer. Sensitive data should never be shared."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--05",
+      "topic": "ai-skills",
+      "tags": [
+        "iteration",
+        "prompts",
+        "feedback"
+      ],
+      "title": "Treat the first answer as a draft and keep refining it",
+      "body": "The first reply is rarely the best one. The real skill is the follow-up. Chat tools remember the conversation, so you can steer without starting again.\n\nTry replies like: 'Make it shorter and warmer.' 'Give me three different versions.' 'That's too advanced, explain it as if I'm new to this.' 'What did you leave out?' 'Ask me questions first so you understand what I need.'\n\nThat last one is powerful. Asking the AI to interview you often surfaces details you forgot to mention.\n\nIf the conversation drifts or gets muddled, open a fresh chat and paste in a clean summary of what you want. Different tools also have different strengths, so if one struggles, another may do better. Think of it as a conversation with an editor, not a vending machine.",
+      "apply_it": "Take one AI answer you got recently and send two follow-up requests to improve it, such as 'shorter' and 'give an example'.",
+      "quiz": {
+        "question": "What should you do if an AI's first answer is not quite right?",
+        "options": [
+          "Give up on AI entirely",
+          "Ask follow-up questions to refine it",
+          "Accept it as it is",
+          "Repeat the exact same prompt louder"
+        ],
+        "answer": 1,
+        "explanation": "Follow-ups like 'shorter', 'more examples' or 'ask me questions first' usually improve answers far more than starting over blindly."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--06",
+      "topic": "ai-skills",
+      "tags": [
+        "hallucinations",
+        "fact-checking",
+        "accuracy"
+      ],
+      "title": "Check important facts because AI can confidently invent things",
+      "body": "AI tools sometimes make things up. This is often called hallucination. They may invent a statistic, a quote, a book title, a law or a reference that looks real but does not exist. They can also reflect biases found in the text they learned from, or be out of date.\n\nSo match your checking to the stakes. A birthday poem needs no fact-check. Anything about health, money, legal rights, schoolwork or news does.\n\nGood habits: ask the AI for its sources, then open them yourself to confirm they exist and say what it claims. Cross-check key facts with a trusted site, such as an official government page. Be extra wary of precise numbers and named quotes. For serious decisions, talk to a qualified person. You are responsible for anything you share or act on.",
+      "apply_it": "Pick one fact an AI told you recently and confirm it on an official or trusted website.",
+      "quiz": {
+        "question": "When is fact-checking AI output most important?",
+        "options": [
+          "Only for creative writing like poems",
+          "Never, as AI is always right",
+          "Only when the answer is very short",
+          "For health, money, legal, school or news topics"
+        ],
+        "answer": 3,
+        "explanation": "AI can invent facts and sources. The higher the stakes, the more carefully you should verify with trusted sources or experts."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--07",
+      "topic": "ai-skills",
+      "tags": [
+        "privacy",
+        "security",
+        "data"
+      ],
+      "title": "Never paste anything you would hate to see leaked",
+      "body": "What you type into a public chatbot is usually stored by the company that runs it. It may be read by staff, used to improve the service, or exposed if the company is hacked. Even small details can add up across many chats to reveal a lot about you.\n\nA simple rule: if you would be upset to see it on a noticeboard, do not paste it in. That means no passwords, bank or card numbers, ID numbers, medical records, private photos of others, or confidential work files, client details and unreleased plans.\n\nCheck the tool's privacy settings. Many let you turn off chat history or stop your data being used for training. At work, use only the AI tools your employer has approved. When you need help with something personal, describe it in general terms and remove names.",
+      "apply_it": "Open the settings of an AI tool you use and check whether your chats are saved or used for training.",
+      "quiz": {
+        "question": "Which of these is safe to paste into a public chatbot?",
+        "options": [
+          "Your online banking password",
+          "A client's confidential contract",
+          "A general question about how to write a cover letter",
+          "A friend's medical records"
+        ],
+        "answer": 2,
+        "explanation": "Public AI tools may store and review what you type. Keep passwords, financial, medical and confidential work data out."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--08",
+      "topic": "ai-skills",
+      "tags": [
+        "learning",
+        "study",
+        "integrity"
+      ],
+      "title": "Use AI to learn faster, not to skip the learning",
+      "body": "AI can be a patient tutor who never tires of your questions. You can ask it to explain a concept three different ways, quiz you, check your reasoning, or give feedback on a draft you wrote yourself.\n\nWhat it should not do is the thinking for you. If it writes your essay or solves your homework, you miss the learning and may break your school or university's rules, which can have serious consequences. Policies differ between courses, so always check what is allowed and say when you have used AI.\n\nTry learning prompts such as: 'Don't give me the answer, give me a hint.' 'Quiz me on this chapter, one question at a time.' 'Here is my solution, where did I go wrong?' The struggle is where your brain grows, so keep it.",
+      "apply_it": "Ask an AI to quiz you on something you are learning, one question at a time, without giving the answers first.",
+      "quiz": {
+        "question": "Which is a good way for a student to use AI?",
+        "options": [
+          "Asking it to quiz you and give hints instead of answers",
+          "Having it write the whole essay and submitting it",
+          "Hiding AI use even when the course requires disclosure",
+          "Copying its homework answers without reading them"
+        ],
+        "answer": 0,
+        "explanation": "Using AI as a tutor builds real understanding. Letting it do the work skips the learning and may break academic rules."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--09",
+      "topic": "ai-skills",
+      "tags": [
+        "images",
+        "voice",
+        "multimodal"
+      ],
+      "title": "Many AI tools can now see pictures, hear you and make images",
+      "body": "Today's assistants go well beyond typed chat. Many can look at a photo and describe it, read a chart, translate a menu, or help identify a plant. You can talk to them out loud and hear spoken replies, which is handy while cooking or walking. Some can create images or turn rough notes into slides.\n\nThese features are useful, but the same rules apply. Image recognition can be wrong, so do not rely on it for anything risky, like deciding if a mushroom is safe to eat. Think before uploading photos of other people, documents with personal details, or your home's location.\n\nFor AI-made images, check the tool's rules on how you may use them, be honest when an image is AI-generated, and never create fake pictures of real people that could mislead or hurt them.",
+      "apply_it": "Try one new mode today: ask an AI to explain a photo of something around you, or talk to it by voice.",
+      "quiz": {
+        "question": "What is a sensible caution when using AI image recognition?",
+        "options": [
+          "It is always accurate, so trust it completely",
+          "Never rely on it for risky decisions like whether wild food is safe",
+          "It only works on black and white photos",
+          "You should upload photos of strangers freely"
+        ],
+        "answer": 1,
+        "explanation": "Image tools can misidentify things. Use them for curiosity and convenience, not for safety-critical decisions."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--10",
+      "topic": "ai-skills",
+      "tags": [
+        "deepfakes",
+        "scams",
+        "media-literacy"
+      ],
+      "title": "Spot AI fakes by slowing down and checking the source",
+      "body": "AI can now create convincing fake photos, videos, voices and messages. Scammers use cloned voices to pose as a relative in trouble, and fake videos of well-known people to push bogus investments.\n\nVisual clues like odd hands, warped backgrounds or strange lighting still sometimes help, but fakes are improving fast, so do not rely on them. Focus on the situation instead. Is it urgent? Emotional? Asking for money, gift cards, crypto or secrecy? Those are classic warning signs.\n\nVerify before you act. If a loved one calls in a panic, hang up and ring them back on a number you already know. Check surprising news on several trusted outlets. Search for the original source of a striking image. Agree a family code word for emergencies. When in doubt, wait. Real emergencies survive a two-minute check.",
+      "apply_it": "Agree a secret family code word you can use to confirm it is really them in an emergency call.",
+      "quiz": {
+        "question": "A panicked call from a 'relative' asks for money urgently. What should you do first?",
+        "options": [
+          "Send the money quickly to help",
+          "Trust the voice because it sounds just like them",
+          "Pay with gift cards as they ask",
+          "Hang up and call them back on a number you know"
+        ],
+        "answer": 3,
+        "explanation": "Voices can be cloned. Verifying through a known number or another family member is the safest first step before acting."
+      }
+    },
+    {
+      "id": "guide-use-ai-tools-well--11",
+      "topic": "ai-skills",
+      "tags": [
+        "habits",
+        "productivity",
+        "practice"
+      ],
+      "title": "Build a small daily AI habit to grow your skill steadily",
+      "body": "Like any tool, AI rewards practice. You do not need hours. Ten minutes a day, aimed at real tasks, will build your confidence faster than reading about it.\n\nTry a simple routine. Each morning, ask AI to help with one thing on your list, such as drafting a reply, planning a meal or breaking a big job into steps. Each week, try one new use, like summarising a long article or practising a conversation in another language. Keep a note of prompts that worked well so you can reuse them.\n\nStay the boss. Read everything before you use it, check facts that matter, protect private details and keep doing the thinking yourself. Used this way, AI becomes a quiet daily boost that frees time for the things only you can do.",
+      "apply_it": "Set a ten-minute slot tomorrow to use AI on one real task, and save the prompt if it works.",
+      "quiz": {
+        "question": "What is the best way to get better at using AI tools?",
+        "options": [
+          "Read about AI but never use it",
+          "Use it only once a year",
+          "Practise a little each day on real tasks and save good prompts",
+          "Let it make all your decisions"
+        ],
+        "answer": 2,
+        "explanation": "Short, regular practice on real tasks builds skill quickly, while staying in charge keeps you safe and sharp."
+      }
+    }
+  ]
+}

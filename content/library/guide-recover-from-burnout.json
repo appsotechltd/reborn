@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-recover-from-burnout",
+    "title": "Recover from Burnout",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the World Health Organization, the NHS, Mind and the UK Health and Safety Executive.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: World Health Organization, Burn-out an occupational phenomenon: International Classification of Diseases, https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases; World Health Organization, Burn-out an occupational phenomenon (FAQ), https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon; NHS Every Mind Matters, Stress, https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/; Mind, Coping with burnout, https://www.mind.org.uk/workplace/influence-and-participation-toolkit/overcoming-challenges/i-feel-burned-out/; Health and Safety Executive, Management Standards, https://www.hse.gov.uk/stress/standards/; Maslach C and Leiter MP, Understanding the burnout experience: recent research and its implications for psychiatry (World Psychiatry, 2016), https://pmc.ncbi.nlm.nih.gov/articles/PMC4911781/"
+  },
+  "cards": [
+    {
+      "id": "guide-recover-from-burnout--01",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "work",
+        "mindset"
+      ],
+      "title": "Burnout is a response to chronic work stress, not a personal failure",
+      "body": "Burnout is what happens when stress at work goes on for so long, without enough recovery, that your reserves run dry. The World Health Organization describes it as an occupational phenomenon in its International Classification of Diseases. It is not classed as a medical condition, but it is a real and recognised state with three main features.\n\nThe first is exhaustion, a deep tiredness that a weekend does not fix. The second is mental distance from your job: feeling cynical, detached or dreading work. The third is reduced effectiveness, a sense that you are no longer good at what you do.\n\nIf this sounds familiar, you are not weak or lazy. Burnout usually grows from a poor fit between a person and their working conditions. The good news is that recovery is possible, and this guide shows you the way.",
+      "apply_it": "Rate yourself from 1 to 10 on exhaustion, cynicism and feeling ineffective at work.",
+      "quiz": {
+        "question": "Which three features does the WHO use to describe burnout?",
+        "options": [
+          "Hunger, boredom and lateness",
+          "Exhaustion, mental distance from your job and reduced effectiveness",
+          "Anger, joy and surprise",
+          "Headaches, back pain and colds"
+        ],
+        "answer": 1,
+        "explanation": "The WHO's ICD-11 describes burnout through exhaustion, cynicism or distance from work, and reduced professional efficacy."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--02",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "stress",
+        "depression"
+      ],
+      "title": "Burnout, stress and depression overlap but are not the same thing",
+      "body": "These three get mixed up, and the difference matters for what helps.\n\nStress usually feels like too much: too many demands, racing thoughts, urgency. You are still engaged and believe things will improve once you get on top of it. A good break often helps.\n\nBurnout feels more like not enough: empty, flat and detached. Caring has worn out. The WHO links burnout specifically to work, and rest alone may not fix it if the conditions causing it stay the same.\n\nDepression goes beyond work. It colours your whole life, with low mood or loss of interest most days for at least two weeks, and changes in sleep, appetite or self-worth. Hobbies and loved ones feel joyless too.\n\nBurnout can slide into depression, so if your low mood spreads beyond work and lingers, speak to a doctor.",
+      "apply_it": "Ask yourself: does the heaviness lift on holidays and in hobbies, or does it follow me everywhere?",
+      "quiz": {
+        "question": "Which sign points more to depression than burnout?",
+        "options": [
+          "Feeling tired after a busy week",
+          "Dreading one difficult meeting",
+          "Feeling cynical only about work tasks",
+          "Low mood and lost interest across all of life for two weeks or more"
+        ],
+        "answer": 3,
+        "explanation": "Burnout is tied to work. Low mood that spreads into every area of life and lasts weeks suggests depression and needs a doctor."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--03",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "causes",
+        "workplace"
+      ],
+      "title": "Six mismatches at work are the main drivers of burnout",
+      "body": "Psychologist Christina Maslach and colleagues, who have studied burnout for decades, found it grows from mismatches between people and their work in six areas.\n\nWorkload: too much to do, for too long, with too little time to recover. Control: little say over how or when you work. Reward: effort that goes unnoticed, whether in pay, praise or progress. Community: poor relationships, conflict or isolation. Fairness: feeling decisions are unjust or favour others. Values: being asked to do things that clash with what you believe matters.\n\nThis view is freeing, because it shows burnout is not just about your resilience. It also points to where change will help most. Many people find one or two areas hurt far more than the rest, and those are where to start.",
+      "apply_it": "Score each of the six areas from 1 to 5 and circle the two that hurt most.",
+      "quiz": {
+        "question": "Which is one of Maslach's six areas linked to burnout?",
+        "options": [
+          "Control over your work",
+          "The colour of your office",
+          "Your star sign",
+          "How far you live from the sea"
+        ],
+        "answer": 0,
+        "explanation": "Maslach's research names workload, control, reward, community, fairness and values as the six key areas of fit."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--04",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "first-steps",
+        "energy"
+      ],
+      "title": "Your first step is to stop the drain before you try to refill",
+      "body": "When you are burned out, adding new habits can feel like one more demand. So start by stopping the biggest leaks.\n\nList everything you do in a typical week, at work and at home. Mark each item as essential, could be delayed, could be shared, or could be dropped. Be honest: many of us carry tasks out of guilt or habit.\n\nThen act on two or three. Push back a non-urgent deadline, hand over a task, say no to a new commitment, or lower the standard on something that does not need perfection. Cancel one optional meeting or social obligation this week.\n\nAlso protect basics that are slipping. Eat proper meals, drink water and aim for a regular bedtime. These small steps will not solve burnout, but they stop it getting worse and give you a little room to think.",
+      "apply_it": "Write your weekly task list and mark one thing to drop, delay or delegate this week.",
+      "quiz": {
+        "question": "Why focus on stopping the drain first?",
+        "options": [
+          "Because new habits never help",
+          "Adding demands while depleted can make things worse",
+          "Because burnout always fixes itself",
+          "So you can work longer hours"
+        ],
+        "answer": 1,
+        "explanation": "When energy is low, cutting the biggest drains frees capacity. Piling on new goals can feel like another burden."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--05",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "rest",
+        "recovery"
+      ],
+      "title": "Real recovery means switching off from work, not just stopping",
+      "body": "Lying on the sofa scrolling work emails is not rest. Research on recovery suggests several ingredients help energy return.\n\nDetachment: mentally switching off from work, not just being away from your desk. Relaxation: calm activities that lower your stress, such as a slow walk, a bath or music. Mastery: gently absorbing activities that are not work, like cooking, gardening or learning a song. Control: some time each week where you decide what to do.\n\nSleep matters most of all. Keep regular times and guard your wind-down hour.\n\nNature, daylight and time with people who make you feel at ease are especially restoring. Notice what leaves you more drained, such as endless scrolling, and what truly refreshes you. Then build small doses of the good stuff into each day, not just your holidays.",
+      "apply_it": "Plan one 30-minute activity this week that fully absorbs you and has nothing to do with work.",
+      "quiz": {
+        "question": "What does detachment mean in recovery?",
+        "options": [
+          "Ignoring your family",
+          "Mentally switching off from work during time off",
+          "Quitting your job immediately",
+          "Sleeping all day"
+        ],
+        "answer": 1,
+        "explanation": "Detachment means letting your mind truly step away from work. Being away from your desk while still thinking about it does not restore you."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--06",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "boundaries",
+        "work-life"
+      ],
+      "title": "Clear boundaries protect the energy you are rebuilding",
+      "body": "Boundaries are the limits that keep work from swallowing the rest of your life. They are not about being difficult. They help you do good work over the long term.\n\nStart with time. Choose a finishing time and stick to it most days. Turn off work notifications in the evening, or remove work email from your phone. Take your full lunch break away from your screen, and use your annual leave.\n\nThen practise saying no, or not yet. Try: 'I can do that, but it means the report moves to Friday. Which matters more?' This turns a flat refusal into a shared decision about priorities.\n\nExpect some discomfort at first, especially if you are used to always saying yes. Most people respect clear, polite limits more than you fear, and the guilt usually fades within a few weeks.",
+      "apply_it": "Choose a finish time for work tomorrow and switch off notifications when it arrives.",
+      "quiz": {
+        "question": "What is a helpful way to respond to an extra request when you are overloaded?",
+        "options": [
+          "Always agree and work late",
+          "Ignore the request completely",
+          "Ask which priority should move to make room for it",
+          "Complain to colleagues instead"
+        ],
+        "answer": 2,
+        "explanation": "Naming the trade-off makes the workload visible and turns a refusal into a shared decision about priorities."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--07",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "manager",
+        "communication"
+      ],
+      "title": "Talking openly with your manager can change the conditions",
+      "body": "Because burnout grows from working conditions, real recovery often needs changes at work, and your manager is usually key. Many employers have a duty to manage work-related stress. In the UK, for example, the Health and Safety Executive expects employers to assess stress risks such as demands, control and support.\n\nPrepare before you talk. Note what is overwhelming you, how long it has gone on, and the effect on your health or work. Bring two or three specific ideas, such as pausing a project, clearer priorities, more flexible hours, or extra help.\n\nKeep it factual and focused on solutions: 'I have been working most evenings for three months and I am running on empty. Can we agree what to pause?' You do not have to share medical details. If talking to your manager feels unsafe, try HR, occupational health or a trusted senior colleague.",
+      "apply_it": "Write three bullet points: what is too much, how it affects you, and one change you would like.",
+      "quiz": {
+        "question": "What makes a conversation with your manager about burnout more effective?",
+        "options": [
+          "Specific facts and two or three practical suggestions",
+          "Vague complaints with no ideas",
+          "Waiting until you quit",
+          "Sharing all your private medical history"
+        ],
+        "answer": 0,
+        "explanation": "Clear facts and practical options make it easier for a manager to understand the problem and agree on changes."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--08",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "meaning",
+        "values"
+      ],
+      "title": "Reconnecting with what matters can relight a worn-out spark",
+      "body": "Cynicism is a hallmark of burnout. Work that once felt meaningful starts to feel pointless. Rebuilding a sense of meaning is a powerful part of recovery.\n\nStart by remembering why you chose this work, or what you once enjoyed about it. Write down the moments when you felt useful or proud. Then notice which tasks still give you even a small sense of purpose, and look for ways to do more of them.\n\nSometimes people reshape their job: changing how they do tasks, who they work with, or how they think about the impact. A nurse buried in paperwork might protect time for patient contact. An office worker might mentor a new colleague.\n\nMeaning can also come from outside work, through family, friends, faith, volunteering or creative projects. Your worth is not measured only by your job.",
+      "apply_it": "Write down one moment at work when you felt useful, and one task that still gives you purpose.",
+      "quiz": {
+        "question": "Which is an example of reshaping your job to restore meaning?",
+        "options": [
+          "Doing exactly the same tasks for longer hours",
+          "Avoiding all colleagues",
+          "Never thinking about why your work matters",
+          "Protecting time for the parts of your role that feel most worthwhile"
+        ],
+        "answer": 3,
+        "explanation": "Small changes to how you spend time at work, focused on meaningful tasks, can rebuild a sense of purpose."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--09",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "connection",
+        "support"
+      ],
+      "title": "Leaning on people helps, even when you want to withdraw",
+      "body": "When you are exhausted, it is natural to pull away from people. Yet isolation tends to deepen burnout, while good company is one of the strongest buffers against stress.\n\nTell one or two people you trust how you are really doing. You do not need them to fix anything. Feeling heard lightens the load and helps you see things more clearly.\n\nAt work, look for allies. A colleague in the same boat, a mentor or a peer support group can offer practical tips and remind you that you are not alone. Small acts of friendliness, like a coffee chat, can make a tense workplace feel safer.\n\nOutside work, keep up low-effort contact: a walk with a friend, a call with a sibling, a meal with family. Even short, warm moments with others help recharge you.",
+      "apply_it": "Message one person you trust today and arrange a short walk, call or coffee.",
+      "quiz": {
+        "question": "Why does social connection help with burnout?",
+        "options": [
+          "It buffers stress and helps you feel less alone",
+          "It adds more tasks to your day",
+          "It makes work hours longer",
+          "It is only useful for extroverts"
+        ],
+        "answer": 0,
+        "explanation": "Supportive relationships ease stress and help you think more clearly. Isolation tends to make burnout worse."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--10",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "recovery",
+        "pacing"
+      ],
+      "title": "Rebuild slowly, because recovery takes weeks or months, not days",
+      "body": "Burnout builds over months or years, so recovery takes time too. Many people feel better within weeks, but full recovery can take months. Expect ups and downs rather than a straight line.\n\nPace yourself. When energy starts to return, it is tempting to throw yourself back in at full speed. Instead, add load gradually, like returning to running after an injury. If you have been off work, ask about a phased return with shorter hours or lighter duties at first.\n\nTrack your energy with a quick daily score out of 10. Notice what lifts it and what drains it, and adjust. Celebrate small signs of progress, such as enjoying a meal again or feeling curious about a task.\n\nBe kind to yourself on bad days. A dip does not mean you are back at the start.",
+      "apply_it": "Start a simple daily note scoring your energy out of 10, with one thing that helped or drained it.",
+      "quiz": {
+        "question": "What is a wise way to return to normal workload after burnout?",
+        "options": [
+          "Go back to full speed immediately",
+          "Increase load gradually, such as through a phased return",
+          "Never work again",
+          "Ignore your energy levels"
+        ],
+        "answer": 1,
+        "explanation": "Like recovering from an injury, gradual increases protect progress and reduce the risk of slipping back."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--11",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "prevention",
+        "relapse"
+      ],
+      "title": "Spot your early warning signs to stop burnout returning",
+      "body": "Once you have recovered, the aim is to keep it that way. That means knowing your personal warning signs and acting early.\n\nLook back at how burnout crept up on you. Perhaps you started skipping lunch, sleeping badly, snapping at people, dreading Sunday evenings or dropping hobbies. Write these down as your early warning list.\n\nThen plan what you will do when two or three appear. Your plan might include protecting sleep, cutting back extra commitments, booking leave, or talking to your manager sooner.\n\nBuild prevention into normal life. Keep a firm finishing time, take regular holidays, and protect activities that refresh you. Review your workload every few months against the six areas: workload, control, reward, community, fairness and values. If the fit keeps going wrong despite your efforts, it may be time to consider a different role or employer.",
+      "apply_it": "Write a list of three early warning signs and one action you will take if they appear.",
+      "quiz": {
+        "question": "What helps prevent burnout from coming back?",
+        "options": [
+          "Waiting until you are exhausted again",
+          "Ignoring how burnout started last time",
+          "Knowing your early warning signs and having a plan to act on them",
+          "Taking on every new project offered"
+        ],
+        "answer": 2,
+        "explanation": "Recognising early signs and having a ready plan lets you act before stress builds into burnout again."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-recover-from-burnout--12",
+      "topic": "mental-health",
+      "tags": [
+        "burnout",
+        "getting-help",
+        "crisis"
+      ],
+      "title": "Know when to see a doctor, and get urgent help in a crisis",
+      "body": "See a doctor if exhaustion lasts for weeks despite rest, or if you have physical symptoms such as frequent headaches, chest pain, stomach problems or getting ill often. Tiredness can also come from conditions like anaemia, thyroid problems or sleep apnoea, so it is worth a check-up.\n\nAlso seek help if your low mood or anxiety spreads beyond work, if you cannot sleep, or if you are relying on alcohol or other substances to get through. A doctor can check for depression or anxiety, offer talking therapy or other treatment, and may advise time off. Employee assistance programmes often provide free, confidential counselling too.\n\nIf you ever feel hopeless, have thoughts of harming yourself or cannot stay safe, get help now. Call your local emergency number, a crisis line such as 988 in the US or Samaritans on 116 123 in the UK, or go to an emergency department.",
+      "apply_it": "Book a check-up with your doctor if your exhaustion has lasted more than a few weeks.",
+      "quiz": {
+        "question": "When should you seek urgent help?",
+        "options": [
+          "When you feel tired on a Monday",
+          "When you have thoughts of harming yourself or cannot stay safe",
+          "Only once you have quit your job",
+          "When a deadline is moved"
+        ],
+        "answer": 1,
+        "explanation": "Thoughts of self-harm or feeling unable to stay safe are an emergency. Contact emergency services or a crisis line straight away."
+      },
+      "health": true
+    }
+  ]
+}

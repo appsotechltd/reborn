@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-how-crimes-get-solved",
+    "title": "How Crimes Get Solved",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://nij.ojp.gov/topics/forensics",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US National Institute of Justice, NIST, the National Academy of Sciences, the Innocence Project and the UK College of Policing.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: National Institute of Justice, Forensic Sciences, https://nij.ojp.gov/topics/forensics; National Institute of Standards and Technology, Forensic Science, https://www.nist.gov/forensic-science; National Research Council of the National Academies, Strengthening Forensic Science in the United States: A Path Forward (2009), https://nap.nationalacademies.org/catalog/12589/strengthening-forensic-science-in-the-united-states-a-path-forward; FBI, CODIS and NDIS Frequently Asked Questions, https://le.fbi.gov/science-and-lab/biometrics-and-fingerprints/codis/codis-and-ndis-frequently-asked-questions; US Department of Justice, Interim Policy on Forensic Genetic Genealogical DNA Analysis and Searching, https://www.justice.gov/olp/page/file/1204386/dl; Innocence Project, DNA Exonerations in the United States (1989-2020), https://innocenceproject.org/dna-exonerations-in-the-united-states/; College of Policing, Investigative interviewing (Authorised Professional Practice), https://www.app.college.police.uk/app-content/investigations/investigative-interviewing"
+  },
+  "cards": [
+    {
+      "id": "guide-how-crimes-get-solved--01",
+      "topic": "crime-society",
+      "tags": [
+        "investigation",
+        "true-crime",
+        "policing"
+      ],
+      "title": "Real investigations are slower, messier and more human than TV",
+      "body": "On television, a detective finds one hair, a lab runs it in minutes, and the killer is in handcuffs by the final scene. Real cases rarely work like that.\n\nMost crimes are solved by ordinary, patient work: talking to witnesses, checking phone records and camera footage, and following up dozens of leads that go nowhere. Forensic science plays a vital role, but results can take weeks or months, and they usually support a case rather than crack it alone. Many crimes are never solved at all.\n\nIt is also a human process, which means it can go wrong. Memories fade, experts make mistakes and innocent people are sometimes convicted.\n\nThis guide follows a case from the crime scene to the courtroom. You will learn how each kind of evidence works, how strong it really is, and how to watch true crime with a sharper, fairer eye.",
+      "apply_it": "Next time you watch a crime show, note one moment where the evidence seems too fast or too certain.",
+      "quiz": {
+        "question": "How are most crimes actually solved?",
+        "options": [
+          "A single forensic test in minutes",
+          "Psychic insight from detectives",
+          "Patient work combining witnesses, records, footage and forensics",
+          "Confessions that happen almost immediately"
+        ],
+        "answer": 2,
+        "explanation": "Real cases are built step by step from many pieces. Forensics matters, but it usually supports other evidence and takes time."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--02",
+      "topic": "crime-society",
+      "tags": [
+        "crime-scene",
+        "forensics",
+        "evidence"
+      ],
+      "title": "Every contact leaves a trace, which is why scenes are guarded",
+      "body": "In the early 1900s, the French scientist Edmond Locard set up one of the first police laboratories, in Lyon. His core idea, now called Locard's exchange principle, is that when two things touch, each leaves something on the other. A burglar may leave fibres, footprints or skin cells, and carry away glass, soil or paint.\n\nThat is why the first officers at a scene work to protect it. They help anyone injured, then tape off the area, limit who goes in and record who does. Investigators photograph everything, sketch the layout and collect items in sealed, labelled bags.\n\nEach item has a chain of custody, a written record of who handled it and when. If that chain breaks, or a scene is trampled, defence lawyers can rightly argue the evidence was contaminated. Good forensic work begins long before anything reaches a lab.",
+      "apply_it": "Look around the room you are in and name three traces you would leave behind if you walked out now.",
+      "quiz": {
+        "question": "What does Locard's exchange principle say?",
+        "options": [
+          "When two things make contact, each leaves traces on the other",
+          "Criminals always return to the scene",
+          "Only fingerprints count as evidence",
+          "Evidence must be exchanged between police forces"
+        ],
+        "answer": 0,
+        "explanation": "Locard's insight underpins forensic science. Contact transfers material both ways, so careful scene work can link people, places and objects."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--03",
+      "topic": "crime-society",
+      "tags": [
+        "fingerprints",
+        "forensics",
+        "identification"
+      ],
+      "title": "Fingerprints are powerful, but matching them is human judgement",
+      "body": "The ridges on your fingertips form patterns of loops, whorls and arches, with tiny details such as ridge endings and splits. They form before birth and stay the same for life, and even identical twins have different prints.\n\nAt a scene, examiners reveal hidden prints with powders, chemicals or special lights. Databases such as the FBI's can search millions of records and suggest possible matches in minutes. But the final call is made by a trained examiner comparing details by eye.\n\nThat human step can fail, especially with smudged or partial prints. In 2004, after the Madrid train bombings, FBI examiners wrongly linked a print to an American lawyer, Brandon Mayfield, who had nothing to do with the attack. Spanish police later identified the real source.\n\nToday, good labs use independent second checks and try to shield examiners from case details that could bias them.",
+      "apply_it": "Press a finger on a clean glass, breathe on it gently, and look at the print's ridge pattern.",
+      "quiz": {
+        "question": "What did the Brandon Mayfield case show about fingerprint evidence?",
+        "options": [
+          "Fingerprints are never useful",
+          "Computers make every final match",
+          "Twins share fingerprints",
+          "Even expert examiners can make wrong matches, especially with partial prints"
+        ],
+        "answer": 3,
+        "explanation": "Fingerprints are valuable, but identification relies on human comparison. Partial prints and bias can lead to errors, so independent checks matter."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--04",
+      "topic": "crime-society",
+      "tags": [
+        "dna",
+        "forensics",
+        "databases"
+      ],
+      "title": "DNA is the strongest forensic tool, with real limits",
+      "body": "Apart from identical twins, everyone's DNA is unique. Forensic labs do not read your whole genome. They compare a set of short repeating sections that vary a lot between people. When a full profile from a crime scene matches a person, the chance of a coincidence is usually astronomically small.\n\nIn the US, profiles from scenes can be searched against CODIS, the FBI's national database, which holds millions of profiles from convicted offenders and, in many states, arrested people. The UK has its own national DNA database.\n\nBut DNA has limits. A match shows whose DNA it is, not how or when it got there. Tiny amounts of 'touch DNA' can be transferred by a handshake or a shared object. Samples with several people's DNA mixed together can be hard to interpret. And DNA only helps if there is a profile to compare against.",
+      "apply_it": "Think of three ways your DNA could end up somewhere you have never been, such as on a borrowed pen.",
+      "quiz": {
+        "question": "What does a DNA match on its own NOT prove?",
+        "options": [
+          "Whose DNA was found",
+          "How or when the DNA got there",
+          "That the sample came from a human",
+          "That the profile was compared with a database"
+        ],
+        "answer": 1,
+        "explanation": "DNA can be transferred indirectly, so a match identifies the source but not the circumstances. Investigators must still explain how it got there."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--05",
+      "topic": "crime-society",
+      "tags": [
+        "genetic-genealogy",
+        "cold-cases",
+        "dna"
+      ],
+      "title": "Genetic genealogy has reopened cold cases once thought hopeless",
+      "body": "A cold case is one where leads have run dry, sometimes for decades. Many are now being solved because stored evidence can be tested with new methods.\n\nThe best-known example is the Golden State Killer, who committed murders, rapes and burglaries across California in the 1970s and 1980s. In 2018 investigators uploaded a crime scene DNA profile to GEDmatch, a public genealogy site. It matched distant relatives. Genealogists built family trees back and forward until they narrowed the search to Joseph James DeAngelo, a former police officer. Officers collected DNA from an item he had thrown away, and it matched. He pleaded guilty in 2020 and received multiple life sentences.\n\nThe method has since helped identify hundreds of suspects and unknown victims. It also raises privacy questions, because relatives never agreed to help, so the US Justice Department set limits on its use in 2019.",
+      "apply_it": "If you have used a home DNA test, check its privacy settings to see whether police matching is allowed.",
+      "quiz": {
+        "question": "How was the Golden State Killer finally identified?",
+        "options": [
+          "A confession to a friend",
+          "A fingerprint found in 2018",
+          "His face was recognised on CCTV",
+          "Crime scene DNA matched distant relatives on a genealogy site, leading to a family tree search"
+        ],
+        "answer": 3,
+        "explanation": "Investigators used a public genealogy database to find relatives, built family trees to narrow suspects, then confirmed the match with discarded DNA."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--06",
+      "topic": "crime-society",
+      "tags": [
+        "digital-forensics",
+        "phones",
+        "evidence"
+      ],
+      "title": "Your phone is often the most detailed witness of all",
+      "body": "Today, digital evidence appears in almost every serious case. Phones record messages, photos, searches and app activity. Mobile networks log which masts a phone connected to, which gives a rough idea of where it was. Apps, smartwatches, cars and doorbells can add more precise times and places.\n\nWith legal authority, usually a warrant or court order, investigators make a forensic copy of a device so the original stays untouched. Specialists then recover data, including some deleted files, and build a timeline of who was where and when.\n\nThis evidence can catch the guilty and clear the innocent, but it needs care. Mast data shows an area, not an exact spot. A phone is not always in its owner's hand. And huge volumes of data take time to examine, which is one reason serious cases can take many months to reach court.",
+      "apply_it": "Open your phone's location history settings and see what it records about where you go.",
+      "quiz": {
+        "question": "What can phone mast data usually show?",
+        "options": [
+          "The exact room a person was in",
+          "The rough area a phone was in when it connected",
+          "What the person was thinking",
+          "Who was holding the phone"
+        ],
+        "answer": 1,
+        "explanation": "Cell mast records show which mast a phone used, giving an approximate area. They do not prove precise location or who was holding the phone."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--07",
+      "topic": "crime-society",
+      "tags": [
+        "cctv",
+        "video-evidence",
+        "policing"
+      ],
+      "title": "CCTV helps most when police find it quickly",
+      "body": "Cameras are everywhere now: in shops, on buses, on streets and on millions of front doors. In many investigations, officers spend hours collecting and watching footage to trace a suspect's route, confirm timings or check a witness account.\n\nSpeed matters, because many systems record over old footage automatically, sometimes within days. That is why police often appeal for doorbell and dashcam video soon after a crime.\n\nVideo is powerful but not perfect. Images can be grainy, dark or taken from far away. Clocks on systems can be wrong. Footage often shows that someone was present without showing exactly what happened. Identifying a stranger from a blurry image is surprisingly error-prone.\n\nLive facial recognition is now used by some police forces, including in parts of the UK, but it remains debated because of concerns about accuracy, bias and privacy.",
+      "apply_it": "If you have a doorbell or dashcam, check how many days of footage it keeps before overwriting.",
+      "quiz": {
+        "question": "Why do police appeal quickly for camera footage after a crime?",
+        "options": [
+          "Many systems automatically record over older footage",
+          "Footage becomes illegal after a week",
+          "Cameras only work at night",
+          "Courts accept only fresh video"
+        ],
+        "answer": 0,
+        "explanation": "Lots of CCTV and home camera systems overwrite recordings after a short period, so useful footage can disappear if it is not saved quickly."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--08",
+      "topic": "crime-society",
+      "tags": [
+        "eyewitness",
+        "memory",
+        "wrongful-convictions"
+      ],
+      "title": "Honest witnesses can be confidently and completely wrong",
+      "body": "Memory is not a video recording. Each time we remember something, the brain rebuilds it, and it can quietly fill gaps with guesses, things we heard later or what we expect. Stress, poor lighting, distance and short glimpses all weaken accuracy. When a weapon is present, people tend to stare at it rather than the face. People are also worse at recognising faces of a different ethnic group.\n\nThe effects are serious. In the Innocence Project's study of 375 US DNA exonerations, mistaken eyewitness identification played a part in about 69 percent.\n\nResearch has improved practice. Best methods include line-ups run by an officer who does not know who the suspect is, telling witnesses the culprit may not be present, and recording how confident the witness is straight away, before feedback can inflate it. Leading questions can plant details, so good interviews use open questions.",
+      "apply_it": "Try to describe the face of the last stranger who served you in a shop, then notice how much you are guessing.",
+      "quiz": {
+        "question": "Which line-up practice helps reduce mistaken identifications?",
+        "options": [
+          "The officer running it knows who the suspect is",
+          "Telling the witness the culprit is definitely there",
+          "Recording the witness's confidence immediately, with a blind administrator",
+          "Showing the suspect's photo several times first"
+        ],
+        "answer": 2,
+        "explanation": "Blind administration and immediate confidence records prevent unintentional hints and later memory inflation, making identifications more reliable."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--09",
+      "topic": "crime-society",
+      "tags": [
+        "interrogation",
+        "false-confessions",
+        "interviewing"
+      ],
+      "title": "Pressure in the interview room can produce false confessions",
+      "body": "It seems impossible that anyone would confess to a crime they did not commit, yet it happens surprisingly often. False confessions or admissions featured in about 29 percent of the Innocence Project's 375 DNA exoneration cases.\n\nRisk rises with long, exhausting interrogations, young or vulnerable suspects, and tactics such as lying about evidence or suggesting a confession will lead to leniency. Some people confess simply to make the pressure stop, trusting the truth will come out later.\n\nCountries handle this differently. Accusatory methods have been common in the US. Since the early 1990s, police in England and Wales have used the PEACE model, which focuses on gathering information through open questions rather than pushing for a confession. Interviews there must be recorded, and suspects have a right to free legal advice.\n\nRecording interviews and protecting vulnerable people make false confessions easier to spot and less likely.",
+      "apply_it": "Learn your country's right to a lawyer during police questioning, and how to ask for one.",
+      "quiz": {
+        "question": "What is the main aim of the PEACE interviewing model used in England and Wales?",
+        "options": [
+          "To obtain a confession at any cost",
+          "To gather accurate information through open questioning",
+          "To avoid recording interviews",
+          "To keep suspects awake until they talk"
+        ],
+        "answer": 1,
+        "explanation": "PEACE treats interviews as information gathering, not confession hunting, which reduces the pressure that can produce false confessions."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--10",
+      "topic": "crime-society",
+      "tags": [
+        "forensic-errors",
+        "wrongful-convictions",
+        "science"
+      ],
+      "title": "Some forensic methods were trusted far more than they deserved",
+      "body": "In 2009, the US National Academy of Sciences published a landmark report on forensic science. It found that, apart from DNA analysis, few forensic methods had been properly tested to show they could reliably link evidence to one specific person or source. Techniques such as bite mark comparison and microscopic hair matching had been presented in court with confidence the science did not support.\n\nThe consequences were real. Misapplied forensic science contributed to about 43 percent of the Innocence Project's DNA exoneration cases. In 2015 the FBI acknowledged that its examiners had given flawed hair testimony in a large majority of the past trials it reviewed.\n\nSince then, things have improved. NIST now coordinates scientific standards for many forensic disciplines, more labs are independently accredited, and experts are encouraged to describe the limits of their findings honestly.",
+      "apply_it": "When you hear about forensic evidence in the news, ask how well tested that method actually is.",
+      "quiz": {
+        "question": "What did the 2009 National Academy of Sciences report conclude?",
+        "options": [
+          "All forensic methods are equally reliable",
+          "Fingerprints should be banned",
+          "Forensic science is no longer needed",
+          "Apart from DNA, few methods had been rigorously shown to link evidence to one source"
+        ],
+        "answer": 3,
+        "explanation": "The report found many forensic disciplines lacked solid scientific testing, prompting reforms in standards, accreditation and courtroom testimony."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--11",
+      "topic": "crime-society",
+      "tags": [
+        "courts",
+        "justice-system",
+        "prosecution"
+      ],
+      "title": "Most cases end with a plea, not a dramatic courtroom trial",
+      "body": "Once police have a suspect, a prosecutor decides whether to charge. In England and Wales, the Crown Prosecution Service asks two questions: is there enough evidence for a realistic chance of conviction, and is prosecution in the public interest? In the US, prosecutors make similar judgements, and serious federal charges go to a grand jury.\n\nThe defence must be shown the key evidence, including anything that might help the accused. Both sides can call their own experts.\n\nMost cases never reach a full trial. In the US, the large majority of convictions, around nine in ten or more, come from guilty pleas, often in exchange for lesser charges or sentences. In the UK, many defendants also plead guilty.\n\nIf a case does go to trial, the prosecution must prove guilt beyond reasonable doubt, so the jury is sure. The accused does not have to prove anything.",
+      "apply_it": "Look up when your local court holds public hearings and consider sitting in on one to see justice up close.",
+      "quiz": {
+        "question": "Who has to prove the case in a criminal trial?",
+        "options": [
+          "The prosecution must prove guilt beyond reasonable doubt",
+          "The accused must prove their innocence",
+          "The judge investigates and decides alone",
+          "The jury gathers its own evidence"
+        ],
+        "answer": 0,
+        "explanation": "The burden of proof is on the prosecution. Defendants are presumed innocent and do not have to prove anything."
+      }
+    },
+    {
+      "id": "guide-how-crimes-get-solved--12",
+      "topic": "crime-society",
+      "tags": [
+        "true-crime",
+        "media-literacy",
+        "justice"
+      ],
+      "title": "Watch true crime with curiosity and care, not certainty",
+      "body": "True crime can be gripping and sometimes does real good, such as bringing attention to wrongful convictions or cold cases. But it often bends reality.\n\nShows make forensics look instant and certain. Some researchers call this the CSI effect: jurors expecting high-tech proof in every case. In reality, lab backlogs can stretch for months, and many crimes are never solved. In the US, only around half of murders lead to an arrest, and far fewer burglaries.\n\nStories also need a villain and a neat ending, so they can trim inconvenient facts or treat suspects as guilty before any trial. Armchair sleuthing online has wrongly named innocent people. Victims and their families are real people living with the fallout.\n\nThe best habits are simple: ask what evidence actually shows, notice what is left out, remember that suspects are not convicts, and treat victims with respect.",
+      "apply_it": "Pick one true crime story you know and look up the court records or official reports to compare.",
+      "quiz": {
+        "question": "What is the so-called CSI effect?",
+        "options": [
+          "Crime rates rising after crime shows",
+          "Detectives copying TV techniques",
+          "Jurors expecting fast, certain, high-tech forensic proof in every case",
+          "Labs working faster because of TV"
+        ],
+        "answer": 2,
+        "explanation": "Fictional forensics can raise unrealistic expectations. Real evidence is often slower, less certain and combined with ordinary investigative work."
+      }
+    }
+  ]
+}

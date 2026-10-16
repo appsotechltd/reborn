@@ -81,6 +81,10 @@ var Topics = []Topic{
 	{"study-smarter", "Study Smarter"},
 	{"skills-mastery", "Skills & Mastery"},
 	{"etiquette", "Etiquette & Manners"},
+	{"mental-health", "Mental Health"},
+	{"ai-skills", "AI & Future Skills"},
+	{"science", "Science & Nature"},
+	{"crime-society", "Crime & Society"},
 	{"life-guides", "Life Guides"},
 }
 

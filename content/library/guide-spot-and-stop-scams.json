@@ -1,0 +1,296 @@
+{
+  "source": {
+    "id": "guide-spot-and-stop-scams",
+    "title": "Spot and Stop Scams",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://consumer.ftc.gov/articles/how-avoid-scam",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the US Federal Trade Commission, the FBI's Internet Crime Complaint Center, the UK National Cyber Security Centre and Which?.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: Federal Trade Commission, How To Avoid a Scam, https://consumer.ftc.gov/articles/how-avoid-scam; Federal Trade Commission, What To Do if You Were Scammed, https://consumer.ftc.gov/articles/what-do-if-you-were-scammed; FBI Internet Crime Complaint Center, 2025 Internet Crime Report, https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf; UK National Cyber Security Centre, Phishing: spot and report scam emails, texts, websites and calls, https://www.ncsc.gov.uk/collection/phishing-scams; City of London Police, Report Fraud, https://www.reportfraud.police.uk/; Which?, Scams, https://www.which.co.uk/consumer-rights/scams; AARP, Scams and Fraud, https://www.aarp.org/money/scams-fraud/"
+  },
+  "cards": [
+    {
+      "id": "guide-spot-and-stop-scams--01",
+      "topic": "crime-society",
+      "tags": [
+        "scams",
+        "fraud",
+        "awareness"
+      ],
+      "title": "Scams catch clever, careful people every single day",
+      "body": "It is tempting to think only gullible people fall for scams. The numbers say otherwise. In 2025 the FBI's Internet Crime Complaint Center logged just over a million complaints in the United States, with reported losses of nearly 21 billion dollars, and most fraud is never reported at all. In England and Wales, fraud is now the most common crime people experience.\n\nVictims include doctors, lawyers, engineers and police officers. Scammers are professionals who rehearse scripts, test what works and use real details stolen from data leaks to sound convincing.\n\nThe good news is that nearly every scam follows the same few patterns. Once you know them, you start to see them everywhere. This guide walks you through the tricks, the most common scams in 2026, the habits that protect you, and exactly what to do if the worst happens.",
+      "apply_it": "Think of one odd message, call or email you received this month and ask yourself what it wanted you to do.",
+      "quiz": {
+        "question": "Why do scams catch so many intelligent people?",
+        "options": [
+          "Only careless people are ever targeted",
+          "Scammers are practised professionals using proven scripts and real stolen details",
+          "Scams have become rare, so nobody expects them",
+          "Banks always refund victims, so people stop caring"
+        ],
+        "answer": 1,
+        "explanation": "Scams are run like businesses. Rehearsed scripts and leaked personal data make them convincing to anyone, which is why spotting the patterns matters more than feeling smart."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--02",
+      "topic": "crime-society",
+      "tags": [
+        "scams",
+        "psychology",
+        "manipulation"
+      ],
+      "title": "Urgency, authority, fear, greed and love switch off careful thinking",
+      "body": "Almost every scam pulls one of five emotional levers. Urgency: act in the next hour or lose out. Authority: this is your bank, the police, the tax office. Fear: your account is hacked, a warrant is out, your child is hurt. Greed: a prize, a refund, a can't-lose investment. Love: a new partner or a family member who needs help.\n\nThese feelings push your brain into fast, reactive mode, where you do what you are told instead of checking. Scammers often stack them, such as a 'police officer' warning that your money must be moved now.\n\nThe defence is simple to say and powerful to practise: notice the feeling, then slow down. A real bank or agency will never punish you for hanging up, waiting a day and checking. Pressure itself is the clearest warning sign you will ever get.",
+      "apply_it": "Pick a pause phrase, such as 'I'll call you back', and say it out loud so it is ready next time someone rushes you.",
+      "quiz": {
+        "question": "What is the best first response when a message makes you feel panicked or excited?",
+        "options": [
+          "Act quickly before the chance disappears",
+          "Reply asking for more details",
+          "Forward it to everyone you know",
+          "Pause, step away and check through a trusted route"
+        ],
+        "answer": 3,
+        "explanation": "Strong emotion is the tool scammers rely on. Pausing and checking independently breaks the spell, and genuine organisations accept that you need time."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--03",
+      "topic": "crime-society",
+      "tags": [
+        "impersonation",
+        "bank-fraud",
+        "phone-scams"
+      ],
+      "title": "Your bank, the tax office and couriers never ask for this",
+      "body": "Impersonation is the most common scam of all. A caller claims to be your bank's fraud team and says your account is under attack, so you must move money to a 'safe account'. A text says a parcel is held until you pay a small fee. A message from the 'tax office' threatens arrest unless you pay today.\n\nCaller ID and text sender names can be faked, so a familiar name proves nothing. Some even know your address or card details.\n\nRemember a few firm rules. A real bank will never ask you to move money to protect it, or ask for a one-time passcode or your full PIN. Government agencies do not demand payment by gift card, crypto or wire transfer. Couriers do not text links asking for card details. If in doubt, hang up and call the number on your card or the official website.",
+      "apply_it": "Save your bank's real phone number from the back of your card into your contacts under a clear name.",
+      "quiz": {
+        "question": "A caller from your bank's fraud team asks you to move your savings to a safe account. What is this?",
+        "options": [
+          "A scam: real banks never ask you to move money to keep it safe",
+          "A normal security step",
+          "Fine if they know your address",
+          "Fine if the caller ID shows the bank's name"
+        ],
+        "answer": 0,
+        "explanation": "Safe account requests are always scams. Caller ID can be spoofed and personal details can be stolen, so hang up and call the number on your card."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--04",
+      "topic": "crime-society",
+      "tags": [
+        "phishing",
+        "email",
+        "text-messages"
+      ],
+      "title": "Phishing messages want one click, so do not give it to them",
+      "body": "Phishing is a message, usually a text or email, designed to make you click a link, open an attachment or type in a password. In 2026 these messages are often well written, because scammers use AI tools to fix spelling and copy real brand styles.\n\nLook past the design and check the basics. Was it unexpected? Is it pushing you to act fast? Does the link go to a strange or slightly misspelled web address? Is it asking for login details, card numbers or a code?\n\nThe safest habit is never to use the link in a message. Open the app or type the company's address yourself, and check your account there. You can report scam texts by forwarding them to 7726 in both the UK and the US. In the UK, forward suspicious emails to report@phishing.gov.uk, and in the US to reportphishing@apwg.org.",
+      "apply_it": "Find one suspicious message in your inbox or texts, report it, then delete it without clicking anything.",
+      "quiz": {
+        "question": "What is the safest way to check a message that says your account has a problem?",
+        "options": [
+          "Tap the link and log in quickly",
+          "Reply to the message with your details",
+          "Open the official app or type the website address yourself",
+          "Call the number given in the message"
+        ],
+        "answer": 2,
+        "explanation": "Links and phone numbers inside a message can lead straight to the scammer. Going to the company through a route you already trust avoids the trap."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--05",
+      "topic": "crime-society",
+      "tags": [
+        "romance-scams",
+        "online-dating",
+        "relationships"
+      ],
+      "title": "Romance scammers build real feelings, then ask for money",
+      "body": "Romance scams cause some of the deepest losses, both financial and emotional. They start on dating apps, social media or even a 'wrong number' text. The scammer is warm, attentive and patient, sometimes for months.\n\nWatch for a familiar pattern. They quickly want to move to private messaging. They have a reason they cannot meet or video call, such as working on an oil rig, serving overseas or a broken camera. Their photos may be stolen from someone else. Then a crisis appears: a medical bill, a customs fee, a plane ticket. Or they gently introduce an investment that made them rich.\n\nThe rule that protects you is clear: never send money, gift cards or crypto to someone you have not met in person. Try a reverse image search on their photos, and talk it through with a friend who is not caught up in the romance.",
+      "apply_it": "If you or a friend talk to someone online, run a reverse image search on one of their profile photos today.",
+      "quiz": {
+        "question": "Which sign most strongly suggests an online romance is a scam?",
+        "options": [
+          "They share hobbies with you",
+          "They message often",
+          "They always avoid video calls and then ask for money",
+          "They live in another city"
+        ],
+        "answer": 2,
+        "explanation": "Endless reasons not to meet or video chat, followed by a request for money or an investment, is the classic romance scam pattern."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--06",
+      "topic": "crime-society",
+      "tags": [
+        "investment-scams",
+        "crypto",
+        "money"
+      ],
+      "title": "Guaranteed high returns are the signature of investment fraud",
+      "body": "Investment fraud now causes the biggest losses of any scam type. The FBI's 2025 report put it at around 8.6 billion dollars in the US alone, most of it involving cryptocurrency.\n\nA common version, sometimes called pig butchering, starts with friendly chat that drifts towards trading. You are shown a slick app or website where your balance seems to grow fast. You invest more. When you try to withdraw, there are sudden taxes or fees, and then the money and the contact vanish. The platform was fake all along.\n\nOther versions include deepfake videos of famous people backing a scheme, and social media groups hyping a coin. Real investing never guarantees big returns quickly. Before you invest, check the firm is authorised with the regulator, such as the FCA register in the UK or Investor.gov in the US, and never invest through someone you met online.",
+      "apply_it": "Bookmark your country's official register of authorised investment firms so you can check any offer in seconds.",
+      "quiz": {
+        "question": "You try to withdraw profits from a trading app and are told to pay a fee first. What is most likely happening?",
+        "options": [
+          "An investment scam on a fake platform",
+          "Normal account processing",
+          "A tax rule you must follow",
+          "A sign your investment did very well"
+        ],
+        "answer": 0,
+        "explanation": "Fake platforms show rising balances to draw in more money, then invent fees to block withdrawals. Paying the fee only adds to the loss."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--07",
+      "topic": "crime-society",
+      "tags": [
+        "ai",
+        "deepfakes",
+        "voice-cloning"
+      ],
+      "title": "AI can now fake a loved one's voice, so agree a safe word",
+      "body": "Cheap AI tools can now copy a voice from a few seconds of audio, such as a video posted online. Scammers use this to call parents or grandparents with a crying 'child' in trouble: an accident, an arrest, a kidnapping. Then a second voice demands money fast and tells you to keep it secret.\n\nDeepfake video is also used. Businesses have lost millions after staff joined video calls where the boss and colleagues were all fakes. Fake celebrity videos promote investment schemes and miracle products.\n\nYou cannot rely on recognising a voice or face any more, so rely on process instead. Agree a family safe word that a real caller would know. If you get an alarming call, hang up and ring the person back on the number you already have, or contact someone who is with them. Real emergencies survive a two-minute check.",
+      "apply_it": "Agree a family safe word or question with your closest relatives tonight, and keep it off social media.",
+      "quiz": {
+        "question": "You get a frantic call that sounds exactly like your son, asking for money now. What should you do?",
+        "options": [
+          "Send the money, because you recognise his voice",
+          "Keep him talking and pay a smaller amount",
+          "Ask the caller to email proof",
+          "Hang up and call him back on his usual number, or ask for your safe word"
+        ],
+        "answer": 3,
+        "explanation": "Voices can be cloned convincingly. Calling back on a known number or checking a safe word confirms who you are really dealing with."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--08",
+      "topic": "crime-society",
+      "tags": [
+        "job-scams",
+        "rental-scams",
+        "money-mules"
+      ],
+      "title": "Fake jobs and rentals prey on people who urgently need them",
+      "body": "When you badly need work or a home, scammers know you may move faster than usual.\n\nJob scams include offers after a chat-only 'interview', jobs that require you to buy equipment or training first, and task scams where you rate products online, earn small payouts, then must deposit money to unlock bigger ones. Some 'jobs' ask you to receive and forward money. That makes you a money mule, which is a crime even if you were tricked.\n\nRental scams usually advertise a lovely place at a low price. The landlord is abroad and cannot show you round, but wants a deposit to hold it. Sometimes the listing is copied from a real home.\n\nProtect yourself with two rules. Never pay to get a job. Never pay for a rental you have not seen in person, or through an agent you have checked.",
+      "apply_it": "Before applying for any job, search the company name plus the word scam or complaints.",
+      "quiz": {
+        "question": "A new job asks you to receive money into your account and pass it on. What is the risk?",
+        "options": [
+          "None, it is a normal payroll task",
+          "You could be acting as a money mule, which is illegal",
+          "You may simply pay more tax",
+          "Only that it takes up time"
+        ],
+        "answer": 1,
+        "explanation": "Moving money for others helps criminals launder stolen funds. Even unwitting mules can face bank account closures and criminal charges."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--09",
+      "topic": "crime-society",
+      "tags": [
+        "older-adults",
+        "family",
+        "elder-fraud"
+      ],
+      "title": "Protect older relatives with talk, not lectures",
+      "body": "People over 60 lose the most money to fraud. In the FBI's 2025 report, Americans in that age group reported losses of around 7.7 billion dollars. Common scams include fake tech support pop-ups, grandparent emergency calls, lottery wins and romance.\n\nShame keeps many older victims silent, so start with warmth. Share a scam story that nearly caught you, and ask what calls and messages they have been getting. Make it normal to check with you before paying anyone new.\n\nPractical steps help too. Turn on call blocking and spam filters on their phone. Agree a family safe word. Many banks let customers add a trusted contact, extra checks on large payments or spending limits. In the US, AARP runs a free Fraud Watch helpline, and in the UK many banks have support teams for vulnerable customers.\n\nIf they are caught out, focus on what to do next, never on blame.",
+      "apply_it": "Call an older relative this week and casually ask whether they have had any strange calls or messages lately.",
+      "quiz": {
+        "question": "What is the most helpful way to protect an older relative from scams?",
+        "options": [
+          "Talk openly, share stories and agree they can check with you first",
+          "Take over all their finances without asking",
+          "Warn them they are too trusting",
+          "Tell them to never answer the phone again"
+        ],
+        "answer": 0,
+        "explanation": "Shame and isolation help scammers. Open, respectful conversations and an agreed habit of checking first make older people much safer."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--10",
+      "topic": "crime-society",
+      "tags": [
+        "cyber-security",
+        "passwords",
+        "two-factor"
+      ],
+      "title": "A few security habits stop most scams before they start",
+      "body": "You do not need to be a tech expert to be hard to scam. A handful of habits close most doors.\n\nUse a different strong password for every important account, and let a password manager remember them. Where you can, switch on two-step verification or passkeys, especially for email, banking and social media. Your email is the master key, because it can reset everything else.\n\nKeep your phone and computer updated, since updates fix holes criminals exploit. Never share a one-time code with anyone who contacts you. Codes are for you to type, not to read out.\n\nMost importantly, make 'verify by calling back' automatic. If any message asks for money or details, contact the person or company using a number you already trust. Wait a few minutes or use another phone, because on some landlines a scammer can keep the line open after you hang up.",
+      "apply_it": "Turn on two-step verification for your main email account today.",
+      "quiz": {
+        "question": "Why is securing your email account so important?",
+        "options": [
+          "It is the account scammers ignore",
+          "Email cannot be hacked anyway",
+          "It can be used to reset passwords for your other accounts",
+          "It only matters for work email"
+        ],
+        "answer": 2,
+        "explanation": "Whoever controls your email can usually reset your bank, shopping and social logins. Two-step verification there protects everything else."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--11",
+      "topic": "crime-society",
+      "tags": [
+        "scam-recovery",
+        "banking",
+        "what-to-do"
+      ],
+      "title": "If you have been scammed, act fast and without shame",
+      "body": "Speed matters more than anything. Contact your bank or card provider immediately using the number on your card. In the UK you can call 159 to reach most banks safely. Ask them to stop or reverse the payment. If you paid by gift card, wire transfer, crypto or a payment app, contact that company right away and say it was fraud.\n\nIf you shared passwords or codes, change them now, starting with email, and sign out of other devices. If you gave away identity details, ask about fraud alerts on your credit file.\n\nRefunds are more possible than many people think. In the UK, banks must reimburse most victims of authorised push payment scams, up to 85,000 pounds, if reported within 13 months.\n\nThen watch out. Victims are often targeted again by 'recovery' firms promising to get money back for a fee. That is another scam.",
+      "apply_it": "Write your bank's fraud number and the UK 159 or your country's equivalent on a note in your wallet.",
+      "quiz": {
+        "question": "Someone offers to recover your scam losses for an upfront fee. What should you assume?",
+        "options": [
+          "They are a helpful specialist",
+          "It is the police contacting you",
+          "It is your bank's normal process",
+          "It is probably a second scam targeting victims"
+        ],
+        "answer": 3,
+        "explanation": "Recovery scams target people who have already lost money. Real police and banks do not charge fees to investigate or refund you."
+      }
+    },
+    {
+      "id": "guide-spot-and-stop-scams--12",
+      "topic": "crime-society",
+      "tags": [
+        "reporting",
+        "fraud",
+        "action"
+      ],
+      "title": "Reporting a scam protects the next person too",
+      "body": "Many victims never report, out of embarrassment or a feeling nothing will happen. But reports help police link cases, close down accounts and warn others, and they are often needed for refunds.\n\nIn the US, report fraud to the Federal Trade Commission at ReportFraud.ftc.gov, and internet crimes to the FBI at ic3.gov. Report identity theft at IdentityTheft.gov for a recovery plan.\n\nIn England, Wales and Northern Ireland, Action Fraud was replaced in late 2025 by Report Fraud, run by the City of London Police, at reportfraud.police.uk or by phone. In Scotland, contact Police Scotland on 101. If someone is in danger or a crime is happening now, call 999 or 911.\n\nAlso tell your bank, the platform where it happened, and the people around you. Every scam you talk about openly makes it a little harder for the next one to work.",
+      "apply_it": "Save your country's official fraud reporting website as a bookmark on your phone.",
+      "quiz": {
+        "question": "In England and Wales, which service took over fraud reporting from Action Fraud?",
+        "options": [
+          "The NHS",
+          "Report Fraud, run by the City of London Police",
+          "Trading Standards only",
+          "Nobody, reporting has stopped"
+        ],
+        "answer": 1,
+        "explanation": "Report Fraud replaced Action Fraud from December 2025 for England, Wales and Northern Ireland. Scotland reports to Police Scotland."
+      }
+    }
+  ]
+}
