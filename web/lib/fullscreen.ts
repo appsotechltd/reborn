@@ -35,6 +35,12 @@ export function enterFullscreen(el: HTMLElement, video?: HTMLVideoElement): bool
   return false;
 }
 
+/** Whether `el` itself can go full screen (an iPhone can't: only its own video player can). */
+export function canFullscreenElement(el: HTMLElement): boolean {
+  const e = el as FsElement;
+  return typeof e.requestFullscreen === "function" || typeof e.webkitRequestFullscreen === "function";
+}
+
 export function exitFullscreen() {
   const d = document as FsDocument;
   try {

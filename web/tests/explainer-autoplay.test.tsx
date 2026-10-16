@@ -206,21 +206,17 @@ describe("feed video autoplay", () => {
     expect(enter).toHaveBeenCalled();
   });
 
-  it("plays the landscape cut, filling the card, on tablets and laptops; phones keep portrait", async () => {
-    const landscape = {
-      video_url: "/media/explainers/example-book--01-wide.mp4",
-      poster_url: "/media/explainers/example-book--01-wide.jpg",
-      width: 1280,
-      height: 720,
-    };
-    const wideCard = makeCard({ id: "example-book--01", title: "Idea 1", explainer: { ...explainer, landscape } });
-    const { unmount } = render(<CardView card={wideCard} feed />);
-    expect(videoOf(1).getAttribute("src")).toContain("example-book--01.mp4");
-    expect(screen.getByTestId("explainer").querySelector("[data-shape]")?.getAttribute("data-shape")).toBe("portrait");
-    unmount();
+  const landscape = {
+    video_url: "/media/explainers/example-book--01-wide.mp4",
+    poster_url: "/media/explainers/example-book--01-wide.jpg",
+    width: 1280,
+    height: 720,
+  };
+  const wideCard = () => makeCard({ id: "example-book--01", title: "Idea 1", explainer: { ...explainer, landscape } });
 
-    stubMatchMedia({ "min-width: 768px": true });
-    render(<CardView card={wideCard} feed />);
+  it("plays the landscape cut in cards on every screen, filling the card", async () => {
+    stubMatchMedia({ "orientation: portrait": true, "max-width: 767px": true });
+    render(<CardView card={wideCard()} feed />);
     await flush();
     const v = videoOf(1);
     expect(v.getAttribute("src")).toContain("example-book--01-wide.mp4");
@@ -228,6 +224,65 @@ describe("feed video autoplay", () => {
     const frame = screen.getByTestId("explainer").querySelector("[data-shape]") as HTMLElement;
     expect(frame.dataset.shape).toBe("landscape");
     expect(frame.className).not.toContain("max-w-[22rem]");
+    expect(frame.className).not.toContain("max-md:h-full");
+  });
+
+  it("keeps portrait in the card when a video has no landscape cut", () => {
+    render(<CardView card={card(1)} feed />);
+    expect(videoOf(1).getAttribute("src")).toContain("example-book--01.mp4");
+    expect(screen.getByTestId("explainer").querySelector("[data-shape]")?.getAttribute("data-shape")).toBe("portrait");
+  });
+
+  it("switches to the portrait cut on an upright phone's full screen, and back to landscape after", async () => {
+    stubMatchMedia({ "orientation: portrait": true, "max-width: 767px": true });
+    let fsEl: Element | null = null;
+    Object.defineProperty(document, "fullscreenElement", { configurable: true, get: () => fsEl });
+    const request = vi.fn(function (this: Element) {
+      fsEl = request.mock.contexts.at(-1) as Element;
+      document.dispatchEvent(new Event("fullscreenchange"));
+      return Promise.resolve();
+    });
+    HTMLElement.prototype.requestFullscreen = request;
+    try {
+      render(<CardView card={wideCard()} feed />);
+      await flush();
+      const v = videoOf(1);
+      await act(async () => setVisible(v, 1));
+      await act(async () => fireEvent.click(screen.getByRole("button", { name: "Full screen" })));
+      expect(v.getAttribute("src")).toContain("example-book--01.mp4");
+      expect(v.getAttribute("src")).not.toContain("-wide");
+      // The card keeps its landscape frame underneath.
+      expect(screen.getByTestId("explainer").querySelector("[data-shape]")?.getAttribute("data-shape")).toBe("landscape");
+      fsEl = null;
+      await act(async () => document.dispatchEvent(new Event("fullscreenchange")));
+      expect(v.getAttribute("src")).toContain("example-book--01-wide.mp4");
+    } finally {
+      delete (HTMLElement.prototype as Partial<HTMLElement>).requestFullscreen;
+      delete (document as Partial<Document> & { fullscreenElement?: unknown }).fullscreenElement;
+    }
+  });
+
+  it("keeps the landscape cut on full screen on laptops", async () => {
+    stubMatchMedia({ "min-width: 768px": true });
+    let fsEl: Element | null = null;
+    Object.defineProperty(document, "fullscreenElement", { configurable: true, get: () => fsEl });
+    const request = vi.fn(function (this: Element) {
+      fsEl = request.mock.contexts.at(-1) as Element;
+      document.dispatchEvent(new Event("fullscreenchange"));
+      return Promise.resolve();
+    });
+    HTMLElement.prototype.requestFullscreen = request;
+    try {
+      render(<CardView card={wideCard()} feed />);
+      await flush();
+      const v = videoOf(1);
+      await act(async () => setVisible(v, 1));
+      await act(async () => fireEvent.click(screen.getByRole("button", { name: "Full screen" })));
+      expect(v.getAttribute("src")).toContain("example-book--01-wide.mp4");
+    } finally {
+      delete (HTMLElement.prototype as Partial<HTMLElement>).requestFullscreen;
+      delete (document as Partial<Document> & { fullscreenElement?: unknown }).fullscreenElement;
+    }
   });
 
   it("loads the file without a CORS request (the media bucket sends no CORS headers)", () => {

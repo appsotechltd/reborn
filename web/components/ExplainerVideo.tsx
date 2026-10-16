@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
-import { enterFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
+import { canFullscreenElement, enterFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { isListeningPlaying, videoStarted } from "@/lib/media-focus";
 import type { Card } from "@/lib/types";
@@ -11,8 +11,11 @@ import { Icon } from "./Icon";
 /** After the reader presses play, how long to wait for playback before offering the fallback. */
 export const PLAY_TIMEOUT_MS = 10_000;
 
-/** Tablets and laptops play the landscape cut (when there is one), filling the card; phones keep portrait. */
-export const WIDE_QUERY = "(min-width: 768px)";
+/**
+ * Cards play the landscape cut (when there is one) on every screen, filling the card. On a phone held
+ * upright, full screen switches to the portrait cut, which fills the phone.
+ */
+export const TALL_FULL_SCREEN_QUERY = "(max-width: 767px) and (orientation: portrait)";
 
 /** How much of a feed video must be on screen before it starts playing by itself. */
 export const AUTOPLAY_RATIO = 0.6;
@@ -86,13 +89,24 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   // Whether a feed video was muted before it went full screen, to put back afterwards.
   const mutedBefore = useRef(true);
   const e = card.explainer;
-  const wideScreen = useMediaQuery(WIDE_QUERY);
+  const phoneUpright = useMediaQuery(TALL_FULL_SCREEN_QUERY);
+  // On full screen on an upright phone: playing the portrait cut instead of the card's landscape one.
+  const [tallFull, setTallFull] = useState(false);
+  const tallFullRef = useRef(false);
+  // Where to carry on from after switching cuts (they share the same timing).
+  const resumeAt = useRef<number | null>(null);
 
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
     return onFullscreenChange(() => {
       const now = isFullscreen(v, v);
+      if (!now && tallFullRef.current) {
+        // Back in the card: return to the landscape cut where the portrait one left off.
+        tallFullRef.current = false;
+        resumeAt.current = v.currentTime;
+        setTallFull(false);
+      }
       setFullScreen((was) => {
         if (was && !now && feed && mutedBefore.current) {
           v.muted = true;
@@ -134,6 +148,16 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     };
   }, [feed]);
 
+  // The cut changed for full screen (or back): play the new file from the same moment.
+  const cutUrl = e ? (tallFull || !e.landscape ? e.video_url : e.landscape.video_url) : null;
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v || resumeAt.current === null) return;
+    tryPlay(v).catch((err) => {
+      if (isUnplayable(err)) setFailed(true);
+    });
+  }, [cutUrl]);
+
   // Nothing played a while after the reader asked for it: offer the fallback.
   useEffect(() => {
     if (!waiting) return;
@@ -145,9 +169,10 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   }, [waiting]);
 
   if (!e) return null;
-  // The cut that fits the screen: its file, poster and shape.
-  const cut = wideScreen && e.landscape ? e.landscape : e;
-  const wide = cut.width > cut.height;
+  // The card shows the landscape cut; the portrait one plays only on an upright phone's full screen.
+  const frameCut = e.landscape ?? e;
+  const cut = tallFull ? e : frameCut;
+  const wide = frameCut.width > frameCut.height;
   const videoSrc = mediaUrl(cut.video_url);
   const seconds = Math.round(e.duration_s);
   const kind = e.kind === "film" ? "Short film" : "Animated explainer";
@@ -202,7 +227,18 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     setMuted(false);
     userPaused.current = false;
     setStarted(true);
-    if (enterFullscreen(v, v)) setFullScreen(true);
+    // An upright phone gets the portrait cut, which fills it. (An iPhone's own player can't switch files, so
+    // it keeps the landscape one and the reader turns the phone.)
+    const switchToTall = phoneUpright && !!e?.landscape && canFullscreenElement(v);
+    if (enterFullscreen(v, v)) {
+      setFullScreen(true);
+      if (switchToTall) {
+        tallFullRef.current = true;
+        resumeAt.current = v.currentTime;
+        setTallFull(true);
+        return;
+      }
+    }
     if (v.paused) {
       setWaiting((n) => n + 1);
       tryPlay(v).catch((err) => {
@@ -238,17 +274,17 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
 
   return (
     // In the phone feed the video leads its slide and takes whatever height the title, source,
-    // "Read more" and actions leave (CardView makes the card a flex column there); the frame keeps
-    // the film's shape, so it is as wide as that height allows.
+    // "Read more" and actions leave (CardView makes the card a flex column there). A landscape film
+    // spans the card's width, centred in that space; a portrait-only one is as wide as the height allows.
     <figure
-      className={`mt-6 ${feed ? "max-md:order-first max-md:mb-3 max-md:mt-0 max-md:flex max-md:min-h-0 max-md:flex-1 max-md:justify-center" : ""}`}
+      className={`mt-6 ${feed ? "max-md:order-first max-md:mb-3 max-md:mt-0 max-md:flex max-md:min-h-0 max-md:flex-1 max-md:justify-center" : ""} ${feed && wide ? "max-md:items-center" : ""}`}
       data-testid="explainer"
     >
       <div
         className={`relative mx-auto w-full overflow-hidden rounded-card border border-film bg-film text-film-fg ${
           wide ? "" : "max-w-[22rem]"
-        } ${feed ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""}`}
-        style={feed || wide ? { aspectRatio: `${cut.width} / ${cut.height}` } : undefined}
+        } ${feed && !wide ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""}`}
+        style={feed || wide ? { aspectRatio: `${frameCut.width} / ${frameCut.height}` } : undefined}
         data-shape={wide ? "landscape" : "portrait"}
       >
         <video
@@ -262,9 +298,9 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           // file fails, which the browser reports as an unplayable video.
           src={videoSrc}
           poster={mediaUrl(cut.poster_url)}
-          width={cut.width}
-          height={cut.height}
-          className={`block h-auto w-full bg-film ${feed ? "max-md:h-full max-md:object-contain" : ""}`}
+          width={frameCut.width}
+          height={frameCut.height}
+          className={`block h-auto w-full bg-film ${feed && !wide ? "max-md:h-full max-md:object-contain" : ""}`}
           aria-label={`${kind}: ${card.title}`}
           onClick={feed && started ? toggleSound : undefined}
           onPlay={(ev) => {
@@ -277,6 +313,12 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           onPlaying={() => {
             setFailed(false);
             setWaiting(0);
+          }}
+          onLoadedMetadata={(ev) => {
+            const t = resumeAt.current;
+            if (t === null) return;
+            resumeAt.current = null;
+            ev.currentTarget.currentTime = t;
           }}
           onError={() => setFailed(true)}
           onPause={() => setIsPlaying(false)}
