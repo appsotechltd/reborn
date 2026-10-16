@@ -30,6 +30,7 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "ai-skills", name: "AI & Future Skills" },
   { slug: "science", name: "Science & Nature" },
   { slug: "crime-society", name: "Crime & Society" },
+  { slug: "universe", name: "Wonders of the Universe" },
   { slug: "life-guides", name: "Life Guides" },
 ];
 
@@ -98,4 +99,11 @@ export function excerpt(text: string, max = 160): string {
   if (flat.length <= max) return flat;
   const cut = flat.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(" ") > 80 ? cut.lastIndexOf(" ") : cut.length)}…`;
+}
+
+/** Wonders of the Universe cards say whether an idea is known, unknown or only a theory (their first tag). */
+const EVIDENCE: Record<string, string> = { known: "Known", unknown: "Unknown", theory: "Theory" };
+
+export function evidenceLabel(tags?: string[] | null): string | null {
+  return (tags?.length && EVIDENCE[tags[0]]) || null;
 }

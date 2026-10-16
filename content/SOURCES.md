@@ -165,6 +165,20 @@ Skills, Science & Nature, Crime & Society, Health & Wellness and Lives & History
 Those cards take that category's topic instead of `life-guides`; mental health and health guides
 carry the health note.
 
+## Wonders of the Universe
+
+Seven Reborn-written guides for the Wonders of the Universe category (topic `universe`, added
+2026-10-16), each 30 to 32 cards: *How Big Is the Universe?*, *The Story of Everything*, *The Lives
+of Stars*, *Galaxies and Black Holes*, *What We Still Don't Know*, *Big Theories About the Universe*
+and *Are We Alone?*. *Explore the Universe* moved here from Science & Nature. They follow the Life
+Guides rules above (own words, `original-summary`, references in `notes`), drawing mainly on NASA
+Science and ESA. Every card's first tag says how sure science is: `known` (measured, strong
+evidence), `unknown` (an open question) or `theory` (proposed, not proven), and the app and web show
+it next to the category. The body says so in words too, so nothing is overstated.
+
+Pictures and video stills are real space images: NASA's are public domain, and ESA/Hubble and
+ESA/Webb images are CC BY 4.0, credited on the picture and on screen in the video.
+
 ## The pipeline
 
 Code lives in [pipeline/](pipeline/). Python 3.11+, standard library only.

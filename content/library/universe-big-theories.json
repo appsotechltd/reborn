@@ -1,0 +1,739 @@
+{
+  "source": {
+    "id": "universe-big-theories",
+    "title": "Big Theories About the Universe",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/the-big-bang/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, The Big Bang, https://science.nasa.gov/universe/the-big-bang/; NASA Science, Dark Energy, https://science.nasa.gov/dark-energy/; NASA Science, Dark Matter, https://science.nasa.gov/dark-matter/; NASA Science, Black Holes, https://science.nasa.gov/universe/black-holes/; NASA Science, Universe Overview, https://science.nasa.gov/universe/overview/; ESA, Planck, https://www.esa.int/Science_Exploration/Space_Science/Planck; ESA, Euclid, https://www.esa.int/Science_Exploration/Space_Science/Euclid"
+  },
+  "cards": [
+    {
+      "id": "universe-big-theories--01",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "edge-of-knowledge",
+        "cosmology",
+        "science"
+      ],
+      "title": "Where the facts run out, the big theories begin",
+      "body": "We know a remarkable amount about the universe. It is about 13.8 billion years old, it is expanding, and it began hot and dense. Those are measured facts.\n\nBut push a little further and the ground gives way. Nobody knows what happened at the very first instant, whether ours is the only universe, or how it will end. Into that gap scientists pour theories: careful, mathematical guesses that try to explain what we see and predict what we have not yet seen.\n\nThis guide walks through the boldest of them. Each card says plainly whether an idea is proven, still open, or only a theory, what supports it, what troubles it and what might one day test it. Some of today's wild ideas will be tomorrow's textbook facts. Most will not.",
+      "apply_it": "Tonight, look up and pick one question about the sky you cannot answer. Keep it in mind as you read this guide.",
+      "quiz": {
+        "question": "Which of these is a measured fact rather than a theory?",
+        "options": [
+          "The universe is about 13.8 billion years old",
+          "Other universes exist",
+          "The universe will end in a Big Rip"
+        ],
+        "answer": 0,
+        "explanation": "The age of the universe comes from detailed measurements of the cosmic microwave background and the expansion rate. The others are untested ideas."
+      }
+    },
+    {
+      "id": "universe-big-theories--02",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "scientific-method",
+        "evidence",
+        "testing"
+      ],
+      "title": "How a wild idea earns the right to be called true",
+      "body": "In everyday speech a theory is a hunch. In science the word is used for an explanation, and an explanation only earns trust by surviving tests it could have failed.\n\nThe recipe is simple to state. A good idea makes a sharp prediction: light will bend by this much, a particle will appear at this energy. Then people build instruments to check. If the prediction fails, the idea is in trouble, however beautiful it is.\n\nPhysicists are strict about chance. Before claiming a new particle, they usually want a result so strong that a statistical fluke would produce it only about once in 3.5 million tries, known as five sigma. Independent teams must then repeat it.\n\nThis is why some ideas on the following cards stay theories for decades: no one has yet found a test sharp enough.",
+      "apply_it": "Next time you hear 'it's just a theory', ask: what prediction does it make, and has anyone checked it?",
+      "quiz": {
+        "question": "What gives a scientific idea its strength?",
+        "options": [
+          "It is elegant and popular",
+          "It makes predictions that could have failed but passed",
+          "It has been around for a long time",
+          "A famous scientist proposed it"
+        ],
+        "answer": 1,
+        "explanation": "Ideas gain trust by surviving risky tests. Elegance, age and fame count for nothing if the predictions fail."
+      }
+    },
+    {
+      "id": "universe-big-theories--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "big-bang",
+        "history-of-science",
+        "cmb"
+      ],
+      "title": "The Big Bang itself started out as a bold, doubted theory",
+      "body": "In the 1920s the Belgian physicist and priest Georges Lemaître proposed that the universe had expanded from a dense early state. Edwin Hubble's observations soon showed that distant galaxies are rushing away from us, just as an expanding universe would predict.\n\nMany scientists still preferred a universe with no beginning. What settled it was a faint glow. In 1965 two radio astronomers in New Jersey picked up a stubborn hiss coming from every direction. It was the cosmic microwave background: light released about 380,000 years after the Big Bang, now cooled to about 2.7 degrees above absolute zero.\n\nA hot early universe predicted that glow. A universe with no beginning did not. Today, with satellites such as ESA's Planck mapping it in fine detail, the Big Bang is the best-tested picture of cosmic history we have.",
+      "apply_it": "Reflect: which idea do you hold that is widely doubted? What single observation would change your mind about it?",
+      "quiz": {
+        "question": "What discovery in 1965 gave the Big Bang theory its strongest early support?",
+        "options": [
+          "The first photo of a black hole",
+          "The cosmic microwave background",
+          "The planet Neptune",
+          "Gravitational waves"
+        ],
+        "answer": 1,
+        "explanation": "The cosmic microwave background, a faint glow from every direction, is leftover light from the hot young universe, exactly as the Big Bang predicted."
+      }
+    },
+    {
+      "id": "universe-big-theories--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "gravitational-waves",
+        "general-relativity",
+        "black-holes"
+      ],
+      "title": "Einstein predicted ripples in space. A century later, we felt one",
+      "body": "In 1916 Albert Einstein's general theory of relativity predicted that violent cosmic events should send ripples through space and time itself. He doubted they could ever be detected. They would be far too small.\n\nOn 14 September 2015 the LIGO detectors in the United States caught one. Two black holes, each roughly 30 times the mass of the Sun, had spiralled together about 1.3 billion light years away. By the time the ripple reached Earth, it stretched and squeezed LIGO's 4 kilometre arms by far less than the width of a proton.\n\nThe signal matched the shape relativity predicted. Since then detectors have recorded many more mergers, including colliding neutron stars that were also seen with telescopes. A prediction made a century earlier had passed one of the hardest tests imaginable.",
+      "apply_it": "Hold your breath for one second. The black holes LIGO first heard did the last stage of their merger in about a fifth of that.",
+      "quiz": {
+        "question": "Which theory predicted gravitational waves, first detected in 2015?",
+        "options": [
+          "Newton's law of gravity",
+          "Einstein's general relativity",
+          "String theory",
+          "Quantum mechanics"
+        ],
+        "answer": 1,
+        "explanation": "General relativity, published in 1915 to 1916, predicted gravitational waves. LIGO confirmed them in 2015, about a century later."
+      }
+    },
+    {
+      "id": "universe-big-theories--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "gravitational-lensing",
+        "general-relativity",
+        "webb"
+      ],
+      "title": "Gravity bends light, and the universe uses it as a giant magnifying glass",
+      "body": "General relativity says mass curves space, so light passing a heavy object should follow a bent path. In 1919, during a total solar eclipse, astronomers measured stars near the darkened Sun appearing slightly out of place. The shift matched Einstein's prediction, not Newton's, and made him famous overnight.\n\nToday this effect, called gravitational lensing, is an everyday tool. The Hubble and Webb telescopes see galaxy clusters stretching the light of more distant galaxies into glowing arcs and rings. Sometimes the same galaxy appears several times.\n\nLensing also weighs things we cannot see. By mapping how light is distorted, astronomers have shown that clusters hold far more mass than their visible stars and gas. That hidden mass is dark matter, and ESA's Euclid mission is now charting it across a large part of the sky.",
+      "apply_it": "Look through the curved base of a wine glass at a light. The warped arcs you see are a rough tabletop version of lensing.",
+      "quiz": {
+        "question": "What did the 1919 eclipse measurement show?",
+        "options": [
+          "The Sun is hollow",
+          "Starlight bends near the Sun by the amount relativity predicted",
+          "Light travels faster near the Sun",
+          "Stars move during eclipses"
+        ],
+        "answer": 1,
+        "explanation": "Stars near the eclipsed Sun appeared shifted, matching general relativity's prediction that mass bends the path of light."
+      }
+    },
+    {
+      "id": "universe-big-theories--06",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "event-horizon-telescope",
+        "general-relativity"
+      ],
+      "title": "Black holes were once a mathematical oddity. Then we photographed one",
+      "body": "In 1916, just weeks after Einstein published general relativity, Karl Schwarzschild found a solution describing a region where gravity is so strong nothing can escape. For decades many physicists, Einstein included, suspected nature would never allow such a thing.\n\nThe evidence built slowly: X-rays from matter heated as it swirled inward, and stars whipping around an invisible heavy object at the centre of our galaxy. Then in 2019 the Event Horizon Telescope, a network of radio dishes acting like one Earth-sized telescope, released an image of the black hole in the galaxy M87, about 55 million light years away. It showed a dark shadow ringed by glowing gas, the size and shape relativity predicted.\n\nIn 2022 the same team imaged Sagittarius A*, the black hole at the heart of the Milky Way.",
+      "apply_it": "On a dark summer night, find the constellation Sagittarius low in the south (from the northern hemisphere). The Milky Way's central black hole lies in that direction.",
+      "quiz": {
+        "question": "How did the Event Horizon Telescope take its black hole images?",
+        "options": [
+          "With a single giant mirror in space",
+          "By linking radio dishes around the world to act like one huge telescope",
+          "By sending a probe to M87",
+          "Using gravitational waves"
+        ],
+        "answer": 1,
+        "explanation": "Radio dishes on several continents observed together, combining their data to act like a telescope almost the size of Earth."
+      }
+    },
+    {
+      "id": "universe-big-theories--07",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "higgs-boson",
+        "particle-physics",
+        "prediction"
+      ],
+      "title": "A particle predicted in 1964 turned up right on cue in 2012",
+      "body": "In 1964 several physicists, including Peter Higgs, proposed that space is filled with an invisible field that gives some particles their mass. If the field existed, it should be possible to shake it hard enough to produce a particle: the Higgs boson.\n\nThere was no way to check at the time. It took nearly half a century, thousands of scientists and the Large Hadron Collider at CERN, a 27 kilometre ring beneath the French and Swiss border, smashing protons together at nearly the speed of light.\n\nIn July 2012 two separate experiments announced they had found it, each above the strict five sigma threshold. The particle's properties have matched the prediction closely ever since.\n\nThe story is a reminder that a theory can wait a lifetime for its test, and still be right.",
+      "apply_it": "Think of something you started that will take years to pay off. What keeps you going while you wait for the result?",
+      "quiz": {
+        "question": "Where was the Higgs boson discovered?",
+        "options": [
+          "The Hubble Space Telescope",
+          "The Large Hadron Collider at CERN",
+          "LIGO",
+          "The South Pole"
+        ],
+        "answer": 1,
+        "explanation": "Two experiments at CERN's Large Hadron Collider announced the discovery in July 2012, almost 50 years after it was predicted."
+      }
+    },
+    {
+      "id": "universe-big-theories--08",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "inflation",
+        "early-universe",
+        "b-modes"
+      ],
+      "title": "Inflation: the theory that the universe grew enormously in a split second",
+      "body": "Cosmic inflation is a theory, though a well-supported one. It proposes that in a tiny fraction of the first second, space expanded faster than anything since, swelling from far smaller than an atom to something around the size of a grapefruit or larger.\n\nWhy believe it? It neatly explains puzzles the plain Big Bang leaves open: why the universe looks so smooth in every direction, why space appears almost perfectly flat, and why the cosmic microwave background carries the exact pattern of tiny ripples that satellites like Planck have measured.\n\nYet it is not confirmed. The key test is a faint twisting pattern in the polarisation of that ancient light, called B-modes, which inflation's gravitational waves should leave behind. A 2014 claim of detection turned out to be dust in our own galaxy. Telescopes such as the Simons Observatory, and the planned LiteBIRD satellite, are searching.",
+      "apply_it": "Blow up a balloon with dots drawn on it. Notice how every dot moves away from every other dot. Now imagine that happening unimaginably fast.",
+      "quiz": {
+        "question": "What signal would give strong evidence for cosmic inflation?",
+        "options": [
+          "A specific twisting pattern (B-modes) in the cosmic microwave background",
+          "Light from the first stars",
+          "A wormhole",
+          "Dark matter particles"
+        ],
+        "answer": 0,
+        "explanation": "Inflation should leave primordial gravitational waves that imprint B-mode polarisation on the cosmic microwave background. It has not been found yet."
+      }
+    },
+    {
+      "id": "universe-big-theories--09",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "multiverse",
+        "inflation",
+        "speculation"
+      ],
+      "title": "Eternal inflation: could our universe be one bubble among countless others?",
+      "body": "Some versions of inflation theory have a startling side effect. Inflation may never stop everywhere at once. It ends in patches, and each patch becomes a bubble universe, while the space between keeps inflating and sprouting new bubbles forever.\n\nIf that is right, our universe would be just one bubble in a vast multiverse. Other bubbles might even have different physical laws.\n\nThis is a hypothesis built on a hypothesis, and it is fiercely debated. Its supporters say it follows naturally from inflation's own mathematics. Critics point out that other bubbles may be forever beyond our sight, which makes the idea hard or impossible to test.\n\nOne proposed test exists: if another bubble ever collided with ours early on, it might have left a circular bruise in the cosmic microwave background. Searches so far have found none.",
+      "apply_it": "Reflect: if an idea can never be tested, is it still science? Where would you draw the line?",
+      "quiz": {
+        "question": "What might reveal another bubble universe, if eternal inflation is right?",
+        "options": [
+          "A circular imprint in the cosmic microwave background from an ancient collision",
+          "A new planet",
+          "A brighter Sun",
+          "Faster-than-light signals"
+        ],
+        "answer": 0,
+        "explanation": "A collision with a neighbouring bubble could leave a ring-shaped mark in the cosmic microwave background. None has been found."
+      }
+    },
+    {
+      "id": "universe-big-theories--10",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "many-worlds",
+        "quantum-mechanics",
+        "interpretation"
+      ],
+      "title": "Many-worlds: the idea that every quantum choice splits reality",
+      "body": "Quantum physics is one of the most precisely tested theories ever. But it has an awkward feature: a particle can be in a blend of possibilities until it is measured, and then we only ever see one outcome. Why?\n\nIn 1957 Hugh Everett proposed a radical answer. Perhaps nothing collapses. Instead, every possible outcome happens, each in its own branch of reality. You, the observer, split too, and each version sees only one result.\n\nThis is an interpretation, not a proven fact. Its appeal is that it takes the equations at face value with nothing added. Its problems are deep: it is hard to explain why some outcomes are more likely than others, and the other branches can never be visited.\n\nBecause it predicts the same lab results as rival interpretations, no experiment has yet been able to tell them apart.",
+      "apply_it": "Next time you face a small choice, imagine both versions of you. Then ask why it feels like there is only one.",
+      "quiz": {
+        "question": "Why is the many-worlds interpretation so hard to test?",
+        "options": [
+          "It predicts the same experimental results as rival interpretations",
+          "It was proposed too recently",
+          "It needs a bigger telescope",
+          "It only applies to planets"
+        ],
+        "answer": 0,
+        "explanation": "Many-worlds and its main rivals give the same predictions for experiments we can run, so no test has yet separated them."
+      }
+    },
+    {
+      "id": "universe-big-theories--11",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "string-theory",
+        "extra-dimensions",
+        "quantum-gravity"
+      ],
+      "title": "String theory: tiny vibrating strings and dimensions hidden from view",
+      "body": "Physics has two great theories that do not fit together: general relativity for gravity and the very large, and quantum theory for the very small. String theory is one attempt to unite them. It remains unproven.\n\nIts idea is that the basic ingredients of nature are not points but unimaginably tiny vibrating strings, and different vibrations show up as different particles, including one that behaves like the carrier of gravity. The maths only works if space has extra dimensions, usually six or seven beyond the familiar three, curled up too small to notice.\n\nIts strength is mathematical depth: it has produced powerful tools used across physics. Its weakness is evidence. The Large Hadron Collider looked for signs of extra dimensions and related new particles and has found none. The strings themselves would be far too small for any machine we can imagine building.",
+      "apply_it": "Imagine a garden hose seen from far away: it looks like a line. Up close, an ant can walk around it. That is how a small extra dimension could hide.",
+      "quiz": {
+        "question": "What major problem does string theory face?",
+        "options": [
+          "It has no mathematics",
+          "It has so far produced no confirmed experimental evidence",
+          "It was disproven in 2012",
+          "It only explains gravity"
+        ],
+        "answer": 1,
+        "explanation": "String theory is mathematically rich, but no experiment has yet confirmed its predictions, such as extra dimensions."
+      }
+    },
+    {
+      "id": "universe-big-theories--12",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "loop-quantum-gravity",
+        "quantum-gravity",
+        "spacetime"
+      ],
+      "title": "Loop quantum gravity: what if space itself comes in tiny grains?",
+      "body": "Loop quantum gravity is a rival to string theory, and like it, unproven. Instead of adding new particles or dimensions, it asks what happens if space itself is quantised: built from tiny discrete units, the way a photo is built from pixels.\n\nThose grains would be fantastically small, around the Planck length of roughly 10 to the power of minus 35 metres. Next to an atom, they would be far tinier than an atom is next to a large city.\n\nSupporters like that it starts from general relativity and tries to keep its spirit. Critics note it has struggled to show how smooth space emerges from the grains.\n\nOne idea for a test: if space is grainy, light of different energies crossing billions of light years might arrive at slightly different times. NASA's Fermi telescope has checked gamma-ray bursts and seen no such delay.",
+      "apply_it": "Zoom into a digital photo until you see pixels. Reflect: might the smooth world around you be pixelated at a scale far beyond sight?",
+      "quiz": {
+        "question": "How have scientists tried to test whether space is grainy?",
+        "options": [
+          "By weighing the Moon",
+          "By checking if high- and low-energy light from distant bursts arrives at different times",
+          "By drilling into Earth",
+          "By counting stars"
+        ],
+        "answer": 1,
+        "explanation": "If space were grainy, light of different energies might travel at slightly different speeds over vast distances. No such delay has been detected so far."
+      }
+    },
+    {
+      "id": "universe-big-theories--13",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "big-bounce",
+        "cyclic-universe",
+        "before-the-big-bang"
+      ],
+      "title": "The Big Bounce: maybe the Big Bang was a rebound, not a beginning",
+      "body": "General relativity, run backwards, squeezes everything into a point of infinite density. Most physicists take that as a sign the theory breaks down there, not that infinity is real.\n\nSome theories replace that point with a bounce. In loop quantum cosmology, space resists being squeezed beyond a certain point and springs back. A previous universe contracts, rebounds, and our expansion begins. Other cyclic models imagine endless rounds of expansion and contraction.\n\nThese are hypotheses. They are attractive because they avoid an absolute beginning and the infinities that come with it. Their problem is evidence: any record of a previous universe would have been largely scrambled by the bounce.\n\nThey can be tested in principle. Many bounce models predict little or none of the B-mode signal that inflation expects, so finding or failing to find it would favour one picture over another.",
+      "apply_it": "Bounce a ball and watch it squash before it rises. Reflect: is a beginning that is really a rebound easier or harder for you to imagine?",
+      "quiz": {
+        "question": "What do Big Bounce theories propose?",
+        "options": [
+          "The universe will never change",
+          "Our Big Bang followed the collapse of an earlier universe",
+          "The Earth is the centre of the universe",
+          "Time began in 1965"
+        ],
+        "answer": 1,
+        "explanation": "Bounce models suggest an earlier contracting phase rebounded into our expanding universe. They remain untested hypotheses."
+      }
+    },
+    {
+      "id": "universe-big-theories--14",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "conformal-cyclic-cosmology",
+        "penrose",
+        "cmb"
+      ],
+      "title": "Conformal cyclic cosmology: an endless chain of universes, each born from the last",
+      "body": "Roger Penrose, a Nobel prize winning physicist, has proposed a striking hypothesis called conformal cyclic cosmology. In the very far future, he suggests, our universe will contain only light and other massless things. Without mass, there is no meaningful way to measure size or time, so an endlessly large, cold universe becomes mathematically equivalent to a tiny, hot one: the start of a new Big Bang.\n\nIn this picture history is a chain of eras, called aeons, each one's end becoming the next one's beginning.\n\nPenrose and colleagues have reported possible traces of a previous aeon in the cosmic microwave background, such as rings and warm spots they link to black holes evaporating in the aeon before. Other teams analysing the same data have found these patterns can arise by chance. The idea remains a minority view, unconfirmed and actively disputed.",
+      "apply_it": "Reflect: if the end of everything were also a beginning, would that change how you feel about endings in your own life?",
+      "quiz": {
+        "question": "What evidence has been claimed for conformal cyclic cosmology?",
+        "options": [
+          "Fossils on Mars",
+          "Patterns in the cosmic microwave background, which other teams dispute",
+          "A message from another aeon",
+          "Photographs of the previous universe"
+        ],
+        "answer": 1,
+        "explanation": "Penrose's group reported rings and spots in the cosmic microwave background, but independent analyses suggest they could be chance patterns."
+      }
+    },
+    {
+      "id": "universe-big-theories--15",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "heat-death",
+        "fate-of-the-universe",
+        "dark-energy"
+      ],
+      "title": "The Big Freeze: the leading forecast is a slow fade into the dark",
+      "body": "How will the universe end? Nobody knows for sure, but the favoured forecast is called the Big Freeze, or heat death. It is a prediction based on current measurements, not a certainty.\n\nSince 1998 we have known that the expansion of the universe is speeding up, driven by something we call dark energy. If it carries on steadily, galaxies beyond our local group will eventually recede out of view. Gas for new stars will run out. The smallest red dwarf stars can shine for trillions of years, but even they will fade.\n\nAfter that, only cooling remnants and black holes remain, and given enough time even black holes are expected to evaporate. The universe would settle into an almost perfectly even, cold, dark state where nothing much can happen any more.\n\nThe forecast depends entirely on dark energy staying constant, which is now being tested.",
+      "apply_it": "Reflect: the stars will not last forever, and neither will this evening. What is one thing worth noticing tonight?",
+      "quiz": {
+        "question": "What assumption does the Big Freeze forecast depend on?",
+        "options": [
+          "That dark energy stays roughly constant",
+          "That the Sun explodes tomorrow",
+          "That gravity reverses",
+          "That new galaxies keep forming forever"
+        ],
+        "answer": 0,
+        "explanation": "The Big Freeze follows if dark energy keeps behaving as it seems to now. If dark energy changes, the ending could be different."
+      }
+    },
+    {
+      "id": "universe-big-theories--16",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "big-rip",
+        "fate-of-the-universe",
+        "dark-energy"
+      ],
+      "title": "The Big Rip: a theory in which expansion tears everything apart",
+      "body": "What if dark energy grows stronger over time? In one hypothetical form, sometimes called phantom energy, the push of expansion would keep increasing without limit.\n\nThe result would be the Big Rip. First, galaxy clusters would be pulled apart, then galaxies, then planetary systems. In the final moments, stars, planets and eventually atoms themselves would be torn to pieces as space expands faster than any force can hold them together.\n\nThis is a speculative scenario, not a forecast. Measurements so far are consistent with dark energy that stays the same, and they place any Big Rip, if it can happen at all, far in the future.\n\nIt is tested the same way as other dark energy ideas: by measuring precisely how fast the universe expanded at different times, using supernovae, maps of millions of galaxies, and missions such as ESA's Euclid and NASA's Nancy Grace Roman Space Telescope.",
+      "apply_it": "Hold a stretched rubber band and slowly pull harder. Reflect on which part snaps first, and why.",
+      "quiz": {
+        "question": "What would cause a Big Rip?",
+        "options": [
+          "Dark energy growing stronger over time without limit",
+          "The Sun running out of fuel",
+          "Two galaxies colliding",
+          "A black hole evaporating"
+        ],
+        "answer": 0,
+        "explanation": "In the Big Rip scenario, dark energy's push keeps increasing until it overcomes every force holding matter together."
+      }
+    },
+    {
+      "id": "universe-big-theories--17",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "big-crunch",
+        "fate-of-the-universe",
+        "gravity"
+      ],
+      "title": "The Big Crunch: could the expansion one day reverse?",
+      "body": "For much of the 20th century, many astronomers expected gravity to win in the end. If there were enough matter, its pull would slow the expansion, stop it, and drag everything back together in a Big Crunch, a Big Bang in reverse.\n\nThe 1998 discovery that expansion is accelerating made this look unlikely. Matter alone cannot halt an expansion that is speeding up.\n\nBut the Crunch has not been fully ruled out. Nobody knows what dark energy is. If it weakens, fades away or even turns into a pull, gravity could regain the upper hand billions of years from now. Some cyclic models need exactly this, so that a crunch can lead to a new bounce.\n\nThe Big Crunch is a theory about the future, and its fate depends on the same measurements of dark energy now being made by large galaxy surveys.",
+      "apply_it": "Toss a ball upwards and watch it slow, stop and fall. Reflect: what would the universe need for its expansion to do the same?",
+      "quiz": {
+        "question": "Why does the Big Crunch now seem less likely than it once did?",
+        "options": [
+          "The universe's expansion is accelerating",
+          "Gravity was shown not to exist",
+          "The universe is shrinking",
+          "Stars stopped forming"
+        ],
+        "answer": 0,
+        "explanation": "Since 1998 we have known expansion is speeding up. A Crunch would need dark energy to weaken or reverse, which is possible but unproven."
+      }
+    },
+    {
+      "id": "universe-big-theories--18",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "vacuum-decay",
+        "higgs-field",
+        "fate-of-the-universe"
+      ],
+      "title": "Vacuum decay: the strange possibility that empty space is not fully stable",
+      "body": "Empty space is not quite empty. It is filled with fields, including the Higgs field, which settle into the lowest-energy state they can find. But what if our vacuum is only a nearly stable state, like a ball resting in a dip partway down a hill?\n\nMeasurements of the Higgs boson and the top quark suggest this may be the case. If so, a tiny region could one day tip into a lower-energy state. A bubble of this new vacuum would spread at nearly the speed of light, changing the laws of physics inside it.\n\nThis is a theoretical possibility, not a prediction of doom. The calculations depend on assuming no unknown physics changes the picture, and the estimated waiting time is far, far longer than the universe's current age.\n\nBetter measurements of particle masses at colliders are what will sharpen this test.",
+      "apply_it": "Rest a marble in a shallow bowl on a table. Notice it is stable, but not as stable as on the floor. That is the idea of a false vacuum.",
+      "quiz": {
+        "question": "What evidence hints that our vacuum might not be perfectly stable?",
+        "options": [
+          "Measured masses of the Higgs boson and top quark",
+          "Earthquakes",
+          "The colour of the sky",
+          "Comet tails"
+        ],
+        "answer": 0,
+        "explanation": "Calculations using the measured Higgs and top quark masses suggest our vacuum may be metastable, though unknown physics could change that."
+      }
+    },
+    {
+      "id": "universe-big-theories--19",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "wormholes",
+        "general-relativity",
+        "exotic-matter"
+      ],
+      "title": "Wormholes: shortcuts the equations allow but nobody has ever seen",
+      "body": "In 1935 Albert Einstein and Nathan Rosen found that general relativity allows a bridge linking two distant regions of space. Today such tunnels are called wormholes, and they are a staple of science fiction.\n\nThe equations do allow them. That is the support. The problems are severe. The simplest wormholes would pinch shut faster than anything could cross. Keeping one open seems to need exotic matter with negative energy, which has only ever been seen in tiny amounts in special quantum situations, nowhere near the quantity required.\n\nNo wormhole has ever been observed. Astronomers have suggested how one might be spotted, for example by unusual gravitational lensing or orbits of stars disturbed by unseen mass on the other side, but nothing convincing has turned up.\n\nFor now, wormholes are a theoretical possibility that tells us more about the limits of our equations than about any real shortcut.",
+      "apply_it": "Fold a sheet of paper so two dots touch, then poke a pencil through. That is the classic wormhole picture. Ask what holds the fold in place.",
+      "quiz": {
+        "question": "What would a wormhole most likely need to stay open?",
+        "options": [
+          "Exotic matter with negative energy",
+          "Ordinary rock",
+          "Dark matter only",
+          "A strong magnetic field"
+        ],
+        "answer": 0,
+        "explanation": "Theory suggests a traversable wormhole would need exotic negative-energy matter, which has never been found in useful amounts."
+      }
+    },
+    {
+      "id": "universe-big-theories--20",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "time-travel",
+        "paradoxes",
+        "general-relativity"
+      ],
+      "title": "Time travel: the future is reachable, the past is a paradox",
+      "body": "One kind of time travel is real. Relativity shows that time runs slower at high speed and in strong gravity. Astronauts on the International Space Station age very slightly less than people on the ground, and GPS satellites must correct for these effects every day. Travel into the future, just a little, is measured fact.\n\nTravel into the past is a different matter. Some exotic solutions to Einstein's equations contain loops in time, but they need conditions such as rotating universes or wormholes that may not exist.\n\nAnd backward travel brings paradoxes. The famous one: what if you went back and prevented your own birth? Physicists have proposed escapes, such as events that can only happen in self-consistent ways. Stephen Hawking suggested nature might have a rule forbidding such loops altogether.\n\nNo one has found a way to test it. Backward time travel remains pure theory.",
+      "apply_it": "Reflect: if you could send one message to yourself ten years ago, but it had to change nothing, what would you say?",
+      "quiz": {
+        "question": "Which kind of time travel has actually been measured?",
+        "options": [
+          "Travelling a tiny bit into the future through relativity",
+          "Going back to meet ancestors",
+          "Sending messages to the past",
+          "None at all"
+        ],
+        "answer": 0,
+        "explanation": "Time dilation from speed and gravity is measured routinely, for example in GPS satellites. Travel to the past remains unproven theory."
+      }
+    },
+    {
+      "id": "universe-big-theories--21",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "white-holes",
+        "black-holes",
+        "general-relativity"
+      ],
+      "title": "White holes: black holes running in reverse, allowed on paper, never found",
+      "body": "A black hole is a region nothing can leave. Run the same mathematics backwards in time and you get a white hole: a region nothing can enter, which only throws matter and light outward.\n\nGeneral relativity allows white holes as solutions. That is their main support. But a solution on paper is not the same as a real object. Nobody knows of a natural process that would create one, and some calculations suggest they would be unstable, collapsing the moment anything approached.\n\nSome researchers have proposed that a black hole could, at the end of its life, turn into a white hole through quantum effects, releasing what it swallowed. Others have wondered whether the Big Bang itself resembles a white hole.\n\nThese are hypotheses. No white hole has ever been observed, and astronomers have no confirmed signal pointing to one.",
+      "apply_it": "Watch a video of water swirling down a drain, then imagine it running backwards with water fountaining out. That is the black hole and white hole pair.",
+      "quiz": {
+        "question": "What is a white hole in theory?",
+        "options": [
+          "A region that nothing can enter, which only emits",
+          "A black hole that has been cleaned",
+          "A star made of ice",
+          "A gap between galaxies"
+        ],
+        "answer": 0,
+        "explanation": "A white hole is the time reverse of a black hole: matter and light can only leave it. None has ever been observed."
+      }
+    },
+    {
+      "id": "universe-big-theories--22",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "hawking-radiation",
+        "black-holes",
+        "quantum-gravity"
+      ],
+      "title": "Hawking radiation: the prediction that black holes slowly glow and evaporate",
+      "body": "In 1974 Stephen Hawking combined quantum theory with general relativity and reached a surprise: black holes should not be perfectly black. They should give off a faint glow and, over immense spans of time, lose mass and evaporate.\n\nThe calculation is widely accepted by physicists, but it remains unconfirmed by observation. The problem is scale. For a black hole the mass of the Sun, the glow would be far colder than the 2.7 degree cosmic microwave background, so it is completely swamped. Such black holes currently take in more energy from that background than they emit.\n\nScientists have built laboratory analogues, using flowing fluids and ultra-cold atoms that mimic a black hole's edge for sound waves, and seen effects resembling the prediction. But direct proof would need a tiny black hole, perhaps left over from the early universe, flaring at the end of its life. Gamma-ray telescopes are watching.",
+      "apply_it": "Reflect: even a black hole, the ultimate trap, may not last forever. What permanent-seeming thing in your life is quietly changing?",
+      "quiz": {
+        "question": "Why has Hawking radiation never been detected from a real black hole?",
+        "options": [
+          "It would be far too faint, colder than the cosmic microwave background",
+          "Black holes do not exist",
+          "It is blocked by Earth's atmosphere only",
+          "It was detected in 1974"
+        ],
+        "answer": 0,
+        "explanation": "For stellar-mass black holes the predicted glow is incredibly cold and faint, completely drowned out by the cosmic microwave background."
+      }
+    },
+    {
+      "id": "universe-big-theories--23",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "holographic-principle",
+        "black-holes",
+        "information"
+      ],
+      "title": "The holographic principle: could our 3D world be encoded on a distant surface?",
+      "body": "Black holes hold a strange clue. In the 1970s physicists worked out that the amount of information a black hole can store depends on the area of its surface, not on its volume. That is odd. You would expect a bigger room to hold more, not a bigger wall.\n\nFrom this came the holographic principle, a theory that everything happening inside a region of space might be fully described by information on its boundary, much as a flat hologram encodes a 3D image.\n\nThere is mathematical support. In 1997 physicists found a precise example in which a universe with gravity is exactly equivalent to a theory without gravity on its boundary. But that example describes a universe with a different overall shape from ours.\n\nWhether the principle applies to our real universe is unknown, and no experiment has yet tested it directly.",
+      "apply_it": "Tilt a holographic sticker on a bank card. Reflect: a flat surface is creating the look of depth. Could depth itself be like that?",
+      "quiz": {
+        "question": "What clue from black holes inspired the holographic principle?",
+        "options": [
+          "A black hole's information capacity depends on its surface area, not its volume",
+          "Black holes are perfectly flat",
+          "Black holes contain holograms",
+          "Black holes have no surface"
+        ],
+        "answer": 0,
+        "explanation": "Calculations showed a black hole's maximum information grows with the area of its horizon, hinting that a volume may be described by its boundary."
+      }
+    },
+    {
+      "id": "universe-big-theories--24",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "black-hole-cosmology",
+        "speculation",
+        "cosmology"
+      ],
+      "title": "Are we living inside a black hole? A fringe but serious hypothesis",
+      "body": "Here is an idea that sounds absurd yet appears in serious research: our entire universe might be the interior of a black hole that formed in some larger parent universe.\n\nWhat makes people consider it? Seen from inside, the inner region of a black hole might expand like a young universe. Some physicists have noted rough similarities between the size and mass of our observable universe and the properties of a black hole of the same mass. Others have proposed that every black hole could give birth to a new universe, so universes would reproduce.\n\nThese are hypotheses with big problems. The interior of a black hole and our universe differ in important ways, and the comparisons are suggestive rather than exact.\n\nNo agreed test exists yet. Some look for a preferred direction or spin in the cosmos as a clue, but nothing is confirmed.",
+      "apply_it": "Reflect: if every universe came from another, would there ever be a first one? Sit with that question for a minute.",
+      "quiz": {
+        "question": "What best describes the 'universe inside a black hole' idea?",
+        "options": [
+          "A speculative hypothesis without an agreed test",
+          "A proven fact",
+          "A NASA mission",
+          "A rule from the 1600s"
+        ],
+        "answer": 0,
+        "explanation": "It is a speculative hypothesis. Some features look suggestive, but there is no confirmed evidence and no agreed way to test it."
+      }
+    },
+    {
+      "id": "universe-big-theories--25",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "mond",
+        "dark-matter",
+        "gravity"
+      ],
+      "title": "MOND: what if dark matter does not exist and gravity is the thing that changes?",
+      "body": "Stars at the edges of galaxies orbit too fast. With only the visible matter, they should fly off. The usual explanation is dark matter, an unseen substance making up about 27% of the universe.\n\nIn 1983 Mordehai Milgrom proposed an alternative called MOND, Modified Newtonian Dynamics. It is a theory, not settled science. It says gravity behaves slightly differently where it becomes extremely weak, such as on the outskirts of galaxies. With one simple rule, MOND predicts many galaxy rotation speeds remarkably well.\n\nIts problems are bigger scales. It struggles to explain galaxy clusters, the pattern in the cosmic microwave background, and the Bullet Cluster, where lensing shows most mass sitting apart from the visible gas.\n\nTests continue, including studies of pairs of stars orbiting each other far apart, measured by ESA's Gaia mission. Results so far are disputed.",
+      "apply_it": "Swing a weight on a string in a circle. The faster it goes, the harder you must pull. Galaxies spin as if something is pulling harder than visible matter can.",
+      "quiz": {
+        "question": "What does MOND propose instead of dark matter?",
+        "options": [
+          "Gravity behaves differently where it is extremely weak",
+          "Galaxies do not rotate",
+          "Stars are lighter than we thought",
+          "The universe is not expanding"
+        ],
+        "answer": 0,
+        "explanation": "MOND modifies the law of gravity at very low accelerations. It fits galaxy rotation well but struggles with clusters and the cosmic microwave background."
+      }
+    },
+    {
+      "id": "universe-big-theories--26",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "dark-energy",
+        "desi",
+        "fate-of-the-universe"
+      ],
+      "title": "Is dark energy fading? New hints that have not yet become a discovery",
+      "body": "Dark energy, the unknown something speeding up cosmic expansion, makes up about 68% of the universe. The standard assumption is that it never changes.\n\nIn 2024 and 2025 the Dark Energy Spectroscopic Instrument, DESI, released maps of millions of galaxies and quasars, tracing the expansion across billions of years. When combined with supernova and cosmic microwave background data, the results hinted that dark energy may have weakened over time.\n\nThis is not a confirmed discovery. The statistical strength sits below the five sigma level physicists demand, and the size of the effect depends on which supernova data are used. It could be a real change, or something subtler in the measurements.\n\nIf it holds up, it would overturn the simplest picture of the cosmos and could change its fate. ESA's Euclid, NASA's Roman telescope and further DESI data are expected to settle the question.",
+      "apply_it": "Reflect: how would you weigh an exciting hint against the need for proof? Try waiting before you believe the next big headline.",
+      "quiz": {
+        "question": "Why is the DESI result about dark energy not yet a confirmed discovery?",
+        "options": [
+          "Its statistical strength is below the five sigma standard",
+          "DESI has not collected any data",
+          "Dark energy has been disproven",
+          "Euclid already confirmed it"
+        ],
+        "answer": 0,
+        "explanation": "The hints are intriguing but fall short of the five sigma threshold, and depend on which other datasets are combined with them."
+      }
+    },
+    {
+      "id": "universe-big-theories--27",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "simulation-hypothesis",
+        "philosophy",
+        "untestable"
+      ],
+      "title": "The simulation hypothesis: is the universe running on someone's computer?",
+      "body": "The simulation hypothesis suggests our universe might be an extremely detailed computer simulation built by a more advanced civilisation. In 2003 the philosopher Nick Bostrom set out an argument: if civilisations can build such simulations and choose to run many of them, simulated minds could vastly outnumber real ones.\n\nIt is a philosophical argument, not a scientific theory in the usual sense. Its appeal is logical, and it echoes older questions about whether our senses can be trusted.\n\nIts problems are serious. It rests on large assumptions about future technology and motives. And so far it is untestable: a good enough simulation could, by design, look exactly like reality. Some physicists have proposed looking for tell-tale grid patterns or limits in high-energy cosmic rays, but nothing of the kind has been found.\n\nFor now it is best treated as a fascinating thought experiment.",
+      "apply_it": "Reflect: if you could never know whether the world is simulated, would it change how you choose to live today?",
+      "quiz": {
+        "question": "How should the simulation hypothesis best be described today?",
+        "options": [
+          "A philosophical argument that has not been tested",
+          "A proven scientific law",
+          "A NASA discovery",
+          "An idea that was disproven in 2003"
+        ],
+        "answer": 0,
+        "explanation": "It is a thought-provoking philosophical argument. No experiment has yet found evidence for or against it."
+      }
+    },
+    {
+      "id": "universe-big-theories--28",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "panspermia",
+        "astrobiology",
+        "origins-of-life"
+      ],
+      "title": "Panspermia: could the seeds of life travel between worlds?",
+      "body": "Panspermia is the hypothesis that life, or its building blocks, can travel through space on rocks, comets or dust and take root on new worlds.\n\nSome evidence makes this plausible. Meteorites from Mars have been found on Earth, so rocks do swap between planets. Hardy microbes called tardigrades and certain bacteria have survived exposure to space in experiments. And samples returned in 2023 from the asteroid Bennu by NASA's OSIRIS-REx mission contain amino acids and the chemical bases used in DNA and RNA.\n\nThat last finding supports a milder version: that space delivered life's ingredients. The stronger version, that living cells arrived from elsewhere, has no direct evidence. It also does not explain how life began. It only moves the question to another place.\n\nThe test would be finding life beyond Earth and comparing its chemistry with ours. Missions to Mars, Europa and Enceladus are part of that search.",
+      "apply_it": "Next clear night, watch for a meteor. Reflect that each streak is space dust arriving on Earth, as it has for billions of years.",
+      "quiz": {
+        "question": "What did samples from asteroid Bennu contain?",
+        "options": [
+          "Living bacteria",
+          "Amino acids and the bases used in DNA and RNA",
+          "Fossils",
+          "Liquid water oceans"
+        ],
+        "answer": 1,
+        "explanation": "Bennu samples held amino acids and nucleobases, supporting the idea that space can deliver life's ingredients, though not life itself."
+      }
+    },
+    {
+      "id": "universe-big-theories--29",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "anthropic-principle",
+        "fine-tuning",
+        "philosophy"
+      ],
+      "title": "The anthropic principle: the universe looks fine-tuned because we are here to look",
+      "body": "Change some constants of nature slightly, such as the strength of gravity or the forces inside atoms, and in many calculations stars, chemistry or life could not exist. Why are the numbers just right? Nobody knows. That is one of the deepest open questions in physics.\n\nThe anthropic principle offers one kind of answer. In its weak form it says something simple: we can only find ourselves in a universe that allows observers. If there are many universes with different constants, of course we live in a suitable one.\n\nThis is a way of reasoning, not a tested theory. Supporters note it has helped estimate the rough size of dark energy. Critics say it can explain almost anything and so predicts little.\n\nIt can only be tested indirectly, by testing the multiverse ideas it often relies on, or by finding a deeper theory that fixes the constants.",
+      "apply_it": "Reflect: a puddle might think the hole it sits in was made for it. Where else might you be mistaking a fit for a plan?",
+      "quiz": {
+        "question": "What does the weak anthropic principle say?",
+        "options": [
+          "We can only observe a universe that allows observers to exist",
+          "The universe was designed for us",
+          "Constants of nature change daily",
+          "Humans control the laws of physics"
+        ],
+        "answer": 0,
+        "explanation": "It notes that observers can only exist where conditions allow, so we should not be surprised to find such conditions around us."
+      }
+    },
+    {
+      "id": "universe-big-theories--30",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "why-theories-matter",
+        "curiosity",
+        "reflection"
+      ],
+      "title": "Why the biggest unproven ideas still matter",
+      "body": "Most of the theories in this guide may turn out to be wrong. That is not a failure. It is how science moves.\n\nWild ideas tell experimenters where to look. The search for inflation's signal is driving new telescopes. Arguments about dark energy are shaping missions that will map billions of galaxies. Even ideas that can never be tested sharpen our thinking about what counts as evidence.\n\nAnd history is encouraging. The Big Bang, black holes, gravitational waves and the Higgs boson were all once theories that many doubted. Each waited years or decades for its moment, and each passed.\n\nThe universe is about 13.8 billion years old, and we have been measuring it carefully for only a few centuries. The honest answer to many of the biggest questions is still: we do not know yet. That small word, yet, is where all the wonder lives.",
+      "apply_it": "Look up at the night sky and say out loud one question you hope is answered in your lifetime.",
+      "quiz": {
+        "question": "Which of these began as a theory and was later confirmed?",
+        "options": [
+          "The multiverse",
+          "Gravitational waves",
+          "The simulation hypothesis",
+          "The Big Rip"
+        ],
+        "answer": 1,
+        "explanation": "Gravitational waves were predicted in 1916 and detected in 2015. The others remain untested theories."
+      }
+    }
+  ]
+}

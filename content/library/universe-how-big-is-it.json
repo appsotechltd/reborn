@@ -1,0 +1,788 @@
+{
+  "source": {
+    "id": "universe-how-big-is-it",
+    "title": "How Big Is the Universe?",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, Universe, https://science.nasa.gov/universe/; NASA Science, Galaxies, https://science.nasa.gov/universe/galaxies/; NASA Science, Voyager 1, https://science.nasa.gov/mission/voyager/voyager-1/; NASA Science, Oort Cloud, https://science.nasa.gov/solar-system/oort-cloud/; NASA Science, James Webb Space Telescope, https://science.nasa.gov/mission/webb/; NASA Science, Hubble Space Telescope, https://science.nasa.gov/mission/hubble/; European Space Agency, Gaia, https://www.esa.int/Science_Exploration/Space_Science/Gaia; European Space Agency, Euclid, https://www.esa.int/Science_Exploration/Space_Science/Euclid"
+  },
+  "cards": [
+    {
+      "id": "universe-how-big-is-it--01",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "scale",
+        "distance",
+        "perspective"
+      ],
+      "title": "Each step outward makes the last one look tiny",
+      "body": "Start with your own street. Now the whole Earth, about 12,700 km across. Now the gap to the Moon, thirty Earths away. Then the Sun, nearly 400 times farther than the Moon.\n\nKeep going and something strange happens. Every distance you thought was huge becomes a rounding error in the next. The Sun's family of planets vanishes inside the gap to the nearest star. The nearest stars are crowded neighbours inside one galaxy. That galaxy is one of hundreds of billions.\n\nNone of this is guesswork. Each step has been measured, often in several independent ways. This guide walks outward one step at a time, from our Moon to the edge of everything we can see, and ends with the honest admission of what nobody knows yet.",
+      "apply_it": "Tonight, look at the Moon, then a bright star. Remind yourself the star is roughly a hundred million times farther away.",
+      "quiz": {
+        "question": "Roughly how far is the Sun compared with the Moon?",
+        "options": [
+          "About 4 times farther",
+          "About 40 times farther",
+          "Nearly 400 times farther",
+          "About 4,000 times farther"
+        ],
+        "answer": 2,
+        "explanation": "The Moon averages about 384,400 km away and the Sun about 150 million km, so the Sun is nearly 400 times farther."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--02",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "moon",
+        "earth",
+        "solar-system"
+      ],
+      "title": "Every other planet could squeeze into the gap between Earth and the Moon",
+      "body": "The Moon looks close enough to touch, but it sits on average about 384,400 km away. Light crosses that gap in about 1.3 seconds. The Apollo astronauts needed around three days.\n\nHere is a way to feel that distance. Add up the widths of Mercury, Venus, Mars, Jupiter, Saturn, Uranus and Neptune and you get roughly 388,000 km. When the Moon is near the far point of its slightly oval orbit, all seven planets could line up side by side in the space between us.\n\nWe know the distance to within centimetres. Astronauts left reflectors on the lunar surface, and observatories still bounce laser pulses off them and time the echo. Those measurements also show the Moon drifting away from Earth by about 3.8 cm a year.",
+      "apply_it": "Next time you see the Moon, picture Jupiter and Saturn laid end to end in the gap beneath it, with room for the rest.",
+      "quiz": {
+        "question": "How do scientists measure the Earth-Moon distance so precisely?",
+        "options": [
+          "By timing laser pulses bounced off reflectors left on the Moon",
+          "By measuring the Moon's shadow during eclipses",
+          "By counting how long Apollo flights took",
+          "By weighing the Moon"
+        ],
+        "answer": 0,
+        "explanation": "Reflectors placed by Apollo astronauts return laser pulses fired from Earth. Timing the round trip gives the distance to within centimetres."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "sun",
+        "light",
+        "distance"
+      ],
+      "title": "The sunlight on your skin left the Sun about eight minutes ago",
+      "body": "The Sun is about 150 million km away, or roughly 93 million miles. Light, the fastest thing there is, travels at about 300,000 km every second. Even so, sunlight needs about 8 minutes and 20 seconds to reach us.\n\nThat means you never see the Sun as it is. You see it as it was a few minutes earlier. If it somehow vanished, the sky would stay bright and Earth would keep circling for those eight minutes before anyone could know.\n\nThe Sun is also enormous. It is about 109 times wider than Earth, and around 1.3 million Earths could fit inside it. It holds about 99.8% of all the mass in the solar system. Everything else, planets included, is the leftovers.",
+      "apply_it": "Next time you feel sunshine, count slowly to 500. That is roughly how long that light has been travelling.",
+      "quiz": {
+        "question": "About how long does sunlight take to reach Earth?",
+        "options": [
+          "About 8 seconds",
+          "About 8 minutes and 20 seconds",
+          "About 1 hour",
+          "About 1 day"
+        ],
+        "answer": 1,
+        "explanation": "At about 300,000 km per second, light covers the roughly 150 million km from the Sun in about 8 minutes and 20 seconds."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "scale-model",
+        "solar-system",
+        "sun"
+      ],
+      "title": "Shrink the Sun to a grapefruit and Earth becomes a grain of sand ten metres away",
+      "body": "Pictures of the solar system lie. To fit on a page they put the planets close together and make them far too big. A true scale model shows why.\n\nShrink the Sun to a ball about 10 cm wide, roughly a grapefruit. Earth becomes a speck less than a millimetre across, about 11 metres away. Jupiter is the size of a small marble some 55 metres off. Neptune is a grain of sugar more than 300 metres away, three football pitches distant.\n\nAnd the nearest star, Proxima Centauri? On this scale it would be nearly 3,000 km away, roughly the distance from London to Moscow. Between them lies almost nothing at all. The solar system is mostly empty space with a few specks scattered through it.",
+      "apply_it": "Try it: put a grapefruit at one end of a park, then pace out 11 metres and hold up a grain of sand for Earth.",
+      "quiz": {
+        "question": "If the Sun were the size of a grapefruit, roughly how far away would the nearest star be?",
+        "options": [
+          "About 300 metres",
+          "About 30 km",
+          "Nearly 3,000 km",
+          "About 3 million km"
+        ],
+        "answer": 2,
+        "explanation": "At that scale Earth is about 11 metres from the Sun, and Proxima Centauri, about 4.24 light-years away, would sit nearly 3,000 km off."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "planets",
+        "neptune",
+        "solar-system"
+      ],
+      "title": "Messages to Neptune take about four hours to arrive",
+      "body": "The eight planets fill a space that dwarfs the Earth-Moon system. Neptune, the outermost, orbits about 4.5 billion km from the Sun, roughly 30 times Earth's distance. A radio signal travelling at light speed takes about four hours to get there.\n\nNeptune is so far out that one of its years lasts about 165 Earth years. It has completed only a little more than one orbit since it was discovered in 1846.\n\nBeyond Neptune lies the Kuiper Belt, a ring of icy bodies that includes Pluto. Pluto's average distance is about 40 times Earth's, and when New Horizons flew past in 2015, its signals took around four and a half hours to reach home. Mission controllers could only watch events that had already happened.",
+      "apply_it": "Imagine sending a text that takes four hours to deliver. That is the delay every command to a spacecraft near Neptune faces.",
+      "quiz": {
+        "question": "About how long does Neptune take to orbit the Sun once?",
+        "options": [
+          "About 12 Earth years",
+          "About 30 Earth years",
+          "About 84 Earth years",
+          "About 165 Earth years"
+        ],
+        "answer": 3,
+        "explanation": "Neptune is about 30 times farther from the Sun than Earth and moves slowly, so one orbit takes about 165 Earth years."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--06",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "heliosphere",
+        "voyager",
+        "solar-wind"
+      ],
+      "title": "The Sun blows a bubble, and Voyager 1 has left it",
+      "body": "The Sun constantly breathes out a thin, fast stream of charged particles called the solar wind. It inflates a vast bubble around the planets, called the heliosphere. Where the solar wind finally runs into the gas between the stars, there is a boundary called the heliopause.\n\nIn 2012, NASA's Voyager 1 crossed it, about 18 billion km from the Sun, roughly 121 times Earth's distance. Scientists knew because its instruments recorded a sudden jump in the density of the surrounding gas and a change in the particles hitting it. Voyager 2 followed in 2018.\n\nThey are the only working spacecraft ever to reach interstellar space. Both were launched in 1977, with computers far less powerful than a modern phone, and both are still sending back data.",
+      "apply_it": "Think of something you made decades ago that still works. Voyager is that, but 20 billion km away and still talking.",
+      "quiz": {
+        "question": "What is the heliopause?",
+        "options": [
+          "The edge of the Milky Way",
+          "The boundary where the solar wind meets interstellar gas",
+          "The orbit of Neptune",
+          "The surface of the Sun"
+        ],
+        "answer": 1,
+        "explanation": "The heliopause is where the Sun's outflowing solar wind meets the thin gas between the stars. Voyager 1 crossed it in 2012."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--07",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "heliosphere",
+        "solar-system",
+        "open-question"
+      ],
+      "title": "Nobody yet knows the true shape of the Sun's bubble",
+      "body": "We live inside the heliosphere, the bubble of solar wind around the Sun, but nobody can step outside to take its photograph. Its shape is still an open question.\n\nThe classic picture is a comet, with a rounded nose facing the direction the Sun travels and a long tail streaming behind. Some computer models instead suggest a shorter, rounder shape, or even something like a croissant with two curved lobes. The two Voyagers each sampled the boundary at just one point, so they cannot settle it alone.\n\nScientists are tackling the puzzle by catching fast neutral atoms that fly in from the edge, which lets them map the boundary from a distance. NASA's IMAP spacecraft, launched in 2025, is designed to do exactly that in far sharper detail than before.",
+      "apply_it": "Reflect: what familiar thing have you lived inside your whole life without ever seeing its outline?",
+      "quiz": {
+        "question": "Why can't the Voyager probes alone reveal the heliosphere's full shape?",
+        "options": [
+          "They have no working instruments",
+          "They each crossed the boundary at only one point",
+          "They never left the solar wind",
+          "They were sent the wrong way"
+        ],
+        "answer": 1,
+        "explanation": "Each Voyager sampled the edge at a single spot. Mapping the whole shape needs remote techniques, such as catching neutral atoms from the boundary."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--08",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "voyager",
+        "light",
+        "distance"
+      ],
+      "title": "Our most distant spacecraft is about to be one light-day from home",
+      "body": "Voyager 1 has been flying outward since 1977 at about 17 km per second, roughly 61,000 km an hour. It is the farthest object humans have ever made, now more than 25 billion km away.\n\nIn late 2026 it reaches a milestone: about one light-day from Earth. A command sent from a NASA dish takes roughly a full day to arrive, and the reply takes another day to come back. Its radio transmitter is about as powerful as a fridge light bulb, so the signal reaching Earth is unimaginably faint.\n\nYet after nearly half a century of flight, Voyager 1 has crossed just one light-day. The nearest star is more than four light-years away. Our fastest outbound messenger has barely left the porch.",
+      "apply_it": "Picture asking a question and waiting two full days for the answer. That is a conversation with Voyager 1 today.",
+      "quiz": {
+        "question": "Around late 2026, how long does a radio message take to reach Voyager 1?",
+        "options": [
+          "About one second",
+          "About one hour",
+          "About one day",
+          "About one year"
+        ],
+        "answer": 2,
+        "explanation": "Voyager 1 is reaching about one light-day from Earth, so signals travelling at light speed take roughly a day each way."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--09",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "oort-cloud",
+        "comets",
+        "solar-system"
+      ],
+      "title": "A vast shell of icy bodies probably surrounds the Sun, but no one has seen it",
+      "body": "Far beyond the planets, astronomers think the Sun is wrapped in a giant, sparse sphere of icy objects called the Oort Cloud. It has never been directly observed. Its existence is a well-supported hypothesis rather than a measured fact.\n\nThe evidence comes from comets. Some arrive on very long orbits from every direction in the sky, not just along the plane of the planets. Tracing their paths back points to a huge spherical reservoir. Estimates put its inner edge at a few thousand times Earth's distance from the Sun and its outer edge perhaps 100,000 times farther, more than a light-year out.\n\nIf it is there, Voyager 1 will need about 300 years to reach it and perhaps 30,000 years to pass through it. Objects in it are too small, dark and distant for current telescopes to spot.",
+      "apply_it": "Next time a bright comet appears in the news, remember it may have fallen inward from that unseen shell.",
+      "quiz": {
+        "question": "What is the main evidence for the Oort Cloud?",
+        "options": [
+          "Direct photographs from Voyager",
+          "Long-period comets arriving from all directions",
+          "Radio signals from its icy bodies",
+          "Its shadow on the Sun"
+        ],
+        "answer": 1,
+        "explanation": "No one has imaged it. Its existence is inferred from long-period comets whose orbits trace back to a distant spherical reservoir."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--10",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "planet-nine",
+        "kuiper-belt",
+        "solar-system"
+      ],
+      "title": "Could a hidden planet be lurking far beyond Neptune?",
+      "body": "In 2016 astronomers noticed that several very distant icy bodies beyond Neptune had oddly lined-up orbits. One proposed explanation is an unseen world, nicknamed Planet Nine, perhaps several times Earth's mass and many hundreds of times farther from the Sun than we are.\n\nThis is a hypothesis, not a discovery. No telescope has found such a planet. Some researchers argue the lined-up orbits may be a statistical quirk, caused by where and when surveys happened to look.\n\nThe test is straightforward in principle: find it, or find enough distant objects to show the pattern is not real. New wide-field surveys, such as the one by the Vera C. Rubin Observatory, will scan the whole southern sky repeatedly and should help settle the question either way.",
+      "apply_it": "Reflect: how would you decide whether a pattern you have noticed is real or just chance? Scientists face exactly this question here.",
+      "quiz": {
+        "question": "What is the current status of Planet Nine?",
+        "options": [
+          "It was photographed in 2016",
+          "It is a hypothesis that has not been confirmed",
+          "It is the official ninth planet",
+          "It was ruled out completely"
+        ],
+        "answer": 1,
+        "explanation": "Planet Nine was proposed to explain clustered orbits of distant objects, but no planet has been found and the clustering itself is debated."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--11",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "light-year",
+        "light",
+        "units"
+      ],
+      "title": "A light-year is a distance, and it is almost ten trillion kilometres",
+      "body": "Kilometres stop being useful very quickly in space. So astronomers measure with light itself.\n\nA light-year is the distance light travels in one year, about 9.46 trillion km, or roughly 5.9 trillion miles. Despite the name, it measures distance, not time. Light could circle Earth about seven and a half times in a single second, and a light-year is a full year of that.\n\nThere is a neat bonus to this ruler. A star 100 light-years away is one whose light set off 100 years ago. The unit tells you both how far away something is and how old the light reaching your eye must be. Astronomers also use the parsec, about 3.26 light-years, which comes from the way they measure star distances.",
+      "apply_it": "Choose a star tonight and look up its distance. Ask yourself what was happening in the year its light set out.",
+      "quiz": {
+        "question": "What does a light-year measure?",
+        "options": [
+          "A length of time",
+          "A distance",
+          "A star's brightness",
+          "The speed of light"
+        ],
+        "answer": 1,
+        "explanation": "A light-year is the distance light travels in a year, about 9.46 trillion km. It measures distance, not time."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--12",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "proxima-centauri",
+        "stars",
+        "distance"
+      ],
+      "title": "The nearest star is a dim red dwarf you can't see without a telescope",
+      "body": "After the Sun, the closest star to us is Proxima Centauri, about 4.24 light-years away. That is roughly 40 trillion km.\n\nProxima is a red dwarf, smaller and much cooler than the Sun, and too faint to see with the naked eye. It belongs to a family with two brighter, Sun-like stars, Alpha Centauri A and B, about 4.37 light-years away. Together they shine as one of the brightest points in the southern sky.\n\nProxima has at least one planet, Proxima b, orbiting at a distance where liquid water might be possible on its surface. Even so, that nearest neighbour is about 270,000 times farther from us than the Sun is. In space, even next door is a long way off.",
+      "apply_it": "If you are in the southern hemisphere, find Alpha Centauri near the Southern Cross. Its light left over four years ago.",
+      "quiz": {
+        "question": "About how far away is Proxima Centauri, the nearest star after the Sun?",
+        "options": [
+          "About 4.24 light-minutes",
+          "About 4.24 light-years",
+          "About 42 light-years",
+          "About 424 light-years"
+        ],
+        "answer": 1,
+        "explanation": "Proxima Centauri lies about 4.24 light-years away, roughly 40 trillion km. It is a faint red dwarf."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--13",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "space-travel",
+        "voyager",
+        "proxima-centauri"
+      ],
+      "title": "At Voyager's speed, the trip to the nearest star would take about 75,000 years",
+      "body": "Our fastest craft leaving the solar system, Voyager 1, travels at about 17 km per second. That would cover the length of Britain in about a minute. Yet if it were heading straight for Proxima Centauri, which it is not, it would need about 75,000 years to arrive.\n\nSeventy-five thousand years ago, our ancestors were still living as hunter-gatherers and had not yet spread across most of the world. The journey would take about as long again.\n\nA car at motorway speed, 100 km an hour, would need more than 45 million years. This is why crossing between stars is so hard. Proposals exist for tiny probes pushed by powerful lasers to a fraction of light speed, but these remain ideas on paper, not working spacecraft.",
+      "apply_it": "Reflect: what would you put on a message designed to be read by anyone in 75,000 years?",
+      "quiz": {
+        "question": "Travelling at Voyager 1's speed, roughly how long would it take to reach Proxima Centauri?",
+        "options": [
+          "About 75 years",
+          "About 750 years",
+          "About 75,000 years",
+          "About 75 million years"
+        ],
+        "answer": 2,
+        "explanation": "At about 17 km per second, covering roughly 40 trillion km takes around 75,000 years."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--14",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "emptiness",
+        "interstellar-space",
+        "scale"
+      ],
+      "title": "If the Sun were a grain of sand, the next star would be about 29 km away",
+      "body": "Space is overwhelmingly empty. Shrink the Sun to a grain of sand about a millimetre wide and the nearest star becomes another grain roughly 29 km away. Most stars in our neighbourhood are spaced like that: lonely grains, tens of kilometres apart.\n\nThe gas between the stars is thinner than any vacuum we can easily make on Earth. On average there is about one atom in a space the size of a sugar cube. The air you are breathing holds tens of billions of billions of molecules in the same volume.\n\nThis emptiness has a surprising effect. When whole galaxies collide, their stars almost never hit each other. The gaps are simply too vast. The galaxies merge and reshape, while nearly every star sails straight through.",
+      "apply_it": "Hold a grain of sand or sugar on a fingertip. Now imagine the nearest other grain in a city an hour's drive away.",
+      "quiz": {
+        "question": "Why do stars almost never collide when two galaxies merge?",
+        "options": [
+          "Stars repel each other",
+          "The distances between stars are enormous compared with their size",
+          "Galaxies never really merge",
+          "Stars are made of gas so pass through each other"
+        ],
+        "answer": 1,
+        "explanation": "Stars are tiny compared with the gaps between them, so even during a galaxy merger direct collisions are extremely rare."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--15",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "parallax",
+        "measurement",
+        "gaia"
+      ],
+      "title": "Astronomers measure the distance to stars with the same trick as your thumb",
+      "body": "Hold up a thumb and close one eye, then the other. Your thumb seems to jump against the background. That shift is parallax, and the closer the object, the bigger the jump.\n\nAstronomers do the same using Earth's orbit. They observe a star, wait six months until Earth is on the other side of the Sun, and look again. Nearby stars shift very slightly against far more distant ones. Simple geometry then gives the distance.\n\nThe shifts are tiny. Even for the nearest star, the angle is smaller than the apparent width of a shirt button seen from more than two kilometres away. The first star distance was measured this way in 1838. Today the European Space Agency's Gaia spacecraft has measured parallaxes for more than a billion stars.",
+      "apply_it": "Do the thumb test now. Then try it with your thumb closer to your face and notice the bigger jump.",
+      "quiz": {
+        "question": "How do astronomers use parallax to measure a star's distance?",
+        "options": [
+          "By timing radar echoes from the star",
+          "By watching the star shift as Earth moves around its orbit",
+          "By measuring the star's colour",
+          "By counting its planets"
+        ],
+        "answer": 1,
+        "explanation": "Observing a star from opposite sides of Earth's orbit makes nearby stars appear to shift. The size of the shift reveals the distance."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--16",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "standard-candles",
+        "measurement",
+        "supernovae"
+      ],
+      "title": "For distant galaxies, astronomers rely on stars of known brightness",
+      "body": "Parallax only works for relatively nearby stars. Farther out, astronomers use standard candles: objects whose true brightness they know.\n\nThe idea is simple. A light looks dimmer the farther away it is. Move it twice as far and it appears a quarter as bright. If you know how bright something really is, how bright it appears tells you its distance.\n\nIn the early 1900s Henrietta Leavitt discovered that certain pulsing stars, called Cepheids, have a true brightness linked to how fast they pulse. Time the pulse, work out the brightness, and you have a distance. For even greater distances, astronomers use a type of exploding star, Type Ia supernovae, which flare to roughly the same peak brightness and can briefly outshine a whole galaxy.",
+      "apply_it": "Look at a row of streetlights at night. Notice how the far ones look fainter, even though they are equally bright.",
+      "quiz": {
+        "question": "If a light is moved twice as far away, how bright does it appear?",
+        "options": [
+          "Half as bright",
+          "A quarter as bright",
+          "Twice as bright",
+          "Exactly the same"
+        ],
+        "answer": 1,
+        "explanation": "Apparent brightness falls with the square of distance. Twice the distance means one quarter of the brightness."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--17",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "redshift",
+        "expansion",
+        "measurement"
+      ],
+      "title": "The farthest galaxies are measured by how much their light has been stretched",
+      "body": "In the late 1920s Edwin Hubble and others found a pattern. Light from distant galaxies is shifted towards the red end of the spectrum, and the farther away a galaxy is, the bigger the shift. This redshift happens because space itself is expanding, stretching light waves as they travel.\n\nThat gives astronomers a ruler for the deepest reaches. Measure a galaxy's redshift, and you can estimate its distance, even when no single star in it can be seen.\n\nEach method is checked against the one before. Parallax calibrates the pulsing stars, the pulsing stars calibrate the supernovae, and the supernovae calibrate redshift. Scientists call this chain the cosmic distance ladder. It is how a species stuck on one planet worked out distances of billions of light-years.",
+      "apply_it": "Reflect: which things in your life do you only know through a chain of trusted steps, each checked against the last?",
+      "quiz": {
+        "question": "What is redshift?",
+        "options": [
+          "Light from distant galaxies stretched to longer wavelengths",
+          "The red colour of Mars",
+          "Light bent by Earth's atmosphere",
+          "The glow of red dwarf stars"
+        ],
+        "answer": 0,
+        "explanation": "As space expands, light from distant galaxies is stretched towards red. The bigger the redshift, the farther away the galaxy generally is."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--18",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "milky-way",
+        "galaxies",
+        "stars"
+      ],
+      "title": "Our galaxy is about 100,000 light-years across and holds billions of suns",
+      "body": "The Sun is one star in the Milky Way, a spiral galaxy about 100,000 light-years across. A beam of light would need about 100,000 years to cross it.\n\nIt contains somewhere between 100 and 400 billion stars. The range is wide because many stars are faint and hidden behind dust. The galaxy is a thin disc, only about 1,000 light-years thick in most places, with spiral arms winding around a bulging centre. At its heart sits a supermassive black hole.\n\nWe see the galaxy edge-on from inside. On a dark night, far from city lights, it appears as a pale band arching across the sky. That glow is the combined light of billions of stars too distant to see individually.",
+      "apply_it": "Find a dark-sky spot on a moonless night, give your eyes 20 minutes to adjust, and look for the band of the Milky Way.",
+      "quiz": {
+        "question": "Roughly how many stars does the Milky Way contain?",
+        "options": [
+          "About 100 million",
+          "Between 100 and 400 billion",
+          "About 10 trillion",
+          "Exactly 1 billion"
+        ],
+        "answer": 1,
+        "explanation": "Estimates put the Milky Way's population at roughly 100 to 400 billion stars. Many are faint or hidden by dust, so the count is uncertain."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--19",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "milky-way",
+        "sun",
+        "galactic-year"
+      ],
+      "title": "The Sun has gone round the galaxy only once since the first dinosaurs",
+      "body": "We live in the suburbs. The Sun sits about 26,000 light-years from the centre of the Milky Way, in a small arm between two larger spiral arms.\n\nEverything here is moving. The Sun and its planets travel around the galaxy at roughly 230 km per second, about 828,000 km an hour. Even at that speed, one full lap takes around 230 million years. Astronomers call this a galactic year.\n\nOne galactic year ago, the earliest dinosaurs were just appearing on Earth. Since then the solar system has completed about one orbit, and in all its 4.6 billion years the Sun has gone round only about 20 times. Right now you are moving through the galaxy faster than any rocket has ever flown, without feeling a thing.",
+      "apply_it": "Sit still for one minute. In that minute you have travelled about 14,000 km around the galaxy.",
+      "quiz": {
+        "question": "About how long does the Sun take to orbit the centre of the Milky Way?",
+        "options": [
+          "About 1 year",
+          "About 230,000 years",
+          "About 230 million years",
+          "About 13.8 billion years"
+        ],
+        "answer": 2,
+        "explanation": "The Sun takes roughly 230 million years to orbit the galactic centre, a span called a galactic year."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--20",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "history",
+        "galaxies",
+        "andromeda"
+      ],
+      "title": "A century ago, many astronomers thought our galaxy was the whole universe",
+      "body": "Until the 1920s, it was a genuine debate. Some astronomers argued the Milky Way was the entire universe. Others thought faint, fuzzy spirals in the sky were separate star systems far beyond it.\n\nThe question was settled by measurement. In the mid-1920s Edwin Hubble found pulsing Cepheid stars in the Andromeda spiral. Using their known brightness, he showed it lay far outside our galaxy. Its distance was later revised upward, and we now know it is about 2.5 million light-years away.\n\nAlmost overnight, the known universe went from one galaxy to countless galaxies. Today astronomers estimate there are hundreds of billions of them. People still alive have grandparents who were born when no one knew other galaxies existed.",
+      "apply_it": "Reflect: what belief in your own field might look as limited in a century as \"the Milky Way is everything\" looks now?",
+      "quiz": {
+        "question": "What evidence showed that Andromeda lies outside the Milky Way?",
+        "options": [
+          "Its colour",
+          "Cepheid stars that revealed its distance",
+          "Radio signals from it",
+          "Photographs by a spacecraft"
+        ],
+        "answer": 1,
+        "explanation": "Hubble used Cepheid variable stars, whose true brightness is known, to show Andromeda was far beyond the Milky Way."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--21",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "andromeda",
+        "galaxies",
+        "naked-eye"
+      ],
+      "title": "The farthest thing most people can see with their own eyes is 2.5 million light-years away",
+      "body": "On a clear, dark autumn night in the northern hemisphere, you can spot a faint smudge in the constellation Andromeda. That smudge is a whole galaxy, larger than our own, with perhaps a trillion stars.\n\nIt lies about 2.5 million light-years away. The light reaching your eye left before modern humans existed, when our earliest ancestors in the genus Homo were only beginning to appear.\n\nAndromeda and the Milky Way are drawing closer at about 110 km per second. Measurements by NASA's Hubble Space Telescope pointed to a collision in about 4 to 5 billion years, though more recent studies suggest a full merger is less certain than once thought. Either way, if it happens, the stars themselves will almost never collide.",
+      "apply_it": "On a dark autumn night, use a star chart app to find Andromeda. Look slightly to one side of it to see the faint glow better.",
+      "quiz": {
+        "question": "About how far away is the Andromeda Galaxy?",
+        "options": [
+          "About 2.5 thousand light-years",
+          "About 2.5 million light-years",
+          "About 2.5 billion light-years",
+          "About 25 light-years"
+        ],
+        "answer": 1,
+        "explanation": "Andromeda is about 2.5 million light-years away, so its light left long before modern humans existed."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--22",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "local-group",
+        "galaxies",
+        "magellanic-clouds"
+      ],
+      "title": "Our galaxy belongs to a small gang called the Local Group",
+      "body": "Galaxies tend to gather. The Milky Way is one of more than 50 known galaxies bound together by gravity in a cluster called the Local Group, which spans roughly 10 million light-years.\n\nIt is dominated by two big spirals, Andromeda and the Milky Way, with a third, smaller spiral called Triangulum. Most of the rest are dwarf galaxies, some holding only a few thousand to a few billion stars, many orbiting the larger ones like moons.\n\nTwo of these companions are easy to see from the southern hemisphere: the Large and Small Magellanic Clouds. They look like torn-off pieces of the Milky Way. The Large Magellanic Cloud is about 160,000 light-years away. New, very faint dwarf galaxies are still being found as surveys grow more sensitive.",
+      "apply_it": "If you are ever in the southern hemisphere on a dark night, look for two pale clouds that do not move with the wind.",
+      "quiz": {
+        "question": "What dominates the Local Group of galaxies?",
+        "options": [
+          "Two large spirals, the Milky Way and Andromeda",
+          "A single giant elliptical galaxy",
+          "Hundreds of large spirals",
+          "Only dwarf galaxies"
+        ],
+        "answer": 0,
+        "explanation": "The Local Group is dominated by Andromeda and the Milky Way, with Triangulum and many smaller dwarf galaxies."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--23",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "laniakea",
+        "superclusters",
+        "galaxies"
+      ],
+      "title": "We live in a supercluster called Laniakea, meaning immeasurable heaven",
+      "body": "Zoom out from the Local Group and it turns out to be a tiny part of something much bigger. In 2014, astronomers mapped how thousands of galaxies are moving and traced the flows of motion, like tracing which way rain drains across a landscape.\n\nThe result defined our home supercluster. They named it Laniakea, Hawaiian for immeasurable heaven. It is about 520 million light-years across and contains roughly 100,000 galaxies.\n\nWithin it, galaxies are slowly streaming towards a region of concentrated mass called the Great Attractor. Superclusters like this are not tightly bound and are gradually being pulled apart by the expansion of the universe. Still, it is the largest structure we can call home, and the Milky Way is a speck within it.",
+      "apply_it": "Reflect: in how many nested communities do you live, from household to city to country? Laniakea is our cosmic version of that list.",
+      "quiz": {
+        "question": "How did astronomers define the Laniakea supercluster?",
+        "options": [
+          "By counting stars in the Milky Way",
+          "By mapping how galaxies are moving",
+          "By measuring the Sun's speed",
+          "By photographing its edge"
+        ],
+        "answer": 1,
+        "explanation": "Astronomers traced the flows of galaxy motions to find the region whose galaxies move together, defining Laniakea's boundary."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--24",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "cosmic-web",
+        "structure",
+        "voids"
+      ],
+      "title": "On the largest scales, galaxies form a web of threads around empty voids",
+      "body": "Map the positions of millions of galaxies, as large surveys have done, and a pattern appears. Galaxies are not scattered evenly. They gather in long filaments and flat sheets, with clusters where the threads meet. Between them lie voids, vast regions with very few galaxies, some spanning hundreds of millions of light-years.\n\nAstronomers call this the cosmic web. It looks a little like foam or a sponge. Computer simulations reproduce it well when they include the gravity of unseen dark matter, which acts as scaffolding for the visible galaxies.\n\nThe European Space Agency's Euclid telescope, launched in 2023, is now mapping this web across a large part of the sky in more detail than ever, measuring the shapes and distances of over a billion galaxies.",
+      "apply_it": "Look at the bubbles in washing-up foam. The galaxies would sit on the thin walls and edges, with the bubbles as voids.",
+      "quiz": {
+        "question": "What are cosmic voids?",
+        "options": [
+          "Black holes between galaxies",
+          "Vast regions containing very few galaxies",
+          "The gaps between planets",
+          "Holes in Earth's atmosphere"
+        ],
+        "answer": 1,
+        "explanation": "Voids are huge, nearly empty regions between the filaments and sheets of galaxies that make up the cosmic web."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--25",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "webb",
+        "deep-field"
+      ],
+      "title": "A patch of sky the size of a grain of sand holds thousands of galaxies",
+      "body": "In 2022, NASA's James Webb Space Telescope released its first deep field. It covered a patch of sky about the size of a grain of sand held at arm's length. In that tiny patch were thousands of galaxies.\n\nEarlier, the Hubble Space Telescope had stared at apparently empty patches of sky and found the same thing. Almost every dot of light in those images is a galaxy, not a star.\n\nScale that up to the whole sky and the numbers become staggering. Estimates put the observable universe at hundreds of billions of galaxies, perhaps up to two trillion. One 2016 study suggested the higher figure, while later work points to fewer. Either way, each one is a galaxy holding millions to trillions of stars.",
+      "apply_it": "Hold a grain of sand or rice at arm's length against the night sky. Imagine thousands of galaxies hidden behind it.",
+      "quiz": {
+        "question": "About how many galaxies are estimated to be in the observable universe?",
+        "options": [
+          "About a thousand",
+          "About a million",
+          "Hundreds of billions, perhaps up to two trillion",
+          "Exactly one"
+        ],
+        "answer": 2,
+        "explanation": "Deep-field images suggest hundreds of billions of galaxies, perhaps up to two trillion, though recent work leans towards the lower end."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--26",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "stars",
+        "estimates",
+        "comparison"
+      ],
+      "title": "There are probably more stars in the universe than grains of sand on every beach",
+      "body": "Nobody has counted every star, but astronomers can estimate. Take a typical number of stars per galaxy and multiply by the number of galaxies. The answer lands somewhere around ten thousand billion billion stars, perhaps more. Written out, that is a 1 followed by 22 or more zeros.\n\nNow the sand. Researchers have estimated all the grains on all of Earth's beaches by multiplying beach areas, depths and grain sizes. Their rough answer is in the region of a billion billion grains, a 1 followed by about 18 zeros.\n\nBoth figures are rough, but the gap between them is so large that the conclusion is safe: stars outnumber beach sand by a factor of thousands or more. Every grain on every shore would need thousands of stars of its own.",
+      "apply_it": "Next time you are at a beach, scoop up a handful of sand. For each grain, picture thousands of suns.",
+      "quiz": {
+        "question": "Why can astronomers be fairly confident stars outnumber beach sand grains?",
+        "options": [
+          "Every star has been counted",
+          "The estimates differ by a factor of thousands or more",
+          "Sand grains are larger than stars",
+          "Telescopes can see every star"
+        ],
+        "answer": 1,
+        "explanation": "Both numbers are rough estimates, but they differ by such a large factor that the conclusion holds even if each is off a lot."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--27",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "lookback-time",
+        "light",
+        "webb"
+      ],
+      "title": "The farther away you look, the further back in time you see",
+      "body": "Because light takes time to travel, every view of space is a view of the past. You see the Moon as it was about 1.3 seconds ago, the Sun about 8 minutes ago, and Andromeda about 2.5 million years ago.\n\nTelescopes push this to an extreme. The most distant galaxies seen by the James Webb Space Telescope appear as they were only around 300 million years after the Big Bang. Their light has travelled for more than 13 billion years. Some of those galaxies may no longer exist in the form we see.\n\nThis makes telescopes a kind of time machine. By looking at galaxies at different distances, astronomers can watch how galaxies in general have grown and changed over almost the entire history of the universe.",
+      "apply_it": "Look at the brightest star you can see tonight, find its distance in light-years, and note the year its light set out.",
+      "quiz": {
+        "question": "Why do distant galaxies show us the past?",
+        "options": [
+          "Their clocks run slow",
+          "Their light took a long time to reach us",
+          "Telescopes reverse time",
+          "They are moving backwards"
+        ],
+        "answer": 1,
+        "explanation": "Light travels at a finite speed, so light from a galaxy billions of light-years away left it billions of years ago."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--28",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "observable-universe",
+        "expansion",
+        "cosmology"
+      ],
+      "title": "The universe is 13.8 billion years old, yet we see 46 billion light-years away",
+      "body": "This sounds impossible. If the universe is about 13.8 billion years old, how can we see anything more than 13.8 billion light-years away?\n\nThe answer is that space has been expanding the whole time. Light from the most distant regions set out long ago, when those regions were much closer to us. As the light travelled, the space behind it kept stretching. The places that sent the oldest light we receive are now about 46 billion light-years away.\n\nSo the observable universe, the region from which light has had time to reach us, is a sphere about 93 billion light-years across. Its edge is set by time, not by any wall. Someone in a galaxy far away would have their own observable universe, centred on them.",
+      "apply_it": "Reflect: you are at the centre of your own observable universe, and so is every other observer. Notice how both are true at once.",
+      "quiz": {
+        "question": "Why is the observable universe about 93 billion light-years across when it is only 13.8 billion years old?",
+        "options": [
+          "Light once travelled faster",
+          "Space kept expanding while the light was travelling",
+          "The age figure is wrong",
+          "Telescopes magnify distances"
+        ],
+        "answer": 1,
+        "explanation": "Space expanded as the light travelled, so the regions that emitted the oldest light we see are now about 46 billion light-years away."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--29",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "expansion",
+        "horizon",
+        "dark-energy"
+      ],
+      "title": "Many galaxies we can see today are already out of reach forever",
+      "body": "The expansion of the universe is speeding up, an effect scientists attribute to something they call dark energy, whose nature is a separate mystery. One consequence is strange but well established within our best model of the cosmos.\n\nVery distant galaxies are being carried away by expanding space faster than light could ever close the gap. This does not break any speed limit, because nothing is moving through space faster than light. Space itself is stretching.\n\nSo a light signal sent from Earth today will never reach many of the galaxies visible in our telescopes. And light those galaxies emit now will never reach us. We still see them only because their older light set out long ago. Over billions of years, more and more distant galaxies will slip beyond our view.",
+      "apply_it": "Reflect: some things you can see clearly are already beyond your reach. How does that idea sit with you?",
+      "quiz": {
+        "question": "How can distant galaxies recede faster than light without breaking physics?",
+        "options": [
+          "They are moving through space faster than light",
+          "Space itself is expanding between us and them",
+          "Physics does not apply far away",
+          "They are not really receding"
+        ],
+        "answer": 1,
+        "explanation": "No object moves through space faster than light. The space between us and distant galaxies is itself stretching."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--30",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "infinite",
+        "shape-of-space",
+        "open-question"
+      ],
+      "title": "Nobody knows whether the universe goes on forever",
+      "body": "We can only see the observable universe. What lies beyond it, and whether the whole universe is finite or infinite, is one of the great open questions.\n\nHere is what we do know. Precise measurements of the cosmic microwave background, the oldest light in the sky, show that space is flat to within a fraction of a percent. Flat space could go on forever. But it could also be finite and wrap around on itself, a little like a video game where leaving one side brings you back on the other.\n\nScientists have searched the microwave background for repeating patterns that a wraparound universe might leave. None have been found, which means that if the universe is finite, it is probably far larger than the part we can see. For now, the honest answer is: nobody knows.",
+      "apply_it": "Reflect: can you be comfortable with a question that may never be answered? Try sitting with this one for a minute.",
+      "quiz": {
+        "question": "What do measurements tell us about whether the universe is infinite?",
+        "options": [
+          "It is definitely infinite",
+          "It is definitely finite and small",
+          "Space looks flat, but that does not settle whether it is infinite",
+          "We have seen its edge"
+        ],
+        "answer": 2,
+        "explanation": "Space appears flat to high precision, but a flat universe could be infinite or finite. The question remains open."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--31",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "hubble-tension",
+        "expansion",
+        "measurement"
+      ],
+      "title": "Two trusted ways of measuring the universe's expansion disagree",
+      "body": "How fast is the universe expanding? There are two main ways to find out, and they give different answers.\n\nOne starts nearby, using the cosmic distance ladder of Cepheid stars and supernovae. It finds galaxies receding about 73 km per second faster for every 3.26 million light-years of distance. The other starts from the early universe, using the cosmic microwave background and our model of cosmic history. It predicts about 67.\n\nThe gap is small but stubborn, and it is called the Hubble tension. Checks with the James Webb Space Telescope have not made it go away, though some teams using other methods find values in between. Nobody yet knows whether it comes from hidden measurement errors or from new physics missing from our picture of the cosmos. Researchers are gathering more data to find out.",
+      "apply_it": "Reflect: when two trusted sources disagree, do you pick one, or ask what both might be missing?",
+      "quiz": {
+        "question": "What is the Hubble tension?",
+        "options": [
+          "A disagreement between ways of measuring how fast the universe expands",
+          "A problem with the Hubble telescope's mirror",
+          "A pull between two galaxies",
+          "Stress in Earth's orbit"
+        ],
+        "answer": 0,
+        "explanation": "Measurements from nearby galaxies and from the early universe give different expansion rates. Nobody yet knows why."
+      }
+    },
+    {
+      "id": "universe-how-big-is-it--32",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "pale-blue-dot",
+        "earth",
+        "perspective"
+      ],
+      "title": "From six billion kilometres, Earth is smaller than a single pixel",
+      "body": "In 1990, as Voyager 1 headed out of the planetary system, it turned its camera back towards home. From about 6 billion km away, it took a picture that included Earth. Our planet appears as a tiny speck, smaller than a single pixel, caught in a ray of scattered sunlight. The image became known as the Pale Blue Dot.\n\nEvery step in this guide has moved farther out than that. Past the solar system, past nearby stars, across a galaxy of hundreds of billions of suns, into a universe of hundreds of billions of galaxies, out to a horizon 46 billion light-years away.\n\nAnd yet the speck is where all of this was measured. A species on one small world worked out how big everything is. That may be the most remarkable distance of all.",
+      "apply_it": "Find the Pale Blue Dot image online tonight. Look at the speck for a full minute and think of everyone you know.",
+      "quiz": {
+        "question": "What does the Pale Blue Dot image show?",
+        "options": [
+          "The Sun from Mars",
+          "Earth as a tiny speck seen by Voyager 1 from about 6 billion km",
+          "The Milky Way from outside",
+          "The Moon from Earth"
+        ],
+        "answer": 1,
+        "explanation": "In 1990 Voyager 1 photographed Earth from about 6 billion km away, where it appeared smaller than a single pixel."
+      }
+    }
+  ]
+}

@@ -59,6 +59,7 @@ class IdeaCardView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final topicName = ref.watch(topicNamesProvider)[card.topic] ?? card.topic;
+    final evidence = evidenceLabel(card.tags);
     final paragraphs = card.body
         .split(RegExp(r'\n\s*\n'))
         .map((p) => p.trim())
@@ -85,7 +86,7 @@ class IdeaCardView extends ConsumerWidget {
             ),
             const SizedBox(height: 16),
           ],
-          if (label != null || showTopic) ...[
+          if (label != null || showTopic || evidence != null) ...[
             Wrap(
               spacing: 10,
               runSpacing: 6,
@@ -93,6 +94,12 @@ class IdeaCardView extends ConsumerWidget {
               children: [
                 if (label != null) _Pill(text: label!),
                 if (showTopic) CategoryTag(topicName),
+                if (evidence != null)
+                  CategoryTag(
+                    evidence,
+                    key: const ValueKey('card-evidence'),
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
               ],
             ),
             const SizedBox(height: 10),
@@ -488,3 +495,9 @@ String shareText(IdeaCard card) {
     ..write('— via Reborn');
   return b.toString();
 }
+
+/// Wonders of the Universe cards say whether an idea is known, unknown or only
+/// a theory (their first tag).
+String? evidenceLabel(List<String> tags) => tags.isEmpty
+    ? null
+    : const {'known': 'Known', 'unknown': 'Unknown', 'theory': 'Theory'}[tags.first];

@@ -1,0 +1,788 @@
+{
+  "source": {
+    "id": "universe-are-we-alone",
+    "title": "Are We Alone?",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/exoplanets/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, Exoplanets, https://science.nasa.gov/exoplanets/; NASA Science, Astrobiology, https://science.nasa.gov/astrobiology/; NASA Science, Europa Clipper, https://science.nasa.gov/mission/europa-clipper/; NASA Science, Cassini, https://science.nasa.gov/mission/cassini/; NASA Science, Mars 2020 Perseverance, https://science.nasa.gov/mission/mars-2020-perseverance/; NASA Science, Voyager, https://science.nasa.gov/mission/voyager/; ESA/Webb, James Webb Space Telescope, https://esawebb.org/; ESA, Juice, https://www.esa.int/Science_Exploration/Space_Science/Juice"
+  },
+  "cards": [
+    {
+      "id": "universe-are-we-alone--01",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "life-beyond-earth",
+        "exoplanets",
+        "astrobiology"
+      ],
+      "title": "Life is known on exactly one world. We are the first people able to check for more",
+      "body": "Every culture has looked up and wondered whether anyone looks back. For thousands of years the honest answer was silence: nobody even knew whether other stars had planets.\n\nThat has changed within a single lifetime. We now know planets are common, that several moons in our own Solar System hide liquid water, and that telescopes can read the chemistry of air on worlds light-years away.\n\nWhat we still know for certain is short. Life exists on Earth, and so far nowhere else has been confirmed. No microbe, no signal, no fossil from beyond our planet has passed scientific scrutiny.\n\nThis guide sorts what is measured from what is open and what is only proposed. The question is ancient. The tools to answer it are brand new.",
+      "apply_it": "Tonight, look at one bright star and remind yourself: it very likely has planets, and nobody alive knows what is on them.",
+      "quiz": {
+        "question": "How many worlds are confirmed to host life?",
+        "options": [
+          "None",
+          "One: Earth",
+          "Three",
+          "Dozens"
+        ],
+        "answer": 1,
+        "explanation": "Earth is the only place where life is confirmed. Several places are promising, but none has produced accepted evidence of life."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--02",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "exoplanets",
+        "history",
+        "51-pegasi-b"
+      ],
+      "title": "1995: the year another sun-like star was caught with a planet",
+      "body": "In October 1995, Swiss astronomers Michel Mayor and Didier Queloz announced a planet circling 51 Pegasi, a Sun-like star about 50 light-years away. It was the first planet found around a normal star like ours, and it earned them a share of the 2019 Nobel Prize in Physics.\n\nThe planet itself was a shock. It is roughly half the mass of Jupiter, yet it whips around its star in about four days, far closer than Mercury is to our Sun. Nobody had predicted a giant world could live so close.\n\nThat surprise taught a lasting lesson. Other planetary systems need not look like ours, and nature is more inventive than our textbooks were.",
+      "apply_it": "Find the constellation Pegasus on an autumn evening. 51 Pegasi is just visible from a dark site, a real sun with a real planet.",
+      "quiz": {
+        "question": "What was surprising about 51 Pegasi b?",
+        "options": [
+          "It was smaller than Earth",
+          "It was a giant planet orbiting its star in about four days",
+          "It had rings like Saturn",
+          "It had no star"
+        ],
+        "answer": 1,
+        "explanation": "A Jupiter-class planet with a four-day orbit, a so-called hot Jupiter, showed planetary systems can be very different from ours."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "exoplanets",
+        "statistics",
+        "milky-way"
+      ],
+      "title": "Planets probably outnumber stars in our galaxy",
+      "body": "Thirty years after the first discovery around a Sun-like star, the tally of confirmed exoplanets has grown into the thousands. NASA's count passed 6,000 in 2025, with thousands more candidates awaiting checks.\n\nThose are only the planets we happen to be able to see. Most are found because their orbits line up with our view, or because they are big or close to their stars. Correcting for what we miss, surveys suggest that on average every star in the Milky Way has at least one planet.\n\nWith a few hundred billion stars in our galaxy, that means hundreds of billions of planets here alone. Each one is a place, with its own sky, seasons and weather.",
+      "apply_it": "Next time you see the Milky Way or a starry sky, try counting ten stars. Statistically, each likely has at least one planet.",
+      "quiz": {
+        "question": "Roughly how many exoplanets had NASA confirmed by 2025?",
+        "options": [
+          "About 60",
+          "About 600",
+          "Around 6,000",
+          "About 6 million"
+        ],
+        "answer": 2,
+        "explanation": "NASA's confirmed count passed 6,000 in 2025, with many more candidates still being checked."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "exoplanets",
+        "transit-method",
+        "kepler"
+      ],
+      "title": "Finding planets by the shadows they cast",
+      "body": "Most known exoplanets were found by watching stars dim. When a planet passes in front of its star from our point of view, it blocks a sliver of light. This is called a transit.\n\nThe dip is tiny. Jupiter crossing the Sun would dim it by about 1 percent. Earth would dim it by less than one part in ten thousand, like a moth crossing a distant floodlight.\n\nNASA's Kepler telescope stared at about 150,000 stars from 2009 to 2018 and found thousands of planets this way. TESS now scans almost the whole sky. A repeating dip gives the planet's size and its year, and with care, even a glimpse of its air.",
+      "apply_it": "Hold a coin at arm's length in front of a lamp across the room. Notice how little light it blocks. Transit hunters measure dips far smaller.",
+      "quiz": {
+        "question": "What does the transit method detect?",
+        "options": [
+          "A planet's radio signals",
+          "A small dip in starlight as a planet passes in front",
+          "Light reflected from a planet's oceans",
+          "The planet's gravity bending space"
+        ],
+        "answer": 1,
+        "explanation": "A transit is a planet crossing its star's face, causing a small, repeating dip in brightness."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "exoplanets",
+        "radial-velocity",
+        "wobble"
+      ],
+      "title": "Stars wobble when planets tug on them",
+      "body": "A planet does not simply circle its star. Both orbit a shared centre of mass, so the star sways in a small loop of its own.\n\nAstronomers catch that sway in the star's light. As the star moves towards us, its light shifts slightly bluer; moving away, slightly redder. This is the radial velocity, or wobble, method, and it found the first planet around a Sun-like star.\n\nThe precision is remarkable. Jupiter makes our Sun move at about 12 metres per second. Earth's pull moves it by only about 9 centimetres per second, a crawl. Detecting Earth twins this way pushes instruments to their limits, which is why astronomers combine wobble and transit data to learn both a planet's mass and its size.",
+      "apply_it": "Swing a heavy bag around you on a strap. Feel yourself lean and shift: that is a star responding to its planet.",
+      "quiz": {
+        "question": "Why does a star wobble?",
+        "options": [
+          "Its planets pull it around a shared centre of mass",
+          "It is spinning too fast",
+          "Its surface is boiling",
+          "Dust clouds push it"
+        ],
+        "answer": 0,
+        "explanation": "Star and planet orbit a common centre of mass, so the star moves in a tiny loop that shows up as shifts in its light."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--06",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "habitable-zone",
+        "water",
+        "exoplanets"
+      ],
+      "title": "The habitable zone is about water, not about life",
+      "body": "Around every star there is a band of distances where a rocky planet could, in principle, keep liquid water on its surface. Too close and water boils away; too far and it freezes. Astronomers call this the habitable zone, sometimes the Goldilocks zone.\n\nIt is a useful filter, not a promise. Venus sits near the inner edge of the Sun's zone and is a furnace under a crushing carbon dioxide atmosphere. Mars sits near the outer edge and is a cold desert.\n\nThe zone also ignores water hidden below ice, which may be the most common kind in the Solar System. So a planet in the habitable zone is a good place to look, nothing more.",
+      "apply_it": "Think of Venus, Earth and Mars as three siblings near the same zone. What made only one of them blue?",
+      "quiz": {
+        "question": "What does a star's habitable zone describe?",
+        "options": [
+          "Where life has been found",
+          "Where liquid water could exist on a planet's surface",
+          "Where planets cannot form",
+          "Where the star's light is invisible"
+        ],
+        "answer": 1,
+        "explanation": "It marks distances where surface water could stay liquid. Atmosphere and geology decide whether it actually does."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--07",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "trappist-1",
+        "exoplanets",
+        "red-dwarf"
+      ],
+      "title": "Seven Earth-sized worlds circle one small, cool star",
+      "body": "About 40 light-years away, a dim red star called TRAPPIST-1 hosts seven rocky planets roughly the size of Earth. The full set was announced in 2017, the most Earth-sized planets known around a single star.\n\nThe whole system is miniature. The star is only a little bigger than Jupiter, and all seven planets orbit closer to it than Mercury is to our Sun. A year on the innermost world lasts about a day and a half. From some planets, neighbours would hang in the sky larger than our Moon.\n\nSeveral of them lie in the star's habitable zone. The Webb telescope has studied the inner two and found no sign of thick atmospheres there. The outer worlds are still being examined.",
+      "apply_it": "Imagine standing on one of these worlds and watching another planet rise, bigger than a full Moon. Sketch what that sky might look like.",
+      "quiz": {
+        "question": "What is special about TRAPPIST-1?",
+        "options": [
+          "It is the closest star to the Sun",
+          "It has seven roughly Earth-sized planets",
+          "It has a planet with confirmed life",
+          "It is a giant blue star"
+        ],
+        "answer": 1,
+        "explanation": "TRAPPIST-1, about 40 light-years away, hosts seven rocky planets of about Earth's size, several in its habitable zone."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--08",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "proxima-b",
+        "exoplanets",
+        "nearest-star"
+      ],
+      "title": "The nearest star to the Sun has a planet in its habitable zone",
+      "body": "Proxima Centauri is the closest star to our Sun, about 4.24 light-years away. In 2016, astronomers using the wobble method found a planet orbiting it, now called Proxima b.\n\nIt has at least about the mass of Earth and circles its small red star every 11 days or so, at a distance where liquid water could exist on the surface.\n\nThat is where the good news pauses. We have not seen Proxima b cross its star, so we cannot yet study its air, or even confirm that it has any. Proxima Centauri also throws out powerful flares that could strip a nearby planet. The closest possible neighbour world remains a question mark.",
+      "apply_it": "Proxima's light reaching Earth tonight left about 4 years ago. Think back: what were you doing when that light set out?",
+      "quiz": {
+        "question": "How far away is Proxima Centauri?",
+        "options": [
+          "About 4.24 light-years",
+          "About 40 light-years",
+          "About 424 light-years",
+          "About 8 light-minutes"
+        ],
+        "answer": 0,
+        "explanation": "Proxima Centauri, the Sun's nearest stellar neighbour, is about 4.24 light-years away."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--09",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "red-dwarf",
+        "atmospheres",
+        "webb"
+      ],
+      "title": "Can planets around red dwarfs keep their air? Nobody knows yet",
+      "body": "Red dwarfs are the most common stars, making up roughly three quarters of the stars in the Milky Way. They are small, cool and live for trillions of years, so their planets would have enormous time for life.\n\nThe problem is their temper. Young red dwarfs flare violently, blasting nearby planets with X-rays and charged particles. Their habitable zones are so close that planets may be tidally locked, one side in endless day, the other in endless night.\n\nWhether rocky planets there can hold onto atmospheres is one of the biggest open questions in the search for life. Webb is testing it now, world by world. If the answer is mostly no, the most common homes in the galaxy may be barren.",
+      "apply_it": "Picture a planet where the Sun never moves in the sky. Where on it would you choose to live?",
+      "quiz": {
+        "question": "Why are red dwarf planets an open question for life?",
+        "options": [
+          "Red dwarfs are extremely rare",
+          "Strong flares may strip their planets' atmospheres",
+          "Their planets are always gas giants",
+          "They have no habitable zone"
+        ],
+        "answer": 1,
+        "explanation": "Red dwarfs are common, but their flares and close habitable zones may remove atmospheres. Webb observations are testing this."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--10",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "europa",
+        "ocean-worlds",
+        "jupiter"
+      ],
+      "title": "Jupiter's moon Europa hides more water than all Earth's oceans",
+      "body": "Europa is a little smaller than our Moon, wrapped in a shell of ice. Beneath it, strong evidence from the Galileo spacecraft points to a global salty ocean, kept liquid by heat from Jupiter's tides.\n\nThat ocean may hold about twice as much water as all of Earth's oceans combined. Its rocky floor could have hydrothermal activity like the deep-sea vents where life thrives on Earth.\n\nWe know the water is there. We do not know if it is habitable, let alone inhabited. NASA's Europa Clipper, launched in 2024, is due to reach Jupiter in 2030 to measure the ice, the ocean and the chemistry. ESA's Juice mission is heading to Jupiter's icy moons too.",
+      "apply_it": "Find Jupiter in the night sky; it is one of the brightest points. With binoculars you may see its moons as tiny dots. One of them is Europa.",
+      "quiz": {
+        "question": "What lies beneath Europa's ice shell?",
+        "options": [
+          "Molten lava",
+          "A global salty ocean",
+          "Frozen methane only",
+          "Solid iron"
+        ],
+        "answer": 1,
+        "explanation": "Magnetic and other measurements indicate a salty liquid ocean under the ice, possibly holding twice Earth's ocean water."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--11",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "enceladus",
+        "ocean-worlds",
+        "cassini"
+      ],
+      "title": "A tiny moon of Saturn sprays its ocean into space",
+      "body": "Enceladus is only about 500 kilometres wide, about the distance from London to Edinburgh. Yet in 2005 the Cassini spacecraft found jets of water vapour and ice erupting from cracks near its south pole.\n\nCassini later flew straight through these plumes and tasted them. It found salty water, organic molecules, and tiny silica grains that suggest hot water reacting with rock on the ocean floor. Later studies of its ice grains revealed phosphates, a key ingredient for life as we know it.\n\nSo a moon this small offers water, energy and chemistry, the three basic needs of life. Whether anything lives there is entirely unknown, which is why scientists dream of returning.",
+      "apply_it": "Ask yourself: if a sample from Enceladus showed life, would you expect it to resemble Earth life or something completely new?",
+      "quiz": {
+        "question": "What did Cassini do at Enceladus?",
+        "options": [
+          "Landed on its surface",
+          "Flew through plumes of water erupting from it",
+          "Drilled into its ocean",
+          "Found fossils"
+        ],
+        "answer": 1,
+        "explanation": "Cassini sampled the plumes directly, detecting salts, organic molecules and signs of hydrothermal activity."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--12",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "titan",
+        "ocean-worlds",
+        "dragonfly"
+      ],
+      "title": "Titan has rain, rivers and lakes, but not of water",
+      "body": "Saturn's largest moon is bigger than the planet Mercury and the only moon with a thick atmosphere. Standing on its surface, the air would press on you about one and a half times harder than on Earth.\n\nIt is also the only other world known to have stable liquid on its surface. Its seas and rivers are liquid methane and ethane, fed by methane rain at about minus 180 degrees Celsius. ESA's Huygens probe landed there in 2005 and found pebbles rounded by flow. Evidence also points to a water ocean deep below its crust.\n\nNASA plans to send Dragonfly, a nuclear-powered drone, to fly between sites studying its rich organic chemistry, a natural laboratory for steps that may come before life.",
+      "apply_it": "Imagine a rainy day on Titan: slow, heavy drops of methane falling through orange haze. What would you need to stay warm?",
+      "quiz": {
+        "question": "What fills Titan's lakes and seas?",
+        "options": [
+          "Liquid water",
+          "Liquid methane and ethane",
+          "Molten sulphur",
+          "Liquid nitrogen only"
+        ],
+        "answer": 1,
+        "explanation": "Titan's lakes and seas are mostly liquid methane and ethane, with a water ocean thought to lie deep beneath the crust."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--13",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "mars",
+        "water",
+        "perseverance"
+      ],
+      "title": "Mars once had rivers and lakes",
+      "body": "Today Mars is cold and dry, its air too thin for liquid water to last on the surface. But its landscape remembers another time.\n\nOrbiters have mapped dried river valleys, deltas and shorelines. Rovers have found rounded pebbles shaped by flowing streams and minerals that only form in water. Billions of years ago, Mars had a thicker atmosphere and lakes that lasted long enough to build layered sediments.\n\nNASA's Perseverance rover landed in 2021 in Jezero Crater, chosen because it held a lake with a river delta about 3.5 billion years ago. On Earth, deltas are excellent at trapping and preserving traces of life. If Mars ever had microbes, places like this are where their marks may survive.",
+      "apply_it": "Mars is often visible as a reddish point. Next time you spot it, picture a lake there, older than almost any rock on Earth's surface.",
+      "quiz": {
+        "question": "Why did Perseverance go to Jezero Crater?",
+        "options": [
+          "It has active volcanoes",
+          "It once held a lake with a river delta",
+          "It is the warmest place on Mars",
+          "It has liquid water today"
+        ],
+        "answer": 1,
+        "explanation": "Jezero held an ancient lake and delta, environments that on Earth preserve signs of life well."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--14",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "mars",
+        "biosignatures",
+        "perseverance"
+      ],
+      "title": "A Mars rock with 'leopard spots' that nobody can yet explain",
+      "body": "In 2024, Perseverance drilled a reddish rock nicknamed Cheyava Falls in an ancient river valley. It was dotted with small light patches ringed in dark material, which scientists called leopard spots.\n\nIn 2025 NASA described the sample as containing a potential biosignature. On Earth, similar mineral patterns can form when microbes feed on chemical reactions in mud. That makes it one of the most intriguing finds yet.\n\nPotential is the key word. Ordinary chemistry, without any life, can also produce such patterns, and that has not been ruled out. The rock sits sealed in a sample tube on Mars. Settling the question likely requires laboratories on Earth, and plans to bring the samples home are uncertain.",
+      "apply_it": "Think about what evidence would convince you that a rock held signs of ancient life. Would a photo be enough?",
+      "quiz": {
+        "question": "What is the status of the Cheyava Falls finding?",
+        "options": [
+          "Confirmed proof of life on Mars",
+          "A potential biosignature that may also have a non-living explanation",
+          "Shown to be contamination from Earth",
+          "A fossil animal"
+        ],
+        "answer": 1,
+        "explanation": "NASA called it a potential biosignature. Non-biological explanations have not been ruled out, so it is unresolved."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--15",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "extremophiles",
+        "astrobiology",
+        "earth"
+      ],
+      "title": "Life on Earth survives where we once thought nothing could",
+      "body": "For a long time, scientists assumed life needed sunlight, mild temperatures and fresh water. Earth itself proved them wrong.\n\nMicrobes thrive around deep-sea hydrothermal vents in total darkness, feeding on chemicals instead of light. One microbe can still reproduce at about 121 degrees Celsius. Others live in acid, in brine saltier than the Dead Sea, in Antarctic ice and in rock kilometres underground.\n\nTardigrades, tiny animals under a millimetre long, can survive drying out, freezing and even exposure to space for days in a dormant state.\n\nThese extremophiles widen the map of possible homes. Icy moons and the Martian underground no longer look hopeless, though we have yet to find anything living there.",
+      "apply_it": "Look up a photo of a tardigrade. Consider this: a creature that could survive time in open space lives in garden moss.",
+      "quiz": {
+        "question": "Why do extremophiles matter in the search for life?",
+        "options": [
+          "They prove life exists on Mars",
+          "They show life can survive conditions once thought impossible",
+          "They were brought from space",
+          "They only live in laboratories"
+        ],
+        "answer": 1,
+        "explanation": "Life in boiling vents, ice and deep rock expands the range of places that could be habitable elsewhere."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--16",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "early-life",
+        "earth-history",
+        "astrobiology"
+      ],
+      "title": "For most of Earth's history, life was only microbes",
+      "body": "Earth formed about 4.5 billion years ago. Evidence such as fossil microbial mats called stromatolites shows life was present at least 3.5 billion years ago, quite soon in geological terms.\n\nThen life stayed small for a very long time. Oxygen began building up in the air about 2.4 billion years ago, produced by microbes. Complex, many-celled animals appear in the fossil record only in the last 600 million years or so.\n\nCompress Earth's history into one calendar year and animals arrive in mid-November. Modern humans appear only about half an hour before midnight on 31 December.\n\nThis matters for the search. If alien life follows anything like Earth's path, we are far more likely to find microbes than anything that can wave back.",
+      "apply_it": "Draw a line 4.5 metres long for Earth's history. Mark the last 0.6 metre for animals and the last 0.3 millimetre for humans.",
+      "quiz": {
+        "question": "For most of Earth's history, what kind of life existed?",
+        "options": [
+          "Dinosaurs",
+          "Only microbes",
+          "Forests and insects",
+          "Mammals"
+        ],
+        "answer": 1,
+        "explanation": "Life appeared early, but for roughly three billion years it was microbial. Complex animals are recent."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--17",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "biosignatures",
+        "earth",
+        "galileo"
+      ],
+      "title": "A spacecraft once looked back and detected life on Earth",
+      "body": "In 1990, NASA's Galileo spacecraft swung past Earth on its way to Jupiter. Scientists, including Carl Sagan, treated our planet as if it were an alien world and asked: could Galileo's instruments tell it was inhabited?\n\nThey could. Galileo saw lots of oxygen together with methane, two gases that destroy each other and should not coexist without something constantly making them. It saw a strong signal from plants absorbing red light. It picked up narrow, structured radio signals that no natural source makes.\n\nThese clues are called biosignatures. Today they guide how astronomers plan to search exoplanet atmospheres: look for chemistry that is out of balance, the way living things keep a world out of balance.",
+      "apply_it": "Breathe out. Your breath is part of the chemical imbalance that would reveal Earth's life to an alien telescope.",
+      "quiz": {
+        "question": "What combination of gases helped Galileo detect life on Earth?",
+        "options": [
+          "Helium and neon",
+          "Oxygen and methane together",
+          "Pure nitrogen",
+          "Hydrogen only"
+        ],
+        "answer": 1,
+        "explanation": "Oxygen and methane react with each other, so finding both in abundance suggests something keeps producing them, such as life."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--18",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "webb",
+        "atmospheres",
+        "spectroscopy"
+      ],
+      "title": "Webb reads the air of distant planets from starlight",
+      "body": "When a planet passes in front of its star, a thin ring of starlight shines through its atmosphere. Different molecules absorb particular colours, leaving dark lines in the spectrum like a barcode.\n\nThe James Webb Space Telescope, a partnership of NASA, ESA and the Canadian Space Agency, is skilled at reading these barcodes in infrared light. In 2022 it made the clearest detection yet of carbon dioxide in an exoplanet's atmosphere, on a hot gas giant called WASP-39 b, hundreds of light-years away.\n\nWebb has since measured water vapour, sulphur dioxide and other molecules on distant worlds. Small rocky planets are much harder, but the technique is the same one that could someday reveal a living atmosphere.",
+      "apply_it": "Look at a soap bubble or an oil film in sunlight. The colours come from how light interacts with a thin layer, a cousin of what Webb measures.",
+      "quiz": {
+        "question": "How does Webb study an exoplanet's atmosphere during a transit?",
+        "options": [
+          "By landing a probe",
+          "By reading which colours of starlight are absorbed as it passes through the atmosphere",
+          "By listening to radio signals",
+          "By photographing clouds directly"
+        ],
+        "answer": 1,
+        "explanation": "Molecules absorb specific colours. Webb reads those missing colours in starlight that has filtered through the planet's air."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--19",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "k2-18b",
+        "biosignatures",
+        "webb"
+      ],
+      "title": "K2-18 b: a claimed hint of life that remains in dispute",
+      "body": "K2-18 b orbits a red dwarf about 124 light-years away. It is more than eight times Earth's mass, larger than Earth but smaller than Neptune, and sits in its star's habitable zone.\n\nWebb found methane and carbon dioxide in its atmosphere. One team also reported a possible signal from dimethyl sulphide, a gas that on Earth is mainly made by marine life, and suggested the planet might have a global ocean under hydrogen-rich air.\n\nOther scientists reanalysing the same data found the signal weak or absent, and some argue the planet may not have a liquid ocean at all. This is not a detection of life. It is an open question, and more Webb observations are needed to settle it.",
+      "apply_it": "When you next see a headline about alien life, ask: has an independent team confirmed it with fresh data?",
+      "quiz": {
+        "question": "What is the status of the dimethyl sulphide claim on K2-18 b?",
+        "options": [
+          "Confirmed by all teams",
+          "Disputed, with other analyses finding weak or no evidence",
+          "Proved to be life",
+          "Withdrawn because the planet does not exist"
+        ],
+        "answer": 1,
+        "explanation": "The claimed signal is contested. Independent analyses found it weak or absent, so it remains unresolved."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--20",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "drake-equation",
+        "seti",
+        "probability"
+      ],
+      "title": "The Drake equation is a way to organise our ignorance",
+      "body": "In 1961, astronomer Frank Drake wrote an equation for a small meeting about searching for alien radio signals. It multiplies a chain of factors: how often stars form, how many have planets, how many planets suit life, how often life starts, how often it becomes intelligent, how often it builds detectable technology, and how long such civilisations last.\n\nWe now know the early terms fairly well. Stars are plentiful, and most have planets.\n\nThe later terms are complete unknowns. Plug in hopeful guesses and the galaxy teems with civilisations. Plug in cautious ones and we may be alone. The equation does not give an answer. Its value is showing exactly which questions we must answer first.",
+      "apply_it": "Pick your own guess for each factor. Which one do you feel least sure about? Scientists share that uncertainty.",
+      "quiz": {
+        "question": "What is the main value of the Drake equation?",
+        "options": [
+          "It proves aliens exist",
+          "It breaks a huge question into smaller unknowns we can study",
+          "It calculates the exact number of alien civilisations",
+          "It measures radio signals"
+        ],
+        "answer": 1,
+        "explanation": "It structures the question. Most of its later factors are still unknown, so it cannot produce a reliable number."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--21",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "fermi-paradox",
+        "seti",
+        "life-beyond-earth"
+      ],
+      "title": "If the galaxy is so old and big, where is everybody?",
+      "body": "The Milky Way is over 13 billion years old and holds a few hundred billion stars, many far older than the Sun. Even travelling slowly, a determined civilisation might cross the galaxy in a few million years, a blink in cosmic time.\n\nSo why do we see no visitors, no probes, no signals? Physicist Enrico Fermi is said to have raised this question over lunch in 1950. It became known as the Fermi paradox.\n\nNobody knows the answer. Perhaps life is rare, perhaps intelligence is, perhaps civilisations do not last, or perhaps we have barely looked. Each answer says something profound about our own future, which is why the question refuses to go away.",
+      "apply_it": "Which answer to the Fermi paradox do you find most hopeful? Which most unsettling? Notice whether they differ.",
+      "quiz": {
+        "question": "What is the Fermi paradox?",
+        "options": [
+          "Proof that aliens visited Earth",
+          "The puzzle of why we see no evidence of other civilisations despite a vast, old galaxy",
+          "A law of physics about light",
+          "A theory of how planets form"
+        ],
+        "answer": 1,
+        "explanation": "It contrasts the galaxy's size and age with the absence of any evidence for other civilisations. Its resolution is unknown."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--22",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "great-filter",
+        "fermi-paradox",
+        "future"
+      ],
+      "title": "The Great Filter: somewhere, a step may be almost impossible",
+      "body": "The Great Filter is a hypothesis, proposed in the 1990s, offered as one answer to the Fermi paradox. It suggests that somewhere on the road from dead chemistry to a star-spanning civilisation lies a step that almost nothing gets past.\n\nThe filter could be behind us: the origin of life, complex cells or intelligence might be extraordinarily rare. Or it could lie ahead: perhaps civilisations tend to destroy themselves or collapse before they spread.\n\nThere is no direct evidence for either. But the idea gives a strange meaning to discoveries. Finding simple life on Mars or Europa would hint that life's start is easy, nudging the filter's likely position forward in time, towards us.",
+      "apply_it": "Consider: would you be relieved or worried if microbes were found on Mars, given the Great Filter idea?",
+      "quiz": {
+        "question": "What does the Great Filter hypothesis propose?",
+        "options": [
+          "A real barrier around the Solar System",
+          "That some step on the path to advanced civilisation is extremely unlikely",
+          "That aliens filter radio signals",
+          "That only large planets can host life"
+        ],
+        "answer": 1,
+        "explanation": "It is an unproven idea that one or more steps towards spacefaring life are very rare. It may lie in our past or future."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--23",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "rare-earth",
+        "earth",
+        "fermi-paradox"
+      ],
+      "title": "The Rare Earth idea: simple life common, complex life rare",
+      "body": "The Rare Earth hypothesis, set out in a 2000 book by a geologist and an astronomer, argues that microbes may be widespread but complex animals could be extremely rare.\n\nIts supporters point to a long list of possible lucky breaks for Earth: plate tectonics recycling carbon and stabilising climate, a large Moon steadying our tilt, a magnetic field shielding the surface, and a calm spot in the galaxy away from frequent stellar explosions.\n\nCritics reply that we cannot yet tell which factors truly matter, because we have only one example of a living planet. Life might find other routes. The hypothesis remains untested, and finding more living worlds, or none, is the only real way to judge it.",
+      "apply_it": "List three things about Earth you take for granted that might be rare. Which do you think life could do without?",
+      "quiz": {
+        "question": "What does the Rare Earth hypothesis suggest?",
+        "options": [
+          "No life exists anywhere else",
+          "Simple life may be common, but complex life may be very rare",
+          "Earth is the only planet with water",
+          "All planets have animals"
+        ],
+        "answer": 1,
+        "explanation": "It is a hypothesis that microbial life may be widespread while complex life needs an unusual set of conditions."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--24",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "earth-like-planets",
+        "kepler",
+        "statistics"
+      ],
+      "title": "How many planets are like Earth? Estimates still vary widely",
+      "body": "Kepler gave the first real data for one of the most important numbers in this search: how many Sun-like stars have rocky, Earth-sized planets in their habitable zones.\n\nThe answer is still uncertain. Earth-sized planets with year-long orbits are the hardest for Kepler to catch, so estimates rely on careful corrections. One NASA-led study in 2020 suggested the Milky Way could hold hundreds of millions of potentially habitable rocky planets around Sun-like stars, but other estimates range much lower or higher.\n\nEven a perfect count would tell us only size and orbit. Whether those planets have air, water, plate tectonics or life is unknown. Future telescopes such as NASA's planned Habitable Worlds Observatory are designed to begin answering that.",
+      "apply_it": "Imagine a number in the hundreds of millions. Now imagine that most may still be lifeless. Which feels more surprising to you?",
+      "quiz": {
+        "question": "Why are estimates of Earth-like planets still uncertain?",
+        "options": [
+          "Kepler never found any planets",
+          "Earth-sized planets with year-long orbits are very hard to detect",
+          "They have all been counted already",
+          "Sun-like stars are rare"
+        ],
+        "answer": 1,
+        "explanation": "Small planets with long orbits produce few, tiny transits, so their numbers depend on statistical corrections."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--25",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "zoo-hypothesis",
+        "fermi-paradox",
+        "seti"
+      ],
+      "title": "Maybe we are being watched, or maybe we are simply early",
+      "body": "Several other proposed answers to the Fermi paradox remain on the table. All are speculation.\n\nThe zoo hypothesis, suggested in 1973, proposes that advanced civilisations know about us but deliberately avoid contact, as we might leave a nature reserve undisturbed. It is hard to test, because a careful observer would leave no trace.\n\nOthers are plainer. Distances may be too vast and travel too costly. Civilisations may use technologies we cannot recognise. Or we may be among the first, since the chemical elements needed for rocky planets took billions of years to build up.\n\nNone of these has evidence for or against it yet. They are best seen as ideas to keep our searches broad.",
+      "apply_it": "Write down one way an alien civilisation might exist that we could never notice. How might scientists test for it?",
+      "quiz": {
+        "question": "What does the zoo hypothesis propose?",
+        "options": [
+          "Aliens built Earth's zoos",
+          "Advanced civilisations know of us but avoid contact",
+          "Life only exists in zoos on Earth",
+          "Animals came from space"
+        ],
+        "answer": 1,
+        "explanation": "It is a speculative idea that other civilisations deliberately leave us alone. There is no evidence for or against it."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--26",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "seti",
+        "radio",
+        "search"
+      ],
+      "title": "We have barely begun to listen",
+      "body": "The search for extraterrestrial intelligence, or SETI, began in earnest in 1960, when Frank Drake pointed a radio telescope at two nearby Sun-like stars. He heard nothing unusual.\n\nSince then, projects have scanned many thousands of stars across wide ranges of radio and optical signals. Breakthrough Listen, started in 2016, is one of the largest efforts yet.\n\nIt sounds a lot, but the space of possible signals is immense: every direction, every frequency, every moment. One 2018 study estimated that our searches so far compare to examining a hot tub's worth of water out of all Earth's oceans. Finding no fish in a hot tub would tell you little about the sea. The silence so far is not evidence that no one is there.",
+      "apply_it": "Fill a mug with water from a tap and imagine it represents every SETI search so far. Then think of the ocean.",
+      "quiz": {
+        "question": "What does the hot tub comparison illustrate?",
+        "options": [
+          "SETI has found signals in water",
+          "SETI has searched only a tiny fraction of possible signals",
+          "Aliens live in oceans",
+          "Radio telescopes are wet"
+        ],
+        "answer": 1,
+        "explanation": "Searches have covered a minute fraction of possible directions, frequencies and times, so silence so far is weak evidence."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--27",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "wow-signal",
+        "seti",
+        "mystery"
+      ],
+      "title": "The Wow! signal: 72 seconds that never came back",
+      "body": "On 15 August 1977, the Big Ear radio telescope in Ohio recorded a strong, narrow burst of radio noise from the direction of the constellation Sagittarius. It lasted about 72 seconds, the time a source took to drift through the telescope's view as Earth turned.\n\nIt sat close to the frequency at which hydrogen, the universe's most common element, naturally emits, which SETI researchers considered a likely channel for a deliberate signal. Astronomer Jerry Ehman circled it on the printout and wrote 'Wow!' beside it.\n\nIt has never been detected again, despite many searches. Natural causes have been proposed, but none is confirmed. A single, unrepeated event cannot be tested, so it remains unexplained.",
+      "apply_it": "Sagittarius lies towards the centre of the Milky Way. On a summer evening, look low to the south from northern latitudes and think of that one brief signal.",
+      "quiz": {
+        "question": "Why can the Wow! signal not be confirmed as alien?",
+        "options": [
+          "It was a hoax",
+          "It has never been detected again",
+          "It came from the Moon",
+          "It was too faint to see"
+        ],
+        "answer": 1,
+        "explanation": "Science needs repeatable observations. The signal was never seen again, so its cause remains unknown."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--28",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "oumuamua",
+        "interstellar-object",
+        "comets"
+      ],
+      "title": "'Oumuamua: a visitor from another star that left more questions than answers",
+      "body": "In October 2017, a telescope in Hawaii spotted an object racing through the Solar System on a path that proved it came from interstellar space. It was named 'Oumuamua, roughly 'scout' in Hawaiian, and was the first such visitor ever seen.\n\nIt was strange. Its brightness varied in a way suggesting an elongated or flattened shape, perhaps a few hundred metres long. It sped up slightly as it left the Sun, as comets do, yet showed no visible cloud of gas or dust.\n\nA few researchers suggested it could be artificial. Most scientists favour natural explanations, such as a fragment of icy material releasing gas too faint to see. With the object long gone, its exact nature remains debated. Later interstellar visitors, found in 2019 and 2025, behaved like comets.",
+      "apply_it": "Think about how you would study something that passes once and never returns. What would you measure first?",
+      "quiz": {
+        "question": "What do most scientists think 'Oumuamua was?",
+        "options": [
+          "An alien spacecraft",
+          "A natural object from another star system",
+          "A piece of the Moon",
+          "A satellite from Earth"
+        ],
+        "answer": 1,
+        "explanation": "Its behaviour was unusual, but natural explanations such as gas release from ices are favoured. It remains debated."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--29",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "voyager",
+        "golden-record",
+        "message"
+      ],
+      "title": "Two spacecraft carry a message for anyone who finds them",
+      "body": "In 1977 NASA launched Voyager 1 and Voyager 2. Each carries a gold-plated copper record, a time capsule from Earth.\n\nIt holds 115 encoded images, greetings in 55 languages, sounds such as thunder, birdsong and a heartbeat, and about 90 minutes of music from around the world. The cover is engraved with instructions for playing it and a map showing the Sun's position using pulsars.\n\nBoth spacecraft have now left the Sun's protective bubble and entered interstellar space. Voyager 1 is more than 25 billion kilometres away. In about 40,000 years it will pass within roughly 1.6 light-years of another star. The chance anyone ever plays the record is tiny. It says as much about who we hoped to be.",
+      "apply_it": "If you could add one sound to the Golden Record today, what would it be and why?",
+      "quiz": {
+        "question": "What is on the Voyager Golden Record?",
+        "options": [
+          "Only scientific data",
+          "Images, greetings, natural sounds and music from Earth",
+          "Radio messages from aliens",
+          "A map of Mars"
+        ],
+        "answer": 1,
+        "explanation": "The record carries 115 images, greetings in 55 languages, Earth sounds and about 90 minutes of music."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--30",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "second-genesis",
+        "microbes",
+        "astrobiology"
+      ],
+      "title": "Finding even a single alien microbe would change everything",
+      "body": "Imagine scientists confirm living cells under the ice of Europa or fossil microbes on Mars. What would it mean?\n\nFirst, we would need to know where they came from. Rocks blasted off planets do travel between worlds, so Mars life could share an origin with ours. If its chemistry turned out completely different, though, it would show that life began twice in one Solar System.\n\nThat would suggest life starts easily, and the galaxy may be full of it. It would also give biology a second example to compare with, revealing which features of life are universal and which are Earth's local habits. Nobody knows whether such a discovery is decades away or will never come.",
+      "apply_it": "Ask a friend: if microbes were found on another world tomorrow, would it change how they see life on Earth?",
+      "quiz": {
+        "question": "Why would finding life with a different chemistry be especially significant?",
+        "options": [
+          "It would prove humans came from Mars",
+          "It would show life began independently more than once",
+          "It would mean Earth life is fake",
+          "It would end all space exploration"
+        ],
+        "answer": 1,
+        "explanation": "A separate origin would suggest life arises readily, implying it could be common across the universe."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--31",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "earth-future",
+        "sun",
+        "habitable-window"
+      ],
+      "title": "Earth's time as a living world is limited",
+      "body": "The Sun is slowly brightening, as all stars like it do while they age. It is roughly 10 percent brighter every billion years or so.\n\nThat gradual change has consequences. Models suggest that in around a billion years, the extra heat will start to drive water from Earth's oceans into the air, ending conditions suitable for complex life long before the Sun swells into a red giant about 5 billion years from now.\n\nLife has existed here for about 3.5 billion years, so Earth may already be in the later part of its habitable window. That gives a sobering thought: if complex life took most of Earth's lifetime to appear, perhaps it often runs out of time elsewhere.",
+      "apply_it": "Spend one minute watching the sky or a tree outside. You are part of the short window when this planet can be seen and wondered at.",
+      "quiz": {
+        "question": "Why will Earth eventually become unable to support complex life?",
+        "options": [
+          "The Moon will crash into it",
+          "The Sun is slowly getting brighter",
+          "Earth will stop spinning",
+          "Jupiter will pull it away"
+        ],
+        "answer": 1,
+        "explanation": "The Sun brightens over time. Models suggest that in around a billion years Earth will become too hot for oceans to survive."
+      }
+    },
+    {
+      "id": "universe-are-we-alone--32",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "pale-blue-dot",
+        "voyager",
+        "perspective"
+      ],
+      "title": "From six billion kilometres away, home is less than a single pixel",
+      "body": "On 14 February 1990, at Carl Sagan's suggestion, Voyager 1 turned its camera back towards the Sun and photographed the planets from about 6 billion kilometres away. In one frame, Earth appears as a tiny pale dot inside a band of scattered sunlight, smaller than a single pixel.\n\nEvery human who has ever lived, every story and every living thing we know of, sits on that speck.\n\nWhether we are alone is still unknown. What we do know is that, so far, this dot is the only place where the universe is known to have woken up and asked about itself. That makes it worth protecting, whatever the answer turns out to be.",
+      "apply_it": "Look up the Pale Blue Dot image tonight. Find the dot, then look out of a window at the world it contains.",
+      "quiz": {
+        "question": "How far was Voyager 1 from Earth when it took the Pale Blue Dot image?",
+        "options": [
+          "About 6 billion kilometres",
+          "About 400,000 kilometres",
+          "About 150 million kilometres",
+          "About 4 light-years"
+        ],
+        "answer": 0,
+        "explanation": "Voyager 1 was about 6 billion kilometres away in 1990 when it captured Earth as a dot smaller than a pixel."
+      }
+    }
+  ]
+}

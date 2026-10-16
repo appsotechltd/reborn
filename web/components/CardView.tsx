@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
+import { evidenceLabel, paragraphs, SUPPORT_TOPICS, topicName } from "@/lib/content";
 import { authorHref } from "@/lib/social";
 import type { Card } from "@/lib/types";
 import { CardPicture } from "./CardPicture";
@@ -69,6 +69,7 @@ export function CardView({ card, headingLevel = "h1", actions, children, titleHr
         <Link href={`/topics/${card.topic}`} className="hover:text-accent-text hover:underline">
           {topicName(card.topic)}
         </Link>
+        {evidenceLabel(card.tags) ? <span className="text-muted"> · {evidenceLabel(card.tags)}</span> : null}
       </p>
       <Heading
         id={`card-${card.id}-title`}
