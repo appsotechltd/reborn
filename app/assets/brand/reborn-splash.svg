@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="162 150 700 900"><style>@font-face{font-family:Fraunces;src:url(../fonts/Fraunces-SemiBold.ttf)}</style>
+  <!-- Fraunces SemiBold R with a candle flame in its bowl (logo sample 3, chosen 2026-10-16). -->
   <defs>
-    <radialGradient id="glow" cx="512" cy="430" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#E9A23B" stop-opacity="0.38"/>
+    <radialGradient id="glow" cx="522" cy="428" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9A23B" stop-opacity="0.42"/>
       <stop offset="1" stop-color="#E9A23B" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
@@ -9,9 +10,10 @@
       <stop offset="1" stop-color="#E9A23B"/>
     </linearGradient>
   </defs>
-  <circle cx="512" cy="430" r="300" fill="url(#glow)"/>
-  <path d="M512 742 C 440 690 350 676 262 700 L 262 488 C 350 464 440 478 512 530 Z" fill="#F2E8D8"/>
-  <path d="M512 742 C 584 690 674 676 762 700 L 762 488 C 674 464 584 478 512 530 Z" fill="#D9CDBA"/>
-  <path d="M520 206 C 540 292 614 348 614 440 C 614 498 568 536 512 536 C 456 536 410 498 410 440 C 410 370 462 334 492 286 C 506 264 516 238 520 206 Z" fill="url(#flame)"/>
-  <path d="M516 356 C 526 404 562 432 562 474 C 562 502 540 520 512 520 C 484 520 462 502 462 474 C 462 434 500 410 516 356 Z" fill="#FBE3B0"/>
+  <circle cx="522" cy="428" r="190" fill="url(#glow)"/>
+  <path transform="translate(512 512) scale(0.38 -0.38) translate(-810 -700)" fill="#F2E8D8" d="M1359 919Q1359 823 1316.0 745.0Q1273 667 1194.0 614.5Q1115 562 1006 542Q966 535 931.5 527.0Q897 519 862.0 513.0Q827 507 784 507Q722 507 665.5 515.5Q609 524 562.0 540.5Q515 557 480 580L486 670Q514 650 552.5 635.5Q591 621 636.5 614.0Q682 607 732 607Q877 607 958.5 685.0Q1040 763 1040 915Q1040 1029 991.5 1117.5Q943 1206 855.5 1256.5Q768 1307 650 1307H562V167Q562 145 573.0 131.0Q584 117 606 110L675 97Q699 88 708.0 76.5Q717 65 717 46Q717 0 657 0H164Q133 0 118.5 12.5Q104 25 104 46Q104 84 146 97L203 110Q227 117 240.0 131.0Q253 145 253 167V1233Q253 1255 240.0 1269.0Q227 1283 203 1290L146 1303Q104 1316 104 1354Q104 1376 118.5 1388.0Q133 1400 164 1400H661Q886 1400 1041.5 1338.5Q1197 1277 1278.0 1168.5Q1359 1060 1359 919ZM782 548 1085 583 1344 168Q1363 139 1382.5 123.0Q1402 107 1435 97Q1466 88 1477.0 76.5Q1488 65 1488 46Q1488 25 1472.5 12.5Q1457 0 1426 0H1000Q941 0 941 46Q941 59 948.0 68.0Q955 77 970 84L999 92Q1021 101 1024.0 115.0Q1027 129 1012 154Z"/>
+  <g transform="translate(522 428) scale(0.55) translate(-512 -371)">
+    <path d="M520 206 C 540 292 614 348 614 440 C 614 498 568 536 512 536 C 456 536 410 498 410 440 C 410 370 462 334 492 286 C 506 264 516 238 520 206 Z" fill="url(#flame)"/>
+    <path d="M516 356 C 526 404 562 432 562 474 C 562 502 540 520 512 520 C 484 520 462 502 462 474 C 462 434 500 410 516 356 Z" fill="#FBE3B0"/>
+  </g>
 <text x="512" y="960" font-family="Fraunces" font-size="168" font-weight="600" text-anchor="middle" fill="#F2E8D8">Reborn</text></svg>
