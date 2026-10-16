@@ -71,8 +71,8 @@ class PostView extends ConsumerWidget {
             padding: const EdgeInsets.fromLTRB(12, 8, 16, 0),
             child: Row(
               children: [
-                _ReadTheIdea(card: card, onPressed: open),
-                const Spacer(),
+                Expanded(child: _ReadTheIdea(card: card, onPressed: open)),
+                const SizedBox(width: 10),
                 _ListenPostButton(card: card),
               ],
             ),
@@ -240,18 +240,18 @@ class PostPicture extends StatelessWidget {
   }
 }
 
-/// The small "Read the idea" button under an image post.
+/// The "Read the idea" button under an image post, as on text posts.
 class _ReadTheIdea extends StatelessWidget {
   const _ReadTheIdea({required this.card, required this.onPressed});
   final IdeaCard card;
   final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) => TextButton.icon(
+  Widget build(BuildContext context) => FilledButton(
     key: const ValueKey('read-more'),
     onPressed: onPressed,
-    icon: const Icon(Icons.menu_book_outlined, size: 18),
-    label: Text('Read the idea', semanticsLabel: 'Read more: ${card.title}'),
+    style: FilledButton.styleFrom(minimumSize: const Size(0, 46)),
+    child: Text('Read the idea', semanticsLabel: 'Read more: ${card.title}'),
   );
 }
 
@@ -359,8 +359,13 @@ class PostPreview extends ConsumerWidget {
             padding: const EdgeInsets.fromLTRB(12, 10, 20, 18),
             child: Row(
               children: [
-                _ReadTheIdea(card: card, onPressed: () => _open(context)),
-                const Spacer(),
+                Expanded(
+                  child: _ReadTheIdea(
+                    card: card,
+                    onPressed: () => _open(context),
+                  ),
+                ),
+                const SizedBox(width: 10),
                 _ListenPostButton(card: card),
               ],
             ),
