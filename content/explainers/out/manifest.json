@@ -12,6 +12,28 @@
       "kind": "animated",
       "script": "scripts/aesops-fables--07.json"
     },
+    "art-of-war-sun-tzu--02": {
+      "video": "art-of-war-sun-tzu--02.mp4",
+      "poster": "art-of-war-sun-tzu--02.jpg",
+      "duration_s": 50.9,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_michael@0.95",
+      "kind": "animated",
+      "script": "scripts/art-of-war-sun-tzu--02.json"
+    },
+    "atomic-habits-clear--01": {
+      "video": "atomic-habits-clear--01.mp4",
+      "poster": "atomic-habits-clear--01.jpg",
+      "duration_s": 50.6,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_liam@0.95",
+      "kind": "animated",
+      "script": "scripts/atomic-habits-clear--01.json"
+    },
     "autobiography-benjamin-franklin--01": {
       "video": "autobiography-benjamin-franklin--01.mp4",
       "poster": "autobiography-benjamin-franklin--01.jpg",
@@ -22,6 +44,17 @@
       "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
       "script": "scripts/autobiography-benjamin-franklin--01.json"
+    },
+    "eat-that-frog-tracy--01": {
+      "video": "eat-that-frog-tracy--01.mp4",
+      "poster": "eat-that-frog-tracy--01.jpg",
+      "duration_s": 43.2,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_eric@0.95",
+      "kind": "animated",
+      "script": "scripts/eat-that-frog-tracy--01.json"
     },
     "enchiridion-epictetus--01": {
       "video": "enchiridion-epictetus--01.mp4",
@@ -45,6 +78,39 @@
       "kind": "animated",
       "script": "scripts/festingers-principle-leon-festinger--01.json"
     },
+    "how-to-win-friends-carnegie--04": {
+      "video": "how-to-win-friends-carnegie--04.mp4",
+      "poster": "how-to-win-friends-carnegie--04.jpg",
+      "duration_s": 47.9,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_michael@0.95",
+      "kind": "animated",
+      "script": "scripts/how-to-win-friends-carnegie--04.json"
+    },
+    "mans-search-for-meaning-frankl--01": {
+      "video": "mans-search-for-meaning-frankl--01.mp4",
+      "poster": "mans-search-for-meaning-frankl--01.jpg",
+      "duration_s": 54.5,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_echo@0.95",
+      "kind": "animated",
+      "script": "scripts/mans-search-for-meaning-frankl--01.json"
+    },
+    "meditations-marcus-aurelius--02": {
+      "video": "meditations-marcus-aurelius--02.mp4",
+      "poster": "meditations-marcus-aurelius--02.jpg",
+      "duration_s": 50.1,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bm_george@0.95",
+      "kind": "animated",
+      "script": "scripts/meditations-marcus-aurelius--02.json"
+    },
     "nhs-breathing-exercises-for-stress--02": {
       "video": "nhs-breathing-exercises-for-stress--02.mp4",
       "poster": "nhs-breathing-exercises-for-stress--02.jpg",
@@ -66,6 +132,50 @@
       "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
       "script": "scripts/on-the-shortness-of-life-seneca--01.json"
+    },
+    "psychology-of-money-housel--04": {
+      "video": "psychology-of-money-housel--04.mp4",
+      "poster": "psychology-of-money-housel--04.jpg",
+      "duration_s": 43.7,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_liam@0.95",
+      "kind": "animated",
+      "script": "scripts/psychology-of-money-housel--04.json"
+    },
+    "richest-man-in-babylon-clason--01": {
+      "video": "richest-man-in-babylon-clason--01.mp4",
+      "poster": "richest-man-in-babylon-clason--01.jpg",
+      "duration_s": 51.8,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_michael@0.95",
+      "kind": "animated",
+      "script": "scripts/richest-man-in-babylon-clason--01.json"
+    },
+    "story-of-my-life-helen-keller--04": {
+      "video": "story-of-my-life-helen-keller--04.mp4",
+      "poster": "story-of-my-life-helen-keller--04.jpg",
+      "duration_s": 46.2,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/af_sarah@0.95",
+      "kind": "animated",
+      "script": "scripts/story-of-my-life-helen-keller--04.json"
+    },
+    "why-we-sleep-walker--01": {
+      "video": "why-we-sleep-walker--01.mp4",
+      "poster": "why-we-sleep-walker--01.jpg",
+      "duration_s": 55.5,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bm_george@0.95",
+      "kind": "animated",
+      "script": "scripts/why-we-sleep-walker--01.json"
     }
   }
 }

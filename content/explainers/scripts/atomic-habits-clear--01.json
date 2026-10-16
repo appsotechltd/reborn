@@ -1,0 +1,113 @@
+{
+ "card_id": "atomic-habits-clear--01",
+ "about": "Animated look (how-to card): the compounding curve and the melting ice cube.",
+ "voice": "liam",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Tiny improvements compound. But the payoff shows up late."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "1% better each day",
+     "1% worse each day"
+    ],
+    "emphasis": [
+     0
+    ],
+    "kicker": "Small changes"
+   },
+   "narration": "James Clear starts with a simple idea. Get about one percent better every day, and it adds up to something big. Small daily slips add up too, the other way."
+  },
+  {
+   "type": "compound",
+   "params": {
+    "title": "What you expect vs. what happens",
+    "days": 14,
+    "series": [
+     {
+      "label": "What you expect",
+      "color": "#9a8a7a",
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     },
+     {
+      "label": "What happens",
+      "color": "#8f3b1b",
+      "values": [
+       0.2,
+       0.25,
+       0.3,
+       0.35,
+       0.4,
+       0.5,
+       0.6,
+       0.7,
+       0.9,
+       1.2,
+       1.6,
+       2.1,
+       2.7,
+       3.4
+      ]
+     }
+    ]
+   },
+   "narration": "The catch is timing. Early on, the results are almost invisible. Many people quit right here, just before the effort starts to pay off.",
+   "min_seconds": 9
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "25 degrees. Nothing.",
+     "30 degrees. Nothing.",
+     "32 degrees. It melts."
+    ],
+    "emphasis": [
+     2
+    ],
+    "kicker": "An ice cube"
+   },
+   "narration": "Think of an ice cube in a cold room. You warm the room, degree by degree, and nothing happens. Then, at freezing point, it melts. The earlier warming was doing the work all along.",
+   "min_seconds": 8
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Feeling stuck?",
+     "The work just hasn't surfaced yet."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "So if you feel stuck, your effort may simply not have surfaced yet."
+  },
+  {
+   "type": "apply",
+   "narration": "Pick one skill, and make one tiny improvement today. Write down the date, so you can look back in three months."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

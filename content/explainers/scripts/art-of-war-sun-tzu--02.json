@@ -1,0 +1,107 @@
+{
+ "card_id": "art-of-war-sun-tzu--02",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "michael",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Ancient Chinese bamboo scrolls tied with cord on a dark lacquered table, a single candle, ink brush beside them."
+    }
+   },
+   "narration": "The best victory is the one that needs no fight."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A vast ancient army camp on a misty plain at dawn, banners and tents stretching to the horizon, painterly cinematic."
+    },
+    "beats": [
+     {
+      "word": "highest",
+      "image": {
+       "prompt": "A lone ancient general's helmet resting on a stone wall overlooking a misty valley."
+      }
+     }
+    ],
+    "zoom": "out"
+   },
+   "narration": "Sun Tzu, the ancient Chinese general, said that winning every battle is not the highest skill.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An empty battlefield after a fight, broken spears and smoke drifting over muddy ground at dusk."
+    },
+    "beats": [
+     {
+      "word": "revenge",
+      "image": {
+       "prompt": "A dark figure watching from a distant ridge at night, silhouette against a red sky."
+      }
+     }
+    ]
+   },
+   "narration": "Even a battle you win costs you time, money, and goodwill. And it leaves an enemy waiting for revenge.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two business people shaking hands across a modern glass meeting table, city skyline at sunset, faces out of focus."
+    },
+    "beats": [
+     {
+      "word": "humiliates",
+      "image": {
+       "prompt": "A crumpled contract on a polished boardroom table, cold light, no readable text."
+      }
+     }
+    ]
+   },
+   "narration": "The same is true at work. A deal that humiliates the other side is a deal they will quietly undermine.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two hands placing chess pieces back in the box together, warm light, calm friendly mood."
+    },
+    "beats": [
+     {
+      "word": "shared",
+      "image": {
+       "prompt": "Two people walking together along a bridge at golden hour, seen from behind."
+      }
+     }
+    ],
+    "lift": true
+   },
+   "narration": "So look for an outcome they can accept. A smart offer, a better option, a shared interest. Win, and keep the relationship.",
+   "min_seconds": 8
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A calm lake at sunrise with mist on the water, a single small boat, peaceful."
+    }
+   },
+   "narration": "Pick one disagreement you're in. What could you offer that gives them what they want, while you still get what you need?",
+   "min_seconds": 8
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}

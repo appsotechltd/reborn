@@ -1,0 +1,90 @@
+{
+ "card_id": "psychology-of-money-housel--04",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "liam",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An old hourglass beside a small stack of coins on a dark desk, warm side light."
+    }
+   },
+   "narration": "In investing, time does more of the work than skill."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A 1940s boy's hand counting coins on a wooden table beside a newspaper's stock pages, nostalgic light, no face."
+    },
+    "beats": [
+     {
+      "word": "stopped",
+      "image": {
+       "prompt": "A long road stretching to the horizon through farmland, decades-old feel, golden hour."
+      }
+     }
+    ]
+   },
+   "narration": "One of the world's most famous investors bought his first shares as a boy, and he simply never stopped.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A rising line drawn on graph paper curving sharply upward at the far right, pencil beside it, close up."
+    }
+   },
+   "narration": "Most of his fortune came after his sixtieth birthday. Not because he got smarter, but because he kept going.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A snowball rolling down a long snowy hill, growing larger, low winter sun."
+    },
+    "beats": [
+     {
+      "word": "dramatically",
+      "image": {
+       "prompt": "A huge snowball at the bottom of a hill, spray of snow, dramatic light."
+      }
+     }
+    ],
+    "zoom": "out"
+   },
+   "narration": "That's compounding. For years the growth looks slow. Then it speeds up dramatically."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A tortoise on a stone path at sunrise, close up, warm light."
+    }
+   },
+   "narration": "So you don't need brilliant returns. Decent, steady results held for a very long time can beat short bursts of genius.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A calm person reading by a window in soft morning light, a cup of tea, peaceful, face turned away."
+    },
+    "lift": true
+   },
+   "narration": "Start early, and avoid interruptions. Ask yourself: what could push me to stop, and how will I stay consistent?",
+   "min_seconds": 7
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}

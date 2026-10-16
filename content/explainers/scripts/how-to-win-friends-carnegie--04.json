@@ -1,0 +1,97 @@
+{
+ "card_id": "how-to-win-friends-carnegie--04",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "michael",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A crowded rooftop party at dusk, warm string lights, people chatting in soft focus."
+    }
+   },
+   "narration": "The sweetest sound to most people is their own name."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two people shaking hands at a networking event, close up on the handshake, warm light, faces out of frame."
+    },
+    "beats": [
+     {
+      "word": "registered",
+      "image": {
+       "prompt": "A woman smiling warmly in a cafe, seen slightly from the side, soft focus, natural light."
+      }
+     }
+    ]
+   },
+   "narration": "Dale Carnegie noticed how much people care about their names. Use it correctly, and they feel they registered with you.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A name badge left blank on a conference table, a pen beside it, cold light."
+    }
+   },
+   "narration": "Forget it, or get it wrong, and you quietly tell them they didn't."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A vintage 1930s office with a desk, a card file box and a fountain pen, warm lamp light, no people."
+    },
+    "beats": [
+     {
+      "word": "remember",
+      "image": {
+       "prompt": "Handwritten index cards neatly filed in a wooden box, close up, illegible writing."
+      }
+     }
+    ]
+   },
+   "narration": "Carnegie described successful people who made a real effort to remember everyone they met.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two colleagues talking over coffee in a bright modern office, relaxed and friendly, faces softly blurred."
+    },
+    "beats": [
+     {
+      "word": "conversation",
+      "image": {
+       "prompt": "A laptop on a desk showing a grid of video call tiles, blurred faces, warm home office."
+      }
+     }
+    ]
+   },
+   "narration": "It's a skill, not a gift. Repeat the name when you hear it. Use it in the conversation. Link it to something memorable.",
+   "min_seconds": 8
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A small notebook with a handwritten name and a sketch, pen resting on it, morning light, text illegible."
+    },
+    "lift": true
+   },
+   "narration": "At your next introduction, say their name back once, use it again before you part, and jot it down after.",
+   "min_seconds": 7
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}

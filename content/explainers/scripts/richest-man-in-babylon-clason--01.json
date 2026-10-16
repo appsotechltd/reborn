@@ -1,0 +1,97 @@
+{
+ "card_id": "richest-man-in-babylon-clason--01",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "michael",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "The ancient city of Babylon at golden hour, great walls and ziggurat, busy market below, cinematic wide shot."
+    },
+    "zoom": "out"
+   },
+   "narration": "Wealth starts with one simple rule. Keep part of everything you earn."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An ancient Babylonian marketplace with clay pots, cloth and baskets of dates in warm sunlight, no faces visible."
+    },
+    "beats": [
+     {
+      "word": "richest",
+      "image": {
+       "prompt": "An old man's hand wearing a gold ring resting on a carved wooden table, ancient Mesopotamian setting."
+      }
+     }
+    ]
+   },
+   "narration": "In The Richest Man in Babylon, a poor scribe asks the city's richest man for his secret."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Ten ancient gold coins on a dark wooden table, one coin slid apart from the rest, dramatic side light."
+    }
+   },
+   "narration": "The answer: of every ten coins you earn, keep one for yourself, before you pay for anything else.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An empty leather coin purse lying open on a table, a few receipts beside it, dim light."
+    },
+    "beats": [
+     {
+      "word": "treats",
+      "image": {
+       "prompt": "A busy modern shopping street at night with glowing shop windows, motion blur of shoppers."
+      }
+     }
+    ]
+   },
+   "narration": "The order matters. If saving waits until the bills and treats are paid, there's rarely anything left."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A small clay jar slowly filling with gold coins, macro shot, warm light."
+    },
+    "beats": [
+     {
+      "word": "years",
+      "image": {
+       "prompt": "A young oak tree growing tall in a sunlit field, golden hour."
+      }
+     }
+    ],
+    "lift": true
+   },
+   "narration": "Taken off the top, a tenth is small enough that you barely miss it. Over the years, it grows into real security.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A phone on a kitchen table at morning with a banking app open, a cup of tea beside it, screen text illegible."
+    }
+   },
+   "narration": "Today, that's simple. On payday, set an automatic transfer of ten percent, or whatever you can start with, into savings.",
+   "min_seconds": 7
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}

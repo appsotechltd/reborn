@@ -1,0 +1,78 @@
+{
+ "card_id": "why-we-sleep-walker--01",
+ "about": "Animated look (health card).",
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Go to bed and wake up at the same time, every day. Weekends too."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Your body runs",
+     "on a daily clock"
+    ],
+    "emphasis": [
+     1
+    ],
+    "kicker": "Why We Sleep"
+   },
+   "narration": "Matthew Walker's most repeated advice is consistency. Your body runs on an internal daily clock."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Regular times tell it",
+     "when to make you sleepy",
+     "and when to wake you up"
+    ],
+    "emphasis": [
+     1,
+     2
+    ]
+   },
+   "narration": "A regular bedtime and wake time help that clock know when to make you sleepy, and when to make you alert."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Saturday: up at 11",
+     "Monday: up at 6",
+     "Like mild jet lag"
+    ],
+    "emphasis": [
+     2
+    ]
+   },
+   "narration": "Sleep in late at the weekend, then get up early on Monday, and you shift that clock back and forth. It's a bit like mild jet lag.",
+   "min_seconds": 7
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Simple.",
+     "Free.",
+     "Widely recommended."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "A steady schedule is one of the simplest habits for better sleep. If sleep problems carry on despite good habits, see a doctor."
+  },
+  {
+   "type": "apply",
+   "narration": "Set a fixed wake up time for the next seven days, weekend included, and keep it even after a poor night."
+  },
+  {
+   "type": "end",
+   "narration": "This is general information, not medical advice.",
+   "min_seconds": 5
+  }
+ ]
+}

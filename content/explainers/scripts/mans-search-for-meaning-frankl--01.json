@@ -1,0 +1,115 @@
+{
+ "card_id": "mans-search-for-meaning-frankl--01",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "echo",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A single beam of light falling through a high barred window onto a bare wooden floor, dust in the air, cold muted tones."
+    }
+   },
+   "narration": "When almost everything is taken from you, one thing is still yours: how you respond."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Rows of empty wooden bunks in a dim, bleak barracks, grey winter light, no people, solemn historical mood."
+    },
+    "beats": [
+     {
+      "word": "psychiatrist",
+      "image": {
+       "prompt": "An old leather doctor's bag and round spectacles on a wooden desk, 1930s Vienna, soft lamp light."
+      }
+     }
+    ],
+    "zoom": "out"
+   },
+   "narration": "Viktor Frankl was a psychiatrist who survived several Nazi concentration camps. He lost most of his family there.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Two weathered hands breaking a small piece of dark bread in half to share it, close up, dim cold light."
+    },
+    "beats": [
+     {
+      "word": "comforted",
+      "image": {
+       "prompt": "A hand resting gently on another person's shoulder, worn wool coat, dim light, faces out of frame."
+      }
+     }
+    ]
+   },
+   "narration": "Yet he noticed that some prisoners still chose how to act. They shared their last piece of bread, and comforted others.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Barbed wire silhouetted against a pale dawn sky, a faint sunrise breaking through."
+    },
+    "beats": [
+     {
+      "word": "attitude",
+      "image": {
+       "prompt": "A small green shoot growing through a crack in grey concrete, soft morning light, macro shot."
+      }
+     }
+    ]
+   },
+   "narration": "Everything else could be taken. The guards could not take their choice of attitude."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A calm man's face in deep shadow, eyes closed, a little warm light on one side, contemplative, faces partly obscured."
+    }
+   },
+   "narration": "Frankl did not say suffering is fine, or that those who broke had failed. He said some choice usually remains.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A rainy city street at evening seen through a window, a missed bus driving away, reflections on the glass."
+    },
+    "beats": [
+     {
+      "word": "control",
+      "image": {
+       "prompt": "A phone screen glowing with a cancelled meeting notice on a dark desk, close up, no readable text."
+      }
+     }
+    ]
+   },
+   "narration": "Most of us will never face anything like that. But our days still go wrong in ways we can't control."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A person standing on a hill at sunrise, seen from behind, arms relaxed, golden light across a valley."
+    },
+    "lift": true
+   },
+   "narration": "In those moments, pause, and ask: what response would I be proud of here?",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}
