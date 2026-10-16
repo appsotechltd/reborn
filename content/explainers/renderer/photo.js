@@ -33,13 +33,46 @@
       const p = R.clamp((t - sh.start) / Math.max(1, sh.end - sh.start));
       const e = R.ease(p) * 0.6 + p * 0.4;
       const z = sh.zoom === "out" ? R.lerp(1.26, 1.06, e) : R.lerp(1.06, 1.24, e);
+      if (wide) return drawWide(g, im, sh, e, alpha);
       const cover = Math.max(W / im.width, H / im.height) * z;
       const w = im.width * cover, h = im.height * cover;
-      // A wide frame shows a band of the (portrait) still, so it tilts slowly through it instead.
-      const x = (W - w) / 2 + sh.pan * R.lerp(-14, 14, e);
-      const y = wide ? R.lerp(-0.12, 0.12, sh.pan > 0 ? e : 1 - e) * (h - H) + (H - h) / 2 : (H - h) / 2 + R.lerp(8, -10, e);
+      const x = (W - w) / 2 + sh.pan * R.lerp(-14, 14, e), y = (H - h) / 2 + R.lerp(8, -10, e);
       g.globalAlpha = alpha;
       g.drawImage(im, x, y, w, h);
+      g.globalAlpha = 1;
+    }
+
+    // A wide frame keeps the whole (portrait) still in view, so nothing in it is cut off: sharp at
+    // the frame's height in the middle, its sides melting into a blurred, dimmed copy that fills the
+    // width.
+    const off = wide ? document.createElement("canvas") : null;
+    function drawWide(g, im, sh, e, alpha) {
+      const s = g.getTransform().a;
+      g.globalAlpha = alpha;
+      const cover = Math.max(W / im.width, H / im.height) * R.lerp(1.08, 1.16, e);
+      const bw = im.width * cover, bh = im.height * cover;
+      g.filter = "blur(26px) brightness(0.5) saturate(1.1)";
+      g.drawImage(im, (W - bw) / 2 + sh.pan * R.lerp(-24, 24, e), (H - bh) / 2, bw, bh);
+      g.filter = "none";
+
+      const fit = (H / im.height) * (sh.zoom === "out" ? R.lerp(1.12, 1.0, e) : R.lerp(1.0, 1.12, e));
+      const w = im.width * fit, h = im.height * fit;
+      const x = (W - w) / 2 + sh.pan * R.lerp(-8, 8, e), y = (H - h) / 2 + R.lerp(4, -4, e);
+      if (off.width !== Math.round(W * s)) { off.width = Math.round(W * s); off.height = Math.round(H * s); }
+      const o = off.getContext("2d");
+      o.setTransform(s, 0, 0, s, 0, 0);
+      o.globalCompositeOperation = "source-over";
+      o.clearRect(0, 0, W, H);
+      o.drawImage(im, x, y, w, h);
+      o.globalCompositeOperation = "destination-in";
+      const f = Math.min(80, w * 0.22) / w;
+      const mask = o.createLinearGradient(x, 0, x + w, 0);
+      mask.addColorStop(0, "rgba(0,0,0,0)"); mask.addColorStop(f, "#000"); mask.addColorStop(1 - f, "#000"); mask.addColorStop(1, "rgba(0,0,0,0)");
+      o.fillStyle = mask; o.fillRect(0, 0, W, H);
+      o.globalCompositeOperation = "source-over";
+      g.setTransform(1, 0, 0, 1, 0, 0);
+      g.drawImage(off, 0, 0);
+      g.setTransform(s, 0, 0, s, 0, 0);
       g.globalAlpha = 1;
     }
 
