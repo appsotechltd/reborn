@@ -1,4 +1,8 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
+
+import 'wordmark_r.dart';
 
 /// Candlelight: Reborn's design tokens (chosen 2026-10-11), in dark and light.
 ///
@@ -679,7 +683,8 @@ final ButtonStyle amberIconButtonStyle = IconButton.styleFrom(
 final ThemeData lightTheme = buildCandlelightTheme(CandlelightTokens.light);
 final ThemeData darkTheme = buildCandlelightTheme(CandlelightTokens.dark);
 
-/// "Reborn." in Fraunces 600, the full stop in amber.
+/// "Reborn" in Fraunces 600: the logo R (the letter with the candle flame in
+/// its bowl), then "eborn".
 class Wordmark extends StatelessWidget {
   const Wordmark({super.key, this.size = 24});
   final double size;
@@ -687,31 +692,66 @@ class Wordmark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final ink = theme.colorScheme.onSurface;
     final style = TextStyle(
       fontFamily: kDisplayFont,
       fontWeight: FontWeight.w600,
       fontSize: size,
       letterSpacing: -0.01 * size,
       height: 1.1,
-      color: theme.colorScheme.onSurface,
+      color: ink,
     );
+    // The R is cap height tall and its bottom sits on the text baseline.
+    final em = size / 2000;
     return Semantics(
       label: 'Reborn',
       excludeSemantics: true,
       child: Text.rich(
         TextSpan(
-          text: 'Reborn',
           children: [
-            TextSpan(
-              text: '.',
-              style: TextStyle(color: Candlelight.of(context).amberText),
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline,
+              baseline: TextBaseline.alphabetic,
+              child: SizedBox(
+                width: kWordmarkRAdvance * em,
+                height: kWordmarkRCap * em,
+                child: CustomPaint(painter: _WordmarkRPainter(ink)),
+              ),
             ),
+            const TextSpan(text: 'eborn'),
           ],
         ),
         style: style,
       ),
     );
   }
+}
+
+class _WordmarkRPainter extends CustomPainter {
+  _WordmarkRPainter(this.ink);
+  final Color ink;
+  static final Path _glyph = wordmarkRGlyph();
+  static final (Path, Path) _flame = wordmarkRFlame();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    canvas.scale(size.height / kWordmarkRCap);
+    canvas.drawPath(_glyph, Paint()..color = ink);
+    final outer = _flame.$1;
+    final b = outer.getBounds();
+    canvas.drawPath(
+      outer,
+      Paint()
+        ..shader = ui.Gradient.linear(b.topCenter, b.bottomCenter, const [
+          Color(0xFFF6C66E),
+          Color(0xFFE9A23B),
+        ]),
+    );
+    canvas.drawPath(_flame.$2, Paint()..color = const Color(0xFFFBE3B0));
+  }
+
+  @override
+  bool shouldRepaint(_WordmarkRPainter old) => old.ink != ink;
 }
 
 /// Uppercase small-caps category tag in amber text, with no fill.

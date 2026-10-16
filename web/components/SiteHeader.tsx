@@ -4,6 +4,7 @@ import { NavLinks } from "./NavLinks";
 import { NotificationBell } from "./NotificationBell";
 import { HeaderListenButton, StreakChip } from "./StreakChip";
 import { ThemeToggle } from "./ThemeToggle";
+import { WordmarkR } from "./WordmarkR";
 
 /**
  * The site header. From md up: the wordmark, the link strip, the bell and the account menu.
@@ -24,7 +25,8 @@ export function SiteHeader() {
           className="inline-flex min-h-11 items-center px-2 font-serif text-2xl font-semibold tracking-tight max-md:text-[1.6875rem] md:px-0"
           aria-label="Reborn, home"
         >
-          Reborn<span className="text-accent-text">.</span>
+          <WordmarkR />
+          eborn
         </Link>
         <nav aria-label="Main" className="min-w-0 flex-1 max-md:hidden">
           <NavLinks />
