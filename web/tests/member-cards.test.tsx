@@ -144,6 +144,35 @@ describe("member cards on the page", () => {
     expect(play).toHaveBeenCalled();
   });
 
+  it("puts the illustrated video on full screen, or fills the window where the browser can't", () => {
+    const video: CardVideo = {
+      kind: "illustrated",
+      scenes: [1, 2].map((n) => ({ url: `https://media.example/s${n}.webp`, width: 1024, height: 1536 })),
+      audio_url: "https://media.example/a.mp3",
+      voice: "af_heart",
+      duration_s: 40,
+    };
+    const { container } = render(<IllustratedVideo video={video} title="My walk" />);
+    const audio = container.querySelector("audio") as HTMLAudioElement;
+    audio.play = vi.fn(() => Promise.resolve());
+    fireEvent.click(screen.getByRole("button", { name: /illustrated video: My walk/ }));
+    const frame = container.querySelector("[data-testid=illustrated-video] > div") as HTMLElement;
+
+    // No full-screen API (an iPhone): the frame fills the window, and Esc leaves.
+    fireEvent.click(screen.getByRole("button", { name: "Full screen" }));
+    expect(frame.dataset.fullscreen).toBe("window");
+    expect(container.querySelector("img[data-scene]")?.className).toContain("object-contain");
+    fireEvent.keyDown(window, { key: "Escape" });
+    expect(frame.dataset.fullscreen).toBeUndefined();
+
+    const request = vi.fn(() => Promise.resolve());
+    frame.requestFullscreen = request;
+    fireEvent.click(screen.getByRole("button", { name: "Full screen" }));
+    expect(request).toHaveBeenCalled();
+    expect(frame.dataset.fullscreen).toBe("real");
+    expect(screen.getByRole("button", { name: "Exit full screen" })).toBeTruthy();
+  });
+
   describe("actions", () => {
     beforeEach(() => {
       const user = { id: "u1", email: "a@example.org", handle: "ada", display_name: "Ada", role: "member", topics: [] };

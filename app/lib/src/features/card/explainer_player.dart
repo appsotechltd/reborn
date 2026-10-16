@@ -6,6 +6,7 @@ import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../theme.dart';
 import '../listen/listen_controller.dart';
+import 'full_screen_video.dart';
 import 'video_autoplay.dart';
 
 /// Makes the video controller for a URL; tests swap in a fake.
@@ -67,6 +68,9 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
 
   /// Listen mode is playing: feed videos wait.
   bool _listening = false;
+
+  /// Showing on its own full screen: the feed leaves it alone meanwhile.
+  bool _fullScreen = false;
 
   @override
   void initState() {
@@ -166,7 +170,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   /// Brings the player in line with the scope: play the active video (with
   /// the shared sound setting), pause the rest.
   void _sync() {
-    if (!mounted || !_autoplay) return;
+    if (!mounted || !_autoplay || _fullScreen) return;
     if (_scope!.active != widget.autoplayId) _userPaused = false;
     final c = _controller;
     if (_shouldPlay) {
@@ -243,6 +247,32 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     });
   }
 
+  /// Plays the video on its own full screen, with sound (the reader chose
+  /// to watch it). Back in the feed it follows the feed's sound setting again.
+  Future<void> _openFullScreen() async {
+    final c = _controller;
+    if (c == null || !c.value.isInitialized) return;
+    _pauseListening();
+    _fullScreen = true;
+    _userPaused = false;
+    await c.setVolume(1);
+    if (!c.value.isPlaying) {
+      if (c.value.isCompleted) await c.seekTo(Duration.zero);
+      await c.play();
+    }
+    if (!mounted) return;
+    await showFullScreenVideo(
+      context,
+      builder: (_) => FullScreenFilm(controller: c, title: widget.title),
+    );
+    if (!mounted) return;
+    _fullScreen = false;
+    if (_autoplay) {
+      _sync();
+    }
+    setState(() {});
+  }
+
   void _tapPoster() {
     _pauseListening();
     if (_autoplay) {
@@ -302,7 +332,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                _FilmButton(
+                FilmButton(
                   key: const ValueKey('video-play-pause'),
                   tooltip: playing ? 'Pause video' : 'Play video',
                   icon: playing
@@ -311,7 +341,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                   onPressed: _toggle,
                 ),
                 const SizedBox(width: 8),
-                _FilmButton(
+                FilmButton(
                   key: const ValueKey('video-mute'),
                   tooltip: muted ? 'Turn sound on' : 'Mute',
                   icon: muted
@@ -319,6 +349,8 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                       : Icons.volume_up_rounded,
                   onPressed: _toggleMuted,
                 ),
+                const SizedBox(width: 8),
+                FullScreenButton(onPressed: _openFullScreen),
               ],
             ),
           ),
@@ -339,6 +371,11 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                 allowScrubbing: true,
                 colors: _progressColors,
               ),
+            ),
+            Positioned(
+              right: 8,
+              top: 8,
+              child: FullScreenButton(onPressed: _openFullScreen),
             ),
           ],
         ),
@@ -395,7 +432,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
                       "Couldn't load the video. Tap to try again.",
                       textAlign: TextAlign.center,
                       style: theme.textTheme.bodyMedium?.copyWith(
-                        color: _filmInk,
+                        color: kFilmInk,
                       ),
                     ),
                   ),
@@ -455,36 +492,6 @@ const _progressColors = VideoProgressColors(
   bufferedColor: Color(0x66F2E8D8),
   backgroundColor: Color(0x33F2E8D8),
 );
-
-/// A small round control on the film (mute, pause): dark glass, white icon.
-class _FilmButton extends StatelessWidget {
-  const _FilmButton({
-    super.key,
-    required this.tooltip,
-    required this.icon,
-    required this.onPressed,
-  });
-  final String tooltip;
-  final IconData icon;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) => IconButton(
-    tooltip: tooltip,
-    onPressed: onPressed,
-    icon: Icon(icon, size: 20),
-    color: _filmInk,
-    style: IconButton.styleFrom(
-      backgroundColor: const Color(0xB314110E),
-      minimumSize: const Size(40, 40),
-      fixedSize: const Size(40, 40),
-      padding: EdgeInsets.zero,
-    ),
-  );
-}
-
-/// Text on films is white-ish whatever the app's mode.
-const _filmInk = Color(0xFFFFFFFF);
 
 /// The amber "Play" pill in the poster's bottom row.
 class _PlayPill extends StatelessWidget {
@@ -551,7 +558,7 @@ class _DurationPill extends StatelessWidget {
             fontFamily: kBodyFont,
             fontSize: 12,
             fontWeight: FontWeight.w600,
-            color: _filmInk,
+            color: kFilmInk,
           ),
         ),
       ],
@@ -578,4 +585,96 @@ class _PlayBadge extends StatelessWidget {
       ),
     ),
   );
+}
+
+/// An explainer on its own full screen: the same playback (it carries on
+/// where it was), the whole film fitted to the screen, tap to pause or play,
+/// and a progress bar to scrub.
+class FullScreenFilm extends StatefulWidget {
+  const FullScreenFilm({
+    super.key,
+    required this.controller,
+    required this.title,
+  });
+  final VideoPlayerController controller;
+  final String title;
+
+  @override
+  State<FullScreenFilm> createState() => _FullScreenFilmState();
+}
+
+class _FullScreenFilmState extends State<FullScreenFilm> {
+  bool _wasPlaying = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _wasPlaying = widget.controller.value.isPlaying;
+    widget.controller.addListener(_onTick);
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onTick);
+    super.dispose();
+  }
+
+  void _onTick() {
+    final playing = widget.controller.value.isPlaying;
+    if (playing != _wasPlaying && mounted) {
+      setState(() => _wasPlaying = playing);
+    }
+  }
+
+  void _toggle() {
+    final c = widget.controller;
+    if (c.value.isPlaying) {
+      c.pause();
+    } else {
+      if (c.value.isCompleted) c.seekTo(Duration.zero);
+      c.play();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final c = widget.controller;
+    final playing = c.value.isPlaying;
+    return Semantics(
+      button: true,
+      label: playing
+          ? 'Video: ${widget.title}. Tap to pause'
+          : 'Video: ${widget.title}. Tap to play',
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: _toggle,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Center(
+              child: AspectRatio(
+                aspectRatio: c.value.aspectRatio,
+                child: VideoPlayer(c),
+              ),
+            ),
+            if (!playing) const Center(child: _PlayBadge()),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                  child: VideoProgressIndicator(
+                    c,
+                    allowScrubbing: true,
+                    colors: _progressColors,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

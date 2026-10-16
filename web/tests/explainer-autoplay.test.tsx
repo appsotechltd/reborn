@@ -164,6 +164,48 @@ describe("feed video autoplay", () => {
     expect(screen.getByRole("button", { name: /play\s*the animated explainer/i })).toBeTruthy();
   });
 
+  it("opens a feed video full screen with sound, and goes back to muted", async () => {
+    let fsEl: Element | null = null;
+    Object.defineProperty(document, "fullscreenElement", { configurable: true, get: () => fsEl });
+    const request = vi.fn(function (this: Element) {
+      fsEl = request.mock.contexts.at(-1) as Element;
+      document.dispatchEvent(new Event("fullscreenchange"));
+      return Promise.resolve();
+    });
+    HTMLElement.prototype.requestFullscreen = request;
+    try {
+      render(<CardView card={card(1)} feed />);
+      const v = videoOf(1);
+      await act(async () => setVisible(v, 1));
+      expect(v.muted).toBe(true);
+      await act(async () => fireEvent.click(screen.getByRole("button", { name: "Full screen" })));
+      expect(request.mock.contexts[0]).toBe(v);
+      expect(v.muted).toBe(false);
+      expect(v.paused).toBe(false);
+      expect(v.controls).toBe(true);
+      // Leaving full screen (Esc, or the browser's own button).
+      fsEl = null;
+      await act(async () => document.dispatchEvent(new Event("fullscreenchange")));
+      expect(v.muted).toBe(true);
+      expect(v.controls).toBe(false);
+      expect(v.paused).toBe(false);
+    } finally {
+      delete (HTMLElement.prototype as Partial<HTMLElement>).requestFullscreen;
+      delete (document as Partial<Document> & { fullscreenElement?: unknown }).fullscreenElement;
+    }
+  });
+
+  it("offers full screen on a card's page once the video plays, using an iPhone's own player", async () => {
+    render(<CardView card={card(1)} />);
+    const v = videoOf(1) as HTMLVideoElement & { webkitEnterFullscreen?: () => void };
+    expect(screen.queryByRole("button", { name: "Full screen" })).toBeNull();
+    await act(async () => fireEvent.click(screen.getByRole("button", { name: /play\s*the animated explainer/i })));
+    const enter = vi.fn();
+    v.webkitEnterFullscreen = enter;
+    fireEvent.click(screen.getByRole("button", { name: "Full screen" }));
+    expect(enter).toHaveBeenCalled();
+  });
+
   it("never autoplays on a card's own page", async () => {
     render(<CardView card={card(1)} />);
     await act(async () => setVisible(videoOf(1), 1));
