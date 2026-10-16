@@ -80,7 +80,8 @@ class FakeVideo extends VideoPlayerController {
       value = value.copyWith(isLooping: looping);
 
   @override
-  Future<void> seekTo(Duration position) async {}
+  Future<void> seekTo(Duration position) async =>
+      value = value.copyWith(position: position);
 
   @override
   Future<Duration?> get position async => Duration.zero;
@@ -475,7 +476,7 @@ void main() {
     },
   };
 
-  testWidgets('wide screens play the landscape cut; phones keep portrait', (
+  testWidgets('cards play the landscape cut on phones and wide screens', (
     tester,
   ) async {
     final videos = Videos();
@@ -500,7 +501,58 @@ void main() {
       size: phone,
       overrides: [phoneVideos.override],
     );
-    expect(phoneVideos.byId.keys, ['v1']);
+    expect(phoneVideos.byId.keys, ['v1-wide']);
+  });
+
+  testWidgets('full screen on an upright phone plays the portrait cut from '
+      'the same moment, then the card carries on in landscape', (tester) async {
+    final videos = Videos();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([post('v1', explainer: withWide('v1'))]),
+      );
+    await pumpApp(tester, server, size: phone, overrides: [videos.override]);
+    final wide = videos.byId['v1-wide']!;
+    await wide.seekTo(const Duration(seconds: 7));
+
+    await tester.tap(find.byKey(const ValueKey('video-fullscreen')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('video-fullscreen-page')), findsOneWidget);
+    final tall = videos.byId['v1']!;
+    expect(tall.value.isPlaying, isTrue);
+    expect(tall.value.volume, 1);
+    expect(tall.value.position, const Duration(seconds: 7));
+    expect(wide.value.isPlaying, isFalse);
+
+    await tall.seekTo(const Duration(seconds: 12));
+    await tester.tap(find.byKey(const ValueKey('video-exit-fullscreen')));
+    await tester.pumpAndSettle();
+    expect(tall.disposed, isTrue);
+    expect(wide.value.position, const Duration(seconds: 12));
+    expect(wide.value.isPlaying, isTrue);
+    expect(wide.value.volume, 0);
+  });
+
+  testWidgets('full screen on a wide screen keeps the landscape cut', (
+    tester,
+  ) async {
+    final videos = Videos();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([post('v1', explainer: withWide('v1'))]),
+      );
+    await pumpApp(
+      tester,
+      server,
+      size: const Size(1000, 1300),
+      overrides: [videos.override],
+    );
+    await tester.tap(find.byKey(const ValueKey('video-fullscreen')));
+    await tester.pumpAndSettle();
+    expect(videos.byId.keys, ['v1-wide']);
+    expect(videos.byId['v1-wide']!.value.volume, 1);
   });
 
   testWidgets('sharing a video post offers the link, the tall and the wide '

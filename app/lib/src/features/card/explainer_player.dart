@@ -15,8 +15,9 @@ final videoControllerFactoryProvider =
       (_) => VideoPlayerController.networkUrl,
     );
 
-/// Screens at least this wide (logical pixels) play an explainer's landscape
-/// cut: tablets, and phones turned on their side.
+/// Screens narrower than this (logical pixels), held upright, are phones:
+/// their full screen plays an explainer's portrait cut, which fills them.
+/// Cards play the landscape cut everywhere.
 const kWideVideoWidth = 600.0;
 
 /// Plays a card's explainer video inline.
@@ -58,10 +59,9 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   VideoAutoplay? _scope;
   bool _tickerOn = true;
 
-  /// Tablets and wide windows play the landscape cut (when there is one),
-  /// filling the card; phones keep portrait.
-  bool _wide = false;
-  Explainer get _cut => widget.explainer.cut(wide: _wide);
+  /// Cards play the landscape cut (when there is one) on every screen,
+  /// filling the card.
+  Explainer get _cut => widget.explainer.cut(wide: true);
 
   /// The reader paused the active video; cleared when it stops being active.
   bool _userPaused = false;
@@ -122,12 +122,6 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     }
     // Paused when its route or tab is hidden.
     _tickerOn = TickerMode.valuesOf(context).enabled;
-    final wide = MediaQuery.sizeOf(context).width >= kWideVideoWidth;
-    if (wide != _wide) {
-      final was = _cut.videoUrl;
-      _wide = wide;
-      if (_cut.videoUrl != was && !_fullScreen) _reset();
-    }
     _scheduleSync();
   }
 
@@ -140,7 +134,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
       final now = widget.autoplayId;
       if (now != null) _scope?.attach(now, context);
     }
-    if (old.explainer.cut(wide: _wide).videoUrl != _cut.videoUrl) _reset();
+    if (old.explainer.cut(wide: true).videoUrl != _cut.videoUrl) _reset();
     _scheduleSync();
   }
 
@@ -262,24 +256,76 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     });
   }
 
+  /// Whether this is a phone held upright, whose full screen plays the
+  /// portrait cut.
+  bool get _phoneUpright {
+    final size = MediaQuery.sizeOf(context);
+    return size.width < kWideVideoWidth && size.height > size.width;
+  }
+
+  /// Opens the portrait cut where the card's video is, for an upright
+  /// phone's full screen. Null when there is none, or it won't load (the
+  /// card's own cut is shown instead).
+  Future<VideoPlayerController?> _tallController(Duration at) async {
+    final tall = widget.explainer;
+    if (tall.landscape == null || tall.videoUrl == _cut.videoUrl) return null;
+    final t = ref.read(videoControllerFactoryProvider)(
+      Uri.parse(resolveMediaUrl(tall.videoUrl)),
+    );
+    try {
+      await t.initialize();
+      await t.seekTo(at);
+      return t;
+    } catch (_) {
+      await t.dispose();
+      return null;
+    }
+  }
+
   /// Plays the video on its own full screen, with sound (the reader chose
-  /// to watch it). Back in the feed it follows the feed's sound setting again.
+  /// to watch it). On an upright phone that is the portrait cut, carrying
+  /// on from the same moment; back in the card the landscape cut picks up
+  /// where it left off. Back in the feed it follows the feed's sound setting
+  /// again.
   Future<void> _openFullScreen() async {
     final c = _controller;
     if (c == null || !c.value.isInitialized) return;
     _pauseListening();
     _fullScreen = true;
     _userPaused = false;
-    await c.setVolume(1);
-    if (!c.value.isPlaying) {
-      if (c.value.isCompleted) await c.seekTo(Duration.zero);
-      await c.play();
+    final tall = _phoneUpright ? await _tallController(c.value.position) : null;
+    if (!mounted) {
+      await tall?.dispose();
+      return;
     }
-    if (!mounted) return;
+    final film = tall ?? c;
+    if (tall != null) {
+      await c.pause();
+      if (c.value.isCompleted) await tall.seekTo(Duration.zero);
+    }
+    await film.setVolume(1);
+    if (!film.value.isPlaying) {
+      if (film.value.isCompleted) await film.seekTo(Duration.zero);
+      await film.play();
+    }
+    if (!mounted) {
+      await tall?.dispose();
+      return;
+    }
     await showFullScreenVideo(
       context,
-      builder: (_) => FullScreenFilm(controller: c, title: widget.title),
+      builder: (_) => FullScreenFilm(controller: film, title: widget.title),
     );
+    if (tall != null) {
+      final at = tall.value.position;
+      final wasPlaying = tall.value.isPlaying;
+      await tall.dispose();
+      if (_controller == c && c.value.isInitialized) {
+        await c.seekTo(at);
+        // On a card's page it carries on if it was playing; the feed syncs.
+        if (!_autoplay && wasPlaying) await c.play();
+      }
+    }
     if (!mounted) return;
     _fullScreen = false;
     if (_autoplay) {
