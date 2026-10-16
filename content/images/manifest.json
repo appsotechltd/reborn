@@ -1873,6 +1873,1742 @@
    "caption": "Recall builds the strongest memories when it is hard but still possible",
    "basis": "illustration"
   },
+  "universe-are-we-alone--01": {
+   "file": "images/cards/v1/universe-are-we-alone--01.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--01.jpg",
+   "type": "photo",
+   "caption": "Our Milky Way galaxy (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA10748",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-are-we-alone--02": {
+   "file": "images/cards/v1/universe-are-we-alone--02.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--02.jpg",
+   "type": "photo",
+   "caption": "Stars scattered through the Tarantula Nebula, seen by Hubble",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-are-we-alone--03": {
+   "file": "images/cards/v1/universe-are-we-alone--03.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--03.jpg",
+   "type": "photo",
+   "caption": "Countless stars around Sagittarius C, near our galaxy's centre",
+   "source": "https://esawebb.org/images/weic2328a/",
+   "credit": "NASA, ESA, CSA, STScI, S. Crowe (UVA) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--04": {
+   "file": "images/cards/v1/universe-are-we-alone--04.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--04.jpg",
+   "type": "photo",
+   "caption": "A bright star shining above the Horsehead Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--05": {
+   "file": "images/cards/v1/universe-are-we-alone--05.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--05.jpg",
+   "type": "photo",
+   "caption": "A crowd of young stars in the Westerlund 2 cluster",
+   "source": "https://esahubble.org/images/heic1509a/",
+   "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--06": {
+   "file": "images/cards/v1/universe-are-we-alone--06.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--06.jpg",
+   "type": "photo",
+   "caption": "Stars above the Cosmic Cliffs of the Carina Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-are-we-alone--07": {
+   "file": "images/cards/v1/universe-are-we-alone--07.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--07.jpg",
+   "type": "photo",
+   "caption": "TRAPPIST-1's seven planets (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA21751",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-are-we-alone--08": {
+   "file": "images/cards/v1/universe-are-we-alone--08.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--08.jpg",
+   "type": "photo",
+   "caption": "Young stars in the Serpens Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2415a/",
+   "credit": "NASA, ESA, CSA, STScI, K. Pontoppidan (NASA’s Jet Propulsion Laboratory), J. Green (Space Telescope Science Institute) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--09": {
+   "file": "images/cards/v1/universe-are-we-alone--09.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--09.jpg",
+   "type": "photo",
+   "caption": "Young stars and glowing gas in the Tarantula Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2212a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-are-we-alone--10": {
+   "file": "images/cards/v1/universe-are-we-alone--10.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--10.jpg",
+   "type": "photo",
+   "caption": "The frosty-looking edge of the Horsehead Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--11": {
+   "file": "images/cards/v1/universe-are-we-alone--11.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--11.jpg",
+   "type": "photo",
+   "caption": "The plume of water spraying from Saturn's moon Enceladus",
+   "source": "https://images.nasa.gov/details/PIA17198",
+   "credit": "NASA/JPL-Caltech/Space Science Institute (public domain)"
+  },
+  "universe-are-we-alone--12": {
+   "file": "images/cards/v1/universe-are-we-alone--12.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--12.jpg",
+   "type": "photo",
+   "caption": "Orange clouds of gas and dust in the Serpens Nebula",
+   "source": "https://esawebb.org/images/weic2415a/",
+   "credit": "NASA, ESA, CSA, STScI, K. Pontoppidan (NASA’s Jet Propulsion Laboratory), J. Green (Space Telescope Science Institute) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--13": {
+   "file": "images/cards/v1/universe-are-we-alone--13.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--13.jpg",
+   "type": "photo",
+   "caption": "Rocks on the Martian surface, photographed by Perseverance",
+   "source": "https://images.nasa.gov/details/PIA26368",
+   "credit": "NASA/JPL-Caltech/MSSS (public domain)"
+  },
+  "universe-are-we-alone--14": {
+   "file": "images/cards/v1/universe-are-we-alone--14.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--14.jpg",
+   "type": "photo",
+   "caption": "The 'leopard spots' rock found by Perseverance on Mars",
+   "source": "https://images.nasa.gov/details/PIA26368",
+   "credit": "NASA/JPL-Caltech/MSSS (public domain)"
+  },
+  "universe-are-we-alone--15": {
+   "file": "images/cards/v1/universe-are-we-alone--15.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--15.jpg",
+   "type": "photo",
+   "caption": "Glowing knots of gas in the Helix Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--16": {
+   "file": "images/cards/v1/universe-are-we-alone--16.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--16.jpg",
+   "type": "photo",
+   "caption": "Dusty spiral arms of the Phantom Galaxy, seen by Webb",
+   "source": "https://esawebb.org/images/potm2208a/",
+   "credit": "ESA/Webb, NASA & CSA, J. Lee and the PHANGS-JWST Team. Acknowledgement: J. Schmidt (CC BY 4.0)"
+  },
+  "universe-are-we-alone--17": {
+   "file": "images/cards/v1/universe-are-we-alone--17.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--17.jpg",
+   "type": "photo",
+   "caption": "Earth rising over the Moon, seen by Lunar Reconnaissance Orbiter",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000496",
+   "credit": "NASA (public domain)"
+  },
+  "universe-are-we-alone--18": {
+   "file": "images/cards/v1/universe-are-we-alone--18.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--18.jpg",
+   "type": "photo",
+   "caption": "The Cosmic Cliffs of the Carina Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-are-we-alone--19": {
+   "file": "images/cards/v1/universe-are-we-alone--19.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--19.jpg",
+   "type": "photo",
+   "caption": "Mystic Mountain in the Carina Nebula",
+   "source": "https://esahubble.org/images/heic1007a/",
+   "credit": "NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--20": {
+   "file": "images/cards/v1/universe-are-we-alone--20.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--20.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field, packed with galaxies",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-are-we-alone--21": {
+   "file": "images/cards/v1/universe-are-we-alone--21.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--21.jpg",
+   "type": "photo",
+   "caption": "Distant galaxies in part of the Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-are-we-alone--22": {
+   "file": "images/cards/v1/universe-are-we-alone--22.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--22.jpg",
+   "type": "photo",
+   "caption": "Webb's first deep field: thousands of galaxies in a speck of sky",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-are-we-alone--23": {
+   "file": "images/cards/v1/universe-are-we-alone--23.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--23.jpg",
+   "type": "photo",
+   "caption": "The Whirlpool Galaxy and its companion",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--24": {
+   "file": "images/cards/v1/universe-are-we-alone--24.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--24.jpg",
+   "type": "photo",
+   "caption": "Westerlund 2, a cluster of young stars",
+   "source": "https://esahubble.org/images/heic1509a/",
+   "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--25": {
+   "file": "images/cards/v1/universe-are-we-alone--25.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--25.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy",
+   "source": "https://esahubble.org/images/opo0328a/",
+   "credit": "NASA/ESA and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--26": {
+   "file": "images/cards/v1/universe-are-we-alone--26.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--26.jpg",
+   "type": "photo",
+   "caption": "Glowing gas and stars in the Tarantula Nebula, seen by Hubble",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-are-we-alone--27": {
+   "file": "images/cards/v1/universe-are-we-alone--27.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--27.jpg",
+   "type": "photo",
+   "caption": "Stars and faint galaxies around the Spiderweb protocluster",
+   "source": "https://esawebb.org/images/weic2428a/",
+   "credit": "ESA/Webb, NASA & CSA, H. Dannerbauer (CC BY 4.0)"
+  },
+  "universe-are-we-alone--28": {
+   "file": "images/cards/v1/universe-are-we-alone--28.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--28.jpg",
+   "type": "photo",
+   "caption": "A bright star and distant galaxies in a Webb deep field",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-are-we-alone--29": {
+   "file": "images/cards/v1/universe-are-we-alone--29.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--29.jpg",
+   "type": "photo",
+   "caption": "The Voyager Golden Record",
+   "source": "https://images.nasa.gov/details/PIA14113",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-are-we-alone--30": {
+   "file": "images/cards/v1/universe-are-we-alone--30.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--30.jpg",
+   "type": "photo",
+   "caption": "Dusty folds of the Cosmic Cliffs in the Carina Nebula",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-are-we-alone--31": {
+   "file": "images/cards/v1/universe-are-we-alone--31.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--31.jpg",
+   "type": "photo",
+   "caption": "A burst of material leaving the Sun",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-are-we-alone--32": {
+   "file": "images/cards/v1/universe-are-we-alone--32.webp",
+   "full": "images/cards/v1-full/universe-are-we-alone--32.jpg",
+   "type": "photo",
+   "caption": "Earth as a pale blue dot, seen by Voyager 1 from about 6 billion km",
+   "source": "https://images.nasa.gov/details/PIA00452",
+   "credit": "NASA/JPL (public domain)"
+  },
+  "universe-big-theories--01": {
+   "file": "images/cards/v1/universe-big-theories--01.webp",
+   "full": "images/cards/v1-full/universe-big-theories--01.jpg",
+   "type": "photo",
+   "caption": "The Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-big-theories--02": {
+   "file": "images/cards/v1/universe-big-theories--02.webp",
+   "full": "images/cards/v1-full/universe-big-theories--02.jpg",
+   "type": "photo",
+   "caption": "The Pillars of Creation seen by Hubble",
+   "source": "https://esahubble.org/images/heic1501a/",
+   "credit": "NASA, ESA/Hubble and the Hubble Heritage Team (CC BY 4.0)"
+  },
+  "universe-big-theories--03": {
+   "file": "images/cards/v1/universe-big-theories--03.webp",
+   "full": "images/cards/v1-full/universe-big-theories--03.jpg",
+   "type": "photo",
+   "caption": "The cosmic microwave background, the oldest light in the universe",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-big-theories--04": {
+   "file": "images/cards/v1/universe-big-theories--04.webp",
+   "full": "images/cards/v1-full/universe-big-theories--04.jpg",
+   "type": "photo",
+   "caption": "Stephan's Quintet, galaxies locked in a gravitational dance",
+   "source": "https://esawebb.org/images/weic2208a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-big-theories--05": {
+   "file": "images/cards/v1/universe-big-theories--05.webp",
+   "full": "images/cards/v1-full/universe-big-theories--05.jpg",
+   "type": "photo",
+   "caption": "Pandora's Cluster, whose gravity magnifies galaxies behind it",
+   "source": "https://esawebb.org/images/weic2305a/",
+   "credit": "NASA, ESA, CSA, I. Labbe (Swinburne University of Technology), R. Bezanson (University of Pittsburgh), A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-big-theories--06": {
+   "file": "images/cards/v1/universe-big-theories--06.webp",
+   "full": "images/cards/v1-full/universe-big-theories--06.jpg",
+   "type": "photo",
+   "caption": "M87*, the first black hole ever pictured",
+   "source": "https://www.eso.org/public/images/eso1907a/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-big-theories--07": {
+   "file": "images/cards/v1/universe-big-theories--07.webp",
+   "full": "images/cards/v1-full/universe-big-theories--07.jpg",
+   "type": "photo",
+   "caption": "Tangled filaments inside the Crab Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2326a/",
+   "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)"
+  },
+  "universe-big-theories--08": {
+   "file": "images/cards/v1/universe-big-theories--08.webp",
+   "full": "images/cards/v1-full/universe-big-theories--08.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-big-theories--09": {
+   "file": "images/cards/v1/universe-big-theories--09.webp",
+   "full": "images/cards/v1-full/universe-big-theories--09.jpg",
+   "type": "photo",
+   "caption": "The Ring Nebula, gas shed by a star like the Sun",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-big-theories--10": {
+   "file": "images/cards/v1/universe-big-theories--10.webp",
+   "full": "images/cards/v1-full/universe-big-theories--10.jpg",
+   "type": "photo",
+   "caption": "Galaxies of many shapes in Webb's first deep field",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-big-theories--11": {
+   "file": "images/cards/v1/universe-big-theories--11.webp",
+   "full": "images/cards/v1-full/universe-big-theories--11.jpg",
+   "type": "photo",
+   "caption": "Streams of glowing knots in the Helix Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-big-theories--12": {
+   "file": "images/cards/v1/universe-big-theories--12.webp",
+   "full": "images/cards/v1-full/universe-big-theories--12.jpg",
+   "type": "photo",
+   "caption": "A dense field of stars in the Tarantula Nebula, seen by Hubble",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-big-theories--13": {
+   "file": "images/cards/v1/universe-big-theories--13.webp",
+   "full": "images/cards/v1-full/universe-big-theories--13.jpg",
+   "type": "photo",
+   "caption": "Cassiopeia A, the remains of an exploded star",
+   "source": "https://esawebb.org/images/weic2330a/",
+   "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+  },
+  "universe-big-theories--14": {
+   "file": "images/cards/v1/universe-big-theories--14.webp",
+   "full": "images/cards/v1-full/universe-big-theories--14.jpg",
+   "type": "photo",
+   "caption": "Wolf-Rayet 124, a giant star shedding its outer layers",
+   "source": "https://esawebb.org/images/weic2307a/",
+   "credit": "NASA, ESA, CSA, STScI, Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-big-theories--15": {
+   "file": "images/cards/v1/universe-big-theories--15.webp",
+   "full": "images/cards/v1-full/universe-big-theories--15.jpg",
+   "type": "photo",
+   "caption": "Distant galaxies in the dark sky above the Horsehead Nebula",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-big-theories--16": {
+   "file": "images/cards/v1/universe-big-theories--16.webp",
+   "full": "images/cards/v1-full/universe-big-theories--16.jpg",
+   "type": "photo",
+   "caption": "The Crab Nebula seen by Hubble",
+   "source": "https://esahubble.org/images/heic0515a/",
+   "credit": "NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble) (CC BY 4.0)"
+  },
+  "universe-big-theories--17": {
+   "file": "images/cards/v1/universe-big-theories--17.webp",
+   "full": "images/cards/v1-full/universe-big-theories--17.jpg",
+   "type": "photo",
+   "caption": "Two interacting galaxies, Arp 142, pulled together by gravity",
+   "source": "https://esawebb.org/images/weic2420a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-big-theories--18": {
+   "file": "images/cards/v1/universe-big-theories--18.webp",
+   "full": "images/cards/v1-full/universe-big-theories--18.jpg",
+   "type": "photo",
+   "caption": "The Southern Ring Nebula, the glowing shell of a dying star",
+   "source": "https://esawebb.org/images/weic2207b/",
+   "credit": "NASA, ESA, CSA, STScI, and the Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-big-theories--19": {
+   "file": "images/cards/v1/universe-big-theories--19.webp",
+   "full": "images/cards/v1-full/universe-big-theories--19.jpg",
+   "type": "photo",
+   "caption": "The spiral heart of the Whirlpool Galaxy",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-big-theories--20": {
+   "file": "images/cards/v1/universe-big-theories--20.webp",
+   "full": "images/cards/v1-full/universe-big-theories--20.jpg",
+   "type": "photo",
+   "caption": "The Phantom Galaxy, a spiral 32 million light-years away",
+   "source": "https://esawebb.org/images/potm2208a/",
+   "credit": "ESA/Webb, NASA & CSA, J. Lee and the PHANGS-JWST Team. Acknowledgement: J. Schmidt (CC BY 4.0)"
+  },
+  "universe-big-theories--21": {
+   "file": "images/cards/v1/universe-big-theories--21.webp",
+   "full": "images/cards/v1-full/universe-big-theories--21.jpg",
+   "type": "photo",
+   "caption": "The bright heart of the Butterfly Nebula",
+   "source": "https://esahubble.org/images/heic0910h/",
+   "credit": "NASA, ESA and the Hubble SM4 ERO Team (CC BY 4.0)"
+  },
+  "universe-big-theories--22": {
+   "file": "images/cards/v1/universe-big-theories--22.webp",
+   "full": "images/cards/v1-full/universe-big-theories--22.jpg",
+   "type": "photo",
+   "caption": "Sagittarius A*, the black hole at the centre of our galaxy",
+   "source": "https://www.eso.org/public/images/eso2208-eht-mwa/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-big-theories--23": {
+   "file": "images/cards/v1/universe-big-theories--23.webp",
+   "full": "images/cards/v1-full/universe-big-theories--23.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy in infrared light",
+   "source": "https://esawebb.org/images/weic2427a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-big-theories--24": {
+   "file": "images/cards/v1/universe-big-theories--24.webp",
+   "full": "images/cards/v1-full/universe-big-theories--24.jpg",
+   "type": "photo",
+   "caption": "The starburst galaxy Messier 82",
+   "source": "https://esahubble.org/images/heic0604a/",
+   "credit": "NASA, ESA and the Hubble Heritage Team (STScI/AURA). Acknowledgment: J. Gallagher (University of Wisconsin), M. Mountain (STScI) and P. Puxley (NSF) (CC BY 4.0)"
+  },
+  "universe-big-theories--25": {
+   "file": "images/cards/v1/universe-big-theories--25.webp",
+   "full": "images/cards/v1-full/universe-big-theories--25.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy",
+   "source": "https://esahubble.org/images/opo0328a/",
+   "credit": "NASA/ESA and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-big-theories--26": {
+   "file": "images/cards/v1/universe-big-theories--26.webp",
+   "full": "images/cards/v1-full/universe-big-theories--26.jpg",
+   "type": "photo",
+   "caption": "Faint galaxies around the Spiderweb protocluster",
+   "source": "https://esawebb.org/images/weic2428a/",
+   "credit": "ESA/Webb, NASA & CSA, H. Dannerbauer (CC BY 4.0)"
+  },
+  "universe-big-theories--27": {
+   "file": "images/cards/v1/universe-big-theories--27.webp",
+   "full": "images/cards/v1-full/universe-big-theories--27.jpg",
+   "type": "photo",
+   "caption": "The Cosmic Cliffs of the Carina Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-big-theories--28": {
+   "file": "images/cards/v1/universe-big-theories--28.webp",
+   "full": "images/cards/v1-full/universe-big-theories--28.jpg",
+   "type": "photo",
+   "caption": "The plume of water spraying from Saturn's moon Enceladus",
+   "source": "https://images.nasa.gov/details/PIA17198",
+   "credit": "NASA/JPL-Caltech/Space Science Institute (public domain)"
+  },
+  "universe-big-theories--29": {
+   "file": "images/cards/v1/universe-big-theories--29.webp",
+   "full": "images/cards/v1-full/universe-big-theories--29.jpg",
+   "type": "photo",
+   "caption": "The Antennae Galaxies, two galaxies colliding",
+   "source": "https://esahubble.org/images/potw1345a/",
+   "credit": "ESA/Hubble & NASA (CC BY 4.0)"
+  },
+  "universe-big-theories--30": {
+   "file": "images/cards/v1/universe-big-theories--30.webp",
+   "full": "images/cards/v1-full/universe-big-theories--30.jpg",
+   "type": "photo",
+   "caption": "Webb's Pillars of Creation, where new stars are forming",
+   "source": "https://esawebb.org/images/weic2216a/",
+   "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--01": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--01.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--01.jpg",
+   "type": "photo",
+   "caption": "The Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--02": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--02.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--02.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--03": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--03.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--03.jpg",
+   "type": "photo",
+   "caption": "The Whirlpool Galaxy, a classic spiral, and its companion",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--04": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--04.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--04.jpg",
+   "type": "photo",
+   "caption": "Small companion galaxies beside the Cartwheel Galaxy",
+   "source": "https://esawebb.org/images/weic2211a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--05": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--05.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--05.jpg",
+   "type": "photo",
+   "caption": "Our Milky Way galaxy (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA10748",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-galaxies-and-black-holes--06": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--06.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--06.jpg",
+   "type": "photo",
+   "caption": "Material erupting from the edge of the Sun",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-galaxies-and-black-holes--07": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--07.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--07.jpg",
+   "type": "photo",
+   "caption": "The Antennae Galaxies, two galaxies colliding",
+   "source": "https://esahubble.org/images/potw1345a/",
+   "credit": "ESA/Hubble & NASA (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--08": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--08.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--08.jpg",
+   "type": "photo",
+   "caption": "The Andromeda Galaxy, Hubble's sharpest view",
+   "source": "https://esahubble.org/images/heic1502a/",
+   "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--09": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--09.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--09.jpg",
+   "type": "photo",
+   "caption": "Stars and dust lanes in the Andromeda Galaxy's disk",
+   "source": "https://esahubble.org/images/heic1502a/",
+   "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--10": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--10.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--10.jpg",
+   "type": "photo",
+   "caption": "The starburst galaxy Messier 82",
+   "source": "https://esahubble.org/images/heic0604a/",
+   "credit": "NASA, ESA and the Hubble Heritage Team (STScI/AURA). Acknowledgment: J. Gallagher (University of Wisconsin), M. Mountain (STScI) and P. Puxley (NSF) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--11": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--11.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--11.jpg",
+   "type": "photo",
+   "caption": "Cassiopeia A, the remains of an exploded star",
+   "source": "https://esawebb.org/images/weic2330a/",
+   "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--12": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--12.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--12.jpg",
+   "type": "photo",
+   "caption": "Close-up of the glowing ring around the black hole M87*",
+   "source": "https://www.eso.org/public/images/eso1907a/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--13": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--13.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--13.jpg",
+   "type": "photo",
+   "caption": "The Crab Nebula, wreckage of a star that exploded in 1054",
+   "source": "https://esahubble.org/images/heic0515a/",
+   "credit": "NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--14": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--14.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--14.jpg",
+   "type": "photo",
+   "caption": "The bright core of the Sombrero Galaxy",
+   "source": "https://esahubble.org/images/opo0328a/",
+   "credit": "NASA/ESA and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--15": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--15.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--15.jpg",
+   "type": "photo",
+   "caption": "A dense cluster of young stars in Westerlund 2",
+   "source": "https://esahubble.org/images/heic1509a/",
+   "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--16": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--16.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--16.jpg",
+   "type": "photo",
+   "caption": "JADES-GS-z14-0, one of the most distant galaxies known",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--17": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--17.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--17.jpg",
+   "type": "photo",
+   "caption": "Sagittarius C, a star-forming region near our galaxy's centre",
+   "source": "https://esawebb.org/images/weic2328a/",
+   "credit": "NASA, ESA, CSA, STScI, S. Crowe (UVA) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--18": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--18.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--18.jpg",
+   "type": "photo",
+   "caption": "Sagittarius A*, the black hole at the centre of our galaxy",
+   "source": "https://www.eso.org/public/images/eso2208-eht-mwa/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--19": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--19.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--19.jpg",
+   "type": "photo",
+   "caption": "M87*, the first black hole ever pictured",
+   "source": "https://www.eso.org/public/images/eso1907a/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--20": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--20.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--20.jpg",
+   "type": "photo",
+   "caption": "Two interacting galaxies, Arp 142, pulled out of shape",
+   "source": "https://esawebb.org/images/weic2420a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--21": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--21.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--21.jpg",
+   "type": "photo",
+   "caption": "Webb's first deep field: thousands of galaxies in a speck of sky",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--22": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--22.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--22.jpg",
+   "type": "photo",
+   "caption": "Stephan's Quintet, five galaxies locked in a gravitational dance",
+   "source": "https://esawebb.org/images/weic2208a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--23": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--23.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--23.jpg",
+   "type": "photo",
+   "caption": "Glowing knots in the Helix Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--24": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--24.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--24.jpg",
+   "type": "photo",
+   "caption": "The Crab Nebula seen by Webb",
+   "source": "https://esawebb.org/images/weic2326a/",
+   "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--25": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--25.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--25.jpg",
+   "type": "photo",
+   "caption": "The bright heart of Wolf-Rayet 124",
+   "source": "https://esawebb.org/images/weic2307a/",
+   "credit": "NASA, ESA, CSA, STScI, Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--26": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--26.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--26.jpg",
+   "type": "photo",
+   "caption": "Galaxies of the El Gordo cluster",
+   "source": "https://esawebb.org/images/elgordo1/",
+   "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--27": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--27.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--27.jpg",
+   "type": "photo",
+   "caption": "The core of the Sombrero Galaxy in infrared light",
+   "source": "https://esawebb.org/images/weic2427a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--28": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--28.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--28.jpg",
+   "type": "photo",
+   "caption": "The Phantom Galaxy, a spiral 32 million light-years away",
+   "source": "https://esawebb.org/images/potm2208a/",
+   "credit": "ESA/Webb, NASA & CSA, J. Lee and the PHANGS-JWST Team. Acknowledgement: J. Schmidt (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--29": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--29.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--29.jpg",
+   "type": "photo",
+   "caption": "Pandora's Cluster, whose gravity magnifies galaxies behind it",
+   "source": "https://esawebb.org/images/weic2305a/",
+   "credit": "NASA, ESA, CSA, I. Labbe (Swinburne University of Technology), R. Bezanson (University of Pittsburgh), A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--30": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--30.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--30.jpg",
+   "type": "photo",
+   "caption": "Westerlund 2, a cluster of young stars",
+   "source": "https://esahubble.org/images/heic1509a/",
+   "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+  },
+  "universe-galaxies-and-black-holes--31": {
+   "file": "images/cards/v1/universe-galaxies-and-black-holes--31.webp",
+   "full": "images/cards/v1-full/universe-galaxies-and-black-holes--31.jpg",
+   "type": "photo",
+   "caption": "A spiral arm of the Milky Way (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA10748",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-how-big-is-it--01": {
+   "file": "images/cards/v1/universe-how-big-is-it--01.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--01.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy",
+   "source": "https://esahubble.org/images/opo0328a/",
+   "credit": "NASA/ESA and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--02": {
+   "file": "images/cards/v1/universe-how-big-is-it--02.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--02.jpg",
+   "type": "photo",
+   "caption": "Earth rising over the Moon, seen by Lunar Reconnaissance Orbiter",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000496",
+   "credit": "NASA (public domain)"
+  },
+  "universe-how-big-is-it--03": {
+   "file": "images/cards/v1/universe-how-big-is-it--03.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--03.jpg",
+   "type": "photo",
+   "caption": "The Sun's full disk seen by the Solar Dynamics Observatory",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002035",
+   "credit": "NASA (public domain)"
+  },
+  "universe-how-big-is-it--04": {
+   "file": "images/cards/v1/universe-how-big-is-it--04.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--04.jpg",
+   "type": "photo",
+   "caption": "The Sun, seen by the Solar Dynamics Observatory",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-how-big-is-it--05": {
+   "file": "images/cards/v1/universe-how-big-is-it--05.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--05.jpg",
+   "type": "photo",
+   "caption": "Young stars in the Serpens Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2415a/",
+   "credit": "NASA, ESA, CSA, STScI, K. Pontoppidan (NASA’s Jet Propulsion Laboratory), J. Green (Space Telescope Science Institute) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--06": {
+   "file": "images/cards/v1/universe-how-big-is-it--06.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--06.jpg",
+   "type": "photo",
+   "caption": "The Southern Ring Nebula, the glowing shell of a dying star",
+   "source": "https://esawebb.org/images/weic2207b/",
+   "credit": "NASA, ESA, CSA, STScI, and the Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--07": {
+   "file": "images/cards/v1/universe-how-big-is-it--07.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--07.jpg",
+   "type": "photo",
+   "caption": "The Ring Nebula, gas shed by a star like the Sun",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--08": {
+   "file": "images/cards/v1/universe-how-big-is-it--08.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--08.jpg",
+   "type": "photo",
+   "caption": "The Voyager Golden Record",
+   "source": "https://images.nasa.gov/details/PIA14113",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-how-big-is-it--09": {
+   "file": "images/cards/v1/universe-how-big-is-it--09.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--09.jpg",
+   "type": "photo",
+   "caption": "Thousands of comet-like knots in the Helix Nebula",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--10": {
+   "file": "images/cards/v1/universe-how-big-is-it--10.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--10.jpg",
+   "type": "photo",
+   "caption": "Faint galaxies in the dark sky above the Horsehead Nebula",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--11": {
+   "file": "images/cards/v1/universe-how-big-is-it--11.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--11.jpg",
+   "type": "photo",
+   "caption": "A bright star and cluster galaxies in the El Gordo field",
+   "source": "https://esawebb.org/images/elgordo1/",
+   "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--12": {
+   "file": "images/cards/v1/universe-how-big-is-it--12.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--12.jpg",
+   "type": "photo",
+   "caption": "A red star among the crowded stars of the Tarantula Nebula",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--13": {
+   "file": "images/cards/v1/universe-how-big-is-it--13.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--13.jpg",
+   "type": "photo",
+   "caption": "The bright star at the heart of Wolf-Rayet 124",
+   "source": "https://esawebb.org/images/weic2307a/",
+   "credit": "NASA, ESA, CSA, STScI, Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--14": {
+   "file": "images/cards/v1/universe-how-big-is-it--14.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--14.jpg",
+   "type": "photo",
+   "caption": "Faint galaxies scattered across a dark patch of sky",
+   "source": "https://esawebb.org/images/weic2428a/",
+   "credit": "ESA/Webb, NASA & CSA, H. Dannerbauer (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--15": {
+   "file": "images/cards/v1/universe-how-big-is-it--15.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--15.jpg",
+   "type": "photo",
+   "caption": "Stars above the Cosmic Cliffs, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--16": {
+   "file": "images/cards/v1/universe-how-big-is-it--16.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--16.jpg",
+   "type": "photo",
+   "caption": "The Whirlpool Galaxy and its companion",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--17": {
+   "file": "images/cards/v1/universe-how-big-is-it--17.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--17.jpg",
+   "type": "photo",
+   "caption": "JADES-GS-z14-0, one of the most distant galaxies known",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--18": {
+   "file": "images/cards/v1/universe-how-big-is-it--18.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--18.jpg",
+   "type": "photo",
+   "caption": "Our Milky Way galaxy (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA10748",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-how-big-is-it--19": {
+   "file": "images/cards/v1/universe-how-big-is-it--19.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--19.jpg",
+   "type": "photo",
+   "caption": "Sagittarius C, a star-forming region near our galaxy's centre",
+   "source": "https://esawebb.org/images/weic2328a/",
+   "credit": "NASA, ESA, CSA, STScI, S. Crowe (UVA) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--20": {
+   "file": "images/cards/v1/universe-how-big-is-it--20.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--20.jpg",
+   "type": "photo",
+   "caption": "The Andromeda Galaxy, Hubble's sharpest view",
+   "source": "https://esahubble.org/images/heic1502a/",
+   "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--21": {
+   "file": "images/cards/v1/universe-how-big-is-it--21.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--21.jpg",
+   "type": "photo",
+   "caption": "Stars and dust in the Andromeda Galaxy's disk",
+   "source": "https://esahubble.org/images/heic1502a/",
+   "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--22": {
+   "file": "images/cards/v1/universe-how-big-is-it--22.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--22.jpg",
+   "type": "photo",
+   "caption": "The Tarantula Nebula, a giant star nursery in a neighbouring galaxy",
+   "source": "https://esawebb.org/images/weic2212a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--23": {
+   "file": "images/cards/v1/universe-how-big-is-it--23.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--23.jpg",
+   "type": "photo",
+   "caption": "Stephan's Quintet, five galaxies locked in a gravitational dance",
+   "source": "https://esawebb.org/images/weic2208a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--24": {
+   "file": "images/cards/v1/universe-how-big-is-it--24.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--24.jpg",
+   "type": "photo",
+   "caption": "Pandora's Cluster, a crowd of galaxies seen by Webb",
+   "source": "https://esawebb.org/images/weic2305a/",
+   "credit": "NASA, ESA, CSA, I. Labbe (Swinburne University of Technology), R. Bezanson (University of Pittsburgh), A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--25": {
+   "file": "images/cards/v1/universe-how-big-is-it--25.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--25.jpg",
+   "type": "photo",
+   "caption": "Webb's first deep field: thousands of galaxies in a speck of sky",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--26": {
+   "file": "images/cards/v1/universe-how-big-is-it--26.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--26.jpg",
+   "type": "photo",
+   "caption": "Westerlund 2, a cluster of young stars",
+   "source": "https://esahubble.org/images/heic1509a/",
+   "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--27": {
+   "file": "images/cards/v1/universe-how-big-is-it--27.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--27.jpg",
+   "type": "photo",
+   "caption": "The Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--28": {
+   "file": "images/cards/v1/universe-how-big-is-it--28.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--28.jpg",
+   "type": "photo",
+   "caption": "The cosmic microwave background, the oldest light in the universe",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-how-big-is-it--29": {
+   "file": "images/cards/v1/universe-how-big-is-it--29.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--29.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--30": {
+   "file": "images/cards/v1/universe-how-big-is-it--30.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--30.jpg",
+   "type": "photo",
+   "caption": "Countless faint galaxies in a Webb deep field",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--31": {
+   "file": "images/cards/v1/universe-how-big-is-it--31.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--31.jpg",
+   "type": "photo",
+   "caption": "The starburst galaxy Messier 82",
+   "source": "https://esahubble.org/images/heic0604a/",
+   "credit": "NASA, ESA and the Hubble Heritage Team (STScI/AURA). Acknowledgment: J. Gallagher (University of Wisconsin), M. Mountain (STScI) and P. Puxley (NSF) (CC BY 4.0)"
+  },
+  "universe-how-big-is-it--32": {
+   "file": "images/cards/v1/universe-how-big-is-it--32.webp",
+   "full": "images/cards/v1-full/universe-how-big-is-it--32.jpg",
+   "type": "photo",
+   "caption": "Earth as a pale blue dot, seen by Voyager 1 from about 6 billion km",
+   "source": "https://images.nasa.gov/details/PIA00452",
+   "credit": "NASA/JPL (public domain)"
+  },
+  "universe-lives-of-stars--01": {
+   "file": "images/cards/v1/universe-lives-of-stars--01.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--01.jpg",
+   "type": "photo",
+   "caption": "The Tarantula Nebula seen by Hubble",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--02": {
+   "file": "images/cards/v1/universe-lives-of-stars--02.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--02.jpg",
+   "type": "photo",
+   "caption": "The Cosmic Cliffs of the Carina Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--03": {
+   "file": "images/cards/v1/universe-lives-of-stars--03.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--03.jpg",
+   "type": "photo",
+   "caption": "Webb's Pillars of Creation, where new stars are forming",
+   "source": "https://esawebb.org/images/weic2216a/",
+   "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--04": {
+   "file": "images/cards/v1/universe-lives-of-stars--04.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--04.jpg",
+   "type": "photo",
+   "caption": "Young stars in the Serpens Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2415a/",
+   "credit": "NASA, ESA, CSA, STScI, K. Pontoppidan (NASA’s Jet Propulsion Laboratory), J. Green (Space Telescope Science Institute) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--05": {
+   "file": "images/cards/v1/universe-lives-of-stars--05.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--05.jpg",
+   "type": "photo",
+   "caption": "The Sun, seen by the Solar Dynamics Observatory",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-lives-of-stars--06": {
+   "file": "images/cards/v1/universe-lives-of-stars--06.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--06.jpg",
+   "type": "photo",
+   "caption": "The Sun's full disk seen by the Solar Dynamics Observatory",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002035",
+   "credit": "NASA (public domain)"
+  },
+  "universe-lives-of-stars--07": {
+   "file": "images/cards/v1/universe-lives-of-stars--07.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--07.jpg",
+   "type": "photo",
+   "caption": "Close-up of the Sun's turbulent surface, seen by SDO",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-lives-of-stars--08": {
+   "file": "images/cards/v1/universe-lives-of-stars--08.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--08.jpg",
+   "type": "photo",
+   "caption": "Comet-like knots in the Helix Nebula, shaped by a stellar wind",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--09": {
+   "file": "images/cards/v1/universe-lives-of-stars--09.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--09.jpg",
+   "type": "photo",
+   "caption": "A burst of material leaving the Sun",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-lives-of-stars--10": {
+   "file": "images/cards/v1/universe-lives-of-stars--10.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--10.jpg",
+   "type": "photo",
+   "caption": "Stars of different colours in the Tarantula Nebula",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--11": {
+   "file": "images/cards/v1/universe-lives-of-stars--11.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--11.jpg",
+   "type": "photo",
+   "caption": "Stars and glowing gas near our galaxy's centre",
+   "source": "https://esawebb.org/images/weic2328a/",
+   "credit": "NASA, ESA, CSA, STScI, S. Crowe (UVA) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--12": {
+   "file": "images/cards/v1/universe-lives-of-stars--12.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--12.jpg",
+   "type": "photo",
+   "caption": "A cluster of massive young stars in the Tarantula Nebula",
+   "source": "https://esawebb.org/images/weic2212a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--13": {
+   "file": "images/cards/v1/universe-lives-of-stars--13.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--13.jpg",
+   "type": "photo",
+   "caption": "Wolf-Rayet 124, a giant star shedding its outer layers",
+   "source": "https://esawebb.org/images/weic2307a/",
+   "credit": "NASA, ESA, CSA, STScI, Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--14": {
+   "file": "images/cards/v1/universe-lives-of-stars--14.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--14.jpg",
+   "type": "photo",
+   "caption": "The Ring Nebula, gas shed by a star like the Sun",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--15": {
+   "file": "images/cards/v1/universe-lives-of-stars--15.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--15.jpg",
+   "type": "photo",
+   "caption": "The Southern Ring Nebula, the glowing shell of a dying star",
+   "source": "https://esawebb.org/images/weic2207b/",
+   "credit": "NASA, ESA, CSA, STScI, and the Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--16": {
+   "file": "images/cards/v1/universe-lives-of-stars--16.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--16.jpg",
+   "type": "photo",
+   "caption": "The bright heart of the Butterfly Nebula",
+   "source": "https://esahubble.org/images/heic0910h/",
+   "credit": "NASA, ESA and the Hubble SM4 ERO Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--17": {
+   "file": "images/cards/v1/universe-lives-of-stars--17.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--17.jpg",
+   "type": "photo",
+   "caption": "Part of the Ring Nebula's glowing shell",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--18": {
+   "file": "images/cards/v1/universe-lives-of-stars--18.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--18.jpg",
+   "type": "photo",
+   "caption": "Cassiopeia A, the remains of an exploded star",
+   "source": "https://esawebb.org/images/weic2330a/",
+   "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--19": {
+   "file": "images/cards/v1/universe-lives-of-stars--19.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--19.jpg",
+   "type": "photo",
+   "caption": "The Crab Nebula, wreckage of a star that exploded in 1054",
+   "source": "https://esahubble.org/images/heic0515a/",
+   "credit": "NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--20": {
+   "file": "images/cards/v1/universe-lives-of-stars--20.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--20.jpg",
+   "type": "photo",
+   "caption": "Glowing filaments in Cassiopeia A, the remains of an exploded star",
+   "source": "https://esawebb.org/images/weic2330a/",
+   "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--21": {
+   "file": "images/cards/v1/universe-lives-of-stars--21.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--21.jpg",
+   "type": "photo",
+   "caption": "The Crab Nebula seen by Webb",
+   "source": "https://esawebb.org/images/weic2326a/",
+   "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--22": {
+   "file": "images/cards/v1/universe-lives-of-stars--22.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--22.jpg",
+   "type": "photo",
+   "caption": "Filaments of the Crab Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2326a/",
+   "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--23": {
+   "file": "images/cards/v1/universe-lives-of-stars--23.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--23.jpg",
+   "type": "photo",
+   "caption": "Glowing filaments at the edge of the Crab Nebula",
+   "source": "https://esahubble.org/images/heic0515a/",
+   "credit": "NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--24": {
+   "file": "images/cards/v1/universe-lives-of-stars--24.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--24.jpg",
+   "type": "photo",
+   "caption": "Golden glowing gas in the Helix Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--25": {
+   "file": "images/cards/v1/universe-lives-of-stars--25.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--25.jpg",
+   "type": "photo",
+   "caption": "The Butterfly Nebula, a dying star's wings",
+   "source": "https://esahubble.org/images/heic0910h/",
+   "credit": "NASA, ESA and the Hubble SM4 ERO Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--26": {
+   "file": "images/cards/v1/universe-lives-of-stars--26.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--26.jpg",
+   "type": "photo",
+   "caption": "A bright star shining above the Horsehead Nebula",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--27": {
+   "file": "images/cards/v1/universe-lives-of-stars--27.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--27.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy",
+   "source": "https://esahubble.org/images/opo0328a/",
+   "credit": "NASA/ESA and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--28": {
+   "file": "images/cards/v1/universe-lives-of-stars--28.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--28.jpg",
+   "type": "photo",
+   "caption": "Faint, distant galaxies in the Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--29": {
+   "file": "images/cards/v1/universe-lives-of-stars--29.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--29.jpg",
+   "type": "photo",
+   "caption": "The two stars at the heart of the Southern Ring Nebula",
+   "source": "https://esawebb.org/images/weic2207b/",
+   "credit": "NASA, ESA, CSA, STScI, and the Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--30": {
+   "file": "images/cards/v1/universe-lives-of-stars--30.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--30.jpg",
+   "type": "photo",
+   "caption": "A bright twinkling-looking star in Webb's first deep field",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--31": {
+   "file": "images/cards/v1/universe-lives-of-stars--31.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--31.jpg",
+   "type": "photo",
+   "caption": "Mystic Mountain in the Carina Nebula",
+   "source": "https://esahubble.org/images/heic1007a/",
+   "credit": "NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI) (CC BY 4.0)"
+  },
+  "universe-lives-of-stars--32": {
+   "file": "images/cards/v1/universe-lives-of-stars--32.webp",
+   "full": "images/cards/v1-full/universe-lives-of-stars--32.jpg",
+   "type": "photo",
+   "caption": "The Pillars of Creation seen by Hubble",
+   "source": "https://esahubble.org/images/heic1501a/",
+   "credit": "NASA, ESA/Hubble and the Hubble Heritage Team (CC BY 4.0)"
+  },
+  "universe-story-of-everything--01": {
+   "file": "images/cards/v1/universe-story-of-everything--01.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--01.jpg",
+   "type": "photo",
+   "caption": "The tip of a pillar in Webb's Pillars of Creation",
+   "source": "https://esawebb.org/images/weic2216a/",
+   "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--02": {
+   "file": "images/cards/v1/universe-story-of-everything--02.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--02.jpg",
+   "type": "photo",
+   "caption": "The Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-story-of-everything--03": {
+   "file": "images/cards/v1/universe-story-of-everything--03.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--03.jpg",
+   "type": "photo",
+   "caption": "Galaxies in Webb's first deep field",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-story-of-everything--04": {
+   "file": "images/cards/v1/universe-story-of-everything--04.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--04.jpg",
+   "type": "photo",
+   "caption": "Galaxies of the El Gordo cluster and others far behind it",
+   "source": "https://esawebb.org/images/elgordo1/",
+   "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--05": {
+   "file": "images/cards/v1/universe-story-of-everything--05.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--05.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-story-of-everything--06": {
+   "file": "images/cards/v1/universe-story-of-everything--06.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--06.jpg",
+   "type": "photo",
+   "caption": "The Phantom Galaxy, a spiral 32 million light-years away",
+   "source": "https://esawebb.org/images/potm2208a/",
+   "credit": "ESA/Webb, NASA & CSA, J. Lee and the PHANGS-JWST Team. Acknowledgement: J. Schmidt (CC BY 4.0)"
+  },
+  "universe-story-of-everything--07": {
+   "file": "images/cards/v1/universe-story-of-everything--07.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--07.jpg",
+   "type": "photo",
+   "caption": "The cosmic microwave background, the oldest light in the universe",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-story-of-everything--08": {
+   "file": "images/cards/v1/universe-story-of-everything--08.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--08.jpg",
+   "type": "photo",
+   "caption": "Ripples in the cosmic microwave background, mapped by Planck",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-story-of-everything--09": {
+   "file": "images/cards/v1/universe-story-of-everything--09.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--09.jpg",
+   "type": "photo",
+   "caption": "Glowing gas near the centre of our galaxy",
+   "source": "https://esawebb.org/images/weic2328a/",
+   "credit": "NASA, ESA, CSA, STScI, S. Crowe (UVA) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--10": {
+   "file": "images/cards/v1/universe-story-of-everything--10.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--10.jpg",
+   "type": "photo",
+   "caption": "Glowing gas and dust in the Tarantula Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2212a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-story-of-everything--11": {
+   "file": "images/cards/v1/universe-story-of-everything--11.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--11.jpg",
+   "type": "photo",
+   "caption": "Young stars in the Serpens Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2415a/",
+   "credit": "NASA, ESA, CSA, STScI, K. Pontoppidan (NASA’s Jet Propulsion Laboratory), J. Green (Space Telescope Science Institute) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--12": {
+   "file": "images/cards/v1/universe-story-of-everything--12.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--12.jpg",
+   "type": "photo",
+   "caption": "Distant galaxies in the Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-story-of-everything--13": {
+   "file": "images/cards/v1/universe-story-of-everything--13.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--13.jpg",
+   "type": "photo",
+   "caption": "The glowing interior of the Ring Nebula",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-story-of-everything--14": {
+   "file": "images/cards/v1/universe-story-of-everything--14.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--14.jpg",
+   "type": "photo",
+   "caption": "Part of the cosmic microwave background, mapped by Planck",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-story-of-everything--15": {
+   "file": "images/cards/v1/universe-story-of-everything--15.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--15.jpg",
+   "type": "photo",
+   "caption": "Faint galaxies in the dark sky above the Horsehead Nebula",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--16": {
+   "file": "images/cards/v1/universe-story-of-everything--16.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--16.jpg",
+   "type": "photo",
+   "caption": "Webb's first deep field: thousands of galaxies in a speck of sky",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-story-of-everything--17": {
+   "file": "images/cards/v1/universe-story-of-everything--17.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--17.jpg",
+   "type": "photo",
+   "caption": "JADES-GS-z14-0, one of the most distant galaxies known",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--18": {
+   "file": "images/cards/v1/universe-story-of-everything--18.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--18.jpg",
+   "type": "photo",
+   "caption": "JADES-GS-z14-0, one of the most distant galaxies known",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--19": {
+   "file": "images/cards/v1/universe-story-of-everything--19.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--19.jpg",
+   "type": "photo",
+   "caption": "The Spiderweb protocluster, galaxies gathering in the young universe",
+   "source": "https://esawebb.org/images/weic2428a/",
+   "credit": "ESA/Webb, NASA & CSA, H. Dannerbauer (CC BY 4.0)"
+  },
+  "universe-story-of-everything--20": {
+   "file": "images/cards/v1/universe-story-of-everything--20.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--20.jpg",
+   "type": "photo",
+   "caption": "Distant galaxies in the El Gordo field",
+   "source": "https://esawebb.org/images/elgordo1/",
+   "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--21": {
+   "file": "images/cards/v1/universe-story-of-everything--21.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--21.jpg",
+   "type": "photo",
+   "caption": "The glowing surface of the Sun, seen by SDO",
+   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001770",
+   "credit": "NASA (public domain)"
+  },
+  "universe-story-of-everything--22": {
+   "file": "images/cards/v1/universe-story-of-everything--22.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--22.jpg",
+   "type": "photo",
+   "caption": "The Cartwheel Galaxy, reshaped by a collision",
+   "source": "https://esawebb.org/images/weic2211a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-story-of-everything--23": {
+   "file": "images/cards/v1/universe-story-of-everything--23.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--23.jpg",
+   "type": "photo",
+   "caption": "Spiral arms of the Milky Way (artist's concept)",
+   "source": "https://images.nasa.gov/details/PIA10748",
+   "credit": "NASA/JPL-Caltech (public domain)"
+  },
+  "universe-story-of-everything--24": {
+   "file": "images/cards/v1/universe-story-of-everything--24.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--24.jpg",
+   "type": "photo",
+   "caption": "The Whirlpool Galaxy and its companion",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--25": {
+   "file": "images/cards/v1/universe-story-of-everything--25.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--25.jpg",
+   "type": "photo",
+   "caption": "The core of the starburst galaxy Messier 82",
+   "source": "https://esahubble.org/images/heic0604a/",
+   "credit": "NASA, ESA and the Hubble Heritage Team (STScI/AURA). Acknowledgment: J. Gallagher (University of Wisconsin), M. Mountain (STScI) and P. Puxley (NSF) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--26": {
+   "file": "images/cards/v1/universe-story-of-everything--26.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--26.jpg",
+   "type": "photo",
+   "caption": "Star-forming regions in the colliding Antennae Galaxies",
+   "source": "https://esahubble.org/images/potw1345a/",
+   "credit": "ESA/Hubble & NASA (CC BY 4.0)"
+  },
+  "universe-story-of-everything--27": {
+   "file": "images/cards/v1/universe-story-of-everything--27.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--27.jpg",
+   "type": "photo",
+   "caption": "The Ring Nebula, gas shed by a star like the Sun",
+   "source": "https://esawebb.org/images/weic2320b/",
+   "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)"
+  },
+  "universe-story-of-everything--28": {
+   "file": "images/cards/v1/universe-story-of-everything--28.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--28.jpg",
+   "type": "photo",
+   "caption": "The Andromeda Galaxy, Hubble's sharpest view",
+   "source": "https://esahubble.org/images/heic1502a/",
+   "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)"
+  },
+  "universe-story-of-everything--29": {
+   "file": "images/cards/v1/universe-story-of-everything--29.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--29.jpg",
+   "type": "photo",
+   "caption": "The edge of the Horsehead Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-story-of-everything--30": {
+   "file": "images/cards/v1/universe-story-of-everything--30.webp",
+   "full": "images/cards/v1-full/universe-story-of-everything--30.jpg",
+   "type": "photo",
+   "caption": "Mystic Mountain in the Carina Nebula",
+   "source": "https://esahubble.org/images/heic1007a/",
+   "credit": "NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--01": {
+   "file": "images/cards/v1/universe-what-we-dont-know--01.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--01.jpg",
+   "type": "photo",
+   "caption": "The cosmic microwave background, the oldest light in the universe",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-what-we-dont-know--02": {
+   "file": "images/cards/v1/universe-what-we-dont-know--02.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--02.jpg",
+   "type": "photo",
+   "caption": "Galaxies in the Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--03": {
+   "file": "images/cards/v1/universe-what-we-dont-know--03.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--03.jpg",
+   "type": "photo",
+   "caption": "The Whirlpool Galaxy and its companion",
+   "source": "https://esahubble.org/images/heic0506a/",
+   "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--04": {
+   "file": "images/cards/v1/universe-what-we-dont-know--04.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--04.jpg",
+   "type": "photo",
+   "caption": "A galaxy's light bent into an arc by the El Gordo cluster",
+   "source": "https://esawebb.org/images/elgordo1/",
+   "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--05": {
+   "file": "images/cards/v1/universe-what-we-dont-know--05.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--05.jpg",
+   "type": "photo",
+   "caption": "Crowded galaxies at the heart of Pandora's Cluster",
+   "source": "https://esawebb.org/images/weic2305a/",
+   "credit": "NASA, ESA, CSA, I. Labbe (Swinburne University of Technology), R. Bezanson (University of Pittsburgh), A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--06": {
+   "file": "images/cards/v1/universe-what-we-dont-know--06.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--06.jpg",
+   "type": "photo",
+   "caption": "Faint galaxies in the Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--07": {
+   "file": "images/cards/v1/universe-what-we-dont-know--07.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--07.jpg",
+   "type": "photo",
+   "caption": "The Sombrero Galaxy in infrared light",
+   "source": "https://esawebb.org/images/weic2427a/",
+   "credit": "NASA, ESA, CSA, STScI (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--08": {
+   "file": "images/cards/v1/universe-what-we-dont-know--08.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--08.jpg",
+   "type": "photo",
+   "caption": "Galaxies in Webb's first deep field",
+   "source": "https://esawebb.org/images/weic2209a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--09": {
+   "file": "images/cards/v1/universe-what-we-dont-know--09.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--09.jpg",
+   "type": "photo",
+   "caption": "Stephan's Quintet, five galaxies locked in a gravitational dance",
+   "source": "https://esawebb.org/images/weic2208a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--10": {
+   "file": "images/cards/v1/universe-what-we-dont-know--10.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--10.jpg",
+   "type": "photo",
+   "caption": "Part of the cosmic microwave background, mapped by Planck",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-what-we-dont-know--11": {
+   "file": "images/cards/v1/universe-what-we-dont-know--11.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--11.jpg",
+   "type": "photo",
+   "caption": "Glowing knots in the Helix Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2601a/",
+   "credit": "NASA, ESA, CSA, STScI, A. Pagan (STScI) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--12": {
+   "file": "images/cards/v1/universe-what-we-dont-know--12.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--12.jpg",
+   "type": "photo",
+   "caption": "The Butterfly Nebula, a dying star's wings",
+   "source": "https://esahubble.org/images/heic0910h/",
+   "credit": "NASA, ESA and the Hubble SM4 ERO Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--13": {
+   "file": "images/cards/v1/universe-what-we-dont-know--13.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--13.jpg",
+   "type": "photo",
+   "caption": "The Pillars of Creation seen by Hubble",
+   "source": "https://esahubble.org/images/heic1501a/",
+   "credit": "NASA, ESA/Hubble and the Hubble Heritage Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--14": {
+   "file": "images/cards/v1/universe-what-we-dont-know--14.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--14.jpg",
+   "type": "photo",
+   "caption": "The Cosmic Cliffs of the Carina Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2205a/",
+   "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--15": {
+   "file": "images/cards/v1/universe-what-we-dont-know--15.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--15.jpg",
+   "type": "photo",
+   "caption": "Part of the cosmic microwave background, mapped by Planck",
+   "source": "https://images.nasa.gov/details/PIA16873",
+   "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+  },
+  "universe-what-we-dont-know--16": {
+   "file": "images/cards/v1/universe-what-we-dont-know--16.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--16.jpg",
+   "type": "photo",
+   "caption": "Distant galaxies in the Hubble Ultra Deep Field",
+   "source": "https://esahubble.org/images/heic0406a/",
+   "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--17": {
+   "file": "images/cards/v1/universe-what-we-dont-know--17.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--17.jpg",
+   "type": "photo",
+   "caption": "The Southern Ring Nebula, the glowing shell of a dying star",
+   "source": "https://esawebb.org/images/weic2207b/",
+   "credit": "NASA, ESA, CSA, STScI, and the Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--18": {
+   "file": "images/cards/v1/universe-what-we-dont-know--18.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--18.jpg",
+   "type": "photo",
+   "caption": "The Antennae Galaxies, two galaxies colliding",
+   "source": "https://esahubble.org/images/potw1345a/",
+   "credit": "ESA/Hubble & NASA (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--19": {
+   "file": "images/cards/v1/universe-what-we-dont-know--19.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--19.jpg",
+   "type": "photo",
+   "caption": "M87*, the first black hole ever pictured",
+   "source": "https://www.eso.org/public/images/eso1907a/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--20": {
+   "file": "images/cards/v1/universe-what-we-dont-know--20.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--20.jpg",
+   "type": "photo",
+   "caption": "The shadow of Sagittarius A*, the black hole at our galaxy's centre",
+   "source": "https://www.eso.org/public/images/eso2208-eht-mwa/",
+   "credit": "EHT Collaboration (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--21": {
+   "file": "images/cards/v1/universe-what-we-dont-know--21.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--21.jpg",
+   "type": "photo",
+   "caption": "Wolf-Rayet 124, a giant star shedding its outer layers",
+   "source": "https://esawebb.org/images/weic2307a/",
+   "credit": "NASA, ESA, CSA, STScI, Webb ERO Production Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--22": {
+   "file": "images/cards/v1/universe-what-we-dont-know--22.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--22.jpg",
+   "type": "photo",
+   "caption": "Filaments of the Crab Nebula, seen by Webb",
+   "source": "https://esawebb.org/images/weic2326a/",
+   "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--23": {
+   "file": "images/cards/v1/universe-what-we-dont-know--23.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--23.jpg",
+   "type": "photo",
+   "caption": "The Horsehead Nebula's edge, seen by Webb",
+   "source": "https://esawebb.org/images/weic2411a/",
+   "credit": "ESA/Webb, NASA, CSA, K. Misselt (University of Arizona) and A. Abergel (IAS/University Paris-Saclay, CNRS) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--24": {
+   "file": "images/cards/v1/universe-what-we-dont-know--24.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--24.jpg",
+   "type": "photo",
+   "caption": "A galaxy and stars in the Spiderweb protocluster field",
+   "source": "https://esawebb.org/images/weic2428a/",
+   "credit": "ESA/Webb, NASA & CSA, H. Dannerbauer (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--25": {
+   "file": "images/cards/v1/universe-what-we-dont-know--25.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--25.jpg",
+   "type": "photo",
+   "caption": "JADES-GS-z14-0, one of the most distant galaxies known",
+   "source": "https://esawebb.org/images/jades4/",
+   "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--26": {
+   "file": "images/cards/v1/universe-what-we-dont-know--26.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--26.jpg",
+   "type": "photo",
+   "caption": "The Hubble eXtreme Deep Field",
+   "source": "https://esahubble.org/images/heic1214a/",
+   "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--27": {
+   "file": "images/cards/v1/universe-what-we-dont-know--27.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--27.jpg",
+   "type": "photo",
+   "caption": "The turbulent heart of the Crab Nebula",
+   "source": "https://esahubble.org/images/heic0515a/",
+   "credit": "NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble) (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--28": {
+   "file": "images/cards/v1/universe-what-we-dont-know--28.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--28.jpg",
+   "type": "photo",
+   "caption": "Glowing gas and stars in the Tarantula Nebula",
+   "source": "https://esahubble.org/images/heic1105a/",
+   "credit": "NASA, ESA (CC BY 4.0)"
+  },
+  "universe-what-we-dont-know--29": {
+   "file": "images/cards/v1/universe-what-we-dont-know--29.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--29.jpg",
+   "type": "photo",
+   "caption": "Rock on Mars, photographed by Perseverance",
+   "source": "https://images.nasa.gov/details/PIA26368",
+   "credit": "NASA/JPL-Caltech/MSSS (public domain)"
+  },
+  "universe-what-we-dont-know--30": {
+   "file": "images/cards/v1/universe-what-we-dont-know--30.webp",
+   "full": "images/cards/v1-full/universe-what-we-dont-know--30.jpg",
+   "type": "photo",
+   "caption": "Mystic Mountain in the Carina Nebula",
+   "source": "https://esahubble.org/images/heic1007a/",
+   "credit": "NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI) (CC BY 4.0)"
+  },
   "up-from-slavery-booker-t-washington--01": {
    "file": "images/cards/v1/up-from-slavery-booker-t-washington--01.webp",
    "full": "images/cards/v1-full/up-from-slavery-booker-t-washington--01.png",

@@ -1,0 +1,740 @@
+{
+  "source": {
+    "id": "universe-what-we-dont-know",
+    "title": "What We Still Don't Know",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, Dark Matter & Dark Energy, https://science.nasa.gov/universe/dark-matter-dark-energy/; NASA Science, The Big Bang, https://science.nasa.gov/universe/the-big-bang/; NASA Science, Black Holes, https://science.nasa.gov/universe/black-holes/; NASA Science, James Webb Space Telescope, https://science.nasa.gov/mission/webb/; NASA Science, OSIRIS-REx, https://science.nasa.gov/mission/osiris-rex/; European Space Agency, Planck, https://www.esa.int/Science_Exploration/Space_Science/Planck; European Space Agency, Euclid, https://www.esa.int/Science_Exploration/Space_Science/Euclid; ESA/Webb, https://esawebb.org/"
+  },
+  "cards": [
+    {
+      "id": "universe-what-we-dont-know--01",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "edge-of-knowledge",
+        "cosmology",
+        "big-bang"
+      ],
+      "title": "We can date the universe to within 1% yet can't say what most of it is",
+      "body": "Here is what science can say with real confidence. The universe is about 13.8 billion years old. It began hot and dense and has been expanding ever since. Its afterglow, the cosmic microwave background, still fills the sky at about 2.7 degrees above absolute zero. Stars forge the elements, and galaxies are pulling away from one another.\n\nThose facts rest on decades of measurement from telescopes on the ground and in space. And yet, the same measurements reveal enormous gaps. We do not know what most of the universe is made of, why it is speeding up, or what, if anything, came before it.\n\nThis guide walks the edge of knowledge. For each mystery, it first sets out what is known, then says plainly where the knowing stops.",
+      "apply_it": "Tonight, look up and name one thing about the sky you are sure of, and one thing you have always wondered. Keep both in mind as you read on.",
+      "quiz": {
+        "question": "About how old is the universe, according to current measurements?",
+        "options": [
+          "About 4.6 billion years",
+          "About 13.8 billion years",
+          "About 93 billion years",
+          "Nobody has any estimate"
+        ],
+        "answer": 1,
+        "explanation": "Measurements of the cosmic microwave background and of cosmic expansion put the universe's age at about 13.8 billion years. 4.6 billion is the age of the Solar System."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--02",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "dark-matter",
+        "dark-energy",
+        "composition"
+      ],
+      "title": "Everything you have ever seen makes up only about 5% of the universe",
+      "body": "Every star, planet, gas cloud and living thing is built from ordinary matter: atoms. Careful measurements, especially of the cosmic microwave background by ESA's Planck mission, show that atoms make up only about 5% of the universe's total contents.\n\nRoughly 27% appears to be dark matter, which pulls with gravity but gives off no light. The remaining 68% or so is dark energy, which seems to be driving the expansion of the universe faster and faster.\n\nThe proportions are well measured. What the two dark ingredients actually are is unknown. They are names for effects we can detect, not explanations. Picture a pie chart of reality where 95% of the slices are labelled with question marks. That is where cosmology stands today.",
+      "apply_it": "Hold out your hand and imagine that only the tip of your little finger stood for everything made of atoms. The rest of your hand is the part nobody can yet explain.",
+      "quiz": {
+        "question": "Roughly what share of the universe is ordinary matter made of atoms?",
+        "options": [
+          "About 5%",
+          "About 27%",
+          "About 68%",
+          "About 95%"
+        ],
+        "answer": 0,
+        "explanation": "Ordinary matter is about 5%. Dark matter is about 27% and dark energy about 68%, so roughly 95% of the universe is something we cannot yet identify."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "dark-matter",
+        "galaxies",
+        "evidence"
+      ],
+      "title": "Galaxies spin so fast they should fly apart, but they don't",
+      "body": "Think of a spinning roundabout. Push it too fast and anyone not holding on is thrown off. Galaxies behave the same way: their stars orbit the centre, held in by gravity.\n\nIn the 1970s, astronomer Vera Rubin and colleagues measured how fast stars orbit in spiral galaxies. Stars far out in the disc were moving about as fast as those near the centre. With only the visible stars and gas providing gravity, those outer stars should have been flung away.\n\nThe pattern has been confirmed in many galaxies since. Something unseen seems to add extra gravity, spread in a vast halo around each galaxy. Decades earlier, Fritz Zwicky had noticed galaxies in clusters moving too fast as well. This is the first strong line of evidence for dark matter.",
+      "apply_it": "Swing a bag in a circle, then swing it faster. Feel how much harder you must hold on. That grip is what galaxies need, and visible matter alone cannot supply it.",
+      "quiz": {
+        "question": "What did measurements of stars in the outer parts of spiral galaxies show?",
+        "options": [
+          "They orbit much more slowly than expected",
+          "They are not moving at all",
+          "They orbit about as fast as inner stars, too fast for visible matter alone",
+          "They are moving towards the centre"
+        ],
+        "answer": 2,
+        "explanation": "Outer stars move too fast to be held by visible matter alone, suggesting extra unseen mass: dark matter."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "dark-matter",
+        "gravitational-lensing",
+        "evidence"
+      ],
+      "title": "Invisible mass bends light, and astronomers can weigh it",
+      "body": "Einstein's general relativity says mass curves space, and light follows that curve. A big enough mass acts like a lens, bending and magnifying light from galaxies far behind it. This is called gravitational lensing, and it has been seen thousands of times.\n\nThe Hubble and Webb telescopes capture lensed galaxies smeared into arcs, and sometimes into near-perfect rings. By measuring how strongly the light is bent, astronomers can work out how much mass the lens contains.\n\nThe answer is consistent: galaxy clusters hold several times more mass than all their stars and hot gas put together. Lensing does not depend on light from the mass itself, so it catches what telescopes cannot see directly. ESA's Euclid mission is now mapping this hidden mass across a large part of the sky.",
+      "apply_it": "Look through the base of a wine glass at a street light. The warped, stretched shape is a small taste of how a galaxy cluster distorts the light behind it.",
+      "quiz": {
+        "question": "How does gravitational lensing reveal dark matter?",
+        "options": [
+          "Dark matter glows when light hits it",
+          "Dark matter absorbs all background light",
+          "It reveals the colour of dark matter",
+          "The amount light is bent shows how much total mass is present, including unseen mass"
+        ],
+        "answer": 3,
+        "explanation": "Lensing depends on total mass, not on light. Measuring the bending reveals far more mass than the visible matter accounts for."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "dark-matter",
+        "bullet-cluster",
+        "evidence"
+      ],
+      "title": "Two galaxy clusters collided, and their dark matter kept going",
+      "body": "About 3.8 billion light-years away lies the Bullet Cluster, really two clusters of galaxies that smashed through each other. It offers some of the clearest evidence that dark matter is real stuff.\n\nMost of a cluster's ordinary matter is hot gas, which glows in X-rays. NASA's Chandra X-ray Observatory showed the gas from both clusters slowed and piled up in the middle of the crash, like two water balloons colliding.\n\nBut lensing maps showed most of the mass had sailed straight on, ahead of the gas, along with the galaxies. So most of the mass is not in the gas, and it barely interacts with anything except through gravity. That is exactly how dark matter is expected to behave. The Bullet Cluster is hard to explain by simply tweaking the laws of gravity.",
+      "apply_it": "Next time you see two crowds pass through each other on a pavement, notice who collides and who slips through. The Bullet Cluster sorted matter in a similar way.",
+      "quiz": {
+        "question": "What makes the Bullet Cluster strong evidence for dark matter?",
+        "options": [
+          "Most of the mass passed through, separated from the hot gas that slowed down",
+          "The clusters stopped dead together",
+          "It contains no galaxies",
+          "It glows only in radio waves"
+        ],
+        "answer": 0,
+        "explanation": "Lensing showed most mass moved ahead with the galaxies while the hot gas lagged behind, so most mass is not ordinary gas."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--06",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "dark-matter",
+        "particle-physics",
+        "experiments"
+      ],
+      "title": "Dark matter is everywhere, yet no detector has ever caught a particle of it",
+      "body": "If dark matter is real, it is probably passing through you right now. Yet nobody knows what it is.\n\nIt cannot be ordinary atoms, or dim stars and gas, because measurements of the early universe limit how much normal matter exists. The leading idea is a new kind of particle that rarely, if ever, touches ordinary matter except through gravity.\n\nCandidates include heavy particles called WIMPs and very light ones called axions. Physicists hunt for them with large tanks of liquid xenon deep underground, sensitive radio cavities, and particle collisions at CERN. So far, nothing has been confirmed. Each null result rules out some possibilities and narrows the search.\n\nA minority of researchers explore changing the laws of gravity instead. The puzzle remains open.",
+      "apply_it": "Wave your hand slowly through the air. If the leading idea is right, dark matter particles are streaming through it unhindered. Notice how strange that is to imagine.",
+      "quiz": {
+        "question": "What is the current status of the search for dark matter particles?",
+        "options": [
+          "They were found at CERN in 2012",
+          "None has been confirmed, though many experiments are searching",
+          "They are known to be ordinary dim stars",
+          "The search has been abandoned"
+        ],
+        "answer": 1,
+        "explanation": "No dark matter particle has been confirmed. Underground detectors, collider experiments and other searches keep narrowing the possibilities."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--07",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "dark-energy",
+        "expansion",
+        "supernovae"
+      ],
+      "title": "The universe's expansion is speeding up, and that surprised everyone",
+      "body": "Gravity pulls things together, so astronomers in the 1990s expected cosmic expansion to be slowing down. Two teams set out to measure how much.\n\nThey used a type of exploding star, the Type Ia supernova, which reaches a predictable peak brightness. How bright one looks reveals its distance. Comparing distance with how much its light has been stretched by expansion shows how expansion has changed over time.\n\nIn 1998 both teams reported the same unexpected result: distant supernovae were fainter than expected. The expansion has been accelerating for roughly the last 5 billion years or so. The discovery earned the 2011 Nobel Prize in Physics, and it has since been backed up by maps of galaxies and the cosmic microwave background. Whatever drives it was given a name: dark energy.",
+      "apply_it": "Throw a ball straight up and watch it slow down. Now imagine it speeding up as it rose. That is what astronomers found the universe is doing.",
+      "quiz": {
+        "question": "What kind of object revealed that cosmic expansion is accelerating?",
+        "options": [
+          "Pulsars",
+          "Comets",
+          "Red dwarf stars",
+          "Type Ia supernovae"
+        ],
+        "answer": 3,
+        "explanation": "Type Ia supernovae have a predictable brightness, so they act as distance markers. Distant ones appeared fainter than expected, revealing acceleration."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--08",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "dark-energy",
+        "expansion",
+        "euclid"
+      ],
+      "title": "Something is pushing the universe apart, and nobody knows what it is",
+      "body": "Dark energy makes up roughly 68% of the universe, yet it is perhaps the deepest mystery in physics.\n\nThe simplest idea is that empty space itself carries a small, fixed energy, which Einstein's equations allow as a 'cosmological constant'. But when physicists try to estimate this energy from quantum theory, they get an answer wildly too large, by many orders of magnitude.\n\nAnother possibility is that dark energy changes over time. Recent results from large galaxy surveys have hinted at this, but the evidence is not yet decisive. Some researchers wonder whether our theory of gravity needs revising on the largest scales.\n\nTo find out, ESA's Euclid mission and NASA's Nancy Grace Roman Space Telescope are mapping billions of galaxies to trace how expansion has changed across cosmic history.",
+      "apply_it": "Ask yourself: what does 'empty space' mean to you? Physics suggests even a perfect vacuum may carry energy. Sit with that idea for a minute.",
+      "quiz": {
+        "question": "Which statement about dark energy is accurate?",
+        "options": [
+          "It is known to be a cosmological constant",
+          "It was ruled out in 2011",
+          "Its nature is unknown; it might be constant or might change over time",
+          "It is a form of ordinary matter"
+        ],
+        "answer": 2,
+        "explanation": "Nobody knows what dark energy is. A constant energy of space fits most data, but hints of change over time are being tested by surveys like Euclid."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--09",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "hubble-tension",
+        "expansion",
+        "measurement"
+      ],
+      "title": "Two ways of measuring the universe's growth give different answers",
+      "body": "The Hubble constant tells how fast the universe is expanding today. There are two main ways to measure it, and they disagree.\n\nOne starts in the early universe. Using the cosmic microwave background and our standard model of cosmology, ESA's Planck mission predicts about 67 kilometres per second per megaparsec. The other builds a distance ladder through nearby pulsating stars and supernovae, and gets about 73.\n\nThe gap is only around 9%, but both methods are now so precise that it is hard to blame random error. Webb observations have been used to recheck the nearby measurements, and teams still debate the details.\n\nIf the tension holds, something may be missing from our picture of the cosmos, perhaps in dark energy or the early universe. Nobody yet knows which.",
+      "apply_it": "Measure a room with a tape measure and by counting your paces. If they disagree, which do you trust? That is the Hubble tension, on a cosmic scale.",
+      "quiz": {
+        "question": "What is the 'Hubble tension'?",
+        "options": [
+          "Disagreement between early-universe and nearby measurements of today's expansion rate",
+          "A flaw in the Hubble telescope's mirror",
+          "A debate over who discovered expansion",
+          "The stress on galaxies from expansion"
+        ],
+        "answer": 0,
+        "explanation": "Early-universe data predict about 67 km/s/Mpc while nearby distance-ladder measurements give about 73. The cause of the gap is unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--10",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "big-bang",
+        "beginning",
+        "physics-limits"
+      ],
+      "title": "Rewind the universe to its first instant and physics stops working",
+      "body": "Run cosmic history backwards and the universe gets hotter and denser. Physics describes this well back to a tiny fraction of a second after the Big Bang. Particle colliders recreate some of those conditions, and the amounts of hydrogen and helium in the universe match predictions from the first few minutes.\n\nBut push back to the very start, time zero, and general relativity predicts infinite density: a singularity. Most physicists read that as a sign the theory has broken down, not as a real infinity.\n\nBelow a span called the Planck time, about 10 to the power of minus 43 seconds, quantum effects on gravity should matter, and we have no tested theory for that. So the true first moment is unknown. The Big Bang theory describes what happened after it, not the instant itself.",
+      "apply_it": "Try to picture the very first moment of your own life. You cannot remember it, yet you know it happened. Cosmologists face the same gap with the universe.",
+      "quiz": {
+        "question": "Why can't current physics describe the exact moment of the Big Bang?",
+        "options": [
+          "Telescopes are not big enough yet",
+          "It happened too far away",
+          "Our theories break down at infinite density, where quantum effects on gravity matter",
+          "Scientists have agreed not to study it"
+        ],
+        "answer": 2,
+        "explanation": "General relativity predicts a singularity at time zero, which signals the theory has broken down. A quantum theory of gravity would be needed."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--11",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "big-bang",
+        "before",
+        "time"
+      ],
+      "title": "What came before the Big Bang? The question itself may not make sense",
+      "body": "It feels natural to ask what happened before the Big Bang. Physicists honestly do not know, and some think the question may have no answer.\n\nIn general relativity, time is part of the universe, woven together with space. If time itself began with the Big Bang, then asking what came before is a bit like asking what lies north of the North Pole.\n\nOthers suspect there was something earlier. Proposed possibilities include a previous contracting universe that bounced, or our universe budding from a larger cosmos. These are speculative ideas, not established science, and none has been confirmed by observation.\n\nSome cosmologists hope patterns in the cosmic microwave background or future gravitational wave detectors might one day give clues. For now, the opening line of the cosmic story is missing.",
+      "apply_it": "Stand facing north and imagine walking to the North Pole. Then ask: which way is further north? Notice how a question can sound sensible and still have no answer.",
+      "quiz": {
+        "question": "According to general relativity, why might 'before the Big Bang' have no meaning?",
+        "options": [
+          "Because it was too dark",
+          "Because time itself may have begun with the universe",
+          "Because it was too hot to measure",
+          "Because the Big Bang is still happening"
+        ],
+        "answer": 1,
+        "explanation": "In relativity, time is part of the universe. If time began with the Big Bang, there may be no 'before'. Whether that is true is still unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--12",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "antimatter",
+        "particles",
+        "physics"
+      ],
+      "title": "Antimatter is real, and every particle has a mirror twin",
+      "body": "Antimatter sounds like science fiction, but it is everyday physics. For almost every type of particle there is an antiparticle with the same mass and opposite charge. The electron's twin is the positron.\n\nWhen a particle meets its antiparticle, both vanish in a flash of energy. Hospitals use this in PET scans: a tracer releases positrons inside the body, and detectors pick up the energy released when they meet electrons.\n\nAt CERN, physicists make and trap antihydrogen atoms and test whether they behave like ordinary hydrogen. So far, matter and antimatter look almost perfectly matched, and recent experiments show antimatter falls downward under gravity as ordinary matter does.\n\nThat near-perfect symmetry is precisely what makes the next mystery so puzzling.",
+      "apply_it": "Look at your reflection in a mirror and raise your right hand. Your twin raises its left. Antimatter is a little like that: the same, but opposite.",
+      "quiz": {
+        "question": "What happens when a particle meets its antiparticle?",
+        "options": [
+          "They bounce apart",
+          "They merge into a heavier particle",
+          "Nothing at all",
+          "They both annihilate, releasing energy"
+        ],
+        "answer": 3,
+        "explanation": "Particle and antiparticle annihilate, turning their mass into energy. PET scanners in hospitals detect this energy."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--13",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "antimatter",
+        "matter",
+        "early-universe"
+      ],
+      "title": "The Big Bang should have made equal matter and antimatter, so why are we here?",
+      "body": "Our best theories say the Big Bang should have produced matter and antimatter in equal amounts. If so, they would have annihilated each other, leaving a universe full of light and nothing else. No stars, no planets, no people.\n\nInstead, matter won. Calculations suggest that for roughly every billion pairs, there was about one extra particle of matter. Everything we see comes from that tiny leftover.\n\nPhysicists have found small differences in how some particles and antiparticles behave, but the known differences are far too small to explain the imbalance. Experiments at CERN and elsewhere, along with studies of neutrinos, search for a larger effect.\n\nWhy the universe favoured matter is one of the great unsolved puzzles. Your existence depends on an answer nobody yet has.",
+      "apply_it": "Hold a coin and imagine flipping it a billion times, landing heads just once more than tails. Everything you see came from a margin about that thin.",
+      "quiz": {
+        "question": "Why is the existence of matter in the universe a puzzle?",
+        "options": [
+          "Theory suggests equal matter and antimatter should have formed and annihilated",
+          "Matter is unstable",
+          "There is too much antimatter today",
+          "Matter was only created recently"
+        ],
+        "answer": 0,
+        "explanation": "Equal amounts should have destroyed each other. A tiny excess of matter survived, and the known physics cannot explain why."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--14",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "fine-tuning",
+        "constants",
+        "life"
+      ],
+      "title": "Change a few numbers in nature slightly, and we might not exist",
+      "body": "Physics depends on a handful of fixed numbers: the strength of gravity, the charge of the electron, the masses of particles. Nobody knows why they have the values they do. They are measured, not explained.\n\nWhat surprises many physicists is how sensitive the universe seems to be. Calculations suggest that if some of these numbers were changed even modestly, stars might not shine for long, or atoms like carbon might not form in useful amounts. A universe without long-lived stars or carbon would likely have no life.\n\nThis is called the fine-tuning question. Possible answers range from a deeper theory that fixes the numbers, to chance, to many universes with different values. None of these can yet be tested well. It remains open, and also debated, since we know of only one universe.",
+      "apply_it": "Imagine a radio dial that has to sit on exactly the right station for music to play. Reflect: does a universe tuned for life call for an explanation, or just gratitude?",
+      "quiz": {
+        "question": "What is the 'fine-tuning question' in physics?",
+        "options": [
+          "Why telescopes need careful adjustment",
+          "How to tune a particle accelerator",
+          "Why the constants of nature seem to have values that allow life",
+          "Why planets orbit in circles"
+        ],
+        "answer": 2,
+        "explanation": "The constants seem to lie in a narrow range that allows stars, chemistry and life. Why they have these values is unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--15",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "shape",
+        "geometry",
+        "cmb"
+      ],
+      "title": "The universe is flat, as far as our best measurements can tell",
+      "body": "Space can, in principle, curve. In a positively curved universe, like the surface of a ball, parallel lines would eventually meet. In a negatively curved one, like a saddle, they would spread apart. In a flat one, they stay parallel forever.\n\nCosmologists tested this by measuring the size of hot and cold spots in the cosmic microwave background. Curvature would make those spots look larger or smaller than expected, the way a curved lens changes a pattern.\n\nThe WMAP and Planck missions found that the universe is flat to within a fraction of a percent. That is a remarkable result: a measurement of the geometry of space itself.\n\nFlat within error does not rule out a very slight curve, too gentle to detect, just as Earth looks flat from a field.",
+      "apply_it": "Look across a large field or calm sea. The ground looks flat, yet Earth is round. Reflect on how the scale of what we can see shapes what we conclude.",
+      "quiz": {
+        "question": "How did cosmologists measure the overall shape of the universe?",
+        "options": [
+          "By sending probes to the edge",
+          "By measuring the apparent size of spots in the cosmic microwave background",
+          "By timing comets",
+          "By counting stars in the Milky Way"
+        ],
+        "answer": 1,
+        "explanation": "Curvature would distort the apparent size of patterns in the cosmic microwave background. WMAP and Planck found space flat within a small error."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--16",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "infinity",
+        "observable-universe",
+        "size"
+      ],
+      "title": "Does the universe go on forever? Nobody knows",
+      "body": "The part of the universe we can see is enormous, about 93 billion light-years across. Its edge is set by time, not by a wall: light from beyond it has not had time to reach us.\n\nWhat lies past that horizon? Most cosmologists expect more of the same: more galaxies, scattered much as they are here. But whether the universe is finite or infinite is unknown.\n\nFlatness does not settle it. A flat universe could stretch forever, or it could be finite and connect back on itself, like a video game screen where leaving one side brings you back on the other. Astronomers have looked for repeating patterns in the cosmic microwave background that would reveal such a shape and have not found them.\n\nThe universe may be far bigger than what we see, perhaps infinitely so.",
+      "apply_it": "On a clear night, find the faintest star you can. Remind yourself that the visible universe has an edge set by time, and the real universe may have no edge at all.",
+      "quiz": {
+        "question": "Why can't we see beyond about 46 billion light-years in any direction?",
+        "options": [
+          "There is a wall at the edge",
+          "Dust blocks the view",
+          "Space ends there",
+          "Light from further away has not had time to reach us"
+        ],
+        "answer": 3,
+        "explanation": "The observable universe is limited by how far light has travelled to us since the Big Bang, allowing for expansion. Beyond it, the universe may continue."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--17",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "relativity",
+        "quantum-mechanics",
+        "physics"
+      ],
+      "title": "Physics has two brilliant theories, and both pass every test",
+      "body": "Two theories underpin modern physics. General relativity explains gravity as the curving of space and time. Quantum mechanics explains the behaviour of atoms, light and particles.\n\nBoth have been tested exhaustively. Relativity predicted gravitational waves, first detected in 2015, and the black hole images captured since 2019. Satellite navigation has to correct for it: clocks on GPS satellites tick at a slightly different rate from clocks on the ground.\n\nQuantum mechanics is just as successful. It explains why the Sun shines and makes possible lasers, transistors and the chips in your phone. Some of its predictions match experiment to many decimal places.\n\nEach theory rules its own domain, one the very large, the other the very small. The trouble starts when both are needed at once.",
+      "apply_it": "Open the map app on your phone. Its accuracy depends on relativity, and the chip running it depends on quantum mechanics. Two great theories, in your pocket.",
+      "quiz": {
+        "question": "Which everyday technology must correct for general relativity to stay accurate?",
+        "options": [
+          "Microwave ovens",
+          "Electric kettles",
+          "GPS satellite navigation",
+          "Bicycle gears"
+        ],
+        "answer": 2,
+        "explanation": "GPS satellites carry clocks whose rate differs from ground clocks because of gravity and motion. Without relativity corrections, positions would drift."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--18",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "quantum-gravity",
+        "relativity",
+        "quantum-mechanics"
+      ],
+      "title": "Our two best theories of nature do not fit together",
+      "body": "Relativity treats space and time as smooth and continuous. Quantum mechanics says nature comes in tiny chunks and is governed by probability. Try to combine them, and the maths gives nonsense, such as infinite answers.\n\nUsually this does not matter. But in a few places both theories are needed at once: at the centre of a black hole, and in the first instant of the Big Bang. There, physics has no reliable answer.\n\nThe missing theory is called quantum gravity. Several possibilities have been explored for decades, including string theory and loop quantum gravity, but none has been confirmed by experiment. The effects are expected only at energies far beyond what any machine can reach. Physicists look for indirect clues in black holes, gravitational waves and the early universe. This is one of the biggest open problems in science.",
+      "apply_it": "Think of two maps of the same city that disagree near the centre. Ask yourself: which would you trust, and how would you find out?",
+      "quiz": {
+        "question": "Where do physicists most need a theory of quantum gravity?",
+        "options": [
+          "At the centres of black holes and the first instant of the Big Bang",
+          "To design aeroplanes",
+          "To predict the weather",
+          "To explain rainbows"
+        ],
+        "answer": 0,
+        "explanation": "Both gravity and quantum effects matter at extreme densities, such as inside black holes and at the Big Bang. No confirmed theory covers these yet."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--19",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "event-horizon-telescope",
+        "gravitational-waves"
+      ],
+      "title": "Black holes are no longer a prediction. We have photographed them",
+      "body": "A black hole is a region where gravity is so strong that nothing, not even light, can escape once it crosses the boundary called the event horizon.\n\nFor decades, black holes were inferred from their effects. Now the evidence is direct. In 2015 the LIGO detectors caught gravitational waves from two black holes merging over a billion light-years away. In 2019 the Event Horizon Telescope, a planet-wide network of radio dishes, released the first image of a black hole's shadow, in the galaxy M87. In 2022 it showed Sagittarius A*, the black hole at the centre of the Milky Way, about 4 million times the mass of the Sun.\n\nAstronomers have also tracked stars whipping around that central black hole for decades. Black holes are real, and common.",
+      "apply_it": "Find the constellation Sagittarius in a dark summer sky, or look up where it sits. Somewhere in that direction, about 26,000 light-years away, sits our galaxy's black hole.",
+      "quiz": {
+        "question": "What did the Event Horizon Telescope first image in 2019?",
+        "options": [
+          "A wormhole",
+          "The Big Bang",
+          "A neutron star surface",
+          "The shadow of the black hole in galaxy M87"
+        ],
+        "answer": 3,
+        "explanation": "In 2019 the Event Horizon Telescope released the first image of a black hole's shadow, at the centre of the galaxy M87."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--20",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "black-holes",
+        "singularity",
+        "information"
+      ],
+      "title": "What happens inside a black hole is hidden from the rest of the universe",
+      "body": "We can see the glowing gas around black holes and the shadow they cast. But no signal can come back from inside the event horizon, so what lies within is unknown.\n\nGeneral relativity predicts that matter is crushed to a point of infinite density at the centre. Most physicists think this means the theory fails there, and that quantum gravity would tell a different story.\n\nThere is a further puzzle. Stephen Hawking calculated that black holes should slowly leak radiation and eventually evaporate. If so, what happens to the information about everything that fell in? Quantum mechanics says information cannot be destroyed. This 'information paradox' remains unresolved, and Hawking radiation itself has never been observed from a real black hole.",
+      "apply_it": "Imagine posting a letter into a slot with no return. Ask yourself: is the message gone, or just hidden? Physicists are still arguing over the answer.",
+      "quiz": {
+        "question": "What is the 'black hole information paradox' about?",
+        "options": [
+          "Black holes are too dark to photograph",
+          "Whether information about what falls in is destroyed when a black hole evaporates",
+          "How black holes get their names",
+          "Why black holes spin"
+        ],
+        "answer": 1,
+        "explanation": "If black holes evaporate, information about what fell in seems lost, which quantum mechanics forbids. Nobody has resolved this conflict."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--21",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "time",
+        "relativity",
+        "philosophy-of-physics"
+      ],
+      "title": "Time is measured with astonishing precision, yet nobody knows what it is",
+      "body": "Atomic clocks measure time so precisely that some would lose less than a second over the age of the universe. Physics knows a lot about how time behaves.\n\nRelativity showed that time is not the same for everyone. It runs slower for things moving fast and closer to strong gravity. Clocks on aircraft and on mountains confirm it, and GPS depends on it.\n\nBut what time actually is remains open. In relativity, past, present and future can be treated as one four-dimensional block, and 'now' has no special status. Some theorists suspect time is not fundamental at all, but emerges from something deeper, the way temperature emerges from moving molecules. There is no agreed answer, and no experiment has yet decided between these ideas.",
+      "apply_it": "Sit for one minute with a clock and just watch it. Ask: what exactly is passing? You are facing a question physics has not answered.",
+      "quiz": {
+        "question": "What did relativity reveal about time?",
+        "options": [
+          "Time passes at exactly the same rate everywhere",
+          "Time runs backwards in space",
+          "Time runs at different rates depending on speed and gravity",
+          "Time does not exist"
+        ],
+        "answer": 2,
+        "explanation": "Relativity predicts, and experiments confirm, that clocks tick at different rates depending on motion and gravity. What time fundamentally is remains unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--22",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "arrow-of-time",
+        "entropy",
+        "early-universe"
+      ],
+      "title": "The laws of physics barely care which way time runs. So why does it only go forward?",
+      "body": "Film two billiard balls colliding and play it backwards. It still looks fine. Most fundamental laws of physics work equally well in either direction of time.\n\nYet everyday life has a clear direction. Eggs break but do not unbreak. Coffee cools, never warms on its own. We remember the past, not the future.\n\nThe best explanation is entropy, a measure of disorder, which tends to increase. That gives time its arrow. But it raises a deeper question: entropy is rising because the universe started in an extraordinarily orderly, low-entropy state. Why the Big Bang began so ordered is not known.\n\nSo the reason you cannot unscramble an egg may trace back to the earliest moment of the cosmos, and that moment is still a mystery.",
+      "apply_it": "Stir milk into your tea and watch it swirl. Try to imagine it unswirling. Notice how certain you are that it won't, and that this certainty reaches back to the Big Bang.",
+      "quiz": {
+        "question": "What concept is most often used to explain the forward direction of time?",
+        "options": [
+          "Entropy, the tendency for disorder to increase",
+          "Gravity",
+          "Magnetism",
+          "The speed of light"
+        ],
+        "answer": 0,
+        "explanation": "Entropy tends to increase, giving time a direction. Why the universe began with such low entropy is still unexplained."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--23",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "existence",
+        "nothing",
+        "philosophy"
+      ],
+      "title": "Why is there something rather than nothing?",
+      "body": "It may be the oldest question of all. Science can trace the universe back nearly 13.8 billion years, but explaining why anything exists at all is another matter.\n\nPhysics has one surprise to offer: 'empty' space is not truly empty. Quantum theory says even a vacuum seethes with fleeting activity and carries energy. Some physicists have suggested universes could arise from such a state.\n\nBut critics point out that a quantum vacuum, with its laws and fields, is already something. It does not explain why there are laws, or why they take this form. So the question slips past physics into philosophy.\n\nNobody knows the answer, and some doubt it can be answered. Yet the fact that we can ask it at all is part of the wonder.",
+      "apply_it": "Close your eyes and try to imagine true nothing: no space, no time, no darkness even. Notice how your mind fails. That failure is where this question lives.",
+      "quiz": {
+        "question": "Why doesn't the quantum vacuum fully answer 'why is there something rather than nothing'?",
+        "options": [
+          "It has been proven not to exist",
+          "It already contains laws and fields, so it is not truly nothing",
+          "It is too cold",
+          "It only exists on Earth"
+        ],
+        "answer": 1,
+        "explanation": "A quantum vacuum obeys laws and contains fields and energy, so it is already 'something'. The deeper question remains open."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--24",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "fate",
+        "dark-energy",
+        "future"
+      ],
+      "title": "How will the universe end? It depends on a force we don't understand",
+      "body": "The far future of the cosmos hinges on dark energy, and since nobody knows what dark energy is, nobody knows the ending for sure.\n\nIf dark energy stays constant, the leading expectation is a slow fade. Galaxies drift beyond sight of one another, stars run out of fuel over trillions of years, and the universe grows ever colder and darker. This is sometimes called the heat death.\n\nOther possibilities depend on dark energy changing. If it grew stronger, it might eventually tear things apart, a hypothetical Big Rip. If it weakened or reversed, expansion might one day halt and the universe could collapse, a Big Crunch. These are possibilities, not predictions.\n\nThe good news is that any of these endings lies tens of billions of years or more ahead. Surveys like Euclid are gathering the data that may decide it.",
+      "apply_it": "Look at the stars tonight and remember that each one is temporary. Ask yourself what a cosmic ending changes, if anything, about how you spend today.",
+      "quiz": {
+        "question": "What single factor matters most for the universe's long-term fate?",
+        "options": [
+          "The number of planets",
+          "The brightness of the Sun",
+          "The size of the Milky Way",
+          "The behaviour of dark energy"
+        ],
+        "answer": 3,
+        "explanation": "Whether dark energy stays constant, strengthens or weakens decides whether the universe fades, tears apart or collapses. Its nature is unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--25",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "webb",
+        "early-galaxies",
+        "deep-time"
+      ],
+      "title": "Webb has seen galaxies shining less than 300 million years after the Big Bang",
+      "body": "The James Webb Space Telescope, a joint mission of NASA, ESA and the Canadian Space Agency, was built in part to find the first galaxies. Light from them has been stretched by expansion into infrared, which Webb is designed to see.\n\nIt has already broken records. Webb has confirmed galaxies whose light left them when the universe was less than 300 million years old, around 2% of its current age. Their light has been travelling for more than 13.4 billion years.\n\nThe distances are measured using spectra: astronomers split the light into colours and measure how far known features have shifted. That redshift reveals how long ago the light set out.\n\nIf the universe's history were squeezed into one calendar year, these galaxies would already be shining by about 8 January.",
+      "apply_it": "Imagine a year-long calendar of cosmic history pinned to your wall. Put a mark on 8 January, then remember Webb is seeing galaxies from that week.",
+      "quiz": {
+        "question": "How do astronomers confirm how far back in time an early galaxy is?",
+        "options": [
+          "By its shape",
+          "By how big it looks",
+          "By measuring the redshift of features in its spectrum",
+          "By its colour to the naked eye"
+        ],
+        "answer": 2,
+        "explanation": "Spectroscopy shows how much a galaxy's light has been stretched by expansion. That redshift reveals how long ago the light left it."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--26",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "webb",
+        "early-galaxies",
+        "galaxy-formation"
+      ],
+      "title": "Some early galaxies look too big and too bright, too soon",
+      "body": "When Webb began observing in 2022, astronomers were startled. Some galaxies in the young universe appeared brighter, more numerous and more massive than many models had predicted.\n\nThis does not mean the Big Bang is wrong. The expansion, the cosmic microwave background and the early elements all still fit. The open question is how galaxies grew so quickly.\n\nSeveral explanations are being tested. Early stars may have formed far more efficiently than expected. Some galaxies may contain growing black holes that make them look brighter. The earliest stars may have been more massive, making galaxies seem heavier than they are. Some early mass estimates have already come down as more precise data arrived.\n\nNobody yet knows the full answer. Webb is now taking spectra of many more of these galaxies to find out.",
+      "apply_it": "Recall something that surprised you by happening faster than you thought possible. Ask: was your expectation wrong, or the measurement? Astronomers are asking just that.",
+      "quiz": {
+        "question": "Do Webb's surprisingly bright early galaxies disprove the Big Bang?",
+        "options": [
+          "No; the open question is how galaxies grew so fast",
+          "Yes, completely",
+          "Yes, they prove the universe is infinite",
+          "They show the galaxies are nearby"
+        ],
+        "answer": 0,
+        "explanation": "The Big Bang framework still holds. The puzzle is how galaxies formed and brightened so quickly, which several ideas aim to explain."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--27",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "fast-radio-bursts",
+        "magnetars",
+        "radio-astronomy"
+      ],
+      "title": "Flashes of radio light, lasting a thousandth of a second, arrive from across the cosmos",
+      "body": "Fast radio bursts are brilliant pulses of radio waves that last only milliseconds. The first was found in 2007, in archived data. Thousands have now been detected, most from galaxies far beyond our own. In a few milliseconds, a single burst can release about as much energy as the Sun puts out over days or more.\n\nPart of the mystery has been solved. In 2020, a magnetar in the Milky Way, a neutron star with an immensely strong magnetic field, produced a radio burst bright enough to resemble a weak fast radio burst. That makes magnetars a strong suspect.\n\nBut not everything fits. Some bursts repeat while most have not been seen to, and some come from surprising places, such as old galaxies. Whether one source explains them all is still unknown.",
+      "apply_it": "Snap your fingers. A fast radio burst lasts about as long as that snap, yet can carry a staggering amount of energy across billions of light-years.",
+      "quiz": {
+        "question": "What kind of object has been linked to at least some fast radio bursts?",
+        "options": [
+          "Comets",
+          "Gas giant planets",
+          "Red dwarf stars",
+          "Magnetars, highly magnetised neutron stars"
+        ],
+        "answer": 3,
+        "explanation": "In 2020 a magnetar in our galaxy produced a burst resembling a fast radio burst. Whether magnetars explain all bursts is unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--28",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "origin-of-life",
+        "astrobiology",
+        "asteroids"
+      ],
+      "title": "The ingredients of life are scattered through space",
+      "body": "Life on Earth uses a set of building blocks: amino acids to build proteins, and nucleobases to spell out genetic codes. Many of these turn up beyond Earth.\n\nAmino acids have been found in meteorites that fell to the ground. NASA's OSIRIS-REx mission brought back pristine samples from asteroid Bennu in 2023. Scientists found amino acids and all five nucleobases used in DNA and RNA, along with salts left by evaporated water.\n\nRadio telescopes have also detected many organic molecules in the clouds where stars form.\n\nWe also know that life on Earth started early. Fossil evidence suggests microbes were living at least 3.5 billion years ago, within roughly a billion years of the planet forming. The raw ingredients are common. Turning them into life is another matter.",
+      "apply_it": "Next time you see a shooting star, remember that some space rocks carry the chemical building blocks of life. You are watching ingredients fall from the sky.",
+      "quiz": {
+        "question": "What did scientists find in the samples returned from asteroid Bennu?",
+        "options": [
+          "Living microbes",
+          "Amino acids and all five nucleobases used in DNA and RNA",
+          "Liquid water oceans",
+          "Fossils"
+        ],
+        "answer": 1,
+        "explanation": "Bennu samples contained amino acids and all five nucleobases, showing life's building blocks form in space. No life was found."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--29",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "origin-of-life",
+        "abiogenesis",
+        "astrobiology"
+      ],
+      "title": "Nobody knows how chemistry first became life",
+      "body": "Somewhere on the early Earth, chemistry crossed a line. Molecules began copying themselves, became wrapped in membranes and started to evolve. How that happened is unknown.\n\nScientists have clues. Experiments show that some building blocks can form under conditions like those of the young Earth. One possibility is an early 'RNA world', in which RNA both stored information and drove reactions, since RNA can do both. Settings under study include deep-sea hydrothermal vents and shallow pools that dried and refilled.\n\nBut no lab has yet made life from scratch, and the steps in between remain unclear.\n\nA related question is whether life began elsewhere. Missions to Mars, Jupiter's moon Europa and Saturn's moon Titan are looking for signs. Finding a second origin would tell us whether life is rare or common.",
+      "apply_it": "Look at any living thing near you, a plant, a bird, your own hand. Remember that the step from chemistry to life it descends from is still unexplained.",
+      "quiz": {
+        "question": "Has any laboratory created life from non-living chemicals?",
+        "options": [
+          "No; building blocks have been made, but not life itself",
+          "Yes, in the 1950s",
+          "Yes, on the International Space Station",
+          "Yes, using Bennu samples"
+        ],
+        "answer": 0,
+        "explanation": "Experiments can form some of life's building blocks, but no one has made a living cell from scratch. How life began is still unknown."
+      }
+    },
+    {
+      "id": "universe-what-we-dont-know--30",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "consciousness",
+        "perspective",
+        "reflection"
+      ],
+      "title": "The universe has produced minds that can wonder about it",
+      "body": "From hydrogen formed in the early universe and heavier elements forged in stars came planets, chemistry, life and eventually brains. Those brains built telescopes, measured the cosmic microwave background and weighed the invisible.\n\nIn a sense, the universe has come to notice itself. Yet how that noticing works is unknown. Neuroscience maps which brain activity goes with which experiences, but why physical processes give rise to felt experience at all is an open question, sometimes called the hard problem of consciousness.\n\nSo the list of mysteries ends close to home. We do not know what most of the universe is made of, how it began, or how it will end. We do not even fully know what it is that asks.\n\nThat is not a failure. It is an invitation.",
+      "apply_it": "Tonight, step outside and look up for a full minute. Notice the stars, then notice yourself noticing them. Ask: which mystery feels closer, the sky or the mind?",
+      "quiz": {
+        "question": "What is the 'hard problem of consciousness'?",
+        "options": [
+          "Why the brain is so large",
+          "How to measure brain waves",
+          "Why physical brain processes give rise to felt experience",
+          "Why we need sleep"
+        ],
+        "answer": 2,
+        "explanation": "The hard problem asks why and how physical processes produce subjective experience. Science has not solved it."
+      }
+    }
+  ]
+}

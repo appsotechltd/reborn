@@ -85,6 +85,7 @@ var Topics = []Topic{
 	{"ai-skills", "AI & Future Skills"},
 	{"science", "Science & Nature"},
 	{"crime-society", "Crime & Society"},
+	{"universe", "Wonders of the Universe"},
 	{"life-guides", "Life Guides"},
 }
 

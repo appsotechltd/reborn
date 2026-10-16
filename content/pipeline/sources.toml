@@ -1182,3 +1182,45 @@ id = "guide-how-ordinary-people-changed-history"
 adapter = "summary"
 url = "https://www.loc.gov/collections/rosa-parks-papers/about-this-collection/"
 licence = "original-summary"
+
+[[source]]
+id = "universe-how-big-is-it"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-story-of-everything"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/the-big-bang/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-lives-of-stars"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/stars/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-galaxies-and-black-holes"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/black-holes/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-what-we-dont-know"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-big-theories"
+adapter = "summary"
+url = "https://science.nasa.gov/universe/the-big-bang/"
+licence = "original-summary"
+
+[[source]]
+id = "universe-are-we-alone"
+adapter = "summary"
+url = "https://science.nasa.gov/exoplanets/"
+licence = "original-summary"

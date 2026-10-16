@@ -2,7 +2,7 @@
 //
 // content/images/manifest.json lists, per card id, the picture's path in the media
 // store (images/cards/v1/<card-id>.webp, 3:2 WebP), a full-size original, its type
-// (illustration, 3d or chart) and a caption. The API reads it at startup
+// (illustration, 3d, chart or photo) and a caption. The API reads it at startup
 // (CARD_IMAGE_DIR) and adds an "image" object to every card that has one.
 package cardimages
 
@@ -22,7 +22,7 @@ import (
 type Image struct {
 	URL     string `json:"url"`
 	FullURL string `json:"full_url,omitempty"`
-	Type    string `json:"type"` // illustration, 3d or chart
+	Type    string `json:"type"` // illustration, 3d, chart or photo (a credited real photo)
 	Caption string `json:"caption"`
 	// Basis is set on charts: "data" when they plot real figures (Source names them),
 	// "illustration" when they only picture an idea.

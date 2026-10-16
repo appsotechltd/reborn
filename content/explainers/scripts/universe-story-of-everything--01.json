@@ -1,0 +1,116 @@
+{
+ "card_id": "universe-story-of-everything--01",
+ "about": "Photo look with real space pictures: the history of the universe from the Big Bang to us.",
+ "theme": "photo",
+ "score": true,
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA16873.jpg",
+     "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+    },
+    "headline": "The story of everything"
+   },
+   "narration": "Thirteen point eight billion years ago, everything we can see was packed into a hot, dense state. Then space itself began to stretch."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1214a.jpg",
+     "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "This was not an explosion in space. It happened everywhere at once, and it is still happening. Distant galaxies are moving away from us, and the farther they are, the faster they go."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA16873.jpg",
+     "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)",
+     "fx": 0.3
+    }
+   },
+   "narration": "For three hundred and eighty thousand years the universe was a glowing fog. When it cleared, it left this: the oldest light there is, still all around us."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/jades4.jpg",
+     "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)",
+     "fx": 0.5
+    }
+   },
+   "narration": "Then came darkness, until the first stars switched on. Webb has seen galaxies shining less than three hundred million years after the beginning."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2216a.jpg",
+     "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.4
+    }
+   },
+   "narration": "Stars forged heavier atoms, then scattered them when they died. New stars and planets formed from the ashes."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e001770.jpg",
+     "credit": "NASA"
+    }
+   },
+   "narration": "About four point six billion years ago, one of those new stars was our Sun. And Earth formed around it."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e000496.jpg",
+     "credit": "NASA"
+    },
+    "headline": "We arrived in the last seconds."
+   },
+   "narration": "Squeeze all of cosmic history into one year, and all of recorded human history fits in the last few seconds before midnight."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2205a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)",
+     "fx": 0.5
+    },
+    "eyebrow": "Theory"
+   },
+   "narration": "What happens next is still theory. The most likely future is a slow fade into the dark, trillions of years from now.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1501a.jpg",
+     "credit": "NASA, ESA/Hubble and the Hubble Heritage Team (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.4
+    }
+   },
+   "narration": "Every atom in your body has been part of this story from the very start.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

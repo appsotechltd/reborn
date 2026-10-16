@@ -1,0 +1,102 @@
+{
+ "card_id": "universe-lives-of-stars--01",
+ "about": "Photo look with real Hubble and Webb pictures: how stars are born, shine and die.",
+ "theme": "photo",
+ "score": true,
+ "voice": "emma",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2216a.jpg",
+     "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.35
+    },
+    "headline": "The lives of stars"
+   },
+   "narration": "Stars are born in cold, dark clouds of gas and dust, like these pillars, each several light years tall."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1007a.jpg",
+     "credit": "NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI) (CC BY 4.0)"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "Gravity pulls the gas together until the centre reaches about ten million degrees. Then hydrogen fuses into helium, and a star switches on."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e001770.jpg",
+     "credit": "NASA"
+    }
+   },
+   "narration": "Our Sun turns about four million tonnes of itself into energy every second. It has done so for four and a half billion years."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1509a.jpg",
+     "credit": "NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team The original observations of Westerlund 2 were obtained by the science team: Antonella Nota (ESA/STScI), Elena Sabbi (STScI), Eva Grebel and Peter Zeidler (Astronomisches Rechen-Institut Heidelberg), Monica Tosi (INAF, Osservatorio Astronomico di Bologna), Alceste Bonanos (National Observatory of Athens, Astronomical Institute), Carol Christian (STScI/AURA) and Selma de Mink (University of Amsterdam). Follow-up observations were made by the Hubble Heritage team: Zoltan Levay (STScI), Max Mutchler, Jennifer Mack, Lisa Frattare, Shelly Meyett, Mario Livio, Carol Christian (STScI/AURA), and Keith Noll (NASA/GSFC) (CC BY 4.0)"
+    }
+   },
+   "narration": "Small, cool red stars can shine for trillions of years. The biggest, brightest stars burn out in just a few million."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2320b.jpg",
+     "credit": "ESA/Webb, NASA, CSA, M. Barlow, N. Cox, R. Wesson (CC BY 4.0)",
+     "fx": 0.5
+    }
+   },
+   "narration": "A star like the Sun ends gently. It swells, then puffs its outer layers into space, leaving a glowing ring around a tiny white dwarf."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2326a.jpg",
+     "credit": "NASA, ESA, CSA, STScI, T. Temim (Princeton University) (CC BY 4.0)",
+     "fx": 0.5
+    }
+   },
+   "narration": "A giant star ends in a supernova, bright enough to outshine its whole galaxy. This is the wreckage of one seen on Earth in the year ten fifty four."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2330a.jpg",
+     "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+    },
+    "headline": "A teaspoon weighs billions of tonnes."
+   },
+   "narration": "What is left behind can be a neutron star. A teaspoon of it would weigh billions of tonnes."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2205a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)",
+     "fx": 0.6
+    }
+   },
+   "narration": "The calcium in your bones and the oxygen you breathe were made inside stars that lived and died before the Sun was born.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

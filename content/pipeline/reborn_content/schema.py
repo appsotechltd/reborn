@@ -27,7 +27,7 @@ TOPICS = {
     "productivity", "money", "relationships", "dating-marriage", "mindfulness", "faith-wisdom", "leadership",
     "parenting", "communication", "creativity", "learning", "lives-history", "entrepreneurship",
     "heartbreak-healing", "grief-loss", "study-smarter", "skills-mastery", "etiquette",
-    "mental-health", "ai-skills", "science", "crime-society", "life-guides",
+    "mental-health", "ai-skills", "science", "crime-society", "universe", "life-guides",
 }
 SOURCE_REQUIRED = {"id", "title", "authors", "kind", "url", "licence", "licence_url", "attribution", "retrieved_at"}
 SOURCE_FIELDS = SOURCE_REQUIRED | {"publisher", "year", "language", "translator", "notes"}

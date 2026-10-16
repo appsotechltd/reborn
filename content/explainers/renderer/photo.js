@@ -2,6 +2,8 @@
  *
  * A scene (or a beat inside it) sets params.image = { src } (the render resolves prompts to files).
  * Each image holds until the next one; zoom: "out" pulls back instead of pushing in.
+ * An image can set fx / fy (0-1) to keep that point of the picture in frame when it is cropped,
+ * and credit (a line shown small above the footer while the picture is up, for CC BY photos).
  */
 (function () {
   const R = window.R;
@@ -33,10 +35,13 @@
       const p = R.clamp((t - sh.start) / Math.max(1, sh.end - sh.start));
       const e = R.ease(p) * 0.6 + p * 0.4;
       const z = sh.zoom === "out" ? R.lerp(1.26, 1.06, e) : R.lerp(1.06, 1.24, e);
-      if (wide) return drawWide(g, im, sh, e, alpha);
+      // A wide frame shows a portrait still whole; a landscape picture (a space photo) fills it.
+      if (wide && im.width / im.height < 1.2) return drawWide(g, im, sh, e, alpha);
       const cover = Math.max(W / im.width, H / im.height) * z;
       const w = im.width * cover, h = im.height * cover;
-      const x = (W - w) / 2 + sh.pan * R.lerp(-14, 14, e), y = (H - h) / 2 + R.lerp(8, -10, e);
+      const fx = sh.image.fx ?? 0.5, fy = sh.image.fy ?? 0.5;
+      const x = R.clamp(W / 2 - w * fx, W - w, 0) + sh.pan * R.lerp(-14, 14, e);
+      const y = R.clamp(H / 2 - h * fy, H - h, 0) + R.lerp(8, -10, e);
       g.globalAlpha = alpha;
       g.drawImage(im, x, y, w, h);
       g.globalAlpha = 1;
@@ -117,8 +122,42 @@
         g.fillRect(gr() * W, gr() * H, 1.2, 1.2);
       }
     }
-    draw.ready = ready;
-    return draw;
+    // The picture's credit (CC BY photos must carry one), small above the footer, up to two lines.
+    function drawCredit(g, sh, alpha) {
+      if (!sh || !sh.image.credit || alpha <= 0) return;
+      const text = `Image: ${sh.image.credit}`;
+      g.save();
+      g.globalAlpha = 0.75 * alpha;
+      g.fillStyle = "#e9e1d6";
+      g.textAlign = "center";
+      g.textBaseline = "alphabetic";
+      g.font = "10px \"Reborn Sans\", sans-serif";
+      const max = W - 64;
+      const lines = [];
+      let line = "";
+      for (const word of text.split(" ")) {
+        const next = line ? `${line} ${word}` : word;
+        if (g.measureText(next).width > max && line) { lines.push(line); line = word; } else line = next;
+      }
+      lines.push(line);
+      const base = H - (wide ? 52 : 70);
+      lines.slice(0, 3).forEach((l, i, all) => g.fillText(l, W / 2, base - (all.length - 1 - i) * 12));
+      g.restore();
+    }
+    const plain = draw;
+    function drawWithCredit(g, t, energy) {
+      plain(g, t, energy);
+      const end = tl.scenes.find((s) => s.type === "end");
+      if (end && t > end.start - 0.4) return;
+      let k = -1;
+      for (let i = 0; i < shots.length; i++) if (t >= shots[i].start) k = i;
+      if (k < 0) return;
+      const fadeIn = k > 0 ? R.ease(R.seg(t - shots[k].start, 0, FADE)) : 1;
+      if (k > 0 && fadeIn < 1) drawCredit(g, shots[k - 1], 1 - fadeIn);
+      drawCredit(g, shots[k], fadeIn);
+    }
+    drawWithCredit.ready = ready;
+    return drawWithCredit;
   }
 
   R.bg.register("photo", photo);

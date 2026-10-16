@@ -256,6 +256,125 @@
         "height": 720
       }
     },
+    "universe-are-we-alone--01": {
+      "video": "universe-are-we-alone--01.mp4",
+      "poster": "universe-are-we-alone--01.jpg",
+      "duration_s": 61.3,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_echo@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-are-we-alone--01.json",
+      "landscape": {
+        "video": "universe-are-we-alone--01-wide.mp4",
+        "poster": "universe-are-we-alone--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-big-theories--01": {
+      "video": "universe-big-theories--01.mp4",
+      "poster": "universe-big-theories--01.jpg",
+      "duration_s": 70.1,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bm_george@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-big-theories--01.json",
+      "landscape": {
+        "video": "universe-big-theories--01-wide.mp4",
+        "poster": "universe-big-theories--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-galaxies-and-black-holes--01": {
+      "video": "universe-galaxies-and-black-holes--01.mp4",
+      "poster": "universe-galaxies-and-black-holes--01.jpg",
+      "duration_s": 71.5,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_michael@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-galaxies-and-black-holes--01.json",
+      "landscape": {
+        "video": "universe-galaxies-and-black-holes--01-wide.mp4",
+        "poster": "universe-galaxies-and-black-holes--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-how-big-is-it--01": {
+      "video": "universe-how-big-is-it--01.mp4",
+      "poster": "universe-how-big-is-it--01.jpg",
+      "duration_s": 76.5,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_adam@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-how-big-is-it--01.json",
+      "landscape": {
+        "video": "universe-how-big-is-it--01-wide.mp4",
+        "poster": "universe-how-big-is-it--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-lives-of-stars--01": {
+      "video": "universe-lives-of-stars--01.mp4",
+      "poster": "universe-lives-of-stars--01.jpg",
+      "duration_s": 71.3,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bf_emma@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-lives-of-stars--01.json",
+      "landscape": {
+        "video": "universe-lives-of-stars--01-wide.mp4",
+        "poster": "universe-lives-of-stars--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-story-of-everything--01": {
+      "video": "universe-story-of-everything--01.mp4",
+      "poster": "universe-story-of-everything--01.jpg",
+      "duration_s": 91.6,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bm_george@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-story-of-everything--01.json",
+      "landscape": {
+        "video": "universe-story-of-everything--01-wide.mp4",
+        "poster": "universe-story-of-everything--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "universe-what-we-dont-know--01": {
+      "video": "universe-what-we-dont-know--01.mp4",
+      "poster": "universe-what-we-dont-know--01.jpg",
+      "duration_s": 55.8,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_adam@0.95",
+      "kind": "animated",
+      "script": "scripts/universe-what-we-dont-know--01.json",
+      "landscape": {
+        "video": "universe-what-we-dont-know--01-wide.mp4",
+        "poster": "universe-what-we-dont-know--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
     "why-we-sleep-walker--01": {
       "video": "why-we-sleep-walker--01.mp4",
       "poster": "why-we-sleep-walker--01.jpg",

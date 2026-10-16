@@ -1,0 +1,766 @@
+{
+  "source": {
+    "id": "universe-galaxies-and-black-holes",
+    "title": "Galaxies and Black Holes",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/black-holes/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, Black Holes, https://science.nasa.gov/universe/black-holes/; NASA Science, Black Hole Types, https://science.nasa.gov/universe/black-holes/types/; NASA Science, Black Hole Anatomy, https://science.nasa.gov/universe/black-holes/anatomy/; NASA Science, Galaxies, https://science.nasa.gov/universe/galaxies/; NASA Science, Galaxy Types, https://science.nasa.gov/universe/galaxies/types/; NASA Hubble, Hubble Deep Fields, https://science.nasa.gov/mission/hubble/science/universe-uncovered/hubble-deep-fields/; ESA/Hubble, Black Holes, https://esahubble.org/science/black_holes/"
+  },
+  "cards": [
+    {
+      "id": "universe-galaxies-and-black-holes--01",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "hubble",
+        "deep-field"
+      ],
+      "title": "Hubble stared at an empty patch of sky and found thousands of galaxies",
+      "body": "In December 1995, astronomers pointed the Hubble Space Telescope at a patch of sky that looked completely blank. The patch was tiny, about the size of a tennis ball seen from 100 metres away. Hubble kept staring at it for about ten days, collecting faint light bit by bit.\n\nWhen the picture came back, the darkness was crowded. Almost every smudge in it was not a star but a whole galaxy, roughly 3,000 of them, each holding billions of stars. Some of that light had been travelling for billions of years.\n\nThis is measured fact, repeated many times since with Hubble and the James Webb Space Telescope. Every deeper look finds more galaxies. The empty-looking sky is not empty at all.",
+      "apply_it": "Next clear night, hold a small coin at arm's length against a dark patch of sky. Behind that coin, too faint for your eyes, lie many thousands of galaxies.",
+      "quiz": {
+        "question": "What did the Hubble Deep Field reveal in a patch of sky that looked empty?",
+        "options": [
+          "Nothing at all, confirming the gap",
+          "Roughly 3,000 galaxies",
+          "A single nearby star cluster",
+          "A cloud of dark matter"
+        ],
+        "answer": 1,
+        "explanation": "The 1995 Hubble Deep Field captured about 3,000 galaxies in a speck of sky that looked blank to ground-based telescopes."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--02",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "scale",
+        "observable-universe"
+      ],
+      "title": "There are more galaxies out there than anyone can count",
+      "body": "How many galaxies are there? By sampling small deep patches of sky and scaling up, astronomers estimate the observable universe holds hundreds of billions of galaxies, perhaps up to two trillion.\n\nThat range matters. A 2016 study proposed about two trillion by counting the faint, small galaxies we cannot yet see directly. Later work suggests the true number may be lower. Either way, the count is enormous.\n\nPicture it this way: if every galaxy were a grain of sand, you would need many buckets, possibly a small truck, to hold them all. And each grain would hold, on average, many millions to hundreds of billions of stars.\n\nWe know this from real counts in telescope images. The exact total is still being refined.",
+      "apply_it": "Fill a teaspoon with sugar and guess how many grains it holds. It is a few thousand. Now imagine each grain as a galaxy, and the teaspoon as one tiny slice of sky.",
+      "quiz": {
+        "question": "What is a fair statement of how many galaxies exist in the observable universe?",
+        "options": [
+          "Exactly 100 billion",
+          "About 3,000",
+          "Hundreds of billions, perhaps up to two trillion",
+          "Infinitely many, proven by Hubble"
+        ],
+        "answer": 2,
+        "explanation": "Estimates range from hundreds of billions up to about two trillion; a 2016 study gave the higher figure and later work suggests fewer."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "galaxy-types",
+        "spiral",
+        "elliptical"
+      ],
+      "title": "Galaxies come in three main shapes, and the shape tells a life story",
+      "body": "Astronomers sort galaxies by how they look. Spiral galaxies are flat, spinning discs with curving arms, full of gas, dust and young blue stars. Many, like ours, have a straight bar of stars across the middle.\n\nElliptical galaxies are smooth, rounded or egg-shaped swarms of stars. They hold little fresh gas and mostly older, redder stars, so they make few new ones. Many giant ellipticals are thought to be the result of earlier galaxy mergers.\n\nIrregular galaxies have no tidy shape at all. Often they have been pulled about by the gravity of a neighbour.\n\nThis sorting began with Edwin Hubble in the 1920s and is still used today. The colours and shapes are measured, and they hint at each galaxy's history.",
+      "apply_it": "Search online for an image of the Whirlpool Galaxy and one of M87. Which looks like a spiral, and which like an elliptical? What does the colour tell you about their stars?",
+      "quiz": {
+        "question": "Which kind of galaxy usually contains mostly older stars and little gas for new ones?",
+        "options": [
+          "Spiral",
+          "Elliptical",
+          "Irregular",
+          "Barred spiral"
+        ],
+        "answer": 1,
+        "explanation": "Elliptical galaxies are smooth swarms of mostly older, redder stars with little fresh gas, so they form few new stars."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "dwarf-galaxies",
+        "magellanic-clouds"
+      ],
+      "title": "The most common galaxies in the universe are the small ones",
+      "body": "Big spirals get the famous pictures, but small galaxies are far more numerous. Dwarf galaxies hold anywhere from a few thousand to a few billion stars, compared with the hundreds of billions in a giant galaxy.\n\nOur own Milky Way has dozens of dwarf galaxies circling it like moons. The two brightest are the Large and Small Magellanic Clouds, visible to the naked eye from the Southern Hemisphere as faint, misty patches. The Large Magellanic Cloud is about 160,000 light-years away.\n\nBig galaxies grow partly by swallowing these small ones. Right now the Milky Way is slowly tearing apart a dwarf galaxy called the Sagittarius Dwarf, stretching its stars into long streams that wrap around our galaxy.",
+      "apply_it": "If you are ever under a dark southern sky, look for two pale clouds that do not move like weather. They are whole galaxies orbiting our own.",
+      "quiz": {
+        "question": "What are the Large and Small Magellanic Clouds?",
+        "options": [
+          "Dwarf galaxies orbiting the Milky Way",
+          "Gas clouds inside our Solar System",
+          "Nebulae where stars are born",
+          "Distant spiral galaxies like Andromeda"
+        ],
+        "answer": 0,
+        "explanation": "They are dwarf galaxies in orbit around the Milky Way, visible to the naked eye from the Southern Hemisphere."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "milky-way",
+        "galaxies",
+        "structure"
+      ],
+      "title": "We live in the suburbs of a barred spiral 100,000 light-years wide",
+      "body": "The Milky Way is a barred spiral galaxy. Its main disc is roughly 100,000 light-years across, yet only about 1,000 light-years thick, proportionally flatter than a vinyl record. It holds somewhere between 100 and 400 billion stars.\n\nAt the centre sits a bulge of old stars crossed by a bar. Spiral arms curl out through the disc, and a faint halo of old stars and star clusters surrounds everything.\n\nOur Sun lies in a minor arm called the Orion Arm, about 26,000 light-years from the centre. That is a quiet, ordinary neighbourhood.\n\nWe know this shape even though we can never leave to photograph it. Astronomers map it by measuring the positions and motions of stars, gas and dust, with missions like the European Space Agency's Gaia.",
+      "apply_it": "On a dark summer night, find the Milky Way's glowing band. You are looking edge-on into our own disc. The brightest, thickest part, toward Sagittarius, is the direction of the centre.",
+      "quiz": {
+        "question": "Roughly how far is the Sun from the centre of the Milky Way?",
+        "options": [
+          "About 2,600 light-years",
+          "About 260,000 light-years",
+          "It sits at the exact centre",
+          "About 26,000 light-years"
+        ],
+        "answer": 3,
+        "explanation": "The Sun is about 26,000 light-years from the galactic centre, in a minor spiral arm called the Orion Arm."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--06",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "milky-way",
+        "sun",
+        "orbit"
+      ],
+      "title": "One lap of the galaxy takes the Sun about 230 million years",
+      "body": "You are moving very fast right now. The Sun and its planets orbit the centre of the Milky Way at roughly 230 kilometres per second, about 800,000 kilometres per hour.\n\nEven at that speed, the galaxy is so large that one full lap takes around 230 million years. This span is sometimes called a galactic year.\n\nThink about what that means. The last time the Sun was roughly where it is now in its orbit, the earliest dinosaurs were just appearing. Since the Sun formed about 4.6 billion years ago, it has completed only around 20 laps.\n\nAstronomers know this by measuring how fast nearby stars and distant reference points appear to move relative to us.",
+      "apply_it": "Work out your age in galactic years. Divide your age by 230 million. The tiny number you get is how much of one lap you have lived through.",
+      "quiz": {
+        "question": "About how long does the Sun take to orbit the centre of the Milky Way once?",
+        "options": [
+          "One year",
+          "About 230 thousand years",
+          "About 230 million years",
+          "About 13.8 billion years"
+        ],
+        "answer": 2,
+        "explanation": "One galactic orbit takes roughly 230 million years, even though the Sun moves at about 230 km per second."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--07",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxies",
+        "collisions",
+        "star-formation"
+      ],
+      "title": "When galaxies collide, the stars almost never hit each other",
+      "body": "Galaxies do crash together. You might expect a catastrophe of smashing stars, but stars are so far apart that direct hits are extremely rare.\n\nHere is the scale. If the Sun were a grain of sand, the nearest star would be another grain more than ten kilometres away. Two galaxies can pass right through each other and almost every star slips by.\n\nWhat does collide is gas. Huge clouds of gas slam together, get squeezed, and burst into new stars. Colliding galaxies often glow with bright pink and blue star-forming regions.\n\nGravity also flings stars out into long tails. The Antennae Galaxies, captured by Hubble and Webb, show two spirals mid-crash, with curving streamers of stars and fierce bursts of star birth.",
+      "apply_it": "Look up the Antennae Galaxies or the Mice Galaxies. Find the long tails. Those streams are stars thrown out by gravity, not by impacts.",
+      "quiz": {
+        "question": "What mostly collides when two galaxies merge?",
+        "options": [
+          "Individual stars, millions at a time",
+          "Clouds of gas, which trigger new star formation",
+          "Planets in the outer Solar Systems",
+          "Nothing at all happens"
+        ],
+        "answer": 1,
+        "explanation": "Stars are too spread out to hit often, but gas clouds collide and compress, setting off bursts of star formation."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--08",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "andromeda",
+        "galaxies",
+        "naked-eye"
+      ],
+      "title": "The farthest thing your eyes can see is a galaxy 2.5 million light-years away",
+      "body": "On a dark autumn night in the Northern Hemisphere, you can see a faint, oval smudge in the constellation Andromeda. It is the Andromeda Galaxy, a spiral bigger than our own, about 2.5 million light-years away.\n\nThat means the light hitting your eyes left Andromeda around 2.5 million years ago, long before modern humans existed. You are seeing it as it was in the deep past.\n\nAndromeda is the nearest large galaxy to us and holds roughly a trillion stars. For most people it is the most distant object they can see without a telescope.\n\nIn the 1920s, measurements of special pulsing stars in Andromeda proved it lies far outside the Milky Way, showing that our galaxy is one among many.",
+      "apply_it": "Find Andromeda with a star chart app on a dark night. Look slightly to one side of it, which helps faint light register. Remember how old that light is.",
+      "quiz": {
+        "question": "When you see the Andromeda Galaxy with your eyes, when did that light leave it?",
+        "options": [
+          "About 2.5 million years ago",
+          "About 8 minutes ago",
+          "About 2,500 years ago",
+          "About 13.8 billion years ago"
+        ],
+        "answer": 0,
+        "explanation": "Andromeda is about 2.5 million light-years away, so its light set out about 2.5 million years ago."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--09",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "andromeda",
+        "milky-way",
+        "collisions",
+        "future"
+      ],
+      "title": "Andromeda is heading our way, and the meeting may be billions of years off",
+      "body": "Andromeda is moving toward the Milky Way at roughly 110 kilometres per second. Hubble measurements of its sideways motion showed it is on a path to meet us.\n\nFor years the standard forecast was a collision in about 4 to 5 billion years, ending in one giant merged galaxy, sometimes nicknamed Milkomeda. More recent simulations using Hubble and Gaia data suggest the outcome is less certain, with perhaps about even odds of a merger in the next 10 billion years.\n\nEither way, our Sun would very likely survive. Stars are too far apart to collide. The night sky would change instead, with a second huge spiral swelling across it.\n\nThe approach is measured fact. The exact timing and outcome are still being worked out.",
+      "apply_it": "Picture the night sky in a few billion years with Andromeda filling it. Then ask yourself: which slow changes in your own life are easy to miss because they happen gradually?",
+      "quiz": {
+        "question": "What is the best description of the coming Milky Way and Andromeda encounter?",
+        "options": [
+          "It will happen within a century",
+          "It has already happened",
+          "Andromeda is moving away from us",
+          "Andromeda is approaching, but the timing and outcome are still being refined"
+        ],
+        "answer": 3,
+        "explanation": "Andromeda is measured to be approaching. Older forecasts gave 4 to 5 billion years; newer simulations suggest the merger is less certain."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--10",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "quasars",
+        "supermassive-black-holes",
+        "light"
+      ],
+      "title": "Quasars are galaxy centres that outshine all their stars combined",
+      "body": "In the 1960s, astronomers found star-like points of light that turned out to be billions of light-years away. To appear so bright from so far, they had to be pouring out enormous energy. They were named quasars.\n\nWe now know a quasar is powered by a supermassive black hole. Gas spirals inward, forming a swirling disc that heats up to extreme temperatures and glows ferociously before it falls in. The brightest quasars outshine the hundreds of billions of stars in their galaxy, all from a region not much bigger than our Solar System.\n\nMost quasars are very distant, so we see them as they were long ago, when the universe was younger and black holes were feeding more heavily.",
+      "apply_it": "Look up quasar 3C 273 in the constellation Virgo. It is visible in a modest backyard telescope as a faint dot, light that left it billions of years ago.",
+      "quiz": {
+        "question": "What powers a quasar?",
+        "options": [
+          "A very large single star",
+          "Nuclear explosions in a galaxy's core",
+          "Gas heating up as it falls toward a supermassive black hole",
+          "Light reflected from nearby galaxies"
+        ],
+        "answer": 2,
+        "explanation": "Gas spiralling into a supermassive black hole heats to extreme temperatures and glows, outshining the whole galaxy."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--11",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "gravity",
+        "basics"
+      ],
+      "title": "A black hole is gravity so strong that not even light escapes",
+      "body": "A black hole is a region of space where matter is packed so tightly that its gravity becomes overwhelming. Nothing that crosses a certain boundary can get back out, not even light, the fastest thing there is.\n\nThe key is not mass alone but how squeezed it is. To turn Earth into a black hole, you would have to crush its whole mass into a ball about the size of a marble. The Sun would need to shrink to a ball about 6 kilometres across.\n\nWe cannot see a black hole directly, because it gives off no light. We find them by their effects: stars whipping around invisible partners, glowing hot gas falling inward, and ripples in space from their collisions.",
+      "apply_it": "Hold a marble and imagine it weighing as much as the entire Earth. That is roughly the density a black hole needs.",
+      "quiz": {
+        "question": "If you crushed Earth into a black hole, roughly how big would it be?",
+        "options": [
+          "About the size of the Moon",
+          "About the size of a marble",
+          "About the size of a football stadium",
+          "About the size of a grain of sand"
+        ],
+        "answer": 1,
+        "explanation": "Earth's mass would need to be squeezed into a ball roughly the size of a marble to become a black hole."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--12",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "event-horizon",
+        "physics"
+      ],
+      "title": "The event horizon is not a surface, it is a point of no return",
+      "body": "Every black hole has an edge called the event horizon. It is not a solid wall. It is an invisible boundary in space. Outside it, a rocket with enough power could still escape. Once you cross it, every possible path leads further in, and escape would require going faster than light.\n\nThe size of the horizon depends only on the mass. A black hole ten times the Sun's mass has a horizon about 60 kilometres across, smaller than many cities.\n\nJust outside the horizon, gravity bends light so strongly that light can orbit the black hole. That is why black hole images show a bright ring surrounding a dark centre, often called the shadow.",
+      "apply_it": "Think of a waterfall's edge on a calm river. Far upstream you can paddle away. Past a certain point, the current wins. Where are the points of no return in your own decisions?",
+      "quiz": {
+        "question": "What is the event horizon of a black hole?",
+        "options": [
+          "The boundary beyond which nothing can escape",
+          "A solid shell made of compressed stars",
+          "The bright disc of hot gas around it",
+          "The jet of particles shooting out from it"
+        ],
+        "answer": 0,
+        "explanation": "The event horizon is a boundary, not a surface: once anything crosses it, escape is impossible, even for light."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--13",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "supernova",
+        "stellar-evolution"
+      ],
+      "title": "Stellar black holes are born when giant stars collapse",
+      "body": "Most stars, like our Sun, end their lives gently. Stars many times more massive than the Sun do not.\n\nA massive star resists its own gravity by fusing elements in its core, pushing outward. When its fuel runs out, that support vanishes. The core collapses in a fraction of a second. Often the outer layers blast away in a supernova, an explosion that can briefly outshine its whole galaxy.\n\nIf the leftover core is heavy enough, nothing can stop the collapse. It becomes a black hole. Lighter cores stop as neutron stars instead.\n\nWe have strong evidence for this: we see supernovae, find black holes in pairs with ordinary stars, and detect gravitational waves from black holes a few to dozens of times the Sun's mass.",
+      "apply_it": "Look for Betelgeuse in Orion, a red supergiant expected to explode one day. Most experts think it is not massive enough to leave a black hole, likely leaving a neutron star instead.",
+      "quiz": {
+        "question": "What usually happens when a very massive star runs out of fuel?",
+        "options": [
+          "It slowly cools into a white dwarf",
+          "It turns into a planet",
+          "It splits into two smaller stars",
+          "Its core collapses, often in a supernova, and may form a black hole"
+        ],
+        "answer": 3,
+        "explanation": "Without fusion pushing outward, the core collapses. A heavy enough core becomes a black hole, often after a supernova."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--14",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "supermassive-black-holes",
+        "stellar-black-holes"
+      ],
+      "title": "Black holes come in small and colossal, with almost nothing in between",
+      "body": "Astronomers mainly find two families of black holes. Stellar-mass black holes, formed from collapsing stars, weigh a few to a few dozen times the Sun. There may be around 100 million of them in the Milky Way alone.\n\nSupermassive black holes are in a different league, millions to billions of times the Sun's mass. Nearly every large galaxy seems to have one at its centre.\n\nThe difference is hard to picture. If a stellar black hole were a pea, one weighing a billion Suns would be about 1,000 kilometres wide.\n\nThe evidence comes from stars and gas orbiting unseen masses, from X-ray glow, and from gravitational waves. Both families are firmly established.",
+      "apply_it": "Next time you see a picture of a spiral galaxy, remind yourself that its bright core almost certainly hides a black hole millions of times heavier than the Sun.",
+      "quiz": {
+        "question": "What do nearly all large galaxies seem to have at their centres?",
+        "options": [
+          "A giant star",
+          "An empty hole with no matter",
+          "A supermassive black hole",
+          "A neutron star"
+        ],
+        "answer": 2,
+        "explanation": "Observations show nearly every large galaxy has a supermassive black hole, millions to billions of times the Sun's mass."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--15",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "black-holes",
+        "intermediate-mass",
+        "mystery"
+      ],
+      "title": "Where are the middle-sized black holes? Astronomers are still hunting",
+      "body": "If black holes can weigh a few Suns or billions of Suns, you might expect plenty in between, from hundreds to hundreds of thousands of solar masses. These intermediate-mass black holes have turned out to be remarkably hard to find.\n\nThere are promising candidates. In 2020, gravitational wave detectors recorded a merger that left a black hole about 140 times the Sun's mass. Some dense star clusters show stars moving as if a hidden mass lurks at their centre.\n\nBut nobody yet knows how common they are, or whether they are the seeds that grew into supermassive black holes. Astronomers are searching with X-ray telescopes, star motions in clusters and future gravitational wave observatories in space.",
+      "apply_it": "Ask yourself: when something seems missing from a pattern, is it absent, or just hard to see? What would you need to find out?",
+      "quiz": {
+        "question": "What is the status of intermediate-mass black holes?",
+        "options": [
+          "Thousands have been confirmed in our galaxy",
+          "There are promising candidates, but how common they are is unknown",
+          "They have been ruled out by physics",
+          "They are the same as supermassive black holes"
+        ],
+        "answer": 1,
+        "explanation": "A few strong candidates exist, but how common they are and how they fit into black hole growth remain open questions."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--16",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "supermassive-black-holes",
+        "early-universe",
+        "webb"
+      ],
+      "title": "Giant black holes appeared too early, and nobody knows how",
+      "body": "The James Webb Space Telescope has spotted supermassive black holes when the universe was only a few hundred million years old. Some already weigh millions of times the Sun.\n\nThat is a puzzle. Black holes grow by swallowing gas and merging, and there is a limit to how fast they can feed. Starting from the remains of an ordinary star, it is hard to reach that size so quickly.\n\nThis is a genuine open question. Ideas include huge gas clouds collapsing straight into heavy black hole seeds, or bursts of feeding faster than the usual limit. Nobody knows yet which, if any, is right. Astronomers are testing them by finding more early black holes with Webb and measuring their masses and surroundings.",
+      "apply_it": "Think of a tree that seems far too tall for its age. What possible explanations would you test first, and what evidence would settle it?",
+      "quiz": {
+        "question": "Why are the earliest supermassive black holes found by Webb a puzzle?",
+        "options": [
+          "They seem too massive to have grown so soon after the Big Bang",
+          "They are too small to measure",
+          "They are closer than expected",
+          "They give off no light at all"
+        ],
+        "answer": 0,
+        "explanation": "Webb sees black holes weighing millions of Suns only a few hundred million years after the Big Bang, faster growth than simple models allow."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--17",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "sagittarius-a-star",
+        "milky-way",
+        "black-holes"
+      ],
+      "title": "Stars racing around an empty point revealed our galaxy's black hole",
+      "body": "At the centre of the Milky Way, about 26,000 light-years away, lies a supermassive black hole called Sagittarius A*, pronounced Sagittarius A-star. It weighs about 4 million times the Sun.\n\nWe know this by watching stars. For decades, astronomers tracked stars orbiting something invisible in the galactic centre. One star swings around it in about 16 years, reaching thousands of kilometres per second at its closest. Only a black hole could pack that much mass into so small a space.\n\nThe work earned the 2020 Nobel Prize in Physics.\n\nSagittarius A* is quiet compared with quasars. It sips only a trickle of gas, which is fortunate for us.",
+      "apply_it": "Look toward the constellation Sagittarius on a summer evening, near the teapot shape. Somewhere behind those dust clouds sits a black hole 4 million times the Sun's mass.",
+      "quiz": {
+        "question": "How did astronomers first establish that a supermassive black hole sits at the Milky Way's centre?",
+        "options": [
+          "By photographing it in 1950",
+          "By sending a probe there",
+          "By hearing it with radio telescopes",
+          "By tracking stars orbiting an invisible, massive object"
+        ],
+        "answer": 3,
+        "explanation": "Decades of tracking stars orbiting an unseen point showed about 4 million solar masses packed into a tiny region."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--18",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "sagittarius-a-star",
+        "event-horizon-telescope",
+        "black-holes"
+      ],
+      "title": "In 2022 we saw the shadow of our own galaxy's black hole",
+      "body": "In May 2022, the Event Horizon Telescope collaboration released the first image of Sagittarius A*. It shows a glowing ring of hot gas around a dark centre, the black hole's shadow.\n\nGetting it was extraordinarily hard. From Earth, the black hole appears about as big as a doughnut on the Moon's surface would. No single dish could see that. So radio telescopes around the world observed together, linked by precise atomic clocks, acting like one virtual telescope the size of Earth.\n\nThe ring matched predictions from Einstein's general relativity remarkably well. It was direct visual evidence that the object at our galaxy's centre is a black hole.",
+      "apply_it": "Look up the 2022 image of Sagittarius A*. Remember that it took telescopes on several continents working as one to make it.",
+      "quiz": {
+        "question": "How did the Event Horizon Telescope image Sagittarius A*?",
+        "options": [
+          "With one enormous dish in space",
+          "By sending a spacecraft to the galactic centre",
+          "By linking radio telescopes around the world into an Earth-sized virtual telescope",
+          "Using an ordinary optical telescope"
+        ],
+        "answer": 2,
+        "explanation": "Radio telescopes across the globe observed together, synchronised by atomic clocks, acting like one telescope as wide as Earth."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--19",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "m87",
+        "event-horizon-telescope",
+        "black-holes"
+      ],
+      "title": "The first black hole ever pictured is 6.5 billion times the Sun",
+      "body": "Before Sagittarius A*, the Event Horizon Telescope photographed a different giant. In April 2019 it released the first image of any black hole: M87*, at the heart of the elliptical galaxy Messier 87, about 55 million light-years away.\n\nM87* weighs about 6.5 billion times the Sun. Its shadow is so large that our whole Solar System could fit inside it with room to spare.\n\nThe black hole also launches a jet of particles moving at nearly the speed of light, stretching thousands of light-years into space. Later images captured its magnetic field and the base of that jet.\n\nThe picture's bright ring, slightly brighter on one side, is gas swirling around it.",
+      "apply_it": "Compare the M87* and Sagittarius A* images side by side. They look alike, though one is over a thousand times heavier. What does that suggest about how simple black holes are?",
+      "quiz": {
+        "question": "What was the first black hole ever directly imaged?",
+        "options": [
+          "Sagittarius A*",
+          "M87*",
+          "Cygnus X-1",
+          "TON 618"
+        ],
+        "answer": 1,
+        "explanation": "M87*, in the galaxy Messier 87, was imaged first, in 2019. Sagittarius A* followed in 2022."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--20",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "spaghettification",
+        "tidal-forces",
+        "black-holes"
+      ],
+      "title": "Fall into a small black hole and you would be stretched like spaghetti",
+      "body": "Gravity weakens with distance. Near a black hole, it changes so sharply over a short distance that your feet, if closer, would be pulled much harder than your head. You would be stretched lengthwise and squeezed sideways. Scientists really do call this spaghettification.\n\nSurprisingly, smaller black holes are more dangerous here. Near a stellar black hole, the stretching would kill you long before you reached the horizon. A supermassive black hole is so large that you could cross its horizon without feeling torn, at least at first.\n\nThis is not only theory on paper. Telescopes have watched stars wander too close to supermassive black holes and get shredded, producing bright flares called tidal disruption events.",
+      "apply_it": "Feel the stretch next time you do a long reach in a yoga pose. Now imagine that difference in pull being billions of times stronger across your body.",
+      "quiz": {
+        "question": "Why are smaller black holes more likely to spaghettify you before you reach the event horizon?",
+        "options": [
+          "The change in gravity across your body is steeper near their small horizons",
+          "They spin faster",
+          "They are hotter",
+          "They are made of denser rock"
+        ],
+        "answer": 0,
+        "explanation": "Near a small black hole, gravity changes very steeply over short distances, so tidal stretching becomes deadly outside the horizon."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--21",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "time-dilation",
+        "relativity",
+        "black-holes"
+      ],
+      "title": "Near a black hole, time itself runs slower",
+      "body": "Einstein's general relativity says strong gravity slows time. A clock deep in a gravity well ticks more slowly than one far away. Close to a black hole, the effect becomes dramatic. Someone watching from far away would see a falling clock tick slower and slower, its light fading and reddening, appearing almost to freeze near the horizon.\n\nThis is not speculation. It is measured on Earth. Atomic clocks at different heights tick at slightly different rates. GPS satellites, higher up in weaker gravity, gain a tiny amount of time each day compared with clocks on the ground, and engineers correct for it. Without that fix, GPS positions would drift by kilometres within a day.",
+      "apply_it": "Next time your phone's map finds you, remember: it only works because engineers account for gravity bending time.",
+      "quiz": {
+        "question": "How do we know gravity really slows time?",
+        "options": [
+          "It is purely a film plot device",
+          "Only astronauts have felt it",
+          "It has never been tested",
+          "Atomic clocks and GPS satellites measure and must correct for it"
+        ],
+        "answer": 3,
+        "explanation": "Atomic clocks at different heights and GPS satellites show measurable time differences that engineers must correct for."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--22",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "gravitational-waves",
+        "ligo",
+        "black-hole-mergers"
+      ],
+      "title": "In 2015 we felt two black holes collide 1.3 billion light-years away",
+      "body": "On 14 September 2015, the LIGO detectors in the United States recorded a tiny shiver in space itself. Two black holes, about 36 and 29 times the Sun's mass, had spiralled together and merged about 1.3 billion years earlier.\n\nIn the final instant, about three Suns' worth of mass turned into gravitational waves, ripples in space-time that Einstein predicted a century before.\n\nBy the time they reached Earth, the ripples stretched and squeezed LIGO's 4-kilometre arms by less than a thousandth of the width of a proton. Detecting that took lasers, mirrors and extraordinary isolation from vibration.\n\nIt was the first direct detection of gravitational waves and of merging black holes. Hundreds more mergers have been recorded since.",
+      "apply_it": "Listen to the converted 'chirp' of the 2015 signal online. That rising whoop is two black holes merging, translated into sound.",
+      "quiz": {
+        "question": "What did LIGO detect in 2015?",
+        "options": [
+          "Light from a distant quasar",
+          "A new planet",
+          "Gravitational waves from two merging black holes",
+          "Hawking radiation"
+        ],
+        "answer": 2,
+        "explanation": "LIGO's first detection was gravitational waves from two black holes, about 36 and 29 solar masses, merging 1.3 billion light-years away."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--23",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "hawking-radiation",
+        "quantum",
+        "black-holes"
+      ],
+      "title": "Black holes might slowly glow away, but no one has ever seen it",
+      "body": "In 1974, Stephen Hawking combined quantum physics with gravity and predicted something startling: black holes should not be perfectly black. They should give off a faint glow, now called Hawking radiation, and lose mass very slowly.\n\nThis is a theoretical prediction. It has not been observed. For a black hole the mass of the Sun, the glow would be far colder than the faint background radiation filling space, impossible to detect. Such a black hole would take vastly longer than the current age of the universe to evaporate.\n\nThe idea is widely respected because the mathematics is strong. Physicists look for indirect tests: laboratory analogues using sound or light, and searches for flashes from tiny primordial black holes, if they exist.",
+      "apply_it": "Ask yourself: how much should we trust an idea that has strong mathematics but no direct observation yet? What would change your mind?",
+      "quiz": {
+        "question": "What is the status of Hawking radiation?",
+        "options": [
+          "Observed many times by LIGO",
+          "A well-founded theoretical prediction not yet observed",
+          "Disproved in 2015",
+          "Visible in the M87* image"
+        ],
+        "answer": 1,
+        "explanation": "Hawking radiation is a respected prediction from 1974, but it is far too faint to detect from known black holes."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--24",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "information-paradox",
+        "quantum",
+        "black-holes"
+      ],
+      "title": "Do black holes destroy information? Physics has no agreed answer",
+      "body": "Quantum physics holds that information is never truly lost. In principle, if you knew everything about a burnt book's smoke and ash, you could reconstruct the pages.\n\nBlack holes seem to break that rule. If a black hole slowly evaporates through Hawking radiation, and that radiation is random, then everything that fell in would be erased. This clash is called the black hole information paradox.\n\nNobody knows how it is resolved. Some physicists think the information leaks out subtly in the radiation. Others suggest it is stored at the horizon or that our theories need deep changes.\n\nThe question matters because answering it likely requires a theory of quantum gravity, joining Einstein's gravity with quantum physics. That theory does not yet exist.",
+      "apply_it": "Think of something you lost that seemed gone for good. In what sense might information about it still exist somewhere in the world?",
+      "quiz": {
+        "question": "What is the black hole information paradox?",
+        "options": [
+          "A conflict over whether information falling into a black hole is permanently lost",
+          "A disagreement over how heavy black holes are",
+          "A puzzle about how black holes are photographed",
+          "A dispute about how fast LIGO's lasers run"
+        ],
+        "answer": 0,
+        "explanation": "It is the unresolved clash between quantum physics, which says information is preserved, and black holes, which seem to erase it."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--25",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "singularity",
+        "inside-black-holes",
+        "quantum-gravity"
+      ],
+      "title": "Nobody knows what is inside a black hole",
+      "body": "Einstein's general relativity predicts that everything inside a black hole is crushed into a singularity, a point of infinite density. Most physicists see that as a sign the theory is breaking down, not as a true description.\n\nTo understand the very centre, we need a theory that combines gravity with quantum physics. We do not have one that is tested.\n\nThere is also a practical wall. No signal can come out from inside the horizon, so we cannot look. Proposed ideas include dense quantum cores, links to other regions of space, or no singularity at all. None is proven.\n\nThis is one of the deepest open questions in science. Clues may come from gravitational waves, sharper black hole images and progress in theory.",
+      "apply_it": "Sit with this for a minute: there are places in the universe whose interiors, by the laws of physics, we may never directly observe. How does that feel?",
+      "quiz": {
+        "question": "What does general relativity predict at the centre of a black hole, and how do physicists view it?",
+        "options": [
+          "A solid core of iron, confirmed by probes",
+          "A hollow empty sphere",
+          "A miniature galaxy",
+          "A singularity, widely seen as a sign the theory breaks down"
+        ],
+        "answer": 3,
+        "explanation": "General relativity predicts a singularity, but most physicists think it signals the need for a quantum theory of gravity."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--26",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "primordial-black-holes",
+        "dark-matter",
+        "early-universe"
+      ],
+      "title": "Tiny black holes from the dawn of time may exist, or may not",
+      "body": "Some physicists propose that black holes formed not only from dying stars but in the first second after the Big Bang, from especially dense patches of the hot early universe. These hypothetical objects are called primordial black holes.\n\nIf they exist, they could range from smaller than an atom in size to many times the Sun's mass. Some ideas even suggest they could make up part of the dark matter.\n\nThis remains a hypothesis. None has been found. Searches use gravitational lensing, where an unseen mass briefly brightens a background star, and gravitational wave data. These have ruled out many possible mass ranges as a major share of dark matter, but not all. A confirmed detection would be a major discovery.",
+      "apply_it": "Ask yourself: what would it take for you to accept something that has never been seen? What kind of evidence would convince you?",
+      "quiz": {
+        "question": "What is the current status of primordial black holes?",
+        "options": [
+          "Proven to make up all dark matter",
+          "Seen in the 2022 black hole image",
+          "A hypothesis; none has been detected yet",
+          "Found in large numbers by LIGO in 2015"
+        ],
+        "answer": 2,
+        "explanation": "Primordial black holes are a hypothesis. Searches have narrowed the options but none has been detected."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--27",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "largest-black-holes",
+        "supermassive-black-holes",
+        "scale"
+      ],
+      "title": "The biggest black holes could swallow our whole Solar System",
+      "body": "The heaviest black holes measured are estimated at tens of billions of times the mass of the Sun. One of the best-known heavyweights powers the distant quasar TON 618, with estimates around 40 billion solar masses.\n\nFor such a giant, the event horizon would stretch many times farther than the orbit of Neptune. Light would take days to cross it.\n\nThe exact masses carry real uncertainty, because they are worked out indirectly from the light and motion of the gas around them. Methods disagree by large factors for the most extreme cases.\n\nWhat is clear is that these monsters exist, and that they live in the centres of the largest galaxies or brilliant quasars.",
+      "apply_it": "Picture a sphere wider than the orbit of Neptune that nothing, not even light, can leave. Then look at the Sun and remember it would fit inside millions of billions of times over.",
+      "quiz": {
+        "question": "Why are the masses of the very largest black holes uncertain?",
+        "options": [
+          "They change every day",
+          "They are measured indirectly, from light and gas motions, and methods disagree",
+          "Nobody has looked for them",
+          "They are hidden by the Sun"
+        ],
+        "answer": 1,
+        "explanation": "The biggest masses come from indirect methods using surrounding gas and light, which can differ by large factors."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--28",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "galaxy-evolution",
+        "supermassive-black-holes",
+        "feedback"
+      ],
+      "title": "A black hole far smaller than its galaxy can still shape it",
+      "body": "A supermassive black hole holds only a tiny fraction of its galaxy's mass, often well under one per cent. Yet astronomers have found a striking pattern: the bigger a galaxy's central bulge of stars, the bigger its black hole.\n\nThe leading explanation is feedback. When a black hole feeds, it can launch powerful winds and jets. These can heat gas or blow it away, so less gas cools into new stars. In this way the black hole may help set how large its galaxy grows.\n\nThere is direct evidence of the effect. In the Perseus galaxy cluster, the Chandra X-ray telescope has seen vast bubbles inflated by a central black hole, keeping surrounding gas too hot to form many stars. How it all works in detail is still being studied.",
+      "apply_it": "Think of something small in your life with an outsized effect, like a thermostat controlling a whole house. Black holes may play that role for galaxies.",
+      "quiz": {
+        "question": "What pattern links supermassive black holes and their galaxies?",
+        "options": [
+          "Bigger galaxy bulges tend to have bigger black holes",
+          "Black holes are always bigger than their galaxies",
+          "Black holes only exist in small galaxies",
+          "There is no connection at all"
+        ],
+        "answer": 0,
+        "explanation": "Galaxies with bigger central bulges tend to host bigger black holes, likely because black hole feedback regulates star formation."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--29",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "rogue-black-holes",
+        "gravitational-lensing",
+        "milky-way"
+      ],
+      "title": "Lone black holes drift through our galaxy, almost invisible",
+      "body": "Not every black hole sits in a galaxy's centre or with a partner star. Some wander alone. Astronomers estimate the Milky Way may hold around 100 million stellar black holes, and many of these are likely isolated.\n\nA lone black hole gives off almost no light, so finding one is very hard. In 2022, astronomers confirmed the first isolated stellar black hole using Hubble. As it passed in front of a distant star, its gravity bent and brightened the star's light and shifted its position slightly, an effect called gravitational microlensing. It weighs about seven times the Sun and lies roughly 5,000 light-years away.\n\nFuture surveys, like NASA's Nancy Grace Roman Space Telescope, are expected to find many more.",
+      "apply_it": "Next time you look at a field of stars, remember that a black hole could be drifting unseen between you and any of them, given away only by a brief brightening.",
+      "quiz": {
+        "question": "How was the first isolated stellar black hole confirmed in 2022?",
+        "options": [
+          "It was seen glowing in X-rays",
+          "It collided with a planet",
+          "It was heard by LIGO",
+          "Its gravity bent and brightened the light of a background star"
+        ],
+        "answer": 3,
+        "explanation": "Hubble tracked gravitational microlensing: the black hole's gravity brightened and shifted a background star's light."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--30",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "black-holes",
+        "myths",
+        "gravity"
+      ],
+      "title": "Black holes are not cosmic vacuum cleaners",
+      "body": "Films often show black holes sucking in everything around them. In reality, far from a black hole its gravity behaves just like that of any other object of the same mass.\n\nHere is a clear test. If the Sun were somehow replaced by a black hole of exactly the same mass, Earth's orbit would not change at all. We would freeze in the dark, but we would not be pulled in.\n\nThings fall into black holes only if they come close, or lose the energy that keeps them in orbit, such as gas rubbing against other gas in a swirling disc.\n\nThis follows directly from well-tested gravity, the same physics used to send spacecraft to other planets.",
+      "apply_it": "Next time a film shows a black hole sucking up a spaceship from far away, try explaining to someone why that is not how gravity works.",
+      "quiz": {
+        "question": "If the Sun were replaced by a black hole with the same mass, what would happen to Earth's orbit?",
+        "options": [
+          "Earth would be pulled in immediately",
+          "Earth would be flung into space",
+          "Earth's orbit would stay the same",
+          "Earth would orbit much faster"
+        ],
+        "answer": 2,
+        "explanation": "Gravity depends on mass and distance. A black hole of the same mass would hold Earth in the same orbit."
+      }
+    },
+    {
+      "id": "universe-galaxies-and-black-holes--31",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "milky-way",
+        "reflection",
+        "perspective"
+      ],
+      "title": "We look out from a quiet corner of an extraordinary galaxy",
+      "body": "Put the pieces together. You live on a small planet, circling an ordinary star, 26,000 light-years from a black hole 4 million times the Sun's mass. Your Solar System carries you around the galaxy once every 230 million years, among hundreds of billions of other galaxies.\n\nMuch of this was unknown a century ago, when astronomers were still arguing whether other galaxies existed. Now we have measured black holes' shadows, felt their collisions as ripples in space, and traced galaxies across billions of years.\n\nYet the deepest questions remain open: what lies inside a black hole, whether information is lost, how the first giants grew. Knowing where the known ends is part of the wonder.",
+      "apply_it": "Tonight, step outside and look up for one minute. Pick the darkest patch you can see and remember: it is full of galaxies. What question about the universe would you most like answered?",
+      "quiz": {
+        "question": "About a century ago, what were astronomers still debating?",
+        "options": [
+          "Whether the Moon orbits Earth",
+          "Whether other galaxies exist beyond the Milky Way",
+          "Whether the Sun is a star",
+          "Whether light has a speed"
+        ],
+        "answer": 1,
+        "explanation": "In the 1920s, astronomers were still debating whether spiral nebulae were separate galaxies, until measurements of Andromeda settled it."
+      }
+    }
+  ]
+}

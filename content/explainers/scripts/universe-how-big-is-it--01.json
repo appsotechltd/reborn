@@ -1,0 +1,114 @@
+{
+ "card_id": "universe-how-big-is-it--01",
+ "about": "Photo look with real NASA, Hubble and Webb pictures: travelling outward to the edge of the observable universe.",
+ "theme": "photo",
+ "score": true,
+ "voice": "adam",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e000496.jpg",
+     "credit": "NASA"
+    },
+    "headline": "How big is the universe?"
+   },
+   "narration": "Start with home. Earth, rising over the Moon. Light makes that trip in just over a second."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e001770.jpg",
+     "credit": "NASA"
+    }
+   },
+   "narration": "The Sun is about eight light minutes away. A hundred and nine Earths would fit across its face."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA10748.jpg",
+     "credit": "NASA/JPL-Caltech"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "Our galaxy, the Milky Way, is about a hundred thousand light years across. It holds hundreds of billions of stars, and the Sun is just one of them."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1502a.jpg",
+     "credit": "NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams (University of Washington, USA), L. C. Johnson (University of Washington, USA), the PHAT team, and R. Gendler (CC BY 4.0)",
+     "fx": 0.35
+    }
+   },
+   "narration": "Andromeda, our nearest big neighbour, is two and a half million light years away. On a dark night, it is the farthest thing your eyes can see."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic0406a.jpg",
+     "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+    },
+    "headline": "A speck of sky. Thousands of galaxies."
+   },
+   "narration": "Hubble stared at a speck of empty sky, no bigger than a grain of sand held at arm's length. It found thousands of galaxies."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2209a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   },
+   "narration": "Across the whole sky there are hundreds of billions of galaxies. Perhaps more stars than grains of sand on every beach on Earth."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA16873.jpg",
+     "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "The farthest light we can see is the afterglow of the Big Bang. The observable universe is about ninety three billion light years wide."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1214a.jpg",
+     "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+    },
+    "headline": "Does it ever end?",
+    "eyebrow": "Unknown"
+   },
+   "narration": "Beyond that edge, nobody knows. The universe may simply go on forever.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e000496.jpg",
+     "credit": "NASA"
+    }
+   },
+   "narration": "And somewhere in all of this is us, on one small planet, circling an ordinary star.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

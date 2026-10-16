@@ -21,6 +21,8 @@ export const TOPIC_NAMES = {
   money: "Money",
   relationships: "Relationships",
   mindfulness: "Mindfulness & Philosophy",
+  science: "Science & Nature",
+  universe: "Wonders of the Universe",
 };
 
 export const LICENCE_NAMES = {

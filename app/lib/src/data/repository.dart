@@ -44,6 +44,7 @@ const kDefaultTopics = <Topic>[
   Topic(slug: 'ai-skills', name: 'AI & Future Skills'),
   Topic(slug: 'science', name: 'Science & Nature'),
   Topic(slug: 'crime-society', name: 'Crime & Society'),
+  Topic(slug: 'universe', name: 'Wonders of the Universe'),
   Topic(slug: 'life-guides', name: 'Life Guides'),
 ];
 

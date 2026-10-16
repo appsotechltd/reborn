@@ -1,0 +1,740 @@
+{
+  "source": {
+    "id": "universe-story-of-everything",
+    "title": "The Story of Everything",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://science.nasa.gov/universe/the-big-bang/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#wonders-of-the-universe",
+    "attribution": "A Reborn guide in our own words, drawing on NASA Science and the European Space Agency.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NASA Science, The Big Bang, https://science.nasa.gov/universe/the-big-bang/; NASA Science, Universe Overview, https://science.nasa.gov/universe/overview/; NASA Science, Webb: Early Universe, https://science.nasa.gov/mission/webb/early-universe/; NASA Science, Discovering a Runaway Universe, https://science.nasa.gov/mission/hubble/science/science-highlights/discovering-a-runaway-universe/; NASA Science, NASA's Hubble Shows Milky Way is Destined for Head-On Collision, https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision/; NASA Science, Sun, https://science.nasa.gov/sun/; European Space Agency, Planck, https://www.esa.int/Science_Exploration/Space_Science/Planck"
+  },
+  "cards": [
+    {
+      "id": "universe-story-of-everything--01",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "big-bang",
+        "origins",
+        "cosmic-history"
+      ],
+      "title": "Every atom in your body has a 13.8-billion-year story",
+      "body": "About 13.8 billion years ago, everything we can see today was packed into a state far hotter and denser than the core of any star. Then it began to expand and cool. That moment is what scientists call the Big Bang.\n\nFrom it came the hydrogen in the water you drink. Later, stars that lived and died long before the Sun forged the carbon in your cells and the oxygen in your lungs. Galaxies gathered, a quiet cloud of gas collapsed, and a small rocky planet formed beside an ordinary star.\n\nThis is not a myth or a guess. It is a story pieced together from light that has crossed the cosmos for billions of years, and it is one of the most thoroughly tested ideas in science. The cards that follow trace it from the first instant to the distant future.",
+      "apply_it": "Hold your hand up to a lamp tonight. The hydrogen atoms in it have existed since the universe's first few minutes. Let that sink in for a moment.",
+      "quiz": {
+        "question": "Roughly how long ago did the Big Bang happen?",
+        "options": [
+          "About 13.8 billion years ago",
+          "About 4.6 billion years ago",
+          "About 100 million years ago",
+          "About 1 trillion years ago"
+        ],
+        "answer": 0,
+        "explanation": "Measurements of the cosmic microwave background and of the expansion rate agree on an age of about 13.8 billion years. 4.6 billion years is the age of the Sun and Earth."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--02",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "big-bang",
+        "expansion",
+        "misconceptions"
+      ],
+      "title": "The Big Bang was not an explosion in space. It was space itself stretching",
+      "body": "Picture the Big Bang and you may imagine a bomb going off in a dark, empty room. That picture is wrong in an important way.\n\nThere was no room. The Big Bang was not matter flying outward into pre-existing space from a central point. Instead, space itself began expanding everywhere at once, carrying everything with it. Every region of the universe took part, including the patch that would one day hold you.\n\nThis is why there is no centre of the universe to point to. Think of a loaf of raisin bread rising in the oven. Every raisin moves away from every other raisin, and no raisin is the middle. From any galaxy, the others appear to rush away. That is exactly what astronomers see, whichever direction they look.",
+      "apply_it": "Next time you bake bread or blow up a balloon with dots drawn on it, watch how every dot moves away from every other. No dot is the centre.",
+      "quiz": {
+        "question": "Where did the Big Bang happen?",
+        "options": [
+          "At a point near the centre of the Milky Way",
+          "At a point we can locate in the sky",
+          "Everywhere at once, because space itself expanded",
+          "Just outside our Local Group of galaxies"
+        ],
+        "answer": 2,
+        "explanation": "The Big Bang was an expansion of space everywhere, not an explosion from one spot. That is why the universe has no centre and every galaxy sees the others receding."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--03",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "big-bang",
+        "history-of-science",
+        "names"
+      ],
+      "title": "The name 'Big Bang' was coined by a scientist who did not believe in it",
+      "body": "The idea that the universe had a hot, dense beginning took shape in the 1920s and 1930s. For decades it had a serious rival: the steady state model, which said the universe had always existed and looked much the same at every time.\n\nIn 1949, the British astronomer Fred Hoyle, a leading champion of the steady state idea, described the rival picture on BBC radio as a 'big bang'. Whether or not he meant it as mockery, the vivid label stuck, and it outlived his own theory.\n\nWhat settled the contest was evidence, not names. In the 1960s, astronomers found a faint glow left over from a hot early universe, something the steady state model could not explain. Since then, the Big Bang picture has passed test after test.",
+      "apply_it": "Think of an idea you once dismissed that later proved right. What evidence would change your mind about something you believe today?",
+      "quiz": {
+        "question": "What discovery in the 1960s turned most astronomers against the steady state model?",
+        "options": [
+          "The first photograph of Andromeda",
+          "The faint leftover glow of the hot early universe",
+          "The discovery of Pluto",
+          "The first Moon landing"
+        ],
+        "answer": 1,
+        "explanation": "The cosmic microwave background, found in the 1960s, was predicted by a hot Big Bang and could not be explained by a universe that had always looked the same."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--04",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "expansion",
+        "hubble-lemaitre-law",
+        "galaxies"
+      ],
+      "title": "The farther away a galaxy is, the faster it is moving away from us",
+      "body": "In 1927, the Belgian physicist and priest Georges Lemaître worked out that an expanding universe would make distant galaxies appear to recede, faster the farther away they are. Two years later, Edwin Hubble published measurements showing just that pattern.\n\nToday this is called the Hubble-Lemaître law. The International Astronomical Union recommended the joint name in 2018 to credit both men.\n\nThe rule is simple. For roughly every 3.3 million light-years of distance, a galaxy recedes about 70 kilometres per second faster. A galaxy twice as far away recedes twice as fast. Run the film backwards and every galaxy converges, which is one of the strongest clues that the universe was once far smaller, hotter and denser than it is now.",
+      "apply_it": "Imagine running the expansion of the universe backwards like a film. What happens to the space between galaxies as you rewind?",
+      "quiz": {
+        "question": "What does the Hubble-Lemaître law describe?",
+        "options": [
+          "All galaxies move at the same speed",
+          "Nearby galaxies recede faster than distant ones",
+          "Galaxies orbit a single centre of the universe",
+          "More distant galaxies recede from us faster"
+        ],
+        "answer": 3,
+        "explanation": "Recession speed rises in proportion to distance. This pattern is what an expanding universe produces, and it points back to a hot, dense beginning."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--05",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "redshift",
+        "light",
+        "expansion"
+      ],
+      "title": "Light from distant galaxies arrives stretched, like a cosmic tape measure",
+      "body": "Light travels as waves. When space expands while light is crossing it, the waves are stretched along the way. Longer waves look redder, so astronomers call the effect redshift.\n\nEvery element leaves a fingerprint in light: sharp lines at exact colours. Hydrogen's fingerprint is known precisely in the laboratory. When astronomers see that same pattern shifted towards the red in a distant galaxy, they can measure how much the universe has expanded since the light set out.\n\nThe farthest galaxies are so strongly redshifted that their visible and ultraviolet light has been stretched into the infrared, beyond what our eyes can see. That is one reason the James Webb Space Telescope was built to see infrared light. It can catch the light from the first galaxies after its long, stretching journey.",
+      "apply_it": "Look at a rainbow, or light through a prism. Imagine every colour in it being slowly dragged towards the red end and beyond. That is what cosmic expansion does to ancient light.",
+      "quiz": {
+        "question": "Why is the James Webb Space Telescope designed to see infrared light?",
+        "options": [
+          "Infrared light travels faster than visible light",
+          "Expansion stretches the light of the earliest galaxies into the infrared",
+          "The early universe only produced infrared light",
+          "Infrared light is not affected by expansion"
+        ],
+        "answer": 1,
+        "explanation": "Light from very distant galaxies has been stretched by expanding space. Their ultraviolet and visible light now arrives as infrared, which Webb is built to detect."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--06",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "expansion",
+        "gravity",
+        "misconceptions"
+      ],
+      "title": "The universe is expanding, but you, Earth and the Milky Way are not",
+      "body": "If space is stretching everywhere, why isn't your house getting bigger? Because expansion only wins where nothing holds things together.\n\nWithin atoms and molecules, electrical forces are vastly stronger than the gentle stretch of space, so you, your chair and the planet keep their size. Gravity binds Earth to the Sun and holds the Milky Way, about 100,000 light-years across, together as one system.\n\nGravity even binds neighbouring galaxies into groups. Our Local Group, which includes Andromeda, is not flying apart. In fact Andromeda is moving towards us.\n\nExpansion shows up in the vast gaps between groups and clusters of galaxies. There, over millions of light-years, nothing is strong enough to resist, and the distances steadily grow.",
+      "apply_it": "Look at the space between two objects on your table. Expansion is real, but there it is utterly overwhelmed by the forces holding matter together.",
+      "quiz": {
+        "question": "Why doesn't cosmic expansion make the Milky Way grow larger?",
+        "options": [
+          "Gravity holds the galaxy together far more strongly than expansion pulls it apart",
+          "The Milky Way is outside the expanding universe",
+          "Expansion stopped billions of years ago",
+          "The Milky Way is expanding, just too slowly to notice"
+        ],
+        "answer": 0,
+        "explanation": "Expansion matters only across the huge gaps between galaxy groups. Within galaxies, planets and atoms, gravity and other forces easily hold things together."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--07",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "cosmic-microwave-background",
+        "evidence",
+        "discovery"
+      ],
+      "title": "The afterglow of the Big Bang was first mistaken for a fault in the equipment",
+      "body": "In 1964, two radio astronomers at Bell Labs in New Jersey, Arno Penzias and Robert Wilson, were troubled by a faint hiss in their large horn-shaped antenna. It came from every direction, day and night. They checked the wiring and even cleared out pigeon droppings. The hiss stayed.\n\nThey had found the cosmic microwave background: light released when the universe was young and hot, now stretched by expansion into microwaves. Theorists nearby had been preparing to search for exactly this signal.\n\nThe discovery, published in 1965, earned Penzias and Wilson a Nobel Prize in 1978. It remains one of the strongest pieces of evidence for the Big Bang. A small part of the static on an old analogue television set came from this same ancient light.",
+      "apply_it": "If you ever see an old analogue TV tuned between channels, remember that a little of that snow is light from the infant universe.",
+      "quiz": {
+        "question": "How was the cosmic microwave background first found?",
+        "options": [
+          "In a photograph taken by the Hubble Space Telescope",
+          "By astronauts on the Moon",
+          "As an unexplained hiss in a radio antenna",
+          "By measuring the age of meteorites"
+        ],
+        "answer": 2,
+        "explanation": "Penzias and Wilson picked up a persistent microwave hiss from every direction in 1964. It turned out to be the afterglow of the hot early universe."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--08",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "cosmic-microwave-background",
+        "planck",
+        "structure"
+      ],
+      "title": "Tiny ripples in the universe's oldest light became every galaxy",
+      "body": "The cosmic microwave background is remarkably even. Across the whole sky, it has a temperature of about 2.7 degrees above absolute zero, or roughly minus 270 degrees Celsius.\n\nBut it is not perfectly smooth. NASA's COBE satellite, then WMAP, then ESA's Planck mission mapped tiny temperature differences of about one part in 100,000. Those slight ripples mark places where matter was a touch denser than average.\n\nGravity did the rest. Over hundreds of millions of years, the denser patches pulled in more matter and grew into the first stars and galaxies. The pattern of ripples also lets scientists measure the universe's age, its contents and its geometry with high precision. A map of faint warm and cool spots is, in effect, a baby picture of everything.",
+      "apply_it": "Search for the Planck mission's all-sky map of the cosmic microwave background. Every speckle you see is a seed that later grew into galaxies.",
+      "quiz": {
+        "question": "How large are the temperature ripples in the cosmic microwave background?",
+        "options": [
+          "About one part in ten",
+          "About half the average temperature",
+          "There are no ripples at all",
+          "About one part in 100,000"
+        ],
+        "answer": 3,
+        "explanation": "The differences are tiny, around one part in 100,000. Yet they were enough for gravity to build all later structure, including galaxies."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--09",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "nucleosynthesis",
+        "elements",
+        "evidence"
+      ],
+      "title": "The universe cooked its first elements in about 20 minutes",
+      "body": "In the first few minutes after the Big Bang, the whole universe was as hot as the core of a star. Protons and neutrons collided and fused into the first atomic nuclei. Then, after about 20 minutes, expansion cooled things too far and the cooking stopped.\n\nThe recipe that came out was roughly three-quarters hydrogen and one-quarter helium by mass, with tiny traces of deuterium and lithium. The Big Bang model predicts these proportions, and astronomers find close to the same mix in the oldest stars and most pristine gas clouds.\n\nThis match is a third pillar of evidence, alongside receding galaxies and the microwave afterglow. One small puzzle remains: observed lithium in old stars is lower than predicted, and scientists are still working out why.",
+      "apply_it": "Next time you see a helium balloon, remember most of its helium was made in the universe's first half hour, long before any star existed.",
+      "quiz": {
+        "question": "What was the universe mostly made of after its first few minutes?",
+        "options": [
+          "Mostly carbon and oxygen",
+          "Mostly iron",
+          "About three-quarters hydrogen and one-quarter helium",
+          "Equal amounts of every element"
+        ],
+        "answer": 2,
+        "explanation": "Big Bang nucleosynthesis produced about 75 percent hydrogen and 25 percent helium by mass, with traces of lighter elements. Heavier elements came later, from stars."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--10",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "first-second",
+        "particles",
+        "early-universe"
+      ],
+      "title": "In its first second, the universe was a seething soup of particles",
+      "body": "Very early on, the universe was so hot that atoms, and even protons, could not hold together. Matter existed as a dense soup of quarks and gluons, along with electrons, neutrinos and light, all colliding furiously.\n\nAs space expanded, it cooled. Within about a millionth of a second, quarks were bound into protons and neutrons. By around one second, neutrinos stopped interacting and streamed freely through space. They are still out there today as a faint background, though far too weak to detect directly with current instruments.\n\nWe know about this era partly because particle accelerators recreate fleeting drops of that soup. Facilities such as CERN's Large Hadron Collider smash heavy atoms together and briefly produce a quark-gluon plasma, a sliver of the infant universe on Earth.",
+      "apply_it": "Hold your breath for one second. In the universe's first second, the building blocks of every atom you are made of took shape.",
+      "quiz": {
+        "question": "How have scientists recreated conditions similar to the universe's first moments?",
+        "options": [
+          "By heating water to boiling point",
+          "By colliding heavy atoms in particle accelerators",
+          "By sending probes beyond the Solar System",
+          "By studying volcanic eruptions"
+        ],
+        "answer": 1,
+        "explanation": "Particle colliders smash heavy nuclei together at enormous energies, briefly producing a quark-gluon plasma similar to the matter of the very early universe."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--11",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "antimatter",
+        "matter",
+        "open-question"
+      ],
+      "title": "Nobody knows why the universe is made of matter at all",
+      "body": "Physics as we know it treats matter and antimatter almost as mirror twins. When they meet, they annihilate in a flash of energy. The Big Bang should have made them in equal amounts, and they should have wiped each other out, leaving a universe of light and nothing else.\n\nYet here we are. Something tipped the balance. Estimates suggest that for roughly every billion matter-antimatter pairs, there was one extra particle of matter. Everything that exists today, every star and every person, is built from that tiny leftover.\n\nWhat caused the imbalance is one of physics' great open questions. Experiments at CERN and elsewhere compare matter and antimatter with extreme care, searching for subtle differences in how they behave. So far, the differences found are too small to explain it.",
+      "apply_it": "Ask yourself: if the balance had been perfect, nothing would exist to wonder about it. How does that change the way you see an ordinary object on your desk?",
+      "quiz": {
+        "question": "What is currently known about why matter outlasted antimatter?",
+        "options": [
+          "Nobody knows yet; experiments are still searching",
+          "Antimatter was all destroyed by black holes",
+          "The question was fully solved in 1965",
+          "Antimatter never existed in the early universe"
+        ],
+        "answer": 0,
+        "explanation": "The cause of the matter-antimatter imbalance is an open question. Experiments look for tiny differences between the two, but none found so far is large enough."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--12",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "inflation",
+        "early-universe",
+        "hypothesis"
+      ],
+      "title": "A leading theory says the universe once grew faster than anything since",
+      "body": "Cosmic inflation is a theory, not an established fact. It proposes that in a tiny fraction of a second after the beginning, space expanded at an astonishing, accelerating rate, growing by an enormous factor before settling into the gentler expansion we see.\n\nWhy propose something so extreme? Inflation would neatly explain some puzzles: why the microwave afterglow is almost the same temperature in every direction, why space appears geometrically flat, and where the seeds of galaxies came from. Its predictions about those seeds match measurements well.\n\nBut inflation has not been confirmed. One proposed test is a faint twisting pattern in the polarisation of the microwave background caused by gravitational waves from that era. Telescopes are searching for it. Another card in Reborn looks at inflation and its rivals in more depth.",
+      "apply_it": "When you next read a bold science headline, ask: is this measured, or is it a theory that fits the data so far? Inflation is a good example of the second.",
+      "quiz": {
+        "question": "What is the scientific status of cosmic inflation?",
+        "options": [
+          "A proven fact measured directly",
+          "An idea that has been ruled out",
+          "A description of today's expansion",
+          "A leading theory that fits some data but is not confirmed"
+        ],
+        "answer": 3,
+        "explanation": "Inflation explains several features of the early universe and fits data well, but its key predicted signal has not been detected. It remains a theory."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--13",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "time-zero",
+        "before-the-big-bang",
+        "open-question"
+      ],
+      "title": "What happened at the very first instant? Our best physics falls silent",
+      "body": "Rewind the universe and it gets hotter and denser. Rewind far enough, to a time far shorter than a trillionth of a trillionth of a second, and our two best theories, general relativity and quantum physics, give conflicting or meaningless answers. Physicists call that limit the Planck time.\n\nSo the honest answer to what happened at time zero is that nobody knows. Nor do we know whether 'before the Big Bang' even makes sense. Time itself may have begun, or our universe may have emerged from something earlier.\n\nResearchers are working on theories of quantum gravity that could describe this moment. Testing them is hard, because the energies involved are far beyond any machine we could build. The best hope may be faint imprints left in the oldest light and in gravitational waves.",
+      "apply_it": "Spend one minute with the question 'What came before the beginning?' Notice how it feels to sit with something that nobody, anywhere, can yet answer.",
+      "quiz": {
+        "question": "Why can't current physics describe the very first instant?",
+        "options": [
+          "Telescopes are not yet large enough to photograph it",
+          "Our main theories of gravity and quantum physics break down together there",
+          "The first instant has been fully described",
+          "The universe has no history before 1 billion years"
+        ],
+        "answer": 1,
+        "explanation": "At extreme density, general relativity and quantum physics clash. A working theory of quantum gravity would be needed, and none has yet been confirmed."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--14",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "first-atoms",
+        "recombination",
+        "cosmic-microwave-background"
+      ],
+      "title": "For 380,000 years the universe was a glowing fog. Then it cleared",
+      "body": "After the first few minutes, the universe was filled with hot, electrically charged gas. Free electrons scattered light constantly, so light could not travel far. The cosmos was like the inside of a thick, glowing fog.\n\nAfter about 380,000 years, expansion had cooled everything to roughly 3,000 degrees Celsius. At that temperature, electrons could finally settle around nuclei and form the first stable atoms, mostly hydrogen and helium. With the free electrons gone, light could suddenly travel freely.\n\nThat freed light is the cosmic microwave background. When we map it, we are seeing the moment the fog lifted, a surface about 13.8 billion years old. Since then, expansion has stretched the universe about 1,100 times, cooling that once-orange glow into faint microwaves.",
+      "apply_it": "Next time you watch fog lift on a morning walk, picture the entire universe doing the same, about 380,000 years after the Big Bang.",
+      "quiz": {
+        "question": "What happened around 380,000 years after the Big Bang?",
+        "options": [
+          "The first stars ignited",
+          "The Sun and Earth formed",
+          "The first stable atoms formed and light could travel freely",
+          "Expansion began to accelerate"
+        ],
+        "answer": 2,
+        "explanation": "As the universe cooled, electrons joined nuclei to form atoms. Light was no longer constantly scattered, and that released light is the cosmic microwave background."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--15",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "dark-ages",
+        "hydrogen",
+        "early-universe"
+      ],
+      "title": "After the first light came the cosmic dark ages: a universe with no stars",
+      "body": "Once the afterglow faded into the infrared, the universe went dark. There were no stars and no galaxies yet, only vast clouds of cool hydrogen and helium gas, slowly gathering under gravity. Astronomers call this period the cosmic dark ages.\n\nIt lasted for something like a hundred million years or more. During that time, the slightly denser regions seeded in the earliest moments grew denser still, preparing the ground for the first stars.\n\nStudying the dark ages is difficult, because almost nothing shone. The best clue is a faint radio signal that neutral hydrogen gives off, at a wavelength of 21 centimetres. Radio telescopes, including the Square Kilometre Array being built in Australia and South Africa, aim to map this signal and watch the dark ages give way to dawn.",
+      "apply_it": "On a cloudy night with no moon, notice the deep darkness. Now imagine that darkness filling the whole universe for millions upon millions of years.",
+      "quiz": {
+        "question": "What signal do astronomers hope to use to study the cosmic dark ages?",
+        "options": [
+          "Visible light from the first planets",
+          "Sound waves travelling through space",
+          "X-rays from the Sun",
+          "Faint radio waves from neutral hydrogen at 21 centimetres"
+        ],
+        "answer": 3,
+        "explanation": "Neutral hydrogen emits a faint radio signal at a wavelength of 21 centimetres. Radio telescopes aim to map it to study the starless era."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--16",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "first-stars",
+        "population-iii",
+        "open-question"
+      ],
+      "title": "No one has ever seen the universe's very first stars",
+      "body": "The first stars formed from almost pure hydrogen and helium, without the heavier elements that every later star contains. Computer models suggest this made them very different: probably far more massive than the Sun, extremely hot, and short-lived. Astronomers call them Population III stars.\n\nYet these stars remain unseen. Nobody knows exactly when they first ignited, perhaps within the first one or two hundred million years, or how large they really grew. Their predicted properties are well-reasoned expectations, not observations.\n\nThe search is on. Webb hunts for galaxies whose light shows signs of such pristine stars. Others search old stars in our own galaxy for the chemical traces the first stars left behind when they exploded. Finding a clear signature would be one of astronomy's great moments.",
+      "apply_it": "Look up at any star tonight and remember that its ancestors, the first stars of all, have never been seen by anyone.",
+      "quiz": {
+        "question": "Which statement about the very first stars is accurate?",
+        "options": [
+          "They are predicted by models but have not yet been observed directly",
+          "Hubble photographed them in 1995",
+          "They were made mostly of iron",
+          "They formed after the Sun"
+        ],
+        "answer": 0,
+        "explanation": "The first stars are expected to have been massive, hot and short-lived, but no telescope has yet confirmed one. Their properties remain predictions."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--17",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "webb",
+        "early-galaxies",
+        "observations"
+      ],
+      "title": "Webb has seen galaxies shining less than 300 million years after the Big Bang",
+      "body": "The James Webb Space Telescope launched on 25 December 2021 and works about 1.5 million kilometres from Earth. Its gold-coated mirror, 6.5 metres across, collects faint infrared light that has travelled for over 13 billion years.\n\nIn 2024, Webb astronomers confirmed a galaxy, named JADES-GS-z14-0, seen as it was about 290 million years after the Big Bang. Later work has pushed the record back a little further. These galaxies existed when the universe was only around two percent of its current age.\n\nTheir distances are not guesses. Webb splits their light into spectra and measures the redshift directly. When you look at one of these images, you are seeing light that set out before Earth, the Sun or even most of the Milky Way's stars existed.",
+      "apply_it": "Look up a Webb deep field image. Pick one faint smudge and remember that its light may have been travelling for more than twice as long as Earth has existed.",
+      "quiz": {
+        "question": "About how soon after the Big Bang do some galaxies confirmed by Webb appear?",
+        "options": [
+          "About 5 billion years",
+          "About 10 billion years",
+          "Less than 300 million years",
+          "Exactly 380,000 years"
+        ],
+        "answer": 2,
+        "explanation": "Webb has confirmed galaxies seen roughly 290 million years after the Big Bang, and later observations edged slightly earlier still."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--18",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "webb",
+        "early-galaxies",
+        "surprises"
+      ],
+      "title": "The early galaxies Webb finds are brighter than many experts expected",
+      "body": "Before Webb launched, many models predicted that galaxies in the first few hundred million years would be small and faint. Webb found surprisingly many that are bright, and some that look unusually mature for their age.\n\nWhy is not yet settled. Perhaps early galaxies turned gas into stars far more efficiently than galaxies do today. Perhaps their stars were unusually massive and bright, or some light comes from growing black holes rather than stars. Some early mass estimates were too high and have since been revised down.\n\nWhat astronomers broadly agree on is that the Big Bang itself is not in trouble. The puzzle is about how fast galaxies grew. Larger samples and more detailed spectra from Webb are steadily narrowing the possibilities.",
+      "apply_it": "Think of a time when a surprise taught you more than a confirmation did. Science runs on surprises like these.",
+      "quiz": {
+        "question": "What does Webb's discovery of bright early galaxies most directly challenge?",
+        "options": [
+          "The evidence that the universe is expanding",
+          "Ideas about how quickly early galaxies formed and grew",
+          "The existence of the cosmic microwave background",
+          "The age of the Sun"
+        ],
+        "answer": 1,
+        "explanation": "The surprise concerns galaxy growth: how fast stars formed and how bright they were. It does not overturn the expanding universe or the Big Bang."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--19",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "reionization",
+        "cosmic-dawn",
+        "early-universe"
+      ],
+      "title": "The first starlight tore the universe's hydrogen apart and let it shine",
+      "body": "When the first stars and galaxies switched on, they poured out intense ultraviolet light. That light struck the neutral hydrogen gas filling space and knocked electrons free, splitting atoms apart again. Astronomers call this the era of reionisation.\n\nBubbles of ionised gas grew around early galaxies, then merged until most of the gas between galaxies was ionised. The process was largely complete by about a billion years after the Big Bang.\n\nThis mattered for what we can see. Neutral hydrogen soaks up ultraviolet light, so before reionisation the cosmos was partly opaque to it. Afterwards, light could pass through intergalactic space much more freely. Webb is now studying which galaxies did most of this work, and how quickly the bubbles grew.",
+      "apply_it": "Imagine lanterns being lit one by one across a misty valley until the mist burns away. That is cosmic reionisation in one picture.",
+      "quiz": {
+        "question": "What caused reionisation in the early universe?",
+        "options": [
+          "The collision of the Milky Way and Andromeda",
+          "The formation of the Sun",
+          "The cooling of the cosmic microwave background",
+          "Ultraviolet light from the first stars and galaxies"
+        ],
+        "answer": 3,
+        "explanation": "Intense ultraviolet light from early stars and galaxies stripped electrons from hydrogen atoms, ionising the gas between galaxies within about a billion years."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--20",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "light-travel-time",
+        "observable-universe",
+        "looking-back"
+      ],
+      "title": "Every time you look into deep space, you are looking back in time",
+      "body": "Light is fast, about 300,000 kilometres per second, but not infinitely fast. Sunlight takes about 8 minutes and 20 seconds to reach us, so you always see the Sun as it was a few minutes ago. The Andromeda galaxy you can glimpse with the naked eye appears as it was about 2.5 million years ago.\n\nThis makes telescopes into time machines. The deeper we look, the older the light, and the younger the universe we see.\n\nThere is a limit. We can only see light that has had time to reach us. Because space kept expanding while that light travelled, the observable universe is now about 93 billion light-years across, even though it is only 13.8 billion years old. Within it are hundreds of billions of galaxies, perhaps up to two trillion.",
+      "apply_it": "On a dark autumn night, find Andromeda as a faint smudge. The light entering your eye left it before modern humans existed.",
+      "quiz": {
+        "question": "Why is the observable universe about 93 billion light-years across when it is only 13.8 billion years old?",
+        "options": [
+          "Light used to travel faster",
+          "Space kept expanding while the light was travelling",
+          "Astronomers measured it incorrectly",
+          "Galaxies emit light faster than normal"
+        ],
+        "answer": 1,
+        "explanation": "While ancient light crossed space, space itself expanded. The sources of that light are now much farther away than 13.8 billion light-years."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--21",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "sun",
+        "earth",
+        "solar-system-formation"
+      ],
+      "title": "The Sun and Earth formed about 4.6 billion years ago from recycled stardust",
+      "body": "By the time our story reaches the Sun, the universe was already about nine billion years old. Generations of stars had lived and died, seeding the gas of the Milky Way with carbon, oxygen, silicon and iron.\n\nAbout 4.6 billion years ago, a cloud of that enriched gas and dust collapsed. Most of it fell to the centre and became the Sun. The rest flattened into a spinning disc, where dust grains stuck together into pebbles, boulders and eventually planets, including Earth.\n\nWe can date this precisely. The oldest solid grains found in meteorites are about 4.57 billion years old, measured using the steady decay of radioactive elements. They are leftovers from the Solar System's birth, older than any rock on Earth.",
+      "apply_it": "If you ever visit a museum with a meteorite you can touch, do it. You will be touching material older than Earth itself.",
+      "quiz": {
+        "question": "How do scientists know the Solar System is about 4.6 billion years old?",
+        "options": [
+          "By measuring radioactive decay in the oldest meteorite grains",
+          "By counting rings in fossil trees",
+          "From the colour of the Sun",
+          "From the depth of the oceans"
+        ],
+        "answer": 0,
+        "explanation": "Radioactive elements decay at steady rates. Measuring them in the oldest meteorite grains gives an age of about 4.57 billion years."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--22",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "moon",
+        "giant-impact",
+        "hypothesis"
+      ],
+      "title": "The leading idea for the Moon's birth involves a colossal collision",
+      "body": "How did Earth get such a large Moon? The leading explanation is the giant-impact hypothesis. It proposes that soon after Earth formed, a body about the size of Mars, sometimes called Theia, struck the young planet. Debris thrown into orbit gathered to become the Moon.\n\nEvidence supports it. Rocks brought back by the Apollo astronauts are strikingly similar to Earth's rocks in their chemistry. The Moon has a small iron core, as expected if it formed mostly from outer, rocky material. Computer simulations can reproduce a Moon like ours.\n\nBut it is still a hypothesis. Some details, such as why Earth and Moon rocks match so closely, do not fit the simplest versions. Scientists are testing variations, and future samples from the Moon may help decide.",
+      "apply_it": "Look at the Moon tonight and consider that it may be made partly of Earth, splashed into space in a collision.",
+      "quiz": {
+        "question": "What is the status of the giant-impact explanation for the Moon's origin?",
+        "options": [
+          "A confirmed fact observed directly",
+          "An idea rejected by all scientists",
+          "A leading hypothesis supported by evidence but not proven",
+          "A description of how the Sun formed"
+        ],
+        "answer": 2,
+        "explanation": "The giant-impact idea fits many clues, including Apollo samples and computer models, but some details remain unresolved, so it is still a hypothesis."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--23",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "cosmic-calendar",
+        "time",
+        "scale"
+      ],
+      "title": "Squeeze all of cosmic history into one year and the Sun arrives in September",
+      "body": "The astronomer Carl Sagan popularised a way to feel deep time: compress the universe's 13.8 billion years into a single calendar year. The Big Bang happens at the first instant of 1 January. Now is midnight on 31 December.\n\nOn this scale, each day is about 38 million years, and each second is about 440 years.\n\nThe fog of the early universe clears about 15 minutes into New Year's Day. The first stars and galaxies light up within the first week of January. Then come months of galaxies growing, merging and making new generations of stars.\n\nOur Sun and Earth do not form until around the start of September, about two-thirds of the way through the year. For most of cosmic history, there was no Earth at all.",
+      "apply_it": "Open a calendar to 1 September and flick back to 1 January. All those pages are the time before Earth existed.",
+      "quiz": {
+        "question": "On a cosmic calendar where the Big Bang is 1 January, roughly when do the Sun and Earth form?",
+        "options": [
+          "In mid-January",
+          "On 31 December",
+          "In mid-March",
+          "Around the start of September"
+        ],
+        "answer": 3,
+        "explanation": "The Sun and Earth formed about 4.6 billion years ago, about one-third of cosmic history ago, which places them around the start of September."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--24",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "cosmic-calendar",
+        "human-history",
+        "scale"
+      ],
+      "title": "On the cosmic calendar, all of recorded history fits in the last few seconds",
+      "body": "Keep the cosmic calendar in mind: 13.8 billion years squeezed into one year, with today at midnight on 31 December.\n\nLife on Earth appears in September, soon after the planet cools. For month after month it stays microscopic. Complex animals arrive in mid-December. The dinosaurs walk the Earth for a few days around Christmas and disappear about a day before New Year's Eve.\n\nOur own species, Homo sapiens, turns up only about 11 minutes before midnight. All of written history, from the first cities to today, fits into the final 11 seconds or so. A whole human lifetime is about a fifth of a second.\n\nIt is humbling, and also remarkable. In that last fraction of the final second, a species worked out the story on these cards.",
+      "apply_it": "Set a timer for 11 seconds and watch it run. That is roughly all of recorded human history on the cosmic calendar.",
+      "quiz": {
+        "question": "On the cosmic calendar, roughly when does recorded human history begin?",
+        "options": [
+          "In early December",
+          "In the last 11 seconds or so of 31 December",
+          "In September",
+          "On 1 January"
+        ],
+        "answer": 1,
+        "explanation": "Each second of the cosmic calendar is about 440 years. About 5,000 years of written history therefore fills only the last 11 seconds or so."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--25",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "accelerating-expansion",
+        "supernovae",
+        "discovery"
+      ],
+      "title": "In 1998, astronomers found the universe's expansion is speeding up",
+      "body": "For decades, astronomers assumed gravity must be slowing the universe's expansion. The question was how much. In the 1990s, two rival teams set out to measure the slowdown using a type of exploding star, Type Ia supernovae, whose peak brightness can be calibrated.\n\nIn 1998, both teams reached the same startling result. Distant supernovae were fainter than expected, meaning they were farther away. The expansion was not slowing. For roughly the last five billion years or so, it has been accelerating.\n\nThe result has since been confirmed by many independent methods, and it earned a Nobel Prize in Physics in 2011. What drives the acceleration is another matter entirely. Scientists call it dark energy, and what it actually is remains unknown, a mystery explored in its own Reborn collection.",
+      "apply_it": "Think about a firm assumption in your own field that could be overturned by better data. Two teams did exactly that in 1998.",
+      "quiz": {
+        "question": "How was the accelerating expansion of the universe discovered?",
+        "options": [
+          "The Moon was found drifting away from Earth",
+          "The Sun grew brighter",
+          "Distant Type Ia supernovae looked fainter than expected",
+          "Andromeda was found to be approaching"
+        ],
+        "answer": 2,
+        "explanation": "Supernovae with a known peak brightness appeared dimmer, so they were farther away than a slowing universe would allow. The expansion is speeding up."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--26",
+      "topic": "universe",
+      "tags": [
+        "unknown",
+        "hubble-tension",
+        "expansion-rate",
+        "open-question"
+      ],
+      "title": "Two trusted ways of measuring the universe's expansion give different answers",
+      "body": "There are two main ways to measure how fast the universe is expanding today. One uses the early universe: the pattern in the cosmic microwave background, fed through our best cosmological model. It gives about 67 kilometres per second for every 3.3 million light-years.\n\nThe other measures nearby galaxies directly, using stars and supernovae as distance markers. Several teams using this approach get about 73. The gap is small, but both sides have very small error bars. Astronomers call it the Hubble tension.\n\nNobody yet knows what it means. It may be an overlooked measurement error. Or it may hint that something is missing from our picture of the cosmos. Webb, along with new surveys and gravitational-wave measurements, is being used to check the distance ladder and settle the question.",
+      "apply_it": "When two careful measurements disagree, which do you trust? Consider how often progress begins with an awkward mismatch like this.",
+      "quiz": {
+        "question": "What is the Hubble tension?",
+        "options": [
+          "A disagreement between two ways of measuring today's expansion rate",
+          "A crack in the Hubble Space Telescope's mirror",
+          "The pull between the Milky Way and Andromeda",
+          "The pressure inside the Sun"
+        ],
+        "answer": 0,
+        "explanation": "Early-universe methods give an expansion rate of about 67, local measurements about 73. Whether this signals an error or new physics is still unknown."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--27",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "sun",
+        "future",
+        "red-giant"
+      ],
+      "title": "The Sun is slowly brightening, and one day it will swell into a red giant",
+      "body": "The Sun is about halfway through its life of steady hydrogen burning. Models of stars, checked against observations of many other stars, give a clear outline of what comes next.\n\nThe Sun is very gradually getting brighter, by roughly 10 percent every billion years. In around a billion years, this extra heat is expected to make Earth too hot for liquid oceans, long before the Sun's dramatic end.\n\nIn about five billion years, the Sun will run short of hydrogen in its core and swell into a red giant, perhaps hundreds of times its current width. Mercury and Venus will very likely be swallowed. Whether Earth is engulfed is less certain. Finally, the Sun will shed its outer layers and leave behind a white dwarf, a dense, slowly cooling ember about the size of Earth.",
+      "apply_it": "Watch a sunset and remember the Sun has billions of years of steady light left. Earth's habitable window is shorter, which makes this era precious.",
+      "quiz": {
+        "question": "What will the Sun eventually become after its red giant phase?",
+        "options": [
+          "A black hole",
+          "A neutron star",
+          "A new galaxy",
+          "A white dwarf about the size of Earth"
+        ],
+        "answer": 3,
+        "explanation": "The Sun is not massive enough to become a black hole or neutron star. It will shed its outer layers and leave a white dwarf about the size of Earth."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--28",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "andromeda",
+        "galaxy-merger",
+        "future"
+      ],
+      "title": "Andromeda is heading our way, but the collision is less certain than once thought",
+      "body": "The Andromeda galaxy, about 2.5 million light-years away, is approaching the Milky Way at roughly 110 kilometres per second. Measurements by the Hubble Space Telescope in 2012 suggested a head-on collision in about four to five billion years.\n\nA 2025 study using newer data from Hubble and ESA's Gaia mission, and accounting for other nearby galaxies, found the outcome less certain. It suggested roughly even odds of a merger within the next ten billion years.\n\nIf the galaxies do merge, it will not be a catastrophe for individual stars. Stars are so far apart that direct collisions would be extremely rare. Instead, the two spiral galaxies would slowly blend over billions of years into one large, rounded galaxy, sometimes nicknamed Milkomeda.",
+      "apply_it": "On a dark autumn night, find Andromeda near the constellation Cassiopeia. You are looking at a galaxy that may one day share our sky's every star.",
+      "quiz": {
+        "question": "What would happen to most stars if the Milky Way and Andromeda merged?",
+        "options": [
+          "They would all collide and explode",
+          "They would pass each other by, because stars are very far apart",
+          "They would fall into the Sun",
+          "They would stop shining immediately"
+        ],
+        "answer": 1,
+        "explanation": "Galaxies are mostly empty space. In a merger, stars almost never hit each other directly; the galaxies blend gradually into one larger galaxy."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--29",
+      "topic": "universe",
+      "tags": [
+        "theory",
+        "far-future",
+        "heat-death",
+        "hypothesis"
+      ],
+      "title": "The universe's final fate is still a matter of theory",
+      "body": "How will everything end? Scientists can only offer theories, and the answer depends on dark energy, which is not understood.\n\nIf the acceleration simply continues, the leading picture is often called the heat death or big freeze. Galaxies beyond our local group would recede out of view. Star formation would eventually stop, and models suggest the last stars might fade over something like 100 trillion years. Across unimaginable spans, the universe would grow cold, dark and nearly uniform.\n\nOther ideas exist. If dark energy grew stronger, it might one day tear everything apart, a Big Rip. If it weakened and reversed, the universe might collapse in a Big Crunch. Recent galaxy surveys have hinted dark energy might change over time, but this is not confirmed. Future measurements will help decide which story, if any, is right.",
+      "apply_it": "Ask yourself: does knowing the universe may end in darkness trillions of years from now make the present feel smaller, or more valuable?",
+      "quiz": {
+        "question": "What mainly determines which far-future scenario is most likely?",
+        "options": [
+          "The colour of the Sun today",
+          "The number of planets in the Solar System",
+          "How dark energy behaves over time",
+          "The age of the Moon"
+        ],
+        "answer": 2,
+        "explanation": "Heat death, Big Rip and Big Crunch are all theories. Which, if any, comes true depends largely on how dark energy behaves, which is not yet known."
+      }
+    },
+    {
+      "id": "universe-story-of-everything--30",
+      "topic": "universe",
+      "tags": [
+        "known",
+        "reflection",
+        "stardust",
+        "big-bang"
+      ],
+      "title": "You are a way for 13.8 billion years of history to look back at itself",
+      "body": "Trace the atoms in your body back far enough and the story on these cards becomes your own story. The hydrogen in you formed in the first minutes after the Big Bang. Heavier elements, like the calcium in your bones and the iron in your blood, were forged in stars that lived and died before the Sun was born.\n\nThat matter drifted through the galaxy for billions of years, gathered into a cloud, became a planet, and eventually became you, reading this.\n\nMuch remains unknown: why there is matter at all, what came before, and how it will end. But what is known was earned through patient measurement, from radio antennas to space telescopes. For a short time, in a vast and ancient cosmos, a little of the universe has become able to understand where it came from.",
+      "apply_it": "Tonight, step outside for one minute and look up. Remember that the light you see and the eyes seeing it share the same 13.8-billion-year origin.",
+      "quiz": {
+        "question": "Where did the hydrogen in your body originally come from?",
+        "options": [
+          "It formed in the first minutes after the Big Bang",
+          "It was made inside the Sun last year",
+          "It came from the Moon",
+          "It was created when Earth formed"
+        ],
+        "answer": 0,
+        "explanation": "Almost all hydrogen formed in the universe's first few minutes. Heavier elements in your body came later, from earlier generations of stars."
+      }
+    }
+  ]
+}
