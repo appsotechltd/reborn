@@ -8,6 +8,7 @@ import '../../api/models.dart';
 import '../../theme.dart';
 import '../listen/listen_controller.dart';
 import 'explainer_player.dart';
+import 'full_screen_video.dart';
 
 /// How long one scene takes to fade into the next.
 const kSceneFade = Duration(milliseconds: 800);
@@ -54,11 +55,18 @@ class IllustratedVideoPlayer extends ConsumerStatefulWidget {
     required this.video,
     required this.title,
     this.maxHeight = 520,
+    this.fullScreen = false,
+    this.startAt,
   });
 
   final CardVideo video;
   final String title;
   final double maxHeight;
+
+  /// On its own full screen: starts playing at once (from [startAt]) and
+  /// has no full-screen button of its own.
+  final bool fullScreen;
+  final Duration? startAt;
 
   @override
   ConsumerState<IllustratedVideoPlayer> createState() =>
@@ -79,6 +87,11 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
   @override
   void initState() {
     super.initState();
+    if (widget.fullScreen) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _start(from: widget.startAt ?? Duration.zero);
+      });
+    }
     ref.listenManual(listenProvider.select((s) => s.playing), (was, now) {
       // Listen mode started: the video pauses.
       final c = _audio;
@@ -151,7 +164,7 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
     }
   }
 
-  Future<void> _start() async {
+  Future<void> _start({Duration from = Duration.zero}) async {
     _pauseListening();
     final c = ref.read(videoControllerFactoryProvider)(
       Uri.parse(resolveMediaUrl(widget.video.audioUrl)),
@@ -171,6 +184,10 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
       await c.initialize();
       if (!mounted || _audio != c) return;
       c.addListener(_onAudio);
+      if (from > Duration.zero) {
+        await c.seekTo(from);
+        _base = from;
+      }
       await c.play();
     } catch (_) {
       if (mounted && _audio == c) {
@@ -200,6 +217,25 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
       }
       c.play();
     }
+  }
+
+  /// Plays it on its own full screen from where it is; the inline player
+  /// pauses meanwhile.
+  Future<void> _openFullScreen() async {
+    final from = _position >= _total ? Duration.zero : _position;
+    final c = _audio;
+    if (c != null && c.value.isPlaying) await c.pause();
+    if (!mounted) return;
+    await showFullScreenVideo(
+      context,
+      builder: (_) => IllustratedVideoPlayer(
+        video: widget.video,
+        title: widget.title,
+        maxHeight: double.infinity,
+        fullScreen: true,
+        startAt: from,
+      ),
+    );
   }
 
   @override
@@ -278,6 +314,12 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
                               ? Icons.replay_rounded
                               : Icons.play_arrow_rounded,
                         ),
+                      ),
+                    if (!widget.fullScreen)
+                      Positioned(
+                        right: 8,
+                        top: 8,
+                        child: FullScreenButton(onPressed: _openFullScreen),
                       ),
                     if (ready)
                       Positioned(

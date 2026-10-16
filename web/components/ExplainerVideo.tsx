@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
+import { enterFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
 import { isListeningPlaying, videoStarted } from "@/lib/media-focus";
 import type { Card } from "@/lib/types";
+import { Icon } from "./Icon";
 
 /** After the reader presses play, how long to wait for playback before offering the fallback. */
 export const PLAY_TIMEOUT_MS = 10_000;
@@ -62,6 +64,9 @@ function isUnplayable(err: unknown): boolean {
  * When the video can't play (the file fails to load or decode, or nothing has played
  * PLAY_TIMEOUT_MS after the reader pressed play), it says so over the poster, with
  * "Try again" and a link that opens the file on its own.
+ *
+ * Once it plays, a Full screen button puts the film on the whole screen with sound (an iPhone
+ * opens its own player); a feed video goes back to playing muted when the reader leaves.
  */
 export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: boolean }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -73,7 +78,25 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   const [waiting, setWaiting] = useState(0);
   // The reader paused it: don't restart it until it scrolls away and back.
   const userPaused = useRef(false);
+  const [fullScreen, setFullScreen] = useState(false);
+  // Whether a feed video was muted before it went full screen, to put back afterwards.
+  const mutedBefore = useRef(true);
   const e = card.explainer;
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    return onFullscreenChange(() => {
+      const now = isFullscreen(v, v);
+      setFullScreen((was) => {
+        if (was && !now && feed && mutedBefore.current) {
+          v.muted = true;
+          setMuted(true);
+        }
+        return now;
+      });
+    }, v);
+  }, [feed]);
 
   useEffect(() => {
     const v = videoRef.current;
@@ -162,6 +185,39 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
     }
   }
 
+  function openFullScreen() {
+    const v = videoRef.current;
+    if (!v) return;
+    mutedBefore.current = v.muted;
+    // Full screen is for watching: with sound, and playing.
+    v.muted = false;
+    setMuted(false);
+    userPaused.current = false;
+    setStarted(true);
+    if (enterFullscreen(v, v)) setFullScreen(true);
+    if (v.paused) {
+      setWaiting((n) => n + 1);
+      tryPlay(v).catch((err) => {
+        if (isUnplayable(err)) setFailed(true);
+      });
+    } else {
+      videoStarted();
+    }
+  }
+
+  const fullScreenButton = (
+    <button
+      type="button"
+      onClick={openFullScreen}
+      aria-label="Full screen"
+      title="Full screen"
+      data-testid="video-fullscreen"
+      className="pointer-events-auto grid size-11 place-items-center rounded-full bg-film/75 text-film-fg hover:bg-film"
+    >
+      <Icon name="fullscreen" className="size-5" />
+    </button>
+  );
+
   function toggleSound() {
     const v = videoRef.current;
     if (!v) return;
@@ -188,7 +244,7 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
       >
         <video
           ref={videoRef}
-          controls={!feed && started}
+          controls={(!feed && started) || fullScreen}
           playsInline
           muted={feed}
           loop={feed}
@@ -230,23 +286,27 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
                 {isPlaying ? <path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z" /> : <path d="M3 1.5v9l7.5-4.5z" />}
               </svg>
             </button>
-            <button
-              type="button"
-              onClick={toggleSound}
-              aria-label={muted ? "Unmute video" : "Mute video"}
-              className="pointer-events-auto grid size-11 place-items-center rounded-full bg-film/75 text-film-fg hover:bg-film"
-            >
-              <svg aria-hidden="true" viewBox="0 0 16 16" className="size-4 fill-none stroke-current" strokeWidth="1.5">
-                <path d="M2.5 6h2.5l3.5-3v10L5 10H2.5z" className="fill-current" />
-                {muted ? (
-                  <path d="M11 6l3.5 4M14.5 6L11 10" strokeLinecap="round" />
-                ) : (
-                  <path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.5 3.5a6 6 0 0 1 0 9" strokeLinecap="round" />
-                )}
-              </svg>
-            </button>
+            <span className="flex gap-2">
+              {fullScreenButton}
+              <button
+                type="button"
+                onClick={toggleSound}
+                aria-label={muted ? "Unmute video" : "Mute video"}
+                className="pointer-events-auto grid size-11 place-items-center rounded-full bg-film/75 text-film-fg hover:bg-film"
+              >
+                <svg aria-hidden="true" viewBox="0 0 16 16" className="size-4 fill-none stroke-current" strokeWidth="1.5">
+                  <path d="M2.5 6h2.5l3.5-3v10L5 10H2.5z" className="fill-current" />
+                  {muted ? (
+                    <path d="M11 6l3.5 4M14.5 6L11 10" strokeLinecap="round" />
+                  ) : (
+                    <path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.5 3.5a6 6 0 0 1 0 9" strokeLinecap="round" />
+                  )}
+                </svg>
+              </button>
+            </span>
           </div>
         ) : null}
+        {!feed && started && !failed ? <div className="absolute right-2 top-2">{fullScreenButton}</div> : null}
         {failed ? (
           <div
             role="alert"

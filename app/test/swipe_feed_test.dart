@@ -414,4 +414,40 @@ void main() {
     expect(server.called('GET /v1/timeline'), hasLength(2));
     expect(find.text('Idea p1'), findsOneWidget);
   });
+
+  testWidgets('a feed video opens full screen with sound, and comes back', (
+    tester,
+  ) async {
+    final videos = Videos();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([post('v1', explainer: video('v1')), post('p2')]),
+      );
+    await pumpApp(tester, server, size: phone, overrides: [videos.override]);
+    final v1 = videos.byId['v1']!;
+    expect(v1.value.volume, 0);
+
+    await tester.tap(find.byKey(const ValueKey('video-fullscreen')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('video-fullscreen-page')), findsOneWidget);
+    // Same playback, now with sound, and it keeps playing.
+    expect(v1.value.isPlaying, isTrue);
+    expect(v1.value.volume, 1);
+
+    // Tap to pause and play.
+    await tester.tap(find.bySemanticsLabel(RegExp(r'Tap to pause$')));
+    await tester.pump();
+    expect(v1.value.isPlaying, isFalse);
+    await tester.tap(find.bySemanticsLabel(RegExp(r'Tap to play$')));
+    await tester.pump();
+    expect(v1.value.isPlaying, isTrue);
+
+    await tester.tap(find.byKey(const ValueKey('video-exit-fullscreen')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('video-fullscreen-page')), findsNothing);
+    // Back in the feed: playing again, muted as the feed was.
+    expect(v1.value.isPlaying, isTrue);
+    expect(v1.value.volume, 0);
+  });
 }

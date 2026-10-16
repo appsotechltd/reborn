@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
+import { enterFullscreen, exitFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
 import { videoStarted } from "@/lib/media-focus";
 import { kenBurns, sceneAt, sceneOpacities, sceneProgress, videoDuration } from "@/lib/studio";
 import type { CardVideo } from "@/lib/types";
@@ -21,10 +22,14 @@ function clock(s: number): string {
  * A member card's illustrated video: the narration plays while the card's illustrations show in
  * turn, each for an equal share of it, drifting slowly (a Ken Burns zoom and pan) and cross-fading
  * into the next. No captions or text on the pictures. A 2:3 frame that stays dark in both themes.
- * Nothing downloads until the reader presses play.
+ * Nothing downloads until the reader presses play. Full screen shows the whole picture on black;
+ * where the browser can't (an iPhone), the frame fills the window instead.
  */
 export function IllustratedVideo({ video, title, feed = false }: { video: CardVideo; title: string; feed?: boolean }) {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const frameRef = useRef<HTMLDivElement>(null);
+  // "real": the browser's full screen; "window": the frame fills the window (no full-screen API).
+  const [fullScreen, setFullScreen] = useState<false | "real" | "window">(false);
   const [started, setStarted] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
@@ -46,6 +51,23 @@ export function IllustratedVideo({ video, title, feed = false }: { video: CardVi
     return () => cancelAnimationFrame(frame);
   }, [playing]);
 
+  useEffect(() => {
+    return onFullscreenChange(() => {
+      const now = isFullscreen(frameRef.current);
+      setFullScreen((was) => (now ? "real" : was === "real" ? false : was));
+    });
+  }, []);
+
+  // Escape leaves the window-filling view, as it does real full screen.
+  useEffect(() => {
+    if (fullScreen !== "window") return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setFullScreen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [fullScreen]);
+
   const scenes = video.scenes ?? [];
   const total = videoDuration(audioDuration, video.duration_s);
   const opacities = sceneOpacities(time, total, scenes.length);
@@ -66,6 +88,15 @@ export function IllustratedVideo({ video, title, feed = false }: { video: CardVi
     }
   }
 
+  function toggleFullScreen() {
+    if (fullScreen === "real") return exitFullscreen();
+    if (fullScreen === "window") return setFullScreen(false);
+    const frame = frameRef.current;
+    if (!frame) return;
+    setFullScreen(enterFullscreen(frame) ? "real" : "window");
+    if (audioRef.current?.paused) toggle();
+  }
+
   function seek(to: number) {
     const a = audioRef.current;
     if (!a) return;
@@ -79,8 +110,12 @@ export function IllustratedVideo({ video, title, feed = false }: { video: CardVi
       data-testid="illustrated-video"
     >
       <div
+        ref={frameRef}
+        data-fullscreen={fullScreen || undefined}
         className={`relative mx-auto aspect-[2/3] w-full max-w-[22rem] overflow-hidden rounded-card border border-film bg-film text-film-fg ${
           feed ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""
+        } ${fullScreen ? "rounded-none border-0 bg-black" : ""} ${
+          fullScreen === "window" ? "fixed! inset-0 z-[100] m-0! aspect-auto! h-dvh! w-screen! max-w-none!" : ""
         }`}
       >
         {scenes.map((s, i) => {
@@ -94,7 +129,7 @@ export function IllustratedVideo({ video, title, feed = false }: { video: CardVi
               loading={i === 0 ? "lazy" : started ? "eager" : "lazy"}
               decoding="async"
               data-scene={i}
-              className="absolute inset-0 size-full object-cover will-change-transform"
+              className={`absolute inset-0 size-full will-change-transform ${fullScreen ? "object-contain" : "object-cover"}`}
               style={{
                 opacity: opacities[i],
                 transform: `scale(${kb.scale}) translate(${kb.x}%, ${kb.y}%)`,
@@ -166,6 +201,16 @@ export function IllustratedVideo({ video, title, feed = false }: { video: CardVi
             <span className="shrink-0 pr-1 text-xs tabular-nums text-film-fg/85">
               {clock(time)} / {clock(total)}
             </span>
+            <button
+              type="button"
+              onClick={toggleFullScreen}
+              aria-label={fullScreen ? "Exit full screen" : "Full screen"}
+              title={fullScreen ? "Exit full screen" : "Full screen"}
+              data-testid="video-fullscreen"
+              className="grid size-11 shrink-0 place-items-center rounded-full bg-film/75 text-film-fg hover:bg-film"
+            >
+              <Icon name={fullScreen ? "fullscreenExit" : "fullscreen"} className="size-5" />
+            </button>
           </div>
         )}
         {failed ? (
