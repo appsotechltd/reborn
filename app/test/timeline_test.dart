@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reborn/src/api/models.dart';
+import 'package:reborn/src/features/timeline/timeline_screen.dart';
 
 import 'fake_server.dart';
 import 'fixtures.dart';
@@ -155,6 +157,67 @@ void main() {
     await tester.tap(find.text('Money'));
     await tester.pumpAndSettle();
     expect(server.calls.last.query['topics'], 'money');
+  });
+
+  testWidgets('All / Videos / Images keeps the posts with that media, '
+      'paging with the same filter', (tester) async {
+    final server = FakeServer()
+      ..on('GET /v1/timeline', (c) {
+        switch (c.query['media']) {
+          case 'video':
+            return c.query['cursor'] == 'v1'
+                ? {
+                    'posts': [post('v2')],
+                    'next_cursor': null,
+                  }
+                : {
+                    'posts': [post('v1')],
+                    'next_cursor': 'v1',
+                  };
+          case 'image':
+            return {'posts': [], 'next_cursor': null};
+          default:
+            return {
+              'posts': [post('p1'), post('p2')],
+              'next_cursor': null,
+            };
+        }
+      });
+    await pumpApp(tester, server, size: const Size(800, 3000));
+    expect(find.text('Idea p1'), findsOneWidget);
+    expect(server.calls.last.query.containsKey('media'), isFalse);
+
+    await tester.tap(find.byKey(const ValueKey('timeline-media-videos')));
+    await tester.pumpAndSettle();
+    expect(find.text('Idea p1'), findsNothing);
+    expect(find.text('Idea v1'), findsOneWidget);
+    expect(find.text('Idea v2'), findsOneWidget);
+    final calls = server.called('GET /v1/timeline').toList();
+    expect(calls[calls.length - 2].query['media'], 'video');
+    expect(calls.last.query['media'], 'video');
+    expect(calls.last.query['cursor'], 'v1');
+
+    await tester.tap(find.byKey(const ValueKey('timeline-media-images')));
+    await tester.pumpAndSettle();
+    expect(server.calls.last.query['media'], 'image');
+    expect(
+      find.text('No images here yet. Try All, or another topic.'),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.byKey(const ValueKey('timeline-media-all')));
+    await tester.pumpAndSettle();
+    expect(find.text('Idea p1'), findsOneWidget);
+  });
+
+  test('Listen keys carry the media filter when one is on', () {
+    expect(timelineListenKey(null), 'timeline|');
+    expect(timelineListenKey(['money']), 'timeline|money');
+    expect(
+      timelineListenKey(['money'], MediaFilter.videos),
+      'timeline|money|videos',
+    );
+    expect(timelineListenKey(null, MediaFilter.images), 'timeline||images');
   });
 
   testWidgets('the swipe feed is still reachable from the timeline', (

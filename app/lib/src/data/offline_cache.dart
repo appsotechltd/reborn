@@ -22,8 +22,12 @@ class OfflineCache {
   static String stashKey(String id) => 'stash.$id';
   static String cardKey(String id) => 'card.$id';
   static String sourceKey(String id) => 'source.$id';
-  static String timelineKey(List<String>? topics, String? cursor) =>
-      'timeline.${(topics == null || topics.isEmpty) ? '_' : ([...topics]..sort()).join(',')}.${cursor ?? '_'}';
+  static String timelineKey(
+    List<String>? topics,
+    String? cursor, {
+    String? media,
+  }) =>
+      'timeline.${(topics == null || topics.isEmpty) ? '_' : ([...topics]..sort()).join(',')}.${cursor ?? '_'}${media == null ? '' : '.m=$media'}';
   static String postKey(String id) => 'post.$id';
 
   Future<void> write(String key, Object? json) =>

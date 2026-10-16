@@ -313,6 +313,28 @@ class CardCategory {
   };
 }
 
+/// The All / Videos / Images switch: every card, only those with a video
+/// (an explainer, or a member card's illustrated video), or only those with
+/// a picture.
+enum MediaFilter {
+  all,
+  videos,
+  images;
+
+  /// `media` for `GET /v1/timeline`; null for [all].
+  String? get query => switch (this) {
+    MediaFilter.all => null,
+    MediaFilter.videos => 'video',
+    MediaFilter.images => 'image',
+  };
+
+  bool matches(IdeaCard card) => switch (this) {
+    MediaFilter.all => true,
+    MediaFilter.videos => card.explainer != null || card.video != null,
+    MediaFilter.images => card.image != null,
+  };
+}
+
 /// An idea card. Named `IdeaCard` to avoid clashing with Material's `Card`.
 class IdeaCard {
   const IdeaCard({

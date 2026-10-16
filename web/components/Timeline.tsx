@@ -9,12 +9,14 @@ import { useLoad } from "@/lib/use-load";
 import { useSeenTracker } from "@/lib/use-seen";
 import { useListen, useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromPosts } from "@/lib/listen-player";
+import { mediaQuery, type MediaFilter } from "@/lib/media-filter";
 import { postOnScreen, smoothScroll, useHeaderHeightVar, useSnapFeedKeys } from "@/lib/use-snap-feed";
 import { isSummaryItem, type Post, type TimelineItem, type Topic } from "@/lib/types";
 import { ChipRow } from "./ChipRow";
 import { DailyBanner } from "./DailyBanner";
 import { Icon } from "./Icon";
 import { LoadMoreSentinel } from "./LoadMoreSentinel";
+import { MediaSwitch } from "./MediaSwitch";
 import { PostCard } from "./PostCard";
 import { BookCover } from "./Polish";
 import { ErrorNote } from "./SignInPrompt";
@@ -31,7 +33,10 @@ const PRELOAD_POSTS = 3;
 const FOLLOW_AFTER_MS = 500;
 
 interface FeedState {
-  /** Whose timeline this is (ANON, or the token it was loaded with) and its topic filter: `${who}|${topic}`. */
+  /**
+   * Whose timeline this is (ANON, or the token it was loaded with), its topic filter and its media
+   * filter: `${who}|${topic}|${media}`.
+   */
   key: string;
   posts: TimelineItem[];
   cursor: string | null;
@@ -69,13 +74,14 @@ export function Timeline({
 }) {
   const { ready, token, user, api } = useAuth();
   const [topic, setTopic] = useState("");
-  const [feed, setFeed] = useState<FeedState>({ key: `${ANON}|`, posts: initialPosts, cursor: initialCursor });
+  const [media, setMedia] = useState<MediaFilter>("all");
+  const [feed, setFeed] = useState<FeedState>({ key: `${ANON}||all`, posts: initialPosts, cursor: initialCursor });
   const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [moreError, setMoreError] = useState<string | null>(null);
   const listRef = useRef<HTMLOListElement>(null);
   const who = token ?? ANON;
-  const wanted = `${who}|${topic}`;
+  const wanted = `${who}|${topic}|${media}`;
   const switching = ready && feed.key !== wanted;
   const busy = useRef(false);
 
@@ -83,7 +89,7 @@ export function Timeline({
     if (!ready || feed.key === wanted) return;
     let cancelled = false;
     api
-      .timelineWithSummaries({ limit: PAGE, topics: topic || undefined }, who !== ANON)
+      .timelineWithSummaries({ limit: PAGE, topics: topic || undefined, media: mediaQuery(media) }, who !== ANON)
       .then((page) => {
         if (cancelled) return;
         setFeed({ key: wanted, posts: page.posts, cursor: page.next_cursor });
@@ -95,7 +101,7 @@ export function Timeline({
     return () => {
       cancelled = true;
     };
-  }, [ready, wanted, who, topic, feed.key, api]);
+  }, [ready, wanted, who, topic, media, feed.key, api]);
 
   const loadMore = useCallback(async () => {
     if (!feed.cursor || busy.current || switching) return;
@@ -103,10 +109,10 @@ export function Timeline({
     setLoadingMore(true);
     setMoreError(null);
     const key = feed.key;
-    const [keyWho, keyTopic] = key.split("|");
+    const [keyWho, keyTopic, keyMedia] = key.split("|");
     try {
       const page = await api.timelineWithSummaries(
-        { cursor: feed.cursor, limit: PAGE, topics: keyTopic || undefined },
+        { cursor: feed.cursor, limit: PAGE, topics: keyTopic || undefined, media: mediaQuery(keyMedia as MediaFilter) },
         keyWho !== ANON,
       );
       setFeed((f) =>
@@ -140,7 +146,9 @@ export function Timeline({
   const listenable = ready && !!player && !switching && cardPosts(feed.posts).some((p) => player.canPlay(p.card));
 
   const feedTopics = feed.key.split("|")[1] ?? "";
-  const listenQueue = `timeline|${feedTopics}`;
+  const feedMedia = (feed.key.split("|")[2] ?? "all") as MediaFilter;
+  // `timeline|<topics>`, with `|videos` or `|images` while a media filter is on.
+  const listenQueue = `timeline|${feedTopics}${feedMedia === "all" ? "" : `|${feedMedia}`}`;
 
   /** Listen mode from the post on screen (or the top), with the feed's topic filter. */
   function listen() {
@@ -150,6 +158,7 @@ export function Timeline({
       items: itemsFromPosts(cardPosts(feed.posts.slice(from))),
       cursor: feed.cursor,
       topics: feedTopics,
+      media: mediaQuery(feedMedia),
       queue: listenQueue,
     });
   }
@@ -174,7 +183,14 @@ export function Timeline({
   const onScreenCard = cards.findIndex((p) => p.id === onScreen);
   useListenFollow(
     ready && !switching && onScreenCard >= 0
-      ? { items: itemsFromPosts(cards), index: onScreenCard, cursor: feed.cursor, topics: feedTopics, queue: listenQueue }
+      ? {
+          items: itemsFromPosts(cards),
+          index: onScreenCard,
+          cursor: feed.cursor,
+          topics: feedTopics,
+          media: mediaQuery(feedMedia),
+          queue: listenQueue,
+        }
       : null,
   );
 
@@ -201,6 +217,12 @@ export function Timeline({
     window.scrollTo({ top: 0 });
   }
 
+  function chooseMedia(next: MediaFilter) {
+    if (next === media) return;
+    setMedia(next);
+    window.scrollTo({ top: 0 });
+  }
+
   // Signed out, phones get the sign-up prompt in the first post's slide; today's idea and the streak
   // open from the header's streak chip there. Tablets have them above the grid, desktops beside the feed.
   const phoneLead = ready && !user ? <JoinPrompt className="md:hidden" /> : null;
@@ -214,12 +236,11 @@ export function Timeline({
   return (
     <div className="mx-auto max-w-3xl md:max-w-none lg:grid lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start lg:gap-8">
       <div className="min-w-0">
-        {topics.length ? <TopicTabs topics={topics} selected={topic} onSelect={chooseTopic} /> : null}
-        {listenable ? (
-          <div className="mb-4 flex justify-end max-md:hidden">
-            <ListenFeedButton onClick={listen} />
-          </div>
-        ) : null}
+        <PhoneFeedBar topics={topics} topic={topic} onTopic={chooseTopic} media={media} onMedia={chooseMedia} />
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 max-md:hidden">
+          <MediaSwitch options={MEDIA_OPTIONS} selected={media} onSelect={chooseMedia} small />
+          {listenable ? <ListenFeedButton onClick={listen} /> : null}
+        </div>
         {switching && !error ? (
           <p role="status" className="mb-4 text-center text-sm text-muted">
             {feed.key.split("|")[0] === who ? "Loading…" : "Loading your timeline…"}
@@ -229,17 +250,27 @@ export function Timeline({
         {feed.posts.length === 0 && !switching ? (
           <>
             {phoneLead}
-            <p className="panel p-6 text-center text-muted">
-              No ideas here yet.{" "}
-              <Link href="/welcome?edit=1" className="link">
-                Pick some topics
-              </Link>{" "}
-              or{" "}
-              <Link href="/sources" className="link">
-                browse the sources
-              </Link>
-              .
-            </p>
+            {media === "all" ? (
+              <p className="panel p-6 text-center text-muted">
+                No ideas here yet.{" "}
+                <Link href="/welcome?edit=1" className="link">
+                  Pick some topics
+                </Link>{" "}
+                or{" "}
+                <Link href="/sources" className="link">
+                  browse the sources
+                </Link>
+                .
+              </p>
+            ) : (
+              <p className="panel p-6 text-center text-muted">
+                No {media} here yet.{" "}
+                <button type="button" className="link" onClick={() => chooseMedia("all")}>
+                  Show everything
+                </button>{" "}
+                or try another topic.
+              </p>
+            )}
           </>
         ) : (
           // Phones: one post per screen. Tablets: two columns, as in the app. Desktops: one reading
@@ -336,10 +367,39 @@ function useMediaQuery(query: string): boolean {
   return on;
 }
 
+const MEDIA_OPTIONS: { id: MediaFilter }[] = [{ id: "all" }, { id: "videos" }, { id: "images" }];
+
+/**
+ * Above the phone feed, as in the app, staying under the header while the feed snaps: the topic
+ * tabs, then the All / Videos / Images switch. Wider screens have the topic links above the
+ * timeline instead, and the switch beside the Listen button.
+ */
+function PhoneFeedBar({
+  topics,
+  topic,
+  onTopic,
+  media,
+  onMedia,
+}: {
+  topics: Pick<Topic, "slug" | "name">[];
+  topic: string;
+  onTopic: (slug: string) => void;
+  media: MediaFilter;
+  onMedia: (media: MediaFilter) => void;
+}) {
+  return (
+    <div data-feed-chips className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 bg-bg md:hidden">
+      {topics.length ? <TopicTabs topics={topics} selected={topic} onSelect={onTopic} /> : null}
+      <div className="mx-5 py-1.5">
+        <MediaSwitch options={MEDIA_OPTIONS} selected={media} onSelect={onMedia} small />
+      </div>
+    </div>
+  );
+}
+
 /**
  * The phone feed's topic tabs, as in the app: "For you" and each topic as plain text, the current
- * one underlined in amber, filtering the feed in place. They stay under the header while the feed
- * snaps. Wider screens have the topic links above the timeline instead.
+ * one underlined in amber, filtering the feed in place.
  */
 function TopicTabs({
   topics,
@@ -352,9 +412,7 @@ function TopicTabs({
 }) {
   return (
     <ChipRow
-      data-feed-chips
       label="Filter the timeline by topic"
-      className="sticky top-[var(--site-header-h,3.5rem)] z-[5] -mx-4 bg-bg md:hidden"
       scrollClassName="mx-5 flex gap-5 overflow-x-auto border-b border-line [scrollbar-width:none]"
     >
       {[{ slug: "", name: "For you" }, ...topics].map((t) => {

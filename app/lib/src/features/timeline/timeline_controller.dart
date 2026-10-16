@@ -15,6 +15,18 @@ final timelineFilterProvider = NotifierProvider<TimelineFilter, String?>(
   TimelineFilter.new,
 );
 
+/// The timeline's All / Videos / Images switch.
+class TimelineMedia extends Notifier<MediaFilter> {
+  @override
+  MediaFilter build() => MediaFilter.all;
+
+  void select(MediaFilter media) => state = media;
+}
+
+final timelineMediaProvider = NotifierProvider<TimelineMedia, MediaFilter>(
+  TimelineMedia.new,
+);
+
 class TimelineState {
   const TimelineState({
     required this.posts,
@@ -66,16 +78,21 @@ int? caughtUpIndex(List<Post> posts) {
 
 class TimelineController extends AsyncNotifier<TimelineState> {
   List<String>? _topics;
+  MediaFilter _media = MediaFilter.all;
 
   /// The topics the timeline was fetched with (null: the server's choice);
   /// Listen mode loads further pages with the same filter.
   List<String>? get topics => _topics;
+
+  /// The media filter the timeline was fetched with.
+  MediaFilter get media => _media;
 
   @override
   Future<TimelineState> build() async {
     final filter = ref.watch(timelineFilterProvider);
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     final prefs = ref.watch(topicPrefsProvider);
+    _media = ref.watch(timelineMediaProvider);
     // Signed in, "For you" omits `topics` so the server uses the account's
     // topics and follows.
     _topics = filter != null
@@ -83,7 +100,7 @@ class TimelineController extends AsyncNotifier<TimelineState> {
         : (signedIn ? null : (prefs.isEmpty ? null : prefs));
     final page = await ref
         .read(repositoryProvider)
-        .timeline(topics: _topics, withSummaries: true);
+        .timeline(topics: _topics, media: _media.query, withSummaries: true);
     return TimelineState(
       posts: page.value.posts,
       nextCursor: page.value.nextCursor,
@@ -100,6 +117,7 @@ class TimelineController extends AsyncNotifier<TimelineState> {
           .read(repositoryProvider)
           .timeline(
             topics: _topics,
+            media: _media.query,
             cursor: current.nextCursor,
             withSummaries: true,
           );

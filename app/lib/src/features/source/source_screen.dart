@@ -55,10 +55,12 @@ class SourceScreen extends ConsumerWidget {
         data: (f) {
           final cards = f.value.cards;
           final page = 'source:$sourceId';
-          final videos = cards.any((c) => c.explainer != null);
-          final videosOnly = videos && ref.watch(videosOnlyProvider(page));
-          final shown = visibleCards(cards, videosOnly);
-          final listen = collectionListenTarget(ref, page, shown, videosOnly);
+          final filter = collectionFilter(
+            cards,
+            ref.watch(cardsFilterProvider(page)),
+          );
+          final shown = visibleCards(cards, filter);
+          final listen = collectionListenTarget(ref, page, shown, filter);
           final before = [
             ReadingWidth(
               child: _SourceHeader(

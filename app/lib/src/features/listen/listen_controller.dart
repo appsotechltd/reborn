@@ -162,6 +162,7 @@ class ListenController extends Notifier<ListenState> {
   bool _started = false;
 
   List<String>? _topics;
+  String? _media;
   String? _cursor;
   Future<void>? _pageLoad;
 
@@ -226,19 +227,22 @@ class ListenController extends Notifier<ListenState> {
   // ---- Starting ----
 
   /// Starts Listen mode on the timeline's [posts] from [index], loading
-  /// further pages from [cursor] with the same [topics] filter. [key] names
-  /// the list (see [ListenState.queueKey]).
+  /// further pages from [cursor] with the same [topics] and [media] filters
+  /// ([media] as in [MediaFilter.query]). [key] names the list (see
+  /// [ListenState.queueKey]).
   Future<void> startTimeline({
     required List<Post> posts,
     int index = 0,
     String? cursor,
     List<String>? topics,
+    String? media,
     String? key,
   }) => _begin(
     posts: posts,
     index: index,
     cursor: cursor,
     topics: topics,
+    media: media,
     key: key,
     playing: true,
   );
@@ -286,6 +290,7 @@ class ListenController extends Notifier<ListenState> {
       index: target.index ?? 0,
       cursor: target.cursor,
       topics: target.topics,
+      media: target.media,
       key: cardId == null ? target.key : null,
       playing: s.playing,
       single: cardId != null,
@@ -300,6 +305,7 @@ class ListenController extends Notifier<ListenState> {
     int index = 0,
     String? cursor,
     List<String>? topics,
+    String? media,
     String? key,
     required bool playing,
     bool single = false,
@@ -309,6 +315,7 @@ class ListenController extends Notifier<ListenState> {
     _leave();
     await _stopOutput();
     _topics = topics;
+    _media = media;
     _cursor = single ? null : cursor;
     _pageLoad = null;
     if (!keepSleep) {
@@ -622,7 +629,7 @@ class ListenController extends Notifier<ListenState> {
       try {
         final page = await ref
             .read(repositoryProvider)
-            .timeline(topics: _topics, cursor: _cursor);
+            .timeline(topics: _topics, media: _media, cursor: _cursor);
         if (!state.active) return;
         final have = state.queue.map((p) => p.id).toSet();
         _cursor = page.value.nextCursor;
@@ -863,6 +870,7 @@ class ListenTarget {
     this.index,
     this.cursor,
     this.topics,
+    this.media,
   }) : cardId = null;
 
   /// A card's own page.
@@ -872,6 +880,7 @@ class ListenTarget {
       index = 0,
       cursor = null,
       topics = null,
+      media = null,
       cardId = card.id;
 
   ListenTarget.cards({
@@ -881,6 +890,7 @@ class ListenTarget {
   }) : posts = [for (final c in cards) Post.fromCard(c)],
        cursor = null,
        topics = null,
+       media = null,
        cardId = null;
 
   /// Names the list (see [ListenState.queueKey]).
@@ -893,6 +903,9 @@ class ListenTarget {
   final int? index;
   final String? cursor;
   final List<String>? topics;
+
+  /// The timeline's media filter, as in [MediaFilter.query].
+  final String? media;
   final String? cardId;
 
   /// Changes when the screen's list or its item on screen does.

@@ -231,14 +231,16 @@ class RebornRepository {
   /// woven in; Listen mode pages through card posts only.
   Future<Fetched<PostPage>> timeline({
     List<String>? topics,
+    String? media,
     String? cursor,
     bool withSummaries = false,
   }) async {
-    final key = OfflineCache.timelineKey(topics, cursor);
+    final key = OfflineCache.timelineKey(topics, cursor, media: media);
     final r = await _cached<PostPage>(
       withSummaries ? '$key.s' : key,
       () => api.timeline(
         topics: topics,
+        media: media,
         cursor: cursor,
         withSummaries: withSummaries,
       ),

@@ -334,9 +334,11 @@ class ApiClient {
   String _post(String id) => '/v1/posts/${Uri.encodeComponent(id)}';
 
   /// With [withSummaries] the page also carries summary posts (see
-  /// [Post.summary]) woven between the card posts.
+  /// [Post.summary]) woven between the card posts. [media] (`video` or
+  /// `image`, see [MediaFilter.query]) keeps only card posts with that media.
   Future<PostPage> timeline({
     List<String>? topics,
+    String? media,
     String? cursor,
     int limit = 20,
     bool withSummaries = false,
@@ -349,6 +351,7 @@ class ApiClient {
           'topics': (topics == null || topics.isEmpty)
               ? null
               : topics.join(','),
+          'media': media,
           'cursor': cursor,
           'limit': '$limit',
           if (withSummaries) 'with': 'summaries',

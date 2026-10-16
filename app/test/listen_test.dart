@@ -23,16 +23,19 @@ class ListenRepo extends FakeRepository {
 
   final pages = <String, PostPage>{};
   final timelineCalls = <(List<String>?, String?)>[];
+  final timelineMedia = <String?>[];
   final seen = <String>[];
   final views = <String>[];
 
   @override
   Future<Fetched<PostPage>> timeline({
     List<String>? topics,
+    String? media,
     String? cursor,
     bool withSummaries = false,
   }) async {
     timelineCalls.add((topics, cursor));
+    timelineMedia.add(media);
     return Fetched(pages[cursor] ?? const PostPage(posts: []));
   }
 
@@ -232,6 +235,22 @@ void main() {
         'c4',
         'c5',
       ]);
+      await h.listen.stop();
+    });
+
+    testWidgets('a filtered timeline pages with its media filter', (
+      tester,
+    ) async {
+      final h = await harness();
+      h.repo.pages['p2'] = PostPage(posts: [post('c9')], nextCursor: null);
+      await h.listen.startTimeline(
+        posts: [post('c0'), post('c1')],
+        cursor: 'p2',
+        media: 'video',
+      );
+      await tester.pump();
+      expect(h.repo.timelineCalls.single.$2, 'p2');
+      expect(h.repo.timelineMedia.single, 'video');
       await h.listen.stop();
     });
 

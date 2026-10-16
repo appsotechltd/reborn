@@ -42,10 +42,12 @@ class AuthorScreen extends ConsumerWidget {
         ),
         data: (a) {
           final page = 'author:$name';
-          final videos = a.cards.any((c) => c.explainer != null);
-          final videosOnly = videos && ref.watch(videosOnlyProvider(page));
-          final shown = visibleCards(a.cards, videosOnly);
-          final listen = collectionListenTarget(ref, page, shown, videosOnly);
+          final filter = collectionFilter(
+            a.cards,
+            ref.watch(cardsFilterProvider(page)),
+          );
+          final shown = visibleCards(a.cards, filter);
+          final listen = collectionListenTarget(ref, page, shown, filter);
           final before = <Widget>[
             ReadingWidth(
               child: Padding(
