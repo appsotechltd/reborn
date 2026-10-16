@@ -18,7 +18,7 @@ COPY content/library /content/library
 COPY content/summaries /content/summaries
 COPY content/explainers/out/manifest.json /content/explainers/manifest.json
 COPY content/audio/out/manifest.json /content/audio/manifest.json
-COPY content/images/manifest.json /content/images/manifest.json
+COPY content/images/manifest.json content/images/posts.json /content/images/
 COPY deploy/api-start.sh /usr/local/bin/api-start
 ENV ADDR=:8080 \
     CONTENT_DIR=/content/library \
