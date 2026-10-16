@@ -249,7 +249,8 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           muted={feed}
           loop={feed}
           preload="none"
-          crossOrigin="anonymous"
+          // No crossOrigin: the R2 media bucket sends no CORS headers, and a CORS request for the
+          // file fails, which the browser reports as an unplayable video.
           poster={mediaUrl(e.poster_url)}
           width={e.width}
           height={e.height}
