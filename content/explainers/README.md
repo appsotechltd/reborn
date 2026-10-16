@@ -7,7 +7,7 @@ play it above the card text.
 Two kinds:
 
 - **Animated explainers** (`kind: "animated"`), rendered here from original illustrated scenes.
-  Five are rendered (`out/manifest.json` lists them; the files live in the media bucket, not git).
+  Sixteen are rendered (`out/manifest.json` lists them; the files live in the media bucket, not git).
 - **Realistic films** (`kind: "film"`), shot by a text-to-video model from a reviewed plan.
   The pipeline is ready but unused until a Veo or Runway key is set.
 

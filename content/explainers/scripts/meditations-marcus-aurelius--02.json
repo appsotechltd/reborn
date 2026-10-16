@@ -1,0 +1,111 @@
+{
+ "card_id": "meditations-marcus-aurelius--02",
+ "about": "Photo look (house style for story and philosophy cards).",
+ "theme": "photo",
+ "score": true,
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A weathered marble bust of a bearded Roman emperor in a dark hall, one shaft of light across the face."
+    },
+    "zoom": "out"
+   },
+   "narration": "It is not the event that hurts you. It is your judgement about it."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A Roman military tent at night lit by an oil lamp, a writing tablet and scrolls on a camp table, no people."
+    },
+    "beats": [
+     {
+      "word": "notebook",
+      "image": {
+       "prompt": "A hand writing on an old parchment with a reed pen, close up, warm lamp light."
+      }
+     }
+    ]
+   },
+   "narration": "Marcus Aurelius, emperor of Rome, wrote this to himself in his private notebook, often in army camps far from home.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A phone lying on a cafe table showing a short unanswered message thread, soft focus, no readable text, grey afternoon light."
+    },
+    "beats": [
+     {
+      "word": "cancelled",
+      "image": {
+       "prompt": "An empty restaurant table set for two, one chair pushed in, candle burnt low."
+      }
+     },
+     {
+      "word": "critical",
+      "image": {
+       "prompt": "A printed report on a desk with red pen marks, close up, harsh office light."
+      }
+     }
+    ]
+   },
+   "narration": "Think of a slow reply, a cancelled plan, a critical comment. On their own, they are just facts.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Storm clouds gathering over a dark sea, dramatic, moody."
+    },
+    "beats": [
+     {
+      "word": "failing",
+      "image": {
+       "prompt": "A lone figure sitting on a staircase with head in hands, silhouette, cold light."
+      }
+     },
+     {
+      "word": "ruins",
+      "image": {
+       "prompt": "An old stone wall crumbling into rubble, dust in the air, dark light."
+      }
+     }
+    ]
+   },
+   "narration": "The sting comes from the story we add. This is unfair. I'm failing. This ruins everything.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A clear sky breaking through parting storm clouds over a calm sea at dawn."
+    },
+    "lift": true
+   },
+   "narration": "That is good news. The story is the part you can edit. Question it, and the pain often shrinks.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A notebook open on a wooden table with two short handwritten lines and a pencil, morning light, text illegible."
+    }
+   },
+   "narration": "Try it today. Write the bare fact in one line. Then the story you added. Which part is really hurting?",
+   "min_seconds": 7
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "card_id": "eat-that-frog-tracy--01",
+ "about": "Animated look (how-to card): the frog eaten in the first hour of the day.",
+ "voice": "eric",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Do your hardest, most important task first."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Your frog:",
+     "the big task you keep putting off"
+    ],
+    "emphasis": [
+     1
+    ],
+    "kicker": "Brian Tracy"
+   },
+   "narration": "Brian Tracy calls it your frog. It's the big, unpleasant task you're most likely to put off, and the one that would make the biggest difference."
+  },
+  {
+   "type": "hours",
+   "params": {
+    "title": "Eat it first",
+    "kept": {
+     "0": "The frog"
+    },
+    "firstHour": 8,
+    "total": 12,
+    "summary": "Then the rest of the day is easier"
+   },
+   "narration": "His advice: eat it first, before easier work fills the day. Get it done early, and the dread is gone. The momentum carries into everything else.",
+   "min_seconds": 9
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Two frogs?",
+     "Eat the ugliest one first."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "And if you have two frogs? Start with the uglier one."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Email",
+     "Small chores",
+     "Busy work"
+    ],
+    "strike": 0,
+    "strikeAt": 1.5,
+    "kicker": "Feels productive"
+   },
+   "narration": "Clearing email and small chores first feels productive. But usually, it just delays the work that actually matters.",
+   "min_seconds": 6
+  },
+  {
+   "type": "apply",
+   "narration": "Tonight, choose tomorrow's frog. Then start it first thing, before you check your messages."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "card_id": "story-of-my-life-helen-keller--04",
+ "about": "Photo look (house style for story cards): the water pump at Tuscumbia.",
+ "theme": "photo",
+ "score": true,
+ "voice": "sarah",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Cold clear water gushing from an old iron hand pump into a stone trough, sunlit spray, late 1800s farm."
+    }
+   },
+   "narration": "Sometimes understanding arrives all at once."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A Victorian-era girl's hand being held gently by a woman's hand, fingers forming letters, close up, soft window light."
+    },
+    "beats": [
+     {
+      "word": "spelled",
+      "image": {
+       "prompt": "Two hands touching in sign shapes against a dark background, close up, gentle light."
+      }
+     }
+    ]
+   },
+   "narration": "Helen Keller could not see or hear. For weeks, her teacher, Anne Sullivan, spelled words into her hand.",
+   "min_seconds": 7
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A plain tin mug on a wooden table in an 1880s farmhouse kitchen, soft light, no people."
+    }
+   },
+   "narration": "Helen copied the shapes, but they meant nothing to her. She kept mixing up mug and water."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "An old wooden well-house covered in honeysuckle on a sunny Alabama farm, 1887, no people."
+    },
+    "beats": [
+     {
+      "word": "stream",
+      "image": {
+       "prompt": "Water flowing over a child's open hand under an old pump, macro shot, bright sunlight."
+      }
+     }
+    ]
+   },
+   "narration": "Then one day, at the well-house, Anne held Helen's hand under the cold stream, and spelled w a t e r into the other.",
+   "min_seconds": 9
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "Sunlight bursting through leaves in a garden, lens flare, sense of awakening."
+    },
+    "lift": true
+   },
+   "narration": "Suddenly she knew. The shapes in her hand named the cool thing flowing over her skin. And everything had a name.",
+   "min_seconds": 8
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "prompt": "A young student touching tree bark in a forest while holding an open notebook, soft focus, morning light."
+    }
+   },
+   "narration": "Definitions rarely stick on their own. Pick one idea you're learning, and find a way to experience it today.",
+   "min_seconds": 7
+  },
+  {
+   "type": "end",
+   "narration": "",
+   "min_seconds": 4
+  }
+ ]
+}
