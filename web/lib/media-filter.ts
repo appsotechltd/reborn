@@ -9,7 +9,7 @@ export function hasVideo(card: Card): boolean {
 }
 
 export function hasImage(card: Card): boolean {
-  return !!card.image;
+  return !!card.image || !!card.post_image;
 }
 
 /** `media` for GET /v1/timeline; undefined for all. */

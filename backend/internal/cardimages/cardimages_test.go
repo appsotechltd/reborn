@@ -50,3 +50,29 @@ func TestLoad(t *testing.T) {
 		t.Fatalf("missing folder should be empty, got %v %v", none, err)
 	}
 }
+
+func TestLoadPosts(t *testing.T) {
+	ctx := context.Background()
+	dir := t.TempDir()
+	m := `{"version":1,"cards":{"aesops-fables--01":{"file":"images/posts/v1/aesops-fables--01.jpg","width":1080,"height":1350,"alt":"A goose"}}}`
+	if err := os.WriteFile(filepath.Join(dir, "posts.json"), []byte(m), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	r2 := objstore.NewR2("acct", "bucket", "k", "s", "https://media.example.com/")
+	set, err := LoadPosts(ctx, dir, r2)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got := set["aesops-fables--01"]; got.URL != "https://media.example.com/images/posts/v1/aesops-fables--01.jpg" || got.Width != 1080 || got.Height != 1350 || got.Alt != "A goose" {
+		t.Fatalf("unexpected post %+v", got)
+	}
+	// Not copied into MEDIA_DIR: left out locally.
+	local, err := LoadPosts(ctx, dir, &objstore.Local{Dir: t.TempDir(), BaseURL: "/media"})
+	if err != nil || len(local) != 0 {
+		t.Fatalf("want no local posts, got %v %v", local, err)
+	}
+	none, err := LoadPosts(ctx, filepath.Join(dir, "nope"), r2)
+	if err != nil || len(none) != 0 {
+		t.Fatalf("missing folder should be empty, got %v %v", none, err)
+	}
+}

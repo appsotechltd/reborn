@@ -50,6 +50,8 @@ type Card struct {
 	Audio *cardaudio.Audio `json:"audio,omitempty"`
 	// Image is the picture shown at the top of the full card, when one is made.
 	Image *cardimages.Image `json:"image,omitempty"`
+	// PostImage is the card's image post (title set over a painted scene), shown in the feed.
+	PostImage *cardimages.Post `json:"post_image,omitempty"`
 	// Member cards (written by a Reborn member) also carry these.
 	Author     *Profile        `json:"author,omitempty"`
 	Category   *MemberCategory `json:"category,omitempty"`
@@ -68,6 +70,20 @@ var imageSet atomic.Pointer[cardimages.Set]
 
 // SetImages sets the pictures attached to cards as they are read.
 func SetImages(set cardimages.Set) { imageSet.Store(&set) }
+
+var postSet atomic.Pointer[cardimages.Posts]
+
+// SetPostImages sets the image posts attached to cards as they are read.
+func SetPostImages(set cardimages.Posts) { postSet.Store(&set) }
+
+func postImageFor(id string) *cardimages.Post {
+	if set := postSet.Load(); set != nil {
+		if p, ok := (*set)[id]; ok {
+			return &p
+		}
+	}
+	return nil
+}
 
 func imageFor(id string) *cardimages.Image {
 	if set := imageSet.Load(); set != nil {
@@ -136,6 +152,7 @@ func finishCard(c Card, quiz []byte) (Card, error) {
 	c.Explainer = explainerFor(c.ID)
 	c.Audio = audioFor(c.ID)
 	c.Image = imageFor(c.ID)
+	c.PostImage = postImageFor(c.ID)
 	return c, nil
 }
 

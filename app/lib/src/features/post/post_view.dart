@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../theme.dart';
@@ -19,12 +20,17 @@ import 'share.dart';
 /// A post: the card (with its credit, licence link and any health disclaimer)
 /// plus reactions, favourite, comments, share and gift. Used in the timeline
 /// and on the card screen.
+///
+/// In the [feed], a card with a designed picture post and no video shows as
+/// an image post: the picture (tap to open the card) instead of the card's
+/// text, with "Read the idea" and Listen under it.
 class PostView extends ConsumerWidget {
   const PostView({
     super.key,
     required this.post,
     this.showReason = false,
     this.label,
+    this.feed = false,
   });
 
   final Post post;
@@ -33,10 +39,48 @@ class PostView extends ConsumerWidget {
   final bool showReason;
   final String? label;
 
+  /// In the timeline (not the card screen).
+  final bool feed;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final p = watchPost(ref, post);
     final reason = p.reason;
+    final picture = feed ? feedPostImage(p.card) : null;
+    if (picture != null) {
+      final card = p.card;
+      void open() => openPostCard(context, card);
+      final disclaimer =
+          card.disclaimer ?? (card.health ? kHealthDisclaimerFallback : null);
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (showReason && reason != null) PostReasonLine(reason: reason),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 14, 16, 0),
+            child: PostPicture(
+              card: card,
+              image: picture,
+              // Never taller than most of the window.
+              maxHeight: MediaQuery.sizeOf(context).height * 0.8,
+              onTap: open,
+            ),
+          ),
+          if (disclaimer != null) _HealthNote(text: disclaimer),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(12, 8, 16, 0),
+            child: Row(
+              children: [
+                Expanded(child: _ReadTheIdea(card: card, onPressed: open)),
+                const SizedBox(width: 10),
+                _ListenPostButton(card: card),
+              ],
+            ),
+          ),
+          PostActionBar(post: p),
+        ],
+      );
+    }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -116,6 +160,132 @@ class SwipePostPage extends ConsumerWidget {
   }
 }
 
+/// Opens the full card screen, as "Read the idea" does.
+void openPostCard(BuildContext context, IdeaCard card) =>
+    context.push('/cards/${Uri.encodeComponent(card.id)}', extra: card);
+
+/// The designed picture a feed post shows instead of its text: the card's
+/// [IdeaCard.postImage] when it has no video (an explainer or a member's
+/// illustrated video plays instead), else null.
+PostImage? feedPostImage(IdeaCard card) =>
+    card.explainer == null && card.video == null ? card.postImage : null;
+
+/// An image post's picture at its own aspect ratio, scaled down to fit
+/// [maxHeight] and the height it's offered, on the dark backdrop the
+/// pictures are made for. Tapping it opens the card.
+class PostPicture extends StatelessWidget {
+  const PostPicture({
+    super.key,
+    required this.card,
+    required this.image,
+    this.maxHeight,
+    this.onTap,
+  });
+
+  final IdeaCard card;
+  final PostImage image;
+  final double? maxHeight;
+  final VoidCallback? onTap;
+
+  static const _backdrop = Color(0xFF14110E);
+
+  @override
+  Widget build(BuildContext context) {
+    final alt = image.alt.trim();
+    final label = alt.isNotEmpty ? alt : card.title;
+    return LayoutBuilder(
+      builder: (context, c) {
+        final ratio = image.aspectRatio;
+        var limit = c.maxHeight;
+        final cap = maxHeight;
+        if (cap != null && cap < limit) limit = cap;
+        var width = c.maxWidth;
+        var height = width / ratio;
+        if (height > limit) {
+          height = limit;
+          width = height * ratio;
+        }
+        return Center(
+          child: SizedBox(
+            width: width,
+            height: height,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(18),
+              child: Semantics(
+                key: const ValueKey('post-image'),
+                container: true,
+                image: true,
+                button: onTap != null,
+                label: label,
+                onTap: onTap,
+                excludeSemantics: true,
+                child: Material(
+                  color: _backdrop,
+                  child: InkWell(
+                    onTap: onTap,
+                    child: Image.network(
+                      resolveMediaUrl(image.url),
+                      fit: BoxFit.contain,
+                      excludeFromSemantics: true,
+                      errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// The "Read the idea" button under an image post, as on text posts.
+class _ReadTheIdea extends StatelessWidget {
+  const _ReadTheIdea({required this.card, required this.onPressed});
+  final IdeaCard card;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) => FilledButton(
+    key: const ValueKey('read-more'),
+    onPressed: onPressed,
+    style: FilledButton.styleFrom(minimumSize: const Size(0, 46)),
+    child: Text('Read the idea', semanticsLabel: 'Read more: ${card.title}'),
+  );
+}
+
+/// A post's health note, cut to two lines.
+class _HealthNote extends StatelessWidget {
+  const _HealthNote({required this.text});
+  final String text;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    key: const ValueKey('preview-disclaimer'),
+    padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+    child: Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Icon(
+          Icons.health_and_safety_outlined,
+          size: 16,
+          color: Candlelight.of(context).amberText,
+        ),
+        const SizedBox(width: 6),
+        Expanded(
+          child: Text(
+            text,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
 /// Gives [child] the height it's offered, but never less than [minHeight]
 /// (clipped at the bottom then), so a crowded first page can't overflow.
 class _FitAtLeast extends StatelessWidget {
@@ -143,15 +313,13 @@ class _FitAtLeast extends StatelessWidget {
 /// quote on a warm panel) with the topic on it, then why it's here, the
 /// title, source, the body cut to the lines that fit, any health note, and
 /// "Read the idea" beside Listen. A video post shows its video instead of
-/// the cover.
+/// the cover. An image post shows just its picture (the title is in it),
+/// scaled to fit the page.
 class PostPreview extends ConsumerWidget {
   const PostPreview({super.key, required this.post});
   final Post post;
 
-  void _open(BuildContext context) => context.push(
-    '/cards/${Uri.encodeComponent(post.card.id)}',
-    extra: post.card,
-  );
+  void _open(BuildContext context) => openPostCard(context, post.card);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -169,6 +337,42 @@ class PostPreview extends ConsumerWidget {
     final explainer = card.explainer;
     final illustrated = explainer == null ? card.video : null;
     final video = explainer ?? illustrated;
+    final picture = feedPostImage(card);
+
+    if (picture != null) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (reason != null) PostReasonLine(reason: reason),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+              child: PostPicture(
+                card: card,
+                image: picture,
+                onTap: () => _open(context),
+              ),
+            ),
+          ),
+          if (disclaimer != null) _HealthNote(text: disclaimer),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(12, 10, 20, 18),
+            child: Row(
+              children: [
+                Expanded(
+                  child: _ReadTheIdea(
+                    card: card,
+                    onPressed: () => _open(context),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                _ListenPostButton(card: card),
+              ],
+            ),
+          ),
+        ],
+      );
+    }
 
     final title = Text(
       card.title,
@@ -267,30 +471,7 @@ class PostPreview extends ConsumerWidget {
             ),
           ),
         ],
-        if (disclaimer != null)
-          Padding(
-            key: const ValueKey('preview-disclaimer'),
-            padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.health_and_safety_outlined,
-                  size: 16,
-                  color: Candlelight.of(context).amberText,
-                ),
-                const SizedBox(width: 6),
-                Expanded(
-                  child: Text(
-                    disclaimer,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: theme.textTheme.bodySmall,
-                  ),
-                ),
-              ],
-            ),
-          ),
+        if (disclaimer != null) _HealthNote(text: disclaimer),
         // The full card always has more than the preview (the "Apply it"
         // step, any quote, the full credit), so a text post always offers
         // it; a video post when there's text to read.
