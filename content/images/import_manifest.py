@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 HERE = Path(__file__).resolve().parent
-TYPES = {"illustration", "3d", "chart"}
+TYPES = {"illustration", "3d", "chart", "photo"}
 
 
 def key(url):

@@ -1,0 +1,93 @@
+{
+ "card_id": "universe-big-theories--01",
+ "about": "Photo look with real space pictures: the biggest theories about the universe, clearly marked as theory.",
+ "theme": "photo",
+ "score": true,
+ "voice": "george",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2205a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)",
+     "fx": 0.5
+    },
+    "headline": "Big theories"
+   },
+   "narration": "Where the evidence runs out, theories begin. Some of today's wildest ideas may be tomorrow's facts. Most will not."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA16873.jpg",
+     "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "The Big Bang itself began as a doubted theory. Then, in nineteen sixty five, its afterglow was found."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1214a.jpg",
+     "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+    },
+    "eyebrow": "Theory"
+   },
+   "narration": "Inflation says the universe grew enormously in a split second. Many physicists expect it to be right. It has not been confirmed."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2209a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+    },
+    "eyebrow": "Theory"
+   },
+   "narration": "If inflation never fully stops, our universe could be one bubble among countless others. A multiverse, untested so far."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/eso2208-eht-mwa.jpg",
+     "credit": "EHT Collaboration (CC BY 4.0)"
+    },
+    "eyebrow": "Theory"
+   },
+   "narration": "Wormholes, shortcuts through space, are allowed by Einstein's equations. No one has ever seen one."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2330a.jpg",
+     "credit": "NASA, ESA, CSA, STScI, D. Milisavljevic (Purdue University), T. Temim (Princeton University), I. De Looze (University of Gent) (CC BY 4.0)"
+    },
+    "eyebrow": "Theory"
+   },
+   "narration": "The universe may end in a slow freeze, a rip, or a crunch. The freeze is the favourite. Nobody can be sure."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2216a.jpg",
+     "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.4
+    }
+   },
+   "narration": "Each theory makes a prediction, and each prediction is a chance to be proved wrong. That is how wild ideas earn the right to be called true.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "card_id": "universe-are-we-alone--01",
+ "about": "Photo look with real NASA and Webb pictures: the search for life beyond Earth.",
+ "theme": "photo",
+ "score": true,
+ "voice": "echo",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/GSFC_20171208_Archive_e000496.jpg",
+     "credit": "NASA"
+    },
+    "headline": "Are we alone?"
+   },
+   "narration": "Life is known on exactly one world. This one."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA21751.jpg",
+     "credit": "NASA/JPL-Caltech"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "Since nineteen ninety five, astronomers have found more than six thousand planets around other stars. Our galaxy probably holds more planets than stars."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA17198.jpg",
+     "credit": "NASA/JPL-Caltech/Space Science Institute",
+     "fx": 0.4
+    }
+   },
+   "narration": "Saturn's moon Enceladus sprays water from a hidden ocean into space. Jupiter's moon Europa holds more water than all of Earth's oceans."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA26368.jpg",
+     "credit": "NASA/JPL-Caltech/MSSS"
+    },
+    "eyebrow": "Unknown"
+   },
+   "narration": "On Mars, a rock with strange leopard spots could be a sign of ancient life. Or not. No one can say yet."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic0406a.jpg",
+     "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+    },
+    "eyebrow": "Unknown"
+   },
+   "narration": "The galaxy is old and vast. So where is everybody? Perhaps life is rare. Perhaps we are early. Perhaps we have not listened long enough."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA14113.jpg",
+     "credit": "NASA/JPL-Caltech"
+    }
+   },
+   "narration": "Two Voyager spacecraft carry a golden record of sounds and pictures from Earth, a message for anyone who finds them.",
+   "min_seconds": 5
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2216a.jpg",
+     "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)"
+    }
+   },
+   "narration": "Finding even a single microbe out there would change how we see ourselves forever.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

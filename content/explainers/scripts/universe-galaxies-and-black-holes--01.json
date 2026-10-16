@@ -1,0 +1,102 @@
+{
+ "card_id": "universe-galaxies-and-black-holes--01",
+ "about": "Photo look with real Hubble, Webb and Event Horizon Telescope pictures: galaxies and black holes.",
+ "theme": "photo",
+ "score": true,
+ "voice": "michael",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic0406a.jpg",
+     "credit": "NASA, ESA, and S. Beckwith (STScI) and the HUDF Team (CC BY 4.0)"
+    },
+    "headline": "Galaxies and black holes"
+   },
+   "narration": "In two thousand three, Hubble stared at a patch of sky that looked empty. It found about ten thousand galaxies."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic0506a.jpg",
+     "credit": "NASA, ESA, S. Beckwith (STScI), and The Hubble Heritage Team (STScI/AURA) (CC BY 4.0)",
+     "fx": 0.4
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "Galaxies come in spirals like this one, smooth ellipticals and shapeless irregulars. Each holds millions to trillions of stars."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/potw1345a.jpg",
+     "credit": "ESA/Hubble & NASA (CC BY 4.0)"
+    }
+   },
+   "narration": "When galaxies collide, the stars almost never hit each other. The space between them is just too vast."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2208a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+    }
+   },
+   "narration": "Gravity pulls them into slow dances that last hundreds of millions of years."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/eso1907a.jpg",
+     "credit": "EHT Collaboration (CC BY 4.0)",
+     "fx": 0.5
+    },
+    "headline": "The first picture of a black hole"
+   },
+   "narration": "At the heart of most big galaxies lies a black hole. In twenty nineteen we saw one for the first time. It weighs six and a half billion Suns."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/eso2208-eht-mwa.jpg",
+     "credit": "EHT Collaboration (CC BY 4.0)"
+    },
+    "eyebrow": "Known"
+   },
+   "narration": "And in twenty twenty two, the one at the centre of our own galaxy, four million times the mass of the Sun."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/jades4.jpg",
+     "credit": "NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA) (CC BY 4.0)"
+    },
+    "eyebrow": "Unknown"
+   },
+   "narration": "But what happens inside a black hole, nobody knows. Our best theories break down there.",
+   "min_seconds": 6
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA10748.jpg",
+     "credit": "NASA/JPL-Caltech"
+    }
+   },
+   "narration": "We live in a quiet corner of one ordinary, extraordinary galaxy.",
+   "min_seconds": 5
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

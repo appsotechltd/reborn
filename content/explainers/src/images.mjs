@@ -1,7 +1,9 @@
 // AI still images: shots for the "photo" look, and stand-alone art such as card and quote images.
 //
 // A scene or beat asks for one with `image: { prompt }`, `image: { prompt, text }` for an image
-// with words in it (a quote image), or `image: { file }` for an image on disk.
+// with words in it (a quote image), `image: { file }` for an image on disk, or `image: { key, credit }`
+// for an image already in the media bucket, such as a NASA, Hubble or Webb photo (`credit` is shown
+// on screen while the picture is up).
 //
 // Every generated image is paid for once and kept forever: it is saved under images/ in the media
 // bucket (R2, when the R2_* settings are present) and in .cache/images, keyed by provider, model,
@@ -170,13 +172,24 @@ export async function makeImage(img, { provider, providerName, cache = CACHE, st
   return file;
 }
 
+/** Returns the file path of an image already in the media bucket (`image: { key }`), downloaded once. */
+export async function savedImage(key, { cache = CACHE, store = r2FromEnv() } = {}) {
+  const file = path.join(cache, "saved", key.replace(/\//g, "_"));
+  if (existsSync(file)) return file;
+  const saved = store && (await store.get(key));
+  if (!saved) throw new Error(`image ${key} is not in the media bucket${store ? "" : " (R2 is not configured)"}`);
+  await mkdir(path.dirname(file), { recursive: true });
+  await writeFile(file, saved);
+  return file;
+}
+
 /**
  * Resolves each `image` to a file URL the renderer can load (`image.src`), generating missing ones.
  * `provider` forces one provider object; `providerName` forces one by name ("auto" picks per image).
  */
 export async function resolveImages(scenes, { provider, providerName, regenerate } = {}) {
   for (const img of requests(scenes)) {
-    const file = img.file ? path.resolve(ROOT, img.file) : await makeImage(img, { provider, providerName, ...(regenerate !== undefined && { regenerate }) });
+    const file = img.file ? path.resolve(ROOT, img.file) : img.key ? await savedImage(img.key) : await makeImage(img, { provider, providerName, ...(regenerate !== undefined && { regenerate }) });
     img.src = pathToFileURL(file).href;
   }
 }

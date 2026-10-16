@@ -1,16 +1,17 @@
 import { mediaUrl } from "@/lib/config";
 import type { CardImage } from "@/lib/types";
 
-const TYPE_LABEL: Record<string, string> = { illustration: "Illustration", "3d": "3D", chart: "Chart" };
+const TYPE_LABEL: Record<string, string> = { illustration: "Illustration", "3d": "3D", chart: "Chart", photo: "Photo" };
 
 /** True when a chart only pictures an idea rather than plotting measured figures. */
 export function isConceptChart(image: CardImage): boolean {
   return image.type === "chart" && image.basis === "illustration";
 }
 
-/** "Image: caption", plus the concept note for charts that don't show real data. */
+/** "Image: caption", plus the concept note for charts that don't show real data and the credit for photos. */
 export function imageCaption(image: CardImage): string {
-  return `Image: ${image.caption}${isConceptChart(image) ? " · A concept, not measured data" : ""}`;
+  const credit = image.type === "photo" && image.credit ? ` · ${image.credit}` : "";
+  return `Image: ${image.caption}${isConceptChart(image) ? " · A concept, not measured data" : ""}${credit}`;
 }
 
 /**

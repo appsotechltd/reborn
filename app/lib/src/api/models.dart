@@ -236,7 +236,7 @@ class CardImage {
   final String url;
   final String? fullUrl;
 
-  /// `illustration`, `3d` or `chart`.
+  /// `illustration`, `3d`, `chart` or `photo` (a real space photo, credited).
   final String type;
   final String caption;
 
@@ -251,15 +251,17 @@ class CardImage {
     'illustration' => 'Illustration',
     '3d' => '3D',
     'chart' => 'Chart',
+    'photo' => 'Photo',
     _ => 'Image',
   };
 
   /// True when a chart only pictures an idea rather than measured figures.
   bool get isConceptChart => type == 'chart' && basis == 'illustration';
 
-  /// The line under the credit.
+  /// The line under the credit. Photos carry their own credit line.
   String get captionLine =>
-      'Image: $caption${isConceptChart ? ' · A concept, not measured data' : ''}';
+      'Image: $caption${isConceptChart ? ' · A concept, not measured data' : ''}'
+      '${type == 'photo' && credit != null ? ' · $credit' : ''}';
 
   factory CardImage.fromJson(Map<String, dynamic> json) => CardImage(
     url: json['url'] as String? ?? '',

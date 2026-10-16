@@ -1,0 +1,93 @@
+{
+ "card_id": "universe-what-we-dont-know--01",
+ "about": "Photo look with real space pictures: what science knows, and the great open questions.",
+ "theme": "photo",
+ "score": true,
+ "voice": "adam",
+ "scenes": [
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/PIA16873.jpg",
+     "credit": "ESA and the Planck Collaboration (CC BY-SA 3.0 IGO)"
+    },
+    "headline": "What we still don't know",
+    "eyebrow": "Known"
+   },
+   "narration": "We know the universe is about thirteen point eight billion years old, to within about one percent."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/heic1214a.jpg",
+     "credit": "NASA, ESA, G. Illingworth, D. Magee, and P. Oesch (University of California, Santa Cruz), R. Bouwens (Leiden University), and the HUDF09 Team (CC BY 4.0)"
+    },
+    "headline": "Only 5% is ordinary matter."
+   },
+   "narration": "Yet everything we have ever seen, every star, planet and person, makes up only about five percent of it."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/elgordo1.jpg",
+     "credit": "NASA, ESA, CSA, J. Diego (Instituto de Física de Cantabria), B. Frye (University of Arizona), P. Kamieneski (Arizona State University), T. Carleton (Arizona State University), R. Windhorst (Arizona State University), A. Pagan (STScI), J. Summers (Arizona State University), J. D’Silva (University of Western Australia), A. Koekemoer (STScI), A. Robotham (University of Western Australia) (CC BY 4.0)",
+     "fx": 0.5
+    },
+    "eyebrow": "Unknown"
+   },
+   "narration": "About a quarter is dark matter. We see its gravity bend light and hold galaxies together, but no one has caught a single particle of it."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2305a.jpg",
+     "credit": "NASA, ESA, CSA, I. Labbe (Swinburne University of Technology), R. Bezanson (University of Pittsburgh), A. Pagan (STScI) (CC BY 4.0)"
+    },
+    "eyebrow": "Unknown"
+   },
+   "narration": "The rest is dark energy, something pushing the universe apart faster and faster. Nobody knows what it is."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2209a.jpg",
+     "credit": "NASA, ESA, CSA, and STScI (CC BY 4.0)"
+    }
+   },
+   "narration": "What came before the Big Bang? Why is there matter at all, and not just light? Is the universe infinite?"
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/eso1907a.jpg",
+     "credit": "EHT Collaboration (CC BY 4.0)",
+     "fx": 0.5
+    }
+   },
+   "narration": "Inside black holes, our two best theories of nature give different answers. Fixing that may change physics."
+  },
+  {
+   "type": "shape",
+   "params": {
+    "image": {
+     "key": "images/space/weic2216a.jpg",
+     "credit": "NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI) (CC BY 4.0)",
+     "fx": 0.5,
+     "fy": 0.4
+    }
+   },
+   "narration": "Not knowing is not a failure. It is where the next great discoveries are waiting.",
+   "min_seconds": 6
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

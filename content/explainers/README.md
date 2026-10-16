@@ -120,6 +120,10 @@ voice, so re-renders only voice the lines that changed.
 `swarm` and `depth` gather 2D or 3D particles into a shape per shot (`params.shape` /
 `params.object`); `photo` moves slowly through cinematic stills (`params.image`). A scene can change
 shot on a word of its narration with `params.beats: [{ "word": "drifting", "image": {...} }]`.
+Real photos already in the media bucket (the NASA, Hubble and Webb pictures under `images/space/`)
+are used with `image: { key, credit }`; `credit` is shown small above the footer while the picture is
+up, as CC BY requires, and `fx` / `fy` (0-1) keep a point of the picture in frame when it is cropped.
+A landscape photo fills the wide cut instead of sitting between blurred sides.
 
 `photo` is the house style for story and philosophy cards (Seneca, Epictetus, Franklin, Aesop).
 Cards whose animation does the teaching, such as the NHS breathing guide, keep their animated look.
