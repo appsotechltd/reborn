@@ -10,7 +10,13 @@
       "narrated": true,
       "voice": "kokoro-82m/bf_emma@0.95",
       "kind": "animated",
-      "script": "scripts/aesops-fables--07.json"
+      "script": "scripts/aesops-fables--07.json",
+      "landscape": {
+        "video": "aesops-fables--07-wide.mp4",
+        "poster": "aesops-fables--07-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "art-of-war-sun-tzu--02": {
       "video": "art-of-war-sun-tzu--02.mp4",
@@ -21,7 +27,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
-      "script": "scripts/art-of-war-sun-tzu--02.json"
+      "script": "scripts/art-of-war-sun-tzu--02.json",
+      "landscape": {
+        "video": "art-of-war-sun-tzu--02-wide.mp4",
+        "poster": "art-of-war-sun-tzu--02-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "atomic-habits-clear--01": {
       "video": "atomic-habits-clear--01.mp4",
@@ -32,7 +44,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_liam@0.95",
       "kind": "animated",
-      "script": "scripts/atomic-habits-clear--01.json"
+      "script": "scripts/atomic-habits-clear--01.json",
+      "landscape": {
+        "video": "atomic-habits-clear--01-wide.mp4",
+        "poster": "atomic-habits-clear--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "autobiography-benjamin-franklin--01": {
       "video": "autobiography-benjamin-franklin--01.mp4",
@@ -43,7 +61,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
-      "script": "scripts/autobiography-benjamin-franklin--01.json"
+      "script": "scripts/autobiography-benjamin-franklin--01.json",
+      "landscape": {
+        "video": "autobiography-benjamin-franklin--01-wide.mp4",
+        "poster": "autobiography-benjamin-franklin--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "eat-that-frog-tracy--01": {
       "video": "eat-that-frog-tracy--01.mp4",
@@ -54,7 +78,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_eric@0.95",
       "kind": "animated",
-      "script": "scripts/eat-that-frog-tracy--01.json"
+      "script": "scripts/eat-that-frog-tracy--01.json",
+      "landscape": {
+        "video": "eat-that-frog-tracy--01-wide.mp4",
+        "poster": "eat-that-frog-tracy--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "enchiridion-epictetus--01": {
       "video": "enchiridion-epictetus--01.mp4",
@@ -65,7 +95,13 @@
       "narrated": true,
       "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
-      "script": "scripts/enchiridion-epictetus--01.json"
+      "script": "scripts/enchiridion-epictetus--01.json",
+      "landscape": {
+        "video": "enchiridion-epictetus--01-wide.mp4",
+        "poster": "enchiridion-epictetus--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "festingers-principle-leon-festinger--01": {
       "video": "festingers-principle-leon-festinger--01.mp4",
@@ -76,7 +112,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_echo@0.95",
       "kind": "animated",
-      "script": "scripts/festingers-principle-leon-festinger--01.json"
+      "script": "scripts/festingers-principle-leon-festinger--01.json",
+      "landscape": {
+        "video": "festingers-principle-leon-festinger--01-wide.mp4",
+        "poster": "festingers-principle-leon-festinger--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "how-to-win-friends-carnegie--04": {
       "video": "how-to-win-friends-carnegie--04.mp4",
@@ -87,7 +129,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
-      "script": "scripts/how-to-win-friends-carnegie--04.json"
+      "script": "scripts/how-to-win-friends-carnegie--04.json",
+      "landscape": {
+        "video": "how-to-win-friends-carnegie--04-wide.mp4",
+        "poster": "how-to-win-friends-carnegie--04-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "mans-search-for-meaning-frankl--01": {
       "video": "mans-search-for-meaning-frankl--01.mp4",
@@ -98,7 +146,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_echo@0.95",
       "kind": "animated",
-      "script": "scripts/mans-search-for-meaning-frankl--01.json"
+      "script": "scripts/mans-search-for-meaning-frankl--01.json",
+      "landscape": {
+        "video": "mans-search-for-meaning-frankl--01-wide.mp4",
+        "poster": "mans-search-for-meaning-frankl--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "meditations-marcus-aurelius--02": {
       "video": "meditations-marcus-aurelius--02.mp4",
@@ -109,7 +163,13 @@
       "narrated": true,
       "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
-      "script": "scripts/meditations-marcus-aurelius--02.json"
+      "script": "scripts/meditations-marcus-aurelius--02.json",
+      "landscape": {
+        "video": "meditations-marcus-aurelius--02-wide.mp4",
+        "poster": "meditations-marcus-aurelius--02-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "nhs-breathing-exercises-for-stress--02": {
       "video": "nhs-breathing-exercises-for-stress--02.mp4",
@@ -120,7 +180,13 @@
       "narrated": true,
       "voice": "kokoro-82m/af_heart@0.95",
       "kind": "animated",
-      "script": "scripts/nhs-breathing-exercises-for-stress--02.json"
+      "script": "scripts/nhs-breathing-exercises-for-stress--02.json",
+      "landscape": {
+        "video": "nhs-breathing-exercises-for-stress--02-wide.mp4",
+        "poster": "nhs-breathing-exercises-for-stress--02-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "on-the-shortness-of-life-seneca--01": {
       "video": "on-the-shortness-of-life-seneca--01.mp4",
@@ -131,7 +197,13 @@
       "narrated": true,
       "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
-      "script": "scripts/on-the-shortness-of-life-seneca--01.json"
+      "script": "scripts/on-the-shortness-of-life-seneca--01.json",
+      "landscape": {
+        "video": "on-the-shortness-of-life-seneca--01-wide.mp4",
+        "poster": "on-the-shortness-of-life-seneca--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "psychology-of-money-housel--04": {
       "video": "psychology-of-money-housel--04.mp4",
@@ -142,7 +214,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_liam@0.95",
       "kind": "animated",
-      "script": "scripts/psychology-of-money-housel--04.json"
+      "script": "scripts/psychology-of-money-housel--04.json",
+      "landscape": {
+        "video": "psychology-of-money-housel--04-wide.mp4",
+        "poster": "psychology-of-money-housel--04-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "richest-man-in-babylon-clason--01": {
       "video": "richest-man-in-babylon-clason--01.mp4",
@@ -153,7 +231,13 @@
       "narrated": true,
       "voice": "kokoro-82m/am_michael@0.95",
       "kind": "animated",
-      "script": "scripts/richest-man-in-babylon-clason--01.json"
+      "script": "scripts/richest-man-in-babylon-clason--01.json",
+      "landscape": {
+        "video": "richest-man-in-babylon-clason--01-wide.mp4",
+        "poster": "richest-man-in-babylon-clason--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "story-of-my-life-helen-keller--04": {
       "video": "story-of-my-life-helen-keller--04.mp4",
@@ -164,7 +248,13 @@
       "narrated": true,
       "voice": "kokoro-82m/af_sarah@0.95",
       "kind": "animated",
-      "script": "scripts/story-of-my-life-helen-keller--04.json"
+      "script": "scripts/story-of-my-life-helen-keller--04.json",
+      "landscape": {
+        "video": "story-of-my-life-helen-keller--04-wide.mp4",
+        "poster": "story-of-my-life-helen-keller--04-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     },
     "why-we-sleep-walker--01": {
       "video": "why-we-sleep-walker--01.mp4",
@@ -175,7 +265,13 @@
       "narrated": true,
       "voice": "kokoro-82m/bm_george@0.95",
       "kind": "animated",
-      "script": "scripts/why-we-sleep-walker--01.json"
+      "script": "scripts/why-we-sleep-walker--01.json",
+      "landscape": {
+        "video": "why-we-sleep-walker--01-wide.mp4",
+        "poster": "why-we-sleep-walker--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
     }
   }
 }
