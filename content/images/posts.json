@@ -1,6 +1,12 @@
 {
  "version": 1,
  "cards": {
+  "7-habits-covey--01": {
+   "file": "images/posts/v1/7-habits-covey--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A calm person in a candle-lit workshop waters a small potted plant beside tools, while rain beats the window and storm clouds loom outside."
+  },
   "7-habits-covey--05": {
    "file": "images/posts/v1/7-habits-covey--05.jpg",
    "width": 1080,
@@ -49,11 +55,29 @@
    "height": 1350,
    "alt": "A buried lump of gold is worth no more than a brick"
   },
+  "aesops-fables--40": {
+   "file": "images/posts/v1/aesops-fables--40.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "By a river at dusk, a woodcutter honestly returns a humble iron axe to a shining god, while two gleaming axes rest beside them."
+  },
   "africapitalism-elumelu--05": {
    "file": "images/posts/v1/africapitalism-elumelu--05.jpg",
    "width": 1080,
    "height": 1350,
    "alt": "One business at the centre, its benefits rippling out to the community"
+  },
+  "africapitalism-elumelu--10": {
+   "file": "images/posts/v1/africapitalism-elumelu--10.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Government officials, business owners, farmers, and teachers gather around a shared table in a warm hall, joining hands over seeds, tools, and building plans."
+  },
+  "art-of-public-speaking-carnegie--41": {
+   "file": "images/posts/v1/art-of-public-speaking-carnegie--41.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A candlelit window with a child waiting beside a worn coat, while a wounded soldier in the street reaches weakly for a cup of water."
   },
   "art-of-writing-stevenson--12": {
    "file": "images/posts/v1/art-of-writing-stevenson--12.jpg",
@@ -109,6 +133,12 @@
    "height": 1350,
    "alt": "A long thin column on a narrow forest road"
   },
+  "autobiography-benjamin-franklin--47": {
+   "file": "images/posts/v1/autobiography-benjamin-franklin--47.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A scientist leaves a stack of rebuttal papers unopened and returns to glowing experiment tools, choosing the workbench over the argument."
+  },
   "autobiography-benjamin-franklin--49": {
    "file": "images/posts/v1/autobiography-benjamin-franklin--49.jpg",
    "width": 1080,
@@ -144,6 +174,12 @@
    "width": 1080,
    "height": 1350,
    "alt": "Searching everything but the good life"
+  },
+  "crucial-conversations--10": {
+   "file": "images/posts/v1/crucial-conversations--10.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A dim kitchen table, one person bowed in sincere apology to another, a knocked-over cup between them, tense shoulders softening under candlelight."
   },
   "discourses-epictetus--25": {
    "file": "images/posts/v1/discourses-epictetus--25.jpg",
@@ -235,6 +271,12 @@
    "height": 1350,
    "alt": "A firm but respectful correction"
   },
+  "essays-francis-bacon--39": {
+   "file": "images/posts/v1/essays-francis-bacon--39.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "In a warm study, a student practises on a small violin under a master’s watch, repeating difficult scales beside a larger instrument."
+  },
   "essays-francis-bacon--46": {
    "file": "images/posts/v1/essays-francis-bacon--46.jpg",
    "width": 1080,
@@ -246,6 +288,12 @@
    "width": 1080,
    "height": 1350,
    "alt": "Step off the worn track and turn toward something new"
+  },
+  "essentialism-mckeown--13": {
+   "file": "images/posts/v1/essentialism-mckeown--13.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A candlelit workshop desk with one clear compass, one map, and one lit path marker, while cluttered papers fade into shadow around them."
   },
   "etiquette-emily-post--12": {
    "file": "images/posts/v1/etiquette-emily-post--12.jpg",
@@ -276,6 +324,18 @@
    "width": 1080,
    "height": 1350,
    "alt": "Arrows grouped in the centre of a target: a hit you can repeat"
+  },
+  "friendship-emerson--29": {
+   "file": "images/posts/v1/friendship-emerson--29.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A solitary figure at dusk pours water from a jug onto sunlit empty ground, while their face glows peacefully beside an unreturned doorstep."
+  },
+  "gospel-of-buddha-carus--21": {
+   "file": "images/posts/v1/gospel-of-buddha-carus--21.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Around a warm lamp, listeners lower their tongues and turn toward a calm friend, noticing his kindness while gossip shadows fade behind them."
   },
   "gospel-of-buddha-carus--23": {
    "file": "images/posts/v1/gospel-of-buddha-carus--23.jpg",
@@ -613,6 +673,12 @@
    "height": 1350,
    "alt": "An inventor building the machine in his mind first"
   },
+  "nhs-five-steps-to-mental-wellbeing--01": {
+   "file": "images/posts/v1/nhs-five-steps-to-mental-wellbeing--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Friends and colleagues share soup around a candlelit table, leaning close, laughing softly, and passing bowls with relaxed, trusting hands."
+  },
   "nhs-five-steps-to-mental-wellbeing--05": {
    "file": "images/posts/v1/nhs-five-steps-to-mental-wellbeing--05.jpg",
    "width": 1080,
@@ -631,6 +697,12 @@
    "height": 1350,
    "alt": "Circle the one piece you can control"
   },
+  "nih-news-in-health--01": {
+   "file": "images/posts/v1/nih-news-in-health--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A lone person sits in a bright home while a crowded room surrounds them; their face looks lonely, yet nearby phones and chairs remain untouched."
+  },
   "notebooks-leonardo-da-vinci--03": {
    "file": "images/posts/v1/notebooks-leonardo-da-vinci--03.jpg",
    "width": 1080,
@@ -642,6 +714,12 @@
    "width": 1080,
    "height": 1350,
    "alt": "Add a layer of patience as the cold grows"
+  },
+  "notes-on-nursing-nightingale--31": {
+   "file": "images/posts/v1/notes-on-nursing-nightingale--31.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A candlelit bedside, nurse asking two patients the same careful question, one smiling weakly, another exhausted, their answers implied by contrasting gestures."
   },
   "novel-of-the-future-nin--03": {
    "file": "images/posts/v1/novel-of-the-future-nin--03.jpg",
@@ -781,6 +859,12 @@
    "height": 1350,
    "alt": "A goal you truly want holds your attention without effort"
   },
+  "science-of-getting-rich-wattles--31": {
+   "file": "images/posts/v1/science-of-getting-rich-wattles--31.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A workshop lit by candles, a maker moves swiftly and calmly, stacking finished tools with steady hands while others rush and spill pieces nearby."
+  },
   "science-of-learning-weinstein-2018--26": {
    "file": "images/posts/v1/science-of-learning-weinstein-2018--26.jpg",
    "width": 1080,
@@ -792,6 +876,12 @@
    "width": 1080,
    "height": 1350,
    "alt": "Ordinary people's careful daily work keeps a town strong"
+  },
+  "self-help-samuel-smiles--11": {
+   "file": "images/posts/v1/self-help-samuel-smiles--11.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A focused apprentice leans over a workbench, listening closely to a mentor, with a bright lamp illuminating attentive eyes and careful hands."
   },
   "self-help-samuel-smiles--14": {
    "file": "images/posts/v1/self-help-samuel-smiles--14.jpg",
@@ -829,6 +919,12 @@
    "height": 1350,
    "alt": "A small map of a partner's world, with today's worry marked"
   },
+  "social-relationships-mortality-holt-lunstad-2010--03": {
+   "file": "images/posts/v1/social-relationships-mortality-holt-lunstad-2010--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A warmly lit courtyard filled with a family dinner, neighbors chatting, and a circle of friends playing music, all linked like woven threads."
+  },
   "story-of-my-life-helen-keller--04": {
    "file": "images/posts/v1/story-of-my-life-helen-keller--04.jpg",
    "width": 1080,
@@ -853,6 +949,12 @@
    "height": 1350,
    "alt": "A balance where one glowing life outweighs a pile of coins"
   },
+  "tao-te-ching-legge--24": {
+   "file": "images/posts/v1/tao-te-ching-legge--24.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A single boot steps onto a dirt trail at dawn, beside a tiny sprout and a sapling, all lit by warm candle-like light."
+  },
   "the-prince-machiavelli--18": {
    "file": "images/posts/v1/the-prince-machiavelli--18.jpg",
    "width": 1080,
@@ -870,6 +972,12 @@
    "width": 1080,
    "height": 1350,
    "alt": "A vessel carved deep holds more light"
+  },
+  "the-prophet-kahlil-gibran--05": {
+   "file": "images/posts/v1/the-prophet-kahlil-gibran--05.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A candlelit ship at sea, one sailor steady at the tiller while bright sails strain in the wind, guiding the vessel through dark water."
   },
   "think-and-grow-rich-hill--04": {
    "file": "images/posts/v1/think-and-grow-rich-hill--04.jpg",

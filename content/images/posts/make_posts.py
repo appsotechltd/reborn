@@ -1,7 +1,7 @@
 """Make image posts: one designed 4:5 picture per card, shown in the feed instead of the text preview.
 
     python make_posts.py --all --free-only      # every card whose art costs nothing
-    python make_posts.py --per-topic 1 --pay --max-new 33   # one card per category, at most 33 paid pictures
+    python make_posts.py --per-topic 3 --pay --max-new 75   # three cards per category, at most 75 paid pictures
     python make_posts.py --cards aesops-fables--01 why-we-sleep-walker--01
 
 Each post is a painted scene with the card's title, category, book and author set over it in
@@ -12,7 +12,8 @@ Where the art comes from, cheapest first:
   1. The card's existing picture (images/cards/v1-full, illustrations and 3D only): free.
   2. Art picked by hand (art/<card-id>.png) or already made for this card and prompt, kept forever in the media store under
      images/posts/art/: free.
-  3. Only with --pay: Ideogram 3.0 Turbo (IDEOGRAM_API_KEY), about $0.03 a picture. A short scene is written for each
+  3. Only with --pay: a new picture from OpenAI gpt-image-1-mini at medium (or --quality low), about
+     $0.015, or Ideogram 3.0 Turbo (--provider ideogram, IDEOGRAM_API_KEY), about $0.03. A short scene is written for each
      card first (OpenAI, OPENAI_API_KEY, fractions of a cent) and kept in scenes.json, and each new
      picture is checked for stray lettering and made once more if it has any.
 
@@ -32,6 +33,7 @@ import re
 import subprocess
 import sys
 import threading
+import time
 import urllib.error
 import urllib.request
 import uuid
@@ -146,6 +148,37 @@ def ideogram(prompt, seed):
     return subprocess.run(["curl", "-sS", "-fL", "-A", "Mozilla/5.0", url], check=True, capture_output=True).stdout
 
 
+OPENAI_IMAGE_MODEL = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-1-mini")
+PRICE = {"ideogram": 0.03, "openai": 0.015}  # rough cost of one picture, for the summary line
+PROVIDER = ["openai"]
+
+
+def openai_image(prompt, quality):
+    with lock:
+        if spent["ideogram"] >= MAX_NEW[0]:
+            raise RuntimeError("image budget for this run is used up (--max-new)")
+        spent["ideogram"] += 1
+    body = {"model": OPENAI_IMAGE_MODEL, "prompt": prompt, "size": "1024x1536", "quality": quality, "n": 1}
+    for attempt in range(6):
+        try:
+            r = json.loads(http("https://api.openai.com/v1/images/generations", json.dumps(body).encode(),
+                                {"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"}, timeout=300))
+            return base64.b64decode(r["data"][0]["b64_json"])
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 5:
+                with lock:
+                    spent["ideogram"] -= 1  # refused, so not paid for
+                raise
+            time.sleep(15 * (attempt + 1))  # rate limited: wait and try again
+
+
+def paint(prompt, seed):
+    """One new picture from the chosen provider (--provider)."""
+    if PROVIDER[0] == "ideogram":
+        return ideogram(prompt, seed)
+    return openai_image(f"{prompt} Avoid: {NEGATIVE}.", PROVIDER[1])
+
+
 def has_lettering(png):
     small = Image.open(io.BytesIO(png)).convert("RGB")
     small.thumbnail((512, 512))
@@ -180,7 +213,8 @@ def art_for(card, scene, card_images, out, allow_paid=False):
     if not allow_paid:
         raise RuntimeError("needs new art; run with --pay to make it with Ideogram")
     prompt = f"{scene} {STYLE}"
-    name = f"{card['id']}-{hashlib.sha256(prompt.encode()).hexdigest()[:12]}.png"
+    tag = "ideogram" if PROVIDER[0] == "ideogram" else f"openai-{PROVIDER[1]}"
+    name = f"{card['id']}-{hashlib.sha256((tag + prompt).encode()).hexdigest()[:12]}.png"
     local = out / "art" / name
     if local.exists():
         return Image.open(local).convert("RGB"), "tall"
@@ -190,11 +224,11 @@ def art_for(card, scene, card_images, out, allow_paid=False):
             spent["kept"] += 1
     else:
         seed = int(hashlib.sha256(card["id"].encode()).hexdigest()[:8], 16) % 2_000_000_000
-        raw = ideogram(prompt, seed)
+        raw = paint(prompt, seed)
         if has_lettering(raw) and spent["ideogram"] < MAX_NEW[0]:
             with lock:
                 spent["retries"] += 1
-            raw = ideogram(prompt, seed + 1)
+            raw = paint(prompt, seed + 1)
     local.parent.mkdir(parents=True, exist_ok=True)
     local.write_bytes(raw)
     return Image.open(io.BytesIO(raw)).convert("RGB"), "tall"
@@ -284,11 +318,15 @@ def main():
     ap.add_argument("--out", type=Path, default=REPO / "content" / ".cache" / "posts")
     ap.add_argument("--jobs", type=int, default=6)
     ap.add_argument("--free-only", action="store_true", help="only cards whose art costs nothing (reused or already made)")
-    ap.add_argument("--pay", action="store_true", help="allow new Ideogram pictures (about $0.03 each)")
-    ap.add_argument("--max-new", type=int, default=30, help="most new Ideogram pictures to pay for in this run, retries included")
+    ap.add_argument("--pay", action="store_true", help="allow new paid pictures")
+    ap.add_argument("--provider", choices=["openai", "ideogram"], default="openai",
+                    help="who paints new pictures: OpenAI (gpt-image-1-mini, ~$0.015 at medium) or Ideogram Turbo (~$0.03)")
+    ap.add_argument("--quality", choices=["low", "medium"], default="medium", help="OpenAI picture quality")
+    ap.add_argument("--max-new", type=int, default=30, help="most new pictures to pay for in this run, retries included")
     args = ap.parse_args()
 
     MAX_NEW[0] = args.max_new if args.pay else 0
+    PROVIDER[:] = [args.provider, args.quality]
     cards, sources = library()
     names = topics()
     card_images = load(CARD_IMAGES, {"cards": {}})["cards"]
@@ -345,8 +383,8 @@ def main():
                     POSTS.write_text(json.dumps({"version": 1, "cards": dict(sorted(posts["cards"].items()))}, indent=1, ensure_ascii=False) + "\n")
                 print(f"{n}/{len(chosen)} done; {spent}", flush=True)
     POSTS.write_text(json.dumps({"version": 1, "cards": dict(sorted(posts["cards"].items()))}, indent=1, ensure_ascii=False) + "\n")
-    print(f"done: {len(posts['cards'])} posts in all; new Ideogram pictures {spent['ideogram']} "
-          f"(≈${spent['ideogram'] * 0.03:.2f}), reused card pictures {spent['reused']}, kept art {spent['kept']}, "
+    print(f"done: {len(posts['cards'])} posts in all; new {args.provider} pictures {spent['ideogram']} "
+          f"(≈${spent['ideogram'] * PRICE[args.provider]:.2f}), reused card pictures {spent['reused']}, kept art {spent['kept']}, "
           f"lettering retries {spent['retries']}; failed {len(failed)}", flush=True)
 
 
