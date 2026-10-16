@@ -75,6 +75,15 @@ export interface CardImage {
   credit?: string | null;
 }
 
+/** The card's image post: a designed 4:5 picture with the title set over a painted scene, shown in the feed. */
+export interface PostImage {
+  /** Absolute, or a path relative to the API base URL. */
+  url: string;
+  width: number;
+  height: number;
+  alt: string;
+}
+
 export interface Card {
   id: string;
   title: string;
@@ -92,6 +101,7 @@ export interface Card {
   explainer?: Explainer | null;
   audio?: CardAudio | null;
   image?: CardImage | null;
+  post_image?: PostImage | null;
   // Member cards (written by a member, not from a book) add these:
   /** The member who wrote it. Present only on member cards. */
   author?: PublicUser | null;

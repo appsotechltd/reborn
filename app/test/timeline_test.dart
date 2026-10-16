@@ -210,6 +210,53 @@ void main() {
     expect(find.text('Idea p1'), findsOneWidget);
   });
 
+  testWidgets('the column feed shows an image post as its picture', (
+    tester,
+  ) async {
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => {
+          'posts': [
+            postJson(
+              cardJsonWith({
+                'id': 'i1',
+                'title': 'Idea i1',
+                'quote': null,
+                'post_image': {
+                  'url': '/media/images/posts/v1/i1.jpg',
+                  'width': 1080,
+                  'height': 1350,
+                  'alt': 'A lamp on a desk',
+                },
+              }),
+            ),
+            post('p2'),
+          ],
+          'next_cursor': null,
+        },
+      );
+    await pumpApp(tester, server, size: const Size(800, 3000));
+    final image = find.byKey(const ValueKey('post-image'));
+    expect(image, findsOneWidget);
+    expect(find.bySemanticsLabel('A lamp on a desk'), findsOneWidget);
+    final rect = tester.getRect(image);
+    expect(rect.height / rect.width, closeTo(1.25, 0.01));
+    // No title or body text for the image post; the text post keeps its own.
+    expect(find.text('Idea i1'), findsNothing);
+    expect(find.text('Idea p2'), findsOneWidget);
+    expect(find.byKey(const ValueKey('read-more')), findsOneWidget);
+    expect(find.bySemanticsLabel('Read more: Idea i1'), findsOneWidget);
+    final post1 = find.byKey(const ValueKey('timeline-i1'));
+    for (final key in ['post-listen', 'post-favorite', 'post-share']) {
+      expect(
+        find.descendant(of: post1, matching: find.byKey(ValueKey(key))),
+        findsOneWidget,
+      );
+    }
+    expect(tester.takeException(), isNull);
+  });
+
   test('Listen keys carry the media filter when one is on', () {
     expect(timelineListenKey(null), 'timeline|');
     expect(timelineListenKey(['money']), 'timeline|money');

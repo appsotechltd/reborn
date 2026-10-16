@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:reborn/src/features/card/explainer_player.dart';
+import 'package:reborn/src/features/post/post_view.dart';
 import 'package:video_player/video_player.dart';
 
 import 'fake_server.dart';
@@ -15,6 +16,7 @@ Map<String, dynamic> post(
   bool? seen,
   Map<String, dynamic>? explainer,
   String? body,
+  Map<String, dynamic>? postImage,
 }) => postJson(
   cardJsonWith({
     'id': id,
@@ -22,6 +24,7 @@ Map<String, dynamic> post(
     'quote': null,
     'explainer': ?explainer,
     'body': ?body,
+    'post_image': ?postImage,
   }),
   viewer: seen == null
       ? null
@@ -35,6 +38,13 @@ Map<String, dynamic> video(String id) => {
   'duration_s': 42,
   'width': 720,
   'height': 1280,
+};
+
+Map<String, dynamic> picture(String id, {String alt = ''}) => {
+  'url': '/media/images/posts/v1/$id.jpg',
+  'width': 1080,
+  'height': 1350,
+  'alt': alt,
 };
 
 Map<String, dynamic> page(List<Map<String, dynamic>> posts, [String? next]) => {
@@ -225,6 +235,82 @@ void main() {
     expect(find.text('Idea p3'), findsNothing);
     expect(find.bySemanticsLabel(RegExp(r'^Post 2 of 3')), findsOneWidget);
     await tester.pump(const Duration(seconds: 2)); // let the seen call land
+  });
+
+  testWidgets('an image post shows its picture to fit, and opens the card', (
+    tester,
+  ) async {
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([
+          post('p1', postImage: picture('p1', alt: 'A lamp on a desk')),
+          post('p2', postImage: picture('p2')),
+        ]),
+      )
+      ..on(
+        'GET /v1/posts/p1',
+        (_) => post('p1', postImage: picture('p1', alt: 'A lamp on a desk')),
+      )
+      ..on('POST /v1/cards/p1/view', (_) => const Reply.empty());
+    await pumpApp(tester, server, size: phone);
+    final p1 = find.byKey(const ValueKey('page-p1'));
+    final image = find.descendant(
+      of: p1,
+      matching: find.byKey(const ValueKey('post-image')),
+    );
+    expect(image, findsOneWidget);
+    expect(find.bySemanticsLabel('A lamp on a desk'), findsOneWidget);
+    // The title is in the picture: no text preview.
+    expect(find.text('Idea p1'), findsNothing);
+    expect(find.byKey(const ValueKey('preview-body')), findsNothing);
+    expect(tester.takeException(), isNull);
+
+    // At its own 4:5 shape, above Read the idea, Listen and the action bar.
+    final rect = tester.getRect(image);
+    expect(rect.height / rect.width, closeTo(1.25, 0.01));
+    final readMore = find.descendant(
+      of: p1,
+      matching: find.byKey(const ValueKey('read-more')),
+    );
+    expect(readMore, findsOneWidget);
+    expect(find.bySemanticsLabel('Read more: Idea p1'), findsOneWidget);
+    final listen = find.descendant(
+      of: p1,
+      matching: find.byKey(const ValueKey('post-listen')),
+    );
+    expect(listen, findsOneWidget);
+    final favourite = find.descendant(
+      of: p1,
+      matching: find.byKey(const ValueKey('post-favorite')),
+    );
+    expect(rect.bottom, lessThanOrEqualTo(tester.getRect(readMore).top));
+    expect(
+      tester.getRect(readMore).bottom,
+      lessThanOrEqualTo(tester.getRect(favourite).top),
+    );
+    expect(tester.getRect(favourite).bottom, lessThanOrEqualTo(phone.height));
+
+    // Without alt text the picture is named for the card.
+    await swipeUp(tester);
+    expect(find.bySemanticsLabel('Idea p2'), findsOneWidget);
+
+    // Tapping the picture opens the full card, which is unchanged.
+    await tester.fling(feed, const Offset(0, 300), 1500);
+    await tester.pumpAndSettle();
+    await tester.tap(image);
+    await tester.pumpAndSettle();
+    expect(find.text('APPLY IT'), findsOneWidget);
+    expect(find.byKey(const ValueKey('post-image')), findsNothing);
+  });
+
+  test('a video post plays its video, not its picture', () {
+    final withPicture = cardJsonWith({'post_image': picture('x')});
+    expect(feedPostImage(sampleCard(withPicture)), isNotNull);
+    expect(
+      feedPostImage(sampleCard({...withPicture, 'explainer': video('x')})),
+      isNull,
+    );
   });
 
   testWidgets('preloads near the end and keeps going into older posts', (

@@ -106,9 +106,18 @@ func mediaIDs(media string) []string {
 			}
 		}
 	case MediaImage:
+		seen := map[string]bool{}
 		if set := imageSet.Load(); set != nil {
 			for id := range *set {
+				seen[id] = true
 				ids = append(ids, id)
+			}
+		}
+		if set := postSet.Load(); set != nil {
+			for id := range *set {
+				if !seen[id] {
+					ids = append(ids, id)
+				}
 			}
 		}
 	}

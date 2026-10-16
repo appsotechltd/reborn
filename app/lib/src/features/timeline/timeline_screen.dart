@@ -463,7 +463,9 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
         unregister: _unregister,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
-          child: Card(child: PostView(post: post, showReason: true)),
+          child: Card(
+            child: PostView(post: post, showReason: true, feed: true),
+          ),
         ),
       );
     }

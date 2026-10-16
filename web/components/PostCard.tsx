@@ -3,6 +3,7 @@ import { reasonText } from "@/lib/social";
 import type { Post, PostReason } from "@/lib/types";
 import { topicName } from "@/lib/content";
 import { CardView } from "./CardView";
+import { ImagePost, isImagePost } from "./ImagePost";
 import { Icon, type IconName } from "./Icon";
 import { PostActions } from "./PostActions";
 import { PostCover } from "./Polish";
@@ -39,6 +40,8 @@ export function PostReasonLine({ reason, snap = false }: { reason: PostReason; s
  * fit, "Read the idea" for the card's page and Listen), with the
  * action bar under the card so react, favourite, comments, share and gift are always in reach.
  * From md up it is the full card with its actions inside, as in other lists.
+ *
+ * A card with an image post (and no video) shows that picture instead, linking to the card's page.
  */
 export function PostCard({
   post,
@@ -56,7 +59,8 @@ export function PostCard({
   const reason = showReason && post.reason ? post.reason : null;
   // A video post opens with its video; every other phone feed post opens with a cover.
   const card = post.card;
-  const cover = snap && !card.explainer && !card.video?.scenes?.length;
+  const imagePost = isImagePost(card) ? card : null;
+  const cover = snap && !imagePost && !card.explainer && !card.video?.scenes?.length;
   return (
     <div
       ref={trackRef}
@@ -76,7 +80,11 @@ export function PostCard({
       >
         {cover ? <PostCover card={card} topic={topicName(card.topic)} className="-mx-5 -mt-3.5 mb-3.5 md:hidden" /> : null}
         {reason ? <PostReasonLine reason={reason} snap={snap} /> : null}
-        <CardView card={post.card} headingLevel="h2" titleHref={`/ideas/${post.id}`} feed={snap} />
+        {imagePost ? (
+          <ImagePost card={imagePost} href={`/ideas/${post.id}`} snap={snap} />
+        ) : (
+          <CardView card={post.card} headingLevel="h2" titleHref={`/ideas/${post.id}`} feed={snap} />
+        )}
       </div>
       <PostActions post={post} compact={snap} listen className={snap ? "mt-6 max-md:mt-2 max-md:shrink-0 max-md:px-1" : undefined} />
     </div>

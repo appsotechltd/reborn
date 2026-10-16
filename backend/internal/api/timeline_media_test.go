@@ -28,9 +28,15 @@ func TestTimelineMediaFilter(t *testing.T) {
 		"meditations-marcus-aurelius--01": {URL: "https://media.example.com/a.webp", Type: "illustration"},
 		"nhs-sleep-tips--01":              {URL: "https://media.example.com/b.webp", Type: "illustration"},
 	})
+	// An image post counts as a picture too, alone or alongside a card picture.
+	store.SetPostImages(cardimages.Posts{
+		"meditations-marcus-aurelius--02": {URL: "https://media.example.com/p.jpg", Width: 1080, Height: 1350},
+		"nhs-sleep-tips--01":              {URL: "https://media.example.com/q.jpg", Width: 1080, Height: 1350},
+	})
 	t.Cleanup(func() {
 		store.SetExplainers(nil)
 		store.SetImages(nil)
+		store.SetPostImages(nil)
 	})
 	tok, _ := h.registerAs("ada@example.com", "Ada Lovelace")
 	bob, _ := h.registerAs("bob@example.com", "Bob")
@@ -68,12 +74,16 @@ func TestTimelineMediaFilter(t *testing.T) {
 		}
 	}
 	images := posts(h.do("GET", "/v1/timeline?limit=50&media=image", tok, nil, 200))
-	if got, want := sortedIDs(images), strings.Join(sortStrings(memberImage, "meditations-marcus-aurelius--01", "nhs-sleep-tips--01"), " "); got != want {
+	if got, want := sortedIDs(images), strings.Join(sortStrings(memberImage, "meditations-marcus-aurelius--01", "meditations-marcus-aurelius--02", "nhs-sleep-tips--01"), " "); got != want {
 		t.Fatalf("images = %s, want %s", got, want)
 	}
 	for _, p := range images {
-		if p["card"].(map[string]any)["image"] == nil {
+		c := p["card"].(map[string]any)
+		if c["image"] == nil && c["post_image"] == nil {
 			t.Fatalf("image post without a picture: %v", p["id"])
+		}
+		if p["id"] == "meditations-marcus-aurelius--02" && c["post_image"].(map[string]any)["url"] != "https://media.example.com/p.jpg" {
+			t.Fatalf("post_image missing: %v", c)
 		}
 	}
 

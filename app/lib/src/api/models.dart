@@ -229,6 +229,43 @@ class CardImage {
   };
 }
 
+/// A library card's designed 4:5 picture post (title, category and book
+/// already set in it), shown as an image post in the feed. Absent until one
+/// is made.
+class PostImage {
+  const PostImage({
+    required this.url,
+    this.width = 0,
+    this.height = 0,
+    this.alt = '',
+  });
+
+  /// Absolute, or a path relative to the API base URL (like explainers).
+  final String url;
+  final int width;
+  final int height;
+
+  /// A short description of the scene, for screen readers.
+  final String alt;
+
+  /// Width over height; 4:5 when the size is unknown.
+  double get aspectRatio => width > 0 && height > 0 ? width / height : 4 / 5;
+
+  factory PostImage.fromJson(Map<String, dynamic> json) => PostImage(
+    url: json['url'] as String? ?? '',
+    width: (json['width'] as num?)?.toInt() ?? 0,
+    height: (json['height'] as num?)?.toInt() ?? 0,
+    alt: json['alt'] as String? ?? '',
+  );
+
+  Map<String, dynamic> toJson() => {
+    'url': url,
+    'width': width,
+    'height': height,
+    'alt': alt,
+  };
+}
+
 /// One illustration of a member card's illustrated video.
 class VideoScene {
   const VideoScene({required this.url, this.width = 0, this.height = 0});
@@ -331,7 +368,7 @@ enum MediaFilter {
   bool matches(IdeaCard card) => switch (this) {
     MediaFilter.all => true,
     MediaFilter.videos => card.explainer != null || card.video != null,
-    MediaFilter.images => card.image != null,
+    MediaFilter.images => card.image != null || card.postImage != null,
   };
 }
 
@@ -359,6 +396,7 @@ class IdeaCard {
     this.visibility,
     this.createdAt,
     this.video,
+    this.postImage,
   });
 
   final String id;
@@ -397,6 +435,9 @@ class IdeaCard {
 
   /// A member card's illustrated video, when one is made.
   final CardVideo? video;
+
+  /// A library card's designed picture post, when one is made.
+  final PostImage? postImage;
 
   /// True for cards members write.
   bool get isMemberCard => author != null;
@@ -449,6 +490,13 @@ class IdeaCard {
                 .isNotEmpty
         ? CardVideo.fromJson(json['video'] as Map<String, dynamic>)
         : null,
+    postImage:
+        json['post_image'] is Map<String, dynamic> &&
+            ((json['post_image'] as Map<String, dynamic>)['url'] as String? ??
+                    '')
+                .isNotEmpty
+        ? PostImage.fromJson(json['post_image'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -473,6 +521,7 @@ class IdeaCard {
     if (visibility != null) 'visibility': visibility,
     if (createdAt != null) 'created_at': createdAt!.toUtc().toIso8601String(),
     if (video != null) 'video': video!.toJson(),
+    if (postImage != null) 'post_image': postImage!.toJson(),
   };
 
   /// Text read aloud by the device voice when the card has no [audio]: the

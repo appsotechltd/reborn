@@ -188,6 +188,12 @@ func serve(ctx context.Context, cfg config.Config, st *store.Store, e embed.Embe
 	}
 	store.SetImages(images)
 	slog.Info("card images", "cards", len(images), "manifest", cfg.CardImageDir)
+	posts, err := cardimages.LoadPosts(ctx, cfg.CardImageDir, media)
+	if err != nil {
+		return fmt.Errorf("load image posts: %w", err)
+	}
+	store.SetPostImages(posts)
+	slog.Info("image posts", "cards", len(posts), "manifest", cfg.CardImageDir)
 	srv := &api.Server{
 		Store:          st,
 		Cache:          c,

@@ -212,6 +212,48 @@ void main() {
     });
   });
 
+  group('PostImage', () {
+    const postImage = {
+      'url': 'https://cdn.example/images/posts/v1/x.jpg',
+      'width': 1080,
+      'height': 1350,
+      'alt': 'A lamp on a desk at night',
+    };
+
+    test('parses, round-trips and counts as an image', () {
+      expect(sampleCard().postImage, isNull);
+      expect(sampleCard().toJson().containsKey('post_image'), isFalse);
+      final card = sampleCard({'post_image': postImage});
+      final p = card.postImage!;
+      expect(p.url, 'https://cdn.example/images/posts/v1/x.jpg');
+      expect(p.width, 1080);
+      expect(p.height, 1350);
+      expect(p.alt, 'A lamp on a desk at night');
+      expect(p.aspectRatio, closeTo(0.8, 1e-9));
+      final json =
+          jsonDecode(jsonEncode(card.toJson())) as Map<String, dynamic>;
+      expect(json['post_image'], postImage);
+      expect(IdeaCard.fromJson(json).postImage!.alt, p.alt);
+      expect(MediaFilter.images.matches(card), isTrue);
+      expect(MediaFilter.images.matches(sampleCard()), isFalse);
+    });
+
+    test('is absent without a URL, and 4:5 without a size', () {
+      expect(
+        sampleCard({
+          'post_image': {'url': '', 'width': 1080, 'height': 1350},
+        }).postImage,
+        isNull,
+      );
+      expect(sampleCard({'post_image': null}).postImage, isNull);
+      final p = sampleCard({
+        'post_image': {'url': '/media/p.jpg'},
+      }).postImage!;
+      expect(p.aspectRatio, closeTo(0.8, 1e-9));
+      expect(p.alt, '');
+    });
+  });
+
   test('wordCount', () {
     expect(wordCount(''), 0);
     expect(wordCount('  one  two\nthree\n\nfour '), 4);

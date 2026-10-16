@@ -1,0 +1,953 @@
+{
+ "version": 1,
+ "cards": {
+  "7-habits-covey--05": {
+   "file": "images/posts/v1/7-habits-covey--05.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Listening fully before replying"
+  },
+  "7-habits-covey--08": {
+   "file": "images/posts/v1/7-habits-covey--08.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "On the subway, a new understanding of the scene"
+  },
+  "7-habits-covey--17": {
+   "file": "images/posts/v1/7-habits-covey--17.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "What sits at the centre holds everything else in orbit"
+  },
+  "7-habits-covey--23": {
+   "file": "images/posts/v1/7-habits-covey--23.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Courage and consideration held in balance"
+  },
+  "aesops-fables--01": {
+   "file": "images/posts/v1/aesops-fables--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A white goose sitting calmly beside a single glowing golden egg in straw, in a dim old barn lit by a lantern, painted like a classic fable illustration."
+  },
+  "aesops-fables--33": {
+   "file": "images/posts/v1/aesops-fables--33.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "The fox learned from the donkey's mistake"
+  },
+  "aesops-fables--36": {
+   "file": "images/posts/v1/aesops-fables--36.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A gnat on a bull's horn that the bull never noticed"
+  },
+  "aesops-fables--38": {
+   "file": "images/posts/v1/aesops-fables--38.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A buried lump of gold is worth no more than a brick"
+  },
+  "africapitalism-elumelu--05": {
+   "file": "images/posts/v1/africapitalism-elumelu--05.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "One business at the centre, its benefits rippling out to the community"
+  },
+  "art-of-writing-stevenson--12": {
+   "file": "images/posts/v1/art-of-writing-stevenson--12.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An arrow dead centre in the target"
+  },
+  "as-a-man-thinketh-james-allen--18": {
+   "file": "images/posts/v1/as-a-man-thinketh-james-allen--18.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Doing the work in front of you with full care"
+  },
+  "attached-levine-heller--25": {
+   "file": "images/posts/v1/attached-levine-heller--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Even after leaving, a band still pulls back"
+  },
+  "attached-levine-heller--30": {
+   "file": "images/posts/v1/attached-levine-heller--30.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two partners leaning in to shelter each other"
+  },
+  "autobiography-andrew-carnegie--35": {
+   "file": "images/posts/v1/autobiography-andrew-carnegie--35.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "All the good eggs in one basket, the strays left aside"
+  },
+  "autobiography-andrew-carnegie--41": {
+   "file": "images/posts/v1/autobiography-andrew-carnegie--41.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A wife welcoming the elderly relatives"
+  },
+  "autobiography-benjamin-franklin--19": {
+   "file": "images/posts/v1/autobiography-benjamin-franklin--19.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Still working when the neighbours go home"
+  },
+  "autobiography-benjamin-franklin--38": {
+   "file": "images/posts/v1/autobiography-benjamin-franklin--38.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A chess game where the loser must study Italian"
+  },
+  "autobiography-benjamin-franklin--46": {
+   "file": "images/posts/v1/autobiography-benjamin-franklin--46.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A long thin column on a narrow forest road"
+  },
+  "autobiography-benjamin-franklin--49": {
+   "file": "images/posts/v1/autobiography-benjamin-franklin--49.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Everyone else looks lost in the fog"
+  },
+  "autobiography-charles-darwin--03": {
+   "file": "images/posts/v1/autobiography-charles-darwin--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two boys running a chemistry lab in a garden shed"
+  },
+  "autobiography-charles-darwin--21": {
+   "file": "images/posts/v1/autobiography-charles-darwin--21.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A quiet country life chosen together"
+  },
+  "book-of-business-etiquette-henney--16": {
+   "file": "images/posts/v1/book-of-business-etiquette-henney--16.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A private inner light, ringed and protected"
+  },
+  "book-of-business-etiquette-henney--46": {
+   "file": "images/posts/v1/book-of-business-etiquette-henney--46.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Courtesy to the work itself"
+  },
+  "consolation-of-philosophy-boethius--26": {
+   "file": "images/posts/v1/consolation-of-philosophy-boethius--26.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Searching everything but the good life"
+  },
+  "discourses-epictetus--25": {
+   "file": "images/posts/v1/discourses-epictetus--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Anxiety comes from wanting the applause"
+  },
+  "discourses-epictetus--33": {
+   "file": "images/posts/v1/discourses-epictetus--33.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A light leads the way and others follow freely"
+  },
+  "discourses-on-art-reynolds--15": {
+   "file": "images/posts/v1/discourses-on-art-reynolds--15.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A clock's hour hand, moving too slowly to see"
+  },
+  "early-history-of-the-airplane-wright--26": {
+   "file": "images/posts/v1/early-history-of-the-airplane-wright--26.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two brothers settle who flies first with a coin toss"
+  },
+  "eat-that-frog-tracy--28": {
+   "file": "images/posts/v1/eat-that-frog-tracy--28.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Work done, time left for family"
+  },
+  "education-of-a-british-protected-child-achebe--02": {
+   "file": "images/posts/v1/education-of-a-british-protected-child-achebe--02.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Noticing whose side a story puts you on"
+  },
+  "education-of-a-british-protected-child-achebe--20": {
+   "file": "images/posts/v1/education-of-a-british-protected-child-achebe--20.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A young reader learning from people who stood up for others"
+  },
+  "emotional-intelligence-goleman--15": {
+   "file": "images/posts/v1/emotional-intelligence-goleman--15.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "The mood you bring spreads outward"
+  },
+  "emotional-intelligence-goleman--23": {
+   "file": "images/posts/v1/emotional-intelligence-goleman--23.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A web of connections already in place around one glowing point"
+  },
+  "emotional-intelligence-goleman--28": {
+   "file": "images/posts/v1/emotional-intelligence-goleman--28.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Three stepping stones rising toward a warm light: safety, making sense, rebuilding"
+  },
+  "enchiridion-epictetus--13": {
+   "file": "images/posts/v1/enchiridion-epictetus--13.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "At an ancient banquet, a dish is passed from guest to guest"
+  },
+  "enchiridion-epictetus--14": {
+   "file": "images/posts/v1/enchiridion-epictetus--14.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Kind and present, steady inside"
+  },
+  "essays-francis-bacon--06": {
+   "file": "images/posts/v1/essays-francis-bacon--06.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Pressure brings out what was hidden"
+  },
+  "essays-francis-bacon--15": {
+   "file": "images/posts/v1/essays-francis-bacon--15.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Love that flows out to many"
+  },
+  "essays-francis-bacon--17": {
+   "file": "images/posts/v1/essays-francis-bacon--17.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A firm but respectful correction"
+  },
+  "essays-francis-bacon--46": {
+   "file": "images/posts/v1/essays-francis-bacon--46.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Light things float, weighty things sink"
+  },
+  "essays-montaigne--12": {
+   "file": "images/posts/v1/essays-montaigne--12.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Step off the worn track and turn toward something new"
+  },
+  "etiquette-emily-post--12": {
+   "file": "images/posts/v1/etiquette-emily-post--12.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "At a dinner party, the attentive listener is the best company"
+  },
+  "etiquette-emily-post--39": {
+   "file": "images/posts/v1/etiquette-emily-post--39.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two girls on a train, crocheting toward hidden prizes"
+  },
+  "etiquette-emily-post--42": {
+   "file": "images/posts/v1/etiquette-emily-post--42.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A simple village wedding, remembered as one of the loveliest"
+  },
+  "etiquette-emily-post--43": {
+   "file": "images/posts/v1/etiquette-emily-post--43.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A brief, warm word in the receiving line"
+  },
+  "foundations-of-science-poincare--21": {
+   "file": "images/posts/v1/foundations-of-science-poincare--21.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Arrows grouped in the centre of a target: a hit you can repeat"
+  },
+  "gospel-of-buddha-carus--23": {
+   "file": "images/posts/v1/gospel-of-buddha-carus--23.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Going door to door for a house untouched by loss"
+  },
+  "gospel-of-buddha-carus--24": {
+   "file": "images/posts/v1/gospel-of-buddha-carus--24.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A weary rich man seeks advice, rich dishes pushed aside"
+  },
+  "guide-ace-a-job-interview--01": {
+   "file": "images/posts/v1/guide-ace-a-job-interview--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A warm handshake at a job interview"
+  },
+  "guide-beat-procrastination--01": {
+   "file": "images/posts/v1/guide-beat-procrastination--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Taking the first small step on a big pile of work"
+  },
+  "guide-become-an-a-student--01": {
+   "file": "images/posts/v1/guide-become-an-a-student--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A student testing themselves with flashcards"
+  },
+  "guide-break-a-bad-habit--01": {
+   "file": "images/posts/v1/guide-break-a-bad-habit--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Stepping off a worn path onto a new one"
+  },
+  "guide-build-a-morning-routine--01": {
+   "file": "images/posts/v1/guide-build-a-morning-routine--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A calm start at sunrise"
+  },
+  "guide-build-self-confidence--01": {
+   "file": "images/posts/v1/guide-build-self-confidence--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Standing tall after the climb"
+  },
+  "guide-calm-anxiety--01": {
+   "file": "images/posts/v1/guide-calm-anxiety--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Finding calm by still water"
+  },
+  "guide-eat-well-on-a-budget--01": {
+   "file": "images/posts/v1/guide-eat-well-on-a-budget--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Simple, affordable, nourishing food"
+  },
+  "guide-first-aid-basics--01": {
+   "file": "images/posts/v1/guide-first-aid-basics--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Checking someone's breathing beside a first-aid kit"
+  },
+  "guide-get-fit-at-home--01": {
+   "file": "images/posts/v1/guide-get-fit-at-home--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A home workout on a living-room mat"
+  },
+  "guide-get-out-of-debt--01": {
+   "file": "images/posts/v1/guide-get-out-of-debt--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Climbing out of debt one rung at a time"
+  },
+  "guide-grow-your-career--01": {
+   "file": "images/posts/v1/guide-grow-your-career--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Climbing steadily, step by step"
+  },
+  "guide-grow-your-faith-daily--01": {
+   "file": "images/posts/v1/guide-grow-your-faith-daily--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A quiet time of prayer and reading at dawn"
+  },
+  "guide-handle-stress--01": {
+   "file": "images/posts/v1/guide-handle-stress--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Setting down a heavy load"
+  },
+  "guide-lead-a-team--01": {
+   "file": "images/posts/v1/guide-lead-a-team--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A leader planning together with the team"
+  },
+  "guide-learn-any-skill-fast--01": {
+   "file": "images/posts/v1/guide-learn-any-skill-fast--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Focused daily practice on a new skill"
+  },
+  "guide-make-and-keep-friends--01": {
+   "file": "images/posts/v1/guide-make-and-keep-friends--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Friends laughing around a shared meal"
+  },
+  "guide-make-marriage-work--01": {
+   "file": "images/posts/v1/guide-make-marriage-work--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A couple sharing a warm everyday moment at home"
+  },
+  "guide-manage-your-time--01": {
+   "file": "images/posts/v1/guide-manage-your-time--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Arranging the blocks of the day"
+  },
+  "guide-master-your-anger--01": {
+   "file": "images/posts/v1/guide-master-your-anger--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Taking a slow breath while the storm passes"
+  },
+  "guide-negotiate-anything--01": {
+   "file": "images/posts/v1/guide-negotiate-anything--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two people reaching an agreement"
+  },
+  "guide-quit-smoking--01": {
+   "file": "images/posts/v1/guide-quit-smoking--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Breathing freely after quitting"
+  },
+  "guide-raise-children--01": {
+   "file": "images/posts/v1/guide-raise-children--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A parent listening closely at a child's eye level"
+  },
+  "guide-resolve-conflict-calmly--01": {
+   "file": "images/posts/v1/guide-resolve-conflict-calmly--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two people talking it through calmly"
+  },
+  "guide-sleep-better--01": {
+   "file": "images/posts/v1/guide-sleep-better--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A calm bedroom ready for sleep"
+  },
+  "guide-speak-fluently--01": {
+   "file": "images/posts/v1/guide-speak-fluently--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A speaker talking with calm confidence to an attentive audience"
+  },
+  "guide-start-a-business--01": {
+   "file": "images/posts/v1/guide-start-a-business--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Opening the doors of a first small business at dawn"
+  },
+  "guide-start-investing--01": {
+   "file": "images/posts/v1/guide-start-investing--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Small investments growing over time"
+  },
+  "guide-take-control-of-money--01": {
+   "file": "images/posts/v1/guide-take-control-of-money--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Sorting money into jars for each purpose"
+  },
+  "guide-write-clearly--01": {
+   "file": "images/posts/v1/guide-write-clearly--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Writing a clear, simple draft"
+  },
+  "hhs-importance-of-fathers--08": {
+   "file": "images/posts/v1/hhs-importance-of-fathers--08.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A father and child out on a hike together"
+  },
+  "how-to-win-friends-carnegie--04": {
+   "file": "images/posts/v1/how-to-win-friends-carnegie--04.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two people shaking hands warmly in a softly lit cafe, seen close up, their faces turned to each other with a smile, warm amber light."
+  },
+  "how-to-win-friends-carnegie--25": {
+   "file": "images/posts/v1/how-to-win-friends-carnegie--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "The same complaint, again"
+  },
+  "how-we-think-dewey--13": {
+   "file": "images/posts/v1/how-we-think-dewey--13.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A pupil watches the teacher's face instead of the problem"
+  },
+  "how-we-think-dewey--27": {
+   "file": "images/posts/v1/how-we-think-dewey--27.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Play and purpose balanced on one beam"
+  },
+  "in-favor-of-the-sensitive-man-nin--07": {
+   "file": "images/posts/v1/in-favor-of-the-sensitive-man-nin--07.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Tenderness and ambition, shared by both"
+  },
+  "interesting-narrative-olaudah-equiano--06": {
+   "file": "images/posts/v1/interesting-narrative-olaudah-equiano--06.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A whole village working its shared fields"
+  },
+  "interesting-narrative-olaudah-equiano--30": {
+   "file": "images/posts/v1/interesting-narrative-olaudah-equiano--30.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Torn between gratitude and a longed-for voyage"
+  },
+  "interesting-narrative-olaudah-equiano--43": {
+   "file": "images/posts/v1/interesting-narrative-olaudah-equiano--43.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Leaving the old crowd for company that lifts you"
+  },
+  "letters-to-his-son-chesterfield--03": {
+   "file": "images/posts/v1/letters-to-his-son-chesterfield--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Offering the small kindness you'd like yourself"
+  },
+  "letters-to-his-son-chesterfield--15": {
+   "file": "images/posts/v1/letters-to-his-son-chesterfield--15.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Contempt is remembered long after a wrong"
+  },
+  "letters-to-his-son-chesterfield--29": {
+   "file": "images/posts/v1/letters-to-his-son-chesterfield--29.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Between bowing low and bristling: standing upright"
+  },
+  "mans-search-for-meaning-frankl--16": {
+   "file": "images/posts/v1/mans-search-for-meaning-frankl--16.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Three drives side by side, with meaning standing tallest"
+  },
+  "meditations-marcus-aurelius--02": {
+   "file": "images/posts/v1/meditations-marcus-aurelius--02.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A calm marble statue of a Roman emperor standing still while a storm of dark wind and leaves swirls around it, warm light on the face."
+  },
+  "mental-efficiency-bennett--22": {
+   "file": "images/posts/v1/mental-efficiency-bennett--22.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Good books on the shelf invite curiosity"
+  },
+  "mental-efficiency-bennett--30": {
+   "file": "images/posts/v1/mental-efficiency-bennett--30.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A calm traveller watches a missed train pull away"
+  },
+  "michael-faraday-thompson--41": {
+   "file": "images/posts/v1/michael-faraday-thompson--41.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A Victorian scientist reads a letter of plain explanation"
+  },
+  "michael-faraday-thompson--50": {
+   "file": "images/posts/v1/michael-faraday-thompson--50.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Tea with a poor neighbour instead of a grand dinner"
+  },
+  "mindset-dweck--20": {
+   "file": "images/posts/v1/mindset-dweck--20.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A father gives his daughter honest, gentle feedback"
+  },
+  "mindset-dweck--21": {
+   "file": "images/posts/v1/mindset-dweck--21.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "High standards and warm support"
+  },
+  "mindset-dweck--27": {
+   "file": "images/posts/v1/mindset-dweck--27.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Look for the reasons behind one mistake"
+  },
+  "mindset-dweck--28": {
+   "file": "images/posts/v1/mindset-dweck--28.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An adult beginner at the easel, learning to draw"
+  },
+  "moral-letters-seneca--20": {
+   "file": "images/posts/v1/moral-letters-seneca--20.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Admire the vine for its grapes, not its golden stakes"
+  },
+  "my-inventions-tesla--01": {
+   "file": "images/posts/v1/my-inventions-tesla--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An inventor building the machine in his mind first"
+  },
+  "nhs-five-steps-to-mental-wellbeing--05": {
+   "file": "images/posts/v1/nhs-five-steps-to-mental-wellbeing--05.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Noticing the small details of an ordinary morning"
+  },
+  "nhs-grief-bereavement--03": {
+   "file": "images/posts/v1/nhs-grief-bereavement--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Grief carries more than one weight: sadness, anger, guilt"
+  },
+  "nhs-mental-health-self-help--03": {
+   "file": "images/posts/v1/nhs-mental-health-self-help--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Circle the one piece you can control"
+  },
+  "notebooks-leonardo-da-vinci--03": {
+   "file": "images/posts/v1/notebooks-leonardo-da-vinci--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Understanding why, not just who said it"
+  },
+  "notebooks-leonardo-da-vinci--35": {
+   "file": "images/posts/v1/notebooks-leonardo-da-vinci--35.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Add a layer of patience as the cold grows"
+  },
+  "novel-of-the-future-nin--03": {
+   "file": "images/posts/v1/novel-of-the-future-nin--03.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Catching a dream before the day begins"
+  },
+  "novel-of-the-future-nin--05": {
+   "file": "images/posts/v1/novel-of-the-future-nin--05.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Shock often hides a quieter feeling"
+  },
+  "on-anger-seneca--14": {
+   "file": "images/posts/v1/on-anger-seneca--14.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A Roman general holds back and takes stock"
+  },
+  "on-peace-of-mind-seneca--19": {
+   "file": "images/posts/v1/on-peace-of-mind-seneca--19.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Value things by their use, not their show"
+  },
+  "on-peace-of-mind-seneca--20": {
+   "file": "images/posts/v1/on-peace-of-mind-seneca--20.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Shelves of untouched scrolls, one being truly read"
+  },
+  "on-peace-of-mind-seneca--27": {
+   "file": "images/posts/v1/on-peace-of-mind-seneca--27.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Losing the cargo, gaining lighter luggage"
+  },
+  "on-the-shortness-of-life-seneca--02": {
+   "file": "images/posts/v1/on-the-shortness-of-life-seneca--02.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An antique brass hourglass on a dark wooden desk, its falling sand turning into gold coins that pile up at the base, lit by a single candle."
+  },
+  "on-the-shortness-of-life-seneca--21": {
+   "file": "images/posts/v1/on-the-shortness-of-life-seneca--21.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Favour the knowledge that makes you better"
+  },
+  "pierre-curie-marie-curie--10": {
+   "file": "images/posts/v1/pierre-curie-marie-curie--10.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Lean student years that felt like freedom"
+  },
+  "pierre-curie-marie-curie--14": {
+   "file": "images/posts/v1/pierre-curie-marie-curie--14.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Protecting the hours for deep work"
+  },
+  "pierre-curie-marie-curie--36": {
+   "file": "images/posts/v1/pierre-curie-marie-curie--36.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A grandfather keeping the children's world bright"
+  },
+  "plutarchs-lives--40": {
+   "file": "images/posts/v1/plutarchs-lives--40.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Settling disputes together instead of alone"
+  },
+  "psychology-of-money-housel--13": {
+   "file": "images/posts/v1/psychology-of-money-housel--13.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Thinking work follows you home"
+  },
+  "pushing-to-the-front-marden--39": {
+   "file": "images/posts/v1/pushing-to-the-front-marden--39.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Leave the weight of the past behind"
+  },
+  "pushing-to-the-front-marden--42": {
+   "file": "images/posts/v1/pushing-to-the-front-marden--42.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A candle burning at both ends"
+  },
+  "pushing-to-the-front-marden--47": {
+   "file": "images/posts/v1/pushing-to-the-front-marden--47.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An old scar in a tree, cut when it was a sapling"
+  },
+  "rebuilding-fisher-alberti--01": {
+   "file": "images/posts/v1/rebuilding-fisher-alberti--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Recovery as a mountain climbed one block at a time"
+  },
+  "rich-dad-poor-dad-kiyosaki--25": {
+   "file": "images/posts/v1/rich-dad-poor-dad-kiyosaki--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Heroes make hard goals feel possible"
+  },
+  "rich-dad-poor-dad-kiyosaki--26": {
+   "file": "images/posts/v1/rich-dad-poor-dad-kiyosaki--26.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Teaching an idea is the best way to learn it"
+  },
+  "richest-man-in-babylon-clason--28": {
+   "file": "images/posts/v1/richest-man-in-babylon-clason--28.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Prove yourself with a little before a lot"
+  },
+  "rules-of-civility-washington--06": {
+   "file": "images/posts/v1/rules-of-civility-washington--06.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Asking leave before checking the phone"
+  },
+  "rules-of-civility-washington--37": {
+   "file": "images/posts/v1/rules-of-civility-washington--37.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Declining a request with warmth and good manners"
+  },
+  "science-of-getting-rich-wattles--20": {
+   "file": "images/posts/v1/science-of-getting-rich-wattles--20.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A goal you truly want holds your attention without effort"
+  },
+  "science-of-learning-weinstein-2018--26": {
+   "file": "images/posts/v1/science-of-learning-weinstein-2018--26.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Different-looking shapes that share the same core idea"
+  },
+  "self-help-samuel-smiles--07": {
+   "file": "images/posts/v1/self-help-samuel-smiles--07.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Ordinary people's careful daily work keeps a town strong"
+  },
+  "self-help-samuel-smiles--14": {
+   "file": "images/posts/v1/self-help-samuel-smiles--14.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "One example spreads to its neighbours, then to the whole group"
+  },
+  "self-help-samuel-smiles--26": {
+   "file": "images/posts/v1/self-help-samuel-smiles--26.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Pitching a treasure hunt to sceptical backers"
+  },
+  "self-help-samuel-smiles--40": {
+   "file": "images/posts/v1/self-help-samuel-smiles--40.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Savings with a purpose: a home, a future"
+  },
+  "self-reliance-emerson--17": {
+   "file": "images/posts/v1/self-reliance-emerson--17.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "The energy is in the leap toward what's next"
+  },
+  "self-reliance-emerson--25": {
+   "file": "images/posts/v1/self-reliance-emerson--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A home shaped by its own land and climate"
+  },
+  "seven-principles-marriage-gottman--08": {
+   "file": "images/posts/v1/seven-principles-marriage-gottman--08.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A small map of a partner's world, with today's worry marked"
+  },
+  "story-of-my-life-helen-keller--04": {
+   "file": "images/posts/v1/story-of-my-life-helen-keller--04.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Two hands under the cool stream of an old iron water pump, one hand gently spelling into the other, droplets catching golden evening light."
+  },
+  "story-of-my-life-helen-keller--28": {
+   "file": "images/posts/v1/story-of-my-life-helen-keller--28.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A child questioned by a panel of adults"
+  },
+  "strive-masiyiwa-mentoring-posts--25": {
+   "file": "images/posts/v1/strive-masiyiwa-mentoring-posts--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Women-led businesses at the heart of the market"
+  },
+  "tao-te-ching-legge--12": {
+   "file": "images/posts/v1/tao-te-ching-legge--12.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A balance where one glowing life outweighs a pile of coins"
+  },
+  "the-prince-machiavelli--18": {
+   "file": "images/posts/v1/the-prince-machiavelli--18.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Strength you build yourself stands when borrowed support falls"
+  },
+  "the-prophet-kahlil-gibran--02": {
+   "file": "images/posts/v1/the-prophet-kahlil-gibran--02.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "From a steady home base, a child sets off on a path of its own"
+  },
+  "the-prophet-kahlil-gibran--04": {
+   "file": "images/posts/v1/the-prophet-kahlil-gibran--04.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A vessel carved deep holds more light"
+  },
+  "think-and-grow-rich-hill--04": {
+   "file": "images/posts/v1/think-and-grow-rich-hill--04.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A small circle of members leaning in around one shared aim"
+  },
+  "think-and-grow-rich-hill--13": {
+   "file": "images/posts/v1/think-and-grow-rich-hill--13.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "An apprentice learns by watching a master at work"
+  },
+  "think-and-grow-rich-hill--22": {
+   "file": "images/posts/v1/think-and-grow-rich-hill--22.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Look closely before you decide"
+  },
+  "think-and-grow-rich-hill--25": {
+   "file": "images/posts/v1/think-and-grow-rich-hill--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Spend time with people who lift you"
+  },
+  "up-from-slavery-booker-t-washington--01": {
+   "file": "images/posts/v1/up-from-slavery-booker-t-washington--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Sweeping a classroom until no speck remains"
+  },
+  "up-from-slavery-booker-t-washington--19": {
+   "file": "images/posts/v1/up-from-slavery-booker-t-washington--19.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A chapter before the day's work"
+  },
+  "up-from-slavery-booker-t-washington--25": {
+   "file": "images/posts/v1/up-from-slavery-booker-t-washington--25.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Dignity that others cannot take away"
+  },
+  "up-from-slavery-booker-t-washington--29": {
+   "file": "images/posts/v1/up-from-slavery-booker-t-washington--29.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Advanced skill sits on top of a broad base of fundamentals"
+  },
+  "walden-thoreau--12": {
+   "file": "images/posts/v1/walden-thoreau--12.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Baskets made, but no reason to buy them"
+  },
+  "walden-thoreau--37": {
+   "file": "images/posts/v1/walden-thoreau--37.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "The real taste of a thing is found where it grows"
+  },
+  "walden-thoreau--39": {
+   "file": "images/posts/v1/walden-thoreau--39.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Walking out into the fields after rain, as if work were play"
+  },
+  "walden-thoreau--41": {
+   "file": "images/posts/v1/walden-thoreau--41.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "Writing down the thought before it slips away"
+  },
+  "why-we-sleep-walker--01": {
+   "file": "images/posts/v1/why-we-sleep-walker--01.jpg",
+   "width": 1080,
+   "height": 1350,
+   "alt": "A cosy bedroom at night, a neatly made bed under a window with a crescent moon, an old round alarm clock glowing softly on the nightstand."
+  }
+ }
+}
