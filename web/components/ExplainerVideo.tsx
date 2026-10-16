@@ -3,12 +3,16 @@
 import { useEffect, useRef, useState } from "react";
 import { mediaUrl } from "@/lib/config";
 import { enterFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
+import { useMediaQuery } from "@/lib/use-media-query";
 import { isListeningPlaying, videoStarted } from "@/lib/media-focus";
 import type { Card } from "@/lib/types";
 import { Icon } from "./Icon";
 
 /** After the reader presses play, how long to wait for playback before offering the fallback. */
 export const PLAY_TIMEOUT_MS = 10_000;
+
+/** Tablets and laptops play the landscape cut (when there is one), filling the card; phones keep portrait. */
+export const WIDE_QUERY = "(min-width: 768px)";
 
 /** How much of a feed video must be on screen before it starts playing by itself. */
 export const AUTOPLAY_RATIO = 0.6;
@@ -82,6 +86,7 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   // Whether a feed video was muted before it went full screen, to put back afterwards.
   const mutedBefore = useRef(true);
   const e = card.explainer;
+  const wideScreen = useMediaQuery(WIDE_QUERY);
 
   useEffect(() => {
     const v = videoRef.current;
@@ -140,7 +145,10 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
   }, [waiting]);
 
   if (!e) return null;
-  const videoSrc = mediaUrl(e.video_url);
+  // The cut that fits the screen: its file, poster and shape.
+  const cut = wideScreen && e.landscape ? e.landscape : e;
+  const wide = cut.width > cut.height;
+  const videoSrc = mediaUrl(cut.video_url);
   const seconds = Math.round(e.duration_s);
   const kind = e.kind === "film" ? "Short film" : "Animated explainer";
   const duration = seconds < 60 ? `${seconds} s` : `${Math.round(seconds / 6) / 10} min`;
@@ -237,10 +245,11 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
       data-testid="explainer"
     >
       <div
-        className={`relative mx-auto w-full max-w-[22rem] overflow-hidden rounded-card border border-film bg-film text-film-fg ${
-          feed ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""
-        }`}
-        style={feed ? { aspectRatio: `${e.width} / ${e.height}` } : undefined}
+        className={`relative mx-auto w-full overflow-hidden rounded-card border border-film bg-film text-film-fg ${
+          wide ? "" : "max-w-[22rem]"
+        } ${feed ? "max-md:h-full max-md:w-auto max-md:max-w-full" : ""}`}
+        style={feed || wide ? { aspectRatio: `${cut.width} / ${cut.height}` } : undefined}
+        data-shape={wide ? "landscape" : "portrait"}
       >
         <video
           ref={videoRef}
@@ -251,9 +260,10 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           preload="none"
           // No crossOrigin: the R2 media bucket sends no CORS headers, and a CORS request for the
           // file fails, which the browser reports as an unplayable video.
-          poster={mediaUrl(e.poster_url)}
-          width={e.width}
-          height={e.height}
+          src={videoSrc}
+          poster={mediaUrl(cut.poster_url)}
+          width={cut.width}
+          height={cut.height}
           className={`block h-auto w-full bg-film ${feed ? "max-md:h-full max-md:object-contain" : ""}`}
           aria-label={`${kind}: ${card.title}`}
           onClick={feed && started ? toggleSound : undefined}
@@ -272,7 +282,6 @@ export function ExplainerVideo({ card, feed = false }: { card: Card; feed?: bool
           onPause={() => setIsPlaying(false)}
           onVolumeChange={(ev) => setMuted(ev.currentTarget.muted)}
         >
-          <source src={videoSrc} type="video/mp4" onError={() => setFailed(true)} />
           {e.captions_url ? <track kind="captions" srcLang="en" label="English" src={mediaUrl(e.captions_url)} /> : null}
         </video>
         {feed && started && !failed ? (

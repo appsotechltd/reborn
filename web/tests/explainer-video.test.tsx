@@ -20,7 +20,7 @@ describe("explainer video", () => {
     const video = screen.getByLabelText(/animated explainer: small steps beat big plans/i) as HTMLVideoElement;
     expect(video.getAttribute("preload")).toBe("none");
     expect(video.getAttribute("poster")).toMatch(/^https?:\/\/[^/]+\/media\/explainers\/example-book--01\.jpg$/);
-    expect(container.querySelector("source")?.getAttribute("src")).toMatch(/\/media\/explainers\/example-book--01\.mp4$/);
+    expect(container.querySelector("video")?.getAttribute("src")).toMatch(/\/media\/explainers\/example-book--01\.mp4$/);
     expect(container.querySelector("track")?.getAttribute("kind")).toBe("captions");
     expect(screen.getByText(/52 s/)).toBeTruthy();
     expect(screen.queryByText(/captions on screen/)).toBeNull();
@@ -31,7 +31,7 @@ describe("explainer video", () => {
     const { container } = render(
       <CardView card={makeCard({ explainer: { ...explainer, video_url: "https://cdn.example.org/x.mp4", narrated: true } })} />,
     );
-    expect(container.querySelector("source")?.getAttribute("src")).toBe("https://cdn.example.org/x.mp4");
+    expect(container.querySelector("video")?.getAttribute("src")).toBe("https://cdn.example.org/x.mp4");
     expect(screen.queryByText(/captions on screen/)).toBeNull();
   });
 

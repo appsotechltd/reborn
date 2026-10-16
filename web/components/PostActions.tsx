@@ -123,6 +123,7 @@ export function PostActions({ post: initial, refresh = false, commentsHref, clas
         <ShareMenu
           postId={post.id}
           title={post.card.title}
+          video={post.card.explainer ? { cardId: post.card.id, explainer: post.card.explainer } : null}
           count={post.stats.shares || undefined}
           onShared={() => setPost((p) => ({ ...p, stats: { ...p.stats, shares: p.stats.shares + 1 } }))}
         />

@@ -35,6 +35,17 @@ test("timeline uses audio length when narrated and reading pace when silent", as
   assert.ok(Math.abs(cues.at(-1).end - (voiced.scenes[0].speechStart + 9)) < 0.01);
 });
 
+test("the landscape cut keeps the same timing on a 16:9 stage", async () => {
+  const card = await loadCard("aesops-fables--07");
+  const scenes = [{ type: "title", narration: "One two three four five." }, { type: "end", min_seconds: 4 }];
+  const tall = buildTimeline({ card, scenes, audio: [{ seconds: 3 }, null] });
+  const wide = buildTimeline({ card, scenes, audio: [{ seconds: 3 }, null], landscape: true });
+  assert.deepEqual([tall.width, tall.height], [540, 960]);
+  assert.deepEqual([wide.width, wide.height], [960, 540]);
+  assert.deepEqual(wide.scenes, tall.scenes);
+  assert.equal(wide.duration, tall.duration);
+});
+
 test("cards carry credit, licence and the health note for health cards", async () => {
   const health = await loadCard("nhs-breathing-exercises-for-stress--02");
   assert.equal(health.health, true);

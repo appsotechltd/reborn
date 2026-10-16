@@ -21,6 +21,7 @@ import { PostCard } from "./PostCard";
 import { BookCover } from "./Polish";
 import { ErrorNote } from "./SignInPrompt";
 import { StreakWidget } from "./StreakWidget";
+import { useMediaQuery } from "@/lib/use-media-query";
 import { SummaryPost } from "./SummaryPost";
 
 const PAGE = 10;
@@ -351,20 +352,6 @@ function SidePanel({ signedIn, ready }: { signedIn: boolean; ready: boolean }) {
       ) : null}
     </aside>
   );
-}
-
-/** True while the media query matches (false on the server and before hydration). */
-function useMediaQuery(query: string): boolean {
-  const [on, setOn] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia?.(query);
-    if (!mq) return;
-    const update = () => setOn(mq.matches);
-    update();
-    mq.addEventListener?.("change", update);
-    return () => mq.removeEventListener?.("change", update);
-  }, [query]);
-  return on;
 }
 
 const MEDIA_OPTIONS: { id: MediaFilter }[] = [{ id: "all" }, { id: "videos" }, { id: "images" }];

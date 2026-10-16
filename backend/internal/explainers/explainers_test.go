@@ -10,7 +10,8 @@ import (
 )
 
 const testManifest = `{"version":1,"explainers":{
-  "aesops-fables--07":{"video":"aesops-fables--07.mp4","poster":"aesops-fables--07.jpg","captions":"aesops-fables--07.vtt","duration_s":52.1,"width":720,"height":1280,"narrated":false,"kind":"animated"},
+  "aesops-fables--07":{"video":"aesops-fables--07.mp4","poster":"aesops-fables--07.jpg","captions":"aesops-fables--07.vtt","duration_s":52.1,"width":720,"height":1280,"narrated":false,"kind":"animated",
+    "landscape":{"video":"aesops-fables--07-wide.mp4","poster":"aesops-fables--07-wide.jpg","width":1280,"height":720}},
   "missing--01":{"video":"missing--01.mp4","poster":"missing--01.jpg"}}}`
 
 func TestLoad(t *testing.T) {
@@ -43,6 +44,16 @@ func TestLoad(t *testing.T) {
 	}
 	if got := r2["missing--01"].VideoURL; got != "https://media.example.com/explainers/missing--01.mp4" {
 		t.Fatalf("on R2 every listed video is advertised, got %q", got)
+	}
+
+	if l := e.Landscape; l != nil {
+		t.Fatalf("a landscape cut that was never uploaded is left out locally, got %+v", l)
+	}
+	if l := r2["aesops-fables--07"].Landscape; l == nil || l.VideoURL != "https://media.example.com/explainers/aesops-fables--07-wide.mp4" || l.Width != 1280 {
+		t.Fatalf("on R2 the landscape cut is advertised, got %+v", l)
+	}
+	if r2["missing--01"].Landscape != nil {
+		t.Fatal("no landscape cut, no landscape")
 	}
 
 	none, err := Load(ctx, filepath.Join(dir, "nope"), &objstore.Local{Dir: media, BaseURL: "/media"})

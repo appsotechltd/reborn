@@ -1,8 +1,10 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:http/http.dart' as http;
 import 'package:share_plus/share_plus.dart';
 
 import '../../api/api_client.dart';
@@ -18,6 +20,14 @@ abstract class Sharer {
   Future<bool> share({
     required String text,
     required String subject,
+    Rect? origin,
+  });
+
+  /// Shares the video file at [url] (saved as [fileName]) with [text].
+  Future<bool> shareVideo({
+    required Uri url,
+    required String fileName,
+    required String text,
     Rect? origin,
   });
 }
@@ -46,6 +56,30 @@ class NativeSharer implements Sharer {
     if (r.status == ShareResultStatus.unavailable) {
       throw UnsupportedError('Share unavailable');
     }
+    return r.status != ShareResultStatus.dismissed;
+  }
+
+  @override
+  Future<bool> shareVideo({
+    required Uri url,
+    required String fileName,
+    required String text,
+    Rect? origin,
+  }) async {
+    final res = await http.get(url);
+    if (res.statusCode != 200) {
+      throw http.ClientException('HTTP ${res.statusCode}', url);
+    }
+    final r = await SharePlus.instance.share(
+      ShareParams(
+        files: [
+          XFile.fromData(res.bodyBytes, mimeType: 'video/mp4', name: fileName),
+        ],
+        fileNameOverrides: [fileName],
+        text: text,
+        sharePositionOrigin: origin,
+      ),
+    );
     return r.status != ShareResultStatus.dismissed;
   }
 }
@@ -149,8 +183,85 @@ class ShareLinkButton extends ConsumerWidget {
   );
 }
 
+/// What to share of an idea with a video: its link, or the video itself in
+/// the shape that suits where it's going.
+enum ShareShape { link, tall, wide }
+
+/// Asks whether to share the link or the video (tall for Status, Reels,
+/// Shorts and TikTok; wide for YouTube, Facebook, X and LinkedIn).
+Future<ShareShape?> _pickShareShape(BuildContext context, Explainer e) =>
+    showModalBottomSheet<ShareShape>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              key: const ValueKey('share-link'),
+              leading: const Icon(Icons.link_rounded),
+              title: const Text('Share the link'),
+              subtitle: const Text('WhatsApp, Facebook, X, email and more'),
+              onTap: () => Navigator.pop(context, ShareShape.link),
+            ),
+            ListTile(
+              key: const ValueKey('share-video-tall'),
+              leading: const Icon(Icons.stay_current_portrait_rounded),
+              title: const Text('Tall video'),
+              subtitle: const Text('Status, Reels, Shorts, TikTok'),
+              onTap: () => Navigator.pop(context, ShareShape.tall),
+            ),
+            if (e.landscape != null)
+              ListTile(
+                key: const ValueKey('share-video-wide'),
+                leading: const Icon(Icons.stay_current_landscape_rounded),
+                title: const Text('Wide video'),
+                subtitle: const Text('YouTube, Facebook, X, LinkedIn'),
+                onTap: () => Navigator.pop(context, ShareShape.wide),
+              ),
+          ],
+        ),
+      ),
+    );
+
+/// Shares the card's video file in [shape], with its link as the text.
+Future<String?> _shareVideo(
+  BuildContext context,
+  WidgetRef ref,
+  IdeaCard card,
+  ShareShape shape,
+) async {
+  final e = card.explainer!.cut(wide: shape == ShareShape.wide);
+  final box = context.findRenderObject();
+  final origin = box is RenderBox && box.hasSize
+      ? box.localToGlobal(Offset.zero) & box.size
+      : null;
+  final messenger = ScaffoldMessenger.maybeOf(context);
+  messenger?.showSnackBar(const SnackBar(content: Text('Getting the video…')));
+  try {
+    final shared = await ref
+        .read(sharerProvider)
+        .shareVideo(
+          url: Uri.parse(resolveMediaUrl(e.videoUrl)),
+          fileName: 'reborn-${card.id}-${shape.name}.mp4',
+          text: postShareText(card),
+          origin: origin,
+        );
+    messenger?.hideCurrentSnackBar();
+    return shared ? 'native' : null;
+  } catch (_) {
+    messenger?.hideCurrentSnackBar();
+    messenger?.showSnackBar(
+      const SnackBar(content: Text("Couldn't get the video. Try again.")),
+    );
+    return null;
+  }
+}
+
 /// Shares [post] through the native share sheet and counts the share
-/// (channel `native`). Falls back to copying the link (`copy_link`).
+/// (channel `native`). Falls back to copying the link (`copy_link`). An idea
+/// with a video first asks whether to share the link or the video, tall or
+/// wide.
 ///
 /// [countLocally] false skips the optimistic count, for views that show no
 /// stats (the [post] is then only a card).
@@ -160,6 +271,19 @@ Future<void> sharePost(
   Post post, {
   bool countLocally = true,
 }) async {
+  final e = post.card.explainer;
+  if (e != null && !kIsWeb) {
+    final shape = await _pickShareShape(context, e);
+    if (shape == null || !context.mounted) return;
+    if (shape != ShareShape.link) {
+      final channel = await _shareVideo(context, ref, post.card, shape);
+      if (channel == null) return;
+      if (countLocally) ref.read(postStoreProvider.notifier).countShare(post);
+      unawaited(ref.read(repositoryProvider).recordShare(post.id, channel));
+      return;
+    }
+  }
+  if (!context.mounted) return;
   final channel = await _shareOrCopy(
     context,
     ref,

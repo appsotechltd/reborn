@@ -73,6 +73,16 @@
   body[data-theme] .scene svg:not(.raw) text { fill: var(--ink) !important; stroke: none !important; }
   #bgcanvas { position: absolute; inset: 0; width: 540px; height: 960px; }
 
+  /* Landscape (16:9): the picture or background fills the wide frame, and the scenes, which are
+     drawn for the 540x960 stage, are scaled into the middle so their band (y 100-710) fits
+     between the header and the credit. */
+  body[data-orient="landscape"], body[data-orient="landscape"] #stage, body[data-orient="landscape"] #bgcanvas { width: 960px; height: 540px; }
+  body[data-orient="landscape"] #scenes { width: 540px; height: 960px; inset: auto; left: 0; top: 0; transform-origin: 0 0;
+    transform: translate(291px, -8px) scale(0.7); }
+  body[data-orient="landscape"] #header { left: 32px; right: 32px; top: 20px; }
+  body[data-orient="landscape"] #health { left: 50%; right: auto; top: 18px; transform: translateX(-50%); white-space: nowrap; }
+  body[data-orient="landscape"] #footer { left: 32px; right: 32px; bottom: 16px; }
+
   /* scene helpers */
   .center { position: absolute; left: 36px; right: 36px; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }

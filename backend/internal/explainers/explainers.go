@@ -34,6 +34,16 @@ type Explainer struct {
 	Width       int     `json:"width"`
 	Height      int     `json:"height"`
 	Narrated    bool    `json:"narrated"`
+	// Landscape is the 16:9 cut of the same video, for wide screens and wide shares; absent until rendered.
+	Landscape *Cut `json:"landscape,omitempty"`
+}
+
+// Cut is another shape of the same video.
+type Cut struct {
+	VideoURL  string `json:"video_url"`
+	PosterURL string `json:"poster_url"`
+	Width     int    `json:"width"`
+	Height    int    `json:"height"`
 }
 
 // Set maps card ids to their explainer.
@@ -42,14 +52,20 @@ type Set map[string]Explainer
 type manifest struct {
 	Version    int `json:"version"`
 	Explainers map[string]struct {
-		Kind     string  `json:"kind"`
-		Video    string  `json:"video"`
-		Poster   string  `json:"poster"`
-		Captions string  `json:"captions"`
-		Duration float64 `json:"duration_s"`
-		Width    int     `json:"width"`
-		Height   int     `json:"height"`
-		Narrated bool    `json:"narrated"`
+		Kind      string  `json:"kind"`
+		Video     string  `json:"video"`
+		Poster    string  `json:"poster"`
+		Captions  string  `json:"captions"`
+		Duration  float64 `json:"duration_s"`
+		Width     int     `json:"width"`
+		Height    int     `json:"height"`
+		Narrated  bool    `json:"narrated"`
+		Landscape *struct {
+			Video  string `json:"video"`
+			Poster string `json:"poster"`
+			Width  int    `json:"width"`
+			Height int    `json:"height"`
+		} `json:"landscape"`
 	} `json:"explainers"`
 }
 
@@ -84,17 +100,24 @@ func Load(ctx context.Context, dir string, media objstore.Store) (Set, error) {
 		if e.Video == "" {
 			continue
 		}
-		if local {
-			if ok, _, err := media.Stat(ctx, Prefix+path.Base(e.Video)); err != nil || !ok {
-				continue
-			}
+		if local && !uploaded(ctx, media, e.Video) {
+			continue
 		}
 		kind := e.Kind
 		if kind == "" {
 			kind = "animated"
 		}
-		set[id] = Explainer{Kind: kind, VideoURL: url(e.Video), PosterURL: url(e.Poster), CaptionsURL: url(e.Captions),
+		x := Explainer{Kind: kind, VideoURL: url(e.Video), PosterURL: url(e.Poster), CaptionsURL: url(e.Captions),
 			DurationS: e.Duration, Width: e.Width, Height: e.Height, Narrated: e.Narrated}
+		if l := e.Landscape; l != nil && l.Video != "" && (!local || uploaded(ctx, media, l.Video)) {
+			x.Landscape = &Cut{VideoURL: url(l.Video), PosterURL: url(l.Poster), Width: l.Width, Height: l.Height}
+		}
+		set[id] = x
 	}
 	return set, nil
+}
+
+func uploaded(ctx context.Context, media objstore.Store, name string) bool {
+	ok, _, err := media.Stat(ctx, Prefix+path.Base(name))
+	return err == nil && ok
 }

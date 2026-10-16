@@ -160,6 +160,8 @@ export async function makeImage(img, { provider, providerName, cache = CACHE, st
     const saved = store && (await store.get(key));
     if (saved) { await writeFile(file, saved); return file; }
   }
+  // IMAGE_NO_GENERATE=1 (or --no-new-images) re-renders from saved images only, never paying for one.
+  if (process.env.IMAGE_NO_GENERATE === "1") throw new Error(`no saved image for "${img.prompt.slice(0, 60)}" (${key}), and new images are off`);
   const png = await p.generate(prompt);
   await writeFile(file, png);
   if (store) await store.put(key, png);

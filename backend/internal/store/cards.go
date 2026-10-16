@@ -108,6 +108,9 @@ func audioFor(id string) *cardaudio.Audio {
 	return nil
 }
 
+// ExplainerFor returns the card's explainer video, or nil.
+func ExplainerFor(id string) *explainers.Explainer { return explainerFor(id) }
+
 func explainerFor(id string) *explainers.Explainer {
 	if set := explainerSet.Load(); set != nil {
 		if e, ok := (*set)[id]; ok {

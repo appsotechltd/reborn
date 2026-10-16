@@ -50,6 +50,16 @@ export interface Explainer {
   width: number;
   height: number;
   narrated: boolean;
+  /** The same video cut for 16:9, for wide screens and wide shares. Absent until rendered. */
+  landscape?: VideoCut | null;
+}
+
+/** Another shape of an explainer video. */
+export interface VideoCut {
+  video_url: string;
+  poster_url: string;
+  width: number;
+  height: number;
 }
 
 /** The card read aloud in its book's voice (content/audio). Absent until it has been recorded. */

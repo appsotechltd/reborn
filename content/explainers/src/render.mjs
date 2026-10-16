@@ -7,6 +7,8 @@
 //   node src/render.mjs --voice george          narrate in an approved voice (src/voices.mjs); "none" renders silent
 //   node src/render.mjs --theme ember           render in a dark abstract theme (voltage, ember, aurora, swarm, depth)
 //   node src/render.mjs --sample samples/seneca-photo.json   render a style sample to out/samples/
+//   ... --no-new-images                           only use saved images; fail rather than pay for a new one
+//   node src/render.mjs --landscape             render the 16:9 cut (<id>-wide.mp4, 1280x720) for wide screens and shares
 //   ... --image-provider openai|ideogram|imagen   force one image provider (default: picked per image)
 //   ... --regenerate-images                       pay for new images instead of reusing the saved ones
 //
@@ -39,6 +41,8 @@ function args() {
     else if (a[i] === "--image-provider") opt.imageProviderName = a[++i];
     else if (a[i] === "--regenerate-images") opt.regenerateImages = true;
     else if (a[i] === "--sample") opt.sample = a[++i];
+    else if (a[i] === "--landscape") opt.landscape = true;
+    else if (a[i] === "--no-new-images") process.env.IMAGE_NO_GENERATE = "1";
     else opt.ids.push(a[i]);
   }
   return opt;
@@ -89,7 +93,7 @@ async function addScore(timeline, voiceFile, outFile, base) {
 async function renderCard(browser, cardId, opt) {
   const script = JSON.parse(await readFile(path.join(SCRIPTS, `${cardId}.json`), "utf8"));
   const card = await loadCard(script.card_id || cardId);
-  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, card.id), fps: script.fps, theme: opt.theme || script.theme,
+  const entry = await renderScenes(browser, card, script.scenes, { ...opt, voice: opt.voice ?? script.voice, label: cardId, base: path.join(OUT, opt.landscape ? `${card.id}-wide` : card.id), fps: script.fps, theme: opt.theme || script.theme,
     captionMax: script.captionMax, score: script.score });
   return entry && { ...entry, script: `scripts/${cardId}.json` };
 }
@@ -103,7 +107,8 @@ export async function renderScenes(browser, card, scenes, opt) {
   const provider = opt.provider !== undefined ? opt.provider : narrator(opt.voice);
   const audio = await narrate(provider, card.id, scenes.map((s) => s.narration || ""));
   await resolveImages(scenes, { provider: opt.imageProvider, providerName: opt.imageProviderName, regenerate: opt.regenerateImages });
-  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax }), theme: opt.theme || null };
+  const timeline = { ...buildTimeline({ card, scenes, audio, fps: opt.fps || 30, captionMax: opt.captionMax, landscape: opt.landscape }), theme: opt.theme || null };
+  const [outW, outH] = opt.landscape ? [1280, 720] : [720, 1280];
 
   const page = await browser.newPage({ viewport: { width: timeline.width, height: timeline.height }, deviceScaleFactor: timeline.scale });
   page.on("pageerror", (e) => console.error(`[${cardId}] page error:`, e.message));
@@ -138,7 +143,7 @@ export async function renderScenes(browser, card, scenes, opt) {
     "-f", "image2pipe", "-framerate", String(timeline.fps), "-c:v", "mjpeg", "-i", "-",
     ...(hasAudio ? ["-i", narrationFile, "-map", "0:v", "-map", "1:a", "-c:a", "copy"] : []),
     "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-pix_fmt", "yuv420p", "-profile:v", "high",
-    "-vf", "scale=720:1280:flags=lanczos", "-movflags", "+faststart", "-t", String(timeline.duration), `${base}.mp4`,
+    "-vf", `scale=${outW}:${outH}:flags=lanczos`, "-movflags", "+faststart", "-t", String(timeline.duration), `${base}.mp4`,
   ], true);
   const started = Date.now();
   for (let i = 0; i < frames; i++) {
@@ -162,8 +167,8 @@ export async function renderScenes(browser, card, scenes, opt) {
     video: `${path.basename(base)}.mp4`,
     poster: `${path.basename(base)}.jpg`,
     duration_s: Math.round(timeline.duration * 10) / 10,
-    width: 720,
-    height: 1280,
+    width: outW,
+    height: outH,
     narrated: Boolean(provider),
     voice: provider ? provider.voice : null,
     kind: "animated",
@@ -198,7 +203,14 @@ async function main() {
   try {
     for (const id of ids) {
       const entry = await renderCard(browser, id, opt);
-      if (entry) manifest.explainers[id] = entry;
+      if (!entry) continue;
+      if (opt.landscape) {
+        // The wide cut rides along with the card's (portrait) video.
+        if (!manifest.explainers[id]) throw new Error(`${id}: render the portrait video before its landscape cut`);
+        manifest.explainers[id].landscape = { video: entry.video, poster: entry.poster, width: entry.width, height: entry.height };
+      } else {
+        manifest.explainers[id] = { ...entry, ...(manifest.explainers[id]?.landscape ? { landscape: manifest.explainers[id].landscape } : {}) };
+      }
     }
   } finally {
     await browser.close();

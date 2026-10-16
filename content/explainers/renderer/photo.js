@@ -5,10 +5,11 @@
  */
 (function () {
   const R = window.R;
-  const W = 540, H = 960, TAU = Math.PI * 2;
+  const TAU = Math.PI * 2;
   const FADE = 0.7;
 
   function photo(tl) {
+    const W = R.bg.W, H = R.bg.H, wide = W > H;
     const shots = [];
     tl.scenes.forEach((s) => {
       if (s.params.image) shots.push({ start: s.start, image: s.params.image, zoom: s.params.zoom });
@@ -34,7 +35,9 @@
       const z = sh.zoom === "out" ? R.lerp(1.26, 1.06, e) : R.lerp(1.06, 1.24, e);
       const cover = Math.max(W / im.width, H / im.height) * z;
       const w = im.width * cover, h = im.height * cover;
-      const x = (W - w) / 2 + sh.pan * R.lerp(-14, 14, e), y = (H - h) / 2 + R.lerp(8, -10, e);
+      // A wide frame shows a band of the (portrait) still, so it tilts slowly through it instead.
+      const x = (W - w) / 2 + sh.pan * R.lerp(-14, 14, e);
+      const y = wide ? R.lerp(-0.12, 0.12, sh.pan > 0 ? e : 1 - e) * (h - H) + (H - h) / 2 : (H - h) / 2 + R.lerp(8, -10, e);
       g.globalAlpha = alpha;
       g.drawImage(im, x, y, w, h);
       g.globalAlpha = 1;

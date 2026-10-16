@@ -52,16 +52,22 @@ Cards with a rendered explainer video also carry `explainer` (absent otherwise):
   "video_url": "/media/explainers/aesops-fables--07.mp4",
   "poster_url": "/media/explainers/aesops-fables--07.jpg",
   "captions_url": "/media/explainers/aesops-fables--07.vtt",
-  "duration_s": 52.3, "width": 720, "height": 1280, "narrated": false
+  "duration_s": 52.3, "width": 720, "height": 1280, "narrated": false,
+  "landscape": { "video_url": "/media/explainers/aesops-fables--07-wide.mp4",
+    "poster_url": "/media/explainers/aesops-fables--07-wide.jpg", "width": 1280, "height": 720 }
 }
 ```
+
+The main video is portrait (9:16). `landscape`, when present, is the same video cut for 16:9: clients
+play it where the frame is wider than tall (laptops, tablets on their side, full screen there) and
+offer it for wide shares (YouTube, Facebook, X, LinkedIn); the portrait one suits phones, Status,
+Reels, Shorts and TikTok.
 
 URLs come from the media store: `MEDIA_BASE_URL/explainers/<file>` (Cloudflare R2 in production; in
 development the API serves its local `MEDIA_DIR` under `GET /media/`, with range requests). A URL
 starting with `/` is relative to the API base URL.
 Videos burn in their captions, credit and (for health cards) the health note, so they can play muted.
-The web player loads them with `crossorigin="anonymous"` (needed for the captions track), so the
-web origin must be in `CORS_ORIGINS`, as it already is for API calls.
+The web player loads them without `crossorigin`: the R2 bucket sends no CORS headers.
 `kind` is `animated` today and `film` for realistic films later. See `content/explainers/README.md`.
 
 Cards that have been voiced also carry `audio` (absent otherwise), played by the Listen button and Listen mode:
@@ -182,6 +188,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/feed` | optional | `?topics=a,b&cursor=&limit=20` | `{"cards":[Card],"next_cursor":"..."|null}`. Without `topics`, uses the signed-in user's topics, else all. Unseen cards first, shuffled daily |
 | `GET /v1/daily` | optional | | `{"date":"2026-10-10","card":Card}` |
 | `GET /v1/cards/{id}` | none | | `Card` |
+| `GET /v1/cards/{id}/video` | none | `?shape=tall\|wide` | The card's explainer as a file (`video/mp4`, `Content-Disposition: attachment`), for saving or the share sheet: `tall` is 9:16 (Status, Reels, Shorts, TikTok), `wide` the 16:9 cut (YouTube, Facebook, X, LinkedIn). 404 without a video or that cut. |
 | `GET /v1/cards` | none | `?ids=a,b,c` (max 100) | `{"cards":[Card]}` |
 | `POST /v1/cards/{id}/view` | required | | `204`. Records that the user read the card: counts toward the streak, daily goal and referral rewards, once per card. Call when a card is opened, or after a timeline post has been on screen for 8 seconds |
 | `GET /v1/sources` | none | `?topic=&q=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","video_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards. `q` matches title or author names (case-insensitive substring). `video_count` counts cards with an explainer video |

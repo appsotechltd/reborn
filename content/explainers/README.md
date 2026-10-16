@@ -1,6 +1,6 @@
 # Explainer videos
 
-Short vertical videos (9:16, about a minute) that dramatise an idea card. The API attaches
+Short vertical videos (9:16, about a minute, with a 16:9 cut for wide screens) that dramatise an idea card. The API attaches
 each video to its card as `explainer` (see `docs/API.md`), and the web and mobile card views
 play it above the card text.
 
@@ -69,6 +69,21 @@ A scene lasts as long as its line takes to say (or `min_seconds`). Scenes crossf
 | `sort` | Two circles: up to you / not | `items [{text, side: in/out}]`, `mode: focus`, `note`, `inLabel`, `outLabel` |
 | `breathe` | Guided in/out breathing | `in`, `out`, `cycles`, `lead`, `title` |
 | `grid` | Franklin's virtue chart | `rows`, `mode: scatter/focus`, `weeks`, `density` |
+
+### Landscape cut
+
+`--landscape` renders the same video at 16:9 (`out/<id>-wide.mp4` and `.jpg`, 1280x720) and records it
+as `landscape` on the card's manifest entry. Tablets and laptops play it so it fills the card, and
+it is the one offered for wide shares (YouTube, Facebook, X, LinkedIn); phones, Status, Reels,
+Shorts and TikTok keep the portrait video. The picture or background fills the wide frame (a photo
+still tilts slowly through its middle band) and the scenes, drawn for 540x960, sit scaled in the
+middle. The `swarm` and `depth` looks have no landscape layout yet. Add `--no-new-images` to re-render
+from saved images only, so a re-cut never pays for a picture.
+
+```sh
+npm run render -- --landscape --no-new-images            # every script
+npm run render -- --landscape --no-new-images aesops-fables--07
+```
 
 The page is a pure function of time (`window.__seek(t)`), so renders are repeatable. Open
 `renderer/runtime.html` in a browser and call `__setup(timeline)` to debug a scene.

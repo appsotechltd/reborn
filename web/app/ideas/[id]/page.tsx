@@ -13,7 +13,7 @@ import { StashButton } from "@/components/StashButton";
 import { Unavailable } from "@/components/Unavailable";
 import { ViewTracker } from "@/components/ViewTracker";
 import { excerpt, topicName } from "@/lib/content";
-import { SITE_NAME, siteUrl } from "@/lib/config";
+import { SITE_NAME, mediaUrl, siteUrl } from "@/lib/config";
 import { authorHref } from "@/lib/social";
 import { getCard, getPost, getSitemap, getSource, loadOr } from "@/lib/server-api";
 import { looksLikeMemberCard } from "@/lib/studio";
@@ -42,6 +42,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const authorUrls = card.author ? [`${siteUrl()}/u/${card.author.handle}`] : card.source.authors.map((name) => `${siteUrl()}${authorHref(name)}`);
   const url = `/ideas/${card.id}`;
   const oembed = `/oembed?url=${encodeURIComponent(`${siteUrl()}${url}`)}&format=json`;
+  // Link previews on Facebook, LinkedIn and X play the wide cut when there is one.
+  const e = card.explainer;
+  const cut = e ? (e.landscape ?? e) : null;
+  const videos = cut ? [{ url: mediaUrl(cut.video_url), type: "video/mp4", width: cut.width, height: cut.height }] : undefined;
   // og:image and twitter:image come from opengraph-image.tsx / twitter-image.tsx next to this page.
   return {
     title: card.title,
@@ -60,6 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       section: topicName(card.topic),
       tags: card.tags ?? undefined,
       authors: authorUrls,
+      videos,
     },
     twitter: { card: "summary_large_image", title: card.title, description },
   };

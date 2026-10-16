@@ -15,6 +15,10 @@ final videoControllerFactoryProvider =
       (_) => VideoPlayerController.networkUrl,
     );
 
+/// Screens at least this wide (logical pixels) play an explainer's landscape
+/// cut: tablets, and phones turned on their side.
+const kWideVideoWidth = 600.0;
+
 /// Plays a card's explainer video inline.
 ///
 /// On its own (the card screen) it shows the poster until the reader taps
@@ -53,6 +57,11 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   bool _wasPlaying = false;
   VideoAutoplay? _scope;
   bool _tickerOn = true;
+
+  /// Tablets and wide windows play the landscape cut (when there is one),
+  /// filling the card; phones keep portrait.
+  bool _wide = false;
+  Explainer get _cut => widget.explainer.cut(wide: _wide);
 
   /// The reader paused the active video; cleared when it stops being active.
   bool _userPaused = false;
@@ -113,6 +122,12 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     }
     // Paused when its route or tab is hidden.
     _tickerOn = TickerMode.valuesOf(context).enabled;
+    final wide = MediaQuery.sizeOf(context).width >= kWideVideoWidth;
+    if (wide != _wide) {
+      final was = _cut.videoUrl;
+      _wide = wide;
+      if (_cut.videoUrl != was && !_fullScreen) _reset();
+    }
     _scheduleSync();
   }
 
@@ -125,7 +140,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
       final now = widget.autoplayId;
       if (now != null) _scope?.attach(now, context);
     }
-    if (old.explainer.videoUrl != widget.explainer.videoUrl) _reset();
+    if (old.explainer.cut(wide: _wide).videoUrl != _cut.videoUrl) _reset();
     _scheduleSync();
   }
 
@@ -190,7 +205,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   Future<void> _start() async {
     if (!_autoplay) _pauseListening();
     final c = ref.read(videoControllerFactoryProvider)(
-      Uri.parse(resolveMediaUrl(widget.explainer.videoUrl)),
+      Uri.parse(resolveMediaUrl(_cut.videoUrl)),
     );
     setState(() {
       _controller = c;
@@ -288,7 +303,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final e = widget.explainer;
+    final e = _cut;
     final c = _controller;
     final ready = c != null && c.value.isInitialized;
     final seconds = e.durationS.round();
