@@ -26,6 +26,10 @@ export const TOPICS: { slug: string; name: string }[] = [
   { slug: "study-smarter", name: "Study Smarter" },
   { slug: "skills-mastery", name: "Skills & Mastery" },
   { slug: "etiquette", name: "Etiquette & Manners" },
+  { slug: "mental-health", name: "Mental Health" },
+  { slug: "ai-skills", name: "AI & Future Skills" },
+  { slug: "science", name: "Science & Nature" },
+  { slug: "crime-society", name: "Crime & Society" },
   { slug: "life-guides", name: "Life Guides" },
 ];
 

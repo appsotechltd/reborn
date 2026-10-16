@@ -1,0 +1,308 @@
+{
+  "source": {
+    "id": "guide-live-well-with-adhd",
+    "title": "Live Well with ADHD",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/conditions/adhd-adults/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide in our own words, drawing on the NHS, the US National Institute of Mental Health, NICE and CHADD.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-16",
+    "notes": "Written by Reborn in our own words; no text copied. References: NHS, ADHD in adults, https://www.nhs.uk/conditions/adhd-adults/; National Institute of Mental Health, ADHD in Adults: 4 Things to Know, https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know; National Institute of Mental Health, Attention-Deficit/Hyperactivity Disorder, https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd; NICE, Attention deficit hyperactivity disorder: diagnosis and management (NG87), https://www.nice.org.uk/guidance/ng87; CHADD, Overview (for adults), https://chadd.org/for-adults/overview/"
+  },
+  "cards": [
+    {
+      "id": "guide-live-well-with-adhd--01",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "adults",
+        "mindset"
+      ],
+      "title": "ADHD is a different brain wiring, and adults can thrive with it",
+      "body": "Attention deficit hyperactivity disorder, or ADHD, is a lifelong difference in how the brain manages attention, activity and impulses. It usually starts in childhood, but many adults only discover it in their twenties, thirties or later, often after years of feeling that ordinary tasks cost them more effort than everyone else.\n\nADHD is not a lack of intelligence or effort. It mainly affects the brain's management system: starting tasks, holding plans in mind, judging time and steadying emotions. That is why someone can focus for hours on a project they love yet struggle to post a letter.\n\nThe hopeful part is that ADHD is well understood and very manageable. With the right mix of support, tools and self-understanding, adults with ADHD build full careers, relationships and lives. This guide shows you how, one practical step at a time.",
+      "apply_it": "Write down three everyday tasks that feel much harder for you than they seem for others.",
+      "quiz": {
+        "question": "Which description of ADHD is most accurate?",
+        "options": [
+          "A lack of intelligence or willpower",
+          "A lifelong difference in how the brain manages attention and impulses",
+          "A phase that always ends in the teenage years",
+          "A label for people who are simply disorganised"
+        ],
+        "answer": 1,
+        "explanation": "ADHD is a neurodevelopmental difference affecting attention, activity and impulse control. It often continues into adulthood and responds well to support."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--02",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "myths",
+        "stigma"
+      ],
+      "title": "Common myths about ADHD keep many adults from getting help",
+      "body": "Myths about ADHD stop people seeking help, so it is worth clearing them away.\n\nMyth one: only children have it. In fact symptoms often carry on into adult life, though hyperactivity may turn into inner restlessness rather than running around.\n\nMyth two: it is caused by bad parenting, too much sugar or screens. Research points mainly to genes, as ADHD often runs in families, along with factors such as being born early.\n\nMyth three: it is mostly boys who are hyperactive. Many people, especially women and girls, have the quieter inattentive type, which is easier to miss and often gets mistaken for daydreaming or anxiety.\n\nMyth four: everyone is a bit ADHD. Everyone gets distracted sometimes, but ADHD means the problems are persistent, started early and genuinely interfere with daily life.",
+      "apply_it": "Notice one belief about ADHD you have held, and ask yourself where you first heard it.",
+      "quiz": {
+        "question": "Why is ADHD often missed in women and girls?",
+        "options": [
+          "They cannot have ADHD",
+          "Their symptoms always vanish by age ten",
+          "They more often have quieter inattentive symptoms that are easier to overlook",
+          "Doctors are not allowed to assess them"
+        ],
+        "answer": 2,
+        "explanation": "Inattentive symptoms such as drifting focus are less visible than hyperactivity, so women and girls are more often missed or misdiagnosed."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--03",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "symptoms",
+        "signs"
+      ],
+      "title": "Adult ADHD often looks like lost keys, late starts and racing thoughts",
+      "body": "ADHD has three broad groups of signs: inattention, hyperactivity and impulsivity. Most people have a mix, though some mainly have one type.\n\nInattention in adults can look like losing your phone or keys daily, missing details, drifting off in conversations, starting many projects and finishing few, or leaving important tasks until the last panicked minute.\n\nHyperactivity often becomes restlessness: fidgeting, feeling uncomfortable sitting through meetings, talking a lot or a mind that never switches off. Impulsivity can mean interrupting, blurting things out, spending on a whim or making quick decisions you later regret.\n\nMany adults also notice strong emotions that flare quickly, and periods of intense focus on things they find interesting. For it to be ADHD, these patterns usually began before about age 12 and cause real problems in more than one area of life.",
+      "apply_it": "Ask someone who knew you as a child whether they remember you being restless, dreamy or forgetful.",
+      "quiz": {
+        "question": "For a diagnosis, ADHD signs usually need to have started when?",
+        "options": [
+          "In childhood, before about age 12",
+          "Only after age 40",
+          "In the last few weeks",
+          "After a stressful event at work"
+        ],
+        "answer": 0,
+        "explanation": "ADHD is a developmental condition, so assessors look for signs that began in childhood and affect more than one area of life."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--04",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "diagnosis",
+        "assessment"
+      ],
+      "title": "A proper assessment starts with your doctor and a clear history",
+      "body": "If ADHD-like problems are affecting your work, studies or relationships, the first step is usually your GP or family doctor. They will ask about your symptoms and may check for other things that can look similar, such as anxiety, depression, sleep problems, thyroid issues or autism. ADHD also often comes alongside these conditions.\n\nIf ADHD seems likely, you may be referred to a specialist, such as a psychiatrist. A full assessment looks at your childhood, school reports if you have them, work, relationships and health. The specialist may ask to speak with a parent, partner or close friend.\n\nWaiting lists can be long in some places. Online quizzes can prompt a conversation but cannot diagnose you, and be cautious of services that promise a quick diagnosis with little detail. Meanwhile, the self-help tools in this guide are useful whatever the outcome.",
+      "apply_it": "Jot down examples of your difficulties at work, home and in childhood to take to a doctor's appointment.",
+      "quiz": {
+        "question": "What is the role of online ADHD quizzes?",
+        "options": [
+          "They give an official diagnosis",
+          "They replace the need to see a doctor",
+          "They can prompt a conversation but cannot diagnose you",
+          "They decide which medicine you need"
+        ],
+        "answer": 2,
+        "explanation": "Only a qualified professional can diagnose ADHD, after a full history that rules out other causes. A quiz is just a starting point."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--05",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "treatment",
+        "medication"
+      ],
+      "title": "Treatment usually blends medicine, talking therapy and practical support",
+      "body": "There is no single cure for ADHD, but there are good treatments, and many people use a combination.\n\nMedicine helps a lot of adults. The main types are stimulants, such as methylphenidate or lisdexamfetamine, and non-stimulants, such as atomoxetine. They can improve focus and calm impulsivity. They are started and monitored by a specialist, because finding the right medicine and dose takes time, and side effects such as poor appetite, poor sleep or raised heart rate need checking.\n\nTalking therapy, especially cognitive behavioural therapy adapted for ADHD, teaches skills for planning, managing time and handling difficult emotions. ADHD coaching focuses on practical goals and accountability, though coaching quality varies, so look for experience with ADHD.\n\nNot everyone needs or wants medicine. The best plan is one you make with a professional, based on your life and preferences.",
+      "apply_it": "Write down your top three goals for treatment, such as finishing tasks or calmer mornings, to discuss with a professional.",
+      "quiz": {
+        "question": "Why does ADHD medicine need specialist monitoring?",
+        "options": [
+          "It never has any side effects",
+          "Finding the right type and dose takes time, and side effects need checking",
+          "It works the same for everyone straight away",
+          "It can only be taken for one week"
+        ],
+        "answer": 1,
+        "explanation": "People respond differently, so doses are adjusted gradually while checking effects such as appetite, sleep, blood pressure and heart rate."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--06",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "organisation",
+        "systems"
+      ],
+      "title": "Get plans out of your head and into systems you can see",
+      "body": "ADHD makes it hard to hold plans in working memory, so the most powerful habit is to stop relying on memory at all. Put things outside your head, where you can see them.\n\nUse one capture place for everything, such as a notebook or a single app, and write tasks down the moment they appear. Keep a short daily list of no more than three must-do items. Set phone reminders for appointments, with an alarm well before you need to leave.\n\nMake things visible. Put your keys, wallet and bag in a bowl by the door. Leave the gym bag where you will trip over it. Use clear boxes and labelled shelves so you can see what you own.\n\nKeep systems simple. A clever system you abandon after a week is worse than a basic one you actually use.",
+      "apply_it": "Choose one capture place today and put a key bowl or tray by your front door.",
+      "quiz": {
+        "question": "Why are external systems so helpful with ADHD?",
+        "options": [
+          "They take the load off working memory, which ADHD makes unreliable",
+          "They make ADHD go away completely",
+          "They only work if they are very complicated",
+          "They are a replacement for sleep"
+        ],
+        "answer": 0,
+        "explanation": "ADHD affects working memory. Writing things down and making them visible means you do not have to remember everything."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--07",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "focus",
+        "body-doubling"
+      ],
+      "title": "Working alongside another person can make starting tasks easier",
+      "body": "Body doubling means doing a task while someone else is present. They do not need to help. They might work on their own laptop, read a book, or join you on a video call. Many people with ADHD find that this quiet company makes it much easier to start and keep going.\n\nResearch on body doubling is still limited, but it fits what we know: a little gentle accountability and a shared rhythm help the brain stay on track. It is also a lot less lonely.\n\nTry folding laundry while a friend chats on the phone, joining a library or café study session, or booking a regular co-working hour with a colleague. Online focus rooms, where strangers work together quietly on camera, are another option. Say what you plan to do at the start, then check in at the end.",
+      "apply_it": "Ask a friend or colleague to sit with you for 30 minutes while you each tackle one task.",
+      "quiz": {
+        "question": "What does a body double need to do?",
+        "options": [
+          "Do the task for you",
+          "Constantly remind you to work",
+          "Be present, often doing their own work",
+          "Be a trained therapist"
+        ],
+        "answer": 2,
+        "explanation": "A body double simply works alongside you. Their presence provides gentle structure and accountability, not direct help."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--08",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "time",
+        "planning"
+      ],
+      "title": "Make time visible to tackle time blindness",
+      "body": "Many adults with ADHD describe time blindness: time feels like only two settings, now and not now. Deadlines feel unreal until they are urgent, and 'five minutes' quietly becomes forty.\n\nThe fix is to make time something you can see and feel. Use an analogue clock or a visual timer that shows time shrinking. Set alarms not just for the event but for when to start getting ready.\n\nEstimate how long tasks take, then time them. Most people with ADHD underestimate, so a useful rule is to add half again to your guess. Break big jobs into small steps with mini deadlines, and put each step in your calendar.\n\nShort work sprints help too. Work for 20 or 25 minutes, take a five-minute break, then repeat. Ending a session on purpose is easier than hoping you will notice the time.",
+      "apply_it": "Time one routine task today, such as getting ready, and compare it with your guess.",
+      "quiz": {
+        "question": "What is a practical tip for time blindness?",
+        "options": [
+          "Never use clocks or alarms",
+          "Assume tasks take less time than you think",
+          "Rely on remembering deadlines",
+          "Use visual timers and add extra time to your estimates"
+        ],
+        "answer": 3,
+        "explanation": "Visual timers make time concrete, and adding extra time corrects the common habit of underestimating how long tasks take."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--09",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "emotions",
+        "rejection"
+      ],
+      "title": "Strong emotions and sensitivity to rejection are common, and manageable",
+      "body": "ADHD is not only about attention. Many adults feel emotions quickly and intensely: frustration flares, excitement soars, and small setbacks can feel crushing. Some describe a painful sensitivity to criticism or rejection, real or imagined. This is sometimes called rejection sensitive dysphoria. It is not a formal diagnosis, but the experience is widely reported.\n\nYou can learn to ride these waves. First, name the feeling: 'I am feeling rejected.' Naming creates a pause. Second, check the story: is there another explanation for that short email? Third, delay big reactions. Wait an hour before replying when you are upset.\n\nLook after the basics too, because hunger, tiredness and stress turn the volume up. Therapy, especially approaches like CBT, can help, and some people find their medicine steadies emotions as well.",
+      "apply_it": "Next time you feel stung by a comment, write down two other possible explanations before you react.",
+      "quiz": {
+        "question": "What is a helpful first step when an emotion flares?",
+        "options": [
+          "Name the feeling to create a pause",
+          "Reply straight away while it is fresh",
+          "Ignore it and hope it disappears",
+          "Assume the worst explanation is true"
+        ],
+        "answer": 0,
+        "explanation": "Naming the emotion engages the thinking brain and buys time, so you can check the story before acting on it."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--10",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "sleep",
+        "exercise"
+      ],
+      "title": "Sleep, movement and regular meals give your brain a steadier base",
+      "body": "Lifestyle will not cure ADHD, but it makes a real difference to how well you cope.\n\nSleep problems are very common with ADHD. A racing mind and late-night hyperfocus push bedtimes later, and poor sleep worsens focus and mood the next day. Try a regular wake time, an alarm to start winding down, and keeping phones out of the bedroom.\n\nExercise is one of the best-supported self-help tools. Activity boosts brain chemicals involved in attention and mood, and many people focus better for a few hours after it. A brisk walk before work counts.\n\nEat regular meals with some protein, because forgetting to eat until you are starving makes emotions and focus harder. Go easy on alcohol and caffeine, and be honest with yourself if you use substances to cope, since this is more common with ADHD.",
+      "apply_it": "Set a phone alarm 45 minutes before your target bedtime as a cue to start winding down.",
+      "quiz": {
+        "question": "Why is exercise useful for people with ADHD?",
+        "options": [
+          "It replaces all other treatment",
+          "It can boost focus and mood for a while afterwards",
+          "It only helps if done for three hours",
+          "It makes sleep worse"
+        ],
+        "answer": 1,
+        "explanation": "Physical activity raises brain chemicals linked to attention and mood, and many people notice better focus after moving."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--11",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "work",
+        "relationships"
+      ],
+      "title": "Explain your needs at work and home so others can help",
+      "body": "ADHD affects the people around you too, and a little openness goes a long way.\n\nAt work, think about what helps you do your best: written instructions after meetings, noise-cancelling headphones, a quieter desk, regular check-ins, or breaking big projects into stages. In many countries, including the UK and US, employers must consider reasonable adjustments for people with a disability, which can include ADHD. You can ask for changes without sharing every detail.\n\nAt home, misunderstandings often come from forgetting or interrupting, which a partner may read as not caring. Explain how ADHD works for you, and agree on shared systems, such as a family calendar or a weekly planning chat. Play to strengths, too: many people with ADHD bring energy, creativity and quick thinking.\n\nSupport groups, online or local, help you learn from others who truly get it.",
+      "apply_it": "Write one sentence about what helps you work best, ready to share with a manager or partner.",
+      "quiz": {
+        "question": "Why can ADHD cause friction in relationships?",
+        "options": [
+          "People with ADHD do not care about others",
+          "Partners always know exactly what ADHD is",
+          "Forgetting or interrupting can be misread as not caring",
+          "It only affects work, never home"
+        ],
+        "answer": 2,
+        "explanation": "Behaviours like forgetting plans can look like indifference. Explaining ADHD and sharing systems helps both people."
+      },
+      "health": true
+    },
+    {
+      "id": "guide-live-well-with-adhd--12",
+      "topic": "mental-health",
+      "tags": [
+        "adhd",
+        "getting-help",
+        "crisis"
+      ],
+      "title": "Know when to see a doctor, and get urgent help if you are in crisis",
+      "body": "See a doctor if ADHD-like problems are causing real trouble with work, money, driving, studies or relationships, or if self-help is not enough. Go back to your prescriber if medicine causes side effects such as chest pain, a racing heart, low mood or poor sleep.\n\nADHD often comes with other conditions, such as anxiety, depression or substance use, and these deserve treatment in their own right. Talk to a professional if you feel low for more than two weeks, or are drinking or using drugs to cope.\n\nIf you ever have thoughts of harming yourself or feel unable to stay safe, get help now. Call your local emergency number, contact a crisis line such as 988 in the US or Samaritans on 116 123 in the UK, or go to the nearest emergency department.",
+      "apply_it": "Save your doctor's number and a crisis line in your phone today.",
+      "quiz": {
+        "question": "When should you get urgent help?",
+        "options": [
+          "When you lose your keys again",
+          "When a task takes longer than planned",
+          "Only after a full ADHD assessment",
+          "When you have thoughts of harming yourself or feel unable to stay safe"
+        ],
+        "answer": 3,
+        "explanation": "Thoughts of self-harm are an emergency. Contact emergency services, a crisis line, or go to an emergency department straight away."
+      },
+      "health": true
+    }
+  ]
+}
