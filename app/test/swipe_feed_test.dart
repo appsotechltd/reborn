@@ -465,6 +465,86 @@ void main() {
     expect(videos.byId['v1']!.value.isPlaying, isFalse);
   });
 
+  Map<String, dynamic> withWide(String id) => {
+    ...video(id),
+    'landscape': {
+      'video_url': '/media/$id-wide.mp4',
+      'poster_url': '/media/$id-wide.jpg',
+      'width': 1280,
+      'height': 720,
+    },
+  };
+
+  testWidgets('wide screens play the landscape cut; phones keep portrait', (
+    tester,
+  ) async {
+    final videos = Videos();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([post('v1', explainer: withWide('v1'))]),
+      );
+    await pumpApp(
+      tester,
+      server,
+      size: const Size(1000, 1300),
+      overrides: [videos.override],
+    );
+    expect(videos.byId.keys, ['v1-wide']);
+    expect(videos.byId['v1-wide']!.value.isPlaying, isTrue);
+
+    final phoneVideos = Videos();
+    await pumpApp(
+      tester,
+      server,
+      size: phone,
+      overrides: [phoneVideos.override],
+    );
+    expect(phoneVideos.byId.keys, ['v1']);
+  });
+
+  testWidgets('sharing a video post offers the link, the tall and the wide '
+      'video', (tester) async {
+    final videos = Videos();
+    final sharer = FakeSharer();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([post('v1', explainer: withWide('v1'))]),
+      )
+      ..on('POST /v1/posts/v1/share', (_) => const Reply.empty());
+    await pumpApp(
+      tester,
+      server,
+      size: phone,
+      sharer: sharer,
+      overrides: [videos.override],
+    );
+    await tester.tap(find.byKey(const ValueKey('post-share')).first);
+    await tester.pumpAndSettle();
+    expect(find.text('Status, Reels, Shorts, TikTok'), findsOneWidget);
+    expect(find.text('YouTube, Facebook, X, LinkedIn'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('share-video-wide')));
+    await tester.pumpAndSettle();
+    expect(sharer.videos.single.path, '/media/v1-wide.mp4');
+    expect(server.called('POST /v1/posts/v1/share').single.body, {
+      'channel': 'native',
+    });
+
+    await tester.tap(find.byKey(const ValueKey('post-share')).first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('share-video-tall')));
+    await tester.pumpAndSettle();
+    expect(sharer.videos.last.path, '/media/v1.mp4');
+
+    await tester.tap(find.byKey(const ValueKey('post-share')).first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('share-link')));
+    await tester.pumpAndSettle();
+    expect(sharer.shared.last, contains('/ideas/v1'));
+    expect(sharer.videos, hasLength(2));
+  });
+
   testWidgets('the current post counts as read after 8 seconds', (
     tester,
   ) async {

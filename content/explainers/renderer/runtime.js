@@ -17,6 +17,7 @@
     timeline = tl;
     const card = tl.card;
     if (tl.theme) document.body.dataset.theme = tl.theme; else delete document.body.dataset.theme;
+    document.body.dataset.orient = tl.width > tl.height ? "landscape" : "portrait";
     R.bg.setup(el("bgcanvas"), tl.theme, [...tl.scenes.slice(1).map((s) => s.start), ...tl.scenes.flatMap((s) => (s.beats || []).map((b) => b.start))], tl.scale || 2, tl);
     el("topic").textContent = card.topicName;
     el("health").hidden = !card.health;

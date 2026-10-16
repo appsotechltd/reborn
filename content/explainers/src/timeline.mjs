@@ -31,7 +31,7 @@ export function phrases(text, max = 9) {
  * scenes: [{ type, narration, params, min_seconds }]
  * audio:  per scene { seconds } | null (null = estimate from word count)
  */
-export function buildTimeline({ card, scenes, audio, fps = 30, captionMax = 9 }) {
+export function buildTimeline({ card, scenes, audio, fps = 30, captionMax = 9, landscape = false }) {
   let t = 0;
   const laid = scenes.map((s, i) => {
     const words = wordCount(s.narration);
@@ -63,7 +63,8 @@ export function buildTimeline({ card, scenes, audio, fps = 30, captionMax = 9 })
     return { type: s.type, cut: Boolean(s.cut), params: s.params || {}, narration: s.narration || "", start: round(start), duration: round(duration),
       speechStart: round(start + LEAD_IN), captions, beats };
   });
-  return { fps, width: 540, height: 960, scale: 2, card, scenes: laid, duration: round(t) };
+  // Laid out at half size and captured at 2x: 1080x1920, or 1920x1080 for a landscape cut.
+  return { fps, width: landscape ? 960 : 540, height: landscape ? 540 : 960, scale: 2, card, scenes: laid, duration: round(t) };
 }
 
 const round = (v) => Math.round(v * 1000) / 1000;

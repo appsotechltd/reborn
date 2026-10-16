@@ -89,6 +89,7 @@ class Explainer {
     this.width = 720,
     this.height = 1280,
     this.narrated = false,
+    this.landscape,
   });
 
   /// `animated` today, `film` for realistic films later.
@@ -103,7 +104,26 @@ class Explainer {
   final int height;
   final bool narrated;
 
+  /// The same video cut for 16:9, for wide screens and wide shares; null
+  /// until it is rendered.
+  final VideoCut? landscape;
+
   double get aspectRatio => height == 0 ? 9 / 16 : width / height;
+
+  /// The cut to play: the landscape one on a [wide] screen when there is one.
+  Explainer cut({required bool wide}) {
+    final l = landscape;
+    if (!wide || l == null) return this;
+    return Explainer(
+      kind: kind,
+      videoUrl: l.videoUrl,
+      posterUrl: l.posterUrl,
+      durationS: durationS,
+      width: l.width,
+      height: l.height,
+      narrated: narrated,
+    );
+  }
 
   factory Explainer.fromJson(Map<String, dynamic> json) => Explainer(
     kind: json['kind'] as String? ?? 'animated',
@@ -114,6 +134,9 @@ class Explainer {
     width: (json['width'] as num?)?.toInt() ?? 720,
     height: (json['height'] as num?)?.toInt() ?? 1280,
     narrated: json['narrated'] as bool? ?? false,
+    landscape: json['landscape'] is Map<String, dynamic>
+        ? VideoCut.fromJson(json['landscape'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -125,6 +148,36 @@ class Explainer {
     'width': width,
     'height': height,
     'narrated': narrated,
+    if (landscape != null) 'landscape': landscape!.toJson(),
+  };
+}
+
+/// Another shape of an explainer video (the 16:9 cut).
+class VideoCut {
+  const VideoCut({
+    required this.videoUrl,
+    required this.posterUrl,
+    this.width = 1280,
+    this.height = 720,
+  });
+
+  final String videoUrl;
+  final String posterUrl;
+  final int width;
+  final int height;
+
+  factory VideoCut.fromJson(Map<String, dynamic> json) => VideoCut(
+    videoUrl: json['video_url'] as String? ?? '',
+    posterUrl: json['poster_url'] as String? ?? '',
+    width: (json['width'] as num?)?.toInt() ?? 1280,
+    height: (json['height'] as num?)?.toInt() ?? 720,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'video_url': videoUrl,
+    'poster_url': posterUrl,
+    'width': width,
+    'height': height,
   };
 }
 

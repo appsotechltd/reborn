@@ -317,7 +317,7 @@ describe("explainer video that can't play", () => {
     const load = vi.spyOn(HTMLMediaElement.prototype, "load").mockImplementation(() => {});
     const { container } = render(<CardView card={makeCard({ explainer })} />);
     fireEvent.click(playButton());
-    fireEvent.error(container.querySelector("source")!);
+    fireEvent.error(container.querySelector("video")!);
     const alert = await screen.findByRole("alert");
     expect(within(alert).getByText("This video can't play here")).toBeTruthy();
     expect(within(alert).getByRole("link", { name: "Open the video" }).getAttribute("href")).toMatch(/example-book--01\.mp4$/);

@@ -7,7 +7,8 @@
  */
 (function () {
   const R = window.R;
-  const W = 540, H = 960;
+  // The stage size: 540x960 (portrait) or 960x540 (landscape), set by R.bg.setup.
+  let W = 540, H = 960;
   const TAU = Math.PI * 2;
 
   const pick = (seed) => { const r = R.rng(seed); r(); return r; };
@@ -236,10 +237,17 @@
 
   R.bg = {
     themes: Object.keys(painters),
+    W: 540,
+    H: 960,
+    // Looks that lay themselves out for any stage size (the others assume 540x960).
+    landscape: new Set(["voltage", "ember", "aurora", "photo"]),
     register(name, factory) { painters[name] = factory; R.bg.themes = Object.keys(painters); },
     setup(canvas, theme, sceneStarts, scale, tl) {
       draw = null;
       R.bg.ready = Promise.resolve();
+      W = R.bg.W = tl?.width || 540;
+      H = R.bg.H = tl?.height || 960;
+      if (W > H && painters[theme] && !R.bg.landscape.has(theme)) throw new Error(`the ${theme} look has no landscape layout yet`);
       canvas.hidden = !painters[theme];
       if (!painters[theme]) return;
       canvas.width = W * scale; canvas.height = H * scale;

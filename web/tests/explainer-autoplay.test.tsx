@@ -206,6 +206,30 @@ describe("feed video autoplay", () => {
     expect(enter).toHaveBeenCalled();
   });
 
+  it("plays the landscape cut, filling the card, on tablets and laptops; phones keep portrait", async () => {
+    const landscape = {
+      video_url: "/media/explainers/example-book--01-wide.mp4",
+      poster_url: "/media/explainers/example-book--01-wide.jpg",
+      width: 1280,
+      height: 720,
+    };
+    const wideCard = makeCard({ id: "example-book--01", title: "Idea 1", explainer: { ...explainer, landscape } });
+    const { unmount } = render(<CardView card={wideCard} feed />);
+    expect(videoOf(1).getAttribute("src")).toContain("example-book--01.mp4");
+    expect(screen.getByTestId("explainer").querySelector("[data-shape]")?.getAttribute("data-shape")).toBe("portrait");
+    unmount();
+
+    stubMatchMedia({ "min-width: 768px": true });
+    render(<CardView card={wideCard} feed />);
+    await flush();
+    const v = videoOf(1);
+    expect(v.getAttribute("src")).toContain("example-book--01-wide.mp4");
+    expect(v.getAttribute("poster")).toContain("example-book--01-wide.jpg");
+    const frame = screen.getByTestId("explainer").querySelector("[data-shape]") as HTMLElement;
+    expect(frame.dataset.shape).toBe("landscape");
+    expect(frame.className).not.toContain("max-w-[22rem]");
+  });
+
   it("loads the file without a CORS request (the media bucket sends no CORS headers)", () => {
     render(<CardView card={card(1)} />);
     expect(videoOf(1).hasAttribute("crossorigin")).toBe(false);

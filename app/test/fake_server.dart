@@ -92,6 +92,20 @@ class FakeSharer implements Sharer {
     shared.add(text);
     return result;
   }
+
+  final videos = <Uri>[];
+
+  @override
+  Future<bool> shareVideo({
+    required Uri url,
+    required String fileName,
+    required String text,
+    Rect? origin,
+  }) async {
+    videos.add(url);
+    shared.add(text);
+    return result;
+  }
 }
 
 /// Pumps the whole app against [server], starting at [location].

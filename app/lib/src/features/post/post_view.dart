@@ -1102,7 +1102,7 @@ class _CountButton extends StatelessWidget {
         style: TextButton.styleFrom(
           foregroundColor:
               color ?? Theme.of(context).colorScheme.onSurfaceVariant,
-          padding: EdgeInsets.symmetric(horizontal: count > 0 ? 10 : 8),
+          padding: EdgeInsets.symmetric(horizontal: count > 0 ? 9 : 8),
           minimumSize: const Size(44, 44),
         ),
         icon: Icon(icon, size: 22),

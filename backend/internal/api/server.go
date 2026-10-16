@@ -62,6 +62,15 @@ type Server struct {
 	// Media stores videos, images and other files: R2 in production, a local
 	// folder in development, which the API then serves under /media/.
 	Media objstore.Store
+	// MediaClient fetches media files the API passes on (card videos to share); nil uses the default.
+	MediaClient *http.Client
+}
+
+func (s *Server) mediaClient() *http.Client {
+	if s.MediaClient != nil {
+		return s.MediaClient
+	}
+	return http.DefaultClient
 }
 
 // Handler returns the routed, middleware-wrapped handler.
@@ -81,6 +90,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /v1/cards", s.cardsByIDs)
 	mux.HandleFunc("GET /v1/cards/{id}", s.card)
 	mux.HandleFunc("POST /v1/cards/{id}/view", s.authed(s.view))
+	mux.HandleFunc("GET /v1/cards/{id}/video", s.cardVideo)
 	mux.HandleFunc("GET /v1/sources", s.sources)
 	mux.HandleFunc("GET /v1/sources/{id}", s.source)
 	mux.HandleFunc("GET /v1/sitemap", s.sitemap)
