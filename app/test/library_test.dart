@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:reborn/src/api/api_client.dart';
+import 'package:reborn/src/api/models.dart';
+import 'package:reborn/src/features/library/card_collection.dart';
+import 'package:reborn/src/features/library/library_controller.dart';
 import 'package:reborn/src/features/library/library_screen.dart';
 import 'package:reborn/src/features/listen/listen_audio.dart';
 import 'package:reborn/src/features/listen/listen_controller.dart';
@@ -35,7 +38,11 @@ Map<String, dynamic> author(String name, {int videos = 0}) => {
   'followers': 1,
 };
 
-Map<String, dynamic> card(String id, {bool withVideo = false}) => cardJsonWith({
+Map<String, dynamic> card(
+  String id, {
+  bool withVideo = false,
+  bool withImage = false,
+}) => cardJsonWith({
   'id': id,
   'title': 'Idea $id',
   'quote': null,
@@ -51,6 +58,12 @@ Map<String, dynamic> card(String id, {bool withVideo = false}) => cardJsonWith({
       'video_url': '/media/$id.mp4',
       'poster_url': '/media/$id.jpg',
       'duration_s': 42,
+    },
+  if (withImage)
+    'image': {
+      'url': 'https://media.example.com/$id.webp',
+      'type': 'illustration',
+      'caption': 'A picture',
     },
 });
 
@@ -340,6 +353,62 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Idea m--01'), findsOneWidget);
       expect(tester.takeException(), isNull);
+    });
+
+    testWidgets('Images keeps the cards with a picture; Videos is hidden '
+        'when none has a video', (tester) async {
+      final server = FakeServer()
+        ..on(
+          'GET /v1/sources/$sourceId',
+          (_) => sourceDetail([
+            card('m--01', withImage: true),
+            card('m--02'),
+            card('m--03', withImage: true),
+          ]),
+        )
+        ..on('GET /v1/circles', (_) => {'circles': []});
+      final container = await pumpApp(
+        tester,
+        server,
+        size: phone,
+        location: '/sources/$sourceId',
+      );
+      expect(find.text('All 3'), findsOneWidget);
+      expect(find.byKey(const ValueKey('cards-filter-videos')), findsNothing);
+      expect(find.text('Images 2'), findsOneWidget);
+
+      await tester.tap(find.text('Images 2'));
+      await tester.pumpAndSettle();
+      expect(find.text('Idea m--01'), findsOneWidget);
+      expect(find.text('Idea m--02'), findsNothing);
+      expect(find.text('Idea m--03'), findsOneWidget);
+      expect(
+        container.read(cardsFilterProvider('source:$sourceId')),
+        MediaFilter.images,
+      );
+      expect(tester.takeException(), isNull);
+    });
+
+    test('Listen keys name the list shown', () {
+      expect(collectionListenKey('source:x', MediaFilter.all), 'source:x|all');
+      expect(
+        collectionListenKey('source:x', MediaFilter.videos),
+        'source:x|videos',
+      );
+      expect(
+        collectionListenKey('author:Ada', MediaFilter.images),
+        'author:Ada|images',
+      );
+      final cards = [
+        IdeaCard.fromJson(card('a', withVideo: true)),
+        IdeaCard.fromJson(card('b', withImage: true)),
+        IdeaCard.fromJson(card('c')),
+      ];
+      expect(visibleCards(cards, MediaFilter.videos).map((c) => c.id), ['a']);
+      expect(visibleCards(cards, MediaFilter.images).map((c) => c.id), ['b']);
+      expect(visibleCards(cards, MediaFilter.all), hasLength(3));
+      // A filter none of the cards matches falls back to All.
+      expect(collectionFilter([cards[2]], MediaFilter.videos), MediaFilter.all);
     });
 
     testWidgets('the switch is hidden when no card has a video', (

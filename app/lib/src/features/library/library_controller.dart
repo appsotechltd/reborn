@@ -122,17 +122,17 @@ final libraryAuthorsProvider = AsyncNotifierProvider.autoDispose
       LibraryAuthorsController.new,
     );
 
-/// Whether a book's or author's page shows only the cards with a video,
-/// keyed by page (e.g. `source:<id>`, `author:<name>`).
-class VideosOnly extends Notifier<bool> {
-  VideosOnly(this.page);
+/// Which of a book's or author's cards its page shows (All, Videos or
+/// Images), keyed by page (e.g. `source:<id>`, `author:<name>`).
+class CardsFilter extends Notifier<MediaFilter> {
+  CardsFilter(this.page);
   final String page;
 
   @override
-  bool build() => false;
+  MediaFilter build() => MediaFilter.all;
 
-  void set(bool on) => state = on;
+  void set(MediaFilter filter) => state = filter;
 }
 
-final videosOnlyProvider = NotifierProvider.autoDispose
-    .family<VideosOnly, bool, String>(VideosOnly.new);
+final cardsFilterProvider = NotifierProvider.autoDispose
+    .family<CardsFilter, MediaFilter, String>(CardsFilter.new);

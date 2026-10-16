@@ -5,22 +5,34 @@ import { useState } from "react";
 import { useHydrated } from "@/lib/auth";
 import { useListen, useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromCards } from "@/lib/listen-player";
+import { hasImage, hasVideo, type MediaFilter } from "@/lib/media-filter";
 import type { Card } from "@/lib/types";
 import { CardList } from "./CardPreview";
 import { Icon } from "./Icon";
+import { MediaSwitch } from "./MediaSwitch";
 
-export type CardsFilter = "all" | "videos";
-
-/** Video cards are the ones with an explainer. */
+/** Video cards are the ones with an explainer (or a member card's illustrated video). */
 export function videoCards(cards: Card[]): Card[] {
-  return cards.filter((c) => !!c.explainer);
+  return cards.filter(hasVideo);
 }
 
+/** Image cards are the ones with a picture. */
+export function imageCards(cards: Card[]): Card[] {
+  return cards.filter(hasImage);
+}
+
+const NOUNS: Record<MediaFilter, [string, string]> = {
+  all: ["idea", "ideas"],
+  videos: ["video", "videos"],
+  images: ["image", "images"],
+};
+
 /**
- * Every card of a book or an author, with an All / Videos switch (hidden when there are no videos)
- * and "Listen to this book/author", which plays the cards shown, in order, in Listen mode.
- * Server-rendered with All selected, so every card is in the page's HTML. While a session is on,
- * opening the page moves it to the cards shown, unless it is already this page's (All or Videos);
+ * Every card of a book or an author, with an All / Videos / Images switch (Videos hidden when there
+ * are no videos, Images when there are no pictures, the switch when neither) and "Listen to this
+ * book/author", which plays the cards shown, in order, in Listen mode. Server-rendered with All
+ * selected, so every card is in the page's HTML. While a session is on, opening the page moves it
+ * to the cards shown, unless it is already this page's (All, Videos or Images);
  * when the audio moves on to another card, that card's page opens.
  */
 export function CardsBrowser({
@@ -39,10 +51,12 @@ export function CardsBrowser({
   /** Ends the heading: "12 ideas from this book", "3 videos by Epictetus". */
   context: string;
 }) {
-  const [filter, setFilter] = useState<CardsFilter>("all");
+  const [filter, setFilter] = useState<MediaFilter>("all");
   const videos = videoCards(cards);
-  const shown = filter === "videos" && videos.length ? videos : cards;
-  const current = filter === "videos" && videos.length ? "videos" : "all";
+  const images = imageCards(cards);
+  const lists: Record<MediaFilter, Card[]> = { all: cards, videos, images };
+  const current: MediaFilter = lists[filter].length ? filter : "all";
+  const shown = lists[current];
   const { state: listen } = useListen();
   const ours = !!listen.queue?.startsWith(`${queue}|`);
   useListenFollow(ours ? null : { items: itemsFromCards(shown), queue: `${queue}|${current}` });
@@ -53,37 +67,21 @@ export function CardsBrowser({
     <section aria-labelledby="cards-title">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
         <h2 id="cards-title" className="font-serif text-2xl font-semibold">
-          {shown.length} {current === "videos" ? (shown.length === 1 ? "video" : "videos") : shown.length === 1 ? "idea" : "ideas"}{" "}
-          {context}
+          {shown.length} {NOUNS[current][shown.length === 1 ? 0 : 1]} {context}
         </h2>
         <ListenListButton cards={shown} queue={`${queue}|${current}`} label={listenLabel} />
       </div>
-      {videos.length ? (
-        <div role="group" aria-label="Show" className="mt-4 inline-flex rounded-full border border-line p-1">
-          {(
-            [
-              ["all", "All", cards.length],
-              ["videos", "Videos", videos.length],
-            ] as const
-          ).map(([id, label, count]) => {
-            const on = current === id;
-            return (
-              <button
-                key={id}
-                type="button"
-                aria-pressed={on}
-                onClick={() => setFilter(id)}
-                className={`inline-flex min-h-9 items-center gap-1.5 rounded-full px-4 text-sm pointer-coarse:min-h-11 ${
-                  on ? "bg-chip-on font-semibold text-chip-on-fg" : "text-muted hover:text-fg"
-                }`}
-              >
-                {id === "videos" ? <Icon name="play" className="size-4" /> : null}
-                {label}{" "}
-                <span className={on ? undefined : "text-muted"}>({count})</span>
-              </button>
-            );
-          })}
-        </div>
+      {videos.length || images.length ? (
+        <MediaSwitch
+          className="mt-4"
+          options={[
+            { id: "all", count: cards.length },
+            ...(videos.length ? [{ id: "videos" as const, count: videos.length }] : []),
+            ...(images.length ? [{ id: "images" as const, count: images.length }] : []),
+          ]}
+          selected={current}
+          onSelect={setFilter}
+        />
       ) : null}
       <div className="mt-4">
         <CardList cards={shown} showTopic={showTopic} />

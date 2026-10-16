@@ -122,6 +122,14 @@ export async function errorFromResponse(res: Response): Promise<ApiError> {
   return new ApiError(res.status, code, message);
 }
 
+/** GET /v1/timeline: `media` keeps only posts with a video or a picture. */
+export type TimelineQuery = {
+  topics?: string;
+  media?: "video" | "image";
+  cursor?: string | null;
+  limit?: number;
+};
+
 export interface RequestOptions {
   method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
   body?: unknown;
@@ -305,10 +313,10 @@ export function createApiClient(
       req<Contribution>(`/v1/moderation/${enc(id)}/reject`, { method: "POST", body: { note } }),
 
     // Timeline & posts
-    timeline: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
+    timeline: (q: TimelineQuery = {}, auth = true) =>
       req<PostsResponse>("/v1/timeline", { query: q, token: auth ? getToken() : null }),
     /** The timeline with summary posts woven in (see TimelineItem). */
-    timelineWithSummaries: (q: { topics?: string; cursor?: string | null; limit?: number } = {}, auth = true) =>
+    timelineWithSummaries: (q: TimelineQuery = {}, auth = true) =>
       req<TimelineResponse>("/v1/timeline", { query: { ...q, with: "summaries" }, token: auth ? getToken() : null }),
 
     // Full summary posts

@@ -245,6 +245,13 @@ describe("ListenPlayer", () => {
     expect(timeline).toHaveBeenCalledTimes(1);
   });
 
+  it("pages a filtered feed with its media filter", () => {
+    const timeline = vi.fn(async (): Promise<PostsResponse> => ({ posts: [], next_cursor: null }));
+    const { player } = setup({ timeline });
+    player.start({ items: items(withAudio(1), withAudio(2)), cursor: "c1", media: "video", queue: "timeline||videos" });
+    expect(timeline).toHaveBeenCalledWith({ cursor: "c1", limit: 20, topics: undefined, media: "video" }, true);
+  });
+
   it("waits for the next page at the end of the queue, then carries on", async () => {
     let resolve: (p: PostsResponse) => void = () => {};
     const timeline = vi.fn(() => new Promise<PostsResponse>((r) => (resolve = r)));

@@ -83,11 +83,45 @@ type TimelineParams struct {
 	Snapshot time.Time // views after this don't reorder the pages being scrolled
 	Offset   int
 	Limit    int
+	// Media keeps only posts with that media: MediaVideo (an explainer video, or a
+	// member card's illustrated video) or MediaImage (a picture). Empty keeps all.
+	Media string
+}
+
+// The timeline's media filters (?media=).
+const (
+	MediaVideo = "video"
+	MediaImage = "image"
+)
+
+// mediaIDs lists the library cards that have the given media: their videos and
+// pictures come from manifests, not the database.
+func mediaIDs(media string) []string {
+	var ids []string
+	switch media {
+	case MediaVideo:
+		if set := explainerSet.Load(); set != nil {
+			for id := range *set {
+				ids = append(ids, id)
+			}
+		}
+	case MediaImage:
+		if set := imageSet.Load(); set != nil {
+			for id := range *set {
+				ids = append(ids, id)
+			}
+		}
+	}
+	if ids == nil {
+		ids = []string{}
+	}
+	return ids
 }
 
 // Timeline returns posts from the user's topics, followed books and authors,
 // and posts that people they follow favourited: unseen posts first, newest
-// first. Without topics or follows it covers everything.
+// first. Without topics or follows it covers everything. Media narrows it to
+// posts with a video or a picture.
 func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) {
 	if p.Topics == nil {
 		p.Topics = []string{}
@@ -125,8 +159,10 @@ func (s *Store) Timeline(ctx context.Context, p TimelineParams) ([]Post, error) 
 			WHERE label IS NOT NULL ORDER BY n LIMIT 1
 		) r
 		WHERE c.status = 'published' AND (c.author_id IS NULL OR (NOT `+hiddenFor("c.author_id", "$1")+` AND `+visibleTo("$1")+`))
+			AND ($7::text = '' OR (c.author_id IS NULL AND c.id = ANY($8::text[]))
+				OR (c.author_id IS NOT NULL AND jsonb_typeof(c.media -> $7::text) = 'object'))
 		ORDER BY seen, r.kind <> 'writer', c.published_at DESC, md5(c.id || $3 || coalesce($1::text, '')), c.id
-		OFFSET $5 LIMIT $6`, uid, p.Topics, p.Day, p.Snapshot, p.Offset, p.Limit)
+		OFFSET $5 LIMIT $6`, uid, p.Topics, p.Day, p.Snapshot, p.Offset, p.Limit, p.Media, mediaIDs(p.Media))
 	if err != nil {
 		return nil, err
 	}

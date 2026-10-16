@@ -27,11 +27,12 @@ const author = (name: string, extra: Partial<AuthorSummary> = {}): AuthorSummary
 
 const json = (body: unknown) => new Response(JSON.stringify(body), { headers: { "Content-Type": "application/json" } });
 
-function card(n: number, video = false): Card {
+function card(n: number, video = false, picture = false): Card {
   const id = `example-book--0${n}`;
   return makeCard({
     id,
     title: `Idea ${n}`,
+    image: picture ? { url: `https://media.example.com/${id}.webp`, type: "illustration", caption: "A picture" } : null,
     audio: { url: `/audio/${id}.mp3`, duration_s: 40, voice: "bm_george", voice_name: "George" },
     explainer: video
       ? {
@@ -185,6 +186,39 @@ describe("A book's or an author's cards", () => {
 
     fireEvent.click(all);
     expect(screen.getAllByRole("link", { name: /^Idea / })).toHaveLength(4);
+  });
+
+  it("offers Images when cards have pictures, and Videos only when some have videos", () => {
+    const { unmount } = render(
+      <App>
+        <CardsBrowser
+          cards={[card(1, false, true), card(2), card(3, false, true)]}
+          queue="source:example-book"
+          listenLabel="Listen to this book"
+          context="from this book"
+        />
+      </App>,
+    );
+    expect(screen.queryByRole("button", { name: /^Videos/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "Images (2)" }));
+    expect(screen.getByRole("heading", { name: "2 images from this book" })).toBeTruthy();
+    expect(screen.getAllByRole("link", { name: /^Idea / }).map((l) => l.textContent)).toEqual(["Idea 1", "Idea 3"]);
+    unmount();
+
+    render(
+      <App>
+        <CardsBrowser
+          cards={[card(1, true, true), card(2, true), card(3)]}
+          queue="source:example-book"
+          listenLabel="Listen to this book"
+          context="from this book"
+        />
+      </App>,
+    );
+    const group = screen.getByRole("group", { name: "Show" });
+    expect(within(group).getAllByRole("button").map((b) => b.textContent)).toEqual(["All (3)", "Videos (2)", "Images (1)"]);
+    fireEvent.click(screen.getByRole("button", { name: "Images (1)" }));
+    expect(screen.getAllByRole("link", { name: /^Idea / }).map((l) => l.textContent)).toEqual(["Idea 1"]);
   });
 
   it("listens to the cards shown, in order, as their own queue", () => {

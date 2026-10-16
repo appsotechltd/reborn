@@ -248,6 +248,8 @@ export interface StartOptions {
   cursor?: string | null;
   /** The feed's topic filter, as `topics` for /v1/timeline. */
   topics?: string;
+  /** The feed's media filter, as `media` for /v1/timeline. */
+  media?: "video" | "image";
   single?: boolean;
   /** Names a fixed list (see ListenState.queue). */
   queue?: string;
@@ -267,6 +269,7 @@ export interface FollowTarget {
   queue: string;
   cursor?: string | null;
   topics?: string;
+  media?: "video" | "image";
 }
 
 const IDLE: Omit<ListenState, "speed" | "music"> = {
@@ -306,6 +309,7 @@ export class ListenPlayer {
   private preloads = new Map<string, HTMLAudioElement>();
   private cursor: string | null = null;
   private topics = "";
+  private media: "video" | "image" | undefined;
   /** Bumped whenever the session restarts, so late timeline pages are dropped. */
   private session = 0;
   private speedLoaded = false;
@@ -375,6 +379,7 @@ export class ListenPlayer {
     this.session++;
     this.cursor = opts.single ? null : (opts.cursor ?? null);
     this.topics = opts.topics ?? "";
+    this.media = opts.media;
     const items = opts.items.filter((i, n, all) => all.findIndex((o) => o.id === i.id) === n);
     if (!items.length) return;
     this.set({
@@ -424,6 +429,7 @@ export class ListenPlayer {
         index: target.index ?? 0,
         cursor: target.cursor ?? null,
         topics: target.topics,
+        media: target.media,
         queue: target.queue,
         paused: !playing,
       },
@@ -676,7 +682,7 @@ export class ListenPlayer {
       // Keep going while pages come back with nothing new and the queue is waiting on them.
       while (this.cursor) {
         const page = await this.deps.api.timeline(
-          { cursor: this.cursor, limit: PAGE_SIZE, topics: this.topics || undefined },
+          { cursor: this.cursor, limit: PAGE_SIZE, topics: this.topics || undefined, media: this.media },
           this.deps.signedIn(),
         );
         if (session !== this.session) return;

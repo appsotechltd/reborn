@@ -50,9 +50,14 @@ const kPreloadRemaining = 3;
 /// Listen mode follows the post on screen once it has stayed there this long.
 const kListenFollowAfter = Duration(milliseconds: 500);
 
-/// Names the timeline for Listen mode, with its topic filter.
-String timelineListenKey(List<String>? topics) =>
-    'timeline|${topics?.join(',') ?? ''}';
+/// Names the timeline for Listen mode, with its topic filter and, when one
+/// is on, its media filter: `timeline|`, `timeline|health|videos`.
+String timelineListenKey(
+  List<String>? topics, [
+  MediaFilter media = MediaFilter.all,
+]) =>
+    'timeline|${topics?.join(',') ?? ''}'
+    '${media == MediaFilter.all ? '' : '|${media.name}'}';
 
 /// A video in the column feed plays once this much of it is on screen.
 const kVideoVisibleFraction = 0.6;
@@ -217,13 +222,16 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final cards = posts.where((p) => !p.isSummary).toList();
     final index = cards.indexWhere((p) => p.id == id);
     if (index < 0) return null;
-    final topics = ref.read(timelineProvider.notifier).topics;
+    final timeline = ref.read(timelineProvider.notifier);
+    final topics = timeline.topics;
+    final media = timeline.media;
     return ListenTarget(
-      key: timelineListenKey(topics),
+      key: timelineListenKey(topics, media),
       posts: cards,
       index: index,
       cursor: state.nextCursor,
       topics: topics,
+      media: media.query,
     );
   }
 
@@ -258,7 +266,9 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final cards = state.posts.where((p) => !p.isSummary).toList();
     if (cards.isEmpty) return;
     index = state.posts.take(index).where((p) => !p.isSummary).length;
-    final topics = ref.read(timelineProvider.notifier).topics;
+    final timeline = ref.read(timelineProvider.notifier);
+    final topics = timeline.topics;
+    final media = timeline.media;
     ref
         .read(listenProvider.notifier)
         .startTimeline(
@@ -266,7 +276,8 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
           index: index.clamp(0, cards.length - 1),
           cursor: state.nextCursor,
           topics: topics,
-          key: timelineListenKey(topics),
+          media: media.query,
+          key: timelineListenKey(topics, media),
         );
     context.push('/listen');
   }
@@ -309,11 +320,14 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
     final size = WindowSize.of(context);
     final swipe = size.isCompact;
-    ref.listen(timelineFilterProvider, (_, _) {
+    void backToTop() {
       _swipePage = 0;
       _listenOn = null;
       if (_scroll.hasClients) _scroll.jumpTo(0);
-    });
+    }
+
+    ref.listen(timelineFilterProvider, (_, _) => backToTop());
+    ref.listen(timelineMediaProvider, (_, _) => backToTop());
     return Scaffold(
       appBar: AppBar(
         title: const Wordmark(size: 27),
@@ -343,6 +357,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
         child: Column(
           children: [
             const _TopicChips(),
+            const _MediaChips(),
             Expanded(
               child: timeline.when(
                 loading: () => const LoadingView(),
@@ -802,7 +817,7 @@ class _SwipeHint extends StatelessWidget {
 
 /// The end of what's loaded: a spinner while the next page loads (never a
 /// stop), "Try again" inline when it failed, or the true end of the feed.
-class _FeedEnd extends StatelessWidget {
+class _FeedEnd extends ConsumerWidget {
   const _FeedEnd({
     required this.state,
     required this.onRetry,
@@ -818,11 +833,12 @@ class _FeedEnd extends StatelessWidget {
   final VoidCallback onLoad;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final muted = theme.textTheme.bodyMedium?.copyWith(
       color: theme.colorScheme.onSurfaceVariant,
     );
+    final media = ref.watch(timelineMediaProvider);
     final error = state.loadMoreError;
     if (error != null) {
       return Padding(
@@ -860,9 +876,14 @@ class _FeedEnd extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            state.posts.isEmpty
-                ? 'Nothing here yet. Try another topic, or follow books and authors.'
-                : "That's everything for now.",
+            switch ((state.posts.isEmpty, media)) {
+              (false, _) => "That's everything for now.",
+              (true, MediaFilter.all) => 'Nothing here yet. Try another topic, or follow books and authors.',
+              (true, MediaFilter.videos) =>
+                'No videos here yet. Try All, or another topic.',
+              (true, MediaFilter.images) =>
+                'No images here yet. Try All, or another topic.',
+            },
             textAlign: TextAlign.center,
             style: muted,
           ),
@@ -1037,6 +1058,51 @@ class _TopicChips extends ConsumerWidget {
               onTap: () => notifier.select(selected == t.slug ? null : t.slug),
             ),
         ],
+      ),
+    );
+  }
+}
+
+/// Under the topic tabs: All / Videos / Images, keeping only the posts with
+/// a video or a picture.
+class _MediaChips extends ConsumerWidget {
+  const _MediaChips();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(timelineMediaProvider);
+    final notifier = ref.read(timelineMediaProvider.notifier);
+    Widget chip(MediaFilter m, String label, IconData? icon) => Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: ChoiceChip(
+        key: ValueKey('timeline-media-${m.name}'),
+        avatar: icon == null ? null : Icon(icon, size: 16),
+        label: Text(label),
+        selected: selected == m,
+        showCheckmark: false,
+        visualDensity: VisualDensity.compact,
+        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        onSelected: (_) => notifier.select(m),
+      ),
+    );
+    return Semantics(
+      container: true,
+      label: 'Show',
+      child: Container(
+        key: const ValueKey('timeline-media'),
+        height: 44,
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        alignment: Alignment.centerLeft,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              chip(MediaFilter.all, 'All', null),
+              chip(MediaFilter.videos, 'Videos', Icons.smart_display_outlined),
+              chip(MediaFilter.images, 'Images', Icons.image_outlined),
+            ],
+          ),
+        ),
       ),
     );
   }

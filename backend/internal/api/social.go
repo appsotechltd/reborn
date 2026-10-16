@@ -43,9 +43,18 @@ func (s *Server) timeline(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "bad_request", "invalid cursor")
 		return
 	}
+	media := r.URL.Query().Get("media")
+	switch media {
+	case "", "all":
+		media = ""
+	case store.MediaVideo, store.MediaImage:
+	default:
+		writeError(w, http.StatusBadRequest, "bad_request", "media must be video or image")
+		return
+	}
 	limit := intParam(r, "limit", 20, 1, 50)
 	posts, err := s.Store.Timeline(r.Context(), store.TimelineParams{UserID: userID(r), Topics: topics, Day: s.today(),
-		Snapshot: snapshot, Offset: offset, Limit: limit})
+		Snapshot: snapshot, Offset: offset, Limit: limit, Media: media})
 	if err != nil {
 		s.fail(w, r, err, "timeline")
 		return
@@ -55,7 +64,8 @@ func (s *Server) timeline(w http.ResponseWriter, r *http.Request) {
 		n := fmt.Sprintf("%d-%d", snapshot.Unix(), offset+limit)
 		next = &n
 	}
-	if r.URL.Query().Get("with") != "summaries" {
+	// Summary posts are not cards and carry no video, so a media filter leaves them out.
+	if r.URL.Query().Get("with") != "summaries" || media != "" {
 		writeJSON(w, http.StatusOK, map[string]any{"posts": posts, "next_cursor": next})
 		return
 	}

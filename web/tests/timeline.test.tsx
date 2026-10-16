@@ -131,6 +131,52 @@ describe("<Timeline> endless loading", () => {
     expect(screen.queryByTestId("load-more")).toBeNull();
   });
 
+  it("filters the feed to posts with a video or a picture, paging with the same filter", async () => {
+    installFakeIO();
+    const urls: URL[] = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: string) => {
+        const url = new URL(String(input));
+        if (!url.pathname.endsWith("/v1/timeline")) return json(204, {});
+        urls.push(url);
+        const media = url.searchParams.get("media");
+        if (media === "video") {
+          return url.searchParams.get("cursor") === "v1"
+            ? json(200, { posts: [post(4, false)], next_cursor: null })
+            : json(200, { posts: [post(3, false)], next_cursor: "v1" });
+        }
+        if (media === "image") return json(200, { posts: [], next_cursor: null });
+        return json(200, { posts: [post(1, false), post(2, false)], next_cursor: null });
+      }),
+    );
+    vi.spyOn(window, "scrollTo").mockImplementation(() => {});
+    render(
+      <AuthProvider>
+        <Timeline initialPosts={[post(1, false), post(2, false)]} initialCursor={null} />
+      </AuthProvider>,
+    );
+    // Phones and wider screens each have the switch (one is hidden by CSS).
+    const [all, videos, images] = ["All", "Videos", "Images"].map((name) => screen.getAllByRole("button", { name })[0]);
+    expect(all.getAttribute("aria-pressed")).toBe("true");
+
+    fireEvent.click(videos);
+    expect(await screen.findByRole("heading", { name: "Idea 3" })).toBeTruthy();
+    expect(screen.queryByRole("heading", { name: "Idea 1" })).toBeNull();
+    expect(screen.getAllByRole("button", { name: "Videos" })[0].getAttribute("aria-pressed")).toBe("true");
+    expect(urls.at(-1)!.searchParams.get("with")).toBe("summaries");
+    await act(async () => setVisible(screen.getByTestId("load-more"), 1));
+    expect(await screen.findByRole("heading", { name: "Idea 4" })).toBeTruthy();
+    const more = urls.at(-1)!;
+    expect([more.searchParams.get("cursor"), more.searchParams.get("media")]).toEqual(["v1", "video"]);
+
+    fireEvent.click(images);
+    expect(await screen.findByText(/No images here yet/)).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Show everything" }));
+    expect(await screen.findByRole("heading", { name: "Idea 1" })).toBeTruthy();
+    expect(urls.at(-1)!.searchParams.has("media")).toBe(false);
+  });
+
   it("counts a post in the snap feed as read after 8 seconds on screen, while its video autoplays", async () => {
     installFakeIO();
     window.localStorage.setItem("reborn.auth", JSON.stringify({ token: "tok", user }));
