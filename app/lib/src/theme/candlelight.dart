@@ -683,8 +683,8 @@ final ButtonStyle amberIconButtonStyle = IconButton.styleFrom(
 final ThemeData lightTheme = buildCandlelightTheme(CandlelightTokens.light);
 final ThemeData darkTheme = buildCandlelightTheme(CandlelightTokens.dark);
 
-/// "Reborn." in Fraunces 600: the logo R (the letter with the candle flame in
-/// its bowl), then "eborn" and the full stop in amber.
+/// "Reborn" in Fraunces 600: the logo R (the letter with the candle flame in
+/// its bowl), then "eborn".
 class Wordmark extends StatelessWidget {
   const Wordmark({super.key, this.size = 24});
   final double size;
@@ -719,10 +719,6 @@ class Wordmark extends StatelessWidget {
               ),
             ),
             const TextSpan(text: 'eborn'),
-            TextSpan(
-              text: '.',
-              style: TextStyle(color: Candlelight.of(context).amberText),
-            ),
           ],
         ),
         style: style,

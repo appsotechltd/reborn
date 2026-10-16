@@ -26,7 +26,7 @@ export function SiteHeader() {
           aria-label="Reborn, home"
         >
           <WordmarkR />
-          eborn<span className="text-accent-text">.</span>
+          eborn
         </Link>
         <nav aria-label="Main" className="min-w-0 flex-1 max-md:hidden">
           <NavLinks />
