@@ -206,6 +206,11 @@ describe("feed video autoplay", () => {
     expect(enter).toHaveBeenCalled();
   });
 
+  it("loads the file without a CORS request (the media bucket sends no CORS headers)", () => {
+    render(<CardView card={card(1)} />);
+    expect(videoOf(1).hasAttribute("crossorigin")).toBe(false);
+  });
+
   it("never autoplays on a card's own page", async () => {
     render(<CardView card={card(1)} />);
     await act(async () => setVisible(videoOf(1), 1));
