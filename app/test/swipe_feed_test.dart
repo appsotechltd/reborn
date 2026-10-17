@@ -578,7 +578,7 @@ void main() {
     expect(find.text('YouTube, Facebook, X, LinkedIn'), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('share-video-wide')));
     await tester.pumpAndSettle();
-    expect(sharer.videos.single.path, '/media/v1-wide.mp4');
+    expect(sharer.files.single.path, '/media/v1-wide.mp4');
     expect(server.called('POST /v1/posts/v1/share').single.body, {
       'channel': 'native',
     });
@@ -587,14 +587,40 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('share-video-tall')));
     await tester.pumpAndSettle();
-    expect(sharer.videos.last.path, '/media/v1.mp4');
+    expect(sharer.files.last.path, '/media/v1.mp4');
 
     await tester.tap(find.byKey(const ValueKey('post-share')).first);
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('share-link')));
     await tester.pumpAndSettle();
     expect(sharer.shared.last, contains('/ideas/v1'));
-    expect(sharer.videos, hasLength(2));
+    expect(sharer.files, hasLength(2));
+  });
+
+  testWidgets('sharing a post with a picture puts the picture in the share '
+      'with its link, with no extra choice', (tester) async {
+    final sharer = FakeSharer();
+    final server = FakeServer()
+      ..on(
+        'GET /v1/timeline',
+        (_) => page([
+          post(
+            'p1',
+            postImage: {'url': '/media/p1.jpg', 'width': 1080, 'height': 1350},
+          ),
+        ]),
+      )
+      ..on('POST /v1/posts/p1/share', (_) => const Reply.empty());
+    await pumpApp(tester, server, size: phone, sharer: sharer);
+    await tester.tap(find.byKey(const ValueKey('post-share')).first);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('share-link')), findsNothing);
+    expect(sharer.files.single.path, '/media/p1.jpg');
+    expect(sharer.fileNames.single, 'reborn-p1.jpg');
+    expect(sharer.shared.single, contains('/ideas/p1'));
+    expect(server.called('POST /v1/posts/p1/share').single.body, {
+      'channel': 'native',
+    });
   });
 
   testWidgets('the current post counts as read after 8 seconds', (

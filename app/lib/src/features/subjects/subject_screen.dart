@@ -37,6 +37,7 @@ class SubjectScreen extends ConsumerWidget {
               key: const ValueKey('subject-share'),
               title: d.subject.title,
               path: subjectPath(subjectId),
+              picture: d.subject.cover,
             ),
         ],
       ),

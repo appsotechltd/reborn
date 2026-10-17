@@ -97,3 +97,42 @@ describe("<ShareMenu> for an idea with a video", () => {
     expect(arg.files?.[0].type).toBe("video/mp4");
   });
 });
+
+describe("<ShareMenu> for an idea with a picture", () => {
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.restoreAllMocks();
+    delete (navigator as Partial<Navigator>).share;
+    delete (navigator as Partial<Navigator>).canShare;
+  });
+
+  it("puts the picture in the share sheet with the link, with no extra button", async () => {
+    const share = vi.fn(() => Promise.resolve());
+    Object.assign(navigator, { share, canShare: () => true });
+    const fetchMock = vi.fn((url: string) =>
+      Promise.resolve(url.includes("/picture") ? new Response("jpg", { headers: { "Content-Type": "image/jpeg" } }) : new Response(null, { status: 204 })),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+    renderMenu({ postId: "a--01", title: "An idea", picture: { cardId: "a--01" } });
+    expect(screen.queryByRole("button", { name: /picture/i })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "More apps…" }));
+    await waitFor(() => expect(share).toHaveBeenCalled());
+    expect(String(fetchMock.mock.calls[0][0])).toMatch(/\/v1\/cards\/a--01\/picture$/);
+    const arg = (share.mock.calls[0] as unknown as [ShareData])[0];
+    expect(arg.files?.[0].name).toBe("reborn-a--01.jpg");
+    expect(arg.files?.[0].type).toBe("image/jpeg");
+    expect(arg.text).toContain("https://iamreborn.app/ideas/a--01");
+  });
+
+  it("shares the link alone when the picture can't be fetched", async () => {
+    const share = vi.fn(() => Promise.resolve());
+    Object.assign(navigator, { share, canShare: () => true });
+    vi.stubGlobal("fetch", vi.fn(() => Promise.resolve(new Response(null, { status: 502 }))));
+    renderMenu({ postId: "a--01", title: "An idea", picture: { cardId: "a--01" } });
+    fireEvent.click(screen.getByRole("button", { name: "More apps…" }));
+    await waitFor(() => expect(share).toHaveBeenCalled());
+    const arg = (share.mock.calls[0] as unknown as [ShareData])[0];
+    expect(arg.files).toBeUndefined();
+    expect(arg.url).toBe("https://iamreborn.app/ideas/a--01");
+  });
+});

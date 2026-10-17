@@ -76,6 +76,9 @@ var postSet atomic.Pointer[cardimages.Posts]
 // SetPostImages sets the image posts attached to cards as they are read.
 func SetPostImages(set cardimages.Posts) { postSet.Store(&set) }
 
+// PostImageFor returns the card's image post, or nil.
+func PostImageFor(id string) *cardimages.Post { return postImageFor(id) }
+
 func postImageFor(id string) *cardimages.Post {
 	if set := postSet.Load(); set != nil {
 		if p, ok := (*set)[id]; ok {
@@ -84,6 +87,9 @@ func postImageFor(id string) *cardimages.Post {
 	}
 	return nil
 }
+
+// ImageFor returns the card's picture, or nil.
+func ImageFor(id string) *cardimages.Image { return imageFor(id) }
 
 func imageFor(id string) *cardimages.Image {
 	if set := imageSet.Load(); set != nil {

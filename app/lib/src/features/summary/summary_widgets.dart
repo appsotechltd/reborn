@@ -290,6 +290,7 @@ class SummaryPostCard extends ConsumerWidget {
                   key: const ValueKey('summary-post-share'),
                   title: summary.title,
                   path: summaryPath(summary.id),
+                  picture: summary.cover,
                 ),
               ],
             ),

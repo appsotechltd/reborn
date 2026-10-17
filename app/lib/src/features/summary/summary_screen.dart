@@ -179,6 +179,7 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
               key: const ValueKey('summary-share'),
               title: d.summary.title,
               path: '/summaries/${Uri.encodeComponent(widget.summaryId)}',
+              picture: d.summary.cover,
             ),
             IconButton(
               key: const ValueKey('summary-listen-all'),
