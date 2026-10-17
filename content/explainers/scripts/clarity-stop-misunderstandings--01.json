@@ -1,0 +1,71 @@
+{
+ "card_id": "clarity-stop-misunderstandings--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "nova",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Most misunderstandings are small gaps that grow when nobody checks."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "A missed pickup.",
+     "A report done wrong.",
+     "A hurt partner."
+    ],
+    "emphasis": []
+   },
+   "narration": "A missed pickup. A report done the wrong way. A partner hurt by a short text."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "What I meant",
+     "is not always",
+     "what you heard."
+    ],
+    "emphasis": [
+     2
+    ]
+   },
+   "narration": "Most misunderstandings aren't caused by bad people. They start as small gaps between what one person meant and what the other heard."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "'So we're meeting at the station,",
+     "not the car park?'"
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "A ten second check, so we're meeting at the station, not the car park, can save an hour of confusion later."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Check early.",
+     "Repair fast."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "This guide shows how to spot those gaps, confirm who does what, and repair a mix up quickly when one slips through."
+  },
+  {
+   "type": "apply",
+   "narration": "Think of the last mix-up you had. Note in one line where the gap started: the words, the channel or an assumption."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

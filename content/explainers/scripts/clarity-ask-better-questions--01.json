@@ -1,0 +1,69 @@
+{
+ "card_id": "clarity-ask-better-questions--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "echo",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Better questions lead to better conversations."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "We plan what we say.",
+     "We rarely plan what we ask."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "Most of us spend far more effort on what we say than on what we ask. Yet a well chosen question often does more than a clever answer."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "'Was it good?'",
+     "gets a shrug."
+    ],
+    "emphasis": []
+   },
+   "narration": "Ask a friend, was it good, and you get a shrug."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "'What was the best part?'",
+     "gets a story."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "Ask, what was the best part of the trip, and you get a story."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Open. Clarifying. Follow-up.",
+     "One question at a time."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "This guide covers open, clarifying and follow up questions, asking one thing at a time, and using why with care."
+  },
+  {
+   "type": "apply",
+   "narration": "Notice the next three questions you ask today. Were they ones that invited a real answer, or ones that could be answered with a shrug?"
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

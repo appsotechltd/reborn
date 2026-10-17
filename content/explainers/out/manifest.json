@@ -69,6 +69,125 @@
         "height": 720
       }
     },
+    "clarity-ask-better-questions--01": {
+      "video": "clarity-ask-better-questions--01.mp4",
+      "poster": "clarity-ask-better-questions--01.jpg",
+      "duration_s": 44.2,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_echo@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-ask-better-questions--01.json",
+      "landscape": {
+        "video": "clarity-ask-better-questions--01-wide.mp4",
+        "poster": "clarity-ask-better-questions--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-explain-anything-simply--01": {
+      "video": "clarity-explain-anything-simply--01.mp4",
+      "poster": "clarity-explain-anything-simply--01.jpg",
+      "duration_s": 44.4,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/bf_emma@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-explain-anything-simply--01.json",
+      "landscape": {
+        "video": "clarity-explain-anything-simply--01-wide.mp4",
+        "poster": "clarity-explain-anything-simply--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-get-to-the-point--01": {
+      "video": "clarity-get-to-the-point--01.mp4",
+      "poster": "clarity-get-to-the-point--01.jpg",
+      "duration_s": 46.6,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_eric@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-get-to-the-point--01.json",
+      "landscape": {
+        "video": "clarity-get-to-the-point--01-wide.mp4",
+        "poster": "clarity-get-to-the-point--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-give-and-take-feedback--01": {
+      "video": "clarity-give-and-take-feedback--01.mp4",
+      "poster": "clarity-give-and-take-feedback--01.jpg",
+      "duration_s": 46.6,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/am_michael@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-give-and-take-feedback--01.json",
+      "landscape": {
+        "video": "clarity-give-and-take-feedback--01-wide.mp4",
+        "poster": "clarity-give-and-take-feedback--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-listen-so-people-feel-heard--01": {
+      "video": "clarity-listen-so-people-feel-heard--01.mp4",
+      "poster": "clarity-listen-so-people-feel-heard--01.jpg",
+      "duration_s": 44.4,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/af_heart@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-listen-so-people-feel-heard--01.json",
+      "landscape": {
+        "video": "clarity-listen-so-people-feel-heard--01-wide.mp4",
+        "poster": "clarity-listen-so-people-feel-heard--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-say-what-you-mean-kindly--01": {
+      "video": "clarity-say-what-you-mean-kindly--01.mp4",
+      "poster": "clarity-say-what-you-mean-kindly--01.jpg",
+      "duration_s": 51.1,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/af_sarah@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-say-what-you-mean-kindly--01.json",
+      "landscape": {
+        "video": "clarity-say-what-you-mean-kindly--01-wide.mp4",
+        "poster": "clarity-say-what-you-mean-kindly--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "clarity-stop-misunderstandings--01": {
+      "video": "clarity-stop-misunderstandings--01.mp4",
+      "poster": "clarity-stop-misunderstandings--01.jpg",
+      "duration_s": 48.1,
+      "width": 720,
+      "height": 1280,
+      "narrated": true,
+      "voice": "kokoro-82m/af_nova@0.95",
+      "kind": "animated",
+      "script": "scripts/clarity-stop-misunderstandings--01.json",
+      "landscape": {
+        "video": "clarity-stop-misunderstandings--01-wide.mp4",
+        "poster": "clarity-stop-misunderstandings--01-wide.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
     "eat-that-frog-tracy--01": {
       "video": "eat-that-frog-tracy--01.mp4",
       "poster": "eat-that-frog-tracy--01.jpg",

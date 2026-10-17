@@ -1,0 +1,71 @@
+{
+ "card_id": "clarity-explain-anything-simply--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "emma",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Explaining simply is a skill you can learn."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "They nod.",
+     "Then do the wrong thing."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "We explain things every day. When it goes badly, people nod anyway, then do the wrong thing."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Start from what they know.",
+     "Give an example.",
+     "Skip the insider words."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "Good explainers aren't born with a gift. They find out what the other person already knows, use examples and comparisons, and avoid insider words."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "One idea at a time.",
+     "Check it landed."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "They give one idea at a time, and they check that it landed."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Children.",
+     "Older relatives.",
+     "Hard health news."
+    ],
+    "emphasis": []
+   },
+   "narration": "This guide walks through those habits, with tips for explaining to children, older relatives, and people facing health news."
+  },
+  {
+   "type": "apply",
+   "narration": "Think of one thing you need to explain this week, such as a new rota or a bill. Keep it in mind as you read the cards."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}
