@@ -1224,3 +1224,45 @@ id = "universe-are-we-alone"
 adapter = "summary"
 url = "https://science.nasa.gov/exoplanets/"
 licence = "original-summary"
+
+[[source]]
+id = "clarity-get-to-the-point"
+adapter = "summary"
+url = "https://www.gov.uk/guidance/content-design/writing-for-gov-uk"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-explain-anything-simply"
+adapter = "summary"
+url = "https://hbr.org/2006/12/the-curse-of-knowledge"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-listen-so-people-feel-heard"
+adapter = "summary"
+url = "https://www2.hse.ie/mental-health/helping-someone-else/being-a-good-listener/"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-ask-better-questions"
+adapter = "summary"
+url = "https://hbr.org/2018/05/the-surprising-power-of-questions"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-say-what-you-mean-kindly"
+adapter = "summary"
+url = "https://www.betterhealth.vic.gov.au/health/healthyliving/assertiveness"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-give-and-take-feedback"
+adapter = "summary"
+url = "https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/"
+licence = "original-summary"
+
+[[source]]
+id = "clarity-stop-misunderstandings"
+adapter = "summary"
+url = "https://digital.gov/guides/plain-language"
+licence = "original-summary"

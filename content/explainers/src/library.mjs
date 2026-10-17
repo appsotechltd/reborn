@@ -23,6 +23,7 @@ export const TOPIC_NAMES = {
   mindfulness: "Mindfulness & Philosophy",
   science: "Science & Nature",
   universe: "Wonders of the Universe",
+  "life-guides": "Life Guides",
 };
 
 export const LICENCE_NAMES = {

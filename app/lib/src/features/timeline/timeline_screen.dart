@@ -24,6 +24,7 @@ import '../notifications/notifications_screen.dart';
 import '../post/post_store.dart';
 import '../post/post_view.dart';
 import '../streak/streak_card.dart';
+import '../subjects/subject_widgets.dart';
 import '../summary/summary_widgets.dart';
 import 'seen_tracker.dart';
 import 'timeline_controller.dart';
@@ -318,6 +319,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     if (ref.watch(isTvProvider)) return const TvHome();
     final timeline = ref.watch(timelineProvider);
     final signedIn = ref.watch(sessionProvider.select((s) => s.signedIn));
+    final topic = ref.watch(timelineFilterProvider);
     final size = WindowSize.of(context);
     final swipe = size.isCompact;
     void backToTop() {
@@ -358,6 +360,8 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
           children: [
             const _TopicChips(),
             const _MediaChips(),
+            // A topic's subjects (courses of guides) sit above its posts.
+            if (topic != null) SubjectsRow(topic: topic),
             Expanded(
               child: timeline.when(
                 loading: () => const LoadingView(),

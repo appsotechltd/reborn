@@ -1,0 +1,73 @@
+{
+ "card_id": "clarity-say-what-you-mean-kindly--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "sarah",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Saying what you mean, kindly, is a skill you can learn."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Hints.",
+     "'It's fine.'",
+     "Bottling it up."
+    ],
+    "emphasis": []
+   },
+   "narration": "Many of us were taught that being nice means going along with things. So we drop hints, say it's fine when it isn't, or bottle things up until they burst out."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Stew.",
+     "Snap.",
+     "Leave a note.",
+     "Or calmly ask."
+    ],
+    "emphasis": [
+     3
+    ]
+   },
+   "narration": "Think of a flatmate who never washes up. You can stew, snap, or leave passive notes. Or you can calmly ask. Only the last one has a real chance of working."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Clear about what you need.",
+     "Respectful while you say it."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "This guide is about that middle path: saying clearly what you think, need and feel, while staying respectful."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Ask directly.",
+     "Say no.",
+     "Set boundaries."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "It covers asking directly, saying no, setting boundaries, and disagreeing well."
+  },
+  {
+   "type": "apply",
+   "narration": "Notice one moment today when you said 'it's fine' or 'whatever you think' but didn't mean it. Just notice it for now."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

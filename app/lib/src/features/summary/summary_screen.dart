@@ -12,6 +12,8 @@ import '../listen/listen_controller.dart';
 import '../listen/listen_follow.dart';
 import '../post/post_view.dart';
 import '../post/share.dart';
+import '../subjects/subject_controller.dart';
+import '../subjects/subject_widgets.dart';
 import 'summary_controller.dart';
 import 'summary_widgets.dart';
 
@@ -80,13 +82,30 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
 
   void _save(SummaryDetail d) {
     final last = d.parts.length - 1;
-    ref
-        .read(summaryPlacesProvider.notifier)
-        .save(
-          widget.summaryId,
-          _index.clamp(0, last),
-          finished: _index >= last,
-        );
+    _saved(
+      d,
+      ref
+          .read(summaryPlacesProvider.notifier)
+          .save(
+            widget.summaryId,
+            _index.clamp(0, last),
+            finished: _index >= last,
+          ),
+      finished: _index >= last,
+    );
+  }
+
+  /// Finishing a subject's guide moves the subject on: its progress is
+  /// fetched again once the place is saved.
+  void _saved(SummaryDetail d, Future<void> save, {required bool finished}) {
+    final subject = d.subject;
+    if (!finished || subject == null) return;
+    save.then((_) {
+      if (!mounted) return;
+      ref
+        ..invalidate(subjectsProvider)
+        ..invalidate(subjectProvider(subject.id));
+    });
   }
 
   void _onPage(SummaryDetail d, int i) {
@@ -122,9 +141,13 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
     final d = ref.read(summaryProvider(widget.summaryId)).value?.value;
     if (d == null) return;
     _savedEnd = true;
-    ref
-        .read(summaryPlacesProvider.notifier)
-        .save(widget.summaryId, d.parts.length - 1, finished: true);
+    _saved(
+      d,
+      ref
+          .read(summaryPlacesProvider.notifier)
+          .save(widget.summaryId, d.parts.length - 1, finished: true),
+      finished: true,
+    );
   }
 
   @override
@@ -253,6 +276,7 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    if (d.subject != null) _SubjectLink(step: d.subject!),
                     Text(
                       '${d.summary.coverageLabel} · ${d.summary.meta}',
                       style: theme.textTheme.bodySmall?.copyWith(
@@ -299,6 +323,7 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
                         child: ReadingWidth(
                           child: _Finished(
                             summary: d.summary,
+                            subject: d.subject,
                             onRestart: () => _pages?.jumpToPage(0),
                             onReadAll: () => setState(() => _all = true),
                           ),
@@ -357,6 +382,7 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  if (d.subject != null) _SubjectLink(step: d.subject!),
                   SummaryCover(summary: s, large: true),
                   if (s.description.isNotEmpty) ...[
                     const SizedBox(height: 12),
@@ -386,6 +412,7 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
           return ReadingWidth(
             child: _Finished(
               summary: s,
+              subject: d.subject,
               onRestart: () => setState(() {
                 _all = false;
                 _index = 0;
@@ -407,14 +434,52 @@ class _SummaryScreenState extends ConsumerState<SummaryScreen> {
   }
 }
 
+/// "Guide 2 of 7 · Communication Clarity" above a subject's guide; opens
+/// the subject.
+class _SubjectLink extends StatelessWidget {
+  const _SubjectLink({required this.step});
+  final SubjectStep step;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = Candlelight.of(context).amberText;
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: TextButton.icon(
+        key: const ValueKey('summary-subject'),
+        style: TextButton.styleFrom(
+          foregroundColor: color,
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          minimumSize: const Size(0, 32),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          visualDensity: VisualDensity.compact,
+        ),
+        onPressed: () => context.push(subjectPath(step.id)),
+        icon: const Icon(Icons.auto_stories_outlined, size: 16),
+        label: Text(
+          step.label,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: Theme.of(context).textTheme.labelLarge
+              ?.copyWith(color: color, fontWeight: FontWeight.w700),
+        ),
+      ),
+    );
+  }
+}
+
 class _Finished extends StatelessWidget {
   const _Finished({
     required this.summary,
     required this.onRestart,
+    this.subject,
     this.onReadAll,
   });
   final Summary summary;
   final VoidCallback onRestart;
+
+  /// Set on a subject's guide: the way on to the next guide.
+  final SubjectStep? subject;
   final VoidCallback? onReadAll;
 
   @override
@@ -441,6 +506,10 @@ class _Finished extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyMedium,
           ),
+          if (subject != null) ...[
+            const SizedBox(height: 20),
+            _NextGuide(step: subject!),
+          ],
           const SizedBox(height: 16),
           Wrap(
             spacing: 8,
@@ -462,14 +531,63 @@ class _Finished extends StatelessWidget {
                       context.push('/sources/${summary.source!.id}'),
                   child: const Text('About the book'),
                 ),
-              FilledButton(
-                onPressed: () => context.push('/summaries'),
-                child: const Text('More summaries'),
-              ),
+              if (subject == null)
+                FilledButton(
+                  onPressed: () => context.push('/summaries'),
+                  child: const Text('More summaries'),
+                )
+              else
+                OutlinedButton(
+                  onPressed: () => context.push('/summaries'),
+                  child: const Text('More summaries'),
+                ),
             ],
           ),
         ],
       ),
+    );
+  }
+}
+
+/// On the finished page of a subject's guide: "Next guide: (its title)", which
+/// opens it in place of this one, or "Back to (the subject)" after the last.
+class _NextGuide extends StatelessWidget {
+  const _NextGuide({required this.step});
+  final SubjectStep step;
+
+  @override
+  Widget build(BuildContext context) {
+    final next = step.next;
+    return Column(
+      children: [
+        Text(
+          next == null
+              ? 'That was the last guide in ${step.title}.'
+              : 'Guide ${step.step} of ${step.count} done. Up next:',
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.bodySmall
+              ?.copyWith(color: Candlelight.of(context).muted),
+        ),
+        const SizedBox(height: 8),
+        FilledButton.icon(
+          key: const ValueKey('summary-next-guide'),
+          onPressed: () => context.pushReplacement(
+            next == null ? subjectPath(step.id) : summaryPath(next.id),
+          ),
+          icon: Icon(
+            next == null ? Icons.auto_stories_outlined : Icons.arrow_forward,
+            size: 18,
+          ),
+          label: Text(
+            next == null
+                ? 'Back to ${step.title}'
+                : 'Next guide: ${next.title}',
+            maxLines: 2,
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+      ],
     );
   }
 }

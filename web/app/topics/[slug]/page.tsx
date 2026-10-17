@@ -5,10 +5,11 @@ import { CardList } from "@/components/CardPreview";
 import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
 import { LoadMoreCards } from "@/components/LoadMoreCards";
 import { ShareMenu } from "@/components/ShareMenu";
+import { SubjectList } from "@/components/Subjects";
 import { Unavailable } from "@/components/Unavailable";
 import { formatAuthors, TOPICS, topicName } from "@/lib/content";
 import { siteUrl } from "@/lib/config";
-import { getAllSources, getFeed, getTopics, loadOr } from "@/lib/server-api";
+import { getAllSources, getFeed, getSubjects, getTopics, loadOr } from "@/lib/server-api";
 
 export const revalidate = 600;
 
@@ -44,8 +45,13 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
 
   const { data, ok } = await loadOr(
     async () => {
-      const [sources, feed] = await Promise.all([getAllSources(slug), getFeed({ topics: slug, limit: 12 })]);
-      return { sources, feed };
+      const [sources, feed, subjects] = await Promise.all([
+        getAllSources(slug),
+        getFeed({ topics: slug, limit: 12 }),
+        // Subjects are extra: an outage there leaves the rest of the topic up.
+        getSubjects(slug).catch(() => []),
+      ]);
+      return { sources, feed, subjects };
     },
     null,
   );
@@ -94,6 +100,8 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
         </div>
       ) : (
         <>
+          {data.subjects.length ? <SubjectList subjects={data.subjects} topic={slug} /> : null}
+
           {data.sources.length ? (
             <section aria-labelledby="sources-title" className="mt-10">
               <h2 id="sources-title" className="font-serif text-2xl font-semibold">

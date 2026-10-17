@@ -98,6 +98,8 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /v1/summaries", s.summaries)
 	mux.HandleFunc("GET /v1/summaries/{id}", s.summary)
 	mux.HandleFunc("PUT /v1/summaries/{id}/progress", s.authed(s.summaryProgress))
+	mux.HandleFunc("GET /v1/subjects", s.subjects)
+	mux.HandleFunc("GET /v1/subjects/{id}", s.subject)
 
 	mux.HandleFunc("POST /v1/auth/register", s.register)
 	mux.HandleFunc("POST /v1/auth/login", s.login)

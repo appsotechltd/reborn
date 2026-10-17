@@ -1,14 +1,18 @@
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/config";
 import { TOPICS } from "@/lib/content";
-import { getAllAuthors, getSitemap, loadOr } from "@/lib/server-api";
+import { getAllAuthors, getSitemap, getSubjects, loadOr } from "@/lib/server-api";
 import { authorHref } from "@/lib/social";
 
 export const revalidate = 600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteUrl();
-  const [{ data }, { data: authors }] = await Promise.all([loadOr(getSitemap, null), loadOr(() => getAllAuthors(), [])]);
+  const [{ data }, { data: authors }, { data: subjects }] = await Promise.all([
+    loadOr(getSitemap, null),
+    loadOr(() => getAllAuthors(), []),
+    loadOr(() => getSubjects(), []),
+  ]);
   const topics = data?.topics ?? TOPICS.map((t) => t.slug);
   const latest = (items: { updated_at: string }[]) =>
     items.reduce<string | undefined>((m, i) => (!m || i.updated_at > m ? i.updated_at : m), undefined);
@@ -31,6 +35,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${base}/summaries/${s.id}`,
       lastModified: s.updated_at,
       changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...subjects.map((s) => ({
+      url: `${base}/subjects/${s.id}`,
+      changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     ...authors.map((a) => ({

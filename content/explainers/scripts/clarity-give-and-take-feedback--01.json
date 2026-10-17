@@ -1,0 +1,72 @@
+{
+ "card_id": "clarity-give-and-take-feedback--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "michael",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Good feedback helps people see what they can't see themselves."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "We all have blind spots."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "We all have blind spots. You can't hear how you sound in a meeting, or see how your text landed."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Done badly, it stings.",
+     "Done well, it's a gift."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "Done badly, feedback stings and gets ignored. Done well, it is one of the kindest things you can offer."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Specific.",
+     "Fair.",
+     "On time."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "This guide covers how to give feedback that is specific, fair and timely, and how to praise so it counts."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Take it.",
+     "Ask for it.",
+     "Act on it."
+    ],
+    "emphasis": [
+     2
+    ]
+   },
+   "narration": "And how to take feedback, ask for it, and act on it."
+  },
+  {
+   "type": "apply",
+   "narration": "Think of one piece of feedback that genuinely helped you. Note what made it useful: who said it, how and when."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

@@ -1,0 +1,786 @@
+{
+ "source": {
+  "id": "clarity-explain-anything-simply",
+  "title": "Explain Anything Simply",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://hbr.org/2006/12/the-curse-of-knowledge",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#communication-clarity",
+  "attribution": "A Reborn guide in our own words, drawing on Harvard Business Review, the CDC Clear Communication Index, the AHRQ teach-back guidance and Digital.gov's plain language guides.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn in our own words; no text copied. References: Harvard Business Review (Chip Heath and Dan Heath), The Curse of Knowledge, https://hbr.org/2006/12/the-curse-of-knowledge; Centers for Disease Control and Prevention, The CDC Clear Communication Index, https://www.cdc.gov/ccindex/index.html; Agency for Healthcare Research and Quality, Health Literacy Universal Precautions Toolkit, Tool 5: Use the Teach-Back Method, https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html; Digital.gov, Plain language guides, https://digital.gov/guides/plain-language"
+ },
+ "cards": [
+  {
+   "id": "clarity-explain-anything-simply--01",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "explaining",
+    "overview"
+   ],
+   "title": "Explaining simply is a skill you can learn",
+   "body": "Most of us explain things every day: how the boiler works, why a project is late, what the doctor said. When it goes well, people nod and act. When it goes badly, they nod anyway, then do the wrong thing.\n\nGood explainers aren't born with a gift. They use a handful of habits: they find out what the other person already knows, they use examples and comparisons, they avoid insider words, they give one idea at a time, and they check that it landed.\n\nThis guide walks through those habits, with tips for explaining to children, older relatives and people facing health news. Each card ends with something small to try today.",
+   "apply_it": "Think of one thing you need to explain this week, such as a new rota or a bill. Keep it in mind as you read the cards.",
+   "quiz": {
+    "question": "What does this guide say makes someone a good explainer?",
+    "options": [
+     "A natural gift you either have or don't",
+     "A set of habits anyone can practise",
+     "Using impressive vocabulary",
+     "Talking for longer"
+    ],
+    "answer": 1,
+    "explanation": "Clear explaining comes from learnable habits like checking prior knowledge, using examples and testing understanding."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--02",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "curse-of-knowledge",
+    "empathy"
+   ],
+   "title": "Once you know something, it's hard to imagine not knowing it",
+   "body": "This is often called the curse of knowledge. When you understand something well, the steps feel obvious, so you skip them without noticing. You can't easily remember what it was like to be confused.\n\nA colleague who has used the expenses system for years says 'just raise it in the portal'. To the new starter, that sentence hides five questions: which portal, where's the login, what counts as raising it?\n\nAt home it's the same. You tell your teenager to 'put a wash on', forgetting they've never chosen a setting. The fix isn't to try harder to be clear. It's to slow down and picture the other person's starting point, step by step.",
+   "apply_it": "Next time you explain something you know well, ask yourself: 'What step am I treating as obvious?' Say that step out loud.",
+   "quiz": {
+    "question": "What is the curse of knowledge?",
+    "options": [
+     "Knowing too little to explain well",
+     "Forgetting facts you once knew",
+     "Finding it hard to imagine not knowing what you know",
+     "Refusing to share what you know"
+    ],
+    "answer": 2,
+    "explanation": "Experts tend to skip steps because they can no longer picture what being a beginner feels like."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--03",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "curse-of-knowledge",
+    "self-awareness"
+   ],
+   "title": "Try the humming game to feel the curse of knowledge",
+   "body": "Here's a quick way to feel this for yourself. Pick a well-known song, like 'Happy Birthday', and tap or hum the rhythm to a friend without words. Ask them to guess the song.\n\nWhile you tap, you hear the full tune in your head, so it feels obvious. Your friend only hears knocks on a table. Most people are surprised by how hard it is to guess.\n\nThat gap is what happens when you explain. You hear the whole tune: the context, the reasons, the background. Your listener only hears the taps you actually make. Remembering this game helps you notice when you're leaving out the melody.",
+   "apply_it": "Play the tapping game with a friend or your kids tonight, then talk about how it felt on each side.",
+   "quiz": {
+    "question": "In the tapping game, why does the tapper think the song is easy to guess?",
+    "options": [
+     "They hear the tune in their head that the listener doesn't",
+     "The listener isn't paying attention",
+     "Rhythms are always easy to recognise"
+    ],
+    "answer": 0,
+    "explanation": "The tapper fills in the melody from memory, just as an explainer fills in context the listener doesn't have."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--04",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "curse-of-knowledge",
+    "signals"
+   ],
+   "title": "Learn the signs that your explanation isn't landing",
+   "body": "People rarely say 'I'm lost'. They're polite, or embarrassed, or don't know which question to ask. So watch for quieter signals.\n\nA blank nod, a long pause, a question that shows they missed an earlier step, or eyes drifting to their phone. On a work call, it might be silence when you ask 'Any questions?' At home, your partner might say 'Fine, whatever you think', which can mean they've stopped following.\n\nWhen you spot these signs, don't push on. Stop and say something like 'I think I've jumped ahead. Let me go back a step.' That takes the blame off them and gives you both a fresh start.",
+   "apply_it": "In your next explanation, pause halfway and look properly at the other person's face before you carry on.",
+   "quiz": {
+    "question": "Someone keeps nodding but asks a question about something you covered earlier. What does this suggest?",
+    "options": [
+     "They are testing you",
+     "They have understood everything",
+     "They missed a step and are quietly lost",
+     "They want you to speed up"
+    ],
+    "answer": 2,
+    "explanation": "Questions about earlier points often show a gap. Going back a step helps more than ploughing on."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--05",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "prior-knowledge",
+    "audience"
+   ],
+   "title": "Find out what they already know before you start",
+   "body": "An explanation is a bridge from what someone knows to what they don't. You can't build it if you don't know where their side starts.\n\nSo ask first. 'Have you used a spreadsheet before?' 'How much do you know about how mortgages work?' 'What did the school tell you already?' Keep it light, so it doesn't feel like a test.\n\nThe answer saves time both ways. Your brother who already budgets doesn't need the basics, while your friend who has never had a payslip needs to start with what the numbers mean. Without asking, you'll either bore one or lose the other.",
+   "apply_it": "Before your next explanation, ask one quick question about what the person already knows, and adjust where you begin.",
+   "quiz": {
+    "question": "Why ask what someone already knows before explaining?",
+    "options": [
+     "To show off your own knowledge",
+     "To find the right starting point for them",
+     "To make the explanation longer",
+     "To avoid explaining at all"
+    ],
+    "answer": 1,
+    "explanation": "Knowing their starting point lets you skip what they know and fill in what they don't."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--06",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "prior-knowledge",
+    "connections"
+   ],
+   "title": "Hook new ideas onto things they already understand",
+   "body": "New information sticks better when it connects to something familiar. Once you know where someone is starting, link each new idea to it.\n\nExplaining a project tracker to a colleague who loves lists? 'It's like your to-do list, but the whole team can see it and tick things off.' Explaining a credit score to a young adult? 'It's a bit like a reputation: every time you pay on time, people trust you a little more.'\n\nThe link doesn't need to be perfect. It gives the new idea a peg to hang on, so it isn't floating on its own. Phrases like 'You know how...' are a simple way in.",
+   "apply_it": "Start your next explanation with 'You know how...' and link the new idea to something they already do.",
+   "quiz": {
+    "question": "What does linking a new idea to a familiar one do?",
+    "options": [
+     "It gives the new idea something to attach to",
+     "It replaces the need for detail",
+     "It confuses people with two ideas",
+     "It only works for children"
+    ],
+    "answer": 0,
+    "explanation": "Familiar ideas act like pegs, making new information easier to grasp and remember."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--07",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "motivation",
+    "relevance"
+   ],
+   "title": "Say why it matters to them before saying how it works",
+   "body": "People listen harder when they know what's in it for them. If you launch straight into the details, they may not see why they should bother.\n\nCompare 'The new booking system uses shared calendars' with 'This means you won't get double-booked any more. Here's how it works.' The second gives a reason to pay attention.\n\nAt home, 'Let me show you how to set up online banking' lands better as 'This means you won't need to queue at the branch. Let me show you.' A child learning to tie laces might care most that they won't trip in the playground. Find their reason, say it first, then explain.",
+   "apply_it": "Before explaining something today, finish this sentence aloud: 'This matters to you because...'",
+   "quiz": {
+    "question": "Why mention the benefit before the details?",
+    "options": [
+     "It lets you skip the details",
+     "It's more polite",
+     "It gives the listener a reason to pay attention",
+     "It makes the explanation sound official"
+    ],
+    "answer": 2,
+    "explanation": "When people see what's in it for them, they stay engaged through the details."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--08",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "big-picture",
+    "structure"
+   ],
+   "title": "Give the big picture before the details",
+   "body": "Imagine doing a jigsaw without the box lid. Each piece makes little sense on its own. Explanations work the same way: details are easier to place when people know the overall shape.\n\nSo start with a one-line map. 'There are three parts to this: the deposit, the monthly payment and the final balance.' 'Making bread is mixing, waiting and baking.' Then fill in each part.\n\nThis helps at work when you hand over a task and at home when you explain a new routine to the kids. The map tells people where they are, so they don't panic when the details start piling up.",
+   "apply_it": "Next time you explain something with several parts, begin by saying how many parts there are and naming them.",
+   "quiz": {
+    "question": "What is the main benefit of giving the big picture first?",
+    "options": [
+     "It shows you have prepared",
+     "It helps listeners place the details as they come",
+     "It makes the details unnecessary",
+     "It shortens every explanation"
+    ],
+    "answer": 1,
+    "explanation": "A simple overview works like the picture on a jigsaw box, helping people see where each piece fits."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--09",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "one-idea",
+    "focus"
+   ],
+   "title": "Give one idea at a time",
+   "body": "When we're excited or rushed, we pile ideas on top of each other. 'The form goes online, also the deadline moved, and remember the new code, oh and finance want a copy.' The listener catches one, maybe two.\n\nOur short-term memory can only hold a few new things at once. So give one idea, let it settle, then move to the next. Pause between them. A simple 'Got that? Next thing...' helps.\n\nWith your partner, don't explain the new insurance, the car tax and the holiday budget in one go. Pick the one that matters most today. The others can wait for another conversation.",
+   "apply_it": "In your next explanation, stop after each idea and wait for a nod or question before moving on.",
+   "quiz": {
+    "question": "Why give one idea at a time?",
+    "options": [
+     "People can only hold a few new things in mind at once",
+     "It makes you sound slower and more careful",
+     "It avoids having to finish",
+     "Long lists are always wrong"
+    ],
+    "answer": 0,
+    "explanation": "Short-term memory is limited, so spacing ideas out helps each one stick."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--10",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "steps",
+    "chunking"
+   ],
+   "title": "Break a process into small, numbered steps",
+   "body": "A process explained as one long stream is hard to follow. Split it into small steps, and say them in order, one action each.\n\nTeaching your dad to send a photo by text? Step one, open the photo. Step two, tap the share icon. Step three, choose the person. Numbering the steps helps him keep his place and pick up again if he gets distracted.\n\nThe same applies to showing a new colleague how to close the till, or helping a child make toast. Keep each step to a single action. If a step has 'and then' in the middle, it's probably two steps.",
+   "apply_it": "Write a three to five step list for a task you often explain, with one action per step. Keep it handy.",
+   "quiz": {
+    "question": "What sign suggests a step should be split in two?",
+    "options": [
+     "It uses a number",
+     "It contains 'and then' in the middle",
+     "It is about technology",
+     "It is the first step"
+    ],
+    "answer": 1,
+    "explanation": "If one step holds two actions, splitting it makes it easier to follow and remember."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--11",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "examples",
+    "concrete"
+   ],
+   "title": "Lead with a concrete example, then the general rule",
+   "body": "Abstract statements are hard to picture. 'Keep your expenses proportionate' means little until you hear 'A sandwich and a coffee is fine; a three-course dinner isn't.'\n\nStarting with an example lets people see the idea first and then understand the rule behind it. Our brains grab hold of specific things: a name, a number, a scene.\n\nAt home, 'Be more considerate' is vague. 'When you finish the milk, add it to the shopping list' is clear. Explaining a budget? Talk about one real week of spending before talking about categories. Once people have a solid example, the general idea makes sense.",
+   "apply_it": "Find a vague rule you often repeat at home or work and replace it with one specific example.",
+   "quiz": {
+    "question": "Which is the most concrete way to explain 'be considerate'?",
+    "options": [
+     "'Think about other people more'",
+     "'Be a better housemate'",
+     "'Try to be nicer'",
+     "'Add the milk to the list when you finish it'"
+    ],
+    "answer": 3,
+    "explanation": "A specific action shows exactly what the general idea looks like in real life."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--12",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "examples",
+    "non-examples"
+   ],
+   "title": "Use more than one example, and show what it isn't",
+   "body": "One example can mislead. If you explain 'fruit' using only apples, a child might think all fruit is round and crunchy. Two or three different examples show what they have in common.\n\nIt also helps to give a non-example: something that looks close but doesn't count. 'Tomatoes are fruit, but rhubarb is usually treated as a vegetable.' At work: 'An urgent request is one that stops a customer being served. A manager wanting it soon isn't urgent on its own.'\n\nThe contrast draws the edge of the idea. People learn where it stops, not just where it starts.",
+   "apply_it": "Next time you explain a category or rule, give two different examples and one thing that doesn't count.",
+   "quiz": {
+    "question": "Why add a non-example?",
+    "options": [
+     "It shows where the idea stops",
+     "It adds humour",
+     "It proves the person was wrong",
+     "It replaces the main example"
+    ],
+    "answer": 0,
+    "explanation": "Contrasting what counts with what doesn't helps people see the boundary of the idea."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--13",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "analogies",
+    "comparison"
+   ],
+   "title": "Use an analogy to borrow understanding from something familiar",
+   "body": "An analogy explains something new by comparing it to something people already understand. 'Your immune system is like a security team that remembers faces.' 'Cloud storage is a locker you can open from any phone.'\n\nGood analogies do a lot of work in a few words. They let people use what they already know to reason about the new thing, and they're memorable.\n\nYou can use them anywhere. Explaining interest on debt to a young person: 'It's like a snowball rolling downhill, it grows as it goes.' Explaining why you need a quiet evening: 'My battery's on two per cent.' Keep it short and simple, then go back to the real thing.",
+   "apply_it": "Think of one analogy for something you explain at work, and try it out on a friend first.",
+   "quiz": {
+    "question": "What makes an analogy useful?",
+    "options": [
+     "It sounds clever",
+     "It lets people use what they already know to understand something new",
+     "It avoids giving any facts",
+     "It replaces the need for examples"
+    ],
+    "answer": 1,
+    "explanation": "Analogies borrow understanding from familiar things, so new ideas feel less strange."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--14",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "analogies",
+    "audience"
+   ],
+   "title": "Pick analogies from the other person's world",
+   "body": "An analogy only helps if the comparison is familiar to the listener. A football analogy can lose someone who doesn't follow football. A cooking analogy can lose someone who never cooks.\n\nSo choose from their world. For a gardener, a slow investment might be 'like planting a tree: little happens for years, then it grows fast'. For a gamer, saving progress at work could be 'like a checkpoint before the boss level'. For a child, sharing screen time could be 'like taking turns on the swing'.\n\nIf you're unsure what they know, ask about their hobbies or job, and borrow from there.",
+   "apply_it": "Think of someone you often explain things to. Note one hobby they love and invent an analogy from it.",
+   "quiz": {
+    "question": "Your aunt loves baking. Which analogy would likely work best for her?",
+    "options": [
+     "A chess analogy",
+     "A motor racing analogy",
+     "An analogy from a video game",
+     "Following a recipe in the right order"
+    ],
+    "answer": 3,
+    "explanation": "Analogies work best when they come from the listener's own interests and experience."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--15",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "analogies",
+    "accuracy"
+   ],
+   "title": "Say where your analogy stops working",
+   "body": "Every analogy breaks somewhere. Electricity flows a bit like water in pipes, but it isn't wet, and the comparison falls apart if pushed too far. If you don't say so, people may draw wrong conclusions.\n\nA quick caveat helps: 'It's like a loan from a friend, except the bank charges interest and won't forget.' 'A virus is like an uninvited guest, though it can't think or plan.'\n\nAt work, if you compare a project to building a house, add, 'but unlike a house, we can change the plans halfway through'. Naming the limit keeps the useful part and stops the misunderstanding before it starts.",
+   "apply_it": "Next time you use an analogy, add one sentence starting 'The difference is...'",
+   "quiz": {
+    "question": "Why point out where an analogy breaks down?",
+    "options": [
+     "To stop people drawing wrong conclusions from it",
+     "To show the analogy was a mistake",
+     "To make the explanation longer",
+     "Analogies never break down"
+    ],
+    "answer": 0,
+    "explanation": "Flagging the limit keeps the useful comparison while preventing misunderstandings."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--16",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "jargon",
+    "plain-words"
+   ],
+   "title": "Spot the jargon you no longer notice",
+   "body": "Jargon is any word your group uses that outsiders don't. The tricky part is that you stop hearing it. Words like 'onboarding', 'KPI' or 'escalate' feel normal after a few months at work.\n\nIt happens outside work too. Gamers, nurses, teachers, football fans and even families have their own shorthand. Telling your new partner that Gran is 'doing her Sunday thing' means nothing to them yet.\n\nTo catch jargon, imagine explaining to a bright 12-year-old or to someone from a different job. Any word they would stumble on, swap for plain words or explain briefly. The aim isn't to sound simple; it's to be understood.",
+   "apply_it": "Ask a friend outside your job to flag any word you use that they don't know during your next chat about work.",
+   "quiz": {
+    "question": "Why is your own jargon hard to spot?",
+    "options": [
+     "Jargon is always long words",
+     "You use it so often it feels normal",
+     "Only managers use jargon",
+     "Jargon is never confusing"
+    ],
+    "answer": 1,
+    "explanation": "Words you use daily stop feeling like jargon to you, even though outsiders don't know them."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--17",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "jargon",
+    "definitions"
+   ],
+   "title": "If you must use a technical word, explain it once and stick to it",
+   "body": "Sometimes a technical term is worth learning, because the person will hear it again. A patient may need to know 'blood pressure', and a new staff member may need 'invoice number'.\n\nIn that case, give a quick plain meaning the first time. 'The excess, which is the amount you pay yourself before insurance kicks in, is 250 pounds.' Then use the same word every time after. Switching between 'excess', 'deductible' and 'your share' can make people think these are three different things.\n\nAt home, if you teach a child the word 'fraction', keep calling it that, so the word and the idea grow together.",
+   "apply_it": "Pick one technical word you need someone to learn. Write a one-line plain meaning you can use when you introduce it.",
+   "quiz": {
+    "question": "Why use the same term every time after defining it?",
+    "options": [
+     "It sounds more professional",
+     "It's quicker to type",
+     "Changing words can make people think you mean something different",
+     "Definitions only last a short time"
+    ],
+    "answer": 2,
+    "explanation": "Keeping one term avoids confusion about whether different words mean different things."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--18",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "numbers",
+    "risk"
+   ],
+   "title": "Make numbers meaningful by comparing them to something real",
+   "body": "Numbers can be hard to picture on their own. '0.5 per cent' or '40 square metres' may slide past people.\n\nTurn them into something they can see. 'About one person in every 200.' 'Roughly the size of a tennis court.' 'That's about the price of a coffee each week.' Whole numbers like '1 in 10' are often easier to grasp than percentages, especially for risks.\n\nAt home, telling your teenager a phone contract costs 'about two weeks of your part-time wages each month' makes it real. At work, 'this saves each of us around an hour a week' lands better than an annual total nobody can picture.",
+   "apply_it": "Take one number you'll share this week and rewrite it as a comparison to something familiar.",
+   "quiz": {
+    "question": "Which is often easier to understand?",
+    "options": [
+     "'A 2.5 per cent chance'",
+     "'1 in 40 people'",
+     "'0.025 probability'"
+    ],
+    "answer": 1,
+    "explanation": "Natural frequencies like '1 in 40' are often easier to picture than percentages or decimals."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--19",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "pictures",
+    "visuals"
+   ],
+   "title": "Draw a quick sketch instead of adding more words",
+   "body": "When words aren't working, a picture often does. A rough sketch on the back of an envelope can show in seconds what takes minutes to describe.\n\nYou don't need to draw well. Boxes, arrows and stick figures are enough. Showing a friend the way to your house? Draw the roundabout and the turn after the pub. Explaining a team's roles? Draw circles with names and lines between them.\n\nWith children, drawing together turns a confusing idea into a shared activity. With older relatives on a call, holding a sketch up to the camera can stop a frustrating loop of 'no, the other button'.",
+   "apply_it": "Next time an explanation gets stuck, grab paper or a whiteboard and draw it instead of repeating yourself.",
+   "quiz": {
+    "question": "What kind of drawing skill do you need for a helpful sketch?",
+    "options": [
+     "Very little; boxes and arrows are enough",
+     "Art training",
+     "Special software",
+     "A ruler and colours"
+    ],
+    "answer": 0,
+    "explanation": "Simple shapes and arrows are often enough to make an idea clear."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--20",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "diagrams",
+    "visuals"
+   ],
+   "title": "Match the picture to the idea you're explaining",
+   "body": "Different ideas need different kinds of picture. A process suits a row of boxes with arrows. A comparison suits two columns side by side. Change over time suits a simple line going up or down. Parts of a whole suit a split circle or a labelled sketch.\n\nExplaining how a job application moves along? Draw the stages left to right. Comparing two phone deals with your partner? Two columns with the key costs. Showing your child where their pocket money goes? A circle cut into slices.\n\nKeep it to the few things that matter. A cluttered diagram is as confusing as a cluttered sentence.",
+   "apply_it": "Pick something you're explaining this week and decide: is it a process, a comparison, a change or parts of a whole? Sketch it to match.",
+   "quiz": {
+    "question": "Which picture best explains steps in a process?",
+    "options": [
+     "A pie chart",
+     "Boxes joined by arrows in order",
+     "A single photograph",
+     "A table of numbers"
+    ],
+    "answer": 1,
+    "explanation": "Boxes and arrows show order and flow, which is what a process needs."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--21",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "demonstration",
+    "hands-on"
+   ],
+   "title": "Show it, then let them try it while you watch",
+   "body": "For practical skills, showing beats telling. Watching someone do a task, then doing it yourself, sticks far better than hearing a description.\n\nSo demonstrate slowly, saying what you're doing. Then hand it over. Let your colleague run the report while you sit beside them. Let your mum book the online appointment herself while you watch, rather than doing it for her.\n\nIt's tempting to grab the mouse or take the spoon back. Try to keep your hands in your lap and guide with words instead. Making the small mistakes with you there is how people learn to do it without you.",
+   "apply_it": "Next time you teach a practical task, do it once, then let the other person do it while you only use words.",
+   "quiz": {
+    "question": "After demonstrating a task, what helps most?",
+    "options": [
+     "Doing it again yourself to be sure",
+     "Letting them try while you guide with words",
+     "Writing a long manual",
+     "Taking over at the first mistake"
+    ],
+    "answer": 1,
+    "explanation": "Hands-on practice with guidance helps people learn the skill for themselves."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--22",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "stories",
+    "memory"
+   ],
+   "title": "Wrap the idea in a short story about a real situation",
+   "body": "People remember stories more easily than lists of facts. A short story gives an idea a person, a problem and an outcome.\n\nInstead of 'Back up your files regularly', try 'My friend lost three years of photos when her laptop died. She'd never set up a backup. It takes two minutes.' The idea now has a face and a feeling.\n\nAt work, explaining a new safety rule lands better with a short account of the near miss that led to it. With kids, a story about a character who forgot their homework teaches more than a lecture. Keep stories short and true, and link them straight back to the point.",
+   "apply_it": "Think of a short, true story that shows why something you often explain matters. Use it next time.",
+   "quiz": {
+    "question": "Why are stories helpful when explaining?",
+    "options": [
+     "They make explanations longer",
+     "They avoid the need for facts",
+     "They give the idea a person, problem and outcome that people remember",
+     "They're only for children"
+    ],
+    "answer": 2,
+    "explanation": "Stories make ideas concrete and memorable by attaching them to real people and events."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--23",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "respect",
+    "tone"
+   ],
+   "title": "Simplify the explanation without talking down to the person",
+   "body": "Making something simple isn't the same as treating someone as simple. People quickly notice a slow, sing-song voice or 'Don't worry, it's very easy'. It can feel patronising.\n\nKeep your normal tone and respect their intelligence. Simplify the content, not the person. Say 'This is confusing at first; it took me ages too' rather than 'It's really obvious'.\n\nThis matters with older relatives, with colleagues new to a field and with a partner learning your hobby. They may lack your background, but they can reason perfectly well. Clear words plus an adult tone tells them you think they're capable.",
+   "apply_it": "Notice if you ever say 'It's easy' when explaining. Swap it for 'It takes a bit of getting used to.'",
+   "quiz": {
+    "question": "Which phrase is least likely to sound patronising?",
+    "options": [
+     "'It's dead simple, honestly'",
+     "'Even a child could do this'",
+     "'Don't worry your head about it'",
+     "'This tripped me up at first too'"
+    ],
+    "answer": 3,
+    "explanation": "Admitting something can be tricky respects the listener and makes asking questions feel safe."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--24",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "need-to-know",
+    "focus"
+   ],
+   "title": "Leave out what they don't need right now",
+   "body": "Experts love detail, and it's tempting to share all of it. But extra information can bury the bit that matters.\n\nAsk: what does this person need to know to do the next thing? Your flatmate needs to know which day the bins go out and which bin is which, not the history of the council's recycling policy. A new starter needs to know how to log in today, not every feature of the system.\n\nYou can always offer more: 'There's more to it if you're curious.' That lets interested people ask while sparing everyone else. Simple doesn't mean incomplete; it means complete enough for now.",
+   "apply_it": "Before your next explanation, list what you plan to say and cross out anything they won't need this week.",
+   "quiz": {
+    "question": "What question helps decide what to leave out?",
+    "options": [
+     "What does this person need to know to do the next thing?",
+     "What is the most impressive fact I know?",
+     "How long can I keep talking?",
+     "What did I learn first?"
+    ],
+    "answer": 0,
+    "explanation": "Focusing on what the person needs to act next keeps the essential bit from getting buried."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--25",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "children",
+    "parenting"
+   ],
+   "title": "With children, use short words, real objects and their own experiences",
+   "body": "Children understand best through what they can see, touch and have already lived. Abstract talk floats past them.\n\nExplaining why we save money? Use three jars and real coins. Explaining a hospital visit? Talk about what they'll see, hear and feel, step by step. Explaining time? 'Two sleeps' works better than 'Thursday' for a small child.\n\nKeep sentences short and invite questions. Children's 'why?' often shows exactly where the gap is. If you don't know the answer, it's fine to say 'Good question, let's find out together.' That models curiosity and keeps the conversation honest.",
+   "apply_it": "Next time a child asks 'why?', answer with one sentence and one real object or example from their day.",
+   "quiz": {
+    "question": "For a young child, which way of saying when something will happen often works best?",
+    "options": [
+     "'Next Thursday'",
+     "'In about 72 hours'",
+     "'In two sleeps'",
+     "'Later this week'"
+    ],
+    "answer": 2,
+    "explanation": "Linking time to familiar routines like sleeps makes it concrete for young children."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--26",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "older-relatives",
+    "technology"
+   ],
+   "title": "With older relatives, go at their pace and write the steps down",
+   "body": "Explaining a phone, app or online form to an older relative can test everyone's patience. The trick is to slow down and leave something behind.\n\nSit beside them rather than taking over. Use their device, not yours. Name buttons by what they look like: 'the green phone picture', 'the three dots at the top'. Go one step at a time and let them press each button.\n\nThen write the steps on a card in large, clear writing, using their words, not yours. Next time they get stuck, they can check the card before calling you. That builds confidence and saves you both frustration.",
+   "apply_it": "Next time you help an older relative with tech, write the steps on a card in their words before you leave.",
+   "quiz": {
+    "question": "Why name buttons by what they look like?",
+    "options": [
+     "It sounds friendlier",
+     "It's quicker than using real names",
+     "It matches what the person actually sees on screen",
+     "Technical names are always wrong"
+    ],
+    "answer": 2,
+    "explanation": "Describing what's on screen helps people find things without needing technical vocabulary."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--27",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "health",
+    "patients"
+   ],
+   "title": "Explain health news in plain words and put the main action first",
+   "body": "Health information often arrives when people are worried, tired or in pain, so they take in less. Whether you're a carer, a health worker or a family member passing on what the doctor said, keep it simple.\n\nLead with what the person needs to do: 'Take one tablet with breakfast for seven days.' Use everyday words: 'high blood pressure' rather than 'hypertension'. Limit it to two or three key points. Write them down so they can check later, and use pictures, like a pill chart, where they help.\n\nStress can make even sharp people forget. Writing things down isn't a sign you think they can't cope; it's a kindness.",
+   "apply_it": "Next time you pass on health advice, write the top two or three actions on paper for the person to keep.",
+   "quiz": {
+    "question": "When explaining health advice, what should usually come first?",
+    "options": [
+     "The medical background",
+     "What the person needs to do",
+     "The name of the condition in Latin",
+     "Possible rare side effects"
+    ],
+    "answer": 1,
+    "explanation": "Putting the key action first helps people remember what matters most, especially when stressed."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--28",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "checking",
+    "pace"
+   ],
+   "title": "Check understanding as you go, not only at the end",
+   "body": "If you only check at the end, a misunderstanding from the start may have grown into a big muddle. Short check-ins along the way catch problems early.\n\nAfter each chunk, pause and ask something specific: 'Does that bit about the deadline make sense?' 'Which part would you like me to go over?' These work better than 'Any questions?', which often gets a quick 'No'.\n\nWith your partner planning a trip, check after the dates before moving to costs. Teaching a teenager to drive, check after explaining the mirrors before moving on to signals. Small checks keep you both moving together.",
+   "apply_it": "In your next explanation, ask one specific check-in question halfway through, not just at the end.",
+   "quiz": {
+    "question": "Why might 'Any questions?' not be enough?",
+    "options": [
+     "People often say 'no' even when unsure",
+     "It's rude",
+     "It takes too long",
+     "It always confuses people"
+    ],
+    "answer": 0,
+    "explanation": "A general question is easy to brush off; specific check-ins invite honest answers."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--29",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "teach-back",
+    "checking"
+   ],
+   "title": "Use teach-back: ask them to explain it in their own words",
+   "body": "The best way to know whether you explained something clearly is to hear it back. This is called teach-back, and it's widely used in healthcare to make sure patients understand instructions.\n\nAfter explaining, ask the person to tell you, in their own words, what they'll do. 'Just so I know I've explained it well, can you tell me how you'll take the tablets?' At work: 'Can you walk me through what you'll send to the client?'\n\nIf their version matches, great. If it doesn't, you've found the gap before it causes a problem. Nodding can hide confusion; putting it into their own words can't.",
+   "apply_it": "After your next important explanation, ask the person to tell you in their own words what they'll do next.",
+   "quiz": {
+    "question": "What is teach-back?",
+    "options": [
+     "You repeat your explanation more slowly",
+     "They explain it back to you in their own words",
+     "You test them with a written quiz",
+     "You teach them a different topic"
+    ],
+    "answer": 1,
+    "explanation": "Teach-back means the listener explains it back, showing whether your explanation worked."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--30",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "teach-back",
+    "tone"
+   ],
+   "title": "Frame teach-back as checking yourself, not testing them",
+   "body": "Teach-back can feel like an exam if it's asked the wrong way. 'Tell me what I just said' sounds like school. People may feel embarrassed or defensive.\n\nSo put the focus on you. 'I've gone through a lot. Can you tell me what you'll do first, so I know I've been clear?' 'I want to make sure I didn't miss anything. How would you explain this to your sister?'\n\nThis works at work with a new team member, at home with your teenager and with a parent after a doctor's visit. When the check is about your explaining, it's easier for them to admit what didn't stick.",
+   "apply_it": "Write down one teach-back question that starts with 'So I know I've explained this well...' and use it this week.",
+   "quiz": {
+    "question": "Which teach-back question is the kindest?",
+    "options": [
+     "'Repeat what I said'",
+     "'Were you even listening?'",
+     "'So I know I was clear, what will you do first?'",
+     "'Prove you understood'"
+    ],
+    "answer": 2,
+    "explanation": "Taking responsibility for clarity makes teach-back feel like teamwork rather than a test."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--31",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "re-explaining",
+    "patience"
+   ],
+   "title": "If it didn't land, explain it a different way, not louder",
+   "body": "When someone doesn't understand, our instinct is to repeat the same words, slower and louder. It rarely helps. If the first route didn't work, try another.\n\nSwitch tools. If words failed, draw it. If the rule didn't click, give an example. If the example missed, try an analogy from their world, or show them by doing it. 'Let me try that another way' signals patience and keeps the mood calm.\n\nThis helps with a child stuck on homework, a colleague puzzled by a new process or a friend confused by a group plan. Each new angle is another chance for the idea to connect.",
+   "apply_it": "Next time someone looks lost, say 'Let me try that another way' and switch to a picture, example or analogy.",
+   "quiz": {
+    "question": "If someone doesn't understand, what usually helps most?",
+    "options": [
+     "Repeating it word for word, louder",
+     "Giving up and doing it for them",
+     "Trying a different approach, like an example or a sketch",
+     "Telling them to pay more attention"
+    ],
+    "answer": 2,
+    "explanation": "A new angle gives the idea another way in; repeating the same words rarely does."
+   }
+  },
+  {
+   "id": "clarity-explain-anything-simply--32",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "practice",
+    "habits"
+   ],
+   "title": "Practise one simple explanation every day",
+   "body": "Explaining clearly gets easier with practice, and everyday life offers plenty of chances.\n\nHere's a simple daily habit. Pick one thing you explain today, at work, at home or with a friend. Before you start, ask what they already know. Use one example or analogy from their world, and give one idea at a time. At the end, ask them to say it back in their own words, framed as a check on you.\n\nAfterwards, take ten seconds to notice what worked and what didn't. Over weeks, these small moments add up. You'll find people follow you more easily, ask fewer repeat questions and feel more confident too.",
+   "apply_it": "Today, choose one explanation and use the full routine: ask what they know, give an example, go one step at a time, then teach-back.",
+   "quiz": {
+    "question": "Which daily habit does this guide suggest?",
+    "options": [
+     "Practising one clear explanation with a teach-back check",
+     "Memorising a list of difficult words",
+     "Explaining as much as possible in one go",
+     "Avoiding explanations until you feel ready"
+    ],
+    "answer": 0,
+    "explanation": "Practising one explanation a day, ending with teach-back, builds the skill steadily."
+   }
+  }
+ ]
+}

@@ -132,6 +132,12 @@ func loadLibrary(dir string) (content.Library, error) {
 	}
 	lib.Summaries = summaries
 	problems = append(problems, sp...)
+	subjects, jp, err := content.LoadSubjects(content.SubjectDir(dir), lib)
+	if err != nil {
+		return lib, err
+	}
+	lib.Subjects = subjects
+	problems = append(problems, jp...)
 	errs := 0
 	for _, p := range problems {
 		fmt.Fprintln(os.Stderr, p.String())
@@ -143,7 +149,7 @@ func loadLibrary(dir string) (content.Library, error) {
 	for _, f := range lib.Files {
 		cards += len(f.Cards)
 	}
-	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "topic_summaries", len(lib.Summaries), "errors", errs)
+	slog.Info("library loaded", "dir", dir, "sources", len(lib.Files), "cards", cards, "topic_summaries", len(lib.Summaries), "subjects", len(lib.Subjects), "errors", errs)
 	if errs > 0 {
 		return lib, fmt.Errorf("%d validation errors", errs)
 	}

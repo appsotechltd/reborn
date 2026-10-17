@@ -285,6 +285,26 @@ class RebornRepository {
     (j) => SummaryPage.fromJson(j as Map<String, dynamic>),
   );
 
+  /// The subjects in [topic] ('' for every subject).
+  Future<Fetched<List<Subject>>> subjects(String topic) =>
+      _cached<List<Subject>>(
+        'subjects.$topic',
+        () => api.subjects(topic: topic.isEmpty ? null : topic),
+        (v) => v.map((s) => s.toJson()).toList(),
+        (j) => (j as List)
+            .whereType<Map<String, dynamic>>()
+            .map(Subject.fromJson)
+            .toList(),
+      );
+
+  /// A subject and its guides in order.
+  Future<Fetched<SubjectDetail>> subject(String id) => _cached<SubjectDetail>(
+    'subject.$id',
+    () => api.subject(id),
+    (v) => v.toJson(),
+    (j) => SubjectDetail.fromJson(j as Map<String, dynamic>),
+  );
+
   /// Best effort: the place is also kept on the device.
   Future<SummaryProgress?> setSummaryProgress(
     String id,

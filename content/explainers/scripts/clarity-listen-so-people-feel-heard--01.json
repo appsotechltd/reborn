@@ -1,0 +1,71 @@
+{
+ "card_id": "clarity-listen-so-people-feel-heard--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "heart",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Listening well is a skill you can practise, not a personality trait."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "'You're not listening.'"
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "Most of us think we listen well. Then a friend says, you're not listening, and we find out otherwise."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Feeling heard",
+     "feels like being valued."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "Feeling heard is one of the simplest ways people feel valued, at work, at home and in love."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Full attention.",
+     "Don't interrupt.",
+     "Wait before fixing."
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "Listening is a set of habits. Give full attention, hold back from interrupting, and wait before you rush to fix things."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Reflect what you heard.",
+     "Notice the feeling too."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "Then reflect what you heard, and notice feelings as well as facts."
+  },
+  {
+   "type": "apply",
+   "narration": "Tonight, pick one conversation and make your only goal to understand the other person, not to reply."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

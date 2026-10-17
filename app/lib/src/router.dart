@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -40,6 +41,7 @@ import 'features/source/source_screen.dart';
 import 'features/stashes/public_stash_screen.dart';
 import 'features/stashes/stash_detail_screen.dart';
 import 'features/stashes/stashes_screen.dart';
+import 'features/subjects/subject_screen.dart';
 import 'features/summary/summaries_screen.dart';
 import 'features/summary/summary_screen.dart';
 import 'features/timeline/timeline_screen.dart';
@@ -173,10 +175,16 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/summaries/:id',
         builder: (_, s) => SummaryScreen(
+          // A new guide (Next guide) is a new reader, never the old one's.
+          key: ValueKey('summary-screen-${s.pathParameters['id']}'),
           summaryId: s.pathParameters['id']!,
           readAll: s.uri.queryParameters['view'] == 'all',
           initialPart: int.tryParse(s.uri.queryParameters['part'] ?? ''),
         ),
+      ),
+      GoRoute(
+        path: '/subjects/:id',
+        builder: (_, s) => SubjectScreen(subjectId: s.pathParameters['id']!),
       ),
       GoRoute(
         path: '/sources/:id',

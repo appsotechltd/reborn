@@ -1,0 +1,72 @@
+{
+ "card_id": "clarity-get-to-the-point--01",
+ "about": "Animated look (how-to card): opening of a Communication Clarity guide.",
+ "voice": "eric",
+ "scenes": [
+  {
+   "type": "title",
+   "narration": "Getting to the point is a kindness to the people you talk to."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Everyone is busy.",
+     "A long route to the point loses them."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "When a message or a meeting update takes a long route to its point, people drift, guess, or miss what you needed from them."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Not blunt.",
+     "Not cold.",
+     "Just clear."
+    ],
+    "emphasis": [
+     2
+    ]
+   },
+   "narration": "Getting to the point doesn't mean being blunt or cold. It means knowing what you want to say, saying it early, and stopping once it has landed."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "'Can you pick up Sam at 4?'"
+    ],
+    "emphasis": [
+     0
+    ]
+   },
+   "narration": "A friend who texts, can you pick up Sam at four, gets a faster yes than one who sends five lines about their afternoon first."
+  },
+  {
+   "type": "statement",
+   "params": {
+    "lines": [
+     "Know your point.",
+     "Say it first.",
+     "Then stop."
+    ],
+    "emphasis": [
+     1
+    ]
+   },
+   "narration": "This guide shows you how: know your point before you speak, lead with the bottom line, and stay warm while being brief."
+  },
+  {
+   "type": "apply",
+   "narration": "Notice one long message you receive today. Ask yourself where the actual point was, and how long it took to arrive."
+  },
+  {
+   "type": "end",
+   "min_seconds": 4
+  }
+ ]
+}

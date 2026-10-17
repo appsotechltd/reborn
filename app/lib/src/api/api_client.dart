@@ -403,6 +403,23 @@ class ApiClient {
     ),
   );
 
+  // ---- Subjects (ordered courses of guides) ----
+
+  /// Every subject, or those in [topic].
+  Future<List<Subject>> subjects({String? topic}) async {
+    final json = _map(
+      await _send('GET', '/v1/subjects', query: {'topic': topic}),
+    );
+    return (json['subjects'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(Subject.fromJson)
+        .toList();
+  }
+
+  Future<SubjectDetail> subject(String id) async => SubjectDetail.fromJson(
+    _map(await _send('GET', '/v1/subjects/${Uri.encodeComponent(id)}')),
+  );
+
   Future<void> markSeen(List<String> postIds) =>
       _send('POST', '/v1/seen', body: {'post_ids': postIds});
 

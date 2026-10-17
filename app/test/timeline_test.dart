@@ -156,7 +156,14 @@ void main() {
     await pumpApp(tester, server);
     await tester.tap(find.text('Money'));
     await tester.pumpAndSettle();
-    expect(server.calls.last.query['topics'], 'money');
+    expect(
+      server.calls.lastWhere((c) => c.path == '/v1/timeline').query['topics'],
+      'money',
+    );
+    // A topic also asks for its subjects (none here, so no row).
+    expect(server.calls.last.path, '/v1/subjects');
+    expect(server.calls.last.query['topic'], 'money');
+    expect(find.byKey(const ValueKey('subjects-row-money')), findsNothing);
   });
 
   testWidgets('All / Videos / Images keeps the posts with that media, '
