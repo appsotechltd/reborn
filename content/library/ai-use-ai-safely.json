@@ -1,0 +1,764 @@
+{
+  "source": {
+    "id": "ai-use-ai-safely",
+    "title": "Use AI Safely and Fairly",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on UNESCO, the OECD, the UK Information Commissioner's Office, UNICEF, the US National Institute of Standards and Technology and the US Copyright Office.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: UNESCO, Recommendation on the Ethics of Artificial Intelligence, https://www.unesco.org/en/artificial-intelligence/recommendation-ethics; OECD, AI Principles, https://oecd.ai/en/ai-principles; Information Commissioner's Office, Guidance on AI and data protection, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/; UNICEF, Policy guidance on AI for children, https://www.unicef.org/globalinsight/reports/policy-guidance-ai-children; National Institute of Standards and Technology, AI Risk Management Framework, https://www.nist.gov/itl/ai-risk-management-framework; US Copyright Office, Copyright and Artificial Intelligence, https://www.copyright.gov/ai/"
+  },
+  "cards": [
+    {
+      "id": "ai-use-ai-safely--01",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "overview",
+        "safety",
+        "fairness"
+      ],
+      "title": "Using AI well means protecting people, being fair and staying in charge",
+      "body": "AI tools are now part of daily life for many people, at home, at school and at work. Most uses are harmless and helpful. But a few habits make a big difference to keeping yourself and others safe.\n\nThis guide covers privacy, including what never to paste into a chatbot. It explains bias and fairness, the basics of copyright in general terms, and being honest about AI use at school and work.\n\nIt also looks at children and AI, AI companions and wellbeing, the environmental cost of AI, who is accountable when things go wrong, and how to stay in charge of important decisions. Prompting tips are in a separate guide.",
+      "apply_it": "Think of one way you used AI this month and ask: did it involve anyone else's information?",
+      "quiz": {
+        "question": "Which of these is a theme of this guide?",
+        "options": [
+          "How to make AI write faster",
+          "Choosing the cheapest AI tool",
+          "Privacy, fairness, honesty and staying in charge",
+          "Building your own AI"
+        ],
+        "answer": 2,
+        "explanation": "The guide focuses on using AI safely and fairly: privacy, bias, copyright, honesty, children, wellbeing and accountability."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--02",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "data",
+        "habits"
+      ],
+      "title": "Assume anything you type into AI could be stored or seen by others",
+      "body": "When you chat with an AI tool, your words usually travel to a company's computers. Depending on the service and its settings, they may be stored, checked by staff for safety or quality, or used to improve the tool.\n\nYou often cannot see exactly what happens to your data, and policies can change. So a safe habit is to treat a chat box like a postcard rather than a sealed letter.\n\nThat does not mean you should never use AI. It means thinking for a moment before sharing anything personal. Ask yourself: would I be comfortable if a stranger read this? If not, leave it out or rewrite it in general terms.",
+      "apply_it": "Before your next AI chat, ask yourself whether you would be happy for a stranger to read it.",
+      "quiz": {
+        "question": "What is a safe way to think about what you type into an AI tool?",
+        "options": [
+          "Like a postcard that others might be able to read",
+          "Like a sealed, secret letter",
+          "Like a thought no one can ever see",
+          "Like a locked diary"
+        ],
+        "answer": 0,
+        "explanation": "Because data may be stored or reviewed, treating it like a postcard helps you avoid sharing what should stay private."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--03",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "security",
+        "personal-data"
+      ],
+      "title": "Never paste passwords, ID numbers, bank details or private health records",
+      "body": "Some information is so sensitive that it should stay out of AI chats almost always. This includes passwords and security codes, bank and card numbers, passport or national ID numbers, your full home address with other details, and private medical or legal records.\n\nIf this kind of data leaked or was misused, it could lead to fraud, identity theft or embarrassment that is hard to undo.\n\nIf you need help with a form or a letter that contains these details, replace them with placeholders, such as writing NAME or ACCOUNT NUMBER instead of the real thing. You still get the help you need, without the risk.",
+      "apply_it": "Next time you ask AI about a document, swap real personal details for placeholders like NAME.",
+      "quiz": {
+        "question": "What is a safe way to get AI help with a letter containing your bank details?",
+        "options": [
+          "Paste the full letter as it is",
+          "Add your password for extra context",
+          "Send a photo of your card",
+          "Replace the details with placeholders before pasting"
+        ],
+        "answer": 3,
+        "explanation": "Placeholders let you get help with the wording while keeping sensitive numbers out of the tool."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--04",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "settings",
+        "control"
+      ],
+      "title": "Check the privacy settings of the AI tools you use",
+      "body": "Many AI services offer some choices about your data. Some let you switch off chat history, delete past conversations, or ask that your chats are not used to train future versions. Options and wording vary between services and change over time.\n\nTake five minutes to look at the settings and the privacy information of any tool you use often. Look for answers to simple questions: is my history saved, can I delete it, and is my data used for training?\n\nIf you cannot find clear answers, be extra cautious about what you share. Clear privacy information is a sign that a company takes your data seriously.",
+      "apply_it": "Open the settings of an AI tool you use and find out whether your chats are saved or used for training.",
+      "quiz": {
+        "question": "What should you do if you cannot find clear privacy information for a tool?",
+        "options": [
+          "Share more to test it",
+          "Be extra cautious about what you share",
+          "Assume everything is deleted",
+          "Assume it is completely private"
+        ],
+        "answer": 1,
+        "explanation": "Unclear privacy information is a reason to share less, since you cannot be sure how data is handled."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--05",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "anonymising",
+        "habits"
+      ],
+      "title": "Remove names and identifying details before you ask for help",
+      "body": "You can often get the same useful help without revealing who is involved. This is called anonymising, and it is a simple but strong habit.\n\nSay you want advice on a tense message from a neighbour. Instead of pasting their name, street and the full message, describe it: my neighbour sent an angry note about parking, how should I reply calmly? The advice will be just as good.\n\nRemove names, exact addresses, workplace names, dates of birth and small details that could identify a person when combined. Changing a few details is usually enough, and it protects both you and the people you are talking about.",
+      "apply_it": "Rewrite your next AI question so it contains no real names or addresses.",
+      "quiz": {
+        "question": "What is anonymising?",
+        "options": [
+          "Making text longer",
+          "Translating text into another language",
+          "Removing names and details so people cannot be identified",
+          "Sending messages without a subject line"
+        ],
+        "answer": 2,
+        "explanation": "Anonymising means stripping out identifying details so you can get help without exposing anyone's identity."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--06",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "images",
+        "personal-data"
+      ],
+      "title": "Photos, voice recordings and screenshots are personal data too",
+      "body": "It is easy to think only of typed text, but AI tools can now read photos, screenshots and audio. These can reveal much more than you expect.\n\nA photo may show your face, your child's school badge, a street sign or a letter on the table in the background. A screenshot of a group chat shows other people's names and messages. A voice recording carries your voice, which is personal to you.\n\nBefore you upload, look closely at what is in the picture or recording. Crop out anything unnecessary and avoid sharing images of other people, especially children, without good reason and permission.",
+      "apply_it": "Before uploading your next image to AI, zoom in and crop out anything personal in the background.",
+      "quiz": {
+        "question": "Why should you check a photo before uploading it to an AI tool?",
+        "options": [
+          "Photos never contain personal details",
+          "AI tools cannot read photos",
+          "It makes the photo brighter",
+          "Backgrounds can reveal faces, addresses, schools or letters"
+        ],
+        "answer": 3,
+        "explanation": "Images often contain hidden personal details in the background that you may not want to share."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--07",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "privacy",
+        "consent",
+        "respect"
+      ],
+      "title": "Respect other people's privacy, not just your own",
+      "body": "When you paste a friend's email, a colleague's notes or a family member's medical letter into AI, you are sharing their information, not just yours. They have not agreed to that.\n\nThink about how you would feel if someone pasted your private messages into a tool without asking. Most people would feel uneasy.\n\nA good rule is to share other people's information only when you have their permission or a clear and fair reason, and even then to remove what is not needed. At work, there may also be data protection rules that apply. Rules differ by country, so follow your organisation's guidance.",
+      "apply_it": "Next time you want AI help with someone else's message, ask them first or remove their details.",
+      "quiz": {
+        "question": "Why should you be careful pasting a friend's message into AI?",
+        "options": [
+          "You are sharing their private information without their agreement",
+          "It wastes the AI's time",
+          "Friends' messages are always public",
+          "AI cannot read other people's messages"
+        ],
+        "answer": 0,
+        "explanation": "Their message is their information, so sharing it without permission can break their trust and their privacy."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--08",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "bias",
+        "fairness",
+        "data"
+      ],
+      "title": "AI can repeat unfair patterns found in the data it learned from",
+      "body": "AI systems learn from huge amounts of examples made by people. Those examples include our history, our habits and our prejudices. So AI can sometimes repeat or even magnify unfair patterns.\n\nFor example, a tool might link certain jobs mainly with one gender, describe some places or cultures with stereotypes, or work less well for people with certain accents, skin tones or names. Researchers and organisations are working on these problems, but they have not been fully solved.\n\nKnowing this helps you read AI output with a careful eye. If something sounds like a stereotype, it may be one, even if it is written in a calm, confident way.",
+      "apply_it": "Next time AI describes a group of people, ask yourself whether it sounds like a stereotype.",
+      "quiz": {
+        "question": "Why can AI systems show bias?",
+        "options": [
+          "Because computers have opinions",
+          "Because they learn from human-made data that contains unfair patterns",
+          "Because bias is added on purpose by every company",
+          "They cannot show bias at all"
+        ],
+        "answer": 1,
+        "explanation": "AI learns from data made by people, which can carry historic and social biases into its answers."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--09",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "bias",
+        "testing",
+        "fairness"
+      ],
+      "title": "Test for bias by swapping names, ages or genders in your question",
+      "body": "A simple way to see whether an AI tool treats people differently is to ask the same question twice with one detail changed.\n\nAsk for a reference letter for a nurse named James, then for a nurse named Maria. Ask for advice for a 25-year-old job seeker, then a 60-year-old one. Compare the answers. Are the words warmer, the suggestions bolder or the assumptions different?\n\nThis is not a scientific test, but it can reveal patterns worth noticing. If you find differences, edit the output to be fair, and if you are using the tool for something important, report the problem to whoever runs it.",
+      "apply_it": "Try the swap test once: ask the same question with a different name, and compare the answers.",
+      "quiz": {
+        "question": "What is the swap test for bias?",
+        "options": [
+          "Swapping one AI tool for another",
+          "Swapping languages",
+          "Asking two friends for advice",
+          "Asking the same question with one personal detail changed and comparing answers"
+        ],
+        "answer": 3,
+        "explanation": "Changing just a name, age or gender and comparing results can show whether the tool treats people differently."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--10",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "fairness",
+        "decisions",
+        "rights"
+      ],
+      "title": "Fairness matters most when AI affects people's jobs, money, homes or rights",
+      "body": "Some AI uses are low stakes, like suggesting a recipe. Others can change lives, such as screening job applications, judging loan requests, deciding insurance prices or flagging people for checks.\n\nIn these high-stakes areas, unfair results can lock people out of opportunities. Many governments and international bodies say these systems need extra care, testing and human oversight. Laws differ by country and are still developing.\n\nIf you help choose or run such a system at work, ask how it was tested for fairness, who checks its decisions and how people can challenge them. If you are on the receiving end, you may have rights to an explanation or a human review, depending on where you live.",
+      "apply_it": "If AI is used for decisions about people where you work, ask how it was tested for fairness.",
+      "quiz": {
+        "question": "Which AI use needs the most care about fairness?",
+        "options": [
+          "Suggesting a dinner recipe",
+          "Choosing a playlist",
+          "Screening job applications",
+          "Picking a font"
+        ],
+        "answer": 2,
+        "explanation": "Screening job applications affects people's chances in life, so unfair results could cause serious harm."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--11",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "rights",
+        "decisions",
+        "appeals"
+      ],
+      "title": "If an automated decision affects you, you can ask for a human to look again",
+      "body": "Sometimes a decision about you may be made or shaped by an automated system: a declined application, a flagged account or a price that seems unfair.\n\nIn many places, you have some right to know that automation was involved, to ask why and to ask for a person to review it. The exact rights depend on the country and the type of decision, so this is general information rather than legal advice.\n\nStay calm and polite. Ask the organisation whether an automated system was used, what information it was based on and how to request a human review. Keep a written record of your questions and their replies.",
+      "apply_it": "If you get an unexpected automated decision, write a short message asking for an explanation and a human review.",
+      "quiz": {
+        "question": "What can you often do if an automated system makes a decision about you?",
+        "options": [
+          "Ask whether automation was used and request a human review",
+          "Nothing at all",
+          "Hack the system",
+          "Accept it forever"
+        ],
+        "answer": 0,
+        "explanation": "In many places people can ask about automated decisions and request a person to review them, though rights vary by country."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--12",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "copyright",
+        "creativity",
+        "law"
+      ],
+      "title": "Copyright and AI is still being worked out, so stay cautious",
+      "body": "Copyright protects creative work like books, songs, photos and art. AI raises new questions: can AI be trained on copyrighted work, who owns something AI helped make, and when does AI output copy too closely from existing work?\n\nCourts and governments in different countries are still answering these questions, and their answers may differ. What is allowed in one place may not be in another, and rules may change.\n\nFor everyday use, a careful approach is sensible. Do not assume AI output is free of other people's rights. Avoid asking for copies of specific protected works, and if you plan to sell or publish something, look into the rules where you live or ask a professional.",
+      "apply_it": "Before publishing anything AI helped create, check the tool's terms and the general rules in your country.",
+      "quiz": {
+        "question": "What is the current state of copyright rules for AI?",
+        "options": [
+          "Fully settled everywhere",
+          "Still being worked out, and different in different countries",
+          "AI output is always free to use",
+          "Copyright no longer exists"
+        ],
+        "answer": 1,
+        "explanation": "Courts and governments are still deciding many AI copyright questions, and answers vary by country."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--13",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "copyright",
+        "creators",
+        "honesty"
+      ],
+      "title": "Respect creators by crediting sources and not passing off copies as new",
+      "body": "Behind every song, article and illustration is a person who worked to make it. Even where rules are unclear, treating creators with respect is a good guide.\n\nIf AI helps you write about someone else's idea or research, credit the original source. If you want art in a certain feel, describe the mood, colours and setting rather than asking for a copy of a specific living artist's work. If an output looks very close to a known work, do not present it as original.\n\nSupporting creators also means buying, sharing and crediting their real work. A healthy creative world benefits everyone, including the AI tools that learn from it.",
+      "apply_it": "When you share AI-assisted work based on someone's idea, add a line crediting the original source.",
+      "quiz": {
+        "question": "What is a respectful way to get art in a certain style from AI?",
+        "options": [
+          "Ask for an exact copy of a living artist's painting",
+          "Remove the artist's signature from their work",
+          "Claim the result as the artist's work",
+          "Describe the mood, colours and setting you want"
+        ],
+        "answer": 3,
+        "explanation": "Describing the qualities you want respects creators more than requesting copies of a specific person's work."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--14",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "copyright",
+        "business",
+        "ownership"
+      ],
+      "title": "Who owns AI-made content can be unclear, so read the terms before selling",
+      "body": "If you plan to use AI-made text, images or music in a product, a book or advertising, ownership questions matter. In some places, work made mainly by AI with little human input may not be protected by copyright at all, which means others might be free to copy it. Rules differ by country.\n\nAI services also have their own terms about how you can use what they produce. These terms vary.\n\nBefore you build a business on AI-made content, read the tool's terms, keep a record of how you made the work and how much you shaped it, and consider asking a professional who knows the rules in your country.",
+      "apply_it": "If you use AI content in something you sell, save a short note on how you made it and the tool's terms.",
+      "quiz": {
+        "question": "Why should you read an AI tool's terms before selling AI-made content?",
+        "options": [
+          "Terms vary and ownership of AI-made content can be unclear",
+          "They are always identical",
+          "Reading terms is illegal",
+          "AI content can never be sold"
+        ],
+        "answer": 0,
+        "explanation": "Ownership and permitted uses vary by tool and country, so checking the terms helps you avoid problems later."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--15",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "honesty",
+        "school",
+        "learning"
+      ],
+      "title": "At school or college, follow your teacher's rules on AI and ask when unsure",
+      "body": "Schools and colleges have different rules about AI. Some ban it for certain work, some allow it for brainstorming or checking grammar, and some encourage it with clear labelling. Rules can even differ between subjects or tasks.\n\nPassing off AI-written work as your own where it is not allowed is usually treated as cheating, and the consequences can be serious. Just as important, it robs you of the learning the task was meant to give you.\n\nIf the rules are unclear, ask your teacher before you start. Saying how you used AI, for example, I used AI to suggest a structure, then wrote it myself, builds trust.",
+      "apply_it": "Check the AI rules for your next assignment, and if they are unclear, ask your teacher.",
+      "quiz": {
+        "question": "What should a student do if the AI rules for a task are unclear?",
+        "options": [
+          "Use AI for everything and say nothing",
+          "Copy a friend's work instead",
+          "Ask the teacher before starting",
+          "Assume all AI use is fine"
+        ],
+        "answer": 2,
+        "explanation": "Asking first avoids breaking rules by accident and shows honesty."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--16",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "honesty",
+        "work",
+        "trust"
+      ],
+      "title": "At work, be honest about which parts AI wrote when it matters",
+      "body": "You do not need to announce every time AI fixed a comma. But in some cases, honesty about AI use really matters.\n\nIf someone expects your personal expertise, such as a reference letter, a professional opinion or a review, they deserve to know how much was your own thinking. If a client is paying for original work, they may expect to be told when AI played a big part. Some workplaces and industries have specific rules about this.\n\nA simple question helps: would the reader feel misled if they knew how this was made? If yes, be open about it. Honesty protects your reputation far more than it harms it.",
+      "apply_it": "Ask yourself before sending AI-assisted work: would the reader feel misled if they knew how it was made?",
+      "quiz": {
+        "question": "When is it most important to be honest about AI use at work?",
+        "options": [
+          "When AI fixed one comma",
+          "When the reader expects your personal expertise or original work",
+          "Never, it is always private",
+          "Only on Mondays"
+        ],
+        "answer": 1,
+        "explanation": "Openness matters most when someone relies on your own judgement or has paid for original work."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--17",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "honesty",
+        "labelling",
+        "media"
+      ],
+      "title": "Label realistic AI images, voices and videos so no one is fooled",
+      "body": "AI can now produce pictures, voices and videos that look and sound real. Shared without a label, they can easily mislead, even if you meant them as a joke.\n\nA made-up photo of a flood, a fake voice message from a politician or an image of a celebrity doing something they never did can spread quickly and cause real confusion or harm.\n\nWhen you share AI-made media, especially anything realistic, add a clear note that it was made with AI. Many platforms ask for this. It costs you nothing and helps keep trust in what people see and hear. Clearly cartoonish or obviously fantasy images carry less risk, but a label still helps.",
+      "apply_it": "Next time you share a realistic AI image, add a clear note saying it was made with AI.",
+      "quiz": {
+        "question": "Why should realistic AI images be labelled when shared?",
+        "options": [
+          "Labels make images load faster",
+          "Because labels improve colours",
+          "It is never necessary",
+          "So people are not misled into thinking something fake is real"
+        ],
+        "answer": 3,
+        "explanation": "Realistic AI media can easily be mistaken for real events or people, so labels protect trust."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--18",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "honesty",
+        "deepfakes",
+        "harm"
+      ],
+      "title": "Never use AI to fake real people or put words in their mouths",
+      "body": "Using AI to make fake images, videos or voice recordings of real people without their consent can cause deep harm. It can damage reputations, be used for bullying or fraud, and cause great distress, especially with intimate or embarrassing content.\n\nIn many countries, some kinds of fake content about real people are against the law, and rules are growing. Even where the law is unclear, it is clearly wrong to make content that humiliates or deceives people.\n\nIf you see such content of someone you know, do not share it. Report it to the platform and support the person affected. If it involves a child, report it to the platform and the police.",
+      "apply_it": "Decide now that you will never share fake content of a real person, and report it if you see it.",
+      "quiz": {
+        "question": "What should you do if you see a fake AI video of someone you know?",
+        "options": [
+          "Share it with friends",
+          "Make another one",
+          "Not share it, report it and support the person",
+          "Ignore it forever"
+        ],
+        "answer": 2,
+        "explanation": "Refusing to spread it, reporting it and supporting the person helps limit the harm."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--19",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "children",
+        "parenting",
+        "safety"
+      ],
+      "title": "Children need age-appropriate tools, supervision and open talk about AI",
+      "body": "Many AI tools are designed for adults and have minimum age limits in their terms. Children may still come across AI in apps, games, homework tools and smart speakers.\n\nFind out which AI tools your child uses and check their age guidance and safety settings. For younger children, use AI together, in a shared space, rather than alone behind a closed door.\n\nMost important is open conversation. Ask what they use AI for, what they like about it and whether anything has ever felt strange or upsetting. Children are more likely to come to you with problems if they know they will not be told off for asking.",
+      "apply_it": "Ask your child to show you an AI tool they use and talk about what they like about it.",
+      "quiz": {
+        "question": "What does this card say is most important for keeping children safe with AI?",
+        "options": [
+          "Open conversation so they feel safe telling you about problems",
+          "Banning all screens forever",
+          "Letting them use any adult tool alone",
+          "Never mentioning AI"
+        ],
+        "answer": 0,
+        "explanation": "Talking openly helps children share worries, which is a strong protection alongside settings and supervision."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--20",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "children",
+        "learning",
+        "critical-thinking"
+      ],
+      "title": "Teach children that AI can be wrong and is not a real friend or person",
+      "body": "Children can easily believe that a friendly, chatty AI knows everything or truly cares about them. It helps to explain in simple words what AI is.\n\nYou might say: it is a computer program that is very good at guessing what words come next. It can be helpful, but it can also be wrong, and it does not have feelings like a person does.\n\nPractise together. Ask an AI a question you know the answer to and see whether it gets it right. Compare its answer with a book. This builds a healthy habit of checking, and it shows children that their own thinking still matters.",
+      "apply_it": "Ask an AI a question with your child that you already know the answer to, and check it together.",
+      "quiz": {
+        "question": "What is a helpful thing to teach children about AI?",
+        "options": [
+          "AI always tells the truth",
+          "AI can be wrong and does not have feelings like a person",
+          "AI is a secret friend",
+          "AI should never be checked"
+        ],
+        "answer": 1,
+        "explanation": "Understanding that AI can be wrong and is not a person helps children use it wisely and safely."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--21",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "children",
+        "privacy",
+        "parenting"
+      ],
+      "title": "Protect children's privacy by sharing as little about them as possible",
+      "body": "Children cannot fully agree to having their information shared, and what goes online can be hard to remove. So it is wise to be especially careful with their data.\n\nAvoid uploading children's photos, full names, school names, health details or daily routines into AI tools unless there is a clear need and you trust the service. Teach older children to do the same: no real names, addresses or school details in chats with AI.\n\nInternational guidance on children and AI stresses their right to privacy and safety. Your small choices at home help put that into practice.",
+      "apply_it": "Agree a simple family rule: no real names, addresses or school details in AI chats.",
+      "quiz": {
+        "question": "Why is extra care needed with children's information?",
+        "options": [
+          "Children's data is never used",
+          "Children prefer it to be shared",
+          "It makes AI faster",
+          "Children cannot fully agree to sharing, and online data can be hard to remove"
+        ],
+        "answer": 3,
+        "explanation": "Children cannot give full consent, and shared information can stay online, so careful protection matters."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--22",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "wellbeing",
+        "companions",
+        "relationships"
+      ],
+      "title": "AI companions can comfort, but they cannot replace real human connection",
+      "body": "Some apps let you chat with an AI that acts like a friend, partner or listener. For some people, especially when lonely, this can feel comforting, and research on the effects is still at an early stage.\n\nBut an AI companion is a product made by a company. It may be designed to keep you chatting, and it does not truly know or care for you the way a person can. It cannot sit with you, notice changes over years or give a hug.\n\nIf you use one, keep real relationships growing too: a weekly call with a friend, a club, a class or volunteering. Use AI as one small part of a full life.",
+      "apply_it": "If you chat with an AI companion, plan one real-world contact this week, like a call with a friend.",
+      "quiz": {
+        "question": "What does this card say about AI companions?",
+        "options": [
+          "They can comfort but cannot replace real human connection",
+          "They are the same as real friends",
+          "They should be used instead of family",
+          "They have real feelings"
+        ],
+        "answer": 0,
+        "explanation": "AI companions may offer comfort, but they cannot give the depth and care of real human relationships."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--23",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "wellbeing",
+        "mental-health",
+        "support"
+      ],
+      "title": "Notice signs of unhealthy reliance, and reach out to people in a crisis",
+      "body": "Pay attention to how AI use affects your life. Warning signs include losing sleep to chat, pulling back from friends or family, feeling anxious when you cannot use it, or trusting it over people who know you.\n\nIf you notice these signs, try setting time limits and talking to someone you trust. A doctor or counsellor can also help.\n\nAI tools are not a crisis service. If you or someone else is in danger or thinking about self-harm, contact your local emergency services or a crisis line straight away, or reach out to a trusted person. Real people are trained and ready to help.",
+      "apply_it": "Check in with yourself: has AI use changed your sleep, mood or time with people? Note one honest answer.",
+      "quiz": {
+        "question": "What should you do if someone is in crisis and thinking about self-harm?",
+        "options": [
+          "Ask an AI chatbot for help only",
+          "Wait until tomorrow",
+          "Contact local emergency services or a crisis line, or a trusted person",
+          "Keep it secret"
+        ],
+        "answer": 2,
+        "explanation": "AI is not a crisis service. In danger, contact local emergency services, a crisis line or a trusted person right away."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--24",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "advice",
+        "health",
+        "safety"
+      ],
+      "title": "Treat AI health, legal and money answers as general information only",
+      "body": "AI can explain medical terms, describe how a legal process generally works or define financial words. This can help you understand your situation and prepare good questions.\n\nBut AI does not know your full history, cannot examine you and may be out of date or simply wrong. Rules in law and finance also differ by country and change over time. Acting on a wrong answer could harm your health, your money or your rights.\n\nUse AI to learn and prepare, then speak to a doctor, pharmacist, lawyer, adviser or other qualified professional before making important decisions. In an emergency, always contact emergency services first.",
+      "apply_it": "Next time you look up a health or money question with AI, write down two questions to ask a professional.",
+      "quiz": {
+        "question": "How should you use AI for a health question?",
+        "options": [
+          "Instead of ever seeing a doctor",
+          "To understand and prepare questions, then check with a professional",
+          "To get a firm diagnosis",
+          "To choose your own prescription"
+        ],
+        "answer": 1,
+        "explanation": "AI can help you understand and prepare, but decisions about health should be checked with a qualified professional."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--25",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "environment",
+        "energy",
+        "responsibility"
+      ],
+      "title": "AI uses energy and water, so use it thoughtfully rather than wastefully",
+      "body": "Training and running large AI systems takes a lot of computing power in big data centres. These use electricity and often water for cooling. Estimates of the exact impact vary widely and are hard to measure, and companies are working on making systems more efficient.\n\nWhat is reasonably clear is that the total demand is significant and growing as more people use AI. A single question has a small footprint, but billions of them add up.\n\nYou do not need to feel guilty about using AI. Just use it with purpose. Avoid generating dozens of throwaway images or long answers you will not read. Use simple tools for simple jobs.",
+      "apply_it": "Before generating many versions of something, ask whether one or two thoughtful attempts would do.",
+      "quiz": {
+        "question": "What does this card say about the environmental impact of AI?",
+        "options": [
+          "It uses energy and water; exact estimates vary, but total demand is significant",
+          "It has no impact at all",
+          "It is precisely known and tiny",
+          "It only affects one country"
+        ],
+        "answer": 0,
+        "explanation": "Data centres use energy and water. Exact figures are uncertain, but overall demand is significant, so thoughtful use helps."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--26",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "accountability",
+        "responsibility",
+        "ethics"
+      ],
+      "title": "People and organisations are accountable for AI, not the machine itself",
+      "body": "When an AI system causes harm, it can be tempting to blame the computer. But a tool cannot be held responsible. People design it, companies sell it, organisations choose to use it and individuals act on its output.\n\nInternational principles on AI agree that humans must stay accountable. That means someone should be able to explain how a system is used, fix problems and answer to the people affected.\n\nIn your own life, this means you are responsible for what you do with AI output. If you share false information it gave you, the mistake is still yours to correct. Owning that keeps you careful.",
+      "apply_it": "If you ever share an AI error, correct it openly and quickly, just as you would your own mistake.",
+      "quiz": {
+        "question": "Who is accountable when AI output causes harm?",
+        "options": [
+          "The AI program alone",
+          "No one, because it was automatic",
+          "Only the person who reads it",
+          "The people and organisations who build, choose and use it"
+        ],
+        "answer": 3,
+        "explanation": "Machines cannot be held responsible, so accountability rests with the people and organisations involved."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--27",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "control",
+        "decisions",
+        "judgement"
+      ],
+      "title": "Stay in charge: you make the final call on decisions that matter",
+      "body": "AI can suggest, rank and recommend. That can be useful, but it can also slowly shift decisions away from you without you noticing, especially when its suggestions arrive quickly and sound sure of themselves.\n\nResearchers call one risk automation bias: the habit of trusting automated suggestions too much, even when our own judgement says otherwise.\n\nTo stay in charge, make important decisions yourself. Use AI to gather options or see other angles, then pause, think about your values and the people affected, and decide. If you strongly disagree with the AI, that is worth listening to. You know your life and context in ways it cannot.",
+      "apply_it": "For your next important decision, write your own view first, then compare it with any AI suggestion.",
+      "quiz": {
+        "question": "What is automation bias?",
+        "options": [
+          "A fear of all machines",
+          "A type of computer virus",
+          "Trusting automated suggestions too much, even against our own judgement",
+          "Preferring paper to screens"
+        ],
+        "answer": 2,
+        "explanation": "Automation bias is over-trusting automated suggestions, which is why you should keep making key decisions yourself."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--28",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "control",
+        "oversight",
+        "fairness"
+      ],
+      "title": "Keep a human check on AI decisions that affect other people",
+      "body": "When AI is used in decisions about others, such as sorting complaints, marking work or flagging accounts, a human check is a key safety net.\n\nThat check needs to be real, not a rubber stamp. The person reviewing should have time, information and the authority to overrule the system. If they simply click approve on everything, the check offers little protection.\n\nIf you are the reviewer, look at a sample of decisions closely, ask why the system chose what it did, and speak up when patterns look unfair. If you manage a process, make sure reviewers are not overloaded and are encouraged to challenge the tool.",
+      "apply_it": "If you review AI decisions at work, look closely at five recent ones and note anything that seems unfair.",
+      "quiz": {
+        "question": "What makes a human check on AI decisions meaningful?",
+        "options": [
+          "Approving everything quickly",
+          "The reviewer has time, information and power to overrule the system",
+          "Never looking at any decisions",
+          "Letting the AI review itself"
+        ],
+        "answer": 1,
+        "explanation": "A real human check needs time, information and the authority to overrule the system, not just a rubber stamp."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--29",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "security",
+        "control",
+        "permissions"
+      ],
+      "title": "Give AI tools that act for you only the access they truly need",
+      "body": "Some AI tools can do more than chat. They may read your emails, book appointments, move files or make purchases on your behalf. This can be convenient, but it raises the stakes of any mistake.\n\nGive such tools the least access needed for the job. If a tool only needs your calendar, do not connect your bank account. Ask for confirmation before it sends messages or spends money, where the tool allows this.\n\nAlso watch for tricks. Instructions hidden in a web page or email could try to steer an AI tool into doing something you did not ask for. Review what it did, and remove access you no longer use.",
+      "apply_it": "Review which apps or accounts any AI tool can access, and remove one you do not need.",
+      "quiz": {
+        "question": "What is a safe rule for AI tools that can act on your behalf?",
+        "options": [
+          "Give only the access they need and ask for confirmation before big actions",
+          "Give them access to everything to save time",
+          "Never check what they did",
+          "Share your passwords with them"
+        ],
+        "answer": 0,
+        "explanation": "Limiting access and requiring confirmation reduces the harm if the tool makes a mistake or is tricked."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--30",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "habits",
+        "values",
+        "planning"
+      ],
+      "title": "Write a short personal code for how you will use AI",
+      "body": "Rules are easier to follow when you have chosen them yourself. A short personal AI code puts your values into a few simple lines you can remember.\n\nYours might say: I never paste passwords or other people's private details. I check facts before sharing. I am honest about AI use when it matters. I label realistic AI images. I make the final call on important decisions. I keep real people at the centre of my life.\n\nKeep it short, five to seven lines is plenty. Stick it somewhere you will see it, and share it with your family or team. Review it once a year as tools and your life change.",
+      "apply_it": "Write five lines for your personal AI code and keep them somewhere you will see often.",
+      "quiz": {
+        "question": "What is the purpose of a personal AI code?",
+        "options": [
+          "To make AI tools work faster",
+          "To replace all workplace policies",
+          "To list every AI tool ever made",
+          "To turn your values into a few simple rules you can follow"
+        ],
+        "answer": 3,
+        "explanation": "A short personal code makes it easier to act on your values every time you use AI."
+      }
+    },
+    {
+      "id": "ai-use-ai-safely--31",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-ethics",
+        "summary",
+        "safety",
+        "fairness"
+      ],
+      "title": "Wrap up: protect people, be fair and honest, and keep humans in charge",
+      "body": "You now have a set of habits for using AI safely and fairly. Keep sensitive and other people's information out of chats, check privacy settings and anonymise when you can. Watch for bias and test for it, and remember fairness matters most in big decisions.\n\nRespect creators and remember copyright rules are still being settled. Be honest at school and work, label realistic AI media and never fake real people. Help children use AI safely, keep real relationships strong and reach out to people in a crisis.\n\nUse AI thoughtfully, remember people are accountable for it, and keep the final say on what matters.",
+      "apply_it": "Pick the one habit from this guide that you most need, and start it today.",
+      "quiz": {
+        "question": "Which idea sums up this guide?",
+        "options": [
+          "Use AI as much as possible without thinking",
+          "Avoid all technology",
+          "Protect people, be fair and honest, and keep humans in charge",
+          "Let AI make every decision"
+        ],
+        "answer": 2,
+        "explanation": "Safe and fair AI use means protecting privacy, being honest, watching for bias and keeping human judgement in charge."
+      }
+    }
+  ]
+}

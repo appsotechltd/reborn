@@ -1,0 +1,795 @@
+{
+  "source": {
+    "id": "mental-health-look-after-your-mind",
+    "title": "Look After Your Mind Every Day",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the NHS, the New Economics Foundation, Mind, the World Health Organization and the National Institute of Mental Health.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: NHS, 5 steps to mental wellbeing, https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/; New Economics Foundation, Five ways to wellbeing, https://neweconomics.org/2008/10/five-ways-to-wellbeing; Mind, How to improve your mental wellbeing, https://www.mind.org.uk/information-support/tips-for-everyday-living/wellbeing/wellbeing/; World Health Organization, Mental health: strengthening our response, https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response; National Institute of Mental Health, Caring for your mental health, https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health; NHS, Every Mind Matters, https://www.nhs.uk/every-mind-matters/"
+  },
+  "cards": [
+    {
+      "id": "mental-health-look-after-your-mind--01",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "overview",
+        "habits",
+        "self-care"
+      ],
+      "title": "Looking after your mind is a daily habit, like brushing your teeth",
+      "body": "We are used to looking after our bodies with food, sleep and exercise. Our minds need everyday care too, not only when something goes wrong.\n\nThis guide covers simple, evidence-informed habits for good mental wellbeing. You will learn the five ways to wellbeing: connecting with others, being active, learning, giving and taking notice. You will also look at sleep, screens and social media, alcohol, routines and the way you talk to yourself. At the end, you will build a personal wellbeing plan.\n\nThese habits support wellbeing for most people, but they are not a replacement for treatment. If you are struggling, see a doctor, and in a crisis contact local emergency services or a crisis line.",
+      "apply_it": "Rate your wellbeing this week from 1 to 10 and write it down, so you can compare later.",
+      "quiz": {
+        "question": "What is the main idea of this guide?",
+        "options": [
+          "Mental health only matters during a crisis",
+          "Everyday habits can help look after your mental wellbeing",
+          "Self-care replaces all medical treatment",
+          "Wellbeing is fixed and cannot change"
+        ],
+        "answer": 1,
+        "explanation": "Like physical health, mental wellbeing benefits from regular care. Habits help, but they do not replace treatment when it is needed."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--02",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "mental-health",
+        "spectrum",
+        "basics"
+      ],
+      "title": "Everyone has mental health, and it changes over time",
+      "body": "The World Health Organization describes mental health as a state of wellbeing that lets people cope with normal stresses, use their abilities, learn and work well, and contribute to their community. It is more than just not having a mental illness.\n\nEveryone has mental health, just as everyone has physical health. It can move up and down depending on what is happening in life, such as a new job, a breakup, illness or money worries.\n\nIt can help to picture a scale from struggling to thriving. Most of us move along it over weeks and years. The aim of daily care is not to feel happy all the time, but to give yourself a steadier base.",
+      "apply_it": "Picture a scale from struggling to thriving. Mark roughly where you are today.",
+      "quiz": {
+        "question": "According to the WHO, mental health is best described as what?",
+        "options": [
+          "Never feeling sad",
+          "Only the absence of illness",
+          "A state of wellbeing that lets you cope, learn, work and contribute",
+          "Something only some people have"
+        ],
+        "answer": 2,
+        "explanation": "The WHO describes mental health as wellbeing that helps people cope, use their abilities and contribute, not just the absence of illness."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--03",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "five-ways",
+        "habits",
+        "evidence"
+      ],
+      "title": "Five simple actions can boost your wellbeing",
+      "body": "In 2008, the New Economics Foundation reviewed research for a UK government project and suggested five everyday actions that support wellbeing. The NHS now shares a similar list called five steps to mental wellbeing.\n\nThe five ways are: connect with other people, be physically active, keep learning, give to others, and take notice of the present moment.\n\nThey are simple on purpose. They are not a cure for mental illness, and the research behind them shows links rather than guarantees. But they are a helpful, practical menu that most people can fit into a normal day.\n\nThe next cards look at each one in turn, with small ideas you can try.",
+      "apply_it": "Read the five ways aloud and pick the one you already do most often.",
+      "quiz": {
+        "question": "Which list matches the five ways to wellbeing?",
+        "options": [
+          "Connect, be active, keep learning, give, take notice",
+          "Work, sleep, eat, shop, rest",
+          "Diet, gym, sleep, study, travel",
+          "Run, swim, cycle, lift, stretch"
+        ],
+        "answer": 0,
+        "explanation": "The five ways are connect, be active, keep learning, give, and take notice. The NHS shares a similar five steps list."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--04",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "connect",
+        "relationships",
+        "five-ways"
+      ],
+      "title": "Good relationships are one of the strongest supports for the mind",
+      "body": "Strong relationships help us feel a sense of belonging and self-worth. They give us chances to share good times and support each other through hard ones. Long-term studies have found that people with close, supportive relationships tend to be happier and healthier.\n\nQuality matters more than numbers. A few people you can be yourself with are worth more than many shallow contacts.\n\nConnection does not need to be big. Having lunch with a colleague, calling a grandparent, playing a game with your children or chatting with a neighbour all count.\n\nIf you find relationships hard, that is common. Small, regular contact is a gentle way to build closeness over time.",
+      "apply_it": "Arrange one face-to-face or phone catch-up with someone this week.",
+      "quiz": {
+        "question": "What matters most for wellbeing in relationships?",
+        "options": [
+          "Having as many contacts as possible",
+          "Only online followers",
+          "Never needing anyone",
+          "A few close, supportive relationships"
+        ],
+        "answer": 3,
+        "explanation": "Quality of connection matters more than quantity. A few people you trust can make a big difference."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--05",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "connect",
+        "everyday",
+        "five-ways"
+      ],
+      "title": "Small moments of contact add up across the day",
+      "body": "You do not need a big social life to feel connected. Brief everyday contacts, sometimes called micro-moments, can lift mood too.\n\nSome research suggests that even small chats with people we barely know, like a barista or a bus driver, can make us feel a little happier and more connected than we expect.\n\nIdeas to try: say good morning to a neighbour, ask a colleague how their weekend went and really listen, or put your phone away at dinner so you can talk properly. Instead of messaging, try a call or a video chat, which carries tone of voice and feels closer.\n\nThese moments are small, but repeated every day, they build a sense of belonging.",
+      "apply_it": "Start one short, friendly conversation today with someone you would normally only nod to.",
+      "quiz": {
+        "question": "Which is an example of a small everyday connection?",
+        "options": [
+          "Scrolling past a friend's post",
+          "Chatting briefly with a neighbour and listening properly",
+          "Avoiding eye contact on the bus",
+          "Only texting with emojis"
+        ],
+        "answer": 1,
+        "explanation": "Short, real conversations with people around us can lift mood more than we expect."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--06",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "connect",
+        "loneliness",
+        "belonging"
+      ],
+      "title": "Loneliness is common, and there are gentle ways to ease it",
+      "body": "Loneliness is the painful feeling that your connections are not what you need. You can feel lonely in a crowd or happy alone. It is very common, and health bodies including the WHO now treat it as a real issue for health and wellbeing.\n\nIf you feel lonely, you are not doing anything wrong. Life changes like moving, retiring, becoming a parent or losing someone often bring it on.\n\nGentle steps can help: join a group based on an interest, such as a walking club, choir or class. Volunteer. Reconnect with an old friend with a simple message. Regular, repeated contact with the same people helps friendships grow.\n\nIf loneliness is affecting your mood or health, talk to a doctor.",
+      "apply_it": "Look up one local or online group linked to something you enjoy and note when it meets.",
+      "quiz": {
+        "question": "Which is a helpful way to ease loneliness?",
+        "options": [
+          "Joining a regular group based on an interest",
+          "Waiting for others to contact you",
+          "Moving house again",
+          "Avoiding all social media and people"
+        ],
+        "answer": 0,
+        "explanation": "Regular contact with the same people, often through shared interests, helps friendships and belonging grow."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--07",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "be-active",
+        "exercise",
+        "five-ways"
+      ],
+      "title": "Moving your body is good for your mind",
+      "body": "Being active is not just about fitness. Research links regular physical activity with better mood, lower stress, better sleep and a lower risk of depression.\n\nActivity may help in several ways. It can improve sleep, give a sense of achievement, offer a break from worries, and often brings us into contact with other people and nature.\n\nGeneral guidance for adults is about 150 minutes of moderate activity a week, such as brisk walking or cycling, plus some strength work. But any amount is better than none. Ten minutes is a fine start.\n\nIf you have a health condition or have not been active for a while, check with a doctor about what is right for you.",
+      "apply_it": "Add a ten-minute walk to your day, perhaps after lunch.",
+      "quiz": {
+        "question": "What is the general weekly activity guidance for adults?",
+        "options": [
+          "10 minutes a month",
+          "About 150 minutes of moderate activity, plus some strength work",
+          "Five hours of running a day",
+          "None, activity does not affect the mind"
+        ],
+        "answer": 1,
+        "explanation": "Guidance for adults is around 150 minutes of moderate activity a week plus strength work, but any amount helps."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--08",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "be-active",
+        "enjoyment",
+        "habits"
+      ],
+      "title": "Choose activity you enjoy so it lasts",
+      "body": "The best activity for your mind is the one you will keep doing. If you hate running, you probably will not stick with it. Think about what you enjoy or used to enjoy.\n\nYou could dance to music in your kitchen, garden, swim, play football with friends, take the stairs, do yoga from a free video, or walk part of the way to work. Doing it with someone else can make it more fun and help you keep it up.\n\nTry tying activity to something you already do. For example, stretch while the kettle boils, or walk while on a phone call.\n\nCelebrate showing up, not just how far or fast you went.",
+      "apply_it": "Write down three kinds of movement you enjoy and try one this week.",
+      "quiz": {
+        "question": "What makes physical activity most likely to last?",
+        "options": [
+          "Choosing the hardest workout",
+          "Doing it only when someone forces you",
+          "Choosing something you enjoy and linking it to daily habits",
+          "Exercising once a year very hard"
+        ],
+        "answer": 2,
+        "explanation": "Enjoyment and linking activity to existing routines make it much easier to keep going."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--09",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "nature",
+        "outdoors",
+        "be-active"
+      ],
+      "title": "Time in nature can help you feel calmer",
+      "body": "Many people find that time in green spaces, like parks, woods or gardens, or near water, helps them feel calmer and more relaxed. A growing body of research links time in nature with better mood and lower stress, though scientists are still working out how strong the effect is and why it happens.\n\nYou do not need a wild landscape. A tree-lined street, a local park or a few plants on a balcony can all help. Even looking at nature through a window may have a small benefit.\n\nTry noticing what is around you: birdsong, the colour of leaves, the feel of the wind. Combining nature with movement or company may add to the benefit.",
+      "apply_it": "Spend at least ten minutes in a green space this week, and leave your phone in your pocket.",
+      "quiz": {
+        "question": "What does current research suggest about nature and wellbeing?",
+        "options": [
+          "It has been proven to cure mental illness",
+          "It only helps if you live in the countryside",
+          "It makes no difference at all",
+          "Time in nature is linked with calmer mood, though the details are still studied"
+        ],
+        "answer": 3,
+        "explanation": "Studies link nature with better mood and lower stress. The evidence is growing, but scientists are still learning how and why."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--10",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "keep-learning",
+        "confidence",
+        "five-ways"
+      ],
+      "title": "Learning new things can build confidence and purpose",
+      "body": "Learning is one of the five ways to wellbeing. Research suggests that learning new skills can boost self-confidence, give a sense of purpose, and help people connect with others.\n\nThis does not have to mean exams or qualifications. Learning can be cooking a new recipe, fixing a bike, learning a few words of a language, or finding out about a topic you are curious about.\n\nLearning also gives your mind something to focus on that is not your worries. It can bring small moments of achievement, like finally getting a recipe right.\n\nThe key is to choose something that interests you, not something you feel you should do.",
+      "apply_it": "Pick one thing you are curious about and spend fifteen minutes learning about it this week.",
+      "quiz": {
+        "question": "Which of these counts as learning for wellbeing?",
+        "options": [
+          "Cooking a new recipe",
+          "Only a university degree",
+          "Only things for your job",
+          "Memorising facts you dislike"
+        ],
+        "answer": 0,
+        "explanation": "Learning for wellbeing can be any new skill or knowledge you enjoy, at home, at work or in the community."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--11",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "keep-learning",
+        "goals",
+        "habits"
+      ],
+      "title": "Small, regular learning goals work best",
+      "body": "Big learning goals can feel exciting but often fade. Small, regular steps are easier to keep and give more frequent wins.\n\nInstead of I will learn Spanish, try I will practise for ten minutes after breakfast. Instead of I will learn to cook, try one new recipe each Sunday.\n\nYou can also learn with others. Join a class, a book club or a local workshop. Many libraries and community centres offer free or low-cost courses.\n\nIt is fine to be a beginner. Making mistakes is part of learning, and being kind to yourself as you learn is part of the benefit. Notice how far you have come, not just how far there is to go.",
+      "apply_it": "Turn one learning wish into a ten-minute task and put it in your calendar.",
+      "quiz": {
+        "question": "Which learning goal is easiest to keep up?",
+        "options": [
+          "Become fluent in a language by next month",
+          "Learn everything about history",
+          "Practise for ten minutes after breakfast each day",
+          "Wait until you have lots of free time"
+        ],
+        "answer": 2,
+        "explanation": "Small, specific and regular goals are easier to stick with and give a steady sense of progress."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--12",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "giving",
+        "kindness",
+        "five-ways"
+      ],
+      "title": "Giving to others can lift your own mood",
+      "body": "Acts of kindness can make us feel good too. Research suggests that helping others is linked with better wellbeing, a sense of purpose and feeling more connected.\n\nGiving does not have to cost money. You could thank someone properly, help a neighbour with shopping, listen to a friend, share a skill, or leave a kind comment.\n\nSome people make kindness a small daily habit, such as one kind act each day. Others give time in a more regular way.\n\nThe benefits seem to be greatest when giving is freely chosen and fits your life, not when it comes from guilt or pressure.",
+      "apply_it": "Do one small, kind thing for someone today, and notice how you feel afterwards.",
+      "quiz": {
+        "question": "When does giving seem to help wellbeing most?",
+        "options": [
+          "When it is done out of guilt",
+          "When it is freely chosen and fits your life",
+          "Only when it costs a lot of money",
+          "Only when others see you do it"
+        ],
+        "answer": 1,
+        "explanation": "Giving that is freely chosen and fits your life tends to bring the most benefit to your own wellbeing."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--13",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "giving",
+        "volunteering",
+        "boundaries"
+      ],
+      "title": "Volunteering connects you, but protect your energy too",
+      "body": "Volunteering combines several of the five ways at once. You connect with people, often stay active, learn new skills and give to others. Many people say it helps them feel part of their community.\n\nOptions are wide: helping at a food bank, mentoring a young person, cleaning a local park, or supporting a charity online.\n\nBut giving should not leave you drained. If you are a carer, or already stretched, it is fine to keep your giving small or to say no. Looking after yourself is not selfish: it is what lets you keep caring for others.\n\nAim for giving that feels like a gift, not a burden.",
+      "apply_it": "If you have time to spare, look up one local volunteering role. If you do not, give yourself permission to rest.",
+      "quiz": {
+        "question": "Which statement about volunteering is wisest?",
+        "options": [
+          "You should say yes to every request",
+          "Giving more always means feeling better",
+          "Only people with lots of free time can help",
+          "It can boost wellbeing, but it is fine to keep it small to protect your energy"
+        ],
+        "answer": 3,
+        "explanation": "Volunteering has many benefits, but giving works best when it does not drain you. Saying no is sometimes the right choice."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--14",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "take-notice",
+        "mindfulness",
+        "five-ways"
+      ],
+      "title": "Paying attention to the present can ease a busy mind",
+      "body": "Taking notice means paying attention to what is happening right now: your thoughts, feelings, body and the world around you. This is sometimes called mindfulness.\n\nMuch of the time, our minds are busy replaying the past or planning the future. Mindfulness is a way of gently coming back to the present. Research suggests it can help some people manage worry and feel more balanced, and NICE recommends mindfulness-based therapy to help prevent depression from returning in some people.\n\nMindfulness is not about emptying your mind or always feeling calm. It is about noticing without judging. It does not suit everyone, and that is okay. There are many ways to take notice.",
+      "apply_it": "Next time you drink something warm, spend one full minute noticing its smell, warmth and taste.",
+      "quiz": {
+        "question": "What is mindfulness mainly about?",
+        "options": [
+          "Noticing the present moment without judging it",
+          "Emptying your mind completely",
+          "Always feeling calm",
+          "Planning the future in detail"
+        ],
+        "answer": 0,
+        "explanation": "Mindfulness means paying attention to the present with curiosity rather than judgement. It is not about forcing a blank mind."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--15",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "take-notice",
+        "practice",
+        "mindfulness"
+      ],
+      "title": "A one-minute noticing practice fits into any day",
+      "body": "Here is a simple practice you can do almost anywhere, like at a bus stop or before a meeting.\n\nPause. Take a slow breath. Then notice five things you can see, four things you can hear, three things you can feel, such as your feet on the floor, two things you can smell, and one thing you can taste.\n\nIf your mind wanders to worries, that is normal. Gently bring it back to your senses, without telling yourself off.\n\nYou can also take notice on a walk, by choosing one thing to focus on, such as colours, sounds or the feel of each step. The more often you practise, the easier it tends to become.",
+      "apply_it": "Try the five, four, three, two, one practice once today at a moment you choose in advance.",
+      "quiz": {
+        "question": "If your mind wanders during a noticing practice, what should you do?",
+        "options": [
+          "Stop and give up",
+          "Tell yourself off",
+          "Gently bring your attention back to your senses",
+          "Try harder to empty your mind"
+        ],
+        "answer": 2,
+        "explanation": "Mind-wandering is normal. The practice is simply noticing it and kindly returning to the present."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--16",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "sleep",
+        "mood",
+        "health"
+      ],
+      "title": "Sleep and mental wellbeing go hand in hand",
+      "body": "Sleep and mental health affect each other. After a poor night, most of us feel more irritable, less able to cope and more sensitive to problems. Over time, ongoing sleep problems are linked with a higher risk of low mood and anxiety.\n\nResearch, including trials that improve sleep, suggests that better sleep can lead to better mental health, not just the other way round.\n\nMost adults need around seven to nine hours, though everyone is a bit different. Quality matters as well as quantity.\n\nIf you often struggle to sleep, feel very tired in the day, or snore loudly and stop breathing in the night, talk to a doctor.",
+      "apply_it": "Notice your mood after your next good night and after your next poor night. Write a line about each.",
+      "quiz": {
+        "question": "What does research suggest about sleep and mental health?",
+        "options": [
+          "Sleep has no effect on mood",
+          "Improving sleep can help improve mental health",
+          "Only children need good sleep",
+          "More caffeine fixes poor sleep"
+        ],
+        "answer": 1,
+        "explanation": "Studies suggest sleep and mental health affect each other, and improving sleep can lead to better mental health."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--17",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "sleep",
+        "routine",
+        "habits"
+      ],
+      "title": "Wind down, keep a regular time and protect your bedroom",
+      "body": "A few simple habits support better sleep for most people.\n\nKeep a regular rhythm: go to bed and get up at roughly the same times, including weekends. Get daylight early in the day. Limit caffeine after lunch, and avoid heavy meals and lots of alcohol late at night.\n\nCreate a wind-down routine for the last half hour before bed, such as a warm shower, reading or gentle stretching. Keep your bedroom dark, quiet and cool, and try to keep work out of it.\n\nIf worries keep you awake, write them down with one next step, then let them wait until morning. If problems last for weeks, a doctor can help.",
+      "apply_it": "Choose a 30-minute wind-down routine and try it every night this week.",
+      "quiz": {
+        "question": "Which habit tends to support good sleep?",
+        "options": [
+          "Drinking strong coffee in the evening",
+          "Working in bed until late",
+          "Sleeping at very different times each night",
+          "A regular bedtime and wake time with a calm wind-down"
+        ],
+        "answer": 3,
+        "explanation": "Regular timing and a calm wind-down routine help the body clock and make it easier to fall asleep."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--18",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "screens",
+        "digital",
+        "habits"
+      ],
+      "title": "Not all screen time is the same for your mind",
+      "body": "Screens are part of daily life, and they are not all bad. Video calls connect us with family, apps can help us learn and exercise, and a good film can be a real treat.\n\nResearch on screens and wellbeing is mixed and often debated. Many experts now think that how and when we use screens matters more than the total number of hours.\n\nActive, social or creative use, like chatting with friends or learning a skill, tends to feel better than passive scrolling. Screen use that pushes out sleep, movement or face-to-face time is more likely to cause problems.\n\nA good question to ask is: how do I feel after using this?",
+      "apply_it": "After your next scroll, pause and ask: do I feel better, worse or the same?",
+      "quiz": {
+        "question": "What do many experts now think matters most about screens?",
+        "options": [
+          "How and when we use them, and what they replace",
+          "Only the total hours",
+          "Screens are always harmful",
+          "Screens have no effect at all"
+        ],
+        "answer": 0,
+        "explanation": "Research is mixed, but how screens are used, and whether they push out sleep or people, seems to matter more than hours alone."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--19",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "social-media",
+        "comparison",
+        "self-esteem"
+      ],
+      "title": "Social media can make us compare our insides to others' outsides",
+      "body": "Social media can help people stay in touch and find communities. But it can also lead to constant comparison. We see other people's holidays, achievements and best photos, and compare them with our own ordinary, messy lives.\n\nIt helps to remember that most posts are carefully chosen highlights. People rarely post their bad days or self-doubt.\n\nYou are in control of your feed. You can mute or unfollow accounts that make you feel worse, and follow ones that make you laugh, learn or feel supported.\n\nIf you notice that social media leaves you anxious, envious or low, it is a sign to change how you use it, not a sign that something is wrong with you.",
+      "apply_it": "Unfollow or mute three accounts that regularly leave you feeling worse.",
+      "quiz": {
+        "question": "Why can social media make people feel worse about their lives?",
+        "options": [
+          "Because everyone posts their bad days",
+          "Because it is always honest",
+          "Because people often compare their lives with others' highlights",
+          "Because phones are heavy"
+        ],
+        "answer": 2,
+        "explanation": "Most posts show highlights. Comparing them with our everyday lives can leave us feeling worse."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--20",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "screens",
+        "boundaries",
+        "habits"
+      ],
+      "title": "Set gentle limits so screens serve you",
+      "body": "Small boundaries can help screens fit your life rather than take it over.\n\nTry turning off non-essential notifications so you check your phone when you choose, not every time it buzzes. Keep phones out of the bedroom or at least out of reach at night, and use an alarm clock instead. Have screen-free times, such as meals or the first half hour of the day.\n\nYou can use built-in screen time tools to see your patterns. Many people are surprised by how much time goes on certain apps.\n\nWhen you put the phone down, have something ready to do instead, like a book, a walk or a chat. It is easier to replace a habit than simply stop it.",
+      "apply_it": "Turn off notifications for one app that pulls at you most, and keep your phone out of reach tonight.",
+      "quiz": {
+        "question": "Which is a helpful screen boundary?",
+        "options": [
+          "Keeping your phone on your pillow",
+          "Turning off non-essential notifications",
+          "Checking every alert at once",
+          "Using screens right up until sleep every night"
+        ],
+        "answer": 1,
+        "explanation": "Turning off notifications puts you in charge of when you check your phone, which reduces constant interruptions."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--21",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "alcohol",
+        "mood",
+        "health"
+      ],
+      "title": "Alcohol can lower mood more than people expect",
+      "body": "Many people drink to relax or to cope with a hard day. Alcohol can bring a short lift, but it is a depressant, which means it slows down the brain.\n\nRegular or heavy drinking is linked with low mood and anxiety. It also disrupts sleep, so you may wake up feeling more tired and on edge. Some people notice a dip in mood the day after drinking.\n\nIf you drink, keeping it moderate, having several alcohol-free days each week, and not using drink to manage feelings can help. Guidelines on safe amounts differ by country, so check your local health service's advice.\n\nIf you find it hard to cut down, talk to a doctor. Support is available.",
+      "apply_it": "Plan at least two alcohol-free days this week and notice how you sleep.",
+      "quiz": {
+        "question": "Why can alcohol make mood worse over time?",
+        "options": [
+          "It is a stimulant that keeps you awake",
+          "It improves deep sleep",
+          "It has no effect on the brain",
+          "It is a depressant that can disrupt sleep and lower mood"
+        ],
+        "answer": 3,
+        "explanation": "Alcohol slows the brain and disturbs sleep. Regular or heavy drinking is linked with lower mood and more anxiety."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--22",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "food",
+        "mood",
+        "health"
+      ],
+      "title": "What you eat and drink can affect how you feel",
+      "body": "Research on food and mental health is still developing. Some studies link diets rich in vegetables, fruit, whole grains, beans, nuts and fish with better mood, though it is not yet clear exactly how much food can change mental health.\n\nWhat is clearer is that skipping meals and big blood sugar swings can leave you tired, irritable and less able to concentrate. Being thirsty can also affect mood and focus.\n\nYou do not need a perfect diet. Aim for regular meals, some fruit and vegetables each day, and enough water. A shared meal with others can be good for both body and mind.\n\nIf you have worries about eating, talk to a doctor.",
+      "apply_it": "Eat a proper breakfast or lunch at a regular time each day this week.",
+      "quiz": {
+        "question": "What is a fair summary of research on food and mood?",
+        "options": [
+          "Regular, balanced meals may help, though the science is still developing",
+          "One superfood cures low mood",
+          "Food has no link to how we feel",
+          "Skipping meals improves focus"
+        ],
+        "answer": 0,
+        "explanation": "Research suggests links between diet and mood, but the evidence is still growing. Regular, balanced meals are a sensible base."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--23",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "routine",
+        "structure",
+        "habits"
+      ],
+      "title": "Simple routines give your day shape and steadiness",
+      "body": "Routines can sound boring, but they help many people feel more in control. A predictable shape to the day can reduce the number of decisions you need to make and give a sense of steadiness when life feels uncertain.\n\nA helpful routine is not a strict timetable. It can be a few anchors: getting up at a similar time, having regular meals, going outside each day, and winding down at night.\n\nTry to include a mix of things that need doing, things you enjoy, and things that make you feel connected. Leave room for rest and flexibility.\n\nWhen life is disrupted, such as during illness or a move, going back to a few simple anchors can help you feel grounded again.",
+      "apply_it": "Choose three daily anchors, such as a wake time, a walk and a set mealtime, and keep them for a week.",
+      "quiz": {
+        "question": "What makes a routine most helpful for wellbeing?",
+        "options": [
+          "A strict timetable with no rest",
+          "A few steady anchors with room for flexibility",
+          "Changing everything every day",
+          "Only working with no breaks"
+        ],
+        "answer": 1,
+        "explanation": "A few reliable anchors give structure and steadiness, while flexibility and rest stop routines feeling like a burden."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--24",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "self-talk",
+        "inner-critic",
+        "thinking"
+      ],
+      "title": "Notice how you talk to yourself",
+      "body": "We all have an inner voice that comments on what we do. Sometimes it is helpful and encouraging. Often it can be harsh: you are so stupid, you always get this wrong, everyone else is better.\n\nThis kind of self-talk can wear down confidence and mood over time. The first step is simply noticing it. Many people do not realise how unkind their inner voice is until they listen closely.\n\nTry catching the words you use. Would you say them to a friend in the same situation? Probably not.\n\nYou do not need to argue with every thought. Just noticing, oh, that is my inner critic again, can create a little space between you and the thought.",
+      "apply_it": "For one day, jot down any harsh thing your inner voice says. Do not judge it, just notice.",
+      "quiz": {
+        "question": "What is the first step in changing harsh self-talk?",
+        "options": [
+          "Ignoring all thoughts",
+          "Agreeing with every criticism",
+          "Simply noticing what your inner voice says",
+          "Shouting at yourself to stop"
+        ],
+        "answer": 2,
+        "explanation": "Noticing self-talk creates space. Many people do not realise how harsh their inner voice is until they pay attention."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--25",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "self-compassion",
+        "self-talk",
+        "kindness"
+      ],
+      "title": "Talk to yourself the way you would talk to a good friend",
+      "body": "Self-compassion means treating yourself with the same kindness and understanding you would offer a friend. Research suggests that people who are kinder to themselves tend to cope better with setbacks and are often more, not less, motivated to improve.\n\nWhen something goes wrong, try three small steps. First, notice the pain: this is hard. Second, remember that everyone struggles sometimes: I am not the only one. Third, offer yourself a kind word: what would help right now?\n\nFor example, after a mistake at work, instead of I am useless, you might say, I made a mistake, it happens to everyone, and I can fix it.\n\nSelf-compassion is not letting yourself off the hook. It is support, not excuses.",
+      "apply_it": "Next time you make a mistake, say to yourself what you would say to a friend in the same spot.",
+      "quiz": {
+        "question": "What does research suggest about self-compassion?",
+        "options": [
+          "It makes people lazy",
+          "It means ignoring mistakes",
+          "It only works for children",
+          "It is linked with coping better and staying motivated"
+        ],
+        "answer": 3,
+        "explanation": "Being kind to yourself tends to help people recover from setbacks and keep trying, rather than making them complacent."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--26",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "gratitude",
+        "savouring",
+        "positive-moments"
+      ],
+      "title": "Savouring good moments helps them stick",
+      "body": "Our brains tend to notice threats and problems more than good things. This made sense for survival, but it means pleasant moments can slip past unnoticed.\n\nSavouring means pausing to fully enjoy a good moment: the first sip of coffee, a child's laugh, sunshine on your face. Gratitude practices, such as writing down three good things each day, are another way to notice what is going well.\n\nSome studies suggest these habits can give a modest boost to wellbeing, though results vary and they work better for some people than others.\n\nThe aim is not to ignore problems or pretend to be happy. It is to make sure the good things get noticed too.",
+      "apply_it": "Tonight, write down three good things from today, however small, and why they happened.",
+      "quiz": {
+        "question": "What is the aim of gratitude and savouring practices?",
+        "options": [
+          "To make sure good moments get noticed too",
+          "To pretend everything is fine",
+          "To ignore all problems",
+          "To feel happy all the time"
+        ],
+        "answer": 0,
+        "explanation": "These practices help balance the brain's focus on problems, without denying difficulties. The evidence suggests modest benefits."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--27",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "emotions",
+        "awareness",
+        "self-care"
+      ],
+      "title": "Naming your feelings can help you handle them",
+      "body": "Feelings are signals. Sadness may point to loss, anger to unfairness, and worry to something that matters to you. All feelings are normal, even uncomfortable ones.\n\nResearch suggests that putting feelings into words, for example I feel disappointed and a bit embarrassed, can help calm the strength of an emotion. Being specific helps more than just saying I feel bad.\n\nYou can name feelings in your head, write them in a journal, or share them with someone you trust.\n\nSome people find it hard to know what they are feeling. Noticing body clues, such as a tight chest or clenched jaw, can be a starting point. Over time, naming feelings tends to get easier.",
+      "apply_it": "Three times today, pause and name what you are feeling in one or two specific words.",
+      "quiz": {
+        "question": "Which is a more helpful way to name a feeling?",
+        "options": [
+          "I feel bad",
+          "I am fine",
+          "I feel disappointed and a bit embarrassed",
+          "Nothing, feelings should be ignored"
+        ],
+        "answer": 2,
+        "explanation": "Specific names for feelings can help reduce their intensity and make it easier to know what you need."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--28",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "warning-signs",
+        "self-awareness",
+        "prevention"
+      ],
+      "title": "Know your own early signs that you are struggling",
+      "body": "Everyone has times when their mental health dips. Spotting the early signs can help you act before things get harder.\n\nSigns are personal. They might include sleeping badly, snapping at people, losing interest in things you enjoy, withdrawing from friends, eating differently, drinking more, or finding it hard to concentrate. Other people sometimes notice changes before you do.\n\nIt can help to think back to a time you were not doing well. What changed first? Write these signs down.\n\nWhen you notice them, it is a cue to lean on your wellbeing habits, reach out to someone, and consider talking to a doctor if the signs last or get worse.",
+      "apply_it": "Write down three signs that usually show up first when you are not doing well.",
+      "quiz": {
+        "question": "Why is it useful to know your early warning signs?",
+        "options": [
+          "They mean you are ill",
+          "They help you act early, before things get harder",
+          "Only doctors can use them",
+          "They stop all bad days"
+        ],
+        "answer": 1,
+        "explanation": "Recognising early signs gives you a chance to use support and coping steps sooner."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--29",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "wellbeing-plan",
+        "planning",
+        "habits"
+      ],
+      "title": "A personal wellbeing plan puts it all in one place",
+      "body": "A wellbeing plan is a short, personal list of what keeps you well and what to do when you are struggling. Mind and other organisations offer templates, but a simple page works fine.\n\nInclude: things that help you stay well day to day, such as a walk, a call with a friend or a set bedtime; your early warning signs; what you will do when you notice them; people you can contact; and professional help, such as your doctor or a crisis line.\n\nKeep it somewhere easy to find, like your phone or the fridge. Share it with someone you trust if you like.\n\nReview it every few months, because what you need can change.",
+      "apply_it": "Write a one-page wellbeing plan with five headings: daily habits, warning signs, actions, people and professional help.",
+      "quiz": {
+        "question": "Which of these belongs in a personal wellbeing plan?",
+        "options": [
+          "A list of your enemies",
+          "Only your work tasks",
+          "Your bank details",
+          "Your early warning signs and who you can contact"
+        ],
+        "answer": 3,
+        "explanation": "A good plan includes daily habits, warning signs, actions to take, trusted people and where to get professional help."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--30",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "get-help",
+        "doctor",
+        "crisis"
+      ],
+      "title": "Self-care is helpful, but sometimes you need more support",
+      "body": "Everyday habits help many people feel better, but they have limits. They are not a replacement for treatment, and it is not a personal failure if they are not enough.\n\nTalk to a doctor if you feel low, anxious or not yourself for more than two weeks, if your feelings are getting in the way of work, relationships or daily life, or if you are using alcohol or drugs to cope.\n\nGet help urgently if you have thoughts of harming yourself or ending your life. If you feel unsafe or think you might act on these thoughts, contact local emergency services or a crisis line straight away, or go to an emergency department.\n\nAsking for help is a sign of strength.",
+      "apply_it": "Add your doctor's details and a local crisis line to the professional help section of your plan.",
+      "quiz": {
+        "question": "When should you seek urgent help?",
+        "options": [
+          "If you have thoughts of harming yourself or feel unsafe",
+          "If you skipped one walk",
+          "If you had one bad night's sleep",
+          "If you feel a bit bored"
+        ],
+        "answer": 0,
+        "explanation": "Thoughts of self-harm or feeling unsafe need urgent help from emergency services, a crisis line or an emergency department."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-look-after-your-mind--31",
+      "topic": "mental-health",
+      "tags": [
+        "wellbeing",
+        "summary",
+        "habits",
+        "five-ways"
+      ],
+      "title": "Small, steady care for your mind adds up over time",
+      "body": "Looking after your mind is not about big changes or feeling happy all the time. It is about small, steady habits that give you a stronger base.\n\nThe five ways to wellbeing offer a simple menu: connect, be active, keep learning, give and take notice. Good sleep, mindful screen use, moderate alcohol, simple routines and a kinder inner voice all help too.\n\nYour personal wellbeing plan brings these together, along with your warning signs and where to get help.\n\nIf you are struggling, see a doctor. In a crisis, contact local emergency services or a crisis line.\n\nPick one small habit to start with. Next week, you can add another.",
+      "apply_it": "Choose one habit from this guide to practise every day for the next week.",
+      "quiz": {
+        "question": "What is the best way to start looking after your mind?",
+        "options": [
+          "Change everything at once",
+          "Wait for a crisis",
+          "Pick one small habit and build from there",
+          "Only rely on willpower"
+        ],
+        "answer": 2,
+        "explanation": "Small, steady habits are easier to keep and build on, and together they make a real difference over time."
+      },
+      "health": true
+    }
+  ]
+}

@@ -1,0 +1,788 @@
+{
+  "source": {
+    "id": "science-everyday-things",
+    "title": "The Science of Everyday Things",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.britannica.com/science/physics-science",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on Encyclopaedia Britannica, NASA Science, the US Energy Information Administration, the Royal Society of Chemistry and the US Centers for Disease Control and Prevention.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: Encyclopaedia Britannica, Physics, https://www.britannica.com/science/physics-science; NASA Science, Tour of the Electromagnetic Spectrum, https://science.nasa.gov/ems/; US Energy Information Administration, Energy Explained, https://www.eia.gov/energyexplained/; Royal Society of Chemistry, Education, https://edu.rsc.org/; US Centers for Disease Control and Prevention, About Handwashing, https://www.cdc.gov/clean-hands/about/index.html"
+  },
+  "cards": [
+    {
+      "id": "science-everyday-things--01",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "overview",
+        "curiosity",
+        "home"
+      ],
+      "title": "Ordinary things at home run on a handful of big scientific ideas",
+      "body": "Your kitchen, your phone and your walk to the bus are full of science. The kettle that boils, the fridge that hums, the shoe that grips the pavement and the bread that rises all follow a small number of rules that scientists have tested again and again.\n\nYou don't need maths or a lab to understand them. Once you know a few big ideas, everyday things stop being magic and start making sense.\n\nThis guide covers energy and heat, light and colour, sound, electricity and magnets, gravity, motion and friction, how a fridge, microwave, phone and battery work, and the chemistry of cooking, baking, soap and rust.",
+      "apply_it": "Pick one gadget you use every day and write down, in one sentence, how you think it works. Check your guess as you read this guide.",
+      "quiz": {
+        "question": "What is the main idea of this guide?",
+        "options": [
+          "Science only happens in laboratories",
+          "A few big ideas explain many everyday things",
+          "You need advanced maths to understand your kitchen",
+          "Gadgets work in ways nobody understands"
+        ],
+        "answer": 1,
+        "explanation": "A handful of well-tested ideas about energy, forces, light and chemistry explain a surprising amount of daily life."
+      }
+    },
+    {
+      "id": "science-everyday-things--02",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "energy",
+        "conservation",
+        "home"
+      ],
+      "title": "Energy is never used up, it just changes form",
+      "body": "Energy is what lets things happen: moving, heating, lighting up, making a sound. One of the most tested rules in science says energy is never created or destroyed. It only changes from one form to another.\n\nWhen you eat breakfast, chemical energy in food becomes movement and body heat. A kettle turns electrical energy into heat. A torch turns chemical energy in its battery into light, plus a little heat.\n\nSo why do we talk about wasting energy? Because some of it always ends up as heat spreading into the room, where it is hard to use again. A warm phone charger is a sign of that small loss.",
+      "apply_it": "Touch the plug of a phone charger after an hour of charging. If it feels warm, you are feeling energy that turned into heat instead of going into the battery.",
+      "quiz": {
+        "question": "What happens to energy when a kettle boils water?",
+        "options": [
+          "It is destroyed",
+          "It is created from nothing",
+          "Electrical energy changes into heat",
+          "It turns into water"
+        ],
+        "answer": 2,
+        "explanation": "Energy changes form. The kettle turns electrical energy into heat in the water, with a little lost to the air around it."
+      }
+    },
+    {
+      "id": "science-everyday-things--03",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "heat",
+        "energy",
+        "temperature"
+      ],
+      "title": "Heat always flows from hotter things to colder things",
+      "body": "Heat moves in one direction on its own: from hot to cold. It travels in three main ways.\n\nConduction is heat passing through touch. A metal spoon left in hot soup soon has a hot handle. Convection is heat carried by moving liquid or air. Warm air from a radiator rises, cooler air sinks, and the room slowly warms. Radiation is heat carried by invisible infrared light. You feel it on your face from a fire or the Sun, even across empty space.\n\nA good coat doesn't make you warm. It traps still air, which slows the heat leaving your body.",
+      "apply_it": "Next time you make tea, put a metal spoon and a wooden spoon in the cup. After a minute, feel which handle got warmer.",
+      "quiz": {
+        "question": "Why does a warm coat keep you warm?",
+        "options": [
+          "It slows the heat leaving your body",
+          "It creates heat by itself",
+          "It pulls cold out of the air",
+          "It reflects all sunlight"
+        ],
+        "answer": 0,
+        "explanation": "A coat traps still air, which is a poor conductor, so your body heat escapes more slowly."
+      }
+    },
+    {
+      "id": "science-everyday-things--04",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "heat",
+        "temperature",
+        "materials"
+      ],
+      "title": "Metal feels colder than wood at the same temperature because it moves heat faster",
+      "body": "On a cold morning, a metal door handle feels icy while a wooden door feels fine. Yet both have been in the same place for hours, so they are the same temperature.\n\nThe difference is how fast each one pulls heat out of your hand. Metal is a good conductor, so it draws heat from your skin quickly. Your nerves sense that heat leaving and report cold. Wood is a poor conductor, so heat leaves your hand slowly and it feels milder.\n\nThis is why pans have metal bases but often plastic or wooden handles, and why a tiled floor feels colder than a rug.",
+      "apply_it": "Put one hand on a tiled or metal surface and the other on a towel in the same room. Notice the difference, then remind yourself both are the same temperature.",
+      "quiz": {
+        "question": "A metal spoon and a wooden spoon have sat in the same drawer all night. Why does the metal one feel colder?",
+        "options": [
+          "It is actually much colder",
+          "It contains cold energy",
+          "Wood produces its own heat",
+          "It draws heat from your hand faster"
+        ],
+        "answer": 3,
+        "explanation": "Both are the same temperature. Metal conducts heat away from your skin faster, and your body reads that as cold."
+      }
+    },
+    {
+      "id": "science-everyday-things--05",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "light",
+        "reflection",
+        "mirrors"
+      ],
+      "title": "Light travels in straight lines and bounces off surfaces",
+      "body": "Light moves incredibly fast, about 300,000 kilometres every second, and in straight lines unless something gets in the way. That is why shadows have sharp edges and why you can't see round corners.\n\nWhen light hits a surface, some of it bounces back. That's reflection. A smooth surface like a mirror or still water bounces light in a neat, orderly way, so you see a clear image. A rough surface like paper scatters light in all directions, so you see the paper itself but no reflection.\n\nAlmost everything you see, you see because light bounced off it and into your eyes.",
+      "apply_it": "Shine a torch at a mirror in a dark room, then at a sheet of paper. Compare the neat bright spot with the soft, spread-out glow.",
+      "quiz": {
+        "question": "Why can you see your face in a mirror but not in a sheet of paper?",
+        "options": [
+          "Paper absorbs all light",
+          "Mirrors make their own light",
+          "A smooth surface reflects light neatly, a rough one scatters it",
+          "Paper is transparent"
+        ],
+        "answer": 2,
+        "explanation": "Both reflect light, but a mirror is smooth enough to bounce it back in an orderly way that forms an image."
+      }
+    },
+    {
+      "id": "science-everyday-things--06",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "light",
+        "refraction",
+        "lenses"
+      ],
+      "title": "Light bends when it passes from one material into another",
+      "body": "Put a straw in a glass of water and it seems to bend at the surface. The straw is fine. The light is what bends.\n\nLight slows down when it passes from air into water or glass, and that change of speed makes it change direction. This is called refraction. It is also why a swimming pool looks shallower than it really is, which is worth remembering before you jump in.\n\nLenses use refraction on purpose. The curved glass in reading glasses, cameras and magnifying glasses bends light to focus it. The lens inside your own eye does the same job, which is why glasses can correct blurry vision.",
+      "apply_it": "Put a pencil in a clear glass of water and look at it from the side. Notice where it seems to break, right at the water's surface.",
+      "quiz": {
+        "question": "Why does a straw look bent in a glass of water?",
+        "options": [
+          "The water pushes the straw sideways",
+          "Light changes direction as it moves between water and air",
+          "Your eyes are tired",
+          "The glass is curved like a mirror"
+        ],
+        "answer": 1,
+        "explanation": "Light changes speed and direction when it crosses from water into air. This bending is called refraction."
+      }
+    },
+    {
+      "id": "science-everyday-things--07",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "light",
+        "colour",
+        "rainbows"
+      ],
+      "title": "White light is a mix of colours, and objects choose which colours to send back",
+      "body": "Sunlight looks white, but it is really a blend of all the colours of the rainbow. Raindrops or a glass prism bend each colour by a slightly different amount, spreading them out so you can see them separately.\n\nThe colour of an object depends on which light it reflects. A leaf looks green because it absorbs most red and blue light for photosynthesis and reflects much of the green. A black T-shirt absorbs nearly all colours, which is why it gets hotter in the sun than a white one.\n\nColour isn't stored inside things. It comes from the light that reaches them and the light they bounce back.",
+      "apply_it": "On a sunny day, stand with your back to the Sun and spray a fine mist from a hose or spray bottle. Look for a small rainbow.",
+      "quiz": {
+        "question": "Why does a black T-shirt get hotter in the sun than a white one?",
+        "options": [
+          "It absorbs nearly all the light that hits it",
+          "It is made of thicker cloth",
+          "Black dye produces heat",
+          "It reflects all colours"
+        ],
+        "answer": 0,
+        "explanation": "Black absorbs most visible light and turns it into heat. White reflects most light, so it stays cooler."
+      }
+    },
+    {
+      "id": "science-everyday-things--08",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "sound",
+        "vibration",
+        "waves"
+      ],
+      "title": "Sound is a vibration that travels through the air to your ears",
+      "body": "Every sound starts with something vibrating: a guitar string, your vocal cords, a speaker cone. The vibration pushes on the air next to it, which pushes on the air next to that, sending a wave of squeezes and stretches outward.\n\nWhen that wave reaches your ear, it makes your eardrum vibrate, and your brain turns that into sound. Fast vibrations give a high pitch, like a whistle. Slow vibrations give a low pitch, like a bass drum. Bigger vibrations sound louder.\n\nSound needs something to travel through. In the near-empty space between planets, there is no air to carry it, so space is silent.",
+      "apply_it": "Rest your fingers lightly on your throat and hum a low note, then a high one. Feel the vibration that makes your voice.",
+      "quiz": {
+        "question": "Why is there no sound in the near-empty space between planets?",
+        "options": [
+          "It is too cold for sound",
+          "Sound only works on Earth's surface",
+          "Sound is blocked by starlight",
+          "There is almost no air to carry the vibrations"
+        ],
+        "answer": 3,
+        "explanation": "Sound is a vibration passed from particle to particle. With almost no particles in space, sound cannot travel."
+      }
+    },
+    {
+      "id": "science-everyday-things--09",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "sound",
+        "light",
+        "weather"
+      ],
+      "title": "Light beats sound, which is why thunder comes after lightning",
+      "body": "Lightning and thunder happen at the same moment, but you see the flash first. That's because light travels almost a million times faster than sound.\n\nSound moves through air at roughly 340 metres per second, so it takes about three seconds to travel one kilometre. Count the seconds between a flash and the rumble, divide by three, and you have a rough distance to the storm in kilometres. It is an estimate, not an exact measurement, but it works well enough.\n\nThe same gap explains echoes. Shout at a cliff and the sound takes time to bounce back to you. If the wait is getting shorter between flash and thunder, the storm is coming closer and it is time to head indoors.",
+      "apply_it": "During the next thunderstorm, count the seconds between flash and thunder and work out roughly how far away it is. Stay indoors while you do it.",
+      "quiz": {
+        "question": "You count nine seconds between lightning and thunder. Roughly how far away is the storm?",
+        "options": [
+          "Nine kilometres",
+          "About three kilometres",
+          "Thirty metres",
+          "It is directly overhead"
+        ],
+        "answer": 1,
+        "explanation": "Sound travels about one kilometre every three seconds, so nine seconds means roughly three kilometres."
+      }
+    },
+    {
+      "id": "science-everyday-things--10",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "electricity",
+        "circuits",
+        "home"
+      ],
+      "title": "Electricity is a flow of tiny charged particles around a loop",
+      "body": "Electricity in your home is mostly a flow of electrons, tiny charged particles, moving through metal wires. For them to flow, there must be a complete loop, called a circuit, from the power source, through the device and back again.\n\nA switch works by breaking or joining that loop. Flick a light switch off and you open a gap in the circuit, so the flow stops and the bulb goes dark.\n\nMetals like copper let electricity flow easily, so they are called conductors. Plastic and rubber resist it strongly, so they are used as insulators. That's why wires are copper on the inside and plastic on the outside.",
+      "apply_it": "Look at a phone charging cable or lamp lead. Notice the plastic coating: it is there to keep the electricity inside the copper and away from you.",
+      "quiz": {
+        "question": "What does a light switch do when you turn it off?",
+        "options": [
+          "It drains the electricity from the bulb",
+          "It cools the wire down",
+          "It opens a gap in the circuit so the flow stops",
+          "It sends the electricity back to the power station"
+        ],
+        "answer": 2,
+        "explanation": "Electricity needs a complete loop. Turning off a switch breaks the loop, so the current stops."
+      }
+    },
+    {
+      "id": "science-everyday-things--11",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "electricity",
+        "energy",
+        "money"
+      ],
+      "title": "Watts tell you how fast a device uses energy, and that shapes your bill",
+      "body": "Every appliance has a power rating in watts. It tells you how quickly it uses energy. A phone charger might use 5 to 20 watts, an LED bulb around 5 to 10, and a kettle or electric heater 2,000 watts or more.\n\nYour energy bill usually counts kilowatt hours. One kilowatt hour is 1,000 watts used for one hour. So a 2,000 watt heater running for half an hour uses one kilowatt hour, the same as a 10 watt LED bulb left on for 100 hours.\n\nThings that make heat, like heaters, kettles, ovens, tumble dryers and showers, tend to use the most. Small electronics usually use far less.",
+      "apply_it": "Find the power label on your kettle or heater. Work out how many hours it would take to use one kilowatt hour, then compare it with a light bulb.",
+      "quiz": {
+        "question": "Which uses more energy: a 2,000 watt heater for 30 minutes, or a 10 watt bulb for 100 hours?",
+        "options": [
+          "They use about the same",
+          "The heater uses far more",
+          "The bulb uses far more",
+          "Neither uses any energy"
+        ],
+        "answer": 0,
+        "explanation": "Both come to about one kilowatt hour: 2,000 watts for half an hour, and 10 watts for 100 hours."
+      }
+    },
+    {
+      "id": "science-everyday-things--12",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "electricity",
+        "safety",
+        "home"
+      ],
+      "title": "Home electrics have safety features, and water is their biggest enemy",
+      "body": "Mains electricity is strong enough to kill, so homes have built-in protection. Fuses and circuit breakers cut the power if too much current flows, for example when a device is faulty or too many are plugged into one socket. Many homes also have devices that switch off in a split second if current starts leaking through a person.\n\nWater makes things more dangerous because ordinary water, with its dissolved minerals, conducts electricity, and wet skin lets current through more easily. That's why bathroom lights often have pull cords or outside switches.\n\nNever touch switches with wet hands, never poke metal into a toaster, and turn off and unplug before any repair. If in doubt, call a qualified electrician.",
+      "apply_it": "Check one extension lead at home. If it has many high-power devices plugged in, such as a heater and a kettle, move one to a different wall socket.",
+      "quiz": {
+        "question": "Why are bathrooms treated with extra care when it comes to electricity?",
+        "options": [
+          "Bathrooms use a different type of electricity",
+          "Water with dissolved minerals conducts electricity and wet skin lets current through",
+          "Steam makes bulbs brighter",
+          "Mirrors attract electric current"
+        ],
+        "answer": 1,
+        "explanation": "Everyday water conducts electricity and wet skin lowers your protection, so bathrooms are wired with extra safety in mind."
+      }
+    },
+    {
+      "id": "science-everyday-things--13",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "electricity",
+        "static",
+        "charge"
+      ],
+      "title": "Static shocks come from charges that build up and then jump",
+      "body": "Rub a balloon on your hair and it sticks to the wall. Walk across a carpet and touch a door handle and you might feel a small zap. Both are static electricity.\n\nWhen two materials rub together, electrons can move from one to the other. One ends up with extra negative charge and the other with a shortage. Opposite charges attract, which is why the balloon clings. When enough charge builds up, it can jump across a tiny gap as a spark. That's the zap.\n\nStatic shocks are more common in dry winter air, because damp air helps charge leak away gently. Lightning is the same idea on an enormous scale.",
+      "apply_it": "Rub a balloon on a wool jumper or dry hair, then hold it near small bits of torn paper. Watch them jump up to meet it.",
+      "quiz": {
+        "question": "Why do you get more static shocks in dry winter weather?",
+        "options": [
+          "Cold makes electrons heavier",
+          "Carpets produce more electricity in winter",
+          "Dry air lets charge build up instead of leaking away",
+          "Winter clothes are magnetic"
+        ],
+        "answer": 2,
+        "explanation": "Moisture in the air helps charges leak away gradually. In dry air they build up until they jump as a spark."
+      }
+    },
+    {
+      "id": "science-everyday-things--14",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "magnets",
+        "fields",
+        "earth"
+      ],
+      "title": "Magnets act at a distance through an invisible field",
+      "body": "Magnets have two ends, called north and south poles. Opposite poles pull together and matching poles push apart. They can do this without touching because a magnet is surrounded by a magnetic field, an invisible region where its pull acts.\n\nOnly some materials are strongly attracted, mainly iron, nickel, cobalt and steel. That's why a fridge magnet sticks to a steel door but not to a wooden cupboard or an aluminium can.\n\nThe whole Earth behaves a bit like a giant magnet, thanks to moving molten metal deep inside it. A compass needle is a small magnet that lines up with that field. It points to magnetic north, which is close to, but not exactly at, the geographic North Pole.",
+      "apply_it": "Test a fridge magnet on five things at home: a spoon, a can, a key, a coin and a door. Note which ones it sticks to.",
+      "quiz": {
+        "question": "Why does a compass needle point roughly north?",
+        "options": [
+          "It lines up with Earth's magnetic field",
+          "It is pulled by the North Star",
+          "It follows the direction of wind",
+          "It is attracted to cold places"
+        ],
+        "answer": 0,
+        "explanation": "Earth has a magnetic field, and a compass needle is a tiny magnet that lines up with it, pointing towards magnetic north."
+      }
+    },
+    {
+      "id": "science-everyday-things--15",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "magnets",
+        "electricity",
+        "motors"
+      ],
+      "title": "Electricity and magnetism are partners, which is how motors and generators work",
+      "body": "In the 1800s, scientists found that electricity flowing through a wire creates a magnetic field, and that moving a magnet near a wire can make electricity flow. Electricity and magnetism turned out to be two sides of the same thing.\n\nThis partnership runs much of modern life. An electric motor uses electricity and magnets to make something spin: a fan, a washing machine drum, an electric toothbrush. A generator works the other way round: something spins a magnet inside coils of wire, and electricity flows out.\n\nMost power stations and wind turbines are giant generators. Whether the spinning comes from steam, wind or falling water, the final step is a magnet and a coil of wire.",
+      "apply_it": "Count how many things in your home have an electric motor inside: think fans, blenders, drills, hairdryers and toothbrushes.",
+      "quiz": {
+        "question": "What does a generator do?",
+        "options": [
+          "Stores electricity like a battery",
+          "Turns electricity into light",
+          "Makes magnets from steam",
+          "Turns spinning movement into electricity using magnets and wire"
+        ],
+        "answer": 3,
+        "explanation": "A generator spins magnets and coils of wire past each other, which makes electricity flow. A motor does the reverse."
+      }
+    },
+    {
+      "id": "science-everyday-things--16",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "gravity",
+        "motion",
+        "falling"
+      ],
+      "title": "Gravity pulls everything down at the same rate, if air gets out of the way",
+      "body": "Gravity is the pull every mass has on every other mass. Earth is so massive that its pull keeps us on the ground, keeps the Moon in orbit and makes a dropped cup fall.\n\nHere's a surprise: without air, heavy and light things fall at exactly the same rate. A feather drifts slowly on Earth only because air pushes against it. An astronaut on the Moon, where there is almost no air, once dropped a hammer and a feather together, and they hit the ground at the same moment.\n\nYour weight is the pull of gravity on you. On the Moon you would weigh about a sixth as much, even though your body would not change.",
+      "apply_it": "Drop a sheet of paper and a book at the same time. Then scrunch the paper into a tight ball and try again. Notice how much air was slowing it.",
+      "quiz": {
+        "question": "Why does a feather fall more slowly than a hammer on Earth?",
+        "options": [
+          "Gravity pulls light things less",
+          "Air pushes against the feather and slows it",
+          "Feathers are not affected by gravity",
+          "Hammers have their own gravity"
+        ],
+        "answer": 1,
+        "explanation": "In a vacuum they fall together. On Earth, air resistance slows the light, spread-out feather much more than the hammer."
+      }
+    },
+    {
+      "id": "science-everyday-things--17",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "motion",
+        "inertia",
+        "safety"
+      ],
+      "title": "Moving things keep moving unless something stops them",
+      "body": "A ball rolling on the floor eventually stops, so it's easy to think things naturally slow down. In fact, a moving object keeps going at the same speed and direction unless a force acts on it. On the floor, friction and air are that force.\n\nThis tendency to keep doing what you're doing is called inertia. You feel it on a bus: when it brakes, your body carries on forward. When it pulls away, you feel pushed back into your seat.\n\nSeatbelts exist because of inertia. In a sudden stop, the car halts but your body keeps moving at the car's speed. The belt supplies the force that stops you safely.",
+      "apply_it": "On your next bus or car ride, notice which way your body leans as you brake and set off. That lean is inertia at work.",
+      "quiz": {
+        "question": "Why do passengers lurch forward when a bus brakes suddenly?",
+        "options": [
+          "The bus pushes them forward",
+          "The air rushes forward",
+          "Their bodies keep moving forward when the bus slows",
+          "Gravity changes direction"
+        ],
+        "answer": 2,
+        "explanation": "Inertia keeps your body moving at the bus's old speed until something, like a seat, a handrail or a seatbelt, stops you."
+      }
+    },
+    {
+      "id": "science-everyday-things--18",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "motion",
+        "force",
+        "mass"
+      ],
+      "title": "A bigger push makes things speed up faster, and heavier things need more push",
+      "body": "Think of a supermarket trolley. Empty, a gentle push sends it rolling off quickly. Full of shopping, the same push barely gets it moving. To get a full trolley going as fast, you need to push much harder.\n\nThis is one of the core rules of motion: how quickly something speeds up depends on the force you apply and how much mass it has. More force means more speeding up. More mass means less.\n\nIt's why a loaded car takes longer to reach the same speed and longer to stop. Lorries need far more distance to brake than bicycles, which is worth remembering when you cross a road.",
+      "apply_it": "Next time you push a trolley or pram, notice how much harder it is to start and stop once it is full.",
+      "quiz": {
+        "question": "You give an empty trolley and a full trolley the same push. What happens?",
+        "options": [
+          "The empty one speeds up more",
+          "The full one speeds up more",
+          "They speed up the same",
+          "Neither moves"
+        ],
+        "answer": 0,
+        "explanation": "The same force gives a lighter object more acceleration. The full trolley has more mass, so it speeds up less."
+      }
+    },
+    {
+      "id": "science-everyday-things--19",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "motion",
+        "force",
+        "rockets"
+      ],
+      "title": "Every push comes with an equal push back",
+      "body": "When you push on something, it pushes back on you just as hard, in the opposite direction. This sounds strange until you notice it everywhere.\n\nWhen you swim, you push water backwards and the water pushes you forwards. When you step off a small boat onto a jetty, the boat slides away from the jetty as you push off. When you let go of a blown-up balloon, air rushes out of the back and the balloon shoots forwards.\n\nRockets work the same way. They don't push against the ground or the air. They throw hot gas out of the back at great speed, and the gas pushes the rocket the other way. That's why rockets work in empty space.",
+      "apply_it": "Blow up a balloon, hold the neck shut, then let it go. Watch it fly in the opposite direction to the escaping air.",
+      "quiz": {
+        "question": "How does a rocket move forward in empty space?",
+        "options": [
+          "It pushes against the stars",
+          "It is pulled by the Moon",
+          "It floats because space has no gravity",
+          "It throws gas backwards and the gas pushes it forwards"
+        ],
+        "answer": 3,
+        "explanation": "Every action has an equal and opposite reaction. Gas pushed out of the back pushes the rocket forward, with no air needed."
+      }
+    },
+    {
+      "id": "science-everyday-things--20",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "friction",
+        "motion",
+        "safety"
+      ],
+      "title": "Friction slows things down, but without it we couldn't walk",
+      "body": "Friction is the force that resists two surfaces sliding past each other. It's why a rolling ball stops, why your hands warm up when you rub them together, and why brakes work.\n\nIt can be a nuisance, wearing out shoes and tyres. But we depend on it constantly. Walking only works because friction stops your foot sliding backwards. Without it, every floor would be like ice.\n\nIce is slippery because a thin, watery layer forms on its surface. Scientists still debate exactly why that layer forms so easily, but it lets surfaces slide with very little friction. That's why gritting roads, wearing shoes with good tread and driving slowly all help in winter.",
+      "apply_it": "Rub your palms together quickly for ten seconds and feel them warm. Then try it with a drop of hand cream and notice how much easier and cooler it is.",
+      "quiz": {
+        "question": "Why is friction useful when you walk?",
+        "options": [
+          "It makes your shoes lighter",
+          "It stops your foot sliding as you push off",
+          "It pulls you forward",
+          "It keeps the floor warm"
+        ],
+        "answer": 1,
+        "explanation": "Your foot pushes back against the ground. Friction stops it sliding, so the ground pushes you forward."
+      }
+    },
+    {
+      "id": "science-everyday-things--21",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "pressure",
+        "force",
+        "air"
+      ],
+      "title": "Pressure depends on how spread out a force is",
+      "body": "Pressure is how much force presses on each bit of area. The same force on a small area makes high pressure. Spread over a large area, it makes low pressure.\n\nA sharp knife cuts because all your push lands on a very thin edge. A blunt knife spreads the same push wider, so it squashes the tomato instead. Snowshoes do the opposite: they spread your weight so you don't sink.\n\nThe air around us presses on everything too. When you drink through a straw, you lower the pressure inside the straw, and the air pressing on the drink in the glass pushes the liquid up to your mouth.",
+      "apply_it": "Press your palm gently on a pencil's flat end, then gently on its sharp tip. Same push, very different feeling: that's pressure.",
+      "quiz": {
+        "question": "Why does a sharp knife cut better than a blunt one?",
+        "options": [
+          "It is heavier",
+          "It is colder",
+          "The force lands on a smaller area, making higher pressure",
+          "Sharp metal is magnetic"
+        ],
+        "answer": 2,
+        "explanation": "A thin edge concentrates your force on a tiny area, which creates high pressure that slices easily."
+      }
+    },
+    {
+      "id": "science-everyday-things--22",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "floating",
+        "density",
+        "water"
+      ],
+      "title": "Things float when they push aside enough water to match their weight",
+      "body": "A steel ship weighs thousands of tonnes, yet it floats. A small pebble sinks. The difference is shape and how much water each one pushes aside.\n\nWhen something sits in water, it pushes some water out of the way. The water pushes back up with a force equal to the weight of the water moved. If that upward push can match the object's weight before it is fully under, it floats. A ship is shaped like a hollow bowl, so it pushes aside a huge amount of water.\n\nThis ties to density, how much mass is packed into a space. Oil floats on water because it's less dense. An egg that floats in water is often old, because air builds up inside it over time.",
+      "apply_it": "Put an egg in a glass of water. A fresh egg usually sinks; one that stands up or floats is older, though still check it smells fine before eating.",
+      "quiz": {
+        "question": "Why can a huge steel ship float?",
+        "options": [
+          "Its hollow shape pushes aside enough water to balance its weight",
+          "Steel is lighter than water",
+          "The engine holds it up",
+          "Salt water is solid underneath"
+        ],
+        "answer": 0,
+        "explanation": "Water pushes up with a force equal to the weight of water moved aside. A hollow hull moves enough water to hold the ship up."
+      }
+    },
+    {
+      "id": "science-everyday-things--23",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "heat",
+        "fridge",
+        "home"
+      ],
+      "title": "A fridge doesn't make cold, it moves heat out of the box",
+      "body": "There's no such thing as adding cold. A fridge works by carrying heat from inside the box to the room outside.\n\nIt uses a special fluid called a refrigerant that flows round a sealed loop of pipes. Inside the fridge, the fluid evaporates, turning from liquid to gas. Evaporating soaks up heat, just as sweat drying on your skin cools you. A pump called a compressor then squeezes the gas, which makes it hot. It flows through coils at the back, where it gives its heat to the room and turns back to liquid.\n\nThat's why the back of a fridge feels warm, and why leaving the door open just makes the kitchen warmer overall.",
+      "apply_it": "Carefully feel the air near the back or underneath your fridge. The warmth there is heat that was taken from your food.",
+      "quiz": {
+        "question": "Why does the back of a fridge feel warm?",
+        "options": [
+          "The fridge is broken",
+          "The light bulb heats it",
+          "Heat removed from inside is released there",
+          "Cold air cannot reach the back"
+        ],
+        "answer": 2,
+        "explanation": "A fridge pumps heat from inside to outside. The warm coils at the back release that heat into your kitchen."
+      }
+    },
+    {
+      "id": "science-everyday-things--24",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "microwave",
+        "energy",
+        "home"
+      ],
+      "title": "A microwave oven heats food by making water molecules jiggle",
+      "body": "A microwave oven makes microwaves, a type of radio wave. These waves make water molecules in food twist back and forth billions of times a second. That jiggling becomes heat.\n\nThe waves only reach a few centimetres into food, so the middle of a thick dish heats more slowly as warmth spreads inwards. Waves also bounce around the box unevenly, leaving hot and cold spots. That's why stirring, turning food and leaving it to stand for a minute all help it heat through safely.\n\nMicrowaving does not make food radioactive. The waves stop the moment the oven switches off. Metal can cause sparks, so keep foil and metal-trimmed plates out.",
+      "apply_it": "When you next reheat leftovers, stir them halfway and let them stand for a minute before eating. Check the middle is piping hot.",
+      "quiz": {
+        "question": "Why should you stir food when microwaving it?",
+        "options": [
+          "Stirring makes the waves stronger",
+          "Microwaves heat unevenly and the centre warms more slowly",
+          "Stirring stops it becoming radioactive",
+          "It removes the water"
+        ],
+        "answer": 1,
+        "explanation": "Microwaves heat unevenly and only reach a few centimetres in, so stirring helps spread the heat so the food warms all the way through."
+      }
+    },
+    {
+      "id": "science-everyday-things--25",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "phone",
+        "light",
+        "waves"
+      ],
+      "title": "Your phone talks to the world using invisible radio waves",
+      "body": "Radio waves, microwaves, visible light and X-rays are all members of one family, called the electromagnetic spectrum. They are the same kind of wave with different wavelengths, and only a small slice is visible to our eyes.\n\nYour phone sends and receives radio waves. They travel to a nearby mast or Wi-Fi router, which passes your call or message on through cables and other masts. Thick walls, hills and metal can weaken the signal, which is why reception drops in lifts and basements.\n\nThe touchscreen works because your body conducts a little electricity. Your fingertip changes a tiny electric field on the glass, and the phone senses exactly where. That's why most screens ignore a gloved finger.",
+      "apply_it": "Try tapping your phone screen with a fingernail, a pen cap and a fingertip. Notice which ones it responds to and why.",
+      "quiz": {
+        "question": "How does your phone send a message to a friend across town?",
+        "options": [
+          "By sound waves through the air",
+          "By a beam of visible light",
+          "Through magnetism alone",
+          "By radio waves to a mast or router, then onward through a network"
+        ],
+        "answer": 3,
+        "explanation": "Phones use radio waves to reach a nearby mast or router, which passes the signal through a wider network."
+      }
+    },
+    {
+      "id": "science-everyday-things--26",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "battery",
+        "electricity",
+        "chemistry"
+      ],
+      "title": "A battery stores energy as chemicals waiting to react",
+      "body": "A battery has two different materials, called electrodes, separated by a substance that lets charged particles drift between them. The chemicals want to react, but the reaction can only happen if electrons travel from one side to the other through an outside path.\n\nPlug in a torch and you give them that path. Electrons flow through the bulb, lighting it, while the reaction slowly uses up the chemicals. In a rechargeable battery, charging pushes the reaction backwards, ready to run again.\n\nLithium-ion batteries in phones pack a lot of energy into a small space. If one is damaged, swollen or gets very hot, stop using it, and don't charge devices under pillows.",
+      "apply_it": "Check where your phone charges overnight. Move it to a hard, open surface rather than a bed or sofa.",
+      "quiz": {
+        "question": "What happens inside a battery as it powers a torch?",
+        "options": [
+          "A chemical reaction pushes electrons through the circuit",
+          "It releases stored lightning",
+          "Magnets inside it spin",
+          "It slowly fills with electricity from the air"
+        ],
+        "answer": 0,
+        "explanation": "A battery turns chemical energy into electrical energy. The reaction drives electrons round the circuit until the chemicals are used up."
+      }
+    },
+    {
+      "id": "science-everyday-things--27",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "chemistry",
+        "cooking",
+        "kitchen"
+      ],
+      "title": "Cooking is chemistry: heat changes proteins and creates new flavours",
+      "body": "When you fry an egg, the clear part turns white and solid. Heat makes the long protein molecules in the egg unfold and tangle together into a firm mesh. You can't reverse it, which is why you can't unboil an egg.\n\nThe brown crust on toast, roast potatoes and seared meat comes from a set of reactions between proteins and sugars, often called the Maillard reaction. It needs fairly high, dry heat, roughly above the temperature of boiling water. That's why boiled potatoes never go golden but roasted ones do.\n\nSugar heated on its own turns into caramel, a different reaction that also makes rich brown flavours.",
+      "apply_it": "Next time you cook, compare a boiled and a roasted version of the same vegetable. Notice the difference in colour and flavour that dry heat brings.",
+      "quiz": {
+        "question": "Why don't boiled potatoes go brown and crispy?",
+        "options": [
+          "Water removes their flavour",
+          "Browning reactions need drier, hotter conditions than boiling water gives",
+          "Potatoes have no protein or sugar",
+          "Salt in the water stops browning"
+        ],
+        "answer": 1,
+        "explanation": "Boiling water stays around 100 degrees Celsius. Browning reactions need drier, higher heat, like an oven or a frying pan."
+      }
+    },
+    {
+      "id": "science-everyday-things--28",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "chemistry",
+        "baking",
+        "kitchen"
+      ],
+      "title": "Baking rises because of gas bubbles trapped in a stretchy dough",
+      "body": "Bread and cakes rise because tiny bubbles of carbon dioxide gas form inside the mixture and get trapped.\n\nIn bread, yeast does the work. Yeast is a living fungus that eats sugars and gives off carbon dioxide. Kneading builds gluten, stretchy protein strands from the flour that hold the bubbles like little balloons. The oven's heat makes the bubbles expand, then sets the structure.\n\nCakes often use baking soda or baking powder instead. Baking soda reacts with something acidic, like yoghurt or buttermilk, to release gas. Baking powder contains its own acid, so it just needs liquid and heat. Too much of either can taste bitter or make a cake rise and then collapse.",
+      "apply_it": "Mix a teaspoon of baking soda into a glass of vinegar over a sink. Watch the fizz: that's the same gas that lifts a cake.",
+      "quiz": {
+        "question": "What makes bread dough rise?",
+        "options": [
+          "Air from the oven fan",
+          "Steam from melted butter only",
+          "Carbon dioxide made by yeast, trapped by gluten",
+          "Salt expanding in the heat"
+        ],
+        "answer": 2,
+        "explanation": "Yeast gives off carbon dioxide, and stretchy gluten traps it in bubbles that expand in the oven."
+      }
+    },
+    {
+      "id": "science-everyday-things--29",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "chemistry",
+        "soap",
+        "hygiene"
+      ],
+      "title": "Soap grabs grease with one end and water with the other",
+      "body": "Water alone can't wash off oily dirt, because oil and water don't mix. Soap solves this with clever molecules that have two different ends.\n\nOne end is attracted to water. The other end avoids water and sticks to oil and grease. When you lather up, the grease-loving ends dig into oily dirt, and the water-loving ends face outwards. The dirt gets wrapped in tiny clusters that rinse away.\n\nSoap also damages the outer layer of many germs, including some viruses. That's why health agencies recommend scrubbing hands with soap for about 20 seconds, covering backs, between fingers and under nails, then rinsing well.",
+      "apply_it": "Wash your hands now with soap for 20 seconds, about two rounds of Happy Birthday hummed slowly. Don't forget your thumbs and fingertips.",
+      "quiz": {
+        "question": "Why does soap help remove greasy dirt when water alone doesn't?",
+        "options": [
+          "Its molecules attach to both oil and water",
+          "It makes water hotter",
+          "It dissolves your skin's top layer",
+          "It turns grease into water"
+        ],
+        "answer": 0,
+        "explanation": "Soap molecules have one end that holds on to grease and one that holds on to water, so oily dirt can be rinsed away."
+      }
+    },
+    {
+      "id": "science-everyday-things--30",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "chemistry",
+        "rust",
+        "home"
+      ],
+      "title": "Rust is iron slowly reacting with oxygen and water",
+      "body": "Leave a steel bike out in the rain and it grows flaky orange-brown patches. That's rust, formed when iron reacts with oxygen from the air, with water helping the reaction along.\n\nIt needs both. Iron kept completely dry rusts very slowly, and so does iron in water with no oxygen. Salt speeds rusting up, which is why cars rust faster near the sea or where roads are salted in winter.\n\nTo slow rust, keep oxygen and water away from the metal. Paint, oil, grease and plastic coatings all form a barrier. Galvanised steel has a layer of zinc that protects the iron underneath. Stainless steel contains other metals that form a thin, protective skin.",
+      "apply_it": "Find one metal tool or hinge at home showing early rust. Dry it, rub it lightly, and add a thin coat of oil to protect it.",
+      "quiz": {
+        "question": "Why do cars often rust faster near the sea?",
+        "options": [
+          "Sea air has no oxygen",
+          "Waves knock off the paint",
+          "Sunlight is stronger by the sea",
+          "Salt speeds up the rusting reaction"
+        ],
+        "answer": 3,
+        "explanation": "Rust needs iron, oxygen and water. Salt makes the reaction go faster, so salty air and gritted roads speed it up."
+      }
+    },
+    {
+      "id": "science-everyday-things--31",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "chemistry",
+        "acids",
+        "kitchen"
+      ],
+      "title": "Acids and bases are everywhere in the kitchen, and they cancel each other out",
+      "body": "Lemon juice, vinegar and fizzy drinks are acids. They taste sour and can dissolve some minerals. Baking soda and many cleaning products are bases, also called alkalis. Strong bases feel slippery and can be harsh on skin.\n\nWhen an acid meets a base, they react and partly cancel each other out. That's why vinegar and baking soda fizz, and why vinegar can help shift limescale, the chalky crust in kettles that forms from minerals in hard water.\n\nA safety rule worth knowing: never mix cleaning products, especially bleach with acids or ammonia. They can release toxic gases. Use one product at a time and rinse between them.",
+      "apply_it": "Descale a kettle by filling it partly with water and vinegar, leaving it a while, then rinsing very thoroughly and boiling fresh water once before use.",
+      "quiz": {
+        "question": "Why should you never mix bleach with other cleaning products?",
+        "options": [
+          "It makes them less effective",
+          "Some mixtures release toxic gases",
+          "It turns them into acids",
+          "It stains the bottle"
+        ],
+        "answer": 1,
+        "explanation": "Bleach mixed with acids or ammonia can release harmful gases. Use cleaning products one at a time."
+      }
+    },
+    {
+      "id": "science-everyday-things--32",
+      "topic": "science",
+      "tags": [
+        "physics",
+        "wrap-up",
+        "curiosity",
+        "home"
+      ],
+      "title": "Once you see the science, everyday life becomes a little more amazing",
+      "body": "You've now met the big ideas behind ordinary days. Energy changes form but never disappears. Heat flows from hot to cold. Light bounces and bends, and colour is light reflected. Sound is vibration. Electricity flows in loops and partners with magnetism. Gravity, inertia and friction shape every movement.\n\nYou've also seen how a fridge moves heat, how a microwave jiggles water, how a phone uses radio waves and how a battery stores chemical energy. And you know that cooking, baking, soap and rust are all chemistry.\n\nKeep asking how things work. Most of the time, the answer is one of the ideas in this guide.",
+      "apply_it": "Explain one idea from this guide to a friend or child today, using something in the room as your example.",
+      "quiz": {
+        "question": "Which statement best sums up this guide?",
+        "options": [
+          "Science is too hard for everyday life",
+          "Gadgets work by magic",
+          "A few tested ideas explain much of what happens around us",
+          "Only experts can understand a kitchen"
+        ],
+        "answer": 2,
+        "explanation": "Energy, heat, light, forces and simple chemistry explain a great deal of what happens in your home every day."
+      }
+    }
+  ]
+}

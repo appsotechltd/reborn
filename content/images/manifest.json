@@ -54,6 +54,34 @@
    "type": "3d",
    "caption": "One business at the centre, its benefits rippling out to the community"
   },
+  "ai-how-ai-works--01": {
+   "file": "images/cards/v1/guide-use-ai-tools-well--02.webp",
+   "full": "images/cards/v1-full/guide-use-ai-tools-well--02.png",
+   "type": "illustration",
+   "caption": "A weaver turning glowing threads into a tapestry",
+   "credit": "AI illustration (Ideogram 3.0)"
+  },
+  "ai-spot-fakes-and-misinformation--01": {
+   "file": "images/cards/v1/guide-use-ai-tools-well--06.webp",
+   "full": "images/cards/v1-full/guide-use-ai-tools-well--06.png",
+   "type": "illustration",
+   "caption": "A reader checking a book closely with a magnifying glass",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "ai-use-ai-safely--01": {
+   "file": "images/cards/v1/guide-use-ai-tools-well--07.webp",
+   "full": "images/cards/v1-full/guide-use-ai-tools-well--07.png",
+   "type": "illustration",
+   "caption": "A person sealing a private letter beside a locked chest",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "ai-work-alongside-ai--01": {
+   "file": "images/cards/v1/guide-future-proof-your-career--05.webp",
+   "full": "images/cards/v1-full/guide-future-proof-your-career--05.png",
+   "type": "illustration",
+   "caption": "A carpenter trying a new tool beside traditional ones",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
   "art-of-war-sun-tzu--19": {
    "file": "images/cards/v1/art-of-war-sun-tzu--19.webp",
    "full": "images/cards/v1-full/art-of-war-sun-tzu--19.png",
@@ -232,6 +260,26 @@
    "full": "images/cards/v1-full/consolation-of-philosophy-boethius--26.png",
    "type": "illustration",
    "caption": "Searching everything but the good life",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "crime-how-justice-works--01": {
+   "file": "images/cards/v1/7-habits-covey--23.webp",
+   "full": "images/cards/v1-full/7-habits-covey--23.png",
+   "type": "3d",
+   "caption": "Courage and consideration held in balance"
+  },
+  "crime-stay-safe-online--01": {
+   "file": "images/cards/v1/guide-spot-and-stop-scams--01.webp",
+   "full": "images/cards/v1-full/guide-spot-and-stop-scams--01.png",
+   "type": "illustration",
+   "caption": "People of all walks of life holding phones with wary expressions",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "crime-why-people-commit-crime--01": {
+   "file": "images/cards/v1/guide-live-well-with-adhd--01.webp",
+   "full": "images/cards/v1-full/guide-live-well-with-adhd--01.png",
+   "type": "illustration",
+   "caption": "A person at a crossroads of glowing paths in a sunny meadow",
    "credit": "AI illustration (OpenAI gpt-image-1-mini)"
   },
   "deep-work-newport--30": {
@@ -1469,6 +1517,27 @@
    "caption": "A calm traveller watches a missed train pull away",
    "credit": "AI illustration (OpenAI gpt-image-1-mini)"
   },
+  "mental-health-help-someone-struggling--01": {
+   "file": "images/cards/v1/guide-live-well-with-adhd--12.webp",
+   "full": "images/cards/v1-full/guide-live-well-with-adhd--12.png",
+   "type": "illustration",
+   "caption": "One hand offering a lit lantern to another on a dark path",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mental-health-look-after-your-mind--01": {
+   "file": "images/cards/v1/guide-recover-from-burnout--09.webp",
+   "full": "images/cards/v1-full/guide-recover-from-burnout--09.png",
+   "type": "illustration",
+   "caption": "Two friends walking arm in arm on an autumn forest path",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "mental-health-understand-depression--01": {
+   "file": "images/cards/v1/guide-recover-from-burnout--12.webp",
+   "full": "images/cards/v1-full/guide-recover-from-burnout--12.png",
+   "type": "illustration",
+   "caption": "A doctor reassuring a weary person sitting on a bench",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
   "michael-faraday-thompson--41": {
    "file": "images/cards/v1/michael-faraday-thompson--41.webp",
    "full": "images/cards/v1-full/michael-faraday-thompson--41.png",
@@ -1771,6 +1840,20 @@
    "caption": "Declining a request with warmth and good manners",
    "credit": "AI illustration (OpenAI gpt-image-1-mini)"
   },
+  "science-everyday-things--01": {
+   "file": "images/cards/v1/autobiography-charles-darwin--03.webp",
+   "full": "images/cards/v1-full/autobiography-charles-darwin--03.png",
+   "type": "illustration",
+   "caption": "Two boys running a chemistry lab in a garden shed",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
+  "science-how-your-body-works--01": {
+   "file": "images/cards/v1/guide-live-well-with-adhd--10.webp",
+   "full": "images/cards/v1-full/guide-live-well-with-adhd--10.png",
+   "type": "illustration",
+   "caption": "A woman jogging by a misty river at sunrise",
+   "credit": "AI illustration (OpenAI gpt-image-1-mini)"
+  },
   "science-of-getting-rich-wattles--20": {
    "file": "images/cards/v1/science-of-getting-rich-wattles--20.webp",
    "full": "images/cards/v1-full/science-of-getting-rich-wattles--20.png",
@@ -1783,6 +1866,26 @@
    "full": "images/cards/v1-full/science-of-learning-weinstein-2018--26.png",
    "type": "3d",
    "caption": "Different-looking shapes that share the same core idea"
+  },
+  "science-our-changing-planet--01": {
+   "file": "images/cards/v1/guide-explore-the-universe--11.webp",
+   "full": "images/cards/v1-full/guide-explore-the-universe--11.png",
+   "type": "illustration",
+   "caption": "Earth glowing blue and white in space",
+   "credit": "AI illustration (Ideogram 3.0)"
+  },
+  "science-the-living-world--01": {
+   "file": "images/cards/v1/guide-understand-how-life-works--10.webp",
+   "full": "images/cards/v1-full/guide-understand-how-life-works--10.png",
+   "type": "illustration",
+   "caption": "A colourful reef and a wildflower meadow full of life",
+   "credit": "AI illustration (Ideogram 3.0)"
+  },
+  "science-think-like-a-scientist--01": {
+   "file": "images/cards/v1/foundations-of-science-poincare--21.webp",
+   "full": "images/cards/v1-full/foundations-of-science-poincare--21.png",
+   "type": "3d",
+   "caption": "Arrows grouped in the centre of a target: a hit you can repeat"
   },
   "self-help-samuel-smiles--02": {
    "file": "images/cards/v1/self-help-samuel-smiles--02.webp",

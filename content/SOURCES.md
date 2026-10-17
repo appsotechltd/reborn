@@ -192,6 +192,27 @@ Calmly* and *Negotiate Anything* guides. Together they form the subject *Communi
 readers follow the guides one after the other. Pictures reuse illustrations Reborn already paid for, so
 they cost nothing.
 
+## More subjects and gap-filling guides
+
+Added 2026-10-17. Fourteen more subjects in `subjects/` string existing guides and books into
+courses read one after the other: Money from Zero, Calm Mind, Healthy Body, Career Starter, Learn
+Faster, Better Habits, Love and Family, Stoicism Step by Step, Through Grief, Start a Business,
+Science and Nature, Mental Health Essentials, Crime and Society and AI for Everyone.
+
+Seven hand-picked topic summaries in `summaries/` give categories that had no guide a guided path
+through cards already in the library: Get Over a Breakup, Bounce Back from Setbacks, Unblock Your
+Creativity, Wisdom for Everyday Life, Good Manners at Work and at Home, Lead Like the Greats and
+Find Your Purpose.
+
+Fifteen new Reborn-written guides (30 to 32 cards each, `original-summary`, references in `notes`)
+fill the thinnest categories. Science & Nature: *How Your Body Works*, *The Living World*, *Our
+Changing Planet*, *The Science of Everyday Things* and *Think Like a Scientist*. Mental Health:
+*Understand Depression*, *Look After Your Mind Every Day* and *Help Someone Who Is Struggling*
+(every card flagged `health`). Crime & Society: *Stay Safe Online*, *Why People Commit Crime* and
+*How Courts and Justice Work* (general education, not legal advice). AI & Future Skills: *How AI
+Actually Works*, *Spot AI Fakes and Misinformation*, *Work Alongside AI* and *Use AI Safely and
+Fairly*. Covers reuse illustrations Reborn already paid for, so they cost nothing.
+
 ## The pipeline
 
 Code lives in [pipeline/](pipeline/). Python 3.11+, standard library only.

@@ -1,0 +1,749 @@
+{
+ "source": {
+  "id": "science-the-living-world",
+  "title": "The Living World",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://www.ipbes.net/global-assessment",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+  "attribution": "A Reborn guide drawing on IPBES, the US National Oceanic and Atmospheric Administration, the Food and Agriculture Organization of the United Nations, the US Forest Service and National Geographic Education.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn; no text copied. References: IPBES, Global Assessment Report on Biodiversity and Ecosystem Services, https://www.ipbes.net/global-assessment; NOAA Ocean Service, How much oxygen comes from the ocean?, https://oceanservice.noaa.gov/facts/ocean-oxygen.html; NOAA Ocean Service, Coral reef ecosystems, https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems; Food and Agriculture Organization of the United Nations, Global Forest Resources Assessment, https://www.fao.org/forest-resources-assessment/en/; US Forest Service, Pollinators, https://www.fs.usda.gov/managing-land/wildflowers/pollinators; National Geographic Education, Food Web, https://education.nationalgeographic.org/resource/food-web/"
+ },
+ "cards": [
+  {
+   "id": "science-the-living-world--01",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "overview",
+    "ecology"
+   ],
+   "title": "The living world is a web of plants, animals and tiny life, all linked",
+   "body": "Step outside and you are surrounded by connections. A tree feeds on sunlight. Caterpillars eat its leaves, birds eat the caterpillars, and fungi in the soil break down fallen leaves so the tree can grow again.\n\nThis guide is a tour of those links. It covers how plants make food, food chains and webs, soil, fungi, ecosystems from forests to oceans, pollinators, animal behaviour and migration, biodiversity, and how people affect nature for better and worse.\n\nYou don't need a garden or a nature reserve. A park, a street tree or a window box is enough to start noticing.",
+   "apply_it": "Look out of a window for one minute and count every living thing you can see, including plants and insects.",
+   "quiz": {
+    "question": "What is the main idea of this guide?",
+    "options": [
+     "Animals are more important than plants",
+     "Living things are linked to each other and their surroundings",
+     "Nature only exists in wild places",
+     "Humans are not part of nature"
+    ],
+    "answer": 1,
+    "explanation": "The guide is about how plants, animals, microbes and places connect into one living world."
+   }
+  },
+  {
+   "id": "science-the-living-world--02",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "plants",
+    "photosynthesis"
+   ],
+   "title": "Plants make their own food from light, air and water",
+   "body": "Plants don't eat. They make food. In their leaves is a green substance called chlorophyll that captures energy from sunlight.\n\nUsing that energy, the plant takes carbon dioxide from the air through tiny holes in its leaves, and water from the soil through its roots. It joins them into sugar, which it uses for energy and to build its stems, leaves, roots and fruit. Oxygen is released as a by-product.\n\nThis process is called photosynthesis. Almost every food chain on land starts with it. The bread, rice and vegetables on your plate, and the grass that fed the cow for your milk, were all built from sunlight and air.",
+   "apply_it": "Pick up a leaf and remember that most of its weight came from carbon dioxide in the air, not from the soil.",
+   "quiz": {
+    "question": "Which of these does a plant use to make sugar in photosynthesis?",
+    "options": [
+     "Oxygen and soil",
+     "Nitrogen and heat",
+     "Sugar from the soil",
+     "Carbon dioxide, water and light"
+    ],
+    "answer": 3,
+    "explanation": "Plants use light energy to combine carbon dioxide and water into sugar, releasing oxygen."
+   }
+  },
+  {
+   "id": "science-the-living-world--03",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "plants",
+    "oxygen",
+    "oceans"
+   ],
+   "title": "Tiny ocean plants make a large share of the oxygen we breathe",
+   "body": "Forests are often called the lungs of the planet, but a large share of Earth's oxygen comes from the sea. Floating in sunlit water are billions upon billions of microscopic living things called phytoplankton. Like land plants, they photosynthesise.\n\nScientists estimate that roughly half of the oxygen produced on Earth each year comes from the ocean, mostly from these tiny drifters. The exact share is hard to measure and changes with seasons and years.\n\nPhytoplankton also form the base of most ocean food chains. Tiny animals eat them, small fish eat those, and so on up to whales and seabirds.",
+   "apply_it": "Next time you see a picture of the sea, picture the invisible life in its top few metres making oxygen.",
+   "quiz": {
+    "question": "What are phytoplankton?",
+    "options": [
+     "Microscopic living things that photosynthesise in water",
+     "Large ocean fish",
+     "A type of coral",
+     "Rocks on the sea floor"
+    ],
+    "answer": 0,
+    "explanation": "Phytoplankton are tiny drifting organisms that use sunlight to make food and release oxygen."
+   }
+  },
+  {
+   "id": "science-the-living-world--04",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "plants",
+    "water",
+    "roots"
+   ],
+   "title": "Plants pull water up from their roots to their leaves",
+   "body": "A tall tree can lift water many metres from the ground to its highest leaves without a pump. How?\n\nWater enters the roots from the soil and travels up through thin tubes in the stem or trunk. At the top, water evaporates out of tiny pores in the leaves. As each molecule leaves, it tugs on the water behind it, like a long chain being pulled. This pulling flow is called transpiration.\n\nA large tree can move hundreds of litres of water on a hot day. Much of that goes back into the air, which is one reason forests help make rain and keep their surroundings cool and moist.",
+   "apply_it": "Put a cut celery stalk in water with food colouring and check it after a few hours to see the coloured tubes.",
+   "quiz": {
+    "question": "What mainly pulls water up to the top of a tree?",
+    "options": [
+     "The roots pushing very hard",
+     "Rain falling on the trunk",
+     "Water evaporating from the leaves",
+     "Insects carrying it"
+    ],
+    "answer": 2,
+    "explanation": "Evaporation from leaves pulls a continuous column of water up from the roots."
+   }
+  },
+  {
+   "id": "science-the-living-world--05",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "plants",
+    "seeds",
+    "flowers"
+   ],
+   "title": "Flowers and seeds are how plants travel and make new plants",
+   "body": "Plants can't walk, so they rely on others to move their pollen and seeds.\n\nFlowers are a plant's way of making seeds. Pollen from one flower has to reach another flower of the same kind. Some plants use wind, which is why grasses release clouds of pollen. Others use animals, with bright petals, scent and sweet nectar as rewards.\n\nOnce seeds form, they need to spread out. Dandelion seeds float on tiny parachutes. Burrs hook onto animal fur and socks. Berries are eaten by birds, and the seeds pass through and land far away. Coconuts can float across oceans.",
+   "apply_it": "On a walk, look for one seed that travels by wind and one that travels by sticking or being eaten.",
+   "quiz": {
+    "question": "How do berries help a plant spread its seeds?",
+    "options": [
+     "They roll downhill",
+     "They float on wind",
+     "Animals eat them and drop the seeds elsewhere",
+     "They explode"
+    ],
+    "answer": 2,
+    "explanation": "Animals eat the fruit, move on and later deposit the seeds away from the parent plant."
+   }
+  },
+  {
+   "id": "science-the-living-world--06",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "pollinators",
+    "bees",
+    "food"
+   ],
+   "title": "Bees and other pollinators help produce much of our food",
+   "body": "When a bee visits a flower for nectar, pollen sticks to its body and rubs off on the next flower. That moves pollen between plants, which is what many of them need to make fruit and seeds.\n\nBees are the best known, but flies, butterflies, moths, beetles, birds and bats pollinate too. Most of the world's main food crop types benefit at least partly from animal pollination, including apples, almonds, tomatoes, coffee and cocoa. Some big staple crops, like wheat, rice and maize, are pollinated by wind instead.\n\nIn many places pollinators are declining, due to habitat loss, pesticides, disease and a changing climate.",
+   "apply_it": "Leave a corner of a garden, balcony or pot unmown or planted with flowers that bees visit.",
+   "quiz": {
+    "question": "Which statement about pollination is accurate?",
+    "options": [
+     "Many food crops benefit from animal pollinators, while some staples use wind",
+     "Only honeybees pollinate crops",
+     "Wheat and rice depend on bees",
+     "Pollinators are increasing everywhere"
+    ],
+    "answer": 0,
+    "explanation": "Many crops benefit from bees, flies, bats and others, but staples like wheat, rice and maize are wind pollinated."
+   }
+  },
+  {
+   "id": "science-the-living-world--07",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "food-chains",
+    "energy"
+   ],
+   "title": "Food chains show who eats whom, starting with plants",
+   "body": "A food chain follows energy as it moves from one living thing to another. It always starts with a producer, usually a plant, that makes food from sunlight.\n\nNext come consumers. Herbivores, like rabbits or caterpillars, eat plants. Carnivores, like foxes or thrushes, eat other animals. Omnivores, like humans and badgers, eat both. An animal at the top that few others hunt is called a top predator.\n\nA simple chain might be grass, then rabbit, then fox. In a garden, it might be lettuce, then slug, then hedgehog. Each arrow in the chain means 'is eaten by'.",
+   "apply_it": "Write down one food chain from your own dinner, starting with a plant.",
+   "quiz": {
+    "question": "Where does every food chain start?",
+    "options": [
+     "With a top predator",
+     "With a decomposer",
+     "With an omnivore",
+     "With a producer, usually a plant"
+    ],
+    "answer": 3,
+    "explanation": "Producers capture energy from the Sun, and all other living things in the chain depend on them."
+   }
+  },
+  {
+   "id": "science-the-living-world--08",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "food-webs",
+    "energy"
+   ],
+   "title": "Real nature is a web, and energy shrinks at every step",
+   "body": "Real animals rarely eat just one thing. A fox eats rabbits, mice, beetles and berries. A blackbird eats worms and fruit. When you draw all these links, you get a food web, not a single chain.\n\nWebs make nature sturdier. If one food runs short, animals can switch to another.\n\nAt each step up a web, most of the energy is used for living, moving and keeping warm, and only a small part, often around a tenth, is passed on. That is why there are far more plants than plant-eaters, and far more plant-eaters than big predators. It takes a lot of grass to support one lion.",
+   "apply_it": "Look at a picture of a big predator, like a wolf or eagle, and think about how much life must lie beneath it.",
+   "quiz": {
+    "question": "Why are there far fewer big predators than plants?",
+    "options": [
+     "Predators don't like company",
+     "Most energy is lost at each step up the food web",
+     "Plants eat predators",
+     "Predators live longer"
+    ],
+    "answer": 1,
+    "explanation": "Only a small share of energy passes to the next level, so each level can support fewer animals."
+   }
+  },
+  {
+   "id": "science-the-living-world--09",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "decomposers",
+    "fungi",
+    "recycling"
+   ],
+   "title": "Decomposers turn dead things back into food for new life",
+   "body": "When leaves fall or an animal dies, nothing goes to waste for long. Decomposers get to work. They include fungi, bacteria, worms, woodlice, beetles and many tiny creatures.\n\nThey break dead material down into simpler substances. Nutrients like nitrogen and phosphorus are released back into the soil, where plant roots can take them up again. Without decomposers, the world would be piled high with dead leaves and the soil would run out of nutrients.\n\nA compost heap is a decomposer factory. Kitchen scraps and garden waste become dark, crumbly soil in a few months.",
+   "apply_it": "Lift a log or a stone in a park and look for woodlice, worms or fungi, then put it back gently.",
+   "quiz": {
+    "question": "What do decomposers do?",
+    "options": [
+     "Break down dead material and return nutrients to the soil",
+     "Make food from sunlight",
+     "Hunt live animals",
+     "Pollinate flowers"
+    ],
+    "answer": 0,
+    "explanation": "Decomposers recycle nutrients from dead plants and animals so new life can use them."
+   }
+  },
+  {
+   "id": "science-the-living-world--10",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "soil",
+    "microbes"
+   ],
+   "title": "Healthy soil is alive and takes a very long time to form",
+   "body": "Soil looks like dirt, but it is one of the busiest places on Earth. A handful of healthy soil can hold billions of microbes, along with fungi, mites, insects and worms. Together they mix the soil, recycle nutrients and help hold water.\n\nSoil forms slowly as rock breaks down and dead plants and animals are mixed in. A few centimetres of new topsoil can take hundreds of years or more.\n\nSoil can be lost much faster, when it is left bare and washed or blown away. Keeping it covered with plants, adding compost and not over-ploughing all help protect it.",
+   "apply_it": "If you grow anything, add a layer of compost or leaves on top of bare soil rather than leaving it uncovered.",
+   "quiz": {
+    "question": "Why is losing topsoil a serious problem?",
+    "options": [
+     "It grows back in a week",
+     "Plants grow better without it",
+     "It forms very slowly, often over hundreds of years",
+     "It has no living things in it"
+    ],
+    "answer": 2,
+    "explanation": "New topsoil forms slowly, so soil lost to erosion is not replaced on a human timescale."
+   }
+  },
+  {
+   "id": "science-the-living-world--11",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "fungi",
+    "plants",
+    "partnerships"
+   ],
+   "title": "Fungi and plant roots trade food underground",
+   "body": "Most plants have a hidden partner. Fine threads of fungi wrap around or grow into their roots. The fungi spread far through the soil and gather water and nutrients like phosphorus. In return, the plant feeds the fungi with sugar from photosynthesis.\n\nThese partnerships, called mycorrhizae, are ancient and very common. Many plants grow poorly without them.\n\nYou may have heard that trees use fungal networks to share food and warn each other of danger, a so-called wood wide web. Fungal links between trees do exist, but scientists disagree on how much food actually moves between trees and how much it matters. Some popular claims go beyond the evidence.",
+   "apply_it": "Next time you see mushrooms in a wood, remember that most of the fungus is hidden underground in thread form.",
+   "quiz": {
+    "question": "What is accurate about fungal networks between trees?",
+    "options": [
+     "They are proven to let trees talk like people",
+     "Fungal links exist, but how much trees share through them is debated",
+     "They do not exist",
+     "Only dead trees have them"
+    ],
+    "answer": 1,
+    "explanation": "Fungi do link roots, but the size and importance of sharing between trees is still under debate."
+   }
+  },
+  {
+   "id": "science-the-living-world--12",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "ecosystems",
+    "habitats"
+   ],
+   "title": "An ecosystem is living things plus the place they live",
+   "body": "An ecosystem is a community of living things together with their non-living surroundings: water, air, rock, soil, sunlight and temperature. They all affect each other.\n\nEcosystems come in every size. A pond is one. So is a rotting log, a coral reef, a desert or a whole rainforest. Even your gut is a sort of ecosystem for microbes.\n\nChange one part and others shift. Drain the pond and frogs, dragonflies and water plants disappear, and birds that fed there move on. That is why people who look after nature think about whole ecosystems, not just single species.",
+   "apply_it": "Choose one small ecosystem near you, such as a pond, hedge or patch of grass, and list five things living there.",
+   "quiz": {
+    "question": "Which is the best description of an ecosystem?",
+    "options": [
+     "Just the animals in an area",
+     "Only large forests",
+     "A type of weather",
+     "Living things and their non-living surroundings working together"
+    ],
+    "answer": 3,
+    "explanation": "An ecosystem includes living things and things like water, soil and climate, all interacting."
+   }
+  },
+  {
+   "id": "science-the-living-world--13",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "ecosystems",
+    "keystone-species",
+    "oceans"
+   ],
+   "title": "Some species hold their whole ecosystem together",
+   "body": "Some species have a much bigger effect than their numbers suggest. Ecologists call them keystone species, after the stone at the top of an arch that keeps the rest in place.\n\nSea otters are a well-studied example. They eat sea urchins. Where otters vanished, urchins multiplied and stripped away kelp forests, which are home to many fish. Where otters returned, kelp often recovered.\n\nOther examples include beavers, whose dams create wetlands, and elephants, which open up woodland. The return of wolves to Yellowstone Park is often told as a dramatic story too, though scientists still debate how big the knock-on effects really were.",
+   "apply_it": "Look up which large animals once lived where you live, and what might have changed since they left.",
+   "quiz": {
+    "question": "Why are sea otters called a keystone species?",
+    "options": [
+     "They are the largest ocean animal",
+     "By eating urchins, they help kelp forests survive",
+     "They pollinate seaweed",
+     "They live in deserts"
+    ],
+    "answer": 1,
+    "explanation": "Otters keep urchin numbers down, which lets kelp forests and the life they shelter thrive."
+   }
+  },
+  {
+   "id": "science-the-living-world--14",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "forests",
+    "biodiversity"
+   ],
+   "title": "Forests are home to most of the species that live on land",
+   "body": "Forests cover about a third of Earth's land. They range from cold northern forests of pine and spruce, to temperate woods of oak and beech, to steamy tropical rainforests.\n\nTropical rainforests are especially rich. They cover a small share of the planet, yet scientists estimate they hold more than half of the world's land-living plant and animal species. A single tree there can host hundreds of kinds of insects.\n\nForests also store huge amounts of carbon, protect soil from washing away, filter water and influence rainfall. Many people depend on them directly for food, fuel, medicine and work.",
+   "apply_it": "Find out what kind of forest, if any, would naturally grow where you live.",
+   "quiz": {
+    "question": "Which type of forest is richest in species?",
+    "options": [
+     "Northern pine forest",
+     "City parks",
+     "Tree farms",
+     "Tropical rainforest"
+    ],
+    "answer": 3,
+    "explanation": "Tropical rainforests are estimated to hold more than half of all land species."
+   }
+  },
+  {
+   "id": "science-the-living-world--15",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "forests",
+    "carbon",
+    "water"
+   ],
+   "title": "Forests store carbon and help make rain",
+   "body": "As trees grow, they take carbon dioxide from the air and lock the carbon into wood, roots and soil. Old forests hold enormous stores of it. When forests are burned or cleared, much of that carbon goes back into the air, adding to climate change.\n\nForests also move water. Trees release water vapour through their leaves, which helps form clouds. In the Amazon, a large share of rain is thought to be recycled by the forest itself, carried inland on the wind.\n\nPlanting trees helps, but protecting existing old forests matters most, because a young tree takes decades to store what an old one already holds.",
+   "apply_it": "If you buy wood or paper products, look for a label showing they come from well-managed forests.",
+   "quiz": {
+    "question": "Why is protecting old forests so important for the climate?",
+    "options": [
+     "They store large amounts of carbon already",
+     "Old trees make the air colder overnight",
+     "They stop earthquakes",
+     "They have no effect on carbon"
+    ],
+    "answer": 0,
+    "explanation": "Mature forests already hold vast carbon stores, which are released if they are cut or burned."
+   }
+  },
+  {
+   "id": "science-the-living-world--16",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "oceans",
+    "habitats"
+   ],
+   "title": "The ocean covers most of the planet and is still largely unexplored",
+   "body": "Oceans cover about 71 percent of Earth's surface, and because they are so deep, they make up the vast majority of the space where life can live.\n\nNear the surface, sunlight supports phytoplankton, fish, turtles and whales. Below about 200 metres, light fades fast. In the deep, it is cold, dark and under crushing pressure, yet life still thrives: glowing fish, giant squid and strange worms.\n\nAt some deep-sea vents, where hot, mineral-rich water bursts from the sea floor, whole communities live off chemical energy instead of sunlight. Much of the deep ocean has never been closely explored, and new species are found there regularly.",
+   "apply_it": "Look up a photo of a deep-sea creature you have never heard of. There are many to choose from.",
+   "quiz": {
+    "question": "How do some animals at deep-sea vents get energy without sunlight?",
+    "options": [
+     "They swim up every day to sunbathe",
+     "They eat rocks",
+     "Microbes there make food from chemicals in the vent water",
+     "They don't need energy"
+    ],
+    "answer": 2,
+    "explanation": "At vents, microbes use chemical energy, and other animals feed on them or live with them."
+   }
+  },
+  {
+   "id": "science-the-living-world--17",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "oceans",
+    "coral-reefs",
+    "climate"
+   ],
+   "title": "Coral reefs are small but packed with life, and they are under threat",
+   "body": "Coral reefs cover well under 1 percent of the ocean floor, yet they support roughly a quarter of all known marine species. They also protect coasts from waves and feed hundreds of millions of people.\n\nA coral is a tiny animal that lives in colonies and builds a hard skeleton. Inside its tissues live tiny algae that make food from sunlight and give corals their colour.\n\nWhen water gets too warm for too long, corals expel these algae and turn white. This is called bleaching. Corals can recover if conditions return to normal quickly, but repeated or long heatwaves can kill them. Pollution and overfishing add to the stress.",
+   "apply_it": "Choose reef-safe sunscreen and avoid touching coral if you ever snorkel or dive.",
+   "quiz": {
+    "question": "What happens when corals bleach?",
+    "options": [
+     "They glow in the dark",
+     "They turn into rock",
+     "They expel the algae that feed them, often because water is too warm",
+     "They grow faster"
+    ],
+    "answer": 2,
+    "explanation": "Heat stress makes corals push out their algae, leaving them white and at risk of starving."
+   }
+  },
+  {
+   "id": "science-the-living-world--18",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "freshwater",
+    "wetlands"
+   ],
+   "title": "Rivers, lakes and wetlands are small in area but rich in life",
+   "body": "Fresh water covers only a tiny fraction of Earth's surface, yet it is home to a large number of species, including many fish, frogs, insects and birds.\n\nWetlands, such as marshes, bogs and swamps, are especially useful. They soak up floodwater like a sponge and release it slowly. They filter pollution out of water. Peat bogs store huge amounts of carbon, more per area than most forests.\n\nMany wetlands have been drained for farms and building. Freshwater species are, on average, declining faster than those on land or in the sea, according to many studies. Restoring wetlands is one of the quicker wins for nature.",
+   "apply_it": "Visit a local river, pond or marsh and spend five quiet minutes watching for birds and insects.",
+   "quiz": {
+    "question": "Which is a way wetlands help people?",
+    "options": [
+     "They soak up floodwater and filter water",
+     "They cause droughts",
+     "They make the soil salty",
+     "They have no useful role"
+    ],
+    "answer": 0,
+    "explanation": "Wetlands hold back floods, clean water and store carbon, as well as supporting wildlife."
+   }
+  },
+  {
+   "id": "science-the-living-world--19",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "adaptation",
+    "deserts",
+    "habitats"
+   ],
+   "title": "Living things are adapted to survive where they live",
+   "body": "Every habitat has its challenges, and living things have features that help them cope.\n\nIn deserts, cacti store water in thick stems and have spines instead of leaves, which lose less water. Many desert animals hide in burrows by day and come out at night. In the Arctic, polar bears have thick fat and dense fur. Some frogs can survive being partly frozen.\n\nCamouflage is another adaptation. Stick insects look like twigs, and some moths match tree bark. Bright colours can mean the opposite: a warning. Many brightly coloured frogs and insects taste bad or are poisonous, and predators learn to leave them alone.",
+   "apply_it": "Look at one animal or plant near you and guess one feature that helps it survive there.",
+   "quiz": {
+    "question": "Why are many poisonous animals brightly coloured?",
+    "options": [
+     "To keep warm",
+     "To attract predators",
+     "Because they are young",
+     "As a warning that teaches predators to avoid them"
+    ],
+    "answer": 3,
+    "explanation": "Bright warning colours signal danger, and predators learn to avoid them."
+   }
+  },
+  {
+   "id": "science-the-living-world--20",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "animal-behaviour",
+    "instinct",
+    "learning"
+   ],
+   "title": "Animals act on instinct, but many also learn",
+   "body": "Some behaviour is built in from birth. A spider spins a web without being taught. A newly hatched turtle heads for the brightest horizon, which is usually the sea. This is instinct.\n\nOther behaviour is learned. Young birds of many species learn their song by listening to adults. Chimpanzees learn to use sticks to fish termites from mounds, and different groups have different traditions. Crows can solve puzzles and remember people who have bothered them.\n\nMost animals use a mix of both. A squirrel buries nuts by instinct, but gets better at finding good hiding places with practice.",
+   "apply_it": "Watch a bird or pet for five minutes and try to guess which actions are instinct and which are learned.",
+   "quiz": {
+    "question": "Which is an example of learned behaviour?",
+    "options": [
+     "A spider spinning its first web",
+     "Chimpanzees using sticks to catch termites in local styles",
+     "A turtle hatchling heading to sea",
+     "A baby breathing"
+    ],
+    "answer": 1,
+    "explanation": "Tool use that varies between chimpanzee groups is passed on by learning."
+   }
+  },
+  {
+   "id": "science-the-living-world--21",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "animal-behaviour",
+    "communication"
+   ],
+   "title": "Animals communicate with sounds, colours, smells and dances",
+   "body": "Animals have many ways to share information. Birds sing to claim territory and attract mates. Many mammals mark their area with scent. Fireflies flash light patterns to find partners.\n\nHoneybees do something remarkable. A forager that finds good flowers returns to the hive and performs a waggle dance. The angle of the dance tells others the direction of the food compared with the Sun, and the length of the waggle tells them roughly how far to fly.\n\nSome monkeys have different alarm calls for different predators, such as one for eagles and another for leopards, and listeners react in the right way for each.",
+   "apply_it": "Listen to birdsong for two minutes in the morning and see how many different songs you can pick out.",
+   "quiz": {
+    "question": "What does a honeybee's waggle dance communicate?",
+    "options": [
+     "The direction and distance to food",
+     "That the hive is too hot",
+     "That a bee is tired",
+     "The colour of the flowers"
+    ],
+    "answer": 0,
+    "explanation": "The dance's angle shows direction relative to the Sun, and its length shows distance."
+   }
+  },
+  {
+   "id": "science-the-living-world--22",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "animal-behaviour",
+    "social-animals"
+   ],
+   "title": "Living in groups helps many animals survive",
+   "body": "Many animals live together. A herd of zebras has many eyes to spot lions. A school of fish moving as one can confuse predators. Penguins huddle to share warmth through freezing winters.\n\nSome species take group life further. In ant and bee colonies, most members never breed. Instead they gather food, care for young or defend the nest, while one queen lays the eggs. Meerkats take turns standing guard while others feed.\n\nGroup living has costs too. Disease spreads more easily, and members must share food. Animals tend to live in groups when the benefits outweigh those costs.",
+   "apply_it": "Next time you see a flock of birds or a crowd of pigeons, watch how they react together to a sudden noise.",
+   "quiz": {
+    "question": "Why do penguins huddle together in winter?",
+    "options": [
+     "To hide from fish",
+     "To sleep standing up",
+     "To share warmth",
+     "To build a nest"
+    ],
+    "answer": 2,
+    "explanation": "Huddling cuts heat loss, and penguins rotate so each one gets time in the warm middle."
+   }
+  },
+  {
+   "id": "science-the-living-world--23",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "migration",
+    "animal-behaviour"
+   ],
+   "title": "Migration is a seasonal journey to follow food and good conditions",
+   "body": "Every year, billions of animals make long journeys. Swallows fly from Europe to Africa for the winter. Wildebeest follow the rains across East Africa. Salmon return from the sea to the rivers where they hatched. Some whales travel thousands of kilometres between feeding and breeding waters.\n\nThe Arctic tern holds a famous record. It flies from the Arctic to the Antarctic and back each year, enjoying two summers.\n\nAnimals migrate because food, warmth or safe breeding places change with the seasons. Staying put would mean going hungry or having young in a bad place. The journey is risky, but often worth it.",
+   "apply_it": "Find out which migrating bird or animal passes through your area and when it arrives.",
+   "quiz": {
+    "question": "Why do many animals migrate?",
+    "options": [
+     "They are bored",
+     "To follow food, warmth or safe breeding places as seasons change",
+     "To escape their family",
+     "Because of the Moon's phases only"
+    ],
+    "answer": 1,
+    "explanation": "Migration lets animals use places that are good at one time of year and poor at another."
+   }
+  },
+  {
+   "id": "science-the-living-world--24",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "migration",
+    "navigation"
+   ],
+   "title": "Migrating animals find their way using the Sun, stars and Earth's magnetism",
+   "body": "How does a young bird on its first journey find a place it has never seen? Scientists have found that animals use several clues.\n\nMany birds use the position of the Sun during the day and the pattern of stars at night. Many animals, including birds, turtles and some fish, can sense Earth's magnetic field and use it like a compass. Salmon appear to use smell to find their home river. Some birds also follow coastlines and mountain ranges.\n\nHow animals sense magnetism is still not fully understood. Several ideas are being studied, and it may work differently in different animals.",
+   "apply_it": "On a clear night, look up and pick out a bright star pattern. Some birds may be steering by the same sky.",
+   "quiz": {
+    "question": "Which is true about how animals sense Earth's magnetic field?",
+    "options": [
+     "It is fully explained",
+     "Only humans can do it",
+     "Animals cannot sense magnetism",
+     "Several animals use it, but how they sense it is still being studied"
+    ],
+    "answer": 3,
+    "explanation": "Magnetic sensing is well documented, but how it works is still an open research question."
+   }
+  },
+  {
+   "id": "science-the-living-world--25",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "hibernation",
+    "seasons",
+    "animal-behaviour"
+   ],
+   "title": "Some animals survive winter by slowing their bodies right down",
+   "body": "Winter can mean cold and little food. Some animals solve this by hibernating. Hedgehogs, dormice and many bats let their body temperature fall and their heart rate and breathing slow to a crawl. They live off fat stored in autumn.\n\nTrue hibernation is a deep, long state. Bears in winter dens enter a lighter version: their body temperature drops only a little, and mothers even give birth during it.\n\nOther animals cope in different ways. Squirrels store food. Some insects survive as eggs or pupae. Many birds simply leave. Waking a hibernating animal uses up precious fat, so it is best to leave them alone.",
+   "apply_it": "If you find a hibernating animal, such as a bat or hedgehog, leave it undisturbed and seek advice from a local wildlife group if worried.",
+   "quiz": {
+    "question": "Why is it harmful to wake a hibernating animal?",
+    "options": [
+     "It makes them angry forever",
+     "Waking uses up fat reserves they need to survive winter",
+     "They forget where they live",
+     "It makes no difference"
+    ],
+    "answer": 1,
+    "explanation": "Rewarming the body burns lots of stored energy that the animal needs to last until spring."
+   }
+  },
+  {
+   "id": "science-the-living-world--26",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "biodiversity",
+    "species"
+   ],
+   "title": "Biodiversity means the variety of life, and much of it is still unknown",
+   "body": "Biodiversity is the variety of life. It includes the number of different species, the variety within each species, and the range of habitats they live in.\n\nScientists have named roughly two million species. Estimates of the true total vary widely, but most suggest there are millions more, especially insects, fungi and microbes, that no one has described yet.\n\nVariety matters. A forest with many kinds of trees is less likely to be wiped out by one disease. Different crop varieties help farmers cope with pests and changing weather. Many medicines were first found in plants, fungi or animals.",
+   "apply_it": "Use a free nature-identification app or guide to name one plant or insect you see this week.",
+   "quiz": {
+    "question": "Roughly how many species have scientists named so far?",
+    "options": [
+     "About 2,000",
+     "About 20,000",
+     "All of them",
+     "About two million"
+    ],
+    "answer": 3,
+    "explanation": "Around two million species are described, but many more are thought to exist."
+   }
+  },
+  {
+   "id": "science-the-living-world--27",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "biodiversity",
+    "threats",
+    "humans"
+   ],
+   "title": "Changing how land and sea are used is the biggest pressure on wildlife",
+   "body": "Large international assessments, such as those by the scientists of IPBES, have ranked the main drivers of nature loss. The biggest is changing how land and sea are used: turning forests, grasslands and wetlands into farms, roads and towns.\n\nNext come direct exploitation, such as overfishing and hunting, then climate change, pollution and invasive species. These pressures often add up and make each other worse.\n\nThe IPBES assessment estimated that around a million species face the risk of extinction, many within decades, unless action is taken. Exact numbers are uncertain, but the overall direction is clear in many parts of the world.",
+   "apply_it": "Pick one food you eat often and find out how and where it is produced.",
+   "quiz": {
+    "question": "According to large global assessments, what is the biggest driver of nature loss?",
+    "options": [
+     "Changes in how land and sea are used",
+     "Volcanoes",
+     "Too many zoos",
+     "Natural earthquakes"
+    ],
+    "answer": 0,
+    "explanation": "Habitat change from farming, building and other uses is ranked as the leading driver."
+   }
+  },
+  {
+   "id": "science-the-living-world--28",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "invasive-species",
+    "threats"
+   ],
+   "title": "Species moved to new places can upset whole ecosystems",
+   "body": "An invasive species is one that people have moved, on purpose or by accident, to a new place, where it spreads and causes harm. Without its usual predators or diseases, it can take over.\n\nRats and cats brought to islands have wiped out many ground-nesting birds. Cane toads in Australia poisoned predators that tried to eat them. Plants like Japanese knotweed crowd out native plants.\n\nNot every newcomer causes trouble, but the ones that do are very hard to remove. Prevention is easier: cleaning boots and boats between places, not releasing pets into the wild, and following rules on bringing plants and food across borders.",
+   "apply_it": "Never release a pet, fish or aquarium plant into the wild. Ask a shop or rescue centre to rehome it.",
+   "quiz": {
+    "question": "What makes some introduced species so harmful?",
+    "options": [
+     "They are always large",
+     "They only live in zoos",
+     "They lack their usual predators and diseases, so they spread",
+     "They are too weak to survive"
+    ],
+    "answer": 2,
+    "explanation": "Away from the checks of their home ecosystem, they can spread fast and outcompete local species."
+   }
+  },
+  {
+   "id": "science-the-living-world--29",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "pollution",
+    "plastic",
+    "humans"
+   ],
+   "title": "Pollution reaches even the remotest corners of the living world",
+   "body": "Pollution comes in many forms. Fertiliser washing off fields can feed algae blooms in rivers and seas, which use up oxygen and leave dead zones where fish can't live. Pesticides can harm insects they were not aimed at. Light at night confuses moths, birds and turtle hatchlings.\n\nPlastic is now found from mountain tops to the deepest ocean trenches. Seabirds, turtles and whales can swallow it or get tangled. Tiny bits called microplastics are found in water, soil and in the bodies of many animals. How much harm microplastics do is still being studied.",
+   "apply_it": "Turn off outside lights you don't need tonight, and carry one reusable item that replaces a single-use one.",
+   "quiz": {
+    "question": "What is a dead zone in a lake or sea?",
+    "options": [
+     "An area with no water",
+     "A protected nature area",
+     "An area so low in oxygen that fish can't survive",
+     "A place with only sharks"
+    ],
+    "answer": 2,
+    "explanation": "Excess nutrients feed algae, and when they rot, oxygen drops so low that most animals die or leave."
+   }
+  },
+  {
+   "id": "science-the-living-world--30",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "conservation",
+    "recovery",
+    "hope"
+   ],
+   "title": "Nature can recover when people give it room",
+   "body": "The news about nature is not all bad. When pressures ease, many species bounce back.\n\nHumpback whales have recovered strongly in many oceans since commercial hunting was banned. Bald eagles in the United States recovered after a harmful pesticide was banned and they were protected. In parts of Europe, wolves, beavers and white-tailed eagles have returned.\n\nProtected areas, cleaner rivers, wildlife-friendly farming and the rewilding of damaged land all help. Not every effort works, and recovery can be slow. But these stories show that nature loss is not a one-way street.",
+   "apply_it": "Look up one wildlife recovery story from your own country or region.",
+   "quiz": {
+    "question": "What do recovery stories such as humpback whales show?",
+    "options": [
+     "When pressures ease, many species can bounce back",
+     "Nature can never recover",
+     "Only zoos can save species",
+     "Whales were never in danger"
+    ],
+    "answer": 0,
+    "explanation": "Bans, protection and habitat care have let many species recover, though it takes time."
+   }
+  },
+  {
+   "id": "science-the-living-world--31",
+   "topic": "science",
+   "tags": [
+    "nature",
+    "humans",
+    "action",
+    "wrap-up"
+   ],
+   "title": "You are part of the living world, and small choices add up",
+   "body": "Everything in this guide links together. Sunlight feeds plants. Plants feed animals. Decomposers feed the soil. Pollinators feed us. Forests and oceans steady the climate, and every species sits in a web of others.\n\nPeople are part of that web, not outside it. Small actions help: growing a few flowers for insects, leaving a wild corner, wasting less food, choosing sustainable fish, recording wildlife for citizen science projects, and supporting local nature groups. Bigger changes in farming, fishing and land use matter most, and they depend on people caring and speaking up.\n\nStart by noticing. People tend to protect what they know and love.",
+   "apply_it": "Choose one action from this guide, such as a wild corner or a wildlife count, and do it this week.",
+   "quiz": {
+    "question": "What is the main message of this guide?",
+    "options": [
+     "People are separate from nature",
+     "Only scientists can help nature",
+     "Nature doesn't need help",
+     "Living things are linked, and people's choices affect the whole web"
+    ],
+    "answer": 3,
+    "explanation": "Humans are part of nature's web, and both small and large choices make a difference."
+   }
+  }
+ ]
+}

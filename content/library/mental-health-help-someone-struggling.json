@@ -1,0 +1,791 @@
+{
+  "source": {
+    "id": "mental-health-help-someone-struggling",
+    "title": "Help Someone Who Is Struggling",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the National Institute of Mental Health, Mind, the NHS, the World Health Organization and NICE.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide, https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide; National Institute of Mental Health, Warning Signs of Suicide, https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide; Mind, Supporting someone with a mental health problem, https://www.mind.org.uk/information-support/helping-someone-else/supporting-someone-with-a-mental-health-problem/; NHS, Help for suicidal thoughts, https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/; World Health Organization, Suicide fact sheet, https://www.who.int/news-room/fact-sheets/detail/suicide; NICE, Self-harm: assessment, management and preventing recurrence (NG225), https://www.nice.org.uk/guidance/ng225"
+  },
+  "cards": [
+    {
+      "id": "mental-health-help-someone-struggling--01",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "overview",
+        "caring",
+        "listening"
+      ],
+      "title": "You can make a real difference to someone who is struggling",
+      "body": "When someone you care about is having a hard time, it is natural to worry about saying the wrong thing. This guide will help you feel more confident.\n\nYou will learn how to spot signs that someone may be struggling, how to start a conversation, and how to listen without rushing to fix things. You will learn what not to say, why asking directly about suicide is safe, how to help someone find professional support, and what to do in a crisis. Finally, you will look at supporting someone over time and looking after yourself.\n\nYou do not need to be an expert. If anyone is in immediate danger, contact local emergency services or a crisis line straight away.",
+      "apply_it": "Think of one person you are worried about, or might be one day, and keep them in mind as you read.",
+      "quiz": {
+        "question": "What does this guide say you need to help someone who is struggling?",
+        "options": [
+          "A medical degree",
+          "Care, willingness to listen and some simple skills",
+          "Perfect words every time",
+          "A solution to all their problems"
+        ],
+        "answer": 1,
+        "explanation": "You do not need to be an expert. Caring, listening and knowing a few steps can make a real difference."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--02",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "caring",
+        "confidence",
+        "basics"
+      ],
+      "title": "You do not need the perfect words, just to show you care",
+      "body": "Many people stay quiet because they fear they will say the wrong thing or make things worse. Mental health charities such as Mind stress that you do not need to be an expert or have all the answers.\n\nWhat often helps most is simply showing that you have noticed and that you care. A short, warm message like I have been thinking about you, how are you really doing? can mean a lot.\n\nYour role is to be a supportive friend, partner or family member, not a therapist. You can listen, offer kindness, and help them find professional support if they need it.\n\nIf you get something wrong, you can say sorry and try again.",
+      "apply_it": "Write a short, warm message you could send to someone you are worried about.",
+      "quiz": {
+        "question": "What is your main role when supporting someone?",
+        "options": [
+          "Acting as their therapist",
+          "Fixing all of their problems",
+          "Showing you care, listening and helping them find support",
+          "Staying quiet in case you say the wrong thing"
+        ],
+        "answer": 2,
+        "explanation": "Your role is to be caring and supportive and to help them find professional help, not to be their therapist."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--03",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "signs",
+        "behaviour",
+        "noticing"
+      ],
+      "title": "Changes in behaviour can be a sign someone is struggling",
+      "body": "People do not always say when they are finding things hard. Often, the first clues are changes in what they do.\n\nYou might notice someone withdrawing from friends or activities they used to enjoy, sleeping much more or less, eating differently, or seeming tired all the time. They may drink more, stop looking after themselves, take more time off work or school, or seem restless, irritable or tearful.\n\nThe key word is change. Everyone has off days, but a shift that lasts for weeks, or that seems out of character, is worth paying attention to.\n\nTrust your instincts. If something feels wrong, it is okay to check in gently.",
+      "apply_it": "Think about whether anyone close to you has changed in a lasting way lately.",
+      "quiz": {
+        "question": "What is a key sign to look out for?",
+        "options": [
+          "A lasting change in behaviour that seems out of character",
+          "Someone having one bad day",
+          "Someone being quiet by nature",
+          "Someone enjoying their hobbies"
+        ],
+        "answer": 0,
+        "explanation": "Lasting or out-of-character changes, like withdrawing or sleeping differently, are worth noticing and gently checking."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--04",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "signs",
+        "language",
+        "noticing"
+      ],
+      "title": "What people say can hint at how they really feel",
+      "body": "Sometimes people show how they feel through what they say, often in passing or as a joke.\n\nListen out for comments like I am so tired of everything, what is the point, I am a burden, nobody would notice if I was not here, or I cannot do this anymore. People may also talk about feeling trapped, hopeless, worthless or numb.\n\nThese comments are easy to brush off, especially if they are said with a laugh. But they can be a way of testing whether it is safe to talk.\n\nIf you hear something like this, it is a good moment to gently ask more. You might say, you said earlier that you feel like a burden. Can you tell me more about that?",
+      "apply_it": "If someone makes a worrying comment, gently ask them to tell you more about it.",
+      "quiz": {
+        "question": "How should you respond if a friend jokes that nobody would notice if they were gone?",
+        "options": [
+          "Laugh along and change the subject",
+          "Tell them off for saying it",
+          "Ignore it, they were only joking",
+          "Gently ask them to tell you more about how they feel"
+        ],
+        "answer": 3,
+        "explanation": "Worrying comments, even as jokes, can be a way of testing the waters. Asking gently shows it is safe to talk."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--05",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "suicide",
+        "warning-signs",
+        "safety"
+      ],
+      "title": "Know the warning signs that someone may be at risk of suicide",
+      "body": "Organisations such as the US National Institute of Mental Health list warning signs that a person may be thinking about suicide.\n\nThese include talking about wanting to die or feeling hopeless, feeling trapped or in unbearable pain, talking about being a burden, withdrawing from others, giving away important belongings, saying goodbye to people, searching for ways to end their life, and big mood swings, including a sudden calm after a time of deep distress.\n\nThese signs do not always mean someone is about to act, and some people show no clear signs. But if you notice them, take them seriously and talk to the person. If you think they are in immediate danger, contact local emergency services straight away.",
+      "apply_it": "Read through the warning signs once more so you will recognise them if you see them.",
+      "quiz": {
+        "question": "Which of these is a recognised warning sign of suicide?",
+        "options": [
+          "Planning a holiday with friends",
+          "Giving away important belongings and saying goodbye",
+          "Starting a new hobby",
+          "Complaining about the weather"
+        ],
+        "answer": 1,
+        "explanation": "Giving away belongings and saying goodbye are recognised warning signs. They should be taken seriously."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--06",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "starting",
+        "conversation",
+        "timing"
+      ],
+      "title": "Pick a calm, private moment to start the conversation",
+      "body": "Where and when you talk can make a difference. Try to choose a time when you will not be rushed or interrupted, and a place where the person feels comfortable.\n\nMany people find it easier to talk side by side rather than face to face. A walk, a drive or doing a task together, like washing up, can take the pressure off. Eye contact can feel intense when you are sharing something painful.\n\nAvoid times when either of you is very tired, stressed or has been drinking.\n\nIf you cannot meet in person, a phone call or message is better than nothing. The most important thing is that they know you care and want to listen.",
+      "apply_it": "Suggest a walk or a coffee with the person you are worried about this week.",
+      "quiz": {
+        "question": "Why might talking side by side, such as on a walk, help?",
+        "options": [
+          "It is quicker",
+          "It means you do not have to listen",
+          "It can feel less intense than direct eye contact",
+          "It stops the person talking"
+        ],
+        "answer": 2,
+        "explanation": "Side-by-side activities can make sharing feel less pressured than sitting face to face."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--07",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "starting",
+        "conversation",
+        "questions"
+      ],
+      "title": "Open the conversation gently and honestly",
+      "body": "There is no perfect opening line, but simple and honest is usually best.\n\nYou could start by saying what you have noticed and that you care: I have noticed you have seemed quieter lately, and I wanted to check how you are doing. Or: You do not seem yourself recently. I am here if you want to talk.\n\nOpen questions, which cannot be answered with just yes or no, invite people to share more. How have things been for you lately? is better than Are you okay?\n\nAsking twice can help too. Many of us say fine automatically. A gentle, are you sure? How are you really? shows you genuinely want to know.",
+      "apply_it": "Practise one opening line out loud, using what you have noticed and an open question.",
+      "quiz": {
+        "question": "Which is the best opening question?",
+        "options": [
+          "How have things been for you lately?",
+          "You are fine, aren't you?",
+          "Why are you being so moody?",
+          "Did something bad happen or not?"
+        ],
+        "answer": 0,
+        "explanation": "Open questions invite people to talk. Closed or judging questions can make them shut down."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--08",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "starting",
+        "patience",
+        "respect"
+      ],
+      "title": "If they say they are fine, leave the door open",
+      "body": "Sometimes people are not ready to talk, even if they are struggling. They may feel embarrassed, worried about being a burden, or not yet sure what they feel.\n\nIf they say they are fine, do not push too hard. Pushing can make people feel cornered. Instead, let them know the door is open: That is okay. Just know I am here whenever you want to talk, about anything.\n\nThen keep in touch in normal ways. Invite them to things, send a message, and check in again later. Many people open up the second or third time someone asks.\n\nIf you are seriously worried about their safety, though, it is right to ask more directly. Later cards explain how.",
+      "apply_it": "If someone brushes you off, plan a simple way to check in again in a few days.",
+      "quiz": {
+        "question": "What should you do if someone says they are fine but you are still worried?",
+        "options": [
+          "Never mention it again",
+          "Push until they admit something",
+          "Tell everyone you know",
+          "Let them know you are there and check in again later"
+        ],
+        "answer": 3,
+        "explanation": "Leaving the door open and checking in again shows care without pressure. People often open up later."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--09",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "listening",
+        "empathy"
+      ],
+      "title": "Listen to understand, not to fix",
+      "body": "When someone shares something painful, it is natural to want to fix it. But jumping to advice can make people feel unheard, as if their feelings are a problem to be solved quickly.\n\nOften, what helps most is simply listening. Give them your full attention. Put your phone away. Let them talk at their own pace, and try not to interrupt.\n\nSilence is okay. You do not need to fill every pause. Nodding, saying I see or that sounds really hard, shows you are with them.\n\nIf you are unsure whether they want ideas, you can ask: Would it help to think about what to do, or do you just need to talk for now?",
+      "apply_it": "In your next important conversation, put your phone away and focus only on listening.",
+      "quiz": {
+        "question": "Why can jumping straight to advice be unhelpful?",
+        "options": [
+          "It can make people feel unheard",
+          "Advice is always wrong",
+          "Listening is less caring than advice",
+          "People never want any ideas"
+        ],
+        "answer": 0,
+        "explanation": "Rushing to fix things can leave people feeling unheard. Listening first helps them feel understood."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--10",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "listening",
+        "reflecting",
+        "empathy"
+      ],
+      "title": "Reflect back what you hear to show you understand",
+      "body": "Reflecting means repeating back the heart of what someone has said, in a few words. It shows you are listening and helps them feel understood.\n\nFor example, if a friend says, I just cannot keep up at work and I feel like I am letting everyone down, you might say, It sounds like you are under a lot of pressure and worried about disappointing people.\n\nYou can also ask gentle open questions to understand more: What has that been like for you? What is the hardest part?\n\nIf you get it wrong, that is okay. They can correct you, and that still helps. The aim is to understand their experience, not to agree or disagree.",
+      "apply_it": "Next time someone shares a worry, reflect it back in one sentence before saying anything else.",
+      "quiz": {
+        "question": "Which response is an example of reflecting back?",
+        "options": [
+          "You should just quit your job",
+          "Everyone feels like that",
+          "It sounds like you are under a lot of pressure and worried about letting people down",
+          "At least you have a job"
+        ],
+        "answer": 2,
+        "explanation": "Reflecting back sums up what the person said and felt, showing you have understood."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--11",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "validation",
+        "empathy",
+        "acceptance"
+      ],
+      "title": "Accept their feelings, even if you do not fully understand them",
+      "body": "You do not have to understand exactly why someone feels the way they do to accept that the feelings are real. This is sometimes called validation.\n\nValidating sounds like: That makes sense, given everything you are dealing with. Or: I can hear how painful this is for you. Or even: I do not fully understand, but I can see it is really hard, and I want to help.\n\nValidation does not mean agreeing that things are hopeless or that their harshest thoughts about themselves are true. It means accepting their feelings without judgement.\n\nPeople who feel accepted are more likely to keep talking and to accept help.",
+      "apply_it": "Practise one validating phrase you feel comfortable saying, such as I can see this is really hard.",
+      "quiz": {
+        "question": "What does validating someone's feelings mean?",
+        "options": [
+          "Agreeing that things are hopeless",
+          "Telling them how they should feel",
+          "Fixing the problem for them",
+          "Accepting their feelings are real without judging them"
+        ],
+        "answer": 3,
+        "explanation": "Validation means accepting someone's feelings as real and understandable, without having to agree with every thought."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--12",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "what-not-to-say",
+        "minimising",
+        "language"
+      ],
+      "title": "Avoid phrases that play down what they feel",
+      "body": "Some well-meant phrases can make people feel brushed off. Common ones include: Cheer up. It could be worse. Others have it harder. Just think positive. You have so much to be grateful for. It is all in your head.\n\nThese can suggest that the person should not feel the way they do, which may add guilt or shame and make them less likely to open up again.\n\nInstead, try phrases that show you take them seriously: Thank you for telling me. That sounds really tough. I am here for you.\n\nIt is easy to slip into old phrases. If you notice you have, you can simply say, sorry, that came out wrong, I want to understand.",
+      "apply_it": "Pick one phrase you tend to say, like cheer up, and choose a kinder replacement.",
+      "quiz": {
+        "question": "Which phrase is most supportive?",
+        "options": [
+          "Cheer up, it could be worse",
+          "Thank you for telling me, that sounds really tough",
+          "Others have it much harder",
+          "Just think positive"
+        ],
+        "answer": 1,
+        "explanation": "Phrases that play down feelings can add shame. Thanking them and acknowledging the difficulty shows you take them seriously."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--13",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "what-not-to-say",
+        "advice",
+        "listening"
+      ],
+      "title": "Avoid comparing, lecturing or making it about you",
+      "body": "Other common traps are comparing, lecturing and turning the talk towards yourself.\n\nComparing sounds like: I felt like that once and I just got over it. Even if you mean to relate, it can sound as if their struggle is small or easy to fix.\n\nLecturing sounds like: You need to exercise more and stop drinking. Advice given too early or too firmly can feel like criticism.\n\nMaking it about you might be telling a long story of your own, or showing so much shock or upset that they end up comforting you.\n\nIt is fine to share a little of your experience if it helps them feel less alone. Just keep it short and bring the focus back to them.",
+      "apply_it": "In your next supportive chat, notice if you start to compare or lecture, and gently steer back to listening.",
+      "quiz": {
+        "question": "Why can comparing your own experience be unhelpful?",
+        "options": [
+          "It always makes people feel better",
+          "It shows you are an expert",
+          "It can make their struggle seem small or easy to fix",
+          "It is a good way to end the conversation"
+        ],
+        "answer": 2,
+        "explanation": "Comparing can suggest their problem is small. A brief share is fine, but keep the focus on them."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--14",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "suicide",
+        "asking",
+        "evidence"
+      ],
+      "title": "Asking directly about suicide is safe and can help",
+      "body": "Many people fear that asking someone about suicide will put the idea in their head. Research shows this is not the case. Organisations including the NIMH, the NHS and the World Health Organization say that asking directly does not increase risk.\n\nIn fact, asking can bring relief. It shows you are willing to hear the hardest things and that the person does not have to carry them alone. It also gives you important information about how to help.\n\nIf you are worried about someone, it is better to ask clearly than to hint. Vague questions, like you are not going to do anything silly, are easy to brush off and can make people feel judged.",
+      "apply_it": "Remind yourself: asking about suicide does not put the idea in someone's head.",
+      "quiz": {
+        "question": "What does research say about asking someone directly about suicide?",
+        "options": [
+          "Asking does not increase risk and can bring relief",
+          "It puts the idea in their head",
+          "You should only hint at it",
+          "Only doctors are allowed to ask"
+        ],
+        "answer": 0,
+        "explanation": "Research shows asking directly does not increase risk. It can help the person feel heard and open the way to help."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--15",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "suicide",
+        "asking",
+        "conversation"
+      ],
+      "title": "Ask clearly and calmly, using the word suicide",
+      "body": "If you are worried, it helps to ask in a clear, calm and caring way. You might say: Sometimes when people feel the way you do, they think about suicide. Are you having thoughts of suicide? Or more simply: Are you thinking about killing yourself?\n\nUsing clear words shows you are not afraid of the answer and that it is safe to be honest.\n\nTry to stay calm whatever they say. Listen without judging, arguing or promising to keep it a secret.\n\nIt can feel scary to ask. That is normal. Many people find it helps to practise the words in advance, so they come out more easily when it matters.",
+      "apply_it": "Practise saying the question out loud on your own: Are you having thoughts of suicide?",
+      "quiz": {
+        "question": "Why is it better to use clear words like suicide when asking?",
+        "options": [
+          "It is more dramatic",
+          "It means you can avoid listening",
+          "It is required by law",
+          "It shows you are not afraid of the answer and makes honesty easier"
+        ],
+        "answer": 3,
+        "explanation": "Clear, calm words show it is safe to talk honestly. Vague questions are easy to dodge."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--16",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "suicide",
+        "response",
+        "safety"
+      ],
+      "title": "If they say yes, stay calm and stay with them",
+      "body": "If the person says they are having thoughts of suicide, try to stay calm. Thank them for telling you. This took courage.\n\nListen and take what they say seriously. You can gently ask whether they have thought about how or when, and whether they feel they might act soon. This helps you understand how urgent things are.\n\nIf they are in immediate danger, or have a plan and the means to act, do not leave them alone. Contact local emergency services, a crisis line, or help them get to a hospital emergency department.\n\nIf the danger is not immediate, help them make contact with a doctor or crisis line soon, and agree when you will next check in.",
+      "apply_it": "Write down what you would do, step by step, if someone told you they were thinking of suicide.",
+      "quiz": {
+        "question": "If someone has a plan and is in immediate danger, what should you do?",
+        "options": [
+          "Leave them to calm down alone",
+          "Stay with them and contact emergency services or a crisis line",
+          "Promise to keep it a secret",
+          "Tell them to sleep on it"
+        ],
+        "answer": 1,
+        "explanation": "In immediate danger, stay with them and get urgent help from emergency services, a crisis line or an emergency department."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--17",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "crisis",
+        "safety",
+        "emergency"
+      ],
+      "title": "In a crisis, focus on safety and getting help fast",
+      "body": "A mental health crisis is when someone is at immediate risk of harming themselves or others, or is too distressed to stay safe.\n\nThe NIMH suggests five action steps: ask, keep them safe, be there, help them connect, and follow up.\n\nIn practice: contact local emergency services or a crisis line. Stay with the person if it is safe for you to do so. If you can safely do it, help put distance between them and things they could use to harm themselves, such as medicines or sharp objects. Speak calmly and simply. Do not argue or lecture.\n\nIf you feel at risk yourself, move to safety and call emergency services. Your safety matters too.",
+      "apply_it": "Save the details of local emergency services and a crisis line in your phone now.",
+      "quiz": {
+        "question": "Which are the NIMH's five action steps?",
+        "options": [
+          "Ignore, wait, hope, forget, move on",
+          "Fix, advise, lecture, decide, leave",
+          "Ask, keep them safe, be there, help them connect, follow up",
+          "Call, shout, argue, insist, report"
+        ],
+        "answer": 2,
+        "explanation": "The NIMH's steps are ask, keep them safe, be there, help them connect and follow up."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--18",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "safety-plan",
+        "suicide",
+        "planning"
+      ],
+      "title": "A safety plan can help someone through dark moments",
+      "body": "A safety plan is a short, written plan someone can use when suicidal thoughts or distress rise. It is often made with a professional, but you can help the person think it through.\n\nIt usually includes: warning signs that a crisis may be starting; things they can do to cope on their own, like going for a walk or listening to music; people and places that help distract them; people they can ask for help; professionals and crisis lines to contact; and ways to make their surroundings safer.\n\nKeeping the plan on their phone or somewhere easy to find means it is there when thinking is hard.\n\nA safety plan supports, but does not replace, professional care.",
+      "apply_it": "Look up a free safety plan template from a mental health charity, so you know what one looks like.",
+      "quiz": {
+        "question": "What is the purpose of a safety plan?",
+        "options": [
+          "To give steps to follow when suicidal thoughts or distress rise",
+          "To replace all professional care",
+          "To keep secrets from doctors",
+          "To list their mistakes"
+        ],
+        "answer": 0,
+        "explanation": "A safety plan lists warning signs, coping steps and people to contact, so the person has a clear guide in hard moments."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--19",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "professional-help",
+        "doctor",
+        "therapy"
+      ],
+      "title": "Encourage them to talk to a doctor or other professional",
+      "body": "Friends and family are important, but many people also need professional help. A doctor is often a good first step. They can talk about options such as talking therapy or medication, and point to local services.\n\nYou could say: I think it might help to talk to a doctor. Would you like me to help you book an appointment?\n\nSome people prefer to start with a counsellor, a helpline, or a support service at school, university or work. Many places also offer self-referral to talking therapy services.\n\nIf they are reluctant, try to understand why. They might worry about being judged, about medication, or about cost. Talking through these fears can help.",
+      "apply_it": "Find out how someone in your area can see a doctor or refer themselves for talking therapy.",
+      "quiz": {
+        "question": "What is a good way to encourage someone to get professional help?",
+        "options": [
+          "Insist they go or you will stop talking to them",
+          "Book a doctor without telling them",
+          "Tell them therapy is for weak people",
+          "Gently suggest it and offer to help them book"
+        ],
+        "answer": 3,
+        "explanation": "A gentle suggestion with an offer of practical help makes it easier for someone to take the step."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--20",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "professional-help",
+        "practical"
+      ],
+      "title": "Practical help can make the first step easier",
+      "body": "When someone is struggling, even small tasks can feel huge. Making a phone call or filling in a form might feel impossible.\n\nYou can offer practical help, such as finding phone numbers, helping them write down what they want to say, sitting with them while they call, or going with them to an appointment and waiting outside.\n\nAsk what would help most, rather than taking over. For example: Would it help if I came with you, or would you prefer I check in afterwards?\n\nAfter appointments, check how it went. If the first professional is not a good fit, encourage them to keep trying. Finding the right support can take time.",
+      "apply_it": "Offer one specific piece of practical help, such as going with someone to an appointment.",
+      "quiz": {
+        "question": "What is the best approach to practical help?",
+        "options": [
+          "Take over and make all their decisions",
+          "Ask what would help most and offer specific support",
+          "Leave them to manage alone",
+          "Only help if they ask three times"
+        ],
+        "answer": 1,
+        "explanation": "Offering specific help while respecting their choices supports them without taking away their control."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--21",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "professional-help",
+        "respect",
+        "patience"
+      ],
+      "title": "If they refuse help, stay connected and keep the door open",
+      "body": "It can be frustrating and frightening when someone you love will not get help. But adults usually have the right to make their own choices, and pushing too hard can make them withdraw.\n\nKeep showing that you care. Let them know you will support them whenever they are ready. Share information, like a website or helpline, without pressure. Sometimes people change their mind after time to think.\n\nYou can also get advice for yourself. Many mental health charities offer support for friends and family.\n\nThe exception is when there is an immediate risk to their life or someone else's. Then it is right to contact emergency services, even if they do not want you to.",
+      "apply_it": "Find one source of advice for family and friends that you could use if someone refuses help.",
+      "quiz": {
+        "question": "When is it right to get help even if the person does not want it?",
+        "options": [
+          "Whenever they disagree with you",
+          "If they are a bit quiet",
+          "If there is an immediate risk to their life or others' safety",
+          "Never, under any circumstances"
+        ],
+        "answer": 2,
+        "explanation": "Adults usually choose for themselves, but if there is immediate danger to life, getting emergency help is the right step."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--22",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "confidentiality",
+        "safety",
+        "trust"
+      ],
+      "title": "Do not promise to keep a secret if their safety is at risk",
+      "body": "Someone might say, I will tell you, but you have to promise not to tell anyone. It is natural to want to agree to keep their trust.\n\nBut if what they share puts them or someone else at risk, you may need to get help. It is kinder to be honest from the start. You could say: I will keep what you tell me private as much as I can, but if I am worried about your safety, I will need to get help.\n\nMost people understand this. If you do need to tell someone, try to involve the person in the decision and explain why.\n\nYou are not betraying them by keeping them safe.",
+      "apply_it": "Practise saying: I will keep this private if I can, but not if your safety is at risk.",
+      "quiz": {
+        "question": "What should you say if someone asks you to keep a secret about their safety?",
+        "options": [
+          "I promise never to tell anyone, whatever happens",
+          "I will tell everyone straight away",
+          "I do not want to know",
+          "I will keep it private if I can, but not if your safety is at risk"
+        ],
+        "answer": 3,
+        "explanation": "Being honest about the limits of secrecy protects their safety and your trust at the same time."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--23",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "over-time",
+        "check-in",
+        "connection"
+      ],
+      "title": "Keep checking in, because support matters over time",
+      "body": "Recovery from mental health problems often takes weeks or months, and there may be ups and downs. A single conversation is a great start, but ongoing contact matters.\n\nThe NIMH lists follow up as one of its key steps. Research suggests that simple, regular contact after a crisis can help reduce risk.\n\nYou do not need long, deep talks every time. A quick message, a cup of tea, or saying I was thinking of you, shows you are still there.\n\nTry to keep in touch even if they do not always reply. People who are struggling may not have the energy to respond, but they often still notice and value the contact.",
+      "apply_it": "Set a reminder to check in with the person you are supporting once a week.",
+      "quiz": {
+        "question": "Why is ongoing contact important?",
+        "options": [
+          "Recovery often takes time, and regular contact can help",
+          "One conversation is always enough",
+          "Checking in annoys everyone",
+          "Only professionals should stay in touch"
+        ],
+        "answer": 0,
+        "explanation": "Recovery takes time. Regular, simple contact shows you care and can help after a crisis."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--24",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "over-time",
+        "practical"
+      ],
+      "title": "Everyday practical help can lighten a heavy load",
+      "body": "When someone is struggling, daily life can pile up. Dishes, shopping, bills and emails can feel overwhelming, and this can make them feel even worse.\n\nPractical help can be a real relief. You could drop off a meal, help with shopping, walk the dog, look after the children for an afternoon, or sit with them while they open their post.\n\nBe specific when you offer. Can I bring dinner on Thursday? is easier to accept than let me know if you need anything, because people often feel bad asking.\n\nRespect their wishes. Some people want help with tasks; others want to keep doing things themselves to feel in control.",
+      "apply_it": "Make one specific offer of practical help this week, such as bringing a meal on a set day.",
+      "quiz": {
+        "question": "Which offer is easiest for someone to accept?",
+        "options": [
+          "Let me know if you need anything",
+          "Can I bring dinner on Thursday?",
+          "You should really clean up",
+          "I could help one day, maybe"
+        ],
+        "answer": 1,
+        "explanation": "Specific offers are easier to say yes to than vague ones, because people often feel uncomfortable asking."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--25",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "over-time",
+        "normal-life",
+        "respect"
+      ],
+      "title": "Treat them as the same person, not as a problem",
+      "body": "When someone is struggling with their mental health, they are still the same person. They still have interests, humour and opinions. Being treated only as someone who is ill can feel lonely.\n\nKeep inviting them to things, even if they often say no. Talk about everyday topics too, like football, films or family news, not just their feelings. Laugh together if the moment is right.\n\nAsk what they want: Would you like to talk about how you are doing, or would you rather just have a normal chat today?\n\nKeeping ordinary life going can give a sense of normality and hope, and reminds them they belong.",
+      "apply_it": "Invite the person you are supporting to an ordinary, low-pressure activity they used to enjoy.",
+      "quiz": {
+        "question": "Why is it helpful to keep treating someone normally?",
+        "options": [
+          "It means you can ignore their feelings",
+          "It makes them feel worse",
+          "It shows they are still valued and belong",
+          "It is a way to avoid helping"
+        ],
+        "answer": 2,
+        "explanation": "Treating someone as the same person helps them feel valued and gives a sense of normal life and hope."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--26",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "over-time",
+        "patience",
+        "recovery"
+      ],
+      "title": "Be patient, because recovery is rarely a straight line",
+      "body": "It is natural to hope that once someone gets help, they will quickly feel better. But recovery often has ups and downs. There may be good weeks followed by hard ones.\n\nTry not to show frustration or say things like you were doing so well. Setbacks are common and do not mean that all progress is lost.\n\nNotice and gently point out small improvements: you seem to have a bit more energy this week. But avoid putting pressure on them to be better.\n\nRespect their pace and their choices about treatment, even if you would do things differently. Your steady presence matters more than speed.",
+      "apply_it": "Write down one small positive change you have noticed in the person, and mention it kindly.",
+      "quiz": {
+        "question": "How should you respond to a setback in someone's recovery?",
+        "options": [
+          "Say you were doing so well, what happened?",
+          "Assume all progress is lost",
+          "Stop supporting them",
+          "Stay patient and remind yourself setbacks are common"
+        ],
+        "answer": 3,
+        "explanation": "Ups and downs are normal in recovery. Patience and steady support help more than frustration."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--27",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "distance",
+        "messaging",
+        "connection"
+      ],
+      "title": "You can still support someone from a distance",
+      "body": "Not everyone you care about lives nearby. You can still offer real support from far away.\n\nRegular messages, calls and video chats help people feel less alone. Sending a card, a small gift or a photo can show you are thinking of them. Some friends watch a film at the same time and chat about it, or play an online game together.\n\nIf you are worried about their safety and they are far away, you can still help. Encourage them to contact local emergency services or a crisis line, or, if they are in immediate danger and you know where they are, contact the emergency services for their area yourself.\n\nIt can also help to know who else is near them, such as a family member or flatmate.",
+      "apply_it": "Schedule a regular call or video chat with someone you care about who lives far away.",
+      "quiz": {
+        "question": "If someone far away is in immediate danger, what can you do?",
+        "options": [
+          "Contact the emergency services for their area if you know where they are",
+          "Nothing, distance means you cannot help",
+          "Wait until you can visit",
+          "Send a funny video and hope for the best"
+        ],
+        "answer": 0,
+        "explanation": "Even from far away, you can get emergency help to them if they are in immediate danger and you know their location."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--28",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "young-people",
+        "parents",
+        "signs"
+      ],
+      "title": "Supporting a young person means staying calm and involved",
+      "body": "Teenagers and children can find it hard to explain their feelings. Changes like dropping grades, losing friends, staying in their room, being very irritable, or changes in sleep and eating can be signs they are struggling, as well as normal ups and downs.\n\nTry to stay calm and curious, rather than angry or panicked. Make time for low-pressure chats, like in the car or while cooking. Listen more than you talk.\n\nLet them know you love them no matter what. Talk to their school, and see a doctor if you are worried. For young people, it is especially important not to keep safety concerns secret.\n\nIf there is immediate danger, contact local emergency services.",
+      "apply_it": "Plan a low-pressure time to chat with a young person in your life, such as during a car ride.",
+      "quiz": {
+        "question": "What is a good way to support a struggling teenager?",
+        "options": [
+          "Shout so they take it seriously",
+          "Stay calm, make time for low-pressure chats and seek help if worried",
+          "Ignore it as just a phase",
+          "Promise to keep every worry secret"
+        ],
+        "answer": 1,
+        "explanation": "Calm, regular chats and getting help from school or a doctor support young people best."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--29",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "self-care",
+        "boundaries",
+        "supporter"
+      ],
+      "title": "Look after yourself so you can keep supporting others",
+      "body": "Supporting someone who is struggling can be tiring and worrying. You might feel stressed, sad, guilty or even resentful at times. These feelings are normal.\n\nLooking after yourself is not selfish. It is what lets you keep going. Keep doing things you enjoy, get enough sleep, eat well, and spend time with people who lift you up.\n\nSet boundaries. You cannot be available every minute, and you are not responsible for fixing everything. It is okay to say, I can talk for half an hour tonight, but I need to sleep after that.\n\nRemember that you are one part of their support, not all of it. Professionals and others can share the load.",
+      "apply_it": "Plan one thing this week that is just for you, such as a walk, a hobby or time with a friend.",
+      "quiz": {
+        "question": "Why is it important for supporters to set boundaries?",
+        "options": [
+          "Because they should not care too much",
+          "Because the person should cope alone",
+          "So they can keep supporting without burning out",
+          "So they never have to listen"
+        ],
+        "answer": 2,
+        "explanation": "Boundaries protect your own wellbeing, which means you can keep offering support over time."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--30",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "self-care",
+        "carers"
+      ],
+      "title": "Get support for yourself as a supporter",
+      "body": "You do not have to carry worry alone. Talk to someone you trust about how you are feeling, while respecting the other person's privacy as much as you can.\n\nMany mental health charities offer information and support groups for friends, family and carers. Talking with others in a similar situation can help you feel less alone and learn new ideas.\n\nIf supporting someone is affecting your own sleep, mood or health, talk to your own doctor. Supporters can become stressed, anxious or low too.\n\nIf you have been through a frightening event, like a crisis or a suicide attempt, you may feel shaken for some time afterwards. Getting support for yourself is important and normal.",
+      "apply_it": "Look up one support group or service for friends and family of people with mental health problems.",
+      "quiz": {
+        "question": "What should a supporter do if their own sleep or mood is suffering?",
+        "options": [
+          "Ignore it and keep going",
+          "Stop all contact with the person",
+          "Hide it from everyone",
+          "Talk to their own doctor and seek support"
+        ],
+        "answer": 3,
+        "explanation": "Supporters can struggle too. Seeing a doctor and getting support are normal and important steps."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-help-someone-struggling--31",
+      "topic": "mental-health",
+      "tags": [
+        "support",
+        "summary",
+        "listening",
+        "safety"
+      ],
+      "title": "Notice, ask, listen and help them connect to support",
+      "body": "You can make a real difference to someone who is struggling. Notice lasting changes in what they do and say. Choose a calm moment and ask gently, with open questions, and ask twice if needed.\n\nListen to understand, reflect back what you hear, and accept their feelings. Avoid phrases that play down their pain.\n\nIf you are worried about suicide, ask directly and calmly. It is safe and can help. In a crisis, stay with them if it is safe and contact local emergency services or a crisis line straight away.\n\nEncourage professional help, offer practical support, and keep checking in over time. And look after yourself too.",
+      "apply_it": "Choose one skill from this guide to practise this week, such as asking twice or reflecting back.",
+      "quiz": {
+        "question": "Which summary of this guide is most accurate?",
+        "options": [
+          "Notice, ask, listen, help them find support, and look after yourself",
+          "Fix their problems quickly",
+          "Avoid talking about suicide at all costs",
+          "Leave support to professionals only"
+        ],
+        "answer": 0,
+        "explanation": "Noticing, asking, listening, helping them connect to support and caring for yourself are the key steps."
+      },
+      "health": true
+    }
+  ]
+}

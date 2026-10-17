@@ -1,0 +1,16 @@
+{
+  "id": "healthy-body",
+  "title": "Healthy Body",
+  "description": "Five practical guides that build on each other: sleep better, eat well on a budget, get fit at home, quit smoking, and live longer and healthier.",
+  "topics": [
+    "health",
+    "life-guides"
+  ],
+  "guides": [
+    "guide-sleep-better",
+    "guide-eat-well-on-a-budget",
+    "guide-get-fit-at-home",
+    "guide-quit-smoking",
+    "guide-live-longer-and-healthier"
+  ]
+}

@@ -1,0 +1,773 @@
+{
+ "source": {
+  "id": "science-how-your-body-works",
+  "title": "How Your Body Works",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://training.seer.cancer.gov/anatomy/body/",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+  "attribution": "A Reborn guide drawing on the US National Cancer Institute's SEER training modules, the National Heart, Lung, and Blood Institute, the National Institute of Diabetes and Digestive and Kidney Diseases, the National Institute of Neurological Disorders and Stroke, the CDC and the NHS.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn; no text copied. References: National Cancer Institute SEER Training, Introduction to the Human Body, https://training.seer.cancer.gov/anatomy/body/; National Heart, Lung, and Blood Institute, How the Heart Works, https://www.nhlbi.nih.gov/health/heart; National Institute of Diabetes and Digestive and Kidney Diseases, Your Digestive System and How It Works, https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works; National Institute of Neurological Disorders and Stroke, Brain Basics: Know Your Brain, https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain; CDC, About Sleep, https://www.cdc.gov/sleep/about/index.html; NHS, High blood pressure, https://www.nhs.uk/conditions/high-blood-pressure-hypertension/"
+ },
+ "cards": [
+  {
+   "id": "science-how-your-body-works--01",
+   "topic": "science",
+   "tags": [
+    "body",
+    "overview",
+    "systems"
+   ],
+   "title": "Your body is a set of systems that keep you alive without you thinking about it",
+   "body": "Right now your heart is pumping, your lungs are filling, your gut is breaking down your last meal and your brain is reading these words. You are not steering most of it. It just happens.\n\nThis guide is a plain tour of how that works. It covers the heart and blood, the lungs, digestion, the liver and kidneys, the brain and nerves, bones and muscles, the skin, the immune system, hormones, the senses and sleep, and how all of these work as one team.\n\nIt is basic biology, not medical advice. If something about your own body worries you, a doctor or nurse is the right person to ask.",
+   "apply_it": "Put a hand on your chest and feel your heartbeat for ten seconds. That is one system working for you right now.",
+   "quiz": {
+    "question": "What is this guide about?",
+    "options": [
+     "Treating illnesses at home",
+     "How the main parts of the body work and work together",
+     "Diets for losing weight",
+     "How cells copy their DNA"
+    ],
+    "answer": 1,
+    "explanation": "The guide is a simple tour of the body's systems. It is general biology, not medical advice."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--02",
+   "topic": "science",
+   "tags": [
+    "body",
+    "systems",
+    "organs"
+   ],
+   "title": "Cells form tissues, tissues form organs, and organs form systems",
+   "body": "Your body is built in layers. Cells of the same kind group together into tissues, such as muscle tissue or nerve tissue. Different tissues combine to make an organ, like the stomach, which has muscle to churn food, a lining to make acid and nerves to control it all.\n\nOrgans then team up into systems. The digestive system includes the mouth, stomach, intestines and liver. The circulatory system is the heart plus the blood vessels.\n\nThink of a town. People are the cells, teams are the tissues, the bakery or the fire station is an organ, and the food supply or emergency service is a system.",
+   "apply_it": "Pick one organ you know, like the stomach or skin, and name the system it belongs to.",
+   "quiz": {
+    "question": "Which list goes from smallest to largest?",
+    "options": [
+     "Organs, cells, systems, tissues",
+     "Systems, organs, tissues, cells",
+     "Tissues, cells, systems, organs",
+     "Cells, tissues, organs, systems"
+    ],
+    "answer": 3,
+    "explanation": "Cells group into tissues, tissues build organs, and organs work together as systems."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--03",
+   "topic": "science",
+   "tags": [
+    "body",
+    "heart",
+    "circulation"
+   ],
+   "title": "Your heart is two pumps side by side",
+   "body": "Your heart is a muscle about the size of your fist. It is really two pumps joined together. The right side sends blood to your lungs to pick up oxygen. The left side, which is stronger, pushes that fresh blood out to the rest of your body.\n\nInside are four chambers and four valves. The valves are like one-way doors that stop blood flowing backwards. The 'lub-dub' sound a doctor hears is the valves closing.\n\nAn adult heart at rest beats roughly 60 to 100 times a minute, which adds up to around 100,000 beats a day, every day, for your whole life.",
+   "apply_it": "Find your pulse on your wrist, count the beats for 15 seconds and multiply by four.",
+   "quiz": {
+    "question": "What does the right side of the heart do?",
+    "options": [
+     "Sends blood to the lungs to collect oxygen",
+     "Pumps blood to the brain only",
+     "Makes new blood cells",
+     "Stores spare blood for later"
+    ],
+    "answer": 0,
+    "explanation": "The right side pumps blood to the lungs. The left side then pumps the oxygen-rich blood around the body."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--04",
+   "topic": "science",
+   "tags": [
+    "body",
+    "circulation",
+    "blood-vessels"
+   ],
+   "title": "Arteries, veins and capillaries form a loop that never stops",
+   "body": "Blood travels in a closed loop of tubes. Arteries carry blood away from the heart. They have thick, stretchy walls because the pressure in them is high.\n\nArteries branch into smaller and smaller tubes until they become capillaries, so thin that blood cells pass through in single file. This is where the real work happens: oxygen and food move out into the tissues, and waste moves in.\n\nCapillaries then join up into veins, which carry blood back to the heart. Veins have little valves, and the squeeze of your leg muscles when you walk helps push blood back up. Laid end to end, your vessels would stretch tens of thousands of kilometres.",
+   "apply_it": "On a long journey, stand up and walk or flex your calves every hour to help blood flow back from your legs.",
+   "quiz": {
+    "question": "Where do oxygen and nutrients actually pass into your tissues?",
+    "options": [
+     "In the arteries",
+     "In the heart",
+     "In the capillaries",
+     "In the veins"
+    ],
+    "answer": 2,
+    "explanation": "Capillary walls are very thin, so oxygen and nutrients can move out and waste can move in."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--05",
+   "topic": "science",
+   "tags": [
+    "body",
+    "blood",
+    "circulation"
+   ],
+   "title": "Blood is a liquid carrying cells that each have a job",
+   "body": "An adult has roughly five litres of blood. A little over half of it is plasma, a yellowish liquid that is mostly water. Plasma carries sugar, salts, hormones and waste.\n\nFloating in the plasma are three kinds of cells. Red blood cells carry oxygen, using a protein called haemoglobin, which is also what makes blood red. White blood cells defend you against germs. Platelets are tiny cell pieces that rush to a cut and help form a clot.\n\nMost blood cells are made inside your bones, in the soft marrow. Red cells live for about four months before they are recycled.",
+   "apply_it": "Next time you get a small cut, notice how the bleeding slows and stops. That is your platelets at work.",
+   "quiz": {
+    "question": "What do platelets do?",
+    "options": [
+     "Carry oxygen",
+     "Fight infections",
+     "Help blood clot",
+     "Digest fat"
+    ],
+    "answer": 2,
+    "explanation": "Platelets gather at a wound and help form a clot to stop bleeding."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--06",
+   "topic": "science",
+   "tags": [
+    "body",
+    "heart",
+    "blood-pressure",
+    "pulse"
+   ],
+   "title": "Your pulse and blood pressure are two simple windows on your heart",
+   "body": "Your pulse is the wave of pressure you feel in an artery each time your heart beats. Exercise, fear, caffeine and fever raise it. Rest and fitness tend to lower it.\n\nBlood pressure is how hard blood pushes on artery walls. It is written as two numbers, like 120 over 80. The top number is the pressure when the heart squeezes. The bottom one is the pressure when it relaxes between beats.\n\nHigh blood pressure often causes no symptoms at all, which is why it is worth having it checked. Only a health professional can tell you what your own numbers mean.",
+   "apply_it": "Find out when you last had your blood pressure checked. If you can't remember, ask a pharmacy or clinic.",
+   "quiz": {
+    "question": "Why is it worth checking blood pressure even if you feel fine?",
+    "options": [
+     "Because high blood pressure often has no symptoms",
+     "Because it changes your blood type",
+     "Because it measures your lung size",
+     "Because feeling fine means it must be high"
+    ],
+    "answer": 0,
+    "explanation": "Raised blood pressure usually can't be felt, so a check is the only way to know."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--07",
+   "topic": "science",
+   "tags": [
+    "body",
+    "lungs",
+    "breathing"
+   ],
+   "title": "Breathing works because a muscle under your lungs pulls them open",
+   "body": "Your lungs have no muscles of their own. The work is done by the diaphragm, a dome of muscle under your ribs. When it tightens, it flattens and moves down. Muscles between your ribs lift your chest out. Your chest gets bigger, the pressure inside drops, and air rushes in.\n\nWhen the diaphragm relaxes, your chest gets smaller and air flows out. Quiet breathing out takes almost no effort.\n\nAir enters through your nose or mouth, goes down the windpipe and splits into two tubes, one for each lung. Your nose warms, moistens and filters the air on the way in.",
+   "apply_it": "Put a hand on your belly and breathe in slowly. Feel it move out as your diaphragm pulls down.",
+   "quiz": {
+    "question": "What mainly makes air flow into your lungs?",
+    "options": [
+     "The lungs squeezing",
+     "The heart pushing air",
+     "The stomach expanding",
+     "The diaphragm tightening and moving down"
+    ],
+    "answer": 3,
+    "explanation": "When the diaphragm contracts and the chest widens, pressure in the lungs drops and air flows in."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--08",
+   "topic": "science",
+   "tags": [
+    "body",
+    "lungs",
+    "oxygen"
+   ],
+   "title": "Tiny air sacs swap oxygen for carbon dioxide",
+   "body": "The airways in your lungs branch like an upside-down tree, ending in hundreds of millions of tiny air sacs called alveoli. Each one is wrapped in capillaries.\n\nThe walls between the air and the blood are thinner than a sheet of tissue paper. Oxygen passes from the air into the blood, and carbon dioxide, a waste gas your cells make, passes out of the blood into the air. Then you breathe it out.\n\nBecause there are so many alveoli, the total surface inside your lungs is far larger than the surface of your skin. That huge area lets enough oxygen in to keep every cell going.",
+   "apply_it": "Take one slow breath and picture oxygen going in and carbon dioxide going out at the same moment.",
+   "quiz": {
+    "question": "What leaves your blood in the alveoli?",
+    "options": [
+     "Oxygen",
+     "Carbon dioxide",
+     "Red blood cells",
+     "Sugar"
+    ],
+    "answer": 1,
+    "explanation": "Carbon dioxide moves from the blood into the air sacs so you can breathe it out."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--09",
+   "topic": "science",
+   "tags": [
+    "body",
+    "lungs",
+    "exercise",
+    "breathing"
+   ],
+   "title": "You breathe faster in exercise mainly because carbon dioxide builds up",
+   "body": "When you run for a bus, your muscles burn more fuel. That uses more oxygen and makes more carbon dioxide.\n\nYou might guess that low oxygen is what makes you gasp. In fact, the main signal is the rising carbon dioxide in your blood. Sensors in your brain and blood vessels notice it and tell you to breathe faster and deeper. Your heart speeds up too, so blood moves quicker between lungs and muscles.\n\nAs you get fitter, your heart pumps more blood with each beat and your muscles use oxygen better, so the same hill feels easier.",
+   "apply_it": "Walk briskly for two minutes and notice how your breathing and heart rate rise, then settle when you stop.",
+   "quiz": {
+    "question": "What is the main trigger that makes you breathe harder during exercise?",
+    "options": [
+     "Rising carbon dioxide in the blood",
+     "Your lungs getting tired",
+     "Cold air",
+     "Your stomach being full"
+    ],
+    "answer": 0,
+    "explanation": "The body watches carbon dioxide levels closely. When they rise, breathing speeds up."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--10",
+   "topic": "science",
+   "tags": [
+    "body",
+    "digestion",
+    "mouth"
+   ],
+   "title": "Digestion starts the moment food enters your mouth",
+   "body": "Digestion is the job of breaking food into pieces small enough to pass into your blood.\n\nIt starts with chewing. Your teeth grind food into smaller bits, which gives digestive juices more surface to work on. Saliva wets the food and contains an enzyme that begins breaking down starch. Chew a piece of bread for a long time and it starts to taste slightly sweet, as starch turns into sugar.\n\nWhen you swallow, a small flap closes over your windpipe so food goes down the food pipe instead. Muscles in the food pipe then squeeze the food along in waves, so it reaches your stomach even if you are lying down.",
+   "apply_it": "At your next meal, chew one mouthful slowly and notice how the taste and texture change.",
+   "quiz": {
+    "question": "Why does bread start to taste sweet if you chew it for a long time?",
+    "options": [
+     "The bread is warming up",
+     "Your teeth add sugar",
+     "An enzyme in saliva breaks starch into sugar",
+     "Your tongue gets tired"
+    ],
+    "answer": 2,
+    "explanation": "Saliva contains an enzyme that starts turning starch into simpler sugars."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--11",
+   "topic": "science",
+   "tags": [
+    "body",
+    "digestion",
+    "stomach"
+   ],
+   "title": "Your stomach churns food in acid and then lets it out a little at a time",
+   "body": "Your stomach is a stretchy, muscular bag. It can hold well over a litre after a big meal. Its walls squeeze and churn food, mixing it with strong acid and enzymes that start breaking down protein.\n\nThe acid also kills many germs that come in with food. A thick layer of mucus protects the stomach lining from its own acid.\n\nAfter a few hours, the food has become a thick soup. A ring of muscle at the bottom of the stomach opens a little at a time and lets small amounts through into the small intestine. Fatty meals tend to stay in the stomach longer, which is one reason they keep you feeling full.",
+   "apply_it": "Notice how long you feel full after a light meal compared with a heavier, fattier one.",
+   "quiz": {
+    "question": "What protects the stomach from its own acid?",
+    "options": [
+     "Saliva",
+     "A layer of mucus",
+     "Blood cells",
+     "Bile from the liver"
+    ],
+    "answer": 1,
+    "explanation": "The stomach lining makes thick mucus that shields it from the acid."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--12",
+   "topic": "science",
+   "tags": [
+    "body",
+    "digestion",
+    "small-intestine"
+   ],
+   "title": "Most of your food is absorbed in the small intestine",
+   "body": "The small intestine is a long, coiled tube, several metres in length. It is called small because it is narrow, not short.\n\nHere, juices from the pancreas and bile from the liver finish breaking food down. Proteins become amino acids, starches become sugars, and fats are split into smaller parts.\n\nThe inside wall is covered in millions of tiny finger-like bumps called villi. They give the gut a huge surface for soaking up nutrients into the blood. Water, vitamins and minerals are taken up here too. By the time food leaves the small intestine, most of the useful parts are gone.",
+   "apply_it": "Think of a towel compared with a flat sheet. The folds and bumps are why villi soak up so much.",
+   "quiz": {
+    "question": "What are villi?",
+    "options": [
+     "Teeth at the back of the mouth",
+     "Germs in the stomach",
+     "Valves in the heart",
+     "Tiny finger-like bumps that absorb nutrients"
+    ],
+    "answer": 3,
+    "explanation": "Villi line the small intestine and greatly increase the surface for absorbing food."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--13",
+   "topic": "science",
+   "tags": [
+    "body",
+    "digestion",
+    "gut-microbes",
+    "large-intestine"
+   ],
+   "title": "Your large intestine takes back water and hosts trillions of microbes",
+   "body": "What is left after the small intestine moves into the large intestine. Its main job is to take back water and salts, turning liquid waste into solid stool.\n\nIt is also home to trillions of bacteria and other microbes. They break down some fibre that your own enzymes can't, making useful substances in the process, and some of them make vitamins.\n\nScientists are actively studying how gut microbes may affect weight, mood and immunity. Some links look promising, but much is still uncertain, so be wary of products promising to fix your gut. Eating a range of plant foods with plenty of fibre is a well-supported way to feed your gut microbes.",
+   "apply_it": "Add one extra fibre-rich food today, like beans, oats, fruit or vegetables.",
+   "quiz": {
+    "question": "What is the main job of the large intestine?",
+    "options": [
+     "Making stomach acid",
+     "Taking back water and salts",
+     "Pumping blood",
+     "Producing bile"
+    ],
+    "answer": 1,
+    "explanation": "The large intestine reabsorbs water and salts and houses many gut microbes."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--14",
+   "topic": "science",
+   "tags": [
+    "body",
+    "liver",
+    "organs"
+   ],
+   "title": "Your liver is a chemical factory with hundreds of jobs",
+   "body": "The liver is your largest internal organ. It sits under your ribs on the right side. Blood from your gut goes straight to it, so it gets first look at everything you absorb.\n\nIt stores sugar and releases it when you need energy. It makes bile, which helps digest fat. It builds many proteins, including ones that help blood clot. It breaks down old blood cells, medicines and alcohol, and turns harmful waste into forms your body can get rid of.\n\nThe liver also has a rare ability: it can regrow after part of it is damaged or removed. That ability has limits, though, and long-term heavy drinking can scar it.",
+   "apply_it": "Read the label on a medicine you have at home and check the safe daily dose. Your liver handles most of it.",
+   "quiz": {
+    "question": "Which of these is one of the liver's jobs?",
+    "options": [
+     "Pumping air",
+     "Hearing sounds",
+     "Making red blood cells in adults",
+     "Making bile to help digest fat"
+    ],
+    "answer": 3,
+    "explanation": "The liver makes bile, stores energy, builds proteins and clears out waste and drugs."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--15",
+   "topic": "science",
+   "tags": [
+    "body",
+    "kidneys",
+    "organs",
+    "water"
+   ],
+   "title": "Your kidneys clean your blood and balance your water",
+   "body": "You have two kidneys, each about the size of a fist, tucked near your lower back. Every day they filter a huge volume of fluid from your blood, then take almost all of it back, keeping only what needs to go.\n\nThe leftover water and waste become urine, usually a litre or two a day. It flows down to your bladder and waits until you go to the toilet.\n\nKidneys also keep the salt and water in your body in balance. Drink a lot and they make more, paler urine. Get dehydrated and they hold on to water, so your urine becomes darker. They also help control blood pressure.",
+   "apply_it": "Glance at the colour of your urine today. Pale straw usually means you are drinking enough.",
+   "quiz": {
+    "question": "If you are dehydrated, what do your kidneys do?",
+    "options": [
+     "Hold on to water, so urine gets darker",
+     "Make more urine",
+     "Stop working",
+     "Turn water into blood"
+    ],
+    "answer": 0,
+    "explanation": "When you are low on water, the kidneys save it, making smaller amounts of darker urine."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--16",
+   "topic": "science",
+   "tags": [
+    "body",
+    "brain",
+    "nervous-system"
+   ],
+   "title": "Your brain is the control centre, and different parts handle different jobs",
+   "body": "An adult brain weighs about as much as a bag of sugar, yet it uses about a fifth of your body's energy. It contains tens of billions of nerve cells, each linked to thousands of others.\n\nDifferent areas specialise. The large wrinkled outer layer handles thinking, language, planning and the senses. The cerebellum at the back helps with balance and smooth movement. The brainstem, which connects to the spinal cord, runs things you never think about, like breathing and heart rate.\n\nStill, almost every task uses many areas working together. The old idea that we only use 10 percent of our brain is a myth.",
+   "apply_it": "Try writing your name with your other hand. Feel how hard your brain works on an unfamiliar movement.",
+   "quiz": {
+    "question": "What does the brainstem mainly control?",
+    "options": [
+     "Reading and writing",
+     "Memory of names",
+     "Breathing and heart rate",
+     "Taste"
+    ],
+    "answer": 2,
+    "explanation": "The brainstem runs automatic functions such as breathing, heart rate and sleep cycles."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--17",
+   "topic": "science",
+   "tags": [
+    "body",
+    "nervous-system",
+    "nerves"
+   ],
+   "title": "Nerves carry messages as tiny electrical and chemical signals",
+   "body": "Your brain and spinal cord form the central nervous system. Nerves branch out from them to every part of your body, like cables.\n\nA nerve cell sends a message as a quick electrical pulse along its length. When the pulse reaches the end, it releases chemicals that cross a tiny gap to the next cell. That gap is called a synapse.\n\nSome nerves carry information in, such as the feeling of a hot mug. Others carry orders out, such as telling your hand to let go. The fastest signals travel at over 100 metres a second, which is why touching something feels instant.",
+   "apply_it": "Lightly touch your fingertip, then your elbow. Notice how much more sensitive the fingertip is.",
+   "quiz": {
+    "question": "What is a synapse?",
+    "options": [
+     "A type of bone",
+     "A blood vessel in the brain",
+     "A tiny gap where nerve cells pass on chemical messages",
+     "The outer layer of the skin"
+    ],
+    "answer": 2,
+    "explanation": "At a synapse, chemicals carry the signal across a small gap from one nerve cell to the next."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--18",
+   "topic": "science",
+   "tags": [
+    "body",
+    "nervous-system",
+    "reflexes",
+    "safety"
+   ],
+   "title": "Reflexes protect you before your brain has time to think",
+   "body": "If you touch a hot pan, your hand jumps back before you even feel the pain. That is a reflex.\n\nThe signal from your skin travels to your spinal cord, and the spinal cord sends a message straight back to your arm muscles. The longer trip up to the brain happens a moment later, which is when you notice the heat and say ouch.\n\nOther reflexes include blinking when something comes at your eye, coughing when something goes down the wrong way and the knee-jerk a doctor tests with a little hammer. They are built in and very fast, because they protect you.",
+   "apply_it": "Notice the next time you blink at something sudden. You didn't decide to do it.",
+   "quiz": {
+    "question": "Why can you pull your hand away from heat before you feel pain?",
+    "options": [
+     "The spinal cord sends a reply before the brain registers pain",
+     "Your skin moves on its own",
+     "Heat travels faster than nerves",
+     "You have learned to do it"
+    ],
+    "answer": 0,
+    "explanation": "Reflexes loop through the spinal cord, so the reaction comes before the brain's conscious response."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--19",
+   "topic": "science",
+   "tags": [
+    "body",
+    "bones",
+    "skeleton"
+   ],
+   "title": "Your bones are living tissue that rebuilds itself",
+   "body": "An adult skeleton usually has 206 bones. Babies are born with more, but some fuse together as they grow.\n\nBones hold you up, protect soft organs like the brain and heart, store calcium and make blood cells in their marrow. They are light for their strength because many have a spongy inside.\n\nBone is alive. Cells keep breaking down old bone and building new bone, so over roughly a decade much of your skeleton is renewed. This is why broken bones can heal. Weight-bearing activity, like walking or climbing stairs, signals bones to stay strong. Calcium and vitamin D help too.",
+   "apply_it": "Take the stairs once today. Weight-bearing movement helps keep bones strong.",
+   "quiz": {
+    "question": "Why can a broken bone heal?",
+    "options": [
+     "Bones are made of metal",
+     "Blood glues it back",
+     "It never really heals",
+     "Bone is living tissue that keeps rebuilding"
+    ],
+    "answer": 3,
+    "explanation": "Bone cells constantly remove and lay down bone, which lets a break knit back together."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--20",
+   "topic": "science",
+   "tags": [
+    "body",
+    "bones",
+    "joints",
+    "movement"
+   ],
+   "title": "Joints let bones move, and each type moves in its own way",
+   "body": "A joint is where two bones meet. Some joints, like those in your skull, barely move at all. Others give you a wide range of movement.\n\nYour knee and elbow are hinge joints. They bend mostly in one direction, like a door. Your hip and shoulder are ball-and-socket joints, which can swing and rotate in many directions.\n\nThe ends of the bones are covered with smooth, slippery cartilage, and many joints have a fluid inside that works like oil. Strong bands called ligaments hold the bones together, and tendons connect muscles to bones.",
+   "apply_it": "Move your shoulder in a slow circle, then try the same with your elbow. Feel the difference between the joint types.",
+   "quiz": {
+    "question": "What kind of joint is your shoulder?",
+    "options": [
+     "Hinge joint",
+     "Ball-and-socket joint",
+     "Fixed joint",
+     "Sliding plate"
+    ],
+    "answer": 1,
+    "explanation": "The shoulder is a ball-and-socket joint, which allows movement in many directions."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--21",
+   "topic": "science",
+   "tags": [
+    "body",
+    "muscles",
+    "movement"
+   ],
+   "title": "Muscles can only pull, so they work in pairs",
+   "body": "You have hundreds of muscles. There are three kinds. Skeletal muscles move your bones, and you control them. Smooth muscle lines organs like your gut and blood vessels and works on its own. Cardiac muscle is found only in the heart and never tires the way other muscles do.\n\nA muscle works by getting shorter. It can pull, but it can't push. So skeletal muscles come in pairs. To bend your arm, the biceps on the front tightens. To straighten it, the triceps on the back takes over.\n\nWhen you exercise, muscle fibres adapt and grow stronger over time. Without use, they slowly weaken.",
+   "apply_it": "Bend your arm and feel your biceps tighten, then straighten it and feel the triceps work.",
+   "quiz": {
+    "question": "Why do skeletal muscles work in pairs?",
+    "options": [
+     "Because they can only pull, not push",
+     "To share blood supply",
+     "Because one is always asleep",
+     "So one can make heat"
+    ],
+    "answer": 0,
+    "explanation": "A muscle can only shorten and pull, so an opposite muscle is needed to move the bone back."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--22",
+   "topic": "science",
+   "tags": [
+    "body",
+    "skin",
+    "organs",
+    "protection"
+   ],
+   "title": "Your skin is your largest organ and your first shield",
+   "body": "Skin covers about two square metres on an adult. It keeps water in and germs out, and it shields you from sunlight.\n\nThe outer layer is constantly being replaced. Old cells flake off and new ones push up from below, so you shed millions of skin cells every day. Much household dust contains them.\n\nThe deeper layer holds blood vessels, sweat glands, hair roots and nerve endings that sense touch, pain, heat and cold. Skin also makes vitamin D when sunlight hits it. Too much sun damages skin cells, though, which is why shade and sunscreen matter on strong-sun days.",
+   "apply_it": "Check the UV forecast for today. On a high day, cover up or use sunscreen.",
+   "quiz": {
+    "question": "Which of these is NOT one of the skin's jobs?",
+    "options": [
+     "Keeping germs out",
+     "Sensing heat and touch",
+     "Pumping blood",
+     "Making vitamin D"
+    ],
+    "answer": 2,
+    "explanation": "The skin protects, senses and makes vitamin D. Pumping blood is the heart's job."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--23",
+   "topic": "science",
+   "tags": [
+    "body",
+    "immune-system",
+    "protection",
+    "germs"
+   ],
+   "title": "Your body's first defences stop most germs before they get in",
+   "body": "Before your immune cells ever meet a germ, you have walls and traps. Skin is a tough barrier. The sticky mucus in your nose and airways catches dust and germs, and tiny hairs sweep it up to be swallowed or coughed out.\n\nTears and saliva contain substances that harm bacteria. Stomach acid kills many germs in food. Helpful microbes on your skin and in your gut also crowd out harmful ones.\n\nWhen germs do get past these barriers, white blood cells move in. Some attack anything foreign. Others learn to recognise a specific germ and remember it, which is how vaccines prepare you for future infections.",
+   "apply_it": "Wash your hands with soap for about 20 seconds before you next eat. It helps your first defences.",
+   "quiz": {
+    "question": "What does mucus in your airways do?",
+    "options": [
+     "Makes your voice deeper",
+     "Traps dust and germs",
+     "Carries oxygen",
+     "Digests food"
+    ],
+    "answer": 1,
+    "explanation": "Mucus catches particles and germs, and tiny hairs sweep them away."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--24",
+   "topic": "science",
+   "tags": [
+    "body",
+    "immune-system",
+    "inflammation",
+    "fever"
+   ],
+   "title": "Swelling and fever are often signs your defences are working",
+   "body": "When you cut yourself, the area can go red, warm and swollen. This is inflammation. Blood vessels widen to bring more blood, and immune cells move into the area to fight germs and start repairs.\n\nA fever works in a similar spirit. Your brain raises your body's temperature setting a little. Higher temperatures can make it harder for some germs to multiply and may help immune cells work.\n\nThese responses are usually useful, but they can go wrong. Inflammation that doesn't switch off can cause harm, and a very high or long-lasting fever needs medical advice. If you are worried, especially about a child, contact a doctor.",
+   "apply_it": "Next time you have a small cut or bruise, watch how it changes day by day as it heals.",
+   "quiz": {
+    "question": "What causes the redness and warmth around a fresh cut?",
+    "options": [
+     "The cut freezing",
+     "Your skin turning to scar at once",
+     "Germs glowing",
+     "Extra blood flow as part of inflammation"
+    ],
+    "answer": 3,
+    "explanation": "Blood vessels widen to bring immune cells and repair materials, which makes the area red and warm."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--25",
+   "topic": "science",
+   "tags": [
+    "body",
+    "hormones",
+    "glands"
+   ],
+   "title": "Hormones are chemical messengers carried in your blood",
+   "body": "Nerves send fast messages along set routes. Hormones work differently. They are chemicals released by glands into your blood, which carries them everywhere. Only cells with the right receptor respond, a bit like a radio tuned to one station.\n\nHormones control slower, longer-lasting things. Growth hormone helps children grow. Thyroid hormones set how fast your body uses energy. Sex hormones drive the changes of puberty. Adrenaline, from glands above the kidneys, prepares you for action in a fright: your heart races and your breathing quickens.\n\nA small part of the brain called the hypothalamus, working with the pituitary gland, oversees much of this system.",
+   "apply_it": "Remember a moment you got a sudden fright. The racing heart afterwards was adrenaline at work.",
+   "quiz": {
+    "question": "How do hormones travel around the body?",
+    "options": [
+     "Along nerves",
+     "Through the blood",
+     "Through the air you breathe",
+     "Through the bones"
+    ],
+    "answer": 1,
+    "explanation": "Glands release hormones into the bloodstream, and target cells respond to them."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--26",
+   "topic": "science",
+   "tags": [
+    "body",
+    "hormones",
+    "blood-sugar",
+    "insulin"
+   ],
+   "title": "Insulin and glucagon keep your blood sugar in a safe range",
+   "body": "Your cells run on sugar called glucose, but too much or too little in your blood causes problems. So your body keeps it within a range.\n\nAfter a meal, blood sugar rises. Your pancreas releases insulin, which helps cells take in glucose and tells the liver to store the extra. Between meals, when sugar falls, the pancreas releases glucagon, which tells the liver to release stored sugar.\n\nIt works like a heating system with a thermostat. In diabetes, the body either makes too little insulin or doesn't respond to it well, so blood sugar runs too high. That needs care from health professionals.",
+   "apply_it": "Notice how you feel an hour after a sugary snack compared with a meal that includes protein and fibre.",
+   "quiz": {
+    "question": "Which organ releases insulin?",
+    "options": [
+     "The liver",
+     "The heart",
+     "The kidney",
+     "The pancreas"
+    ],
+    "answer": 3,
+    "explanation": "The pancreas releases insulin when blood sugar rises and glucagon when it falls."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--27",
+   "topic": "science",
+   "tags": [
+    "body",
+    "senses",
+    "eyes",
+    "sight"
+   ],
+   "title": "Your eyes catch light, but your brain makes the picture",
+   "body": "Light enters the eye through the clear front, called the cornea, and passes through the dark hole in the middle, the pupil. The coloured iris changes the pupil's size, shrinking it in bright light and widening it in the dark.\n\nThe lens focuses light onto the retina at the back of the eye. The retina has two kinds of light-sensing cells. Rods work in dim light but don't see colour. Cones need more light and give you colour and fine detail.\n\nThe image on the retina is actually upside down. Your brain flips it and fills in gaps, such as the small blind spot where the optic nerve leaves the eye.",
+   "apply_it": "Walk from a bright room into a dark one and notice how your sight slowly improves as your pupils widen.",
+   "quiz": {
+    "question": "Which cells in the retina let you see colour?",
+    "options": [
+     "Cones",
+     "Rods",
+     "Platelets",
+     "Villi"
+    ],
+    "answer": 0,
+    "explanation": "Cones detect colour and detail. Rods work in dim light but only in shades of grey."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--28",
+   "topic": "science",
+   "tags": [
+    "body",
+    "senses",
+    "ears",
+    "balance"
+   ],
+   "title": "Your ears handle both hearing and balance",
+   "body": "Sound is a vibration in the air. It travels into your ear canal and makes your eardrum shake. Three tiny bones pass the shaking to a snail-shaped, fluid-filled tube in the inner ear called the cochlea.\n\nInside the cochlea, thousands of tiny hair cells bend with the vibrations and send signals to your brain. Very loud noise can damage these cells, and they don't grow back, which is why noise-related hearing loss is permanent.\n\nAlso in the inner ear are three loops filled with fluid. When you move your head, the fluid shifts, telling your brain which way you are turning. That is why spinning around makes you dizzy.",
+   "apply_it": "Turn your music down a notch. If others can hear your headphones, it may be loud enough to harm hearing over time.",
+   "quiz": {
+    "question": "Why is hearing loss from loud noise usually permanent?",
+    "options": [
+     "The eardrum melts",
+     "Sound blocks the ear canal",
+     "The hair cells in the cochlea don't grow back",
+     "The brain forgets sounds"
+    ],
+    "answer": 2,
+    "explanation": "Damaged hair cells in the inner ear are not replaced, so the loss stays."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--29",
+   "topic": "science",
+   "tags": [
+    "body",
+    "senses",
+    "smell",
+    "taste",
+    "touch"
+   ],
+   "title": "Smell, taste and touch work together more than you might think",
+   "body": "Your tongue detects five basic tastes: sweet, salty, sour, bitter and umami, a savoury taste found in foods like cheese and tomatoes. The old map showing each taste in one zone of the tongue is wrong. All areas can sense all tastes.\n\nMost of what we call flavour actually comes from smell. Air from food in your mouth rises to sensors at the back of your nose. That is why food tastes dull when you have a blocked nose.\n\nTouch comes from many kinds of sensors in your skin. Some sense light touch, others pressure, vibration, heat, cold or pain. Your fingertips and lips are packed with them.",
+   "apply_it": "Hold your nose and eat a bite of food, then let go. Notice how much flavour comes back.",
+   "quiz": {
+    "question": "Why does food taste bland when you have a cold?",
+    "options": [
+     "Your tongue stops working",
+     "Your teeth hurt",
+     "Your sense of smell, which gives much of flavour, is blocked",
+     "Saliva dries up completely"
+    ],
+    "answer": 2,
+    "explanation": "Much of flavour depends on smell, which is reduced when your nose is blocked."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--30",
+   "topic": "science",
+   "tags": [
+    "body",
+    "sleep",
+    "brain",
+    "rest"
+   ],
+   "title": "Sleep is an active time when your brain and body do vital work",
+   "body": "Sleep is not your body switching off. During the night you move through cycles, each lasting roughly 90 minutes. Deep sleep is linked to physical repair and growth. Rapid eye movement, or REM, sleep is when most vivid dreams happen and appears to help with memory and emotions.\n\nMost adults need around seven to nine hours. Too little sleep affects mood, focus, reaction time and long-term health.\n\nScientists are still working out exactly why we sleep. One idea, from studies mostly in animals, is that the brain clears waste more during sleep. It is promising, but not fully settled in humans.",
+   "apply_it": "Set a regular time to go to bed tonight and keep screens out of reach for the last half hour.",
+   "quiz": {
+    "question": "Roughly how long does one sleep cycle last?",
+    "options": [
+     "About 90 minutes",
+     "10 minutes",
+     "4 hours",
+     "The whole night"
+    ],
+    "answer": 0,
+    "explanation": "Sleep runs in cycles of roughly 90 minutes, moving between lighter, deeper and REM stages."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--31",
+   "topic": "science",
+   "tags": [
+    "body",
+    "homeostasis",
+    "temperature",
+    "systems"
+   ],
+   "title": "Your body constantly adjusts to keep conditions inside steady",
+   "body": "Your inside temperature stays close to 37 degrees Celsius, whether it is snowing or scorching outside. Keeping things steady like this is called homeostasis.\n\nWhen you get hot, blood vessels near your skin widen, so you look flushed and lose heat, and you sweat, which cools you as it dries. When you get cold, those vessels narrow, you shiver to make heat and the hairs on your skin stand up, giving you goosebumps.\n\nThe same balancing goes on for water, salt, sugar and oxygen. Sensors detect a change, a control centre such as the brain responds, and the body shifts back towards normal.",
+   "apply_it": "Next time you shiver or sweat, remind yourself it is your body steering back to 37 degrees.",
+   "quiz": {
+    "question": "What is homeostasis?",
+    "options": [
+     "A type of bone disease",
+     "The way food is chewed",
+     "A sleep stage",
+     "Keeping inside conditions steady"
+    ],
+    "answer": 3,
+    "explanation": "Homeostasis is the body's work of keeping temperature, water, sugar and more in a steady range."
+   }
+  },
+  {
+   "id": "science-how-your-body-works--32",
+   "topic": "science",
+   "tags": [
+    "body",
+    "systems",
+    "teamwork",
+    "wrap-up"
+   ],
+   "title": "No body system works alone: they are one connected team",
+   "body": "Think about climbing a flight of stairs. Your brain sends signals down nerves to your leg muscles. Your muscles pull on bones at your joints. They burn more fuel, so your lungs breathe faster and your heart pumps harder to deliver oxygen and sugar. Your liver releases stored energy. You warm up and start to sweat. Your ears keep you balanced.\n\nThat is many systems in a few seconds, all coordinated without your attention.\n\nKnowing how your body works can make you more curious and more caring towards it. For any worries about your own health, though, a doctor or nurse is always the right place to go.",
+   "apply_it": "Next time you walk up stairs, try to name three body systems that are helping you do it.",
+   "quiz": {
+    "question": "What is the big idea of this guide?",
+    "options": [
+     "The heart does all the work",
+     "Body systems work closely together",
+     "The brain is the only important organ",
+     "Bones never change"
+    ],
+    "answer": 1,
+    "explanation": "Every everyday action depends on several systems working together at once."
+   }
+  }
+ ]
+}

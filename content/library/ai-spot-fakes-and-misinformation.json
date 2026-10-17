@@ -1,0 +1,788 @@
+{
+  "source": {
+    "id": "ai-spot-fakes-and-misinformation",
+    "title": "Spot AI Fakes and Misinformation",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.unesco.org/en/media-information-literacy",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on UNESCO, the US Federal Trade Commission, the FBI Internet Crime Complaint Center, the US Cybersecurity and Infrastructure Security Agency and the News Literacy Project.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: UNESCO, Media and information literacy, https://www.unesco.org/en/media-information-literacy; Federal Trade Commission, Scammers use AI to enhance their family emergency schemes, https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes; FBI Internet Crime Complaint Center, Criminals use generative artificial intelligence to facilitate financial fraud, https://www.ic3.gov/PSA/2024/PSA241203; Cybersecurity and Infrastructure Security Agency, Foreign influence operations and disinformation, https://www.cisa.gov/topics/election-security/foreign-influence-operations-and-disinformation; News Literacy Project, https://newslit.org/"
+  },
+  "cards": [
+    {
+      "id": "ai-spot-fakes-and-misinformation--01",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "overview",
+        "deepfakes",
+        "fact-checking"
+      ],
+      "title": "Anyone can be fooled by a fake, and a few simple habits protect you",
+      "body": "A video of a famous person saying something shocking. A photo of a disaster that never happened. A phone call from a loved one begging for help, in a voice that sounds exactly right. Fakes like these are now easier than ever to make.\n\nYou do not need to be a tech expert to protect yourself. You need a handful of calm habits.\n\nThis guide covers the different kinds of false information, deepfake video and voice, tells in AI images and why those tells fade, voice-clone scams and family code words, checking sources, reverse image search, lateral reading, emotional bait, slowing down before sharing, and helping older relatives stay safe.",
+      "apply_it": "Think of the last surprising thing you saw online. Ask yourself: did I check where it came from before believing it?",
+      "quiz": {
+        "question": "What does this guide say is the best protection against fakes?",
+        "options": [
+          "Being a technology expert",
+          "A handful of calm checking habits",
+          "Never using the internet",
+          "Believing only videos"
+        ],
+        "answer": 1,
+        "explanation": "You do not need special skills. Simple habits, such as pausing, checking sources and confirming through trusted channels, protect most people."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--02",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "definitions",
+        "disinformation",
+        "basics"
+      ],
+      "title": "Misinformation is false by mistake, disinformation is false on purpose",
+      "body": "It helps to know three words.\n\nMisinformation is false or misleading content shared by people who believe it. Your aunt forwarding a wrong health tip because she wants to help is a typical example.\n\nDisinformation is false content made or spread on purpose to deceive, for money, power or to cause trouble. A fake news site built to earn advertising clicks fits here.\n\nA third kind, sometimes called malinformation, uses true information in a harmful way, such as leaking someone's private details to embarrass them.\n\nThe line between them can blur, because disinformation often becomes misinformation once ordinary people share it in good faith. Either way, the harm spreads.",
+      "apply_it": "Next time you see a false claim, ask whether the sharer was likely mistaken or deliberately misleading.",
+      "quiz": {
+        "question": "Someone shares a false health tip believing it is true. What is this called?",
+        "options": [
+          "Disinformation",
+          "Malinformation",
+          "Misinformation",
+          "Satire"
+        ],
+        "answer": 2,
+        "explanation": "Misinformation is false content shared without intent to deceive. Disinformation is spread deliberately to mislead."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--03",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "spread",
+        "emotion",
+        "psychology"
+      ],
+      "title": "False stories often spread faster than true ones because they feel new and exciting",
+      "body": "Falsehoods have an advantage online. Made-up stories can be designed to be surprising, scary or thrilling, while real news is often messy and dull.\n\nOne large study of social media sharing found that false news tended to travel further and faster than true news, and that people, not just automated accounts, did much of the spreading. Novelty and strong emotion seemed to drive it.\n\nThis does not mean everything exciting is false. It means that the feeling of wow, I have to share this is exactly when you should be most careful. The things that make a story spread are not the same things that make it true.",
+      "apply_it": "Notice the next time you feel an urge to share something instantly. Treat that urge as a signal to check first.",
+      "quiz": {
+        "question": "According to research, what helps false news spread quickly?",
+        "options": [
+          "It is usually longer than true news",
+          "It is always shared only by robots",
+          "It comes from official sources",
+          "It often feels new, surprising or emotional"
+        ],
+        "answer": 3,
+        "explanation": "Studies suggest novelty and strong feelings help falsehoods spread. People drive much of the sharing, so pausing makes a real difference."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--04",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "generative-ai",
+        "deepfakes",
+        "risk"
+      ],
+      "title": "AI has made faking pictures, voices and videos cheap and quick",
+      "body": "Fake photos and edited videos are not new. What has changed is how easy they are to make.\n\nNot long ago, a convincing fake needed skill, time and expensive software. Now AI tools can produce a realistic image from a sentence, copy a voice from a short clip, or swap one face onto another in a video. Fake text, such as reviews, articles and messages, can be churned out in bulk.\n\nThis means you will meet more fakes, and some will be very convincing. The upside is that the defence is the same as always: check where something came from and whether trusted sources confirm it. Those habits work no matter how good the fakes get.",
+      "apply_it": "Accept one simple rule: a realistic picture, voice or video is no longer proof on its own.",
+      "quiz": {
+        "question": "What has AI mainly changed about fake media?",
+        "options": [
+          "It has made fakes much cheaper and easier to make",
+          "It has made fakes impossible",
+          "It has made all photos trustworthy",
+          "It only affects old films"
+        ],
+        "answer": 0,
+        "explanation": "Fakes existed before, but AI lowers the cost and skill needed. Realism alone no longer proves something is genuine."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--05",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "deepfakes",
+        "video",
+        "basics"
+      ],
+      "title": "A deepfake is AI-made media showing someone doing or saying what they never did",
+      "body": "The word deepfake mixes deep learning, a type of AI, with fake. It usually means video or audio where a real person's face or voice has been swapped in or invented.\n\nSome uses are harmless or even fun, like a film using AI to make an actor look younger, with permission. Others cause real harm: fake videos of politicians making announcements, celebrities appearing to promote investment scams, or ordinary people placed in embarrassing or abusive content without consent.\n\nThe most common harmful deepfakes are not always dramatic. Often they are short clips of a well-known face endorsing a product or asking for money. They rely on you trusting a familiar face.",
+      "apply_it": "If a well-known person appears in an ad promising easy money, assume it could be fake until their official channels confirm it.",
+      "quiz": {
+        "question": "A video shows a celebrity urging you to invest in a new scheme. What is the safest assumption?",
+        "options": [
+          "It must be real because you can see their face",
+          "It could be a deepfake, so check their official channels",
+          "Celebrities always tell the truth",
+          "Videos cannot be faked"
+        ],
+        "answer": 1,
+        "explanation": "Scammers often use deepfakes of trusted faces to sell schemes. A familiar face is not proof, so confirm with official sources."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--06",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "deepfakes",
+        "video",
+        "tells"
+      ],
+      "title": "Deepfake videos may show odd blinking, blurry edges or lips out of sync",
+      "body": "Some deepfakes still have clues. Look closely at the face, especially around the edges where it meets hair, ears or neck. You may see blurring, flicker or skin that looks too smooth.\n\nWatch the mouth. Do the lips match the words exactly? Teeth may look strange or blend together. Check the eyes: unnatural blinking, a fixed stare or reflections that do not match the room. Lighting on the face might not match the background. The voice may sound flat, with odd pauses or no breathing.\n\nThese clues are useful when present. But their absence proves nothing. A clip with none of these problems can still be fake, which leads to the next big lesson.",
+      "apply_it": "Watch a short video of someone speaking with the sound off, and focus only on how well the lips match the speech.",
+      "quiz": {
+        "question": "What does it mean if a video shows none of the usual deepfake clues?",
+        "options": [
+          "It is definitely real",
+          "It is definitely fake",
+          "Nothing for certain, it still needs checking",
+          "It was filmed on a phone"
+        ],
+        "answer": 2,
+        "explanation": "Visual clues can expose some fakes, but good fakes may show none. A clean-looking video still needs source checking."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--07",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "tells",
+        "verification",
+        "mindset"
+      ],
+      "title": "Visual tells fade as AI improves, so rely on checking, not spotting",
+      "body": "Early AI images often gave themselves away with six fingers or melted faces. Many of those mistakes are now rare, and each new generation of tools fixes more of them.\n\nThat creates a trap. If you think you can always spot a fake by looking, you may feel confident about a fake that simply has no obvious errors. Even experts struggle to judge good fakes by eye alone.\n\nThe lasting skill is not spotting but checking. Who posted it first? Do trusted news outlets or official sources confirm it? Is there other footage from different angles? These questions work just as well tomorrow as today, however good the fakes become.",
+      "apply_it": "Replace the question does this look fake with who is behind this and who else confirms it.",
+      "quiz": {
+        "question": "Why is checking sources more reliable than looking for visual flaws?",
+        "options": [
+          "Visual flaws never exist",
+          "AI keeps fixing its flaws, but source checks keep working",
+          "Only experts can check sources",
+          "Sources are always correct"
+        ],
+        "answer": 1,
+        "explanation": "As tools improve, visible errors disappear. Checking origins and confirmation from trusted sources stays effective regardless of quality."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--08",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "cheapfakes",
+        "context",
+        "video"
+      ],
+      "title": "Many fakes are real photos or videos shown with a false story attached",
+      "body": "Not every fake needs AI. Some of the most common tricks are called cheapfakes: real material used in a misleading way.\n\nAn old photo of a flood is reshared as if it shows today's storm. A video from one country is claimed to come from another. A clip is cut to remove the part that changes its meaning, or slowed down to make someone seem drunk or confused.\n\nThese can be harder to catch than AI fakes, because the picture itself is genuine. The lie is in the caption. So always ask: when and where was this actually taken, and is the full context shown?",
+      "apply_it": "For the next dramatic photo you see, search for its date and location before accepting the caption.",
+      "quiz": {
+        "question": "What is a cheapfake?",
+        "options": [
+          "A low-cost phone",
+          "A video made entirely by AI",
+          "A photo with a watermark",
+          "Real media shown with false or misleading context"
+        ],
+        "answer": 3,
+        "explanation": "Cheapfakes use genuine images or videos but change their meaning through false captions, editing or speed changes."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--09",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "ai-images",
+        "tells",
+        "photos"
+      ],
+      "title": "AI images may give clues in hands, text, backgrounds and too-perfect skin",
+      "body": "When you suspect an image was made by AI, some places are worth a close look.\n\nCheck hands and fingers, jewellery and glasses, which may merge or bend oddly. Look at any writing in the scene: signs, labels and badges may be jumbled. Backgrounds can hide warped buildings, people with smudged faces or objects that blend into each other. Skin may look waxy or airbrushed, and lighting can be unusually dramatic, like a movie poster.\n\nSome of these clues are now uncommon, and real photos can have odd details too. So treat any clue as a reason to investigate, never as final proof either way.",
+      "apply_it": "Zoom in on the background of the next viral image you see. Check signs, faces and edges for anything that does not make sense.",
+      "quiz": {
+        "question": "What should you do if you spot jumbled writing on a sign in an image?",
+        "options": [
+          "Treat it as a reason to check further",
+          "Decide it is definitely AI-made",
+          "Decide it is definitely real",
+          "Share it with the word fake"
+        ],
+        "answer": 0,
+        "explanation": "Odd details are clues, not proof. They tell you to investigate the source, since real photos can also look strange."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--10",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "reverse-image-search",
+        "photos",
+        "verification"
+      ],
+      "title": "Reverse image search shows where else a picture has appeared online",
+      "body": "A reverse image search lets you search using a picture instead of words. Many common search engines offer it, often through a camera or image icon in the search bar, or by pressing on an image on your phone.\n\nUpload the picture or paste its link, and the tool shows similar images and pages where it appears. This can reveal that a photo is years old, comes from a different event, was taken from a stock photo site, or first appeared on a joke account.\n\nIf an image is brand new and appears nowhere else, that does not make it fake, but it does mean you should wait for trusted confirmation before believing or sharing it.",
+      "apply_it": "Practise once today: take any photo from a news site and run a reverse image search on it to learn the steps.",
+      "quiz": {
+        "question": "What can a reverse image search help you discover?",
+        "options": [
+          "The photographer's home address",
+          "Whether the photo has appeared before, and where",
+          "If the people in it are happy",
+          "The exact camera settings used"
+        ],
+        "answer": 1,
+        "explanation": "Reverse image search finds earlier copies and similar images, revealing a photo's age, origin or original context."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--11",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "voice-cloning",
+        "scams",
+        "audio"
+      ],
+      "title": "A short recording can be enough for AI to copy someone's voice",
+      "body": "Voice cloning tools can learn to imitate a person's voice from a fairly small amount of audio. Voices are easy to find: social media videos, voicemail greetings, online talks and even a short phone chat.\n\nA cloned voice can say anything the scammer types. It can sound like your child, parent, boss or bank manager. Over a phone line, where sound quality is already poor, small flaws are easy to miss.\n\nThis does not mean every unexpected call is fake. It means that hearing a familiar voice is no longer enough proof on its own, especially when the call involves money, secrets or panic.",
+      "apply_it": "Review which of your videos with your voice are public, and consider limiting who can see them.",
+      "quiz": {
+        "question": "Why is a familiar voice on the phone no longer enough proof?",
+        "options": [
+          "Voice cloning tools can copy a voice from a small amount of audio",
+          "Phones change everyone's voice",
+          "People's voices change every day",
+          "Calls are always recorded"
+        ],
+        "answer": 0,
+        "explanation": "AI can imitate voices from short recordings found online, so a familiar-sounding voice should not be trusted on its own for urgent requests."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--12",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "voice-cloning",
+        "scams",
+        "family"
+      ],
+      "title": "Voice-clone scams usually pair a familiar voice with a sudden crisis",
+      "body": "The typical script goes like this. The phone rings. A voice that sounds like your grandson, daughter or partner says they are in trouble: an accident, an arrest, a lost wallet abroad. They are crying or rushed. Then someone else may take over, claiming to be a lawyer or police officer, asking for money fast.\n\nThere is usually a request for secrecy: do not tell Mum, she will be angry. And payment is often asked for in ways that are hard to reverse, such as gift cards, cryptocurrency or money transfer services.\n\nPanic, secrecy and unusual payment methods together are a strong warning sign, whoever seems to be calling.",
+      "apply_it": "Share this script with your family so everyone recognises it if it ever happens.",
+      "quiz": {
+        "question": "Which combination is a strong warning sign of a voice-clone scam?",
+        "options": [
+          "A calm call to say hello",
+          "A call reminding you of a birthday",
+          "A call from a known number about dinner plans",
+          "A panicked call asking for secret, urgent payment by gift cards"
+        ],
+        "answer": 3,
+        "explanation": "Scams often combine fear, urgency, secrecy and hard-to-trace payment. Those together should make you stop and verify."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--13",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "code-word",
+        "family",
+        "safety"
+      ],
+      "title": "A family code word gives you a quick way to test an emergency call",
+      "body": "One of the simplest defences against voice cloning is a family code word. It is a private word or phrase that only your close family knows, agreed in person.\n\nIf someone calls claiming to be a relative in trouble, ask for the code word. A real family member will know it. A scammer with a cloned voice will not, and will usually try to dodge the question or pile on more pressure.\n\nChoose something that cannot be guessed from social media: not a pet's name or a birthday. Never post it or text it. Remind everyone, including children and grandparents, that a real emergency still leaves time to say one word.",
+      "apply_it": "At the next family meal, agree a code word together and make sure everyone can remember it.",
+      "quiz": {
+        "question": "What makes a good family code word?",
+        "options": [
+          "Your pet's name, because it is easy",
+          "A private word that cannot be guessed from social media",
+          "Your house number",
+          "Something you post online so everyone remembers"
+        ],
+        "answer": 1,
+        "explanation": "A code word works only if outsiders cannot guess or find it. Avoid details visible online, and agree it face to face."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--14",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "verification",
+        "phone",
+        "habits"
+      ],
+      "title": "Hang up and call back on a number you already know is real",
+      "body": "If a call or message asks for money or personal details, there is one move that beats almost every trick: end the contact and reach the person or organisation another way.\n\nCall your relative on their usual number. Phone your bank using the number on the back of your card or its official website, not a number given in the message. Message your boss on the usual work channel.\n\nScammers can fake caller ID so a call looks like it comes from a real number. That is why you call back, rather than trusting what appears on the screen. A genuine person or organisation will understand. Only a scammer insists you stay on the line.",
+      "apply_it": "Save the real numbers of your bank and closest family in your phone today, so you can call back without searching.",
+      "quiz": {
+        "question": "Why should you call back on a number you already know rather than trust caller ID?",
+        "options": [
+          "Caller ID can be faked to look genuine",
+          "Caller ID shows the caller's mood",
+          "Calling back is always free",
+          "Banks never use phones"
+        ],
+        "answer": 0,
+        "explanation": "Scammers can spoof caller ID. Calling back on a number you trust ensures you reach the real person or organisation."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--15",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "screenshots",
+        "quotes",
+        "text"
+      ],
+      "title": "Screenshots and quotes are easy to fake, so find the original",
+      "body": "A screenshot of a shocking post, a text conversation or a news headline can be made in minutes. Editing tools and AI can change words, names and dates while keeping the look perfect.\n\nQuotes are faked too. A wise saying might be pinned on a famous historical figure who never said it, or a politician's words might be invented or cut short.\n\nBefore believing, look for the original. Search the exact words in quotation marks. Check the person's official account or a reliable news report. If a screenshot claims a post exists but you cannot find it anywhere, be very cautious. It may have been deleted, or it may never have existed.",
+      "apply_it": "Next time you see a quote shared as an image, search the exact words to see if a reliable source confirms who said it.",
+      "quiz": {
+        "question": "A screenshot claims a public figure posted something outrageous, but you cannot find the post anywhere. What should you do?",
+        "options": [
+          "Share it quickly before it disappears",
+          "Assume it must be real",
+          "Be cautious, since it may be edited or invented",
+          "Add your own comment and repost"
+        ],
+        "answer": 2,
+        "explanation": "Screenshots are easy to fake. If the original cannot be found or confirmed by reliable sources, treat the claim with caution."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--16",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "sources",
+        "credibility",
+        "verification"
+      ],
+      "title": "Ask who is behind a claim and what they might gain from it",
+      "body": "Before deciding whether to believe something, find out who is telling you. Is it a known news organisation, a government agency, a scientist, a company, an anonymous account or a website you have never heard of?\n\nThen ask what they might gain. Are they selling something? Trying to win votes? Earning money from clicks? Having a motive does not make a claim false, but it tells you to look for confirmation from people without that interest.\n\nCheck the about page of unfamiliar websites. Look for real names, a physical address, a way to contact them and a record of correcting mistakes. Fake sites often copy the look of real ones, with slightly changed names or web addresses.",
+      "apply_it": "Visit the about page of one website you read often and see what it says about who runs it.",
+      "quiz": {
+        "question": "What is a useful first question when you meet a surprising claim?",
+        "options": [
+          "How many likes does it have?",
+          "Who is behind it and what might they gain?",
+          "Is the picture colourful?",
+          "Is it written in capital letters?"
+        ],
+        "answer": 1,
+        "explanation": "Knowing who made a claim and their possible motives helps you judge it and know where to seek independent confirmation."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--17",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "lateral-reading",
+        "verification",
+        "skills"
+      ],
+      "title": "Lateral reading means leaving the page to see what others say about it",
+      "body": "When people judge a website, many stay on that page and study it: does it look professional, does it sound sure? But a fake site can look slick and sound confident.\n\nProfessional fact-checkers do something different, often called lateral reading. They open new tabs and search for the website, the author or the claim itself, to see what independent sources say. Within a minute, they may learn that the site is run by a lobby group, or the claim was debunked last year.\n\nIt feels backwards, leaving a page to understand it. But reading sideways across several sources is faster and more reliable than reading deeply on one source you cannot yet trust.",
+      "apply_it": "Pick an unfamiliar website or author today and search their name in a new tab to see what others say.",
+      "quiz": {
+        "question": "What does lateral reading involve?",
+        "options": [
+          "Reading a page from right to left",
+          "Studying one website very carefully",
+          "Reading only the headlines",
+          "Opening new tabs to check what other sources say about it"
+        ],
+        "answer": 3,
+        "explanation": "Lateral reading means leaving a source to see how independent sources describe it. Fact-checkers use it because it is quick and reliable."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--18",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "sources",
+        "original",
+        "verification"
+      ],
+      "title": "Trace a claim back to where it first came from",
+      "body": "Stories online often pass through many hands. A study becomes a news article, which becomes a blog post, which becomes a video, which becomes a meme. At each step, details can get lost, stretched or twisted.\n\nSo try to find the original. If a post says scientists say, look for the actual study or a report from a trusted health or science body. If it says a government announced, check the official government website. If it quotes a news report, find that report and read it.\n\nOften the original is far less dramatic than the version that went viral. Sometimes it says something different entirely. And sometimes there is no original at all.",
+      "apply_it": "Take one claim that starts with studies show and try to find the actual study or an expert summary of it.",
+      "quiz": {
+        "question": "Why is it worth finding the original source of a claim?",
+        "options": [
+          "Details often get stretched or twisted as stories are retold",
+          "The original is always more exciting",
+          "Originals are always paid content",
+          "It makes the claim go viral"
+        ],
+        "answer": 0,
+        "explanation": "Retellings lose and distort details. The original source shows what was really said, which is often less dramatic."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--19",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "dates",
+        "context",
+        "verification"
+      ],
+      "title": "Check when and where something happened before you react",
+      "body": "An old story can be brought back to life and spread as if it is happening now. A real event in one place can be presented as if it happened in another.\n\nLook for the date on articles and posts. Be careful: the date a post was shared is not the date the event took place. Search for the event with the place name and see whether reliable reports match.\n\nIn videos and photos, look for clues about place and season: weather, signs, languages, cars, clothing or famous landmarks. A snowy scene claiming to show a summer event, or road signs in the wrong language, are signs that something does not add up.",
+      "apply_it": "Before reacting to a news story, find the date on it and check whether it describes something recent.",
+      "quiz": {
+        "question": "A post shared today shows a flood. What should you check?",
+        "options": [
+          "Only how many people shared it",
+          "Whether the flood actually happened recently and in the place claimed",
+          "The colour of the water",
+          "Nothing, today's post means today's event"
+        ],
+        "answer": 1,
+        "explanation": "The share date is not the event date. Old or out-of-place images are often recycled, so confirm when and where it happened."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--20",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "emotional-bait",
+        "psychology",
+        "outrage"
+      ],
+      "title": "Content that makes you furious or frightened is designed to stop you thinking",
+      "body": "Strong emotions are powerful tools for people who spread false information. When we feel outrage, fear or even joy, we tend to react quickly and check less.\n\nWatch for messages that seem built to make you angry at a group, terrified of a threat, or thrilled by a miracle cure or amazing deal. Phrases like they do not want you to know this, share before it is deleted, or you will not believe this are classic bait.\n\nFeeling strongly is not a sign that something is false. Real events can be upsetting. But a strong emotion is a good moment to pause, take a breath and check before reacting.",
+      "apply_it": "Notice the next post that makes you angry. Before replying or sharing, wait ten minutes and check one source.",
+      "quiz": {
+        "question": "Why should strong emotions make you more careful online?",
+        "options": [
+          "Emotional posts are always true",
+          "Emotions help you think more clearly",
+          "Strong feelings make us react quickly and check less",
+          "Only sad posts can be fake"
+        ],
+        "answer": 2,
+        "explanation": "Outrage, fear and excitement push people to act fast. False content often uses this to spread before anyone checks it."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--21",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "sharing",
+        "pause",
+        "habits"
+      ],
+      "title": "Pausing before you share is one of the most powerful habits you can build",
+      "body": "Every share is a small vote that helps a story reach more people. If it is false, you have helped it along, often to friends who trust you.\n\nResearch suggests that simply stopping to think about whether something is accurate makes people less likely to share false content. A short pause works.\n\nTry a quick check before you share: Do I know who made this? Have I read beyond the headline? Can I find a trusted source that confirms it? Would I be embarrassed if it turned out false? If you are not sure, you can always wait. Not sharing is a perfectly good choice. Nothing important is lost by waiting for confirmation.",
+      "apply_it": "Before your next share, ask yourself one question: how do I know this is true?",
+      "quiz": {
+        "question": "What does research suggest about pausing to think about accuracy?",
+        "options": [
+          "It makes people less likely to share false content",
+          "It has no effect at all",
+          "It makes people share more fakes",
+          "It only works for experts"
+        ],
+        "answer": 0,
+        "explanation": "Studies suggest a short accuracy check before sharing reduces the spread of falsehoods. A small pause makes a real difference."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--22",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "headlines",
+        "reading",
+        "clickbait"
+      ],
+      "title": "Read past the headline, because headlines can mislead",
+      "body": "Many people share articles after reading only the headline. But headlines are written to grab attention, and they often leave out important details.\n\nA headline might say a food causes cancer, while the article explains a small study in mice with mixed results. A headline might suggest a scandal while the text shows a minor disagreement. Some sites write misleading headlines on purpose to get clicks.\n\nBefore sharing or forming a strong view, open the article. Read at least the first few paragraphs. Look for who was quoted, what evidence is given, and whether the story actually supports the headline. You may find the full picture is quite different.",
+      "apply_it": "Open one article you would normally judge by its headline and read at least the first three paragraphs.",
+      "quiz": {
+        "question": "Why should you read beyond the headline before sharing?",
+        "options": [
+          "Headlines are always false",
+          "The article may be longer",
+          "Headlines are hidden in the text",
+          "Headlines can leave out details or exaggerate what the article says"
+        ],
+        "answer": 3,
+        "explanation": "Headlines are designed to attract attention and can exaggerate or oversimplify. The article often tells a more careful story."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--23",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "fake-accounts",
+        "impersonation",
+        "social-media"
+      ],
+      "title": "Fake accounts can pose as people, officials or brands to look trustworthy",
+      "body": "Not every account is what it seems. Some pretend to be a celebrity, a government agency, a charity or a company. Others pose as ordinary people to make an idea look more popular than it is. Automated accounts, often called bots, can post and reshare at huge volume.\n\nClues include a very new account, few real followers, a name with odd spelling, a profile photo that looks too perfect or appears elsewhere, and posts that repeat the same message as many other accounts.\n\nWhen something important comes from an account, check it against the organisation's official website. Real organisations usually link to their genuine social media pages from there.",
+      "apply_it": "Look at an account that shared something surprising with you, and check when it was created and what else it posts.",
+      "quiz": {
+        "question": "How can you check whether an account really belongs to an organisation?",
+        "options": [
+          "Trust it if it has a logo",
+          "Trust it if it posts often",
+          "Ask the account if it is real",
+          "Look for a link to it on the organisation's official website"
+        ],
+        "answer": 3,
+        "explanation": "Logos and names are easy to copy. Official websites usually link to genuine accounts, which helps you confirm who you are dealing with."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--24",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "fact-checkers",
+        "tools",
+        "verification"
+      ],
+      "title": "Fact-checking organisations can save you time on popular claims",
+      "body": "When a claim spreads widely, there is a good chance someone has already investigated it. Independent fact-checking organisations research viral posts, quotes and images and publish what they find, along with their evidence.\n\nA quick way to use them is to search the claim with the words fact check. You may find several checks within seconds. Look for fact-checkers that explain their methods, show their sources and correct their own mistakes.\n\nFact-checkers can get things wrong too, and some topics are genuinely uncertain. Seeing what two or three reliable sources say, and what evidence they give, is better than relying on any single verdict.",
+      "apply_it": "Search one claim you have seen recently, adding the words fact check, and see what comes up.",
+      "quiz": {
+        "question": "What is a quick way to see if a viral claim has been investigated?",
+        "options": [
+          "Search the claim with the words fact check",
+          "Wait for it to become popular",
+          "Ask in the comments",
+          "Look at how many emojis it has"
+        ],
+        "answer": 0,
+        "explanation": "Searching a claim plus fact check often brings up investigations from independent fact-checkers who show their evidence."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--25",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "numbers",
+        "charts",
+        "statistics"
+      ],
+      "title": "Numbers and charts can mislead even when every figure is true",
+      "body": "Statistics look solid and scientific, which makes them persuasive. But true numbers can still tell a false story.\n\nA chart can start its scale above zero, making a small change look huge. A claim might say cases doubled, when they went from two to four. Risk can be shown as a big percentage rise without saying the original risk was tiny. Averages can hide wide differences, and a single unusual example can be presented as normal.\n\nAsk simple questions: compared with what? Out of how many? Over what time period? Who collected the data? A trustworthy source will usually give you the context, not just the eye-catching figure.",
+      "apply_it": "Look at the next chart you see and check whether the scale starts at zero and how big the real change is.",
+      "quiz": {
+        "question": "A post says a risk has doubled. What should you ask?",
+        "options": [
+          "What colour is the chart?",
+          "Is the writer famous?",
+          "What was the original risk, and doubled from what to what?",
+          "Has the post got many likes?"
+        ],
+        "answer": 2,
+        "explanation": "A doubled risk can still be very small. Asking for the starting figure and context reveals whether the change really matters."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--26",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "bias",
+        "psychology",
+        "self-awareness"
+      ],
+      "title": "We all believe things more easily when they fit what we already think",
+      "body": "Our brains like information that agrees with us. This is often called confirmation bias, and everyone has it, whatever their politics or education.\n\nIt means we check stories we dislike very carefully, but wave through stories that support our side. People spreading false information know this, and they often aim content at what particular groups already believe or fear.\n\nA useful test is to imagine the same story about the other side. Would you accept it so quickly? If not, apply the same checks to the story you like. Being willing to say I was wrong about that is a strength, not a weakness.",
+      "apply_it": "Pick a recent story you agreed with instantly, and check it as carefully as you would one you disagreed with.",
+      "quiz": {
+        "question": "What is confirmation bias?",
+        "options": [
+          "A rule that news must be confirmed twice",
+          "A type of computer virus",
+          "A way of checking bank payments",
+          "Our tendency to accept information that fits what we already believe"
+        ],
+        "answer": 3,
+        "explanation": "Confirmation bias makes us trust agreeable information too easily. Checking stories we like as carefully as ones we dislike helps counter it."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--27",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "labels",
+        "watermarks",
+        "technology"
+      ],
+      "title": "Labels and watermarks for AI content help but cannot catch everything",
+      "body": "Some AI tools add hidden watermarks or labels to what they create, and some platforms tag content as AI-generated. Some cameras and publishers attach records showing where a photo came from and whether it was edited.\n\nThese are useful steps. If a label says something is AI-made, take that seriously. But the reverse is not true. Missing labels prove nothing, since many tools add none, and labels can sometimes be stripped away when files are copied or edited.\n\nAI-detection tools exist too, but they make mistakes in both directions, calling real things fake and fake things real. Treat them as one clue among several, not a final answer.",
+      "apply_it": "If you see an AI label on a post, look at what it says. If there is no label, remember that tells you nothing either way.",
+      "quiz": {
+        "question": "What does it mean if an image has no AI label?",
+        "options": [
+          "It is definitely a real photo",
+          "It is definitely AI-made",
+          "Nothing certain, since many tools add no label",
+          "It is illegal"
+        ],
+        "answer": 2,
+        "explanation": "Labels are helpful when present, but many AI tools add none and labels can be removed. A missing label is not proof of authenticity."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--28",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "conversations",
+        "kindness",
+        "family"
+      ],
+      "title": "Correct friends kindly and privately, without making them feel foolish",
+      "body": "When a friend or relative shares something false, it is tempting to reply publicly with that is fake. But people who feel embarrassed often dig in and defend the claim.\n\nA gentler approach usually works better. Send a private message. Start with what you share: I know you care about the family's health too. Then offer what you found: I looked this up and a few reliable sites say it is not true, here is one. Keep it short and calm.\n\nYou may not change their mind straight away, and that is fine. Staying respectful keeps the door open, and people often reconsider quietly later. Your goal is to help, not to win.",
+      "apply_it": "Write a short, kind template message you could send privately next time someone shares something false.",
+      "quiz": {
+        "question": "What is usually the best way to correct someone who shared something false?",
+        "options": [
+          "Mock them in the comments",
+          "Send a calm, private message with a reliable source",
+          "Block them immediately",
+          "Share the false post again with angry words"
+        ],
+        "answer": 1,
+        "explanation": "Public correction can make people defensive. A kind, private message with evidence is more likely to be heard."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--29",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "older-relatives",
+        "family",
+        "scams"
+      ],
+      "title": "Help older relatives with patient practice, not lectures",
+      "body": "Older people are often targeted by scams that use fake voices, fake officials or fake emergencies, partly because scammers assume they have savings and are less familiar with new technology. Anyone can fall for these tricks, but a little support goes a long way.\n\nSit down together rather than sending a warning link. Show them an example of a fake. Agree a family code word. Practise what to say: I will call you back. Save trusted numbers in their phone. Make it clear they can always ring you to check, at any hour, and that you will never be cross.\n\nShame keeps people quiet. Warmth makes them more likely to ask before acting.",
+      "apply_it": "Call an older relative this week, share the hang-up-and-call-back rule, and tell them they can always check with you.",
+      "quiz": {
+        "question": "What is the best way to help an older relative avoid AI-driven scams?",
+        "options": [
+          "Patient practice together and a promise they can always check with you",
+          "Tell them they are too old for the internet",
+          "Take away their phone",
+          "Send them a long article and hope they read it"
+        ],
+        "answer": 0,
+        "explanation": "Warm, practical support, like practising responses and agreeing a code word, works better than lectures and keeps them willing to ask for help."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--30",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "children",
+        "young-people",
+        "family"
+      ],
+      "title": "Teach young people to question what they see, not to fear the internet",
+      "body": "Children and teenagers spend a lot of time online and are growing up with AI-made content all around them. They are often quick with technology but can still be fooled, especially by content made to look like it comes from friends or favourite creators.\n\nRather than banning everything, build curiosity. Play a game of real or fake with images. Ask: who made this, and why? Talk about how videos can be edited and voices copied. Share times you were fooled yourself.\n\nAlso make sure they know they can come to you if someone sends them something upsetting or threatening, including fake images of themselves. They will not be in trouble for asking.",
+      "apply_it": "Ask a young person in your life to show you a video they like, and talk together about how you could tell if it is real.",
+      "quiz": {
+        "question": "What approach helps young people handle fakes best?",
+        "options": [
+          "Banning all screens forever",
+          "Telling them everything online is fake",
+          "Building curiosity and asking who made content and why",
+          "Letting them work it out alone"
+        ],
+        "answer": 2,
+        "explanation": "Curiosity and open conversation teach lasting checking skills and keep young people willing to ask for help."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--31",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "mistakes",
+        "corrections",
+        "honesty"
+      ],
+      "title": "If you shared something false, correcting it openly builds trust",
+      "body": "Everyone gets fooled sometimes, including journalists and experts. What matters is what you do next.\n\nIf you find out you shared something false, delete it or add a clear correction. A short note like I shared this earlier, but it turns out to be false, here is a reliable source, helps undo the harm. If you sent it to a group chat, tell that group too.\n\nCorrecting yourself is not embarrassing. It shows people you care about the truth, which makes them trust you more. It also models a good habit for everyone who sees it, and it may stop the falsehood from travelling further through your friends.",
+      "apply_it": "Look back at your recent shares. If anything turned out to be false, post a short correction today.",
+      "quiz": {
+        "question": "What should you do if you realise you shared something false?",
+        "options": [
+          "Hope nobody noticed",
+          "Argue that it might still be true",
+          "Share more posts to bury it",
+          "Delete it or post a clear correction with a reliable source"
+        ],
+        "answer": 3,
+        "explanation": "A clear correction limits harm, shows you value truth and encourages others to do the same."
+      }
+    },
+    {
+      "id": "ai-spot-fakes-and-misinformation--32",
+      "topic": "ai-skills",
+      "tags": [
+        "misinformation",
+        "wrap-up",
+        "habits",
+        "verification"
+      ],
+      "title": "A calm routine of pause, check and confirm keeps you ahead of the fakes",
+      "body": "Fakes will keep getting better, but you do not need to win a race against technology. You need a steady routine.\n\nPause when something makes you feel a rush of emotion. Check who is behind it, read sideways across other sources, and trace the claim to its origin. Use reverse image search for pictures, and look for the date and place. Confirm urgent calls by hanging up and calling back, or asking for your family code word. Share only when you are confident, and correct yourself kindly if you get it wrong.\n\nTeach these habits to the people you love. Each person who pauses before sharing makes the whole web a little more honest.",
+      "apply_it": "Write the words pause, check, confirm on a note near where you use your phone, as a daily reminder.",
+      "quiz": {
+        "question": "Which routine best protects you from fakes?",
+        "options": [
+          "Trust anything with a familiar face",
+          "Pause, check the source and confirm before acting or sharing",
+          "Share first and check later",
+          "Rely only on spotting visual flaws"
+        ],
+        "answer": 1,
+        "explanation": "Pausing, checking sources and confirming through trusted channels works no matter how convincing fakes become."
+      }
+    }
+  ]
+}

@@ -1266,3 +1266,95 @@ id = "clarity-stop-misunderstandings"
 adapter = "summary"
 url = "https://digital.gov/guides/plain-language"
 licence = "original-summary"
+
+# Gap-filling guides (2026-10-17): Science & Nature, Mental Health, Crime & Society, AI & Future Skills.
+
+[[source]]
+id = "ai-work-alongside-ai"
+adapter = "summary"
+url = "https://www.nist.gov/itl/ai-risk-management-framework"
+licence = "original-summary"
+
+[[source]]
+id = "ai-use-ai-safely"
+adapter = "summary"
+url = "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+licence = "original-summary"
+
+[[source]]
+id = "science-everyday-things"
+adapter = "summary"
+url = "https://www.britannica.com/science/physics-science"
+licence = "original-summary"
+
+[[source]]
+id = "science-think-like-a-scientist"
+adapter = "summary"
+url = "https://undsci.berkeley.edu/"
+licence = "original-summary"
+
+[[source]]
+id = "ai-how-ai-works"
+adapter = "summary"
+url = "https://www.britannica.com/technology/artificial-intelligence"
+licence = "original-summary"
+
+[[source]]
+id = "ai-spot-fakes-and-misinformation"
+adapter = "summary"
+url = "https://www.unesco.org/en/media-information-literacy"
+licence = "original-summary"
+
+[[source]]
+id = "mental-health-understand-depression"
+adapter = "summary"
+url = "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/"
+licence = "original-summary"
+
+[[source]]
+id = "mental-health-look-after-your-mind"
+adapter = "summary"
+url = "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/"
+licence = "original-summary"
+
+[[source]]
+id = "mental-health-help-someone-struggling"
+adapter = "summary"
+url = "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide"
+licence = "original-summary"
+
+[[source]]
+id = "science-how-your-body-works"
+adapter = "summary"
+url = "https://training.seer.cancer.gov/anatomy/body/"
+licence = "original-summary"
+
+[[source]]
+id = "science-the-living-world"
+adapter = "summary"
+url = "https://www.ipbes.net/global-assessment"
+licence = "original-summary"
+
+[[source]]
+id = "science-our-changing-planet"
+adapter = "summary"
+url = "https://science.nasa.gov/climate-change/evidence/"
+licence = "original-summary"
+
+[[source]]
+id = "crime-stay-safe-online"
+adapter = "summary"
+url = "https://www.ncsc.gov.uk/cyberaware/home"
+licence = "original-summary"
+
+[[source]]
+id = "crime-why-people-commit-crime"
+adapter = "summary"
+url = "https://www.britannica.com/topic/criminology"
+licence = "original-summary"
+
+[[source]]
+id = "crime-how-justice-works"
+adapter = "summary"
+url = "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/"
+licence = "original-summary"
