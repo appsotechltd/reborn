@@ -1460,20 +1460,196 @@ class Summary {
   );
 }
 
-/// GET /v1/summaries/{id}: the summary and its parts in reading order.
+/// GET /v1/summaries/{id}: the summary and its parts in reading order, and
+/// its place in a subject when it is one of that subject's guides.
 class SummaryDetail {
-  const SummaryDetail({required this.summary, required this.parts});
+  const SummaryDetail({
+    required this.summary,
+    required this.parts,
+    this.subject,
+  });
   final Summary summary;
   final List<IdeaCard> parts;
+  final SubjectStep? subject;
 
   factory SummaryDetail.fromJson(Map<String, dynamic> json) => SummaryDetail(
     summary: Summary.fromJson(json),
     parts: parseCards(json['parts']),
+    subject: json['subject'] is Map<String, dynamic>
+        ? SubjectStep.fromJson(json['subject'] as Map<String, dynamic>)
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
     ...summary.toJson(),
     'parts': parts.map((c) => c.toJson()).toList(),
+    if (subject != null) 'subject': subject!.toJson(),
+  };
+}
+
+/// A summary named briefly: the guide after this one in its subject.
+class SubjectRef {
+  const SubjectRef({required this.id, required this.title});
+  final String id;
+  final String title;
+
+  factory SubjectRef.fromJson(Map<String, dynamic> json) => SubjectRef(
+    id: json['id'] as String? ?? '',
+    title: json['title'] as String? ?? '',
+  );
+
+  Map<String, dynamic> toJson() => {'id': id, 'title': title};
+}
+
+/// Where a summary sits in its subject: guide [step] (one-based) of
+/// [count], and the guide after it ([next] is null on the last one).
+class SubjectStep {
+  const SubjectStep({
+    required this.id,
+    required this.title,
+    required this.step,
+    required this.count,
+    this.next,
+  });
+  final String id;
+  final String title;
+  final int step;
+  final int count;
+  final SubjectRef? next;
+
+  bool get isLast => next == null;
+
+  /// "Guide 2 of 7 · Communication Clarity".
+  String get label => 'Guide $step of $count · $title';
+
+  factory SubjectStep.fromJson(Map<String, dynamic> json) => SubjectStep(
+    id: json['id'] as String? ?? '',
+    title: json['title'] as String? ?? '',
+    step: (json['step'] as num?)?.toInt() ?? 1,
+    count: (json['count'] as num?)?.toInt() ?? 1,
+    next: json['next'] is Map<String, dynamic>
+        ? SubjectRef.fromJson(json['next'] as Map<String, dynamic>)
+        : null,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'title': title,
+    'step': step,
+    'count': count,
+    if (next != null) 'next': next!.toJson(),
+  };
+}
+
+/// How far the signed-in reader is through a subject: [finished] guides
+/// done, and the guide to continue with ([nextSummaryId], null when done).
+class SubjectProgress {
+  const SubjectProgress({
+    this.started = false,
+    this.finished = 0,
+    this.done = false,
+    this.nextSummaryId,
+  });
+  final bool started;
+  final int finished;
+  final bool done;
+  final String? nextSummaryId;
+
+  factory SubjectProgress.fromJson(Map<String, dynamic> json) =>
+      SubjectProgress(
+        started: json['started'] as bool? ?? false,
+        finished: (json['finished'] as num?)?.toInt() ?? 0,
+        done: json['done'] as bool? ?? false,
+        nextSummaryId: json['next_summary_id'] as String?,
+      );
+
+  Map<String, dynamic> toJson() => {
+    'started': started,
+    'finished': finished,
+    'done': done,
+    if (nextSummaryId != null) 'next_summary_id': nextSummaryId,
+  };
+}
+
+/// A subject: a short course of guides (each a summary) to follow one after
+/// the other, like Communication Clarity under Life Guides.
+class Subject {
+  const Subject({
+    required this.id,
+    required this.title,
+    this.description = '',
+    this.topics = const [],
+    this.guideCount = 0,
+    this.partCount = 0,
+    this.minutes = 0,
+    this.cover,
+    this.viewer,
+  });
+
+  final String id;
+  final String title;
+  final String description;
+  final List<String> topics;
+  final int guideCount;
+  final int partCount;
+  final int minutes;
+
+  /// The first guide's cover picture, when it has one.
+  final CardImage? cover;
+
+  /// Present only when signed in.
+  final SubjectProgress? viewer;
+
+  /// "7 guides · 60 min".
+  String get meta =>
+      '$guideCount ${guideCount == 1 ? 'guide' : 'guides'} · $minutes min';
+
+  factory Subject.fromJson(Map<String, dynamic> json) => Subject(
+    id: json['id'] as String? ?? '',
+    title: json['title'] as String? ?? '',
+    description: json['description'] as String? ?? '',
+    topics: _stringList(json['topics']),
+    guideCount: (json['guide_count'] as num?)?.toInt() ?? 0,
+    partCount: (json['part_count'] as num?)?.toInt() ?? 0,
+    minutes: (json['minutes'] as num?)?.toInt() ?? 0,
+    cover: json['cover'] is Map<String, dynamic>
+        ? CardImage.fromJson(json['cover'] as Map<String, dynamic>)
+        : null,
+    viewer: json['viewer'] is Map<String, dynamic>
+        ? SubjectProgress.fromJson(json['viewer'] as Map<String, dynamic>)
+        : null,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'title': title,
+    'description': description,
+    'topics': topics,
+    'guide_count': guideCount,
+    'part_count': partCount,
+    'minutes': minutes,
+    if (cover != null) 'cover': cover!.toJson(),
+    if (viewer != null) 'viewer': viewer!.toJson(),
+  };
+}
+
+/// GET /v1/subjects/{id}: the subject and its guides in order.
+class SubjectDetail {
+  const SubjectDetail({required this.subject, required this.guides});
+  final Subject subject;
+  final List<Summary> guides;
+
+  factory SubjectDetail.fromJson(Map<String, dynamic> json) => SubjectDetail(
+    subject: Subject.fromJson(json),
+    guides: (json['guides'] as List? ?? const [])
+        .whereType<Map<String, dynamic>>()
+        .map(Summary.fromJson)
+        .toList(),
+  );
+
+  Map<String, dynamic> toJson() => {
+    ...subject.toJson(),
+    'guides': guides.map((s) => s.toJson()).toList(),
   };
 }
 
