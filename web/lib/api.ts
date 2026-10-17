@@ -48,6 +48,8 @@ import type {
   SummariesResponse,
   SummaryDetail,
   SummaryProgress,
+  Subject,
+  SubjectDetail,
   TimelineResponse,
   Topic,
   User,
@@ -329,6 +331,9 @@ export function createApiClient(
         body: { position, finished },
         keepalive: true,
       }),
+    // Subjects: courses of guides (viewer progress when signed in)
+    subjects: (q: { topic?: string } = {}) => req<{ subjects: Subject[] }>("/v1/subjects", { query: q }).then((r) => r.subjects),
+    subject: (id: string) => req<SubjectDetail>(`/v1/subjects/${enc(id)}`),
     markSeen: (postIds: string[]) =>
       req<void>("/v1/seen", { method: "POST", body: { post_ids: postIds }, keepalive: true }),
     post: (id: string) => req<Post>(`/v1/posts/${enc(id)}`),

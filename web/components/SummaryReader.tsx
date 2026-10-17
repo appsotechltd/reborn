@@ -6,6 +6,7 @@ import { useAuth } from "@/lib/auth";
 import { useListenFollow, useListenMove } from "@/lib/listen";
 import { itemsFromCards } from "@/lib/listen-player";
 import { smoothScroll } from "@/lib/use-snap-feed";
+import { subjectHref } from "@/lib/subjects";
 import { localProgress, resumeIndex, saveLocalProgress, summaryHref } from "@/lib/summaries";
 import type { SummaryDetail } from "@/lib/types";
 import { CardView } from "./CardView";
@@ -274,6 +275,7 @@ function Finished({
   onRestart: () => void;
   onReadAll?: () => void;
 }) {
+  const subject = summary.subject;
   return (
     <section aria-label="Finished" className="panel mx-auto mt-6 max-w-read px-6 py-8 text-center" data-summary-finished>
       <p className="font-serif text-2xl font-semibold">You&apos;ve finished {summary.title}</p>
@@ -294,10 +296,33 @@ function Finished({
             About the book
           </Link>
         ) : null}
-        <Link href="/summaries" className="btn btn-primary">
-          More summaries
-        </Link>
+        {subject ? null : (
+          <Link href="/summaries" className="btn btn-primary">
+            More summaries
+          </Link>
+        )}
       </div>
+      {subject ? (
+        <div className="mt-6 border-t border-line pt-6" data-subject-next>
+          <p className="text-sm text-muted">
+            Guide {subject.step} of {subject.count} in{" "}
+            <Link href={subjectHref(subject.id)} className="link">
+              {subject.title}
+            </Link>
+          </p>
+          {subject.next ? (
+            <Link href={summaryHref(subject.next.id)} className="btn btn-primary mt-3 max-w-full">
+              <span className="min-w-0 truncate">Next guide: {subject.next.title}</span>
+              <Icon name="arrowForward" className="size-5" />
+            </Link>
+          ) : (
+            <Link href={subjectHref(subject.id)} className="btn btn-primary mt-3 max-w-full">
+              <Icon name="arrowBack" className="size-5" />
+              <span className="min-w-0 truncate">Back to {subject.title}</span>
+            </Link>
+          )}
+        </div>
+      ) : null}
     </section>
   );
 }

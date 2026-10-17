@@ -498,6 +498,52 @@ export interface Summary {
 /** GET /v1/summaries/{id}: the summary with its parts in reading order. */
 export interface SummaryDetail extends Summary {
   parts: Card[];
+  /** The subject this guide is one step of, when it is one. */
+  subject?: SubjectStep | null;
+}
+
+// --- Subjects: short courses of guides, followed in order -----------------------
+
+/** How far the signed-in reader is through a subject. */
+export interface SubjectProgress {
+  started: boolean;
+  /** Guides finished. */
+  finished: number;
+  /** Every guide finished. */
+  done: boolean;
+  /** The first guide not finished yet (absent once done). */
+  next_summary_id?: string;
+}
+
+/** A short course: guides (each a summary) meant to be read one after the other. */
+export interface Subject {
+  id: string;
+  title: string;
+  description: string;
+  topics: string[];
+  guide_count: number;
+  part_count: number;
+  minutes: number;
+  /** The first guide's cover picture, when it has one. */
+  cover?: CardImage | null;
+  /** Absent when signed out. */
+  viewer?: SubjectProgress | null;
+}
+
+/** GET /v1/subjects/{id}: the subject with its guides in reading order. */
+export interface SubjectDetail extends Subject {
+  guides: Summary[];
+}
+
+/** Where a summary sits in its subject: "Guide 2 of 7", and the guide after it. */
+export interface SubjectStep {
+  id: string;
+  title: string;
+  /** One-based. */
+  step: number;
+  count: number;
+  /** Absent on the last guide. */
+  next?: { id: string; title: string } | null;
 }
 
 export interface SummariesResponse {

@@ -17,6 +17,8 @@ import type {
   SitemapResponse,
   Summary,
   SummaryDetail,
+  Subject,
+  SubjectDetail,
   TimelineResponse,
   Topic,
 } from "./types";
@@ -72,6 +74,17 @@ export const getFeed = (q: { topics?: string; cursor?: string; limit?: number } 
   get<FeedResponse>("/v1/feed", q);
 export const getSitemap = () => get<SitemapResponse>("/v1/sitemap");
 export const getSummary = (id: string) => orNull(get<SummaryDetail>(`/v1/summaries/${encodeURIComponent(id)}`));
+export const getSubject = (id: string) => orNull(get<SubjectDetail>(`/v1/subjects/${encodeURIComponent(id)}`));
+
+/** The subjects (courses of guides), those in `topic` when given. An API without subjects has none. */
+export async function getSubjects(topic?: string): Promise<Subject[]> {
+  try {
+    return (await get<{ subjects: Subject[] }>("/v1/subjects", { topic })).subjects ?? [];
+  } catch (err) {
+    if (isApiError(err) && err.status === 404) return [];
+    throw err;
+  }
+}
 
 /** Every summary (topic summaries first, then books by title), following cursors. */
 export async function getAllSummaries(max = 500): Promise<Summary[]> {

@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { breadcrumbsJsonLd, JsonLd } from "@/components/JsonLd";
 import { ShareMenu } from "@/components/ShareMenu";
+import { SubjectStepLink } from "@/components/Subjects";
 import { SummaryCover } from "@/components/SummaryPost";
 import { SummaryReader, type SummaryView } from "@/components/SummaryReader";
 import { Unavailable } from "@/components/Unavailable";
 import { getSitemap, getSummary, loadOr } from "@/lib/server-api";
 import { siteUrl } from "@/lib/config";
+import { subjectHref } from "@/lib/subjects";
 import { coverageLabel, summaryByline } from "@/lib/summaries";
 
 export const revalidate = 600;
@@ -88,8 +90,14 @@ export default async function SummaryPage({
           })),
         }}
       />
-      <JsonLd data={breadcrumbsJsonLd(base, [["Summaries", "/summaries"], [data.title, `/summaries/${data.id}`]])} />
+      <JsonLd
+        data={breadcrumbsJsonLd(base, [
+          data.subject ? [data.subject.title, subjectHref(data.subject.id)] : ["Summaries", "/summaries"],
+          [data.title, `/summaries/${data.id}`],
+        ])}
+      />
       <header className="mx-auto max-w-read">
+        {data.subject ? <SubjectStepLink step={data.subject} /> : null}
         <SummaryCover summary={data} headingLevel="h1" />
         <p className="mt-4 text-lg leading-relaxed text-fg-2">{data.description}</p>
         <div className="mt-3">

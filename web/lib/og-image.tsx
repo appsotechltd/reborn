@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 import { excerpt, formatAuthors, TOPICS } from "./content";
 import { SITE_NAME, SITE_TAGLINE } from "./config";
-import { getAuthor, getCard, getSource, getSummary, getTopics, loadOr } from "./server-api";
+import { getAuthor, getCard, getSource, getSubject, getSummary, getTopics, loadOr } from "./server-api";
+import { subjectMeta } from "./subjects";
 import { coverageLabel, summaryByline } from "./summaries";
 
 export const OG_SIZE = { width: 1200, height: 630 };
@@ -140,5 +141,17 @@ export async function summaryImage(id: string): Promise<ImageResponse> {
     title: data.title,
     text: data.description,
     footer: `${data.part_count} one-minute parts${by ? ` · ${by}` : ""}`,
+  });
+}
+
+export async function subjectImage(id: string): Promise<ImageResponse> {
+  const { data } = await loadOr(() => getSubject(id), null);
+  if (!data) return siteImage();
+  const first = data.guides.slice(0, 3).map((g) => g.title);
+  return previewImage({
+    eyebrow: "Subject",
+    title: data.title,
+    text: data.description,
+    footer: `${subjectMeta(data)}${first.length ? ` · ${first.join(", ")}` : ""}`,
   });
 }
