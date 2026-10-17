@@ -16,6 +16,7 @@ RUN apk add --no-cache ca-certificates tzdata
 COPY --from=build /out/reborn /usr/local/bin/reborn
 COPY content/library /content/library
 COPY content/summaries /content/summaries
+COPY content/subjects /content/subjects
 COPY content/explainers/out/manifest.json /content/explainers/manifest.json
 COPY content/audio/out/manifest.json /content/audio/manifest.json
 COPY content/images/manifest.json content/images/posts.json /content/images/
