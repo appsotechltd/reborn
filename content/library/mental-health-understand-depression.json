@@ -1,0 +1,770 @@
+{
+  "source": {
+    "id": "mental-health-understand-depression",
+    "title": "Understand Depression",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the NHS, the National Institute of Mental Health, the World Health Organization, NICE and Mind.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: NHS, Depression in adults: overview, https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/; National Institute of Mental Health, Depression, https://www.nimh.nih.gov/health/topics/depression; World Health Organization, Depressive disorder (depression) fact sheet, https://www.who.int/news-room/fact-sheets/detail/depression; National Institute for Health and Care Excellence, Depression in adults: treatment and management (NG222), https://www.nice.org.uk/guidance/ng222; Mind, Depression, https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/about-depression/"
+  },
+  "cards": [
+    {
+      "id": "mental-health-understand-depression--01",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "overview",
+        "health",
+        "recovery"
+      ],
+      "title": "Depression is a common, real and treatable health condition",
+      "body": "This guide explains what depression is, how it differs from ordinary sadness, and what helps. It covers the signs, the many possible causes, common myths, talking therapies, the basics of medication, and everyday steps such as behavioural activation, sleep and movement.\n\nDepression is not a choice and it is not a weakness. Health bodies such as the NHS and the World Health Organization describe it as a common condition that affects hundreds of millions of people worldwide, and most people get better with the right support.\n\nThis guide is general information, not a diagnosis. If you are worried about yourself or someone else, a doctor is a good first step. If anyone is in danger right now, contact local emergency services or a crisis line.",
+      "apply_it": "Note one question you hope this guide will answer for you, and keep it in mind as you read.",
+      "quiz": {
+        "question": "Which statement about depression is most accurate?",
+        "options": [
+          "It is a sign of a weak character",
+          "It is a common health condition that usually improves with support",
+          "It only affects people with hard lives",
+          "It always goes away on its own in a week"
+        ],
+        "answer": 1,
+        "explanation": "Depression is a recognised health condition. It is common, it can affect anyone, and most people recover with the right help."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--02",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "sadness",
+        "signs",
+        "health"
+      ],
+      "title": "Sadness comes and goes, while depression lingers and spreads",
+      "body": "Everyone feels sad sometimes. A bad day at work, a row with a friend or a disappointing result can leave you low for a while. Ordinary sadness usually has a clear cause, eases with time, and still lets you enjoy some things, like a funny film or a meal with friends.\n\nDepression is different. The low mood or loss of interest lasts most of the day, nearly every day, for at least two weeks. It can show up with no obvious reason. It tends to spread into sleep, energy, appetite, work and relationships, and things that used to bring joy can feel flat or pointless.\n\nIf low feelings are sticking around and getting in the way of daily life, that is a good reason to talk to a doctor.",
+      "apply_it": "Think back over the last two weeks. On how many days did low mood or lack of interest last most of the day?",
+      "quiz": {
+        "question": "Which feature points more towards depression than ordinary sadness?",
+        "options": [
+          "Feeling down after an argument, then cheering up",
+          "Crying at a sad film",
+          "Low mood most of the day, nearly every day, for two weeks or more",
+          "Feeling disappointed about a cancelled trip"
+        ],
+        "answer": 2,
+        "explanation": "Ordinary sadness passes. Depression lasts most of the day for at least two weeks and affects many parts of life."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--03",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "signs",
+        "mood",
+        "anhedonia"
+      ],
+      "title": "The core signs are low mood and losing interest in things",
+      "body": "Doctors usually look for two main signs. The first is a low, sad, empty or hopeless mood. The second is losing interest or pleasure in things you used to enjoy, sometimes called anhedonia.\n\nFor example, someone who loved football might stop going to matches, not because they are busy, but because it no longer feels worth it. Someone else might still go through the motions but feel nothing.\n\nOther emotional signs can include feeling tearful, irritable, numb or anxious. Some people feel guilty or worthless for no good reason. Not everyone feels sad: some mostly feel flat or cut off.\n\nHaving one of these feelings now and then is normal. It is the mix, the strength and how long it lasts that matter.",
+      "apply_it": "Write down three things you used to enjoy. Notice honestly whether they still feel the same.",
+      "quiz": {
+        "question": "What does the term anhedonia describe?",
+        "options": [
+          "Losing interest or pleasure in things you used to enjoy",
+          "Sleeping too much at weekends",
+          "Feeling very energetic",
+          "A fear of crowded places"
+        ],
+        "answer": 0,
+        "explanation": "Anhedonia means a loss of pleasure or interest. Along with low mood, it is one of the two core signs doctors look for."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--04",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "signs",
+        "body",
+        "sleep"
+      ],
+      "title": "Depression often shows up in the body as well as the mind",
+      "body": "Depression is not only about feelings. It often changes how the body works too.\n\nSleep can be hit in different ways: waking very early and lying awake, struggling to fall asleep, or sleeping far more than usual. Appetite and weight can drop or rise. Many people feel tired all the time, so that even a shower or answering a message feels like hard work.\n\nSome people move or speak more slowly than usual, while others feel restless and unable to sit still. Aches, headaches and stomach problems without a clear cause are also common.\n\nBecause other health problems, such as an underactive thyroid, can cause some of the same signs, a doctor may suggest checks to rule them out.",
+      "apply_it": "For one week, jot down your sleep, energy and appetite each day in a few words.",
+      "quiz": {
+        "question": "Why might a doctor suggest blood tests when someone has signs of depression?",
+        "options": [
+          "Blood tests can diagnose depression directly",
+          "To check for other health problems that cause similar signs",
+          "Because medication is always needed first",
+          "To measure how sad someone is"
+        ],
+        "answer": 1,
+        "explanation": "There is no blood test for depression itself, but conditions like thyroid problems can cause similar signs, so a doctor may check."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--05",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "signs",
+        "thinking",
+        "self-worth"
+      ],
+      "title": "Depression changes how you think, not just how you feel",
+      "body": "Depression often affects thinking. Concentrating can become hard, so reading a page or following a TV plot feels like a struggle. Making small decisions, like what to eat, can feel overwhelming. Memory may seem worse.\n\nThoughts also tend to turn negative. A person might think, I always mess things up, nobody would miss me, or things will never get better. These thoughts feel like facts, but they are often symptoms of the illness speaking.\n\nSome people start having thoughts of death or of ending their life. These thoughts are a sign of serious distress, not a character flaw, and they need attention. If you have them, please talk to a doctor soon, and if you feel unsafe, contact local emergency services or a crisis line now.",
+      "apply_it": "When a harsh thought appears, label it: that may be the depression talking.",
+      "quiz": {
+        "question": "How should thoughts like 'things will never get better' be understood during depression?",
+        "options": [
+          "As proven facts about the future",
+          "As a sign of laziness",
+          "As something everyone ignores easily",
+          "As common symptoms of the illness that can feel true but often are not"
+        ],
+        "answer": 3,
+        "explanation": "Depression colours thinking. Hopeless thoughts feel real, but they are often symptoms that ease as the person recovers."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--06",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "signs",
+        "men",
+        "young-people"
+      ],
+      "title": "Depression can look different in different people",
+      "body": "There is no single face of depression. It can look quite different from person to person.\n\nSome people, including many men, show it more through anger, irritability, working all hours, risky behaviour or drinking more, rather than tears. Teenagers may seem moody, snappy or withdrawn, and their school work may slip. Older adults may talk more about aches, tiredness or memory than about mood.\n\nSome people with depression keep going to work, look after their children and smile in public, while struggling badly inside. This is sometimes called high-functioning depression, though it is not a formal diagnosis.\n\nSo it helps not to judge by appearances. Someone who seems fine may still need support.",
+      "apply_it": "Think of someone close to you. Have you noticed any lasting change in them, even a quiet one?",
+      "quiz": {
+        "question": "Which of these could be a sign of depression in some people?",
+        "options": [
+          "Only crying in public",
+          "Being irritable, drinking more or working all hours",
+          "Always looking visibly sad",
+          "Never smiling at all"
+        ],
+        "answer": 1,
+        "explanation": "Depression does not always look like sadness. Irritability, anger, overwork and drinking more can all be ways it shows."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--07",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "facts",
+        "health",
+        "stigma"
+      ],
+      "title": "Depression is very common and can affect anyone",
+      "body": "The World Health Organization estimates that depression affects hundreds of millions of people worldwide, and it is one of the leading causes of disability. In many countries, a large share of people will have depression at some point in their life.\n\nIt can affect anyone: young or old, rich or poor, famous or not. People with good jobs and loving families can still get depressed. Women are diagnosed more often than men, though men may be less likely to seek help.\n\nKnowing how common it is can ease feelings of shame. If you are struggling, you are far from alone, and many people who have been where you are now feel much better.",
+      "apply_it": "Remind yourself today: needing help for my mind is as normal as needing help for my body.",
+      "quiz": {
+        "question": "What does the WHO say about how common depression is?",
+        "options": [
+          "It is very rare",
+          "It only affects older people",
+          "It affects hundreds of millions of people worldwide",
+          "It has almost disappeared"
+        ],
+        "answer": 2,
+        "explanation": "The WHO estimates that depression affects hundreds of millions of people globally and is a leading cause of disability."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--08",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "causes",
+        "biology",
+        "life-events"
+      ],
+      "title": "There is rarely one single cause of depression",
+      "body": "Researchers think depression usually comes from a mix of things working together, and the mix is different for each person.\n\nBiology plays a part. Depression can run in families, which suggests genes affect risk, but having a parent with depression does not mean you will get it. Hormone changes, long-term illness, pain and some medicines can also raise the risk.\n\nLife plays a part too. Stressful events, loss, loneliness, money worries, abuse or trauma, especially early in life, can all add to it.\n\nPersonality and habits of thinking, such as being very self-critical, may make some people more vulnerable. Often, several small pressures build up until they tip someone over.",
+      "apply_it": "List any pressures that have built up in your life this year, big or small, without judging them.",
+      "quiz": {
+        "question": "What is the best summary of what causes depression?",
+        "options": [
+          "A mix of biology, life events and other factors, different for each person",
+          "Only bad parenting",
+          "Only a lack of willpower",
+          "Only genes, so nothing else matters"
+        ],
+        "answer": 0,
+        "explanation": "Most experts see depression as coming from several factors together, such as genes, health, stress and life events."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--09",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "causes",
+        "brain",
+        "science"
+      ],
+      "title": "The chemical imbalance idea is too simple",
+      "body": "You may have heard that depression is caused by a chemical imbalance, such as too little serotonin. This idea was popular for many years, but scientists now see it as too simple.\n\nThe brain is complex. Depression seems to involve changes in many systems, including how brain areas communicate, how the body handles stress, inflammation, and how the brain adapts over time. Exactly how these fit together is still being studied and debated.\n\nThis does not mean depression is not real or that medicine does not help. Antidepressants do help many people, even though scientists do not fully understand why. It simply means that depression is not one thing with one fix.",
+      "apply_it": "If someone tells you depression is just low serotonin, gently share that the science is more complex.",
+      "quiz": {
+        "question": "What do scientists currently think about the chemical imbalance explanation?",
+        "options": [
+          "It is proven and complete",
+          "It means medication cannot work",
+          "It shows depression is not real",
+          "It is too simple, and depression involves many brain and body systems"
+        ],
+        "answer": 3,
+        "explanation": "Research suggests depression involves many systems. The simple chemical imbalance story does not capture it, though treatments can still help."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--10",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "types",
+        "severity",
+        "health"
+      ],
+      "title": "Depression ranges from mild to severe and has several forms",
+      "body": "Doctors often describe depression as less severe or more severe, depending on how many signs a person has and how much they affect daily life.\n\nThere are also particular forms. Postnatal depression can develop in the year after having a baby, and it can affect both mothers and fathers. Seasonal affective disorder follows the seasons, often worse in winter. Persistent depressive disorder is a long-lasting, lower-level depression that can go on for years.\n\nLow mood is also part of bipolar disorder, where periods of depression alternate with periods of very high mood or energy. This needs different treatment, so it is important to tell a doctor if you have ever had times of unusually high energy.",
+      "apply_it": "If you have ever had spells of unusually high energy or little need for sleep, note them to mention to a doctor.",
+      "quiz": {
+        "question": "Why is it important to tell a doctor about past periods of very high mood or energy?",
+        "options": [
+          "It proves there is no depression",
+          "It may point to bipolar disorder, which needs different treatment",
+          "It means you need no help",
+          "Doctors never ask about mood"
+        ],
+        "answer": 1,
+        "explanation": "Bipolar disorder includes highs as well as lows and is treated differently, so doctors need to know about any past highs."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--11",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "myths",
+        "stigma",
+        "willpower"
+      ],
+      "title": "You cannot simply snap out of depression",
+      "body": "One of the most common myths is that a depressed person could just cheer up, try harder or think positively. If only it were that easy.\n\nDepression is a health condition, not a mood someone has chosen. Telling a depressed person to snap out of it is a bit like telling someone with a broken leg to walk it off. It usually makes them feel more guilty and alone.\n\nWhat does help is a mix of support, treatment and small, steady steps, which are described later in this guide. People do play an active part in their recovery, but they need patience and help, not pressure.\n\nIf you catch yourself thinking you should just get over it, try treating yourself with the kindness you would give a friend.",
+      "apply_it": "Replace one 'I should just get over it' thought with 'I am unwell, and I am taking steps to get better.'",
+      "quiz": {
+        "question": "Why is telling someone to 'snap out of it' unhelpful?",
+        "options": [
+          "Because depression is not a choice and pressure can add guilt",
+          "Because depression always lasts forever",
+          "Because people with depression cannot change anything",
+          "Because it is too polite"
+        ],
+        "answer": 0,
+        "explanation": "Depression is not chosen. Pressure to cheer up usually adds guilt, while support and small steps help much more."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--12",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "myths",
+        "stigma",
+        "self-compassion"
+      ],
+      "title": "Depression is not weakness and does not need a reason",
+      "body": "Another myth is that only weak people get depressed. In reality, many strong, capable and successful people have had depression. Getting help takes courage.\n\nA related myth is that you need a good reason to be depressed. People sometimes say, but your life is good, what do you have to be sad about? Depression can appear even when life looks fine from the outside, because biology and hidden pressures play a part.\n\nYet another myth is that talking about it makes it worse. For most people, talking to someone they trust or to a professional is a relief and an important step towards feeling better.",
+      "apply_it": "If you feel ashamed, write one sentence explaining your situation to yourself as you would to a good friend.",
+      "quiz": {
+        "question": "Which of these is a myth about depression?",
+        "options": [
+          "Depression can appear when life seems fine",
+          "Strong people can get depressed",
+          "You need an obvious reason to be depressed",
+          "Talking about it often helps"
+        ],
+        "answer": 2,
+        "explanation": "Depression can happen without a clear trigger. Needing a good reason is a myth that can stop people asking for help."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--13",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "grief",
+        "loss",
+        "signs"
+      ],
+      "title": "Grief and depression can look alike but are not the same",
+      "body": "After someone dies, or after another big loss, deep sadness is natural. Grief can bring crying, poor sleep, low appetite and trouble focusing, just like depression.\n\nThere are some differences. In grief, pain often comes in waves, mixed with warm memories and even moments of laughter. Self-worth usually stays steady. In depression, the low mood is more constant, and feelings of worthlessness or self-blame are common.\n\nGrief and depression can also happen together. If grief stays very intense for a long time, stops you functioning, or comes with thoughts of not wanting to live, please talk to a doctor. Support is available and it is never too soon or too late to ask.",
+      "apply_it": "If you are grieving, plan one small way to remember the person kindly this week.",
+      "quiz": {
+        "question": "Which is more typical of depression than of ordinary grief?",
+        "options": [
+          "Waves of sadness mixed with warm memories",
+          "Missing the person who died",
+          "Crying on anniversaries",
+          "A constant low mood with feelings of worthlessness"
+        ],
+        "answer": 3,
+        "explanation": "Grief often comes in waves and keeps self-worth steady. Constant low mood and worthlessness point more towards depression."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--14",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "get-help",
+        "doctor",
+        "health"
+      ],
+      "title": "See a doctor if low mood lasts two weeks or more",
+      "body": "It is a good idea to see a doctor if you have felt low, empty or uninterested in things most days for more than two weeks, or if your mood is getting in the way of work, study, relationships or looking after yourself.\n\nYou do not need to be sure it is depression. You do not need to be in crisis. Doctors would much rather see people early, when things are often easier to treat.\n\nSee someone urgently if you have thoughts of harming yourself or ending your life. If you feel you might act on these thoughts, or you are not safe right now, contact local emergency services or a crisis line straight away.",
+      "apply_it": "If your low mood has lasted two weeks, book an appointment with a doctor this week.",
+      "quiz": {
+        "question": "When is a good time to see a doctor about low mood?",
+        "options": [
+          "Only after several years",
+          "When it has lasted two weeks or more, or is affecting daily life",
+          "Only when you are completely sure it is depression",
+          "Never, it is better to wait"
+        ],
+        "answer": 1,
+        "explanation": "Health services advise seeing a doctor when low mood lasts over two weeks or affects life. You do not need to be certain or in crisis."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--15",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "get-help",
+        "doctor",
+        "assessment"
+      ],
+      "title": "A doctor's visit about mood is a normal conversation",
+      "body": "Many people worry about what will happen at the appointment. Usually it is simply a talk.\n\nThe doctor may ask how you have been feeling, how long it has lasted, how you are sleeping and eating, and what is going on in your life. They might use a short questionnaire to understand how strong your symptoms are. They will usually ask, kindly, whether you have had thoughts of harming yourself, because this helps them keep you safe.\n\nThey may suggest tests to rule out other causes. Then you can talk through options together, such as self-help, talking therapy or medication.\n\nIt can help to write notes beforehand, because it is easy to forget things or play them down on the day.",
+      "apply_it": "Write three lines before your appointment: how you feel, how long it has lasted, and what it stops you doing.",
+      "quiz": {
+        "question": "Why might a doctor ask about thoughts of self-harm?",
+        "options": [
+          "To help keep you safe and plan the right support",
+          "To get you into trouble",
+          "Because they think you are lying",
+          "It is just a formality with no purpose"
+        ],
+        "answer": 0,
+        "explanation": "Asking about self-harm is a normal, caring part of an assessment. It helps the doctor understand risk and offer the right support."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--16",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "therapy",
+        "cbt",
+        "treatment"
+      ],
+      "title": "Talking therapies help many people with depression",
+      "body": "Talking therapies are a main treatment for depression. Guidelines such as those from NICE in the UK recommend them for many people, including as a first option for less severe depression.\n\nCognitive behavioural therapy, or CBT, is one of the best studied. It looks at the links between thoughts, feelings and actions. You learn to notice unhelpful thinking patterns, test them against the evidence, and try small changes in what you do.\n\nFor example, if you think, my friends do not want to see me, you might test that by sending one message and seeing what happens.\n\nTherapy can be one to one, in groups, online or guided self-help. It takes some effort, but the skills can last.",
+      "apply_it": "Find out how talking therapy is accessed where you live, for example through a doctor or a self-referral service.",
+      "quiz": {
+        "question": "What does CBT mainly focus on?",
+        "options": [
+          "Analysing dreams only",
+          "The links between thoughts, feelings and actions",
+          "Avoiding all feelings",
+          "Taking medication on time"
+        ],
+        "answer": 1,
+        "explanation": "CBT looks at how thoughts, feelings and behaviour affect each other, and teaches practical ways to change unhelpful patterns."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--17",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "therapy",
+        "counselling",
+        "treatment"
+      ],
+      "title": "There are several kinds of talking therapy to choose from",
+      "body": "CBT is not the only option. Guidelines describe several talking therapies that can help with depression.\n\nBehavioural activation focuses on slowly getting back to meaningful and enjoyable activities. Interpersonal therapy looks at relationships and life changes, like a breakup or a new role. Counselling gives space to talk through problems with a trained listener. Some people use guided self-help, working through a book or online course with support from a practitioner. Group therapy and mindfulness-based therapy can also help, especially in preventing relapse.\n\nNo single therapy suits everyone. A good fit with your therapist matters a lot. If one approach does not feel right, it is fine to say so and ask about others.",
+      "apply_it": "Look up two types of talking therapy and note which one sounds most like a fit for you.",
+      "quiz": {
+        "question": "Which therapy focuses mainly on relationships and life changes?",
+        "options": [
+          "Behavioural activation",
+          "Guided self-help",
+          "Interpersonal therapy",
+          "Physiotherapy"
+        ],
+        "answer": 2,
+        "explanation": "Interpersonal therapy focuses on relationships and life transitions, which can play a big part in depression."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--18",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "medication",
+        "antidepressants",
+        "treatment"
+      ],
+      "title": "Antidepressants can help, and they take time to work",
+      "body": "Antidepressants are medicines that can help ease depression, especially when it is more severe or has not improved with other help. There are several types, and a doctor will talk through which might suit you.\n\nA few general points are worth knowing. They usually take a few weeks to start helping, so it is common to feel no change at first. Some people have side effects, such as nausea or sleep changes, which often ease after a while. Antidepressants are not addictive in the way some drugs are, but stopping suddenly can cause unpleasant effects.\n\nAlways talk to your doctor before starting, changing or stopping a medicine. They can adjust the dose or try another one if needed.",
+      "apply_it": "If you take an antidepressant, write down any questions or side effects to discuss at your next review.",
+      "quiz": {
+        "question": "What is true about antidepressants in general?",
+        "options": [
+          "They work within an hour",
+          "You should stop them suddenly when you feel better",
+          "They are the only treatment for depression",
+          "They often take a few weeks to start working"
+        ],
+        "answer": 3,
+        "explanation": "Antidepressants usually take some weeks to help. Changes to them should always be made with a doctor's advice."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--19",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "treatment",
+        "recovery",
+        "doctor"
+      ],
+      "title": "Treatment is often a mix, and finding the right fit can take time",
+      "body": "Many people do best with a combination of approaches: perhaps therapy plus medication, along with changes to daily routine and support from friends.\n\nIt is normal if the first thing you try is not the perfect answer. A therapy might not click, or a medicine might cause side effects. This is not failure. It is useful information that helps you and your doctor find a better fit.\n\nRecovery is rarely a straight line. There may be good weeks and bad weeks. Keeping a simple mood diary can help you see slow progress that is hard to notice day to day.\n\nKeep talking honestly with the people treating you. Tell them what is and is not helping.",
+      "apply_it": "Start a simple daily mood score from 1 to 10, with one line about your day.",
+      "quiz": {
+        "question": "If the first treatment does not help much, what is the best response?",
+        "options": [
+          "Give up on all treatment",
+          "Tell your doctor or therapist, so you can try a better fit",
+          "Double the dose without asking",
+          "Assume you cannot recover"
+        ],
+        "answer": 1,
+        "explanation": "Finding the right treatment can take a few tries. Honest feedback helps professionals adjust the plan."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--20",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "behavioural-activation",
+        "avoidance",
+        "self-care"
+      ],
+      "title": "Depression shrinks life, and a shrinking life feeds depression",
+      "body": "When you feel low and tired, it is natural to pull back. You cancel plans, stop hobbies and stay in bed longer. In the short term, this can feel like relief.\n\nBut over time, a smaller life means fewer moments of pleasure, achievement and connection. That can deepen the low mood, which makes you pull back even more. Experts describe this as a downward spiral.\n\nBehavioural activation is a well-researched approach that works on this spiral. Instead of waiting to feel better before doing things, you gently start doing small, valued things, and the mood often follows.\n\nThe next few cards show how to try this yourself, alongside any professional help you have.",
+      "apply_it": "Write down two things you have stopped doing since your mood dropped.",
+      "quiz": {
+        "question": "What is the main idea of behavioural activation?",
+        "options": [
+          "Gently doing small, valued activities to help mood follow",
+          "Resting in bed until you feel completely better",
+          "Avoiding all people",
+          "Working longer hours"
+        ],
+        "answer": 0,
+        "explanation": "Behavioural activation breaks the cycle of withdrawal by gently reintroducing activities, so that mood can follow action."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--21",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "behavioural-activation",
+        "planning",
+        "self-care"
+      ],
+      "title": "Plan small activities that bring pleasure, achievement or meaning",
+      "body": "To try behavioural activation, start by making a list of activities. Include three kinds: things that give a little pleasure, like listening to music; things that give a sense of achievement, like washing the dishes; and things that matter to you, like calling a relative.\n\nThen pick very small versions. Not clean the house, but wash five plates. Not go for a run, but walk to the end of the street.\n\nSchedule one or two into a specific time, such as Tuesday at 10am. Afterwards, rate your mood and how much the activity mattered, from 0 to 10.\n\nOver days and weeks, slowly add more. Small, regular steps beat big plans that feel impossible.",
+      "apply_it": "Pick one tiny activity for tomorrow and write down the exact time you will do it.",
+      "quiz": {
+        "question": "Which is the best example of a behavioural activation step?",
+        "options": [
+          "Clean the whole house today",
+          "Wait until you feel motivated",
+          "Walk to the end of the street at 10am on Tuesday",
+          "Plan a month of busy weekends"
+        ],
+        "answer": 2,
+        "explanation": "Small, specific and scheduled activities are easier to start and build confidence for the next step."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--22",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "behavioural-activation",
+        "motivation",
+        "habits"
+      ],
+      "title": "Action often comes before motivation when you are depressed",
+      "body": "People often wait to feel like doing something. With depression, that feeling may not come for a long time. Behavioural activation flips the order: you act first, in a tiny way, and motivation may follow.\n\nFor example, you may not feel like seeing a friend. But if you go for twenty minutes, you might come home feeling slightly lighter. Even if you do not enjoy it much, you have shown yourself that you can do it.\n\nExpect some days to go badly. If you skip a planned activity, do not use it as proof that you are failing. Just pick the next small step and try again. Be as patient with yourself as you would be with a friend learning to walk after an injury.",
+      "apply_it": "Tell yourself: I do not have to feel like it, I only have to do two minutes of it.",
+      "quiz": {
+        "question": "With depression, what does behavioural activation suggest about motivation?",
+        "options": [
+          "You must feel motivated before acting",
+          "Motivation never matters",
+          "Skipping one activity means you have failed",
+          "Small actions can come first, and motivation may follow"
+        ],
+        "answer": 3,
+        "explanation": "Waiting for motivation can keep people stuck. Taking a small step first often helps motivation and mood begin to return."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--23",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "sleep",
+        "routine",
+        "self-care"
+      ],
+      "title": "Steady sleep habits support recovery from depression",
+      "body": "Sleep and mood are closely linked. Depression can disturb sleep, and poor sleep can make low mood worse.\n\nSome simple habits help many people. Try to get up at roughly the same time every day, even after a bad night, because this anchors your body clock. Get some daylight in the morning. Keep naps short and early. Cut down on caffeine after lunch and avoid using alcohol to fall asleep, as it disturbs sleep later in the night.\n\nIf you lie awake for a long time, get up and do something calm in dim light, then return to bed when sleepy.\n\nIf sleep problems are severe or lasting, talk to a doctor. There are effective treatments for insomnia that do not rely on sleeping pills.",
+      "apply_it": "Choose a fixed wake-up time and stick to it for the next seven days.",
+      "quiz": {
+        "question": "Which sleep habit is most helpful for mood?",
+        "options": [
+          "Getting up at about the same time every day",
+          "Sleeping in late whenever possible",
+          "Drinking alcohol to fall asleep",
+          "Long afternoon naps every day"
+        ],
+        "answer": 0,
+        "explanation": "A regular wake time steadies the body clock. Alcohol and long naps tend to disrupt sleep further."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--24",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "movement",
+        "exercise",
+        "self-care"
+      ],
+      "title": "Physical activity can lift mood, even in small amounts",
+      "body": "Research shows that physical activity can help with depression, and guidelines such as NICE include group exercise as one option. It is not a cure on its own for everyone, but it can make a real difference.\n\nYou do not need a gym or special kit. A brisk walk, dancing in the kitchen, gardening or swimming all count. Activity outdoors, especially with other people, may bring extra benefits.\n\nStart small. Five or ten minutes is a good beginning when energy is low. Gradually build up towards the general advice of about 150 minutes of moderate activity a week, if your health allows.\n\nIf you have a health condition, check with a doctor about what is safe for you.",
+      "apply_it": "Take a ten-minute walk today, ideally outside in daylight.",
+      "quiz": {
+        "question": "What is a good way to start being active when you are depressed?",
+        "options": [
+          "Run a marathon next week",
+          "Only exercise if you can do an hour",
+          "Start with five or ten minutes of something you can manage",
+          "Wait until you feel full of energy"
+        ],
+        "answer": 2,
+        "explanation": "Short, manageable bursts of activity are a realistic start and can be built up slowly."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--25",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "alcohol",
+        "food",
+        "self-care"
+      ],
+      "title": "Food, alcohol and drugs all affect mood",
+      "body": "When you feel low, it is easy to skip meals, live on snacks, or drink more to numb things. These habits can make mood worse over time.\n\nAlcohol is a depressant. It may give brief relief, but it can deepen low mood, disrupt sleep, and make anxiety worse the next day. It can also interact with some medicines. Recreational drugs can have similar or stronger effects.\n\nRegular meals help keep energy steadier. You do not need a perfect diet. Simple steps like eating breakfast, having some fruit and vegetables, and drinking enough water are a good start.\n\nIf you are relying on alcohol or drugs to cope, tell a doctor. Help is available without judgement.",
+      "apply_it": "Track how much alcohol you drink this week and note how you feel the next morning.",
+      "quiz": {
+        "question": "How does alcohol tend to affect depression?",
+        "options": [
+          "It cures low mood",
+          "It may give brief relief but can deepen low mood and harm sleep",
+          "It has no effect on mood",
+          "It always improves sleep"
+        ],
+        "answer": 1,
+        "explanation": "Alcohol is a depressant. Brief relief is often followed by worse mood, poorer sleep and more anxiety."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--26",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "connection",
+        "support",
+        "loneliness"
+      ],
+      "title": "Staying connected is protective, even when you want to hide",
+      "body": "Depression can make you want to hide away. You may feel like a burden, or think nobody wants to hear from you. But connection is one of the most protective things for mental health.\n\nYou do not have to share everything. You could start by telling one trusted person that you are having a hard time. Or simply spend time with someone without talking about your feelings at all, like watching a match together.\n\nIf talking feels too hard, a short text can work: I am finding things tough at the moment, could we meet up? Many people feel relieved to be asked.\n\nPeer support groups, online or in person, can also help you feel less alone.",
+      "apply_it": "Send one short message to someone you trust today, even if it is just to say hello.",
+      "quiz": {
+        "question": "What is a good first step towards connection when you feel low?",
+        "options": [
+          "Telling one trusted person you are finding things hard",
+          "Waiting until you feel fully better",
+          "Sharing everything with everyone at once",
+          "Cutting off all contact"
+        ],
+        "answer": 0,
+        "explanation": "Starting small, with one trusted person, makes connection less daunting and can bring real comfort."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--27",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "thinking",
+        "self-talk",
+        "cbt"
+      ],
+      "title": "Gently questioning harsh thoughts can loosen their grip",
+      "body": "Depression often brings a harsh inner voice: I am useless, I always fail, everyone is better than me. These thoughts can feel completely true.\n\nOne idea from CBT is to treat them as guesses rather than facts. When you notice one, ask yourself a few questions. What is the evidence for and against this? Would I say this to a friend? Is there another way of seeing it?\n\nFor example, I always fail might become, I did not get that job, but I have done well at other things. This is not about forcing positive thinking. It is about finding a fairer, more balanced view.\n\nWriting thoughts down can make this easier. A therapist can teach these skills in more depth.",
+      "apply_it": "Write down one harsh thought today and next to it a fairer, more balanced version.",
+      "quiz": {
+        "question": "What does CBT suggest doing with harsh thoughts like 'I always fail'?",
+        "options": [
+          "Believe them completely",
+          "Ignore all thoughts forever",
+          "Force yourself to think only happy thoughts",
+          "Treat them as guesses and look for a fairer view"
+        ],
+        "answer": 3,
+        "explanation": "CBT encourages checking thoughts against the evidence and finding a more balanced view, not forcing positivity."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--28",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "relapse",
+        "prevention",
+        "recovery"
+      ],
+      "title": "Depression can come back, so know your warning signs",
+      "body": "Many people recover fully from depression. For some, it returns at a later time, which is called relapse. Knowing this is not meant to scare you. It helps you spot early signs and act quickly.\n\nEarly warning signs are personal. They might include sleeping badly, withdrawing from friends, losing interest in hobbies, feeling more irritable, or a return of self-critical thoughts.\n\nA relapse plan can help. Write down your warning signs, what helped last time, who you can talk to, and when you will contact a doctor. Share it with someone you trust.\n\nIf you take medication, guidelines advise continuing it for a while after you feel better, to lower the risk of relapse. Talk to your doctor before stopping.",
+      "apply_it": "Write down three personal warning signs that your mood might be slipping.",
+      "quiz": {
+        "question": "Why is it useful to know your early warning signs?",
+        "options": [
+          "They prove you will always be depressed",
+          "They mean treatment never works",
+          "They help you act quickly if depression starts to return",
+          "They are only useful to doctors"
+        ],
+        "answer": 2,
+        "explanation": "Spotting early signs means you can use your plan and get support sooner, which can stop a relapse from deepening."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--29",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "crisis",
+        "suicide",
+        "get-help"
+      ],
+      "title": "If you have thoughts of suicide, help is there right now",
+      "body": "Thoughts of suicide can be part of depression. They can be frightening, and it can be hard to tell anyone. But you deserve support, and these feelings can pass with help.\n\nIf you feel you might act on these thoughts, or you are not safe, contact local emergency services or a crisis line now, or go to a hospital emergency department. If you can, stay with someone or ask someone to come to you.\n\nIf you are not in immediate danger but are struggling, tell someone you trust and contact your doctor soon. Try to put distance between yourself and anything you could use to harm yourself.\n\nMany people who once felt this way go on to feel much better. Reaching out is a strong and brave step.",
+      "apply_it": "Save the number of a local crisis line in your phone today, so it is there if you or someone else needs it.",
+      "quiz": {
+        "question": "What should someone do if they feel they might act on thoughts of suicide?",
+        "options": [
+          "Keep it secret and wait",
+          "Contact local emergency services or a crisis line straight away",
+          "Wait for their next routine appointment",
+          "Try to sleep it off alone"
+        ],
+        "answer": 1,
+        "explanation": "In a crisis, contacting emergency services or a crisis line straight away is the safest step. Staying with someone also helps."
+      },
+      "health": true
+    },
+    {
+      "id": "mental-health-understand-depression--30",
+      "topic": "mental-health",
+      "tags": [
+        "depression",
+        "recovery",
+        "summary",
+        "hope"
+      ],
+      "title": "Recovery is possible, one small step at a time",
+      "body": "Depression is a common, real health condition. It is more than sadness: it lasts, spreads into many parts of life, and can change how you think and feel about yourself. It usually comes from a mix of causes, and it is not your fault.\n\nHelp works. Talking therapies, medication when needed, behavioural activation, steady sleep, movement and connection all play a part. Recovery can take time and may have ups and downs, so be patient with yourself.\n\nIf low mood has lasted two weeks or more, talk to a doctor. If you or someone else is in danger, contact local emergency services or a crisis line straight away.\n\nOne small step today is enough.",
+      "apply_it": "Choose one idea from this guide and do the smallest possible version of it today.",
+      "quiz": {
+        "question": "Which summary of this guide is most accurate?",
+        "options": [
+          "Depression is a choice that people can stop",
+          "Only medication can help depression",
+          "Nothing can be done until you feel better",
+          "Depression is a real condition, and a mix of support and small steps can help"
+        ],
+        "answer": 3,
+        "explanation": "Depression is treatable. Professional help, daily habits and connection all play a role, and small steps count."
+      },
+      "health": true
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "source": {
+    "id": "ai-work-alongside-ai",
+    "title": "Work Alongside AI",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the US National Institute of Standards and Technology, the OECD, the UK Government and the UK National Cyber Security Centre.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: National Institute of Standards and Technology, AI Risk Management Framework, https://www.nist.gov/itl/ai-risk-management-framework; OECD, AI Principles, https://oecd.ai/en/ai-principles; UK Government, Generative AI Framework for HM Government, https://www.gov.uk/government/publications/generative-ai-framework-for-hmg; UK National Cyber Security Centre, AI and cyber security: what you need to know, https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know"
+  },
+  "cards": [
+    {
+      "id": "ai-work-alongside-ai--01",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "overview",
+        "work",
+        "judgement"
+      ],
+      "title": "Working well with AI is a skill of judgement, not just of buttons",
+      "body": "AI tools can now draft, summarise, sort and suggest at great speed. That speed is useful, but it does not decide for you which jobs it should do, or whether its work is any good. That part is still yours.\n\nThis guide is about the everyday craft of working beside AI. You will learn how to choose which tasks to hand over and which to keep, how to check what comes back, and how to use AI for writing, research, numbers, meetings and planning.\n\nIt also covers keeping your own skills sharp, being open with your employer, setting team rules, small business uses, and how to measure whether AI really saves you time. Prompting tips are covered in a separate guide, so here the focus is on judgement.",
+      "apply_it": "Write down three tasks from your last working week. You will sort them later in this guide.",
+      "quiz": {
+        "question": "What does this guide say remains your job when you work with AI?",
+        "options": [
+          "Typing faster than the tool",
+          "Deciding what to hand over and judging whether the result is good",
+          "Memorising every feature of every app",
+          "Avoiding AI completely"
+        ],
+        "answer": 1,
+        "explanation": "AI brings speed, but choosing the right tasks and judging the quality of the output stays with the person."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--02",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "mindset",
+        "work",
+        "supervision"
+      ],
+      "title": "Treat AI like a quick, eager assistant who still needs a supervisor",
+      "body": "A helpful picture is a keen new assistant on their first week. They work fast, never get tired and are happy to try anything. But they do not know your customers, your history or your standards, and they sometimes guess when they should ask.\n\nYou would not let that assistant send a contract or a pay rise letter without reading it first. The same goes for AI. It can save you hours on the first pass, but you are the supervisor who reviews, corrects and signs off.\n\nThis picture also keeps your expectations healthy. You will not be shocked when it gets something wrong, and you will not waste its strengths by never trusting it with anything at all.",
+      "apply_it": "Next time you use AI at work, say to yourself: I am the supervisor here, and I sign off.",
+      "quiz": {
+        "question": "Why is a new assistant a useful way to picture AI at work?",
+        "options": [
+          "It is slow and careful",
+          "It never makes mistakes",
+          "It is fast and willing but needs someone to review its work",
+          "It already knows your customers well"
+        ],
+        "answer": 2,
+        "explanation": "Like a new starter, AI is quick and willing but lacks context and can guess, so a person needs to review and approve its work."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--03",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "delegation",
+        "tasks",
+        "productivity"
+      ],
+      "title": "Hand AI tasks that are repetitive, low risk and easy to check",
+      "body": "The best jobs to give AI share three features. They come up again and again, a mistake would not cause real harm, and you can quickly see whether the result is right.\n\nGood examples include turning rough notes into a tidy list, suggesting five subject lines for an email, reformatting a table, drafting a polite reply to a routine question, or summarising a long document you will still skim yourself.\n\nIn each case you save time on the dull part, and checking takes far less effort than doing it from scratch. If a task fails any of the three tests, slow down and think before handing it over.",
+      "apply_it": "Look at your three tasks from card one. Mark each one: repetitive, low risk, easy to check.",
+      "quiz": {
+        "question": "Which task is the best fit to hand to AI?",
+        "options": [
+          "Reformatting a messy list into a neat table you can check at a glance",
+          "Deciding who gets made redundant",
+          "Signing a contract for your company",
+          "Giving medical advice to a customer"
+        ],
+        "answer": 0,
+        "explanation": "Reformatting a list is repetitive, low risk and quick to check. The others carry serious consequences and need human judgement."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--04",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "delegation",
+        "judgement",
+        "responsibility"
+      ],
+      "title": "Keep the tasks that need judgement, trust or personal responsibility",
+      "body": "Some work should stay firmly with people. These are tasks where values, fairness or relationships matter, or where someone must be answerable for the result.\n\nThink of telling a colleague their role is changing, deciding whether to give a customer a refund in a grey area, choosing between two job candidates, or sending condolences to a client who has lost a loved one. AI can help you prepare, perhaps by listing points to cover, but the decision and the human touch belong to you.\n\nA simple test helps: if this went wrong, would someone expect to talk to a real person who made the call? If yes, keep it.",
+      "apply_it": "Pick one task you would never hand fully to AI and write one sentence on why.",
+      "quiz": {
+        "question": "Which question helps you decide whether to keep a task yourself?",
+        "options": [
+          "Is the task boring?",
+          "Does the AI tool have a nice design?",
+          "Is it Friday afternoon?",
+          "Would someone expect a real person to be answerable if it went wrong?"
+        ],
+        "answer": 3,
+        "explanation": "If people would expect a human to stand behind the decision, the task needs your judgement and responsibility."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--05",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "checking",
+        "risk",
+        "habits"
+      ],
+      "title": "Before you rely on an answer, ask how you would know if it were wrong",
+      "body": "This one question is a powerful habit. Before you use something AI made, ask yourself: if this were wrong, how would I find out?\n\nFor a summary of a document you have, you could compare it with the original. For a sum, you could do a rough estimate in your head. For a claim about a law or a date, you would need to find a trusted source.\n\nIf the honest answer is that you would never find out until it caused a problem, that is a warning sign. Either find a way to check it, or do that part yourself. AI is safest where errors are easy to spot.",
+      "apply_it": "Before using the next AI answer, say out loud how you would spot an error in it.",
+      "quiz": {
+        "question": "What should you do if you could not tell whether an AI answer was wrong?",
+        "options": [
+          "Use it anyway because it sounds confident",
+          "Find a way to check it, or do that part yourself",
+          "Ask the AI if it is sure and accept a yes",
+          "Share it quickly before anyone notices"
+        ],
+        "answer": 1,
+        "explanation": "Asking an AI if it is sure is not a real check. If you cannot verify the answer, check it another way or do it yourself."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--06",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "checking",
+        "quality",
+        "review"
+      ],
+      "title": "Check AI work in layers: facts, numbers, tone and fit",
+      "body": "A quick read is not the same as a proper check. Try going through the output in four layers.\n\nFirst, facts: are the names, dates, places and claims right? Second, numbers: do totals add up, are percentages sensible, are units correct? Third, tone: does it sound like you, and is it right for the reader, neither too stiff nor too casual? Fourth, fit: does it actually answer the question you were asked, and does it miss anything important?\n\nEach layer catches different problems. Many people check tone but skip the numbers, which is where quiet mistakes often hide. With practice, this takes only a minute or two for short pieces.",
+      "apply_it": "Use the four layers on your next AI draft: facts, numbers, tone, fit.",
+      "quiz": {
+        "question": "According to this card, which checking layer do people often skip?",
+        "options": [
+          "Tone",
+          "Spelling of their own name",
+          "Numbers",
+          "Font size"
+        ],
+        "answer": 2,
+        "explanation": "People tend to notice tone but skip checking the numbers, where quiet errors often hide."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--07",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "checking",
+        "accuracy",
+        "errors"
+      ],
+      "title": "Watch for confident mistakes in names, figures and references",
+      "body": "AI tools write smoothly even when they are wrong. They can invent a report that does not exist, mix up two similar company names, give a statistic with no real source, or mention a rule that has changed.\n\nThe danger is that these errors look exactly like correct sentences. There is no wobble in the writing to warn you.\n\nSo be extra careful with the details that would embarrass you if they were false: people's names and job titles, exact figures, quotes, links and references to studies or laws. Look these up in the original source each time. If the AI gives a link, open it and see whether it says what was claimed.",
+      "apply_it": "Next time AI gives you a source or a statistic, open the original and confirm it.",
+      "quiz": {
+        "question": "Why are AI mistakes hard to spot?",
+        "options": [
+          "They are always in bold",
+          "They only appear in long documents",
+          "They are marked with a warning",
+          "They are written as smoothly and confidently as correct facts"
+        ],
+        "answer": 3,
+        "explanation": "AI errors read just as smoothly as true statements, so you need to check key details against original sources."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--08",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "writing",
+        "drafting",
+        "work"
+      ],
+      "title": "Use AI for a first draft of writing, then make it your own",
+      "body": "A blank page is often the hardest part of writing. AI can give you a starting shape in seconds: a rough report outline, a draft newsletter, a first go at a job advert.\n\nTreat that draft as clay, not as the finished pot. Cut the parts that are vague, add the real details only you know, fix anything that is not true, and change phrases so they sound like you.\n\nA useful rule is that by the time you send it, you should be able to defend every sentence as yours. If you would be uncomfortable explaining a line to your manager or a customer, rewrite it or remove it.",
+      "apply_it": "Take one AI draft and rewrite at least a third of it with your real details and voice.",
+      "quiz": {
+        "question": "What is a good rule for AI-drafted writing before you send it?",
+        "options": [
+          "You should be able to stand behind every sentence as yours",
+          "Send it unchanged to save time",
+          "Add more words to make it longer",
+          "Only fix the spelling"
+        ],
+        "answer": 0,
+        "explanation": "You are responsible for what you send, so every sentence should be something you can explain and defend."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--09",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "writing",
+        "editing",
+        "clarity"
+      ],
+      "title": "AI is a strong editor for making writing shorter, clearer and kinder",
+      "body": "Editing is one of the safest and most useful ways to use AI, because you start with your own ideas and facts.\n\nYou can paste a paragraph you wrote and ask for a shorter version, a plainer version for a general reader, or a warmer version of an email that sounds a bit sharp. You can ask it to spot sentences that are hard to follow, or to suggest a clearer heading.\n\nThen pick and choose. You do not have to accept every change. Often the best result mixes your original wording with one or two of its suggestions. Because the content was yours to begin with, there is less risk of invented facts.",
+      "apply_it": "Paste one email you wrote today and ask for a clearer, shorter version. Keep only the changes you like.",
+      "quiz": {
+        "question": "Why is AI editing of your own writing fairly low risk?",
+        "options": [
+          "Because AI never changes anything",
+          "Because edited text cannot contain errors",
+          "Because the ideas and facts started with you, so there is less chance of invented content",
+          "Because no one reads emails"
+        ],
+        "answer": 2,
+        "explanation": "When the content starts as yours, the AI is mostly reshaping it, so there is less room for made-up facts. You still read the result."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--10",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "writing",
+        "voice",
+        "trust"
+      ],
+      "title": "Readers can tell when writing sounds generic, so protect your voice",
+      "body": "Text produced with little care often has a familiar feel: lots of grand words, tidy lists of three, and warm phrases that say very little. Colleagues and customers may notice this and trust the message less.\n\nYour voice is part of your professional reputation. It includes the way you greet people, the examples you choose and the plain facts you include.\n\nTo keep it, give the AI a sample of your own writing and ask it to match the style, then edit further. Cut empty phrases. Add a specific detail, like a date, a name or a real example, that shows a person who knows the situation wrote this.",
+      "apply_it": "Find one empty phrase in an AI draft and replace it with a specific, real detail.",
+      "quiz": {
+        "question": "What is one way to keep your voice when using AI for writing?",
+        "options": [
+          "Use as many grand words as possible",
+          "Add specific real details and cut empty phrases",
+          "Never read the draft",
+          "Copy the AI's style for everything"
+        ],
+        "answer": 1,
+        "explanation": "Specific details and plain wording make writing sound like a real person who knows the situation."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--11",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "research",
+        "sources",
+        "learning"
+      ],
+      "title": "For research, use AI to map a topic and then go to real sources",
+      "body": "AI is good at giving you a quick map of an unfamiliar area. It can explain key terms, list the main questions people ask and suggest what to look into next.\n\nThat map is a starting point, not the destination. For anything you will rely on or pass on, go to proper sources: official websites, published research, trusted organisations, original documents or experts in your team.\n\nA good pattern is to ask AI what you should be looking for, then look for it yourself. You save time getting oriented, but your final facts come from places you can name and check if someone asks where they came from.",
+      "apply_it": "On your next research task, use AI for the overview, then find two original sources yourself.",
+      "quiz": {
+        "question": "In research, what is AI best used for according to this card?",
+        "options": [
+          "Being your only source of facts",
+          "Replacing all experts",
+          "Writing references you never open",
+          "Giving a quick map of the topic before you check real sources"
+        ],
+        "answer": 3,
+        "explanation": "AI can orient you fast, but facts you rely on should come from sources you can name and check."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--12",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "research",
+        "critical-thinking",
+        "balance"
+      ],
+      "title": "Ask AI to lay out different views and where experts disagree",
+      "body": "When a question is complicated, a single neat answer can hide real debate. You can ask AI to set out the main viewpoints, the strongest argument for each, and what evidence each side points to.\n\nThis is useful for decisions like choosing between two ways of running a project, or understanding a debate in your industry. It helps you see what you might be missing.\n\nKeep two cautions in mind. AI may present a fringe view as if it were mainstream, or the other way round. And it may reflect gaps in what it learned. So treat the list of views as a prompt for your own thinking and checking, not as a final verdict.",
+      "apply_it": "On a current work question, ask AI for the best case for and against, then judge them yourself.",
+      "quiz": {
+        "question": "What caution does this card give about asking AI for different viewpoints?",
+        "options": [
+          "AI may misjudge which views are mainstream, so check for yourself",
+          "AI always gives perfectly balanced views",
+          "AI cannot describe disagreements at all",
+          "You should only ever read one view"
+        ],
+        "answer": 0,
+        "explanation": "AI can misrepresent how widely a view is held, so use its list of viewpoints as a starting point for checking."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--13",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "data",
+        "numbers",
+        "checking"
+      ],
+      "title": "When AI works with numbers, ask it to show the steps",
+      "body": "AI can help you sort, summarise and explain data, for example spotting which month had the most sales or explaining what a chart shows. But language tools can slip with arithmetic, especially with long lists or many steps.\n\nAsk it to show its working: which numbers it used, what it added or divided, and why. Then you can follow the logic and spot where it went wrong.\n\nAlso do a rough sense check. If your team has about 20 people and the AI says the average holiday taken is 300 days, something is off. A quick estimate in your head catches many big errors before they reach a report.",
+      "apply_it": "Next time AI gives you a number, ask it to show each step, and make your own rough estimate too.",
+      "quiz": {
+        "question": "What simple check can catch big errors in AI number answers?",
+        "options": [
+          "Trust any answer with decimals",
+          "Ask the AI to use bigger numbers",
+          "Make a quick rough estimate and see if the answer is in the right range",
+          "Round everything to zero"
+        ],
+        "answer": 2,
+        "explanation": "A rough estimate in your head often reveals answers that are wildly off before they cause trouble."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--14",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "data",
+        "spreadsheets",
+        "testing"
+      ],
+      "title": "Test AI spreadsheet formulas on a small sample before using them widely",
+      "body": "AI can write spreadsheet formulas, explain what an existing formula does, or suggest how to clean up messy data. This can save a lot of frustration.\n\nBefore you trust a formula across thousands of rows, test it on a handful where you already know the answer. Try normal cases and odd ones too, like blank cells, very large numbers or text where a number should be.\n\nKeep a copy of the original data before making big changes, so you can undo mistakes. And if a spreadsheet feeds into pay, invoices or anything legal, have a second person look over the logic. A small test now saves a painful correction later.",
+      "apply_it": "Before using an AI-written formula, test it on five rows where you already know the right answer.",
+      "quiz": {
+        "question": "Why test an AI formula on a small sample first?",
+        "options": [
+          "To make the spreadsheet look busy",
+          "Because formulas only work on small data",
+          "It is not needed if the AI sounds sure",
+          "So you can check it against answers you already know before trusting it widely"
+        ],
+        "answer": 3,
+        "explanation": "Testing on rows with known answers, including odd cases, shows whether the formula really works before it affects everything."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--15",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "meetings",
+        "notes",
+        "consent"
+      ],
+      "title": "AI meeting notes need consent beforehand and a human check afterwards",
+      "body": "Some tools can record a meeting and produce a summary and action list. This can free people to listen instead of scribbling.\n\nTwo things matter. First, tell people beforehand and follow your organisation's rules. Some people may not want to be recorded, and in some places recording without consent can break the law. Rules differ by country and workplace.\n\nSecond, read the summary before sharing it. AI notes can miss sarcasm, mix up who said what, or record a passing idea as a firm decision. A wrong action point sent to the whole team causes confusion. Have someone who was there check and correct it.",
+      "apply_it": "Next time you use AI notes, announce it at the start and check the summary before sending it.",
+      "quiz": {
+        "question": "What can go wrong with AI meeting summaries?",
+        "options": [
+          "They are always perfect",
+          "They can mix up speakers or turn a passing idea into a firm decision",
+          "They stop people from talking",
+          "They only work in silent rooms"
+        ],
+        "answer": 1,
+        "explanation": "AI can misattribute comments or misread discussion as decisions, so a person who attended should check the summary."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--16",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "meetings",
+        "preparation",
+        "planning"
+      ],
+      "title": "Use AI to prepare for meetings so the time together is better spent",
+      "body": "Some of the best uses of AI happen before a meeting starts. You can ask it to turn a messy set of topics into a clear agenda with timings, suggest questions to ask, or summarise a long background document so you arrive ready.\n\nIf you have a hard conversation coming up, you can practise by asking AI to play the other side and raise likely objections. This is a low-pressure way to think through your answers.\n\nKeep sensitive details out unless your organisation has approved the tool for that kind of information. You can often describe the situation in general terms and still get helpful preparation.",
+      "apply_it": "Before your next meeting, ask AI to turn your topic list into a timed agenda with two key questions.",
+      "quiz": {
+        "question": "What is one helpful way to use AI before a difficult conversation?",
+        "options": [
+          "Practise by asking it to raise likely objections so you can plan answers",
+          "Ask it to attend the meeting for you",
+          "Let it decide the outcome",
+          "Send its notes instead of talking"
+        ],
+        "answer": 0,
+        "explanation": "Role-playing likely objections helps you prepare your thinking, while you still lead the real conversation."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--17",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "planning",
+        "projects",
+        "priorities"
+      ],
+      "title": "AI can break a big project into steps, but you set the priorities",
+      "body": "When a project feels huge, AI can help you split it into smaller steps, suggest a rough order, spot things you may have forgotten and draft a simple timeline.\n\nThat is a helpful first sketch. But AI does not know which client is most important, which colleague is on holiday next month, or what your manager really cares about. Those facts shape a good plan.\n\nSo use the AI list as raw material. Cross out what does not fit, add what only you know, and decide what comes first. Then check that the timeline is realistic. AI plans are often too optimistic about how long things take.",
+      "apply_it": "Ask AI to break one project into steps, then reorder them by what truly matters most to you.",
+      "quiz": {
+        "question": "What does this card say AI plans are often too optimistic about?",
+        "options": [
+          "How many people like the project",
+          "The colour of the slides",
+          "How much coffee you need",
+          "How long tasks will take"
+        ],
+        "answer": 3,
+        "explanation": "AI timelines often underestimate time, so check each step against your real experience and workload."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--18",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "admin",
+        "email",
+        "productivity"
+      ],
+      "title": "Let AI help with email and admin, but always read before you send",
+      "body": "Routine admin is where AI can quietly give you back time. It can suggest replies to common questions, turn bullet points into a polite message, draft reminder emails or tidy up a form letter.\n\nThe risk is speed. When replies are easy to make, it is tempting to send them without reading. That is how a message ends up with the wrong name, a promise you cannot keep, or a tone that does not suit the person.\n\nBuild a simple pause: read the whole message, check the name and any dates or amounts, and ask whether you would be happy for your manager to see it. Then send.",
+      "apply_it": "Create one reusable email template with AI, then edit it so it is right for your real customers.",
+      "quiz": {
+        "question": "Why is reading every AI-drafted email before sending so important?",
+        "options": [
+          "Emails are never read by others",
+          "AI emails cannot be sent otherwise",
+          "Easy drafting can lead to sending wrong names, promises or tone",
+          "It makes the email longer"
+        ],
+        "answer": 2,
+        "explanation": "Because AI makes drafting fast, it is easy to skip reading, which is when mistakes slip out."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--19",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "skills",
+        "learning",
+        "practice"
+      ],
+      "title": "Keep your skills sharp by still doing some work the hard way",
+      "body": "Skills fade when we stop using them, a bit like a muscle. If AI always writes your summaries or solves your formulas, you may find it harder to do them yourself when the tool is not available or gets something wrong.\n\nYou also need your own skill to judge AI output. You cannot spot a weak report if you have forgotten what a strong one looks like.\n\nSo choose a few tasks to keep doing by hand on purpose, perhaps one report a month or one problem a week. Or try the task yourself first, then compare with the AI version. This keeps your judgement fresh and your confidence real.",
+      "apply_it": "Pick one task you now do with AI and commit to doing it yourself once this week.",
+      "quiz": {
+        "question": "Why does keeping your own skills matter when you use AI?",
+        "options": [
+          "You need your own skill to judge AI output and to cope without it",
+          "It does not matter at all",
+          "Because AI forbids it",
+          "So you can type faster"
+        ],
+        "answer": 0,
+        "explanation": "Your own ability lets you judge whether AI output is good and keeps you capable when the tool falls short."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--20",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "skills",
+        "learning",
+        "growth"
+      ],
+      "title": "Use AI as a patient tutor that helps you understand, not just produce",
+      "body": "There is a big difference between asking AI to do something for you and asking it to help you learn how to do it.\n\nIf you are new to a skill, such as writing a project proposal or reading a financial statement, you can ask it to explain the basics, give you a practice example and then give feedback on your attempt. You can ask it to explain something again in simpler terms as many times as you like.\n\nBecause AI can be wrong, check important lessons against a trusted course, book or colleague. But as a patient practice partner, it can help you grow faster and with less embarrassment.",
+      "apply_it": "Ask AI to set you one practice exercise in a work skill, try it, then ask for feedback.",
+      "quiz": {
+        "question": "What is the difference this card highlights?",
+        "options": [
+          "Using AI for fun versus work",
+          "Asking AI to do a task versus asking it to help you learn the task",
+          "Typing versus speaking to AI",
+          "Short versus long answers"
+        ],
+        "answer": 1,
+        "explanation": "Using AI as a tutor builds your own skill, while only asking it to produce work can leave your skills behind."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--21",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "skills",
+        "careers",
+        "foundations"
+      ],
+      "title": "If you are new to a field, learn the basics before leaning on AI",
+      "body": "Experienced people often get the most out of AI because they can quickly tell good output from bad. Someone new to a job may not yet have that sense, so they can accept errors without noticing.\n\nIf you are early in your career or new to a task, it is worth building the foundations first. Learn how the work is done, why it is done that way and what good looks like. Ask colleagues to show you.\n\nThen bring AI in as a helper. You will use it more wisely, and you will also stand out, because people who understand the basics are still needed to check and guide AI work.",
+      "apply_it": "Ask an experienced colleague what good work looks like in one task, and note three signs of quality.",
+      "quiz": {
+        "question": "Why do experienced people often get more from AI?",
+        "options": [
+          "They type faster",
+          "AI only works for older people",
+          "They can tell good output from bad more quickly",
+          "They never check anything"
+        ],
+        "answer": 2,
+        "explanation": "Experience gives you a sense of quality, which is exactly what you need to judge and improve AI output."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--22",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "honesty",
+        "employer",
+        "trust"
+      ],
+      "title": "Be open with your employer about how you use AI in your work",
+      "body": "Using AI quietly and hoping no one notices can backfire. If a mistake appears in your work, or your employer later learns you used tools they had not approved, trust can suffer even if the work was good.\n\nBeing open is usually the safer path. Tell your manager which tasks you use AI for, how you check the results and what you keep out of it. Many employers welcome this, especially if you show how it helps.\n\nOpenness also helps the whole organisation learn. Your experience might shape sensible guidance for others. If you are unsure whether something is allowed, ask before you do it rather than after.",
+      "apply_it": "Tell your manager one task you use AI for and how you check its output.",
+      "quiz": {
+        "question": "What does this card suggest if you are unsure whether an AI use is allowed at work?",
+        "options": [
+          "Do it quietly and hope for the best",
+          "Ask a friend outside work",
+          "Use it only at night",
+          "Ask before you do it"
+        ],
+        "answer": 3,
+        "explanation": "Asking first protects trust and keeps you within your employer's rules."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--23",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "policy",
+        "employer",
+        "rules"
+      ],
+      "title": "Follow your workplace AI policy, and ask for one if none exists",
+      "body": "Many organisations now have rules about AI: which tools are approved, what information can go into them and when AI use must be mentioned. These rules often exist to protect customers, staff and the business.\n\nFind your organisation's policy and read it properly. If something is unclear, ask your manager or the relevant team.\n\nIf there is no policy yet, you can help by raising it. Suggest a few simple points to agree on: approved tools, what data stays out, who checks AI work and how it is labelled. Even a one-page guide is better than everyone guessing differently.",
+      "apply_it": "Find your workplace's AI policy today. If there is none, suggest three simple rules to your manager.",
+      "quiz": {
+        "question": "Why do many organisations have AI policies?",
+        "options": [
+          "To protect customers, staff and the business",
+          "To stop anyone from working",
+          "To make work slower on purpose",
+          "Because AI tools demand it"
+        ],
+        "answer": 0,
+        "explanation": "Policies set out approved tools, data limits and checks so that AI use stays safe for everyone involved."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--24",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "privacy",
+        "security",
+        "data"
+      ],
+      "title": "Keep confidential work information out of tools your employer has not approved",
+      "body": "It is easy to paste a client list, a draft contract or a colleague's performance review into a chatbot to get help. But depending on the tool and its settings, that information may be stored, reviewed or used in ways you cannot control.\n\nTreat unapproved AI tools like a public space. Do not paste customer details, financial figures that are not public, passwords, trade secrets or personal information about colleagues.\n\nIf you need help with sensitive work, use tools your organisation has approved for that purpose, or describe the problem in general terms with names and numbers removed. Security teams generally advise caution here for good reason.",
+      "apply_it": "Before pasting work text into AI, remove names, figures and anything you would not post publicly.",
+      "quiz": {
+        "question": "Which of these is safest to paste into an unapproved AI tool?",
+        "options": [
+          "A client's contact list",
+          "A general question about how to structure a project plan",
+          "A colleague's performance review",
+          "Your company's unreleased financial results"
+        ],
+        "answer": 1,
+        "explanation": "A general question contains no confidential data. The others include private or sensitive information that should stay out."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--25",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "teams",
+        "rules",
+        "collaboration"
+      ],
+      "title": "Teams work better with a few shared rules for using AI",
+      "body": "When everyone on a team uses AI in their own way, confusion follows. One person checks everything twice, another checks nothing, and no one knows which documents were drafted by a tool.\n\nA short set of team rules helps. You might agree which tasks are fine to use AI for, which are off limits, who reviews AI-assisted work before it goes out, and when to mention that AI was used.\n\nKeep it simple and review it every few months as you learn. Invite people to share what worked and what went wrong. Teams that talk openly about AI tend to use it better and avoid repeating the same mistakes.",
+      "apply_it": "Suggest a 15-minute team chat to agree three simple AI rules.",
+      "quiz": {
+        "question": "What problem do shared team AI rules help to prevent?",
+        "options": [
+          "People taking lunch breaks",
+          "Too many meetings",
+          "Everyone using AI differently, with unclear checking and labelling",
+          "Using paper notebooks"
+        ],
+        "answer": 2,
+        "explanation": "Shared rules create consistent checking and openness, so the team avoids confusion and repeated mistakes."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--26",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "responsibility",
+        "accountability",
+        "work"
+      ],
+      "title": "The person who sends AI-assisted work is responsible for it",
+      "body": "If a report goes out with a wrong figure, saying that the AI wrote it is not a good defence. Clients, managers and the public will see the work as yours, because you chose to use it and to send it.\n\nThis is a helpful rule to keep in mind. It reminds you to check carefully, to keep AI away from tasks you cannot verify and to be honest about its role when that matters.\n\nWithin a team, make it clear who signs off each piece of work. When responsibility is shared vaguely, everyone assumes someone else checked. A named reviewer makes sure someone actually did.",
+      "apply_it": "For your next shared document, name one person who checks and approves it before it goes out.",
+      "quiz": {
+        "question": "Who is responsible for a report that was drafted with AI?",
+        "options": [
+          "The AI tool",
+          "No one",
+          "Whoever reads it first",
+          "The person or team who chose to use it and sent it out"
+        ],
+        "answer": 3,
+        "explanation": "Tools cannot be held responsible. The people who use and send the work are accountable for it."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--27",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "small-business",
+        "productivity",
+        "admin"
+      ],
+      "title": "Small businesses can use AI for everyday tasks that eat up time",
+      "body": "If you run a small business, you may wear many hats. AI can help with some of them, such as drafting product descriptions, writing social media posts, answering common customer questions, preparing a first draft of a newsletter, or organising receipts into categories before your accountant sees them.\n\nStart with the jobs you put off because they are tedious. These are often where AI saves the most stress.\n\nBe careful with anything that could mislead customers. Check that product claims are true, prices are right and promises are ones you can keep. Your reputation is built on trust, and a fast but wrong message can damage it.",
+      "apply_it": "List two tedious tasks in your business and try AI on one of them this week.",
+      "quiz": {
+        "question": "What should a small business owner always check in AI-written marketing?",
+        "options": [
+          "That product claims, prices and promises are true",
+          "That it uses long words",
+          "That it has many emojis",
+          "That it is very long"
+        ],
+        "answer": 0,
+        "explanation": "Misleading claims harm trust and may break consumer rules, so every claim and price needs checking."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--28",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "small-business",
+        "customers",
+        "advice"
+      ],
+      "title": "In a small business, keep the human touch and get expert advice on key matters",
+      "body": "Customers of small businesses often value the personal touch: knowing the owner, getting a thoughtful reply, feeling remembered. If every message becomes generic, that advantage fades.\n\nUse AI to save time on drafts, then personalise them. Mention the customer's last order or a real detail from their message. For complaints or sensitive situations, write the reply yourself or edit the draft heavily.\n\nFor legal, tax, employment and financial questions, AI can help you understand terms and prepare questions, but rules differ by country and change over time. Check important decisions with a qualified professional before acting on them.",
+      "apply_it": "Personalise your next AI-drafted customer reply with one real detail about that customer.",
+      "quiz": {
+        "question": "What does this card advise for legal or tax questions in a small business?",
+        "options": [
+          "Rely fully on AI answers",
+          "Use AI to prepare questions, then check with a qualified professional",
+          "Ignore them",
+          "Ask customers instead"
+        ],
+        "answer": 1,
+        "explanation": "Rules vary and change, so AI is a starting point for understanding, and a professional should confirm key decisions."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--29",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "measurement",
+        "productivity",
+        "time"
+      ],
+      "title": "Measure whether AI truly saves time, including the time spent checking",
+      "body": "It can feel like AI saves hours, but feelings can mislead. A draft that appears in ten seconds may still take thirty minutes to fix and check, and sometimes fixing takes longer than writing from scratch.\n\nTo know for sure, count the whole process: time to explain the task, time to wait, time to check and correct, and time to fix any problems later. Compare that with how long the task took before.\n\nAlso look at quality. Did errors increase? Did customers or colleagues notice a difference? A tool that saves time but adds mistakes may not be a real gain. Honest numbers help you choose where AI actually helps.",
+      "apply_it": "For one task this week, time the full AI process including checking, and compare with doing it yourself.",
+      "quiz": {
+        "question": "What should you include when measuring whether AI saves time?",
+        "options": [
+          "Only the seconds it takes to produce a draft",
+          "Nothing, because it always saves time",
+          "Only the time spent waiting",
+          "The whole process, including explaining, checking and fixing"
+        ],
+        "answer": 3,
+        "explanation": "Real savings depend on the full process, since checking and correcting can take longer than the draft itself."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--30",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "measurement",
+        "experiments",
+        "habits"
+      ],
+      "title": "Run a simple two-week trial and keep only what genuinely helps",
+      "body": "Rather than using AI for everything or nothing, try a small experiment. Pick two or three tasks, use AI for them for two weeks and keep short notes.\n\nFor each task, jot down roughly how long it took, how much you had to fix and how happy you were with the result. Note any mistakes that slipped through.\n\nAt the end, look back honestly. Keep the uses that clearly saved time without hurting quality. Drop the ones that created extra work or worry. Then try a new task. Over time, you build a personal set of AI habits that suit your real work, not someone else's hype.",
+      "apply_it": "Choose two tasks to trial with AI for two weeks and start a simple notes page today.",
+      "quiz": {
+        "question": "What is the point of the two-week trial?",
+        "options": [
+          "To prove AI is always better",
+          "To stop using computers",
+          "To find out honestly which uses help and which do not",
+          "To replace your whole job"
+        ],
+        "answer": 2,
+        "explanation": "A short, honest trial shows which AI uses really help in your work so you can keep those and drop the rest."
+      }
+    },
+    {
+      "id": "ai-work-alongside-ai--31",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-at-work",
+        "summary",
+        "habits",
+        "judgement"
+      ],
+      "title": "Wrap up: AI does the first pass, and you bring the judgement",
+      "body": "You now have a practical approach to working with AI. Hand over tasks that are repetitive, low risk and easy to check. Keep the ones that need judgement, trust and responsibility. Check output in layers, and be extra careful with names, numbers and sources.\n\nUse AI to draft, edit, research, prepare and plan, but make the final work yours. Keep your skills sharp, be open with your employer, follow and help shape team rules, and protect confidential information.\n\nFinally, measure honestly. The goal is not to use AI as much as possible. It is to do better work, with less strain, while staying in charge.",
+      "apply_it": "Look back at your three tasks from card one and decide one change you will make this week.",
+      "quiz": {
+        "question": "What is the main goal of working with AI, according to this guide?",
+        "options": [
+          "Do better work with less strain while staying in charge",
+          "Use AI for absolutely everything",
+          "Avoid all checking to save time",
+          "Hide AI use from everyone"
+        ],
+        "answer": 0,
+        "explanation": "The aim is better work and less strain, with people keeping judgement and responsibility."
+      }
+    }
+  ]
+}

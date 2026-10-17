@@ -1,0 +1,764 @@
+{
+  "source": {
+    "id": "ai-how-ai-works",
+    "title": "How AI Actually Works",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.britannica.com/technology/artificial-intelligence",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on Encyclopaedia Britannica, the Royal Society, the US National Institute of Standards and Technology, the Alan Turing Institute and the OECD.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: Encyclopaedia Britannica, Artificial intelligence, https://www.britannica.com/technology/artificial-intelligence; The Royal Society, Machine learning: the power and promise of computers that learn by example, https://royalsociety.org/topics-policy/projects/machine-learning/; National Institute of Standards and Technology, Artificial intelligence, https://www.nist.gov/artificial-intelligence; The Alan Turing Institute, Understanding artificial intelligence ethics and safety, https://www.turing.ac.uk/research/publications/understanding-artificial-intelligence-ethics-and-safety; OECD, AI principles, https://oecd.ai/en/ai-principles"
+  },
+  "cards": [
+    {
+      "id": "ai-how-ai-works--01",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "overview",
+        "machine-learning",
+        "everyday-tech"
+      ],
+      "title": "AI is less magic and more pattern-finding than most people think",
+      "body": "Artificial intelligence can feel mysterious. It writes poems, spots faces in photos and suggests your next song. It is easy to imagine a thinking mind inside the machine.\n\nThe truth is both more ordinary and more interesting. Most of today's AI is very good at finding patterns in huge piles of examples, then using those patterns to make a guess.\n\nThis guide explains what AI is and is not, how machines learn from examples, why training data matters so much, what a neural network is in plain words, how chatbots predict text, why they sometimes make things up, how image tools and recommendation feeds work, where AI falls short, and a short history of how we got here.",
+      "apply_it": "Write down one thing you believe AI can do. At the end of the guide, check whether you still see it the same way.",
+      "quiz": {
+        "question": "What is most of today's AI mainly good at?",
+        "options": [
+          "Feeling emotions like people do",
+          "Finding patterns in many examples and making a guess",
+          "Knowing the truth about everything",
+          "Thinking about its own life"
+        ],
+        "answer": 1,
+        "explanation": "Most modern AI learns patterns from large amounts of example data and uses them to predict or guess. That is powerful, but it is not the same as a mind."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--02",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "definitions",
+        "everyday-tech",
+        "basics"
+      ],
+      "title": "AI is a broad label for computers doing tasks that seem to need thinking",
+      "body": "AI is not one single invention. It is an umbrella word for many methods that let computers do jobs we used to think needed a human brain.\n\nSome examples are understanding speech, translating languages, recognising objects in pictures, playing games, and writing text. Your phone's spell checker, a map app's route planner and a bank's fraud alert may all use some form of AI.\n\nBecause the label is so wide, people use it for very different things. A simple rule in a thermostat and a huge chatbot can both get called AI. When you hear the word, it helps to ask: what exact task is this system doing?",
+      "apply_it": "Next time you see a product called AI-powered, ask yourself what single task the AI part actually does.",
+      "quiz": {
+        "question": "Why is it useful to ask what exact task an AI system does?",
+        "options": [
+          "Because AI is one single machine",
+          "Because AI never does real tasks",
+          "Because the word AI covers many very different systems",
+          "Because only robots count as AI"
+        ],
+        "answer": 2,
+        "explanation": "AI is an umbrella term. Asking what job a system performs cuts through the hype and tells you what to expect from it."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--03",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "mind",
+        "consciousness",
+        "myths"
+      ],
+      "title": "Today's AI does not have feelings, wishes or a life of its own",
+      "body": "Chatbots can say things like I understand or I am happy to help. That can make it feel as if someone is there. But saying the words is not the same as having the feelings.\n\nMost scientists agree that current AI systems are not conscious. They do not want things, get bored, or worry about tomorrow. They produce outputs because of patterns learned in training, not because of personal goals.\n\nThere are honest debates about whether future machines could ever be conscious, and nobody fully understands consciousness, even in people. For now, a safe way to think of AI is as a very clever tool, not a friend with an inner life.",
+      "apply_it": "When a chatbot sounds caring, remind yourself that warm words are a style it learned, not proof of feelings.",
+      "quiz": {
+        "question": "What do most scientists say about current AI systems?",
+        "options": [
+          "They are not conscious and do not have their own wishes",
+          "They secretly have feelings but hide them",
+          "They are fully alive like animals",
+          "They dream at night when switched off"
+        ],
+        "answer": 0,
+        "explanation": "Most experts agree today's AI is not conscious. Whether future systems could be is debated, but current tools produce outputs from learned patterns."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--04",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "rules",
+        "history",
+        "programming"
+      ],
+      "title": "Early AI followed rules that people wrote by hand",
+      "body": "For many years, people tried to build AI by writing long lists of rules. A medical program might say: if the patient has a fever and a rash, consider measles. A chess program would follow rules for judging good and bad moves.\n\nThis worked well for narrow, tidy problems. But the real world is messy. Try writing rules that describe every possible cat photo: fluffy cats, sleeping cats, cats half hidden behind a sofa. You would never finish.\n\nThat problem pushed researchers towards a different idea. Instead of telling the computer every rule, what if it could work out the patterns itself by studying lots of examples?",
+      "apply_it": "Try writing three rules that would let a computer recognise a dog in any photo. Notice how quickly exceptions appear.",
+      "quiz": {
+        "question": "Why did hand-written rules struggle with tasks like recognising cats?",
+        "options": [
+          "Computers cannot follow rules",
+          "Cats are impossible to photograph",
+          "Rules are always illegal to write",
+          "The real world has too many variations to list them all"
+        ],
+        "answer": 3,
+        "explanation": "Rule-based AI works for tidy problems, but messy real-world tasks have endless exceptions, which led researchers to let machines learn patterns from examples."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--05",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "machine-learning",
+        "examples",
+        "basics"
+      ],
+      "title": "Machine learning means learning patterns from examples instead of rules",
+      "body": "Machine learning is the main idea behind modern AI. Rather than being told the rules, the computer is shown many examples and finds the patterns on its own.\n\nThink of an email spam filter. Nobody types in every trick spammers use. Instead, the system sees thousands of emails already marked spam or not spam. Over time, it notices that certain words, links and senders tend to appear in junk mail.\n\nWhen a new email arrives, the filter compares it with what it has learned and makes a guess. It is not reading the email the way you would. It is weighing patterns. Most of the time this works well, and sometimes a real email lands in your junk folder.",
+      "apply_it": "Open your junk folder and look for one real email that was misjudged. It shows that machine learning makes guesses, not certain decisions.",
+      "quiz": {
+        "question": "How does a spam filter that uses machine learning decide what is junk?",
+        "options": [
+          "It phones the sender to ask",
+          "It compares new emails with patterns learned from many marked examples",
+          "It deletes every email with a link",
+          "It reads emails and understands them like a person"
+        ],
+        "answer": 1,
+        "explanation": "A machine learning spam filter learns from many labelled examples and then guesses about new emails based on those patterns. It can still get things wrong."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--06",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "training",
+        "mistakes",
+        "machine-learning"
+      ],
+      "title": "Training is a long process of guessing, checking and adjusting",
+      "body": "How does a machine actually learn from examples? Through a loop that repeats millions of times.\n\nFirst, the system makes a guess, such as this photo shows a cat. Then it checks the right answer. If it was wrong, it adjusts its inner settings a tiny bit so the same mistake is a little less likely next time. Then it moves on to the next example.\n\nIt is a bit like learning to throw a ball into a bin. You miss to the left, so you aim slightly right. You miss short, so you throw a little harder. No single throw teaches you much, but thousands of small corrections add up to skill. Training an AI works on the same principle, just much faster and on a huge scale.",
+      "apply_it": "Think of a skill you learned by trial and error, like riding a bike. Notice how many tiny corrections it took.",
+      "quiz": {
+        "question": "What happens during each step of training a machine learning system?",
+        "options": [
+          "It guesses, checks the answer and adjusts slightly",
+          "It memorises the whole internet at once",
+          "It asks a human to rewrite its code",
+          "It stops after one example"
+        ],
+        "answer": 0,
+        "explanation": "Training is a repeated loop: make a guess, compare it with the right answer, and nudge the system's settings to reduce the error. Many small fixes add up."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--07",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "training-data",
+        "quality",
+        "machine-learning"
+      ],
+      "title": "An AI can only be as good as the examples it learned from",
+      "body": "The examples used to teach an AI are called training data. They shape everything the system can and cannot do.\n\nIf a plant-identifying app was trained mostly on photos of garden flowers, it may struggle with wild mountain plants. If a speech tool mostly heard a few accents, it may misunderstand others. The AI is not being stubborn. It simply never saw enough of those cases.\n\nPeople sometimes say rubbish in, rubbish out. Missing, messy or wrong data leads to weak or wrong results. That is why the people who build AI spend a great deal of effort collecting, cleaning and checking their data.",
+      "apply_it": "When an AI tool gets something wrong for you, ask: might it have seen too few examples like mine?",
+      "quiz": {
+        "question": "A speech tool often misunderstands one accent. What is the most likely reason?",
+        "options": [
+          "The accent is wrong",
+          "The tool is angry with the speaker",
+          "It had few examples of that accent in its training data",
+          "Speech tools only work on Tuesdays"
+        ],
+        "answer": 2,
+        "explanation": "AI learns from its training data. If an accent was rare in that data, the system has not learned its patterns well and makes more mistakes."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--08",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "bias",
+        "fairness",
+        "training-data"
+      ],
+      "title": "AI can copy unfair patterns that already exist in its data",
+      "body": "Training data comes from the real world, and the real world contains unfairness. If an AI learns from past decisions, it can repeat past mistakes.\n\nImagine a hiring tool trained on years of records from a company that mostly hired one type of person. The tool may learn that this type is what success looks like, and rank other people lower, even if nobody meant it to.\n\nThis is called bias. It is not always easy to spot, because the system looks neutral and uses numbers. That is why good practice includes testing AI on different groups of people, explaining how decisions are made, and keeping humans involved in important choices like jobs, loans and healthcare.",
+      "apply_it": "If an automated system makes a big decision about you, ask whether a person can review it and how it was reached.",
+      "quiz": {
+        "question": "Why might an AI hiring tool treat some people unfairly?",
+        "options": [
+          "Computers dislike certain names",
+          "It learned from past data that already contained unfair patterns",
+          "It was built to be random",
+          "Bias only happens in human brains"
+        ],
+        "answer": 1,
+        "explanation": "AI learns from historical data. If that history was unfair, the system can repeat the pattern while appearing neutral, so testing and human review matter."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--09",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "labels",
+        "machine-learning",
+        "methods"
+      ],
+      "title": "Some AI learns from labelled answers and some finds patterns by itself",
+      "body": "There are a few main ways machines learn.\n\nIn one, every example comes with the right answer attached. This photo is a dog. This email is spam. The system learns to match inputs to labels. Teaching with answers like this is very common.\n\nIn another, there are no labels at all. The system is handed lots of data and finds groupings on its own. A shop might use this to discover that some customers buy similar things, without anyone defining the groups first.\n\nA third way is learning by reward. The system tries actions and gets points for good results, like a game-playing program that slowly finds winning moves. Many modern systems mix these approaches together.",
+      "apply_it": "Look at your photo app's search. If it can find dog when you type it, think about the labelled examples that made that possible.",
+      "quiz": {
+        "question": "A system tries moves in a game and gets points for winning. What kind of learning is this?",
+        "options": [
+          "Learning from labelled answers only",
+          "Learning with no data at all",
+          "Copying rules from a book",
+          "Learning by reward through trial and error"
+        ],
+        "answer": 3,
+        "explanation": "Reward-based learning lets a system try actions and strengthen the ones that earn good results. It is often used for games and control tasks."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--10",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "neural-networks",
+        "brain",
+        "basics"
+      ],
+      "title": "A neural network is a web of simple maths units, loosely inspired by the brain",
+      "body": "Many modern AI systems are built from neural networks. The name sounds like a brain, but the link is loose.\n\nPicture a huge team passing notes. Each team member gets a few numbers, does a very simple sum, and passes a new number on. On its own, each member is not clever at all. But when millions of them are connected in layers, the whole team can turn a photo's pixels into the answer this is a cat.\n\nThe first layer receives the raw input. The last layer gives the answer. The layers in the middle do the hidden work. Real brain cells are far more complex, so think of a neural network as brain-inspired maths, not an artificial brain.",
+      "apply_it": "Picture a long line of people each passing on a slightly changed message. That is a simple way to imagine data flowing through a network.",
+      "quiz": {
+        "question": "How is a neural network best described?",
+        "options": [
+          "A real brain grown in a lab",
+          "A single super-clever unit",
+          "Many simple maths units connected in layers",
+          "A list of hand-written rules"
+        ],
+        "answer": 2,
+        "explanation": "A neural network links huge numbers of simple calculating units in layers. Each is basic, but together they can learn complex patterns."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--11",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "neural-networks",
+        "weights",
+        "training"
+      ],
+      "title": "Learning means tuning millions of tiny dials called weights",
+      "body": "Every connection in a neural network has a strength, a number that says how much one unit's message matters to the next. These numbers are often called weights. You can imagine them as millions of tiny volume dials.\n\nAt the start, the dials are set almost at random, so the network's answers are nonsense. During training, each mistake causes the dials to be nudged up or down a little. Over many examples, the dials settle into settings that give good answers.\n\nHere is the strange part: after training, even the builders often cannot point to one dial and say what it does. The knowledge is spread across all of them. This is one reason AI can be hard to explain.",
+      "apply_it": "Next time you hear that AI is a black box, remember the millions of dials whose meaning is spread out and hard to read.",
+      "quiz": {
+        "question": "Why can it be hard to explain how a trained neural network reached an answer?",
+        "options": [
+          "Its learning is spread across millions of weights with no simple meaning each",
+          "It refuses to answer questions",
+          "The builders lose the code",
+          "Neural networks have only one weight"
+        ],
+        "answer": 0,
+        "explanation": "A network's knowledge lives in a huge number of tuned weights. No single weight holds a clear idea, which makes the system's reasoning hard to trace."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--12",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "deep-learning",
+        "neural-networks",
+        "vision"
+      ],
+      "title": "Deep learning stacks many layers that build up from simple to complex ideas",
+      "body": "Deep learning simply means neural networks with many layers. The word deep refers to the number of layers, not to deep thoughts.\n\nIn a network that looks at pictures, early layers tend to react to very simple things like edges and patches of colour. Middle layers combine those into shapes such as circles or stripes. Later layers combine shapes into whole things, like an eye, a wheel or a face.\n\nNobody programs these steps directly. They emerge during training because they help the network get answers right. Deep learning became practical when computers grew fast enough and large collections of examples became available, and it now powers much of modern AI.",
+      "apply_it": "Look at a face and notice how you see edges, then shapes, then a whole person. Deep networks build up meaning in a similar layered way.",
+      "quiz": {
+        "question": "What does the word deep mean in deep learning?",
+        "options": [
+          "The AI thinks deep thoughts",
+          "The network has many layers",
+          "It is hidden deep underground",
+          "It only works on deep subjects"
+        ],
+        "answer": 1,
+        "explanation": "Deep refers to the many layers in the network. Each layer builds on the one before, from simple features up to complex objects."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--13",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "language-models",
+        "chatbots",
+        "prediction"
+      ],
+      "title": "Large language models work by predicting the next piece of text",
+      "body": "The AI behind chatbots is called a large language model. At its heart, it does one thing: given some text, it predicts what is likely to come next.\n\nIf you type The cat sat on the, the model has learned that mat is a very likely next word. It adds a word, or a piece of a word, then predicts again, and again, building a whole answer one small piece at a time.\n\nThat sounds simple, but predicting text well requires picking up grammar, facts, styles and even some reasoning patterns. That is why these models can write emails, explain ideas and answer questions. Still, underneath, they are always choosing likely continuations, not looking up a guaranteed truth.",
+      "apply_it": "Start typing a message on your phone and watch the suggested next words. A language model is a far bigger version of that idea.",
+      "quiz": {
+        "question": "What is the core task a large language model is trained to do?",
+        "options": [
+          "Search a library for the correct answer",
+          "Feel what the user feels",
+          "Store every web page word for word",
+          "Predict what text is likely to come next"
+        ],
+        "answer": 3,
+        "explanation": "Language models generate answers by repeatedly predicting likely next pieces of text. Doing this well requires learning lots of patterns about language and the world."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--14",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "language-models",
+        "scale",
+        "training-data"
+      ],
+      "title": "Language models learn from enormous amounts of written text",
+      "body": "Large language models are large in two ways. They have a vast number of weights, and they are trained on a vast amount of text, such as books, articles and public web pages.\n\nBy predicting the next word across so much writing, the model absorbs patterns about how people explain, argue, joke and describe the world. It picks up facts too, because facts are part of the patterns in the text.\n\nBut it learns from text, not from living. It has never tasted soup or felt rain. And because the internet contains mistakes, myths and opinions, some of those slip into what the model learns, mixed in with the good material.",
+      "apply_it": "Ask yourself, when you use a chatbot, whether your question needs lived experience or simply knowledge found in writing.",
+      "quiz": {
+        "question": "Why might a language model repeat a common myth?",
+        "options": [
+          "Myths were part of the huge amount of text it learned from",
+          "It enjoys telling stories",
+          "It was told to lie",
+          "It checks every fact against reality first"
+        ],
+        "answer": 0,
+        "explanation": "Models learn from vast text collections that include errors and myths. Those mistaken patterns can show up in answers alongside accurate ones."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--15",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "language-models",
+        "fine-tuning",
+        "feedback"
+      ],
+      "title": "Extra training with human feedback turns a text predictor into a helpful assistant",
+      "body": "A model that has only learned to predict text is not yet a good assistant. Ask it a question and it might just continue with more questions, like a page from a quiz book.\n\nSo builders add more training. They show the model examples of helpful answers. People also rate different answers, and the model is adjusted to prefer the kinds that people judged clear, accurate and safe. This shaping is often called fine-tuning.\n\nThis step gives chatbots their polite, helpful style and teaches them to decline some harmful requests. It improves them a lot, but it does not change the basic engine underneath. It is still predicting text, just in a more useful way.",
+      "apply_it": "Notice the friendly tone of a chatbot's next answer. Remember it was shaped by people rating answers, not by a personality.",
+      "quiz": {
+        "question": "What does fine-tuning with human feedback mainly do?",
+        "options": [
+          "Gives the model real feelings",
+          "Connects it to a human brain",
+          "Shapes it to give answers people judged helpful and safe",
+          "Stops it from predicting text"
+        ],
+        "answer": 2,
+        "explanation": "After basic training, people rate answers and the model is adjusted toward helpful, safe responses. The underlying text prediction stays the same."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--16",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "hallucinations",
+        "accuracy",
+        "language-models"
+      ],
+      "title": "AI can make things up because it aims for likely text, not proven truth",
+      "body": "Sometimes a chatbot states something false with total calm: a book that does not exist, a wrong date, a made-up quote. This is often called a hallucination.\n\nIt happens because of how the model works. It is built to produce text that looks like a good answer. When it lacks solid information, it does not always stop and say I do not know. It may fill the gap with something that sounds right, because sounding right is what it was trained to do.\n\nBuilders keep finding ways to reduce this, but no method removes it completely. Made-up details are most likely with rare topics, exact numbers, quotes, references and very recent events.",
+      "apply_it": "Pick one fact a chatbot gave you recently and check it against a trusted source. See if it holds up.",
+      "quiz": {
+        "question": "Why do language models sometimes invent facts?",
+        "options": [
+          "They want to trick people",
+          "They are trained to produce likely-sounding text and may fill gaps",
+          "They copy only from fake websites",
+          "They never make mistakes, people misread them"
+        ],
+        "answer": 1,
+        "explanation": "Models aim for plausible text. When reliable information is missing, they can fill the gap with confident but false details, called hallucinations."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--17",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "hallucinations",
+        "confidence",
+        "critical-thinking"
+      ],
+      "title": "Smooth, confident writing is not a sign that an answer is correct",
+      "body": "People often trust someone who speaks clearly and confidently. That instinct can mislead us with AI.\n\nA language model writes in the same polished tone whether it is right or wrong. It does not usually sound nervous when it is guessing. A correct answer about the boiling point of water and an invented answer about a local history detail may read exactly the same.\n\nSo judge the content, not the style. Ask: can I check this somewhere reliable? Does it cite a real source I can open? Would a mistake here matter? For a fun poem, it does not. For medicine, money, law or safety, always confirm with a trusted source or a qualified person.",
+      "apply_it": "For any AI answer about health, money or law, find one trusted source that agrees before you act on it.",
+      "quiz": {
+        "question": "What is the best way to judge an AI's answer on an important topic?",
+        "options": [
+          "Trust it if it sounds confident",
+          "Trust it if it is long",
+          "Trust it if it uses big words",
+          "Check it against a reliable source or qualified person"
+        ],
+        "answer": 3,
+        "explanation": "AI writes fluently whether right or wrong. For important matters, confidence tells you nothing, so verify with trusted sources or experts."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--18",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "knowledge-cutoff",
+        "language-models",
+        "limits"
+      ],
+      "title": "A trained model's knowledge is a snapshot that can go out of date",
+      "body": "Training a large model takes a long time, so it learns from text collected up to a certain point. After that, its built-in knowledge stops. This is sometimes called a knowledge cutoff.\n\nAsk it about something that happened after that point, and it may not know, or it may guess based on older patterns. It is like a well-read friend who has been away on a long expedition with no news.\n\nSome tools can search the web or read documents you give them, which helps them use newer information. Even then, they can misread what they find. For anything recent, like prices, rules, sports results or news, check a current, trusted source directly.",
+      "apply_it": "Before trusting an AI on a recent event, check whether the tool looked the information up or relied on older memory.",
+      "quiz": {
+        "question": "Why might a chatbot give an out-of-date answer about recent news?",
+        "options": [
+          "Its training data stops at a certain point in time",
+          "It is hiding the news on purpose",
+          "It only reads newspapers from one country",
+          "Chatbots cannot read dates"
+        ],
+        "answer": 0,
+        "explanation": "Models learn from data collected up to a cutoff. Without a live search, they may not know about later events and can guess wrongly."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--19",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "image-generators",
+        "creativity",
+        "how-it-works"
+      ],
+      "title": "Image generators learn to turn random noise into a picture that fits your words",
+      "body": "AI image tools can paint a fox in a spacesuit from a single sentence. How?\n\nMany of them learn by watching pictures get ruined. In training, a clear image has random speckles added, a little at a time, until it is pure static. The model learns to reverse each small step, working out what the slightly cleaner version should look like.\n\nOnce trained, it starts from fresh random static and removes the noise step by step, guided by your description. Because it learned links between words and pictures from huge numbers of captioned images, the shapes that emerge match what you asked for. Each new start from random noise gives a different result.",
+      "apply_it": "If you try an image tool, run the same description twice and notice how each picture comes out differently.",
+      "quiz": {
+        "question": "How do many AI image generators create a new picture?",
+        "options": [
+          "They cut and paste one existing photo",
+          "They start from random noise and clean it up step by step, guided by text",
+          "They draw with a robot arm",
+          "They search for a matching photo online"
+        ],
+        "answer": 1,
+        "explanation": "Many image models learn to remove noise. At creation time they begin with random static and refine it step by step toward an image that matches the prompt."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--20",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "image-generators",
+        "limits",
+        "patterns"
+      ],
+      "title": "Image tools copy the look of things without truly understanding them",
+      "body": "AI image generators learn what things look like, not how they work. That is why they have often stumbled on details that require real understanding.\n\nFor a long time, hands came out with too many fingers, writing on signs turned into gibberish, and reflections did not match the room. The model knew roughly what a hand looks like but not that people have five fingers for a reason.\n\nThese tools improve quickly, and many such mistakes are now rare. So the lesson is not count the fingers. The lesson is that these systems imitate surface patterns. A picture can look completely real and still show something that never happened.",
+      "apply_it": "Remember that an image looking real tells you nothing about whether it shows a real event.",
+      "quiz": {
+        "question": "What is the key lesson about AI image generators?",
+        "options": [
+          "They always draw hands wrong, so count fingers",
+          "They can only make cartoons",
+          "They imitate how things look, so realistic images may show events that never happened",
+          "They understand physics perfectly"
+        ],
+        "answer": 2,
+        "explanation": "Image tools learn surface appearance. Their obvious errors keep shrinking, so realism is no proof that a scene really took place."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--21",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "voice",
+        "speech",
+        "everyday-tech"
+      ],
+      "title": "Speech AI can turn voices into text and text into convincing voices",
+      "body": "Voice assistants, live captions and dictation all use AI that listens to sound and turns it into words. It learned by hearing huge amounts of recorded speech matched with written transcripts.\n\nThe opposite direction exists too. Speech generators turn written text into spoken audio. Modern ones can sound natural, with pauses and feeling. Some can even copy the sound of a particular person's voice from a fairly short recording.\n\nThis brings real benefits, such as helping people who have lost their voice, or reading articles aloud. It also brings risks, because a copied voice can be used to trick people. Knowing this is possible is the first step to staying safe.",
+      "apply_it": "Turn on automatic captions for a video and spot one word the AI misheard. It shows the system is guessing from sound patterns.",
+      "quiz": {
+        "question": "Which statement about speech AI is true?",
+        "options": [
+          "It can only understand one language",
+          "It cannot make natural-sounding speech",
+          "It never makes mistakes in captions",
+          "It can turn text into speech and may copy a real person's voice"
+        ],
+        "answer": 3,
+        "explanation": "Speech AI works both ways: speech to text and text to speech. Some systems can imitate a specific voice, which is useful but also open to misuse."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--22",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "recommendations",
+        "algorithms",
+        "everyday-tech"
+      ],
+      "title": "Recommendation systems guess what you will want next based on what you did before",
+      "body": "When a streaming service suggests a film or a shop shows you might also like, a recommendation system is at work. It is one of the most common forms of AI in daily life.\n\nIt looks at your past behaviour, such as what you watched, clicked, skipped or bought. It also looks at people with similar habits. If many people who liked the same shows as you also loved a certain series, it will probably suggest that series to you.\n\nThe system does not know your personality. It sees signals: what you paused on, how long you stayed, what you replayed. Every action you take is a small vote that shapes what you see next.",
+      "apply_it": "Scroll your favourite app and ask: which of my past clicks probably led to each suggestion I see?",
+      "quiz": {
+        "question": "How does a recommendation system mainly decide what to show you?",
+        "options": [
+          "By using your past actions and the habits of similar people",
+          "By reading your mind",
+          "By picking things at random",
+          "By asking your friends"
+        ],
+        "answer": 0,
+        "explanation": "Recommendation systems predict your interests from signals like clicks, watch time and purchases, plus patterns from people with similar behaviour."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--23",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "recommendations",
+        "attention",
+        "wellbeing"
+      ],
+      "title": "Feeds are often built to keep you watching, which is not always what is best for you",
+      "body": "Many apps measure success by how long you stay and how much you interact. So their recommendation systems learn to show you whatever keeps you scrolling.\n\nThat can be lovely when it finds a great new song. But content that sparks strong feelings, like outrage or fear, often holds attention well, so it may get pushed more. Feeds can also narrow over time, showing more of what you already watch.\n\nResearchers still debate how strong these effects are for most people. What is clear is that you have some control. Searching for new topics, following varied sources, using not interested buttons and taking breaks all send different signals to the system.",
+      "apply_it": "Tap not interested on one post that leaves you feeling worse, and follow one source that broadens your view.",
+      "quiz": {
+        "question": "What can you do to shape what a recommendation feed shows you?",
+        "options": [
+          "Nothing, the feed is fixed forever",
+          "Only delete the app",
+          "Give it different signals, like searching new topics and marking things not interested",
+          "Turn your phone upside down"
+        ],
+        "answer": 2,
+        "explanation": "Feeds respond to your behaviour. Changing your signals, such as what you search, follow and skip, can change what the system recommends."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--24",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "vision",
+        "everyday-tech",
+        "uses"
+      ],
+      "title": "Computer vision lets machines find patterns in photos and video",
+      "body": "Computer vision is AI that works with images. It is behind face unlock on phones, photo apps that group pictures of the same person, barcode readers, and cars that warn you when you drift out of your lane.\n\nIt also helps in science and medicine. Systems can help doctors spot signs of disease in scans, or help researchers count animals in thousands of wildlife camera photos.\n\nIn medicine, these tools usually support experts rather than replace them. A system might flag a scan for a closer look, and a trained person makes the final call. Vision AI is fast and tireless, but it can be fooled by unusual lighting, angles or situations it rarely saw in training.",
+      "apply_it": "Notice one place today where a camera and AI work together, like a self-checkout, a door camera or your phone's photo search.",
+      "quiz": {
+        "question": "How is computer vision usually used in medicine?",
+        "options": [
+          "It replaces all doctors",
+          "It helps flag things for trained experts, who make the final decision",
+          "It is banned from hospitals everywhere",
+          "It only takes photos of doctors"
+        ],
+        "answer": 1,
+        "explanation": "In healthcare, vision AI typically assists experts by highlighting areas of concern, while qualified people make diagnoses and decisions."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--25",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "limits",
+        "patterns",
+        "cause-and-effect"
+      ],
+      "title": "AI spots patterns that go together, but that is not the same as knowing why",
+      "body": "AI is excellent at noticing that two things often appear together. But things appearing together does not mean one causes the other.\n\nA famous kind of example: a system learning to spot wolves in photos may actually learn that wolves usually stand in snow. Then it labels a husky in snow as a wolf, and a wolf on grass as something else. It found a pattern, but the wrong one.\n\nHumans make this mistake too, yet we can ask why and test our ideas. Most AI systems do not truly understand cause and effect. That is why they can be right for the wrong reasons, and then fail suddenly when the situation changes.",
+      "apply_it": "When you see a claim that X is linked to Y, ask: does one cause the other, or do they just appear together?",
+      "quiz": {
+        "question": "An AI labels a husky in snow as a wolf. What has probably happened?",
+        "options": [
+          "It learned that snow often appears with wolves, not what a wolf really is",
+          "Huskies are actually wolves",
+          "The camera was broken",
+          "It understood the photo perfectly"
+        ],
+        "answer": 0,
+        "explanation": "The AI latched onto a pattern, snow, that often came with wolves in training. It linked features without understanding what actually makes a wolf."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--26",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "limits",
+        "reliability",
+        "surprises"
+      ],
+      "title": "AI can fail badly when something is unlike anything it has seen before",
+      "body": "AI works best on situations similar to its training examples. When something new turns up, it can fail in ways a person never would.\n\nA driving system trained mostly on sunny streets may struggle in heavy snow or with an unusual road sign. A system that reads handwriting may stumble on a very unusual style. A chatbot may give odd answers to a question phrased in a strange way.\n\nPeople cope with surprises by using common sense and general knowledge of the world. AI often lacks that wide, flexible understanding. This is a major reason humans are kept in charge of important systems, ready to step in when the unexpected happens.",
+      "apply_it": "When you rely on an automated tool, think of one unusual situation where it might get confused, and what you would do then.",
+      "quiz": {
+        "question": "Why might a driving system trained on sunny roads struggle in snow?",
+        "options": [
+          "Snow is not real",
+          "It is too cold for computers to think",
+          "It prefers sunny days",
+          "It saw few snowy examples, so the situation is unfamiliar"
+        ],
+        "answer": 3,
+        "explanation": "AI performs best on data like its training. Unfamiliar conditions, such as heavy snow, can cause failures that common sense would avoid."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--27",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "limits",
+        "human-skills",
+        "values"
+      ],
+      "title": "AI cannot care for you, choose your values or take responsibility",
+      "body": "AI can draft, sort, predict and suggest. But some things remain firmly human.\n\nIt cannot truly care about you or your family. It cannot decide what matters most in your life, such as whether to move closer to an ageing parent or take a risk on a new career. It has no lived experience of grief, joy or hard work. And it cannot take responsibility. If an AI's advice goes wrong, a person or organisation still has to answer for it.\n\nSo use AI as an assistant, not a judge. Let it gather options and explain ideas. Keep the choices that touch your values, relationships and wellbeing in your own hands, ideally talked through with people you trust.",
+      "apply_it": "Think of one decision coming up for you. Decide which parts AI could help with and which parts only you should decide.",
+      "quiz": {
+        "question": "Which task should stay with a person rather than an AI?",
+        "options": [
+          "Sorting a list of names alphabetically",
+          "Suggesting a recipe for leftover rice",
+          "Choosing what matters most in your own life",
+          "Turning speech into text"
+        ],
+        "answer": 2,
+        "explanation": "AI can assist with information tasks, but choosing your values and taking responsibility for big decisions belongs to people."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--28",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "energy",
+        "environment",
+        "costs"
+      ],
+      "title": "Training and running big AI systems uses a lot of computing power and energy",
+      "body": "AI feels weightless because it lives on a screen. But behind it are large buildings full of powerful computers, called data centres.\n\nTraining a large model can keep thousands of specialised chips busy for weeks or months. Answering everyone's questions every day also takes ongoing power, and cooling those machines can use a lot of water.\n\nExact figures vary widely and change as technology improves, and experts disagree on the size of the overall impact. Builders are working on more efficient methods. For you, a simple principle helps: AI is a real resource with real costs, so use it when it genuinely helps rather than out of habit for things a quick thought could solve.",
+      "apply_it": "Before asking an AI something trivial, pause and ask whether you could answer it yourself in a few seconds.",
+      "quiz": {
+        "question": "What is true about the energy use of AI?",
+        "options": [
+          "It needs no energy at all",
+          "It runs on large computer centres that use real power and resources",
+          "It only uses the battery in your phone",
+          "Experts all agree on exact figures"
+        ],
+        "answer": 1,
+        "explanation": "Big AI systems run in data centres that need power and cooling. Exact impacts are debated and changing, but the costs are real."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--29",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "history",
+        "pioneers",
+        "origins"
+      ],
+      "title": "The dream of thinking machines is old, and the term AI dates from the 1950s",
+      "body": "People have imagined clever machines for centuries, from myths of bronze guardians to clockwork figures. Real computer science made the idea testable.\n\nIn 1950, the mathematician Alan Turing asked whether machines could think, and suggested a test: could a machine chat so well that you could not tell it from a person? In 1956, a group of researchers held a summer workshop in the United States where the name artificial intelligence was adopted.\n\nEarly hopes were very high. Some predicted human-level machines within a generation. Progress proved much harder, and funding dried up more than once in periods later called AI winters. Excitement and disappointment have taken turns ever since.",
+      "apply_it": "When you next hear a bold AI prediction, remember that experts have been both too hopeful and too doubtful before.",
+      "quiz": {
+        "question": "Which pioneer asked in 1950 whether machines could think?",
+        "options": [
+          "Isaac Newton",
+          "Marie Curie",
+          "Charles Darwin",
+          "Alan Turing"
+        ],
+        "answer": 3,
+        "explanation": "Alan Turing's 1950 paper asked whether machines could think and proposed what became known as the Turing test. The term AI followed in 1956."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--30",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "history",
+        "deep-learning",
+        "progress"
+      ],
+      "title": "Faster computers and huge data sets turned old ideas into today's AI boom",
+      "body": "Neural networks were invented decades ago, but for a long time they were too slow and data was too scarce to make them shine.\n\nOther milestones came first. In 1997, a chess computer beat the reigning world champion, mostly by searching through enormous numbers of moves. Then, in the 2010s, things changed fast. Powerful chips, built originally for video games, could train big networks quickly, and the internet supplied mountains of examples. Image recognition suddenly got much better, followed by speech, translation and more.\n\nThe chatbots and image tools that followed grew from these same foundations: neural networks, lots of data and lots of computing power. The basic ideas are older than most people realise.",
+      "apply_it": "Ask an older relative what they imagined computers would do when they were young, and compare it with today.",
+      "quiz": {
+        "question": "What helped neural networks finally succeed in the 2010s?",
+        "options": [
+          "Faster chips and much larger collections of data",
+          "A brand-new law of physics",
+          "Computers becoming conscious",
+          "Smaller amounts of data"
+        ],
+        "answer": 0,
+        "explanation": "The ideas were old, but powerful chips and huge data sets made training large neural networks practical, sparking rapid progress."
+      }
+    },
+    {
+      "id": "ai-how-ai-works--31",
+      "topic": "ai-skills",
+      "tags": [
+        "ai-basics",
+        "wrap-up",
+        "habits",
+        "confidence"
+      ],
+      "title": "Knowing how AI works helps you use it wisely without fear or blind trust",
+      "body": "You now know the big picture. Most AI learns patterns from examples. Training data shapes what it can do and carries its flaws. Neural networks are layers of simple maths tuned by experience. Chatbots predict likely text, which is why they can sound sure while being wrong. Image tools turn noise into pictures, and recommendation feeds learn from your clicks.\n\nYou also know the limits: no feelings, no real grasp of cause, trouble with surprises, and no responsibility for outcomes.\n\nWith that understanding, you can enjoy what AI does well, check what matters, and keep human judgement in charge. That balance, curious but careful, is the most useful AI skill of all.",
+      "apply_it": "Explain to a friend or family member, in two sentences, how a chatbot produces its answers.",
+      "quiz": {
+        "question": "Which attitude to AI does this guide recommend?",
+        "options": [
+          "Avoid it completely out of fear",
+          "Trust every answer without checking",
+          "Be curious about it but check what matters and keep human judgement in charge",
+          "Let it make all your big decisions"
+        ],
+        "answer": 2,
+        "explanation": "Understanding how AI works lets you use its strengths while checking important outputs and keeping people responsible for key decisions."
+      }
+    }
+  ]
+}

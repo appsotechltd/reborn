@@ -1,0 +1,17 @@
+{
+  "id": "calm-mind",
+  "title": "Calm Mind",
+  "description": "Five guides, followed in order, for a calmer mind: handle stress, ease anxiety and worry, master anger, recover from burnout, then everyday self-help for your mental health.",
+  "topics": [
+    "mental-health",
+    "life-guides",
+    "emotional-intelligence"
+  ],
+  "guides": [
+    "guide-handle-stress",
+    "guide-calm-anxiety",
+    "guide-master-your-anger",
+    "guide-recover-from-burnout",
+    "nhs-mental-health-self-help"
+  ]
+}

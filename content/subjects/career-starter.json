@@ -1,0 +1,18 @@
+{
+  "id": "career-starter",
+  "title": "Career Starter",
+  "description": "Six guides, from managing your time and beating procrastination to landing the job, growing your career, leading a team and staying ready for the future.",
+  "topics": [
+    "productivity",
+    "life-guides",
+    "leadership"
+  ],
+  "guides": [
+    "guide-manage-your-time",
+    "guide-beat-procrastination",
+    "guide-ace-a-job-interview",
+    "guide-grow-your-career",
+    "guide-lead-a-team",
+    "guide-future-proof-your-career"
+  ]
+}

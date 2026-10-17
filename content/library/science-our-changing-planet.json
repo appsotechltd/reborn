@@ -1,0 +1,754 @@
+{
+ "source": {
+  "id": "science-our-changing-planet",
+  "title": "Our Changing Planet",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://science.nasa.gov/climate-change/evidence/",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+  "attribution": "A Reborn guide drawing on NASA, NOAA, the Intergovernmental Panel on Climate Change, the US Geological Survey and the World Meteorological Organization.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn; no text copied. References: NASA, Evidence of climate change, https://science.nasa.gov/climate-change/evidence/; NOAA Climate.gov, Climate change: global temperature, https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature; IPCC, Climate Change 2021: The Physical Science Basis, Summary for Policymakers, https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/; US Geological Survey, This Dynamic Earth: The Story of Plate Tectonics, https://pubs.usgs.gov/gip/dynamic/dynamic.html; US Geological Survey, Can you predict earthquakes?, https://www.usgs.gov/faqs/can-you-predict-earthquakes; World Meteorological Organization, State of the Global Climate, https://wmo.int/publication-series/state-of-global-climate"
+ },
+ "cards": [
+  {
+   "id": "science-our-changing-planet--01",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "overview",
+    "geology",
+    "climate"
+   ],
+   "title": "Earth is always changing, slowly underfoot and faster in the air",
+   "body": "The ground beneath you feels solid and still, but it is moving. Continents drift a few centimetres a year. Mountains rise and wear away. Volcanoes build new land, and rivers carry old land to the sea.\n\nAbove ground, water circles endlessly between sea, sky and land, and the atmosphere shapes our weather and climate.\n\nThis guide covers Earth's layers, plate tectonics, volcanoes, earthquakes, rocks, the water cycle, weather and climate, the greenhouse effect, and what scientists know, and don't yet know, about today's climate change. It ends with practical things people can do.",
+   "apply_it": "Look at any hill, beach or riverbank near you and ask yourself how it might have formed.",
+   "quiz": {
+    "question": "What does this guide cover?",
+    "options": [
+     "Only volcanoes",
+     "How Earth's rocks, water and climate work and change",
+     "How to predict the weather for next year",
+     "Space travel"
+    ],
+    "answer": 1,
+    "explanation": "The guide covers Earth's structure, its moving surface, its water and air, and climate change."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--02",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "layers",
+    "geology"
+   ],
+   "title": "Earth is built in layers, from a thin crust to a hot metal core",
+   "body": "If you could slice Earth open, you would see layers. On the outside is the crust, a thin rocky skin, roughly 5 to 70 kilometres thick. It is thinnest under the oceans and thickest under big mountain ranges.\n\nBelow is the mantle, nearly 3,000 kilometres of hot rock. It is solid, but over millions of years it slowly flows, like very stiff toffee.\n\nAt the centre is the core, made mostly of iron and nickel. The outer core is liquid metal, and its swirling creates Earth's magnetic field. The inner core is solid, despite temperatures thought to be similar to the surface of the Sun, because the pressure is so great.",
+   "apply_it": "Picture a peach: thin skin for the crust, thick flesh for the mantle and a stone at the centre for the core.",
+   "quiz": {
+    "question": "Which part of Earth is liquid metal?",
+    "options": [
+     "The crust",
+     "The upper mantle",
+     "The inner core",
+     "The outer core"
+    ],
+    "answer": 3,
+    "explanation": "The outer core is molten iron and nickel, and its motion generates Earth's magnetic field."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--03",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "layers",
+    "earthquakes",
+    "evidence"
+   ],
+   "title": "Scientists learned about Earth's insides from earthquake waves",
+   "body": "No one has ever drilled through the crust. The deepest hole ever dug reached only about 12 kilometres. So how do we know what lies thousands of kilometres down?\n\nThe answer is earthquakes. When a large quake strikes, it sends waves through the whole planet. Instruments around the world record when and how they arrive. Waves speed up, slow down and bend as they pass through different materials. One type of wave can't travel through liquid at all, and it disappears on the far side of Earth. That told scientists the outer core is liquid.\n\nIt is a bit like working out what is inside a wrapped present by tapping it.",
+   "apply_it": "Tap a full glass and an empty glass and listen. The difference is a tiny version of how scientists study Earth's inside.",
+   "quiz": {
+    "question": "How did scientists discover that Earth's outer core is liquid?",
+    "options": [
+     "By studying how earthquake waves travel through Earth",
+     "By drilling down to it",
+     "From volcano lava",
+     "By weighing the planet"
+    ],
+    "answer": 0,
+    "explanation": "Some earthquake waves cannot pass through liquid, and their shadow revealed the liquid outer core."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--04",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "plate-tectonics",
+    "geology"
+   ],
+   "title": "Earth's surface is broken into moving plates",
+   "body": "The crust and the top of the mantle form a rigid shell that is cracked into large pieces called tectonic plates. There are about a dozen big ones and many smaller ones. They fit together like a cracked eggshell.\n\nThe plates move slowly, typically a few centimetres a year, about as fast as your fingernails grow. They are pushed and pulled by heat and movement in the mantle beneath, and by heavy plate edges sinking.\n\nOver millions of years that adds up. The Atlantic Ocean has been widening for well over 100 million years. The shapes of South America and Africa still look like puzzle pieces that once fitted together.",
+   "apply_it": "Look at a world map and see how the east coast of South America matches the west coast of Africa.",
+   "quiz": {
+    "question": "Roughly how fast do tectonic plates move?",
+    "options": [
+     "A few metres a day",
+     "One kilometre a year",
+     "About as fast as fingernails grow",
+     "They don't move"
+    ],
+    "answer": 2,
+    "explanation": "Most plates move a few centimetres a year, similar to the rate fingernails grow."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--05",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "plate-tectonics",
+    "plate-boundaries"
+   ],
+   "title": "Most of the action happens where plates meet",
+   "body": "Plate edges are where most earthquakes, volcanoes and mountains are found. There are three main types of boundary.\n\nWhere plates pull apart, hot rock rises to fill the gap and new crust forms. This happens along a long mountain chain down the middle of the Atlantic, and on land in Iceland and East Africa.\n\nWhere plates push together, one may slide under the other and sink, often creating deep ocean trenches and lines of volcanoes. If both are continents, they crumple up into mountains.\n\nWhere plates slide past each other sideways, they grind and stick, then jerk free in earthquakes. California's San Andreas Fault is a famous example.",
+   "apply_it": "Push two sheets of paper towards each other on a table and watch them buckle up like a mountain range.",
+   "quiz": {
+    "question": "What usually happens where two plates pull apart?",
+    "options": [
+     "Mountains crumple up",
+     "Nothing at all",
+     "New crust forms as hot rock rises",
+     "The ocean freezes"
+    ],
+    "answer": 2,
+    "explanation": "At spreading boundaries, molten rock rises into the gap and cools into new crust."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--06",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "mountains",
+    "plate-tectonics"
+   ],
+   "title": "Mountains rise when plates collide, and weather slowly wears them down",
+   "body": "The Himalayas, home to Mount Everest, formed when the plate carrying India crashed into Asia. That collision began roughly 50 million years ago and is still going on, so the range is still being pushed up, by a few millimetres a year.\n\nAt the same time, rain, ice, wind and frost break rocks apart. Rivers and glaciers carry the pieces away. Old mountain ranges that stopped rising long ago, like the Appalachians in North America, have been worn down to gentle, rounded hills.\n\nThat is why rocks containing sea fossils can be found high on mountain tops: they were once on the sea floor.",
+   "apply_it": "Next time you see a pebble, think about the mountain it may once have been part of.",
+   "quiz": {
+    "question": "Why can sea fossils be found near the top of Mount Everest?",
+    "options": [
+     "Rocks from an ancient sea floor were pushed up by colliding plates",
+     "Birds carried them there",
+     "Sea levels once reached the top",
+     "They are fake"
+    ],
+    "answer": 0,
+    "explanation": "The rocks formed on a sea floor and were lifted high by the India and Asia collision."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--07",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "volcanoes",
+    "magma"
+   ],
+   "title": "Volcanoes are openings where melted rock escapes from inside Earth",
+   "body": "Deep underground, in certain places, rock melts into magma. Because it is lighter than the rock around it, magma rises and can collect in chambers beneath the surface. When it breaks through, it erupts as lava, ash and gas.\n\nMost volcanoes are at plate boundaries. Many sit around the edge of the Pacific Ocean, in a band known as the Ring of Fire. Others form at hot spots, where a plume of hot material rises from deep in the mantle. The Hawaiian islands formed this way, as the Pacific plate moved over a hot spot, building a chain of islands one after another.",
+   "apply_it": "Find the nearest volcano to where you live on a map, and check whether it is active, dormant or extinct.",
+   "quiz": {
+    "question": "How did the Hawaiian islands form?",
+    "options": [
+     "At a plate collision",
+     "From a meteorite",
+     "From coral only",
+     "As a plate moved over a hot spot in the mantle"
+    ],
+    "answer": 3,
+    "explanation": "A mantle hot spot keeps erupting while the plate moves above it, creating a line of islands."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--08",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "volcanoes",
+    "eruptions",
+    "safety"
+   ],
+   "title": "Runny lava flows gently, while sticky lava can explode",
+   "body": "Not all eruptions are alike. The difference often comes down to how runny the magma is and how much gas it holds.\n\nRunny magma, like that in Hawaii or Iceland, lets gas escape easily. It tends to pour out in rivers of lava. These eruptions can destroy property, but people can usually move out of the way.\n\nThick, sticky magma traps gas, like a shaken fizzy drink with the cap on. Pressure builds until it bursts out violently, blasting ash high into the sky and sending fast, scorching clouds of hot gas and rock down the slopes. Mount St Helens in 1980 and Pinatubo in 1991 were eruptions of this kind.",
+   "apply_it": "If you visit a volcanic area, read the local safety signs and follow official alerts.",
+   "quiz": {
+    "question": "Why do some volcanoes erupt explosively?",
+    "options": [
+     "Their magma is runny and gas-free",
+     "Thick magma traps gas until pressure bursts out",
+     "They are underwater",
+     "They are very small"
+    ],
+    "answer": 1,
+    "explanation": "Sticky magma holds gas in, so pressure builds and releases violently."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--09",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "volcanoes",
+    "climate",
+    "carbon"
+   ],
+   "title": "Big eruptions can cool the planet briefly, but humans emit far more carbon",
+   "body": "A very large eruption can affect the whole planet's weather. When Mount Pinatubo erupted in 1991, it sent sulphur gases high into the atmosphere. These formed a haze that reflected some sunlight, and global temperatures dipped by around half a degree Celsius for about a year or two before recovering.\n\nVolcanoes also release carbon dioxide. People sometimes claim that volcanoes are the real cause of climate change, but measurements show this is not true. Scientists at the US Geological Survey estimate that human activities release roughly a hundred times more carbon dioxide each year than all the world's volcanoes combined.",
+   "apply_it": "If someone says volcanoes cause modern warming, remember the rough comparison: human emissions are around a hundred times larger.",
+   "quiz": {
+    "question": "How do yearly human carbon dioxide emissions compare with those from volcanoes?",
+    "options": [
+     "Humans emit roughly a hundred times more",
+     "Volcanoes emit far more",
+     "They are about equal",
+     "Volcanoes emit no carbon dioxide"
+    ],
+    "answer": 0,
+    "explanation": "USGS estimates human emissions are around a hundred times larger than volcanic emissions."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--10",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "earthquakes",
+    "faults"
+   ],
+   "title": "Earthquakes happen when stuck rocks suddenly slip",
+   "body": "Along faults, which are cracks in Earth's crust, huge blocks of rock try to move past each other. Friction holds them in place while stress builds up, sometimes for hundreds of years. Eventually the rock gives way and slips all at once. The energy released travels outward as shaking waves.\n\nThe size of an earthquake is measured on the magnitude scale. Each whole step up means about ten times more ground movement and around 32 times more energy. So a magnitude 7 quake releases about a thousand times more energy than a magnitude 5.\n\nThousands of small earthquakes happen every day. Most are too weak for people to feel.",
+   "apply_it": "Bend a ruler slowly until it suddenly snaps back. That build-up and release is how a fault slips.",
+   "quiz": {
+    "question": "How much more energy does a magnitude 6 quake release than a magnitude 5?",
+    "options": [
+     "Twice as much",
+     "Exactly the same",
+     "About 32 times as much",
+     "A million times as much"
+    ],
+    "answer": 2,
+    "explanation": "Each whole step on the magnitude scale is roughly 32 times more energy."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--11",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "earthquakes",
+    "safety",
+    "uncertainty"
+   ],
+   "title": "Nobody can predict the exact time of an earthquake, but we can prepare",
+   "body": "Scientists can't yet predict the exact day, place and size of an earthquake. Anyone claiming to do so is not backed by evidence. What scientists can do is forecast: they estimate the chance of a strong quake in a region over the coming decades, based on past quakes and how fast faults are loading up.\n\nThose forecasts guide building rules. Well-designed buildings save the most lives.\n\nIn many earthquake-prone places, the advice when shaking starts is drop, cover and hold on: drop to your hands and knees, cover your head and neck under a sturdy table, and hold on until the shaking stops. Follow your local official guidance.",
+   "apply_it": "If you live in an earthquake area, pick the safest table or spot in each room you use most.",
+   "quiz": {
+    "question": "What can earthquake scientists do today?",
+    "options": [
+     "Predict the exact day and hour of quakes",
+     "Estimate the chance of strong quakes in a region over years",
+     "Stop earthquakes from happening",
+     "Feel quakes before they happen"
+    ],
+    "answer": 1,
+    "explanation": "Scientists forecast probabilities over time, but exact prediction is not yet possible."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--12",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "tsunamis",
+    "earthquakes",
+    "safety"
+   ],
+   "title": "Tsunamis are fast-moving waves caused by the sea floor shifting",
+   "body": "When a large earthquake lifts or drops a section of the sea floor, it shoves a huge mass of water. The result is a tsunami: a series of waves that race across the ocean, sometimes as fast as a jet plane in deep water.\n\nOut at sea, a tsunami may be barely noticeable. As it reaches shallow coasts, it slows, grows taller and floods inland with tremendous force. Landslides and volcanic eruptions can cause tsunamis too.\n\nWarning signs on a coast include strong shaking, a loud roar from the sea, or the water suddenly pulling far back. If you notice these, go to high ground or inland straight away.",
+   "apply_it": "If you visit a coast in a tsunami zone, look for evacuation route signs and note where high ground is.",
+   "quiz": {
+    "question": "What is a natural warning sign of a tsunami?",
+    "options": [
+     "The tide coming in slowly",
+     "Seagulls landing",
+     "Calm, clear skies",
+     "The sea suddenly pulling far back from the shore"
+    ],
+    "answer": 3,
+    "explanation": "A sudden drop in sea level can mean a tsunami is coming. Move to high ground at once."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--13",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "rocks",
+    "rock-cycle",
+    "geology"
+   ],
+   "title": "Rocks come in three kinds and slowly turn into one another",
+   "body": "Igneous rocks form when melted rock cools. Granite cools slowly underground and has large crystals. Basalt cools quickly from lava and has tiny ones.\n\nSedimentary rocks form from layers of sand, mud or shells that settle, pile up and harden over time. Sandstone, limestone and chalk are examples. These are the rocks where most fossils are found.\n\nMetamorphic rocks form when existing rocks are squeezed and heated deep underground without fully melting. Limestone becomes marble, and mudstone becomes slate.\n\nOver millions of years, any rock can be worn down, buried, heated or melted and become another kind. This loop is called the rock cycle.",
+   "apply_it": "Look at a stone wall, kitchen counter or pebble and guess whether it is igneous, sedimentary or metamorphic.",
+   "quiz": {
+    "question": "Which type of rock is most likely to contain fossils?",
+    "options": [
+     "Igneous",
+     "Sedimentary",
+     "Metamorphic",
+     "Volcanic glass"
+    ],
+    "answer": 1,
+    "explanation": "Sedimentary rocks form from settled layers that can bury and preserve remains."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--14",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "deep-time",
+    "fossils",
+    "geology"
+   ],
+   "title": "Earth is about 4.5 billion years old, a span hard to imagine",
+   "body": "Scientists date rocks by measuring the steady breakdown of certain radioactive atoms inside them, which works like a natural clock. The oldest Earth minerals found are about 4.4 billion years old, and meteorites and Moon rocks point to Earth forming about 4.5 billion years ago.\n\nTo picture it, squeeze Earth's history into one day. Simple life appears before breakfast. Animals with shells and skeletons arrive in the evening. Dinosaurs roam for less than an hour late at night. Modern humans appear only in the last few seconds before midnight.\n\nRock layers and fossils let geologists read this long story.",
+   "apply_it": "Find a rock layer in a cliff, road cutting or picture and imagine each band as thousands of years.",
+   "quiz": {
+    "question": "How do scientists work out the age of very old rocks?",
+    "options": [
+     "By counting rings",
+     "By guessing from their colour",
+     "From written records",
+     "By measuring the steady decay of radioactive atoms"
+    ],
+    "answer": 3,
+    "explanation": "Radioactive atoms decay at known, steady rates, which lets scientists calculate a rock's age."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--15",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "water-cycle",
+    "water"
+   ],
+   "title": "The water cycle moves the same water around the planet again and again",
+   "body": "The water you drink today may once have fallen as snow on a mountain, or been in an ocean thousands of kilometres away. Earth keeps recycling its water.\n\nThe Sun heats seas, lakes and soil, and water evaporates into the air as vapour. Plants release water through their leaves too. As the moist air rises and cools, the vapour condenses into tiny droplets, forming clouds. When droplets join and become heavy, they fall as rain, snow or hail.\n\nThat water then soaks into the ground, fills rivers or freezes into ice. Eventually it flows back to the sea or evaporates again, and the cycle continues.",
+   "apply_it": "Breathe on a cold window and watch droplets form. That is condensation, the same step that builds clouds.",
+   "quiz": {
+    "question": "What happens when water vapour rises and cools?",
+    "options": [
+     "It condenses into droplets and forms clouds",
+     "It evaporates",
+     "It turns into salt",
+     "It disappears"
+    ],
+    "answer": 0,
+    "explanation": "Cooling makes vapour condense into droplets, which gather into clouds."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--16",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "water",
+    "freshwater",
+    "ice"
+   ],
+   "title": "Only a small share of Earth's water is fresh and easy to use",
+   "body": "Earth is a watery planet, but about 97 percent of its water is salty ocean. Only around 3 percent is fresh.\n\nMost of that fresh water is locked up in ice sheets and glaciers or hidden underground as groundwater. The water in lakes and rivers, which people use most easily, is a tiny fraction of the total.\n\nGroundwater is stored in rocks and soil and is pumped up through wells. In some regions, it is being used faster than rain can refill it. Keeping fresh water clean and using it carefully matters, especially as a warming climate changes where and when rain falls.",
+   "apply_it": "Turn off the tap while brushing your teeth, and fix any dripping tap at home.",
+   "quiz": {
+    "question": "Where is most of Earth's fresh water found?",
+    "options": [
+     "In rivers",
+     "In lakes",
+     "In ice and underground",
+     "In clouds"
+    ],
+    "answer": 2,
+    "explanation": "Most fresh water is frozen in ice sheets and glaciers or stored as groundwater."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--17",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "atmosphere",
+    "air"
+   ],
+   "title": "The atmosphere is a thin blanket of gases that keeps us alive",
+   "body": "The atmosphere is the layer of air around Earth. Compared with the size of the planet, it is very thin, like the skin on an apple. Most of its mass is in the lowest ten kilometres or so, where weather happens.\n\nAir is mostly nitrogen, about 78 percent, and oxygen, about 21 percent. The rest includes argon, water vapour and small amounts of carbon dioxide. Carbon dioxide makes up only around 0.04 percent of air, but as later cards explain, that small amount has a big effect on temperature.\n\nHigher up, a layer containing ozone absorbs much of the Sun's harmful ultraviolet light.",
+   "apply_it": "Next time you see a plane high in the sky, remember it is flying through most of the air there is.",
+   "quiz": {
+    "question": "What makes up most of the air we breathe?",
+    "options": [
+     "Oxygen",
+     "Carbon dioxide",
+     "Nitrogen",
+     "Water vapour"
+    ],
+    "answer": 2,
+    "explanation": "Air is about 78 percent nitrogen and 21 percent oxygen."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--18",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "weather",
+    "climate"
+   ],
+   "title": "Weather is what happens today, climate is the long-term pattern",
+   "body": "Weather is the state of the air at a particular time and place: today's rain, tomorrow's sunshine, this afternoon's wind. It can change hour by hour.\n\nClimate is the average weather over a long period, usually 30 years or more. It tells you what conditions are typical, and how much they usually vary. A saying captures it: climate is what you expect, weather is what you get.\n\nThis is why one cold winter doesn't disprove global warming, and one hot summer doesn't prove it on its own. Scientists look at long-term trends across the whole planet, not single days or places.",
+   "apply_it": "Look up the average temperature for this month where you live and compare it with today.",
+   "quiz": {
+    "question": "What is the main difference between weather and climate?",
+    "options": [
+     "Weather is short-term, climate is the long-term average",
+     "They are exactly the same",
+     "Climate only describes rain",
+     "Weather only happens in summer"
+    ],
+    "answer": 0,
+    "explanation": "Weather is day-to-day conditions. Climate describes typical conditions over decades."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--19",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "weather",
+    "sun",
+    "wind"
+   ],
+   "title": "The Sun's uneven heating drives wind, clouds and storms",
+   "body": "The Sun heats Earth unevenly. The tropics get more direct sunshine than the poles, and land heats up faster than sea. Warm air rises because it is lighter, and cooler air moves in to take its place. That movement of air is wind.\n\nRising warm air cools as it climbs, so its moisture condenses into clouds and can fall as rain. Big systems of high and low air pressure swirl across the globe, bringing settled or stormy weather.\n\nThe spin of the Earth curves the winds, which is why storms rotate. Ocean currents carry heat too, which is why some coasts are much milder than others at the same latitude.",
+   "apply_it": "On a sunny day by the sea, notice the breeze. Land warms faster than water, which pulls in cooler sea air.",
+   "quiz": {
+    "question": "What mainly causes wind?",
+    "options": [
+     "Trees waving their branches",
+     "The Moon pulling the air",
+     "Mountains blowing air",
+     "Uneven heating of Earth, making warm air rise and cool air move in"
+    ],
+    "answer": 3,
+    "explanation": "Differences in temperature create differences in pressure, and air flows to even them out."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--20",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "greenhouse-effect",
+    "climate"
+   ],
+   "title": "The natural greenhouse effect keeps Earth warm enough for life",
+   "body": "Sunlight passes through the air and warms the ground and sea. Earth then gives off heat as invisible infrared energy. Some gases in the air, called greenhouse gases, absorb some of that heat and send part of it back down, like a blanket.\n\nThis is natural and essential. Without it, Earth's average surface temperature would be around minus 18 degrees Celsius, far below freezing. With it, the average is about 15 degrees.\n\nThe main greenhouse gases are water vapour, carbon dioxide, methane and nitrous oxide. The physics of how they trap heat has been understood and measured for well over a century.",
+   "apply_it": "Think about how a cloudy night often stays warmer than a clear one. Water vapour and clouds are holding heat in.",
+   "quiz": {
+    "question": "Without the natural greenhouse effect, roughly what would Earth's average temperature be?",
+    "options": [
+     "About 15 degrees Celsius",
+     "About minus 18 degrees Celsius",
+     "About 50 degrees Celsius",
+     "Exactly the same as now"
+    ],
+    "answer": 1,
+    "explanation": "Greenhouse gases raise Earth's average from about minus 18 to about 15 degrees Celsius."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--21",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "greenhouse-effect",
+    "carbon-dioxide",
+    "evidence"
+   ],
+   "title": "Carbon dioxide in the air has risen sharply since the 1800s",
+   "body": "Before the industrial era, carbon dioxide in the air was about 280 parts per million. Direct measurements have been taken on a mountain in Hawaii since 1958, and they show a steady climb every year. In recent years the level has passed 420 parts per million, a rise of about 50 percent.\n\nAir bubbles trapped in ancient Antarctic ice let scientists measure the air of the past. They show that today's carbon dioxide level is higher than at any time in at least 800,000 years.\n\nOther greenhouse gases, especially methane, have also risen strongly because of farming, landfills and leaks from fossil fuel production.",
+   "apply_it": "Look up the latest monthly carbon dioxide reading from the Mauna Loa observatory. It is published online.",
+   "quiz": {
+    "question": "What do air bubbles in ancient ice show about today's carbon dioxide levels?",
+    "options": [
+     "They are higher than at any time in at least 800,000 years",
+     "They are normal for Earth's recent past",
+     "They are lower than ever",
+     "Nothing, ice has no air"
+    ],
+    "answer": 0,
+    "explanation": "Ice cores show current carbon dioxide levels are far above anything in at least 800,000 years."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--22",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "causes",
+    "evidence"
+   ],
+   "title": "Scientists are clear that human activity is warming the planet",
+   "body": "The Intergovernmental Panel on Climate Change, or IPCC, reviews thousands of studies from scientists worldwide. In its latest major assessment, it concluded that it is unequivocal, meaning beyond doubt, that human influence has warmed the atmosphere, ocean and land.\n\nThe main cause is burning coal, oil and gas, which releases carbon dioxide. Cutting down forests and some farming practices add more.\n\nSeveral lines of evidence point to people. The extra carbon carries a chemical signature of fossil fuels. The lower atmosphere is warming while the upper atmosphere is cooling, which fits greenhouse gases, not a brighter Sun. Natural factors alone can't explain the warming.",
+   "apply_it": "When you hear a claim about climate, ask where it comes from, and compare it with what NASA, NOAA or the IPCC report.",
+   "quiz": {
+    "question": "What did the IPCC conclude about human influence on the climate?",
+    "options": [
+     "It is unclear",
+     "It has cooled the planet",
+     "It is unequivocal that humans have warmed the planet",
+     "It only affects cities"
+    ],
+    "answer": 2,
+    "explanation": "The IPCC's latest assessment states it is unequivocal that human influence has warmed the climate system."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--23",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "temperature",
+    "evidence"
+   ],
+   "title": "The planet has warmed by more than one degree, and recent years are the hottest on record",
+   "body": "Thermometer records from land, sea, ships, buoys and satellites are checked by several independent groups, including NASA and NOAA. They agree that global average surface temperature has risen by more than 1 degree Celsius since the late 1800s. The IPCC put the warming for 2011 to 2020 at about 1.1 degrees.\n\nThe last ten years have been the warmest decade on record, and 2024 was the warmest single year, around 1.5 degrees above the late 1800s in several datasets.\n\nOne year above 1.5 doesn't mean the Paris Agreement's 1.5 degree goal is broken. That goal refers to the average over about 20 years.",
+   "apply_it": "Look up a chart of global temperature from NASA or NOAA and find the year you were born on it.",
+   "quiz": {
+    "question": "What does the Paris Agreement's 1.5 degree goal refer to?",
+    "options": [
+     "A single hot day",
+     "Long-term average warming over about two decades",
+     "One unusual year",
+     "The temperature in Paris"
+    ],
+    "answer": 1,
+    "explanation": "The 1.5 degree limit refers to long-term average warming, not one year or one place."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--24",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "ice",
+    "sea-level"
+   ],
+   "title": "Ice is melting and sea levels are rising",
+   "body": "Warming is clearly visible in the world's ice. Mountain glaciers are shrinking almost everywhere. The great ice sheets on Greenland and Antarctica are losing ice overall. The area of Arctic sea ice at the end of summer has fallen sharply since satellite records began in 1979.\n\nAs land ice melts and as seawater warms and expands, sea levels rise. Global average sea level rose by about 20 centimetres between 1901 and 2018, and the rate of rise has been speeding up.\n\nSea level will keep rising for centuries, because oceans and ice sheets respond slowly. How fast and how far depends on future emissions and on ice sheet behaviour, which is a key uncertainty.",
+   "apply_it": "Look up a sea level rise map for a coastal place you know or love.",
+   "quiz": {
+    "question": "Roughly how much did global average sea level rise between 1901 and 2018?",
+    "options": [
+     "About 2 centimetres",
+     "About 2 metres",
+     "It fell",
+     "About 20 centimetres"
+    ],
+    "answer": 3,
+    "explanation": "The IPCC estimates global average sea level rose about 20 centimetres over that period."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--25",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "oceans",
+    "acidification"
+   ],
+   "title": "The oceans have soaked up most of the extra heat and much of the carbon",
+   "body": "The ocean is a huge buffer. It has absorbed around 90 percent of the extra heat trapped by greenhouse gases in recent decades. That has slowed warming on land, but it heats the sea, causing marine heatwaves and helping fuel coral bleaching.\n\nThe ocean has also absorbed roughly a quarter or more of the carbon dioxide people have released. When carbon dioxide dissolves in seawater, it makes the water more acidic. Since the industrial era began, surface seawater has become about 30 percent more acidic.\n\nThis makes it harder for creatures like corals, oysters and some plankton to build their shells and skeletons.",
+   "apply_it": "Next time you eat shellfish or see a seashell, remember that more acidic oceans make shells harder to build.",
+   "quiz": {
+    "question": "What has absorbed most of the extra heat trapped by greenhouse gases?",
+    "options": [
+     "The air",
+     "The oceans",
+     "Mountains",
+     "Deserts"
+    ],
+    "answer": 1,
+    "explanation": "About 90 percent of the extra heat has gone into the oceans."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--26",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "extreme-weather",
+    "uncertainty"
+   ],
+   "title": "Climate change is making some extreme weather more common, but not all of it",
+   "body": "Scientists are confident that hot extremes, such as heatwaves, have become more frequent and more intense across most of the world because of human-caused warming. Heavy rainfall has also become more intense in many regions, since warmer air holds more moisture. Some regions face more drought.\n\nAttribution science can now estimate how much climate change affected the odds or strength of a particular heatwave or flood.\n\nFor other events the evidence is weaker. Scientists say there is low confidence in long-term trends for tornadoes, and while the share of the strongest hurricanes appears to be rising, the total number of hurricanes is not clearly changing. Honest science separates the two.",
+   "apply_it": "During the next heatwave, check on an older neighbour or relative, and keep cool and drink water.",
+   "quiz": {
+    "question": "For which type of extreme weather is the link to climate change strongest?",
+    "options": [
+     "Tornadoes",
+     "Hailstorms",
+     "Fog",
+     "Heatwaves"
+    ],
+    "answer": 3,
+    "explanation": "The IPCC finds the evidence clearest for more frequent and intense heat extremes."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--27",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "uncertainty",
+    "science"
+   ],
+   "title": "Some things about climate change are certain, and some are still open",
+   "body": "Scientists are very confident about the basics. The planet is warming. Humans are the main cause. Warming will continue as long as greenhouse gases keep building up.\n\nOther questions are less settled. Climate sensitivity, how much warming a doubling of carbon dioxide would bring, is likely between about 2.5 and 4 degrees Celsius, with 3 the best estimate. Changes in rainfall for particular regions are harder to pin down than temperature. And it is uncertain when, or whether, some tipping points may be crossed, such as faster ice sheet loss or forest dieback.\n\nUncertainty doesn't mean scientists know nothing. It also cuts both ways: outcomes could be milder or worse.",
+   "apply_it": "When you read a climate story, ask yourself: is this a well-established finding or an open question?",
+   "quiz": {
+    "question": "Which of these is still an area of real scientific uncertainty?",
+    "options": [
+     "The exact timing of possible tipping points",
+     "Whether the planet is warming",
+     "Whether humans are the main cause",
+     "Whether carbon dioxide traps heat"
+    ],
+    "answer": 0,
+    "explanation": "The basics are firmly established, while details like tipping points and regional rainfall remain uncertain."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--28",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-change",
+    "future",
+    "emissions"
+   ],
+   "title": "How much more warming happens depends on the choices people make",
+   "body": "The future isn't fixed. Climate scientists explore different paths, from emissions falling fast to emissions continuing to rise. These lead to very different amounts of warming by 2100, from around 1.5 degrees to well over 3 degrees.\n\nA key finding is that warming from carbon dioxide largely stops once the world reaches net zero, meaning carbon dioxide released is balanced by carbon dioxide removed. Temperatures would then stay roughly level rather than keep climbing.\n\nEvery fraction of a degree matters. Less warming means fewer extreme heatwaves, less sea level rise and less harm to nature and people. It is never too late to make things less bad.",
+   "apply_it": "Remember: the question is not whether we have won or lost, but how much warming we can still prevent.",
+   "quiz": {
+    "question": "What does reaching net zero carbon dioxide emissions do?",
+    "options": [
+     "It instantly cools the planet back to the 1800s",
+     "It has no effect",
+     "It largely stops further warming from carbon dioxide",
+     "It makes sea levels fall at once"
+    ],
+    "answer": 2,
+    "explanation": "At net zero, carbon dioxide stops building up, so warming from it largely levels off."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--29",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "climate-solutions",
+    "energy",
+    "action"
+   ],
+   "title": "The biggest solutions are clean energy, efficiency and protecting nature",
+   "body": "Most greenhouse gas emissions come from generating electricity and heat, transport, industry, farming and land use. So the main solutions are clear, even though putting them in place is hard.\n\nCleaner electricity from sources like wind, solar, hydro and nuclear power. Electric vehicles, trains and buses running on that power. Better insulation and heat pumps in buildings. Less waste in industry and food. Protecting forests, wetlands and peat bogs.\n\nThe costs of solar power, wind power and batteries have fallen dramatically over the last decade. Adapting to changes already underway, with flood defences, heat plans and tougher crops, matters too.",
+   "apply_it": "Find out where your home's electricity comes from, and whether a cleaner tariff or supplier is an option.",
+   "quiz": {
+    "question": "Which of these is a major way to cut emissions?",
+    "options": [
+     "Burning more coal",
+     "Cutting down forests",
+     "Switching electricity to clean sources like wind and solar",
+     "Leaving lights on"
+    ],
+    "answer": 2,
+    "explanation": "Clean electricity, efficiency, electric transport and protecting nature are among the biggest levers."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--30",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "action",
+    "everyday-life",
+    "climate-solutions"
+   ],
+   "title": "Everyday choices help most when they are the big ones and when they spread",
+   "body": "Not all personal actions are equal. Studies of household emissions often find that the biggest ones are how you travel, how you heat and power your home, and what you eat. Flying less, driving less or switching to an electric car, insulating your home, and eating less red meat tend to make more difference than recycling a plastic bottle, though recycling helps too.\n\nYour influence goes beyond your own footprint. Talking with friends, supporting climate-friendly policies, voting, and asking employers and councils to act all help change happen at scale.\n\nFeeling worried is normal. Action, especially with others, is one of the best answers to that worry.",
+   "apply_it": "Choose one bigger change, like a journey by train instead of car, and one conversation about climate this month.",
+   "quiz": {
+    "question": "Which personal action usually cuts the most emissions?",
+    "options": [
+     "Flying less or travelling by car less often",
+     "Turning off a phone charger",
+     "Using a paper straw",
+     "Switching off the TV"
+    ],
+    "answer": 0,
+    "explanation": "Travel, home energy and diet usually make up the largest parts of a household's emissions."
+   }
+  },
+  {
+   "id": "science-our-changing-planet--31",
+   "topic": "science",
+   "tags": [
+    "earth",
+    "wrap-up",
+    "geology",
+    "climate"
+   ],
+   "title": "Our planet has always changed, but the speed of change now is unusual",
+   "body": "Earth is restless. Plates drift, mountains rise and wear away, volcanoes build land, and water cycles endlessly through sea, sky and ground. The climate has shifted many times over Earth's long history, through ice ages and warm spells, usually over thousands to millions of years.\n\nWhat is different now is the speed and the cause. Human activity has driven a rise in temperature in about 150 years that is very rapid compared with most natural changes in the past.\n\nUnderstanding how Earth works helps you see through myths, prepare for natural hazards and take part in shaping what comes next.",
+   "apply_it": "Pick one thing from this guide that surprised you and share it with someone today.",
+   "quiz": {
+    "question": "What makes today's climate change unusual compared with the past?",
+    "options": [
+     "The climate has never changed before",
+     "It only affects one country",
+     "It is caused by volcanoes",
+     "Its speed, and that humans are the cause"
+    ],
+    "answer": 3,
+    "explanation": "Earth's climate has changed before, but the current rapid warming is driven by human activity."
+   }
+  }
+ ]
+}

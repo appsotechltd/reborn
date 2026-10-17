@@ -1,0 +1,764 @@
+{
+  "source": {
+    "id": "crime-stay-safe-online",
+    "title": "Stay Safe Online",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.ncsc.gov.uk/cyberaware/home",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the UK National Cyber Security Centre, the US Cybersecurity and Infrastructure Security Agency, the US Federal Trade Commission, the National Center for Missing and Exploited Children and StopNCII.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: National Cyber Security Centre, Cyber Aware, https://www.ncsc.gov.uk/cyberaware/home; National Cyber Security Centre, Recovering a hacked account, https://www.ncsc.gov.uk/guidance/recovering-a-hacked-account; Cybersecurity and Infrastructure Security Agency, Secure Our World, https://www.cisa.gov/secure-our-world; Federal Trade Commission, IdentityTheft.gov, https://www.identitytheft.gov/; National Center for Missing and Exploited Children, Take It Down, https://takeitdown.ncmec.org/; StopNCII, Stop Non-Consensual Intimate Image Abuse, https://stopncii.org/"
+  },
+  "cards": [
+    {
+      "id": "crime-stay-safe-online--01",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "overview",
+        "cyber-security",
+        "habits"
+      ],
+      "title": "Staying safe online is a handful of habits, not a technical skill",
+      "body": "You do not need to understand computers to be safe online. Most of the protection comes from a few simple habits that anyone can learn in an afternoon.\n\nThis guide walks through them in order. First, strong passwords, a password manager and two-step login. Then updates, a quick refresher on phishing, and how to use public wifi sensibly. After that, privacy on social media and how to help children stay safe.\n\nWe also cover the harder topics: sextortion and intimate image abuse, with where to report, and identity theft. Finally, backups and a clear plan for what to do if an account is hacked.\n\nAgencies such as the UK National Cyber Security Centre, the US Cybersecurity and Infrastructure Security Agency and the US Federal Trade Commission give very similar advice. That agreement is a good sign the basics really work.",
+      "apply_it": "Write down the three online accounts that would hurt most if someone broke into them. You will protect those first.",
+      "quiz": {
+        "question": "What does most online safety come down to, according to security agencies?",
+        "options": [
+          "A few simple habits anyone can learn",
+          "Buying expensive security gadgets",
+          "Never using the internet",
+          "Knowing how to write computer code"
+        ],
+        "answer": 0,
+        "explanation": "Agencies like the NCSC, CISA and FTC agree that a small set of everyday habits blocks most common attacks."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--02",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "cyber-security",
+        "risk",
+        "mindset"
+      ],
+      "title": "Most attacks are not personal, so basic defences stop most of them",
+      "body": "Many people think, nobody would bother hacking me. But most online attacks are not aimed at you personally. Criminals use automated tools that try millions of stolen passwords, send millions of fake messages and scan for devices that have not been updated.\n\nThey are looking for the easy wins. If your door is locked, they usually move on to the next one.\n\nThat is good news. You do not have to outsmart a skilled hacker. You only have to be a little harder to break into than average. A unique password, two-step login and automatic updates put you ahead of a large share of people.\n\nThink of it like a bike lock. It will not stop a determined thief with power tools, but it stops the casual one, and that is most of them.",
+      "apply_it": "Pick one account today and add one extra layer of protection, such as two-step login.",
+      "quiz": {
+        "question": "Why do basic security habits stop so many attacks?",
+        "options": [
+          "Hackers only target famous people",
+          "Criminals are not interested in money",
+          "Basic habits make you impossible to hack",
+          "Most attacks are automated and go for the easiest targets"
+        ],
+        "answer": 3,
+        "explanation": "Automated attacks try huge numbers of accounts and devices. Being a little harder to break into than average makes them move on."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--03",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "passwords",
+        "cyber-security",
+        "habits"
+      ],
+      "title": "A long password made of three random words beats a short clever one",
+      "body": "Computers can guess short passwords very quickly, even ones full of symbols like P@ssw0rd!. Swapping letters for numbers fools nobody, because guessing software knows those tricks.\n\nLength matters far more. The UK National Cyber Security Centre suggests joining three random words, such as kettle, planet and violin, into one password. It is long, hard to guess and easy to remember. You can add a number or symbol if a website insists.\n\nAvoid anything linked to you: pet names, birthdays, football teams or your street. That information is often on social media, and criminals look there first.\n\nThe word random is important. Three words from a famous song lyric or your family names are not random. Look around the room, open a book at any page, or let a password manager create one for you.",
+      "apply_it": "Change the password on one important account to three random words joined together.",
+      "quiz": {
+        "question": "Which of these is likely the strongest password?",
+        "options": [
+          "Fluffy2015",
+          "kettleplanetviolin",
+          "P@ssw0rd!",
+          "JohnSmith1980"
+        ],
+        "answer": 1,
+        "explanation": "Three random words make a long password that is hard for software to guess but easy for you to remember."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--04",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "passwords",
+        "data-breaches",
+        "cyber-security"
+      ],
+      "title": "Never reuse a password, because one leak can unlock everything",
+      "body": "Websites get hacked all the time, and lists of stolen email addresses and passwords end up for sale. Criminals then try those same details on banks, shopping sites and email services. This is called credential stuffing, and it works because so many people reuse passwords.\n\nImagine using the same password for a small hobby forum and your email. If the forum is breached, the criminal now has the key to your inbox too.\n\nThe fix is simple: every account gets its own password. That sounds impossible to remember, which is why the next card is about password managers.\n\nYou can check whether your email address has appeared in a known breach using free services such as Have I Been Pwned. If it has, change that password and any others that were the same.",
+      "apply_it": "Search your memory for any password you use on more than one site, and change it on your email first.",
+      "quiz": {
+        "question": "What is credential stuffing?",
+        "options": [
+          "Filling a form with fake details",
+          "Trying stolen passwords from one site on many other sites",
+          "Storing passwords in a notebook",
+          "A type of computer virus that deletes files"
+        ],
+        "answer": 1,
+        "explanation": "Criminals take leaked logins from one breach and try them elsewhere. Unique passwords make this useless."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--05",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "password-managers",
+        "passwords",
+        "tools"
+      ],
+      "title": "A password manager remembers your passwords so you do not have to",
+      "body": "A password manager is an app that creates, stores and fills in strong passwords for you. You only remember one strong main password, and the app handles the rest. Many phones and web browsers have one built in, and there are trusted standalone apps too.\n\nGood password managers also warn you about weak, reused or leaked passwords, and they will only fill in a password on the real website, which helps protect you from fake login pages.\n\nSecurity agencies including the NCSC and CISA recommend them. Putting all your passwords in one place can feel risky, but a well-protected manager is far safer than reusing a few passwords everywhere.\n\nMake the main password long, like three random words, and turn on two-step login for the manager itself.",
+      "apply_it": "Open the password manager built into your phone or browser and look at its list of weak or reused passwords.",
+      "quiz": {
+        "question": "What extra protection can a password manager give you against fake websites?",
+        "options": [
+          "It blocks all emails",
+          "It deletes fake websites from the internet",
+          "It calls the police automatically",
+          "It only fills in passwords on the real website"
+        ],
+        "answer": 3,
+        "explanation": "Because a manager matches the exact web address, it will not offer your password on a lookalike page."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--06",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "two-step-login",
+        "cyber-security",
+        "accounts"
+      ],
+      "title": "Two-step login means a stolen password is not enough",
+      "body": "Two-step login, also called two-factor or multi-factor authentication, asks for something extra after your password. That might be a code from a text message, a code from an authenticator app, a tap on your phone, or your fingerprint.\n\nEven if a criminal has your password, they usually cannot get past the second step without your phone. CISA and the NCSC both say it is one of the most effective things you can do.\n\nAuthenticator apps and security keys are stronger than text message codes, because criminals sometimes trick phone companies into moving your number to their SIM card. But any second step is much better than none.\n\nStart with your email, banking, social media and password manager. Look in each account's security settings for the option.",
+      "apply_it": "Turn on two-step login for your main email account right now. It takes about five minutes.",
+      "quiz": {
+        "question": "Which second step is generally considered strongest?",
+        "options": [
+          "An authenticator app or physical security key",
+          "A text message code",
+          "A security question about your first pet",
+          "Writing your password twice"
+        ],
+        "answer": 0,
+        "explanation": "Authenticator apps and security keys are harder to steal than text codes, though any second step helps a lot."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--07",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "passkeys",
+        "passwords",
+        "accounts"
+      ],
+      "title": "Passkeys let you log in with your face or fingerprint instead of a password",
+      "body": "A passkey is a newer way to log in that many big services now offer. Instead of typing a password, you unlock your phone or computer with your fingerprint, face or PIN, and the device proves who you are to the website.\n\nThe clever part is that there is no password to steal or type into a fake site. A passkey only works with the real website it was made for, so phishing pages cannot capture it.\n\nPasskeys are usually stored in your phone, computer or password manager and can sync between your devices. If you lose a device, you can recover them through your account, so set up a backup method too.\n\nIf a site offers a passkey, it is generally a safer and easier choice than a password.",
+      "apply_it": "Check whether your email or main shopping account offers passkeys in its security settings.",
+      "quiz": {
+        "question": "Why are passkeys hard for phishing websites to steal?",
+        "options": [
+          "They are very long passwords",
+          "They change every minute",
+          "They only work with the real website they were created for",
+          "They are written on paper"
+        ],
+        "answer": 2,
+        "explanation": "A passkey is tied to the genuine site, so a fake page cannot use it, and there is no password for you to type in."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--08",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "email",
+        "accounts",
+        "cyber-security"
+      ],
+      "title": "Your email account is the master key, so protect it first",
+      "body": "Think about what happens when you forget a password. You click forgot password, and a reset link arrives in your email. Now think about what a criminal could do with that same inbox.\n\nAnyone who controls your email can reset the passwords for your bank, shopping, social media and more. That is why the NCSC says your email deserves your strongest protection.\n\nGive it a unique, long password. Turn on two-step login. Check the recovery phone number and backup email are still yours and up to date.\n\nIt is also worth looking at the list of devices logged in to your email and the forwarding rules. Criminals sometimes set up a hidden rule that quietly copies your messages to them. Remove anything you do not recognise.",
+      "apply_it": "Open your email security settings and check the recovery phone number, backup email and list of signed-in devices.",
+      "quiz": {
+        "question": "Why is your email account so important to protect?",
+        "options": [
+          "It holds your photos",
+          "It is the most expensive account",
+          "It can be used to reset the passwords of your other accounts",
+          "Emails can never be deleted"
+        ],
+        "answer": 2,
+        "explanation": "Password reset links go to your email, so whoever controls it can take over many other accounts."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--09",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "updates",
+        "devices",
+        "cyber-security"
+      ],
+      "title": "Updates fix security holes, so let them install automatically",
+      "body": "When you see a message saying an update is ready, it is easy to tap remind me later. But many updates fix security weaknesses that criminals already know about and are actively using.\n\nOnce a weakness becomes public, attackers race to use it against devices that have not been patched. Updating closes that door.\n\nThe simplest approach is to switch on automatic updates for your phone, computer, apps and web browser. Let them install overnight while the device is charging.\n\nOld devices eventually stop getting updates. If your phone, tablet or computer no longer receives security updates, it becomes riskier every month. That is a good time to think about replacing it, or at least avoid using it for banking and email.",
+      "apply_it": "Go to your phone's settings and make sure automatic updates are switched on for the system and apps.",
+      "quiz": {
+        "question": "Why should you install updates promptly?",
+        "options": [
+          "They often fix security holes that criminals are already using",
+          "They always add fun new features",
+          "They make your battery last forever",
+          "They delete viruses from other people's devices"
+        ],
+        "answer": 0,
+        "explanation": "Many updates patch known weaknesses. Leaving devices unpatched gives attackers an open door."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--10",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "phishing",
+        "scams",
+        "email"
+      ],
+      "title": "Phishing tries to rush you into one click, so slow down",
+      "body": "Phishing is when criminals send a message pretending to be someone you trust, like your bank, a delivery company or a streaming service. The goal is to get you to click a link, open an attachment or hand over details.\n\nThe warning signs are usually urgency, fear or a too-good-to-be-true offer: your account will be closed today, a parcel could not be delivered, you have won a prize.\n\nThe best defence is to pause. Do not use the link or phone number in the message. Instead, go to the official app or type the website address yourself.\n\nThis is just a brief reminder. Reborn's guide Spot and Stop Scams covers phishing and other scams in much more depth.",
+      "apply_it": "Next time a message pushes you to act fast, close it and check through the official app or website instead.",
+      "quiz": {
+        "question": "What is the safest way to check a worrying message from your bank?",
+        "options": [
+          "Click the link in the message",
+          "Call the number in the message",
+          "Reply asking if it is real",
+          "Open the bank's official app or type its web address yourself"
+        ],
+        "answer": 3,
+        "explanation": "Using your own trusted route avoids fake links and fake phone numbers placed in the message by criminals."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--11",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "two-step-login",
+        "scams",
+        "phone"
+      ],
+      "title": "Never share a one-time code, even with someone who sounds official",
+      "body": "One-time codes sent by text or shown in an app are a key part of two-step login. Criminals know this, so they try to talk you into handing the code over.\n\nA common trick: someone calls claiming to be your bank's fraud team. They say there is a problem and they will send a code to confirm it is you. In reality, they are logging in to your account, and the code you read out lets them in.\n\nThe rule is simple. A one-time code is only for you to type into the official app or website you are using. No real bank, delivery company or tech support worker needs you to read it to them.\n\nIf someone asks for one, hang up. Then contact the organisation using a number you find yourself.",
+      "apply_it": "Tell one family member the rule: nobody genuine will ever ask you to read out a one-time code.",
+      "quiz": {
+        "question": "A caller from your bank asks you to read out a code they just texted you. What should you do?",
+        "options": [
+          "Read it out quickly",
+          "Hang up and call the bank on a number you find yourself",
+          "Text the code back",
+          "Post the code online to check it"
+        ],
+        "answer": 1,
+        "explanation": "Genuine organisations never need your one-time code. Anyone asking for it is likely trying to log in as you."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--12",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "public-wifi",
+        "privacy",
+        "devices"
+      ],
+      "title": "Public wifi is mostly fine for browsing, but be careful with sensitive tasks",
+      "body": "Free wifi in cafes, hotels and airports is handy. Today most websites use encryption, shown by the padlock or https in the address bar, which makes public wifi safer than it used to be.\n\nThe bigger risks are fake hotspots set up by criminals with names like Free Airport Wifi, and devices that are out of date. Ask staff for the exact network name, and avoid networks you do not recognise.\n\nFor banking or anything sensitive, using your phone's mobile data is usually a safer choice. A reputable VPN can add extra protection on public networks, but it is not magic and will not stop phishing.\n\nTurn off automatic joining of open networks, and turn off file sharing on your laptop when you are out.",
+      "apply_it": "Check your phone's wifi settings and switch off the option to auto-join open networks.",
+      "quiz": {
+        "question": "What is one real risk of public wifi?",
+        "options": [
+          "It makes your phone overheat",
+          "Criminals can set up fake hotspots with convincing names",
+          "It always steals your passwords",
+          "It deletes your photos"
+        ],
+        "answer": 1,
+        "explanation": "A fake hotspot can look genuine. Ask staff for the real network name and use mobile data for sensitive tasks."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--13",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "devices",
+        "smart-home",
+        "passwords"
+      ],
+      "title": "Change default passwords on your router and smart devices",
+      "body": "Your home router connects everything in your house to the internet. Smart speakers, doorbells, cameras and baby monitors are also little computers. Some arrive with a simple default password that is the same on thousands of devices.\n\nCriminals know these default passwords and use them to break into cameras or add devices to networks of hijacked machines. Changing the password closes this easy route.\n\nCheck your router's settings using the details on its label, set a strong wifi password and update its software. Many newer routers do this automatically.\n\nFor each smart device, use the official app, set a unique password, switch on updates and turn off features you never use. If a cheap gadget never gets updates, think twice before pointing it at your living room.",
+      "apply_it": "Find your router's label, log in to its settings, and make sure its admin password is not the default.",
+      "quiz": {
+        "question": "Why do default passwords on smart devices matter?",
+        "options": [
+          "They make devices slower",
+          "They stop the device from working",
+          "They use too much electricity",
+          "They are often widely known, so criminals can log in easily"
+        ],
+        "answer": 3,
+        "explanation": "Default passwords are often shared across many devices and listed online, making them an easy way in."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--14",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "phone",
+        "devices",
+        "privacy"
+      ],
+      "title": "Lock your phone and know how to find or wipe it if it goes missing",
+      "body": "Your phone holds your email, photos, messages, banking apps and often your passwords. If someone picks it up and it is not locked, they have access to a great deal of your life.\n\nSet a screen lock using a PIN of at least six digits, or a fingerprint or face unlock. Make it lock automatically after a short time.\n\nTurn on the built-in find my device feature. If your phone is lost or stolen, you can see where it is on a map, make it ring, lock it, or erase it from another device.\n\nAlso check which apps show message previews on the lock screen. A one-time code popping up on a locked screen can be read by anyone holding the phone.",
+      "apply_it": "Turn on your phone's find my device feature and practise locating it from a computer.",
+      "quiz": {
+        "question": "What can a find my device feature let you do if your phone is stolen?",
+        "options": [
+          "See it on a map, lock it or erase it",
+          "Charge it remotely",
+          "Unlock the thief's phone",
+          "Get a free replacement"
+        ],
+        "answer": 0,
+        "explanation": "Built-in tracking tools let you locate, lock or wipe a lost phone, protecting the data on it."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--15",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "social-media",
+        "privacy",
+        "settings"
+      ],
+      "title": "Check your social media privacy settings, because the defaults favour sharing",
+      "body": "Social media apps often start with settings that share more than you might want: public profiles, visible friend lists, location tags and old posts anyone can scroll through.\n\nSpend ten minutes in each app's privacy settings. Most have a privacy check-up tool that walks you through the options. Decide who can see your posts, who can find you by phone number or email, and who can message you.\n\nLook at which outside apps and games are connected to your account and remove the ones you no longer use. Each one may have access to some of your information.\n\nRemember that settings change when apps update. A quick review every few months keeps things the way you want them.",
+      "apply_it": "Run the privacy check-up tool in the social media app you use most.",
+      "quiz": {
+        "question": "Why is it worth reviewing social media privacy settings?",
+        "options": [
+          "It deletes your account",
+          "It makes your posts more popular",
+          "Default settings often share more than people realise",
+          "Privacy settings never change"
+        ],
+        "answer": 2,
+        "explanation": "Apps often default to public or wide sharing. A short review lets you choose who sees what."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--16",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "social-media",
+        "privacy",
+        "identity-theft"
+      ],
+      "title": "Oversharing gives criminals the answers to your security questions",
+      "body": "Posts that feel harmless can add up. Your birthday, your first school, your pet's name, your mother's maiden name and your home town are common security questions. A happy birthday post or a throwback photo can reveal them.\n\nHoliday posts can tell people your home is empty. Photos can show your house number, car registration, a boarding pass barcode or your child's school uniform.\n\nNone of this means you should stop sharing. It means pausing to think about who can see the post and what it reveals. You can share holiday photos after you get back.\n\nFor security questions, you can give answers that are not true but that you store in your password manager. That way, nobody can look them up.",
+      "apply_it": "Look at your last ten public posts and check what personal details they reveal.",
+      "quiz": {
+        "question": "What is one smart way to handle online security questions?",
+        "options": [
+          "Use your real pet's name",
+          "Leave them blank",
+          "Use an answer that is not true and save it in your password manager",
+          "Post your answers online so you remember them"
+        ],
+        "answer": 2,
+        "explanation": "Made-up answers stored safely cannot be found on social media, unlike real details such as your birthday."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--17",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "social-media",
+        "reputation",
+        "privacy"
+      ],
+      "title": "What you post can last forever, so think before you share",
+      "body": "Once something is online, you lose control of it. Others can screenshot, save and share a post, even one that disappears or that you later delete.\n\nEmployers, universities and landlords sometimes look at people's online presence. A cruel joke or an angry rant from years ago can resurface at a bad moment.\n\nA helpful test is to ask: would I be comfortable if my grandparent, my boss and a stranger all saw this? If not, it may be better not to post it.\n\nThis matters most for photos and messages of a private or intimate nature. Even with someone you trust, relationships can end and devices can be hacked. Later cards cover what to do if an image is shared without consent.",
+      "apply_it": "Search your own name online and see what a stranger could find out about you.",
+      "quiz": {
+        "question": "Why can deleting a post not fully remove it?",
+        "options": [
+          "Others may already have saved or screenshotted it",
+          "The internet keeps everything in a museum",
+          "Deleting is always impossible",
+          "Posts only exist on your phone"
+        ],
+        "answer": 0,
+        "explanation": "Copies may exist through screenshots, shares or saved versions, so it is safest to think before posting."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--18",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "children",
+        "parenting",
+        "communication"
+      ],
+      "title": "Keeping children safe online starts with conversations, not just controls",
+      "body": "Children's charities and safety agencies agree that the most powerful protection is a child who feels able to tell a trusted adult when something online worries them.\n\nTalk early and often, in a calm, curious way. Ask what apps and games they enjoy, who they talk to and what they would do if something upset them. Let them show you their favourite things online.\n\nMake it clear that they will not be in trouble for telling you about something that went wrong, even if they broke a rule. Children often hide problems because they fear losing their phone or tablet.\n\nAgree some family rules together, like where devices are used and when they are switched off at night. Rules children help create are easier to keep.",
+      "apply_it": "Ask a child in your life to show you their favourite app or game and how it works.",
+      "quiz": {
+        "question": "What do experts see as one of the strongest protections for children online?",
+        "options": [
+          "Banning all devices forever",
+          "Letting them work it out alone",
+          "Reading every message in secret",
+          "A child who feels safe telling a trusted adult when something goes wrong"
+        ],
+        "answer": 3,
+        "explanation": "When children know they will not be punished for speaking up, they are more likely to report problems early."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--19",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "children",
+        "parental-controls",
+        "settings"
+      ],
+      "title": "Parental controls and age limits help, especially for younger children",
+      "body": "Phones, tablets, game consoles and broadband routers all have built-in parental controls. They can filter adult content, limit spending, set screen time and control who a child can chat with.\n\nThese tools are most useful for younger children. As children grow, the aim shifts towards teaching them to make good choices themselves, because no filter is perfect and older children can often find ways around them.\n\nMost social media apps set a minimum age, often 13. Those limits exist partly because younger children may not be ready for strangers, pressure and adult content. Some countries now have extra laws on age checks.\n\nCheck privacy settings on any app your child uses, turn off location sharing with strangers, and switch off in-app purchases or require a password for them.",
+      "apply_it": "Open the parental controls on one device your child uses and check spending and chat settings.",
+      "quiz": {
+        "question": "Why should parental controls not be the only protection for older children?",
+        "options": [
+          "They are illegal",
+          "No filter is perfect, and older children need skills to make their own good choices",
+          "They always break devices",
+          "Children do not use the internet"
+        ],
+        "answer": 1,
+        "explanation": "Controls help but can be bypassed. Building judgement and open communication matters more as children grow."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--20",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "children",
+        "grooming",
+        "warning-signs"
+      ],
+      "title": "Grooming often starts with friendliness, gifts and secrecy",
+      "body": "Online grooming is when someone builds a relationship with a child to exploit or abuse them. Groomers may pretend to be a similar age, or be open about being older.\n\nCommon steps include lots of attention and compliments, gifts such as game credits, moving the chat to a private app, and asking the child to keep the friendship secret. Requests for photos can follow, sometimes with pressure or threats.\n\nWarning signs in a child can include becoming secretive about their phone, having new gifts or money they cannot explain, or seeming upset after being online.\n\nTeach children that a real friend never asks them to keep secrets from their family. If you suspect grooming, save evidence, do not confront the person and report it to the police and the platform.",
+      "apply_it": "Tell a child you care for: anyone who asks you to keep an online friendship secret is a warning sign.",
+      "quiz": {
+        "question": "Which is a common warning sign of online grooming?",
+        "options": [
+          "A friend from school sending a funny video",
+          "An online contact asking a child to keep their friendship secret",
+          "A teacher setting homework online",
+          "A game asking for an update"
+        ],
+        "answer": 1,
+        "explanation": "Groomers often push for secrecy and private chats. Teaching children to spot this helps protect them."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--21",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "sextortion",
+        "image-abuse",
+        "blackmail"
+      ],
+      "title": "Sextortion is blackmail using intimate images, and it is never the victim's fault",
+      "body": "Sextortion is when someone threatens to share intimate images or videos of a person unless they pay money, send more images or do something else. Sometimes the criminal really has an image. Sometimes they are bluffing or using a fake.\n\nA common pattern targets teenagers and young men. A stranger, often posing as an attractive young person, flirts quickly, shares a picture and asks for one back. Within minutes, the threats start, along with a list of the victim's friends and family.\n\nPolice and child protection groups in many countries report sharp rises in these cases. The criminals are often organised gangs working at scale.\n\nIf this happens to you or someone you know, it is not your fault. You are the victim of a crime, and help is available.",
+      "apply_it": "Tell a young person you know that if anyone ever threatens them with images, they can come to you without being judged.",
+      "quiz": {
+        "question": "Who is responsible when someone is targeted by sextortion?",
+        "options": [
+          "The victim, for sharing an image",
+          "The victim's friends",
+          "Nobody, it is not a crime",
+          "The criminal making the threats"
+        ],
+        "answer": 3,
+        "explanation": "Sextortion is a crime, and blame lies entirely with the person making the threats, not the victim."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--22",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "sextortion",
+        "reporting",
+        "what-to-do"
+      ],
+      "title": "If someone threatens to share your images, stop, do not pay and get help",
+      "body": "If you are being blackmailed with intimate images, these steps, recommended by police and child safety groups, can help.\n\nStop replying to the person. Do not pay or send anything more. Paying rarely ends it and often leads to more demands.\n\nKeep evidence. Take screenshots of the messages, the profile and any payment details before you block them. Then block and report them on the platform.\n\nTell someone you trust. If you are under 18, tell a parent, teacher or another safe adult. You will not be in trouble.\n\nReport it to the police. Sextortion is a crime in many countries, and police take it seriously.\n\nIf you feel overwhelmed or unsafe, contact local emergency services or a crisis line straight away. You are not alone.",
+      "apply_it": "Save this card. If you or someone you know is ever targeted, the steps are: stop, do not pay, save evidence, tell someone, report.",
+      "quiz": {
+        "question": "Why do experts advise victims of sextortion not to pay?",
+        "options": [
+          "Paying rarely ends the threats and often leads to more demands",
+          "Paying is the quickest way to end it",
+          "The criminal will refund the money",
+          "Police will pay for you"
+        ],
+        "answer": 0,
+        "explanation": "Criminals who are paid usually ask for more. Stopping contact, keeping evidence and reporting is safer."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--23",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "image-abuse",
+        "reporting",
+        "support"
+      ],
+      "title": "Free tools can help remove intimate images shared without consent",
+      "body": "Sharing intimate images of someone without their consent, sometimes called revenge porn or intimate image abuse, is a crime in many countries. So is making fake sexual images of real people with AI in a growing number of places.\n\nThere are free tools that can help. StopNCII.org, run by a UK charity, helps adults stop images spreading on many major platforms. It creates a digital fingerprint of the image on your own device, so the image itself is never uploaded.\n\nTake It Down, run by the US National Center for Missing and Exploited Children, works in a similar way for images taken when someone was under 18.\n\nYou can also report the content directly to the platform, and report the crime to the police. Support charities in many countries offer confidential help.",
+      "apply_it": "Bookmark StopNCII.org and TakeItDown.ncmec.org so you know where to go if you or a friend ever needs them.",
+      "quiz": {
+        "question": "How does StopNCII.org protect privacy when helping remove images?",
+        "options": [
+          "It asks you to email the image",
+          "It posts the image to warn others",
+          "It creates a digital fingerprint on your own device so the image is not uploaded",
+          "It needs your passwords"
+        ],
+        "answer": 2,
+        "explanation": "The tool makes a unique fingerprint of the image on your device. Platforms use that to block copies, without seeing the image."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--24",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "identity-theft",
+        "fraud",
+        "warning-signs"
+      ],
+      "title": "Identity theft is when someone uses your details to pretend to be you",
+      "body": "Identity theft happens when a criminal uses your personal information, like your name, date of birth, address, bank details or ID numbers, to open accounts, take out loans, claim benefits or buy things in your name.\n\nThe information can come from data breaches, phishing, stolen post, lost wallets or details shared online.\n\nThe US Federal Trade Commission lists warning signs to watch for. You might see charges you do not recognise, get bills or letters for accounts you never opened, stop receiving expected post, be turned down for credit unexpectedly, or get calls from debt collectors about debts that are not yours.\n\nThe sooner you spot it, the easier it is to fix, so it pays to keep a gentle eye on your accounts.",
+      "apply_it": "Look at your last bank and card statements and check every transaction is one you recognise.",
+      "quiz": {
+        "question": "Which could be a sign of identity theft?",
+        "options": [
+          "Getting your usual phone bill",
+          "A birthday card from a friend",
+          "A letter about a loan you never applied for",
+          "An advert for shoes"
+        ],
+        "answer": 2,
+        "explanation": "Letters, bills or debts for accounts you never opened are classic warning signs that someone is using your identity."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--25",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "identity-theft",
+        "credit",
+        "prevention"
+      ],
+      "title": "Shred documents, check statements and consider a credit freeze",
+      "body": "A few habits make identity theft much harder.\n\nShred or tear up post with personal details before throwing it away, such as bank letters, bills and medical papers. Keep your passport and ID documents somewhere safe at home rather than in your wallet.\n\nCheck bank and card statements regularly, and turn on transaction alerts in your banking app.\n\nIn many countries you can check your credit report for free. Look for accounts or searches you do not recognise. In the United States, the FTC explains how to place a free credit freeze, which stops new lenders seeing your report, so criminals cannot easily open credit in your name. Other countries have different systems, such as fraud alerts or protective registration services.\n\nBe careful about sharing ID numbers. Ask why they are needed.",
+      "apply_it": "Find out how to get your free credit report in your country, and check it this month.",
+      "quiz": {
+        "question": "What does a credit freeze do in the United States?",
+        "options": [
+          "Stops new lenders viewing your credit report, making it hard to open credit in your name",
+          "Closes all your bank accounts",
+          "Lowers your credit score",
+          "Freezes your savings"
+        ],
+        "answer": 0,
+        "explanation": "A freeze blocks access to your credit report for new credit, which stops most new-account fraud. You can lift it when needed."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--26",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "identity-theft",
+        "what-to-do",
+        "reporting"
+      ],
+      "title": "If your identity is stolen, act quickly and keep a record of everything",
+      "body": "Discovering that someone has used your identity is stressful, but there are clear steps.\n\nContact the bank, card company or business where the fraud happened, using a number from their official website or the back of your card. Ask them to close or freeze the account.\n\nChange passwords on affected accounts, starting with email, and turn on two-step login.\n\nReport it. In the United States, IdentityTheft.gov from the FTC creates a personal recovery plan and report. In the UK, fraud is reported to Action Fraud, or Police Scotland in Scotland. Other countries have their own police or fraud reporting services.\n\nKeep a log of who you spoke to, when, and what they said, plus copies of letters and reference numbers. This makes disputes much easier.",
+      "apply_it": "Start a simple note on your phone called Fraud log, ready to use if you ever need it.",
+      "quiz": {
+        "question": "What is IdentityTheft.gov?",
+        "options": [
+          "A social media site",
+          "A website that sells credit cards",
+          "A bank",
+          "A US government site from the FTC that helps victims report and recover from identity theft"
+        ],
+        "answer": 3,
+        "explanation": "The FTC's IdentityTheft.gov helps US victims report the theft and get a step-by-step recovery plan."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--27",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "backups",
+        "data",
+        "devices"
+      ],
+      "title": "Back up your important files so a lost phone or attack is not a disaster",
+      "body": "Phones get dropped in water, laptops get stolen and hard drives fail. Criminals can also lock your files with ransomware. A backup means a spare copy of your files is safe somewhere else.\n\nA well-known rule of thumb is three copies of important files, on two different types of storage, with one kept away from your home. In practice, many people use automatic cloud backup plus an external drive.\n\nTurn on automatic backup for your phone so photos and contacts are saved. For a computer, use its built-in backup tool.\n\nA backup is only useful if it works. Every few months, try restoring one file or photo to check. And protect your cloud backup account with a strong password and two-step login, because it holds copies of everything.",
+      "apply_it": "Check that your phone's photos are backing up automatically, and see when the last backup happened.",
+      "quiz": {
+        "question": "What does the 3-2-1 backup rule suggest?",
+        "options": [
+          "Back up three times a day",
+          "Three copies, on two types of storage, with one kept elsewhere",
+          "Use three passwords",
+          "Delete files after two days"
+        ],
+        "answer": 1,
+        "explanation": "Multiple copies in different places mean one accident or attack cannot wipe out everything."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--28",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "backups",
+        "ransomware",
+        "cyber-security"
+      ],
+      "title": "Ransomware locks your files and demands money, so backups are your escape",
+      "body": "Ransomware is malicious software that scrambles your files and then demands payment, often in cryptocurrency, to unlock them. It usually arrives through a phishing email, a dodgy download or an out-of-date device.\n\nIt hits hospitals, schools and businesses, but home users can be caught too.\n\nAgencies such as the NCSC and CISA advise against paying. Payment does not guarantee you will get your files back, and it funds more crime. Rules on paying vary by country.\n\nThe best protection is prevention plus a good backup. Keep devices updated, be wary of attachments and downloads, and keep at least one backup that is not permanently connected to your computer. That way, ransomware cannot reach it.\n\nIf you are hit, disconnect the device from the internet and seek trusted help.",
+      "apply_it": "If you use an external backup drive, unplug it when the backup is finished so ransomware cannot reach it.",
+      "quiz": {
+        "question": "Why is a disconnected backup useful against ransomware?",
+        "options": [
+          "It runs faster",
+          "Ransomware cannot reach and lock files on a drive that is not connected",
+          "It deletes the ransomware",
+          "It pays the ransom for you"
+        ],
+        "answer": 1,
+        "explanation": "Ransomware can spread to connected drives. A copy kept unplugged stays safe and lets you restore your files."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--29",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "hacked",
+        "warning-signs",
+        "accounts"
+      ],
+      "title": "Know the signs that an account or device has been hacked",
+      "body": "Spotting a hack early limits the damage. Watch for these signs.\n\nYou cannot log in, or your password suddenly does not work. You get alerts about logins or password changes you did not make. Friends say they received strange messages or links from you. Posts, emails or purchases appear that you did not make.\n\nOn a device, warning signs can include new apps you did not install, pop-ups everywhere, settings changing on their own, or a phone battery draining unusually fast. These can have innocent causes too, so do not panic, but do check.\n\nIn your email, look for messages in the sent folder you did not write, new forwarding rules, or deleted security alerts.\n\nTrust your instincts. If something feels off, it is worth investigating.",
+      "apply_it": "Look at the list of recent logins or active sessions in your email and social media accounts.",
+      "quiz": {
+        "question": "Which could be a sign that your email has been hacked?",
+        "options": [
+          "A newsletter you signed up for",
+          "Getting a birthday message",
+          "Your inbox being full",
+          "Friends receiving odd messages from you that you did not send"
+        ],
+        "answer": 3,
+        "explanation": "Messages sent from your account that you did not write are a common sign that someone else has access."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--30",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "hacked",
+        "what-to-do",
+        "accounts"
+      ],
+      "title": "If you are hacked, secure your email, change passwords and tell people",
+      "body": "If an account has been hacked, act calmly and quickly. The NCSC and FTC suggest steps like these.\n\nIf you can still log in, change the password straight away to a new, unique one, and turn on two-step login. Sign out of all other devices from the security settings.\n\nIf you are locked out, use the service's official account recovery page. Never pay someone who offers to recover it for you, as these are often scams.\n\nCheck your email first, because it controls other accounts. Remove unknown forwarding rules and recovery details. Then change passwords on any accounts that shared the same password.\n\nIf money is involved, call your bank. Warn friends not to click links sent from your account. Report the crime to your national fraud or cybercrime service.",
+      "apply_it": "Write a short checklist on paper: change password, turn on two-step login, sign out other devices, check email, call bank, warn friends.",
+      "quiz": {
+        "question": "You are locked out of a hacked account. Someone online offers to recover it for a fee. What should you do?",
+        "options": [
+          "Use the service's official recovery page instead",
+          "Pay them quickly",
+          "Give them your other passwords",
+          "Wait a year"
+        ],
+        "answer": 0,
+        "explanation": "Paid recovery offers are often scams. The official recovery process is the safe route."
+      }
+    },
+    {
+      "id": "crime-stay-safe-online--31",
+      "topic": "crime-society",
+      "tags": [
+        "online-safety",
+        "habits",
+        "summary",
+        "cyber-security"
+      ],
+      "title": "Small habits, done once, protect you for years",
+      "body": "Online safety can feel endless, but most of it is a one-time setup followed by gentle habits.\n\nHere is the short version. Protect your email first. Use a unique password for every account, with a password manager to remember them. Turn on two-step login or passkeys. Let updates install automatically. Pause before clicking links in surprising messages, and never share one-time codes.\n\nReview privacy settings on social media and think before you post. Talk with children often and without blame. Know that sextortion and image abuse are crimes, and that free tools and police can help. Keep an eye on statements, and back up your files.\n\nIf something goes wrong, act quickly, save evidence and report it. Being a victim of online crime says nothing bad about you. Criminals work hard to fool everyone.",
+      "apply_it": "Pick the one step from this guide you have not done yet and do it today.",
+      "quiz": {
+        "question": "Which account should you usually protect first?",
+        "options": [
+          "An old gaming account",
+          "A shopping newsletter",
+          "Your email account",
+          "A weather app"
+        ],
+        "answer": 2,
+        "explanation": "Email can reset most other accounts, so securing it first gives the biggest benefit."
+      }
+    }
+  ]
+}

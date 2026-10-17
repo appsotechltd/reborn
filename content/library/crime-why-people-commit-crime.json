@@ -1,0 +1,788 @@
+{
+  "source": {
+    "id": "crime-why-people-commit-crime",
+    "title": "Why People Commit Crime",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.britannica.com/topic/criminology",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on Britannica, the US National Institute of Justice, the US National Academies, the World Health Organization and the UK Ministry of Justice.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: Britannica, Criminology, https://www.britannica.com/topic/criminology; National Institute of Justice, Five Things About Deterrence, https://nij.ojp.gov/topics/articles/five-things-about-deterrence; National Academies, The Growth of Incarceration in the United States, https://nap.nationalacademies.org/catalog/18613; World Health Organization, Youth violence fact sheet, https://www.who.int/news-room/fact-sheets/detail/youth-violence; UK Ministry of Justice, Proven reoffending statistics, https://www.gov.uk/government/collections/proven-reoffending-statistics; College of Policing, Crime Reduction Toolkit, https://www.college.police.uk/research/crime-reduction-toolkit"
+  },
+  "cards": [
+    {
+      "id": "crime-why-people-commit-crime--01",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "overview",
+        "theories",
+        "causes"
+      ],
+      "title": "There is no single reason people commit crime, but there are patterns",
+      "body": "Why do people break the law? It is one of the oldest questions in society, and criminology is the field that studies it.\n\nThis guide explains the main ideas in plain words. We start with rational choice, the idea that people weigh up costs and benefits. Then we look at strain, social learning, peer groups, self-control and the role of opportunity.\n\nWe also look at patterns that show up again and again: the age-crime curve, the links with poverty, inequality, drugs and alcohol, and the neighbourhoods people grow up in.\n\nFinally, we turn to what actually prevents crime, and what helps people stop offending once they have started.\n\nMany of these ideas are still debated by researchers. Where the evidence is mixed, we will say so.",
+      "apply_it": "Before reading on, jot down your own best guess at the biggest cause of crime. See if it changes by the end.",
+      "quiz": {
+        "question": "What is criminology?",
+        "options": [
+          "The study of crime, its causes and responses to it",
+          "A type of police training",
+          "The study of fingerprints only",
+          "A branch of computer science"
+        ],
+        "answer": 0,
+        "explanation": "Criminology studies why crime happens, who it affects and how societies respond to it."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--02",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "risk-factors",
+        "causes",
+        "research"
+      ],
+      "title": "Risk factors raise the chances of offending, but they are not destiny",
+      "body": "Researchers talk about risk factors, which are things linked to a higher chance of offending, and protective factors, which lower it.\n\nRisk factors include growing up with violence at home, leaving school early, having friends who offend, heavy drinking and living in an area with few opportunities. Protective factors include a caring adult, success at school, a steady job and positive friendships.\n\nThe key word is chance. Most people with several risk factors never commit serious crime. And some people with few risk factors do. A risk factor is like dark clouds: rain is more likely, but not certain.\n\nCrime usually comes from several factors working together, along with personal choices and chance events. That is why simple explanations nearly always fall short.",
+      "apply_it": "Think of one protective factor in your own life, such as a person or habit, that helped keep you on track.",
+      "quiz": {
+        "question": "What is a protective factor?",
+        "options": [
+          "Something that makes crime certain",
+          "A prison rule",
+          "A type of police armour",
+          "Something linked to a lower chance of offending"
+        ],
+        "answer": 3,
+        "explanation": "Protective factors, like a caring adult or a steady job, are linked to lower chances of offending."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--03",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "law",
+        "society",
+        "history"
+      ],
+      "title": "What counts as a crime depends on time and place",
+      "body": "Crime is not a fixed list written in nature. It is whatever a society's laws say is forbidden and punishable, and that changes.\n\nThings once legal in many places are now crimes, such as drink-driving and marital rape. Other things once illegal are now legal in many countries, such as homosexuality. Cannabis is legal in some places and a serious crime in others.\n\nThis matters for the question of why people commit crime. Sometimes the question is really about harmful behaviour like violence and theft, which almost every society forbids. Sometimes it is about behaviour that only some societies criminalise.\n\nCriminologists keep both in mind. They study why people cause harm, and also why societies choose to call certain acts crimes.",
+      "apply_it": "Think of one act that was legal when your grandparents were young but is a crime today, or the other way around.",
+      "quiz": {
+        "question": "Why do criminologists say crime is partly defined by society?",
+        "options": [
+          "Because laws are identical everywhere",
+          "Because what is illegal changes between countries and over time",
+          "Because crime does not really exist",
+          "Because only judges decide what crime is"
+        ],
+        "answer": 1,
+        "explanation": "Laws differ between places and change over time, so what counts as a crime is shaped by each society."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--04",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "patterns",
+        "research",
+        "repeat-offending"
+      ],
+      "title": "Most people break a rule at some point, but a few commit much of the crime",
+      "body": "Surveys where people anonymously report their own behaviour show that many people have done something illegal at some point, often minor, like shoplifting as a teenager, using illegal drugs or speeding.\n\nAt the same time, studies that follow groups of people over many years find that a small share of individuals account for a large share of offences, especially serious and violent ones. A famous study of boys in Philadelphia found that about six percent of them were responsible for around half of the recorded offences in that group.\n\nThis has shaped policy. Some programmes focus help and attention on the small group at highest risk. But predicting exactly who will become a persistent offender is hard and can be unfair, so researchers urge caution.",
+      "apply_it": "Notice next time a news story talks about crime: is it about a rare serious crime or something many people do?",
+      "quiz": {
+        "question": "What do long-term studies often find about who commits crime?",
+        "options": [
+          "Everyone commits crime equally",
+          "A small share of people account for a large share of offences",
+          "Only adults commit crime",
+          "Crime is completely random"
+        ],
+        "answer": 1,
+        "explanation": "Cohort studies repeatedly show that a small group of persistent offenders commit a large share of crime."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--05",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "rational-choice",
+        "theories",
+        "decision-making"
+      ],
+      "title": "Rational choice theory says people weigh up costs and benefits",
+      "body": "One of the oldest ideas in criminology goes back to thinkers like Cesare Beccaria in the 1700s. It says people choose to commit crime when they think the benefits outweigh the costs.\n\nThe benefits might be money, excitement or revenge. The costs might be getting caught, being punished or feeling guilty.\n\nThis idea led to laws with clear, fair punishments, rather than cruel and random ones. Beccaria argued that punishment should be just enough to outweigh the gain from the crime.\n\nToday, rational choice theory is still influential, but researchers add an important point. People rarely calculate carefully. They make quick decisions with limited information, often while angry, drunk or under pressure from friends. So the choice is rational in a rough, in-the-moment way.",
+      "apply_it": "Recall a time you broke a small rule, like jaywalking. What did you weigh up, if anything, in that moment?",
+      "quiz": {
+        "question": "According to rational choice theory, why do people commit crime?",
+        "options": [
+          "They are born criminals",
+          "They never think at all",
+          "They are forced by the stars",
+          "They judge that the benefits outweigh the costs"
+        ],
+        "answer": 3,
+        "explanation": "Rational choice theory says people weigh likely gains against likely costs, though often quickly and imperfectly."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--06",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "deterrence",
+        "punishment",
+        "research"
+      ],
+      "title": "Getting caught matters more than how harsh the punishment is",
+      "body": "If people weigh costs, then tougher punishments should deter crime. But research suggests it is more complicated.\n\nThe US National Institute of Justice summarises the evidence this way: the certainty of being caught is a far stronger deterrent than the severity of the punishment. Many people who commit crimes do not know the sentence, or believe they will not be caught.\n\nSo a visible chance of being caught, like police patrolling a known trouble spot, often works better than adding years to prison sentences. Very long sentences can also have limited extra effect, because people tend to commit less crime as they age anyway.\n\nThis does not mean punishment has no role. It means swift, likely and fair consequences generally matter more than harsh, distant ones.",
+      "apply_it": "Think about speeding. Would a speed camera you know is there, or a bigger fine you might never face, change your behaviour more?",
+      "quiz": {
+        "question": "What does research suggest is the stronger deterrent?",
+        "options": [
+          "A higher chance of being caught",
+          "A harsher sentence",
+          "A longer trial",
+          "Publishing criminals' names"
+        ],
+        "answer": 0,
+        "explanation": "Evidence summarised by the NIJ suggests the certainty of being caught deters more than the severity of punishment."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--07",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "strain",
+        "theories",
+        "inequality"
+      ],
+      "title": "Strain theory says crime can grow from the gap between goals and means",
+      "body": "In the 1930s, the sociologist Robert Merton noticed something about American society. Everyone was encouraged to chase the same goals, especially money and success. But not everyone had the same legal ways to reach them, like good schools and good jobs.\n\nMerton called the resulting pressure strain. Some people accept they will not reach the goal. Some rebel. And some find illegal shortcuts to the same goal, like theft or fraud.\n\nThe idea helps explain why crime can be higher where there is a big gap between what people are told they should have and what they can realistically get.\n\nCritics point out that it says less about why most people under strain stay law-abiding, and about crimes by wealthy people, who face little strain of this kind.",
+      "apply_it": "Notice an advert that suggests you need something to be successful. Think about how it would feel if that goal seemed out of reach.",
+      "quiz": {
+        "question": "In Merton's strain theory, where does the pressure come from?",
+        "options": [
+          "Bad weather",
+          "Too much free time",
+          "A gap between the goals society promotes and the legal means to reach them",
+          "Watching films"
+        ],
+        "answer": 2,
+        "explanation": "Strain theory says pressure arises when people share the same goals but lack fair, legal ways to reach them."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--08",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "strain",
+        "emotions",
+        "stress"
+      ],
+      "title": "Stress, anger and unfair treatment can push some people towards crime",
+      "body": "In the 1990s, criminologist Robert Agnew widened strain theory. He argued that many kinds of stress can lead to crime, not just a lack of money.\n\nThese include losing something valued, like a parent or relationship, being treated badly, such as being bullied or abused, and failing to reach goals. Strains that feel unfair, are severe and come with little support are most likely to lead to anger. Anger can then spill into aggression, theft or drug use.\n\nThis is called general strain theory. It helps explain why young people who have faced abuse or bullying are at higher risk.\n\nIt also points to solutions. Support, coping skills and fair treatment can reduce the chance that stress turns into harm.",
+      "apply_it": "Next time you feel a surge of anger at unfair treatment, notice it and name it before you react.",
+      "quiz": {
+        "question": "Which strain is most likely to lead to crime, according to general strain theory?",
+        "options": [
+          "A mild inconvenience",
+          "A planned holiday",
+          "Severe strain that feels unfair, with little support",
+          "A good exam result"
+        ],
+        "answer": 2,
+        "explanation": "Agnew argued that severe, unfair strain with little support is most likely to cause anger and offending."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--09",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "social-learning",
+        "theories",
+        "family"
+      ],
+      "title": "Social learning theory says crime is learned, like any other behaviour",
+      "body": "In the 1940s, Edwin Sutherland argued that people learn crime the same way they learn anything else: from the people around them.\n\nHis idea, later developed into social learning theory by Ronald Akers and others, says we pick up skills, attitudes and excuses from family, friends and the wider community. If the people close to us see breaking the law as normal, exciting or justified, we are more likely to do the same.\n\nWe also learn from rewards and consequences. If shoplifting brings praise from friends and no punishment, it is more likely to happen again.\n\nThis theory has strong research support. It also means the reverse is true. Positive role models and people who disapprove of crime can steer someone away from it.",
+      "apply_it": "Think of a habit, good or bad, that you picked up from someone close to you.",
+      "quiz": {
+        "question": "What does social learning theory say about crime?",
+        "options": [
+          "It is learned from the people around us, like other behaviour",
+          "It is inherited at birth",
+          "It only happens by accident",
+          "It is caused by diet alone"
+        ],
+        "answer": 0,
+        "explanation": "Social learning theory says people learn criminal skills, attitudes and excuses from those around them."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--10",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "peers",
+        "young-people",
+        "social-learning"
+      ],
+      "title": "Teenagers are strongly influenced by friends, especially in groups",
+      "body": "One of the strongest predictors of a young person offending is having friends who offend. Young people also commit crime in groups much more often than adults do.\n\nSome of this is because people choose friends like themselves. But studies suggest peers also have a real effect. Brain research shows that teenagers take more risks when friends are watching, even in simple driving games.\n\nGangs are an extreme version. They can offer belonging, protection and status to young people who feel they lack these elsewhere.\n\nThe good news is that peer influence works both ways. Sports teams, youth clubs, mentors and positive friendships can pull young people towards safer paths. Programmes that move teenagers into new, positive groups are often more helpful than ones that put risky teens together.",
+      "apply_it": "If you know a teenager, ask about the groups they belong to and which ones make them feel good about themselves.",
+      "quiz": {
+        "question": "What did experiments find about teenagers and risk?",
+        "options": [
+          "Teenagers never take risks",
+          "Risk-taking is the same at every age",
+          "Teenagers take fewer risks with friends",
+          "Teenagers take more risks when their friends are watching"
+        ],
+        "answer": 3,
+        "explanation": "Studies show teenagers take more risks in the presence of peers, which helps explain group offending."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--11",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "social-control",
+        "theories",
+        "family"
+      ],
+      "title": "Social control theory asks why most people do not commit crime",
+      "body": "Most theories ask why people break the law. In 1969, Travis Hirschi flipped the question. He asked: what stops most of us?\n\nHis answer was social bonds. These come in four kinds. Attachment to people we care about and do not want to disappoint. Commitment to goals like a career that crime could ruin. Involvement in busy, positive activities. And belief that the rules are right.\n\nWhen these bonds are strong, people have a lot to lose. When they are weak, crime becomes easier.\n\nThis idea has good research support. It explains why getting a steady job, a supportive partner or becoming a parent often helps people stop offending, because those things create new bonds.",
+      "apply_it": "Name the people or goals in your life you would most hate to let down. Those are your social bonds.",
+      "quiz": {
+        "question": "Which is one of Hirschi's four social bonds?",
+        "options": [
+          "Owning a fast car",
+          "Attachment to people we care about",
+          "Living near a police station",
+          "Having a large income"
+        ],
+        "answer": 1,
+        "explanation": "Hirschi's bonds are attachment, commitment, involvement and belief. Strong bonds give people more to lose."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--12",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "self-control",
+        "theories",
+        "debated"
+      ],
+      "title": "Low self-control is linked to crime, but how much it explains is debated",
+      "body": "In 1990, Michael Gottfredson and Travis Hirschi proposed that low self-control is a key cause of crime. People with low self-control tend to act on impulse, seek thrills, lose their temper easily and focus on now rather than later.\n\nThey argued self-control forms mainly in early childhood, through consistent, caring parenting that notices and corrects bad behaviour.\n\nMany studies do find a link between low self-control and offending. Research following children over decades, such as a large study in New Zealand, found that children with lower self-control were more likely to have convictions as adults.\n\nBut this theory is debated. Critics say self-control can change later in life, and that it does not explain crime by planned, patient offenders, or why crime varies so much between places.",
+      "apply_it": "Practise one small act of self-control today, like waiting ten minutes before an impulse buy.",
+      "quiz": {
+        "question": "What is one criticism of self-control theory?",
+        "options": [
+          "It has never been studied",
+          "It may not explain carefully planned crimes or why crime differs between places",
+          "It says crime is caused by the weather",
+          "It ignores childhood completely"
+        ],
+        "answer": 1,
+        "explanation": "Critics argue the theory struggles with planned offending, later-life change and big differences between places."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--13",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "routine-activity",
+        "opportunity",
+        "theories"
+      ],
+      "title": "Routine activity theory: crime needs an offender, a target and no guardian",
+      "body": "In 1979, Lawrence Cohen and Marcus Felson pointed out something simple. For most crimes to happen, three things must meet at the same time and place.\n\nFirst, a motivated offender. Second, a suitable target, such as an unlocked bike or an empty house. Third, the absence of a capable guardian, which could be a neighbour, a shop worker, a camera or a parent.\n\nThey used this to explain why crime rose in the US after the 1960s. More people were out at work all day, leaving homes empty, and goods were becoming lighter and easier to carry.\n\nThis theory shifts focus from why someone wants to offend to when and where crime happens. Remove any one of the three, and the crime usually does not happen.",
+      "apply_it": "Look at your home or bike. Which of the three parts could you change: the target or the guardian?",
+      "quiz": {
+        "question": "According to routine activity theory, what three things must come together for crime?",
+        "options": [
+          "Money, weather and luck",
+          "Police, a judge and a jury",
+          "A gun, a car and a map",
+          "A motivated offender, a suitable target and no capable guardian"
+        ],
+        "answer": 3,
+        "explanation": "Cohen and Felson argued crime happens when a motivated offender meets a suitable target with no capable guardian present."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--14",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "opportunity",
+        "prevention",
+        "design"
+      ],
+      "title": "Making crime harder often reduces it more than people expect",
+      "body": "Situational crime prevention, developed by Ronald Clarke and others, focuses on making crime harder, riskier or less rewarding in specific places.\n\nExamples are everywhere. Car theft fell sharply in many countries after manufacturers fitted electronic immobilisers and better locks. Domestic burglary has fallen in many places as homes got stronger doors and windows. Screens in banks and shops reduced robberies.\n\nA famous example comes from Britain. In the past, gas used in homes contained deadly carbon monoxide. When it was replaced with natural gas, suicides by gas almost disappeared, and overall suicide rates fell. This showed that removing an easy opportunity can have a real effect.\n\nThese approaches do not change what is in people's hearts, but they can prevent a lot of harm.",
+      "apply_it": "Spend two minutes checking one easy opportunity at home, like an unlocked side gate or a spare key under the mat.",
+      "quiz": {
+        "question": "Why did car theft fall in many countries?",
+        "options": [
+          "Manufacturers fitted immobilisers and better locks",
+          "Cars became more expensive",
+          "People stopped driving",
+          "Police stopped recording it"
+        ],
+        "answer": 0,
+        "explanation": "Better built-in security made cars much harder to steal, an example of reducing opportunity."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--15",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "opportunity",
+        "displacement",
+        "research"
+      ],
+      "title": "Blocking crime in one place does not simply push it somewhere else",
+      "body": "A common worry about preventing crime in one spot is displacement. If you protect one street, will criminals just move to the next one?\n\nResearch suggests displacement happens less than people fear. Reviews of many studies find that when crime is blocked in one place, it often does not move at all, and when it does, usually only part of it moves.\n\nSometimes the opposite happens. Crime also falls in nearby areas that were not targeted. This is called a diffusion of benefits, perhaps because offenders are unsure exactly where the protection starts and ends.\n\nThis is partly because a lot of crime is opportunistic. Remove the easy chance, and many people simply do not go looking for another one.",
+      "apply_it": "Next time you hear that preventing crime just moves it elsewhere, remember that research usually finds otherwise.",
+      "quiz": {
+        "question": "What is a diffusion of benefits?",
+        "options": [
+          "Crime moving to another street",
+          "Police sharing their budget",
+          "Crime falling in nearby areas that were not directly targeted",
+          "A type of fine"
+        ],
+        "answer": 2,
+        "explanation": "Sometimes crime prevention in one place also lowers crime in surrounding areas, the opposite of displacement."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--16",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "age-crime-curve",
+        "young-people",
+        "patterns"
+      ],
+      "title": "Offending peaks in the late teens and falls sharply with age",
+      "body": "One of the most reliable patterns in criminology is the age-crime curve. Across many countries and time periods, offending rises in the early teens, peaks in the late teens or early twenties, and then falls steeply.\n\nThe exact peak age depends on the type of crime. Shoplifting and vandalism peak younger. Fraud and some other crimes peak older.\n\nThis means most young people who offend stop on their own as they grow up. Psychologist Terrie Moffitt described two groups: a large group whose offending is limited to adolescence, and a much smaller group whose problems start early and continue into adulthood.\n\nThe curve is a reminder that labelling a teenager as a criminal for life is usually wrong, and that the right support at this age can make a lasting difference.",
+      "apply_it": "Think of someone you knew who got into trouble as a teenager. Where are they now?",
+      "quiz": {
+        "question": "When does offending usually peak?",
+        "options": [
+          "In early childhood",
+          "In middle age",
+          "In the late teens or early twenties",
+          "In old age"
+        ],
+        "answer": 2,
+        "explanation": "The age-crime curve shows offending peaking in the late teens or early twenties, then falling steeply."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--17",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "desistance",
+        "age-crime-curve",
+        "turning-points"
+      ],
+      "title": "Most people grow out of crime, helped by jobs, partners and new identities",
+      "body": "Why do people stop offending? This is called desistance, and it is just as important as why they start.\n\nPart of it is brain development. The parts of the brain involved in planning and controlling impulses keep maturing into the mid-twenties.\n\nLife events also matter. Researchers Robert Sampson and John Laub followed men from youth into old age. They found that turning points like a steady job, a committed relationship or military service often helped men leave crime behind, by giving them routines, responsibilities and people to answer to.\n\nOther researchers stress identity. People who stop offending often build a new story about themselves: I am a dad now, or I am a worker, not a criminal. Hope and belief in change seem to play a real part.",
+      "apply_it": "Think about a turning point in your own life that changed your habits for the better.",
+      "quiz": {
+        "question": "What did Sampson and Laub find helps people stop offending?",
+        "options": [
+          "Turning points like a steady job or committed relationship",
+          "Watching more television",
+          "Moving to a bigger city",
+          "Getting a longer prison sentence"
+        ],
+        "answer": 0,
+        "explanation": "Their long-term study found that jobs, relationships and similar turning points often helped men desist from crime."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--18",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "gender",
+        "patterns",
+        "debated"
+      ],
+      "title": "Men commit most violent crime, and the reasons are debated",
+      "body": "In almost every country, men and boys commit most recorded crime, and the gap is largest for violent crime. Men also make up the large majority of people in prison worldwide.\n\nWhy this happens is debated. Some researchers point to biological factors, such as differences in risk-taking that are partly linked to hormones. Others point to social factors: boys being raised to value toughness, status and dominance, and being supervised less closely than girls.\n\nMost experts think both play a part, and the size of the gap varies across societies and over time, which suggests culture matters a lot.\n\nMen are also the most common victims of violence by strangers, while women are more often hurt by people they know, such as partners.",
+      "apply_it": "Notice how boys and girls are praised differently in films or adverts. What messages about toughness are they given?",
+      "quiz": {
+        "question": "Why do experts debate the gender gap in crime?",
+        "options": [
+          "There is no gap",
+          "The gap is the same everywhere and never changes",
+          "Only women commit violent crime",
+          "Both biological and social explanations have some support, and the gap varies across societies"
+        ],
+        "answer": 3,
+        "explanation": "Evidence supports both biological and social factors, and the gap varies between places, so the causes are debated."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--19",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "poverty",
+        "inequality",
+        "debated"
+      ],
+      "title": "Poverty and inequality are linked to crime, but not in a simple way",
+      "body": "Poorer neighbourhoods often have higher rates of certain crimes, especially violence and property crime. People living in poverty are also more likely to be victims.\n\nBut the link is not simple. Most people in poverty never commit crime. Crime fell in many rich countries from the 1990s, even in some periods when poverty did not fall. And crimes like fraud are common among wealthier people.\n\nMany researchers find that inequality, the gap between rich and poor, is linked to violence across countries, in some studies more strongly than poverty alone. But it is hard to prove cause and effect, because unequal places also differ in many other ways. This remains debated.\n\nWhat seems clearer is that poverty piles up stress, cuts off opportunities and makes communities harder to hold together.",
+      "apply_it": "Next time someone says poverty causes crime, or that it has nothing to do with it, remember the truth is in between.",
+      "quiz": {
+        "question": "What do many studies suggest about inequality and violence?",
+        "options": [
+          "There is no relationship at all",
+          "Higher inequality is often linked to more violence, though cause and effect is debated",
+          "Equal societies have more violence",
+          "Inequality only affects weather"
+        ],
+        "answer": 1,
+        "explanation": "Studies often link inequality with violence across countries, but because many factors differ, the causes remain debated."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--20",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "neighbourhoods",
+        "community",
+        "collective-efficacy"
+      ],
+      "title": "Neighbourhoods matter, especially how well people look out for each other",
+      "body": "In the 1940s, researchers in Chicago noticed that some areas had high crime for decades, even as different groups of people moved in and out. They suggested it was something about the neighbourhood, not just the people.\n\nThey called it social disorganisation: when a community is poor, transient and lacks strong institutions, it struggles to control crime.\n\nLater, Robert Sampson and colleagues found a key ingredient they called collective efficacy. This means neighbours trust each other and are willing to step in, for example by speaking up when kids skip school or a fight breaks out. Areas with high collective efficacy tend to have less violence, even when they are poor.\n\nThis suggests building trust and community ties is a real crime prevention tool.",
+      "apply_it": "Learn the name of one neighbour you do not know yet.",
+      "quiz": {
+        "question": "What is collective efficacy?",
+        "options": [
+          "A type of police team",
+          "Neighbours trusting each other and being willing to step in",
+          "A government tax",
+          "A crime statistic"
+        ],
+        "answer": 1,
+        "explanation": "Collective efficacy is shared trust and willingness to act among neighbours, linked to lower violence."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--21",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "broken-windows",
+        "policing",
+        "debated"
+      ],
+      "title": "Broken windows policing remains debated",
+      "body": "In 1982, James Q. Wilson and George Kelling suggested that visible disorder, like broken windows, graffiti and litter, signals that nobody cares, which can invite more serious crime.\n\nThe idea became very influential. In some cities, it led to police cracking down hard on minor offences like fare-dodging and public drinking.\n\nThe evidence is mixed. Some studies find that cleaning up disorder, such as fixing vacant lots and removing rubbish, reduces crime. But aggressive arrests for minor offences have been criticised for damaging trust in police, especially in poorer and minority communities, with less clear benefits.\n\nMany researchers now argue that fixing physical disorder and working with communities is more helpful than mass arrests for small offences. The debate continues.",
+      "apply_it": "Notice a run-down spot near you. Would cleaning it up change how safe it feels?",
+      "quiz": {
+        "question": "What does research suggest about broken windows ideas?",
+        "options": [
+          "They are proven beyond doubt",
+          "They only apply to windows",
+          "They have never been tested",
+          "Fixing physical disorder may help, but aggressive arrests for minor offences are debated"
+        ],
+        "answer": 3,
+        "explanation": "Evidence supports cleaning up disorder in some cases, while heavy enforcement of minor offences is contested."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--22",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "drugs-and-alcohol",
+        "violence",
+        "health"
+      ],
+      "title": "Alcohol is strongly linked to violence, and illegal drugs to crime in several ways",
+      "body": "Alcohol is involved in a large share of violent incidents, including assaults, domestic abuse and fights in nightlife areas. It lowers inhibitions, affects judgement and can make people more aggressive. The World Health Organization counts violence among alcohol's many harms.\n\nIllegal drugs link to crime in a few different ways. Some people commit crime to pay for drugs. Some drugs affect behaviour directly. And illegal drug markets can be violent, because disputes cannot be settled through courts.\n\nHow to respond is debated. Some argue for strict enforcement. Others argue that treating addiction as a health issue and changing drug laws would reduce crime. Countries have tried very different approaches.\n\nWhat is clear is that treatment for addiction tends to reduce offending by people who use drugs.",
+      "apply_it": "If you drink, notice how alcohol changes your mood and reactions. Plan how you get home safely before going out.",
+      "quiz": {
+        "question": "Why can illegal drug markets be violent?",
+        "options": [
+          "Disputes cannot be settled through legal courts",
+          "Drugs are always cheap",
+          "Police run the markets",
+          "There is too much paperwork"
+        ],
+        "answer": 0,
+        "explanation": "Because illegal trades cannot use courts or contracts, disputes are more likely to be settled with violence."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--23",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "childhood",
+        "trauma",
+        "debated"
+      ],
+      "title": "Childhood trauma raises risk, and lead exposure is a debated factor",
+      "body": "Children who experience abuse, neglect or violence at home are, on average, more likely to offend later. Researchers call these adverse childhood experiences. Trauma can affect how children manage stress, trust others and control emotions.\n\nMost children who face trauma do not go on to commit crime, especially when they have at least one stable, caring adult. That is an important protective factor.\n\nSome researchers have also linked exposure to lead, a toxic metal once used in petrol and paint, to later aggression and crime. They argue that removing lead from petrol helped crime fall in many countries. This idea is debated. Some studies support it, while others find the effect smaller than first claimed.\n\nSupport for families and early childhood is one of the most promising areas for prevention.",
+      "apply_it": "If you know a child having a hard time, think about one small way you could be a steady, caring adult for them.",
+      "quiz": {
+        "question": "What is true about children who experience trauma?",
+        "options": [
+          "They always commit crime",
+          "Trauma has no effect on children",
+          "They are at higher risk on average, but most do not offend, especially with a caring adult",
+          "They are never helped by support"
+        ],
+        "answer": 2,
+        "explanation": "Trauma raises risk, but most affected children do not offend, and a stable, caring adult is a strong protective factor."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--24",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "mental-health",
+        "myths",
+        "victims"
+      ],
+      "title": "Most people with mental illness are not violent, and are more often victims",
+      "body": "News stories sometimes link crime to mental illness. But the evidence paints a different picture.\n\nThe great majority of people with mental health conditions are never violent. Research suggests that mental illness on its own explains only a small share of violent crime. People with serious mental illness are actually more likely to be victims of violence than perpetrators.\n\nSome factors do raise risk, especially when combined. These include drug or alcohol misuse alongside some serious illnesses, not getting treatment, and a history of violence.\n\nMental health problems are common among people in prison, which raises questions about whether prison is the right place for some of them. Many countries are exploring ways to divert people towards treatment instead.",
+      "apply_it": "Next time you read a story linking crime and mental illness, ask whether it gives the full picture.",
+      "quiz": {
+        "question": "What does research show about people with serious mental illness?",
+        "options": [
+          "They are usually violent",
+          "They commit most crimes",
+          "They are more likely to be victims of violence than perpetrators",
+          "They are never affected by crime"
+        ],
+        "answer": 2,
+        "explanation": "Studies show people with serious mental illness are more often victims than perpetrators of violence."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--25",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "biology",
+        "genetics",
+        "debated"
+      ],
+      "title": "Genes and biology play a part, but there is no crime gene",
+      "body": "Twin and adoption studies suggest that genes have some influence on traits like impulsiveness and aggression, which can raise the risk of offending.\n\nBut there is no single crime gene. Many genes each have tiny effects, and they interact with the environment. A child with certain genetic risks may only show more problems if they also grow up with abuse or neglect. In a supportive home, the same genes may make little difference.\n\nBrain injuries, especially to the front of the brain, are also more common among people in prison, though this does not mean they caused the offending.\n\nHistory warns us to be careful here. Ideas about born criminals were used in the past to justify cruel treatment. Today's researchers stress that biology is about risk, not destiny.",
+      "apply_it": "Notice when someone says a person was born bad. Remember that genes shape risk, but environment shapes how it plays out.",
+      "quiz": {
+        "question": "What do researchers say about genes and crime?",
+        "options": [
+          "Many genes have small effects that interact with environment",
+          "One gene causes all crime",
+          "Genes have no influence on behaviour",
+          "Only diet matters"
+        ],
+        "answer": 0,
+        "explanation": "Genetic influences are small and spread across many genes, and they interact strongly with a person's environment."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--26",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "labelling",
+        "theories",
+        "stigma"
+      ],
+      "title": "Labelling someone a criminal can make offending more likely",
+      "body": "Labelling theory, developed by sociologists such as Howard Becker in the 1960s, asks what happens after someone is caught.\n\nThe idea is that being officially labelled a criminal can change how others treat a person and how they see themselves. Employers may reject them, old friends may drift away and the only people who accept them may be others who offend. Over time, the person may start to live up to the label.\n\nResearch partly supports this. Some studies find that young people who are formally processed through courts for minor offences go on to offend more than similar young people who are diverted away from the system.\n\nThis is one reason many countries try to keep young people out of the courts for minor first offences, using warnings or community programmes instead.",
+      "apply_it": "Think about a label someone gave you, good or bad, and how it shaped how you behaved.",
+      "quiz": {
+        "question": "What does labelling theory suggest?",
+        "options": [
+          "Labels have no effect",
+          "Only judges can be labelled",
+          "Labels always stop crime",
+          "Being officially labelled a criminal can push people further into crime"
+        ],
+        "answer": 3,
+        "explanation": "Labelling theory argues that a criminal label can shut doors and shape identity, making more offending likely."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--27",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "prevention",
+        "childhood",
+        "what-works"
+      ],
+      "title": "Early help for children and families is among the best crime prevention",
+      "body": "If many routes into crime start in childhood, then helping children and families early makes sense. Research supports this.\n\nSome programmes that send nurses to visit new parents at home have been linked to lower rates of child abuse and lower offending by the children years later. High-quality preschool, such as the Perry Preschool study in the US, was linked to fewer arrests in adulthood. Parenting programmes that teach calm, consistent discipline can reduce children's behaviour problems.\n\nThe World Health Organization also highlights life skills programmes, keeping children in school and safe public spaces as ways to reduce youth violence.\n\nThese results come from specific, well-run programmes. Not every version works equally well, and benefits can take years to show up.",
+      "apply_it": "Find out what parenting or early years support exists in your local area, so you can point a friend to it if needed.",
+      "quiz": {
+        "question": "Which is an example of early crime prevention with research support?",
+        "options": [
+          "Longer prison sentences for adults",
+          "Nurse home visits for new parents",
+          "Banning video games",
+          "Closing youth clubs"
+        ],
+        "answer": 1,
+        "explanation": "Nurse home visiting and high-quality preschool have been linked to lower offending many years later."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--28",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "prevention",
+        "policing",
+        "what-works"
+      ],
+      "title": "Focused, fair policing and community work can cut violence",
+      "body": "Crime is not spread evenly. A small number of streets, often called hot spots, account for a large share of crime in a city. Research finds that police focusing on these places can reduce crime there without simply moving it elsewhere.\n\nAnother approach, called focused deterrence, brings together police, community leaders and social services. They speak directly to the small number of people most involved in violence. The message is: the violence must stop, and here is help with jobs and support if you want it. Several cities have reported drops in violence, though results vary.\n\nViolence interruption programmes, where trusted community members step in to calm disputes, also show promise in some places.\n\nAcross approaches, trust between police and communities matters a great deal.",
+      "apply_it": "Look up whether your local area has a community safety partnership or violence reduction programme.",
+      "quiz": {
+        "question": "What is a crime hot spot?",
+        "options": [
+          "A place with very high temperatures",
+          "A small area where a large share of crime happens",
+          "A police station",
+          "A popular restaurant"
+        ],
+        "answer": 1,
+        "explanation": "Hot spots are small places, like a few streets, where much of a city's crime is concentrated."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--29",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "prison",
+        "punishment",
+        "debated"
+      ],
+      "title": "Prison protects the public for a while, but can make reoffending worse",
+      "body": "Prison does several things. It punishes, it keeps people who may be dangerous away from the public for a time and it may deter some people.\n\nBut whether prison reduces crime overall is debated. While someone is locked up, they cannot commit crime in the community. Yet prison can also cut people off from family and work, expose them to other offenders and make it harder to find a job afterwards.\n\nSome studies suggest that, for people who commit less serious crimes, short prison sentences are linked to more reoffending than community sentences. Others find mixed effects. The answer likely depends on the person, the prison and what support follows.\n\nThe US National Academies concluded that very high levels of imprisonment brought limited crime reduction for their large costs.",
+      "apply_it": "Next time you hear calls for tougher sentences, ask what the evidence says about reoffending afterwards.",
+      "quiz": {
+        "question": "What is one way prison can increase the chance of reoffending?",
+        "options": [
+          "It gives people too much money",
+          "It has no effect on anyone",
+          "It always cures addiction",
+          "It can cut people off from family and work and make finding a job harder"
+        ],
+        "answer": 3,
+        "explanation": "Prison can weaken the very bonds, like jobs and family, that help people stay away from crime."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--30",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "rehabilitation",
+        "what-works",
+        "reoffending"
+      ],
+      "title": "Rehabilitation programmes can reduce reoffending when done well",
+      "body": "Rehabilitation means helping people change so they are less likely to offend again. For a while in the 1970s, some experts claimed nothing works. Later research found that was too pessimistic.\n\nProgrammes based on cognitive behavioural therapy, which help people recognise and change patterns of thinking that lead to crime, have been found in many studies to reduce reoffending. Education and job training in prison, and treatment for drug and alcohol problems, also show benefits.\n\nThe best results tend to come when programmes focus on people at higher risk, target the specific problems linked to their offending, and are delivered well. Poorly run programmes can have little effect.\n\nRehabilitation is not about being soft. It is about reducing future victims.",
+      "apply_it": "Think of a time someone gave you a second chance and how it changed what you did next.",
+      "quiz": {
+        "question": "Which type of programme has research support for reducing reoffending?",
+        "options": [
+          "Cognitive behavioural therapy programmes",
+          "Programmes with no structure",
+          "Scaring young people with prison visits",
+          "Doing nothing"
+        ],
+        "answer": 0,
+        "explanation": "CBT-based programmes help people change thinking patterns linked to crime and are supported by many studies."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--31",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "reoffending",
+        "resettlement",
+        "support"
+      ],
+      "title": "Reoffending is common, but jobs, homes and support help people stay out",
+      "body": "Many people released from prison are convicted again within a few years. In England and Wales, official statistics show that roughly a quarter of adults reoffend within a year of release or a community sentence, and rates are higher after short prison sentences. Other countries have different rates and measure them differently.\n\nThe first weeks after release are a risky time. People may leave with little money, no home and no job. Research finds that stable housing, work, family support and continued treatment all lower the chance of returning to crime.\n\nSome countries, such as Norway, focus heavily on preparing people for life after prison, and report lower reoffending, though comparing countries is tricky.\n\nSociety plays a part too. Employers willing to give people a fair chance make a real difference.",
+      "apply_it": "If you ever hire people, think about whether a past conviction should automatically rule someone out.",
+      "quiz": {
+        "question": "What helps people avoid reoffending after release?",
+        "options": [
+          "Having no home",
+          "Cutting off family",
+          "Stable housing, work and support",
+          "Leaving with no money"
+        ],
+        "answer": 2,
+        "explanation": "Research finds that a home, a job and support networks lower the chance of returning to crime."
+      }
+    },
+    {
+      "id": "crime-why-people-commit-crime--32",
+      "topic": "crime-society",
+      "tags": [
+        "criminology",
+        "summary",
+        "prevention",
+        "theories"
+      ],
+      "title": "Understanding crime helps us prevent it, without excusing it",
+      "body": "Explaining why someone commits crime is not the same as excusing it. People still make choices and should be responsible for them. But understanding the pressures behind those choices helps us prevent harm.\n\nThe big picture from this guide: crime usually grows from several factors working together. Opportunity matters, so making crime harder works. Certainty of being caught deters more than harsh punishment. Friends, families and neighbourhoods shape behaviour. Offending peaks in youth and most people grow out of it.\n\nPoverty, inequality, alcohol, trauma and biology all play a part, though their exact roles are still debated.\n\nThe most promising responses combine early help for children, focused and fair policing, strong communities and real chances to change for people who have offended.",
+      "apply_it": "Share one idea from this guide that surprised you with a friend or family member.",
+      "quiz": {
+        "question": "What is the main lesson about the causes of crime?",
+        "options": [
+          "One single cause explains all crime",
+          "Crime cannot be studied",
+          "Crime usually grows from several factors working together",
+          "Only punishment matters"
+        ],
+        "answer": 2,
+        "explanation": "Most criminologists agree that crime comes from many interacting factors, which is why responses need to work on several levels."
+      }
+    }
+  ]
+}

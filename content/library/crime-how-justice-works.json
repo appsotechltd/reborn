@@ -1,0 +1,764 @@
+{
+  "source": {
+    "id": "crime-how-justice-works",
+    "title": "How Courts and Justice Work",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the United Nations, the UN Office of the High Commissioner for Human Rights, the US Courts, the UK Judiciary and the National Registry of Exonerations.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: United Nations, What is the Rule of Law, https://www.un.org/ruleoflaw/what-is-the-rule-of-law/; UN Office of the High Commissioner for Human Rights, International Covenant on Civil and Political Rights, https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights; United States Courts, Criminal Cases, https://www.uscourts.gov/about-federal-courts/types-cases/criminal-cases; Courts and Tribunals Judiciary, About the judiciary, https://www.judiciary.uk/about-the-judiciary/; National Registry of Exonerations, https://www.law.umich.edu/special/exoneration/; Criminal Cases Review Commission, https://ccrc.gov.uk/"
+  },
+  "cards": [
+    {
+      "id": "crime-how-justice-works--01",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "overview",
+        "courts",
+        "law"
+      ],
+      "title": "Courts turn disputes and accusations into fair, reasoned decisions",
+      "body": "When someone is accused of a crime, or two people cannot settle a dispute, societies need a fair way to decide what happened and what should follow. That is the job of courts and the wider justice system.\n\nThis guide explains the big ideas: the rule of law, what happens at arrest, the presumption of innocence and the burden of proof. It covers the difference between criminal and civil cases, the roles of judges, juries and lawyers, and how evidence and witnesses are handled. Then it looks at sentencing, appeals, wrongful convictions and how systems differ around the world.\n\nOne important note: rules differ a lot by country, and even within countries. This guide is general education, not legal advice. If you face a legal problem, speak to a qualified lawyer.",
+      "apply_it": "Think of one court case you have seen in the news. As you read, notice which ideas from this guide it involved.",
+      "quiz": {
+        "question": "What is this guide intended to give you?",
+        "options": [
+          "General education about how justice systems work",
+          "Legal advice for your own case",
+          "A list of every country's laws",
+          "Instructions for representing yourself in court"
+        ],
+        "answer": 0,
+        "explanation": "The guide explains general ideas only. Rules vary by country, and anyone with a real legal issue should see a qualified lawyer."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--02",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "legal-systems",
+        "common-law",
+        "civil-law"
+      ],
+      "title": "Justice systems differ by country, but many share common roots",
+      "body": "There is no single worldwide justice system. Each country, and sometimes each state or region, has its own laws, courts and procedures.\n\nMany systems fall into two broad families. Common law systems, found in England, the United States, India, Australia and other places influenced by English law, rely heavily on past court decisions called precedents, alongside laws passed by parliaments.\n\nCivil law systems, found in much of Europe, Latin America and parts of Asia and Africa, rely mainly on detailed written codes. Judges apply the code to each case.\n\nOther systems draw on religious law, customary law or a mix of traditions. Many countries combine elements of several. That is why examples in this guide are only examples. Local rules always come first.",
+      "apply_it": "Find out which legal family your country mainly belongs to: common law, civil law or a mix.",
+      "quiz": {
+        "question": "What do common law systems rely on heavily?",
+        "options": [
+          "Only religious texts",
+          "Public votes on every case",
+          "Random decisions by police",
+          "Past court decisions called precedents, alongside laws"
+        ],
+        "answer": 3,
+        "explanation": "Common law systems give great weight to precedents, which are earlier decisions by courts on similar issues."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--03",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "rule-of-law",
+        "rights",
+        "government"
+      ],
+      "title": "The rule of law means everyone, including the powerful, must follow the law",
+      "body": "The rule of law is the idea that a country is governed by clear, public laws that apply to everyone equally, rather than by the wishes of whoever holds power.\n\nThe United Nations describes it as a principle where all people, institutions and the state itself are accountable to laws that are publicly made, equally enforced and independently judged, and that are consistent with human rights.\n\nIn practice, this means a president, a police officer and an ordinary citizen should all face the same rules. Laws should be known in advance, so people can follow them. And disputes should be decided by independent courts, not by force.\n\nNo country lives up to this perfectly. But it is the yardstick used to judge whether a justice system is fair.",
+      "apply_it": "Think of a news story where a powerful person faced the courts. Did the rule of law seem to work?",
+      "quiz": {
+        "question": "What does the rule of law mean?",
+        "options": [
+          "Rulers can make up rules as they go",
+          "Everyone, including the state, is accountable to public, fairly applied laws",
+          "Only judges must follow the law",
+          "Laws are kept secret"
+        ],
+        "answer": 1,
+        "explanation": "The rule of law means clear, public laws that apply equally to everyone, judged by independent courts."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--04",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "judges",
+        "independence",
+        "separation-of-powers"
+      ],
+      "title": "Independent judges protect people from misuse of power",
+      "body": "Most democracies split power into three branches. The legislature, like a parliament, makes laws. The executive, like a government, runs the country and enforces laws. The judiciary, the courts, interprets laws and settles disputes.\n\nThis separation of powers means no single group holds all the power. Courts can check whether the government itself is acting lawfully.\n\nFor this to work, judges must be independent. They should not be punished or rewarded for their decisions, should be protected from political pressure and should decide cases only on the law and the evidence.\n\nCountries protect independence in different ways, such as secure jobs until retirement age, fixed salaries and independent appointment bodies. When governments pressure or replace judges for political reasons, it is a warning sign for the rule of law.",
+      "apply_it": "Look up how judges are appointed in your country.",
+      "quiz": {
+        "question": "Why is judicial independence important?",
+        "options": [
+          "So judges can do whatever they like",
+          "So judges decide cases on law and evidence, free from political pressure",
+          "So governments can control judges",
+          "So courts can make new taxes"
+        ],
+        "answer": 1,
+        "explanation": "Independent judges can rule fairly, even against the government, because they are protected from pressure."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--05",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "law",
+        "constitutions",
+        "sources-of-law"
+      ],
+      "title": "Laws come from constitutions, parliaments and court decisions",
+      "body": "Where do laws actually come from? Usually from a few places.\n\nMany countries have a constitution, a top-level set of rules about how the state works and what rights people have. Other laws must fit within it. Some constitutions are written in one document, while the UK's is spread across many laws and traditions.\n\nParliaments or legislatures pass laws called statutes or acts. These cover crimes, taxes, contracts and much more.\n\nIn common law countries, judges' decisions also create law through precedent. When a higher court decides a question, lower courts usually follow it.\n\nInternational treaties, such as human rights agreements, can also shape national law, depending on how each country brings them in.",
+      "apply_it": "Find out whether your country has a written constitution, and what one right it guarantees.",
+      "quiz": {
+        "question": "What is a statute?",
+        "options": [
+          "A police report",
+          "A statue in a courtroom",
+          "A type of judge",
+          "A law passed by a parliament or legislature"
+        ],
+        "answer": 3,
+        "explanation": "Statutes, also called acts, are laws passed by a legislature such as a parliament or congress."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--06",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "arrest",
+        "police",
+        "rights"
+      ],
+      "title": "Police usually need a good reason to arrest someone",
+      "body": "An arrest is when police take someone into custody because they suspect the person has committed a crime. In most democracies, police cannot arrest people at random.\n\nThe exact test differs by country. In England and Wales, police generally need reasonable grounds to suspect an offence and to believe an arrest is necessary. In the United States, police generally need probable cause. Other countries use different standards.\n\nPolice may also stop and question people, or search them, under specific rules. These powers have limits, and how they are used is often debated, especially when some groups are stopped far more than others.\n\nBeing arrested does not mean someone is guilty. It is the start of an investigation. Many people who are arrested are never charged.",
+      "apply_it": "Look up what standard police in your country must meet before making an arrest.",
+      "quiz": {
+        "question": "What does being arrested mean?",
+        "options": [
+          "Police suspect the person and have taken them into custody",
+          "The person has been proven guilty",
+          "The person must go to prison",
+          "The trial is over"
+        ],
+        "answer": 0,
+        "explanation": "An arrest is based on suspicion and starts an investigation. It is not a finding of guilt."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--07",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "arrest",
+        "rights",
+        "lawyers"
+      ],
+      "title": "People who are arrested usually have key rights, but they vary",
+      "body": "International human rights law, including the International Covenant on Civil and Political Rights, sets out basic protections for anyone who is detained. Many countries build on these.\n\nCommon rights include being told why you are being arrested, being able to speak to a lawyer, not being held for long without being charged or brought before a judge, and being treated humanely. Many systems also protect a right not to incriminate yourself.\n\nThe details differ a lot. In the US, the Miranda warning tells people they have a right to remain silent. In England and Wales, the police caution warns that staying silent about something you later rely on in court may harm your defence.\n\nIf you are ever arrested, asking for a lawyer is usually a sensible first step.",
+      "apply_it": "Find out what the police warning or caution says in your country.",
+      "quiz": {
+        "question": "Which is a common right for someone who has been arrested?",
+        "options": [
+          "To choose their own judge",
+          "To leave whenever they want",
+          "To be told why they are arrested and to speak to a lawyer",
+          "To see the police officer's diary"
+        ],
+        "answer": 2,
+        "explanation": "Most systems give arrested people the right to know why they are held and to get legal advice, though details vary."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--08",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "police",
+        "rights",
+        "safety"
+      ],
+      "title": "If police stop you, staying calm and polite protects you",
+      "body": "Being stopped by police can be stressful, whether you have done anything wrong or not. Some general tips apply in many places, but laws differ, so check what applies where you live.\n\nStay calm and keep your hands visible. Arguing or running can make things more dangerous and may be a crime in itself.\n\nYou can usually ask, politely, whether you are free to go, and why you have been stopped. In many places you can ask for an officer's name or number.\n\nIn many countries you have the right not to answer questions about a crime without a lawyer. But in some places you must give your name or show ID in certain situations.\n\nIf you believe police treated you unfairly, you can usually complain later through an official body.",
+      "apply_it": "Look up what your local rules say about showing ID to police.",
+      "quiz": {
+        "question": "What is a sensible thing to do if police stop you?",
+        "options": [
+          "Run away quickly",
+          "Shout and argue",
+          "Stay calm, keep hands visible and politely ask if you are free to go",
+          "Refuse to say anything ever, even your name, everywhere"
+        ],
+        "answer": 2,
+        "explanation": "Calm, polite behaviour keeps everyone safer. Any complaint can be made later through official channels."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--09",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "arrest",
+        "custody",
+        "charges"
+      ],
+      "title": "After arrest, police must charge, release or bring a suspect before a court",
+      "body": "Police cannot usually hold someone forever. Most countries set time limits on detention without charge or without seeing a judge. In England and Wales, the usual limit is 24 hours, which can be extended in some cases. Other countries have different limits, and terrorism cases often have special rules.\n\nDuring this time, police may interview the suspect, gather evidence and talk to witnesses. Then a decision is made.\n\nThe suspect may be released with no further action, released while the investigation continues, given a warning or caution, or formally charged with a crime. A charge means the case is going to court.\n\nIn many countries, the decision to charge serious crimes is made or checked by prosecutors, not just police.",
+      "apply_it": "Think about why time limits on police detention might matter for protecting innocent people.",
+      "quiz": {
+        "question": "What does it mean when someone is charged?",
+        "options": [
+          "They are formally accused and the case is going to court",
+          "They have been found guilty",
+          "They are free with no further action",
+          "They are a witness"
+        ],
+        "answer": 0,
+        "explanation": "A charge is a formal accusation that sends the case to court. It is still not a finding of guilt."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--10",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "presumption-of-innocence",
+        "rights",
+        "fair-trial"
+      ],
+      "title": "Everyone is presumed innocent until proven guilty",
+      "body": "The presumption of innocence is one of the most important principles in criminal justice. It is in the Universal Declaration of Human Rights and in the laws of most countries.\n\nIt means a person accused of a crime is treated as innocent unless and until the prosecution proves their guilt in a fair trial. The accused does not have to prove they are innocent.\n\nThis protects people from being punished just because they were accused, or because they look suspicious, or because the public is angry.\n\nIt is also why news reports use words like alleged and accused. Calling someone guilty before a verdict can unfairly affect a trial, and in some countries it can even be contempt of court.",
+      "apply_it": "Next time you read about an arrest, notice whether the report uses words like alleged and accused.",
+      "quiz": {
+        "question": "What does the presumption of innocence mean?",
+        "options": [
+          "The accused must prove they are innocent",
+          "Only rich people are innocent",
+          "Everyone arrested is guilty",
+          "The accused is treated as innocent until guilt is proven in a fair trial"
+        ],
+        "answer": 3,
+        "explanation": "The prosecution must prove guilt. Until then, the accused is treated as innocent."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--11",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "burden-of-proof",
+        "evidence",
+        "fair-trial"
+      ],
+      "title": "In criminal cases, guilt must be proven beyond reasonable doubt",
+      "body": "The burden of proof is about who has to prove something, and how strongly. In criminal cases, the burden is on the prosecution, which acts for the state.\n\nIn many common law countries, the standard is beyond reasonable doubt. In England and Wales, juries are often told they must be sure of guilt. This is a high bar. It does not mean every possible doubt must be ruled out, but any doubt that is reasonable should lead to an acquittal.\n\nCivil law countries often express this as the judge's inner conviction, based on the evidence.\n\nWhy so high? Because a criminal conviction can take away someone's freedom. Many legal thinkers argue it is better for some guilty people to go free than for innocent people to be punished.",
+      "apply_it": "Imagine you are on a jury. What would make you sure, rather than just thinking someone probably did it?",
+      "quiz": {
+        "question": "What is the usual standard of proof in criminal cases in common law countries?",
+        "options": [
+          "More likely than not",
+          "Beyond reasonable doubt",
+          "Any suspicion at all",
+          "A majority vote of the public"
+        ],
+        "answer": 1,
+        "explanation": "Criminal cases need proof beyond reasonable doubt, a high bar that protects people from wrongful punishment."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--12",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "criminal-vs-civil",
+        "courts",
+        "law"
+      ],
+      "title": "Criminal cases are about crimes against society, civil cases about private disputes",
+      "body": "Courts handle two main types of case.\n\nCriminal cases are brought by the state, usually through a prosecutor, against someone accused of a crime, such as theft, assault or fraud. The case is seen as a wrong against society as a whole. If the accused is found guilty, they can be punished, for example with a fine, community sentence or prison.\n\nCivil cases are disputes between people or organisations. Examples include a broken contract, an unpaid bill, a divorce, a dispute with a landlord or a claim for injury after an accident. The person bringing the case usually wants money, called damages, or an order to make someone do or stop doing something.\n\nThe same event can lead to both. A car crash might involve a criminal charge and a civil claim for compensation.",
+      "apply_it": "Think of a recent dispute in your own life. Would it be a criminal matter, a civil one or neither?",
+      "quiz": {
+        "question": "Which is an example of a civil case?",
+        "options": [
+          "A murder trial",
+          "A dispute with a landlord over a deposit",
+          "A robbery charge",
+          "A drink-driving prosecution"
+        ],
+        "answer": 1,
+        "explanation": "Civil cases are private disputes, like those over contracts, deposits or injuries, rather than prosecutions for crimes."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--13",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "criminal-vs-civil",
+        "burden-of-proof",
+        "evidence"
+      ],
+      "title": "Civil cases usually use a lower standard: more likely than not",
+      "body": "In civil cases, the person bringing the claim usually has to prove their case on the balance of probabilities, or in US terms, by a preponderance of the evidence. Put simply, that means more likely than not.\n\nThis is a lower bar than beyond reasonable doubt, because the consequences are usually money or court orders rather than prison.\n\nThis explains a famous kind of outcome. In the United States, O. J. Simpson was found not guilty of murder in a criminal trial in 1995. Later, a civil jury found him liable for the deaths and ordered him to pay damages. The two verdicts did not contradict each other. Each court used a different standard of proof.",
+      "apply_it": "Remember: not guilty in a criminal trial does not always mean a civil case will fail.",
+      "quiz": {
+        "question": "Why can someone be found not guilty in a criminal trial but liable in a civil case?",
+        "options": [
+          "Civil cases never use evidence",
+          "Criminal trials are only for fun",
+          "Civil judges are always stricter",
+          "The two cases use different standards of proof"
+        ],
+        "answer": 3,
+        "explanation": "Criminal cases need proof beyond reasonable doubt, while civil cases need only more likely than not."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--14",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "prosecutors",
+        "charges",
+        "courts"
+      ],
+      "title": "Prosecutors decide whether there is enough evidence to bring a case",
+      "body": "A prosecutor is a lawyer who brings criminal cases on behalf of the state. In England and Wales, this is usually the Crown Prosecution Service. In the US, it is district attorneys and federal prosecutors. Many countries have public prosecutors or state attorneys.\n\nBefore going to court, prosecutors usually ask two questions. Is there enough evidence for a realistic chance of conviction? And is prosecution in the public interest? The exact tests differ by country.\n\nPrinciples like these are meant to stop weak cases wasting time and harming innocent people.\n\nIn some civil law countries, investigating judges or magistrates also play a big role in gathering evidence before a trial. In a few systems, victims can bring private prosecutions in limited situations.",
+      "apply_it": "Find out the name of the main prosecution service in your country.",
+      "quiz": {
+        "question": "What two questions do prosecutors in many systems ask before charging?",
+        "options": [
+          "Is there enough evidence, and is prosecution in the public interest?",
+          "Is the suspect famous, and is it raining?",
+          "Has the suspect paid a fee, and do they have a lawyer?",
+          "Is the case on TV, and is the judge free?"
+        ],
+        "answer": 0,
+        "explanation": "Prosecutors usually check that evidence is strong enough and that bringing the case serves the public interest."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--15",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "bail",
+        "pretrial",
+        "rights"
+      ],
+      "title": "Bail lets many accused people stay free until their trial",
+      "body": "After someone is charged, a court decides whether they can stay in the community until their trial or must be held in custody, often called remand.\n\nIn many countries, there is a general presumption in favour of bail, because the person has not been convicted. Bail can be refused if there is a serious risk the person will not come back to court, will commit more offences or will interfere with witnesses.\n\nBail can come with conditions, such as living at a certain address, a curfew, staying away from certain people or reporting to a police station. In some countries, especially the US, courts may require money as a guarantee, which critics say can keep poorer people locked up only because they cannot pay.\n\nRules on bail are frequently reformed and debated.",
+      "apply_it": "Think about why holding an innocent person in jail for months before trial could cause real harm.",
+      "quiz": {
+        "question": "Why might bail be refused?",
+        "options": [
+          "The person is unpopular",
+          "The judge is busy",
+          "There is a serious risk they will not attend court or will reoffend",
+          "The person asked politely"
+        ],
+        "answer": 2,
+        "explanation": "Courts may refuse bail if there are real risks such as fleeing, reoffending or interfering with witnesses."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--16",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "pleas",
+        "courts",
+        "plea-bargaining"
+      ],
+      "title": "Most criminal cases end with a guilty plea, not a full trial",
+      "body": "Films focus on dramatic trials, but most criminal cases never reach one. In many countries, the large majority end with the accused pleading guilty.\n\nA guilty plea often leads to a lower sentence than a conviction after trial, because it saves time and spares witnesses. In England and Wales, sentencing guidelines give a reduction of up to one third for an early guilty plea.\n\nIn the United States, plea bargaining is very common. The prosecution and defence agree on a charge or sentence in exchange for a guilty plea. The great majority of federal convictions come from guilty pleas.\n\nSupporters say this keeps the system working. Critics worry that the pressure of a much harsher sentence after trial may push some innocent people to plead guilty.",
+      "apply_it": "Next time you watch a courtroom drama, remember most real cases never get that far.",
+      "quiz": {
+        "question": "What is one criticism of plea bargaining?",
+        "options": [
+          "It makes trials longer",
+          "It is illegal everywhere",
+          "Pressure to accept a deal may lead some innocent people to plead guilty",
+          "It always gives harsher sentences"
+        ],
+        "answer": 2,
+        "explanation": "The gap between a plea deal and a possible trial sentence can pressure even innocent people to plead guilty."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--17",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "trials",
+        "adversarial",
+        "inquisitorial"
+      ],
+      "title": "Some trials are contests between two sides, others are led by the judge",
+      "body": "Trials work differently around the world. Two main styles are often described.\n\nIn adversarial systems, common in common law countries, the prosecution and defence each present their case, call witnesses and challenge the other side. The judge acts like a referee, making sure the rules are followed. A jury or the judge then decides.\n\nIn inquisitorial systems, common in civil law countries like France and Germany, the judge plays a more active role. Judges question witnesses, examine files gathered during the investigation and lead the search for the truth. Lawyers still take part, but with a smaller role.\n\nIn reality, many countries mix features of both. Each style has supporters, and researchers debate which is better at finding the truth and protecting rights.",
+      "apply_it": "If you watch a trial scene in a film, ask yourself: is this adversarial or inquisitorial?",
+      "quiz": {
+        "question": "In an inquisitorial system, who usually leads the questioning of witnesses?",
+        "options": [
+          "The judge",
+          "The jury",
+          "The police",
+          "The victim's family"
+        ],
+        "answer": 0,
+        "explanation": "In inquisitorial systems, judges take an active role, questioning witnesses and leading the inquiry."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--18",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "judges",
+        "courts",
+        "trials"
+      ],
+      "title": "Judges run the courtroom, explain the law and often decide sentences",
+      "body": "Judges have many roles, depending on the country and the court.\n\nIn every system, judges make sure proceedings are fair and follow the law. They decide legal questions, such as whether a piece of evidence can be used.\n\nWhere there is a jury, the judge explains the law to the jurors and how they should approach the evidence, but the jury decides the facts and the verdict. The judge then usually decides the sentence.\n\nWhere there is no jury, the judge, or a panel of judges, decides both the facts and the law. In some countries, professional judges sit alongside trained ordinary citizens called lay judges.\n\nIn England and Wales, most minor criminal cases are heard by magistrates, who are often unpaid volunteers from the local community, supported by a legal adviser.",
+      "apply_it": "Find out whether minor cases in your area are heard by professional judges, volunteers or both.",
+      "quiz": {
+        "question": "In a jury trial, who usually decides the sentence?",
+        "options": [
+          "The jury",
+          "The police",
+          "The victim",
+          "The judge"
+        ],
+        "answer": 3,
+        "explanation": "In most jury systems, the jury decides guilt and the judge decides the sentence."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--19",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "juries",
+        "trials",
+        "citizens"
+      ],
+      "title": "Juries let ordinary people decide guilt, but many countries do not use them",
+      "body": "A jury is a group of ordinary citizens, chosen at random, who listen to the evidence and decide whether the accused is guilty. In England and Wales and many US states, a criminal jury has 12 members.\n\nSupporters say juries bring community values into the courtroom and protect against unfair laws or prosecutions. Jurors are told to decide only on the evidence presented in court, not on news reports or their own research.\n\nJuries are common in countries influenced by English law, but many countries rarely use them or do not use them at all. Instead, professional judges, sometimes sitting with lay judges, decide cases.\n\nResearch on jury decision-making shows that jurors usually take the job seriously, though they can be influenced by bias like anyone else.",
+      "apply_it": "If you ever get called for jury service, remember to decide only on the evidence heard in court.",
+      "quiz": {
+        "question": "What is a jury told to base its decision on?",
+        "options": [
+          "News reports and social media",
+          "Only the evidence presented in court",
+          "What their friends think",
+          "Their own online research"
+        ],
+        "answer": 1,
+        "explanation": "Jurors must decide only on evidence heard in court, so that the trial is fair to both sides."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--20",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "lawyers",
+        "defence",
+        "legal-aid"
+      ],
+      "title": "Defence lawyers make sure the accused gets a fair hearing",
+      "body": "The defence lawyer represents the accused. Their job is not to lie or hide the truth, but to test the prosecution's case, protect their client's rights and present the defence.\n\nPeople sometimes ask how lawyers can defend someone they think is guilty. The answer is that guilt is decided by the court, not the lawyer. A strong defence makes sure the prosecution really proves its case, which protects everyone, including the innocent.\n\nThe right to a lawyer is a key part of a fair trial. If someone cannot afford one, many countries provide help called legal aid, or a public defender. How generous this help is varies a great deal, and cuts to legal aid are a common concern.\n\nIn common law countries, lawyers may be called solicitors, barristers, attorneys or advocates.",
+      "apply_it": "Find out how to get free or low-cost legal advice in your area, in case you or a friend ever need it.",
+      "quiz": {
+        "question": "Why is it important for guilty-seeming people to have a defence lawyer?",
+        "options": [
+          "So they can escape punishment",
+          "So the prosecution must really prove its case, which protects everyone",
+          "Because lawyers are paid by the hour",
+          "It is not important"
+        ],
+        "answer": 1,
+        "explanation": "A proper defence forces the prosecution to prove its case, which helps prevent innocent people being convicted."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--21",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "evidence",
+        "trials",
+        "fairness"
+      ],
+      "title": "Evidence has to meet rules before a court will rely on it",
+      "body": "Courts rely on evidence: witness statements, documents, phone records, videos, forensic results and physical objects. But not everything counts.\n\nMany systems have rules about which evidence can be used, called admissibility. Evidence may be excluded if it was gathered illegally, if it is unreliable or if it would be unfairly prejudicial. For example, a confession obtained through threats should not be used.\n\nCommon law systems have rules about hearsay, which is when a witness repeats what someone else said outside court. It is often limited, because the original speaker cannot be questioned. But there are many exceptions.\n\nCivil law systems tend to have fewer strict exclusion rules, leaving judges to decide how much weight each piece of evidence deserves.",
+      "apply_it": "Next time you read about a case, notice what kinds of evidence are mentioned.",
+      "quiz": {
+        "question": "What is hearsay?",
+        "options": [
+          "A type of DNA test",
+          "A sound recording",
+          "A judge's final decision",
+          "A witness repeating what someone else said outside court"
+        ],
+        "answer": 3,
+        "explanation": "Hearsay is second-hand evidence. It is often limited because the person who said it cannot be questioned."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--22",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "witnesses",
+        "evidence",
+        "trials"
+      ],
+      "title": "Witnesses give evidence under oath and can be questioned by both sides",
+      "body": "Witnesses are people who tell the court what they saw, heard or know. They usually promise to tell the truth by taking an oath or making a formal affirmation. Lying in court is a serious crime in most places, often called perjury.\n\nIn adversarial systems, a witness is first questioned by the side that called them, then cross-examined by the other side. Cross-examination tests whether the account is accurate, consistent and honest.\n\nExpert witnesses, such as doctors or forensic scientists, explain specialist evidence. Courts must decide how much to trust them.\n\nMany countries now offer special measures for vulnerable witnesses, such as children or victims of sexual offences. These can include giving evidence by video link or behind a screen, so they do not have to face the accused.",
+      "apply_it": "If you are ever a witness, it is fine to say you do not know or cannot remember. Accuracy matters more than certainty.",
+      "quiz": {
+        "question": "What is cross-examination?",
+        "options": [
+          "When a witness is questioned by the other side to test their evidence",
+          "When the judge leaves the room",
+          "When the jury votes",
+          "When the accused gives a speech"
+        ],
+        "answer": 0,
+        "explanation": "Cross-examination lets the opposing side test a witness's account for accuracy and honesty."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--23",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "sentencing",
+        "punishment",
+        "rehabilitation"
+      ],
+      "title": "Sentencing tries to balance punishment, protection and rehabilitation",
+      "body": "When someone is convicted, the court decides the sentence. Sentencing usually tries to achieve several aims at once.\n\nPunishment means giving a penalty that fits the seriousness of the crime. Deterrence aims to discourage the offender and others. Protection keeps the public safe from someone who may be dangerous. Rehabilitation helps the offender change. Reparation means making amends to the victim or community.\n\nThese aims can pull in different directions. A long prison sentence may protect the public but make rehabilitation harder. A community sentence may help someone change but feel too light to victims.\n\nDifferent countries, and different political times, put more weight on different aims. That is one reason sentences for similar crimes can vary so much around the world.",
+      "apply_it": "Pick a crime you have read about. Which sentencing aim do you think matters most for it, and why?",
+      "quiz": {
+        "question": "Which is a common aim of sentencing?",
+        "options": [
+          "Making money for the court",
+          "Entertaining the public",
+          "Rehabilitation of the offender",
+          "Punishing the offender's family"
+        ],
+        "answer": 2,
+        "explanation": "Sentencing commonly aims at punishment, deterrence, protection, rehabilitation and reparation."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--24",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "sentencing",
+        "guidelines",
+        "courts"
+      ],
+      "title": "Sentences depend on the crime, the harm and the offender's circumstances",
+      "body": "Judges do not usually pick a sentence out of thin air. Many countries set maximum penalties in law, and some have sentencing guidelines. In England and Wales, the Sentencing Council publishes guidelines for judges to follow.\n\nCourts typically look at how much harm was caused and how blameworthy the offender was. Aggravating factors, like using a weapon or targeting a vulnerable person, can increase the sentence. Mitigating factors, like genuine remorse, a first offence or mental health problems, can reduce it.\n\nPossible sentences include discharges, fines, community orders with unpaid work or treatment, suspended sentences and prison. Some countries also use electronic tagging.\n\nA few countries still have the death penalty. Many others have abolished it, and international human rights bodies push for its abolition.",
+      "apply_it": "Look up whether your country publishes sentencing guidelines online.",
+      "quiz": {
+        "question": "What is an aggravating factor?",
+        "options": [
+          "Something that reduces a sentence",
+          "A type of appeal",
+          "Something that makes a crime more serious, like using a weapon",
+          "A witness who is late"
+        ],
+        "answer": 2,
+        "explanation": "Aggravating factors, such as weapons or targeting vulnerable people, increase the seriousness and the sentence."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--25",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "restorative-justice",
+        "victims",
+        "rehabilitation"
+      ],
+      "title": "Restorative justice brings victims and offenders together to repair harm",
+      "body": "Restorative justice is an approach that focuses on repairing harm rather than only punishing. With careful preparation and a trained facilitator, it gives victims a chance to meet or communicate with the person who harmed them.\n\nVictims can explain the impact of the crime, ask questions only the offender can answer and sometimes agree on ways to put things right. Offenders have to face the real human cost of what they did.\n\nIt is always voluntary, and it is not suitable for every case. It is often used alongside, not instead of, normal sentences.\n\nResearch, including reviews of many studies, suggests restorative justice can improve victim satisfaction and may reduce reoffending for some types of crime, though results vary.",
+      "apply_it": "Think about a time you hurt someone and talking it through helped more than a punishment would have.",
+      "quiz": {
+        "question": "What is a key feature of restorative justice?",
+        "options": [
+          "It focuses on repairing harm, often through voluntary contact between victim and offender",
+          "It is compulsory for all victims",
+          "It replaces all prison sentences",
+          "It is run by the police only"
+        ],
+        "answer": 0,
+        "explanation": "Restorative justice is voluntary and focuses on repairing harm, with trained facilitators supporting both sides."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--26",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "appeals",
+        "courts",
+        "fairness"
+      ],
+      "title": "Appeals let higher courts correct mistakes",
+      "body": "No justice system is perfect, so most allow appeals. An appeal asks a higher court to review a decision made by a lower one.\n\nIn criminal cases, a convicted person can usually appeal against their conviction, their sentence or both. In some countries, prosecutors can also appeal, for example against a sentence they think is too lenient.\n\nAppeals are not usually a full rerun of the trial. In many common law systems, appeal courts look mainly at whether there was a legal error, unfairness or new evidence that makes the conviction unsafe. In some civil law systems, appeals can look again at the facts more fully.\n\nThere are often time limits for appealing, and permission may be needed. Top courts, like supreme courts, usually only hear cases of wider importance.",
+      "apply_it": "If you ever face a court decision, remember that appeal deadlines can be short, so legal advice should be sought quickly.",
+      "quiz": {
+        "question": "What do appeal courts in many common law systems mainly look for?",
+        "options": [
+          "Whether the jury liked the defendant",
+          "Whether the case was on television",
+          "How long the trial lasted",
+          "Legal errors, unfairness or new evidence that makes a conviction unsafe"
+        ],
+        "answer": 3,
+        "explanation": "Appeal courts usually focus on legal mistakes, unfair process or new evidence, rather than rerunning the whole trial."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--27",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "wrongful-convictions",
+        "fairness",
+        "evidence"
+      ],
+      "title": "Wrongful convictions happen, often through human error and pressure",
+      "body": "Sometimes innocent people are convicted. Organisations that study exonerations, such as the US National Registry of Exonerations, have recorded thousands of cases where convictions were later overturned.\n\nCommon causes include mistaken eyewitness identification, false confessions after long or pressured interviews, unreliable or misleading forensic evidence, dishonest informants, and misconduct by officials, such as hiding evidence that would help the defence.\n\nWeak legal representation and pressure to accept plea deals can also play a part.\n\nWrongful convictions are a double harm. An innocent person is punished, and the real offender may remain free to hurt others. They also damage public trust in justice. Reborn's guide How Crimes Get Solved explains more about how investigations can go wrong.",
+      "apply_it": "Remember that a conviction is a human decision, and even careful systems can make mistakes.",
+      "quiz": {
+        "question": "Which is a common cause of wrongful convictions?",
+        "options": [
+          "Too much evidence",
+          "Mistaken eyewitness identification",
+          "Juries being too careful",
+          "Trials being filmed"
+        ],
+        "answer": 1,
+        "explanation": "Mistaken eyewitnesses, false confessions and unreliable forensics are among the most common causes."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--28",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "wrongful-convictions",
+        "appeals",
+        "reform"
+      ],
+      "title": "Review bodies and innocence projects help correct wrongful convictions",
+      "body": "Because appeals can fail even when a conviction is wrong, some countries have created extra safeguards.\n\nIn England, Wales and Northern Ireland, the Criminal Cases Review Commission is an independent body that can investigate possible miscarriages of justice and send cases back to the Court of Appeal. Scotland, Norway and New Zealand have similar bodies.\n\nIn the US and elsewhere, innocence projects, often linked to law schools, investigate claims of innocence. DNA testing has helped free many wrongly convicted people.\n\nCases like these have led to reforms. Examples include recording police interviews, improving eyewitness line-up procedures, requiring prosecutors to share evidence with the defence and raising standards for forensic science.\n\nThese changes do not end every mistake, but they reduce the risk.",
+      "apply_it": "Look up whether your country has an independent body that reviews possible miscarriages of justice.",
+      "quiz": {
+        "question": "What does the Criminal Cases Review Commission do?",
+        "options": [
+          "Writes new laws",
+          "Investigates possible miscarriages of justice and can refer cases to an appeal court",
+          "Trains police officers",
+          "Chooses juries"
+        ],
+        "answer": 1,
+        "explanation": "The CCRC independently reviews possible wrongful convictions and can send cases back to the Court of Appeal."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--29",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "youth-justice",
+        "children",
+        "international"
+      ],
+      "title": "Young people are usually treated differently, but the age varies widely",
+      "body": "Most countries have special rules for children and teenagers who break the law. They usually go to youth courts, have their identities protected and receive sentences more focused on education and rehabilitation.\n\nThe age of criminal responsibility, below which children cannot be prosecuted, varies widely. In England and Wales, it is 10. In Scotland, it is 12. In many European countries, such as Germany, it is 14, and in some Nordic countries it is 15. In the US, it depends on the state.\n\nThe United Nations Committee on the Rights of the Child encourages countries to set it at 14 or higher.\n\nThese differences reflect different views about how much young children understand their actions and how best to respond to harmful behaviour.",
+      "apply_it": "Find out the age of criminal responsibility where you live, and whether you think it is right.",
+      "quiz": {
+        "question": "What does the UN Committee on the Rights of the Child encourage as a minimum age of criminal responsibility?",
+        "options": [
+          "6 or higher",
+          "10 or higher",
+          "21 or higher",
+          "14 or higher"
+        ],
+        "answer": 3,
+        "explanation": "The committee encourages countries to set the minimum age of criminal responsibility at 14 or higher."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--30",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "international",
+        "legal-systems",
+        "human-rights"
+      ],
+      "title": "Justice looks different around the world, and international courts exist too",
+      "body": "Beyond the differences already covered, countries vary in many ways. Some allow cameras in court, others ban them. Some have elected judges, others appoint them. Prison rates vary hugely, with some countries imprisoning many times more people per head than others.\n\nThe death penalty is one of the sharpest differences. Amnesty International reports that most countries have abolished it in law or practice, while a minority still carry out executions.\n\nThere are also international courts. The International Criminal Court in The Hague can try people accused of genocide, war crimes and crimes against humanity, when national courts are unable or unwilling to. Not every country accepts its authority. The International Court of Justice settles disputes between states.\n\nRegional courts, like the European Court of Human Rights, hear complaints that states have breached human rights.",
+      "apply_it": "Read about one country's justice system that is very different from yours.",
+      "quiz": {
+        "question": "What kinds of crime can the International Criminal Court try?",
+        "options": [
+          "Genocide, war crimes and crimes against humanity",
+          "Parking offences",
+          "Minor theft",
+          "Tax disputes between neighbours"
+        ],
+        "answer": 0,
+        "explanation": "The ICC focuses on the gravest crimes, such as genocide and war crimes, when national courts cannot or will not act."
+      }
+    },
+    {
+      "id": "crime-how-justice-works--31",
+      "topic": "crime-society",
+      "tags": [
+        "justice",
+        "summary",
+        "rights",
+        "legal-help"
+      ],
+      "title": "Knowing the basics helps you understand the news and protect your rights",
+      "body": "Justice systems differ widely, but many share the same core ideas. The law should apply to everyone. Judges should be independent. People are presumed innocent, and the prosecution must prove guilt, usually beyond reasonable doubt. Criminal and civil cases use different standards. Evidence and witnesses are tested before anyone is convicted. Sentences try to balance punishment, protection and rehabilitation. Appeals and review bodies exist because mistakes happen.\n\nUnderstanding these ideas helps you read the news more critically, serve well on a jury and know when to seek help.\n\nRemember, this guide is general education, not legal advice. If you ever face a legal problem, contact a qualified lawyer, a legal aid service or a free advice centre in your country as soon as you can.",
+      "apply_it": "Save the details of one free legal advice service in your area, just in case.",
+      "quiz": {
+        "question": "If you face a real legal problem, what should you do?",
+        "options": [
+          "Rely only on a general guide",
+          "Ignore it",
+          "Seek advice from a qualified lawyer or legal advice service",
+          "Ask a stranger online to decide"
+        ],
+        "answer": 2,
+        "explanation": "General knowledge helps, but rules vary by place, so real legal problems need advice from a qualified professional."
+      }
+    }
+  ]
+}

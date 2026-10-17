@@ -1,0 +1,17 @@
+{
+  "id": "science-and-nature",
+  "title": "Science and Nature",
+  "description": "Six guides, followed in order: think like a scientist, then how your body works, how life works, the living world, our changing planet and the science of everyday things.",
+  "topics": [
+    "science",
+    "life-guides"
+  ],
+  "guides": [
+    "science-think-like-a-scientist",
+    "science-how-your-body-works",
+    "guide-understand-how-life-works",
+    "science-the-living-world",
+    "science-our-changing-planet",
+    "science-everyday-things"
+  ]
+}

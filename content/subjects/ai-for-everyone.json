@@ -1,0 +1,17 @@
+{
+  "id": "ai-for-everyone",
+  "title": "AI for Everyone",
+  "description": "Six guides that build on each other: how AI works, using AI tools well, spotting fakes, working alongside AI, using it safely and fairly, and future-proofing your career.",
+  "topics": [
+    "ai-skills",
+    "life-guides"
+  ],
+  "guides": [
+    "ai-how-ai-works",
+    "guide-use-ai-tools-well",
+    "ai-spot-fakes-and-misinformation",
+    "ai-work-alongside-ai",
+    "ai-use-ai-safely",
+    "guide-future-proof-your-career"
+  ]
+}

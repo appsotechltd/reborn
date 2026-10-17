@@ -1,0 +1,780 @@
+{
+  "source": {
+    "id": "science-think-like-a-scientist",
+    "title": "Think Like a Scientist",
+    "authors": [
+      "Reborn"
+    ],
+    "kind": "guide",
+    "url": "https://undsci.berkeley.edu/",
+    "licence": "original-summary",
+    "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#life-guides",
+    "attribution": "A Reborn guide drawing on the University of California Museum of Paleontology's Understanding Science project, the US National Center for Complementary and Integrative Health, Encyclopaedia Britannica, the Royal Society and the NHS.",
+    "publisher": "Reborn",
+    "language": "en",
+    "retrieved_at": "2026-10-17",
+    "notes": "Written by Reborn; no text copied. References: University of California Museum of Paleontology, Understanding Science, https://undsci.berkeley.edu/; US National Center for Complementary and Integrative Health, Know the Science, https://www.nccih.nih.gov/health/know-science; Encyclopaedia Britannica, Scientific method, https://www.britannica.com/science/scientific-method; The Royal Society, History of the Royal Society, https://royalsociety.org/about-us/who-we-are/history/; NHS, Clinical trials, https://www.nhs.uk/conditions/clinical-trials/"
+  },
+  "cards": [
+    {
+      "id": "science-think-like-a-scientist--01",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "overview",
+        "thinking",
+        "curiosity"
+      ],
+      "title": "Thinking like a scientist is a habit anyone can learn",
+      "body": "You don't need a lab coat to think like a scientist. At its heart, science is a careful way of asking questions and checking answers against evidence, so that we fool ourselves less often.\n\nThese habits help in daily life: deciding whether a new supplement is worth buying, whether a headline is true, or why your plants keep dying.\n\nThis guide covers what science is, good questions and hypotheses, fair tests and controls, correlation and causation, sample size, risk numbers, bias, peer review and replication, reading health headlines, living with uncertainty, changing your mind, spotting pseudoscience, and simple experiments you can run at home.",
+      "apply_it": "Think of one belief you hold about health, food or money. Ask yourself: how do I actually know this is true?",
+      "quiz": {
+        "question": "What is science mainly about?",
+        "options": [
+          "Memorising facts from textbooks",
+          "Checking ideas carefully against evidence",
+          "Agreeing with experts no matter what",
+          "Using expensive equipment"
+        ],
+        "answer": 1,
+        "explanation": "Science is a method for testing ideas against evidence. The facts it produces come from that checking process."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--02",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "method",
+        "thinking",
+        "knowledge"
+      ],
+      "title": "Science is a way of checking ideas, not just a list of facts",
+      "body": "People often picture science as a pile of facts in a textbook. Those facts matter, but they are the results. Science itself is the process that produced them.\n\nThat process goes roughly like this: notice something, ask a question, suggest a possible explanation, work out what you'd expect to see if it were true, then check. If the evidence fits, confidence grows. If it doesn't, the idea is changed or dropped. Real science is messier and loops back on itself, but the core is testing ideas against the world.\n\nBecause of this, scientific knowledge can grow and improve. Old ideas get refined when better evidence arrives.",
+      "apply_it": "Pick a fact you learned at school. Try to find out how scientists first worked it out.",
+      "quiz": {
+        "question": "Why can scientific knowledge change over time?",
+        "options": [
+          "Scientists like to change their minds randomly",
+          "Facts are decided by vote",
+          "New evidence can refine or replace older ideas",
+          "Old books get lost"
+        ],
+        "answer": 2,
+        "explanation": "Science is built on testing. When new or better evidence appears, ideas are updated to fit it."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--03",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "questions",
+        "method",
+        "curiosity"
+      ],
+      "title": "A good scientific question is one you can actually test",
+      "body": "Some questions can be answered with evidence and some can't. Is this painting beautiful? is a matter of taste. Does this plant grow taller in sunlight than in shade? can be tested.\n\nA testable question points to something you can observe or measure. It often compares two things, or asks what happens when one thing changes.\n\nYou can sharpen a vague question into a testable one. Is coffee bad for me? is too broad. Do I sleep less on days I drink coffee after 3pm? is something you could track. Narrow, specific questions are easier to answer honestly.",
+      "apply_it": "Take one vague worry or curiosity you have and rewrite it as a specific question you could check with a notebook over two weeks.",
+      "quiz": {
+        "question": "Which of these is a testable question?",
+        "options": [
+          "Do tomato plants grow taller with more sunlight?",
+          "Is blue the best colour?",
+          "Is this song meaningful?",
+          "What is the purpose of life?"
+        ],
+        "answer": 0,
+        "explanation": "Plant height and sunlight can both be measured and compared. The others depend on opinion or values, not evidence."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--04",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "hypothesis",
+        "method",
+        "testing"
+      ],
+      "title": "A hypothesis is a testable guess that could turn out to be wrong",
+      "body": "A hypothesis is a possible explanation you can test. My bread didn't rise because the yeast was too old is a hypothesis. You can test it with fresh yeast.\n\nA key feature is that a good hypothesis could be shown to be wrong. If an idea explains every possible outcome, it tells you nothing. Something mysterious made the bread flat can never be disproved, so it can't be tested.\n\nBeing wrong is not failure. A hypothesis that gets ruled out has taught you something useful and narrowed down the search. Many scientific breakthroughs started with a disproved guess.",
+      "apply_it": "Next time something goes wrong at home, write down one possible cause and one simple way you could check whether it's the real cause.",
+      "quiz": {
+        "question": "What makes a hypothesis useful?",
+        "options": [
+          "It can explain any result",
+          "It comes from a famous person",
+          "It is impossible to disprove",
+          "It could be shown to be wrong by evidence"
+        ],
+        "answer": 3,
+        "explanation": "A useful hypothesis makes a clear prediction that evidence could contradict. An idea that fits every outcome cannot be tested."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--05",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "predictions",
+        "method",
+        "bias"
+      ],
+      "title": "Decide what you expect to see before you look",
+      "body": "It's easy to look at results and then tell a story that fits them. Almost any outcome can seem to make sense afterwards. Scientists guard against this by making predictions first.\n\nIf your hypothesis is that the plant on the windowsill grows faster because of light, predict how much taller it will be in two weeks before you measure. Then you can't quietly shift the goalposts later.\n\nIn serious research, many studies now register their plans publicly before collecting data. This stops researchers from picking whichever result looks best after the fact. At home, simply writing your prediction down does the same job.",
+      "apply_it": "Before you try something new, such as a recipe change or a new route to work, write down what you expect to happen. Compare it with what actually happens.",
+      "quiz": {
+        "question": "Why do scientists write down predictions before collecting results?",
+        "options": [
+          "To make experiments take longer",
+          "So they cannot reshape the story to fit whatever happens",
+          "Because it is a legal rule everywhere",
+          "To guarantee the hypothesis is right"
+        ],
+        "answer": 1,
+        "explanation": "Writing predictions first protects against hindsight, where any result can seem to fit once you know it."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--06",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "experiments",
+        "variables",
+        "fair-test"
+      ],
+      "title": "A fair test changes one thing at a time",
+      "body": "Say you want to know if a new fertiliser helps your tomatoes. If you also move them to a sunnier spot and water them more, and they grow better, you can't tell which change did it.\n\nA fair test changes only one thing, called the variable you're testing, and keeps everything else the same. Same pots, same soil, same water, same light. One group gets the fertiliser, the other doesn't.\n\nThis idea sounds simple, but it's easy to break without noticing. In everyday life we often change several things at once, like a new diet, more exercise and better sleep, then credit the one we like best.",
+      "apply_it": "If you're trying to improve something, such as your sleep, change just one habit for two weeks before adding another.",
+      "quiz": {
+        "question": "You change your diet, exercise and sleep all at once and feel better. What can you conclude?",
+        "options": [
+          "Diet was the cause",
+          "Exercise was the cause",
+          "You can't tell which change helped",
+          "Sleep had no effect"
+        ],
+        "answer": 2,
+        "explanation": "When several things change together, you can't separate their effects. A fair test changes one thing at a time."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--07",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "experiments",
+        "controls",
+        "comparison"
+      ],
+      "title": "A control group shows what would have happened anyway",
+      "body": "Many things get better on their own. Colds clear up, back pain often eases, and moods rise and fall. So if you try a remedy and feel better, how do you know it was the remedy?\n\nA control group answers this. It is a group treated exactly the same, except they don't get the thing being tested. Comparing the two groups shows whether the treatment made a difference beyond what would have happened anyway.\n\nWithout a comparison, a before-and-after story can be very misleading. I took this and my cold went away in a week sounds convincing, until you remember that colds usually go away in about a week.",
+      "apply_it": "When someone says a product worked for them, ask yourself: compared with what? What would probably have happened without it?",
+      "quiz": {
+        "question": "Why do experiments need a control group?",
+        "options": [
+          "To show what happens without the treatment",
+          "To make the study bigger",
+          "To give everyone the same medicine",
+          "To save money"
+        ],
+        "answer": 0,
+        "explanation": "A control group gets everything except the treatment, so researchers can see whether the treatment itself made a difference."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--08",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "placebo",
+        "blinding",
+        "health"
+      ],
+      "title": "Expecting to feel better can make you feel better, so good tests hide who gets what",
+      "body": "People given a sugar pill they believe is medicine often report feeling better, especially for things like pain or tiredness. This is called the placebo effect. It's real in the sense that people feel a difference, though it rarely cures the underlying illness.\n\nTo separate a real treatment effect from expectation, good trials are blinded. Participants don't know whether they got the real treatment or a dummy. In double-blind trials, the researchers measuring results don't know either, so their hopes can't colour the results.\n\nThis is why your neighbour's glowing review of a remedy, however honest, can't tell you whether it works.",
+      "apply_it": "Try a blind taste test with a friend: pour two brands of the same drink into unmarked cups and see if you can really tell which is your favourite.",
+      "quiz": {
+        "question": "What is a double-blind trial?",
+        "options": [
+          "Only the doctors know who gets the real treatment",
+          "The trial is done in the dark",
+          "Everyone gets the real treatment",
+          "Neither participants nor the researchers measuring results know who got what"
+        ],
+        "answer": 3,
+        "explanation": "In a double-blind trial, neither participants nor the people measuring outcomes know who got the real treatment, which reduces bias."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--09",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "randomisation",
+        "experiments",
+        "fair-test"
+      ],
+      "title": "Picking groups at random makes comparisons fair",
+      "body": "Imagine testing a new exercise class by letting people choose whether to join. Those who sign up might already be fitter, keener or healthier. If they do better, is it the class or the people?\n\nRandomisation fixes this. Participants are put into groups by chance, like a coin toss or a computer draw. With enough people, chance spreads differences in age, health and habits fairly evenly across groups, including differences nobody thought to measure.\n\nThat's why randomised controlled trials are seen as one of the strongest ways to test treatments. They are not perfect, and some questions can't ethically be tested this way, but they remove a lot of hidden unfairness.",
+      "apply_it": "Next time you read about a study, look for the word randomised. If it isn't there, ask how the groups were chosen.",
+      "quiz": {
+        "question": "Why do strong trials put people into groups at random?",
+        "options": [
+          "It makes the trial quicker",
+          "It spreads hidden differences fairly between groups",
+          "It guarantees the treatment works",
+          "It means fewer people are needed"
+        ],
+        "answer": 1,
+        "explanation": "Random allocation spreads both known and unknown differences between groups, so the comparison is fairer."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--10",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "correlation",
+        "causation",
+        "thinking"
+      ],
+      "title": "Two things happening together doesn't mean one causes the other",
+      "body": "Ice cream sales and drownings both rise in summer. Does ice cream cause drowning? Of course not. Hot weather makes people buy ice cream and also go swimming.\n\nWhen two things tend to rise and fall together, they're correlated. Causation means one actually makes the other happen. A correlation can be a clue worth investigating, but on its own it doesn't prove cause.\n\nThis mix-up is behind many confusing headlines. People who drink red wine live longer could mean wine helps, or that people with more money, who often have better healthcare, drink more wine. Further evidence is needed to tell the difference.",
+      "apply_it": "When you see a claim that X is linked to Y, say to yourself: linked, not proven. Then think of one other reason they might go together.",
+      "quiz": {
+        "question": "Ice cream sales and drownings rise together. What is the most likely explanation?",
+        "options": [
+          "Ice cream causes drowning",
+          "Drowning makes people buy ice cream",
+          "Hot weather increases both",
+          "It is pure coincidence every year"
+        ],
+        "answer": 2,
+        "explanation": "A third factor, warm weather, drives both. Correlation alone does not show that one causes the other."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--11",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "confounders",
+        "causation",
+        "thinking"
+      ],
+      "title": "Hidden third factors can fool you into seeing cause and effect",
+      "body": "A hidden factor that affects both things you're comparing is called a confounder. It can create a link that looks causal but isn't.\n\nExample: children with bigger feet tend to read better. Big feet don't help reading. Older children have bigger feet and also read better. Age is the confounder.\n\nIn health research, confounders are everywhere. People who take vitamins may also exercise more, smoke less and eat better. If they're healthier, is it the vitamins? Good studies try to measure and adjust for confounders, but they can never be sure they've caught them all. That's one reason randomised trials are so valued.",
+      "apply_it": "Pick a link you've heard, such as people who eat breakfast are slimmer. List two hidden factors that might explain it instead.",
+      "quiz": {
+        "question": "Children with bigger feet tend to read better. What is the likely confounder?",
+        "options": [
+          "Age",
+          "Shoe brand",
+          "Foot shape",
+          "Reading glasses"
+        ],
+        "answer": 0,
+        "explanation": "Older children have both bigger feet and better reading skills. Age explains the link, not foot size."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--12",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "causation",
+        "reverse-causation",
+        "thinking"
+      ],
+      "title": "Sometimes the cause runs the other way round",
+      "body": "Studies sometimes find that people who use a walking stick are less healthy than those who don't. It would be silly to conclude that walking sticks make you ill. People start using sticks because their health or mobility has changed.\n\nThis is reverse causation: the effect is mistaken for the cause.\n\nIt turns up in subtler ways. People who rest a lot might be less healthy, but perhaps poor health makes them rest more. Teens who spend more time online might feel lower, but feeling low might also drive time online. Often both directions play a part, and researchers still debate many of these questions. Asking which way could the arrow point? is a powerful habit.",
+      "apply_it": "When you read A is linked to B, flip it and ask: could B be causing A instead?",
+      "quiz": {
+        "question": "People who use walking sticks are often less healthy. Why is this probably not because sticks cause illness?",
+        "options": [
+          "Sticks are good for health",
+          "The study must be fake",
+          "Healthy people secretly use sticks",
+          "Poorer health leads people to start using sticks"
+        ],
+        "answer": 3,
+        "explanation": "This is reverse causation: health changes come first and lead people to use a stick, not the other way round."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--13",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "sample-size",
+        "statistics",
+        "chance"
+      ],
+      "title": "Small samples can easily give a misleading answer",
+      "body": "Flip a fair coin four times and getting three heads is common. Flip it a thousand times and you'll land very close to half heads. Small samples bounce around by chance; large ones settle down.\n\nThis matters for studies. A trial with 12 people can show a big effect that disappears when tested on 1,200. Small studies are more likely to produce surprising results by luck alone, and surprising results are the ones that make headlines.\n\nBigger isn't automatically better if the study is badly designed. But when a dramatic finding comes from a tiny group, treat it as a hint that needs checking, not a fact.",
+      "apply_it": "Flip a coin 10 times and count heads. Then do 50 flips with a friend. Notice how the bigger set comes closer to half.",
+      "quiz": {
+        "question": "A study of 10 people finds a dramatic effect. How should you treat it?",
+        "options": [
+          "As proof the effect is real",
+          "As an interesting hint that needs testing in more people",
+          "As definitely false",
+          "As more reliable than a large study"
+        ],
+        "answer": 1,
+        "explanation": "Small samples are easily swayed by chance. A dramatic result from few people is worth checking with larger studies."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--14",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "statistics",
+        "averages",
+        "thinking"
+      ],
+      "title": "An average can hide a lot of variety",
+      "body": "If a diet helps people lose an average of 2 kilograms, that doesn't mean everyone lost 2 kilograms. Some might have lost 10 and others gained some. The average hides that spread.\n\nAverages can also be pulled by a few extreme values. If ten people in a room earn a modest salary and a billionaire walks in, the average income rockets, yet nobody else is any richer. The median, the middle value when you line everyone up, is often a better picture of what's typical.\n\nWhen you hear an average, ask how spread out the results were, and whether a few unusual cases are pulling it up or down.",
+      "apply_it": "Next time you see an average in the news, ask: what would the typical person's result be, and how much did results vary?",
+      "quiz": {
+        "question": "Why can the median be more useful than the average for incomes?",
+        "options": [
+          "It is easier to calculate",
+          "It always gives a bigger number",
+          "It isn't pulled up by a few extremely high earners",
+          "It includes only the richest people"
+        ],
+        "answer": 2,
+        "explanation": "A few very large values can drag the average up. The median shows the middle person, which is often more typical."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--15",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "risk",
+        "statistics",
+        "health"
+      ],
+      "title": "Doubled risk can still be a tiny risk, so always ask for the real numbers",
+      "body": "Doubles your risk sounds alarming. But double what? If a risk goes from 1 in 10,000 to 2 in 10,000, it has doubled, yet only one extra person in 10,000 is affected.\n\nThat headline number is the relative risk: how much bigger or smaller the risk is compared with before. The absolute risk tells you the actual chance: what happens to how many people.\n\nBoth are useful, but relative risks on their own can make small effects look huge, and they're popular in adverts and headlines for that reason. When you see a percentage change in risk, look for the starting number. If you're making a health decision, a doctor can help put the numbers in context for you.",
+      "apply_it": "Find a health headline with a percentage increase or decrease in risk. Try to find the actual starting risk in the article.",
+      "quiz": {
+        "question": "A risk rises from 1 in 10,000 to 2 in 10,000. What is true?",
+        "options": [
+          "The relative risk doubled but the absolute increase is small",
+          "Half of people are now affected",
+          "The risk is now very high",
+          "Nothing has changed"
+        ],
+        "answer": 0,
+        "explanation": "The relative risk doubled, but in absolute terms only one extra person in 10,000 is affected."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--16",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "anecdotes",
+        "bias"
+      ],
+      "title": "Personal stories are powerful, but they aren't the same as evidence",
+      "body": "My grandad smoked every day and lived to 95. Stories like this are vivid and memorable, but one case can't tell you about the odds. Smoking still greatly raises the risk of many diseases. Some people are lucky.\n\nStories can also be filtered without us noticing. We hear from the business owners who made it big, not the many who failed. We see the old buildings still standing, not the ones that fell down. This is called survivorship bias: looking only at the successes and forgetting the invisible failures.\n\nStories are a great way to start a question. Evidence from many people is how you answer it.",
+      "apply_it": "When a story makes you want to change a habit, ask: what about all the people this didn't happen to?",
+      "quiz": {
+        "question": "What is survivorship bias?",
+        "options": [
+          "A bias towards older people",
+          "Being too careful with money",
+          "Trusting doctors too much",
+          "Drawing conclusions only from the successes you can see"
+        ],
+        "answer": 3,
+        "explanation": "Survivorship bias means focusing on winners or survivors and ignoring the failures that disappeared from view."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--17",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "bias",
+        "confirmation-bias",
+        "thinking"
+      ],
+      "title": "We all tend to notice evidence that agrees with us",
+      "body": "Confirmation bias is the habit of looking for, remembering and believing information that fits what we already think, while brushing aside what doesn't. Everyone does it, scientists included.\n\nIf you think full moons make people act strangely, you'll remember the wild full-moon shift at work and forget all the calm ones. Studies looking for a full-moon effect on behaviour have generally found little or none.\n\nScience fights this with rules: predictions written in advance, control groups, blinding and other people checking the work. In daily life, you can actively look for the best argument against your view. If your belief survives that, you can hold it with more confidence.",
+      "apply_it": "Pick one opinion you hold strongly and spend five minutes reading the strongest case against it from a reliable source.",
+      "quiz": {
+        "question": "Which is an example of confirmation bias?",
+        "options": [
+          "Changing your mind after new evidence",
+          "Remembering only the times that support your belief",
+          "Running a blind taste test",
+          "Asking for a second opinion"
+        ],
+        "answer": 1,
+        "explanation": "Confirmation bias is noticing and recalling what fits our beliefs while overlooking what doesn't."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--18",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "replication",
+        "research"
+      ],
+      "title": "One study is rarely the final word",
+      "body": "A single study, even a good one, can be wrong. The sample might have been unusual, a small error crept in, or chance produced a fluke. That's why scientists value replication: other teams repeating the study to see if they get the same result.\n\nWhen results replicate across different groups, places and methods, confidence grows a lot. When they don't, it's a warning sign. In recent years, researchers in several fields have found that some well-known findings didn't hold up when repeated, which has led to better practices.\n\nSo when you see New study shows, think: interesting. Now let's see if it holds up.",
+      "apply_it": "When a new study makes the news, search for whether other studies have found the same thing before you change your habits.",
+      "quiz": {
+        "question": "Why is replication important in science?",
+        "options": [
+          "It lets scientists publish more papers",
+          "It proves the first scientist was honest",
+          "It checks whether a result holds up when repeated",
+          "It makes studies cheaper"
+        ],
+        "answer": 2,
+        "explanation": "Repeating studies shows whether a finding is reliable or was a fluke of one particular study."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--19",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "peer-review",
+        "research"
+      ],
+      "title": "Peer review is a useful filter, not a stamp of truth",
+      "body": "Before most scientific papers are published in a journal, they're sent to other experts in the field for checking. This is peer review. Reviewers look for flaws in the methods, ask for more evidence and sometimes reject the paper.\n\nIt catches many problems and improves a lot of work. But it isn't perfect. Reviewers usually don't redo the experiment, and they can miss errors or even fraud. Some published papers are later corrected or withdrawn.\n\nPublished in a peer-reviewed journal is a good sign compared with a blog post or advert. It just isn't proof. The strongest evidence comes when many reviewed studies point the same way.",
+      "apply_it": "Next time someone cites a study, ask: was it peer reviewed, and have other studies found the same thing?",
+      "quiz": {
+        "question": "What does peer review mean?",
+        "options": [
+          "Other experts check a paper before it is published",
+          "The public votes on research",
+          "A paper is guaranteed to be correct",
+          "Scientists review their friends' social media"
+        ],
+        "answer": 0,
+        "explanation": "Peer review is expert checking before publication. It improves quality but does not guarantee a result is true."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--20",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "research",
+        "health"
+      ],
+      "title": "Some kinds of evidence are much stronger than others",
+      "body": "Not all evidence carries the same weight. Roughly, from weaker to stronger: personal stories and expert opinion on their own; studies in cells or animals; observational studies that follow groups of people; randomised controlled trials; and systematic reviews, which gather and assess all the good studies on a question.\n\nThis ladder is a guide, not a strict law. A large, careful observational study can be more useful than a tiny, sloppy trial. Some questions, like whether smoking causes cancer, were answered mostly by observational studies because you can't ethically randomise people to smoke.\n\nBut knowing the rough order helps you judge how much a claim should move you.",
+      "apply_it": "Next time you read a health claim, try to place its evidence on this ladder: story, lab study, observation, trial or review?",
+      "quiz": {
+        "question": "Which usually gives the strongest evidence about a treatment?",
+        "options": [
+          "One person's experience",
+          "A study in mice",
+          "A celebrity endorsement",
+          "A systematic review of many good trials"
+        ],
+        "answer": 3,
+        "explanation": "A systematic review pulls together all good studies on a question, giving a fuller picture than any single source."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--21",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "headlines",
+        "health",
+        "media"
+      ],
+      "title": "A health headline about mice or cells may not apply to you",
+      "body": "Coffee kills cancer cells! might be based on cells in a dish, dosed with amounts no person could ever drink. Many things kill cells in a dish, including bleach and heat. Results from cells and animals are important early steps, but most don't carry over to people in the same way.\n\nWhen you read a health headline, look for who or what was studied. Was it cells, mice or humans? How many people? Was it a trial or just an observation?\n\nHeadlines are written to grab attention, and they often go further than the study itself. The original research usually says something far more cautious. For decisions about your own health, talk to a doctor or pharmacist.",
+      "apply_it": "Find one health headline this week and track down what was actually studied: cells, animals or people.",
+      "quiz": {
+        "question": "A headline says a food cures a disease in mice. What should you remember?",
+        "options": [
+          "It definitely works in people too",
+          "Results in mice often don't carry over to humans",
+          "Mice studies are always fake",
+          "You should eat lots of that food now"
+        ],
+        "answer": 1,
+        "explanation": "Animal studies are useful early steps, but many results don't hold in people. Human evidence is needed."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--22",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "headlines",
+        "questions"
+      ],
+      "title": "A handful of questions will help you judge almost any claim",
+      "body": "You don't need to be an expert to weigh a claim. Ask:\n\nWho is saying this, and do they gain from it, by selling something or getting clicks? What's the evidence: a study, a story, or nothing? How big was the study, and was it in people? Compared with what? How big is the effect in real numbers? Do other good studies agree?\n\nNone of these questions gives a perfect answer, and it's fine to say I don't know yet. But they quickly sort strong claims from weak ones. Many people find that simply asking where does this come from? filters out a lot of nonsense.",
+      "apply_it": "Save these questions in your phone. Run through them the next time a claim surprises you or tempts you to buy something.",
+      "quiz": {
+        "question": "Which question is most useful when judging a surprising claim?",
+        "options": [
+          "Does it sound exciting?",
+          "How many likes did it get?",
+          "What is the evidence, and who gains if I believe it?",
+          "Is it written in long words?"
+        ],
+        "answer": 2,
+        "explanation": "Looking at the evidence and at who benefits helps sort reliable claims from marketing or hype."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--23",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "uncertainty",
+        "honesty"
+      ],
+      "title": "Uncertainty is a normal, honest part of science",
+      "body": "Scientists rarely say they're 100 percent sure. Instead, results often come with a range, such as the treatment reduced symptoms by between 10 and 30 percent. That range shows how precisely the effect was measured.\n\nSome people see uncertainty as weakness. It's actually honesty. A weather forecast saying 70 percent chance of rain is more useful than a confident promise that turns out wrong.\n\nUncertainty doesn't mean anything goes. Scientists can be very confident that the Earth is warming or that vaccines prevent many serious diseases, while still debating details. Be wary of anyone who claims total certainty on a complex question, especially if they're selling something.",
+      "apply_it": "Next time you check a weather forecast, notice the percentage chance of rain and think about what it means for your plans.",
+      "quiz": {
+        "question": "What does it usually mean when a scientist gives a result as a range?",
+        "options": [
+          "They are honestly showing how precise the measurement is",
+          "They have no idea",
+          "The study failed",
+          "They are hiding the real answer"
+        ],
+        "answer": 0,
+        "explanation": "A range shows the uncertainty in a measurement. It is a sign of careful, honest reporting, not weakness."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--24",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "statistics",
+        "significance"
+      ],
+      "title": "Statistically significant doesn't mean big or important",
+      "body": "You'll often read that a result was statistically significant. In science, this mostly means the result would be fairly unlikely if there were truly no effect, so it's probably not pure chance. It doesn't say the effect is large or matters in real life.\n\nIn a huge study, even a tiny difference can be significant. A pill that lowers blood pressure by a very small amount might pass the test, yet make little difference to anyone's health.\n\nStatisticians have debated how this idea is used and misused, and many now urge researchers to report how big an effect is, not just whether it crossed a line. Always ask: significant, but how big?",
+      "apply_it": "When you see the word significant in a news story, look for the actual size of the effect before deciding it matters.",
+      "quiz": {
+        "question": "A huge study finds a statistically significant but tiny effect. What does that tell you?",
+        "options": [
+          "The effect is large",
+          "The effect is probably real but may be too small to matter",
+          "The study was wrong",
+          "Everyone should change their habits"
+        ],
+        "answer": 1,
+        "explanation": "Statistical significance suggests an effect is unlikely to be pure chance. It says nothing about whether it is big enough to matter."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--25",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "theories",
+        "knowledge",
+        "method"
+      ],
+      "title": "In science, a theory is a well-tested explanation, not a hunch",
+      "body": "In everyday speech, it's just a theory means a guess. In science, a theory means something much stronger: a broad explanation that has been tested many times and fits a large body of evidence.\n\nThe theory of evolution, the germ theory of disease and the theory of gravity are all scientific theories. They explain huge numbers of observations and make predictions that keep coming true.\n\nTheories can still be refined. Einstein's ideas improved on Newton's description of gravity, but Newton's equations still work well enough to land spacecraft on the Moon. Being called a theory is a mark of strength, not doubt.",
+      "apply_it": "Next time you hear it's just a theory, explain the difference between the everyday and scientific meaning of the word.",
+      "quiz": {
+        "question": "What does theory mean in science?",
+        "options": [
+          "A wild guess",
+          "An idea nobody has tested",
+          "A personal opinion",
+          "A broad explanation backed by lots of evidence"
+        ],
+        "answer": 3,
+        "explanation": "A scientific theory is a well-tested explanation that fits a large body of evidence, quite different from the everyday meaning."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--26",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "changing-minds",
+        "honesty"
+      ],
+      "title": "Changing your mind when the evidence changes is a strength",
+      "body": "For decades, many doctors believed stomach ulcers were mainly caused by stress and spicy food. In the 1980s, two Australian researchers argued that a bacterium was often to blame. They faced doubt at first, but the evidence grew until most doctors accepted it, and ulcers could often be cured with antibiotics. The pair later won a Nobel Prize.\n\nThe story shows science at its best: an idea challenged, tested and replaced. It also shows that even experts find changing their minds hard.\n\nIn daily life, saying I was wrong, the evidence points the other way is a sign of good thinking, not weakness. It is how you get closer to the truth.",
+      "apply_it": "Think of something you used to believe and later changed your mind about. Notice what evidence or experience changed it.",
+      "quiz": {
+        "question": "What does the story of stomach ulcers show about science?",
+        "options": [
+          "Experts are always right",
+          "Ideas can be overturned when strong new evidence appears",
+          "Bacteria never cause illness",
+          "Stress causes all diseases"
+        ],
+        "answer": 1,
+        "explanation": "Strong evidence overturned a long-held belief. Science improves when people are willing to update their views."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--27",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "pseudoscience",
+        "warning-signs",
+        "health"
+      ],
+      "title": "Pseudoscience borrows the look of science without the testing",
+      "body": "Pseudoscience is a claim dressed up to sound scientific without being properly tested. Watch for these warning signs:\n\nBig promises like cures everything or works for everyone. Sciencey words used vaguely, such as quantum, toxins or energy fields, without clear meaning. Reliance on testimonials rather than trials. Claims that can't be tested or that explain away every failure. Saying scientists or doctors are hiding the truth. A product to sell at the end.\n\nOne warning sign doesn't prove something is false, and new ideas aren't wrong just because they're unusual. But several signs together are a good reason to be cautious, especially with health. Never stop a prescribed treatment without talking to your doctor.",
+      "apply_it": "Look at one supplement or wellness advert. Count how many warning signs from this card you can spot in it.",
+      "quiz": {
+        "question": "Which is a common warning sign of pseudoscience?",
+        "options": [
+          "Results published with honest uncertainty",
+          "Studies repeated by other teams",
+          "A clear explanation of how it was tested",
+          "A claim that it cures many unrelated illnesses"
+        ],
+        "answer": 3,
+        "explanation": "Claims to cure many unrelated conditions are a classic red flag. Real treatments usually help specific things, with limits."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--28",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "experts",
+        "consensus",
+        "trust"
+      ],
+      "title": "Trust well-established expert agreement, while still asking good questions",
+      "body": "No one can check every scientific claim personally. We all rely on experts. The key is knowing when that trust is well placed.\n\nThe strongest position is a scientific consensus: when most experts in a field, looking at many lines of evidence, broadly agree. This is very different from one doctor or one scientist on a video with a surprising view. A lone expert can be right, but it's rarer than the internet suggests.\n\nCheck whether someone is an expert in the field they're talking about. A brilliant physicist isn't automatically an expert in nutrition. National science academies and major health bodies are usually good places to see where consensus stands.",
+      "apply_it": "Next time you see an expert making a claim, check what their field actually is and whether major science or health bodies agree.",
+      "quiz": {
+        "question": "Which usually deserves more weight?",
+        "options": [
+          "One expert with a surprising view on a video",
+          "A celebrity's opinion",
+          "Broad agreement among experts in the relevant field",
+          "A popular social media post"
+        ],
+        "answer": 2,
+        "explanation": "A consensus among relevant experts, built on many lines of evidence, is usually far more reliable than a single voice."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--29",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "experiments",
+        "home",
+        "fair-test"
+      ],
+      "title": "You can run real experiments at home with everyday things",
+      "body": "You can practise scientific thinking in your own kitchen. Choose a small question, like does dough rise faster in a warm spot? or which cleaner removes this stain best?\n\nSet up a fair test. For the dough: make two identical batches, put one somewhere warm and one somewhere cool, and change nothing else. Predict what will happen before you start. Measure: mark the starting height on the bowl and check every 30 minutes.\n\nEven better, repeat it on another day. One result could be luck. If you get the same result twice, you can be more confident. This is the same logic used in real labs, just smaller.",
+      "apply_it": "Choose one small question at home this week, write your prediction, run a fair test with one change, and record what happens.",
+      "quiz": {
+        "question": "You test whether dough rises faster when warm. What should you do?",
+        "options": [
+          "Make two identical batches and change only the temperature",
+          "Use different flour in each batch",
+          "Only make one batch",
+          "Decide the answer before you start and skip measuring"
+        ],
+        "answer": 0,
+        "explanation": "A fair test keeps everything the same except the one thing you are testing, here the temperature."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--30",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "experiments",
+        "records",
+        "measurement"
+      ],
+      "title": "Write things down and measure, because memory is a poor scientist",
+      "body": "Our memories are selective. We remember dramatic moments and forget dull ones, and we unknowingly reshape the past to fit what we believe. That's why scientists keep careful records.\n\nAt home, a simple notebook or phone note turns hunches into evidence. If you think a certain food upsets your stomach, record what you eat and how you feel each day for a few weeks. If you think a new route to work is faster, time both routes on several days.\n\nNumbers beat impressions. Felt quicker is weaker than took 23 minutes instead of 27, on average, over ten trips. Records also let you spot patterns you never expected. For ongoing health symptoms, a written log is useful to share with your doctor too.",
+      "apply_it": "Pick one thing you're curious about in your routine and log it in a note for the next seven days.",
+      "quiz": {
+        "question": "Why do scientists keep careful written records?",
+        "options": [
+          "To fill notebooks",
+          "Because it is required by law",
+          "Because memory is selective and easily biased",
+          "To impress other people"
+        ],
+        "answer": 2,
+        "explanation": "Memory distorts and forgets. Written records give an honest account you can check later."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--31",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "scepticism",
+        "conversation",
+        "kindness"
+      ],
+      "title": "Be kindly sceptical: question claims while respecting people",
+      "body": "Thinking like a scientist doesn't mean doubting everything or arguing with everyone. Healthy scepticism means asking for good reasons before accepting a claim, while staying open to being convinced.\n\nWhen a friend shares something doubtful, attacking them rarely changes minds. Curious questions work better: where did you see that? How do they know? Could there be another explanation? Share what you've found gently, and admit what you don't know.\n\nRemember that people believe things for many reasons, including fear, hope and trust in someone they love. Treat them with respect. Your aim is to get closer to the truth together, not to win.",
+      "apply_it": "Next time someone shares a claim you doubt, respond with one curious question instead of a correction.",
+      "quiz": {
+        "question": "What is healthy scepticism?",
+        "options": [
+          "Refusing to believe anything",
+          "Asking for good reasons while staying open to evidence",
+          "Always disagreeing with experts",
+          "Mocking people who are wrong"
+        ],
+        "answer": 1,
+        "explanation": "Healthy scepticism means wanting good evidence before believing something, while staying open-minded and respectful."
+      }
+    },
+    {
+      "id": "science-think-like-a-scientist--32",
+      "topic": "science",
+      "tags": [
+        "evidence",
+        "wrap-up",
+        "thinking",
+        "curiosity"
+      ],
+      "title": "Thinking like a scientist is a lifelong habit of honest curiosity",
+      "body": "You've now got a toolkit used by scientists everywhere. Ask testable questions and make predictions first. Run fair tests that change one thing, with a control to compare against. Remember that correlation isn't causation, that small samples mislead and that doubled risk can still be tiny.\n\nValue replication and peer review, but know their limits. Read health headlines with care. Accept uncertainty as honest. Change your mind when evidence demands it. Spot pseudoscience by its warning signs, and trust broad expert agreement.\n\nAbove all, stay curious and kind. The goal isn't to be right every time. It's to be a little less wrong, a little more often.",
+      "apply_it": "Choose one habit from this guide to practise this week, such as asking compared with what? whenever you see a claim.",
+      "quiz": {
+        "question": "What is the main goal of thinking like a scientist?",
+        "options": [
+          "To always be right",
+          "To win arguments",
+          "To trust nothing",
+          "To get gradually closer to the truth by checking ideas against evidence"
+        ],
+        "answer": 3,
+        "explanation": "Scientific thinking is about steadily reducing error through evidence, curiosity and openness to changing your mind."
+      }
+    }
+  ]
+}
