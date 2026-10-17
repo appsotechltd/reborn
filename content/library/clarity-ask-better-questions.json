@@ -1,0 +1,820 @@
+{
+ "source": {
+  "id": "clarity-ask-better-questions",
+  "title": "Ask Better Questions",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://hbr.org/2018/05/the-surprising-power-of-questions",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#communication-clarity",
+  "attribution": "A Reborn guide in our own words, drawing on Harvard Business Review, the NHS, the Institute for Healthcare Improvement's Ask Me 3 and the GOV.UK Service Manual.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn in our own words; no text copied. References: Harvard Business Review, The Surprising Power of Questions, https://hbr.org/2018/05/the-surprising-power-of-questions; NHS, What to ask your doctor or other healthcare professional, https://www.nhs.uk/nhs-services/gps/what-to-ask-your-doctor/; Institute for Healthcare Improvement, Ask Me 3: Good Questions for Your Good Health, https://www.ihi.org/resources/tools/ask-me-3-good-questions-your-good-health; GOV.UK Service Manual, Using moderated usability testing, https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing"
+ },
+ "cards": [
+  {
+   "id": "clarity-ask-better-questions--01",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "questions",
+    "curiosity",
+    "overview"
+   ],
+   "title": "Better questions lead to better conversations",
+   "body": "Most of us spend far more effort on what we say than on what we ask. Yet a well-chosen question often does more than a clever answer. It draws out facts you were missing, shows people you care, and stops small misunderstandings before they grow.\n\nThink of a doctor who asks 'What worries you most?' rather than 'Any problems?', or a friend who asks 'What was the best part of the trip?' instead of 'Was it good?' The second version gets a shrug. The first gets a story.\n\nThis guide covers open and closed questions, clarifying and follow-up questions, asking one thing at a time, avoiding leading questions and using 'why' with care. Then it puts them to work with colleagues, doctors, partners, children and interviewers.",
+   "apply_it": "Notice the next three questions you ask today. Were they ones that invited a real answer, or ones that could be answered with a shrug?",
+   "quiz": {
+    "question": "What does this guide suggest a well-chosen question can do?",
+    "options": [
+     "Win any argument",
+     "Replace the need to listen",
+     "Draw out missing facts and show you care",
+     "Make conversations shorter"
+    ],
+    "answer": 2,
+    "explanation": "Good questions surface information you didn't have and signal real interest in the other person."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--02",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "questions",
+    "connection",
+    "rapport"
+   ],
+   "title": "Asking questions makes people warm to you",
+   "body": "Questions are not only for gathering information. They also tell the other person that you find them worth hearing. Research summarised in Harvard Business Review suggests people tend to like those who ask them more questions, especially follow-ups.\n\nPicture two colleagues at lunch. One talks about their weekend for ten minutes. The other asks, 'What did you get up to?' and then, 'How did the kids find the climbing wall?' Guess who feels like better company.\n\nThe same is true at home. A partner who asks about your day, and then about the bit you mentioned in passing, makes you feel noticed. You don't need to be witty or wise. Being interested is often enough.",
+   "apply_it": "In your next chat with a friend or colleague, ask at least two questions before you share anything about yourself.",
+   "quiz": {
+    "question": "According to the card, what tends to make people warm to someone in conversation?",
+    "options": [
+     "Asking them questions, especially follow-ups",
+     "Talking confidently about themselves",
+     "Agreeing with everything",
+     "Telling lots of jokes"
+    ],
+    "answer": 0,
+    "explanation": "People generally feel more liked and understood when someone asks about them and follows up on what they said."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--03",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "open-questions",
+    "closed-questions",
+    "basics"
+   ],
+   "title": "Closed questions get facts; open questions get stories",
+   "body": "A closed question can be answered in a word or two: 'Did you finish the report?' 'Are you hungry?' 'Was the film good?' An open question invites the person to explain: 'How is the report going?' 'What do you feel like eating?' 'What did you make of the film?'\n\nOpen questions often begin with what, how, tell me or describe. Closed ones often begin with is, are, do, did, can or will.\n\nIf your teenager answers everything with 'fine', look at how you asked. 'Was school OK?' almost begs for 'yeah'. 'What was the most annoying thing today?' gives them something to grab on to. Switching just the first word can change the whole conversation.",
+   "apply_it": "Turn one closed question you'd normally ask today into an open one, starting with 'what' or 'how'.",
+   "quiz": {
+    "question": "Which of these is an open question?",
+    "options": [
+     "Did the meeting go well?",
+     "Are you coming tonight?",
+     "Is the shop still open?",
+     "What stood out to you in the meeting?"
+    ],
+    "answer": 3,
+    "explanation": "Open questions, often starting with 'what' or 'how', invite a fuller answer than yes or no."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--04",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "closed-questions",
+    "decisions",
+    "confirming"
+   ],
+   "title": "Closed questions are useful when you need a clear answer",
+   "body": "Open questions are not always better. When you need a decision, a fact or a confirmation, a closed question saves everyone time and removes doubt.\n\nAt work, 'Can you send it by 3pm today?' gets a clear yes or no, while 'How are you fixed for sending it?' may get a vague reply. At home, 'Shall we order pizza or cook?' helps a tired family decide quickly. With a builder, 'Is the price including VAT?' is exactly the right question.\n\nThe skill is choosing on purpose. Use open questions to explore and understand. Use closed questions to pin things down and agree next steps. Many good conversations start open and finish closed.",
+   "apply_it": "Before ending your next work call, ask one closed question that confirms who will do what by when.",
+   "quiz": {
+    "question": "When is a closed question most useful?",
+    "options": [
+     "When you want someone to tell a long story",
+     "When you need a clear decision or confirmation",
+     "When you want to understand someone's feelings",
+     "Never; open questions are always better"
+    ],
+    "answer": 1,
+    "explanation": "Closed questions are ideal for pinning down facts, decisions and next steps."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--05",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "questioning-funnel",
+    "open-questions",
+    "structure"
+   ],
+   "title": "Start broad, then narrow down",
+   "body": "A simple pattern works in many conversations: begin with a wide, open question, then narrow your questions as you learn more. It is sometimes called a funnel.\n\nSay a friend mentions their new job is hard. Start wide: 'How is it going overall?' Then narrow: 'Which part is hardest?' Then narrower: 'Is it the workload or the people?' Finally, close: 'Would it help to talk it through this weekend?'\n\nStarting narrow can steer people away from what really matters. If you open with 'Is your boss difficult?', you may never hear that the real problem is the commute. Going wide first lets them choose what to tell you, and your later questions follow their lead.",
+   "apply_it": "Next time someone mentions a problem, open with 'How is it going overall?' before asking anything specific.",
+   "quiz": {
+    "question": "Why start a conversation with a broad question before narrowing down?",
+    "options": [
+     "It makes the conversation last longer",
+     "It avoids having to listen",
+     "It lets the other person bring up what really matters to them",
+     "It is more polite to be vague"
+    ],
+    "answer": 2,
+    "explanation": "A wide opening question lets people choose what matters; narrower questions then follow their lead."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--06",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "one-question",
+    "focus",
+    "simplicity"
+   ],
+   "title": "Ask one question at a time",
+   "body": "When we are nervous or keen, we often stack questions: 'How was the interview, did they ask about the gap in your CV, and when will you hear back?' The other person usually answers the last one, or the easiest one, and the rest are lost.\n\nAsk one question, then stop. Let them answer fully. If something important is still missing, ask the next one. It feels slower, but you get better answers.\n\nThe same applies in writing. An email with four questions buried in one paragraph often gets one reply. If you must ask several things, number them so each is easy to see and answer. At the doctor's, one clear question at a time helps both of you stay on track.",
+   "apply_it": "In your next email that asks for information, put each question on its own numbered line.",
+   "quiz": {
+    "question": "What often happens when you ask several questions in one go?",
+    "options": [
+     "People answer all of them carefully",
+     "People usually answer only one, often the last or easiest",
+     "People ask you to repeat them",
+     "It always saves time"
+    ],
+    "answer": 1,
+    "explanation": "Stacked questions overload people, so they tend to answer one and the rest get lost."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--07",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "short-questions",
+    "simplicity",
+    "speaking"
+   ],
+   "title": "Keep the question short and the explanation shorter",
+   "body": "Sometimes a question gets lost inside a long preamble. 'So I was thinking, and tell me if this is silly, but given everything going on with the budget and the new manager and so on, I wondered whether perhaps we might...' By the end, the listener has forgotten the start.\n\nA good question is usually one plain sentence. Give a line of context if needed, then ask: 'The budget has been cut. Can we still run the summer event?'\n\nAt home, the same goes for tricky topics. 'Can we talk about how we split the chores?' is kinder and clearer than five minutes of build-up that makes your partner anxious about what is coming.",
+   "apply_it": "Before asking something important today, say it in your head first and trim it to one sentence.",
+   "quiz": {
+    "question": "What makes a question easiest to answer?",
+    "options": [
+     "One short sentence, with a line of context if needed",
+     "A long introduction explaining every detail",
+     "Several apologies first",
+     "Asking it as a hint"
+    ],
+    "answer": 0,
+    "explanation": "A brief line of context followed by one plain question keeps the listener focused on what you are asking."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--08",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "silence",
+    "patience",
+    "listening"
+   ],
+   "title": "After you ask, give people time to think",
+   "body": "Many people ask a question and then, after two seconds of silence, rush to fill the gap. They rephrase it, offer an answer themselves or move on. The other person never gets to think.\n\nTry counting slowly to five in your head after you ask something thoughtful. In a team meeting, 'What risks are we missing?' may be met with silence at first. Wait. Often the most useful point arrives just as the pause starts to feel awkward.\n\nChildren especially need this. If you ask your son what he would like to do at the weekend and then immediately list options, he will just pick one of yours. A short, relaxed silence says, 'I really want your answer.'",
+   "apply_it": "Today, after asking one real question, count to five in your head before saying anything else.",
+   "quiz": {
+    "question": "What is a common mistake right after asking a question?",
+    "options": [
+     "Waiting too long",
+     "Making eye contact",
+     "Nodding",
+     "Filling the silence before the person has had time to think"
+    ],
+    "answer": 3,
+    "explanation": "Rushing to fill a pause stops people thinking; a short silence often brings the best answer."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--09",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "clarifying-questions",
+    "understanding",
+    "checking"
+   ],
+   "title": "Ask a clarifying question instead of guessing",
+   "body": "When something is unclear, it is tempting to fill the gap with a guess and carry on. Guesses are where many mix-ups begin. A quick clarifying question is cheaper than redoing the work later.\n\nYour manager says, 'Can you tidy up the slides?' Do they mean fix typos, cut it to ten slides or redesign the look? Ask: 'Do you mean small fixes or a bigger rework?' A friend says, 'Let's meet near the station.' Which exit? Ask.\n\nClarifying questions are short and specific. They often offer choices, like 'Do you mean X or Y?', which makes them easy to answer. They show you care about getting it right, not that you weren't paying attention.",
+   "apply_it": "Next time a request is a little vague, ask 'Do you mean X or Y?' before you start.",
+   "quiz": {
+    "question": "Your manager asks you to 'tidy up' a document. What is the best first step?",
+    "options": [
+     "Rewrite it completely",
+     "Fix a few typos and hope",
+     "Ask whether they mean small fixes or a bigger rework",
+     "Ignore it until they mention it again"
+    ],
+    "answer": 2,
+    "explanation": "A short clarifying question with clear options avoids guessing wrong and wasting effort."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--10",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "clarifying-questions",
+    "vague-words",
+    "meaning"
+   ],
+   "title": "Ask what people mean by fuzzy words",
+   "body": "Words like 'soon', 'better', 'a bit more' and 'support' mean different things to different people. Asking what they mean in this case can save a lot of frustration.\n\nIf a client wants the design 'more modern', ask, 'Can you show me something you think looks modern?' If your partner says they want you to be 'more involved', ask, 'What would that look like on a normal weekday?' If a teacher says your daughter needs to 'try harder', ask, 'What would trying harder look like in class?'\n\nThe aim is not to catch people out. It is to turn a feeling into something you can both picture. Once you can picture it, you can actually do it.",
+   "apply_it": "When someone uses a vague word today, ask: 'What would that look like?'",
+   "quiz": {
+    "question": "A client says they want a design that feels 'fresher'. What is a helpful question?",
+    "options": [
+     "'Can you show me an example of what fresh looks like to you?'",
+     "'Why didn't you say that before?'",
+     "'Do you really know what you want?'",
+     "'Fresher than what?' said with a sigh"
+    ],
+    "answer": 0,
+    "explanation": "Asking for an example turns a vague word into something you can both see and act on."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--11",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "not-understanding",
+    "honesty",
+    "confidence"
+   ],
+   "title": "Saying 'I don't follow' is a strength, not a weakness",
+   "body": "Many of us nod along when we are lost. We fear looking slow, or we hope it will become clear later. Often it doesn't, and we end up more confused and too embarrassed to ask.\n\nTry plain phrases such as 'Sorry, I didn't follow that last part. Could you go over it again?' or 'I'm not familiar with that term. What does it mean?' In a meeting, others are often just as lost and quietly grateful you asked.\n\nThis matters most when stakes are high: a mortgage adviser explaining fees, a mechanic describing a repair, a doctor using medical terms. You have every right to understand what you are agreeing to. Asking is how you get there.",
+   "apply_it": "The next time you feel lost in a conversation, say 'Sorry, could you explain that part again?' straight away.",
+   "quiz": {
+    "question": "Why is it worth admitting when you don't understand?",
+    "options": [
+     "It makes the speaker feel bad",
+     "It ends the conversation quickly",
+     "It shows you weren't listening",
+     "Confusion rarely clears up by itself, and others may be lost too"
+    ],
+    "answer": 3,
+    "explanation": "Speaking up early prevents bigger confusion later and often helps others who were also unsure."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--12",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "follow-up-questions",
+    "listening",
+    "depth"
+   ],
+   "title": "Follow-up questions show you were really listening",
+   "body": "A follow-up question builds on what the person just said. 'How was your holiday?' is a fine start. 'You said the second hotel was better. What made the difference?' proves you heard them.\n\nFollow-ups are where conversations get interesting. At work, if a colleague says a project was 'tricky', ask, 'What made it tricky?' rather than moving on to the next agenda item. With a friend who mentions they have been tired lately, ask, 'Tired how? Sleeping badly, or just worn down?'\n\nTo ask good follow-ups, you need to listen for small details instead of planning your next point. Pick up one word they used and ask about it.",
+   "apply_it": "In one conversation today, pick a word the other person used and ask a question about it.",
+   "quiz": {
+    "question": "What makes a question a follow-up question?",
+    "options": [
+     "It changes the subject",
+     "It builds on something the person has just said",
+     "It is always a yes or no question",
+     "It is asked at the end of the day"
+    ],
+    "answer": 1,
+    "explanation": "A follow-up picks up on what someone just said, showing you were listening and inviting them to go deeper."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--13",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "follow-up-questions",
+    "prompts",
+    "say-more"
+   ],
+   "title": "'Can you say more?' works almost everywhere",
+   "body": "Some follow-ups are so useful they are worth memorising. 'Can you say more about that?' 'What happened next?' 'How did that feel?' 'What do you mean?' They are short, neutral and work in almost any setting.\n\nWhen your partner says, 'Work was a nightmare,' try 'Oh no, say more.' When a customer says, 'The app is confusing,' try 'Can you tell me more about where it got confusing?' When your child says, 'Nobody played with me,' try 'What happened at break?'\n\nThese prompts hand the floor back to the other person without steering them. They are especially handy when you don't know what to ask next, because they let the speaker decide where to go.",
+   "apply_it": "Choose one all-purpose prompt, such as 'Can you say more?', and use it at least twice today.",
+   "quiz": {
+    "question": "Why are prompts like 'Can you say more?' so useful?",
+    "options": [
+     "They help you change the subject",
+     "They show you already know the answer",
+     "They let the speaker go deeper without you steering them",
+     "They make the conversation end sooner"
+    ],
+    "answer": 2,
+    "explanation": "Neutral prompts invite more detail while leaving the speaker in charge of where the conversation goes."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--14",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "examples",
+    "specifics",
+    "clarifying-questions"
+   ],
+   "title": "Ask for an example to get past generalities",
+   "body": "People often speak in broad strokes: 'My manager never listens', 'This always happens', 'The service was awful'. A gentle request for an example turns a vague complaint into something you can understand and maybe fix.\n\nAsk, 'Can you give me an example of when that happened?' or 'What happened the last time?' Your friend might then describe a specific meeting where their idea was ignored, which is far easier to help with than 'never listens'.\n\nThis also works with praise. If your boss says your work is 'great', asking 'Which part worked best?' tells you what to keep doing. Specific examples give both people something solid to talk about.",
+   "apply_it": "When someone uses 'always' or 'never' today, ask: 'Can you tell me about the last time?'",
+   "quiz": {
+    "question": "A friend says, 'My flatmate never helps.' What question gets you to something concrete?",
+    "options": [
+     "'Are you sure it's never?'",
+     "'What happened the last time you needed help?'",
+     "'Why do you put up with it?'",
+     "'Have you thought about moving out?'"
+    ],
+    "answer": 1,
+    "explanation": "Asking about a specific recent example moves the conversation from a general complaint to a real situation."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--15",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "leading-questions",
+    "neutral",
+    "honesty"
+   ],
+   "title": "Avoid questions that push people towards your answer",
+   "body": "A leading question hints at the answer you want. 'You liked the new menu, didn't you?' 'Don't you think we should leave early?' 'The training was useful, wasn't it?' Most people, wanting to be polite, simply agree. You get the answer you suggested, not the truth.\n\nNeutral questions leave room for any answer: 'What did you think of the new menu?' 'When would you like to leave?' 'What, if anything, was useful in the training?'\n\nThis matters whenever you genuinely need honest views: asking customers about a product, checking whether a team is happy with a plan, or asking your partner whether they really want to visit your parents this weekend.",
+   "apply_it": "Catch yourself before asking a 'don't you think' or 'isn't it' question today, and reword it neutrally.",
+   "quiz": {
+    "question": "Which of these is a neutral question?",
+    "options": [
+     "'What did you make of the party?'",
+     "'You enjoyed the party, didn't you?'",
+     "'Wasn't the party brilliant?'",
+     "'You'd go again, surely?'"
+    ],
+    "answer": 0,
+    "explanation": "A neutral question doesn't suggest which answer you hope for, so people feel free to tell you what they really think."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--16",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "disguised-criticism",
+    "tone",
+    "relationships"
+   ],
+   "title": "Don't hide criticism inside a question",
+   "body": "Some questions aren't really questions. 'Are you going to wear that?' 'Did you even read my email?' 'Who left the milk out again?' The other person hears the judgement, not the question, and gets defensive.\n\nIf you have a concern, it is usually kinder and clearer to say it and then ask a genuine question. Instead of 'Did you even read my email?', try 'I don't think my email was clear. Did you see the bit about the deadline?' Instead of 'Who left the milk out?', try 'The milk was out again. Can we all try to put it back?'\n\nReal questions are asked because you want to know the answer. If you already know it, you are making a point.",
+   "apply_it": "If you notice yourself asking a question you already know the answer to, say what you actually mean instead.",
+   "quiz": {
+    "question": "Why can a question like 'Did you even read my email?' backfire?",
+    "options": [
+     "It is too short",
+     "It is a closed question",
+     "It is too polite",
+     "It sounds like criticism, so the person gets defensive"
+    ],
+    "answer": 3,
+    "explanation": "Criticism disguised as a question puts people on the defensive; saying the concern plainly works better."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--17",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "why-questions",
+    "defensiveness",
+    "what-and-how"
+   ],
+   "title": "Use 'why' with care, and try 'what' or 'how' instead",
+   "body": "'Why' is a natural word, but it can sound like an accusation, especially when something has gone wrong. 'Why did you do that?' 'Why are you late?' 'Why didn't you tell me?' People hear blame and start defending themselves.\n\nOften you can ask the same thing with 'what' or 'how'. 'What led you to choose that option?' 'What held you up this morning?' 'What made it hard to bring this up?' These invite an explanation rather than a justification.\n\n'Why' is fine when the mood is calm and curious, such as 'Why do you love that band so much?' The trouble comes when it is said in frustration. Then, swapping one word changes how the whole question lands.",
+   "apply_it": "The next time you're about to ask 'Why did you...?' when annoyed, try 'What led to...?' instead.",
+   "quiz": {
+    "question": "How can you make 'Why did you miss the deadline?' less likely to sound like blame?",
+    "options": [
+     "Say it louder",
+     "Add 'again' at the end",
+     "Ask 'What got in the way of the deadline?'",
+     "Ask it in front of the whole team"
+    ],
+    "answer": 2,
+    "explanation": "Starting with 'what' invites an explanation rather than a defence, so people are more open."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--18",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "feelings",
+    "values",
+    "depth"
+   ],
+   "title": "Ask about what matters, not just what happened",
+   "body": "Many everyday questions only gather facts: where, when, how much. They are useful, but they rarely help you understand a person. Adding a question about what matters to them can change the conversation.\n\nA friend tells you they are thinking of moving abroad. Beyond 'Where?' and 'When?', you might ask, 'What are you hoping will be different?' A colleague is choosing between two roles. Ask, 'What matters most to you in the next couple of years?' A parent is deciding about a care home. Ask, 'What would make it feel right?'\n\nThese questions help people think, not just report. They often find the answer themselves while talking it through.",
+   "apply_it": "In one conversation today, ask 'What matters most to you about this?'",
+   "quiz": {
+    "question": "A friend is deciding whether to change careers. Which question helps them think it through?",
+    "options": [
+     "'What are you hoping will be different?'",
+     "'How much does it pay?'",
+     "'When would you start?'",
+     "'Have you told your parents?'"
+    ],
+    "answer": 0,
+    "explanation": "Questions about hopes and priorities help people reflect, often leading them to their own answer."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--19",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "advice",
+    "support",
+    "relationships"
+   ],
+   "title": "Ask before giving advice",
+   "body": "When someone shares a problem, it is tempting to jump straight in with solutions. Sometimes that is welcome. Often, they just want to be heard first, and quick advice can feel dismissive.\n\nA simple question helps: 'Do you want ideas, or do you just want to vent?' or 'Would it help if I suggested something, or shall I just listen?' Your partner, back from a hard day, may want sympathy, not a five-point plan. A colleague may already know what to do and just want a sounding board.\n\nIf they do want advice, you can still ask first: 'What have you already thought about?' Their own ideas are often better than yours, and they are more likely to act on them.",
+   "apply_it": "Next time someone tells you about a problem, ask 'Do you want ideas or just a listening ear?'",
+   "quiz": {
+    "question": "Your partner says their day was awful. What is a good first question?",
+    "options": [
+     "'Have you thought about quitting?'",
+     "'Why do you let it get to you?'",
+     "'Was it really that bad?'",
+     "'Do you want ideas or just to talk it through?'"
+    ],
+    "answer": 3,
+    "explanation": "Asking what kind of support someone wants avoids giving advice they didn't ask for."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--20",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "work",
+    "tasks",
+    "expectations"
+   ],
+   "title": "At work, ask what 'done' looks like",
+   "body": "Plenty of wasted effort at work comes from not knowing exactly what someone wants. Before starting a task, a few short questions can save hours.\n\nUseful ones include: 'What does a good result look like?' 'Who is it for?' 'When do you need it?' 'Is there anything you definitely don't want?' If your manager asks for 'a quick summary of the survey', check: 'One page or a few bullet points? For you, or for the board?'\n\nThis isn't pestering. Most people appreciate being asked, because it means less rework for them too. A two-minute chat at the start beats a frustrated conversation the day before the deadline.",
+   "apply_it": "Before your next task, ask the person who set it: 'What would a really good result look like?'",
+   "quiz": {
+    "question": "Which question best helps you understand a new work task?",
+    "options": [
+     "'Do I have to?'",
+     "'What does a good result look like, and when do you need it?'",
+     "'Can someone else do it?'",
+     "'Is this urgent?' and nothing else"
+    ],
+    "answer": 1,
+    "explanation": "Asking about the desired result and timing makes expectations clear before you start."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--21",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "meetings",
+    "work",
+    "courage"
+   ],
+   "title": "In meetings, ask the question others are thinking",
+   "body": "In many meetings, someone is confused about a term, a number or a decision, but nobody wants to be the one to ask. Everyone leaves with a slightly different idea of what was agreed.\n\nIf something isn't clear to you, it probably isn't clear to others. Simple questions can help the whole room: 'Can I check what we've decided?' 'What does that acronym stand for?' 'Who is taking this forward?'\n\nYou can make it easier by framing it gently: 'This might be a basic question, but...' or 'Just so I'm sure I've understood...' The same goes for a school parents' evening, a community group or a family meeting about a holiday.",
+   "apply_it": "In your next meeting, ask at least one clarifying question, even if it feels basic.",
+   "quiz": {
+    "question": "Why is it worth asking a 'basic' question in a meeting?",
+    "options": [
+     "It makes the meeting longer",
+     "It shows you are the boss",
+     "Others are often confused too and will benefit",
+     "It is never worth it"
+    ],
+    "answer": 2,
+    "explanation": "If you are unsure, others probably are too, so your question often helps the whole room."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--22",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "work",
+    "priorities",
+    "managers"
+   ],
+   "title": "When you're overloaded, ask which job comes first",
+   "body": "When work piles up, many people quietly try to do everything and end up doing it all badly, or say yes to new tasks while silently panicking. A clear question can help.\n\nTry: 'I've got the budget report and the client pitch due this week. Which should come first?' or 'If I take this on, what can wait?' This hands the decision about priorities back to the person who can make it, and shows you are thinking ahead rather than complaining.\n\nThe same idea helps at home. If a family member asks you to sort out three things in one weekend, asking 'Which one matters most to you?' turns a vague pile of demands into a plan you can both agree on.",
+   "apply_it": "If you have competing tasks this week, ask your manager or a family member: 'Which matters most?'",
+   "quiz": {
+    "question": "You have two urgent tasks and a new one is added. What is a helpful question to ask?",
+    "options": [
+     "'Why is everyone always piling things on me?'",
+     "'If I take this on, which of the others can wait?'",
+     "'Can I just do them all badly?'",
+     "'Is anyone else even working?'"
+    ],
+    "answer": 1,
+    "explanation": "Asking about priorities lets the right person decide what matters most, so you can focus."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--23",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "doctors",
+    "health-appointments",
+    "preparation"
+   ],
+   "title": "Write down your questions before a doctor's appointment",
+   "body": "Appointments can be short, and it is easy to forget what you wanted to ask the moment you sit down. The NHS encourages people to prepare questions beforehand.\n\nBefore you go, jot down your main worries, starting with the most important. 'I've had headaches most mornings for two weeks. What might be causing them?' If time is tight, at least your top question gets asked.\n\nIt can help to bring someone with you, or to take notes during the appointment. You can also ask the doctor to write things down. The same habit works for any expert meeting where you might feel rushed, such as a bank, a lawyer or a parents' evening.",
+   "apply_it": "Before your next appointment of any kind, write your top three questions on your phone, most important first.",
+   "quiz": {
+    "question": "What is a useful habit before seeing a doctor?",
+    "options": [
+     "Write down your main questions, most important first",
+     "Hope you remember everything on the day",
+     "Only ask questions if the doctor invites them",
+     "Look up a diagnosis and insist on it"
+    ],
+    "answer": 0,
+    "explanation": "Preparing questions in order of importance makes sure your biggest worry gets raised, even in a short appointment."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--24",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "doctors",
+    "understanding",
+    "health-appointments"
+   ],
+   "title": "Three simple questions to ask about your health",
+   "body": "A well-known set of patient questions, called Ask Me 3, boils it down to three things: What is my main problem? What do I need to do? Why is it important for me to do this?\n\nThese keep you focused on what you will actually do when you leave the room. If your doctor says you have high blood pressure, you might ask: 'What do I need to do, starting this week?' and 'What happens if I don't?'\n\nIf you don't understand an answer, it is fine to say, 'Could you explain that in simpler words?' or to repeat it back in your own words to check. Doctors would much rather you ask than go home unsure.",
+   "apply_it": "Save the three questions in your phone notes, ready for your next health appointment or for someone you care for.",
+   "quiz": {
+    "question": "Which of these is one of the three 'Ask Me 3' questions?",
+    "options": [
+     "'How long have you been a doctor?'",
+     "'Can I get a second opinion?'",
+     "'Is this covered by insurance?'",
+     "'What do I need to do?'"
+    ],
+    "answer": 3,
+    "explanation": "Ask Me 3 asks: what is my main problem, what do I need to do, and why is it important to do it."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--25",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "partners",
+    "relationships",
+    "daily-life"
+   ],
+   "title": "Swap 'How was your day?' for something more specific",
+   "body": "'How was your day?' is kind, but after years together it can become automatic, and so can the answer: 'Fine.' A more specific question shows real interest and is easier to answer properly.\n\nTry: 'What was the best part of today?' 'How did the meeting with your new boss go?' 'Did anything make you laugh today?' 'What's on your mind tonight?' These invite a moment of real reflection.\n\nRemember details from earlier and ask about them. If your partner mentioned a tricky phone call in the morning, ask about it in the evening. That small act of remembering often means more than the question itself.",
+   "apply_it": "This evening, ask your partner or a housemate about one specific thing they mentioned earlier in the day.",
+   "quiz": {
+    "question": "Why might 'What was the best part of today?' work better than 'How was your day?'",
+    "options": [
+     "It is shorter",
+     "It is a closed question",
+     "It is specific, so it is easier to answer with something real",
+     "It avoids needing to listen"
+    ],
+    "answer": 2,
+    "explanation": "Specific questions break the 'fine' habit and give people something concrete to talk about."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--26",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "partners",
+    "needs",
+    "relationships"
+   ],
+   "title": "Ask your partner what they need, at a calm moment",
+   "body": "Couples often guess what the other person wants, and guess wrong. One person thinks they're helping by tidying up; the other just wanted company. A few honest questions, asked when things are calm, can clear this up.\n\nTry: 'What helps you most when you've had a bad day?' 'Is there something small I could do that would make your week easier?' 'When do you feel most supported by me?'\n\nAsk with genuine curiosity, not as a test. Then listen, even if the answer surprises you. These questions work with close friends and grown-up children too. People feel cared for when you take the trouble to learn what actually helps them.",
+   "apply_it": "At a relaxed moment this week, ask someone close: 'What helps you most when you're stressed?'",
+   "quiz": {
+    "question": "When is the best time to ask a partner what support they need?",
+    "options": [
+     "At a calm, relaxed moment",
+     "In the middle of an argument",
+     "Never; you should already know",
+     "Only on special occasions"
+    ],
+    "answer": 0,
+    "explanation": "Calm moments let both people think clearly and answer honestly, without the pressure of a row."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--27",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "children",
+    "parenting",
+    "specific-questions"
+   ],
+   "title": "Ask children specific questions, not 'How was school?'",
+   "body": "'How was school?' 'Fine.' 'What did you do?' 'Nothing.' Many parents know this exchange by heart. Children often find broad questions hard to answer, especially when they are tired.\n\nSpecific, playful questions work better. 'Who did you sit with at lunch?' 'What was the funniest thing that happened today?' 'Was anything tricky?' 'If you could swap one lesson tomorrow, which would it be?'\n\nTiming helps too. Straight after school, many children need a snack and some quiet. They may open up more at bedtime, in the car, or while doing something side by side, like cooking. Asking without staring at them can feel less like an interview.",
+   "apply_it": "Today, ask a child you know one specific question, such as 'What made you laugh today?'",
+   "quiz": {
+    "question": "Your child always says school was 'fine'. What might help?",
+    "options": [
+     "Ask the same question more firmly",
+     "Stop asking altogether",
+     "Ask several questions at once",
+     "Ask something specific, like 'Who did you sit with at lunch?'"
+    ],
+    "answer": 3,
+    "explanation": "Specific questions give children something easy to grab on to, so they say more than 'fine'."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--28",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "children",
+    "parenting",
+    "thinking"
+   ],
+   "title": "Let children answer for themselves",
+   "body": "When children struggle to answer, adults often jump in: 'Was it because you were tired? Or was it the other boy?' The child picks one of our ideas, and we never hear theirs.\n\nAsk, then wait. If they get stuck, offer an open nudge instead of an answer: 'Take your time' or 'What do you think happened?' When they bring you a problem, try 'What could you do?' before suggesting anything.\n\nThis builds their confidence and thinking skills. It also tells you what is really going on. A child who explains in their own words that they felt left out at football tells you more than one who simply nods at your guess.",
+   "apply_it": "When a child brings you a problem today, ask 'What do you think you could do?' before offering ideas.",
+   "quiz": {
+    "question": "A child is struggling to explain why they're upset. What is the most helpful response?",
+    "options": [
+     "Offer them a list of reasons to choose from",
+     "Say 'Take your time' and wait",
+     "Tell them they're fine",
+     "Change the subject"
+    ],
+    "answer": 1,
+    "explanation": "Waiting and giving space lets children find their own words, which tells you what's really going on."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--29",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "interviews",
+    "jobs",
+    "preparation"
+   ],
+   "title": "In a job interview, prepare real questions to ask them",
+   "body": "Most interviews end with 'Do you have any questions for us?' Saying 'No, I think you've covered everything' can seem uninterested. More importantly, it wastes your chance to find out whether you want the job.\n\nPrepare two or three genuine questions. 'What would success look like in the first six months?' 'What do people on the team enjoy most about working here?' 'What's the biggest challenge facing the team right now?'\n\nListen to the answers and ask a follow-up if you can. This turns the end of the interview into a real conversation. The same goes for viewing a flat or meeting a new childminder: questions help you decide, not just impress.",
+   "apply_it": "Write down three questions you'd want to ask at your next interview, viewing or important first meeting.",
+   "quiz": {
+    "question": "Why should you prepare questions to ask at a job interview?",
+    "options": [
+     "To fill the time",
+     "To catch the interviewer out",
+     "To find out if the job suits you and show genuine interest",
+     "Because it is a legal requirement"
+    ],
+    "answer": 2,
+    "explanation": "Good questions help you judge whether the role is right for you, and show real engagement."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--30",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "interviews",
+    "hiring",
+    "neutral"
+   ],
+   "title": "When interviewing others, ask about what they have actually done",
+   "body": "If you are hiring, choosing a tradesperson or picking a volunteer, hypothetical questions like 'How would you handle a difficult customer?' often get polished but empty answers. Asking about real past experience usually tells you more.\n\nTry: 'Tell me about a time a customer was unhappy. What did you do?' Then follow up: 'What happened next?' 'What would you do differently?' With a builder, ask, 'Can you tell me about a similar job you did recently?'\n\nKeep your questions neutral and let them talk. Researchers who interview people, such as user researchers in government services, aim to avoid hinting at the 'right' answer, so they hear what really happened.",
+   "apply_it": "If you're choosing someone for anything this month, prepare one 'Tell me about a time when...' question.",
+   "quiz": {
+    "question": "Which question is likely to tell you more about a job candidate?",
+    "options": [
+     "'Are you a good team player?'",
+     "'Tell me about a time you had a tight deadline. What did you do?'",
+     "'How would you handle stress?'",
+     "'You're organised, aren't you?'"
+    ],
+    "answer": 1,
+    "explanation": "Asking about real past situations, then following up, reveals more than hypotheticals or leading questions."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--31",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "curiosity",
+    "disagreement",
+    "open-mind"
+   ],
+   "title": "Ask out of curiosity, especially when you disagree",
+   "body": "When someone holds a view we dislike, we tend to argue rather than ask. Yet a curious question is often more useful than a counter-argument. It helps you understand where they are coming from, and they are more likely to listen to you afterwards.\n\nTry: 'What got you interested in that?' 'What experience shaped your view?' 'What would change your mind?' Ask your uncle why he feels strongly about a local issue, and you might discover a story you'd never heard.\n\nCuriosity doesn't mean agreeing. It means treating the other person as someone who might surprise you. That attitude improves almost every conversation, from team debates to family dinners.",
+   "apply_it": "Next time you disagree with someone, ask one genuine 'What led you to that view?' question before you respond.",
+   "quiz": {
+    "question": "What is the main benefit of asking curious questions when you disagree?",
+    "options": [
+     "It helps you understand the other person, who may then listen to you",
+     "It proves you are right",
+     "It means you have to agree",
+     "It ends the discussion quickly"
+    ],
+    "answer": 0,
+    "explanation": "Curious questions build understanding and goodwill, making a real exchange of views more likely."
+   }
+  },
+  {
+   "id": "clarity-ask-better-questions--32",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "daily-practice",
+    "habits",
+    "questions"
+   ],
+   "title": "Practise one better question every day",
+   "body": "Like any skill, asking good questions improves with practice. You don't need to change everything at once. Pick one small habit a day.\n\nOne day, swap a closed question for an open one. The next, ask a follow-up about a detail someone mentioned. Another, pause for five seconds after you ask. At the end of each day, think back: which question got the best answer, and why?\n\nOver a few weeks, you'll notice colleagues sharing more, your children saying more than 'fine', and fewer mix-ups at the doctor's or the office. Most of all, people will feel that you are genuinely interested in them, which is the heart of a good question.",
+   "apply_it": "Tonight, think of one conversation from today and the question that would have made it better. Ask it tomorrow.",
+   "quiz": {
+    "question": "What is the suggested way to get better at asking questions?",
+    "options": [
+     "Read a long book about it first",
+     "Only ask questions at work",
+     "Ask as many questions as possible in every conversation",
+     "Practise one small questioning habit each day and reflect on it"
+    ],
+    "answer": 3,
+    "explanation": "Small daily habits, plus a moment of reflection, steadily build the skill of asking good questions."
+   }
+  }
+ ]
+}

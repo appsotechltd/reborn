@@ -1,0 +1,816 @@
+{
+ "source": {
+  "id": "clarity-listen-so-people-feel-heard",
+  "title": "Listen So People Feel Heard",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://www2.hse.ie/mental-health/helping-someone-else/being-a-good-listener/",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#communication-clarity",
+  "attribution": "A Reborn guide in our own words, drawing on listening guidance from Ireland's Health Service Executive, Samaritans and the Greater Good Science Center at UC Berkeley.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn in our own words; no text copied. References: HSE (Health Service Executive, Ireland), Tips on being a good listener, https://www2.hse.ie/mental-health/helping-someone-else/being-a-good-listener/; Samaritans, SHUSH listening tips, https://www.samaritans.org/media-centre/our-campaigns/talk-us/shush-listening-tips/; Greater Good Science Center (UC Berkeley), Six Ways to Be a Better Listener, https://greatergood.berkeley.edu/video/item/six_ways_to_be_a_better_listener"
+ },
+ "cards": [
+  {
+   "id": "clarity-listen-so-people-feel-heard--01",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "listening",
+    "introduction",
+    "connection"
+   ],
+   "title": "Listening well is a skill you can practise, not a personality trait",
+   "body": "Most of us think we listen well. Yet when a friend says 'You're not listening', or a colleague repeats themselves for the third time, we find out otherwise. Feeling heard is one of the simplest ways people feel valued, at work, at home and in love.\n\nThe good news is that listening is a set of habits, not a gift. You can learn to give full attention, hold back from interrupting, wait before fixing, reflect what you heard and notice feelings as well as facts.\n\nThis guide walks through those habits one at a time, then shows how they work with partners, children, colleagues and on calls. Each card gives you one small thing to try today.",
+   "apply_it": "Tonight, pick one conversation and make your only goal to understand the other person, not to reply.",
+   "quiz": {
+    "question": "What does this guide treat listening as?",
+    "options": [
+     "A fixed talent you either have or lack",
+     "Something only therapists need",
+     "A set of habits anyone can practise",
+     "Mostly about saying the right thing"
+    ],
+    "answer": 2,
+    "explanation": "Listening is made of small habits, like attention, patience and reflecting back, and habits can be learned."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--02",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "listening",
+    "attention",
+    "mindset"
+   ],
+   "title": "Listening is not the same as waiting for your turn to talk",
+   "body": "In many conversations we look like we are listening, but we are really rehearsing our reply. While your partner describes their day, you are already planning your own story about the traffic.\n\nThe other person can usually tell. Your answer arrives too fast, it misses what they actually said, or it swings the topic back to you.\n\nReal listening means your main job, while they speak, is to understand. Your reply can wait. A useful test: could you repeat back the last thing they said, in your own words, before adding anything of your own? If not, you were probably waiting rather than listening. It feels slower at first, but conversations often end up shorter because nobody has to repeat themselves.",
+   "apply_it": "In your next chat, notice the moment you start planning your reply. Gently bring your attention back to their words.",
+   "quiz": {
+    "question": "Which sign suggests you were waiting to talk rather than listening?",
+    "options": [
+     "You couldn't repeat back what they just said",
+     "You paused before answering",
+     "You asked them to say more"
+    ],
+    "answer": 0,
+    "explanation": "If you can't sum up their last point, your attention was probably on your own reply, not on them."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--03",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "attention",
+    "focus",
+    "presence"
+   ],
+   "title": "Give one conversation your full attention at a time",
+   "body": "Attention is the first thing people notice. Half-listening while you stir the pasta, type an email or watch the match sends a clear message: this matters less than what I'm doing.\n\nFull attention does not need to be intense. It means stopping what you are doing, turning towards the person and letting their words be the main thing in your mind. Even two minutes of this can feel generous.\n\nIf you genuinely can't stop, say so honestly: 'I want to hear this properly. Give me five minutes to finish this email.' Then come back and really listen. That's far better than nodding along while your mind is elsewhere and missing the bit that mattered.",
+   "apply_it": "When someone starts talking to you today, stop what your hands are doing and turn your body towards them.",
+   "quiz": {
+    "question": "Your colleague starts telling you something while you are mid-email. What fits this card best?",
+    "options": [
+     "Keep typing and nod now and then",
+     "Tell them to email you instead",
+     "Listen with one ear and reply later",
+     "Ask for five minutes, finish, then give them full attention"
+    ],
+    "answer": 3,
+    "explanation": "Being honest about a short delay, then giving real attention, beats half-listening and missing the point."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--04",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "phones",
+    "attention",
+    "distraction"
+   ],
+   "title": "Put your phone out of sight, not just face down",
+   "body": "A phone on the table pulls at you even when it is silent. Your eyes drift to it, you wonder who has messaged, and the person talking notices every glance.\n\nWhen a conversation matters, put the phone in a bag, a pocket or another room. Face down on the table still says 'I might pick this up at any moment'. At dinner with a partner, during a child's story about school, or in a one-to-one with someone in your team, that small move signals that they have you.\n\nIf you are waiting for an urgent call, say so at the start: 'I'm expecting a call from the doctor, so I may need to step out.' Then the interruption won't feel like a brush-off.",
+   "apply_it": "At your next meal with someone, put your phone in another room and leave it there until you have finished.",
+   "quiz": {
+    "question": "Why is putting your phone face down often not enough?",
+    "options": [
+     "Phones work better face up",
+     "It is rude to touch your phone at all",
+     "It can still pull your attention and signal you might pick it up",
+     "It drains the battery faster"
+    ],
+    "answer": 2,
+    "explanation": "A visible phone keeps tugging at your attention and tells the other person they might be interrupted."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--05",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "timing",
+    "attention",
+    "conversations"
+   ],
+   "title": "Pick a moment when you can actually listen",
+   "body": "Some conversations go wrong before they start, simply because the timing is bad. Your partner raises something worrying as you rush out of the door. A colleague catches you on the way to a meeting.\n\nIt is fine to move a conversation to a better time, as long as you really come back to it. Try 'This sounds important and I don't want to rush it. Can we talk at lunch?' Then turn up at lunch and bring it up yourself.\n\nWhen you are the one starting the talk, check first: 'Is now a good time for something a bit serious?' People listen far better when they are not tired, hungry or about to leave.",
+   "apply_it": "If someone raises something big at a bad moment today, offer a specific time to talk and keep that promise.",
+   "quiz": {
+    "question": "A friend starts telling you something serious as you leave for work. What's the best move?",
+    "options": [
+     "Tell them you want time to listen properly and agree a specific time",
+     "Pretend you didn't hear and leave",
+     "Listen for thirty seconds then go",
+     "Give quick advice on your way out"
+    ],
+    "answer": 0,
+    "explanation": "Moving the talk to a real time, then keeping it, shows care. Rushed listening often leaves people feeling brushed off."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--06",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "interrupting",
+    "patience",
+    "respect"
+   ],
+   "title": "Let people finish before you speak",
+   "body": "Interrupting is one of the fastest ways to make someone feel unheard. Even when you mean well, cutting in tells them your thought matters more than theirs.\n\nWe often interrupt because we are excited, we think we know where they are going or we are worried we will forget our point. In a meeting, it might be jumping in to correct a figure. At home, it might be answering your teenager's complaint before they have finished it.\n\nTry this: when you feel the urge to cut in, take a slow breath and keep listening. If you are worried about forgetting, jot one word down. Wait until they have clearly finished, then a beat longer, before you speak.",
+   "apply_it": "In your next meeting, count how many times you feel the urge to interrupt. Don't act on any of them.",
+   "quiz": {
+    "question": "What simple trick helps if you worry you'll forget your point while waiting?",
+    "options": [
+     "Interrupt politely",
+     "Jot down a single word to remind you",
+     "Raise your hand until they stop",
+     "Talk over them quietly"
+    ],
+    "answer": 1,
+    "explanation": "A quick note frees you to keep listening instead of holding your point in your head and cutting in."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--07",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "interrupting",
+    "patience",
+    "assumptions"
+   ],
+   "title": "Don't finish other people's sentences for them",
+   "body": "When someone pauses to find a word, it is tempting to jump in and help. Sometimes you guess right. Often you don't, and now they have to correct you or, worse, go along with your version.\n\nFinishing sentences can feel friendly, but it takes the story out of their hands. An older relative searching for a name, a colleague explaining a tricky problem, or a child working out how to say something hard all need a moment, not a rescue.\n\nLet the pause sit. A small nod or a soft 'take your time' is enough. What they say in their own words will tell you far more than your guess, and they'll feel trusted rather than hurried.",
+   "apply_it": "Next time someone hunts for a word, stay quiet and let them find it themselves.",
+   "quiz": {
+    "question": "Why can finishing someone's sentence backfire?",
+    "options": [
+     "You may guess wrong and take the story out of their hands",
+     "It is always rude in every culture",
+     "It makes the conversation too short"
+    ],
+    "answer": 0,
+    "explanation": "Your guess may not be what they meant, and they may feel hurried or go along with it rather than correct you."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--08",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "listening",
+    "focus",
+    "empathy"
+   ],
+   "title": "Keep the focus on them instead of switching to your own story",
+   "body": "A friend says their flight was cancelled, and you reply 'Oh, that happened to me in Spain...' You meant to show you understand. But now the conversation is about you.\n\nThis is sometimes called a shift response: it moves the spotlight to yourself. A support response keeps it on them: 'Cancelled? What are you going to do?' or 'That sounds exhausting.'\n\nSharing your own experience is not wrong. It can help later, once they feel heard, and especially if they ask. The trick is timing. Stay with their story first, and save yours until they have finished, or until it would genuinely help them rather than you.",
+   "apply_it": "Today, when someone shares a problem, resist your matching story. Ask one more question about theirs first.",
+   "quiz": {
+    "question": "Which reply keeps the focus on the speaker?",
+    "options": [
+     "'That reminds me of when I...'",
+     "'That sounds stressful. What happened next?'",
+     "'I had it much worse last year.'",
+     "'Everyone goes through that.'"
+    ],
+    "answer": 1,
+    "explanation": "A support response keeps attention on their experience rather than shifting it to yours."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--09",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "fixing",
+    "advice",
+    "patience"
+   ],
+   "title": "Hold back from fixing the problem too fast",
+   "body": "When someone we care about is upset, we want to help, and the quickest form of help seems to be a solution. 'Just talk to your boss.' 'Why don't you sell the car?'\n\nBut quick fixes often land badly. They can suggest the problem is simple, that the person hasn't thought of the obvious, or that you would like the conversation to be over. Many people need to feel understood before they can even think about solutions.\n\nSo slow down. Listen to the whole story, reflect what you heard and acknowledge how it feels. Only then, if it seems wanted, offer an idea. Advice given after someone feels heard is much more likely to be taken.",
+   "apply_it": "When someone tells you a problem today, wait until they've finished and you've reflected it back before suggesting anything.",
+   "quiz": {
+    "question": "Why can jumping straight to a solution backfire?",
+    "options": [
+     "Solutions are never useful",
+     "People always prefer to fix things alone",
+     "It can make the person feel the problem is simple or that you want to move on",
+     "It takes too long"
+    ],
+    "answer": 2,
+    "explanation": "Fast fixes can feel dismissive. People often need to feel understood before they are ready for ideas."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--10",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "fixing",
+    "advice",
+    "needs"
+   ],
+   "title": "Ask whether they want ideas, help or just to be heard",
+   "body": "Not every conversation about a problem is a request for advice. Sometimes people want to vent, sometimes they want ideas and sometimes they want practical help. Guessing wrong causes a lot of friction, especially between partners.\n\nYou can simply ask: 'Do you want me to just listen, or would some ideas help?' A colleague complaining about a client may only need to offload. A friend unsure about a job offer may really want your opinion.\n\nThe question itself shows respect. It tells them you are on their side and that they are in charge of what kind of support they get. And if they say 'just listen', that is a clear, easy job.",
+   "apply_it": "Use the question 'Do you want ideas, or shall I just listen?' at least once this week.",
+   "quiz": {
+    "question": "Your partner comes home annoyed about their day. What's a helpful first move from this card?",
+    "options": [
+     "Ask if they want ideas or just want to be heard",
+     "List three things they could do differently",
+     "Tell them to stop worrying",
+     "Change the subject to cheer them up"
+    ],
+    "answer": 0,
+    "explanation": "Asking what kind of support they want avoids giving advice when they only needed to be heard."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--11",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "encouragers",
+    "body-language",
+    "attention"
+   ],
+   "title": "Use small signals to show you are still with them",
+   "body": "When someone is talking, tiny responses keep them going. A nod, an 'mm', a 'go on', or 'right' tell the speaker you are following without taking over.\n\nThese small encouragers matter most when the topic is hard. A friend explaining a health worry, or a colleague describing a mistake they made, may stop if they hear nothing back and wonder if you are bored or judging.\n\nKeep them light and natural. Too many, or the same word every few seconds, can sound mechanical or rushed. The aim is a gentle rhythm that says 'I'm here, carry on' and leaves the floor with them.",
+   "apply_it": "In your next conversation, try a few quiet 'go on' or 'mm' signals instead of jumping in with comments.",
+   "quiz": {
+    "question": "What is the purpose of small encouragers like 'mm' or 'go on'?",
+    "options": [
+     "To speed the speaker up",
+     "To signal that you want a turn",
+     "To fill every silence",
+     "To show you're following while leaving the floor with them"
+    ],
+    "answer": 3,
+    "explanation": "Encouragers keep the speaker talking and show you're with them without taking over the conversation."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--12",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "silence",
+    "patience",
+    "pauses"
+   ],
+   "title": "Let silence do some of the work",
+   "body": "Many of us rush to fill pauses. A few seconds of quiet can feel awkward, so we jump in with a question, a joke or advice.\n\nBut silence is often when the important part arrives. Someone may be deciding whether to say what is really bothering them. Your child might be working up to telling you about the argument at school. A colleague may be thinking through their answer.\n\nPractise staying calm in a pause. Count slowly to five in your head before speaking. Keep a relaxed face so the silence feels safe, not like a test. You may be surprised how often the other person fills it with something that matters.",
+   "apply_it": "In your next conversation, when a pause comes, count slowly to five before you say anything.",
+   "quiz": {
+    "question": "Why can it help to leave a pause before speaking?",
+    "options": [
+     "It shows you are bored",
+     "It forces the other person to apologise",
+     "It gives them space to say what really matters",
+     "It makes the conversation end sooner"
+    ],
+    "answer": 2,
+    "explanation": "Pauses give people time to think and often to share the thing they were unsure about saying."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--13",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "reflecting",
+    "paraphrasing",
+    "understanding"
+   ],
+   "title": "Reflect back what you heard in your own words",
+   "body": "Reflecting means briefly saying back the heart of what someone told you. Not word for word, which can sound like a parrot, but in your own words.\n\nIf a colleague says the new system keeps crashing and they have lost hours of work, you might say 'So it's not just annoying, it's actually costing you time.' If your partner says they feel they do all the planning for holidays, you could say 'You're carrying the planning and it feels one-sided.'\n\nThis does two jobs at once. It shows you were listening, and it gives them a chance to correct you if you missed something. Keep it short and tentative so it is easy to adjust.",
+   "apply_it": "Once today, reply to someone's news by saying back the core of it in one sentence before you add anything.",
+   "quiz": {
+    "question": "What's the best way to reflect back what someone said?",
+    "options": [
+     "Briefly say the main point in your own words",
+     "Repeat their exact words",
+     "Tell them what they should have said",
+     "Ask them to repeat it"
+    ],
+    "answer": 0,
+    "explanation": "A short paraphrase shows you understood and lets them correct you, without sounding robotic."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--14",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "summarising",
+    "understanding",
+    "conversations"
+   ],
+   "title": "Summarise after a longer stretch of talk",
+   "body": "Reflecting works line by line. Summarising pulls a longer conversation together. After someone has talked for a while, sum up the main points in a few sentences.\n\nWith a friend weighing up a move: 'So the job is better, the rent is higher, and the big worry is being far from your mum. Is that it?' In a meeting: 'So we have two problems: the supplier is late and the budget is tight.'\n\nSummaries help the other person hear their own thoughts laid out clearly, which often helps them decide. They also catch misunderstandings early, before anyone acts on the wrong idea. Keep them brief and neutral, without slipping in your own opinion.",
+   "apply_it": "At the end of your next long conversation or meeting, offer a two-sentence summary and ask if you missed anything.",
+   "quiz": {
+    "question": "How is summarising different from reflecting?",
+    "options": [
+     "It is only for written messages",
+     "It pulls together the main points of a longer stretch of talk",
+     "It always includes your own opinion",
+     "It repeats every word"
+    ],
+    "answer": 1,
+    "explanation": "Summarising gathers several points from a longer conversation, while reflecting usually responds to one point."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--15",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "checking",
+    "reflecting",
+    "understanding"
+   ],
+   "title": "Check your understanding instead of assuming you've got it",
+   "body": "Even careful listeners get things wrong. That is why a reflection or summary works best when it ends with a light check: 'Have I got that right?' or 'Is that close?'\n\nThis small question changes the feel of the conversation. It tells the person that their version matters more than yours. If you've missed the point, they now have an easy way to say so, rather than giving up and nodding along.\n\nWhen they correct you, don't argue. Say 'Ah, thanks, so it's more about...' and try again. A partner who says 'No, it's not the money, it's that you didn't ask me' has just given you the key to the whole conversation.",
+   "apply_it": "Add 'Have I got that right?' after your next reflection or summary, and accept any correction gladly.",
+   "quiz": {
+    "question": "Your partner corrects your summary of their worry. What should you do?",
+    "options": [
+     "Thank them and try again with their correction",
+     "Explain why your version was right",
+     "Drop the subject"
+    ],
+    "answer": 0,
+    "explanation": "Their correction is valuable. Accepting it and adjusting shows you care more about understanding than being right."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--16",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "emotions",
+    "empathy",
+    "reflecting"
+   ],
+   "title": "Name the feeling you can hear, not just the facts",
+   "body": "People rarely tell us only facts. Underneath 'The train was late again' might be frustration, worry about a boss, or plain exhaustion.\n\nNaming the feeling you sense can make someone feel truly understood: 'That sounds really frustrating' or 'You seem worried about what your manager will think.' For a child, it might be 'You look disappointed you weren't picked.'\n\nMany people find that having a feeling named calms it a little, and it often opens the door to the real issue. Use simple, ordinary words for emotions like annoyed, worried, hurt, relieved or proud. You don't need a big vocabulary, just a willingness to look past the facts to how they feel.",
+   "apply_it": "Today, when someone tells you about a problem, try one sentence that names how they might feel.",
+   "quiz": {
+    "question": "Your friend says 'My landlord ignored my email again.' Which reply names a feeling?",
+    "options": [
+     "'Email them again.'",
+     "'That sounds really frustrating.'",
+     "'Landlords are like that.'",
+     "'When did you send it?'"
+    ],
+    "answer": 1,
+    "explanation": "Naming the likely emotion shows you are hearing the person, not just the facts of the situation."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--17",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "emotions",
+    "tentative",
+    "empathy"
+   ],
+   "title": "Guess at emotions gently and be ready to be wrong",
+   "body": "You can't see inside another person, so treat any feeling you name as a guess. Offer it lightly: 'I wonder if you're feeling a bit left out?' or 'It sounds like that might have hurt?'\n\nTelling someone how they feel, as in 'You're obviously angry', can feel like being labelled, and people often push back. A gentle guess invites them to tell you what is really there.\n\nIf they say 'Not angry, more disappointed', that is a success, not a failure. You now understand more. This works with teenagers who resent being told how they feel, and with colleagues who may not want to look upset at work.",
+   "apply_it": "Swap one 'You're...' about someone's feelings today for 'I wonder if you feel...'",
+   "quiz": {
+    "question": "Which way of naming a feeling is most likely to help?",
+    "options": [
+     "'You're clearly furious.'",
+     "'You shouldn't feel that way.'",
+     "'I wonder if that felt a bit unfair?'",
+     "'Calm down.'"
+    ],
+    "answer": 2,
+    "explanation": "A tentative guess invites the person to correct or confirm it, instead of feeling labelled."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--18",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "validation",
+    "emotions",
+    "empathy"
+   ],
+   "title": "You can accept someone's feelings without agreeing with everything",
+   "body": "Some people hold back from acknowledging feelings because they think it means agreeing. If your teenager says 'You're so unfair', saying 'You feel it's unfair' can sound like admitting you are.\n\nBut validating a feeling is not the same as agreeing with the facts or the conclusion. It simply says: it makes sense that you feel this way, given how you see it. 'I can see you're really annoyed about the curfew' doesn't change the curfew.\n\nAt work, a colleague upset about a decision can feel heard even if the decision stands. People usually calm down once their feelings are taken seriously, which makes the next part of the conversation much easier.",
+   "apply_it": "In your next disagreement, acknowledge the other person's feeling out loud before stating your view.",
+   "quiz": {
+    "question": "Your child says 'Bedtime is so unfair!' What does validating the feeling look like?",
+    "options": [
+     "'I can tell you're really annoyed about bedtime.'",
+     "'Fine, stay up as late as you like.'",
+     "'Stop complaining.'"
+    ],
+    "answer": 0,
+    "explanation": "You can show you understand the feeling while still keeping the rule in place."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--19",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "minimising",
+    "emotions",
+    "empathy"
+   ],
+   "title": "Avoid 'at least' and other ways of shrinking a feeling",
+   "body": "When someone is upset, we often try to cheer them up by making the problem smaller. 'At least you still have a job.' 'It could be worse.' 'Don't worry, it's nothing.'\n\nThese phrases are usually kind in intent, but they can leave the person feeling dismissed, as if their reaction is too much. A friend whose pet died, or a colleague who missed out on a promotion, may hear 'at least' as 'stop being upset now'.\n\nTry staying with the feeling instead: 'That's really sad' or 'I'm sorry, I know how much you wanted that.' Silver linings can come later, often from the person themselves once they feel understood.",
+   "apply_it": "Catch yourself before saying 'at least' today. Replace it with a sentence that simply acknowledges how they feel.",
+   "quiz": {
+    "question": "Why can 'at least...' be unhelpful when someone is upset?",
+    "options": [
+     "It is too formal",
+     "It is grammatically wrong",
+     "It always makes people angry",
+     "It can make them feel their feelings are being dismissed"
+    ],
+    "answer": 3,
+    "explanation": "Even when kindly meant, shrinking the problem can tell someone their feelings are too much."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--20",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "body-language",
+    "posture",
+    "presence"
+   ],
+   "title": "Show you are listening with your face and posture",
+   "body": "Your body speaks before you say a word. Folded arms, a turned shoulder or a glance at the clock can tell someone you are not really interested, even if your words are kind.\n\nListening body language is simple: turn towards the person, keep your posture relaxed and open, let your face respond to what they say, and nod now and then. Sitting at the same level helps too, such as sitting down with a child rather than standing over them.\n\nYou don't need to perform. The aim is that your body matches your intention. If you notice your arms crossed in a tense team meeting, just relax them and lean in slightly.",
+   "apply_it": "In your next conversation, check your posture once: are you facing them, relaxed, and at their level?",
+   "quiz": {
+    "question": "Which posture best signals listening to a child?",
+    "options": [
+     "Standing over them with arms folded",
+     "Looking at your phone while they talk",
+     "Sitting or crouching to their level, facing them",
+     "Turning away to tidy up"
+    ],
+    "answer": 2,
+    "explanation": "Getting to their level and facing them shows you're giving your full attention."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--21",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "eye-contact",
+    "body-language",
+    "side-by-side"
+   ],
+   "title": "Use comfortable eye contact, and try side-by-side talks",
+   "body": "Eye contact shows attention, but staring can feel intense. Aim for a natural rhythm: look at the person most of the time, with relaxed breaks. Comfort levels vary between people and cultures, so take cues from them.\n\nSome people open up more easily when you are not face to face at all. Many parents find their children talk more in the car, while walking the dog or while cooking together. Partners may find hard conversations easier on a walk than across a table.\n\nSide by side, there is less pressure and fewer awkward silences. You can still listen fully. Just keep your phone away and your attention on their words.",
+   "apply_it": "Invite someone for a short walk this week and use it as a chance to listen without the pressure of eye contact.",
+   "quiz": {
+    "question": "Why might a teenager open up more in the car?",
+    "options": [
+     "Side-by-side talks feel less intense than face-to-face ones",
+     "Car journeys are always short",
+     "They can't hear well at home",
+     "Cars are quieter than any room"
+    ],
+    "answer": 0,
+    "explanation": "Sitting side by side removes some pressure, which can make it easier to talk about hard things."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--22",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "tone",
+    "nonverbal",
+    "attention"
+   ],
+   "title": "Listen to how something is said, not just the words",
+   "body": "Words are only part of the message. Tone, pace, sighs and pauses often say more. 'I'm fine' can mean many things depending on how it is said.\n\nNotice the gap between words and delivery. A colleague who says 'Sure, I can take that on' in a flat voice may be overloaded. A partner who goes quiet when a certain topic comes up may be hurt. A child who suddenly talks fast about a friend might be anxious.\n\nYou can gently mention what you notice: 'You said it's fine, but you sound a bit tired. Is everything okay?' Keep it kind and curious, not like an accusation, and accept it if they don't want to talk yet.",
+   "apply_it": "Today, notice one moment where someone's tone doesn't match their words, and gently check in.",
+   "quiz": {
+    "question": "A colleague says 'Sure, no problem' in a flat, tired voice. What might a good listener do?",
+    "options": [
+     "Take the words at face value and move on",
+     "Gently check whether they have the capacity for it",
+     "Tell them to sound more positive",
+     "Assign them more work"
+    ],
+    "answer": 1,
+    "explanation": "Tone can reveal what words hide. A kind check gives them a chance to say how they really feel."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--23",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "self-awareness",
+    "defensiveness",
+    "calm"
+   ],
+   "title": "Stay steady when what you hear is hard or about you",
+   "body": "Listening is easy when the topic is someone else's day. It gets much harder when your partner says you hurt them, or a colleague says your plan won't work. Our instinct is to defend, explain or hit back.\n\nIn those moments, aim to understand first and respond second. Notice your body tensing, take a slow breath, and remind yourself that hearing their view isn't the same as agreeing with it. Reflect what they said: 'So when I cancelled, you felt you weren't a priority.'\n\nYou will get your turn. And when you do, you will be speaking to someone who feels heard, which makes them far more open to your side.",
+   "apply_it": "If you feel defensive in a conversation today, take one slow breath and reflect their point before you reply.",
+   "quiz": {
+    "question": "Your partner says you hurt them. What is the first step from this card?",
+    "options": [
+     "Explain why they're wrong",
+     "Bring up something they did",
+     "Leave the room",
+     "Breathe and reflect what they said before responding"
+    ],
+    "answer": 3,
+    "explanation": "Understanding first lowers the heat, and people listen more to your side once they feel heard."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--24",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "partners",
+    "relationships",
+    "attention"
+   ],
+   "title": "Listen to your partner as if it's the first time",
+   "body": "With a long-term partner, it's easy to assume you already know what they'll say. You half-listen, finish their stories in your head, or jump to the usual reply. Over time, that can leave them feeling invisible.\n\nTry treating everyday chat as worth your full attention. When they talk about their day, ask one genuine follow-up. When they bring up an old worry, listen as if you might learn something new, because people and situations change.\n\nA simple daily habit helps: ten minutes, phones away, where each of you shares something about your day while the other just listens and reflects. Many couples find small, regular moments like this matter more than big talks.",
+   "apply_it": "Tonight, ask your partner about their day and listen for ten minutes without your phone or advice.",
+   "quiz": {
+    "question": "What's a helpful habit for listening to a long-term partner?",
+    "options": [
+     "Assume you know what they'll say",
+     "Ten minutes a day, phones away, just listening",
+     "Only talk about problems on weekends",
+     "Save conversations for holidays"
+    ],
+    "answer": 1,
+    "explanation": "Short, regular moments of full attention help partners feel seen in everyday life."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--25",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "parenting",
+    "children",
+    "attention"
+   ],
+   "title": "Listen to children's small stories so they bring you the big ones",
+   "body": "Children's chatter about a game, a cartoon or who sat where at lunch can feel trivial. But how you listen to small things teaches them whether you are someone worth telling big things to.\n\nWhen your child talks, try to stop, look at them and show interest: 'Then what happened?' Get down to their level. Name feelings simply: 'You sound proud of that drawing.'\n\nResist correcting or lecturing in the middle of their story. If there's a lesson, it can wait. A child who feels listened to about the playground is far more likely to come to you later about bullying, worries or mistakes.",
+   "apply_it": "Today, give your child (or a young relative) two minutes of full attention on whatever they want to talk about.",
+   "quiz": {
+    "question": "Why does listening to children's small stories matter?",
+    "options": [
+     "It keeps them quiet for longer",
+     "It lets you correct their grammar",
+     "It helps them see you as someone to tell bigger things",
+     "It isn't important at all"
+    ],
+    "answer": 2,
+    "explanation": "Children learn from everyday moments whether you are a safe person to bring their worries to."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--26",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "parenting",
+    "teenagers",
+    "patience"
+   ],
+   "title": "With teenagers, listen more and lecture less",
+   "body": "Teenagers often go quiet when they expect a lecture. If every conversation turns into advice, warnings or 'when I was your age', they learn it is easier to say nothing.\n\nTry listening first and saving your opinion. When your teen mentions a falling-out with a friend, ask 'What happened?' and then just listen. Reflect: 'Sounds like you felt pushed out.' Ask before advising: 'Do you want my take, or just to vent?'\n\nTiming matters too. Teens may open up late at night, in the car or while you are both busy with something else. Be ready for those moments, even when they are not convenient, because they don't always come back.",
+   "apply_it": "Next time your teenager shares something, ask one question and hold back your advice unless they ask for it.",
+   "quiz": {
+    "question": "What often makes teenagers stop talking to parents?",
+    "options": [
+     "Every conversation turning into a lecture",
+     "Being asked how their day was",
+     "Talking in the car",
+     "Parents reflecting their feelings"
+    ],
+    "answer": 0,
+    "explanation": "If sharing always leads to advice or warnings, teens learn it's easier to stay quiet."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--27",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "work",
+    "colleagues",
+    "meetings"
+   ],
+   "title": "Listen to colleagues to understand, not to score points",
+   "body": "At work, listening often turns into preparing a counter-argument. In a meeting, you hear the first half of a colleague's idea and start lining up why it won't work.\n\nTry listening for what is useful before what is wrong. Let them finish, then reflect: 'So you're suggesting we test it with one team first.' Ask what problem they are trying to solve. You may find you agree more than you thought, or spot a better solution together.\n\nIn meetings, notice who isn't getting heard. Quieter people often have good ideas but get talked over. A simple 'Priya, you started to say something earlier' can make a big difference to them and to the team.",
+   "apply_it": "In your next meeting, sum up one colleague's idea fairly before you raise any concerns about it.",
+   "quiz": {
+    "question": "In a meeting, what helps you listen to a colleague's idea well?",
+    "options": [
+     "Preparing your objection while they talk",
+     "Interrupting to save time",
+     "Waiting for the manager's view",
+     "Reflecting their idea fairly before raising concerns"
+    ],
+    "answer": 3,
+    "explanation": "Reflecting their idea first shows respect and makes sure you're responding to what they actually meant."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--28",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "work",
+    "managers",
+    "one-to-ones"
+   ],
+   "title": "If you lead others, let them talk first in one-to-ones",
+   "body": "When you are the boss, your words carry extra weight. If you speak first, people often adjust what they say to match you, and you lose the chance to hear what they really think.\n\nIn one-to-ones, try opening with a question and then mostly listening: 'What's on your mind this week?' Let pauses run. Reflect what you hear and ask before jumping in with fixes. If someone raises a concern about workload or a colleague, take notes and summarise it back so they know it registered.\n\nPeople tend to bring problems early to managers who listen, and hide them from managers who don't. Good listening is one of the cheapest ways to hear bad news in time.",
+   "apply_it": "In your next one-to-one, ask an open question first and let the other person speak for most of the time.",
+   "quiz": {
+    "question": "Why should managers often speak last in one-to-ones?",
+    "options": [
+     "Managers don't need to talk",
+     "It makes meetings longer",
+     "People may otherwise shape what they say to match the boss",
+     "It's a legal requirement"
+    ],
+    "answer": 2,
+    "explanation": "Speaking first can steer people. Listening first helps you hear their honest view."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--29",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "phone-calls",
+    "remote",
+    "attention"
+   ],
+   "title": "On phone calls, listen harder because you can't see faces",
+   "body": "On the phone you lose facial expressions and body language, so the other person relies entirely on your voice to know you are listening. Silence can easily feel like you have drifted off.\n\nUse brief spoken signals: 'Mm', 'Right', 'I see.' Reflect a little more often than you would in person: 'So the delivery is now Tuesday, not Monday.' Listen closely to tone and pauses, since they carry most of the feeling.\n\nResist the urge to multitask. People can often hear typing, a TV in the background, or the distracted gap before you answer. Stand up, close your laptop, or walk somewhere quiet so the call has your attention.",
+   "apply_it": "On your next phone call, close your laptop and add one short reflection to show you're following.",
+   "quiz": {
+    "question": "Why should you use more spoken signals on a phone call?",
+    "options": [
+     "The other person can't see your nods or face",
+     "Phones make voices louder",
+     "Calls are always short",
+     "It fills time"
+    ],
+    "answer": 0,
+    "explanation": "Without visual cues, your voice is the only way the other person knows you're listening."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--30",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "video-calls",
+    "remote",
+    "attention"
+   ],
+   "title": "On video calls, close other windows and look like you are listening",
+   "body": "Video calls make it very tempting to check emails or chat messages while someone talks. Your eyes drift, the other person notices, and the call feels flat.\n\nBefore the call, close other tabs and silence notifications. If you can, keep the video window near your camera so you look roughly towards the person. Nod and let your face react, since small expressions show up well on screen.\n\nAudio delays make interruptions more likely, so leave a slightly longer pause before you speak. In group calls, a quick 'Sam, did you want to come in?' helps people who keep getting cut off. Summarising at the end matters even more online, where details slip easily.",
+   "apply_it": "Before your next video call, close every other window and silence notifications until it ends.",
+   "quiz": {
+    "question": "Why leave a slightly longer pause before speaking on video calls?",
+    "options": [
+     "To seem more serious",
+     "Audio delays make talking over each other more likely",
+     "To give the host time to mute you",
+     "Video calls must be slow"
+    ],
+    "answer": 1,
+    "explanation": "Small lags mean people often talk over each other. A brief extra pause helps everyone finish."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--31",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "boundaries",
+    "attention",
+    "honesty"
+   ],
+   "title": "When you can't listen properly, say so and come back",
+   "body": "No one can listen well all the time. You may be exhausted, upset yourself, or in the middle of something urgent. Pretending to listen when you can't often goes worse than being honest.\n\nTry: 'I really want to hear this, but my head is full right now. Can we talk after dinner?' Or at work: 'I've got ten minutes now, or a proper half hour tomorrow. Which is better for you?'\n\nThe key is to come back. Bring the topic up yourself at the time you promised: 'You wanted to tell me about your sister earlier, I'm all ears now.' This shows the delay was about giving them your best attention, not avoiding them.",
+   "apply_it": "If you can't listen well today, say so kindly, offer a time, and be the one to bring it up again.",
+   "quiz": {
+    "question": "What makes delaying a conversation feel caring rather than dismissive?",
+    "options": [
+     "Never mentioning it again",
+     "Changing the subject",
+     "Waiting for them to remind you",
+     "Offering a specific time and bringing it up yourself"
+    ],
+    "answer": 3,
+    "explanation": "Coming back to the topic yourself shows you were making space for them, not avoiding them."
+   }
+  },
+  {
+   "id": "clarity-listen-so-people-feel-heard--32",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "practice",
+    "habits",
+    "listening"
+   ],
+   "title": "Practise one listening habit a day until it becomes natural",
+   "body": "You won't change how you listen overnight, and you don't need to. Pick one habit from this guide each day: phone away, no interrupting, a five-second pause, one reflection, or naming one feeling.\n\nTry it in an easy conversation first, like chatting with a friend or a shop assistant, then use it when it matters more: with your partner, your child or a colleague who is struggling.\n\nAt the end of the day, take a moment to ask yourself: who did I really listen to today, and how did they respond? Over a few weeks, these small moments add up. People notice, and they start to talk to you more openly.",
+   "apply_it": "Choose today's habit now: phone away, no interrupting, a five-second pause, one reflection or naming one feeling.",
+   "quiz": {
+    "question": "What's the simplest way to build better listening, according to this guide?",
+    "options": [
+     "Read about it for a month first",
+     "Practise one small habit each day",
+     "Only practise in difficult conversations",
+     "Wait until someone complains"
+    ],
+    "answer": 1,
+    "explanation": "Small daily practice, starting with easy conversations, builds habits that last."
+   }
+  }
+ ]
+}

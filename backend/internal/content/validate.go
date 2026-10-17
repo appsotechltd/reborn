@@ -191,6 +191,8 @@ type Library struct {
 	Files []File
 	// Summaries are the hand-picked topic summaries (see LoadSummaries).
 	Summaries []TopicSummary
+	// Subjects are the ordered courses of guides (see LoadSubjects).
+	Subjects []Subject
 }
 
 // LoadDir reads and validates every *.json file in dir. Files with errors are

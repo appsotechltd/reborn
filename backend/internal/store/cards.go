@@ -382,6 +382,7 @@ type SeedResult struct {
 	Cards     int
 	Changed   int
 	Summaries int
+	Subjects  int
 }
 
 // Seed upserts every source and card in the library in one transaction.
@@ -414,6 +415,10 @@ func (s *Store) Seed(ctx context.Context, lib content.Library) (SeedResult, erro
 		}
 		n, err := seedSummaries(ctx, tx, lib)
 		res.Summaries = n
+		if err != nil {
+			return err
+		}
+		res.Subjects, err = seedSubjects(ctx, tx, lib)
 		return err
 	})
 	return res, err

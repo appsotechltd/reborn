@@ -179,6 +179,19 @@ it next to the category. The body says so in words too, so nothing is overstated
 Pictures and video stills are real space images: NASA's are public domain, and ESA/Hubble and
 ESA/Webb images are CC BY 4.0, credited on the picture and on screen in the video.
 
+## Communication clarity
+
+Seven Reborn-written guides on being understood, added 2026-10-17 to Life Guides (topic
+`life-guides`, tagged `communication`), each 31 or 32 cards: *Get to the Point*, *Explain Anything
+Simply*, *Listen So People Feel Heard*, *Ask Better Questions*, *Say What You Mean, Kindly*, *Give
+and Take Feedback Well* and *Stop Misunderstandings Before They Start*. Every card's first tag is
+`clarity`. They follow the Life Guides rules above (own words, `original-summary`, references in
+`notes`) and fill gaps around the existing *Write Clearly*, *Speak Fluently*, *Resolve Conflict
+Calmly* and *Negotiate Anything* guides. Together they form the subject *Communication Clarity*
+(`subjects/communication-clarity.json`), listed under Life Guides and Communication & Influence, so
+readers follow the guides one after the other. Pictures reuse illustrations Reborn already paid for, so
+they cost nothing.
+
 ## The pipeline
 
 Code lives in [pipeline/](pipeline/). Python 3.11+, standard library only.

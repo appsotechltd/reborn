@@ -1,0 +1,818 @@
+{
+ "source": {
+  "id": "clarity-get-to-the-point",
+  "title": "Get to the Point",
+  "authors": [
+   "Reborn"
+  ],
+  "kind": "guide",
+  "url": "https://www.gov.uk/guidance/content-design/writing-for-gov-uk",
+  "licence": "original-summary",
+  "licence_url": "https://github.com/appsotechltd/reborn/blob/main/content/SOURCES.md#communication-clarity",
+  "attribution": "A Reborn guide in our own words, drawing on GOV.UK's content design guidance, Digital.gov's plain language guides, the Purdue Online Writing Lab and Harvard Business Review.",
+  "publisher": "Reborn",
+  "language": "en",
+  "retrieved_at": "2026-10-17",
+  "notes": "Written by Reborn in our own words; no text copied. References: GOV.UK, Writing for GOV.UK, https://www.gov.uk/guidance/content-design/writing-for-gov-uk; Digital.gov, Plain language guides, https://digital.gov/guides/plain-language; Purdue Online Writing Lab, Conciseness, https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html; Harvard Business Review, How to Write Email with Military Precision, https://hbr.org/2016/11/how-to-write-email-with-military-precision"
+ },
+ "cards": [
+  {
+   "id": "clarity-get-to-the-point--01",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "main-point",
+    "brevity",
+    "overview"
+   ],
+   "title": "Getting to the point is a kindness to the people you talk to",
+   "body": "Everyone is busy. When a message, a meeting update or a phone call takes a long route to its point, people drift, guess, or miss what you needed from them.\n\nGetting to the point doesn't mean being blunt or cold. It means knowing what you want to say, saying it early, and stopping once it has landed. A friend who texts 'Can you pick up Sam at 4?' gets a faster yes than one who sends five lines about their afternoon first.\n\nThis guide covers knowing your point before you speak, leading with the bottom line, one-sentence summaries, simple structures like the rule of three, cutting waffle, short answers, meetings and voice notes, and staying warm while being brief.",
+   "apply_it": "Notice one long message you receive today. Ask yourself where the actual point was, and how long it took to arrive.",
+   "quiz": {
+    "question": "What does getting to the point mainly involve?",
+    "options": [
+     "Saying as little as possible, even if it's unclear",
+     "Knowing your point, saying it early and stopping when it lands",
+     "Speaking quickly so you finish sooner",
+     "Avoiding any friendly words"
+    ],
+    "answer": 1,
+    "explanation": "Brevity is about putting the point where people will catch it and not burying it, not about being curt or rushed."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--02",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "preparation",
+    "main-point",
+    "thinking"
+   ],
+   "title": "Know your point before you start talking",
+   "body": "Rambling usually isn't a speaking problem. It's a thinking problem. If you start talking before you know what you want to say, you end up working it out out loud, and the listener has to follow every detour.\n\nBefore you send a message, join a call or knock on your manager's door, pause for ten seconds and ask: what is the one thing I want them to take away? At home, that might be 'I'd like us to skip the party on Saturday.' At work, 'The report will be two days late.'\n\nOnce you know the destination, the words come more easily, and you can tell when you've arrived.",
+   "apply_it": "Before your next important call or conversation, write your point on a sticky note or in your phone in under ten words.",
+   "quiz": {
+    "question": "Why do people often ramble when they speak?",
+    "options": [
+     "They are trying to be rude",
+     "They have too much vocabulary",
+     "They talk too slowly",
+     "They start before they know what they want to say"
+    ],
+    "answer": 3,
+    "explanation": "Rambling often comes from thinking aloud. Deciding your point first gives you a clear destination."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--03",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "summary",
+    "main-point",
+    "thinking"
+   ],
+   "title": "If you can't say it in one sentence, you're not ready yet",
+   "body": "A useful test of any message is whether you can sum it up in a single sentence. 'We should move the launch to May because the supplier is late' is clear. If your summary needs three 'and also's, you may have several messages, or you haven't decided what matters most.\n\nTry it before writing a long email to a landlord, a tricky text to a sibling or a pitch to your team. Write the one sentence first. If it's hard, that's useful information: work out your view before you share it.\n\nThe sentence often ends up as your opening line, and it gives you a yardstick for cutting anything that doesn't support it.",
+   "apply_it": "Take something you need to say this week and write it as one sentence of no more than 25 words.",
+   "quiz": {
+    "question": "What does it suggest if you can't sum up your message in one sentence?",
+    "options": [
+     "You may not have decided what matters most yet",
+     "Your message is too important to summarise",
+     "You should add more detail",
+     "You should send it anyway and see"
+    ],
+    "answer": 0,
+    "explanation": "Struggling to summarise is a sign to clarify your thinking or split the message, not to send a longer one."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--04",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "bluf",
+    "main-point",
+    "structure"
+   ],
+   "title": "Put the bottom line up front",
+   "body": "Many of us tell things in the order they happened: background, then events, then the conclusion. Listeners and readers would usually rather have it the other way round. Start with the bottom line, then add the reasons and details.\n\nCompare 'So I rang the garage, and they said the part was on order, and then...' with 'The car won't be ready until Friday. The part is on order.' The second gives the news at once; the rest is optional.\n\nThis habit, sometimes called BLUF, comes from military and business writing, but it works just as well for telling your partner about a call with the bank or updating a friend on plans.",
+   "apply_it": "In your next update to anyone, start with the outcome or conclusion in the first sentence, then add the story if they want it.",
+   "quiz": {
+    "question": "What does 'bottom line up front' mean?",
+    "options": [
+     "Saving your conclusion for a strong finish",
+     "Leaving out all the reasons",
+     "Starting with the conclusion, then giving the details",
+     "Putting a summary at the end of every message"
+    ],
+    "answer": 2,
+    "explanation": "Leading with the conclusion lets people grasp what matters straight away and decide how much detail they need."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--05",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "answers",
+    "questions",
+    "main-point"
+   ],
+   "title": "Answer first, then explain",
+   "body": "When someone asks you a question, they're waiting for one thing: the answer. If you start with context, they have to hold their breath until you get there, and they may interrupt to ask again.\n\nSo give the answer in your first few words, then the reason if it helps. Asked 'Can you make Thursday?', say 'No, sorry, I'm away. Could Friday work?' rather than describing your whole week. Asked by your manager 'Is the budget on track?', say 'Mostly. We're five per cent over on travel,' then explain.\n\nAnswer first, reason second. It sounds more confident and saves everyone time.",
+   "apply_it": "Next time someone asks you a direct question, make your first word or phrase the actual answer.",
+   "quiz": {
+    "question": "Your partner asks, 'Did you book the restaurant?' What's the clearest start?",
+    "options": [
+     "'Well, I tried calling earlier, but...'",
+     "'Yes, it's booked for 7.'",
+     "'Let me tell you what happened.'"
+    ],
+    "answer": 1,
+    "explanation": "Giving the answer immediately respects the question. Any back story can follow if it's needed."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--06",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "audience",
+    "purpose",
+    "main-point"
+   ],
+   "title": "Ask what the other person needs to know, do or decide",
+   "body": "A quick way to find your point is to think about the other person rather than yourself. After hearing from you, what do they need to know, do or decide?\n\nYour team might need to know a deadline has moved. Your neighbour might need to do something, like move their car on Tuesday. Your partner might need to decide between two holiday dates. Each of those is the heart of your message; everything else is support.\n\nIf the answer is 'nothing', ask whether you need to send the message at all, or whether a shorter note will do. This question turns a vague urge to communicate into a clear purpose.",
+   "apply_it": "Before your next message, finish this sentence: 'After reading this, they need to...'",
+   "quiz": {
+    "question": "Which question helps you find the point of a message?",
+    "options": [
+     "How much do I know about this topic?",
+     "How can I sound impressive?",
+     "What does the other person need to know, do or decide?",
+     "How long should this be?"
+    ],
+    "answer": 2,
+    "explanation": "Focusing on what the other person needs to do with your message reveals what belongs at the front."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--07",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "messages",
+    "requests",
+    "email"
+   ],
+   "title": "Put your request in the first line of a message",
+   "body": "If you want something from someone, say so near the top. Requests hidden in the fourth paragraph of an email or after a long chatty text are easy to miss, and you end up chasing a reply.\n\nCompare 'Hi! Hope you're well. Been a mad week here...' and only later 'could you lend us the gazebo?' with 'Could we borrow your gazebo on Saturday? Our garden party has grown!' The second gets a yes or no straight away.\n\nAt work, the same goes for approvals, sign-offs and favours. Lead with what you need and by when, then add any background. Friendliness can still come first, in a few words.",
+   "apply_it": "Check one message you're about to send. If it asks for something, move that request into the first or second sentence.",
+   "quiz": {
+    "question": "Where should a request usually go in a message?",
+    "options": [
+     "At the very end, after the background",
+     "In a separate follow-up message",
+     "Near the top, with any background after it",
+     "Anywhere, as long as it's polite"
+    ],
+    "answer": 2,
+    "explanation": "Requests near the top are seen and answered faster; buried ones are often missed."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--08",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "messages",
+    "email",
+    "headlines"
+   ],
+   "title": "Write subject lines and first lines like headlines",
+   "body": "A newspaper headline tells you the story before you read it. Your subject lines, message previews and opening sentences can do the same.\n\n'Quick question' or 'Update' tells the reader nothing. 'Need your OK on venue by Wed' or 'School trip cancelled tomorrow' tells them what it's about and whether to open it now. In a family group chat, starting with 'Mum's train is delayed, pick-up now 6pm' beats a message that only gets there at the end.\n\nPeople often decide from the preview alone whether to read on. Make that preview carry your point.",
+   "apply_it": "Rewrite the subject line of your next email so it states the main point or request.",
+   "quiz": {
+    "question": "Which is the most useful subject line?",
+    "options": [
+     "'Quick question'",
+     "'Following up'",
+     "'Update'",
+     "'Can you approve the venue by Wednesday?'"
+    ],
+    "answer": 3,
+    "explanation": "A specific subject line tells the reader the point and the urgency before they even open the message."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--09",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "rule-of-three",
+    "structure",
+    "memory"
+   ],
+   "title": "Group your points in threes",
+   "body": "People tend to remember things more easily in small sets, and three is a handy number. It feels complete without being overwhelming. That's why so many talks, slogans and stories lean on it.\n\nWhen you have a lot to say, pick your three strongest points and drop or merge the rest. Explaining to your teenager why you want them home by ten? Safety, sleep before school, and the agreement you made. Making the case for a new tool at work? Saves time, cuts errors, and costs less than the current one.\n\nThree points are easier for you to deliver and easier for others to repeat to someone else.",
+   "apply_it": "Next time you're making a case for something, list your reasons, then keep only the strongest three.",
+   "quiz": {
+    "question": "Why is grouping points in threes helpful?",
+    "options": [
+     "It is easy to remember and feels complete",
+     "It makes any argument correct",
+     "It means you never need examples",
+     "It is the only structure people understand"
+    ],
+    "answer": 0,
+    "explanation": "Three points are manageable for listeners and give a sense of completeness without overload."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--10",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "structure",
+    "speaking",
+    "reasons"
+   ],
+   "title": "Use point, reason, example, point when you speak up",
+   "body": "When you're asked for your view on the spot, a simple shape stops you wandering: make your point, give a reason, add an example, then restate your point.\n\nIn a team meeting: 'I think we should keep Fridays meeting-free. People get more focused work done. Last month, the design team finished their project early after trying it. So I'd like us to keep it.' At home: 'Let's take the train. It's less stressful than driving. Last time we sat in traffic for two hours. So, train?'\n\nIt takes about twenty seconds, sounds organised, and ends on the point so people remember it.",
+   "apply_it": "In your next discussion, try giving your opinion in four parts: point, reason, example, point.",
+   "quiz": {
+    "question": "What's the final step of the point, reason, example, point shape?",
+    "options": [
+     "Asking for questions",
+     "Adding a second example",
+     "Restating your main point",
+     "Changing the subject"
+    ],
+    "answer": 2,
+    "explanation": "Ending by repeating your point leaves it fresh in people's minds."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--11",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "signposting",
+    "structure",
+    "speaking"
+   ],
+   "title": "Tell people how many points you have",
+   "body": "A small phrase like 'Two things' or 'There are three options' helps listeners enormously. It tells them what's coming and when you've finished, so they can relax and follow rather than wonder how long you'll go on.\n\nIt works on a call with a customer ('Two quick updates on your order'), in a family chat ('Three things for the weekend'), and in a meeting ('I have one concern and one suggestion').\n\nIt also keeps you honest. Once you've announced two points, you're far less likely to wander into a fourth. If you can't count your points, you probably need to decide what they are first.",
+   "apply_it": "Start your next update or voice message with 'I've got [number] things', then stick to that number.",
+   "quiz": {
+    "question": "How does saying 'I've got two points' help?",
+    "options": [
+     "It makes the talk sound more formal",
+     "It lets listeners know what's coming and when you're done",
+     "It gives you permission to add more later",
+     "It replaces the need for a main point"
+    ],
+    "answer": 1,
+    "explanation": "Signposting the number of points helps people follow along and know when you've finished."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--12",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "waffle",
+    "editing",
+    "messages"
+   ],
+   "title": "Cut the warm-up sentences you didn't need",
+   "body": "Many messages start with a run-up: 'I just wanted to reach out to touch base about something I've been thinking about.' None of those words carry the point. Delete them, and the message usually starts in the right place.\n\nTry this after writing anything: cover the first sentence or two and read on. If nothing is lost, cut them. The same applies to speech. 'So, basically, what I wanted to say was...' can usually become the thing you wanted to say.\n\nA short greeting is fine and friendly. It's the wind-up after the greeting that tends to waste time.",
+   "apply_it": "Before sending your next message, delete the first sentence after the greeting and see if it still makes sense.",
+   "quiz": {
+    "question": "What's a quick test for warm-up waffle?",
+    "options": [
+     "Count the words in the message",
+     "Add more greetings",
+     "Read it aloud very fast",
+     "Cover the opening lines and see if anything is lost"
+    ],
+    "answer": 3,
+    "explanation": "If removing the opening lines loses nothing, they were warm-up rather than content."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--13",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "waffle",
+    "filler-phrases",
+    "editing"
+   ],
+   "title": "Swap padded phrases for plain ones",
+   "body": "Waffle hides in phrases that use many words to say little. 'At this moment in time' means 'now'. 'Due to the fact that' means 'because'. 'In the event that' means 'if'. 'I would like to take this opportunity to thank you' means 'thank you'.\n\nThese phrases creep in when we want to sound formal or careful, at work and even in notes to school or the council. They make messages longer and slower to read, without adding meaning.\n\nYou don't need to hunt for every one. Just notice your favourite few and replace them with the short version. The Write Clearly guide has more on plain words if you want to go further.",
+   "apply_it": "Find one padded phrase you use often, like 'in order to', and use the short version all day.",
+   "quiz": {
+    "question": "What's a plainer way to say 'due to the fact that'?",
+    "options": [
+     "Because",
+     "Considering all aspects",
+     "In light of the situation",
+     "With regard to"
+    ],
+    "answer": 0,
+    "explanation": "'Because' says the same thing in one word, so the reader gets your meaning faster."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--14",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "over-explaining",
+    "brevity",
+    "confidence"
+   ],
+   "title": "Stop once your point has landed",
+   "body": "Over-explaining often comes from worry that we haven't been understood or that we need to justify ourselves. So we say the point, then say it again in different words, then add one more reason.\n\nWatch the other person. If they nod, say 'OK' or reply 'Great, thanks', the point has landed. You can stop. Turning down an invitation with 'I can't make it, but have a great time' is complete. You don't need three excuses.\n\nAt work, repeating yourself can make a sound idea seem less certain. Say it once, clearly, and let silence do some of the work.",
+   "apply_it": "In your next conversation, once someone signals they've understood, stop and let them respond.",
+   "quiz": {
+    "question": "What's a common cause of over-explaining?",
+    "options": [
+     "Having too little to say",
+     "Being too confident",
+     "Worrying you haven't been understood or need to justify yourself",
+     "Speaking in a second language only"
+    ],
+    "answer": 2,
+    "explanation": "Over-explaining often comes from anxiety. Noticing the signs that your point has landed lets you stop."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--15",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "backstory",
+    "detail",
+    "brevity"
+   ],
+   "title": "Leave out the backstory unless they ask for it",
+   "body": "We often feel we must give the whole history before reaching the point: how the problem started, who said what, and what we tried first. Usually the other person needs only the current situation and what happens next.\n\nTelling your GP's receptionist 'I need an appointment about my knee; it's been swollen for a week' is enough to start. The full story of the hiking trip can wait for the doctor, if it's relevant. With a colleague, 'The client has said yes to the new price' beats a blow-by-blow of the call.\n\nIf they want the background, they'll ask. Offering it in one line, like 'Happy to share how we got here', also works.",
+   "apply_it": "Next time you report a problem, give only the current situation and the next step. Offer the backstory rather than leading with it.",
+   "quiz": {
+    "question": "When should you usually include the full backstory?",
+    "options": [
+     "Always, so nothing is missed",
+     "Only when it's needed or someone asks",
+     "At the start of every message",
+     "Never, under any circumstances"
+    ],
+    "answer": 1,
+    "explanation": "Most people need the current situation and next step. Background is useful when it changes what they'll do, or when they ask."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--16",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "answers",
+    "questions",
+    "listening"
+   ],
+   "title": "Answer the question that was actually asked",
+   "body": "It's easy to answer the question we expected, or the one we'd rather answer, instead of the one in front of us. Asked 'When will it be finished?', people often explain why it's taking so long. Asked 'Do you want pasta or curry?', some reply with how their day has been.\n\nBefore you answer, take a breath and repeat the question to yourself. Then answer that exact question first. If you need to add something else, do it afterwards: 'Thursday. I'll explain the delay if that helps.'\n\nPeople notice when their question is answered directly. It builds trust, at work and at home.",
+   "apply_it": "Today, when asked a question, silently repeat it to yourself before answering, then answer exactly that.",
+   "quiz": {
+    "question": "Your manager asks, 'When will it be done?' What's the best start?",
+    "options": [
+     "'It's been a really complicated project.'",
+     "'Well, there were some problems with...'",
+     "'Have you seen how much else I've got on?'",
+     "'Thursday afternoon.'"
+    ],
+    "answer": 3,
+    "explanation": "Answering the exact question first shows you listened, and any explanation can follow."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--17",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "short-answers",
+    "yes-no",
+    "questions"
+   ],
+   "title": "Lead with yes or no when the question asks for one",
+   "body": "Many questions really want a yes or no: 'Is the car fixed?', 'Did you get my message?', 'Are you coming tonight?' Starting with 'Well...' or 'It depends...' makes people wait and often worry.\n\nSay yes or no first, then add the one detail that matters. 'Yes, it's fixed. Two hundred pounds.' 'No, I'll be late, but I'll be there by eight.' If the true answer is 'partly', say that: 'Partly. The brakes are done, the lights aren't.'\n\nThis feels slightly abrupt at first, but most people find it a relief to get a straight answer.",
+   "apply_it": "For one day, start your reply to every yes-or-no question with 'yes', 'no' or 'partly'.",
+   "quiz": {
+    "question": "A friend asks, 'Are you coming tonight?' What's the clearest reply?",
+    "options": [
+     "'Yes, but I'll be there around eight.'",
+     "'Hmm, well, it's been a long week...'",
+     "'What time does it start again?'"
+    ],
+    "answer": 0,
+    "explanation": "Leading with yes or no answers the real question at once, with the key detail added after."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--18",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "honesty",
+    "short-answers",
+    "confidence"
+   ],
+   "title": "'I don't know' is a complete answer when you add what's next",
+   "body": "When we don't know the answer, we sometimes talk around it, hoping to sound informed. That wastes time and can mislead people.\n\nIt's clearer to say 'I don't know' and then add what you'll do: 'I don't know yet. I'll check with finance and tell you by Friday.' At home: 'I'm not sure when the parcel's coming. I'll look at the tracking tonight.'\n\nMost people respect a straight 'I don't know' more than a long, uncertain answer. It also keeps your other answers believable, because people learn that when you say something, you mean it.",
+   "apply_it": "The next time you're unsure of an answer, say 'I don't know' plus one concrete next step.",
+   "quiz": {
+    "question": "What makes 'I don't know' a useful answer?",
+    "options": [
+     "Adding a long explanation of why you don't know",
+     "Saying it quietly",
+     "Adding what you'll do to find out and when",
+     "Changing the subject quickly"
+    ],
+    "answer": 2,
+    "explanation": "Pairing 'I don't know' with a next step is honest, brief and still helpful."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--19",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "decisions",
+    "options",
+    "messages"
+   ],
+   "title": "When you need a decision, give the options, not the whole journey",
+   "body": "If you want someone to choose, make choosing easy. Lay out the options clearly and, if you have one, say which you'd pick.\n\n'The plumber can come Tuesday morning or Thursday afternoon. Tuesday's better for me. Which suits you?' is quick to answer. Three paragraphs about phone calls with the plumber's office are not. At work: 'Two choices: delay launch a week, or launch without the new feature. I suggest the second.'\n\nPeople can always ask how you got there. Your job is to get them to a decision without making them dig for it.",
+   "apply_it": "Next time you need someone to decide, send the options as a short list with your recommendation.",
+   "quiz": {
+    "question": "What's the clearest way to ask someone for a decision?",
+    "options": [
+     "Explain everything that led to the choice first",
+     "Lay out the options and, if you have one, your recommendation",
+     "Ask them to call you to discuss",
+     "Wait until they ask what's going on"
+    ],
+    "answer": 1,
+    "explanation": "Clear options and a suggestion let people decide quickly without wading through background."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--20",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "messages",
+    "focus",
+    "email"
+   ],
+   "title": "Keep one topic per message",
+   "body": "A message that covers the team lunch, a budget question and a holiday request usually gets an answer to only one of them. The others get lost.\n\nWhen you have several unrelated things to raise, consider sending them separately, especially by email or chat. Each one can then have a clear point, its own subject line and its own reply. In a family group chat, a single message about who's bringing what to the barbecue is easier to follow than one mixed with school news.\n\nIf you must combine topics, number them clearly so nothing is missed: '1. Lunch. 2. Budget. 3. Leave.'",
+   "apply_it": "Look at your next long message. If it covers unrelated topics, split it or number each topic.",
+   "quiz": {
+    "question": "Why might you split a message with three unrelated topics?",
+    "options": [
+     "Shorter messages are always friendlier",
+     "It looks more professional to send many messages",
+     "People only read numbered lists",
+     "Each topic is more likely to get noticed and answered"
+    ],
+    "answer": 3,
+    "explanation": "Mixing topics often means some get missed. One topic per message gives each a clear point and reply."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--21",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "bad-news",
+    "honesty",
+    "main-point"
+   ],
+   "title": "Give bad news early and plainly",
+   "body": "When news is unwelcome, we're tempted to soften it with a long run-up. But a long build-up often makes people more anxious, as they sense something is coming and wait for it.\n\nSay the news in the first sentence or two, kindly and clearly, then explain and offer what you can. 'I'm sorry, we can't make the wedding. We've got a family health issue. Could we take you both out for dinner instead?' At work: 'We didn't win the contract. Here's what they told us and what I suggest next.'\n\nBeing direct isn't the same as being harsh. Warmth comes from tone and care, not from delay.",
+   "apply_it": "If you have unwelcome news to share this week, write the first sentence so it states the news plainly and kindly.",
+   "quiz": {
+    "question": "Why is a long build-up to bad news often unhelpful?",
+    "options": [
+     "It makes the news less important",
+     "It's always considered rude",
+     "It can make people more anxious while they wait",
+     "It means you don't need to explain"
+    ],
+    "answer": 2,
+    "explanation": "A long lead-in can raise anxiety. Sharing the news early, with kindness, is usually easier for everyone."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--22",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "meetings",
+    "purpose",
+    "work"
+   ],
+   "title": "Open any meeting with its purpose in one sentence",
+   "body": "Meetings drift when nobody is sure what they're for. A single sentence at the start fixes much of that: 'We're here to choose a supplier' or 'By the end, we'll agree the holiday rota.'\n\nIt works for family meetings too: 'Let's decide who's hosting Christmas this year.' Everyone then knows what to aim for and can spot when the talk wanders away from it.\n\nIf you're not running the meeting, it's fine to ask: 'Just so I'm clear, what do we need to decide today?' That one question often makes the whole meeting shorter.",
+   "apply_it": "For your next meeting, write its purpose in one sentence and say it in the first minute, or ask for it.",
+   "quiz": {
+    "question": "What's a good way to start a meeting?",
+    "options": [
+     "State its purpose in one sentence",
+     "Go round and hear everyone's week",
+     "Read out the previous minutes in full",
+     "Wait to see what comes up"
+    ],
+    "answer": 0,
+    "explanation": "A clear purpose gives everyone a target and makes it easier to keep the discussion on track."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--23",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "meetings",
+    "updates",
+    "headlines"
+   ],
+   "title": "Give meeting updates as headlines, then detail if asked",
+   "body": "In a round of team updates, long accounts of your week make the meeting drag and bury the parts people actually need. Try giving a headline instead: one line on where things stand, one on any problem, one on any help you need.\n\n'Website copy is done. Images are late from the agency. I need a decision on whether to launch without them.' That takes ten seconds and invites the right follow-up questions.\n\nThe same approach suits a quick catch-up with your partner about the house move or a parent-teacher chat. Lead with the status; let others pull out more detail.",
+   "apply_it": "In your next update, give three lines only: where things stand, any problem, and any help you need.",
+   "quiz": {
+    "question": "What's a 'headline' update?",
+    "options": [
+     "A detailed diary of everything you did",
+     "A joke to open the meeting",
+     "A short summary of status, problems and needs",
+     "A list of everyone else's tasks"
+    ],
+    "answer": 2,
+    "explanation": "A headline update gives the key facts quickly and lets people ask for detail if they want it."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--24",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "meetings",
+    "speaking",
+    "brevity"
+   ],
+   "title": "In meetings, make your point once and then let others speak",
+   "body": "In group discussions, it's common to make a good point, then keep talking, restating it or adding loosely related thoughts. The point weakens and others lose their chance to respond.\n\nTry this: make your point, give your one best reason, and stop. 'I'd go with the cheaper venue. We'd keep money back for catering.' Then pause. If people want more, they'll ask, and you'll have a real conversation instead of a speech.\n\nThis matters in neighbourhood meetings, school committees and work calls alike. People who speak briefly are often listened to more closely when they do speak.",
+   "apply_it": "In your next group discussion, limit each contribution to your point and one reason, then pause.",
+   "quiz": {
+    "question": "After making your point in a meeting, what's often best?",
+    "options": [
+     "Repeat it in different words",
+     "Add every related idea you have",
+     "Keep talking so nobody interrupts",
+     "Give one reason, then stop and let others respond"
+    ],
+    "answer": 3,
+    "explanation": "Stopping after your point and best reason keeps it strong and leaves space for others."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--25",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "voice-notes",
+    "preparation",
+    "messages"
+   ],
+   "title": "Plan a voice note before you press record",
+   "body": "Voice notes are quick to send but can be slow to listen to. A four-minute ramble about weekend plans makes the listener sit through every 'um' and 'where was I?' to find what they need.\n\nBefore recording, decide your point and say it first: 'Quick one: can you bring the folding chairs on Saturday?' Then add any details and stop. If you have several things, say how many at the start.\n\nIf it's going past a minute or so, ask whether a short text would be better, or whether it's really a phone call. The person listening will thank you.",
+   "apply_it": "Before your next voice note, decide your opening sentence. Say your main point in the first ten seconds.",
+   "quiz": {
+    "question": "What's the best way to start a voice note?",
+    "options": [
+     "Explain what you've been doing today",
+     "Say your main point or request straight away",
+     "Ask how they are and wait",
+     "Apologise for sending a voice note"
+    ],
+    "answer": 1,
+    "explanation": "Starting with the point means the listener gets what they need even if they stop listening early."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--26",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "phone-calls",
+    "speaking",
+    "purpose"
+   ],
+   "title": "On the phone, say why you're calling in the first breath",
+   "body": "When someone answers your call, they're wondering why you've rung. Telling them early lets them switch into the right mode, whether that's finding a pen, checking a diary or bracing for news.\n\nAfter a quick greeting, give the reason: 'Hi, it's Priya. I'm ringing about the boiler repair booked for Monday.' With family: 'Hi Dad, nothing's wrong, just want to check Sunday lunch times.' That 'nothing's wrong' can save a worried parent a lot of stress.\n\nOn a work call, it also shows respect for the other person's time and gets you to a useful answer faster.",
+   "apply_it": "On your next phone call, say who you are and why you're calling within your first two sentences.",
+   "quiz": {
+    "question": "Why say why you're calling early on?",
+    "options": [
+     "It lets the other person prepare and avoids worry",
+     "It shortens the greeting so you sound busy",
+     "It means you don't need to be polite",
+     "It stops them from asking questions"
+    ],
+    "answer": 0,
+    "explanation": "Knowing the reason early helps people respond well and can stop them assuming bad news."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--27",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "home",
+    "family",
+    "logistics"
+   ],
+   "title": "Make family logistics short and specific",
+   "body": "Home life runs on small arrangements: pick-ups, shopping, chores and who's in for dinner. These messages work best when they're short and clear on who, what and when.\n\n'Can you collect Mia from football at 5.30?' gets a yes or no. 'Are you around later? Might need a hand with something' leaves the other person guessing and replying with questions. On a fridge note: 'Bins out tonight. Recycling week.' is enough.\n\nKeep the chat for chatting. When the point is a practical arrangement, putting it in one clear line means fewer missed pick-ups and fewer 'I thought you meant...' moments.",
+   "apply_it": "Send one family arrangement today in a single line that states who, what and when.",
+   "quiz": {
+    "question": "Which message is clearest for a family arrangement?",
+    "options": [
+     "'Are you around later?'",
+     "'Might need a favour at some point.'",
+     "'Can you collect Mia from football at 5.30?'",
+     "'Call me when you get a chance.'"
+    ],
+    "answer": 2,
+    "explanation": "Naming who, what and when lets the other person answer straight away without follow-up questions."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--28",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "relationships",
+    "difficult-conversations",
+    "main-point"
+   ],
+   "title": "Name the topic straight away in personal conversations",
+   "body": "Messages like 'We need to talk' or 'Can I ask you something later?' can leave a partner or friend worrying for hours. The longer the gap between the warning and the point, the bigger the worry tends to grow.\n\nIf something matters, name the topic when you raise it: 'Can we talk tonight about how we split the cooking? Nothing serious, I just want to sort it.' Or: 'I'd like to chat about your sister's visit. Is now OK?'\n\nYou can still choose a good time for the full conversation. Just don't keep the subject a mystery. Knowing what's coming helps the other person show up calm and ready.",
+   "apply_it": "If you need to raise something personal, name the topic and how serious it is in the same message you ask to talk.",
+   "quiz": {
+    "question": "Why can 'We need to talk' be unhelpful on its own?",
+    "options": [
+     "It's too short to be polite",
+     "It can cause worry because the topic is unclear",
+     "It means the conversation must happen right away",
+     "It's too formal for friends"
+    ],
+    "answer": 1,
+    "explanation": "Leaving the topic unclear invites people to imagine the worst. Naming it calmly reduces anxiety."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--29",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "brevity",
+    "kindness",
+    "tone"
+   ],
+   "title": "Being brief doesn't mean being rude",
+   "body": "Some people worry that short messages seem cold. They can, if they're only a bare instruction. But a few warm words are enough to fix that, without going back to waffle.\n\nCompare 'Send the file' with 'Could you send the file when you get a moment? Thanks!' Both are short; the second is friendly. To a friend: 'Can't make Friday, sorry. Would love to catch up next week, though.' Clear, brief and kind.\n\nWarmth comes from a greeting, a please and thank you, using their name, or one line of genuine interest. Keep those, and cut the padding instead. Brevity and kindness work well together.",
+   "apply_it": "Make your next short request warmer by adding one friendly touch: their name, a please, or a thank you.",
+   "quiz": {
+    "question": "How can you keep a short message from sounding cold?",
+    "options": [
+     "Add a few warm words like please, thanks or their name",
+     "Add three paragraphs of background",
+     "Use lots of exclamation marks",
+     "Make it as long as possible"
+    ],
+    "answer": 0,
+    "explanation": "A little warmth goes a long way. You can be brief and friendly at the same time."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--30",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "audience",
+    "detail",
+    "judgement"
+   ],
+   "title": "Match the length to the person and the stakes",
+   "body": "Getting to the point doesn't mean every message should be tiny. Some situations need more: a complex decision at work, explaining a medical worry, or a heartfelt conversation with a friend who's struggling.\n\nThe skill is to lead with the point and then give the detail that the person and situation genuinely need. A busy manager may want two lines; a new colleague may want the full steps. Your gran may love a long chatty letter, while a landlord just needs the repair and dates.\n\nAsk yourself: who is this for, and what's at stake? Then give enough, but no more.",
+   "apply_it": "Before your next important message, ask: who is this for, and what's at stake? Adjust the length to fit.",
+   "quiz": {
+    "question": "When is a longer message appropriate?",
+    "options": [
+     "Whenever you have spare time",
+     "When you want to sound more important",
+     "Never; shorter is always better",
+     "When the person or situation genuinely needs the detail"
+    ],
+    "answer": 3,
+    "explanation": "Brevity is about not wasting words, not about cutting what's needed. Length should fit the reader and the stakes."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--31",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "detail",
+    "offering",
+    "conversation"
+   ],
+   "title": "Offer more detail instead of forcing it on people",
+   "body": "A neat way to stay brief without leaving people short is to offer the extra detail rather than give it all at once. 'That's the summary. Want the full story?' or 'Happy to send the figures if useful.'\n\nThis lets each person choose. Your manager might say 'No, that's fine'; your colleague might say 'Yes please.' At home, telling a friend 'The interview went well. I can tell you all about it over coffee' gives the news now and the story later.\n\nYou keep control of your point while respecting how much the other person wants to hear.",
+   "apply_it": "End your next update with a one-line offer of more detail, such as 'Happy to share more if helpful.'",
+   "quiz": {
+    "question": "What's the benefit of offering more detail rather than including it all?",
+    "options": [
+     "You never have to explain anything",
+     "People can choose how much they want to hear",
+     "It makes the message look unfinished",
+     "It avoids having a main point"
+    ],
+    "answer": 1,
+    "explanation": "Offering detail lets the listener decide, keeping your message short without leaving anyone short-changed."
+   }
+  },
+  {
+   "id": "clarity-get-to-the-point--32",
+   "topic": "life-guides",
+   "tags": [
+    "clarity",
+    "communication",
+    "practice",
+    "habits",
+    "main-point"
+   ],
+   "title": "A daily habit: find your point, say it first, then stop",
+   "body": "Getting to the point gets easier with practice. You don't need to change everything at once. A small daily routine is enough.\n\nPick one message, call or conversation each day. Before it, ask: what's my point in one sentence? Say that first, add only what the other person needs, and stop when it has landed. Afterwards, take ten seconds to notice what worked. Did they answer faster? Did the meeting run shorter? Did your partner seem less confused?\n\nOver a few weeks, this becomes automatic. Your messages, meetings and chats get shorter, clearer and, often, kinder too.",
+   "apply_it": "Today, choose one message or conversation and use the routine: one-sentence point, say it first, then stop.",
+   "quiz": {
+    "question": "What's the simple daily routine from this guide?",
+    "options": [
+     "Write longer messages to be safe",
+     "Only speak when asked a question",
+     "Find your point, say it first, then stop",
+     "Always use exactly three sentences"
+    ],
+    "answer": 2,
+    "explanation": "Knowing your point, leading with it and stopping once it lands is a habit you can build in small daily steps."
+   }
+  }
+ ]
+}

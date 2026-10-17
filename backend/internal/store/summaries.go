@@ -48,6 +48,8 @@ type SummaryProgress struct {
 type SummaryDetail struct {
 	Summary
 	Parts []Card `json:"parts"`
+	// Subject is the course this guide belongs to, if any, with the guide after it.
+	Subject *SubjectStep `json:"subject,omitempty"`
 }
 
 // ErrBadPosition is returned for a progress position outside the summary's parts.
@@ -206,7 +208,11 @@ func (s *Store) GetSummary(ctx context.Context, id, userID string) (SummaryDetai
 	if sm.Viewer != nil && sm.Viewer.Position >= len(parts) {
 		sm.Viewer.Position = max(0, len(parts)-1)
 	}
-	return SummaryDetail{Summary: sm, Parts: parts}, nil
+	step, err := s.SubjectStepOf(ctx, id)
+	if err != nil {
+		return SummaryDetail{}, err
+	}
+	return SummaryDetail{Summary: sm, Parts: parts, Subject: step}, nil
 }
 
 // SourceSummaryID returns the id of a source's book summary, or "" when it has none.
