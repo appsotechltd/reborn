@@ -2,6 +2,8 @@ import { ImageResponse } from "next/og";
 import { excerpt, formatAuthors, TOPICS } from "./content";
 import { SITE_NAME, SITE_TAGLINE } from "./config";
 import { getAuthor, getCard, getSource, getSubject, getSummary, getTopics, loadOr } from "./server-api";
+import { asJpeg, mediaPreviewImage } from "./og-media";
+import { cardPreviewMedia, coverPreviewMedia, type PreviewMedia } from "./preview-media";
 import { subjectMeta } from "./subjects";
 import { coverageLabel, summaryByline } from "./summaries";
 
@@ -89,11 +91,22 @@ export function siteImage(): ImageResponse {
   });
 }
 
-/** Link preview for an idea: title, a short excerpt and the credit line. */
-export async function ideaImage(id: string): Promise<ImageResponse> {
+/**
+ * A JPEG preview: the content's own picture or video poster when it has one, otherwise the drawn
+ * text preview. Routes using this declare contentType image/jpeg.
+ */
+async function withMedia(media: PreviewMedia | null, drawn: () => ImageResponse): Promise<Response> {
+  const picture = media ? await mediaPreviewImage(media) : null;
+  return picture ?? asJpeg(drawn());
+}
+
+/** Link preview for an idea: its picture or video poster, else title, excerpt and credit line. */
+export async function ideaImage(id: string): Promise<Response> {
   const { data: card } = await loadOr(() => getCard(id), null);
-  if (!card) return siteImage();
-  return previewImage({ title: card.title, text: card.body, footer: card.credit || undefined });
+  if (!card) return asJpeg(siteImage());
+  return withMedia(cardPreviewMedia(card), () =>
+    previewImage({ title: card.title, text: card.body, footer: card.credit || undefined }),
+  );
 }
 
 export async function sourceImage(id: string): Promise<ImageResponse> {
@@ -132,26 +145,26 @@ export async function topicImage(slug: string): Promise<ImageResponse> {
   });
 }
 
-export async function summaryImage(id: string): Promise<ImageResponse> {
+export async function summaryImage(id: string): Promise<Response> {
   const { data } = await loadOr(() => getSummary(id), null);
-  if (!data) return siteImage();
+  if (!data) return asJpeg(siteImage());
   const by = summaryByline(data);
-  return previewImage({
+  return withMedia(coverPreviewMedia(data.cover), () => previewImage({
     eyebrow: coverageLabel(data),
     title: data.title,
     text: data.description,
     footer: `${data.part_count} one-minute parts${by ? ` · ${by}` : ""}`,
-  });
+  }));
 }
 
-export async function subjectImage(id: string): Promise<ImageResponse> {
+export async function subjectImage(id: string): Promise<Response> {
   const { data } = await loadOr(() => getSubject(id), null);
-  if (!data) return siteImage();
+  if (!data) return asJpeg(siteImage());
   const first = data.guides.slice(0, 3).map((g) => g.title);
-  return previewImage({
+  return withMedia(coverPreviewMedia(data.cover), () => previewImage({
     eyebrow: "Subject",
     title: data.title,
     text: data.description,
     footer: `${subjectMeta(data)}${first.length ? ` · ${first.join(", ")}` : ""}`,
-  });
+  }));
 }

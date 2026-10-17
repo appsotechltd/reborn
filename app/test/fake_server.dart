@@ -93,16 +93,20 @@ class FakeSharer implements Sharer {
     return result;
   }
 
-  final videos = <Uri>[];
+  /// Files shared (videos and pictures), by URL, with their names.
+  final files = <Uri>[];
+  final fileNames = <String>[];
 
   @override
-  Future<bool> shareVideo({
+  Future<bool> shareFile({
     required Uri url,
     required String fileName,
+    required String mimeType,
     required String text,
     Rect? origin,
   }) async {
-    videos.add(url);
+    files.add(url);
+    fileNames.add(fileName);
     shared.add(text);
     return result;
   }

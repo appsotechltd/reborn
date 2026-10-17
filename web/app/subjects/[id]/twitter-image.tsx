@@ -3,7 +3,7 @@ import { subjectImage, OG_ALT } from "@/lib/og-image";
 export const revalidate = 600;
 export const alt = OG_ALT;
 export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const contentType = "image/jpeg";
 
 export default async function Image({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

@@ -16,11 +16,12 @@ import { Modal } from "./Modal";
  *
  * An idea with a video also offers the video itself, in the shape that suits where it goes: tall
  * (9:16) for Status, Reels, Shorts and TikTok, wide (16:9) for YouTube, Facebook, X and LinkedIn.
- * Phones put the file in the share sheet; elsewhere it downloads. Link shares already carry the
- * page's preview.
+ * Phones put the file in the share sheet; elsewhere it downloads. An idea with a picture (its
+ * image post or card picture) puts the picture in the share sheet with the link ("More apps…").
+ * Link shares already carry the page's own picture or video poster as their preview.
  */
 
-type Shape = "tall" | "wide";
+type Shape = "tall" | "wide" | "picture";
 export function ShareMenu({
   postId,
   path,
@@ -30,6 +31,7 @@ export function ShareMenu({
   count,
   onShared,
   video,
+  picture,
 }: {
   /** The idea being shared; its share is counted. */
   postId?: string;
@@ -45,6 +47,8 @@ export function ShareMenu({
   onShared?: () => void;
   /** The idea's video, offered as a file in each shape it has. */
   video?: { cardId: string; explainer: Explainer } | null;
+  /** The idea whose picture is offered as a file (an image post or card picture). */
+  picture?: { cardId: string } | null;
 }) {
   const { api } = useAuth();
   const site = useSiteUrl();
@@ -81,6 +85,12 @@ export function ShareMenu({
   }
 
   async function nativeShare() {
+    setError(null);
+    if (picture) {
+      const done = await sharePicture();
+      if (done === "shared") setOpen(false);
+      if (done !== "none") return;
+    }
     try {
       await navigator.share({ title, text: title, url });
       record("native");
@@ -90,32 +100,73 @@ export function ShareMenu({
     }
   }
 
-  function videoUrl(shape: Shape) {
+  // The API hands out the files: the media bucket sends no CORS headers.
+  function fileUrl(shape: Shape) {
+    if (shape === "picture") return `${browserApiUrl()}/v1/cards/${encodeURIComponent(picture!.cardId)}/picture`;
     return `${browserApiUrl()}/v1/cards/${encodeURIComponent(video!.cardId)}/video?shape=${shape}`;
   }
 
-  async function shareFile(file: File, shape: Shape) {
+  function fileName(shape: Shape, type = "") {
+    if (shape !== "picture") return `reborn-${video!.cardId}-${shape}.mp4`;
+    const ext = type.includes("png") ? "png" : type.includes("webp") ? "webp" : "jpg";
+    return `reborn-${picture!.cardId}.${ext}`;
+  }
+
+  /** Shares [file] with the link. False only when the browser wants a fresh tap first. */
+  async function shareFile(file: File, shape: Shape): Promise<boolean> {
     try {
       await navigator.share({ files: [file], title, text: `${title} ${url}` });
       record("native");
       setReady(null);
     } catch (err) {
-      if (err instanceof DOMException && err.name === "NotAllowedError") return setReady({ shape, file });
+      if (err instanceof DOMException && err.name === "NotAllowedError") {
+        setReady({ shape, file });
+        return false;
+      }
       if (!(err instanceof DOMException && err.name === "AbortError")) setError("Couldn't open the share sheet.");
     }
+    return true;
   }
 
-  async function shareVideo(shape: Shape) {
+  /**
+   * Puts the picture in the share sheet with the link. "none" when it couldn't (no file sharing,
+   * or the picture couldn't be fetched), so the link goes alone; "ready" when the browser wants a
+   * fresh tap after the fetch, which the More apps button then offers.
+   */
+  async function sharePicture(): Promise<"shared" | "ready" | "none"> {
+    const send = async (file: File) => ((await shareFile(file, "picture")) ? "shared" : "ready");
+    if (ready?.shape === "picture") return send(ready.file);
+    if (typeof navigator.canShare !== "function") return "none";
+    setFetching("picture");
+    let file: File;
+    try {
+      const res = await fetch(fileUrl("picture"));
+      if (!res.ok) return "none";
+      const blob = await res.blob();
+      const type = blob.type || "image/jpeg";
+      file = new File([blob], fileName("picture", type), { type });
+      if (!navigator.canShare({ files: [file] })) return "none";
+    } catch {
+      return "none";
+    } finally {
+      setFetching(null);
+    }
+    return send(file);
+  }
+
+  async function shareMedia(shape: Shape) {
     setError(null);
     setReady(null);
-    const href = videoUrl(shape);
-    // Phones share the file itself; elsewhere the video downloads, ready to upload.
+    const href = fileUrl(shape);
+    // Phones share the file itself; elsewhere it downloads, ready to upload.
     if (canNativeShare && typeof navigator.canShare === "function") {
       setFetching(shape);
       try {
         const res = await fetch(href);
         if (!res.ok) throw new Error(String(res.status));
-        const file = new File([await res.blob()], `reborn-${video!.cardId}-${shape}.mp4`, { type: "video/mp4" });
+        const blob = await res.blob();
+        const type = shape === "picture" ? blob.type || "image/jpeg" : "video/mp4";
+        const file = new File([blob], fileName(shape, type), { type });
         if (navigator.canShare({ files: [file] })) return await shareFile(file, shape);
       } catch {
         // Fall through to the download.
@@ -125,7 +176,7 @@ export function ShareMenu({
     }
     const a = document.createElement("a");
     a.href = href;
-    a.download = `reborn-${video!.cardId}-${shape}.mp4`;
+    a.download = fileName(shape);
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -192,8 +243,8 @@ export function ShareMenu({
           </li>
           {canNativeShare ? (
             <li>
-              <button type="button" className="btn btn-small w-full" onClick={nativeShare}>
-                More apps…
+              <button type="button" className="btn btn-small w-full" onClick={nativeShare} disabled={fetching !== null}>
+                {fetching === "picture" ? "Getting the picture…" : ready?.shape === "picture" ? "Share with picture" : "More apps…"}
               </button>
             </li>
           ) : null}
@@ -213,7 +264,7 @@ export function ShareMenu({
                     className="btn btn-small h-auto w-full flex-col gap-0 py-2"
                     data-shape={s.shape}
                     disabled={fetching !== null}
-                    onClick={() => (ready?.shape === s.shape ? shareFile(ready.file, s.shape) : shareVideo(s.shape))}
+                    onClick={() => (ready?.shape === s.shape ? shareFile(ready.file, s.shape) : shareMedia(s.shape))}
                   >
                     <span>{fetching === s.shape ? "Getting the video…" : ready?.shape === s.shape ? `Share the ${s.label.toLowerCase()}` : s.label}</span>
                     <span className="text-xs font-normal text-muted">{s.fits}</span>

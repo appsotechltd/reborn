@@ -189,6 +189,7 @@ Replies are one level deep: replying to a reply attaches to its top-level commen
 | `GET /v1/daily` | optional | | `{"date":"2026-10-10","card":Card}` |
 | `GET /v1/cards/{id}` | none | | `Card` |
 | `GET /v1/cards/{id}/video` | none | `?shape=tall\|wide` | The card's explainer as a file (`video/mp4`, `Content-Disposition: attachment`), for saving or the share sheet: `tall` is 9:16 (Status, Reels, Shorts, TikTok), `wide` the 16:9 cut (YouTube, Facebook, X, LinkedIn). 404 without a video or that cut. |
+| `GET /v1/cards/{id}/picture` | none | | The card's picture as a file (`Content-Disposition: attachment`), for the share sheet: its 4:5 image post (JPEG) when it has one, otherwise its picture at full size. 404 without a picture. |
 | `GET /v1/cards` | none | `?ids=a,b,c` (max 100) | `{"cards":[Card]}` |
 | `POST /v1/cards/{id}/view` | required | | `204`. Records that the user read the card: counts toward the streak, daily goal and referral rewards, once per card. Call when a card is opened, or after a timeline post has been on screen for 8 seconds |
 | `GET /v1/sources` | none | `?topic=&q=&cursor=&limit=50` | `{"sources":[{"id","title","authors","kind","licence","attribution","topics":[...],"card_count","video_count","updated_at"}],"next_cursor":"..."|null}`, ordered by title. Only sources with published cards. `q` matches title or author names (case-insensitive substring). `video_count` counts cards with an explainer video |

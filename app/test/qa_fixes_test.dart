@@ -622,9 +622,10 @@ class _NoShareSheet implements Sharer {
   }) async => throw UnsupportedError('no share sheet');
 
   @override
-  Future<bool> shareVideo({
+  Future<bool> shareFile({
     required Uri url,
     required String fileName,
+    required String mimeType,
     required String text,
     Rect? origin,
   }) async => throw UnsupportedError('no share sheet');
