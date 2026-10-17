@@ -116,7 +116,7 @@ export default async function SourcePage({ params }: { params: Promise<{ id: str
         </dl>
         {source.licence === "original-summary" ? (
           <p className="mt-3 text-sm text-muted">
-            These cards are our own summaries in our own words. Read the original for the full work.
+            These cards are a short summary of the key ideas. Read the original for the full work.
           </p>
         ) : null}
       </header>

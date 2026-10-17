@@ -21,7 +21,7 @@ const _licenceNames = {
   'cc-by-sa-4.0': 'CC BY-SA 4.0',
   'cc0-1.0': 'CC0 1.0',
   'ogl-3.0': 'Open Government Licence v3.0',
-  'original-summary': 'Summarised in our own words — read the original',
+  'original-summary': 'Key ideas summary, read the original for the full work',
 };
 
 class SourceScreen extends ConsumerWidget {

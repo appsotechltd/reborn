@@ -275,7 +275,7 @@ func seedSummaries(ctx context.Context, tx pgx.Tx, lib content.Library) (int, er
 		if content.Licences[f.Source.Licence] {
 			r.description = fmt.Sprintf("Every idea from %s, in %d one-minute parts.", f.Source.Title, len(f.Cards))
 		} else {
-			r.description = fmt.Sprintf("The %d key ideas from %s, in our own words.", len(f.Cards), f.Source.Title)
+			r.description = fmt.Sprintf("The %d key ideas from %s.", len(f.Cards), f.Source.Title)
 		}
 		rows = append(rows, r)
 	}
