@@ -33,6 +33,10 @@ class TtsSpeaker extends Speaker {
   String? _speakingId;
   double _rate = 1;
 
+  /// Bumped by every [speak] and [stop], so a [speak] that is still starting
+  /// when it is stopped (or replaced) never reads.
+  int _gen = 0;
+
   @override
   String? get speakingId => _speakingId;
 
@@ -43,11 +47,14 @@ class TtsSpeaker extends Speaker {
 
   @override
   Future<void> speak(String id, String text) async {
+    final gen = ++_gen;
     await _tts.stop();
+    if (gen != _gen) return;
     _speakingId = id;
     notifyListeners();
     try {
       await _tts.setSpeechRate((kIsWeb ? 0.95 : 0.48) * _rate);
+      if (gen != _gen) return;
       await _tts.speak(text);
     } catch (_) {
       _done();
@@ -56,6 +63,7 @@ class TtsSpeaker extends Speaker {
 
   @override
   Future<void> stop() async {
+    _gen++;
     await _tts.stop();
     _done();
   }

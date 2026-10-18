@@ -7,6 +7,7 @@ import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../theme.dart';
 import '../listen/listen_controller.dart';
+import '../listen/media_focus.dart';
 import 'explainer_player.dart';
 import 'full_screen_video.dart';
 
@@ -84,9 +85,16 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
   Duration _base = Duration.zero;
   final _since = Stopwatch();
 
+  late final MediaFocus _focus;
+
+  /// Last seen playing (its narration claims the sound when it starts; see
+  /// [MediaFocus]).
+  bool _sounding = false;
+
   @override
   void initState() {
     super.initState();
+    _focus = ref.read(mediaFocusProvider);
     if (widget.fullScreen) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) _start(from: widget.startAt ?? Duration.zero);
@@ -102,9 +110,21 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Its page went under another one (or its tab was hidden): it pauses.
+    if (!TickerMode.valuesOf(context).enabled) {
+      final c = _audio;
+      if (c != null && c.value.isInitialized && c.value.isPlaying) c.pause();
+    }
+  }
+
+  @override
   void didUpdateWidget(IllustratedVideoPlayer old) {
     super.didUpdateWidget(old);
     if (old.video.audioUrl != widget.video.audioUrl) {
+      _sounding = false;
+      _focus.release(this);
       _audio?.dispose();
       _audio = null;
       _failed = false;
@@ -115,6 +135,7 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
 
   @override
   void dispose() {
+    _focus.release(this);
     _ticker.dispose();
     _audio?.dispose();
     super.dispose();
@@ -136,6 +157,17 @@ class _IllustratedVideoPlayerState extends ConsumerState<IllustratedVideoPlayer>
     final c = _audio;
     if (c == null || !mounted) return;
     final v = c.value;
+    if (v.isPlaying != _sounding) {
+      _sounding = v.isPlaying;
+      if (_sounding) {
+        _focus.claim(this, () {
+          final a = _audio;
+          if (a != null && a.value.isPlaying) a.pause();
+        });
+      } else {
+        _focus.release(this);
+      }
+    }
     if (!v.isPlaying) {
       _since
         ..stop()

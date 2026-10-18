@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AIChart } from "@/components/AIChart";
 import { CitedText } from "@/components/CitedText";
+import { claimPlayback } from "@/components/ExplainerVideo";
 import { ErrorNote, Loading, RequireAuth } from "@/components/SignInPrompt";
 import { allowanceShare, packPrice, packRate, rateLabel, rateText, recordingFormat, resetLabel, units, walletSummary } from "@/lib/ai";
 import { isApiError } from "@/lib/api";
+import { videoStarted } from "@/lib/media-focus";
 import { useAuth, useHydrated } from "@/lib/auth";
 import type { AIConversation, AIMessage, AIStatus, AIWallet } from "@/lib/types";
 import { useLoad } from "@/lib/use-load";
@@ -490,7 +492,18 @@ function Reply({ message: m, onWallet, onFail }: { message: AIMessage; onWallet:
       ) : null}
       <div className="mt-2 flex flex-wrap items-center gap-3 text-xs text-muted">
         {audioUrl ? (
-          <audio controls autoPlay src={audioUrl} className="h-8 max-w-full" aria-label="Reply read aloud" />
+          <audio
+            controls
+            autoPlay
+            src={audioUrl}
+            className="h-8 max-w-full"
+            aria-label="Reply read aloud"
+            onPlay={(e) => {
+              // One sound at a time: another reply or a video stops, and so does Listen mode.
+              claimPlayback(e.currentTarget);
+              videoStarted();
+            }}
+          />
         ) : (
           <button type="button" className="btn btn-small" onClick={listen} disabled={loadingAudio}>
             {loadingAudio ? "Preparing…" : "Listen"}

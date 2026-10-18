@@ -7,6 +7,7 @@ import '../../api/models.dart';
 import '../../data/providers.dart';
 import '../../data/speaker.dart';
 import 'listen_audio.dart';
+import 'media_focus.dart';
 
 /// The speeds Listen mode offers.
 const kListenSpeeds = [0.8, 1.0, 1.25, 1.5];
@@ -359,6 +360,7 @@ class ListenController extends Notifier<ListenState> {
       return;
     }
     _set(s.copyWith(playing: true));
+    _claimSound();
     if (!_started) {
       await _start(_gen);
     } else if (_output == _Output.audio) {
@@ -488,6 +490,7 @@ class ListenController extends Notifier<ListenState> {
     _sleepTimer?.cancel();
     _sleepTimer = null;
     await _stopOutput();
+    _releaseSound();
     _session.clear();
     state = ListenState(
       speed: state.speed,
@@ -554,6 +557,7 @@ class ListenController extends Notifier<ListenState> {
     await _stopOutput();
     if (gen != _gen) return;
     _started = true;
+    if (state.playing) _claimSound();
     final audio = post.card.audio;
     if (audio != null) {
       final player = _audioOrNull();
@@ -701,6 +705,26 @@ class ListenController extends Notifier<ListenState> {
     unawaited(ref.read(repositoryProvider).recordView(post.card.id));
   }
 
+  // ---- Sound ----
+
+  /// Listen mode is about to make sound: whatever else was (a video, an AI
+  /// reply) pauses, and when something else starts, Listen mode pauses.
+  void _claimSound() {
+    try {
+      ref.read(mediaFocusProvider).claim(this, () => unawaited(pause()));
+    } catch (_) {
+      // Disposed.
+    }
+  }
+
+  void _releaseSound() {
+    try {
+      ref.read(mediaFocusProvider).release(this);
+    } catch (_) {
+      // Disposed.
+    }
+  }
+
   // ---- Outputs ----
 
   Future<void> _stopOutput() async {
@@ -791,7 +815,9 @@ class ListenController extends Notifier<ListenState> {
     _voiceTicker = null;
     final id = _voiceId;
     _voiceId = null;
-    if (id != null && _speaker?.speakingId == id) await _speaker!.stop();
+    // Stopped even if it hasn't started speaking yet, so a card that was
+    // still starting up can't go on reading over the next one.
+    if (id != null) await _speaker?.stop();
   }
 
   void _onSpeaker() {
