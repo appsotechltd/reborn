@@ -6,6 +6,7 @@ import '../../api/api_client.dart';
 import '../../api/models.dart';
 import '../../theme.dart';
 import '../listen/listen_controller.dart';
+import '../listen/media_focus.dart';
 import 'full_screen_video.dart';
 import 'video_autoplay.dart';
 
@@ -84,6 +85,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   @override
   void initState() {
     super.initState();
+    _focus = ref.read(mediaFocusProvider);
     ref.listenManual(listenProvider.select((s) => s.playing), (was, now) {
       _listening = now;
       if (was == null || !mounted) return;
@@ -122,6 +124,11 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     }
     // Paused when its route or tab is hidden.
     _tickerOn = TickerMode.valuesOf(context).enabled;
+    if (!_tickerOn && !_autoplay && !_fullScreen) {
+      // A card's own page went under another one: its sound stops too.
+      final c = _controller;
+      if (c != null && c.value.isInitialized && c.value.isPlaying) c.pause();
+    }
     _scheduleSync();
   }
 
@@ -141,8 +148,41 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   @override
   void dispose() {
     _detach();
+    _focus.release(this);
     _controller?.dispose();
     super.dispose();
+  }
+
+  late final MediaFocus _focus;
+
+  /// Playing with sound: nothing else makes sound meanwhile (see
+  /// [MediaFocus]). Muted feed videos make none, so don't claim it.
+  void _followSound(VideoPlayerController c) {
+    final v = c.value;
+    final sounding = v.isPlaying && v.volume > 0;
+    if (sounding == _sounding) return;
+    _sounding = sounding;
+    if (sounding) {
+      _focus.claim(this, _yieldSound);
+    } else {
+      _focus.release(this);
+    }
+  }
+
+  /// Last seen playing with sound (claims only when it starts).
+  bool _sounding = false;
+
+  /// Something else started making sound: the feed's video goes back to
+  /// muted (the feed's sound turns off), any other pauses. A feed video the
+  /// feed has already moved on from is being paused by the feed itself.
+  void _yieldSound() {
+    if (!mounted) return;
+    if (_autoplay && !_fullScreen) {
+      if (_scope!.playing == widget.autoplayId) _scope!.setMuted(true);
+      return;
+    }
+    final c = _controller;
+    if (c != null && c.value.isInitialized && c.value.isPlaying) c.pause();
   }
 
   void _detach() {
@@ -152,6 +192,8 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   }
 
   void _reset() {
+    _sounding = false;
+    _focus.release(this);
     _controller?.dispose();
     _controller = null;
     _failed = false;
@@ -225,6 +267,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
   void _onTick() {
     final c = _controller;
     if (c == null || !mounted) return;
+    _followSound(c);
     // Rebuild on play/pause and at the end so the overlay follows.
     final v = c.value;
     if (v.isPlaying != _wasPlaying || v.isCompleted) {
@@ -304,6 +347,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
       if (c.value.isCompleted) await tall.seekTo(Duration.zero);
     }
     await film.setVolume(1);
+    if (tall != null) _focus.claim(tall, () => tall.pause());
     if (!film.value.isPlaying) {
       if (film.value.isCompleted) await film.seekTo(Duration.zero);
       await film.play();
@@ -319,6 +363,7 @@ class _ExplainerPlayerState extends ConsumerState<ExplainerPlayer> {
     if (tall != null) {
       final at = tall.value.position;
       final wasPlaying = tall.value.isPlaying;
+      _focus.release(tall);
       await tall.dispose();
       if (_controller == c && c.value.isInitialized) {
         await c.seekTo(at);

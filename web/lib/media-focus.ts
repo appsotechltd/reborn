@@ -1,7 +1,7 @@
 /**
- * Listen mode and explainer videos never talk over each other: while Listen mode plays, videos
- * on the page are paused (and feed videos don't start by themselves), and when the reader starts
- * a video, Listen mode pauses.
+ * Listen mode, videos and AI replies read aloud never talk over each other: while Listen mode
+ * plays, everything else on the page is paused (and feed videos don't start by themselves), and
+ * when the reader starts a video or a reply, Listen mode pauses.
  */
 
 let listening = false;
@@ -11,8 +11,9 @@ const videoListeners = new Set<() => void>();
 export function setListeningPlaying(on: boolean) {
   listening = on;
   if (!on || typeof document === "undefined") return;
-  // Illustrated videos play their narration in an <audio data-video-audio>.
-  document.querySelectorAll<HTMLMediaElement>("video, audio[data-video-audio]").forEach((v) => {
+  // Every <video> and <audio> on the page: explainers, illustrated videos' narration, AI replies read aloud.
+  // Listen mode's own player isn't in the page.
+  document.querySelectorAll<HTMLMediaElement>("video, audio").forEach((v) => {
     if (!v.paused) v.pause();
   });
 }

@@ -81,6 +81,18 @@ describe("feed video autoplay", () => {
     off();
   });
 
+  it("Listen mode starting pauses any sound on the page, such as an AI reply read aloud", async () => {
+    render(<audio aria-label="Reply read aloud" src="/reply.mp3" />);
+    const reply = screen.getByLabelText("Reply read aloud") as HTMLAudioElement;
+    await act(async () => {
+      await reply.play();
+    });
+    expect(reply.paused).toBe(false);
+    setListeningPlaying(true);
+    expect(reply.paused).toBe(true);
+    setListeningPlaying(false);
+  });
+
   it("plays muted once 60% is on screen and pauses when it scrolls away", async () => {
     render(<CardView card={card(1)} feed />);
     const v = videoOf(1);

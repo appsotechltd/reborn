@@ -14,6 +14,7 @@ import '../ask/citations.dart';
 import '../card/explainer_player.dart';
 import '../gifts/gift_service.dart';
 import '../gifts/gift_store.dart';
+import '../listen/media_focus.dart';
 import 'ai_chart.dart';
 import 'ai_controller.dart';
 import 'topup_service.dart';
@@ -188,9 +189,23 @@ class _ChatState extends ConsumerState<_Chat> {
   Timer? _limit;
   VideoPlayerController? _player;
   String? _playing;
+  late final MediaFocus _focus;
+
+  /// A reply read aloud is the only sound playing (see [MediaFocus]).
+  void _claimSound() => _focus.claim(this, () {
+    final p = _player;
+    if (p != null && p.value.isPlaying) p.pause();
+  });
+
+  @override
+  void initState() {
+    super.initState();
+    _focus = ref.read(mediaFocusProvider);
+  }
 
   @override
   void dispose() {
+    _focus.release(this);
     _input.dispose();
     _scroll.dispose();
     _limit?.cancel();
@@ -245,7 +260,12 @@ class _ChatState extends ConsumerState<_Chat> {
   Future<void> _listen(AIMessage m) async {
     if (_playing == m.id && _player != null) {
       final p = _player!;
-      p.value.isPlaying ? await p.pause() : await p.play();
+      if (p.value.isPlaying) {
+        await p.pause();
+      } else {
+        _claimSound();
+        await p.play();
+      }
       setState(() {});
       return;
     }
@@ -262,6 +282,8 @@ class _ChatState extends ConsumerState<_Chat> {
     });
     try {
       await p.initialize();
+      if (!mounted || _player != p) return;
+      _claimSound();
       await p.play();
     } catch (_) {
       if (mounted) {

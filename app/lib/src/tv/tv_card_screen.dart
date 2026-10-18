@@ -11,6 +11,7 @@ import '../api/models.dart';
 import '../data/providers.dart';
 import '../features/card/card_view.dart';
 import '../features/card/explainer_player.dart';
+import '../features/listen/media_focus.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
 import 'tv_mode.dart';
@@ -234,10 +235,18 @@ class TvVideoScreen extends ConsumerStatefulWidget {
 class _TvVideoScreenState extends ConsumerState<TvVideoScreen> {
   VideoPlayerController? _controller;
   bool _failed = false;
+  late final MediaFocus _focus;
+
+  /// The film is the only sound playing (see [MediaFocus]).
+  void _claimSound() => _focus.claim(this, () {
+    final c = _controller;
+    if (c != null && c.value.isPlaying) c.pause();
+  });
 
   @override
   void initState() {
     super.initState();
+    _focus = ref.read(mediaFocusProvider);
     final video = widget.card.explainer;
     if (video == null) return;
     final c = ref.read(videoControllerFactoryProvider)(
@@ -249,6 +258,7 @@ class _TvVideoScreenState extends ConsumerState<TvVideoScreen> {
         .initialize()
         .then((_) async {
           if (!mounted) return;
+          _claimSound();
           await c.play();
           if (mounted) setState(() {});
         })
@@ -268,6 +278,7 @@ class _TvVideoScreenState extends ConsumerState<TvVideoScreen> {
 
   @override
   void dispose() {
+    _focus.release(this);
     _controller?.removeListener(_onTick);
     _controller?.dispose();
     super.dispose();
@@ -280,6 +291,7 @@ class _TvVideoScreenState extends ConsumerState<TvVideoScreen> {
       c.pause();
     } else {
       if (c.value.isCompleted) c.seekTo(Duration.zero);
+      _claimSound();
       c.play();
     }
     setState(() {});
