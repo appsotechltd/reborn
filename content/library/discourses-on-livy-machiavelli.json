@@ -1,0 +1,1222 @@
+{
+  "source": {
+    "id": "discourses-on-livy-machiavelli",
+    "title": "Discourses on Livy",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "translator": "Ninian Hill Thomson",
+    "kind": "book",
+    "url": "https://standardebooks.org/ebooks/niccolo-machiavelli/discourses-on-livy/ninian-hill-thomson",
+    "attribution": "Niccolò Machiavelli, Discourses on Livy (trans. Ninian Hill Thomson), Standard Ebooks, public domain",
+    "year": 1531,
+    "notes": "Cards draw on the book's lessons about teams, fairness, decisions, change and leadership; its advice on conspiracy, deceit and violence is deliberately left out.",
+    "publisher": "Standard Ebooks",
+    "licence": "public-domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "language": "en",
+    "retrieved_at": "2026-10-26"
+  },
+  "cards": [
+    {
+      "id": "discourses-on-livy-machiavelli--01",
+      "topic": "leadership",
+      "tags": [
+        "conflict",
+        "teams",
+        "debate"
+      ],
+      "title": "Healthy disagreement can make a group stronger",
+      "body": "Many writers called early Rome a chaotic city, always torn by quarrels between the nobles and the common people. Machiavelli disagreed. He argued that those quarrels were the very thing that produced Rome's best laws and kept it free, because each side had to win the other over.\n\nThe same holds for any team or family. Constant agreement can mean that one voice has quietly taken over. Open, rule-bound disagreement forces ideas to be tested and gives every side a stake in the result. The goal is not to remove tension but to channel it into better decisions.",
+      "quote": "it is in this conflict that all laws favourable to freedom have their origin",
+      "locator": "Book I, IV ¶2",
+      "apply_it": "Think of a recent decision your group made without any pushback. Ask one person who stayed quiet what they would have changed.",
+      "quiz": {
+        "question": "What did Machiavelli say Rome's quarrels between nobles and commons produced?",
+        "options": [
+          "Its eventual collapse",
+          "Its best laws and its freedom",
+          "Endless civil war",
+          "A return to kingship"
+        ],
+        "answer": 1,
+        "explanation": "He argued that the conflict, handled through proper channels, gave rise to the laws that kept Rome free."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--02",
+      "topic": "leadership",
+      "tags": [
+        "complaints",
+        "feedback",
+        "fairness"
+      ],
+      "title": "Give complaints a proper channel, or they will find a worse one",
+      "body": "Machiavelli thought the most useful power a free state could have was a lawful way to accuse someone. When anger against a powerful person has a recognised outlet, it is dealt with calmly and by the rules. When it has none, it builds up and bursts out through factions, plots or violence.\n\nWorkplaces, schools and families work the same way. If people have no safe, official way to raise a problem, they will raise it in corridors, group chats and resignations. A clear route for grievances, taken seriously, is one of the cheapest ways to keep a group stable.",
+      "quote": "for unless an outlet be duly provided for these by the laws, they flow into irregular channels and overwhelm the state.",
+      "locator": "Book I, VII ¶2",
+      "apply_it": "Ask yourself: if someone on your team had a serious complaint about you, how would they raise it? If you don't know, tell them.",
+      "quiz": {
+        "question": "What happens, according to Machiavelli, when anger has no lawful outlet?",
+        "options": [
+          "It fades away on its own",
+          "It flows into irregular channels and causes harm",
+          "It strengthens the state",
+          "It is forgotten within a year"
+        ],
+        "answer": 1,
+        "explanation": "Without a recognised outlet, resentment finds irregular channels such as factions and violence."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--03",
+      "topic": "communication",
+      "tags": [
+        "gossip",
+        "rumours",
+        "accountability"
+      ],
+      "title": "Ask gossip to become a proper complaint, or let it go",
+      "body": "Machiavelli drew a sharp line between an accusation and a slander. An accusation is made in front of a court with evidence and can be answered. A slander needs no proof and is spread in the street, so anyone can be ruined by it. Florence, he said, suffered endless feuds because it had no good way to turn whispers into charges that could be tested.\n\nWhen you hear a damaging story about someone, ask the person telling it whether they will raise it openly with evidence. If they will, it can be dealt with fairly. If they won't, it probably shouldn't be repeated.",
+      "quote": "it is before the magistrates, the people, or the courts of justice that men are impeached; but in the streets and market places that they are calumniated.",
+      "locator": "Book I, VIII ¶2",
+      "apply_it": "Next time someone shares a negative rumour, ask: 'Have you raised this with them directly?' Then decide whether to pass it on.",
+      "quiz": {
+        "question": "What did Machiavelli say distinguishes slander from a proper accusation?",
+        "options": [
+          "Slander is always true",
+          "Slander needs no witness or proof",
+          "Accusations are made in secret",
+          "There is no real difference"
+        ],
+        "answer": 1,
+        "explanation": "Calumny needs neither witness nor proof, while an accusation must be made openly with evidence."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--04",
+      "topic": "leadership",
+      "tags": [
+        "fairness",
+        "accountability",
+        "rules"
+      ],
+      "title": "Past achievements don't cancel present wrongs",
+      "body": "Horatius saved Rome in battle and then killed his own sister. Rome put him on trial, and Machiavelli thought the people were wrong to acquit him. A well-run state, he said, rewards good deeds and punishes bad ones separately, and never lets one cancel out the other.\n\nIf star performers learn that their past results will excuse anything, they soon behave as if the rules don't apply to them. Thank people fully for what they did well, and hold them to the same standards as everyone else. Mixing the two ledgers breeds arrogance in the stars and resentment in everyone else.",
+      "quote": "no well-ordered state ever strikes a balance between the services of its citizens and their misdeeds",
+      "locator": "Book I, XXIV ¶1",
+      "apply_it": "Is there someone whose results have made you overlook their behaviour? Plan one honest conversation that keeps praise and correction separate.",
+      "quiz": {
+        "question": "What did Machiavelli think Rome should have done with Horatius?",
+        "options": [
+          "Pardoned him because of his victory",
+          "Rewarded the victory and still punished the crime",
+          "Exiled his family",
+          "Made him a consul"
+        ],
+        "answer": 1,
+        "explanation": "Good states reward good deeds and punish bad ones without letting one offset the other."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--05",
+      "topic": "leadership",
+      "tags": [
+        "recognition",
+        "motivation",
+        "rewards"
+      ],
+      "title": "A small reward for real effort still means a great deal",
+      "body": "Rome was often poor, yet it never failed to reward people who served it well. Horatius Cocles, who held the bridge against an army, received only a modest plot of land. Machiavelli's point is that the size of the gift matters far less than the fact that it is given.\n\nLeaders sometimes skip recognition because they can't offer a big bonus or promotion. That is a mistake. A sincere thank-you, a handwritten note or a small token tied to a specific contribution is remembered for years. What hurts is silence after real effort.",
+      "quote": "a gift, however small, bestowed as a reward for services however great, will always be esteemed most honourable and precious by him who receives it.",
+      "locator": "Book I, XXIV ¶2",
+      "apply_it": "Pick one person whose recent effort went unrecognised. Thank them today for something specific they did.",
+      "quiz": {
+        "question": "According to Machiavelli, what should a poor republic do about rewarding great service?",
+        "options": [
+          "Wait until it can afford a large reward",
+          "Give whatever small reward it can",
+          "Offer only praise in public",
+          "Rewards are unnecessary in a republic"
+        ],
+        "answer": 1,
+        "explanation": "Even a small gift for great service is treasured, so a poor state should not withhold the little it has."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--06",
+      "topic": "leadership",
+      "tags": [
+        "change-management",
+        "reform",
+        "tradition"
+      ],
+      "title": "Keep familiar forms when you change the substance",
+      "body": "When Rome replaced its king with two consuls, it gave the consuls the same number of attendants the king had had. It even kept a priest called the 'sacrificial king' so that an old ritual would not disappear. People accepted a deep change because the outward signs felt familiar.\n\nMachiavelli concluded that anyone reforming an institution should keep at least the look of the old ways. In practice, that might mean keeping a team's name, its weekly rhythm or a cherished ritual while you redesign how the work is done. Familiar anchors make real change far easier to accept.",
+      "quote": "the mass of mankind accept what seems as what is; nay, are often touched more nearly by appearances than by realities.",
+      "locator": "Book I, XXV ¶1",
+      "apply_it": "If you are planning a change, list two familiar habits or rituals you can keep so people feel continuity.",
+      "quiz": {
+        "question": "How did Rome make the switch from kings to consuls easier to accept?",
+        "options": [
+          "By abolishing all old ceremonies",
+          "By keeping familiar outward forms such as the number of attendants",
+          "By holding a public vote on every detail",
+          "By hiding the change from the people"
+        ],
+        "answer": 1,
+        "explanation": "Rome kept the twelve lictors and a 'sacrificial king' so the new order felt continuous with the old."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--07",
+      "topic": "relationships",
+      "tags": [
+        "generosity",
+        "trust",
+        "foresight"
+      ],
+      "title": "Be generous before you need help, not when you are desperate",
+      "body": "When an enemy threatened Rome, the senate suddenly cut taxes to keep the people loyal, and it worked. Machiavelli warned against copying this. Generosity offered only in a crisis looks like fear, not goodwill. People thank the danger, not you, and expect you to take the favour back once it passes.\n\nThe lesson applies to friendships, teams and customers alike. Treat people well in ordinary times, as you would want to be treated if you were struggling. Then, when hard times come, the goodwill is already there and nobody doubts that it is real.",
+      "quote": "believes that after the event and when danger is upon him he will be able to win men over by benefits, deceives himself",
+      "locator": "Book I, XXXII ¶1",
+      "apply_it": "Who would you turn to in a crisis? Do one generous thing for them this week, with no request attached.",
+      "quiz": {
+        "question": "Why did Machiavelli say kindness offered only in a crisis often fails?",
+        "options": [
+          "People credit the danger, not the giver, and expect it to be withdrawn",
+          "Crises make people ungrateful by nature",
+          "Generosity is always a mistake",
+          "Only money works in a crisis"
+        ],
+        "answer": 0,
+        "explanation": "People think they owe thanks to the threat that forced the favour, and fear it will be taken back later."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--08",
+      "topic": "productivity",
+      "tags": [
+        "problems",
+        "judgement",
+        "patience"
+      ],
+      "title": "When a problem has grown large, don't attack it blindly",
+      "body": "Machiavelli observed that by the time a danger has grown big enough to alarm everyone, a frontal attack on it often makes it worse. Florence's leaders tried to crush the rising Cosimo de' Medici and only strengthened him. Sometimes, he said, it is wiser to buy time, study the problem closely, and act only when you are sure you can fix it.\n\nThis isn't an excuse to ignore issues. It's a warning against panicked overreaction. Before you confront a large, tangled problem, understand its causes and your real strength. A rushed fix can feed the very thing you meant to stop.",
+      "quote": "lest he help where he would hinder, retard when he would advance, and drown the plant he thinks to water.",
+      "locator": "Book I, XXXIII ¶4",
+      "apply_it": "Pick one big problem you feel pressure to tackle now. Write down its causes and what success would need before you act.",
+      "quiz": {
+        "question": "What did Machiavelli advise when a problem has already grown large and alarming?",
+        "options": [
+          "Attack it at once with full force",
+          "Study it carefully and avoid a rash attack that could feed it",
+          "Ignore it permanently",
+          "Hand it to a rival"
+        ],
+        "answer": 1,
+        "explanation": "He warned that rash force can strengthen a large problem; study it and act only when you can really cure it."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--09",
+      "topic": "personal-development",
+      "tags": [
+        "humility",
+        "ego",
+        "teamwork"
+      ],
+      "title": "Don't be too proud to take a smaller role",
+      "body": "In Rome, a man who had been consul one year might serve as an ordinary officer the next, taking orders from someone he once commanded. Machiavelli admired this. He contrasted it with Venice, where a former high official felt disgraced by a lesser post and was allowed to refuse it.\n\nRome gained from this habit, because experienced people stayed in the work and kept new leaders honest. Being willing to step back into a supporting role, to mentor or to serve under someone else is a strength. It keeps your skills in use and shows that you care about the result more than the title.",
+      "quote": "they never esteemed it a dishonour to obey one whom before they had commanded, or to find themselves serving in the ranks of an army which once they had led.",
+      "locator": "Book I, XXXVI ¶1",
+      "apply_it": "Offer to help on a project led by someone more junior than you, and follow their lead.",
+      "quiz": {
+        "question": "What Roman habit did Machiavelli praise in this chapter?",
+        "options": [
+          "Former consuls refusing lower posts",
+          "Former leaders willingly serving under others",
+          "Appointing consuls for life",
+          "Banning former consuls from the army"
+        ],
+        "answer": 1,
+        "explanation": "Romans did not think it shameful to obey someone they had once commanded, and the state benefited from their experience."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--10",
+      "topic": "leadership",
+      "tags": [
+        "integrity",
+        "rules",
+        "example"
+      ],
+      "title": "Follow the rules you make",
+      "body": "After Florence passed a law, championed by Savonarola, giving citizens a right of appeal, five men were condemned and the appeal was denied. Machiavelli said nothing did more to destroy Savonarola's credibility. Either the law was good and should have been kept, or it was bad and should never have been passed.\n\nThe same is true for parents, managers and anyone who sets a standard. Breaking your own rule, especially soon after making it, tells everyone the rule was never meant for you. If a rule no longer makes sense, change it openly instead of ignoring it.",
+      "quote": "nothing, I think, is of worse example in a republic, than to make a law and not to keep it; and most of all, when he who breaks is he that made it.",
+      "locator": "Book I, XLV ¶1",
+      "apply_it": "Name one rule you've set for others that you sometimes skip. Either follow it this week or openly change it.",
+      "quiz": {
+        "question": "According to Machiavelli, when is breaking a law most damaging?",
+        "options": [
+          "When it is an old law",
+          "When the person who made it breaks it",
+          "When nobody notices",
+          "When it concerns money"
+        ],
+        "answer": 1,
+        "explanation": "He said nothing sets a worse example than making a law and not keeping it, above all by the lawmaker."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--11",
+      "topic": "leadership",
+      "tags": [
+        "psychological-safety",
+        "fear",
+        "punishment"
+      ],
+      "title": "Don't keep people waiting for the next punishment",
+      "body": "After the decemvirs fell, Rome kept prosecuting one former official after another, until the whole nobility feared it would never end. A tribune finally banned new accusations for a year, and calm returned. Machiavelli concluded that a government does great harm when it keeps people in constant suspense about who will be targeted next.\n\nIn a team or family, repeated rounds of blame after a failure can paralyse everyone. Deal with what needs dealing with, clearly and once, then draw a line and let people know they are safe to get back to work.",
+      "quote": "Another thing which greatly hurts a government is to keep alive bitter feelings in men’s minds by often renewed attacks on individuals",
+      "locator": "Book I, XLV ¶3",
+      "apply_it": "After your next setback, settle the consequences in one conversation, then tell people explicitly that the matter is closed.",
+      "quiz": {
+        "question": "How did Rome end the fear caused by repeated prosecutions?",
+        "options": [
+          "By punishing everyone at once",
+          "By banning new accusations for a year",
+          "By appointing a dictator",
+          "By abolishing the senate"
+        ],
+        "answer": 1,
+        "explanation": "The tribune Marcus Duilius forbade accusations for a year, which reassured the nobles."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--12",
+      "topic": "learning",
+      "tags": [
+        "judgement",
+        "abstraction",
+        "decision-making"
+      ],
+      "title": "People misjudge in general but see clearly in specifics",
+      "body": "In Capua, the people hated their senate and wanted every senator killed. Their magistrate agreed, on one condition: each must be replaced as soon as he was named. As the people tried to choose actual replacements, they found no one better, and gave up the idea.\n\nMachiavelli drew a wider lesson. People reason badly about vague generalities but judge well once they face concrete cases. When a debate is stuck on slogans like 'management is useless' or 'we need change', move it to particulars: who exactly, what exactly, and what would replace it.",
+      "quote": "A people therefore is apt to err in judging of things and their accidents in the abstract, but on becoming acquainted with particulars, speedily discovers its mistakes.",
+      "locator": "Book I, XLVII ¶4",
+      "apply_it": "Take one sweeping complaint you hear often. Ask, 'Can you give me a specific example, and what would you do instead?'",
+      "quiz": {
+        "question": "How did the magistrate of Capua change the people's minds?",
+        "options": [
+          "By threatening them",
+          "By making them name concrete replacements for each senator",
+          "By bribing their leaders",
+          "By calling in the Romans"
+        ],
+        "answer": 1,
+        "explanation": "Faced with choosing actual replacements, the people saw that their general hatred did not survive the particulars."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--13",
+      "topic": "communication",
+      "tags": [
+        "goodwill",
+        "framing",
+        "necessity"
+      ],
+      "title": "Do what you must with good grace",
+      "body": "Rome eventually had to pay its soldiers, because unpaid citizens could not fight long campaigns. The senate could have done it grudgingly. Instead it presented the pay as a generous gift and set the heaviest new taxes on the nobles, and the people celebrated.\n\nMachiavelli's point is that even when you have no choice, how you act still matters. A necessary change offered warmly and fairly earns goodwill; the same change dragged out of you earns none. When you must do something anyway, do it promptly, explain it kindly and share the burden fairly.",
+      "quote": "In all their actions, even in those which are matters of necessity rather than choice, prudent men will endeavour so to conduct themselves as to conciliate goodwill.",
+      "locator": "Book I, LI ¶1",
+      "apply_it": "Think of something you have to do anyway this week. Decide how to do it in a way that earns thanks rather than grudging acceptance.",
+      "quiz": {
+        "question": "How did the Roman senate turn the necessity of paying soldiers into goodwill?",
+        "options": [
+          "By hiding the new taxes",
+          "By offering it as a gift and placing the heaviest taxes on the nobles",
+          "By delaying it for years",
+          "By paying only the officers"
+        ],
+        "answer": 1,
+        "explanation": "The senate presented the pay generously and shared the cost fairly, so the people were grateful."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--14",
+      "topic": "psychology",
+      "tags": [
+        "persuasion",
+        "risk",
+        "decision-making"
+      ],
+      "title": "Bold-sounding plans are easy to sell, even when they're bad",
+      "body": "Machiavelli noticed that crowds readily back proposals that promise gain or sound brave, even when ruin lies behind them. They resist proposals that look cautious or like a loss, even when safety depends on them. Fabius Maximus was mocked for his patient strategy against Hannibal, while rash promises won applause.\n\nYou can see the same bias in yourself: the exciting option feels right and the careful one feels weak. When a plan thrills you, look hard at what could go wrong. When a plan disappoints you, ask whether it is actually the safer one.",
+      "quote": "it will always be difficult to persuade the adoption of such courses as wear the appearance of disgrace or loss, even though safety and advantage be bound up with them.",
+      "locator": "Book I, LIII ¶3",
+      "apply_it": "For your next big choice, write down the strongest case for the option that feels least exciting.",
+      "quiz": {
+        "question": "Which proposals did Machiavelli say people find hardest to accept?",
+        "options": [
+          "Those that promise quick gain",
+          "Those that look like a loss even when they are safer",
+          "Those backed by famous leaders",
+          "Those that sound brave"
+        ],
+        "answer": 1,
+        "explanation": "Courses that wear the appearance of loss are hard to sell, even when safety depends on them."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--15",
+      "topic": "leadership",
+      "tags": [
+        "teams",
+        "organisation",
+        "representation"
+      ],
+      "title": "A group with no one to speak for it is weaker than it looks",
+      "body": "When the Roman commons withdrew in protest, the senate asked why, and nobody answered. Livy notes this was not because they had nothing to say but because they had no one to say it for them. Machiavelli added that crowds are bold together but quickly fall apart once each person starts thinking of his own risk.\n\nAny team, club or campaign needs someone who can speak for it, hold it together and negotiate. Shared anger or enthusiasm isn't enough. Choose your spokesperson early, before pressure arrives and everyone starts looking out only for themselves.",
+      "quote": "a multitude is strong while it holds together, but so soon as each of those who compose it begins to think of his own private danger, it becomes weak and contemptible.",
+      "locator": "Book I, LVII ¶1",
+      "apply_it": "If you belong to a group pushing for something, agree today on who will speak for it and how decisions get made.",
+      "quiz": {
+        "question": "What did the Roman commons do to fix their lack of a voice?",
+        "options": [
+          "They dissolved",
+          "They appointed tribunes from among themselves",
+          "They asked the senate to choose for them",
+          "They followed the consuls"
+        ],
+        "answer": 1,
+        "explanation": "They created twenty military tribunes to speak and negotiate for them."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--16",
+      "topic": "learning",
+      "tags": [
+        "wisdom-of-crowds",
+        "judgement",
+        "decision-making"
+      ],
+      "title": "Groups with good rules often judge better than one powerful person",
+      "body": "Historians loved to call the masses fickle. Machiavelli argued the opposite: a people bound by laws is usually more stable and wiser than a prince freed from them. Rome's citizens, he noted, made very few appointments they regretted in hundreds of years of elections.\n\nHe added that when people hear two equally able speakers argue opposite sides, they seldom fail to pick the sounder view. Give a group good information and a fair process, and its judgement can beat that of any single expert or boss, including you.",
+      "quote": "seldom find that after hearing two speakers of equal ability urging them in opposite directions, they do not adopt the sounder view",
+      "locator": "Book I, LVIII ¶6",
+      "apply_it": "On your next important decision, have two people argue opposite sides in front of the group before anyone votes.",
+      "quiz": {
+        "question": "What did Machiavelli claim about a people restrained by laws compared with an unrestrained prince?",
+        "options": [
+          "The people are more fickle",
+          "The people are more prudent and stable",
+          "They are exactly the same in every case",
+          "Princes are always wiser"
+        ],
+        "answer": 1,
+        "explanation": "He argued that a people under laws shows as much prudence as a prince, or more, and is more stable."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--17",
+      "topic": "leadership",
+      "tags": [
+        "accountability",
+        "power",
+        "checks"
+      ],
+      "title": "Anyone with power and no checks will make the mistakes of a mob",
+      "body": "Writers blamed crowds for being fickle and cruel. Machiavelli replied that princes who escape the law behave just as badly, or worse. The difference is not in human nature but in whether people are held to rules.\n\nThis cuts both ways for anyone in charge. You may trust your own judgement, but without someone able to question you, review your decisions or say no, you will drift into the same errors you criticise in others. Building checks on yourself is not a weakness; it is how good judgement stays good.",
+      "quote": "all who are not controlled by the laws, will commit the very same faults as are committed by an uncontrolled multitude.",
+      "locator": "Book I, LVIII ¶2",
+      "apply_it": "Name one decision you make alone. Ask someone you trust to review it and tell you honestly if they would do it differently.",
+      "quiz": {
+        "question": "According to Machiavelli, what really separates good and bad conduct in rulers and peoples?",
+        "options": [
+          "Noble birth",
+          "Whether they are restrained by laws",
+          "Their level of education",
+          "Their wealth"
+        ],
+        "answer": 1,
+        "explanation": "He said the difference comes from their respect for the laws, not from their nature."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--18",
+      "topic": "business",
+      "tags": [
+        "hiring",
+        "merit",
+        "age"
+      ],
+      "title": "Judge people by what they can do, not by their age",
+      "body": "Once the consulship was opened to all citizens, Rome gave it without regard to age. Valerius Corvinus became consul at twenty-three or twenty-four and called the office 'the reward not of birth but of desert'. Machiavelli praised Rome for looking for excellence wherever it appeared.\n\nWorkplaces still lean on age and seniority as shortcuts, passing over a capable young person or quietly writing off an experienced older one. Both waste talent. When filling a role, ask what the work needs and who can do it best, then let the answer surprise you.",
+      "quote": "whose constant aim it was to discover excellence whether existing in old or young.",
+      "locator": "Book I, LX ¶1",
+      "apply_it": "Think of a task you'd normally give to someone senior. Consider who would do it best regardless of age.",
+      "quiz": {
+        "question": "What did Valerius Corvinus say the consulship was a reward for?",
+        "options": [
+          "Birth",
+          "Age",
+          "Desert, or merit",
+          "Wealth"
+        ],
+        "answer": 2,
+        "explanation": "He called it 'the reward not of birth but of desert'."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--19",
+      "topic": "leadership",
+      "tags": [
+        "promises",
+        "motivation",
+        "trust"
+      ],
+      "title": "Don't hold out rewards you won't deliver",
+      "body": "To get the common people to bear the hardships of war, Rome had to give them hope of reaching the highest offices. For a while, hope alone was enough. Later, it had to be honoured with real appointments, or the people would have turned against the state.\n\nMachiavelli's warning is simple. You can ask people to work hard by promising something, but once you've raised that hope, taking it away is dangerous. Be careful what you dangle in front of a team or child, and if you promise a reward, plan to deliver it.",
+      "quote": "you cannot subject men to hardships unless you hold out rewards, nor can you without danger deprive them of those rewards whereof you have held out hopes.",
+      "locator": "Book I, LX ¶2",
+      "apply_it": "List any promises you've made to motivate others. Check that you can actually keep each one, and say so if you can't.",
+      "quiz": {
+        "question": "What did Machiavelli say is dangerous once you have held out hope of a reward?",
+        "options": [
+          "Delivering it too early",
+          "Taking it away",
+          "Mentioning it in public",
+          "Offering it to everyone"
+        ],
+        "answer": 1,
+        "explanation": "You cannot safely deprive people of rewards you have given them reason to expect."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--20",
+      "topic": "psychology",
+      "tags": [
+        "nostalgia",
+        "bias",
+        "perspective"
+      ],
+      "title": "The good old days were never quite that good",
+      "body": "Machiavelli noticed that people always praise the past and blame the present, and that the old praise the days of their youth. One reason is that we see the past only in summary, with its failures forgotten and its glories polished by writers. The present we see in full, flaws and all.\n\nThis bias makes it easy to undervalue where you are now: your current job, team, town or relationship. Before deciding that things were better before, ask whether you are comparing a highlights reel with real life.",
+      "quote": "Men do always, but not always with reason, commend the past and condemn the present",
+      "locator": "Book II, Preface ¶1",
+      "apply_it": "Write down three things that are genuinely better in your life now than five years ago.",
+      "quiz": {
+        "question": "Why, according to Machiavelli, do people overrate the past?",
+        "options": [
+          "The past really was better",
+          "Its faults are hidden from us while its glories are magnified",
+          "Old people have better memories",
+          "Historians always criticise the past"
+        ],
+        "answer": 1,
+        "explanation": "We see the past incompletely, with what detracts from it hidden and what flatters it embellished."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--21",
+      "topic": "relationships",
+      "tags": [
+        "conflict",
+        "lawsuits",
+        "foresight"
+      ],
+      "title": "It's easy to start a fight and hard to end one",
+      "body": "Machiavelli opened his chapter on war with a plain observation: anyone can begin a war when he likes, but no one can end it when he likes. So before starting one, you should measure your real strength honestly.\n\nThe same applies to a lawsuit, a public feud, a family rift or a price war with a competitor. Starting feels like taking control, but once the other side responds, the conflict runs on its own logic and its own timetable. Before you escalate, ask how it could end and whether you can afford the long version.",
+      "quote": "any man may begin a war at his pleasure, but cannot at his pleasure bring it to a close",
+      "locator": "Book II, X ¶1",
+      "apply_it": "Before you send that sharp message or start that dispute, write down how you expect it to end and what it could cost if it drags on.",
+      "quiz": {
+        "question": "What did Machiavelli say about starting and ending a war?",
+        "options": [
+          "Both are equally easy",
+          "Anyone can start one, but no one can end it at will",
+          "Ending is easier than starting",
+          "Only kings can start wars"
+        ],
+        "answer": 1,
+        "explanation": "A war can be begun at pleasure but not brought to a close at pleasure."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--22",
+      "topic": "money",
+      "tags": [
+        "strength",
+        "people",
+        "resources"
+      ],
+      "title": "Money is not the same as strength",
+      "body": "A popular saying held that money is the sinews of war. Machiavelli called it the falsest of opinions. Gold, a good position and public goodwill can add to your strength, but they are not strength itself. He recalled Solon telling the rich king Croesus that war is made with iron, not gold, and a man with more iron could take all his gold.\n\nIn business and life, cash buys time and options, but it cannot replace capable, committed people. A rich organisation with weak teams is a target. Invest in the skills and loyalty that actually get things done.",
+      "quote": "nothing can be falser than the vulgar opinion which affirms it to be the sinews of war.",
+      "locator": "Book II, X ¶2",
+      "apply_it": "If you lost your savings tomorrow, what skills and relationships would you still have? Invest in one of them this week.",
+      "quiz": {
+        "question": "What did Solon tell Croesus about his treasure?",
+        "options": [
+          "It made him unbeatable",
+          "War is made with iron, not gold",
+          "He should spend it on festivals",
+          "It would last forever"
+        ],
+        "answer": 1,
+        "explanation": "Solon said someone with more iron could carry off his gold, so riches alone did not make him powerful."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--23",
+      "topic": "relationships",
+      "tags": [
+        "boundaries",
+        "assertiveness",
+        "bullying"
+      ],
+      "title": "Giving in to someone who bullies you invites more demands",
+      "body": "Rome tried to avoid offending the hostile Latins by letting them do as they pleased. It only made them bolder. Machiavelli concluded that humility does nothing to soften people who already resent you, and that concessions made out of fear rarely buy peace.\n\nIf you yield simply to escape a confrontation, the other person learns that pressure works and will come back for more, while your friends start to doubt you. This doesn't mean being harsh. It means deciding what you will and won't accept, and holding that line calmly.",
+      "quote": "he to whom, out of manifest cowardice you make this concession, will not rest content, but will endeavour to wring further concessions from you",
+      "locator": "Book II, XIV ¶2",
+      "apply_it": "Think of a situation where you keep giving way to avoid conflict. Decide on one clear limit and state it calmly next time.",
+      "quiz": {
+        "question": "What happened when Rome tried not to offend the Latins?",
+        "options": [
+          "The Latins became loyal allies",
+          "The Latins grew bolder and declared war sooner",
+          "The Latins left Italy",
+          "Nothing changed"
+        ],
+        "answer": 1,
+        "explanation": "Rome's attempt to avoid giving offence only increased the Latins' confidence and hostility."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--24",
+      "topic": "productivity",
+      "tags": [
+        "decisions",
+        "timing",
+        "friendship"
+      ],
+      "title": "A late decision helps no one and hurts you",
+      "body": "Machiavelli thought that drifting in doubt was bad, but that deciding too late could be just as bad, especially when a friend needs you. Florence agreed in principle to side with the French king but delayed ratifying it until he had already won. By then their support was worthless and they paid dearly anyway.\n\nWhen someone is waiting on you for an answer, a reference, a yes or a no, delay quietly turns help into harm. If you're going to say yes, say it while it still counts. If it's no, say that quickly too.",
+      "quote": "Not less mischievous than doubtful resolves are those which are late and tardy, especially when they have to be made in behalf of a friend.",
+      "locator": "Book II, XV ¶2",
+      "apply_it": "Find one decision someone is waiting on from you. Give them your answer today.",
+      "quiz": {
+        "question": "What went wrong for Florence with the French king?",
+        "options": [
+          "It refused to deal with him",
+          "It delayed ratifying its agreement until he had already won",
+          "It joined his enemies",
+          "It ratified too early"
+        ],
+        "answer": 1,
+        "explanation": "The Florentines' tardy ratification came when their support no longer helped, so they gained nothing."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--25",
+      "topic": "learning",
+      "tags": [
+        "wishful-thinking",
+        "bias",
+        "experience"
+      ],
+      "title": "We tend to believe whatever we want to believe",
+      "body": "Machiavelli watched many councils make bad decisions. One cause was that able people were often sidelined in calm times. Another was that inexperienced people were easily fooled by appearances. Situations full of misleading signs, he said, let people believe whatever they were already inclined to believe.\n\nWishful thinking is most dangerous when you lack experience in the area. Before acting on a hopeful reading of events, seek out someone who has seen similar situations before and ask what they think could go wrong.",
+      "quote": "being attended by many deceptive appearances such as lead men to believe whatsoever they are minded to believe.",
+      "locator": "Book II, XXII ¶1",
+      "apply_it": "Before your next big bet, ask someone with more experience in that area to poke holes in your reasoning.",
+      "quiz": {
+        "question": "Who did Machiavelli say is most likely to be misled by deceptive appearances?",
+        "options": [
+          "Experienced statesmen",
+          "Those with little experience of affairs",
+          "Soldiers",
+          "Historians"
+        ],
+        "answer": 1,
+        "explanation": "He said those who have little experience of affairs are sure to be misled by deceptive appearances."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--26",
+      "topic": "communication",
+      "tags": [
+        "insults",
+        "conflict",
+        "self-control"
+      ],
+      "title": "Insults weaken you more than your rival",
+      "body": "Machiavelli called holding back from threats and insults one of the wisest precautions anyone can take. A threat only makes your opponent more careful. An insult makes him hate you and think harder about how to hurt you. Neither takes away any of his strength.\n\nHe described the people of a besieged city who mocked the enemy as it was leaving. Stung, the enemy turned back and took the city. Whether it's a rival company, an ex or a colleague you disagree with, sharp words feel satisfying for a moment and cost you for a long time.",
+      "quote": "For abuse and menace take nothing from the strength of an adversary; the latter only making him more cautious, while the former inflames his hatred against you",
+      "locator": "Book II, XXVI ¶1",
+      "apply_it": "Before posting or sending anything critical about someone, cut every word meant to wound rather than to inform.",
+      "quiz": {
+        "question": "Why did Machiavelli advise against threats and insults?",
+        "options": [
+          "They are illegal",
+          "They weaken nothing in the opponent but make him more careful or more hostile",
+          "They always lead to war",
+          "They show too much honesty"
+        ],
+        "answer": 1,
+        "explanation": "Threats make an opponent cautious and insults inflame his hatred, while neither reduces his strength."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--27",
+      "topic": "relationships",
+      "tags": [
+        "forgiveness",
+        "teams",
+        "second-chances"
+      ],
+      "title": "Once a mistake is settled, stop throwing it back at people",
+      "body": "After a mutiny was put down, the Roman general Valerius Corvinus ordered that anyone who taunted those soldiers about it would be severely punished. Tiberius Gracchus did the same when he led an army of freed slaves: no one could mock his men for their origins. The Romans saw that taunts reopen wounds and divide a group.\n\nWhen someone has owned a mistake and made amends, repeated jokes and reminders keep them on the outside. If you want a person to be fully part of a team or family again, protect them from having the past thrown at them.",
+      "quote": "whosoever should thereafter upbraid any soldier of these legions with having taken part in this mutiny, should be visited with the severest punishment.",
+      "locator": "Book II, XXVI ¶4",
+      "apply_it": "If someone near you keeps being teased about an old mistake, step in kindly the next time it happens.",
+      "quiz": {
+        "question": "What did Valerius Corvinus order after putting down a mutiny?",
+        "options": [
+          "The mutineers should be executed",
+          "No one should taunt the soldiers about the mutiny",
+          "The legions should be disbanded",
+          "The mutiny should be celebrated"
+        ],
+        "answer": 1,
+        "explanation": "He made taunting the former mutineers a serious offence so the army could heal."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--28",
+      "topic": "personal-development",
+      "tags": [
+        "greed",
+        "winning",
+        "risk"
+      ],
+      "title": "Know when to bank a win",
+      "body": "After his great victory at Cannae, Hannibal asked Carthage for support. The wise old senator Hanno urged them to use the win to make peace on good terms. Carthage refused, hoping for more, and later lost everything. Machiavelli said false hopes make people overshoot their goal and give up a sure good for an uncertain better.\n\nThe pattern shows up in negotiations, investments and careers. After a success, ask what you actually wanted and whether you have it now. Pushing for more can be right, but only if you've honestly priced what you could lose.",
+      "quote": "cause them to overrun their goal, and to miss opportunities for securing a certain good, on the chance of obtaining some thing better, but uncertain.",
+      "locator": "Book II, XXVII ¶1",
+      "apply_it": "Think of a recent win. Write down what you originally wanted and check whether you've already got it.",
+      "quiz": {
+        "question": "What did Hanno advise Carthage after Cannae?",
+        "options": [
+          "Send more troops to Hannibal",
+          "Use the victory to make peace on favourable terms",
+          "Attack Rome at once",
+          "Recall Hannibal in disgrace"
+        ],
+        "answer": 1,
+        "explanation": "Hanno wanted Carthage to secure a peace while it was strong rather than risk the victory for a greater one."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--29",
+      "topic": "relationships",
+      "tags": [
+        "injustice",
+        "resentment",
+        "respect"
+      ],
+      "title": "Don't assume someone will keep swallowing wrongs",
+      "body": "Rome's envoys broke the law of nations by fighting the Gauls, and instead of punishing them Rome honoured them. The Gauls marched on Rome in fury. Machiavelli used this to warn that anyone who is wronged and gets no redress will look for revenge, even at great cost to themselves.\n\nIt's tempting to think a quiet colleague, partner or customer will put up with unfair treatment forever. Often they won't. When you've wronged someone, deal with it directly and fairly before resentment finds its own way out.",
+      "quote": "never to think so lightly of any man as to suppose, that when wrong upon wrong has been done him, he will not bethink himself of revenge",
+      "locator": "Book II, XXVIII ¶3",
+      "apply_it": "Is there someone you've treated unfairly and never put it right? Acknowledge it to them this week.",
+      "quiz": {
+        "question": "Why did the Gauls attack Rome in this story?",
+        "options": [
+          "Rome had refused them land",
+          "Rome honoured envoys who had wronged them instead of punishing them",
+          "Rome had insulted their gods",
+          "They were paid by Carthage"
+        ],
+        "answer": 1,
+        "explanation": "The Romans failed to punish their law-breaking envoys, and the wronged Gauls sought revenge."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--30",
+      "topic": "psychology",
+      "tags": [
+        "luck",
+        "judgement",
+        "attribution"
+      ],
+      "title": "Don't over-credit or over-blame people at the extremes of luck",
+      "body": "Livy wrote that fortune darkens people's minds when it doesn't want to be resisted. Machiavelli drew a careful lesson from this. Those who reach great heights or great disasters often owe much of it to circumstances: the chances they were given or denied.\n\nThis is a useful check when you judge others or yourself. A huge success may involve less genius than it seems, and a crushing failure less foolishness. Look at the decisions people made with what they knew, not just at how things turned out.",
+      "quote": "those who experience the extremes whether of good or of evil fortune, are, commonly, little deserving either of praise or blame",
+      "locator": "Book II, XXIX ¶4",
+      "apply_it": "Think of a recent failure, yours or someone else's. Separate what was in their control from what was luck.",
+      "quiz": {
+        "question": "What did Machiavelli say about people at the extremes of fortune?",
+        "options": [
+          "They fully deserve their fate",
+          "They usually deserve little praise or blame",
+          "They are always wise",
+          "They are always foolish"
+        ],
+        "answer": 1,
+        "explanation": "He thought those at extremes of fortune are commonly little deserving of praise or blame, because circumstance played a large part."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--31",
+      "topic": "business",
+      "tags": [
+        "renewal",
+        "culture",
+        "purpose"
+      ],
+      "title": "Organisations need to return to their roots to stay alive",
+      "body": "Machiavelli believed every institution starts with some real excellence that wins it its first success. Over time that excellence wears away. The ones that last, he said, are those that can renew themselves by going back to their beginnings, either through deliberate review or through a shock that forces it.\n\nCompanies, churches, clubs and even families drift. Regularly ask what made you good in the first place, whether you still do it, and what has crept in that doesn't belong. It's far better to renew on purpose than to wait for a crisis to do it for you.",
+      "quote": "Those states consequently stand surest and endure longest which, either by the operation of their institutions can renew themselves",
+      "locator": "Book III, I ¶2",
+      "apply_it": "Write down the one thing that made your team, business or household work well at the start. Check whether you still do it.",
+      "quiz": {
+        "question": "According to Machiavelli, how do lasting institutions renew themselves?",
+        "options": [
+          "By constant expansion",
+          "By returning to their beginnings",
+          "By changing leaders every year",
+          "By copying their rivals"
+        ],
+        "answer": 1,
+        "explanation": "He said wholesome changes bring institutions back to the excellence they had at the start."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--32",
+      "topic": "leadership",
+      "tags": [
+        "diversity",
+        "adaptability",
+        "teams"
+      ],
+      "title": "A team of different temperaments adapts better than any one person",
+      "body": "Machiavelli argued that people rarely change their methods. A cautious person stays cautious and a bold one stays bold, and each succeeds only while the times suit them. Fabius's patience saved Rome against Hannibal, but the same patience would have failed in other times.\n\nThat's why, he said, republics often last longer than single rulers: they contain citizens of many temperaments and can turn to whoever fits the moment. A team that mixes cautious and bold, planners and doers, can adapt where any single leader would get stuck.",
+      "quote": "from the diversity in the characters of its citizens, it can adapt itself better than a prince can to the diversity of times.",
+      "locator": "Book III, IX ¶3",
+      "apply_it": "Look at your closest team or advisers. If everyone thinks like you, invite in someone with the opposite temperament.",
+      "quiz": {
+        "question": "Why did Machiavelli think a republic adapts better than a prince?",
+        "options": [
+          "It has more money",
+          "Its citizens have diverse characters suited to different times",
+          "It never goes to war",
+          "It has better laws on trade"
+        ],
+        "answer": 1,
+        "explanation": "Diversity of character lets a republic find the right person for changing times."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--33",
+      "topic": "leadership",
+      "tags": [
+        "teams",
+        "mentoring",
+        "new-leaders"
+      ],
+      "title": "A strong team can teach a new leader",
+      "body": "Which matters more, a good leader or a good team? Machiavelli gave examples both ways. Lucullus had no experience of war, but his capable army and officers quickly taught him to command. Sempronius Gracchus, on the other hand, turned untrained slaves into a fine army.\n\nHe thought it easier for many good people to make one good leader than for one person to make many good. If you're new to leading, lean on your experienced team members and learn from them. If you're on a team with a new boss, helping them learn is one of the best things you can do.",
+      "quote": "it ought to be far easier for many who are good to find one who is good or teach him to become so, than for one who is good to find or make many good.",
+      "locator": "Book III, XIII ¶4",
+      "apply_it": "If you're new in a role, ask your most experienced team member to walk you through one thing you don't yet understand.",
+      "quiz": {
+        "question": "How did Lucullus become a good general despite having no experience?",
+        "options": [
+          "He studied books",
+          "His brave army and officers taught him",
+          "He hired foreign advisers",
+          "He avoided battle"
+        ],
+        "answer": 1,
+        "explanation": "His experienced army, with many excellent officers, quickly taught him to command."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--34",
+      "topic": "leadership",
+      "tags": [
+        "accountability",
+        "decision-making",
+        "co-leadership"
+      ],
+      "title": "One clear lead beats two brilliant co-leads",
+      "body": "Rome once sent three tribunes to lead a campaign together. They disagreed, each stuck to his own view, and they came home in disgrace. Machiavelli also told of two Florentine commissioners: the junior one sulked while sharing command but led brilliantly once left in sole charge.\n\nHis conclusion was blunt. An army is better led by one person of ordinary sense than by two of great talent who share command. For any project, make sure one person is clearly accountable for the final call, even if many contribute.",
+      "quote": "it is wiser to entrust it to one man of ordinary prudence, than to two of great parts but with a divided command.",
+      "locator": "Book III, XV ¶4",
+      "apply_it": "For each project you're on, check who makes the final call. If no one does, agree on it this week.",
+      "quiz": {
+        "question": "What happened when Rome sent three tribunes with equal authority?",
+        "options": [
+          "They won a great victory",
+          "They disagreed and returned in disgrace",
+          "They elected one leader among themselves",
+          "They refused to go"
+        ],
+        "answer": 1,
+        "explanation": "Divided counsel among the three tribunes gave the enemy opportunities and ended in discredit."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--35",
+      "topic": "business",
+      "tags": [
+        "talent",
+        "recognition",
+        "complacency"
+      ],
+      "title": "In calm times, organisations overlook their best people",
+      "body": "Machiavelli observed that great citizens are always neglected in peaceful times. Rivals push forward with wealth or connections, and real merit goes unnoticed until a crisis forces everyone to look for it again. Florence left its one proven general out of an easy campaign, and the campaign dragged on and cost far more.\n\nWhen things are going well, it's easy to promote the charming and well connected over the quietly excellent. That frustrates your best people and can drive them away. Keep asking who actually delivers when it matters, and make sure they are seen.",
+      "quote": "in tranquil times republics are subject to the infirmity of lightly esteeming their worthiest citizens.",
+      "locator": "Book III, XVI ¶2",
+      "apply_it": "Name the person you'd call first in a crisis. Make sure they're getting real recognition now, not just when things go wrong.",
+      "quiz": {
+        "question": "When did Machiavelli say able citizens are most often neglected?",
+        "options": [
+          "During wars",
+          "In peaceful, tranquil times",
+          "During plagues",
+          "Under kings only"
+        ],
+        "answer": 1,
+        "explanation": "In quiet times, envy and connections push the worthiest aside until danger brings them back."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--36",
+      "topic": "business",
+      "tags": [
+        "resentment",
+        "delegation",
+        "risk"
+      ],
+      "title": "Think twice before handing a big job to someone you've slighted",
+      "body": "The Roman general Claudius Nero had been mocked throughout Rome for letting an enemy escape. Later, as consul, he took a huge gamble that put the whole city at risk. Asked why, he said that if he won he would restore his reputation, and if he lost he would be revenged on those who had wronged him.\n\nPeople who feel humiliated may take risks that serve their pride rather than the shared goal. Before giving someone an important responsibility, consider whether they carry a grievance, and try to clear the air first.",
+      "quote": "A republic should think twice before appointing to an important command a citizen who has sustained notable wrong at the hands of his fellow-citizens.",
+      "locator": "Book III, XVII ¶1",
+      "apply_it": "If you're about to give someone a key task, ask yourself whether they feel unfairly treated. If so, talk about it first.",
+      "quiz": {
+        "question": "Why did Claudius Nero take such a dangerous gamble?",
+        "options": [
+          "He was ordered to by the senate",
+          "He wanted to restore his name or be revenged on those who wronged him",
+          "He was sure of victory",
+          "He was bribed by Hannibal"
+        ],
+        "answer": 1,
+        "explanation": "He said success would restore his credit, while failure would revenge him on the city that slighted him."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--37",
+      "topic": "mental-strength",
+      "tags": [
+        "perception",
+        "persistence",
+        "facts"
+      ],
+      "title": "After a hard contest, check the facts before you assume you lost",
+      "body": "Machiavelli noted that when a battle ran until nightfall, the winner sometimes believed he had lost and the loser believed he had won. In one Roman battle both armies retreated, each sure it was beaten, until a centurion discovered the enemy had fled and claimed the victory.\n\nAfter an exhausting pitch, exam, negotiation or argument, your sense of how it went is often wrong. Before you give up, apologise or change course, find out what actually happened. The other side may be feeling just as beaten as you.",
+      "quote": "it has often happened that when a battle has lasted till nightfall, the winner has believed himself the loser, and the loser has believed himself the winner",
+      "locator": "Book III, XVIII ¶1",
+      "apply_it": "After your next tough meeting or test, wait for real feedback before deciding how it went.",
+      "quiz": {
+        "question": "What happened after the drawn battle between the Romans and the Equians?",
+        "options": [
+          "Both sides celebrated",
+          "Both sides withdrew, each believing it had lost",
+          "The Equians surrendered at once",
+          "The Romans were destroyed"
+        ],
+        "answer": 1,
+        "explanation": "Each army thought itself beaten and withdrew, until scouting showed the Romans had in fact won."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--38",
+      "topic": "relationships",
+      "tags": [
+        "kindness",
+        "integrity",
+        "influence"
+      ],
+      "title": "One act of decency can win what force cannot",
+      "body": "While Rome besieged Falerii, a schoolmaster brought the city's children to the Roman camp, offering them as hostages. Camillus refused, had the man bound and sent back, whipped by the boys themselves. Moved by his integrity, Falerii surrendered of its own accord.\n\nMachiavelli concluded that a humane act can sometimes open doors that every siege engine had failed to break. In business and relationships, a moment of honesty or generosity when you could have exploited someone's weakness can earn more trust than any amount of pressure.",
+      "quote": "a humane and kindly action may sometimes touch men’s minds more nearly than a harsh and cruel one",
+      "locator": "Book III, XX ¶2",
+      "apply_it": "Think of a situation where you have the upper hand. Choose the generous option and see how the other person responds.",
+      "quiz": {
+        "question": "Why did the city of Falerii surrender to Camillus?",
+        "options": [
+          "His army breached the walls",
+          "They were moved by his refusal to use their children as hostages",
+          "They ran out of food",
+          "Their leaders were bribed"
+        ],
+        "answer": 1,
+        "explanation": "Camillus's humanity and integrity won over the city where force had failed."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--39",
+      "topic": "leadership",
+      "tags": [
+        "management-style",
+        "expectations",
+        "consistency"
+      ],
+      "title": "Fit your demands to the way you lead",
+      "body": "Two Roman generals, the stern Manlius and the gentle Valerius, used opposite styles and achieved the same success. Machiavelli explained why. Very hard demands need a hard commander who can enforce them, while a gentle leader does best by asking for ordinary things and keeping his kindness.\n\nTrouble starts when the two don't match: a soft-touch manager setting brutal targets, or a strict one trying to be everyone's friend. Be honest about your natural style, set expectations that fit it, and make sure your power to follow through matches what you ask.",
+      "quote": "if you would be obeyed you must know how to command",
+      "locator": "Book III, XXII ¶3",
+      "apply_it": "Review one demanding goal you've set for others. Ask whether your way of leading can actually support it.",
+      "quiz": {
+        "question": "What did Manlius and Valerius have in common?",
+        "options": [
+          "The same gentle style",
+          "Equal success despite opposite styles",
+          "The same harsh style",
+          "They both lost their armies"
+        ],
+        "answer": 1,
+        "explanation": "One severe and one kindly, both commanded loyal armies and won the same glory."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--40",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "envy",
+        "collaboration",
+        "ego"
+      ],
+      "title": "Someone else's authority doesn't shrink yours",
+      "body": "When Rome faced attack from all sides, the senate wanted Camillus to take sole charge. His fellow tribunes agreed willingly. Livy notes that they did not feel anything was taken from their own dignity by what was added to his. Camillus then gave each of them a vital role, and Rome was saved.\n\nMachiavelli saw envy as one of the biggest obstacles to getting good work done. When you can let a capable colleague lead without feeling diminished, everyone, including you, gets a better outcome and a real part in it.",
+      "quote": "did they account anything as taken from their own dignity which was added to his.",
+      "locator": "Book III, XXX ¶1",
+      "apply_it": "Next time a peer gets the lead role, offer them your help in a specific way.",
+      "quiz": {
+        "question": "How did Camillus's fellow tribunes react to his being given sole charge?",
+        "options": [
+          "They resigned in protest",
+          "They agreed willingly and felt no loss of dignity",
+          "They plotted against him",
+          "They demanded equal powers"
+        ],
+        "answer": 1,
+        "explanation": "Livy says they did not think his added authority took anything from their own dignity."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--41",
+      "topic": "mental-strength",
+      "tags": [
+        "resilience",
+        "humility",
+        "consistency"
+      ],
+      "title": "Be the same person in success and failure",
+      "body": "Livy has Camillus say that his courage neither arrived with high office nor left him in exile. Machiavelli took this as the mark of a great person: fortune rises and falls, but their character stays the same.\n\nWeaker people, he said, grow arrogant in success, taking credit for qualities they never had, and then collapse into panic when things turn. Rome kept fighting calmly after the disaster of Cannae, while Venice, proud in good times, grovelled after one defeat. Try not to let either a win or a loss rewrite who you are.",
+      "quote": "My courage came not with my dictatorship nor went with my exile",
+      "locator": "Book III, XXXI ¶1",
+      "apply_it": "Write one sentence about who you want to be whether this year goes well or badly. Read it after your next big win or loss.",
+      "quiz": {
+        "question": "What did Machiavelli say marks a truly great person?",
+        "options": [
+          "Never facing adversity",
+          "Remaining the same through good and bad fortune",
+          "Always winning",
+          "Changing with every circumstance"
+        ],
+        "answer": 1,
+        "explanation": "A great man is constantly the same through every change of fortune."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--42",
+      "topic": "leadership",
+      "tags": [
+        "trust",
+        "confidence",
+        "teams"
+      ],
+      "title": "Earn your team's confidence by how you treat them",
+      "body": "Machiavelli said an army wins when it is confident, and that its confidence depends partly on trusting its commander. Soldiers trust a leader who cares for their welfare, keeps discipline, is brave and carries the role with dignity.\n\nHe added specific habits: correct faults without needlessly harassing people, keep your word, and show that the path to success is achievable. These are just as true for a manager, coach or teacher. Confidence is built in small daily actions long before the big test arrives.",
+      "quote": "while punishing faults, he does not needlessly harass his men, keeps his word with them",
+      "locator": "Book III, XXXIII ¶2",
+      "apply_it": "Check one promise you've made to your team and make sure you keep it this week.",
+      "quiz": {
+        "question": "Which of these did Machiavelli list as a way a commander earns his army's trust?",
+        "options": [
+          "Harassing men to keep them alert",
+          "Keeping his word with them",
+          "Hiding all bad news permanently",
+          "Avoiding discipline"
+        ],
+        "answer": 1,
+        "explanation": "He said a leader should punish faults without needless harassment and keep his word with his men."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--43",
+      "topic": "communication",
+      "tags": [
+        "advice",
+        "persuasion",
+        "ego"
+      ],
+      "title": "Offer bold ideas calmly, without staking your ego on them",
+      "body": "Machiavelli warned that whoever champions a big new measure takes the blame if it fails, since people judge by results. Yet an adviser who keeps quiet fails in their duty. His remedy was to give honest advice but without heat: state your view, support it modestly, and let the decision be the group's own.\n\nThis is still wise in meetings today. Pushing hard makes the idea yours alone and turns doubters into opponents waiting for you to fail. Calm, reasoned advice gets a fairer hearing and leaves you standing if the plan goes wrong.",
+      "quote": "offering your opinion without heat, and supporting it temperately and modestly",
+      "locator": "Book III, XXXV ¶4",
+      "apply_it": "In your next meeting, present one proposal calmly with its pros and cons, then invite others to improve it.",
+      "quiz": {
+        "question": "What was Machiavelli's remedy for the danger of championing a new measure?",
+        "options": [
+          "Stay silent",
+          "Give your view without heat and support it modestly",
+          "Push as hard as possible",
+          "Let a rival propose it"
+        ],
+        "answer": 1,
+        "explanation": "He advised giving honest advice temperately, so the decision would be the group's and not seem forced."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--44",
+      "topic": "skills-mastery",
+      "tags": [
+        "practice",
+        "confidence",
+        "fear"
+      ],
+      "title": "Get to know a new challenge through small trials you can win",
+      "body": "Facing a new enemy, the Roman general Valerius Corvinus first had his men test them in small skirmishes, so they would not be dismayed by an unfamiliar foe. Machiavelli agreed that this was vital, but warned that a defeat in those early skirmishes could frighten an army more than anything.\n\nThe same goes for a new skill, job or market. Start with small, low-stakes attempts that teach you what you're facing, and choose ones you have a strong chance of winning. Early wins build confidence; early failures can scare you off before you've really begun.",
+      "quote": "to accustom his men by skirmishes and passages of arms, to the quality of their enemy; that they may learn to know him",
+      "locator": "Book III, XXXVII ¶2",
+      "apply_it": "Pick something new you're nervous about. Design one small, low-risk trial of it that you're likely to succeed at.",
+      "quiz": {
+        "question": "What danger did Machiavelli see in early skirmishes?",
+        "options": [
+          "They waste time",
+          "Losing them can discourage the whole army",
+          "They always reveal your plans",
+          "There is no danger"
+        ],
+        "answer": 1,
+        "explanation": "Nothing discourages soldiers so much as beginning with a defeat, so skirmishes should be fought only with a clear advantage."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--45",
+      "topic": "leadership",
+      "tags": [
+        "leading-by-example",
+        "credibility",
+        "action"
+      ],
+      "title": "Lead by what you do, not what you say",
+      "body": "Before battle, Valerius Corvinus asked his soldiers to consider whether their commander was great only at giving speeches, or one who knew how to use a spear and fight in the thick of things. He told them to follow his deeds, not his words.\n\nMachiavelli held this up as the model of a leader an army will trust. People learn far more from what you do under pressure than from anything you tell them. If you want punctuality, effort or honesty from others, the fastest way is to show it yourself, visibly and consistently.",
+      "quote": "Soldiers! I would have you follow my deeds and not my words, and look to me for example rather than for commands",
+      "locator": "Book III, XXXVIII ¶1",
+      "apply_it": "Choose one behaviour you keep asking of others. Model it visibly every day this week.",
+      "quiz": {
+        "question": "What did Valerius Corvinus ask his soldiers to follow?",
+        "options": [
+          "His orders only",
+          "His deeds rather than his words",
+          "The senate's decrees",
+          "The auspices"
+        ],
+        "answer": 1,
+        "explanation": "He told them to look to him for example rather than for commands."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--46",
+      "topic": "personal-development",
+      "tags": [
+        "titles",
+        "reputation",
+        "merit"
+      ],
+      "title": "You give a title its meaning; the title doesn't give you yours",
+      "body": "Machiavelli warned that someone who gains a position through luck or intrigue rather than ability soon finds that it lowers their reputation instead of raising it. A grand title on an unqualified person only makes the gap more obvious.\n\nPromotions and job titles are worth having, but they don't create respect by themselves. What earns respect is the quality of the work and how you treat people while doing it. Focus on becoming someone who would deserve the role, and the title will look right on you.",
+      "quote": "it is men who give lustre to titles and not titles to men.",
+      "locator": "Book III, XXXVIII ¶1",
+      "apply_it": "Ask yourself what someone truly worthy of your next desired role would do differently. Start doing one of those things now.",
+      "quiz": {
+        "question": "What did Machiavelli say happens to someone who gains rank by chance or intrigue?",
+        "options": [
+          "Their reputation grows",
+          "Their advancement takes away reputation rather than adding it",
+          "They are always removed",
+          "Nobody notices"
+        ],
+        "answer": 1,
+        "explanation": "Advancement due to chance or intrigue takes away more reputation than it brings."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--47",
+      "topic": "emotional-intelligence",
+      "tags": [
+        "grudges",
+        "teamwork",
+        "common-good"
+      ],
+      "title": "Put the shared goal above a personal grudge",
+      "body": "When a Roman army was in danger, the senate needed the consul Fabius to appoint Papirius as dictator. The two were enemies, so the senate begged Fabius to set his animosity aside. He did, though his silence showed how much it cost him. Machiavelli said every good citizen should follow his example.\n\nYou don't have to like someone to back them when the shared goal needs it. Supporting a rival's good idea, or recommending a person you clash with because they're right for the job, is a mark of maturity, and people notice.",
+      "quote": "the senate sent two messengers to entreat him to lay aside private animosity, and make the nomination which the public interest required.",
+      "locator": "Book III, XLVII ¶1",
+      "apply_it": "Think of someone you dislike who is right about something. Back them openly on that point.",
+      "quiz": {
+        "question": "What did Fabius do, despite his enmity with Papirius?",
+        "options": [
+          "Refused to act",
+          "Nominated him as dictator for the public good",
+          "Had him exiled",
+          "Resigned his consulship"
+        ],
+        "answer": 1,
+        "explanation": "Moved by love of his country, Fabius made the nomination despite his personal dislike."
+      }
+    },
+    {
+      "id": "discourses-on-livy-machiavelli--48",
+      "topic": "psychology",
+      "tags": [
+        "traps",
+        "scepticism",
+        "overconfidence"
+      ],
+      "title": "If an opponent's mistake looks too easy, look again",
+      "body": "Machiavelli advised commanders not to rush at what looks like an obvious blunder by the enemy, because people rarely act so carelessly, and an apparent blunder often hides a trap. When the Gauls found Rome's gates wide open, they waited outside for a whole day before entering.\n\nThe same caution applies to a deal that seems too good, a competitor who suddenly leaves a market wide open, or a price far below everyone else's. Eagerness to win makes us see only the surface. Pause and ask what you might be missing.",
+      "quote": "the captain of an army ought not to build on what seems a manifest blunder on the part of an enemy",
+      "locator": "Book III, XLVIII ¶2",
+      "apply_it": "Think of an opportunity that looks unusually easy right now. List three reasons it might not be what it seems.",
+      "quiz": {
+        "question": "Why did Machiavelli warn against trusting an enemy's obvious blunder?",
+        "options": [
+          "Enemies never make mistakes",
+          "Apparent blunders often hide a trap",
+          "It is dishonourable to exploit mistakes",
+          "Blunders always fix themselves"
+        ],
+        "answer": 1,
+        "explanation": "Since men rarely act so carelessly, an obvious blunder is commonly cover for a fraud."
+      }
+    }
+  ]
+}
