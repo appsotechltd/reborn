@@ -101,6 +101,12 @@ repo = "niccolo-machiavelli_the-prince_w-k-marriott"
 licence = "public-domain"
 
 [[source]]
+id = "discourses-on-livy-machiavelli"
+adapter = "standardebooks"
+repo = "niccolo-machiavelli_discourses-on-livy_ninian-hill-thomson"
+licence = "public-domain"
+
+[[source]]
 id = "art-of-money-getting-barnum"
 adapter = "standardebooks"
 repo = "p-t-barnum_the-art-of-money-getting"
