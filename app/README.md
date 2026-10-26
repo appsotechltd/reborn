@@ -38,10 +38,9 @@ Push notifications use Firebase Cloud Messaging and are optional. Without
 the app runs normally and skips push quietly. Add those files from the
 Firebase console to turn push on.
 
-For local development, `android/app/src/main/AndroidManifest.xml` declares the
-`INTERNET` permission and `android:usesCleartextTraffic="true"` so the app can
-reach a plain `http://` backend. Use HTTPS and drop cleartext before a release
-build.
+`android/app/src/main/AndroidManifest.xml` declares the `INTERNET` permission.
+Debug and profile builds also allow `android:usesCleartextTraffic` so the app can
+reach a plain `http://` backend; release builds don't, so point them at an HTTPS API.
 
 ## Check
 
