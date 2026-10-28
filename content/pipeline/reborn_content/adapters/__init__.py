@@ -21,12 +21,13 @@ class FetchResult:
 
 
 def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
-    from . import gutenberg, openstax, standardebooks
+    from . import gutenberg, openstax, standardebooks, wikisource
 
     adapters = {
         "standardebooks": standardebooks.fetch,
         "gutenberg": gutenberg.fetch,
         "openstax": openstax.fetch,
+        "wikisource": wikisource.fetch,
     }
     name = entry["adapter"]
     if name not in adapters:
@@ -42,4 +43,4 @@ def fetch(entry: dict, cache_dir: Path | None) -> FetchResult:
     return result
 
 
-FETCHABLE = {"standardebooks", "gutenberg", "openstax"}
+FETCHABLE = {"standardebooks", "gutenberg", "openstax", "wikisource"}

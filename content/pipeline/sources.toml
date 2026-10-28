@@ -687,7 +687,8 @@ licence = "original-summary"
 
 [[source]]
 id = "my-inventions-tesla"
-adapter = "web"
+adapter = "wikisource"
+page = "My_Inventions"
 url = "https://en.wikisource.org/wiki/My_Inventions"
 licence = "public-domain"
 # Tesla's 1919 Electrical Experimenter articles; Tesla died 1943, so public domain worldwide. Read on Wikisource.
