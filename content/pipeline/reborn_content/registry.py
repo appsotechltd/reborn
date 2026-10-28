@@ -5,7 +5,7 @@ from __future__ import annotations
 import tomllib
 from pathlib import Path
 
-ADAPTERS = {"standardebooks", "gutenberg", "openstax", "web", "summary"}
+ADAPTERS = {"standardebooks", "gutenberg", "openstax", "wikisource", "web", "summary"}
 
 
 class RegistryError(ValueError):
@@ -42,6 +42,7 @@ def _check(e: dict, seen: dict) -> None:
         "standardebooks": ["repo"],
         "gutenberg": ["gutenberg_id"],
         "openstax": ["repo", "collection"],
+        "wikisource": ["page", "url"],
         "web": ["url"],
         "summary": ["url"],
     }[e["adapter"]]

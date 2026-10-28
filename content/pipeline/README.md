@@ -28,7 +28,7 @@ quotes.
 | Path | What |
 |---|---|
 | `sources.toml` | Registry: adapter, upstream location and expected licence per source |
-| `reborn_content/adapters/` | `standardebooks`, `gutenberg`, `openstax` (each also gates the licence) |
+| `reborn_content/adapters/` | `standardebooks`, `gutenberg`, `openstax`, `wikisource` (each also gates the licence) |
 | `reborn_content/schema.py` | Validator for SCHEMA.md plus house rules |
 | `reborn_content/passages.py` | Passage files and typography-insensitive quote matching |
 | `tests/` | Offline tests with small fixtures |

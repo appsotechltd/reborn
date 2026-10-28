@@ -14,7 +14,7 @@
     "year": 1919,
     "language": "en",
     "retrieved_at": "2026-10-12",
-    "notes": "Six autobiographical articles first published in Electrical Experimenter in 1919; public domain worldwide (Tesla died 1943). Read via Wikisource; cards are in our own words without quotes because the pipeline cannot fetch and verify Wikisource text."
+    "notes": "Six autobiographical articles first published in Electrical Experimenter in 1919; public domain worldwide (Tesla died 1943). Fetched from Wikisource; each card quotes Tesla's own words, checked against the fetched text."
   },
   "cards": [
     {
@@ -28,6 +28,7 @@
       ],
       "title": "Build and test the idea in your head before you build it for real",
       "body": "Tesla's working method was to resist rushing to the workshop. When an idea came, he built it up in his imagination, changed the construction, made improvements and even ran the machine in his mind, noting if it was out of balance. Only when he could see no fault anywhere did he make the real thing. He claimed his devices then worked as planned.\n\nFew of us can picture a turbine in full detail, but the habit scales down. Walk through a plan, a talk or a piece of code in your head first, step by step, and ask where it breaks. Problems found in thought are the cheapest ones to fix.",
+      "quote": "When I get an idea I start at once building it up in my imagination. I change the construction, make improvements and operate the device in my mind.",
       "locator": "Part I. My Early Life",
       "apply_it": "Before starting your next project, spend ten quiet minutes running it in your mind from start to finish. Write down every point where it could fail.",
       "quiz": {
@@ -53,6 +54,7 @@
       ],
       "title": "Rushing to build a rough idea can bury the principle under details",
       "body": "Tesla believed that the moment you build a device from a crude idea, you become absorbed in the details and defects of the apparatus. As you keep patching and rebuilding, your concentration fades and you lose sight of the great underlying principle. You may still get results, he said, but at the cost of quality.\n\nThis is a useful warning even for those who like to prototype quickly. Before you start fixing the small things in a draft, a product or a plan, pause and restate the core idea in a sentence. If the details have pulled you away from it, step back to the principle before you build any more.",
+      "quote": "The moment one constructs a device to carry into practise a crude idea he finds himself unavoidably engrost with the details and defects of the apparatus.",
       "locator": "Part I. My Early Life",
       "apply_it": "Write one sentence stating the core idea of something you are working on. Check whether today's tasks still serve it.",
       "quiz": {
@@ -78,6 +80,7 @@
       ],
       "title": "Thinking you love doing rarely feels like labour",
       "body": "People called Tesla one of the hardest workers alive. He agreed, but only if thought counts as labour, since he gave almost all his waking hours to it. If work meant a fixed output in a fixed time by a rigid rule, he joked that he might be the worst of idlers.\n\nHis point was that effort under compulsion costs a sacrifice of life energy, while he thrived on his thoughts. Not every task can be a passion, but it is worth noticing which kinds of work drain you and which ones feed you. Arranging more of your time around the second kind can make long effort feel lighter.",
+      "quote": "I am credited with being one of the hardest workers and perhaps I am, if thought is the equivalent of labor, for I have devoted to it almost all of my waking hours.",
       "locator": "Part I. My Early Life",
       "apply_it": "List three tasks from this week: one that drained you and one that energised you. What made the difference?",
       "quiz": {
@@ -103,6 +106,7 @@
       ],
       "title": "Your early instincts may matter more than you think",
       "body": "Looking back at sixty-three, Tesla said our first efforts are purely instinctive, driven by a vivid and undisciplined imagination. As we grow up, reason takes over and we become more systematic. Yet those early impulses, though not immediately productive, can shape our whole lives.\n\nHe went further: he felt that if he had understood and cultivated those impulses instead of suppressing them, he would have given more to the world. It is a gentle nudge to look back at what absorbed you as a child, the things you did for no reward, and ask whether some part of that still deserves room in your life.",
+      "quote": "But those early impulses, tho not immediately productive, are of the greatest moment and may shape our very destinies.",
       "locator": "Part I. My Early Life",
       "apply_it": "Recall one thing you loved doing at age ten. Find a small way to do a grown-up version of it this month.",
       "quiz": {
@@ -128,6 +132,7 @@
       ],
       "title": "A family's grief can quietly shape a child's confidence",
       "body": "Tesla had a brother whom the family saw as extraordinarily gifted. The brother died after an accident with the family's horse, and young Tesla saw it happen. Fifty-six years later, he wrote, the picture had lost none of its force.\n\nHis parents were left heartbroken. Whatever Tesla did well only seemed to remind them of the son they had lost, and so he grew up with little confidence in himself. There is no blame in his telling, only honesty about how loss echoes through a home. If you grew up in the shadow of a family loss, it can help to see that the doubt you carried was part of everyone's grief, not proof that you fell short.",
+      "quote": "Anything I did that was creditable merely caused my parents to feel their loss more keenly. So I grew up with little confidence in myself.",
       "locator": "Part I. My Early Life",
       "apply_it": "If a loss shaped your family, write a few lines to your younger self about what you understand now.",
       "quiz": {
@@ -153,6 +158,7 @@
       ],
       "title": "Daily mental games can sharpen memory and judgement",
       "body": "Tesla's father, a clergyman with a prodigious memory, trained his son with daily exercises. They guessed one another's thoughts, hunted for defects in a form or expression, repeated long sentences and did calculations in their heads. The aim was to strengthen memory and reason and above all to develop the critical sense. Tesla judged them undoubtedly very beneficial.\n\nYou can borrow the idea at any age. Spot the weak point in an argument you read today, recite a passage from memory, or do a sum without a calculator. Small, regular practice like this keeps the mind alert and sceptical in a good way.",
+      "quote": "These daily lessons were intended to strengthen memory and reason and especially to develop the critical sense, and were undoubtedly very beneficial.",
       "locator": "Part I. My Early Life",
       "apply_it": "Today, pick one claim you read and find its weakest point. Then do one calculation in your head that you would usually type.",
       "quiz": {
@@ -178,6 +184,7 @@
       ],
       "title": "Tesla credited his inventiveness to his mother",
       "body": "Tesla traced whatever inventiveness he had to his mother. She came from a line of inventors and herself made all kinds of tools and devices. She grew the plants, separated the fibres, spun the thread and wove fine designs. Most of the family's clothes and furnishings came from her hands, and she worked from daybreak until late at night.\n\nHe also remembered her courage. At sixteen, during an epidemic, she went alone to help a stricken neighbouring family and cared for them to the end. Tesla believed she would have achieved great things with modern opportunities. Brilliance often lives in people history never names.",
+      "quote": "My mother was an inventor of the first order and would, I believe, have achieved great things had she not been so remote from modern life and its multifold opportunities.",
       "locator": "Part I. My Early Life",
       "apply_it": "Think of someone in your family whose skill was never recognised. Tell someone about them this week.",
       "quiz": {
@@ -203,6 +210,7 @@
       ],
       "title": "A childhood struggle became the root of his greatest skill",
       "body": "As a boy, Tesla was troubled by vivid images of things he had seen, which sometimes blurred the real objects in front of him. After a distressing sight they would return at night, and they caused him great discomfort and anxiety.\n\nTo push them away he focused on other pictures, and when he ran out of familiar scenes he began travelling in his mind to new places, cities and countries. These imagined journeys became steady and clear. Around seventeen, he found he could use the same power to picture inventions in full detail. The way he coped with something painful turned into the core of his life's work. Hard experiences can leave us with unexpected strengths.",
+      "quote": "I soon discovered that my best comfort was attained if I simply went on in my vision farther and farther, getting new impressions all the time, and so I began to travel—of course, in my mind.",
       "locator": "Part I. My Early Life",
       "apply_it": "Think of a difficulty you have lived with. Name one ability or habit you built while coping with it.",
       "quiz": {
@@ -229,6 +237,7 @@
       ],
       "title": "Self-control grows with practice until want and will line up",
       "body": "Until about eight, Tesla described himself as weak and changeable, pulled between extremes. Then a novel he read, Abafi by the Hungarian writer Josika, awakened his powers of will, and he began to practise self-control.\n\nAt first his resolutions faded like snow in April. But he kept at it, and soon felt a pleasure he had never known: doing as he willed. Over time the exercise became second nature, until what he wanted and what he chose became the same. Willpower, in his account, is not a fixed gift. It is a skill that starts shaky and strengthens each time you keep a small promise to yourself.",
+      "quote": "At the outset my wishes had to be subdued but gradually desire and will grew to be identical.",
       "locator": "Part I. My Early Life",
       "apply_it": "Make one small promise to yourself for tomorrow, something you can surely keep, and keep it.",
       "quiz": {
@@ -254,6 +263,7 @@
       ],
       "title": "Sometimes trust helps a person change more than anger does",
       "body": "As a young man Tesla developed a mania for gambling at cards. His father was angry and contemptuous. His mother took another approach. She understood, Tesla wrote, that a person can only be saved by his own efforts.\n\nOne afternoon, when he had lost all his money and was craving a game, she came to him with a roll of bills and said, in effect: go and enjoy yourself, the sooner you lose everything we have the better, I know you will get over it. She was right. He conquered the habit then and there, and afterwards felt no pull towards gambling at all. Her faith in him did what scolding had not.",
+      "quote": "She understood the character of men and knew that one's salvation could only be brought about thru his own efforts.",
       "locator": "Part I. My Early Life",
       "apply_it": "Think of someone you are trying to change. What would it look like to show trust instead of pressure?",
       "quiz": {
@@ -279,6 +289,7 @@
       ],
       "title": "A real love of reading finds a way around every obstacle",
       "body": "Of all things, young Tesla liked books best. His father had a large library but forbade him from reading in secret, worried he would spoil his eyes, and even hid the candles.\n\nSo Tesla got tallow, made wicks, cast his own candles in tin moulds, sealed the keyhole and the cracks, and read, often until dawn. He wasn't reading for marks. He was reading because he couldn't stop. Few of us need to make our own candles today, but the question still applies: is there something you care about enough to make time and means for, even when it is inconvenient?",
+      "quote": "But I obtained tallow, made the wicking and cast the sticks into tin forms, and every night I would bush the keyhole and the cracks and read, often till dawn.",
       "locator": "Part I. My Early Life",
       "apply_it": "Choose one book you have been meaning to read. Set aside twenty minutes tonight, and protect that time.",
       "quiz": {
@@ -304,6 +315,7 @@
       ],
       "title": "Breaking a habit can bring satisfaction, not only sacrifice",
       "body": "For a time Tesla smoked heavily, enough that he felt it threatened his health. Then, he wrote, his will asserted itself and he not only stopped but rid himself of the wish to smoke. In the same way he checked and bridled other habits and passions over the years.\n\nWhat stands out is how he felt about it. Most people, he said, would see such restraint as privation and sacrifice. He found an immense amount of satisfaction in it. Giving something up can feel like loss at first, but it often turns into a quiet pride. If you are quitting something, support from people and services can make the will he describes much easier to find.",
+      "quote": "I checked and bridled other habits and passions and have not only preserved my life but derived an immense amount of satisfaction from what most men would consider privation and sacrifice.",
       "locator": "Part I. My Early Life",
       "apply_it": "Name one habit you'd like to drop. Write down what you will gain, not only what you will give up.",
       "quiz": {
@@ -330,6 +342,7 @@
       ],
       "title": "Pay attention to what is happening inside you, not only around you",
       "body": "Tesla said his childhood troubles forced him to watch his own mind closely. It caused him much suffering, but he came to see it as a blessing in disguise. It taught him the value of introspection, both for staying well and as a means of achievement.\n\nModern life, he wrote in 1919, pours a constant stream of impressions into us. Most people are so absorbed in the outside world that they are oblivious to what is passing within themselves. A century later the stream is louder still. A short daily check-in with your own mood, energy and thoughts can catch problems early and show you what really drives your choices.",
+      "quote": "Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves.",
       "locator": "Part II. My First Efforts at Invention",
       "apply_it": "Set a reminder for midday. When it goes off, note in a few words how you feel and why.",
       "quiz": {
@@ -355,6 +368,7 @@
       ],
       "title": "Being left out pushed young Tesla to make his own tools",
       "body": "Tesla's first invention came from feeling left out. A playmate had a real fishing hook, and all the boys went off to catch frogs, but Tesla had quarrelled with him and was left behind. He had never even seen a real hook.\n\nUrged by necessity, he hammered a piece of soft iron wire into a point between two stones, bent it into shape, tied it to a string and cut a rod. When his bait caught nothing, he tried dangling the empty hook in front of a frog, and it snapped at it. The other boys, with their fine gear, caught nothing. Lacking the proper tools can push you to find a better method.",
+      "quote": "Urged by necessity, I somehow got hold of a piece of soft iron wire, hammered the end to a sharp point between two stones, bent it into shape, and fastened it to a strong string.",
       "locator": "Part II. My First Efforts at Invention",
       "apply_it": "Next time you feel stuck because you lack the right tool, ask: what could I make or try with what I already have?",
       "quiz": {
@@ -380,6 +394,7 @@
       ],
       "title": "When experts are stuck, check the simple thing first",
       "body": "Tesla's home town bought a new fire engine, a pump worked by sixteen men. At the public trial, with the whole town watching, not a drop of water came out. The professors and experts searched in vain for the fault.\n\nYoung Tesla knew almost nothing about the mechanism, but he felt for the suction hose in the river and found it had collapsed. He waded in, opened it, and the water burst out, soaking plenty of Sunday clothes. He was carried on the townspeople's shoulders. Expertise can make us look for complex causes. Often the problem is plain and physical, and anyone willing to look closely can find it.",
+      "quote": "My knowledge of the mechanism was nil and I knew next to nothing of air pressure, but instinctively I felt for the suction hose in the water and found that it had collapsed.",
       "locator": "Part II. My First Efforts at Invention",
       "apply_it": "With a problem you are stuck on, list the three simplest possible causes and check each one before going deeper.",
       "quiz": {
@@ -405,6 +420,7 @@
       ],
       "title": "A childhood picture of the future can come true decades later",
       "body": "As a boy Tesla built many little water wheels and read a description of Niagara Falls. He pictured a big wheel driven by the Falls and told his uncle, who disapproved of such pastimes, that one day he would go to America and carry out the plan.\n\nThirty years later, he wrote, he saw his ideas carried out at Niagara and marvelled at the mystery of the mind. A dream like that doesn't come true by itself. Tesla still had to study and work for decades. But a vivid early picture can give years of effort a direction, and it is worth taking seriously even when others don't.",
+      "quote": "Thirty years later I saw my ideas carried out at Niagara and marveled at the unfathomable mystery of the mind.",
       "locator": "Part II. My First Efforts at Invention",
       "apply_it": "Write down one picture of the future that has stayed with you since you were young. What is one step towards it?",
       "quiz": {
@@ -430,6 +446,7 @@
       ],
       "title": "What you know can save you if you stay calm enough to use it",
       "body": "At about sixteen, Tesla swam out to a river dam as he often did, but the water had risen and the current pinned him against the wall. No one was in sight. As his strength gave out, he remembered a diagram of a principle about fluid pressure and the area it acts on, and turned onto his side. The pressure eased enough for him to hold on and slowly work his way along the dam to the bank.\n\nHe admitted the scrape came from recklessness, and that he had forgotten an earlier lesson. Still, the story shows how knowledge only helps if you can stay calm enough to reach for it.",
+      "quote": "These are only two of many instances but they may be sufficient to show that had it not been for the inventor's instinct I would not have lived to tell this tale.",
       "locator": "Part II. My First Efforts at Invention",
       "apply_it": "Think of one emergency you might face, like a fire at home. Rehearse in your mind exactly what you would do.",
       "quiz": {
@@ -455,6 +472,7 @@
       ],
       "title": "Make sure your result comes from the cause you think it does",
       "body": "As a teenager Tesla became obsessed with drawing endless power from a vacuum. He built a careful wooden model of a cylinder in a trough, pumped air from one side and saw the cylinder start to turn. He was delirious with joy and imagined flying machines powered by it.\n\nIt took him years to understand that the air pressure pushed straight in at the cylinder, not around it, and that the small turning he saw came from a leak. The discovery gave him a painful shock. A result that confirms what we hope can easily come from somewhere else. Before you celebrate, ask what else could explain it.",
+      "quote": "It took years before I understood that the atmospheric pressure acted at right angles to the surface of the cylinder and that the slight rotary effort I observed was due to a leak.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "Take one recent success or result you are proud of. List two other possible reasons it happened.",
       "quiz": {
@@ -480,6 +498,7 @@
       ],
       "title": "Perfect calculations are worthless if one assumption is wrong",
       "body": "During a year in the mountains, young Tesla designed a submarine tube to send letters and packages across the oceans in strong spheres pushed by water. He worked out the pumping plant precisely and planned every detail.\n\nOnly one trifling detail was lightly dismissed: he simply chose a speed for the water, and enjoyed making it high. The result was a stupendous performance backed by faultless calculations. Later thoughts about how pipes resist the flow of water ended the plan. He told the story with good humour. Spreadsheets, business plans and forecasts can fail the same way: careful sums built on one unchecked number.",
+      "quote": "Only one trifling detail, of no consequence, was lightly dismist.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "Pick a plan you are working on and circle the one number or assumption everything else depends on. How sure are you of it?",
       "quiz": {
@@ -505,6 +524,7 @@
       ],
       "title": "Good books can lift you when you are very unwell",
       "body": "After school Tesla fell dangerously ill and doctors gave up hope. During this time he was allowed to read constantly, and was even trusted to catalogue a neglected public library. One day he was handed some early books by Mark Twain. They were so captivating that he utterly forgot his hopeless state, and he wondered whether they helped bring about his recovery.\n\nTwenty-five years later he met Twain, became his friend and told him the story. The great humorist burst into tears. Laughter and absorbing stories can't replace medical care, but they can ease the hardest days, for us and for people we love.",
+      "quote": "One day I was handed a few volumes of new literature unlike anything I had ever read before and so captivating as to make me utterly forget my hopeless state.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "If someone you know is unwell, send them a book or story that made you laugh.",
       "quiz": {
@@ -531,6 +551,7 @@
       ],
       "title": "Overwork can win praise and still put you at risk",
       "body": "In his first year at the Polytechnic in Graz, Tesla started work at three in the morning and stopped at eleven at night, with no Sundays or holidays off. He passed nine exams and the professors praised him highly. He went home expecting a triumph, and was crushed when his father made light of his honours.\n\nOnly after his father's death did Tesla find letters from the professors warning that unless he was taken away from the school, he would be killed through overwork. His father's coolness had been worry. Driving yourself to exhaustion for recognition is a costly bargain, and those who seem unimpressed may simply fear for you.",
+      "quote": "I was pained to find a package of letters which the professors had written him to the effect that unless he took me away from the Institution I would be killed thru overwork.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "Look at your hours this week. Where could you stop earlier without losing what really matters?",
       "quiz": {
@@ -557,6 +578,7 @@
       ],
       "title": "Respect authority, but test its 'impossible' for yourself",
       "body": "In his second year at Graz, Tesla watched his physics professor demonstrate a dynamo whose brushes sparked badly. He suggested a motor might run without them. The professor gave a whole lecture on why that was impossible, ending: Mr. Tesla may accomplish great things, but he certainly never will do this.\n\nTesla admitted he wavered, impressed by the professor's authority. But he soon became convinced he was right and took up the task. Years later his induction motor, which needed no such brushes, proved him so. Experts deserve a fair hearing, and they are often right. When your own reasoning says otherwise, it is worth testing rather than simply giving way.",
+      "quote": "But instinct is something which transcends knowledge.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "Think of an idea you dropped because someone senior called it impossible. What would it take to test it properly?",
       "quiz": {
@@ -582,6 +604,7 @@
       ],
       "title": "A reason to live and a loyal friend helped him through collapse",
       "body": "While working in Budapest, Tesla suffered a complete breakdown of the nerves. He describes his senses becoming painfully, overwhelmingly sensitive and his body constantly trembling. A well-known doctor called his condition incurable, and Tesla clung to life without expecting to recover.\n\nYet he did. He credited two things: a powerful desire to live and to continue his work, and the help of a devoted friend, an athlete. His health and his vigour of mind returned. If you are going through something that feels hopeless, his story is a reminder that recovery can come, and that purpose and people matter. Professional help matters too.",
+      "quote": "A powerful desire to live and to continue the work, and the assistance of a devoted friend and athlete accomplished the wonder.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "If you are struggling, tell one trusted person today. If a friend is struggling, ask how you can help.",
       "quiz": {
@@ -608,6 +631,7 @@
       ],
       "title": "Breakthroughs often arrive when you finally step away",
       "body": "For years Tesla had struggled with the problem of a motor without brushes, through Graz and Prague, and sometimes thought it unsolvable. After recovering from his breakdown he felt the answer was somewhere deep in his mind but couldn't yet express it.\n\nOne afternoon he was walking in a Budapest park with a friend, reciting Goethe's Faust as the sun set. Suddenly the idea came like a flash of lightning. He drew diagrams in the sand with a stick. The insight came after years of hard thought, but it arrived during a relaxed walk. Doing the deep work and then stepping away can let an answer surface.",
+      "quote": "As I uttered these inspiring words the idea came like a flash of lightning and in an instant the truth was revealed.",
       "locator": "Part III. My Later Endeavors",
       "apply_it": "After a long session on a hard problem, take a walk with no phone and let your mind wander.",
       "quiz": {
@@ -633,6 +657,7 @@
       ],
       "title": "When interest turns into passion, progress speeds up",
       "body": "After his breakthrough, Tesla gave himself up to the joy of picturing machines and new designs. He called it as complete a state of happiness as he had ever known. Ideas came in an unbroken stream, and his only problem was holding on to them. In under two months he worked out nearly all the types of motors later linked with his name.\n\nHis explanation was simple: when natural inclination grows into passionate desire, you advance towards your goal in seven-league boots. You can't force passion, but you can notice where your natural pull already lies and give it time to grow.",
+      "quote": "When natural inclination develops into a passionate desire, one advances towards his goal in seven-league boots.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "Where did time disappear for you this month? Plan one more block of time for that kind of work.",
       "quiz": {
@@ -658,6 +683,7 @@
       ],
       "title": "A humble job can be a training ground",
       "body": "Tesla went to Budapest expecting a role in a new telephone company but, as he wryly put it, had to take a job as a draughtsman in a government telegraph office on a salary he preferred not to name.\n\nHe made the most of it. He soon won his chief's interest and moved on to calculations, designs and estimates, then took charge of the telephone exchange when it opened. He said the knowledge and practical experience he gained was most valuable, and the job gave him room to invent. A role below your hopes can still teach you a great deal if you do it well and keep looking for the next problem to solve.",
+      "quote": "The knowledge and practical experience I gained in the course of this work was most valuable and the employment gave me ample opportunities for the exercise of my inventive faculties.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "List three skills your current job is teaching you that you could use in the job you want next.",
       "quiz": {
@@ -683,6 +709,7 @@
       ],
       "title": "Years of wide reading are rarely wasted",
       "body": "When Tesla met Edison in New York, he was amazed at how much Edison had done without early advantages or scientific training. Tesla had studied many languages, delved into literature and art, and spent his best years in libraries reading everything from Newton's Principia to light novels. Next to Edison he felt most of his life had been squandered.\n\nBut it didn't take him long to recognise that it was the best thing he could have done. Broad reading builds a store of ideas, words and patterns you can draw on in ways you can't predict. If you feel your wandering interests haven't paid off, give them time.",
+      "quote": "I had studied a dozen languages, delved in literature and art, and had spent my best years in libraries reading all sorts of stuff that fell into my hands.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "Choose one book well outside your usual subjects and read the first chapter this week.",
       "quiz": {
@@ -708,6 +735,7 @@
       ],
       "title": "Earn trust by quietly solving the problem everyone is worried about",
       "body": "Soon after arriving in America, Tesla heard that the steamer Oregon was delayed because both its lighting machines had failed and couldn't be removed. Edison was much annoyed. That evening Tesla took his instruments aboard, worked through the night with the crew and got both machines running.\n\nAt five in the morning he met Edison on Fifth Avenue and told him. Edison walked off in silence, then was overheard telling a colleague that this was a very good man. From then on Tesla had full freedom in directing the work. Fixing the problem that is keeping your boss up at night says more than any claim about your skills.",
+      "quote": "But when he had gone some distance I heard him remark: 'Batchellor, this is a d-n good man,' and from that time on I had full freedom in directing the work.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "What problem is weighing on your team right now? Offer one concrete step to help solve it.",
       "quiz": {
@@ -733,6 +761,7 @@
       ],
       "title": "Name the weakness in your own work before others find it",
       "body": "When Tesla first showed his new coil to engineers in 1891, he frankly told them about a defect in the method: energy was lost in the spark gap. Later research showed the loss was the same whatever medium was used, and that careful design of the circuits could still give high efficiency.\n\nBeing open about a flaw didn't stop the invention from coming into wide use. It made his claims easier to trust. In any field, saying plainly where your idea falls short shows you understand it and invites people to help improve it, rather than leaving them to discover the weakness and wonder what else you hid.",
+      "quote": "On that occasion I frankly told the engineers of a defect involved in the transformation by the new method, namely, the loss in the spark gap.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "In your next presentation or proposal, include one honest sentence about its main limitation.",
       "quiz": {
@@ -758,6 +787,7 @@
       ],
       "title": "Look for good ideas that no one has put to use",
       "body": "Tesla noted that Lord Kelvin had explained the theory of the condenser discharge back in 1856, but for decades no one had made practical use of it. Tesla saw the possibilities and built his induction apparatus on that principle, making rapid progress.\n\nMuch innovation works this way. The knowledge already exists, sitting in papers, books or other fields, waiting for someone to connect it to a real need. Instead of only hunting for brand-new discoveries, it pays to ask what is already known that hasn't been applied to the problem in front of you.",
+      "quote": "In 1856 Lord Kelvin had exposed the theory of the condenser discharge, but no practical application of that important knowledge was made. I saw the possibilities.",
       "locator": "Part IV. The Discovery of the Tesla Coil and Transformer",
       "apply_it": "Find one idea from a field outside your own and write down how it might apply to your work.",
       "quiz": {
@@ -783,6 +813,7 @@
       ],
       "title": "Small early impressions can shape a lifetime of interests",
       "body": "As a boy, Tesla climbed a snowy mountain with friends, rolling snowballs down the slope. One ball rolled beyond the rest, swelled to the size of a house and crashed into the valley as an avalanche. He watched spellbound, and for weeks wondered how something so small could grow so huge.\n\nFrom then on, he said, the magnifying of feeble actions fascinated him. He believed that without that impression he might never have followed up the tiny spark from his coil. As he put it, subtle influences shape our destinies. A single vivid moment can steer a lifetime of curiosity.",
+      "quote": "As I review the events of my past life I realize how subtle are the influences that shape our destinies.",
       "locator": "Part V. The Magnifying Transmitter",
       "apply_it": "Recall one vivid moment from childhood that still interests you. Is there a thread from it to what you care about now?",
       "quiz": {
@@ -808,6 +839,7 @@
       ],
       "title": "Judge a new idea by more than its first results",
       "body": "Some engineers claimed that, apart from his motor, Tesla had given the world little of practical use. He called this a grievous mistake: a new idea must not be judged by its immediate results.\n\nHe explained why some ideas spread faster than others. His alternating current system added value to existing machinery, so it was adopted soon. His turbine, by contrast, would have meant abandoning engines on which huge sums had been spent, so progress was bound to be slow. When officials laughed at his radio-controlled boat, it was the same story. Whether something catches on can depend on timing and vested interests, not only on merit.",
+      "quote": "A new idea must not be judged by its immediate results.",
       "locator": "Part V. The Magnifying Transmitter",
       "apply_it": "Think of an idea you dismissed because it didn't work right away. Is it worth a second look?",
       "quiz": {
@@ -833,6 +865,7 @@
       ],
       "title": "Today's ordinary things were yesterday's wonders",
       "body": "When Tesla first lit glass tubes without wires in 1890, audiences were amazed beyond words. Looking back, he noticed how quickly that wonder faded. We crave new sensations, he wrote, but soon become indifferent to them. The wonders of yesterday are today common occurrences.\n\nThis is still true of electric light, flight, or a phone in your pocket. Getting used to things lets us move on, but it also robs us of delight. Pausing now and then to see an ordinary thing as someone a century ago would have seen it is a simple way to bring back wonder and gratitude.",
+      "quote": "We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.",
       "locator": "Part V. The Magnifying Transmitter",
       "apply_it": "Pick one everyday thing you use today and imagine explaining it to someone from 1900.",
       "quiz": {
@@ -858,6 +891,7 @@
       ],
       "title": "Step away when you are spent; answers often come later",
       "body": "Tesla worked on wireless power with such intensity that he finally collapsed from exhaustion. He described how, when his forces were at an end, he would fall into a deep sleep for about half an hour. Afterwards, trying to pick up the same line of thought felt almost sickening, so he turned to other work, and was surprised how fresh his mind felt.\n\nWeeks or months later his interest in the set-aside problem returned, and he found answers with scarcely any effort. Pushing through exhaustion rarely helps. Rest, and a change of task, can give a stuck problem the time it needs.",
+      "quote": "Involuntarily I then turn to other work and am surprised at the freshness of the mind and ease with which I overcome obstacles that had baffled me before.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "Next time you are stuck and worn out, stop, rest briefly, and switch to a different task for the rest of the day.",
       "quiz": {
@@ -884,6 +918,7 @@
       ],
       "title": "Memories of a lost parent can return when we most need them",
       "body": "After a year of exhausting work, Tesla collapsed. When he recovered, he found he could recall only his earliest childhood scenes. Night after night more memories returned, and his mother was always at their centre. A longing to see her again grew so strong that he wanted to drop everything.\n\nThen the memories reached a painful one: in Paris in 1892, a message had come telling him she was dying. He remembered the long journey home without rest, and how she died after weeks of suffering. Years later, grief can still arrive fresh. If memories of someone you lost return unexpectedly, it is a sign of how much they meant, and it is all right to let yourself feel it.",
+      "quote": "The image of my mother was always the principal figure in the spectacle that slowly unfolded, and a consuming desire to see her again gradually took possession of me.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "If you are missing someone, write down one early memory of them and keep it somewhere safe.",
       "quiz": {
@@ -909,6 +944,7 @@
       ],
       "title": "True rewards tend to match the labour and sacrifice behind them",
       "body": "Tesla said his belief was firm in a law of compensation: the true rewards are always in proportion to the labour and sacrifices made. It was one reason he felt his hardest work, on wireless power, would prove most valuable to future generations.\n\nLife isn't always fair, and Tesla knew disappointment well, with promised payments that never came. But as a guiding belief it points somewhere useful. The rewards he meant weren't only money. Effort poured into something meaningful tends to return in skill, character and lasting contribution, even if not on the timetable we would like.",
+      "quote": "My belief is firm in a law of compensation. The true rewards are ever in proportion to the labor and sacrifices made.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "Name one area where you are putting in steady effort. What true reward, beyond money, are you working towards?",
       "quiz": {
@@ -934,6 +970,7 @@
       ],
       "title": "Technology does most good when it brings people together",
       "body": "Tesla cared about what inventions would do for humanity, not only industry. He warned that material progress alone can bring dangers as menacing as want and suffering. Cheap, unlimited power, he wrote, might even lead to conflict and the rule of force rather than to blessing.\n\nThe greatest good, in his view, comes from technical advances that tend towards unification and harmony. He imagined voices and images carried everywhere, deserts made fertile and factories powered from far away. Every new technology raises his question: does this help people understand and work with one another, or drive them apart?",
+      "quote": "The greatest good will comes from technical improvements tending to unification and harmony.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "Think of a technology you use daily. Does it bring you closer to people, or pull you apart? Adjust one habit accordingly.",
       "quiz": {
@@ -959,6 +996,7 @@
       ],
       "title": "Peace grows from closer contact and understanding between people",
       "body": "Writing just after the First World War, Tesla argued that what the world wanted most was closer contact and better understanding between individuals and communities all over the earth. He hoped that shrinking distance, by carrying messages, people, goods and energy across the globe, would help make friendly relations last.\n\nHe also warned against fanatical national pride, which he believed could plunge the world back into barbarism and strife. Peace, he wrote, could only come from universal enlightenment, and we were still far from it. His hope still applies on a small scale: understanding grows each time we get to know people unlike ourselves.",
+      "quote": "What we now want most is closer contact and better understanding between individuals and communities all over the earth.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "This week, have a real conversation with someone from a different background and ask about their life.",
       "quiz": {
@@ -984,6 +1022,7 @@
       ],
       "title": "Notice the small causes behind your moods and mishaps",
       "body": "Tesla trained himself from boyhood to trace every thought and image back to the impression that started it. He felt most people never notice what is going on around and within them, so everyday events seem mysterious.\n\nHis examples are simple. Someone may feel a sudden wave of sadness and search their mind for a reason, when a cloud had just covered the sun. Someone who loses a small item fusses for an hour because they can't picture what they did before. Tesla saw such poor observation as a form of ignorance. Learning to notice causes, from the weather to a bad night's sleep, makes life feel less baffling.",
+      "quote": "Deficient observation is merely a form of ignorance and responsible for the many morbid notions and foolish ideas prevailing.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "Next time your mood shifts suddenly, pause and look for a simple cause: light, hunger, a message, a noise.",
       "quiz": {
@@ -1009,6 +1048,7 @@
       ],
       "title": "Everyone needs an ideal to steer by",
       "body": "Tesla, a man of science, still saw a deep human need for something to live by. Although many no longer accepted religious teachings in their old form, he observed, almost everyone clings to faith in some higher power.\n\nWe all must have an ideal to govern our conduct and give us contentment, he wrote, and it matters less whether it comes from creed, art, science or something else, so long as it lifts us beyond material things. He hoped people could one day share a common ideal, for the sake of peace. Whatever your own source, it is worth naming the ideal that guides your choices, so you can live by it on purpose.",
+      "quote": "We all must have an ideal to govern our conduct and insure contentment, but it is immaterial whether it be one of creed, art, science or anything else.",
       "locator": "Part VI. The Art of Telautomatics",
       "apply_it": "Write one sentence naming the ideal that guides you. Check one decision this week against it.",
       "quiz": {

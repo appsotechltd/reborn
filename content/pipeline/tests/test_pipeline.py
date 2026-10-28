@@ -10,7 +10,7 @@ from pathlib import Path
 from unittest import mock
 
 from reborn_content import LIBRARY_DIR, REGISTRY_PATH, adapters, registry
-from reborn_content.adapters import LicenceError, gutenberg, openstax, standardebooks
+from reborn_content.adapters import LicenceError, gutenberg, openstax, standardebooks, wikisource
 from reborn_content.passages import Passage, find_quote, normalise
 from reborn_content.schema import validate_library
 
@@ -173,6 +173,35 @@ class OpenStaxTest(unittest.TestCase):
         for bad in ["http://creativecommons.org/licenses/by-nc-sa/4.0/", "http://example.com/licence"]:
             with self.assertRaises(LicenceError):
                 openstax.licence_from_url(bad)
+
+
+class WikisourceTest(unittest.TestCase):
+    TEXT = """{{header
+ | title = My Inventions
+}}
+'''Table of Contents'''
+
+== I. My Early Life. ==
+
+I do not rush into actual work. See [[Author:Edison|Edison]].<ref>note</ref>
+
+== II. My First Efforts At Invention ==
+
+''Urged by necessity'', I made a hook.
+
+{{PD-US|1943}}"""
+
+    def test_parses_sections_into_part_locators(self):
+        ps = wikisource.parse_text(self.TEXT, "tesla")
+        self.assertEqual([p.locator for p in ps],
+                         ["Part I. My Early Life \u00b61", "Part II. My First Efforts at Invention \u00b61"])
+        self.assertEqual(ps[0].text, "I do not rush into actual work. See Edison.")
+        self.assertEqual(ps[1].text, "Urged by necessity, I made a hook.")
+
+    def test_licence_needs_a_pd_template(self):
+        self.assertEqual(wikisource.licence_from_text(self.TEXT)[0], "public-domain")
+        with self.assertRaises(LicenceError):
+            wikisource.licence_from_text("== I. Text ==\nNo licence here.")
 
 
 class QuoteMatchingTest(unittest.TestCase):
