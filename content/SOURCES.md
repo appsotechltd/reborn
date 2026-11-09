@@ -193,6 +193,18 @@ Calmly* and *Negotiate Anything* guides. Together they form the subject *Communi
 readers follow the guides one after the other. Pictures reuse illustrations Reborn already paid for, so
 they cost nothing.
 
+## Communicate with confidence in 30 days
+
+Added 2026-11-09 to Life Guides (topic `life-guides`, tagged `communication`): *Communicate with
+Confidence in 30 Days*, a Reborn-written program of 30 parts, one per day, each with a ten-minute
+exercise. It teaches one repeatable system (Breathe, Point, Example, Check) and covers nerves, voice,
+clear structure, sounding natural without scripts, and making a strong impression. Every card's
+first tag is `confident-communication`. It follows the Life Guides rules above (`original-summary`,
+references in `notes`): Carnegie and Esenwein's *The Art of Public Speaking* (public domain),
+published research on the spotlight effect, the illusion of transparency and reappraising nerves as
+excitement (cited, not copied), GOV.UK, the NHS and Toastmasters. Pictures on ten of the days reuse
+illustrations Reborn already paid for, so they cost nothing.
+
 ## More subjects and gap-filling guides
 
 Added 2026-10-17. Fourteen more subjects in `subjects/` string existing guides and books into

@@ -1365,3 +1365,9 @@ id = "crime-how-justice-works"
 adapter = "summary"
 url = "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/"
 licence = "original-summary"
+
+[[source]]
+id = "guide-communicate-with-confidence-in-30-days"
+adapter = "summary"
+url = "https://www.gutenberg.org/ebooks/16317"
+licence = "original-summary"
